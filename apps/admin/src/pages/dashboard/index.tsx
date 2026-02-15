@@ -5,6 +5,8 @@ import {
   DollarOutlined,
   ShopOutlined,
   AppstoreOutlined,
+  BarChartOutlined,
+  LineChartOutlined,
 } from "@ant-design/icons";
 import {
   BarChart,
@@ -18,6 +20,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import axios from "axios";
+
+import { BRAND, CHART_COLORS, sectionTitle } from "../../theme";
 
 const { Title } = Typography;
 
@@ -78,39 +82,39 @@ export const DashboardPage = () => {
 
       <Row gutter={[16, 16]} style={{ marginBottom: 32 }}>
         <Col xs={24} sm={12} lg={6}>
-          <Card>
+          <Card style={{ borderLeft: `4px solid ${BRAND.primary}` }}>
             <Statistic
               title="Total Orders"
               value={stats.totalOrders}
-              prefix={<ShoppingCartOutlined />}
+              prefix={<ShoppingCartOutlined style={{ color: BRAND.primary }} />}
             />
           </Card>
         </Col>
         <Col xs={24} sm={12} lg={6}>
-          <Card>
+          <Card style={{ borderLeft: `4px solid ${BRAND.success}` }}>
             <Statistic
               title="Total Revenue"
               value={stats.totalRevenue}
               precision={2}
-              prefix={<DollarOutlined />}
+              prefix={<DollarOutlined style={{ color: BRAND.success }} />}
             />
           </Card>
         </Col>
         <Col xs={24} sm={12} lg={6}>
-          <Card>
+          <Card style={{ borderLeft: `4px solid ${BRAND.info}` }}>
             <Statistic
               title="Active Stores"
               value={stats.activeStores}
-              prefix={<ShopOutlined />}
+              prefix={<ShopOutlined style={{ color: BRAND.info }} />}
             />
           </Card>
         </Col>
         <Col xs={24} sm={12} lg={6}>
-          <Card>
+          <Card style={{ borderLeft: `4px solid ${BRAND.warning}` }}>
             <Statistic
               title="Total Products"
               value={stats.totalProducts}
-              prefix={<AppstoreOutlined />}
+              prefix={<AppstoreOutlined style={{ color: BRAND.warning }} />}
             />
           </Card>
         </Col>
@@ -118,27 +122,27 @@ export const DashboardPage = () => {
 
       <Row gutter={[16, 16]}>
         <Col xs={24} lg={12}>
-          <Card title="Orders (Last 7 Days)">
+          <Card title={sectionTitle(<BarChartOutlined />, "Orders (Last 7 Days)")}>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="date" />
                 <YAxis allowDecimals={false} />
                 <Tooltip />
-                <Bar dataKey="orders" fill="#16a34a" />
+                <Bar dataKey="orders" fill={CHART_COLORS.bar} />
               </BarChart>
             </ResponsiveContainer>
           </Card>
         </Col>
         <Col xs={24} lg={12}>
-          <Card title="Revenue (Last 7 Days)">
+          <Card title={sectionTitle(<LineChartOutlined />, "Revenue (Last 7 Days)")}>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="date" />
                 <YAxis />
                 <Tooltip />
-                <Line type="monotone" dataKey="revenue" stroke="#0ea5e9" strokeWidth={2} />
+                <Line type="monotone" dataKey="revenue" stroke={CHART_COLORS.line} strokeWidth={2} />
               </LineChart>
             </ResponsiveContainer>
           </Card>

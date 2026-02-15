@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import { useCustom, useOne, useApiUrl } from "@refinedev/core";
-import { Tree, Table, InputNumber, Button, Steps, Card, message, Space, Checkbox, Typography } from "antd";
+import { Tree, Table, InputNumber, Button, Steps, Card, message, Space, Checkbox, Typography, Row, Col } from "antd";
 import type { DataNode } from "antd/es/tree";
+import {
+  AppstoreOutlined,
+  DollarOutlined,
+  CheckCircleOutlined,
+  ShoppingOutlined,
+} from "@ant-design/icons";
+
+import { sectionTitle } from "../../theme";
 
 const { Title, Text } = Typography;
 
@@ -145,7 +153,7 @@ export const StoreOnboard = () => {
   const selectedItems = Array.from(selected.values());
 
   return (
-    <Card title={`Onboard Products — ${storeName}`}>
+    <Card title={sectionTitle(<ShoppingOutlined />, `Onboard Products — ${storeName}`)}>
       <Steps current={step} style={{ marginBottom: 24 }} items={[
         { title: "Browse Catalog" },
         { title: "Set Prices" },
@@ -153,64 +161,73 @@ export const StoreOnboard = () => {
       ]} />
 
       {step === 0 && (
-        <div style={{ display: "flex", gap: 24 }}>
-          <div style={{ width: 280, borderRight: "1px solid #f0f0f0", paddingRight: 16 }}>
-            <Title level={5}>Categories</Title>
-            {treeNodes.length > 0 ? (
-              <Tree
-                treeData={treeNodes}
-                defaultExpandAll
-                onSelect={(keys) => setSelectedCategoryId(keys[0] as string ?? null)}
-                selectedKeys={selectedCategoryId ? [selectedCategoryId] : []}
-              />
-            ) : (
-              <Text type="secondary">No categories</Text>
-            )}
-          </div>
-          <div style={{ flex: 1 }}>
-            <Title level={5}>{selectedCategoryId ? "Products" : "Select a category"}</Title>
-            {products.map((product) => (
-              <Card key={product.id} size="small" style={{ marginBottom: 8 }} title={product.name}>
-                {product.variants.map((variant) => (
-                  <div key={variant.id} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
-                    <Checkbox
-                      checked={selected.has(variant.id)}
-                      onChange={() => toggleVariant(variant, product)}
-                    />
-                    <span>{variant.name}</span>
-                    <Text type="secondary">({variant.unitType} {variant.unitValue})</Text>
-                    {variant.sku && <Text type="secondary">SKU: {variant.sku}</Text>}
-                  </div>
-                ))}
-              </Card>
-            ))}
-            {selectedCategoryId && products.length === 0 && <Text type="secondary">No products in this category</Text>}
-          </div>
-        </div>
+        <Row gutter={16}>
+          <Col xs={24} md={8} lg={6}>
+            <Card title={sectionTitle(<AppstoreOutlined />, "Categories")} size="small" style={{ height: "100%" }}>
+              {treeNodes.length > 0 ? (
+                <Tree
+                  treeData={treeNodes}
+                  defaultExpandAll
+                  onSelect={(keys) => setSelectedCategoryId(keys[0] as string ?? null)}
+                  selectedKeys={selectedCategoryId ? [selectedCategoryId] : []}
+                />
+              ) : (
+                <Text type="secondary">No categories</Text>
+              )}
+            </Card>
+          </Col>
+          <Col xs={24} md={16} lg={18}>
+            <Card
+              title={selectedCategoryId ? "Products" : "Select a category"}
+              size="small"
+              extra={selected.size > 0 ? <Text type="secondary">{selected.size} selected</Text> : null}
+            >
+              {products.map((product) => (
+                <Card key={product.id} size="small" style={{ marginBottom: 8 }} title={product.name}>
+                  {product.variants.map((variant) => (
+                    <div key={variant.id} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
+                      <Checkbox
+                        checked={selected.has(variant.id)}
+                        onChange={() => toggleVariant(variant, product)}
+                      />
+                      <span>{variant.name}</span>
+                      <Text type="secondary">({variant.unitType} {variant.unitValue})</Text>
+                      {variant.sku && <Text type="secondary">SKU: {variant.sku}</Text>}
+                    </div>
+                  ))}
+                </Card>
+              ))}
+              {selectedCategoryId && products.length === 0 && <Text type="secondary">No products in this category</Text>}
+              {!selectedCategoryId && <Text type="secondary">Choose a category from the left to browse products</Text>}
+            </Card>
+          </Col>
+        </Row>
       )}
 
       {step === 1 && (
-        <Table dataSource={selectedItems} rowKey="variantId" pagination={false}>
-          <Table.Column title="Product" dataIndex="productName" />
-          <Table.Column title="Variant" dataIndex="variantName" />
-          <Table.Column title="Unit" render={(_, r: SelectedVariant) => `${r.unitType} ${r.unitValue}`} />
-          <Table.Column
-            title="Price"
-            render={(_, r: SelectedVariant) => (
-              <InputNumber min={0.01} step={0.01} value={r.price || undefined} placeholder="Price" onChange={(v) => updatePrice(r.variantId, v ?? 0)} />
-            )}
-          />
-          <Table.Column
-            title="Stock"
-            render={(_, r: SelectedVariant) => (
-              <InputNumber min={0} value={r.stock} onChange={(v) => updateStock(r.variantId, v ?? 0)} />
-            )}
-          />
-        </Table>
+        <Card title={sectionTitle(<DollarOutlined />, "Set Prices & Stock")} size="small">
+          <Table dataSource={selectedItems} rowKey="variantId" pagination={false}>
+            <Table.Column title="Product" dataIndex="productName" />
+            <Table.Column title="Variant" dataIndex="variantName" />
+            <Table.Column title="Unit" render={(_, r: SelectedVariant) => `${r.unitType} ${r.unitValue}`} />
+            <Table.Column
+              title="Price"
+              render={(_, r: SelectedVariant) => (
+                <InputNumber min={0.01} step={0.01} value={r.price || undefined} placeholder="Price" onChange={(v) => updatePrice(r.variantId, v ?? 0)} />
+              )}
+            />
+            <Table.Column
+              title="Stock"
+              render={(_, r: SelectedVariant) => (
+                <InputNumber min={0} value={r.stock} onChange={(v) => updateStock(r.variantId, v ?? 0)} />
+              )}
+            />
+          </Table>
+        </Card>
       )}
 
       {step === 2 && (
-        <>
+        <Card title={sectionTitle(<CheckCircleOutlined />, "Review")} size="small">
           <Table dataSource={selectedItems} rowKey="variantId" pagination={false} size="small">
             <Table.Column title="Product" dataIndex="productName" />
             <Table.Column title="Variant" dataIndex="variantName" />
@@ -219,7 +236,7 @@ export const StoreOnboard = () => {
             <Table.Column title="Stock" dataIndex="stock" />
           </Table>
           <Text style={{ marginTop: 16, display: "block" }}>Total: {selectedItems.length} variants to assign</Text>
-        </>
+        </Card>
       )}
 
       <Space style={{ marginTop: 24 }}>

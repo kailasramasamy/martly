@@ -1,7 +1,10 @@
 import { useCustom } from "@refinedev/core";
 import { List } from "@refinedev/antd";
-import { Tree, Spin } from "antd";
+import { Tree, Spin, Card } from "antd";
 import type { DataNode } from "antd/es/tree";
+import { ApartmentOutlined } from "@ant-design/icons";
+
+import { sectionTitle } from "../../theme";
 
 interface CategoryTreeNode {
   id: string;
@@ -28,13 +31,15 @@ export const CategoryTree = () => {
 
   return (
     <List title="Category Tree" canCreate={false}>
-      {isLoading ? (
-        <Spin />
-      ) : treeNodes.length === 0 ? (
-        <p>No categories yet.</p>
-      ) : (
-        <Tree treeData={treeNodes} defaultExpandAll showLine />
-      )}
+      <Card title={sectionTitle(<ApartmentOutlined />, "Hierarchy")} size="small">
+        {isLoading ? (
+          <Spin />
+        ) : treeNodes.length === 0 ? (
+          <p>No categories yet.</p>
+        ) : (
+          <Tree treeData={treeNodes} defaultExpandAll showLine />
+        )}
+      </Card>
     </List>
   );
 };

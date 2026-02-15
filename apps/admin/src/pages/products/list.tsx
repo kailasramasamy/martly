@@ -2,42 +2,7 @@ import { List, useTable, EditButton, ShowButton, useSelect } from "@refinedev/an
 import { Table, Form, Input, Space, Select, Tag } from "antd";
 import type { HttpError } from "@refinedev/core";
 
-const FOOD_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
-  VEG: { color: "green", label: "Veg" },
-  NON_VEG: { color: "red", label: "Non-Veg" },
-  VEGAN: { color: "lime", label: "Vegan" },
-  EGG: { color: "orange", label: "Egg" },
-};
-
-const PRODUCT_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
-  GROCERY: { color: "green", label: "Grocery" },
-  SNACKS: { color: "orange", label: "Snacks" },
-  BEVERAGES: { color: "blue", label: "Beverages" },
-  DAIRY: { color: "cyan", label: "Dairy" },
-  FROZEN: { color: "geekblue", label: "Frozen" },
-  FRESH_PRODUCE: { color: "lime", label: "Fresh Produce" },
-  BAKERY: { color: "gold", label: "Bakery" },
-  PERSONAL_CARE: { color: "purple", label: "Personal Care" },
-  HOUSEHOLD: { color: "magenta", label: "Household" },
-  BABY_CARE: { color: "pink", label: "Baby Care" },
-  PET_CARE: { color: "volcano", label: "Pet Care" },
-  OTC_PHARMA: { color: "red", label: "OTC Pharma" },
-};
-
-const PRODUCT_TYPE_OPTIONS = [
-  { label: "Grocery", value: "GROCERY" },
-  { label: "Snacks", value: "SNACKS" },
-  { label: "Beverages", value: "BEVERAGES" },
-  { label: "Dairy", value: "DAIRY" },
-  { label: "Frozen", value: "FROZEN" },
-  { label: "Fresh Produce", value: "FRESH_PRODUCE" },
-  { label: "Bakery", value: "BAKERY" },
-  { label: "Personal Care", value: "PERSONAL_CARE" },
-  { label: "Household", value: "HOUSEHOLD" },
-  { label: "Baby Care", value: "BABY_CARE" },
-  { label: "Pet Care", value: "PET_CARE" },
-  { label: "OTC Pharma", value: "OTC_PHARMA" },
-];
+import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, PRODUCT_TYPE_OPTIONS } from "../../constants/tag-colors";
 
 export const ProductList = () => {
   const { tableProps, searchFormProps } = useTable<

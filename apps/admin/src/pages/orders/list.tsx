@@ -1,6 +1,8 @@
 import { List, useTable, ShowButton } from "@refinedev/antd";
 import { Table, Tag } from "antd";
 
+import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG } from "../../constants/tag-colors";
+
 export const OrderList = () => {
   const { tableProps } = useTable({ resource: "orders" });
 
@@ -13,21 +15,17 @@ export const OrderList = () => {
           dataIndex="status"
           title="Status"
           render={(value: string) => {
-            const colorMap: Record<string, string> = {
-              PENDING: "orange", CONFIRMED: "blue", PREPARING: "cyan",
-              READY: "geekblue", DELIVERED: "green", CANCELLED: "red",
-            };
-            return <Tag color={colorMap[value] ?? "default"}>{value}</Tag>;
+            const config = ORDER_STATUS_CONFIG[value];
+            return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
           }}
         />
         <Table.Column
           dataIndex="paymentStatus"
           title="Payment"
-          render={(value: string) => (
-            <Tag color={value === "PAID" ? "green" : value === "FAILED" ? "red" : "orange"}>
-              {value}
-            </Tag>
-          )}
+          render={(value: string) => {
+            const config = PAYMENT_STATUS_CONFIG[value];
+            return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+          }}
         />
         <Table.Column
           title="Actions"

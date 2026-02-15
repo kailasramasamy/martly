@@ -2,6 +2,8 @@ import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
 import { Table, Tag, Form, Input, Space } from "antd";
 import type { HttpError } from "@refinedev/core";
 
+import { ACTIVE_STATUS_CONFIG } from "../../constants/tag-colors";
+
 export const StoreProductList = () => {
   const { tableProps, searchFormProps } = useTable<
     { id: string; store: { name: string }; product: { name: string }; price: number; stock: number; isActive: boolean },
@@ -27,7 +29,10 @@ export const StoreProductList = () => {
         <Table.Column
           dataIndex="isActive"
           title="Active"
-          render={(value) => <Tag color={value ? "green" : "red"}>{value ? "Active" : "Inactive"}</Tag>}
+          render={(value) => {
+            const config = ACTIVE_STATUS_CONFIG[String(value)];
+            return <Tag color={config?.color ?? "default"}>{config?.label ?? String(value)}</Tag>;
+          }}
         />
         <Table.Column
           title="Actions"
