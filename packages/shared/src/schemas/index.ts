@@ -76,6 +76,22 @@ export const createProductSchema = z.object({
 });
 export type CreateProductInput = z.infer<typeof createProductSchema>;
 
+// ── StoreProduct ─────────────────────────────────────
+export const createStoreProductSchema = z.object({
+  storeId: z.string().uuid(),
+  productId: z.string().uuid(),
+  price: z.number().positive(),
+  stock: z.number().int().min(0),
+});
+export type CreateStoreProductInput = z.infer<typeof createStoreProductSchema>;
+
+export const updateStoreProductSchema = z.object({
+  price: z.number().positive().optional(),
+  stock: z.number().int().min(0).optional(),
+  isActive: z.boolean().optional(),
+});
+export type UpdateStoreProductInput = z.infer<typeof updateStoreProductSchema>;
+
 // ── Order ─────────────────────────────────────────────
 export const orderItemSchema = z.object({
   id: z.string().uuid(),
@@ -112,3 +128,26 @@ export const createOrderSchema = z.object({
   ),
 });
 export type CreateOrderInput = z.infer<typeof createOrderSchema>;
+
+// ── Update Schemas ───────────────────────────────────
+export const updateStoreSchema = z.object({
+  name: z.string().min(1).optional(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  address: z.string().min(1).optional(),
+  phone: z.string().nullish(),
+  status: z.nativeEnum(StoreStatus).optional(),
+});
+export type UpdateStoreInput = z.infer<typeof updateStoreSchema>;
+
+export const updateProductSchema = z.object({
+  name: z.string().min(1).optional(),
+  description: z.string().nullish(),
+  sku: z.string().nullish(),
+  imageUrl: z.string().url().nullish(),
+});
+export type UpdateProductInput = z.infer<typeof updateProductSchema>;
+
+export const updateOrderStatusSchema = z.object({
+  status: z.nativeEnum(OrderStatus),
+});
+export type UpdateOrderStatusInput = z.infer<typeof updateOrderStatusSchema>;

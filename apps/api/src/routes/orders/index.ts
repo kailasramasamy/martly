@@ -1,13 +1,14 @@
 import type { FastifyInstance } from "fastify";
-import { createOrderSchema } from "@martly/shared/schemas";
+import { createOrderSchema, updateOrderStatusSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
+import { requireRole } from "../../middleware/authorize.js";
 
 export async function orderRoutes(app: FastifyInstance) {
   // List orders (authenticated)
   app.get("/", { preHandler: [authenticate] }, async (request) => {
     const { page = 1, pageSize = 20 } = request.query as { page?: number; pageSize?: number };
-    const skip = (page - 1) * pageSize;
+    const skip = (Number(page) - 1) * Number(pageSize);
     const user = request.user as { sub: string; role: string };
 
     const where = user.role === "CUSTOMER" ? { userId: user.sub } : {};
@@ -16,17 +17,17 @@ export async function orderRoutes(app: FastifyInstance) {
       app.prisma.order.findMany({
         where,
         skip,
-        take: pageSize,
+        take: Number(pageSize),
         orderBy: { createdAt: "desc" },
         include: { items: true },
       }),
       app.prisma.order.count({ where }),
     ]);
 
-    const response: PaginatedResponse<typeof orders[0]> = {
+    const response: PaginatedResponse<(typeof orders)[0]> = {
       success: true,
       data: orders,
-      meta: { total, page, pageSize, totalPages: Math.ceil(total / pageSize) },
+      meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
     return response;
   });
@@ -85,4 +86,24 @@ export async function orderRoutes(app: FastifyInstance) {
     const response: ApiResponse<typeof order> = { success: true, data: order };
     return response;
   });
+
+  // Update order status
+  app.patch<{ Params: { id: string } }>(
+    "/:id/status",
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF")] },
+    async (request, reply) => {
+      const body = updateOrderStatusSchema.parse(request.body);
+      const existing = await app.prisma.order.findUnique({ where: { id: request.params.id } });
+      if (!existing) return reply.notFound("Order not found");
+
+      const order = await app.prisma.order.update({
+        where: { id: request.params.id },
+        data: { status: body.status },
+        include: { items: true },
+      });
+
+      const response: ApiResponse<typeof order> = { success: true, data: order };
+      return response;
+    },
+  );
 }

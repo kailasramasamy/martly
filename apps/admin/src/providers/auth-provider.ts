@@ -1,6 +1,6 @@
 import type { AuthProvider } from "@refinedev/core";
 
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3001";
+const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:7001";
 const TOKEN_KEY = "martly_admin_token";
 
 export const authProvider: AuthProvider = {

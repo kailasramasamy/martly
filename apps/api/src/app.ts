@@ -7,6 +7,7 @@ import { authRoutes } from "./routes/auth/index.js";
 import { storeRoutes } from "./routes/stores/index.js";
 import { productRoutes } from "./routes/products/index.js";
 import { orderRoutes } from "./routes/orders/index.js";
+import { storeProductRoutes } from "./routes/store-products/index.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -17,8 +18,9 @@ export async function buildApp() {
 
   // ── Plugins ───────────────────────────────────────
   await app.register(cors, {
-    origin: (process.env.CORS_ORIGIN ?? "http://localhost:3000").split(","),
+    origin: (process.env.CORS_ORIGIN ?? "http://localhost:7000").split(","),
     credentials: true,
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS"],
   });
 
   await app.register(jwt, {
@@ -41,6 +43,7 @@ export async function buildApp() {
       await api.register(storeRoutes, { prefix: "/stores" });
       await api.register(productRoutes, { prefix: "/products" });
       await api.register(orderRoutes, { prefix: "/orders" });
+      await api.register(storeProductRoutes, { prefix: "/store-products" });
     },
     { prefix: "/api/v1" },
   );

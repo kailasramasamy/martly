@@ -16,7 +16,7 @@ export default function LoginScreen() {
     try {
       setError("");
       const result = await api.post<AuthTokens>("/api/v1/auth/login", { email, password });
-      login(result.data);
+      await login(result.data);
       router.replace("/(tabs)");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Login failed");
