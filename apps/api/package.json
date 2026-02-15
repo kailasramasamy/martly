@@ -1,0 +1,37 @@
+{
+  "name": "@martly/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@martly/shared": "workspace:*",
+    "fastify": "^5",
+    "@fastify/cors": "^11",
+    "@fastify/jwt": "^9",
+    "@fastify/sensible": "^6",
+    "@prisma/client": "^6",
+    "@prisma/adapter-pg": "^6",
+    "pg": "^8",
+    "zod": "^3.24",
+    "bcryptjs": "^3",
+    "dotenv": "^16",
+    "fastify-plugin": "^5"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/pg": "^8",
+    "@types/bcryptjs": "^2",
+    "tsx": "^4",
+    "typescript": "^5.7",
+    "prisma": "^6"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
