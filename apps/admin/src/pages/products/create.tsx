@@ -15,6 +15,15 @@ import { sectionTitle } from "../../theme";
 
 const UNIT_TYPES = ["KG", "GRAM", "LITER", "ML", "PIECE", "PACK", "DOZEN", "BUNDLE"];
 
+const STORAGE_TYPES = [
+  { label: "Room Temperature", value: "AMBIENT" },
+  { label: "Refrigerated (2-8°C)", value: "REFRIGERATED" },
+  { label: "Deep Chilled (0-2°C)", value: "DEEP_CHILLED" },
+  { label: "Frozen (-18°C)", value: "FROZEN" },
+  { label: "Cool & Dry", value: "COOL_DRY" },
+  { label: "Humidity Controlled", value: "HUMIDITY_CONTROLLED" },
+];
+
 const FOOD_TYPES = [
   { label: "Vegetarian", value: "VEG" },
   { label: "Non-Vegetarian", value: "NON_VEG" },
@@ -80,6 +89,12 @@ export const ProductCreate = () => {
     optionValue: "id",
   });
 
+  const { selectProps: brandSelectProps } = useSelect({
+    resource: "brands",
+    optionLabel: "name",
+    optionValue: "id",
+  });
+
   return (
     <Create saveButtonProps={saveButtonProps}>
       <Form {...formProps} layout="vertical" initialValues={{ variants: [{ name: "Default", unitType: "PIECE", unitValue: 1 }] }}>
@@ -94,8 +109,8 @@ export const ProductCreate = () => {
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
-                  <Form.Item label="Brand" name="brand">
-                    <Input placeholder="e.g. Amul, Tata, MDH" />
+                  <Form.Item label="Brand" name="brandId">
+                    <Select {...brandSelectProps} allowClear placeholder="Select brand" />
                   </Form.Item>
                 </Col>
                 <Col xs={24}>
@@ -229,6 +244,11 @@ export const ProductCreate = () => {
                 <Col xs={24} sm={8}>
                   <Form.Item label="Shelf Life (days)" name="shelfLifeDays">
                     <InputNumber min={1} style={{ width: "100%" }} placeholder="Shelf life in days" />
+                  </Form.Item>
+                </Col>
+                <Col xs={24} sm={12}>
+                  <Form.Item label="Storage Type" name="storageType">
+                    <Select options={STORAGE_TYPES} allowClear placeholder="Select storage type" />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>

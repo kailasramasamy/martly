@@ -1,5 +1,4 @@
 -- AlterTable: Add grocery fields to products
-ALTER TABLE "products" ADD COLUMN "brand" TEXT;
 ALTER TABLE "products" ADD COLUMN "is_active" BOOLEAN NOT NULL DEFAULT true;
 ALTER TABLE "products" ADD COLUMN "tags" TEXT[] DEFAULT ARRAY[]::TEXT[];
 ALTER TABLE "products" ADD COLUMN "hsn_code" TEXT;

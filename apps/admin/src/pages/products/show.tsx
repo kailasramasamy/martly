@@ -10,7 +10,7 @@ import {
   AppstoreOutlined,
 } from "@ant-design/icons";
 
-import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG } from "../../constants/tag-colors";
+import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, STORAGE_TYPE_CONFIG } from "../../constants/tag-colors";
 import { sectionTitle } from "../../theme";
 
 const { Text } = Typography;
@@ -23,6 +23,7 @@ export const ProductShow = () => {
 
   const foodTypeConfig = record.foodType ? FOOD_TYPE_CONFIG[record.foodType as string] : null;
   const productTypeConfig = record.productType ? PRODUCT_TYPE_CONFIG[record.productType as string] : null;
+  const storageTypeConfig = record.storageType ? STORAGE_TYPE_CONFIG[record.storageType as string] : null;
 
   return (
     <Show>
@@ -32,7 +33,7 @@ export const ProductShow = () => {
           <Card title={sectionTitle(<InfoCircleOutlined />, "Basic Information")} size="small" style={{ marginBottom: 16 }}>
             <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
               <Descriptions.Item label="Name">{record.name}</Descriptions.Item>
-              <Descriptions.Item label="Brand">{record.brand ?? "—"}</Descriptions.Item>
+              <Descriptions.Item label="Brand">{record.brand?.name ?? "—"}</Descriptions.Item>
               <Descriptions.Item label="Category">{record.category?.name ?? "—"}</Descriptions.Item>
               <Descriptions.Item label="Product Type">
                 {productTypeConfig ? <Tag color={productTypeConfig.color}>{productTypeConfig.label}</Tag> : <Text>{record.productType ?? "—"}</Text>}
@@ -139,6 +140,9 @@ export const ProductShow = () => {
                 ) : "—"}
               </Descriptions.Item>
               <Descriptions.Item label="Serving Size">{record.servingSize ?? "—"}</Descriptions.Item>
+              <Descriptions.Item label="Storage Type">
+                {storageTypeConfig ? <Tag color={storageTypeConfig.color}>{storageTypeConfig.label}</Tag> : <Text>{record.storageType ?? "—"}</Text>}
+              </Descriptions.Item>
               <Descriptions.Item label="Storage Instructions">{record.storageInstructions ?? "—"}</Descriptions.Item>
               <Descriptions.Item label="Usage Instructions" span={2}>{record.usageInstructions ?? "—"}</Descriptions.Item>
               <Descriptions.Item label="Danger Warnings" span={2}>{record.dangerWarnings ?? "—"}</Descriptions.Item>

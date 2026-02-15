@@ -75,6 +75,15 @@ enum ProductType {
   OTC_PHARMA
 }
 
+enum StorageType {
+  AMBIENT
+  REFRIGERATED
+  DEEP_CHILLED
+  FROZEN
+  COOL_DRY
+  HUMIDITY_CONTROLLED
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -156,28 +165,42 @@ model Category {
   @@map("categories")
 }
 
+model Brand {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String   @unique
+  imageUrl  String?  @map("image_url")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  products Product[]
+
+  @@map("brands")
+}
+
 model Product {
   id                  String    @id @default(uuid())
   name                String
   description         String?
   imageUrl            String?   @map("image_url")
   categoryId          String?   @map("category_id")
-  brand               String?
+  brandId             String?   @map("brand_id")
   isActive            Boolean   @default(true) @map("is_active")
-  tags                String[]
+  tags                String[]  @default([])
   hsnCode             String?   @map("hsn_code")
   gstPercent          Decimal?  @db.Decimal(4, 2) @map("gst_percent")
   foodType            FoodType? @map("food_type")
   fssaiLicense        String?   @map("fssai_license")
   ingredients         String?
   nutritionalInfo     Json?     @map("nutritional_info")
-  allergens           String[]
+  allergens           String[]  @default([])
   servingSize         String?   @map("serving_size")
   shelfLifeDays       Int?      @map("shelf_life_days")
+  storageType         StorageType? @map("storage_type")
   storageInstructions String?   @map("storage_instructions")
   manufacturerName    String?   @map("manufacturer_name")
   countryOfOrigin     String?      @map("country_of_origin")
-  images              String[]
+  images              String[]     @default([])
   productType         ProductType? @map("product_type")
   regulatoryMarks     String[]     @default([]) @map("regulatory_marks")
   certifications      String[]     @default([])
@@ -188,10 +211,12 @@ model Product {
   updatedAt           DateTime     @updatedAt @map("updated_at")
 
   category      Category?        @relation(fields: [categoryId], references: [id])
+  brand         Brand?           @relation(fields: [brandId], references: [id])
   variants      ProductVariant[]
   storeProducts StoreProduct[]
   orderItems    OrderItem[]
 
+  @@index([productType])
   @@map("products")
 }
 

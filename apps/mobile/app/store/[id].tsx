@@ -29,7 +29,7 @@ interface StoreProduct {
     id: string;
     name: string;
     description: string | null;
-    brand: string | null;
+    brand: { id: string; name: string } | null;
     foodType: string | null;
     productType: string | null;
     regulatoryMarks: string[];
@@ -174,8 +174,8 @@ export default function StoreDetailScreen() {
                   <View style={[styles.foodTypeDotInner, item.product.foodType === "VEG" || item.product.foodType === "VEGAN" ? styles.foodTypeDotVeg : styles.foodTypeDotNonVeg]} />
                 </View>
               )}
-              {item.product.brand && (
-                <Text style={styles.brandName}>{item.product.brand}</Text>
+              {item.product.brand?.name && (
+                <Text style={styles.brandName}>{item.product.brand.name}</Text>
               )}
             </View>
             <View style={styles.cardRow}>

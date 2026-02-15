@@ -8,8 +8,8 @@ import { requireRole } from "../../middleware/authorize.js";
 export async function productRoutes(app: FastifyInstance) {
   // List products
   app.get("/", async (request) => {
-    const { page = 1, pageSize = 20, q, categoryId, brand, foodType, productType } = request.query as {
-      page?: number; pageSize?: number; q?: string; categoryId?: string; brand?: string; foodType?: string; productType?: string;
+    const { page = 1, pageSize = 20, q, categoryId, brandId, foodType, productType } = request.query as {
+      page?: number; pageSize?: number; q?: string; categoryId?: string; brandId?: string; foodType?: string; productType?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -18,14 +18,14 @@ export async function productRoutes(app: FastifyInstance) {
       where.OR = [
         { name: { contains: q, mode: "insensitive" } },
         { description: { contains: q, mode: "insensitive" } },
-        { brand: { contains: q, mode: "insensitive" } },
+        { brand: { name: { contains: q, mode: "insensitive" } } },
       ];
     }
     if (categoryId) {
       where.categoryId = categoryId;
     }
-    if (brand) {
-      where.brand = { contains: brand, mode: "insensitive" };
+    if (brandId) {
+      where.brandId = brandId;
     }
     if (foodType) {
       where.foodType = foodType;
@@ -40,7 +40,7 @@ export async function productRoutes(app: FastifyInstance) {
         skip,
         take: Number(pageSize),
         orderBy: { createdAt: "desc" },
-        include: { category: true, variants: true },
+        include: { category: true, brand: true, variants: true },
       }),
       app.prisma.product.count({ where }),
     ]);
@@ -57,7 +57,7 @@ export async function productRoutes(app: FastifyInstance) {
   app.get<{ Params: { id: string } }>("/:id", async (request, reply) => {
     const product = await app.prisma.product.findUnique({
       where: { id: request.params.id },
-      include: { category: true, variants: true },
+      include: { category: true, brand: true, variants: true },
     });
     if (!product) return reply.notFound("Product not found");
 
@@ -85,7 +85,7 @@ export async function productRoutes(app: FastifyInstance) {
             create: variantsToCreate,
           },
         },
-        include: { category: true, variants: true },
+        include: { category: true, brand: true, variants: true },
       });
 
       const response: ApiResponse<typeof product> = { success: true, data: product };
@@ -112,7 +112,7 @@ export async function productRoutes(app: FastifyInstance) {
       const product = await app.prisma.product.update({
         where: { id: request.params.id },
         data,
-        include: { category: true, variants: true },
+        include: { category: true, brand: true, variants: true },
       });
 
       const response: ApiResponse<typeof product> = { success: true, data: product };

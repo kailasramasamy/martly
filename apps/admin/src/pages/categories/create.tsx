@@ -1,7 +1,7 @@
 import { Create, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, InputNumber, Select, Card, Row, Col } from "antd";
-import { AppstoreOutlined } from "@ant-design/icons";
-
+import { Form, Input, Select, Card, Row, Col } from "antd";
+import { AppstoreOutlined, PictureOutlined } from "@ant-design/icons";
+import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
 
 export const CategoryCreate = () => {
@@ -11,6 +11,7 @@ export const CategoryCreate = () => {
     resource: "categories",
     optionLabel: "name",
     optionValue: "id",
+    filters: [{ field: "parentId", operator: "eq", value: "null" }],
   });
 
   const onNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -43,17 +44,18 @@ export const CategoryCreate = () => {
                     <Select {...parentSelectProps} allowClear placeholder="None (top-level)" />
                   </Form.Item>
                 </Col>
-                <Col xs={24} sm={12}>
-                  <Form.Item label="Sort Order" name="sortOrder" initialValue={0}>
-                    <InputNumber min={0} style={{ width: "100%" }} />
-                  </Form.Item>
-                </Col>
-                <Col xs={24}>
-                  <Form.Item label="Image URL" name="imageUrl">
-                    <Input />
-                  </Form.Item>
-                </Col>
               </Row>
+            </Card>
+          </Col>
+          <Col xs={24} lg={12}>
+            <Card title={sectionTitle(<PictureOutlined />, "Image")} size="small">
+              <Form.Item
+                name="imageUrl"
+                getValueFromEvent={(url: string) => url}
+                style={{ marginBottom: 0 }}
+              >
+                <ImageUpload />
+              </Form.Item>
             </Card>
           </Col>
         </Row>

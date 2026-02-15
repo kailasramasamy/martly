@@ -2,7 +2,7 @@ import { List, useTable, EditButton, ShowButton, useSelect } from "@refinedev/an
 import { Table, Form, Input, Space, Select, Tag } from "antd";
 import type { HttpError } from "@refinedev/core";
 
-import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, PRODUCT_TYPE_OPTIONS } from "../../constants/tag-colors";
+import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, PRODUCT_TYPE_OPTIONS, STORAGE_TYPE_CONFIG } from "../../constants/tag-colors";
 
 export const ProductList = () => {
   const { tableProps, searchFormProps } = useTable<
@@ -51,7 +51,10 @@ export const ProductList = () => {
       </Form>
       <Table {...tableProps} rowKey="id">
         <Table.Column dataIndex="name" title="Name" />
-        <Table.Column dataIndex="brand" title="Brand" render={(v: string) => v ?? "—"} />
+        <Table.Column
+          title="Brand"
+          render={(_, record: { brand?: { name: string } }) => record.brand?.name ?? "—"}
+        />
         <Table.Column
           dataIndex="foodType"
           title="Food Type"
@@ -67,6 +70,15 @@ export const ProductList = () => {
           render={(v: string) => {
             if (!v) return "—";
             const config = PRODUCT_TYPE_CONFIG[v];
+            return config ? <Tag color={config.color}>{config.label}</Tag> : v;
+          }}
+        />
+        <Table.Column
+          dataIndex="storageType"
+          title="Storage"
+          render={(v: string) => {
+            if (!v) return "—";
+            const config = STORAGE_TYPE_CONFIG[v];
             return config ? <Tag color={config.color}>{config.label}</Tag> : v;
           }}
         />

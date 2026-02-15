@@ -54,30 +54,44 @@ async function main() {
     },
   });
 
-  // Create sample products
-  const products = await Promise.all(
-    [
-      { name: "Organic Bananas", sku: "FRUIT-001", description: "Fresh organic bananas, per bunch" },
-      { name: "Whole Milk 1L", sku: "DAIRY-001", description: "Full cream whole milk, 1 liter" },
-      { name: "Sourdough Bread", sku: "BAKERY-001", description: "Artisan sourdough loaf" },
-    ].map((p) =>
-      prisma.product.upsert({
-        where: { sku: p.sku },
-        update: {},
-        create: p,
-      }),
-    ),
-  );
+  // Create sample products with variants
+  const sampleProducts = [
+    { name: "Organic Bananas", sku: "FRUIT-001", description: "Fresh organic bananas, per bunch", productType: "FRESH_PRODUCE" as const, variant: { name: "1 Bunch", unitType: "PIECE" as const, unitValue: 1 } },
+    { name: "Whole Milk 1L", sku: "DAIRY-001", description: "Full cream whole milk, 1 liter", productType: "DAIRY" as const, variant: { name: "1 Liter", unitType: "LITER" as const, unitValue: 1 } },
+    { name: "Sourdough Bread", sku: "BAKERY-001", description: "Artisan sourdough loaf", productType: "BAKERY" as const, variant: { name: "1 Loaf", unitType: "PIECE" as const, unitValue: 1 } },
+  ];
+
+  const products = [];
+  for (const p of sampleProducts) {
+    const existing = await prisma.productVariant.findUnique({ where: { sku: p.sku } });
+    if (existing) {
+      const product = await prisma.product.findFirst({ where: { variants: { some: { sku: p.sku } } }, include: { variants: true } });
+      if (product) { products.push(product); continue; }
+    }
+    const product = await prisma.product.create({
+      data: {
+        name: p.name,
+        description: p.description,
+        productType: p.productType,
+        variants: { create: { name: p.variant.name, sku: p.sku, unitType: p.variant.unitType, unitValue: p.variant.unitValue } },
+      },
+      include: { variants: true },
+    });
+    products.push(product);
+  }
 
   // Add products to store with prices
+  const prices = [2.99, 4.49, 6.99];
   for (const [i, product] of products.entries()) {
+    const variant = product.variants[0];
     await prisma.storeProduct.upsert({
-      where: { storeId_productId: { storeId: store.id, productId: product.id } },
+      where: { storeId_variantId: { storeId: store.id, variantId: variant.id } },
       update: {},
       create: {
         storeId: store.id,
         productId: product.id,
-        price: [2.99, 4.49, 6.99][i],
+        variantId: variant.id,
+        price: prices[i],
         stock: 100,
         isActive: true,
       },

@@ -2,6 +2,7 @@ import Fastify from "fastify";
 import cors from "@fastify/cors";
 import jwt from "@fastify/jwt";
 import sensible from "@fastify/sensible";
+import { ZodError } from "zod";
 import { prismaPlugin } from "./plugins/prisma.js";
 import { firebasePlugin } from "./plugins/firebase.js";
 import { authRoutes } from "./routes/auth/index.js";
@@ -14,6 +15,7 @@ import { uploadRoutes } from "./routes/uploads/index.js";
 import { deviceTokenRoutes } from "./routes/device-tokens/index.js";
 import { dashboardRoutes } from "./routes/dashboard/index.js";
 import { categoryRoutes } from "./routes/categories/index.js";
+import { brandRoutes } from "./routes/brands/index.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -38,6 +40,26 @@ export async function buildApp() {
   await app.register(prismaPlugin);
   await app.register(firebasePlugin);
 
+  // ── Error Handler ────────────────────────────────
+  app.setErrorHandler((error, _request, reply) => {
+    if (error instanceof ZodError) {
+      return reply.status(400).send({
+        success: false,
+        error: "Validation Error",
+        message: error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "),
+        statusCode: 400,
+      });
+    }
+    const err = error as Error & { statusCode?: number };
+    app.log.error(error);
+    return reply.status(err.statusCode ?? 500).send({
+      success: false,
+      error: err.name,
+      message: err.message,
+      statusCode: err.statusCode ?? 500,
+    });
+  });
+
   // ── Health Check ──────────────────────────────────
   app.get("/health", async () => {
     return { status: "ok" };
@@ -56,6 +78,7 @@ export async function buildApp() {
       await api.register(deviceTokenRoutes, { prefix: "/device-tokens" });
       await api.register(dashboardRoutes, { prefix: "/dashboard" });
       await api.register(categoryRoutes, { prefix: "/categories" });
+      await api.register(brandRoutes, { prefix: "/brands" });
     },
     { prefix: "/api/v1" },
   );

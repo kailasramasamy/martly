@@ -103,6 +103,25 @@ export const ProductTypeLabels: Record<ProductType, string> = {
   OTC_PHARMA: "OTC Pharma",
 };
 
+export const StorageType = {
+  AMBIENT: "AMBIENT",
+  REFRIGERATED: "REFRIGERATED",
+  DEEP_CHILLED: "DEEP_CHILLED",
+  FROZEN: "FROZEN",
+  COOL_DRY: "COOL_DRY",
+  HUMIDITY_CONTROLLED: "HUMIDITY_CONTROLLED",
+} as const;
+export type StorageType = (typeof StorageType)[keyof typeof StorageType];
+
+export const StorageTypeLabels: Record<StorageType, string> = {
+  AMBIENT: "Room Temperature",
+  REFRIGERATED: "Refrigerated (2-8°C)",
+  DEEP_CHILLED: "Deep Chilled (0-2°C)",
+  FROZEN: "Frozen (-18°C)",
+  COOL_DRY: "Cool & Dry",
+  HUMIDITY_CONTROLLED: "Humidity Controlled",
+};
+
 export const RegulatoryMark = {
   FSSAI: "FSSAI",
   ISI: "ISI",

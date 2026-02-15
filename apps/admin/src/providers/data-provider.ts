@@ -14,6 +14,8 @@ axiosInstance.interceptors.request.use((config) => {
   return config;
 });
 
+export { axiosInstance };
+
 export const martlyDataProvider: DataProvider = {
   getList: async ({ resource, pagination, sorters, filters }) => {
     const { current = 1, pageSize = 20 } = pagination ?? {};
@@ -57,4 +59,16 @@ export const martlyDataProvider: DataProvider = {
   },
 
   getApiUrl: () => `${API_URL}/api/v1`,
+
+  custom: async ({ url, method, payload }) => {
+    // Strip the baseURL prefix if present so axiosInstance doesn't double it
+    const base = `${API_URL}/api/v1`;
+    const resolvedUrl = url.startsWith(base) ? url.slice(base.length) : url;
+    const { data: res } = await axiosInstance.request({
+      url: resolvedUrl,
+      method: method as string,
+      data: payload,
+    });
+    return { data: res };
+  },
 };

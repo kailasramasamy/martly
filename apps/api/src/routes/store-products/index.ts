@@ -28,7 +28,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
           skip,
           take: Number(pageSize),
           orderBy: { createdAt: "desc" },
-          include: { store: true, product: true, variant: true },
+          include: { store: true, product: { include: { brand: true } }, variant: true },
         }),
         app.prisma.storeProduct.count({ where }),
       ]);
@@ -46,7 +46,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
   app.get<{ Params: { id: string } }>("/:id", async (request, reply) => {
       const storeProduct = await app.prisma.storeProduct.findUnique({
         where: { id: request.params.id },
-        include: { store: true, product: true, variant: true },
+        include: { store: true, product: { include: { brand: true } }, variant: true },
       });
       if (!storeProduct) return reply.notFound("Store product not found");
 
@@ -79,7 +79,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
           price: body.price,
           stock: body.stock,
         },
-        include: { store: true, product: true, variant: true },
+        include: { store: true, product: { include: { brand: true } }, variant: true },
       });
 
       const response: ApiResponse<typeof storeProduct> = { success: true, data: storeProduct };
@@ -144,7 +144,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
       const storeProduct = await app.prisma.storeProduct.update({
         where: { id: request.params.id },
         data: body,
-        include: { store: true, product: true, variant: true },
+        include: { store: true, product: { include: { brand: true } }, variant: true },
       });
 
       const response: ApiResponse<typeof storeProduct> = { success: true, data: storeProduct };

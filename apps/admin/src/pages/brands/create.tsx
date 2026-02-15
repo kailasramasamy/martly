@@ -1,29 +1,30 @@
-import { Edit, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, Select, Card, Row, Col } from "antd";
-import { AppstoreOutlined, PictureOutlined } from "@ant-design/icons";
+import { Create, useForm } from "@refinedev/antd";
+import { Form, Input, Card, Row, Col } from "antd";
+import { TrademarkOutlined } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
 
-export const CategoryEdit = () => {
-  const { formProps, saveButtonProps } = useForm({ resource: "categories" });
+export const BrandCreate = () => {
+  const { formProps, saveButtonProps } = useForm({ resource: "brands" });
 
-  const { selectProps: parentSelectProps } = useSelect({
-    resource: "categories",
-    optionLabel: "name",
-    optionValue: "id",
-    filters: [{ field: "parentId", operator: "eq", value: "null" }],
-  });
+  const onNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const slug = e.target.value
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+    formProps.form?.setFieldsValue({ slug });
+  };
 
   return (
-    <Edit saveButtonProps={saveButtonProps}>
+    <Create saveButtonProps={saveButtonProps}>
       <Form {...formProps} layout="vertical">
         <Row gutter={[16, 16]}>
           <Col xs={24} lg={12}>
-            <Card title={sectionTitle(<AppstoreOutlined />, "Category Details")} size="small">
+            <Card title={sectionTitle(<TrademarkOutlined />, "Brand Details")} size="small">
               <Row gutter={16}>
                 <Col xs={24} sm={12}>
                   <Form.Item label="Name" name="name" rules={[{ required: true }]}>
-                    <Input />
+                    <Input onChange={onNameChange} />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
@@ -31,16 +32,11 @@ export const CategoryEdit = () => {
                     <Input />
                   </Form.Item>
                 </Col>
-                <Col xs={24} sm={12}>
-                  <Form.Item label="Parent Category" name="parentId">
-                    <Select {...parentSelectProps} allowClear placeholder="None (top-level)" />
-                  </Form.Item>
-                </Col>
               </Row>
             </Card>
           </Col>
           <Col xs={24} lg={12}>
-            <Card title={sectionTitle(<PictureOutlined />, "Image")} size="small">
+            <Card title={sectionTitle(<TrademarkOutlined />, "Brand Image")} size="small">
               <Form.Item
                 name="imageUrl"
                 getValueFromEvent={(url: string) => url}
@@ -52,6 +48,6 @@ export const CategoryEdit = () => {
           </Col>
         </Row>
       </Form>
-    </Edit>
+    </Create>
   );
 };

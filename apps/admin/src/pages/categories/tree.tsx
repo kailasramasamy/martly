@@ -23,7 +23,7 @@ function toTreeData(nodes: CategoryTreeNode[]): DataNode[] {
 
 export const CategoryTree = () => {
   const { data, isLoading } = useCustom<{ data: CategoryTreeNode[] }>({
-    url: `${import.meta.env.VITE_API_URL}/api/v1/categories/tree`,
+    url: "/categories/tree",
     method: "get",
   });
 

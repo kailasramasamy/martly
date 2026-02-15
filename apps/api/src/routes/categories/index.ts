@@ -1,5 +1,5 @@
 import type { FastifyInstance } from "fastify";
-import { createCategorySchema, updateCategorySchema } from "@martly/shared/schemas";
+import { createCategorySchema, updateCategorySchema, reorderCategoriesSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse, CategoryTreeNode } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
@@ -131,9 +131,43 @@ export async function categoryRoutes(app: FastifyInstance) {
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request) => {
       const body = createCategorySchema.parse(request.body);
-      const category = await app.prisma.category.create({ data: body });
+
+      // Auto-assign sortOrder if not provided
+      let sortOrder = body.sortOrder;
+      if (sortOrder === undefined) {
+        const maxSort = await app.prisma.category.aggregate({
+          where: { parentId: body.parentId ?? null },
+          _max: { sortOrder: true },
+        });
+        sortOrder = (maxSort._max.sortOrder ?? -1) + 1;
+      }
+
+      const category = await app.prisma.category.create({
+        data: { ...body, sortOrder },
+      });
 
       const response: ApiResponse<typeof category> = { success: true, data: category };
+      return response;
+    },
+  );
+
+  // Reorder categories (admin only)
+  app.post(
+    "/reorder",
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    async (request) => {
+      const { items } = reorderCategoriesSchema.parse(request.body);
+
+      await app.prisma.$transaction(
+        items.map((item) =>
+          app.prisma.category.update({
+            where: { id: item.id },
+            data: { sortOrder: item.sortOrder },
+          }),
+        ),
+      );
+
+      const response: ApiResponse<null> = { success: true, data: null };
       return response;
     },
   );

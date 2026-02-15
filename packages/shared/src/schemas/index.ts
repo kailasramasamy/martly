@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType } from "../constants/index.js";
 
 // ── Auth ──────────────────────────────────────────────
 export const loginSchema = z.object({
@@ -84,9 +84,17 @@ export const createCategorySchema = z.object({
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
   parentId: z.string().uuid().nullish(),
   sortOrder: z.number().int().min(0).optional(),
-  imageUrl: z.string().url().optional(),
+  imageUrl: z.string().url().nullish(),
 });
 export type CreateCategoryInput = z.infer<typeof createCategorySchema>;
+
+export const reorderCategoriesSchema = z.object({
+  items: z.array(z.object({
+    id: z.string().uuid(),
+    sortOrder: z.number().int().min(0),
+  })).min(1),
+});
+export type ReorderCategoriesInput = z.infer<typeof reorderCategoriesSchema>;
 
 export const updateCategorySchema = z.object({
   name: z.string().min(1).optional(),
@@ -96,6 +104,21 @@ export const updateCategorySchema = z.object({
   imageUrl: z.string().url().nullish(),
 });
 export type UpdateCategoryInput = z.infer<typeof updateCategorySchema>;
+
+// ── Brand ────────────────────────────────────────────
+export const createBrandSchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  imageUrl: z.string().url().optional(),
+});
+export type CreateBrandInput = z.infer<typeof createBrandSchema>;
+
+export const updateBrandSchema = z.object({
+  name: z.string().min(1).optional(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  imageUrl: z.string().url().nullish(),
+});
+export type UpdateBrandInput = z.infer<typeof updateBrandSchema>;
 
 // ── Product Variant ───────────────────────────────────
 export const createProductVariantSchema = z.object({
@@ -129,7 +152,7 @@ export const productSchema = z.object({
   description: z.string().nullable(),
   imageUrl: z.string().url().nullable(),
   categoryId: z.string().uuid().nullable(),
-  brand: z.string().nullable(),
+  brandId: z.string().uuid().nullable(),
   isActive: z.boolean(),
   tags: z.array(z.string()),
   hsnCode: z.string().nullable(),
@@ -141,6 +164,7 @@ export const productSchema = z.object({
   allergens: z.array(z.string()),
   servingSize: z.string().nullable(),
   shelfLifeDays: z.number().int().nullable(),
+  storageType: z.nativeEnum(StorageType).nullable(),
   storageInstructions: z.string().nullable(),
   manufacturerName: z.string().nullable(),
   countryOfOrigin: z.string().nullable(),
@@ -161,7 +185,7 @@ export const createProductSchema = z.object({
   description: z.string().optional(),
   imageUrl: z.string().url().optional(),
   categoryId: z.string().uuid().optional(),
-  brand: z.string().optional(),
+  brandId: z.string().uuid().optional(),
   tags: z.array(z.string()).optional(),
   hsnCode: z.string().optional(),
   gstPercent: z.number().min(0).max(100).optional(),
@@ -172,6 +196,7 @@ export const createProductSchema = z.object({
   allergens: z.array(z.string()).optional(),
   servingSize: z.string().optional(),
   shelfLifeDays: z.number().int().positive().optional(),
+  storageType: z.nativeEnum(StorageType).optional(),
   storageInstructions: z.string().optional(),
   manufacturerName: z.string().optional(),
   countryOfOrigin: z.string().optional(),
@@ -267,7 +292,7 @@ export const updateProductSchema = z.object({
   description: z.string().nullish(),
   imageUrl: z.string().url().nullish(),
   categoryId: z.string().uuid().nullish(),
-  brand: z.string().nullish(),
+  brandId: z.string().uuid().nullish(),
   isActive: z.boolean().optional(),
   tags: z.array(z.string()).optional(),
   hsnCode: z.string().nullish(),
@@ -279,6 +304,7 @@ export const updateProductSchema = z.object({
   allergens: z.array(z.string()).optional(),
   servingSize: z.string().nullish(),
   shelfLifeDays: z.number().int().positive().nullish(),
+  storageType: z.nativeEnum(StorageType).nullish(),
   storageInstructions: z.string().nullish(),
   manufacturerName: z.string().nullish(),
   countryOfOrigin: z.string().nullish(),

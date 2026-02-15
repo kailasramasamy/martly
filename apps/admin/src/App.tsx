@@ -11,6 +11,7 @@ import {
   TagsOutlined,
   ShoppingOutlined,
   ShoppingCartOutlined,
+  TrademarkOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -41,6 +42,9 @@ import { CategoryList } from "./pages/categories/list";
 import { CategoryCreate } from "./pages/categories/create";
 import { CategoryEdit } from "./pages/categories/edit";
 import { CategoryTree } from "./pages/categories/tree";
+import { BrandList } from "./pages/brands/list";
+import { BrandCreate } from "./pages/brands/create";
+import { BrandEdit } from "./pages/brands/edit";
 
 export default function App() {
   return (
@@ -79,6 +83,13 @@ export default function App() {
                 create: "/categories/create",
                 edit: "/categories/edit/:id",
                 meta: { label: "Categories", icon: <AppstoreOutlined /> },
+              },
+              {
+                name: "brands",
+                list: "/brands",
+                create: "/brands/create",
+                edit: "/brands/edit/:id",
+                meta: { label: "Brands", icon: <TrademarkOutlined /> },
               },
               {
                 name: "products",
@@ -137,6 +148,11 @@ export default function App() {
                   <Route path="create" element={<CategoryCreate />} />
                   <Route path="edit/:id" element={<CategoryEdit />} />
                   <Route path="tree" element={<CategoryTree />} />
+                </Route>
+                <Route path="/brands">
+                  <Route index element={<BrandList />} />
+                  <Route path="create" element={<BrandCreate />} />
+                  <Route path="edit/:id" element={<BrandEdit />} />
                 </Route>
                 <Route path="/products">
                   <Route index element={<ProductList />} />

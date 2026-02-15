@@ -25,6 +25,20 @@ export const PRODUCT_TYPE_OPTIONS = Object.entries(PRODUCT_TYPE_CONFIG).map(([va
   value,
 }));
 
+export const STORAGE_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
+  AMBIENT: { color: "default", label: "Room Temp" },
+  REFRIGERATED: { color: "blue", label: "Refrigerated (2-8°C)" },
+  DEEP_CHILLED: { color: "cyan", label: "Deep Chilled (0-2°C)" },
+  FROZEN: { color: "geekblue", label: "Frozen (-18°C)" },
+  COOL_DRY: { color: "green", label: "Cool & Dry" },
+  HUMIDITY_CONTROLLED: { color: "purple", label: "Humidity Controlled" },
+};
+
+export const STORAGE_TYPE_OPTIONS = Object.entries(STORAGE_TYPE_CONFIG).map(([value, { label }]) => ({
+  label,
+  value,
+}));
+
 export const ORDER_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
   PENDING: { color: "orange", label: "Pending" },
   CONFIRMED: { color: "blue", label: "Confirmed" },
