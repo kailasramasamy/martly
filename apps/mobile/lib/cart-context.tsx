@@ -3,6 +3,8 @@ import { createContext, useContext, useState, useCallback, useMemo, type ReactNo
 interface CartItem {
   storeProductId: string;
   productName: string;
+  variantId: string;
+  variantName: string;
   price: number;
   quantity: number;
 }

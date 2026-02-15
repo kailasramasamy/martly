@@ -7,12 +7,16 @@ import { requireRole } from "../../middleware/authorize.js";
 export async function storeRoutes(app: FastifyInstance) {
   // List stores
   app.get("/", async (request) => {
-    const { page = 1, pageSize = 20 } = request.query as { page?: number; pageSize?: number };
+    const { page = 1, pageSize = 20, q } = request.query as { page?: number; pageSize?: number; q?: string };
     const skip = (Number(page) - 1) * Number(pageSize);
 
+    const where = q
+      ? { OR: [{ name: { contains: q, mode: "insensitive" as const } }, { address: { contains: q, mode: "insensitive" as const } }] }
+      : {};
+
     const [stores, total] = await Promise.all([
-      app.prisma.store.findMany({ skip, take: Number(pageSize), orderBy: { createdAt: "desc" } }),
-      app.prisma.store.count(),
+      app.prisma.store.findMany({ where, skip, take: Number(pageSize), orderBy: { createdAt: "desc" } }),
+      app.prisma.store.count({ where }),
     ]);
 
     const response: PaginatedResponse<(typeof stores)[0]> = {
@@ -79,7 +83,7 @@ export async function storeRoutes(app: FastifyInstance) {
     },
   );
 
-  // Assign product to store (convenience endpoint)
+  // Assign variant to store (convenience endpoint)
   app.post<{ Params: { id: string } }>(
     "/:id/products",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
@@ -87,16 +91,19 @@ export async function storeRoutes(app: FastifyInstance) {
       const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
       if (!store) return reply.notFound("Store not found");
 
-      const { productId, price, stock } = request.body as { productId: string; price: number; stock: number };
+      const { variantId, price, stock } = request.body as { variantId: string; price: number; stock: number };
+
+      const variant = await app.prisma.productVariant.findUnique({ where: { id: variantId } });
+      if (!variant) return reply.notFound("Product variant not found");
 
       const existing = await app.prisma.storeProduct.findUnique({
-        where: { storeId_productId: { storeId: request.params.id, productId } },
+        where: { storeId_variantId: { storeId: request.params.id, variantId } },
       });
-      if (existing) return reply.conflict("Product already assigned to this store");
+      if (existing) return reply.conflict("Variant already assigned to this store");
 
       const storeProduct = await app.prisma.storeProduct.create({
-        data: { storeId: request.params.id, productId, price, stock },
-        include: { product: true },
+        data: { storeId: request.params.id, productId: variant.productId, variantId, price, stock },
+        include: { product: true, variant: true },
       });
 
       const response: ApiResponse<typeof storeProduct> = { success: true, data: storeProduct };
@@ -106,7 +113,7 @@ export async function storeRoutes(app: FastifyInstance) {
 
   // Get store products
   app.get<{ Params: { id: string } }>("/:id/products", async (request, reply) => {
-    const { page = 1, pageSize = 20 } = request.query as { page?: number; pageSize?: number };
+    const { page = 1, pageSize = 200 } = request.query as { page?: number; pageSize?: number };
     const skip = (Number(page) - 1) * Number(pageSize);
 
     const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
@@ -119,7 +126,10 @@ export async function storeRoutes(app: FastifyInstance) {
         where,
         skip,
         take: Number(pageSize),
-        include: { product: true },
+        include: {
+          product: { include: { category: true, variants: true } },
+          variant: true,
+        },
         orderBy: { createdAt: "desc" },
       }),
       app.prisma.storeProduct.count({ where }),

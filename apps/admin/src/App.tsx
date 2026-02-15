@@ -1,7 +1,7 @@
 import { Refine, Authenticated } from "@refinedev/core";
 import { ThemedLayoutV2, useNotificationProvider } from "@refinedev/antd";
 import routerProvider from "@refinedev/react-router";
-import { BrowserRouter, Routes, Route, Outlet, Navigate } from "react-router";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router";
 import { App as AntdApp } from "antd";
 
 import "@refinedev/antd/dist/reset.css";
@@ -13,15 +13,24 @@ import { StoreList } from "./pages/stores/list";
 import { StoreCreate } from "./pages/stores/create";
 import { StoreEdit } from "./pages/stores/edit";
 import { StoreShow } from "./pages/stores/show";
+import { StoreOnboard } from "./pages/stores/onboard";
 import { ProductList } from "./pages/products/list";
 import { ProductCreate } from "./pages/products/create";
 import { ProductEdit } from "./pages/products/edit";
 import { ProductShow } from "./pages/products/show";
 import { OrderList } from "./pages/orders/list";
 import { OrderShow } from "./pages/orders/show";
+import { OrganizationList } from "./pages/organizations/list";
+import { OrganizationCreate } from "./pages/organizations/create";
+import { OrganizationEdit } from "./pages/organizations/edit";
 import { StoreProductList } from "./pages/store-products/list";
 import { StoreProductCreate } from "./pages/store-products/create";
 import { StoreProductEdit } from "./pages/store-products/edit";
+import { DashboardPage } from "./pages/dashboard";
+import { CategoryList } from "./pages/categories/list";
+import { CategoryCreate } from "./pages/categories/create";
+import { CategoryEdit } from "./pages/categories/edit";
+import { CategoryTree } from "./pages/categories/tree";
 
 export default function App() {
   return (
@@ -34,12 +43,31 @@ export default function App() {
           notificationProvider={useNotificationProvider}
           resources={[
             {
+              name: "dashboard",
+              list: "/",
+              meta: { label: "Dashboard" },
+            },
+            {
+              name: "organizations",
+              list: "/organizations",
+              create: "/organizations/create",
+              edit: "/organizations/edit/:id",
+              meta: { label: "Organizations" },
+            },
+            {
               name: "stores",
               list: "/stores",
               create: "/stores/create",
               edit: "/stores/edit/:id",
               show: "/stores/show/:id",
               meta: { label: "Stores" },
+            },
+            {
+              name: "categories",
+              list: "/categories",
+              create: "/categories/create",
+              edit: "/categories/edit/:id",
+              meta: { label: "Categories" },
             },
             {
               name: "products",
@@ -74,11 +102,23 @@ export default function App() {
                 </Authenticated>
               }
             >
+              <Route path="/organizations">
+                <Route index element={<OrganizationList />} />
+                <Route path="create" element={<OrganizationCreate />} />
+                <Route path="edit/:id" element={<OrganizationEdit />} />
+              </Route>
               <Route path="/stores">
                 <Route index element={<StoreList />} />
                 <Route path="create" element={<StoreCreate />} />
                 <Route path="edit/:id" element={<StoreEdit />} />
                 <Route path="show/:id" element={<StoreShow />} />
+                <Route path="show/:id/onboard" element={<StoreOnboard />} />
+              </Route>
+              <Route path="/categories">
+                <Route index element={<CategoryList />} />
+                <Route path="create" element={<CategoryCreate />} />
+                <Route path="edit/:id" element={<CategoryEdit />} />
+                <Route path="tree" element={<CategoryTree />} />
               </Route>
               <Route path="/products">
                 <Route index element={<ProductList />} />
@@ -95,7 +135,7 @@ export default function App() {
                 <Route index element={<OrderList />} />
                 <Route path="show/:id" element={<OrderShow />} />
               </Route>
-              <Route path="/" element={<Navigate to="/stores" replace />} />
+              <Route path="/" element={<DashboardPage />} />
             </Route>
             <Route path="/login" element={<LoginPage />} />
           </Routes>

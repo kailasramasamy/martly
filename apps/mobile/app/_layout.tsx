@@ -1,9 +1,23 @@
-import { Stack } from "expo-router";
+import { useEffect } from "react";
+import { Stack, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { AuthProvider } from "../lib/auth-context";
 import { CartProvider } from "../lib/cart-context";
+import { addNotificationResponseListener } from "../lib/notifications";
 
 export default function RootLayout() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const subscription = addNotificationResponseListener((response) => {
+      const data = response.notification.request.content.data;
+      if (data?.type === "ORDER_STATUS_UPDATE" && data?.orderId) {
+        router.push(`/order/${data.orderId}`);
+      }
+    });
+    return () => subscription.remove();
+  }, [router]);
+
   return (
     <AuthProvider>
       <CartProvider>
@@ -13,6 +27,7 @@ export default function RootLayout() {
           <Stack.Screen name="(tabs)" />
           <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
           <Stack.Screen name="checkout" options={{ headerShown: true, title: "Checkout" }} />
+          <Stack.Screen name="order/[id]" options={{ headerShown: true, title: "Order Details" }} />
         </Stack>
       </CartProvider>
     </AuthProvider>

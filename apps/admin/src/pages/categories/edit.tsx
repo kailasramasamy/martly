@@ -1,0 +1,34 @@
+import { Edit, useForm, useSelect } from "@refinedev/antd";
+import { Form, Input, InputNumber, Select } from "antd";
+
+export const CategoryEdit = () => {
+  const { formProps, saveButtonProps } = useForm({ resource: "categories" });
+
+  const { selectProps: parentSelectProps } = useSelect({
+    resource: "categories",
+    optionLabel: "name",
+    optionValue: "id",
+  });
+
+  return (
+    <Edit saveButtonProps={saveButtonProps}>
+      <Form {...formProps} layout="vertical">
+        <Form.Item label="Name" name="name" rules={[{ required: true }]}>
+          <Input />
+        </Form.Item>
+        <Form.Item label="Slug" name="slug" rules={[{ required: true }]}>
+          <Input />
+        </Form.Item>
+        <Form.Item label="Parent Category" name="parentId">
+          <Select {...parentSelectProps} allowClear placeholder="None (top-level)" />
+        </Form.Item>
+        <Form.Item label="Sort Order" name="sortOrder">
+          <InputNumber min={0} />
+        </Form.Item>
+        <Form.Item label="Image URL" name="imageUrl">
+          <Input />
+        </Form.Item>
+      </Form>
+    </Edit>
+  );
+};

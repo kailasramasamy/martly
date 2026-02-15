@@ -3,6 +3,7 @@ import { createOrderSchema, updateOrderStatusSchema } from "@martly/shared/schem
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
+import { sendOrderStatusNotification } from "../../services/notification.js";
 
 export async function orderRoutes(app: FastifyInstance) {
   // List orders (authenticated)
@@ -19,7 +20,7 @@ export async function orderRoutes(app: FastifyInstance) {
         skip,
         take: Number(pageSize),
         orderBy: { createdAt: "desc" },
-        include: { items: true },
+        include: { items: { include: { product: true, variant: true } } },
       }),
       app.prisma.order.count({ where }),
     ]);
@@ -36,7 +37,7 @@ export async function orderRoutes(app: FastifyInstance) {
   app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate] }, async (request, reply) => {
     const order = await app.prisma.order.findUnique({
       where: { id: request.params.id },
-      include: { items: true },
+      include: { items: { include: { product: true, variant: true } } },
     });
     if (!order) return reply.notFound("Order not found");
 
@@ -58,12 +59,14 @@ export async function orderRoutes(app: FastifyInstance) {
     let totalAmount = 0;
 
     const itemsData = body.items.map((item) => {
+      const sp = storeProducts.find((sp) => sp.id === item.storeProductId)!;
       const unitPrice = priceMap.get(item.storeProductId) ?? 0;
       const totalPrice = unitPrice * item.quantity;
       totalAmount += totalPrice;
       return {
         storeProductId: item.storeProductId,
-        productId: storeProducts.find((sp) => sp.id === item.storeProductId)!.productId,
+        productId: sp.productId,
+        variantId: sp.variantId,
         quantity: item.quantity,
         unitPrice,
         totalPrice,
@@ -80,7 +83,7 @@ export async function orderRoutes(app: FastifyInstance) {
         paymentStatus: "PENDING",
         items: { create: itemsData },
       },
-      include: { items: true },
+      include: { items: { include: { variant: true } } },
     });
 
     const response: ApiResponse<typeof order> = { success: true, data: order };
@@ -101,6 +104,9 @@ export async function orderRoutes(app: FastifyInstance) {
         data: { status: body.status },
         include: { items: true },
       });
+
+      // Fire-and-forget push notification
+      sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, body.status);
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;

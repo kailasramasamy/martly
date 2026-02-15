@@ -1,6 +1,7 @@
-import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, useRef, type ReactNode } from "react";
 import * as SecureStore from "expo-secure-store";
 import { setAccessToken, api } from "./api";
+import { registerForPushNotifications, unregisterPushToken } from "./notifications";
 import type { AuthTokens } from "@martly/shared/types";
 
 interface UserInfo {
@@ -10,12 +11,20 @@ interface UserInfo {
   role: string;
 }
 
+interface RegisterData {
+  email: string;
+  password: string;
+  name: string;
+  phone?: string;
+}
+
 interface AuthState {
   isAuthenticated: boolean;
   isLoading: boolean;
   user: UserInfo | null;
   login: (tokens: AuthTokens) => void;
   logout: () => void;
+  register: (data: RegisterData) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthState | null>(null);
@@ -27,6 +36,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState<UserInfo | null>(null);
+  const pushTokenRef = useRef<string | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -37,6 +47,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           const res = await api.get<UserInfo>("/api/v1/auth/me");
           setUser(res.data);
           setIsAuthenticated(true);
+          // Register push token after session restore
+          const pt = await registerForPushNotifications();
+          pushTokenRef.current = pt;
         }
       } catch {
         await SecureStore.deleteItemAsync(ACCESS_TOKEN_KEY);
@@ -60,9 +73,19 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       // token worked for login, user info fetch failed — proceed anyway
     }
     setIsAuthenticated(true);
+
+    // Register push notifications after login
+    const pt = await registerForPushNotifications();
+    pushTokenRef.current = pt;
   }, []);
 
   const logout = useCallback(async () => {
+    // Unregister push token before clearing auth
+    if (pushTokenRef.current) {
+      await unregisterPushToken(pushTokenRef.current);
+      pushTokenRef.current = null;
+    }
+
     setAccessToken(null);
     setUser(null);
     setIsAuthenticated(false);
@@ -70,8 +93,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
   }, []);
 
+  const register = useCallback(
+    async (data: RegisterData) => {
+      const result = await api.post<AuthTokens>("/api/v1/auth/register", data);
+      await login(result.data);
+    },
+    [login],
+  );
+
   return (
-    <AuthContext.Provider value={{ isAuthenticated, isLoading, user, login, logout }}>
+    <AuthContext.Provider value={{ isAuthenticated, isLoading, user, login, logout, register }}>
       {children}
     </AuthContext.Provider>
   );

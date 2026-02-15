@@ -15,13 +15,21 @@ axiosInstance.interceptors.request.use((config) => {
 });
 
 export const martlyDataProvider: DataProvider = {
-  getList: async ({ resource, pagination, sorters }) => {
+  getList: async ({ resource, pagination, sorters, filters }) => {
     const { current = 1, pageSize = 20 } = pagination ?? {};
     const params: Record<string, string | number> = { page: current, pageSize };
 
     if (sorters && sorters.length > 0) {
       params.sortBy = sorters[0].field;
       params.sortOrder = sorters[0].order;
+    }
+
+    if (filters) {
+      for (const filter of filters) {
+        if ("field" in filter && filter.value !== undefined && filter.value !== "") {
+          params[filter.field] = filter.value;
+        }
+      }
     }
 
     const { data: res } = await axiosInstance.get(`/${resource}`, { params });

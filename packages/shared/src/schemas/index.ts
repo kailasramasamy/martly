@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType } from "../constants/index.js";
 
 // ── Auth ──────────────────────────────────────────────
 export const loginSchema = z.object({
@@ -33,6 +33,28 @@ export const createUserSchema = registerSchema.extend({
 });
 export type CreateUserInput = z.infer<typeof createUserSchema>;
 
+// ── Organization ─────────────────────────────────────
+export const organizationSchema = z.object({
+  id: z.string().uuid(),
+  name: z.string().min(1),
+  slug: z.string().min(1),
+  createdAt: z.coerce.date(),
+  updatedAt: z.coerce.date(),
+});
+export type Organization = z.infer<typeof organizationSchema>;
+
+export const createOrganizationSchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+});
+export type CreateOrganizationInput = z.infer<typeof createOrganizationSchema>;
+
+export const updateOrganizationSchema = z.object({
+  name: z.string().min(1).optional(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+});
+export type UpdateOrganizationInput = z.infer<typeof updateOrganizationSchema>;
+
 // ── Store ─────────────────────────────────────────────
 export const storeSchema = z.object({
   id: z.string().uuid(),
@@ -56,13 +78,79 @@ export const createStoreSchema = z.object({
 });
 export type CreateStoreInput = z.infer<typeof createStoreSchema>;
 
+// ── Category ──────────────────────────────────────────
+export const createCategorySchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  parentId: z.string().uuid().nullish(),
+  sortOrder: z.number().int().min(0).optional(),
+  imageUrl: z.string().url().optional(),
+});
+export type CreateCategoryInput = z.infer<typeof createCategorySchema>;
+
+export const updateCategorySchema = z.object({
+  name: z.string().min(1).optional(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  parentId: z.string().uuid().nullish(),
+  sortOrder: z.number().int().min(0).optional(),
+  imageUrl: z.string().url().nullish(),
+});
+export type UpdateCategoryInput = z.infer<typeof updateCategorySchema>;
+
+// ── Product Variant ───────────────────────────────────
+export const createProductVariantSchema = z.object({
+  name: z.string().min(1),
+  sku: z.string().optional(),
+  barcode: z.string().optional(),
+  unitType: z.nativeEnum(UnitType).default(UnitType.PIECE),
+  unitValue: z.number().positive().default(1),
+  mrp: z.number().positive().optional(),
+  packType: z.string().optional(),
+  imageUrl: z.string().url().optional(),
+});
+export type CreateProductVariantInput = z.infer<typeof createProductVariantSchema>;
+
+export const updateProductVariantSchema = z.object({
+  name: z.string().min(1).optional(),
+  sku: z.string().nullish(),
+  barcode: z.string().nullish(),
+  unitType: z.nativeEnum(UnitType).optional(),
+  unitValue: z.number().positive().optional(),
+  mrp: z.number().positive().nullish(),
+  packType: z.string().nullish(),
+  imageUrl: z.string().url().nullish(),
+});
+export type UpdateProductVariantInput = z.infer<typeof updateProductVariantSchema>;
+
 // ── Product ───────────────────────────────────────────
 export const productSchema = z.object({
   id: z.string().uuid(),
   name: z.string().min(1),
   description: z.string().nullable(),
-  sku: z.string().nullable(),
   imageUrl: z.string().url().nullable(),
+  categoryId: z.string().uuid().nullable(),
+  brand: z.string().nullable(),
+  isActive: z.boolean(),
+  tags: z.array(z.string()),
+  hsnCode: z.string().nullable(),
+  gstPercent: z.number().nullable(),
+  foodType: z.nativeEnum(FoodType).nullable(),
+  fssaiLicense: z.string().nullable(),
+  ingredients: z.string().nullable(),
+  nutritionalInfo: z.unknown().nullable(),
+  allergens: z.array(z.string()),
+  servingSize: z.string().nullable(),
+  shelfLifeDays: z.number().int().nullable(),
+  storageInstructions: z.string().nullable(),
+  manufacturerName: z.string().nullable(),
+  countryOfOrigin: z.string().nullable(),
+  images: z.array(z.string()),
+  productType: z.nativeEnum(ProductType).nullable(),
+  regulatoryMarks: z.array(z.string()),
+  certifications: z.array(z.string()),
+  mfgLicenseNo: z.string().nullable(),
+  dangerWarnings: z.string().nullable(),
+  usageInstructions: z.string().nullable(),
   createdAt: z.coerce.date(),
   updatedAt: z.coerce.date(),
 });
@@ -71,19 +159,53 @@ export type Product = z.infer<typeof productSchema>;
 export const createProductSchema = z.object({
   name: z.string().min(1),
   description: z.string().optional(),
-  sku: z.string().optional(),
   imageUrl: z.string().url().optional(),
+  categoryId: z.string().uuid().optional(),
+  brand: z.string().optional(),
+  tags: z.array(z.string()).optional(),
+  hsnCode: z.string().optional(),
+  gstPercent: z.number().min(0).max(100).optional(),
+  foodType: z.nativeEnum(FoodType).optional(),
+  fssaiLicense: z.string().optional(),
+  ingredients: z.string().optional(),
+  nutritionalInfo: z.unknown().optional(),
+  allergens: z.array(z.string()).optional(),
+  servingSize: z.string().optional(),
+  shelfLifeDays: z.number().int().positive().optional(),
+  storageInstructions: z.string().optional(),
+  manufacturerName: z.string().optional(),
+  countryOfOrigin: z.string().optional(),
+  images: z.array(z.string()).optional(),
+  productType: z.nativeEnum(ProductType).optional(),
+  regulatoryMarks: z.array(z.string()).optional(),
+  certifications: z.array(z.string()).optional(),
+  mfgLicenseNo: z.string().optional(),
+  dangerWarnings: z.string().optional(),
+  usageInstructions: z.string().optional(),
+  variants: z.array(createProductVariantSchema).min(1).optional(),
 });
 export type CreateProductInput = z.infer<typeof createProductSchema>;
 
 // ── StoreProduct ─────────────────────────────────────
 export const createStoreProductSchema = z.object({
   storeId: z.string().uuid(),
-  productId: z.string().uuid(),
+  variantId: z.string().uuid(),
   price: z.number().positive(),
   stock: z.number().int().min(0),
 });
 export type CreateStoreProductInput = z.infer<typeof createStoreProductSchema>;
+
+export const bulkCreateStoreProductSchema = z.object({
+  storeId: z.string().uuid(),
+  items: z.array(
+    z.object({
+      variantId: z.string().uuid(),
+      price: z.number().positive(),
+      stock: z.number().int().min(0).default(0),
+    }),
+  ).min(1).max(200),
+});
+export type BulkCreateStoreProductInput = z.infer<typeof bulkCreateStoreProductSchema>;
 
 export const updateStoreProductSchema = z.object({
   price: z.number().positive().optional(),
@@ -96,6 +218,7 @@ export type UpdateStoreProductInput = z.infer<typeof updateStoreProductSchema>;
 export const orderItemSchema = z.object({
   id: z.string().uuid(),
   productId: z.string().uuid(),
+  variantId: z.string().uuid(),
   storeProductId: z.string().uuid(),
   quantity: z.number().int().positive(),
   unitPrice: z.number().positive(),
@@ -142,8 +265,30 @@ export type UpdateStoreInput = z.infer<typeof updateStoreSchema>;
 export const updateProductSchema = z.object({
   name: z.string().min(1).optional(),
   description: z.string().nullish(),
-  sku: z.string().nullish(),
   imageUrl: z.string().url().nullish(),
+  categoryId: z.string().uuid().nullish(),
+  brand: z.string().nullish(),
+  isActive: z.boolean().optional(),
+  tags: z.array(z.string()).optional(),
+  hsnCode: z.string().nullish(),
+  gstPercent: z.number().min(0).max(100).nullish(),
+  foodType: z.nativeEnum(FoodType).nullish(),
+  fssaiLicense: z.string().nullish(),
+  ingredients: z.string().nullish(),
+  nutritionalInfo: z.unknown().nullish(),
+  allergens: z.array(z.string()).optional(),
+  servingSize: z.string().nullish(),
+  shelfLifeDays: z.number().int().positive().nullish(),
+  storageInstructions: z.string().nullish(),
+  manufacturerName: z.string().nullish(),
+  countryOfOrigin: z.string().nullish(),
+  images: z.array(z.string()).optional(),
+  productType: z.nativeEnum(ProductType).nullish(),
+  regulatoryMarks: z.array(z.string()).optional(),
+  certifications: z.array(z.string()).optional(),
+  mfgLicenseNo: z.string().nullish(),
+  dangerWarnings: z.string().nullish(),
+  usageInstructions: z.string().nullish(),
 });
 export type UpdateProductInput = z.infer<typeof updateProductSchema>;
 

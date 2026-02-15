@@ -42,6 +42,39 @@ enum PaymentStatus {
   REFUNDED
 }
 
+enum UnitType {
+  KG
+  GRAM
+  LITER
+  ML
+  PIECE
+  PACK
+  DOZEN
+  BUNDLE
+}
+
+enum FoodType {
+  VEG
+  NON_VEG
+  VEGAN
+  EGG
+}
+
+enum ProductType {
+  GROCERY
+  SNACKS
+  BEVERAGES
+  DAIRY
+  FROZEN
+  FRESH_PRODUCE
+  BAKERY
+  PERSONAL_CARE
+  HOUSEHOLD
+  BABY_CARE
+  PET_CARE
+  OTC_PHARMA
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -85,8 +118,9 @@ model User {
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
-  userStores UserStore[]
-  orders     Order[]
+  userStores    UserStore[]
+  orders        Order[]
+  deviceTokens  DeviceToken[]
 
   @@map("users")
 }
@@ -105,36 +139,100 @@ model UserStore {
   @@map("user_stores")
 }
 
-model Product {
-  id          String   @id @default(uuid())
-  name        String
-  description String?
-  sku         String?  @unique
-  imageUrl    String?  @map("image_url")
-  createdAt   DateTime @default(now()) @map("created_at")
-  updatedAt   DateTime @updatedAt @map("updated_at")
+model Category {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String   @unique
+  parentId  String?  @map("parent_id")
+  sortOrder Int      @default(0) @map("sort_order")
+  imageUrl  String?  @map("image_url")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
+  parent   Category?  @relation("CategoryTree", fields: [parentId], references: [id])
+  children Category[] @relation("CategoryTree")
+  products Product[]
+
+  @@map("categories")
+}
+
+model Product {
+  id                  String    @id @default(uuid())
+  name                String
+  description         String?
+  imageUrl            String?   @map("image_url")
+  categoryId          String?   @map("category_id")
+  brand               String?
+  isActive            Boolean   @default(true) @map("is_active")
+  tags                String[]
+  hsnCode             String?   @map("hsn_code")
+  gstPercent          Decimal?  @db.Decimal(4, 2) @map("gst_percent")
+  foodType            FoodType? @map("food_type")
+  fssaiLicense        String?   @map("fssai_license")
+  ingredients         String?
+  nutritionalInfo     Json?     @map("nutritional_info")
+  allergens           String[]
+  servingSize         String?   @map("serving_size")
+  shelfLifeDays       Int?      @map("shelf_life_days")
+  storageInstructions String?   @map("storage_instructions")
+  manufacturerName    String?   @map("manufacturer_name")
+  countryOfOrigin     String?      @map("country_of_origin")
+  images              String[]
+  productType         ProductType? @map("product_type")
+  regulatoryMarks     String[]     @default([]) @map("regulatory_marks")
+  certifications      String[]     @default([])
+  mfgLicenseNo        String?      @map("mfg_license_no")
+  dangerWarnings      String?      @map("danger_warnings")
+  usageInstructions   String?      @map("usage_instructions")
+  createdAt           DateTime     @default(now()) @map("created_at")
+  updatedAt           DateTime     @updatedAt @map("updated_at")
+
+  category      Category?        @relation(fields: [categoryId], references: [id])
+  variants      ProductVariant[]
   storeProducts StoreProduct[]
   orderItems    OrderItem[]
 
   @@map("products")
 }
 
+model ProductVariant {
+  id        String   @id @default(uuid())
+  productId String   @map("product_id")
+  name      String
+  sku       String?  @unique
+  barcode   String?  @unique
+  unitType  UnitType @default(PIECE) @map("unit_type")
+  unitValue Decimal  @default(1) @db.Decimal(10, 2) @map("unit_value")
+  mrp       Decimal? @db.Decimal(10, 2)
+  packType  String?  @map("pack_type")
+  imageUrl  String?  @map("image_url")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  product       Product        @relation(fields: [productId], references: [id], onDelete: Cascade)
+  storeProducts StoreProduct[]
+  orderItems    OrderItem[]
+
+  @@map("product_variants")
+}
+
 model StoreProduct {
   id        String   @id @default(uuid())
   storeId   String   @map("store_id")
   productId String   @map("product_id")
+  variantId String   @map("variant_id")
   price     Decimal  @db.Decimal(10, 2)
   stock     Int      @default(0)
   isActive  Boolean  @default(true) @map("is_active")
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  store      Store       @relation(fields: [storeId], references: [id])
-  product    Product     @relation(fields: [productId], references: [id])
+  store      Store          @relation(fields: [storeId], references: [id])
+  product    Product        @relation(fields: [productId], references: [id])
+  variant    ProductVariant @relation(fields: [variantId], references: [id])
   orderItems OrderItem[]
 
-  @@unique([storeId, productId])
+  @@unique([storeId, variantId])
   @@map("store_products")
 }
 
@@ -156,18 +254,34 @@ model Order {
   @@map("orders")
 }
 
+model DeviceToken {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  token     String   @unique
+  platform  String   @default("unknown")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("device_tokens")
+}
+
 model OrderItem {
   id             String  @id @default(uuid())
   orderId        String  @map("order_id")
   productId      String  @map("product_id")
+  variantId      String  @map("variant_id")
   storeProductId String  @map("store_product_id")
   quantity       Int
   unitPrice      Decimal @db.Decimal(10, 2) @map("unit_price")
   totalPrice     Decimal @db.Decimal(10, 2) @map("total_price")
 
-  order        Order        @relation(fields: [orderId], references: [id])
-  product      Product      @relation(fields: [productId], references: [id])
-  storeProduct StoreProduct @relation(fields: [storeProductId], references: [id])
+  order        Order          @relation(fields: [orderId], references: [id])
+  product      Product        @relation(fields: [productId], references: [id])
+  variant      ProductVariant @relation(fields: [variantId], references: [id])
+  storeProduct StoreProduct   @relation(fields: [storeProductId], references: [id])
 
   @@map("order_items")
 }

@@ -38,5 +38,6 @@ export const api = {
     request<ApiResponse<T>>(path, { method: "POST", body: JSON.stringify(body) }),
   put: <T>(path: string, body: unknown) =>
     request<ApiResponse<T>>(path, { method: "PUT", body: JSON.stringify(body) }),
-  delete: <T>(path: string) => request<ApiResponse<T>>(path, { method: "DELETE" }),
+  delete: <T>(path: string, body?: unknown) =>
+    request<ApiResponse<T>>(path, { method: "DELETE", ...(body ? { body: JSON.stringify(body) } : {}) }),
 };

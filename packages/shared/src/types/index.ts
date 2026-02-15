@@ -50,3 +50,14 @@ export interface JwtPayload {
   iat: number;
   exp: number;
 }
+
+// ── Category Tree ─────────────────────────────────────
+export interface CategoryTreeNode {
+  id: string;
+  name: string;
+  slug: string;
+  parentId: string | null;
+  sortOrder: number;
+  imageUrl: string | null;
+  children: CategoryTreeNode[];
+}

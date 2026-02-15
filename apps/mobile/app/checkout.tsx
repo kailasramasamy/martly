@@ -39,7 +39,7 @@ export default function CheckoutScreen() {
 
       clearCart();
       Alert.alert("Order Placed", "Your order has been placed successfully!", [
-        { text: "OK", onPress: () => router.replace("/(tabs)") },
+        { text: "View Orders", onPress: () => router.replace("/(tabs)/orders") },
       ]);
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : "Failed to place order";
@@ -63,6 +63,7 @@ export default function CheckoutScreen() {
           <View style={styles.itemRow}>
             <View style={{ flex: 1 }}>
               <Text style={styles.itemName}>{item.productName}</Text>
+              <Text style={styles.itemVariant}>{item.variantName}</Text>
               <Text style={styles.itemDetail}>
                 {item.quantity} x ${item.price.toFixed(2)}
               </Text>
@@ -119,6 +120,7 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.border,
   },
   itemName: { fontSize: fontSize.md, fontWeight: "600", color: colors.text },
+  itemVariant: { fontSize: fontSize.sm, color: colors.textSecondary, marginTop: 1 },
   itemDetail: { fontSize: fontSize.sm, color: colors.textSecondary, marginTop: 2 },
   itemTotal: { fontSize: fontSize.md, fontWeight: "bold", color: colors.text },
   footer: { marginTop: spacing.md },
