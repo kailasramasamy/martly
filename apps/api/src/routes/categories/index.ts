@@ -128,7 +128,7 @@ export async function categoryRoutes(app: FastifyInstance) {
   // Create category (admin only)
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
     async (request) => {
       const body = createCategorySchema.parse(request.body);
 
@@ -154,7 +154,7 @@ export async function categoryRoutes(app: FastifyInstance) {
   // Reorder categories (admin only)
   app.post(
     "/reorder",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
     async (request) => {
       const { items } = reorderCategoriesSchema.parse(request.body);
 
@@ -175,7 +175,7 @@ export async function categoryRoutes(app: FastifyInstance) {
   // Update category
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
     async (request, reply) => {
       const body = updateCategorySchema.parse(request.body);
       const existing = await app.prisma.category.findUnique({ where: { id: request.params.id } });
@@ -194,7 +194,7 @@ export async function categoryRoutes(app: FastifyInstance) {
   // Delete category (only if no products or children)
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
     async (request, reply) => {
       const existing = await app.prisma.category.findUnique({
         where: { id: request.params.id },

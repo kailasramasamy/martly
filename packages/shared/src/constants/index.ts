@@ -135,6 +135,17 @@ export const RegulatoryMark = {
 } as const;
 export type RegulatoryMark = (typeof RegulatoryMark)[keyof typeof RegulatoryMark];
 
+export const DiscountType = {
+  FLAT: "FLAT",
+  PERCENTAGE: "PERCENTAGE",
+} as const;
+export type DiscountType = (typeof DiscountType)[keyof typeof DiscountType];
+
+export const DiscountTypeLabels: Record<DiscountType, string> = {
+  FLAT: "Flat Amount",
+  PERCENTAGE: "Percentage",
+};
+
 export const RegulatoryMarkLabels: Record<RegulatoryMark, string> = {
   FSSAI: "FSSAI",
   ISI: "ISI Mark",

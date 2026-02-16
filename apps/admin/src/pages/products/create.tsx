@@ -1,5 +1,7 @@
+import { useState, useEffect } from "react";
 import { Create, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, Select, InputNumber, Button, Card, Row, Col } from "antd";
+import { useGetIdentity } from "@refinedev/core";
+import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Checkbox, Typography, Tag } from "antd";
 import {
   MinusCircleOutlined,
   PlusOutlined,
@@ -9,9 +11,14 @@ import {
   AuditOutlined,
   ExperimentOutlined,
   AppstoreOutlined,
+  ShopOutlined,
 } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
+import { MultiImageUpload } from "../../components/MultiImageUpload";
 import { sectionTitle } from "../../theme";
+import { axiosInstance } from "../../providers/data-provider";
+
+const { Text } = Typography;
 
 const UNIT_TYPES = ["KG", "GRAM", "LITER", "ML", "PIECE", "PACK", "DOZEN", "BUNDLE"];
 
@@ -80,8 +87,38 @@ const COMMON_CERTIFICATIONS = [
   { label: "Dermatologically Tested", value: "Dermatologically Tested" },
 ];
 
+const STORAGE_INSTRUCTIONS = [
+  "Store in a cool, dry place",
+  "Keep refrigerated (2-8°C)",
+  "Store below 25°C",
+  "Keep frozen (-18°C or below)",
+  "Store in a cool, dry place away from direct sunlight",
+  "Refrigerate after opening",
+  "Keep in an airtight container after opening",
+  "Store in a dry place away from moisture",
+  "Do not freeze",
+  "Use within 3 days of opening",
+  "Keep away from heat and humidity",
+  "Store at room temperature",
+];
+
+const PACK_TYPES = [
+  "Pouch", "Box", "Bottle", "Can", "Jar", "Sachet", "Packet", "Bag",
+  "Carton", "Tin", "Tube", "Blister Pack", "Wrapper", "Tray", "Cup",
+  "Tetra Pack", "Stand-up Pouch", "Squeeze Bottle", "Spray Bottle", "Tub",
+];
+
+interface StoreRecord {
+  id: string;
+  name: string;
+  address: string;
+  status: string;
+}
+
 export const ProductCreate = () => {
   const { formProps, saveButtonProps } = useForm({ resource: "products" });
+  const { data: identity } = useGetIdentity<{ role: string }>();
+  const isOrgAdmin = identity?.role === "ORG_ADMIN";
 
   const { selectProps: categorySelectProps } = useSelect({
     resource: "categories",
@@ -95,9 +132,33 @@ export const ProductCreate = () => {
     optionValue: "id",
   });
 
+  // Store selection for ORG_ADMIN
+  const [stores, setStores] = useState<StoreRecord[]>([]);
+  const [selectedStoreIds, setSelectedStoreIds] = useState<string[]>([]);
+  const [storesLoaded, setStoresLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!isOrgAdmin) return;
+    axiosInstance.get("/stores", { params: { pageSize: 200 } }).then((res) => {
+      const active = (res.data.data as StoreRecord[]).filter((s) => s.status === "ACTIVE");
+      setStores(active);
+      setSelectedStoreIds(active.map((s) => s.id)); // default: all selected
+      setStoresLoaded(true);
+    }).catch(() => {});
+  }, [isOrgAdmin]);
+
+  // Inject storeIds into form submission
+  const originalOnFinish = formProps.onFinish;
+  const handleFinish = (values: Record<string, unknown>) => {
+    if (isOrgAdmin && storesLoaded) {
+      values.storeIds = selectedStoreIds;
+    }
+    originalOnFinish?.(values);
+  };
+
   return (
     <Create saveButtonProps={saveButtonProps}>
-      <Form {...formProps} layout="vertical" initialValues={{ variants: [{ name: "Default", unitType: "PIECE", unitValue: 1 }] }}>
+      <Form {...formProps} onFinish={handleFinish} layout="vertical" initialValues={{ variants: [{ name: "Default", unitType: "PIECE", unitValue: 1 }] }}>
         <Row gutter={[16, 16]}>
           {/* Basic Information */}
           <Col xs={24} lg={16}>
@@ -161,7 +222,7 @@ export const ProductCreate = () => {
 
             <Card title={sectionTitle(<PictureOutlined />, "Additional Images")} size="small" style={{ marginBottom: 16 }}>
               <Form.Item name="images" style={{ marginBottom: 0 }}>
-                <Select mode="tags" placeholder="Paste image URLs (press Enter after each)" />
+                <MultiImageUpload />
               </Form.Item>
             </Card>
           </Col>
@@ -253,7 +314,14 @@ export const ProductCreate = () => {
                 </Col>
                 <Col xs={24} sm={12}>
                   <Form.Item label="Storage Instructions" name="storageInstructions">
-                    <Input placeholder="e.g. Store in a cool, dry place" />
+                    <AutoComplete
+                      allowClear
+                      placeholder="Select or type custom instructions"
+                      options={STORAGE_INSTRUCTIONS.map((s) => ({ label: s, value: s }))}
+                      filterOption={(input, option) =>
+                        (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+                      }
+                    />
                   </Form.Item>
                 </Col>
               </Row>
@@ -306,7 +374,13 @@ export const ProductCreate = () => {
                           </Col>
                           <Col xs={12} sm={6}>
                             <Form.Item {...restField} label="Pack Type" name={[name, "packType"]}>
-                              <Input placeholder="pouch, box..." />
+                              <AutoComplete
+                                placeholder="Select or type"
+                                options={PACK_TYPES.map((p) => ({ label: p, value: p }))}
+                                filterOption={(input, option) =>
+                                  (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+                                }
+                              />
                             </Form.Item>
                           </Col>
                         </Row>
@@ -322,6 +396,51 @@ export const ProductCreate = () => {
               </Form.List>
             </Card>
           </Col>
+
+          {/* Store Assignment (ORG_ADMIN only) */}
+          {isOrgAdmin && stores.length > 0 && (
+            <Col xs={24}>
+              <Card
+                title={sectionTitle(<ShopOutlined />, "Assign to Stores")}
+                size="small"
+                extra={
+                  <Checkbox
+                    checked={selectedStoreIds.length === stores.length}
+                    indeterminate={selectedStoreIds.length > 0 && selectedStoreIds.length < stores.length}
+                    onChange={(e) =>
+                      setSelectedStoreIds(e.target.checked ? stores.map((s) => s.id) : [])
+                    }
+                  >
+                    All
+                  </Checkbox>
+                }
+              >
+                <Text type="secondary" style={{ display: "block", marginBottom: 12 }}>
+                  Product will be assigned to the selected stores with MRP as the default price and stock set to 0.
+                </Text>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                  {stores.map((store) => (
+                    <Checkbox
+                      key={store.id}
+                      checked={selectedStoreIds.includes(store.id)}
+                      onChange={(e) => {
+                        setSelectedStoreIds((prev) =>
+                          e.target.checked ? [...prev, store.id] : prev.filter((id) => id !== store.id),
+                        );
+                      }}
+                    >
+                      <Text strong>{store.name}</Text>
+                      <br />
+                      <Text type="secondary" style={{ fontSize: 12 }}>{store.address}</Text>
+                    </Checkbox>
+                  ))}
+                </div>
+                <div style={{ marginTop: 12 }}>
+                  <Tag color="blue">{selectedStoreIds.length} of {stores.length} stores selected</Tag>
+                </div>
+              </Card>
+            </Col>
+          )}
         </Row>
       </Form>
     </Create>

@@ -52,7 +52,7 @@ export async function brandRoutes(app: FastifyInstance) {
   // Create brand
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
     async (request) => {
       const body = createBrandSchema.parse(request.body);
 
@@ -66,7 +66,7 @@ export async function brandRoutes(app: FastifyInstance) {
   // Update brand
   app.put<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
     async (request, reply) => {
       const body = updateBrandSchema.parse(request.body);
       const existing = await app.prisma.brand.findUnique({ where: { id: request.params.id } });
@@ -85,7 +85,7 @@ export async function brandRoutes(app: FastifyInstance) {
   // Delete brand (only if no products reference it)
   app.delete<{ Params: { id: string } }>(
     "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN")] },
     async (request, reply) => {
       const existing = await app.prisma.brand.findUnique({
         where: { id: request.params.id },

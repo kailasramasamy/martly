@@ -3,16 +3,23 @@ import { createStoreSchema, updateStoreSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
+import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { calculateEffectivePrice } from "../../services/pricing.js";
 
 export async function storeRoutes(app: FastifyInstance) {
-  // List stores
-  app.get("/", async (request) => {
+  // List stores (scoped to user's org; STORE_MANAGER/STAFF see only assigned stores)
+  app.get("/", { preHandler: [authenticate, requireOrgContext] }, async (request) => {
     const { page = 1, pageSize = 20, q } = request.query as { page?: number; pageSize?: number; q?: string };
     const skip = (Number(page) - 1) * Number(pageSize);
 
-    const where = q
-      ? { OR: [{ name: { contains: q, mode: "insensitive" as const } }, { address: { contains: q, mode: "insensitive" as const } }] }
-      : {};
+    const where: Record<string, unknown> = {};
+    const orgStoreIds = await getOrgStoreIds(request, app.prisma);
+    if (orgStoreIds !== undefined) {
+      where.id = { in: orgStoreIds };
+    }
+    if (q) {
+      where.OR = [{ name: { contains: q, mode: "insensitive" as const } }, { address: { contains: q, mode: "insensitive" as const } }];
+    }
 
     const [stores, total] = await Promise.all([
       app.prisma.store.findMany({ where, skip, take: Number(pageSize), orderBy: { createdAt: "desc" } }),
@@ -27,21 +34,32 @@ export async function storeRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Get store by ID
-  app.get<{ Params: { id: string } }>("/:id", async (request, reply) => {
+  // Get store by ID (verify org access)
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requireOrgContext] }, async (request, reply) => {
     const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
     if (!store) return reply.notFound("Store not found");
+
+    if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) {
+      return reply.forbidden("Access denied");
+    }
 
     const response: ApiResponse<typeof store> = { success: true, data: store };
     return response;
   });
 
-  // Create store (authenticated, admin roles)
+  // Create store (force orgId from JWT for non-SUPER_ADMIN)
   app.post(
     "/",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request) => {
       const body = createStoreSchema.parse(request.body);
+      const user = getOrgUser(request);
+
+      // Non-SUPER_ADMIN: force organizationId from JWT
+      if (user.role !== "SUPER_ADMIN" && user.organizationId) {
+        body.organizationId = user.organizationId;
+      }
+
       const store = await app.prisma.store.create({ data: body });
 
       const response: ApiResponse<typeof store> = { success: true, data: store };
@@ -49,7 +67,7 @@ export async function storeRoutes(app: FastifyInstance) {
     },
   );
 
-  // Update store
+  // Update store (verify org access)
   app.put<{ Params: { id: string } }>(
     "/:id",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
@@ -57,6 +75,10 @@ export async function storeRoutes(app: FastifyInstance) {
       const body = updateStoreSchema.parse(request.body);
       const existing = await app.prisma.store.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Store not found");
+
+      if (!(await verifyStoreOrgAccess(request, app.prisma, existing.id))) {
+        return reply.forbidden("Access denied");
+      }
 
       const store = await app.prisma.store.update({
         where: { id: request.params.id },
@@ -68,13 +90,17 @@ export async function storeRoutes(app: FastifyInstance) {
     },
   );
 
-  // Delete store
+  // Delete store (verify org access)
   app.delete<{ Params: { id: string } }>(
     "/:id",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request, reply) => {
       const existing = await app.prisma.store.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Store not found");
+
+      if (!(await verifyStoreOrgAccess(request, app.prisma, existing.id))) {
+        return reply.forbidden("Access denied");
+      }
 
       await app.prisma.store.delete({ where: { id: request.params.id } });
 
@@ -83,13 +109,17 @@ export async function storeRoutes(app: FastifyInstance) {
     },
   );
 
-  // Assign variant to store (convenience endpoint)
+  // Assign variant to store (verify org access)
   app.post<{ Params: { id: string } }>(
     "/:id/products",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
     async (request, reply) => {
       const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
       if (!store) return reply.notFound("Store not found");
+
+      if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) {
+        return reply.forbidden("Access denied");
+      }
 
       const { variantId, price, stock } = request.body as { variantId: string; price: number; stock: number };
 
@@ -111,13 +141,17 @@ export async function storeRoutes(app: FastifyInstance) {
     },
   );
 
-  // Get store products
-  app.get<{ Params: { id: string } }>("/:id/products", async (request, reply) => {
+  // Get store products (verify org access)
+  app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticate, requireOrgContext] }, async (request, reply) => {
     const { page = 1, pageSize = 200 } = request.query as { page?: number; pageSize?: number };
     const skip = (Number(page) - 1) * Number(pageSize);
 
     const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
     if (!store) return reply.notFound("Store not found");
+
+    if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) {
+      return reply.forbidden("Access denied");
+    }
 
     const where = { storeId: request.params.id, isActive: true };
 
@@ -135,11 +169,127 @@ export async function storeRoutes(app: FastifyInstance) {
       app.prisma.storeProduct.count({ where }),
     ]);
 
-    const response: PaginatedResponse<(typeof storeProducts)[0]> = {
+    const data = storeProducts.map((sp) => {
+      const pricing = calculateEffectivePrice(
+        sp.price as unknown as number,
+        sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+        sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
+      );
+      return { ...sp, pricing, availableStock: sp.stock - sp.reservedStock };
+    });
+
+    const response: PaginatedResponse<(typeof data)[0]> = {
       success: true,
-      data: storeProducts,
+      data,
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
     return response;
   });
+
+  // ── Store Staff Management ─────────────────────────
+
+  // List staff assigned to a store
+  app.get<{ Params: { id: string } }>(
+    "/:id/staff",
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    async (request, reply) => {
+      const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
+      if (!store) return reply.notFound("Store not found");
+
+      if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) {
+        return reply.forbidden("Access denied");
+      }
+
+      const assignments = await app.prisma.userStore.findMany({
+        where: { storeId: request.params.id },
+        include: {
+          user: { select: { id: true, email: true, name: true, phone: true, role: true } },
+        },
+        orderBy: { createdAt: "desc" },
+      });
+
+      const data = assignments.map((a) => ({
+        id: a.id,
+        userId: a.userId,
+        storeId: a.storeId,
+        role: a.role,
+        createdAt: a.createdAt,
+        user: a.user,
+      }));
+
+      const response: ApiResponse<typeof data> = { success: true, data };
+      return response;
+    },
+  );
+
+  // Assign user to store
+  app.post<{ Params: { id: string } }>(
+    "/:id/staff",
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    async (request, reply) => {
+      const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
+      if (!store) return reply.notFound("Store not found");
+
+      if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) {
+        return reply.forbidden("Access denied");
+      }
+
+      const { userId, role } = request.body as { userId: string; role?: string };
+
+      const targetUser = await app.prisma.user.findUnique({ where: { id: userId } });
+      if (!targetUser) return reply.notFound("User not found");
+
+      // Only allow assigning STORE_MANAGER or STAFF
+      const assignRole = role || targetUser.role;
+      if (assignRole !== "STORE_MANAGER" && assignRole !== "STAFF" && assignRole !== "ORG_ADMIN") {
+        return reply.badRequest("Can only assign ORG_ADMIN, STORE_MANAGER, or STAFF to stores");
+      }
+
+      // Check if already assigned
+      const existing = await app.prisma.userStore.findUnique({
+        where: { userId_storeId: { userId, storeId: request.params.id } },
+      });
+      if (existing) return reply.conflict("User is already assigned to this store");
+
+      const assignment = await app.prisma.userStore.create({
+        data: {
+          userId,
+          storeId: request.params.id,
+          role: assignRole as "STORE_MANAGER" | "STAFF" | "ORG_ADMIN",
+        },
+        include: {
+          user: { select: { id: true, email: true, name: true, phone: true, role: true } },
+        },
+      });
+
+      const response: ApiResponse<typeof assignment> = { success: true, data: assignment };
+      return response;
+    },
+  );
+
+  // Remove user from store
+  app.delete<{ Params: { id: string; userId: string } }>(
+    "/:id/staff/:userId",
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    async (request, reply) => {
+      const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
+      if (!store) return reply.notFound("Store not found");
+
+      if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) {
+        return reply.forbidden("Access denied");
+      }
+
+      const assignment = await app.prisma.userStore.findUnique({
+        where: { userId_storeId: { userId: request.params.userId, storeId: request.params.id } },
+      });
+      if (!assignment) return reply.notFound("User is not assigned to this store");
+
+      await app.prisma.userStore.delete({
+        where: { userId_storeId: { userId: request.params.userId, storeId: request.params.id } },
+      });
+
+      const response: ApiResponse<null> = { success: true, data: null };
+      return response;
+    },
+  );
 }

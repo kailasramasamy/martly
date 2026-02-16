@@ -64,3 +64,13 @@ export const ACTIVE_STATUS_CONFIG: Record<string, { color: string; label: string
   true: { color: "green", label: "Active" },
   false: { color: "red", label: "Inactive" },
 };
+
+export const DISCOUNT_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
+  FLAT: { color: "blue", label: "Flat" },
+  PERCENTAGE: { color: "purple", label: "Percentage" },
+};
+
+export const DISCOUNT_TYPE_OPTIONS = [
+  { label: "Flat Amount (₹)", value: "FLAT" },
+  { label: "Percentage (%)", value: "PERCENTAGE" },
+];

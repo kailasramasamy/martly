@@ -5,8 +5,8 @@ import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 
 export async function organizationRoutes(app: FastifyInstance) {
-  // List organizations
-  app.get("/", async (request) => {
+  // List organizations (SUPER_ADMIN only)
+  app.get("/", { preHandler: [authenticate, requireRole("SUPER_ADMIN")] }, async (request) => {
     const { page = 1, pageSize = 20, q } = request.query as { page?: number; pageSize?: number; q?: string };
     const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -27,8 +27,8 @@ export async function organizationRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Get organization by ID
-  app.get<{ Params: { id: string } }>("/:id", async (request, reply) => {
+  // Get organization by ID (SUPER_ADMIN only)
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requireRole("SUPER_ADMIN")] }, async (request, reply) => {
     const org = await app.prisma.organization.findUnique({ where: { id: request.params.id } });
     if (!org) return reply.notFound("Organization not found");
 

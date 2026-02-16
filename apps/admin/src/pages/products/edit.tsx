@@ -1,5 +1,5 @@
 import { Edit, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, Select, InputNumber, Button, Card, Row, Col } from "antd";
+import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, DatePicker } from "antd";
 import {
   MinusCircleOutlined,
   PlusOutlined,
@@ -10,8 +10,11 @@ import {
   ExperimentOutlined,
   AppstoreOutlined,
 } from "@ant-design/icons";
+import dayjs from "dayjs";
 import { ImageUpload } from "../../components/ImageUpload";
+import { MultiImageUpload } from "../../components/MultiImageUpload";
 import { sectionTitle } from "../../theme";
+import { DISCOUNT_TYPE_OPTIONS } from "../../constants/tag-colors";
 
 const UNIT_TYPES = ["KG", "GRAM", "LITER", "ML", "PIECE", "PACK", "DOZEN", "BUNDLE"];
 
@@ -80,8 +83,51 @@ const COMMON_CERTIFICATIONS = [
   { label: "Dermatologically Tested", value: "Dermatologically Tested" },
 ];
 
+const STORAGE_INSTRUCTIONS = [
+  "Store in a cool, dry place",
+  "Keep refrigerated (2-8°C)",
+  "Store below 25°C",
+  "Keep frozen (-18°C or below)",
+  "Store in a cool, dry place away from direct sunlight",
+  "Refrigerate after opening",
+  "Keep in an airtight container after opening",
+  "Store in a dry place away from moisture",
+  "Do not freeze",
+  "Use within 3 days of opening",
+  "Keep away from heat and humidity",
+  "Store at room temperature",
+];
+
+const PACK_TYPES = [
+  "Pouch", "Box", "Bottle", "Can", "Jar", "Sachet", "Packet", "Bag",
+  "Carton", "Tin", "Tube", "Blister Pack", "Wrapper", "Tray", "Cup",
+  "Tetra Pack", "Stand-up Pouch", "Squeeze Bottle", "Spray Bottle", "Tub",
+];
+
 export const ProductEdit = () => {
   const { formProps, saveButtonProps } = useForm({ resource: "products" });
+
+  // Convert variant discount date strings to dayjs objects for DatePicker
+  const originalOnFinish = formProps.onFinish;
+  const enhancedFormProps = {
+    ...formProps,
+    initialValues: {
+      ...formProps.initialValues,
+      variants: formProps.initialValues?.variants?.map((v: Record<string, unknown>) => ({
+        ...v,
+        discountStart: v.discountStart ? dayjs(v.discountStart as string) : null,
+        discountEnd: v.discountEnd ? dayjs(v.discountEnd as string) : null,
+      })),
+    },
+    onFinish: (values: Record<string, unknown>) => {
+      const variants = (values.variants as Record<string, unknown>[] | undefined)?.map((v) => ({
+        ...v,
+        discountStart: v.discountStart ? (v.discountStart as dayjs.Dayjs).toISOString() : null,
+        discountEnd: v.discountEnd ? (v.discountEnd as dayjs.Dayjs).toISOString() : null,
+      }));
+      return originalOnFinish?.({ ...values, variants });
+    },
+  };
 
   const { selectProps: categorySelectProps } = useSelect({
     resource: "categories",
@@ -97,7 +143,7 @@ export const ProductEdit = () => {
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
-      <Form {...formProps} layout="vertical">
+      <Form {...enhancedFormProps} layout="vertical">
         <Row gutter={[16, 16]}>
           {/* Basic Information */}
           <Col xs={24} lg={16}>
@@ -161,7 +207,7 @@ export const ProductEdit = () => {
 
             <Card title={sectionTitle(<PictureOutlined />, "Additional Images")} size="small" style={{ marginBottom: 16 }}>
               <Form.Item name="images" style={{ marginBottom: 0 }}>
-                <Select mode="tags" placeholder="Paste image URLs (press Enter after each)" />
+                <MultiImageUpload />
               </Form.Item>
             </Card>
           </Col>
@@ -258,7 +304,14 @@ export const ProductEdit = () => {
                 </Col>
                 <Col xs={24} sm={12}>
                   <Form.Item label="Storage Instructions" name="storageInstructions">
-                    <Input placeholder="e.g. Store in a cool, dry place" />
+                    <AutoComplete
+                      allowClear
+                      placeholder="Select or type custom instructions"
+                      options={STORAGE_INSTRUCTIONS.map((s) => ({ label: s, value: s }))}
+                      filterOption={(input, option) =>
+                        (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+                      }
+                    />
                   </Form.Item>
                 </Col>
               </Row>
@@ -311,7 +364,33 @@ export const ProductEdit = () => {
                           </Col>
                           <Col xs={12} sm={6}>
                             <Form.Item {...restField} label="Pack Type" name={[name, "packType"]}>
-                              <Input placeholder="pouch, box..." />
+                              <AutoComplete
+                                placeholder="Select or type"
+                                options={PACK_TYPES.map((p) => ({ label: p, value: p }))}
+                                filterOption={(input, option) =>
+                                  (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+                                }
+                              />
+                            </Form.Item>
+                          </Col>
+                          <Col xs={12} sm={6}>
+                            <Form.Item {...restField} label="Discount Type" name={[name, "discountType"]}>
+                              <Select options={DISCOUNT_TYPE_OPTIONS} allowClear placeholder="None" />
+                            </Form.Item>
+                          </Col>
+                          <Col xs={12} sm={6}>
+                            <Form.Item {...restField} label="Discount Value" name={[name, "discountValue"]}>
+                              <InputNumber min={0} step={0.01} style={{ width: "100%" }} placeholder="Value" />
+                            </Form.Item>
+                          </Col>
+                          <Col xs={12} sm={6}>
+                            <Form.Item {...restField} label="Discount Start" name={[name, "discountStart"]}>
+                              <DatePicker showTime style={{ width: "100%" }} />
+                            </Form.Item>
+                          </Col>
+                          <Col xs={12} sm={6}>
+                            <Form.Item {...restField} label="Discount End" name={[name, "discountEnd"]}>
+                              <DatePicker showTime style={{ width: "100%" }} />
                             </Form.Item>
                           </Col>
                         </Row>

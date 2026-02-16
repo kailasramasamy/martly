@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType } from "../constants/index.js";
 
 // ── Auth ──────────────────────────────────────────────
 export const loginSchema = z.object({
@@ -7,6 +7,11 @@ export const loginSchema = z.object({
   password: z.string().min(8),
 });
 export type LoginInput = z.infer<typeof loginSchema>;
+
+export const selectOrgSchema = z.object({
+  organizationId: z.string().uuid(),
+});
+export type SelectOrgInput = z.infer<typeof selectOrgSchema>;
 
 export const registerSchema = z.object({
   email: z.string().email(),
@@ -130,6 +135,10 @@ export const createProductVariantSchema = z.object({
   mrp: z.number().positive().optional(),
   packType: z.string().optional(),
   imageUrl: z.string().url().optional(),
+  discountType: z.nativeEnum(DiscountType).nullish(),
+  discountValue: z.number().min(0).nullish(),
+  discountStart: z.coerce.date().nullish(),
+  discountEnd: z.coerce.date().nullish(),
 });
 export type CreateProductVariantInput = z.infer<typeof createProductVariantSchema>;
 
@@ -142,6 +151,10 @@ export const updateProductVariantSchema = z.object({
   mrp: z.number().positive().nullish(),
   packType: z.string().nullish(),
   imageUrl: z.string().url().nullish(),
+  discountType: z.nativeEnum(DiscountType).nullish(),
+  discountValue: z.number().min(0).nullish(),
+  discountStart: z.coerce.date().nullish(),
+  discountEnd: z.coerce.date().nullish(),
 });
 export type UpdateProductVariantInput = z.infer<typeof updateProductVariantSchema>;
 
@@ -182,6 +195,7 @@ export type Product = z.infer<typeof productSchema>;
 
 export const createProductSchema = z.object({
   name: z.string().min(1),
+  organizationId: z.string().uuid().nullish(),
   description: z.string().optional(),
   imageUrl: z.string().url().optional(),
   categoryId: z.string().uuid().optional(),
@@ -208,6 +222,7 @@ export const createProductSchema = z.object({
   dangerWarnings: z.string().optional(),
   usageInstructions: z.string().optional(),
   variants: z.array(createProductVariantSchema).min(1).optional(),
+  storeIds: z.array(z.string().uuid()).optional(),
 });
 export type CreateProductInput = z.infer<typeof createProductSchema>;
 
@@ -217,6 +232,10 @@ export const createStoreProductSchema = z.object({
   variantId: z.string().uuid(),
   price: z.number().positive(),
   stock: z.number().int().min(0),
+  discountType: z.nativeEnum(DiscountType).nullish(),
+  discountValue: z.number().min(0).nullish(),
+  discountStart: z.coerce.date().nullish(),
+  discountEnd: z.coerce.date().nullish(),
 });
 export type CreateStoreProductInput = z.infer<typeof createStoreProductSchema>;
 
@@ -227,6 +246,10 @@ export const bulkCreateStoreProductSchema = z.object({
       variantId: z.string().uuid(),
       price: z.number().positive(),
       stock: z.number().int().min(0).default(0),
+      discountType: z.nativeEnum(DiscountType).nullish(),
+      discountValue: z.number().min(0).nullish(),
+      discountStart: z.coerce.date().nullish(),
+      discountEnd: z.coerce.date().nullish(),
     }),
   ).min(1).max(200),
 });
@@ -236,6 +259,10 @@ export const updateStoreProductSchema = z.object({
   price: z.number().positive().optional(),
   stock: z.number().int().min(0).optional(),
   isActive: z.boolean().optional(),
+  discountType: z.nativeEnum(DiscountType).nullish(),
+  discountValue: z.number().min(0).nullish(),
+  discountStart: z.coerce.date().nullish(),
+  discountEnd: z.coerce.date().nullish(),
 });
 export type UpdateStoreProductInput = z.infer<typeof updateStoreProductSchema>;
 
@@ -248,6 +275,9 @@ export const orderItemSchema = z.object({
   quantity: z.number().int().positive(),
   unitPrice: z.number().positive(),
   totalPrice: z.number().positive(),
+  originalPrice: z.number().nullish(),
+  discountType: z.nativeEnum(DiscountType).nullish(),
+  discountValue: z.number().nullish(),
 });
 export type OrderItem = z.infer<typeof orderItemSchema>;
 
@@ -287,34 +317,53 @@ export const updateStoreSchema = z.object({
 });
 export type UpdateStoreInput = z.infer<typeof updateStoreSchema>;
 
+const emptyToNull = z.string().transform((v) => (v === "" ? null : v));
+const optionalUrl = z.union([z.string().url(), z.literal(""), z.null()]).optional().transform((v) => (v === "" ? null : v));
+const coerceNumberNullish = z.union([z.number(), z.string().transform((v) => v === "" ? null : Number(v)), z.null()]).optional();
+
 export const updateProductSchema = z.object({
   name: z.string().min(1).optional(),
-  description: z.string().nullish(),
-  imageUrl: z.string().url().nullish(),
+  description: emptyToNull.nullish(),
+  imageUrl: optionalUrl,
   categoryId: z.string().uuid().nullish(),
   brandId: z.string().uuid().nullish(),
   isActive: z.boolean().optional(),
   tags: z.array(z.string()).optional(),
-  hsnCode: z.string().nullish(),
-  gstPercent: z.number().min(0).max(100).nullish(),
+  hsnCode: emptyToNull.nullish(),
+  gstPercent: coerceNumberNullish,
   foodType: z.nativeEnum(FoodType).nullish(),
-  fssaiLicense: z.string().nullish(),
-  ingredients: z.string().nullish(),
+  fssaiLicense: emptyToNull.nullish(),
+  ingredients: emptyToNull.nullish(),
   nutritionalInfo: z.unknown().nullish(),
   allergens: z.array(z.string()).optional(),
-  servingSize: z.string().nullish(),
-  shelfLifeDays: z.number().int().positive().nullish(),
+  servingSize: emptyToNull.nullish(),
+  shelfLifeDays: coerceNumberNullish,
   storageType: z.nativeEnum(StorageType).nullish(),
-  storageInstructions: z.string().nullish(),
-  manufacturerName: z.string().nullish(),
-  countryOfOrigin: z.string().nullish(),
+  storageInstructions: emptyToNull.nullish(),
+  manufacturerName: emptyToNull.nullish(),
+  countryOfOrigin: emptyToNull.nullish(),
   images: z.array(z.string()).optional(),
   productType: z.nativeEnum(ProductType).nullish(),
   regulatoryMarks: z.array(z.string()).optional(),
   certifications: z.array(z.string()).optional(),
-  mfgLicenseNo: z.string().nullish(),
-  dangerWarnings: z.string().nullish(),
-  usageInstructions: z.string().nullish(),
+  mfgLicenseNo: emptyToNull.nullish(),
+  dangerWarnings: emptyToNull.nullish(),
+  usageInstructions: emptyToNull.nullish(),
+  variants: z.array(z.object({
+    id: z.string().uuid().optional(),
+    name: z.string().min(1),
+    sku: z.string().nullish(),
+    barcode: z.string().nullish(),
+    unitType: z.nativeEnum(UnitType).optional(),
+    unitValue: coerceNumberNullish,
+    mrp: coerceNumberNullish,
+    packType: emptyToNull.nullish(),
+    imageUrl: optionalUrl,
+    discountType: z.nativeEnum(DiscountType).nullish(),
+    discountValue: coerceNumberNullish,
+    discountStart: z.coerce.date().nullish(),
+    discountEnd: z.coerce.date().nullish(),
+  })).optional(),
 });
 export type UpdateProductInput = z.infer<typeof updateProductSchema>;
 

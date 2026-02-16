@@ -1,6 +1,7 @@
 import { Show } from "@refinedev/antd";
-import { useShow } from "@refinedev/core";
-import { Typography, Image, Table, Tag, Card, Descriptions, Row, Col, Space } from "antd";
+import { useShow, useGetIdentity } from "@refinedev/core";
+import { Typography, Image, Table, Tag, Card, Descriptions, Row, Col, Space, Button, Alert } from "antd";
+import { useNavigate } from "react-router";
 import {
   InfoCircleOutlined,
   SafetyCertificateOutlined,
@@ -8,6 +9,7 @@ import {
   TagsOutlined,
   ExperimentOutlined,
   AppstoreOutlined,
+  ShopOutlined,
 } from "@ant-design/icons";
 
 import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, STORAGE_TYPE_CONFIG } from "../../constants/tag-colors";
@@ -15,18 +17,83 @@ import { sectionTitle } from "../../theme";
 
 const { Text } = Typography;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const parseNutritionalData = (data: any): any => {
+  if (typeof data === "string") {
+    try { return JSON.parse(data); } catch { return null; }
+  }
+  return data;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const NutritionalInfoView = ({ data }: { data: any }) => {
+  const parsed = parseNutritionalData(data);
+  if (!parsed || typeof parsed !== "object") return <Text>{String(data)}</Text>;
+
+  // If it has an ingredients array, render as recipe card
+  if (Array.isArray(parsed.ingredients)) {
+    return (
+      <div>
+        {parsed.recipe && <Text strong>{parsed.recipe}</Text>}
+        {parsed.yield && <Text type="secondary" style={{ marginLeft: 8 }}>({parsed.yield})</Text>}
+        <Table
+          dataSource={parsed.ingredients}
+          rowKey={(_: unknown, i?: number) => String(i)}
+          pagination={false}
+          size="small"
+          style={{ marginTop: 8 }}
+        >
+          <Table.Column dataIndex="name" title="Ingredient" />
+          <Table.Column
+            title="Amount"
+            render={(_: unknown, r: { amount?: number; unit?: string }) =>
+              r.amount != null ? `${r.amount} ${r.unit ?? ""}`.trim() : "—"
+            }
+          />
+        </Table>
+      </div>
+    );
+  }
+
+  // Otherwise render key-value pairs (e.g. {energy: "250kcal", protein: "8g"})
+  const entries = Object.entries(parsed);
+  if (entries.length === 0) return <Text>—</Text>;
+
+  return (
+    <Table
+      dataSource={entries.map(([key, val]) => ({ key, label: key.replace(/_/g, " ").replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase()), value: String(val) }))}
+      rowKey="key"
+      pagination={false}
+      size="small"
+      showHeader={false}
+    >
+      <Table.Column dataIndex="label" render={(v: string) => <Text strong>{v}</Text>} width="40%" />
+      <Table.Column dataIndex="value" />
+    </Table>
+  );
+};
+
 export const ProductShow = () => {
   const { query } = useShow({ resource: "products" });
   const record = query?.data?.data;
+  const { data: identity } = useGetIdentity<{ role: string }>();
+  const navigate = useNavigate();
 
   if (!record) return null;
+
+  const isMasterProduct = record.organizationId == null;
+  const isOrgAdmin = identity?.role === "ORG_ADMIN";
+  const isSuperAdmin = identity?.role === "SUPER_ADMIN";
+
+  // SUPER_ADMIN can edit master only; ORG_ADMIN can edit their org products only
+  const canEdit = isSuperAdmin ? isMasterProduct : isOrgAdmin ? !isMasterProduct : false;
 
   const foodTypeConfig = record.foodType ? FOOD_TYPE_CONFIG[record.foodType as string] : null;
   const productTypeConfig = record.productType ? PRODUCT_TYPE_CONFIG[record.productType as string] : null;
   const storageTypeConfig = record.storageType ? STORAGE_TYPE_CONFIG[record.storageType as string] : null;
 
   return (
-    <Show>
+    <Show canEdit={canEdit} canDelete={canEdit}>
       <Row gutter={[16, 16]}>
         {/* Left column: details */}
         <Col xs={24} lg={record.imageUrl || record.images?.length > 0 ? 16 : 24}>
@@ -132,13 +199,6 @@ export const ProductShow = () => {
           <Card title={sectionTitle(<ExperimentOutlined />, "Product Details")} size="small" style={{ marginBottom: 16 }}>
             <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
               <Descriptions.Item label="Ingredients" span={2}>{record.ingredients ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Nutritional Info" span={2}>
-                {record.nutritionalInfo ? (
-                  <pre style={{ margin: 0, fontSize: 12, whiteSpace: "pre-wrap" }}>
-                    {JSON.stringify(record.nutritionalInfo, null, 2)}
-                  </pre>
-                ) : "—"}
-              </Descriptions.Item>
               <Descriptions.Item label="Serving Size">{record.servingSize ?? "—"}</Descriptions.Item>
               <Descriptions.Item label="Storage Type">
                 {storageTypeConfig ? <Tag color={storageTypeConfig.color}>{storageTypeConfig.label}</Tag> : <Text>{record.storageType ?? "—"}</Text>}
@@ -147,8 +207,35 @@ export const ProductShow = () => {
               <Descriptions.Item label="Usage Instructions" span={2}>{record.usageInstructions ?? "—"}</Descriptions.Item>
               <Descriptions.Item label="Danger Warnings" span={2}>{record.dangerWarnings ?? "—"}</Descriptions.Item>
             </Descriptions>
+            {record.nutritionalInfo && (
+              <div style={{ marginTop: 16 }}>
+                <Text strong style={{ display: "block", marginBottom: 8 }}>Nutritional Info</Text>
+                <NutritionalInfoView data={record.nutritionalInfo} />
+              </div>
+            )}
           </Card>
         </Col>
+
+        {/* ORG_ADMIN viewing master product: show actions */}
+        {isOrgAdmin && isMasterProduct && (
+          <Col xs={24}>
+            <Alert
+              type="info"
+              showIcon
+              message="Master Catalog Product"
+              description="This product is from the master catalog. You can map its variants to your stores by assigning them with pricing and stock."
+              action={
+                <Button
+                  type="primary"
+                  icon={<ShopOutlined />}
+                  onClick={() => navigate(`/products/${record.id}/map`)}
+                >
+                  Map to Store
+                </Button>
+              }
+            />
+          </Col>
+        )}
 
         {/* Variants table */}
         <Col xs={24}>
@@ -166,6 +253,24 @@ export const ProductShow = () => {
               <Table.Column dataIndex="unitValue" title="Unit Value" />
               <Table.Column dataIndex="mrp" title="MRP" render={(v: number) => v != null ? `₹${Number(v).toFixed(2)}` : "—"} />
               <Table.Column dataIndex="packType" title="Pack Type" render={(v: string) => v ?? "—"} />
+              <Table.Column
+                title="Discount"
+                render={(_: unknown, r: { discountType?: string; discountValue?: number }) =>
+                  r.discountType && r.discountValue != null
+                    ? <Tag color="red">{r.discountType === "PERCENTAGE" ? `${r.discountValue}% OFF` : `₹${Number(r.discountValue).toFixed(2)} OFF`}</Tag>
+                    : "—"
+                }
+              />
+              <Table.Column
+                title="Discount Period"
+                render={(_: unknown, r: { discountStart?: string; discountEnd?: string }) => {
+                  if (!r.discountStart && !r.discountEnd) return "—";
+                  const fmt = (d: string) => new Date(d).toLocaleDateString();
+                  const start = r.discountStart ? fmt(r.discountStart) : "—";
+                  const end = r.discountEnd ? fmt(r.discountEnd) : "—";
+                  return `${start} → ${end}`;
+                }}
+              />
             </Table>
           </Card>
         </Col>

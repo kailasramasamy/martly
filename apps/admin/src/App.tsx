@@ -9,9 +9,9 @@ import {
   ShopOutlined,
   AppstoreOutlined,
   TagsOutlined,
-  ShoppingOutlined,
   ShoppingCartOutlined,
   TrademarkOutlined,
+  TeamOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -19,7 +19,9 @@ import "@refinedev/antd/dist/reset.css";
 import { theme } from "./theme";
 import { authProvider } from "./providers/auth-provider";
 import { martlyDataProvider } from "./providers/data-provider";
+import { accessControlProvider } from "./providers/access-control";
 import { LoginPage } from "./pages/login";
+import { SelectOrgPage } from "./pages/select-org";
 import { StoreList } from "./pages/stores/list";
 import { StoreCreate } from "./pages/stores/create";
 import { StoreEdit } from "./pages/stores/edit";
@@ -29,12 +31,12 @@ import { ProductList } from "./pages/products/list";
 import { ProductCreate } from "./pages/products/create";
 import { ProductEdit } from "./pages/products/edit";
 import { ProductShow } from "./pages/products/show";
+import { ProductMap } from "./pages/products/map";
 import { OrderList } from "./pages/orders/list";
 import { OrderShow } from "./pages/orders/show";
 import { OrganizationList } from "./pages/organizations/list";
 import { OrganizationCreate } from "./pages/organizations/create";
 import { OrganizationEdit } from "./pages/organizations/edit";
-import { StoreProductList } from "./pages/store-products/list";
 import { StoreProductCreate } from "./pages/store-products/create";
 import { StoreProductEdit } from "./pages/store-products/edit";
 import { DashboardPage } from "./pages/dashboard";
@@ -45,6 +47,10 @@ import { CategoryTree } from "./pages/categories/tree";
 import { BrandList } from "./pages/brands/list";
 import { BrandCreate } from "./pages/brands/create";
 import { BrandEdit } from "./pages/brands/edit";
+import { UserList } from "./pages/users/list";
+import { UserCreate } from "./pages/users/create";
+import { UserEdit } from "./pages/users/edit";
+import { OrgSwitcher } from "./components/OrgSwitcher";
 
 export default function App() {
   return (
@@ -55,6 +61,7 @@ export default function App() {
             routerProvider={routerProvider}
             dataProvider={martlyDataProvider}
             authProvider={authProvider}
+            accessControlProvider={accessControlProvider}
             notificationProvider={useNotificationProvider}
             resources={[
               {
@@ -68,6 +75,13 @@ export default function App() {
                 create: "/organizations/create",
                 edit: "/organizations/edit/:id",
                 meta: { label: "Organizations", icon: <BankOutlined /> },
+              },
+              {
+                name: "users",
+                list: "/users",
+                create: "/users/create",
+                edit: "/users/edit/:id",
+                meta: { label: "Users", icon: <TeamOutlined /> },
               },
               {
                 name: "stores",
@@ -101,10 +115,8 @@ export default function App() {
               },
               {
                 name: "store-products",
-                list: "/store-products",
                 create: "/store-products/create",
                 edit: "/store-products/edit/:id",
-                meta: { label: "Store Products", icon: <ShoppingOutlined /> },
               },
               {
                 name: "orders",
@@ -125,6 +137,11 @@ export default function App() {
                           <span style={{ fontSize: 20, fontWeight: "bold", color: "#fff" }}>Martly</span>
                         </div>
                       )}
+                      Header={() => (
+                        <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", padding: "0 24px", height: 48, background: "#001529" }}>
+                          <OrgSwitcher />
+                        </div>
+                      )}
                     >
                       <Outlet />
                     </ThemedLayoutV2>
@@ -135,6 +152,11 @@ export default function App() {
                   <Route index element={<OrganizationList />} />
                   <Route path="create" element={<OrganizationCreate />} />
                   <Route path="edit/:id" element={<OrganizationEdit />} />
+                </Route>
+                <Route path="/users">
+                  <Route index element={<UserList />} />
+                  <Route path="create" element={<UserCreate />} />
+                  <Route path="edit/:id" element={<UserEdit />} />
                 </Route>
                 <Route path="/stores">
                   <Route index element={<StoreList />} />
@@ -159,9 +181,9 @@ export default function App() {
                   <Route path="create" element={<ProductCreate />} />
                   <Route path="edit/:id" element={<ProductEdit />} />
                   <Route path="show/:id" element={<ProductShow />} />
+                  <Route path=":id/map" element={<ProductMap />} />
                 </Route>
                 <Route path="/store-products">
-                  <Route index element={<StoreProductList />} />
                   <Route path="create" element={<StoreProductCreate />} />
                   <Route path="edit/:id" element={<StoreProductEdit />} />
                 </Route>
@@ -172,6 +194,7 @@ export default function App() {
                 <Route path="/" element={<DashboardPage />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />
+              <Route path="/select-org" element={<SelectOrgPage />} />
             </Routes>
           </Refine>
         </AntdApp>

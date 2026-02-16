@@ -84,6 +84,11 @@ enum StorageType {
   HUMIDITY_CONTROLLED
 }
 
+enum DiscountType {
+  FLAT
+  PERCENTAGE
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -93,7 +98,8 @@ model Organization {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  stores Store[]
+  stores   Store[]
+  products Product[]
 
   @@map("organizations")
 }
@@ -207,9 +213,11 @@ model Product {
   mfgLicenseNo        String?      @map("mfg_license_no")
   dangerWarnings      String?      @map("danger_warnings")
   usageInstructions   String?      @map("usage_instructions")
+  organizationId      String?          @map("organization_id")
   createdAt           DateTime     @default(now()) @map("created_at")
   updatedAt           DateTime     @updatedAt @map("updated_at")
 
+  organization  Organization?    @relation(fields: [organizationId], references: [id])
   category      Category?        @relation(fields: [categoryId], references: [id])
   brand         Brand?           @relation(fields: [brandId], references: [id])
   variants      ProductVariant[]
@@ -217,6 +225,7 @@ model Product {
   orderItems    OrderItem[]
 
   @@index([productType])
+  @@index([organizationId])
   @@map("products")
 }
 
@@ -234,6 +243,11 @@ model ProductVariant {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
+  discountType  DiscountType?  @map("discount_type")
+  discountValue Decimal?       @db.Decimal(10, 2) @map("discount_value")
+  discountStart DateTime?      @map("discount_start")
+  discountEnd   DateTime?      @map("discount_end")
+
   product       Product        @relation(fields: [productId], references: [id], onDelete: Cascade)
   storeProducts StoreProduct[]
   orderItems    OrderItem[]
@@ -246,11 +260,17 @@ model StoreProduct {
   storeId   String   @map("store_id")
   productId String   @map("product_id")
   variantId String   @map("variant_id")
-  price     Decimal  @db.Decimal(10, 2)
-  stock     Int      @default(0)
-  isActive  Boolean  @default(true) @map("is_active")
+  price         Decimal @db.Decimal(10, 2)
+  stock         Int     @default(0)
+  reservedStock Int     @default(0) @map("reserved_stock")
+  isActive      Boolean @default(true) @map("is_active")
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
+
+  discountType  DiscountType?  @map("discount_type")
+  discountValue Decimal?       @db.Decimal(10, 2) @map("discount_value")
+  discountStart DateTime?      @map("discount_start")
+  discountEnd   DateTime?      @map("discount_end")
 
   store      Store          @relation(fields: [storeId], references: [id])
   product    Product        @relation(fields: [productId], references: [id])
@@ -302,6 +322,10 @@ model OrderItem {
   quantity       Int
   unitPrice      Decimal @db.Decimal(10, 2) @map("unit_price")
   totalPrice     Decimal @db.Decimal(10, 2) @map("total_price")
+
+  originalPrice Decimal?      @db.Decimal(10, 2) @map("original_price")
+  discountType  DiscountType? @map("discount_type")
+  discountValue Decimal?      @db.Decimal(10, 2) @map("discount_value")
 
   order        Order          @relation(fields: [orderId], references: [id])
   product      Product        @relation(fields: [productId], references: [id])

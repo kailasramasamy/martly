@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, useMemo } from "react";
-import { View, Text, TextInput, FlatList, TouchableOpacity, StyleSheet, ActivityIndicator, Alert, ScrollView } from "react-native";
+import { View, Text, TextInput, FlatList, TouchableOpacity, StyleSheet, ActivityIndicator, Alert, ScrollView, Image } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { api } from "../../lib/api";
 import { useCart } from "../../lib/cart-context";
@@ -18,17 +18,33 @@ interface Variant {
   unitType: string;
   unitValue: string;
   mrp: number | null;
+  imageUrl: string | null;
+}
+
+interface Pricing {
+  effectivePrice: number;
+  originalPrice: number;
+  discountType: string | null;
+  discountValue: number | null;
+  discountActive: boolean;
+  savingsAmount: number;
+  savingsPercent: number;
 }
 
 interface StoreProduct {
   id: string;
   price: number;
+  stock: number;
+  reservedStock: number;
+  availableStock: number;
   variantId: string;
   variant: Variant;
+  pricing?: Pricing;
   product: {
     id: string;
     name: string;
     description: string | null;
+    imageUrl: string | null;
     brand: { id: string; name: string } | null;
     foodType: string | null;
     productType: string | null;
@@ -36,6 +52,7 @@ interface StoreProduct {
     certifications: string[];
     dangerWarnings: string | null;
     category?: { id: string; name: string } | null;
+    variants?: Variant[];
   };
 }
 
@@ -59,6 +76,15 @@ export default function StoreDetailScreen() {
       }
     }
     return Array.from(catMap.entries()).map(([id, name]) => ({ id, name }));
+  }, [products]);
+
+  // Count how many store-product entries exist per product (variants available in this store)
+  const variantCountMap = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const p of products) {
+      map.set(p.product.id, (map.get(p.product.id) ?? 0) + 1);
+    }
+    return map;
   }, [products]);
 
   const filteredProducts = useMemo(() => {
@@ -89,12 +115,16 @@ export default function StoreDetailScreen() {
   const handleAddToCart = (sp: StoreProduct) => {
     if (!store || !id) return;
 
+    const effectivePrice = sp.pricing?.discountActive
+      ? sp.pricing.effectivePrice
+      : Number(sp.price);
+
     const item = {
       storeProductId: sp.id,
       productName: sp.product.name,
       variantId: sp.variant.id,
       variantName: sp.variant.name,
-      price: Number(sp.price),
+      price: effectivePrice,
     };
 
     if (cartStoreId && cartStoreId !== id) {
@@ -166,66 +196,121 @@ export default function StoreDetailScreen() {
         data={filteredProducts}
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.list}
-        renderItem={({ item }) => (
-          <View style={styles.card}>
-            <View style={styles.cardTopRow}>
-              {item.product.foodType && (
-                <View style={[styles.foodTypeDot, item.product.foodType === "VEG" || item.product.foodType === "VEGAN" ? styles.foodTypeVeg : styles.foodTypeNonVeg]}>
-                  <View style={[styles.foodTypeDotInner, item.product.foodType === "VEG" || item.product.foodType === "VEGAN" ? styles.foodTypeDotVeg : styles.foodTypeDotNonVeg]} />
+        renderItem={({ item }) => {
+          const hasDiscount = item.pricing?.discountActive;
+          const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
+          const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
+          const discountLabel = hasDiscount
+            ? item.pricing!.discountType === "PERCENTAGE"
+              ? `${item.pricing!.discountValue}% OFF`
+              : `₹${item.pricing!.discountValue} OFF`
+            : null;
+          const variantCount = variantCountMap.get(item.product.id) ?? 1;
+          const productImage = item.product.imageUrl || item.variant.imageUrl;
+          const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
+          const isOutOfStock = available <= 0;
+          const isLowStock = !isOutOfStock && available <= 5;
+
+          return (
+            <View style={styles.card}>
+              <View style={styles.cardBody}>
+                {/* Product image with variant count badge */}
+                <View style={styles.imageContainer}>
+                  {productImage ? (
+                    <Image source={{ uri: productImage }} style={styles.productImage} />
+                  ) : (
+                    <View style={[styles.productImage, styles.imagePlaceholder]}>
+                      <Text style={styles.imagePlaceholderText}>No img</Text>
+                    </View>
+                  )}
+                  {variantCount > 1 && (
+                    <View style={styles.variantCountBadge}>
+                      <Text style={styles.variantCountText}>{variantCount}</Text>
+                    </View>
+                  )}
+                </View>
+
+                {/* Card content */}
+                <View style={styles.cardContent}>
+                  <View style={styles.cardTopRow}>
+                    {item.product.foodType && (
+                      <View style={[styles.foodTypeDot, item.product.foodType === "VEG" || item.product.foodType === "VEGAN" ? styles.foodTypeVeg : styles.foodTypeNonVeg]}>
+                        <View style={[styles.foodTypeDotInner, item.product.foodType === "VEG" || item.product.foodType === "VEGAN" ? styles.foodTypeDotVeg : styles.foodTypeDotNonVeg]} />
+                      </View>
+                    )}
+                    {item.product.brand?.name && (
+                      <Text style={styles.brandName}>{item.product.brand.name}</Text>
+                    )}
+                    {discountLabel && (
+                      <View style={styles.discountBadge}>
+                        <Text style={styles.discountBadgeText}>{discountLabel}</Text>
+                      </View>
+                    )}
+                  </View>
+                  <View style={styles.cardRow}>
+                    <Text style={styles.productName}>{item.product.name}</Text>
+                    <View style={styles.priceGroup}>
+                      {originalPrice != null && (
+                        <Text style={styles.mrpPrice}>₹{originalPrice.toFixed(2)}</Text>
+                      )}
+                      {!hasDiscount && item.variant.mrp != null && Number(item.variant.mrp) > Number(item.price) && (
+                        <Text style={styles.mrpPrice}>₹{Number(item.variant.mrp).toFixed(2)}</Text>
+                      )}
+                      <Text style={styles.price}>₹{displayPrice.toFixed(2)}</Text>
+                    </View>
+                  </View>
+                  <Text style={styles.variantInfo}>
+                    {item.variant.name} · {item.variant.unitType} {item.variant.unitValue}
+                  </Text>
+                  {isOutOfStock && (
+                    <View style={styles.outOfStockBadge}>
+                      <Text style={styles.outOfStockText}>Out of Stock</Text>
+                    </View>
+                  )}
+                  {isLowStock && (
+                    <Text style={styles.lowStockText}>Only {available} left</Text>
+                  )}
+                  {item.product.description && (
+                    <Text style={styles.description} numberOfLines={2}>{item.product.description}</Text>
+                  )}
+                </View>
+              </View>
+
+              {item.product.regulatoryMarks?.length > 0 && (
+                <View style={styles.badgeRow}>
+                  {item.product.regulatoryMarks.map((mark: string) => (
+                    <View key={mark} style={styles.regBadge}>
+                      <Text style={styles.regBadgeText}>{mark}</Text>
+                    </View>
+                  ))}
                 </View>
               )}
-              {item.product.brand?.name && (
-                <Text style={styles.brandName}>{item.product.brand.name}</Text>
+              {item.product.certifications?.length > 0 && (
+                <View style={styles.badgeRow}>
+                  {item.product.certifications.map((cert: string) => (
+                    <View key={cert} style={styles.certBadge}>
+                      <Text style={styles.certBadgeText}>{cert}</Text>
+                    </View>
+                  ))}
+                </View>
               )}
+              {item.product.dangerWarnings && (
+                <View style={styles.dangerBanner}>
+                  <Text style={styles.dangerBannerText}>{item.product.dangerWarnings}</Text>
+                </View>
+              )}
+              <TouchableOpacity
+                style={[styles.addButton, addedId === item.id && styles.addedButton, isOutOfStock && styles.disabledButton]}
+                onPress={() => handleAddToCart(item)}
+                disabled={isOutOfStock}
+              >
+                <Text style={[styles.addButtonText, isOutOfStock && styles.disabledButtonText]}>
+                  {isOutOfStock ? "Out of Stock" : addedId === item.id ? "Added!" : "Add to Cart"}
+                </Text>
+              </TouchableOpacity>
             </View>
-            <View style={styles.cardRow}>
-              <Text style={styles.productName}>{item.product.name}</Text>
-              <View style={styles.priceGroup}>
-                {item.variant.mrp != null && Number(item.variant.mrp) > Number(item.price) && (
-                  <Text style={styles.mrpPrice}>₹{Number(item.variant.mrp).toFixed(2)}</Text>
-                )}
-                <Text style={styles.price}>₹{Number(item.price).toFixed(2)}</Text>
-              </View>
-            </View>
-            <Text style={styles.variantInfo}>
-              {item.variant.name} · {item.variant.unitType} {item.variant.unitValue}
-            </Text>
-            {item.product.description && (
-              <Text style={styles.description}>{item.product.description}</Text>
-            )}
-            {item.product.regulatoryMarks?.length > 0 && (
-              <View style={styles.badgeRow}>
-                {item.product.regulatoryMarks.map((mark: string) => (
-                  <View key={mark} style={styles.regBadge}>
-                    <Text style={styles.regBadgeText}>{mark}</Text>
-                  </View>
-                ))}
-              </View>
-            )}
-            {item.product.certifications?.length > 0 && (
-              <View style={styles.badgeRow}>
-                {item.product.certifications.map((cert: string) => (
-                  <View key={cert} style={styles.certBadge}>
-                    <Text style={styles.certBadgeText}>{cert}</Text>
-                  </View>
-                ))}
-              </View>
-            )}
-            {item.product.dangerWarnings && (
-              <View style={styles.dangerBanner}>
-                <Text style={styles.dangerBannerText}>{item.product.dangerWarnings}</Text>
-              </View>
-            )}
-            <TouchableOpacity
-              style={[styles.addButton, addedId === item.id && styles.addedButton]}
-              onPress={() => handleAddToCart(item)}
-            >
-              <Text style={styles.addButtonText}>
-                {addedId === item.id ? "Added!" : "Add to Cart"}
-              </Text>
-            </TouchableOpacity>
-          </View>
-        )}
+          );
+        }}
         ListEmptyComponent={<Text style={styles.empty}>No products available</Text>}
       />
     </View>
@@ -257,6 +342,19 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surface, borderRadius: 8, padding: spacing.md,
     marginBottom: spacing.sm, borderWidth: 1, borderColor: colors.border,
   },
+  cardBody: { flexDirection: "row", gap: spacing.sm },
+  imageContainer: { position: "relative" },
+  productImage: { width: 72, height: 72, borderRadius: 6, backgroundColor: "#f0f0f0" },
+  imagePlaceholder: { justifyContent: "center", alignItems: "center" },
+  imagePlaceholderText: { fontSize: 10, color: colors.textSecondary },
+  variantCountBadge: {
+    position: "absolute", bottom: -4, right: -4,
+    backgroundColor: colors.primary, borderRadius: 10, minWidth: 20, height: 20,
+    justifyContent: "center", alignItems: "center", paddingHorizontal: 4,
+    borderWidth: 1.5, borderColor: colors.surface,
+  },
+  variantCountText: { fontSize: 10, color: "#fff", fontWeight: "700" },
+  cardContent: { flex: 1 },
   cardTopRow: { flexDirection: "row", alignItems: "center", gap: 6, marginBottom: 2 },
   foodTypeDot: {
     width: 16, height: 16, borderWidth: 1.5, borderRadius: 3,
@@ -268,6 +366,10 @@ const styles = StyleSheet.create({
   foodTypeDotVeg: { backgroundColor: "#0a8f08" },
   foodTypeDotNonVeg: { backgroundColor: "#b71c1c" },
   brandName: { fontSize: fontSize.sm, fontWeight: "600", color: colors.textSecondary, textTransform: "uppercase" },
+  discountBadge: {
+    backgroundColor: "#dc2626", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2, marginLeft: "auto",
+  },
+  discountBadgeText: { fontSize: fontSize.xs, color: "#fff", fontWeight: "700" },
   cardRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
   productName: { fontSize: fontSize.md, fontWeight: "600", color: colors.text, flex: 1 },
   priceGroup: { flexDirection: "row", alignItems: "center", gap: 4 },
@@ -289,11 +391,19 @@ const styles = StyleSheet.create({
     borderWidth: 1, borderColor: "#f59e0b",
   },
   dangerBannerText: { fontSize: fontSize.xs, color: "#92400e" },
+  outOfStockBadge: {
+    backgroundColor: "#fef2f2", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 2,
+    alignSelf: "flex-start", marginTop: 2, borderWidth: 1, borderColor: "#fecaca",
+  },
+  outOfStockText: { fontSize: fontSize.xs, color: "#dc2626", fontWeight: "700" },
+  lowStockText: { fontSize: fontSize.xs, color: "#f59e0b", fontWeight: "600", marginTop: 2 },
   addButton: {
     backgroundColor: colors.primary, borderRadius: 6, paddingVertical: spacing.sm,
     paddingHorizontal: spacing.md, alignSelf: "flex-end", marginTop: spacing.sm,
   },
   addedButton: { backgroundColor: colors.success },
+  disabledButton: { backgroundColor: colors.border },
   addButtonText: { color: "#fff", fontSize: fontSize.sm, fontWeight: "600" },
+  disabledButtonText: { color: colors.textSecondary },
   empty: { textAlign: "center", color: colors.textSecondary, marginTop: spacing.xl },
 });

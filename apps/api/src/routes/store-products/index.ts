@@ -3,18 +3,43 @@ import { createStoreProductSchema, updateStoreProductSchema, bulkCreateStoreProd
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
+import { requireOrgContext, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { calculateEffectivePrice } from "../../services/pricing.js";
+
+function withPricing(sp: { stock: number; reservedStock: number; price: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; variant: { discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
+  const pricing = calculateEffectivePrice(
+    sp.price as number,
+    sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+    sp as Parameters<typeof calculateEffectivePrice>[2],
+  );
+  return { ...sp, pricing, availableStock: sp.stock - sp.reservedStock };
+}
 
 export async function storeProductRoutes(app: FastifyInstance) {
-  // List store-products (paginated, with relations)
-  app.get("/", async (request) => {
-      const { page = 1, pageSize = 20, q, storeId, productId } = request.query as {
-        page?: number; pageSize?: number; q?: string; storeId?: string; productId?: string;
+  const spInclude = { store: true, product: { include: { brand: true } }, variant: true } as const;
+
+  // List store-products (scoped to org's stores)
+  app.get("/", { preHandler: [authenticate, requireOrgContext] }, async (request) => {
+      const { page = 1, pageSize = 20, q, storeId, productId, catalogType } = request.query as {
+        page?: number; pageSize?: number; q?: string; storeId?: string; productId?: string; catalogType?: string;
       };
       const skip = (Number(page) - 1) * Number(pageSize);
 
       const where: Record<string, unknown> = {};
+
+      // Scope to org's stores
+      const orgStoreIds = await getOrgStoreIds(request, app.prisma);
+      if (orgStoreIds !== undefined) {
+        where.storeId = { in: orgStoreIds };
+      }
+
       if (storeId) where.storeId = storeId;
       if (productId) where.productId = productId;
+      if (catalogType === "master") {
+        where.product = { ...(where.product as Record<string, unknown> ?? {}), organizationId: null };
+      } else if (catalogType === "org") {
+        where.product = { ...(where.product as Record<string, unknown> ?? {}), organizationId: { not: null } };
+      }
       if (q) {
         where.OR = [
           { store: { name: { contains: q, mode: "insensitive" } } },
@@ -28,41 +53,49 @@ export async function storeProductRoutes(app: FastifyInstance) {
           skip,
           take: Number(pageSize),
           orderBy: { createdAt: "desc" },
-          include: { store: true, product: { include: { brand: true } }, variant: true },
+          include: spInclude,
         }),
         app.prisma.storeProduct.count({ where }),
       ]);
 
-      const response: PaginatedResponse<(typeof storeProducts)[0]> = {
+      const response: PaginatedResponse<ReturnType<typeof withPricing>> = {
         success: true,
-        data: storeProducts,
+        data: storeProducts.map(withPricing),
         meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
       };
       return response;
     },
   );
 
-  // Get single store-product
-  app.get<{ Params: { id: string } }>("/:id", async (request, reply) => {
+  // Get single store-product (verify org access)
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requireOrgContext] }, async (request, reply) => {
       const storeProduct = await app.prisma.storeProduct.findUnique({
         where: { id: request.params.id },
-        include: { store: true, product: { include: { brand: true } }, variant: true },
+        include: spInclude,
       });
       if (!storeProduct) return reply.notFound("Store product not found");
 
-      const response: ApiResponse<typeof storeProduct> = { success: true, data: storeProduct };
+      if (!(await verifyStoreOrgAccess(request, app.prisma, storeProduct.storeId))) {
+        return reply.forbidden("Access denied");
+      }
+
+      const response: ApiResponse<ReturnType<typeof withPricing>> = { success: true, data: withPricing(storeProduct) };
       return response;
     },
   );
 
-  // Create store-product (assign variant to store)
+  // Create store-product (verify store belongs to org)
   app.post(
     "/",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
     async (request, reply) => {
       const body = createStoreProductSchema.parse(request.body);
 
-      // Look up the variant to get productId
+      // Verify store belongs to user's org
+      if (!(await verifyStoreOrgAccess(request, app.prisma, body.storeId))) {
+        return reply.forbidden("Access denied to this store");
+      }
+
       const variant = await app.prisma.productVariant.findUnique({ where: { id: body.variantId } });
       if (!variant) return reply.notFound("Product variant not found");
 
@@ -78,30 +111,37 @@ export async function storeProductRoutes(app: FastifyInstance) {
           variantId: body.variantId,
           price: body.price,
           stock: body.stock,
+          discountType: body.discountType ?? undefined,
+          discountValue: body.discountValue ?? undefined,
+          discountStart: body.discountStart ?? undefined,
+          discountEnd: body.discountEnd ?? undefined,
         },
-        include: { store: true, product: { include: { brand: true } }, variant: true },
+        include: spInclude,
       });
 
-      const response: ApiResponse<typeof storeProduct> = { success: true, data: storeProduct };
+      const response: ApiResponse<ReturnType<typeof withPricing>> = { success: true, data: withPricing(storeProduct) };
       return response;
     },
   );
 
-  // Bulk create store-products
+  // Bulk create store-products (verify store belongs to org)
   app.post(
     "/bulk",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
-    async (request) => {
+    async (request, reply) => {
       const body = bulkCreateStoreProductSchema.parse(request.body);
 
-      // Look up all variants to get productIds
+      // Verify store belongs to user's org
+      if (!(await verifyStoreOrgAccess(request, app.prisma, body.storeId))) {
+        return reply.forbidden("Access denied to this store");
+      }
+
       const variantIds = body.items.map((i) => i.variantId);
       const variants = await app.prisma.productVariant.findMany({
         where: { id: { in: variantIds } },
       });
       const variantMap = new Map(variants.map((v) => [v.id, v.productId]));
 
-      // Check which variants are already assigned
       const existingAssignments = await app.prisma.storeProduct.findMany({
         where: { storeId: body.storeId, variantId: { in: variantIds } },
         select: { variantId: true },
@@ -116,6 +156,10 @@ export async function storeProductRoutes(app: FastifyInstance) {
           variantId: item.variantId,
           price: item.price,
           stock: item.stock,
+          discountType: item.discountType ?? undefined,
+          discountValue: item.discountValue ?? undefined,
+          discountStart: item.discountStart ?? undefined,
+          discountEnd: item.discountEnd ?? undefined,
         }));
 
       let created = 0;
@@ -132,7 +176,7 @@ export async function storeProductRoutes(app: FastifyInstance) {
     },
   );
 
-  // Update store-product
+  // Update store-product (verify org access)
   app.put<{ Params: { id: string } }>(
     "/:id",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
@@ -141,24 +185,32 @@ export async function storeProductRoutes(app: FastifyInstance) {
       const existing = await app.prisma.storeProduct.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Store product not found");
 
+      if (!(await verifyStoreOrgAccess(request, app.prisma, existing.storeId))) {
+        return reply.forbidden("Access denied");
+      }
+
       const storeProduct = await app.prisma.storeProduct.update({
         where: { id: request.params.id },
         data: body,
-        include: { store: true, product: { include: { brand: true } }, variant: true },
+        include: spInclude,
       });
 
-      const response: ApiResponse<typeof storeProduct> = { success: true, data: storeProduct };
+      const response: ApiResponse<ReturnType<typeof withPricing>> = { success: true, data: withPricing(storeProduct) };
       return response;
     },
   );
 
-  // Delete store-product
+  // Delete store-product (verify org access)
   app.delete<{ Params: { id: string } }>(
     "/:id",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request, reply) => {
       const existing = await app.prisma.storeProduct.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Store product not found");
+
+      if (!(await verifyStoreOrgAccess(request, app.prisma, existing.storeId))) {
+        return reply.forbidden("Access denied");
+      }
 
       await app.prisma.storeProduct.delete({ where: { id: request.params.id } });
 
