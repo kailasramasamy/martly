@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { List, useTable, EditButton, ShowButton, useSelect } from "@refinedev/antd";
-import { Table, Form, Input, Space, Select, Tag, Typography, Badge, Tabs, Button, Cascader, Switch, App } from "antd";
+import { Table, Form, Input, Space, Select, Tag, Typography, Badge, Tabs, Button, Cascader, Switch, App, Popconfirm } from "antd";
 import type { HttpError, CrudFilter } from "@refinedev/core";
 import { useGetIdentity, useList } from "@refinedev/core";
 import { useNavigate, useSearchParams } from "react-router";
 import { axiosInstance } from "../../providers/data-provider";
-import { ShopOutlined } from "@ant-design/icons";
+import { ShopOutlined, DeleteOutlined } from "@ant-design/icons";
 
 import {
   FOOD_TYPE_CONFIG,
@@ -326,10 +326,34 @@ const ProductsTableTab = ({
       },
     },
     {
-      title: "", key: "actions", width: 60,
-      render: (_: unknown, sp: StoreProductEntry) => (
-        <EditButton hideText size="small" recordItemId={sp.id} resource="store-products" />
-      ),
+      title: "", key: "actions", width: 100,
+      render: (_: unknown, sp: StoreProductEntry) => {
+        const canDelete = role === "SUPER_ADMIN" || role === "ORG_ADMIN";
+        return (
+          <Space size={4}>
+            <EditButton hideText size="small" recordItemId={sp.id} resource="store-products" />
+            {canDelete && (
+              <Popconfirm
+                title="Unmap from store?"
+                description={sp.reservedStock > 0 ? `${sp.reservedStock} unit(s) reserved in active orders.` : undefined}
+                onConfirm={async () => {
+                  try {
+                    await axiosInstance.delete(`/store-products/${sp.id}`);
+                    message.success("Product unmapped from store");
+                    tableQuery?.refetch();
+                  } catch {
+                    message.error("Failed to unmap product");
+                  }
+                }}
+                okText="Unmap"
+                okButtonProps={{ danger: true }}
+              >
+                <Button danger size="small" icon={<DeleteOutlined />} />
+              </Popconfirm>
+            )}
+          </Space>
+        );
+      },
     },
   ];
 
@@ -480,6 +504,7 @@ const ProductsTableTab = ({
         />
 
         {includeStoreProducts ? (
+          <>
           <Table.Column
             title="Stores"
             width={160}
@@ -505,6 +530,24 @@ const ProductsTableTab = ({
               );
             }}
           />
+          <Table.Column
+            title="Stock"
+            width={100}
+            render={(_, record: ProductRecord) => {
+              const sps = record.storeProducts ?? [];
+              if (sps.length === 0) return <Text type="secondary">—</Text>;
+              const totalAvailable = sps.reduce((sum, sp) => sum + sp.stock - (sp.reservedStock ?? 0), 0);
+              const totalStock = sps.reduce((sum, sp) => sum + sp.stock, 0);
+              const color = totalAvailable <= 0 ? "red" : totalAvailable <= 5 ? "orange" : "green";
+              return (
+                <Space size={4}>
+                  <Tag color={color}>{totalAvailable}</Tag>
+                  <Text type="secondary" style={{ fontSize: 12 }}>/ {totalStock}</Text>
+                </Space>
+              );
+            }}
+          />
+          </>
         ) : (
           <Table.Column
             title="Variants"
@@ -569,7 +612,7 @@ const ProductsTableTab = ({
               <Space size={4}>
                 <ShowButton hideText size="small" recordItemId={record.id} />
                 {canEdit && <EditButton hideText size="small" recordItemId={record.id} />}
-                {showMapButton && role === "ORG_ADMIN" && record.organizationId == null && (
+                {showMapButton && role === "ORG_ADMIN" && (
                   <Button
                     type="primary"
                     size="small"
@@ -683,6 +726,7 @@ export const ProductList = () => {
           role={role}
           catalogFilter="org"
           includeStoreProducts
+          showMapButton={isOrgUser}
           showOrgColumn={isSuperAdmin}
         />
       ),

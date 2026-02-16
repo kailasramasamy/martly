@@ -32,7 +32,11 @@ export const StoreProductEdit = () => {
     },
     onFinish: (values: Record<string, unknown>) => {
       return originalOnFinish?.({
-        ...values,
+        price: values.price != null ? Number(values.price) : undefined,
+        stock: values.stock != null ? Number(values.stock) : undefined,
+        isActive: values.isActive,
+        discountType: values.discountType || null,
+        discountValue: values.discountValue != null ? Number(values.discountValue) : null,
         discountStart: values.discountStart ? (values.discountStart as dayjs.Dayjs).toISOString() : null,
         discountEnd: values.discountEnd ? (values.discountEnd as dayjs.Dayjs).toISOString() : null,
       });

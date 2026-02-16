@@ -38,6 +38,12 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin can modify the global catalog" };
     }
 
+    // Stock: read-only for all allowed roles
+    if (resource === "stock") {
+      if (action === "list" || action === "show") return { can: true };
+      return { can: false };
+    }
+
     // Products: read OK, write for SUPER_ADMIN and ORG_ADMIN (API enforces ownership)
     if (resource === "products") {
       if (action === "list" || action === "show") {

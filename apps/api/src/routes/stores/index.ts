@@ -9,13 +9,17 @@ import { calculateEffectivePrice } from "../../services/pricing.js";
 export async function storeRoutes(app: FastifyInstance) {
   // List stores (scoped to user's org; STORE_MANAGER/STAFF see only assigned stores)
   app.get("/", { preHandler: [authenticate, requireOrgContext] }, async (request) => {
-    const { page = 1, pageSize = 20, q } = request.query as { page?: number; pageSize?: number; q?: string };
+    const { page = 1, pageSize = 20, q, organizationId } = request.query as { page?: number; pageSize?: number; q?: string; organizationId?: string };
     const skip = (Number(page) - 1) * Number(pageSize);
 
     const where: Record<string, unknown> = {};
     const orgStoreIds = await getOrgStoreIds(request, app.prisma);
     if (orgStoreIds !== undefined) {
       where.id = { in: orgStoreIds };
+    }
+    // SUPER_ADMIN can filter by organizationId
+    if (organizationId && getOrgUser(request).role === "SUPER_ADMIN") {
+      where.organizationId = organizationId;
     }
     if (q) {
       where.OR = [{ name: { contains: q, mode: "insensitive" as const } }, { address: { contains: q, mode: "insensitive" as const } }];

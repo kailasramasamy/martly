@@ -1,5 +1,5 @@
 import { Edit, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, DatePicker } from "antd";
+import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, DatePicker, theme } from "antd";
 import {
   MinusCircleOutlined,
   PlusOutlined,
@@ -105,6 +105,7 @@ const PACK_TYPES = [
 ];
 
 export const ProductEdit = () => {
+  const { token } = theme.useToken();
   const { formProps, saveButtonProps } = useForm({ resource: "products" });
 
   // Convert variant discount date strings to dayjs objects for DatePicker
@@ -328,7 +329,7 @@ export const ProductEdit = () => {
                       <Card
                         key={key}
                         size="small"
-                        style={{ marginBottom: 12, background: "#fafafa" }}
+                        style={{ marginBottom: 12, background: token.colorFillAlter }}
                         extra={fields.length > 1 ? <MinusCircleOutlined onClick={() => remove(name)} style={{ color: "#ff4d4f" }} /> : null}
                       >
                         <Row gutter={16}>

@@ -17,6 +17,7 @@ import { dashboardRoutes } from "./routes/dashboard/index.js";
 import { categoryRoutes } from "./routes/categories/index.js";
 import { brandRoutes } from "./routes/brands/index.js";
 import { userRoutes } from "./routes/users/index.js";
+import { stockRoutes } from "./routes/stock/index.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -81,6 +82,7 @@ export async function buildApp() {
       await api.register(categoryRoutes, { prefix: "/categories" });
       await api.register(brandRoutes, { prefix: "/brands" });
       await api.register(userRoutes, { prefix: "/users" });
+      await api.register(stockRoutes, { prefix: "/stock" });
     },
     { prefix: "/api/v1" },
   );

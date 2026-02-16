@@ -17,6 +17,7 @@ import {
   LogoutOutlined,
   SunOutlined,
   MoonOutlined,
+  InboxOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -48,6 +49,7 @@ import { OrganizationEdit } from "./pages/organizations/edit";
 import { StoreProductCreate } from "./pages/store-products/create";
 import { StoreProductEdit } from "./pages/store-products/edit";
 import { DashboardPage } from "./pages/dashboard";
+import { StockPage } from "./pages/stock";
 import { CategoryList } from "./pages/categories/list";
 import { CategoryCreate } from "./pages/categories/create";
 import { CategoryEdit } from "./pages/categories/edit";
@@ -191,6 +193,11 @@ export default function App() {
                 show: "/orders/show/:id",
                 meta: { label: "Orders", icon: <ShoppingCartOutlined /> },
               },
+              {
+                name: "stock",
+                list: "/stock",
+                meta: { label: "Stock", icon: <InboxOutlined /> },
+              },
             ]}
           >
             <Routes>
@@ -255,6 +262,7 @@ export default function App() {
                   <Route index element={<OrderList />} />
                   <Route path="show/:id" element={<OrderShow />} />
                 </Route>
+                <Route path="/stock" element={<StockPage />} />
                 <Route path="/" element={<DashboardPage />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />

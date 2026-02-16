@@ -57,6 +57,10 @@ export const lightTheme: ThemeConfig = {
   token: sharedTokens,
   components: {
     ...sharedComponents,
+    Card: {
+      ...sharedComponents.Card,
+      headerBg: "#f0fdfa",
+    },
     Table: {
       headerBg: "#f0fdfa",
       headerSortActiveBg: "#ccfbf1",
@@ -70,6 +74,10 @@ export const darkTheme: ThemeConfig = {
   token: sharedTokens,
   components: {
     ...sharedComponents,
+    Card: {
+      ...sharedComponents.Card,
+      headerBg: "#1a2e2e",
+    },
     Table: {
       headerBg: "#1a2e2e",
       headerSortActiveBg: "#1a3a3a",

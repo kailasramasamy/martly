@@ -216,14 +216,16 @@ export const ProductShow = () => {
           </Card>
         </Col>
 
-        {/* ORG_ADMIN viewing master product: show actions */}
-        {isOrgAdmin && isMasterProduct && (
+        {/* ORG_ADMIN: show Map to Store action */}
+        {isOrgAdmin && (
           <Col xs={24}>
             <Alert
               type="info"
               showIcon
-              message="Master Catalog Product"
-              description="This product is from the master catalog. You can map its variants to your stores by assigning them with pricing and stock."
+              message={isMasterProduct ? "Master Catalog Product" : "Map to Store"}
+              description={isMasterProduct
+                ? "This product is from the master catalog. You can map its variants to your stores by assigning them with pricing and stock."
+                : "Map this product's variants to your stores with pricing and stock."}
               action={
                 <Button
                   type="primary"

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
-import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Checkbox, Typography, Tag } from "antd";
+import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Checkbox, Typography, Tag, theme } from "antd";
 import {
   MinusCircleOutlined,
   PlusOutlined,
@@ -116,6 +116,7 @@ interface StoreRecord {
 }
 
 export const ProductCreate = () => {
+  const { token } = theme.useToken();
   const { formProps, saveButtonProps } = useForm({ resource: "products" });
   const { data: identity } = useGetIdentity<{ role: string }>();
   const isOrgAdmin = identity?.role === "ORG_ADMIN";
@@ -338,7 +339,7 @@ export const ProductCreate = () => {
                       <Card
                         key={key}
                         size="small"
-                        style={{ marginBottom: 12, background: "#fafafa" }}
+                        style={{ marginBottom: 12, background: token.colorFillAlter }}
                         extra={fields.length > 1 ? <MinusCircleOutlined onClick={() => remove(name)} style={{ color: "#ff4d4f" }} /> : null}
                       >
                         <Row gutter={16}>

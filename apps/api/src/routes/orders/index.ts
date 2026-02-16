@@ -9,6 +9,17 @@ import { sendOrderStatusNotification } from "../../services/notification.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
 
+// Valid status transitions
+const VALID_TRANSITIONS: Record<string, string[]> = {
+  PENDING: ["CONFIRMED", "CANCELLED"],
+  CONFIRMED: ["PREPARING", "CANCELLED"],
+  PREPARING: ["READY", "CANCELLED"],
+  READY: ["OUT_FOR_DELIVERY", "CANCELLED"],
+  OUT_FOR_DELIVERY: ["DELIVERED", "CANCELLED"],
+  DELIVERED: [],
+  CANCELLED: [],
+};
+
 export async function orderRoutes(app: FastifyInstance) {
   // List orders (scoped by role + org)
   app.get("/", { preHandler: [authenticate] }, async (request) => {
@@ -68,7 +79,7 @@ export async function orderRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Create order (authenticated)
+  // Create order (authenticated) — reserve stock + create order in one transaction
   app.post("/", { preHandler: [authenticate] }, async (request, reply) => {
     const body = createOrderSchema.parse(request.body);
     const user = request.user as { sub: string };
@@ -108,33 +119,60 @@ export async function orderRoutes(app: FastifyInstance) {
       quantity: item.quantity,
     }));
 
+    // Reserve stock + create order in a single transaction
     try {
-      await reserveStock(app.prisma, stockItems);
+      const order = await app.prisma.$transaction(async (tx) => {
+        // Reserve stock atomically
+        for (const item of stockItems) {
+          const result = await tx.$executeRaw`
+            UPDATE store_products
+            SET reserved_stock = reserved_stock + ${item.quantity}
+            WHERE id = ${item.storeProductId}
+              AND stock - reserved_stock >= ${item.quantity}
+          `;
+          if (result === 0) {
+            const sp = await tx.storeProduct.findUnique({
+              where: { id: item.storeProductId },
+              include: { product: true },
+            });
+            const name = sp?.product?.name ?? item.storeProductId;
+            const available = sp ? sp.stock - sp.reservedStock : 0;
+            throw Object.assign(
+              new Error(`Insufficient stock for "${name}" (available: ${available}, requested: ${item.quantity})`),
+              { statusCode: 409 },
+            );
+          }
+        }
+
+        // Create order in the same transaction
+        return tx.order.create({
+          data: {
+            userId: user.sub,
+            storeId: body.storeId,
+            deliveryAddress: body.deliveryAddress,
+            totalAmount,
+            status: "PENDING",
+            paymentStatus: "PENDING",
+            items: { create: itemsData },
+          },
+          include: { items: { include: { variant: true } } },
+        });
+      });
+
+      const response: ApiResponse<typeof order> = { success: true, data: order };
+      return response;
     } catch (err) {
       const e = err as Error & { statusCode?: number };
-      return reply.status(e.statusCode ?? 409).send({
-        success: false,
-        error: "Insufficient Stock",
-        message: e.message,
-        statusCode: e.statusCode ?? 409,
-      });
+      if (e.statusCode === 409) {
+        return reply.status(409).send({
+          success: false,
+          error: "Insufficient Stock",
+          message: e.message,
+          statusCode: 409,
+        });
+      }
+      throw err;
     }
-
-    const order = await app.prisma.order.create({
-      data: {
-        userId: user.sub,
-        storeId: body.storeId,
-        deliveryAddress: body.deliveryAddress,
-        totalAmount,
-        status: "PENDING",
-        paymentStatus: "PENDING",
-        items: { create: itemsData },
-      },
-      include: { items: { include: { variant: true } } },
-    });
-
-    const response: ApiResponse<typeof order> = { success: true, data: order };
-    return response;
   });
 
   // Update order status (verify org access)
@@ -154,22 +192,44 @@ export async function orderRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied");
       }
 
-      const order = await app.prisma.order.update({
-        where: { id: request.params.id },
-        data: { status: body.status },
-        include: { items: true },
-      });
+      // Prevent no-op transitions
+      if (existing.status === body.status) {
+        return reply.status(400).send({
+          success: false,
+          error: "Invalid Transition",
+          message: `Order is already ${body.status}`,
+          statusCode: 400,
+        });
+      }
+
+      // Validate status transition
+      const allowed = VALID_TRANSITIONS[existing.status] ?? [];
+      if (!allowed.includes(body.status)) {
+        return reply.status(400).send({
+          success: false,
+          error: "Invalid Transition",
+          message: `Cannot transition from ${existing.status} to ${body.status}`,
+          statusCode: 400,
+        });
+      }
 
       const stockItems = existing.items.map((i) => ({
         storeProductId: i.storeProductId,
         quantity: i.quantity,
       }));
 
+      // Perform stock operation + status update together
       if (body.status === "DELIVERED") {
         await deductStock(app.prisma, stockItems);
       } else if (body.status === "CANCELLED") {
         await releaseStock(app.prisma, stockItems);
       }
+
+      const order = await app.prisma.order.update({
+        where: { id: request.params.id },
+        data: { status: body.status },
+        include: { items: true },
+      });
 
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, body.status);
 

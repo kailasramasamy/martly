@@ -3,7 +3,7 @@ import { createStoreProductSchema, updateStoreProductSchema, bulkCreateStoreProd
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-import { requireOrgContext, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
+import { requireOrgContext, getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 
 function withPricing(sp: { stock: number; reservedStock: number; price: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; variant: { discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
@@ -20,8 +20,9 @@ export async function storeProductRoutes(app: FastifyInstance) {
 
   // List store-products (scoped to org's stores)
   app.get("/", { preHandler: [authenticate, requireOrgContext] }, async (request) => {
-      const { page = 1, pageSize = 20, q, storeId, productId, catalogType } = request.query as {
+      const { page = 1, pageSize = 20, q, storeId, productId, catalogType, stockStatus, organizationId } = request.query as {
         page?: number; pageSize?: number; q?: string; storeId?: string; productId?: string; catalogType?: string;
+        stockStatus?: "in_stock" | "low_stock" | "out_of_stock"; organizationId?: string;
       };
       const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -31,6 +32,15 @@ export async function storeProductRoutes(app: FastifyInstance) {
       const orgStoreIds = await getOrgStoreIds(request, app.prisma);
       if (orgStoreIds !== undefined) {
         where.storeId = { in: orgStoreIds };
+      }
+
+      // SUPER_ADMIN can filter by organizationId
+      if (organizationId && getOrgUser(request).role === "SUPER_ADMIN") {
+        const orgStores = await app.prisma.store.findMany({
+          where: { organizationId },
+          select: { id: true },
+        });
+        where.storeId = { in: orgStores.map((s: { id: string }) => s.id) };
       }
 
       if (storeId) where.storeId = storeId;
@@ -45,6 +55,23 @@ export async function storeProductRoutes(app: FastifyInstance) {
           { store: { name: { contains: q, mode: "insensitive" } } },
           { product: { name: { contains: q, mode: "insensitive" } } },
         ];
+      }
+
+      // Stock status filter: use raw SQL to filter by computed available stock
+      let stockFilteredIds: string[] | undefined;
+      if (stockStatus) {
+        const condition =
+          stockStatus === "out_of_stock"
+            ? "stock - reserved_stock <= 0"
+            : stockStatus === "low_stock"
+              ? "stock - reserved_stock > 0 AND stock - reserved_stock <= 5"
+              : "stock - reserved_stock > 5";
+
+        const rows = await app.prisma.$queryRawUnsafe<{ id: string }[]>(
+          `SELECT id FROM store_products WHERE ${condition}`,
+        );
+        stockFilteredIds = rows.map((r) => r.id);
+        where.id = { in: stockFilteredIds };
       }
 
       const [storeProducts, total] = await Promise.all([
