@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { List, useTable, EditButton, ShowButton } from "@refinedev/antd";
+import { List, useTable, EditButton, ShowButton, useSelect } from "@refinedev/antd";
 import { Table, Form, Input, Space, Select, Tag, Typography, Badge, Tabs, Button, Cascader, Switch, App } from "antd";
 import type { HttpError, CrudFilter } from "@refinedev/core";
 import { useGetIdentity, useList } from "@refinedev/core";
@@ -54,6 +54,7 @@ interface ProductRecord {
   storageType?: string;
   category?: { name: string };
   organizationId?: string | null;
+  organization?: { id: string; name: string } | null;
   variants?: Variant[];
   storeProducts?: StoreProductEntry[];
 }
@@ -146,6 +147,7 @@ const ProductsTableTab = ({
   includeStoreProducts,
   showCatalogBadge,
   showMapButton,
+  showOrgColumn,
 }: {
   role?: string;
   catalogFilter?: string;
@@ -154,6 +156,7 @@ const ProductsTableTab = ({
   includeStoreProducts?: boolean;
   showCatalogBadge?: boolean;
   showMapButton?: boolean;
+  showOrgColumn?: boolean;
 }) => {
   const navigate = useNavigate();
   const { message } = App.useApp();
@@ -168,7 +171,7 @@ const ProductsTableTab = ({
   const { tableProps, searchFormProps, tableQuery } = useTable<
     ProductRecord,
     HttpError,
-    { q: string; categoryPath: string[]; productType: string }
+    { q: string; categoryPath: string[]; productType: string; organizationId: string }
   >({
     resource: "products",
     syncWithLocation: false,
@@ -177,6 +180,7 @@ const ProductsTableTab = ({
       { field: "q", operator: "contains", value: values.q },
       { field: "categoryId", operator: "eq", value: values.categoryPath?.slice(-1)[0] },
       { field: "productType", operator: "eq", value: values.productType },
+      { field: "organizationId", operator: "eq", value: values.organizationId },
     ],
   });
 
@@ -208,6 +212,13 @@ const ProductsTableTab = ({
     label: `${PRODUCT_TYPE_CONFIG[t.type]?.label ?? t.type} (${t.count})`,
     value: t.type,
   }));
+
+  const { selectProps: orgSelectProps } = useSelect({
+    resource: "organizations",
+    optionLabel: "name",
+    optionValue: "id",
+    queryOptions: { enabled: showOrgColumn === true },
+  });
 
   // Variant-only columns (for tabs without store-product data)
   const variantColumns = [
@@ -374,6 +385,11 @@ const ProductsTableTab = ({
         <Form.Item name="productType" noStyle>
           <Select options={productTypeOptions} allowClear placeholder="Product type" style={{ width: 200 }} onChange={() => searchFormProps.form?.submit()} />
         </Form.Item>
+        {showOrgColumn && (
+          <Form.Item name="organizationId" noStyle>
+            <Select {...orgSelectProps} allowClear placeholder="Organization" style={{ width: 200 }} onChange={() => searchFormProps.form?.submit()} />
+          </Form.Item>
+        )}
       </Form>
 
       <Table<ProductRecord>
@@ -422,6 +438,18 @@ const ProductsTableTab = ({
               record.organizationId == null
                 ? <Tag color="blue">Master</Tag>
                 : <Tag color="green">Org</Tag>
+            }
+          />
+        )}
+
+        {showOrgColumn && (
+          <Table.Column
+            title="Organization"
+            width={150}
+            render={(_, record: ProductRecord) =>
+              record.organization
+                ? <Text>{record.organization.name}</Text>
+                : <Text type="secondary">—</Text>
             }
           />
         )}
@@ -611,11 +639,12 @@ export const ProductList = () => {
     filters: [{ field: "catalogType", operator: "eq", value: "org" }],
   });
 
+  const isSuperAdmin = role === "SUPER_ADMIN";
+
   const { data: masterCount } = useList({
     resource: "products",
     pagination: { current: 1, pageSize: 1 },
     filters: [{ field: "catalogType", operator: "eq", value: "master" }],
-    queryOptions: { enabled: isOrgUser },
   });
 
   const items = [
@@ -627,7 +656,8 @@ export const ProductList = () => {
           role={role}
           scope={isOrgUser ? "org-relevant" : undefined}
           includeStoreProducts={isOrgUser}
-          showCatalogBadge={isOrgUser || role === "SUPER_ADMIN"}
+          showCatalogBadge={isOrgUser || isSuperAdmin}
+          showOrgColumn={isSuperAdmin}
         />
       ),
     },
@@ -653,16 +683,21 @@ export const ProductList = () => {
           role={role}
           catalogFilter="org"
           includeStoreProducts
+          showOrgColumn={isSuperAdmin}
         />
       ),
     },
-    ...(isOrgUser
-      ? [{
-          key: "master",
-          label: <TabLabel label="Master Catalog" count={masterCount?.total} />,
-          children: <ProductsTableTab role={role} catalogFilter="master" showMapButton />,
-        }]
-      : []),
+    {
+      key: "master",
+      label: <TabLabel label="Master Catalog" count={masterCount?.total} />,
+      children: (
+        <ProductsTableTab
+          role={role}
+          catalogFilter="master"
+          showMapButton={isOrgUser}
+        />
+      ),
+    },
   ];
 
   return (

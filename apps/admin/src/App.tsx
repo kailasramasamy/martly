@@ -1,8 +1,9 @@
-import { Refine, Authenticated } from "@refinedev/core";
+import { createContext, useContext, useState, useCallback } from "react";
+import { Refine, Authenticated, useGetIdentity, useLogout } from "@refinedev/core";
 import { ThemedLayoutV2, useNotificationProvider } from "@refinedev/antd";
 import routerProvider from "@refinedev/react-router";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router";
-import { App as AntdApp, ConfigProvider } from "antd";
+import { App as AntdApp, ConfigProvider, Typography, Space, Button } from "antd";
 import {
   DashboardOutlined,
   BankOutlined,
@@ -12,11 +13,18 @@ import {
   ShoppingCartOutlined,
   TrademarkOutlined,
   TeamOutlined,
+  UserOutlined,
+  LogoutOutlined,
+  SunOutlined,
+  MoonOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
 
-import { theme } from "./theme";
+import { lightTheme, darkTheme } from "./theme";
+
+type ThemeMode = "light" | "dark";
+const ThemeModeContext = createContext<{ mode: ThemeMode; toggle: () => void }>({ mode: "light", toggle: () => {} });
 import { authProvider } from "./providers/auth-provider";
 import { martlyDataProvider } from "./providers/data-provider";
 import { accessControlProvider } from "./providers/access-control";
@@ -52,10 +60,69 @@ import { UserCreate } from "./pages/users/create";
 import { UserEdit } from "./pages/users/edit";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
+const { Text } = Typography;
+
+const ROLE_LABELS: Record<string, string> = {
+  SUPER_ADMIN: "Super Admin",
+  ORG_ADMIN: "Org Admin",
+  STORE_MANAGER: "Store Manager",
+  STAFF: "Staff",
+  CUSTOMER: "Customer",
+};
+
+function HeaderBar() {
+  const { data: identity } = useGetIdentity<{ name: string; role: string }>();
+  const { mutate: logout } = useLogout();
+  const { mode, toggle } = useContext(ThemeModeContext);
+  return (
+    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 24px", height: 48, background: "#0d9488" }}>
+      <OrgSwitcher />
+      <Space size={12}>
+        {identity && (
+          <Space size={6}>
+            <UserOutlined style={{ color: "rgba(255,255,255,0.85)" }} />
+            <Text style={{ color: "#fff", fontSize: 13 }}>{identity.name}</Text>
+            <Text style={{ color: "rgba(255,255,255,0.55)", fontSize: 12 }}>
+              {ROLE_LABELS[identity.role] ?? identity.role}
+            </Text>
+          </Space>
+        )}
+        <Button
+          type="text"
+          size="small"
+          icon={mode === "light" ? <MoonOutlined /> : <SunOutlined />}
+          onClick={toggle}
+          title={mode === "light" ? "Dark mode" : "Light mode"}
+          style={{ color: "rgba(255,255,255,0.85)" }}
+        />
+        <Button
+          type="text"
+          size="small"
+          icon={<LogoutOutlined />}
+          onClick={() => logout()}
+          style={{ color: "rgba(255,255,255,0.75)" }}
+        />
+      </Space>
+    </div>
+  );
+}
+
 export default function App() {
+  const [mode, setMode] = useState<ThemeMode>(
+    () => (localStorage.getItem("martly_theme") as ThemeMode) || "light",
+  );
+  const toggle = useCallback(() => {
+    setMode((prev) => {
+      const next = prev === "light" ? "dark" : "light";
+      localStorage.setItem("martly_theme", next);
+      return next;
+    });
+  }, []);
+
   return (
     <BrowserRouter>
-      <ConfigProvider theme={theme}>
+      <ThemeModeContext.Provider value={{ mode, toggle }}>
+      <ConfigProvider theme={mode === "light" ? lightTheme : darkTheme}>
         <AntdApp>
           <Refine
             routerProvider={routerProvider}
@@ -131,17 +198,14 @@ export default function App() {
                 element={
                   <Authenticated key="auth" redirectOnFail="/login">
                     <ThemedLayoutV2
-                      Title={() => (
-                        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                          <ShopOutlined style={{ fontSize: 24, color: "#fff" }} />
-                          <span style={{ fontSize: 20, fontWeight: "bold", color: "#fff" }}>Martly</span>
-                        </div>
-                      )}
-                      Header={() => (
-                        <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", padding: "0 24px", height: 48, background: "#001529" }}>
-                          <OrgSwitcher />
-                        </div>
-                      )}
+                      Title={({ collapsed }: { collapsed: boolean }) =>
+                        collapsed ? (
+                          <img src="/martly-icon.png" alt="Martly" style={{ height: 28, objectFit: "contain" }} />
+                        ) : (
+                          <img src="/martly-logo-full.png" alt="Martly" style={{ maxWidth: 160, height: "auto", objectFit: "contain" }} />
+                        )
+                      }
+                      Header={HeaderBar}
                     >
                       <Outlet />
                     </ThemedLayoutV2>
@@ -199,6 +263,7 @@ export default function App() {
           </Refine>
         </AntdApp>
       </ConfigProvider>
+      </ThemeModeContext.Provider>
     </BrowserRouter>
   );
 }

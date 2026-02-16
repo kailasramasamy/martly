@@ -20,12 +20,16 @@ export const OrgSwitcher = () => {
 
   if (!identity) return null;
 
+  const iconStyle = { color: "rgba(255,255,255,0.85)" };
+  const textStyle = { color: "rgba(255,255,255,0.85)" };
+  const dimStyle = { color: "rgba(255,255,255,0.45)" };
+
   // SUPER_ADMIN: show "All Organizations" label
   if (identity.role === "SUPER_ADMIN") {
     return (
       <Space>
-        <BankOutlined />
-        <Text style={{ color: "rgba(255,255,255,0.85)" }}>All Organizations</Text>
+        <BankOutlined style={iconStyle} />
+        <Text style={textStyle}>All Organizations</Text>
       </Space>
     );
   }
@@ -48,11 +52,11 @@ export const OrgSwitcher = () => {
         : "No store";
     return (
       <Space>
-        <BankOutlined />
-        <Text style={{ color: "rgba(255,255,255,0.85)" }}>{currentOrg.name}</Text>
-        <Text style={{ color: "rgba(255,255,255,0.45)" }}>/</Text>
-        <ShopOutlined style={{ color: "rgba(255,255,255,0.65)" }} />
-        <Text style={{ color: "rgba(255,255,255,0.85)" }}>{storeLabel}</Text>
+        <BankOutlined style={iconStyle} />
+        <Text style={textStyle}>{currentOrg.name}</Text>
+        <Text style={dimStyle}>/</Text>
+        <ShopOutlined style={iconStyle} />
+        <Text style={textStyle}>{storeLabel}</Text>
       </Space>
     );
   }
@@ -61,8 +65,8 @@ export const OrgSwitcher = () => {
   if (orgs.length === 1) {
     return (
       <Space>
-        <BankOutlined />
-        <Text style={{ color: "rgba(255,255,255,0.85)" }}>{orgs[0].name}</Text>
+        <BankOutlined style={iconStyle} />
+        <Text style={textStyle}>{orgs[0].name}</Text>
       </Space>
     );
   }

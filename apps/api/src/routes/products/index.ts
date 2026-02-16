@@ -73,11 +73,11 @@ export async function productRoutes(app: FastifyInstance) {
   app.get("/", { preHandler: [authenticate] }, async (request) => {
     const {
       page = 1, pageSize = 20, q, categoryId, brandId, foodType, productType,
-      catalogType, scope, hasStoreProducts, includeStoreProducts,
+      catalogType, scope, hasStoreProducts, includeStoreProducts, organizationId: filterOrgId,
     } = request.query as {
       page?: number; pageSize?: number; q?: string; categoryId?: string;
       brandId?: string; foodType?: string; productType?: string; catalogType?: string;
-      scope?: string; hasStoreProducts?: string; includeStoreProducts?: string;
+      scope?: string; hasStoreProducts?: string; includeStoreProducts?: string; organizationId?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -165,9 +165,10 @@ export async function productRoutes(app: FastifyInstance) {
     if (brandId) where.brandId = brandId;
     if (foodType) where.foodType = foodType;
     if (productType) where.productType = productType;
+    if (filterOrgId) where.organizationId = filterOrgId;
 
     // Build include — optionally include store-products
-    const include: Prisma.ProductInclude = { category: true, brand: true, variants: true };
+    const include: Prisma.ProductInclude = { category: true, brand: true, variants: true, organization: { select: { id: true, name: true } } };
     if (includeStoreProducts === "true") {
       include.storeProducts = {
         ...(orgStoreIds ? { where: { storeId: { in: orgStoreIds } } } : {}),
