@@ -20,6 +20,14 @@ export const OrderList = () => {
           }}
         />
         <Table.Column
+          dataIndex="paymentMethod"
+          title="Pay Method"
+          render={(value: string) => {
+            if (value === "COD") return <Tag color="orange">COD</Tag>;
+            return <Tag color="blue">Online</Tag>;
+          }}
+        />
+        <Table.Column
           dataIndex="paymentStatus"
           title="Payment"
           render={(value: string) => {

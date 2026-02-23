@@ -2,16 +2,17 @@ import type { FastifyInstance } from "fastify";
 import { Prisma } from "../../../generated/prisma/index.js";
 import { createProductSchema, updateProductSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
-import { authenticate } from "../../middleware/auth.js";
+import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser, getOrgStoreIds } from "../../middleware/org-scope.js";
+import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
 
   // Shared helper: build visibility + catalogType where clause
   function buildVisibilityFilter(user: { role: string; organizationId?: string | null }, catalogType?: string) {
     const where: Record<string, unknown> = {};
     if (user.role === "SUPER_ADMIN") {
       // SUPER_ADMIN sees all products
-    } else if (user.role === "CUSTOMER") {
+    } else if (user.role === "CUSTOMER" || user.role === "GUEST") {
       where.organizationId = null;
     } else {
       where.OR = [{ organizationId: null }, { organizationId: user.organizationId }];
@@ -30,10 +31,24 @@ import { getOrgUser, getOrgStoreIds } from "../../middleware/org-scope.js";
     return where;
   }
 
+  // Format unitType on variants (and nested store-product variants) for API responses
+  function formatProductUnits<T extends Record<string, unknown>>(product: T): T {
+    const result = { ...product };
+    if (Array.isArray(result.variants)) {
+      result.variants = formatVariantUnits(result.variants as { unitType: string }[]);
+    }
+    if (Array.isArray(result.storeProducts)) {
+      result.storeProducts = (result.storeProducts as { variant?: { unitType: string } }[]).map((sp) =>
+        sp.variant ? { ...sp, variant: formatVariantUnit(sp.variant) } : sp,
+      );
+    }
+    return result;
+  }
+
 export async function productRoutes(app: FastifyInstance) {
 
-  // Product facets — counts by category and productType
-  app.get("/facets", { preHandler: [authenticate] }, async (request) => {
+  // Product facets — counts by category and productType (guests allowed)
+  app.get("/facets", { preHandler: [authenticateOptional] }, async (request) => {
     const { catalogType } = request.query as { catalogType?: string };
     const user = getOrgUser(request);
     const where = buildVisibilityFilter(user, catalogType);
@@ -69,8 +84,8 @@ export async function productRoutes(app: FastifyInstance) {
     };
   });
 
-  // List products (auth required, org-scoped visibility)
-  app.get("/", { preHandler: [authenticate] }, async (request) => {
+  // List products (guests see master catalog only)
+  app.get("/", { preHandler: [authenticateOptional] }, async (request) => {
     const {
       page = 1, pageSize = 20, q, categoryId, brandId, foodType, productType,
       catalogType, scope, hasStoreProducts, includeStoreProducts, organizationId: filterOrgId,
@@ -189,14 +204,14 @@ export async function productRoutes(app: FastifyInstance) {
 
     const response: PaginatedResponse<(typeof products)[0]> = {
       success: true,
-      data: products,
+      data: products.map(formatProductUnits),
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
     return response;
   });
 
-  // Get product by ID (auth required, visibility check)
-  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate] }, async (request, reply) => {
+  // Get product by ID (guests can read master products)
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const product = await app.prisma.product.findUnique({
       where: { id: request.params.id },
       include: { category: true, brand: true, variants: true },
@@ -207,13 +222,13 @@ export async function productRoutes(app: FastifyInstance) {
 
     // Master products: anyone can read
     if (product.organizationId === null) {
-      const response: ApiResponse<typeof product> = { success: true, data: product };
+      const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
       return response;
     }
 
     // Org products: only that org's users + SUPER_ADMIN
     if (user.role === "SUPER_ADMIN" || user.organizationId === product.organizationId) {
-      const response: ApiResponse<typeof product> = { success: true, data: product };
+      const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
       return response;
     }
 
@@ -282,7 +297,7 @@ export async function productRoutes(app: FastifyInstance) {
         }
       }
 
-      const response: ApiResponse<typeof product> = { success: true, data: product };
+      const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
       return response;
     },
   );
@@ -347,11 +362,11 @@ export async function productRoutes(app: FastifyInstance) {
           where: { id: request.params.id },
           include: { category: true, brand: true, variants: true },
         });
-        const response: ApiResponse<typeof updated> = { success: true, data: updated! };
+        const response: ApiResponse<typeof updated> = { success: true, data: formatProductUnits(updated!) };
         return response;
       }
 
-      const response: ApiResponse<typeof product> = { success: true, data: product };
+      const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
       return response;
     },
   );

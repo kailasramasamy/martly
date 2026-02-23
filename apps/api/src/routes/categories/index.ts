@@ -3,6 +3,7 @@ import { createCategorySchema, updateCategorySchema, reorderCategoriesSchema } f
 import type { ApiResponse, PaginatedResponse, CategoryTreeNode } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
+import { formatVariantUnits } from "../../services/units.js";
 
 function buildTree(categories: Array<{ id: string; name: string; slug: string; parentId: string | null; sortOrder: number; imageUrl: string | null }>): CategoryTreeNode[] {
   const map = new Map<string, CategoryTreeNode>();
@@ -119,7 +120,7 @@ export async function categoryRoutes(app: FastifyInstance) {
 
     const response: PaginatedResponse<(typeof products)[0]> = {
       success: true,
-      data: products,
+      data: products.map((p) => ({ ...p, variants: formatVariantUnits(p.variants) })),
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
     return response;

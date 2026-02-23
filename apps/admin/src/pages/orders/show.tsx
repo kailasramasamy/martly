@@ -53,9 +53,19 @@ export const OrderShow = () => {
         <Col xs={24} lg={12}>
           <Card title={sectionTitle(<CreditCardOutlined />, "Payment & Delivery")} size="small">
             <Descriptions column={1} size="small" bordered>
+              <Descriptions.Item label="Payment Method">
+                <Tag color={record.paymentMethod === "COD" ? "orange" : "blue"}>
+                  {record.paymentMethod === "COD" ? "Cash on Delivery" : "Online"}
+                </Tag>
+              </Descriptions.Item>
               <Descriptions.Item label="Payment Status">
                 <Tag color={paymentConfig.color}>{paymentConfig.label}</Tag>
               </Descriptions.Item>
+              {record.razorpayPaymentId && (
+                <Descriptions.Item label="Razorpay Payment ID">
+                  {record.razorpayPaymentId}
+                </Descriptions.Item>
+              )}
               <Descriptions.Item label="Delivery Address">
                 {record.deliveryAddress ?? "—"}
               </Descriptions.Item>

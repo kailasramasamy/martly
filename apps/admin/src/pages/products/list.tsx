@@ -40,6 +40,7 @@ interface StoreProductEntry {
   stock: number;
   reservedStock: number;
   isActive: boolean;
+  isFeatured: boolean;
   discountType?: string;
   discountValue?: number;
 }
@@ -319,6 +320,33 @@ const ProductsTableTab = ({
                 tableQuery?.refetch();
               } catch {
                 message.error("Failed to update listing");
+              }
+            }}
+          />
+        );
+      },
+    },
+    {
+      title: "Featured", key: "isFeatured", width: 100,
+      render: (_: unknown, sp: StoreProductEntry) => {
+        const canToggle = role === "STORE_MANAGER" || role === "ORG_ADMIN" || role === "SUPER_ADMIN";
+        if (!canToggle) {
+          return sp.isFeatured ? <Tag color="gold">★ Featured</Tag> : <Text type="secondary">—</Text>;
+        }
+        return (
+          <Switch
+            size="small"
+            checked={sp.isFeatured}
+            checkedChildren="★ Yes"
+            unCheckedChildren="No"
+            onChange={async (checked) => {
+              try {
+                await axiosInstance.put(`/store-products/${sp.id}`, { isFeatured: checked });
+                sp.isFeatured = checked;
+                message.success(checked ? "Marked as featured" : "Removed from featured");
+                tableQuery?.refetch();
+              } catch {
+                message.error("Failed to update featured status");
               }
             }}
           />

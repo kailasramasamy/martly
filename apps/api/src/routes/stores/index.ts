@@ -1,14 +1,15 @@
 import type { FastifyInstance } from "fastify";
 import { createStoreSchema, updateStoreSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
-import { authenticate } from "../../middleware/auth.js";
+import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
+import { formatVariantUnit } from "../../services/units.js";
 
 export async function storeRoutes(app: FastifyInstance) {
-  // List stores (scoped to user's org; STORE_MANAGER/STAFF see only assigned stores)
-  app.get("/", { preHandler: [authenticate, requireOrgContext] }, async (request) => {
+  // List stores (scoped to user's org; guests see all active stores)
+  app.get("/", { preHandler: [authenticateOptional] }, async (request) => {
     const { page = 1, pageSize = 20, q, organizationId } = request.query as { page?: number; pageSize?: number; q?: string; organizationId?: string };
     const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -38,8 +39,8 @@ export async function storeRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Get store by ID (verify org access)
-  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticate, requireOrgContext] }, async (request, reply) => {
+  // Get store by ID (guests allowed)
+  app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
     if (!store) return reply.notFound("Store not found");
 
@@ -140,14 +141,20 @@ export async function storeRoutes(app: FastifyInstance) {
         include: { product: true, variant: true },
       });
 
-      const response: ApiResponse<typeof storeProduct> = { success: true, data: storeProduct };
+      const response: ApiResponse<typeof storeProduct> = {
+        success: true,
+        data: { ...storeProduct, variant: formatVariantUnit(storeProduct.variant) },
+      };
       return response;
     },
   );
 
-  // Get store products (verify org access)
-  app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticate, requireOrgContext] }, async (request, reply) => {
-    const { page = 1, pageSize = 200 } = request.query as { page?: number; pageSize?: number };
+  // Get store products (guests allowed)
+  app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticateOptional] }, async (request, reply) => {
+    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, foodType } = request.query as {
+      page?: number; pageSize?: number; isFeatured?: string; hasDiscount?: string;
+      sortBy?: string; q?: string; categoryId?: string; foodType?: string;
+    };
     const skip = (Number(page) - 1) * Number(pageSize);
 
     const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
@@ -157,7 +164,35 @@ export async function storeRoutes(app: FastifyInstance) {
       return reply.forbidden("Access denied");
     }
 
-    const where = { storeId: request.params.id, isActive: true };
+    const where: Record<string, unknown> = { storeId: request.params.id, isActive: true };
+    if (isFeatured === "true") {
+      where.isFeatured = true;
+    }
+    if (hasDiscount === "true") {
+      const now = new Date();
+      where.discountType = { not: null };
+      where.discountValue = { gt: 0 };
+      where.OR = [
+        { discountStart: null, discountEnd: null },
+        { discountStart: { lte: now }, discountEnd: null },
+        { discountStart: null, discountEnd: { gte: now } },
+        { discountStart: { lte: now }, discountEnd: { gte: now } },
+      ];
+    }
+    if (q) {
+      where.product = { name: { contains: q, mode: "insensitive" } };
+    }
+    if (categoryId) {
+      where.product = { ...(where.product as Record<string, unknown> ?? {}), categoryId };
+    }
+    if (foodType) {
+      where.product = { ...(where.product as Record<string, unknown> ?? {}), foodType };
+    }
+
+    let orderBy: Record<string, string> = { createdAt: "desc" };
+    if (sortBy === "price_asc") orderBy = { price: "asc" };
+    else if (sortBy === "price_desc") orderBy = { price: "desc" };
+    else if (sortBy === "newest") orderBy = { createdAt: "desc" };
 
     const [storeProducts, total] = await Promise.all([
       app.prisma.storeProduct.findMany({
@@ -168,7 +203,7 @@ export async function storeRoutes(app: FastifyInstance) {
           product: { include: { category: true, variants: true } },
           variant: true,
         },
-        orderBy: { createdAt: "desc" },
+        orderBy,
       }),
       app.prisma.storeProduct.count({ where }),
     ]);
@@ -179,7 +214,8 @@ export async function storeRoutes(app: FastifyInstance) {
         sp.variant as Parameters<typeof calculateEffectivePrice>[1],
         sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
       );
-      return { ...sp, pricing, availableStock: sp.stock - sp.reservedStock };
+      const variant = formatVariantUnit(sp.variant);
+      return { ...sp, variant, pricing, availableStock: sp.stock - sp.reservedStock };
     });
 
     const response: PaginatedResponse<(typeof data)[0]> = {

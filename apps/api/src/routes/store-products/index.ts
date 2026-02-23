@@ -5,14 +5,15 @@ import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { requireOrgContext, getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
+import { formatVariantUnit } from "../../services/units.js";
 
-function withPricing(sp: { stock: number; reservedStock: number; price: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; variant: { discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
+function withPricing(sp: { stock: number; reservedStock: number; price: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; variant: { unitType: string; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
   const pricing = calculateEffectivePrice(
     sp.price as number,
     sp.variant as Parameters<typeof calculateEffectivePrice>[1],
     sp as Parameters<typeof calculateEffectivePrice>[2],
   );
-  return { ...sp, pricing, availableStock: sp.stock - sp.reservedStock };
+  return { ...sp, variant: formatVariantUnit(sp.variant), pricing, availableStock: sp.stock - sp.reservedStock };
 }
 
 export async function storeProductRoutes(app: FastifyInstance) {
@@ -45,6 +46,10 @@ export async function storeProductRoutes(app: FastifyInstance) {
 
       if (storeId) where.storeId = storeId;
       if (productId) where.productId = productId;
+
+      const { isFeatured } = request.query as { isFeatured?: string };
+      if (isFeatured === "true") where.isFeatured = true;
+      else if (isFeatured === "false") where.isFeatured = false;
       if (catalogType === "master") {
         where.product = { ...(where.product as Record<string, unknown> ?? {}), organizationId: null };
       } else if (catalogType === "org") {

@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import bcrypt from "bcryptjs";
-import { loginSchema, registerSchema, selectOrgSchema } from "@martly/shared/schemas";
+import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema } from "@martly/shared/schemas";
 import type { ApiResponse, AuthTokens, LoginResponse, OrgSummary } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 
@@ -179,6 +179,21 @@ export async function authRoutes(app: FastifyInstance) {
     } catch {
       return reply.unauthorized("Invalid or expired refresh token");
     }
+  });
+
+  // Update profile (name, phone)
+  app.put("/profile", { preHandler: [authenticate] }, async (request, reply) => {
+    const { sub } = request.user as { sub: string };
+    const body = updateProfileSchema.parse(request.body);
+
+    const user = await app.prisma.user.update({
+      where: { id: sub },
+      data: body,
+    });
+
+    const { passwordHash: _hash, ...safeUser } = user;
+    const response: ApiResponse<typeof safeUser> = { success: true, data: safeUser };
+    return response;
   });
 
   app.get("/me", { preHandler: [authenticate] }, async (request, reply) => {

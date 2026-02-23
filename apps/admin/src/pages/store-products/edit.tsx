@@ -35,6 +35,7 @@ export const StoreProductEdit = () => {
         price: values.price != null ? Number(values.price) : undefined,
         stock: values.stock != null ? Number(values.stock) : undefined,
         isActive: values.isActive,
+        isFeatured: values.isFeatured,
         discountType: values.discountType || null,
         discountValue: values.discountValue != null ? Number(values.discountValue) : null,
         discountStart: values.discountStart ? (values.discountStart as dayjs.Dayjs).toISOString() : null,
@@ -95,8 +96,13 @@ export const StoreProductEdit = () => {
                     <InputNumber min={0} step={1} style={{ width: "100%" }} />
                   </Form.Item>
                 </Col>
-                <Col xs={24}>
+                <Col xs={12}>
                   <Form.Item label="Active" name="isActive" valuePropName="checked">
+                    <Switch />
+                  </Form.Item>
+                </Col>
+                <Col xs={12}>
+                  <Form.Item label="Featured" name="isFeatured" valuePropName="checked">
                     <Switch />
                   </Form.Item>
                 </Col>

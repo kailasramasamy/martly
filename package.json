@@ -10,7 +10,8 @@
     "db:migrate": "pnpm --filter @martly/api exec prisma migrate dev",
     "db:studio": "pnpm --filter @martly/api exec prisma studio",
     "db:seed": "pnpm --filter @martly/api exec prisma db seed",
-    "db:seed-catalog": "pnpm --filter @martly/api run seed:catalog"
+    "db:seed-catalog": "pnpm --filter @martly/api run seed:catalog",
+    "db:seed-master-catalog": "pnpm --filter @martly/api run seed:master-catalog"
   },
   "devDependencies": {
     "turbo": "^2",

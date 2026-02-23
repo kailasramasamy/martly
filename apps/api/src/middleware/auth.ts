@@ -7,3 +7,12 @@ export async function authenticate(request: FastifyRequest, reply: FastifyReply)
     reply.unauthorized("Invalid or expired token");
   }
 }
+
+/** Try JWT verification but allow unauthenticated (guest) access */
+export async function authenticateOptional(request: FastifyRequest) {
+  try {
+    await request.jwtVerify();
+  } catch {
+    // guest — request.user remains undefined
+  }
+}

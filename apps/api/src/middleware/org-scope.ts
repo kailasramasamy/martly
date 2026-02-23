@@ -8,8 +8,9 @@ interface OrgUser {
   organizationId?: string;
 }
 
-/** Extract typed user payload from JWT */
+/** Extract typed user payload from JWT, or a GUEST stub when unauthenticated */
 export function getOrgUser(request: FastifyRequest): OrgUser {
+  if (!request.user) return { sub: "", email: "", role: "GUEST" };
   return request.user as OrgUser;
 }
 
@@ -22,21 +23,21 @@ export async function requireOrgContext(request: FastifyRequest, reply: FastifyR
   }
 }
 
-/** Returns a Prisma `where` filter for stores: `{ organizationId }` or `{}` for SUPER_ADMIN */
+/** Returns a Prisma `where` filter for stores: `{ organizationId }` or `{}` for SUPER_ADMIN/GUEST */
 export function orgScopedStoreFilter(request: FastifyRequest): { organizationId?: string } {
   const user = getOrgUser(request);
-  if (user.role === "SUPER_ADMIN") return {};
+  if (user.role === "SUPER_ADMIN" || user.role === "GUEST") return {};
   return user.organizationId ? { organizationId: user.organizationId } : {};
 }
 
-/** Returns store IDs belonging to user's org, or `undefined` for SUPER_ADMIN (meaning "all").
+/** Returns store IDs belonging to user's org, or `undefined` for SUPER_ADMIN/GUEST (meaning "all").
  *  For STORE_MANAGER/STAFF: returns only stores assigned via UserStore. */
 export async function getOrgStoreIds(
   request: FastifyRequest,
   prisma: PrismaClient,
 ): Promise<string[] | undefined> {
   const user = getOrgUser(request);
-  if (user.role === "SUPER_ADMIN") return undefined;
+  if (user.role === "SUPER_ADMIN" || user.role === "GUEST") return undefined;
   if (!user.organizationId) return [];
 
   // STORE_MANAGER / STAFF: scoped to assigned stores only
@@ -56,7 +57,7 @@ export async function getOrgStoreIds(
   return stores.map((s: { id: string }) => s.id);
 }
 
-/** Returns true if the given storeId belongs to the user's org (always true for SUPER_ADMIN).
+/** Returns true if the given storeId belongs to the user's org (always true for SUPER_ADMIN/GUEST).
  *  For STORE_MANAGER/STAFF: checks UserStore assignment instead of org-wide access. */
 export async function verifyStoreOrgAccess(
   request: FastifyRequest,
@@ -64,7 +65,7 @@ export async function verifyStoreOrgAccess(
   storeId: string,
 ): Promise<boolean> {
   const user = getOrgUser(request);
-  if (user.role === "SUPER_ADMIN") return true;
+  if (user.role === "SUPER_ADMIN" || user.role === "GUEST") return true;
   if (!user.organizationId) return false;
 
   // STORE_MANAGER / STAFF: must be assigned to this specific store

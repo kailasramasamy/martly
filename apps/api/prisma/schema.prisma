@@ -89,6 +89,11 @@ enum DiscountType {
   PERCENTAGE
 }
 
+enum PaymentMethod {
+  ONLINE
+  COD
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -136,8 +141,24 @@ model User {
   userStores    UserStore[]
   orders        Order[]
   deviceTokens  DeviceToken[]
+  addresses     UserAddress[]
 
   @@map("users")
+}
+
+model UserAddress {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  label     String   @default("Home")
+  address   String
+  isDefault Boolean  @default(false) @map("is_default")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("user_addresses")
 }
 
 model UserStore {
@@ -264,6 +285,7 @@ model StoreProduct {
   stock         Int     @default(0)
   reservedStock Int     @default(0) @map("reserved_stock")
   isActive      Boolean @default(true) @map("is_active")
+  isFeatured    Boolean @default(false) @map("is_featured")
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
@@ -282,15 +304,18 @@ model StoreProduct {
 }
 
 model Order {
-  id              String        @id @default(uuid())
-  userId          String        @map("user_id")
-  storeId         String        @map("store_id")
-  status          OrderStatus   @default(PENDING)
-  paymentStatus   PaymentStatus @default(PENDING) @map("payment_status")
-  totalAmount     Decimal       @db.Decimal(10, 2) @map("total_amount")
-  deliveryAddress String        @map("delivery_address")
-  createdAt       DateTime      @default(now()) @map("created_at")
-  updatedAt       DateTime      @updatedAt @map("updated_at")
+  id                String        @id @default(uuid())
+  userId            String        @map("user_id")
+  storeId           String        @map("store_id")
+  status            OrderStatus   @default(PENDING)
+  paymentStatus     PaymentStatus @default(PENDING) @map("payment_status")
+  paymentMethod     PaymentMethod @default(ONLINE) @map("payment_method")
+  totalAmount       Decimal       @db.Decimal(10, 2) @map("total_amount")
+  deliveryAddress   String        @map("delivery_address")
+  razorpayOrderId   String?       @map("razorpay_order_id")
+  razorpayPaymentId String?       @map("razorpay_payment_id")
+  createdAt         DateTime      @default(now()) @map("created_at")
+  updatedAt         DateTime      @updatedAt @map("updated_at")
 
   user  User        @relation(fields: [userId], references: [id])
   store Store       @relation(fields: [storeId], references: [id])

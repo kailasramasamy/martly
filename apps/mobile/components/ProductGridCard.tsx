@@ -1,0 +1,283 @@
+import { View, Text, TouchableOpacity, Image, StyleSheet, Dimensions } from "react-native";
+import { router } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { colors, spacing } from "../constants/theme";
+import type { StoreProduct } from "../lib/types";
+
+const SCREEN_WIDTH = Dimensions.get("window").width;
+export const GRID_GAP = 12;
+export const GRID_H_PADDING = spacing.md;
+export const GRID_CARD_WIDTH = (SCREEN_WIDTH - GRID_H_PADDING * 2 - GRID_GAP) / 2;
+export const GRID_IMAGE_HEIGHT = Math.round(GRID_CARD_WIDTH * 0.65);
+
+interface ProductGridCardProps {
+  item: StoreProduct;
+  onAddToCart: (sp: StoreProduct) => void;
+  onUpdateQuantity: (storeProductId: string, quantity: number) => void;
+  quantity?: number;
+  storeId?: string;
+  variantCount?: number;
+  onShowVariants?: () => void;
+}
+
+export function ProductGridCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants }: ProductGridCardProps) {
+  const hasDiscount = item.pricing?.discountActive;
+  const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
+  const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
+  const discountLabel = hasDiscount
+    ? item.pricing!.discountType === "PERCENTAGE"
+      ? `${item.pricing!.discountValue}% OFF`
+      : `₹${item.pricing!.discountValue} OFF`
+    : null;
+  const productImage = item.product.imageUrl || item.variant.imageUrl;
+  const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
+  const isOutOfStock = available <= 0;
+  const isLowStock = !isOutOfStock && available <= 5;
+
+  return (
+    <TouchableOpacity
+      style={styles.card}
+      onPress={() => {
+        const params: Record<string, string> = { id: item.product.id };
+        if (storeId) params.storeId = storeId;
+        router.push({ pathname: "/product/[id]", params });
+      }}
+      activeOpacity={0.7}
+    >
+      {/* Image */}
+      <View style={styles.imageContainer}>
+        {productImage ? (
+          <Image source={{ uri: productImage }} style={styles.image} resizeMode="contain" />
+        ) : (
+          <View style={[styles.image, styles.noImage]}>
+            <Text style={styles.noImageLetter}>{item.product.name.charAt(0)}</Text>
+          </View>
+        )}
+
+        {item.product.foodType && (
+          <View style={[
+            styles.foodIndicator,
+            (item.product.foodType === "VEG" || item.product.foodType === "VEGAN")
+              ? styles.vegBorder : styles.nvBorder,
+          ]}>
+            <View style={[
+              styles.foodDot,
+              (item.product.foodType === "VEG" || item.product.foodType === "VEGAN")
+                ? styles.vegFill : styles.nvFill,
+            ]} />
+          </View>
+        )}
+
+        {discountLabel && (
+          <View style={styles.discountTag}>
+            <Text style={styles.discountText}>{discountLabel}</Text>
+          </View>
+        )}
+
+        {isOutOfStock && (
+          <View style={styles.oosOverlay}>
+            <Text style={styles.oosLabel}>Out of stock</Text>
+          </View>
+        )}
+      </View>
+
+      {/* Content */}
+      <View style={styles.content}>
+        <Text style={styles.name} numberOfLines={2}>{item.product.name}</Text>
+        <Text style={styles.variant} numberOfLines={1}>{item.variant.name}</Text>
+        {isLowStock && <Text style={styles.lowStock}>Only {available} left</Text>}
+
+        <View style={styles.footer}>
+          <View>
+            <Text style={styles.price}>₹{displayPrice.toFixed(0)}</Text>
+            {originalPrice != null && (
+              <Text style={styles.mrp}>₹{originalPrice.toFixed(0)}</Text>
+            )}
+          </View>
+          {quantity > 0 ? (
+            <View style={styles.qtyStepper}>
+              <TouchableOpacity
+                style={styles.qtyBtn}
+                onPress={() => onUpdateQuantity(item.id, quantity - 1)}
+                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+              >
+                <Ionicons name={quantity === 1 ? "trash-outline" : "remove"} size={14} color={colors.primary} />
+              </TouchableOpacity>
+              <Text style={styles.qtyText}>{quantity}</Text>
+              <TouchableOpacity
+                style={styles.qtyBtn}
+                onPress={() => onAddToCart(item)}
+                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+              >
+                <Ionicons name="add" size={14} color={colors.primary} />
+              </TouchableOpacity>
+            </View>
+          ) : variantCount > 1 ? (
+            <TouchableOpacity
+              style={styles.stackedBtn}
+              onPress={onShowVariants}
+              activeOpacity={0.7}
+            >
+              <View style={styles.optionsBtn}>
+                <Text style={styles.optionsBtnText}>{variantCount} options</Text>
+              </View>
+              <View style={styles.stackedAddBtn}>
+                <Text style={styles.stackedAddBtnText}>ADD</Text>
+              </View>
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity
+              style={[styles.addBtn, isOutOfStock && styles.addBtnDisabled]}
+              onPress={() => onAddToCart(item)}
+              disabled={isOutOfStock}
+            >
+              <Text style={[styles.addBtnText, isOutOfStock && styles.addBtnTextDisabled]}>
+                {isOutOfStock ? "N/A" : "ADD"}
+              </Text>
+            </TouchableOpacity>
+          )}
+        </View>
+      </View>
+    </TouchableOpacity>
+  );
+}
+
+const styles = StyleSheet.create({
+  card: {
+    width: GRID_CARD_WIDTH,
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    marginBottom: GRID_GAP,
+    overflow: "hidden",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.06,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  imageContainer: {
+    width: "100%",
+    aspectRatio: 1,
+    backgroundColor: "#f1f5f9",
+    position: "relative",
+  },
+  image: { width: "100%", height: "100%" },
+  noImage: {
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#e2e8f0",
+  },
+  noImageLetter: {
+    fontSize: 36,
+    fontWeight: "700",
+    color: "#94a3b8",
+  },
+  foodIndicator: {
+    position: "absolute",
+    top: 8,
+    left: 8,
+    width: 16,
+    height: 16,
+    borderWidth: 1.5,
+    borderRadius: 3,
+    backgroundColor: "#fff",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  vegBorder: { borderColor: "#0a8f08" },
+  nvBorder: { borderColor: "#b71c1c" },
+  foodDot: { width: 8, height: 8, borderRadius: 4 },
+  vegFill: { backgroundColor: "#0a8f08" },
+  nvFill: { backgroundColor: "#b71c1c" },
+  discountTag: {
+    position: "absolute",
+    top: 8,
+    right: 0,
+    backgroundColor: "#dc2626",
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderTopLeftRadius: 4,
+    borderBottomLeftRadius: 4,
+  },
+  discountText: { fontSize: 9, color: "#fff", fontWeight: "700" },
+  oosOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(255,255,255,0.75)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  oosLabel: { fontSize: 12, fontWeight: "700", color: colors.error },
+  content: { padding: 10 },
+  name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17 },
+  variant: { fontSize: 11, color: colors.textSecondary, marginTop: 2 },
+  lowStock: { fontSize: 10, color: colors.warning, fontWeight: "600", marginTop: 2 },
+  footer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 8,
+  },
+  price: { fontSize: 15, fontWeight: "700", color: colors.text },
+  mrp: { fontSize: 11, color: colors.textSecondary, textDecorationLine: "line-through" },
+  addBtn: {
+    borderWidth: 1.5,
+    borderColor: colors.primary,
+    borderRadius: 6,
+    paddingHorizontal: 14,
+    paddingVertical: 4,
+    backgroundColor: "#fff",
+  },
+  addBtnDisabled: { borderColor: colors.border, backgroundColor: colors.surface },
+  addBtnText: { fontSize: 12, fontWeight: "700", color: colors.primary },
+  addBtnTextDisabled: { color: colors.textSecondary },
+  stackedBtn: {
+    borderRadius: 6,
+    overflow: "hidden",
+    borderWidth: 1.5,
+    borderColor: colors.primary,
+  },
+  optionsBtn: {
+    backgroundColor: colors.primary,
+    paddingVertical: 3,
+    paddingHorizontal: 8,
+    alignItems: "center",
+  },
+  optionsBtnText: {
+    fontSize: 10,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  stackedAddBtn: {
+    backgroundColor: "#fff",
+    paddingVertical: 3,
+    paddingHorizontal: 8,
+    alignItems: "center",
+  },
+  stackedAddBtnText: {
+    fontSize: 12,
+    fontWeight: "700",
+    color: colors.primary,
+  },
+  qtyStepper: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderWidth: 1.5,
+    borderColor: colors.primary,
+    borderRadius: 6,
+    backgroundColor: colors.primary + "08",
+    overflow: "hidden",
+  },
+  qtyBtn: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  qtyText: {
+    fontSize: 13,
+    fontWeight: "700",
+    color: colors.primary,
+    minWidth: 18,
+    textAlign: "center",
+  },
+});

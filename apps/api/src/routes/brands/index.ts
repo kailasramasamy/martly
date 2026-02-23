@@ -26,6 +26,7 @@ export async function brandRoutes(app: FastifyInstance) {
         skip,
         take: Number(pageSize),
         orderBy: { name: "asc" },
+        include: { _count: { select: { products: true } } },
       }),
       app.prisma.brand.count({ where }),
     ]);

@@ -26,6 +26,7 @@ interface StoreProductRecord {
   reservedStock: number;
   availableStock: number;
   isActive: boolean;
+  isFeatured: boolean;
   pricing?: Pricing;
 }
 
@@ -178,6 +179,13 @@ export const StoreProductList = () => {
               </Tooltip>
             );
           }}
+        />
+
+        <Table.Column
+          title="Featured"
+          width={80}
+          dataIndex="isFeatured"
+          render={(value) => value ? <Tag color="gold">★ Featured</Tag> : <Text type="secondary">—</Text>}
         />
 
         <Table.Column

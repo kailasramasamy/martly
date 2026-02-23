@@ -5,12 +5,12 @@ import {
   FlatList,
   TouchableOpacity,
   StyleSheet,
-  ActivityIndicator,
   RefreshControl,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { api } from "../../lib/api";
 import { colors, spacing, fontSize } from "../../constants/theme";
+import { OrderCardSkeleton } from "../../components/SkeletonLoader";
 
 interface OrderItem {
   id: string;
@@ -66,8 +66,10 @@ export default function OrdersScreen() {
 
   if (loading) {
     return (
-      <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
+      <View style={styles.skeletonContainer}>
+        {[1, 2, 3, 4].map((i) => (
+          <OrderCardSkeleton key={i} />
+        ))}
       </View>
     );
   }
@@ -114,6 +116,7 @@ export default function OrdersScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
   center: { flex: 1, justifyContent: "center", alignItems: "center" },
+  skeletonContainer: { padding: spacing.md },
   list: { padding: spacing.md },
   emptyText: { fontSize: fontSize.lg, color: colors.textSecondary },
   card: {

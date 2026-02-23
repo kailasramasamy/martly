@@ -137,6 +137,21 @@ export const ProductShow = () => {
               </Descriptions.Item>
             </Descriptions>
           </Card>
+
+          <Card title={sectionTitle(<TagsOutlined />, "Tags & Labels")} size="small" style={{ marginBottom: 16 }}>
+            <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
+              <Descriptions.Item label="Tags">
+                {record.tags?.length > 0
+                  ? record.tags.map((t: string) => <Tag key={t}>{t}</Tag>)
+                  : "—"}
+              </Descriptions.Item>
+              <Descriptions.Item label="Allergens">
+                {record.allergens?.length > 0
+                  ? record.allergens.map((a: string) => <Tag key={a} color="warning">{a}</Tag>)
+                  : "—"}
+              </Descriptions.Item>
+            </Descriptions>
+          </Card>
         </Col>
 
         {/* Right column: images */}
@@ -157,40 +172,6 @@ export const ProductShow = () => {
               )}
             </Card>
 
-            <Card title={sectionTitle(<TagsOutlined />, "Tags & Labels")} size="small">
-              <Descriptions column={1} size="small" bordered>
-                <Descriptions.Item label="Tags">
-                  {record.tags?.length > 0
-                    ? record.tags.map((t: string) => <Tag key={t}>{t}</Tag>)
-                    : "—"}
-                </Descriptions.Item>
-                <Descriptions.Item label="Allergens">
-                  {record.allergens?.length > 0
-                    ? record.allergens.map((a: string) => <Tag key={a} color="warning">{a}</Tag>)
-                    : "—"}
-                </Descriptions.Item>
-              </Descriptions>
-            </Card>
-          </Col>
-        )}
-
-        {/* If no images, show tags inline instead */}
-        {!record.imageUrl && !(record.images?.length > 0) && (
-          <Col xs={24}>
-            <Card title={sectionTitle(<TagsOutlined />, "Tags & Labels")} size="small" style={{ marginBottom: 16 }}>
-              <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
-                <Descriptions.Item label="Tags">
-                  {record.tags?.length > 0
-                    ? record.tags.map((t: string) => <Tag key={t}>{t}</Tag>)
-                    : "—"}
-                </Descriptions.Item>
-                <Descriptions.Item label="Allergens">
-                  {record.allergens?.length > 0
-                    ? record.allergens.map((a: string) => <Tag key={a} color="warning">{a}</Tag>)
-                    : "—"}
-                </Descriptions.Item>
-              </Descriptions>
-            </Card>
           </Col>
         )}
 

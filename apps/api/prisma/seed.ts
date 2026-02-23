@@ -54,6 +54,92 @@ async function main() {
     },
   });
 
+  // Create categories
+  const categoryTree = [
+    {
+      name: "Food", slug: "food", sortOrder: 0, children: [
+        { name: "Fruits", slug: "fruits", sortOrder: 0 },
+        { name: "Vegetables", slug: "vegetables", sortOrder: 1 },
+        { name: "Dairy", slug: "dairy", sortOrder: 2 },
+        { name: "Grains & Cereals", slug: "grains-cereals", sortOrder: 3 },
+        { name: "Cooking Oil", slug: "cooking-oil", sortOrder: 4 },
+        { name: "Spices & Masala", slug: "spices-masala", sortOrder: 5 },
+        { name: "Snacks", slug: "snacks", sortOrder: 6 },
+        { name: "Beverages", slug: "beverages", sortOrder: 7 },
+        { name: "Frozen Food", slug: "frozen-food", sortOrder: 8 },
+        { name: "Bakery", slug: "bakery", sortOrder: 9 },
+        { name: "Pulses & Lentils", slug: "pulses-lentils", sortOrder: 10 },
+        { name: "Dry Fruits & Nuts", slug: "dry-fruits-nuts", sortOrder: 11 },
+        { name: "Canned & Packaged", slug: "canned-packaged", sortOrder: 12 },
+        { name: "Sauces & Condiments", slug: "sauces-condiments", sortOrder: 13 },
+        { name: "Meat", slug: "meat", sortOrder: 14 },
+        { name: "Eggs", slug: "eggs", sortOrder: 15 },
+        { name: "Ready to Eat", slug: "ready-to-eat", sortOrder: 16 },
+        { name: "Tea & Coffee", slug: "tea-coffee", sortOrder: 17 },
+        { name: "Chocolates & Sweets", slug: "chocolates-sweets", sortOrder: 18 },
+      ],
+    },
+    {
+      name: "Personal Care", slug: "personal-care", sortOrder: 1, children: [
+        { name: "Face Wash", slug: "face-wash", sortOrder: 0 },
+        { name: "Shampoo", slug: "shampoo", sortOrder: 1 },
+        { name: "Soap", slug: "soap", sortOrder: 2 },
+        { name: "Skincare", slug: "skincare", sortOrder: 3 },
+        { name: "Haircare", slug: "haircare", sortOrder: 4 },
+        { name: "Oral Care", slug: "oral-care", sortOrder: 5 },
+        { name: "Deodorant", slug: "deodorant", sortOrder: 6 },
+      ],
+    },
+    {
+      name: "Household", slug: "household", sortOrder: 2, children: [
+        { name: "Floor Cleaner", slug: "floor-cleaner", sortOrder: 0 },
+        { name: "Detergent", slug: "detergent", sortOrder: 1 },
+        { name: "Dishwash", slug: "dishwash", sortOrder: 2 },
+        { name: "Kitchen Supplies", slug: "kitchen-supplies", sortOrder: 3 },
+        { name: "Insect Repellent", slug: "insect-repellent", sortOrder: 4 },
+        { name: "Air Freshener", slug: "air-freshener", sortOrder: 5 },
+        { name: "Garbage Bags", slug: "garbage-bags", sortOrder: 6 },
+      ],
+    },
+    {
+      name: "Baby Care", slug: "baby-care", sortOrder: 3, children: [
+        { name: "Diapers", slug: "diapers", sortOrder: 0 },
+        { name: "Baby Food", slug: "baby-food", sortOrder: 1 },
+        { name: "Baby Skincare", slug: "baby-skincare", sortOrder: 2 },
+      ],
+    },
+    {
+      name: "OTC Pharma", slug: "otc-pharma", sortOrder: 4, children: [
+        { name: "Pain Relief", slug: "pain-relief", sortOrder: 0 },
+        { name: "Cold & Cough", slug: "cold-cough", sortOrder: 1 },
+        { name: "Digestive", slug: "digestive", sortOrder: 2 },
+        { name: "Antiseptic", slug: "antiseptic", sortOrder: 3 },
+      ],
+    },
+    {
+      name: "Pet Care", slug: "pet-care", sortOrder: 5, children: [
+        { name: "Pet Food", slug: "pet-food", sortOrder: 0 },
+        { name: "Pet Hygiene", slug: "pet-hygiene", sortOrder: 1 },
+      ],
+    },
+  ];
+
+  for (const parent of categoryTree) {
+    const parentCat = await prisma.category.upsert({
+      where: { slug: parent.slug },
+      update: { name: parent.name, sortOrder: parent.sortOrder },
+      create: { name: parent.name, slug: parent.slug, sortOrder: parent.sortOrder },
+    });
+    for (const child of parent.children ?? []) {
+      await prisma.category.upsert({
+        where: { slug: child.slug },
+        update: { name: child.name, sortOrder: child.sortOrder, parentId: parentCat.id },
+        create: { name: child.name, slug: child.slug, sortOrder: child.sortOrder, parentId: parentCat.id },
+      });
+    }
+  }
+  console.log("Categories seeded!");
+
   // Create sample products with variants
   const sampleProducts = [
     { name: "Organic Bananas", sku: "FRUIT-001", description: "Fresh organic bananas, per bunch", productType: "FRESH_PRODUCE" as const, variant: { name: "1 Bunch", unitType: "PIECE" as const, unitValue: 1 } },

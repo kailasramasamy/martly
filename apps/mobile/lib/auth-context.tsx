@@ -8,6 +8,7 @@ interface UserInfo {
   id: string;
   email: string;
   name: string;
+  phone: string | null;
   role: string;
 }
 
@@ -25,6 +26,7 @@ interface AuthState {
   login: (tokens: AuthTokens) => void;
   logout: () => void;
   register: (data: RegisterData) => Promise<void>;
+  refreshUser: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthState | null>(null);
@@ -93,6 +95,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
   }, []);
 
+  const refreshUser = useCallback(async () => {
+    try {
+      const res = await api.get<UserInfo>("/api/v1/auth/me");
+      setUser(res.data);
+    } catch {
+      // silently fail
+    }
+  }, []);
+
   const register = useCallback(
     async (data: RegisterData) => {
       const result = await api.post<AuthTokens>("/api/v1/auth/register", data);
@@ -102,7 +113,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   );
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, isLoading, user, login, logout, register }}>
+    <AuthContext.Provider value={{ isAuthenticated, isLoading, user, login, logout, register, refreshUser }}>
       {children}
     </AuthContext.Provider>
   );

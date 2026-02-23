@@ -18,9 +18,12 @@ import {
   SunOutlined,
   MoonOutlined,
   InboxOutlined,
+  ContainerOutlined,
+  StarOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
+import "./overrides.css";
 
 import { lightTheme, darkTheme } from "./theme";
 
@@ -50,6 +53,7 @@ import { StoreProductCreate } from "./pages/store-products/create";
 import { StoreProductEdit } from "./pages/store-products/edit";
 import { DashboardPage } from "./pages/dashboard";
 import { StockPage } from "./pages/stock";
+import { FeaturedProductsPage } from "./pages/featured-products";
 import { CategoryList } from "./pages/categories/list";
 import { CategoryCreate } from "./pages/categories/create";
 import { CategoryEdit } from "./pages/categories/edit";
@@ -161,18 +165,22 @@ export default function App() {
                 meta: { label: "Stores", icon: <ShopOutlined /> },
               },
               {
+                name: "inventory",
+                meta: { label: "Inventory", icon: <InboxOutlined /> },
+              },
+              {
                 name: "categories",
                 list: "/categories",
                 create: "/categories/create",
                 edit: "/categories/edit/:id",
-                meta: { label: "Categories", icon: <AppstoreOutlined /> },
+                meta: { label: "Categories", icon: <AppstoreOutlined />, parent: "inventory" },
               },
               {
                 name: "brands",
                 list: "/brands",
                 create: "/brands/create",
                 edit: "/brands/edit/:id",
-                meta: { label: "Brands", icon: <TrademarkOutlined /> },
+                meta: { label: "Brands", icon: <TrademarkOutlined />, parent: "inventory" },
               },
               {
                 name: "products",
@@ -180,7 +188,12 @@ export default function App() {
                 create: "/products/create",
                 edit: "/products/edit/:id",
                 show: "/products/show/:id",
-                meta: { label: "Products", icon: <TagsOutlined /> },
+                meta: { label: "Products", icon: <TagsOutlined />, parent: "inventory" },
+              },
+              {
+                name: "featured-products",
+                list: "/featured-products",
+                meta: { label: "Featured", icon: <StarOutlined />, parent: "inventory" },
               },
               {
                 name: "store-products",
@@ -188,15 +201,15 @@ export default function App() {
                 edit: "/store-products/edit/:id",
               },
               {
+                name: "stock",
+                list: "/stock",
+                meta: { label: "Stock Management", icon: <ContainerOutlined />, parent: "inventory" },
+              },
+              {
                 name: "orders",
                 list: "/orders",
                 show: "/orders/show/:id",
                 meta: { label: "Orders", icon: <ShoppingCartOutlined /> },
-              },
-              {
-                name: "stock",
-                list: "/stock",
-                meta: { label: "Stock", icon: <InboxOutlined /> },
               },
             ]}
           >
@@ -263,6 +276,7 @@ export default function App() {
                   <Route path="show/:id" element={<OrderShow />} />
                 </Route>
                 <Route path="/stock" element={<StockPage />} />
+                <Route path="/featured-products" element={<FeaturedProductsPage />} />
                 <Route path="/" element={<DashboardPage />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />

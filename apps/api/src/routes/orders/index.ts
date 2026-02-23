@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { Prisma } from "../../../generated/prisma/index.js";
-import { createOrderSchema, updateOrderStatusSchema } from "@martly/shared/schemas";
+import { createOrderSchema, updateOrderStatusSchema, verifyPaymentSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
@@ -8,6 +8,8 @@ import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middlewa
 import { sendOrderStatusNotification } from "../../services/notification.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
+import { formatVariantUnit } from "../../services/units.js";
+import { createRazorpayOrder, verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId } from "../../services/payment.js";
 
 // Valid status transitions
 const VALID_TRANSITIONS: Record<string, string[]> = {
@@ -19,6 +21,16 @@ const VALID_TRANSITIONS: Record<string, string[]> = {
   DELIVERED: [],
   CANCELLED: [],
 };
+
+function formatOrderUnits<T extends { items?: { variant?: { unitType: string } }[] }>(order: T): T {
+  if (!order.items) return order;
+  return {
+    ...order,
+    items: order.items.map((item) =>
+      item.variant ? { ...item, variant: formatVariantUnit(item.variant) } : item,
+    ),
+  };
+}
 
 export async function orderRoutes(app: FastifyInstance) {
   // List orders (scoped by role + org)
@@ -52,7 +64,7 @@ export async function orderRoutes(app: FastifyInstance) {
 
     const response: PaginatedResponse<(typeof orders)[0]> = {
       success: true,
-      data: orders,
+      data: orders.map(formatOrderUnits),
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
     return response;
@@ -75,7 +87,7 @@ export async function orderRoutes(app: FastifyInstance) {
       }
     }
 
-    const response: ApiResponse<typeof order> = { success: true, data: order };
+    const response: ApiResponse<typeof order> = { success: true, data: formatOrderUnits(order) };
     return response;
   });
 
@@ -83,6 +95,16 @@ export async function orderRoutes(app: FastifyInstance) {
   app.post("/", { preHandler: [authenticate] }, async (request, reply) => {
     const body = createOrderSchema.parse(request.body);
     const user = request.user as { sub: string };
+
+    // Resolve delivery address from addressId or direct input
+    let deliveryAddress = body.deliveryAddress ?? "";
+    if (body.addressId) {
+      const addr = await app.prisma.userAddress.findUnique({ where: { id: body.addressId } });
+      if (!addr || addr.userId !== user.sub) {
+        return reply.notFound("Address not found");
+      }
+      deliveryAddress = addr.address;
+    }
 
     const storeProducts = await app.prisma.storeProduct.findMany({
       where: { id: { in: body.items.map((i) => i.storeProductId) } },
@@ -149,17 +171,18 @@ export async function orderRoutes(app: FastifyInstance) {
           data: {
             userId: user.sub,
             storeId: body.storeId,
-            deliveryAddress: body.deliveryAddress,
+            deliveryAddress,
+            paymentMethod: body.paymentMethod as "ONLINE" | "COD",
             totalAmount,
             status: "PENDING",
-            paymentStatus: "PENDING",
+            paymentStatus: body.paymentMethod === "COD" ? "PENDING" : "PENDING",
             items: { create: itemsData },
           },
           include: { items: { include: { variant: true } } },
         });
       });
 
-      const response: ApiResponse<typeof order> = { success: true, data: order };
+      const response: ApiResponse<typeof order> = { success: true, data: formatOrderUnits(order) };
       return response;
     } catch (err) {
       const e = err as Error & { statusCode?: number };
@@ -235,6 +258,97 @@ export async function orderRoutes(app: FastifyInstance) {
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;
+    },
+  );
+
+  // Create Razorpay payment order
+  app.post<{ Params: { id: string } }>(
+    "/:id/payment",
+    { preHandler: [authenticate] },
+    async (request, reply) => {
+      if (!isRazorpayConfigured()) {
+        return reply.status(503).send({
+          success: false,
+          error: "Payment Gateway Unavailable",
+          message: "Online payments are not configured",
+          statusCode: 503,
+        });
+      }
+
+      const order = await app.prisma.order.findUnique({ where: { id: request.params.id } });
+      if (!order) return reply.notFound("Order not found");
+
+      const user = request.user as { sub: string };
+      if (order.userId !== user.sub) return reply.forbidden("Access denied");
+
+      if (order.paymentStatus === "PAID") {
+        return reply.badRequest("Order is already paid");
+      }
+
+      const amountInPaise = Math.round(Number(order.totalAmount) * 100);
+      const rpOrder = await createRazorpayOrder(amountInPaise, order.id);
+
+      await app.prisma.order.update({
+        where: { id: order.id },
+        data: { razorpayOrderId: rpOrder.id },
+      });
+
+      const response: ApiResponse<{
+        razorpay_order_id: string;
+        amount: number;
+        currency: string;
+        key_id: string;
+      }> = {
+        success: true,
+        data: {
+          razorpay_order_id: rpOrder.id,
+          amount: amountInPaise,
+          currency: "INR",
+          key_id: getRazorpayKeyId(),
+        },
+      };
+      return response;
+    },
+  );
+
+  // Verify Razorpay payment
+  app.post<{ Params: { id: string } }>(
+    "/:id/payment/verify",
+    { preHandler: [authenticate] },
+    async (request, reply) => {
+      const body = verifyPaymentSchema.parse(request.body);
+
+      const order = await app.prisma.order.findUnique({ where: { id: request.params.id } });
+      if (!order) return reply.notFound("Order not found");
+
+      const user = request.user as { sub: string };
+      if (order.userId !== user.sub) return reply.forbidden("Access denied");
+
+      const isValid = verifyRazorpaySignature(
+        body.razorpay_order_id,
+        body.razorpay_payment_id,
+        body.razorpay_signature,
+      );
+
+      if (isValid) {
+        const updated = await app.prisma.order.update({
+          where: { id: order.id },
+          data: {
+            paymentStatus: "PAID",
+            razorpayPaymentId: body.razorpay_payment_id,
+          },
+        });
+
+        const response: ApiResponse<typeof updated> = { success: true, data: updated };
+        return response;
+      } else {
+        await app.prisma.order.update({
+          where: { id: order.id },
+          data: { paymentStatus: "FAILED" },
+        });
+
+        return reply.badRequest("Payment verification failed");
+      }
     },
   );
 }

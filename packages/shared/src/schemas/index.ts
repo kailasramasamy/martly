@@ -259,12 +259,43 @@ export const updateStoreProductSchema = z.object({
   price: z.number().positive().optional(),
   stock: z.number().int().min(0).optional(),
   isActive: z.boolean().optional(),
+  isFeatured: z.boolean().optional(),
   discountType: z.nativeEnum(DiscountType).nullish(),
   discountValue: z.number().min(0).nullish(),
   discountStart: z.coerce.date().nullish(),
   discountEnd: z.coerce.date().nullish(),
 });
 export type UpdateStoreProductInput = z.infer<typeof updateStoreProductSchema>;
+
+// ── User Address ─────────────────────────────────────
+export const createUserAddressSchema = z.object({
+  label: z.enum(["Home", "Work", "Other"]).default("Home"),
+  address: z.string().min(5),
+  isDefault: z.boolean().optional(),
+});
+export type CreateUserAddressInput = z.infer<typeof createUserAddressSchema>;
+
+export const updateUserAddressSchema = z.object({
+  label: z.enum(["Home", "Work", "Other"]).optional(),
+  address: z.string().min(5).optional(),
+  isDefault: z.boolean().optional(),
+});
+export type UpdateUserAddressInput = z.infer<typeof updateUserAddressSchema>;
+
+// ── Profile ──────────────────────────────────────────
+export const updateProfileSchema = z.object({
+  name: z.string().min(1).optional(),
+  phone: z.string().optional(),
+});
+export type UpdateProfileInput = z.infer<typeof updateProfileSchema>;
+
+// ── Payment Verification ─────────────────────────────
+export const verifyPaymentSchema = z.object({
+  razorpay_order_id: z.string(),
+  razorpay_payment_id: z.string(),
+  razorpay_signature: z.string(),
+});
+export type VerifyPaymentInput = z.infer<typeof verifyPaymentSchema>;
 
 // ── Order ─────────────────────────────────────────────
 export const orderItemSchema = z.object({
@@ -297,14 +328,19 @@ export type Order = z.infer<typeof orderSchema>;
 
 export const createOrderSchema = z.object({
   storeId: z.string().uuid(),
-  deliveryAddress: z.string().min(1),
+  deliveryAddress: z.string().min(1).optional(),
+  addressId: z.string().uuid().optional(),
+  paymentMethod: z.enum(["ONLINE", "COD"]).default("ONLINE"),
   items: z.array(
     z.object({
       storeProductId: z.string().uuid(),
       quantity: z.number().int().positive(),
     }),
   ),
-});
+}).refine(
+  (data) => data.deliveryAddress || data.addressId,
+  { message: "Either deliveryAddress or addressId is required", path: ["deliveryAddress"] },
+);
 export type CreateOrderInput = z.infer<typeof createOrderSchema>;
 
 // ── Update Schemas ───────────────────────────────────

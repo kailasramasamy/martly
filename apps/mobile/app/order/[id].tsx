@@ -3,12 +3,12 @@ import {
   View,
   Text,
   StyleSheet,
-  ActivityIndicator,
   ScrollView,
 } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { api } from "../../lib/api";
 import { colors, spacing, fontSize } from "../../constants/theme";
+import { OrderDetailSkeleton } from "../../components/SkeletonLoader";
 
 interface OrderItemData {
   id: string;
@@ -82,11 +82,7 @@ export default function OrderDetailScreen() {
   }, [order, fetchOrder]);
 
   if (loading) {
-    return (
-      <View style={styles.center}>
-        <ActivityIndicator size="large" color={colors.primary} />
-      </View>
-    );
+    return <OrderDetailSkeleton />;
   }
 
   if (!order) {
