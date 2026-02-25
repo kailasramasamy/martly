@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     backgroundColor: colors.primary,
-    borderRadius: 14,
+    borderRadius: 28,
     paddingVertical: 12,
     paddingHorizontal: spacing.md,
     shadowColor: "#000",
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255,255,255,0.2)",
     paddingHorizontal: 12,
     paddingVertical: 8,
-    borderRadius: 10,
+    borderRadius: 16,
   },
   viewCart: {
     fontSize: fontSize.sm,

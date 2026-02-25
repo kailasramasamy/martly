@@ -37,7 +37,7 @@ export async function getOrgStoreIds(
   prisma: PrismaClient,
 ): Promise<string[] | undefined> {
   const user = getOrgUser(request);
-  if (user.role === "SUPER_ADMIN" || user.role === "GUEST") return undefined;
+  if (user.role === "SUPER_ADMIN" || user.role === "GUEST" || user.role === "CUSTOMER") return undefined;
   if (!user.organizationId) return [];
 
   // STORE_MANAGER / STAFF: scoped to assigned stores only
@@ -65,7 +65,7 @@ export async function verifyStoreOrgAccess(
   storeId: string,
 ): Promise<boolean> {
   const user = getOrgUser(request);
-  if (user.role === "SUPER_ADMIN" || user.role === "GUEST") return true;
+  if (user.role === "SUPER_ADMIN" || user.role === "GUEST" || user.role === "CUSTOMER") return true;
   if (!user.organizationId) return false;
 
   // STORE_MANAGER / STAFF: must be assigned to this specific store

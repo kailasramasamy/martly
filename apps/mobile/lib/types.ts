@@ -85,3 +85,28 @@ export interface CategoryTreeNode {
   imageUrl: string | null;
   children: CategoryTreeNode[];
 }
+
+export interface CollectionSection {
+  id: string;
+  title: string;
+  subtitle: string | null;
+  slug: string;
+  imageUrl: string | null;
+  products: StoreProduct[];
+}
+
+export interface TimeCategorySection {
+  id: string;
+  name: string;
+  slug: string;
+  products: StoreProduct[];
+}
+
+export interface HomeFeed {
+  collections: CollectionSection[];
+  categories: CategoryTreeNode[];
+  timeCategories: TimeCategorySection[];
+  timePeriod: string;
+  deals: StoreProduct[];
+  buyAgain: StoreProduct[];
+}

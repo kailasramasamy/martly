@@ -13,14 +13,19 @@ export const GRID_IMAGE_HEIGHT = Math.round(GRID_CARD_WIDTH * 0.65);
 interface ProductGridCardProps {
   item: StoreProduct;
   onAddToCart: (sp: StoreProduct) => void;
-  onUpdateQuantity: (storeProductId: string, quantity: number) => void;
+  onUpdateQuantity?: (storeProductId: string, quantity: number) => void;
   quantity?: number;
   storeId?: string;
   variantCount?: number;
   onShowVariants?: () => void;
+  containerWidth?: number;
+  variantSizes?: string[];
 }
 
-export function ProductGridCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants }: ProductGridCardProps) {
+export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, variantCount = 1, onShowVariants, containerWidth, variantSizes }: ProductGridCardProps) {
+  const cardWidth = containerWidth
+    ? (containerWidth - GRID_GAP) / 2
+    : GRID_CARD_WIDTH;
   const hasDiscount = item.pricing?.discountActive;
   const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
@@ -36,7 +41,7 @@ export function ProductGridCard({ item, onAddToCart, onUpdateQuantity, quantity 
 
   return (
     <TouchableOpacity
-      style={styles.card}
+      style={[styles.card, { width: cardWidth }]}
       onPress={() => {
         const params: Record<string, string> = { id: item.product.id };
         if (storeId) params.storeId = storeId;
@@ -84,7 +89,13 @@ export function ProductGridCard({ item, onAddToCart, onUpdateQuantity, quantity 
       {/* Content */}
       <View style={styles.content}>
         <Text style={styles.name} numberOfLines={2}>{item.product.name}</Text>
-        <Text style={styles.variant} numberOfLines={1}>{item.variant.name}</Text>
+        {variantSizes && variantSizes.length > 1 ? (
+          <Text style={styles.variant} numberOfLines={1}>
+            {variantSizes.join(" · ")}
+          </Text>
+        ) : (
+          <Text style={styles.variant} numberOfLines={1}>{item.variant.name}</Text>
+        )}
         {isLowStock && <Text style={styles.lowStock}>Only {available} left</Text>}
 
         <View style={styles.footer}>
@@ -95,23 +106,14 @@ export function ProductGridCard({ item, onAddToCart, onUpdateQuantity, quantity 
             )}
           </View>
           {quantity > 0 ? (
-            <View style={styles.qtyStepper}>
-              <TouchableOpacity
-                style={styles.qtyBtn}
-                onPress={() => onUpdateQuantity(item.id, quantity - 1)}
-                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-              >
-                <Ionicons name={quantity === 1 ? "trash-outline" : "remove"} size={14} color={colors.primary} />
-              </TouchableOpacity>
-              <Text style={styles.qtyText}>{quantity}</Text>
-              <TouchableOpacity
-                style={styles.qtyBtn}
-                onPress={() => onAddToCart(item)}
-                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-              >
-                <Ionicons name="add" size={14} color={colors.primary} />
-              </TouchableOpacity>
-            </View>
+            <TouchableOpacity
+              style={styles.qtyBadge}
+              onPress={onShowVariants}
+              activeOpacity={0.7}
+            >
+              <Ionicons name="checkmark" size={12} color="#fff" />
+              <Text style={styles.qtyBadgeText}>{quantity}</Text>
+            </TouchableOpacity>
           ) : variantCount > 1 ? (
             <TouchableOpacity
               style={styles.stackedBtn}
@@ -208,7 +210,7 @@ const styles = StyleSheet.create({
   },
   oosLabel: { fontSize: 12, fontWeight: "700", color: colors.error },
   content: { padding: 10 },
-  name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17 },
+  name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17, height: 34 },
   variant: { fontSize: 11, color: colors.textSecondary, marginTop: 2 },
   lowStock: { fontSize: 10, color: colors.warning, fontWeight: "600", marginTop: 2 },
   footer: {
@@ -258,26 +260,18 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: colors.primary,
   },
-  qtyStepper: {
+  qtyBadge: {
     flexDirection: "row",
     alignItems: "center",
-    borderWidth: 1.5,
-    borderColor: colors.primary,
+    backgroundColor: colors.primary,
     borderRadius: 6,
-    backgroundColor: colors.primary + "08",
-    overflow: "hidden",
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    gap: 4,
   },
-  qtyBtn: {
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  qtyText: {
-    fontSize: 13,
+  qtyBadgeText: {
+    fontSize: 12,
     fontWeight: "700",
-    color: colors.primary,
-    minWidth: 18,
-    textAlign: "center",
+    color: "#fff",
   },
 });

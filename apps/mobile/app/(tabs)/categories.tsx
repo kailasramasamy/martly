@@ -19,8 +19,9 @@ import type { CategoryTreeNode } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
-const GRID_GAP = 12;
-const CARD_WIDTH = (SCREEN_WIDTH - H_PADDING * 2 - GRID_GAP) / 2;
+const GRID_GAP = 10;
+const COLS = 3;
+const CARD_WIDTH = (SCREEN_WIDTH - H_PADDING * 2 - GRID_GAP * (COLS - 1)) / COLS;
 
 // Muted pastel palettes for categories
 const PALETTES = [
@@ -69,28 +70,25 @@ export default function CategoriesScreen() {
     if (cat.children.length > 0) {
       setExpandedId((prev) => (prev === cat.id ? null : cat.id));
     } else {
-      router.push({ pathname: "/search", params: { categoryId: cat.id } });
+      router.push({ pathname: "/category/[id]", params: { id: cat.id } });
     }
   }, []);
 
   const handleSubcategoryPress = useCallback((categoryId: string) => {
-    router.push({ pathname: "/search", params: { categoryId } });
+    router.push({ pathname: "/category/[id]", params: { id: categoryId } });
   }, []);
 
   const handleBrowseAll = useCallback((categoryId: string) => {
-    router.push({ pathname: "/search", params: { categoryId } });
+    router.push({ pathname: "/category/[id]", params: { id: categoryId } });
   }, []);
 
-  // Build pairs for 2-column grid
-  const gridData = [];
-  for (let i = 0; i < categories.length; i += 2) {
-    gridData.push({
-      key: categories[i].id,
-      left: categories[i],
-      right: categories[i + 1] ?? null,
-      leftExpanded: expandedId === categories[i].id,
-      rightExpanded: categories[i + 1] ? expandedId === categories[i + 1].id : false,
-    });
+  // Build rows for 3-column grid
+  const gridData: { key: string; items: (CategoryTreeNode | null)[]; expandedIndex: number }[] = [];
+  for (let i = 0; i < categories.length; i += COLS) {
+    const items: (CategoryTreeNode | null)[] = [];
+    for (let j = 0; j < COLS; j++) items.push(categories[i + j] ?? null);
+    const expandedIndex = items.findIndex((c) => c && expandedId === c.id);
+    gridData.push({ key: categories[i].id, items, expandedIndex });
   }
 
   if (loading) return <CategoriesSkeleton />;
@@ -117,29 +115,23 @@ export default function CategoriesScreen() {
           />
         }
         renderItem={({ item }) => {
-          const expandedCat = item.leftExpanded
-            ? item.left
-            : item.rightExpanded && item.right
-            ? item.right
-            : null;
+          const expandedCat = item.expandedIndex >= 0 ? item.items[item.expandedIndex] : null;
 
           return (
             <View>
               {/* Card row */}
               <View style={styles.gridRow}>
-                <CategoryGridCard
-                  category={item.left}
-                  isExpanded={item.leftExpanded}
-                  onPress={handlePress}
-                />
-                {item.right ? (
-                  <CategoryGridCard
-                    category={item.right}
-                    isExpanded={item.rightExpanded}
-                    onPress={handlePress}
-                  />
-                ) : (
-                  <View style={styles.cardPlaceholder} />
+                {item.items.map((cat, idx) =>
+                  cat ? (
+                    <CategoryGridCard
+                      key={cat.id}
+                      category={cat}
+                      isExpanded={expandedId === cat.id}
+                      onPress={handlePress}
+                    />
+                  ) : (
+                    <View key={`empty-${idx}`} style={styles.cardPlaceholder} />
+                  ),
                 )}
               </View>
 
@@ -164,7 +156,11 @@ export default function CategoriesScreen() {
                           onPress={() => handleSubcategoryPress(sub.id)}
                           activeOpacity={0.7}
                         >
-                          <View style={[styles.subcategoryDot, { backgroundColor: palette.text }]} />
+                          {sub.imageUrl ? (
+                            <Image source={{ uri: sub.imageUrl }} style={styles.subcategoryImage} resizeMode="contain" />
+                          ) : (
+                            <View style={[styles.subcategoryDot, { backgroundColor: palette.text }]} />
+                          )}
                           <Text style={styles.subcategoryName} numberOfLines={1}>
                             {sub.name}
                           </Text>
@@ -265,22 +261,17 @@ function CategoriesSkeleton() {
         <SkeletonBox width={140} height={14} />
       </View>
       <View style={styles.list}>
-        {[1, 2, 3, 4].map((row) => (
+        {[1, 2, 3].map((row) => (
           <View key={row} style={styles.gridRow}>
-            <View style={styles.skeletonCard}>
-              <SkeletonBox width="100%" height={80} borderRadius={0} />
-              <View style={{ padding: 12, gap: 6 }}>
-                <SkeletonBox width="70%" height={14} />
-                <SkeletonBox width="50%" height={11} />
+            {[1, 2, 3].map((col) => (
+              <View key={col} style={styles.skeletonCard}>
+                <View style={{ width: "100%", aspectRatio: 1 }} />
+                <View style={{ padding: 10, gap: 4 }}>
+                  <SkeletonBox width="70%" height={12} />
+                  <SkeletonBox width="50%" height={10} />
+                </View>
               </View>
-            </View>
-            <View style={styles.skeletonCard}>
-              <SkeletonBox width="100%" height={80} borderRadius={0} />
-              <View style={{ padding: 12, gap: 6 }}>
-                <SkeletonBox width="60%" height={14} />
-                <SkeletonBox width="40%" height={11} />
-              </View>
-            </View>
+            ))}
           </View>
         ))}
       </View>
@@ -320,7 +311,7 @@ const styles = StyleSheet.create({
   card: {
     width: CARD_WIDTH,
     backgroundColor: "#fff",
-    borderRadius: 14,
+    borderRadius: 12,
     overflow: "hidden",
     borderWidth: 1,
     borderColor: "#f1f5f9",
@@ -335,7 +326,7 @@ const styles = StyleSheet.create({
   },
   cardIconArea: {
     width: "100%",
-    height: 80,
+    aspectRatio: 1,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -344,13 +335,13 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   cardContent: {
-    padding: 12,
+    padding: 10,
   },
   cardName: {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: "600",
     color: colors.text,
-    lineHeight: 18,
+    lineHeight: 17,
   },
   cardMeta: {
     flexDirection: "row",
@@ -404,6 +395,12 @@ const styles = StyleSheet.create({
     minWidth: "45%",
     flex: 1,
   },
+  subcategoryImage: {
+    width: 28,
+    height: 28,
+    borderRadius: 6,
+    backgroundColor: "#f1f5f9",
+  },
   subcategoryDot: {
     width: 6,
     height: 6,
@@ -448,7 +445,7 @@ const styles = StyleSheet.create({
   skeletonCard: {
     width: CARD_WIDTH,
     backgroundColor: "#fff",
-    borderRadius: 14,
+    borderRadius: 12,
     overflow: "hidden",
   },
 });

@@ -1,5 +1,6 @@
+import { useState, useEffect } from "react";
 import { Edit, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, DatePicker, theme } from "antd";
+import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Cascader, DatePicker, theme } from "antd";
 import {
   MinusCircleOutlined,
   PlusOutlined,
@@ -15,6 +16,7 @@ import { ImageUpload } from "../../components/ImageUpload";
 import { MultiImageUpload } from "../../components/MultiImageUpload";
 import { sectionTitle } from "../../theme";
 import { DISCOUNT_TYPE_OPTIONS } from "../../constants/tag-colors";
+import { axiosInstance } from "../../providers/data-provider";
 
 const UNIT_TYPES = ["KG", "GRAM", "LITER", "ML", "PIECE", "PACK", "DOZEN", "BUNDLE"];
 
@@ -104,11 +106,54 @@ const PACK_TYPES = [
   "Tetra Pack", "Stand-up Pouch", "Squeeze Bottle", "Spray Bottle", "Tub",
 ];
 
+interface CategoryTreeNode {
+  id: string;
+  name: string;
+  children: CategoryTreeNode[];
+}
+
+interface CascaderOption {
+  value: string;
+  label: string;
+  children?: CascaderOption[];
+}
+
+function buildCascaderOptions(nodes: CategoryTreeNode[]): CascaderOption[] {
+  return nodes.map((n) => ({
+    value: n.id,
+    label: n.name,
+    children: n.children?.length ? buildCascaderOptions(n.children) : undefined,
+  }));
+}
+
+function findCategoryPath(nodes: CategoryTreeNode[], targetId: string): string[] | null {
+  for (const n of nodes) {
+    if (n.id === targetId) return [n.id];
+    if (n.children?.length) {
+      const sub = findCategoryPath(n.children, targetId);
+      if (sub) return [n.id, ...sub];
+    }
+  }
+  return null;
+}
+
+// Reverse map: API returns formatted unitType (e.g. "kg"), form needs enum values (e.g. "KG")
+const UNIT_LABEL_TO_ENUM: Record<string, string> = {
+  kg: "KG", g: "GRAM", l: "LITER", ml: "ML", pcs: "PIECE",
+  pack: "PACK", doz: "DOZEN", bundle: "BUNDLE",
+};
+function normalizeUnitType(val: unknown): string {
+  if (typeof val !== "string") return "PIECE";
+  // Already an enum value
+  if (UNIT_TYPES.includes(val)) return val;
+  return UNIT_LABEL_TO_ENUM[val.toLowerCase()] ?? val;
+}
+
 export const ProductEdit = () => {
   const { token } = theme.useToken();
   const { formProps, saveButtonProps } = useForm({ resource: "products" });
 
-  // Convert variant discount date strings to dayjs objects for DatePicker
+  // Convert variant fields from API response to form-compatible values
   const originalOnFinish = formProps.onFinish;
   const enhancedFormProps = {
     ...formProps,
@@ -116,6 +161,7 @@ export const ProductEdit = () => {
       ...formProps.initialValues,
       variants: formProps.initialValues?.variants?.map((v: Record<string, unknown>) => ({
         ...v,
+        unitType: normalizeUnitType(v.unitType),
         discountStart: v.discountStart ? dayjs(v.discountStart as string) : null,
         discountEnd: v.discountEnd ? dayjs(v.discountEnd as string) : null,
       })),
@@ -123,18 +169,36 @@ export const ProductEdit = () => {
     onFinish: (values: Record<string, unknown>) => {
       const variants = (values.variants as Record<string, unknown>[] | undefined)?.map((v) => ({
         ...v,
+        unitType: normalizeUnitType(v.unitType),
         discountStart: v.discountStart ? (v.discountStart as dayjs.Dayjs).toISOString() : null,
         discountEnd: v.discountEnd ? (v.discountEnd as dayjs.Dayjs).toISOString() : null,
       }));
-      return originalOnFinish?.({ ...values, variants });
+      const path = values.categoryPath as string[] | undefined;
+      const categoryId = path?.length ? path[path.length - 1] : null;
+      const { categoryPath: _, ...rest } = values;
+      return originalOnFinish?.({ ...rest, categoryId, variants });
     },
   };
 
-  const { selectProps: categorySelectProps } = useSelect({
-    resource: "categories",
-    optionLabel: "name",
-    optionValue: "id",
-  });
+  const [cascaderOptions, setCascaderOptions] = useState<CascaderOption[]>([]);
+  const [categoryTree, setCategoryTree] = useState<CategoryTreeNode[]>([]);
+
+  useEffect(() => {
+    axiosInstance.get("/categories/tree").then((res) => {
+      const tree = res.data.data as CategoryTreeNode[];
+      setCategoryTree(tree);
+      setCascaderOptions(buildCascaderOptions(tree));
+    }).catch(() => {});
+  }, []);
+
+  // Once category tree is loaded and form has initialValues, resolve categoryId → path
+  useEffect(() => {
+    if (!categoryTree.length || !formProps.initialValues?.categoryId) return;
+    const path = findCategoryPath(categoryTree, formProps.initialValues.categoryId as string);
+    if (path) {
+      formProps.form?.setFieldValue("categoryPath", path);
+    }
+  }, [categoryTree, formProps.initialValues?.categoryId]);
 
   const { selectProps: brandSelectProps } = useSelect({
     resource: "brands",
@@ -166,8 +230,17 @@ export const ProductEdit = () => {
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
-                  <Form.Item label="Category" name="categoryId">
-                    <Select {...categorySelectProps} allowClear placeholder="Select category" />
+                  <Form.Item label="Category" name="categoryPath">
+                    <Cascader
+                      options={cascaderOptions}
+                      changeOnSelect
+                      allowClear
+                      placeholder="Select category"
+                      showSearch={{
+                        filter: (input, path) =>
+                          path.some((opt) => String(opt.label).toLowerCase().includes(input.toLowerCase())),
+                      }}
+                    />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>

@@ -35,7 +35,7 @@ function formatOrderUnits<T extends { items?: { variant?: { unitType: string } }
 export async function orderRoutes(app: FastifyInstance) {
   // List orders (scoped by role + org)
   app.get("/", { preHandler: [authenticate] }, async (request) => {
-    const { page = 1, pageSize = 20 } = request.query as { page?: number; pageSize?: number };
+    const { page = 1, pageSize = 20, userId } = request.query as { page?: number; pageSize?: number; userId?: string };
     const skip = (Number(page) - 1) * Number(pageSize);
     const user = getOrgUser(request);
 
@@ -43,6 +43,9 @@ export async function orderRoutes(app: FastifyInstance) {
 
     if (user.role === "CUSTOMER") {
       where.userId = user.sub;
+    } else if (userId) {
+      // Admin filtering by specific customer
+      where.userId = userId;
     } else if (user.role !== "SUPER_ADMIN") {
       // Org-scoped: filter by org's stores
       const orgStoreIds = await getOrgStoreIds(request, app.prisma);

@@ -39,7 +39,6 @@ export async function uploadRoutes(app: FastifyInstance) {
           Key: key,
           Body: buffer,
           ContentType: file.mimetype,
-          ACL: "public-read",
         }),
       );
 

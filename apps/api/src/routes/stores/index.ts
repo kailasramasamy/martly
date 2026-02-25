@@ -151,9 +151,9 @@ export async function storeRoutes(app: FastifyInstance) {
 
   // Get store products (guests allowed)
   app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticateOptional] }, async (request, reply) => {
-    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, foodType } = request.query as {
+    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, foodType, productId } = request.query as {
       page?: number; pageSize?: number; isFeatured?: string; hasDiscount?: string;
-      sortBy?: string; q?: string; categoryId?: string; foodType?: string;
+      sortBy?: string; q?: string; categoryId?: string; foodType?: string; productId?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -165,6 +165,9 @@ export async function storeRoutes(app: FastifyInstance) {
     }
 
     const where: Record<string, unknown> = { storeId: request.params.id, isActive: true };
+    if (productId) {
+      where.productId = productId;
+    }
     if (isFeatured === "true") {
       where.isFeatured = true;
     }
@@ -183,7 +186,20 @@ export async function storeRoutes(app: FastifyInstance) {
       where.product = { name: { contains: q, mode: "insensitive" } };
     }
     if (categoryId) {
-      where.product = { ...(where.product as Record<string, unknown> ?? {}), categoryId };
+      // Collect category + all descendant IDs for hierarchical filtering
+      const allCats = await app.prisma.category.findMany({ select: { id: true, parentId: true } });
+      const descendantIds = new Set<string>([categoryId]);
+      let changed = true;
+      while (changed) {
+        changed = false;
+        for (const cat of allCats) {
+          if (cat.parentId && descendantIds.has(cat.parentId) && !descendantIds.has(cat.id)) {
+            descendantIds.add(cat.id);
+            changed = true;
+          }
+        }
+      }
+      where.product = { ...(where.product as Record<string, unknown> ?? {}), categoryId: { in: Array.from(descendantIds) } };
     }
     if (foodType) {
       where.product = { ...(where.product as Record<string, unknown> ?? {}), foodType };

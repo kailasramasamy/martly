@@ -9,7 +9,10 @@
     "start": "node dist/server.js",
     "lint": "eslint src/",
     "seed:catalog": "tsx prisma/seed-catalog.ts",
-    "seed:master-catalog": "tsx prisma/seed-master-catalog.ts"
+    "seed:master-catalog": "tsx prisma/seed-master-catalog.ts",
+    "seed:collections": "tsx prisma/seed-collections.ts",
+    "seed:home-test": "tsx prisma/seed-home-test.ts",
+    "seed:category-tree": "tsx prisma/seed-category-tree.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.993.0",

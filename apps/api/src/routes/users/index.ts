@@ -12,8 +12,8 @@ export async function userRoutes(app: FastifyInstance) {
     "/",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request) => {
-      const { page = 1, pageSize = 20, q } = request.query as {
-        page?: number; pageSize?: number; q?: string;
+      const { page = 1, pageSize = 20, q, role: roleFilter } = request.query as {
+        page?: number; pageSize?: number; q?: string; role?: string;
       };
       const skip = (Number(page) - 1) * Number(pageSize);
       const user = getOrgUser(request);
@@ -25,11 +25,12 @@ export async function userRoutes(app: FastifyInstance) {
             store: { select: { id: true, name: true, organization: { select: { id: true, name: true } } } },
           },
         },
+        _count: { select: { orders: true } },
       };
 
       if (user.role === "SUPER_ADMIN") {
         const where: Record<string, unknown> = {
-          role: { not: "CUSTOMER" },
+          role: roleFilter ? roleFilter : { not: "CUSTOMER" },
         };
         if (q) {
           where.OR = [
@@ -107,7 +108,11 @@ export async function userRoutes(app: FastifyInstance) {
     async (request, reply) => {
       const targetUser = await app.prisma.user.findUnique({
         where: { id: request.params.id },
-        select: { id: true, email: true, name: true, phone: true, role: true, createdAt: true, updatedAt: true },
+        select: {
+          id: true, email: true, name: true, phone: true, role: true, createdAt: true, updatedAt: true,
+          _count: { select: { orders: true } },
+          addresses: { select: { id: true, label: true, address: true, isDefault: true }, orderBy: [{ isDefault: "desc" }, { createdAt: "desc" }] },
+        },
       });
       if (!targetUser) return reply.notFound("User not found");
 

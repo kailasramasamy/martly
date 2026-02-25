@@ -30,6 +30,15 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage users" };
     }
 
+    // Customers: SUPER_ADMIN and ORG_ADMIN can view
+    if (resource === "customers") {
+      if (role === "ORG_ADMIN") {
+        if (action === "list" || action === "show") return { can: true };
+        return { can: false };
+      }
+      return { can: false, reason: "Only Super Admin or Org Admin can view customers" };
+    }
+
     // Categories, brands: read OK, write SUPER_ADMIN only
     if (["categories", "brands"].includes(resource || "")) {
       if (action === "list" || action === "show") {
@@ -53,6 +62,13 @@ export const accessControlProvider: AccessControlProvider = {
         return { can: true };
       }
       return { can: false, reason: "Only Super Admin or Org Admin can modify products" };
+    }
+
+    // Collections: ORG_ADMIN full access, others read-only
+    if (resource === "collections") {
+      if (role === "ORG_ADMIN") return { can: true };
+      if (action === "list" || action === "show") return { can: true };
+      return { can: false };
     }
 
     // Everything else: allow

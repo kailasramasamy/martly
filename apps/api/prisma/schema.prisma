@@ -103,8 +103,9 @@ model Organization {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  stores   Store[]
-  products Product[]
+  stores      Store[]
+  products    Product[]
+  collections Collection[]
 
   @@map("organizations")
 }
@@ -241,9 +242,10 @@ model Product {
   organization  Organization?    @relation(fields: [organizationId], references: [id])
   category      Category?        @relation(fields: [categoryId], references: [id])
   brand         Brand?           @relation(fields: [brandId], references: [id])
-  variants      ProductVariant[]
-  storeProducts StoreProduct[]
-  orderItems    OrderItem[]
+  variants        ProductVariant[]
+  storeProducts   StoreProduct[]
+  orderItems      OrderItem[]
+  collectionItems CollectionItem[]
 
   @@index([productType])
   @@index([organizationId])
@@ -358,4 +360,38 @@ model OrderItem {
   storeProduct StoreProduct   @relation(fields: [storeProductId], references: [id])
 
   @@map("order_items")
+}
+
+model Collection {
+  id             String   @id @default(uuid())
+  organizationId String?  @map("organization_id")
+  title          String
+  subtitle       String?
+  slug           String   @unique
+  imageUrl       String?  @map("image_url")
+  sortOrder      Int      @default(0) @map("sort_order")
+  isActive       Boolean  @default(true) @map("is_active")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  organization Organization? @relation(fields: [organizationId], references: [id])
+  items        CollectionItem[]
+
+  @@index([organizationId])
+  @@index([isActive, sortOrder])
+  @@map("collections")
+}
+
+model CollectionItem {
+  id           String   @id @default(uuid())
+  collectionId String   @map("collection_id")
+  productId    String   @map("product_id")
+  sortOrder    Int      @default(0) @map("sort_order")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  collection Collection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
+  product    Product    @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([collectionId, productId])
+  @@map("collection_items")
 }

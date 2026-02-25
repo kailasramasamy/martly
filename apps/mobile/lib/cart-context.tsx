@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useCallback, useMemo, type ReactNo
 
 interface CartItem {
   storeProductId: string;
+  productId: string;
   productName: string;
   variantId: string;
   variantName: string;
@@ -20,6 +21,7 @@ interface CartState {
   clearCart: () => void;
   totalAmount: number;
   itemCount: number;
+  productQuantityMap: Map<string, number>;
 }
 
 const CartContext = createContext<CartState | null>(null);
@@ -90,10 +92,17 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const totalAmount = useMemo(() => items.reduce((sum, i) => sum + i.price * i.quantity, 0), [items]);
   const itemCount = useMemo(() => items.reduce((sum, i) => sum + i.quantity, 0), [items]);
+  const productQuantityMap = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const item of items) {
+      map.set(item.productId, (map.get(item.productId) ?? 0) + item.quantity);
+    }
+    return map;
+  }, [items]);
 
   return (
     <CartContext.Provider
-      value={{ storeId, storeName, items, addItem, removeItem, updateQuantity, clearCart, totalAmount, itemCount }}
+      value={{ storeId, storeName, items, addItem, removeItem, updateQuantity, clearCart, totalAmount, itemCount, productQuantityMap }}
     >
       {children}
     </CartContext.Provider>

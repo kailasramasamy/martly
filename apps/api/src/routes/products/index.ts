@@ -214,7 +214,13 @@ export async function productRoutes(app: FastifyInstance) {
   app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticateOptional] }, async (request, reply) => {
     const product = await app.prisma.product.findUnique({
       where: { id: request.params.id },
-      include: { category: true, brand: true, variants: true },
+      include: {
+        category: {
+          include: { parent: { include: { parent: { include: { parent: true } } } } },
+        },
+        brand: true,
+        variants: true,
+      },
     });
     if (!product) return reply.notFound("Product not found");
 
@@ -226,13 +232,9 @@ export async function productRoutes(app: FastifyInstance) {
       return response;
     }
 
-    // Org products: only that org's users + SUPER_ADMIN
-    if (user.role === "SUPER_ADMIN" || user.organizationId === product.organizationId) {
-      const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
-      return response;
-    }
-
-    return reply.forbidden("Access denied");
+    // Org products: anyone can read (customers browse products from any org via stores)
+    const response: ApiResponse<typeof product> = { success: true, data: formatProductUnits(product) };
+    return response;
   });
 
   // Create product with variants (SUPER_ADMIN → master catalog, ORG_ADMIN → org catalog)

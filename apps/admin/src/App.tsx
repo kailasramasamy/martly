@@ -20,6 +20,7 @@ import {
   InboxOutlined,
   ContainerOutlined,
   StarOutlined,
+  AppstoreAddOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -64,6 +65,11 @@ import { BrandEdit } from "./pages/brands/edit";
 import { UserList } from "./pages/users/list";
 import { UserCreate } from "./pages/users/create";
 import { UserEdit } from "./pages/users/edit";
+import { CustomerList } from "./pages/customers/list";
+import { CustomerShow } from "./pages/customers/show";
+import { CollectionList } from "./pages/collections/list";
+import { CollectionCreate } from "./pages/collections/create";
+import { CollectionEdit } from "./pages/collections/edit";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -157,6 +163,12 @@ export default function App() {
                 meta: { label: "Users", icon: <TeamOutlined /> },
               },
               {
+                name: "customers",
+                list: "/customers",
+                show: "/customers/show/:id",
+                meta: { label: "Customers", icon: <UserOutlined /> },
+              },
+              {
                 name: "stores",
                 list: "/stores",
                 create: "/stores/create",
@@ -194,6 +206,17 @@ export default function App() {
                 name: "featured-products",
                 list: "/featured-products",
                 meta: { label: "Featured", icon: <StarOutlined />, parent: "inventory" },
+              },
+              {
+                name: "marketing",
+                meta: { label: "Marketing", icon: <AppstoreAddOutlined /> },
+              },
+              {
+                name: "collections",
+                list: "/collections",
+                create: "/collections/create",
+                edit: "/collections/edit/:id",
+                meta: { label: "Collections", icon: <AppstoreOutlined />, parent: "marketing" },
               },
               {
                 name: "store-products",
@@ -242,6 +265,10 @@ export default function App() {
                   <Route path="create" element={<UserCreate />} />
                   <Route path="edit/:id" element={<UserEdit />} />
                 </Route>
+                <Route path="/customers">
+                  <Route index element={<CustomerList />} />
+                  <Route path="show/:id" element={<CustomerShow />} />
+                </Route>
                 <Route path="/stores">
                   <Route index element={<StoreList />} />
                   <Route path="create" element={<StoreCreate />} />
@@ -274,6 +301,11 @@ export default function App() {
                 <Route path="/orders">
                   <Route index element={<OrderList />} />
                   <Route path="show/:id" element={<OrderShow />} />
+                </Route>
+                <Route path="/collections">
+                  <Route index element={<CollectionList />} />
+                  <Route path="create" element={<CollectionCreate />} />
+                  <Route path="edit/:id" element={<CollectionEdit />} />
                 </Route>
                 <Route path="/stock" element={<StockPage />} />
                 <Route path="/featured-products" element={<FeaturedProductsPage />} />

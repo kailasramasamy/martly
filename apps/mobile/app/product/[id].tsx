@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, useCallback } from "react";
 import {
   View,
   Text,
@@ -12,13 +12,14 @@ import {
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from "react-native";
-import { useLocalSearchParams } from "expo-router";
+import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
-import { ProductCard } from "../../components/ProductCard";
+import { FeaturedProductCard } from "../../components/FeaturedProductCard";
+import { VariantBottomSheet } from "../../components/VariantBottomSheet";
 import { FloatingCart } from "../../components/FloatingCart";
 import { ProductDetailSkeleton } from "../../components/SkeletonLoader";
 import type { Product, StoreProduct, Variant } from "../../lib/types";
@@ -34,6 +35,7 @@ export default function ProductDetailScreen() {
   const { selectedStore } = useStore();
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
 
+  const navigation = useNavigation();
   const storeId = paramStoreId || selectedStore?.id;
   const storeName = selectedStore?.name ?? "";
 
@@ -55,6 +57,9 @@ export default function ProductDetailScreen() {
     return imgs;
   }, [product]);
 
+  const [sheetVisible, setSheetVisible] = useState(false);
+  const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
+
   const cartQuantityMap = useMemo(() => {
     const map = new Map<string, number>();
     for (const item of cartItems) {
@@ -63,33 +68,73 @@ export default function ProductDetailScreen() {
     return map;
   }, [cartItems]);
 
+  // Group related products by product.id — pick cheapest as primary
+  const { groupedRelated, relatedVariantsMap } = useMemo(() => {
+    const groups = new Map<string, StoreProduct[]>();
+    for (const sp of relatedProducts) {
+      if (!sp.product) continue;
+      const pid = sp.product.id;
+      if (!groups.has(pid)) groups.set(pid, []);
+      groups.get(pid)!.push(sp);
+    }
+
+    const primary: StoreProduct[] = [];
+    const variantsMap = new Map<string, StoreProduct[]>();
+    for (const [pid, variants] of groups) {
+      const sorted = [...variants].sort((a, b) => {
+        const priceA = a.pricing?.discountActive ? a.pricing.effectivePrice : Number(a.price);
+        const priceB = b.pricing?.discountActive ? b.pricing.effectivePrice : Number(b.price);
+        return priceA - priceB;
+      });
+      primary.push(sorted[0]);
+      variantsMap.set(pid, sorted);
+    }
+
+    return { groupedRelated: primary, relatedVariantsMap: variantsMap };
+  }, [relatedProducts]);
+
+  const handleShowVariants = useCallback(
+    (productId: string) => {
+      const variants = relatedVariantsMap.get(productId);
+      if (variants) {
+        setSheetVariants(variants);
+        setSheetVisible(true);
+      }
+    },
+    [relatedVariantsMap],
+  );
+
+  useEffect(() => {
+    if (product?.name) {
+      navigation.setOptions({ title: product.name });
+    }
+  }, [product?.name, navigation]);
+
   useEffect(() => {
     if (!id) return;
 
     const fetchProduct = api.get<ProductDetail>(`/api/v1/products/${id}`);
 
     const fetchStoreProducts = storeId
-      ? api.getList<StoreProduct>(`/api/v1/stores/${storeId}/products`).then((res) =>
-          res.data.filter((sp) => sp.product.id === id),
-        )
+      ? api.getList<StoreProduct>(`/api/v1/stores/${storeId}/products?productId=${id}`)
+          .then((res) => res.data)
       : Promise.resolve([]);
 
-    const fetchRelated = storeId
-      ? api.getList<StoreProduct>(`/api/v1/stores/${storeId}/products`).then((res) => res.data)
-      : Promise.resolve([]);
-
-    Promise.all([fetchProduct, fetchStoreProducts, fetchRelated])
-      .then(([productRes, storeProd, allStoreProd]) => {
+    Promise.all([fetchProduct, fetchStoreProducts])
+      .then(([productRes, storeProd]) => {
         setProduct(productRes.data);
         setStoreProducts(storeProd);
 
-        // Related = same category, different product, max 10
+        // Fetch related products by category
         const catId = productRes.data.category?.id;
-        if (catId) {
-          const related = allStoreProd
-            .filter((sp) => sp.product.category?.id === catId && sp.product.id !== id)
-            .slice(0, 10);
-          setRelatedProducts(related);
+        if (catId && storeId) {
+          api.getList<StoreProduct>(`/api/v1/stores/${storeId}/products?categoryId=${catId}&pageSize=11`)
+            .then((res) => {
+              setRelatedProducts(
+                res.data.filter((sp) => sp.product.id !== id).slice(0, 10),
+              );
+            })
+            .catch(() => {});
         }
       })
       .catch(() => {})
@@ -105,6 +150,7 @@ export default function ProductDetailScreen() {
 
     const item = {
       storeProductId: sp.id,
+      productId: sp.product.id,
       productName: sp.product.name,
       variantId: sp.variant.id,
       variantName: sp.variant.name,
@@ -146,7 +192,8 @@ export default function ProductDetailScreen() {
   const nutritionalEntries = nutritionalInfo ? Object.entries(nutritionalInfo) : [];
 
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
+    <ScrollView style={styles.scrollView}>
       {/* Image Gallery */}
       {images.length > 0 ? (
         <View>
@@ -158,7 +205,9 @@ export default function ProductDetailScreen() {
             scrollEventThrottle={16}
           >
             {images.map((uri, idx) => (
-              <Image key={idx} source={{ uri }} style={styles.heroImage} />
+              <View key={idx} style={styles.heroImageWrap}>
+                <Image source={{ uri }} style={styles.heroImage} resizeMode="contain" />
+              </View>
             ))}
           </ScrollView>
           {images.length > 1 && (
@@ -170,7 +219,7 @@ export default function ProductDetailScreen() {
           )}
         </View>
       ) : (
-        <View style={[styles.heroImage, styles.heroPlaceholder]}>
+        <View style={[styles.heroImageWrap, styles.heroPlaceholder]}>
           <Text style={styles.heroPlaceholderText}>No image</Text>
         </View>
       )}
@@ -317,11 +366,11 @@ export default function ProductDetailScreen() {
         )}
 
         {/* Allergens */}
-        {product.allergens && (
+        {product.allergens?.length > 0 && (
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Allergens</Text>
             <View style={styles.allergenBadge}>
-              <Text style={styles.allergenText}>{product.allergens}</Text>
+              <Text style={styles.allergenText}>{Array.isArray(product.allergens) ? product.allergens.join(", ") : product.allergens}</Text>
             </View>
           </View>
         )}
@@ -379,40 +428,56 @@ export default function ProductDetailScreen() {
         )}
 
         {/* Related Products */}
-        {relatedProducts.length > 0 && (
+        {groupedRelated.length > 0 && (
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Related Products</Text>
             <FlatList
               horizontal
-              data={relatedProducts}
+              data={groupedRelated}
               keyExtractor={(item) => item.id}
               showsHorizontalScrollIndicator={false}
-              renderItem={({ item }) => (
-                <View style={styles.relatedCard}>
-                  <ProductCard
+              contentContainerStyle={styles.relatedList}
+              renderItem={({ item }) => {
+                const variants = relatedVariantsMap.get(item.product.id);
+                return (
+                  <FeaturedProductCard
                     item={item}
                     onAddToCart={handleAddToCart}
                     onUpdateQuantity={updateQuantity}
                     quantity={cartQuantityMap.get(item.id) ?? 0}
                     storeId={storeId}
+                    variantCount={variants?.length ?? 1}
+                    onShowVariants={() => handleShowVariants(item.product.id)}
                   />
-                </View>
-              )}
+                );
+              }}
             />
           </View>
         )}
       </View>
-      <FloatingCart />
+      <View style={{ height: 80 }} />
     </ScrollView>
+    <FloatingCart />
+    <VariantBottomSheet
+      visible={sheetVisible}
+      onClose={() => setSheetVisible(false)}
+      variants={sheetVariants}
+      onAddToCart={handleAddToCart}
+      onUpdateQuantity={updateQuantity}
+      cartQuantityMap={cartQuantityMap}
+    />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
+  scrollView: { flex: 1 },
   center: { flex: 1, justifyContent: "center", alignItems: "center" },
   emptyText: { fontSize: fontSize.lg, color: colors.textSecondary },
-  heroImage: { width: SCREEN_WIDTH, height: 280 },
-  heroPlaceholder: { backgroundColor: "#f0f0f0", justifyContent: "center", alignItems: "center" },
+  heroImageWrap: { width: SCREEN_WIDTH, aspectRatio: 1, backgroundColor: "#f1f5f9", justifyContent: "center", alignItems: "center" },
+  heroImage: { width: "100%", height: "100%" },
+  heroPlaceholder: { backgroundColor: "#f1f5f9", justifyContent: "center", alignItems: "center" },
   heroPlaceholderText: { fontSize: fontSize.lg, color: colors.textSecondary },
   dotRow: { flexDirection: "row", justifyContent: "center", paddingVertical: spacing.sm },
   dot: { width: 8, height: 8, borderRadius: 4, backgroundColor: colors.border, marginHorizontal: 3 },
@@ -540,5 +605,5 @@ const styles = StyleSheet.create({
   },
   dangerText: { fontSize: fontSize.sm, color: "#92400e" },
   metaText: { fontSize: fontSize.md, color: colors.textSecondary, marginTop: spacing.xs },
-  relatedCard: { width: 280, marginRight: spacing.sm },
+  relatedList: { gap: spacing.sm },
 });

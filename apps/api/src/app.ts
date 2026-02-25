@@ -19,6 +19,8 @@ import { brandRoutes } from "./routes/brands/index.js";
 import { userRoutes } from "./routes/users/index.js";
 import { stockRoutes } from "./routes/stock/index.js";
 import { addressRoutes } from "./routes/addresses/index.js";
+import { collectionRoutes } from "./routes/collections/index.js";
+import { homeRoutes } from "./routes/home/index.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -85,6 +87,8 @@ export async function buildApp() {
       await api.register(userRoutes, { prefix: "/users" });
       await api.register(stockRoutes, { prefix: "/stock" });
       await api.register(addressRoutes, { prefix: "/addresses" });
+      await api.register(collectionRoutes, { prefix: "/collections" });
+      await api.register(homeRoutes, { prefix: "/home" });
     },
     { prefix: "/api/v1" },
   );

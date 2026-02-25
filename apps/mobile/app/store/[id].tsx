@@ -102,6 +102,7 @@ export default function StoreDetailScreen() {
 
     const item = {
       storeProductId: sp.id,
+      productId: sp.product.id,
       productName: sp.product.name,
       variantId: sp.variant.id,
       variantName: sp.variant.name,

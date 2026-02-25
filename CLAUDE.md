@@ -122,6 +122,11 @@ Registered in `src/app.ts` with `app.register(module, { prefix: '/api/v1/<resour
 - Org-scoped models must have `organizationId` with relation to `Organization`
 - Enums: `UserRole`, `StoreStatus`, `OrderStatus`, `PaymentStatus`, `UnitType`, `FoodType`, `ProductType`, `StorageType`, `DiscountType`
 
+## Code Quality
+
+- Every fix must be production-ready — no workarounds, hacks, or temporary patches. If a problem requires API changes, schema changes, or restructuring across apps, do that. Don't paper over issues on the client when the proper fix belongs on the server (or vice versa).
+- Free to change APIs, admin, and mobile app as needed to get the right solution. Cross-cutting changes are expected and preferred over fragile single-layer workarounds.
+
 ## Key File Paths
 
 | What | Path |

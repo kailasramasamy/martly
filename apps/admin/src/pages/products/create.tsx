@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
-import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Checkbox, Typography, Tag, theme } from "antd";
+import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Cascader, Checkbox, Typography, Tag, theme } from "antd";
 import {
   MinusCircleOutlined,
   PlusOutlined,
@@ -115,17 +115,39 @@ interface StoreRecord {
   status: string;
 }
 
+interface CategoryTreeNode {
+  id: string;
+  name: string;
+  children: CategoryTreeNode[];
+}
+
+interface CascaderOption {
+  value: string;
+  label: string;
+  children?: CascaderOption[];
+}
+
+function buildCascaderOptions(nodes: CategoryTreeNode[]): CascaderOption[] {
+  return nodes.map((n) => ({
+    value: n.id,
+    label: n.name,
+    children: n.children?.length ? buildCascaderOptions(n.children) : undefined,
+  }));
+}
+
 export const ProductCreate = () => {
   const { token } = theme.useToken();
   const { formProps, saveButtonProps } = useForm({ resource: "products" });
   const { data: identity } = useGetIdentity<{ role: string }>();
   const isOrgAdmin = identity?.role === "ORG_ADMIN";
 
-  const { selectProps: categorySelectProps } = useSelect({
-    resource: "categories",
-    optionLabel: "name",
-    optionValue: "id",
-  });
+  const [cascaderOptions, setCascaderOptions] = useState<CascaderOption[]>([]);
+
+  useEffect(() => {
+    axiosInstance.get("/categories/tree").then((res) => {
+      setCascaderOptions(buildCascaderOptions(res.data.data));
+    }).catch(() => {});
+  }, []);
 
   const { selectProps: brandSelectProps } = useSelect({
     resource: "brands",
@@ -148,12 +170,15 @@ export const ProductCreate = () => {
     }).catch(() => {});
   }, [isOrgAdmin]);
 
-  // Inject storeIds into form submission
+  // Inject storeIds and transform categoryPath → categoryId
   const originalOnFinish = formProps.onFinish;
   const handleFinish = (values: Record<string, unknown>) => {
     if (isOrgAdmin && storesLoaded) {
       values.storeIds = selectedStoreIds;
     }
+    const path = values.categoryPath as string[] | undefined;
+    values.categoryId = path?.length ? path[path.length - 1] : null;
+    delete values.categoryPath;
     originalOnFinish?.(values);
   };
 
@@ -181,8 +206,17 @@ export const ProductCreate = () => {
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>
-                  <Form.Item label="Category" name="categoryId">
-                    <Select {...categorySelectProps} allowClear placeholder="Select category" />
+                  <Form.Item label="Category" name="categoryPath">
+                    <Cascader
+                      options={cascaderOptions}
+                      changeOnSelect
+                      allowClear
+                      placeholder="Select category"
+                      showSearch={{
+                        filter: (input, path) =>
+                          path.some((opt) => String(opt.label).toLowerCase().includes(input.toLowerCase())),
+                      }}
+                    />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>

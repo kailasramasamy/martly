@@ -407,3 +407,27 @@ export const updateOrderStatusSchema = z.object({
   status: z.nativeEnum(OrderStatus),
 });
 export type UpdateOrderStatusInput = z.infer<typeof updateOrderStatusSchema>;
+
+// ── Collection ──────────────────────────────────────
+export const createCollectionSchema = z.object({
+  title: z.string().min(1),
+  subtitle: z.string().optional(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  imageUrl: z.string().url().optional(),
+  organizationId: z.string().uuid().nullish(),
+  sortOrder: z.number().int().min(0).optional(),
+  isActive: z.boolean().optional(),
+  productIds: z.array(z.string().uuid()).optional(),
+});
+export type CreateCollectionInput = z.infer<typeof createCollectionSchema>;
+
+export const updateCollectionSchema = z.object({
+  title: z.string().min(1).optional(),
+  subtitle: z.string().nullish(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  imageUrl: z.string().url().nullish(),
+  sortOrder: z.number().int().min(0).optional(),
+  isActive: z.boolean().optional(),
+  productIds: z.array(z.string().uuid()).optional(),
+});
+export type UpdateCollectionInput = z.infer<typeof updateCollectionSchema>;

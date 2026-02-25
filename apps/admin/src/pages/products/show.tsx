@@ -18,6 +18,17 @@ import { sectionTitle } from "../../theme";
 const { Text } = Typography;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+const getCategoryBreadcrumb = (category: any): string[] => {
+  const parts: string[] = [];
+  let current = category;
+  while (current) {
+    parts.unshift(current.name);
+    current = current.parent;
+  }
+  return parts;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const parseNutritionalData = (data: any): any => {
   if (typeof data === "string") {
     try { return JSON.parse(data); } catch { return null; }
@@ -101,7 +112,11 @@ export const ProductShow = () => {
             <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
               <Descriptions.Item label="Name">{record.name}</Descriptions.Item>
               <Descriptions.Item label="Brand">{record.brand?.name ?? "—"}</Descriptions.Item>
-              <Descriptions.Item label="Category">{record.category?.name ?? "—"}</Descriptions.Item>
+              <Descriptions.Item label="Category">
+                {record.category
+                  ? getCategoryBreadcrumb(record.category).join(" → ")
+                  : "—"}
+              </Descriptions.Item>
               <Descriptions.Item label="Product Type">
                 {productTypeConfig ? <Tag color={productTypeConfig.color}>{productTypeConfig.label}</Tag> : <Text>{record.productType ?? "—"}</Text>}
               </Descriptions.Item>

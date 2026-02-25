@@ -12,9 +12,11 @@ interface FeaturedProductCardProps {
   onUpdateQuantity: (storeProductId: string, quantity: number) => void;
   quantity?: number;
   storeId?: string;
+  variantCount?: number;
+  onShowVariants?: () => void;
 }
 
-export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId }: FeaturedProductCardProps) {
+export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants }: FeaturedProductCardProps) {
   const hasDiscount = item.pricing?.discountActive;
   const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
@@ -101,23 +103,47 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
             )}
           </View>
           {quantity > 0 ? (
-            <View style={styles.qtyStepper}>
+            variantCount > 1 ? (
               <TouchableOpacity
-                style={styles.qtyBtn}
-                onPress={() => onUpdateQuantity(item.id, quantity - 1)}
-                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                style={styles.qtyBadge}
+                onPress={onShowVariants}
+                activeOpacity={0.7}
               >
-                <Ionicons name={quantity === 1 ? "trash-outline" : "remove"} size={14} color={colors.primary} />
+                <Ionicons name="checkmark" size={12} color="#fff" />
+                <Text style={styles.qtyBadgeText}>{quantity}</Text>
               </TouchableOpacity>
-              <Text style={styles.qtyText}>{quantity}</Text>
-              <TouchableOpacity
-                style={styles.qtyBtn}
-                onPress={() => onAddToCart(item)}
-                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-              >
-                <Ionicons name="add" size={14} color={colors.primary} />
-              </TouchableOpacity>
-            </View>
+            ) : (
+              <View style={styles.qtyStepper}>
+                <TouchableOpacity
+                  style={styles.qtyBtn}
+                  onPress={() => onUpdateQuantity(item.id, quantity - 1)}
+                  hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                >
+                  <Ionicons name={quantity === 1 ? "trash-outline" : "remove"} size={14} color={colors.primary} />
+                </TouchableOpacity>
+                <Text style={styles.qtyText}>{quantity}</Text>
+                <TouchableOpacity
+                  style={styles.qtyBtn}
+                  onPress={() => onAddToCart(item)}
+                  hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                >
+                  <Ionicons name="add" size={14} color={colors.primary} />
+                </TouchableOpacity>
+              </View>
+            )
+          ) : variantCount > 1 ? (
+            <TouchableOpacity
+              style={styles.stackedBtn}
+              onPress={onShowVariants}
+              activeOpacity={0.7}
+            >
+              <View style={styles.optionsBtn}>
+                <Text style={styles.optionsBtnText}>{variantCount} options</Text>
+              </View>
+              <View style={styles.stackedAddBtn}>
+                <Text style={styles.stackedAddBtnText}>ADD</Text>
+              </View>
+            </TouchableOpacity>
           ) : (
             <TouchableOpacity
               style={[
@@ -223,6 +249,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: colors.text,
     lineHeight: 17,
+    height: 34,
   },
   unit: {
     fontSize: 11,
@@ -301,5 +328,47 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "700",
     color: "#94a3b8",
+  },
+  stackedBtn: {
+    borderRadius: 6,
+    overflow: "hidden",
+    borderWidth: 1.5,
+    borderColor: colors.primary,
+  },
+  optionsBtn: {
+    backgroundColor: colors.primary,
+    paddingVertical: 2,
+    paddingHorizontal: 8,
+    alignItems: "center",
+  },
+  optionsBtnText: {
+    fontSize: 9,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  stackedAddBtn: {
+    backgroundColor: "#fff",
+    paddingVertical: 3,
+    paddingHorizontal: 8,
+    alignItems: "center",
+  },
+  stackedAddBtnText: {
+    fontSize: 12,
+    fontWeight: "700",
+    color: colors.primary,
+  },
+  qtyBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: colors.primary,
+    borderRadius: 6,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    gap: 4,
+  },
+  qtyBadgeText: {
+    fontSize: 12,
+    fontWeight: "700",
+    color: "#fff",
   },
 });
