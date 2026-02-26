@@ -4,6 +4,10 @@ export interface Store {
   address: string;
   phone?: string | null;
   status?: string;
+  latitude?: number | null;
+  longitude?: number | null;
+  deliveryRadius?: number;
+  distance?: number;
 }
 
 export interface Variant {
@@ -56,6 +60,8 @@ export interface Product {
   storageInstructions?: string | null;
   manufacturer?: string | null;
   countryOfOrigin?: string | null;
+  averageRating?: number;
+  reviewCount?: number;
 }
 
 export interface UserAddress {
@@ -63,6 +69,9 @@ export interface UserAddress {
   userId: string;
   label: string;
   address: string;
+  latitude?: number | null;
+  longitude?: number | null;
+  pincode?: string | null;
   isDefault: boolean;
   createdAt: string;
   updatedAt: string;
@@ -109,4 +118,79 @@ export interface HomeFeed {
   timePeriod: string;
   deals: StoreProduct[];
   buyAgain: StoreProduct[];
+}
+
+export interface Review {
+  id: string;
+  userId: string;
+  productId: string;
+  rating: number;
+  title: string | null;
+  comment: string | null;
+  isVerified: boolean;
+  status: string;
+  createdAt: string;
+  user: { id: string; name: string };
+}
+
+export interface ReviewSummary {
+  average: number;
+  count: number;
+  distribution: Record<number, number>;
+}
+
+export interface CouponValidation {
+  valid: boolean;
+  discount: number;
+  code: string;
+  description: string | null;
+}
+
+export interface DeliveryZoneInfo {
+  deliveryFee: number;
+  estimatedMinutes: number;
+}
+
+export type FulfillmentType = "DELIVERY" | "PICKUP";
+
+export interface DeliveryLookupResult {
+  serviceable: boolean;
+  distance?: number;
+  deliveryFee?: number;
+  estimatedMinutes?: number;
+  reason?: string;
+  pickupAvailable?: boolean;
+  storeName?: string;
+  storeAddress?: string;
+}
+
+export interface OrderStatusLog {
+  id: string;
+  orderId: string;
+  status: string;
+  note: string | null;
+  createdAt: string;
+}
+
+export interface LoyaltyConfig {
+  isEnabled: boolean;
+  earnRate: number;
+  minRedeemPoints: number;
+  maxRedeemPercentage: number;
+}
+
+export interface LoyaltyTransaction {
+  id: string;
+  type: "EARN" | "REDEEM" | "REVERSAL" | "ADJUSTMENT";
+  points: number;
+  balanceAfter: number;
+  description: string | null;
+  orderId: string | null;
+  createdAt: string;
+}
+
+export interface LoyaltyData {
+  config: LoyaltyConfig | null;
+  balance: { points: number; totalEarned: number; totalRedeemed: number };
+  transactions: LoyaltyTransaction[];
 }

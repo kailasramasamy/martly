@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { Show, ShowButton } from "@refinedev/antd";
-import { useShow, useList } from "@refinedev/core";
-import { useParams } from "react-router";
+import { useShow, useList, useDelete } from "@refinedev/core";
+import { useParams, useNavigate } from "react-router";
 import {
   Typography,
   Descriptions,
@@ -13,16 +14,24 @@ import {
   Avatar,
   Space,
   Empty,
+  Button,
+  Modal,
+  Alert,
+  Steps,
+  Spin,
 } from "antd";
 import {
   UserOutlined,
   ShoppingCartOutlined,
-  DollarOutlined,
   CalendarOutlined,
   MailOutlined,
   PhoneOutlined,
   EnvironmentOutlined,
   CheckCircleFilled,
+  CreditCardOutlined,
+  DollarOutlined,
+  DeleteOutlined,
+  ExclamationCircleFilled,
 } from "@ant-design/icons";
 import dayjs from "dayjs";
 import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG } from "../../constants/tag-colors";
@@ -49,14 +58,19 @@ interface OrderRecord {
 
 export const CustomerShow = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const { query } = useShow({ resource: "users", id });
   const { data, isLoading } = query;
   const record = data?.data;
+  const [deleteModalOpen, setDeleteModalOpen] = useState(false);
+
+  const { mutate: deleteUser, isLoading: isDeleting } = useDelete();
 
   const { data: ordersData, isLoading: ordersLoading } = useList({
     resource: "orders",
     filters: [{ field: "userId", operator: "eq", value: id }],
     pagination: { pageSize: 100 },
+    sorters: [{ field: "createdAt", order: "desc" }],
     queryOptions: { enabled: !!id },
   });
 
@@ -64,9 +78,36 @@ export const CustomerShow = () => {
   const nonCancelledOrders = orders.filter((o) => o.status !== "CANCELLED");
   const totalSpent = nonCancelledOrders.reduce((sum, o) => sum + Number(o.totalAmount), 0);
   const addresses = (record?.addresses as AddressRecord[] | undefined) ?? [];
+  const reviewCount = (record as any)?._count?.reviews ?? 0;
+
+  const handleDelete = () => {
+    if (!id) return;
+    deleteUser(
+      { resource: "users", id },
+      {
+        onSuccess: () => {
+          setDeleteModalOpen(false);
+          navigate("/customers");
+        },
+      },
+    );
+  };
 
   return (
-    <Show isLoading={isLoading} canEdit={false} canDelete={false}>
+    <Show
+      isLoading={isLoading}
+      canEdit={false}
+      canDelete={false}
+      headerButtons={
+        <Button
+          danger
+          icon={<DeleteOutlined />}
+          onClick={() => setDeleteModalOpen(true)}
+        >
+          Delete Customer
+        </Button>
+      }
+    >
       <Row gutter={[16, 16]}>
         {/* Left sidebar: Profile + Addresses */}
         <Col xs={24} lg={7}>
@@ -160,8 +201,8 @@ export const CustomerShow = () => {
                 <Statistic
                   title="Total Spent"
                   value={totalSpent}
-                  precision={2}
-                  prefix={<DollarOutlined style={{ color: BRAND.success }} />}
+                  precision={0}
+                  prefix={<><CreditCardOutlined style={{ color: BRAND.success }} /> ₹</>}
                 />
               </Card>
             </Col>
@@ -170,8 +211,8 @@ export const CustomerShow = () => {
                 <Statistic
                   title="Avg. Order"
                   value={nonCancelledOrders.length > 0 ? totalSpent / nonCancelledOrders.length : 0}
-                  precision={2}
-                  prefix={<DollarOutlined style={{ color: BRAND.info }} />}
+                  precision={0}
+                  prefix={<><DollarOutlined style={{ color: BRAND.info }} /> ₹</>}
                 />
               </Card>
             </Col>
@@ -198,40 +239,40 @@ export const CustomerShow = () => {
                   <Table.Column
                     dataIndex="id"
                     title="Order ID"
+                    width={100}
                     render={(v: string) => (
-                      <Text copyable={{ text: v }} style={{ fontFamily: "monospace", fontSize: 12 }}>
+                      <span style={{ fontFamily: "monospace", fontSize: 12 }}>
                         {v.slice(0, 8)}
-                      </Text>
+                      </span>
                     )}
+                  />
+                  <Table.Column
+                    dataIndex="totalAmount"
+                    title="Amount"
+                    width={100}
+                    render={(v: number) => <strong>₹{Number(v).toFixed(0)}</strong>}
                   />
                   <Table.Column
                     dataIndex="status"
                     title="Status"
-                    width={110}
+                    width={140}
                     render={(value: string) => {
                       const config = ORDER_STATUS_CONFIG[value];
                       return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
                     }}
                   />
                   <Table.Column
-                    dataIndex="totalAmount"
-                    title="Amount"
-                    width={90}
-                    align="right"
-                    render={(v: number) => <Text strong>${Number(v).toFixed(2)}</Text>}
-                  />
-                  <Table.Column
                     dataIndex="paymentMethod"
-                    title="Payment"
-                    width={90}
+                    title="Method"
+                    width={100}
                     render={(value: string) =>
                       value === "COD" ? <Tag color="orange">COD</Tag> : <Tag color="blue">Online</Tag>
                     }
                   />
                   <Table.Column
                     dataIndex="paymentStatus"
-                    title="Pay Status"
-                    width={90}
+                    title="Payment"
+                    width={100}
                     render={(value: string) => {
                       const config = PAYMENT_STATUS_CONFIG[value];
                       return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
@@ -240,12 +281,12 @@ export const CustomerShow = () => {
                   <Table.Column
                     dataIndex="createdAt"
                     title="Date"
-                    width={110}
-                    render={(value: string) => dayjs(value).format("DD MMM YYYY")}
+                    width={160}
+                    render={(v: string) => v ? new Date(v).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—"}
                   />
                   <Table.Column
                     title=""
-                    width={44}
+                    width={50}
                     render={(_, rec: OrderRecord) => (
                       <ShowButton hideText size="small" recordItemId={rec.id} resource="orders" />
                     )}
@@ -256,6 +297,77 @@ export const CustomerShow = () => {
           </Row>
         </Col>
       </Row>
+      <Modal
+        title={
+          <Space>
+            <ExclamationCircleFilled style={{ color: "#ff4d4f" }} />
+            <span>Delete Customer</span>
+          </Space>
+        }
+        open={deleteModalOpen}
+        onCancel={isDeleting ? undefined : () => setDeleteModalOpen(false)}
+        closable={!isDeleting}
+        maskClosable={!isDeleting}
+        keyboard={!isDeleting}
+        footer={isDeleting ? null : [
+          <Button key="cancel" onClick={() => setDeleteModalOpen(false)}>
+            Cancel
+          </Button>,
+          <Button
+            key="delete"
+            danger
+            type="primary"
+            onClick={handleDelete}
+          >
+            Delete Permanently
+          </Button>,
+        ]}
+      >
+        {isDeleting ? (
+          <div style={{ textAlign: "center", padding: "24px 0" }}>
+            <Spin size="large" />
+            <div style={{ marginTop: 20 }}>
+              <Typography.Title level={5} style={{ marginBottom: 4 }}>
+                Deleting customer data...
+              </Typography.Title>
+              <Text type="secondary">
+                Removing orders, reviews, addresses, and all associated records
+              </Text>
+            </div>
+            <Steps
+              direction="vertical"
+              size="small"
+              current={-1}
+              status="process"
+              style={{ marginTop: 24, textAlign: "left", maxWidth: 300, margin: "24px auto 0" }}
+              items={[
+                { title: "Removing orders & items", status: "process" },
+                { title: "Removing reviews", status: "wait" },
+                { title: "Removing addresses & tokens", status: "wait" },
+                { title: "Deleting account", status: "wait" },
+              ]}
+            />
+          </div>
+        ) : (
+          <>
+            <Alert
+              type="error"
+              showIcon
+              style={{ marginBottom: 16 }}
+              message="This action is irreversible"
+              description="All data associated with this customer will be permanently deleted."
+            />
+            <Descriptions column={1} size="small" bordered>
+              <Descriptions.Item label="Customer">{record?.name || "—"}</Descriptions.Item>
+              <Descriptions.Item label="Phone">{record?.phone || record?.email || "—"}</Descriptions.Item>
+              <Descriptions.Item label="Orders">{orders.length} order(s) + all items & status logs</Descriptions.Item>
+              <Descriptions.Item label="Addresses">{addresses.length} saved address(es)</Descriptions.Item>
+              <Descriptions.Item label="Reviews">{reviewCount} review(s)</Descriptions.Item>
+              <Descriptions.Item label="Also removed">Wishlist, device tokens, coupon usage</Descriptions.Item>
+            </Descriptions>
+          </>
+        )}
+      </Modal>
     </Show>
   );
 };

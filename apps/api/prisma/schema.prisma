@@ -89,9 +89,32 @@ enum DiscountType {
   PERCENTAGE
 }
 
+enum ReviewStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
 enum PaymentMethod {
   ONLINE
   COD
+}
+
+enum FulfillmentType {
+  DELIVERY
+  PICKUP
+}
+
+enum WalletTransactionType {
+  CREDIT
+  DEBIT
+}
+
+enum LoyaltyTransactionType {
+  EARN
+  REDEEM
+  REVERSAL
+  ADJUSTMENT
 }
 
 // ── Models ────────────────────────────────────────────
@@ -103,9 +126,14 @@ model Organization {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
-  stores      Store[]
-  products    Product[]
-  collections Collection[]
+  stores              Store[]
+  products            Product[]
+  collections         Collection[]
+  coupons             Coupon[]
+  deliveryZones       DeliveryZone[]
+  loyaltyConfig       LoyaltyConfig?
+  loyaltyBalances     LoyaltyBalance[]
+  loyaltyTransactions LoyaltyTransaction[]
 
   @@map("organizations")
 }
@@ -118,13 +146,19 @@ model Store {
   address        String
   phone          String?
   status         StoreStatus @default(PENDING)
+  latitude       Float?      @map("latitude")
+  longitude      Float?      @map("longitude")
+  deliveryRadius Float       @default(7) @map("delivery_radius")
   createdAt      DateTime    @default(now()) @map("created_at")
   updatedAt      DateTime    @updatedAt @map("updated_at")
 
-  organization  Organization   @relation(fields: [organizationId], references: [id])
-  storeProducts StoreProduct[]
-  userStores    UserStore[]
-  orders        Order[]
+  organization       Organization        @relation(fields: [organizationId], references: [id])
+  storeProducts      StoreProduct[]
+  userStores         UserStore[]
+  orders             Order[]
+  reviews            Review[]
+  storeDeliveryZones StoreDeliveryZone[]
+  deliveryTiers      DeliveryTier[]
 
   @@map("stores")
 }
@@ -139,10 +173,18 @@ model User {
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
-  userStores    UserStore[]
-  orders        Order[]
-  deviceTokens  DeviceToken[]
-  addresses     UserAddress[]
+  walletBalance Decimal @default(0) @db.Decimal(10, 2) @map("wallet_balance")
+
+  userStores           UserStore[]
+  orders               Order[]
+  deviceTokens         DeviceToken[]
+  addresses            UserAddress[]
+  reviews              Review[]
+  wishlistItems        WishlistItem[]
+  couponRedemptions    CouponRedemption[]
+  walletTransactions   WalletTransaction[]
+  loyaltyBalances      LoyaltyBalance[]
+  loyaltyTransactions  LoyaltyTransaction[]
 
   @@map("users")
 }
@@ -152,6 +194,9 @@ model UserAddress {
   userId    String   @map("user_id")
   label     String   @default("Home")
   address   String
+  latitude  Float?   @map("latitude")
+  longitude Float?   @map("longitude")
+  pincode   String?  @map("pincode")
   isDefault Boolean  @default(false) @map("is_default")
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
@@ -246,6 +291,8 @@ model Product {
   storeProducts   StoreProduct[]
   orderItems      OrderItem[]
   collectionItems CollectionItem[]
+  reviews         Review[]
+  wishlistItems   WishlistItem[]
 
   @@index([productType])
   @@index([organizationId])
@@ -306,22 +353,38 @@ model StoreProduct {
 }
 
 model Order {
-  id                String        @id @default(uuid())
-  userId            String        @map("user_id")
-  storeId           String        @map("store_id")
-  status            OrderStatus   @default(PENDING)
-  paymentStatus     PaymentStatus @default(PENDING) @map("payment_status")
-  paymentMethod     PaymentMethod @default(ONLINE) @map("payment_method")
-  totalAmount       Decimal       @db.Decimal(10, 2) @map("total_amount")
-  deliveryAddress   String        @map("delivery_address")
-  razorpayOrderId   String?       @map("razorpay_order_id")
-  razorpayPaymentId String?       @map("razorpay_payment_id")
-  createdAt         DateTime      @default(now()) @map("created_at")
-  updatedAt         DateTime      @updatedAt @map("updated_at")
+  id                   String        @id @default(uuid())
+  userId               String        @map("user_id")
+  storeId              String        @map("store_id")
+  status               OrderStatus   @default(PENDING)
+  paymentStatus        PaymentStatus @default(PENDING) @map("payment_status")
+  paymentMethod        PaymentMethod  @default(ONLINE) @map("payment_method")
+  fulfillmentType      FulfillmentType @default(DELIVERY) @map("fulfillment_type")
+  totalAmount          Decimal       @db.Decimal(10, 2) @map("total_amount")
+  deliveryAddress      String?       @map("delivery_address")
+  razorpayOrderId      String?       @map("razorpay_order_id")
+  razorpayPaymentId    String?       @map("razorpay_payment_id")
+  couponId             String?       @map("coupon_id")
+  couponCode           String?       @map("coupon_code")
+  couponDiscount       Decimal?      @db.Decimal(10, 2) @map("coupon_discount")
+  deliveryFee          Decimal       @default(0) @db.Decimal(10, 2) @map("delivery_fee")
+  deliveryDistance     Float?        @map("delivery_distance")
+  estimatedDeliveryAt  DateTime?     @map("estimated_delivery_at")
+  deliveryNotes        String?       @map("delivery_notes")
+  walletAmountUsed     Decimal?      @db.Decimal(10, 2) @map("wallet_amount_used")
+  loyaltyPointsUsed    Int?          @map("loyalty_points_used")
+  loyaltyPointsEarned  Int?          @map("loyalty_points_earned")
+  createdAt            DateTime      @default(now()) @map("created_at")
+  updatedAt            DateTime      @updatedAt @map("updated_at")
 
-  user  User        @relation(fields: [userId], references: [id])
-  store Store       @relation(fields: [storeId], references: [id])
-  items OrderItem[]
+  user                User                @relation(fields: [userId], references: [id])
+  store               Store               @relation(fields: [storeId], references: [id])
+  coupon              Coupon?             @relation(fields: [couponId], references: [id])
+  items               OrderItem[]
+  couponRedemptions   CouponRedemption[]
+  statusLogs          OrderStatusLog[]
+  walletTransactions  WalletTransaction[]
+  loyaltyTransactions LoyaltyTransaction[]
 
   @@map("orders")
 }
@@ -394,4 +457,215 @@ model CollectionItem {
 
   @@unique([collectionId, productId])
   @@map("collection_items")
+}
+
+model Coupon {
+  id             String       @id @default(uuid())
+  code           String       @unique
+  description    String?
+  discountType   DiscountType @map("discount_type")
+  discountValue  Decimal      @db.Decimal(10, 2) @map("discount_value")
+  minOrderAmount Decimal?     @db.Decimal(10, 2) @map("min_order_amount")
+  maxDiscount    Decimal?     @db.Decimal(10, 2) @map("max_discount")
+  usageLimit     Int?         @map("usage_limit")
+  perUserLimit   Int          @default(1) @map("per_user_limit")
+  usedCount      Int          @default(0) @map("used_count")
+  startsAt       DateTime?    @map("starts_at")
+  expiresAt      DateTime?    @map("expires_at")
+  isActive       Boolean      @default(true) @map("is_active")
+  organizationId String?      @map("organization_id")
+  createdAt      DateTime     @default(now()) @map("created_at")
+  updatedAt      DateTime     @updatedAt @map("updated_at")
+
+  organization Organization?    @relation(fields: [organizationId], references: [id])
+  redemptions  CouponRedemption[]
+  orders       Order[]
+
+  @@index([code])
+  @@index([organizationId])
+  @@index([isActive, expiresAt])
+  @@map("coupons")
+}
+
+model CouponRedemption {
+  id        String   @id @default(uuid())
+  couponId  String   @map("coupon_id")
+  userId    String   @map("user_id")
+  orderId   String   @map("order_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  coupon Coupon @relation(fields: [couponId], references: [id])
+  user   User   @relation(fields: [userId], references: [id])
+  order  Order  @relation(fields: [orderId], references: [id])
+
+  @@index([couponId, userId])
+  @@map("coupon_redemptions")
+}
+
+model Review {
+  id         String       @id @default(uuid())
+  userId     String       @map("user_id")
+  productId  String       @map("product_id")
+  storeId    String?      @map("store_id")
+  rating     Int
+  title      String?
+  comment    String?
+  isVerified Boolean      @default(false) @map("is_verified")
+  status     ReviewStatus @default(PENDING)
+  createdAt  DateTime     @default(now()) @map("created_at")
+  updatedAt  DateTime     @updatedAt @map("updated_at")
+
+  user    User    @relation(fields: [userId], references: [id])
+  product Product @relation(fields: [productId], references: [id])
+  store   Store?  @relation(fields: [storeId], references: [id])
+
+  @@unique([userId, productId])
+  @@index([productId, status])
+  @@map("reviews")
+}
+
+model WishlistItem {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  productId String   @map("product_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, productId])
+  @@index([userId])
+  @@map("wishlist_items")
+}
+
+model DeliveryZone {
+  id               String   @id @default(uuid())
+  name             String
+  pincodes         String[] @default([])
+  deliveryFee      Decimal  @db.Decimal(10, 2) @map("delivery_fee")
+  estimatedMinutes Int      @default(60) @map("estimated_minutes")
+  isActive         Boolean  @default(true) @map("is_active")
+  organizationId   String   @map("organization_id")
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  organization Organization        @relation(fields: [organizationId], references: [id])
+  stores       StoreDeliveryZone[]
+
+  @@index([organizationId])
+  @@map("delivery_zones")
+}
+
+model StoreDeliveryZone {
+  id             String   @id @default(uuid())
+  storeId        String   @map("store_id")
+  deliveryZoneId String   @map("delivery_zone_id")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  store        Store        @relation(fields: [storeId], references: [id])
+  deliveryZone DeliveryZone @relation(fields: [deliveryZoneId], references: [id])
+
+  @@unique([storeId, deliveryZoneId])
+  @@map("store_delivery_zones")
+}
+
+model DeliveryTier {
+  id               String   @id @default(uuid())
+  storeId          String   @map("store_id")
+  minDistance       Float    @map("min_distance")
+  maxDistance       Float    @map("max_distance")
+  deliveryFee      Decimal  @db.Decimal(10, 2) @map("delivery_fee")
+  estimatedMinutes Int      @default(45) @map("estimated_minutes")
+  isActive         Boolean  @default(true) @map("is_active")
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@index([storeId])
+  @@map("delivery_tiers")
+}
+
+model OrderStatusLog {
+  id        String      @id @default(uuid())
+  orderId   String      @map("order_id")
+  status    OrderStatus
+  note      String?
+  createdAt DateTime    @default(now()) @map("created_at")
+
+  order Order @relation(fields: [orderId], references: [id])
+
+  @@index([orderId])
+  @@map("order_status_logs")
+}
+
+model WalletTransaction {
+  id           String                @id @default(uuid())
+  userId       String                @map("user_id")
+  orderId      String?               @map("order_id")
+  type         WalletTransactionType
+  amount       Decimal               @db.Decimal(10, 2)
+  balanceAfter Decimal               @db.Decimal(10, 2) @map("balance_after")
+  description  String?
+  createdAt    DateTime              @default(now()) @map("created_at")
+
+  user  User   @relation(fields: [userId], references: [id])
+  order Order? @relation(fields: [orderId], references: [id])
+
+  @@index([userId, createdAt])
+  @@index([orderId])
+  @@map("wallet_transactions")
+}
+
+model LoyaltyConfig {
+  id                   String   @id @default(uuid())
+  organizationId       String   @unique @map("organization_id")
+  isEnabled            Boolean  @default(true) @map("is_enabled")
+  earnRate             Int      @default(1) @map("earn_rate")
+  minRedeemPoints      Int      @default(10) @map("min_redeem_points")
+  maxRedeemPercentage  Int      @default(50) @map("max_redeem_percentage")
+  createdAt            DateTime @default(now()) @map("created_at")
+  updatedAt            DateTime @updatedAt @map("updated_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id])
+
+  @@map("loyalty_configs")
+}
+
+model LoyaltyBalance {
+  id             String   @id @default(uuid())
+  userId         String   @map("user_id")
+  organizationId String   @map("organization_id")
+  points         Int      @default(0)
+  totalEarned    Int      @default(0) @map("total_earned")
+  totalRedeemed  Int      @default(0) @map("total_redeemed")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  user         User         @relation(fields: [userId], references: [id])
+  organization Organization @relation(fields: [organizationId], references: [id])
+
+  @@unique([userId, organizationId])
+  @@index([organizationId])
+  @@map("loyalty_balances")
+}
+
+model LoyaltyTransaction {
+  id             String                @id @default(uuid())
+  userId         String                @map("user_id")
+  organizationId String                @map("organization_id")
+  orderId        String?               @map("order_id")
+  type           LoyaltyTransactionType
+  points         Int
+  balanceAfter   Int                   @map("balance_after")
+  description    String?
+  createdAt      DateTime              @default(now()) @map("created_at")
+
+  user         User         @relation(fields: [userId], references: [id])
+  organization Organization @relation(fields: [organizationId], references: [id])
+  order        Order?       @relation(fields: [orderId], references: [id])
+
+  @@index([userId, organizationId, createdAt])
+  @@index([orderId])
+  @@map("loyalty_transactions")
 }

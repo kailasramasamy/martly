@@ -6,9 +6,13 @@
     "scheme": "martly",
     "platforms": ["ios", "android"],
     "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#16a34a"
+    },
     "plugins": [
       "expo-router",
       "expo-secure-store",
+      "expo-splash-screen",
       [
         "expo-notifications",
         {

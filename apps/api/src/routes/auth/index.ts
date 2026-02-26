@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import bcrypt from "bcryptjs";
-import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema } from "@martly/shared/schemas";
+import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema, sendOtpSchema, verifyOtpSchema } from "@martly/shared/schemas";
 import type { ApiResponse, AuthTokens, LoginResponse, OrgSummary } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 
@@ -38,7 +38,7 @@ export async function authRoutes(app: FastifyInstance) {
       );
       const refreshToken = app.jwt.sign(
         { sub: user.id, email: user.email, role: user.role, type: "refresh" },
-        { expiresIn: "7d" },
+        { expiresIn: "30d" },
       );
 
       const response: ApiResponse<LoginResponse> = {
@@ -63,7 +63,7 @@ export async function authRoutes(app: FastifyInstance) {
       );
       const refreshToken = app.jwt.sign(
         { sub: user.id, email: user.email, role: user.role, organizationId: orgs[0].id, type: "refresh" },
-        { expiresIn: "7d" },
+        { expiresIn: "30d" },
       );
 
       const response: ApiResponse<LoginResponse> = {
@@ -108,7 +108,7 @@ export async function authRoutes(app: FastifyInstance) {
     );
     const refreshToken = app.jwt.sign(
       { sub: user.sub, email: user.email, role: user.role, organizationId, type: "refresh" },
-      { expiresIn: "7d" },
+      { expiresIn: "30d" },
     );
 
     const response: ApiResponse<AuthTokens> = {
@@ -138,12 +138,76 @@ export async function authRoutes(app: FastifyInstance) {
     );
     const refreshToken = app.jwt.sign(
       { sub: user.id, email: user.email, role: user.role, type: "refresh" },
-      { expiresIn: "7d" },
+      { expiresIn: "30d" },
     );
 
     const response: ApiResponse<AuthTokens> = {
       success: true,
       data: { accessToken, refreshToken },
+    };
+    return response;
+  });
+
+  // ── OTP Auth (mobile) ────────────────────────────────
+  // Placeholder OTP: 111111 — replace with MSG91 / Firebase later
+  const PLACEHOLDER_OTP = "111111";
+
+  app.post("/send-otp", async (request, reply) => {
+    const { phone } = sendOtpSchema.parse(request.body);
+
+    // In production, send OTP via SMS provider here
+    // For now, just verify the phone format and return success
+    app.log.info(`OTP for ${phone}: ${PLACEHOLDER_OTP}`);
+
+    const response: ApiResponse<{ sent: boolean }> = {
+      success: true,
+      data: { sent: true },
+    };
+    return response;
+  });
+
+  app.post("/verify-otp", async (request, reply) => {
+    const { phone, otp } = verifyOtpSchema.parse(request.body);
+
+    if (otp !== PLACEHOLDER_OTP) {
+      return reply.unauthorized("Invalid OTP");
+    }
+
+    // Find or create user by phone
+    let user = await app.prisma.user.findFirst({ where: { phone } });
+
+    if (!user) {
+      // Create new customer — generate placeholder email and password hash
+      const placeholderEmail = `${phone}@phone.martly.app`;
+      const randomHash = await bcrypt.hash(crypto.randomUUID(), 10);
+
+      user = await app.prisma.user.create({
+        data: {
+          email: placeholderEmail,
+          name: "",
+          passwordHash: randomHash,
+          phone,
+          role: "CUSTOMER",
+        },
+      });
+    }
+
+    const accessToken = app.jwt.sign(
+      { sub: user.id, email: user.email, role: user.role },
+      { expiresIn: "15m" },
+    );
+    const refreshToken = app.jwt.sign(
+      { sub: user.id, email: user.email, role: user.role, type: "refresh" },
+      { expiresIn: "30d" },
+    );
+
+    const response: ApiResponse<AuthTokens & { isNewUser: boolean }> = {
+      success: true,
+      data: {
+        accessToken,
+        refreshToken,
+        isNewUser: !user.name,
+      },
     };
     return response;
   });

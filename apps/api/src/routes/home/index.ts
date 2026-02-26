@@ -239,6 +239,35 @@ export async function homeRoutes(app: FastifyInstance) {
           variantCount: variantCountMap.get(item.storeProduct.productId) ?? 1,
         }));
 
+      // Batch-fetch review aggregates for all products in the feed
+      const allProductIds = [
+        ...transformedCollections.flatMap((c) => c.products.map((p: any) => p.productId as string)),
+        ...transformedTimeCategories.flatMap((tc) => tc.products.map((p: any) => p.productId as string)),
+        ...deals.map((d: any) => d.productId as string),
+        ...buyAgain.map((b: any) => b.productId as string),
+      ];
+      const uniqueProductIds = [...new Set(allProductIds)];
+      const reviewAggs = uniqueProductIds.length > 0
+        ? await app.prisma.review.groupBy({
+            by: ["productId"],
+            where: { productId: { in: uniqueProductIds }, status: "APPROVED" },
+            _avg: { rating: true },
+            _count: { rating: true },
+          })
+        : [];
+      const reviewMap = new Map(reviewAggs.map((r) => [r.productId, { averageRating: Math.round((r._avg.rating ?? 0) * 10) / 10, reviewCount: r._count.rating }]));
+
+      // Merge review data into products
+      const addReviews = (items: any[]) => items.map((item) => {
+        const rev = reviewMap.get(item.productId);
+        return rev ? { ...item, product: { ...item.product, averageRating: rev.averageRating, reviewCount: rev.reviewCount } } : item;
+      });
+
+      for (const col of transformedCollections) col.products = addReviews(col.products) as any;
+      for (const tc of transformedTimeCategories) tc.products = addReviews(tc.products) as any;
+      const enrichedDeals = addReviews(deals);
+      const enrichedBuyAgain = addReviews(buyAgain);
+
       // Add children: [] to match CategoryTreeNode type
       const categoriesWithChildren = categories.map((cat) => ({ ...cat, children: [] }));
 
@@ -256,8 +285,8 @@ export async function homeRoutes(app: FastifyInstance) {
           categories: categoriesWithChildren,
           timeCategories: transformedTimeCategories,
           timePeriod,
-          deals,
-          buyAgain,
+          deals: enrichedDeals,
+          buyAgain: enrichedBuyAgain,
         },
       };
       return response;

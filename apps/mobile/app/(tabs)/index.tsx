@@ -8,7 +8,6 @@ import {
   TouchableOpacity,
   StyleSheet,
   Modal,
-  Alert,
   Dimensions,
   RefreshControl,
   Image,
@@ -19,9 +18,12 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useCart } from "../../lib/cart-context";
+import { useWishlist } from "../../lib/wishlist-context";
+import { useAuth } from "../../lib/auth-context";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { FeaturedProductCard } from "../../components/FeaturedProductCard";
+import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
 import type { Store, StoreProduct, HomeFeed } from "../../lib/types";
 
@@ -35,16 +37,27 @@ const TIME_SUBTITLES: Record<string, string> = {
   night: "Late night cravings",
 };
 
+function getTimeGreeting(): string {
+  const h = new Date().getHours();
+  if (h < 12) return "Good morning";
+  if (h < 17) return "Good afternoon";
+  if (h < 21) return "Good evening";
+  return "Good night";
+}
+
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
   const { stores, selectedStore, setSelectedStore, loading: storesLoading } = useStore();
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity, productQuantityMap } = useCart();
+  const { wishlistedIds, isWishlisted, toggle: toggleWishlist } = useWishlist();
+  const { user } = useAuth();
 
   const [homeFeed, setHomeFeed] = useState<HomeFeed | null>(null);
   const [loadingFeed, setLoadingFeed] = useState(false);
   const [showStorePicker, setShowStorePicker] = useState(false);
   const [storeSearch, setStoreSearch] = useState("");
   const [refreshing, setRefreshing] = useState(false);
+  const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
 
   const fetchHomeFeed = useCallback(() => {
     if (!selectedStore) {
@@ -105,18 +118,9 @@ export default function HomeScreen() {
       };
 
       if (cartStoreId && cartStoreId !== selectedStore.id) {
-        Alert.alert(
-          "Replace Cart?",
-          "Your cart has items from another store. Adding this item will replace your current cart.",
-          [
-            { text: "Cancel", style: "cancel" },
-            {
-              text: "Replace",
-              style: "destructive",
-              onPress: () => addItem(selectedStore.id, selectedStore.name, item),
-            },
-          ],
-        );
+        setReplaceCartConfirm({
+          pending: () => addItem(selectedStore.id, selectedStore.name, item),
+        });
         return;
       }
 
@@ -168,12 +172,14 @@ export default function HomeScreen() {
                 if (selectedStore) params.storeId = selectedStore.id;
                 router.push({ pathname: "/product/[id]", params });
               }}
+              isWishlisted={isWishlisted(item.product.id)}
+              onToggleWishlist={toggleWishlist}
             />
           );
         }}
       />
     ),
-    [handleAddToCart, updateQuantity, cartQuantityMap, productQuantityMap, selectedStore],
+    [handleAddToCart, updateQuantity, cartQuantityMap, productQuantityMap, selectedStore, wishlistedIds],
   );
 
   if (storesLoading) return <HomeScreenSkeleton />;
@@ -220,6 +226,25 @@ export default function HomeScreen() {
           />
         }
       >
+        {/* ── Greeting Section ── */}
+        {selectedStore && user && (
+          <View style={styles.greetingSection}>
+            <View style={styles.greetingRow}>
+              <View style={styles.greetingAvatarCircle}>
+                <Text style={styles.greetingAvatarText}>
+                  {(user.name || "U").charAt(0).toUpperCase()}
+                </Text>
+              </View>
+              <View style={{ flex: 1 }}>
+                <Text style={styles.greetingHi}>
+                  {getTimeGreeting()}, {(user.name || "").split(" ")[0] || "there"}!
+                </Text>
+                <Text style={styles.greetingSub}>What would you like to order today?</Text>
+              </View>
+            </View>
+          </View>
+        )}
+
         {/* ── Promo Banner ── */}
         {selectedStore && (
           <View style={styles.bannerSection}>
@@ -408,6 +433,20 @@ export default function HomeScreen() {
         <View style={{ height: 32 }} />
       </ScrollView>
 
+      <ConfirmSheet
+        visible={replaceCartConfirm !== null}
+        title="Replace Cart?"
+        message="Your cart has items from another store. Adding this item will replace your current cart."
+        icon="cart-outline"
+        iconColor="#f59e0b"
+        confirmLabel="Replace"
+        onConfirm={() => {
+          replaceCartConfirm?.pending();
+          setReplaceCartConfirm(null);
+        }}
+        onCancel={() => setReplaceCartConfirm(null)}
+      />
+
       {/* ── Store Picker Modal ── */}
       <Modal visible={showStorePicker} animationType="slide" presentationStyle="pageSheet">
         <View style={styles.modalContainer}>
@@ -578,6 +617,48 @@ const styles = StyleSheet.create({
   // ── Scroll Content ──
   scrollContent: { paddingBottom: 8 },
 
+  // ── Greeting ──
+  greetingSection: {
+    paddingHorizontal: H_PADDING,
+    paddingTop: 12,
+    paddingBottom: 4,
+  },
+  greetingRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    borderRadius: 14,
+    padding: 14,
+    gap: 12,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.04,
+    shadowRadius: 4,
+    elevation: 1,
+  },
+  greetingAvatarCircle: {
+    width: 42,
+    height: 42,
+    borderRadius: 14,
+    backgroundColor: colors.primary,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  greetingAvatarText: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  greetingHi: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: colors.text,
+  },
+  greetingSub: {
+    fontSize: 12,
+    color: colors.textSecondary,
+    marginTop: 1,
+  },
   // ── Banner ──
   bannerSection: {
     paddingHorizontal: H_PADDING,

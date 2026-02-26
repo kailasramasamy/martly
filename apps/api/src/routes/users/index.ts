@@ -110,7 +110,7 @@ export async function userRoutes(app: FastifyInstance) {
         where: { id: request.params.id },
         select: {
           id: true, email: true, name: true, phone: true, role: true, createdAt: true, updatedAt: true,
-          _count: { select: { orders: true } },
+          _count: { select: { orders: true, reviews: true } },
           addresses: { select: { id: true, label: true, address: true, isDefault: true }, orderBy: [{ isDefault: "desc" }, { createdAt: "desc" }] },
         },
       });
@@ -247,9 +247,30 @@ export async function userRoutes(app: FastifyInstance) {
         }
       }
 
-      // Remove UserStore assignments first
-      await app.prisma.userStore.deleteMany({ where: { userId: request.params.id } });
-      await app.prisma.user.delete({ where: { id: request.params.id } });
+      const userId = request.params.id;
+
+      // Complete cleanup in a transaction — delete all associated data
+      await app.prisma.$transaction(async (tx) => {
+        // 1. Delete order sub-records (must come before orders)
+        await tx.couponRedemption.deleteMany({ where: { order: { userId } } });
+        await tx.orderStatusLog.deleteMany({ where: { order: { userId } } });
+        await tx.orderItem.deleteMany({ where: { order: { userId } } });
+
+        // 2. Delete orders
+        await tx.order.deleteMany({ where: { userId } });
+
+        // 3. Delete reviews
+        await tx.review.deleteMany({ where: { userId } });
+
+        // 4. Delete standalone coupon redemptions (if any not tied to orders)
+        await tx.couponRedemption.deleteMany({ where: { userId } });
+
+        // 5. Delete user-store assignments
+        await tx.userStore.deleteMany({ where: { userId } });
+
+        // 6. Delete the user (cascades: addresses, device tokens, wishlist items)
+        await tx.user.delete({ where: { id: userId } });
+      });
 
       const response: ApiResponse<null> = { success: true, data: null };
       return response;

@@ -1,4 +1,5 @@
-import { View, Text, TouchableOpacity, Image, StyleSheet, Dimensions } from "react-native";
+import { useRef } from "react";
+import { View, Text, TouchableOpacity, Pressable, Image, StyleSheet, Dimensions } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, spacing } from "../constants/theme";
@@ -20,9 +21,11 @@ interface ProductGridCardProps {
   onShowVariants?: () => void;
   containerWidth?: number;
   variantSizes?: string[];
+  isWishlisted?: boolean;
+  onToggleWishlist?: (productId: string) => void;
 }
 
-export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, variantCount = 1, onShowVariants, containerWidth, variantSizes }: ProductGridCardProps) {
+export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, variantCount = 1, onShowVariants, containerWidth, variantSizes, isWishlisted, onToggleWishlist }: ProductGridCardProps) {
   const cardWidth = containerWidth
     ? (containerWidth - GRID_GAP) / 2
     : GRID_CARD_WIDTH;
@@ -38,11 +41,13 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
   const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
   const isOutOfStock = available <= 0;
   const isLowStock = !isOutOfStock && available <= 5;
+  const heartTapped = useRef(false);
 
   return (
     <TouchableOpacity
       style={[styles.card, { width: cardWidth }]}
       onPress={() => {
+        if (heartTapped.current) { heartTapped.current = false; return; }
         const params: Record<string, string> = { id: item.product.id };
         if (storeId) params.storeId = storeId;
         router.push({ pathname: "/product/[id]", params });
@@ -79,6 +84,16 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
           </View>
         )}
 
+        {onToggleWishlist && (
+          <Pressable
+            style={styles.heartBtn}
+            onPress={() => { heartTapped.current = true; onToggleWishlist(item.product.id); }}
+            hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          >
+            <Ionicons name={isWishlisted ? "heart" : "heart-outline"} size={18} color={isWishlisted ? "#ef4444" : "#94a3b8"} />
+          </Pressable>
+        )}
+
         {isOutOfStock && (
           <View style={styles.oosOverlay}>
             <Text style={styles.oosLabel}>Out of stock</Text>
@@ -95,6 +110,15 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
           </Text>
         ) : (
           <Text style={styles.variant} numberOfLines={1}>{item.variant.name}</Text>
+        )}
+        {(item.product.averageRating ?? 0) > 0 && (
+          <View style={styles.ratingRow}>
+            <Ionicons name="star" size={11} color="#f59e0b" />
+            <Text style={styles.ratingText}>{item.product.averageRating!.toFixed(1)}</Text>
+            {(item.product.reviewCount ?? 0) > 0 && (
+              <Text style={styles.ratingCount}>({item.product.reviewCount})</Text>
+            )}
+          </View>
         )}
         {isLowStock && <Text style={styles.lowStock}>Only {available} left</Text>}
 
@@ -202,6 +226,18 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 4,
   },
   discountText: { fontSize: 9, color: "#fff", fontWeight: "700" },
+  heartBtn: {
+    position: "absolute",
+    top: 8,
+    right: 8,
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: "rgba(255,255,255,0.9)",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 2,
+  },
   oosOverlay: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: "rgba(255,255,255,0.75)",
@@ -212,6 +248,9 @@ const styles = StyleSheet.create({
   content: { padding: 10 },
   name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17, height: 34 },
   variant: { fontSize: 11, color: colors.textSecondary, marginTop: 2 },
+  ratingRow: { flexDirection: "row", alignItems: "center", gap: 3, marginTop: 3 },
+  ratingText: { fontSize: 11, fontWeight: "600", color: "#92400e" },
+  ratingCount: { fontSize: 10, color: "#94a3b8" },
   lowStock: { fontSize: 10, color: colors.warning, fontWeight: "600", marginTop: 2 },
   footer: {
     flexDirection: "row",

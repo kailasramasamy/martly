@@ -7,22 +7,24 @@ import {
   TouchableOpacity,
   StyleSheet,
   Dimensions,
-  Alert,
   FlatList,
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from "react-native";
-import { useLocalSearchParams, useNavigation } from "expo-router";
+import { useLocalSearchParams, useNavigation, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
+import { useWishlist } from "../../lib/wishlist-context";
+import { useAuth } from "../../lib/auth-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { FeaturedProductCard } from "../../components/FeaturedProductCard";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
 import { FloatingCart } from "../../components/FloatingCart";
+import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { ProductDetailSkeleton } from "../../components/SkeletonLoader";
-import type { Product, StoreProduct, Variant } from "../../lib/types";
+import type { Product, StoreProduct, Variant, Review, ReviewSummary } from "../../lib/types";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 
@@ -34,8 +36,11 @@ export default function ProductDetailScreen() {
   const { id, storeId: paramStoreId } = useLocalSearchParams<{ id: string; storeId?: string }>();
   const { selectedStore } = useStore();
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
+  const { isWishlisted, toggle: toggleWishlist } = useWishlist();
+  const { isAuthenticated } = useAuth();
 
   const navigation = useNavigation();
+  const router = useRouter();
   const storeId = paramStoreId || selectedStore?.id;
   const storeName = selectedStore?.name ?? "";
 
@@ -45,6 +50,8 @@ export default function ProductDetailScreen() {
   const [loading, setLoading] = useState(true);
   const [descExpanded, setDescExpanded] = useState(false);
   const [activeImageIdx, setActiveImageIdx] = useState(0);
+  const [reviewSummary, setReviewSummary] = useState<ReviewSummary | null>(null);
+  const [reviews, setReviews] = useState<Review[]>([]);
 
   // Collect all images from product and variants
   const images = useMemo(() => {
@@ -59,6 +66,7 @@ export default function ProductDetailScreen() {
 
   const [sheetVisible, setSheetVisible] = useState(false);
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
+  const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
 
   const cartQuantityMap = useMemo(() => {
     const map = new Map<string, number>();
@@ -139,6 +147,14 @@ export default function ProductDetailScreen() {
       })
       .catch(() => {})
       .finally(() => setLoading(false));
+
+    // Fetch reviews
+    api.get<ReviewSummary>(`/api/v1/reviews/product/${id}/summary`)
+      .then((res) => setReviewSummary(res.data))
+      .catch(() => {});
+    api.getList<Review>(`/api/v1/reviews?productId=${id}&pageSize=3`)
+      .then((res) => setReviews(res.data))
+      .catch(() => {});
   }, [id, storeId]);
 
   const handleAddToCart = (sp: StoreProduct) => {
@@ -159,14 +175,9 @@ export default function ProductDetailScreen() {
     };
 
     if (cartStoreId && cartStoreId !== storeId) {
-      Alert.alert(
-        "Replace Cart?",
-        "Your cart has items from another store. Adding this item will replace your current cart.",
-        [
-          { text: "Cancel", style: "cancel" },
-          { text: "Replace", style: "destructive", onPress: () => addItem(storeId, storeName, item) },
-        ],
-      );
+      setReplaceCartConfirm({
+        pending: () => addItem(storeId, storeName, item),
+      });
       return;
     }
 
@@ -225,6 +236,23 @@ export default function ProductDetailScreen() {
       )}
 
       <View style={styles.body}>
+        {/* Wishlist Heart */}
+        {isAuthenticated && (
+          <TouchableOpacity
+            style={styles.wishlistRow}
+            onPress={() => toggleWishlist(product.id)}
+          >
+            <Ionicons
+              name={isWishlisted(product.id) ? "heart" : "heart-outline"}
+              size={22}
+              color={isWishlisted(product.id) ? "#ef4444" : "#94a3b8"}
+            />
+            <Text style={styles.wishlistText}>
+              {isWishlisted(product.id) ? "Saved to Wishlist" : "Add to Wishlist"}
+            </Text>
+          </TouchableOpacity>
+        )}
+
         {/* Basic Info */}
         <View style={styles.infoRow}>
           {product.foodType && (
@@ -427,6 +455,74 @@ export default function ProductDetailScreen() {
           </View>
         )}
 
+        {/* Reviews */}
+        {(reviewSummary?.count ?? 0) > 0 && (
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Ratings & Reviews</Text>
+            <View style={styles.ratingSummary}>
+              <View style={styles.ratingBig}>
+                <Ionicons name="star" size={24} color="#f59e0b" />
+                <Text style={styles.ratingBigText}>{reviewSummary!.average.toFixed(1)}</Text>
+                <Text style={styles.ratingCount}>{reviewSummary!.count} review{reviewSummary!.count !== 1 ? "s" : ""}</Text>
+              </View>
+              <View style={styles.ratingBars}>
+                {[5, 4, 3, 2, 1].map((star) => {
+                  const count = reviewSummary!.distribution[star] ?? 0;
+                  const pct = reviewSummary!.count > 0 ? (count / reviewSummary!.count) * 100 : 0;
+                  return (
+                    <View key={star} style={styles.ratingBarRow}>
+                      <Text style={styles.ratingBarLabel}>{star}</Text>
+                      <View style={styles.ratingBarTrack}>
+                        <View style={[styles.ratingBarFill, { width: `${pct}%` }]} />
+                      </View>
+                    </View>
+                  );
+                })}
+              </View>
+            </View>
+
+            {reviews.map((r) => (
+              <View key={r.id} style={styles.reviewCard}>
+                <View style={styles.reviewHeader}>
+                  <Text style={styles.reviewUser}>{r.user.name}</Text>
+                  <View style={styles.reviewStars}>
+                    {[1, 2, 3, 4, 5].map((s) => (
+                      <Ionicons key={s} name={s <= r.rating ? "star" : "star-outline"} size={12} color="#f59e0b" />
+                    ))}
+                  </View>
+                  {r.isVerified && <Text style={styles.verifiedBadge}>Verified</Text>}
+                </View>
+                {r.title && <Text style={styles.reviewTitle}>{r.title}</Text>}
+                {r.comment && <Text style={styles.reviewComment}>{r.comment}</Text>}
+              </View>
+            ))}
+
+            {isAuthenticated && (
+              <TouchableOpacity
+                style={styles.writeReviewBtn}
+                onPress={() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } })}
+              >
+                <Ionicons name="create-outline" size={16} color={colors.primary} />
+                <Text style={styles.writeReviewText}>Write a Review</Text>
+              </TouchableOpacity>
+            )}
+          </View>
+        )}
+
+        {(reviewSummary?.count ?? 0) === 0 && isAuthenticated && (
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Reviews</Text>
+            <Text style={styles.descText}>No reviews yet. Be the first!</Text>
+            <TouchableOpacity
+              style={styles.writeReviewBtn}
+              onPress={() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } })}
+            >
+              <Ionicons name="create-outline" size={16} color={colors.primary} />
+              <Text style={styles.writeReviewText}>Write a Review</Text>
+            </TouchableOpacity>
+          </View>
+        )}
+
         {/* Related Products */}
         {groupedRelated.length > 0 && (
           <View style={styles.section}>
@@ -465,6 +561,19 @@ export default function ProductDetailScreen() {
       onAddToCart={handleAddToCart}
       onUpdateQuantity={updateQuantity}
       cartQuantityMap={cartQuantityMap}
+    />
+    <ConfirmSheet
+      visible={replaceCartConfirm !== null}
+      title="Replace Cart?"
+      message="Your cart has items from another store. Adding this item will replace your current cart."
+      icon="cart-outline"
+      iconColor="#f59e0b"
+      confirmLabel="Replace"
+      onConfirm={() => {
+        replaceCartConfirm?.pending();
+        setReplaceCartConfirm(null);
+      }}
+      onCancel={() => setReplaceCartConfirm(null)}
     />
     </View>
   );
@@ -606,4 +715,48 @@ const styles = StyleSheet.create({
   dangerText: { fontSize: fontSize.sm, color: "#92400e" },
   metaText: { fontSize: fontSize.md, color: colors.textSecondary, marginTop: spacing.xs },
   relatedList: { gap: spacing.sm },
+  wishlistRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginBottom: spacing.sm,
+    alignSelf: "flex-start",
+    paddingVertical: 4,
+  },
+  wishlistText: { fontSize: fontSize.md, color: "#64748b", fontWeight: "500" },
+  ratingSummary: { flexDirection: "row", gap: spacing.md, marginBottom: spacing.md },
+  ratingBig: { alignItems: "center", justifyContent: "center", minWidth: 80 },
+  ratingBigText: { fontSize: 28, fontWeight: "800", color: colors.text, marginTop: 2 },
+  ratingCount: { fontSize: fontSize.sm, color: colors.textSecondary, marginTop: 2 },
+  ratingBars: { flex: 1, justifyContent: "center", gap: 4 },
+  ratingBarRow: { flexDirection: "row", alignItems: "center", gap: 6 },
+  ratingBarLabel: { fontSize: 11, color: colors.textSecondary, width: 12, textAlign: "right" },
+  ratingBarTrack: { flex: 1, height: 6, backgroundColor: "#f1f5f9", borderRadius: 3, overflow: "hidden" },
+  ratingBarFill: { height: "100%", backgroundColor: "#f59e0b", borderRadius: 3 },
+  reviewCard: {
+    backgroundColor: colors.surface,
+    borderRadius: 8,
+    padding: spacing.md,
+    marginBottom: spacing.sm,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
+  reviewHeader: { flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 4 },
+  reviewUser: { fontSize: fontSize.md, fontWeight: "600", color: colors.text },
+  reviewStars: { flexDirection: "row", gap: 1 },
+  verifiedBadge: { fontSize: 10, fontWeight: "600", color: colors.primary, backgroundColor: colors.primary + "15", paddingHorizontal: 6, paddingVertical: 1, borderRadius: 4 },
+  reviewTitle: { fontSize: fontSize.md, fontWeight: "600", color: colors.text, marginTop: 4 },
+  reviewComment: { fontSize: fontSize.md, color: colors.textSecondary, lineHeight: 20, marginTop: 2 },
+  writeReviewBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 6,
+    paddingVertical: 10,
+    borderWidth: 1,
+    borderColor: colors.primary,
+    borderRadius: 8,
+    marginTop: spacing.sm,
+  },
+  writeReviewText: { fontSize: fontSize.md, fontWeight: "600", color: colors.primary },
 });

@@ -8,15 +8,18 @@ import {
   FlatList,
   StyleSheet,
   Modal,
-  Alert,
   ActivityIndicator,
 } from "react-native";
-import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useRouter, useFocusEffect } from "expo-router";
+import { useToast } from "../../lib/toast-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../../lib/auth-context";
+import { useStore } from "../../lib/store-context";
 import { api } from "../../lib/api";
 import { colors, spacing, fontSize } from "../../constants/theme";
+import { AddressAutocomplete } from "../../components/AddressAutocomplete";
+import { ConfirmSheet } from "../../components/ConfirmSheet";
 import type { UserAddress } from "../../lib/types";
 
 const MAX_ADDRESSES = 5;
@@ -29,10 +32,16 @@ const LABEL_ICONS: Record<string, string> = {
 
 export default function ProfileScreen() {
   const insets = useSafeAreaInsets();
+  const router = useRouter();
   const { logout, user, isAuthenticated, refreshUser } = useAuth();
+  const { selectedStore } = useStore();
+  const storeId = selectedStore?.id;
+  const toast = useToast();
 
   const [addresses, setAddresses] = useState<UserAddress[]>([]);
   const [loadingAddresses, setLoadingAddresses] = useState(false);
+  const [walletBalance, setWalletBalance] = useState(0);
+  const [loyaltyPoints, setLoyaltyPoints] = useState(0);
 
   // Edit profile state
   const [showEditProfile, setShowEditProfile] = useState(false);
@@ -45,8 +54,12 @@ export default function ProfileScreen() {
   const [editingAddress, setEditingAddress] = useState<UserAddress | null>(null);
   const [addrLabel, setAddrLabel] = useState<string>("Home");
   const [addrText, setAddrText] = useState("");
+  const [addrLat, setAddrLat] = useState<number | null>(null);
+  const [addrLng, setAddrLng] = useState<number | null>(null);
+  const [addrPincode, setAddrPincode] = useState<string | null>(null);
   const [addrDefault, setAddrDefault] = useState(false);
   const [savingAddress, setSavingAddress] = useState(false);
+  const [deleteConfirm, setDeleteConfirm] = useState<UserAddress | null>(null);
 
   const fetchAddresses = useCallback(async () => {
     setLoadingAddresses(true);
@@ -60,15 +73,25 @@ export default function ProfileScreen() {
     }
   }, []);
 
-  useEffect(() => {
-    if (isAuthenticated) {
-      fetchAddresses();
-    }
-  }, [isAuthenticated, fetchAddresses]);
+  useFocusEffect(
+    useCallback(() => {
+      if (isAuthenticated) {
+        fetchAddresses();
+        api.get<{ balance: number }>("/api/v1/wallet")
+          .then((res) => setWalletBalance(res.data.balance))
+          .catch(() => {});
+        if (storeId) {
+          api.get<{ balance: { points: number } }>(`/api/v1/loyalty?storeId=${storeId}`)
+            .then((res) => setLoyaltyPoints(res.data.balance.points))
+            .catch(() => {});
+        }
+      }
+    }, [isAuthenticated, fetchAddresses, storeId])
+  );
 
   const handleLogout = async () => {
     await logout();
-    router.replace("/(auth)/login");
+    // Stay on the profile tab — unauthenticated view will show
   };
 
   const openEditProfile = () => {
@@ -87,7 +110,7 @@ export default function ProfileScreen() {
       await refreshUser();
       setShowEditProfile(false);
     } catch (e: unknown) {
-      Alert.alert("Error", e instanceof Error ? e.message : "Failed to update profile");
+      toast.show(e instanceof Error ? e.message : "Failed to update profile", "error");
     } finally {
       setSavingProfile(false);
     }
@@ -95,12 +118,15 @@ export default function ProfileScreen() {
 
   const openAddAddress = () => {
     if (addresses.length >= MAX_ADDRESSES) {
-      Alert.alert("Limit Reached", `You can save up to ${MAX_ADDRESSES} addresses.`);
+      toast.show(`You can save up to ${MAX_ADDRESSES} addresses`, "error");
       return;
     }
     setEditingAddress(null);
     setAddrLabel("Home");
     setAddrText("");
+    setAddrLat(null);
+    setAddrLng(null);
+    setAddrPincode(null);
     setAddrDefault(false);
     setShowAddressModal(true);
   };
@@ -109,18 +135,27 @@ export default function ProfileScreen() {
     setEditingAddress(addr);
     setAddrLabel(addr.label);
     setAddrText(addr.address);
+    setAddrLat(addr.latitude ?? null);
+    setAddrLng(addr.longitude ?? null);
+    setAddrPincode(addr.pincode ?? null);
     setAddrDefault(addr.isDefault);
     setShowAddressModal(true);
   };
 
   const handleSaveAddress = async () => {
     if (addrText.trim().length < 5) {
-      Alert.alert("Error", "Address must be at least 5 characters");
+      toast.show("Address must be at least 5 characters", "error");
       return;
     }
     setSavingAddress(true);
     try {
-      const payload = { label: addrLabel, address: addrText.trim(), isDefault: addrDefault };
+      const payload: Record<string, unknown> = {
+        label: addrLabel,
+        address: addrText.trim(),
+        isDefault: addrDefault,
+        ...(addrLat != null && addrLng != null ? { latitude: addrLat, longitude: addrLng } : {}),
+        ...(addrPincode ? { pincode: addrPincode } : {}),
+      };
       if (editingAddress) {
         await api.put(`/api/v1/addresses/${editingAddress.id}`, payload);
       } else {
@@ -129,49 +164,26 @@ export default function ProfileScreen() {
       setShowAddressModal(false);
       fetchAddresses();
     } catch (e: unknown) {
-      Alert.alert("Error", e instanceof Error ? e.message : "Failed to save address");
+      toast.show(e instanceof Error ? e.message : "Failed to save address", "error");
     } finally {
       setSavingAddress(false);
     }
   };
 
   const handleDeleteAddress = (addr: UserAddress) => {
-    Alert.alert("Delete Address", `Remove "${addr.label}" address?`, [
-      { text: "Cancel", style: "cancel" },
-      {
-        text: "Delete",
-        style: "destructive",
-        onPress: async () => {
-          try {
-            await api.delete(`/api/v1/addresses/${addr.id}`);
-            fetchAddresses();
-          } catch {
-            Alert.alert("Error", "Failed to delete address");
-          }
-        },
-      },
-    ]);
+    setDeleteConfirm(addr);
   };
 
-  if (!isAuthenticated) {
-    return (
-      <View style={styles.authContainer}>
-        <View style={styles.authCard}>
-          <View style={styles.authIconCircle}>
-            <Ionicons name="person-outline" size={36} color={colors.primary} />
-          </View>
-          <Text style={styles.authTitle}>Sign In to Martly</Text>
-          <Text style={styles.authSubtitle}>Manage orders, addresses, and profile</Text>
-          <TouchableOpacity style={styles.authBtn} onPress={() => router.push("/(auth)/login")}>
-            <Text style={styles.authBtnText}>Sign In</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.authSecondaryBtn} onPress={() => router.push("/(auth)/register")}>
-            <Text style={styles.authSecondaryBtnText}>Create Account</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    );
-  }
+  const handleDeleteConfirm = async () => {
+    if (!deleteConfirm) return;
+    try {
+      await api.delete(`/api/v1/addresses/${deleteConfirm.id}`);
+      setDeleteConfirm(null);
+      fetchAddresses();
+    } catch {
+      toast.show("Failed to delete address", "error");
+    }
+  };
 
   const initials = (user?.name ?? "U")
     .split(" ")
@@ -194,6 +206,45 @@ export default function ProfileScreen() {
           <TouchableOpacity style={styles.editProfileBtn} onPress={openEditProfile}>
             <Ionicons name="create-outline" size={14} color={colors.primary} />
             <Text style={styles.editProfileBtnText}>Edit Profile</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Quick Links */}
+        <View style={styles.section}>
+          <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/wallet")}>
+            <View style={[styles.menuIconWrap, { backgroundColor: colors.primary + "14" }]}>
+              <Ionicons name="wallet-outline" size={18} color={colors.primary} />
+            </View>
+            <View style={{ flex: 1, marginLeft: 12 }}>
+              <Text style={styles.menuItemLabel}>Martly Wallet</Text>
+              {walletBalance > 0 && (
+                <Text style={styles.menuItemSub}>Balance: {"\u20B9"}{walletBalance.toFixed(0)}</Text>
+              )}
+            </View>
+            <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
+          </TouchableOpacity>
+          <View style={{ height: 8 }} />
+          <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/loyalty")}>
+            <View style={[styles.menuIconWrap, { backgroundColor: "#fffbeb" }]}>
+              <Ionicons name="star-outline" size={18} color="#d97706" />
+            </View>
+            <View style={{ flex: 1, marginLeft: 12 }}>
+              <Text style={styles.menuItemLabel}>Loyalty Points</Text>
+              {loyaltyPoints > 0 && (
+                <Text style={[styles.menuItemSub, { color: "#d97706" }]}>
+                  {loyaltyPoints} points
+                </Text>
+              )}
+            </View>
+            <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
+          </TouchableOpacity>
+          <View style={{ height: 8 }} />
+          <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/wishlist")}>
+            <View style={[styles.menuIconWrap, { backgroundColor: "#fef2f2" }]}>
+              <Ionicons name="heart-outline" size={18} color="#ef4444" />
+            </View>
+            <Text style={styles.menuItemText}>My Wishlist</Text>
+            <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
           </TouchableOpacity>
         </View>
 
@@ -310,6 +361,17 @@ export default function ProfileScreen() {
         </View>
       </Modal>
 
+      <ConfirmSheet
+        visible={deleteConfirm !== null}
+        title="Delete Address"
+        message={deleteConfirm ? `Remove "${deleteConfirm.label}" address?` : ""}
+        icon="trash-outline"
+        iconColor="#ef4444"
+        confirmLabel="Delete"
+        onConfirm={handleDeleteConfirm}
+        onCancel={() => setDeleteConfirm(null)}
+      />
+
       {/* Add/Edit Address Modal */}
       <Modal visible={showAddressModal} animationType="slide" presentationStyle="pageSheet">
         <View style={styles.modalContainer}>
@@ -348,14 +410,16 @@ export default function ProfileScreen() {
             </View>
 
             <Text style={styles.inputLabel}>Address</Text>
-            <TextInput
-              style={[styles.input, { minHeight: 80, textAlignVertical: "top" }]}
-              value={addrText}
-              onChangeText={setAddrText}
-              placeholder="Enter full address..."
-              placeholderTextColor="#94a3b8"
-              multiline
-              numberOfLines={3}
+            <AddressAutocomplete
+              placeholder="Search for your address..."
+              initialValue={addrText}
+              onSelect={(result) => {
+                setAddrText(result.address);
+                setAddrLat(result.latitude || null);
+                setAddrLng(result.longitude || null);
+                setAddrPincode(result.pincode ?? null);
+                if (result.placeName) setAddrLabel(result.placeName);
+              }}
             />
 
             <TouchableOpacity
@@ -394,17 +458,6 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#f8faf9" },
   scrollContent: { paddingBottom: 8 },
 
-  // Auth screen
-  authContainer: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#f8faf9", padding: 24 },
-  authCard: { alignItems: "center", backgroundColor: "#fff", borderRadius: 16, padding: 32, width: "100%", borderWidth: 1, borderColor: "#f1f5f9" },
-  authIconCircle: { width: 72, height: 72, borderRadius: 36, backgroundColor: colors.primary + "10", justifyContent: "center", alignItems: "center", marginBottom: 16 },
-  authTitle: { fontSize: 20, fontWeight: "700", color: colors.text, marginBottom: 8 },
-  authSubtitle: { fontSize: 14, color: "#64748b", textAlign: "center", marginBottom: 24 },
-  authBtn: { backgroundColor: colors.primary, borderRadius: 10, paddingVertical: 14, width: "100%", alignItems: "center", marginBottom: 10 },
-  authBtnText: { color: "#fff", fontSize: 15, fontWeight: "700" },
-  authSecondaryBtn: { borderWidth: 1, borderColor: colors.primary, borderRadius: 10, paddingVertical: 14, width: "100%", alignItems: "center" },
-  authSecondaryBtnText: { color: colors.primary, fontSize: 15, fontWeight: "600" },
-
   // Profile header
   profileHeader: { alignItems: "center", paddingVertical: 28, backgroundColor: "#fff", borderBottomWidth: 1, borderBottomColor: "#f1f5f9" },
   avatar: { width: 72, height: 72, borderRadius: 36, backgroundColor: colors.primary, justifyContent: "center", alignItems: "center", marginBottom: 12 },
@@ -413,6 +466,42 @@ const styles = StyleSheet.create({
   profileDetail: { fontSize: 14, color: "#64748b", marginTop: 2 },
   editProfileBtn: { flexDirection: "row", alignItems: "center", gap: 4, marginTop: 12, paddingHorizontal: 14, paddingVertical: 7, borderRadius: 8, backgroundColor: colors.primary + "10" },
   editProfileBtnText: { fontSize: 13, fontWeight: "600", color: colors.primary },
+
+  // Menu items
+  menuItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    padding: 14,
+    borderWidth: 1,
+    borderColor: "#f1f5f9",
+  },
+  menuIconWrap: {
+    width: 36,
+    height: 36,
+    borderRadius: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  menuItemText: {
+    flex: 1,
+    fontSize: 15,
+    fontWeight: "600",
+    color: colors.text,
+    marginLeft: 12,
+  },
+  menuItemLabel: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: colors.text,
+  },
+  menuItemSub: {
+    fontSize: 12,
+    color: colors.primary,
+    fontWeight: "600",
+    marginTop: 1,
+  },
 
   // Section
   section: { marginTop: 16, paddingHorizontal: 16 },

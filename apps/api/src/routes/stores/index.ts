@@ -6,6 +6,7 @@ import { requireRole } from "../../middleware/authorize.js";
 import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
+import { haversine } from "../../lib/geo.js";
 
 export async function storeRoutes(app: FastifyInstance) {
   // List stores (scoped to user's org; guests see all active stores)
@@ -50,6 +51,41 @@ export async function storeRoutes(app: FastifyInstance) {
 
     const response: ApiResponse<typeof store> = { success: true, data: store };
     return response;
+  });
+
+  // Get nearby stores (public, sorted by distance)
+  app.get("/nearby", { preHandler: [authenticateOptional] }, async (request) => {
+    const { lat, lng, radius = 10 } = request.query as { lat?: string; lng?: string; radius?: number };
+
+    if (!lat || !lng) {
+      return { success: true, data: [] };
+    }
+
+    const userLat = parseFloat(lat);
+    const userLng = parseFloat(lng);
+    const maxRadius = Number(radius);
+
+    if (isNaN(userLat) || isNaN(userLng)) {
+      return { success: true, data: [] };
+    }
+
+    const stores = await app.prisma.store.findMany({
+      where: {
+        status: "ACTIVE",
+        latitude: { not: null },
+        longitude: { not: null },
+      },
+    });
+
+    const nearbyStores = stores
+      .map((store) => ({
+        ...store,
+        distance: haversine(userLat, userLng, store.latitude!, store.longitude!),
+      }))
+      .filter((s) => s.distance <= maxRadius)
+      .sort((a, b) => a.distance - b.distance);
+
+    return { success: true, data: nearbyStores };
   });
 
   // Create store (force orgId from JWT for non-SUPER_ADMIN)
@@ -151,9 +187,9 @@ export async function storeRoutes(app: FastifyInstance) {
 
   // Get store products (guests allowed)
   app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticateOptional] }, async (request, reply) => {
-    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, foodType, productId } = request.query as {
+    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, foodType, productId, productIds } = request.query as {
       page?: number; pageSize?: number; isFeatured?: string; hasDiscount?: string;
-      sortBy?: string; q?: string; categoryId?: string; foodType?: string; productId?: string;
+      sortBy?: string; q?: string; categoryId?: string; foodType?: string; productId?: string; productIds?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -165,7 +201,9 @@ export async function storeRoutes(app: FastifyInstance) {
     }
 
     const where: Record<string, unknown> = { storeId: request.params.id, isActive: true };
-    if (productId) {
+    if (productIds) {
+      where.productId = { in: productIds.split(",").filter(Boolean) };
+    } else if (productId) {
       where.productId = productId;
     }
     if (isFeatured === "true") {
@@ -224,6 +262,18 @@ export async function storeRoutes(app: FastifyInstance) {
       app.prisma.storeProduct.count({ where }),
     ]);
 
+    // Batch-fetch review aggregates for these products
+    const reviewProductIds = [...new Set(storeProducts.map((sp) => sp.productId))];
+    const reviewAggs = reviewProductIds.length > 0
+      ? await app.prisma.review.groupBy({
+          by: ["productId"],
+          where: { productId: { in: reviewProductIds }, status: "APPROVED" },
+          _avg: { rating: true },
+          _count: { rating: true },
+        })
+      : [];
+    const reviewMap = new Map(reviewAggs.map((r) => [r.productId, { averageRating: Math.round((r._avg.rating ?? 0) * 10) / 10, reviewCount: r._count.rating }]));
+
     const data = storeProducts.map((sp) => {
       const pricing = calculateEffectivePrice(
         sp.price as unknown as number,
@@ -231,7 +281,9 @@ export async function storeRoutes(app: FastifyInstance) {
         sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
       );
       const variant = formatVariantUnit(sp.variant);
-      return { ...sp, variant, pricing, availableStock: sp.stock - sp.reservedStock };
+      const reviews = reviewMap.get(sp.productId);
+      const product = reviews ? { ...sp.product, averageRating: reviews.averageRating, reviewCount: reviews.reviewCount } : sp.product;
+      return { ...sp, product, variant, pricing, availableStock: sp.stock - sp.reservedStock };
     });
 
     const response: PaginatedResponse<(typeof data)[0]> = {

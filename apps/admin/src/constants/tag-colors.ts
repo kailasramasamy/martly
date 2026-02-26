@@ -44,6 +44,7 @@ export const ORDER_STATUS_CONFIG: Record<string, { color: string; label: string 
   CONFIRMED: { color: "blue", label: "Confirmed" },
   PREPARING: { color: "cyan", label: "Preparing" },
   READY: { color: "geekblue", label: "Ready" },
+  OUT_FOR_DELIVERY: { color: "purple", label: "Out for Delivery" },
   DELIVERED: { color: "green", label: "Delivered" },
   CANCELLED: { color: "red", label: "Cancelled" },
 };
@@ -65,6 +66,16 @@ export const ACTIVE_STATUS_CONFIG: Record<string, { color: string; label: string
   false: { color: "red", label: "Inactive" },
 };
 
+export const FULFILLMENT_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
+  DELIVERY: { color: "blue", label: "Delivery" },
+  PICKUP: { color: "green", label: "Pickup" },
+};
+
+export const FULFILLMENT_TYPE_OPTIONS = Object.entries(FULFILLMENT_TYPE_CONFIG).map(([value, { label }]) => ({
+  label,
+  value,
+}));
+
 export const DISCOUNT_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
   FLAT: { color: "blue", label: "Flat" },
   PERCENTAGE: { color: "purple", label: "Percentage" },
@@ -74,3 +85,10 @@ export const DISCOUNT_TYPE_OPTIONS = [
   { label: "Flat Amount (₹)", value: "FLAT" },
   { label: "Percentage (%)", value: "PERCENTAGE" },
 ];
+
+export const LOYALTY_TRANSACTION_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
+  EARN: { color: "gold", label: "Earned" },
+  REDEEM: { color: "purple", label: "Redeemed" },
+  REVERSAL: { color: "orange", label: "Reversal" },
+  ADJUSTMENT: { color: "blue", label: "Adjustment" },
+};

@@ -1,14 +1,48 @@
-import { useEffect } from "react";
-import { Stack, useRouter } from "expo-router";
+import { useEffect, useState, useCallback } from "react";
+import { Stack, useRouter, useSegments } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { AuthProvider } from "../lib/auth-context";
+import { View, StyleSheet } from "react-native";
+import * as ExpoSplashScreen from "expo-splash-screen";
+import { AuthProvider, useAuth } from "../lib/auth-context";
 import { CartProvider } from "../lib/cart-context";
 import { StoreProvider } from "../lib/store-context";
+import { WishlistProvider } from "../lib/wishlist-context";
+import { ToastProvider } from "../lib/toast-context";
 import { addNotificationResponseListener } from "../lib/notifications";
+import SplashScreen from "../components/SplashScreen";
 
-export default function RootLayout() {
+// Keep native splash visible until we're ready
+ExpoSplashScreen.preventAutoHideAsync();
+
+function RootLayoutNav() {
   const router = useRouter();
+  const segments = useSegments();
+  const { isAuthenticated, isLoading } = useAuth();
+  const [appReady, setAppReady] = useState(false);
+  const [splashDone, setSplashDone] = useState(false);
 
+  // When auth resolves, hide native splash and show animated splash
+  useEffect(() => {
+    if (!isLoading) {
+      setAppReady(true);
+      ExpoSplashScreen.hideAsync();
+    }
+  }, [isLoading]);
+
+  // Auth redirect: force login if not authenticated
+  useEffect(() => {
+    if (isLoading || !splashDone) return;
+
+    const inAuth = segments[0] === "(auth)";
+
+    if (!isAuthenticated && !inAuth) {
+      router.replace("/(auth)/login");
+    } else if (isAuthenticated && inAuth) {
+      router.replace("/(tabs)");
+    }
+  }, [isAuthenticated, isLoading, segments, splashDone]);
+
+  // Deep link handler for push notifications
   useEffect(() => {
     const subscription = addNotificationResponseListener((response) => {
       const data = response.notification.request.content.data;
@@ -19,23 +53,56 @@ export default function RootLayout() {
     return () => subscription.remove();
   }, [router]);
 
+  const handleSplashFinish = useCallback(() => {
+    setSplashDone(true);
+  }, []);
+
+  // While auth is loading, show nothing (native splash is still visible)
+  if (!appReady) {
+    return null;
+  }
+
+  return (
+    <View style={styles.root}>
+      <StatusBar style="auto" />
+      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back" }}>
+        <Stack.Screen name="(auth)" />
+        <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
+        <Stack.Screen name="product/[id]" options={{ headerShown: true, title: "Product" }} />
+        <Stack.Screen name="category/[id]" options={{ headerShown: true, title: "Category" }} />
+        <Stack.Screen name="search" options={{ headerShown: true, title: "Search" }} />
+        <Stack.Screen name="checkout" options={{ headerShown: true, title: "Checkout" }} />
+        <Stack.Screen name="order/[id]" options={{ headerShown: true, title: "Order Details" }} />
+        <Stack.Screen name="wishlist" options={{ headerShown: true, title: "My Wishlist" }} />
+        <Stack.Screen name="write-review" options={{ headerShown: true, title: "Write Review" }} />
+        <Stack.Screen name="wallet" options={{ headerShown: true, title: "Martly Wallet" }} />
+        <Stack.Screen name="loyalty" options={{ headerShown: true, title: "Loyalty Points" }} />
+        <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />
+      </Stack>
+      {!splashDone && <SplashScreen onFinish={handleSplashFinish} />}
+    </View>
+  );
+}
+
+export default function RootLayout() {
   return (
     <AuthProvider>
       <StoreProvider>
         <CartProvider>
-          <StatusBar style="auto" />
-          <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back" }}>
-            <Stack.Screen name="(auth)" />
-            <Stack.Screen name="(tabs)" />
-            <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
-            <Stack.Screen name="product/[id]" options={{ headerShown: true, title: "Product" }} />
-            <Stack.Screen name="category/[id]" options={{ headerShown: true, title: "Category" }} />
-            <Stack.Screen name="search" options={{ headerShown: true, title: "Search" }} />
-            <Stack.Screen name="checkout" options={{ headerShown: true, title: "Checkout" }} />
-            <Stack.Screen name="order/[id]" options={{ headerShown: true, title: "Order Details" }} />
-          </Stack>
+          <ToastProvider>
+          <WishlistProvider>
+            <RootLayoutNav />
+          </WishlistProvider>
+          </ToastProvider>
         </CartProvider>
       </StoreProvider>
     </AuthProvider>
   );
 }
+
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+  },
+});

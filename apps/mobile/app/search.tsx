@@ -6,16 +6,17 @@ import {
   FlatList,
   TouchableOpacity,
   StyleSheet,
-  Alert,
 } from "react-native";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { useCart } from "../lib/cart-context";
+import { useWishlist } from "../lib/wishlist-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../components/ProductGridCard";
 import { VariantBottomSheet } from "../components/VariantBottomSheet";
 import { FloatingCart } from "../components/FloatingCart";
+import { ConfirmSheet } from "../components/ConfirmSheet";
 import { ProductCardSkeleton } from "../components/SkeletonLoader";
 import type { StoreProduct, CategoryTreeNode } from "../lib/types";
 
@@ -34,6 +35,7 @@ export default function SearchScreen() {
   }>();
   const { selectedStore } = useStore();
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
+  const { isWishlisted, toggle: toggleWishlist } = useWishlist();
 
   const [query, setQuery] = useState(initialQuery ?? "");
   const [categories, setCategories] = useState<CategoryTreeNode[]>([]);
@@ -47,6 +49,7 @@ export default function SearchScreen() {
   const debounceRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [sheetVisible, setSheetVisible] = useState(false);
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
+  const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
 
   const navigation = useNavigation();
 
@@ -224,18 +227,9 @@ export default function SearchScreen() {
       };
 
       if (cartStoreId && cartStoreId !== selectedStore.id) {
-        Alert.alert(
-          "Replace Cart?",
-          "Your cart has items from another store. Adding this item will replace your current cart.",
-          [
-            { text: "Cancel", style: "cancel" },
-            {
-              text: "Replace",
-              style: "destructive",
-              onPress: () => addItem(selectedStore.id, selectedStore.name, item),
-            },
-          ],
-        );
+        setReplaceCartConfirm({
+          pending: () => addItem(selectedStore.id, selectedStore.name, item),
+        });
         return;
       }
 
@@ -313,6 +307,8 @@ export default function SearchScreen() {
               storeId={selectedStore?.id}
               variantCount={variants?.length ?? 1}
               onShowVariants={() => handleShowVariants(item.product.id)}
+              isWishlisted={isWishlisted(item.product.id)}
+              onToggleWishlist={toggleWishlist}
             />
           );
         }}
@@ -343,6 +339,19 @@ export default function SearchScreen() {
         onAddToCart={handleAddToCart}
         onUpdateQuantity={updateQuantity}
         cartQuantityMap={cartQuantityMap}
+      />
+      <ConfirmSheet
+        visible={replaceCartConfirm !== null}
+        title="Replace Cart?"
+        message="Your cart has items from another store. Adding this item will replace your current cart."
+        icon="cart-outline"
+        iconColor="#f59e0b"
+        confirmLabel="Replace"
+        onConfirm={() => {
+          replaceCartConfirm?.pending();
+          setReplaceCartConfirm(null);
+        }}
+        onCancel={() => setReplaceCartConfirm(null)}
       />
     </View>
   );

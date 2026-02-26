@@ -1,4 +1,5 @@
-import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
+import { useRef } from "react";
+import { View, Text, TouchableOpacity, Pressable, Image, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
@@ -14,9 +15,11 @@ interface FeaturedProductCardProps {
   storeId?: string;
   variantCount?: number;
   onShowVariants?: () => void;
+  isWishlisted?: boolean;
+  onToggleWishlist?: (productId: string) => void;
 }
 
-export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants }: FeaturedProductCardProps) {
+export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants, isWishlisted, onToggleWishlist }: FeaturedProductCardProps) {
   const hasDiscount = item.pricing?.discountActive;
   const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
@@ -30,11 +33,13 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
   const isOutOfStock = available <= 0;
   const isLowStock = !isOutOfStock && available <= 5;
   const brandName = item.product.brand?.name;
+  const heartTapped = useRef(false);
 
   return (
     <TouchableOpacity
       style={styles.card}
       onPress={() => {
+        if (heartTapped.current) { heartTapped.current = false; return; }
         const params: Record<string, string> = { id: item.product.id };
         if (storeId) params.storeId = storeId;
         router.push({ pathname: "/product/[id]", params });
@@ -76,6 +81,16 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
             ]} />
           </View>
         )}
+
+        {onToggleWishlist && (
+          <Pressable
+            style={styles.heartBtn}
+            onPress={() => { heartTapped.current = true; onToggleWishlist(item.product.id); }}
+            hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          >
+            <Ionicons name={isWishlisted ? "heart" : "heart-outline"} size={18} color={isWishlisted ? "#ef4444" : "#94a3b8"} />
+          </Pressable>
+        )}
       </View>
 
       {/* Content */}
@@ -89,6 +104,16 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
             ? `${item.variant.unitValue} ${item.variant.unitType}`
             : item.variant.name}
         </Text>
+
+        {(item.product.averageRating ?? 0) > 0 && (
+          <View style={styles.ratingRow}>
+            <Ionicons name="star" size={11} color="#f59e0b" />
+            <Text style={styles.ratingText}>{item.product.averageRating!.toFixed(1)}</Text>
+            {(item.product.reviewCount ?? 0) > 0 && (
+              <Text style={styles.ratingCount}>({item.product.reviewCount})</Text>
+            )}
+          </View>
+        )}
 
         {isLowStock && (
           <Text style={styles.lowStock}>Only {available} left</Text>
@@ -224,6 +249,18 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 6,
   },
   discountText: { fontSize: 9, color: "#fff", fontWeight: "700", letterSpacing: 0.3 },
+  heartBtn: {
+    position: "absolute",
+    top: 8,
+    right: 8,
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: "rgba(255,255,255,0.9)",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 2,
+  },
   oosOverlay: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: "rgba(255,255,255,0.8)",
@@ -256,6 +293,9 @@ const styles = StyleSheet.create({
     color: "#94a3b8",
     marginTop: 2,
   },
+  ratingRow: { flexDirection: "row" as const, alignItems: "center" as const, gap: 3, marginTop: 3 },
+  ratingText: { fontSize: 11, fontWeight: "600" as const, color: "#92400e" },
+  ratingCount: { fontSize: 10, color: "#94a3b8" },
   lowStock: {
     fontSize: 10,
     color: colors.warning,

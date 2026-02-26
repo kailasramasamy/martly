@@ -8,7 +8,6 @@ import {
   Image,
   StyleSheet,
   ScrollView,
-  Alert,
   ActivityIndicator,
   Dimensions,
 } from "react-native";
@@ -17,11 +16,13 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useCart } from "../../lib/cart-context";
+import { useWishlist } from "../../lib/wishlist-context";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../../components/ProductGridCard";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
 import { FloatingCart } from "../../components/FloatingCart";
+import { ConfirmSheet } from "../../components/ConfirmSheet";
 import type { StoreProduct, CategoryTreeNode } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
@@ -39,6 +40,7 @@ export default function CategoryScreen() {
   const navigation = useNavigation();
   const { selectedStore } = useStore();
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
+  const { isWishlisted, toggle: toggleWishlist } = useWishlist();
 
   const [category, setCategory] = useState<CategoryTreeNode | null>(null);
   const [allProducts, setAllProducts] = useState<StoreProduct[]>([]);
@@ -46,6 +48,7 @@ export default function CategoryScreen() {
   const [activeSub, setActiveSub] = useState<string | null>(null);
   const [sheetVisible, setSheetVisible] = useState(false);
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
+  const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
   const [contentWidth, setContentWidth] = useState(0);
   const [filterOnSale, setFilterOnSale] = useState(false);
   const [sortBy, setSortBy] = useState<"price_asc" | "price_desc" | null>(null);
@@ -242,18 +245,9 @@ export default function CategoryScreen() {
         imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
       };
       if (cartStoreId && cartStoreId !== selectedStore.id) {
-        Alert.alert(
-          "Replace Cart?",
-          "Your cart has items from another store. Adding this item will replace your current cart.",
-          [
-            { text: "Cancel", style: "cancel" },
-            {
-              text: "Replace",
-              style: "destructive",
-              onPress: () => addItem(selectedStore.id, selectedStore.name, item),
-            },
-          ]
-        );
+        setReplaceCartConfirm({
+          pending: () => addItem(selectedStore.id, selectedStore.name, item),
+        });
         return;
       }
       addItem(selectedStore.id, selectedStore.name, item);
@@ -482,6 +476,8 @@ export default function CategoryScreen() {
               onShowVariants={() => handleShowVariants(item.product.id)}
               containerWidth={narrow && contentWidth > 0 ? contentWidth - 20 : undefined}
               variantSizes={sizes}
+              isWishlisted={isWishlisted(item.product.id)}
+              onToggleWishlist={toggleWishlist}
             />
           );
         }}
@@ -613,6 +609,19 @@ export default function CategoryScreen() {
         onAddToCart={handleAddToCart}
         onUpdateQuantity={updateQuantity}
         cartQuantityMap={cartQuantityMap}
+      />
+      <ConfirmSheet
+        visible={replaceCartConfirm !== null}
+        title="Replace Cart?"
+        message="Your cart has items from another store. Adding this item will replace your current cart."
+        icon="cart-outline"
+        iconColor="#f59e0b"
+        confirmLabel="Replace"
+        onConfirm={() => {
+          replaceCartConfirm?.pending();
+          setReplaceCartConfirm(null);
+        }}
+        onCancel={() => setReplaceCartConfirm(null)}
       />
     </View>
   );

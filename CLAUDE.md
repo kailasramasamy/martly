@@ -127,6 +127,30 @@ Registered in `src/app.ts` with `app.register(module, { prefix: '/api/v1/<resour
 - Every fix must be production-ready — no workarounds, hacks, or temporary patches. If a problem requires API changes, schema changes, or restructuring across apps, do that. Don't paper over issues on the client when the proper fix belongs on the server (or vice versa).
 - Free to change APIs, admin, and mobile app as needed to get the right solution. Cross-cutting changes are expected and preferred over fragile single-layer workarounds.
 
+## Autonomy Rules
+
+Work autonomously without user approval for:
+- File changes, file creation, new directories
+- Seeding data to the database (including pulling square images from Unsplash for seed data)
+- Clearing context and continuing implementation
+- Any small decisions during implementation
+- Running curl commands (no permission needed)
+- Running scripts, seed files, and any bash commands (no permission needed)
+- When prompted "Do you want to proceed?" with Yes/No options, always choose **Yes** (and "don't ask again" if available)
+- When warned about newlines in commands, always proceed
+
+**User approval IS required for:**
+- Plan approval (via plan mode) before starting a feature
+- Critical decisions: flow changes, architectural choices, which approach to take
+
+**After implementing a feature:**
+1. Seed relevant test data so the feature is immediately testable
+2. Test the feature thoroughly (API endpoints via curl, verify data, check for errors)
+3. For big feature implementations, create a doc in `docs/` explaining:
+   - How the feature works (flow)
+   - What was tested
+   - What needs manual verification by the user
+
 ## Key File Paths
 
 | What | Path |

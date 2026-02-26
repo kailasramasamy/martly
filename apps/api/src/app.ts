@@ -21,6 +21,13 @@ import { stockRoutes } from "./routes/stock/index.js";
 import { addressRoutes } from "./routes/addresses/index.js";
 import { collectionRoutes } from "./routes/collections/index.js";
 import { homeRoutes } from "./routes/home/index.js";
+import { wishlistRoutes } from "./routes/wishlist/index.js";
+import { reviewRoutes } from "./routes/reviews/index.js";
+import { couponRoutes } from "./routes/coupons/index.js";
+import { deliveryZoneRoutes } from "./routes/delivery-zones/index.js";
+import { deliveryTierRoutes } from "./routes/delivery-tiers/index.js";
+import { walletRoutes } from "./routes/wallet/index.js";
+import { loyaltyRoutes } from "./routes/loyalty/index.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -89,6 +96,13 @@ export async function buildApp() {
       await api.register(addressRoutes, { prefix: "/addresses" });
       await api.register(collectionRoutes, { prefix: "/collections" });
       await api.register(homeRoutes, { prefix: "/home" });
+      await api.register(wishlistRoutes, { prefix: "/wishlist" });
+      await api.register(reviewRoutes, { prefix: "/reviews" });
+      await api.register(couponRoutes, { prefix: "/coupons" });
+      await api.register(deliveryZoneRoutes, { prefix: "/delivery-zones" });
+      await api.register(deliveryTierRoutes, { prefix: "/delivery-tiers" });
+      await api.register(walletRoutes, { prefix: "/wallet" });
+      await api.register(loyaltyRoutes, { prefix: "/loyalty" });
     },
     { prefix: "/api/v1" },
   );

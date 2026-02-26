@@ -1,5 +1,7 @@
 import axios from "axios";
+import type { AxiosError, InternalAxiosRequestConfig } from "axios";
 import type { DataProvider } from "@refinedev/core";
+import { refreshAccessToken } from "./auth-provider";
 
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:7001";
 const TOKEN_KEY = "martly_admin_token";
@@ -13,6 +15,26 @@ axiosInstance.interceptors.request.use((config) => {
   }
   return config;
 });
+
+// Response interceptor: auto-refresh on 401
+axiosInstance.interceptors.response.use(
+  (response) => response,
+  async (error: AxiosError) => {
+    const originalRequest = error.config as InternalAxiosRequestConfig & { _retry?: boolean };
+
+    if (error.response?.status === 401 && originalRequest && !originalRequest._retry) {
+      originalRequest._retry = true;
+
+      const newToken = await refreshAccessToken();
+      if (newToken) {
+        originalRequest.headers.Authorization = `Bearer ${newToken}`;
+        return axiosInstance(originalRequest);
+      }
+    }
+
+    return Promise.reject(error);
+  },
+);
 
 export { axiosInstance };
 

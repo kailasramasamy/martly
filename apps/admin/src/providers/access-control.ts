@@ -30,10 +30,10 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage users" };
     }
 
-    // Customers: SUPER_ADMIN and ORG_ADMIN can view
+    // Customers: SUPER_ADMIN and ORG_ADMIN can view + delete
     if (resource === "customers") {
       if (role === "ORG_ADMIN") {
-        if (action === "list" || action === "show") return { can: true };
+        if (action === "list" || action === "show" || action === "delete") return { can: true };
         return { can: false };
       }
       return { can: false, reason: "Only Super Admin or Org Admin can view customers" };
@@ -69,6 +69,36 @@ export const accessControlProvider: AccessControlProvider = {
       if (role === "ORG_ADMIN") return { can: true };
       if (action === "list" || action === "show") return { can: true };
       return { can: false };
+    }
+
+    // Coupons: ORG_ADMIN full access
+    if (resource === "coupons") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage coupons" };
+    }
+
+    // Reviews: ORG_ADMIN full access
+    if (resource === "reviews") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can moderate reviews" };
+    }
+
+    // Delivery Zones: ORG_ADMIN full access
+    if (resource === "delivery-zones") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage delivery zones" };
+    }
+
+    // Delivery Tiers: ORG_ADMIN full access
+    if (resource === "delivery-tiers") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage delivery tiers" };
+    }
+
+    // Loyalty: ORG_ADMIN full access
+    if (resource === "loyalty-settings" || resource === "loyalty-customers") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage loyalty" };
     }
 
     // Everything else: allow

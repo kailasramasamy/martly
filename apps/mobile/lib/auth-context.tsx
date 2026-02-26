@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useCallback, useEffect, useRef, type ReactNode } from "react";
 import * as SecureStore from "expo-secure-store";
-import { setAccessToken, api } from "./api";
+import { setAccessToken, setTokenRefresher, api } from "./api";
 import { registerForPushNotifications, unregisterPushToken } from "./notifications";
 import type { AuthTokens } from "@martly/shared/types";
 
@@ -12,20 +12,12 @@ interface UserInfo {
   role: string;
 }
 
-interface RegisterData {
-  email: string;
-  password: string;
-  name: string;
-  phone?: string;
-}
-
 interface AuthState {
   isAuthenticated: boolean;
   isLoading: boolean;
   user: UserInfo | null;
   login: (tokens: AuthTokens) => void;
   logout: () => void;
-  register: (data: RegisterData) => Promise<void>;
   refreshUser: () => Promise<void>;
 }
 
@@ -39,6 +31,43 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState<UserInfo | null>(null);
   const pushTokenRef = useRef<string | null>(null);
+  const logoutRef = useRef<() => Promise<void>>();
+
+  // Register the token refresher so api.ts can transparently refresh on 401
+  useEffect(() => {
+    setTokenRefresher(async () => {
+      try {
+        const refreshToken = await SecureStore.getItemAsync(REFRESH_TOKEN_KEY);
+        if (!refreshToken) {
+          logoutRef.current?.();
+          return null;
+        }
+        const API_URL = process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:7001";
+        const res = await fetch(`${API_URL}/api/v1/auth/refresh`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ refreshToken }),
+        });
+        if (!res.ok) {
+          logoutRef.current?.();
+          return null;
+        }
+        const json = await res.json();
+        const newToken = json.data?.accessToken;
+        if (newToken) {
+          setAccessToken(newToken);
+          await SecureStore.setItemAsync(ACCESS_TOKEN_KEY, newToken);
+          return newToken;
+        }
+        logoutRef.current?.();
+        return null;
+      } catch {
+        logoutRef.current?.();
+        return null;
+      }
+    });
+    return () => setTokenRefresher(null);
+  }, []);
 
   useEffect(() => {
     (async () => {
@@ -95,6 +124,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await SecureStore.deleteItemAsync(REFRESH_TOKEN_KEY);
   }, []);
 
+  // Keep logoutRef in sync so the refresher can trigger logout
+  logoutRef.current = logout;
+
   const refreshUser = useCallback(async () => {
     try {
       const res = await api.get<UserInfo>("/api/v1/auth/me");
@@ -104,16 +136,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const register = useCallback(
-    async (data: RegisterData) => {
-      const result = await api.post<AuthTokens>("/api/v1/auth/register", data);
-      await login(result.data);
-    },
-    [login],
-  );
-
   return (
-    <AuthContext.Provider value={{ isAuthenticated, isLoading, user, login, logout, register, refreshUser }}>
+    <AuthContext.Provider value={{ isAuthenticated, isLoading, user, login, logout, refreshUser }}>
       {children}
     </AuthContext.Provider>
   );

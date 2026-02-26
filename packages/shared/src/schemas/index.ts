@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus } from "../constants/index.js";
 
 // ── Auth ──────────────────────────────────────────────
 export const loginSchema = z.object({
@@ -20,6 +20,17 @@ export const registerSchema = z.object({
   phone: z.string().optional(),
 });
 export type RegisterInput = z.infer<typeof registerSchema>;
+
+export const sendOtpSchema = z.object({
+  phone: z.string().min(10).max(15),
+});
+export type SendOtpInput = z.infer<typeof sendOtpSchema>;
+
+export const verifyOtpSchema = z.object({
+  phone: z.string().min(10).max(15),
+  otp: z.string().length(6),
+});
+export type VerifyOtpInput = z.infer<typeof verifyOtpSchema>;
 
 // ── User ──────────────────────────────────────────────
 export const userSchema = z.object({
@@ -80,6 +91,9 @@ export const createStoreSchema = z.object({
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
   address: z.string().min(1),
   phone: z.string().optional(),
+  latitude: z.number().min(-90).max(90).optional(),
+  longitude: z.number().min(-180).max(180).optional(),
+  deliveryRadius: z.number().positive().optional(),
 });
 export type CreateStoreInput = z.infer<typeof createStoreSchema>;
 
@@ -271,6 +285,9 @@ export type UpdateStoreProductInput = z.infer<typeof updateStoreProductSchema>;
 export const createUserAddressSchema = z.object({
   label: z.enum(["Home", "Work", "Other"]).default("Home"),
   address: z.string().min(5),
+  latitude: z.number().min(-90).max(90).optional(),
+  longitude: z.number().min(-180).max(180).optional(),
+  pincode: z.string().optional(),
   isDefault: z.boolean().optional(),
 });
 export type CreateUserAddressInput = z.infer<typeof createUserAddressSchema>;
@@ -278,6 +295,9 @@ export type CreateUserAddressInput = z.infer<typeof createUserAddressSchema>;
 export const updateUserAddressSchema = z.object({
   label: z.enum(["Home", "Work", "Other"]).optional(),
   address: z.string().min(5).optional(),
+  latitude: z.number().min(-90).max(90).nullish(),
+  longitude: z.number().min(-180).max(180).nullish(),
+  pincode: z.string().nullish(),
   isDefault: z.boolean().optional(),
 });
 export type UpdateUserAddressInput = z.infer<typeof updateUserAddressSchema>;
@@ -319,7 +339,8 @@ export const orderSchema = z.object({
   status: z.nativeEnum(OrderStatus),
   paymentStatus: z.nativeEnum(PaymentStatus),
   totalAmount: z.number().positive(),
-  deliveryAddress: z.string().min(1),
+  deliveryAddress: z.string().nullable(),
+  fulfillmentType: z.enum(["DELIVERY", "PICKUP"]).optional(),
   items: z.array(orderItemSchema).optional(),
   createdAt: z.coerce.date(),
   updatedAt: z.coerce.date(),
@@ -328,9 +349,16 @@ export type Order = z.infer<typeof orderSchema>;
 
 export const createOrderSchema = z.object({
   storeId: z.string().uuid(),
+  fulfillmentType: z.enum(["DELIVERY", "PICKUP"]).default("DELIVERY"),
   deliveryAddress: z.string().min(1).optional(),
   addressId: z.string().uuid().optional(),
+  deliveryAddressLat: z.number().min(-90).max(90).optional(),
+  deliveryAddressLng: z.number().min(-180).max(180).optional(),
   paymentMethod: z.enum(["ONLINE", "COD"]).default("ONLINE"),
+  couponCode: z.string().optional(),
+  deliveryNotes: z.string().max(500).optional(),
+  useWallet: z.boolean().default(true),
+  useLoyaltyPoints: z.boolean().default(false),
   items: z.array(
     z.object({
       storeProductId: z.string().uuid(),
@@ -338,8 +366,8 @@ export const createOrderSchema = z.object({
     }),
   ),
 }).refine(
-  (data) => data.deliveryAddress || data.addressId,
-  { message: "Either deliveryAddress or addressId is required", path: ["deliveryAddress"] },
+  (data) => data.fulfillmentType === "PICKUP" || data.deliveryAddress || data.addressId,
+  { message: "Either deliveryAddress or addressId is required for delivery orders", path: ["deliveryAddress"] },
 );
 export type CreateOrderInput = z.infer<typeof createOrderSchema>;
 
@@ -350,6 +378,9 @@ export const updateStoreSchema = z.object({
   address: z.string().min(1).optional(),
   phone: z.string().nullish(),
   status: z.nativeEnum(StoreStatus).optional(),
+  latitude: z.number().min(-90).max(90).nullish(),
+  longitude: z.number().min(-180).max(180).nullish(),
+  deliveryRadius: z.number().positive().optional(),
 });
 export type UpdateStoreInput = z.infer<typeof updateStoreSchema>;
 
@@ -408,6 +439,12 @@ export const updateOrderStatusSchema = z.object({
 });
 export type UpdateOrderStatusInput = z.infer<typeof updateOrderStatusSchema>;
 
+export const updatePaymentStatusSchema = z.object({
+  paymentStatus: z.enum(["PENDING", "PAID", "FAILED"]),
+  note: z.string().max(500).optional(),
+});
+export type UpdatePaymentStatusInput = z.infer<typeof updatePaymentStatusSchema>;
+
 // ── Collection ──────────────────────────────────────
 export const createCollectionSchema = z.object({
   title: z.string().min(1),
@@ -431,3 +468,143 @@ export const updateCollectionSchema = z.object({
   productIds: z.array(z.string().uuid()).optional(),
 });
 export type UpdateCollectionInput = z.infer<typeof updateCollectionSchema>;
+
+// ── Coupon ──────────────────────────────────────────
+export const createCouponSchema = z.object({
+  code: z.string().min(1).transform((v) => v.toUpperCase()),
+  description: z.string().optional(),
+  discountType: z.nativeEnum(DiscountType),
+  discountValue: z.number().positive(),
+  minOrderAmount: z.number().min(0).nullish(),
+  maxDiscount: z.number().min(0).nullish(),
+  usageLimit: z.number().int().positive().nullish(),
+  perUserLimit: z.number().int().positive().default(1),
+  startsAt: z.coerce.date().nullish(),
+  expiresAt: z.coerce.date().nullish(),
+  isActive: z.boolean().default(true),
+  organizationId: z.string().uuid().nullish(),
+});
+export type CreateCouponInput = z.infer<typeof createCouponSchema>;
+
+export const updateCouponSchema = z.object({
+  code: z.string().min(1).transform((v) => v.toUpperCase()).optional(),
+  description: z.string().nullish(),
+  discountType: z.nativeEnum(DiscountType).optional(),
+  discountValue: z.number().positive().optional(),
+  minOrderAmount: z.number().min(0).nullish(),
+  maxDiscount: z.number().min(0).nullish(),
+  usageLimit: z.number().int().positive().nullish(),
+  perUserLimit: z.number().int().positive().optional(),
+  startsAt: z.coerce.date().nullish(),
+  expiresAt: z.coerce.date().nullish(),
+  isActive: z.boolean().optional(),
+});
+export type UpdateCouponInput = z.infer<typeof updateCouponSchema>;
+
+export const applyCouponSchema = z.object({
+  code: z.string().min(1),
+  storeId: z.string().uuid(),
+  orderAmount: z.number().positive(),
+});
+export type ApplyCouponInput = z.infer<typeof applyCouponSchema>;
+
+// ── Review ──────────────────────────────────────────
+export const createReviewSchema = z.object({
+  productId: z.string().uuid(),
+  storeId: z.string().uuid().optional(),
+  rating: z.number().int().min(1).max(5),
+  title: z.string().max(200).optional(),
+  comment: z.string().max(2000).optional(),
+});
+export type CreateReviewInput = z.infer<typeof createReviewSchema>;
+
+export const updateReviewSchema = z.object({
+  rating: z.number().int().min(1).max(5).optional(),
+  title: z.string().max(200).nullish(),
+  comment: z.string().max(2000).nullish(),
+});
+export type UpdateReviewInput = z.infer<typeof updateReviewSchema>;
+
+export const updateReviewStatusSchema = z.object({
+  status: z.nativeEnum(ReviewStatus),
+});
+export type UpdateReviewStatusInput = z.infer<typeof updateReviewStatusSchema>;
+
+// ── Wishlist ────────────────────────────────────────
+export const toggleWishlistSchema = z.object({
+  productId: z.string().uuid(),
+});
+export type ToggleWishlistInput = z.infer<typeof toggleWishlistSchema>;
+
+// ── Delivery Zone ───────────────────────────────────
+export const createDeliveryZoneSchema = z.object({
+  name: z.string().min(1),
+  pincodes: z.array(z.string()).default([]),
+  deliveryFee: z.number().min(0),
+  estimatedMinutes: z.number().int().positive().default(60),
+  isActive: z.boolean().default(true),
+  organizationId: z.string().uuid(),
+  storeIds: z.array(z.string().uuid()).optional(),
+});
+export type CreateDeliveryZoneInput = z.infer<typeof createDeliveryZoneSchema>;
+
+export const updateDeliveryZoneSchema = z.object({
+  name: z.string().min(1).optional(),
+  pincodes: z.array(z.string()).optional(),
+  deliveryFee: z.number().min(0).optional(),
+  estimatedMinutes: z.number().int().positive().optional(),
+  isActive: z.boolean().optional(),
+  storeIds: z.array(z.string().uuid()).optional(),
+});
+export type UpdateDeliveryZoneInput = z.infer<typeof updateDeliveryZoneSchema>;
+
+// ── Delivery Tier (distance-based) ─────────────────
+export const createDeliveryTierSchema = z.object({
+  storeId: z.string().uuid(),
+  minDistance: z.number().min(0),
+  maxDistance: z.number().positive(),
+  deliveryFee: z.number().min(0),
+  estimatedMinutes: z.number().int().positive().default(45),
+  isActive: z.boolean().default(true),
+});
+export type CreateDeliveryTierInput = z.infer<typeof createDeliveryTierSchema>;
+
+export const updateDeliveryTierSchema = z.object({
+  minDistance: z.number().min(0).optional(),
+  maxDistance: z.number().positive().optional(),
+  deliveryFee: z.number().min(0).optional(),
+  estimatedMinutes: z.number().int().positive().optional(),
+  isActive: z.boolean().optional(),
+});
+export type UpdateDeliveryTierInput = z.infer<typeof updateDeliveryTierSchema>;
+
+export const deliveryLookupSchema = z.object({
+  storeId: z.string().uuid(),
+  latitude: z.number().min(-90).max(90),
+  longitude: z.number().min(-180).max(180),
+});
+export type DeliveryLookupInput = z.infer<typeof deliveryLookupSchema>;
+
+// ── Loyalty ────────────────────────────────────────
+export const createLoyaltyConfigSchema = z.object({
+  isEnabled: z.boolean().default(true),
+  earnRate: z.number().int().min(0).max(100).default(1),
+  minRedeemPoints: z.number().int().min(0).default(10),
+  maxRedeemPercentage: z.number().int().min(1).max(100).default(50),
+});
+export type CreateLoyaltyConfigInput = z.infer<typeof createLoyaltyConfigSchema>;
+
+export const updateLoyaltyConfigSchema = z.object({
+  isEnabled: z.boolean().optional(),
+  earnRate: z.number().int().min(0).max(100).optional(),
+  minRedeemPoints: z.number().int().min(0).optional(),
+  maxRedeemPercentage: z.number().int().min(1).max(100).optional(),
+});
+export type UpdateLoyaltyConfigInput = z.infer<typeof updateLoyaltyConfigSchema>;
+
+export const loyaltyAdjustmentSchema = z.object({
+  userId: z.string().uuid(),
+  points: z.number().int(),
+  description: z.string().min(1).max(500),
+});
+export type LoyaltyAdjustmentInput = z.infer<typeof loyaltyAdjustmentSchema>;

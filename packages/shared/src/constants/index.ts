@@ -135,15 +135,48 @@ export const RegulatoryMark = {
 } as const;
 export type RegulatoryMark = (typeof RegulatoryMark)[keyof typeof RegulatoryMark];
 
+export const FulfillmentType = {
+  DELIVERY: "DELIVERY",
+  PICKUP: "PICKUP",
+} as const;
+export type FulfillmentType = (typeof FulfillmentType)[keyof typeof FulfillmentType];
+
+export const FulfillmentTypeLabels: Record<FulfillmentType, string> = {
+  DELIVERY: "Home Delivery",
+  PICKUP: "Store Pickup",
+};
+
 export const DiscountType = {
   FLAT: "FLAT",
   PERCENTAGE: "PERCENTAGE",
 } as const;
 export type DiscountType = (typeof DiscountType)[keyof typeof DiscountType];
 
+export const ReviewStatus = {
+  PENDING: "PENDING",
+  APPROVED: "APPROVED",
+  REJECTED: "REJECTED",
+} as const;
+export type ReviewStatus = (typeof ReviewStatus)[keyof typeof ReviewStatus];
+
 export const DiscountTypeLabels: Record<DiscountType, string> = {
   FLAT: "Flat Amount",
   PERCENTAGE: "Percentage",
+};
+
+export const LoyaltyTransactionType = {
+  EARN: "EARN",
+  REDEEM: "REDEEM",
+  REVERSAL: "REVERSAL",
+  ADJUSTMENT: "ADJUSTMENT",
+} as const;
+export type LoyaltyTransactionType = (typeof LoyaltyTransactionType)[keyof typeof LoyaltyTransactionType];
+
+export const LoyaltyTransactionTypeLabels: Record<LoyaltyTransactionType, string> = {
+  EARN: "Earned",
+  REDEEM: "Redeemed",
+  REVERSAL: "Reversal",
+  ADJUSTMENT: "Adjustment",
 };
 
 export const RegulatoryMarkLabels: Record<RegulatoryMark, string> = {

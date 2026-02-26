@@ -21,6 +21,9 @@ import {
   ContainerOutlined,
   StarOutlined,
   AppstoreAddOutlined,
+  GiftOutlined,
+  CommentOutlined,
+  EnvironmentOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -70,6 +73,16 @@ import { CustomerShow } from "./pages/customers/show";
 import { CollectionList } from "./pages/collections/list";
 import { CollectionCreate } from "./pages/collections/create";
 import { CollectionEdit } from "./pages/collections/edit";
+import { CouponList } from "./pages/coupons/list";
+import { CouponCreate } from "./pages/coupons/create";
+import { CouponEdit } from "./pages/coupons/edit";
+import { ReviewList } from "./pages/reviews/list";
+import { DeliveryZoneList } from "./pages/delivery-zones/list";
+import { DeliveryZoneCreate } from "./pages/delivery-zones/create";
+import { DeliveryZoneEdit } from "./pages/delivery-zones/edit";
+import { DeliveryTierList } from "./pages/delivery-tiers/list";
+import { LoyaltySettings } from "./pages/loyalty/settings";
+import { LoyaltyCustomers } from "./pages/loyalty/customers";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -219,6 +232,44 @@ export default function App() {
                 meta: { label: "Collections", icon: <AppstoreOutlined />, parent: "marketing" },
               },
               {
+                name: "coupons",
+                list: "/coupons",
+                create: "/coupons/create",
+                edit: "/coupons/edit/:id",
+                meta: { label: "Coupons", icon: <GiftOutlined />, parent: "marketing" },
+              },
+              {
+                name: "reviews",
+                list: "/reviews",
+                meta: { label: "Reviews", icon: <CommentOutlined />, parent: "marketing" },
+              },
+              {
+                name: "loyalty-settings",
+                list: "/loyalty-settings",
+                meta: { label: "Loyalty Settings", icon: <StarOutlined />, parent: "marketing" },
+              },
+              {
+                name: "loyalty-customers",
+                list: "/loyalty-customers",
+                meta: { label: "Loyalty Points", icon: <StarOutlined />, parent: "marketing" },
+              },
+              {
+                name: "delivery",
+                meta: { label: "Delivery", icon: <EnvironmentOutlined /> },
+              },
+              {
+                name: "delivery-zones",
+                list: "/delivery-zones",
+                create: "/delivery-zones/create",
+                edit: "/delivery-zones/edit/:id",
+                meta: { label: "Zones (Pincode)", parent: "delivery" },
+              },
+              {
+                name: "delivery-tiers",
+                list: "/delivery-tiers",
+                meta: { label: "Tiers (Distance)", parent: "delivery" },
+              },
+              {
                 name: "store-products",
                 create: "/store-products/create",
                 edit: "/store-products/edit/:id",
@@ -307,6 +358,20 @@ export default function App() {
                   <Route path="create" element={<CollectionCreate />} />
                   <Route path="edit/:id" element={<CollectionEdit />} />
                 </Route>
+                <Route path="/coupons">
+                  <Route index element={<CouponList />} />
+                  <Route path="create" element={<CouponCreate />} />
+                  <Route path="edit/:id" element={<CouponEdit />} />
+                </Route>
+                <Route path="/reviews" element={<ReviewList />} />
+                <Route path="/loyalty-settings" element={<LoyaltySettings />} />
+                <Route path="/loyalty-customers" element={<LoyaltyCustomers />} />
+                <Route path="/delivery-zones">
+                  <Route index element={<DeliveryZoneList />} />
+                  <Route path="create" element={<DeliveryZoneCreate />} />
+                  <Route path="edit/:id" element={<DeliveryZoneEdit />} />
+                </Route>
+                <Route path="/delivery-tiers" element={<DeliveryTierList />} />
                 <Route path="/stock" element={<StockPage />} />
                 <Route path="/featured-products" element={<FeaturedProductsPage />} />
                 <Route path="/" element={<DashboardPage />} />

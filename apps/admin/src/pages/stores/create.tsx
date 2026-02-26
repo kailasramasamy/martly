@@ -1,7 +1,7 @@
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
-import { Form, Input, Select, Card, Row, Col } from "antd";
-import { ShopOutlined, EnvironmentOutlined } from "@ant-design/icons";
+import { Form, Input, InputNumber, Select, Card, Row, Col, Slider } from "antd";
+import { ShopOutlined, EnvironmentOutlined, AimOutlined } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
 
@@ -30,8 +30,8 @@ export const StoreCreate = () => {
         layout="vertical"
         initialValues={
           !isSuperAdmin && identity?.organizationId
-            ? { organizationId: identity.organizationId }
-            : undefined
+            ? { organizationId: identity.organizationId, deliveryRadius: 7 }
+            : { deliveryRadius: 7 }
         }
       >
         <Row gutter={[16, 16]}>
@@ -62,6 +62,24 @@ export const StoreCreate = () => {
               </Form.Item>
               <Form.Item label="Phone" name="phone">
                 <Input />
+              </Form.Item>
+            </Card>
+
+            <Card title={sectionTitle(<AimOutlined />, "Delivery Location")} size="small" style={{ marginTop: 16 }}>
+              <Row gutter={12}>
+                <Col span={12}>
+                  <Form.Item label="Latitude" name="latitude">
+                    <InputNumber style={{ width: "100%" }} step={0.0001} placeholder="e.g. 19.0760" />
+                  </Form.Item>
+                </Col>
+                <Col span={12}>
+                  <Form.Item label="Longitude" name="longitude">
+                    <InputNumber style={{ width: "100%" }} step={0.0001} placeholder="e.g. 72.8777" />
+                  </Form.Item>
+                </Col>
+              </Row>
+              <Form.Item label="Delivery Radius (km)" name="deliveryRadius">
+                <Slider min={1} max={25} step={0.5} marks={{ 1: "1", 5: "5", 10: "10", 15: "15", 25: "25" }} />
               </Form.Item>
             </Card>
           </Col>

@@ -3,12 +3,19 @@ import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 const API_URL = process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:7001";
 
 let accessToken: string | null = null;
+let tokenRefresher: (() => Promise<string | null>) | null = null;
+let refreshPromise: Promise<string | null> | null = null;
 
 export function setAccessToken(token: string | null) {
   accessToken = token;
 }
 
-async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
+/** Register a callback that refreshes the access token using the stored refresh token */
+export function setTokenRefresher(fn: (() => Promise<string | null>) | null) {
+  tokenRefresher = fn;
+}
+
+async function request<T>(path: string, options: RequestInit = {}, isRetry = false): Promise<T> {
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
     ...((options.headers as Record<string, string>) ?? {}),
@@ -22,6 +29,18 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
     ...options,
     headers,
   });
+
+  // On 401, try refreshing the token once (skip for auth endpoints)
+  if (response.status === 401 && !isRetry && tokenRefresher && !path.includes("/auth/")) {
+    // Deduplicate concurrent refresh calls
+    if (!refreshPromise) {
+      refreshPromise = tokenRefresher().finally(() => { refreshPromise = null; });
+    }
+    const newToken = await refreshPromise;
+    if (newToken) {
+      return request<T>(path, options, true);
+    }
+  }
 
   if (!response.ok) {
     const error = await response.json().catch(() => ({ message: "Request failed" }));
