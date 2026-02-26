@@ -11,6 +11,7 @@ import { calculateEffectivePrice } from "../../services/pricing.js";
 import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
 import { formatVariantUnit } from "../../services/units.js";
 import { createRazorpayOrder, verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId } from "../../services/payment.js";
+import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 
 // Valid status transitions
 const DELIVERY_TRANSITIONS: Record<string, string[]> = {
@@ -748,6 +749,7 @@ export async function orderRoutes(app: FastifyInstance) {
       });
 
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, body.status);
+      broadcastOrderUpdate(app.prisma, order.id, body.status);
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;
@@ -930,6 +932,7 @@ export async function orderRoutes(app: FastifyInstance) {
       });
 
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, "CANCELLED");
+      broadcastOrderUpdate(app.prisma, order.id, "CANCELLED");
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;
@@ -1033,6 +1036,7 @@ export async function orderRoutes(app: FastifyInstance) {
         if (order.status === "PENDING") {
           sendOrderStatusNotification(app.fcm, app.prisma, order.id, order.userId, "CONFIRMED");
         }
+        broadcastOrderUpdate(app.prisma, order.id, updated.status);
 
         const response: ApiResponse<typeof updated> = { success: true, data: updated };
         return response;

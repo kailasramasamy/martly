@@ -10,6 +10,7 @@ import {
 import { useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
+import { useOrderWebSocket } from "../../lib/useOrderWebSocket";
 import { useToast } from "../../lib/toast-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
@@ -118,15 +119,23 @@ export default function OrderDetailScreen() {
     fetchOrder();
   }, [fetchOrder]);
 
-  // Poll for active orders
-  useEffect(() => {
-    if (!order) return;
-    const isActive = order.status !== "DELIVERED" && order.status !== "CANCELLED";
-    if (!isActive) return;
+  const isActive = !!order && order.status !== "DELIVERED" && order.status !== "CANCELLED";
 
-    const interval = setInterval(fetchOrder, 15000);
+  // WebSocket for real-time updates on this order
+  useOrderWebSocket({
+    orderId: id,
+    enabled: isActive,
+    onOrderUpdated: useCallback((_orderId: string, data: unknown) => {
+      setOrder(data as OrderData);
+    }, []),
+  });
+
+  // 60s fallback poll for active orders (safety net)
+  useEffect(() => {
+    if (!isActive) return;
+    const interval = setInterval(fetchOrder, 60000);
     return () => clearInterval(interval);
-  }, [order, fetchOrder]);
+  }, [isActive, fetchOrder]);
 
   const cancelMessage = (() => {
     const isOnlinePaid = order?.paymentMethod === "ONLINE" && order?.paymentStatus === "PAID";

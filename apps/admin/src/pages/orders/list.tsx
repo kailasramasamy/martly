@@ -1,7 +1,9 @@
 import { List, useTable, ShowButton } from "@refinedev/antd";
+import { useInvalidate } from "@refinedev/core";
 import { Table, Tag, Input, Select, DatePicker, Row, Col, Card, Space } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { useOrderWebSocket } from "../../hooks/useOrderWebSocket";
 
 import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, FULFILLMENT_TYPE_CONFIG, FULFILLMENT_TYPE_OPTIONS } from "../../constants/tag-colors";
 
@@ -15,9 +17,18 @@ const paymentMethodOptions = [
 export const OrderList = () => {
   const [search, setSearch] = useState("");
 
+  const invalidate = useInvalidate();
+
   const { tableProps, setFilters, filters } = useTable({
     resource: "orders",
     syncWithLocation: true,
+  });
+
+  // Real-time updates via WebSocket
+  useOrderWebSocket({
+    onOrdersChanged: useCallback(() => {
+      invalidate({ resource: "orders", invalidates: ["list"] });
+    }, [invalidate]),
   });
 
   const currentFilters = filters ?? [];

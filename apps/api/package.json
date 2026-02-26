@@ -20,6 +20,7 @@
     "@fastify/jwt": "^9",
     "@fastify/multipart": "^9.4.0",
     "@fastify/sensible": "^6",
+    "@fastify/websocket": "^11.2.0",
     "@martly/shared": "workspace:*",
     "@prisma/adapter-pg": "^6",
     "@prisma/client": "^6",

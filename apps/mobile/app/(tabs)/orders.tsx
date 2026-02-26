@@ -10,6 +10,7 @@ import {
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
+import { useOrderWebSocket } from "../../lib/useOrderWebSocket";
 import { useToast } from "../../lib/toast-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
@@ -62,7 +63,18 @@ export default function OrdersScreen() {
 
   useEffect(() => {
     fetchOrders();
-    const interval = setInterval(fetchOrders, 30000);
+  }, [fetchOrders]);
+
+  // WebSocket for real-time order list updates
+  useOrderWebSocket({
+    onOrdersChanged: useCallback(() => {
+      fetchOrders();
+    }, [fetchOrders]),
+  });
+
+  // 60s fallback poll (safety net)
+  useEffect(() => {
+    const interval = setInterval(fetchOrders, 60000);
     return () => clearInterval(interval);
   }, [fetchOrders]);
 

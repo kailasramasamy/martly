@@ -28,6 +28,7 @@ import { deliveryZoneRoutes } from "./routes/delivery-zones/index.js";
 import { deliveryTierRoutes } from "./routes/delivery-tiers/index.js";
 import { walletRoutes } from "./routes/wallet/index.js";
 import { loyaltyRoutes } from "./routes/loyalty/index.js";
+import { websocketPlugin } from "./plugins/websocket.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -51,6 +52,7 @@ export async function buildApp() {
   await app.register(sensible);
   await app.register(prismaPlugin);
   await app.register(firebasePlugin);
+  await app.register(websocketPlugin);
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {

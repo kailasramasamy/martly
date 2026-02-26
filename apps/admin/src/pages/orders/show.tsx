@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { Show } from "@refinedev/antd";
 import { useShow, useInvalidate } from "@refinedev/core";
+import { useOrderWebSocket } from "../../hooks/useOrderWebSocket";
 import { Tag, Table, Card, Descriptions, Row, Col, Button, Space, Popconfirm, Select, Input, message } from "antd";
 import { axiosInstance } from "../../providers/data-provider";
 import {
@@ -66,6 +67,19 @@ export const OrderShow = () => {
   const [updatingPayment, setUpdatingPayment] = useState(false);
   const [selectedPaymentStatus, setSelectedPaymentStatus] = useState<string | null>(null);
   const [paymentNote, setPaymentNote] = useState("");
+
+  // Real-time updates via WebSocket
+  const recordId = record?.id as string | undefined;
+  useOrderWebSocket({
+    orderId: recordId,
+    enabled: !!record,
+    onOrderUpdated: useCallback(() => {
+      invalidate({ resource: "orders", invalidates: ["detail", "list"], id: recordId });
+    }, [invalidate, recordId]),
+    onOrdersChanged: useCallback(() => {
+      invalidate({ resource: "orders", invalidates: ["detail"], id: recordId });
+    }, [invalidate, recordId]),
+  });
 
   if (!record) return null;
 
