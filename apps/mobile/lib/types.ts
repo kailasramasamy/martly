@@ -46,6 +46,7 @@ export interface Product {
   name: string;
   description: string | null;
   imageUrl: string | null;
+  images?: string[];
   brand: { id: string; name: string } | null;
   foodType: string | null;
   productType: string | null;

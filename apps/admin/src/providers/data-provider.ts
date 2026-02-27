@@ -71,7 +71,7 @@ export const martlyDataProvider: DataProvider = {
   },
 
   update: async ({ resource, id, variables }) => {
-    const { data: res } = await axiosInstance.put(`/${resource}/${id}`, variables);
+    const { data: res } = await axiosInstance.patch(`/${resource}/${id}`, variables);
     return { data: res.data };
   },
 
@@ -82,7 +82,7 @@ export const martlyDataProvider: DataProvider = {
 
   getApiUrl: () => `${API_URL}/api/v1`,
 
-  custom: async ({ url, method, payload }) => {
+  custom: async ({ url, method, payload, query }) => {
     // Strip the baseURL prefix if present so axiosInstance doesn't double it
     const base = `${API_URL}/api/v1`;
     const resolvedUrl = url.startsWith(base) ? url.slice(base.length) : url;
@@ -90,6 +90,7 @@ export const martlyDataProvider: DataProvider = {
       url: resolvedUrl,
       method: method as string,
       data: payload,
+      params: query,
     });
     return { data: res };
   },

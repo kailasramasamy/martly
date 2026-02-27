@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, useCallback } from "react";
+import { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import {
   View,
   Text,
@@ -53,16 +53,23 @@ export default function ProductDetailScreen() {
   const [reviewSummary, setReviewSummary] = useState<ReviewSummary | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
 
-  // Collect all images from product and variants
+  // Collect all images from product, gallery, and variants
   const images = useMemo(() => {
     if (!product) return [];
     const imgs: string[] = [];
     if (product.imageUrl) imgs.push(product.imageUrl);
+    if (product.images) {
+      for (const img of product.images) {
+        if (img && !imgs.includes(img)) imgs.push(img);
+      }
+    }
     product.variants?.forEach((v) => {
       if (v.imageUrl && !imgs.includes(v.imageUrl)) imgs.push(v.imageUrl);
     });
     return imgs;
   }, [product]);
+
+  const galleryRef = useRef<ScrollView>(null);
 
   const [sheetVisible, setSheetVisible] = useState(false);
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
@@ -209,6 +216,7 @@ export default function ProductDetailScreen() {
       {images.length > 0 ? (
         <View>
           <ScrollView
+            ref={galleryRef}
             horizontal
             pagingEnabled
             showsHorizontalScrollIndicator={false}
@@ -227,6 +235,26 @@ export default function ProductDetailScreen() {
                 <View key={idx} style={[styles.dot, idx === activeImageIdx && styles.dotActive]} />
               ))}
             </View>
+          )}
+          {images.length > 1 && (
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.thumbStrip}
+            >
+              {images.map((uri, idx) => (
+                <TouchableOpacity
+                  key={idx}
+                  onPress={() => {
+                    galleryRef.current?.scrollTo({ x: idx * SCREEN_WIDTH, animated: true });
+                    setActiveImageIdx(idx);
+                  }}
+                  style={[styles.thumbWrap, idx === activeImageIdx && styles.thumbActive]}
+                >
+                  <Image source={{ uri }} style={styles.thumbImage} resizeMode="cover" />
+                </TouchableOpacity>
+              ))}
+            </ScrollView>
           )}
         </View>
       ) : (
@@ -591,6 +619,10 @@ const styles = StyleSheet.create({
   dotRow: { flexDirection: "row", justifyContent: "center", paddingVertical: spacing.sm },
   dot: { width: 8, height: 8, borderRadius: 4, backgroundColor: colors.border, marginHorizontal: 3 },
   dotActive: { backgroundColor: colors.primary, width: 10, height: 10, borderRadius: 5 },
+  thumbStrip: { paddingHorizontal: spacing.md, paddingBottom: spacing.sm, gap: spacing.sm },
+  thumbWrap: { width: 56, height: 56, borderRadius: 8, borderWidth: 2, borderColor: "transparent", overflow: "hidden" },
+  thumbActive: { borderColor: colors.primary },
+  thumbImage: { width: "100%", height: "100%" },
   body: { padding: spacing.md },
   infoRow: { flexDirection: "row", alignItems: "center", gap: 6, marginBottom: spacing.xs },
   foodTypeDot: {

@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { Prisma } from "../../../generated/prisma/index.js";
-import { createOrderSchema, updateOrderStatusSchema, updatePaymentStatusSchema, verifyPaymentSchema } from "@martly/shared/schemas";
+import { createOrderSchema, updateOrderStatusSchema, updatePaymentStatusSchema, verifyPaymentSchema, bulkUpdateOrderStatusSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
@@ -163,6 +163,7 @@ export async function orderRoutes(app: FastifyInstance) {
 
     // Resolve delivery address from addressId or direct input
     let deliveryAddress: string | null = null;
+    let deliveryPincode: string | null = null;
     if (isPickup) {
       // For pickup, store the store address for the record
       deliveryAddress = store?.address ?? null;
@@ -174,6 +175,7 @@ export async function orderRoutes(app: FastifyInstance) {
           return reply.notFound("Address not found");
         }
         deliveryAddress = addr.address;
+        deliveryPincode = addr.pincode ?? null;
       }
     }
 
@@ -311,6 +313,112 @@ export async function orderRoutes(app: FastifyInstance) {
       }
     }
 
+    // Express delivery validation (orders without a delivery slot)
+    if (!body.deliverySlotId && !isPickup) {
+      const expressConfig = await app.prisma.expressDeliveryConfig.findUnique({
+        where: { storeId: body.storeId },
+      });
+
+      if (expressConfig) {
+        if (!expressConfig.isEnabled) {
+          return reply.status(400).send({
+            success: false,
+            error: "Express Unavailable",
+            message: "Express delivery is not available for this store",
+            statusCode: 400,
+          });
+        }
+
+        if (expressConfig.operatingStart && expressConfig.operatingEnd) {
+          const now = new Date();
+          const currentMinutes = now.getHours() * 60 + now.getMinutes();
+          const [startH, startM] = expressConfig.operatingStart.split(":").map(Number);
+          const [endH, endM] = expressConfig.operatingEnd.split(":").map(Number);
+          const startMinutes = startH * 60 + startM;
+          const endMinutes = endH * 60 + endM;
+
+          if (currentMinutes < startMinutes || currentMinutes >= endMinutes) {
+            return reply.status(400).send({
+              success: false,
+              error: "Express Unavailable",
+              message: "Express delivery is outside operating hours",
+              statusCode: 400,
+            });
+          }
+        }
+
+        // Override ETA with config value
+        if (expressConfig.etaMinutes != null) {
+          estimatedMinutes = expressConfig.etaMinutes;
+        }
+      }
+    }
+
+    // Delivery slot validation
+    let deliverySlotId: string | undefined;
+    let scheduledDate: Date | undefined;
+    let slotStartTime: string | undefined;
+    let slotEndTime: string | undefined;
+
+    if (body.deliverySlotId && body.scheduledDate) {
+      const slot = await app.prisma.deliverySlot.findUnique({
+        where: { id: body.deliverySlotId },
+      });
+
+      if (!slot) return reply.badRequest("Delivery slot not found");
+      if (!slot.isActive) return reply.badRequest("Delivery slot is not active");
+      if (slot.storeId !== body.storeId) return reply.badRequest("Delivery slot does not belong to this store");
+
+      const parsedDate = new Date(body.scheduledDate + "T00:00:00");
+      if (isNaN(parsedDate.getTime())) return reply.badRequest("Invalid scheduledDate format");
+
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const maxDate = new Date(today);
+      maxDate.setDate(maxDate.getDate() + 7);
+      if (parsedDate < today || parsedDate > maxDate) {
+        return reply.badRequest("Scheduled date must be within 7 days");
+      }
+
+      if (parsedDate.getDay() !== slot.dayOfWeek) {
+        return reply.badRequest("Scheduled date does not match slot day of week");
+      }
+
+      // Check cutoff for today
+      const isToday = parsedDate.toDateString() === new Date().toDateString();
+      if (isToday) {
+        const now = new Date();
+        const currentMinutes = now.getHours() * 60 + now.getMinutes();
+        const [h, m] = slot.startTime.split(":").map(Number);
+        if (currentMinutes >= h * 60 + m - slot.cutoffMinutes) {
+          return reply.badRequest("This slot is past its booking cutoff time");
+        }
+      }
+
+      // Check capacity
+      const startOfDay = new Date(body.scheduledDate + "T00:00:00");
+      const endOfDay = new Date(body.scheduledDate + "T23:59:59.999");
+      const bookedCount = await app.prisma.order.count({
+        where: {
+          deliverySlotId: body.deliverySlotId,
+          scheduledDate: { gte: startOfDay, lte: endOfDay },
+          status: { not: "CANCELLED" },
+        },
+      });
+      if (bookedCount >= slot.maxOrders) {
+        return reply.badRequest("This delivery slot is full");
+      }
+
+      deliverySlotId = slot.id;
+      scheduledDate = parsedDate;
+      slotStartTime = slot.startTime;
+      slotEndTime = slot.endTime;
+
+      // Override estimatedDeliveryAt with scheduled time
+      const [sh, sm] = slot.startTime.split(":").map(Number);
+      estimatedMinutes = undefined; // will set estimatedDeliveryAt directly
+    }
+
     const totalAmount = itemsTotal - couponDiscount + deliveryFee;
 
     const stockItems = body.items.map((item) => ({
@@ -409,6 +517,7 @@ export async function orderRoutes(app: FastifyInstance) {
             storeId: body.storeId,
             fulfillmentType,
             deliveryAddress,
+            deliveryPincode: deliveryPincode ?? undefined,
             paymentMethod: body.paymentMethod as "ONLINE" | "COD",
             totalAmount,
             status: orderStatus,
@@ -421,7 +530,18 @@ export async function orderRoutes(app: FastifyInstance) {
             deliveryNotes: body.deliveryNotes,
             walletAmountUsed: walletDeduction > 0 ? walletDeduction : undefined,
             loyaltyPointsUsed: loyaltyDeduction > 0 ? loyaltyDeduction : undefined,
-            estimatedDeliveryAt: estimatedMinutes ? new Date(Date.now() + estimatedMinutes * 60000) : undefined,
+            estimatedDeliveryAt: scheduledDate && slotStartTime
+              ? (() => {
+                  const [sh, sm] = slotStartTime.split(":").map(Number);
+                  const dt = new Date(scheduledDate);
+                  dt.setHours(sh, sm, 0, 0);
+                  return dt;
+                })()
+              : estimatedMinutes ? new Date(Date.now() + estimatedMinutes * 60000) : undefined,
+            deliverySlotId: deliverySlotId ?? undefined,
+            scheduledDate: scheduledDate ?? undefined,
+            slotStartTime: slotStartTime ?? undefined,
+            slotEndTime: slotEndTime ?? undefined,
             items: { create: itemsData },
             statusLogs: {
               create: walletFullyCovered
@@ -751,6 +871,22 @@ export async function orderRoutes(app: FastifyInstance) {
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, body.status);
       broadcastOrderUpdate(app.prisma, order.id, body.status);
 
+      // Auto-complete delivery trip when last order is delivered
+      if (body.status === "DELIVERED" && existing.deliveryTripId) {
+        const remaining = await app.prisma.order.count({
+          where: {
+            deliveryTripId: existing.deliveryTripId,
+            status: { notIn: ["DELIVERED", "CANCELLED"] },
+          },
+        });
+        if (remaining === 0) {
+          await app.prisma.deliveryTrip.update({
+            where: { id: existing.deliveryTripId },
+            data: { status: "COMPLETED", completedAt: new Date() },
+          });
+        }
+      }
+
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;
     },
@@ -1048,6 +1184,271 @@ export async function orderRoutes(app: FastifyInstance) {
 
         return reply.badRequest("Payment verification failed");
       }
+    },
+  );
+
+  // Delivery Board — grouped orders for operational management
+  app.get(
+    "/delivery-board",
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF")] },
+    async (request, reply) => {
+      const { storeId, date } = request.query as { storeId?: string; date?: string };
+      if (!storeId) return reply.badRequest("storeId is required");
+
+      if (!(await verifyStoreOrgAccess(request, app.prisma, storeId))) {
+        return reply.forbidden("Access denied");
+      }
+
+      const targetDate = date ? new Date(date + "T00:00:00") : new Date();
+      targetDate.setHours(0, 0, 0, 0);
+      const startOfDay = new Date(targetDate);
+      const endOfDay = new Date(targetDate);
+      endOfDay.setHours(23, 59, 59, 999);
+      const dateStr = targetDate.toISOString().split("T")[0];
+
+      const orderInclude = {
+        user: { select: { id: true, name: true, email: true } },
+        items: { include: { product: { select: { name: true } } } },
+        deliveryTrip: {
+          select: {
+            id: true,
+            status: true,
+            rider: { select: { id: true, name: true, phone: true } },
+          },
+        },
+      };
+
+      // Fetch all three groups in parallel
+      const [expressOrders, scheduledOrders, pickupOrders, deliverySlots] = await Promise.all([
+        // Express: DELIVERY fulfillment, no delivery slot, created today
+        app.prisma.order.findMany({
+          where: {
+            storeId,
+            fulfillmentType: "DELIVERY",
+            deliverySlotId: null,
+            createdAt: { gte: startOfDay, lte: endOfDay },
+          },
+          include: orderInclude,
+          orderBy: { createdAt: "desc" },
+        }),
+        // Scheduled: has deliverySlotId, scheduledDate matches target
+        app.prisma.order.findMany({
+          where: {
+            storeId,
+            deliverySlotId: { not: null },
+            scheduledDate: { gte: startOfDay, lte: endOfDay },
+          },
+          include: orderInclude,
+          orderBy: { slotStartTime: "asc" },
+        }),
+        // Pickup: fulfillmentType=PICKUP, created today
+        app.prisma.order.findMany({
+          where: {
+            storeId,
+            fulfillmentType: "PICKUP",
+            createdAt: { gte: startOfDay, lte: endOfDay },
+          },
+          include: orderInclude,
+          orderBy: { createdAt: "desc" },
+        }),
+        // All delivery slots for this store (for capacity info)
+        app.prisma.deliverySlot.findMany({
+          where: { storeId, isActive: true },
+          orderBy: { startTime: "asc" },
+        }),
+      ]);
+
+      // Build summary counts
+      const countByStatus = (orders: typeof expressOrders) => {
+        const counts = { total: orders.length, pending: 0, confirmed: 0, preparing: 0, ready: 0, outForDelivery: 0, delivered: 0, cancelled: 0 };
+        for (const o of orders) {
+          const s = o.status.toLowerCase();
+          if (s === "pending") counts.pending++;
+          else if (s === "confirmed") counts.confirmed++;
+          else if (s === "preparing") counts.preparing++;
+          else if (s === "ready") counts.ready++;
+          else if (s === "out_for_delivery") counts.outForDelivery++;
+          else if (s === "delivered") counts.delivered++;
+          else if (s === "cancelled") counts.cancelled++;
+        }
+        return counts;
+      };
+
+      // Group scheduled orders by slot
+      const scheduledBySlot: Record<string, {
+        slotId: string;
+        startTime: string;
+        endTime: string;
+        maxOrders: number;
+        orders: typeof scheduledOrders;
+      }> = {};
+
+      for (const slot of deliverySlots) {
+        const key = `${slot.startTime}-${slot.endTime}`;
+        if (!scheduledBySlot[key]) {
+          scheduledBySlot[key] = {
+            slotId: slot.id,
+            startTime: slot.startTime,
+            endTime: slot.endTime,
+            maxOrders: slot.maxOrders,
+            orders: [],
+          };
+        }
+      }
+
+      for (const order of scheduledOrders) {
+        if (order.slotStartTime && order.slotEndTime) {
+          const key = `${order.slotStartTime}-${order.slotEndTime}`;
+          if (!scheduledBySlot[key]) {
+            scheduledBySlot[key] = {
+              slotId: order.deliverySlotId!,
+              startTime: order.slotStartTime,
+              endTime: order.slotEndTime,
+              maxOrders: 20,
+              orders: [],
+            };
+          }
+          scheduledBySlot[key].orders.push(order);
+        }
+      }
+
+      const response: ApiResponse<{
+        date: string;
+        summary: {
+          total: number;
+          express: ReturnType<typeof countByStatus>;
+          scheduled: ReturnType<typeof countByStatus>;
+          pickup: ReturnType<typeof countByStatus>;
+        };
+        express: typeof expressOrders;
+        scheduled: typeof scheduledBySlot;
+        pickup: typeof pickupOrders;
+      }> = {
+        success: true,
+        data: {
+          date: dateStr,
+          summary: {
+            total: expressOrders.length + scheduledOrders.length + pickupOrders.length,
+            express: countByStatus(expressOrders),
+            scheduled: countByStatus(scheduledOrders),
+            pickup: countByStatus(pickupOrders),
+          },
+          express: expressOrders,
+          scheduled: scheduledBySlot,
+          pickup: pickupOrders,
+        },
+      };
+      return response;
+    },
+  );
+
+  // Bulk status update
+  app.post(
+    "/bulk-status",
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF")] },
+    async (request, reply) => {
+      const body = bulkUpdateOrderStatusSchema.parse(request.body);
+
+      const orders = await app.prisma.order.findMany({
+        where: { id: { in: body.orderIds } },
+        include: { items: true },
+      });
+
+      // Verify org access for all orders
+      for (const order of orders) {
+        if (!(await verifyStoreOrgAccess(request, app.prisma, order.storeId))) {
+          return reply.forbidden(`Access denied for order ${order.id}`);
+        }
+      }
+
+      const errors: { orderId: string; reason: string }[] = [];
+      const validOrders: typeof orders = [];
+
+      // Check which orders have valid transitions
+      for (const orderId of body.orderIds) {
+        const order = orders.find((o) => o.id === orderId);
+        if (!order) {
+          errors.push({ orderId, reason: "Order not found" });
+          continue;
+        }
+        if (order.status === body.status) {
+          errors.push({ orderId, reason: `Already ${body.status}` });
+          continue;
+        }
+        const transitions = getValidTransitions(order.fulfillmentType);
+        const allowed = transitions[order.status] ?? [];
+        if (!allowed.includes(body.status)) {
+          errors.push({ orderId, reason: `Cannot transition from ${order.status} to ${body.status}` });
+          continue;
+        }
+        validOrders.push(order);
+      }
+
+      if (validOrders.length === 0) {
+        const response: ApiResponse<{ updated: number; skipped: number; errors: typeof errors }> = {
+          success: true,
+          data: { updated: 0, skipped: errors.length, errors },
+        };
+        return response;
+      }
+
+      // Process valid orders in a transaction
+      await app.prisma.$transaction(async (tx) => {
+        for (const order of validOrders) {
+          // Stock operations
+          const stockItems = order.items.map((i) => ({
+            storeProductId: i.storeProductId,
+            quantity: i.quantity,
+          }));
+
+          if (body.status === "DELIVERED") {
+            for (const item of stockItems) {
+              await tx.$executeRaw`
+                UPDATE store_products
+                SET stock = stock - ${item.quantity},
+                    reserved_stock = reserved_stock - ${item.quantity}
+                WHERE id = ${item.storeProductId}
+              `;
+            }
+          } else if (body.status === "CANCELLED") {
+            for (const item of stockItems) {
+              await tx.$executeRaw`
+                UPDATE store_products
+                SET reserved_stock = reserved_stock - ${item.quantity}
+                WHERE id = ${item.storeProductId}
+                  AND reserved_stock >= ${item.quantity}
+              `;
+            }
+          }
+
+          const updateData: Record<string, unknown> = { status: body.status };
+
+          // Auto-mark COD as PAID on delivery
+          if (body.status === "DELIVERED" && order.paymentMethod === "COD" && order.paymentStatus === "PENDING") {
+            updateData.paymentStatus = "PAID";
+          }
+
+          await tx.order.update({
+            where: { id: order.id },
+            data: updateData,
+          });
+
+          await tx.orderStatusLog.create({
+            data: { orderId: order.id, status: body.status, note: "Bulk status update" },
+          });
+        }
+      });
+
+      // Broadcast updates outside transaction
+      for (const order of validOrders) {
+        broadcastOrderUpdate(app.prisma, order.id, body.status);
+      }
+
+      const response: ApiResponse<{ updated: number; skipped: number; errors: typeof errors }> = {
+        success: true,
+        data: { updated: validOrders.length, skipped: errors.length, errors },
+      };
+      return response;
     },
   );
 }

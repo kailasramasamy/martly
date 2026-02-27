@@ -51,6 +51,9 @@ interface OrderData {
   walletAmountUsed?: string | null;
   loyaltyPointsUsed?: number | null;
   loyaltyPointsEarned?: number | null;
+  scheduledDate?: string | null;
+  slotStartTime?: string | null;
+  slotEndTime?: string | null;
 }
 
 const DELIVERY_STATUSES = ["PENDING", "CONFIRMED", "PREPARING", "READY", "OUT_FOR_DELIVERY", "DELIVERED"] as const;
@@ -263,6 +266,31 @@ export default function OrderDetailScreen() {
         <Text style={styles.sectionTitle}>{isPickup ? "Pickup Location" : "Delivery Address"}</Text>
         <Text style={styles.address}>{order.deliveryAddress ?? "—"}</Text>
       </View>
+
+      {/* Scheduled Slot */}
+      {order.scheduledDate && order.slotStartTime && (
+        <View style={styles.section}>
+          <View style={styles.scheduledBanner}>
+            <Ionicons name="calendar" size={18} color={colors.primary} />
+            <View style={{ flex: 1 }}>
+              <Text style={styles.scheduledLabel}>Scheduled {isPickup ? "Pickup" : "Delivery"}</Text>
+              <Text style={styles.scheduledTime}>
+                {new Date(order.scheduledDate).toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })}
+                {", "}
+                {(() => {
+                  const formatTime = (t: string) => {
+                    const [h, m] = t.split(":").map(Number);
+                    const ampm = h >= 12 ? "PM" : "AM";
+                    const h12 = h % 12 || 12;
+                    return `${h12}:${m.toString().padStart(2, "0")} ${ampm}`;
+                  };
+                  return `${formatTime(order.slotStartTime!)} – ${formatTime(order.slotEndTime!)}`;
+                })()}
+              </Text>
+            </View>
+          </View>
+        </View>
+      )}
 
       {/* Items */}
       <View style={styles.section}>
@@ -562,6 +590,27 @@ const styles = StyleSheet.create({
   billSaving: { fontSize: fontSize.md, fontWeight: "600", color: "#22c55e" },
   paymentBadge: { paddingHorizontal: 8, paddingVertical: 2, borderRadius: 10 },
   paymentBadgeText: { fontSize: fontSize.sm, fontWeight: "600", color: "#fff" },
+  scheduledBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    backgroundColor: colors.primary + "10",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: colors.primary + "30",
+    padding: 12,
+  },
+  scheduledLabel: {
+    fontSize: fontSize.sm,
+    color: colors.primary,
+    fontWeight: "600",
+  },
+  scheduledTime: {
+    fontSize: fontSize.md,
+    fontWeight: "700",
+    color: colors.text,
+    marginTop: 2,
+  },
   cancelBtn: {
     backgroundColor: "#ef4444",
     borderRadius: 10,

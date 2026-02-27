@@ -1,6 +1,6 @@
 import { Show } from "@refinedev/antd";
 import { useShow, useGetIdentity } from "@refinedev/core";
-import { Typography, Image, Table, Tag, Card, Descriptions, Row, Col, Space, Button, Alert } from "antd";
+import { Typography, Image, Table, Tag, Card, Descriptions, Row, Col, Space, Button, Alert, Badge } from "antd";
 import { useNavigate } from "react-router";
 import {
   InfoCircleOutlined,
@@ -172,21 +172,35 @@ export const ProductShow = () => {
         {/* Right column: images */}
         {(record.imageUrl || record.images?.length > 0) && (
           <Col xs={24} lg={8}>
-            <Card title={sectionTitle(<PictureOutlined />, "Images")} size="small" style={{ marginBottom: 16 }}>
-              {record.imageUrl && (
-                <div style={{ marginBottom: 12 }}>
-                  <Image width="100%" style={{ maxWidth: 280, borderRadius: 6 }} src={record.imageUrl} />
-                </div>
-              )}
-              {record.images?.length > 0 && (
-                <Space wrap>
-                  {record.images.map((url: string, i: number) => (
-                    <Image key={i} width={80} style={{ borderRadius: 4 }} src={url} />
-                  ))}
-                </Space>
-              )}
+            <Card
+              title={sectionTitle(<PictureOutlined />, "Images")}
+              size="small"
+              style={{ marginBottom: 16 }}
+              extra={
+                <Badge
+                  count={
+                    (record.imageUrl ? 1 : 0) + (record.images?.length ?? 0)
+                  }
+                  style={{ backgroundColor: "#0d9488" }}
+                  overflowCount={99}
+                />
+              }
+            >
+              <Image.PreviewGroup>
+                {record.imageUrl && (
+                  <div style={{ marginBottom: 12 }}>
+                    <Image width="100%" style={{ maxWidth: 300, borderRadius: 6 }} src={record.imageUrl} />
+                  </div>
+                )}
+                {record.images?.length > 0 && (
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                    {record.images.map((url: string, i: number) => (
+                      <Image key={i} width={100} height={100} style={{ borderRadius: 6, objectFit: "cover" }} src={url} />
+                    ))}
+                  </div>
+                )}
+              </Image.PreviewGroup>
             </Card>
-
           </Col>
         )}
 

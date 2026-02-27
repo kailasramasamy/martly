@@ -367,6 +367,7 @@ const styles = StyleSheet.create({
     padding: spacing.sm,
     paddingHorizontal: spacing.md,
     fontSize: fontSize.md,
+    letterSpacing: 0,
     backgroundColor: colors.surface,
   },
   filterSection: { marginTop: spacing.sm },

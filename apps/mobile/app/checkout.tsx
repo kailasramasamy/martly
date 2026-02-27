@@ -24,6 +24,19 @@ import { ProfileGate } from "../components/ProfileGate";
 import type { FulfillmentType, UserAddress, CouponValidation, DeliveryZoneInfo, DeliveryLookupResult, LoyaltyData } from "../lib/types";
 
 type PaymentMethod = "ONLINE" | "COD";
+type DeliveryMode = "express" | "scheduled";
+
+const toLocalDateStr = (d: Date) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+
+interface AvailableSlot {
+  id: string;
+  startTime: string;
+  endTime: string;
+  maxOrders: number;
+  available: number;
+  full: boolean;
+}
 
 interface RazorpayData {
   razorpay_order_id: string;
@@ -66,6 +79,15 @@ export default function CheckoutScreen() {
   const [useWallet, setUseWallet] = useState(true);
   const [loyaltyData, setLoyaltyData] = useState<LoyaltyData | null>(null);
   const [useLoyalty, setUseLoyalty] = useState(false);
+  const [deliveryMode, setDeliveryMode] = useState<DeliveryMode>("express");
+  const [hasSlots, setHasSlots] = useState(false);
+  const [expressConfig, setExpressConfig] = useState<{
+    enabled: boolean; available: boolean; etaMinutes: number | null; reason?: string;
+  } | null>(null);
+  const [selectedDate, setSelectedDate] = useState<string>("");
+  const [selectedSlot, setSelectedSlot] = useState<AvailableSlot | null>(null);
+  const [availableSlots, setAvailableSlots] = useState<AvailableSlot[]>([]);
+  const [loadingSlots, setLoadingSlots] = useState(false);
 
   const deliveryLookup = selectedAddressId ? (addressLookups[selectedAddressId] ?? null) : null;
   const isPickup = fulfillmentType === "PICKUP";
@@ -122,6 +144,48 @@ export default function CheckoutScreen() {
       .then((res) => setLoyaltyData(res.data))
       .catch(() => {});
   }, [storeId]);
+
+  // Check if store has delivery slots + express config
+  useEffect(() => {
+    if (!storeId) return;
+    api.get<{
+      hasSlots: boolean;
+      express: { enabled: boolean; available: boolean; etaMinutes: number | null; reason?: string };
+    }>(`/api/v1/delivery-slots/check?storeId=${storeId}`)
+      .then((res) => {
+        setHasSlots(res.data.hasSlots);
+        setExpressConfig(res.data.express);
+      })
+      .catch(() => {});
+  }, [storeId]);
+
+  // Fetch available slots when date changes
+  useEffect(() => {
+    if (!storeId || !selectedDate || deliveryMode !== "scheduled") return;
+    setLoadingSlots(true);
+    setSelectedSlot(null);
+    api.get<AvailableSlot[]>(`/api/v1/delivery-slots/available?storeId=${storeId}&date=${selectedDate}`)
+      .then((res) => setAvailableSlots(res.data))
+      .catch(() => setAvailableSlots([]))
+      .finally(() => setLoadingSlots(false));
+  }, [storeId, selectedDate, deliveryMode]);
+
+  // Auto-select delivery mode based on express availability
+  useEffect(() => {
+    if (!expressConfig) return;
+    if (!expressConfig.enabled || !expressConfig.available) {
+      if (hasSlots) {
+        setDeliveryMode("scheduled");
+      }
+    }
+  }, [expressConfig, hasSlots]);
+
+  // Reset scheduling state when switching to express
+  useEffect(() => {
+    if (deliveryMode === "express") {
+      setSelectedSlot(null);
+    }
+  }, [deliveryMode]);
 
   // Distance-based delivery lookup for all addresses
   useEffect(() => {
@@ -196,9 +260,11 @@ export default function CheckoutScreen() {
       : (deliveryZone?.deliveryFee ?? 0);
   const effectiveEstMinutes = isPickup
     ? 30
-    : deliveryLookup?.serviceable
-      ? deliveryLookup.estimatedMinutes
-      : deliveryZone?.estimatedMinutes;
+    : expressConfig?.etaMinutes != null && deliveryMode === "express"
+      ? expressConfig.etaMinutes
+      : deliveryLookup?.serviceable
+        ? deliveryLookup.estimatedMinutes
+        : deliveryZone?.estimatedMinutes;
   const grandTotal = totalAmount - couponDiscount + deliveryFee;
   const walletDeduction = useWallet ? Math.min(walletBalance, grandTotal) : 0;
   const afterWallet = grandTotal - walletDeduction;
@@ -278,6 +344,11 @@ export default function CheckoutScreen() {
 
       if (couponResult?.code) orderPayload.couponCode = couponResult.code;
       if (deliveryNotes.trim()) orderPayload.deliveryNotes = deliveryNotes.trim();
+
+      if (deliveryMode === "scheduled" && selectedSlot && selectedDate) {
+        orderPayload.deliverySlotId = selectedSlot.id;
+        orderPayload.scheduledDate = selectedDate;
+      }
 
       const result = await api.post<{ id: string; walletFullyCovered?: boolean }>("/api/v1/orders", orderPayload);
       const orderId = result.data.id;
@@ -654,6 +725,199 @@ export default function CheckoutScreen() {
           </View>
         )}
 
+        {/* Delivery Schedule */}
+        {(hasSlots || (expressConfig && !expressConfig.enabled)) && !isPickup && (
+          <View style={styles.section}>
+            <View style={styles.sectionHeader}>
+              <Ionicons name="time-outline" size={16} color={colors.textSecondary} />
+              <Text style={styles.sectionTitle}>Delivery Schedule</Text>
+            </View>
+
+            {/* Express disabled + no slots: show unavailable banner */}
+            {expressConfig && !expressConfig.enabled && !hasSlots ? (
+              <View style={styles.expressUnavailableBanner}>
+                <Ionicons name="flash-off-outline" size={18} color="#b45309" />
+                <Text style={styles.expressUnavailableText}>
+                  Express delivery is currently unavailable for this store
+                </Text>
+              </View>
+            ) : expressConfig && expressConfig.enabled && !expressConfig.available && !hasSlots ? (
+              <View style={styles.expressUnavailableBanner}>
+                <Ionicons name="time-outline" size={18} color="#b45309" />
+                <Text style={styles.expressUnavailableText}>
+                  Express delivery available from {expressConfig.reason?.replace("Outside operating hours ", "") ?? "later"}
+                </Text>
+              </View>
+            ) : (
+            <View style={styles.scheduleToggleRow}>
+              {/* Express toggle — only show if enabled */}
+              {expressConfig?.enabled !== false && (
+              <TouchableOpacity
+                style={[
+                  styles.scheduleToggle,
+                  deliveryMode === "express" && styles.scheduleToggleActive,
+                  expressConfig && !expressConfig.available && styles.scheduleToggleDisabled,
+                ]}
+                onPress={() => {
+                  if (expressConfig && !expressConfig.available) return;
+                  setDeliveryMode("express");
+                }}
+                activeOpacity={expressConfig && !expressConfig.available ? 1 : 0.7}
+              >
+                <Ionicons
+                  name="flash"
+                  size={16}
+                  color={
+                    expressConfig && !expressConfig.available
+                      ? "#94a3b8"
+                      : deliveryMode === "express"
+                        ? colors.primary
+                        : "#94a3b8"
+                  }
+                />
+                <Text style={[
+                  styles.scheduleToggleText,
+                  deliveryMode === "express" && styles.scheduleToggleTextActive,
+                  expressConfig && !expressConfig.available && { color: "#94a3b8" },
+                ]}>
+                  Express
+                </Text>
+                {expressConfig && !expressConfig.available ? (
+                  <Text style={styles.scheduleToggleSub}>Unavailable</Text>
+                ) : (
+                  <Text style={styles.scheduleToggleSub}>
+                    {expressConfig?.etaMinutes ? `~${expressConfig.etaMinutes} min` : "ASAP"}
+                  </Text>
+                )}
+              </TouchableOpacity>
+              )}
+              {/* Scheduled toggle — only show if has slots */}
+              {hasSlots && (
+              <TouchableOpacity
+                style={[styles.scheduleToggle, deliveryMode === "scheduled" && styles.scheduleToggleActive]}
+                onPress={() => {
+                  setDeliveryMode("scheduled");
+                  if (!selectedDate) {
+                    setSelectedDate(toLocalDateStr(new Date()));
+                  }
+                }}
+                activeOpacity={0.7}
+              >
+                <Ionicons
+                  name="calendar"
+                  size={16}
+                  color={deliveryMode === "scheduled" ? colors.primary : "#94a3b8"}
+                />
+                <Text style={[styles.scheduleToggleText, deliveryMode === "scheduled" && styles.scheduleToggleTextActive]}>
+                  Scheduled
+                </Text>
+                <Text style={styles.scheduleToggleSub}>Pick a time</Text>
+              </TouchableOpacity>
+              )}
+            </View>
+            )}
+
+            {/* Express outside operating hours reason */}
+            {expressConfig?.enabled && !expressConfig.available && expressConfig.reason && hasSlots && (
+              <View style={styles.expressReasonBanner}>
+                <Ionicons name="time-outline" size={14} color="#b45309" />
+                <Text style={styles.expressReasonText}>{expressConfig.reason}</Text>
+              </View>
+            )}
+
+            {deliveryMode === "scheduled" && (
+              <View style={styles.schedulePicker}>
+                {/* Date chips */}
+                <ScrollView
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
+                  style={styles.dateChipsScroll}
+                  contentContainerStyle={styles.dateChipsContent}
+                >
+                  {Array.from({ length: 8 }, (_, i) => {
+                    const d = new Date();
+                    d.setDate(d.getDate() + i);
+                    const dateStr = toLocalDateStr(d);
+                    const isSelected = selectedDate === dateStr;
+                    const dayName = i === 0 ? "Today" : i === 1 ? "Tomorrow" : d.toLocaleDateString(undefined, { weekday: "short" });
+                    const dayNum = d.getDate();
+                    const monthName = d.toLocaleDateString(undefined, { month: "short" });
+                    return (
+                      <TouchableOpacity
+                        key={dateStr}
+                        style={[styles.dateChip, isSelected && styles.dateChipActive]}
+                        onPress={() => setSelectedDate(dateStr)}
+                        activeOpacity={0.7}
+                      >
+                        <Text style={[styles.dateChipDay, isSelected && styles.dateChipDayActive]}>
+                          {dayName}
+                        </Text>
+                        <Text style={[styles.dateChipNum, isSelected && styles.dateChipNumActive]}>
+                          {dayNum}
+                        </Text>
+                        <Text style={[styles.dateChipMonth, isSelected && styles.dateChipMonthActive]}>
+                          {monthName}
+                        </Text>
+                      </TouchableOpacity>
+                    );
+                  })}
+                </ScrollView>
+
+                {/* Time slots */}
+                {loadingSlots ? (
+                  <ActivityIndicator color={colors.primary} style={{ marginVertical: 16 }} />
+                ) : availableSlots.length === 0 ? (
+                  <View style={styles.noSlotsCard}>
+                    <Ionicons name="calendar-outline" size={20} color="#94a3b8" />
+                    <Text style={styles.noSlotsText}>No time slots available for this date</Text>
+                  </View>
+                ) : (
+                  <View style={styles.slotGrid}>
+                    {availableSlots.map((slot) => {
+                      const isSelected = selectedSlot?.id === slot.id;
+                      const formatTime = (t: string) => {
+                        const [h, m] = t.split(":").map(Number);
+                        const ampm = h >= 12 ? "PM" : "AM";
+                        const h12 = h % 12 || 12;
+                        return `${h12}:${m.toString().padStart(2, "0")} ${ampm}`;
+                      };
+                      return (
+                        <TouchableOpacity
+                          key={slot.id}
+                          style={[
+                            styles.slotCard,
+                            isSelected && styles.slotCardActive,
+                            slot.full && styles.slotCardFull,
+                          ]}
+                          onPress={() => !slot.full && setSelectedSlot(slot)}
+                          disabled={slot.full}
+                          activeOpacity={0.7}
+                        >
+                          <Text style={[styles.slotTime, isSelected && styles.slotTimeActive, slot.full && styles.slotTimeFull]}>
+                            {formatTime(slot.startTime)} – {formatTime(slot.endTime)}
+                          </Text>
+                          {slot.full ? (
+                            <Text style={styles.slotFullText}>Full</Text>
+                          ) : (
+                            <Text style={[styles.slotAvailable, isSelected && styles.slotAvailableActive]}>
+                              {slot.available} slot{slot.available !== 1 ? "s" : ""} left
+                            </Text>
+                          )}
+                          {isSelected && (
+                            <View style={styles.slotCheck}>
+                              <Ionicons name="checkmark-circle" size={16} color={colors.primary} />
+                            </View>
+                          )}
+                        </TouchableOpacity>
+                      );
+                    })}
+                  </View>
+                )}
+              </View>
+            )}
+          </View>
+        )}
+
         {/* Coupon */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
@@ -895,14 +1159,31 @@ export default function CheckoutScreen() {
                 <Text style={styles.billValue}>{deliveryLookup.distance.toFixed(1)} km</Text>
               </View>
             )}
-            {effectiveEstMinutes != null && (
+            {deliveryMode === "scheduled" && selectedSlot && selectedDate ? (
+              <View style={styles.billRow}>
+                <Text style={styles.billLabel}>Scheduled</Text>
+                <Text style={styles.billValue}>
+                  {(() => {
+                    const d = new Date(selectedDate + "T00:00:00");
+                    const dateStr = d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+                    const formatTime = (t: string) => {
+                      const [h, m] = t.split(":").map(Number);
+                      const ampm = h >= 12 ? "PM" : "AM";
+                      const h12 = h % 12 || 12;
+                      return `${h12}:${m.toString().padStart(2, "0")} ${ampm}`;
+                    };
+                    return `${dateStr}, ${formatTime(selectedSlot.startTime)} – ${formatTime(selectedSlot.endTime)}`;
+                  })()}
+                </Text>
+              </View>
+            ) : effectiveEstMinutes != null ? (
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>
                   {isPickup ? "Est. ready in" : "Est. delivery"}
                 </Text>
                 <Text style={styles.billValue}>{effectiveEstMinutes} min</Text>
               </View>
-            )}
+            ) : null}
             <View style={styles.billDivider} />
             <View style={styles.billRow}>
               <Text style={styles.billGrandLabel}>To Pay</Text>
@@ -1493,6 +1774,193 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   placeOrderBtnText: { fontSize: 15, fontWeight: "700", color: "#fff" },
+
+  // Delivery schedule
+  scheduleToggleRow: {
+    flexDirection: "row",
+    gap: 10,
+  },
+  scheduleToggle: {
+    flex: 1,
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    borderWidth: 1.5,
+    borderColor: colors.border,
+    padding: 12,
+    alignItems: "center",
+    gap: 4,
+  },
+  scheduleToggleActive: {
+    borderColor: colors.primary,
+    backgroundColor: colors.primary + "08",
+  },
+  scheduleToggleDisabled: {
+    backgroundColor: "#f8fafc",
+    borderColor: "#e2e8f0",
+    opacity: 0.6,
+  },
+  scheduleToggleText: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: colors.text,
+  },
+  scheduleToggleTextActive: {
+    color: colors.primary,
+  },
+  scheduleToggleSub: {
+    fontSize: 11,
+    color: "#94a3b8",
+  },
+  schedulePicker: {
+    marginTop: 12,
+  },
+  dateChipsScroll: {
+    marginHorizontal: -spacing.md,
+  },
+  dateChipsContent: {
+    paddingHorizontal: spacing.md,
+    gap: 8,
+  },
+  dateChip: {
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    borderWidth: 1.5,
+    borderColor: colors.border,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    alignItems: "center",
+    minWidth: 64,
+  },
+  dateChipActive: {
+    borderColor: colors.primary,
+    backgroundColor: colors.primary + "10",
+  },
+  dateChipDay: {
+    fontSize: 11,
+    fontWeight: "600",
+    color: "#94a3b8",
+    textTransform: "uppercase",
+  },
+  dateChipDayActive: {
+    color: colors.primary,
+  },
+  dateChipNum: {
+    fontSize: 18,
+    fontWeight: "800",
+    color: colors.text,
+    marginVertical: 2,
+  },
+  dateChipNumActive: {
+    color: colors.primary,
+  },
+  dateChipMonth: {
+    fontSize: 11,
+    color: "#94a3b8",
+  },
+  dateChipMonthActive: {
+    color: colors.primary,
+  },
+  slotGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 8,
+    marginTop: 12,
+  },
+  slotCard: {
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    borderWidth: 1.5,
+    borderColor: colors.border,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    minWidth: "47%" as any,
+    flex: 1,
+    position: "relative",
+  },
+  slotCardActive: {
+    borderColor: colors.primary,
+    backgroundColor: colors.primary + "08",
+  },
+  slotCardFull: {
+    backgroundColor: "#f8fafc",
+    opacity: 0.6,
+  },
+  slotTime: {
+    fontSize: 13,
+    fontWeight: "700",
+    color: colors.text,
+  },
+  slotTimeActive: {
+    color: colors.primary,
+  },
+  slotTimeFull: {
+    color: "#94a3b8",
+  },
+  slotAvailable: {
+    fontSize: 11,
+    color: "#64748b",
+    marginTop: 2,
+  },
+  slotAvailableActive: {
+    color: colors.primary,
+  },
+  slotFullText: {
+    fontSize: 11,
+    fontWeight: "600",
+    color: "#dc2626",
+    marginTop: 2,
+  },
+  slotCheck: {
+    position: "absolute",
+    top: 6,
+    right: 6,
+  },
+  noSlotsCard: {
+    backgroundColor: "#f8fafc",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: 20,
+    alignItems: "center",
+    gap: 6,
+    marginTop: 12,
+  },
+  noSlotsText: {
+    fontSize: 13,
+    color: "#94a3b8",
+    textAlign: "center",
+  },
+  expressUnavailableBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    backgroundColor: "#fffbeb",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fde68a",
+    padding: 14,
+  },
+  expressUnavailableText: {
+    flex: 1,
+    fontSize: 13,
+    color: "#92400e",
+    lineHeight: 18,
+  },
+  expressReasonBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginTop: 8,
+    backgroundColor: "#fffbeb",
+    borderRadius: 8,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+  },
+  expressReasonText: {
+    flex: 1,
+    fontSize: 12,
+    color: "#92400e",
+  },
 
   // Coupon
   couponRow: { flexDirection: "row", gap: 8 },

@@ -117,6 +117,13 @@ enum LoyaltyTransactionType {
   ADJUSTMENT
 }
 
+enum TripStatus {
+  CREATED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -134,6 +141,7 @@ model Organization {
   loyaltyConfig       LoyaltyConfig?
   loyaltyBalances     LoyaltyBalance[]
   loyaltyTransactions LoyaltyTransaction[]
+  deliveryTrips       DeliveryTrip[]
 
   @@map("organizations")
 }
@@ -157,8 +165,11 @@ model Store {
   userStores         UserStore[]
   orders             Order[]
   reviews            Review[]
-  storeDeliveryZones StoreDeliveryZone[]
-  deliveryTiers      DeliveryTier[]
+  storeDeliveryZones    StoreDeliveryZone[]
+  deliveryTiers         DeliveryTier[]
+  deliverySlots         DeliverySlot[]
+  expressDeliveryConfig ExpressDeliveryConfig?
+  deliveryTrips         DeliveryTrip[]
 
   @@map("stores")
 }
@@ -185,6 +196,7 @@ model User {
   walletTransactions   WalletTransaction[]
   loyaltyBalances      LoyaltyBalance[]
   loyaltyTransactions  LoyaltyTransaction[]
+  deliveryTrips        DeliveryTrip[]
 
   @@map("users")
 }
@@ -369,17 +381,25 @@ model Order {
   couponDiscount       Decimal?      @db.Decimal(10, 2) @map("coupon_discount")
   deliveryFee          Decimal       @default(0) @db.Decimal(10, 2) @map("delivery_fee")
   deliveryDistance     Float?        @map("delivery_distance")
+  deliveryPincode      String?       @map("delivery_pincode")
   estimatedDeliveryAt  DateTime?     @map("estimated_delivery_at")
   deliveryNotes        String?       @map("delivery_notes")
   walletAmountUsed     Decimal?      @db.Decimal(10, 2) @map("wallet_amount_used")
   loyaltyPointsUsed    Int?          @map("loyalty_points_used")
   loyaltyPointsEarned  Int?          @map("loyalty_points_earned")
+  deliverySlotId       String?       @map("delivery_slot_id")
+  deliveryTripId       String?       @map("delivery_trip_id")
+  scheduledDate        DateTime?     @map("scheduled_date")
+  slotStartTime        String?       @map("slot_start_time")
+  slotEndTime          String?       @map("slot_end_time")
   createdAt            DateTime      @default(now()) @map("created_at")
   updatedAt            DateTime      @updatedAt @map("updated_at")
 
   user                User                @relation(fields: [userId], references: [id])
   store               Store               @relation(fields: [storeId], references: [id])
   coupon              Coupon?             @relation(fields: [couponId], references: [id])
+  deliverySlot        DeliverySlot?       @relation(fields: [deliverySlotId], references: [id])
+  deliveryTrip        DeliveryTrip?       @relation(fields: [deliveryTripId], references: [id])
   items               OrderItem[]
   couponRedemptions   CouponRedemption[]
   statusLogs          OrderStatusLog[]
@@ -586,6 +606,26 @@ model DeliveryTier {
   @@map("delivery_tiers")
 }
 
+model DeliverySlot {
+  id            String   @id @default(uuid())
+  storeId       String   @map("store_id")
+  dayOfWeek     Int      @map("day_of_week")
+  startTime     String   @map("start_time")
+  endTime       String   @map("end_time")
+  maxOrders     Int      @default(20) @map("max_orders")
+  cutoffMinutes Int      @default(60) @map("cutoff_minutes")
+  isActive      Boolean  @default(true) @map("is_active")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  store  Store   @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  orders Order[]
+
+  @@unique([storeId, dayOfWeek, startTime, endTime])
+  @@index([storeId])
+  @@map("delivery_slots")
+}
+
 model OrderStatusLog {
   id        String      @id @default(uuid())
   orderId   String      @map("order_id")
@@ -650,6 +690,21 @@ model LoyaltyBalance {
   @@map("loyalty_balances")
 }
 
+model ExpressDeliveryConfig {
+  id             String   @id @default(uuid())
+  storeId        String   @unique @map("store_id")
+  isEnabled      Boolean  @default(true) @map("is_enabled")
+  etaMinutes     Int?     @map("eta_minutes")
+  operatingStart String?  @map("operating_start")
+  operatingEnd   String?  @map("operating_end")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@map("express_delivery_configs")
+}
+
 model LoyaltyTransaction {
   id             String                @id @default(uuid())
   userId         String                @map("user_id")
@@ -668,4 +723,25 @@ model LoyaltyTransaction {
   @@index([userId, organizationId, createdAt])
   @@index([orderId])
   @@map("loyalty_transactions")
+}
+
+model DeliveryTrip {
+  id             String     @id @default(uuid())
+  storeId        String     @map("store_id")
+  riderId        String     @map("rider_id")
+  organizationId String     @map("organization_id")
+  status         TripStatus @default(CREATED)
+  startedAt      DateTime?  @map("started_at")
+  completedAt    DateTime?  @map("completed_at")
+  createdAt      DateTime   @default(now()) @map("created_at")
+  updatedAt      DateTime   @updatedAt @map("updated_at")
+
+  store        Store        @relation(fields: [storeId], references: [id])
+  rider        User         @relation(fields: [riderId], references: [id])
+  organization Organization @relation(fields: [organizationId], references: [id])
+  orders       Order[]
+
+  @@index([storeId, status])
+  @@index([riderId])
+  @@map("delivery_trips")
 }

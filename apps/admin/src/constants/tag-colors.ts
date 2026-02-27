@@ -92,3 +92,10 @@ export const LOYALTY_TRANSACTION_TYPE_CONFIG: Record<string, { color: string; la
   REVERSAL: { color: "orange", label: "Reversal" },
   ADJUSTMENT: { color: "blue", label: "Adjustment" },
 };
+
+export const TRIP_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  CREATED: { color: "blue", label: "Created" },
+  IN_PROGRESS: { color: "orange", label: "In Progress" },
+  COMPLETED: { color: "green", label: "Completed" },
+  CANCELLED: { color: "red", label: "Cancelled" },
+};

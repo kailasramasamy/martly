@@ -359,6 +359,8 @@ export const createOrderSchema = z.object({
   deliveryNotes: z.string().max(500).optional(),
   useWallet: z.boolean().default(true),
   useLoyaltyPoints: z.boolean().default(false),
+  deliverySlotId: z.string().uuid().optional(),
+  scheduledDate: z.string().optional(),
   items: z.array(
     z.object({
       storeProductId: z.string().uuid(),
@@ -444,6 +446,12 @@ export const updatePaymentStatusSchema = z.object({
   note: z.string().max(500).optional(),
 });
 export type UpdatePaymentStatusInput = z.infer<typeof updatePaymentStatusSchema>;
+
+export const bulkUpdateOrderStatusSchema = z.object({
+  orderIds: z.array(z.string().uuid()).min(1).max(50),
+  status: z.enum(["CONFIRMED", "PREPARING", "READY", "OUT_FOR_DELIVERY", "DELIVERED", "CANCELLED"]),
+});
+export type BulkUpdateOrderStatusInput = z.infer<typeof bulkUpdateOrderStatusSchema>;
 
 // ── Collection ──────────────────────────────────────
 export const createCollectionSchema = z.object({
@@ -608,3 +616,67 @@ export const loyaltyAdjustmentSchema = z.object({
   description: z.string().min(1).max(500),
 });
 export type LoyaltyAdjustmentInput = z.infer<typeof loyaltyAdjustmentSchema>;
+
+// ── Delivery Slot ──────────────────────────────────
+export const createDeliverySlotSchema = z.object({
+  storeId: z.string().uuid(),
+  dayOfWeek: z.number().int().min(0).max(6),
+  startTime: z.string().regex(/^\d{2}:\d{2}$/),
+  endTime: z.string().regex(/^\d{2}:\d{2}$/),
+  maxOrders: z.number().int().positive().default(20),
+  cutoffMinutes: z.number().int().min(0).default(60),
+  isActive: z.boolean().default(true),
+});
+export type CreateDeliverySlotInput = z.infer<typeof createDeliverySlotSchema>;
+
+// ── Express Delivery Config ────────────────────────
+export const upsertExpressDeliveryConfigSchema = z.object({
+  isEnabled: z.boolean().default(true),
+  etaMinutes: z.number().int().positive().nullish(),
+  operatingStart: z.string().regex(/^\d{2}:\d{2}$/).nullish(),
+  operatingEnd: z.string().regex(/^\d{2}:\d{2}$/).nullish(),
+}).refine(
+  (data) => {
+    const hasStart = data.operatingStart != null;
+    const hasEnd = data.operatingEnd != null;
+    return hasStart === hasEnd;
+  },
+  { message: "Both operatingStart and operatingEnd must be set together", path: ["operatingStart"] },
+);
+export type UpsertExpressDeliveryConfigInput = z.infer<typeof upsertExpressDeliveryConfigSchema>;
+
+// ── Delivery Trip ──────────────────────────────────
+export const createDeliveryTripSchema = z.object({
+  storeId: z.string().uuid(),
+  riderId: z.string().uuid(),
+  orderIds: z.array(z.string().uuid()).min(1).max(30),
+});
+export type CreateDeliveryTripInput = z.infer<typeof createDeliveryTripSchema>;
+
+// ── Rider ─────────────────────────────────────────
+export const createRiderSchema = z.object({
+  storeId: z.string().uuid(),
+  name: z.string().min(2).max(100),
+  phone: z.string().min(10).max(15),
+  email: z.string().email(),
+  password: z.string().min(6).max(100),
+});
+export type CreateRiderInput = z.infer<typeof createRiderSchema>;
+
+export const updateRiderSchema = z.object({
+  name: z.string().min(2).max(100).optional(),
+  phone: z.string().min(10).max(15).optional(),
+  email: z.string().email().optional(),
+  password: z.string().min(6).max(100).optional(),
+});
+export type UpdateRiderInput = z.infer<typeof updateRiderSchema>;
+
+export const updateDeliverySlotSchema = z.object({
+  dayOfWeek: z.number().int().min(0).max(6).optional(),
+  startTime: z.string().regex(/^\d{2}:\d{2}$/).optional(),
+  endTime: z.string().regex(/^\d{2}:\d{2}$/).optional(),
+  maxOrders: z.number().int().positive().optional(),
+  cutoffMinutes: z.number().int().min(0).optional(),
+  isActive: z.boolean().optional(),
+});
+export type UpdateDeliverySlotInput = z.infer<typeof updateDeliverySlotSchema>;

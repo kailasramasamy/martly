@@ -24,6 +24,8 @@ import {
   GiftOutlined,
   CommentOutlined,
   EnvironmentOutlined,
+  ThunderboltOutlined,
+  CarOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -81,8 +83,12 @@ import { DeliveryZoneList } from "./pages/delivery-zones/list";
 import { DeliveryZoneCreate } from "./pages/delivery-zones/create";
 import { DeliveryZoneEdit } from "./pages/delivery-zones/edit";
 import { DeliveryTierList } from "./pages/delivery-tiers/list";
+import { DeliverySlotList } from "./pages/delivery-slots/list";
 import { LoyaltySettings } from "./pages/loyalty/settings";
 import { LoyaltyCustomers } from "./pages/loyalty/customers";
+import { ExpressDeliveryConfig } from "./pages/express-delivery/config";
+import { DeliveryBoard } from "./pages/delivery-board";
+import { RidersList } from "./pages/riders/list";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -258,6 +264,16 @@ export default function App() {
                 meta: { label: "Delivery", icon: <EnvironmentOutlined /> },
               },
               {
+                name: "delivery-board",
+                list: "/delivery-board",
+                meta: { label: "Delivery Board", icon: <CarOutlined />, parent: "delivery" },
+              },
+              {
+                name: "riders",
+                list: "/riders",
+                meta: { label: "Riders", icon: <TeamOutlined />, parent: "delivery" },
+              },
+              {
                 name: "delivery-zones",
                 list: "/delivery-zones",
                 create: "/delivery-zones/create",
@@ -268,6 +284,16 @@ export default function App() {
                 name: "delivery-tiers",
                 list: "/delivery-tiers",
                 meta: { label: "Tiers (Distance)", parent: "delivery" },
+              },
+              {
+                name: "delivery-slots",
+                list: "/delivery-slots",
+                meta: { label: "Time Slots", parent: "delivery" },
+              },
+              {
+                name: "express-delivery",
+                list: "/express-delivery",
+                meta: { label: "Express Config", icon: <ThunderboltOutlined />, parent: "delivery" },
               },
               {
                 name: "store-products",
@@ -372,6 +398,10 @@ export default function App() {
                   <Route path="edit/:id" element={<DeliveryZoneEdit />} />
                 </Route>
                 <Route path="/delivery-tiers" element={<DeliveryTierList />} />
+                <Route path="/delivery-slots" element={<DeliverySlotList />} />
+                <Route path="/express-delivery" element={<ExpressDeliveryConfig />} />
+                <Route path="/delivery-board" element={<DeliveryBoard />} />
+                <Route path="/riders" element={<RidersList />} />
                 <Route path="/stock" element={<StockPage />} />
                 <Route path="/featured-products" element={<FeaturedProductsPage />} />
                 <Route path="/" element={<DashboardPage />} />

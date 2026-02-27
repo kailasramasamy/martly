@@ -179,6 +179,21 @@ export const LoyaltyTransactionTypeLabels: Record<LoyaltyTransactionType, string
   ADJUSTMENT: "Adjustment",
 };
 
+export const TripStatus = {
+  CREATED: "CREATED",
+  IN_PROGRESS: "IN_PROGRESS",
+  COMPLETED: "COMPLETED",
+  CANCELLED: "CANCELLED",
+} as const;
+export type TripStatus = (typeof TripStatus)[keyof typeof TripStatus];
+
+export const TripStatusLabels: Record<TripStatus, string> = {
+  CREATED: "Created",
+  IN_PROGRESS: "In Progress",
+  COMPLETED: "Completed",
+  CANCELLED: "Cancelled",
+};
+
 export const RegulatoryMarkLabels: Record<RegulatoryMark, string> = {
   FSSAI: "FSSAI",
   ISI: "ISI Mark",

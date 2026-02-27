@@ -26,8 +26,12 @@ import { reviewRoutes } from "./routes/reviews/index.js";
 import { couponRoutes } from "./routes/coupons/index.js";
 import { deliveryZoneRoutes } from "./routes/delivery-zones/index.js";
 import { deliveryTierRoutes } from "./routes/delivery-tiers/index.js";
+import { deliverySlotRoutes } from "./routes/delivery-slots/index.js";
 import { walletRoutes } from "./routes/wallet/index.js";
 import { loyaltyRoutes } from "./routes/loyalty/index.js";
+import { expressDeliveryRoutes } from "./routes/express-delivery/index.js";
+import { deliveryTripRoutes } from "./routes/delivery-trips/index.js";
+import { riderRoutes } from "./routes/riders/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 
 export async function buildApp() {
@@ -103,8 +107,12 @@ export async function buildApp() {
       await api.register(couponRoutes, { prefix: "/coupons" });
       await api.register(deliveryZoneRoutes, { prefix: "/delivery-zones" });
       await api.register(deliveryTierRoutes, { prefix: "/delivery-tiers" });
+      await api.register(deliverySlotRoutes, { prefix: "/delivery-slots" });
       await api.register(walletRoutes, { prefix: "/wallet" });
       await api.register(loyaltyRoutes, { prefix: "/loyalty" });
+      await api.register(expressDeliveryRoutes, { prefix: "/express-delivery" });
+      await api.register(deliveryTripRoutes, { prefix: "/delivery-trips" });
+      await api.register(riderRoutes, { prefix: "/riders" });
     },
     { prefix: "/api/v1" },
   );

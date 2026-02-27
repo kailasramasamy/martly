@@ -8,17 +8,14 @@ import {
   FileTextOutlined,
   CreditCardOutlined,
   ShoppingOutlined,
-  CheckCircleOutlined,
-  FireOutlined,
-  GiftOutlined,
-  CarOutlined,
-  SmileOutlined,
   CloseCircleOutlined,
   DollarOutlined,
   StarOutlined,
+  ClockCircleOutlined,
 } from "@ant-design/icons";
 
 import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, FULFILLMENT_TYPE_CONFIG } from "../../constants/tag-colors";
+import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS, NEXT_ACTION } from "../../constants/order-transitions";
 import { sectionTitle } from "../../theme";
 
 interface OrderItem {
@@ -30,34 +27,6 @@ interface OrderItem {
   unitPrice: number;
   totalPrice: number;
 }
-
-const DELIVERY_TRANSITIONS: Record<string, string[]> = {
-  PENDING: ["CONFIRMED", "CANCELLED"],
-  CONFIRMED: ["PREPARING", "CANCELLED"],
-  PREPARING: ["READY", "CANCELLED"],
-  READY: ["OUT_FOR_DELIVERY", "CANCELLED"],
-  OUT_FOR_DELIVERY: ["DELIVERED", "CANCELLED"],
-  DELIVERED: [],
-  CANCELLED: [],
-};
-
-const PICKUP_TRANSITIONS: Record<string, string[]> = {
-  PENDING: ["CONFIRMED", "CANCELLED"],
-  CONFIRMED: ["PREPARING", "CANCELLED"],
-  PREPARING: ["READY", "CANCELLED"],
-  READY: ["DELIVERED", "CANCELLED"],
-  DELIVERED: [],
-  CANCELLED: [],
-};
-
-const NEXT_ACTION: Record<string, { label: string; pickupLabel?: string; icon: React.ReactNode; color: string }> = {
-  CONFIRMED: { label: "Confirm Order", icon: <CheckCircleOutlined />, color: "#3b82f6" },
-  PREPARING: { label: "Start Preparing", icon: <FireOutlined />, color: "#06b6d4" },
-  READY: { label: "Mark Ready", pickupLabel: "Mark Ready for Pickup", icon: <GiftOutlined />, color: "#6366f1" },
-  OUT_FOR_DELIVERY: { label: "Out for Delivery", icon: <CarOutlined />, color: "#8b5cf6" },
-  DELIVERED: { label: "Mark Delivered", pickupLabel: "Mark Picked Up", icon: <SmileOutlined />, color: "#22c55e" },
-  CANCELLED: { label: "Cancel Order", icon: <CloseCircleOutlined />, color: "#ef4444" },
-};
 
 export const OrderShow = () => {
   const { query } = useShow({ resource: "orders" });
@@ -237,6 +206,15 @@ export const OrderShow = () => {
               <Descriptions.Item label="Fulfillment">
                 <Tag color={fulfillmentConfig.color}>{fulfillmentConfig.label}</Tag>
               </Descriptions.Item>
+              {record.scheduledDate && record.slotStartTime && (
+                <Descriptions.Item label="Scheduled Slot">
+                  <Tag color="purple" icon={<ClockCircleOutlined />}>
+                    {new Date(record.scheduledDate).toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })}
+                    {" "}
+                    {record.slotStartTime} – {record.slotEndTime}
+                  </Tag>
+                </Descriptions.Item>
+              )}
               <Descriptions.Item label="Total Amount">₹{Number(record.totalAmount).toFixed(0)}</Descriptions.Item>
               {record.couponCode && (
                 <Descriptions.Item label="Coupon">

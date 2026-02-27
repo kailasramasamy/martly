@@ -20,7 +20,16 @@
       "Bash(cd:*)",
       "WebSearch",
       "WebFetch(domain:unsplash.com)",
-      "WebFetch(domain:www.figma.com)"
+      "WebFetch(domain:www.figma.com)",
+      "Bash(sleep 1:*)",
+      "Bash(echo Cleaned up:*)",
+      "Bash(echo killed:*)",
+      "Bash(echo Admin token: ${ADMIN_TOKEN:0:20}...:*)",
+      "Bash(echo Admin token obtained:*)",
+      "Bash(echo done:*)",
+      "Bash(pkill:*)",
+      "Bash(tail:*)",
+      "Bash(grep:*)"
     ]
   }
 }

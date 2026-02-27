@@ -95,6 +95,30 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage delivery tiers" };
     }
 
+    // Express Delivery Config: ORG_ADMIN full access
+    if (resource === "express-delivery") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage express delivery config" };
+    }
+
+    // Riders: ORG_ADMIN, STORE_MANAGER
+    if (resource === "riders") {
+      if (["SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER"].includes(role)) return { can: true };
+      return { can: false, reason: "Access denied" };
+    }
+
+    // Delivery Board: ORG_ADMIN, STORE_MANAGER, STAFF
+    if (resource === "delivery-board") {
+      if (["ORG_ADMIN", "STORE_MANAGER", "STAFF"].includes(role)) return { can: true };
+      return { can: false, reason: "Access denied" };
+    }
+
+    // Delivery Slots: ORG_ADMIN full access
+    if (resource === "delivery-slots") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage delivery time slots" };
+    }
+
     // Loyalty: ORG_ADMIN full access
     if (resource === "loyalty-settings" || resource === "loyalty-customers") {
       if (role === "ORG_ADMIN") return { can: true };
