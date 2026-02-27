@@ -64,6 +64,12 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can modify products" };
     }
 
+    // Banners: ORG_ADMIN full access
+    if (resource === "banners") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage banners" };
+    }
+
     // Collections: ORG_ADMIN full access, others read-only
     if (resource === "collections") {
       if (role === "ORG_ADMIN") return { can: true };

@@ -194,6 +194,44 @@ export const TripStatusLabels: Record<TripStatus, string> = {
   CANCELLED: "Cancelled",
 };
 
+export const BannerPlacement = {
+  HERO_CAROUSEL: "HERO_CAROUSEL",
+  CATEGORY_STRIP: "CATEGORY_STRIP",
+  MID_PAGE: "MID_PAGE",
+  CATEGORY_TOP: "CATEGORY_TOP",
+  CART_UPSELL: "CART_UPSELL",
+  POPUP: "POPUP",
+} as const;
+export type BannerPlacement = (typeof BannerPlacement)[keyof typeof BannerPlacement];
+
+export const BannerPlacementLabels: Record<BannerPlacement, string> = {
+  HERO_CAROUSEL: "Hero Carousel",
+  CATEGORY_STRIP: "Category Strip",
+  MID_PAGE: "Mid Page",
+  CATEGORY_TOP: "Category Top",
+  CART_UPSELL: "Cart Upsell",
+  POPUP: "Popup",
+};
+
+export const BannerActionType = {
+  CATEGORY: "CATEGORY",
+  PRODUCT: "PRODUCT",
+  COLLECTION: "COLLECTION",
+  SEARCH: "SEARCH",
+  URL: "URL",
+  NONE: "NONE",
+} as const;
+export type BannerActionType = (typeof BannerActionType)[keyof typeof BannerActionType];
+
+export const BannerActionTypeLabels: Record<BannerActionType, string> = {
+  CATEGORY: "Category",
+  PRODUCT: "Product",
+  COLLECTION: "Collection",
+  SEARCH: "Search",
+  URL: "External URL",
+  NONE: "No Action",
+};
+
 export const RegulatoryMarkLabels: Record<RegulatoryMark, string> = {
   FSSAI: "FSSAI",
   ISI: "ISI Mark",

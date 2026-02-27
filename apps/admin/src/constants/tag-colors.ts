@@ -93,6 +93,24 @@ export const LOYALTY_TRANSACTION_TYPE_CONFIG: Record<string, { color: string; la
   ADJUSTMENT: { color: "blue", label: "Adjustment" },
 };
 
+export const BANNER_PLACEMENT_CONFIG: Record<string, { color: string; label: string }> = {
+  HERO_CAROUSEL: { color: "blue", label: "Hero Carousel" },
+  CATEGORY_STRIP: { color: "cyan", label: "Category Strip" },
+  MID_PAGE: { color: "purple", label: "Mid Page" },
+  CATEGORY_TOP: { color: "geekblue", label: "Category Top" },
+  CART_UPSELL: { color: "orange", label: "Cart Upsell" },
+  POPUP: { color: "magenta", label: "Popup" },
+};
+
+export const BANNER_ACTION_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
+  CATEGORY: { color: "green", label: "Category" },
+  PRODUCT: { color: "blue", label: "Product" },
+  COLLECTION: { color: "purple", label: "Collection" },
+  SEARCH: { color: "cyan", label: "Search" },
+  URL: { color: "orange", label: "URL" },
+  NONE: { color: "default", label: "None" },
+};
+
 export const TRIP_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
   CREATED: { color: "blue", label: "Created" },
   IN_PROGRESS: { color: "orange", label: "In Progress" },

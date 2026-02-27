@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType } from "../constants/index.js";
 
 // ── Auth ──────────────────────────────────────────────
 export const loginSchema = z.object({
@@ -670,6 +670,40 @@ export const updateRiderSchema = z.object({
   password: z.string().min(6).max(100).optional(),
 });
 export type UpdateRiderInput = z.infer<typeof updateRiderSchema>;
+
+// ── Banner ──────────────────────────────────────────
+export const createBannerSchema = z.object({
+  title: z.string().min(1),
+  subtitle: z.string().optional(),
+  imageUrl: z.string().url(),
+  placement: z.nativeEnum(BannerPlacement),
+  actionType: z.nativeEnum(BannerActionType).default("NONE"),
+  actionTarget: z.string().optional(),
+  sortOrder: z.number().int().min(0).optional(),
+  isActive: z.boolean().default(true),
+  startsAt: z.coerce.date().nullish(),
+  endsAt: z.coerce.date().nullish(),
+  storeId: z.string().uuid().nullish(),
+  organizationId: z.string().uuid().nullish(),
+  categoryId: z.string().uuid().nullish(),
+});
+export type CreateBannerInput = z.infer<typeof createBannerSchema>;
+
+export const updateBannerSchema = z.object({
+  title: z.string().min(1).optional(),
+  subtitle: z.string().nullish(),
+  imageUrl: z.string().url().optional(),
+  placement: z.nativeEnum(BannerPlacement).optional(),
+  actionType: z.nativeEnum(BannerActionType).optional(),
+  actionTarget: z.string().nullish(),
+  sortOrder: z.number().int().min(0).optional(),
+  isActive: z.boolean().optional(),
+  startsAt: z.coerce.date().nullish(),
+  endsAt: z.coerce.date().nullish(),
+  storeId: z.string().uuid().nullish(),
+  categoryId: z.string().uuid().nullish(),
+});
+export type UpdateBannerInput = z.infer<typeof updateBannerSchema>;
 
 export const updateDeliverySlotSchema = z.object({
   dayOfWeek: z.number().int().min(0).max(6).optional(),

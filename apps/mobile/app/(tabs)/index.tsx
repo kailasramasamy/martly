@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, useCallback } from "react";
+import { useEffect, useState, useMemo, useCallback, useRef } from "react";
 import {
   View,
   Text,
@@ -25,7 +25,7 @@ import { getCategoryIcon } from "../../constants/category-icons";
 import { FeaturedProductCard } from "../../components/FeaturedProductCard";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
-import type { Store, StoreProduct, HomeFeed } from "../../lib/types";
+import type { Store, StoreProduct, HomeFeed, Banner } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
@@ -98,6 +98,77 @@ export default function HomeScreen() {
       (s) => s.name.toLowerCase().includes(q) || s.address.toLowerCase().includes(q),
     );
   }, [stores, storeSearch]);
+
+  // ── Banner data by placement ──
+  const heroBanners = useMemo(
+    () => (homeFeed?.banners ?? []).filter((b) => b.placement === "HERO_CAROUSEL"),
+    [homeFeed?.banners],
+  );
+  const stripBanners = useMemo(
+    () => (homeFeed?.banners ?? []).filter((b) => b.placement === "CATEGORY_STRIP"),
+    [homeFeed?.banners],
+  );
+  const midPageBanners = useMemo(
+    () => (homeFeed?.banners ?? []).filter((b) => b.placement === "MID_PAGE"),
+    [homeFeed?.banners],
+  );
+  const popupBanners = useMemo(
+    () => (homeFeed?.banners ?? []).filter((b) => b.placement === "POPUP"),
+    [homeFeed?.banners],
+  );
+
+  const [showPopup, setShowPopup] = useState(false);
+  const popupShownRef = useRef(false);
+
+  useEffect(() => {
+    if (homeFeed && popupBanners.length > 0 && !popupShownRef.current) {
+      popupShownRef.current = true;
+      setShowPopup(true);
+    }
+  }, [homeFeed, popupBanners.length]);
+
+  const [heroIndex, setHeroIndex] = useState(0);
+  const heroRef = useRef<FlatList<Banner>>(null);
+  const heroTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Auto-rotate hero carousel
+  useEffect(() => {
+    if (heroBanners.length <= 1) return;
+    heroTimerRef.current = setInterval(() => {
+      setHeroIndex((prev) => {
+        const next = (prev + 1) % heroBanners.length;
+        heroRef.current?.scrollToIndex({ index: next, animated: true });
+        return next;
+      });
+    }, 4000);
+    return () => {
+      if (heroTimerRef.current) clearInterval(heroTimerRef.current);
+    };
+  }, [heroBanners.length]);
+
+  const handleBannerPress = useCallback((banner: Banner) => {
+    switch (banner.actionType) {
+      case "CATEGORY":
+        if (banner.actionTarget) router.push({ pathname: "/category/[id]", params: { id: banner.actionTarget } });
+        break;
+      case "PRODUCT":
+        if (banner.actionTarget) router.push({ pathname: "/product/[id]", params: { id: banner.actionTarget } });
+        break;
+      case "COLLECTION":
+        // Navigate to search filtered by collection
+        if (banner.actionTarget) router.push({ pathname: "/search", params: { collectionId: banner.actionTarget } } as any);
+        break;
+      case "SEARCH":
+        if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);
+        break;
+      case "URL":
+        // External URLs — no-op on mobile for now
+        break;
+      case "NONE":
+      default:
+        break;
+    }
+  }, []);
 
   const handleAddToCart = useCallback(
     (sp: StoreProduct) => {
@@ -245,32 +316,43 @@ export default function HomeScreen() {
           </View>
         )}
 
-        {/* ── Promo Banner ── */}
-        {selectedStore && (
+        {/* ── Hero Carousel ── */}
+        {heroBanners.length > 0 && (
           <View style={styles.bannerSection}>
-            <View style={styles.banner}>
-              <View style={styles.bannerCircle1} />
-              <View style={styles.bannerCircle2} />
-              <View style={styles.bannerContent}>
-                <View style={styles.bannerLeft}>
-                  <View style={styles.bannerBadge}>
-                    <Text style={styles.bannerBadgeText}>LIMITED TIME</Text>
+            <FlatList
+              ref={heroRef}
+              horizontal
+              pagingEnabled
+              data={heroBanners}
+              keyExtractor={(item) => item.id}
+              showsHorizontalScrollIndicator={false}
+              onMomentumScrollEnd={(e) => {
+                const idx = Math.round(e.nativeEvent.contentOffset.x / (SCREEN_WIDTH - H_PADDING * 2));
+                setHeroIndex(idx);
+              }}
+              renderItem={({ item }) => (
+                <TouchableOpacity
+                  activeOpacity={item.actionType === "NONE" ? 1 : 0.9}
+                  onPress={() => handleBannerPress(item)}
+                  style={styles.heroSlide}
+                >
+                  <Image source={{ uri: item.imageUrl }} style={styles.heroImage} resizeMode="cover" />
+                  <View style={styles.heroOverlay}>
+                    <Text style={styles.heroTitle} numberOfLines={2}>{item.title}</Text>
+                    {item.subtitle && (
+                      <Text style={styles.heroSubtitle} numberOfLines={1}>{item.subtitle}</Text>
+                    )}
                   </View>
-                  <Text style={styles.bannerTitle}>Fresh Organics{"\n"}Weekly Deals</Text>
-                  <Text style={styles.bannerSubtitle}>Up to 30% Off on fresh produce</Text>
-                  <TouchableOpacity
-                    style={styles.bannerBtn}
-                    onPress={() => router.push({ pathname: "/search", params: { hasDiscount: "true" } } as any)}
-                  >
-                    <Text style={styles.bannerBtnText}>Shop Now</Text>
-                    <Ionicons name="arrow-forward" size={14} color="#fff" />
-                  </TouchableOpacity>
-                </View>
-                <View style={styles.bannerIconBox}>
-                  <Ionicons name="leaf" size={48} color="rgba(255,255,255,0.3)" />
-                </View>
+                </TouchableOpacity>
+              )}
+            />
+            {heroBanners.length > 1 && (
+              <View style={styles.heroDots}>
+                {heroBanners.map((_, i) => (
+                  <View key={i} style={[styles.heroDot, heroIndex === i && styles.heroDotActive]} />
+                ))}
               </View>
-            </View>
+            )}
           </View>
         )}
 
@@ -289,6 +371,27 @@ export default function HomeScreen() {
               </View>
             </View>
             {renderProductList(homeFeed.buyAgain)}
+          </View>
+        )}
+
+        {/* ── Category Strip Banners ── */}
+        {stripBanners.length > 0 && (
+          <View style={styles.stripSection}>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.stripList}>
+              {stripBanners.map((banner) => (
+                <TouchableOpacity
+                  key={banner.id}
+                  activeOpacity={banner.actionType === "NONE" ? 1 : 0.85}
+                  onPress={() => handleBannerPress(banner)}
+                  style={styles.stripCard}
+                >
+                  <Image source={{ uri: banner.imageUrl }} style={styles.stripImage} resizeMode="cover" />
+                  <View style={styles.stripTextOverlay}>
+                    <Text style={styles.stripTitle} numberOfLines={1}>{banner.title}</Text>
+                  </View>
+                </TouchableOpacity>
+              ))}
+            </ScrollView>
           </View>
         )}
 
@@ -346,6 +449,28 @@ export default function HomeScreen() {
                 );
               })}
             </View>
+          </View>
+        )}
+
+        {/* ── Mid-Page Banner ── */}
+        {midPageBanners.length > 0 && (
+          <View style={styles.midBannerSection}>
+            {midPageBanners.map((banner) => (
+              <TouchableOpacity
+                key={banner.id}
+                activeOpacity={banner.actionType === "NONE" ? 1 : 0.9}
+                onPress={() => handleBannerPress(banner)}
+                style={styles.midBanner}
+              >
+                <Image source={{ uri: banner.imageUrl }} style={styles.midBannerImage} resizeMode="cover" />
+                <View style={styles.midBannerOverlay}>
+                  <Text style={styles.midBannerTitle} numberOfLines={1}>{banner.title}</Text>
+                  {banner.subtitle && (
+                    <Text style={styles.midBannerSubtitle} numberOfLines={1}>{banner.subtitle}</Text>
+                  )}
+                </View>
+              </TouchableOpacity>
+            ))}
           </View>
         )}
 
@@ -446,6 +571,38 @@ export default function HomeScreen() {
         }}
         onCancel={() => setReplaceCartConfirm(null)}
       />
+
+      {/* ── Popup Banner Modal ── */}
+      {popupBanners.length > 0 && (
+        <Modal visible={showPopup} transparent animationType="fade" onRequestClose={() => setShowPopup(false)}>
+          <View style={styles.popupBackdrop}>
+            <View style={styles.popupCard}>
+              <TouchableOpacity
+                style={styles.popupClose}
+                onPress={() => setShowPopup(false)}
+                hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+              >
+                <Ionicons name="close" size={20} color="#64748b" />
+              </TouchableOpacity>
+              <TouchableOpacity
+                activeOpacity={popupBanners[0].actionType === "NONE" ? 1 : 0.9}
+                onPress={() => {
+                  handleBannerPress(popupBanners[0]);
+                  setShowPopup(false);
+                }}
+              >
+                <Image source={{ uri: popupBanners[0].imageUrl }} style={styles.popupImage} resizeMode="cover" />
+              </TouchableOpacity>
+              <View style={styles.popupContent}>
+                <Text style={styles.popupTitle}>{popupBanners[0].title}</Text>
+                {popupBanners[0].subtitle && (
+                  <Text style={styles.popupSubtitle}>{popupBanners[0].subtitle}</Text>
+                )}
+              </View>
+            </View>
+          </View>
+        </Modal>
+      )}
 
       {/* ── Store Picker Modal ── */}
       <Modal visible={showStorePicker} animationType="slide" presentationStyle="pageSheet">
@@ -659,89 +816,129 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginTop: 1,
   },
-  // ── Banner ──
+  // ── Hero Carousel ──
   bannerSection: {
     paddingHorizontal: H_PADDING,
     paddingTop: 16,
   },
-  banner: {
+  heroSlide: {
+    width: SCREEN_WIDTH - H_PADDING * 2,
+    height: 160,
     borderRadius: 16,
     overflow: "hidden",
-    backgroundColor: "#14532d",
-    position: "relative",
+    backgroundColor: "#e2e8f0",
   },
-  bannerCircle1: {
+  heroImage: {
+    width: "100%",
+    height: "100%",
+  },
+  heroOverlay: {
     position: "absolute",
-    top: -30,
-    right: -20,
-    width: 120,
-    height: 120,
-    borderRadius: 60,
-    backgroundColor: "rgba(255,255,255,0.06)",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    backgroundColor: "rgba(0,0,0,0.35)",
   },
-  bannerCircle2: {
-    position: "absolute",
-    bottom: -40,
-    right: 40,
-    width: 100,
-    height: 100,
-    borderRadius: 50,
-    backgroundColor: "rgba(255,255,255,0.04)",
-  },
-  bannerContent: {
-    flexDirection: "row",
-    alignItems: "center",
-    padding: 20,
-  },
-  bannerLeft: {
-    flex: 1,
-  },
-  bannerBadge: {
-    alignSelf: "flex-start",
-    backgroundColor: "rgba(255,255,255,0.2)",
-    borderRadius: 6,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    marginBottom: 8,
-  },
-  bannerBadgeText: {
-    fontSize: 9,
+  heroTitle: {
+    fontSize: 18,
     fontWeight: "700",
     color: "#fff",
-    letterSpacing: 0.8,
   },
-  bannerTitle: {
-    fontSize: 20,
-    fontWeight: "700",
-    color: "#fff",
-    lineHeight: 26,
-  },
-  bannerSubtitle: {
+  heroSubtitle: {
     fontSize: 13,
-    fontWeight: "500",
-    color: "rgba(255,255,255,0.7)",
-    marginTop: 4,
+    color: "rgba(255,255,255,0.85)",
+    marginTop: 2,
   },
-  bannerBtn: {
-    alignSelf: "flex-start",
+  heroDots: {
     flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-    backgroundColor: colors.primary,
-    borderRadius: 8,
-    paddingHorizontal: 14,
-    paddingVertical: 8,
-    marginTop: 12,
-  },
-  bannerBtnText: {
-    fontSize: 13,
-    fontWeight: "700",
-    color: "#fff",
-  },
-  bannerIconBox: {
-    width: 64,
     justifyContent: "center",
     alignItems: "center",
+    marginTop: 10,
+    gap: 6,
+  },
+  heroDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: "#cbd5e1",
+  },
+  heroDotActive: {
+    width: 18,
+    borderRadius: 4,
+    backgroundColor: colors.primary,
+  },
+
+  // ── Category Strip ──
+  stripSection: {
+    marginTop: 16,
+  },
+  stripList: {
+    paddingHorizontal: H_PADDING,
+    gap: 10,
+  },
+  stripCard: {
+    width: 140,
+    height: 90,
+    borderRadius: 12,
+    overflow: "hidden",
+    backgroundColor: "#e2e8f0",
+  },
+  stripImage: {
+    width: "100%",
+    height: "100%",
+  },
+  stripTextOverlay: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+    backgroundColor: "rgba(0,0,0,0.4)",
+  },
+  stripTitle: {
+    fontSize: 12,
+    fontWeight: "700",
+    color: "#fff",
+  },
+
+  // ── Mid-Page Banner ──
+  midBannerSection: {
+    paddingHorizontal: H_PADDING,
+    marginTop: 20,
+    gap: 12,
+  },
+  midBanner: {
+    width: "100%",
+    height: 120,
+    borderRadius: 14,
+    overflow: "hidden",
+    backgroundColor: "#e2e8f0",
+  },
+  midBannerImage: {
+    width: "100%",
+    height: "100%",
+  },
+  midBannerOverlay: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    backgroundColor: "rgba(0,0,0,0.35)",
+  },
+  midBannerTitle: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  midBannerSubtitle: {
+    fontSize: 12,
+    color: "rgba(255,255,255,0.85)",
+    marginTop: 1,
   },
 
   // ── Buy Again ──
@@ -1018,6 +1215,55 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 15,
     fontWeight: "700",
+  },
+
+  // ── Popup Banner Modal ──
+  popupBackdrop: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 32,
+  },
+  popupCard: {
+    width: "100%",
+    maxWidth: 340,
+    backgroundColor: "#fff",
+    borderRadius: 20,
+    overflow: "hidden",
+  },
+  popupClose: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+    zIndex: 10,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: "rgba(255,255,255,0.9)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  popupImage: {
+    width: "100%",
+    height: 200,
+  },
+  popupContent: {
+    padding: 20,
+    alignItems: "center",
+  },
+  popupTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: colors.text,
+    textAlign: "center",
+  },
+  popupSubtitle: {
+    fontSize: 13,
+    color: colors.textSecondary,
+    textAlign: "center",
+    marginTop: 6,
+    lineHeight: 18,
   },
 
   // ── Store Picker Modal ──

@@ -11,7 +11,7 @@ import {
   ActivityIndicator,
   Dimensions,
 } from "react-native";
-import { useLocalSearchParams, useNavigation } from "expo-router";
+import { useLocalSearchParams, useNavigation, router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
@@ -23,7 +23,7 @@ import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../../components/Prod
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
 import { FloatingCart } from "../../components/FloatingCart";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
-import type { StoreProduct, CategoryTreeNode } from "../../lib/types";
+import type { StoreProduct, CategoryTreeNode, Banner } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const SIDEBAR_WIDTH = Math.round(SCREEN_WIDTH * 0.22);
@@ -54,6 +54,7 @@ export default function CategoryScreen() {
   const [sortBy, setSortBy] = useState<"price_asc" | "price_desc" | null>(null);
   const [activeGrandchild, setActiveGrandchild] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [topBanners, setTopBanners] = useState<Banner[]>([]);
 
   const gridRef = useRef<FlatList>(null);
 
@@ -92,6 +93,15 @@ export default function CategoryScreen() {
       .catch(() => {})
       .finally(() => setLoading(false));
   }, [id, selectedStore]);
+
+  // Fetch CATEGORY_TOP banners for this category
+  useEffect(() => {
+    if (!selectedStore || !id) return;
+    api
+      .get<Banner[]>(`/api/v1/banners/by-placement/${selectedStore.id}?placement=CATEGORY_TOP&categoryId=${id}`)
+      .then((res) => setTopBanners(res.data))
+      .catch(() => {});
+  }, [selectedStore, id]);
 
   // Build subcategory list with product counts
   const subcategories = useMemo((): SubcategoryWithCount[] => {
@@ -280,9 +290,46 @@ export default function CategoryScreen() {
     gridRef.current?.scrollToOffset({ offset: 0, animated: true });
   }, [filterOnSale, sortBy, activeGrandchild]);
 
+  const handleBannerPress = useCallback((banner: Banner) => {
+    switch (banner.actionType) {
+      case "CATEGORY":
+        if (banner.actionTarget) router.push({ pathname: "/category/[id]", params: { id: banner.actionTarget } });
+        break;
+      case "PRODUCT":
+        if (banner.actionTarget) router.push({ pathname: "/product/[id]", params: { id: banner.actionTarget } });
+        break;
+      case "COLLECTION":
+        if (banner.actionTarget) router.push({ pathname: "/search", params: { collectionId: banner.actionTarget } } as any);
+        break;
+      case "SEARCH":
+        if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);
+        break;
+    }
+  }, []);
+
   const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || searchQuery.trim().length > 0;
   const totalCount = allProducts.length;
   const hasSidebar = subcategories.length > 0;
+
+  const renderTopBanner = () => {
+    if (topBanners.length === 0) return null;
+    const banner = topBanners[0];
+    return (
+      <TouchableOpacity
+        activeOpacity={banner.actionType === "NONE" ? 1 : 0.9}
+        onPress={() => handleBannerPress(banner)}
+        style={styles.topBanner}
+      >
+        <Image source={{ uri: banner.imageUrl }} style={styles.topBannerImage} resizeMode="cover" />
+        <View style={styles.topBannerOverlay}>
+          <Text style={styles.topBannerTitle} numberOfLines={1}>{banner.title}</Text>
+          {banner.subtitle && (
+            <Text style={styles.topBannerSubtitle} numberOfLines={1}>{banner.subtitle}</Text>
+          )}
+        </View>
+      </TouchableOpacity>
+    );
+  };
 
   const renderSearchBox = () => (
     <View style={styles.searchContainer}>
@@ -586,6 +633,7 @@ export default function CategoryScreen() {
             style={styles.contentArea}
             onLayout={(e) => setContentWidth(e.nativeEvent.layout.width)}
           >
+            {renderTopBanner()}
             {renderSearchBox()}
             {renderGrandchildPills()}
             {renderFilterChips()}
@@ -594,6 +642,7 @@ export default function CategoryScreen() {
         </View>
       ) : (
         <View style={{ flex: 1 }}>
+          {renderTopBanner()}
           {renderSearchBox()}
           {renderGrandchildPills()}
           {renderFilterChips()}
@@ -824,5 +873,36 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     textAlign: "center",
     lineHeight: 18,
+  },
+  topBanner: {
+    marginHorizontal: 10,
+    marginTop: 8,
+    height: 100,
+    borderRadius: 12,
+    overflow: "hidden",
+    backgroundColor: "#e2e8f0",
+  },
+  topBannerImage: {
+    width: "100%",
+    height: "100%",
+  },
+  topBannerOverlay: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    backgroundColor: "rgba(0,0,0,0.35)",
+  },
+  topBannerTitle: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  topBannerSubtitle: {
+    fontSize: 11,
+    color: "rgba(255,255,255,0.85)",
+    marginTop: 1,
   },
 });

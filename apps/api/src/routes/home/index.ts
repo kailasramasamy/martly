@@ -55,8 +55,10 @@ export async function homeRoutes(app: FastifyInstance) {
         variant: true,
       };
 
-      // Run 5 parallel queries
-      const [collections, categories, timeCategories, dealsRaw, buyAgainRaw] = await Promise.all([
+      const now = new Date();
+
+      // Run 6 parallel queries
+      const [collections, categories, timeCategories, dealsRaw, buyAgainRaw, bannersRaw] = await Promise.all([
         // 1. Collections with products mapped to this store
         app.prisma.collection.findMany({
           where: {
@@ -121,7 +123,6 @@ export async function homeRoutes(app: FastifyInstance) {
 
         // 4. Deals — active discounts
         (() => {
-          const now = new Date();
           return app.prisma.storeProduct.findMany({
             where: {
               storeId,
@@ -160,6 +161,33 @@ export async function homeRoutes(app: FastifyInstance) {
               },
             })
           : Promise.resolve([]),
+
+        // 6. Banners — active banners for mobile placements
+        app.prisma.banner.findMany({
+          where: {
+            isActive: true,
+            placement: { in: ["HERO_CAROUSEL", "CATEGORY_STRIP", "MID_PAGE", "POPUP"] },
+            OR: [
+              { storeId },
+              { storeId: null, organizationId: store.organizationId },
+              { storeId: null, organizationId: null },
+            ],
+            AND: [
+              { OR: [{ startsAt: null }, { startsAt: { lte: now } }] },
+              { OR: [{ endsAt: null }, { endsAt: { gte: now } }] },
+            ],
+          },
+          orderBy: { sortOrder: "asc" },
+          select: {
+            id: true,
+            title: true,
+            subtitle: true,
+            imageUrl: true,
+            placement: true,
+            actionType: true,
+            actionTarget: true,
+          },
+        }),
       ]);
 
       // Batch-query variant counts for deals and buy again products
@@ -278,6 +306,7 @@ export async function homeRoutes(app: FastifyInstance) {
         timePeriod: TimePeriod;
         deals: typeof deals;
         buyAgain: typeof buyAgain;
+        banners: typeof bannersRaw;
       }> = {
         success: true,
         data: {
@@ -287,6 +316,7 @@ export async function homeRoutes(app: FastifyInstance) {
           timePeriod,
           deals: enrichedDeals,
           buyAgain: enrichedBuyAgain,
+          banners: bannersRaw,
         },
       };
       return response;

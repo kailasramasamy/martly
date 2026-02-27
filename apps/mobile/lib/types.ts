@@ -112,6 +112,16 @@ export interface TimeCategorySection {
   products: StoreProduct[];
 }
 
+export interface Banner {
+  id: string;
+  title: string;
+  subtitle: string | null;
+  imageUrl: string;
+  placement: "HERO_CAROUSEL" | "CATEGORY_STRIP" | "MID_PAGE" | "CATEGORY_TOP" | "CART_UPSELL" | "POPUP";
+  actionType: "CATEGORY" | "PRODUCT" | "COLLECTION" | "SEARCH" | "URL" | "NONE";
+  actionTarget: string | null;
+}
+
 export interface HomeFeed {
   collections: CollectionSection[];
   categories: CategoryTreeNode[];
@@ -119,6 +129,7 @@ export interface HomeFeed {
   timePeriod: string;
   deals: StoreProduct[];
   buyAgain: StoreProduct[];
+  banners: Banner[];
 }
 
 export interface Review {

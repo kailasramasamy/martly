@@ -124,6 +124,24 @@ enum TripStatus {
   CANCELLED
 }
 
+enum BannerPlacement {
+  HERO_CAROUSEL
+  CATEGORY_STRIP
+  MID_PAGE
+  CATEGORY_TOP
+  CART_UPSELL
+  POPUP
+}
+
+enum BannerActionType {
+  CATEGORY
+  PRODUCT
+  COLLECTION
+  SEARCH
+  URL
+  NONE
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -142,6 +160,7 @@ model Organization {
   loyaltyBalances     LoyaltyBalance[]
   loyaltyTransactions LoyaltyTransaction[]
   deliveryTrips       DeliveryTrip[]
+  banners             Banner[]
 
   @@map("organizations")
 }
@@ -170,6 +189,7 @@ model Store {
   deliverySlots         DeliverySlot[]
   expressDeliveryConfig ExpressDeliveryConfig?
   deliveryTrips         DeliveryTrip[]
+  banners               Banner[]
 
   @@map("stores")
 }
@@ -246,6 +266,7 @@ model Category {
   parent   Category?  @relation("CategoryTree", fields: [parentId], references: [id])
   children Category[] @relation("CategoryTree")
   products Product[]
+  banners  Banner[]
 
   @@map("categories")
 }
@@ -744,4 +765,33 @@ model DeliveryTrip {
   @@index([storeId, status])
   @@index([riderId])
   @@map("delivery_trips")
+}
+
+model Banner {
+  id             String           @id @default(uuid())
+  title          String
+  subtitle       String?
+  imageUrl       String           @map("image_url")
+  placement      BannerPlacement
+  actionType     BannerActionType @default(NONE) @map("action_type")
+  actionTarget   String?          @map("action_target")
+  sortOrder      Int              @default(0) @map("sort_order")
+  isActive       Boolean          @default(true) @map("is_active")
+  startsAt       DateTime?        @map("starts_at")
+  endsAt         DateTime?        @map("ends_at")
+  storeId        String?          @map("store_id")
+  organizationId String?          @map("organization_id")
+  categoryId     String?          @map("category_id")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @updatedAt @map("updated_at")
+
+  store        Store?        @relation(fields: [storeId], references: [id])
+  organization Organization? @relation(fields: [organizationId], references: [id])
+  category     Category?     @relation(fields: [categoryId], references: [id])
+
+  @@index([placement, isActive])
+  @@index([organizationId])
+  @@index([storeId])
+  @@index([categoryId])
+  @@map("banners")
 }

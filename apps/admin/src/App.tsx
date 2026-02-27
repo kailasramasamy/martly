@@ -26,6 +26,7 @@ import {
   EnvironmentOutlined,
   ThunderboltOutlined,
   CarOutlined,
+  PictureOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -89,6 +90,9 @@ import { LoyaltyCustomers } from "./pages/loyalty/customers";
 import { ExpressDeliveryConfig } from "./pages/express-delivery/config";
 import { DeliveryBoard } from "./pages/delivery-board";
 import { RidersList } from "./pages/riders/list";
+import { BannerList } from "./pages/banners/list";
+import { BannerCreate } from "./pages/banners/create";
+import { BannerEdit } from "./pages/banners/edit";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -229,6 +233,13 @@ export default function App() {
               {
                 name: "marketing",
                 meta: { label: "Marketing", icon: <AppstoreAddOutlined /> },
+              },
+              {
+                name: "banners",
+                list: "/banners",
+                create: "/banners/create",
+                edit: "/banners/edit/:id",
+                meta: { label: "Banners", icon: <PictureOutlined />, parent: "marketing" },
               },
               {
                 name: "collections",
@@ -378,6 +389,11 @@ export default function App() {
                 <Route path="/orders">
                   <Route index element={<OrderList />} />
                   <Route path="show/:id" element={<OrderShow />} />
+                </Route>
+                <Route path="/banners">
+                  <Route index element={<BannerList />} />
+                  <Route path="create" element={<BannerCreate />} />
+                  <Route path="edit/:id" element={<BannerEdit />} />
                 </Route>
                 <Route path="/collections">
                   <Route index element={<CollectionList />} />

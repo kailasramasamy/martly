@@ -1,12 +1,44 @@
-import { View, Text, Image, FlatList, TouchableOpacity, StyleSheet } from "react-native";
+import { useState, useEffect, useCallback } from "react";
+import { View, Text, Image, FlatList, TouchableOpacity, ScrollView, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "../../lib/cart-context";
+import { api } from "../../lib/api";
+import type { Banner } from "../../lib/types";
 import { colors, spacing, fontSize } from "../../constants/theme";
 
 export default function CartScreen() {
   const router = useRouter();
-  const { storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
+  const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
+  const [upsellBanners, setUpsellBanners] = useState<Banner[]>([]);
+
+  useEffect(() => {
+    if (!storeId) {
+      setUpsellBanners([]);
+      return;
+    }
+    api
+      .get<Banner[]>(`/api/v1/banners/by-placement/${storeId}?placement=CART_UPSELL`)
+      .then((res) => setUpsellBanners(res.data))
+      .catch(() => {});
+  }, [storeId]);
+
+  const handleBannerPress = useCallback((banner: Banner) => {
+    switch (banner.actionType) {
+      case "CATEGORY":
+        if (banner.actionTarget) router.push({ pathname: "/category/[id]", params: { id: banner.actionTarget } } as any);
+        break;
+      case "PRODUCT":
+        if (banner.actionTarget) router.push({ pathname: "/product/[id]", params: { id: banner.actionTarget } } as any);
+        break;
+      case "COLLECTION":
+        if (banner.actionTarget) router.push({ pathname: "/search", params: { collectionId: banner.actionTarget } } as any);
+        break;
+      case "SEARCH":
+        if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);
+        break;
+    }
+  }, [router]);
 
   if (items.length === 0) {
     return (
@@ -43,6 +75,29 @@ export default function CartScreen() {
         data={items}
         keyExtractor={(item) => item.storeProductId}
         contentContainerStyle={styles.list}
+        ListHeaderComponent={
+          upsellBanners.length > 0 ? (
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.upsellList}
+            >
+              {upsellBanners.map((banner) => (
+                <TouchableOpacity
+                  key={banner.id}
+                  activeOpacity={banner.actionType === "NONE" ? 1 : 0.85}
+                  onPress={() => handleBannerPress(banner)}
+                  style={styles.upsellCard}
+                >
+                  <Image source={{ uri: banner.imageUrl }} style={styles.upsellImage} resizeMode="cover" />
+                  <View style={styles.upsellTextOverlay}>
+                    <Text style={styles.upsellTitle} numberOfLines={1}>{banner.title}</Text>
+                  </View>
+                </TouchableOpacity>
+              ))}
+            </ScrollView>
+          ) : null
+        }
         renderItem={({ item }) => (
           <View style={styles.card}>
             <View style={styles.cardBody}>
@@ -208,6 +263,37 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: colors.textSecondary,
     marginTop: 1,
+  },
+  // Upsell banners
+  upsellList: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: 10,
+    gap: 10,
+  },
+  upsellCard: {
+    width: 140,
+    height: 90,
+    borderRadius: 12,
+    overflow: "hidden",
+    backgroundColor: "#e2e8f0",
+  },
+  upsellImage: {
+    width: "100%",
+    height: "100%",
+  },
+  upsellTextOverlay: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+    backgroundColor: "rgba(0,0,0,0.4)",
+  },
+  upsellTitle: {
+    fontSize: 12,
+    fontWeight: "700",
+    color: "#fff",
   },
   // List
   list: { padding: spacing.md, paddingBottom: spacing.sm },
