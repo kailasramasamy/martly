@@ -125,6 +125,12 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage delivery time slots" };
     }
 
+    // Notifications: ORG_ADMIN full access
+    if (resource === "notifications") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can send notifications" };
+    }
+
     // Loyalty: ORG_ADMIN full access
     if (resource === "loyalty-settings" || resource === "loyalty-customers") {
       if (role === "ORG_ADMIN") return { can: true };

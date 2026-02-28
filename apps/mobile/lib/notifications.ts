@@ -3,10 +3,21 @@ import * as Notifications from "expo-notifications";
 import * as Device from "expo-device";
 import { api } from "./api";
 
+// Set up Android notification channel with HIGH importance for heads-up popups
+if (Platform.OS === "android") {
+  Notifications.setNotificationChannelAsync("default", {
+    name: "Martly",
+    importance: Notifications.AndroidImportance.MAX,
+    vibrationPattern: [0, 250, 250, 250],
+    sound: "default",
+  });
+}
+
 // Configure foreground notification display
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
-    shouldShowAlert: true,
+    shouldShowBanner: true,
+    shouldShowList: true,
     shouldPlaySound: true,
     shouldSetBadge: false,
   }),

@@ -206,3 +206,15 @@ export interface LoyaltyData {
   balance: { points: number; totalEarned: number; totalRedeemed: number };
   transactions: LoyaltyTransaction[];
 }
+
+export interface AppNotification {
+  id: string;
+  userId: string;
+  type: string;
+  title: string;
+  body: string;
+  imageUrl: string | null;
+  data: Record<string, unknown> | null;
+  isRead: boolean;
+  createdAt: string;
+}

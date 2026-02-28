@@ -97,6 +97,16 @@ export function broadcastToUser(userId: string, orderId: string, status: string)
   }
 }
 
+/** Send a notification event to all connections for a specific user */
+export function broadcastNotification(userId: string, notification: unknown) {
+  const conns = userConnections.get(userId);
+  if (!conns) return;
+  const message = { type: "notification:new", data: notification };
+  for (const client of conns) {
+    send(client, message);
+  }
+}
+
 /** Send lightweight hint to all admin connections for an org (or all for SUPER_ADMIN) */
 export function broadcastToAdmins(organizationId: string | null, orderId: string, status: string) {
   const message = { type: "orders:changed", orderId, status };

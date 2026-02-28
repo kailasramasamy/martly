@@ -27,6 +27,7 @@ import {
   ThunderboltOutlined,
   CarOutlined,
   PictureOutlined,
+  NotificationOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -93,6 +94,7 @@ import { RidersList } from "./pages/riders/list";
 import { BannerList } from "./pages/banners/list";
 import { BannerCreate } from "./pages/banners/create";
 import { BannerEdit } from "./pages/banners/edit";
+import { NotificationSend } from "./pages/notifications/send";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -261,6 +263,11 @@ export default function App() {
                 meta: { label: "Reviews", icon: <CommentOutlined />, parent: "marketing" },
               },
               {
+                name: "notifications",
+                list: "/notifications",
+                meta: { label: "Send Notifications", icon: <NotificationOutlined />, parent: "marketing" },
+              },
+              {
                 name: "loyalty-settings",
                 list: "/loyalty-settings",
                 meta: { label: "Loyalty Settings", icon: <StarOutlined />, parent: "marketing" },
@@ -406,6 +413,7 @@ export default function App() {
                   <Route path="edit/:id" element={<CouponEdit />} />
                 </Route>
                 <Route path="/reviews" element={<ReviewList />} />
+                <Route path="/notifications" element={<NotificationSend />} />
                 <Route path="/loyalty-settings" element={<LoyaltySettings />} />
                 <Route path="/loyalty-customers" element={<LoyaltyCustomers />} />
                 <Route path="/delivery-zones">

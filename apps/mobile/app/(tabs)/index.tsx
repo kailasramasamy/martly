@@ -17,6 +17,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
+import { useNotifications } from "../../lib/notification-context";
 import { useCart } from "../../lib/cart-context";
 import { useWishlist } from "../../lib/wishlist-context";
 import { useAuth } from "../../lib/auth-context";
@@ -58,6 +59,7 @@ export default function HomeScreen() {
   const [storeSearch, setStoreSearch] = useState("");
   const [refreshing, setRefreshing] = useState(false);
   const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
+  const { unreadCount } = useNotifications();
 
   const fetchHomeFeed = useCallback(() => {
     if (!selectedStore) {
@@ -274,9 +276,19 @@ export default function HomeScreen() {
               </View>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.iconBtn} onPress={() => router.push("/(tabs)/profile")}>
-            <Ionicons name="person-outline" size={20} color={colors.text} />
-          </TouchableOpacity>
+          <View style={styles.headerActions}>
+            <TouchableOpacity style={styles.iconBtn} onPress={() => router.push("/notifications")}>
+              <Ionicons name="notifications-outline" size={20} color={colors.text} />
+              {unreadCount > 0 && (
+                <View style={styles.bellBadge}>
+                  <Text style={styles.bellBadgeText}>{unreadCount > 99 ? "99+" : unreadCount}</Text>
+                </View>
+              )}
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.iconBtn} onPress={() => router.push("/(tabs)/profile")}>
+              <Ionicons name="person-outline" size={20} color={colors.text} />
+            </TouchableOpacity>
+          </View>
         </View>
 
         <TouchableOpacity style={styles.searchBar} onPress={() => router.push("/search")}>
@@ -750,6 +762,11 @@ const styles = StyleSheet.create({
     color: colors.text,
     flexShrink: 1,
   },
+  headerActions: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
   iconBtn: {
     width: 40,
     height: 40,
@@ -757,6 +774,23 @@ const styles = StyleSheet.create({
     backgroundColor: "#f1f5f9",
     justifyContent: "center",
     alignItems: "center",
+  },
+  bellBadge: {
+    position: "absolute",
+    top: 4,
+    right: 4,
+    minWidth: 16,
+    height: 16,
+    borderRadius: 8,
+    backgroundColor: "#ef4444",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 3,
+  },
+  bellBadgeText: {
+    fontSize: 9,
+    fontWeight: "700",
+    color: "#fff",
   },
 
   // ── Search ──

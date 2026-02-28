@@ -6,6 +6,7 @@
     "scheme": "martly",
     "platforms": ["ios", "android"],
     "newArchEnabled": true,
+    "userInterfaceStyle": "light",
     "splash": {
       "backgroundColor": "#16a34a"
     },
@@ -19,12 +20,16 @@
           "icon": "./assets/notification-icon.png",
           "color": "#16a34a"
         }
-      ]
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/messaging"
     ],
     "android": {
+      "package": "com.martly.app",
       "googleServicesFile": "./google-services.json"
     },
     "ios": {
+      "bundleIdentifier": "com.martly.app",
       "googleServicesFile": "./GoogleService-Info.plist"
     }
   }

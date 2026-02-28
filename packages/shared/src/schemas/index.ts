@@ -705,6 +705,22 @@ export const updateBannerSchema = z.object({
 });
 export type UpdateBannerInput = z.infer<typeof updateBannerSchema>;
 
+// ── Notification ──────────────────────────────────
+export const sendNotificationSchema = z.object({
+  title: z.string().min(1).max(200),
+  body: z.string().min(1).max(1000),
+  type: z.enum(["PROMOTIONAL", "GENERAL"]).default("PROMOTIONAL"),
+  imageUrl: z.string().url().optional(),
+  storeId: z.string().uuid().optional(),
+  deepLinkType: z.enum(["product", "category", "store", "screen"]).optional(),
+  deepLinkId: z.string().max(500).optional(),
+});
+export type SendNotificationInput = z.infer<typeof sendNotificationSchema>;
+
+/** @deprecated Use sendNotificationSchema instead */
+export const sendPromotionalNotificationSchema = sendNotificationSchema;
+export type SendPromotionalNotificationInput = SendNotificationInput;
+
 export const updateDeliverySlotSchema = z.object({
   dayOfWeek: z.number().int().min(0).max(6).optional(),
   startTime: z.string().regex(/^\d{2}:\d{2}$/).optional(),

@@ -1,14 +1,32 @@
 import { useEffect, useState, useCallback } from "react";
 import { Stack, useRouter, useSegments } from "expo-router";
+import { ThemeProvider, DefaultTheme } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Appearance } from "react-native";
+
+// Force light mode globally regardless of system setting
+Appearance.setColorScheme("light");
+
+const LightTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: "#f8fafc",
+    card: "#ffffff",
+    text: "#0f172a",
+    border: "#e2e8f0",
+    primary: "#0d9488",
+  },
+};
 import * as ExpoSplashScreen from "expo-splash-screen";
 import { AuthProvider, useAuth } from "../lib/auth-context";
 import { CartProvider } from "../lib/cart-context";
 import { StoreProvider } from "../lib/store-context";
 import { WishlistProvider } from "../lib/wishlist-context";
 import { ToastProvider } from "../lib/toast-context";
+import { NotificationProvider } from "../lib/notification-context";
 import { addNotificationResponseListener } from "../lib/notifications";
+import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
 
 // Keep native splash visible until we're ready
@@ -46,8 +64,9 @@ function RootLayoutNav() {
   useEffect(() => {
     const subscription = addNotificationResponseListener((response) => {
       const data = response.notification.request.content.data;
-      if (data?.type === "ORDER_STATUS_UPDATE" && data?.orderId) {
-        router.push(`/order/${data.orderId}`);
+      if (data) {
+        const target = resolveNotificationDeepLink(data as Record<string, unknown>);
+        router.push(target);
       }
     });
     return () => subscription.remove();
@@ -63,8 +82,9 @@ function RootLayoutNav() {
   }
 
   return (
+    <ThemeProvider value={LightTheme}>
     <View style={styles.root}>
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
       <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back" }}>
         <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
@@ -78,10 +98,12 @@ function RootLayoutNav() {
         <Stack.Screen name="write-review" options={{ headerShown: true, title: "Write Review" }} />
         <Stack.Screen name="wallet" options={{ headerShown: true, title: "Martly Wallet" }} />
         <Stack.Screen name="loyalty" options={{ headerShown: true, title: "Loyalty Points" }} />
+        <Stack.Screen name="notifications" options={{ headerShown: true, title: "Notifications" }} />
         <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />
       </Stack>
       {!splashDone && <SplashScreen onFinish={handleSplashFinish} />}
     </View>
+    </ThemeProvider>
   );
 }
 
@@ -92,7 +114,9 @@ export default function RootLayout() {
         <CartProvider>
           <ToastProvider>
           <WishlistProvider>
-            <RootLayoutNav />
+            <NotificationProvider>
+              <RootLayoutNav />
+            </NotificationProvider>
           </WishlistProvider>
           </ToastProvider>
         </CartProvider>

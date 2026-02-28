@@ -142,6 +142,23 @@ enum BannerActionType {
   NONE
 }
 
+enum NotificationType {
+  ORDER_CONFIRMED
+  ORDER_PREPARING
+  ORDER_READY
+  ORDER_OUT_FOR_DELIVERY
+  ORDER_DELIVERED
+  ORDER_CANCELLED
+  WALLET_CREDITED
+  WALLET_DEBITED
+  LOYALTY_POINTS_EARNED
+  LOYALTY_POINTS_REDEEMED
+  PROMOTIONAL
+  GENERAL
+  WELCOME
+  REVIEW_REQUEST
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -217,6 +234,7 @@ model User {
   loyaltyBalances      LoyaltyBalance[]
   loyaltyTransactions  LoyaltyTransaction[]
   deliveryTrips        DeliveryTrip[]
+  notifications        Notification[]
 
   @@map("users")
 }
@@ -794,4 +812,22 @@ model Banner {
   @@index([storeId])
   @@index([categoryId])
   @@map("banners")
+}
+
+model Notification {
+  id        String           @id @default(uuid())
+  userId    String           @map("user_id")
+  type      NotificationType
+  title     String
+  body      String
+  imageUrl  String?          @map("image_url")
+  data      Json?
+  isRead    Boolean          @default(false) @map("is_read")
+  createdAt DateTime         @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, isRead, createdAt])
+  @@index([userId, createdAt])
+  @@map("notifications")
 }

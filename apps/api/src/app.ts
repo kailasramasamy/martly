@@ -33,6 +33,7 @@ import { expressDeliveryRoutes } from "./routes/express-delivery/index.js";
 import { deliveryTripRoutes } from "./routes/delivery-trips/index.js";
 import { riderRoutes } from "./routes/riders/index.js";
 import { bannerRoutes } from "./routes/banners/index.js";
+import { notificationRoutes } from "./routes/notifications/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 
 export async function buildApp() {
@@ -115,6 +116,7 @@ export async function buildApp() {
       await api.register(deliveryTripRoutes, { prefix: "/delivery-trips" });
       await api.register(riderRoutes, { prefix: "/riders" });
       await api.register(bannerRoutes, { prefix: "/banners" });
+      await api.register(notificationRoutes, { prefix: "/notifications" });
     },
     { prefix: "/api/v1" },
   );
