@@ -2,7 +2,14 @@ import { useEffect, useState, useCallback } from "react";
 import { Stack, useRouter, useSegments } from "expo-router";
 import { ThemeProvider, DefaultTheme } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
-import { View, StyleSheet, Appearance } from "react-native";
+import { View, Text, TextInput, StyleSheet, Appearance } from "react-native";
+import { useFonts } from "expo-font";
+import {
+  Inter_400Regular,
+  Inter_500Medium,
+  Inter_600SemiBold,
+  Inter_700Bold,
+} from "@expo-google-fonts/inter";
 
 // Force light mode globally regardless of system setting
 Appearance.setColorScheme("light");
@@ -85,7 +92,7 @@ function RootLayoutNav() {
     <ThemeProvider value={LightTheme}>
     <View style={styles.root}>
       <StatusBar style="dark" />
-      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back" }}>
+      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "Inter-SemiBold" } }}>
         <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
@@ -108,6 +115,23 @@ function RootLayoutNav() {
 }
 
 export default function RootLayout() {
+  const [fontsLoaded] = useFonts({
+    "Inter-Regular": Inter_400Regular,
+    "Inter-Medium": Inter_500Medium,
+    "Inter-SemiBold": Inter_600SemiBold,
+    "Inter-Bold": Inter_700Bold,
+  });
+
+  useEffect(() => {
+    if (fontsLoaded) {
+      const defaultTextStyle = { fontFamily: "Inter-Regular" };
+      (Text as any).defaultProps = (Text as any).defaultProps || {};
+      (Text as any).defaultProps.style = [defaultTextStyle, (Text as any).defaultProps.style];
+      (TextInput as any).defaultProps = (TextInput as any).defaultProps || {};
+      (TextInput as any).defaultProps.style = [defaultTextStyle, (TextInput as any).defaultProps.style];
+    }
+  }, [fontsLoaded]);
+
   return (
     <AuthProvider>
       <StoreProvider>

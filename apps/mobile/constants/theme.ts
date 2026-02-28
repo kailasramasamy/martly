@@ -28,3 +28,10 @@ export const fontSize = {
   xl: 20,
   xxl: 28,
 } as const;
+
+export const fonts = {
+  regular: "Inter-Regular",
+  medium: "Inter-Medium",
+  semibold: "Inter-SemiBold",
+  bold: "Inter-Bold",
+} as const;
