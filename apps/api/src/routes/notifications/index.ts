@@ -180,9 +180,13 @@ export async function notificationRoutes(app: FastifyInstance) {
           select: { token: true },
         });
         if (allTokens.length > 0) {
+          const fcmData = Object.keys(notifData).length > 0
+            ? Object.fromEntries(Object.entries(notifData).map(([k, v]) => [k, String(v)]))
+            : undefined;
           app.fcm.sendEachForMulticast({
             tokens: allTokens.map((t) => t.token),
             notification: { title: body.title, body: body.body },
+            data: fcmData,
           }).catch(() => {});
         }
       }
