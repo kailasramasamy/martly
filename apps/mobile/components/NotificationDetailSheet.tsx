@@ -1,20 +1,21 @@
+import { useEffect, useRef } from "react";
 import {
   View,
   Text,
   TouchableOpacity,
-  TouchableWithoutFeedback,
+  Pressable,
   ScrollView,
   StyleSheet,
   Dimensions,
   Image,
+  Animated,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Markdown from "react-native-markdown-display";
-import { spacing } from "../constants/theme";
 import type { AppNotification } from "../lib/types";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
-const SHEET_MAX = SCREEN_HEIGHT * 0.75;
+const SHEET_MAX = SCREEN_HEIGHT * 0.78;
 
 const TYPE_CONFIG: Record<
   string,
@@ -84,18 +85,60 @@ export function NotificationDetailSheet({
   onClose,
   onAction,
 }: Props) {
-  if (!visible || !notification) return null;
+  const backdropAnim = useRef(new Animated.Value(0)).current;
+  const slideAnim = useRef(new Animated.Value(SHEET_MAX)).current;
+
+  useEffect(() => {
+    if (visible) {
+      Animated.parallel([
+        Animated.timing(backdropAnim, {
+          toValue: 1,
+          duration: 250,
+          useNativeDriver: true,
+        }),
+        Animated.spring(slideAnim, {
+          toValue: 0,
+          damping: 22,
+          stiffness: 220,
+          useNativeDriver: true,
+        }),
+      ]).start();
+    } else {
+      Animated.parallel([
+        Animated.timing(backdropAnim, {
+          toValue: 0,
+          duration: 200,
+          useNativeDriver: true,
+        }),
+        Animated.timing(slideAnim, {
+          toValue: SHEET_MAX,
+          duration: 200,
+          useNativeDriver: true,
+        }),
+      ]).start();
+    }
+  }, [visible]);
+
+  if (!notification) return null;
 
   const config = TYPE_CONFIG[notification.type] ?? DEFAULT_CONFIG;
   const showAction = hasDeepLink(notification.data);
 
   return (
-    <View style={styles.overlay}>
-      <TouchableWithoutFeedback onPress={onClose}>
-        <View style={styles.backdrop} />
-      </TouchableWithoutFeedback>
-      <View style={styles.sheet}>
+    <View style={styles.overlay} pointerEvents={visible ? "auto" : "none"}>
+      <Animated.View style={[styles.backdrop, { opacity: backdropAnim }]}>
+        <Pressable style={StyleSheet.absoluteFill} onPress={onClose} />
+      </Animated.View>
+
+      <Animated.View
+        style={[styles.sheet, { transform: [{ translateY: slideAnim }] }]}
+      >
         <View style={styles.handleBar} />
+
+        {/* Colored accent stripe */}
+        <View style={[styles.accentStripe, { backgroundColor: config.color + "18" }]}>
+          <View style={[styles.accentLine, { backgroundColor: config.color }]} />
+        </View>
 
         {/* Header */}
         <View style={styles.header}>
@@ -111,7 +154,7 @@ export function NotificationDetailSheet({
             style={styles.closeBtn}
             hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
           >
-            <Ionicons name="close" size={22} color="#94a3b8" />
+            <Ionicons name="close" size={20} color="#94a3b8" />
           </TouchableOpacity>
         </View>
 
@@ -145,7 +188,7 @@ export function NotificationDetailSheet({
             <Ionicons name="arrow-forward" size={16} color="#fff" />
           </TouchableOpacity>
         )}
-      </View>
+      </Animated.View>
     </View>
   );
 }
@@ -251,11 +294,15 @@ const styles = StyleSheet.create({
   },
   sheet: {
     backgroundColor: "#fff",
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    paddingHorizontal: spacing.md,
+    borderTopLeftRadius: 22,
+    borderTopRightRadius: 22,
     paddingBottom: 32,
     maxHeight: SHEET_MAX,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: -4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 16,
+    elevation: 12,
   },
   handleBar: {
     width: 36,
@@ -264,16 +311,29 @@ const styles = StyleSheet.create({
     backgroundColor: "#e2e8f0",
     alignSelf: "center",
     marginTop: 10,
-    marginBottom: 12,
+    marginBottom: 4,
+  },
+  accentStripe: {
+    height: 3,
+    marginHorizontal: 16,
+    borderRadius: 2,
+    marginBottom: 14,
+    overflow: "hidden",
+  },
+  accentLine: {
+    height: "100%",
+    width: "100%",
+    borderRadius: 2,
   },
   header: {
     flexDirection: "row",
     alignItems: "flex-start",
+    paddingHorizontal: 16,
   },
   iconCircle: {
-    width: 42,
-    height: 42,
-    borderRadius: 12,
+    width: 44,
+    height: 44,
+    borderRadius: 13,
     justifyContent: "center",
     alignItems: "center",
     marginRight: 12,
@@ -303,15 +363,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   bannerImage: {
-    width: "100%",
+    width: "auto",
     height: 160,
     borderRadius: 12,
     marginTop: 16,
+    marginHorizontal: 16,
     backgroundColor: "#f1f5f9",
   },
   bodyScroll: {
     marginTop: 16,
     flexShrink: 1,
+    paddingHorizontal: 16,
   },
   bodyContent: {
     paddingBottom: 8,
@@ -324,6 +386,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderRadius: 12,
     marginTop: 16,
+    marginHorizontal: 16,
   },
   actionText: {
     color: "#fff",
