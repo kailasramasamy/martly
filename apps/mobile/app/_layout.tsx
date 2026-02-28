@@ -56,7 +56,7 @@ function RootLayoutNav() {
     }
   }, [isLoading]);
 
-  // Auth redirect: force login if not authenticated
+  // Auth redirect: after splash done, react to auth state changes (login/logout)
   useEffect(() => {
     if (isLoading || !splashDone) return;
 
@@ -81,6 +81,16 @@ function RootLayoutNav() {
     return () => subscription.remove();
   }, [router]);
 
+  // Called while splash is still fully opaque — navigate to correct screen
+  const handleBeforeFadeOut = useCallback(() => {
+    if (isAuthenticated) {
+      router.replace("/(tabs)");
+    } else {
+      router.replace("/(auth)/login");
+    }
+  }, [isAuthenticated, router]);
+
+  // Called after splash fade-out completes — remove the overlay
   const handleSplashFinish = useCallback(() => {
     setSplashDone(true);
   }, []);
@@ -94,8 +104,8 @@ function RootLayoutNav() {
     <>
       <StatusBar style="dark" translucent={false} backgroundColor="#ffffff" />
       <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "Inter-SemiBold" }, contentStyle: { backgroundColor: "#f8fafc" } }}>
-        <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="(auth)" />
         <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
         <Stack.Screen name="product/[id]" options={{ headerShown: true, title: "Product" }} />
         <Stack.Screen name="category/[id]" options={{ headerShown: true, title: "Category" }} />
@@ -109,7 +119,7 @@ function RootLayoutNav() {
         <Stack.Screen name="notifications" options={{ headerShown: true, title: "Notifications" }} />
         <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />
       </Stack>
-      {!splashDone && <SplashScreen onFinish={handleSplashFinish} />}
+      {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
     </>
   );
 }

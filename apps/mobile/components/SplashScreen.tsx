@@ -4,9 +4,10 @@ import { Ionicons } from "@expo/vector-icons";
 
 interface SplashScreenProps {
   onFinish: () => void;
+  onBeforeFadeOut?: () => void;
 }
 
-export default function SplashScreen({ onFinish }: SplashScreenProps) {
+export default function SplashScreen({ onFinish, onBeforeFadeOut }: SplashScreenProps) {
   const iconScale = useRef(new Animated.Value(0)).current;
   const iconOpacity = useRef(new Animated.Value(0)).current;
   const titleOpacity = useRef(new Animated.Value(0)).current;
@@ -44,14 +45,19 @@ export default function SplashScreen({ onFinish }: SplashScreenProps) {
       }),
       // Hold briefly
       Animated.delay(400),
-      // Fade out entire screen
-      Animated.timing(screenOpacity, {
-        toValue: 0,
-        duration: 300,
-        useNativeDriver: true,
-      }),
     ]).start(() => {
-      onFinish();
+      // Navigate while splash is still fully opaque
+      onBeforeFadeOut?.();
+      // Wait for navigation to settle, then fade out to reveal correct screen
+      setTimeout(() => {
+        Animated.timing(screenOpacity, {
+          toValue: 0,
+          duration: 300,
+          useNativeDriver: true,
+        }).start(() => {
+          onFinish();
+        });
+      }, 150);
     });
   }, []);
 
