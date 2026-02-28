@@ -1095,6 +1095,7 @@ const styles = StyleSheet.create({
   // ── Product Lists ──
   productList: {
     paddingHorizontal: H_PADDING,
+    paddingVertical: 4,
   },
   loadingRow: {
     flexDirection: "row",

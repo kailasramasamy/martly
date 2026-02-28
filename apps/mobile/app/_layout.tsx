@@ -12,7 +12,7 @@ import {
 } from "@expo-google-fonts/inter";
 
 // Force light mode globally regardless of system setting
-Appearance.setColorScheme("light");
+try { Appearance.setColorScheme("light"); } catch {}
 
 const LightTheme = {
   ...DefaultTheme,
@@ -89,10 +89,9 @@ function RootLayoutNav() {
   }
 
   return (
-    <ThemeProvider value={LightTheme}>
     <View style={styles.root}>
       <StatusBar style="dark" />
-      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "Inter-SemiBold" } }}>
+      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "Inter-SemiBold" }, contentStyle: { backgroundColor: "#f8fafc" } }}>
         <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
@@ -110,7 +109,6 @@ function RootLayoutNav() {
       </Stack>
       {!splashDone && <SplashScreen onFinish={handleSplashFinish} />}
     </View>
-    </ThemeProvider>
   );
 }
 
@@ -133,24 +131,27 @@ export default function RootLayout() {
   }, [fontsLoaded]);
 
   return (
-    <AuthProvider>
-      <StoreProvider>
-        <CartProvider>
-          <ToastProvider>
-          <WishlistProvider>
-            <NotificationProvider>
-              <RootLayoutNav />
-            </NotificationProvider>
-          </WishlistProvider>
-          </ToastProvider>
-        </CartProvider>
-      </StoreProvider>
-    </AuthProvider>
+    <ThemeProvider value={LightTheme}>
+      <AuthProvider>
+        <StoreProvider>
+          <CartProvider>
+            <ToastProvider>
+            <WishlistProvider>
+              <NotificationProvider>
+                <RootLayoutNav />
+              </NotificationProvider>
+            </WishlistProvider>
+            </ToastProvider>
+          </CartProvider>
+        </StoreProvider>
+      </AuthProvider>
+    </ThemeProvider>
   );
 }
 
 const styles = StyleSheet.create({
   root: {
     flex: 1,
+    backgroundColor: "#f8fafc",
   },
 });

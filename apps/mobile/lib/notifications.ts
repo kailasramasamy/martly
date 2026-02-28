@@ -1,10 +1,16 @@
 import { Platform } from "react-native";
-import * as Notifications from "expo-notifications";
+import Constants from "expo-constants";
 import * as Device from "expo-device";
 import { api } from "./api";
 
-// Set up Android notification channel with HIGH importance for heads-up popups
-if (Platform.OS === "android") {
+const isExpoGo = Constants.executionEnvironment === "storeClient";
+
+let Notifications: typeof import("expo-notifications") | null = null;
+if (!isExpoGo) {
+  Notifications = require("expo-notifications");
+}
+
+if (Notifications && Platform.OS === "android") {
   Notifications.setNotificationChannelAsync("default", {
     name: "Martly",
     importance: Notifications.AndroidImportance.MAX,
@@ -13,18 +19,19 @@ if (Platform.OS === "android") {
   });
 }
 
-// Configure foreground notification display
-Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldShowBanner: true,
-    shouldShowList: true,
-    shouldPlaySound: true,
-    shouldSetBadge: false,
-  }),
-});
+if (Notifications) {
+  Notifications.setNotificationHandler({
+    handleNotification: async () => ({
+      shouldShowBanner: true,
+      shouldShowList: true,
+      shouldPlaySound: true,
+      shouldSetBadge: false,
+    }),
+  });
+}
 
 export async function registerForPushNotifications(): Promise<string | null> {
-  if (!Device.isDevice) {
+  if (!Notifications || !Device.isDevice) {
     return null;
   }
 
@@ -44,7 +51,6 @@ export async function registerForPushNotifications(): Promise<string | null> {
     const pushToken = await Notifications.getDevicePushTokenAsync();
     const token = pushToken.data as string;
 
-    // Register token with backend
     await api.post("/api/v1/device-tokens", {
       token,
       platform: Platform.OS,
@@ -59,13 +65,14 @@ export async function registerForPushNotifications(): Promise<string | null> {
 export async function unregisterPushToken(token: string): Promise<void> {
   try {
     await api.delete("/api/v1/device-tokens", { token });
-  } catch {
-    // Silently fail — token will be cleaned up on next failed send
-  }
+  } catch {}
 }
 
 export function addNotificationResponseListener(
-  handler: (response: Notifications.NotificationResponse) => void,
+  handler: (response: any) => void,
 ) {
+  if (!Notifications) {
+    return { remove: () => {} };
+  }
   return Notifications.addNotificationResponseReceivedListener(handler);
 }
