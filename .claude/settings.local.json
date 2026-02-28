@@ -57,7 +57,13 @@
       "Bash(export:*)",
       "Bash(kill 16844:*)",
       "Bash(kill 66635:*)",
-      "Bash(adb shell:*)"
+      "Bash(adb shell:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docs.expo.dev)",
+      "WebFetch(domain:gist.github.com)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:medium.com)",
+      "Bash(sleep 2:*)"
     ]
   }
 }
