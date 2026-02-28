@@ -6,7 +6,7 @@ import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { haversine } from "../../lib/geo.js";
-import { sendOrderStatusNotification } from "../../services/notification.js";
+import { sendOrderStatusNotification, sendWalletNotification, sendLoyaltyNotification, sendNotification } from "../../services/notification.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
 import { formatVariantUnit } from "../../services/units.js";
@@ -871,6 +871,31 @@ export async function orderRoutes(app: FastifyInstance) {
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, body.status);
       broadcastOrderUpdate(app.prisma, order.id, body.status);
 
+      // Fire-and-forget: wallet refund notification on cancel
+      if (body.status === "CANCELLED") {
+        const walletUsed = Number(existing.walletAmountUsed ?? 0);
+        const isOnlinePaid = existing.paymentMethod === "ONLINE" && existing.paymentStatus === "PAID";
+        const refundAmt = isOnlinePaid ? Number(existing.totalAmount) : walletUsed;
+        if (refundAmt > 0) {
+          sendWalletNotification(app.fcm, app.prisma, existing.userId, "CREDIT", refundAmt, `Refund for order #${existing.id.slice(0, 8)}`);
+        }
+      }
+
+      // Fire-and-forget: loyalty earned + review request on delivery
+      if (body.status === "DELIVERED") {
+        const pointsEarned = (order as any).loyaltyPointsEarned;
+        if (pointsEarned && pointsEarned > 0) {
+          sendLoyaltyNotification(app.fcm, app.prisma, existing.userId, "EARN", pointsEarned);
+        }
+        sendNotification(app.fcm, app.prisma, {
+          userId: existing.userId,
+          type: "REVIEW_REQUEST",
+          title: "How was your order?",
+          body: `Rate your order #${existing.id.slice(0, 8)} and help others shop better.`,
+          data: { orderId: existing.id, screen: "write-review" },
+        });
+      }
+
       // Auto-complete delivery trip when last order is delivered
       if (body.status === "DELIVERED" && existing.deliveryTripId) {
         const remaining = await app.prisma.order.count({
@@ -1069,6 +1094,14 @@ export async function orderRoutes(app: FastifyInstance) {
 
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, "CANCELLED");
       broadcastOrderUpdate(app.prisma, order.id, "CANCELLED");
+
+      // Fire-and-forget: wallet refund notification
+      const walletUsed = Number(existing.walletAmountUsed ?? 0);
+      const isOnlinePaid = existing.paymentMethod === "ONLINE" && existing.paymentStatus === "PAID";
+      const custRefundAmt = isOnlinePaid ? Number(existing.totalAmount) : walletUsed;
+      if (custRefundAmt > 0) {
+        sendWalletNotification(app.fcm, app.prisma, existing.userId, "CREDIT", custRefundAmt, `Refund for order #${existing.id.slice(0, 8)}`);
+      }
 
       const response: ApiResponse<typeof order> = { success: true, data: order };
       return response;

@@ -17,9 +17,12 @@ export function setTokenRefresher(fn: (() => Promise<string | null>) | null) {
 
 async function request<T>(path: string, options: RequestInit = {}, isRetry = false): Promise<T> {
   const headers: Record<string, string> = {
-    "Content-Type": "application/json",
     ...((options.headers as Record<string, string>) ?? {}),
   };
+
+  if (options.body) {
+    headers["Content-Type"] = "application/json";
+  }
 
   if (accessToken) {
     headers["Authorization"] = `Bearer ${accessToken}`;
@@ -57,6 +60,8 @@ export const api = {
     request<ApiResponse<T>>(path, { method: "POST", body: JSON.stringify(body) }),
   put: <T>(path: string, body: unknown) =>
     request<ApiResponse<T>>(path, { method: "PUT", body: JSON.stringify(body) }),
+  patch: <T>(path: string, body?: unknown) =>
+    request<ApiResponse<T>>(path, { method: "PATCH", ...(body ? { body: JSON.stringify(body) } : {}) }),
   delete: <T>(path: string, body?: unknown) =>
     request<ApiResponse<T>>(path, { method: "DELETE", ...(body ? { body: JSON.stringify(body) } : {}) }),
 };

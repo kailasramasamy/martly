@@ -4,6 +4,7 @@ import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
+import { sendLoyaltyNotification } from "../../services/notification.js";
 
 export async function loyaltyRoutes(app: FastifyInstance) {
   // GET /loyalty?storeId=X — Customer: balance, config, transactions (org resolved from storeId)
@@ -287,6 +288,13 @@ export async function loyaltyRoutes(app: FastifyInstance) {
 
         return { balance, transaction };
       });
+
+      // Fire-and-forget: loyalty notification
+      sendLoyaltyNotification(
+        app.fcm, app.prisma, body.userId,
+        body.points > 0 ? "EARN" : "REDEEM",
+        Math.abs(body.points),
+      );
 
       const response: ApiResponse<typeof result> = { success: true, data: result };
       return response;

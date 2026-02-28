@@ -20,6 +20,10 @@ generated/
 .env.local
 .env.*.local
 
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
 # IDE
 .vscode/
 .idea/

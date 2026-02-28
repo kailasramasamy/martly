@@ -111,6 +111,22 @@ export const BANNER_ACTION_TYPE_CONFIG: Record<string, { color: string; label: s
   NONE: { color: "default", label: "None" },
 };
 
+export const NOTIFICATION_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
+  ORDER_CONFIRMED: { color: "blue", label: "Order Confirmed" },
+  ORDER_PREPARING: { color: "orange", label: "Preparing" },
+  ORDER_READY: { color: "geekblue", label: "Ready" },
+  ORDER_OUT_FOR_DELIVERY: { color: "purple", label: "Out for Delivery" },
+  ORDER_DELIVERED: { color: "green", label: "Delivered" },
+  ORDER_CANCELLED: { color: "red", label: "Cancelled" },
+  WALLET_CREDITED: { color: "cyan", label: "Wallet Credited" },
+  WALLET_DEBITED: { color: "cyan", label: "Wallet Debited" },
+  LOYALTY_POINTS_EARNED: { color: "gold", label: "Points Earned" },
+  LOYALTY_POINTS_REDEEMED: { color: "gold", label: "Points Redeemed" },
+  PROMOTIONAL: { color: "magenta", label: "Promotional" },
+  WELCOME: { color: "blue", label: "Welcome" },
+  REVIEW_REQUEST: { color: "orange", label: "Review Request" },
+};
+
 export const TRIP_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
   CREATED: { color: "blue", label: "Created" },
   IN_PROGRESS: { color: "orange", label: "In Progress" },

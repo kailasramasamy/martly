@@ -3,6 +3,7 @@ import bcrypt from "bcryptjs";
 import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema, sendOtpSchema, verifyOtpSchema } from "@martly/shared/schemas";
 import type { ApiResponse, AuthTokens, LoginResponse, OrgSummary } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
+import { sendNotification } from "../../services/notification.js";
 
 /** Look up distinct organizations a user belongs to via UserStore → Store → Organization */
 async function getUserOrgs(prisma: FastifyInstance["prisma"], userId: string): Promise<OrgSummary[]> {
@@ -132,6 +133,15 @@ export async function authRoutes(app: FastifyInstance) {
       },
     });
 
+    // Fire-and-forget: welcome notification
+    sendNotification(app.fcm, app.prisma, {
+      userId: user.id,
+      type: "WELCOME",
+      title: "Welcome to Martly!",
+      body: "Start exploring fresh groceries and daily essentials near you.",
+      data: { screen: "home" },
+    });
+
     const accessToken = app.jwt.sign(
       { sub: user.id, email: user.email, role: user.role },
       { expiresIn: "15m" },
@@ -189,6 +199,15 @@ export async function authRoutes(app: FastifyInstance) {
           phone,
           role: "CUSTOMER",
         },
+      });
+
+      // Fire-and-forget: welcome notification
+      sendNotification(app.fcm, app.prisma, {
+        userId: user.id,
+        type: "WELCOME",
+        title: "Welcome to Martly!",
+        body: "Start exploring fresh groceries and daily essentials near you.",
+        data: { screen: "home" },
       });
     }
 

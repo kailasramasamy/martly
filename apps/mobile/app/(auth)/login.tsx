@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { View, Text, TextInput, Pressable, StyleSheet, ActivityIndicator, KeyboardAvoidingView, Platform } from "react-native";
+import { View, Text, TextInput, Pressable, StyleSheet, ActivityIndicator, KeyboardAvoidingView, ScrollView, Platform } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../../lib/auth-context";
@@ -99,9 +99,13 @@ export default function LoginScreen() {
   return (
     <KeyboardAvoidingView
       style={styles.container}
-      behavior={Platform.OS === "ios" ? "padding" : undefined}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
-      <View style={styles.inner}>
+      <ScrollView
+        contentContainerStyle={styles.inner}
+        keyboardShouldPersistTaps="handled"
+        bounces={false}
+      >
         {/* Logo */}
         <View style={styles.logoSection}>
           <View style={styles.logoCircle}>
@@ -231,14 +235,14 @@ export default function LoginScreen() {
             <Text style={styles.devHintText}>Use OTP: 111111</Text>
           </View>
         )}
-      </View>
+      </ScrollView>
     </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
-  inner: { flex: 1, justifyContent: "center", padding: spacing.lg },
+  inner: { flexGrow: 1, justifyContent: "center", padding: spacing.lg },
 
   // Logo
   logoSection: { alignItems: "center", marginBottom: 40 },
@@ -253,8 +257,8 @@ const styles = StyleSheet.create({
 
   // Steps
   formSection: { width: "100%" },
-  stepTitle: { fontSize: 22, fontWeight: "700", color: colors.text, marginBottom: 6 },
-  stepSubtitle: { fontSize: fontSize.md, color: colors.textSecondary, marginBottom: spacing.lg, lineHeight: 20 },
+  stepTitle: { fontSize: 22, fontWeight: "700", color: colors.text, marginBottom: 6, textAlign: "center" },
+  stepSubtitle: { fontSize: fontSize.md, color: colors.textSecondary, marginBottom: spacing.lg, lineHeight: 20, textAlign: "center" },
 
   // Phone input
   phoneInputRow: { flexDirection: "row", gap: 8, marginBottom: spacing.md },
