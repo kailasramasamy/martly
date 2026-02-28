@@ -95,6 +95,12 @@ import { BannerList } from "./pages/banners/list";
 import { BannerCreate } from "./pages/banners/create";
 import { BannerEdit } from "./pages/banners/edit";
 import { NotificationSend } from "./pages/notifications/send";
+import { NotificationDashboard } from "./pages/notifications/dashboard";
+import { CampaignList } from "./pages/notifications/campaigns/list";
+import { CampaignShow } from "./pages/notifications/campaigns/show";
+import { TemplateList } from "./pages/notifications/templates/list";
+import { TemplateCreate } from "./pages/notifications/templates/create";
+import { TemplateEdit } from "./pages/notifications/templates/edit";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -264,8 +270,30 @@ export default function App() {
               },
               {
                 name: "notifications",
-                list: "/notifications",
-                meta: { label: "Send Notifications", icon: <NotificationOutlined />, parent: "marketing" },
+                meta: { label: "Notifications", icon: <NotificationOutlined />, parent: "marketing" },
+              },
+              {
+                name: "notification-dashboard",
+                list: "/notifications/dashboard",
+                meta: { label: "Dashboard", parent: "notifications" },
+              },
+              {
+                name: "notification-campaigns",
+                list: "/notifications/campaigns",
+                show: "/notifications/campaigns/show/:id",
+                meta: { label: "Campaigns", parent: "notifications" },
+              },
+              {
+                name: "notification-send",
+                list: "/notifications/send",
+                meta: { label: "Send", parent: "notifications" },
+              },
+              {
+                name: "notification-templates",
+                list: "/notifications/templates",
+                create: "/notifications/templates/create",
+                edit: "/notifications/templates/edit/:id",
+                meta: { label: "Templates", parent: "notifications" },
               },
               {
                 name: "loyalty-settings",
@@ -413,7 +441,15 @@ export default function App() {
                   <Route path="edit/:id" element={<CouponEdit />} />
                 </Route>
                 <Route path="/reviews" element={<ReviewList />} />
-                <Route path="/notifications" element={<NotificationSend />} />
+                <Route path="/notifications">
+                  <Route path="dashboard" element={<NotificationDashboard />} />
+                  <Route path="campaigns" element={<CampaignList />} />
+                  <Route path="campaigns/show/:id" element={<CampaignShow />} />
+                  <Route path="send" element={<NotificationSend />} />
+                  <Route path="templates" element={<TemplateList />} />
+                  <Route path="templates/create" element={<TemplateCreate />} />
+                  <Route path="templates/edit/:id" element={<TemplateEdit />} />
+                </Route>
                 <Route path="/loyalty-settings" element={<LoyaltySettings />} />
                 <Route path="/loyalty-customers" element={<LoyaltyCustomers />} />
                 <Route path="/delivery-zones">

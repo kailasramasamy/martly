@@ -28,6 +28,7 @@ interface SendNotificationOptions {
   body: string;
   imageUrl?: string;
   data?: Record<string, unknown>;
+  campaignId?: string;
 }
 
 /**
@@ -49,6 +50,7 @@ export async function sendNotification(
         body: options.body,
         imageUrl: options.imageUrl,
         data: options.data as any,
+        campaignId: options.campaignId,
       },
     });
 
@@ -180,4 +182,86 @@ export async function sendLoyaltyNotification(
     body,
     data: { screen: "loyalty" },
   });
+}
+
+const DB_BATCH_SIZE = 100;
+const FCM_BATCH_SIZE = 500;
+
+/**
+ * Send campaign notifications to a list of user IDs.
+ * Processes in batches to avoid overwhelming DB connection pool and FCM limits.
+ */
+export async function sendCampaignNotifications(
+  fcm: Messaging | null,
+  prisma: PrismaClient,
+  campaignId: string,
+  userIds: string[],
+  options: {
+    type: NotificationType;
+    title: string;
+    body: string;
+    imageUrl?: string;
+    data?: Record<string, unknown>;
+  },
+) {
+  if (userIds.length === 0) return;
+
+  // 1. Create DB notifications in batches
+  const allNotifications = [];
+  for (let i = 0; i < userIds.length; i += DB_BATCH_SIZE) {
+    const batch = userIds.slice(i, i + DB_BATCH_SIZE);
+    const notifications = await Promise.all(
+      batch.map((userId) =>
+        prisma.notification.create({
+          data: {
+            userId,
+            type: options.type,
+            title: options.title,
+            body: options.body,
+            imageUrl: options.imageUrl,
+            data: options.data as any,
+            campaignId,
+          },
+        }),
+      ),
+    );
+    allNotifications.push(...notifications);
+  }
+
+  // 2. Broadcast via WebSocket (non-blocking, in-memory)
+  for (const notification of allNotifications) {
+    broadcastNotification(notification.userId, {
+      id: notification.id,
+      type: notification.type,
+      title: notification.title,
+      body: notification.body,
+      imageUrl: notification.imageUrl,
+      data: notification.data,
+      isRead: false,
+      createdAt: notification.createdAt.toISOString(),
+    });
+  }
+
+  // 3. Send FCM push in batches of 500 (FCM multicast limit)
+  if (fcm) {
+    const allTokens = await prisma.deviceToken.findMany({
+      where: { userId: { in: userIds } },
+      select: { token: true },
+    });
+
+    if (allTokens.length > 0) {
+      const fcmData = options.data
+        ? Object.fromEntries(Object.entries(options.data).map(([k, v]) => [k, String(v)]))
+        : undefined;
+
+      for (let i = 0; i < allTokens.length; i += FCM_BATCH_SIZE) {
+        const tokenBatch = allTokens.slice(i, i + FCM_BATCH_SIZE);
+        fcm.sendEachForMulticast({
+          tokens: tokenBatch.map((t) => t.token),
+          notification: { title: options.title, body: options.body },
+          data: fcmData,
+        }).catch(() => {});
+      }
+    }
+  }
 }

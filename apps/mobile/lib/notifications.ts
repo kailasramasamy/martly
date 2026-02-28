@@ -76,3 +76,12 @@ export function addNotificationResponseListener(
   }
   return Notifications.addNotificationResponseReceivedListener(handler);
 }
+
+export async function getLastNotificationResponse(): Promise<any | null> {
+  if (!Notifications) return null;
+  try {
+    return await Notifications.getLastNotificationResponseAsync();
+  } catch {
+    return null;
+  }
+}

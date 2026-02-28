@@ -133,3 +133,19 @@ export const TRIP_STATUS_CONFIG: Record<string, { color: string; label: string }
   COMPLETED: { color: "green", label: "Completed" },
   CANCELLED: { color: "red", label: "Cancelled" },
 };
+
+export const CAMPAIGN_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  DRAFT: { color: "default", label: "Draft" },
+  SCHEDULED: { color: "blue", label: "Scheduled" },
+  SENDING: { color: "orange", label: "Sending" },
+  SENT: { color: "green", label: "Sent" },
+  FAILED: { color: "red", label: "Failed" },
+};
+
+export const AUDIENCE_TYPE_CONFIG: Record<string, { color: string; label: string }> = {
+  ALL_CUSTOMERS: { color: "blue", label: "All Customers" },
+  STORE_CUSTOMERS: { color: "cyan", label: "Store Customers" },
+  ORDERED_LAST_N_DAYS: { color: "green", label: "Recent Buyers" },
+  NOT_ORDERED_N_DAYS: { color: "orange", label: "Inactive" },
+  HIGH_VALUE_CUSTOMERS: { color: "gold", label: "High Value" },
+};

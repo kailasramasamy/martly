@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { Stack, useRouter, useSegments } from "expo-router";
 import { ThemeProvider, DefaultTheme } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
@@ -27,13 +27,14 @@ const LightTheme = {
   },
 };
 import * as ExpoSplashScreen from "expo-splash-screen";
+import * as SecureStore from "expo-secure-store";
 import { AuthProvider, useAuth } from "../lib/auth-context";
 import { CartProvider } from "../lib/cart-context";
 import { StoreProvider } from "../lib/store-context";
 import { WishlistProvider } from "../lib/wishlist-context";
 import { ToastProvider } from "../lib/toast-context";
 import { NotificationProvider } from "../lib/notification-context";
-import { addNotificationResponseListener } from "../lib/notifications";
+import { addNotificationResponseListener, getLastNotificationResponse } from "../lib/notifications";
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
 
@@ -47,12 +48,35 @@ function RootLayoutNav() {
   const insets = useSafeAreaInsets();
   const [appReady, setAppReady] = useState(false);
   const [splashDone, setSplashDone] = useState(false);
+  // Stores a pending deep link from a notification tap that arrived before splash finished
+  const pendingDeepLink = useRef<string | null>(null);
 
-  // When auth resolves, hide native splash and show animated splash
+  // On cold start, check if app was launched by tapping a notification
+  useEffect(() => {
+    getLastNotificationResponse().then((response) => {
+      if (response) {
+        const data = response.notification.request.content.data;
+        if (data) {
+          pendingDeepLink.current = resolveNotificationDeepLink(data as Record<string, unknown>);
+        }
+      }
+    });
+  }, []);
+
+  // When auth resolves, check if animated splash should be skipped (recent reload)
   useEffect(() => {
     if (!isLoading) {
-      setAppReady(true);
-      ExpoSplashScreen.hideAsync();
+      SecureStore.getItemAsync("splash_ts").then((ts) => {
+        if (ts && Date.now() - Number(ts) < 5 * 60 * 1000) {
+          // Splash played within 5 min — skip animated splash (notification-triggered reload)
+          setSplashDone(true);
+        }
+        setAppReady(true);
+        ExpoSplashScreen.hideAsync();
+      }).catch(() => {
+        setAppReady(true);
+        ExpoSplashScreen.hideAsync();
+      });
     }
   }, [isLoading]);
 
@@ -69,17 +93,22 @@ function RootLayoutNav() {
     }
   }, [isAuthenticated, isLoading, segments, splashDone]);
 
-  // Deep link handler for push notifications
+  // Deep link handler for push notifications while app is running
   useEffect(() => {
     const subscription = addNotificationResponseListener((response) => {
       const data = response.notification.request.content.data;
       if (data) {
         const target = resolveNotificationDeepLink(data as Record<string, unknown>);
-        router.push(target);
+        if (splashDone) {
+          router.push(target);
+        } else {
+          // Splash still showing — queue for after splash finishes
+          pendingDeepLink.current = target;
+        }
       }
     });
     return () => subscription.remove();
-  }, [router]);
+  }, [router, splashDone]);
 
   // Called while splash is still fully opaque — navigate to correct screen
   const handleBeforeFadeOut = useCallback(() => {
@@ -90,10 +119,18 @@ function RootLayoutNav() {
     }
   }, [isAuthenticated, router]);
 
-  // Called after splash fade-out completes — remove the overlay
+  // Called after splash fade-out completes — remove the overlay and navigate to deep link
   const handleSplashFinish = useCallback(() => {
     setSplashDone(true);
-  }, []);
+    SecureStore.setItemAsync("splash_ts", String(Date.now())).catch(() => {});
+    // If a notification tap was queued during splash, navigate now
+    if (pendingDeepLink.current && isAuthenticated) {
+      const target = pendingDeepLink.current;
+      pendingDeepLink.current = null;
+      // Small delay to let the root screen settle before pushing
+      setTimeout(() => router.push(target), 100);
+    }
+  }, [isAuthenticated, router]);
 
   // While auth is loading, show nothing (native splash is still visible)
   if (!appReady) {

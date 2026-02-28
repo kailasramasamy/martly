@@ -278,3 +278,37 @@ export const NotificationTypeLabels: Record<NotificationType, string> = {
   WELCOME: "Welcome",
   REVIEW_REQUEST: "Review Request",
 };
+
+export const CampaignStatus = {
+  DRAFT: "DRAFT",
+  SCHEDULED: "SCHEDULED",
+  SENDING: "SENDING",
+  SENT: "SENT",
+  FAILED: "FAILED",
+} as const;
+export type CampaignStatus = (typeof CampaignStatus)[keyof typeof CampaignStatus];
+
+export const CampaignStatusLabels: Record<CampaignStatus, string> = {
+  DRAFT: "Draft",
+  SCHEDULED: "Scheduled",
+  SENDING: "Sending",
+  SENT: "Sent",
+  FAILED: "Failed",
+};
+
+export const AudienceType = {
+  ALL_CUSTOMERS: "ALL_CUSTOMERS",
+  STORE_CUSTOMERS: "STORE_CUSTOMERS",
+  ORDERED_LAST_N_DAYS: "ORDERED_LAST_N_DAYS",
+  NOT_ORDERED_N_DAYS: "NOT_ORDERED_N_DAYS",
+  HIGH_VALUE_CUSTOMERS: "HIGH_VALUE_CUSTOMERS",
+} as const;
+export type AudienceType = (typeof AudienceType)[keyof typeof AudienceType];
+
+export const AudienceTypeLabels: Record<AudienceType, string> = {
+  ALL_CUSTOMERS: "All Customers",
+  STORE_CUSTOMERS: "Store Customers",
+  ORDERED_LAST_N_DAYS: "Ordered Recently",
+  NOT_ORDERED_N_DAYS: "Inactive Customers",
+  HIGH_VALUE_CUSTOMERS: "High Value",
+};

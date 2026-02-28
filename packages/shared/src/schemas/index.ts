@@ -730,3 +730,49 @@ export const updateDeliverySlotSchema = z.object({
   isActive: z.boolean().optional(),
 });
 export type UpdateDeliverySlotInput = z.infer<typeof updateDeliverySlotSchema>;
+
+// ── Notification Campaign ───────────────────────────
+export const audienceConfigSchema = z.object({
+  storeId: z.string().uuid().optional(),
+  days: z.number().int().positive().optional(),
+  minAmount: z.number().positive().optional(),
+});
+export type AudienceConfig = z.infer<typeof audienceConfigSchema>;
+
+export const sendCampaignSchema = z.object({
+  title: z.string().min(1).max(200),
+  body: z.string().min(1).max(2000),
+  type: z.enum(["PROMOTIONAL", "GENERAL"]).default("PROMOTIONAL"),
+  imageUrl: z.string().url().optional(),
+  audienceType: z.enum(["ALL_CUSTOMERS", "STORE_CUSTOMERS", "ORDERED_LAST_N_DAYS", "NOT_ORDERED_N_DAYS", "HIGH_VALUE_CUSTOMERS"]).default("ALL_CUSTOMERS"),
+  audienceConfig: audienceConfigSchema.optional(),
+  deepLinkType: z.enum(["product", "category", "store", "screen"]).optional(),
+  deepLinkId: z.string().max(500).optional(),
+  scheduledAt: z.coerce.date().optional(),
+});
+export type SendCampaignInput = z.infer<typeof sendCampaignSchema>;
+
+export const audiencePreviewSchema = z.object({
+  audienceType: z.enum(["ALL_CUSTOMERS", "STORE_CUSTOMERS", "ORDERED_LAST_N_DAYS", "NOT_ORDERED_N_DAYS", "HIGH_VALUE_CUSTOMERS"]),
+  audienceConfig: audienceConfigSchema.optional(),
+});
+export type AudiencePreviewInput = z.infer<typeof audiencePreviewSchema>;
+
+// ── Notification Template ───────────────────────────
+export const createNotificationTemplateSchema = z.object({
+  name: z.string().min(1).max(200),
+  title: z.string().min(1).max(200),
+  body: z.string().min(1).max(2000),
+  type: z.enum(["PROMOTIONAL", "GENERAL"]).default("PROMOTIONAL"),
+  imageUrl: z.string().url().optional(),
+});
+export type CreateNotificationTemplateInput = z.infer<typeof createNotificationTemplateSchema>;
+
+export const updateNotificationTemplateSchema = z.object({
+  name: z.string().min(1).max(200).optional(),
+  title: z.string().min(1).max(200).optional(),
+  body: z.string().min(1).max(2000).optional(),
+  type: z.enum(["PROMOTIONAL", "GENERAL"]).optional(),
+  imageUrl: z.string().url().nullish(),
+});
+export type UpdateNotificationTemplateInput = z.infer<typeof updateNotificationTemplateSchema>;

@@ -159,6 +159,22 @@ enum NotificationType {
   REVIEW_REQUEST
 }
 
+enum CampaignStatus {
+  DRAFT
+  SCHEDULED
+  SENDING
+  SENT
+  FAILED
+}
+
+enum AudienceType {
+  ALL_CUSTOMERS
+  STORE_CUSTOMERS
+  ORDERED_LAST_N_DAYS
+  NOT_ORDERED_N_DAYS
+  HIGH_VALUE_CUSTOMERS
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -178,6 +194,8 @@ model Organization {
   loyaltyTransactions LoyaltyTransaction[]
   deliveryTrips       DeliveryTrip[]
   banners             Banner[]
+  notificationCampaigns NotificationCampaign[]
+  notificationTemplates NotificationTemplate[]
 
   @@map("organizations")
 }
@@ -235,6 +253,8 @@ model User {
   loyaltyTransactions  LoyaltyTransaction[]
   deliveryTrips        DeliveryTrip[]
   notifications        Notification[]
+  campaignsSent        NotificationCampaign[] @relation("CampaignsSent")
+  templatesCreated     NotificationTemplate[] @relation("TemplatesCreated")
 
   @@map("users")
 }
@@ -814,20 +834,69 @@ model Banner {
   @@map("banners")
 }
 
-model Notification {
-  id        String           @id @default(uuid())
-  userId    String           @map("user_id")
-  type      NotificationType
-  title     String
-  body      String
-  imageUrl  String?          @map("image_url")
-  data      Json?
-  isRead    Boolean          @default(false) @map("is_read")
-  createdAt DateTime         @default(now()) @map("created_at")
+model NotificationCampaign {
+  id              String           @id @default(uuid())
+  organizationId  String           @map("organization_id")
+  title           String
+  body            String
+  type            NotificationType
+  imageUrl        String?          @map("image_url")
+  data            Json?
+  audienceType    AudienceType     @default(ALL_CUSTOMERS) @map("audience_type")
+  audienceConfig  Json?            @map("audience_config")
+  status          CampaignStatus   @default(SENT)
+  recipientCount  Int              @default(0) @map("recipient_count")
+  scheduledAt     DateTime?        @map("scheduled_at")
+  sentAt          DateTime?        @map("sent_at")
+  sentBy          String           @map("sent_by")
+  createdAt       DateTime         @default(now()) @map("created_at")
+  updatedAt       DateTime         @updatedAt @map("updated_at")
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization  Organization   @relation(fields: [organizationId], references: [id])
+  sentByUser    User           @relation("CampaignsSent", fields: [sentBy], references: [id])
+  notifications Notification[]
+
+  @@index([organizationId, createdAt])
+  @@index([status, scheduledAt])
+  @@map("notification_campaigns")
+}
+
+model NotificationTemplate {
+  id              String           @id @default(uuid())
+  organizationId  String           @map("organization_id")
+  name            String
+  title           String
+  body            String
+  type            NotificationType @default(PROMOTIONAL)
+  imageUrl        String?          @map("image_url")
+  createdBy       String           @map("created_by")
+  createdAt       DateTime         @default(now()) @map("created_at")
+  updatedAt       DateTime         @updatedAt @map("updated_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id])
+  creator      User         @relation("TemplatesCreated", fields: [createdBy], references: [id])
+
+  @@index([organizationId])
+  @@map("notification_templates")
+}
+
+model Notification {
+  id         String           @id @default(uuid())
+  userId     String           @map("user_id")
+  type       NotificationType
+  title      String
+  body       String
+  imageUrl   String?          @map("image_url")
+  data       Json?
+  isRead     Boolean          @default(false) @map("is_read")
+  campaignId String?          @map("campaign_id")
+  createdAt  DateTime         @default(now()) @map("created_at")
+
+  user     User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  campaign NotificationCampaign? @relation(fields: [campaignId], references: [id], onDelete: SetNull)
 
   @@index([userId, isRead, createdAt])
   @@index([userId, createdAt])
+  @@index([campaignId])
   @@map("notifications")
 }

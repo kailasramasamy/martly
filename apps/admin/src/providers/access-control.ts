@@ -126,9 +126,9 @@ export const accessControlProvider: AccessControlProvider = {
     }
 
     // Notifications: ORG_ADMIN full access
-    if (resource === "notifications") {
+    if (resource === "notifications" || resource === "notification-dashboard" || resource === "notification-campaigns" || resource === "notification-send" || resource === "notification-templates") {
       if (role === "ORG_ADMIN") return { can: true };
-      return { can: false, reason: "Only Super Admin or Org Admin can send notifications" };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage notifications" };
     }
 
     // Loyalty: ORG_ADMIN full access

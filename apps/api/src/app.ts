@@ -35,6 +35,7 @@ import { riderRoutes } from "./routes/riders/index.js";
 import { bannerRoutes } from "./routes/banners/index.js";
 import { notificationRoutes } from "./routes/notifications/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
+import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -59,6 +60,7 @@ export async function buildApp() {
   await app.register(prismaPlugin);
   await app.register(firebasePlugin);
   await app.register(websocketPlugin);
+  await app.register(notificationSchedulerPlugin);
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {
