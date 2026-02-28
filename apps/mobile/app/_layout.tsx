@@ -3,6 +3,7 @@ import { Stack, useRouter, useSegments } from "expo-router";
 import { ThemeProvider, DefaultTheme } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import { View, Text, TextInput, StyleSheet, Appearance } from "react-native";
+import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
 import {
   Inter_400Regular,
@@ -43,6 +44,7 @@ function RootLayoutNav() {
   const router = useRouter();
   const segments = useSegments();
   const { isAuthenticated, isLoading } = useAuth();
+  const insets = useSafeAreaInsets();
   const [appReady, setAppReady] = useState(false);
   const [splashDone, setSplashDone] = useState(false);
 
@@ -89,8 +91,8 @@ function RootLayoutNav() {
   }
 
   return (
-    <View style={styles.root}>
-      <StatusBar style="dark" />
+    <>
+      <StatusBar style="dark" translucent={false} backgroundColor="#ffffff" />
       <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "Inter-SemiBold" }, contentStyle: { backgroundColor: "#f8fafc" } }}>
         <Stack.Screen name="(auth)" />
         <Stack.Screen name="(tabs)" />
@@ -108,7 +110,7 @@ function RootLayoutNav() {
         <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />
       </Stack>
       {!splashDone && <SplashScreen onFinish={handleSplashFinish} />}
-    </View>
+    </>
   );
 }
 
@@ -131,21 +133,23 @@ export default function RootLayout() {
   }, [fontsLoaded]);
 
   return (
-    <ThemeProvider value={LightTheme}>
-      <AuthProvider>
-        <StoreProvider>
-          <CartProvider>
-            <ToastProvider>
-            <WishlistProvider>
-              <NotificationProvider>
-                <RootLayoutNav />
-              </NotificationProvider>
-            </WishlistProvider>
-            </ToastProvider>
-          </CartProvider>
-        </StoreProvider>
-      </AuthProvider>
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider value={LightTheme}>
+        <AuthProvider>
+          <StoreProvider>
+            <CartProvider>
+              <ToastProvider>
+              <WishlistProvider>
+                <NotificationProvider>
+                  <RootLayoutNav />
+                </NotificationProvider>
+              </WishlistProvider>
+              </ToastProvider>
+            </CartProvider>
+          </StoreProvider>
+        </AuthProvider>
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }
 
