@@ -57,6 +57,8 @@ export function resolveNotificationDeepLink(
         return "/(tabs)/profile" as Href;
       case "categories":
         return "/(tabs)/categories" as Href;
+      case "smart-reorder":
+        return "/smart-reorder" as Href;
     }
   }
 

@@ -40,8 +40,10 @@ import { referralRoutes } from "./routes/referrals/index.js";
 import { placesRoutes } from "./routes/places/index.js";
 import { aiRoutes } from "./routes/ai/index.js";
 import { supportRoutes } from "./routes/support/index.js";
+import { smartReorderRoutes } from "./routes/smart-reorder/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
+import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -67,6 +69,7 @@ export async function buildApp() {
   await app.register(firebasePlugin);
   await app.register(websocketPlugin);
   await app.register(notificationSchedulerPlugin);
+  await app.register(reorderNudgeSchedulerPlugin);
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {
@@ -131,6 +134,7 @@ export async function buildApp() {
       await api.register(placesRoutes, { prefix: "/places" });
       await api.register(aiRoutes, { prefix: "/ai" });
       await api.register(supportRoutes, { prefix: "/support" });
+      await api.register(smartReorderRoutes, { prefix: "/smart-reorder" });
     },
     { prefix: "/api/v1" },
   );

@@ -266,6 +266,14 @@ export default function ProfileScreen() {
             <Text style={styles.menuItemText}>My Tickets</Text>
             <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
           </TouchableOpacity>
+          <View style={{ height: 8 }} />
+          <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/smart-reorder")}>
+            <View style={[styles.menuIconWrap, { backgroundColor: "#f0fdf4" }]}>
+              <Ionicons name="refresh-circle-outline" size={18} color={colors.primary} />
+            </View>
+            <Text style={styles.menuItemText}>Smart Reorder</Text>
+            <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
+          </TouchableOpacity>
         </View>
 
         {/* Saved Addresses */}

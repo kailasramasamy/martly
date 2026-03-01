@@ -722,6 +722,7 @@ function SpeedDialFAB() {
 
   const mini1Translate = anim.interpolate({ inputRange: [0, 1], outputRange: [0, -72] });
   const mini2Translate = anim.interpolate({ inputRange: [0, 1], outputRange: [0, -136] });
+  const mini3Translate = anim.interpolate({ inputRange: [0, 1], outputRange: [0, -200] });
   const rotate = anim.interpolate({ inputRange: [0, 1], outputRange: ["0deg", "45deg"] });
   const overlayOpacity = anim.interpolate({ inputRange: [0, 1], outputRange: [0, 1] });
 
@@ -733,6 +734,28 @@ function SpeedDialFAB() {
           <Pressable style={StyleSheet.absoluteFill} onPress={toggle} />
         </Animated.View>
       )}
+
+      {/* Mini FAB: Smart Reorder */}
+      <Animated.View
+        style={[
+          styles.miniFabWrap,
+          { transform: [{ translateY: mini3Translate }], opacity: anim },
+        ]}
+        pointerEvents={open ? "auto" : "none"}
+      >
+        <TouchableOpacity
+          style={styles.miniFabLabelWrap}
+          onPress={() => { toggle(); router.push("/smart-reorder"); }}
+          activeOpacity={0.7}
+        >
+          <View style={styles.miniFabLabel}>
+            <Text style={styles.miniFabLabelText}>Smart Reorder</Text>
+          </View>
+          <View style={styles.miniFab}>
+            <Ionicons name="refresh-circle" size={20} color="#fff" />
+          </View>
+        </TouchableOpacity>
+      </Animated.View>
 
       {/* Mini FAB: Help & Support */}
       <Animated.View
