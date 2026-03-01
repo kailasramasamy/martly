@@ -267,7 +267,7 @@ export default function HomeScreen() {
               <Ionicons name="location-sharp" size={18} color={colors.primary} />
             </View>
             <View style={styles.storeInfo}>
-              <Text style={styles.deliverLabel}>DELIVER TO</Text>
+              <Text style={styles.deliverLabel}>YOUR STORE</Text>
               <View style={styles.storeNameRow}>
                 <Text style={styles.storeName} numberOfLines={1}>
                   {selectedStore ? selectedStore.name : "Select a store"}
