@@ -74,6 +74,15 @@ const tools: Anthropic.Tool[] = [
       required: ["productId"],
     },
   },
+  {
+    name: "get_deals",
+    description:
+      "Get products currently on sale/discount in the store. Use when customer asks for deals, offers, discounts, or today's specials.",
+    input_schema: {
+      type: "object" as const,
+      properties: {},
+    },
+  },
 ];
 
 // ── Tool Executors ──────────────────────────────────
@@ -201,6 +210,56 @@ async function executeGetProductDetails(
   };
 }
 
+async function executeGetDeals(
+  prisma: FastifyInstance["prisma"],
+  storeId: string,
+) {
+  const now = new Date();
+  const storeProducts = await prisma.storeProduct.findMany({
+    where: {
+      storeId,
+      isActive: true,
+      stock: { gt: 0 },
+      product: { isActive: true },
+      discountType: { not: null },
+      discountValue: { gt: 0 },
+      OR: [
+        { discountEnd: null },
+        { discountEnd: { gte: now } },
+      ],
+    },
+    take: 10,
+    include: {
+      product: { include: { category: true, brand: true } },
+      variant: true,
+    },
+    orderBy: { discountValue: "desc" },
+  });
+
+  return storeProducts.map((sp) => {
+    const pricing = calculateEffectivePrice(
+      sp.price as unknown as number,
+      sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+      sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
+    );
+    const variant = formatVariantUnit(sp.variant);
+    return {
+      storeProductId: sp.id,
+      productId: sp.productId,
+      name: sp.product.name,
+      brand: sp.product.brand?.name ?? null,
+      category: sp.product.category?.name ?? null,
+      variant: variant.name,
+      unitType: variant.unitType,
+      unitValue: (variant as Record<string, unknown>).unitValue as string,
+      price: pricing.effectivePrice,
+      originalPrice: pricing.discountActive ? pricing.originalPrice : null,
+      inStock: sp.stock - sp.reservedStock > 0,
+      imageUrl: sp.product.imageUrl ?? variant.imageUrl,
+    };
+  });
+}
+
 // ── System Prompt Builder ───────────────────────────
 function buildSystemPrompt(
   storeName: string,
@@ -222,6 +281,7 @@ RULES:
 6. If search returns no results, suggest alternatives.
 7. Use get_categories when customer wants to browse categories.
 8. Use get_product_details for variant options of a specific product.
+9. Use get_deals when customer asks for deals, offers, discounts, or today's specials.
 ${cartSummary}
 
 CRITICAL: Your entire response must be a single valid JSON object. No text before or after. No markdown code fences. Just raw JSON:
@@ -327,6 +387,9 @@ export async function aiRoutes(app: FastifyInstance) {
                 storeId,
                 toolUse.input as { productId: string },
               );
+              break;
+            case "get_deals":
+              result = await executeGetDeals(app.prisma, storeId);
               break;
             default:
               result = { error: "Unknown tool" };

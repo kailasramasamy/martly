@@ -21,6 +21,11 @@
           "color": "#16a34a"
         }
       ],
+      ["expo-speech-recognition", {
+        "microphonePermission": "Allow Martly to use the microphone for voice ordering.",
+        "speechRecognitionPermission": "Allow Martly to use speech recognition for voice ordering.",
+        "androidSpeechServicePackages": ["com.google.android.googlequicksearchbox"]
+      }],
       "@react-native-firebase/app",
       "@react-native-firebase/messaging"
     ],

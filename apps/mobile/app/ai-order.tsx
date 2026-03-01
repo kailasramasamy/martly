@@ -18,10 +18,22 @@ import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { useCart } from "../lib/cart-context";
+import { useToast } from "../lib/toast-context";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 import { colors, fonts } from "../constants/theme";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
+
+// ── Optional native speech recognition (requires custom dev client) ──
+let ExpoSpeechRecognitionModule: any = null;
+let useSpeechRecognitionEvent: any = (_event: string, _cb: Function) => {};
+try {
+  const mod = require("expo-speech-recognition");
+  ExpoSpeechRecognitionModule = mod.ExpoSpeechRecognitionModule;
+  useSpeechRecognitionEvent = mod.useSpeechRecognitionEvent;
+} catch {
+  // Not available in Expo Go — voice input will be hidden
+}
 
 // ── Types ───────────────────────────────────────────
 interface AIProduct {
@@ -158,12 +170,78 @@ export default function AIOrderScreen() {
     itemCount,
   } = useCart();
 
+  const { show: showToast } = useToast();
+
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
   const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
   const listRef = useRef<FlatList>(null);
   const lastUserMessageRef = useRef<string>("");
+
+  // ── Voice input state ──
+  const [isListening, setIsListening] = useState(false);
+  const [partialTranscript, setPartialTranscript] = useState("");
+  const micPulseAnim = useRef(new Animated.Value(1)).current;
+
+  // ── Speech recognition event hooks ──
+  useSpeechRecognitionEvent("start", () => {
+    setIsListening(true);
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(micPulseAnim, { toValue: 1.15, duration: 600, useNativeDriver: true }),
+        Animated.timing(micPulseAnim, { toValue: 1, duration: 600, useNativeDriver: true }),
+      ]),
+    ).start();
+  });
+
+  useSpeechRecognitionEvent("end", () => {
+    setIsListening(false);
+    setPartialTranscript("");
+    micPulseAnim.stopAnimation();
+    micPulseAnim.setValue(1);
+  });
+
+  useSpeechRecognitionEvent("result", (event) => {
+    const transcript = event.results[0]?.transcript ?? "";
+    if (event.isFinal) {
+      setPartialTranscript("");
+      if (transcript.trim()) {
+        sendMessage(transcript.trim());
+      }
+    } else {
+      setPartialTranscript(transcript);
+    }
+  });
+
+  useSpeechRecognitionEvent("error", (event) => {
+    setIsListening(false);
+    setPartialTranscript("");
+    micPulseAnim.stopAnimation();
+    micPulseAnim.setValue(1);
+    if (event.error === "not-allowed") {
+      showToast("Microphone permission denied", "error");
+    }
+  });
+
+  const startListening = useCallback(async () => {
+    const result = await ExpoSpeechRecognitionModule.requestPermissionsAsync();
+    if (!result.granted) {
+      showToast("Microphone permission denied", "error");
+      return;
+    }
+    setInput("");
+    ExpoSpeechRecognitionModule.start({
+      lang: "en-US",
+      interimResults: true,
+      continuous: false,
+      addsPunctuation: true,
+    });
+  }, [showToast]);
+
+  const stopListening = useCallback(() => {
+    ExpoSpeechRecognitionModule.stop();
+  }, []);
 
   // Cart quantity lookup by storeProductId
   const cartQtyMap = useMemo(() => {
@@ -356,7 +434,7 @@ export default function AIOrderScreen() {
               <FlatList
                 horizontal
                 data={item.products}
-                keyExtractor={(p) => p.storeProductId}
+                keyExtractor={(p, i) => `${p.storeProductId}-${i}`}
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={s.productList}
                 renderItem={({ item: product }) => (
@@ -480,23 +558,52 @@ export default function AIOrderScreen() {
           <View style={s.inputRow}>
             <TextInput
               style={s.textInput}
-              placeholder="Ask me anything..."
+              placeholder={isListening ? "Listening..." : "Ask me anything..."}
               placeholderTextColor="#94a3b8"
-              value={input}
+              value={isListening ? partialTranscript : input}
               onChangeText={setInput}
-              editable={!sending}
+              editable={!sending && !isListening}
               multiline
               maxLength={500}
               returnKeyType="default"
             />
-            <TouchableOpacity
-              style={[s.sendBtn, (!input.trim() || sending) && s.sendBtnDisabled]}
-              onPress={() => sendMessage(input)}
-              disabled={!input.trim() || sending}
-              activeOpacity={0.7}
-            >
-              <Ionicons name="arrow-up" size={20} color="#fff" />
-            </TouchableOpacity>
+            {isListening ? (
+              <Animated.View style={{ transform: [{ scale: micPulseAnim }] }}>
+                <TouchableOpacity
+                  style={s.micBtnListening}
+                  onPress={stopListening}
+                  activeOpacity={0.7}
+                >
+                  <Ionicons name="stop" size={20} color="#fff" />
+                </TouchableOpacity>
+              </Animated.View>
+            ) : input.trim() ? (
+              <TouchableOpacity
+                style={[s.sendBtn, sending && s.sendBtnDisabled]}
+                onPress={() => sendMessage(input)}
+                disabled={sending}
+                activeOpacity={0.7}
+              >
+                <Ionicons name="arrow-up" size={20} color="#fff" />
+              </TouchableOpacity>
+            ) : ExpoSpeechRecognitionModule ? (
+              <TouchableOpacity
+                style={[s.micBtn, sending && s.sendBtnDisabled]}
+                onPress={startListening}
+                disabled={sending}
+                activeOpacity={0.7}
+              >
+                <Ionicons name="mic" size={20} color="#fff" />
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity
+                style={[s.sendBtn, s.sendBtnDisabled]}
+                disabled
+                activeOpacity={0.7}
+              >
+                <Ionicons name="arrow-up" size={20} color="#fff" />
+              </TouchableOpacity>
+            )}
           </View>
         </View>
       </KeyboardAvoidingView>
@@ -933,6 +1040,22 @@ const s = StyleSheet.create({
   },
   sendBtnDisabled: {
     backgroundColor: "#cbd5e1",
+  },
+  micBtn: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    backgroundColor: colors.primary,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  micBtnListening: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    backgroundColor: "#ef4444",
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   // ── Empty State ──
