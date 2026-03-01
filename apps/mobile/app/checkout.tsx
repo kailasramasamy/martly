@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { useFocusEffect } from "expo-router";
 import {
   View,
   Text,
@@ -94,7 +95,9 @@ export default function CheckoutScreen() {
   const deliveryLookup = selectedAddressId ? (addressLookups[selectedAddressId] ?? null) : null;
   const isPickup = fulfillmentType === "PICKUP";
   const isNotServiceable = deliveryLookup !== null && !deliveryLookup.serviceable;
-  const deliveryDisabled = isNotServiceable;
+  // Only disable delivery if NO address is serviceable
+  const hasAnyServiceableAddress = addresses.some((a) => addressLookups[a.id]?.serviceable);
+  const deliveryDisabled = Object.keys(addressLookups).length > 0 && !hasAnyServiceableAddress;
 
   const fetchAddresses = useCallback(async (selectNewest = false) => {
     setLoadingAddresses(true);
@@ -120,9 +123,11 @@ export default function CheckoutScreen() {
     }
   }, []);
 
-  useEffect(() => {
-    fetchAddresses();
-  }, [fetchAddresses]);
+  useFocusEffect(
+    useCallback(() => {
+      fetchAddresses();
+    }, [fetchAddresses]),
+  );
 
   // Fetch delivery zone (fallback)
   useEffect(() => {
@@ -221,12 +226,19 @@ export default function CheckoutScreen() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storeId, addresses]);
 
-  // Auto-switch to pickup when delivery is not serviceable
+  // When selected address is not serviceable, try switching to a serviceable one
+  // Only auto-switch to pickup if NO address is serviceable
   useEffect(() => {
-    if (isNotServiceable && fulfillmentType === "DELIVERY") {
+    if (!isNotServiceable || fulfillmentType !== "DELIVERY") return;
+
+    // Try to find a serviceable address
+    const serviceableAddr = addresses.find((a) => addressLookups[a.id]?.serviceable);
+    if (serviceableAddr) {
+      setSelectedAddressId(serviceableAddr.id);
+    } else if (Object.keys(addressLookups).length > 0 && !hasAnyServiceableAddress) {
       setFulfillmentType("PICKUP");
     }
-  }, [isNotServiceable, fulfillmentType]);
+  }, [isNotServiceable, fulfillmentType, addresses, addressLookups, hasAnyServiceableAddress]);
 
   const handleApplyCoupon = async () => {
     if (!couponCode.trim()) return;

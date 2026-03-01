@@ -570,6 +570,17 @@ export default function HomeScreen() {
         <View style={{ height: 32 }} />
       </ScrollView>
 
+      {/* ── AI Order FAB ── */}
+      {selectedStore && (
+        <TouchableOpacity
+          style={styles.aiFab}
+          onPress={() => router.push("/ai-order")}
+          activeOpacity={0.8}
+        >
+          <Ionicons name="sparkles" size={24} color="#fff" />
+        </TouchableOpacity>
+      )}
+
       <ConfirmSheet
         visible={replaceCartConfirm !== null}
         title="Replace Cart?"
@@ -1392,5 +1403,24 @@ const styles = StyleSheet.create({
   },
   storeCardCheck: {
     marginLeft: 8,
+  },
+
+  // ── AI FAB ──
+  aiFab: {
+    position: "absolute",
+    bottom: 24,
+    right: 20,
+    width: 56,
+    height: 56,
+    borderRadius: 18,
+    backgroundColor: colors.primary,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowColor: colors.primary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.35,
+    shadowRadius: 8,
+    elevation: 6,
+    zIndex: 100,
   },
 });

@@ -155,6 +155,7 @@ function RootLayoutNav() {
         <Stack.Screen name="loyalty" options={{ headerShown: true, title: "Loyalty Points" }} />
         <Stack.Screen name="notifications" options={{ headerShown: true, title: "Notifications" }} />
         <Stack.Screen name="referral" options={{ headerShown: true, title: "Refer & Earn" }} />
+        <Stack.Screen name="ai-order" options={{ headerShown: false }} />
         <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />
       </Stack>
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
