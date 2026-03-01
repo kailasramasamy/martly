@@ -143,6 +143,16 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage referrals" };
     }
 
+    // Support Tickets: ORG_ADMIN full access, STORE_MANAGER read-only
+    if (resource === "support-tickets") {
+      if (role === "ORG_ADMIN") return { can: true };
+      if (role === "STORE_MANAGER") {
+        if (action === "list" || action === "show") return { can: true };
+        return { can: false };
+      }
+      return { can: false, reason: "Only Super Admin or Org Admin can manage support tickets" };
+    }
+
     // Everything else: allow
     return { can: true };
   },

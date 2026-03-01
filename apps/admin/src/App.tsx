@@ -29,6 +29,7 @@ import {
   PictureOutlined,
   NotificationOutlined,
   UsergroupAddOutlined,
+  CustomerServiceOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -106,6 +107,8 @@ import { TemplateCreate } from "./pages/notifications/templates/create";
 import { TemplateEdit } from "./pages/notifications/templates/edit";
 import { ReferralSettings } from "./pages/referrals/settings";
 import { ReferralList } from "./pages/referrals/list";
+import { SupportTicketList } from "./pages/support-tickets/list";
+import { SupportTicketShow } from "./pages/support-tickets/show";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -382,6 +385,12 @@ export default function App() {
                 show: "/orders/show/:id",
                 meta: { label: "Orders", icon: <ShoppingCartOutlined /> },
               },
+              {
+                name: "support-tickets",
+                list: "/support-tickets",
+                show: "/support-tickets/show/:id",
+                meta: { label: "Support Tickets", icon: <CustomerServiceOutlined /> },
+              },
             ]}
           >
             <Routes>
@@ -449,6 +458,10 @@ export default function App() {
                 <Route path="/orders">
                   <Route index element={<OrderList />} />
                   <Route path="show/:id" element={<OrderShow />} />
+                </Route>
+                <Route path="/support-tickets">
+                  <Route index element={<SupportTicketList />} />
+                  <Route path="show/:id" element={<SupportTicketShow />} />
                 </Route>
                 <Route path="/banners">
                   <Route index element={<BannerList />} />

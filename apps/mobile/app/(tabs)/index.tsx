@@ -6,11 +6,13 @@ import {
   FlatList,
   ScrollView,
   TouchableOpacity,
+  Pressable,
   StyleSheet,
   Modal,
   Dimensions,
   RefreshControl,
   Image,
+  Animated,
 } from "react-native";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -570,16 +572,8 @@ export default function HomeScreen() {
         <View style={{ height: 32 }} />
       </ScrollView>
 
-      {/* ── AI Order FAB ── */}
-      {selectedStore && (
-        <TouchableOpacity
-          style={styles.aiFab}
-          onPress={() => router.push("/ai-order")}
-          activeOpacity={0.8}
-        >
-          <Ionicons name="sparkles" size={24} color="#fff" />
-        </TouchableOpacity>
-      )}
+      {/* ── Speed-Dial FAB ── */}
+      {selectedStore && <SpeedDialFAB />}
 
       <ConfirmSheet
         visible={replaceCartConfirm !== null}
@@ -707,6 +701,94 @@ export default function HomeScreen() {
         </View>
       </Modal>
     </View>
+  );
+}
+
+// ── Speed-Dial FAB ──────────────────────────────────
+function SpeedDialFAB() {
+  const [open, setOpen] = useState(false);
+  const anim = useRef(new Animated.Value(0)).current;
+
+  const toggle = useCallback(() => {
+    const toValue = open ? 0 : 1;
+    Animated.spring(anim, {
+      toValue,
+      useNativeDriver: true,
+      friction: 6,
+      tension: 80,
+    }).start();
+    setOpen(!open);
+  }, [open, anim]);
+
+  const mini1Translate = anim.interpolate({ inputRange: [0, 1], outputRange: [0, -72] });
+  const mini2Translate = anim.interpolate({ inputRange: [0, 1], outputRange: [0, -136] });
+  const rotate = anim.interpolate({ inputRange: [0, 1], outputRange: ["0deg", "45deg"] });
+  const overlayOpacity = anim.interpolate({ inputRange: [0, 1], outputRange: [0, 1] });
+
+  return (
+    <>
+      {/* Overlay */}
+      {open && (
+        <Animated.View style={[styles.fabOverlay, { opacity: overlayOpacity }]}>
+          <Pressable style={StyleSheet.absoluteFill} onPress={toggle} />
+        </Animated.View>
+      )}
+
+      {/* Mini FAB: Help & Support */}
+      <Animated.View
+        style={[
+          styles.miniFabWrap,
+          { transform: [{ translateY: mini2Translate }], opacity: anim },
+        ]}
+        pointerEvents={open ? "auto" : "none"}
+      >
+        <TouchableOpacity
+          style={styles.miniFabLabelWrap}
+          onPress={() => { toggle(); router.push("/support-chat"); }}
+          activeOpacity={0.7}
+        >
+          <View style={styles.miniFabLabel}>
+            <Text style={styles.miniFabLabelText}>Help & Support</Text>
+          </View>
+          <View style={styles.miniFab}>
+            <Ionicons name="headset" size={20} color="#fff" />
+          </View>
+        </TouchableOpacity>
+      </Animated.View>
+
+      {/* Mini FAB: AI Order */}
+      <Animated.View
+        style={[
+          styles.miniFabWrap,
+          { transform: [{ translateY: mini1Translate }], opacity: anim },
+        ]}
+        pointerEvents={open ? "auto" : "none"}
+      >
+        <TouchableOpacity
+          style={styles.miniFabLabelWrap}
+          onPress={() => { toggle(); router.push("/ai-order"); }}
+          activeOpacity={0.7}
+        >
+          <View style={styles.miniFabLabel}>
+            <Text style={styles.miniFabLabelText}>AI Order</Text>
+          </View>
+          <View style={styles.miniFab}>
+            <Ionicons name="sparkles" size={20} color="#fff" />
+          </View>
+        </TouchableOpacity>
+      </Animated.View>
+
+      {/* Main FAB */}
+      <TouchableOpacity
+        style={styles.aiFab}
+        onPress={toggle}
+        activeOpacity={0.8}
+      >
+        <Animated.View style={{ transform: [{ rotate }] }}>
+          <Ionicons name={open ? "close" : "sparkles"} size={24} color="#fff" />
+        </Animated.View>
+      </TouchableOpacity>
+    </>
   );
 }
 
@@ -1405,7 +1487,12 @@ const styles = StyleSheet.create({
     marginLeft: 8,
   },
 
-  // ── AI FAB ──
+  // ── Speed-Dial FAB ──
+  fabOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0,0,0,0.25)",
+    zIndex: 99,
+  },
   aiFab: {
     position: "absolute",
     bottom: 24,
@@ -1421,6 +1508,47 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.35,
     shadowRadius: 8,
     elevation: 6,
+    zIndex: 101,
+  },
+  miniFabWrap: {
+    position: "absolute",
+    bottom: 24,
+    right: 20,
     zIndex: 100,
+    alignItems: "flex-end",
+  },
+  miniFabLabelWrap: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+  },
+  miniFabLabel: {
+    backgroundColor: "#fff",
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  miniFabLabelText: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: colors.text,
+  },
+  miniFab: {
+    width: 44,
+    height: 44,
+    borderRadius: 14,
+    backgroundColor: colors.primary,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowColor: colors.primary,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 4,
   },
 });

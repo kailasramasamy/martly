@@ -155,3 +155,15 @@ export const REFERRAL_STATUS_CONFIG: Record<string, { color: string; label: stri
   COMPLETED: { color: "green", label: "Completed" },
   EXPIRED: { color: "red", label: "Expired" },
 };
+
+export const TICKET_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  OPEN: { color: "orange", label: "Open" },
+  RESOLVED: { color: "green", label: "Resolved" },
+  CLOSED: { color: "default", label: "Closed" },
+};
+
+export const TICKET_PRIORITY_CONFIG: Record<string, { color: string; label: string }> = {
+  LOW: { color: "default", label: "Low" },
+  MEDIUM: { color: "blue", label: "Medium" },
+  HIGH: { color: "red", label: "High" },
+};

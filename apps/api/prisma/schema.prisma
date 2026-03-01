@@ -181,6 +181,18 @@ enum ReferralStatus {
   EXPIRED
 }
 
+enum TicketStatus {
+  OPEN
+  RESOLVED
+  CLOSED
+}
+
+enum TicketPriority {
+  LOW
+  MEDIUM
+  HIGH
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -204,6 +216,7 @@ model Organization {
   notificationTemplates NotificationTemplate[]
   referralConfig      ReferralConfig?
   referrals           Referral[]
+  supportTickets      SupportTicket[]
 
   @@map("organizations")
 }
@@ -234,6 +247,7 @@ model Store {
   deliveryTrips         DeliveryTrip[]
   banners               Banner[]
   storeRatings          StoreRating[] @relation("StoreRatings")
+  supportTickets        SupportTicket[]
 
   @@map("stores")
 }
@@ -269,6 +283,7 @@ model User {
   storeRatings         StoreRating[]          @relation("StoreRatings")
   referralsMade        Referral[]             @relation("ReferralsMade")
   referralReceived     Referral[]             @relation("ReferralReceived")
+  supportTickets       SupportTicket[]
 
   @@map("users")
 }
@@ -481,6 +496,7 @@ model Order {
   loyaltyTransactions LoyaltyTransaction[]
   storeRatings        StoreRating[]
   reviews             Review[]
+  supportTickets      SupportTicket[]
 
   @@map("orders")
 }
@@ -1007,4 +1023,28 @@ model Referral {
   @@index([referrerId])
   @@index([organizationId])
   @@map("referrals")
+}
+
+model SupportTicket {
+  id             String         @id @default(uuid())
+  userId         String         @map("user_id")
+  storeId        String?        @map("store_id")
+  orderId        String?        @map("order_id")
+  subject        String
+  status         TicketStatus   @default(OPEN)
+  priority       TicketPriority @default(MEDIUM)
+  messages       Json           @default("[]")
+  organizationId String?        @map("organization_id")
+  createdAt      DateTime       @default(now()) @map("created_at")
+  updatedAt      DateTime       @updatedAt @map("updated_at")
+
+  user         User          @relation(fields: [userId], references: [id])
+  store        Store?        @relation(fields: [storeId], references: [id])
+  order        Order?        @relation(fields: [orderId], references: [id])
+  organization Organization? @relation(fields: [organizationId], references: [id])
+
+  @@index([userId, createdAt])
+  @@index([storeId, status])
+  @@index([organizationId, status])
+  @@map("support_tickets")
 }

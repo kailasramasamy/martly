@@ -325,3 +325,29 @@ export const ReferralStatusLabels: Record<ReferralStatus, string> = {
   COMPLETED: "Completed",
   EXPIRED: "Expired",
 };
+
+export const TicketStatus = {
+  OPEN: "OPEN",
+  RESOLVED: "RESOLVED",
+  CLOSED: "CLOSED",
+} as const;
+export type TicketStatus = (typeof TicketStatus)[keyof typeof TicketStatus];
+
+export const TicketStatusLabels: Record<TicketStatus, string> = {
+  OPEN: "Open",
+  RESOLVED: "Resolved",
+  CLOSED: "Closed",
+};
+
+export const TicketPriority = {
+  LOW: "LOW",
+  MEDIUM: "MEDIUM",
+  HIGH: "HIGH",
+} as const;
+export type TicketPriority = (typeof TicketPriority)[keyof typeof TicketPriority];
+
+export const TicketPriorityLabels: Record<TicketPriority, string> = {
+  LOW: "Low",
+  MEDIUM: "Medium",
+  HIGH: "High",
+};

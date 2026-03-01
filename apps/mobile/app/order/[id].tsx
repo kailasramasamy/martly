@@ -638,6 +638,16 @@ export default function OrderDetailScreen() {
         </>
       )}
 
+      {/* Get Help button */}
+      <TouchableOpacity
+        style={styles.helpBtn}
+        onPress={() => router.push({ pathname: "/support-chat", params: { orderId: order.id } })}
+        activeOpacity={0.7}
+      >
+        <Ionicons name="headset-outline" size={18} color={colors.primary} />
+        <Text style={styles.helpBtnText}>Get Help with this Order</Text>
+      </TouchableOpacity>
+
       {/* Cancel button — only for PENDING/CONFIRMED */}
       {(order.status === "PENDING" || order.status === "CONFIRMED") && (
         <TouchableOpacity
@@ -805,6 +815,19 @@ const styles = StyleSheet.create({
     color: colors.text,
     marginTop: 2,
   },
+  helpBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+    borderRadius: 10,
+    paddingVertical: 14,
+    marginBottom: spacing.md,
+    borderWidth: 1.5,
+    borderColor: colors.primary,
+    backgroundColor: colors.primary + "08",
+  },
+  helpBtnText: { color: colors.primary, fontSize: fontSize.md, fontWeight: "600" },
   cancelBtn: {
     backgroundColor: "#ef4444",
     borderRadius: 10,

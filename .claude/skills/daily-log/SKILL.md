@@ -31,14 +31,17 @@ Generate a daily work summary and save it to the Obsidian vault.
 ```markdown
 # Daily Log — {Month Day, Year}
 
-## Completed
+## Session 1
+{One-line summary of the session's focus, e.g. "Built referral program and fixed checkout address bug"}
+
+### Completed
 - [x] {Description of completed task 1}
 - [x] {Description of completed task 2}
 
-## Files Changed
+### Files Changed
 - `{path/to/file}` — ({new|modified}) {brief description}
 
-## Notes
+### Notes
 - {Key decision, blocker, or context}
 ```
 
@@ -49,6 +52,7 @@ Generate a daily work summary and save it to the Obsidian vault.
 ---
 
 ## Session {N}
+{One-line summary of the session's focus}
 
 ### Completed
 - [x] {Description of completed task 1}

@@ -42,6 +42,17 @@ Plan and implement a full-stack feature for the Martly project.
 - Use store context from `apps/mobile/lib/store-context.tsx`
 - Reference: `apps/mobile/app/(tabs)/index.tsx`
 
+### 7. Testing Doc
+After implementing the feature, generate a verification doc and save it to `docs/features/`:
+- Pick the right subfolder based on the feature domain (e.g., `ai/`, `delivery/`, `orders/`, `payments/`). Create a new subfolder if none fit.
+- File name: kebab-case matching the feature (e.g., `ai-customer-support.md`)
+- Include:
+  - **Overview** — what the feature does, customer + admin flows
+  - **Architecture** — database model, API endpoints, file listing
+  - **Verification checklist** — step-by-step checkboxes for every user-facing behavior (mobile, admin, API)
+  - **curl commands** — copy-paste ready commands for testing all API endpoints
+  - **Manual verification** — items that need device/simulator testing
+
 ## Key Files to Reference
 | Layer | Key Files |
 |-------|-----------|
@@ -63,3 +74,4 @@ Plan and implement a full-stack feature for the Martly project.
 - [ ] Admin pages created/updated with Refine patterns
 - [ ] Mobile screens created/updated (if applicable)
 - [ ] Tested via admin panel and/or curl
+- [ ] Testing doc created in `docs/features/<domain>/`

@@ -63,7 +63,15 @@
       "WebFetch(domain:gist.github.com)",
       "WebFetch(domain:www.npmjs.com)",
       "WebFetch(domain:medium.com)",
-      "Bash(sleep 2:*)"
+      "Bash(sleep 2:*)",
+      "Bash(echo Stopped:*)",
+      "Bash(xxd:*)",
+      "Bash(ipconfig getifaddr:*)",
+      "Bash(cat:*)",
+      "Bash(ln:*)",
+      "Bash(git log:*)",
+      "Bash(cp:*)",
+      "Bash(kill 75027:*)"
     ]
   }
 }

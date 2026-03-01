@@ -258,6 +258,14 @@ export default function ProfileScreen() {
             <Text style={styles.menuItemText}>Refer & Earn</Text>
             <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
           </TouchableOpacity>
+          <View style={{ height: 8 }} />
+          <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/support-tickets")}>
+            <View style={[styles.menuIconWrap, { backgroundColor: "#fff7ed" }]}>
+              <Ionicons name="headset-outline" size={18} color="#f59e0b" />
+            </View>
+            <Text style={styles.menuItemText}>My Tickets</Text>
+            <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
+          </TouchableOpacity>
         </View>
 
         {/* Saved Addresses */}
