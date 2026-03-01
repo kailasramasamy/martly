@@ -81,6 +81,8 @@ import { CouponList } from "./pages/coupons/list";
 import { CouponCreate } from "./pages/coupons/create";
 import { CouponEdit } from "./pages/coupons/edit";
 import { ReviewList } from "./pages/reviews/list";
+import { ReviewAnalytics } from "./pages/review-analytics/index";
+import { StoreRatingList } from "./pages/store-ratings/list";
 import { DeliveryZoneList } from "./pages/delivery-zones/list";
 import { DeliveryZoneCreate } from "./pages/delivery-zones/create";
 import { DeliveryZoneEdit } from "./pages/delivery-zones/edit";
@@ -269,6 +271,16 @@ export default function App() {
                 meta: { label: "Reviews", icon: <CommentOutlined />, parent: "marketing" },
               },
               {
+                name: "review-analytics",
+                list: "/review-analytics",
+                meta: { label: "Review Analytics", icon: <StarOutlined />, parent: "marketing" },
+              },
+              {
+                name: "store-ratings",
+                list: "/store-ratings",
+                meta: { label: "Store Ratings", icon: <ShopOutlined />, parent: "marketing" },
+              },
+              {
                 name: "notifications",
                 meta: { label: "Notifications", icon: <NotificationOutlined />, parent: "marketing" },
               },
@@ -441,6 +453,8 @@ export default function App() {
                   <Route path="edit/:id" element={<CouponEdit />} />
                 </Route>
                 <Route path="/reviews" element={<ReviewList />} />
+                <Route path="/review-analytics" element={<ReviewAnalytics />} />
+                <Route path="/store-ratings" element={<StoreRatingList />} />
                 <Route path="/notifications">
                   <Route path="dashboard" element={<NotificationDashboard />} />
                   <Route path="campaigns" element={<CampaignList />} />

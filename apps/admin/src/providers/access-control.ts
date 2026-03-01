@@ -83,8 +83,8 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage coupons" };
     }
 
-    // Reviews: ORG_ADMIN full access
-    if (resource === "reviews") {
+    // Reviews + Analytics + Store Ratings: ORG_ADMIN full access
+    if (resource === "reviews" || resource === "review-analytics" || resource === "store-ratings") {
       if (role === "ORG_ADMIN") return { can: true };
       return { can: false, reason: "Only Super Admin or Org Admin can moderate reviews" };
     }

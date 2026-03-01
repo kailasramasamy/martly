@@ -123,12 +123,14 @@ export async function loyaltyRoutes(app: FastifyInstance) {
           earnRate: body.earnRate,
           minRedeemPoints: body.minRedeemPoints,
           maxRedeemPercentage: body.maxRedeemPercentage,
+          reviewRewardPoints: body.reviewRewardPoints ?? 0,
         },
         update: {
           isEnabled: body.isEnabled,
           earnRate: body.earnRate,
           minRedeemPoints: body.minRedeemPoints,
           maxRedeemPercentage: body.maxRedeemPercentage,
+          reviewRewardPoints: body.reviewRewardPoints,
         },
       });
 

@@ -520,9 +520,11 @@ export type ApplyCouponInput = z.infer<typeof applyCouponSchema>;
 export const createReviewSchema = z.object({
   productId: z.string().uuid(),
   storeId: z.string().uuid().optional(),
+  orderId: z.string().uuid().optional(),
   rating: z.number().int().min(1).max(5),
   title: z.string().max(200).optional(),
   comment: z.string().max(2000).optional(),
+  imageUrls: z.array(z.string().url()).max(5).optional(),
 });
 export type CreateReviewInput = z.infer<typeof createReviewSchema>;
 
@@ -530,8 +532,24 @@ export const updateReviewSchema = z.object({
   rating: z.number().int().min(1).max(5).optional(),
   title: z.string().max(200).nullish(),
   comment: z.string().max(2000).nullish(),
+  imageUrls: z.array(z.string().url()).max(5).optional(),
 });
 export type UpdateReviewInput = z.infer<typeof updateReviewSchema>;
+
+export const createReviewReplySchema = z.object({
+  body: z.string().min(1).max(2000),
+});
+export type CreateReviewReplyInput = z.infer<typeof createReviewReplySchema>;
+
+export const createStoreRatingSchema = z.object({
+  orderId: z.string().uuid(),
+  storeId: z.string().uuid(),
+  overallRating: z.number().int().min(1).max(5),
+  deliveryRating: z.number().int().min(1).max(5).optional(),
+  packagingRating: z.number().int().min(1).max(5).optional(),
+  comment: z.string().max(2000).optional(),
+});
+export type CreateStoreRatingInput = z.infer<typeof createStoreRatingSchema>;
 
 export const updateReviewStatusSchema = z.object({
   status: z.nativeEnum(ReviewStatus),
@@ -599,6 +617,7 @@ export const createLoyaltyConfigSchema = z.object({
   earnRate: z.number().int().min(0).max(100).default(1),
   minRedeemPoints: z.number().int().min(0).default(10),
   maxRedeemPercentage: z.number().int().min(1).max(100).default(50),
+  reviewRewardPoints: z.number().int().min(0).max(1000).default(0),
 });
 export type CreateLoyaltyConfigInput = z.infer<typeof createLoyaltyConfigSchema>;
 
@@ -607,6 +626,7 @@ export const updateLoyaltyConfigSchema = z.object({
   earnRate: z.number().int().min(0).max(100).optional(),
   minRedeemPoints: z.number().int().min(0).optional(),
   maxRedeemPercentage: z.number().int().min(1).max(100).optional(),
+  reviewRewardPoints: z.number().int().min(0).max(1000).optional(),
 });
 export type UpdateLoyaltyConfigInput = z.infer<typeof updateLoyaltyConfigSchema>;
 

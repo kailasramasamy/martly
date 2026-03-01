@@ -53,6 +53,9 @@ async function request<T>(path: string, options: RequestInit = {}, isRetry = fal
   return response.json() as Promise<T>;
 }
 
+export function getApiUrl() { return API_URL; }
+export function getAccessToken() { return accessToken; }
+
 export const api = {
   get: <T>(path: string) => request<ApiResponse<T>>(path),
   getList: <T>(path: string) => request<PaginatedResponse<T>>(path),

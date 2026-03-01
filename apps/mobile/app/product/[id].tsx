@@ -8,6 +8,7 @@ import {
   StyleSheet,
   Dimensions,
   FlatList,
+  Modal,
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from "react-native";
@@ -50,6 +51,7 @@ export default function ProductDetailScreen() {
   const [loading, setLoading] = useState(true);
   const [descExpanded, setDescExpanded] = useState(false);
   const [activeImageIdx, setActiveImageIdx] = useState(0);
+  const [previewImage, setPreviewImage] = useState<string | null>(null);
   const [reviewSummary, setReviewSummary] = useState<ReviewSummary | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
 
@@ -522,6 +524,24 @@ export default function ProductDetailScreen() {
                 </View>
                 {r.title && <Text style={styles.reviewTitle}>{r.title}</Text>}
                 {r.comment && <Text style={styles.reviewComment}>{r.comment}</Text>}
+                {r.images && r.images.length > 0 && (
+                  <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.reviewImageScroll} contentContainerStyle={{ gap: 8 }}>
+                    {r.images.map((img) => (
+                      <TouchableOpacity key={img.id} activeOpacity={0.8} onPress={() => setPreviewImage(img.imageUrl)}>
+                        <Image source={{ uri: img.imageUrl }} style={styles.reviewThumb} />
+                      </TouchableOpacity>
+                    ))}
+                  </ScrollView>
+                )}
+                {r.reply && (
+                  <View style={styles.replyBox}>
+                    <View style={styles.replyHeader}>
+                      <Ionicons name="storefront-outline" size={12} color={colors.primary} />
+                      <Text style={styles.replyLabel}>Store Response</Text>
+                    </View>
+                    <Text style={styles.replyBody}>{r.reply.body}</Text>
+                  </View>
+                )}
               </View>
             ))}
 
@@ -603,6 +623,16 @@ export default function ProductDetailScreen() {
       }}
       onCancel={() => setReplaceCartConfirm(null)}
     />
+    <Modal visible={!!previewImage} transparent animationType="fade" onRequestClose={() => setPreviewImage(null)}>
+      <View style={styles.previewOverlay}>
+        <TouchableOpacity style={styles.previewClose} onPress={() => setPreviewImage(null)}>
+          <Ionicons name="close" size={28} color="#fff" />
+        </TouchableOpacity>
+        {previewImage && (
+          <Image source={{ uri: previewImage }} style={styles.previewImage} resizeMode="contain" />
+        )}
+      </View>
+    </Modal>
     </View>
   );
 }
@@ -746,7 +776,7 @@ const styles = StyleSheet.create({
   },
   dangerText: { fontSize: fontSize.sm, color: "#92400e" },
   metaText: { fontSize: fontSize.md, color: colors.textSecondary, marginTop: spacing.xs },
-  relatedList: { gap: spacing.sm },
+  relatedList: { gap: spacing.sm, paddingBottom: spacing.sm },
   wishlistRow: {
     flexDirection: "row",
     alignItems: "center",
@@ -791,4 +821,21 @@ const styles = StyleSheet.create({
     marginTop: spacing.sm,
   },
   writeReviewText: { fontSize: fontSize.md, fontWeight: "600", color: colors.primary },
+  reviewImageScroll: { marginTop: spacing.sm },
+  reviewThumb: { width: 64, height: 64, borderRadius: 8, backgroundColor: colors.border },
+  previewOverlay: { flex: 1, backgroundColor: "rgba(0,0,0,0.9)", justifyContent: "center", alignItems: "center" },
+  previewClose: { position: "absolute", top: 50, right: 20, zIndex: 1, padding: 8 },
+  previewImage: { width: SCREEN_WIDTH, height: SCREEN_WIDTH },
+  replyBox: {
+    marginTop: spacing.sm,
+    paddingTop: spacing.sm,
+    borderTopWidth: 1,
+    borderTopColor: colors.border,
+    backgroundColor: colors.primary + "08",
+    borderRadius: 6,
+    padding: spacing.sm,
+  },
+  replyHeader: { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 },
+  replyLabel: { fontSize: 11, fontWeight: "700", color: colors.primary, textTransform: "uppercase", letterSpacing: 0.5 },
+  replyBody: { fontSize: fontSize.md, color: colors.text, lineHeight: 20 },
 });

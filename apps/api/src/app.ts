@@ -34,6 +34,8 @@ import { deliveryTripRoutes } from "./routes/delivery-trips/index.js";
 import { riderRoutes } from "./routes/riders/index.js";
 import { bannerRoutes } from "./routes/banners/index.js";
 import { notificationRoutes } from "./routes/notifications/index.js";
+import { storeRatingRoutes } from "./routes/store-ratings/index.js";
+import { reviewAnalyticsRoutes } from "./routes/review-analytics/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
 
@@ -119,6 +121,8 @@ export async function buildApp() {
       await api.register(riderRoutes, { prefix: "/riders" });
       await api.register(bannerRoutes, { prefix: "/banners" });
       await api.register(notificationRoutes, { prefix: "/notifications" });
+      await api.register(storeRatingRoutes, { prefix: "/store-ratings" });
+      await api.register(reviewAnalyticsRoutes, { prefix: "/review-analytics" });
     },
     { prefix: "/api/v1" },
   );

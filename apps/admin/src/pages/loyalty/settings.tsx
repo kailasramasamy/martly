@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Card, Form, InputNumber, Switch, Button, Space, message, Spin, Typography, Row, Col, Alert } from "antd";
+import { App, Card, Form, InputNumber, Switch, Button, Space, Spin, Typography, Row, Col, Alert } from "antd";
 import { SettingOutlined, StarOutlined, GiftOutlined, PercentageOutlined } from "@ant-design/icons";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
@@ -12,9 +12,11 @@ interface LoyaltyConfig {
   earnRate: number;
   minRedeemPoints: number;
   maxRedeemPercentage: number;
+  reviewRewardPoints: number;
 }
 
 export const LoyaltySettings = () => {
+  const { notification } = App.useApp();
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -30,6 +32,7 @@ export const LoyaltySettings = () => {
             earnRate: data.earnRate,
             minRedeemPoints: data.minRedeemPoints,
             maxRedeemPercentage: data.maxRedeemPercentage,
+            reviewRewardPoints: data.reviewRewardPoints ?? 0,
           });
           setHasExisting(true);
         } else {
@@ -38,6 +41,7 @@ export const LoyaltySettings = () => {
             earnRate: 1,
             minRedeemPoints: 10,
             maxRedeemPercentage: 50,
+            reviewRewardPoints: 0,
           });
         }
       })
@@ -47,6 +51,7 @@ export const LoyaltySettings = () => {
           earnRate: 1,
           minRedeemPoints: 10,
           maxRedeemPercentage: 50,
+          reviewRewardPoints: 0,
         });
       })
       .finally(() => setLoading(false));
@@ -57,10 +62,10 @@ export const LoyaltySettings = () => {
     setSaving(true);
     try {
       await axiosInstance.put("/loyalty/config", values);
-      message.success("Loyalty settings saved");
+      notification.success({ message: "Success", description: "Loyalty settings saved" });
       setHasExisting(true);
     } catch (err: any) {
-      message.error(err?.response?.data?.message ?? "Failed to save settings");
+      notification.error({ message: "Error", description: err?.response?.data?.message ?? "Failed to save settings" });
     } finally {
       setSaving(false);
     }
@@ -114,6 +119,13 @@ export const LoyaltySettings = () => {
                 extra="Customers earn this many points for every ₹100 in their order total"
               >
                 <InputNumber min={0} max={100} style={{ width: "100%" }} />
+              </Form.Item>
+              <Form.Item
+                name="reviewRewardPoints"
+                label="Review reward points"
+                extra="Points awarded when a verified review is approved (0 = disabled)"
+              >
+                <InputNumber min={0} max={1000} style={{ width: "100%" }} />
               </Form.Item>
             </Card>
           </Col>

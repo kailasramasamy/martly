@@ -132,6 +132,22 @@ export interface HomeFeed {
   banners: Banner[];
 }
 
+export interface ReviewImage {
+  id: string;
+  reviewId: string;
+  imageUrl: string;
+  sortOrder: number;
+}
+
+export interface ReviewReply {
+  id: string;
+  reviewId: string;
+  userId: string;
+  body: string;
+  createdAt: string;
+  user: { id: string; name: string };
+}
+
 export interface Review {
   id: string;
   userId: string;
@@ -143,6 +159,20 @@ export interface Review {
   status: string;
   createdAt: string;
   user: { id: string; name: string };
+  images?: ReviewImage[];
+  reply?: ReviewReply | null;
+}
+
+export interface StoreRating {
+  id: string;
+  userId: string;
+  orderId: string;
+  storeId: string;
+  overallRating: number;
+  deliveryRating: number | null;
+  packagingRating: number | null;
+  comment: string | null;
+  createdAt: string;
 }
 
 export interface ReviewSummary {

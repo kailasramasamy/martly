@@ -23,7 +23,7 @@ export async function uploadRoutes(app: FastifyInstance) {
   await app.register(multipart, { limits: { fileSize: 5 * 1024 * 1024 } });
   app.post(
     "/",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "CUSTOMER")] },
     async (request, reply) => {
       const file = await request.file();
       if (!file) return reply.badRequest("No file uploaded");

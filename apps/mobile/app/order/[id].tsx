@@ -6,8 +6,9 @@ import {
   ScrollView,
   TouchableOpacity,
   ActivityIndicator,
+  TextInput,
 } from "react-native";
-import { useLocalSearchParams } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useOrderWebSocket } from "../../lib/useOrderWebSocket";
@@ -33,8 +34,24 @@ interface StatusLogData {
   createdAt: string;
 }
 
+interface StoreRatingData {
+  id: string;
+  overallRating: number;
+  deliveryRating: number | null;
+  packagingRating: number | null;
+  comment: string | null;
+}
+
+interface MyReviewData {
+  id: string;
+  productId: string;
+  rating: number;
+  status: string;
+}
+
 interface OrderData {
   id: string;
+  storeId: string;
   status: string;
   paymentStatus: string;
   paymentMethod: string;
@@ -101,11 +118,21 @@ const PAYMENT_STATUS_COLORS: Record<string, string> = {
 
 export default function OrderDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
+  const router = useRouter();
   const toast = useToast();
   const [order, setOrder] = useState<OrderData | null>(null);
   const [loading, setLoading] = useState(true);
   const [cancelling, setCancelling] = useState(false);
   const [showCancelConfirm, setShowCancelConfirm] = useState(false);
+
+  // Rating state
+  const [existingStoreRating, setExistingStoreRating] = useState<StoreRatingData | null>(null);
+  const [myReviews, setMyReviews] = useState<MyReviewData[]>([]);
+  const [storeOverall, setStoreOverall] = useState(0);
+  const [storeDelivery, setStoreDelivery] = useState(0);
+  const [storePackaging, setStorePackaging] = useState(0);
+  const [storeComment, setStoreComment] = useState("");
+  const [submittingRating, setSubmittingRating] = useState(false);
 
   const fetchOrder = useCallback(async () => {
     try {
@@ -121,6 +148,30 @@ export default function OrderDetailScreen() {
   useEffect(() => {
     fetchOrder();
   }, [fetchOrder]);
+
+  // Fetch rating data when order is delivered
+  useEffect(() => {
+    if (!order || order.status !== "DELIVERED") return;
+
+    // Fetch existing store rating
+    api.get<StoreRatingData>(`/api/v1/store-ratings/order/${id}`).then((res) => {
+      if (res.data) {
+        setExistingStoreRating(res.data);
+        setStoreOverall(res.data.overallRating);
+        setStoreDelivery(res.data.deliveryRating ?? 0);
+        setStorePackaging(res.data.packagingRating ?? 0);
+        setStoreComment(res.data.comment ?? "");
+      }
+    }).catch(() => {});
+
+    // Fetch existing product reviews
+    const productIds = order.items.map((i) => i.productId).join(",");
+    if (productIds) {
+      api.get<MyReviewData[]>(`/api/v1/reviews/my-reviews?productIds=${productIds}`).then((res) => {
+        if (res.data) setMyReviews(res.data);
+      }).catch(() => {});
+    }
+  }, [order?.status, order?.items, id]);
 
   const isActive = !!order && order.status !== "DELIVERED" && order.status !== "CANCELLED";
 
@@ -168,6 +219,27 @@ export default function OrderDetailScreen() {
       setCancelling(false);
     }
   }, [id, fetchOrder, toast]);
+
+  const submitStoreRating = useCallback(async () => {
+    if (storeOverall === 0 || !order) return;
+    setSubmittingRating(true);
+    try {
+      const res = await api.post<StoreRatingData>("/api/v1/store-ratings", {
+        orderId: id,
+        storeId: order.storeId,
+        overallRating: storeOverall,
+        deliveryRating: storeDelivery || undefined,
+        packagingRating: storePackaging || undefined,
+        comment: storeComment.trim() || undefined,
+      });
+      setExistingStoreRating(res.data);
+      toast.show("Thanks for your feedback!", "success");
+    } catch (err: any) {
+      toast.show(err?.message ?? "Failed to submit rating", "error");
+    } finally {
+      setSubmittingRating(false);
+    }
+  }, [storeOverall, storeDelivery, storePackaging, storeComment, order, id, toast]);
 
   if (loading) {
     return <OrderDetailSkeleton />;
@@ -444,6 +516,128 @@ export default function OrderDetailScreen() {
         Placed on {new Date(order.createdAt).toLocaleString()}
       </Text>
 
+      {/* Rating Sections — only for DELIVERED orders */}
+      {order.status === "DELIVERED" && (
+        <>
+          {/* Rate Your Experience */}
+          <View style={styles.ratingSection}>
+            <View style={styles.ratingSectionHeader}>
+              <Ionicons name="storefront-outline" size={20} color={colors.primary} />
+              <Text style={styles.ratingSectionTitle}>Rate Your Experience</Text>
+            </View>
+            {existingStoreRating ? (
+              <View style={styles.ratingCard}>
+                <Text style={styles.ratingCardLabel}>Thanks for your feedback!</Text>
+                {[
+                  { label: "Overall", value: existingStoreRating.overallRating },
+                  { label: "Delivery", value: existingStoreRating.deliveryRating },
+                  { label: "Packaging", value: existingStoreRating.packagingRating },
+                ].map((row) => row.value != null && row.value > 0 ? (
+                  <View key={row.label} style={styles.ratingRow}>
+                    <Text style={styles.ratingRowLabel}>{row.label}</Text>
+                    <View style={styles.starRow}>
+                      {[1, 2, 3, 4, 5].map((s) => (
+                        <Ionicons key={s} name={s <= row.value! ? "star" : "star-outline"} size={18} color={s <= row.value! ? "#f59e0b" : "#d1d5db"} />
+                      ))}
+                    </View>
+                  </View>
+                ) : null)}
+                {existingStoreRating.comment && (
+                  <Text style={styles.ratingComment}>"{existingStoreRating.comment}"</Text>
+                )}
+              </View>
+            ) : (
+              <View style={styles.ratingCard}>
+                {[
+                  { label: "Overall", value: storeOverall, setter: setStoreOverall, required: true },
+                  { label: "Delivery", value: storeDelivery, setter: setStoreDelivery },
+                  { label: "Packaging", value: storePackaging, setter: setStorePackaging },
+                ].map((row) => (
+                  <View key={row.label} style={styles.ratingRow}>
+                    <Text style={styles.ratingRowLabel}>
+                      {row.label}
+                      {row.required && <Text style={{ color: colors.error }}> *</Text>}
+                    </Text>
+                    <View style={styles.starRow}>
+                      {[1, 2, 3, 4, 5].map((s) => (
+                        <TouchableOpacity key={s} onPress={() => row.setter(s)} hitSlop={{ top: 6, bottom: 6, left: 3, right: 3 }}>
+                          <Ionicons name={s <= row.value ? "star" : "star-outline"} size={22} color={s <= row.value ? "#f59e0b" : "#d1d5db"} />
+                        </TouchableOpacity>
+                      ))}
+                    </View>
+                  </View>
+                ))}
+                <TextInput
+                  style={styles.ratingInput}
+                  value={storeComment}
+                  onChangeText={setStoreComment}
+                  placeholder="Any comments? (optional)"
+                  placeholderTextColor="#94a3b8"
+                  multiline
+                  maxLength={500}
+                />
+                <TouchableOpacity
+                  style={[styles.ratingSubmitBtn, storeOverall === 0 && { opacity: 0.4 }]}
+                  onPress={submitStoreRating}
+                  disabled={submittingRating || storeOverall === 0}
+                >
+                  {submittingRating ? (
+                    <ActivityIndicator size="small" color="#fff" />
+                  ) : (
+                    <Text style={styles.ratingSubmitText}>Submit Rating</Text>
+                  )}
+                </TouchableOpacity>
+              </View>
+            )}
+          </View>
+
+          {/* Rate Your Products */}
+          <View style={styles.ratingSection}>
+            <View style={styles.ratingSectionHeader}>
+              <Ionicons name="chatbubble-ellipses-outline" size={20} color={colors.primary} />
+              <Text style={styles.ratingSectionTitle}>Rate Your Products</Text>
+            </View>
+            <View style={styles.ratingCard}>
+              {order.items.map((item) => {
+                const existing = myReviews.find((r) => r.productId === item.productId);
+                return (
+                  <View key={item.id} style={styles.productRatingRow}>
+                    <View style={{ flex: 1 }}>
+                      <Text style={styles.productRatingName} numberOfLines={1}>{item.product.name}</Text>
+                      {item.variant && <Text style={styles.productRatingVariant}>{item.variant.name}</Text>}
+                    </View>
+                    {existing ? (
+                      <View style={styles.reviewedBadgeRow}>
+                        <View style={styles.starRow}>
+                          {[1, 2, 3, 4, 5].map((s) => (
+                            <Ionicons key={s} name={s <= existing.rating ? "star" : "star-outline"} size={14} color={s <= existing.rating ? "#f59e0b" : "#d1d5db"} />
+                          ))}
+                        </View>
+                        <View style={styles.reviewedBadge}>
+                          <Ionicons name="checkmark-circle" size={12} color={colors.primary} />
+                          <Text style={styles.reviewedBadgeText}>Reviewed</Text>
+                        </View>
+                      </View>
+                    ) : (
+                      <TouchableOpacity
+                        style={styles.writeReviewBtn}
+                        onPress={() => router.push({
+                          pathname: "/write-review",
+                          params: { productId: item.productId, productName: item.product.name, storeId: order.storeId, orderId: id },
+                        })}
+                      >
+                        <Ionicons name="create-outline" size={14} color={colors.primary} />
+                        <Text style={styles.writeReviewBtnText}>Review</Text>
+                      </TouchableOpacity>
+                    )}
+                  </View>
+                );
+              })}
+            </View>
+          </View>
+        </>
+      )}
+
       {/* Cancel button — only for PENDING/CONFIRMED */}
       {(order.status === "PENDING" || order.status === "CONFIRMED") && (
         <TouchableOpacity
@@ -656,5 +850,127 @@ const styles = StyleSheet.create({
     fontSize: fontSize.md,
     fontWeight: "700",
     color: colors.text,
+  },
+  ratingSection: {
+    marginBottom: spacing.lg,
+  },
+  ratingSectionHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    marginBottom: spacing.sm,
+  },
+  ratingSectionTitle: {
+    fontSize: fontSize.lg,
+    fontWeight: "bold",
+    color: colors.text,
+  },
+  ratingCard: {
+    backgroundColor: colors.surface,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: spacing.md,
+  },
+  ratingCardLabel: {
+    fontSize: fontSize.md,
+    fontWeight: "600",
+    color: colors.primary,
+    marginBottom: spacing.sm,
+  },
+  ratingRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 8,
+  },
+  ratingRowLabel: {
+    fontSize: fontSize.md,
+    fontWeight: "500",
+    color: colors.text,
+  },
+  starRow: {
+    flexDirection: "row",
+    gap: 4,
+  },
+  ratingComment: {
+    fontSize: fontSize.sm,
+    color: colors.textSecondary,
+    fontStyle: "italic",
+    marginTop: spacing.sm,
+    paddingTop: spacing.sm,
+    borderTopWidth: 1,
+    borderTopColor: colors.border,
+  },
+  ratingInput: {
+    backgroundColor: "#fff",
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: 10,
+    fontSize: fontSize.md,
+    color: colors.text,
+    marginTop: spacing.sm,
+    minHeight: 60,
+    textAlignVertical: "top",
+  },
+  ratingSubmitBtn: {
+    backgroundColor: colors.primary,
+    borderRadius: 10,
+    paddingVertical: 12,
+    alignItems: "center",
+    marginTop: spacing.sm,
+  },
+  ratingSubmitText: {
+    fontSize: fontSize.md,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  productRatingRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.border,
+  },
+  productRatingName: {
+    fontSize: fontSize.md,
+    fontWeight: "600",
+    color: colors.text,
+  },
+  productRatingVariant: {
+    fontSize: fontSize.sm,
+    color: colors.textSecondary,
+    marginTop: 1,
+  },
+  reviewedBadgeRow: {
+    alignItems: "flex-end",
+    gap: 4,
+  },
+  reviewedBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 3,
+  },
+  reviewedBadgeText: {
+    fontSize: 11,
+    fontWeight: "600",
+    color: colors.primary,
+  },
+  writeReviewBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: colors.primary,
+  },
+  writeReviewBtnText: {
+    fontSize: fontSize.sm,
+    fontWeight: "600",
+    color: colors.primary,
   },
 });

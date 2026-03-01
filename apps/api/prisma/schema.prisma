@@ -225,6 +225,7 @@ model Store {
   expressDeliveryConfig ExpressDeliveryConfig?
   deliveryTrips         DeliveryTrip[]
   banners               Banner[]
+  storeRatings          StoreRating[] @relation("StoreRatings")
 
   @@map("stores")
 }
@@ -255,6 +256,8 @@ model User {
   notifications        Notification[]
   campaignsSent        NotificationCampaign[] @relation("CampaignsSent")
   templatesCreated     NotificationTemplate[] @relation("TemplatesCreated")
+  reviewReplies        ReviewReply[]          @relation("ReviewReplies")
+  storeRatings         StoreRating[]          @relation("StoreRatings")
 
   @@map("users")
 }
@@ -464,6 +467,8 @@ model Order {
   statusLogs          OrderStatusLog[]
   walletTransactions  WalletTransaction[]
   loyaltyTransactions LoyaltyTransaction[]
+  storeRatings        StoreRating[]
+  reviews             Review[]
 
   @@map("orders")
 }
@@ -586,6 +591,7 @@ model Review {
   userId     String       @map("user_id")
   productId  String       @map("product_id")
   storeId    String?      @map("store_id")
+  orderId    String?      @map("order_id")
   rating     Int
   title      String?
   comment    String?
@@ -594,13 +600,64 @@ model Review {
   createdAt  DateTime     @default(now()) @map("created_at")
   updatedAt  DateTime     @updatedAt @map("updated_at")
 
-  user    User    @relation(fields: [userId], references: [id])
-  product Product @relation(fields: [productId], references: [id])
-  store   Store?  @relation(fields: [storeId], references: [id])
+  user    User         @relation(fields: [userId], references: [id])
+  product Product      @relation(fields: [productId], references: [id])
+  store   Store?       @relation(fields: [storeId], references: [id])
+  order   Order?       @relation(fields: [orderId], references: [id])
+  images  ReviewImage[]
+  reply   ReviewReply?
 
   @@unique([userId, productId])
   @@index([productId, status])
   @@map("reviews")
+}
+
+model ReviewImage {
+  id        String   @id @default(uuid())
+  reviewId  String   @map("review_id")
+  imageUrl  String   @map("image_url")
+  sortOrder Int      @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  review Review @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+
+  @@index([reviewId])
+  @@map("review_images")
+}
+
+model ReviewReply {
+  id        String   @id @default(uuid())
+  reviewId  String   @unique @map("review_id")
+  userId    String   @map("user_id")
+  body      String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  review Review @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+  user   User   @relation("ReviewReplies", fields: [userId], references: [id])
+
+  @@map("review_replies")
+}
+
+model StoreRating {
+  id              String   @id @default(uuid())
+  userId          String   @map("user_id")
+  orderId         String   @map("order_id")
+  storeId         String   @map("store_id")
+  overallRating   Int      @map("overall_rating")
+  deliveryRating  Int?     @map("delivery_rating")
+  packagingRating Int?     @map("packaging_rating")
+  comment         String?
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  user  User  @relation("StoreRatings", fields: [userId], references: [id])
+  order Order @relation(fields: [orderId], references: [id])
+  store Store @relation("StoreRatings", fields: [storeId], references: [id])
+
+  @@unique([userId, orderId])
+  @@index([storeId])
+  @@map("store_ratings")
 }
 
 model WishlistItem {
@@ -723,6 +780,7 @@ model LoyaltyConfig {
   earnRate             Int      @default(1) @map("earn_rate")
   minRedeemPoints      Int      @default(10) @map("min_redeem_points")
   maxRedeemPercentage  Int      @default(50) @map("max_redeem_percentage")
+  reviewRewardPoints   Int      @default(0) @map("review_reward_points")
   createdAt            DateTime @default(now()) @map("created_at")
   updatedAt            DateTime @updatedAt @map("updated_at")
 
