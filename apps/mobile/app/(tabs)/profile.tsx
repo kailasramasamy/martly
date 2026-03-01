@@ -53,6 +53,7 @@ export default function ProfileScreen() {
   const [showAddressModal, setShowAddressModal] = useState(false);
   const [editingAddress, setEditingAddress] = useState<UserAddress | null>(null);
   const [addrLabel, setAddrLabel] = useState<string>("Home");
+  const [addrPlaceName, setAddrPlaceName] = useState<string | null>(null);
   const [addrText, setAddrText] = useState("");
   const [addrLat, setAddrLat] = useState<number | null>(null);
   const [addrLng, setAddrLng] = useState<number | null>(null);
@@ -123,6 +124,7 @@ export default function ProfileScreen() {
     }
     setEditingAddress(null);
     setAddrLabel("Home");
+    setAddrPlaceName(null);
     setAddrText("");
     setAddrLat(null);
     setAddrLng(null);
@@ -134,6 +136,7 @@ export default function ProfileScreen() {
   const openEditAddress = (addr: UserAddress) => {
     setEditingAddress(addr);
     setAddrLabel(addr.label);
+    setAddrPlaceName(addr.placeName ?? null);
     setAddrText(addr.address);
     setAddrLat(addr.latitude ?? null);
     setAddrLng(addr.longitude ?? null);
@@ -151,6 +154,7 @@ export default function ProfileScreen() {
     try {
       const payload: Record<string, unknown> = {
         label: addrLabel,
+        placeName: addrPlaceName ?? undefined,
         address: addrText.trim(),
         isDefault: addrDefault,
         ...(addrLat != null && addrLng != null ? { latitude: addrLat, longitude: addrLng } : {}),
@@ -246,6 +250,14 @@ export default function ProfileScreen() {
             <Text style={styles.menuItemText}>My Wishlist</Text>
             <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
           </TouchableOpacity>
+          <View style={{ height: 8 }} />
+          <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/referral")}>
+            <View style={[styles.menuIconWrap, { backgroundColor: "#f0fdfa" }]}>
+              <Ionicons name="people-outline" size={18} color="#0d9488" />
+            </View>
+            <Text style={styles.menuItemText}>Refer & Earn</Text>
+            <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
+          </TouchableOpacity>
         </View>
 
         {/* Saved Addresses */}
@@ -283,7 +295,10 @@ export default function ProfileScreen() {
                 </View>
                 <View style={styles.addressInfo}>
                   <View style={styles.addressLabelRow}>
-                    <Text style={styles.addressLabel}>{addr.label}</Text>
+                    <Text style={styles.addressLabel}>{addr.placeName || addr.label}</Text>
+                    <View style={styles.addressTypeBadge}>
+                      <Text style={styles.addressTypeBadgeText}>{addr.label}</Text>
+                    </View>
                     {addr.isDefault && (
                       <View style={styles.defaultBadge}>
                         <Text style={styles.defaultBadgeText}>Default</Text>
@@ -418,7 +433,7 @@ export default function ProfileScreen() {
                 setAddrLat(result.latitude || null);
                 setAddrLng(result.longitude || null);
                 setAddrPincode(result.pincode ?? null);
-                if (result.placeName) setAddrLabel(result.placeName);
+                if (result.placeName) setAddrPlaceName(result.placeName);
               }}
             />
 
@@ -515,6 +530,8 @@ const styles = StyleSheet.create({
   addressInfo: { flex: 1, marginLeft: 12 },
   addressLabelRow: { flexDirection: "row", alignItems: "center", gap: 6 },
   addressLabel: { fontSize: 14, fontWeight: "700", color: colors.text },
+  addressTypeBadge: { backgroundColor: "#f1f5f9", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 1 },
+  addressTypeBadgeText: { fontSize: 10, fontWeight: "600", color: "#64748b" },
   defaultBadge: { backgroundColor: colors.primary + "15", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 1 },
   defaultBadgeText: { fontSize: 10, fontWeight: "600", color: colors.primary },
   addressText: { fontSize: 13, color: "#64748b", marginTop: 2, lineHeight: 18 },

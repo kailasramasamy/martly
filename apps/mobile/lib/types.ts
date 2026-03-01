@@ -69,6 +69,7 @@ export interface UserAddress {
   id: string;
   userId: string;
   label: string;
+  placeName?: string | null;
   address: string;
   latitude?: number | null;
   longitude?: number | null;
@@ -247,4 +248,29 @@ export interface AppNotification {
   data: Record<string, unknown> | null;
   isRead: boolean;
   createdAt: string;
+}
+
+export interface ReferralItem {
+  id: string;
+  refereeName: string;
+  status: "PENDING" | "COMPLETED" | "EXPIRED";
+  referrerReward: number;
+  refereeReward: number;
+  completedAt: string | null;
+  createdAt: string;
+}
+
+export interface ReferralInfo {
+  referralCode: string;
+  stats: {
+    totalReferrals: number;
+    completedReferrals: number;
+    totalEarned: number;
+  };
+  referrals: ReferralItem[];
+  appliedReferral: {
+    referrerName: string;
+    status: string;
+    refereeReward: number;
+  } | null;
 }

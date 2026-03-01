@@ -1,16 +1,18 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useCart } from "../lib/cart-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 
 export function FloatingCart() {
   const { itemCount, totalAmount, storeName } = useCart();
+  const insets = useSafeAreaInsets();
 
   if (itemCount === 0) return null;
 
   return (
-    <View style={styles.wrapper}>
+    <View style={[styles.wrapper, { paddingBottom: Math.max(12, insets.bottom + 8) }]}>
       <TouchableOpacity
         style={styles.bar}
         activeOpacity={0.9}

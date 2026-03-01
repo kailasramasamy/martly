@@ -135,6 +135,13 @@ export const CustomerShow = () => {
                   <Descriptions.Item label={<><CalendarOutlined /> Joined</>}>
                     {record?.createdAt ? dayjs(record.createdAt).format("DD MMM YYYY") : "—"}
                   </Descriptions.Item>
+                  {record?.referralCode && (
+                    <Descriptions.Item label="Referral Code">
+                      <Tag color="cyan" style={{ fontFamily: "monospace", fontWeight: 600, letterSpacing: 1 }}>
+                        {record.referralCode}
+                      </Tag>
+                    </Descriptions.Item>
+                  )}
                 </Descriptions>
               </Card>
             </Col>

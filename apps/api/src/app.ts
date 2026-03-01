@@ -36,6 +36,8 @@ import { bannerRoutes } from "./routes/banners/index.js";
 import { notificationRoutes } from "./routes/notifications/index.js";
 import { storeRatingRoutes } from "./routes/store-ratings/index.js";
 import { reviewAnalyticsRoutes } from "./routes/review-analytics/index.js";
+import { referralRoutes } from "./routes/referrals/index.js";
+import { placesRoutes } from "./routes/places/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
 
@@ -123,6 +125,8 @@ export async function buildApp() {
       await api.register(notificationRoutes, { prefix: "/notifications" });
       await api.register(storeRatingRoutes, { prefix: "/store-ratings" });
       await api.register(reviewAnalyticsRoutes, { prefix: "/review-analytics" });
+      await api.register(referralRoutes, { prefix: "/referrals" });
+      await api.register(placesRoutes, { prefix: "/places" });
     },
     { prefix: "/api/v1" },
   );

@@ -694,7 +694,7 @@ export async function orderRoutes(app: FastifyInstance) {
         await releaseStock(app.prisma, stockItems);
       }
 
-      const order = await app.prisma.$transaction(async (tx) => {
+      const txResult = await app.prisma.$transaction(async (tx) => {
         const updateData: Record<string, unknown> = { status: body.status };
 
         // Auto-mark COD as PAID on delivery
@@ -745,6 +745,94 @@ export async function orderRoutes(app: FastifyInstance) {
                     description: `Earned from order #${existing.id.slice(0, 8)}`,
                   },
                 });
+              }
+            }
+          }
+        }
+
+        // Referral reward on first DELIVERED order
+        let referralCompleted = false;
+        let referralReferrerId: string | null = null;
+        let referralReferrerReward = 0;
+        let referralRefereeReward = 0;
+        if (body.status === "DELIVERED") {
+          const orderStore = await tx.store.findUnique({
+            where: { id: existing.storeId },
+            select: { organizationId: true },
+          });
+          if (orderStore) {
+            // Check if this is the user's first delivered order in this org
+            const prevDelivered = await tx.order.count({
+              where: {
+                userId: existing.userId,
+                store: { organizationId: orderStore.organizationId },
+                status: "DELIVERED",
+                id: { not: existing.id },
+              },
+            });
+            if (prevDelivered === 0) {
+              // First delivery — check for pending referral
+              const pendingReferral = await tx.referral.findUnique({
+                where: {
+                  refereeId_organizationId: {
+                    refereeId: existing.userId,
+                    organizationId: orderStore.organizationId,
+                  },
+                  status: "PENDING",
+                },
+              });
+              if (pendingReferral) {
+                const rrReward = Number(pendingReferral.referrerReward);
+                const reReward = Number(pendingReferral.refereeReward);
+
+                // Credit referrer wallet
+                if (rrReward > 0) {
+                  const updatedReferrer = await tx.user.update({
+                    where: { id: pendingReferral.referrerId },
+                    data: { walletBalance: { increment: rrReward } },
+                  });
+                  await tx.walletTransaction.create({
+                    data: {
+                      userId: pendingReferral.referrerId,
+                      type: "CREDIT",
+                      amount: rrReward,
+                      balanceAfter: Number(updatedReferrer.walletBalance),
+                      description: `Referral reward — your friend placed their first order`,
+                    },
+                  });
+                }
+
+                // Credit referee wallet
+                if (reReward > 0) {
+                  const updatedReferee = await tx.user.update({
+                    where: { id: existing.userId },
+                    data: { walletBalance: { increment: reReward } },
+                  });
+                  await tx.walletTransaction.create({
+                    data: {
+                      userId: existing.userId,
+                      type: "CREDIT",
+                      amount: reReward,
+                      balanceAfter: Number(updatedReferee.walletBalance),
+                      description: `Welcome reward — referral bonus for your first order`,
+                    },
+                  });
+                }
+
+                // Mark referral as completed
+                await tx.referral.update({
+                  where: { id: pendingReferral.id },
+                  data: {
+                    status: "COMPLETED",
+                    orderId: existing.id,
+                    completedAt: new Date(),
+                  },
+                });
+
+                referralCompleted = true;
+                referralReferrerId = pendingReferral.referrerId;
+                referralReferrerReward = rrReward;
+                referralRefereeReward = reReward;
               }
             }
           }
@@ -865,8 +953,11 @@ export async function orderRoutes(app: FastifyInstance) {
           });
         }
 
-        return updated;
+        return { updated, referralCompleted, referralReferrerId, referralReferrerReward, referralRefereeReward };
       });
+
+      const order = txResult.updated;
+      const { referralCompleted, referralReferrerId, referralReferrerReward, referralRefereeReward } = txResult;
 
       sendOrderStatusNotification(app.fcm, app.prisma, order.id, existing.userId, body.status);
       broadcastOrderUpdate(app.prisma, order.id, body.status);
@@ -894,6 +985,16 @@ export async function orderRoutes(app: FastifyInstance) {
           body: `Rate your order #${existing.id.slice(0, 8)} and help others shop better.`,
           data: { orderId: existing.id, screen: "write-review" },
         });
+
+        // Fire-and-forget: referral wallet notifications
+        if (referralCompleted) {
+          if (referralReferrerId && referralReferrerReward > 0) {
+            sendWalletNotification(app.fcm, app.prisma, referralReferrerId, "CREDIT", referralReferrerReward, "Referral reward");
+          }
+          if (referralRefereeReward > 0) {
+            sendWalletNotification(app.fcm, app.prisma, existing.userId, "CREDIT", referralRefereeReward, "Referral welcome bonus");
+          }
+        }
       }
 
       // Auto-complete delivery trip when last order is delivered

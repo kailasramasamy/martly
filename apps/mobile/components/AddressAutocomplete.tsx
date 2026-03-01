@@ -6,12 +6,13 @@ import {
   TouchableOpacity,
   StyleSheet,
   ActivityIndicator,
+  Keyboard,
+  ScrollView,
 } from "react-native";
 import * as Location from "expo-location";
 import { Ionicons } from "@expo/vector-icons";
+import { api } from "../lib/api";
 import { colors, spacing } from "../constants/theme";
-
-const GOOGLE_API_KEY = process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
 
 interface AddressResult {
   address: string;
@@ -44,16 +45,16 @@ export function AddressAutocomplete({ onSelect, placeholder, initialValue }: Pro
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const fetchPredictions = useCallback(async (text: string) => {
-    if (!GOOGLE_API_KEY || text.length < 3) {
+    if (text.length < 3) {
       setPredictions([]);
       return;
     }
 
     try {
-      const url = `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${encodeURIComponent(text)}&components=country:in&key=${GOOGLE_API_KEY}`;
-      const res = await fetch(url);
-      const data = await res.json() as { predictions: PlacePrediction[] };
-      setPredictions(data.predictions ?? []);
+      const res = await api.get<PlacePrediction[]>(`/api/v1/places/autocomplete?input=${encodeURIComponent(text)}`);
+      const results = res.data ?? [];
+      setPredictions(results);
+      if (results.length > 0) Keyboard.dismiss();
     } catch {
       setPredictions([]);
     }
@@ -74,28 +75,12 @@ export function AddressAutocomplete({ onSelect, placeholder, initialValue }: Pro
       ?? prediction.description.split(",")[0];
 
     try {
-      const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${prediction.place_id}&fields=geometry,formatted_address,address_components&key=${GOOGLE_API_KEY}`;
-      const res = await fetch(url);
-      const data = await res.json() as {
-        result: {
-          formatted_address: string;
-          geometry: { location: { lat: number; lng: number } };
-          address_components: Array<{ types: string[]; long_name: string }>;
-        };
-      };
-
-      const result = data.result;
-      const pinComp = result.address_components.find((c) => c.types.includes("postal_code"));
-
+      const res = await api.get<AddressResult>(`/api/v1/places/details?place_id=${prediction.place_id}`);
       onSelect({
-        address: result.formatted_address,
-        latitude: result.geometry.location.lat,
-        longitude: result.geometry.location.lng,
-        pincode: pinComp?.long_name,
+        ...res.data,
         placeName,
       });
     } catch {
-      // Fallback — use just the description
       onSelect({ address: prediction.description, latitude: 0, longitude: 0, placeName });
     } finally {
       setLoading(false);
@@ -114,36 +99,16 @@ export function AddressAutocomplete({ onSelect, placeholder, initialValue }: Pro
       const loc = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Balanced });
       const { latitude, longitude } = loc.coords;
 
-      // Reverse geocode
-      if (GOOGLE_API_KEY) {
-        const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${GOOGLE_API_KEY}`;
-        const res = await fetch(url);
-        const data = await res.json() as {
-          status: string;
-          results: Array<{
-            formatted_address: string;
-            address_components: Array<{ types: string[]; long_name: string }>;
-          }>;
-        };
-
-        if (data.status === "OK" && data.results[0]) {
-          const result = data.results[0];
-          const pinComp = result.address_components.find((c) => c.types.includes("postal_code"));
-          const neighborhood = result.address_components.find((c) =>
-            c.types.includes("sublocality_level_1") || c.types.includes("neighborhood"),
-          );
-          const locality = result.address_components.find((c) => c.types.includes("locality"));
-          setQuery(result.formatted_address);
-          onSelect({
-            address: result.formatted_address,
-            latitude,
-            longitude,
-            pincode: pinComp?.long_name,
-            placeName: neighborhood?.long_name ?? locality?.long_name,
-          });
+      try {
+        const res = await api.get<AddressResult>(`/api/v1/places/reverse-geocode?lat=${latitude}&lng=${longitude}`);
+        if (res.data) {
+          setQuery(res.data.address);
+          onSelect(res.data);
           setLocLoading(false);
           return;
         }
+      } catch {
+        // fall through to expo-location fallback
       }
 
       // Fallback to expo-location reverse geocode
@@ -188,7 +153,7 @@ export function AddressAutocomplete({ onSelect, placeholder, initialValue }: Pro
       </TouchableOpacity>
 
       {predictions.length > 0 && (
-        <View style={styles.dropdown}>
+        <ScrollView style={styles.dropdown} nestedScrollEnabled keyboardShouldPersistTaps="handled">
           {predictions.map((item) => (
             <TouchableOpacity
               key={item.place_id}
@@ -200,7 +165,7 @@ export function AddressAutocomplete({ onSelect, placeholder, initialValue }: Pro
               <Text style={styles.predictionText} numberOfLines={2}>{item.description}</Text>
             </TouchableOpacity>
           ))}
-        </View>
+        </ScrollView>
       )}
     </View>
   );
@@ -238,7 +203,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 1,
     borderColor: colors.border,
-    maxHeight: 200,
+    maxHeight: 280,
     marginTop: 4,
   },
   predictionRow: {

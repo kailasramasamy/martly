@@ -56,6 +56,7 @@ export async function addressRoutes(app: FastifyInstance) {
         data: {
           userId,
           label: body.label,
+          placeName: body.placeName,
           address: body.address,
           latitude,
           longitude,

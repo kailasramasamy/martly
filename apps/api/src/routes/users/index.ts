@@ -109,7 +109,7 @@ export async function userRoutes(app: FastifyInstance) {
       const targetUser = await app.prisma.user.findUnique({
         where: { id: request.params.id },
         select: {
-          id: true, email: true, name: true, phone: true, role: true, createdAt: true, updatedAt: true,
+          id: true, email: true, name: true, phone: true, role: true, referralCode: true, createdAt: true, updatedAt: true,
           _count: { select: { orders: true, reviews: true } },
           addresses: { select: { id: true, label: true, address: true, isDefault: true }, orderBy: [{ isDefault: "desc" }, { createdAt: "desc" }] },
         },

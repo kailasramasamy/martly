@@ -312,3 +312,16 @@ export const AudienceTypeLabels: Record<AudienceType, string> = {
   NOT_ORDERED_N_DAYS: "Inactive Customers",
   HIGH_VALUE_CUSTOMERS: "High Value",
 };
+
+export const ReferralStatus = {
+  PENDING: "PENDING",
+  COMPLETED: "COMPLETED",
+  EXPIRED: "EXPIRED",
+} as const;
+export type ReferralStatus = (typeof ReferralStatus)[keyof typeof ReferralStatus];
+
+export const ReferralStatusLabels: Record<ReferralStatus, string> = {
+  PENDING: "Pending",
+  COMPLETED: "Completed",
+  EXPIRED: "Expired",
+};

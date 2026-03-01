@@ -284,6 +284,7 @@ export type UpdateStoreProductInput = z.infer<typeof updateStoreProductSchema>;
 // ── User Address ─────────────────────────────────────
 export const createUserAddressSchema = z.object({
   label: z.enum(["Home", "Work", "Other"]).default("Home"),
+  placeName: z.string().optional(),
   address: z.string().min(5),
   latitude: z.number().min(-90).max(90).optional(),
   longitude: z.number().min(-180).max(180).optional(),
@@ -294,6 +295,7 @@ export type CreateUserAddressInput = z.infer<typeof createUserAddressSchema>;
 
 export const updateUserAddressSchema = z.object({
   label: z.enum(["Home", "Work", "Other"]).optional(),
+  placeName: z.string().nullish(),
   address: z.string().min(5).optional(),
   latitude: z.number().min(-90).max(90).nullish(),
   longitude: z.number().min(-180).max(180).nullish(),
@@ -796,3 +798,18 @@ export const updateNotificationTemplateSchema = z.object({
   imageUrl: z.string().url().nullish(),
 });
 export type UpdateNotificationTemplateInput = z.infer<typeof updateNotificationTemplateSchema>;
+
+// ── Referral ──────────────────────────────────────────
+export const applyReferralCodeSchema = z.object({
+  code: z.string().min(1).transform((v) => v.toUpperCase().trim()),
+  storeId: z.string().uuid(),
+});
+export type ApplyReferralCodeInput = z.infer<typeof applyReferralCodeSchema>;
+
+export const createReferralConfigSchema = z.object({
+  isEnabled: z.boolean().default(true),
+  referrerReward: z.number().min(0).max(10000).default(50),
+  refereeReward: z.number().min(0).max(10000).default(25),
+  maxReferralsPerUser: z.number().int().min(1).max(1000).default(50),
+});
+export type CreateReferralConfigInput = z.infer<typeof createReferralConfigSchema>;

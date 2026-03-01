@@ -30,6 +30,7 @@ const LABEL_ICONS: Record<string, string> = {
 
 export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps) {
   const [label, setLabel] = useState<string>("Home");
+  const [placeName, setPlaceName] = useState<string | null>(null);
   const [address, setAddress] = useState("");
   const [latitude, setLatitude] = useState<number | null>(null);
   const [longitude, setLongitude] = useState<number | null>(null);
@@ -41,6 +42,7 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
   useEffect(() => {
     if (visible) {
       setLabel("Home");
+      setPlaceName(null);
       setAddress("");
       setLatitude(null);
       setLongitude(null);
@@ -61,6 +63,7 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
     try {
       const payload: Record<string, unknown> = {
         label,
+        placeName: placeName ?? undefined,
         address: address.trim(),
         ...(latitude != null && longitude != null ? { latitude, longitude } : {}),
         ...(pincode ? { pincode } : {}),
@@ -141,7 +144,7 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
                 setLatitude(result.latitude || null);
                 setLongitude(result.longitude || null);
                 setPincode(result.pincode ?? null);
-                if (result.placeName) setLabel(result.placeName);
+                if (result.placeName) setPlaceName(result.placeName);
                 setError("");
               }}
             />
@@ -150,7 +153,10 @@ export function ProfileGate({ visible, onComplete, onDismiss }: ProfileGateProps
             {address.length > 0 && (
               <View style={styles.selectedPreview}>
                 <Ionicons name="checkmark-circle" size={16} color={colors.primary} />
-                <Text style={styles.selectedText} numberOfLines={2}>{address}</Text>
+                <View style={{ flex: 1 }}>
+                  {placeName && <Text style={styles.selectedPlaceName}>{placeName}</Text>}
+                  <Text style={styles.selectedText} numberOfLines={2}>{address}</Text>
+                </View>
               </View>
             )}
 
@@ -254,6 +260,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.primary + "20",
     padding: 12,
+  },
+  selectedPlaceName: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: colors.text,
+    marginBottom: 2,
   },
   selectedText: {
     flex: 1,

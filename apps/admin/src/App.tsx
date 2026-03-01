@@ -28,6 +28,7 @@ import {
   CarOutlined,
   PictureOutlined,
   NotificationOutlined,
+  UsergroupAddOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -103,6 +104,8 @@ import { CampaignShow } from "./pages/notifications/campaigns/show";
 import { TemplateList } from "./pages/notifications/templates/list";
 import { TemplateCreate } from "./pages/notifications/templates/create";
 import { TemplateEdit } from "./pages/notifications/templates/edit";
+import { ReferralSettings } from "./pages/referrals/settings";
+import { ReferralList } from "./pages/referrals/list";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -318,6 +321,16 @@ export default function App() {
                 meta: { label: "Loyalty Points", icon: <StarOutlined />, parent: "marketing" },
               },
               {
+                name: "referral-settings",
+                list: "/referral-settings",
+                meta: { label: "Referral Settings", icon: <UsergroupAddOutlined />, parent: "marketing" },
+              },
+              {
+                name: "referral-list",
+                list: "/referral-list",
+                meta: { label: "Referrals", icon: <UsergroupAddOutlined />, parent: "marketing" },
+              },
+              {
                 name: "delivery",
                 meta: { label: "Delivery", icon: <EnvironmentOutlined /> },
               },
@@ -466,6 +479,8 @@ export default function App() {
                 </Route>
                 <Route path="/loyalty-settings" element={<LoyaltySettings />} />
                 <Route path="/loyalty-customers" element={<LoyaltyCustomers />} />
+                <Route path="/referral-settings" element={<ReferralSettings />} />
+                <Route path="/referral-list" element={<ReferralList />} />
                 <Route path="/delivery-zones">
                   <Route index element={<DeliveryZoneList />} />
                   <Route path="create" element={<DeliveryZoneCreate />} />

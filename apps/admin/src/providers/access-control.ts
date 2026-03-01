@@ -137,6 +137,12 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage loyalty" };
     }
 
+    // Referrals: ORG_ADMIN full access
+    if (resource === "referral-settings" || resource === "referral-list") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage referrals" };
+    }
+
     // Everything else: allow
     return { can: true };
   },

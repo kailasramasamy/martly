@@ -18,6 +18,7 @@ import { useAuth } from "../lib/auth-context";
 import { useCart } from "../lib/cart-context";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
 import { RazorpayCheckout } from "../components/RazorpayCheckout";
 import { ProfileGate } from "../components/ProfileGate";
@@ -54,6 +55,7 @@ export default function CheckoutScreen() {
   const { user } = useAuth();
   const router = useRouter();
   const toast = useToast();
+  const insets = useSafeAreaInsets();
   const { storeId, storeName, items, totalAmount, itemCount } = useCart();
 
   const [showProfileGate, setShowProfileGate] = useState(false);
@@ -639,7 +641,7 @@ export default function CheckoutScreen() {
                       />
                       <View style={styles.addressOptionInfo}>
                         <View style={styles.addressOptionLabelRow}>
-                          <Text style={styles.addressOptionLabel}>{addr.label}</Text>
+                          <Text style={styles.addressOptionLabel}>{addr.placeName || addr.label}</Text>
                           {addr.isDefault && (
                             <View style={styles.defaultBadge}>
                               <Text style={styles.defaultBadgeText}>Default</Text>
@@ -1207,7 +1209,7 @@ export default function CheckoutScreen() {
       </ScrollView>
 
       {/* Sticky Place Order Bar */}
-      <View style={styles.footer}>
+      <View style={[styles.footer, { paddingBottom: Math.max(12, insets.bottom + 8) }]}>
         <TouchableOpacity
           style={[styles.placeOrderBar, orderDisabled && styles.placeOrderBarDisabled]}
           activeOpacity={0.9}
@@ -1293,7 +1295,7 @@ export default function CheckoutScreen() {
                     />
                     <View style={{ flex: 1 }}>
                       <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-                        <Text style={styles.addressPickerLabel}>{addr.label}</Text>
+                        <Text style={styles.addressPickerLabel}>{addr.placeName || addr.label}</Text>
                         {addr.isDefault && (
                           <View style={styles.defaultBadge}>
                             <Text style={styles.defaultBadgeText}>Default</Text>

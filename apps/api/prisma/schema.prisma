@@ -175,6 +175,12 @@ enum AudienceType {
   HIGH_VALUE_CUSTOMERS
 }
 
+enum ReferralStatus {
+  PENDING
+  COMPLETED
+  EXPIRED
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -196,6 +202,8 @@ model Organization {
   banners             Banner[]
   notificationCampaigns NotificationCampaign[]
   notificationTemplates NotificationTemplate[]
+  referralConfig      ReferralConfig?
+  referrals           Referral[]
 
   @@map("organizations")
 }
@@ -241,6 +249,7 @@ model User {
   updatedAt    DateTime @updatedAt @map("updated_at")
 
   walletBalance Decimal @default(0) @db.Decimal(10, 2) @map("wallet_balance")
+  referralCode  String? @unique @map("referral_code")
 
   userStores           UserStore[]
   orders               Order[]
@@ -258,6 +267,8 @@ model User {
   templatesCreated     NotificationTemplate[] @relation("TemplatesCreated")
   reviewReplies        ReviewReply[]          @relation("ReviewReplies")
   storeRatings         StoreRating[]          @relation("StoreRatings")
+  referralsMade        Referral[]             @relation("ReferralsMade")
+  referralReceived     Referral[]             @relation("ReferralReceived")
 
   @@map("users")
 }
@@ -266,6 +277,7 @@ model UserAddress {
   id        String   @id @default(uuid())
   userId    String   @map("user_id")
   label     String   @default("Home")
+  placeName String?  @map("place_name")
   address   String
   latitude  Float?   @map("latitude")
   longitude Float?   @map("longitude")
@@ -957,4 +969,42 @@ model Notification {
   @@index([userId, createdAt])
   @@index([campaignId])
   @@map("notifications")
+}
+
+model ReferralConfig {
+  id                  String   @id @default(uuid())
+  organizationId      String   @unique @map("organization_id")
+  isEnabled           Boolean  @default(true) @map("is_enabled")
+  referrerReward      Decimal  @default(50) @db.Decimal(10, 2) @map("referrer_reward")
+  refereeReward       Decimal  @default(25) @db.Decimal(10, 2) @map("referee_reward")
+  maxReferralsPerUser Int      @default(50) @map("max_referrals_per_user")
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id])
+
+  @@map("referral_configs")
+}
+
+model Referral {
+  id             String         @id @default(uuid())
+  referrerId     String         @map("referrer_id")
+  refereeId      String         @map("referee_id")
+  organizationId String         @map("organization_id")
+  status         ReferralStatus @default(PENDING)
+  referrerReward Decimal        @db.Decimal(10, 2) @map("referrer_reward")
+  refereeReward  Decimal        @db.Decimal(10, 2) @map("referee_reward")
+  orderId        String?        @map("order_id")
+  completedAt    DateTime?      @map("completed_at")
+  createdAt      DateTime       @default(now()) @map("created_at")
+  updatedAt      DateTime       @updatedAt @map("updated_at")
+
+  referrer     User         @relation("ReferralsMade", fields: [referrerId], references: [id])
+  referee      User         @relation("ReferralReceived", fields: [refereeId], references: [id])
+  organization Organization @relation(fields: [organizationId], references: [id])
+
+  @@unique([refereeId, organizationId])
+  @@index([referrerId])
+  @@index([organizationId])
+  @@map("referrals")
 }

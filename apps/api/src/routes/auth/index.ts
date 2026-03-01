@@ -4,6 +4,7 @@ import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema, send
 import type { ApiResponse, AuthTokens, LoginResponse, OrgSummary } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { sendNotification } from "../../services/notification.js";
+import { ensureReferralCode } from "../../services/referral-code.js";
 
 /** Look up distinct organizations a user belongs to via UserStore → Store → Organization */
 async function getUserOrgs(prisma: FastifyInstance["prisma"], userId: string): Promise<OrgSummary[]> {
@@ -133,7 +134,7 @@ export async function authRoutes(app: FastifyInstance) {
       },
     });
 
-    // Fire-and-forget: welcome notification
+    // Fire-and-forget: welcome notification + referral code
     sendNotification(app.fcm, app.prisma, {
       userId: user.id,
       type: "WELCOME",
@@ -141,6 +142,7 @@ export async function authRoutes(app: FastifyInstance) {
       body: "Start exploring fresh groceries and daily essentials near you.",
       data: { screen: "home" },
     });
+    ensureReferralCode(app.prisma, user.id).catch(() => {});
 
     const accessToken = app.jwt.sign(
       { sub: user.id, email: user.email, role: user.role },
@@ -201,7 +203,7 @@ export async function authRoutes(app: FastifyInstance) {
         },
       });
 
-      // Fire-and-forget: welcome notification
+      // Fire-and-forget: welcome notification + referral code
       sendNotification(app.fcm, app.prisma, {
         userId: user.id,
         type: "WELCOME",
@@ -209,6 +211,7 @@ export async function authRoutes(app: FastifyInstance) {
         body: "Start exploring fresh groceries and daily essentials near you.",
         data: { screen: "home" },
       });
+      ensureReferralCode(app.prisma, user.id).catch(() => {});
     }
 
     const accessToken = app.jwt.sign(

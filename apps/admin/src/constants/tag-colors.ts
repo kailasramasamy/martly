@@ -149,3 +149,9 @@ export const AUDIENCE_TYPE_CONFIG: Record<string, { color: string; label: string
   NOT_ORDERED_N_DAYS: { color: "orange", label: "Inactive" },
   HIGH_VALUE_CUSTOMERS: { color: "gold", label: "High Value" },
 };
+
+export const REFERRAL_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  PENDING: { color: "orange", label: "Pending" },
+  COMPLETED: { color: "green", label: "Completed" },
+  EXPIRED: { color: "red", label: "Expired" },
+};

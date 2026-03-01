@@ -267,14 +267,16 @@ export async function homeRoutes(app: FastifyInstance) {
           variantCount: variantCountMap.get(item.storeProduct.productId) ?? 1,
         }));
 
-      // Supplement buy again with related products from same categories if < 6 items
+      // Supplement buy again with related products if < 6 items
       const BUY_AGAIN_MIN = 6;
       if (buyAgain.length > 0 && buyAgain.length < BUY_AGAIN_MIN) {
         const existingProductIds = buyAgain.map((b: any) => b.productId as string);
         const categoryIds = [...new Set(buyAgain.map((b: any) => b.product?.category?.id).filter(Boolean))] as string[];
 
+        // First try same categories
+        let supplementRaw: any[] = [];
         if (categoryIds.length > 0) {
-          const supplementRaw = await app.prisma.storeProduct.findMany({
+          supplementRaw = await app.prisma.storeProduct.findMany({
             where: {
               storeId,
               isActive: true,
@@ -288,15 +290,39 @@ export async function homeRoutes(app: FastifyInstance) {
             orderBy: { stock: "desc" },
             include: storeProductInclude,
           });
+        }
 
+        // If still not enough, fill with popular/featured products from any category
+        const stillNeeded = BUY_AGAIN_MIN - buyAgain.length - supplementRaw.length;
+        if (stillNeeded > 0) {
+          const excludeProductIds = [
+            ...existingProductIds,
+            ...supplementRaw.map((sp: any) => sp.productId as string),
+          ];
+          const popularRaw = await app.prisma.storeProduct.findMany({
+            where: {
+              storeId,
+              isActive: true,
+              stock: { gt: 0 },
+              product: {
+                id: { notIn: excludeProductIds },
+                isActive: true,
+              },
+            },
+            take: stillNeeded,
+            orderBy: [{ isFeatured: "desc" }, { stock: "desc" }],
+            include: storeProductInclude,
+          });
+          supplementRaw = [...supplementRaw, ...popularRaw];
+        }
+
+        if (supplementRaw.length > 0) {
           const supplementProductIds = supplementRaw.map((sp: any) => sp.productId as string);
-          const supplementVariantCounts = supplementProductIds.length > 0
-            ? await app.prisma.storeProduct.groupBy({
-                by: ["productId"],
-                where: { storeId, isActive: true, productId: { in: supplementProductIds } },
-                _count: true,
-              })
-            : [];
+          const supplementVariantCounts = await app.prisma.storeProduct.groupBy({
+            by: ["productId"],
+            where: { storeId, isActive: true, productId: { in: supplementProductIds } },
+            _count: true,
+          });
           const supplementVcMap = new Map(supplementVariantCounts.map((c) => [c.productId, c._count]));
 
           const supplementEnriched = supplementRaw.map((sp: any) => ({

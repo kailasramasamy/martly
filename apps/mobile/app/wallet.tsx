@@ -33,6 +33,7 @@ export default function WalletScreen() {
   const [data, setData] = useState<WalletData | null>(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const fetchWallet = useCallback(async () => {
     try {
@@ -69,15 +70,16 @@ export default function WalletScreen() {
   const renderTransaction = ({ item }: { item: WalletTransaction }) => {
     const isCredit = item.type === "CREDIT";
     const amount = Number(item.amount);
+    const balanceAfter = Number(item.balanceAfter);
     const date = new Date(item.createdAt);
+    const isExpanded = expandedId === item.id;
+    const description = item.description ?? (isCredit ? "Wallet credit" : "Wallet debit");
 
     return (
       <TouchableOpacity
         style={styles.txRow}
-        activeOpacity={item.orderId ? 0.7 : 1}
-        onPress={() => {
-          if (item.orderId) router.push(`/order/${item.orderId}`);
-        }}
+        activeOpacity={0.7}
+        onPress={() => setExpandedId(isExpanded ? null : item.id)}
       >
         <View style={[styles.txIconWrap, isCredit ? styles.txIconCredit : styles.txIconDebit]}>
           <Ionicons
@@ -86,22 +88,61 @@ export default function WalletScreen() {
             color={isCredit ? "#16a34a" : "#ef4444"}
           />
         </View>
-        <View style={styles.txInfo}>
-          <Text style={styles.txDescription} numberOfLines={1}>
-            {item.description ?? (isCredit ? "Wallet credit" : "Wallet debit")}
-          </Text>
-          <Text style={styles.txDate}>
-            {date.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}
-            {" \u00B7 "}
-            {date.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}
-          </Text>
-        </View>
-        <View style={styles.txAmountWrap}>
-          <Text style={[styles.txAmount, isCredit ? styles.txAmountCredit : styles.txAmountDebit]}>
-            {isCredit ? "+" : "-"}{"\u20B9"}{amount.toFixed(0)}
-          </Text>
-          {item.orderId && (
-            <Ionicons name="chevron-forward" size={14} color="#94a3b8" style={{ marginTop: 2 }} />
+        <View style={styles.txContent}>
+          <View style={styles.txTopRow}>
+            <View style={styles.txInfo}>
+              <Text style={styles.txDescription} numberOfLines={isExpanded ? undefined : 1}>
+                {description}
+              </Text>
+              <Text style={styles.txDate}>
+                {date.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}
+                {" \u00B7 "}
+                {date.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}
+              </Text>
+            </View>
+            <View style={styles.txAmountWrap}>
+              <Text style={[styles.txAmount, isCredit ? styles.txAmountCredit : styles.txAmountDebit]}>
+                {isCredit ? "+" : "-"}{"\u20B9"}{amount.toFixed(0)}
+              </Text>
+              <Ionicons
+                name={isExpanded ? "chevron-up" : "chevron-down"}
+                size={14}
+                color="#94a3b8"
+                style={{ marginTop: 2 }}
+              />
+            </View>
+          </View>
+
+          {isExpanded && (
+            <View style={styles.txDetails}>
+              <View style={styles.txDetailRow}>
+                <Text style={styles.txDetailLabel}>Type</Text>
+                <View style={[styles.txTypeBadge, isCredit ? styles.txTypeBadgeCredit : styles.txTypeBadgeDebit]}>
+                  <Text style={[styles.txTypeBadgeText, isCredit ? styles.txTypeBadgeTextCredit : styles.txTypeBadgeTextDebit]}>
+                    {isCredit ? "Credit" : "Debit"}
+                  </Text>
+                </View>
+              </View>
+              <View style={styles.txDetailRow}>
+                <Text style={styles.txDetailLabel}>Amount</Text>
+                <Text style={styles.txDetailValue}>{"\u20B9"}{amount.toFixed(2)}</Text>
+              </View>
+              <View style={styles.txDetailRow}>
+                <Text style={styles.txDetailLabel}>Balance after</Text>
+                <Text style={styles.txDetailValue}>{"\u20B9"}{balanceAfter.toFixed(2)}</Text>
+              </View>
+              {item.orderId && (
+                <TouchableOpacity
+                  style={styles.viewOrderBtn}
+                  onPress={() => router.push(`/order/${item.orderId}`)}
+                  activeOpacity={0.7}
+                >
+                  <Ionicons name="receipt-outline" size={14} color={colors.primary} />
+                  <Text style={styles.viewOrderText}>View Order</Text>
+                  <Ionicons name="chevron-forward" size={14} color={colors.primary} />
+                </TouchableOpacity>
+              )}
+            </View>
           )}
         </View>
       </TouchableOpacity>
@@ -218,10 +259,18 @@ const styles = StyleSheet.create({
   // Transactions
   txRow: {
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-start",
     paddingHorizontal: spacing.md,
     paddingVertical: 14,
     backgroundColor: "#fff",
+  },
+  txContent: {
+    flex: 1,
+    marginLeft: 12,
+  },
+  txTopRow: {
+    flexDirection: "row",
+    alignItems: "center",
   },
   txIconWrap: {
     width: 40,
@@ -229,6 +278,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     justifyContent: "center",
     alignItems: "center",
+    marginTop: 2,
   },
   txIconCredit: {
     backgroundColor: "#f0fdf4",
@@ -238,7 +288,6 @@ const styles = StyleSheet.create({
   },
   txInfo: {
     flex: 1,
-    marginLeft: 12,
     marginRight: 8,
   },
   txDescription: {
@@ -252,8 +301,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   txAmountWrap: {
-    flexDirection: "row",
-    alignItems: "center",
+    alignItems: "flex-end",
     gap: 2,
   },
   txAmount: {
@@ -266,6 +314,67 @@ const styles = StyleSheet.create({
   txAmountDebit: {
     color: "#ef4444",
   },
+
+  // Expanded details
+  txDetails: {
+    marginTop: 12,
+    backgroundColor: "#f8fafc",
+    borderRadius: 10,
+    padding: 12,
+    gap: 8,
+  },
+  txDetailRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  txDetailLabel: {
+    fontSize: 13,
+    color: "#64748b",
+  },
+  txDetailValue: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: colors.text,
+  },
+  txTypeBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 6,
+  },
+  txTypeBadgeCredit: {
+    backgroundColor: "#dcfce7",
+  },
+  txTypeBadgeDebit: {
+    backgroundColor: "#fee2e2",
+  },
+  txTypeBadgeText: {
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  txTypeBadgeTextCredit: {
+    color: "#16a34a",
+  },
+  txTypeBadgeTextDebit: {
+    color: "#ef4444",
+  },
+  viewOrderBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginTop: 4,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    backgroundColor: colors.primary + "10",
+    borderRadius: 8,
+    alignSelf: "flex-start",
+  },
+  viewOrderText: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: colors.primary,
+  },
+
   separator: {
     height: 1,
     backgroundColor: "#f1f5f9",
