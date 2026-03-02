@@ -153,6 +153,12 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage support tickets" };
     }
 
+    // Store Intelligence: ORG_ADMIN, STORE_MANAGER
+    if (resource === "store-intelligence") {
+      if (["ORG_ADMIN", "STORE_MANAGER"].includes(role)) return { can: true };
+      return { can: false, reason: "Only Super Admin, Org Admin, or Store Manager can access intelligence" };
+    }
+
     // Everything else: allow
     return { can: true };
   },

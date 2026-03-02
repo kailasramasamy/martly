@@ -30,6 +30,8 @@ import {
   NotificationOutlined,
   UsergroupAddOutlined,
   CustomerServiceOutlined,
+  RobotOutlined,
+  FundOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -109,6 +111,7 @@ import { ReferralSettings } from "./pages/referrals/settings";
 import { ReferralList } from "./pages/referrals/list";
 import { SupportTicketList } from "./pages/support-tickets/list";
 import { SupportTicketShow } from "./pages/support-tickets/show";
+import { StoreIntelligencePage } from "./pages/store-intelligence";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -391,6 +394,15 @@ export default function App() {
                 show: "/support-tickets/show/:id",
                 meta: { label: "Support Tickets", icon: <CustomerServiceOutlined /> },
               },
+              {
+                name: "operations",
+                meta: { label: "Operations", icon: <RobotOutlined /> },
+              },
+              {
+                name: "store-intelligence",
+                list: "/store-intelligence",
+                meta: { label: "Store Intelligence", icon: <FundOutlined />, parent: "operations" },
+              },
             ]}
           >
             <Routes>
@@ -506,6 +518,7 @@ export default function App() {
                 <Route path="/riders" element={<RidersList />} />
                 <Route path="/stock" element={<StockPage />} />
                 <Route path="/featured-products" element={<FeaturedProductsPage />} />
+                <Route path="/store-intelligence" element={<StoreIntelligencePage />} />
                 <Route path="/" element={<DashboardPage />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />
