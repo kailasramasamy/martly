@@ -165,6 +165,8 @@ export async function orderRoutes(app: FastifyInstance) {
     // Resolve delivery address from addressId or direct input
     let deliveryAddress: string | null = null;
     let deliveryPincode: string | null = null;
+    let deliveryLat: number | null = null;
+    let deliveryLng: number | null = null;
     if (isPickup) {
       // For pickup, store the store address for the record
       deliveryAddress = store?.address ?? null;
@@ -177,6 +179,8 @@ export async function orderRoutes(app: FastifyInstance) {
         }
         deliveryAddress = addr.address;
         deliveryPincode = addr.pincode ?? null;
+        deliveryLat = addr.latitude ?? null;
+        deliveryLng = addr.longitude ?? null;
       }
     }
 
@@ -538,6 +542,8 @@ export async function orderRoutes(app: FastifyInstance) {
             storeId: body.storeId,
             fulfillmentType,
             deliveryAddress,
+            deliveryLat: deliveryLat ?? undefined,
+            deliveryLng: deliveryLng ?? undefined,
             deliveryPincode: deliveryPincode ?? undefined,
             paymentMethod: body.paymentMethod as "ONLINE" | "COD",
             totalAmount,

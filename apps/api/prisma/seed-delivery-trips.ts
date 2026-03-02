@@ -18,9 +18,9 @@ async function main() {
   const passwordHash = await bcrypt.hash("rider123", 10);
 
   const riders = [
-    { email: "raju@martly.dev", name: "Raju Rider", phone: "9876543210" },
-    { email: "vikram@martly.dev", name: "Vikram Delivery", phone: "9876543211" },
-    { email: "suresh@martly.dev", name: "Suresh Express", phone: "9876543212" },
+    { email: "raju@martly.dev", name: "Raju Rider", phone: "9876543220" },
+    { email: "vikram@martly.dev", name: "Vikram Delivery", phone: "9876543221" },
+    { email: "suresh@martly.dev", name: "Suresh Express", phone: "9876543222" },
   ];
 
   for (const rider of riders) {

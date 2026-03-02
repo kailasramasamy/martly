@@ -35,7 +35,10 @@
     },
     "ios": {
       "bundleIdentifier": "com.martly.app",
-      "googleServicesFile": "./GoogleService-Info.plist"
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAOPrWjNw0H_USbXZqnk3_V03FgvSEe6Ko"
+      }
     }
   }
 }

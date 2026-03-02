@@ -358,6 +358,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
       include: {
         store: { select: { id: true, name: true, latitude: true, longitude: true, address: true } },
         orders: {
+          orderBy: { deliverySequence: "asc" },
           select: {
             id: true,
             status: true,
@@ -366,6 +367,7 @@ export async function riderLocationRoutes(app: FastifyInstance) {
             deliveryLat: true,
             deliveryLng: true,
             deliveryPincode: true,
+            deliverySequence: true,
             paymentMethod: true,
             paymentStatus: true,
             createdAt: true,

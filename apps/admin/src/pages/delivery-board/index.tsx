@@ -389,23 +389,6 @@ export const DeliveryBoard = () => {
     [trips],
   );
 
-  const scheduledUnassigned = useMemo(
-    () => filteredScheduledOrders.filter((o) => o.status === "READY" && !o.deliveryTripId),
-    [filteredScheduledOrders],
-  );
-
-  // Check if all selected orders are READY + unassigned (for create trip button)
-  const canCreateTrip = useMemo(() => {
-    if (selectedRowKeys.length === 0) return false;
-    if (activeTab === "express") {
-      return selectedRowKeys.every((id) => expressUnassigned.some((o) => o.id === id));
-    }
-    if (activeTab === "scheduled") {
-      return selectedRowKeys.every((id) => scheduledUnassigned.some((o) => o.id === id));
-    }
-    return false;
-  }, [activeTab, selectedRowKeys, expressUnassigned, scheduledUnassigned]);
-
   /* ── Unassigned orders grouped by pincode ────────────── */
 
   const unassignedByPincode = useMemo(() => {
@@ -817,6 +800,23 @@ export const DeliveryBoard = () => {
     const slot = scheduledSlots.find((s) => s.key === activeSlot);
     return slot?.orders ?? [];
   }, [scheduledSlots, activeSlot]);
+
+  const scheduledUnassigned = useMemo(
+    () => filteredScheduledOrders.filter((o) => o.status === "READY" && !o.deliveryTripId),
+    [filteredScheduledOrders],
+  );
+
+  // Check if all selected orders are READY + unassigned (for create trip button)
+  const canCreateTrip = useMemo(() => {
+    if (selectedRowKeys.length === 0) return false;
+    if (activeTab === "express") {
+      return selectedRowKeys.every((id) => expressUnassigned.some((o) => o.id === id));
+    }
+    if (activeTab === "scheduled") {
+      return selectedRowKeys.every((id) => scheduledUnassigned.some((o) => o.id === id));
+    }
+    return false;
+  }, [activeTab, selectedRowKeys, expressUnassigned, scheduledUnassigned]);
 
   const isToday = date.isSame(dayjs(), "day");
 

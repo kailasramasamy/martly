@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Martly Rider",
+    "slug": "martly-rider",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "martly-rider",
+    "platforms": ["ios", "android"],
+    "newArchEnabled": true,
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f97316"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Martly Rider needs your location to broadcast delivery position to customers."
+        }
+      ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.martly.rider",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAOPrWjNw0H_USbXZqnk3_V03FgvSEe6Ko"
+      }
+    },
+    "android": {
+      "package": "com.martly.rider",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAOPrWjNw0H_USbXZqnk3_V03FgvSEe6Ko"
+        }
+      }
+    }
+  }
+}

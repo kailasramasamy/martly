@@ -143,9 +143,10 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
       include: {
         rider: { select: { id: true, name: true, phone: true } },
         orders: {
+          orderBy: { deliverySequence: "asc" },
           select: {
             id: true, status: true, totalAmount: true, deliveryAddress: true, deliveryPincode: true,
-            createdAt: true,
+            deliverySequence: true, createdAt: true,
             user: { select: { id: true, name: true } },
             items: { include: { product: { select: { name: true } } } },
           },

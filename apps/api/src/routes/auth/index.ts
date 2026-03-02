@@ -214,12 +214,18 @@ export async function authRoutes(app: FastifyInstance) {
       ensureReferralCode(app.prisma, user.id).catch(() => {});
     }
 
-    const accessToken = app.jwt.sign(
-      { sub: user.id, email: user.email, role: user.role },
-      { expiresIn: "15m" },
-    );
+    // For org-scoped roles (STAFF, STORE_MANAGER, ORG_ADMIN), include organizationId in token
+    const tokenPayload: Record<string, unknown> = { sub: user.id, email: user.email, role: user.role };
+    if (user.role !== "SUPER_ADMIN" && user.role !== "CUSTOMER") {
+      const orgs = await getUserOrgs(app.prisma, user.id);
+      if (orgs.length === 1) {
+        tokenPayload.organizationId = orgs[0].id;
+      }
+    }
+
+    const accessToken = app.jwt.sign(tokenPayload, { expiresIn: "15m" });
     const refreshToken = app.jwt.sign(
-      { sub: user.id, email: user.email, role: user.role, type: "refresh" },
+      { ...tokenPayload, type: "refresh" },
       { expiresIn: "30d" },
     );
 

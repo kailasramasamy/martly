@@ -161,6 +161,7 @@ function RootLayoutNav() {
         <Stack.Screen name="support-ticket/[id]" options={{ headerShown: true, title: "Ticket Details" }} />
         <Stack.Screen name="smart-reorder" options={{ headerShown: true, title: "Smart Reorder" }} />
         <Stack.Screen name="return-request" options={{ headerShown: true, title: "Request Return" }} />
+        <Stack.Screen name="live-tracking" options={{ headerShown: true, title: "Live Tracking" }} />
         <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />
       </Stack>
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}

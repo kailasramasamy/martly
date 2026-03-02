@@ -59,6 +59,7 @@ interface OrderData {
   fulfillmentType?: "DELIVERY" | "PICKUP";
   totalAmount: string;
   deliveryAddress: string | null;
+  deliveryTripId?: string | null;
   createdAt: string;
   updatedAt: string;
   items: OrderItemData[];
@@ -362,6 +363,20 @@ export default function OrderDetailScreen() {
             );
           })}
         </View>
+      )}
+
+      {/* Live Tracking — OUT_FOR_DELIVERY with a trip */}
+      {order.status === "OUT_FOR_DELIVERY" && order.deliveryTripId && (
+        <TouchableOpacity
+          style={styles.trackBtn}
+          onPress={() => router.push({ pathname: "/live-tracking", params: { orderId: order.id } })}
+          activeOpacity={0.7}
+        >
+          <View style={styles.trackBtnPulse} />
+          <Ionicons name="navigate" size={20} color="#fff" />
+          <Text style={styles.trackBtnText}>Track Rider Live</Text>
+          <Ionicons name="chevron-forward" size={18} color="rgba(255,255,255,0.7)" />
+        </TouchableOpacity>
       )}
 
       {/* Delivery Address / Pickup Location */}
@@ -1126,6 +1141,34 @@ const styles = StyleSheet.create({
     paddingTop: spacing.sm,
     borderTopWidth: 1,
     borderTopColor: colors.border,
+  },
+  trackBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+    backgroundColor: colors.primary,
+    borderRadius: 12,
+    paddingVertical: 14,
+    paddingHorizontal: 20,
+    marginBottom: spacing.lg,
+    shadowColor: colors.primary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 4,
+  },
+  trackBtnPulse: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: "#22c55e",
+  },
+  trackBtnText: {
+    flex: 1,
+    fontSize: fontSize.md,
+    fontWeight: "700",
+    color: "#fff",
   },
   returnBtn: {
     flexDirection: "row",

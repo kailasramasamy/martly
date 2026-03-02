@@ -1,7 +1,8 @@
 import fp from "fastify-plugin";
 import websocket from "@fastify/websocket";
 import type { FastifyInstance } from "fastify";
-import { registerClient, removeClient, subscribeToOrder, unsubscribeFromOrder } from "../services/ws-manager.js";
+import { registerClient, removeClient, subscribeToOrder, unsubscribeFromOrder, subscribeToTrip, unsubscribeFromTrip, broadcastRiderLocation } from "../services/ws-manager.js";
+import { storeRiderLocation } from "../routes/rider-location/index.js";
 
 export const websocketPlugin = fp(async (app: FastifyInstance) => {
   await app.register(websocket);
@@ -32,9 +33,33 @@ export const websocketPlugin = fp(async (app: FastifyInstance) => {
         switch (msg.type) {
           case "subscribe":
             if (msg.orderId) subscribeToOrder(socket, msg.orderId);
+            if (msg.tripId) subscribeToTrip(socket, msg.tripId);
             break;
           case "unsubscribe":
             if (msg.orderId) unsubscribeFromOrder(socket, msg.orderId);
+            if (msg.tripId) unsubscribeFromTrip(socket, msg.tripId);
+            break;
+          case "location:update":
+            // Rider broadcasting their GPS position
+            if (msg.tripId && msg.lat != null && msg.lng != null) {
+              const updatedAt = new Date().toISOString();
+              // Store in memory so REST polling also returns the latest location
+              storeRiderLocation(msg.tripId, {
+                riderId: payload.sub,
+                lat: msg.lat,
+                lng: msg.lng,
+                heading: msg.heading,
+                speed: msg.speed,
+                updatedAt,
+              });
+              broadcastRiderLocation(msg.tripId, {
+                lat: msg.lat,
+                lng: msg.lng,
+                heading: msg.heading,
+                speed: msg.speed,
+                updatedAt,
+              });
+            }
             break;
           case "ping":
             socket.send(JSON.stringify({ type: "pong" }));

@@ -339,6 +339,7 @@ export default function LiveTrackingScreen() {
             }}
             title={tracking.rider.name}
             description="Your delivery rider"
+            tracksViewChanges={false}
           >
             <View style={styles.riderMarker}>
               <Ionicons name="bicycle" size={20} color="#fff" />
@@ -352,6 +353,7 @@ export default function LiveTrackingScreen() {
             coordinate={{ latitude: storeLat!, longitude: storeLng! }}
             title={tracking.store?.name ?? "Store"}
             description="Pickup location"
+            tracksViewChanges={false}
           >
             <View style={styles.storeMarker}>
               <Ionicons name="storefront" size={16} color="#fff" />
@@ -366,6 +368,7 @@ export default function LiveTrackingScreen() {
             coordinate={{ latitude: stop.lat, longitude: stop.lng }}
             title={stop.isYourStop ? "Your delivery" : `Stop ${idx + 1}`}
             anchor={{ x: 0.5, y: 0.5 }}
+            tracksViewChanges={false}
           >
             <View style={[
               styles.stopMarker,

@@ -28,7 +28,7 @@ Martly has 38 API routes, 50+ admin pages, and 25+ mobile screens covering:
 
 - [x] **Minimum order amount** — Block checkout below a threshold (per store). Blinkit/Zepto/all enforce this. `Small` *(done: min order + base delivery fee + free delivery threshold)*
 - [x] **Delivery instructions** — Free-text field at checkout ("leave at door", "call before"). Standard everywhere. `Small` *(already built: deliveryNotes field on Order, TextInput on checkout, shown in admin order detail)*
-- [ ] **Return/refund requests** — In-app claim with photo upload, reason selection. Currently refunds are admin-only wallet credits. `Medium`
+- [x] **Return/refund requests** — In-app claim with photo upload, reason selection. Currently refunds are admin-only wallet credits. `Medium`
 - [ ] **Live order tracking (map)** — Real-time rider GPS on a map during delivery. Every single app has this. `Medium`
 - [ ] **Saved/default payment method** — One-tap reorder with saved UPI/card. Reduces checkout friction. `Small-Medium`
 

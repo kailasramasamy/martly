@@ -44,6 +44,7 @@ import { smartReorderRoutes } from "./routes/smart-reorder/index.js";
 import { storeIntelligenceRoutes } from "./routes/store-intelligence/index.js";
 import { customerInsightsRoutes } from "./routes/customer-insights/index.js";
 import { returnRequestRoutes } from "./routes/return-requests/index.js";
+import { riderLocationRoutes } from "./routes/rider-location/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
 import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
@@ -141,6 +142,7 @@ export async function buildApp() {
       await api.register(storeIntelligenceRoutes, { prefix: "/store-intelligence" });
       await api.register(customerInsightsRoutes, { prefix: "/customer-insights" });
       await api.register(returnRequestRoutes, { prefix: "/return-requests" });
+      await api.register(riderLocationRoutes, { prefix: "/rider-location" });
     },
     { prefix: "/api/v1" },
   );
