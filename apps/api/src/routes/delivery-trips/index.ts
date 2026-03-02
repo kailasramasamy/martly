@@ -94,11 +94,13 @@ export async function deliveryTripRoutes(app: FastifyInstance) {
         },
       });
 
-      // Link orders to trip
-      await tx.order.updateMany({
-        where: { id: { in: body.orderIds } },
-        data: { deliveryTripId: created.id },
-      });
+      // Link orders to trip with delivery sequence
+      for (let i = 0; i < body.orderIds.length; i++) {
+        await tx.order.update({
+          where: { id: body.orderIds[i] },
+          data: { deliveryTripId: created.id, deliverySequence: i + 1 },
+        });
+      }
 
       // Re-fetch with linked orders
       return tx.deliveryTrip.findUnique({

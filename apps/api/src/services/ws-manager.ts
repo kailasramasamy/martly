@@ -107,6 +107,47 @@ export function broadcastNotification(userId: string, notification: unknown) {
   }
 }
 
+// ── Trip location tracking ───────────────────────
+const tripSubscriptions = new Map<string, Set<WsClient>>();
+
+export function subscribeToTrip(ws: WebSocket, tripId: string) {
+  const client = clients.get(ws);
+  if (!client) return;
+  if (!tripSubscriptions.has(tripId)) {
+    tripSubscriptions.set(tripId, new Set());
+  }
+  tripSubscriptions.get(tripId)!.add(client);
+}
+
+export function unsubscribeFromTrip(ws: WebSocket, tripId: string) {
+  const client = clients.get(ws);
+  if (!client) return;
+  const subs = tripSubscriptions.get(tripId);
+  if (subs) {
+    subs.delete(client);
+    if (subs.size === 0) tripSubscriptions.delete(tripId);
+  }
+}
+
+/** Send a generic message to all clients subscribed to a trip */
+export function broadcastToTripSubscribers(tripId: string, message: unknown) {
+  const subs = tripSubscriptions.get(tripId);
+  if (!subs) return;
+  for (const client of subs) {
+    send(client, message);
+  }
+}
+
+/** Send rider location update to clients subscribed to a trip */
+export function broadcastRiderLocation(tripId: string, location: { lat: number; lng: number; heading?: number; speed?: number; updatedAt: string }) {
+  const subs = tripSubscriptions.get(tripId);
+  if (!subs) return;
+  const message = { type: "location:updated", tripId, data: location };
+  for (const client of subs) {
+    send(client, message);
+  }
+}
+
 /** Send lightweight hint to all admin connections for an org (or all for SUPER_ADMIN) */
 export function broadcastToAdmins(organizationId: string | null, orderId: string, status: string) {
   const message = { type: "orders:changed", orderId, status };
