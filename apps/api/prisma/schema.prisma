@@ -273,8 +273,11 @@ model User {
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
-  walletBalance Decimal @default(0) @db.Decimal(10, 2) @map("wallet_balance")
-  referralCode  String? @unique @map("referral_code")
+  walletBalance          Decimal @default(0) @db.Decimal(10, 2) @map("wallet_balance")
+  referralCode           String? @unique @map("referral_code")
+  razorpayCustomerId     String? @unique @map("razorpay_customer_id")
+  preferredPaymentMethod String? @map("preferred_payment_method")
+  lastUpiVpa             String? @map("last_upi_vpa")
 
   userStores           UserStore[]
   orders               Order[]

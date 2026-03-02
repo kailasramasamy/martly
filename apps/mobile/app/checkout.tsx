@@ -46,6 +46,7 @@ interface RazorpayData {
   amount: number;
   currency: string;
   key_id: string;
+  customer_id?: string;
 }
 
 interface WalletData {
@@ -157,6 +158,16 @@ export default function CheckoutScreen() {
       .then((res) => setLoyaltyData(res.data))
       .catch(() => {});
   }, [storeId]);
+
+  // Fetch payment preferences (pre-select last used method)
+  useEffect(() => {
+    api.get<{ preferredPaymentMethod: string | null }>("/api/v1/orders/payment-preferences")
+      .then((res) => {
+        const pref = res.data.preferredPaymentMethod;
+        if (pref === "ONLINE" || pref === "COD") setPaymentMethod(pref);
+      })
+      .catch(() => {});
+  }, []);
 
   // Check if store has delivery slots + express config
   useEffect(() => {
@@ -393,6 +404,8 @@ export default function CheckoutScreen() {
       }
 
       if (paymentMethod === "COD") {
+        // Save COD preference (fire-and-forget)
+        api.patch("/api/v1/orders/payment-preferences", { preferredPaymentMethod: "COD" }).catch(() => {});
         navigateToSuccess(orderId);
         return;
       }
@@ -1398,6 +1411,7 @@ export default function CheckoutScreen() {
           orderId={razorpayData.razorpay_order_id}
           amount={razorpayData.amount}
           currency={razorpayData.currency}
+          customerId={razorpayData.customer_id}
           prefill={{ email: user?.email, name: user?.name, contact: user?.phone ?? undefined }}
           onSuccess={handlePaymentSuccess}
           onCancel={handlePaymentCancel}

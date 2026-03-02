@@ -10,7 +10,7 @@ import { sendOrderStatusNotification, sendWalletNotification, sendLoyaltyNotific
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { reserveStock, releaseStock, deductStock } from "../../services/stock.js";
 import { formatVariantUnit } from "../../services/units.js";
-import { createRazorpayOrder, verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId } from "../../services/payment.js";
+import { createRazorpayOrder, verifyRazorpaySignature, isRazorpayConfigured, getRazorpayKeyId, ensureRazorpayCustomer } from "../../services/payment.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 
 // Valid status transitions
@@ -1266,7 +1266,16 @@ export async function orderRoutes(app: FastifyInstance) {
         return reply.badRequest("Order is fully covered by wallet");
       }
       const amountInPaise = Math.round(chargeAmount * 100);
-      const rpOrder = await createRazorpayOrder(amountInPaise, order.id);
+
+      // Create/retrieve Razorpay customer for saved payment instruments
+      let customerId: string | undefined;
+      try {
+        customerId = await ensureRazorpayCustomer(app.prisma, user.sub);
+      } catch {
+        // Non-fatal — proceed without customer_id (no saved cards)
+      }
+
+      const rpOrder = await createRazorpayOrder(amountInPaise, order.id, customerId);
 
       await app.prisma.order.update({
         where: { id: order.id },
@@ -1278,6 +1287,7 @@ export async function orderRoutes(app: FastifyInstance) {
         amount: number;
         currency: string;
         key_id: string;
+        customer_id?: string;
       }> = {
         success: true,
         data: {
@@ -1285,6 +1295,7 @@ export async function orderRoutes(app: FastifyInstance) {
           amount: amountInPaise,
           currency: "INR",
           key_id: getRazorpayKeyId(),
+          ...(customerId ? { customer_id: customerId } : {}),
         },
       };
       return response;
@@ -1327,6 +1338,11 @@ export async function orderRoutes(app: FastifyInstance) {
               data: { orderId: order.id, status: "CONFIRMED", note: "Payment verified" },
             });
           }
+          // Save preferred payment method
+          await tx.user.update({
+            where: { id: user.sub },
+            data: { preferredPaymentMethod: "ONLINE" },
+          });
           return ord;
         });
 
@@ -1609,6 +1625,59 @@ export async function orderRoutes(app: FastifyInstance) {
         success: true,
         data: { updated: validOrders.length, skipped: errors.length, errors },
       };
+      return response;
+    },
+  );
+
+  // ── Payment Preferences ──────────────────────────────────
+  app.get(
+    "/payment-preferences",
+    { preHandler: [authenticate] },
+    async (request) => {
+      const user = request.user as { sub: string };
+      const dbUser = await app.prisma.user.findUniqueOrThrow({
+        where: { id: user.sub },
+        select: { preferredPaymentMethod: true, lastUpiVpa: true, razorpayCustomerId: true },
+      });
+
+      const response: ApiResponse<{
+        preferredPaymentMethod: string | null;
+        lastUpiVpa: string | null;
+        hasRazorpayCustomer: boolean;
+      }> = {
+        success: true,
+        data: {
+          preferredPaymentMethod: dbUser.preferredPaymentMethod,
+          lastUpiVpa: dbUser.lastUpiVpa,
+          hasRazorpayCustomer: Boolean(dbUser.razorpayCustomerId),
+        },
+      };
+      return response;
+    },
+  );
+
+  app.patch(
+    "/payment-preferences",
+    { preHandler: [authenticate] },
+    async (request) => {
+      const user = request.user as { sub: string };
+      const body = request.body as { preferredPaymentMethod?: string; lastUpiVpa?: string };
+
+      const data: Record<string, string> = {};
+      if (body.preferredPaymentMethod === "ONLINE" || body.preferredPaymentMethod === "COD") {
+        data.preferredPaymentMethod = body.preferredPaymentMethod;
+      }
+      if (typeof body.lastUpiVpa === "string") {
+        data.lastUpiVpa = body.lastUpiVpa;
+      }
+
+      const updated = await app.prisma.user.update({
+        where: { id: user.sub },
+        data,
+        select: { preferredPaymentMethod: true, lastUpiVpa: true },
+      });
+
+      const response: ApiResponse<typeof updated> = { success: true, data: updated };
       return response;
     },
   );

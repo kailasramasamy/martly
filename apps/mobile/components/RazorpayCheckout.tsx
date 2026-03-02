@@ -13,6 +13,7 @@ export interface RazorpayCheckoutProps {
   currency: string;
   name?: string;
   description?: string;
+  customerId?: string;
   prefill?: { email?: string; contact?: string; name?: string };
   onSuccess: (data: { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string }) => void;
   onCancel: () => void;
@@ -31,7 +32,7 @@ if (!isExpoGo) {
 }
 
 // ── Native SDK (production / dev client) ──────────────────
-function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Martly", description = "Order Payment", prefill, onSuccess, onCancel }: RazorpayCheckoutProps) {
+function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Martly", description = "Order Payment", customerId, prefill, onSuccess, onCancel }: RazorpayCheckoutProps) {
   const openedRef = useRef(false);
 
   useEffect(() => {
@@ -45,6 +46,8 @@ function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Mar
       name,
       description,
       order_id: orderId,
+      ...(customerId ? { customer_id: customerId } : {}),
+      remember_customer: true,
       prefill: {
         email: prefill?.email ?? "",
         contact: prefill?.contact ?? "",
@@ -71,7 +74,7 @@ function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Mar
 }
 
 // ── WebView fallback (Expo Go / native SDK unavailable) ───
-function WebViewCheckout({ visible, keyId, orderId, amount, currency, name = "Martly", description = "Order Payment", prefill, onSuccess, onCancel }: RazorpayCheckoutProps) {
+function WebViewCheckout({ visible, keyId, orderId, amount, currency, name = "Martly", description = "Order Payment", customerId, prefill, onSuccess, onCancel }: RazorpayCheckoutProps) {
   const html = `
 <!DOCTYPE html>
 <html>
@@ -96,6 +99,8 @@ function WebViewCheckout({ visible, keyId, orderId, amount, currency, name = "Ma
       name: ${JSON.stringify(name)},
       description: ${JSON.stringify(description)},
       order_id: ${JSON.stringify(orderId)},
+      ${customerId ? `customer_id: ${JSON.stringify(customerId)},` : ""}
+      remember_customer: true,
       prefill: ${JSON.stringify(prefill ?? {})},
       theme: { color: "#0d9488" },
       modal: { ondismiss: function() { window.ReactNativeWebView.postMessage(JSON.stringify({ event: "cancelled" })); } },
