@@ -14,6 +14,7 @@ interface Pricing {
   discountActive: boolean;
   savingsAmount: number;
   savingsPercent: number;
+  memberPrice: number | null;
 }
 
 interface StoreProductRecord {
@@ -152,6 +153,16 @@ export const StoreProductList = () => {
                 <Text style={{ fontSize: 12 }}>{label}</Text>
               } />
             );
+          }}
+        />
+
+        <Table.Column
+          title="Member Price"
+          width={110}
+          render={(_, record: StoreProductRecord) => {
+            const mp = record.pricing?.memberPrice;
+            if (mp == null) return <Text type="secondary">—</Text>;
+            return <Text style={{ color: "#7c3aed", fontWeight: 600 }}>₹{mp.toFixed(2)}</Text>;
           }}
         />
 

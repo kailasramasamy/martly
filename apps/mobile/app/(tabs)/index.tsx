@@ -20,6 +20,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
+import { useMembership, getBestPrice } from "../../lib/membership-context";
 import { useNotifications } from "../../lib/notification-context";
 import { useCart } from "../../lib/cart-context";
 import { useWishlist } from "../../lib/wishlist-context";
@@ -55,6 +56,7 @@ export default function HomeScreen() {
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity, productQuantityMap } = useCart();
   const { wishlistedIds, isWishlisted, toggle: toggleWishlist } = useWishlist();
   const { user } = useAuth();
+  const { isMember } = useMembership();
 
   const [homeFeed, setHomeFeed] = useState<HomeFeed | null>(null);
   const [loadingFeed, setLoadingFeed] = useState(false);
@@ -190,17 +192,13 @@ export default function HomeScreen() {
     (sp: StoreProduct) => {
       if (!selectedStore) return;
 
-      const effectivePrice = sp.pricing?.discountActive
-        ? sp.pricing.effectivePrice
-        : Number(sp.price);
-
       const item = {
         storeProductId: sp.id,
         productId: sp.product.id,
         productName: sp.product.name,
         variantId: sp.variant.id,
         variantName: sp.variant.name,
-        price: effectivePrice,
+        price: getBestPrice(sp, isMember),
         imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
       };
 
@@ -213,7 +211,7 @@ export default function HomeScreen() {
 
       addItem(selectedStore.id, selectedStore.name, item);
     },
-    [selectedStore, cartStoreId, addItem],
+    [selectedStore, cartStoreId, addItem, isMember],
   );
 
   const handleCategoryPress = useCallback(
@@ -261,6 +259,7 @@ export default function HomeScreen() {
               }}
               isWishlisted={isWishlisted(item.product.id)}
               onToggleWishlist={toggleWishlist}
+              isMember={isMember}
             />
           );
         }}

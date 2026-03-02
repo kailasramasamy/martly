@@ -19,6 +19,7 @@ import { useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
 import { useWishlist } from "../../lib/wishlist-context";
 import { useAuth } from "../../lib/auth-context";
+import { useMembership, getBestPrice } from "../../lib/membership-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { FeaturedProductCard } from "../../components/FeaturedProductCard";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
@@ -39,6 +40,7 @@ export default function ProductDetailScreen() {
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
   const { isWishlisted, toggle: toggleWishlist } = useWishlist();
   const { isAuthenticated } = useAuth();
+  const { isMember } = useMembership();
 
   const navigation = useNavigation();
   const router = useRouter();
@@ -189,17 +191,13 @@ export default function ProductDetailScreen() {
   const handleAddToCart = (sp: StoreProduct) => {
     if (!storeId) return;
 
-    const effectivePrice = sp.pricing?.discountActive
-      ? sp.pricing.effectivePrice
-      : Number(sp.price);
-
     const item = {
       storeProductId: sp.id,
       productId: sp.product.id,
       productName: sp.product.name,
       variantId: sp.variant.id,
       variantName: sp.variant.name,
-      price: effectivePrice,
+      price: getBestPrice(sp, isMember),
       imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
     };
 
@@ -435,6 +433,7 @@ export default function ProductDetailScreen() {
                   storeId={storeId}
                   variantCount={1}
                   onShowVariants={() => {}}
+                  isMember={isMember}
                 />
               )}
             />
@@ -460,6 +459,7 @@ export default function ProductDetailScreen() {
                   storeId={storeId}
                   variantCount={1}
                   onShowVariants={() => {}}
+                  isMember={isMember}
                 />
               )}
             />
@@ -665,6 +665,7 @@ export default function ProductDetailScreen() {
                     storeId={storeId}
                     variantCount={variants?.length ?? 1}
                     onShowVariants={() => handleShowVariants(item.product.id)}
+                    isMember={isMember}
                   />
                 );
               }}
@@ -682,6 +683,7 @@ export default function ProductDetailScreen() {
       onAddToCart={handleAddToCart}
       onUpdateQuantity={updateQuantity}
       cartQuantityMap={cartQuantityMap}
+      isMember={isMember}
     />
     <ConfirmSheet
       visible={replaceCartConfirm !== null}

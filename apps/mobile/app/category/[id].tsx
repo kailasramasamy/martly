@@ -17,6 +17,7 @@ import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useCart } from "../../lib/cart-context";
 import { useWishlist } from "../../lib/wishlist-context";
+import { useMembership, getBestPrice } from "../../lib/membership-context";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../../components/ProductGridCard";
@@ -41,6 +42,7 @@ export default function CategoryScreen() {
   const { selectedStore } = useStore();
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
   const { isWishlisted, toggle: toggleWishlist } = useWishlist();
+  const { isMember } = useMembership();
 
   const [category, setCategory] = useState<CategoryTreeNode | null>(null);
   const [allProducts, setAllProducts] = useState<StoreProduct[]>([]);
@@ -242,16 +244,13 @@ export default function CategoryScreen() {
   const handleAddToCart = useCallback(
     (sp: StoreProduct) => {
       if (!selectedStore) return;
-      const effectivePrice = sp.pricing?.discountActive
-        ? sp.pricing.effectivePrice
-        : Number(sp.price);
       const item = {
         storeProductId: sp.id,
         productId: sp.product.id,
         productName: sp.product.name,
         variantId: sp.variant.id,
         variantName: sp.variant.name,
-        price: effectivePrice,
+        price: getBestPrice(sp, isMember),
         imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
       };
       if (cartStoreId && cartStoreId !== selectedStore.id) {
@@ -262,7 +261,7 @@ export default function CategoryScreen() {
       }
       addItem(selectedStore.id, selectedStore.name, item);
     },
-    [selectedStore, cartStoreId, addItem]
+    [selectedStore, cartStoreId, addItem, isMember]
   );
 
   const handleShowVariants = useCallback(
@@ -525,6 +524,7 @@ export default function CategoryScreen() {
               variantSizes={sizes}
               isWishlisted={isWishlisted(item.product.id)}
               onToggleWishlist={toggleWishlist}
+              isMember={isMember}
             />
           );
         }}
@@ -658,6 +658,7 @@ export default function CategoryScreen() {
         onAddToCart={handleAddToCart}
         onUpdateQuantity={updateQuantity}
         cartQuantityMap={cartQuantityMap}
+        isMember={isMember}
       />
       <ConfirmSheet
         visible={replaceCartConfirm !== null}

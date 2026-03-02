@@ -4,6 +4,7 @@ import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
+import { useMembership, getBestPrice } from "../../lib/membership-context";
 import { api } from "../../lib/api";
 import type { Banner, StoreProduct } from "../../lib/types";
 import { colors, spacing, fontSize } from "../../constants/theme";
@@ -13,6 +14,7 @@ export default function CartScreen() {
   const router = useRouter();
   const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem, addItem } = useCart();
   const { selectedStore } = useStore();
+  const { isMember, freeDelivery: memberFreeDelivery } = useMembership();
   const [upsellBanners, setUpsellBanners] = useState<Banner[]>([]);
   const [alsoBought, setAlsoBought] = useState<StoreProduct[]>([]);
 
@@ -20,8 +22,9 @@ export default function CartScreen() {
   const freeDeliveryThreshold = selectedStore?.freeDeliveryThreshold ? Number(selectedStore.freeDeliveryThreshold) : null;
   const belowMinimum = minOrderAmount != null && totalAmount < minOrderAmount;
   const baseDeliveryFee = selectedStore?.baseDeliveryFee ? Number(selectedStore.baseDeliveryFee) : 0;
-  const belowFreeDelivery = freeDeliveryThreshold != null && totalAmount < freeDeliveryThreshold && !belowMinimum;
-  const cartFreeDelivery = freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold;
+  const thresholdFreeDelivery = freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold;
+  const cartFreeDelivery = memberFreeDelivery || thresholdFreeDelivery;
+  const belowFreeDelivery = !cartFreeDelivery && freeDeliveryThreshold != null && totalAmount < freeDeliveryThreshold && !belowMinimum;
 
   useEffect(() => {
     if (!storeId) {
@@ -49,17 +52,16 @@ export default function CartScreen() {
 
   const handleCartAdd = useCallback((sp: StoreProduct) => {
     if (!storeId) return;
-    const effectivePrice = sp.pricing?.discountActive ? sp.pricing.effectivePrice : Number(sp.price);
     addItem(storeId, storeName, {
       storeProductId: sp.id,
       productId: sp.product.id,
       productName: sp.product.name,
       variantId: sp.variant.id,
       variantName: sp.variant.name,
-      price: effectivePrice,
+      price: getBestPrice(sp, isMember),
       imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
     });
-  }, [storeId, storeName, addItem]);
+  }, [storeId, storeName, addItem, isMember]);
 
   const handleBannerPress = useCallback((banner: Banner) => {
     switch (banner.actionType) {
@@ -220,6 +222,7 @@ export default function CartScreen() {
                     storeId={storeId ?? undefined}
                     variantCount={1}
                     onShowVariants={() => {}}
+                    isMember={isMember}
                   />
                 )}
               />
@@ -235,7 +238,15 @@ export default function CartScreen() {
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>Delivery fee</Text>
                 {cartFreeDelivery ? (
-                  <Text style={styles.billFree}>FREE</Text>
+                  <View style={styles.freeDeliveryTag}>
+                    <Text style={styles.billFree}>FREE</Text>
+                    {memberFreeDelivery && (
+                      <View style={styles.memberBadge}>
+                        <Ionicons name="star" size={10} color="#7c3aed" />
+                        <Text style={styles.memberBadgeText}>PLUS</Text>
+                      </View>
+                    )}
+                  </View>
                 ) : baseDeliveryFee > 0 ? (
                   <Text style={styles.billValue}>{"\u20B9"}{baseDeliveryFee.toFixed(0)}</Text>
                 ) : (
@@ -546,10 +557,29 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: colors.text,
   },
+  freeDeliveryTag: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+  },
   billFree: {
     fontSize: fontSize.md,
     fontWeight: "600",
     color: colors.primary,
+  },
+  memberBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 3,
+    backgroundColor: "#7c3aed14",
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+  memberBadgeText: {
+    fontSize: 10,
+    fontWeight: "700",
+    color: "#7c3aed",
   },
   billMuted: {
     fontSize: fontSize.md,

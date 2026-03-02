@@ -101,10 +101,10 @@ StoreProduct.memberPrice (Decimal?) — per-product member price
 - [x] Profile > Mart Plus quick link navigates to membership screen
 - [x] Membership screen shows plans (no membership state)
 - [x] Membership screen shows status card (active member state)
-- [ ] Product cards show "₹X for members" for non-members
-- [ ] Product cards show member price as primary for members
-- [ ] Checkout shows "FREE" delivery with MEMBER badge for members
-- [ ] Checkout shows loyalty multiplier in earn preview
+- [x] Product cards show "₹X for members" for non-members
+- [x] Product cards show member price as primary for members
+- [x] Checkout shows "FREE" delivery with MEMBER badge for members
+- [x] Checkout shows loyalty multiplier in earn preview
 
 ## curl Commands
 

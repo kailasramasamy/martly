@@ -34,6 +34,7 @@ import { StoreProvider } from "../lib/store-context";
 import { WishlistProvider } from "../lib/wishlist-context";
 import { ToastProvider } from "../lib/toast-context";
 import { NotificationProvider } from "../lib/notification-context";
+import { MembershipProvider } from "../lib/membership-context";
 import { addNotificationResponseListener, getLastNotificationResponse } from "../lib/notifications";
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
@@ -193,6 +194,7 @@ export default function RootLayout() {
       <ThemeProvider value={LightTheme}>
         <AuthProvider>
           <StoreProvider>
+            <MembershipProvider>
             <CartProvider>
               <ToastProvider>
               <WishlistProvider>
@@ -202,6 +204,7 @@ export default function RootLayout() {
               </WishlistProvider>
               </ToastProvider>
             </CartProvider>
+            </MembershipProvider>
           </StoreProvider>
         </AuthProvider>
       </ThemeProvider>

@@ -16,6 +16,7 @@ import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { useCart } from "../lib/cart-context";
 import { useToast } from "../lib/toast-context";
+import { useMembership, getBestPrice } from "../lib/membership-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { ConfirmSheet } from "../components/ConfirmSheet";
 
@@ -34,6 +35,7 @@ interface Pricing {
   discountActive: boolean;
   savingsAmount: number;
   savingsPercent: number;
+  memberPrice: number | null;
 }
 
 interface ReorderItem {
@@ -82,6 +84,7 @@ export default function SmartReorderScreen() {
   const storeId = selectedStore?.id;
   const { storeId: cartStoreId, addItem } = useCart();
   const toast = useToast();
+  const { isMember } = useMembership();
 
   const [data, setData] = useState<ReorderData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -176,7 +179,7 @@ export default function SmartReorderScreen() {
             productName: item.product.name,
             variantId: item.variant.id,
             variantName: item.variant.name,
-            price: item.pricing.effectivePrice,
+            price: getBestPrice(item, isMember),
             imageUrl: item.product.imageUrl ?? item.variant.imageUrl ?? null,
           });
         }
@@ -191,7 +194,7 @@ export default function SmartReorderScreen() {
     }
 
     doAdd();
-  }, [selectedStore, selectedItems, quantities, cartStoreId, addItem, toast, router]);
+  }, [selectedStore, selectedItems, quantities, cartStoreId, addItem, toast, router, isMember]);
 
   const selectAll = useCallback(() => {
     if (!data) return;

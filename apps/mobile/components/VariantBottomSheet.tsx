@@ -13,6 +13,7 @@ interface VariantBottomSheetProps {
   onAddToCart: (sp: StoreProduct) => void;
   onUpdateQuantity: (storeProductId: string, quantity: number) => void;
   cartQuantityMap: Map<string, number>;
+  isMember?: boolean;
 }
 
 export function VariantBottomSheet({
@@ -22,6 +23,7 @@ export function VariantBottomSheet({
   onAddToCart,
   onUpdateQuantity,
   cartQuantityMap,
+  isMember,
 }: VariantBottomSheetProps) {
   if (!visible || variants.length === 0) return null;
 
@@ -56,11 +58,26 @@ export function VariantBottomSheet({
                 <View style={styles.variantInfo}>
                   <Text style={styles.variantName}>{sp.variant.name}</Text>
                   <View style={styles.priceRow}>
-                    {originalPrice != null && (
-                      <Text style={styles.mrpPrice}>₹{originalPrice.toFixed(0)}</Text>
+                    {isMember && sp.pricing?.memberPrice != null && sp.pricing.memberPrice < displayPrice ? (
+                      <>
+                        <Text style={styles.mrpPrice}>₹{displayPrice.toFixed(0)}</Text>
+                        <Text style={styles.price}>₹{sp.pricing.memberPrice.toFixed(0)}</Text>
+                        <View style={styles.memberBadge}>
+                          <Text style={styles.memberBadgeText}>MEMBER</Text>
+                        </View>
+                      </>
+                    ) : (
+                      <>
+                        {originalPrice != null && (
+                          <Text style={styles.mrpPrice}>₹{originalPrice.toFixed(0)}</Text>
+                        )}
+                        <Text style={styles.price}>₹{displayPrice.toFixed(0)}</Text>
+                      </>
                     )}
-                    <Text style={styles.price}>₹{displayPrice.toFixed(0)}</Text>
                   </View>
+                  {!isMember && sp.pricing?.memberPrice != null && sp.pricing.memberPrice < displayPrice && (
+                    <Text style={styles.memberHint}>₹{sp.pricing.memberPrice.toFixed(0)} for members</Text>
+                  )}
                   {isOutOfStock && <Text style={styles.outOfStock}>Out of Stock</Text>}
                 </View>
                 {qty > 0 ? (
@@ -163,6 +180,9 @@ const styles = StyleSheet.create({
   mrpPrice: { fontSize: fontSize.sm, color: colors.textSecondary, textDecorationLine: "line-through" },
   price: { fontSize: fontSize.lg, fontWeight: "bold", color: colors.primary },
   outOfStock: { fontSize: fontSize.sm, color: colors.error, fontWeight: "600", marginTop: 2 },
+  memberBadge: { backgroundColor: "#7c3aed18", paddingHorizontal: 5, paddingVertical: 1, borderRadius: 4 },
+  memberBadgeText: { fontSize: 9, fontWeight: "700", color: "#7c3aed" },
+  memberHint: { fontSize: 11, color: "#7c3aed", fontWeight: "500", marginTop: 2 },
   addBtn: {
     backgroundColor: colors.primary,
     borderRadius: 6,

@@ -7,6 +7,7 @@ import { useStore } from "../lib/store-context";
 import { useCart } from "../lib/cart-context";
 import { useWishlist } from "../lib/wishlist-context";
 import { useAuth } from "../lib/auth-context";
+import { useMembership, getBestPrice } from "../lib/membership-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../components/ProductGridCard";
 import { FloatingCart } from "../components/FloatingCart";
@@ -17,6 +18,7 @@ export default function WishlistScreen() {
   const { selectedStore } = useStore();
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
   const { wishlistedIds, isWishlisted, toggle: toggleWishlist } = useWishlist();
+  const { isMember } = useMembership();
   const [products, setProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const storeId = selectedStore?.id;
@@ -46,17 +48,16 @@ export default function WishlistScreen() {
 
   const handleAddToCart = useCallback((sp: StoreProduct) => {
     if (!storeId) return;
-    const effectivePrice = sp.pricing?.discountActive ? sp.pricing.effectivePrice : Number(sp.price);
     addItem(storeId, selectedStore?.name ?? "", {
       storeProductId: sp.id,
       productId: sp.product.id,
       productName: sp.product.name,
       variantId: sp.variant.id,
       variantName: sp.variant.name,
-      price: effectivePrice,
+      price: getBestPrice(sp, isMember),
       imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
     });
-  }, [storeId, selectedStore, addItem]);
+  }, [storeId, selectedStore, addItem, isMember]);
 
   if (!isAuthenticated) {
     return (
@@ -99,6 +100,7 @@ export default function WishlistScreen() {
             storeId={storeId}
             isWishlisted={isWishlisted(item.product.id)}
             onToggleWishlist={toggleWishlist}
+            isMember={isMember}
           />
         )}
       />
