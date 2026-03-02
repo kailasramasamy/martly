@@ -94,6 +94,9 @@ export const createStoreSchema = z.object({
   latitude: z.number().min(-90).max(90).optional(),
   longitude: z.number().min(-180).max(180).optional(),
   deliveryRadius: z.number().positive().optional(),
+  minOrderAmount: z.number().min(0).optional(),
+  freeDeliveryThreshold: z.number().min(0).optional(),
+  baseDeliveryFee: z.number().min(0).optional(),
 });
 export type CreateStoreInput = z.infer<typeof createStoreSchema>;
 
@@ -385,6 +388,9 @@ export const updateStoreSchema = z.object({
   latitude: z.number().min(-90).max(90).nullish(),
   longitude: z.number().min(-180).max(180).nullish(),
   deliveryRadius: z.number().positive().optional(),
+  minOrderAmount: z.number().min(0).nullish(),
+  freeDeliveryThreshold: z.number().min(0).nullish(),
+  baseDeliveryFee: z.number().min(0).nullish(),
 });
 export type UpdateStoreInput = z.infer<typeof updateStoreSchema>;
 

@@ -8,6 +8,9 @@ export interface Store {
   longitude?: number | null;
   deliveryRadius?: number;
   distance?: number;
+  minOrderAmount?: number | null;
+  freeDeliveryThreshold?: number | null;
+  baseDeliveryFee?: number | null;
 }
 
 export interface Variant {

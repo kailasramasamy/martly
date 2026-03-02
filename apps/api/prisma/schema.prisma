@@ -231,9 +231,12 @@ model Store {
   status         StoreStatus @default(PENDING)
   latitude       Float?      @map("latitude")
   longitude      Float?      @map("longitude")
-  deliveryRadius Float       @default(7) @map("delivery_radius")
-  createdAt      DateTime    @default(now()) @map("created_at")
-  updatedAt      DateTime    @updatedAt @map("updated_at")
+  deliveryRadius        Float       @default(7) @map("delivery_radius")
+  minOrderAmount        Decimal?    @map("min_order_amount")
+  freeDeliveryThreshold Decimal?    @map("free_delivery_threshold")
+  baseDeliveryFee       Decimal?    @map("base_delivery_fee")
+  createdAt             DateTime    @default(now()) @map("created_at")
+  updatedAt             DateTime    @updatedAt @map("updated_at")
 
   organization       Organization        @relation(fields: [organizationId], references: [id])
   storeProducts      StoreProduct[]

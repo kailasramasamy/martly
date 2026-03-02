@@ -17,6 +17,7 @@ import { useToast } from "../lib/toast-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../lib/auth-context";
 import { useCart } from "../lib/cart-context";
+import { useStore } from "../lib/store-context";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -58,6 +59,11 @@ export default function CheckoutScreen() {
   const toast = useToast();
   const insets = useSafeAreaInsets();
   const { storeId, storeName, items, totalAmount, itemCount } = useCart();
+  const { selectedStore } = useStore();
+
+  const minOrderAmount = selectedStore?.minOrderAmount ? Number(selectedStore.minOrderAmount) : null;
+  const freeDeliveryThreshold = selectedStore?.freeDeliveryThreshold ? Number(selectedStore.freeDeliveryThreshold) : null;
+  const belowMinimum = minOrderAmount != null && totalAmount < minOrderAmount;
 
   const [showProfileGate, setShowProfileGate] = useState(false);
   const [showAddressPicker, setShowAddressPicker] = useState(false);
@@ -172,7 +178,12 @@ export default function CheckoutScreen() {
     setLoadingSlots(true);
     setSelectedSlot(null);
     api.get<AvailableSlot[]>(`/api/v1/delivery-slots/available?storeId=${storeId}&date=${selectedDate}`)
-      .then((res) => setAvailableSlots(res.data))
+      .then((res) => {
+        setAvailableSlots(res.data);
+        // Auto-select the first available (non-full) slot
+        const firstAvailable = res.data.find((s) => !s.full);
+        if (firstAvailable) setSelectedSlot(firstAvailable);
+      })
       .catch(() => setAvailableSlots([]))
       .finally(() => setLoadingSlots(false));
   }, [storeId, selectedDate, deliveryMode]);
@@ -187,9 +198,13 @@ export default function CheckoutScreen() {
     }
   }, [expressConfig, hasSlots]);
 
-  // Reset scheduling state when switching to express
+  // When switching to scheduled, auto-set today's date; when switching to express, clear slot
   useEffect(() => {
-    if (deliveryMode === "express") {
+    if (deliveryMode === "scheduled") {
+      if (!selectedDate) {
+        setSelectedDate(toLocalDateStr(new Date()));
+      }
+    } else {
       setSelectedSlot(null);
     }
   }, [deliveryMode]);
@@ -266,12 +281,15 @@ export default function CheckoutScreen() {
   };
 
   const couponDiscount = couponResult?.discount ?? 0;
-  // For pickup, delivery fee is always 0. For delivery, use distance-based or zone-based fee.
-  const deliveryFee = isPickup
-    ? 0
-    : deliveryLookup?.serviceable
-      ? (deliveryLookup.deliveryFee ?? 0)
-      : (deliveryZone?.deliveryFee ?? 0);
+  // Delivery fee resolution: distance tier > zone > store base fee > 0
+  // Free delivery threshold waives the fee when item total meets threshold.
+  const baseDeliveryFee = selectedStore?.baseDeliveryFee ? Number(selectedStore.baseDeliveryFee) : 0;
+  const lookupOrZoneFee = deliveryLookup?.serviceable
+    ? (deliveryLookup.deliveryFee ?? 0)
+    : (deliveryZone?.deliveryFee ?? 0);
+  const rawDeliveryFee = isPickup ? 0 : (lookupOrZoneFee || baseDeliveryFee);
+  const freeDeliveryApplied = !isPickup && freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold;
+  const deliveryFee = freeDeliveryApplied ? 0 : rawDeliveryFee;
   const effectiveEstMinutes = isPickup
     ? 30
     : expressConfig?.etaMinutes != null && deliveryMode === "express"
@@ -298,7 +316,7 @@ export default function CheckoutScreen() {
   const amountToPay = afterWallet - loyaltyDeduction;
   const walletCoversAll = amountToPay === 0 && (walletDeduction > 0 || loyaltyDeduction > 0);
   // Order can proceed for pickup always; for delivery only if serviceable (or no lookup done)
-  const orderDisabled = submitting || (!isPickup && isNotServiceable);
+  const orderDisabled = submitting || (!isPickup && isNotServiceable) || belowMinimum;
 
   const navigateToSuccess = (orderId: string, params: Record<string, string> = {}) => {
     router.replace({
@@ -400,13 +418,15 @@ export default function CheckoutScreen() {
   // Delivery fee preview text for fulfillment cards
   const deliveryFeePreview = lookingUpDelivery
     ? "Calculating..."
-    : deliveryLookup?.serviceable
-      ? deliveryLookup.deliveryFee
-        ? `\u20B9${deliveryLookup.deliveryFee.toFixed(0)}`
-        : "FREE"
-      : deliveryZone?.deliveryFee
-        ? `\u20B9${deliveryZone.deliveryFee.toFixed(0)}`
-        : "FREE";
+    : freeDeliveryApplied
+      ? "FREE"
+      : deliveryLookup?.serviceable
+        ? deliveryLookup.deliveryFee
+          ? `\u20B9${deliveryLookup.deliveryFee.toFixed(0)}`
+          : "FREE"
+        : deliveryZone?.deliveryFee
+          ? `\u20B9${deliveryZone.deliveryFee.toFixed(0)}`
+          : "FREE";
 
   const deliveryEtaPreview = deliveryLookup?.serviceable
     ? deliveryLookup.estimatedMinutes
@@ -438,6 +458,16 @@ export default function CheckoutScreen() {
             <Text style={styles.storeItemCount}>{itemCount} item{itemCount !== 1 ? "s" : ""}</Text>
           </View>
         </View>
+
+        {/* Min order warning */}
+        {belowMinimum && (
+          <View style={styles.minOrderWarning}>
+            <Ionicons name="alert-circle" size={18} color="#c2410c" />
+            <Text style={styles.minOrderWarningText}>
+              Add {"\u20B9"}{(minOrderAmount! - totalAmount).toFixed(0)} more to place your order (min {"\u20B9"}{minOrderAmount!.toFixed(0)})
+            </Text>
+          </View>
+        )}
 
         {/* Order Items */}
         <View style={styles.section}>
@@ -809,12 +839,7 @@ export default function CheckoutScreen() {
               {hasSlots && (
               <TouchableOpacity
                 style={[styles.scheduleToggle, deliveryMode === "scheduled" && styles.scheduleToggleActive]}
-                onPress={() => {
-                  setDeliveryMode("scheduled");
-                  if (!selectedDate) {
-                    setSelectedDate(toLocalDateStr(new Date()));
-                  }
-                }}
+                onPress={() => setDeliveryMode("scheduled")}
                 activeOpacity={0.7}
               >
                 <Ionicons
@@ -832,7 +857,7 @@ export default function CheckoutScreen() {
             )}
 
             {/* Express outside operating hours reason */}
-            {expressConfig?.enabled && !expressConfig.available && expressConfig.reason && hasSlots && (
+            {expressConfig?.enabled && !expressConfig.available && expressConfig.reason && hasSlots && deliveryMode === "express" && (
               <View style={styles.expressReasonBanner}>
                 <Ionicons name="time-outline" size={14} color="#b45309" />
                 <Text style={styles.expressReasonText}>{expressConfig.reason}</Text>
@@ -1149,10 +1174,17 @@ export default function CheckoutScreen() {
                 <Text style={styles.billFree}>FREE</Text>
               ) : lookingUpDelivery ? (
                 <ActivityIndicator size="small" color={colors.primary} />
+              ) : freeDeliveryApplied ? (
+                <View style={{ alignItems: "flex-end" }}>
+                  {rawDeliveryFee > 0 && (
+                    <Text style={styles.billStrikethrough}>{"\u20B9"}{rawDeliveryFee.toFixed(0)}</Text>
+                  )}
+                  <Text style={styles.billFree}>FREE</Text>
+                </View>
               ) : deliveryFee > 0 ? (
                 <Text style={styles.billValue}>{"\u20B9"}{deliveryFee.toFixed(0)}</Text>
               ) : (
-                <Text style={styles.billFree}>FREE</Text>
+                <Text style={styles.billValue}>{"\u20B9"}0</Text>
               )}
             </View>
             {walletDeduction > 0 && (
@@ -1399,6 +1431,26 @@ const styles = StyleSheet.create({
   storeInfo: { marginLeft: 12 },
   storeName: { fontSize: 16, fontWeight: "700", color: colors.text },
   storeItemCount: { fontSize: 12, color: colors.textSecondary, marginTop: 1 },
+  // Min order warning
+  minOrderWarning: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    marginHorizontal: spacing.md,
+    marginTop: spacing.sm,
+    backgroundColor: "#fff7ed",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fed7aa",
+    padding: 12,
+  },
+  minOrderWarningText: {
+    flex: 1,
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#c2410c",
+    lineHeight: 18,
+  },
   // Sections
   section: { marginTop: spacing.md, paddingHorizontal: spacing.md },
   sectionHeader: { flexDirection: "row", alignItems: "center", gap: 6, marginBottom: spacing.sm },
@@ -1745,6 +1797,7 @@ const styles = StyleSheet.create({
   billLabel: { fontSize: fontSize.md, color: colors.textSecondary },
   billValue: { fontSize: fontSize.md, fontWeight: "600", color: colors.text },
   billFree: { fontSize: fontSize.md, fontWeight: "600", color: colors.primary },
+  billStrikethrough: { fontSize: 12, color: "#94a3b8", textDecorationLine: "line-through" as const },
   billSaving: { fontSize: fontSize.md, fontWeight: "600", color: "#22c55e" },
   billDivider: { height: 1, backgroundColor: colors.border, marginVertical: 8 },
   billGrandLabel: { fontSize: 16, fontWeight: "700", color: colors.text },

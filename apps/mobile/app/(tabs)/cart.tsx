@@ -3,6 +3,7 @@ import { View, Text, Image, FlatList, TouchableOpacity, ScrollView, StyleSheet }
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "../../lib/cart-context";
+import { useStore } from "../../lib/store-context";
 import { api } from "../../lib/api";
 import type { Banner } from "../../lib/types";
 import { colors, spacing, fontSize } from "../../constants/theme";
@@ -10,7 +11,15 @@ import { colors, spacing, fontSize } from "../../constants/theme";
 export default function CartScreen() {
   const router = useRouter();
   const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
+  const { selectedStore } = useStore();
   const [upsellBanners, setUpsellBanners] = useState<Banner[]>([]);
+
+  const minOrderAmount = selectedStore?.minOrderAmount ? Number(selectedStore.minOrderAmount) : null;
+  const freeDeliveryThreshold = selectedStore?.freeDeliveryThreshold ? Number(selectedStore.freeDeliveryThreshold) : null;
+  const belowMinimum = minOrderAmount != null && totalAmount < minOrderAmount;
+  const baseDeliveryFee = selectedStore?.baseDeliveryFee ? Number(selectedStore.baseDeliveryFee) : 0;
+  const belowFreeDelivery = freeDeliveryThreshold != null && totalAmount < freeDeliveryThreshold && !belowMinimum;
+  const cartFreeDelivery = freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold;
 
   useEffect(() => {
     if (!storeId) {
@@ -70,6 +79,24 @@ export default function CartScreen() {
           <Text style={styles.itemCountLabel}>{itemCount} item{itemCount !== 1 ? "s" : ""} in cart</Text>
         </View>
       </View>
+
+      {/* Nudge Banners */}
+      {belowMinimum && (
+        <View style={styles.nudgeBanner}>
+          <Ionicons name="alert-circle" size={18} color="#c2410c" />
+          <Text style={styles.nudgeText}>
+            Add {"\u20B9"}{(minOrderAmount! - totalAmount).toFixed(0)} more to place your order (min {"\u20B9"}{minOrderAmount!.toFixed(0)})
+          </Text>
+        </View>
+      )}
+      {belowFreeDelivery && (
+        <View style={styles.freeDeliveryNudge}>
+          <Ionicons name="bicycle" size={18} color={colors.primary} />
+          <Text style={styles.freeDeliveryNudgeText}>
+            Add {"\u20B9"}{(freeDeliveryThreshold! - totalAmount).toFixed(0)} more for free delivery
+          </Text>
+        </View>
+      )}
 
       <FlatList
         data={items}
@@ -154,7 +181,13 @@ export default function CartScreen() {
               </View>
               <View style={styles.billRow}>
                 <Text style={styles.billLabel}>Delivery fee</Text>
-                <Text style={styles.billFree}>FREE</Text>
+                {cartFreeDelivery ? (
+                  <Text style={styles.billFree}>FREE</Text>
+                ) : baseDeliveryFee > 0 ? (
+                  <Text style={styles.billValue}>{"\u20B9"}{baseDeliveryFee.toFixed(0)}</Text>
+                ) : (
+                  <Text style={styles.billMuted}>At checkout</Text>
+                )}
               </View>
               <View style={styles.billDivider} />
               <View style={styles.billRow}>
@@ -169,17 +202,19 @@ export default function CartScreen() {
       {/* Sticky Footer */}
       <View style={styles.footer}>
         <TouchableOpacity
-          style={styles.checkoutBar}
-          activeOpacity={0.9}
-          onPress={() => router.push("/checkout")}
+          style={[styles.checkoutBar, belowMinimum && styles.checkoutBarDisabled]}
+          activeOpacity={belowMinimum ? 1 : 0.9}
+          onPress={() => !belowMinimum && router.push("/checkout")}
         >
           <View style={styles.checkoutLeft}>
             <Text style={styles.checkoutTotal}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
             <Text style={styles.checkoutSubtext}>TOTAL</Text>
           </View>
           <View style={styles.checkoutRight}>
-            <Text style={styles.checkoutBtnText}>Checkout</Text>
-            <Ionicons name="arrow-forward" size={18} color="#fff" />
+            <Text style={styles.checkoutBtnText}>
+              {belowMinimum ? `Min \u20B9${minOrderAmount!.toFixed(0)}` : "Checkout"}
+            </Text>
+            <Ionicons name={belowMinimum ? "lock-closed" : "arrow-forward"} size={18} color="#fff" />
           </View>
         </TouchableOpacity>
       </View>
@@ -252,6 +287,44 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary + "14",
     justifyContent: "center",
     alignItems: "center",
+  },
+  nudgeBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    marginHorizontal: spacing.md,
+    marginTop: spacing.sm,
+    backgroundColor: "#fff7ed",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fed7aa",
+    padding: 12,
+  },
+  nudgeText: {
+    flex: 1,
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#c2410c",
+    lineHeight: 18,
+  },
+  freeDeliveryNudge: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    marginHorizontal: spacing.md,
+    marginTop: spacing.sm,
+    backgroundColor: colors.primary + "0D",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: colors.primary + "30",
+    padding: 12,
+  },
+  freeDeliveryNudgeText: {
+    flex: 1,
+    fontSize: 13,
+    fontWeight: "600",
+    color: colors.primary,
+    lineHeight: 18,
   },
   storeInfo: { marginLeft: 12 },
   storeName: {
@@ -409,6 +482,10 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: colors.primary,
   },
+  billMuted: {
+    fontSize: fontSize.md,
+    color: colors.textSecondary,
+  },
   billDivider: {
     height: 1,
     backgroundColor: colors.border,
@@ -469,6 +546,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 10,
     borderRadius: 10,
+  },
+  checkoutBarDisabled: {
+    backgroundColor: "#94a3b8",
+    shadowOpacity: 0,
+    elevation: 0,
   },
   checkoutBtnText: {
     fontSize: 15,

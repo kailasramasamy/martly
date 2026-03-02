@@ -158,7 +158,7 @@ export async function orderRoutes(app: FastifyInstance) {
     // Fetch store for both pickup and delivery
     const store = await app.prisma.store.findUnique({
       where: { id: body.storeId },
-      select: { name: true, address: true, latitude: true, longitude: true, deliveryRadius: true },
+      select: { name: true, address: true, latitude: true, longitude: true, deliveryRadius: true, minOrderAmount: true, freeDeliveryThreshold: true, baseDeliveryFee: true },
     });
 
     // Resolve delivery address from addressId or direct input
@@ -208,6 +208,16 @@ export async function orderRoutes(app: FastifyInstance) {
         discountValue: pricing.discountValue ?? undefined,
       } as Prisma.OrderItemUncheckedCreateWithoutOrderInput;
     });
+
+    // Minimum order amount validation
+    if (store?.minOrderAmount && itemsTotal < Number(store.minOrderAmount)) {
+      return reply.status(400).send({
+        success: false,
+        error: "Minimum Order Not Met",
+        message: `Minimum order amount is \u20B9${Number(store.minOrderAmount).toFixed(0)}. Your cart total is \u20B9${itemsTotal.toFixed(0)}.`,
+        statusCode: 400,
+      });
+    }
 
     // Coupon validation
     let couponId: string | undefined;
@@ -311,6 +321,16 @@ export async function orderRoutes(app: FastifyInstance) {
           estimatedMinutes = activeZone.estimatedMinutes;
         }
       }
+
+      // Store-level base delivery fee as final fallback
+      if (deliveryFee === 0 && store?.baseDeliveryFee) {
+        deliveryFee = Number(store.baseDeliveryFee);
+      }
+    }
+
+    // Free delivery threshold override
+    if (!isPickup && store?.freeDeliveryThreshold && itemsTotal >= Number(store.freeDeliveryThreshold)) {
+      deliveryFee = 0;
     }
 
     // Express delivery validation (orders without a delivery slot)

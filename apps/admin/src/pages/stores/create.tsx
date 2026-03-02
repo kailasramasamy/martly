@@ -1,7 +1,7 @@
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
 import { Form, Input, InputNumber, Select, Card, Row, Col, Slider } from "antd";
-import { ShopOutlined, EnvironmentOutlined, AimOutlined } from "@ant-design/icons";
+import { ShopOutlined, EnvironmentOutlined, AimOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 
 import { sectionTitle } from "../../theme";
 
@@ -80,6 +80,18 @@ export const StoreCreate = () => {
               </Row>
               <Form.Item label="Delivery Radius (km)" name="deliveryRadius">
                 <Slider min={1} max={25} step={0.5} marks={{ 1: "1", 5: "5", 10: "10", 15: "15", 25: "25" }} />
+              </Form.Item>
+            </Card>
+
+            <Card title={sectionTitle(<ShoppingCartOutlined />, "Order & Delivery")} size="small" style={{ marginTop: 16 }}>
+              <Form.Item label="Minimum Order Amount" name="minOrderAmount" tooltip="Customers must meet this minimum to place an order. Leave empty for no minimum.">
+                <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No minimum" />
+              </Form.Item>
+              <Form.Item label="Base Delivery Fee" name="baseDeliveryFee" tooltip="Default delivery fee when no distance tier or zone matches. Leave empty for no base fee.">
+                <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No base fee" />
+              </Form.Item>
+              <Form.Item label="Free Delivery Threshold" name="freeDeliveryThreshold" tooltip="Orders above this amount get free delivery. Leave empty for no free delivery threshold.">
+                <InputNumber style={{ width: "100%" }} min={0} addonBefore={"\u20B9"} placeholder="No threshold" />
               </Form.Item>
             </Card>
           </Col>
