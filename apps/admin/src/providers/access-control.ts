@@ -165,6 +165,16 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin, Org Admin, or Store Manager can access customer insights" };
     }
 
+    // Return Requests: ORG_ADMIN full access, STORE_MANAGER read-only
+    if (resource === "return-requests") {
+      if (role === "ORG_ADMIN") return { can: true };
+      if (role === "STORE_MANAGER") {
+        if (action === "list" || action === "show") return { can: true };
+        return { can: false };
+      }
+      return { can: false, reason: "Only Super Admin or Org Admin can manage return requests" };
+    }
+
     // Everything else: allow
     return { can: true };
   },

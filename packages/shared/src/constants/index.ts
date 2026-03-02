@@ -351,3 +351,27 @@ export const TicketPriorityLabels: Record<TicketPriority, string> = {
   MEDIUM: "Medium",
   HIGH: "High",
 };
+
+export const ReturnRequestStatus = {
+  PENDING: "PENDING",
+  APPROVED: "APPROVED",
+  REJECTED: "REJECTED",
+} as const;
+export type ReturnRequestStatus = (typeof ReturnRequestStatus)[keyof typeof ReturnRequestStatus];
+
+export const ReturnRequestStatusLabels: Record<ReturnRequestStatus, string> = {
+  PENDING: "Pending",
+  APPROVED: "Approved",
+  REJECTED: "Rejected",
+};
+
+export const RETURN_REASONS = [
+  "Damaged/broken item",
+  "Wrong item received",
+  "Item expired/stale",
+  "Quality not as expected",
+  "Missing items",
+  "Other",
+] as const;
+
+export const RETURN_WINDOW_HOURS = 48;

@@ -819,3 +819,30 @@ export const createReferralConfigSchema = z.object({
   maxReferralsPerUser: z.number().int().min(1).max(1000).default(50),
 });
 export type CreateReferralConfigInput = z.infer<typeof createReferralConfigSchema>;
+
+// ── Return Request ──────────────────────────────────
+export const createReturnRequestSchema = z.object({
+  orderId: z.string().uuid(),
+  reason: z.enum([
+    "Damaged/broken item",
+    "Wrong item received",
+    "Item expired/stale",
+    "Quality not as expected",
+    "Missing items",
+    "Other",
+  ]),
+  description: z.string().max(1000).optional(),
+  imageUrls: z.array(z.string().url()).max(5).optional(),
+  items: z.array(z.object({
+    orderItemId: z.string().uuid(),
+    quantity: z.number().int().positive(),
+  })).min(1),
+});
+export type CreateReturnRequestInput = z.infer<typeof createReturnRequestSchema>;
+
+export const resolveReturnRequestSchema = z.object({
+  status: z.enum(["APPROVED", "REJECTED"]),
+  approvedAmount: z.number().min(0).optional(),
+  adminNote: z.string().max(500).optional(),
+});
+export type ResolveReturnRequestInput = z.infer<typeof resolveReturnRequestSchema>;

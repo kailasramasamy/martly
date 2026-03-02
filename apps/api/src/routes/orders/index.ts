@@ -131,6 +131,7 @@ export async function orderRoutes(app: FastifyInstance) {
       include: {
         items: { include: { product: true, variant: true } },
         statusLogs: { orderBy: { createdAt: "asc" } },
+        returnRequest: { select: { id: true, status: true, requestedAmount: true, approvedAmount: true } },
       },
     });
     if (!order) return reply.notFound("Order not found");

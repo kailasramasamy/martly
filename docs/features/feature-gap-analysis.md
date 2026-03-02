@@ -26,52 +26,44 @@ Martly has 38 API routes, 50+ admin pages, and 25+ mobile screens covering:
 
 ## Tier 1: Table-Stakes (every competitor has these)
 
-| # | Feature | What It Is | Effort |
-|---|---------|-----------|--------|
-| 1 | **Live order tracking (map)** | Real-time rider GPS on a map during delivery. Every single app has this. | Medium — needs rider location broadcasting + map UI on mobile |
-| 2 | **Return/refund requests** | In-app claim with photo upload, reason selection. Currently refunds are admin-only wallet credits. | Medium — new model + API + mobile screen |
-| 3 | **Minimum order amount** | Block checkout below a threshold (per store). Blinkit/Zepto/all enforce this. | Small — store config field + checkout validation |
-| 4 | **Delivery instructions** | Free-text field at checkout ("leave at door", "call before"). Standard everywhere. | Small — field on order + checkout UI |
-| 5 | **Saved/default payment method** | One-tap reorder with saved UPI/card. Reduces checkout friction. | Small-Medium — Razorpay tokenization |
+- [x] **Minimum order amount** — Block checkout below a threshold (per store). Blinkit/Zepto/all enforce this. `Small` *(done: min order + base delivery fee + free delivery threshold)*
+- [x] **Delivery instructions** — Free-text field at checkout ("leave at door", "call before"). Standard everywhere. `Small` *(already built: deliveryNotes field on Order, TextInput on checkout, shown in admin order detail)*
+- [ ] **Return/refund requests** — In-app claim with photo upload, reason selection. Currently refunds are admin-only wallet credits. `Medium`
+- [ ] **Live order tracking (map)** — Real-time rider GPS on a map during delivery. Every single app has this. `Medium`
+- [ ] **Saved/default payment method** — One-tap reorder with saved UPI/card. Reduces checkout friction. `Small-Medium`
 
 ## Tier 2: Emerging Standards (most competitors have, strong user expectation)
 
-| # | Feature | What It Is | Effort |
-|---|---------|-----------|--------|
-| 6 | **Frequently bought together** | "Customers also bought" suggestions on product detail + cart. Drives AOV. BigBasket, Blinkit, Instacart all have it. | Medium — co-purchase analysis + UI |
-| 7 | **Subscription / auto-delivery** | Recurring delivery of daily essentials (milk, bread, eggs). BigBasket's SmartBasket is the gold standard. | Large — new model, scheduler, management UI |
-| 8 | **Membership plan** | Paid tier with free delivery + member-only prices. Swiggy One, Instacart+, BB Star. | Medium — membership model, checkout integration, admin config |
-| 9 | **Cart upsells / nudges** | "Add Rs 50 more for free delivery", "Complete your basket" prompts at checkout. Universal. | Small — checkout logic + UI |
-| 10 | **WhatsApp order updates** | Order confirmations + status via WhatsApp. Massive open rates in India vs push. | Small-Medium — WhatsApp Business API integration |
+- [x] **Cart upsells / nudges** — "Add ₹X more for free delivery", "Complete your basket" prompts at checkout. Universal. `Small` *(done: free delivery nudge + min order nudge)*
+- [ ] **Frequently bought together** — "Customers also bought" suggestions on product detail + cart. Drives AOV. `Medium`
+- [ ] **WhatsApp order updates** — Order confirmations + status via WhatsApp. Massive open rates in India vs push. `Small-Medium`
+- [ ] **Membership plan** — Paid tier with free delivery + member-only prices. Swiggy One, Instacart+, BB Star. `Medium`
+- [ ] **Subscription / auto-delivery** — Recurring delivery of daily essentials (milk, bread, eggs). BigBasket's SmartBasket. `Large`
 
 ## Tier 3: Differentiators (fewer competitors have, high impact)
 
-| # | Feature | What It Is | Effort |
-|---|---------|-----------|--------|
-| 11 | **Shoppable recipes** | Browse recipes, one-tap "Add all ingredients to cart". Instacart's killer feature. | Medium — recipe model + ingredient-to-product mapping |
-| 12 | **Substitution preferences** | Per-item rules: "replace with X" or "refund if unavailable". Critical for stock-out handling. | Medium — preference storage + fulfillment integration |
-| 13 | **Context-aware recommendations** | Time-of-day suggestions (breakfast items in AM, snacks in evening). Weather-based (hot drinks when cold). | Medium — time/context logic + personalized home feed |
-| 14 | **Gamification** | Scratch cards on order completion, streak rewards, achievement badges. Blinkit uses this for engagement. | Medium — reward events + UI |
-| 15 | **Prepared food / cafe menu** | Ready-to-eat meals section. Blinkit Bistro and Zepto Cafe are the hottest battleground in Indian q-commerce right now. | Large — separate catalog type, kitchen ops |
+- [ ] **Shoppable recipes** — Browse recipes, one-tap "Add all ingredients to cart". Instacart's killer feature. `Medium`
+- [ ] **Substitution preferences** — Per-item rules: "replace with X" or "refund if unavailable". Critical for stock-out handling. `Medium`
+- [ ] **Context-aware recommendations** — Time-of-day suggestions (breakfast in AM, snacks in evening). Weather-based. `Medium`
+- [ ] **Gamification** — Scratch cards on order completion, streak rewards, achievement badges. `Medium`
+- [ ] **Prepared food / cafe menu** — Ready-to-eat meals section. Blinkit Bistro and Zepto Cafe. `Large`
 
 ## Tier 4: Nice-to-Have (lower priority, future consideration)
 
-| # | Feature | What It Is |
-|---|---------|-----------|
-| 16 | **Group/family cart** | Collaborative shopping list shared with household members |
-| 17 | **Barcode scanner** | Scan physical product -> add to cart |
-| 18 | **Gift cards** | Purchasable store credits to gift others |
-| 19 | **Price drop alerts** | Notify when a wishlisted item goes on sale |
-| 20 | **Multi-language support** | Hindi + regional language UI (BigBasket supports 7 languages) |
+- [ ] **Group/family cart** — Collaborative shopping list shared with household members
+- [ ] **Barcode scanner** — Scan physical product -> add to cart
+- [ ] **Gift cards** — Purchasable store credits to gift others
+- [ ] **Price drop alerts** — Notify when a wishlisted item goes on sale
+- [ ] **Multi-language support** — Hindi + regional language UI (BigBasket supports 7 languages)
 
 ---
 
 ## Recommended Build Order
 
-Next 5 features to close the biggest gaps:
+Next features to close the biggest gaps:
 
-1. **Minimum order amount + cart nudges** — Tiny effort, directly impacts profitability
-2. **Delivery instructions** — Tiny effort, table-stakes UX gap
+1. ~~**Minimum order amount + cart nudges**~~ — Done
+2. ~~**Delivery instructions**~~ — Done
 3. **Frequently bought together** — Medium effort, proven AOV driver
 4. **Return/refund requests** — Medium effort, currently a missing customer-facing flow
 5. **Live order tracking** — Medium effort, the single most expected feature in delivery apps

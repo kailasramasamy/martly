@@ -193,6 +193,12 @@ enum TicketPriority {
   HIGH
 }
 
+enum ReturnRequestStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -217,6 +223,7 @@ model Organization {
   referralConfig      ReferralConfig?
   referrals           Referral[]
   supportTickets      SupportTicket[]
+  returnRequests      ReturnRequest[]
 
   @@map("organizations")
 }
@@ -251,6 +258,7 @@ model Store {
   banners               Banner[]
   storeRatings          StoreRating[] @relation("StoreRatings")
   supportTickets        SupportTicket[]
+  returnRequests        ReturnRequest[]
 
   @@map("stores")
 }
@@ -287,6 +295,7 @@ model User {
   referralsMade        Referral[]             @relation("ReferralsMade")
   referralReceived     Referral[]             @relation("ReferralReceived")
   supportTickets       SupportTicket[]
+  returnRequests       ReturnRequest[]
 
   @@map("users")
 }
@@ -503,6 +512,7 @@ model Order {
   storeRatings        StoreRating[]
   reviews             Review[]
   supportTickets      SupportTicket[]
+  returnRequest       ReturnRequest?
 
   @@map("orders")
 }
@@ -535,10 +545,11 @@ model OrderItem {
   discountType  DiscountType? @map("discount_type")
   discountValue Decimal?      @db.Decimal(10, 2) @map("discount_value")
 
-  order        Order          @relation(fields: [orderId], references: [id])
-  product      Product        @relation(fields: [productId], references: [id])
-  variant      ProductVariant @relation(fields: [variantId], references: [id])
-  storeProduct StoreProduct   @relation(fields: [storeProductId], references: [id])
+  order              Order              @relation(fields: [orderId], references: [id])
+  product            Product            @relation(fields: [productId], references: [id])
+  variant            ProductVariant     @relation(fields: [variantId], references: [id])
+  storeProduct       StoreProduct       @relation(fields: [storeProductId], references: [id])
+  returnRequestItems ReturnRequestItem[]
 
   @@map("order_items")
 }
@@ -1066,4 +1077,45 @@ model SearchAlias {
 
   @@index([productId])
   @@map("search_aliases")
+}
+
+model ReturnRequest {
+  id              String              @id @default(uuid())
+  orderId         String              @unique @map("order_id")
+  userId          String              @map("user_id")
+  organizationId  String              @map("organization_id")
+  storeId         String              @map("store_id")
+  status          ReturnRequestStatus @default(PENDING)
+  reason          String
+  description     String?
+  images          String[]            @default([])
+  requestedAmount Decimal             @db.Decimal(10, 2) @map("requested_amount")
+  approvedAmount  Decimal?            @db.Decimal(10, 2) @map("approved_amount")
+  adminNote       String?             @map("admin_note")
+  resolvedAt      DateTime?           @map("resolved_at")
+  resolvedBy      String?             @map("resolved_by")
+  createdAt       DateTime            @default(now()) @map("created_at")
+  updatedAt       DateTime            @updatedAt @map("updated_at")
+
+  order        Order        @relation(fields: [orderId], references: [id])
+  user         User         @relation(fields: [userId], references: [id])
+  organization Organization @relation(fields: [organizationId], references: [id])
+  store        Store        @relation(fields: [storeId], references: [id])
+  items        ReturnRequestItem[]
+
+  @@index([userId, createdAt])
+  @@index([organizationId, status])
+  @@map("return_requests")
+}
+
+model ReturnRequestItem {
+  id              String @id @default(uuid())
+  returnRequestId String @map("return_request_id")
+  orderItemId     String @map("order_item_id")
+  quantity        Int
+
+  returnRequest ReturnRequest @relation(fields: [returnRequestId], references: [id], onDelete: Cascade)
+  orderItem     OrderItem     @relation(fields: [orderItemId], references: [id])
+
+  @@map("return_request_items")
 }

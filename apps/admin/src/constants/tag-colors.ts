@@ -156,6 +156,12 @@ export const REFERRAL_STATUS_CONFIG: Record<string, { color: string; label: stri
   EXPIRED: { color: "red", label: "Expired" },
 };
 
+export const RETURN_REQUEST_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  PENDING: { color: "orange", label: "Pending" },
+  APPROVED: { color: "green", label: "Approved" },
+  REJECTED: { color: "red", label: "Rejected" },
+};
+
 export const TICKET_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
   OPEN: { color: "orange", label: "Open" },
   RESOLVED: { color: "green", label: "Resolved" },

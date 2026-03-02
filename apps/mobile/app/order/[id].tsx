@@ -8,7 +8,8 @@ import {
   ActivityIndicator,
   TextInput,
 } from "react-native";
-import { useLocalSearchParams, useRouter } from "expo-router";
+import { useLocalSearchParams, useRouter, useFocusEffect } from "expo-router";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useOrderWebSocket } from "../../lib/useOrderWebSocket";
@@ -59,6 +60,7 @@ interface OrderData {
   totalAmount: string;
   deliveryAddress: string | null;
   createdAt: string;
+  updatedAt: string;
   items: OrderItemData[];
   statusLogs?: StatusLogData[];
   couponCode?: string | null;
@@ -116,10 +118,23 @@ const PAYMENT_STATUS_COLORS: Record<string, string> = {
   REFUNDED: "#3b82f6",
 };
 
+const RETURN_STATUS_COLORS: Record<string, string> = {
+  PENDING: "#f59e0b",
+  APPROVED: "#22c55e",
+  REJECTED: "#ef4444",
+};
+
+const RETURN_STATUS_LABELS: Record<string, string> = {
+  PENDING: "Pending Review",
+  APPROVED: "Approved",
+  REJECTED: "Rejected",
+};
+
 export default function OrderDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const toast = useToast();
+  const insets = useSafeAreaInsets();
   const [order, setOrder] = useState<OrderData | null>(null);
   const [loading, setLoading] = useState(true);
   const [cancelling, setCancelling] = useState(false);
@@ -133,6 +148,7 @@ export default function OrderDetailScreen() {
   const [storePackaging, setStorePackaging] = useState(0);
   const [storeComment, setStoreComment] = useState("");
   const [submittingRating, setSubmittingRating] = useState(false);
+  const [returnRequest, setReturnRequest] = useState<any>(null);
 
   const fetchOrder = useCallback(async () => {
     try {
@@ -171,7 +187,22 @@ export default function OrderDetailScreen() {
         if (res.data) setMyReviews(res.data);
       }).catch(() => {});
     }
+
+    // Fetch existing return request
+    api.get<any>(`/api/v1/return-requests/my-requests/${id}`).then((res) => {
+      if (res.data) setReturnRequest(res.data);
+    }).catch(() => {});
   }, [order?.status, order?.items, id]);
+
+  // Re-fetch return request on screen focus (e.g. after submitting one)
+  useFocusEffect(
+    useCallback(() => {
+      if (!order || order.status !== "DELIVERED") return;
+      api.get<any>(`/api/v1/return-requests/my-requests/${id}`).then((res) => {
+        if (res.data) setReturnRequest(res.data);
+      }).catch(() => {});
+    }, [order?.status, id])
+  );
 
   const isActive = !!order && order.status !== "DELIVERED" && order.status !== "CANCELLED";
 
@@ -261,7 +292,7 @@ export default function OrderDetailScreen() {
 
   return (
     <View style={{ flex: 1 }}>
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, spacing.lg) }}>
       {/* Order ID + Status */}
       <View style={styles.header}>
         <Text style={styles.orderId}>Order #{order.id.slice(0, 8)}</Text>
@@ -635,6 +666,47 @@ export default function OrderDetailScreen() {
               })}
             </View>
           </View>
+          {/* Return Request Section */}
+          {returnRequest ? (
+            <View style={styles.returnCard}>
+              <View style={styles.returnCardHeader}>
+                <Text style={styles.returnCardTitle}>Return Request</Text>
+                <View style={[styles.returnBadge, { backgroundColor: RETURN_STATUS_COLORS[returnRequest.status] ?? colors.textSecondary }]}>
+                  <Text style={styles.returnBadgeText}>{RETURN_STATUS_LABELS[returnRequest.status] ?? returnRequest.status}</Text>
+                </View>
+              </View>
+              <Text style={styles.returnReason}>{returnRequest.reason}</Text>
+              <View style={styles.returnAmountRow}>
+                <Text style={styles.returnAmountLabel}>Requested Amount</Text>
+                <Text style={styles.returnAmountValue}>{"\u20B9"}{Number(returnRequest.requestedAmount).toFixed(0)}</Text>
+              </View>
+              {returnRequest.status === "APPROVED" && (
+                <>
+                  <View style={styles.returnAmountRow}>
+                    <Text style={styles.returnAmountLabel}>Approved Amount</Text>
+                    <Text style={[styles.returnAmountValue, { color: "#22c55e" }]}>{"\u20B9"}{Number(returnRequest.approvedAmount).toFixed(0)}</Text>
+                  </View>
+                  {returnRequest.adminNote && (
+                    <Text style={styles.returnAdminNote}>{returnRequest.adminNote}</Text>
+                  )}
+                </>
+              )}
+              {returnRequest.status === "REJECTED" && returnRequest.adminNote && (
+                <Text style={styles.returnAdminNote}>{returnRequest.adminNote}</Text>
+              )}
+            </View>
+          ) : (
+            new Date().getTime() - new Date(order.updatedAt).getTime() < 48 * 60 * 60 * 1000 && (
+              <TouchableOpacity
+                style={styles.returnBtn}
+                onPress={() => router.push({ pathname: "/return-request", params: { orderId: order.id } })}
+                activeOpacity={0.7}
+              >
+                <Ionicons name="return-down-back-outline" size={18} color={colors.primary} />
+                <Text style={styles.returnBtnText}>Request Return/Refund</Text>
+              </TouchableOpacity>
+            )
+          )}
         </>
       )}
 
@@ -995,5 +1067,82 @@ const styles = StyleSheet.create({
     fontSize: fontSize.sm,
     fontWeight: "600",
     color: colors.primary,
+  },
+  returnCard: {
+    backgroundColor: colors.surface,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: spacing.md,
+    marginTop: spacing.lg,
+    marginBottom: spacing.md,
+  },
+  returnCardHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: spacing.sm,
+  },
+  returnCardTitle: {
+    fontSize: fontSize.lg,
+    fontWeight: "700",
+    color: colors.text,
+  },
+  returnBadge: {
+    paddingHorizontal: 10,
+    paddingVertical: 3,
+    borderRadius: 10,
+  },
+  returnBadgeText: {
+    fontSize: fontSize.sm,
+    fontWeight: "600",
+    color: "#fff",
+  },
+  returnReason: {
+    fontSize: fontSize.md,
+    color: colors.textSecondary,
+    marginBottom: spacing.sm,
+  },
+  returnAmountRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 4,
+  },
+  returnAmountLabel: {
+    fontSize: fontSize.md,
+    color: colors.text,
+  },
+  returnAmountValue: {
+    fontSize: fontSize.md,
+    fontWeight: "700",
+    color: colors.text,
+  },
+  returnAdminNote: {
+    fontSize: fontSize.sm,
+    color: colors.textSecondary,
+    fontStyle: "italic",
+    marginTop: spacing.sm,
+    paddingTop: spacing.sm,
+    borderTopWidth: 1,
+    borderTopColor: colors.border,
+  },
+  returnBtn: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+    borderRadius: 10,
+    paddingVertical: 14,
+    marginTop: spacing.md,
+    marginBottom: spacing.md,
+    borderWidth: 1.5,
+    borderColor: colors.primary,
+    backgroundColor: colors.primary + "08",
+  },
+  returnBtnText: {
+    color: colors.primary,
+    fontSize: fontSize.md,
+    fontWeight: "600",
   },
 });

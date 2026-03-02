@@ -32,6 +32,7 @@ import {
   CustomerServiceOutlined,
   RobotOutlined,
   FundOutlined,
+  RollbackOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -111,6 +112,8 @@ import { ReferralSettings } from "./pages/referrals/settings";
 import { ReferralList } from "./pages/referrals/list";
 import { SupportTicketList } from "./pages/support-tickets/list";
 import { SupportTicketShow } from "./pages/support-tickets/show";
+import { ReturnRequestList } from "./pages/return-requests/list";
+import { ReturnRequestShow } from "./pages/return-requests/show";
 import { StoreIntelligencePage } from "./pages/store-intelligence";
 import { CustomerInsightsPage } from "./pages/customer-insights";
 import { OrgSwitcher } from "./components/OrgSwitcher";
@@ -390,6 +393,12 @@ export default function App() {
                 meta: { label: "Orders", icon: <ShoppingCartOutlined /> },
               },
               {
+                name: "return-requests",
+                list: "/return-requests",
+                show: "/return-requests/show/:id",
+                meta: { label: "Returns", icon: <RollbackOutlined /> },
+              },
+              {
                 name: "support-tickets",
                 list: "/support-tickets",
                 show: "/support-tickets/show/:id",
@@ -476,6 +485,10 @@ export default function App() {
                 <Route path="/orders">
                   <Route index element={<OrderList />} />
                   <Route path="show/:id" element={<OrderShow />} />
+                </Route>
+                <Route path="/return-requests">
+                  <Route index element={<ReturnRequestList />} />
+                  <Route path="show/:id" element={<ReturnRequestShow />} />
                 </Route>
                 <Route path="/support-tickets">
                   <Route index element={<SupportTicketList />} />

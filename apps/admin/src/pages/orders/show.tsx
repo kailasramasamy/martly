@@ -14,7 +14,7 @@ import {
   ClockCircleOutlined,
 } from "@ant-design/icons";
 
-import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, FULFILLMENT_TYPE_CONFIG } from "../../constants/tag-colors";
+import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, FULFILLMENT_TYPE_CONFIG, RETURN_REQUEST_STATUS_CONFIG } from "../../constants/tag-colors";
 import { DELIVERY_TRANSITIONS, PICKUP_TRANSITIONS, NEXT_ACTION } from "../../constants/order-transitions";
 import { sectionTitle } from "../../theme";
 
@@ -239,6 +239,18 @@ export const OrderShow = () => {
               </Descriptions.Item>
               <Descriptions.Item label="Last Updated">
                 {record.updatedAt ? new Date(record.updatedAt).toLocaleString() : "—"}
+              </Descriptions.Item>
+              <Descriptions.Item label="Return Request">
+                {record.returnRequest ? (
+                  <Space>
+                    <Tag color={RETURN_REQUEST_STATUS_CONFIG[record.returnRequest.status]?.color ?? "default"}>
+                      {RETURN_REQUEST_STATUS_CONFIG[record.returnRequest.status]?.label ?? record.returnRequest.status}
+                    </Tag>
+                    <Button type="link" size="small" onClick={() => window.location.href = `/return-requests/show/${record.returnRequest.id}`}>
+                      View Details
+                    </Button>
+                  </Space>
+                ) : "\u2014"}
               </Descriptions.Item>
             </Descriptions>
           </Card>
