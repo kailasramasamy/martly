@@ -5,14 +5,16 @@ import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
 import { api } from "../../lib/api";
-import type { Banner } from "../../lib/types";
+import type { Banner, StoreProduct } from "../../lib/types";
 import { colors, spacing, fontSize } from "../../constants/theme";
+import { FeaturedProductCard } from "../../components/FeaturedProductCard";
 
 export default function CartScreen() {
   const router = useRouter();
-  const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
+  const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem, addItem } = useCart();
   const { selectedStore } = useStore();
   const [upsellBanners, setUpsellBanners] = useState<Banner[]>([]);
+  const [alsoBought, setAlsoBought] = useState<StoreProduct[]>([]);
 
   const minOrderAmount = selectedStore?.minOrderAmount ? Number(selectedStore.minOrderAmount) : null;
   const freeDeliveryThreshold = selectedStore?.freeDeliveryThreshold ? Number(selectedStore.freeDeliveryThreshold) : null;
@@ -31,6 +33,33 @@ export default function CartScreen() {
       .then((res) => setUpsellBanners(res.data))
       .catch(() => {});
   }, [storeId]);
+
+  useEffect(() => {
+    if (!storeId || items.length === 0) {
+      setAlsoBought([]);
+      return;
+    }
+    const productIds = [...new Set(items.map((i) => i.productId))].join(",");
+    const excludeIds = items.map((i) => i.storeProductId).join(",");
+    api
+      .get<StoreProduct[]>(`/api/v1/stores/${storeId}/frequently-bought-together?productIds=${productIds}&exclude=${excludeIds}&limit=6`)
+      .then((res) => setAlsoBought(res.data))
+      .catch(() => {});
+  }, [storeId, items]);
+
+  const handleCartAdd = useCallback((sp: StoreProduct) => {
+    if (!storeId) return;
+    const effectivePrice = sp.pricing?.discountActive ? sp.pricing.effectivePrice : Number(sp.price);
+    addItem(storeId, storeName, {
+      storeProductId: sp.id,
+      productId: sp.product.id,
+      productName: sp.product.name,
+      variantId: sp.variant.id,
+      variantName: sp.variant.name,
+      price: effectivePrice,
+      imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
+    });
+  }, [storeId, storeName, addItem]);
 
   const handleBannerPress = useCallback((banner: Banner) => {
     switch (banner.actionType) {
@@ -172,6 +201,30 @@ export default function CartScreen() {
           </View>
         )}
         ListFooterComponent={
+          <View>
+          {alsoBought.length > 0 && (
+            <View style={styles.alsoBoughtSection}>
+              <Text style={styles.alsoBoughtTitle}>Customers Also Bought</Text>
+              <FlatList
+                horizontal
+                data={alsoBought}
+                keyExtractor={(item) => item.id}
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={styles.alsoBoughtList}
+                renderItem={({ item }) => (
+                  <FeaturedProductCard
+                    item={item}
+                    onAddToCart={handleCartAdd}
+                    onUpdateQuantity={updateQuantity}
+                    quantity={items.find((i) => i.storeProductId === item.id)?.quantity ?? 0}
+                    storeId={storeId ?? undefined}
+                    variantCount={1}
+                    onShowVariants={() => {}}
+                  />
+                )}
+              />
+            </View>
+          )}
           <View style={styles.billSection}>
             <Text style={styles.billTitle}>Bill Details</Text>
             <View style={styles.billCard}>
@@ -195,6 +248,7 @@ export default function CartScreen() {
                 <Text style={styles.billGrandValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
               </View>
             </View>
+          </View>
           </View>
         }
       />
@@ -443,6 +497,21 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: colors.text,
     marginTop: 6,
+  },
+  // Also bought
+  alsoBoughtSection: {
+    marginTop: spacing.sm,
+    paddingBottom: spacing.sm,
+  },
+  alsoBoughtTitle: {
+    fontSize: 15,
+    fontWeight: "700",
+    color: colors.text,
+    marginBottom: spacing.sm,
+  },
+  alsoBoughtList: {
+    gap: spacing.sm,
+    paddingBottom: spacing.sm,
   },
   // Bill details
   billSection: {

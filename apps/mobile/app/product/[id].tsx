@@ -55,6 +55,7 @@ export default function ProductDetailScreen() {
   const [reviewSummary, setReviewSummary] = useState<ReviewSummary | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
   const [substitutes, setSubstitutes] = useState<StoreProduct[]>([]);
+  const [frequentlyBought, setFrequentlyBought] = useState<StoreProduct[]>([]);
 
   // Collect all images from product, gallery, and variants
   const images = useMemo(() => {
@@ -163,6 +164,13 @@ export default function ProductDetailScreen() {
         if (hasOutOfStock && storeId) {
           api.get<StoreProduct[]>(`/api/v1/stores/${storeId}/products/${id}/substitutes`)
             .then((res) => setSubstitutes(res.data))
+            .catch(() => {});
+        }
+
+        // Fetch frequently bought together
+        if (storeId) {
+          api.get<StoreProduct[]>(`/api/v1/stores/${storeId}/frequently-bought-together?productIds=${id}`)
+            .then((res) => setFrequentlyBought(res.data))
             .catch(() => {});
         }
       })
@@ -402,6 +410,31 @@ export default function ProductDetailScreen() {
                 </View>
               );
             })}
+          </View>
+        )}
+
+        {/* Frequently Bought Together */}
+        {frequentlyBought.length > 0 && (
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Frequently Bought Together</Text>
+            <FlatList
+              horizontal
+              data={frequentlyBought}
+              keyExtractor={(item) => item.id}
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.relatedList}
+              renderItem={({ item }) => (
+                <FeaturedProductCard
+                  item={item}
+                  onAddToCart={handleAddToCart}
+                  onUpdateQuantity={updateQuantity}
+                  quantity={cartQuantityMap.get(item.id) ?? 0}
+                  storeId={storeId}
+                  variantCount={1}
+                  onShowVariants={() => {}}
+                />
+              )}
+            />
           </View>
         )}
 

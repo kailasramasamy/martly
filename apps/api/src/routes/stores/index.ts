@@ -406,6 +406,136 @@ export async function storeRoutes(app: FastifyInstance) {
     },
   );
 
+  // ── Frequently Bought Together ──────────────────────
+
+  app.get<{ Params: { id: string } }>(
+    "/:id/frequently-bought-together",
+    { preHandler: [authenticateOptional] },
+    async (request, reply) => {
+      const storeId = request.params.id;
+      const { productIds: productIdsParam, exclude, limit: limitParam } = request.query as {
+        productIds?: string; exclude?: string; limit?: string;
+      };
+
+      if (!productIdsParam) return reply.badRequest("productIds query parameter is required");
+
+      const productIds = productIdsParam.split(",").filter(Boolean);
+      if (productIds.length === 0) return reply.badRequest("At least one productId is required");
+
+      const excludeIds = exclude ? exclude.split(",").filter(Boolean) : [];
+      const limit = Math.min(Math.max(Number(limitParam) || 8, 1), 12);
+
+      const store = await app.prisma.store.findUnique({ where: { id: storeId } });
+      if (!store) return reply.notFound("Store not found");
+
+      // Raw SQL: find products co-purchased with the given products in DELIVERED orders (last 90 days)
+      const coProductIds = await app.prisma.$queryRawUnsafe<{ product_id: string; co_count: number }[]>(
+        `
+        SELECT oi2.product_id, COUNT(DISTINCT oi1.order_id)::int AS co_count
+        FROM order_items oi1
+        JOIN order_items oi2 ON oi1.order_id = oi2.order_id AND oi1.product_id != oi2.product_id
+        JOIN orders o ON o.id = oi1.order_id
+        JOIN store_products sp ON sp.store_id = $1 AND sp.product_id = oi2.product_id AND sp.is_active = true AND sp.stock > 0
+        WHERE oi1.product_id = ANY($2)
+          AND oi2.product_id != ALL($2)
+          AND o.store_id = $1
+          AND o.status = 'DELIVERED'
+          AND o.created_at >= NOW() - INTERVAL '90 days'
+          ${excludeIds.length > 0 ? `AND sp.id != ALL($3)` : ""}
+        GROUP BY oi2.product_id
+        ORDER BY co_count DESC
+        LIMIT $${excludeIds.length > 0 ? "4" : "3"}
+        `,
+        storeId,
+        productIds,
+        ...(excludeIds.length > 0 ? [excludeIds, limit + 5] : [limit + 5]),
+      );
+
+      let resultProductIds = coProductIds.map((r) => r.product_id);
+
+      // Fallback: if too few co-purchase results, supplement with best-sellers
+      if (resultProductIds.length < 3) {
+        const allExclude = [...productIds, ...resultProductIds];
+        const bestSellers = await app.prisma.$queryRawUnsafe<{ product_id: string }[]>(
+          `
+          SELECT oi.product_id, COUNT(*)::int AS order_count
+          FROM order_items oi
+          JOIN orders o ON o.id = oi.order_id
+          JOIN store_products sp ON sp.store_id = $1 AND sp.product_id = oi.product_id AND sp.is_active = true AND sp.stock > 0
+          WHERE o.store_id = $1
+            AND o.status = 'DELIVERED'
+            AND oi.product_id != ALL($2)
+            ${excludeIds.length > 0 ? `AND sp.id != ALL($3)` : ""}
+          GROUP BY oi.product_id
+          ORDER BY order_count DESC
+          LIMIT $${excludeIds.length > 0 ? "4" : "3"}
+          `,
+          storeId,
+          allExclude,
+          ...(excludeIds.length > 0 ? [excludeIds, limit + 5 - resultProductIds.length] : [limit + 5 - resultProductIds.length]),
+        );
+        resultProductIds = [...resultProductIds, ...bestSellers.map((r) => r.product_id)];
+      }
+
+      if (resultProductIds.length === 0) {
+        return { success: true, data: [] } satisfies ApiResponse<never[]>;
+      }
+
+      // Fetch full StoreProduct records via Prisma
+      const storeProducts = await app.prisma.storeProduct.findMany({
+        where: {
+          storeId,
+          productId: { in: resultProductIds },
+          isActive: true,
+          stock: { gt: 0 },
+          ...(excludeIds.length > 0 ? { id: { notIn: excludeIds } } : {}),
+        },
+        include: {
+          product: { include: { category: true, variants: true } },
+          variant: true,
+        },
+      });
+
+      // Deduplicate by productId — keep the one with highest co-occurrence
+      const coCountMap = new Map(coProductIds.map((r) => [r.product_id, r.co_count]));
+      const seenProducts = new Set<string>();
+      const uniqueProducts = storeProducts
+        .sort((a, b) => (coCountMap.get(b.productId) ?? 0) - (coCountMap.get(a.productId) ?? 0))
+        .filter((sp) => {
+          if (seenProducts.has(sp.productId)) return false;
+          seenProducts.add(sp.productId);
+          return true;
+        })
+        .slice(0, limit);
+
+      // Batch-fetch review aggregates
+      const reviewProductIds = [...new Set(uniqueProducts.map((sp) => sp.productId))];
+      const reviewAggs = reviewProductIds.length > 0
+        ? await app.prisma.review.groupBy({
+            by: ["productId"],
+            where: { productId: { in: reviewProductIds }, status: "APPROVED" },
+            _avg: { rating: true },
+            _count: { rating: true },
+          })
+        : [];
+      const reviewMap = new Map(reviewAggs.map((r) => [r.productId, { averageRating: Math.round((r._avg.rating ?? 0) * 10) / 10, reviewCount: r._count.rating }]));
+
+      const data = uniqueProducts.map((sp) => {
+        const pricing = calculateEffectivePrice(
+          sp.price as unknown as number,
+          sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+          sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
+        );
+        const variant = formatVariantUnit(sp.variant);
+        const reviews = reviewMap.get(sp.productId);
+        const product = reviews ? { ...sp.product, averageRating: reviews.averageRating, reviewCount: reviews.reviewCount } : sp.product;
+        return { ...sp, product, variant, pricing, availableStock: sp.stock - sp.reservedStock };
+      });
+
+      return { success: true, data } satisfies ApiResponse<typeof data>;
+    },
+  );
+
   // ── Store Staff Management ─────────────────────────
 
   // List staff assigned to a store
