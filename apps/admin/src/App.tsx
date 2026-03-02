@@ -112,6 +112,7 @@ import { ReferralList } from "./pages/referrals/list";
 import { SupportTicketList } from "./pages/support-tickets/list";
 import { SupportTicketShow } from "./pages/support-tickets/show";
 import { StoreIntelligencePage } from "./pages/store-intelligence";
+import { CustomerInsightsPage } from "./pages/customer-insights";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -403,6 +404,11 @@ export default function App() {
                 list: "/store-intelligence",
                 meta: { label: "Store Intelligence", icon: <FundOutlined />, parent: "operations" },
               },
+              {
+                name: "customer-insights",
+                list: "/customer-insights",
+                meta: { label: "Customer Insights", icon: <TeamOutlined />, parent: "operations" },
+              },
             ]}
           >
             <Routes>
@@ -519,6 +525,7 @@ export default function App() {
                 <Route path="/stock" element={<StockPage />} />
                 <Route path="/featured-products" element={<FeaturedProductsPage />} />
                 <Route path="/store-intelligence" element={<StoreIntelligencePage />} />
+                <Route path="/customer-insights" element={<CustomerInsightsPage />} />
                 <Route path="/" element={<DashboardPage />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />

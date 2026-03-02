@@ -42,6 +42,7 @@ import { aiRoutes } from "./routes/ai/index.js";
 import { supportRoutes } from "./routes/support/index.js";
 import { smartReorderRoutes } from "./routes/smart-reorder/index.js";
 import { storeIntelligenceRoutes } from "./routes/store-intelligence/index.js";
+import { customerInsightsRoutes } from "./routes/customer-insights/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
 import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
@@ -137,6 +138,7 @@ export async function buildApp() {
       await api.register(supportRoutes, { prefix: "/support" });
       await api.register(smartReorderRoutes, { prefix: "/smart-reorder" });
       await api.register(storeIntelligenceRoutes, { prefix: "/store-intelligence" });
+      await api.register(customerInsightsRoutes, { prefix: "/customer-insights" });
     },
     { prefix: "/api/v1" },
   );

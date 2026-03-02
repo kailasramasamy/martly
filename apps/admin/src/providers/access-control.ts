@@ -159,6 +159,12 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin, Org Admin, or Store Manager can access intelligence" };
     }
 
+    // Customer Insights: ORG_ADMIN, STORE_MANAGER
+    if (resource === "customer-insights") {
+      if (["ORG_ADMIN", "STORE_MANAGER"].includes(role)) return { can: true };
+      return { can: false, reason: "Only Super Admin, Org Admin, or Store Manager can access customer insights" };
+    }
+
     // Everything else: allow
     return { can: true };
   },
