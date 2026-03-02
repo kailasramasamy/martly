@@ -6,8 +6,10 @@ import {
   FlatList,
   TouchableOpacity,
   StyleSheet,
+  Keyboard,
 } from "react-native";
 import { useLocalSearchParams, useNavigation } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { useCart } from "../lib/cart-context";
@@ -50,6 +52,11 @@ export default function SearchScreen() {
   const [sheetVisible, setSheetVisible] = useState(false);
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
   const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
+  const [searchMeta, setSearchMeta] = useState<{
+    strategy: string;
+    correctedQuery?: string;
+    expandedTerms?: string[];
+  } | null>(null);
 
   const navigation = useNavigation();
 
@@ -114,13 +121,19 @@ export default function SearchScreen() {
         .then((res) => {
           if (pageNum === 1) {
             setResults(res.data);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            const meta = (res as any).searchMeta;
+            setSearchMeta(meta ?? null);
           } else {
             setResults((prev) => [...prev, ...res.data]);
           }
           setHasMore(res.data.length === 20);
         })
         .catch(() => {
-          if (pageNum === 1) setResults([]);
+          if (pageNum === 1) {
+            setResults([]);
+            setSearchMeta(null);
+          }
         })
         .finally(() => setLoading(false));
     },
@@ -287,6 +300,19 @@ export default function SearchScreen() {
         />
       </View>
 
+      {/* Search Meta Banner */}
+      {searchMeta && searchMeta.strategy !== "keyword" && groupedResults.length > 0 && (
+        <View style={styles.searchMetaBanner}>
+          <Ionicons name="sparkles-outline" size={14} color={colors.primary} />
+          <Text style={styles.searchMetaText}>
+            Showing results for{" "}
+            <Text style={styles.searchMetaBold}>
+              {searchMeta.correctedQuery ?? searchMeta.expandedTerms?.join(", ") ?? "similar products"}
+            </Text>
+          </Text>
+        </View>
+      )}
+
       {/* Results */}
       <FlatList
         data={groupedResults}
@@ -296,6 +322,8 @@ export default function SearchScreen() {
         columnWrapperStyle={styles.gridRow}
         onEndReached={handleLoadMore}
         onEndReachedThreshold={0.3}
+        onScrollBeginDrag={() => Keyboard.dismiss()}
+        keyboardShouldPersistTaps="handled"
         renderItem={({ item }) => {
           const variants = variantsByProductId.get(item.product.id);
           return (
@@ -386,4 +414,26 @@ const styles = StyleSheet.create({
   grid: { paddingHorizontal: GRID_H_PADDING, paddingBottom: spacing.xl },
   gridRow: { justifyContent: "space-between" },
   empty: { textAlign: "center", color: colors.textSecondary, marginTop: spacing.xl },
+  searchMetaBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 6,
+    marginHorizontal: spacing.md,
+    marginBottom: spacing.xs,
+    paddingHorizontal: spacing.sm,
+    paddingVertical: 6,
+    backgroundColor: "#f0fdfa",
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: "#ccfbf1",
+  },
+  searchMetaText: {
+    fontSize: fontSize.sm,
+    color: colors.textSecondary,
+    flex: 1,
+  },
+  searchMetaBold: {
+    fontWeight: "600",
+    color: colors.text,
+  },
 });

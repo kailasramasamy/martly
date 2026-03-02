@@ -7,6 +7,7 @@ import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, ve
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
 import { haversine } from "../../lib/geo.js";
+import { searchProducts } from "../../services/search.js";
 
 export async function storeRoutes(app: FastifyInstance) {
   // List stores (scoped to user's org; guests see all active stores)
@@ -201,6 +202,8 @@ export async function storeRoutes(app: FastifyInstance) {
     }
 
     const where: Record<string, unknown> = { storeId: request.params.id, isActive: true };
+    let searchMeta: { strategy: string; correctedQuery?: string; expandedTerms?: string[] } | undefined;
+
     if (productIds) {
       where.productId = { in: productIds.split(",").filter(Boolean) };
     } else if (productId) {
@@ -221,7 +224,14 @@ export async function storeRoutes(app: FastifyInstance) {
       ];
     }
     if (q) {
-      where.product = { name: { contains: q, mode: "insensitive" } };
+      const searchResult = await searchProducts(app.prisma, q);
+      if (searchResult.productIds.length > 0) {
+        where.productId = { in: searchResult.productIds };
+      } else {
+        // Fall back to basic keyword match (may return 0 results)
+        where.product = { name: { contains: q, mode: "insensitive" } };
+      }
+      searchMeta = searchResult.meta;
     }
     if (categoryId) {
       // Collect category + all descendant IDs for hierarchical filtering
@@ -286,13 +296,115 @@ export async function storeRoutes(app: FastifyInstance) {
       return { ...sp, product, variant, pricing, availableStock: sp.stock - sp.reservedStock };
     });
 
-    const response: PaginatedResponse<(typeof data)[0]> = {
+    const response: PaginatedResponse<(typeof data)[0]> & { searchMeta?: typeof searchMeta } = {
       success: true,
       data,
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
+    if (searchMeta) response.searchMeta = searchMeta;
     return response;
   });
+
+  // ── Product Substitutes ──────────────────────────────
+
+  app.get<{ Params: { id: string; productId: string } }>(
+    "/:id/products/:productId/substitutes",
+    { preHandler: [authenticateOptional] },
+    async (request, reply) => {
+      const { id: storeId, productId } = request.params;
+
+      const store = await app.prisma.store.findUnique({ where: { id: storeId } });
+      if (!store) return reply.notFound("Store not found");
+
+      // Load the target product
+      const targetSp = await app.prisma.storeProduct.findFirst({
+        where: { storeId, productId },
+        include: { product: true, variant: true },
+      });
+      if (!targetSp) return reply.notFound("Product not found in this store");
+
+      const target = targetSp.product;
+      const targetPrice = Number(targetSp.price);
+
+      // Build category filter: same category, or parent category if too few results
+      let categoryIds: string[] = [];
+      if (target.categoryId) {
+        categoryIds = [target.categoryId];
+        // Also include sibling categories (same parent)
+        const category = await app.prisma.category.findUnique({
+          where: { id: target.categoryId },
+          select: { parentId: true },
+        });
+        if (category?.parentId) {
+          const siblings = await app.prisma.category.findMany({
+            where: { parentId: category.parentId },
+            select: { id: true },
+          });
+          categoryIds = siblings.map((c) => c.id);
+        }
+      }
+
+      // Build substitute query: similar category, same foodType, price within ±50%
+      const priceLow = Math.round(targetPrice * 0.5 * 100) / 100;
+      const priceHigh = Math.round(targetPrice * 1.5 * 100) / 100;
+      const subWhere: Record<string, unknown> = {
+        storeId,
+        isActive: true,
+        stock: { gt: 0 },
+        productId: { not: productId },
+        price: { gte: priceLow, lte: priceHigh },
+        product: {
+          isActive: true,
+          ...(categoryIds.length > 0 ? { categoryId: { in: categoryIds } } : {}),
+          ...(target.foodType ? { foodType: target.foodType } : {}),
+        },
+      };
+
+      const substitutes = await app.prisma.storeProduct.findMany({
+        where: subWhere,
+        include: {
+          product: { include: { category: true, variants: true } },
+          variant: true,
+        },
+        orderBy: [{ price: "asc" }],
+        take: 10,
+      });
+
+      // Deduplicate by product ID (keep cheapest variant per product)
+      const seenProducts = new Set<string>();
+      const uniqueSubs = substitutes.filter((sp) => {
+        if (seenProducts.has(sp.productId)) return false;
+        seenProducts.add(sp.productId);
+        return true;
+      }).slice(0, 5);
+
+      // Batch-fetch review aggregates
+      const reviewProductIds = [...new Set(uniqueSubs.map((sp) => sp.productId))];
+      const reviewAggs = reviewProductIds.length > 0
+        ? await app.prisma.review.groupBy({
+            by: ["productId"],
+            where: { productId: { in: reviewProductIds }, status: "APPROVED" },
+            _avg: { rating: true },
+            _count: { rating: true },
+          })
+        : [];
+      const reviewMap = new Map(reviewAggs.map((r) => [r.productId, { averageRating: Math.round((r._avg.rating ?? 0) * 10) / 10, reviewCount: r._count.rating }]));
+
+      const data = uniqueSubs.map((sp) => {
+        const pricing = calculateEffectivePrice(
+          sp.price as unknown as number,
+          sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+          sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
+        );
+        const variant = formatVariantUnit(sp.variant);
+        const reviews = reviewMap.get(sp.productId);
+        const product = reviews ? { ...sp.product, averageRating: reviews.averageRating, reviewCount: reviews.reviewCount } : sp.product;
+        return { ...sp, product, variant, pricing, availableStock: sp.stock - sp.reservedStock };
+      });
+
+      return { success: true, data } satisfies ApiResponse<typeof data>;
+    },
+  );
 
   // ── Store Staff Management ─────────────────────────
 

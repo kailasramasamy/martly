@@ -54,6 +54,7 @@ export default function ProductDetailScreen() {
   const [previewImage, setPreviewImage] = useState<string | null>(null);
   const [reviewSummary, setReviewSummary] = useState<ReviewSummary | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
+  const [substitutes, setSubstitutes] = useState<StoreProduct[]>([]);
 
   // Collect all images from product, gallery, and variants
   const images = useMemo(() => {
@@ -151,6 +152,17 @@ export default function ProductDetailScreen() {
                 res.data.filter((sp) => sp.product.id !== id).slice(0, 10),
               );
             })
+            .catch(() => {});
+        }
+
+        // Fetch substitutes if any variant is out of stock
+        const hasOutOfStock = storeProd.some((sp) => {
+          const avail = sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0));
+          return avail <= 0;
+        });
+        if (hasOutOfStock && storeId) {
+          api.get<StoreProduct[]>(`/api/v1/stores/${storeId}/products/${id}/substitutes`)
+            .then((res) => setSubstitutes(res.data))
             .catch(() => {});
         }
       })
@@ -390,6 +402,31 @@ export default function ProductDetailScreen() {
                 </View>
               );
             })}
+          </View>
+        )}
+
+        {/* Substitute Suggestions */}
+        {substitutes.length > 0 && (
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>Similar Products</Text>
+            <FlatList
+              horizontal
+              data={substitutes}
+              keyExtractor={(item) => item.id}
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.relatedList}
+              renderItem={({ item }) => (
+                <FeaturedProductCard
+                  item={item}
+                  onAddToCart={handleAddToCart}
+                  onUpdateQuantity={updateQuantity}
+                  quantity={cartQuantityMap.get(item.id) ?? 0}
+                  storeId={storeId}
+                  variantCount={1}
+                  onShowVariants={() => {}}
+                />
+              )}
+            />
           </View>
         )}
 
