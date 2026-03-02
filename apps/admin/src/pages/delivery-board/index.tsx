@@ -950,26 +950,48 @@ export const DeliveryBoard = () => {
                         <div
                           key={trip.id}
                           style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 12,
                             padding: "8px 12px",
                             borderRadius: 6,
                             background: token.colorFillQuaternary,
                             fontSize: 13,
                           }}
                         >
-                          <UserOutlined style={{ color: token.colorTextSecondary }} />
-                          <span style={{ fontWeight: 500 }}>{trip.rider.name}</span>
-                          <Tag color={statusCfg?.color ?? "default"} style={{ margin: 0 }}>
-                            {statusCfg?.label ?? trip.status}
-                          </Tag>
-                          <span style={{ color: token.colorTextSecondary, fontVariantNumeric: "tabular-nums" }}>
-                            {delivered}/{total} delivered
-                          </span>
-                          <span style={{ fontSize: 12, color: token.colorTextQuaternary, marginLeft: "auto" }}>
-                            {timeAgo(trip.createdAt)}
-                          </span>
+                          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                            <UserOutlined style={{ color: token.colorTextSecondary }} />
+                            <span style={{ fontWeight: 500 }}>{trip.rider.name}</span>
+                            <Tag color={statusCfg?.color ?? "default"} style={{ margin: 0 }}>
+                              {statusCfg?.label ?? trip.status}
+                            </Tag>
+                            <span style={{ color: token.colorTextSecondary, fontVariantNumeric: "tabular-nums" }}>
+                              {delivered}/{total} delivered
+                            </span>
+                            <span style={{ fontSize: 12, color: token.colorTextQuaternary, marginLeft: "auto" }}>
+                              {timeAgo(trip.createdAt)}
+                            </span>
+                          </div>
+                          <div style={{ display: "flex", gap: 6, marginTop: 6, marginLeft: 28, flexWrap: "wrap" }}>
+                            {trip.orders.map((order) => {
+                              const oCfg = ORDER_STATUS_CONFIG[order.status];
+                              return (
+                                <a
+                                  key={order.id}
+                                  onClick={() => navigate(`/orders/show/${order.id}`)}
+                                  style={{
+                                    fontFamily: "monospace",
+                                    fontSize: 11,
+                                    cursor: "pointer",
+                                    padding: "1px 6px",
+                                    borderRadius: 4,
+                                    background: token.colorBgContainer,
+                                    border: `1px solid ${token.colorBorderSecondary}`,
+                                    color: oCfg?.color === "green" ? "#16a34a" : oCfg?.color === "red" ? "#ef4444" : token.colorTextSecondary,
+                                  }}
+                                >
+                                  {order.id.slice(0, 8)}
+                                </a>
+                              );
+                            })}
+                          </div>
                         </div>
                       );
                     })}
