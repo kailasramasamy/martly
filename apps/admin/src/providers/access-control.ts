@@ -175,6 +175,12 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Only Super Admin or Org Admin can manage return requests" };
     }
 
+    // Membership: ORG_ADMIN full access
+    if (resource === "membership-plans" || resource === "membership-subscribers") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage memberships" };
+    }
+
     // Everything else: allow
     return { can: true };
   },

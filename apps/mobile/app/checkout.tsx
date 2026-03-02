@@ -24,7 +24,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
 import { RazorpayCheckout } from "../components/RazorpayCheckout";
 import { ProfileGate } from "../components/ProfileGate";
-import type { FulfillmentType, UserAddress, CouponValidation, DeliveryZoneInfo, DeliveryLookupResult, LoyaltyData } from "../lib/types";
+import type { FulfillmentType, UserAddress, CouponValidation, DeliveryZoneInfo, DeliveryLookupResult, LoyaltyData, MembershipStatus } from "../lib/types";
 
 type PaymentMethod = "ONLINE" | "COD";
 type DeliveryMode = "express" | "scheduled";
@@ -89,6 +89,7 @@ export default function CheckoutScreen() {
   const [useWallet, setUseWallet] = useState(true);
   const [loyaltyData, setLoyaltyData] = useState<LoyaltyData | null>(null);
   const [useLoyalty, setUseLoyalty] = useState(false);
+  const [membershipStatus, setMembershipStatus] = useState<MembershipStatus | null>(null);
   const [deliveryMode, setDeliveryMode] = useState<DeliveryMode>("express");
   const [hasSlots, setHasSlots] = useState(false);
   const [expressConfig, setExpressConfig] = useState<{
@@ -156,6 +157,9 @@ export default function CheckoutScreen() {
     if (!storeId) return;
     api.get<LoyaltyData>(`/api/v1/loyalty?storeId=${storeId}`)
       .then((res) => setLoyaltyData(res.data))
+      .catch(() => {});
+    api.get<MembershipStatus>(`/api/v1/memberships/status?storeId=${storeId}`)
+      .then((res) => setMembershipStatus(res.data))
       .catch(() => {});
   }, [storeId]);
 
@@ -299,7 +303,8 @@ export default function CheckoutScreen() {
     ? (deliveryLookup.deliveryFee ?? 0)
     : (deliveryZone?.deliveryFee ?? 0);
   const rawDeliveryFee = isPickup ? 0 : (lookupOrZoneFee || baseDeliveryFee);
-  const freeDeliveryApplied = !isPickup && freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold;
+  const memberFreeDelivery = !isPickup && membershipStatus?.isMember && membershipStatus.membership?.freeDelivery;
+  const freeDeliveryApplied = !isPickup && (memberFreeDelivery || (freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold));
   const deliveryFee = freeDeliveryApplied ? 0 : rawDeliveryFee;
   const effectiveEstMinutes = isPickup
     ? 30
@@ -320,8 +325,9 @@ export default function CheckoutScreen() {
   const loyaltyDeduction = useLoyalty && loyaltyEnabled
     ? Math.min(loyaltyBalance, afterWallet, loyaltyMaxByPercentage)
     : 0;
+  const loyaltyMultiplier = membershipStatus?.membership?.loyaltyMultiplier ?? 1;
   const loyaltyEarnPreview = loyaltyConfig?.isEnabled && loyaltyConfig.earnRate > 0
-    ? Math.floor(grandTotal / 100 * loyaltyConfig.earnRate)
+    ? Math.floor(grandTotal / 100 * loyaltyConfig.earnRate * loyaltyMultiplier)
     : 0;
 
   const amountToPay = afterWallet - loyaltyDeduction;
@@ -1192,7 +1198,14 @@ export default function CheckoutScreen() {
                   {rawDeliveryFee > 0 && (
                     <Text style={styles.billStrikethrough}>{"\u20B9"}{rawDeliveryFee.toFixed(0)}</Text>
                   )}
-                  <Text style={styles.billFree}>FREE</Text>
+                  <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+                    <Text style={styles.billFree}>FREE</Text>
+                    {memberFreeDelivery && (
+                      <View style={{ backgroundColor: "#7c3aed18", paddingHorizontal: 6, paddingVertical: 1, borderRadius: 4 }}>
+                        <Text style={{ fontSize: 9, color: "#7c3aed", fontWeight: "700" }}>MEMBER</Text>
+                      </View>
+                    )}
+                  </View>
                 </View>
               ) : deliveryFee > 0 ? (
                 <Text style={styles.billValue}>{"\u20B9"}{deliveryFee.toFixed(0)}</Text>
@@ -1255,7 +1268,7 @@ export default function CheckoutScreen() {
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
                     <Ionicons name="star" size={14} color="#d97706" />
                     <Text style={[styles.billLabel, { color: "#d97706" }]}>
-                      You'll earn {loyaltyEarnPreview} points
+                      You'll earn {loyaltyEarnPreview} points{loyaltyMultiplier > 1 ? ` (${loyaltyMultiplier}x)` : ""}
                     </Text>
                   </View>
                 </View>

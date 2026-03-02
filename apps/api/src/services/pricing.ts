@@ -15,6 +15,8 @@ export interface PricingResult {
   discountActive: boolean;
   savingsAmount: number;
   savingsPercent: number;
+  memberPrice: number | null;
+  memberSavingsAmount: number | null;
 }
 
 export function isDiscountActive(discount: DiscountFields, now: Date = new Date()): boolean {
@@ -41,6 +43,7 @@ export function calculateEffectivePrice(
   storePrice: number | Decimal,
   variantDiscount: DiscountFields | null,
   storeDiscount: DiscountFields | null,
+  memberPrice?: number | Decimal | null,
 ): PricingResult {
   const basePrice = Number(storePrice);
   const now = new Date();
@@ -53,6 +56,10 @@ export function calculateEffectivePrice(
     activeDiscount = variantDiscount;
   }
 
+  // Member pricing
+  const mp = memberPrice != null ? Math.round(Number(memberPrice) * 100) / 100 : null;
+  const memberSavingsAmount = mp != null && basePrice > mp ? Math.round((basePrice - mp) * 100) / 100 : null;
+
   if (!activeDiscount) {
     return {
       effectivePrice: basePrice,
@@ -62,6 +69,8 @@ export function calculateEffectivePrice(
       discountActive: false,
       savingsAmount: 0,
       savingsPercent: 0,
+      memberPrice: mp,
+      memberSavingsAmount,
     };
   }
 
@@ -77,5 +86,7 @@ export function calculateEffectivePrice(
     discountActive: true,
     savingsAmount,
     savingsPercent,
+    memberPrice: mp,
+    memberSavingsAmount,
   };
 }

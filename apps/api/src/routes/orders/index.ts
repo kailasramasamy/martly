@@ -184,6 +184,17 @@ export async function orderRoutes(app: FastifyInstance) {
       }
     }
 
+    // Check active membership for member benefits
+    const orderStore = await app.prisma.store.findUnique({ where: { id: body.storeId }, select: { organizationId: true } });
+    const activeMembership = orderStore
+      ? await app.prisma.userMembership.findFirst({
+          where: { userId: user.sub, organizationId: orderStore.organizationId, status: "ACTIVE", endDate: { gt: new Date() } },
+          include: { plan: true },
+        })
+      : null;
+    const userIsMember = !!activeMembership;
+    const membershipPlan = activeMembership?.plan ?? null;
+
     const storeProducts = await app.prisma.storeProduct.findMany({
       where: { id: { in: body.items.map((i) => i.storeProductId) } },
       include: { variant: true },
@@ -198,7 +209,13 @@ export async function orderRoutes(app: FastifyInstance) {
         sp.variant as Parameters<typeof calculateEffectivePrice>[1],
         sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
       );
-      const unitPrice = pricing.effectivePrice;
+      // Member pricing: use memberPrice if lower than effectivePrice
+      let unitPrice = pricing.effectivePrice;
+      const spMemberPrice = (sp as unknown as { memberPrice: unknown }).memberPrice;
+      if (userIsMember && spMemberPrice != null) {
+        const mp = Number(spMemberPrice);
+        if (mp < unitPrice) unitPrice = mp;
+      }
       const totalPrice = unitPrice * item.quantity;
       itemsTotal += totalPrice;
       return {
@@ -335,6 +352,11 @@ export async function orderRoutes(app: FastifyInstance) {
 
     // Free delivery threshold override
     if (!isPickup && store?.freeDeliveryThreshold && itemsTotal >= Number(store.freeDeliveryThreshold)) {
+      deliveryFee = 0;
+    }
+
+    // Membership free delivery override
+    if (!isPickup && userIsMember && membershipPlan?.freeDelivery) {
       deliveryFee = 0;
     }
 
@@ -740,7 +762,13 @@ export async function orderRoutes(app: FastifyInstance) {
               where: { organizationId: orderStore.organizationId },
             });
             if (loyaltyConfig?.isEnabled && loyaltyConfig.earnRate > 0) {
-              const pointsEarned = Math.floor(Number(existing.totalAmount) / 100 * loyaltyConfig.earnRate);
+              // Check membership for loyalty multiplier
+              const memberMembership = await tx.userMembership.findFirst({
+                where: { userId: existing.userId, organizationId: orderStore.organizationId, status: "ACTIVE", endDate: { gt: new Date() } },
+                include: { plan: true },
+              });
+              const loyaltyMultiplier = memberMembership?.plan?.loyaltyMultiplier ?? 1;
+              const pointsEarned = Math.floor(Number(existing.totalAmount) / 100 * loyaltyConfig.earnRate * loyaltyMultiplier);
               if (pointsEarned > 0) {
                 updateData.loyaltyPointsEarned = pointsEarned;
                 const balance = await tx.loyaltyBalance.upsert({

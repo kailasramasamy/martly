@@ -36,6 +36,7 @@ export const StoreProductEdit = () => {
         stock: values.stock != null ? Number(values.stock) : undefined,
         isActive: values.isActive,
         isFeatured: values.isFeatured,
+        memberPrice: values.memberPrice != null ? Number(values.memberPrice) : null,
         discountType: values.discountType || null,
         discountValue: values.discountValue != null ? Number(values.discountValue) : null,
         discountStart: values.discountStart ? (values.discountStart as dayjs.Dayjs).toISOString() : null,
@@ -89,6 +90,11 @@ export const StoreProductEdit = () => {
                 <Col xs={24} sm={12}>
                   <Form.Item label="Price" name="price" rules={[{ required: true }]}>
                     <InputNumber min={0.01} step={0.01} style={{ width: "100%" }} />
+                  </Form.Item>
+                </Col>
+                <Col xs={24} sm={12}>
+                  <Form.Item label="Member Price" name="memberPrice" extra="Special price for membership subscribers. Leave empty for no member pricing.">
+                    <InputNumber min={0.01} step={0.01} style={{ width: "100%" }} placeholder="Optional" />
                   </Form.Item>
                 </Col>
                 <Col xs={24} sm={12}>

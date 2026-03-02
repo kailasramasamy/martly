@@ -121,38 +121,38 @@ Rider locations are stored **in-memory** (Map keyed by tripId). This is intentio
 ### 2. Admin — Create a trip
 - [x] Log in to admin panel as `admin@martly.dev`
 - [x] Go to Delivery Board
-- [ ] Find a READY order and create a trip with rider "Ravi Kumar"
-- [ ] Verify trip appears as CREATED
+- [x] Find a READY order and create a trip with rider "Ravi Kumar"
+- [x] Verify trip appears as CREATED
 
 ### 3. Rider App — Start delivery
-- [ ] Open rider app, log in with phone `9876543210` / OTP `111111`
-- [ ] Deliveries tab shows today's stats and the new trip
-- [ ] Tap the trip card → trip detail opens
-- [ ] Trip shows CREATED status with "Start Trip" button
-- [ ] Tap "Start Trip" → status changes to IN_PROGRESS
-- [ ] GPS permission requested → grant
-- [ ] Green pulsing "Broadcasting" indicator appears
-- [ ] Order cards visible with customer name, address, amount
+- [x] Open rider app, log in with phone `9876543210` / OTP `111111`
+- [x] Deliveries tab shows today's stats and the new trip
+- [x] Tap the trip card → trip detail opens
+- [x] Trip shows CREATED status with "Start Trip" button
+- [x] Tap "Start Trip" → status changes to IN_PROGRESS
+- [x] GPS permission requested → grant
+- [x] Green pulsing "Broadcasting" indicator appears
+- [x] Order cards visible with customer name, address, amount
 
 ### 4. Customer — Track rider
-- [ ] Open customer app, log in as `customer@martly.dev`
-- [ ] Go to Orders tab, open the order that's OUT_FOR_DELIVERY
-- [ ] "Track Rider Live" button visible (green with bicycle icon)
-- [ ] Tap it → Live Tracking screen opens
-- [ ] Map shows rider's current position (bicycle marker)
-- [ ] Store marker visible (purple storefront)
-- [ ] "LIVE" indicator pulsing in top-right corner
-- [ ] Bottom sheet shows rider name, "On the way" status, speed
-- [ ] Delivery address shown with red dot
-- [ ] Tap phone icon → calls rider
+- [x] Open customer app, log in as `customer@martly.dev`
+- [x] Go to Orders tab, open the order that's OUT_FOR_DELIVERY
+- [x] "Track Rider Live" button visible (green with bicycle icon)
+- [x] Tap it → Live Tracking screen opens
+- [x] Map shows rider's current position (bicycle marker)
+- [x] Store marker visible (purple storefront)
+- [x] "LIVE" indicator pulsing in top-right corner
+- [x] Bottom sheet shows rider name, "On the way" status, speed
+- [x] Delivery address shown with red dot
+- [x] Tap phone icon → calls rider
 
 ### 5. Rider — Complete delivery
-- [ ] Back in rider app, tap "Mark Delivered" on the order
-- [ ] Confirmation alert appears → confirm
-- [ ] Order card shows "Delivered" badge
-- [ ] If all orders delivered: success alert, auto-navigate back
-- [ ] GPS broadcasting stops
+- [x] Back in rider app, tap "Mark Delivered" on the order
+- [x] Confirmation alert appears → confirm
+- [x] Order card shows "Delivered" badge
+- [x] If all orders delivered: success alert, auto-navigate back
+- [x] GPS broadcasting stops
 
 ### 6. Customer — Verify delivery
-- [ ] Order detail updates to DELIVERED status
-- [ ] "Track Rider Live" button disappears
+- [x] Order detail updates to DELIVERED status
+- [x] "Track Rider Live" button disappears

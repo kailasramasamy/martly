@@ -376,6 +376,9 @@ export default function ProductDetailScreen() {
                       )}
                       <Text style={styles.price}>₹{displayPrice.toFixed(2)}</Text>
                     </View>
+                    {sp.pricing?.memberPrice != null && sp.pricing.memberPrice < displayPrice && (
+                      <Text style={styles.memberPrice}>₹{sp.pricing.memberPrice} for members</Text>
+                    )}
                     {isOutOfStock && <Text style={styles.outOfStock}>Out of Stock</Text>}
                   </View>
                   {(cartQuantityMap.get(sp.id) ?? 0) > 0 ? (
@@ -766,6 +769,7 @@ const styles = StyleSheet.create({
   priceRow: { flexDirection: "row", alignItems: "center", gap: 6, marginTop: spacing.xs },
   mrpPrice: { fontSize: fontSize.sm, color: colors.textSecondary, textDecorationLine: "line-through" },
   price: { fontSize: fontSize.lg, fontWeight: "bold", color: colors.primary },
+  memberPrice: { fontSize: fontSize.sm, color: "#7c3aed", fontWeight: "600", marginTop: 2 },
   outOfStock: { fontSize: fontSize.sm, color: colors.error, fontWeight: "600", marginTop: 2 },
   variantAddBtn: {
     backgroundColor: colors.primary,

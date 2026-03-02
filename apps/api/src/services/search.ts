@@ -121,10 +121,10 @@ async function trigramSearch(prisma: PrismaClient, q: string): Promise<string[]>
 
 async function fullTextSearch(prisma: PrismaClient, q: string): Promise<string[]> {
   const rows = await prisma.$queryRaw<{ id: string; rank: number }[]>`
-    SELECT p.id, ts_rank(p.search_vector, plainto_tsquery('english', ${q})) as rank
+    SELECT p.id, ts_rank(to_tsvector('english', p.search_text), plainto_tsquery('english', ${q})) as rank
     FROM products p
     WHERE p.is_active = true
-      AND p.search_vector @@ plainto_tsquery('english', ${q})
+      AND to_tsvector('english', p.search_text) @@ plainto_tsquery('english', ${q})
     ORDER BY rank DESC
     LIMIT 50
   `;

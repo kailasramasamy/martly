@@ -23,9 +23,10 @@ interface ProductGridCardProps {
   variantSizes?: string[];
   isWishlisted?: boolean;
   onToggleWishlist?: (productId: string) => void;
+  isMember?: boolean;
 }
 
-export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, variantCount = 1, onShowVariants, containerWidth, variantSizes, isWishlisted, onToggleWishlist }: ProductGridCardProps) {
+export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, variantCount = 1, onShowVariants, containerWidth, variantSizes, isWishlisted, onToggleWishlist, isMember }: ProductGridCardProps) {
   const cardWidth = containerWidth
     ? (containerWidth - GRID_GAP) / 2
     : GRID_CARD_WIDTH;
@@ -124,9 +125,21 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
 
         <View style={styles.footer}>
           <View>
-            <Text style={styles.price}>₹{displayPrice.toFixed(0)}</Text>
-            {originalPrice != null && (
-              <Text style={styles.mrp}>₹{originalPrice.toFixed(0)}</Text>
+            {isMember && item.pricing?.memberPrice != null && item.pricing.memberPrice < displayPrice ? (
+              <>
+                <Text style={styles.price}>{"\u20B9"}{item.pricing.memberPrice.toFixed(0)}</Text>
+                <Text style={styles.mrp}>{"\u20B9"}{displayPrice.toFixed(0)}</Text>
+              </>
+            ) : (
+              <>
+                <Text style={styles.price}>{"\u20B9"}{displayPrice.toFixed(0)}</Text>
+                {originalPrice != null && (
+                  <Text style={styles.mrp}>{"\u20B9"}{originalPrice.toFixed(0)}</Text>
+                )}
+              </>
+            )}
+            {!isMember && item.pricing?.memberPrice != null && item.pricing.memberPrice < displayPrice && (
+              <Text style={{ fontSize: 9, color: "#7c3aed", fontWeight: "600" }}>{"\u20B9"}{item.pricing.memberPrice.toFixed(0)} for members</Text>
             )}
           </View>
           {quantity > 0 ? (
@@ -246,7 +259,7 @@ const styles = StyleSheet.create({
   },
   oosLabel: { fontSize: 12, fontWeight: "700", color: colors.error },
   content: { padding: 10 },
-  name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17, height: 34 },
+  name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17, minHeight: 34 },
   variant: { fontSize: 11, color: colors.textSecondary, marginTop: 2 },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 3, marginTop: 3 },
   ratingText: { fontSize: 11, fontWeight: "600", color: "#92400e" },
@@ -255,7 +268,7 @@ const styles = StyleSheet.create({
   footer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "flex-end",
     marginTop: 8,
   },
   price: { fontSize: 15, fontWeight: "700", color: colors.text },

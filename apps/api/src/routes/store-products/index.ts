@@ -1,4 +1,4 @@
-import type { FastifyInstance } from "fastify";
+import type { FastifyInstance, FastifyRequest, FastifyReply } from "fastify";
 import { createStoreProductSchema, updateStoreProductSchema, bulkCreateStoreProductSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
@@ -7,11 +7,12 @@ import { requireOrgContext, getOrgStoreIds, getOrgUser, verifyStoreOrgAccess } f
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
 
-function withPricing(sp: { stock: number; reservedStock: number; price: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; variant: { unitType: string; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
+function withPricing(sp: { stock: number; reservedStock: number; price: unknown; memberPrice?: unknown; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown; variant: { unitType: string; discountType: unknown; discountValue: unknown; discountStart: unknown; discountEnd: unknown } }) {
   const pricing = calculateEffectivePrice(
     sp.price as number,
     sp.variant as Parameters<typeof calculateEffectivePrice>[1],
     sp as Parameters<typeof calculateEffectivePrice>[2],
+    sp.memberPrice as number | null | undefined,
   );
   return { ...sp, variant: formatVariantUnit(sp.variant), pricing, availableStock: sp.stock - sp.reservedStock };
 }
@@ -209,28 +210,28 @@ export async function storeProductRoutes(app: FastifyInstance) {
   );
 
   // Update store-product (verify org access)
-  app.put<{ Params: { id: string } }>(
-    "/:id",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] },
-    async (request, reply) => {
-      const body = updateStoreProductSchema.parse(request.body);
-      const existing = await app.prisma.storeProduct.findUnique({ where: { id: request.params.id } });
-      if (!existing) return reply.notFound("Store product not found");
+  const updateHandler = async (request: FastifyRequest<{ Params: { id: string } }>, reply: FastifyReply) => {
+    const body = updateStoreProductSchema.parse(request.body);
+    const existing = await app.prisma.storeProduct.findUnique({ where: { id: request.params.id } });
+    if (!existing) return reply.notFound("Store product not found");
 
-      if (!(await verifyStoreOrgAccess(request, app.prisma, existing.storeId))) {
-        return reply.forbidden("Access denied");
-      }
+    if (!(await verifyStoreOrgAccess(request, app.prisma, existing.storeId))) {
+      return reply.forbidden("Access denied");
+    }
 
-      const storeProduct = await app.prisma.storeProduct.update({
-        where: { id: request.params.id },
-        data: body,
-        include: spInclude,
-      });
+    const storeProduct = await app.prisma.storeProduct.update({
+      where: { id: request.params.id },
+      data: body,
+      include: spInclude,
+    });
 
-      const response: ApiResponse<ReturnType<typeof withPricing>> = { success: true, data: withPricing(storeProduct) };
-      return response;
-    },
-  );
+    const response: ApiResponse<ReturnType<typeof withPricing>> = { success: true, data: withPricing(storeProduct) };
+    return response;
+  };
+
+  const updateOpts = { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER")] };
+  app.put<{ Params: { id: string } }>("/:id", updateOpts, updateHandler);
+  app.patch<{ Params: { id: string } }>("/:id", updateOpts, updateHandler);
 
   // Delete store-product (verify org access)
   app.delete<{ Params: { id: string } }>(

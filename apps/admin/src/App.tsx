@@ -33,6 +33,7 @@ import {
   RobotOutlined,
   FundOutlined,
   RollbackOutlined,
+  CrownOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -116,6 +117,8 @@ import { ReturnRequestList } from "./pages/return-requests/list";
 import { ReturnRequestShow } from "./pages/return-requests/show";
 import { StoreIntelligencePage } from "./pages/store-intelligence";
 import { CustomerInsightsPage } from "./pages/customer-insights";
+import { MembershipPlans } from "./pages/memberships/plans";
+import { MembershipSubscribers } from "./pages/memberships/subscribers";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -341,6 +344,16 @@ export default function App() {
                 meta: { label: "Referrals", icon: <UsergroupAddOutlined />, parent: "marketing" },
               },
               {
+                name: "membership-plans",
+                list: "/membership-plans",
+                meta: { label: "Membership Plans", icon: <CrownOutlined />, parent: "marketing" },
+              },
+              {
+                name: "membership-subscribers",
+                list: "/membership-subscribers",
+                meta: { label: "Subscribers", icon: <CrownOutlined />, parent: "marketing" },
+              },
+              {
                 name: "delivery",
                 meta: { label: "Delivery", icon: <EnvironmentOutlined /> },
               },
@@ -539,6 +552,8 @@ export default function App() {
                 <Route path="/featured-products" element={<FeaturedProductsPage />} />
                 <Route path="/store-intelligence" element={<StoreIntelligencePage />} />
                 <Route path="/customer-insights" element={<CustomerInsightsPage />} />
+                <Route path="/membership-plans" element={<MembershipPlans />} />
+                <Route path="/membership-subscribers" element={<MembershipSubscribers />} />
                 <Route path="/" element={<DashboardPage />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />

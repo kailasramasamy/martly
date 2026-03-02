@@ -42,6 +42,7 @@ export default function ProfileScreen() {
   const [loadingAddresses, setLoadingAddresses] = useState(false);
   const [walletBalance, setWalletBalance] = useState(0);
   const [loyaltyPoints, setLoyaltyPoints] = useState(0);
+  const [isMember, setIsMember] = useState(false);
 
   // Edit profile state
   const [showEditProfile, setShowEditProfile] = useState(false);
@@ -84,6 +85,9 @@ export default function ProfileScreen() {
         if (storeId) {
           api.get<{ balance: { points: number } }>(`/api/v1/loyalty?storeId=${storeId}`)
             .then((res) => setLoyaltyPoints(res.data.balance.points))
+            .catch(() => {});
+          api.get<{ isMember: boolean }>(`/api/v1/memberships/status?storeId=${storeId}`)
+            .then((res) => setIsMember(res.data.isMember))
             .catch(() => {});
         }
       }
@@ -238,6 +242,19 @@ export default function ProfileScreen() {
                 <Text style={[styles.menuItemSub, { color: "#d97706" }]}>
                   {loyaltyPoints} points
                 </Text>
+              )}
+            </View>
+            <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
+          </TouchableOpacity>
+          <View style={{ height: 8 }} />
+          <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/membership")}>
+            <View style={[styles.menuIconWrap, { backgroundColor: "#f5f3ff" }]}>
+              <Ionicons name="diamond-outline" size={18} color="#7c3aed" />
+            </View>
+            <View style={{ flex: 1, marginLeft: 12 }}>
+              <Text style={styles.menuItemLabel}>Mart Plus</Text>
+              {isMember && (
+                <Text style={[styles.menuItemSub, { color: "#7c3aed" }]}>Active</Text>
               )}
             </View>
             <Ionicons name="chevron-forward" size={16} color="#94a3b8" />

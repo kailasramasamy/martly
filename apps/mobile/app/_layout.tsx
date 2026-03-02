@@ -163,6 +163,7 @@ function RootLayoutNav() {
         <Stack.Screen name="return-request" options={{ headerShown: true, title: "Request Return" }} />
         <Stack.Screen name="live-tracking" options={{ headerShown: true, title: "Live Tracking" }} />
         <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />
+        <Stack.Screen name="membership" options={{ headerShown: true, title: "Mart Plus" }} />
       </Stack>
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
     </>

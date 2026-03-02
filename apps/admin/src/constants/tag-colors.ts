@@ -173,3 +173,15 @@ export const TICKET_PRIORITY_CONFIG: Record<string, { color: string; label: stri
   MEDIUM: { color: "blue", label: "Medium" },
   HIGH: { color: "red", label: "High" },
 };
+
+export const MEMBERSHIP_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  ACTIVE: { color: "green", label: "Active" },
+  EXPIRED: { color: "default", label: "Expired" },
+  CANCELLED: { color: "red", label: "Cancelled" },
+};
+
+export const MEMBERSHIP_DURATION_CONFIG: Record<string, { color: string; label: string }> = {
+  MONTHLY: { color: "blue", label: "Monthly" },
+  QUARTERLY: { color: "purple", label: "Quarterly" },
+  ANNUAL: { color: "gold", label: "Annual" },
+};

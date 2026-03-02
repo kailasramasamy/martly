@@ -17,9 +17,10 @@ interface FeaturedProductCardProps {
   onShowVariants?: () => void;
   isWishlisted?: boolean;
   onToggleWishlist?: (productId: string) => void;
+  isMember?: boolean;
 }
 
-export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants, isWishlisted, onToggleWishlist }: FeaturedProductCardProps) {
+export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants, isWishlisted, onToggleWishlist, isMember }: FeaturedProductCardProps) {
   const hasDiscount = item.pricing?.discountActive;
   const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
@@ -122,9 +123,21 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
         {/* Price + Add */}
         <View style={styles.footer}>
           <View style={styles.priceColumn}>
-            <Text style={styles.price}>₹{displayPrice.toFixed(0)}</Text>
-            {originalPrice != null && (
-              <Text style={styles.mrp}>₹{originalPrice.toFixed(0)}</Text>
+            {isMember && item.pricing?.memberPrice != null && item.pricing.memberPrice < displayPrice ? (
+              <>
+                <Text style={styles.price}>{"\u20B9"}{item.pricing.memberPrice.toFixed(0)}</Text>
+                <Text style={styles.mrp}>{"\u20B9"}{displayPrice.toFixed(0)}</Text>
+              </>
+            ) : (
+              <>
+                <Text style={styles.price}>{"\u20B9"}{displayPrice.toFixed(0)}</Text>
+                {originalPrice != null && (
+                  <Text style={styles.mrp}>{"\u20B9"}{originalPrice.toFixed(0)}</Text>
+                )}
+              </>
+            )}
+            {!isMember && item.pricing?.memberPrice != null && item.pricing.memberPrice < displayPrice && (
+              <Text style={{ fontSize: 10, color: "#7c3aed", fontWeight: "600" }}>{"\u20B9"}{item.pricing.memberPrice.toFixed(0)} for members</Text>
             )}
           </View>
           {quantity > 0 ? (
@@ -288,7 +301,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: colors.text,
     lineHeight: 17,
-    height: 34,
+    marginBottom: 2,
   },
   unit: {
     fontSize: 11,
@@ -306,11 +319,12 @@ const styles = StyleSheet.create({
   },
   priceColumn: {
     flex: 1,
+    marginRight: 6,
   },
   footer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "flex-end",
     marginTop: 8,
   },
   price: {

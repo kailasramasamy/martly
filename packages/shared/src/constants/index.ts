@@ -365,6 +365,32 @@ export const ReturnRequestStatusLabels: Record<ReturnRequestStatus, string> = {
   REJECTED: "Rejected",
 };
 
+export const MembershipDuration = {
+  MONTHLY: "MONTHLY",
+  QUARTERLY: "QUARTERLY",
+  ANNUAL: "ANNUAL",
+} as const;
+export type MembershipDuration = (typeof MembershipDuration)[keyof typeof MembershipDuration];
+
+export const MembershipDurationLabels: Record<MembershipDuration, string> = {
+  MONTHLY: "Monthly",
+  QUARTERLY: "Quarterly",
+  ANNUAL: "Annual",
+};
+
+export const MembershipStatus = {
+  ACTIVE: "ACTIVE",
+  EXPIRED: "EXPIRED",
+  CANCELLED: "CANCELLED",
+} as const;
+export type MembershipStatus = (typeof MembershipStatus)[keyof typeof MembershipStatus];
+
+export const MembershipStatusLabels: Record<MembershipStatus, string> = {
+  ACTIVE: "Active",
+  EXPIRED: "Expired",
+  CANCELLED: "Cancelled",
+};
+
 export const RETURN_REASONS = [
   "Damaged/broken item",
   "Wrong item received",

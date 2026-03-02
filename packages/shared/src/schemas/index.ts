@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration } from "../constants/index.js";
 
 // ── Auth ──────────────────────────────────────────────
 export const loginSchema = z.object({
@@ -281,6 +281,7 @@ export const updateStoreProductSchema = z.object({
   discountValue: z.number().min(0).nullish(),
   discountStart: z.coerce.date().nullish(),
   discountEnd: z.coerce.date().nullish(),
+  memberPrice: z.number().positive().nullish(),
 });
 export type UpdateStoreProductInput = z.infer<typeof updateStoreProductSchema>;
 
@@ -846,3 +847,40 @@ export const resolveReturnRequestSchema = z.object({
   adminNote: z.string().max(500).optional(),
 });
 export type ResolveReturnRequestInput = z.infer<typeof resolveReturnRequestSchema>;
+
+// ── Membership ──────────────────────────────────────
+export const createMembershipPlanSchema = z.object({
+  name: z.string().min(1).max(200),
+  description: z.string().max(500).optional(),
+  price: z.number().positive(),
+  duration: z.nativeEnum(MembershipDuration),
+  freeDelivery: z.boolean().default(true),
+  loyaltyMultiplier: z.number().min(1).max(10).default(1),
+  isActive: z.boolean().default(true),
+  sortOrder: z.number().int().min(0).optional(),
+});
+export type CreateMembershipPlanInput = z.infer<typeof createMembershipPlanSchema>;
+
+export const updateMembershipPlanSchema = z.object({
+  name: z.string().min(1).max(200).optional(),
+  description: z.string().max(500).nullish(),
+  price: z.number().positive().optional(),
+  duration: z.nativeEnum(MembershipDuration).optional(),
+  freeDelivery: z.boolean().optional(),
+  loyaltyMultiplier: z.number().min(1).max(10).optional(),
+  isActive: z.boolean().optional(),
+  sortOrder: z.number().int().min(0).optional(),
+});
+export type UpdateMembershipPlanInput = z.infer<typeof updateMembershipPlanSchema>;
+
+export const purchaseMembershipSchema = z.object({
+  planId: z.string().uuid(),
+  storeId: z.string().uuid(),
+});
+export type PurchaseMembershipInput = z.infer<typeof purchaseMembershipSchema>;
+
+export const upgradeMembershipSchema = z.object({
+  planId: z.string().uuid(),
+  storeId: z.string().uuid(),
+});
+export type UpgradeMembershipInput = z.infer<typeof upgradeMembershipSchema>;

@@ -17,6 +17,7 @@ import {
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useNotifications } from "../../lib/notification-context";
@@ -61,11 +62,13 @@ export default function HomeScreen() {
   const [storeSearch, setStoreSearch] = useState("");
   const [refreshing, setRefreshing] = useState(false);
   const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
+  const [memberStatus, setMemberStatus] = useState<{ isMember: boolean; membership: { planName: string; endDate: string; daysLeft: number } | null } | null>(null);
   const { unreadCount } = useNotifications();
 
   const fetchHomeFeed = useCallback(() => {
     if (!selectedStore) {
       setHomeFeed(null);
+      setMemberStatus(null);
       return;
     }
     setLoadingFeed(true);
@@ -74,6 +77,15 @@ export default function HomeScreen() {
       .then((res) => setHomeFeed(res.data))
       .catch(() => {})
       .finally(() => setLoadingFeed(false));
+    // Fetch membership status in parallel
+    api
+      .get<{ isMember: boolean; membership: { planName: string; endDate: string } | null }>(`/api/v1/memberships/status?storeId=${selectedStore.id}`)
+      .then((res) => {
+        const m = res.data.membership;
+        const daysLeft = m ? Math.max(0, Math.ceil((new Date(m.endDate).getTime() - Date.now()) / (1000 * 60 * 60 * 24))) : 0;
+        setMemberStatus({ isMember: res.data.isMember, membership: m ? { ...m, daysLeft } : null });
+      })
+      .catch(() => setMemberStatus(null));
   }, [selectedStore]);
 
   useEffect(() => {
@@ -328,6 +340,36 @@ export default function HomeScreen() {
               </View>
             </View>
           </View>
+        )}
+
+        {/* ── Mart Plus Banner ── */}
+        {selectedStore && memberStatus && (
+          <TouchableOpacity
+            style={styles.martPlusWrap}
+            onPress={() => router.push("/membership")}
+            activeOpacity={0.85}
+          >
+            <LinearGradient
+              colors={memberStatus.isMember ? ["#7c3aed", "#a78bfa"] : ["#5b21b6", "#7c3aed", "#a78bfa"]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
+              style={styles.martPlusBanner}
+            >
+              <Ionicons name="diamond" size={20} color="#fbbf24" />
+              {memberStatus.isMember && memberStatus.membership ? (
+                <View style={styles.martPlusContent}>
+                  <Text style={styles.martPlusTitle}>Mart Plus Active</Text>
+                  <Text style={styles.martPlusSub}>{memberStatus.membership.daysLeft} days left on {memberStatus.membership.planName}</Text>
+                </View>
+              ) : (
+                <View style={styles.martPlusContent}>
+                  <Text style={styles.martPlusTitle}>Join Mart Plus</Text>
+                  <Text style={styles.martPlusSub}>Free delivery, member prices & bonus loyalty</Text>
+                </View>
+              )}
+              <Ionicons name="chevron-forward" size={16} color="rgba(255,255,255,0.7)" />
+            </LinearGradient>
+          </TouchableOpacity>
         )}
 
         {/* ── Hero Carousel ── */}
@@ -966,6 +1008,33 @@ const styles = StyleSheet.create({
     color: colors.textSecondary,
     marginTop: 1,
   },
+  // ── Mart Plus Banner ──
+  martPlusWrap: {
+    paddingHorizontal: H_PADDING,
+    paddingTop: 12,
+  },
+  martPlusBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderRadius: 12,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    gap: 10,
+  },
+  martPlusContent: {
+    flex: 1,
+  },
+  martPlusTitle: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  martPlusSub: {
+    fontSize: 11,
+    color: "rgba(255,255,255,0.8)",
+    marginTop: 1,
+  },
+
   // ── Hero Carousel ──
   bannerSection: {
     paddingHorizontal: H_PADDING,

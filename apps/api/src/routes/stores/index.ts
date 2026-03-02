@@ -289,6 +289,7 @@ export async function storeRoutes(app: FastifyInstance) {
         sp.price as unknown as number,
         sp.variant as Parameters<typeof calculateEffectivePrice>[1],
         sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
+        (sp as unknown as { memberPrice: number | null }).memberPrice,
       );
       const variant = formatVariantUnit(sp.variant);
       const reviews = reviewMap.get(sp.productId);
@@ -395,6 +396,7 @@ export async function storeRoutes(app: FastifyInstance) {
           sp.price as unknown as number,
           sp.variant as Parameters<typeof calculateEffectivePrice>[1],
           sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
+          (sp as unknown as { memberPrice: number | null }).memberPrice,
         );
         const variant = formatVariantUnit(sp.variant);
         const reviews = reviewMap.get(sp.productId);
@@ -525,6 +527,7 @@ export async function storeRoutes(app: FastifyInstance) {
           sp.price as unknown as number,
           sp.variant as Parameters<typeof calculateEffectivePrice>[1],
           sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
+          (sp as unknown as { memberPrice: number | null }).memberPrice,
         );
         const variant = formatVariantUnit(sp.variant);
         const reviews = reviewMap.get(sp.productId);

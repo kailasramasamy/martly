@@ -30,6 +30,8 @@ export interface Pricing {
   discountActive: boolean;
   savingsAmount: number;
   savingsPercent: number;
+  memberPrice: number | null;
+  memberSavingsAmount: number | null;
 }
 
 export interface StoreProduct {
@@ -275,5 +277,46 @@ export interface ReferralInfo {
     referrerName: string;
     status: string;
     refereeReward: number;
+  } | null;
+}
+
+export interface MembershipPlan {
+  id: string;
+  name: string;
+  description: string | null;
+  price: number;
+  duration: "MONTHLY" | "QUARTERLY" | "ANNUAL";
+  freeDelivery: boolean;
+  loyaltyMultiplier: number;
+  isActive: boolean;
+  sortOrder: number;
+}
+
+export interface UserMembership {
+  id: string;
+  userId: string;
+  planId: string;
+  organizationId: string;
+  status: "ACTIVE" | "EXPIRED" | "CANCELLED";
+  startDate: string;
+  endDate: string;
+  pricePaid: number;
+  plan: MembershipPlan;
+}
+
+export interface MembershipUpgradeOption {
+  plan: MembershipPlan;
+  credit: number;
+  upgradeCharge: number;
+  isFree: boolean;
+}
+
+export interface MembershipStatus {
+  isMember: boolean;
+  membership: {
+    planName: string;
+    endDate: string;
+    freeDelivery: boolean;
+    loyaltyMultiplier: number;
   } | null;
 }

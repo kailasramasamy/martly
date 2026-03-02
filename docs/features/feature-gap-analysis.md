@@ -29,13 +29,13 @@ Martly has 38 API routes, 50+ admin pages, and 25+ mobile screens covering:
 - [x] **Minimum order amount** — Block checkout below a threshold (per store). Blinkit/Zepto/all enforce this. `Small` *(done: min order + base delivery fee + free delivery threshold)*
 - [x] **Delivery instructions** — Free-text field at checkout ("leave at door", "call before"). Standard everywhere. `Small` *(already built: deliveryNotes field on Order, TextInput on checkout, shown in admin order detail)*
 - [x] **Return/refund requests** — In-app claim with photo upload, reason selection. Currently refunds are admin-only wallet credits. `Medium`
-- [ ] **Live order tracking (map)** — Real-time rider GPS on a map during delivery. Every single app has this. `Medium`
-- [ ] **Saved/default payment method** — One-tap reorder with saved UPI/card. Reduces checkout friction. `Small-Medium`
+- [x] **Live order tracking (map)** — Real-time rider GPS on a map during delivery. Every single app has this. `Medium`
+- [x] **Saved/default payment method** — One-tap reorder with saved UPI/card. Reduces checkout friction. `Small-Medium`
 
 ## Tier 2: Emerging Standards (most competitors have, strong user expectation)
 
 - [x] **Cart upsells / nudges** — "Add ₹X more for free delivery", "Complete your basket" prompts at checkout. Universal. `Small` *(done: free delivery nudge + min order nudge)*
-- [ ] **Frequently bought together** — "Customers also bought" suggestions on product detail + cart. Drives AOV. `Medium`
+- [x] **Frequently bought together** — "Customers also bought" suggestions on product detail + cart. Drives AOV. `Medium`
 - [ ] **WhatsApp order updates** — Order confirmations + status via WhatsApp. Massive open rates in India vs push. `Small-Medium`
 - [ ] **Membership plan** — Paid tier with free delivery + member-only prices. Swiggy One, Instacart+, BB Star. `Medium`
 - [ ] **Subscription / auto-delivery** — Recurring delivery of daily essentials (milk, bread, eggs). BigBasket's SmartBasket. `Large`

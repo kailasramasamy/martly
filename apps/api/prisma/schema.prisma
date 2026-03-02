@@ -199,6 +199,18 @@ enum ReturnRequestStatus {
   REJECTED
 }
 
+enum MembershipDuration {
+  MONTHLY
+  QUARTERLY
+  ANNUAL
+}
+
+enum MembershipStatus {
+  ACTIVE
+  EXPIRED
+  CANCELLED
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -224,6 +236,8 @@ model Organization {
   referrals           Referral[]
   supportTickets      SupportTicket[]
   returnRequests      ReturnRequest[]
+  membershipPlans     MembershipPlan[]
+  userMemberships     UserMembership[]
 
   @@map("organizations")
 }
@@ -299,6 +313,7 @@ model User {
   referralReceived     Referral[]             @relation("ReferralReceived")
   supportTickets       SupportTicket[]
   returnRequests       ReturnRequest[]
+  memberships          UserMembership[]
 
   @@map("users")
 }
@@ -461,6 +476,7 @@ model StoreProduct {
   discountValue Decimal?       @db.Decimal(10, 2) @map("discount_value")
   discountStart DateTime?      @map("discount_start")
   discountEnd   DateTime?      @map("discount_end")
+  memberPrice   Decimal?       @db.Decimal(10, 2) @map("member_price")
 
   store      Store          @relation(fields: [storeId], references: [id])
   product    Product        @relation(fields: [productId], references: [id])
@@ -1112,6 +1128,53 @@ model ReturnRequest {
   @@index([userId, createdAt])
   @@index([organizationId, status])
   @@map("return_requests")
+}
+
+model MembershipPlan {
+  id               String             @id @default(uuid())
+  organizationId   String             @map("organization_id")
+  name             String
+  description      String?
+  price            Decimal            @db.Decimal(10, 2)
+  duration         MembershipDuration
+  freeDelivery     Boolean            @default(true) @map("free_delivery")
+  loyaltyMultiplier Float             @default(1) @map("loyalty_multiplier")
+  isActive         Boolean            @default(true) @map("is_active")
+  sortOrder        Int                @default(0) @map("sort_order")
+  createdAt        DateTime           @default(now()) @map("created_at")
+  updatedAt        DateTime           @updatedAt @map("updated_at")
+
+  organization    Organization     @relation(fields: [organizationId], references: [id])
+  userMemberships UserMembership[]
+
+  @@index([organizationId, isActive])
+  @@map("membership_plans")
+}
+
+model UserMembership {
+  id                 String           @id @default(uuid())
+  userId             String           @map("user_id")
+  planId             String           @map("plan_id")
+  organizationId     String           @map("organization_id")
+  status             MembershipStatus @default(ACTIVE)
+  startDate          DateTime         @map("start_date")
+  endDate            DateTime         @map("end_date")
+  pricePaid          Decimal          @db.Decimal(10, 2) @map("price_paid")
+  razorpayOrderId      String?          @map("razorpay_order_id")
+  razorpayPaymentId    String?          @map("razorpay_payment_id")
+  previousMembershipId String?          @unique @map("previous_membership_id")
+  createdAt            DateTime         @default(now()) @map("created_at")
+  updatedAt            DateTime         @updatedAt @map("updated_at")
+
+  user               User            @relation(fields: [userId], references: [id])
+  plan               MembershipPlan  @relation(fields: [planId], references: [id])
+  organization       Organization    @relation(fields: [organizationId], references: [id])
+  previousMembership UserMembership? @relation("MembershipUpgrade", fields: [previousMembershipId], references: [id])
+  upgradedTo         UserMembership? @relation("MembershipUpgrade")
+
+  @@index([userId, organizationId, status])
+  @@index([endDate])
+  @@map("user_memberships")
 }
 
 model ReturnRequestItem {
