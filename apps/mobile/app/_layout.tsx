@@ -6,11 +6,11 @@ import { View, Text, TextInput, StyleSheet, Appearance } from "react-native";
 import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
 import {
-  Inter_400Regular,
-  Inter_500Medium,
-  Inter_600SemiBold,
-  Inter_700Bold,
-} from "@expo-google-fonts/inter";
+  PlusJakartaSans_400Regular,
+  PlusJakartaSans_500Medium,
+  PlusJakartaSans_600SemiBold,
+  PlusJakartaSans_700Bold,
+} from "@expo-google-fonts/plus-jakarta-sans";
 
 // Force light mode globally regardless of system setting
 try { Appearance.setColorScheme("light"); } catch {}
@@ -142,7 +142,7 @@ function RootLayoutNav() {
   return (
     <>
       <StatusBar style="dark" translucent={false} backgroundColor="#ffffff" />
-      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "Inter-SemiBold" }, contentStyle: { backgroundColor: "#f8fafc" } }}>
+      <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "PlusJakartaSans-SemiBold" }, contentStyle: { backgroundColor: "#f8fafc" } }}>
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="(auth)" />
         <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
@@ -178,21 +178,20 @@ function RootLayoutNav() {
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
-    "Inter-Regular": Inter_400Regular,
-    "Inter-Medium": Inter_500Medium,
-    "Inter-SemiBold": Inter_600SemiBold,
-    "Inter-Bold": Inter_700Bold,
+    "PlusJakartaSans-Regular": PlusJakartaSans_400Regular,
+    "PlusJakartaSans-Medium": PlusJakartaSans_500Medium,
+    "PlusJakartaSans-SemiBold": PlusJakartaSans_600SemiBold,
+    "PlusJakartaSans-Bold": PlusJakartaSans_700Bold,
   });
 
-  useEffect(() => {
-    if (fontsLoaded) {
-      const defaultTextStyle = { fontFamily: "Inter-Regular" };
-      (Text as any).defaultProps = (Text as any).defaultProps || {};
-      (Text as any).defaultProps.style = [defaultTextStyle, (Text as any).defaultProps.style];
-      (TextInput as any).defaultProps = (TextInput as any).defaultProps || {};
-      (TextInput as any).defaultProps.style = [defaultTextStyle, (TextInput as any).defaultProps.style];
-    }
-  }, [fontsLoaded]);
+  if (!fontsLoaded) return null;
+
+  // Set default font synchronously before tree renders (guarded by fontsLoaded gate above)
+  const defaultTextStyle = { fontFamily: "PlusJakartaSans-Regular" };
+  (Text as any).defaultProps = (Text as any).defaultProps || {};
+  (Text as any).defaultProps.style = [defaultTextStyle];
+  (TextInput as any).defaultProps = (TextInput as any).defaultProps || {};
+  (TextInput as any).defaultProps.style = [defaultTextStyle];
 
   return (
     <SafeAreaProvider>

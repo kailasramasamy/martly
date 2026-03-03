@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { View, Animated, StyleSheet } from "react-native";
 import { colors, spacing } from "../constants/theme";
 import { GRID_CARD_WIDTH, GRID_GAP, GRID_IMAGE_HEIGHT, GRID_H_PADDING } from "./ProductGridCard";
+import { FEATURED_CARD_WIDTH } from "./FeaturedProductCard";
 
 interface SkeletonBoxProps {
   width: number | string;
@@ -129,13 +130,13 @@ export function HomeScreenSkeleton() {
       {/* Featured products */}
       <View style={{ paddingHorizontal: spacing.md, marginTop: spacing.lg }}>
         <SkeletonBox width={160} height={17} style={{ marginBottom: spacing.sm }} />
-        <View style={{ flexDirection: "row", gap: 12 }}>
+        <View style={{ flexDirection: "row", gap: 8 }}>
           {[1, 2, 3].map((i) => (
-            <View key={i} style={{ width: 156, borderRadius: 12, overflow: "hidden", backgroundColor: "#fff" }}>
-              <SkeletonBox width={156} height={100} borderRadius={0} />
-              <View style={{ padding: 10, gap: 8 }}>
-                <SkeletonBox width="80%" height={12} />
-                <SkeletonBox width="50%" height={12} />
+            <View key={i} style={{ width: FEATURED_CARD_WIDTH, borderRadius: 10, overflow: "hidden", backgroundColor: "#fff" }}>
+              <SkeletonBox width={FEATURED_CARD_WIDTH} height={80} borderRadius={0} />
+              <View style={{ padding: 8, gap: 6 }}>
+                <SkeletonBox width="80%" height={10} />
+                <SkeletonBox width="50%" height={10} />
               </View>
             </View>
           ))}

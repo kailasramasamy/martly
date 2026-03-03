@@ -10,6 +10,7 @@ import {
   Image,
   Animated,
 } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import Markdown from "react-native-markdown-display";
 import type { AppNotification } from "../lib/types";
@@ -85,6 +86,7 @@ export function NotificationDetailSheet({
   onClose,
   onAction,
 }: Props) {
+  const insets = useSafeAreaInsets();
   const backdropAnim = useRef(new Animated.Value(0)).current;
   const slideAnim = useRef(new Animated.Value(SHEET_MAX)).current;
 
@@ -131,7 +133,7 @@ export function NotificationDetailSheet({
       </Animated.View>
 
       <Animated.View
-        style={[styles.sheet, { transform: [{ translateY: slideAnim }] }]}
+        style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, 16) + 16, transform: [{ translateY: slideAnim }] }]}
       >
         <View style={styles.handleBar} />
 
@@ -296,7 +298,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     borderTopLeftRadius: 22,
     borderTopRightRadius: 22,
-    paddingBottom: 32,
     maxHeight: SHEET_MAX,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: -4 },

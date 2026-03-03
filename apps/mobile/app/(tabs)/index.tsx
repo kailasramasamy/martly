@@ -29,7 +29,7 @@ import { useBasketMode } from "../../lib/basket-mode-context";
 import { useToast } from "../../lib/toast-context";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
-import { FeaturedProductCard } from "../../components/FeaturedProductCard";
+import { FeaturedProductCard, FEATURED_CARD_WIDTH } from "../../components/FeaturedProductCard";
 import { FloatingCart } from "../../components/FloatingCart";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
@@ -1348,23 +1348,23 @@ const styles = StyleSheet.create({
   loadingRow: {
     flexDirection: "row",
     paddingHorizontal: H_PADDING,
-    gap: 12,
+    gap: 8,
     marginTop: 24,
   },
   productSkeleton: {
-    width: 156,
+    width: FEATURED_CARD_WIDTH,
     backgroundColor: "#fff",
-    borderRadius: 12,
+    borderRadius: 10,
     overflow: "hidden",
   },
   productSkeletonImage: {
     width: "100%",
-    height: 100,
+    height: 80,
     backgroundColor: "#f1f5f9",
   },
   productSkeletonContent: {
-    padding: 10,
-    gap: 8,
+    padding: 8,
+    gap: 6,
   },
   skeletonLine: {
     height: 12,

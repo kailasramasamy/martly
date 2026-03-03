@@ -1,11 +1,13 @@
 import { useRef } from "react";
-import { View, Text, TouchableOpacity, Pressable, Image, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, Pressable, Image, StyleSheet, Dimensions } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 
-export const FEATURED_CARD_WIDTH = 156;
+const SCREEN_WIDTH = Dimensions.get("window").width;
+const CARD_GAP = 8;
+export const FEATURED_CARD_WIDTH = Math.floor((SCREEN_WIDTH - 16) / 3.1 - CARD_GAP);
 
 interface FeaturedProductCardProps {
   item: StoreProduct;
@@ -89,7 +91,7 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
             onPress={() => { heartTapped.current = true; onToggleWishlist(item.product.id); }}
             hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
           >
-            <Ionicons name={isWishlisted ? "heart" : "heart-outline"} size={18} color={isWishlisted ? "#ef4444" : "#94a3b8"} />
+            <Ionicons name={isWishlisted ? "heart" : "heart-outline"} size={15} color={isWishlisted ? "#ef4444" : "#94a3b8"} />
           </Pressable>
         )}
       </View>
@@ -108,7 +110,7 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
 
         {(item.product.averageRating ?? 0) > 0 && (
           <View style={styles.ratingRow}>
-            <Ionicons name="star" size={11} color="#f59e0b" />
+            <Ionicons name="star" size={10} color="#f59e0b" />
             <Text style={styles.ratingText}>{item.product.averageRating!.toFixed(1)}</Text>
             {(item.product.reviewCount ?? 0) > 0 && (
               <Text style={styles.ratingCount}>({item.product.reviewCount})</Text>
@@ -137,7 +139,7 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
               </>
             )}
             {!isMember && item.pricing?.memberPrice != null && item.pricing.memberPrice < displayPrice && (
-              <Text style={{ fontSize: 10, color: "#7c3aed", fontWeight: "600" }}>{"\u20B9"}{item.pricing.memberPrice.toFixed(0)} for members</Text>
+              <Text style={{ fontSize: 9, color: "#7c3aed", fontWeight: "600" }}>{"\u20B9"}{item.pricing.memberPrice.toFixed(0)} for members</Text>
             )}
           </View>
           {quantity > 0 ? (
@@ -147,7 +149,7 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
                 onPress={onShowVariants}
                 activeOpacity={0.7}
               >
-                <Ionicons name="checkmark" size={12} color="#fff" />
+                <Ionicons name="checkmark" size={11} color="#fff" />
                 <Text style={styles.qtyBadgeText}>{quantity}</Text>
               </TouchableOpacity>
             ) : (
@@ -157,7 +159,7 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
                   onPress={() => onUpdateQuantity(item.id, quantity - 1)}
                   hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                 >
-                  <Ionicons name={quantity === 1 ? "trash-outline" : "remove"} size={14} color={colors.primary} />
+                  <Ionicons name={quantity === 1 ? "trash-outline" : "remove"} size={12} color={colors.primary} />
                 </TouchableOpacity>
                 <Text style={styles.qtyText}>{quantity}</Text>
                 <TouchableOpacity
@@ -165,7 +167,7 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
                   onPress={() => onAddToCart(item)}
                   hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                 >
-                  <Ionicons name="add" size={14} color={colors.primary} />
+                  <Ionicons name="add" size={12} color={colors.primary} />
                 </TouchableOpacity>
               </View>
             )
@@ -208,8 +210,8 @@ const styles = StyleSheet.create({
   card: {
     width: FEATURED_CARD_WIDTH,
     backgroundColor: "#fff",
-    borderRadius: 12,
-    marginRight: 12,
+    borderRadius: 10,
+    marginRight: CARD_GAP,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.06,
@@ -220,8 +222,8 @@ const styles = StyleSheet.create({
     width: "100%",
     aspectRatio: 1,
     backgroundColor: "#f1f5f9",
-    borderTopLeftRadius: 12,
-    borderTopRightRadius: 12,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
     overflow: "hidden",
     position: "relative",
   },
@@ -232,16 +234,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#e2e8f0",
   },
   noImageLetter: {
-    fontSize: 32,
+    fontSize: 24,
     fontWeight: "700",
     color: "#94a3b8",
   },
   foodIndicator: {
     position: "absolute",
-    bottom: 6,
-    left: 6,
-    width: 16,
-    height: 16,
+    bottom: 4,
+    left: 4,
+    width: 14,
+    height: 14,
     borderWidth: 1.5,
     borderRadius: 3,
     backgroundColor: "#fff",
@@ -250,27 +252,27 @@ const styles = StyleSheet.create({
   },
   vegBorder: { borderColor: "#0a8f08" },
   nvBorder: { borderColor: "#b71c1c" },
-  foodDot: { width: 8, height: 8, borderRadius: 4 },
+  foodDot: { width: 6, height: 6, borderRadius: 3 },
   vegFill: { backgroundColor: "#0a8f08" },
   nvFill: { backgroundColor: "#b71c1c" },
   discountTag: {
     position: "absolute",
-    top: 8,
+    top: 6,
     left: 0,
     backgroundColor: "#dc2626",
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    borderTopRightRadius: 6,
-    borderBottomRightRadius: 6,
+    paddingHorizontal: 4,
+    paddingVertical: 1,
+    borderTopRightRadius: 4,
+    borderBottomRightRadius: 4,
   },
-  discountText: { fontSize: 9, color: "#fff", fontWeight: "700", letterSpacing: 0.3 },
+  discountText: { fontSize: 8, color: "#fff", fontWeight: "700", letterSpacing: 0.3 },
   heartBtn: {
     position: "absolute",
-    top: 8,
-    right: 8,
-    width: 28,
-    height: 28,
-    borderRadius: 14,
+    top: 4,
+    right: 4,
+    width: 24,
+    height: 24,
+    borderRadius: 12,
     backgroundColor: "rgba(255,255,255,0.9)",
     justifyContent: "center",
     alignItems: "center",
@@ -282,14 +284,14 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  oosLabel: { fontSize: 11, fontWeight: "700", color: colors.error },
+  oosLabel: { fontSize: 10, fontWeight: "700", color: colors.error },
   content: {
-    paddingHorizontal: 10,
-    paddingTop: 8,
-    paddingBottom: 10,
+    paddingHorizontal: 8,
+    paddingTop: 6,
+    paddingBottom: 8,
   },
   brand: {
-    fontSize: 10,
+    fontSize: 9,
     fontWeight: "600",
     color: "#94a3b8",
     textTransform: "uppercase",
@@ -297,44 +299,44 @@ const styles = StyleSheet.create({
     marginBottom: 1,
   },
   name: {
-    fontSize: 13,
+    fontSize: 11,
     fontWeight: "600",
     color: colors.text,
-    lineHeight: 17,
-    marginBottom: 2,
+    lineHeight: 14,
+    marginBottom: 1,
   },
   unit: {
-    fontSize: 11,
-    color: "#94a3b8",
-    marginTop: 2,
-  },
-  ratingRow: { flexDirection: "row" as const, alignItems: "center" as const, gap: 3, marginTop: 3 },
-  ratingText: { fontSize: 11, fontWeight: "600" as const, color: "#92400e" },
-  ratingCount: { fontSize: 10, color: "#94a3b8" },
-  lowStock: {
     fontSize: 10,
+    color: "#94a3b8",
+    marginTop: 1,
+  },
+  ratingRow: { flexDirection: "row" as const, alignItems: "center" as const, gap: 2, marginTop: 2 },
+  ratingText: { fontSize: 10, fontWeight: "600" as const, color: "#92400e" },
+  ratingCount: { fontSize: 9, color: "#94a3b8" },
+  lowStock: {
+    fontSize: 9,
     color: colors.warning,
     fontWeight: "600",
-    marginTop: 2,
+    marginTop: 1,
   },
   priceColumn: {
     flex: 1,
-    marginRight: 6,
+    marginRight: 4,
   },
   footer: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "flex-end",
-    marginTop: 8,
+    marginTop: 6,
   },
   price: {
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: "700",
     color: colors.text,
-    lineHeight: 20,
+    lineHeight: 17,
   },
   mrp: {
-    fontSize: 11,
+    fontSize: 10,
     color: "#94a3b8",
     textDecorationLine: "line-through",
   },
@@ -342,10 +344,10 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: colors.primary,
     borderRadius: 6,
-    paddingHorizontal: 14,
-    paddingVertical: 5,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
     backgroundColor: "#fff",
-    minWidth: 52,
+    minWidth: 44,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -359,16 +361,16 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   qtyBtn: {
-    paddingHorizontal: 8,
-    paddingVertical: 5,
+    paddingHorizontal: 5,
+    paddingVertical: 4,
     justifyContent: "center",
     alignItems: "center",
   },
   qtyText: {
-    fontSize: 13,
+    fontSize: 11,
     fontWeight: "700",
     color: colors.primary,
-    minWidth: 18,
+    minWidth: 12,
     textAlign: "center",
   },
   addBtnDisabled: {
@@ -376,12 +378,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#f8fafc",
   },
   addBtnText: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: "700",
     color: colors.primary,
   },
   addBtnTextDisabled: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: "700",
     color: "#94a3b8",
   },
@@ -393,23 +395,23 @@ const styles = StyleSheet.create({
   },
   optionsBtn: {
     backgroundColor: colors.primary,
-    paddingVertical: 2,
-    paddingHorizontal: 8,
+    paddingVertical: 1,
+    paddingHorizontal: 6,
     alignItems: "center",
   },
   optionsBtnText: {
-    fontSize: 9,
+    fontSize: 8,
     fontWeight: "700",
     color: "#fff",
   },
   stackedAddBtn: {
     backgroundColor: "#fff",
-    paddingVertical: 3,
-    paddingHorizontal: 8,
+    paddingVertical: 2,
+    paddingHorizontal: 6,
     alignItems: "center",
   },
   stackedAddBtnText: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: "700",
     color: colors.primary,
   },
@@ -418,12 +420,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: colors.primary,
     borderRadius: 6,
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    gap: 3,
   },
   qtyBadgeText: {
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: "700",
     color: "#fff",
   },

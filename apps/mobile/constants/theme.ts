@@ -30,8 +30,8 @@ export const fontSize = {
 } as const;
 
 export const fonts = {
-  regular: "Inter-Regular",
-  medium: "Inter-Medium",
-  semibold: "Inter-SemiBold",
-  bold: "Inter-Bold",
+  regular: "PlusJakartaSans-Regular",
+  medium: "PlusJakartaSans-Medium",
+  semibold: "PlusJakartaSans-SemiBold",
+  bold: "PlusJakartaSans-Bold",
 } as const;
