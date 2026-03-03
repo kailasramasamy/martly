@@ -34,7 +34,7 @@ All data is org-scoped. Roles:
 
 - **SUPER_ADMIN** — Full access, no org filter
 - **ORG_ADMIN** — All stores within their organization
-- **STORE_MANAGER / STAFF** — Only assigned stores (via `UserStore`)
+- **STORE_MANAGER / STAFF / RIDER** — Only assigned stores (via `UserStore`)
 - **CUSTOMER** — No org context needed
 
 ## Test Users
