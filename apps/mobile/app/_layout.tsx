@@ -186,12 +186,12 @@ export default function RootLayout() {
 
   if (!fontsLoaded) return null;
 
-  // Set default font synchronously before tree renders (guarded by fontsLoaded gate above)
-  const defaultTextStyle = { fontFamily: "PlusJakartaSans-Regular" };
+  // Set default font for Text/TextInput (regular weight — other weights handled by font-patch.ts)
+  const defaultFont = { fontFamily: "PlusJakartaSans-Regular" };
   (Text as any).defaultProps = (Text as any).defaultProps || {};
-  (Text as any).defaultProps.style = [defaultTextStyle];
+  (Text as any).defaultProps.style = [defaultFont];
   (TextInput as any).defaultProps = (TextInput as any).defaultProps || {};
-  (TextInput as any).defaultProps.style = [defaultTextStyle];
+  (TextInput as any).defaultProps.style = [defaultFont];
 
   return (
     <SafeAreaProvider>
