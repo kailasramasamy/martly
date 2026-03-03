@@ -14,6 +14,8 @@ interface VariantBottomSheetProps {
   onUpdateQuantity: (storeProductId: string, quantity: number) => void;
   cartQuantityMap: Map<string, number>;
   isMember?: boolean;
+  mode?: "cart" | "subscribe";
+  onSelect?: (sp: StoreProduct) => void;
 }
 
 export function VariantBottomSheet({
@@ -24,6 +26,8 @@ export function VariantBottomSheet({
   onUpdateQuantity,
   cartQuantityMap,
   isMember,
+  mode = "cart",
+  onSelect,
 }: VariantBottomSheetProps) {
   if (!visible || variants.length === 0) return null;
 
@@ -42,7 +46,9 @@ export function VariantBottomSheet({
             <Ionicons name="close" size={22} color={colors.textSecondary} />
           </TouchableOpacity>
         </View>
-        <Text style={styles.subtitle}>{variants.length} variants available</Text>
+        <Text style={styles.subtitle}>
+          {mode === "subscribe" ? "Choose a variant to subscribe" : `${variants.length} variants available`}
+        </Text>
 
         <ScrollView bounces={false}>
           {variants.map((sp) => {
@@ -80,7 +86,17 @@ export function VariantBottomSheet({
                   )}
                   {isOutOfStock && <Text style={styles.outOfStock}>Out of Stock</Text>}
                 </View>
-                {qty > 0 ? (
+                {mode === "subscribe" ? (
+                  <TouchableOpacity
+                    style={[styles.addBtn, isOutOfStock && styles.disabledBtn]}
+                    onPress={() => onSelect?.(sp)}
+                    disabled={isOutOfStock}
+                  >
+                    <Text style={[styles.addText, isOutOfStock && styles.disabledText]}>
+                      {isOutOfStock ? "N/A" : "Subscribe"}
+                    </Text>
+                  </TouchableOpacity>
+                ) : qty > 0 ? (
                   <View style={styles.qtyStepper}>
                     <TouchableOpacity
                       style={styles.qtyBtn}

@@ -11,6 +11,7 @@ export interface Store {
   minOrderAmount?: number | null;
   freeDeliveryThreshold?: number | null;
   baseDeliveryFee?: number | null;
+  subscriptionEnabled?: boolean;
 }
 
 export interface Variant {
@@ -319,4 +320,60 @@ export interface MembershipStatus {
     freeDelivery: boolean;
     loyaltyMultiplier: number;
   } | null;
+}
+
+export interface SubscriptionItem {
+  id: string;
+  storeProductId: string;
+  quantity: number;
+  storeProduct: {
+    id: string;
+    price: number;
+    product: { id: string; name: string; imageUrl: string | null };
+    variant: { id: string; name: string; unitType: string; unitValue: string; mrp: number | null };
+  };
+  pricing?: Pricing;
+}
+
+export interface Subscription {
+  id: string;
+  userId: string;
+  storeId: string;
+  status: "ACTIVE" | "PAUSED" | "CANCELLED";
+  frequency: "DAILY" | "ALTERNATE_DAYS" | "SPECIFIC_DAYS" | "WEEKLY" | "BIWEEKLY" | "MONTHLY";
+  selectedDays: number[];
+  deliveryAddress: string;
+  nextDeliveryDate: string;
+  cutoffTime: string;
+  pausedUntil: string | null;
+  autoPayWithWallet: boolean;
+  createdAt: string;
+  items: SubscriptionItem[];
+  store?: { id: string; name: string };
+  _count?: { items: number };
+}
+
+export interface BasketItem {
+  storeProductId: string;
+  quantity: number;
+  source: "subscription" | "addon";
+  subscriptionId?: string;
+  product: { id: string; name: string; imageUrl: string | null };
+  variant: { id: string; name: string; unitType: string; unitValue: string };
+  pricing: Pricing;
+  isOverridden?: boolean;
+  defaultQuantity?: number;
+}
+
+export interface TomorrowsBasket {
+  deliveryDate: string;
+  cutoffTime: string;
+  deliveryWindowStart: string | null;
+  deliveryWindowEnd: string | null;
+  items: BasketItem[];
+  subtotal: number;
+  deliveryFee: number;
+  total: number;
+  walletBalance: number;
+  hasActiveSubscriptions: boolean;
 }

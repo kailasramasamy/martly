@@ -46,7 +46,7 @@ All data is org-scoped. Roles:
 | `manager@bigmart.dev` | `manager123` | STORE_MANAGER (Bigmart) |
 | `customer@martly.dev` | `customer123` | CUSTOMER |
 
-OTP login: any 10-digit phone, OTP is `123456`.
+OTP login: any 10-digit phone, OTP is `111111`.
 
 ## Key Paths
 

@@ -58,7 +58,8 @@ export const PAYMENT_STATUS_CONFIG: Record<string, { color: string; label: strin
 export const STORE_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
   ACTIVE: { color: "green", label: "Active" },
   PENDING: { color: "orange", label: "Pending" },
-  INACTIVE: { color: "red", label: "Inactive" },
+  SUSPENDED: { color: "red", label: "Suspended" },
+  CLOSED: { color: "default", label: "Closed" },
 };
 
 export const ACTIVE_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
@@ -184,4 +185,19 @@ export const MEMBERSHIP_DURATION_CONFIG: Record<string, { color: string; label: 
   MONTHLY: { color: "blue", label: "Monthly" },
   QUARTERLY: { color: "purple", label: "Quarterly" },
   ANNUAL: { color: "gold", label: "Annual" },
+};
+
+export const SUBSCRIPTION_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  ACTIVE: { color: "green", label: "Active" },
+  PAUSED: { color: "orange", label: "Paused" },
+  CANCELLED: { color: "red", label: "Cancelled" },
+};
+
+export const SUBSCRIPTION_FREQUENCY_CONFIG: Record<string, { color: string; label: string }> = {
+  DAILY: { color: "blue", label: "Daily" },
+  ALTERNATE_DAYS: { color: "purple", label: "Alternate Days" },
+  SPECIFIC_DAYS: { color: "cyan", label: "Specific Days" },
+  WEEKLY: { color: "green", label: "Weekly" },
+  BIWEEKLY: { color: "orange", label: "Every 2 Weeks" },
+  MONTHLY: { color: "magenta", label: "Monthly" },
 };

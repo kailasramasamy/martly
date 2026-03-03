@@ -695,7 +695,7 @@ export async function orderRoutes(app: FastifyInstance) {
   // Update order status (verify org access)
   app.patch<{ Params: { id: string } }>(
     "/:id/status",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF", "RIDER")] },
     async (request, reply) => {
       const body = updateOrderStatusSchema.parse(request.body);
       const existing = await app.prisma.order.findUnique({
@@ -1395,7 +1395,7 @@ export async function orderRoutes(app: FastifyInstance) {
   // Delivery Board — grouped orders for operational management
   app.get(
     "/delivery-board",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF", "RIDER")] },
     async (request, reply) => {
       const { storeId, date } = request.query as { storeId?: string; date?: string };
       if (!storeId) return reply.badRequest("storeId is required");
@@ -1550,7 +1550,7 @@ export async function orderRoutes(app: FastifyInstance) {
   // Bulk status update
   app.post(
     "/bulk-status",
-    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF")] },
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF", "RIDER")] },
     async (request, reply) => {
       const body = bulkUpdateOrderStatusSchema.parse(request.body);
 

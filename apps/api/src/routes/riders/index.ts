@@ -86,7 +86,7 @@ export async function riderRoutes(app: FastifyInstance) {
           name: body.name,
           phone: body.phone,
           passwordHash,
-          role: "STAFF",
+          role: "RIDER",
         },
         select: { id: true, name: true, phone: true, email: true, createdAt: true },
       });
@@ -95,7 +95,7 @@ export async function riderRoutes(app: FastifyInstance) {
         data: {
           userId: user.id,
           storeId: body.storeId,
-          role: "STAFF",
+          role: "RIDER",
         },
       });
 

@@ -1,27 +1,47 @@
 import { List, useTable, EditButton, ShowButton } from "@refinedev/antd";
-import { Table, Tag, Form, Input, Space } from "antd";
+import { Table, Tag, Form, Input, Select, Space } from "antd";
 import type { HttpError } from "@refinedev/core";
 
 import { STORE_STATUS_CONFIG } from "../../constants/tag-colors";
+
+const STATUS_OPTIONS = [
+  { label: "All Statuses", value: "" },
+  { label: "Active", value: "ACTIVE" },
+  { label: "Pending", value: "PENDING" },
+  { label: "Suspended", value: "SUSPENDED" },
+  { label: "Closed", value: "CLOSED" },
+];
 
 export const StoreList = () => {
   const { tableProps, searchFormProps } = useTable<
     { id: string; name: string; slug: string; address: string; status: string },
     HttpError,
-    { q: string }
+    { q: string; status: string }
   >({
     resource: "stores",
-    onSearch: (values) => [{ field: "q", operator: "contains", value: values.q }],
+    onSearch: (values) => [
+      { field: "q", operator: "contains", value: values.q },
+      { field: "status", operator: "eq", value: values.status },
+    ],
   });
 
   return (
     <List>
-      <Form {...searchFormProps} layout="inline" style={{ marginBottom: 16 }}>
+      <Form {...searchFormProps} layout="inline" style={{ marginBottom: 16, gap: 8 }}>
         <Form.Item name="q" noStyle>
           <Input.Search placeholder="Search stores..." allowClear onSearch={searchFormProps.form?.submit} style={{ width: 300 }} />
         </Form.Item>
+        <Form.Item name="status" noStyle>
+          <Select
+            placeholder="Filter by status"
+            allowClear
+            options={STATUS_OPTIONS}
+            onChange={searchFormProps.form?.submit}
+            style={{ width: 180 }}
+          />
+        </Form.Item>
       </Form>
-      <Table {...tableProps} rowKey="id">
+      <Table {...tableProps} rowKey="id" size="small">
         <Table.Column dataIndex="name" title="Name" />
         <Table.Column dataIndex="slug" title="Slug" />
         <Table.Column dataIndex="address" title="Address" />

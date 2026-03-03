@@ -34,6 +34,7 @@ import {
   FundOutlined,
   RollbackOutlined,
   CrownOutlined,
+  CalendarOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -119,6 +120,9 @@ import { StoreIntelligencePage } from "./pages/store-intelligence";
 import { CustomerInsightsPage } from "./pages/customer-insights";
 import { MembershipPlans } from "./pages/memberships/plans";
 import { MembershipSubscribers } from "./pages/memberships/subscribers";
+import { SubscriptionConfig } from "./pages/subscription-config/index";
+import { SubscriptionList } from "./pages/subscriptions/list";
+import { SubscriptionShow } from "./pages/subscriptions/show";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -128,6 +132,7 @@ const ROLE_LABELS: Record<string, string> = {
   ORG_ADMIN: "Org Admin",
   STORE_MANAGER: "Store Manager",
   STAFF: "Staff",
+  RIDER: "Rider",
   CUSTOMER: "Customer",
 };
 
@@ -354,6 +359,17 @@ export default function App() {
                 meta: { label: "Subscribers", icon: <CrownOutlined />, parent: "marketing" },
               },
               {
+                name: "subscription-config",
+                list: "/subscription-config",
+                meta: { label: "Subscription Config", icon: <CalendarOutlined />, parent: "marketing" },
+              },
+              {
+                name: "subscriptions",
+                list: "/subscriptions",
+                show: "/subscriptions/show/:id",
+                meta: { label: "Subscriptions", icon: <CalendarOutlined />, parent: "marketing" },
+              },
+              {
                 name: "delivery",
                 meta: { label: "Delivery", icon: <EnvironmentOutlined /> },
               },
@@ -554,6 +570,11 @@ export default function App() {
                 <Route path="/customer-insights" element={<CustomerInsightsPage />} />
                 <Route path="/membership-plans" element={<MembershipPlans />} />
                 <Route path="/membership-subscribers" element={<MembershipSubscribers />} />
+                <Route path="/subscription-config" element={<SubscriptionConfig />} />
+                <Route path="/subscriptions">
+                  <Route index element={<SubscriptionList />} />
+                  <Route path="show/:id" element={<SubscriptionShow />} />
+                </Route>
                 <Route path="/" element={<DashboardPage />} />
               </Route>
               <Route path="/login" element={<LoginPage />} />

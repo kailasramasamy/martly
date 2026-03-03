@@ -14,11 +14,13 @@ const ALL_ROLES = [
   { label: "Org Admin", value: "ORG_ADMIN" },
   { label: "Store Manager", value: "STORE_MANAGER" },
   { label: "Staff", value: "STAFF" },
+  { label: "Rider", value: "RIDER" },
 ];
 
 const ORG_ROLES = [
   { label: "Store Manager", value: "STORE_MANAGER" },
   { label: "Staff", value: "STAFF" },
+  { label: "Rider", value: "RIDER" },
 ];
 
 export const UserCreate = () => {

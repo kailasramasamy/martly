@@ -46,9 +46,11 @@ import { customerInsightsRoutes } from "./routes/customer-insights/index.js";
 import { returnRequestRoutes } from "./routes/return-requests/index.js";
 import { riderLocationRoutes } from "./routes/rider-location/index.js";
 import { membershipRoutes } from "./routes/memberships/index.js";
+import { subscriptionRoutes } from "./routes/subscriptions/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
 import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
+import subscriptionSchedulerPlugin from "./plugins/subscription-scheduler.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -75,6 +77,7 @@ export async function buildApp() {
   await app.register(websocketPlugin);
   await app.register(notificationSchedulerPlugin);
   await app.register(reorderNudgeSchedulerPlugin);
+  await app.register(subscriptionSchedulerPlugin);
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {
@@ -145,6 +148,7 @@ export async function buildApp() {
       await api.register(returnRequestRoutes, { prefix: "/return-requests" });
       await api.register(riderLocationRoutes, { prefix: "/rider-location" });
       await api.register(membershipRoutes, { prefix: "/memberships" });
+      await api.register(subscriptionRoutes, { prefix: "/subscriptions" });
     },
     { prefix: "/api/v1" },
   );

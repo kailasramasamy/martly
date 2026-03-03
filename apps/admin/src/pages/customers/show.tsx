@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Show, ShowButton } from "@refinedev/antd";
 import { useShow, useList, useDelete } from "@refinedev/core";
 import { useParams, useNavigate } from "react-router";
@@ -19,6 +19,11 @@ import {
   Alert,
   Steps,
   Spin,
+  InputNumber,
+  Input,
+  Radio,
+  Form,
+  message,
 } from "antd";
 import {
   UserOutlined,
@@ -32,9 +37,14 @@ import {
   DollarOutlined,
   DeleteOutlined,
   ExclamationCircleFilled,
+  SyncOutlined,
+  WalletOutlined,
+  PlusOutlined,
+  MinusOutlined,
 } from "@ant-design/icons";
 import dayjs from "dayjs";
-import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG } from "../../constants/tag-colors";
+import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, SUBSCRIPTION_STATUS_CONFIG, SUBSCRIPTION_FREQUENCY_CONFIG } from "../../constants/tag-colors";
+import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle, BRAND } from "../../theme";
 
 const { Text } = Typography;
@@ -56,6 +66,23 @@ interface OrderRecord {
   items?: { id: string }[];
 }
 
+interface SubscriptionRecord {
+  id: string;
+  status: string;
+  frequency: string;
+  nextDeliveryDate: string | null;
+  createdAt: string;
+  store: { id: string; name: string };
+  items: {
+    id: string;
+    quantity: number;
+    storeProduct: {
+      product: { name: string };
+      variant: { name: string };
+    };
+  }[];
+}
+
 export const CustomerShow = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -63,6 +90,55 @@ export const CustomerShow = () => {
   const { data, isLoading } = query;
   const record = data?.data;
   const [deleteModalOpen, setDeleteModalOpen] = useState(false);
+  const [subscriptions, setSubscriptions] = useState<SubscriptionRecord[]>([]);
+  const [subsLoading, setSubsLoading] = useState(true);
+  const [walletBalance, setWalletBalance] = useState<number | null>(null);
+  const [walletTransactions, setWalletTransactions] = useState<any[]>([]);
+  const [walletLoading, setWalletLoading] = useState(true);
+  const [walletModalOpen, setWalletModalOpen] = useState(false);
+  const [adjusting, setAdjusting] = useState(false);
+  const [walletForm] = Form.useForm();
+
+  const fetchWallet = (userId: string) => {
+    axiosInstance.get(`/wallet/admin/${userId}`)
+      .then((res) => {
+        setWalletBalance(res?.data?.data?.balance ?? 0);
+        setWalletTransactions(res?.data?.data?.transactions ?? []);
+      })
+      .catch(() => {})
+      .finally(() => setWalletLoading(false));
+  };
+
+  useEffect(() => {
+    if (!id) { setSubsLoading(false); setWalletLoading(false); return; }
+    axiosInstance.get(`/subscriptions/admin?userId=${id}&pageSize=50`)
+      .then((res) => setSubscriptions(res?.data?.data ?? []))
+      .catch(() => {})
+      .finally(() => setSubsLoading(false));
+    fetchWallet(id);
+  }, [id]);
+
+  const handleWalletAdjust = async () => {
+    if (!id) return;
+    try {
+      const values = await walletForm.validateFields();
+      setAdjusting(true);
+      await axiosInstance.post(`/wallet/admin/${id}/adjust`, {
+        type: values.type,
+        amount: values.amount,
+        description: values.description,
+      });
+      message.success(`Wallet ${values.type === "CREDIT" ? "credited" : "debited"} successfully`);
+      setWalletModalOpen(false);
+      walletForm.resetFields();
+      setWalletLoading(true);
+      fetchWallet(id);
+    } catch (err: any) {
+      message.error(err?.response?.data?.message || "Failed to adjust wallet");
+    } finally {
+      setAdjusting(false);
+    }
+  };
 
   const { mutate: deleteUser, isLoading: isDeleting } = useDelete();
 
@@ -194,7 +270,7 @@ export const CustomerShow = () => {
         {/* Right main area: Stats + Orders */}
         <Col xs={24} lg={17}>
           <Row gutter={[12, 16]}>
-            <Col xs={8}>
+            <Col xs={12} md={6}>
               <Card size="small">
                 <Statistic
                   title="Total Orders"
@@ -203,7 +279,7 @@ export const CustomerShow = () => {
                 />
               </Card>
             </Col>
-            <Col xs={8}>
+            <Col xs={12} md={6}>
               <Card size="small">
                 <Statistic
                   title="Total Spent"
@@ -213,7 +289,7 @@ export const CustomerShow = () => {
                 />
               </Card>
             </Col>
-            <Col xs={8}>
+            <Col xs={12} md={6}>
               <Card size="small">
                 <Statistic
                   title="Avg. Order"
@@ -221,6 +297,25 @@ export const CustomerShow = () => {
                   precision={0}
                   prefix={<><DollarOutlined style={{ color: BRAND.info }} /> ₹</>}
                 />
+              </Card>
+            </Col>
+            <Col xs={12} md={6}>
+              <Card size="small">
+                <Statistic
+                  title="Wallet Balance"
+                  value={walletBalance ?? 0}
+                  precision={0}
+                  loading={walletLoading}
+                  prefix={<><WalletOutlined style={{ color: "#8b5cf6" }} /> ₹</>}
+                />
+                <Button
+                  size="small"
+                  type="link"
+                  style={{ padding: 0, marginTop: 4 }}
+                  onClick={() => setWalletModalOpen(true)}
+                >
+                  Adjust Balance
+                </Button>
               </Card>
             </Col>
             <Col span={24}>
@@ -301,9 +396,170 @@ export const CustomerShow = () => {
                 </Table>
               </Card>
             </Col>
+            <Col span={24}>
+              <Card
+                title={sectionTitle(<SyncOutlined />, "Subscriptions")}
+                size="small"
+              >
+                <Table<SubscriptionRecord>
+                  dataSource={subscriptions}
+                  rowKey="id"
+                  loading={subsLoading}
+                  size="small"
+                  pagination={subscriptions.length > 10 ? { pageSize: 10 } : false}
+                  locale={{
+                    emptyText: (
+                      <Empty
+                        image={Empty.PRESENTED_IMAGE_SIMPLE}
+                        description="No subscriptions"
+                      />
+                    ),
+                  }}
+                >
+                  <Table.Column
+                    dataIndex="id"
+                    title="ID"
+                    width={100}
+                    render={(v: string) => (
+                      <a href={`/subscriptions/show/${v}`} style={{ fontFamily: "monospace", fontSize: 12 }}>
+                        {v.slice(0, 8)}
+                      </a>
+                    )}
+                  />
+                  <Table.Column
+                    title="Store"
+                    width={140}
+                    render={(_, rec: SubscriptionRecord) => rec.store?.name ?? "—"}
+                  />
+                  <Table.Column
+                    dataIndex="frequency"
+                    title="Frequency"
+                    width={130}
+                    render={(value: string) => {
+                      const config = SUBSCRIPTION_FREQUENCY_CONFIG[value];
+                      return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+                    }}
+                  />
+                  <Table.Column
+                    title="Items"
+                    render={(_, rec: SubscriptionRecord) => (
+                      <span style={{ fontSize: 12 }}>
+                        {rec.items?.map((i) => `${i.storeProduct?.product?.name} x${i.quantity}`).join(", ") || "—"}
+                      </span>
+                    )}
+                  />
+                  <Table.Column
+                    dataIndex="status"
+                    title="Status"
+                    width={100}
+                    render={(value: string) => {
+                      const config = SUBSCRIPTION_STATUS_CONFIG[value];
+                      return <Tag color={config?.color ?? "default"}>{config?.label ?? value}</Tag>;
+                    }}
+                  />
+                  <Table.Column
+                    dataIndex="nextDeliveryDate"
+                    title="Next Delivery"
+                    width={120}
+                    render={(v: string | null) => v ? dayjs(v).format("DD MMM YYYY") : "—"}
+                  />
+                  <Table.Column
+                    dataIndex="createdAt"
+                    title="Created"
+                    width={120}
+                    render={(v: string) => v ? dayjs(v).format("DD MMM YYYY") : "—"}
+                  />
+                </Table>
+              </Card>
+            </Col>
+            <Col span={24}>
+              <Card
+                title={sectionTitle(<WalletOutlined />, "Wallet Transactions")}
+                size="small"
+              >
+                <Table
+                  dataSource={walletTransactions}
+                  rowKey="id"
+                  loading={walletLoading}
+                  size="small"
+                  pagination={walletTransactions.length > 10 ? { pageSize: 10 } : false}
+                  locale={{
+                    emptyText: (
+                      <Empty
+                        image={Empty.PRESENTED_IMAGE_SIMPLE}
+                        description="No wallet transactions"
+                      />
+                    ),
+                  }}
+                >
+                  <Table.Column
+                    dataIndex="type"
+                    title="Type"
+                    width={90}
+                    render={(v: string) => (
+                      <Tag color={v === "CREDIT" ? "green" : "red"} icon={v === "CREDIT" ? <PlusOutlined /> : <MinusOutlined />}>
+                        {v}
+                      </Tag>
+                    )}
+                  />
+                  <Table.Column
+                    dataIndex="amount"
+                    title="Amount"
+                    width={100}
+                    render={(v: number) => <strong>₹{Number(v).toFixed(0)}</strong>}
+                  />
+                  <Table.Column
+                    dataIndex="balanceAfter"
+                    title="Balance After"
+                    width={110}
+                    render={(v: number) => `₹${Number(v).toFixed(0)}`}
+                  />
+                  <Table.Column dataIndex="description" title="Description" ellipsis />
+                  <Table.Column
+                    dataIndex="createdAt"
+                    title="Date"
+                    width={160}
+                    render={(v: string) => v ? new Date(v).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—"}
+                  />
+                </Table>
+              </Card>
+            </Col>
           </Row>
         </Col>
       </Row>
+
+      {/* Wallet Adjust Modal */}
+      <Modal
+        title={<Space><WalletOutlined /> Adjust Wallet Balance</Space>}
+        open={walletModalOpen}
+        onCancel={() => { setWalletModalOpen(false); walletForm.resetFields(); }}
+        onOk={handleWalletAdjust}
+        confirmLoading={adjusting}
+        okText="Submit"
+      >
+        <Alert
+          type="info"
+          showIcon
+          style={{ marginBottom: 16 }}
+          message={`Current balance: \u20B9${walletBalance?.toFixed(0) ?? 0}`}
+        />
+        <Form form={walletForm} layout="vertical" initialValues={{ type: "CREDIT" }}>
+          <Form.Item name="type" label="Type" rules={[{ required: true }]}>
+            <Radio.Group>
+              <Radio.Button value="CREDIT"><PlusOutlined /> Credit</Radio.Button>
+              <Radio.Button value="DEBIT"><MinusOutlined /> Debit</Radio.Button>
+            </Radio.Group>
+          </Form.Item>
+          <Form.Item name="amount" label="Amount (₹)" rules={[{ required: true, message: "Enter amount" }]}>
+            <InputNumber min={1} max={100000} style={{ width: "100%" }} placeholder="Enter amount" />
+          </Form.Item>
+          <Form.Item name="description" label="Reason / Note">
+            <Input.TextArea rows={2} placeholder="e.g. Compensation for delayed delivery" />
+          </Form.Item>
+        </Form>
+      </Modal>
+
+      {/* Delete Customer Modal */}
       <Modal
         title={
           <Space>

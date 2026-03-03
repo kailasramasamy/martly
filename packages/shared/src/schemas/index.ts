@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode } from "../constants/index.js";
 
 // ── Auth ──────────────────────────────────────────────
 export const loginSchema = z.object({
@@ -392,6 +392,11 @@ export const updateStoreSchema = z.object({
   minOrderAmount: z.number().min(0).nullish(),
   freeDeliveryThreshold: z.number().min(0).nullish(),
   baseDeliveryFee: z.number().min(0).nullish(),
+  subscriptionEnabled: z.boolean().optional(),
+  subscriptionDeliveryMode: z.nativeEnum(SubscriptionDeliveryMode).optional(),
+  subscriptionWindowStart: z.string().regex(/^\d{2}:\d{2}$/).nullish(),
+  subscriptionWindowEnd: z.string().regex(/^\d{2}:\d{2}$/).nullish(),
+  subscriptionCutoffTime: z.string().regex(/^\d{2}:\d{2}$/).optional(),
 });
 export type UpdateStoreInput = z.infer<typeof updateStoreSchema>;
 
@@ -884,3 +889,104 @@ export const upgradeMembershipSchema = z.object({
   storeId: z.string().uuid(),
 });
 export type UpgradeMembershipInput = z.infer<typeof upgradeMembershipSchema>;
+
+// ── Subscription ──────────────────────────────────
+export const createSubscriptionSchema = z.object({
+  storeId: z.string().uuid(),
+  frequency: z.nativeEnum(SubscriptionFrequency),
+  selectedDays: z.array(z.number().int().min(0).max(31)).optional(),
+  deliveryAddress: z.string().min(5),
+  deliveryLat: z.number().min(-90).max(90).optional(),
+  deliveryLng: z.number().min(-180).max(180).optional(),
+  deliveryPincode: z.string().optional(),
+  addressId: z.string().uuid().optional(),
+  startDate: z.string().optional(),
+  autoPayWithWallet: z.boolean().default(true),
+  items: z.array(z.object({
+    storeProductId: z.string().uuid(),
+    quantity: z.number().int().positive(),
+  })).min(1),
+}).superRefine((data, ctx) => {
+  const freq = data.frequency;
+  const days = data.selectedDays ?? [];
+
+  if (freq === "SPECIFIC_DAYS") {
+    if (days.length === 0) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: "selectedDays is required for SPECIFIC_DAYS frequency", path: ["selectedDays"] });
+    }
+    if (days.some((d) => d < 0 || d > 6)) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: "selectedDays values must be 0-6 for SPECIFIC_DAYS", path: ["selectedDays"] });
+    }
+  }
+
+  if (freq === "WEEKLY" || freq === "BIWEEKLY") {
+    if (days.length !== 1) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: "selectedDays must have exactly 1 day (0-6) for WEEKLY/BIWEEKLY", path: ["selectedDays"] });
+    }
+    if (days.some((d) => d < 0 || d > 6)) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: "selectedDays values must be 0-6 for WEEKLY/BIWEEKLY", path: ["selectedDays"] });
+    }
+  }
+
+  if (freq === "MONTHLY") {
+    if (days.length !== 1) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: "selectedDays must have exactly 1 day (1-28) for MONTHLY", path: ["selectedDays"] });
+    }
+    if (days.some((d) => d < 1 || d > 28)) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: "selectedDays values must be 1-28 for MONTHLY", path: ["selectedDays"] });
+    }
+  }
+});
+export type CreateSubscriptionInput = z.infer<typeof createSubscriptionSchema>;
+
+export const updateSubscriptionSchema = z.object({
+  frequency: z.nativeEnum(SubscriptionFrequency).optional(),
+  selectedDays: z.array(z.number().int().min(0).max(31)).optional(),
+  deliveryAddress: z.string().min(5).optional(),
+  deliveryLat: z.number().min(-90).max(90).nullish(),
+  deliveryLng: z.number().min(-180).max(180).nullish(),
+  deliveryPincode: z.string().nullish(),
+  addressId: z.string().uuid().nullish(),
+  autoPayWithWallet: z.boolean().optional(),
+  status: z.enum(["ACTIVE", "PAUSED"]).optional(),
+  pausedUntil: z.string().optional(),
+  items: z.array(z.object({
+    storeProductId: z.string().uuid(),
+    quantity: z.number().int().positive(),
+  })).min(1).optional(),
+});
+export type UpdateSubscriptionInput = z.infer<typeof updateSubscriptionSchema>;
+
+export const skipSubscriptionDateSchema = z.object({
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  reason: z.string().max(500).optional(),
+});
+export type SkipSubscriptionDateInput = z.infer<typeof skipSubscriptionDateSchema>;
+
+export const basketAddOnSchema = z.object({
+  storeProductId: z.string().uuid(),
+  quantity: z.number().int().positive(),
+  deliveryDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+});
+export type BasketAddOnInput = z.infer<typeof basketAddOnSchema>;
+
+export const subscriptionConfigSchema = z.object({
+  subscriptionEnabled: z.boolean().optional(),
+  subscriptionDeliveryMode: z.nativeEnum(SubscriptionDeliveryMode).optional(),
+  subscriptionWindowStart: z.string().regex(/^\d{2}:\d{2}$/).nullish(),
+  subscriptionWindowEnd: z.string().regex(/^\d{2}:\d{2}$/).nullish(),
+  subscriptionCutoffTime: z.string().regex(/^\d{2}:\d{2}$/).optional(),
+});
+export type SubscriptionConfigInput = z.infer<typeof subscriptionConfigSchema>;
+
+export const orgSubscriptionConfigSchema = z.object({
+  subscriptionEnabled: z.boolean(),
+});
+export type OrgSubscriptionConfigInput = z.infer<typeof orgSubscriptionConfigSchema>;
+
+export const subscriptionItemOverrideSchema = z.object({
+  subscriptionId: z.string().uuid(),
+  storeProductId: z.string().uuid(),
+  quantity: z.number().int().min(0),
+});
+export type SubscriptionItemOverrideInput = z.infer<typeof subscriptionItemOverrideSchema>;

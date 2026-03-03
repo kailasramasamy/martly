@@ -60,7 +60,7 @@ setInterval(() => {
   }
 }, 60_000);
 
-const riderAuth = [authenticate, requireRole("STAFF", "STORE_MANAGER", "ORG_ADMIN", "SUPER_ADMIN")];
+const riderAuth = [authenticate, requireRole("RIDER", "STAFF", "STORE_MANAGER", "ORG_ADMIN", "SUPER_ADMIN")];
 
 export async function riderLocationRoutes(app: FastifyInstance) {
   /**

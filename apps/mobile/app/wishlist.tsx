@@ -8,6 +8,8 @@ import { useCart } from "../lib/cart-context";
 import { useWishlist } from "../lib/wishlist-context";
 import { useAuth } from "../lib/auth-context";
 import { useMembership, getBestPrice } from "../lib/membership-context";
+import { useBasketMode } from "../lib/basket-mode-context";
+import { useToast } from "../lib/toast-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../components/ProductGridCard";
 import { FloatingCart } from "../components/FloatingCart";
@@ -19,6 +21,8 @@ export default function WishlistScreen() {
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
   const { wishlistedIds, isWishlisted, toggle: toggleWishlist } = useWishlist();
   const { isMember } = useMembership();
+  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
+  const toast = useToast();
   const [products, setProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const storeId = selectedStore?.id;
@@ -40,14 +44,23 @@ export default function WishlistScreen() {
       .finally(() => setLoading(false));
   }, [isAuthenticated, storeId, wishlistedIds]);
 
-  const cartQuantityMap = useMemo(() => {
+  const rawCartQtyMap = useMemo(() => {
     const map = new Map<string, number>();
     for (const item of cartItems) map.set(item.storeProductId, item.quantity);
     return map;
   }, [cartItems]);
 
+  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
+
   const handleAddToCart = useCallback((sp: StoreProduct) => {
     if (!storeId) return;
+
+    if (isBasketMode) {
+      addBasketItem(sp.id);
+      toast.show("Added to tomorrow's basket", "success");
+      return;
+    }
+
     addItem(storeId, selectedStore?.name ?? "", {
       storeProductId: sp.id,
       productId: sp.product.id,
@@ -57,7 +70,18 @@ export default function WishlistScreen() {
       price: getBestPrice(sp, isMember),
       imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
     });
-  }, [storeId, selectedStore, addItem, isMember]);
+  }, [storeId, selectedStore, addItem, isMember, isBasketMode, addBasketItem, toast]);
+
+  const effectiveUpdateQty = useCallback(
+    (spId: string, qty: number) => {
+      if (isBasketMode) {
+        updateBasketQuantity(spId, qty);
+        return;
+      }
+      updateQuantity(spId, qty);
+    },
+    [isBasketMode, updateBasketQuantity, updateQuantity],
+  );
 
   if (!isAuthenticated) {
     return (
@@ -95,7 +119,7 @@ export default function WishlistScreen() {
           <ProductGridCard
             item={item}
             onAddToCart={handleAddToCart}
-            onUpdateQuantity={updateQuantity}
+            onUpdateQuantity={effectiveUpdateQty}
             quantity={cartQuantityMap.get(item.id) ?? 0}
             storeId={storeId}
             isWishlisted={isWishlisted(item.product.id)}

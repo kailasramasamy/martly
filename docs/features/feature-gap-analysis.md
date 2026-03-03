@@ -37,14 +37,14 @@ Martly has 38 API routes, 50+ admin pages, and 25+ mobile screens covering:
 - [x] **Cart upsells / nudges** — "Add ₹X more for free delivery", "Complete your basket" prompts at checkout. Universal. `Small` *(done: free delivery nudge + min order nudge)*
 - [x] **Frequently bought together** — "Customers also bought" suggestions on product detail + cart. Drives AOV. `Medium`
 - [ ] **WhatsApp order updates** — Order confirmations + status via WhatsApp. Massive open rates in India vs push. `Small-Medium`
-- [ ] **Membership plan** — Paid tier with free delivery + member-only prices. Swiggy One, Instacart+, BB Star. `Medium`
-- [ ] **Subscription / auto-delivery** — Recurring delivery of daily essentials (milk, bread, eggs). BigBasket's SmartBasket. `Large`
+- [x] **Membership plan** — Paid tier with free delivery + member-only prices. Swiggy One, Instacart+, BB Star. `Medium`
+- [x] **Subscription / auto-delivery** — Recurring delivery of daily essentials (milk, bread, eggs). BigBasket's SmartBasket. `Large`
 
 ## Tier 3: Differentiators (fewer competitors have, high impact)
 
 - [ ] **Shoppable recipes** — Browse recipes, one-tap "Add all ingredients to cart". Instacart's killer feature. `Medium`
 - [ ] **Substitution preferences** — Per-item rules: "replace with X" or "refund if unavailable". Critical for stock-out handling. `Medium`
-- [ ] **Context-aware recommendations** — Time-of-day suggestions (breakfast in AM, snacks in evening). Weather-based. `Medium`
+- [x] **Context-aware recommendations** — Time-of-day suggestions (breakfast in AM, snacks in evening). Weather-based. `Medium`
 - [ ] **Gamification** — Scratch cards on order completion, streak rewards, achievement badges. `Medium`
 - [ ] **Prepared food / cafe menu** — Ready-to-eat meals section. Blinkit Bistro and Zepto Cafe. `Large`
 

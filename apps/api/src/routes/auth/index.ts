@@ -301,9 +301,9 @@ export async function authRoutes(app: FastifyInstance) {
       ? []
       : await getUserOrgs(app.prisma, user.id);
 
-    // Look up assigned stores for STORE_MANAGER / STAFF
+    // Look up assigned stores for STORE_MANAGER / STAFF / RIDER
     let stores: { id: string; name: string }[] = [];
-    if ((user.role === "STORE_MANAGER" || user.role === "STAFF") && organizationId) {
+    if ((user.role === "STORE_MANAGER" || user.role === "STAFF" || user.role === "RIDER") && organizationId) {
       const userStores = await app.prisma.userStore.findMany({
         where: { userId: sub, store: { organizationId } },
         select: { store: { select: { id: true, name: true } } },

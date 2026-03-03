@@ -24,6 +24,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
 import { RazorpayCheckout } from "../components/RazorpayCheckout";
 import { ProfileGate } from "../components/ProfileGate";
+import { ConfirmSheet } from "../components/ConfirmSheet";
 import type { FulfillmentType, UserAddress, CouponValidation, DeliveryZoneInfo, DeliveryLookupResult, LoyaltyData, MembershipStatus } from "../lib/types";
 
 type PaymentMethod = "ONLINE" | "COD";
@@ -99,6 +100,8 @@ export default function CheckoutScreen() {
   const [selectedSlot, setSelectedSlot] = useState<AvailableSlot | null>(null);
   const [availableSlots, setAvailableSlots] = useState<AvailableSlot[]>([]);
   const [loadingSlots, setLoadingSlots] = useState(false);
+  const [basketTotal, setBasketTotal] = useState(0);
+  const [basketWarningVisible, setBasketWarningVisible] = useState(false);
 
   const deliveryLookup = selectedAddressId ? (addressLookups[selectedAddressId] ?? null) : null;
   const isPickup = fulfillmentType === "PICKUP";
@@ -151,6 +154,16 @@ export default function CheckoutScreen() {
       .then((res) => setWalletBalance(res.data.balance))
       .catch(() => {});
   }, []);
+
+  // Fetch tomorrow's basket total for wallet warning (only if store has subscriptions)
+  useEffect(() => {
+    if (!storeId || !selectedStore?.subscriptionEnabled) return;
+    api.get<{ total: number; hasActiveSubscriptions: boolean }>(`/api/v1/subscriptions/basket?storeId=${storeId}`)
+      .then((res) => {
+        if (res.data.hasActiveSubscriptions) setBasketTotal(res.data.total);
+      })
+      .catch(() => {});
+  }, [storeId, selectedStore?.subscriptionEnabled]);
 
   // Fetch loyalty data
   useEffect(() => {
@@ -358,13 +371,7 @@ export default function CheckoutScreen() {
     navigateToSuccess(pendingOrderId!);
   };
 
-  const handlePlaceOrder = async () => {
-    // For delivery, require address — show ProfileGate if none saved
-    if (!isPickup && !selectedAddressId) {
-      setShowProfileGate(true);
-      return;
-    }
-
+  const proceedWithOrder = async () => {
     setSubmitting(true);
     try {
       const orderPayload: Record<string, unknown> = {
@@ -432,6 +439,25 @@ export default function CheckoutScreen() {
     } finally {
       setSubmitting(false);
     }
+  };
+
+  const handlePlaceOrder = async () => {
+    // For delivery, require address — show ProfileGate if none saved
+    if (!isPickup && !selectedAddressId) {
+      setShowProfileGate(true);
+      return;
+    }
+
+    // Warn if wallet usage would leave insufficient balance for tomorrow's basket
+    if (useWallet && walletDeduction > 0 && basketTotal > 0) {
+      const remainingBalance = walletBalance - walletDeduction;
+      if (remainingBalance < basketTotal) {
+        setBasketWarningVisible(true);
+        return;
+      }
+    }
+
+    proceedWithOrder();
   };
 
   // Delivery fee preview text for fulfillment cards
@@ -1077,6 +1103,14 @@ export default function CheckoutScreen() {
                 thumbColor={useWallet ? colors.primary : "#94a3b8"}
               />
             </View>
+            {useWallet && walletDeduction > 0 && basketTotal > 0 && (walletBalance - walletDeduction) < basketTotal && (
+              <View style={styles.basketWarningBanner}>
+                <Ionicons name="warning-outline" size={16} color="#b45309" />
+                <Text style={styles.basketWarningText}>
+                  This will leave {"\u20B9"}{(walletBalance - walletDeduction).toFixed(0)} in your wallet — not enough for tomorrow's basket ({"\u20B9"}{basketTotal.toFixed(0)}). Your subscription order may be skipped.
+                </Text>
+              </View>
+            )}
           </View>
         )}
 
@@ -1333,6 +1367,16 @@ export default function CheckoutScreen() {
           setFulfillmentType("DELIVERY");
         }}
         onDismiss={() => setShowProfileGate(false)}
+      />
+      <ConfirmSheet
+        visible={basketWarningVisible}
+        title="Low Wallet Balance"
+        message={`This will leave \u20B9${(walletBalance - walletDeduction).toFixed(0)} in your wallet \u2014 not enough for tomorrow's basket (\u20B9${basketTotal.toFixed(0)}). Your subscription order may be skipped.`}
+        icon="wallet-outline"
+        iconColor="#f59e0b"
+        confirmLabel="Place Order Anyway"
+        onConfirm={() => { setBasketWarningVisible(false); proceedWithOrder(); }}
+        onCancel={() => setBasketWarningVisible(false)}
       />
 
       {/* Address picker modal — shown when switching address from not-serviceable banner */}
@@ -1793,6 +1837,23 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#64748b",
     fontWeight: "500",
+  },
+  basketWarningBanner: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 8,
+    marginTop: 10,
+    backgroundColor: "#fffbeb",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#fde68a",
+    padding: 12,
+  },
+  basketWarningText: {
+    flex: 1,
+    fontSize: 12,
+    color: "#92400e",
+    lineHeight: 17,
   },
 
   // Payment method

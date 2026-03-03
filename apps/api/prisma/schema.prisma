@@ -15,6 +15,7 @@ enum UserRole {
   ORG_ADMIN
   STORE_MANAGER
   STAFF
+  RIDER
   CUSTOMER
 }
 
@@ -211,6 +212,26 @@ enum MembershipStatus {
   CANCELLED
 }
 
+enum SubscriptionStatus {
+  ACTIVE
+  PAUSED
+  CANCELLED
+}
+
+enum SubscriptionFrequency {
+  DAILY
+  ALTERNATE_DAYS
+  SPECIFIC_DAYS
+  WEEKLY
+  BIWEEKLY
+  MONTHLY
+}
+
+enum SubscriptionDeliveryMode {
+  DEDICATED
+  SLOT_BASED
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -219,6 +240,8 @@ model Organization {
   slug      String   @unique
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
+
+  subscriptionEnabled Boolean @default(false) @map("subscription_enabled")
 
   stores              Store[]
   products            Product[]
@@ -238,6 +261,7 @@ model Organization {
   returnRequests      ReturnRequest[]
   membershipPlans     MembershipPlan[]
   userMemberships     UserMembership[]
+  subscriptions       Subscription[]
 
   @@map("organizations")
 }
@@ -259,6 +283,12 @@ model Store {
   createdAt             DateTime    @default(now()) @map("created_at")
   updatedAt             DateTime    @updatedAt @map("updated_at")
 
+  subscriptionEnabled      Boolean                  @default(false) @map("subscription_enabled")
+  subscriptionDeliveryMode SubscriptionDeliveryMode  @default(DEDICATED) @map("subscription_delivery_mode")
+  subscriptionWindowStart  String?                   @map("subscription_window_start")
+  subscriptionWindowEnd    String?                   @map("subscription_window_end")
+  subscriptionCutoffTime   String                    @default("22:00") @map("subscription_cutoff_time")
+
   organization       Organization        @relation(fields: [organizationId], references: [id])
   storeProducts      StoreProduct[]
   userStores         UserStore[]
@@ -273,6 +303,8 @@ model Store {
   storeRatings          StoreRating[] @relation("StoreRatings")
   supportTickets        SupportTicket[]
   returnRequests        ReturnRequest[]
+  subscriptions         Subscription[]
+  basketAddOns          BasketAddOn[]
 
   @@map("stores")
 }
@@ -314,6 +346,8 @@ model User {
   supportTickets       SupportTicket[]
   returnRequests       ReturnRequest[]
   memberships          UserMembership[]
+  subscriptions        Subscription[]
+  basketAddOns         BasketAddOn[]
 
   @@map("users")
 }
@@ -478,10 +512,13 @@ model StoreProduct {
   discountEnd   DateTime?      @map("discount_end")
   memberPrice   Decimal?       @db.Decimal(10, 2) @map("member_price")
 
-  store      Store          @relation(fields: [storeId], references: [id])
-  product    Product        @relation(fields: [productId], references: [id])
-  variant    ProductVariant @relation(fields: [variantId], references: [id])
-  orderItems OrderItem[]
+  store             Store              @relation(fields: [storeId], references: [id])
+  product           Product            @relation(fields: [productId], references: [id])
+  variant           ProductVariant     @relation(fields: [variantId], references: [id])
+  orderItems        OrderItem[]
+  subscriptionItems     SubscriptionItem[]
+  basketAddOns          BasketAddOn[]
+  subscriptionOverrides SubscriptionItemOverride[]
 
   @@unique([storeId, variantId])
   @@map("store_products")
@@ -518,11 +555,14 @@ model Order {
   scheduledDate        DateTime?     @map("scheduled_date")
   slotStartTime        String?       @map("slot_start_time")
   slotEndTime          String?       @map("slot_end_time")
+  subscriptionId       String?       @map("subscription_id")
+  isSubscriptionOrder  Boolean       @default(false) @map("is_subscription_order")
   createdAt            DateTime      @default(now()) @map("created_at")
   updatedAt            DateTime      @updatedAt @map("updated_at")
 
   user                User                @relation(fields: [userId], references: [id])
   store               Store               @relation(fields: [storeId], references: [id])
+  subscription        Subscription?       @relation(fields: [subscriptionId], references: [id])
   coupon              Coupon?             @relation(fields: [couponId], references: [id])
   deliverySlot        DeliverySlot?       @relation(fields: [deliverySlotId], references: [id])
   deliveryTrip        DeliveryTrip?       @relation(fields: [deliveryTripId], references: [id])
@@ -1187,4 +1227,95 @@ model ReturnRequestItem {
   orderItem     OrderItem     @relation(fields: [orderItemId], references: [id])
 
   @@map("return_request_items")
+}
+
+model Subscription {
+  id                String                @id @default(uuid())
+  userId            String                @map("user_id")
+  storeId           String                @map("store_id")
+  organizationId    String                @map("organization_id")
+  status            SubscriptionStatus    @default(ACTIVE)
+  frequency         SubscriptionFrequency
+  selectedDays      Int[]                 @default([]) @map("selected_days")
+  deliveryAddress   String                @map("delivery_address")
+  deliveryLat       Float?                @map("delivery_lat")
+  deliveryLng       Float?                @map("delivery_lng")
+  deliveryPincode   String?               @map("delivery_pincode")
+  addressId         String?               @map("address_id")
+  nextDeliveryDate  DateTime              @map("next_delivery_date")
+  cutoffTime        String                @default("22:00") @map("cutoff_time")
+  pausedUntil       DateTime?             @map("paused_until")
+  autoPayWithWallet Boolean               @default(true) @map("auto_pay_with_wallet")
+  createdAt         DateTime              @default(now()) @map("created_at")
+  updatedAt         DateTime              @updatedAt @map("updated_at")
+
+  user         User                @relation(fields: [userId], references: [id])
+  store        Store               @relation(fields: [storeId], references: [id])
+  organization Organization        @relation(fields: [organizationId], references: [id])
+  items          SubscriptionItem[]
+  skippedDates   SubscriptionSkip[]
+  orders         Order[]
+  itemOverrides  SubscriptionItemOverride[]
+
+  @@index([userId, storeId, status])
+  @@index([storeId, status, nextDeliveryDate])
+  @@map("subscriptions")
+}
+
+model SubscriptionItem {
+  id             String @id @default(uuid())
+  subscriptionId String @map("subscription_id")
+  storeProductId String @map("store_product_id")
+  quantity       Int
+
+  subscription Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+  storeProduct StoreProduct @relation(fields: [storeProductId], references: [id])
+
+  @@unique([subscriptionId, storeProductId])
+  @@map("subscription_items")
+}
+
+model SubscriptionSkip {
+  id             String   @id @default(uuid())
+  subscriptionId String   @map("subscription_id")
+  date           DateTime
+  reason         String?
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  subscription Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+
+  @@unique([subscriptionId, date])
+  @@map("subscription_skips")
+}
+
+model SubscriptionItemOverride {
+  id             String   @id @default(uuid())
+  subscriptionId String   @map("subscription_id")
+  storeProductId String   @map("store_product_id")
+  quantity       Int
+  deliveryDate   DateTime @map("delivery_date")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  subscription Subscription @relation(fields: [subscriptionId], references: [id], onDelete: Cascade)
+  storeProduct StoreProduct @relation(fields: [storeProductId], references: [id])
+
+  @@unique([subscriptionId, storeProductId, deliveryDate])
+  @@map("subscription_item_overrides")
+}
+
+model BasketAddOn {
+  id             String   @id @default(uuid())
+  userId         String   @map("user_id")
+  storeId        String   @map("store_id")
+  storeProductId String   @map("store_product_id")
+  quantity       Int
+  deliveryDate   DateTime @map("delivery_date")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  store        Store        @relation(fields: [storeId], references: [id])
+  storeProduct StoreProduct @relation(fields: [storeProductId], references: [id])
+
+  @@unique([userId, storeId, storeProductId, deliveryDate])
+  @@map("basket_add_ons")
 }

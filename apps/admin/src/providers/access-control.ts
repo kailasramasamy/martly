@@ -113,9 +113,9 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false, reason: "Access denied" };
     }
 
-    // Delivery Board: ORG_ADMIN, STORE_MANAGER, STAFF
+    // Delivery Board: ORG_ADMIN, STORE_MANAGER, STAFF, RIDER
     if (resource === "delivery-board") {
-      if (["ORG_ADMIN", "STORE_MANAGER", "STAFF"].includes(role)) return { can: true };
+      if (["ORG_ADMIN", "STORE_MANAGER", "STAFF", "RIDER"].includes(role)) return { can: true };
       return { can: false, reason: "Access denied" };
     }
 
@@ -179,6 +179,12 @@ export const accessControlProvider: AccessControlProvider = {
     if (resource === "membership-plans" || resource === "membership-subscribers") {
       if (role === "ORG_ADMIN") return { can: true };
       return { can: false, reason: "Only Super Admin or Org Admin can manage memberships" };
+    }
+
+    // Subscriptions: ORG_ADMIN full access
+    if (resource === "subscription-config" || resource === "subscriptions") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage subscriptions" };
     }
 
     // Everything else: allow

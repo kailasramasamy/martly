@@ -3,11 +3,47 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useCart } from "../lib/cart-context";
+import { useBasketMode } from "../lib/basket-mode-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 
 export function FloatingCart() {
   const { itemCount, totalAmount, storeName } = useCart();
+  const { isBasketMode, itemCount: basketItemCount, exitBasketMode } = useBasketMode();
   const insets = useSafeAreaInsets();
+
+  // Basket mode bar takes priority
+  if (isBasketMode) {
+    return (
+      <View style={[styles.wrapper, { paddingBottom: Math.max(12, insets.bottom + 8) }]}>
+        <TouchableOpacity
+          style={styles.bar}
+          activeOpacity={0.9}
+          onPress={() => {
+            exitBasketMode();
+            router.push("/tomorrows-basket");
+          }}
+        >
+          <View style={styles.left}>
+            <View style={styles.basketIcon}>
+              <Ionicons name="basket" size={18} color="#fff" />
+            </View>
+            <View style={styles.info}>
+              <Text style={styles.storeName} numberOfLines={1}>Adding to tomorrow's basket</Text>
+              {basketItemCount > 0 && (
+                <Text style={styles.basketCount}>
+                  {basketItemCount} item{basketItemCount !== 1 ? "s" : ""} added
+                </Text>
+              )}
+            </View>
+          </View>
+          <View style={styles.right}>
+            <Text style={styles.viewCart}>View Basket</Text>
+            <Ionicons name="arrow-forward" size={16} color="#fff" />
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 
   if (itemCount === 0) return null;
 
@@ -24,7 +60,7 @@ export function FloatingCart() {
           </View>
           <View style={styles.info}>
             <Text style={styles.storeName} numberOfLines={1}>{storeName}</Text>
-            <Text style={styles.total}>₹{totalAmount.toFixed(0)}</Text>
+            <Text style={styles.total}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
           </View>
         </View>
         <View style={styles.right}>
@@ -76,6 +112,14 @@ const styles = StyleSheet.create({
     fontWeight: "800",
     color: colors.primary,
   },
+  basketIcon: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: "rgba(255,255,255,0.2)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   info: {
     marginLeft: 10,
     flex: 1,
@@ -88,6 +132,11 @@ const styles = StyleSheet.create({
   total: {
     fontSize: fontSize.lg,
     fontWeight: "800",
+    color: "#fff",
+  },
+  basketCount: {
+    fontSize: fontSize.sm,
+    fontWeight: "700",
     color: "#fff",
   },
   right: {

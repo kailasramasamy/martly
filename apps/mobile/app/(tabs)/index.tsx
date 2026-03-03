@@ -25,9 +25,12 @@ import { useNotifications } from "../../lib/notification-context";
 import { useCart } from "../../lib/cart-context";
 import { useWishlist } from "../../lib/wishlist-context";
 import { useAuth } from "../../lib/auth-context";
+import { useBasketMode } from "../../lib/basket-mode-context";
+import { useToast } from "../../lib/toast-context";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { FeaturedProductCard } from "../../components/FeaturedProductCard";
+import { FloatingCart } from "../../components/FloatingCart";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
 import type { Store, StoreProduct, HomeFeed, Banner } from "../../lib/types";
@@ -57,6 +60,8 @@ export default function HomeScreen() {
   const { wishlistedIds, isWishlisted, toggle: toggleWishlist } = useWishlist();
   const { user } = useAuth();
   const { isMember } = useMembership();
+  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
+  const toast = useToast();
 
   const [homeFeed, setHomeFeed] = useState<HomeFeed | null>(null);
   const [loadingFeed, setLoadingFeed] = useState(false);
@@ -65,6 +70,7 @@ export default function HomeScreen() {
   const [refreshing, setRefreshing] = useState(false);
   const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
   const [memberStatus, setMemberStatus] = useState<{ isMember: boolean; membership: { planName: string; endDate: string; daysLeft: number } | null } | null>(null);
+  const [hasSubscriptions, setHasSubscriptions] = useState(false);
   const { unreadCount } = useNotifications();
 
   const fetchHomeFeed = useCallback(() => {
@@ -88,6 +94,15 @@ export default function HomeScreen() {
         setMemberStatus({ isMember: res.data.isMember, membership: m ? { ...m, daysLeft } : null });
       })
       .catch(() => setMemberStatus(null));
+    // Check for active subscriptions (only if store has subscriptions enabled)
+    if (selectedStore.subscriptionEnabled) {
+      api
+        .getList<{ id: string }>(`/api/v1/subscriptions?storeId=${selectedStore.id}`)
+        .then((res) => setHasSubscriptions(res.data.length > 0))
+        .catch(() => setHasSubscriptions(false));
+    } else {
+      setHasSubscriptions(false);
+    }
   }, [selectedStore]);
 
   useEffect(() => {
@@ -100,13 +115,15 @@ export default function HomeScreen() {
     setTimeout(() => setRefreshing(false), 600);
   }, [fetchHomeFeed]);
 
-  const cartQuantityMap = useMemo(() => {
+  const rawCartQtyMap = useMemo(() => {
     const map = new Map<string, number>();
     for (const item of cartItems) {
       map.set(item.storeProductId, item.quantity);
     }
     return map;
   }, [cartItems]);
+
+  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
 
 
   const filteredStores = useMemo(() => {
@@ -192,6 +209,12 @@ export default function HomeScreen() {
     (sp: StoreProduct) => {
       if (!selectedStore) return;
 
+      if (isBasketMode) {
+        addBasketItem(sp.id);
+        toast.show("Added to tomorrow's basket", "success");
+        return;
+      }
+
       const item = {
         storeProductId: sp.id,
         productId: sp.product.id,
@@ -211,7 +234,7 @@ export default function HomeScreen() {
 
       addItem(selectedStore.id, selectedStore.name, item);
     },
-    [selectedStore, cartStoreId, addItem, isMember],
+    [selectedStore, cartStoreId, addItem, isMember, isBasketMode, addBasketItem, toast],
   );
 
   const handleCategoryPress = useCallback(
@@ -230,6 +253,17 @@ export default function HomeScreen() {
     [setSelectedStore],
   );
 
+  const effectiveUpdateQty = useCallback(
+    (spId: string, qty: number) => {
+      if (isBasketMode) {
+        updateBasketQuantity(spId, qty);
+        return;
+      }
+      updateQuantity(spId, qty);
+    },
+    [isBasketMode, updateBasketQuantity, updateQuantity],
+  );
+
   const renderProductList = useCallback(
     (products: StoreProduct[]) => (
       <FlatList
@@ -242,13 +276,13 @@ export default function HomeScreen() {
           const vc = (item as any).variantCount ?? 1;
           // For multi-variant: show total qty across all variants; for single: show base qty
           const qty = vc > 1
-            ? (productQuantityMap.get(item.product.id) ?? 0)
+            ? (isBasketMode ? 0 : (productQuantityMap.get(item.product.id) ?? 0))
             : (cartQuantityMap.get(item.id) ?? 0);
           return (
             <FeaturedProductCard
               item={item}
               onAddToCart={handleAddToCart}
-              onUpdateQuantity={updateQuantity}
+              onUpdateQuantity={effectiveUpdateQty}
               quantity={qty}
               storeId={selectedStore?.id}
               variantCount={vc}
@@ -265,7 +299,7 @@ export default function HomeScreen() {
         }}
       />
     ),
-    [handleAddToCart, updateQuantity, cartQuantityMap, productQuantityMap, selectedStore, wishlistedIds],
+    [handleAddToCart, effectiveUpdateQty, cartQuantityMap, productQuantityMap, selectedStore, wishlistedIds, isBasketMode],
   );
 
   if (storesLoading) return <HomeScreenSkeleton />;
@@ -366,6 +400,29 @@ export default function HomeScreen() {
                   <Text style={styles.martPlusSub}>Free delivery, member prices & bonus loyalty</Text>
                 </View>
               )}
+              <Ionicons name="chevron-forward" size={16} color="rgba(255,255,255,0.7)" />
+            </LinearGradient>
+          </TouchableOpacity>
+        )}
+
+        {/* ── Tomorrow's Basket Banner ── */}
+        {selectedStore && hasSubscriptions && (
+          <TouchableOpacity
+            style={styles.basketBannerWrap}
+            onPress={() => router.push("/tomorrows-basket")}
+            activeOpacity={0.85}
+          >
+            <LinearGradient
+              colors={["#0d9488", "#14b8a6"]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
+              style={styles.martPlusBanner}
+            >
+              <Ionicons name="basket" size={20} color="#fff" />
+              <View style={styles.martPlusContent}>
+                <Text style={styles.martPlusTitle}>Tomorrow's Basket</Text>
+                <Text style={styles.martPlusSub}>Review & customize your subscription delivery</Text>
+              </View>
               <Ionicons name="chevron-forward" size={16} color="rgba(255,255,255,0.7)" />
             </LinearGradient>
           </TouchableOpacity>
@@ -612,6 +669,9 @@ export default function HomeScreen() {
 
         <View style={{ height: 32 }} />
       </ScrollView>
+
+      {/* ── Basket Mode Floating Bar ── */}
+      {isBasketMode && <FloatingCart />}
 
       {/* ── Speed-Dial FAB ── */}
       {selectedStore && <SpeedDialFAB />}
@@ -1008,6 +1068,10 @@ const styles = StyleSheet.create({
     marginTop: 1,
   },
   // ── Mart Plus Banner ──
+  basketBannerWrap: {
+    paddingHorizontal: H_PADDING,
+    paddingTop: 8,
+  },
   martPlusWrap: {
     paddingHorizontal: H_PADDING,
     paddingTop: 12,

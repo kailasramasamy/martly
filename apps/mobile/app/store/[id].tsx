@@ -5,6 +5,8 @@ import { api } from "../../lib/api";
 import { useCart } from "../../lib/cart-context";
 import { useWishlist } from "../../lib/wishlist-context";
 import { useMembership, getBestPrice } from "../../lib/membership-context";
+import { useBasketMode } from "../../lib/basket-mode-context";
+import { useToast } from "../../lib/toast-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../../components/ProductGridCard";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
@@ -21,6 +23,8 @@ export default function StoreDetailScreen() {
   const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
   const { isWishlisted, toggle: toggleWishlist } = useWishlist();
   const { isMember } = useMembership();
+  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
+  const toast = useToast();
   const [filterText, setFilterText] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [sheetVisible, setSheetVisible] = useState(false);
@@ -37,13 +41,15 @@ export default function StoreDetailScreen() {
     return Array.from(catMap.entries()).map(([cid, name]) => ({ id: cid, name }));
   }, [products]);
 
-  const cartQuantityMap = useMemo(() => {
+  const rawCartQtyMap = useMemo(() => {
     const map = new Map<string, number>();
     for (const item of cartItems) {
       map.set(item.storeProductId, item.quantity);
     }
     return map;
   }, [cartItems]);
+
+  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
 
   // Group products by product.id — pick cheapest as primary, store all variants
   const { groupedProducts, variantsByProductId } = useMemo(() => {
@@ -102,6 +108,12 @@ export default function StoreDetailScreen() {
   const handleAddToCart = (sp: StoreProduct) => {
     if (!store || !id) return;
 
+    if (isBasketMode) {
+      addBasketItem(sp.id);
+      toast.show("Added to tomorrow's basket", "success");
+      return;
+    }
+
     const item = {
       storeProductId: sp.id,
       productId: sp.product.id,
@@ -121,6 +133,17 @@ export default function StoreDetailScreen() {
 
     addItem(id, store.name, item);
   };
+
+  const effectiveUpdateQty = useCallback(
+    (spId: string, qty: number) => {
+      if (isBasketMode) {
+        updateBasketQuantity(spId, qty);
+        return;
+      }
+      updateQuantity(spId, qty);
+    },
+    [isBasketMode, updateBasketQuantity, updateQuantity],
+  );
 
   if (loading) {
     return (
@@ -185,7 +208,7 @@ export default function StoreDetailScreen() {
             <ProductGridCard
               item={item}
               onAddToCart={handleAddToCart}
-              onUpdateQuantity={updateQuantity}
+              onUpdateQuantity={effectiveUpdateQty}
               quantity={cartQuantityMap.get(item.id) ?? 0}
               storeId={id}
               variantCount={variants?.length ?? 1}
@@ -204,7 +227,7 @@ export default function StoreDetailScreen() {
         onClose={() => setSheetVisible(false)}
         variants={sheetVariants}
         onAddToCart={handleAddToCart}
-        onUpdateQuantity={updateQuantity}
+        onUpdateQuantity={effectiveUpdateQty}
         cartQuantityMap={cartQuantityMap}
         isMember={isMember}
       />

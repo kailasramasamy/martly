@@ -34,6 +34,7 @@ const ROLE_COLORS: Record<string, string> = {
   ORG_ADMIN: "blue",
   STORE_MANAGER: "green",
   STAFF: "orange",
+  RIDER: "cyan",
 };
 
 export const StoreShow = () => {

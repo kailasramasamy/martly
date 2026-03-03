@@ -59,6 +59,10 @@ export function resolveNotificationDeepLink(
         return "/(tabs)/categories" as Href;
       case "smart-reorder":
         return "/smart-reorder" as Href;
+      case "subscriptions":
+        return "/subscriptions" as Href;
+      case "tomorrows-basket":
+        return "/tomorrows-basket" as Href;
     }
   }
 

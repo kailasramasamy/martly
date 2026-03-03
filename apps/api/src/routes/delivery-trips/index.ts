@@ -6,7 +6,7 @@ import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
 import { broadcastOrderUpdate } from "../../services/order-broadcast.js";
 
-const staffAuth = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF")];
+const staffAuth = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN", "STORE_MANAGER", "STAFF", "RIDER")];
 
 export async function deliveryTripRoutes(app: FastifyInstance) {
   // List riders (staff assigned to a store)

@@ -1,5 +1,6 @@
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Tag, Form, Input, Space, Typography } from "antd";
+import { useGetIdentity } from "@refinedev/core";
+import { Table, Tag, Form, Input, Select, Space, Typography } from "antd";
 import type { HttpError } from "@refinedev/core";
 
 const { Text } = Typography;
@@ -9,8 +10,27 @@ const ROLE_COLORS: Record<string, string> = {
   ORG_ADMIN: "blue",
   STORE_MANAGER: "green",
   STAFF: "orange",
+  RIDER: "cyan",
   CUSTOMER: "default",
 };
+
+const ROLE_OPTIONS = [
+  { label: "All Roles", value: "" },
+  { label: "Super Admin", value: "SUPER_ADMIN" },
+  { label: "Org Admin", value: "ORG_ADMIN" },
+  { label: "Store Manager", value: "STORE_MANAGER" },
+  { label: "Staff", value: "STAFF" },
+  { label: "Rider", value: "RIDER" },
+  { label: "Customer", value: "CUSTOMER" },
+];
+
+const ORG_ROLE_OPTIONS = [
+  { label: "All Roles", value: "" },
+  { label: "Store Manager", value: "STORE_MANAGER" },
+  { label: "Staff", value: "STAFF" },
+  { label: "Rider", value: "RIDER" },
+  { label: "Customer", value: "CUSTOMER" },
+];
 
 interface StoreInfo {
   store: { id: string; name: string; organization: { id: string; name: string } };
@@ -23,6 +43,10 @@ interface UserRecord {
   phone?: string;
   role: string;
   userStores?: StoreInfo[];
+}
+
+interface Identity {
+  role: string;
 }
 
 function getOrgNames(record: UserRecord): string[] {
@@ -45,23 +69,39 @@ function getStoreNames(record: UserRecord): string[] {
 }
 
 export const UserList = () => {
+  const { data: identity } = useGetIdentity<Identity>();
+  const isSuperAdmin = identity?.role === "SUPER_ADMIN";
+  const roleOptions = isSuperAdmin ? ROLE_OPTIONS : ORG_ROLE_OPTIONS;
+
   const { tableProps, searchFormProps } = useTable<
     UserRecord,
     HttpError,
-    { q: string }
+    { q: string; role: string }
   >({
     resource: "users",
-    onSearch: (values) => [{ field: "q", operator: "contains", value: values.q }],
+    onSearch: (values) => [
+      { field: "q", operator: "contains", value: values.q },
+      { field: "role", operator: "eq", value: values.role },
+    ],
   });
 
   return (
     <List>
-      <Form {...searchFormProps} layout="inline" style={{ marginBottom: 16 }}>
+      <Form {...searchFormProps} layout="inline" style={{ marginBottom: 16, gap: 8 }}>
         <Form.Item name="q" noStyle>
           <Input.Search placeholder="Search users..." allowClear onSearch={searchFormProps.form?.submit} style={{ width: 300 }} />
         </Form.Item>
+        <Form.Item name="role" noStyle>
+          <Select
+            placeholder="Filter by role"
+            allowClear
+            options={roleOptions}
+            onChange={searchFormProps.form?.submit}
+            style={{ width: 180 }}
+          />
+        </Form.Item>
       </Form>
-      <Table {...tableProps} rowKey="id">
+      <Table {...tableProps} rowKey="id" size="small">
         <Table.Column dataIndex="name" title="Name" />
         <Table.Column dataIndex="email" title="Email" />
         <Table.Column

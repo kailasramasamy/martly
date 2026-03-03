@@ -58,22 +58,33 @@ export async function userRoutes(app: FastifyInstance) {
         return response;
       }
 
-      // ORG_ADMIN: users who have UserStore entries in their org's stores
+      // ORG_ADMIN: scoped to their organization
       const orgId = user.organizationId;
       if (!orgId) return { success: true, data: [], meta: { total: 0, page: 1, pageSize: 20, totalPages: 0 } };
 
-      // Find distinct user IDs in this org's stores
-      const orgUserStores = await app.prisma.userStore.findMany({
-        where: { store: { organizationId: orgId } },
-        select: { userId: true },
-        distinct: ["userId"],
-      });
-      const orgUserIds = orgUserStores.map((us: { userId: string }) => us.userId);
+      const where: Record<string, unknown> = {};
 
-      const where: Record<string, unknown> = {
-        id: { in: orgUserIds },
-        role: { not: "SUPER_ADMIN" },
-      };
+      if (roleFilter === "CUSTOMER") {
+        // Customers are found via orders placed at this org's stores
+        const orgOrders = await app.prisma.order.findMany({
+          where: { store: { organizationId: orgId } },
+          select: { userId: true },
+          distinct: ["userId"],
+        });
+        const customerIds = orgOrders.map((o: { userId: string }) => o.userId);
+        where.id = { in: customerIds };
+        where.role = "CUSTOMER";
+      } else {
+        // Staff users via UserStore entries
+        const orgUserStores = await app.prisma.userStore.findMany({
+          where: { store: { organizationId: orgId } },
+          select: { userId: true },
+          distinct: ["userId"],
+        });
+        const orgUserIds = orgUserStores.map((us: { userId: string }) => us.userId);
+        where.id = { in: orgUserIds };
+        where.role = roleFilter ? roleFilter : { not: "SUPER_ADMIN" };
+      }
       if (q) {
         where.OR = [
           { name: { contains: q, mode: "insensitive" } },
@@ -118,11 +129,17 @@ export async function userRoutes(app: FastifyInstance) {
 
       const user = getOrgUser(request);
       if (user.role !== "SUPER_ADMIN") {
-        // ORG_ADMIN: verify user belongs to their org
+        // ORG_ADMIN: verify user belongs to their org via UserStore or has ordered from their stores
         const membership = await app.prisma.userStore.findFirst({
           where: { userId: targetUser.id, store: { organizationId: user.organizationId } },
         });
-        if (!membership) return reply.forbidden("Access denied");
+        if (!membership) {
+          const hasOrdered = await app.prisma.order.findFirst({
+            where: { userId: targetUser.id, store: { organizationId: user.organizationId } },
+            select: { id: true },
+          });
+          if (!hasOrdered) return reply.forbidden("Access denied");
+        }
       }
 
       const response: ApiResponse<typeof targetUser> = { success: true, data: targetUser };
@@ -138,10 +155,10 @@ export async function userRoutes(app: FastifyInstance) {
       const body = createUserSchema.parse(request.body);
       const user = getOrgUser(request);
 
-      // ORG_ADMIN can only create STORE_MANAGER or STAFF
+      // ORG_ADMIN can only create STORE_MANAGER, STAFF, or RIDER
       if (user.role === "ORG_ADMIN") {
-        if (body.role !== "STORE_MANAGER" && body.role !== "STAFF") {
-          return reply.forbidden("Org Admin can only create Store Manager or Staff users");
+        if (body.role !== "STORE_MANAGER" && body.role !== "STAFF" && body.role !== "RIDER") {
+          return reply.forbidden("Org Admin can only create Store Manager, Staff, or Rider users");
         }
       }
 
@@ -187,9 +204,9 @@ export async function userRoutes(app: FastifyInstance) {
         });
         if (!membership) return reply.forbidden("Access denied");
 
-        // Can only set role to STORE_MANAGER or STAFF
-        if (role && role !== "STORE_MANAGER" && role !== "STAFF") {
-          return reply.forbidden("Org Admin can only assign Store Manager or Staff roles");
+        // Can only set role to STORE_MANAGER, STAFF, or RIDER
+        if (role && role !== "STORE_MANAGER" && role !== "STAFF" && role !== "RIDER") {
+          return reply.forbidden("Org Admin can only assign Store Manager, Staff, or Rider roles");
         }
 
         // ORG_ADMIN cannot change email or password

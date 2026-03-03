@@ -47,7 +47,7 @@ async function main() {
         email: rider.email,
         phone: rider.phone,
         passwordHash,
-        role: "STAFF",
+        role: "RIDER",
       },
     });
 

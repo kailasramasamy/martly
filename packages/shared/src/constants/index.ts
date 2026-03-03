@@ -3,6 +3,7 @@ export const UserRole = {
   ORG_ADMIN: "ORG_ADMIN",
   STORE_MANAGER: "STORE_MANAGER",
   STAFF: "STAFF",
+  RIDER: "RIDER",
   CUSTOMER: "CUSTOMER",
 } as const;
 export type UserRole = (typeof UserRole)[keyof typeof UserRole];
@@ -401,3 +402,48 @@ export const RETURN_REASONS = [
 ] as const;
 
 export const RETURN_WINDOW_HOURS = 48;
+
+export const SubscriptionStatus = {
+  ACTIVE: "ACTIVE",
+  PAUSED: "PAUSED",
+  CANCELLED: "CANCELLED",
+} as const;
+export type SubscriptionStatus = (typeof SubscriptionStatus)[keyof typeof SubscriptionStatus];
+
+export const SubscriptionStatusLabels: Record<SubscriptionStatus, string> = {
+  ACTIVE: "Active",
+  PAUSED: "Paused",
+  CANCELLED: "Cancelled",
+};
+
+export const SubscriptionFrequency = {
+  DAILY: "DAILY",
+  ALTERNATE_DAYS: "ALTERNATE_DAYS",
+  SPECIFIC_DAYS: "SPECIFIC_DAYS",
+  WEEKLY: "WEEKLY",
+  BIWEEKLY: "BIWEEKLY",
+  MONTHLY: "MONTHLY",
+} as const;
+export type SubscriptionFrequency = (typeof SubscriptionFrequency)[keyof typeof SubscriptionFrequency];
+
+export const SubscriptionFrequencyLabels: Record<SubscriptionFrequency, string> = {
+  DAILY: "Daily",
+  ALTERNATE_DAYS: "Alternate Days",
+  SPECIFIC_DAYS: "Specific Days",
+  WEEKLY: "Weekly",
+  BIWEEKLY: "Every 2 Weeks",
+  MONTHLY: "Monthly",
+};
+
+export const SubscriptionDeliveryMode = {
+  DEDICATED: "DEDICATED",
+  SLOT_BASED: "SLOT_BASED",
+} as const;
+export type SubscriptionDeliveryMode = (typeof SubscriptionDeliveryMode)[keyof typeof SubscriptionDeliveryMode];
+
+export const SubscriptionDeliveryModeLabels: Record<SubscriptionDeliveryMode, string> = {
+  DEDICATED: "Dedicated Window",
+  SLOT_BASED: "Regular Slots",
+};
+
+export const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] as const;

@@ -284,6 +284,18 @@ export default function ProfileScreen() {
             <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
           </TouchableOpacity>
           <View style={{ height: 8 }} />
+          {selectedStore?.subscriptionEnabled && (
+            <>
+              <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/subscriptions")}>
+                <View style={[styles.menuIconWrap, { backgroundColor: "#eff6ff" }]}>
+                  <Ionicons name="calendar-outline" size={18} color="#3b82f6" />
+                </View>
+                <Text style={styles.menuItemText}>My Subscriptions</Text>
+                <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
+              </TouchableOpacity>
+              <View style={{ height: 8 }} />
+            </>
+          )}
           <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/smart-reorder")}>
             <View style={[styles.menuIconWrap, { backgroundColor: "#f0fdf4" }]}>
               <Ionicons name="refresh-circle-outline" size={18} color={colors.primary} />

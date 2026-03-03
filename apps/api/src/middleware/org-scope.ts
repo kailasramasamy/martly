@@ -40,8 +40,8 @@ export async function getOrgStoreIds(
   if (user.role === "SUPER_ADMIN" || user.role === "GUEST" || user.role === "CUSTOMER") return undefined;
   if (!user.organizationId) return [];
 
-  // STORE_MANAGER / STAFF: scoped to assigned stores only
-  if (user.role === "STORE_MANAGER" || user.role === "STAFF") {
+  // STORE_MANAGER / STAFF / RIDER: scoped to assigned stores only
+  if (user.role === "STORE_MANAGER" || user.role === "STAFF" || user.role === "RIDER") {
     const userStores = await prisma.userStore.findMany({
       where: { userId: user.sub },
       select: { storeId: true },
@@ -68,8 +68,8 @@ export async function verifyStoreOrgAccess(
   if (user.role === "SUPER_ADMIN" || user.role === "GUEST" || user.role === "CUSTOMER") return true;
   if (!user.organizationId) return false;
 
-  // STORE_MANAGER / STAFF: must be assigned to this specific store
-  if (user.role === "STORE_MANAGER" || user.role === "STAFF") {
+  // STORE_MANAGER / STAFF / RIDER: must be assigned to this specific store
+  if (user.role === "STORE_MANAGER" || user.role === "STAFF" || user.role === "RIDER") {
     const assignment = await prisma.userStore.findUnique({
       where: { userId_storeId: { userId: user.sub, storeId } },
     });

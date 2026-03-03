@@ -35,6 +35,7 @@ import { WishlistProvider } from "../lib/wishlist-context";
 import { ToastProvider } from "../lib/toast-context";
 import { NotificationProvider } from "../lib/notification-context";
 import { MembershipProvider } from "../lib/membership-context";
+import { BasketModeProvider } from "../lib/basket-mode-context";
 import { addNotificationResponseListener, getLastNotificationResponse } from "../lib/notifications";
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
@@ -165,6 +166,10 @@ function RootLayoutNav() {
         <Stack.Screen name="live-tracking" options={{ headerShown: true, title: "Live Tracking" }} />
         <Stack.Screen name="order-success/[id]" options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="membership" options={{ headerShown: true, title: "Mart Plus" }} />
+        <Stack.Screen name="subscriptions" options={{ headerShown: true, title: "My Subscriptions" }} />
+        <Stack.Screen name="subscription/[id]" options={{ headerShown: true, title: "Subscription" }} />
+        <Stack.Screen name="tomorrows-basket" options={{ headerShown: true, title: "Tomorrow's Basket" }} />
+        <Stack.Screen name="subscription-builder" options={{ headerShown: true, title: "New Subscription" }} />
       </Stack>
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
     </>
@@ -196,6 +201,7 @@ export default function RootLayout() {
           <StoreProvider>
             <MembershipProvider>
             <CartProvider>
+              <BasketModeProvider>
               <ToastProvider>
               <WishlistProvider>
                 <NotificationProvider>
@@ -203,6 +209,7 @@ export default function RootLayout() {
                 </NotificationProvider>
               </WishlistProvider>
               </ToastProvider>
+              </BasketModeProvider>
             </CartProvider>
             </MembershipProvider>
           </StoreProvider>

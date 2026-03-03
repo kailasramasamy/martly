@@ -12,7 +12,7 @@ import { searchProducts } from "../../services/search.js";
 export async function storeRoutes(app: FastifyInstance) {
   // List stores (scoped to user's org; guests see all active stores)
   app.get("/", { preHandler: [authenticateOptional] }, async (request) => {
-    const { page = 1, pageSize = 20, q, organizationId } = request.query as { page?: number; pageSize?: number; q?: string; organizationId?: string };
+    const { page = 1, pageSize = 20, q, organizationId, status } = request.query as { page?: number; pageSize?: number; q?: string; organizationId?: string; status?: string };
     const skip = (Number(page) - 1) * Number(pageSize);
 
     const where: Record<string, unknown> = {};
@@ -24,18 +24,30 @@ export async function storeRoutes(app: FastifyInstance) {
     if (organizationId && getOrgUser(request).role === "SUPER_ADMIN") {
       where.organizationId = organizationId;
     }
+    if (status) {
+      where.status = status;
+    }
     if (q) {
       where.OR = [{ name: { contains: q, mode: "insensitive" as const } }, { address: { contains: q, mode: "insensitive" as const } }];
     }
 
     const [stores, total] = await Promise.all([
-      app.prisma.store.findMany({ where, skip, take: Number(pageSize), orderBy: { createdAt: "desc" } }),
+      app.prisma.store.findMany({
+        where, skip, take: Number(pageSize), orderBy: { createdAt: "desc" },
+        include: { organization: { select: { subscriptionEnabled: true } } },
+      }),
       app.prisma.store.count({ where }),
     ]);
 
-    const response: PaginatedResponse<(typeof stores)[0]> = {
+    // subscriptionEnabled is true only when both org AND store have it enabled
+    const data = stores.map(({ organization, ...store }) => ({
+      ...store,
+      subscriptionEnabled: store.subscriptionEnabled && organization.subscriptionEnabled,
+    }));
+
+    const response: PaginatedResponse<(typeof data)[0]> = {
       success: true,
-      data: stores,
+      data,
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
     return response;
@@ -43,14 +55,23 @@ export async function storeRoutes(app: FastifyInstance) {
 
   // Get store by ID (guests allowed)
   app.get<{ Params: { id: string } }>("/:id", { preHandler: [authenticateOptional] }, async (request, reply) => {
-    const store = await app.prisma.store.findUnique({ where: { id: request.params.id } });
-    if (!store) return reply.notFound("Store not found");
+    const result = await app.prisma.store.findUnique({
+      where: { id: request.params.id },
+      include: { organization: { select: { subscriptionEnabled: true } } },
+    });
+    if (!result) return reply.notFound("Store not found");
 
-    if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) {
+    if (!(await verifyStoreOrgAccess(request, app.prisma, result.id))) {
       return reply.forbidden("Access denied");
     }
 
-    const response: ApiResponse<typeof store> = { success: true, data: store };
+    const { organization, ...store } = result;
+    const data = {
+      ...store,
+      subscriptionEnabled: store.subscriptionEnabled && organization.subscriptionEnabled,
+    };
+
+    const response: ApiResponse<typeof data> = { success: true, data };
     return response;
   });
 
@@ -76,11 +97,13 @@ export async function storeRoutes(app: FastifyInstance) {
         latitude: { not: null },
         longitude: { not: null },
       },
+      include: { organization: { select: { subscriptionEnabled: true } } },
     });
 
     const nearbyStores = stores
-      .map((store) => ({
+      .map(({ organization, ...store }) => ({
         ...store,
+        subscriptionEnabled: store.subscriptionEnabled && organization.subscriptionEnabled,
         distance: haversine(userLat, userLng, store.latitude!, store.longitude!),
       }))
       .filter((s) => s.distance <= maxRadius)
@@ -592,10 +615,10 @@ export async function storeRoutes(app: FastifyInstance) {
       const targetUser = await app.prisma.user.findUnique({ where: { id: userId } });
       if (!targetUser) return reply.notFound("User not found");
 
-      // Only allow assigning STORE_MANAGER or STAFF
+      // Only allow assigning STORE_MANAGER, STAFF, or RIDER
       const assignRole = role || targetUser.role;
-      if (assignRole !== "STORE_MANAGER" && assignRole !== "STAFF" && assignRole !== "ORG_ADMIN") {
-        return reply.badRequest("Can only assign ORG_ADMIN, STORE_MANAGER, or STAFF to stores");
+      if (assignRole !== "STORE_MANAGER" && assignRole !== "STAFF" && assignRole !== "RIDER" && assignRole !== "ORG_ADMIN") {
+        return reply.badRequest("Can only assign ORG_ADMIN, STORE_MANAGER, STAFF, or RIDER to stores");
       }
 
       // Check if already assigned
@@ -608,7 +631,7 @@ export async function storeRoutes(app: FastifyInstance) {
         data: {
           userId,
           storeId: request.params.id,
-          role: assignRole as "STORE_MANAGER" | "STAFF" | "ORG_ADMIN",
+          role: assignRole as "STORE_MANAGER" | "STAFF" | "RIDER" | "ORG_ADMIN",
         },
         include: {
           user: { select: { id: true, email: true, name: true, phone: true, role: true } },

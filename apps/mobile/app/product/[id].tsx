@@ -20,6 +20,8 @@ import { useStore } from "../../lib/store-context";
 import { useWishlist } from "../../lib/wishlist-context";
 import { useAuth } from "../../lib/auth-context";
 import { useMembership, getBestPrice } from "../../lib/membership-context";
+import { useToast } from "../../lib/toast-context";
+import { useBasketMode } from "../../lib/basket-mode-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { FeaturedProductCard } from "../../components/FeaturedProductCard";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
@@ -41,6 +43,8 @@ export default function ProductDetailScreen() {
   const { isWishlisted, toggle: toggleWishlist } = useWishlist();
   const { isAuthenticated } = useAuth();
   const { isMember } = useMembership();
+  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
+  const toast = useToast();
 
   const navigation = useNavigation();
   const router = useRouter();
@@ -79,15 +83,18 @@ export default function ProductDetailScreen() {
 
   const [sheetVisible, setSheetVisible] = useState(false);
   const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
+  const [sheetMode, setSheetMode] = useState<"cart" | "subscribe">("cart");
   const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
 
-  const cartQuantityMap = useMemo(() => {
+  const rawCartQtyMap = useMemo(() => {
     const map = new Map<string, number>();
     for (const item of cartItems) {
       map.set(item.storeProductId, item.quantity);
     }
     return map;
   }, [cartItems]);
+
+  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
 
   // Group related products by product.id — pick cheapest as primary
   const { groupedRelated, relatedVariantsMap } = useMemo(() => {
@@ -118,6 +125,7 @@ export default function ProductDetailScreen() {
     (productId: string) => {
       const variants = relatedVariantsMap.get(productId);
       if (variants) {
+        setSheetMode("cart");
         setSheetVariants(variants);
         setSheetVisible(true);
       }
@@ -191,6 +199,12 @@ export default function ProductDetailScreen() {
   const handleAddToCart = (sp: StoreProduct) => {
     if (!storeId) return;
 
+    if (isBasketMode) {
+      addBasketItem(sp.id);
+      toast.show("Added to tomorrow's basket", "success");
+      return;
+    }
+
     const item = {
       storeProductId: sp.id,
       productId: sp.product.id,
@@ -210,6 +224,17 @@ export default function ProductDetailScreen() {
 
     addItem(storeId, storeName, item);
   };
+
+  const effectiveUpdateQty = useCallback(
+    (spId: string, qty: number) => {
+      if (isBasketMode) {
+        updateBasketQuantity(spId, qty);
+        return;
+      }
+      updateQuantity(spId, qty);
+    },
+    [isBasketMode, updateBasketQuantity, updateQuantity],
+  );
 
   const onImageScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
     const idx = Math.round(e.nativeEvent.contentOffset.x / SCREEN_WIDTH);
@@ -365,9 +390,6 @@ export default function ProductDetailScreen() {
                 <View key={sp.id} style={styles.variantCard}>
                   <View style={styles.variantInfo}>
                     <Text style={styles.variantName}>{sp.variant.name}</Text>
-                    <Text style={styles.variantUnit}>
-                      {sp.variant.unitType} {sp.variant.unitValue}
-                    </Text>
                     <View style={styles.priceRow}>
                       {originalPrice != null && (
                         <Text style={styles.mrpPrice}>₹{originalPrice.toFixed(2)}</Text>
@@ -383,7 +405,7 @@ export default function ProductDetailScreen() {
                     <View style={styles.variantQtyStepper}>
                       <TouchableOpacity
                         style={styles.variantQtyBtn}
-                        onPress={() => updateQuantity(sp.id, (cartQuantityMap.get(sp.id) ?? 0) - 1)}
+                        onPress={() => effectiveUpdateQty(sp.id, (cartQuantityMap.get(sp.id) ?? 0) - 1)}
                         hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                       >
                         <Ionicons name={(cartQuantityMap.get(sp.id) ?? 0) === 1 ? "trash-outline" : "remove"} size={16} color={colors.primary} />
@@ -414,6 +436,33 @@ export default function ProductDetailScreen() {
           </View>
         )}
 
+        {/* Subscribe & Save */}
+        {isAuthenticated && selectedStore?.subscriptionEnabled && storeProducts.some((sp) => (sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0))) > 0) && (
+          <TouchableOpacity
+            style={styles.subscribeBanner}
+            activeOpacity={0.8}
+            onPress={() => {
+              const inStock = storeProducts.filter((sp) => (sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0))) > 0);
+              if (inStock.length === 1) {
+                router.push({ pathname: "/subscription-builder", params: { storeProductId: inStock[0].id, productId: id } });
+              } else if (inStock.length > 1) {
+                setSheetMode("subscribe");
+                setSheetVariants(inStock);
+                setSheetVisible(true);
+              }
+            }}
+          >
+            <View style={styles.subscribeBannerIcon}>
+              <Ionicons name="repeat" size={22} color="#fff" />
+            </View>
+            <View style={styles.subscribeBannerContent}>
+              <Text style={styles.subscribeBannerTitle}>Subscribe & Save</Text>
+              <Text style={styles.subscribeBannerDesc}>Get regular deliveries — daily, weekly, or monthly</Text>
+            </View>
+            <Ionicons name="chevron-forward" size={20} color={colors.primary} />
+          </TouchableOpacity>
+        )}
+
         {/* Frequently Bought Together */}
         {frequentlyBought.length > 0 && (
           <View style={styles.section}>
@@ -428,7 +477,7 @@ export default function ProductDetailScreen() {
                 <FeaturedProductCard
                   item={item}
                   onAddToCart={handleAddToCart}
-                  onUpdateQuantity={updateQuantity}
+                  onUpdateQuantity={effectiveUpdateQty}
                   quantity={cartQuantityMap.get(item.id) ?? 0}
                   storeId={storeId}
                   variantCount={1}
@@ -454,7 +503,7 @@ export default function ProductDetailScreen() {
                 <FeaturedProductCard
                   item={item}
                   onAddToCart={handleAddToCart}
-                  onUpdateQuantity={updateQuantity}
+                  onUpdateQuantity={effectiveUpdateQty}
                   quantity={cartQuantityMap.get(item.id) ?? 0}
                   storeId={storeId}
                   variantCount={1}
@@ -660,7 +709,7 @@ export default function ProductDetailScreen() {
                   <FeaturedProductCard
                     item={item}
                     onAddToCart={handleAddToCart}
-                    onUpdateQuantity={updateQuantity}
+                    onUpdateQuantity={effectiveUpdateQty}
                     quantity={cartQuantityMap.get(item.id) ?? 0}
                     storeId={storeId}
                     variantCount={variants?.length ?? 1}
@@ -681,9 +730,14 @@ export default function ProductDetailScreen() {
       onClose={() => setSheetVisible(false)}
       variants={sheetVariants}
       onAddToCart={handleAddToCart}
-      onUpdateQuantity={updateQuantity}
+      onUpdateQuantity={effectiveUpdateQty}
       cartQuantityMap={cartQuantityMap}
       isMember={isMember}
+      mode={sheetMode}
+      onSelect={(sp) => {
+        setSheetVisible(false);
+        router.push({ pathname: "/subscription-builder", params: { storeProductId: sp.id, productId: id } });
+      }}
     />
     <ConfirmSheet
       visible={replaceCartConfirm !== null}
@@ -778,6 +832,38 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     paddingVertical: spacing.sm,
     paddingHorizontal: spacing.md,
+  },
+  subscribeBanner: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: colors.primary + "0C",
+    borderWidth: 1.5,
+    borderColor: colors.primary + "30",
+    borderRadius: 12,
+    padding: spacing.md,
+    marginTop: spacing.lg,
+    gap: spacing.sm,
+  },
+  subscribeBannerIcon: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: colors.primary,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  subscribeBannerContent: {
+    flex: 1,
+  },
+  subscribeBannerTitle: {
+    fontSize: fontSize.lg,
+    fontWeight: "700",
+    color: colors.primary,
+  },
+  subscribeBannerDesc: {
+    fontSize: fontSize.sm,
+    color: colors.textSecondary,
+    marginTop: 1,
   },
   disabledBtn: { backgroundColor: colors.border },
   variantAddText: { color: "#fff", fontSize: fontSize.sm, fontWeight: "600" },
