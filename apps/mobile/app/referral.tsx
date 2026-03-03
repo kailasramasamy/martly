@@ -169,7 +169,7 @@ export default function ReferralScreen() {
           <View style={styles.appliedRow}>
             <Ionicons name="checkmark-circle" size={20} color="#16a34a" />
             <Text style={styles.appliedText}>
-              Referred by <Text style={{ fontFamily: "PlusJakartaSans-SemiBold" }}>{data.appliedReferral.referrerName}</Text>
+              Referred by <Text style={{ fontFamily: "Manrope-SemiBold" }}>{data.appliedReferral.referrerName}</Text>
             </Text>
           </View>
           <Text style={styles.appliedSub}>
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
   },
   codeTitle: {
     fontSize: fontSize.subtitle,
-    fontFamily: "PlusJakartaSans-SemiBold",
+    fontFamily: "Manrope-SemiBold",
     color: colors.text,
   },
   codeSubtitle: {
@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
   },
   codeText: {
     fontSize: 22,
-    fontFamily: "PlusJakartaSans-Bold",
+    fontFamily: "Manrope-Bold",
     color: colors.primary,
     letterSpacing: 3,
   },
@@ -313,7 +313,7 @@ const styles = StyleSheet.create({
   },
   actionBtnText: {
     fontSize: fontSize.sm,
-    fontFamily: "PlusJakartaSans-SemiBold",
+    fontFamily: "Manrope-SemiBold",
     color: colors.primary,
   },
   section: {
@@ -322,7 +322,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: fontSize.body,
-    fontFamily: "PlusJakartaSans-SemiBold",
+    fontFamily: "Manrope-SemiBold",
     color: colors.text,
     marginBottom: 8,
   },
@@ -338,7 +338,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingHorizontal: 12,
     fontSize: fontSize.body,
-    fontFamily: "PlusJakartaSans-Regular",
+    fontFamily: "Manrope-Regular",
     color: colors.text,
     backgroundColor: "#fff",
   },
@@ -352,7 +352,7 @@ const styles = StyleSheet.create({
   },
   applyBtnText: {
     fontSize: fontSize.sm,
-    fontFamily: "PlusJakartaSans-SemiBold",
+    fontFamily: "Manrope-SemiBold",
     color: "#fff",
   },
   appliedCard: {
@@ -372,7 +372,7 @@ const styles = StyleSheet.create({
   },
   appliedText: {
     fontSize: fontSize.body,
-    fontFamily: "PlusJakartaSans-Regular",
+    fontFamily: "Manrope-Regular",
     color: "#166534",
   },
   appliedSub: {
@@ -397,7 +397,7 @@ const styles = StyleSheet.create({
   },
   statValue: {
     fontSize: fontSize.title,
-    fontFamily: "PlusJakartaSans-Bold",
+    fontFamily: "Manrope-Bold",
     color: colors.text,
   },
   statLabel: {
@@ -407,7 +407,7 @@ const styles = StyleSheet.create({
   },
   historyTitle: {
     fontSize: fontSize.body,
-    fontFamily: "PlusJakartaSans-SemiBold",
+    fontFamily: "Manrope-SemiBold",
     color: colors.text,
     marginHorizontal: spacing.md,
     marginBottom: 8,
@@ -432,7 +432,7 @@ const styles = StyleSheet.create({
   },
   historyName: {
     fontSize: fontSize.body,
-    fontFamily: "PlusJakartaSans-Medium",
+    fontFamily: "Manrope-Regular",
     color: colors.text,
   },
   historyDate: {
@@ -447,11 +447,11 @@ const styles = StyleSheet.create({
   },
   statusText: {
     fontSize: 11,
-    fontFamily: "PlusJakartaSans-SemiBold",
+    fontFamily: "Manrope-SemiBold",
   },
   rewardText: {
     fontSize: fontSize.sm,
-    fontFamily: "PlusJakartaSans-SemiBold",
+    fontFamily: "Manrope-SemiBold",
     color: "#16a34a",
     marginTop: 4,
   },
@@ -461,7 +461,7 @@ const styles = StyleSheet.create({
   },
   emptyTitle: {
     fontSize: fontSize.body,
-    fontFamily: "PlusJakartaSans-SemiBold",
+    fontFamily: "Manrope-SemiBold",
     color: colors.textSecondary,
     marginTop: 12,
   },

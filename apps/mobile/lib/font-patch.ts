@@ -1,19 +1,19 @@
-// Monkey-patch StyleSheet.create to inject PlusJakartaSans fontFamily into all text styles.
+// Monkey-patch StyleSheet.create to inject Manrope fontFamily into all text styles.
 // On Android, custom fonts don't resolve via fontWeight alone — each weight needs
 // an explicit fontFamily. This file MUST be the first import in the app entry point.
 
 import { StyleSheet } from "react-native";
 
 const WEIGHT_TO_FONT: Record<string, string> = {
-  bold: "PlusJakartaSans-Bold",
-  "700": "PlusJakartaSans-Bold",
-  "600": "PlusJakartaSans-SemiBold",
-  "500": "PlusJakartaSans-Medium",
-  normal: "PlusJakartaSans-Regular",
-  "400": "PlusJakartaSans-Regular",
+  bold: "Manrope-Bold",
+  "700": "Manrope-Bold",
+  "600": "Manrope-SemiBold",
+  "500": "Manrope-Medium",
+  normal: "Manrope-Regular",
+  "400": "Manrope-Regular",
 };
 
-const DEFAULT_FONT = "PlusJakartaSans-Regular";
+const DEFAULT_FONT = "Manrope-Regular";
 
 const origCreate = StyleSheet.create;
 
