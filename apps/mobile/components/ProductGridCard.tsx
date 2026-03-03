@@ -225,13 +225,12 @@ const styles = StyleSheet.create({
   nvFill: { backgroundColor: "#b71c1c" },
   discountTag: {
     position: "absolute",
-    top: 8,
-    right: 0,
+    bottom: 0,
+    left: 0,
     backgroundColor: "#dc2626",
     paddingHorizontal: 6,
     paddingVertical: 2,
-    borderTopLeftRadius: 4,
-    borderBottomLeftRadius: 4,
+    borderTopRightRadius: 4,
   },
   discountText: { fontSize: 9, color: "#fff", fontWeight: "700" },
   heartBtn: {

@@ -130,13 +130,33 @@ export default function CategoryScreen() {
       childDescendants.set(child.id, ids);
     }
 
-    return allChildren.map((child) => {
+    // Collect all descendant category IDs across all children
+    const allDescIds = new Set<string>();
+    for (const ids of childDescendants.values()) {
+      for (const cid of ids) allDescIds.add(cid);
+    }
+
+    const result = allChildren.map((child) => {
       const descIds = childDescendants.get(child.id)!;
-      const count = allProducts.filter(
-        (p) => p.product?.category?.id && descIds.has(p.product.category.id)
-      ).length;
-      return { id: child.id, name: child.name, imageUrl: child.imageUrl ?? null, count };
+      const uniqueProducts = new Set(
+        allProducts
+          .filter((p) => p.product?.category?.id && descIds.has(p.product.category.id))
+          .map((p) => p.product.id)
+      );
+      return { id: child.id, name: child.name, imageUrl: child.imageUrl ?? null, count: uniqueProducts.size };
     });
+
+    // Add "Other" for products not in any subcategory (e.g. assigned to parent category directly)
+    const otherCount = new Set(
+      allProducts
+        .filter((p) => !p.product?.category?.id || !allDescIds.has(p.product.category.id))
+        .map((p) => p.product.id)
+    ).size;
+    if (otherCount > 0) {
+      result.push({ id: "__other__", name: "Other", imageUrl: null, count: otherCount });
+    }
+
+    return result;
   }, [category, allProducts]);
 
   // Build grandchild list (children of the active subcategory) with product counts
@@ -154,16 +174,32 @@ export default function CategoryScreen() {
         }
       };
       collectDesc(gc);
-      const count = allProducts.filter(
-        (p) => p.product?.category?.id && ids.has(p.product.category.id)
-      ).length;
-      return { id: gc.id, name: gc.name, count };
+      const uniqueProducts = new Set(
+        allProducts
+          .filter((p) => p.product?.category?.id && ids.has(p.product.category.id))
+          .map((p) => p.product.id)
+      );
+      return { id: gc.id, name: gc.name, count: uniqueProducts.size };
     });
   }, [activeSub, category, allProducts]);
 
   // Filter products by selected subcategory (and grandchild if active)
   const filteredProducts = useMemo(() => {
     if (!activeSub) return allProducts;
+
+    // "Other" — products not in any real subcategory
+    if (activeSub === "__other__") {
+      const allDescIds = new Set<string>();
+      for (const child of category?.children ?? []) {
+        const collect = (node: CategoryTreeNode) => {
+          allDescIds.add(node.id);
+          for (const c of node.children ?? []) collect(c);
+        };
+        collect(child);
+      }
+      return allProducts.filter((p) => !p.product?.category?.id || !allDescIds.has(p.product.category.id));
+    }
+
     const sub = category?.children?.find((c) => c.id === activeSub);
     if (!sub) return allProducts;
 
@@ -331,7 +367,7 @@ export default function CategoryScreen() {
   }, []);
 
   const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || searchQuery.trim().length > 0;
-  const totalCount = allProducts.length;
+  const totalCount = useMemo(() => new Set(allProducts.map((p) => p.product.id)).size, [allProducts]);
   const hasSidebar = subcategories.length > 0;
 
   const renderTopBanner = () => {
