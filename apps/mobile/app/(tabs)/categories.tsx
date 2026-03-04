@@ -15,6 +15,7 @@ import { api } from "../../lib/api";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { SkeletonBox } from "../../components/SkeletonLoader";
+import { useLanguage } from "../../lib/language-context";
 import type { CategoryTreeNode } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
@@ -44,6 +45,7 @@ function getPalette(id: string) {
 }
 
 export default function CategoriesScreen() {
+  const { getLocalizedName } = useLanguage();
   const [categories, setCategories] = useState<CategoryTreeNode[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -140,7 +142,7 @@ export default function CategoriesScreen() {
                 <View style={styles.subcategoryPanel}>
                   <View style={styles.subcategoryHeader}>
                     <Text style={styles.subcategoryTitle}>
-                      {expandedCat.name}
+                      {getLocalizedName(expandedCat)}
                     </Text>
                     <TouchableOpacity onPress={() => handleBrowseAll(expandedCat.id)}>
                       <Text style={styles.browseAllText}>Browse All</Text>
@@ -162,7 +164,7 @@ export default function CategoriesScreen() {
                             <View style={[styles.subcategoryDot, { backgroundColor: palette.text }]} />
                           )}
                           <Text style={styles.subcategoryName} numberOfLines={1}>
-                            {sub.name}
+                            {getLocalizedName(sub)}
                           </Text>
                           <Ionicons name="chevron-forward" size={12} color="#cbd5e1" />
                         </TouchableOpacity>
@@ -202,6 +204,7 @@ function CategoryGridCard({
   isExpanded: boolean;
   onPress: (cat: CategoryTreeNode) => void;
 }) {
+  const { getLocalizedName } = useLanguage();
   const palette = getPalette(category.id);
   const hasChildren = category.children.length > 0;
 
@@ -227,7 +230,7 @@ function CategoryGridCard({
       </View>
       <View style={styles.cardContent}>
         <Text style={styles.cardName} numberOfLines={2}>
-          {category.name}
+          {getLocalizedName(category)}
         </Text>
         {hasChildren && (
           <View style={styles.cardMeta}>

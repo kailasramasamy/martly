@@ -1,5 +1,18 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, SUPPORTED_LANGUAGES } from "../constants/index.js";
+
+// ── Translations ─────────────────────────────────────
+const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
+export const translationFieldsSchema = z.object({
+  name: z.string().min(1).optional(),
+  description: z.string().optional(),
+});
+export const translationsSchema = z.record(
+  z.enum(languageCodes),
+  translationFieldsSchema,
+).optional();
+export type TranslationFields = z.infer<typeof translationFieldsSchema>;
+export type Translations = z.infer<typeof translationsSchema>;
 
 // ── Auth ──────────────────────────────────────────────
 export const loginSchema = z.object({
@@ -107,6 +120,7 @@ export const createCategorySchema = z.object({
   parentId: z.string().uuid().nullish(),
   sortOrder: z.number().int().min(0).optional(),
   imageUrl: z.string().url().nullish(),
+  translations: translationsSchema,
 });
 export type CreateCategoryInput = z.infer<typeof createCategorySchema>;
 
@@ -124,6 +138,7 @@ export const updateCategorySchema = z.object({
   parentId: z.string().uuid().nullish(),
   sortOrder: z.number().int().min(0).optional(),
   imageUrl: z.string().url().nullish(),
+  translations: translationsSchema,
 });
 export type UpdateCategoryInput = z.infer<typeof updateCategorySchema>;
 
@@ -240,6 +255,7 @@ export const createProductSchema = z.object({
   usageInstructions: z.string().optional(),
   variants: z.array(createProductVariantSchema).min(1).optional(),
   storeIds: z.array(z.string().uuid()).optional(),
+  translations: translationsSchema,
 });
 export type CreateProductInput = z.infer<typeof createProductSchema>;
 
@@ -447,6 +463,7 @@ export const updateProductSchema = z.object({
     discountStart: z.coerce.date().nullish(),
     discountEnd: z.coerce.date().nullish(),
   })).optional(),
+  translations: translationsSchema,
 });
 export type UpdateProductInput = z.infer<typeof updateProductSchema>;
 

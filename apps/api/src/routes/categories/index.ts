@@ -5,12 +5,12 @@ import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { formatVariantUnits } from "../../services/units.js";
 
-function buildTree(categories: Array<{ id: string; name: string; slug: string; parentId: string | null; sortOrder: number; imageUrl: string | null }>): CategoryTreeNode[] {
+function buildTree(categories: Array<{ id: string; name: string; slug: string; parentId: string | null; sortOrder: number; imageUrl: string | null; translations?: unknown }>): CategoryTreeNode[] {
   const map = new Map<string, CategoryTreeNode>();
   const roots: CategoryTreeNode[] = [];
 
   for (const cat of categories) {
-    map.set(cat.id, { ...cat, children: [] });
+    map.set(cat.id, { ...cat, translations: cat.translations as CategoryTreeNode["translations"], children: [] });
   }
 
   for (const cat of categories) {

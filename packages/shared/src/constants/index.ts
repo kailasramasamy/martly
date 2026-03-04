@@ -447,3 +447,11 @@ export const SubscriptionDeliveryModeLabels: Record<SubscriptionDeliveryMode, st
 };
 
 export const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] as const;
+
+export const SUPPORTED_LANGUAGES = {
+  ta: "Tamil (தமிழ்)",
+  kn: "Kannada (ಕನ್ನಡ)",
+  te: "Telugu (తెలుగు)",
+  hi: "Hindi (हिन्दी)",
+} as const;
+export type LanguageCode = keyof typeof SUPPORTED_LANGUAGES;

@@ -4,7 +4,10 @@
     "slug": "martly",
     "version": "1.0.0",
     "scheme": "martly",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "newArchEnabled": true,
     "userInterfaceStyle": "light",
     "splash": {
@@ -21,13 +24,19 @@
           "color": "#16a34a"
         }
       ],
-      ["expo-speech-recognition", {
-        "microphonePermission": "Allow Martly to use the microphone for voice ordering.",
-        "speechRecognitionPermission": "Allow Martly to use speech recognition for voice ordering.",
-        "androidSpeechServicePackages": ["com.google.android.googlequicksearchbox"]
-      }],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow Martly to use the microphone for voice ordering.",
+          "speechRecognitionPermission": "Allow Martly to use speech recognition for voice ordering.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox"
+          ]
+        }
+      ],
       "@react-native-firebase/app",
-      "@react-native-firebase/messaging"
+      "@react-native-firebase/messaging",
+      "expo-localization"
     ],
     "android": {
       "package": "com.martly.app",

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Create, useForm, useSelect } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
-import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Cascader, Checkbox, Typography, Tag, theme } from "antd";
+import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Cascader, Checkbox, Typography, Tag, Tabs, theme } from "antd";
 import {
   MinusCircleOutlined,
   PlusOutlined,
@@ -12,6 +12,7 @@ import {
   ExperimentOutlined,
   AppstoreOutlined,
   ShopOutlined,
+  TranslationOutlined,
 } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
 import { MultiImageUpload } from "../../components/MultiImageUpload";
@@ -429,6 +430,34 @@ export const ProductCreate = () => {
                   </>
                 )}
               </Form.List>
+            </Card>
+          </Col>
+
+          {/* Translations */}
+          <Col xs={24}>
+            <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small">
+              <Tabs
+                items={[
+                  {
+                    key: "ta",
+                    label: "Tamil (\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD)",
+                    children: (
+                      <Row gutter={16}>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]}>
+                            <Input placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Description (Tamil)" name={["translations", "ta", "description"]}>
+                            <Input.TextArea rows={2} placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BB5\u0BBF\u0BB5\u0BB0\u0BAE\u0BCD" />
+                          </Form.Item>
+                        </Col>
+                      </Row>
+                    ),
+                  },
+                ]}
+              />
             </Card>
           </Col>
 

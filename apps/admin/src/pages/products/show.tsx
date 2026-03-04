@@ -10,6 +10,7 @@ import {
   ExperimentOutlined,
   AppstoreOutlined,
   ShopOutlined,
+  TranslationOutlined,
 } from "@ant-design/icons";
 
 import { FOOD_TYPE_CONFIG, PRODUCT_TYPE_CONFIG, STORAGE_TYPE_CONFIG } from "../../constants/tag-colors";
@@ -225,6 +226,23 @@ export const ProductShow = () => {
             )}
           </Card>
         </Col>
+
+        {/* Translations */}
+        {record.translations && Object.keys(record.translations).length > 0 && (
+          <Col xs={24}>
+            <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small" style={{ marginBottom: 16 }}>
+              <Descriptions column={{ xs: 1, sm: 2 }} size="small" bordered>
+                {Object.entries(record.translations as Record<string, { name?: string; description?: string }>).map(([lang, fields]) => (
+                  <Descriptions.Item key={lang} label={lang === "ta" ? "Tamil" : lang === "kn" ? "Kannada" : lang === "te" ? "Telugu" : lang === "hi" ? "Hindi" : lang} span={2}>
+                    {fields.name && <><Text strong>Name:</Text> {fields.name}</>}
+                    {fields.name && fields.description && <br />}
+                    {fields.description && <><Text strong>Description:</Text> {fields.description}</>}
+                  </Descriptions.Item>
+                ))}
+              </Descriptions>
+            </Card>
+          </Col>
+        )}
 
         {/* ORG_ADMIN: show Map to Store action */}
         {isOrgAdmin && (

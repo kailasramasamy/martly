@@ -70,5 +70,6 @@ export interface CategoryTreeNode {
   parentId: string | null;
   sortOrder: number;
   imageUrl: string | null;
+  translations?: Record<string, { name?: string; description?: string }> | null;
   children: CategoryTreeNode[];
 }

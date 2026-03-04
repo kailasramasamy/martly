@@ -92,12 +92,22 @@ export async function searchProducts(
 }
 
 async function keywordSearch(prisma: PrismaClient, q: string): Promise<string[]> {
-  const products = await prisma.product.findMany({
-    where: { name: { contains: q, mode: "insensitive" }, isActive: true },
-    select: { id: true },
-    take: 50,
-  });
-  return products.map((p) => p.id);
+  // Search name + translation names via JSONB substring
+  const rows = await prisma.$queryRaw<{ id: string }[]>`
+    SELECT DISTINCT p.id
+    FROM products p
+    WHERE p.is_active = true
+      AND (
+        p.name ILIKE '%' || ${q} || '%'
+        OR p.description ILIKE '%' || ${q} || '%'
+        OR EXISTS (
+          SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
+          WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
+        )
+      )
+    LIMIT 50
+  `;
+  return rows.map((r) => r.id);
 }
 
 async function trigramSearch(prisma: PrismaClient, q: string): Promise<string[]> {

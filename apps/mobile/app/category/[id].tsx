@@ -20,6 +20,7 @@ import { useWishlist } from "../../lib/wishlist-context";
 import { useMembership, getBestPrice } from "../../lib/membership-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
 import { useToast } from "../../lib/toast-context";
+import { useLanguage } from "../../lib/language-context";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../../components/ProductGridCard";
@@ -36,6 +37,7 @@ interface SubcategoryWithCount {
   name: string;
   imageUrl: string | null;
   count: number;
+  translations?: Record<string, { name?: string; description?: string }> | null;
 }
 
 export default function CategoryScreen() {
@@ -47,6 +49,7 @@ export default function CategoryScreen() {
   const { isMember } = useMembership();
   const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
   const toast = useToast();
+  const { getLocalizedName } = useLanguage();
 
   const [category, setCategory] = useState<CategoryTreeNode | null>(null);
   const [allProducts, setAllProducts] = useState<StoreProduct[]>([]);
@@ -81,7 +84,7 @@ export default function CategoryScreen() {
         const node = findNode(res.data);
         if (node) {
           setCategory(node);
-          navigation.setOptions({ title: node.name });
+          navigation.setOptions({ title: getLocalizedName(node) });
         }
       })
       .catch(() => {});
@@ -143,7 +146,7 @@ export default function CategoryScreen() {
           .filter((p) => p.product?.category?.id && descIds.has(p.product.category.id))
           .map((p) => p.product.id)
       );
-      return { id: child.id, name: child.name, imageUrl: child.imageUrl ?? null, count: uniqueProducts.size };
+      return { id: child.id, name: child.name, imageUrl: child.imageUrl ?? null, count: uniqueProducts.size, translations: child.translations };
     });
 
     // Add "Other" for products not in any subcategory (e.g. assigned to parent category directly)
@@ -179,7 +182,7 @@ export default function CategoryScreen() {
           .filter((p) => p.product?.category?.id && ids.has(p.product.category.id))
           .map((p) => p.product.id)
       );
-      return { id: gc.id, name: gc.name, count: uniqueProducts.size };
+      return { id: gc.id, name: gc.name, count: uniqueProducts.size, translations: gc.translations };
     });
   }, [activeSub, category, allProducts]);
 
@@ -448,7 +451,7 @@ export default function CategoryScreen() {
               activeOpacity={0.7}
             >
               <Text style={[styles.pillText, isActive && styles.pillTextActive]}>
-                {gc.name}
+                {getLocalizedName(gc)}
               </Text>
             </TouchableOpacity>
           );
@@ -673,7 +676,7 @@ export default function CategoryScreen() {
                     ]}
                     numberOfLines={2}
                   >
-                    {sub.name}
+                    {getLocalizedName(sub)}
                   </Text>
                   <Text
                     style={[

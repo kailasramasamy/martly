@@ -3,6 +3,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, spacing, fontSize } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
+import { useLanguage } from "../lib/language-context";
 
 interface ProductCardProps {
   item: StoreProduct;
@@ -14,6 +15,9 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuantity, quantity = 0, storeId }: ProductCardProps) {
+  const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
+  const localizedName = getLocalizedName(item.product);
+  const subtitle = getLocalizedSubtitle(item.product);
   const hasDiscount = item.pricing?.discountActive;
   const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
@@ -89,7 +93,10 @@ export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuant
             )}
           </View>
           <View style={styles.cardRow}>
-            <Text style={styles.productName} numberOfLines={2}>{item.product.name}</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.productName} numberOfLines={2}>{localizedName}</Text>
+              {subtitle && <Text style={{ fontSize: 11, color: "#94a3b8" }}>{subtitle}</Text>}
+            </View>
             <View style={styles.priceGroup}>
               {originalPrice != null && (
                 <Text style={styles.mrpPrice}>₹{originalPrice.toFixed(2)}</Text>
