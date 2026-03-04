@@ -45,14 +45,6 @@ const TIME_SUBTITLES: Record<string, string> = {
   night: "Late night cravings",
 };
 
-function getTimeGreeting(): string {
-  const h = new Date().getHours();
-  if (h < 12) return "Good morning";
-  if (h < 17) return "Good afternoon";
-  if (h < 21) return "Good evening";
-  return "Good night";
-}
-
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
   const { stores, selectedStore, setSelectedStore, loading: storesLoading } = useStore();
@@ -314,7 +306,7 @@ export default function HomeScreen() {
               <Ionicons name="location-sharp" size={18} color={colors.primary} />
             </View>
             <View style={styles.storeInfo}>
-              <Text style={styles.deliverLabel}>YOUR STORE</Text>
+              <Text style={styles.deliverLabel}>{user?.name ? `Hi ${user.name.split(" ")[0]}!` : "YOUR STORE"}</Text>
               <View style={styles.storeNameRow}>
                 <Text style={styles.storeName} numberOfLines={1}>
                   {selectedStore ? selectedStore.name : "Select a store"}
@@ -356,76 +348,63 @@ export default function HomeScreen() {
           />
         }
       >
-        {/* ── Greeting Section ── */}
-        {selectedStore && user && (
-          <View style={styles.greetingSection}>
-            <View style={styles.greetingRow}>
-              <View style={styles.greetingAvatarCircle}>
-                <Text style={styles.greetingAvatarText}>
-                  {(user.name || "U").charAt(0).toUpperCase()}
-                </Text>
-              </View>
-              <View style={{ flex: 1 }}>
-                <Text style={styles.greetingHi}>
-                  {getTimeGreeting()}, {(user.name || "").split(" ")[0] || "there"}!
-                </Text>
-                <Text style={styles.greetingSub}>What would you like to order today?</Text>
-              </View>
-            </View>
-          </View>
-        )}
 
-        {/* ── Mart Plus Banner ── */}
-        {selectedStore && memberStatus && (
-          <TouchableOpacity
-            style={styles.martPlusWrap}
-            onPress={() => router.push("/membership")}
-            activeOpacity={0.85}
+        {/* ── Quick Access Chips (Mart Plus + Tomorrow's Basket) ── */}
+        {selectedStore && (memberStatus || hasSubscriptions) && (
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.quickChipsRow}
           >
-            <LinearGradient
-              colors={memberStatus.isMember ? ["#7c3aed", "#a78bfa"] : ["#5b21b6", "#7c3aed", "#a78bfa"]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.martPlusBanner}
-            >
-              <Ionicons name="diamond" size={20} color="#fbbf24" />
-              {memberStatus.isMember && memberStatus.membership ? (
-                <View style={styles.martPlusContent}>
-                  <Text style={styles.martPlusTitle}>Mart Plus Active</Text>
-                  <Text style={styles.martPlusSub}>{memberStatus.membership.daysLeft} days left on {memberStatus.membership.planName}</Text>
+            {memberStatus && (
+              <TouchableOpacity
+                style={styles.quickChip}
+                onPress={() => router.push("/membership")}
+                activeOpacity={0.8}
+              >
+                <LinearGradient
+                  colors={memberStatus.isMember ? ["#7c3aed", "#a78bfa"] : ["#5b21b6", "#7c3aed"]}
+                  start={{ x: 0, y: 0 }}
+                  end={{ x: 1, y: 0 }}
+                  style={styles.quickChipGradient}
+                >
+                  <Ionicons name="diamond" size={14} color="#fbbf24" />
+                  <Text style={styles.quickChipText}>
+                    {memberStatus.isMember ? `Plus · ${memberStatus.membership?.daysLeft}d left` : "Join Mart Plus"}
+                  </Text>
+                </LinearGradient>
+              </TouchableOpacity>
+            )}
+            {hasSubscriptions && (
+              <TouchableOpacity
+                style={styles.quickChip}
+                onPress={() => router.push("/tomorrows-basket")}
+                activeOpacity={0.8}
+              >
+                <LinearGradient
+                  colors={["#0d9488", "#14b8a6"]}
+                  start={{ x: 0, y: 0 }}
+                  end={{ x: 1, y: 0 }}
+                  style={styles.quickChipGradient}
+                >
+                  <Ionicons name="basket" size={14} color="#fff" />
+                  <Text style={styles.quickChipText}>Tomorrow's Basket</Text>
+                </LinearGradient>
+              </TouchableOpacity>
+            )}
+            {hasSubscriptions && (
+              <TouchableOpacity
+                style={styles.quickChip}
+                onPress={() => router.push("/subscriptions")}
+                activeOpacity={0.8}
+              >
+                <View style={styles.quickChipOutline}>
+                  <Ionicons name="repeat" size={14} color={colors.primary} />
+                  <Text style={styles.quickChipOutlineText}>Subscriptions</Text>
                 </View>
-              ) : (
-                <View style={styles.martPlusContent}>
-                  <Text style={styles.martPlusTitle}>Join Mart Plus</Text>
-                  <Text style={styles.martPlusSub}>Free delivery, member prices & bonus loyalty</Text>
-                </View>
-              )}
-              <Ionicons name="chevron-forward" size={16} color="rgba(255,255,255,0.7)" />
-            </LinearGradient>
-          </TouchableOpacity>
-        )}
-
-        {/* ── Tomorrow's Basket Banner ── */}
-        {selectedStore && hasSubscriptions && (
-          <TouchableOpacity
-            style={styles.basketBannerWrap}
-            onPress={() => router.push("/tomorrows-basket")}
-            activeOpacity={0.85}
-          >
-            <LinearGradient
-              colors={["#0d9488", "#14b8a6"]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.martPlusBanner}
-            >
-              <Ionicons name="basket" size={20} color="#fff" />
-              <View style={styles.martPlusContent}>
-                <Text style={styles.martPlusTitle}>Tomorrow's Basket</Text>
-                <Text style={styles.martPlusSub}>Review & customize your subscription delivery</Text>
-              </View>
-              <Ionicons name="chevron-forward" size={16} color="rgba(255,255,255,0.7)" />
-            </LinearGradient>
-          </TouchableOpacity>
+              </TouchableOpacity>
+            )}
+          </ScrollView>
         )}
 
         {/* ── Hero Carousel ── */}
@@ -1026,76 +1005,45 @@ const styles = StyleSheet.create({
   scrollContent: { paddingBottom: 8 },
 
   // ── Greeting ──
-  greetingSection: {
+  // ── Quick Access Chips ──
+  quickChipsRow: {
+    flexDirection: "row",
     paddingHorizontal: H_PADDING,
-    paddingTop: 12,
-    paddingBottom: 4,
+    paddingTop: 10,
+    gap: 8,
   },
-  greetingRow: {
+  quickChip: {
+    borderRadius: 8,
+    overflow: "hidden",
+  },
+  quickChipGradient: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#fff",
-    borderRadius: 14,
-    padding: 14,
-    gap: 12,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.04,
-    shadowRadius: 4,
-    elevation: 1,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    gap: 6,
+    borderRadius: 8,
   },
-  greetingAvatarCircle: {
-    width: 42,
-    height: 42,
-    borderRadius: 14,
-    backgroundColor: colors.primary,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  greetingAvatarText: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: "#fff",
-  },
-  greetingHi: {
-    fontSize: 16,
-    fontWeight: "700",
-    color: colors.text,
-  },
-  greetingSub: {
+  quickChipText: {
     fontSize: 12,
-    color: colors.textSecondary,
-    marginTop: 1,
-  },
-  // ── Mart Plus Banner ──
-  basketBannerWrap: {
-    paddingHorizontal: H_PADDING,
-    paddingTop: 8,
-  },
-  martPlusWrap: {
-    paddingHorizontal: H_PADDING,
-    paddingTop: 12,
-  },
-  martPlusBanner: {
-    flexDirection: "row",
-    alignItems: "center",
-    borderRadius: 12,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-    gap: 10,
-  },
-  martPlusContent: {
-    flex: 1,
-  },
-  martPlusTitle: {
-    fontSize: 14,
-    fontWeight: "700",
+    fontWeight: "600",
     color: "#fff",
   },
-  martPlusSub: {
-    fontSize: 11,
-    color: "rgba(255,255,255,0.8)",
-    marginTop: 1,
+  quickChipOutline: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    gap: 6,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: colors.primary,
+    backgroundColor: colors.primary + "08",
+  },
+  quickChipOutlineText: {
+    fontSize: 12,
+    fontWeight: "600",
+    color: colors.primary,
   },
 
   // ── Hero Carousel ──
