@@ -57,8 +57,8 @@ export async function homeRoutes(app: FastifyInstance) {
 
       const now = new Date();
 
-      // Run 6 parallel queries
-      const [collections, categories, timeCategories, dealsRaw, buyAgainRaw, bannersRaw] = await Promise.all([
+      // Run 7 parallel queries
+      const [collections, categories, timeCategories, dealsRaw, buyAgainRaw, bannersRaw, recipesRaw] = await Promise.all([
         // 1. Collections with products mapped to this store
         app.prisma.collection.findMany({
           where: {
@@ -186,6 +186,35 @@ export async function homeRoutes(app: FastifyInstance) {
             placement: true,
             actionType: true,
             actionTarget: true,
+          },
+        }),
+
+        // 7. Recipes — active recipes with availability summary
+        app.prisma.recipe.findMany({
+          where: {
+            isActive: true,
+            OR: [
+              { organizationId: store.organizationId },
+              { organizationId: null },
+            ],
+          },
+          orderBy: { sortOrder: "asc" },
+          take: 6,
+          include: {
+            items: {
+              orderBy: { sortOrder: "asc" },
+              include: {
+                product: {
+                  include: {
+                    storeProducts: {
+                      where: { storeId, isActive: true },
+                      orderBy: { price: "asc" },
+                      take: 1,
+                    },
+                  },
+                },
+              },
+            },
           },
         }),
       ]);
@@ -365,6 +394,35 @@ export async function homeRoutes(app: FastifyInstance) {
       const enrichedDeals = addReviews(deals);
       const enrichedBuyAgain = addReviews(buyAgain);
 
+      // Transform recipes
+      const recipes = recipesRaw.map((recipe) => {
+        let availableCount = 0;
+        let estimatedTotal = 0;
+        for (const item of recipe.items) {
+          const sp = item.product.storeProducts[0];
+          if (sp) {
+            availableCount++;
+            estimatedTotal += Number(sp.price);
+          }
+        }
+        return {
+          id: recipe.id,
+          title: recipe.title,
+          slug: recipe.slug,
+          imageUrl: recipe.imageUrl,
+          difficulty: recipe.difficulty,
+          cuisineType: recipe.cuisineType,
+          dietType: recipe.dietType,
+          prepTime: recipe.prepTime,
+          cookTime: recipe.cookTime,
+          servings: recipe.servings,
+          translations: recipe.translations,
+          ingredientCount: recipe.items.length,
+          availableCount,
+          estimatedTotal: Math.round(estimatedTotal * 100) / 100,
+        };
+      });
+
       // Add children: [] to match CategoryTreeNode type
       const categoriesWithChildren = categories.map((cat) => ({ ...cat, children: [] }));
 
@@ -376,6 +434,7 @@ export async function homeRoutes(app: FastifyInstance) {
         deals: typeof deals;
         buyAgain: typeof buyAgain;
         banners: typeof bannersRaw;
+        recipes: typeof recipes;
       }> = {
         success: true,
         data: {
@@ -386,6 +445,7 @@ export async function homeRoutes(app: FastifyInstance) {
           deals: enrichedDeals,
           buyAgain: enrichedBuyAgain,
           banners: bannersRaw,
+          recipes,
         },
       };
       return response;

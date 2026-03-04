@@ -47,6 +47,7 @@ import { returnRequestRoutes } from "./routes/return-requests/index.js";
 import { riderLocationRoutes } from "./routes/rider-location/index.js";
 import { membershipRoutes } from "./routes/memberships/index.js";
 import { subscriptionRoutes } from "./routes/subscriptions/index.js";
+import { recipeRoutes } from "./routes/recipes/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
 import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
@@ -149,6 +150,7 @@ export async function buildApp() {
       await api.register(riderLocationRoutes, { prefix: "/rider-location" });
       await api.register(membershipRoutes, { prefix: "/memberships" });
       await api.register(subscriptionRoutes, { prefix: "/subscriptions" });
+      await api.register(recipeRoutes, { prefix: "/recipes" });
     },
     { prefix: "/api/v1" },
   );

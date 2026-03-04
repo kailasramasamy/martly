@@ -232,6 +232,12 @@ enum SubscriptionDeliveryMode {
   SLOT_BASED
 }
 
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
 // ── Models ────────────────────────────────────────────
 
 model Organization {
@@ -262,6 +268,7 @@ model Organization {
   membershipPlans     MembershipPlan[]
   userMemberships     UserMembership[]
   subscriptions       Subscription[]
+  recipes             Recipe[]
 
   @@map("organizations")
 }
@@ -463,6 +470,7 @@ model Product {
   reviews         Review[]
   wishlistItems   WishlistItem[]
   searchAliases   SearchAlias[]
+  recipeItems     RecipeItem[]
 
   @@index([productType])
   @@index([organizationId])
@@ -1320,4 +1328,48 @@ model BasketAddOn {
 
   @@unique([userId, storeId, storeProductId, deliveryDate])
   @@map("basket_add_ons")
+}
+
+model Recipe {
+  id             String      @id @default(uuid())
+  organizationId String?     @map("organization_id")
+  title          String
+  slug           String      @unique
+  description    String?
+  imageUrl       String?     @map("image_url")
+  instructions   Json        @default("[]")
+  prepTime       Int?        @map("prep_time")
+  cookTime       Int?        @map("cook_time")
+  servings       Int?
+  difficulty     Difficulty?
+  cuisineType    String?     @map("cuisine_type")
+  dietType       FoodType?   @map("diet_type")
+  translations   Json?
+  sortOrder      Int         @default(0) @map("sort_order")
+  isActive       Boolean     @default(true) @map("is_active")
+  createdAt      DateTime    @default(now()) @map("created_at")
+  updatedAt      DateTime    @updatedAt @map("updated_at")
+
+  organization Organization? @relation(fields: [organizationId], references: [id])
+  items        RecipeItem[]
+
+  @@index([organizationId])
+  @@index([isActive, sortOrder])
+  @@map("recipes")
+}
+
+model RecipeItem {
+  id         String   @id @default(uuid())
+  recipeId   String   @map("recipe_id")
+  productId  String   @map("product_id")
+  displayQty String   @map("display_qty")
+  note       String?
+  sortOrder  Int      @default(0) @map("sort_order")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  recipe  Recipe  @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([recipeId, productId])
+  @@map("recipe_items")
 }

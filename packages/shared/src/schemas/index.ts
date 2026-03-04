@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, SUPPORTED_LANGUAGES } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SUPPORTED_LANGUAGES } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -1007,3 +1007,48 @@ export const subscriptionItemOverrideSchema = z.object({
   quantity: z.number().int().min(0),
 });
 export type SubscriptionItemOverrideInput = z.infer<typeof subscriptionItemOverrideSchema>;
+
+// ── Recipe ──────────────────────────────────────────
+export const recipeItemSchema = z.object({
+  productId: z.string().uuid(),
+  displayQty: z.string().min(1),
+  note: z.string().nullish(),
+});
+export type RecipeItemInput = z.infer<typeof recipeItemSchema>;
+
+export const createRecipeSchema = z.object({
+  title: z.string().min(1),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  description: z.string().optional(),
+  instructions: z.array(z.string().min(1)).optional(),
+  prepTime: z.number().int().positive().optional(),
+  cookTime: z.number().int().positive().optional(),
+  servings: z.number().int().positive().optional(),
+  difficulty: z.nativeEnum(Difficulty).optional(),
+  cuisineType: z.string().optional(),
+  dietType: z.nativeEnum(FoodType).optional(),
+  imageUrl: z.string().url().optional(),
+  organizationId: z.string().uuid().nullish(),
+  isActive: z.boolean().optional(),
+  items: z.array(recipeItemSchema).optional(),
+  translations: translationsSchema,
+});
+export type CreateRecipeInput = z.infer<typeof createRecipeSchema>;
+
+export const updateRecipeSchema = z.object({
+  title: z.string().min(1).optional(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  description: z.string().nullish(),
+  instructions: z.array(z.string().min(1)).optional(),
+  prepTime: z.number().int().positive().nullish(),
+  cookTime: z.number().int().positive().nullish(),
+  servings: z.number().int().positive().nullish(),
+  difficulty: z.nativeEnum(Difficulty).nullish(),
+  cuisineType: z.string().nullish(),
+  dietType: z.nativeEnum(FoodType).nullish(),
+  imageUrl: z.string().url().nullish(),
+  isActive: z.boolean().optional(),
+  items: z.array(recipeItemSchema).optional(),
+  translations: translationsSchema,
+});
+export type UpdateRecipeInput = z.infer<typeof updateRecipeSchema>;

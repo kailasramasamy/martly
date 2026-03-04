@@ -172,6 +172,8 @@ function RootLayoutNav() {
         <Stack.Screen name="tomorrows-basket" options={{ headerShown: true, title: "Tomorrow's Basket" }} />
         <Stack.Screen name="subscription-builder" options={{ headerShown: true, title: "New Subscription" }} />
         <Stack.Screen name="language-settings" options={{ headerShown: true, title: "Language" }} />
+        <Stack.Screen name="recipes" options={{ headerShown: true, title: "Recipes" }} />
+        <Stack.Screen name="recipe/[id]" options={{ headerShown: true, title: "Recipe" }} />
       </Stack>
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
     </>

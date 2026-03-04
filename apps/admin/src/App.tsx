@@ -35,6 +35,7 @@ import {
   RollbackOutlined,
   CrownOutlined,
   CalendarOutlined,
+  BookOutlined,
 } from "@ant-design/icons";
 
 import "@refinedev/antd/dist/reset.css";
@@ -123,6 +124,9 @@ import { MembershipSubscribers } from "./pages/memberships/subscribers";
 import { SubscriptionConfig } from "./pages/subscription-config/index";
 import { SubscriptionList } from "./pages/subscriptions/list";
 import { SubscriptionShow } from "./pages/subscriptions/show";
+import { RecipeList } from "./pages/recipes/list";
+import { RecipeCreate } from "./pages/recipes/create";
+import { RecipeEdit } from "./pages/recipes/edit";
 import { OrgSwitcher } from "./components/OrgSwitcher";
 
 const { Text } = Typography;
@@ -370,6 +374,13 @@ export default function App() {
                 meta: { label: "Subscriptions", icon: <CalendarOutlined />, parent: "marketing" },
               },
               {
+                name: "recipes",
+                list: "/recipes",
+                create: "/recipes/create",
+                edit: "/recipes/edit/:id",
+                meta: { label: "Recipes", icon: <BookOutlined />, parent: "marketing" },
+              },
+              {
                 name: "delivery",
                 meta: { label: "Delivery", icon: <EnvironmentOutlined /> },
               },
@@ -570,6 +581,11 @@ export default function App() {
                 <Route path="/customer-insights" element={<CustomerInsightsPage />} />
                 <Route path="/membership-plans" element={<MembershipPlans />} />
                 <Route path="/membership-subscribers" element={<MembershipSubscribers />} />
+                <Route path="/recipes">
+                  <Route index element={<RecipeList />} />
+                  <Route path="create" element={<RecipeCreate />} />
+                  <Route path="edit/:id" element={<RecipeEdit />} />
+                </Route>
                 <Route path="/subscription-config" element={<SubscriptionConfig />} />
                 <Route path="/subscriptions">
                   <Route index element={<SubscriptionList />} />

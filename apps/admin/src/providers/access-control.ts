@@ -77,6 +77,13 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false };
     }
 
+    // Recipes: ORG_ADMIN full access, others read-only
+    if (resource === "recipes") {
+      if (role === "ORG_ADMIN") return { can: true };
+      if (action === "list" || action === "show") return { can: true };
+      return { can: false };
+    }
+
     // Coupons: ORG_ADMIN full access
     if (resource === "coupons") {
       if (role === "ORG_ADMIN") return { can: true };

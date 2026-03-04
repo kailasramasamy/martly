@@ -135,6 +135,54 @@ export interface Banner {
   actionTarget: string | null;
 }
 
+export interface RecipeSummary {
+  id: string;
+  title: string;
+  slug: string;
+  imageUrl: string | null;
+  difficulty: string | null;
+  cuisineType: string | null;
+  dietType: string | null;
+  prepTime: number | null;
+  cookTime: number | null;
+  servings: number | null;
+  translations: Translations | null;
+  ingredientCount: number;
+  availableCount: number;
+  estimatedTotal: number;
+}
+
+export interface RecipeIngredient {
+  id: string;
+  displayQty: string;
+  note: string | null;
+  product: {
+    id: string;
+    name: string;
+    imageUrl: string | null;
+    foodType: string | null;
+  };
+  storeProduct: StoreProduct | null;
+  available: boolean;
+}
+
+export interface RecipeDetail {
+  id: string;
+  title: string;
+  slug: string;
+  description: string | null;
+  imageUrl: string | null;
+  instructions: string[];
+  prepTime: number | null;
+  cookTime: number | null;
+  servings: number | null;
+  difficulty: string | null;
+  cuisineType: string | null;
+  dietType: string | null;
+  translations: Translations | null;
+  items: RecipeIngredient[];
+}
+
 export interface HomeFeed {
   collections: CollectionSection[];
   categories: CategoryTreeNode[];
@@ -143,6 +191,7 @@ export interface HomeFeed {
   deals: StoreProduct[];
   buyAgain: StoreProduct[];
   banners: Banner[];
+  recipes: RecipeSummary[];
 }
 
 export interface ReviewImage {

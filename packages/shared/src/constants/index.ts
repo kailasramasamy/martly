@@ -448,6 +448,19 @@ export const SubscriptionDeliveryModeLabels: Record<SubscriptionDeliveryMode, st
 
 export const DAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] as const;
 
+export const Difficulty = {
+  EASY: "EASY",
+  MEDIUM: "MEDIUM",
+  HARD: "HARD",
+} as const;
+export type Difficulty = (typeof Difficulty)[keyof typeof Difficulty];
+
+export const DifficultyLabels: Record<Difficulty, string> = {
+  EASY: "Easy",
+  MEDIUM: "Medium",
+  HARD: "Hard",
+};
+
 export const SUPPORTED_LANGUAGES = {
   ta: "Tamil (தமிழ்)",
   kn: "Kannada (ಕನ್ನಡ)",

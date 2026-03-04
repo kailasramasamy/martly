@@ -18,6 +18,7 @@ import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
+import { RecipeCard } from "../../components/RecipeCard";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useMembership, getBestPrice } from "../../lib/membership-context";
@@ -608,6 +609,36 @@ export default function HomeScreen() {
               </TouchableOpacity>
             </View>
             {renderProductList(homeFeed.deals)}
+          </View>
+        )}
+
+        {/* ── Shoppable Recipes ── */}
+        {homeFeed && homeFeed.recipes && homeFeed.recipes.length > 0 && (
+          <View style={styles.section}>
+            <View style={styles.sectionHeader}>
+              <View>
+                <Text style={styles.sectionTitle}>Shoppable Recipes</Text>
+                <Text style={styles.sectionSubtitle}>Cook a meal, add all ingredients</Text>
+              </View>
+              <TouchableOpacity
+                onPress={() => router.push("/recipes" as any)}
+                style={styles.seeAllBtn}
+              >
+                <Text style={styles.seeAllText}>See All</Text>
+                <Ionicons name="chevron-forward" size={14} color={colors.primary} />
+              </TouchableOpacity>
+            </View>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={{ paddingHorizontal: 16 }}
+            >
+              {homeFeed.recipes.map((recipe) => (
+                <View key={recipe.id} style={{ marginRight: 12 }}>
+                  <RecipeCard recipe={recipe} />
+                </View>
+              ))}
+            </ScrollView>
           </View>
         )}
 
