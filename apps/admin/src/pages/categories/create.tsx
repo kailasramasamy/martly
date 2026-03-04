@@ -1,6 +1,6 @@
 import { Create, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, Select, Card, Row, Col } from "antd";
-import { AppstoreOutlined, PictureOutlined } from "@ant-design/icons";
+import { Form, Input, Select, Card, Row, Col, Tabs } from "antd";
+import { AppstoreOutlined, PictureOutlined, TranslationOutlined } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
 
@@ -56,6 +56,23 @@ export const CategoryCreate = () => {
               >
                 <ImageUpload />
               </Form.Item>
+            </Card>
+          </Col>
+          <Col xs={24}>
+            <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small">
+              <Tabs
+                items={[
+                  {
+                    key: "ta",
+                    label: "Tamil (\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD)",
+                    children: (
+                      <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]}>
+                        <Input placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD" />
+                      </Form.Item>
+                    ),
+                  },
+                ]}
+              />
             </Card>
           </Col>
         </Row>

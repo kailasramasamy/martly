@@ -36,6 +36,7 @@ import { ToastProvider } from "../lib/toast-context";
 import { NotificationProvider } from "../lib/notification-context";
 import { MembershipProvider } from "../lib/membership-context";
 import { BasketModeProvider } from "../lib/basket-mode-context";
+import { LanguageProvider } from "../lib/language-context";
 import { addNotificationResponseListener, getLastNotificationResponse } from "../lib/notifications";
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
@@ -170,6 +171,7 @@ function RootLayoutNav() {
         <Stack.Screen name="subscription/[id]" options={{ headerShown: true, title: "Subscription" }} />
         <Stack.Screen name="tomorrows-basket" options={{ headerShown: true, title: "Tomorrow's Basket" }} />
         <Stack.Screen name="subscription-builder" options={{ headerShown: true, title: "New Subscription" }} />
+        <Stack.Screen name="language-settings" options={{ headerShown: true, title: "Language" }} />
       </Stack>
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
     </>
@@ -197,6 +199,7 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <ThemeProvider value={LightTheme}>
         <AuthProvider>
+          <LanguageProvider>
           <StoreProvider>
             <MembershipProvider>
             <CartProvider>
@@ -212,6 +215,7 @@ export default function RootLayout() {
             </CartProvider>
             </MembershipProvider>
           </StoreProvider>
+          </LanguageProvider>
         </AuthProvider>
       </ThemeProvider>
     </SafeAreaProvider>

@@ -16,6 +16,7 @@ import { useToast } from "../../lib/toast-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../../lib/auth-context";
 import { useStore } from "../../lib/store-context";
+import { useLanguage } from "../../lib/language-context";
 import { api } from "../../lib/api";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { AddressAutocomplete } from "../../components/AddressAutocomplete";
@@ -35,6 +36,7 @@ export default function ProfileScreen() {
   const router = useRouter();
   const { logout, user, isAuthenticated, refreshUser } = useAuth();
   const { selectedStore } = useStore();
+  const { language, supportedLanguages } = useLanguage();
   const storeId = selectedStore?.id;
   const toast = useToast();
 
@@ -301,6 +303,16 @@ export default function ProfileScreen() {
               <Ionicons name="refresh-circle-outline" size={18} color={colors.primary} />
             </View>
             <Text style={styles.menuItemText}>Smart Reorder</Text>
+            <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.menuItem} onPress={() => router.push("/language-settings")}>
+            <View style={[styles.menuIconWrap, { backgroundColor: "#fef3c7" }]}>
+              <Ionicons name="language-outline" size={18} color="#d97706" />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.menuItemText}>Language</Text>
+              {language && <Text style={styles.menuItemSub}>{supportedLanguages[language]}</Text>}
+            </View>
             <Ionicons name="chevron-forward" size={16} color="#94a3b8" />
           </TouchableOpacity>
         </View>

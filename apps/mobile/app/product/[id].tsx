@@ -22,6 +22,7 @@ import { useAuth } from "../../lib/auth-context";
 import { useMembership, getBestPrice } from "../../lib/membership-context";
 import { useToast } from "../../lib/toast-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
+import { useLanguage } from "../../lib/language-context";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { FeaturedProductCard } from "../../components/FeaturedProductCard";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
@@ -46,6 +47,7 @@ export default function ProductDetailScreen() {
   const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
   const toast = useToast();
 
+  const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
   const navigation = useNavigation();
   const router = useRouter();
   const storeId = paramStoreId || selectedStore?.id;
@@ -135,9 +137,9 @@ export default function ProductDetailScreen() {
 
   useEffect(() => {
     if (product?.name) {
-      navigation.setOptions({ title: product.name });
+      navigation.setOptions({ title: getLocalizedName(product) });
     }
-  }, [product?.name, navigation]);
+  }, [product?.name, product?.translations, navigation, getLocalizedName]);
 
   useEffect(() => {
     if (!id) return;
@@ -352,7 +354,10 @@ export default function ProductDetailScreen() {
           )}
         </View>
 
-        <Text style={styles.productName}>{product.name}</Text>
+        <Text style={styles.productName}>{getLocalizedName(product)}</Text>
+        {getLocalizedSubtitle(product) && (
+          <Text style={{ fontSize: 14, color: "#94a3b8", marginTop: 2 }}>{getLocalizedSubtitle(product)}</Text>
+        )}
 
         {product.category?.name && (
           <View style={styles.categoryChip}>

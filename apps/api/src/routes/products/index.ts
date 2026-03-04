@@ -243,7 +243,7 @@ export async function productRoutes(app: FastifyInstance) {
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request) => {
       const body = createProductSchema.parse(request.body);
-      const { variants: variantsInput, nutritionalInfo, organizationId: _bodyOrgId, storeIds: requestedStoreIds, ...productData } = body;
+      const { variants: variantsInput, nutritionalInfo, organizationId: _bodyOrgId, storeIds: requestedStoreIds, translations, ...productData } = body;
       const user = getOrgUser(request);
 
       // SUPER_ADMIN: always master catalog (organizationId = null)
@@ -259,6 +259,7 @@ export async function productRoutes(app: FastifyInstance) {
           ...productData,
           organizationId,
           nutritionalInfo: nutritionalInfo as Prisma.InputJsonValue | undefined,
+          translations: translations as Prisma.InputJsonValue | undefined,
           variants: {
             create: variantsToCreate,
           },
@@ -309,7 +310,7 @@ export async function productRoutes(app: FastifyInstance) {
     "/:id",
     { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
     async (request, reply) => {
-      const { nutritionalInfo, variants, ...rest } = updateProductSchema.parse(request.body);
+      const { nutritionalInfo, variants, translations, ...rest } = updateProductSchema.parse(request.body);
       const existing = await app.prisma.product.findUnique({ where: { id: request.params.id } });
       if (!existing) return reply.notFound("Product not found");
 
@@ -335,6 +336,9 @@ export async function productRoutes(app: FastifyInstance) {
         ...rest,
         ...(nutritionalInfo !== undefined && {
           nutritionalInfo: nutritionalInfo === null ? Prisma.DbNull : nutritionalInfo as Prisma.InputJsonValue,
+        }),
+        ...(translations !== undefined && {
+          translations: translations === null ? Prisma.DbNull : translations as Prisma.InputJsonValue,
         }),
       };
 

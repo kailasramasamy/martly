@@ -27,6 +27,7 @@ import { useWishlist } from "../../lib/wishlist-context";
 import { useAuth } from "../../lib/auth-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
 import { useToast } from "../../lib/toast-context";
+import { useLanguage } from "../../lib/language-context";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { FeaturedProductCard, FEATURED_CARD_WIDTH } from "../../components/FeaturedProductCard";
@@ -54,6 +55,7 @@ export default function HomeScreen() {
   const { isMember } = useMembership();
   const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
   const toast = useToast();
+  const { getLocalizedName } = useLanguage();
 
   const [homeFeed, setHomeFeed] = useState<HomeFeed | null>(null);
   const [loadingFeed, setLoadingFeed] = useState(false);
@@ -535,7 +537,7 @@ export default function HomeScreen() {
                         <Ionicons name={icon} size={24} color={palette.color} />
                       </View>
                     )}
-                    <Text style={styles.categoryGridLabel} numberOfLines={2}>{cat.name}</Text>
+                    <Text style={styles.categoryGridLabel} numberOfLines={2}>{getLocalizedName(cat)}</Text>
                   </TouchableOpacity>
                 );
               })}

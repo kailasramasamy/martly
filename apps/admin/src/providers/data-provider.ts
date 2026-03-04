@@ -71,7 +71,7 @@ export const martlyDataProvider: DataProvider = {
   },
 
   update: async ({ resource, id, variables }) => {
-    const { data: res } = await axiosInstance.patch(`/${resource}/${id}`, variables);
+    const { data: res } = await axiosInstance.put(`/${resource}/${id}`, variables);
     return { data: res.data };
   },
 

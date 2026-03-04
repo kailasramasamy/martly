@@ -4,6 +4,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, spacing } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
+import { useLanguage } from "../lib/language-context";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 export const GRID_GAP = 12;
@@ -27,6 +28,9 @@ interface ProductGridCardProps {
 }
 
 export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, variantCount = 1, onShowVariants, containerWidth, variantSizes, isWishlisted, onToggleWishlist, isMember }: ProductGridCardProps) {
+  const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
+  const localizedName = getLocalizedName(item.product);
+  const subtitle = getLocalizedSubtitle(item.product);
   const cardWidth = containerWidth
     ? (containerWidth - GRID_GAP) / 2
     : GRID_CARD_WIDTH;
@@ -104,7 +108,8 @@ export function ProductGridCard({ item, onAddToCart, quantity = 0, storeId, vari
 
       {/* Content */}
       <View style={styles.content}>
-        <Text style={styles.name} numberOfLines={2}>{item.product.name}</Text>
+        <Text style={styles.name} numberOfLines={2}>{localizedName}</Text>
+        {subtitle && <Text style={styles.nameSubtitle} numberOfLines={1}>{subtitle}</Text>}
         {variantSizes && variantSizes.length > 1 ? (
           <Text style={styles.variant} numberOfLines={1}>
             {variantSizes.join(" · ")}
@@ -254,6 +259,7 @@ const styles = StyleSheet.create({
   oosLabel: { fontSize: 12, fontWeight: "700", color: colors.error },
   content: { padding: 10 },
   name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17 },
+  nameSubtitle: { fontSize: 10, color: colors.textSecondary, marginTop: 1 },
   variant: { fontSize: 11, color: colors.textSecondary, marginTop: 2 },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 3, marginTop: 3 },
   ratingText: { fontSize: 11, fontWeight: "600", color: "#92400e" },

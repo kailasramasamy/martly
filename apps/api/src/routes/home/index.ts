@@ -93,7 +93,7 @@ export async function homeRoutes(app: FastifyInstance) {
         app.prisma.category.findMany({
           where: { parentId: null },
           orderBy: { sortOrder: "asc" },
-          select: { id: true, name: true, slug: true, parentId: true, sortOrder: true, imageUrl: true },
+          select: { id: true, name: true, slug: true, parentId: true, sortOrder: true, imageUrl: true, translations: true },
         }),
 
         // 3. Time-aware categories with products
@@ -212,6 +212,7 @@ export async function homeRoutes(app: FastifyInstance) {
           brand: p.brand, foodType: p.foodType, productType: p.productType,
           regulatoryMarks: p.regulatoryMarks, certifications: p.certifications,
           dangerWarnings: p.dangerWarnings, category: p.category, variants: p.variants,
+          translations: p.translations,
         };
       }
 
@@ -242,6 +243,7 @@ export async function homeRoutes(app: FastifyInstance) {
           id: cat.id,
           name: cat.name,
           slug: cat.slug,
+          translations: cat.translations,
           products: cat.products
             .filter((p) => p.storeProducts.length > 0)
             .map((p) => {

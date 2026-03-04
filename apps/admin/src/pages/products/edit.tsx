@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Edit, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Cascader, DatePicker, theme } from "antd";
+import { Form, Input, Select, InputNumber, Button, Card, Row, Col, AutoComplete, Cascader, DatePicker, Tabs, theme } from "antd";
 import {
   MinusCircleOutlined,
   PlusOutlined,
@@ -10,6 +10,7 @@ import {
   AuditOutlined,
   ExperimentOutlined,
   AppstoreOutlined,
+  TranslationOutlined,
 } from "@ant-design/icons";
 import dayjs from "dayjs";
 import { ImageUpload } from "../../components/ImageUpload";
@@ -478,6 +479,34 @@ export const ProductEdit = () => {
                   </>
                 )}
               </Form.List>
+            </Card>
+          </Col>
+
+          {/* Translations */}
+          <Col xs={24}>
+            <Card title={sectionTitle(<TranslationOutlined />, "Translations")} size="small">
+              <Tabs
+                items={[
+                  {
+                    key: "ta",
+                    label: "Tamil (\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD)",
+                    children: (
+                      <Row gutter={16}>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Name (Tamil)" name={["translations", "ta", "name"]}>
+                            <Input placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD" />
+                          </Form.Item>
+                        </Col>
+                        <Col xs={24} sm={12}>
+                          <Form.Item label="Description (Tamil)" name={["translations", "ta", "description"]}>
+                            <Input.TextArea rows={2} placeholder="\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD \u0BB5\u0BBF\u0BB5\u0BB0\u0BAE\u0BCD" />
+                          </Form.Item>
+                        </Col>
+                      </Row>
+                    ),
+                  },
+                ]}
+              />
             </Card>
           </Col>
         </Row>

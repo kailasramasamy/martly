@@ -4,6 +4,7 @@ import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
+import { useLanguage } from "../lib/language-context";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const CARD_GAP = 8;
@@ -23,6 +24,9 @@ interface FeaturedProductCardProps {
 }
 
 export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants, isWishlisted, onToggleWishlist, isMember }: FeaturedProductCardProps) {
+  const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
+  const localizedName = getLocalizedName(item.product);
+  const subtitle = getLocalizedSubtitle(item.product);
   const hasDiscount = item.pricing?.discountActive;
   const displayPrice = hasDiscount ? item.pricing!.effectivePrice : Number(item.price);
   const originalPrice = hasDiscount ? item.pricing!.originalPrice : null;
@@ -101,7 +105,8 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
         {brandName && (
           <Text style={styles.brand} numberOfLines={1}>{brandName}</Text>
         )}
-        <Text style={styles.name} numberOfLines={2}>{item.product.name}</Text>
+        <Text style={styles.name} numberOfLines={2}>{localizedName}</Text>
+        {subtitle && <Text style={styles.nameSubtitle} numberOfLines={1}>{subtitle}</Text>}
         <Text style={styles.unit} numberOfLines={1}>
           {item.variant.unitValue && item.variant.unitType
             ? `${item.variant.unitValue} ${item.variant.unitType}`
@@ -298,6 +303,11 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: colors.text,
     lineHeight: 14,
+    marginBottom: 1,
+  },
+  nameSubtitle: {
+    fontSize: 9,
+    color: "#94a3b8",
     marginBottom: 1,
   },
   unit: {

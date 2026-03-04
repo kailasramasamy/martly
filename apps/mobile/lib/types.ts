@@ -47,6 +47,10 @@ export interface StoreProduct {
   product: Product;
 }
 
+export interface Translations {
+  [lang: string]: { name?: string; description?: string };
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -69,6 +73,7 @@ export interface Product {
   countryOfOrigin?: string | null;
   averageRating?: number;
   reviewCount?: number;
+  translations?: Translations | null;
 }
 
 export interface UserAddress {
@@ -100,6 +105,7 @@ export interface CategoryTreeNode {
   parentId: string | null;
   sortOrder: number;
   imageUrl: string | null;
+  translations?: Translations | null;
   children: CategoryTreeNode[];
 }
 

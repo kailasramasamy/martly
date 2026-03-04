@@ -17,6 +17,7 @@ import { useWishlist } from "../lib/wishlist-context";
 import { useMembership, getBestPrice } from "../lib/membership-context";
 import { useBasketMode } from "../lib/basket-mode-context";
 import { useToast } from "../lib/toast-context";
+import { useLanguage } from "../lib/language-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../components/ProductGridCard";
 import { VariantBottomSheet } from "../components/VariantBottomSheet";
@@ -44,6 +45,7 @@ export default function SearchScreen() {
   const { isMember } = useMembership();
   const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
   const toast = useToast();
+  const { getLocalizedName } = useLanguage();
 
   const [query, setQuery] = useState(initialQuery ?? "");
   const [categories, setCategories] = useState<CategoryTreeNode[]>([]);
@@ -81,15 +83,16 @@ export default function SearchScreen() {
     } else if (sortBy === "newest") {
       navigation.setOptions({ title: "New Arrivals" });
     } else if (activeCategoryId && categories.length > 0) {
-      const findCat = (nodes: CategoryTreeNode[]): string | null => {
+      const findCat = (nodes: CategoryTreeNode[]): CategoryTreeNode | null => {
         for (const n of nodes) {
-          if (n.id === activeCategoryId) return n.name;
+          if (n.id === activeCategoryId) return n;
           const found = findCat(n.children);
           if (found) return found;
         }
         return null;
       };
-      const name = findCat(categories);
+      const cat = findCat(categories);
+      const name = cat ? getLocalizedName(cat) : null;
       navigation.setOptions({ title: name ?? "Products" });
     } else {
       navigation.setOptions({ title: "Search" });
@@ -294,7 +297,7 @@ export default function SearchScreen() {
           horizontal
           showsHorizontalScrollIndicator={false}
           data={[
-            ...categories.map((c) => ({ id: c.id, label: c.name, type: "category" as const })),
+            ...categories.map((c) => ({ id: c.id, label: getLocalizedName(c), type: "category" as const })),
             ...FOOD_TYPES.map((f) => ({ ...f, type: "food" as const })),
           ]}
           keyExtractor={(item) => `${item.type}-${item.id}`}
