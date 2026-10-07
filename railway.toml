@@ -1,0 +1,18 @@
+# Railway: project "martly" — PostgreSQL plus two services built from this repo.
+#
+# Service "api"   — Dockerfile (default). Migrations run on every start.
+#   DATABASE_URL          ${{Postgres.DATABASE_URL}}
+#   JWT_SECRET            long random string
+#   CORS_ORIGIN           https://<admin service domain>
+#   AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, S3_BUCKET, S3_KEY_PREFIX, MEDIA_PUBLIC_BASE_URL
+#   RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET          (test keys until go-live)
+#   FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY
+#   OPENAI_API_KEY / ANTHROPIC_API_KEY            (AI ordering)
+#   GOOGLE_MAPS_API_KEY                           (address geocoding)
+#
+# Service "admin" — RAILWAY_DOCKERFILE_PATH=Dockerfile.admin
+#   VITE_API_URL          https://<api service domain>   (baked in at build time)
+
+[deploy]
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3

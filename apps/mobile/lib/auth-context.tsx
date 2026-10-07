@@ -3,6 +3,7 @@ import * as SecureStore from "expo-secure-store";
 import { setAccessToken, setTokenRefresher, api } from "./api";
 import { registerForPushNotifications, unregisterPushToken } from "./notifications";
 import type { AuthTokens } from "@martly/shared/types";
+import { API_URL } from "./config";
 
 interface UserInfo {
   id: string;
@@ -31,7 +32,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState<UserInfo | null>(null);
   const pushTokenRef = useRef<string | null>(null);
-  const logoutRef = useRef<() => Promise<void>>();
+  const logoutRef = useRef<() => Promise<void>>(undefined);
 
   // Register the token refresher so api.ts can transparently refresh on 401
   useEffect(() => {
@@ -42,7 +43,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           logoutRef.current?.();
           return null;
         }
-        const API_URL = process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:7001";
         const res = await fetch(`${API_URL}/api/v1/auth/refresh`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },

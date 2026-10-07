@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   TextInput,
+  Image,
 } from "react-native";
 import { useLocalSearchParams, useRouter, useFocusEffect } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -24,8 +25,8 @@ interface OrderItemData {
   quantity: number;
   unitPrice: string;
   totalPrice: string;
-  product: { name: string };
-  variant?: { name: string; unitType: string; unitValue: string } | null;
+  product: { name: string; imageUrl?: string | null };
+  variant?: { name: string; unitType: string; unitValue: string; imageUrl?: string | null } | null;
 }
 
 interface StatusLogData {
@@ -415,16 +416,27 @@ export default function OrderDetailScreen() {
         <Text style={styles.sectionTitle}>Items</Text>
         {order.items.map((item) => (
           <View key={item.id} style={styles.itemRow}>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.itemName}>{item.product.name}</Text>
+            <View style={styles.itemThumb}>
+              {item.variant?.imageUrl || item.product.imageUrl ? (
+                <Image
+                  source={{ uri: (item.variant?.imageUrl || item.product.imageUrl)! }}
+                  style={styles.itemThumbImage}
+                  resizeMode="contain"
+                />
+              ) : (
+                <Ionicons name="cube-outline" size={18} color="#94a3b8" />
+              )}
+            </View>
+            <View style={styles.itemInfo}>
+              <Text style={styles.itemName} numberOfLines={2}>{item.product.name}</Text>
               {item.variant && (
                 <Text style={styles.itemVariant}>
                   {item.variant.name}
                 </Text>
               )}
-              <Text style={styles.itemQty}>{item.quantity} x ${Number(item.unitPrice).toFixed(2)}</Text>
+              <Text style={styles.itemQty}>{item.quantity} {"\u00D7"} {"\u20B9"}{Number(item.unitPrice).toFixed(0)}</Text>
             </View>
-            <Text style={styles.itemPrice}>${Number(item.totalPrice).toFixed(2)}</Text>
+            <Text style={styles.itemPrice}>{"\u20B9"}{Number(item.totalPrice).toFixed(0)}</Text>
           </View>
         ))}
       </View>
@@ -853,11 +865,19 @@ const styles = StyleSheet.create({
   address: { fontSize: fontSize.md, color: colors.textSecondary },
   itemRow: {
     flexDirection: "row",
-    justifyContent: "space-between",
-    paddingVertical: spacing.xs,
+    alignItems: "center",
+    gap: 12,
+    paddingVertical: 10,
     borderBottomWidth: 1,
     borderBottomColor: colors.border,
   },
+  itemThumb: {
+    width: 52, height: 52, borderRadius: 10, backgroundColor: "#f8fafc",
+    padding: 3, alignItems: "center", justifyContent: "center", overflow: "hidden",
+  },
+  // Blends white product-photo backgrounds into the tile, as on the product cards
+  itemThumbImage: { width: "100%", height: "100%", mixBlendMode: "multiply" },
+  itemInfo: { flex: 1 },
   itemName: { fontSize: fontSize.md, fontWeight: "600", color: colors.text },
   itemVariant: { fontSize: fontSize.sm, color: colors.textSecondary, marginTop: 1 },
   itemQty: { fontSize: fontSize.sm, color: colors.textSecondary, marginTop: 2 },

@@ -156,7 +156,7 @@ export async function smartReorderRoutes(app: FastifyInstance) {
       const storeProducts = await app.prisma.storeProduct.findMany({
         where: { id: { in: spIds }, isActive: true },
         include: {
-          product: { include: { category: true, brand: true, variants: true } },
+          product: { include: { subcategory: true, brand: true, variants: true } },
           variant: true,
         },
       });
@@ -205,7 +205,7 @@ export async function smartReorderRoutes(app: FastifyInstance) {
             brand: sp.product.brand,
             foodType: sp.product.foodType,
             productType: sp.product.productType,
-            category: sp.product.category,
+            subcategory: sp.product.subcategory,
             variants: sp.product.variants,
           },
           variant,

@@ -1,10 +1,13 @@
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
+import { API_URL } from "./config";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:7001";
 
 let accessToken: string | null = null;
 let tokenRefresher: (() => Promise<string | null>) | null = null;
 let refreshPromise: Promise<string | null> | null = null;
+
+// Credential endpoints: a 401 here means bad input, not an expired session
+const NO_REFRESH_PATHS = ["/auth/send-otp", "/auth/verify-otp", "/auth/register", "/auth/refresh"];
 
 export function setAccessToken(token: string | null) {
   accessToken = token;
@@ -33,8 +36,8 @@ async function request<T>(path: string, options: RequestInit = {}, isRetry = fal
     headers,
   });
 
-  // On 401, try refreshing the token once (skip for auth endpoints)
-  if (response.status === 401 && !isRetry && tokenRefresher && !path.includes("/auth/")) {
+  // On 401, try refreshing the token once (skip for credential endpoints)
+  if (response.status === 401 && !isRetry && tokenRefresher && !NO_REFRESH_PATHS.some((p) => path.includes(p))) {
     // Deduplicate concurrent refresh calls
     if (!refreshPromise) {
       refreshPromise = tokenRefresher().finally(() => { refreshPromise = null; });

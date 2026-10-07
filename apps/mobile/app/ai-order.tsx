@@ -12,7 +12,7 @@ import {
   Animated,
   Dimensions,
 } from "react-native";
-import { useRouter } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
@@ -238,6 +238,12 @@ export default function AIOrderScreen() {
       addsPunctuation: true,
     });
   }, [showToast]);
+
+  // Opened from the home search bar's mic: start listening right away
+  const { voice } = useLocalSearchParams<{ voice?: string }>();
+  useEffect(() => {
+    if (voice === "1") startListening();
+  }, [voice, startListening]);
 
   const stopListening = useCallback(() => {
     ExpoSpeechRecognitionModule.stop();
@@ -880,7 +886,7 @@ const s = StyleSheet.create({
     position: "absolute",
     top: 6,
     left: 6,
-    backgroundColor: "#ef4444",
+    backgroundColor: colors.accent,
     borderRadius: 6,
     paddingHorizontal: 6,
     paddingVertical: 2,
@@ -888,7 +894,7 @@ const s = StyleSheet.create({
   discountBadgeText: {
     fontSize: 9,
     fontFamily: fonts.bold,
-    color: "#fff",
+    color: colors.accentText,
   },
   productInfo: {
     padding: 10,

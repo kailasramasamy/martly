@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { View, Animated, StyleSheet } from "react-native";
 import { colors, spacing } from "../constants/theme";
-import { GRID_CARD_WIDTH, GRID_GAP, GRID_IMAGE_HEIGHT, GRID_H_PADDING } from "./ProductGridCard";
+import { GRID_CARD_WIDTH, GRID_GAP, GRID_H_PADDING, imageTileSize } from "./FeaturedProductCard";
 import { FEATURED_CARD_WIDTH } from "./FeaturedProductCard";
 
 interface SkeletonBoxProps {
@@ -79,7 +79,7 @@ export function ProductDetailSkeleton() {
 export function ProductGridCardSkeleton() {
   return (
     <View style={sk.gridCard}>
-      <SkeletonBox width={GRID_CARD_WIDTH} height={GRID_IMAGE_HEIGHT} borderRadius={0} />
+      <SkeletonBox width={imageTileSize(GRID_CARD_WIDTH)} height={imageTileSize(GRID_CARD_WIDTH)} borderRadius={10} style={{ margin: 6 }} />
       <View style={sk.gridCardContent}>
         <SkeletonBox width="85%" height={13} />
         <SkeletonBox width="50%" height={11} style={{ marginTop: 4 }} />

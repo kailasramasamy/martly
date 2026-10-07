@@ -14,6 +14,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import Markdown from "react-native-markdown-display";
 import type { AppNotification } from "../lib/types";
+import { colors } from "../constants/theme";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("window");
 const SHEET_MAX = SCREEN_HEIGHT * 0.78;
@@ -28,8 +29,8 @@ const TYPE_CONFIG: Record<
   ORDER_OUT_FOR_DELIVERY: { icon: "bicycle", bg: "#f3e8ff", color: "#7c3aed" },
   ORDER_DELIVERED: { icon: "checkmark-done-circle", bg: "#dcfce7", color: "#16a34a" },
   ORDER_CANCELLED: { icon: "close-circle", bg: "#fee2e2", color: "#dc2626" },
-  WALLET_CREDITED: { icon: "wallet", bg: "#ccfbf1", color: "#0d9488" },
-  WALLET_DEBITED: { icon: "wallet-outline", bg: "#ccfbf1", color: "#0d9488" },
+  WALLET_CREDITED: { icon: "wallet", bg: "#ccfbf1", color: colors.primary },
+  WALLET_DEBITED: { icon: "wallet-outline", bg: "#ccfbf1", color: colors.primary },
   LOYALTY_POINTS_EARNED: { icon: "star", bg: "#fef3c7", color: "#d97706" },
   LOYALTY_POINTS_REDEEMED: { icon: "star-outline", bg: "#fef3c7", color: "#d97706" },
   PROMOTIONAL: { icon: "megaphone", bg: "#fce7f3", color: "#db2777" },
@@ -204,31 +205,31 @@ const markdownStyles = StyleSheet.create({
   heading1: {
     fontSize: 20,
     fontWeight: "700",
-    color: "#0d9488",
+    color: colors.primary,
     marginTop: 12,
     marginBottom: 6,
   },
   heading2: {
     fontSize: 18,
     fontWeight: "700",
-    color: "#0d9488",
+    color: colors.primary,
     marginTop: 10,
     marginBottom: 4,
   },
   heading3: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#0d9488",
+    color: colors.primary,
     marginTop: 8,
     marginBottom: 4,
   },
   link: {
-    color: "#0d9488",
+    color: colors.primary,
     textDecorationLine: "underline",
   },
   blockquote: {
     borderLeftWidth: 3,
-    borderLeftColor: "#0d9488",
+    borderLeftColor: colors.primary,
     backgroundColor: "#f0fdfa",
     paddingLeft: 12,
     paddingVertical: 6,

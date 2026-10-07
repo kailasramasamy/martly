@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
-import { View, Text, Animated, StyleSheet } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { View, Animated, StyleSheet } from "react-native";
+import { colors } from "../constants/theme";
+
+const wordmark = require("../assets/splash-wordmark.png");
 
 interface SplashScreenProps {
   onFinish: () => void;
@@ -10,14 +12,13 @@ interface SplashScreenProps {
 export default function SplashScreen({ onFinish, onBeforeFadeOut }: SplashScreenProps) {
   const iconScale = useRef(new Animated.Value(0)).current;
   const iconOpacity = useRef(new Animated.Value(0)).current;
-  const titleOpacity = useRef(new Animated.Value(0)).current;
   const subtitleOpacity = useRef(new Animated.Value(0)).current;
   const screenOpacity = useRef(new Animated.Value(1)).current;
 
   useEffect(() => {
     // Entrance animations
     Animated.sequence([
-      // Icon scales in and fades in
+      // Wordmark scales in and fades in
       Animated.parallel([
         Animated.spring(iconScale, {
           toValue: 1,
@@ -31,12 +32,6 @@ export default function SplashScreen({ onFinish, onBeforeFadeOut }: SplashScreen
           useNativeDriver: true,
         }),
       ]),
-      // Title fades in
-      Animated.timing(titleOpacity, {
-        toValue: 1,
-        duration: 350,
-        useNativeDriver: true,
-      }),
       // Subtitle fades in
       Animated.timing(subtitleOpacity, {
         toValue: 1,
@@ -64,21 +59,11 @@ export default function SplashScreen({ onFinish, onBeforeFadeOut }: SplashScreen
   return (
     <Animated.View style={[styles.container, { opacity: screenOpacity }]}>
       <View style={styles.content}>
-        <Animated.View
-          style={[
-            styles.iconContainer,
-            {
-              opacity: iconOpacity,
-              transform: [{ scale: iconScale }],
-            },
-          ]}
-        >
-          <Ionicons name="leaf" size={56} color="#fff" />
-        </Animated.View>
-
-        <Animated.Text style={[styles.title, { opacity: titleOpacity }]}>
-          Martly
-        </Animated.Text>
+        <Animated.Image
+          source={wordmark}
+          style={[styles.wordmark, { opacity: iconOpacity, transform: [{ scale: iconScale }] }]}
+          resizeMode="contain"
+        />
 
         <Animated.Text style={[styles.subtitle, { opacity: subtitleOpacity }]}>
           Fresh groceries, delivered
@@ -91,7 +76,7 @@ export default function SplashScreen({ onFinish, onBeforeFadeOut }: SplashScreen
 const styles = StyleSheet.create({
   container: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: "#16a34a",
+    backgroundColor: colors.primary,
     justifyContent: "center",
     alignItems: "center",
     zIndex: 999,
@@ -99,25 +84,17 @@ const styles = StyleSheet.create({
   content: {
     alignItems: "center",
   },
-  iconContainer: {
-    width: 96,
-    height: 96,
-    borderRadius: 28,
-    backgroundColor: "rgba(255, 255, 255, 0.2)",
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: 20,
-  },
-  title: {
-    fontSize: 40,
-    fontWeight: "800",
-    color: "#fff",
-    letterSpacing: 1,
+  wordmark: {
+    width: 200,
+    height: 71,
   },
   subtitle: {
     fontSize: 17,
     color: "rgba(255, 255, 255, 0.85)",
-    marginTop: 8,
+    position: "absolute",
+    top: 79,
+    width: 300,
+    textAlign: "center",
     fontWeight: "500",
   },
 });

@@ -33,7 +33,7 @@ import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
 
   // Format unitType on variants (and nested store-product variants) for API responses
   function formatProductUnits<T extends Record<string, unknown>>(product: T): T {
-    const result = { ...product };
+    const result: Record<string, unknown> = { ...product };
     if (Array.isArray(result.variants)) {
       result.variants = formatVariantUnits(result.variants as { unitType: string }[]);
     }
@@ -42,7 +42,7 @@ import { formatVariantUnit, formatVariantUnits } from "../../services/units.js";
         sp.variant ? { ...sp, variant: formatVariantUnit(sp.variant) } : sp,
       );
     }
-    return result;
+    return result as T;
   }
 
 export async function productRoutes(app: FastifyInstance) {
@@ -53,9 +53,9 @@ export async function productRoutes(app: FastifyInstance) {
     const user = getOrgUser(request);
     const where = buildVisibilityFilter(user, catalogType);
 
-    const [categoryGroups, typeGroups, categoryList] = await Promise.all([
+    const [subcategoryGroups, typeGroups, subcategoryList] = await Promise.all([
       app.prisma.product.groupBy({
-        by: ["categoryId"],
+        by: ["subcategoryId"],
         where: where as Prisma.ProductWhereInput,
         _count: true,
       }),
@@ -64,17 +64,17 @@ export async function productRoutes(app: FastifyInstance) {
         where: where as Prisma.ProductWhereInput,
         _count: true,
       }),
-      app.prisma.category.findMany({ select: { id: true, name: true } }),
+      app.prisma.subcategory.findMany({ select: { id: true, name: true } }),
     ]);
 
-    const catNameMap = new Map(categoryList.map((c) => [c.id, c.name]));
+    const subcatNameMap = new Map(subcategoryList.map((c) => [c.id, c.name]));
 
     return {
       success: true,
       data: {
-        categories: categoryGroups
-          .filter((g) => g.categoryId != null)
-          .map((g) => ({ id: g.categoryId!, name: catNameMap.get(g.categoryId!) ?? "Unknown", count: g._count }))
+        subcategories: subcategoryGroups
+          .filter((g) => g.subcategoryId != null)
+          .map((g) => ({ id: g.subcategoryId!, name: subcatNameMap.get(g.subcategoryId!) ?? "Unknown", count: g._count }))
           .sort((a, b) => b.count - a.count),
         productTypes: typeGroups
           .filter((g) => g.productType != null)
@@ -87,11 +87,11 @@ export async function productRoutes(app: FastifyInstance) {
   // List products (guests see master catalog only)
   app.get("/", { preHandler: [authenticateOptional] }, async (request) => {
     const {
-      page = 1, pageSize = 20, q, categoryId, brandId, foodType, productType,
+      page = 1, pageSize = 20, q, subcategoryId, categoryId, departmentId, brandId, foodType, productType,
       catalogType, scope, hasStoreProducts, includeStoreProducts, organizationId: filterOrgId,
     } = request.query as {
-      page?: number; pageSize?: number; q?: string; categoryId?: string;
-      brandId?: string; foodType?: string; productType?: string; catalogType?: string;
+      page?: number; pageSize?: number; q?: string; subcategoryId?: string; categoryId?: string;
+      departmentId?: string; brandId?: string; foodType?: string; productType?: string; catalogType?: string;
       scope?: string; hasStoreProducts?: string; includeStoreProducts?: string; organizationId?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
@@ -162,20 +162,15 @@ export async function productRoutes(app: FastifyInstance) {
         where.OR = textSearch;
       }
     }
-    if (categoryId) {
-      const allCats = await app.prisma.category.findMany({ select: { id: true, parentId: true } });
-      const ids = new Set<string>([categoryId]);
-      let changed = true;
-      while (changed) {
-        changed = false;
-        for (const c of allCats) {
-          if (c.parentId && ids.has(c.parentId) && !ids.has(c.id)) {
-            ids.add(c.id);
-            changed = true;
-          }
-        }
-      }
-      where.categoryId = ids.size === 1 ? categoryId : { in: Array.from(ids) };
+    if (subcategoryId) {
+      where.subcategoryId = subcategoryId;
+    } else if (categoryId) {
+      const subs = await app.prisma.subcategory.findMany({ where: { categoryId }, select: { id: true } });
+      where.subcategoryId = { in: subs.map((s) => s.id) };
+    } else if (departmentId) {
+      const cats = await app.prisma.category.findMany({ where: { departmentId }, select: { id: true } });
+      const subs = await app.prisma.subcategory.findMany({ where: { categoryId: { in: cats.map((c) => c.id) } }, select: { id: true } });
+      where.subcategoryId = { in: subs.map((s) => s.id) };
     }
     if (brandId) where.brandId = brandId;
     if (foodType) where.foodType = foodType;
@@ -183,7 +178,7 @@ export async function productRoutes(app: FastifyInstance) {
     if (filterOrgId) where.organizationId = filterOrgId;
 
     // Build include — optionally include store-products
-    const include: Prisma.ProductInclude = { category: true, brand: true, variants: true, organization: { select: { id: true, name: true } } };
+    const include: Prisma.ProductInclude = { subcategory: { include: { category: { include: { department: true } } } }, brand: true, variants: true, organization: { select: { id: true, name: true } } };
     if (includeStoreProducts === "true") {
       include.storeProducts = {
         ...(orgStoreIds ? { where: { storeId: { in: orgStoreIds } } } : {}),
@@ -215,9 +210,7 @@ export async function productRoutes(app: FastifyInstance) {
     const product = await app.prisma.product.findUnique({
       where: { id: request.params.id },
       include: {
-        category: {
-          include: { parent: { include: { parent: { include: { parent: true } } } } },
-        },
+        subcategory: { include: { category: { include: { department: true } } } },
         brand: true,
         variants: true,
       },
@@ -264,7 +257,7 @@ export async function productRoutes(app: FastifyInstance) {
             create: variantsToCreate,
           },
         },
-        include: { category: true, brand: true, variants: true },
+        include: { subcategory: true, brand: true, variants: true },
       });
 
       // ORG_ADMIN: auto-assign to stores (all active org stores or specific ones)
@@ -345,7 +338,7 @@ export async function productRoutes(app: FastifyInstance) {
       const product = await app.prisma.product.update({
         where: { id: request.params.id },
         data,
-        include: { category: true, brand: true, variants: true },
+        include: { subcategory: true, brand: true, variants: true },
       });
 
       // Update variants if provided
@@ -366,7 +359,7 @@ export async function productRoutes(app: FastifyInstance) {
         // Re-fetch with updated variants
         const updated = await app.prisma.product.findUnique({
           where: { id: request.params.id },
-          include: { category: true, brand: true, variants: true },
+          include: { subcategory: true, brand: true, variants: true },
         });
         const response: ApiResponse<typeof updated> = { success: true, data: formatProductUnits(updated!) };
         return response;

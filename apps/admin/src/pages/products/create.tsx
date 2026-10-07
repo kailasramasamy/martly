@@ -116,11 +116,9 @@ interface StoreRecord {
   status: string;
 }
 
-interface CategoryTreeNode {
-  id: string;
-  name: string;
-  children: CategoryTreeNode[];
-}
+interface SubcategoryNode { id: string; name: string; }
+interface CategoryNode { id: string; name: string; subcategories: SubcategoryNode[]; }
+interface DepartmentNode { id: string; name: string; categories: CategoryNode[]; }
 
 interface CascaderOption {
   value: string;
@@ -128,11 +126,18 @@ interface CascaderOption {
   children?: CascaderOption[];
 }
 
-function buildCascaderOptions(nodes: CategoryTreeNode[]): CascaderOption[] {
-  return nodes.map((n) => ({
-    value: n.id,
-    label: n.name,
-    children: n.children?.length ? buildCascaderOptions(n.children) : undefined,
+function buildCascaderOptions(departments: DepartmentNode[]): CascaderOption[] {
+  return departments.map((d) => ({
+    value: d.id,
+    label: d.name,
+    children: d.categories.map((c) => ({
+      value: c.id,
+      label: c.name,
+      children: c.subcategories.map((s) => ({
+        value: s.id,
+        label: s.name,
+      })),
+    })),
   }));
 }
 
@@ -178,7 +183,7 @@ export const ProductCreate = () => {
       values.storeIds = selectedStoreIds;
     }
     const path = values.categoryPath as string[] | undefined;
-    values.categoryId = path?.length ? path[path.length - 1] : null;
+    values.subcategoryId = path?.length ? path[path.length - 1] : null;
     delete values.categoryPath;
     originalOnFinish?.(values);
   };

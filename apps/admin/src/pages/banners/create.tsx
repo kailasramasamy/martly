@@ -1,28 +1,66 @@
+import { useState, useEffect } from "react";
 import { Create, useForm } from "@refinedev/antd";
-import { Form, Input, Select, InputNumber, Switch, DatePicker, Card, Row, Col } from "antd";
+import { Form, Input, Select, InputNumber, Switch, DatePicker, Card, Row, Col, Cascader } from "antd";
 import { BannerPlacementLabels, BannerActionTypeLabels } from "@martly/shared/constants";
 import { ImageUpload } from "../../components/ImageUpload";
 import { useList } from "@refinedev/core";
+import { axiosInstance } from "../../providers/data-provider";
 
 const placementOptions = Object.entries(BannerPlacementLabels).map(([value, label]) => ({ value, label }));
 const actionTypeOptions = Object.entries(BannerActionTypeLabels).map(([value, label]) => ({ value, label }));
+
+interface SubcategoryNode { id: string; name: string; }
+interface CategoryNode { id: string; name: string; subcategories: SubcategoryNode[]; }
+interface DepartmentNode { id: string; name: string; categories: CategoryNode[]; }
+
+interface CascaderOption { value: string; label: string; children?: CascaderOption[]; }
+
+function buildCascaderOptions(departments: DepartmentNode[]): CascaderOption[] {
+  return departments.map((d) => ({
+    value: d.id,
+    label: d.name,
+    children: d.categories.map((c) => ({
+      value: c.id,
+      label: c.name,
+      children: c.subcategories.map((s) => ({ value: s.id, label: s.name })),
+    })),
+  }));
+}
 
 export const BannerCreate = () => {
   const { formProps, saveButtonProps, form } = useForm({ resource: "banners" });
   const actionType = Form.useWatch("actionType", form);
   const placement = Form.useWatch("placement", form);
 
-  const { data: categoriesData } = useList({ resource: "categories", pagination: { pageSize: 200 } });
+  const [cascaderOptions, setCascaderOptions] = useState<CascaderOption[]>([]);
+  useEffect(() => {
+    axiosInstance.get("/categories/tree").then((res) => {
+      setCascaderOptions(buildCascaderOptions(res.data.data));
+    }).catch(() => {});
+  }, []);
+
   const { data: collectionsData } = useList({ resource: "collections", pagination: { pageSize: 200 } });
   const { data: storesData } = useList({ resource: "stores", pagination: { pageSize: 200 } });
 
-  const categories = categoriesData?.data ?? [];
   const collections = collectionsData?.data ?? [];
   const stores = storesData?.data ?? [];
 
+  // Transform categoryPath cascader to correct FK on submit
+  const originalOnFinish = formProps.onFinish;
+  const handleFinish = (values: Record<string, unknown>) => {
+    const path = values.categoryPath as string[] | undefined;
+    if (path?.length) {
+      if (path.length === 1) values.departmentId = path[0];
+      else if (path.length === 2) values.categoryId = path[1];
+      else if (path.length === 3) values.subcategoryId = path[2];
+    }
+    delete values.categoryPath;
+    originalOnFinish?.(values);
+  };
+
   return (
     <Create saveButtonProps={saveButtonProps}>
-      <Form {...formProps} layout="vertical" initialValues={{ actionType: "NONE", isActive: true, sortOrder: 0 }}>
+      <Form {...formProps} onFinish={handleFinish} layout="vertical" initialValues={{ actionType: "NONE", isActive: true, sortOrder: 0 }}>
         <Row gutter={24}>
           <Col xs={24} lg={14}>
             <Card title="Banner Details" size="small">
@@ -47,11 +85,17 @@ export const BannerCreate = () => {
 
               {actionType === "CATEGORY" && (
                 <Form.Item name="actionTarget" label="Target Category" rules={[{ required: true }]}>
-                  <Select
-                    showSearch
-                    optionFilterProp="label"
-                    options={categories.map((c: any) => ({ value: c.id, label: c.name }))}
-                    placeholder="Select a category"
+                  <Cascader
+                    options={cascaderOptions}
+                    changeOnSelect
+                    placeholder="Select a department, category, or subcategory"
+                    showSearch={{
+                      filter: (input, path) =>
+                        path.some((opt) => String(opt.label).toLowerCase().includes(input.toLowerCase())),
+                    }}
+                    onChange={(path) => {
+                      if (path?.length) form.setFieldValue("actionTarget", path[path.length - 1]);
+                    }}
                   />
                 </Form.Item>
               )}
@@ -118,13 +162,16 @@ export const BannerCreate = () => {
                 />
               </Form.Item>
               {placement === "CATEGORY_TOP" && (
-                <Form.Item name="categoryId" label="Category (optional)">
-                  <Select
+                <Form.Item name="categoryPath" label="Category (optional)">
+                  <Cascader
+                    options={cascaderOptions}
+                    changeOnSelect
                     allowClear
-                    showSearch
-                    optionFilterProp="label"
-                    options={categories.map((c: any) => ({ value: c.id, label: c.name }))}
                     placeholder="All categories (generic)"
+                    showSearch={{
+                      filter: (input, path) =>
+                        path.some((opt) => String(opt.label).toLowerCase().includes(input.toLowerCase())),
+                    }}
                   />
                 </Form.Item>
               )}

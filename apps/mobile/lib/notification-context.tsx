@@ -24,8 +24,9 @@ import { api } from "./api";
 import { useAuth } from "./auth-context";
 import { resolveNotificationDeepLink } from "./notification-helpers";
 import type { AppNotification } from "./types";
+import { colors } from "../constants/theme";
+import { API_URL } from "./config";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:7001";
 const WS_URL = API_URL.replace(/^http/, "ws");
 const MAX_BACKOFF = 30000;
 const BANNER_DURATION = 4000;
@@ -37,8 +38,8 @@ const TYPE_CONFIG: Record<string, { icon: keyof typeof Ionicons.glyphMap; bg: st
   ORDER_OUT_FOR_DELIVERY: { icon: "bicycle", bg: "#f3e8ff", color: "#7c3aed" },
   ORDER_DELIVERED: { icon: "checkmark-done-circle", bg: "#dcfce7", color: "#16a34a" },
   ORDER_CANCELLED: { icon: "close-circle", bg: "#fee2e2", color: "#dc2626" },
-  WALLET_CREDITED: { icon: "wallet", bg: "#ccfbf1", color: "#0d9488" },
-  WALLET_DEBITED: { icon: "wallet-outline", bg: "#ccfbf1", color: "#0d9488" },
+  WALLET_CREDITED: { icon: "wallet", bg: "#ccfbf1", color: colors.primary },
+  WALLET_DEBITED: { icon: "wallet-outline", bg: "#ccfbf1", color: colors.primary },
   LOYALTY_POINTS_EARNED: { icon: "star", bg: "#fef3c7", color: "#d97706" },
   LOYALTY_POINTS_REDEEMED: { icon: "star-outline", bg: "#fef3c7", color: "#d97706" },
   PROMOTIONAL: { icon: "megaphone", bg: "#fce7f3", color: "#db2777" },

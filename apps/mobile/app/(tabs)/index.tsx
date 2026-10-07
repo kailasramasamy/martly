@@ -6,13 +6,11 @@ import {
   FlatList,
   ScrollView,
   TouchableOpacity,
-  Pressable,
   StyleSheet,
   Modal,
   Dimensions,
   RefreshControl,
   Image,
-  Animated,
 } from "react-native";
 import { router } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -21,41 +19,37 @@ import { LinearGradient } from "expo-linear-gradient";
 import { RecipeCard } from "../../components/RecipeCard";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
-import { useMembership, getBestPrice } from "../../lib/membership-context";
+import { useMembership } from "../../lib/membership-context";
 import { useNotifications } from "../../lib/notification-context";
-import { useCart } from "../../lib/cart-context";
-import { useWishlist } from "../../lib/wishlist-context";
-import { useAuth } from "../../lib/auth-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
-import { useToast } from "../../lib/toast-context";
 import { useLanguage } from "../../lib/language-context";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
-import { FeaturedProductCard, FEATURED_CARD_WIDTH } from "../../components/FeaturedProductCard";
+import { FEATURED_CARD_WIDTH } from "../../components/FeaturedProductCard";
+import { ProductList } from "../../components/ProductList";
+import { ProductActionsProvider } from "../../lib/product-actions";
 import { FloatingCart } from "../../components/FloatingCart";
-import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { HomeScreenSkeleton } from "../../components/SkeletonLoader";
+import StoreDiscovery from "../../components/store-discovery/StoreDiscovery";
+import { HeroBannerSlide } from "../../components/HeroBannerSlide";
+import { CategoryTile } from "../../components/CategoryTile";
+import { TimeSpotlight } from "../../components/TimeSpotlight";
+import { HomeHeaderLocation } from "../../components/HomeHeaderLocation";
+import { SearchBarButton } from "../../components/SearchBarButton";
+import { PlusPromoStrip } from "../../components/PlusPromoStrip";
 import type { Store, StoreProduct, HomeFeed, Banner } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
 
-const TIME_SUBTITLES: Record<string, string> = {
-  morning: "Start your morning right",
-  afternoon: "Afternoon picks",
-  evening: "Evening essentials",
-  night: "Late night cravings",
-};
+// 4 tiles per row inside the padded section card
+const CATEGORY_TILE_SIZE = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - 32 - 12 * 3) / 4);
 
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
-  const { stores, selectedStore, setSelectedStore, loading: storesLoading } = useStore();
-  const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity, productQuantityMap } = useCart();
-  const { wishlistedIds, isWishlisted, toggle: toggleWishlist } = useWishlist();
-  const { user } = useAuth();
+  const { stores, selectedStore, setSelectedStore, loading: storesLoading, userArea, refreshStores } = useStore();
   const { isMember } = useMembership();
-  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
-  const toast = useToast();
+  const { isBasketMode } = useBasketMode();
   const { getLocalizedName } = useLanguage();
 
   const [homeFeed, setHomeFeed] = useState<HomeFeed | null>(null);
@@ -63,7 +57,6 @@ export default function HomeScreen() {
   const [showStorePicker, setShowStorePicker] = useState(false);
   const [storeSearch, setStoreSearch] = useState("");
   const [refreshing, setRefreshing] = useState(false);
-  const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
   const [memberStatus, setMemberStatus] = useState<{ isMember: boolean; membership: { planName: string; endDate: string; daysLeft: number } | null } | null>(null);
   const [hasSubscriptions, setHasSubscriptions] = useState(false);
   const { unreadCount } = useNotifications();
@@ -106,19 +99,11 @@ export default function HomeScreen() {
 
   const onRefresh = useCallback(async () => {
     setRefreshing(true);
-    fetchHomeFeed();
+    if (selectedStore) fetchHomeFeed();
+    else await refreshStores();
     setTimeout(() => setRefreshing(false), 600);
-  }, [fetchHomeFeed]);
+  }, [fetchHomeFeed, refreshStores, selectedStore]);
 
-  const rawCartQtyMap = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const item of cartItems) {
-      map.set(item.storeProductId, item.quantity);
-    }
-    return map;
-  }, [cartItems]);
-
-  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
 
 
   const filteredStores = useMemo(() => {
@@ -132,10 +117,6 @@ export default function HomeScreen() {
   // ── Banner data by placement ──
   const heroBanners = useMemo(
     () => (homeFeed?.banners ?? []).filter((b) => b.placement === "HERO_CAROUSEL"),
-    [homeFeed?.banners],
-  );
-  const stripBanners = useMemo(
-    () => (homeFeed?.banners ?? []).filter((b) => b.placement === "CATEGORY_STRIP"),
     [homeFeed?.banners],
   );
   const midPageBanners = useMemo(
@@ -200,37 +181,6 @@ export default function HomeScreen() {
     }
   }, []);
 
-  const handleAddToCart = useCallback(
-    (sp: StoreProduct) => {
-      if (!selectedStore) return;
-
-      if (isBasketMode) {
-        addBasketItem(sp.id);
-        toast.show("Added to tomorrow's basket", "success");
-        return;
-      }
-
-      const item = {
-        storeProductId: sp.id,
-        productId: sp.product.id,
-        productName: sp.product.name,
-        variantId: sp.variant.id,
-        variantName: sp.variant.name,
-        price: getBestPrice(sp, isMember),
-        imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
-      };
-
-      if (cartStoreId && cartStoreId !== selectedStore.id) {
-        setReplaceCartConfirm({
-          pending: () => addItem(selectedStore.id, selectedStore.name, item),
-        });
-        return;
-      }
-
-      addItem(selectedStore.id, selectedStore.name, item);
-    },
-    [selectedStore, cartStoreId, addItem, isMember, isBasketMode, addBasketItem, toast],
-  );
 
   const handleCategoryPress = useCallback(
     (categoryId: string) => {
@@ -248,700 +198,424 @@ export default function HomeScreen() {
     [setSelectedStore],
   );
 
-  const effectiveUpdateQty = useCallback(
-    (spId: string, qty: number) => {
-      if (isBasketMode) {
-        updateBasketQuantity(spId, qty);
-        return;
-      }
-      updateQuantity(spId, qty);
-    },
-    [isBasketMode, updateBasketQuantity, updateQuantity],
-  );
 
   const renderProductList = useCallback(
-    (products: StoreProduct[]) => (
-      <FlatList
-        horizontal
-        data={products}
-        keyExtractor={(item) => item.id}
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.productList}
-        renderItem={({ item }) => {
-          const vc = (item as any).variantCount ?? 1;
-          // For multi-variant: show total qty across all variants; for single: show base qty
-          const qty = vc > 1
-            ? (isBasketMode ? 0 : (productQuantityMap.get(item.product.id) ?? 0))
-            : (cartQuantityMap.get(item.id) ?? 0);
-          return (
-            <FeaturedProductCard
-              item={item}
-              onAddToCart={handleAddToCart}
-              onUpdateQuantity={effectiveUpdateQty}
-              quantity={qty}
-              storeId={selectedStore?.id}
-              variantCount={vc}
-              onShowVariants={() => {
-                const params: Record<string, string> = { id: item.product.id };
-                if (selectedStore) params.storeId = selectedStore.id;
-                router.push({ pathname: "/product/[id]", params });
-              }}
-              isWishlisted={isWishlisted(item.product.id)}
-              onToggleWishlist={toggleWishlist}
-              isMember={isMember}
-            />
-          );
-        }}
-      />
-    ),
-    [handleAddToCart, effectiveUpdateQty, cartQuantityMap, productQuantityMap, selectedStore, wishlistedIds, isBasketMode],
+    (products: StoreProduct[]) => <ProductList products={products} layout="rail" />,
+    [],
   );
 
   if (storesLoading) return <HomeScreenSkeleton />;
 
   return (
-    <View style={styles.container}>
-      {/* ── Fixed Header ── */}
-      <View style={[styles.header, { paddingTop: insets.top + 8 }]}>
-        <View style={styles.headerRow}>
-          <TouchableOpacity style={styles.storeSelector} onPress={() => setShowStorePicker(true)}>
-            <View style={styles.locationIcon}>
-              <Ionicons name="location-sharp" size={18} color={colors.primary} />
+    <ProductActionsProvider store={selectedStore ?? null}>
+      <View style={styles.container}>
+        {/* ── Fixed Header ── */}
+        <View style={[styles.header, { paddingTop: insets.top + 8 }]}>
+          <View style={styles.headerRow}>
+            <HomeHeaderLocation store={selectedStore} userArea={userArea} onPress={() => setShowStorePicker(true)} />
+            <View style={styles.headerActions}>
+              <TouchableOpacity style={styles.iconBtn} onPress={() => router.push("/notifications")}>
+                <Ionicons name="notifications-outline" size={20} color={colors.text} />
+                {unreadCount > 0 && (
+                  <View style={styles.bellBadge}>
+                    <Text style={styles.bellBadgeText}>{unreadCount > 99 ? "99+" : unreadCount}</Text>
+                  </View>
+                )}
+              </TouchableOpacity>
             </View>
-            <View style={styles.storeInfo}>
-              <Text style={styles.deliverLabel}>{user?.name ? `Hi ${user.name.split(" ")[0]}!` : "YOUR STORE"}</Text>
-              <View style={styles.storeNameRow}>
-                <Text style={styles.storeName} numberOfLines={1}>
-                  {selectedStore ? selectedStore.name : "Select a store"}
-                </Text>
-                <Ionicons name="chevron-down" size={14} color="#64748b" />
-              </View>
-            </View>
-          </TouchableOpacity>
-          <View style={styles.headerActions}>
-            <TouchableOpacity style={styles.iconBtn} onPress={() => router.push("/notifications")}>
-              <Ionicons name="notifications-outline" size={20} color={colors.text} />
-              {unreadCount > 0 && (
-                <View style={styles.bellBadge}>
-                  <Text style={styles.bellBadgeText}>{unreadCount > 99 ? "99+" : unreadCount}</Text>
-                </View>
-              )}
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.iconBtn} onPress={() => router.push("/(tabs)/profile")}>
-              <Ionicons name="person-outline" size={20} color={colors.text} />
-            </TouchableOpacity>
           </View>
+
+          <SearchBarButton />
         </View>
 
-        <TouchableOpacity style={styles.searchBar} onPress={() => router.push("/search")}>
-          <Ionicons name="search-outline" size={18} color="#94a3b8" />
-          <Text style={styles.searchPlaceholder}>Search groceries, brands...</Text>
-        </TouchableOpacity>
-      </View>
-
-      <ScrollView
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.scrollContent}
-        refreshControl={
-          <RefreshControl
-            refreshing={refreshing}
-            onRefresh={onRefresh}
-            tintColor={colors.primary}
-            colors={[colors.primary]}
-          />
-        }
-      >
-
-        {/* ── Quick Access Chips (Mart Plus + Tomorrow's Basket) ── */}
-        {selectedStore && (memberStatus || hasSubscriptions) && (
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.quickChipsRow}
-          >
-            {memberStatus && (
-              <TouchableOpacity
-                style={styles.quickChip}
-                onPress={() => router.push("/membership")}
-                activeOpacity={0.8}
-              >
-                <LinearGradient
-                  colors={memberStatus.isMember ? ["#7c3aed", "#a78bfa"] : ["#5b21b6", "#7c3aed"]}
-                  start={{ x: 0, y: 0 }}
-                  end={{ x: 1, y: 0 }}
-                  style={styles.quickChipGradient}
-                >
-                  <Ionicons name="diamond" size={14} color="#fbbf24" />
-                  <Text style={styles.quickChipText}>
-                    {memberStatus.isMember ? `Plus · ${memberStatus.membership?.daysLeft}d left` : "Join Mart Plus"}
-                  </Text>
-                </LinearGradient>
-              </TouchableOpacity>
-            )}
-            {hasSubscriptions && (
-              <TouchableOpacity
-                style={styles.quickChip}
-                onPress={() => router.push("/tomorrows-basket")}
-                activeOpacity={0.8}
-              >
-                <LinearGradient
-                  colors={["#0d9488", "#14b8a6"]}
-                  start={{ x: 0, y: 0 }}
-                  end={{ x: 1, y: 0 }}
-                  style={styles.quickChipGradient}
-                >
-                  <Ionicons name="basket" size={14} color="#fff" />
-                  <Text style={styles.quickChipText}>Tomorrow's Basket</Text>
-                </LinearGradient>
-              </TouchableOpacity>
-            )}
-            {hasSubscriptions && (
-              <TouchableOpacity
-                style={styles.quickChip}
-                onPress={() => router.push("/subscriptions")}
-                activeOpacity={0.8}
-              >
-                <View style={styles.quickChipOutline}>
-                  <Ionicons name="repeat" size={14} color={colors.primary} />
-                  <Text style={styles.quickChipOutlineText}>Subscriptions</Text>
-                </View>
-              </TouchableOpacity>
-            )}
-          </ScrollView>
-        )}
-
-        {/* ── Hero Carousel ── */}
-        {heroBanners.length > 0 && (
-          <View style={styles.bannerSection}>
-            <FlatList
-              ref={heroRef}
-              horizontal
-              pagingEnabled
-              data={heroBanners}
-              keyExtractor={(item) => item.id}
-              showsHorizontalScrollIndicator={false}
-              onMomentumScrollEnd={(e) => {
-                const idx = Math.round(e.nativeEvent.contentOffset.x / (SCREEN_WIDTH - H_PADDING * 2));
-                setHeroIndex(idx);
-              }}
-              renderItem={({ item }) => (
-                <TouchableOpacity
-                  activeOpacity={item.actionType === "NONE" ? 1 : 0.9}
-                  onPress={() => handleBannerPress(item)}
-                  style={styles.heroSlide}
-                >
-                  <Image source={{ uri: item.imageUrl }} style={styles.heroImage} resizeMode="cover" />
-                  <View style={styles.heroOverlay}>
-                    <Text style={styles.heroTitle} numberOfLines={2}>{item.title}</Text>
-                    {item.subtitle && (
-                      <Text style={styles.heroSubtitle} numberOfLines={1}>{item.subtitle}</Text>
-                    )}
-                  </View>
-                </TouchableOpacity>
-              )}
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+          contentContainerStyle={styles.scrollContent}
+          refreshControl={
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={onRefresh}
+              tintColor={colors.primary}
+              colors={[colors.primary]}
             />
-            {heroBanners.length > 1 && (
-              <View style={styles.heroDots}>
-                {heroBanners.map((_, i) => (
-                  <View key={i} style={[styles.heroDot, heroIndex === i && styles.heroDotActive]} />
-                ))}
-              </View>
-            )}
-          </View>
-        )}
+          }
+        >
 
-        {/* ── Buy Again (top priority for returning customers) ── */}
-        {homeFeed && homeFeed.buyAgain.length > 0 && (
-          <View style={styles.buyAgainSection}>
-            <View style={styles.buyAgainHeader}>
-              <View style={styles.buyAgainTitleRow}>
-                <View style={styles.buyAgainIcon}>
-                  <Ionicons name="repeat" size={14} color="#fff" />
-                </View>
-                <View>
-                  <Text style={styles.buyAgainTitle}>Buy Again</Text>
-                  <Text style={styles.buyAgainSubtitle}>Your frequently ordered items</Text>
-                </View>
-              </View>
-            </View>
-            {renderProductList(homeFeed.buyAgain)}
-          </View>
-        )}
-
-        {/* ── Category Strip Banners ── */}
-        {stripBanners.length > 0 && (
-          <View style={styles.stripSection}>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.stripList}>
-              {stripBanners.map((banner) => (
-                <TouchableOpacity
-                  key={banner.id}
-                  activeOpacity={banner.actionType === "NONE" ? 1 : 0.85}
-                  onPress={() => handleBannerPress(banner)}
-                  style={styles.stripCard}
-                >
-                  <Image source={{ uri: banner.imageUrl }} style={styles.stripImage} resizeMode="cover" />
-                  <View style={styles.stripTextOverlay}>
-                    <Text style={styles.stripTitle} numberOfLines={1}>{banner.title}</Text>
-                  </View>
-                </TouchableOpacity>
-              ))}
-            </ScrollView>
-          </View>
-        )}
-
-        {/* ── Curated Collections ── */}
-        {homeFeed?.collections.map((collection) => (
-          <View key={collection.id} style={styles.section}>
-            <View style={styles.sectionHeader}>
-              <View>
-                <Text style={styles.sectionTitle}>{collection.title}</Text>
-                {collection.subtitle && (
-                  <Text style={styles.sectionSubtitle}>{collection.subtitle}</Text>
-                )}
-              </View>
-            </View>
-            {renderProductList(collection.products)}
-          </View>
-        ))}
-
-        {/* ── Shop by Category ── */}
-        {homeFeed && homeFeed.categories.length > 0 && (
-          <View style={styles.sectionCard}>
-            <View style={styles.sectionCardHeader}>
-              <Text style={styles.sectionTitle}>Shop by Category</Text>
-              <TouchableOpacity
-                onPress={() => router.push("/(tabs)/categories")}
-                style={styles.seeAllBtn}
-              >
-                <Text style={styles.seeAllText}>See All</Text>
-                <Ionicons name="chevron-forward" size={14} color={colors.primary} />
-              </TouchableOpacity>
-            </View>
-            <View style={styles.categoryGrid}>
-              {homeFeed.categories.map((cat, idx) => {
-                const icon = getCategoryIcon(cat.name);
-                const palette = GRID_PALETTES[idx % GRID_PALETTES.length];
-
-                return (
-                  <TouchableOpacity
-                    key={cat.id}
-                    style={styles.categoryGridItem}
-                    onPress={() => handleCategoryPress(cat.id)}
-                    activeOpacity={0.7}
-                  >
-                    {cat.imageUrl ? (
-                      <View style={[styles.categoryGridIcon, { backgroundColor: palette.bg }]}>
-                        <Image source={{ uri: cat.imageUrl }} style={styles.categoryGridImage} resizeMode="contain" />
-                      </View>
-                    ) : (
-                      <View style={[styles.categoryGridIcon, { backgroundColor: palette.bg }]}>
-                        <Ionicons name={icon} size={24} color={palette.color} />
-                      </View>
-                    )}
-                    <Text style={styles.categoryGridLabel} numberOfLines={2}>{getLocalizedName(cat)}</Text>
-                  </TouchableOpacity>
-                );
-              })}
-            </View>
-          </View>
-        )}
-
-        {/* ── Mid-Page Banner ── */}
-        {midPageBanners.length > 0 && (
-          <View style={styles.midBannerSection}>
-            {midPageBanners.map((banner) => (
-              <TouchableOpacity
-                key={banner.id}
-                activeOpacity={banner.actionType === "NONE" ? 1 : 0.9}
-                onPress={() => handleBannerPress(banner)}
-                style={styles.midBanner}
-              >
-                <Image source={{ uri: banner.imageUrl }} style={styles.midBannerImage} resizeMode="cover" />
-                <View style={styles.midBannerOverlay}>
-                  <Text style={styles.midBannerTitle} numberOfLines={1}>{banner.title}</Text>
-                  {banner.subtitle && (
-                    <Text style={styles.midBannerSubtitle} numberOfLines={1}>{banner.subtitle}</Text>
-                  )}
-                </View>
-              </TouchableOpacity>
-            ))}
-          </View>
-        )}
-
-        {/* ── Time-Aware Spotlight ── */}
-        {homeFeed?.timeCategories.map((tc) => (
-          <View key={tc.id} style={styles.section}>
-            <View style={styles.sectionHeader}>
-              <View>
-                <Text style={styles.sectionTitle}>{tc.name}</Text>
-                <Text style={styles.sectionSubtitle}>
-                  {TIME_SUBTITLES[homeFeed.timePeriod] ?? ""}
-                </Text>
-              </View>
-              <TouchableOpacity
-                onPress={() => handleCategoryPress(tc.id)}
-                style={styles.seeAllBtn}
-              >
-                <Text style={styles.seeAllText}>View All</Text>
-                <Ionicons name="chevron-forward" size={14} color={colors.primary} />
-              </TouchableOpacity>
-            </View>
-            {renderProductList(tc.products)}
-          </View>
-        ))}
-
-        {/* ── Deals of the Day ── */}
-        {homeFeed && homeFeed.deals.length > 0 && (
-          <View style={styles.dealsSection}>
-            <View style={styles.dealsSectionHeader}>
-              <View style={styles.dealsTitleRow}>
-                <View style={styles.dealsIcon}>
-                  <Ionicons name="flash" size={14} color="#fff" />
-                </View>
-                <Text style={styles.dealsSectionTitle}>Deals of the Day</Text>
-              </View>
-              <TouchableOpacity
-                onPress={() => router.push({ pathname: "/search", params: { hasDiscount: "true" } } as any)}
-                style={styles.seeAllBtnDark}
-              >
-                <Text style={styles.seeAllTextDark}>View All</Text>
-                <Ionicons name="chevron-forward" size={14} color="#92400e" />
-              </TouchableOpacity>
-            </View>
-            {renderProductList(homeFeed.deals)}
-          </View>
-        )}
-
-        {/* ── Shoppable Recipes ── */}
-        {homeFeed && homeFeed.recipes && homeFeed.recipes.length > 0 && (
-          <View style={styles.section}>
-            <View style={styles.sectionHeader}>
-              <View>
-                <Text style={styles.sectionTitle}>Shoppable Recipes</Text>
-                <Text style={styles.sectionSubtitle}>Cook a meal, add all ingredients</Text>
-              </View>
-              <TouchableOpacity
-                onPress={() => router.push("/recipes" as any)}
-                style={styles.seeAllBtn}
-              >
-                <Text style={styles.seeAllText}>See All</Text>
-                <Ionicons name="chevron-forward" size={14} color={colors.primary} />
-              </TouchableOpacity>
-            </View>
+          {/* ── Quick Access Chips (Mart Plus + Tomorrow's Basket) ── */}
+          {selectedStore && (memberStatus?.isMember || hasSubscriptions) && (
             <ScrollView
               horizontal
               showsHorizontalScrollIndicator={false}
-              contentContainerStyle={{ paddingHorizontal: 16 }}
+              contentContainerStyle={styles.quickChipsRow}
             >
-              {homeFeed.recipes.map((recipe) => (
-                <View key={recipe.id} style={{ marginRight: 12 }}>
-                  <RecipeCard recipe={recipe} />
+              {memberStatus?.isMember && (
+                <TouchableOpacity
+                  style={styles.quickChip}
+                  onPress={() => router.push("/membership")}
+                  activeOpacity={0.8}
+                >
+                  <LinearGradient
+                    colors={["#fde68a", colors.accent]}
+                    start={{ x: 0, y: 0 }}
+                    end={{ x: 1, y: 0 }}
+                    style={styles.quickChipGradient}
+                  >
+                    <Ionicons name="diamond" size={14} color={colors.accentText} />
+                    <Text style={[styles.quickChipText, styles.quickChipTextOnAccent]}>
+                      {`Plus · ${memberStatus.membership?.daysLeft}d left`}
+                    </Text>
+                  </LinearGradient>
+                </TouchableOpacity>
+              )}
+              {hasSubscriptions && (
+                <TouchableOpacity
+                  style={styles.quickChip}
+                  onPress={() => router.push("/tomorrows-basket")}
+                  activeOpacity={0.8}
+                >
+                  <LinearGradient
+                    colors={[colors.primary, colors.primaryLight]}
+                    start={{ x: 0, y: 0 }}
+                    end={{ x: 1, y: 0 }}
+                    style={styles.quickChipGradient}
+                  >
+                    <Ionicons name="basket" size={14} color="#fff" />
+                    <Text style={styles.quickChipText}>Tomorrow's Basket</Text>
+                  </LinearGradient>
+                </TouchableOpacity>
+              )}
+              {hasSubscriptions && (
+                <TouchableOpacity
+                  style={styles.quickChip}
+                  onPress={() => router.push("/subscriptions")}
+                  activeOpacity={0.8}
+                >
+                  <View style={styles.quickChipOutline}>
+                    <Ionicons name="repeat" size={14} color={colors.primary} />
+                    <Text style={styles.quickChipOutlineText}>Subscriptions</Text>
+                  </View>
+                </TouchableOpacity>
+              )}
+            </ScrollView>
+          )}
+
+          {/* ── Hero Carousel ── */}
+          {heroBanners.length > 0 && (
+            <View style={styles.bannerSection}>
+              <FlatList
+                ref={heroRef}
+                horizontal
+                pagingEnabled
+                data={heroBanners}
+                keyExtractor={(item) => item.id}
+                showsHorizontalScrollIndicator={false}
+                onMomentumScrollEnd={(e) => {
+                  const idx = Math.round(e.nativeEvent.contentOffset.x / (SCREEN_WIDTH - H_PADDING * 2));
+                  setHeroIndex(idx);
+                }}
+                renderItem={({ item }) => (
+                  <HeroBannerSlide banner={item} width={SCREEN_WIDTH - H_PADDING * 2} onPress={handleBannerPress} />
+                )}
+              />
+              {heroBanners.length > 1 && (
+                <View style={styles.heroDots}>
+                  {heroBanners.map((_, i) => (
+                    <View key={i} style={[styles.heroDot, heroIndex === i && styles.heroDotActive]} />
+                  ))}
+                </View>
+              )}
+            </View>
+          )}
+
+          {/* ── Buy Again (top priority for returning customers) ── */}
+          {homeFeed && homeFeed.buyAgain.length > 0 && (
+            <View style={styles.buyAgainSection}>
+              <View style={styles.buyAgainHeader}>
+                <View style={styles.buyAgainTitleRow}>
+                  <View style={styles.buyAgainIcon}>
+                    <Ionicons name="repeat" size={14} color="#fff" />
+                  </View>
+                  <View>
+                    <Text style={styles.buyAgainTitle}>Buy Again</Text>
+                    <Text style={styles.buyAgainSubtitle}>Your frequently ordered items</Text>
+                  </View>
+                </View>
+                <TouchableOpacity onPress={() => router.push("/smart-reorder")} style={styles.seeAllBtn}>
+                  <Text style={styles.seeAllText}>Smart reorder</Text>
+                  <Ionicons name="chevron-forward" size={14} color={colors.primary} />
+                </TouchableOpacity>
+              </View>
+              {renderProductList(homeFeed.buyAgain)}
+            </View>
+          )}
+
+          {/* ── Shop by Category ── */}
+          {homeFeed && homeFeed.departments.length > 0 && (
+            <View style={styles.sectionCard}>
+              <View style={styles.sectionCardHeader}>
+                <Text style={styles.sectionTitle}>Shop by Category</Text>
+                <TouchableOpacity
+                  onPress={() => router.push("/(tabs)/categories")}
+                  style={styles.seeAllBtn}
+                >
+                  <Text style={styles.seeAllText}>See All</Text>
+                  <Ionicons name="chevron-forward" size={14} color={colors.primary} />
+                </TouchableOpacity>
+              </View>
+              <View style={styles.categoryGrid}>
+                {homeFeed.departments.map((cat) => (
+                  <CategoryTile
+                    key={cat.id}
+                    title={getLocalizedName(cat)}
+                    imageUrl={cat.imageUrl}
+                    fallbackIcon={getCategoryIcon(cat.name)}
+                    size={CATEGORY_TILE_SIZE}
+                    onPress={() => handleCategoryPress(cat.id)}
+                  />
+                ))}
+              </View>
+            </View>
+          )}
+
+          {memberStatus && !memberStatus.isMember && <PlusPromoStrip />}
+
+          {/* ── Curated Collections ── */}
+          {homeFeed?.collections.map((collection) => (
+            <View key={collection.id} style={styles.section}>
+              <View style={styles.sectionHeader}>
+                <View>
+                  <Text style={styles.sectionTitle}>{collection.title}</Text>
+                  {collection.subtitle && (
+                    <Text style={styles.sectionSubtitle}>{collection.subtitle}</Text>
+                  )}
+                </View>
+              </View>
+              {renderProductList(collection.products)}
+            </View>
+          ))}
+
+          {/* ── Mid-Page Banner ── */}
+          {midPageBanners.length > 0 && (
+            <View style={styles.midBannerSection}>
+              {midPageBanners.map((banner) => (
+                <HeroBannerSlide
+                  key={banner.id}
+                  banner={banner}
+                  width={SCREEN_WIDTH - H_PADDING * 2}
+                  height={152}
+                  onPress={handleBannerPress}
+                />
+              ))}
+            </View>
+          )}
+
+          {/* ── Time-Aware Spotlight ── */}
+          {homeFeed && homeFeed.timeCategories.length > 0 && (
+            <TimeSpotlight
+              sections={homeFeed.timeCategories}
+              period={homeFeed.timePeriod}
+              renderProducts={renderProductList}
+              onViewAll={handleCategoryPress}
+            />
+          )}
+
+          {/* ── Deals of the Day ── */}
+          {homeFeed && homeFeed.deals.length > 0 && (
+            <View style={styles.dealsSection}>
+              <View style={styles.dealsSectionHeader}>
+                <View style={styles.dealsTitleRow}>
+                  <View style={styles.dealsIcon}>
+                    <Ionicons name="flash" size={14} color="#fff" />
+                  </View>
+                  <Text style={styles.dealsSectionTitle}>Deals of the Day</Text>
+                </View>
+                <TouchableOpacity
+                  onPress={() => router.push({ pathname: "/search", params: { hasDiscount: "true" } } as any)}
+                  style={styles.seeAllBtnDark}
+                >
+                  <Text style={styles.seeAllTextDark}>View All</Text>
+                  <Ionicons name="chevron-forward" size={14} color="#92400e" />
+                </TouchableOpacity>
+              </View>
+              {renderProductList(homeFeed.deals)}
+            </View>
+          )}
+
+          {/* ── Shoppable Recipes ── */}
+          {homeFeed && homeFeed.recipes && homeFeed.recipes.length > 0 && (
+            <View style={styles.section}>
+              <View style={styles.sectionHeader}>
+                <View>
+                  <Text style={styles.sectionTitle}>Shoppable Recipes</Text>
+                  <Text style={styles.sectionSubtitle}>Cook a meal, add all ingredients</Text>
+                </View>
+                <TouchableOpacity
+                  onPress={() => router.push("/recipes" as any)}
+                  style={styles.seeAllBtn}
+                >
+                  <Text style={styles.seeAllText}>See All</Text>
+                  <Ionicons name="chevron-forward" size={14} color={colors.primary} />
+                </TouchableOpacity>
+              </View>
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={{ paddingHorizontal: 16 }}
+              >
+                {homeFeed.recipes.map((recipe) => (
+                  <View key={recipe.id} style={{ marginRight: 12 }}>
+                    <RecipeCard recipe={recipe} />
+                  </View>
+                ))}
+              </ScrollView>
+            </View>
+          )}
+
+          {/* ── Loading state ── */}
+          {selectedStore && loadingFeed && !homeFeed && (
+            <View style={styles.loadingRow}>
+              {[1, 2, 3].map((i) => (
+                <View key={i} style={styles.productSkeleton}>
+                  <View style={styles.productSkeletonImage} />
+                  <View style={styles.productSkeletonContent}>
+                    <View style={styles.skeletonLine} />
+                    <View style={[styles.skeletonLine, styles.skeletonLineShort]} />
+                  </View>
                 </View>
               ))}
-            </ScrollView>
-          </View>
-        )}
+            </View>
+          )}
 
-        {/* ── Loading state ── */}
-        {selectedStore && loadingFeed && !homeFeed && (
-          <View style={styles.loadingRow}>
-            {[1, 2, 3].map((i) => (
-              <View key={i} style={styles.productSkeleton}>
-                <View style={styles.productSkeletonImage} />
-                <View style={styles.productSkeletonContent}>
-                  <View style={styles.skeletonLine} />
-                  <View style={[styles.skeletonLine, styles.skeletonLineShort]} />
+          {/* ── Store discovery (no store selected) ── */}
+          {!selectedStore && <StoreDiscovery />}
+
+          <View style={{ height: 32 }} />
+        </ScrollView>
+
+        {/* ── Cart / Basket Floating Bar ── */}
+        <FloatingCart aboveTabBar />
+
+
+        {/* ── Popup Banner Modal ── */}
+        {popupBanners.length > 0 && (
+          <Modal visible={showPopup} transparent animationType="fade" onRequestClose={() => setShowPopup(false)}>
+            <View style={styles.popupBackdrop}>
+              <View style={styles.popupCard}>
+                <TouchableOpacity
+                  style={styles.popupClose}
+                  onPress={() => setShowPopup(false)}
+                  hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+                >
+                  <Ionicons name="close" size={20} color="#64748b" />
+                </TouchableOpacity>
+                <TouchableOpacity
+                  activeOpacity={popupBanners[0].actionType === "NONE" ? 1 : 0.9}
+                  onPress={() => {
+                    handleBannerPress(popupBanners[0]);
+                    setShowPopup(false);
+                  }}
+                >
+                  <Image source={{ uri: popupBanners[0].imageUrl }} style={styles.popupImage} resizeMode="cover" />
+                </TouchableOpacity>
+                <View style={styles.popupContent}>
+                  <Text style={styles.popupTitle}>{popupBanners[0].title}</Text>
+                  {popupBanners[0].subtitle && (
+                    <Text style={styles.popupSubtitle}>{popupBanners[0].subtitle}</Text>
+                  )}
                 </View>
               </View>
-            ))}
-          </View>
+            </View>
+          </Modal>
         )}
 
-        {/* ── Welcome (no store selected) ── */}
-        {!selectedStore && (
-          <View style={styles.welcomeSection}>
-            <View style={styles.welcomeCard}>
-              <View style={styles.welcomeIconCircle}>
-                <Ionicons name="storefront-outline" size={36} color={colors.primary} />
+        {/* ── Store Picker Modal ── */}
+        <Modal visible={showStorePicker} animationType="slide" presentationStyle="pageSheet">
+          <View style={styles.modalContainer}>
+            <View style={styles.modalHeader}>
+              <View>
+                <Text style={styles.modalTitle}>Select Store</Text>
+                <Text style={styles.modalSubtitle}>{stores.length} stores available</Text>
               </View>
-              <Text style={styles.welcomeTitle}>Welcome to Martly</Text>
-              <Text style={styles.welcomeSubtitle}>
-                Select a store near you to start browsing fresh groceries and daily essentials
-              </Text>
               <TouchableOpacity
-                style={styles.welcomeBtn}
-                onPress={() => setShowStorePicker(true)}
+                style={styles.modalCloseBtn}
+                onPress={() => { setShowStorePicker(false); setStoreSearch(""); }}
               >
-                <Ionicons name="location-outline" size={18} color="#fff" />
-                <Text style={styles.welcomeBtnText}>Choose a Store</Text>
+                <Ionicons name="close" size={22} color={colors.text} />
               </TouchableOpacity>
             </View>
-          </View>
-        )}
 
-        <View style={{ height: 32 }} />
-      </ScrollView>
-
-      {/* ── Basket Mode Floating Bar ── */}
-      {isBasketMode && <FloatingCart />}
-
-      {/* ── Speed-Dial FAB ── */}
-      {selectedStore && <SpeedDialFAB />}
-
-      <ConfirmSheet
-        visible={replaceCartConfirm !== null}
-        title="Replace Cart?"
-        message="Your cart has items from another store. Adding this item will replace your current cart."
-        icon="cart-outline"
-        iconColor="#f59e0b"
-        confirmLabel="Replace"
-        onConfirm={() => {
-          replaceCartConfirm?.pending();
-          setReplaceCartConfirm(null);
-        }}
-        onCancel={() => setReplaceCartConfirm(null)}
-      />
-
-      {/* ── Popup Banner Modal ── */}
-      {popupBanners.length > 0 && (
-        <Modal visible={showPopup} transparent animationType="fade" onRequestClose={() => setShowPopup(false)}>
-          <View style={styles.popupBackdrop}>
-            <View style={styles.popupCard}>
-              <TouchableOpacity
-                style={styles.popupClose}
-                onPress={() => setShowPopup(false)}
-                hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
-              >
-                <Ionicons name="close" size={20} color="#64748b" />
-              </TouchableOpacity>
-              <TouchableOpacity
-                activeOpacity={popupBanners[0].actionType === "NONE" ? 1 : 0.9}
-                onPress={() => {
-                  handleBannerPress(popupBanners[0]);
-                  setShowPopup(false);
-                }}
-              >
-                <Image source={{ uri: popupBanners[0].imageUrl }} style={styles.popupImage} resizeMode="cover" />
-              </TouchableOpacity>
-              <View style={styles.popupContent}>
-                <Text style={styles.popupTitle}>{popupBanners[0].title}</Text>
-                {popupBanners[0].subtitle && (
-                  <Text style={styles.popupSubtitle}>{popupBanners[0].subtitle}</Text>
-                )}
-              </View>
+            <View style={styles.modalSearchWrap}>
+              <Ionicons name="search-outline" size={18} color="#94a3b8" />
+              <TextInput
+                style={styles.modalSearchInput}
+                placeholder="Search by name or address..."
+                value={storeSearch}
+                onChangeText={setStoreSearch}
+                autoCapitalize="none"
+                autoCorrect={false}
+                placeholderTextColor="#94a3b8"
+              />
+              {storeSearch.length > 0 && (
+                <TouchableOpacity onPress={() => setStoreSearch("")}>
+                  <Ionicons name="close-circle" size={18} color="#cbd5e1" />
+                </TouchableOpacity>
+              )}
             </View>
+
+            <FlatList
+              data={filteredStores}
+              keyExtractor={(item) => item.id}
+              contentContainerStyle={styles.modalList}
+              renderItem={({ item }) => {
+                const isSelected = selectedStore?.id === item.id;
+                return (
+                  <TouchableOpacity
+                    style={[styles.storeCard, isSelected && styles.storeCardActive]}
+                    onPress={() => selectStore(item)}
+                    activeOpacity={0.7}
+                  >
+                    <View style={[styles.storeCardIcon, isSelected && styles.storeCardIconActive]}>
+                      <Ionicons
+                        name="storefront"
+                        size={18}
+                        color={isSelected ? "#fff" : "#94a3b8"}
+                      />
+                    </View>
+                    <View style={styles.storeCardInfo}>
+                      <Text style={[styles.storeCardName, isSelected && styles.storeCardNameActive]}>
+                        {item.name}
+                      </Text>
+                      <Text style={styles.storeCardAddress} numberOfLines={1}>
+                        {item.address}
+                      </Text>
+                    </View>
+                    {isSelected && (
+                      <View style={styles.storeCardCheck}>
+                        <Ionicons name="checkmark-circle" size={22} color={colors.primary} />
+                      </View>
+                    )}
+                  </TouchableOpacity>
+                );
+              }}
+              ListEmptyComponent={
+                <View style={styles.emptyProducts}>
+                  <Ionicons name="search" size={28} color="#94a3b8" />
+                  <Text style={styles.emptyTitle}>No stores found</Text>
+                  <Text style={styles.emptySubtitle}>Try a different search term</Text>
+                </View>
+              }
+            />
           </View>
         </Modal>
-      )}
-
-      {/* ── Store Picker Modal ── */}
-      <Modal visible={showStorePicker} animationType="slide" presentationStyle="pageSheet">
-        <View style={styles.modalContainer}>
-          <View style={styles.modalHeader}>
-            <View>
-              <Text style={styles.modalTitle}>Select Store</Text>
-              <Text style={styles.modalSubtitle}>{stores.length} stores available</Text>
-            </View>
-            <TouchableOpacity
-              style={styles.modalCloseBtn}
-              onPress={() => { setShowStorePicker(false); setStoreSearch(""); }}
-            >
-              <Ionicons name="close" size={22} color={colors.text} />
-            </TouchableOpacity>
-          </View>
-
-          <View style={styles.modalSearchWrap}>
-            <Ionicons name="search-outline" size={18} color="#94a3b8" />
-            <TextInput
-              style={styles.modalSearchInput}
-              placeholder="Search by name or address..."
-              value={storeSearch}
-              onChangeText={setStoreSearch}
-              autoCapitalize="none"
-              autoCorrect={false}
-              placeholderTextColor="#94a3b8"
-            />
-            {storeSearch.length > 0 && (
-              <TouchableOpacity onPress={() => setStoreSearch("")}>
-                <Ionicons name="close-circle" size={18} color="#cbd5e1" />
-              </TouchableOpacity>
-            )}
-          </View>
-
-          <FlatList
-            data={filteredStores}
-            keyExtractor={(item) => item.id}
-            contentContainerStyle={styles.modalList}
-            renderItem={({ item }) => {
-              const isSelected = selectedStore?.id === item.id;
-              return (
-                <TouchableOpacity
-                  style={[styles.storeCard, isSelected && styles.storeCardActive]}
-                  onPress={() => selectStore(item)}
-                  activeOpacity={0.7}
-                >
-                  <View style={[styles.storeCardIcon, isSelected && styles.storeCardIconActive]}>
-                    <Ionicons
-                      name="storefront"
-                      size={18}
-                      color={isSelected ? "#fff" : "#94a3b8"}
-                    />
-                  </View>
-                  <View style={styles.storeCardInfo}>
-                    <Text style={[styles.storeCardName, isSelected && styles.storeCardNameActive]}>
-                      {item.name}
-                    </Text>
-                    <Text style={styles.storeCardAddress} numberOfLines={1}>
-                      {item.address}
-                    </Text>
-                  </View>
-                  {isSelected && (
-                    <View style={styles.storeCardCheck}>
-                      <Ionicons name="checkmark-circle" size={22} color={colors.primary} />
-                    </View>
-                  )}
-                </TouchableOpacity>
-              );
-            }}
-            ListEmptyComponent={
-              <View style={styles.emptyProducts}>
-                <Ionicons name="search" size={28} color="#94a3b8" />
-                <Text style={styles.emptyTitle}>No stores found</Text>
-                <Text style={styles.emptySubtitle}>Try a different search term</Text>
-              </View>
-            }
-          />
-        </View>
-      </Modal>
-    </View>
+      </View>
+    </ProductActionsProvider>
   );
 }
 
 // ── Speed-Dial FAB ──────────────────────────────────
-function SpeedDialFAB() {
-  const [open, setOpen] = useState(false);
-  const anim = useRef(new Animated.Value(0)).current;
-
-  const toggle = useCallback(() => {
-    const toValue = open ? 0 : 1;
-    Animated.spring(anim, {
-      toValue,
-      useNativeDriver: true,
-      friction: 6,
-      tension: 80,
-    }).start();
-    setOpen(!open);
-  }, [open, anim]);
-
-  const mini1Translate = anim.interpolate({ inputRange: [0, 1], outputRange: [0, -72] });
-  const mini2Translate = anim.interpolate({ inputRange: [0, 1], outputRange: [0, -136] });
-  const mini3Translate = anim.interpolate({ inputRange: [0, 1], outputRange: [0, -200] });
-  const rotate = anim.interpolate({ inputRange: [0, 1], outputRange: ["0deg", "45deg"] });
-  const overlayOpacity = anim.interpolate({ inputRange: [0, 1], outputRange: [0, 1] });
-
-  return (
-    <>
-      {/* Overlay */}
-      {open && (
-        <Animated.View style={[styles.fabOverlay, { opacity: overlayOpacity }]}>
-          <Pressable style={StyleSheet.absoluteFill} onPress={toggle} />
-        </Animated.View>
-      )}
-
-      {/* Mini FAB: Smart Reorder */}
-      <Animated.View
-        style={[
-          styles.miniFabWrap,
-          { transform: [{ translateY: mini3Translate }], opacity: anim },
-        ]}
-        pointerEvents={open ? "auto" : "none"}
-      >
-        <TouchableOpacity
-          style={styles.miniFabLabelWrap}
-          onPress={() => { toggle(); router.push("/smart-reorder"); }}
-          activeOpacity={0.7}
-        >
-          <View style={styles.miniFabLabel}>
-            <Text style={styles.miniFabLabelText}>Smart Reorder</Text>
-          </View>
-          <View style={styles.miniFab}>
-            <Ionicons name="refresh-circle" size={20} color="#fff" />
-          </View>
-        </TouchableOpacity>
-      </Animated.View>
-
-      {/* Mini FAB: Help & Support */}
-      <Animated.View
-        style={[
-          styles.miniFabWrap,
-          { transform: [{ translateY: mini2Translate }], opacity: anim },
-        ]}
-        pointerEvents={open ? "auto" : "none"}
-      >
-        <TouchableOpacity
-          style={styles.miniFabLabelWrap}
-          onPress={() => { toggle(); router.push("/support-chat"); }}
-          activeOpacity={0.7}
-        >
-          <View style={styles.miniFabLabel}>
-            <Text style={styles.miniFabLabelText}>Help & Support</Text>
-          </View>
-          <View style={styles.miniFab}>
-            <Ionicons name="headset" size={20} color="#fff" />
-          </View>
-        </TouchableOpacity>
-      </Animated.View>
-
-      {/* Mini FAB: AI Order */}
-      <Animated.View
-        style={[
-          styles.miniFabWrap,
-          { transform: [{ translateY: mini1Translate }], opacity: anim },
-        ]}
-        pointerEvents={open ? "auto" : "none"}
-      >
-        <TouchableOpacity
-          style={styles.miniFabLabelWrap}
-          onPress={() => { toggle(); router.push("/ai-order"); }}
-          activeOpacity={0.7}
-        >
-          <View style={styles.miniFabLabel}>
-            <Text style={styles.miniFabLabelText}>AI Order</Text>
-          </View>
-          <View style={styles.miniFab}>
-            <Ionicons name="sparkles" size={20} color="#fff" />
-          </View>
-        </TouchableOpacity>
-      </Animated.View>
-
-      {/* Main FAB */}
-      <TouchableOpacity
-        style={styles.aiFab}
-        onPress={toggle}
-        activeOpacity={0.8}
-      >
-        <Animated.View style={{ transform: [{ rotate }] }}>
-          <Ionicons name={open ? "close" : "sparkles"} size={24} color="#fff" />
-        </Animated.View>
-      </TouchableOpacity>
-    </>
-  );
-}
-
-// Pastel palettes for API-loaded categories
-const GRID_PALETTES = [
-  { bg: "#fee2e2", color: "#ef4444" },
-  { bg: "#dcfce7", color: "#16a34a" },
-  { bg: "#dbeafe", color: "#3b82f6" },
-  { bg: "#fef3c7", color: "#d97706" },
-  { bg: "#ffedd5", color: "#ea580c" },
-  { bg: "#ede9fe", color: "#7c3aed" },
-  { bg: "#fce7f3", color: "#ec4899" },
-  { bg: "#e0f2fe", color: "#0284c7" },
-];
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#f8faf9" },
+  container: { flex: 1, backgroundColor: colors.surface },
 
   // ── Header ──
   header: {
@@ -956,40 +630,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     marginBottom: 12,
-  },
-  storeSelector: {
-    flexDirection: "row",
-    alignItems: "center",
-    flex: 1,
-    gap: 10,
-  },
-  locationIcon: {
-    width: 36,
-    height: 36,
-    borderRadius: 10,
-    backgroundColor: colors.primary + "12",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  storeInfo: { flex: 1 },
-  deliverLabel: {
-    fontSize: 10,
-    fontWeight: "700",
-    color: "#94a3b8",
-    letterSpacing: 0.8,
-    lineHeight: 12,
-  },
-  storeNameRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 4,
-    marginTop: 1,
-  },
-  storeName: {
-    fontSize: 15,
-    fontWeight: "700",
-    color: colors.text,
-    flexShrink: 1,
   },
   headerActions: {
     flexDirection: "row",
@@ -1022,17 +662,6 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
 
-  // ── Search ──
-  searchBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#f1f5f9",
-    borderRadius: 10,
-    paddingHorizontal: 14,
-    paddingVertical: 11,
-    gap: 10,
-  },
-  searchPlaceholder: { fontSize: 14, color: "#94a3b8" },
 
   // ── Scroll Content ──
   scrollContent: { paddingBottom: 8 },
@@ -1062,6 +691,10 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#fff",
   },
+  quickChipTextOnAccent: {
+    color: colors.accentText,
+    fontWeight: "700",
+  },
   quickChipOutline: {
     flexDirection: "row",
     alignItems: "center",
@@ -1084,36 +717,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: H_PADDING,
     paddingTop: 16,
   },
-  heroSlide: {
-    width: SCREEN_WIDTH - H_PADDING * 2,
-    height: 160,
-    borderRadius: 16,
-    overflow: "hidden",
-    backgroundColor: "#e2e8f0",
-  },
-  heroImage: {
-    width: "100%",
-    height: "100%",
-  },
-  heroOverlay: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    backgroundColor: "rgba(0,0,0,0.35)",
-  },
-  heroTitle: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: "#fff",
-  },
-  heroSubtitle: {
-    fontSize: 13,
-    color: "rgba(255,255,255,0.85)",
-    marginTop: 2,
-  },
   heroDots: {
     flexDirection: "row",
     justifyContent: "center",
@@ -1134,86 +737,26 @@ const styles = StyleSheet.create({
   },
 
   // ── Category Strip ──
-  stripSection: {
-    marginTop: 16,
-  },
-  stripList: {
-    paddingHorizontal: H_PADDING,
-    gap: 10,
-  },
-  stripCard: {
-    width: 140,
-    height: 90,
-    borderRadius: 12,
-    overflow: "hidden",
-    backgroundColor: "#e2e8f0",
-  },
-  stripImage: {
-    width: "100%",
-    height: "100%",
-  },
-  stripTextOverlay: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    paddingHorizontal: 8,
-    paddingVertical: 6,
-    backgroundColor: "rgba(0,0,0,0.4)",
-  },
-  stripTitle: {
-    fontSize: 12,
-    fontWeight: "700",
-    color: "#fff",
-  },
-
   // ── Mid-Page Banner ──
   midBannerSection: {
     paddingHorizontal: H_PADDING,
     marginTop: 20,
     gap: 12,
   },
-  midBanner: {
-    width: "100%",
-    height: 120,
-    borderRadius: 14,
-    overflow: "hidden",
-    backgroundColor: "#e2e8f0",
-  },
-  midBannerImage: {
-    width: "100%",
-    height: "100%",
-  },
-  midBannerOverlay: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    backgroundColor: "rgba(0,0,0,0.35)",
-  },
-  midBannerTitle: {
-    fontSize: 16,
-    fontWeight: "700",
-    color: "#fff",
-  },
-  midBannerSubtitle: {
-    fontSize: 12,
-    color: "rgba(255,255,255,0.85)",
-    marginTop: 1,
-  },
 
   // ── Buy Again ──
   buyAgainSection: {
     marginTop: 16,
-    backgroundColor: "#f0fdf4",
+    backgroundColor: "#f0fdfa",
     paddingVertical: 18,
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    borderColor: "#dcfce7",
+    borderColor: "#ccfbf1",
   },
   buyAgainHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     paddingHorizontal: H_PADDING,
     marginBottom: 14,
   },
@@ -1294,31 +837,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",
-    rowGap: 16,
-  },
-  categoryGridItem: {
-    width: (SCREEN_WIDTH - H_PADDING * 2 - 32 - 12 * 3) / 4,
-    alignItems: "center",
-  },
-  categoryGridIcon: {
-    width: 80,
-    height: 80,
-    borderRadius: 22,
-    justifyContent: "center",
-    alignItems: "center",
-    overflow: "hidden",
-  },
-  categoryGridImage: {
-    width: 64,
-    height: 64,
-    borderRadius: 18,
-  },
-  categoryGridLabel: {
-    fontSize: 11,
-    fontWeight: "500",
-    color: colors.text,
-    marginTop: 6,
-    textAlign: "center",
+    rowGap: 14,
   },
 
   // ── Product Lists ──
@@ -1425,62 +944,6 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#92400e",
   },
-  // ── Welcome ──
-  welcomeSection: {
-    paddingHorizontal: H_PADDING,
-    marginTop: 20,
-  },
-  welcomeCard: {
-    alignItems: "center",
-    backgroundColor: "#fff",
-    borderRadius: 16,
-    padding: 32,
-    borderWidth: 1,
-    borderColor: "#f1f5f9",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.04,
-    shadowRadius: 8,
-    elevation: 2,
-  },
-  welcomeIconCircle: {
-    width: 72,
-    height: 72,
-    borderRadius: 36,
-    backgroundColor: colors.primary + "10",
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: 16,
-  },
-  welcomeTitle: {
-    fontSize: 20,
-    fontWeight: "700",
-    color: colors.text,
-    marginBottom: 8,
-  },
-  welcomeSubtitle: {
-    fontSize: 14,
-    color: "#64748b",
-    textAlign: "center",
-    lineHeight: 20,
-    marginBottom: 20,
-    paddingHorizontal: 8,
-  },
-  welcomeBtn: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    backgroundColor: colors.primary,
-    borderRadius: 12,
-    paddingVertical: 12,
-    paddingHorizontal: 24,
-  },
-  welcomeBtnText: {
-    color: "#fff",
-    fontSize: 15,
-    fontWeight: "700",
-  },
-
   // ── Popup Banner Modal ──
   popupBackdrop: {
     flex: 1,
@@ -1621,70 +1084,5 @@ const styles = StyleSheet.create({
   },
   storeCardCheck: {
     marginLeft: 8,
-  },
-
-  // ── Speed-Dial FAB ──
-  fabOverlay: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.25)",
-    zIndex: 99,
-  },
-  aiFab: {
-    position: "absolute",
-    bottom: 24,
-    right: 20,
-    width: 56,
-    height: 56,
-    borderRadius: 18,
-    backgroundColor: colors.primary,
-    justifyContent: "center",
-    alignItems: "center",
-    shadowColor: colors.primary,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.35,
-    shadowRadius: 8,
-    elevation: 6,
-    zIndex: 101,
-  },
-  miniFabWrap: {
-    position: "absolute",
-    bottom: 24,
-    right: 20,
-    zIndex: 100,
-    alignItems: "flex-end",
-  },
-  miniFabLabelWrap: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-  },
-  miniFabLabel: {
-    backgroundColor: "#fff",
-    borderRadius: 8,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
-  },
-  miniFabLabelText: {
-    fontSize: 13,
-    fontWeight: "600",
-    color: colors.text,
-  },
-  miniFab: {
-    width: 44,
-    height: 44,
-    borderRadius: 14,
-    backgroundColor: colors.primary,
-    justifyContent: "center",
-    alignItems: "center",
-    shadowColor: colors.primary,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
-    elevation: 4,
   },
 });

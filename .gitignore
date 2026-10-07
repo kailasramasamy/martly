@@ -42,3 +42,7 @@ coverage/
 # Prisma
 *.db
 *.db-journal
+
+# Local env backups and TypeScript incremental build info
+.env.bak*
+*.tsbuildinfo

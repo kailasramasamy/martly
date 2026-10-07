@@ -136,7 +136,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
         const sp = item.storeProduct;
         const pricing = calculateEffectivePrice(
           sp.price as unknown as number,
-          sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+          null,
           sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
         );
         return { ...item, pricing };
@@ -167,7 +167,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       const sp = item.storeProduct;
       const pricing = calculateEffectivePrice(
         sp.price as unknown as number,
-        sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+        null,
         sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
       );
       return { ...item, pricing };
@@ -473,7 +473,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
         const sp = item.storeProduct;
         const pricing = calculateEffectivePrice(
           sp.price as unknown as number,
-          sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+          null,
           sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
         );
         subscriptionItems.push({
@@ -509,7 +509,7 @@ export async function subscriptionRoutes(app: FastifyInstance) {
       const sp = addon.storeProduct;
       const pricing = calculateEffectivePrice(
         sp.price as unknown as number,
-        sp.variant as Parameters<typeof calculateEffectivePrice>[1],
+        null,
         sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
       );
       return {

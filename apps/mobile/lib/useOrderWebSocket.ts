@@ -1,8 +1,8 @@
 import { useEffect, useRef, useCallback } from "react";
 import * as SecureStore from "expo-secure-store";
 import { AppState } from "react-native";
+import { API_URL } from "./config";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:7001";
 const WS_URL = API_URL.replace(/^http/, "ws");
 const MAX_BACKOFF = 30000;
 
@@ -25,7 +25,7 @@ export function useOrderWebSocket({
 }: UseOrderWebSocketOptions) {
   const wsRef = useRef<WebSocket | null>(null);
   const backoffRef = useRef(1000);
-  const reconnectTimerRef = useRef<ReturnType<typeof setTimeout>>();
+  const reconnectTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const mountedRef = useRef(true);
   // Store latest callbacks in refs so reconnects use up-to-date handlers
   const onOrderUpdatedRef = useRef(onOrderUpdated);

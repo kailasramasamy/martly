@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useMemo, useCallback } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import {
   View,
   Text,
@@ -12,19 +12,35 @@ import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
-import { useCart } from "../lib/cart-context";
-import { useWishlist } from "../lib/wishlist-context";
-import { useMembership, getBestPrice } from "../lib/membership-context";
-import { useBasketMode } from "../lib/basket-mode-context";
-import { useToast } from "../lib/toast-context";
 import { useLanguage } from "../lib/language-context";
 import { colors, spacing, fontSize } from "../constants/theme";
-import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../components/ProductGridCard";
-import { VariantBottomSheet } from "../components/VariantBottomSheet";
+import { GRID_H_PADDING } from "../components/FeaturedProductCard";
+import { ProductList } from "../components/ProductList";
+import { ProductActionsProvider } from "../lib/product-actions";
 import { FloatingCart } from "../components/FloatingCart";
-import { ConfirmSheet } from "../components/ConfirmSheet";
 import { ProductCardSkeleton } from "../components/SkeletonLoader";
-import type { StoreProduct, CategoryTreeNode } from "../lib/types";
+import type { StoreProduct, DepartmentNode } from "../lib/types";
+
+// Unified tree node for recursive search
+interface TreeNode {
+  id: string;
+  name: string;
+  translations?: Record<string, { name?: string; description?: string }> | null;
+  children: TreeNode[];
+}
+
+function toTreeNodes(departments: DepartmentNode[]): TreeNode[] {
+  return departments.map((d) => ({
+    id: d.id, name: d.name, translations: d.translations,
+    children: d.categories.map((c) => ({
+      id: c.id, name: c.name, translations: c.translations,
+      children: c.subcategories.map((s) => ({
+        id: s.id, name: s.name, translations: s.translations,
+        children: [],
+      })),
+    })),
+  }));
+}
 
 const FOOD_TYPES = [
   { id: "VEG", label: "Veg" },
@@ -40,15 +56,10 @@ export default function SearchScreen() {
     q?: string;
   }>();
   const { selectedStore } = useStore();
-  const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
-  const { isWishlisted, toggle: toggleWishlist } = useWishlist();
-  const { isMember } = useMembership();
-  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
-  const toast = useToast();
   const { getLocalizedName } = useLanguage();
 
   const [query, setQuery] = useState(initialQuery ?? "");
-  const [categories, setCategories] = useState<CategoryTreeNode[]>([]);
+  const [categories, setCategories] = useState<TreeNode[]>([]);
   const [activeCategoryId, setActiveCategoryId] = useState<string | null>(initialCategoryId ?? null);
   const [activeFoodType, setActiveFoodType] = useState<string | null>(null);
   const [results, setResults] = useState<StoreProduct[]>([]);
@@ -57,9 +68,6 @@ export default function SearchScreen() {
   const [hasMore, setHasMore] = useState(true);
   const searchRef = useRef<TextInput>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
-  const [sheetVisible, setSheetVisible] = useState(false);
-  const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
-  const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
   const [searchMeta, setSearchMeta] = useState<{
     strategy: string;
     correctedQuery?: string;
@@ -71,8 +79,8 @@ export default function SearchScreen() {
   // Fetch categories for filter chips
   useEffect(() => {
     api
-      .get<CategoryTreeNode[]>("/api/v1/categories/tree")
-      .then((res) => setCategories(res.data))
+      .get<DepartmentNode[]>("/api/v1/categories/tree")
+      .then((res) => setCategories(toTreeNodes(res.data)))
       .catch(() => {});
   }, []);
 
@@ -83,7 +91,7 @@ export default function SearchScreen() {
     } else if (sortBy === "newest") {
       navigation.setOptions({ title: "New Arrivals" });
     } else if (activeCategoryId && categories.length > 0) {
-      const findCat = (nodes: CategoryTreeNode[]): CategoryTreeNode | null => {
+      const findCat = (nodes: TreeNode[]): TreeNode | null => {
         for (const n of nodes) {
           if (n.id === activeCategoryId) return n;
           const found = findCat(n.children);
@@ -186,228 +194,104 @@ export default function SearchScreen() {
     setActiveFoodType((prev) => (prev === id ? null : id));
   };
 
-  // Group results by product.id — pick cheapest as primary, store all variants
-  const { groupedResults, variantsByProductId } = useMemo(() => {
-    const groups = new Map<string, StoreProduct[]>();
-    for (const sp of results) {
-      if (!sp.product) continue;
-      const pid = sp.product.id;
-      if (!groups.has(pid)) groups.set(pid, []);
-      groups.get(pid)!.push(sp);
-    }
 
-    const primary: StoreProduct[] = [];
-    const variantsMap = new Map<string, StoreProduct[]>();
-    for (const [pid, variants] of groups) {
-      const sorted = [...variants].sort((a, b) => {
-        const priceA = a.pricing?.discountActive ? a.pricing.effectivePrice : Number(a.price);
-        const priceB = b.pricing?.discountActive ? b.pricing.effectivePrice : Number(b.price);
-        return priceA - priceB;
-      });
-      primary.push(sorted[0]);
-      variantsMap.set(pid, sorted);
-    }
 
-    return { groupedResults: primary, variantsByProductId: variantsMap };
-  }, [results]);
-
-  const handleShowVariants = useCallback(
-    (productId: string) => {
-      const variants = variantsByProductId.get(productId);
-      if (variants) {
-        setSheetVariants(variants);
-        setSheetVisible(true);
-      }
-    },
-    [variantsByProductId],
-  );
-
-  const rawCartQtyMap = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const item of cartItems) {
-      map.set(item.storeProductId, item.quantity);
-    }
-    return map;
-  }, [cartItems]);
-
-  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
-
-  const handleAddToCart = useCallback(
-    (sp: StoreProduct) => {
-      if (!selectedStore) return;
-
-      if (isBasketMode) {
-        addBasketItem(sp.id);
-        toast.show("Added to tomorrow's basket", "success");
-        return;
-      }
-
-      const item = {
-        storeProductId: sp.id,
-        productId: sp.product.id,
-        productName: sp.product.name,
-        variantId: sp.variant.id,
-        variantName: sp.variant.name,
-        price: getBestPrice(sp, isMember),
-        imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
-      };
-
-      if (cartStoreId && cartStoreId !== selectedStore.id) {
-        setReplaceCartConfirm({
-          pending: () => addItem(selectedStore.id, selectedStore.name, item),
-        });
-        return;
-      }
-
-      addItem(selectedStore.id, selectedStore.name, item);
-    },
-    [selectedStore, cartStoreId, addItem, isMember, isBasketMode, addBasketItem, toast],
-  );
-
-  const effectiveUpdateQty = useCallback(
-    (spId: string, qty: number) => {
-      if (isBasketMode) {
-        updateBasketQuantity(spId, qty);
-        return;
-      }
-      updateQuantity(spId, qty);
-    },
-    [isBasketMode, updateBasketQuantity, updateQuantity],
-  );
 
   return (
-    <View style={styles.container}>
-      {/* Search Input */}
-      <View style={styles.searchRow}>
-        <TextInput
-          ref={searchRef}
-          style={styles.searchInput}
-          placeholder="Search products..."
-          value={query}
-          onChangeText={handleQueryChange}
-          autoCapitalize="none"
-          autoCorrect={false}
-          returnKeyType="search"
-        />
-      </View>
-
-      {/* Filter Chips */}
-      <View style={styles.filterSection}>
-        <FlatList
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          data={[
-            ...categories.map((c) => ({ id: c.id, label: getLocalizedName(c), type: "category" as const })),
-            ...FOOD_TYPES.map((f) => ({ ...f, type: "food" as const })),
-          ]}
-          keyExtractor={(item) => `${item.type}-${item.id}`}
-          contentContainerStyle={styles.chipRow}
-          renderItem={({ item }) => {
-            const isActive =
-              item.type === "category"
-                ? activeCategoryId === item.id
-                : activeFoodType === item.id;
-
-            return (
-              <TouchableOpacity
-                style={[styles.chip, isActive && styles.chipActive]}
-                onPress={() =>
-                  item.type === "category" ? toggleCategory(item.id) : toggleFoodType(item.id)
-                }
-              >
-                <Text style={[styles.chipText, isActive && styles.chipTextActive]}>
-                  {item.label}
-                </Text>
-              </TouchableOpacity>
-            );
-          }}
-        />
-      </View>
-
-      {/* Search Meta Banner */}
-      {searchMeta && searchMeta.strategy !== "keyword" && groupedResults.length > 0 && (
-        <View style={styles.searchMetaBanner}>
-          <Ionicons name="sparkles-outline" size={14} color={colors.primary} />
-          <Text style={styles.searchMetaText}>
-            Showing results for{" "}
-            <Text style={styles.searchMetaBold}>
-              {searchMeta.correctedQuery ?? searchMeta.expandedTerms?.join(", ") ?? "similar products"}
-            </Text>
-          </Text>
+    <ProductActionsProvider store={selectedStore ?? null}>
+      <View style={styles.container}>
+        {/* Search Input */}
+        <View style={styles.searchRow}>
+          <TextInput
+            ref={searchRef}
+            style={styles.searchInput}
+            placeholder="Search products..."
+            value={query}
+            onChangeText={handleQueryChange}
+            autoCapitalize="none"
+            autoCorrect={false}
+            returnKeyType="search"
+          />
         </View>
-      )}
 
-      {/* Results */}
-      <FlatList
-        data={groupedResults}
-        keyExtractor={(item) => item.id}
-        numColumns={2}
-        contentContainerStyle={styles.grid}
-        columnWrapperStyle={styles.gridRow}
-        onEndReached={handleLoadMore}
-        onEndReachedThreshold={0.3}
-        onScrollBeginDrag={() => Keyboard.dismiss()}
-        keyboardShouldPersistTaps="handled"
-        renderItem={({ item }) => {
-          const variants = variantsByProductId.get(item.product.id);
-          return (
-            <ProductGridCard
-              item={item}
-              onAddToCart={handleAddToCart}
-              onUpdateQuantity={effectiveUpdateQty}
-              quantity={cartQuantityMap.get(item.id) ?? 0}
-              storeId={selectedStore?.id}
-              variantCount={variants?.length ?? 1}
-              onShowVariants={() => handleShowVariants(item.product.id)}
-              isWishlisted={isWishlisted(item.product.id)}
-              onToggleWishlist={toggleWishlist}
-              isMember={isMember}
-            />
-          );
-        }}
-        ListEmptyComponent={
-          loading ? (
-            <View>
-              {[1, 2, 3].map((i) => (
-                <ProductCardSkeleton key={i} />
-              ))}
-            </View>
-          ) : (
-            <Text style={styles.empty}>
-              {query || activeCategoryId || activeFoodType
-                ? "No products found"
-                : "Start typing to search"}
+        {/* Filter Chips */}
+        <View style={styles.filterSection}>
+          <FlatList
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            data={[
+              ...categories.map((c) => ({ id: c.id, label: getLocalizedName(c), type: "category" as const })),
+              ...FOOD_TYPES.map((f) => ({ ...f, type: "food" as const })),
+            ]}
+            keyExtractor={(item) => `${item.type}-${item.id}`}
+            contentContainerStyle={styles.chipRow}
+            renderItem={({ item }) => {
+              const isActive =
+                item.type === "category"
+                  ? activeCategoryId === item.id
+                  : activeFoodType === item.id;
+
+              return (
+                <TouchableOpacity
+                  style={[styles.chip, isActive && styles.chipActive]}
+                  onPress={() =>
+                    item.type === "category" ? toggleCategory(item.id) : toggleFoodType(item.id)
+                  }
+                >
+                  <Text style={[styles.chipText, isActive && styles.chipTextActive]}>
+                    {item.label}
+                  </Text>
+                </TouchableOpacity>
+              );
+            }}
+          />
+        </View>
+
+        {/* Search Meta Banner */}
+        {searchMeta && searchMeta.strategy !== "keyword" && results.length > 0 && (
+          <View style={styles.searchMetaBanner}>
+            <Ionicons name="sparkles-outline" size={14} color={colors.primary} />
+            <Text style={styles.searchMetaText}>
+              Showing results for{" "}
+              <Text style={styles.searchMetaBold}>
+                {searchMeta.correctedQuery ?? searchMeta.expandedTerms?.join(", ") ?? "similar products"}
+              </Text>
             </Text>
-          )
-        }
-        ListFooterComponent={
-          loading && results.length > 0 ? <ProductCardSkeleton /> : null
-        }
-      />
-      <FloatingCart />
-      <VariantBottomSheet
-        visible={sheetVisible}
-        onClose={() => setSheetVisible(false)}
-        variants={sheetVariants}
-        onAddToCart={handleAddToCart}
-        onUpdateQuantity={effectiveUpdateQty}
-        cartQuantityMap={cartQuantityMap}
-        isMember={isMember}
-      />
-      <ConfirmSheet
-        visible={replaceCartConfirm !== null}
-        title="Replace Cart?"
-        message="Your cart has items from another store. Adding this item will replace your current cart."
-        icon="cart-outline"
-        iconColor="#f59e0b"
-        confirmLabel="Replace"
-        onConfirm={() => {
-          replaceCartConfirm?.pending();
-          setReplaceCartConfirm(null);
-        }}
-        onCancel={() => setReplaceCartConfirm(null)}
-      />
-    </View>
+          </View>
+        )}
+
+        {/* Results */}
+        <ProductList
+          products={results}
+          layout="grid"
+          keyboardDismissMode="on-drag"
+          contentContainerStyle={styles.grid}
+          onEndReached={handleLoadMore}
+          onEndReachedThreshold={0.3}
+          onScrollBeginDrag={() => Keyboard.dismiss()}
+          keyboardShouldPersistTaps="handled"
+          ListEmptyComponent={
+            loading ? (
+              <View>
+                {[1, 2, 3].map((i) => (
+                  <ProductCardSkeleton key={i} />
+                ))}
+              </View>
+            ) : (
+              <Text style={styles.empty}>
+                {query || activeCategoryId || activeFoodType
+                  ? "No products found"
+                  : "Start typing to search"}
+              </Text>
+            )
+          }
+          ListFooterComponent={
+            loading && results.length > 0 ? <ProductCardSkeleton /> : null
+          }
+        />
+        <FloatingCart />
+      </View>
+    </ProductActionsProvider>
   );
 }
 

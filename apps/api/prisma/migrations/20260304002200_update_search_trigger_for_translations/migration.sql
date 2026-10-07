@@ -1,4 +1,4 @@
--- Update search trigger to include translation names in search_text and search_vector
+-- Update search trigger to include translation names in search_text (3-tier taxonomy)
 CREATE OR REPLACE FUNCTION update_product_search() RETURNS trigger AS $$
 DECLARE
   brand_name TEXT;
@@ -10,11 +10,12 @@ BEGIN
   -- Fetch brand name
   SELECT name INTO brand_name FROM brands WHERE id = NEW.brand_id;
 
-  -- Fetch category name and parent category name
-  SELECT c.name, pc.name INTO category_name, parent_category_name
-  FROM categories c
-  LEFT JOIN categories pc ON c.parent_id = pc.id
-  WHERE c.id = NEW.category_id;
+  -- Fetch subcategory name and category name via 3-tier hierarchy
+  SELECT s.name, c.name INTO category_name, parent_category_name
+  FROM subcategories s
+  LEFT JOIN categories c ON s.category_id = c.id
+  LEFT JOIN departments d ON c.department_id = d.id
+  WHERE s.id = NEW.subcategory_id;
 
   -- Collect all translation names into a single string
   translation_names := '';
@@ -37,15 +38,6 @@ BEGIN
                      COALESCE(NEW.description, '') || ' ' ||
                      COALESCE(array_to_string(NEW.tags, ' '), '') || ' ' ||
                      COALESCE(NEW.ingredients, '');
-
-  -- Build search_vector with weights
-  -- Use 'simple' dictionary for translation names (no stemming needed for Tamil/regional)
-  NEW.search_vector :=
-    setweight(to_tsvector('english', COALESCE(NEW.name, '')), 'A') ||
-    setweight(to_tsvector('simple', COALESCE(TRIM(translation_names), '')), 'A') ||
-    setweight(to_tsvector('english', COALESCE(brand_name, '') || ' ' || COALESCE(category_name, '') || ' ' || COALESCE(parent_category_name, '')), 'B') ||
-    setweight(to_tsvector('english', COALESCE(NEW.description, '') || ' ' || COALESCE(array_to_string(NEW.tags, ' '), '')), 'C') ||
-    setweight(to_tsvector('english', COALESCE(NEW.ingredients, '')), 'D');
 
   RETURN NEW;
 END;

@@ -62,14 +62,32 @@ export type LoginResponse =
   | { requiresOrgSelection: false; accessToken: string; refreshToken: string }
   | { requiresOrgSelection: true; organizations: OrgSummary[]; temporaryToken: string };
 
-// ── Category Tree ─────────────────────────────────────
-export interface CategoryTreeNode {
+// ── 3-Tier Taxonomy ──────────────────────────────────
+export interface SubcategoryNode {
   id: string;
   name: string;
   slug: string;
-  parentId: string | null;
   sortOrder: number;
   imageUrl: string | null;
   translations?: Record<string, { name?: string; description?: string }> | null;
-  children: CategoryTreeNode[];
+}
+
+export interface CategoryNode {
+  id: string;
+  name: string;
+  slug: string;
+  sortOrder: number;
+  imageUrl: string | null;
+  translations?: Record<string, { name?: string; description?: string }> | null;
+  subcategories: SubcategoryNode[];
+}
+
+export interface DepartmentNode {
+  id: string;
+  name: string;
+  slug: string;
+  sortOrder: number;
+  imageUrl: string | null;
+  translations?: Record<string, { name?: string; description?: string }> | null;
+  categories: CategoryNode[];
 }

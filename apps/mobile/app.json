@@ -10,18 +10,24 @@
     ],
     "newArchEnabled": true,
     "userInterfaceStyle": "light",
-    "splash": {
-      "backgroundColor": "#16a34a"
-    },
+    "icon": "./assets/icon.png",
     "plugins": [
       "expo-router",
       "expo-secure-store",
-      "expo-splash-screen",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-wordmark.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0f766e"
+        }
+      ],
       [
         "expo-notifications",
         {
           "icon": "./assets/notification-icon.png",
-          "color": "#16a34a"
+          "color": "#0f766e"
         }
       ],
       [
@@ -36,14 +42,34 @@
       ],
       "@react-native-firebase/app",
       "@react-native-firebase/messaging",
-      "expo-localization"
+      "expo-localization",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "forceStaticLinking": [
+              "react-native-maps",
+              "react-native-google-maps",
+              "RNFBApp",
+              "RNFBMessaging"
+            ]
+          }
+        }
+      ]
     ],
     "android": {
-      "package": "com.martly.app",
+      "package": "com.quartex.martly",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f766e"
+      },
       "googleServicesFile": "./google-services.json"
     },
     "ios": {
-      "bundleIdentifier": "com.martly.app",
+      "bundleIdentifier": "com.quartex.martly",
+      "buildNumber": "1",
+      "appleTeamId": "QBLZB22TU6",
       "googleServicesFile": "./GoogleService-Info.plist",
       "config": {
         "googleMapsApiKey": "AIzaSyAOPrWjNw0H_USbXZqnk3_V03FgvSEe6Ko"

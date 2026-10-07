@@ -58,7 +58,7 @@ export async function collectionRoutes(app: FastifyInstance) {
         items: {
           orderBy: { sortOrder: "asc" },
           include: {
-            product: { include: { brand: true, category: true } },
+            product: { include: { brand: true, subcategory: true } },
           },
         },
         organization: { select: { id: true, name: true } },

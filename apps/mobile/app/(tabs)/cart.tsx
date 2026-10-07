@@ -4,17 +4,18 @@ import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useCart } from "../../lib/cart-context";
 import { useStore } from "../../lib/store-context";
-import { useMembership, getBestPrice } from "../../lib/membership-context";
+import { useMembership } from "../../lib/membership-context";
 import { api } from "../../lib/api";
 import type { Banner, StoreProduct } from "../../lib/types";
 import { colors, spacing, fontSize } from "../../constants/theme";
-import { FeaturedProductCard } from "../../components/FeaturedProductCard";
+import { ProductList } from "../../components/ProductList";
+import { ProductActionsProvider } from "../../lib/product-actions";
 
 export default function CartScreen() {
   const router = useRouter();
-  const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem, addItem } = useCart();
+  const { storeId, storeName, items, totalAmount, itemCount, updateQuantity, removeItem } = useCart();
   const { selectedStore } = useStore();
-  const { isMember, freeDelivery: memberFreeDelivery } = useMembership();
+  const { freeDelivery: memberFreeDelivery } = useMembership();
   const [upsellBanners, setUpsellBanners] = useState<Banner[]>([]);
   const [alsoBought, setAlsoBought] = useState<StoreProduct[]>([]);
 
@@ -49,19 +50,6 @@ export default function CartScreen() {
       .then((res) => setAlsoBought(res.data))
       .catch(() => {});
   }, [storeId, items]);
-
-  const handleCartAdd = useCallback((sp: StoreProduct) => {
-    if (!storeId) return;
-    addItem(storeId, storeName, {
-      storeProductId: sp.id,
-      productId: sp.product.id,
-      productName: sp.product.name,
-      variantId: sp.variant.id,
-      variantName: sp.variant.name,
-      price: getBestPrice(sp, isMember),
-      imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
-    });
-  }, [storeId, storeName, addItem, isMember]);
 
   const handleBannerPress = useCallback((banner: Banner) => {
     switch (banner.actionType) {
@@ -99,191 +87,175 @@ export default function CartScreen() {
   }
 
   return (
-    <View style={styles.container}>
-      {/* Store Header */}
-      <View style={styles.storeHeader}>
-        <View style={styles.storeIconWrap}>
-          <Ionicons name="storefront" size={16} color={colors.primary} />
+    <ProductActionsProvider store={storeId ? { id: storeId, name: storeName ?? "" } : null}>
+      <View style={styles.container}>
+        {/* Store Header */}
+        <View style={styles.storeHeader}>
+          <View style={styles.storeIconWrap}>
+            <Ionicons name="storefront" size={16} color={colors.primary} />
+          </View>
+          <View style={styles.storeInfo}>
+            <Text style={styles.storeName}>{storeName}</Text>
+            <Text style={styles.itemCountLabel}>{itemCount} item{itemCount !== 1 ? "s" : ""} in cart</Text>
+          </View>
         </View>
-        <View style={styles.storeInfo}>
-          <Text style={styles.storeName}>{storeName}</Text>
-          <Text style={styles.itemCountLabel}>{itemCount} item{itemCount !== 1 ? "s" : ""} in cart</Text>
-        </View>
-      </View>
 
-      {/* Nudge Banners */}
-      {belowMinimum && (
-        <View style={styles.nudgeBanner}>
-          <Ionicons name="alert-circle" size={18} color="#c2410c" />
-          <Text style={styles.nudgeText}>
-            Add {"\u20B9"}{(minOrderAmount! - totalAmount).toFixed(0)} more to place your order (min {"\u20B9"}{minOrderAmount!.toFixed(0)})
-          </Text>
-        </View>
-      )}
-      {belowFreeDelivery && (
-        <View style={styles.freeDeliveryNudge}>
-          <Ionicons name="bicycle" size={18} color={colors.primary} />
-          <Text style={styles.freeDeliveryNudgeText}>
-            Add {"\u20B9"}{(freeDeliveryThreshold! - totalAmount).toFixed(0)} more for free delivery
-          </Text>
-        </View>
-      )}
-
-      <FlatList
-        data={items}
-        keyExtractor={(item) => item.storeProductId}
-        contentContainerStyle={styles.list}
-        ListHeaderComponent={
-          upsellBanners.length > 0 ? (
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={styles.upsellList}
-            >
-              {upsellBanners.map((banner) => (
-                <TouchableOpacity
-                  key={banner.id}
-                  activeOpacity={banner.actionType === "NONE" ? 1 : 0.85}
-                  onPress={() => handleBannerPress(banner)}
-                  style={styles.upsellCard}
-                >
-                  <Image source={{ uri: banner.imageUrl }} style={styles.upsellImage} resizeMode="cover" />
-                  <View style={styles.upsellTextOverlay}>
-                    <Text style={styles.upsellTitle} numberOfLines={1}>{banner.title}</Text>
-                  </View>
-                </TouchableOpacity>
-              ))}
-            </ScrollView>
-          ) : null
-        }
-        renderItem={({ item }) => (
-          <View style={styles.card}>
-            <View style={styles.cardBody}>
-              {item.imageUrl ? (
-                <Image source={{ uri: item.imageUrl }} style={styles.itemImage} />
-              ) : (
-                <View style={styles.itemImagePlaceholder}>
-                  <Ionicons name="cube-outline" size={20} color={colors.border} />
-                </View>
-              )}
-              <View style={styles.cardMiddle}>
-                <Text style={styles.itemName} numberOfLines={2}>{item.productName}</Text>
-                <Text style={styles.itemVariant}>{item.variantName}</Text>
-                <Text style={styles.itemPrice}>
-                  {"\u20B9"}{item.price.toFixed(0)}
-                </Text>
-              </View>
-              <View style={styles.cardRight}>
-                <View style={styles.qtyStepper}>
-                  <TouchableOpacity
-                    style={styles.qtyBtn}
-                    onPress={() => updateQuantity(item.storeProductId, item.quantity - 1)}
-                    hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-                  >
-                    <Ionicons
-                      name={item.quantity === 1 ? "trash-outline" : "remove"}
-                      size={16}
-                      color={colors.primary}
-                    />
-                  </TouchableOpacity>
-                  <Text style={styles.qtyText}>{item.quantity}</Text>
-                  <TouchableOpacity
-                    style={styles.qtyBtn}
-                    onPress={() => updateQuantity(item.storeProductId, item.quantity + 1)}
-                    hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-                  >
-                    <Ionicons name="add" size={16} color={colors.primary} />
-                  </TouchableOpacity>
-                </View>
-                <Text style={styles.lineTotal}>
-                  {"\u20B9"}{(item.price * item.quantity).toFixed(0)}
-                </Text>
-              </View>
-            </View>
+        {/* Nudge Banners */}
+        {belowMinimum && (
+          <View style={styles.nudgeBanner}>
+            <Ionicons name="alert-circle" size={18} color="#c2410c" />
+            <Text style={styles.nudgeText}>
+              Add {"\u20B9"}{(minOrderAmount! - totalAmount).toFixed(0)} more to place your order (min {"\u20B9"}{minOrderAmount!.toFixed(0)})
+            </Text>
           </View>
         )}
-        ListFooterComponent={
-          <View>
-          {alsoBought.length > 0 && (
-            <View style={styles.alsoBoughtSection}>
-              <Text style={styles.alsoBoughtTitle}>Customers Also Bought</Text>
-              <FlatList
+        {belowFreeDelivery && (
+          <View style={styles.freeDeliveryNudge}>
+            <Ionicons name="bicycle" size={18} color={colors.primary} />
+            <Text style={styles.freeDeliveryNudgeText}>
+              Add {"\u20B9"}{(freeDeliveryThreshold! - totalAmount).toFixed(0)} more for free delivery
+            </Text>
+          </View>
+        )}
+
+        <FlatList
+          data={items}
+          keyExtractor={(item) => item.storeProductId}
+          contentContainerStyle={styles.list}
+          ListHeaderComponent={
+            upsellBanners.length > 0 ? (
+              <ScrollView
                 horizontal
-                data={alsoBought}
-                keyExtractor={(item) => item.id}
                 showsHorizontalScrollIndicator={false}
-                contentContainerStyle={styles.alsoBoughtList}
-                renderItem={({ item }) => (
-                  <FeaturedProductCard
-                    item={item}
-                    onAddToCart={handleCartAdd}
-                    onUpdateQuantity={updateQuantity}
-                    quantity={items.find((i) => i.storeProductId === item.id)?.quantity ?? 0}
-                    storeId={storeId ?? undefined}
-                    variantCount={1}
-                    onShowVariants={() => {}}
-                    isMember={isMember}
-                  />
+                contentContainerStyle={styles.upsellList}
+              >
+                {upsellBanners.map((banner) => (
+                  <TouchableOpacity
+                    key={banner.id}
+                    activeOpacity={banner.actionType === "NONE" ? 1 : 0.85}
+                    onPress={() => handleBannerPress(banner)}
+                    style={styles.upsellCard}
+                  >
+                    <Image source={{ uri: banner.imageUrl }} style={styles.upsellImage} resizeMode="cover" />
+                    <View style={styles.upsellTextOverlay}>
+                      <Text style={styles.upsellTitle} numberOfLines={1}>{banner.title}</Text>
+                    </View>
+                  </TouchableOpacity>
+                ))}
+              </ScrollView>
+            ) : null
+          }
+          renderItem={({ item }) => (
+            <View style={styles.card}>
+              <View style={styles.cardBody}>
+                {item.imageUrl ? (
+                  <Image source={{ uri: item.imageUrl }} style={styles.itemImage} />
+                ) : (
+                  <View style={styles.itemImagePlaceholder}>
+                    <Ionicons name="cube-outline" size={20} color={colors.border} />
+                  </View>
                 )}
-              />
+                <View style={styles.cardMiddle}>
+                  <Text style={styles.itemName} numberOfLines={2}>{item.productName}</Text>
+                  <Text style={styles.itemVariant}>{item.variantName}</Text>
+                  <Text style={styles.itemPrice}>
+                    {"\u20B9"}{item.price.toFixed(0)}
+                  </Text>
+                </View>
+                <View style={styles.cardRight}>
+                  <View style={styles.qtyStepper}>
+                    <TouchableOpacity
+                      style={styles.qtyBtn}
+                      onPress={() => updateQuantity(item.storeProductId, item.quantity - 1)}
+                      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                    >
+                      <Ionicons
+                        name={item.quantity === 1 ? "trash-outline" : "remove"}
+                        size={16}
+                        color={colors.primary}
+                      />
+                    </TouchableOpacity>
+                    <Text style={styles.qtyText}>{item.quantity}</Text>
+                    <TouchableOpacity
+                      style={styles.qtyBtn}
+                      onPress={() => updateQuantity(item.storeProductId, item.quantity + 1)}
+                      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                    >
+                      <Ionicons name="add" size={16} color={colors.primary} />
+                    </TouchableOpacity>
+                  </View>
+                  <Text style={styles.lineTotal}>
+                    {"\u20B9"}{(item.price * item.quantity).toFixed(0)}
+                  </Text>
+                </View>
+              </View>
             </View>
           )}
-          <View style={styles.billSection}>
-            <Text style={styles.billTitle}>Bill Details</Text>
-            <View style={styles.billCard}>
-              <View style={styles.billRow}>
-                <Text style={styles.billLabel}>Item total</Text>
-                <Text style={styles.billValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
+          ListFooterComponent={
+            <View>
+            {alsoBought.length > 0 && (
+              <View style={styles.alsoBoughtSection}>
+                <Text style={styles.alsoBoughtTitle}>Customers Also Bought</Text>
+                <ProductList products={alsoBought} layout="rail" />
               </View>
-              <View style={styles.billRow}>
-                <Text style={styles.billLabel}>Delivery fee</Text>
-                {cartFreeDelivery ? (
-                  <View style={styles.freeDeliveryTag}>
-                    <Text style={styles.billFree}>FREE</Text>
-                    {memberFreeDelivery && (
-                      <View style={styles.memberBadge}>
-                        <Ionicons name="star" size={10} color="#7c3aed" />
-                        <Text style={styles.memberBadgeText}>PLUS</Text>
-                      </View>
-                    )}
-                  </View>
-                ) : baseDeliveryFee > 0 ? (
-                  <Text style={styles.billValue}>{"\u20B9"}{baseDeliveryFee.toFixed(0)}</Text>
-                ) : (
-                  <Text style={styles.billMuted}>At checkout</Text>
-                )}
-              </View>
-              <View style={styles.billDivider} />
-              <View style={styles.billRow}>
-                <Text style={styles.billGrandLabel}>Grand Total</Text>
-                <Text style={styles.billGrandValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
+            )}
+            <View style={styles.billSection}>
+              <Text style={styles.billTitle}>Bill Details</Text>
+              <View style={styles.billCard}>
+                <View style={styles.billRow}>
+                  <Text style={styles.billLabel}>Item total</Text>
+                  <Text style={styles.billValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
+                </View>
+                <View style={styles.billRow}>
+                  <Text style={styles.billLabel}>Delivery fee</Text>
+                  {cartFreeDelivery ? (
+                    <View style={styles.freeDeliveryTag}>
+                      <Text style={styles.billFree}>FREE</Text>
+                      {memberFreeDelivery && (
+                        <View style={styles.memberBadge}>
+                          <Ionicons name="star" size={10} color="#7c3aed" />
+                          <Text style={styles.memberBadgeText}>PLUS</Text>
+                        </View>
+                      )}
+                    </View>
+                  ) : baseDeliveryFee > 0 ? (
+                    <Text style={styles.billValue}>{"\u20B9"}{baseDeliveryFee.toFixed(0)}</Text>
+                  ) : (
+                    <Text style={styles.billMuted}>At checkout</Text>
+                  )}
+                </View>
+                <View style={styles.billDivider} />
+                <View style={styles.billRow}>
+                  <Text style={styles.billGrandLabel}>Grand Total</Text>
+                  <Text style={styles.billGrandValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
+                </View>
               </View>
             </View>
-          </View>
-          </View>
-        }
-      />
+            </View>
+          }
+        />
 
-      {/* Sticky Footer */}
-      <View style={styles.footer}>
-        <TouchableOpacity
-          style={[styles.checkoutBar, belowMinimum && styles.checkoutBarDisabled]}
-          activeOpacity={belowMinimum ? 1 : 0.9}
-          onPress={() => !belowMinimum && router.push("/checkout")}
-        >
-          <View style={styles.checkoutLeft}>
-            <Text style={styles.checkoutTotal}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
-            <Text style={styles.checkoutSubtext}>TOTAL</Text>
-          </View>
-          <View style={styles.checkoutRight}>
-            <Text style={styles.checkoutBtnText}>
-              {belowMinimum ? `Min \u20B9${minOrderAmount!.toFixed(0)}` : "Checkout"}
-            </Text>
-            <Ionicons name={belowMinimum ? "lock-closed" : "arrow-forward"} size={18} color="#fff" />
-          </View>
-        </TouchableOpacity>
+        {/* Sticky Footer */}
+        <View style={styles.footer}>
+          <TouchableOpacity
+            style={[styles.checkoutBar, belowMinimum && styles.checkoutBarDisabled]}
+            activeOpacity={belowMinimum ? 1 : 0.9}
+            onPress={() => !belowMinimum && router.push("/checkout")}
+          >
+            <View style={styles.checkoutLeft}>
+              <Text style={styles.checkoutTotal}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
+              <Text style={styles.checkoutSubtext}>TOTAL</Text>
+            </View>
+            <View style={styles.checkoutRight}>
+              <Text style={styles.checkoutBtnText}>
+                {belowMinimum ? `Min \u20B9${minOrderAmount!.toFixed(0)}` : "Checkout"}
+              </Text>
+              <Ionicons name={belowMinimum ? "lock-closed" : "arrow-forward"} size={18} color="#fff" />
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </ProductActionsProvider>
   );
 }
 
@@ -519,10 +491,6 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: colors.text,
     marginBottom: spacing.sm,
-  },
-  alsoBoughtList: {
-    gap: spacing.sm,
-    paddingBottom: spacing.sm,
   },
   // Bill details
   billSection: {

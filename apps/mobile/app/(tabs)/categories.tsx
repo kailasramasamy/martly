@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import {
   View,
   Text,
@@ -15,8 +15,9 @@ import { api } from "../../lib/api";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
 import { SkeletonBox } from "../../components/SkeletonLoader";
+import { CategoryTile } from "../../components/CategoryTile";
 import { useLanguage } from "../../lib/language-context";
-import type { CategoryTreeNode } from "../../lib/types";
+import type { DepartmentNode, CategoryNode } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
@@ -24,36 +25,24 @@ const GRID_GAP = 10;
 const COLS = 3;
 const CARD_WIDTH = (SCREEN_WIDTH - H_PADDING * 2 - GRID_GAP * (COLS - 1)) / COLS;
 
-// Muted pastel palettes for categories
-const PALETTES = [
-  { bg: "#dcfce7", text: "#15803d", light: "#f0fdf4" },
-  { bg: "#dbeafe", text: "#1d4ed8", light: "#eff6ff" },
-  { bg: "#fef3c7", text: "#b45309", light: "#fffbeb" },
-  { bg: "#fce7f3", text: "#be185d", light: "#fdf2f8" },
-  { bg: "#ede9fe", text: "#6d28d9", light: "#f5f3ff" },
-  { bg: "#ffedd5", text: "#c2410c", light: "#fff7ed" },
-  { bg: "#e0f2fe", text: "#0369a1", light: "#f0f9ff" },
-  { bg: "#fee2e2", text: "#b91c1c", light: "#fef2f2" },
-  { bg: "#d1fae5", text: "#047857", light: "#ecfdf5" },
-  { bg: "#e0e7ff", text: "#4338ca", light: "#eef2ff" },
-];
+// Categories panel (inside the padded panel card): 4 tiles per row
+const PANEL_PADDING = 14;
+const SUB_GAP = 10;
+const SUB_TILE_SIZE = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - PANEL_PADDING * 2 - 2 - SUB_GAP * 3) / 4);
 
-function getPalette(id: string) {
-  let hash = 0;
-  for (let i = 0; i < id.length; i++) hash = id.charCodeAt(i) + ((hash << 5) - hash);
-  return PALETTES[Math.abs(hash) % PALETTES.length];
-}
+type GridRow = { key: string; items: (DepartmentNode | null)[]; expandedIndex: number };
 
 export default function CategoriesScreen() {
   const { getLocalizedName } = useLanguage();
-  const [categories, setCategories] = useState<CategoryTreeNode[]>([]);
+  const [categories, setCategories] = useState<DepartmentNode[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const listRef = useRef<FlatList<GridRow>>(null);
 
   const fetchCategories = useCallback(() => {
     return api
-      .get<CategoryTreeNode[]>("/api/v1/categories/tree")
+      .get<DepartmentNode[]>("/api/v1/categories/tree")
       .then((res) => setCategories(res.data))
       .catch(() => {});
   }, []);
@@ -68,13 +57,20 @@ export default function CategoriesScreen() {
     setRefreshing(false);
   }, [fetchCategories]);
 
-  const handlePress = useCallback((cat: CategoryTreeNode) => {
-    if (cat.children.length > 0) {
-      setExpandedId((prev) => (prev === cat.id ? null : cat.id));
-    } else {
-      router.push({ pathname: "/category/[id]", params: { id: cat.id } });
+  const handlePress = useCallback((dept: DepartmentNode) => {
+    if (dept.categories.length === 0) {
+      router.push({ pathname: "/category/[id]", params: { id: dept.id } });
+      return;
     }
-  }, []);
+    const opening = expandedId !== dept.id;
+    setExpandedId(opening ? dept.id : null);
+    if (!opening) return;
+    // Bring the tapped row to the top so its categories panel (rendered below it) is visible
+    const rowIndex = Math.floor(categories.findIndex((c) => c.id === dept.id) / COLS);
+    requestAnimationFrame(() => {
+      listRef.current?.scrollToIndex({ index: rowIndex, viewPosition: 0, animated: true });
+    });
+  }, [expandedId, categories]);
 
   const handleSubcategoryPress = useCallback((categoryId: string) => {
     router.push({ pathname: "/category/[id]", params: { id: categoryId } });
@@ -85,9 +81,9 @@ export default function CategoriesScreen() {
   }, []);
 
   // Build rows for 3-column grid
-  const gridData: { key: string; items: (CategoryTreeNode | null)[]; expandedIndex: number }[] = [];
+  const gridData: GridRow[] = [];
   for (let i = 0; i < categories.length; i += COLS) {
-    const items: (CategoryTreeNode | null)[] = [];
+    const items: (DepartmentNode | null)[] = [];
     for (let j = 0; j < COLS; j++) items.push(categories[i + j] ?? null);
     const expandedIndex = items.findIndex((c) => c && expandedId === c.id);
     gridData.push({ key: categories[i].id, items, expandedIndex });
@@ -104,7 +100,11 @@ export default function CategoriesScreen() {
       </TouchableOpacity>
 
       <FlatList
+        ref={listRef}
         data={gridData}
+        onScrollToIndexFailed={({ averageItemLength, index }) =>
+          listRef.current?.scrollToOffset({ offset: averageItemLength * index, animated: true })
+        }
         keyExtractor={(item) => item.key}
         contentContainerStyle={styles.list}
         showsVerticalScrollIndicator={false}
@@ -137,8 +137,8 @@ export default function CategoriesScreen() {
                 )}
               </View>
 
-              {/* Expanded subcategories */}
-              {expandedCat && expandedCat.children.length > 0 && (
+              {/* Expanded categories */}
+              {expandedCat && expandedCat.categories.length > 0 && (
                 <View style={styles.subcategoryPanel}>
                   <View style={styles.subcategoryHeader}>
                     <Text style={styles.subcategoryTitle}>
@@ -149,27 +149,16 @@ export default function CategoriesScreen() {
                     </TouchableOpacity>
                   </View>
                   <View style={styles.subcategoryGrid}>
-                    {expandedCat.children.map((sub) => {
-                      const palette = getPalette(sub.id);
-                      return (
-                        <TouchableOpacity
-                          key={sub.id}
-                          style={styles.subcategoryChip}
-                          onPress={() => handleSubcategoryPress(sub.id)}
-                          activeOpacity={0.7}
-                        >
-                          {sub.imageUrl ? (
-                            <Image source={{ uri: sub.imageUrl }} style={styles.subcategoryImage} resizeMode="contain" />
-                          ) : (
-                            <View style={[styles.subcategoryDot, { backgroundColor: palette.text }]} />
-                          )}
-                          <Text style={styles.subcategoryName} numberOfLines={1}>
-                            {getLocalizedName(sub)}
-                          </Text>
-                          <Ionicons name="chevron-forward" size={12} color="#cbd5e1" />
-                        </TouchableOpacity>
-                      );
-                    })}
+                    {expandedCat.categories.map((sub) => (
+                      <CategoryTile
+                        key={sub.id}
+                        title={getLocalizedName(sub)}
+                        imageUrl={sub.imageUrl}
+                        fallbackIcon={getCategoryIcon(sub.name)}
+                        size={SUB_TILE_SIZE}
+                        onPress={() => handleSubcategoryPress(sub.id)}
+                      />
+                    ))}
                   </View>
                 </View>
               )}
@@ -200,24 +189,23 @@ function CategoryGridCard({
   isExpanded,
   onPress,
 }: {
-  category: CategoryTreeNode;
+  category: DepartmentNode;
   isExpanded: boolean;
-  onPress: (cat: CategoryTreeNode) => void;
+  onPress: (dept: DepartmentNode) => void;
 }) {
   const { getLocalizedName } = useLanguage();
-  const palette = getPalette(category.id);
-  const hasChildren = category.children.length > 0;
+  const hasChildren = category.categories.length > 0;
 
   return (
     <TouchableOpacity
       style={[
         styles.card,
-        isExpanded && { borderColor: palette.text, borderWidth: 1.5 },
+        isExpanded && styles.cardExpanded,
       ]}
       onPress={() => onPress(category)}
       activeOpacity={0.7}
     >
-      <View style={[styles.cardIconArea, { backgroundColor: palette.bg }]}>
+      <View style={styles.cardIconArea}>
         {category.imageUrl ? (
           <Image
             source={{ uri: category.imageUrl }}
@@ -225,7 +213,7 @@ function CategoryGridCard({
             resizeMode="cover"
           />
         ) : (
-          <Ionicons name={getCategoryIcon(category.name)} size={32} color={palette.text} />
+          <Ionicons name={getCategoryIcon(category.name)} size={32} color={colors.primary} />
         )}
       </View>
       <View style={styles.cardContent}>
@@ -235,7 +223,7 @@ function CategoryGridCard({
         {hasChildren && (
           <View style={styles.cardMeta}>
             <Text style={styles.cardCount}>
-              {category.children.length} subcategories
+              {category.categories.length} categories
             </Text>
             <Ionicons
               name={isExpanded ? "chevron-up" : "chevron-down"}
@@ -311,6 +299,7 @@ const styles = StyleSheet.create({
   },
 
   // ── Card ──
+  cardExpanded: { borderColor: colors.primary, borderWidth: 1.5 },
   card: {
     width: CARD_WIDTH,
     backgroundColor: "#fff",
@@ -332,6 +321,7 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#f0fdfa",
   },
   cardImage: {
     width: "100%",
@@ -361,7 +351,7 @@ const styles = StyleSheet.create({
   subcategoryPanel: {
     backgroundColor: "#fff",
     borderRadius: 12,
-    padding: 14,
+    padding: PANEL_PADDING,
     marginBottom: GRID_GAP,
     borderWidth: 1,
     borderColor: "#f1f5f9",
@@ -385,35 +375,8 @@ const styles = StyleSheet.create({
   subcategoryGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: 8,
-  },
-  subcategoryChip: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#f8faf9",
-    borderRadius: 8,
-    paddingHorizontal: 12,
-    paddingVertical: 10,
-    gap: 8,
-    minWidth: "45%",
-    flex: 1,
-  },
-  subcategoryImage: {
-    width: 28,
-    height: 28,
-    borderRadius: 6,
-    backgroundColor: "#f1f5f9",
-  },
-  subcategoryDot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-  },
-  subcategoryName: {
-    fontSize: 13,
-    fontWeight: "500",
-    color: colors.text,
-    flex: 1,
+    columnGap: SUB_GAP,
+    rowGap: 14,
   },
 
   // ── Empty ──

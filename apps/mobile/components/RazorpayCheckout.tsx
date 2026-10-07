@@ -53,7 +53,7 @@ function NativeCheckout({ visible, keyId, orderId, amount, currency, name = "Mar
         contact: prefill?.contact ?? "",
         name: prefill?.name ?? "",
       },
-      theme: { color: "#0d9488" },
+      theme: { color: colors.primary },
     })
       .then((data) => {
         openedRef.current = false;
@@ -102,7 +102,7 @@ function WebViewCheckout({ visible, keyId, orderId, amount, currency, name = "Ma
       ${customerId ? `customer_id: ${JSON.stringify(customerId)},` : ""}
       remember_customer: true,
       prefill: ${JSON.stringify(prefill ?? {})},
-      theme: { color: "#0d9488" },
+      theme: { color: colors.primary },
       modal: { ondismiss: function() { window.ReactNativeWebView.postMessage(JSON.stringify({ event: "cancelled" })); } },
       handler: function(response) {
         window.ReactNativeWebView.postMessage(JSON.stringify({ event: "success", data: response }));

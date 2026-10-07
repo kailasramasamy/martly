@@ -11,7 +11,7 @@ export async function bannerRoutes(app: FastifyInstance) {
     "/by-placement/:storeId",
     async (request, reply) => {
       const { storeId } = request.params;
-      const { placement, categoryId } = request.query as { placement?: string; categoryId?: string };
+      const { placement, categoryId, departmentId, subcategoryId } = request.query as { placement?: string; categoryId?: string; departmentId?: string; subcategoryId?: string };
 
       if (!placement) return reply.badRequest("placement query param is required");
 
@@ -46,17 +46,16 @@ export async function bannerRoutes(app: FastifyInstance) {
       };
 
       let banners;
-      if (categoryId) {
-        // Try category-specific banners first
+      const taxFilter = subcategoryId ? { subcategoryId } : categoryId ? { categoryId } : departmentId ? { departmentId } : null;
+      if (taxFilter) {
         banners = await app.prisma.banner.findMany({
-          where: { ...baseWhere, categoryId },
+          where: { ...baseWhere, ...taxFilter },
           orderBy: { sortOrder: "asc" },
           select: selectFields,
         });
-        // Fall back to generic (no category) banners
         if (banners.length === 0) {
           banners = await app.prisma.banner.findMany({
-            where: { ...baseWhere, categoryId: null },
+            where: { ...baseWhere, departmentId: null, categoryId: null, subcategoryId: null },
             orderBy: { sortOrder: "asc" },
             select: selectFields,
           });

@@ -19,13 +19,11 @@ import { sectionTitle } from "../../theme";
 const { Text } = Typography;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const getCategoryBreadcrumb = (category: any): string[] => {
+const getCategoryBreadcrumb = (subcategory: any): string[] => {
   const parts: string[] = [];
-  let current = category;
-  while (current) {
-    parts.unshift(current.name);
-    current = current.parent;
-  }
+  if (subcategory?.category?.department?.name) parts.push(subcategory.category.department.name);
+  if (subcategory?.category?.name) parts.push(subcategory.category.name);
+  if (subcategory?.name) parts.push(subcategory.name);
   return parts;
 };
 
@@ -114,8 +112,8 @@ export const ProductShow = () => {
               <Descriptions.Item label="Name">{record.name}</Descriptions.Item>
               <Descriptions.Item label="Brand">{record.brand?.name ?? "—"}</Descriptions.Item>
               <Descriptions.Item label="Category">
-                {record.category
-                  ? getCategoryBreadcrumb(record.category).join(" → ")
+                {record.subcategory
+                  ? getCategoryBreadcrumb(record.subcategory).join(" → ")
                   : "—"}
               </Descriptions.Item>
               <Descriptions.Item label="Product Type">

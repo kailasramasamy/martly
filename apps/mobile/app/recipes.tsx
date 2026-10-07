@@ -16,6 +16,7 @@ import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
 import { RecipeCard } from "../components/RecipeCard";
 import type { RecipeSummary } from "../lib/types";
+import { colors } from "../constants/theme";
 
 const DIFFICULTY_OPTIONS = ["EASY", "MEDIUM", "HARD"];
 const DIET_OPTIONS = [
@@ -79,7 +80,7 @@ export default function RecipesScreen() {
   if (loading && initialLoad.current) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color="#0d9488" />
+        <ActivityIndicator size="large" color={colors.primary} />
       </View>
     );
   }
@@ -94,7 +95,7 @@ export default function RecipesScreen() {
         contentContainerStyle={styles.list}
         keyboardShouldPersistTaps="handled"
         onScrollBeginDrag={() => Keyboard.dismiss()}
-        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#0d9488" />}
+        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} />}
         ListHeaderComponent={
           <>
             <View style={styles.searchContainer}>
@@ -207,8 +208,8 @@ const styles = StyleSheet.create({
     borderColor: "#e2e8f0",
   },
   chipActive: {
-    backgroundColor: "#0d9488",
-    borderColor: "#0d9488",
+    backgroundColor: colors.primary,
+    borderColor: colors.primary,
   },
   chipText: {
     fontSize: 13,

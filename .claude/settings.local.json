@@ -85,7 +85,10 @@
       "Bash(STORE=375d5737-069b-42f0-9791-1cc8390c0993\ncurl -s \"http://localhost:7001/api/v1/stores/$STORE/products?pageSize=50\" | python3 -c \"\nimport sys, json\ndata = json.load\\(sys.stdin\\)['data']\nfound = 0\nfor p in data:\n    mp = p['pricing'].get\\('memberPrice'\\)\n    ms = p['pricing'].get\\('memberSavingsAmount'\\)\n    if mp:\n        found += 1\n        print\\(f\\\\\"{p['product']['name']}: ₹{p['pricing']['effectivePrice']} \\(member: ₹{mp}, save ₹{ms}\\)\\\\\"\\)\nprint\\(f'\\\\nTotal products with member pricing: {found}/{len\\(data\\)}'\\)\n\" 2>&1)",
       "Bash(sleep 8:*)",
       "Bash(adb shell screencap -p /sdcard/screenshot_cart.png && adb pull /sdcard/screenshot_cart.png /tmp/screenshot_cart.png 2>&1)",
-      "Bash(echo Port free:*)"
+      "Bash(echo Port free:*)",
+      "Bash(adb:*)",
+      "Bash(kill 2966:*)",
+      "Bash(PRISMA_USER_CONSENT_FOR_DANGEROUS_AI_ACTION=\"Yes, reset the dev database\" npx prisma:*)"
     ]
   }
 }

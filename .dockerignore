@@ -1,0 +1,12 @@
+**/node_modules
+**/.env
+**/.env.*
+**/dist
+**/.turbo
+apps/api/generated
+apps/mobile/ios
+apps/mobile/android
+apps/mobile/.expo
+apps/rider/ios
+apps/rider/android
+.git

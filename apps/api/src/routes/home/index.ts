@@ -8,10 +8,10 @@ import { formatVariantUnit } from "../../services/units.js";
 type TimePeriod = "morning" | "afternoon" | "evening" | "night";
 
 const TIME_CATEGORY_MAP: Record<TimePeriod, string[]> = {
-  morning: ["Dairy", "Bakery", "Tea & Coffee", "Eggs", "Milk", "Bread", "Butter & Ghee"],
-  afternoon: ["Snacks", "Beverages", "Ready to Eat", "Chips & Crisps", "Biscuits", "Juices"],
-  evening: ["Vegetables", "Spices", "Cooking Oil", "Meat", "Fruits", "Pulses & Lentils"],
-  night: ["Frozen Food", "Snacks", "Chocolates & Sweets", "Ice Cream", "Chocolates", "Namkeen"],
+  morning: ["Fresh Curd (Dahi)", "Full Cream Milk", "Brown & Whole Wheat Bread", "Sandwich Bread", "Brown Eggs", "White Eggs", "Salted Butter", "Instant Coffee", "Tea Bags"],
+  afternoon: ["Potato Chips", "Instant Noodles", "Cream Biscuits", "Fruit Juice (100%)", "Flavoured Milk", "Cup Noodles", "Kurkure & Extruded Snacks"],
+  evening: ["Tomato", "Onion & Garlic", "Potato", "Ground Spices", "Sunflower Oil", "Chicken Curry Cut", "Basmati Rice", "Wheat Atta"],
+  night: ["Frozen Pizza & Burger Patty", "Ice Cream Tubs", "Chocolate Bars & Countlines", "Frozen Samosa & Spring Roll", "Bhujia & Sev", "Mixture & Chivda"],
 };
 
 function getTimePeriod(hour: number): TimePeriod {
@@ -51,14 +51,14 @@ export async function homeRoutes(app: FastifyInstance) {
       const timeCategoryNames = TIME_CATEGORY_MAP[timePeriod];
 
       const storeProductInclude = {
-        product: { include: { category: true, brand: true, variants: true } },
+        product: { include: { subcategory: true, brand: true, variants: true } },
         variant: true,
       };
 
       const now = new Date();
 
       // Run 7 parallel queries
-      const [collections, categories, timeCategories, dealsRaw, buyAgainRaw, bannersRaw, recipesRaw] = await Promise.all([
+      const [collections, departments, timeCategories, dealsRaw, buyAgainRaw, bannersRaw, recipesRaw] = await Promise.all([
         // 1. Collections with products mapped to this store
         app.prisma.collection.findMany({
           where: {
@@ -80,7 +80,7 @@ export async function homeRoutes(app: FastifyInstance) {
                       include: { variant: true },
                     },
                     brand: true,
-                    category: true,
+                    subcategory: true,
                     variants: true,
                   },
                 },
@@ -89,15 +89,14 @@ export async function homeRoutes(app: FastifyInstance) {
           },
         }),
 
-        // 2. Root categories
-        app.prisma.category.findMany({
-          where: { parentId: null },
+        // 2. Departments (top-level)
+        app.prisma.department.findMany({
           orderBy: { sortOrder: "asc" },
-          select: { id: true, name: true, slug: true, parentId: true, sortOrder: true, imageUrl: true, translations: true },
+          select: { id: true, name: true, slug: true, sortOrder: true, imageUrl: true, translations: true },
         }),
 
-        // 3. Time-aware categories with products
-        app.prisma.category.findMany({
+        // 3. Time-aware categories with products (search subcategories by name)
+        app.prisma.subcategory.findMany({
           where: {
             name: { in: timeCategoryNames, mode: "insensitive" },
           },
@@ -114,7 +113,7 @@ export async function homeRoutes(app: FastifyInstance) {
                   include: { variant: true },
                 },
                 brand: true,
-                category: true,
+                subcategory: true,
                 variants: true,
               },
             },
@@ -219,44 +218,36 @@ export async function homeRoutes(app: FastifyInstance) {
         }),
       ]);
 
-      // Batch-query variant counts for deals and buy again products
-      const dealsAndBuyAgainProductIds = [
-        ...dealsRaw.map((sp: any) => sp.productId as string),
-        ...buyAgainRaw.filter((item: any) => item.storeProduct?.productId).map((item: any) => item.storeProduct.productId as string),
-      ];
-      const variantCountMap = new Map<string, number>();
-      if (dealsAndBuyAgainProductIds.length > 0) {
-        const counts = await app.prisma.storeProduct.groupBy({
-          by: ["productId"],
-          where: { storeId, isActive: true, productId: { in: dealsAndBuyAgainProductIds } },
-          _count: true,
-        });
-        for (const c of counts) variantCountMap.set(c.productId, c._count);
-      }
-
       // Helper to build product data object
       function buildProductData(p: any) {
         return {
           id: p.id, name: p.name, description: p.description, imageUrl: p.imageUrl,
           brand: p.brand, foodType: p.foodType, productType: p.productType,
           regulatoryMarks: p.regulatoryMarks, certifications: p.certifications,
-          dangerWarnings: p.dangerWarnings, category: p.category, variants: p.variants,
+          dangerWarnings: p.dangerWarnings, subcategory: p.subcategory, variants: p.variants,
           translations: p.translations,
         };
+      }
+
+      // The app groups rows by product and offers a size picker, so every section sends all active sizes
+      async function withAllSizes(rows: any[]) {
+        const productIds = [...new Set(rows.map((r) => r.productId as string))];
+        if (productIds.length === 0) return [];
+        const all = await app.prisma.storeProduct.findMany({
+          where: { storeId, isActive: true, productId: { in: productIds } },
+          include: storeProductInclude,
+        });
+        const byProduct = new Map<string, any[]>();
+        for (const sp of all) byProduct.set(sp.productId, [...(byProduct.get(sp.productId) ?? []), sp]);
+        return productIds.flatMap((id) => (byProduct.get(id) ?? []).map(enrichStoreProduct));
       }
 
       // Transform collections: flatten to products with store data, filter empty
       const transformedCollections = collections
         .map((col) => {
-          const products = col.items
-            .filter((item) => item.product.storeProducts.length > 0)
-            .map((item) => {
-              const sp = item.product.storeProducts[0];
-              return {
-                ...enrichStoreProduct({ ...sp, product: buildProductData(item.product) }),
-                variantCount: item.product.storeProducts.length,
-              };
-            });
+          const products = col.items.flatMap((item) =>
+            item.product.storeProducts.map((sp) => enrichStoreProduct({ ...sp, product: buildProductData(item.product) })),
+          );
 
           return {
             id: col.id, title: col.title, subtitle: col.subtitle,
@@ -265,7 +256,7 @@ export async function homeRoutes(app: FastifyInstance) {
         })
         .filter((col) => col.products.length > 0);
 
-      // Transform time categories — group variants, include variantCount
+      // Transform time categories — every size of each product
       const transformedTimeCategories = timeCategories
         .filter((cat) => cat.products.length > 0)
         .map((cat) => ({
@@ -273,58 +264,45 @@ export async function homeRoutes(app: FastifyInstance) {
           name: cat.name,
           slug: cat.slug,
           translations: cat.translations,
-          products: cat.products
-            .filter((p) => p.storeProducts.length > 0)
-            .map((p) => {
-              const sp = p.storeProducts[0];
-              return {
-                ...enrichStoreProduct({ ...sp, product: buildProductData(p) }),
-                variantCount: p.storeProducts.length,
-              };
-            }),
+          products: cat.products.flatMap((p) =>
+            p.storeProducts.map((sp) => enrichStoreProduct({ ...sp, product: buildProductData(p) })),
+          ),
         }));
 
-      // Transform deals
-      const deals = dealsRaw.map((sp: any) => ({
-        ...enrichStoreProduct(sp),
-        variantCount: variantCountMap.get(sp.productId) ?? 1,
-      }));
+      const deals = await withAllSizes(dealsRaw);
 
-      // Transform buy again
-      let buyAgain = buyAgainRaw
+      // Buy again: previously ordered rows, topped up with related products below
+      const buyAgainRows: any[] = buyAgainRaw
         .filter((item: any) => item.storeProduct?.product)
-        .map((item: any) => ({
-          ...enrichStoreProduct(item.storeProduct),
-          variantCount: variantCountMap.get(item.storeProduct.productId) ?? 1,
-        }));
+        .map((item: any) => item.storeProduct);
 
       // Supplement buy again with related products if < 6 items
       const BUY_AGAIN_MIN = 6;
-      if (buyAgain.length > 0 && buyAgain.length < BUY_AGAIN_MIN) {
-        const existingProductIds = buyAgain.map((b: any) => b.productId as string);
-        const categoryIds = [...new Set(buyAgain.map((b: any) => b.product?.category?.id).filter(Boolean))] as string[];
+      if (buyAgainRows.length > 0 && buyAgainRows.length < BUY_AGAIN_MIN) {
+        const existingProductIds = buyAgainRows.map((b: any) => b.productId as string);
+        const subcategoryIds = [...new Set(buyAgainRows.map((b: any) => b.product?.subcategory?.id).filter(Boolean))] as string[];
 
-        // First try same categories
+        // First try same subcategories
         let supplementRaw: any[] = [];
-        if (categoryIds.length > 0) {
+        if (subcategoryIds.length > 0) {
           supplementRaw = await app.prisma.storeProduct.findMany({
             where: {
               storeId,
               isActive: true,
               product: {
-                categoryId: { in: categoryIds },
+                subcategoryId: { in: subcategoryIds },
                 id: { notIn: existingProductIds },
                 isActive: true,
               },
             },
-            take: BUY_AGAIN_MIN - buyAgain.length,
+            take: BUY_AGAIN_MIN - buyAgainRows.length,
             orderBy: { stock: "desc" },
             include: storeProductInclude,
           });
         }
 
         // If still not enough, fill with popular/featured products from any category
-        const stillNeeded = BUY_AGAIN_MIN - buyAgain.length - supplementRaw.length;
+        const stillNeeded = BUY_AGAIN_MIN - buyAgainRows.length - supplementRaw.length;
         if (stillNeeded > 0) {
           const excludeProductIds = [
             ...existingProductIds,
@@ -346,24 +324,11 @@ export async function homeRoutes(app: FastifyInstance) {
           });
           supplementRaw = [...supplementRaw, ...popularRaw];
         }
+        buyAgainRows.push(...supplementRaw);
 
-        if (supplementRaw.length > 0) {
-          const supplementProductIds = supplementRaw.map((sp: any) => sp.productId as string);
-          const supplementVariantCounts = await app.prisma.storeProduct.groupBy({
-            by: ["productId"],
-            where: { storeId, isActive: true, productId: { in: supplementProductIds } },
-            _count: true,
-          });
-          const supplementVcMap = new Map(supplementVariantCounts.map((c) => [c.productId, c._count]));
-
-          const supplementEnriched = supplementRaw.map((sp: any) => ({
-            ...enrichStoreProduct(sp),
-            variantCount: supplementVcMap.get(sp.productId) ?? 1,
-          }));
-
-          buyAgain = [...buyAgain, ...supplementEnriched];
-        }
       }
+
+      const buyAgain = await withAllSizes(buyAgainRows);
 
       // Batch-fetch review aggregates for all products in the feed
       const allProductIds = [
@@ -423,12 +388,9 @@ export async function homeRoutes(app: FastifyInstance) {
         };
       });
 
-      // Add children: [] to match CategoryTreeNode type
-      const categoriesWithChildren = categories.map((cat) => ({ ...cat, children: [] }));
-
       const response: ApiResponse<{
         collections: typeof transformedCollections;
-        categories: typeof categoriesWithChildren;
+        departments: typeof departments;
         timeCategories: typeof transformedTimeCategories;
         timePeriod: TimePeriod;
         deals: typeof deals;
@@ -439,7 +401,7 @@ export async function homeRoutes(app: FastifyInstance) {
         success: true,
         data: {
           collections: transformedCollections,
-          categories: categoriesWithChildren,
+          departments,
           timeCategories: transformedTimeCategories,
           timePeriod,
           deals: enrichedDeals,

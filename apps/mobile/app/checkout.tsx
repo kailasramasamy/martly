@@ -11,6 +11,7 @@ import {
   KeyboardAvoidingView,
   Platform,
   Modal,
+  Image,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { useToast } from "../lib/toast-context";
@@ -19,7 +20,7 @@ import { useAuth } from "../lib/auth-context";
 import { useCart } from "../lib/cart-context";
 import { useStore } from "../lib/store-context";
 import { api } from "../lib/api";
-import { colors, spacing, fontSize } from "../constants/theme";
+import { colors, spacing, fontSize, fonts } from "../constants/theme";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Switch } from "react-native";
 import { RazorpayCheckout } from "../components/RazorpayCheckout";
@@ -318,6 +319,7 @@ export default function CheckoutScreen() {
   const rawDeliveryFee = isPickup ? 0 : (lookupOrZoneFee || baseDeliveryFee);
   const memberFreeDelivery = !isPickup && membershipStatus?.isMember && membershipStatus.membership?.freeDelivery;
   const freeDeliveryApplied = !isPickup && (memberFreeDelivery || (freeDeliveryThreshold != null && totalAmount >= freeDeliveryThreshold));
+  const totalSavings = couponDiscount + (freeDeliveryApplied ? rawDeliveryFee : 0);
   const deliveryFee = freeDeliveryApplied ? 0 : rawDeliveryFee;
   const effectiveEstMinutes = isPickup
     ? 30
@@ -496,12 +498,18 @@ export default function CheckoutScreen() {
         {/* Store Info */}
         <View style={styles.storeCard}>
           <View style={styles.storeIconWrap}>
-            <Ionicons name="storefront" size={18} color={colors.primary} />
+            <Ionicons name="storefront" size={18} color="#fff" />
           </View>
           <View style={styles.storeInfo}>
-            <Text style={styles.storeName}>{storeName}</Text>
+            <Text style={styles.storeName} numberOfLines={1}>{storeName}</Text>
             <Text style={styles.storeItemCount}>{itemCount} item{itemCount !== 1 ? "s" : ""}</Text>
           </View>
+          {effectiveEstMinutes != null && (
+            <View style={styles.storeEtaChip}>
+              <Ionicons name={isPickup ? "time" : "flash"} size={13} color={colors.accentText} />
+              <Text style={styles.storeEtaText}>{isPickup ? "Ready in" : "In"} {effectiveEstMinutes} min</Text>
+            </View>
+          )}
         </View>
 
         {/* Min order warning */}
@@ -517,7 +525,7 @@ export default function CheckoutScreen() {
         {/* Order Items */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Ionicons name="receipt-outline" size={16} color={colors.textSecondary} />
+            <Ionicons name="receipt-outline" size={16} color={colors.primary} />
             <Text style={styles.sectionTitle}>Order Summary</Text>
           </View>
           <View style={styles.itemsCard}>
@@ -526,12 +534,16 @@ export default function CheckoutScreen() {
                 key={item.storeProductId}
                 style={[styles.itemRow, index < items.length - 1 && styles.itemRowBorder]}
               >
-                <View style={styles.itemQtyBadge}>
-                  <Text style={styles.itemQtyText}>{item.quantity}x</Text>
+                <View style={styles.itemThumb}>
+                  {item.imageUrl ? (
+                    <Image source={{ uri: item.imageUrl }} style={styles.itemThumbImage} resizeMode="contain" />
+                  ) : (
+                    <Ionicons name="cube-outline" size={18} color="#94a3b8" />
+                  )}
                 </View>
                 <View style={styles.itemInfo}>
-                  <Text style={styles.itemName} numberOfLines={1}>{item.productName}</Text>
-                  <Text style={styles.itemVariant}>{item.variantName}</Text>
+                  <Text style={styles.itemName} numberOfLines={2}>{item.productName}</Text>
+                  <Text style={styles.itemVariant}>{item.variantName} {"\u00B7"} Qty {item.quantity}</Text>
                 </View>
                 <Text style={styles.itemTotal}>
                   {"\u20B9"}{(item.price * item.quantity).toFixed(0)}
@@ -544,7 +556,7 @@ export default function CheckoutScreen() {
         {/* Fulfillment Type Selector */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Ionicons name="swap-horizontal-outline" size={16} color={colors.textSecondary} />
+            <Ionicons name="swap-horizontal-outline" size={16} color={colors.primary} />
             <Text style={styles.sectionTitle}>How do you want your order?</Text>
           </View>
           <View style={styles.fulfillmentRow}>
@@ -676,7 +688,7 @@ export default function CheckoutScreen() {
         {!isPickup && (
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
-              <Ionicons name="location-outline" size={16} color={colors.textSecondary} />
+              <Ionicons name="location-outline" size={16} color={colors.primary} />
               <Text style={styles.sectionTitle}>Delivery Address</Text>
             </View>
 
@@ -791,7 +803,7 @@ export default function CheckoutScreen() {
         {isPickup && (
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
-              <Ionicons name="location-outline" size={16} color={colors.textSecondary} />
+              <Ionicons name="location-outline" size={16} color={colors.primary} />
               <Text style={styles.sectionTitle}>Pickup Location</Text>
             </View>
             <View style={styles.pickupLocationCard}>
@@ -818,7 +830,7 @@ export default function CheckoutScreen() {
         {(hasSlots || (expressConfig && !expressConfig.enabled)) && !isPickup && (
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
-              <Ionicons name="time-outline" size={16} color={colors.textSecondary} />
+              <Ionicons name="time-outline" size={16} color={colors.primary} />
               <Text style={styles.sectionTitle}>Delivery Schedule</Text>
             </View>
 
@@ -1005,7 +1017,7 @@ export default function CheckoutScreen() {
         {/* Coupon */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Ionicons name="pricetag-outline" size={16} color={colors.textSecondary} />
+            <Ionicons name="pricetag-outline" size={16} color={colors.primary} />
             <Text style={styles.sectionTitle}>Promo Code</Text>
           </View>
           {couponResult ? (
@@ -1047,7 +1059,7 @@ export default function CheckoutScreen() {
         {/* Notes */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Ionicons name="chatbox-ellipses-outline" size={16} color={colors.textSecondary} />
+            <Ionicons name="chatbox-ellipses-outline" size={16} color={colors.primary} />
             <Text style={styles.sectionTitle}>{isPickup ? "Pickup Notes" : "Delivery Notes"}</Text>
           </View>
           <TextInput
@@ -1066,7 +1078,7 @@ export default function CheckoutScreen() {
         {walletBalance > 0 && (
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
-              <Ionicons name="wallet-outline" size={16} color={colors.textSecondary} />
+              <Ionicons name="wallet-outline" size={16} color={colors.primary} />
               <Text style={styles.sectionTitle}>Martly Wallet</Text>
             </View>
             <View style={styles.walletCard}>
@@ -1118,7 +1130,7 @@ export default function CheckoutScreen() {
         {loyaltyEnabled && (
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
-              <Ionicons name="star-outline" size={16} color={colors.textSecondary} />
+              <Ionicons name="star-outline" size={16} color={colors.primary} />
               <Text style={styles.sectionTitle}>Loyalty Points</Text>
             </View>
             <View style={styles.walletCard}>
@@ -1151,7 +1163,7 @@ export default function CheckoutScreen() {
         {!walletCoversAll && (
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Ionicons name="card-outline" size={16} color={colors.textSecondary} />
+            <Ionicons name="card-outline" size={16} color={colors.primary} />
             <Text style={styles.sectionTitle}>Payment Method</Text>
           </View>
           <View style={styles.paymentOptions}>
@@ -1205,10 +1217,18 @@ export default function CheckoutScreen() {
         {/* Bill Details */}
         <View style={styles.section}>
           <View style={styles.sectionHeader}>
-            <Ionicons name="document-text-outline" size={16} color={colors.textSecondary} />
+            <Ionicons name="document-text-outline" size={16} color={colors.primary} />
             <Text style={styles.sectionTitle}>Bill Details</Text>
           </View>
           <View style={styles.billCard}>
+            {totalSavings > 0 && (
+              <View style={styles.savingsStrip}>
+                <Ionicons name="pricetag" size={14} color={colors.accentText} />
+                <Text style={styles.savingsText}>
+                  You're saving {"\u20B9"}{totalSavings.toLocaleString("en-IN", { maximumFractionDigits: 0 })} on this order
+                </Text>
+              </View>
+            )}
             <View style={styles.billRow}>
               <Text style={styles.billLabel}>Item total</Text>
               <Text style={styles.billValue}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
@@ -1235,8 +1255,8 @@ export default function CheckoutScreen() {
                   <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
                     <Text style={styles.billFree}>FREE</Text>
                     {memberFreeDelivery && (
-                      <View style={{ backgroundColor: "#7c3aed18", paddingHorizontal: 6, paddingVertical: 1, borderRadius: 4 }}>
-                        <Text style={{ fontSize: 9, color: "#7c3aed", fontWeight: "700" }}>MEMBER</Text>
+                      <View style={styles.plusBadge}>
+                        <Text style={styles.plusBadgeText}>PLUS</Text>
                       </View>
                     )}
                   </View>
@@ -1325,7 +1345,7 @@ export default function CheckoutScreen() {
           ) : (
             <>
               <View style={styles.placeOrderLeft}>
-                <Text style={styles.placeOrderTotal}>{"\u20B9"}{amountToPay.toFixed(0)}</Text>
+                <Text style={styles.placeOrderTotal}>{"\u20B9"}{amountToPay.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</Text>
                 {walletCoversAll ? (
                   <View style={styles.placeOrderWalletHint}>
                     <Ionicons name="wallet" size={11} color="rgba(255,255,255,0.85)" />
@@ -1350,8 +1370,8 @@ export default function CheckoutScreen() {
                 </Text>
                 <Ionicons
                   name={walletCoversAll ? "wallet" : isPickup ? "storefront" : paymentMethod === "COD" ? "checkmark-circle" : "card"}
-                  size={20}
-                  color="#fff"
+                  size={18}
+                  color={colors.primary}
                 />
               </View>
             </>
@@ -1486,22 +1506,28 @@ const styles = StyleSheet.create({
   storeCard: {
     flexDirection: "row",
     alignItems: "center",
-    padding: spacing.md,
-    backgroundColor: "#fff",
-    borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    margin: spacing.md,
+    marginBottom: 4,
+    padding: 14,
+    borderRadius: 16,
+    backgroundColor: colors.primary,
   },
   storeIconWrap: {
     width: 40,
     height: 40,
     borderRadius: 12,
-    backgroundColor: colors.primary + "14",
+    backgroundColor: "rgba(255,255,255,0.18)",
     justifyContent: "center",
     alignItems: "center",
   },
-  storeInfo: { marginLeft: 12 },
-  storeName: { fontSize: 16, fontWeight: "700", color: colors.text },
-  storeItemCount: { fontSize: 12, color: colors.textSecondary, marginTop: 1 },
+  storeInfo: { marginLeft: 12, flex: 1 },
+  storeName: { fontFamily: fonts.extrabold, fontSize: 16.5, color: "#fff" },
+  storeItemCount: { fontFamily: fonts.medium, fontSize: 12.5, color: "rgba(255,255,255,0.8)", marginTop: 1 },
+  storeEtaChip: {
+    flexDirection: "row", alignItems: "center", gap: 4,
+    backgroundColor: colors.accent, borderRadius: 20, paddingHorizontal: 10, paddingVertical: 5,
+  },
+  storeEtaText: { fontFamily: fonts.extrabold, fontSize: 12, color: colors.accentText },
   // Min order warning
   minOrderWarning: {
     flexDirection: "row",
@@ -1526,11 +1552,10 @@ const styles = StyleSheet.create({
   section: { marginTop: spacing.md, paddingHorizontal: spacing.md },
   sectionHeader: { flexDirection: "row", alignItems: "center", gap: 6, marginBottom: spacing.sm },
   sectionTitle: {
-    fontSize: 14,
-    fontWeight: "700",
+    fontFamily: fonts.extrabold,
+    fontSize: 15.5,
     color: colors.text,
-    textTransform: "uppercase",
-    letterSpacing: 0.5,
+    letterSpacing: -0.2,
   },
   // Items
   itemsCard: {
@@ -1542,15 +1567,12 @@ const styles = StyleSheet.create({
   },
   itemRow: { flexDirection: "row", alignItems: "center", padding: spacing.md },
   itemRowBorder: { borderBottomWidth: 1, borderBottomColor: colors.border },
-  itemQtyBadge: {
-    backgroundColor: colors.primary + "14",
-    borderRadius: 6,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    minWidth: 32,
-    alignItems: "center",
+  itemThumb: {
+    width: 48, height: 48, borderRadius: 10, backgroundColor: "#f8fafc",
+    padding: 3, alignItems: "center", justifyContent: "center", overflow: "hidden",
   },
-  itemQtyText: { fontSize: 13, fontWeight: "700", color: colors.primary },
+  // Blends white product-photo backgrounds into the tile, as on the product cards
+  itemThumbImage: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   itemInfo: { flex: 1, marginLeft: 12, marginRight: 12 },
   itemName: { fontSize: 14, fontWeight: "600", color: colors.text },
   itemVariant: { fontSize: 12, color: colors.textSecondary, marginTop: 1 },
@@ -1888,8 +1910,15 @@ const styles = StyleSheet.create({
   billStrikethrough: { fontSize: 12, color: "#94a3b8", textDecorationLine: "line-through" as const },
   billSaving: { fontSize: fontSize.md, fontWeight: "600", color: "#22c55e" },
   billDivider: { height: 1, backgroundColor: colors.border, marginVertical: 8 },
-  billGrandLabel: { fontSize: 16, fontWeight: "700", color: colors.text },
-  billGrandValue: { fontSize: 16, fontWeight: "700", color: colors.text },
+  billGrandLabel: { fontFamily: fonts.extrabold, fontSize: 16.5, color: colors.text },
+  billGrandValue: { fontFamily: fonts.extrabold, fontSize: 17, color: colors.primary },
+  savingsStrip: {
+    flexDirection: "row", alignItems: "center", gap: 6,
+    backgroundColor: "#fef3c7", borderRadius: 10, paddingHorizontal: 12, paddingVertical: 9, marginBottom: 8,
+  },
+  savingsText: { fontFamily: fonts.bold, fontSize: 13, color: colors.accentText },
+  plusBadge: { backgroundColor: colors.accent, paddingHorizontal: 6, paddingVertical: 1, borderRadius: 10 },
+  plusBadgeText: { fontFamily: fonts.extrabold, fontSize: 9, color: colors.accentText },
 
   // Footer
   footer: {
@@ -1917,18 +1946,18 @@ const styles = StyleSheet.create({
   placeOrderLeft: { flexDirection: "row", alignItems: "baseline", gap: 6 },
   placeOrderWalletHint: { flexDirection: "row", alignItems: "center", gap: 3 },
   placeOrderWalletHintText: { fontSize: 11, fontWeight: "600", color: "rgba(255,255,255,0.7)" },
-  placeOrderTotal: { fontSize: 20, fontWeight: "800", color: "#fff" },
+  placeOrderTotal: { fontFamily: fonts.extrabold, fontSize: 21, color: "#fff" },
   placeOrderSubtext: { fontSize: 11, fontWeight: "600", color: "rgba(255,255,255,0.7)" },
   placeOrderRight: {
     flexDirection: "row",
     alignItems: "center",
     gap: 6,
-    backgroundColor: "rgba(255,255,255,0.2)",
+    backgroundColor: "#fff",
     paddingHorizontal: 16,
     paddingVertical: 10,
     borderRadius: 10,
   },
-  placeOrderBtnText: { fontSize: 15, fontWeight: "700", color: "#fff" },
+  placeOrderBtnText: { fontFamily: fonts.extrabold, fontSize: 15, color: colors.primary },
 
   // Delivery schedule
   scheduleToggleRow: {

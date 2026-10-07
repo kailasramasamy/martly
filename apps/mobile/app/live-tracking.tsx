@@ -15,11 +15,11 @@ import { Ionicons } from "@expo/vector-icons";
 import * as SecureStore from "expo-secure-store";
 import { api } from "../lib/api";
 import { colors, spacing, fontSize } from "../constants/theme";
+import { API_URL } from "../lib/config";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL ?? "http://localhost:7001";
 const WS_URL = API_URL.replace(/^http/, "ws");
 
-const ROUTE_TEAL = "#0d9488";
+const ROUTE_TEAL = colors.primary;
 const STOP_GRAY = "#94a3b8";
 const STOP_RED = "#ef4444";
 

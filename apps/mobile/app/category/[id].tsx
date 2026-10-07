@@ -15,22 +15,39 @@ import { useLocalSearchParams, useNavigation, router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
-import { useCart } from "../../lib/cart-context";
-import { useWishlist } from "../../lib/wishlist-context";
-import { useMembership, getBestPrice } from "../../lib/membership-context";
-import { useBasketMode } from "../../lib/basket-mode-context";
-import { useToast } from "../../lib/toast-context";
 import { useLanguage } from "../../lib/language-context";
+import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing } from "../../constants/theme";
 import { getCategoryIcon } from "../../constants/category-icons";
-import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../../components/ProductGridCard";
-import { VariantBottomSheet } from "../../components/VariantBottomSheet";
+import { GRID_GAP, GRID_H_PADDING, GRID_CARD_WIDTH } from "../../components/FeaturedProductCard";
+import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
-import { ConfirmSheet } from "../../components/ConfirmSheet";
-import type { StoreProduct, CategoryTreeNode, Banner } from "../../lib/types";
+import type { StoreProduct, DepartmentNode, Banner } from "../../lib/types";
+
+// Unified tree node for recursive category browsing
+interface TreeNode {
+  id: string;
+  name: string;
+  imageUrl?: string | null;
+  translations?: Record<string, { name?: string; description?: string }> | null;
+  children: TreeNode[];
+}
+
+function toTreeNodes(departments: DepartmentNode[]): TreeNode[] {
+  return departments.map((d) => ({
+    id: d.id, name: d.name, imageUrl: d.imageUrl, translations: d.translations,
+    children: d.categories.map((c) => ({
+      id: c.id, name: c.name, imageUrl: c.imageUrl, translations: c.translations,
+      children: c.subcategories.map((s) => ({
+        id: s.id, name: s.name, imageUrl: s.imageUrl, translations: s.translations,
+        children: [],
+      })),
+    })),
+  }));
+}
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
-const SIDEBAR_WIDTH = Math.round(SCREEN_WIDTH * 0.22);
+const SIDEBAR_WIDTH = Math.round(SCREEN_WIDTH * 0.21);
 
 interface SubcategoryWithCount {
   id: string;
@@ -44,20 +61,12 @@ export default function CategoryScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const navigation = useNavigation();
   const { selectedStore } = useStore();
-  const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
-  const { isWishlisted, toggle: toggleWishlist } = useWishlist();
-  const { isMember } = useMembership();
-  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
-  const toast = useToast();
   const { getLocalizedName } = useLanguage();
 
-  const [category, setCategory] = useState<CategoryTreeNode | null>(null);
+  const [category, setCategory] = useState<TreeNode | null>(null);
   const [allProducts, setAllProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeSub, setActiveSub] = useState<string | null>(null);
-  const [sheetVisible, setSheetVisible] = useState(false);
-  const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
-  const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
   const [contentWidth, setContentWidth] = useState(0);
   const [filterOnSale, setFilterOnSale] = useState(false);
   const [sortBy, setSortBy] = useState<"price_asc" | "price_desc" | null>(null);
@@ -71,9 +80,10 @@ export default function CategoryScreen() {
   useEffect(() => {
     if (!id) return;
     api
-      .get<CategoryTreeNode[]>("/api/v1/categories/tree")
+      .get<DepartmentNode[]>("/api/v1/categories/tree")
       .then((res) => {
-        const findNode = (nodes: CategoryTreeNode[]): CategoryTreeNode | null => {
+        const tree = toTreeNodes(res.data);
+        const findNode = (nodes: TreeNode[]): TreeNode | null => {
           for (const n of nodes) {
             if (n.id === id) return n;
             const found = findNode(n.children);
@@ -81,7 +91,7 @@ export default function CategoryScreen() {
           }
           return null;
         };
-        const node = findNode(res.data);
+        const node = findNode(tree);
         if (node) {
           setCategory(node);
           navigation.setOptions({ title: getLocalizedName(node) });
@@ -103,14 +113,17 @@ export default function CategoryScreen() {
       .finally(() => setLoading(false));
   }, [id, selectedStore]);
 
-  // Fetch CATEGORY_TOP banners for this category
+  // Fetch CATEGORY_TOP banners — detect level from tree to send correct param
   useEffect(() => {
-    if (!selectedStore || !id) return;
+    if (!selectedStore || !id || !category) return;
+    // Determine which level this node is at by checking the tree
+    const isTopLevel = category.children.some((c) => c.children.length > 0);
+    const param = isTopLevel ? "departmentId" : category.children.length > 0 ? "categoryId" : "subcategoryId";
     api
-      .get<Banner[]>(`/api/v1/banners/by-placement/${selectedStore.id}?placement=CATEGORY_TOP&categoryId=${id}`)
+      .get<Banner[]>(`/api/v1/banners/by-placement/${selectedStore.id}?placement=CATEGORY_TOP&${param}=${id}`)
       .then((res) => setTopBanners(res.data))
       .catch(() => {});
-  }, [selectedStore, id]);
+  }, [selectedStore, id, category]);
 
   // Build subcategory list with product counts
   const subcategories = useMemo((): SubcategoryWithCount[] => {
@@ -123,7 +136,7 @@ export default function CategoryScreen() {
     for (const child of allChildren) {
       const ids = new Set<string>([child.id]);
       // Add grandchildren etc.
-      const collectDescendants = (node: CategoryTreeNode) => {
+      const collectDescendants = (node: TreeNode) => {
         for (const c of node.children ?? []) {
           ids.add(c.id);
           collectDescendants(c);
@@ -143,7 +156,7 @@ export default function CategoryScreen() {
       const descIds = childDescendants.get(child.id)!;
       const uniqueProducts = new Set(
         allProducts
-          .filter((p) => p.product?.category?.id && descIds.has(p.product.category.id))
+          .filter((p) => p.product?.subcategory?.id && descIds.has(p.product.subcategory?.id))
           .map((p) => p.product.id)
       );
       return { id: child.id, name: child.name, imageUrl: child.imageUrl ?? null, count: uniqueProducts.size, translations: child.translations };
@@ -152,7 +165,7 @@ export default function CategoryScreen() {
     // Add "Other" for products not in any subcategory (e.g. assigned to parent category directly)
     const otherCount = new Set(
       allProducts
-        .filter((p) => !p.product?.category?.id || !allDescIds.has(p.product.category.id))
+        .filter((p) => !p.product?.subcategory?.id || !allDescIds.has(p.product.subcategory?.id))
         .map((p) => p.product.id)
     ).size;
     if (otherCount > 0) {
@@ -170,7 +183,7 @@ export default function CategoryScreen() {
 
     return sub.children.map((gc) => {
       const ids = new Set<string>([gc.id]);
-      const collectDesc = (node: CategoryTreeNode) => {
+      const collectDesc = (node: TreeNode) => {
         for (const c of node.children ?? []) {
           ids.add(c.id);
           collectDesc(c);
@@ -179,7 +192,7 @@ export default function CategoryScreen() {
       collectDesc(gc);
       const uniqueProducts = new Set(
         allProducts
-          .filter((p) => p.product?.category?.id && ids.has(p.product.category.id))
+          .filter((p) => p.product?.subcategory?.id && ids.has(p.product.subcategory?.id))
           .map((p) => p.product.id)
       );
       return { id: gc.id, name: gc.name, count: uniqueProducts.size, translations: gc.translations };
@@ -194,13 +207,13 @@ export default function CategoryScreen() {
     if (activeSub === "__other__") {
       const allDescIds = new Set<string>();
       for (const child of category?.children ?? []) {
-        const collect = (node: CategoryTreeNode) => {
+        const collect = (node: TreeNode) => {
           allDescIds.add(node.id);
           for (const c of node.children ?? []) collect(c);
         };
         collect(child);
       }
-      return allProducts.filter((p) => !p.product?.category?.id || !allDescIds.has(p.product.category.id));
+      return allProducts.filter((p) => !p.product?.subcategory?.id || !allDescIds.has(p.product.subcategory?.id));
     }
 
     const sub = category?.children?.find((c) => c.id === activeSub);
@@ -212,7 +225,7 @@ export default function CategoryScreen() {
       : sub;
 
     const ids = new Set<string>([targetNode.id]);
-    const collect = (node: CategoryTreeNode) => {
+    const collect = (node: TreeNode) => {
       for (const c of node.children ?? []) {
         ids.add(c.id);
         collect(c);
@@ -220,7 +233,7 @@ export default function CategoryScreen() {
     };
     collect(targetNode);
     return allProducts.filter(
-      (p) => p.product?.category?.id && ids.has(p.product.category.id)
+      (p) => p.product?.subcategory?.id && ids.has(p.product.subcategory?.id)
     );
   }, [allProducts, activeSub, activeGrandchild, category]);
 
@@ -243,100 +256,6 @@ export default function CategoryScreen() {
 
     return result;
   }, [filteredProducts, searchQuery, filterOnSale]);
-
-  // Group by product ID — pick cheapest variant as primary
-  const { groupedResults, variantsByProductId } = useMemo(() => {
-    const groups = new Map<string, StoreProduct[]>();
-    for (const sp of chipFilteredProducts) {
-      if (!sp.product) continue;
-      const pid = sp.product.id;
-      if (!groups.has(pid)) groups.set(pid, []);
-      groups.get(pid)!.push(sp);
-    }
-    const primary: StoreProduct[] = [];
-    const variantsMap = new Map<string, StoreProduct[]>();
-    for (const [pid, variants] of groups) {
-      const sorted = [...variants].sort((a, b) => {
-        const priceA = a.pricing?.discountActive ? a.pricing.effectivePrice : Number(a.price);
-        const priceB = b.pricing?.discountActive ? b.pricing.effectivePrice : Number(b.price);
-        return priceA - priceB;
-      });
-      primary.push(sorted[0]);
-      variantsMap.set(pid, sorted);
-    }
-
-    if (sortBy) {
-      primary.sort((a, b) => {
-        const priceA = a.pricing?.discountActive ? a.pricing.effectivePrice : Number(a.price);
-        const priceB = b.pricing?.discountActive ? b.pricing.effectivePrice : Number(b.price);
-        return sortBy === "price_asc" ? priceA - priceB : priceB - priceA;
-      });
-    }
-
-    return { groupedResults: primary, variantsByProductId: variantsMap };
-  }, [chipFilteredProducts, sortBy]);
-
-  const rawCartQtyMap = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const item of cartItems) {
-      map.set(item.storeProductId, item.quantity);
-    }
-    return map;
-  }, [cartItems]);
-
-  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
-
-  const handleAddToCart = useCallback(
-    (sp: StoreProduct) => {
-      if (!selectedStore) return;
-
-      if (isBasketMode) {
-        addBasketItem(sp.id);
-        toast.show("Added to tomorrow's basket", "success");
-        return;
-      }
-
-      const item = {
-        storeProductId: sp.id,
-        productId: sp.product.id,
-        productName: sp.product.name,
-        variantId: sp.variant.id,
-        variantName: sp.variant.name,
-        price: getBestPrice(sp, isMember),
-        imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
-      };
-      if (cartStoreId && cartStoreId !== selectedStore.id) {
-        setReplaceCartConfirm({
-          pending: () => addItem(selectedStore.id, selectedStore.name, item),
-        });
-        return;
-      }
-      addItem(selectedStore.id, selectedStore.name, item);
-    },
-    [selectedStore, cartStoreId, addItem, isMember, isBasketMode, addBasketItem, toast]
-  );
-
-  const effectiveUpdateQty = useCallback(
-    (spId: string, qty: number) => {
-      if (isBasketMode) {
-        updateBasketQuantity(spId, qty);
-        return;
-      }
-      updateQuantity(spId, qty);
-    },
-    [isBasketMode, updateBasketQuantity, updateQuantity],
-  );
-
-  const handleShowVariants = useCallback(
-    (productId: string) => {
-      const variants = variantsByProductId.get(productId);
-      if (variants) {
-        setSheetVariants(variants);
-        setSheetVisible(true);
-      }
-    },
-    [variantsByProductId]
-  );
 
   const handleSubcategoryPress = useCallback(
     (subId: string | null) => {
@@ -537,7 +456,7 @@ export default function CategoryScreen() {
       );
     }
 
-    if (groupedResults.length === 0) {
+    if (chipFilteredProducts.length === 0) {
       return (
         <View style={styles.emptyContainer}>
           <View style={styles.emptyIcon}>
@@ -556,187 +475,146 @@ export default function CategoryScreen() {
     }
 
     return (
-      <FlatList
+      <ProductList
+        keyboardDismissMode="on-drag"
+        keyboardShouldPersistTaps="handled"
         ref={gridRef}
-        data={groupedResults}
-        keyExtractor={(item) => item.id}
-        numColumns={2}
+        products={chipFilteredProducts}
+        layout="grid"
+        sortBy={sortBy ?? undefined}
+        cardWidth={narrow && contentWidth > 0 ? (contentWidth - 20 - GRID_GAP) / 2 : GRID_CARD_WIDTH}
         contentContainerStyle={[
           styles.grid,
           narrow && styles.gridNarrow,
         ]}
-        columnWrapperStyle={styles.gridRow}
-        renderItem={({ item }) => {
-          const variants = variantsByProductId.get(item.product.id);
-          const sizes = variants && variants.length > 1
-            ? variants.map((v) => v.variant.name)
-            : undefined;
-          const totalQty = variants
-            ? variants.reduce((sum, v) => sum + (cartQuantityMap.get(v.id) ?? 0), 0)
-            : cartQuantityMap.get(item.id) ?? 0;
-          return (
-            <ProductGridCard
-              item={item}
-              onAddToCart={handleAddToCart}
-              onUpdateQuantity={effectiveUpdateQty}
-              quantity={totalQty}
-              storeId={selectedStore?.id}
-              variantCount={variants?.length ?? 1}
-              onShowVariants={() => handleShowVariants(item.product.id)}
-              containerWidth={narrow && contentWidth > 0 ? contentWidth - 20 : undefined}
-              variantSizes={sizes}
-              isWishlisted={isWishlisted(item.product.id)}
-              onToggleWishlist={toggleWishlist}
-              isMember={isMember}
-            />
-          );
-        }}
       />
     );
   };
 
   return (
-    <View style={styles.container}>
-      {hasSidebar ? (
-        <View style={styles.splitLayout}>
-          {/* Left sidebar */}
-          <ScrollView
-            style={styles.sidebar}
-            showsVerticalScrollIndicator={false}
-          >
-            {/* All item */}
-            <TouchableOpacity
-              style={[
-                styles.sidebarItem,
-                !activeSub && styles.sidebarItemActive,
-              ]}
-              onPress={() => handleSubcategoryPress(null)}
-              activeOpacity={0.7}
+    <ProductActionsProvider store={selectedStore ?? null}>
+      <View style={styles.container}>
+        {hasSidebar ? (
+          <View style={styles.splitLayout}>
+            {/* Left sidebar */}
+            <ScrollView
+              keyboardDismissMode="on-drag"
+              keyboardShouldPersistTaps="handled"
+              style={styles.sidebar}
+              showsVerticalScrollIndicator={false}
             >
-              <View style={[
-                styles.sidebarIconCircle,
-                !activeSub && styles.sidebarIconCircleActive,
-              ]}>
-                <Ionicons
-                  name="grid-outline"
-                  size={20}
-                  color={!activeSub ? colors.primary : "#94a3b8"}
-                />
-              </View>
-              <Text
+              {/* All item */}
+              <TouchableOpacity
                 style={[
-                  styles.sidebarLabel,
-                  !activeSub && styles.sidebarLabelActive,
+                  styles.sidebarItem,
+                  !activeSub && styles.sidebarItemActive,
                 ]}
-                numberOfLines={2}
+                onPress={() => handleSubcategoryPress(null)}
+                activeOpacity={0.7}
               >
-                All
-              </Text>
-              <Text
-                style={[
-                  styles.sidebarCount,
-                  !activeSub && styles.sidebarCountActive,
-                ]}
-              >
-                {totalCount}
-              </Text>
-            </TouchableOpacity>
-
-            {subcategories.map((sub) => {
-              const isActive = activeSub === sub.id;
-              const icon = getCategoryIcon(sub.name);
-              return (
-                <TouchableOpacity
-                  key={sub.id}
+                <View style={[
+                  styles.sidebarIconCircle,
+                  !activeSub && styles.sidebarIconCircleActive,
+                ]}>
+                  <Ionicons
+                    name="grid-outline"
+                    size={24}
+                    color={!activeSub ? colors.primary : "#94a3b8"}
+                  />
+                </View>
+                <Text
                   style={[
-                    styles.sidebarItem,
-                    isActive && styles.sidebarItemActive,
+                    styles.sidebarLabel,
+                    !activeSub && styles.sidebarLabelActive,
                   ]}
-                  onPress={() => handleSubcategoryPress(sub.id)}
-                  activeOpacity={0.7}
+                  numberOfLines={2}
                 >
-                  <View style={[
-                    styles.sidebarIconCircle,
-                    isActive && styles.sidebarIconCircleActive,
-                  ]}>
-                    {sub.imageUrl ? (
-                      <Image source={{ uri: sub.imageUrl }} style={styles.sidebarImage} resizeMode="contain" />
-                    ) : (
-                      <Ionicons
-                        name={icon}
-                        size={20}
-                        color={isActive ? colors.primary : "#94a3b8"}
-                      />
-                    )}
-                  </View>
-                  <Text
-                    style={[
-                      styles.sidebarLabel,
-                      isActive && styles.sidebarLabelActive,
-                    ]}
-                    numberOfLines={2}
-                  >
-                    {getLocalizedName(sub)}
-                  </Text>
-                  <Text
-                    style={[
-                      styles.sidebarCount,
-                      isActive && styles.sidebarCountActive,
-                    ]}
-                  >
-                    {sub.count}
-                  </Text>
-                </TouchableOpacity>
-              );
-            })}
-          </ScrollView>
+                  All
+                </Text>
+                <Text
+                  style={[
+                    styles.sidebarCount,
+                    !activeSub && styles.sidebarCountActive,
+                  ]}
+                >
+                  {totalCount}
+                </Text>
+              </TouchableOpacity>
 
-          {/* Right content */}
-          <View
-            style={styles.contentArea}
-            onLayout={(e) => setContentWidth(e.nativeEvent.layout.width)}
-          >
+              {subcategories.map((sub) => {
+                const isActive = activeSub === sub.id;
+                const icon = getCategoryIcon(sub.name);
+                return (
+                  <TouchableOpacity
+                    key={sub.id}
+                    style={[
+                      styles.sidebarItem,
+                      isActive && styles.sidebarItemActive,
+                    ]}
+                    onPress={() => handleSubcategoryPress(sub.id)}
+                    activeOpacity={0.7}
+                  >
+                    <View style={[
+                      styles.sidebarIconCircle,
+                      isActive && styles.sidebarIconCircleActive,
+                    ]}>
+                      {sub.imageUrl ? (
+                        <Image source={{ uri: sub.imageUrl }} style={styles.sidebarImage} resizeMode="contain" />
+                      ) : (
+                        <Ionicons
+                          name={icon}
+                          size={24}
+                          color={isActive ? colors.primary : "#94a3b8"}
+                        />
+                      )}
+                    </View>
+                    <Text
+                      style={[
+                        styles.sidebarLabel,
+                        isActive && styles.sidebarLabelActive,
+                      ]}
+                      numberOfLines={2}
+                    >
+                      {getLocalizedName(sub)}
+                    </Text>
+                    <Text
+                      style={[
+                        styles.sidebarCount,
+                        isActive && styles.sidebarCountActive,
+                      ]}
+                    >
+                      {sub.count}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </ScrollView>
+
+            {/* Right content */}
+            <View
+              style={styles.contentArea}
+              onLayout={(e) => setContentWidth(e.nativeEvent.layout.width)}
+            >
+              {renderTopBanner()}
+              {renderSearchBox()}
+              {renderGrandchildPills()}
+              {renderFilterChips()}
+              {renderProductGrid(true)}
+            </View>
+          </View>
+        ) : (
+          <View style={{ flex: 1 }}>
             {renderTopBanner()}
             {renderSearchBox()}
             {renderGrandchildPills()}
             {renderFilterChips()}
-            {renderProductGrid(true)}
+            {renderProductGrid(false)}
           </View>
-        </View>
-      ) : (
-        <View style={{ flex: 1 }}>
-          {renderTopBanner()}
-          {renderSearchBox()}
-          {renderGrandchildPills()}
-          {renderFilterChips()}
-          {renderProductGrid(false)}
-        </View>
-      )}
+        )}
 
-      <FloatingCart />
-      <VariantBottomSheet
-        visible={sheetVisible}
-        onClose={() => setSheetVisible(false)}
-        variants={sheetVariants}
-        onAddToCart={handleAddToCart}
-        onUpdateQuantity={effectiveUpdateQty}
-        cartQuantityMap={cartQuantityMap}
-        isMember={isMember}
-      />
-      <ConfirmSheet
-        visible={replaceCartConfirm !== null}
-        title="Replace Cart?"
-        message="Your cart has items from another store. Adding this item will replace your current cart."
-        icon="cart-outline"
-        iconColor="#f59e0b"
-        confirmLabel="Replace"
-        onConfirm={() => {
-          replaceCartConfirm?.pending();
-          setReplaceCartConfirm(null);
-        }}
-        onCancel={() => setReplaceCartConfirm(null)}
-      />
-    </View>
+        <FloatingCart />
+      </View>
+    </ProductActionsProvider>
   );
 }
 
@@ -759,39 +637,44 @@ const styles = StyleSheet.create({
   },
   sidebarItem: {
     alignItems: "center",
-    paddingVertical: 10,
+    paddingVertical: 8,
     paddingHorizontal: 2,
-    borderLeftWidth: 3,
-    borderLeftColor: "transparent",
+    borderRightWidth: 3,
+    borderRightColor: "transparent",
     backgroundColor: "#f1f5f9",
   },
+  // Indicator on the right edge, next to the product grid it controls
   sidebarItemActive: {
     backgroundColor: "#fff",
-    borderLeftColor: colors.primary,
+    borderRightColor: colors.primary,
   },
   sidebarIconCircle: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: "#e2e8f0",
+    width: 48,
+    height: 48,
+    borderRadius: 10,
+    backgroundColor: "#fff",
     justifyContent: "center",
     alignItems: "center",
+    overflow: "hidden",
     marginBottom: 4,
+    borderWidth: 1.5,
+    borderColor: "transparent",
   },
   sidebarIconCircleActive: {
-    backgroundColor: colors.primary + "15",
+    borderColor: colors.primary,
   },
+  // Product-photo thumbnails: show the whole pack and blend its white background into the tile
   sidebarImage: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
+    width: 40,
+    height: 40,
+    mixBlendMode: "multiply",
   },
   sidebarLabel: {
-    fontSize: 11,
+    fontSize: 10,
     fontWeight: "500",
     color: colors.textSecondary,
     textAlign: "center",
-    lineHeight: 14,
+    lineHeight: 13,
   },
   sidebarLabelActive: {
     color: colors.primary,
@@ -902,9 +785,6 @@ const styles = StyleSheet.create({
   },
   gridNarrow: {
     paddingHorizontal: 10,
-  },
-  gridRow: {
-    justifyContent: "space-between",
   },
   loadingContainer: {
     flex: 1,

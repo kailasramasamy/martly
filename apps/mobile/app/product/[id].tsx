@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   StyleSheet,
   Dimensions,
-  FlatList,
   Modal,
   Animated,
   NativeSyntheticEvent,
@@ -25,8 +24,9 @@ import { useMembership, getBestPrice } from "../../lib/membership-context";
 import { useToast } from "../../lib/toast-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
 import { useLanguage } from "../../lib/language-context";
+import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
-import { FeaturedProductCard } from "../../components/FeaturedProductCard";
+import { ProductList } from "../../components/ProductList";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { ProductDetailSkeleton } from "../../components/SkeletonLoader";
@@ -279,43 +279,6 @@ export default function ProductDetailScreen() {
 
   const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
 
-  // Group related products by product.id — pick cheapest as primary
-  const { groupedRelated, relatedVariantsMap } = useMemo(() => {
-    const groups = new Map<string, StoreProduct[]>();
-    for (const sp of relatedProducts) {
-      if (!sp.product) continue;
-      const pid = sp.product.id;
-      if (!groups.has(pid)) groups.set(pid, []);
-      groups.get(pid)!.push(sp);
-    }
-
-    const primary: StoreProduct[] = [];
-    const variantsMap = new Map<string, StoreProduct[]>();
-    for (const [pid, variants] of groups) {
-      const sorted = [...variants].sort((a, b) => {
-        const priceA = a.pricing?.discountActive ? a.pricing.effectivePrice : Number(a.price);
-        const priceB = b.pricing?.discountActive ? b.pricing.effectivePrice : Number(b.price);
-        return priceA - priceB;
-      });
-      primary.push(sorted[0]);
-      variantsMap.set(pid, sorted);
-    }
-
-    return { groupedRelated: primary, relatedVariantsMap: variantsMap };
-  }, [relatedProducts]);
-
-  const handleShowVariants = useCallback(
-    (productId: string) => {
-      const variants = relatedVariantsMap.get(productId);
-      if (variants) {
-        setSheetMode("cart");
-        setSheetVariants(variants);
-        setSheetVisible(true);
-      }
-    },
-    [relatedVariantsMap],
-  );
-
   useEffect(() => {
     if (product?.name) {
       navigation.setOptions({ title: getLocalizedName(product) });
@@ -457,381 +420,361 @@ export default function ProductDetailScreen() {
   const nutritionalEntries = nutritionalInfo ? Object.entries(nutritionalInfo) : [];
 
   return (
-    <View style={styles.container}>
-    <ScrollView style={styles.scrollView}>
-      {/* Image Gallery */}
-      {images.length > 0 ? (
-        <View style={styles.galleryContainer}>
-          <ScrollView
-            ref={galleryRef}
-            horizontal
-            pagingEnabled
-            showsHorizontalScrollIndicator={false}
-            onScroll={onImageScroll}
-            scrollEventThrottle={16}
-          >
-            {images.map((uri, idx) => (
-              <TouchableOpacity key={idx} activeOpacity={0.9} onPress={() => setPreviewImage(uri)} style={styles.heroImageWrap}>
-                <Image source={{ uri }} style={styles.heroImage} resizeMode="contain" />
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
-          {/* Wishlist Heart — top-right overlay */}
-          {isAuthenticated && (
-            <TouchableOpacity
-              style={styles.wishlistOverlay}
-              onPress={() => toggleWishlist(product.id)}
-              hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+    <ProductActionsProvider store={storeId ? { id: storeId, name: storeName } : null}>
+      <View style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+        {/* Image Gallery */}
+        {images.length > 0 ? (
+          <View style={styles.galleryContainer}>
+            <ScrollView
+              ref={galleryRef}
+              horizontal
+              pagingEnabled
+              showsHorizontalScrollIndicator={false}
+              onScroll={onImageScroll}
+              scrollEventThrottle={16}
             >
-              <Ionicons
-                name={isWishlisted(product.id) ? "heart" : "heart-outline"}
-                size={24}
-                color={isWishlisted(product.id) ? "#ef4444" : "#fff"}
-              />
-            </TouchableOpacity>
-          )}
-          {images.length > 1 && (
-            <View style={styles.dotRow}>
-              {images.map((_, idx) => (
-                <View key={idx} style={[styles.dot, idx === activeImageIdx && styles.dotActive]} />
-              ))}
-            </View>
-          )}
-        </View>
-      ) : (
-        <View style={[styles.heroImageWrap, styles.heroPlaceholder]}>
-          <Text style={styles.heroPlaceholderText}>No image</Text>
-        </View>
-      )}
-
-      {/* Select Unit — right below carousel */}
-      {storeProducts.length > 0 && (
-        <View style={styles.unitSection}>
-          {storeProducts.length > 1 && (
-            <Text style={styles.unitSectionTitle}>Select Unit</Text>
-          )}
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.unitCardStrip}>
-            {storeProducts.map((sp, idx) => {
-              const hasDiscount = sp.pricing?.discountActive;
-              const displayPrice = hasDiscount ? sp.pricing!.effectivePrice : Number(sp.price);
-              const originalPrice = hasDiscount ? sp.pricing!.originalPrice : null;
-              const available = sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0));
-              const isOos = available <= 0;
-              const isSelected = idx === selectedSpIdx;
-
-              return (
-                <TouchableOpacity
-                  key={sp.id}
-                  style={[styles.unitCard, isSelected && styles.unitCardSelected, isOos && styles.unitCardOos]}
-                  onPress={() => handleSelectVariant(idx)}
-                  activeOpacity={0.7}
-                >
-                  {sp.variant.imageUrl && (
-                    <Image source={{ uri: sp.variant.imageUrl }} style={styles.unitCardImage} resizeMode="contain" />
-                  )}
-                  <View style={styles.unitCardInfo}>
-                    <Text style={[styles.unitCardName, isOos && { color: colors.textSecondary }]} numberOfLines={2}>{sp.variant.name}</Text>
-                    {originalPrice != null && (
-                      <Text style={styles.unitCardMrp}>{"\u20B9"}{originalPrice}</Text>
-                    )}
-                    <Text style={[styles.unitCardPrice, isOos && { color: colors.textSecondary }]}>{"\u20B9"}{displayPrice}</Text>
-                    {sp.pricing?.memberPrice != null && sp.pricing.memberPrice < displayPrice && (
-                      <Text style={styles.unitCardMember}>{"\u20B9"}{sp.pricing.memberPrice} member</Text>
-                    )}
-                    {isOos && <Text style={styles.unitCardOosLabel}>Out of Stock</Text>}
-                  </View>
+              {images.map((uri, idx) => (
+                <TouchableOpacity key={idx} activeOpacity={0.9} onPress={() => setPreviewImage(uri)} style={styles.heroImageWrap}>
+                  <Image source={{ uri }} style={styles.heroImage} resizeMode="contain" />
                 </TouchableOpacity>
-              );
-            })}
-          </ScrollView>
-        </View>
-      )}
+              ))}
+            </ScrollView>
+            {/* Wishlist Heart — top-right overlay */}
+            {isAuthenticated && (
+              <TouchableOpacity
+                style={styles.wishlistOverlay}
+                onPress={() => toggleWishlist(product.id)}
+                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+              >
+                <Ionicons
+                  name={isWishlisted(product.id) ? "heart" : "heart-outline"}
+                  size={24}
+                  color={isWishlisted(product.id) ? "#ef4444" : "#fff"}
+                />
+              </TouchableOpacity>
+            )}
+            {images.length > 1 && (
+              <View style={styles.dotRow}>
+                {images.map((_, idx) => (
+                  <View key={idx} style={[styles.dot, idx === activeImageIdx && styles.dotActive]} />
+                ))}
+              </View>
+            )}
+          </View>
+        ) : (
+          <View style={[styles.heroImageWrap, styles.heroPlaceholder]}>
+            <Text style={styles.heroPlaceholderText}>No image</Text>
+          </View>
+        )}
 
-      <View style={styles.body}>
-        {/* Basic Info */}
-        <View style={styles.infoRow}>
-          {product.foodType && (
-            <View
-              style={[
-                styles.foodTypeDot,
-                product.foodType === "VEG" || product.foodType === "VEGAN"
-                  ? styles.foodTypeVeg
-                  : styles.foodTypeNonVeg,
-              ]}
-            >
+        {/* Select Unit — right below carousel */}
+        {storeProducts.length > 0 && (
+          <View style={styles.unitSection}>
+            {storeProducts.length > 1 && (
+              <Text style={styles.unitSectionTitle}>Select Unit</Text>
+            )}
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.unitCardStrip}>
+              {storeProducts.map((sp, idx) => {
+                const hasDiscount = sp.pricing?.discountActive;
+                const displayPrice = hasDiscount ? sp.pricing!.effectivePrice : Number(sp.price);
+                const originalPrice = hasDiscount ? sp.pricing!.originalPrice : null;
+                const available = sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0));
+                const isOos = available <= 0;
+                const isSelected = idx === selectedSpIdx;
+
+                return (
+                  <TouchableOpacity
+                    key={sp.id}
+                    style={[styles.unitCard, isSelected && styles.unitCardSelected, isOos && styles.unitCardOos]}
+                    onPress={() => handleSelectVariant(idx)}
+                    activeOpacity={0.7}
+                  >
+                    {sp.variant.imageUrl && (
+                      <Image source={{ uri: sp.variant.imageUrl }} style={styles.unitCardImage} resizeMode="contain" />
+                    )}
+                    <View style={styles.unitCardInfo}>
+                      <Text style={[styles.unitCardName, isOos && { color: colors.textSecondary }]} numberOfLines={2}>{sp.variant.name}</Text>
+                      {originalPrice != null && (
+                        <Text style={styles.unitCardMrp}>{"\u20B9"}{originalPrice}</Text>
+                      )}
+                      <Text style={[styles.unitCardPrice, isOos && { color: colors.textSecondary }]}>{"\u20B9"}{displayPrice}</Text>
+                      {sp.pricing?.memberPrice != null && sp.pricing.memberPrice < displayPrice && (
+                        <Text style={styles.unitCardMember}>{"\u20B9"}{sp.pricing.memberPrice} member</Text>
+                      )}
+                      {isOos && <Text style={styles.unitCardOosLabel}>Out of Stock</Text>}
+                    </View>
+                  </TouchableOpacity>
+                );
+              })}
+            </ScrollView>
+          </View>
+        )}
+
+        <View style={styles.body}>
+          {/* Basic Info */}
+          <View style={styles.infoRow}>
+            {product.foodType && (
               <View
                 style={[
-                  styles.foodTypeDotInner,
+                  styles.foodTypeDot,
                   product.foodType === "VEG" || product.foodType === "VEGAN"
-                    ? styles.foodTypeDotVeg
-                    : styles.foodTypeDotNonVeg,
+                    ? styles.foodTypeVeg
+                    : styles.foodTypeNonVeg,
                 ]}
-              />
-            </View>
-          )}
-          {product.brand?.name && (
-            <Text style={styles.brandName}>{product.brand.name}</Text>
-          )}
-        </View>
-
-        <Text style={styles.productName}>{getLocalizedName(product)}</Text>
-        {getLocalizedSubtitle(product) && (
-          <Text style={{ fontSize: 14, color: "#94a3b8", marginTop: 2 }}>{getLocalizedSubtitle(product)}</Text>
-        )}
-
-        {product.subcategory?.name && (
-          <View style={styles.categoryChip}>
-            <Text style={styles.categoryChipText}>{product.subcategory.name}</Text>
-          </View>
-        )}
-
-        {/* Description */}
-        {product.description && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Description</Text>
-            <Text style={styles.descText} numberOfLines={descExpanded ? undefined : 3}>
-              {product.description}
-            </Text>
-            {product.description.length > 120 && (
-              <TouchableOpacity onPress={() => setDescExpanded(!descExpanded)}>
-                <Text style={styles.readMore}>{descExpanded ? "Show less" : "Read more"}</Text>
-              </TouchableOpacity>
+              >
+                <View
+                  style={[
+                    styles.foodTypeDotInner,
+                    product.foodType === "VEG" || product.foodType === "VEGAN"
+                      ? styles.foodTypeDotVeg
+                      : styles.foodTypeDotNonVeg,
+                  ]}
+                />
+              </View>
+            )}
+            {product.brand?.name && (
+              <Text style={styles.brandName}>{product.brand.name}</Text>
             )}
           </View>
-        )}
 
-        {/* Subscribe & Save */}
-        {isAuthenticated && selectedStore?.subscriptionEnabled && storeProducts.some((sp) => (sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0))) > 0) && (
-          <TouchableOpacity
-            style={styles.subscribeBanner}
-            activeOpacity={0.8}
-            onPress={() => {
-              const inStock = storeProducts.filter((sp) => (sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0))) > 0);
-              if (inStock.length === 1) {
-                router.push({ pathname: "/subscription-builder", params: { storeProductId: inStock[0].id, productId: id } });
-              } else if (inStock.length > 1) {
-                setSheetMode("subscribe");
-                setSheetVariants(inStock);
-                setSheetVisible(true);
-              }
-            }}
-          >
-            <View style={styles.subscribeBannerIcon}>
-              <Ionicons name="repeat" size={22} color="#fff" />
+          <Text style={styles.productName}>{getLocalizedName(product)}</Text>
+          {getLocalizedSubtitle(product) && (
+            <Text style={{ fontSize: 14, color: "#94a3b8", marginTop: 2 }}>{getLocalizedSubtitle(product)}</Text>
+          )}
+
+          {product.subcategory?.name && (
+            <View style={styles.categoryChip}>
+              <Text style={styles.categoryChipText}>{product.subcategory.name}</Text>
             </View>
-            <View style={styles.subscribeBannerContent}>
-              <Text style={styles.subscribeBannerTitle}>Subscribe & Save</Text>
-              <Text style={styles.subscribeBannerDesc}>Get regular deliveries — daily, weekly, or monthly</Text>
+          )}
+
+          {/* Description */}
+          {product.description && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Description</Text>
+              <Text style={styles.descText} numberOfLines={descExpanded ? undefined : 3}>
+                {product.description}
+              </Text>
+              {product.description.length > 120 && (
+                <TouchableOpacity onPress={() => setDescExpanded(!descExpanded)}>
+                  <Text style={styles.readMore}>{descExpanded ? "Show less" : "Read more"}</Text>
+                </TouchableOpacity>
+              )}
             </View>
-            <Ionicons name="chevron-forward" size={20} color={colors.primary} />
-          </TouchableOpacity>
-        )}
+          )}
 
-        {/* Frequently Bought Together */}
-        {frequentlyBought.length > 0 && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Frequently Bought Together</Text>
-            <FlatList
-              horizontal
-              data={frequentlyBought}
-              keyExtractor={(item) => item.id}
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={styles.relatedList}
-              renderItem={({ item }) => (
-                <FeaturedProductCard
-                  item={item}
-                  onAddToCart={handleAddToCart}
-                  onUpdateQuantity={effectiveUpdateQty}
-                  quantity={cartQuantityMap.get(item.id) ?? 0}
-                  storeId={storeId}
-                  variantCount={1}
-                  onShowVariants={() => {}}
-                  isMember={isMember}
-                />
+          {/* Subscribe & Save */}
+          {isAuthenticated && selectedStore?.subscriptionEnabled && storeProducts.some((sp) => (sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0))) > 0) && (
+            <TouchableOpacity
+              style={styles.subscribeBanner}
+              activeOpacity={0.8}
+              onPress={() => {
+                const inStock = storeProducts.filter((sp) => (sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0))) > 0);
+                if (inStock.length === 1) {
+                  router.push({ pathname: "/subscription-builder", params: { storeProductId: inStock[0].id, productId: id } });
+                } else if (inStock.length > 1) {
+                  setSheetMode("subscribe");
+                  setSheetVariants(inStock);
+                  setSheetVisible(true);
+                }
+              }}
+            >
+              <View style={styles.subscribeBannerIcon}>
+                <Ionicons name="repeat" size={22} color="#fff" />
+              </View>
+              <View style={styles.subscribeBannerContent}>
+                <Text style={styles.subscribeBannerTitle}>Subscribe & Save</Text>
+                <Text style={styles.subscribeBannerDesc}>Get regular deliveries — daily, weekly, or monthly</Text>
+              </View>
+              <Ionicons name="chevron-forward" size={20} color={colors.primary} />
+            </TouchableOpacity>
+          )}
+
+          {/* Frequently Bought Together */}
+          {frequentlyBought.length > 0 && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Frequently Bought Together</Text>
+              <ProductList products={frequentlyBought} layout="rail" />
+            </View>
+          )}
+
+          {/* Substitute Suggestions */}
+          {substitutes.length > 0 && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Similar Products</Text>
+              <ProductList products={substitutes} layout="rail" />
+            </View>
+          )}
+
+          {/* No store selected hint */}
+          {!storeId && (
+            <View style={styles.hintBox}>
+              <Text style={styles.hintText}>Select a store to see pricing and add to cart.</Text>
+            </View>
+          )}
+
+          {/* Nutritional Info */}
+          {nutritionalEntries.length > 0 && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Nutritional Information</Text>
+              <View style={styles.table}>
+                {nutritionalEntries.map(([key, value]) => (
+                  <View key={key} style={styles.tableRow}>
+                    <Text style={styles.tableKey}>{key}</Text>
+                    <Text style={styles.tableValue}>{value}</Text>
+                  </View>
+                ))}
+              </View>
+            </View>
+          )}
+
+          {/* Ingredients */}
+          {product.ingredients && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Ingredients</Text>
+              <Text style={styles.bodyText}>{product.ingredients}</Text>
+            </View>
+          )}
+
+          {/* Allergens */}
+          {product.allergens?.length > 0 && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Allergens</Text>
+              <View style={styles.allergenBadge}>
+                <Text style={styles.allergenText}>{Array.isArray(product.allergens) ? product.allergens.join(", ") : product.allergens}</Text>
+              </View>
+            </View>
+          )}
+
+          {/* Storage Instructions */}
+          {product.storageInstructions && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Storage</Text>
+              <Text style={styles.bodyText}>{product.storageInstructions}</Text>
+            </View>
+          )}
+
+          {/* Regulatory */}
+          {(product.regulatoryMarks?.length > 0 ||
+            product.certifications?.length > 0 ||
+            product.dangerWarnings ||
+            product.manufacturer ||
+            product.countryOfOrigin) && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Regulatory Information</Text>
+
+              {product.regulatoryMarks?.length > 0 && (
+                <View style={styles.badgeRow}>
+                  {product.regulatoryMarks.map((mark) => (
+                    <View key={mark} style={styles.regBadge}>
+                      <Text style={styles.regBadgeText}>{mark}</Text>
+                    </View>
+                  ))}
+                </View>
               )}
-            />
-          </View>
-        )}
 
-        {/* Substitute Suggestions */}
-        {substitutes.length > 0 && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Similar Products</Text>
-            <FlatList
-              horizontal
-              data={substitutes}
-              keyExtractor={(item) => item.id}
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={styles.relatedList}
-              renderItem={({ item }) => (
-                <FeaturedProductCard
-                  item={item}
-                  onAddToCart={handleAddToCart}
-                  onUpdateQuantity={effectiveUpdateQty}
-                  quantity={cartQuantityMap.get(item.id) ?? 0}
-                  storeId={storeId}
-                  variantCount={1}
-                  onShowVariants={() => {}}
-                  isMember={isMember}
-                />
+              {product.certifications?.length > 0 && (
+                <View style={[styles.badgeRow, { marginTop: spacing.xs }]}>
+                  {product.certifications.map((cert) => (
+                    <View key={cert} style={styles.certBadge}>
+                      <Text style={styles.certBadgeText}>{cert}</Text>
+                    </View>
+                  ))}
+                </View>
               )}
-            />
-          </View>
-        )}
 
-        {/* No store selected hint */}
-        {!storeId && (
-          <View style={styles.hintBox}>
-            <Text style={styles.hintText}>Select a store to see pricing and add to cart.</Text>
-          </View>
-        )}
+              {product.dangerWarnings && (
+                <View style={styles.dangerBanner}>
+                  <Text style={styles.dangerText}>{product.dangerWarnings}</Text>
+                </View>
+              )}
 
-        {/* Nutritional Info */}
-        {nutritionalEntries.length > 0 && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Nutritional Information</Text>
-            <View style={styles.table}>
-              {nutritionalEntries.map(([key, value]) => (
-                <View key={key} style={styles.tableRow}>
-                  <Text style={styles.tableKey}>{key}</Text>
-                  <Text style={styles.tableValue}>{value}</Text>
+              {product.manufacturer && (
+                <Text style={styles.metaText}>Manufacturer: {product.manufacturer}</Text>
+              )}
+              {product.countryOfOrigin && (
+                <Text style={styles.metaText}>Origin: {product.countryOfOrigin}</Text>
+              )}
+            </View>
+          )}
+
+          {/* Reviews */}
+          {(reviewSummary?.count ?? 0) > 0 && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Ratings & Reviews</Text>
+              <View style={styles.ratingSummary}>
+                <View style={styles.ratingBig}>
+                  <Ionicons name="star" size={24} color="#f59e0b" />
+                  <Text style={styles.ratingBigText}>{reviewSummary!.average.toFixed(1)}</Text>
+                  <Text style={styles.ratingCount}>{reviewSummary!.count} review{reviewSummary!.count !== 1 ? "s" : ""}</Text>
+                </View>
+                <View style={styles.ratingBars}>
+                  {[5, 4, 3, 2, 1].map((star) => {
+                    const count = reviewSummary!.distribution[star] ?? 0;
+                    const pct = reviewSummary!.count > 0 ? (count / reviewSummary!.count) * 100 : 0;
+                    return (
+                      <View key={star} style={styles.ratingBarRow}>
+                        <Text style={styles.ratingBarLabel}>{star}</Text>
+                        <View style={styles.ratingBarTrack}>
+                          <View style={[styles.ratingBarFill, { width: `${pct}%` }]} />
+                        </View>
+                      </View>
+                    );
+                  })}
+                </View>
+              </View>
+
+              {reviews.map((r) => (
+                <View key={r.id} style={styles.reviewCard}>
+                  <View style={styles.reviewHeader}>
+                    <Text style={styles.reviewUser}>{r.user.name}</Text>
+                    <View style={styles.reviewStars}>
+                      {[1, 2, 3, 4, 5].map((s) => (
+                        <Ionicons key={s} name={s <= r.rating ? "star" : "star-outline"} size={12} color="#f59e0b" />
+                      ))}
+                    </View>
+                    {r.isVerified && <Text style={styles.verifiedBadge}>Verified</Text>}
+                  </View>
+                  {r.title && <Text style={styles.reviewTitle}>{r.title}</Text>}
+                  {r.comment && <Text style={styles.reviewComment}>{r.comment}</Text>}
+                  {r.images && r.images.length > 0 && (
+                    <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.reviewImageScroll} contentContainerStyle={{ gap: 8 }}>
+                      {r.images.map((img) => (
+                        <TouchableOpacity key={img.id} activeOpacity={0.8} onPress={() => setPreviewImage(img.imageUrl)}>
+                          <Image source={{ uri: img.imageUrl }} style={styles.reviewThumb} />
+                        </TouchableOpacity>
+                      ))}
+                    </ScrollView>
+                  )}
+                  {r.reply && (
+                    <View style={styles.replyBox}>
+                      <View style={styles.replyHeader}>
+                        <Ionicons name="storefront-outline" size={12} color={colors.primary} />
+                        <Text style={styles.replyLabel}>Store Response</Text>
+                      </View>
+                      <Text style={styles.replyBody}>{r.reply.body}</Text>
+                    </View>
+                  )}
                 </View>
               ))}
+
+              {isAuthenticated && (
+                <TouchableOpacity
+                  style={styles.writeReviewBtn}
+                  onPress={() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } })}
+                >
+                  <Ionicons name="create-outline" size={16} color={colors.primary} />
+                  <Text style={styles.writeReviewText}>Write a Review</Text>
+                </TouchableOpacity>
+              )}
             </View>
-          </View>
-        )}
+          )}
 
-        {/* Ingredients */}
-        {product.ingredients && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Ingredients</Text>
-            <Text style={styles.bodyText}>{product.ingredients}</Text>
-          </View>
-        )}
-
-        {/* Allergens */}
-        {product.allergens?.length > 0 && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Allergens</Text>
-            <View style={styles.allergenBadge}>
-              <Text style={styles.allergenText}>{Array.isArray(product.allergens) ? product.allergens.join(", ") : product.allergens}</Text>
-            </View>
-          </View>
-        )}
-
-        {/* Storage Instructions */}
-        {product.storageInstructions && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Storage</Text>
-            <Text style={styles.bodyText}>{product.storageInstructions}</Text>
-          </View>
-        )}
-
-        {/* Regulatory */}
-        {(product.regulatoryMarks?.length > 0 ||
-          product.certifications?.length > 0 ||
-          product.dangerWarnings ||
-          product.manufacturer ||
-          product.countryOfOrigin) && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Regulatory Information</Text>
-
-            {product.regulatoryMarks?.length > 0 && (
-              <View style={styles.badgeRow}>
-                {product.regulatoryMarks.map((mark) => (
-                  <View key={mark} style={styles.regBadge}>
-                    <Text style={styles.regBadgeText}>{mark}</Text>
-                  </View>
-                ))}
-              </View>
-            )}
-
-            {product.certifications?.length > 0 && (
-              <View style={[styles.badgeRow, { marginTop: spacing.xs }]}>
-                {product.certifications.map((cert) => (
-                  <View key={cert} style={styles.certBadge}>
-                    <Text style={styles.certBadgeText}>{cert}</Text>
-                  </View>
-                ))}
-              </View>
-            )}
-
-            {product.dangerWarnings && (
-              <View style={styles.dangerBanner}>
-                <Text style={styles.dangerText}>{product.dangerWarnings}</Text>
-              </View>
-            )}
-
-            {product.manufacturer && (
-              <Text style={styles.metaText}>Manufacturer: {product.manufacturer}</Text>
-            )}
-            {product.countryOfOrigin && (
-              <Text style={styles.metaText}>Origin: {product.countryOfOrigin}</Text>
-            )}
-          </View>
-        )}
-
-        {/* Reviews */}
-        {(reviewSummary?.count ?? 0) > 0 && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Ratings & Reviews</Text>
-            <View style={styles.ratingSummary}>
-              <View style={styles.ratingBig}>
-                <Ionicons name="star" size={24} color="#f59e0b" />
-                <Text style={styles.ratingBigText}>{reviewSummary!.average.toFixed(1)}</Text>
-                <Text style={styles.ratingCount}>{reviewSummary!.count} review{reviewSummary!.count !== 1 ? "s" : ""}</Text>
-              </View>
-              <View style={styles.ratingBars}>
-                {[5, 4, 3, 2, 1].map((star) => {
-                  const count = reviewSummary!.distribution[star] ?? 0;
-                  const pct = reviewSummary!.count > 0 ? (count / reviewSummary!.count) * 100 : 0;
-                  return (
-                    <View key={star} style={styles.ratingBarRow}>
-                      <Text style={styles.ratingBarLabel}>{star}</Text>
-                      <View style={styles.ratingBarTrack}>
-                        <View style={[styles.ratingBarFill, { width: `${pct}%` }]} />
-                      </View>
-                    </View>
-                  );
-                })}
-              </View>
-            </View>
-
-            {reviews.map((r) => (
-              <View key={r.id} style={styles.reviewCard}>
-                <View style={styles.reviewHeader}>
-                  <Text style={styles.reviewUser}>{r.user.name}</Text>
-                  <View style={styles.reviewStars}>
-                    {[1, 2, 3, 4, 5].map((s) => (
-                      <Ionicons key={s} name={s <= r.rating ? "star" : "star-outline"} size={12} color="#f59e0b" />
-                    ))}
-                  </View>
-                  {r.isVerified && <Text style={styles.verifiedBadge}>Verified</Text>}
-                </View>
-                {r.title && <Text style={styles.reviewTitle}>{r.title}</Text>}
-                {r.comment && <Text style={styles.reviewComment}>{r.comment}</Text>}
-                {r.images && r.images.length > 0 && (
-                  <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.reviewImageScroll} contentContainerStyle={{ gap: 8 }}>
-                    {r.images.map((img) => (
-                      <TouchableOpacity key={img.id} activeOpacity={0.8} onPress={() => setPreviewImage(img.imageUrl)}>
-                        <Image source={{ uri: img.imageUrl }} style={styles.reviewThumb} />
-                      </TouchableOpacity>
-                    ))}
-                  </ScrollView>
-                )}
-                {r.reply && (
-                  <View style={styles.replyBox}>
-                    <View style={styles.replyHeader}>
-                      <Ionicons name="storefront-outline" size={12} color={colors.primary} />
-                      <Text style={styles.replyLabel}>Store Response</Text>
-                    </View>
-                    <Text style={styles.replyBody}>{r.reply.body}</Text>
-                  </View>
-                )}
-              </View>
-            ))}
-
-            {isAuthenticated && (
+          {(reviewSummary?.count ?? 0) === 0 && isAuthenticated && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Reviews</Text>
+              <Text style={styles.descText}>No reviews yet. Be the first!</Text>
               <TouchableOpacity
                 style={styles.writeReviewBtn}
                 onPress={() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } })}
@@ -839,127 +782,92 @@ export default function ProductDetailScreen() {
                 <Ionicons name="create-outline" size={16} color={colors.primary} />
                 <Text style={styles.writeReviewText}>Write a Review</Text>
               </TouchableOpacity>
-            )}
-          </View>
-        )}
+            </View>
+          )}
 
-        {(reviewSummary?.count ?? 0) === 0 && isAuthenticated && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Reviews</Text>
-            <Text style={styles.descText}>No reviews yet. Be the first!</Text>
-            <TouchableOpacity
-              style={styles.writeReviewBtn}
-              onPress={() => router.push({ pathname: "/write-review", params: { productId: product.id, productName: product.name, storeId: storeId ?? "" } })}
-            >
-              <Ionicons name="create-outline" size={16} color={colors.primary} />
-              <Text style={styles.writeReviewText}>Write a Review</Text>
-            </TouchableOpacity>
-          </View>
-        )}
-
-        {/* Related Products */}
-        {groupedRelated.length > 0 && (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Related Products</Text>
-            <FlatList
-              horizontal
-              data={groupedRelated}
-              keyExtractor={(item) => item.id}
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={styles.relatedList}
-              renderItem={({ item }) => {
-                const variants = relatedVariantsMap.get(item.product.id);
-                return (
-                  <FeaturedProductCard
-                    item={item}
-                    onAddToCart={handleAddToCart}
-                    onUpdateQuantity={effectiveUpdateQty}
-                    quantity={cartQuantityMap.get(item.id) ?? 0}
-                    storeId={storeId}
-                    variantCount={variants?.length ?? 1}
-                    onShowVariants={() => handleShowVariants(item.product.id)}
-                    isMember={isMember}
-                  />
-                );
-              }}
-            />
-          </View>
-        )}
-      </View>
-      <View style={{ height: 120 }} />
-    </ScrollView>
-    {/* Sticky Bottom Bar */}
-    {selectedSp && storeProducts.length > 0 && (
-      <View style={[styles.bottomBar, { paddingBottom: Math.max(insets.bottom, 12) }]}>
-        <View style={styles.bottomBarInfo}>
-          <Text style={styles.bottomBarName} numberOfLines={1}>{selectedSp.variant.name}</Text>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
-            {selectedSpOriginal != null && (
-              <Text style={styles.bottomBarMrp}>{"\u20B9"}{selectedSpOriginal}</Text>
-            )}
-            <Text style={styles.bottomBarPrice}>{"\u20B9"}{selectedSpPrice}</Text>
-          </View>
+          {/* Related Products */}
+          {relatedProducts.length > 0 && (
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Related Products</Text>
+              <ProductList products={relatedProducts} layout="rail" />
+            </View>
+          )}
         </View>
-        {selectedSpOos ? (
-          <View style={[styles.bottomBarAddBtn, styles.disabledBtn]}>
-            <Text style={[styles.bottomBarAddText, styles.disabledText]}>Out of Stock</Text>
+        <View style={{ height: 120 }} />
+      </ScrollView>
+      {/* Sticky Bottom Bar */}
+      {selectedSp && storeProducts.length > 0 && (
+        <View style={[styles.bottomBar, { paddingBottom: Math.max(insets.bottom, 12) }]}>
+          <View style={styles.bottomBarInfo}>
+            <Text style={styles.bottomBarName} numberOfLines={1}>{selectedSp.variant.name}</Text>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+              {selectedSpOriginal != null && (
+                <Text style={styles.bottomBarMrp}>{"\u20B9"}{selectedSpOriginal}</Text>
+              )}
+              <Text style={styles.bottomBarPrice}>{"\u20B9"}{selectedSpPrice}</Text>
+            </View>
           </View>
-        ) : selectedSpCartQty > 0 ? (
-          <View style={styles.variantQtyStepper}>
-            <TouchableOpacity
-              style={styles.variantQtyBtn}
-              onPress={() => effectiveUpdateQty(selectedSp.id, selectedSpCartQty - 1)}
-              hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-            >
-              <Ionicons name={selectedSpCartQty === 1 ? "trash-outline" : "remove"} size={18} color={colors.primary} />
+          {selectedSpOos ? (
+            <View style={[styles.bottomBarAddBtn, styles.disabledBtn]}>
+              <Text style={[styles.bottomBarAddText, styles.disabledText]}>Out of Stock</Text>
+            </View>
+          ) : selectedSpCartQty > 0 ? (
+            <View style={styles.variantQtyStepper}>
+              <TouchableOpacity
+                style={styles.variantQtyBtn}
+                onPress={() => effectiveUpdateQty(selectedSp.id, selectedSpCartQty - 1)}
+                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+              >
+                <Ionicons name={selectedSpCartQty === 1 ? "trash-outline" : "remove"} size={18} color={colors.primary} />
+              </TouchableOpacity>
+              <Text style={styles.variantQtyText}>{selectedSpCartQty}</Text>
+              <TouchableOpacity
+                style={styles.variantQtyBtn}
+                onPress={() => handleAddToCart(selectedSp)}
+                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+              >
+                <Ionicons name="add" size={18} color={colors.primary} />
+              </TouchableOpacity>
+            </View>
+          ) : (
+            <TouchableOpacity style={styles.bottomBarAddBtn} onPress={() => handleAddToCart(selectedSp)}>
+              <Text style={styles.bottomBarAddText}>Add to Cart</Text>
             </TouchableOpacity>
-            <Text style={styles.variantQtyText}>{selectedSpCartQty}</Text>
-            <TouchableOpacity
-              style={styles.variantQtyBtn}
-              onPress={() => handleAddToCart(selectedSp)}
-              hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-            >
-              <Ionicons name="add" size={18} color={colors.primary} />
-            </TouchableOpacity>
-          </View>
-        ) : (
-          <TouchableOpacity style={styles.bottomBarAddBtn} onPress={() => handleAddToCart(selectedSp)}>
-            <Text style={styles.bottomBarAddText}>Add to Cart</Text>
-          </TouchableOpacity>
-        )}
+          )}
+        </View>
+      )}
+      <VariantBottomSheet
+        visible={sheetVisible}
+        onClose={() => setSheetVisible(false)}
+        variants={sheetVariants}
+        onAddToCart={handleAddToCart}
+        onUpdateQuantity={effectiveUpdateQty}
+        cartQuantityMap={cartQuantityMap}
+        isMember={isMember}
+        mode={sheetMode}
+        onSelect={(sp) => {
+          setSheetVisible(false);
+          router.push({ pathname: "/subscription-builder", params: { storeProductId: sp.id, productId: id } });
+        }}
+      />
+      <ConfirmSheet
+        visible={replaceCartConfirm !== null}
+        title="Replace Cart?"
+        message="Your cart has items from another store. Adding this item will replace your current cart."
+        icon="cart-outline"
+        iconColor="#f59e0b"
+        confirmLabel="Replace"
+        onConfirm={() => {
+          replaceCartConfirm?.pending();
+          setReplaceCartConfirm(null);
+        }}
+        onCancel={() => setReplaceCartConfirm(null)}
+      />
+      <Modal visible={!!previewImage} transparent animationType="fade" onRequestClose={() => setPreviewImage(null)}>
+        <ZoomablePreview uri={previewImage} onClose={() => setPreviewImage(null)} />
+      </Modal>
       </View>
-    )}
-    <VariantBottomSheet
-      visible={sheetVisible}
-      onClose={() => setSheetVisible(false)}
-      variants={sheetVariants}
-      onAddToCart={handleAddToCart}
-      onUpdateQuantity={effectiveUpdateQty}
-      cartQuantityMap={cartQuantityMap}
-      isMember={isMember}
-      mode={sheetMode}
-      onSelect={(sp) => {
-        setSheetVisible(false);
-        router.push({ pathname: "/subscription-builder", params: { storeProductId: sp.id, productId: id } });
-      }}
-    />
-    <ConfirmSheet
-      visible={replaceCartConfirm !== null}
-      title="Replace Cart?"
-      message="Your cart has items from another store. Adding this item will replace your current cart."
-      icon="cart-outline"
-      iconColor="#f59e0b"
-      confirmLabel="Replace"
-      onConfirm={() => {
-        replaceCartConfirm?.pending();
-        setReplaceCartConfirm(null);
-      }}
-      onCancel={() => setReplaceCartConfirm(null)}
-    />
-    <Modal visible={!!previewImage} transparent animationType="fade" onRequestClose={() => setPreviewImage(null)}>
-      <ZoomablePreview uri={previewImage} onClose={() => setPreviewImage(null)} />
-    </Modal>
-    </View>
+    </ProductActionsProvider>
   );
 }
 
@@ -1150,7 +1058,6 @@ const styles = StyleSheet.create({
   },
   dangerText: { fontSize: fontSize.sm, color: "#92400e" },
   metaText: { fontSize: fontSize.md, color: colors.textSecondary, marginTop: spacing.xs },
-  relatedList: { gap: spacing.sm, paddingBottom: spacing.sm },
   ratingSummary: { flexDirection: "row", gap: spacing.md, marginBottom: spacing.md },
   ratingBig: { alignItems: "center", justifyContent: "center", minWidth: 80 },
   ratingBigText: { fontSize: 28, fontWeight: "800", color: colors.text, marginTop: 2 },

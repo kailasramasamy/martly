@@ -6,15 +6,17 @@ import { useCart } from "../lib/cart-context";
 import { useBasketMode } from "../lib/basket-mode-context";
 import { colors, spacing, fontSize } from "../constants/theme";
 
-export function FloatingCart() {
+// aboveTabBar: rendered inside a tab screen, where the tab bar already covers the bottom safe area
+export function FloatingCart({ aboveTabBar = false }: { aboveTabBar?: boolean }) {
   const { itemCount, totalAmount, storeName } = useCart();
   const { isBasketMode, itemCount: basketItemCount, exitBasketMode } = useBasketMode();
   const insets = useSafeAreaInsets();
+  const paddingBottom = aboveTabBar ? 10 : Math.max(12, insets.bottom + 8);
 
   // Basket mode bar takes priority
   if (isBasketMode) {
     return (
-      <View style={[styles.wrapper, { paddingBottom: Math.max(12, insets.bottom + 8) }]}>
+      <View style={[styles.wrapper, { paddingBottom }]}>
         <TouchableOpacity
           style={styles.bar}
           activeOpacity={0.9}
@@ -48,7 +50,7 @@ export function FloatingCart() {
   if (itemCount === 0) return null;
 
   return (
-    <View style={[styles.wrapper, { paddingBottom: Math.max(12, insets.bottom + 8) }]}>
+    <View style={[styles.wrapper, { paddingBottom }]}>
       <TouchableOpacity
         style={styles.bar}
         activeOpacity={0.9}
@@ -60,7 +62,7 @@ export function FloatingCart() {
           </View>
           <View style={styles.info}>
             <Text style={styles.storeName} numberOfLines={1}>{storeName}</Text>
-            <Text style={styles.total}>{"\u20B9"}{totalAmount.toFixed(0)}</Text>
+            <Text style={styles.total}>{"\u20B9"}{totalAmount.toLocaleString("en-IN", { maximumFractionDigits: 0 })}</Text>
           </View>
         </View>
         <View style={styles.right}>
@@ -77,7 +79,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.md,
     paddingBottom: 12,
     paddingTop: 6,
-    backgroundColor: colors.background,
   },
   bar: {
     flexDirection: "row",
@@ -99,7 +100,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   badge: {
-    backgroundColor: "#fff",
+    backgroundColor: colors.accent,
     borderRadius: 10,
     minWidth: 24,
     height: 24,
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
   badgeText: {
     fontSize: 12,
     fontWeight: "800",
-    color: colors.primary,
+    color: colors.accentText,
   },
   basketIcon: {
     width: 32,

@@ -11,21 +11,17 @@ interface BrandRecord {
 }
 
 export const BrandList = () => {
-  const { tableProps, searchFormProps } = useTable<BrandRecord, HttpError>({
+  const { tableProps, searchFormProps } = useTable<BrandRecord, HttpError, { q: string }>({
     resource: "brands",
     sorters: { initial: [{ field: "name", order: "asc" }] },
-    onSearch: (values: { q: string }) => [
+    onSearch: (values) => [
       { field: "q", operator: "eq", value: values.q },
     ],
   });
 
   return (
     <List>
-      <form
-        {...searchFormProps}
-        onSubmit={searchFormProps.onFinish}
-        style={{ marginBottom: 16 }}
-      >
+      <div style={{ marginBottom: 16 }}>
         <Input.Search
           placeholder="Search brands..."
           allowClear
@@ -36,7 +32,7 @@ export const BrandList = () => {
           }}
           style={{ maxWidth: 360 }}
         />
-      </form>
+      </div>
       <Table {...tableProps} rowKey="id">
         <Table.Column dataIndex="name" title="Name" />
         <Table.Column dataIndex="slug" title="Slug" />

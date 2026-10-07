@@ -2,6 +2,7 @@ import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import type { RecipeSummary } from "../lib/types";
+import { colors } from "../constants/theme";
 
 const DIFFICULTY_COLORS: Record<string, string> = {
   EASY: "#16a34a",
@@ -167,6 +168,6 @@ const styles = StyleSheet.create({
   price: {
     fontSize: 13,
     fontWeight: "700",
-    color: "#0d9488",
+    color: colors.primary,
   },
 });

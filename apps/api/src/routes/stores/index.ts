@@ -8,6 +8,7 @@ import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
 import { haversine } from "../../lib/geo.js";
 import { searchProducts } from "../../services/search.js";
+import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
 
 export async function storeRoutes(app: FastifyInstance) {
   // List stores (scoped to user's org; guests see all active stores)
@@ -39,9 +40,12 @@ export async function storeRoutes(app: FastifyInstance) {
       app.prisma.store.count({ where }),
     ]);
 
+    const discovery = await getStoreDiscoveryInfo(app.prisma, stores.map((s) => s.id));
+
     // subscriptionEnabled is true only when both org AND store have it enabled
     const data = stores.map(({ organization, ...store }) => ({
       ...store,
+      ...discovery.get(store.id),
       subscriptionEnabled: store.subscriptionEnabled && organization.subscriptionEnabled,
     }));
 
@@ -100,13 +104,28 @@ export async function storeRoutes(app: FastifyInstance) {
       include: { organization: { select: { subscriptionEnabled: true } } },
     });
 
-    const nearbyStores = stores
-      .map(({ organization, ...store }) => ({
+    const inRange = stores
+      .map((store) => ({ store, distance: haversine(userLat, userLng, store.latitude!, store.longitude!) }))
+      .filter((s) => s.distance <= maxRadius);
+    const [discovery, tiers] = await Promise.all([
+      getStoreDiscoveryInfo(app.prisma, inRange.map((s) => s.store.id)),
+      app.prisma.deliveryTier.findMany({
+        where: { storeId: { in: inRange.map((s) => s.store.id) }, isActive: true },
+        select: { storeId: true, minDistance: true, maxDistance: true },
+      }),
+    ]);
+    // Same rule as checkout's delivery lookup: within radius AND an active tier covers the distance
+    const hasTier = (storeId: string, distance: number) =>
+      tiers.some((t) => t.storeId === storeId && t.minDistance <= distance && t.maxDistance > distance);
+
+    const nearbyStores = inRange
+      .map(({ store: { organization, ...store }, distance }) => ({
         ...store,
+        ...discovery.get(store.id),
         subscriptionEnabled: store.subscriptionEnabled && organization.subscriptionEnabled,
-        distance: haversine(userLat, userLng, store.latitude!, store.longitude!),
+        distance,
+        deliversToYou: distance <= store.deliveryRadius && hasTier(store.id, distance),
       }))
-      .filter((s) => s.distance <= maxRadius)
       .sort((a, b) => a.distance - b.distance);
 
     return { success: true, data: nearbyStores };
@@ -257,20 +276,21 @@ export async function storeRoutes(app: FastifyInstance) {
       searchMeta = searchResult.meta;
     }
     if (categoryId) {
-      // Collect category + all descendant IDs for hierarchical filtering
-      const allCats = await app.prisma.category.findMany({ select: { id: true, parentId: true } });
-      const descendantIds = new Set<string>([categoryId]);
-      let changed = true;
-      while (changed) {
-        changed = false;
-        for (const cat of allCats) {
-          if (cat.parentId && descendantIds.has(cat.parentId) && !descendantIds.has(cat.id)) {
-            descendantIds.add(cat.id);
-            changed = true;
-          }
+      // Detect level: try department → category → subcategory
+      const dept = await app.prisma.department.findUnique({ where: { id: categoryId } });
+      if (dept) {
+        const cats = await app.prisma.category.findMany({ where: { departmentId: categoryId }, select: { id: true } });
+        const subs = await app.prisma.subcategory.findMany({ where: { categoryId: { in: cats.map((c) => c.id) } }, select: { id: true } });
+        where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: { in: subs.map((s) => s.id) } };
+      } else {
+        const cat = await app.prisma.category.findUnique({ where: { id: categoryId } });
+        if (cat) {
+          const subs = await app.prisma.subcategory.findMany({ where: { categoryId }, select: { id: true } });
+          where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: { in: subs.map((s) => s.id) } };
+        } else {
+          where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: categoryId };
         }
       }
-      where.product = { ...(where.product as Record<string, unknown> ?? {}), categoryId: { in: Array.from(descendantIds) } };
     }
     if (foodType) {
       where.product = { ...(where.product as Record<string, unknown> ?? {}), foodType };
@@ -287,7 +307,7 @@ export async function storeRoutes(app: FastifyInstance) {
         skip,
         take: Number(pageSize),
         include: {
-          product: { include: { category: true, variants: true } },
+          product: { include: { subcategory: true, variants: true } },
           variant: true,
         },
         orderBy,
@@ -350,25 +370,24 @@ export async function storeRoutes(app: FastifyInstance) {
       const target = targetSp.product;
       const targetPrice = Number(targetSp.price);
 
-      // Build category filter: same category, or parent category if too few results
-      let categoryIds: string[] = [];
-      if (target.categoryId) {
-        categoryIds = [target.categoryId];
-        // Also include sibling categories (same parent)
-        const category = await app.prisma.category.findUnique({
-          where: { id: target.categoryId },
-          select: { parentId: true },
+      // Build subcategory filter: same subcategory, or sibling subcategories (same parent category)
+      let subcategoryIds: string[] = [];
+      if (target.subcategoryId) {
+        subcategoryIds = [target.subcategoryId];
+        const subcat = await app.prisma.subcategory.findUnique({
+          where: { id: target.subcategoryId },
+          select: { categoryId: true },
         });
-        if (category?.parentId) {
-          const siblings = await app.prisma.category.findMany({
-            where: { parentId: category.parentId },
+        if (subcat?.categoryId) {
+          const siblings = await app.prisma.subcategory.findMany({
+            where: { categoryId: subcat.categoryId },
             select: { id: true },
           });
-          categoryIds = siblings.map((c) => c.id);
+          subcategoryIds = siblings.map((s) => s.id);
         }
       }
 
-      // Build substitute query: similar category, same foodType, price within ±50%
+      // Build substitute query: similar subcategory, same foodType, price within ±50%
       const priceLow = Math.round(targetPrice * 0.5 * 100) / 100;
       const priceHigh = Math.round(targetPrice * 1.5 * 100) / 100;
       const subWhere: Record<string, unknown> = {
@@ -379,7 +398,7 @@ export async function storeRoutes(app: FastifyInstance) {
         price: { gte: priceLow, lte: priceHigh },
         product: {
           isActive: true,
-          ...(categoryIds.length > 0 ? { categoryId: { in: categoryIds } } : {}),
+          ...(subcategoryIds.length > 0 ? { subcategoryId: { in: subcategoryIds } } : {}),
           ...(target.foodType ? { foodType: target.foodType } : {}),
         },
       };
@@ -387,7 +406,7 @@ export async function storeRoutes(app: FastifyInstance) {
       const substitutes = await app.prisma.storeProduct.findMany({
         where: subWhere,
         include: {
-          product: { include: { category: true, variants: true } },
+          product: { include: { subcategory: true, variants: true } },
           variant: true,
         },
         orderBy: [{ price: "asc" }],
@@ -516,7 +535,7 @@ export async function storeRoutes(app: FastifyInstance) {
           ...(excludeIds.length > 0 ? { id: { notIn: excludeIds } } : {}),
         },
         include: {
-          product: { include: { category: true, variants: true } },
+          product: { include: { subcategory: true, variants: true } },
           variant: true,
         },
       });

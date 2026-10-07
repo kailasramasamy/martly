@@ -10,6 +10,7 @@ import {
   Manrope_500Medium,
   Manrope_600SemiBold,
   Manrope_700Bold,
+  Manrope_800ExtraBold,
 } from "@expo-google-fonts/manrope";
 
 // Force light mode globally regardless of system setting
@@ -23,7 +24,7 @@ const LightTheme = {
     card: "#ffffff",
     text: "#0f172a",
     border: "#e2e8f0",
-    primary: "#0d9488",
+    primary: colors.primary,
   },
 };
 import * as ExpoSplashScreen from "expo-splash-screen";
@@ -40,6 +41,7 @@ import { LanguageProvider } from "../lib/language-context";
 import { addNotificationResponseListener, getLastNotificationResponse } from "../lib/notifications";
 import { resolveNotificationDeepLink } from "../lib/notification-helpers";
 import SplashScreen from "../components/SplashScreen";
+import { colors } from "../constants/theme";
 
 // Keep native splash visible until we're ready
 ExpoSplashScreen.preventAutoHideAsync();
@@ -186,6 +188,7 @@ export default function RootLayout() {
     "Manrope-Medium": Manrope_500Medium,
     "Manrope-SemiBold": Manrope_600SemiBold,
     "Manrope-Bold": Manrope_700Bold,
+    "Manrope-ExtraBold": Manrope_800ExtraBold,
   });
 
   if (!fontsLoaded) return null;

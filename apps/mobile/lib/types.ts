@@ -12,6 +12,13 @@ export interface Store {
   freeDeliveryThreshold?: number | null;
   baseDeliveryFee?: number | null;
   subscriptionEnabled?: boolean;
+  imageUrl?: string | null;
+  deliversToYou?: boolean;
+  ratingAvg?: number | null;
+  ratingCount?: number;
+  expressEtaMinutes?: number | null;
+  operatingStart?: string | null;
+  operatingEnd?: string | null;
 }
 
 export interface Variant {
@@ -63,7 +70,7 @@ export interface Product {
   regulatoryMarks: string[];
   certifications: string[];
   dangerWarnings: string | null;
-  category?: { id: string; name: string } | null;
+  subcategory?: { id: string; name: string; category?: { id: string; name: string; department?: { id: string; name: string } } } | null;
   variants?: Variant[];
   nutritionalInfo?: Record<string, string> | null;
   ingredients?: string | null;
@@ -98,15 +105,33 @@ export interface Brand {
   _count?: { products: number };
 }
 
-export interface CategoryTreeNode {
+export interface SubcategoryNode {
   id: string;
   name: string;
   slug: string;
-  parentId: string | null;
   sortOrder: number;
   imageUrl: string | null;
   translations?: Translations | null;
-  children: CategoryTreeNode[];
+}
+
+export interface CategoryNode {
+  id: string;
+  name: string;
+  slug: string;
+  sortOrder: number;
+  imageUrl: string | null;
+  translations?: Translations | null;
+  subcategories: SubcategoryNode[];
+}
+
+export interface DepartmentNode {
+  id: string;
+  name: string;
+  slug: string;
+  sortOrder: number;
+  imageUrl: string | null;
+  translations?: Translations | null;
+  categories: CategoryNode[];
 }
 
 export interface CollectionSection {
@@ -185,7 +210,7 @@ export interface RecipeDetail {
 
 export interface HomeFeed {
   collections: CollectionSection[];
-  categories: CategoryTreeNode[];
+  departments: DepartmentNode[];
   timeCategories: TimeCategorySection[];
   timePeriod: string;
   deals: StoreProduct[];

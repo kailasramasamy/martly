@@ -107,11 +107,9 @@ const PACK_TYPES = [
   "Tetra Pack", "Stand-up Pouch", "Squeeze Bottle", "Spray Bottle", "Tub",
 ];
 
-interface CategoryTreeNode {
-  id: string;
-  name: string;
-  children: CategoryTreeNode[];
-}
+interface SubcategoryNode { id: string; name: string; }
+interface CategoryNode { id: string; name: string; subcategories: SubcategoryNode[]; }
+interface DepartmentNode { id: string; name: string; categories: CategoryNode[]; }
 
 interface CascaderOption {
   value: string;
@@ -119,21 +117,30 @@ interface CascaderOption {
   children?: CascaderOption[];
 }
 
-function buildCascaderOptions(nodes: CategoryTreeNode[]): CascaderOption[] {
-  return nodes.map((n) => ({
-    value: n.id,
-    label: n.name,
-    children: n.children?.length ? buildCascaderOptions(n.children) : undefined,
+function buildCascaderOptions(departments: DepartmentNode[]): CascaderOption[] {
+  return departments.map((d) => ({
+    value: d.id,
+    label: d.name,
+    children: d.categories.map((c) => ({
+      value: c.id,
+      label: c.name,
+      children: c.subcategories.map((s) => ({
+        value: s.id,
+        label: s.name,
+      })),
+    })),
   }));
 }
 
-function findCategoryPath(nodes: CategoryTreeNode[], targetId: string): string[] | null {
-  for (const n of nodes) {
-    if (n.id === targetId) return [n.id];
-    if (n.children?.length) {
-      const sub = findCategoryPath(n.children, targetId);
-      if (sub) return [n.id, ...sub];
+function findCategoryPath(departments: DepartmentNode[], targetId: string): string[] | null {
+  for (const d of departments) {
+    for (const c of d.categories) {
+      for (const s of c.subcategories) {
+        if (s.id === targetId) return [d.id, c.id, s.id];
+      }
+      if (c.id === targetId) return [d.id, c.id];
     }
+    if (d.id === targetId) return [d.id];
   }
   return null;
 }
@@ -175,31 +182,31 @@ export const ProductEdit = () => {
         discountEnd: v.discountEnd ? (v.discountEnd as dayjs.Dayjs).toISOString() : null,
       }));
       const path = values.categoryPath as string[] | undefined;
-      const categoryId = path?.length ? path[path.length - 1] : null;
+      const subcategoryId = path?.length ? path[path.length - 1] : null;
       const { categoryPath: _, ...rest } = values;
-      return originalOnFinish?.({ ...rest, categoryId, variants });
+      return originalOnFinish?.({ ...rest, subcategoryId, variants });
     },
   };
 
   const [cascaderOptions, setCascaderOptions] = useState<CascaderOption[]>([]);
-  const [categoryTree, setCategoryTree] = useState<CategoryTreeNode[]>([]);
+  const [categoryTree, setCategoryTree] = useState<DepartmentNode[]>([]);
 
   useEffect(() => {
     axiosInstance.get("/categories/tree").then((res) => {
-      const tree = res.data.data as CategoryTreeNode[];
+      const tree = res.data.data as DepartmentNode[];
       setCategoryTree(tree);
       setCascaderOptions(buildCascaderOptions(tree));
     }).catch(() => {});
   }, []);
 
-  // Once category tree is loaded and form has initialValues, resolve categoryId → path
+  // Once category tree is loaded and form has initialValues, resolve subcategoryId → path
   useEffect(() => {
-    if (!categoryTree.length || !formProps.initialValues?.categoryId) return;
-    const path = findCategoryPath(categoryTree, formProps.initialValues.categoryId as string);
+    if (!categoryTree.length || !formProps.initialValues?.subcategoryId) return;
+    const path = findCategoryPath(categoryTree, formProps.initialValues.subcategoryId as string);
     if (path) {
       formProps.form?.setFieldValue("categoryPath", path);
     }
-  }, [categoryTree, formProps.initialValues?.categoryId]);
+  }, [categoryTree, formProps.initialValues?.subcategoryId]);
 
   const { selectProps: brandSelectProps } = useSelect({
     resource: "brands",

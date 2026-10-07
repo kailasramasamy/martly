@@ -3,19 +3,21 @@ import { PrismaClient } from "../generated/prisma/index.js";
 const prisma = new PrismaClient();
 
 async function main() {
-  const org = await prisma.organization.findFirst({ where: { slug: "innovative-foods" } });
+  const org = await prisma.organization.findFirst();
   if (!org) {
-    console.error("Organization 'innovative-foods' not found. Run db:seed first.");
+    console.error("No organization found. Run db:seed first.");
     process.exit(1);
   }
+  console.log(`Organization: ${org.name} (${org.id})`);
 
-  const customer = await prisma.user.findUnique({ where: { email: "customer@martly.dev" } });
-  if (!customer) {
-    console.error("Customer user not found. Run db:seed first.");
+  const store = await prisma.store.findFirst({ select: { id: true, name: true } });
+  if (!store) {
+    console.error("No store found. Run db:seed first.");
     process.exit(1);
   }
+  console.log(`Store: ${store.name} (${store.id})\n`);
 
-  const storeId = "375d5737-069b-42f0-9791-1cc8390c0993"; // Bigmart
+  const storeId = store.id;
 
   // ── Create 3 membership plans ──────────────────────
   console.log("Creating membership plans...");
@@ -68,50 +70,68 @@ async function main() {
   });
   console.log(`  Created: ${annualPlan.name} - ₹449/year`);
 
-  // ── Set member prices on popular store products ────
-  console.log("\nSetting member prices on popular products...");
+  // ── Set member prices on ~50 popular store products ────
+  console.log("Setting member prices on popular products...");
 
-  const storeProducts = await prisma.storeProduct.findMany({
-    where: { storeId, isActive: true },
-    include: { product: { select: { name: true } } },
-    take: 10,
-    orderBy: { isFeatured: "desc" },
+  // Reset all member prices first
+  await prisma.storeProduct.updateMany({
+    where: { storeId, memberPrice: { not: null } },
+    data: { memberPrice: null },
   });
 
+  const storeProducts = await prisma.storeProduct.findMany({
+    where: { storeId, isActive: true, stock: { gt: 0 } },
+    include: { product: { select: { name: true } } },
+    take: 50,
+    orderBy: [{ isFeatured: "desc" }, { price: "desc" }],
+  });
+
+  let memberPriceCount = 0;
   for (const sp of storeProducts) {
     const price = Number(sp.price);
-    const memberPrice = Math.round(price * 0.8); // 20% off for members
+    // 5–20% off for members depending on price range
+    const discountPct = price > 500 ? 0.05 : price > 200 ? 0.10 : price > 50 ? 0.15 : 0.20;
+    const memberPrice = Math.round(price * (1 - discountPct));
     await prisma.storeProduct.update({
       where: { id: sp.id },
       data: { memberPrice },
     });
-    console.log(`  ${sp.product.name}: ₹${price} → ₹${memberPrice} (member)`);
+    memberPriceCount++;
+  }
+  console.log(`  ${memberPriceCount} products with member prices\n`);
+
+  // ── Create active membership for test customer (if exists) ─────
+  const customer = await prisma.user.findUnique({ where: { email: "customer@martly.dev" } });
+  if (customer) {
+    console.log("Creating active membership for customer@martly.dev...");
+    await prisma.userMembership.deleteMany({ where: { userId: customer.id, organizationId: org.id } });
+
+    const now = new Date();
+    const endDate = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
+
+    await prisma.userMembership.create({
+      data: {
+        userId: customer.id,
+        planId: monthlyPlan.id,
+        organizationId: org.id,
+        status: "ACTIVE",
+        startDate: now,
+        endDate,
+        pricePaid: 49,
+      },
+    });
+    console.log(`  Active monthly membership until ${endDate.toLocaleDateString()}\n`);
+  } else {
+    console.log("(Skipped customer membership — customer@martly.dev not found)\n");
   }
 
-  // ── Create active membership for test customer ─────
-  console.log("\nCreating active membership for customer@martly.dev...");
-
-  await prisma.userMembership.deleteMany({ where: { userId: customer.id, organizationId: org.id } });
-
-  const now = new Date();
-  const endDate = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000); // 30 days
-
-  const membership = await prisma.userMembership.create({
-    data: {
-      userId: customer.id,
-      planId: monthlyPlan.id,
-      organizationId: org.id,
-      status: "ACTIVE",
-      startDate: now,
-      endDate,
-      pricePaid: 49,
-    },
-  });
-
-  console.log(`  Created membership: ${membership.id}`);
-  console.log(`  Valid: ${now.toLocaleDateString()} → ${endDate.toLocaleDateString()}`);
-
-  console.log("\n✓ Membership seed complete!");
+  // ── Verification ────
+  const planCount = await prisma.membershipPlan.count({ where: { organizationId: org.id, isActive: true } });
+  const memberPriced = await prisma.storeProduct.count({ where: { storeId, memberPrice: { not: null } } });
+  console.log("--- Verification ---");
+  console.log(`  Plans: ${planCount}`);
+  console.log(`  Products with member prices: ${memberPriced}`);
+  console.log("\nDone!");
 }
 
 main()

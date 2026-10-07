@@ -1,17 +1,11 @@
-import { useEffect, useState, useMemo, useCallback } from "react";
-import { View, Text, TextInput, FlatList, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
+import { useEffect, useState, useMemo } from "react";
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { api } from "../../lib/api";
-import { useCart } from "../../lib/cart-context";
-import { useWishlist } from "../../lib/wishlist-context";
-import { useMembership, getBestPrice } from "../../lib/membership-context";
-import { useBasketMode } from "../../lib/basket-mode-context";
-import { useToast } from "../../lib/toast-context";
+import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
-import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../../components/ProductGridCard";
-import { VariantBottomSheet } from "../../components/VariantBottomSheet";
+import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
-import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { ProductCardSkeleton } from "../../components/SkeletonLoader";
 import type { Store, StoreProduct } from "../../lib/types";
 
@@ -20,76 +14,29 @@ export default function StoreDetailScreen() {
   const [store, setStore] = useState<Store | null>(null);
   const [products, setProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
-  const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
-  const { isWishlisted, toggle: toggleWishlist } = useWishlist();
-  const { isMember } = useMembership();
-  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
-  const toast = useToast();
   const [filterText, setFilterText] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const [sheetVisible, setSheetVisible] = useState(false);
-  const [sheetVariants, setSheetVariants] = useState<StoreProduct[]>([]);
-  const [replaceCartConfirm, setReplaceCartConfirm] = useState<{ pending: () => void } | null>(null);
 
   const categories = useMemo(() => {
     const catMap = new Map<string, string>();
     for (const p of products) {
-      if (p.product.category) {
-        catMap.set(p.product.category.id, p.product.category.name);
+      if (p.product.subcategory) {
+        catMap.set(p.product.subcategory.id, p.product.subcategory.name);
       }
     }
     return Array.from(catMap.entries()).map(([cid, name]) => ({ id: cid, name }));
   }, [products]);
 
-  const rawCartQtyMap = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const item of cartItems) {
-      map.set(item.storeProductId, item.quantity);
-    }
-    return map;
-  }, [cartItems]);
-
-  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
-
-  // Group products by product.id — pick cheapest as primary, store all variants
-  const { groupedProducts, variantsByProductId } = useMemo(() => {
+  const filteredProducts = useMemo(() => {
     let result = products;
     if (activeCategory) {
-      result = result.filter((p) => p.product.category?.id === activeCategory);
+      result = result.filter((p) => p.product.subcategory?.id === activeCategory);
     }
     if (filterText) {
       result = result.filter((p) => p.product.name.toLowerCase().includes(filterText.toLowerCase()));
     }
-
-    const groups = new Map<string, StoreProduct[]>();
-    for (const sp of result) {
-      const pid = sp.product.id;
-      if (!groups.has(pid)) groups.set(pid, []);
-      groups.get(pid)!.push(sp);
-    }
-
-    const primary: StoreProduct[] = [];
-    const variantsMap = new Map<string, StoreProduct[]>();
-    for (const [pid, variants] of groups) {
-      const sorted = [...variants].sort((a, b) => {
-        const priceA = a.pricing?.discountActive ? a.pricing.effectivePrice : Number(a.price);
-        const priceB = b.pricing?.discountActive ? b.pricing.effectivePrice : Number(b.price);
-        return priceA - priceB;
-      });
-      primary.push(sorted[0]);
-      variantsMap.set(pid, sorted);
-    }
-
-    return { groupedProducts: primary, variantsByProductId: variantsMap };
+    return result;
   }, [products, filterText, activeCategory]);
-
-  const handleShowVariants = useCallback((productId: string) => {
-    const variants = variantsByProductId.get(productId);
-    if (variants) {
-      setSheetVariants(variants);
-      setSheetVisible(true);
-    }
-  }, [variantsByProductId]);
 
   useEffect(() => {
     if (!id) return;
@@ -105,46 +52,6 @@ export default function StoreDetailScreen() {
       .finally(() => setLoading(false));
   }, [id]);
 
-  const handleAddToCart = (sp: StoreProduct) => {
-    if (!store || !id) return;
-
-    if (isBasketMode) {
-      addBasketItem(sp.id);
-      toast.show("Added to tomorrow's basket", "success");
-      return;
-    }
-
-    const item = {
-      storeProductId: sp.id,
-      productId: sp.product.id,
-      productName: sp.product.name,
-      variantId: sp.variant.id,
-      variantName: sp.variant.name,
-      price: getBestPrice(sp, isMember),
-      imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
-    };
-
-    if (cartStoreId && cartStoreId !== id) {
-      setReplaceCartConfirm({
-        pending: () => addItem(id, store.name, item),
-      });
-      return;
-    }
-
-    addItem(id, store.name, item);
-  };
-
-  const effectiveUpdateQty = useCallback(
-    (spId: string, qty: number) => {
-      if (isBasketMode) {
-        updateBasketQuantity(spId, qty);
-        return;
-      }
-      updateQuantity(spId, qty);
-    },
-    [isBasketMode, updateBasketQuantity, updateQuantity],
-  );
-
   if (loading) {
     return (
       <View style={styles.container}>
@@ -159,92 +66,55 @@ export default function StoreDetailScreen() {
   }
 
   return (
-    <View style={styles.container}>
-      {store && (
-        <View style={styles.header}>
-          <Text style={styles.storeName}>{store.name}</Text>
-          <Text style={styles.storeAddress}>{store.address}</Text>
-        </View>
-      )}
+    <ProductActionsProvider store={store && id ? { id, name: store.name } : null}>
+      <View style={styles.container}>
+        {store && (
+          <View style={styles.header}>
+            <Text style={styles.storeName}>{store.name}</Text>
+            <Text style={styles.storeAddress}>{store.address}</Text>
+          </View>
+        )}
 
-      {categories.length > 0 && (
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.pillBar} contentContainerStyle={styles.pillBarContent}>
-          <TouchableOpacity
-            style={[styles.pill, !activeCategory && styles.pillActive]}
-            onPress={() => setActiveCategory(null)}
-          >
-            <Text style={[styles.pillText, !activeCategory && styles.pillTextActive]}>All</Text>
-          </TouchableOpacity>
-          {categories.map((cat) => (
+        {categories.length > 0 && (
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.pillBar} contentContainerStyle={styles.pillBarContent}>
             <TouchableOpacity
-              key={cat.id}
-              style={[styles.pill, activeCategory === cat.id && styles.pillActive]}
-              onPress={() => setActiveCategory(activeCategory === cat.id ? null : cat.id)}
+              style={[styles.pill, !activeCategory && styles.pillActive]}
+              onPress={() => setActiveCategory(null)}
             >
-              <Text style={[styles.pillText, activeCategory === cat.id && styles.pillTextActive]}>{cat.name}</Text>
+              <Text style={[styles.pillText, !activeCategory && styles.pillTextActive]}>All</Text>
             </TouchableOpacity>
-          ))}
-        </ScrollView>
-      )}
+            {categories.map((cat) => (
+              <TouchableOpacity
+                key={cat.id}
+                style={[styles.pill, activeCategory === cat.id && styles.pillActive]}
+                onPress={() => setActiveCategory(activeCategory === cat.id ? null : cat.id)}
+              >
+                <Text style={[styles.pillText, activeCategory === cat.id && styles.pillTextActive]}>{cat.name}</Text>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+        )}
 
-      <Text style={styles.sectionTitle}>Products</Text>
-      <TextInput
-        style={styles.filterInput}
-        placeholder="Filter products..."
-        value={filterText}
-        onChangeText={setFilterText}
-        autoCapitalize="none"
-        autoCorrect={false}
-      />
-      <FlatList
-        data={groupedProducts}
-        keyExtractor={(item) => item.id}
-        numColumns={2}
-        contentContainerStyle={styles.grid}
-        columnWrapperStyle={styles.gridRow}
-        renderItem={({ item }) => {
-          const variants = variantsByProductId.get(item.product.id);
-          return (
-            <ProductGridCard
-              item={item}
-              onAddToCart={handleAddToCart}
-              onUpdateQuantity={effectiveUpdateQty}
-              quantity={cartQuantityMap.get(item.id) ?? 0}
-              storeId={id}
-              variantCount={variants?.length ?? 1}
-              onShowVariants={() => handleShowVariants(item.product.id)}
-              isWishlisted={isWishlisted(item.product.id)}
-              onToggleWishlist={toggleWishlist}
-              isMember={isMember}
-            />
-          );
-        }}
-        ListEmptyComponent={<Text style={styles.empty}>No products available</Text>}
-      />
-      <FloatingCart />
-      <VariantBottomSheet
-        visible={sheetVisible}
-        onClose={() => setSheetVisible(false)}
-        variants={sheetVariants}
-        onAddToCart={handleAddToCart}
-        onUpdateQuantity={effectiveUpdateQty}
-        cartQuantityMap={cartQuantityMap}
-        isMember={isMember}
-      />
-      <ConfirmSheet
-        visible={replaceCartConfirm !== null}
-        title="Replace Cart?"
-        message="Your cart has items from another store. Adding this item will replace your current cart."
-        icon="cart-outline"
-        iconColor="#f59e0b"
-        confirmLabel="Replace"
-        onConfirm={() => {
-          replaceCartConfirm?.pending();
-          setReplaceCartConfirm(null);
-        }}
-        onCancel={() => setReplaceCartConfirm(null)}
-      />
-    </View>
+        <Text style={styles.sectionTitle}>Products</Text>
+        <TextInput
+          style={styles.filterInput}
+          placeholder="Filter products..."
+          value={filterText}
+          onChangeText={setFilterText}
+          autoCapitalize="none"
+          autoCorrect={false}
+        />
+        <ProductList
+          products={filteredProducts}
+          layout="grid"
+          keyboardDismissMode="on-drag"
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={styles.grid}
+          ListEmptyComponent={<Text style={styles.empty}>No products available</Text>}
+        />
+        <FloatingCart />
+      </View>
+    </ProductActionsProvider>
   );
 }
 
@@ -269,7 +139,6 @@ const styles = StyleSheet.create({
     borderWidth: 1, borderColor: colors.border, borderRadius: 8,
     padding: spacing.sm, margin: spacing.md, fontSize: fontSize.md, backgroundColor: colors.surface,
   },
-  grid: { paddingHorizontal: GRID_H_PADDING, paddingBottom: spacing.md },
-  gridRow: { justifyContent: "space-between" },
+  grid: { paddingBottom: spacing.md },
   empty: { textAlign: "center", color: colors.textSecondary, marginTop: spacing.xl },
 });

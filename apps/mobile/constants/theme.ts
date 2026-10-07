@@ -1,7 +1,9 @@
 export const colors = {
-  primary: "#16a34a",
-  primaryLight: "#22c55e",
-  primaryDark: "#15803d",
+  primary: "#0f766e",
+  primaryLight: "#14b8a6",
+  primaryDark: "#115e59",
+  accent: "#fbbf24",
+  accentText: "#451a03",
   secondary: "#0ea5e9",
   background: "#ffffff",
   surface: "#f8fafc",
@@ -34,4 +36,5 @@ export const fonts = {
   medium: "Manrope-Medium",
   semibold: "Manrope-SemiBold",
   bold: "Manrope-Bold",
+  extrabold: "Manrope-ExtraBold",
 } as const;

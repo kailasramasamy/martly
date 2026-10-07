@@ -32,5 +32,5 @@ globs: apps/mobile/**
 
 ## Design Tokens
 
-- Primary: `#0d9488`, Background: `#f8fafc`, Surface: `#ffffff`, Text: `#0f172a`, TextSecondary: `#64748b`, Border: `#e2e8f0`
+- Primary: `#0f766e` (teal), Accent: `#fbbf24` (amber, offers/discounts — text on it uses `colors.accentText`), Success stays green `#22c55e`, Background: `#f8fafc`, Surface: `#ffffff`, Text: `#0f172a`, TextSecondary: `#64748b`, Border: `#e2e8f0`
 - Spacing: 4, 8, 12, 16, 20, 24, 32 | Radius: 6, 8, 12, 20 | Font: 11, 13, 15, 17, 20, 24

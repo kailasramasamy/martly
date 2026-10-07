@@ -15,9 +15,13 @@ const s3 = new S3Client({
   },
 });
 
-const BUCKET = process.env.S3_BUCKET ?? "media-image-upload";
-const KEY_PREFIX = process.env.S3_KEY_PREFIX ?? "martly";
-const BASE_URL = process.env.MEDIA_PUBLIC_BASE_URL ?? `https://${BUCKET}.s3.${process.env.AWS_REGION ?? "ap-south-1"}.amazonaws.com/${KEY_PREFIX}`;
+const BUCKET = process.env.S3_BUCKET ?? "martly-media";
+// Empty prefix means objects live at the bucket root; strip stray slashes so
+// the key never starts with "/" (which S3 treats as an unnamed folder).
+const KEY_PREFIX = (process.env.S3_KEY_PREFIX ?? "").replace(/^\/+|\/+$/g, "");
+const BASE_URL =
+  process.env.MEDIA_PUBLIC_BASE_URL ??
+  `https://${BUCKET}.s3.${process.env.AWS_REGION ?? "ap-south-1"}.amazonaws.com${KEY_PREFIX ? `/${KEY_PREFIX}` : ""}`;
 
 export async function uploadRoutes(app: FastifyInstance) {
   await app.register(multipart, { limits: { fileSize: 5 * 1024 * 1024 } });
@@ -31,7 +35,7 @@ export async function uploadRoutes(app: FastifyInstance) {
       const buffer = await file.toBuffer();
       const ext = path.extname(file.filename) || ".jpg";
       const filename = `${randomUUID()}${ext}`;
-      const key = `${KEY_PREFIX}/${filename}`;
+      const key = KEY_PREFIX ? `${KEY_PREFIX}/${filename}` : filename;
 
       await s3.send(
         new PutObjectCommand({

@@ -3,26 +3,29 @@ import { List } from "@refinedev/antd";
 import { Tree, Spin, Card } from "antd";
 import type { DataNode } from "antd/es/tree";
 import { ApartmentOutlined } from "@ant-design/icons";
-
 import { sectionTitle } from "../../theme";
 
-interface CategoryTreeNode {
-  id: string;
-  name: string;
-  slug: string;
-  children: CategoryTreeNode[];
-}
+interface SubcategoryNode { id: string; name: string; slug: string; }
+interface CategoryNode { id: string; name: string; slug: string; subcategories: SubcategoryNode[]; }
+interface DepartmentNode { id: string; name: string; slug: string; categories: CategoryNode[]; }
 
-function toTreeData(nodes: CategoryTreeNode[]): DataNode[] {
-  return nodes.map((n) => ({
-    key: n.id,
-    title: `${n.name} (${n.slug})`,
-    children: n.children.length > 0 ? toTreeData(n.children) : undefined,
+function toTreeData(departments: DepartmentNode[]): DataNode[] {
+  return departments.map((d) => ({
+    key: d.id,
+    title: `${d.name} (${d.slug})`,
+    children: d.categories.map((c) => ({
+      key: c.id,
+      title: `${c.name} (${c.slug})`,
+      children: c.subcategories.map((s) => ({
+        key: s.id,
+        title: `${s.name} (${s.slug})`,
+      })),
+    })),
   }));
 }
 
 export const CategoryTree = () => {
-  const { data, isLoading } = useCustom<{ data: CategoryTreeNode[] }>({
+  const { data, isLoading } = useCustom<{ data: DepartmentNode[] }>({
     url: "/categories/tree",
     method: "get",
   });
@@ -31,7 +34,7 @@ export const CategoryTree = () => {
 
   return (
     <List title="Category Tree" canCreate={false}>
-      <Card title={sectionTitle(<ApartmentOutlined />, "Hierarchy")} size="small">
+      <Card title={sectionTitle(<ApartmentOutlined />, "3-Tier Hierarchy")} size="small">
         {isLoading ? (
           <Spin />
         ) : treeNodes.length === 0 ? (

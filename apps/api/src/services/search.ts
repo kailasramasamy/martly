@@ -163,11 +163,11 @@ async function semanticExpand(prisma: PrismaClient, query: string): Promise<stri
 
   try {
     // Fetch available categories to ground the LLM response
-    const categories = await prisma.category.findMany({
+    const subcategories = await prisma.subcategory.findMany({
       select: { name: true },
-      take: 100,
+      take: 200,
     });
-    const categoryNames = categories.map((c) => c.name).join(", ");
+    const categoryNames = subcategories.map((c) => c.name).join(", ");
 
     const anthropic = new Anthropic({ apiKey });
     const response = await anthropic.messages.create({

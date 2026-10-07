@@ -280,6 +280,7 @@ model Store {
   slug           String      @unique
   address        String
   phone          String?
+  imageUrl       String?     @map("image_url")
   status         StoreStatus @default(PENDING)
   latitude       Float?      @map("latitude")
   longitude      Float?      @map("longitude")
@@ -392,23 +393,58 @@ model UserStore {
   @@map("user_stores")
 }
 
-model Category {
+model Department {
   id           String   @id @default(uuid())
   name         String
   slug         String   @unique
-  parentId     String?  @map("parent_id")
   sortOrder    Int      @default(0) @map("sort_order")
   imageUrl     String?  @map("image_url")
   translations Json?    @map("translations")
   createdAt    DateTime @default(now()) @map("created_at")
   updatedAt    DateTime @updatedAt @map("updated_at")
 
-  parent   Category?  @relation("CategoryTree", fields: [parentId], references: [id])
-  children Category[] @relation("CategoryTree")
+  categories Category[]
+  banners    Banner[]
+
+  @@map("departments")
+}
+
+model Category {
+  id           String   @id @default(uuid())
+  name         String
+  slug         String   @unique
+  departmentId String   @map("department_id")
+  sortOrder    Int      @default(0) @map("sort_order")
+  imageUrl     String?  @map("image_url")
+  translations Json?    @map("translations")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  department    Department    @relation(fields: [departmentId], references: [id])
+  subcategories Subcategory[]
+  banners       Banner[]
+
+  @@index([departmentId])
+  @@map("categories")
+}
+
+model Subcategory {
+  id           String   @id @default(uuid())
+  name         String
+  slug         String   @unique
+  categoryId   String   @map("category_id")
+  sortOrder    Int      @default(0) @map("sort_order")
+  imageUrl     String?  @map("image_url")
+  translations Json?    @map("translations")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  category Category  @relation(fields: [categoryId], references: [id])
   products Product[]
   banners  Banner[]
 
-  @@map("categories")
+  @@index([categoryId])
+  @@map("subcategories")
 }
 
 model Brand {
@@ -429,7 +465,7 @@ model Product {
   name                String
   description         String?
   imageUrl            String?   @map("image_url")
-  categoryId          String?   @map("category_id")
+  subcategoryId       String?   @map("subcategory_id")
   brandId             String?   @map("brand_id")
   isActive            Boolean   @default(true) @map("is_active")
   tags                String[]  @default([])
@@ -461,7 +497,7 @@ model Product {
   searchText          String    @default("") @map("search_text")
 
   organization  Organization?    @relation(fields: [organizationId], references: [id])
-  category      Category?        @relation(fields: [categoryId], references: [id])
+  subcategory   Subcategory?     @relation(fields: [subcategoryId], references: [id])
   brand         Brand?           @relation(fields: [brandId], references: [id])
   variants        ProductVariant[]
   storeProducts   StoreProduct[]
@@ -994,18 +1030,21 @@ model Banner {
   endsAt         DateTime?        @map("ends_at")
   storeId        String?          @map("store_id")
   organizationId String?          @map("organization_id")
+  departmentId   String?          @map("department_id")
   categoryId     String?          @map("category_id")
+  subcategoryId  String?          @map("subcategory_id")
   createdAt      DateTime         @default(now()) @map("created_at")
   updatedAt      DateTime         @updatedAt @map("updated_at")
 
   store        Store?        @relation(fields: [storeId], references: [id])
   organization Organization? @relation(fields: [organizationId], references: [id])
+  department   Department?   @relation(fields: [departmentId], references: [id])
   category     Category?     @relation(fields: [categoryId], references: [id])
+  subcategory  Subcategory?  @relation(fields: [subcategoryId], references: [id])
 
   @@index([placement, isActive])
   @@index([organizationId])
   @@index([storeId])
-  @@index([categoryId])
   @@map("banners")
 }
 

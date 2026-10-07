@@ -42,7 +42,7 @@ Martly has 38 API routes, 50+ admin pages, and 25+ mobile screens covering:
 
 ## Tier 3: Differentiators (fewer competitors have, high impact)
 
-- [ ] **Shoppable recipes** — Browse recipes, one-tap "Add all ingredients to cart". Instacart's killer feature. `Medium`
+- [x] **Shoppable recipes** — Browse recipes, one-tap "Add all ingredients to cart". Instacart's killer feature. `Medium`
 - [ ] **Substitution preferences** — Per-item rules: "replace with X" or "refund if unavailable". Critical for stock-out handling. `Medium`
 - [x] **Context-aware recommendations** — Time-of-day suggestions (breakfast in AM, snacks in evening). Weather-based. `Medium`
 - [ ] **Gamification** — Scratch cards on order completion, streak rewards, achievement badges. `Medium`
@@ -54,7 +54,7 @@ Martly has 38 API routes, 50+ admin pages, and 25+ mobile screens covering:
 - [ ] **Barcode scanner** — Scan physical product -> add to cart
 - [ ] **Gift cards** — Purchasable store credits to gift others
 - [ ] **Price drop alerts** — Notify when a wishlisted item goes on sale
-- [ ] **Multi-language support** — Hindi + regional language UI (BigBasket supports 7 languages)
+- [x] **Multi-language support** — Hindi + regional language UI (BigBasket supports 7 languages)
 
 ---
 

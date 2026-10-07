@@ -43,9 +43,9 @@ const tools: Anthropic.Tool[] = [
           type: "string",
           description: "Search term (product name, brand, or category). Examples: 'milk', 'Maggi noodles', 'rice 5kg'",
         },
-        categoryId: {
+        subcategoryId: {
           type: "string",
-          description: "Optional category ID to filter results. Get category IDs from get_categories tool first.",
+          description: "Optional subcategory ID to filter results. Get department/category/subcategory IDs from get_categories tool first.",
         },
       },
       required: ["query"],
@@ -53,7 +53,7 @@ const tools: Anthropic.Tool[] = [
   },
   {
     name: "get_categories",
-    description: "Get all top-level product categories available in the store. Use this when customer asks to browse categories or wants to see what's available.",
+    description: "Get all departments (top-level categories) available in the store. Use this when customer asks to browse categories or wants to see what's available.",
     input_schema: {
       type: "object" as const,
       properties: {},
@@ -89,7 +89,7 @@ const tools: Anthropic.Tool[] = [
 async function executeSearchProducts(
   prisma: FastifyInstance["prisma"],
   storeId: string,
-  input: { query: string; categoryId?: string },
+  input: { query: string; subcategoryId?: string },
 ) {
   const where: Record<string, unknown> = {
     storeId,
@@ -101,28 +101,15 @@ async function executeSearchProducts(
     },
   };
 
-  if (input.categoryId) {
-    // Include descendant categories
-    const allCats = await prisma.category.findMany({ select: { id: true, parentId: true } });
-    const descendantIds = new Set<string>([input.categoryId]);
-    let changed = true;
-    while (changed) {
-      changed = false;
-      for (const cat of allCats) {
-        if (cat.parentId && descendantIds.has(cat.parentId) && !descendantIds.has(cat.id)) {
-          descendantIds.add(cat.id);
-          changed = true;
-        }
-      }
-    }
-    (where.product as Record<string, unknown>).categoryId = { in: Array.from(descendantIds) };
+  if (input.subcategoryId) {
+    (where.product as Record<string, unknown>).subcategoryId = input.subcategoryId;
   }
 
   const storeProducts = await prisma.storeProduct.findMany({
     where,
     take: 10,
     include: {
-      product: { include: { category: true, brand: true } },
+      product: { include: { subcategory: true, brand: true } },
       variant: true,
     },
     orderBy: { product: { name: "asc" } },
@@ -140,7 +127,7 @@ async function executeSearchProducts(
       productId: sp.productId,
       name: sp.product.name,
       brand: sp.product.brand?.name ?? null,
-      category: sp.product.category?.name ?? null,
+      category: sp.product.subcategory?.name ?? null,
       variant: variant.name,
       unitType: variant.unitType,
       unitValue: (variant as Record<string, unknown>).unitValue as string,
@@ -153,12 +140,11 @@ async function executeSearchProducts(
 }
 
 async function executeGetCategories(prisma: FastifyInstance["prisma"]) {
-  const categories = await prisma.category.findMany({
-    where: { parentId: null },
+  const departments = await prisma.department.findMany({
     orderBy: { sortOrder: "asc" },
     select: { id: true, name: true },
   });
-  return categories;
+  return departments;
 }
 
 async function executeGetProductDetails(
@@ -173,7 +159,7 @@ async function executeGetProductDetails(
       isActive: true,
     },
     include: {
-      product: { include: { category: true, brand: true } },
+      product: { include: { subcategory: true, brand: true } },
       variant: true,
     },
   });
@@ -204,7 +190,7 @@ async function executeGetProductDetails(
     name: product.name,
     description: product.description,
     brand: product.brand?.name ?? null,
-    category: product.category?.name ?? null,
+    category: product.subcategory?.name ?? null,
     imageUrl: product.imageUrl,
     variants,
   };
@@ -230,7 +216,7 @@ async function executeGetDeals(
     },
     take: 10,
     include: {
-      product: { include: { category: true, brand: true } },
+      product: { include: { subcategory: true, brand: true } },
       variant: true,
     },
     orderBy: { discountValue: "desc" },
@@ -248,7 +234,7 @@ async function executeGetDeals(
       productId: sp.productId,
       name: sp.product.name,
       brand: sp.product.brand?.name ?? null,
-      category: sp.product.category?.name ?? null,
+      category: sp.product.subcategory?.name ?? null,
       variant: variant.name,
       unitType: variant.unitType,
       unitValue: (variant as Record<string, unknown>).unitValue as string,
@@ -375,7 +361,7 @@ export async function aiRoutes(app: FastifyInstance) {
               result = await executeSearchProducts(
                 app.prisma,
                 storeId,
-                toolUse.input as { query: string; categoryId?: string },
+                toolUse.input as { query: string; subcategoryId?: string },
               );
               break;
             case "get_categories":

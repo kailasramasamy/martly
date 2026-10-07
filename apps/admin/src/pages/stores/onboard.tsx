@@ -14,12 +14,9 @@ import { sectionTitle } from "../../theme";
 
 const { Title, Text } = Typography;
 
-interface CategoryTreeNode {
-  id: string;
-  name: string;
-  slug: string;
-  children: CategoryTreeNode[];
-}
+interface SubcategoryNode { id: string; name: string; slug: string; }
+interface CategoryNode { id: string; name: string; slug: string; subcategories: SubcategoryNode[]; }
+interface DepartmentNode { id: string; name: string; slug: string; categories: CategoryNode[]; }
 
 interface Variant {
   id: string;
@@ -33,7 +30,7 @@ interface ProductWithVariants {
   id: string;
   name: string;
   description: string | null;
-  category?: { id: string; name: string } | null;
+  subcategory?: { id: string; name: string } | null;
   variants: Variant[];
 }
 
@@ -47,11 +44,18 @@ interface SelectedVariant {
   stock: number;
 }
 
-function toTreeData(nodes: CategoryTreeNode[]): DataNode[] {
-  return nodes.map((n) => ({
-    key: n.id,
-    title: n.name,
-    children: n.children.length > 0 ? toTreeData(n.children) : undefined,
+function toTreeData(departments: DepartmentNode[]): DataNode[] {
+  return departments.map((d) => ({
+    key: d.id,
+    title: d.name,
+    children: d.categories.map((c) => ({
+      key: c.id,
+      title: c.name,
+      children: c.subcategories.map((s) => ({
+        key: s.id,
+        title: s.name,
+      })),
+    })),
   }));
 }
 
@@ -68,7 +72,7 @@ export const StoreOnboard = () => {
   const { data: storeData } = useOne({ resource: "stores", id: storeId! });
   const storeName = storeData?.data?.name ?? "Store";
 
-  const { data: treeData } = useCustom<{ data: CategoryTreeNode[] }>({
+  const { data: treeData } = useCustom<{ data: DepartmentNode[] }>({
     url: `${apiUrl}/categories/tree`,
     method: "get",
   });

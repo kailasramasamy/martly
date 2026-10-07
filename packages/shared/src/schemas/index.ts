@@ -104,6 +104,7 @@ export const createStoreSchema = z.object({
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
   address: z.string().min(1),
   phone: z.string().optional(),
+  imageUrl: z.string().url().nullish(),
   latitude: z.number().min(-90).max(90).optional(),
   longitude: z.number().min(-180).max(180).optional(),
   deliveryRadius: z.number().positive().optional(),
@@ -113,34 +114,75 @@ export const createStoreSchema = z.object({
 });
 export type CreateStoreInput = z.infer<typeof createStoreSchema>;
 
-// ── Category ──────────────────────────────────────────
+// ── Department ───────────────────────────────────────
+export const createDepartmentSchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  sortOrder: z.number().int().min(0).optional(),
+  imageUrl: z.string().url().nullish(),
+  translations: translationsSchema,
+});
+export type CreateDepartmentInput = z.infer<typeof createDepartmentSchema>;
+
+export const updateDepartmentSchema = z.object({
+  name: z.string().min(1).optional(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  sortOrder: z.number().int().min(0).optional(),
+  imageUrl: z.string().url().nullish(),
+  translations: translationsSchema,
+});
+export type UpdateDepartmentInput = z.infer<typeof updateDepartmentSchema>;
+
+// ── Category ─────────────────────────────────────────
 export const createCategorySchema = z.object({
   name: z.string().min(1),
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
-  parentId: z.string().uuid().nullish(),
+  departmentId: z.string().uuid(),
   sortOrder: z.number().int().min(0).optional(),
   imageUrl: z.string().url().nullish(),
   translations: translationsSchema,
 });
 export type CreateCategoryInput = z.infer<typeof createCategorySchema>;
 
-export const reorderCategoriesSchema = z.object({
-  items: z.array(z.object({
-    id: z.string().uuid(),
-    sortOrder: z.number().int().min(0),
-  })).min(1),
-});
-export type ReorderCategoriesInput = z.infer<typeof reorderCategoriesSchema>;
-
 export const updateCategorySchema = z.object({
   name: z.string().min(1).optional(),
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
-  parentId: z.string().uuid().nullish(),
+  departmentId: z.string().uuid().optional(),
   sortOrder: z.number().int().min(0).optional(),
   imageUrl: z.string().url().nullish(),
   translations: translationsSchema,
 });
 export type UpdateCategoryInput = z.infer<typeof updateCategorySchema>;
+
+// ── Subcategory ──────────────────────────────────────
+export const createSubcategorySchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  categoryId: z.string().uuid(),
+  sortOrder: z.number().int().min(0).optional(),
+  imageUrl: z.string().url().nullish(),
+  translations: translationsSchema,
+});
+export type CreateSubcategoryInput = z.infer<typeof createSubcategorySchema>;
+
+export const updateSubcategorySchema = z.object({
+  name: z.string().min(1).optional(),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  categoryId: z.string().uuid().optional(),
+  sortOrder: z.number().int().min(0).optional(),
+  imageUrl: z.string().url().nullish(),
+  translations: translationsSchema,
+});
+export type UpdateSubcategoryInput = z.infer<typeof updateSubcategorySchema>;
+
+// ── Reorder (generic for any level) ──────────────────
+export const reorderItemsSchema = z.object({
+  items: z.array(z.object({
+    id: z.string().uuid(),
+    sortOrder: z.number().int().min(0),
+  })).min(1),
+});
+export type ReorderItemsInput = z.infer<typeof reorderItemsSchema>;
 
 // ── Brand ────────────────────────────────────────────
 export const createBrandSchema = z.object({
@@ -196,7 +238,7 @@ export const productSchema = z.object({
   name: z.string().min(1),
   description: z.string().nullable(),
   imageUrl: z.string().url().nullable(),
-  categoryId: z.string().uuid().nullable(),
+  subcategoryId: z.string().uuid().nullable(),
   brandId: z.string().uuid().nullable(),
   isActive: z.boolean(),
   tags: z.array(z.string()),
@@ -230,7 +272,7 @@ export const createProductSchema = z.object({
   organizationId: z.string().uuid().nullish(),
   description: z.string().optional(),
   imageUrl: z.string().url().optional(),
-  categoryId: z.string().uuid().optional(),
+  subcategoryId: z.string().uuid().optional(),
   brandId: z.string().uuid().optional(),
   tags: z.array(z.string()).optional(),
   hsnCode: z.string().optional(),
@@ -401,6 +443,7 @@ export const updateStoreSchema = z.object({
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
   address: z.string().min(1).optional(),
   phone: z.string().nullish(),
+  imageUrl: z.string().url().nullish(),
   status: z.nativeEnum(StoreStatus).optional(),
   latitude: z.number().min(-90).max(90).nullish(),
   longitude: z.number().min(-180).max(180).nullish(),
@@ -424,7 +467,7 @@ export const updateProductSchema = z.object({
   name: z.string().min(1).optional(),
   description: emptyToNull.nullish(),
   imageUrl: optionalUrl,
-  categoryId: z.string().uuid().nullish(),
+  subcategoryId: z.string().uuid().nullish(),
   brandId: z.string().uuid().nullish(),
   isActive: z.boolean().optional(),
   tags: z.array(z.string()).optional(),
@@ -736,7 +779,9 @@ export const createBannerSchema = z.object({
   endsAt: z.coerce.date().nullish(),
   storeId: z.string().uuid().nullish(),
   organizationId: z.string().uuid().nullish(),
+  departmentId: z.string().uuid().nullish(),
   categoryId: z.string().uuid().nullish(),
+  subcategoryId: z.string().uuid().nullish(),
 });
 export type CreateBannerInput = z.infer<typeof createBannerSchema>;
 
@@ -752,7 +797,9 @@ export const updateBannerSchema = z.object({
   startsAt: z.coerce.date().nullish(),
   endsAt: z.coerce.date().nullish(),
   storeId: z.string().uuid().nullish(),
+  departmentId: z.string().uuid().nullish(),
   categoryId: z.string().uuid().nullish(),
+  subcategoryId: z.string().uuid().nullish(),
 });
 export type UpdateBannerInput = z.infer<typeof updateBannerSchema>;
 

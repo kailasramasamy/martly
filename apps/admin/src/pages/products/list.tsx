@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { List, useTable, EditButton, ShowButton, useSelect } from "@refinedev/antd";
-import { Table, Form, Input, Space, Select, Tag, Typography, Badge, Tabs, Button, Cascader, Switch, App, Popconfirm } from "antd";
+import { Table, Form, Input, Space, Select, Tag, Typography, Badge, Tabs, Button, Switch, App, Popconfirm, Breadcrumb, theme as antTheme } from "antd";
 import type { HttpError, CrudFilter } from "@refinedev/core";
 import { useGetIdentity, useList } from "@refinedev/core";
 import { useNavigate, useSearchParams } from "react-router";
 import { axiosInstance } from "../../providers/data-provider";
-import { ShopOutlined, DeleteOutlined } from "@ant-design/icons";
+import { ShopOutlined, DeleteOutlined, HomeOutlined, RightOutlined } from "@ant-design/icons";
 
 import {
   FOOD_TYPE_CONFIG,
@@ -53,7 +53,7 @@ interface ProductRecord {
   foodType?: string;
   productType?: string;
   storageType?: string;
-  category?: { name: string };
+  subcategory?: { name: string };
   organizationId?: string | null;
   organization?: { id: string; name: string } | null;
   variants?: Variant[];
@@ -90,51 +90,11 @@ function foodTypeDot(foodType: string) {
   );
 }
 
-// --- Category tree helpers ---
+// --- Category tree types ---
 
-interface CategoryTreeNode {
-  id: string;
-  name: string;
-  children: CategoryTreeNode[];
-}
-
-interface CascaderOption {
-  value: string;
-  label: string;
-  children?: CascaderOption[];
-}
-
-function aggregateCounts(
-  nodes: CategoryTreeNode[],
-  directCounts: Record<string, number>,
-): Record<string, number> {
-  const result: Record<string, number> = {};
-  function walk(node: CategoryTreeNode): number {
-    let total = directCounts[node.id] ?? 0;
-    for (const child of node.children) total += walk(child);
-    result[node.id] = total;
-    return total;
-  }
-  for (const n of nodes) walk(n);
-  return result;
-}
-
-function treeToCascaderOptions(
-  nodes: CategoryTreeNode[],
-  counts: Record<string, number>,
-): CascaderOption[] {
-  return nodes
-    .filter((n) => (counts[n.id] ?? 0) > 0 || n.children.length > 0)
-    .map((n) => {
-      const count = counts[n.id] ?? 0;
-      const childOpts = n.children.length > 0 ? treeToCascaderOptions(n.children, counts) : undefined;
-      return {
-        value: n.id,
-        label: count > 0 ? `${n.name} (${count})` : n.name,
-        children: childOpts && childOpts.length > 0 ? childOpts : undefined,
-      };
-    });
-}
+interface SubcategoryNode { id: string; name: string; }
+interface CategoryNode { id: string; name: string; subcategories: SubcategoryNode[]; }
+interface DepartmentNode { id: string; name: string; categories: CategoryNode[]; }
 
 // ============================================================================
 // Products table — reused for all 4 tabs
@@ -159,9 +119,16 @@ const ProductsTableTab = ({
   showMapButton?: boolean;
   showOrgColumn?: boolean;
 }) => {
+  const { token } = antTheme.useToken();
   const navigate = useNavigate();
   const { message } = App.useApp();
   const [expandedKeys, setExpandedKeys] = useState<string[]>([]);
+
+  // Hierarchy navigation state
+  const [selectedPath, setSelectedPath] = useState<string[]>([]);
+  const selectedDeptId = selectedPath[0] ?? null;
+  const selectedCatId = selectedPath[1] ?? null;
+  const selectedSubcatId = selectedPath[2] ?? null;
 
   const permanentFilters: CrudFilter[] = [];
   if (catalogFilter) permanentFilters.push({ field: "catalogType", operator: "eq", value: catalogFilter });
@@ -172,25 +139,29 @@ const ProductsTableTab = ({
   const { tableProps, searchFormProps, tableQuery } = useTable<
     ProductRecord,
     HttpError,
-    { q: string; categoryPath: string[]; productType: string; organizationId: string }
+    { q: string; categoryPath: string[]; organizationId: string }
   >({
     resource: "products",
     syncWithLocation: false,
     filters: { permanent: permanentFilters },
-    onSearch: (values) => [
-      { field: "q", operator: "contains", value: values.q },
-      { field: "categoryId", operator: "eq", value: values.categoryPath?.slice(-1)[0] },
-      { field: "productType", operator: "eq", value: values.productType },
-      { field: "organizationId", operator: "eq", value: values.organizationId },
-    ],
+    onSearch: (values) => {
+      const cp: string[] = values.categoryPath ?? [];
+      return [
+        { field: "q", operator: "contains", value: values.q },
+        { field: "departmentId", operator: "eq", value: cp.length === 1 ? cp[0] : undefined },
+        { field: "categoryId", operator: "eq", value: cp.length === 2 ? cp[1] : undefined },
+        { field: "subcategoryId", operator: "eq", value: cp.length >= 3 ? cp[2] : undefined },
+        { field: "organizationId", operator: "eq", value: values.organizationId },
+      ];
+    },
   });
 
   // Fetch facets and category tree
   const [facets, setFacets] = useState<{
-    categories: { id: string; name: string; count: number }[];
+    subcategories: { id: string; name: string; count: number }[];
     productTypes: { type: string; count: number }[];
   } | null>(null);
-  const [categoryTree, setCategoryTree] = useState<CategoryTreeNode[]>([]);
+  const [categoryTree, setCategoryTree] = useState<DepartmentNode[]>([]);
 
   useEffect(() => {
     const params: Record<string, string> = {};
@@ -204,15 +175,15 @@ const ProductsTableTab = ({
     }).catch(() => {});
   }, [catalogFilter]);
 
-  const directCountMap: Record<string, number> = {};
-  for (const c of facets?.categories ?? []) directCountMap[c.id] = c.count;
-  const aggregatedCounts = categoryTree.length > 0 ? aggregateCounts(categoryTree, directCountMap) : directCountMap;
-  const cascaderOptions = treeToCascaderOptions(categoryTree, aggregatedCounts);
+  // Product counts
+  const subcatCounts = new Map<string, number>();
+  for (const s of facets?.subcategories ?? []) subcatCounts.set(s.id, s.count);
+  const catCount = (cat: CategoryNode) => cat.subcategories.reduce((sum, s) => sum + (subcatCounts.get(s.id) ?? 0), 0);
+  const deptCount = (dept: DepartmentNode) => dept.categories.reduce((sum, c) => sum + catCount(c), 0);
 
-  const productTypeOptions = (facets?.productTypes ?? []).map((t) => ({
-    label: `${PRODUCT_TYPE_CONFIG[t.type]?.label ?? t.type} (${t.count})`,
-    value: t.type,
-  }));
+  // Derived tree nodes
+  const selectedDept = categoryTree.find(d => d.id === selectedDeptId);
+  const selectedCat = selectedDept?.categories.find(c => c.id === selectedCatId);
 
   const { selectProps: orgSelectProps } = useSelect({
     resource: "organizations",
@@ -220,6 +191,58 @@ const ProductsTableTab = ({
     optionValue: "id",
     queryOptions: { enabled: showOrgColumn === true },
   });
+
+  // Hierarchy navigation
+  const navigateHierarchy = (newPath: string[]) => {
+    setSelectedPath(newPath);
+    searchFormProps.form?.setFieldValue("categoryPath", newPath.length > 0 ? newPath : undefined);
+    searchFormProps.form?.submit();
+  };
+
+  // Current level chips
+  let chips: { id: string; name: string; count: number }[] = [];
+  if (!selectedDeptId) {
+    chips = categoryTree.map(d => ({ id: d.id, name: d.name, count: deptCount(d) }));
+  } else if (!selectedCatId && selectedDept) {
+    chips = selectedDept.categories.map(c => ({ id: c.id, name: c.name, count: catCount(c) }));
+  } else if (!selectedSubcatId && selectedCat) {
+    chips = selectedCat.subcategories.map(s => ({ id: s.id, name: s.name, count: subcatCounts.get(s.id) ?? 0 }));
+  }
+
+  const handleChipClick = (chipId: string) => {
+    if (!selectedDeptId) navigateHierarchy([chipId]);
+    else if (!selectedCatId) navigateHierarchy([selectedDeptId, chipId]);
+    else navigateHierarchy([selectedDeptId, selectedCatId, chipId]);
+  };
+
+  // Breadcrumb items
+  const breadcrumbItems: { title: React.ReactNode }[] = [
+    {
+      title: (
+        <a onClick={() => navigateHierarchy([])} style={{ display: "flex", alignItems: "center", gap: 4 }}>
+          <HomeOutlined /> All Departments
+        </a>
+      ),
+    },
+  ];
+  if (selectedDept) {
+    breadcrumbItems.push({
+      title: selectedCatId
+        ? <a onClick={() => navigateHierarchy([selectedDeptId!])}>{selectedDept.name}</a>
+        : <span style={{ fontWeight: 500 }}>{selectedDept.name}</span>,
+    });
+  }
+  if (selectedCat) {
+    breadcrumbItems.push({
+      title: selectedSubcatId
+        ? <a onClick={() => navigateHierarchy([selectedDeptId!, selectedCatId!])}>{selectedCat.name}</a>
+        : <span style={{ fontWeight: 500 }}>{selectedCat.name}</span>,
+    });
+  }
+  if (selectedSubcatId && selectedCat) {
+    const subName = selectedCat.subcategories.find(s => s.id === selectedSubcatId)?.name;
+    breadcrumbItems.push({ title: <span style={{ fontWeight: 500 }}>{subName}</span> });
+  }
 
   // Variant-only columns (for tabs without store-product data)
   const variantColumns = [
@@ -419,23 +442,13 @@ const ProductsTableTab = ({
 
   return (
     <>
-      <Form {...searchFormProps} layout="inline" style={{ marginBottom: 16, gap: 8, display: "flex", flexWrap: "wrap" }}>
+      {/* Search + filters row */}
+      <Form {...searchFormProps} layout="inline" style={{ marginBottom: 12, gap: 8, display: "flex", flexWrap: "wrap" }}>
         <Form.Item name="q" noStyle>
           <Input.Search placeholder="Search products..." allowClear onSearch={searchFormProps.form?.submit} style={{ width: 280 }} />
         </Form.Item>
-        <Form.Item name="categoryPath" noStyle>
-          <Cascader
-            options={cascaderOptions}
-            changeOnSelect
-            allowClear
-            placeholder="Category"
-            style={{ width: 260 }}
-            onChange={() => searchFormProps.form?.submit()}
-            showSearch={{ filter: (input, path) => path.some((opt) => String(opt.label).toLowerCase().includes(input.toLowerCase())) }}
-          />
-        </Form.Item>
-        <Form.Item name="productType" noStyle>
-          <Select options={productTypeOptions} allowClear placeholder="Product type" style={{ width: 200 }} onChange={() => searchFormProps.form?.submit()} />
+        <Form.Item name="categoryPath" noStyle hidden>
+          <Input />
         </Form.Item>
         {showOrgColumn && (
           <Form.Item name="organizationId" noStyle>
@@ -444,10 +457,40 @@ const ProductsTableTab = ({
         )}
       </Form>
 
+      {/* Breadcrumb */}
+      <Breadcrumb
+        items={breadcrumbItems}
+        separator={<RightOutlined style={{ fontSize: 10 }} />}
+        style={{ marginBottom: 10 }}
+      />
+
+      {/* Category chips */}
+      {chips.length > 0 && (
+        <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 16 }}>
+          {chips.map(chip => (
+            <Tag
+              key={chip.id}
+              style={{
+                cursor: "pointer",
+                borderRadius: 16,
+                padding: "3px 12px",
+              }}
+              onClick={() => handleChipClick(chip.id)}
+            >
+              {chip.name}
+              <span style={{ color: token.colorTextSecondary, marginLeft: 4 }}>
+                ({chip.count})
+              </span>
+            </Tag>
+          ))}
+        </div>
+      )}
+
       <Table<ProductRecord>
         {...tableProps}
         rowKey="id"
         size="middle"
+        tableLayout="fixed"
         expandable={{
           expandedRowKeys: expandedKeys,
           onExpandedRowsChange: (keys) => setExpandedKeys(keys as string[]),
@@ -485,7 +528,7 @@ const ProductsTableTab = ({
         {showCatalogBadge && (
           <Table.Column
             title="Catalog"
-            width={100}
+            width={80}
             render={(_, record: ProductRecord) =>
               record.organizationId == null
                 ? <Tag color="blue">Master</Tag>
@@ -497,7 +540,7 @@ const ProductsTableTab = ({
         {showOrgColumn && (
           <Table.Column
             title="Organization"
-            width={150}
+            width={120}
             render={(_, record: ProductRecord) =>
               record.organization
                 ? <Text>{record.organization.name}</Text>
@@ -508,15 +551,15 @@ const ProductsTableTab = ({
 
         <Table.Column
           title="Category"
-          width={140}
+          width={120}
           render={(_, record: ProductRecord) =>
-            record.category?.name ? <Tag>{record.category.name}</Tag> : <Text type="secondary">—</Text>
+            record.subcategory?.name ? <Tag>{record.subcategory.name}</Tag> : <Text type="secondary">—</Text>
           }
         />
 
         <Table.Column
           title="Type"
-          width={180}
+          width={120}
           render={(_, record: ProductRecord) => (
             <Space size={4} wrap>
               {record.productType && (() => {
@@ -535,7 +578,7 @@ const ProductsTableTab = ({
           <>
           <Table.Column
             title="Stores"
-            width={160}
+            width={130}
             render={(_, record: ProductRecord) => {
               const sps = record.storeProducts ?? [];
               if (sps.length === 0) return <Text type="secondary">—</Text>;
@@ -560,7 +603,7 @@ const ProductsTableTab = ({
           />
           <Table.Column
             title="Stock"
-            width={100}
+            width={80}
             render={(_, record: ProductRecord) => {
               const sps = record.storeProducts ?? [];
               if (sps.length === 0) return <Text type="secondary">—</Text>;
@@ -579,7 +622,7 @@ const ProductsTableTab = ({
         ) : (
           <Table.Column
             title="Variants"
-            width={200}
+            width={160}
             render={(_, record: ProductRecord) => {
               const variants = record.variants ?? [];
               if (variants.length === 0) return <Text type="secondary">—</Text>;
@@ -614,7 +657,7 @@ const ProductsTableTab = ({
 
         <Table.Column
           title="Discount"
-          width={160}
+          width={120}
           render={(_, record: ProductRecord) => {
             const variants = record.variants ?? [];
             const active = variants.filter(isDiscountActive);
@@ -628,7 +671,7 @@ const ProductsTableTab = ({
 
         <Table.Column
           title=""
-          width={showMapButton ? 120 : 80}
+          width={showMapButton ? 100 : 70}
           render={(_, record: ProductRecord) => {
             const canEdit =
               role === "SUPER_ADMIN"
@@ -664,6 +707,7 @@ const ProductsTableTab = ({
 // ============================================================================
 
 function TabLabel({ label, count }: { label: string; count?: number }) {
+  const { token } = antTheme.useToken();
   return (
     <span>
       {label}
@@ -671,7 +715,7 @@ function TabLabel({ label, count }: { label: string; count?: number }) {
         <Badge
           count={count}
           overflowCount={9999}
-          style={{ marginLeft: 8, backgroundColor: count > 0 ? "#1677ff" : "#d9d9d9" }}
+          style={{ marginLeft: 8, backgroundColor: count > 0 ? token.colorPrimary : token.colorTextQuaternary }}
           showZero
         />
       )}

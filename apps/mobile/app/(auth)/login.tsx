@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { View, Text, TextInput, Pressable, StyleSheet, ActivityIndicator, KeyboardAvoidingView, ScrollView, Platform } from "react-native";
+import { View, Text, TextInput, Pressable, StyleSheet, ActivityIndicator, KeyboardAvoidingView, ScrollView, Platform, Image } from "react-native";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../../lib/auth-context";
@@ -8,6 +8,8 @@ import { colors, spacing, fontSize } from "../../constants/theme";
 import type { AuthTokens } from "@martly/shared/types";
 
 type Step = "phone" | "otp" | "name";
+
+const wordmark = require("../../assets/branding/martly-wordmark-light.png");
 
 export default function LoginScreen() {
   const { login, refreshUser } = useAuth();
@@ -108,10 +110,7 @@ export default function LoginScreen() {
       >
         {/* Logo */}
         <View style={styles.logoSection}>
-          <View style={styles.logoCircle}>
-            <Ionicons name="leaf" size={36} color="#fff" />
-          </View>
-          <Text style={styles.title}>Martly</Text>
+          <Image source={wordmark} style={styles.wordmark} resizeMode="contain" accessibilityLabel="Martly" />
           <Text style={styles.subtitle}>Fresh groceries, delivered</Text>
         </View>
 
@@ -246,13 +245,7 @@ const styles = StyleSheet.create({
 
   // Logo
   logoSection: { alignItems: "center", marginBottom: 40 },
-  logoCircle: {
-    width: 72, height: 72, borderRadius: 22,
-    backgroundColor: colors.primary,
-    justifyContent: "center", alignItems: "center",
-    marginBottom: 16,
-  },
-  title: { fontSize: 32, fontWeight: "800", color: colors.primary },
+  wordmark: { width: 180, height: 64 },
   subtitle: { fontSize: fontSize.lg, color: colors.textSecondary, marginTop: 4 },
 
   // Steps
@@ -286,6 +279,7 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1, borderColor: colors.border, borderRadius: 12,
     padding: 16, fontSize: fontSize.lg, color: colors.text,
+    letterSpacing: 0,
     marginBottom: spacing.md,
   },
 

@@ -1,28 +1,30 @@
-import { useState, useEffect, useMemo, useCallback } from "react";
-import { View, Text, FlatList, StyleSheet, ActivityIndicator } from "react-native";
-import { useRouter } from "expo-router";
+import { useState, useEffect } from "react";
+import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
-import { useCart } from "../lib/cart-context";
 import { useWishlist } from "../lib/wishlist-context";
 import { useAuth } from "../lib/auth-context";
-import { useMembership, getBestPrice } from "../lib/membership-context";
-import { useBasketMode } from "../lib/basket-mode-context";
-import { useToast } from "../lib/toast-context";
+import { ProductActionsProvider } from "../lib/product-actions";
 import { colors, spacing, fontSize } from "../constants/theme";
-import { ProductGridCard, GRID_GAP, GRID_H_PADDING } from "../components/ProductGridCard";
+import { ProductList } from "../components/ProductList";
 import { FloatingCart } from "../components/FloatingCart";
 import type { StoreProduct } from "../lib/types";
+
+function EmptyState({ title, text }: { title?: string; text: string }) {
+  return (
+    <View style={styles.center}>
+      <Ionicons name="heart-outline" size={48} color="#94a3b8" />
+      {title && <Text style={styles.emptyTitle}>{title}</Text>}
+      <Text style={styles.emptyText}>{text}</Text>
+    </View>
+  );
+}
 
 export default function WishlistScreen() {
   const { isAuthenticated } = useAuth();
   const { selectedStore } = useStore();
-  const { storeId: cartStoreId, items: cartItems, addItem, updateQuantity } = useCart();
-  const { wishlistedIds, isWishlisted, toggle: toggleWishlist } = useWishlist();
-  const { isMember } = useMembership();
-  const { isBasketMode, addBasketItem, updateBasketQuantity, basketQuantities } = useBasketMode();
-  const toast = useToast();
+  const { wishlistedIds } = useWishlist();
   const [products, setProducts] = useState<StoreProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const storeId = selectedStore?.id;
@@ -33,103 +35,29 @@ export default function WishlistScreen() {
       setLoading(false);
       return;
     }
-
     setLoading(true);
     const ids = Array.from(wishlistedIds).join(",");
     api.getList<StoreProduct>(`/api/v1/stores/${storeId}/products?productIds=${ids}&pageSize=200`)
-      .then((res) => {
-        setProducts(res.data);
-      })
+      .then((res) => setProducts(res.data))
       .catch(() => {})
       .finally(() => setLoading(false));
   }, [isAuthenticated, storeId, wishlistedIds]);
 
-  const rawCartQtyMap = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const item of cartItems) map.set(item.storeProductId, item.quantity);
-    return map;
-  }, [cartItems]);
-
-  const cartQuantityMap = isBasketMode ? basketQuantities : rawCartQtyMap;
-
-  const handleAddToCart = useCallback((sp: StoreProduct) => {
-    if (!storeId) return;
-
-    if (isBasketMode) {
-      addBasketItem(sp.id);
-      toast.show("Added to tomorrow's basket", "success");
-      return;
-    }
-
-    addItem(storeId, selectedStore?.name ?? "", {
-      storeProductId: sp.id,
-      productId: sp.product.id,
-      productName: sp.product.name,
-      variantId: sp.variant.id,
-      variantName: sp.variant.name,
-      price: getBestPrice(sp, isMember),
-      imageUrl: sp.product.imageUrl ?? sp.variant.imageUrl,
-    });
-  }, [storeId, selectedStore, addItem, isMember, isBasketMode, addBasketItem, toast]);
-
-  const effectiveUpdateQty = useCallback(
-    (spId: string, qty: number) => {
-      if (isBasketMode) {
-        updateBasketQuantity(spId, qty);
-        return;
-      }
-      updateQuantity(spId, qty);
-    },
-    [isBasketMode, updateBasketQuantity, updateQuantity],
-  );
-
-  if (!isAuthenticated) {
-    return (
-      <View style={styles.center}>
-        <Ionicons name="heart-outline" size={48} color="#94a3b8" />
-        <Text style={styles.emptyText}>Sign in to see your wishlist</Text>
-      </View>
-    );
-  }
-
+  if (!isAuthenticated) return <EmptyState text="Sign in to see your wishlist" />;
   if (loading) {
     return <View style={styles.center}><ActivityIndicator size="large" color={colors.primary} /></View>;
   }
-
   if (products.length === 0) {
-    return (
-      <View style={styles.center}>
-        <Ionicons name="heart-outline" size={48} color="#94a3b8" />
-        <Text style={styles.emptyTitle}>Your wishlist is empty</Text>
-        <Text style={styles.emptyText}>Products you love will appear here</Text>
-      </View>
-    );
+    return <EmptyState title="Your wishlist is empty" text="Products you love will appear here" />;
   }
 
   return (
-    <View style={styles.container}>
-      <FlatList
-        data={products}
-        extraData={wishlistedIds}
-        keyExtractor={(item) => item.id}
-        numColumns={2}
-        columnWrapperStyle={styles.row}
-        contentContainerStyle={styles.list}
-        renderItem={({ item }) => (
-          <ProductGridCard
-            item={item}
-            onAddToCart={handleAddToCart}
-            onUpdateQuantity={effectiveUpdateQty}
-            quantity={cartQuantityMap.get(item.id) ?? 0}
-            storeId={storeId}
-            isWishlisted={isWishlisted(item.product.id)}
-            onToggleWishlist={toggleWishlist}
-            isMember={isMember}
-          />
-        )}
-      />
-      <FloatingCart />
-    </View>
+    <ProductActionsProvider store={selectedStore ?? null}>
+      <View style={styles.container}>
+        <ProductList products={products} layout="grid" contentContainerStyle={styles.list} />
+        <FloatingCart />
+      </View>
+    </ProductActionsProvider>
   );
 }
 
@@ -138,6 +66,5 @@ const styles = StyleSheet.create({
   center: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: colors.surface, padding: spacing.lg },
   emptyTitle: { fontSize: fontSize.lg, fontWeight: "700", color: colors.text, marginTop: spacing.md },
   emptyText: { fontSize: fontSize.md, color: colors.textSecondary, marginTop: spacing.xs },
-  list: { padding: GRID_H_PADDING, paddingBottom: 80 },
-  row: { gap: GRID_GAP },
+  list: { paddingTop: spacing.md, paddingBottom: 80 },
 });

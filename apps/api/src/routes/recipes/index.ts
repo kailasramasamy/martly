@@ -71,7 +71,7 @@ export async function recipeRoutes(app: FastifyInstance) {
         items: {
           orderBy: { sortOrder: "asc" },
           include: {
-            product: { include: { brand: true, category: true } },
+            product: { include: { brand: true, subcategory: true } },
           },
         },
         organization: { select: { id: true, name: true } },
@@ -312,7 +312,7 @@ export async function recipeRoutes(app: FastifyInstance) {
                     orderBy: { price: "asc" },
                   },
                   brand: true,
-                  category: true,
+                  subcategory: true,
                 },
               },
             },
