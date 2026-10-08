@@ -72,7 +72,8 @@
       "appleTeamId": "QBLZB22TU6",
       "googleServicesFile": "./GoogleService-Info.plist",
       "config": {
-        "googleMapsApiKey": "AIzaSyAOPrWjNw0H_USbXZqnk3_V03FgvSEe6Ko"
+        "googleMapsApiKey": "AIzaSyAOPrWjNw0H_USbXZqnk3_V03FgvSEe6Ko",
+        "usesNonExemptEncryption": false
       }
     }
   }

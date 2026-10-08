@@ -82,11 +82,14 @@ if [[ "$BUILD" == 1 ]]; then
   /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BUILD_NUMBER" \
     "$ARCHIVE/Products/Applications/Martly.app/Info.plist"
 
-  # The API URL is inlined into the JS bundle at build time; never ship one that points at a dev machine
-  BUNDLE="$ARCHIVE/Products/Applications/Martly.app/main.jsbundle"
-  grep -q "$PROD_API_URL" "$BUNDLE" || die "release bundle does not contain $PROD_API_URL"
-  if grep -qE "https?://(localhost|127\.0\.0\.1|192\.168\.|10\.[0-9]+\.)" "$BUNDLE"; then
-    die "release bundle references a local/LAN address — check apps/mobile/.env.production"
+  # The API URL is inlined into the (Hermes bytecode) bundle at build time: it must be the production
+  # URL, and the development API from .env must not have leaked in. (Libraries embed their own
+  # localhost defaults, so only our configured URLs are checked.)
+  BUNDLE_STRINGS=$(strings -n 8 "$ARCHIVE/Products/Applications/Martly.app/main.jsbundle")
+  grep -qF "$PROD_API_URL" <<<"$BUNDLE_STRINGS" || die "release bundle does not contain $PROD_API_URL"
+  DEV_API_URL=$(grep -m1 '^EXPO_PUBLIC_API_URL=' .env 2>/dev/null | cut -d= -f2- || true)
+  if [[ -n "$DEV_API_URL" ]] && grep -qF "$DEV_API_URL" <<<"$BUNDLE_STRINGS"; then
+    die "release bundle contains the development API ($DEV_API_URL) — check apps/mobile/.env.production"
   fi
   echo "release-ios: bundle talks to $PROD_API_URL"
 
@@ -101,9 +104,11 @@ if [[ "$BUILD" == 1 ]]; then
   <key>signingStyle</key><string>automatic</string>
 </dict></plist>
 PLIST
+  # Export signs with Xcode's signed-in Apple account: distribution signing needs Admin rights,
+  # which the App Store Connect API key (used for archive and upload) doesn't have.
   xcodebuild -exportArchive -archivePath "$ARCHIVE" \
     -exportPath "$IPA_DIR" -exportOptionsPlist "$EXPORT_OPTIONS" \
-    "${AUTH_ARGS[@]}"
+    -allowProvisioningUpdates
 fi
 
 IPA="$IPA_DIR/Martly.ipa"
