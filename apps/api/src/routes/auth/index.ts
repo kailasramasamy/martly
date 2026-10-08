@@ -1,11 +1,13 @@
 import type { FastifyInstance } from "fastify";
 import bcrypt from "bcryptjs";
-import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema, sendOtpSchema, verifyOtpSchema } from "@martly/shared/schemas";
+import { loginSchema, registerSchema, selectOrgSchema, updateProfileSchema, sendOtpSchema, verifyOtpSchema, deleteAccountSchema } from "@martly/shared/schemas";
 import type { ApiResponse, AuthTokens, LoginResponse, OrgSummary } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
+import { requireRole } from "../../middleware/authorize.js";
 import { sendNotification } from "../../services/notification.js";
 import { ensureReferralCode } from "../../services/referral-code.js";
 import { issueOtp, verifyOtp } from "../../services/otp.js";
+import { assertNoOrdersInProgress, deleteCustomerAccount } from "../../services/account-deletion.js";
 
 /** Look up distinct organizations a user belongs to via UserStore → Store → Organization */
 async function getUserOrgs(prisma: FastifyInstance["prisma"], userId: string): Promise<OrgSummary[]> {
@@ -248,6 +250,10 @@ export async function authRoutes(app: FastifyInstance) {
       if (payload.type !== "refresh") {
         return reply.unauthorized("Invalid token type");
       }
+      const account = await app.prisma.user.findUnique({ where: { id: payload.sub }, select: { deletedAt: true } });
+      if (!account || account.deletedAt) {
+        return reply.unauthorized("Account no longer exists");
+      }
 
       const tokenPayload: Record<string, unknown> = {
         sub: payload.sub, email: payload.email, role: payload.role,
@@ -287,8 +293,8 @@ export async function authRoutes(app: FastifyInstance) {
     const { sub, organizationId } = request.user as { sub: string; organizationId?: string };
     const user = await app.prisma.user.findUnique({ where: { id: sub } });
 
-    if (!user) {
-      return reply.notFound("User not found");
+    if (!user || user.deletedAt) {
+      return reply.unauthorized("Account no longer exists");
     }
 
     // Look up user's organizations
@@ -311,6 +317,37 @@ export async function authRoutes(app: FastifyInstance) {
       success: true,
       data: { ...safeUser, organizationId, organizations, stores },
     };
+    return response;
+  });
+
+  // Customer self-service account deletion (App Store Guideline 5.1.1(v)):
+  // request a confirmation OTP to the account's own phone, then DELETE /me with it
+  app.post("/me/deletion-otp", { preHandler: [authenticate, requireRole("CUSTOMER")] }, async (request) => {
+    const { sub } = request.user as { sub: string };
+    await assertNoOrdersInProgress(app.prisma, sub);
+    const user = await app.prisma.user.findUniqueOrThrow({ where: { id: sub }, select: { phone: true } });
+    if (user.phone) await issueOtp(app.prisma, user.phone, request.log);
+
+    const response: ApiResponse<{ otpRequired: boolean; phone: string | null }> = {
+      success: true,
+      data: { otpRequired: Boolean(user.phone), phone: user.phone },
+    };
+    return response;
+  });
+
+  app.delete("/me", { preHandler: [authenticate, requireRole("CUSTOMER")] }, async (request, reply) => {
+    const { sub } = request.user as { sub: string };
+    const { otp } = deleteAccountSchema.parse(request.body ?? {});
+    const user = await app.prisma.user.findUnique({ where: { id: sub }, select: { phone: true, deletedAt: true } });
+    if (!user || user.deletedAt) {
+      return reply.unauthorized("Account no longer exists");
+    }
+    if (user.phone && !(otp && (await verifyOtp(app.prisma, user.phone, otp)))) {
+      return reply.unauthorized("Invalid OTP");
+    }
+
+    await deleteCustomerAccount(app.prisma, sub);
+    const response: ApiResponse<{ deleted: boolean }> = { success: true, data: { deleted: true } };
     return response;
   });
 }

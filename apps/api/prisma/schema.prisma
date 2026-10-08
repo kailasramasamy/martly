@@ -332,6 +332,7 @@ model User {
   razorpayCustomerId     String? @unique @map("razorpay_customer_id")
   preferredPaymentMethod String? @map("preferred_payment_method")
   lastUpiVpa             String? @map("last_upi_vpa")
+  deletedAt              DateTime? @map("deleted_at")
 
   userStores           UserStore[]
   orders               Order[]

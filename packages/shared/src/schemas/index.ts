@@ -373,6 +373,11 @@ export const updateProfileSchema = z.object({
 });
 export type UpdateProfileInput = z.infer<typeof updateProfileSchema>;
 
+export const deleteAccountSchema = z.object({
+  otp: z.string().length(6).optional(),
+});
+export type DeleteAccountInput = z.infer<typeof deleteAccountSchema>;
+
 // ── Payment Verification ─────────────────────────────
 export const verifyPaymentSchema = z.object({
   razorpay_order_id: z.string(),

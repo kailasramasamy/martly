@@ -51,6 +51,7 @@ function useMenuGroups(subscriptionsEnabled: boolean): { title: string; items: M
 }
 
 export default function ProfileScreen() {
+  const router = useRouter();
   const { logout, user, isAuthenticated } = useAuth();
   const { selectedStore } = useStore();
   const toast = useToast();
@@ -99,6 +100,9 @@ export default function ProfileScreen() {
           <Ionicons name="log-out-outline" size={18} color={colors.error} />
           <Text style={styles.signOutText}>Sign out</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={styles.deleteAccount} onPress={() => router.push("/delete-account")} activeOpacity={0.7}>
+          <Text style={styles.deleteAccountText}>Delete account</Text>
+        </TouchableOpacity>
       </ScrollView>
 
       <EditProfileSheet visible={editingProfile} onClose={() => setEditingProfile(false)} />
@@ -130,4 +134,6 @@ const styles = StyleSheet.create({
     marginTop: 28, height: 52, borderRadius: 14, backgroundColor: "#fff", borderWidth: 1, borderColor: "#fecaca",
   },
   signOutText: { fontFamily: fonts.bold, fontSize: 15, color: colors.error },
+  deleteAccount: { height: 44, alignItems: "center", justifyContent: "center", marginTop: 8 },
+  deleteAccountText: { fontFamily: fonts.semibold, fontSize: 13.5, color: colors.textSecondary, letterSpacing: 0 },
 });

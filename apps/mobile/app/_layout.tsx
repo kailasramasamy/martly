@@ -148,6 +148,7 @@ function RootLayoutNav() {
       <Stack screenOptions={{ headerShown: false, headerBackTitle: "Back", headerTitleStyle: { fontFamily: "Manrope-SemiBold" }, contentStyle: { backgroundColor: "#f8fafc" } }}>
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="(auth)" />
+        <Stack.Screen name="delete-account" options={{ headerShown: true, title: "Delete Account" }} />
         <Stack.Screen name="store/[id]" options={{ headerShown: true, title: "Store" }} />
         <Stack.Screen name="product/[id]" options={{ headerShown: true, title: "Product" }} />
         <Stack.Screen name="category/[id]" options={{ headerShown: true, title: "Category" }} />
