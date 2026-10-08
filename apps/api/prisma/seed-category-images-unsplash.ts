@@ -110,7 +110,7 @@ const CAT_IMAGES: Record<string, string> = {
 
   // Paan Corner
   "Mouth Freshener": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=256&h=256&fit=crop&crop=center",
-  "Paan Masala & Tobacco": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=256&h=256&fit=crop&crop=center",
+  "Paan Masala & Mouth Fresheners": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=256&h=256&fit=crop&crop=center",
 
   // Personal Care
   "Bath & Body": "https://images.unsplash.com/photo-1570194065650-d99fb4b38b17?w=256&h=256&fit=crop&crop=center",
