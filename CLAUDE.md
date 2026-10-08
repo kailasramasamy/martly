@@ -46,7 +46,7 @@ All data is org-scoped. Roles:
 | `manager@bigmart.dev` | `manager123` | STORE_MANAGER (Bigmart) |
 | `customer@martly.dev` | `customer123` | CUSTOMER |
 
-OTP login: any 10-digit phone, OTP is `111111`.
+OTP login sends a real SMS via MSG91 (Indian mobiles only). For testing, use the fixed review login `OTP_REVIEW_PHONE` / `OTP_REVIEW_CODE` from `apps/api/.env`; without `MSG91_AUTH_KEY`, non-production logs the OTP instead.
 
 ## Key Paths
 

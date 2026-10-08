@@ -225,16 +225,19 @@ export function AuthGate({
               </TouchableOpacity>
 
               <TouchableOpacity
+                onPress={() => { setOtp(""); handleSendOtp(); }}
+                disabled={loading}
+                style={styles.changeLink}
+              >
+                <Text style={styles.changeLinkText}>Didn't get it? Resend code</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
                 onPress={() => { setStep("phone"); setOtp(""); setError(""); }}
                 style={styles.changeLink}
               >
                 <Text style={styles.changeLinkText}>Change number</Text>
               </TouchableOpacity>
-
-              <View style={styles.devHint}>
-                <Ionicons name="information-circle-outline" size={13} color="#94a3b8" />
-                <Text style={styles.devHintText}>Use OTP: 111111</Text>
-              </View>
             </>
           )}
 
@@ -345,10 +348,4 @@ const styles = StyleSheet.create({
 
   changeLink: { alignItems: "center", marginTop: 16 },
   changeLinkText: { fontSize: fontSize.md, color: colors.primary, fontWeight: "600" },
-
-  devHint: {
-    flexDirection: "row", alignItems: "center", justifyContent: "center",
-    gap: 4, marginTop: 12, opacity: 0.6,
-  },
-  devHintText: { fontSize: 12, color: "#94a3b8" },
 });

@@ -13,7 +13,7 @@ globs: apps/mobile/**
 
 - Use `api` helper from `lib/api.ts` (NOT raw fetch) — auto-attaches Bearer token, handles 401 refresh
 - `api.get<T>()` returns `ApiResponse<T>` — access via `res.data`
-- OTP login: any 10-digit phone, OTP `111111`
+- OTP login: real SMS via MSG91; test with `OTP_REVIEW_PHONE` / `OTP_REVIEW_CODE` from `apps/api/.env`
 
 ## Contexts
 

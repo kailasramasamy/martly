@@ -5,6 +5,7 @@ import type { ApiResponse, AuthTokens, LoginResponse, OrgSummary } from "@martly
 import { authenticate } from "../../middleware/auth.js";
 import { sendNotification } from "../../services/notification.js";
 import { ensureReferralCode } from "../../services/referral-code.js";
+import { issueOtp, verifyOtp } from "../../services/otp.js";
 
 /** Look up distinct organizations a user belongs to via UserStore → Store → Organization */
 async function getUserOrgs(prisma: FastifyInstance["prisma"], userId: string): Promise<OrgSummary[]> {
@@ -161,15 +162,9 @@ export async function authRoutes(app: FastifyInstance) {
   });
 
   // ── OTP Auth (mobile) ────────────────────────────────
-  // Placeholder OTP: 111111 — replace with MSG91 / Firebase later
-  const PLACEHOLDER_OTP = "111111";
-
-  app.post("/send-otp", async (request, reply) => {
+  app.post("/send-otp", async (request) => {
     const { phone } = sendOtpSchema.parse(request.body);
-
-    // In production, send OTP via SMS provider here
-    // For now, just verify the phone format and return success
-    app.log.info(`OTP for ${phone}: ${PLACEHOLDER_OTP}`);
+    await issueOtp(app.prisma, phone, request.log);
 
     const response: ApiResponse<{ sent: boolean }> = {
       success: true,
@@ -181,7 +176,7 @@ export async function authRoutes(app: FastifyInstance) {
   app.post("/verify-otp", async (request, reply) => {
     const { phone, otp } = verifyOtpSchema.parse(request.body);
 
-    if (otp !== PLACEHOLDER_OTP) {
+    if (!(await verifyOtp(app.prisma, phone, otp))) {
       return reply.unauthorized("Invalid OTP");
     }
 

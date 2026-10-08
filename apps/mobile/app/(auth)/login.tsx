@@ -187,6 +187,10 @@ export default function LoginScreen() {
               )}
             </Pressable>
 
+            <Pressable onPress={() => { setOtp(""); handleSendOtp(); }} disabled={loading} style={styles.linkContainer}>
+              <Text style={styles.resendText}>Didn't get it? Resend code</Text>
+            </Pressable>
+
             <Pressable onPress={() => { setStep("phone"); setOtp(""); setError(""); }} style={styles.linkContainer}>
               <Text style={styles.linkText}>
                 <Ionicons name="arrow-back" size={13} color={colors.textSecondary} /> Change number
@@ -227,13 +231,6 @@ export default function LoginScreen() {
           </View>
         )}
 
-        {/* Dev hint */}
-        {step === "otp" && (
-          <View style={styles.devHint}>
-            <Ionicons name="information-circle-outline" size={14} color="#94a3b8" />
-            <Text style={styles.devHintText}>Use OTP: 111111</Text>
-          </View>
-        )}
       </ScrollView>
     </KeyboardAvoidingView>
   );
@@ -296,9 +293,5 @@ const styles = StyleSheet.create({
   linkContainer: { marginTop: spacing.lg, alignItems: "center" },
   linkText: { fontSize: fontSize.md, color: colors.textSecondary },
 
-  devHint: {
-    flexDirection: "row", alignItems: "center", justifyContent: "center",
-    gap: 4, marginTop: 24, opacity: 0.6,
-  },
-  devHintText: { fontSize: 12, color: "#94a3b8" },
+  resendText: { fontSize: fontSize.md, color: colors.primary, fontWeight: "600" },
 });
