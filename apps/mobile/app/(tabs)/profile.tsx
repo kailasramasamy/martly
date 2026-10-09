@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
+import Constants from "expo-constants";
 import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "../../lib/auth-context";
 import { useStore } from "../../lib/store-context";
@@ -16,6 +17,9 @@ import { AddressList } from "../../components/account/AddressList";
 import { AddressSheet } from "../../components/account/AddressSheet";
 import { EditProfileSheet } from "../../components/account/EditProfileSheet";
 import type { UserAddress } from "../../lib/types";
+
+const BUILD_NUMBER = Constants.expoConfig?.ios?.buildNumber;
+const APP_VERSION = `Version ${Constants.expoConfig?.version}${BUILD_NUMBER ? ` (${BUILD_NUMBER})` : ""}`;
 
 const MAX_ADDRESSES = 5;
 
@@ -103,6 +107,7 @@ export default function ProfileScreen() {
         <TouchableOpacity style={styles.deleteAccount} onPress={() => router.push("/delete-account")} activeOpacity={0.7}>
           <Text style={styles.deleteAccountText}>Delete account</Text>
         </TouchableOpacity>
+        <Text style={styles.version}>{APP_VERSION}</Text>
       </ScrollView>
 
       <EditProfileSheet visible={editingProfile} onClose={() => setEditingProfile(false)} />
@@ -135,5 +140,6 @@ const styles = StyleSheet.create({
   },
   signOutText: { fontFamily: fonts.bold, fontSize: 15, color: colors.error },
   deleteAccount: { height: 44, alignItems: "center", justifyContent: "center", marginTop: 8 },
+  version: { fontFamily: fonts.medium, fontSize: 12, color: colors.textSecondary, textAlign: "center", marginTop: 4, letterSpacing: 0 },
   deleteAccountText: { fontFamily: fonts.semibold, fontSize: 13.5, color: colors.textSecondary, letterSpacing: 0 },
 });
