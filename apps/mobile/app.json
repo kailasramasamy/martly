@@ -2,7 +2,7 @@
   "expo": {
     "name": "Martly",
     "slug": "martly",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "scheme": "martly",
     "platforms": [
       "ios",
@@ -68,7 +68,7 @@
     },
     "ios": {
       "bundleIdentifier": "com.quartex.martly",
-      "buildNumber": "2",
+      "buildNumber": "3",
       "appleTeamId": "QBLZB22TU6",
       "googleServicesFile": "./GoogleService-Info.plist",
       "config": {
