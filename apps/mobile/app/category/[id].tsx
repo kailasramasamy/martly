@@ -22,6 +22,9 @@ import { getCategoryIcon } from "../../constants/category-icons";
 import { GRID_GAP, GRID_H_PADDING, GRID_CARD_WIDTH } from "../../components/FeaturedProductCard";
 import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
+import { HeroBannerSlide } from "../../components/HeroBannerSlide";
+import { ShopByBrands } from "../../components/ShopByBrands";
+import { brandsFromProducts } from "../../lib/brand-strip";
 import type { StoreProduct, DepartmentNode, Banner } from "../../lib/types";
 
 // Unified tree node for recursive category browsing
@@ -72,6 +75,7 @@ export default function CategoryScreen() {
   const [sortBy, setSortBy] = useState<"price_asc" | "price_desc" | null>(null);
   const [activeGrandchild, setActiveGrandchild] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [brandId, setBrandId] = useState<string | null>(null);
   const [topBanners, setTopBanners] = useState<Banner[]>([]);
 
   const gridRef = useRef<FlatList>(null);
@@ -257,10 +261,17 @@ export default function CategoryScreen() {
     return result;
   }, [filteredProducts, searchQuery, filterOnSale]);
 
+  const brandTiles = useMemo(() => brandsFromProducts(filteredProducts), [filteredProducts]);
+  const visibleProducts = useMemo(
+    () => (brandId ? chipFilteredProducts.filter((p) => p.product.brand?.id === brandId) : chipFilteredProducts),
+    [chipFilteredProducts, brandId],
+  );
+
   const handleSubcategoryPress = useCallback(
     (subId: string | null) => {
       setActiveSub((prev) => (prev === subId ? null : subId));
       setActiveGrandchild(null);
+      setBrandId(null);
       gridRef.current?.scrollToOffset({ offset: 0, animated: true });
     },
     []
@@ -269,7 +280,9 @@ export default function CategoryScreen() {
   // Scroll to top when filters change
   useEffect(() => {
     gridRef.current?.scrollToOffset({ offset: 0, animated: true });
-  }, [filterOnSale, sortBy, activeGrandchild]);
+  }, [filterOnSale, sortBy, activeGrandchild, brandId]);
+
+  useEffect(() => setBrandId(null), [activeGrandchild]);
 
   const handleBannerPress = useCallback((banner: Banner) => {
     switch (banner.actionType) {
@@ -288,27 +301,18 @@ export default function CategoryScreen() {
     }
   }, []);
 
-  const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || searchQuery.trim().length > 0;
+  const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || brandId !== null || searchQuery.trim().length > 0;
   const totalCount = useMemo(() => new Set(allProducts.map((p) => p.product.id)).size, [allProducts]);
   const hasSidebar = subcategories.length > 0;
 
-  const renderTopBanner = () => {
-    if (topBanners.length === 0) return null;
-    const banner = topBanners[0];
+  const renderTopBanner = (narrow: boolean) => {
+    if (topBanners.length === 0 || hasActiveFilters) return null;
+    const width = narrow ? contentWidth - 20 : SCREEN_WIDTH - GRID_H_PADDING * 2;
+    if (width <= 0) return null;
     return (
-      <TouchableOpacity
-        activeOpacity={banner.actionType === "NONE" ? 1 : 0.9}
-        onPress={() => handleBannerPress(banner)}
-        style={styles.topBanner}
-      >
-        <Image source={{ uri: banner.imageUrl }} style={styles.topBannerImage} resizeMode="cover" />
-        <View style={styles.topBannerOverlay}>
-          <Text style={styles.topBannerTitle} numberOfLines={1}>{banner.title}</Text>
-          {banner.subtitle && (
-            <Text style={styles.topBannerSubtitle} numberOfLines={1}>{banner.subtitle}</Text>
-          )}
-        </View>
-      </TouchableOpacity>
+      <View style={styles.topBanner}>
+        <HeroBannerSlide banner={topBanners[0]} width={width} height={140} onPress={handleBannerPress} />
+      </View>
     );
   };
 
@@ -386,6 +390,12 @@ export default function CategoryScreen() {
       style={styles.chipScroll}
       contentContainerStyle={styles.chipBar}
     >
+      {brandId && (
+        <TouchableOpacity style={[styles.chip, styles.chipActive]} onPress={() => setBrandId(null)} activeOpacity={0.7}>
+          <Text style={[styles.chipText, styles.chipTextActive]}>{brandTiles.find((b) => b.id === brandId)?.name}</Text>
+          <Ionicons name="close" size={13} color="#fff" />
+        </TouchableOpacity>
+      )}
       <TouchableOpacity
         style={[styles.chip, filterOnSale && styles.chipActive]}
         onPress={() => setFilterOnSale((v) => !v)}
@@ -419,7 +429,7 @@ export default function CategoryScreen() {
             sortBy === "price_asc" && styles.chipTextActive,
           ]}
         >
-          Price ↑
+          Price
         </Text>
       </TouchableOpacity>
 
@@ -441,7 +451,7 @@ export default function CategoryScreen() {
             sortBy === "price_desc" && styles.chipTextActive,
           ]}
         >
-          Price ↓
+          Price
         </Text>
       </TouchableOpacity>
     </ScrollView>
@@ -456,7 +466,7 @@ export default function CategoryScreen() {
       );
     }
 
-    if (chipFilteredProducts.length === 0) {
+    if (visibleProducts.length === 0) {
       return (
         <View style={styles.emptyContainer}>
           <View style={styles.emptyIcon}>
@@ -479,10 +489,16 @@ export default function CategoryScreen() {
         keyboardDismissMode="on-drag"
         keyboardShouldPersistTaps="handled"
         ref={gridRef}
-        products={chipFilteredProducts}
+        products={visibleProducts}
         layout="grid"
         sortBy={sortBy ?? undefined}
         cardWidth={narrow && contentWidth > 0 ? (contentWidth - 20 - GRID_GAP) / 2 : GRID_CARD_WIDTH}
+        ListHeaderComponent={renderTopBanner(narrow)}
+        midSlot={{
+          afterRows: 2,
+          bleed: narrow ? styles.gridNarrow.paddingHorizontal : styles.grid.paddingHorizontal,
+          element: <ShopByBrands brands={brandTiles} selectedId={brandId} onSelect={setBrandId} />,
+        }}
         contentContainerStyle={[
           styles.grid,
           narrow && styles.gridNarrow,
@@ -518,7 +534,7 @@ export default function CategoryScreen() {
                 ]}>
                   <Ionicons
                     name="grid-outline"
-                    size={24}
+                    size={28}
                     color={!activeSub ? colors.primary : "#94a3b8"}
                   />
                 </View>
@@ -595,7 +611,6 @@ export default function CategoryScreen() {
               style={styles.contentArea}
               onLayout={(e) => setContentWidth(e.nativeEvent.layout.width)}
             >
-              {renderTopBanner()}
               {renderSearchBox()}
               {renderGrandchildPills()}
               {renderFilterChips()}
@@ -604,7 +619,6 @@ export default function CategoryScreen() {
           </View>
         ) : (
           <View style={{ flex: 1 }}>
-            {renderTopBanner()}
             {renderSearchBox()}
             {renderGrandchildPills()}
             {renderFilterChips()}
@@ -649,9 +663,9 @@ const styles = StyleSheet.create({
     borderRightColor: colors.primary,
   },
   sidebarIconCircle: {
-    width: 48,
-    height: 48,
-    borderRadius: 10,
+    width: 60,
+    height: 60,
+    borderRadius: 12,
     backgroundColor: "#fff",
     justifyContent: "center",
     alignItems: "center",
@@ -665,8 +679,8 @@ const styles = StyleSheet.create({
   },
   // Product-photo thumbnails: show the whole pack and blend its white background into the tile
   sidebarImage: {
-    width: 40,
-    height: 40,
+    width: 54,
+    height: 54,
     mixBlendMode: "multiply",
   },
   sidebarLabel: {
@@ -711,6 +725,7 @@ const styles = StyleSheet.create({
   searchInput: {
     flex: 1,
     fontSize: 13,
+    letterSpacing: 0,
     color: colors.text,
     paddingVertical: 0,
   },
@@ -819,34 +834,6 @@ const styles = StyleSheet.create({
     lineHeight: 18,
   },
   topBanner: {
-    marginHorizontal: 10,
-    marginTop: 8,
-    height: 100,
-    borderRadius: 12,
-    overflow: "hidden",
-    backgroundColor: "#e2e8f0",
-  },
-  topBannerImage: {
-    width: "100%",
-    height: "100%",
-  },
-  topBannerOverlay: {
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    right: 0,
-    paddingHorizontal: 12,
-    paddingVertical: 8,
-    backgroundColor: "rgba(0,0,0,0.35)",
-  },
-  topBannerTitle: {
-    fontSize: 14,
-    fontWeight: "700",
-    color: "#fff",
-  },
-  topBannerSubtitle: {
-    fontSize: 11,
-    color: "rgba(255,255,255,0.85)",
-    marginTop: 1,
+    marginBottom: 12,
   },
 });

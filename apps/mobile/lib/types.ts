@@ -64,9 +64,10 @@ export interface Product {
   description: string | null;
   imageUrl: string | null;
   images?: string[];
-  brand: { id: string; name: string } | null;
+  brand: { id: string; name: string; imageUrl?: string | null } | null;
   foodType: string | null;
   productType: string | null;
+  tags?: string[];
   regulatoryMarks: string[];
   certifications: string[];
   dangerWarnings: string | null;
@@ -456,4 +457,17 @@ export interface TomorrowsBasket {
   total: number;
   walletBalance: number;
   hasActiveSubscriptions: boolean;
+}
+
+export interface SearchFacets {
+  tags: { tag: string; count: number; imageUrl: string | null }[];
+  brands: { id: string; name: string; count: number; imageUrl: string | null }[];
+  sizes: { label: string; count: number }[];
+  offerCount: number;
+}
+
+export interface SearchMeta {
+  strategy: string;
+  correctedQuery?: string;
+  expandedTerms?: string[];
 }

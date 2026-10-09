@@ -38,9 +38,9 @@ export function SearchBarButton() {
       <View style={styles.divider} />
       <Pressable
         style={({ pressed }) => [styles.mic, pressed && { opacity: 0.6 }]}
-        onPress={() => router.push({ pathname: "/ai-order", params: { voice: "1" } })}
+        onPress={() => router.push({ pathname: "/search", params: { voice: "1" } })}
         accessibilityRole="button"
-        accessibilityLabel="Order by voice"
+        accessibilityLabel="Search by voice"
         hitSlop={6}
       >
         <Ionicons name="mic-outline" size={20} color={colors.primary} />

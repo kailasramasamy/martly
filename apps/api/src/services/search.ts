@@ -92,22 +92,38 @@ export async function searchProducts(
 }
 
 async function keywordSearch(prisma: PrismaClient, q: string): Promise<string[]> {
-  // Search name + translation names via JSONB substring
-  const rows = await prisma.$queryRaw<{ id: string }[]>`
-    SELECT DISTINCT p.id
-    FROM products p
-    WHERE p.is_active = true
-      AND (
-        p.name ILIKE '%' || ${q} || '%'
-        OR p.description ILIKE '%' || ${q} || '%'
-        OR EXISTS (
-          SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
-          WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
-        )
-      )
+  // Tiers: 0 whole word in name, 1 word-start, 2 substring, 3 translated name, 4 description only
+  const rows = await prisma.$queryRaw<{ id: string; tier: number }[]>`
+    WITH term AS (SELECT regexp_replace(${q}, '([^[:alnum:] ])', '\\\\\\1', 'g') AS rx)
+    SELECT id, tier FROM (
+      SELECT p.id, p.name,
+        CASE
+          WHEN p.name ~* ('\\m' || term.rx || '\\M') THEN 0
+          WHEN p.name ~* ('\\m' || term.rx) THEN 1
+          WHEN p.name ILIKE '%' || ${q} || '%' THEN 2
+          WHEN EXISTS (
+            SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
+            WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
+          ) THEN 3
+          WHEN p.description ILIKE '%' || ${q} || '%' THEN 4
+        END AS tier
+      FROM products p, term
+      WHERE p.is_active = true
+    ) m
+    WHERE tier IS NOT NULL
+    ORDER BY tier, name
     LIMIT 50
   `;
-  return rows.map((r) => r.id);
+  return tightestTier(rows).map((r) => r.id);
+}
+
+// Prefer whole-word name hits ("dal" → not "Dalda"), then any name hit, before falling back to everything
+function tightestTier<T extends { tier: number }>(rows: T[]): T[] {
+  for (const maxTier of [0, 3]) {
+    const hits = rows.filter((r) => r.tier <= maxTier);
+    if (hits.length >= 3) return hits;
+  }
+  return rows;
 }
 
 async function trigramSearch(prisma: PrismaClient, q: string): Promise<string[]> {

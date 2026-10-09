@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SUPPORTED_LANGUAGES } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SUPPORTED_LANGUAGES } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -1104,3 +1104,13 @@ export const updateRecipeSchema = z.object({
   translations: translationsSchema,
 });
 export type UpdateRecipeInput = z.infer<typeof updateRecipeSchema>;
+
+export const storeProductSearchQuerySchema = z.object({
+  q: z.string().trim().min(1),
+  tag: z.string().trim().toLowerCase().optional(),
+  brandIds: z.string().optional().transform((v) => v?.split(",").filter(Boolean)),
+  size: z.string().optional(),
+  foodType: z.nativeEnum(FoodType).optional(),
+  hasDiscount: z.enum(["true", "false"]).optional().transform((v) => v === "true"),
+  sortBy: z.nativeEnum(SearchSortBy).default(SearchSortBy.RELEVANCE),
+});

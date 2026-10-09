@@ -511,6 +511,7 @@ model Product {
 
   @@index([productType])
   @@index([organizationId])
+  @@index([tags], type: Gin)
   @@map("products")
 }
 

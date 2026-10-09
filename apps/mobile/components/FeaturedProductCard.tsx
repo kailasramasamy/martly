@@ -5,6 +5,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 import { useLanguage } from "../lib/language-context";
+import { FoodTypeMark } from "./FoodTypeMark";
+import { CompactProductCard } from "./CompactProductCard";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const CARD_GAP = 10;
@@ -36,6 +38,8 @@ interface FeaturedProductCardProps {
   width?: number;
   // Sizes to list on the unit line (e.g. "1kg · 5kg · 10kg") instead of the default variant name
   variantSizes?: string[];
+  // 3-column search layout: smaller card, "N options" instead of the sizes row
+  compact?: boolean;
 }
 
 function getDiscountLabel(item: StoreProduct): string | null {
@@ -43,15 +47,6 @@ function getDiscountLabel(item: StoreProduct): string | null {
   return item.pricing.discountType === "PERCENTAGE"
     ? `${item.pricing.discountValue}% OFF`
     : `\u20B9${item.pricing.discountValue} OFF`;
-}
-
-function FoodTypeMark({ foodType }: { foodType: string }) {
-  const veg = foodType === "VEG" || foodType === "VEGAN";
-  return (
-    <View style={[styles.foodIndicator, veg ? styles.vegBorder : styles.nvBorder]}>
-      <View style={[styles.foodDot, veg ? styles.vegFill : styles.nvFill]} />
-    </View>
-  );
 }
 
 function CardImage({ item, size, isOutOfStock, isWishlisted, onHeart }: {
@@ -183,7 +178,7 @@ function CardDetails({ item, variantCount, variantSizes, onShowVariants, lowStoc
   );
 }
 
-export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants, isWishlisted, onToggleWishlist, isMember, width, variantSizes }: FeaturedProductCardProps) {
+function StandardCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants, isWishlisted, onToggleWishlist, isMember, width, variantSizes }: FeaturedProductCardProps) {
   const cardWidth = width ?? FEATURED_CARD_WIDTH;
   const tile = imageTileSize(cardWidth);
   const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
@@ -224,6 +219,10 @@ export function FeaturedProductCard({ item, onAddToCart, onUpdateQuantity, quant
   );
 }
 
+export function FeaturedProductCard(props: FeaturedProductCardProps) {
+  return props.compact ? <CompactProductCard {...props} /> : <StandardCard {...props} />;
+}
+
 const styles = StyleSheet.create({
   card: {
     backgroundColor: "#fff",
@@ -246,16 +245,6 @@ const styles = StyleSheet.create({
   // Multiply blends white product-photo backgrounds into the tile so every image looks uniform
   image: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   noImageLetter: { fontFamily: fonts.bold, fontSize: 24, color: "#cbd5e1" },
-  foodIndicator: {
-    position: "absolute", bottom: 6, left: 6, width: 12, height: 12,
-    borderWidth: 1.5, borderRadius: 2, backgroundColor: "#fff",
-    justifyContent: "center", alignItems: "center",
-  },
-  vegBorder: { borderColor: "#0a8f08" },
-  nvBorder: { borderColor: "#b71c1c" },
-  foodDot: { width: 5, height: 5, borderRadius: 3 },
-  vegFill: { backgroundColor: "#0a8f08" },
-  nvFill: { backgroundColor: "#b71c1c" },
   discountTag: {
     position: "absolute", top: 6, left: 6,
     backgroundColor: colors.accent, borderRadius: 20, paddingHorizontal: 8, paddingVertical: 3,

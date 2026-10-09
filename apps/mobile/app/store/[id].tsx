@@ -1,10 +1,13 @@
 import { useEffect, useState, useMemo } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import { useLocalSearchParams } from "expo-router";
 import { api } from "../../lib/api";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductList } from "../../components/ProductList";
+import { ShopByBrands } from "../../components/ShopByBrands";
+import { brandsFromProducts } from "../../lib/brand-strip";
 import { FloatingCart } from "../../components/FloatingCart";
 import { ProductCardSkeleton } from "../../components/SkeletonLoader";
 import type { Store, StoreProduct } from "../../lib/types";
@@ -16,6 +19,7 @@ export default function StoreDetailScreen() {
   const [loading, setLoading] = useState(true);
   const [filterText, setFilterText] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [brandId, setBrandId] = useState<string | null>(null);
 
   const categories = useMemo(() => {
     const catMap = new Map<string, string>();
@@ -37,6 +41,14 @@ export default function StoreDetailScreen() {
     }
     return result;
   }, [products, filterText, activeCategory]);
+
+  const brandTiles = useMemo(() => brandsFromProducts(filteredProducts), [filteredProducts]);
+  const visibleProducts = useMemo(
+    () => (brandId ? filteredProducts.filter((p) => p.product.brand?.id === brandId) : filteredProducts),
+    [filteredProducts, brandId],
+  );
+
+  useEffect(() => setBrandId(null), [activeCategory]);
 
   useEffect(() => {
     if (!id) return;
@@ -104,9 +116,20 @@ export default function StoreDetailScreen() {
           autoCapitalize="none"
           autoCorrect={false}
         />
+        {brandId && (
+          <TouchableOpacity style={styles.brandChip} onPress={() => setBrandId(null)} activeOpacity={0.7}>
+            <Text style={styles.brandChipText}>{brandTiles.find((b) => b.id === brandId)?.name}</Text>
+            <Ionicons name="close" size={14} color="#fff" />
+          </TouchableOpacity>
+        )}
         <ProductList
-          products={filteredProducts}
+          products={visibleProducts}
           layout="grid"
+          midSlot={{
+            afterRows: 2,
+            bleed: spacing.md,
+            element: <ShopByBrands brands={brandTiles} selectedId={brandId} onSelect={setBrandId} />,
+          }}
           keyboardDismissMode="on-drag"
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={styles.grid}
@@ -139,6 +162,12 @@ const styles = StyleSheet.create({
     borderWidth: 1, borderColor: colors.border, borderRadius: 8,
     padding: spacing.sm, margin: spacing.md, fontSize: fontSize.md, backgroundColor: colors.surface,
   },
+  brandChip: {
+    flexDirection: "row", alignItems: "center", alignSelf: "flex-start", gap: 4, height: 30,
+    marginHorizontal: spacing.md, marginBottom: spacing.sm, paddingHorizontal: 10,
+    borderRadius: 16, backgroundColor: colors.primary,
+  },
+  brandChipText: { fontSize: fontSize.sm, color: "#fff", fontWeight: "600" },
   grid: { paddingBottom: spacing.md },
   empty: { textAlign: "center", color: colors.textSecondary, marginTop: spacing.xl },
 });

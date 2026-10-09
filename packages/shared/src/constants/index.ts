@@ -468,3 +468,18 @@ export const SUPPORTED_LANGUAGES = {
   hi: "Hindi (हिन्दी)",
 } as const;
 export type LanguageCode = keyof typeof SUPPORTED_LANGUAGES;
+
+export const SearchSortBy = {
+  RELEVANCE: "relevance",
+  PRICE_ASC: "price_asc",
+  PRICE_DESC: "price_desc",
+  DISCOUNT: "discount",
+} as const;
+export type SearchSortBy = (typeof SearchSortBy)[keyof typeof SearchSortBy];
+
+export const SearchSortLabels: Record<SearchSortBy, string> = {
+  relevance: "Relevance",
+  price_asc: "Price (low to high)",
+  price_desc: "Price (high to low)",
+  discount: "Discount (high to low)",
+};

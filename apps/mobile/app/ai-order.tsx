@@ -12,7 +12,7 @@ import {
   Animated,
   Dimensions,
 } from "react-native";
-import { useRouter, useLocalSearchParams } from "expo-router";
+import { useRouter } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
@@ -238,12 +238,6 @@ export default function AIOrderScreen() {
       addsPunctuation: true,
     });
   }, [showToast]);
-
-  // Opened from the home search bar's mic: start listening right away
-  const { voice } = useLocalSearchParams<{ voice?: string }>();
-  useEffect(() => {
-    if (voice === "1") startListening();
-  }, [voice, startListening]);
 
   const stopListening = useCallback(() => {
     ExpoSpeechRecognitionModule.stop();

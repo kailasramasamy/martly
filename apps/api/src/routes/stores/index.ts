@@ -1,5 +1,5 @@
 import type { FastifyInstance } from "fastify";
-import { createStoreSchema, updateStoreSchema } from "@martly/shared/schemas";
+import { createStoreSchema, updateStoreSchema, storeProductSearchQuerySchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
@@ -7,7 +7,8 @@ import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, ve
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
 import { haversine } from "../../lib/geo.js";
-import { searchProducts } from "../../services/search.js";
+import { searchStoreProducts } from "../../services/store-search.js";
+import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
 
 export async function storeRoutes(app: FastifyInstance) {
@@ -243,8 +244,20 @@ export async function storeRoutes(app: FastifyInstance) {
       return reply.forbidden("Access denied");
     }
 
+    if (q) {
+      const parsed = storeProductSearchQuerySchema.safeParse(request.query);
+      if (!parsed.success) return reply.badRequest(parsed.error.issues[0].message);
+      const { data, facets, searchMeta } = await searchStoreProducts(app.prisma, store.id, parsed.data);
+      return {
+        success: true,
+        data,
+        meta: { total: data.length, page: 1, pageSize: data.length, totalPages: 1 },
+        searchMeta,
+        facets,
+      };
+    }
+
     const where: Record<string, unknown> = { storeId: request.params.id, isActive: true };
-    let searchMeta: { strategy: string; correctedQuery?: string; expandedTerms?: string[] } | undefined;
 
     if (productIds) {
       where.productId = { in: productIds.split(",").filter(Boolean) };
@@ -264,16 +277,6 @@ export async function storeRoutes(app: FastifyInstance) {
         { discountStart: null, discountEnd: { gte: now } },
         { discountStart: { lte: now }, discountEnd: { gte: now } },
       ];
-    }
-    if (q) {
-      const searchResult = await searchProducts(app.prisma, q);
-      if (searchResult.productIds.length > 0) {
-        where.productId = { in: searchResult.productIds };
-      } else {
-        // Fall back to basic keyword match (may return 0 results)
-        where.product = { name: { contains: q, mode: "insensitive" } };
-      }
-      searchMeta = searchResult.meta;
     }
     if (categoryId) {
       // Detect level: try department → category → subcategory
@@ -302,50 +305,16 @@ export async function storeRoutes(app: FastifyInstance) {
     else if (sortBy === "newest") orderBy = { createdAt: "desc" };
 
     const [storeProducts, total] = await Promise.all([
-      app.prisma.storeProduct.findMany({
-        where,
-        skip,
-        take: Number(pageSize),
-        include: {
-          product: { include: { subcategory: true, variants: true } },
-          variant: true,
-        },
-        orderBy,
-      }),
+      app.prisma.storeProduct.findMany({ where, skip, take: Number(pageSize), include: storeProductInclude, orderBy }),
       app.prisma.storeProduct.count({ where }),
     ]);
+    const data = await decorateStoreProducts(app.prisma, storeProducts);
 
-    // Batch-fetch review aggregates for these products
-    const reviewProductIds = [...new Set(storeProducts.map((sp) => sp.productId))];
-    const reviewAggs = reviewProductIds.length > 0
-      ? await app.prisma.review.groupBy({
-          by: ["productId"],
-          where: { productId: { in: reviewProductIds }, status: "APPROVED" },
-          _avg: { rating: true },
-          _count: { rating: true },
-        })
-      : [];
-    const reviewMap = new Map(reviewAggs.map((r) => [r.productId, { averageRating: Math.round((r._avg.rating ?? 0) * 10) / 10, reviewCount: r._count.rating }]));
-
-    const data = storeProducts.map((sp) => {
-      const pricing = calculateEffectivePrice(
-        sp.price as unknown as number,
-        sp.variant as Parameters<typeof calculateEffectivePrice>[1],
-        sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
-        (sp as unknown as { memberPrice: number | null }).memberPrice,
-      );
-      const variant = formatVariantUnit(sp.variant);
-      const reviews = reviewMap.get(sp.productId);
-      const product = reviews ? { ...sp.product, averageRating: reviews.averageRating, reviewCount: reviews.reviewCount } : sp.product;
-      return { ...sp, product, variant, pricing, availableStock: sp.stock - sp.reservedStock };
-    });
-
-    const response: PaginatedResponse<(typeof data)[0]> & { searchMeta?: typeof searchMeta } = {
+    const response: PaginatedResponse<(typeof data)[0]> = {
       success: true,
       data,
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
     };
-    if (searchMeta) response.searchMeta = searchMeta;
     return response;
   });
 
