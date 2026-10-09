@@ -17,11 +17,12 @@ dotenv.config({ override: true });
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const OUT = join(ROOT, "out");
-const MODEL = "gpt-image-1.5";
+const MODEL = "gpt-image-2.5-flare";
 const CONCURRENCY = 4;
 
 const STYLE = `Professional category image for an Indian grocery delivery app.
-Photorealistic studio product photography, cut out on a fully transparent background: no backdrop, no table surface, no extra props.
+A real photograph, not a 3D render or illustration: natural textures and true-to-life colours, as shot by a professional food and product photographer.
+Cut out on a fully transparent background: no backdrop, no table surface, no extra props.
 Camera at a slight 30-degree top-down angle. Soft diffused key light from the top-left, a gentle soft contact shadow directly beneath the items.
 Compact, balanced cluster with a roughly square overall footprint (about as tall as it is wide), centred in frame with generous empty margin on every side.
 Generic unbranded items only: absolutely no text, letters, numbers, logos, labels, brand names or printed packaging graphics.

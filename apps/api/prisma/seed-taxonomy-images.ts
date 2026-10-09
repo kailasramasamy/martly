@@ -1,5 +1,5 @@
 /**
- * Upload generated department/category images to S3 and set imageUrl by slug.
+ * Upload generated department/category/subcategory images to S3 and set imageUrl by slug.
  * Images come from scripts/taxonomy-images/generate.ts (out/<level>/<slug>.webp).
  * Filenames carry a content hash so a regenerated image never hits a stale cache.
  * Run: cd apps/api && npx tsx prisma/seed-taxonomy-images.ts
@@ -19,7 +19,7 @@ const OUT = join(dirname(fileURLToPath(import.meta.url)), "../scripts/taxonomy-i
 const BUCKET = process.env.S3_BUCKET!;
 const BASE_URL = process.env.MEDIA_PUBLIC_BASE_URL!;
 const KEY_PREFIX = process.env.S3_KEY_PREFIX ? `${process.env.S3_KEY_PREFIX}/` : "";
-const LEVELS = ["department", "category"] as const;
+const LEVELS = ["department", "category", "subcategory"] as const;
 
 const prisma = new PrismaClient();
 const s3 = new S3Client({
@@ -48,10 +48,12 @@ async function seedLevel(level: (typeof LEVELS)[number]) {
   const slugs = readdirSync(join(OUT, level)).filter((f) => f.endsWith(".webp")).map((f) => f.slice(0, -5));
   const urls = await Promise.all(slugs.map(async (slug) => [slug, await upload(level, slug)] as const));
 
-  const results = await prisma.$transaction(urls.map(([slug, imageUrl]) =>
-    level === "department"
-      ? prisma.department.updateMany({ where: { slug }, data: { imageUrl } })
-      : prisma.category.updateMany({ where: { slug }, data: { imageUrl } })));
+  const update = {
+    department: (slug: string, imageUrl: string) => prisma.department.updateMany({ where: { slug }, data: { imageUrl } }),
+    category: (slug: string, imageUrl: string) => prisma.category.updateMany({ where: { slug }, data: { imageUrl } }),
+    subcategory: (slug: string, imageUrl: string) => prisma.subcategory.updateMany({ where: { slug }, data: { imageUrl } }),
+  }[level];
+  const results = await prisma.$transaction(urls.map(([slug, imageUrl]) => update(slug, imageUrl)));
 
   const missing = urls.filter((_, i) => results[i].count === 0).map(([slug]) => slug);
   console.log(`${level}: uploaded ${urls.length}, updated ${urls.length - missing.length}`);
