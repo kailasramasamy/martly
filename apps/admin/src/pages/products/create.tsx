@@ -18,127 +18,20 @@ import { ImageUpload } from "../../components/ImageUpload";
 import { MultiImageUpload } from "../../components/MultiImageUpload";
 import { sectionTitle } from "../../theme";
 import { axiosInstance } from "../../providers/data-provider";
+import {
+  UNIT_TYPES, STORAGE_TYPES, FOOD_TYPES, GST_OPTIONS, COMMON_ALLERGENS, PRODUCT_TYPES,
+  REGULATORY_MARKS, COMMON_CERTIFICATIONS, STORAGE_INSTRUCTIONS, PACK_TYPES,
+  buildCascaderOptions,
+} from "./product-form-options";
+import type { CascaderOption } from "./product-form-options";
 
 const { Text } = Typography;
-
-const UNIT_TYPES = ["KG", "GRAM", "LITER", "ML", "PIECE", "PACK", "DOZEN", "BUNDLE"];
-
-const STORAGE_TYPES = [
-  { label: "Room Temperature", value: "AMBIENT" },
-  { label: "Refrigerated (2-8°C)", value: "REFRIGERATED" },
-  { label: "Deep Chilled (0-2°C)", value: "DEEP_CHILLED" },
-  { label: "Frozen (-18°C)", value: "FROZEN" },
-  { label: "Cool & Dry", value: "COOL_DRY" },
-  { label: "Humidity Controlled", value: "HUMIDITY_CONTROLLED" },
-];
-
-const FOOD_TYPES = [
-  { label: "Vegetarian", value: "VEG" },
-  { label: "Non-Vegetarian", value: "NON_VEG" },
-  { label: "Vegan", value: "VEGAN" },
-  { label: "Egg", value: "EGG" },
-];
-
-const GST_OPTIONS = [
-  { label: "0%", value: 0 },
-  { label: "5%", value: 5 },
-  { label: "12%", value: 12 },
-  { label: "18%", value: 18 },
-  { label: "28%", value: 28 },
-];
-
-const COMMON_ALLERGENS = [
-  "Gluten", "Milk", "Eggs", "Tree Nuts", "Peanuts", "Soy", "Fish", "Shellfish", "Sesame", "Mustard", "Celery", "Sulphites",
-];
-
-const PRODUCT_TYPES = [
-  { label: "Grocery", value: "GROCERY" },
-  { label: "Snacks", value: "SNACKS" },
-  { label: "Beverages", value: "BEVERAGES" },
-  { label: "Dairy", value: "DAIRY" },
-  { label: "Frozen", value: "FROZEN" },
-  { label: "Fresh Produce", value: "FRESH_PRODUCE" },
-  { label: "Bakery", value: "BAKERY" },
-  { label: "Personal Care", value: "PERSONAL_CARE" },
-  { label: "Household", value: "HOUSEHOLD" },
-  { label: "Baby Care", value: "BABY_CARE" },
-  { label: "Pet Care", value: "PET_CARE" },
-  { label: "OTC Pharma", value: "OTC_PHARMA" },
-];
-
-const REGULATORY_MARKS = [
-  { label: "FSSAI", value: "FSSAI" },
-  { label: "ISI Mark", value: "ISI" },
-  { label: "AGMARK", value: "AGMARK" },
-  { label: "BIS Certification", value: "BIS" },
-  { label: "Organic India", value: "ORGANIC_INDIA" },
-  { label: "Halal", value: "HALAL" },
-  { label: "Kosher", value: "KOSHER" },
-  { label: "Ecomark", value: "ECOMARK" },
-  { label: "FPO Mark", value: "FPO" },
-];
-
-const COMMON_CERTIFICATIONS = [
-  { label: "Organic", value: "Organic" },
-  { label: "Cruelty-Free", value: "Cruelty-Free" },
-  { label: "ISO 22000", value: "ISO 22000" },
-  { label: "GMP", value: "GMP" },
-  { label: "HACCP", value: "HACCP" },
-  { label: "Vegan Certified", value: "Vegan Certified" },
-  { label: "Dermatologically Tested", value: "Dermatologically Tested" },
-];
-
-const STORAGE_INSTRUCTIONS = [
-  "Store in a cool, dry place",
-  "Keep refrigerated (2-8°C)",
-  "Store below 25°C",
-  "Keep frozen (-18°C or below)",
-  "Store in a cool, dry place away from direct sunlight",
-  "Refrigerate after opening",
-  "Keep in an airtight container after opening",
-  "Store in a dry place away from moisture",
-  "Do not freeze",
-  "Use within 3 days of opening",
-  "Keep away from heat and humidity",
-  "Store at room temperature",
-];
-
-const PACK_TYPES = [
-  "Pouch", "Box", "Bottle", "Can", "Jar", "Sachet", "Packet", "Bag",
-  "Carton", "Tin", "Tube", "Blister Pack", "Wrapper", "Tray", "Cup",
-  "Tetra Pack", "Stand-up Pouch", "Squeeze Bottle", "Spray Bottle", "Tub",
-];
 
 interface StoreRecord {
   id: string;
   name: string;
   address: string;
   status: string;
-}
-
-interface SubcategoryNode { id: string; name: string; }
-interface CategoryNode { id: string; name: string; subcategories: SubcategoryNode[]; }
-interface DepartmentNode { id: string; name: string; categories: CategoryNode[]; }
-
-interface CascaderOption {
-  value: string;
-  label: string;
-  children?: CascaderOption[];
-}
-
-function buildCascaderOptions(departments: DepartmentNode[]): CascaderOption[] {
-  return departments.map((d) => ({
-    value: d.id,
-    label: d.name,
-    children: d.categories.map((c) => ({
-      value: c.id,
-      label: c.name,
-      children: c.subcategories.map((s) => ({
-        value: s.id,
-        label: s.name,
-      })),
-    })),
-  }));
 }
 
 export const ProductCreate = () => {
