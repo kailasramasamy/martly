@@ -1,0 +1,121 @@
+{
+  "Fruits & Vegetables": {
+    "Fresh Vegetables": ["Onion & Garlic", "Tomato", "Potato", "Capsicum & Chillies", "Leafy Greens (Palak, Methi, etc.)", "Brinjal & Okra (Bhindi)", "Gourds & Squash (Lauki, Tori, Karela)", "Beans & Legumes (French Beans, Sem)", "Root Vegetables (Carrot, Beetroot, Radish)", "Other Vegetables", "Cauliflower & Cabbage", "Peas", "Corn & Baby Corn", "Mushrooms"],
+    "Fresh Fruits": ["Banana", "Apple", "Mango", "Orange & Mosambi", "Pomegranate (Anaar)", "Grapes", "Papaya", "Guava (Amrood)", "Watermelon & Muskmelon", "Chiku (Sapota)", "Pineapple", "Seasonal & Exotic Fruits", "Litchi"],
+    "Fresh Herbs & Sprouts": ["Coriander (Dhaniya)", "Curry Leaves", "Ginger & Turmeric (Fresh)", "Mint (Pudina)", "Sprouts (Moong, Mixed)"],
+    "Cut & Prepared": ["Cut Vegetables", "Cut Fruits", "Salad Mixes"],
+    "Organic Produce": ["Organic Vegetables", "Organic Fruits"]
+  },
+  "Dairy": {
+    "Milk": ["Toned Milk", "Full Cream Milk", "Double Toned Milk", "A2 Milk", "Organic Milk", "UHT / Long Life Milk", "Skimmed Milk"],
+    "Curd & Yogurt": ["Fresh Curd (Dahi)", "Probiotic Yogurt", "Flavoured Yogurt", "Greek Yogurt", "Hung Curd (Chakka)", "Mishti Doi"],
+    "Paneer & Tofu": ["Fresh Paneer", "Malai Paneer", "Tofu"],
+    "Butter": ["Salted Butter", "Unsalted Butter", "Cooking Butter"],
+    "Cheese": ["Processed Cheese (Slices & Blocks)", "Mozzarella", "Cottage Cheese (Paneer)", "Cheddar", "Cream Cheese & Spread"],
+    "Cream & Dairy Whitener": ["Dairy Whitener", "Fresh Cream", "Whipping Cream"],
+    "Condensed & Evaporated Milk": ["Condensed Milk (Milkmaid)", "Khoya (Mawa)", "Evaporated Milk"]
+  },
+  "Grocery & Staples": {
+    "Rice": ["Parboiled Rice", "Non-Basmati Rice", "Idli & Dosa Rice", "Basmati Rice", "Poha & Puffed Rice", "Brown Rice"],
+    "Atta & Flours": ["Wheat Atta", "Sooji & Rava", "Rice Flour", "Besan (Gram Flour)", "Maida (Refined Flour)", "Ragi Flour", "Multigrain Atta", "Corn Flour", "Jowar Flour", "Bajra Flour", "Sattu"],
+    "Dal & Pulses": ["Toor Dal (Arhar)", "Urad Dal", "Moong Dal", "Chana Dal", "Chole (Kabuli Chana)", "Masoor Dal", "Lobia (Black Eyed Peas)", "Rajma", "Mixed Pulses"],
+    "Edible Oils": ["Sunflower Oil", "Groundnut Oil", "Sesame Oil (Til)", "Coconut Oil", "Blended Oil", "Rice Bran Oil", "Vanaspati & Dalda", "Olive Oil", "Soybean Oil", "Mustard Oil"],
+    "Spices & Masala": ["Ground Spices", "Whole Spices", "Blended Masala", "Tamarind", "Herbs & Seasonings", "Curry Paste & Wet Masala"],
+    "Salt & Sugar": ["Iodised Salt", "White Sugar", "Jaggery (Gur)", "Jaggery Powder", "Rock Salt (Sendha Namak)", "Brown Sugar", "Mishri (Rock Sugar)", "Black Salt (Kala Namak)"],
+    "Ghee": ["Cow Ghee", "Buffalo Ghee", "Organic Ghee"],
+    "Dry Fruits & Nuts": ["Cashews (Kaju)", "Almonds (Badam)", "Raisins (Kishmish)", "Peanuts", "Dates (Khajoor)", "Pistachios (Pista)", "Mixed Dry Fruits", "Seeds (Chia, Flax, Pumpkin, Sunflower)", "Walnuts (Akhrot)", "Figs (Anjeer)"],
+    "Papad & Fryums": ["Fryums & Appalam", "Papad"],
+    "Pickles & Chutney": ["Mango Pickle", "Lime Pickle", "Mixed Pickle", "Chilli Pickle", "Chutney", "Murabba"],
+    "Sauces & Condiments": ["Tomato Ketchup", "Honey", "Jam & Marmalade", "Chilli Sauce", "Soy Sauce", "Vinegar", "Mayonnaise", "Peanut Butter", "Chocolate & Hazelnut Spread", "Mustard Sauce"]
+  },
+  "Meat, Fish & Eggs": {
+    "Chicken": ["Chicken Curry Cut", "Whole Chicken", "Chicken Breast", "Chicken Legs & Thighs", "Chicken Wings", "Chicken Keema", "Marinated Chicken"],
+    "Eggs": ["White Eggs", "Brown Eggs", "Organic Eggs", "Quail Eggs"],
+    "Fish & Seafood": ["Bangda (Mackerel)", "Surmai (King Fish)", "Prawns & Shrimp", "Other Fish", "Pomfret", "Rohu", "Crab", "Fish Fillets"],
+    "Mutton & Lamb": ["Mutton Curry Cut", "Mutton Keema", "Mutton Chops", "Marinated Mutton"],
+    "Sausages & Cold Cuts": ["Chicken Sausage", "Salami", "Ham & Cold Cuts", "Pork Sausage"]
+  },
+  "Snacks & Packaged Foods": {
+    "Biscuits & Cookies": ["Glucose & Marie", "Cream Biscuits", "Cashew & Butter Cookies", "Digestive & Health", "Rusk & Toast", "Khari & Puff", "Wafers & Waffle"],
+    "Namkeen & Savoury Snacks": ["Mixture & Chivda", "Murukku & Thattai", "Bhujia & Sev", "Moong Dal & Chana", "Aloo & Potato Snacks", "Papad Chips", "Mathri & Shakkar Para", "Khakhra"],
+    "Chips & Crisps": ["Potato Chips", "Banana Chips", "Kurkure & Extruded Snacks", "Puffs & Rings", "Tortilla & Nachos"],
+    "Chocolates & Confectionery": ["Chocolate Bars & Countlines", "Milk Chocolate", "Toffees & Eclairs", "Candy", "Dark Chocolate", "Chewing Gum & Mints", "Lollipops", "White Chocolate"],
+    "Instant Noodles & Pasta": ["Instant Noodles", "Vermicelli (Sevai)", "Pasta", "Cup Noodles"],
+    "Breakfast Cereals & Muesli": ["Oats", "Cornflakes", "Chocos & Kids Cereal", "Muesli & Granola", "Porridge & Daliya"],
+    "Sweets & Mithai": ["Dry Sweet (Ladoo, Barfi, Peda)", "Rasgulla & Gulab Jamun", "Halwa & Sheera", "Packaged Mithai"],
+    "Ready to Eat & Cook": ["Instant Upma & Poha", "Ready to Cook Gravies", "Ready to Eat Meals", "Instant Soup", "Frozen Ready Meals"],
+    "Canned & Preserved Foods": ["Canned Vegetables", "Canned Fruits", "Canned Beans & Legumes", "Canned Fish & Meat"]
+  },
+  "Beverages": {
+    "Tea": ["Leaf & Dust Tea (CTC)", "Tea Bags", "Green Tea", "Masala Tea", "Herbal & Flavoured Tea", "Instant Tea Premix"],
+    "Coffee": ["Filter Coffee Powder", "Chicory Blend", "Instant Coffee", "Ground Coffee Beans", "Cold Coffee Premix"],
+    "Health & Energy Drinks": ["Malted Beverages (Bournvita, Horlicks)", "Glucose & Energy Drinks", "Electrolyte & ORS", "Protein Drinks"],
+    "Soft Drinks & Carbonated": ["Cola", "Orange & Mango", "Lemon & Lime", "Soda & Tonic Water", "Diet & Zero Sugar"],
+    "Juices & Fruit Drinks": ["Mango Drinks (Frooti, Maaza)", "Fruit Juice (100%)", "Coconut Water", "Fruit Nectar & Drinks", "Sugarcane Juice"],
+    "Water": ["Packaged Drinking Water", "Mineral Water", "Flavoured Water"],
+    "Milk Drinks": ["Buttermilk (Chaas)", "Lassi", "Flavoured Milk", "Milkshake"],
+    "Sherbet & Traditional": ["Rooh Afza & Sharbat", "Jaljeera", "Aam Panna", "Thandai"]
+  },
+  "Bakery": {
+    "Bread": ["Sandwich Bread", "White Bread", "Brown & Whole Wheat Bread", "Multigrain Bread", "Pav & Bun", "Garlic Bread"],
+    "Bakery Snacks": ["Buns & Rolls", "Khari & Puff Pastry", "Cookies (Bakery Fresh)", "Croissant"],
+    "Rusk": ["Plain Rusk", "Elaichi Rusk", "Suji Rusk"],
+    "Cakes & Pastries": ["Sliced Cake", "Muffins & Cupcakes", "Pastries"]
+  },
+  "Home Care": {
+    "Detergent": ["Detergent Powder", "Detergent Bar", "Liquid Detergent", "Fabric Softener", "Stain Remover"],
+    "Dishwash": ["Dishwash Bar", "Dishwash Gel / Liquid", "Scrub Pad & Sponge", "Dishwash Powder"],
+    "Floor & Surface Cleaners": ["Floor Cleaner (Phenyl & Disinfectant)", "Toilet Cleaner", "Bathroom Cleaner", "Kitchen Cleaner", "Glass Cleaner", "Multi-Surface Spray"],
+    "Air Fresheners & Repellents": ["Mosquito Liquid Vaporiser", "Mosquito Coil & Mat", "Cockroach & Ant Killer", "Room Freshener Spray", "Air Freshener Gel & Block", "Rat Killer"],
+    "Cleaning Tools & Supplies": ["Broom & Mop", "Garbage Bags", "Dustpan & Brush", "Cling Wrap & Aluminium Foil", "Rubber Gloves"],
+    "Paper & Disposables": ["Tissue Paper & Napkins", "Disposable Plates & Cups", "Garbage Bags", "Paper Towels / Kitchen Roll", "Toilet Paper"],
+    "Shoe Care": ["Shoe Polish", "Shoe Cleaner"]
+  },
+  "Personal Care": {
+    "Bath & Body": ["Bathing Soap (Bar)", "Hand Wash", "Talcum Powder", "Body Lotion", "Body Wash & Shower Gel", "Hand Sanitiser"],
+    "Oral Care": ["Toothpaste", "Toothbrush", "Mouthwash", "Tongue Cleaner", "Dental Floss"],
+    "Hair Care": ["Hair Oil", "Shampoo", "Conditioner", "Hair Colour & Dye", "Anti-Dandruff Treatment", "Hair Serum", "Hair Gel & Wax"],
+    "Skin Care": ["Face Wash & Cleanser", "Moisturiser & Lotion", "Face Cream (Fairness & Anti-Ageing)", "Sunscreen", "Lip Balm", "Face Scrub & Mask"],
+    "Feminine Hygiene": ["Sanitary Pads", "Panty Liners", "Intimate Wash", "Menstrual Cups", "Tampons"],
+    "Men's Grooming": ["Razor & Blades", "Shaving Cream & Gel", "After Shave", "Beard Oil & Balm", "Trimmer Accessories"],
+    "Health & Wellness": ["Pain Relief (Balm, Spray)", "Cough & Cold Relief", "Digestive Care (Hajmola, ENO)", "Mosquito Repellent (Odomos, Patches)", "Cotton & Bandages", "Immunity & Supplements", "Condoms & Lubricants"],
+    "Deodorants & Fragrances": ["Deodorant Spray", "Roll-On", "Perfume & Body Mist", "Attar"]
+  },
+  "Pooja & Festivals": {
+    "Pooja Essentials": ["Agarbatti (Incense Sticks)", "Camphor (Kapur)", "Diya & Wicks", "Sindoor & Kumkum", "Dhoop & Cones", "Sacred Thread (Mauli / Kalava)"],
+    "Pooja Offerings": ["Flowers & Garlands (if available)", "Coconut (Nariyal)", "Betel Leaves & Areca", "Mishri & Batasha", "Panchamrit Ingredients"],
+    "Festival Items": ["Rangoli Colours", "Diyas & Decorative Candles", "Gift Packs & Hampers", "Holi Colours (Gulal)"]
+  },
+  "Baby Care": {
+    "Diapers & Wipes": ["Diaper Pants", "Baby Diapers", "Baby Wipes", "Changing Mats"],
+    "Baby Food & Formula": ["Infant Formula", "Baby Cereal", "Baby Purees & Snacks", "Teething Biscuits"],
+    "Baby Bath & Skin": ["Baby Soap & Body Wash", "Baby Powder", "Baby Oil", "Baby Lotion & Cream", "Baby Shampoo", "Diaper Rash Cream"],
+    "Baby Accessories": ["Feeding Bottles", "Sippers & Cups", "Pacifiers & Teethers", "Breast Pump & Accessories"]
+  },
+  "Frozen Foods": {
+    "Ice Cream & Desserts": ["Ice Cream Cones & Bars", "Ice Cream Tubs", "Kulfi", "Frozen Desserts"],
+    "Frozen Snacks": ["Frozen Fries & Wedges", "Frozen Paratha & Roti", "Frozen Samosa & Spring Roll", "Frozen Tikki & Kebab", "Frozen Momos & Dumplings", "Frozen Pizza & Burger Patty"],
+    "Frozen Vegetables": ["Frozen Peas", "Frozen Sweet Corn", "Frozen Mixed Vegetables", "Frozen Paneer"],
+    "Frozen Meat & Seafood": ["Frozen Chicken", "Frozen Fish & Prawns", "Frozen Mutton"]
+  },
+  "Paan Corner": {
+    "Mouth Freshener": ["Saunf (Fennel Seeds)", "Mukhwas", "Elaichi (Cardamom)", "Flavoured Supari"],
+    "Paan Masala & Mouth Fresheners": ["Gutkha-Free Supari", "Paan Masala"]
+  },
+  "Gourmet & World Foods": {
+    "Organic & Health Foods": ["Millets (Ragi, Jowar, Bajra)", "Organic Staples (Rice, Dal, Atta)", "Superfoods (Chia, Flax, Hemp)", "Sugar-Free & Diet Foods", "Gluten-Free Products"],
+    "Cooking Ingredients": ["Coconut Milk & Cream", "Olive Oil (Extra Virgin)", "Noodles & Rice (Asian)", "Quinoa & Couscous", "Balsamic Vinegar", "Tofu & Tempeh"],
+    "International Snacks": ["Granola Bars & Protein Bars", "Exotic Chocolates", "Imported Chips & Crisps", "Trail Mix"],
+    "International Sauces & Spreads": ["Pasta Sauce", "Hot Sauce & Sriracha", "Salsa & Dips", "Hummus", "Tahini"]
+  },
+  "Pet Care": {
+    "Dog Food & Treats": ["Dry Dog Food", "Puppy Food", "Dog Treats & Biscuits", "Wet Dog Food"],
+    "Cat Food & Treats": ["Dry Cat Food", "Wet Cat Food", "Cat Treats"],
+    "Pet Accessories": ["Bowls & Feeders", "Pet Shampoo", "Litter & Litter Tray"]
+  },
+  "Stationery & General Merchandise": {
+    "Kitchen Accessories": ["Storage Containers", "Water Bottles", "Lunch Boxes", "Kitchen Tools (Peeler, Grater)"],
+    "Batteries & Electricals": ["AA & AAA Batteries", "LED Bulbs", "Extension Cords", "Rechargeable Batteries"],
+    "Stationery": ["Notebooks & Registers", "Pens & Pencils", "Glue & Tape", "Scissors & Cutters"]
+  }
+}
