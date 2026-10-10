@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   image: { width: "100%", height: "100%" },
   label: {
-    fontFamily: fonts.semibold,
+    fontFamily: fonts.bold,
     fontSize: 12,
     lineHeight: 16,
     color: colors.text,
