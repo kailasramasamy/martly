@@ -3,7 +3,7 @@ import { calculateEffectivePrice } from "./pricing.js";
 import { formatVariantUnit } from "./units.js";
 
 export const storeProductInclude = {
-  product: { include: { subcategory: true, variants: true, brand: { select: { id: true, name: true, imageUrl: true } } } },
+  product: { include: { subcategory: true, variants: true, brand: { select: { id: true, name: true } } } },
   variant: true,
 } satisfies Prisma.StoreProductInclude;
 

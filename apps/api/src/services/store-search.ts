@@ -17,7 +17,7 @@ export interface StoreSearchParams {
 
 export interface SearchFacets {
   tags: { tag: string; count: number; imageUrl: string | null }[];
-  brands: { id: string; name: string; count: number; imageUrl: string | null }[];
+  brands: { id: string; name: string; count: number }[];
   sizes: { label: string; count: number }[];
   offerCount: number;
 }
@@ -43,17 +43,10 @@ function tagFacets(rows: StoreProductView[]): SearchFacets["tags"] {
   }));
 }
 
-// Brand logo when uploaded, else the most relevant product's pack shot (rows arrive relevance-ranked)
-function brandSummary(brandRows: StoreProductView[]) {
-  const brand = brandRows[0].product.brand!;
-  const packShot = brandRows.find((r) => r.product.imageUrl)?.product.imageUrl ?? null;
-  return { name: brand.name, imageUrl: brand.imageUrl ?? packShot };
-}
-
 function filterFacets(rows: StoreProductView[]): Omit<SearchFacets, "tags"> {
   return {
     brands: countProducts(rows, (r) => (r.product.brand ? [r.product.brand.id] : []))
-      .map(({ key, count }) => ({ id: key, count, ...brandSummary(rows.filter((r) => r.product.brandId === key)) })),
+      .map(({ key, count }) => ({ id: key, count, name: rows.find((r) => r.product.brandId === key)!.product.brand!.name })),
     sizes: countProducts(rows, (r) => [r.variant.name]).map(({ key, count }) => ({ label: key, count })),
     offerCount: new Set(rows.filter((r) => r.pricing.discountActive).map((r) => r.productId)).size,
   };

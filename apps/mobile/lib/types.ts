@@ -64,7 +64,7 @@ export interface Product {
   description: string | null;
   imageUrl: string | null;
   images?: string[];
-  brand: { id: string; name: string; imageUrl?: string | null } | null;
+  brand: { id: string; name: string } | null;
   foodType: string | null;
   productType: string | null;
   tags?: string[];
@@ -461,7 +461,7 @@ export interface TomorrowsBasket {
 
 export interface SearchFacets {
   tags: { tag: string; count: number; imageUrl: string | null }[];
-  brands: { id: string; name: string; count: number; imageUrl: string | null }[];
+  brands: { id: string; name: string; count: number }[];
   sizes: { label: string; count: number }[];
   offerCount: number;
 }
