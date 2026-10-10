@@ -25,6 +25,7 @@ import {
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { axiosInstance } from "../../providers/data-provider";
+import { SubcategoryProducts } from "./subcategory-products";
 
 // ── Types ──────────────────────────────────────────
 
@@ -79,6 +80,8 @@ interface PathSegment {
 }
 
 // ── Helpers ────────────────────────────────────────
+
+const canOpen = (item: DisplayItem) => item.childCount > 0 || item.level === "subcategory";
 
 const LEVEL_COLORS: Record<Level, string> = {
   department: "blue",
@@ -226,20 +229,16 @@ export const CategoryList = () => {
 
   // Drill down into a row
   const drillDown = (item: DisplayItem | SearchResult) => {
-    if (item.childCount === 0) return;
+    if (!canOpen(item)) return;
 
     if (isSearching) {
       const sr = item as SearchResult;
       if (item.level === "department") {
         setPath([{ id: item.id, name: item.name }]);
-      } else if (item.level === "category" && sr.deptId) {
+      } else if (sr.deptId) {
         const dept = treeData.find(d => d.id === sr.deptId);
-        if (dept) {
-          setPath([
-            { id: dept.id, name: dept.name },
-            { id: item.id, name: item.name },
-          ]);
-        }
+        const cat = dept?.categories.find(c => c.id === sr.catId);
+        setPath([dept, cat, item].flatMap(s => (s ? [{ id: s.id, name: s.name }] : [])));
       }
       setSearchText("");
       return;
@@ -291,7 +290,9 @@ export const CategoryList = () => {
     ? `Departments (${stats.departments})`
     : path.length === 1
     ? `Categories in ${path[0].name} (${currentItems.length})`
-    : `Subcategories in ${path[1].name} (${currentItems.length})`;
+    : path.length === 2
+    ? `Subcategories in ${path[1].name} (${currentItems.length})`
+    : `Products in ${path[2].name}`;
 
   // ── Shared cell renderers ──────────────────────────
 
@@ -350,7 +351,7 @@ export const CategoryList = () => {
       render: (_, record) => (
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           {renderImage(record.imageUrl)}
-          {record.childCount > 0 ? (
+          {canOpen(record) ? (
             <a onClick={() => drillDown(record)} style={{ fontWeight: 500 }}>
               {record.name}
             </a>
@@ -390,7 +391,7 @@ export const CategoryList = () => {
           {renderImage(record.imageUrl)}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-              {record.childCount > 0 ? (
+              {canOpen(record) ? (
                 <a onClick={() => drillDown(record)} style={{ fontWeight: 500 }}>
                   {record.name}
                 </a>
@@ -475,6 +476,8 @@ export const CategoryList = () => {
           pagination={searchResults.length > 20 ? { pageSize: 20 } : false}
           size="small"
         />
+      ) : path.length === 3 ? (
+        <SubcategoryProducts key={path[2].id} subcategoryId={path[2].id} />
       ) : (
         <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
           <SortableContext items={currentItems.map(i => i.id)} strategy={verticalListSortingStrategy}>
