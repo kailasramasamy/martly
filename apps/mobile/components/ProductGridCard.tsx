@@ -258,7 +258,7 @@ const styles = StyleSheet.create({
   },
   oosLabel: { fontSize: 12, fontWeight: "700", color: colors.error },
   content: { padding: 10 },
-  name: { fontSize: 13, fontWeight: "700", color: colors.text, lineHeight: 17 },
+  name: { fontSize: 13, fontWeight: "600", color: colors.text, lineHeight: 17 },
   nameSubtitle: { fontSize: 10, color: colors.textSecondary, marginTop: 1 },
   variant: { fontSize: 11, color: colors.textSecondary, marginTop: 2 },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 3, marginTop: 3 },

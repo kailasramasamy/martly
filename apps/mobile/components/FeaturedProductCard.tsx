@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
   // Straddles the image's bottom edge, Blinkit-style
   controlOverlay: { position: "absolute", right: 6, zIndex: 3 },
   content: { paddingHorizontal: 9, paddingTop: CONTROL_HEIGHT / 2 + 4, paddingBottom: 10 },
-  name: { fontFamily: fonts.bold, fontSize: 12.5, lineHeight: 16, minHeight: 32, color: colors.text, marginTop: 3 },
+  name: { fontFamily: fonts.semibold, fontSize: 12.5, lineHeight: 16, minHeight: 32, color: colors.text, marginTop: 3 },
   nameSubtitle: { fontFamily: fonts.regular, fontSize: 10, color: "#94a3b8" },
   unitRow: { flexDirection: "row", alignItems: "center", gap: 2, marginTop: 3, alignSelf: "flex-start" },
   unit: { fontFamily: fonts.medium, fontSize: 11.5, color: colors.textSecondary, flexShrink: 1 },

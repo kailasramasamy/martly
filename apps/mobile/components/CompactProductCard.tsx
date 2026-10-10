@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
   price: { fontFamily: fonts.extrabold, fontSize: 14, color: colors.text },
   mrp: { fontFamily: fonts.medium, fontSize: 11, color: "#94a3b8", textDecorationLine: "line-through" },
   discount: { fontFamily: fonts.bold, fontSize: 10.5, color: "#2563eb", marginTop: 1 },
-  name: { fontFamily: fonts.bold, fontSize: 12, lineHeight: 15, color: colors.text, marginTop: 3 },
+  name: { fontFamily: fonts.semibold, fontSize: 12, lineHeight: 15, color: colors.text, marginTop: 3 },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 2, marginTop: 3 },
   ratingText: { fontFamily: fonts.semibold, fontSize: 10, color: "#92400e" },
   ratingCount: { fontFamily: fonts.regular, fontSize: 9.5, color: "#94a3b8" },
