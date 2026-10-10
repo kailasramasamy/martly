@@ -154,7 +154,7 @@ function CardDetails({ item, variantCount, variantSizes, onShowVariants, lowStoc
   const unitLabel = variantSizes?.length ? variantSizes.join(" \u00B7 ") : item.variant.name;
   return (
     <>
-      <Text style={styles.name} numberOfLines={2}>{getLocalizedName(item.product)}</Text>
+      <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>
       {subtitle && <Text style={styles.nameSubtitle} numberOfLines={1}>{subtitle}</Text>}
       {variantCount > 1 ? (
         <Pressable style={styles.unitRow} onPress={onShowVariants} hitSlop={6} accessibilityLabel={`${unitLabel}, ${variantCount} sizes`}>
@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
   // Straddles the image's bottom edge, Blinkit-style
   controlOverlay: { position: "absolute", right: 6, zIndex: 3 },
   content: { paddingHorizontal: 9, paddingTop: CONTROL_HEIGHT / 2 + 4, paddingBottom: 10 },
-  name: { fontFamily: fonts.semibold, fontSize: 12.5, lineHeight: 16, minHeight: 32, color: colors.text, marginTop: 3 },
+  name: { fontFamily: fonts.bold, fontSize: 12.5, lineHeight: 16, minHeight: 32, color: colors.text, marginTop: 3 },
   nameSubtitle: { fontFamily: fonts.regular, fontSize: 10, color: "#94a3b8" },
   unitRow: { flexDirection: "row", alignItems: "center", gap: 2, marginTop: 3, alignSelf: "flex-start" },
   unit: { fontFamily: fonts.medium, fontSize: 11.5, color: colors.textSecondary, flexShrink: 1 },

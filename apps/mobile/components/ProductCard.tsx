@@ -94,7 +94,7 @@ export function ProductCard({ item, variantCount = 1, onAddToCart, onUpdateQuant
           </View>
           <View style={styles.cardRow}>
             <View style={{ flex: 1 }}>
-              <Text style={styles.productName} numberOfLines={2}>{localizedName}</Text>
+              <Text style={styles.productName} numberOfLines={3}>{localizedName}</Text>
               {subtitle && <Text style={{ fontSize: 11, color: "#94a3b8" }}>{subtitle}</Text>}
             </View>
             <View style={styles.priceGroup}>
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
   foodTypeDotNonVeg: { backgroundColor: "#b71c1c" },
   brandName: { fontSize: fontSize.sm, fontWeight: "600", color: colors.textSecondary, textTransform: "uppercase" },
   cardRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
-  productName: { fontSize: fontSize.md, fontWeight: "600", color: colors.text, flex: 1 },
+  productName: { fontSize: fontSize.md, fontWeight: "700", color: colors.text, flex: 1 },
   priceGroup: { flexDirection: "row", alignItems: "center", gap: 4 },
   mrpPrice: { fontSize: fontSize.sm, color: colors.textSecondary, textDecorationLine: "line-through" },
   price: { fontSize: fontSize.lg, fontWeight: "bold", color: colors.primary },
