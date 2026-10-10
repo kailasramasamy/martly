@@ -1,0 +1,66 @@
+[
+  { "path": ["Pooja & Festivals", "Pooja Offerings", "Coconut (Nariyal)"], "sizes": ["1 pc", "3 pcs"], "items": [
+    { "name": "Coconut", "ta": "தேங்காய்", "subject": "a few brown husked coconuts, one cracked open showing white meat" },
+    { "name": "Dry Coconut (Copra)", "ta": "கொப்பரைத் தேங்காய்", "sizes": ["250g", "500g"], "subject": "a few dried copra halves with brown shells" }
+  ]},
+  { "path": ["Pooja & Festivals", "Pooja Offerings", "Flowers & Garlands (if available)"], "sizes": ["1 mulam", "3 mulam"], "items": [
+    { "name": "Jasmine Flowers (Malli)", "ta": "மல்லிகைப் பூ", "subject": "a coiled string of fresh white jasmine buds" },
+    { "name": "Mullai Flowers", "ta": "முல்லைப் பூ", "subject": "a coiled string of slender white mullai buds" },
+    { "name": "Kanakambaram", "ta": "கனகாம்பரம்", "subject": "a coiled string of bright orange crossandra flowers" },
+    { "name": "Marigold (Saamanthi)", "ta": "சாமந்திப் பூ", "sizes": ["250g", "500g"], "subject": "a heap of loose orange and yellow marigold flowers" },
+    { "name": "Rose (Loose)", "ta": "ரோஜாப் பூ", "sizes": ["100g", "250g"], "subject": "a heap of loose red and pink rose heads" },
+    { "name": "Arali Flowers", "ta": "அரளிப் பூ", "sizes": ["100g"], "subject": "a heap of loose pink and red oleander flowers" },
+    { "name": "Lotus", "ta": "தாமரைப் பூ", "sizes": ["1 pc"], "subject": "one fresh pink lotus flower" },
+    { "name": "Tulsi Leaves", "ta": "துளசி", "sizes": ["1 bunch"], "subject": "a fresh bunch of holy basil sprigs" },
+    { "name": "Rose Garland", "ta": "ரோஜா மாலை", "sizes": ["1 pc"], "subject": "a coiled garland of red roses and white jasmine" }
+  ]},
+  { "path": ["Pooja & Festivals", "Pooja Offerings", "Betel Leaves & Areca"], "sizes": ["50g", "100g"], "items": [
+    { "name": "Betel Leaves", "ta": "வெற்றிலை", "sizes": ["10 leaves", "25 leaves"], "subject": "a neat stack of fresh glossy green betel leaves" },
+    { "name": "Areca Nut (Whole)", "ta": "கொட்டைப் பாக்கு", "subject": "a heap of whole dried brown areca nuts" },
+    { "name": "Sliced Areca Nut (Seeval)", "ta": "சீவல் பாக்கு", "subject": "a heap of thin sliced brown areca nut" }
+  ]},
+  { "path": ["Pooja & Festivals", "Pooja Essentials", "Camphor (Kapur)"], "sizes": ["50g", "100g"], "items": [
+    { "name": "Camphor Tablets", "ta": "கற்பூரம்", "subject": "a heap of white camphor tablets with one lit in a small brass plate" },
+    { "name": "Edible Camphor (Pachai Karpooram)", "ta": "பச்சைக் கற்பூரம்", "sizes": ["10g", "25g"], "subject": "a small heap of translucent edible camphor crystals" }
+  ]},
+  { "path": ["Pooja & Festivals", "Pooja Essentials", "Dhoop & Cones"], "sizes": ["50g", "100g"], "items": [
+    { "name": "Sambrani (Benzoin)", "ta": "சாம்பிராணி", "subject": "a heap of amber benzoin resin lumps beside a small clay burner with smoke" }
+  ]},
+  { "path": ["Pooja & Festivals", "Pooja Essentials", "Diya & Wicks"], "sizes": ["1 pack"], "items": [
+    { "name": "Cotton Wicks (Thiri)", "ta": "பஞ்சுத் திரி", "subject": "a small bundle of white cotton lamp wicks" },
+    { "name": "Lotus Stem Wicks", "ta": "தாமரைத் தண்டு திரி", "subject": "a small bundle of off-white lotus stem fibre wicks" },
+    { "name": "Deepam Oil (Lamp Oil)", "ta": "தீப எண்ணெய்", "sizes": ["500ml", "1L"], "subject": "a plain unlabeled bottle of golden lamp oil beside a lit brass lamp" }
+  ]},
+  { "path": ["Pooja & Festivals", "Pooja Essentials", "Sindoor & Kumkum"], "sizes": ["25g", "50g", "100g"], "items": [
+    { "name": "Kumkum", "ta": "குங்குமம்", "subject": "a small heap of bright red kumkum powder in a small brass bowl" },
+    { "name": "Pooja Turmeric Powder", "ta": "பூஜை மஞ்சள்", "subject": "a small heap of bright yellow turmeric powder in a small brass bowl" },
+    { "name": "Sandalwood Powder", "ta": "சந்தனம்", "subject": "a small heap of pale beige sandalwood powder in a small brass bowl" },
+    { "name": "Vibhuti (Holy Ash)", "ta": "திருநீறு", "subject": "a small heap of soft grey-white holy ash in a small brass bowl" }
+  ]},
+  { "path": ["Pooja & Festivals", "Pooja Essentials", "Sacred Thread (Mauli / Kalava)"], "sizes": ["1 pc"], "items": [
+    { "name": "Manjal Kayiru (Yellow Thread)", "ta": "மஞ்சள் கயிறு", "subject": "a coiled turmeric-yellow sacred cotton thread" },
+    { "name": "Poonool (Sacred Thread)", "ta": "பூணூல்", "subject": "a neatly coiled white cotton sacred thread" }
+  ]},
+  { "path": ["Pooja & Festivals", "Festival Items", "Diyas & Decorative Candles"], "sizes": ["6 pcs", "12 pcs"], "items": [
+    { "name": "Clay Diya (Agal Vilakku)", "ta": "அகல் விளக்கு", "subject": "a few plain terracotta oil lamps, one lit" }
+  ]},
+  { "path": ["Pooja & Festivals", "Festival Items", "Rangoli Colours"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Kolam Powder", "ta": "கோலப் பொடி", "subject": "a heap of white kolam powder beside a simple white dotted kolam pattern" },
+    { "name": "Rangoli Colour Powder", "ta": "ரங்கோலி வண்ணப் பொடி", "sizes": ["100g", "250g"], "subject": "small heaps of bright pink, yellow, green and blue rangoli powder" }
+  ]},
+  { "path": ["Home Care", "Cleaning Tools & Supplies", "Broom & Mop"], "sizes": ["1 pc"], "items": [
+    { "name": "Coconut Broom", "ta": "தென்னந் துடைப்பம்", "subject": "a stiff coconut-midrib broom tied with string" },
+    { "name": "Grass Broom (Soft)", "ta": "புல் துடைப்பம்", "subject": "a soft grass broom with a bound handle" }
+  ]},
+  { "path": ["Home Care", "Dishwash", "Scrub Pad & Sponge"], "sizes": ["1 pc", "3 pcs"], "items": [
+    { "name": "Coconut Coir Scrubber", "ta": "தேங்காய் நார்", "subject": "a few bundles of brown coconut coir scrubbers" },
+    { "name": "Steel Wool Scrubber", "ta": "ஸ்டீல் ஸ்க்ரப்பர்", "subject": "a few round silver steel wool scrubbers" }
+  ]},
+  { "path": ["Home Care", "Paper & Disposables", "Disposable Plates & Cups"], "sizes": ["10 pcs", "25 pcs"], "items": [
+    { "name": "Banana Leaf", "ta": "வாழை இலை", "sizes": ["1 pc", "5 pcs"], "subject": "a fresh glossy green banana leaf cut for serving a meal" },
+    { "name": "Areca Leaf Plates", "ta": "பாக்கு மட்டை தட்டு", "subject": "a stack of round natural areca leaf plates" }
+  ]},
+  { "path": ["Home Care", "Air Fresheners & Repellents", "Cockroach & Ant Killer"], "sizes": ["100g", "200g"], "items": [
+    { "name": "Naphthalene Balls", "ta": "அந்துருண்டை", "subject": "a heap of small round white naphthalene balls" }
+  ]}
+]

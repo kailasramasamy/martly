@@ -1,0 +1,92 @@
+[
+  { "path": ["Meat, Fish & Eggs", "Chicken", "Whole Chicken"], "sizes": ["1kg"], "items": [
+    { "name": "Whole Chicken (Skinless)", "ta": "முழு கோழி (தோல் நீக்கியது)", "subject": "a whole fresh raw skinless chicken" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Chicken", "Chicken Curry Cut"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Chicken Curry Cut (Skinless)", "ta": "சிக்கன் கறி வெட்டு", "subject": "a heap of fresh raw skinless bone-in chicken curry pieces" },
+    { "name": "Chicken Curry Cut (With Skin)", "ta": "சிக்கன் கறி வெட்டு (தோலுடன்)", "subject": "a heap of fresh raw bone-in chicken curry pieces with skin" },
+    { "name": "Country Chicken Curry Cut", "ta": "நாட்டுக்கோழி கறி", "subject": "a heap of fresh raw bone-in country chicken curry pieces with pale yellowish skin and lean pink poultry meat, clearly chicken (drumsticks, thighs, wings visible)" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Chicken", "Chicken Breast"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Chicken Breast Boneless", "ta": "எலும்பில்லா சிக்கன் பிரெஸ்ட்", "subject": "two fresh raw boneless skinless chicken breasts" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Chicken", "Chicken Legs & Thighs"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Chicken Drumsticks", "ta": "சிக்கன் லெக் பீஸ்", "subject": "a few fresh raw skinless chicken drumsticks" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Chicken", "Chicken Wings"], "sizes": ["500g"], "items": [
+    { "name": "Chicken Wings", "ta": "சிக்கன் விங்ஸ்", "subject": "a heap of fresh raw chicken wings" },
+    { "name": "Chicken Lollipop", "ta": "சிக்கன் லாலிபாப்", "subject": "a few fresh raw frenched chicken lollipops" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Chicken", "Chicken Keema"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Chicken Keema", "ta": "சிக்கன் கீமா", "subject": "a heap of fresh raw pale pink minced chicken" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Mutton & Lamb", "Mutton Curry Cut"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Mutton Curry Cut", "ta": "ஆட்டுக்கறி", "subject": "a heap of fresh raw bone-in goat meat curry pieces" },
+    { "name": "Mutton Boneless", "ta": "எலும்பில்லா ஆட்டுக்கறி", "subject": "a heap of fresh raw boneless goat meat cubes" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Mutton & Lamb", "Mutton Keema"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Mutton Keema", "ta": "ஆட்டுக்கறி கீமா", "subject": "a heap of fresh raw deep red minced goat meat" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Mutton & Lamb", "Mutton Chops"], "sizes": ["500g"], "items": [
+    { "name": "Mutton Chops", "ta": "மட்டன் சாப்ஸ்", "subject": "a few fresh raw goat rib chops" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Fish & Seafood", "Bangda (Mackerel)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Mackerel (Ayala)", "ta": "அயிலை மீன்", "subject": "a few whole fresh silver-blue mackerel" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Fish & Seafood", "Pomfret"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "White Pomfret", "ta": "வெள்ளை வவ்வால்", "subject": "two whole fresh silvery white pomfrets" },
+    { "name": "Black Pomfret", "ta": "கருப்பு வவ்வால்", "subject": "two whole fresh dark grey black pomfrets" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Fish & Seafood", "Surmai (King Fish)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Seer Fish (Vanjaram)", "ta": "வஞ்சிரம்", "subject": "a few fresh raw seer fish (king mackerel) steaks with silvery-grey skin and pale ivory-white flesh, not salmon" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Fish & Seafood", "Rohu"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Rohu", "ta": "ரோகு", "subject": "a few fresh raw rohu carp curry pieces with large silver scales on the skin and white flesh, not salmon" },
+    { "name": "Katla", "ta": "கட்லா", "subject": "a few fresh raw katla carp curry pieces with large silver-grey scales on the skin and white flesh, not salmon" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Fish & Seafood", "Prawns & Shrimp"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Prawns (Medium, Cleaned)", "ta": "இறால்", "subject": "a heap of fresh raw peeled and deveined medium prawns" },
+    { "name": "Tiger Prawns", "ta": "டைகர் இறால்", "subject": "a few fresh raw large striped tiger prawns with shells" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Fish & Seafood", "Crab"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Crab", "ta": "நண்டு", "subject": "a few fresh raw whole mud crabs" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Fish & Seafood", "Fish Fillets"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Basa Fillet", "ta": "பாசா மீன்", "subject": "two fresh raw white basa fillets" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Fish & Seafood", "Other Fish"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Sardine (Mathi)", "ta": "மத்தி மீன்", "subject": "a few whole fresh silver sardines" },
+    { "name": "Anchovy (Nethili)", "ta": "நெத்திலி மீன்", "sizes": ["250g", "500g"], "subject": "a heap of small whole fresh silver anchovies" },
+    { "name": "Tilapia", "ta": "திலேப்பியா", "subject": "two whole fresh grey tilapia" },
+    { "name": "Barracuda (Sheela)", "ta": "ஷீலா மீன்", "subject": "a few fresh raw barracuda steaks" },
+    { "name": "Red Snapper (Sankara)", "ta": "சங்கரா மீன்", "subject": "a whole fresh pinkish-red snapper" },
+    { "name": "Squid (Kanava)", "ta": "கணவாய்", "sizes": ["250g", "500g"], "subject": "a few fresh cleaned squid tubes with some rings" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Eggs", "White Eggs"], "sizes": ["6 pcs", "12 pcs", "30 pcs"], "items": [
+    { "name": "White Eggs", "ta": "கோழி முட்டை", "subject": "a few fresh white chicken eggs in a pale paper tray" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Eggs", "Brown Eggs"], "sizes": ["6 pcs", "12 pcs"], "items": [
+    { "name": "Country Eggs (Nattu Kozhi Muttai)", "ta": "நாட்டுக்கோழி முட்டை", "subject": "a few small light brown country eggs in a pale paper tray" }
+  ]},
+  { "path": ["Meat, Fish & Eggs", "Eggs", "Quail Eggs"], "sizes": ["12 pcs"], "items": [
+    { "name": "Quail Eggs", "ta": "காடை முட்டை", "subject": "a few small speckled quail eggs" }
+  ]},
+  { "path": ["Dairy", "Milk", "Full Cream Milk"], "sizes": ["500ml", "1L"], "items": [
+    { "name": "Farm Fresh Cow Milk", "ta": "பசும்பால்", "subject": "a plain unlabeled glass bottle of fresh white milk" }
+  ]},
+  { "path": ["Dairy", "Curd & Yogurt", "Fresh Curd (Dahi)"], "sizes": ["200g", "500g", "1kg"], "items": [
+    { "name": "Fresh Curd", "ta": "தயிர்", "subject": "a small clay pot of thick white set curd" }
+  ]},
+  { "path": ["Beverages", "Milk Drinks", "Buttermilk (Chaas)"], "sizes": ["200ml", "500ml"], "items": [
+    { "name": "Neer Mor (Buttermilk)", "ta": "நீர் மோர்", "subject": "a glass of spiced buttermilk with curry leaves and a green chilli" }
+  ]},
+  { "path": ["Dairy", "Paneer & Tofu", "Fresh Paneer"], "sizes": ["200g", "500g"], "items": [
+    { "name": "Fresh Paneer", "ta": "பனீர்", "subject": "a block of fresh soft white paneer with a few cubes cut" }
+  ]},
+  { "path": ["Dairy", "Butter", "Unsalted Butter"], "sizes": ["100g", "250g"], "items": [
+    { "name": "White Butter (Vennai)", "ta": "வெண்ணெய்", "subject": "a small clay bowl of soft hand-churned white butter" }
+  ]},
+  { "path": ["Dairy", "Condensed & Evaporated Milk", "Khoya (Mawa)"], "sizes": ["200g", "500g"], "items": [
+    { "name": "Khoya", "ta": "கோவா", "subject": "a crumbly block of pale cream khoya" }
+  ]}
+]

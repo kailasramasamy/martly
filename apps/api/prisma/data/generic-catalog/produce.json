@@ -1,0 +1,200 @@
+[
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Onion & Garlic"], "sizes": ["500g", "1kg", "2kg"], "items": [
+    { "name": "Onion (Big)", "ta": "பெரிய வெங்காயம்", "subject": "a few large pinkish-red onions, one halved" },
+    { "name": "Small Onion (Shallots)", "ta": "சின்ன வெங்காயம்", "sizes": ["250g", "500g", "1kg"], "subject": "a heap of small reddish-pink sambar shallots" },
+    { "name": "Garlic", "ta": "பூண்டு", "sizes": ["100g", "250g", "500g"], "subject": "a few whole white garlic bulbs with a few loose cloves" },
+    { "name": "Malai Poondu (Hill Garlic)", "ta": "மலைப் பூண்டு", "sizes": ["100g", "250g"], "subject": "a few small purple-streaked hill garlic bulbs" },
+    { "name": "Spring Onion", "ta": "வெங்காயத் தாள்", "sizes": ["1 bunch"], "subject": "a bunch of fresh spring onions with green stalks and small white bulbs" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Potato"], "sizes": ["500g", "1kg", "2kg"], "items": [
+    { "name": "Potato", "ta": "உருளைக்கிழங்கு", "subject": "a few fresh brown-skinned potatoes" },
+    { "name": "Baby Potato", "ta": "சிறிய உருளைக்கிழங்கு", "sizes": ["500g", "1kg"], "subject": "a heap of small round baby potatoes" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Tomato"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Tomato (Country)", "ta": "நாட்டுத் தக்காளி", "subject": "a few ribbed, slightly irregular red country tomatoes" },
+    { "name": "Tomato (Hybrid)", "ta": "தக்காளி (ஹைபிரிட்)", "subject": "a few smooth, round, firm bright red tomatoes" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Root Vegetables (Carrot, Beetroot, Radish)"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Carrot (Ooty)", "ta": "கேரட்", "subject": "a few fresh bright orange carrots" },
+    { "name": "Beetroot", "ta": "பீட்ரூட்", "subject": "a few deep red beetroots, one halved showing rings" },
+    { "name": "Radish", "ta": "முள்ளங்கி", "subject": "a few long white radishes with short green tops" },
+    { "name": "Sweet Potato", "ta": "சர்க்கரைவள்ளிக் கிழங்கு", "subject": "a few pinkish-red sweet potatoes, one cut showing white flesh" },
+    { "name": "Elephant Yam", "ta": "சேனைக்கிழங்கு", "sizes": ["500g", "1kg"], "subject": "a wedge of brown elephant yam showing pale cut flesh" },
+    { "name": "Colocasia (Arbi)", "ta": "சேப்பங்கிழங்கு", "sizes": ["250g", "500g"], "subject": "a heap of small hairy brown colocasia roots" },
+    { "name": "Tapioca", "ta": "மரவள்ளிக் கிழங்கு", "sizes": ["500g", "1kg"], "subject": "a few long brown tapioca roots, one cut showing white flesh" },
+    { "name": "Knol Khol", "ta": "நூல்கோல்", "subject": "a few pale green knol khol bulbs with trimmed leaf stems" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Brinjal & Okra (Bhindi)"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Brinjal (Violet)", "ta": "கத்திரிக்காய்", "subject": "a few small glossy violet brinjals with green caps" },
+    { "name": "Brinjal (Green)", "ta": "பச்சை கத்திரிக்காய்", "subject": "a few small green-and-white striped brinjals" },
+    { "name": "Brinjal (Big, Bharta)", "ta": "பெரிய கத்திரிக்காய்", "sizes": ["500g", "1kg"], "subject": "one large round glossy dark purple brinjal" },
+    { "name": "Lady's Finger", "ta": "வெண்டைக்காய்", "subject": "a heap of fresh tender green okra" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Gourds & Squash (Lauki, Tori, Karela)"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Bottle Gourd", "ta": "சுரைக்காய்", "sizes": ["1 pc"], "subject": "one long smooth pale green bottle gourd" },
+    { "name": "Ridge Gourd", "ta": "பீர்க்கங்காய்", "subject": "a few long ridged dark green ridge gourds" },
+    { "name": "Snake Gourd", "ta": "புடலங்காய்", "subject": "a long pale green snake gourd with white streaks, cut into a few pieces" },
+    { "name": "Bitter Gourd", "ta": "பாகற்காய்", "subject": "a few bumpy bright green bitter gourds" },
+    { "name": "Ash Gourd", "ta": "வெள்ளைப் பூசணி", "sizes": ["500g", "1kg"], "subject": "a wedge of ash gourd with powdery green skin and white flesh" },
+    { "name": "Yellow Pumpkin", "ta": "பரங்கிக்காய்", "sizes": ["500g", "1kg"], "subject": "a wedge of yellow pumpkin showing orange flesh and seeds" },
+    { "name": "Ivy Gourd (Kovakkai)", "ta": "கோவக்காய்", "subject": "a heap of small striped green ivy gourds" },
+    { "name": "Chow Chow", "ta": "சௌசௌ", "subject": "a few pale green wrinkled chayote squashes" },
+    { "name": "Cucumber", "ta": "வெள்ளரிக்காய்", "subject": "a few fresh green cucumbers, one sliced" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Beans & Legumes (French Beans, Sem)"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Beans (French)", "ta": "பீன்ஸ்", "subject": "a heap of slender fresh green french beans" },
+    { "name": "Broad Beans (Avarakkai)", "ta": "அவரைக்காய்", "subject": "a heap of flat pale green broad bean pods" },
+    { "name": "Cluster Beans", "ta": "கொத்தவரங்காய்", "subject": "a heap of thin flat green cluster beans" },
+    { "name": "Yard Long Beans", "ta": "காராமணிக் காய்", "subject": "a coiled bundle of long thin green yard long beans" },
+    { "name": "Double Beans (Fresh)", "ta": "டபுள் பீன்ஸ்", "subject": "a few fat green double bean pods with some shelled pale green beans" },
+    { "name": "Fresh Mochai (Field Beans)", "ta": "மொச்சைக்காய்", "subject": "a heap of fresh flat green field bean pods" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Capsicum & Chillies"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Green Chilli", "ta": "பச்சை மிளகாய்", "sizes": ["100g", "250g"], "subject": "a heap of fresh slender green chillies" },
+    { "name": "Bajji Chilli", "ta": "பஜ்ஜி மிளகாய்", "subject": "a few long, fat, pale green bajji chillies" },
+    { "name": "Capsicum (Green)", "ta": "குடைமிளகாய்", "subject": "a few glossy green bell peppers" },
+    { "name": "Capsicum (Red)", "ta": "சிவப்பு குடைமிளகாய்", "subject": "a few glossy red bell peppers" },
+    { "name": "Capsicum (Yellow)", "ta": "மஞ்சள் குடைமிளகாய்", "subject": "a few glossy yellow bell peppers" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Cauliflower & Cabbage"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Cauliflower", "ta": "காலிஃபிளவர்", "sizes": ["1 pc"], "subject": "one fresh white cauliflower head with green leaves" },
+    { "name": "Cabbage", "ta": "முட்டைக்கோஸ்", "subject": "one fresh round green cabbage, with a halved one beside it" },
+    { "name": "Broccoli", "ta": "ப்ரோக்கோலி", "sizes": ["250g", "500g"], "subject": "one fresh dark green broccoli head" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Corn & Baby Corn"], "sizes": ["1 pc", "2 pcs"], "items": [
+    { "name": "Sweet Corn", "ta": "ஸ்வீட் கார்ன்", "subject": "two sweet corn cobs with husks peeled back showing yellow kernels" },
+    { "name": "Country Corn (Makka Cholam)", "ta": "மக்காச்சோளம்", "subject": "two pale yellow country corn cobs with husks peeled back" },
+    { "name": "Baby Corn", "ta": "பேபி கார்ன்", "sizes": ["200g"], "subject": "a heap of peeled pale yellow baby corn" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Leafy Greens (Palak, Methi, etc.)"], "sizes": ["1 bunch"], "items": [
+    { "name": "Palak (Spinach)", "ta": "பசலைக் கீரை", "subject": "a fresh bunch of broad dark green spinach leaves" },
+    { "name": "Mulai Keerai (Amaranth)", "ta": "முளைக் கீரை", "subject": "a fresh bunch of tender green amaranth leaves with roots" },
+    { "name": "Arai Keerai", "ta": "அரைக் கீரை", "subject": "a fresh bunch of small round green arai keerai leaves" },
+    { "name": "Siru Keerai", "ta": "சிறுக் கீரை", "subject": "a fresh bunch of small-leafed green siru keerai" },
+    { "name": "Thandu Keerai", "ta": "தண்டுக் கீரை", "subject": "a fresh bunch of amaranth with thick stems and green leaves" },
+    { "name": "Red Amaranth", "ta": "சிவப்புக் கீரை", "subject": "a fresh bunch of red amaranth with magenta-veined leaves" },
+    { "name": "Methi Leaves", "ta": "வெந்தயக் கீரை", "subject": "a fresh bunch of small green fenugreek leaves" },
+    { "name": "Drumstick Leaves", "ta": "முருங்கைக் கீரை", "subject": "a fresh bunch of moringa stems with tiny green leaflets" },
+    { "name": "Ponnanganni Keerai", "ta": "பொன்னாங்கண்ணிக் கீரை", "subject": "a fresh bunch of slender green ponnanganni leaves" },
+    { "name": "Agathi Keerai", "ta": "அகத்திக் கீரை", "subject": "a fresh bunch of agathi stems with small oval leaflets" },
+    { "name": "Manathakkali Keerai", "ta": "மணத்தக்காளிக் கீரை", "subject": "a fresh bunch of dark green black nightshade leaves" },
+    { "name": "Gongura (Pulicha Keerai)", "ta": "புளிச்சக் கீரை", "subject": "a fresh bunch of gongura with red stems and lobed green leaves" },
+    { "name": "Vallarai Keerai", "ta": "வல்லாரைக் கீரை", "subject": "a fresh bunch of round kidney-shaped vallarai leaves" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Mushrooms"], "sizes": ["200g"], "items": [
+    { "name": "Button Mushroom", "ta": "பட்டன் காளான்", "subject": "a heap of fresh white button mushrooms, one halved" },
+    { "name": "Oyster Mushroom", "ta": "சிப்பிக் காளான்", "subject": "a cluster of fresh pale grey oyster mushrooms" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Peas"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Green Peas (Fresh)", "ta": "பச்சைப் பட்டாணி", "subject": "a few fresh green pea pods with some shelled peas" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Vegetables", "Other Vegetables"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Drumstick", "ta": "முருங்கைக்காய்", "subject": "a few very long, thin, stiff green moringa drumstick pods with faint ridges, laid in parallel, with one cut piece" },
+    { "name": "Raw Banana", "ta": "வாழைக்காய்", "sizes": ["1 pc", "3 pcs"], "subject": "a few raw green plantains" },
+    { "name": "Banana Flower", "ta": "வாழைப்பூ", "sizes": ["1 pc"], "subject": "one deep maroon banana flower with a bract peeled open" },
+    { "name": "Banana Stem", "ta": "வாழைத்தண்டு", "sizes": ["1 pc"], "subject": "one piece of pale white-green banana stem, one end sliced" },
+    { "name": "Raw Mango", "ta": "மாங்காய்", "sizes": ["250g", "500g", "1kg"], "subject": "a few firm green raw mangoes" },
+    { "name": "Turkey Berry (Sundakkai)", "ta": "சுண்டைக்காய்", "sizes": ["100g", "250g"], "subject": "a heap of small round green turkey berries" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Herbs & Sprouts", "Coriander (Dhaniya)"], "sizes": ["1 bunch"], "items": [
+    { "name": "Coriander Leaves", "ta": "கொத்தமல்லி", "subject": "a fresh bunch of green coriander leaves with roots" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Herbs & Sprouts", "Curry Leaves"], "sizes": ["1 bunch"], "items": [
+    { "name": "Curry Leaves", "ta": "கறிவேப்பிலை", "subject": "a few fresh glossy green curry leaf sprigs" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Herbs & Sprouts", "Mint (Pudina)"], "sizes": ["1 bunch"], "items": [
+    { "name": "Mint Leaves", "ta": "புதினா", "subject": "a fresh bunch of bright green mint" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Herbs & Sprouts", "Ginger & Turmeric (Fresh)"], "sizes": ["100g", "250g"], "items": [
+    { "name": "Ginger", "ta": "இஞ்சி", "subject": "a few fresh knobbly ginger roots, one cut" },
+    { "name": "Fresh Turmeric", "ta": "மஞ்சள் கிழங்கு", "subject": "a few fresh turmeric roots, one cut showing bright orange flesh" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Herbs & Sprouts", "Sprouts (Moong, Mixed)"], "sizes": ["200g"], "items": [
+    { "name": "Moong Sprouts", "ta": "முளைகட்டிய பச்சைப் பயறு", "subject": "a heap of fresh sprouted green mung beans with white tails" },
+    { "name": "Mixed Sprouts", "ta": "முளைகட்டிய கலப்பு பயறு", "subject": "a heap of mixed sprouted moong, chana and cowpeas" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Apple"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Apple (Shimla)", "ta": "சிம்லா ஆப்பிள்", "subject": "a few red-and-yellow streaked Shimla apples" },
+    { "name": "Apple (Kashmir)", "ta": "காஷ்மீர் ஆப்பிள்", "subject": "a few deep red Kashmiri apples" },
+    { "name": "Royal Gala Apple", "ta": "ராயல் காலா ஆப்பிள்", "subject": "a few red-orange striped royal gala apples" },
+    { "name": "Green Apple", "ta": "பச்சை ஆப்பிள்", "subject": "a few glossy bright green granny smith apples" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Banana"], "sizes": ["6 pcs", "12 pcs"], "items": [
+    { "name": "Poovan Banana", "ta": "பூவன் பழம்", "subject": "a hand of medium yellow poovan bananas" },
+    { "name": "Robusta Banana", "ta": "ரோபஸ்டா வாழைப்பழம்", "subject": "a hand of long green-yellow robusta bananas" },
+    { "name": "Yelakki Banana", "ta": "ஏலக்கி வாழைப்பழம்", "subject": "a hand of small, slim yellow yelakki bananas" },
+    { "name": "Rasthali Banana", "ta": "ரஸ்தாளி வாழைப்பழம்", "subject": "a hand of plump golden-yellow rasthali bananas" },
+    { "name": "Nendran Banana", "ta": "நேந்திரம் பழம்", "sizes": ["500g", "1kg"], "subject": "a few long, thick, ridged yellow nendran bananas" },
+    { "name": "Red Banana", "ta": "செவ்வாழை", "subject": "a hand of plump reddish-maroon red bananas" },
+    { "name": "Karpooravalli Banana", "ta": "கற்பூரவள்ளி", "subject": "a hand of stubby, ash-dusted yellow karpooravalli bananas" },
+    { "name": "Hill Banana", "ta": "மலை வாழைப்பழம்", "subject": "a hand of small, slightly angular yellow hill bananas" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Chiku (Sapota)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Sapota", "ta": "சப்போட்டா", "subject": "a few brown sapotas, one halved showing soft brown flesh" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Grapes"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Green Grapes (Seedless)", "ta": "பச்சை திராட்சை", "subject": "a bunch of fresh pale green seedless grapes" },
+    { "name": "Black Grapes (Seedless)", "ta": "கருப்பு திராட்சை", "subject": "a bunch of fresh dark purple-black seedless grapes" },
+    { "name": "Panneer Grapes", "ta": "பன்னீர் திராட்சை", "subject": "a bunch of round dusky purple panneer grapes" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Guava (Amrood)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Guava (Country)", "ta": "நாட்டுக் கொய்யா", "subject": "a few small green-yellow guavas, one halved showing white flesh" },
+    { "name": "Guava (Thai)", "ta": "தாய் கொய்யா", "subject": "a few large pale green Thai guavas" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Litchi"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Litchi", "ta": "லிச்சி", "subject": "a cluster of red litchis, one peeled showing white flesh" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Mango"], "sizes": ["1kg"], "items": [
+    { "name": "Banganapalli Mango", "ta": "பங்கனப்பள்ளி மாம்பழம்", "subject": "a few large golden-yellow banganapalli mangoes" },
+    { "name": "Imam Pasand Mango", "ta": "இமாம் பசந்த் மாம்பழம்", "subject": "a few large green-yellow imam pasand mangoes" },
+    { "name": "Alphonso Mango", "ta": "அல்போன்சா மாம்பழம்", "subject": "a few saffron-yellow alphonso mangoes with a red blush" },
+    { "name": "Malgova Mango", "ta": "மல்கோவா மாம்பழம்", "subject": "a few round green-yellow malgova mangoes" },
+    { "name": "Neelam Mango", "ta": "நீலம் மாம்பழம்", "subject": "a few medium yellow neelam mangoes" },
+    { "name": "Sendhura Mango", "ta": "செந்தூரா மாம்பழம்", "subject": "a few red-and-yellow sendhura mangoes" },
+    { "name": "Kili Mooku Mango (Totapuri)", "ta": "கிளிமூக்கு மாம்பழம்", "subject": "a few green-yellow totapuri mangoes with beaked tips" },
+    { "name": "Rumani Mango", "ta": "ருமானி மாம்பழம்", "subject": "a few round green-yellow rumani mangoes" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Orange & Mosambi"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Orange (Nagpur)", "ta": "ஆரஞ்சு", "subject": "a few bright orange Nagpur oranges, one peeled into segments" },
+    { "name": "Mosambi (Sathukudi)", "ta": "சாத்துக்குடி", "subject": "a few green-yellow sweet limes, one halved" },
+    { "name": "Lemon", "ta": "எலுமிச்சை", "sizes": ["250g", "500g"], "subject": "a few fresh yellow lemons, one halved" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Papaya"], "sizes": ["1 pc"], "items": [
+    { "name": "Papaya", "ta": "பப்பாளி", "subject": "a ripe papaya with a halved one showing orange flesh and black seeds" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Pineapple"], "sizes": ["1 pc"], "items": [
+    { "name": "Pineapple", "ta": "அன்னாசிப்பழம்", "subject": "one whole ripe pineapple with green crown" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Pomegranate (Anaar)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Pomegranate", "ta": "மாதுளை", "subject": "a few red pomegranates, one broken open showing ruby seeds" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Watermelon & Muskmelon"], "sizes": ["1 pc"], "items": [
+    { "name": "Watermelon", "ta": "தர்பூசணி", "subject": "a whole striped watermelon with a red wedge cut out" },
+    { "name": "Muskmelon", "ta": "முலாம் பழம்", "subject": "a whole netted muskmelon with an orange-fleshed slice" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Fresh Fruits", "Seasonal & Exotic Fruits"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Custard Apple", "ta": "சீதாப்பழம்", "subject": "a few green custard apples, one open showing creamy white flesh" },
+    { "name": "Amla", "ta": "நெல்லிக்காய்", "sizes": ["250g", "500g"], "subject": "a heap of round pale green gooseberries" },
+    { "name": "Jamun", "ta": "நாவல் பழம்", "sizes": ["250g"], "subject": "a heap of glossy deep purple jamun berries" },
+    { "name": "Jackfruit (Cleaned Bulbs)", "ta": "பலாப்பழச் சுளைகள்", "sizes": ["250g", "500g"], "subject": "a heap of golden-yellow cleaned jackfruit bulbs" },
+    { "name": "Ice Apple (Nungu)", "ta": "நுங்கு", "sizes": ["6 pcs"], "subject": "a few peeled, translucent, pale white jelly-like ice apple (nungu) kernels, with one still inside a cut purple-black palmyra fruit shell" },
+    { "name": "Sugarcane", "ta": "கரும்பு", "sizes": ["1 pc"], "subject": "a few short pieces of purple-brown sugarcane, one peeled" },
+    { "name": "Kiwi", "ta": "கிவி", "sizes": ["3 pcs"], "subject": "a few brown kiwis, one halved showing green flesh" },
+    { "name": "Dragon Fruit", "ta": "டிராகன் பழம்", "sizes": ["1 pc"], "subject": "a pink dragon fruit with a half showing white flesh and black seeds" },
+    { "name": "Avocado", "ta": "அவகேடோ", "sizes": ["1 pc"], "subject": "an avocado with a half showing green flesh and the stone" },
+    { "name": "Pear", "ta": "பேரிக்காய்", "subject": "a few fresh green-yellow pears" },
+    { "name": "Plum", "ta": "பிளம்ஸ்", "sizes": ["250g", "500g"], "subject": "a few dark red plums" },
+    { "name": "Strawberry", "ta": "ஸ்ட்ராபெர்ரி", "sizes": ["200g"], "subject": "a heap of fresh red strawberries with green tops" },
+    { "name": "Wood Apple", "ta": "விளாம்பழம்", "sizes": ["1 pc"], "subject": "a hard-shelled wood apple, one cracked open showing brown pulp" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Cut & Prepared", "Cut Vegetables"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Peeled Garlic", "ta": "உரித்த பூண்டு", "sizes": ["100g", "200g"], "subject": "a heap of peeled white garlic cloves" },
+    { "name": "Peeled Small Onion", "ta": "உரித்த சின்ன வெங்காயம்", "subject": "a heap of peeled pink shallots" },
+    { "name": "Grated Coconut", "ta": "துருவிய தேங்காய்", "sizes": ["100g", "200g"], "subject": "a heap of fresh white grated coconut" },
+    { "name": "Sambar Vegetable Mix", "ta": "சாம்பார் காய்கறி கலவை", "subject": "a heap of cut drumstick, brinjal, carrot, pumpkin and shallots" },
+    { "name": "Avial Vegetable Mix", "ta": "அவியல் காய்கறி கலவை", "subject": "a heap of long-cut raw banana, yam, carrot, beans and drumstick" }
+  ]},
+  { "path": ["Fruits & Vegetables", "Cut & Prepared", "Cut Fruits"], "sizes": ["250g"], "items": [
+    { "name": "Mixed Fruit Bowl", "ta": "கலப்பு பழக் கிண்ணம்", "subject": "a clear bowl of cubed papaya, pineapple, watermelon and grapes" }
+  ]}
+]

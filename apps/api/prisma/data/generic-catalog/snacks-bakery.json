@@ -1,0 +1,91 @@
+[
+  { "path": ["Snacks & Packaged Foods", "Namkeen & Savoury Snacks", "Mixture & Chivda"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Madras Mixture", "ta": "மெட்ராஸ் மிக்சர்", "subject": "a heap of spicy south Indian mixture with sev, boondi, peanuts and curry leaves" },
+    { "name": "Aval Mixture", "ta": "அவல் மிக்சர்", "subject": "a heap of crisp poha mixture with peanuts, cashews and curry leaves" },
+    { "name": "Kara Boondi", "ta": "காரா பூந்தி", "subject": "a heap of crisp spicy orange boondi with peanuts and curry leaves" }
+  ]},
+  { "path": ["Snacks & Packaged Foods", "Namkeen & Savoury Snacks", "Bhujia & Sev"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Omapodi", "ta": "ஓமப்பொடி", "subject": "a heap of thin crisp pale yellow ajwain sev" },
+    { "name": "Ribbon Pakoda", "ta": "ரிப்பன் பக்கோடா", "subject": "a heap of crisp golden ribbon-shaped pakoda" },
+    { "name": "Kara Sev", "ta": "காரா சேவ்", "subject": "a heap of thick crisp spicy reddish sev sticks" }
+  ]},
+  { "path": ["Snacks & Packaged Foods", "Namkeen & Savoury Snacks", "Moong Dal & Chana"], "sizes": ["100g", "250g"], "items": [
+    { "name": "Masala Peanuts", "ta": "மசாலா கடலை", "subject": "a heap of crunchy batter-coated red masala peanuts" },
+    { "name": "Fried Moong Dal", "ta": "வறுத்த பாசிப்பருப்பு", "subject": "a heap of crisp salted fried yellow moong dal" }
+  ]},
+  { "path": ["Snacks & Packaged Foods", "Namkeen & Savoury Snacks", "Murukku & Thattai"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Kai Murukku", "ta": "கை முறுக்கு", "subject": "a stack of golden hand-twisted spiral murukku" },
+    { "name": "Thenkuzhal Murukku", "ta": "தேன்குழல்", "subject": "a stack of crisp pale golden thenkuzhal spirals" },
+    { "name": "Mullu Murukku", "ta": "முள்ளு முறுக்கு", "subject": "a stack of spiky ridged golden murukku spirals" },
+    { "name": "Butter Murukku", "ta": "பட்டர் முறுக்கு", "subject": "a stack of light, crumbly pale butter murukku spirals" },
+    { "name": "Achu Murukku", "ta": "அச்சு முறுக்கு", "subject": "a few lacy flower-shaped golden rose cookies" },
+    { "name": "Thattai", "ta": "தட்டை", "subject": "a stack of round, flat, crisp golden thattai with chana dal specks" },
+    { "name": "Seedai", "ta": "சீடை", "subject": "a heap of small round crisp golden seedai balls" }
+  ]},
+  { "path": ["Snacks & Packaged Foods", "Chips & Crisps", "Banana Chips"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Banana Chips (Salted)", "ta": "நேந்திரம் சிப்ஸ்", "subject": "a heap of thin round golden-yellow banana chips" },
+    { "name": "Spicy Banana Chips", "ta": "காரமான வாழைக்காய் சிப்ஸ்", "subject": "a heap of golden banana chips dusted with red chilli" },
+    { "name": "Sharkara Upperi", "ta": "சர்க்கரை உப்பேரி", "subject": "a heap of thick banana pieces coated in dark jaggery" },
+    { "name": "Tapioca Chips", "ta": "மரவள்ளிக் கிழங்கு சிப்ஸ்", "subject": "a heap of thin crisp white tapioca chips with chilli specks" }
+  ]},
+  { "path": ["Snacks & Packaged Foods", "Chips & Crisps", "Potato Chips"], "sizes": ["100g", "250g"], "items": [
+    { "name": "Potato Chips (Salted)", "ta": "உருளைக்கிழங்கு சிப்ஸ்", "subject": "a heap of thin crisp golden salted potato chips" }
+  ]},
+  { "path": ["Snacks & Packaged Foods", "Sweets & Mithai", "Dry Sweet (Ladoo, Barfi, Peda)"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Mysore Pak", "ta": "மைசூர் பாக்", "subject": "a few porous golden mysore pak squares" },
+    { "name": "Boondi Laddu", "ta": "பூந்தி லட்டு", "subject": "a few round orange boondi laddus with cashews and raisins" },
+    { "name": "Rava Laddu", "ta": "ரவா லட்டு", "subject": "a few round pale rava laddus with cashews" },
+    { "name": "Coconut Burfi", "ta": "தேங்காய் பர்பி", "subject": "a few white coconut burfi squares" },
+    { "name": "Palkova", "ta": "பால்கோவா", "subject": "a small heap of soft caramel-brown milk palkova" },
+    { "name": "Adhirasam", "ta": "அதிரசம்", "subject": "a few round dark brown jaggery adhirasams" },
+    { "name": "Kaju Katli", "ta": "காஜு கத்லி", "subject": "a few diamond-shaped kaju katli pieces with silver leaf" },
+    { "name": "Kadalai Mittai (Peanut Chikki)", "ta": "கடலை மிட்டாய்", "subject": "a few glossy jaggery peanut chikki squares" },
+    { "name": "Ellu Urundai", "ta": "எள்ளு உருண்டை", "subject": "a few round sesame and jaggery balls" },
+    { "name": "Pori Urundai", "ta": "பொரி உருண்டை", "subject": "a few round puffed rice and jaggery balls" },
+    { "name": "Badusha", "ta": "பாதுஷா", "subject": "a few glazed flaky golden badushas" }
+  ]},
+  { "path": ["Snacks & Packaged Foods", "Sweets & Mithai", "Halwa & Sheera"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Tirunelveli Halwa", "ta": "திருநெல்வேலி அல்வா", "subject": "a glossy dark reddish-brown wheat halwa block on a banana leaf piece" }
+  ]},
+  { "path": ["Snacks & Packaged Foods", "Sweets & Mithai", "Rasgulla & Gulab Jamun"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Gulab Jamun", "ta": "குலாப் ஜாமூன்", "subject": "a few dark brown gulab jamuns glistening with syrup" },
+    { "name": "Jangiri", "ta": "ஜாங்கிரி", "subject": "a few orange flower-shaped jangiris glistening with syrup" }
+  ]},
+  { "path": ["Bakery", "Bread", "Sandwich Bread"], "sizes": ["400g"], "items": [
+    { "name": "Milk Bread", "ta": "மில்க் பிரெட்", "subject": "an unwrapped loaf of soft white milk bread with a few slices cut" }
+  ]},
+  { "path": ["Bakery", "Bakery Snacks", "Buns & Rolls"], "sizes": ["2 pcs", "4 pcs"], "items": [
+    { "name": "Sweet Bun", "ta": "இனிப்பு பன்", "subject": "a few glossy golden-brown round sweet buns" },
+    { "name": "Cream Bun", "ta": "கிரீம் பன்", "subject": "a few soft buns split and filled with white cream and sprinkled sugar" },
+    { "name": "Coconut Bun", "ta": "தேங்காய் பன்", "subject": "a few golden buns with sweet coconut filling visible" }
+  ]},
+  { "path": ["Bakery", "Bakery Snacks", "Khari & Puff Pastry"], "sizes": ["1 pc", "4 pcs"], "items": [
+    { "name": "Veg Puff", "ta": "வெஜ் பஃப்ஸ்", "subject": "a few flaky golden triangular vegetable puffs, one cut showing filling" },
+    { "name": "Egg Puff", "ta": "முட்டை பஃப்ஸ்", "foodType": "EGG", "subject": "a few flaky golden puffs, one cut showing half a boiled egg in masala" }
+  ]},
+  { "path": ["Bakery", "Bakery Snacks", "Cookies (Bakery Fresh)"], "sizes": ["200g", "500g"], "items": [
+    { "name": "Butter Biscuit", "ta": "பட்டர் பிஸ்கட்", "subject": "a heap of round golden bakery butter biscuits" },
+    { "name": "Coconut Biscuit", "ta": "தேங்காய் பிஸ்கட்", "subject": "a heap of round bakery biscuits speckled with coconut" },
+    { "name": "Osmania Biscuit", "ta": "ஒஸ்மானியா பிஸ்கட்", "subject": "a heap of round pale golden Osmania biscuits" }
+  ]},
+  { "path": ["Bakery", "Rusk", "Plain Rusk"], "sizes": ["200g", "400g"], "items": [
+    { "name": "Bakery Rusk", "ta": "ரஸ்க்", "subject": "a stack of crisp golden rusk slices" }
+  ]},
+  { "path": ["Bakery", "Cakes & Pastries", "Sliced Cake"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Tea Cake", "ta": "டீ கேக்", "subject": "a golden plain tea cake loaf with a few slices cut" }
+  ]},
+  { "path": ["Beverages", "Coffee", "Filter Coffee Powder"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Filter Coffee Powder (with Chicory)", "ta": "ஃபில்டர் காபித் தூள்", "subject": "a heap of fine dark brown coffee powder beside a steel tumbler and dabarah of frothy filter coffee" },
+    { "name": "Pure Coffee Powder", "ta": "சுத்தமான காபித் தூள்", "subject": "a heap of fine dark brown pure coffee powder with a few roasted beans" }
+  ]},
+  { "path": ["Beverages", "Coffee", "Ground Coffee Beans"], "sizes": ["250g", "500g"], "items": [
+    { "name": "Peaberry Coffee Beans (Roasted)", "ta": "பீபெர்ரி காபிக் கொட்டை", "subject": "a heap of small round dark roasted peaberry coffee beans" }
+  ]},
+  { "path": ["Beverages", "Tea", "Leaf & Dust Tea (CTC)"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Tea Dust (Loose)", "ta": "டீ தூள்", "subject": "a heap of fine granular black CTC tea dust beside a small glass of milky tea" },
+    { "name": "Leaf Tea (Loose)", "ta": "இலை டீ", "subject": "a heap of dark twisted loose tea leaves" }
+  ]},
+  { "path": ["Beverages", "Juices & Fruit Drinks", "Coconut Water"], "sizes": ["1 pc"], "items": [
+    { "name": "Tender Coconut", "ta": "இளநீர்", "subject": "one fresh green tender coconut with the top cut open" }
+  ]}
+]

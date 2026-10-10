@@ -1,0 +1,307 @@
+[
+  { "path": ["Grocery & Staples", "Rice", "Non-Basmati Rice"], "sizes": ["1kg", "5kg", "10kg", "25kg"], "items": [
+    { "name": "Ponni Raw Rice", "ta": "பொன்னி பச்சரிசி", "subject": "a heap of polished white medium-grain raw rice" },
+    { "name": "Sona Masoori Raw Rice", "ta": "சோனா மசூரி பச்சரிசி", "subject": "a heap of slim, short, polished white rice grains" },
+    { "name": "BPT Raw Rice", "ta": "பி.பி.டி பச்சரிசி", "subject": "a heap of fine white medium-slender raw rice grains" },
+    { "name": "Seeraga Samba Rice", "ta": "சீரக சம்பா அரிசி", "subject": "a heap of tiny, very short, slim white rice grains, much smaller than regular rice" },
+    { "name": "Kichili Samba Rice", "ta": "கிச்சிலி சம்பா அரிசி", "subject": "a heap of small round white samba rice grains" },
+    { "name": "Thooyamalli Rice", "ta": "தூயமல்லி அரிசி", "subject": "a heap of slender pearly-white traditional rice grains" },
+    { "name": "Mappillai Samba Rice", "ta": "மாப்பிள்ளை சம்பா அரிசி", "sizes": ["1kg", "5kg"], "subject": "a heap of unpolished reddish-brown traditional rice grains" },
+    { "name": "Karuppu Kavuni Rice", "ta": "கருப்பு கவுனி அரிசி", "sizes": ["500g", "1kg"], "subject": "a heap of glossy deep purple-black rice grains" },
+    { "name": "Poongar Rice", "ta": "பூங்கார் அரிசி", "sizes": ["1kg", "5kg"], "subject": "a heap of light red unpolished rice grains" },
+    { "name": "Kattuyanam Rice", "ta": "காட்டுயானம் அரிசி", "sizes": ["1kg", "5kg"], "subject": "a heap of dark red-brown unpolished rice grains" },
+    { "name": "Broken Rice (Noi)", "ta": "நொய் அரிசி", "sizes": ["1kg", "5kg"], "subject": "a heap of small broken white rice pieces" }
+  ]},
+  { "path": ["Grocery & Staples", "Rice", "Parboiled Rice"], "sizes": ["1kg", "5kg", "10kg", "25kg"], "items": [
+    { "name": "Ponni Boiled Rice", "ta": "பொன்னி புழுங்கல் அரிசி", "subject": "a heap of creamy off-white parboiled medium-grain rice" },
+    { "name": "Sona Masoori Boiled Rice", "ta": "சோனா மசூரி புழுங்கல் அரிசி", "subject": "a heap of slim creamy parboiled rice grains" },
+    { "name": "IR20 Boiled Rice", "ta": "ஐ.ஆர்.20 புழுங்கல் அரிசி", "subject": "a heap of slightly bold, pale golden parboiled rice grains" },
+    { "name": "Kerala Matta Rice", "ta": "கேரளா மட்டை அரிசி", "subject": "a heap of bold reddish-brown parboiled matta rice grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Rice", "Idli & Dosa Rice"], "sizes": ["1kg", "5kg", "10kg", "25kg"], "items": [
+    { "name": "Idli Rice", "ta": "இட்லி அரிசி", "subject": "a heap of short, bold, opaque parboiled idli rice grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Rice", "Basmati Rice"], "sizes": ["1kg", "5kg"], "items": [
+    { "name": "Basmati Rice", "ta": "பாஸ்மதி அரிசி", "subject": "a heap of extra-long slender white basmati rice grains" },
+    { "name": "Basmati Rice Tibar (Broken)", "ta": "பாஸ்மதி அரிசி (உடைந்தது)", "subject": "a heap of slender white basmati rice with some broken grains" },
+    { "name": "Golden Sella Basmati Rice", "ta": "கோல்டன் செல்லா பாஸ்மதி அரிசி", "subject": "a heap of extra-long pale golden parboiled basmati rice grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Rice", "Brown Rice"], "sizes": ["1kg", "5kg"], "items": [
+    { "name": "Brown Rice", "ta": "பழுப்பு அரிசி", "subject": "a heap of light brown unpolished long-grain rice" },
+    { "name": "Red Rice", "ta": "சிவப்பு அரிசி", "subject": "a heap of brick-red unpolished rice grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Rice", "Poha & Puffed Rice"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Aval (Thick Poha)", "ta": "கெட்டி அவல்", "subject": "a heap of thick white flattened rice flakes" },
+    { "name": "Aval (Thin Poha)", "ta": "மெல்லிய அவல்", "subject": "a heap of thin, papery white flattened rice flakes" },
+    { "name": "Red Aval (Red Poha)", "ta": "சிவப்பு அவல்", "subject": "a heap of reddish-brown flattened red rice flakes" },
+    { "name": "Puffed Rice (Pori)", "ta": "பொரி", "sizes": ["100g", "250g", "500g"], "subject": "a heap of light, crisp white puffed rice" },
+    { "name": "Nel Pori (Paddy Puffs)", "ta": "நெல் பொரி", "sizes": ["100g", "250g"], "subject": "a heap of white popped paddy puffs with a few golden husks" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Wheat Atta"], "sizes": ["1kg", "5kg", "10kg"], "items": [
+    { "name": "Wheat Atta (Chakki Fresh)", "ta": "கோதுமை மாவு", "subject": "a mound of fine light-brown whole wheat flour with a few wheat grains beside it" },
+    { "name": "Samba Wheat Atta", "ta": "சம்பா கோதுமை மாவு", "sizes": ["500g", "1kg"], "subject": "a mound of slightly coarse golden-brown samba wheat flour with a few long wheat grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Maida (Refined Flour)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Maida", "ta": "மைதா மாவு", "subject": "a mound of very fine bright white refined flour" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Besan (Gram Flour)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Besan (Gram Flour)", "ta": "கடலை மாவு", "subject": "a mound of fine pale yellow gram flour with a few split chana dal beside it" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Rice Flour"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Rice Flour", "ta": "அரிசி மாவு", "subject": "a mound of fine soft white rice flour with a few rice grains beside it" },
+    { "name": "Roasted Rice Flour (Idiyappam & Puttu)", "ta": "வறுத்த அரிசி மாவு", "subject": "a mound of slightly coarse, faintly cream roasted rice flour" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Ragi Flour"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Ragi Flour", "ta": "கேழ்வரகு மாவு", "subject": "a mound of fine reddish-brown finger millet flour with a few ragi grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Jowar Flour"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Jowar Flour", "ta": "சோள மாவு", "subject": "a mound of fine off-white sorghum flour with a few round jowar grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Bajra Flour"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Bajra Flour", "ta": "கம்பு மாவு", "subject": "a mound of fine grey-green pearl millet flour with a few bajra grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Corn Flour"], "sizes": ["200g", "500g"], "items": [
+    { "name": "Corn Flour (Corn Starch)", "ta": "மக்காச்சோள மாவு", "subject": "a mound of silky, powdery bright white corn starch" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Multigrain Atta"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Multigrain Atta", "ta": "பல தானிய மாவு", "subject": "a mound of speckled brown multigrain flour with a few mixed grains" },
+    { "name": "Sathu Maavu (Health Mix)", "ta": "சத்து மாவு", "subject": "a mound of light brown roasted health-mix powder with a few millets and nuts beside it" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Sattu"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Sattu (Roasted Gram Flour)", "ta": "பொட்டுக்கடலை மாவு", "subject": "a mound of fine beige roasted gram flour" }
+  ]},
+  { "path": ["Grocery & Staples", "Atta & Flours", "Sooji & Rava"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Bombay Rava (Sooji)", "ta": "பம்பாய் ரவை", "subject": "a heap of fine creamy-white semolina" },
+    { "name": "Roasted Rava", "ta": "வறுத்த ரவை", "subject": "a heap of light golden roasted semolina" },
+    { "name": "Idli Rava", "ta": "இட்லி ரவை", "subject": "a heap of coarse off-white rice rava granules" },
+    { "name": "Wheat Rava (Broken Wheat)", "ta": "கோதுமை ரவை", "subject": "a heap of coarse golden-brown broken wheat" },
+    { "name": "Samba Wheat Rava", "ta": "சம்பா கோதுமை ரவை", "subject": "a heap of coarse reddish-brown samba broken wheat" },
+    { "name": "Sago (Javvarisi)", "ta": "ஜவ்வரிசி", "sizes": ["250g", "500g", "1kg"], "subject": "a heap of small round pearly-white sago pearls" },
+    { "name": "Whole Wheat", "ta": "முழு கோதுமை", "sizes": ["1kg", "5kg"], "subject": "a heap of whole golden wheat grains" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Toor Dal (Arhar)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Toor Dal", "ta": "துவரம் பருப்பு", "subject": "a heap of glossy yellow split pigeon peas" },
+    { "name": "Toor Dal (Unpolished)", "ta": "துவரம் பருப்பு (பாலிஷ் செய்யாதது)", "subject": "a heap of matte, natural yellow unpolished split pigeon peas" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Urad Dal"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Urad Dal Whole (Gundu Ulundu)", "ta": "குண்டு உளுந்து", "subject": "a heap of small, plain, uniformly creamy-white whole hulled urad dal grains with no spots or markings" },
+    { "name": "Urad Dal Split (White)", "ta": "உடைத்த உளுந்து", "subject": "a heap of split, fully hulled, pure creamy-white urad dal halves with no black skins at all" },
+    { "name": "Black Urad Dal Split", "ta": "கருப்பு உளுந்து (உடைத்தது)", "subject": "a heap of split black gram with black skins and white insides" },
+    { "name": "Black Urad Whole", "ta": "முழு கருப்பு உளுந்து", "subject": "a heap of whole black gram with black skins" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Moong Dal"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Moong Dal (Yellow)", "ta": "பாசிப் பருப்பு", "subject": "a heap of small bright yellow split moong lentils" },
+    { "name": "Green Moong Whole", "ta": "பச்சைப் பயறு", "subject": "a heap of whole glossy green mung beans" },
+    { "name": "Green Moong Split", "ta": "உடைத்த பச்சைப் பயறு", "subject": "a heap of split mung beans with green skins and yellow insides" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Chana Dal"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Chana Dal", "ta": "கடலைப் பருப்பு", "subject": "a heap of split golden-yellow bengal gram" },
+    { "name": "Roasted Gram (Pottukadalai)", "ta": "பொட்டுக்கடலை", "subject": "a heap of pale yellow roasted split gram" },
+    { "name": "Black Chana (Kala Chana)", "ta": "கருப்பு கொண்டைக்கடலை", "subject": "a heap of small dark brown whole chickpeas" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Chole (Kabuli Chana)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Kabuli Chana", "ta": "வெள்ளை கொண்டைக்கடலை", "subject": "a heap of beige whole kabuli chickpeas" },
+    { "name": "Kabuli Chana (Large)", "ta": "பெரிய வெள்ளை கொண்டைக்கடலை", "subject": "a heap of extra-large plump beige kabuli chickpeas" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Masoor Dal"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Masoor Dal", "ta": "மசூர் பருப்பு", "subject": "a heap of small salmon-orange split red lentils" },
+    { "name": "Whole Masoor", "ta": "முழு மசூர்", "subject": "a heap of small flat brown whole lentils" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Rajma"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Rajma (Red)", "ta": "ராஜ்மா", "subject": "a heap of glossy dark red kidney beans" },
+    { "name": "Rajma Chitra", "ta": "சித்ரா ராஜ்மா", "subject": "a heap of speckled pink-and-brown chitra kidney beans" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Lobia (Black Eyed Peas)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Black Eyed Beans (Karamani)", "ta": "காராமணி", "subject": "a heap of creamy white black-eyed beans with black spots" },
+    { "name": "Red Cowpeas", "ta": "சிவப்பு காராமணி", "subject": "a heap of small reddish-brown cowpeas" }
+  ]},
+  { "path": ["Grocery & Staples", "Dal & Pulses", "Mixed Pulses"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Horse Gram (Kollu)", "ta": "கொள்ளு", "subject": "a heap of small flat mottled brown horse gram" },
+    { "name": "Dried Green Peas", "ta": "உலர் பச்சைப் பட்டாணி", "subject": "a heap of round dried olive-green peas" },
+    { "name": "Dried White Peas", "ta": "வெள்ளைப் பட்டாணி", "subject": "a heap of round dried creamy-white peas" },
+    { "name": "Dried Field Beans (Mochai)", "ta": "மொச்சை", "subject": "a heap of flat dried brown-and-cream field beans" },
+    { "name": "Soya Chunks", "ta": "சோயா உருண்டைகள்", "sizes": ["200g", "500g"], "subject": "a heap of dry beige textured soya chunks" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Almonds (Badam)"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "California Almonds", "ta": "பாதாம்", "subject": "a heap of whole brown California almonds" },
+    { "name": "Mamra Almonds", "ta": "மம்ரா பாதாம்", "subject": "a heap of small, concave, wrinkled mamra almonds" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Cashews (Kaju)"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Cashew W320", "ta": "முந்திரி (W320)", "subject": "a heap of whole creamy-white cashew nuts" },
+    { "name": "Cashew W240 (Jumbo)", "ta": "பெரிய முந்திரி", "subject": "a heap of extra-large whole creamy-white cashew nuts" },
+    { "name": "Cashew Split", "ta": "உடைத்த முந்திரி", "subject": "a heap of split cashew halves" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Raisins (Kishmish)"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Golden Raisins", "ta": "உலர் திராட்சை", "subject": "a heap of plump golden raisins" },
+    { "name": "Black Raisins", "ta": "கருப்பு உலர் திராட்சை", "subject": "a heap of plump black raisins" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Dates (Khajoor)"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Seedless Dates", "ta": "விதையில்லா பேரீச்சம்பழம்", "subject": "a heap of soft glossy dark brown seedless dates" },
+    { "name": "Dry Dates (Kharek)", "ta": "பேரீச்சங்காய்", "sizes": ["250g", "500g"], "subject": "a heap of hard, wrinkled golden-brown dry dates" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Figs (Anjeer)"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Dried Figs (Anjeer)", "ta": "உலர் அத்திப்பழம்", "subject": "a heap of flattened dried figs with one cut open showing seeds" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Pistachios (Pista)"], "sizes": ["100g", "250g"], "items": [
+    { "name": "Salted Pistachios", "ta": "உப்பு பிஸ்தா", "subject": "a heap of roasted salted pistachios in split shells" },
+    { "name": "Pistachio Kernels", "ta": "பிஸ்தா பருப்பு", "subject": "a heap of shelled green pistachio kernels" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Walnuts (Akhrot)"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Walnut Kernels", "ta": "வால்நட் பருப்பு", "subject": "a heap of light golden walnut halves" },
+    { "name": "Walnuts in Shell", "ta": "ஓட்டுடன் வால்நட்", "subject": "a heap of whole walnuts in their shells, one cracked open" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Seeds (Chia, Flax, Pumpkin, Sunflower)"], "sizes": ["100g", "250g"], "items": [
+    { "name": "Pumpkin Seeds", "ta": "பூசணி விதை", "subject": "a heap of flat green hulled pumpkin seeds" },
+    { "name": "Sunflower Seeds", "ta": "சூரியகாந்தி விதை", "subject": "a heap of hulled grey-cream sunflower seeds" },
+    { "name": "Flax Seeds", "ta": "ஆளி விதை", "subject": "a heap of glossy brown flax seeds" },
+    { "name": "Chia Seeds", "ta": "சியா விதை", "subject": "a heap of tiny speckled grey-black chia seeds" },
+    { "name": "Sabja Seeds", "ta": "சப்ஜா விதை", "subject": "a heap of tiny black basil seeds" },
+    { "name": "Watermelon Seeds (Magaz)", "ta": "தர்பூசணி விதை", "subject": "a heap of small cream-coloured peeled melon seeds" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Mixed Dry Fruits"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Mixed Dry Fruits", "ta": "கலப்பு உலர் பழங்கள்", "subject": "a heap of mixed almonds, cashews, raisins and pistachios" },
+    { "name": "Dried Apricots", "ta": "உலர் ஆப்ரிகாட்", "subject": "a heap of soft orange dried apricots" }
+  ]},
+  { "path": ["Grocery & Staples", "Dry Fruits & Nuts", "Peanuts"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Raw Peanuts", "ta": "நிலக்கடலை", "subject": "a heap of raw red-skinned peanuts" },
+    { "name": "Roasted Peanuts", "ta": "வறுத்த நிலக்கடலை", "subject": "a heap of roasted peanuts with some papery skins coming off" },
+    { "name": "Skinless Peanuts", "ta": "தோல் நீக்கிய நிலக்கடலை", "subject": "a heap of pale cream skinless peanut halves" },
+    { "name": "Groundnut in Shell", "ta": "தோலுடன் நிலக்கடலை", "subject": "a heap of whole peanuts in their beige shells" }
+  ]},
+  { "path": ["Grocery & Staples", "Edible Oils", "Groundnut Oil"], "sizes": ["500ml", "1L", "5L"], "items": [
+    { "name": "Groundnut Oil (Wood Pressed)", "ta": "மரச்செக்கு கடலை எண்ணெய்", "subject": "a plain unlabeled glass bottle of golden groundnut oil with a few peanuts beside it" },
+    { "name": "Groundnut Oil (Filtered)", "ta": "கடலை எண்ணெய்", "subject": "a plain unlabeled clear plastic bottle of light golden groundnut oil" }
+  ]},
+  { "path": ["Grocery & Staples", "Edible Oils", "Sesame Oil (Til)"], "sizes": ["500ml", "1L", "5L"], "items": [
+    { "name": "Gingelly Oil (Wood Pressed)", "ta": "மரச்செக்கு நல்லெண்ணெய்", "subject": "a plain unlabeled glass bottle of amber sesame oil with a small heap of black sesame seeds" },
+    { "name": "Gingelly Oil", "ta": "நல்லெண்ணெய்", "subject": "a plain unlabeled clear plastic bottle of amber sesame oil" }
+  ]},
+  { "path": ["Grocery & Staples", "Edible Oils", "Coconut Oil"], "sizes": ["200ml", "500ml", "1L"], "items": [
+    { "name": "Coconut Oil (Wood Pressed)", "ta": "மரச்செக்கு தேங்காய் எண்ணெய்", "subject": "a plain unlabeled glass bottle of clear coconut oil with half a coconut beside it" },
+    { "name": "Coconut Oil", "ta": "தேங்காய் எண்ணெய்", "subject": "a plain unlabeled clear plastic bottle of clear, faintly yellow coconut oil with half a brown coconut showing white meat beside it" }
+  ]},
+  { "path": ["Grocery & Staples", "Edible Oils", "Sunflower Oil"], "sizes": ["500ml", "1L", "5L"], "items": [
+    { "name": "Sunflower Oil (Refined)", "ta": "சூரியகாந்தி எண்ணெய்", "subject": "a plain unlabeled clear plastic bottle of pale yellow sunflower oil" }
+  ]},
+  { "path": ["Grocery & Staples", "Edible Oils", "Blended Oil"], "sizes": ["500ml", "1L", "5L"], "items": [
+    { "name": "Palmolein Oil", "ta": "பாமாயில்", "subject": "a plain unlabeled clear plastic pouch of golden-orange palmolein oil" }
+  ]},
+  { "path": ["Grocery & Staples", "Ghee", "Cow Ghee"], "sizes": ["100ml", "200ml", "500ml", "1L"], "items": [
+    { "name": "Cow Ghee", "ta": "பசு நெய்", "subject": "a plain glass jar of golden granular cow ghee with a small brass spoon" }
+  ]},
+  { "path": ["Grocery & Staples", "Ghee", "Buffalo Ghee"], "sizes": ["100ml", "200ml", "500ml", "1L"], "items": [
+    { "name": "Buffalo Ghee", "ta": "எருமை நெய்", "subject": "a plain glass jar of creamy white buffalo ghee with a small brass spoon" }
+  ]},
+  { "path": ["Grocery & Staples", "Papad & Fryums", "Fryums & Appalam"], "sizes": ["100g", "200g"], "items": [
+    { "name": "Appalam", "ta": "அப்பளம்", "sizes": ["100g", "200g", "500g"], "subject": "a stack of round uncooked appalam discs with one fried, puffed appalam on top" },
+    { "name": "Onion Vadagam", "ta": "வெங்காய வடகம்", "subject": "a heap of dried onion vadagam balls" },
+    { "name": "Javvarisi Vadam (Sago Fryums)", "ta": "ஜவ்வரிசி வடாம்", "subject": "a heap of dried white sago fryum discs" },
+    { "name": "Rice Vadam", "ta": "அரிசி வடாம்", "subject": "a heap of dried white rice vadam spirals" },
+    { "name": "Mor Milagai (Curd Chillies)", "ta": "மோர் மிளகாய்", "subject": "a heap of sun-dried, salted pale curd chillies" },
+    { "name": "Sundakkai Vathal (Dried Turkey Berry)", "ta": "சுண்டைக்காய் வற்றல்", "subject": "a heap of small dark sun-dried turkey berries" },
+    { "name": "Manathakkali Vathal", "ta": "மணத்தக்காளி வற்றல்", "subject": "a heap of tiny black sun-dried manathakkali berries" }
+  ]},
+  { "path": ["Grocery & Staples", "Salt & Sugar", "White Sugar"], "sizes": ["500g", "1kg", "5kg"], "items": [
+    { "name": "White Sugar", "ta": "சர்க்கரை", "subject": "a heap of sparkling white sugar crystals" }
+  ]},
+  { "path": ["Grocery & Staples", "Salt & Sugar", "Brown Sugar"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Brown Sugar", "ta": "பழுப்பு சர்க்கரை", "subject": "a heap of moist light brown sugar crystals" }
+  ]},
+  { "path": ["Grocery & Staples", "Salt & Sugar", "Jaggery (Gur)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Achu Vellam (Mould Jaggery)", "ta": "அச்சு வெல்லம்", "subject": "a few cone-shaped golden-brown moulded jaggery pieces" },
+    { "name": "Urundai Vellam (Ball Jaggery)", "ta": "உருண்டை வெல்லம்", "subject": "a few round golden-brown jaggery balls" },
+    { "name": "Palm Jaggery (Karupatti)", "ta": "கருப்பட்டி", "subject": "a few dark brown cup-shaped palm jaggery pieces" }
+  ]},
+  { "path": ["Grocery & Staples", "Salt & Sugar", "Jaggery Powder"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Nattu Sakkarai (Jaggery Powder)", "ta": "நாட்டுச் சர்க்கரை", "subject": "a heap of fine golden-brown jaggery powder" }
+  ]},
+  { "path": ["Grocery & Staples", "Salt & Sugar", "Mishri (Rock Sugar)"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Sugar Candy (Kalkandu)", "ta": "கற்கண்டு", "subject": "a heap of clear crystalline sugar candy chunks" },
+    { "name": "Palm Sugar Candy (Panangkalkandu)", "ta": "பனங்கற்கண்டு", "subject": "a heap of pale amber palm sugar candy crystals" }
+  ]},
+  { "path": ["Grocery & Staples", "Salt & Sugar", "Iodised Salt"], "sizes": ["1kg"], "items": [
+    { "name": "Crystal Salt (Kal Uppu)", "ta": "கல் உப்பு", "subject": "a heap of coarse white sea salt crystals" },
+    { "name": "Powdered Salt (Thool Uppu)", "ta": "தூள் உப்பு", "subject": "a heap of fine white powdered salt" }
+  ]},
+  { "path": ["Grocery & Staples", "Salt & Sugar", "Rock Salt (Sendha Namak)"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Rock Salt (Indhuppu)", "ta": "இந்துப்பு", "subject": "a heap of pale pink rock salt chunks and crystals" }
+  ]},
+  { "path": ["Grocery & Staples", "Salt & Sugar", "Black Salt (Kala Namak)"], "sizes": ["100g", "250g"], "items": [
+    { "name": "Black Salt", "ta": "கருப்பு உப்பு", "subject": "a heap of fine pinkish-grey black salt powder with a few dark crystals" }
+  ]},
+  { "path": ["Grocery & Staples", "Spices & Masala", "Whole Spices"], "sizes": ["50g", "100g", "250g"], "items": [
+    { "name": "Cumin Seeds", "ta": "சீரகம்", "subject": "a heap of slender ridged brown cumin seeds" },
+    { "name": "Fennel Seeds", "ta": "சோம்பு", "subject": "a heap of pale green fennel seeds" },
+    { "name": "Mustard Seeds", "ta": "கடுகு", "subject": "a heap of tiny round dark brown mustard seeds" },
+    { "name": "Fenugreek Seeds", "ta": "வெந்தயம்", "subject": "a heap of small angular golden-yellow fenugreek seeds" },
+    { "name": "Coriander Seeds", "ta": "தனியா", "sizes": ["100g", "250g", "500g"], "subject": "a heap of round beige coriander seeds" },
+    { "name": "Black Pepper", "ta": "மிளகு", "subject": "a heap of wrinkled black peppercorns" },
+    { "name": "Dry Red Chilli (Gundu)", "ta": "குண்டு மிளகாய்", "sizes": ["100g", "250g", "500g"], "subject": "a heap of round, plump dried red gundu chillies" },
+    { "name": "Dry Red Chilli (Long)", "ta": "வர மிளகாய்", "sizes": ["100g", "250g", "500g"], "subject": "a heap of long wrinkled dried red chillies" },
+    { "name": "Kashmiri Dry Chilli", "ta": "காஷ்மீரி மிளகாய்", "sizes": ["100g", "250g"], "subject": "a heap of deep red, broad, wrinkled Kashmiri dried chillies" },
+    { "name": "Cloves", "ta": "கிராம்பு", "sizes": ["25g", "50g", "100g"], "subject": "a heap of dark brown whole cloves" },
+    { "name": "Green Cardamom", "ta": "ஏலக்காய்", "sizes": ["25g", "50g", "100g"], "subject": "a heap of plump green cardamom pods, one split open showing seeds" },
+    { "name": "Cinnamon", "ta": "பட்டை", "sizes": ["25g", "50g", "100g"], "subject": "a small bundle of rolled cinnamon bark sticks" },
+    { "name": "Bay Leaf", "ta": "பிரிஞ்சி இலை", "sizes": ["25g", "50g"], "subject": "a small pile of dried olive-green bay leaves" },
+    { "name": "Star Anise", "ta": "அன்னாசிப் பூ", "sizes": ["25g", "50g"], "subject": "a heap of whole star-shaped brown star anise" },
+    { "name": "Mace", "ta": "ஜாதிபத்திரி", "sizes": ["10g", "25g"], "subject": "a small heap of lacy orange-red dried mace blades" },
+    { "name": "Nutmeg", "ta": "ஜாதிக்காய்", "sizes": ["25g", "50g"], "subject": "a few whole brown nutmegs, one halved" },
+    { "name": "Kalpasi (Stone Flower)", "ta": "கல்பாசி", "sizes": ["10g", "25g"], "subject": "a small heap of dried, papery black-and-grey stone flower lichen" },
+    { "name": "Marathi Mokku", "ta": "மராத்தி மொக்கு", "sizes": ["10g", "25g"], "subject": "a small heap of dried dark brown kapok buds" },
+    { "name": "Ajwain", "ta": "ஓமம்", "subject": "a heap of tiny ridged greyish-brown carom seeds" },
+    { "name": "Poppy Seeds", "ta": "கசகசா", "sizes": ["50g", "100g"], "subject": "a heap of tiny creamy-white poppy seeds" },
+    { "name": "White Sesame Seeds", "ta": "வெள்ளை எள்", "subject": "a heap of hulled white sesame seeds" },
+    { "name": "Black Sesame Seeds", "ta": "கருப்பு எள்", "subject": "a heap of glossy black sesame seeds" },
+    { "name": "Nigella Seeds", "ta": "கருஞ்சீரகம்", "subject": "a heap of small angular matte black nigella seeds" },
+    { "name": "Black Cardamom", "ta": "பெரிய ஏலக்காய்", "sizes": ["25g", "50g"], "subject": "a heap of large wrinkled dark brown black cardamom pods" },
+    { "name": "Dry Ginger (Sukku)", "ta": "சுக்கு", "sizes": ["50g", "100g"], "subject": "a few pieces of pale, fibrous dried ginger root" },
+    { "name": "Turmeric Fingers", "ta": "விரலி மஞ்சள்", "sizes": ["100g", "250g"], "subject": "a heap of dried golden turmeric fingers, one broken showing orange inside" },
+    { "name": "Saffron", "ta": "குங்குமப்பூ", "sizes": ["1g", "2g"], "subject": "a tiny heap of deep red saffron threads in a small glass dish" },
+    { "name": "Asafoetida (Lump)", "ta": "கட்டிப் பெருங்காயம்", "sizes": ["25g", "50g"], "subject": "a few resinous amber-brown asafoetida lumps" }
+  ]},
+  { "path": ["Grocery & Staples", "Spices & Masala", "Ground Spices"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Turmeric Powder", "ta": "மஞ்சள் தூள்", "subject": "a heap of bright golden-yellow turmeric powder" },
+    { "name": "Red Chilli Powder", "ta": "மிளகாய் தூள்", "subject": "a heap of fine bright red chilli powder" },
+    { "name": "Kashmiri Chilli Powder", "ta": "காஷ்மீரி மிளகாய் தூள்", "subject": "a heap of deep crimson Kashmiri chilli powder" },
+    { "name": "Coriander Powder", "ta": "மல்லித் தூள்", "subject": "a heap of fine light brown coriander powder" },
+    { "name": "Cumin Powder", "ta": "சீரகத் தூள்", "sizes": ["50g", "100g"], "subject": "a heap of fine warm brown cumin powder" },
+    { "name": "Black Pepper Powder", "ta": "மிளகுத் தூள்", "sizes": ["50g", "100g"], "subject": "a heap of fine dark grey pepper powder" },
+    { "name": "Dry Ginger Powder", "ta": "சுக்குத் தூள்", "sizes": ["50g", "100g"], "subject": "a heap of fine pale beige dry ginger powder" },
+    { "name": "Asafoetida Powder", "ta": "பெருங்காயத் தூள்", "sizes": ["50g", "100g"], "subject": "a heap of fine pale yellow asafoetida powder" },
+    { "name": "Amchur Powder", "ta": "மாங்காய் தூள்", "sizes": ["50g", "100g"], "subject": "a heap of fine pale beige dried mango powder" }
+  ]},
+  { "path": ["Grocery & Staples", "Spices & Masala", "Blended Masala"], "sizes": ["100g", "250g", "500g"], "items": [
+    { "name": "Sambar Powder", "ta": "சாம்பார் பொடி", "subject": "a heap of reddish-orange sambar powder" },
+    { "name": "Rasam Powder", "ta": "ரசப் பொடி", "subject": "a heap of coarse brownish-orange rasam powder" },
+    { "name": "Kuzhambu Milagai Thool", "ta": "குழம்பு மிளகாய் தூள்", "subject": "a heap of deep red-brown curry masala powder" },
+    { "name": "Garam Masala", "ta": "கரம் மசாலா", "sizes": ["50g", "100g"], "subject": "a heap of dark brown garam masala powder with a few whole spices" },
+    { "name": "Biryani Masala", "ta": "பிரியாணி மசாலா", "sizes": ["50g", "100g"], "subject": "a heap of rich brown biryani masala powder with a star anise and cinnamon stick" },
+    { "name": "Chicken Masala", "ta": "சிக்கன் மசாலா", "sizes": ["50g", "100g", "250g"], "subject": "a heap of reddish-brown chicken masala powder" },
+    { "name": "Mutton Masala", "ta": "மட்டன் மசாலா", "sizes": ["50g", "100g", "250g"], "subject": "a heap of dark reddish-brown mutton masala powder" },
+    { "name": "Fish Curry Masala", "ta": "மீன் குழம்பு மசாலா", "sizes": ["50g", "100g", "250g"], "subject": "a heap of bright red fish curry masala powder" },
+    { "name": "Idli Milagai Podi", "ta": "இட்லி மிளகாய் பொடி", "subject": "a heap of coarse reddish-brown idli chutney powder with sesame specks" },
+    { "name": "Paruppu Podi", "ta": "பருப்பு பொடி", "subject": "a heap of coarse pale yellow lentil powder" },
+    { "name": "Curry Leaf Podi", "ta": "கறிவேப்பிலை பொடி", "subject": "a heap of coarse dark green curry leaf powder" }
+  ]},
+  { "path": ["Grocery & Staples", "Spices & Masala", "Herbs & Seasonings"], "sizes": ["25g", "50g", "100g"], "items": [
+    { "name": "Kasuri Methi", "ta": "கசூரி மேத்தி", "subject": "a heap of dried, crumbled green fenugreek leaves" },
+    { "name": "Chilli Flakes", "ta": "மிளகாய் துகள்கள்", "subject": "a heap of crushed red chilli flakes with seeds" }
+  ]},
+  { "path": ["Grocery & Staples", "Spices & Masala", "Tamarind"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Tamarind", "ta": "புளி", "subject": "a block of sticky dark brown tamarind pulp with a few whole tamarind pods" },
+    { "name": "Seedless Tamarind", "ta": "விதையில்லா புளி", "subject": "a block of clean, seedless reddish-brown tamarind pulp" }
+  ]},
+  { "path": ["Grocery & Staples", "Sauces & Condiments", "Honey"], "sizes": ["250g", "500g", "1kg"], "items": [
+    { "name": "Raw Forest Honey", "ta": "காட்டுத் தேன்", "subject": "a plain glass jar of dark amber honey with a wooden honey dipper" }
+  ]},
+  { "path": ["Gourmet & World Foods", "Organic & Health Foods", "Millets (Ragi, Jowar, Bajra)"], "sizes": ["500g", "1kg"], "items": [
+    { "name": "Ragi (Finger Millet)", "ta": "கேழ்வரகு", "subject": "a heap of tiny round reddish-brown finger millet grains" },
+    { "name": "Kambu (Pearl Millet)", "ta": "கம்பு", "subject": "a heap of small grey-green pearl millet grains" },
+    { "name": "Cholam (Sorghum)", "ta": "சோளம்", "subject": "a heap of round creamy-white sorghum grains" },
+    { "name": "Thinai (Foxtail Millet)", "ta": "தினை", "subject": "a heap of tiny pale yellow foxtail millet grains" },
+    { "name": "Samai (Little Millet)", "ta": "சாமை", "subject": "a heap of tiny cream-coloured little millet grains" },
+    { "name": "Varagu (Kodo Millet)", "ta": "வரகு", "subject": "a heap of small light brown kodo millet grains" },
+    { "name": "Kuthiraivali (Barnyard Millet)", "ta": "குதிரைவாலி", "subject": "a heap of tiny white barnyard millet grains" },
+    { "name": "Panivaragu (Proso Millet)", "ta": "பனிவரகு", "subject": "a heap of small glossy golden proso millet grains" }
+  ]}
+]

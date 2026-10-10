@@ -1,5 +1,6 @@
 /**
- * Generate transparent cut-out images for departments/categories.
+ * Generate transparent cut-out images for departments/categories, and for generic products (--level product,
+ * subjects from prisma/data/generic-catalog, slug = product name).
  * Run: cd apps/api && npx tsx scripts/taxonomy-images/generate.ts --level department [--only a,b] [--quality medium|high] [--force]
  * Output: scripts/taxonomy-images/out/<level>/<slug>.png (1024 master) + .webp (512) + out/contact.html
  */
@@ -19,21 +20,27 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const OUT = join(ROOT, "out");
 const MODEL = "gpt-image-2.5-flare";
 const CONCURRENCY = 4;
+const MAX_ATTEMPTS = 3;
 
-const STYLE = `Professional category image for an Indian grocery delivery app.
+const CATALOG = join(ROOT, "../../prisma/data/generic-catalog");
+
+const style = (level: string) => `Professional ${level === "product" ? "product" : "category"} image for an Indian grocery delivery app.
 A real photograph, not a 3D render or illustration: natural textures and true-to-life colours, as shot by a professional food and product photographer.
 Cut out on a fully transparent background: no backdrop, no table surface, no extra props.
 Camera at a slight 30-degree top-down angle. Soft diffused key light from the top-left, a gentle soft contact shadow directly beneath the items.
 Compact, balanced cluster with a roughly square overall footprint (about as tall as it is wide), centred in frame with generous empty margin on every side.
 Generic unbranded items only: absolutely no text, letters, numbers, logos, labels, brand names or printed packaging graphics.
-Fresh, appetising, natural vibrant colours, crisp focus.`;
+Fresh, appetising, natural vibrant colours, crisp focus.${level === "product" ? `
+Photorealistic catalogue packshot: indistinguishable from a real camera photo, with true scale, fine surface detail
+(individual grains, skin pores, fibres, moisture, natural imperfections), realistic depth of field and no stylisation,
+painterly or CGI look. Show only the subject described: no bowls, plates, cloths or garnishes unless the subject names them.` : ""}`;
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY! });
 
-async function generate(subject: string, quality: "low" | "medium" | "high"): Promise<Buffer> {
+async function generate(level: string, subject: string, quality: "low" | "medium" | "high"): Promise<Buffer> {
   const res = await openai.images.generate({
     model: MODEL,
-    prompt: `${STYLE}\n\nSubject: ${subject}.`,
+    prompt: `${style(level)}\n\nSubject: ${subject}.`,
     size: "1024x1024",
     quality,
     background: "transparent",
@@ -61,14 +68,42 @@ async function normalise(raw: Buffer, size: number): Promise<sharp.Sharp> {
   });
 }
 
+// A cut-out subject leaves its trimmed corners transparent; a painted backdrop fills all four
+async function hasBackdrop(raw: Buffer): Promise<boolean> {
+  const { data, info } = await sharp(raw).trim({ threshold: 1 }).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const patch = Math.max(4, Math.round(Math.min(info.width, info.height) * 0.04));
+  const cornerOpaque = (x0: number, y0: number) => {
+    let sum = 0;
+    for (let y = y0; y < y0 + patch; y++) for (let x = x0; x < x0 + patch; x++) sum += data[(y * info.width + x) * 4 + 3];
+    return sum / (patch * patch) > 200;
+  };
+  const far = (n: number) => n - patch;
+  return [[0, 0], [far(info.width), 0], [0, far(info.height)], [far(info.width), far(info.height)]]
+    .every(([x, y]) => cornerOpaque(x, y));
+}
+
 async function processOne(level: string, slug: string, subject: string, quality: "low" | "medium" | "high") {
   const dir = join(OUT, level);
   const rawPath = join(dir, "raw", `${slug}.png`);
-  const raw = await generate(subject, quality);
+  let raw = await generate(level, subject, quality);
+  for (let attempt = 2; attempt <= MAX_ATTEMPTS && (await hasBackdrop(raw)); attempt++) {
+    console.log(`  backdrop detected, retrying (${attempt}/${MAX_ATTEMPTS}): ${level}/${slug}`);
+    raw = await generate(level, subject, quality);
+  }
+  if (await hasBackdrop(raw)) throw new Error(`still has a backdrop after ${MAX_ATTEMPTS} attempts`);
   writeFileSync(rawPath, raw);
   await (await normalise(raw, 1024)).png({ compressionLevel: 9 }).toFile(join(dir, `${slug}.png`));
   await (await normalise(raw, 512)).webp({ quality: 85, alphaQuality: 90 }).toFile(join(dir, `${slug}.webp`));
   console.log(`  done: ${level}/${slug}`);
+}
+
+// Product subjects come from the generic catalog data, keyed by a slug of the product name
+function productSubjects(): Record<string, string> {
+  const slug = (s: string) => s.toLowerCase().replace(/&/g, " ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const groups: { items: { name: string; subject: string }[] }[] = readdirSync(CATALOG)
+    .filter((f) => f.endsWith(".json"))
+    .flatMap((f) => JSON.parse(readFileSync(join(CATALOG, f), "utf8")));
+  return Object.fromEntries(groups.flatMap((g) => g.items.map((i) => [slug(i.name), i.subject])));
 }
 
 function writeContactSheet() {
@@ -100,7 +135,9 @@ async function main() {
   });
   const level = values.level!;
   const quality = values.quality as "low" | "medium" | "high";
-  const subjects: Record<string, string> = JSON.parse(readFileSync(join(ROOT, "subjects.json"), "utf8"))[level];
+  const subjects: Record<string, string> = level === "product"
+    ? productSubjects()
+    : JSON.parse(readFileSync(join(ROOT, "subjects.json"), "utf8"))[level];
   if (!subjects) throw new Error(`No subjects for level "${level}"`);
   mkdirSync(join(OUT, level, "raw"), { recursive: true });
 
