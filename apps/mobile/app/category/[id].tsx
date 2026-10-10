@@ -5,7 +5,6 @@ import {
   FlatList,
   TouchableOpacity,
   TextInput,
-  Image,
   StyleSheet,
   ScrollView,
   ActivityIndicator,
@@ -18,12 +17,12 @@ import { useStore } from "../../lib/store-context";
 import { useLanguage } from "../../lib/language-context";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing } from "../../constants/theme";
-import { getCategoryIcon } from "../../constants/category-icons";
 import { GRID_GAP, GRID_H_PADDING, GRID_CARD_WIDTH } from "../../components/FeaturedProductCard";
 import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
 import { HeroBannerSlide } from "../../components/HeroBannerSlide";
 import { ShopByBrands } from "../../components/ShopByBrands";
+import { CategorySidebar } from "../../components/CategorySidebar";
 import { brandsFromProducts } from "../../lib/brand-strip";
 import type { StoreProduct, DepartmentNode, Banner } from "../../lib/types";
 
@@ -50,7 +49,6 @@ function toTreeNodes(departments: DepartmentNode[]): TreeNode[] {
 }
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
-const SIDEBAR_WIDTH = Math.round(SCREEN_WIDTH * 0.21);
 
 interface SubcategoryWithCount {
   id: string;
@@ -302,7 +300,6 @@ export default function CategoryScreen() {
   }, []);
 
   const hasActiveFilters = filterOnSale || sortBy !== null || activeGrandchild !== null || brandId !== null || searchQuery.trim().length > 0;
-  const totalCount = useMemo(() => new Set(allProducts.map((p) => p.product.id)).size, [allProducts]);
   const hasSidebar = subcategories.length > 0;
 
   const renderTopBanner = (narrow: boolean) => {
@@ -512,99 +509,7 @@ export default function CategoryScreen() {
       <View style={styles.container}>
         {hasSidebar ? (
           <View style={styles.splitLayout}>
-            {/* Left sidebar */}
-            <ScrollView
-              keyboardDismissMode="on-drag"
-              keyboardShouldPersistTaps="handled"
-              style={styles.sidebar}
-              showsVerticalScrollIndicator={false}
-            >
-              {/* All item */}
-              <TouchableOpacity
-                style={[
-                  styles.sidebarItem,
-                  !activeSub && styles.sidebarItemActive,
-                ]}
-                onPress={() => handleSubcategoryPress(null)}
-                activeOpacity={0.7}
-              >
-                <View style={[
-                  styles.sidebarIconCircle,
-                  !activeSub && styles.sidebarIconCircleActive,
-                ]}>
-                  <Ionicons
-                    name="grid-outline"
-                    size={28}
-                    color={!activeSub ? colors.primary : "#94a3b8"}
-                  />
-                </View>
-                <Text
-                  style={[
-                    styles.sidebarLabel,
-                    !activeSub && styles.sidebarLabelActive,
-                  ]}
-                  numberOfLines={2}
-                >
-                  All
-                </Text>
-                <Text
-                  style={[
-                    styles.sidebarCount,
-                    !activeSub && styles.sidebarCountActive,
-                  ]}
-                >
-                  {totalCount}
-                </Text>
-              </TouchableOpacity>
-
-              {subcategories.map((sub) => {
-                const isActive = activeSub === sub.id;
-                const icon = getCategoryIcon(sub.name);
-                return (
-                  <TouchableOpacity
-                    key={sub.id}
-                    style={[
-                      styles.sidebarItem,
-                      isActive && styles.sidebarItemActive,
-                    ]}
-                    onPress={() => handleSubcategoryPress(sub.id)}
-                    activeOpacity={0.7}
-                  >
-                    <View style={[
-                      styles.sidebarIconCircle,
-                      isActive && styles.sidebarIconCircleActive,
-                    ]}>
-                      {sub.imageUrl ? (
-                        <Image source={{ uri: sub.imageUrl }} style={styles.sidebarImage} resizeMode="contain" />
-                      ) : (
-                        <Ionicons
-                          name={icon}
-                          size={24}
-                          color={isActive ? colors.primary : "#94a3b8"}
-                        />
-                      )}
-                    </View>
-                    <Text
-                      style={[
-                        styles.sidebarLabel,
-                        isActive && styles.sidebarLabelActive,
-                      ]}
-                      numberOfLines={2}
-                    >
-                      {getLocalizedName(sub)}
-                    </Text>
-                    <Text
-                      style={[
-                        styles.sidebarCount,
-                        isActive && styles.sidebarCountActive,
-                      ]}
-                    >
-                      {sub.count}
-                    </Text>
-                  </TouchableOpacity>
-                );
-              })}
-            </ScrollView>
+            <CategorySidebar subcategories={subcategories} activeId={activeSub} onSelect={handleSubcategoryPress} />
 
             {/* Right content */}
             <View
@@ -640,68 +545,6 @@ const styles = StyleSheet.create({
   splitLayout: {
     flex: 1,
     flexDirection: "row",
-  },
-  sidebar: {
-    width: SIDEBAR_WIDTH,
-    flexGrow: 0,
-    flexShrink: 0,
-    backgroundColor: "#f1f5f9",
-    borderRightWidth: 1,
-    borderRightColor: "#e2e8f0",
-  },
-  sidebarItem: {
-    alignItems: "center",
-    paddingVertical: 8,
-    paddingHorizontal: 2,
-    borderRightWidth: 3,
-    borderRightColor: "transparent",
-    backgroundColor: "#f1f5f9",
-  },
-  // Indicator on the right edge, next to the product grid it controls
-  sidebarItemActive: {
-    backgroundColor: "#fff",
-    borderRightColor: colors.primary,
-  },
-  sidebarIconCircle: {
-    width: 60,
-    height: 60,
-    borderRadius: 12,
-    backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
-    overflow: "hidden",
-    marginBottom: 4,
-    borderWidth: 1.5,
-    borderColor: "transparent",
-  },
-  sidebarIconCircleActive: {
-    borderColor: colors.primary,
-  },
-  // Product-photo thumbnails: show the whole pack and blend its white background into the tile
-  sidebarImage: {
-    width: 54,
-    height: 54,
-    mixBlendMode: "multiply",
-  },
-  sidebarLabel: {
-    fontSize: 10,
-    fontWeight: "500",
-    color: colors.textSecondary,
-    textAlign: "center",
-    lineHeight: 13,
-  },
-  sidebarLabelActive: {
-    color: colors.primary,
-    fontWeight: "700",
-  },
-  sidebarCount: {
-    fontSize: 10,
-    color: "#94a3b8",
-    marginTop: 2,
-  },
-  sidebarCountActive: {
-    color: colors.primary,
-    fontWeight: "600",
   },
   contentArea: {
     flex: 1,
