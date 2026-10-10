@@ -28,10 +28,7 @@ export function groupByProduct(storeProducts: StoreProduct[]) {
   return { primary, variantsByProductId };
 }
 
-// What a product card needs from a product's variants: the size list ("1kg · 5kg") and how many are in the cart
-export function variantSummary(variants: StoreProduct[], cartQuantityMap: Map<string, number>) {
-  return {
-    sizes: variants.length > 1 ? variants.map((v) => v.variant.name) : undefined,
-    totalQty: variants.reduce((sum, v) => sum + (cartQuantityMap.get(v.id) ?? 0), 0),
-  };
+// How many of a product's variants are in the cart, across all sizes
+export function cartQuantity(variants: StoreProduct[], cartQuantityMap: Map<string, number>) {
+  return variants.reduce((sum, v) => sum + (cartQuantityMap.get(v.id) ?? 0), 0);
 }

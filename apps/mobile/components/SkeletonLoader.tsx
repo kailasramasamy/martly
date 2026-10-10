@@ -79,7 +79,7 @@ export function ProductDetailSkeleton() {
 export function ProductGridCardSkeleton() {
   return (
     <View style={sk.gridCard}>
-      <SkeletonBox width={imageTileSize(GRID_CARD_WIDTH)} height={imageTileSize(GRID_CARD_WIDTH)} borderRadius={10} style={{ margin: 6 }} />
+      <SkeletonBox width={imageTileSize(GRID_CARD_WIDTH)} height={imageTileSize(GRID_CARD_WIDTH)} borderRadius={0} />
       <View style={sk.gridCardContent}>
         <SkeletonBox width="85%" height={13} />
         <SkeletonBox width="50%" height={11} style={{ marginTop: 4 }} />

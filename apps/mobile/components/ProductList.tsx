@@ -4,7 +4,7 @@ import { FeaturedProductCard, GRID_CARD_WIDTH, GRID_GAP, GRID_H_PADDING } from "
 import { COMPACT_CARD_WIDTH, COMPACT_GAP } from "./CompactProductCard";
 import { ProductGridRow } from "./ProductGridRow";
 import { useProductActions } from "../lib/product-actions";
-import { groupByProduct, effectivePrice, variantSummary } from "../lib/group-variants";
+import { groupByProduct, effectivePrice, cartQuantity } from "../lib/group-variants";
 import type { StoreProduct } from "../lib/types";
 
 type PassThroughProps = Omit<FlatListProps<StoreProduct>, "data" | "renderItem" | "horizontal" | "numColumns" | "keyExtractor">;
@@ -58,7 +58,7 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
 
   const renderCard = useCallback((item: StoreProduct) => {
     const variants = variantsByProductId.get(item.product.id) ?? [item];
-    const { sizes, totalQty } = variantSummary(variants, actions.cartQuantityMap);
+    const totalQty = cartQuantity(variants, actions.cartQuantityMap);
     return (
       <FeaturedProductCard
         item={item}
@@ -66,7 +66,6 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
         storeId={actions.storeId}
         quantity={totalQty}
         variantCount={variants.length}
-        variantSizes={sizes}
         compact={layout === "grid" && numColumns === 3}
         onShowVariants={() => actions.showVariants(variants)}
         onAddToCart={actions.addToCart}

@@ -10,15 +10,15 @@ import { CompactProductCard } from "./CompactProductCard";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const CARD_GAP = 10;
-// ~3 cards per screen; the ADD control overlaps the image corner so the price gets a full-width line
+// ~3 cards per screen
 export const FEATURED_CARD_WIDTH = Math.floor((SCREEN_WIDTH - 16) / 3.1 - CARD_GAP);
 // Two-column grids (category, search, store, wishlist)
 export const GRID_GAP = 12;
 export const GRID_H_PADDING = spacing.md;
 export const GRID_CARD_WIDTH = (SCREEN_WIDTH - GRID_H_PADDING * 2 - GRID_GAP) / 2;
-// Square image tile inset inside the card: card width minus 1px borders and 6px margins on each side
-export const imageTileSize = (cardWidth: number) => cardWidth - 2 - 12;
-const CONTROL_WIDTH = 62;
+// Square image tile flush with the card edges: card width minus its 1px borders
+export const imageTileSize = (cardWidth: number) => cardWidth - 2;
+const CONTROL_WIDTH = 54;
 const CONTROL_HEIGHT = 32;
 // Extends the 32pt controls to a 44pt touch target
 const HIT_SLOP = { top: 6, bottom: 6, left: 4, right: 4 };
@@ -36,8 +36,6 @@ interface FeaturedProductCardProps {
   isMember?: boolean;
   // Grid usage: explicit card width (rails default to FEATURED_CARD_WIDTH with a right margin)
   width?: number;
-  // Sizes to list on the unit line (e.g. "1kg · 5kg · 10kg") instead of the default variant name
-  variantSizes?: string[];
   // 3-column search layout: smaller card, "N options" instead of the sizes row
   compact?: boolean;
 }
@@ -53,18 +51,12 @@ function CardImage({ item, size, isOutOfStock, isWishlisted, onHeart }: {
   item: StoreProduct; size: number; isOutOfStock: boolean; isWishlisted?: boolean; onHeart?: () => void;
 }) {
   const productImage = item.product.imageUrl || item.variant.imageUrl;
-  const discountLabel = getDiscountLabel(item);
   return (
     <View style={[styles.imageContainer, { width: size, height: size }]}>
       {productImage ? (
         <Image source={{ uri: productImage }} style={styles.image} resizeMode="contain" />
       ) : (
         <Text style={styles.noImageLetter}>{item.product.name.charAt(0)}</Text>
-      )}
-      {discountLabel && (
-        <View style={styles.discountTag}>
-          <Text style={styles.discountText}>{discountLabel}</Text>
-        </View>
       )}
       {item.product.foodType && <FoodTypeMark foodType={item.product.foodType} />}
       {isOutOfStock && (
@@ -89,12 +81,14 @@ function PriceBlock({ item, isMember }: { item: StoreProduct; isMember?: boolean
   const memberCheaper = memberPrice != null && memberPrice < displayPrice;
   const shown = isMember && memberCheaper ? memberPrice : displayPrice;
   const struck = isMember && memberCheaper ? displayPrice : originalPrice;
+  const discountLabel = getDiscountLabel(item);
   return (
     <View>
       <View style={styles.priceRow}>
         <Text style={styles.price} numberOfLines={1}>{"\u20B9"}{shown.toFixed(0)}</Text>
         {struck != null && <Text style={styles.mrp}>{"\u20B9"}{struck.toFixed(0)}</Text>}
       </View>
+      {discountLabel && <Text style={styles.discount}>{discountLabel}</Text>}
       {!isMember && memberCheaper && (
         <Text style={styles.memberHint}>{"\u20B9"}{memberPrice!.toFixed(0)} with Plus</Text>
       )}
@@ -142,30 +136,37 @@ function AddControl({ item, quantity, variantCount, isOutOfStock, onAddToCart, o
       accessibilityLabel={hasOptions ? "Add, choose a size" : "Add to cart"}
     >
       <Text style={[styles.addBtnText, isOutOfStock && styles.addBtnTextDisabled]}>ADD</Text>
+      {hasOptions && !isOutOfStock && <Text style={styles.optionsText}>{variantCount} options</Text>}
     </TouchableOpacity>
   );
 }
 
-function CardDetails({ item, variantCount, variantSizes, onShowVariants, lowStock }: {
-  item: StoreProduct; variantCount: number; variantSizes?: string[]; onShowVariants?: () => void; lowStock: number | null;
+// Default pack size on the left, ADD on the right — sits directly under the image, Blinkit-style
+function UnitBar({ item, variantCount, onShowVariants, children }: {
+  item: StoreProduct; variantCount: number; onShowVariants?: () => void; children: React.ReactNode;
 }) {
+  const unitLabel = item.variant.name;
+  return (
+    <View style={styles.unitBar}>
+      {variantCount > 1 ? (
+        <Pressable style={styles.unitRow} onPress={onShowVariants} hitSlop={6} accessibilityLabel={`${unitLabel}, ${variantCount} sizes`}>
+          <Text style={styles.unit} numberOfLines={1}>{unitLabel}</Text>
+        </Pressable>
+      ) : (
+        <Text style={[styles.unit, styles.unitRow]} numberOfLines={1}>{unitLabel}</Text>
+      )}
+      {children}
+    </View>
+  );
+}
+
+function CardDetails({ item, lowStock }: { item: StoreProduct; lowStock: number | null }) {
   const { getLocalizedName, getLocalizedSubtitle } = useLanguage();
   const subtitle = getLocalizedSubtitle(item.product);
-  const unitLabel = variantSizes?.length ? variantSizes.join(" \u00B7 ") : item.variant.name;
   return (
     <>
       <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>
       {subtitle && <Text style={styles.nameSubtitle} numberOfLines={1}>{subtitle}</Text>}
-      {variantCount > 1 ? (
-        <Pressable style={styles.unitRow} onPress={onShowVariants} hitSlop={6} accessibilityLabel={`${unitLabel}, ${variantCount} sizes`}>
-          <Text style={styles.unit} numberOfLines={1}>{unitLabel}</Text>
-          <Ionicons name="chevron-down" size={12} color={colors.textSecondary} />
-        </Pressable>
-      ) : (
-        <View style={styles.unitRow}>
-          <Text style={styles.unit} numberOfLines={1}>{unitLabel}</Text>
-        </View>
-      )}
       {(item.product.averageRating ?? 0) > 0 && (
         <View style={styles.ratingRow}>
           <Ionicons name="star" size={10} color="#f59e0b" />
@@ -178,7 +179,7 @@ function CardDetails({ item, variantCount, variantSizes, onShowVariants, lowStoc
   );
 }
 
-function StandardCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants, isWishlisted, onToggleWishlist, isMember, width, variantSizes }: FeaturedProductCardProps) {
+function StandardCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, storeId, variantCount = 1, onShowVariants, isWishlisted, onToggleWishlist, isMember, width }: FeaturedProductCardProps) {
   const cardWidth = width ?? FEATURED_CARD_WIDTH;
   const tile = imageTileSize(cardWidth);
   const available = item.availableStock ?? (item.stock - (item.reservedStock ?? 0));
@@ -195,25 +196,24 @@ function StandardCard({ item, onAddToCart, onUpdateQuantity, quantity = 0, store
 
   return (
     <TouchableOpacity style={[styles.card, { width: cardWidth }, width != null && styles.gridCard]} onPress={openProduct} activeOpacity={0.8}>
-      <CardImage
-        item={item}
-        size={tile}
-        isOutOfStock={isOutOfStock}
-        isWishlisted={isWishlisted}
-        onHeart={onToggleWishlist && (() => { heartTapped.current = true; onToggleWishlist(item.product.id); })}
-      />
-      <View style={[styles.controlOverlay, { top: 6 + tile - CONTROL_HEIGHT / 2 }]}>
-        <AddControl
-          item={item} quantity={quantity} variantCount={variantCount} isOutOfStock={isOutOfStock}
-          onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} onShowVariants={onShowVariants}
+      <View style={styles.tileBlock}>
+        <CardImage
+          item={item}
+          size={tile}
+          isOutOfStock={isOutOfStock}
+          isWishlisted={isWishlisted}
+          onHeart={onToggleWishlist && (() => { heartTapped.current = true; onToggleWishlist(item.product.id); })}
         />
+        <UnitBar item={item} variantCount={variantCount} onShowVariants={onShowVariants}>
+          <AddControl
+            item={item} quantity={quantity} variantCount={variantCount} isOutOfStock={isOutOfStock}
+            onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} onShowVariants={onShowVariants}
+          />
+        </UnitBar>
       </View>
       <View style={styles.content}>
         <PriceBlock item={item} isMember={isMember} />
-        <CardDetails
-          item={item} variantCount={variantCount} variantSizes={variantSizes}
-          onShowVariants={onShowVariants} lowStock={isLowStock ? available : null}
-        />
+        <CardDetails item={item} lowStock={isLowStock ? available : null} />
       </View>
     </TouchableOpacity>
   );
@@ -233,9 +233,9 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   gridCard: { marginRight: 0, marginBottom: GRID_GAP },
+  // Image + unit bar run edge to edge; the card's rounded corners clip the image
+  tileBlock: { borderBottomWidth: 1, borderBottomColor: "#eef2f6" },
   imageContainer: {
-    margin: 6,
-    borderRadius: 10,
     backgroundColor: "#f8fafc",
     padding: 4,
     alignItems: "center",
@@ -245,13 +245,8 @@ const styles = StyleSheet.create({
   // Multiply blends white product-photo backgrounds into the tile so every image looks uniform
   image: { width: "100%", height: "100%", mixBlendMode: "multiply" },
   noImageLetter: { fontFamily: fonts.bold, fontSize: 24, color: "#cbd5e1" },
-  discountTag: {
-    position: "absolute", top: 6, left: 6,
-    backgroundColor: colors.accent, borderRadius: 20, paddingHorizontal: 8, paddingVertical: 3,
-  },
-  discountText: { fontFamily: fonts.extrabold, fontSize: 10, color: colors.accentText, letterSpacing: 0.2 },
   heartBtn: {
-    position: "absolute", top: 4, right: 4, width: 26, height: 26, borderRadius: 13,
+    position: "absolute", top: 6, right: 6, width: 26, height: 26, borderRadius: 13,
     backgroundColor: "#fff", justifyContent: "center", alignItems: "center", zIndex: 2,
     shadowColor: "#0f172a", shadowOpacity: 0.08, shadowRadius: 3, shadowOffset: { width: 0, height: 1 }, elevation: 1,
   },
@@ -260,20 +255,24 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255,255,255,0.8)", justifyContent: "center", alignItems: "center",
   },
   oosLabel: { fontFamily: fonts.bold, fontSize: 10.5, color: colors.textSecondary },
-  // Straddles the image's bottom edge, Blinkit-style
-  controlOverlay: { position: "absolute", right: 6, zIndex: 3 },
-  content: { paddingHorizontal: 9, paddingTop: CONTROL_HEIGHT / 2 + 4, paddingBottom: 10 },
+  unitBar: {
+    flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 4,
+    paddingLeft: 9, paddingRight: 6, paddingVertical: 5,
+    borderTopWidth: 1, borderTopColor: "#eef2f6", backgroundColor: "#fff",
+  },
+  content: { paddingHorizontal: 9, paddingTop: 6, paddingBottom: 10 },
   name: { fontFamily: fonts.semibold, fontSize: 12.5, lineHeight: 16, minHeight: 32, color: colors.text, marginTop: 3 },
   nameSubtitle: { fontFamily: fonts.regular, fontSize: 10, color: "#94a3b8" },
-  unitRow: { flexDirection: "row", alignItems: "center", gap: 2, marginTop: 3, alignSelf: "flex-start" },
-  unit: { fontFamily: fonts.medium, fontSize: 11.5, color: colors.textSecondary, flexShrink: 1 },
+  unitRow: { flexShrink: 1 },
+  unit: { fontFamily: fonts.bold, fontSize: 12, color: colors.text, flexShrink: 1 },
   ratingRow: { flexDirection: "row", alignItems: "center", gap: 2, marginTop: 3 },
   ratingText: { fontFamily: fonts.semibold, fontSize: 10, color: "#92400e" },
   ratingCount: { fontFamily: fonts.regular, fontSize: 9.5, color: "#94a3b8" },
   lowStock: { fontFamily: fonts.semibold, fontSize: 10, color: colors.warning, marginTop: 2 },
   priceRow: { flexDirection: "row", alignItems: "baseline", gap: 5 },
-  price: { fontFamily: fonts.extrabold, fontSize: 14.5, color: colors.text },
-  mrp: { fontFamily: fonts.medium, fontSize: 10.5, color: "#94a3b8", textDecorationLine: "line-through" },
+  price: { fontFamily: fonts.extrabold, fontSize: 17, color: colors.text },
+  mrp: { fontFamily: fonts.medium, fontSize: 11, color: "#94a3b8", textDecorationLine: "line-through" },
+  discount: { fontFamily: fonts.bold, fontSize: 11, color: "#2563eb", marginTop: 1 },
   memberHint: { fontFamily: fonts.bold, fontSize: 9.5, color: "#b45309", marginTop: 1 },
   addBtn: {
     width: CONTROL_WIDTH, height: CONTROL_HEIGHT, borderRadius: 9,
@@ -282,12 +281,13 @@ const styles = StyleSheet.create({
     alignItems: "center", justifyContent: "center",
   },
   addBtnDisabled: { borderColor: colors.border, backgroundColor: colors.surface },
-  addBtnText: { fontFamily: fonts.extrabold, fontSize: 13, color: colors.primary, letterSpacing: 0.3 },
+  addBtnText: { fontFamily: fonts.extrabold, fontSize: 13, lineHeight: 15, color: colors.primary, letterSpacing: 0.3 },
+  optionsText: { fontFamily: fonts.semibold, fontSize: 8.5, lineHeight: 10, color: colors.textSecondary },
   addBtnTextDisabled: { color: "#94a3b8" },
   stepper: {
     flexDirection: "row", alignItems: "center", justifyContent: "space-between",
     width: CONTROL_WIDTH, height: CONTROL_HEIGHT, borderRadius: 9, backgroundColor: colors.primary,
   },
-  stepBtn: { width: 22, height: 32, alignItems: "center", justifyContent: "center" },
+  stepBtn: { width: 20, height: 32, alignItems: "center", justifyContent: "center" },
   stepText: { fontFamily: fonts.extrabold, fontSize: 13, color: "#fff", textAlign: "center" },
 });

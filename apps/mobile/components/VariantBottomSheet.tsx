@@ -4,9 +4,14 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 
-const { height: SCREEN_HEIGHT } = Dimensions.get("window");
+const { height: SCREEN_HEIGHT, width: SCREEN_WIDTH } = Dimensions.get("window");
 const SHEET_MAX = SCREEN_HEIGHT * 0.7;
 const CONTROL_WIDTH = 72;
+const CONTROL_HEIGHT = 34;
+const CARD_GAP = 12;
+const CARD_WIDTH = (SCREEN_WIDTH - spacing.md * 2 - CARD_GAP) / 2;
+// Square image tile inside the card's 8pt padding and 1pt border
+const TILE = CARD_WIDTH - 16 - 2;
 const HIT_SLOP = { top: 6, bottom: 6, left: 4, right: 4 };
 
 interface VariantBottomSheetProps {
@@ -35,6 +40,25 @@ function getPrices(sp: StoreProduct, isMember?: boolean) {
     plusHint: !isMember && memberCheaper ? memberPrice! : null,
     discountLabel,
   };
+}
+
+const perAmount = (n: number) => (Number.isInteger(n) ? `${n}` : n.toFixed(1));
+
+// Price per standard unit, e.g. "₹56.5/100 g" for a 200 g pack; null when it would just repeat the price
+function unitPriceLabel(sp: StoreProduct, price: number): string | null {
+  const value = Number(sp.variant.unitValue);
+  if (!value) return null;
+  // Keyed by the API's display labels (formatUnitType), not the enum names
+  const [amount, label] = ({
+    g: value < 1000 ? [value / 100, "100 g"] : [value / 1000, "kg"],
+    kg: value < 1 ? [value * 10, "100 g"] : [value, "kg"],
+    ml: value < 1000 ? [value / 100, "100 ml"] : [value / 1000, "L"],
+    L: value < 1 ? [value * 10, "100 ml"] : [value, "L"],
+    pcs: [value, "pc"],
+    pack: [value, "pack"],
+    doz: [value * 12, "pc"],
+  } as Record<string, [number, string]>)[sp.variant.unitType] ?? [1, ""];
+  return amount === 1 ? null : `\u20B9${perAmount(price / amount)}/${label}`;
 }
 
 interface ControlProps {
@@ -76,31 +100,30 @@ function VariantControl({ sp, qty, isOutOfStock, mode, onAddToCart, onUpdateQuan
   );
 }
 
-function VariantRow({ sp, qty, isMember, ...controlProps }: Omit<ControlProps, "isOutOfStock"> & { isMember?: boolean }) {
+// One size as a card: image with the ADD control straddling its corner, then size, price and per-unit price
+function VariantCard({ sp, qty, isMember, ...controlProps }: Omit<ControlProps, "isOutOfStock"> & { isMember?: boolean }) {
   const { shown, struck, plusHint, discountLabel } = getPrices(sp, isMember);
   const available = sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0));
   const isOutOfStock = available <= 0;
   const image = sp.variant.imageUrl || sp.product.imageUrl;
+  const unitPrice = unitPriceLabel(sp, shown);
   return (
-    <View style={[styles.row, isOutOfStock && styles.rowDisabled]}>
-      <View style={styles.thumb}>
-        {image ? <Image source={{ uri: image }} style={styles.thumbImage} resizeMode="contain" /> : null}
+    <View style={[styles.card, isOutOfStock && styles.cardDisabled]}>
+      <View style={styles.tile}>
+        {image ? <Image source={{ uri: image }} style={styles.tileImage} resizeMode="contain" /> : null}
       </View>
-      <View style={styles.info}>
-        <Text style={styles.variantName}>{sp.variant.name}</Text>
-        <View style={styles.priceRow}>
-          <Text style={styles.price}>{"\u20B9"}{shown.toFixed(0)}</Text>
-          {struck != null && <Text style={styles.mrp}>{"\u20B9"}{struck.toFixed(0)}</Text>}
-          {discountLabel && (
-            <View style={styles.discountPill}>
-              <Text style={styles.discountText}>{discountLabel}</Text>
-            </View>
-          )}
-        </View>
-        {plusHint != null && <Text style={styles.plusHint}>{"\u20B9"}{plusHint.toFixed(0)} with Plus</Text>}
-        {isOutOfStock && <Text style={styles.outOfStock}>Out of stock</Text>}
+      <View style={styles.controlWrap}>
+        <VariantControl sp={sp} qty={qty} isOutOfStock={isOutOfStock} {...controlProps} />
       </View>
-      <VariantControl sp={sp} qty={qty} isOutOfStock={isOutOfStock} {...controlProps} />
+      <Text style={styles.variantName} numberOfLines={1}>{sp.variant.name}</Text>
+      <View style={styles.priceRow}>
+        <Text style={styles.price}>{"\u20B9"}{shown.toFixed(0)}</Text>
+        {struck != null && <Text style={styles.mrp}>{"\u20B9"}{struck.toFixed(0)}</Text>}
+      </View>
+      {discountLabel && <Text style={styles.discount}>{discountLabel}</Text>}
+      {unitPrice && <Text style={styles.unitPrice}>{unitPrice}</Text>}
+      {plusHint != null && <Text style={styles.plusHint}>{"\u20B9"}{plusHint.toFixed(0)} with Plus</Text>}
+      {isOutOfStock && <Text style={styles.outOfStock}>Out of stock</Text>}
     </View>
   );
 }
@@ -143,21 +166,14 @@ export function VariantBottomSheet({
         <View style={styles.backdrop} />
       </TouchableWithoutFeedback>
       <View style={styles.sheet}>
-        <View style={styles.handleBar} />
-        <View style={styles.header}>
-          <View style={styles.headerText}>
-            <Text style={styles.title} numberOfLines={2}>{variants[0].product.name}</Text>
-            <Text style={styles.subtitle}>
-              {mode === "subscribe" ? "Choose a size to subscribe" : `${variants.length} sizes available`}
-            </Text>
-          </View>
-          <TouchableOpacity style={styles.closeBtn} onPress={onClose} hitSlop={8} accessibilityLabel="Close">
-            <Ionicons name="close" size={20} color={colors.textSecondary} />
-          </TouchableOpacity>
-        </View>
-        <ScrollView bounces={false} contentContainerStyle={styles.list}>
+        <TouchableOpacity style={styles.closeBtn} onPress={onClose} hitSlop={8} accessibilityLabel="Close">
+          <Ionicons name="close" size={22} color="#fff" />
+        </TouchableOpacity>
+        <Text style={styles.title} numberOfLines={2}>{variants[0].product.name}</Text>
+        {mode === "subscribe" && <Text style={styles.subtitle}>Choose a size to subscribe</Text>}
+        <ScrollView bounces={false} contentContainerStyle={styles.grid}>
           {variants.map((sp) => (
-            <VariantRow
+            <VariantCard
               key={sp.id} sp={sp} qty={cartQuantityMap.get(sp.id) ?? 0} isMember={isMember} mode={mode}
               onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} onSelect={onSelect}
             />
@@ -174,44 +190,40 @@ const styles = StyleSheet.create({
   backdrop: { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(15,23,42,0.45)" },
   sheet: {
     backgroundColor: "#fff", borderTopLeftRadius: 22, borderTopRightRadius: 22,
-    paddingHorizontal: spacing.md, paddingBottom: spacing.xl, maxHeight: SHEET_MAX,
+    paddingHorizontal: spacing.md, paddingTop: 18, paddingBottom: spacing.xl, maxHeight: SHEET_MAX,
   },
-  handleBar: {
-    width: 36, height: 4, borderRadius: 2, backgroundColor: colors.border,
-    alignSelf: "center", marginTop: spacing.sm, marginBottom: 12,
-  },
-  header: { flexDirection: "row", alignItems: "flex-start", gap: 12, marginBottom: 14 },
-  headerText: { flex: 1 },
-  title: { fontFamily: fonts.extrabold, fontSize: 17, lineHeight: 22, color: colors.text },
-  subtitle: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: 2 },
+  // Floats above the sheet, Blinkit-style
   closeBtn: {
-    width: 32, height: 32, borderRadius: 16, backgroundColor: colors.surface,
+    position: "absolute", top: -58, alignSelf: "center",
+    width: 44, height: 44, borderRadius: 22, backgroundColor: "rgba(15,23,42,0.85)",
     alignItems: "center", justifyContent: "center",
   },
-  list: { gap: 10 },
-  row: {
-    flexDirection: "row", alignItems: "center", gap: 12,
-    borderRadius: 14, borderWidth: 1, borderColor: "#eef2f6", padding: 10,
+  title: { fontFamily: fonts.extrabold, fontSize: 18, lineHeight: 23, color: colors.text, marginBottom: 14 },
+  subtitle: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: -10, marginBottom: 14 },
+  grid: { flexDirection: "row", flexWrap: "wrap", gap: CARD_GAP, paddingBottom: 4 },
+  card: {
+    width: CARD_WIDTH, borderRadius: 14, borderWidth: 1, borderColor: "#eef2f6", padding: 8, paddingBottom: 12,
   },
-  rowDisabled: { opacity: 0.6 },
-  thumb: {
-    width: 60, height: 60, borderRadius: 10, backgroundColor: "#f8fafc",
-    padding: 4, alignItems: "center", justifyContent: "center", overflow: "hidden",
+  cardDisabled: { opacity: 0.6 },
+  tile: {
+    width: TILE, height: TILE, borderRadius: 10, backgroundColor: "#f8fafc",
+    padding: 8, alignItems: "center", justifyContent: "center", overflow: "hidden",
   },
   // Multiply blends white product-photo backgrounds into the tile, as on the product cards
-  thumbImage: { width: "100%", height: "100%", mixBlendMode: "multiply" },
-  info: { flex: 1 },
-  variantName: { fontFamily: fonts.bold, fontSize: 15, color: colors.text },
-  priceRow: { flexDirection: "row", alignItems: "center", gap: 6, marginTop: 4, flexWrap: "wrap" },
-  price: { fontFamily: fonts.extrabold, fontSize: 15.5, color: colors.text },
+  tileImage: { width: "100%", height: "100%", mixBlendMode: "multiply" },
+  controlWrap: { position: "absolute", top: 8 + TILE - CONTROL_HEIGHT / 2, right: 12 },
+  variantName: { fontFamily: fonts.semibold, fontSize: 14, color: colors.text, marginTop: CONTROL_HEIGHT / 2 + 6 },
+  priceRow: { flexDirection: "row", alignItems: "baseline", gap: 6, marginTop: 4 },
+  price: { fontFamily: fonts.extrabold, fontSize: 18, color: colors.text },
   mrp: { fontFamily: fonts.medium, fontSize: 12, color: "#94a3b8", textDecorationLine: "line-through" },
-  discountPill: { backgroundColor: colors.accent, borderRadius: 20, paddingHorizontal: 7, paddingVertical: 2 },
-  discountText: { fontFamily: fonts.extrabold, fontSize: 10, color: colors.accentText },
+  discount: { fontFamily: fonts.bold, fontSize: 11.5, color: "#2563eb", marginTop: 1 },
+  unitPrice: { fontFamily: fonts.medium, fontSize: 12, color: colors.textSecondary, marginTop: 2 },
   plusHint: { fontFamily: fonts.bold, fontSize: 11.5, color: "#b45309", marginTop: 2 },
   outOfStock: { fontFamily: fonts.semibold, fontSize: 12, color: colors.textSecondary, marginTop: 2 },
   addBtn: {
-    minWidth: CONTROL_WIDTH, paddingHorizontal: 10, height: 34, borderRadius: 9,
+    minWidth: CONTROL_WIDTH, paddingHorizontal: 10, height: CONTROL_HEIGHT, borderRadius: 9,
     borderWidth: 1.5, borderColor: colors.primary, backgroundColor: "#fff",
+    shadowColor: "#0f172a", shadowOpacity: 0.08, shadowRadius: 4, shadowOffset: { width: 0, height: 2 }, elevation: 2,
     alignItems: "center", justifyContent: "center",
   },
   addBtnDisabled: { borderColor: colors.border, backgroundColor: colors.surface },
@@ -219,7 +231,7 @@ const styles = StyleSheet.create({
   addTextDisabled: { color: "#94a3b8" },
   stepper: {
     flexDirection: "row", alignItems: "center", justifyContent: "space-between",
-    width: CONTROL_WIDTH, height: 34, borderRadius: 9, backgroundColor: colors.primary,
+    width: CONTROL_WIDTH, height: CONTROL_HEIGHT, borderRadius: 9, backgroundColor: colors.primary,
   },
   stepBtn: { width: 24, height: 34, alignItems: "center", justifyContent: "center" },
   stepText: { fontFamily: fonts.extrabold, fontSize: 13.5, color: "#fff", textAlign: "center" },
