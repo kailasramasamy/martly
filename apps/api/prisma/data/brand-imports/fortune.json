@@ -1,0 +1,145 @@
+{
+  "brand": "Fortune (Adani Wilmar)",
+  "manufacturer": "AWL Agri Business Limited",
+  "feed": "fortune-feed.json",
+  "logo": "https://www.fortunefoods.com/wp-content/uploads/2026/09/fortune_logo.png",
+  "themeColor": "#F58220",
+  "themeColorSecondary": "#D71920",
+  "namePrefix": "Fortune ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Fortune Masoor Dal": "Masoor Malka",
+    "Fortune Rajma (Jammu)": "Rajma Chitra"
+  },
+  "rules": [
+    {
+      "match": "^Sunlite\\ Refined\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Sunlite\\ Refined\\ Sunflower\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Goldnut\\ Refined\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Goldnut\\ Refined\\ Groundnut\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Premium\\ Kachi\\ Ghani\\ Pure\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Premium\\ Kachi\\ Ghani\\ Pure\\ Mustard\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Soyabean\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Soybean Oil"
+      ]
+    },
+    {
+      "match": "^Rice\\ Bran\\ Health\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Rice Bran Oil"
+      ]
+    },
+    {
+      "match": "^Vivo\\ Pro\\ Sugar\\ Conscious\\ Blended\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Chakki\\ Fresh\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Chana\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chana Dal"
+      ]
+    },
+    {
+      "match": "^Kabuli\\ Chana$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chole (Kabuli Chana)"
+      ]
+    },
+    {
+      "match": "^Masoor\\ Malka$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Masoor Dal"
+      ]
+    },
+    {
+      "match": "^Moong\\ Dal\\ \\(Split\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Rajma\\ Chitra$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Rajma"
+      ]
+    },
+    {
+      "match": "^Toor\\ Dal\\ \\(Arhar\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Toor Dal (Arhar)"
+      ]
+    }
+  ]
+}

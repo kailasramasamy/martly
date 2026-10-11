@@ -1,0 +1,315 @@
+[
+ {
+  "title": "Refined Sunflower Oil",
+  "handle": "refined-sunflower-oil",
+  "vendor": "Mr. Gold",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-oil-3.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-oil-3.png"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "405",
+    "compare_at_price": "405",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-oil-3.png"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "1120",
+    "compare_at_price": "1120",
+    "available": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-item-1.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-oil-3.png"
+   },
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-item-1.png"
+   }
+  ]
+ },
+ {
+  "title": "Refined Sunflower Oil Pouch",
+  "handle": "refined-sunflower-oil-pouch",
+  "vendor": "Mr. Gold",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-pouch.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-pouch.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/sunflower-oil/sunflower-pouch.png"
+   }
+  ]
+ },
+ {
+  "title": "Filtered Groundnut Oil",
+  "handle": "filtered-groundnut-oil",
+  "vendor": "Mr. Gold",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-5.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "245",
+    "compare_at_price": "245",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-5.png"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "485",
+    "compare_at_price": "485",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-5.png"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "1510",
+    "compare_at_price": "1510",
+    "available": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-2.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-5.png"
+   },
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-2.png"
+   }
+  ]
+ },
+ {
+  "title": "Filtered Groundnut Oil Pouch",
+  "handle": "filtered-groundnut-oil-pouch",
+  "vendor": "Mr. Gold",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-4.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "245",
+    "compare_at_price": "245",
+    "available": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-4.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/groundnut-oil/groundnut-item-4.png"
+   }
+  ]
+ },
+ {
+  "title": "Refined Rice Bran Oil",
+  "handle": "refined-rice-bran-oil",
+  "vendor": "Mr. Gold",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/ricebran-oil/ricebran-pouch-1l-bg-removed.png"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "860",
+    "compare_at_price": "860",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/ricebran-oil/ricebran-oil-item-1-home.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/ricebran-oil/ricebran-pouch-1l-bg-removed.png"
+   },
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/ricebran-oil/ricebran-oil-item-1-home.png"
+   }
+  ]
+ },
+ {
+  "title": "Cold Pressed Gingelly Oil",
+  "handle": "cold-pressed-gingelly-oil",
+  "vendor": "Mr. Gold",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/gingelly-oil/gingelly-oil-third.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/gingelly-oil/gingelly-oil-third.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/gingelly-oil/gingelly-oil-third.png"
+   }
+  ]
+ },
+ {
+  "title": "Cold Pressed Gingelly Oil Pouch",
+  "handle": "cold-pressed-gingelly-oil-pouch",
+  "vendor": "Mr. Gold",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/gingelly-oil/gingelly-oil-last.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/gingelly-oil/gingelly-oil-last.png"
+   }
+  ]
+ },
+ {
+  "title": "Cooking Coconut Oil",
+  "handle": "cooking-coconut-oil",
+  "vendor": "Mr. Gold",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/coconut-oil/cocout-oil-1l.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://mrgold.in/assets/images/product/product%20list/coconut-oil/cocout-oil-1l.png"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "1550",
+    "compare_at_price": "1550",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://mrgold.in/assets/images/product/product%20list/coconut-oil/cocout-oil-1l.png"
+   }
+  ]
+ }
+]

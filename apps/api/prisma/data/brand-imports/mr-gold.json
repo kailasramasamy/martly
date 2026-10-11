@@ -1,0 +1,78 @@
+{
+  "brand": "Mr. Gold",
+  "manufacturer": "Sunraja Oil Industries Private Limited",
+  "feed": "mr-gold-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mr-gold/source/logo-cd59761e.png",
+  "themeColor": "#1E9550",
+  "themeColorSecondary": "#F2E40C",
+  "namePrefix": "Mr. Gold ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Refined\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Sunflower\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Filtered\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Filtered\\ Groundnut\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Rice\\ Bran\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Rice Bran Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Gingelly\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Gingelly\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Cooking\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    }
+  ]
+}

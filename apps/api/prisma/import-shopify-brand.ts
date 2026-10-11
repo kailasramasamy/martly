@@ -146,9 +146,11 @@ async function uploadProductImages(site: ShopifyProduct, brandSlug: string, slug
   return urls;
 }
 
-// A size's own pack shot, uploaded once (again with --refresh-images); undefined leaves the variant's image as is
-async function variantImage(v: PackVariant, current: string | null | undefined, keyBase: string): Promise<string | undefined> {
-  if (!v.image || (current && !REFRESH_IMAGES)) return undefined;
+// A size's own pack shot, uploaded once (again with --refresh-images); undefined leaves the variant's image as is.
+// A refresh mirrors the feed: a size it gives no image falls back to the product's images (null)
+async function variantImage(v: PackVariant, current: string | null | undefined, keyBase: string): Promise<string | null | undefined> {
+  if (!v.image) return REFRESH_IMAGES ? null : undefined;
+  if (current && !REFRESH_IMAGES) return undefined;
   const src = `${v.image}${v.image.includes("?") ? "&" : "?"}width=2000`;
   return uploadImage(`${keyBase}-${slugify(v.name)}`, await toWebp(src, 800));
 }
@@ -177,10 +179,11 @@ async function applyPlan(plan: Plan, config: Config, brandId: string): Promise<"
     where: { brandId, organizationId: null, name: { in: [plan.name, ...oldNames] } },
   });
   const sub = await resolveSubcategory(prisma, plan.path!);
+  // A feed without a description (hand-built feeds often have none) keeps the catalog's own
+  const description = plainDescription(plan.site.body_html) ?? undefined;
   const data = {
     name: plan.name, subcategoryId: sub.id, manufacturerName: config.manufacturer,
-    productType: PRODUCT_TYPE[plan.path![0]], foodType: config.foodType,
-    description: plainDescription(plan.site.body_html),
+    productType: PRODUCT_TYPE[plan.path![0]], foodType: config.foodType, description,
   };
   const product = existing
     ? await prisma.product.update({ where: { id: existing.id }, data })

@@ -1,0 +1,317 @@
+[
+ {
+  "title": "Refined Sunflower Oil",
+  "handle": "refined-sunflower-oil",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "189",
+    "compare_at_price": "207",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/13/GW_RSFO_1-L_Pet-Front.png"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "359",
+    "compare_at_price": "395",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/98/Gold-Winner-Pet-2-L-Front.png"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "899",
+    "compare_at_price": "1040",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/11/GW_RSFO_5-L_Front.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/13/GW_RSFO_1-L_Pet-Front.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/98/Gold-Winner-Pet-2-L-Front.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/11/GW_RSFO_5-L_Front.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/13/GW_RSFO_1-L_Pet-Back.png"
+   }
+  ]
+ },
+ {
+  "title": "Refined Sunflower Oil Pouch",
+  "handle": "refined-sunflower-oil-pouch",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L (Pack of 2)",
+    "price": "358",
+    "compare_at_price": "406",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/12/GW_RSFO_1-L_Front_2-Packs.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/12/GW_RSFO_1-L_Front_2-Packs.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/12/gold_winner_packs_1ltr_pouch_nutrition.png"
+   }
+  ]
+ },
+ {
+  "title": "Refined Groundnut Oil",
+  "handle": "refined-groundnut-oil",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "850g (Pack of 2)",
+    "price": "398",
+    "compare_at_price": "456",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/60/Gold-Winner-Silde-Post-850ml-2250x2250PXL-09_11zon.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/60/Gold-Winner-Silde-Post-850ml-2250x2250PXL-09_11zon.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/60/Gold-Winner-Silde-Post-850ml-2250x2250PXL-11_11zon.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/60/Gold-Winner-RGN-850g---3.jpg"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/60/Gold-Winner-RGN-850g---4.jpg"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/60/Gold-Winner-RGN-850g---5.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Groundnut Oil",
+  "handle": "groundnut-oil",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "116",
+    "compare_at_price": "128",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/90/Gold-Winner-Groundnut-Oil-500ml-Front.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "229",
+    "compare_at_price": "251",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/91/Gold-Winner-Groundnut-Oil-1L-Front.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/91/Gold-Winner-Groundnut-Oil-1L-Front.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/91/Gold-Winner-Groundnut-Oil-1L-Back.png"
+   }
+  ]
+ },
+ {
+  "title": "Gingelly Oil",
+  "handle": "gingelly-oil",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "164",
+    "compare_at_price": "194",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/88/Gold-Winner-Gingelly-Oil-500ml-Front.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "325",
+    "compare_at_price": "385",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/89/Gold-Winner-Gingelly-Oil-1L-Front.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/89/Gold-Winner-Gingelly-Oil-1L-Front.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/89/Gold-Winner-Gingelly-Oil-1L-Back.png"
+   }
+  ]
+ },
+ {
+  "title": "Gingelly Oil Bottle",
+  "handle": "gingelly-oil-bottle",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "177",
+    "compare_at_price": "198",
+    "available": false,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/100/Gold-Winner-Gingelly-oil-500-ML-Pet-Back.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/100/Gold-Winner-Gingelly-oil-500-ML-Pet-Back.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/100/Gold-Winner-Gingelly-oil-500-ML-Pet-Front.png"
+   }
+  ]
+ },
+ {
+  "title": "Coconut Oil",
+  "handle": "coconut-oil",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "165",
+    "compare_at_price": "188",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/92/Gold-Winner-Coconut-Oil-500ml-Front.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "315",
+    "compare_at_price": "363",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/93/Gold-Winner-Coconut-Oil-1L-Front.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/93/Gold-Winner-Coconut-Oil-1L-Front.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/93/Gold-Winner-Coconut-Oil-1L-Back.png"
+   }
+  ]
+ },
+ {
+  "title": "Rice Bran Oil",
+  "handle": "rice-bran-oil",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "99",
+    "compare_at_price": "103",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/94/Gold-Winner-Rice-bran-Oil-500ml-Front.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "179",
+    "compare_at_price": "203",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/95/Gold-Winner-Rice-bran-Oil-1L-Front.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/95/Gold-Winner-Rice-bran-Oil-1L-Front.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/95/Gold-Winner-Rice-bran-Oil-1L-Back.png"
+   }
+  ]
+ },
+ {
+  "title": "Vanaspati",
+  "handle": "vanaspati",
+  "vendor": "Gold Winner",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml (Pack of 2)",
+    "price": "170",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/14/gold_winner_vanspati_1ltr_front.png"
+    }
+   },
+   {
+    "title": "1L (Pack of 2)",
+    "price": "336",
+    "compare_at_price": "392",
+    "available": true,
+    "featured_image": {
+     "src": "https://kaleesuwari.com/storage/products/14/gold_winner_vanspati_1ltr_front.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://kaleesuwari.com/storage/products/14/gold_winner_vanspati_1ltr_front.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/14/gold_Winner_vanspati_1ltr_back.png"
+   },
+   {
+    "src": "https://kaleesuwari.com/storage/products/14/gold_Winner_vanspati_1ltr_nutrition.png"
+   }
+  ]
+ }
+]

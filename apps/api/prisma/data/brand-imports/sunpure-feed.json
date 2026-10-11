@@ -1,0 +1,230 @@
+[
+ {
+  "title": "Refined Sunflower Oil",
+  "handle": "refined-sunflower-oil",
+  "vendor": "Sunpure",
+  "product_type": "Edible Oils",
+  "body_html": "Physically refined sunflower oil, processed without chemicals such as sodium hydroxide and phosphoric acid, with no synthetic preservatives like BHA.",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/SPB_1L_Front_EqualSides.png?v=1711009103"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "410",
+    "compare_at_price": "410",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/2L.png?v=1774854430"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "899",
+    "compare_at_price": "899",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/5LHDPEFront.png?v=1697004912"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/SPB_1L_Front_EqualSides.png?v=1711009103"
+   },
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/SPB_1L_Back_EqualSides.png?v=1709828060"
+   },
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/2L.png?v=1774854430"
+   },
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/5LHDPEFront.png?v=1697004912"
+   }
+  ]
+ },
+ {
+  "title": "Refined Sunflower Oil Pouch",
+  "handle": "refined-sunflower-oil-pouch",
+  "vendor": "Sunpure",
+  "product_type": "Edible Oils",
+  "body_html": "Physically refined sunflower oil, processed without chemicals such as sodium hydroxide and phosphoric acid, with no synthetic preservatives like BHA.",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Sunpure_Front_1280x1280_ae26945d-cf17-47b4-81e8-9b1d1dad1697.png?v=1779189242"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Sunpure_Front_1280x1280_ae26945d-cf17-47b4-81e8-9b1d1dad1697.png?v=1779189242"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Sunpure_Front_1280x1280_ae26945d-cf17-47b4-81e8-9b1d1dad1697.png?v=1779189242"
+   },
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Sunpure_Back_1280x1280_6d347041-55b1-46d1-9bd3-77c54d4639c3.png?v=1779189243"
+   }
+  ]
+ },
+ {
+  "title": "Rice Bran Health Oil",
+  "handle": "rice-bran-health-oil",
+  "vendor": "Sunpure",
+  "product_type": "Edible Oils",
+  "body_html": "Physically refined, cholesterol-lowering rice bran oil; a balanced cooking and frying oil.",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/RBH1LFront_AsPerSize.png?v=1705477061"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "980",
+    "compare_at_price": "980",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/WhatsApp_Image_2026-01-17_at_11.54.51_AM_ebf3a5cc-f8af-4a42-b070-0c6b5d83e763.jpg?v=1769057712"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/RBH1LFront_AsPerSize.png?v=1705477061"
+   },
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/RBH_1L_Back.png?v=1705477061"
+   }
+  ]
+ },
+ {
+  "title": "Filtered Groundnut Oil",
+  "handle": "filtered-groundnut-oil",
+  "vendor": "Sunpure",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/FGN_1L_Pouch_Front_2048x2048_6d931fa0-efa2-4ea9-9396-f59954544ca9.png?v=1778243297"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "1200",
+    "compare_at_price": "1200",
+    "available": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/FGN_1L_Pouch_Front_2048x2048_6d931fa0-efa2-4ea9-9396-f59954544ca9.png?v=1778243297"
+   },
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/FGN_1L_Pouch_Back_2048x2048_cc6382e5-98bb-4db8-98b8-90933cdb39bd.png?v=1778243297"
+   }
+  ]
+ },
+ {
+  "title": "Champion Refined Canola Oil",
+  "handle": "champion-refined-canola-oil",
+  "vendor": "Sunpure",
+  "product_type": "Edible Oils",
+  "body_html": "Physically refined canola oil, light and neutral in taste with a high smoke point; rich in MUFA and contains omega-3.",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Canola_1L_Front_2048x2048_b9d42171-12b0-4941-b781-aded6b749a5b.jpg?v=1778571805"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Canola_1L_Front_2048x2048_b9d42171-12b0-4941-b781-aded6b749a5b.jpg?v=1778571805"
+   },
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Canola_1L_Back_2048x2048_a5912cf5-753b-498f-8baa-e2d59eadfcd0.jpg?v=1778571805"
+   }
+  ]
+ },
+ {
+  "title": "Kachi Ghani Mustard Oil",
+  "handle": "kachi-ghani-mustard-oil",
+  "vendor": "Sunpure",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Kachighani_1L_front_square_1.png?v=1745575837"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Kachighani_1L_front_square_1.png?v=1745575837"
+   }
+  ]
+ },
+ {
+  "title": "Vanaspati",
+  "handle": "vanaspati",
+  "vendor": "Sunpure",
+  "product_type": "Edible Oils",
+  "body_html": "Trans-fat free vanaspati fortified with vitamins A and D.",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Vanaspathi1LFront_Square.png?v=1705906168"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Vanaspathi1LFront_Square.png?v=1705906168"
+   },
+   {
+    "src": "https://cdn.shopify.com/s/files/1/0551/2790/0246/files/Vanaxpathi1LBack_Square.png?v=1705906185"
+   }
+  ]
+ }
+]

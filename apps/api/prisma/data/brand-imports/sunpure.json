@@ -1,0 +1,70 @@
+{
+  "brand": "Sunpure",
+  "manufacturer": "MK Agrotech Private Limited",
+  "feed": "sunpure-feed.json",
+  "logo": "https://www.sunpure.in/img/logo.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD100",
+  "namePrefix": "Sunpure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Refined\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Sunflower\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Rice\\ Bran\\ Health\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Rice Bran Oil"
+      ]
+    },
+    {
+      "match": "^Filtered\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Champion\\ Refined\\ Canola\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Vanaspati$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Vanaspati & Dalda"
+      ]
+    }
+  ]
+}

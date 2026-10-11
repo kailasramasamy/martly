@@ -1,0 +1,204 @@
+[
+ {
+  "title": "Refined Sunflower Oil",
+  "handle": "refined-sunflower-oil",
+  "vendor": "Freedom (Gemini)",
+  "product_type": "Edible Oils",
+  "body_html": "Flagship brand of Gemini Edibles & Fats India, ranked No.1 by volume in sunflower oil (NielsenIQ). Contains linoleic acid and tocopherols.",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.grofers.com/da/cms-assets/cms/product/26537260-8de4-4192-8635-650e8922cd32.png"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true
+   },
+   {
+    "title": "2L",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.grofers.com/da/cms-assets/cms/product/bdcfb336-359d-473f-9f2d-f4a93f97da6a.png"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://kbnaturals.in/wp-content/uploads/2024/04/Freedom-Oil-5L-Can.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.grofers.com/da/cms-assets/cms/product/26537260-8de4-4192-8635-650e8922cd32.png"
+   },
+   {
+    "src": "https://cdn.grofers.com/da/cms-assets/cms/product/bdcfb336-359d-473f-9f2d-f4a93f97da6a.png"
+   },
+   {
+    "src": "https://kbnaturals.in/wp-content/uploads/2024/04/Freedom-Oil-5L-Can.png"
+   }
+  ]
+ },
+ {
+  "title": "Refined Sunflower Oil Pouch",
+  "handle": "refined-sunflower-oil-pouch",
+  "vendor": "Freedom (Gemini)",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "1L",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.grofers.com/da/cms-assets/cms/product/8bcb7151-6441-4b85-b4fe-7a8128cdeff6.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.grofers.com/da/cms-assets/cms/product/8bcb7151-6441-4b85-b4fe-7a8128cdeff6.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Double Filtered Groundnut Oil",
+  "handle": "double-filtered-groundnut-oil",
+  "vendor": "Freedom (Gemini)",
+  "product_type": "Edible Oils",
+  "body_html": "Double filtered groundnut oil; contains MUFA and Omega-6 PUFA and natural tocopherols.",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.grofers.com/da/cms-assets/cms/product/7542b677-ad96-476a-af51-9b32db6069a8.png"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "1150",
+    "compare_at_price": "1150",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.grofers.com/da/cms-assets/cms/product/7542b677-ad96-476a-af51-9b32db6069a8.png"
+   },
+   {
+    "src": "https://cdn.grofers.com/da/cms-assets/cms/product/75821b52-7585-4300-ba24-d7be6de974ec.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Physically Refined Rice Bran Oil",
+  "handle": "physically-refined-rice-bran-oil",
+  "vendor": "Freedom (Gemini)",
+  "product_type": "Edible Oils",
+  "body_html": "Physically refined rice bran oil with vitamins A & D and oryzanol; contains MUFA, Omega-6 PUFA and tocotrienols.",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.grofers.com/da/cms-assets/cms/product/3f1b041a-14bb-4701-becb-559991f8b354.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.grofers.com/da/cms-assets/cms/product/4e8e53fc84314eef9f3921e653b68d6f.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.grofers.com/da/cms-assets/cms/product/3f1b041a-14bb-4701-becb-559991f8b354.jpg"
+   },
+   {
+    "src": "https://cdn.grofers.com/da/cms-assets/cms/product/4e8e53fc84314eef9f3921e653b68d6f.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Kachi Ghani Mustard Oil",
+  "handle": "kachi-ghani-mustard-oil",
+  "vendor": "Freedom (Gemini)",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "1L",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true
+   }
+  ],
+  "images": []
+ },
+ {
+  "title": "Refined Soyabean Oil",
+  "handle": "refined-soyabean-oil",
+  "vendor": "Freedom (Gemini)",
+  "product_type": "Edible Oils",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5L",
+    "price": "830",
+    "compare_at_price": "830",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": []
+ }
+]
