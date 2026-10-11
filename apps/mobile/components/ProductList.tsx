@@ -66,6 +66,8 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
         storeId={actions.storeId}
         quantity={totalQty}
         variantCount={variants.length}
+        variants={variants}
+        quantityOf={(id) => actions.cartQuantityMap.get(id) ?? 0}
         compact={layout === "grid" && numColumns === 3}
         onShowVariants={() => actions.showVariants(variants)}
         onAddToCart={actions.addToCart}
