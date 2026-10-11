@@ -1,0 +1,43 @@
+{
+  "brand": "Aachi",
+  "manufacturer": "Aachi Masala Foods",
+  "store": "https://aachifoods.com",
+  "logo": "https://aachigroup.com/wp-content/uploads/2025/01/logo-1-aachi.jpg",
+  "themeColor": "#E31E26",
+  "namePrefix": "Aachi ",
+  "foodType": "VEG",
+  "exclude": ["Free Gift", "Cutting Set"],
+  "aliases": {
+    "Aachi Kulambu Chilli Powder": "Kulambu Chilli Masala",
+    "Aachi Mango Pickle": "Cut Mango Pickle",
+    "Aachi Lemon Pickle": "Lime Pickle"
+  },
+  "rules": [
+    { "match": "Mango Ginger Pickle", "path": ["Grocery & Staples", "Pickles & Chutney", "Mixed Pickle"] },
+    { "match": "Mango.*Pickle|Avakkai", "path": ["Grocery & Staples", "Pickles & Chutney", "Mango Pickle"] },
+    { "match": "Lime Pickle|Citron Pickle", "path": ["Grocery & Staples", "Pickles & Chutney", "Lime Pickle"] },
+    { "match": "Chilli Pickle", "path": ["Grocery & Staples", "Pickles & Chutney", "Chilli Pickle"] },
+    { "match": "Pickle", "path": ["Grocery & Staples", "Pickles & Chutney", "Mixed Pickle"] },
+    { "match": "Thokku", "path": ["Grocery & Staples", "Pickles & Chutney", "Chutney"] },
+    { "match": "Biryani Masala Paste|Ginger Garlic Paste", "path": ["Grocery & Staples", "Spices & Masala", "Curry Paste & Wet Masala"] },
+    { "match": "Rice Paste|Rice Powder|Puliyogare Powder|Biryani Kit|Pani Puri Kit", "path": ["Snacks & Packaged Foods", "Ready to Eat & Cook", "Ready to Cook Gravies"] },
+    { "match": "Bread Halwa|Payasam Mix|Kesari Mix", "path": ["Snacks & Packaged Foods", "Sweets & Mithai", "Halwa & Sheera"] },
+    { "match": "Gulab Jamun Mix", "path": ["Snacks & Packaged Foods", "Sweets & Mithai", "Rasgulla & Gulab Jamun"] },
+    { "match": "Soan Papdi", "path": ["Snacks & Packaged Foods", "Sweets & Mithai", "Packaged Mithai"] },
+    { "match": "^Instant ", "path": ["Snacks & Packaged Foods", "Ready to Eat & Cook", "Ready to Eat Meals"] },
+    { "match": "Rava Idly Mix", "path": ["Snacks & Packaged Foods", "Ready to Eat & Cook", "Instant Upma & Poha"] },
+    { "match": "Vermicelli", "path": ["Snacks & Packaged Foods", "Instant Noodles & Pasta", "Vermicelli (Sevai)"] },
+    { "match": "Rice$", "path": ["Grocery & Staples", "Rice", "Non-Basmati Rice"] },
+    { "match": "Ragi Flour", "path": ["Grocery & Staples", "Atta & Flours", "Ragi Flour"] },
+    { "match": "Puttu Powder|Maavu", "path": ["Grocery & Staples", "Atta & Flours", "Rice Flour"] },
+    { "match": "Bajji Bonda Powder", "path": ["Grocery & Staples", "Atta & Flours", "Besan (Gram Flour)"] },
+    { "match": "Appalam", "path": ["Grocery & Staples", "Papad & Fryums", "Fryums & Appalam"] },
+    { "match": "Badam Drink Mix|Health Drink Mix", "path": ["Beverages", "Health & Energy Drinks", "Malted Beverages (Bournvita, Horlicks)"] },
+    { "match": "Health Mix", "path": ["Snacks & Packaged Foods", "Breakfast Cereals & Muesli", "Porridge & Daliya"] },
+    { "match": "Pure Ghee", "path": ["Grocery & Staples", "Ghee", "Cow Ghee"] },
+    { "match": "Jam$", "path": ["Grocery & Staples", "Sauces & Condiments", "Jam & Marmalade"] },
+    { "match": "Kasuri Methi", "path": ["Grocery & Staples", "Spices & Masala", "Herbs & Seasonings"] },
+    { "match": "^(Byadagi |Kashmiri )?(Chilli|Turmeric|Coriander|Pepper|Cumin|Fennel|Asafoetida) Powder$", "path": ["Grocery & Staples", "Spices & Masala", "Ground Spices"] },
+    { "match": "Masala|Powder|Mix", "path": ["Grocery & Staples", "Spices & Masala", "Blended Masala"] }
+  ]
+}
