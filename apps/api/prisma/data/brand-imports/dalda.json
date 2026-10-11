@@ -1,0 +1,64 @@
+{
+  "brand": "Dalda",
+  "manufacturer": "Bunge India Private Limited",
+  "feed": "dalda-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dalda/source/logo-20c21efa.png",
+  "themeColor": "#00703C",
+  "themeColorSecondary": "#E1251B",
+  "namePrefix": "Dalda ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Dalda Vanaspati Ghee": "Vanaspati"
+  },
+  "rules": [
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Soyabean\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Soybean Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Vanaspati$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Vanaspati & Dalda"
+      ]
+    }
+  ]
+}

@@ -17,7 +17,19 @@ export const PRODUCT_TYPE: Record<string, ProductType> = {
   "Personal Care": "PERSONAL_CARE",
   "Pooja & Festivals": "HOUSEHOLD",
   "Home Care": "HOUSEHOLD",
+  "Stationery & General Merchandise": "HOUSEHOLD",
+  "Baby Care": "BABY_CARE",
+  "Pet Care": "PET_CARE",
+  "Paan Corner": "GROCERY",
 };
+
+const NON_FOOD_DEPARTMENTS = new Set(["Personal Care", "Home Care", "Pooja & Festivals", "Stationery & General Merchandise", "Pet Care"]);
+
+// Veg/non-veg marks belong on food only: not on shampoo, detergent, or baby care other than baby food
+export function isFoodPath([dept, cat]: TaxonomyPath): boolean {
+  if (NON_FOOD_DEPARTMENTS.has(dept)) return false;
+  return dept !== "Baby Care" || cat === "Baby Food & Formula";
+}
 
 const UNITS: Record<string, UnitType> = {
   g: "GRAM", kg: "KG", ml: "ML", L: "LITER",

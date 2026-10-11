@@ -18,7 +18,7 @@ import { PrismaClient, FoodType } from "../generated/prisma/index.js";
 import dotenv from "dotenv";
 import sharp from "sharp";
 import { readFileSync, writeFileSync } from "node:fs";
-import { PRODUCT_TYPE, resolveSubcategory, slugify, type TaxonomyPath } from "./lib/catalog.js";
+import { PRODUCT_TYPE, isFoodPath, resolveSubcategory, slugify, type TaxonomyPath } from "./lib/catalog.js";
 import { uploadImage, transparentLogoPng } from "./lib/media.js";
 import {
   fetchShopifyProducts, toPackVariant, titlePackOf, isBogoTitle, cleanTitle, plainDescription,
@@ -184,7 +184,7 @@ async function applyPlan(plan: Plan, config: Config, brandId: string): Promise<"
   const description = plainDescription(plan.site.body_html) ?? undefined;
   const data = {
     name: plan.name, subcategoryId: sub.id, manufacturerName: config.manufacturer,
-    productType: PRODUCT_TYPE[plan.path![0]], foodType: config.foodType, description,
+    productType: PRODUCT_TYPE[plan.path![0]], foodType: isFoodPath(plan.path!) ? config.foodType : null, description,
   };
   const product = existing
     ? await prisma.product.update({ where: { id: existing.id }, data })

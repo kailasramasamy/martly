@@ -1,0 +1,361 @@
+{
+  "brand": "Del Monte",
+  "manufacturer": "Del Monte Foods Private Limited",
+  "feed": "del-monte-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/del-monte/source/logo-00069e5f.png",
+  "themeColor": "#D82028",
+  "themeColorSecondary": "#006830",
+  "namePrefix": "Del Monte ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Del Monte Fruit Cocktail in Syrup": "Fiesta Fruit Cocktail",
+    "Del Monte Tomato Ketchup - Rich & Delicious": "Tomato Ketchup Classic Blend"
+  },
+  "rules": [
+    {
+      "match": "^Extra\\ Light\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Classic\\ Multipurpose\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Olive\\ Pomace\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Canola\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Olivkare\\ Pro\\ Multi\\ Source\\ Edible\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Eggless\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Sandwich\\ Spread\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Achari\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Mint\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Ketchup\\ Classic\\ Blend$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Ketchup\\ Original\\ Blend$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Honey\\ Mustard\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^South\\ West\\ Chipotle\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^Thousand\\ Island\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^Smoky\\ Barbecue\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Twango\\ Sweet\\ \\&\\ Sour\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Brewed\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Flavoured\\ Syrup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Pitted\\ Green\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Whole\\ Green\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Sliced\\ Green\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Sliced\\ Black\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Green\\ Olives\\ Stuffed\\ with\\ Pimiento\\ Paste$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Durum\\ Wheat\\ Spaghetti$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Durum\\ Wheat\\ Spirali$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Fiesta\\ Fruit\\ Cocktail$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Fruits"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Slices\\ in\\ Syrup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Fruits"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Corn\\ Kernels$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Baked\\ Beans\\ in\\ Tomato\\ Sauce$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Four\\ Seasons\\ Mixed\\ Fruit\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Green\\ Apple\\ Fruit\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Mango\\ Fruit\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Peach\\ Fruit\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Fruit\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Orange\\ Fruit\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^King\\ Coconut\\ Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Premium\\ Dried\\ Cranberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Dried\\ Blueberries$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^California\\ Prunes\\ Premium\\ Pitted$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Prunes$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Royal\\ Arabian\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    }
+  ]
+}
