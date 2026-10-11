@@ -64,7 +64,7 @@ export interface Product {
   description: string | null;
   imageUrl: string | null;
   images?: string[];
-  brand: { id: string; name: string } | null;
+  brand: { id: string; name: string; imageUrl?: string | null; themeColor?: string | null; themeColorSecondary?: string | null } | null;
   foodType: string | null;
   productType: string | null;
   tags?: string[];

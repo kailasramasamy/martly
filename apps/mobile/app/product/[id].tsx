@@ -28,6 +28,7 @@ import { ProductActionsProvider } from "../../lib/product-actions";
 import { colors, spacing, fontSize } from "../../constants/theme";
 import { ProductList } from "../../components/ProductList";
 import { VariantBottomSheet } from "../../components/VariantBottomSheet";
+import { BrandChip, BrandStoreBanner } from "../../components/BrandPromo";
 import { ConfirmSheet } from "../../components/ConfirmSheet";
 import { ProductDetailSkeleton } from "../../components/SkeletonLoader";
 import type { Product, StoreProduct, Variant, Review, ReviewSummary } from "../../lib/types";
@@ -533,17 +534,7 @@ export default function ProductDetailScreen() {
                 />
               </View>
             )}
-            {product.brand?.name && (
-              <TouchableOpacity
-                style={styles.brandLink}
-                onPress={() => router.push(`/brand/${product.brand!.id}`)}
-                hitSlop={8}
-                accessibilityLabel={`Visit ${product.brand.name} store`}
-              >
-                <Text style={styles.brandName}>{product.brand.name}</Text>
-                <Ionicons name="chevron-forward" size={12} color={colors.primary} />
-              </TouchableOpacity>
-            )}
+            {product.brand?.name && <BrandChip brand={product.brand} />}
           </View>
 
           <Text style={styles.productName}>{getLocalizedName(product)}</Text>
@@ -571,6 +562,8 @@ export default function ProductDetailScreen() {
               )}
             </View>
           )}
+
+          {product.brand?.name && <BrandStoreBanner brand={product.brand} />}
 
           {/* Subscribe & Save */}
           {isAuthenticated && selectedStore?.subscriptionEnabled && storeProducts.some((sp) => (sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0))) > 0) && (
@@ -947,8 +940,6 @@ const styles = StyleSheet.create({
   foodTypeDotInner: { width: 9, height: 9, borderRadius: 5 },
   foodTypeDotVeg: { backgroundColor: "#0a8f08" },
   foodTypeDotNonVeg: { backgroundColor: "#b71c1c" },
-  brandLink: { flexDirection: "row", alignItems: "center", gap: 2 },
-  brandName: { fontSize: fontSize.sm, fontWeight: "700", color: colors.primary, textTransform: "uppercase" },
   productName: { fontSize: fontSize.xxl, fontWeight: "bold", color: colors.text, marginBottom: spacing.xs },
   categoryChip: {
     backgroundColor: colors.primary + "15",
