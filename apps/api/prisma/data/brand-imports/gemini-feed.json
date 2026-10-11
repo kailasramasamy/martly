@@ -1,0 +1,408 @@
+[
+ {
+  "title": "Refined Sunflower Oil",
+  "handle": "refined-sunflower-oil",
+  "vendor": "Gemini (Cargill)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "800g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274132_19-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+    }
+   },
+   {
+    "title": "4.2kg",
+    "price": "1235",
+    "compare_at_price": "1235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274135_15-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274132_19-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274132-2_15-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274132-3_14-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274132-4_14-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274132-5_14-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274132-6_6-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274132-7_1-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274132-8_1-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Pureit Refined Sunflower Oil",
+  "handle": "pureit-refined-sunflower-oil",
+  "vendor": "Gemini (Cargill)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "870g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929_5-gemini-pureit-refined-sunflower-oil.jpg"
+    }
+   },
+   {
+    "title": "4.35kg",
+    "price": "700",
+    "compare_at_price": "700",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40300930_3-gemini-pureit-refined-sunflower-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929_5-gemini-pureit-refined-sunflower-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929-2_5-gemini-pureit-refined-sunflower-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929-3_5-gemini-pureit-refined-sunflower-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929-4_5-gemini-pureit-refined-sunflower-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929-5_5-gemini-pureit-refined-sunflower-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929-6_5-gemini-pureit-refined-sunflower-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929-7_2-gemini-pureit-refined-sunflower-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929-8_1-gemini-pureit-refined-sunflower-oil.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Refined Soyabean Oil",
+  "handle": "refined-soyabean-oil",
+  "vendor": "Gemini (Cargill)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "840g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274152_11-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+    }
+   },
+   {
+    "title": "4.2L",
+    "price": "1065",
+    "compare_at_price": "1065",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40042028_8-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274152_11-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274152-2_7-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274152-3_6-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274152-4_6-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274152-5_6-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274152-6_5-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274152-7_1-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274152-8_1-gemini-refined-soyabean-oil-with-nutri-v.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Filtered Groundnut Oil",
+  "handle": "filtered-groundnut-oil",
+  "vendor": "Gemini (Cargill)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "870g",
+    "price": "255",
+    "compare_at_price": "255",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608_5-gemini-filtered-groundnut-oil.jpg"
+    }
+   },
+   {
+    "title": "4.35kg",
+    "price": "1310",
+    "compare_at_price": "1310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197601_5-gemini-filtered-groundnut-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608_5-gemini-filtered-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608-2_5-gemini-filtered-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608-3_4-gemini-filtered-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608-4_4-gemini-filtered-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608-5_4-gemini-filtered-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608-6_3-gemini-filtered-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608-7_1-gemini-filtered-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608-8_1-gemini-filtered-groundnut-oil.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Refined Groundnut Oil",
+  "handle": "refined-groundnut-oil",
+  "vendor": "Gemini (Cargill)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "870g",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143_7-gemini-refined-groundnut-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143_7-gemini-refined-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143-2_6-gemini-refined-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143-3_6-gemini-refined-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143-4_6-gemini-refined-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143-5_6-gemini-refined-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143-6_5-gemini-refined-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143-7_1-gemini-refined-groundnut-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143-8_1-gemini-refined-groundnut-oil.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Smart Health Rice Bran Oil",
+  "handle": "smart-health-rice-bran-oil",
+  "vendor": "Gemini (Cargill)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "870g",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375_9-gemini-refined-rice-bran-oil.jpg"
+    }
+   },
+   {
+    "title": "4.35kg",
+    "price": "950",
+    "compare_at_price": "950",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203440_8-gemini-refined-rice-bran-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375_9-gemini-refined-rice-bran-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375-2_7-gemini-refined-rice-bran-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375-3_7-gemini-refined-rice-bran-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375-4_6-gemini-refined-rice-bran-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375-5_6-gemini-refined-rice-bran-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375-6_4-gemini-refined-rice-bran-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375-7_1-gemini-refined-rice-bran-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375-8_1-gemini-refined-rice-bran-oil.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Premium Kachi Ghani Mustard Oil",
+  "handle": "premium-kachi-ghani-mustard-oil",
+  "vendor": "Gemini (Cargill)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "840g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090_6-gemini-mustard-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090_6-gemini-mustard-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090-2_6-gemini-mustard-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090-3_6-gemini-mustard-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090-4_6-gemini-mustard-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090-5_6-gemini-mustard-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090-6_1-gemini-mustard-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090-7_1-gemini-mustard-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090-8_1-gemini-mustard-oil.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Vanaspati",
+  "handle": "vanaspati",
+  "vendor": "Gemini (Cargill)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "420g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092_7-gemini-vanaspati.jpg"
+    }
+   },
+   {
+    "title": "840g",
+    "price": "168",
+    "compare_at_price": "168",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000091_5-gemini-vanaspati.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092_7-gemini-vanaspati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092-2_5-gemini-vanaspati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092-3_5-gemini-vanaspati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092-4_5-gemini-vanaspati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092-5_5-gemini-vanaspati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092-6_4-gemini-vanaspati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092-7_1-gemini-vanaspati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092-8_1-gemini-vanaspati.jpg"
+   }
+  ]
+ }
+]
