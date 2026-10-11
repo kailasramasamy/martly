@@ -17,7 +17,7 @@ export interface StoreSearchParams {
 
 export interface SearchFacets {
   tags: { tag: string; count: number; imageUrl: string | null }[];
-  brands: { id: string; name: string; count: number }[];
+  brands: { id: string; name: string; count: number; imageUrl: string | null }[];
   sizes: { label: string; count: number }[];
   offerCount: number;
 }
@@ -46,7 +46,10 @@ function tagFacets(rows: StoreProductView[]): SearchFacets["tags"] {
 function filterFacets(rows: StoreProductView[]): Omit<SearchFacets, "tags"> {
   return {
     brands: countProducts(rows, (r) => (r.product.brand ? [r.product.brand.id] : []))
-      .map(({ key, count }) => ({ id: key, count, name: rows.find((r) => r.product.brandId === key)!.product.brand!.name })),
+      .map(({ key, count }) => {
+        const brand = rows.find((r) => r.product.brandId === key)!.product.brand!;
+        return { id: key, count, name: brand.name, imageUrl: brand.imageUrl };
+      }),
     sizes: countProducts(rows, (r) => [r.variant.name]).map(({ key, count }) => ({ label: key, count })),
     offerCount: new Set(rows.filter((r) => r.pricing.discountActive).map((r) => r.productId)).size,
   };

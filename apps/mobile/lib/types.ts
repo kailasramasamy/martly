@@ -461,7 +461,7 @@ export interface TomorrowsBasket {
 
 export interface SearchFacets {
   tags: { tag: string; count: number; imageUrl: string | null }[];
-  brands: { id: string; name: string; count: number }[];
+  brands: { id: string; name: string; count: number; imageUrl: string | null }[];
   sizes: { label: string; count: number }[];
   offerCount: number;
 }
