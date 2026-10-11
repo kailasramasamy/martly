@@ -189,6 +189,7 @@ export const createBrandSchema = z.object({
   name: z.string().min(1),
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
   imageUrl: z.string().url().optional(),
+  themeColor: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional(),
 });
 export type CreateBrandInput = z.infer<typeof createBrandSchema>;
 
@@ -196,6 +197,7 @@ export const updateBrandSchema = z.object({
   name: z.string().min(1).optional(),
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
   imageUrl: z.string().url().nullish(),
+  themeColor: z.string().regex(/^#[0-9a-fA-F]{6}$/).nullish(),
 });
 export type UpdateBrandInput = z.infer<typeof updateBrandSchema>;
 

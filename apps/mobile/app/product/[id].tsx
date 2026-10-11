@@ -534,7 +534,15 @@ export default function ProductDetailScreen() {
               </View>
             )}
             {product.brand?.name && (
-              <Text style={styles.brandName}>{product.brand.name}</Text>
+              <TouchableOpacity
+                style={styles.brandLink}
+                onPress={() => router.push(`/brand/${product.brand!.id}`)}
+                hitSlop={8}
+                accessibilityLabel={`Visit ${product.brand.name} store`}
+              >
+                <Text style={styles.brandName}>{product.brand.name}</Text>
+                <Ionicons name="chevron-forward" size={12} color={colors.primary} />
+              </TouchableOpacity>
             )}
           </View>
 
@@ -939,7 +947,8 @@ const styles = StyleSheet.create({
   foodTypeDotInner: { width: 9, height: 9, borderRadius: 5 },
   foodTypeDotVeg: { backgroundColor: "#0a8f08" },
   foodTypeDotNonVeg: { backgroundColor: "#b71c1c" },
-  brandName: { fontSize: fontSize.sm, fontWeight: "600", color: colors.textSecondary, textTransform: "uppercase" },
+  brandLink: { flexDirection: "row", alignItems: "center", gap: 2 },
+  brandName: { fontSize: fontSize.sm, fontWeight: "700", color: colors.primary, textTransform: "uppercase" },
   productName: { fontSize: fontSize.xxl, fontWeight: "bold", color: colors.text, marginBottom: spacing.xs },
   categoryChip: {
     backgroundColor: colors.primary + "15",

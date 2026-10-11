@@ -1,5 +1,5 @@
 import { Edit, useForm } from "@refinedev/antd";
-import { Form, Input, Card, Row, Col } from "antd";
+import { Form, Input, Card, Row, Col, ColorPicker } from "antd";
 import { TrademarkOutlined } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
@@ -22,6 +22,16 @@ export const BrandEdit = () => {
                 <Col xs={24} sm={12}>
                   <Form.Item label="Slug" name="slug" rules={[{ required: true }]}>
                     <Input />
+                  </Form.Item>
+                </Col>
+                <Col xs={24} sm={12}>
+                  <Form.Item
+                    label="Brand colour"
+                    name="themeColor"
+                    tooltip="Themes the brand's store in the app"
+                    getValueFromEvent={(_: unknown, hex: string) => hex || null}
+                  >
+                    <ColorPicker showText allowClear disabledAlpha format="hex" />
                   </Form.Item>
                 </Col>
               </Row>

@@ -494,7 +494,7 @@ export default function CategoryScreen() {
         midSlot={{
           afterRows: 2,
           bleed: narrow ? styles.gridNarrow.paddingHorizontal : styles.grid.paddingHorizontal,
-          element: <ShopByBrands brands={brandTiles} selectedId={brandId} onSelect={setBrandId} />,
+          element: <ShopByBrands brands={brandTiles} selectedId={brandId} onSelect={setBrandId} onVisit={(b) => router.push(`/brand/${b.id}`)} />,
         }}
         contentContainerStyle={[
           styles.grid,

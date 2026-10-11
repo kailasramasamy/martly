@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, Keyboard, StyleSheet } from "react-native";
-import { useLocalSearchParams, useNavigation } from "expo-router";
+import { useLocalSearchParams, useNavigation, router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
@@ -179,6 +179,7 @@ export default function SearchScreen() {
       brands={facets.brands.slice(0, 10)}
       selectedId={filters.brandIds.length === 1 ? filters.brandIds[0] : null}
       onSelect={(id) => search.patchFilters({ brandIds: id ? [id] : [] })}
+      onVisit={(b) => router.push(`/brand/${b.id}`)}
     />
   ) : null;
 

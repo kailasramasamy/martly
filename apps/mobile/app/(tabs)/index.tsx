@@ -18,6 +18,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { RecipeCard } from "../../components/RecipeCard";
 import { api } from "../../lib/api";
+import { HomeBrandRail } from "../../components/HomeBrandRail";
 import { useStore } from "../../lib/store-context";
 import { useMembership } from "../../lib/membership-context";
 import { useNotifications } from "../../lib/notification-context";
@@ -376,6 +377,8 @@ export default function HomeScreen() {
               </View>
             </View>
           )}
+
+          {selectedStore && <HomeBrandRail storeId={selectedStore.id} />}
 
           {memberStatus && !memberStatus.isMember && <PlusPromoStrip />}
 

@@ -39,6 +39,26 @@ export async function brandRoutes(app: FastifyInstance) {
     return response;
   });
 
+  // Brands with active listings in a store, most products first — powers "Shop by brand"
+  app.get<{ Params: { storeId: string } }>("/store/:storeId", async (request, reply) => {
+    const store = await app.prisma.store.findUnique({ where: { id: request.params.storeId }, select: { id: true } });
+    if (!store) return reply.notFound("Store not found");
+    const limit = Math.min(Math.max(Number((request.query as { limit?: string }).limit) || 50, 1), 200);
+
+    const brands = await app.prisma.$queryRaw<{ id: string; name: string; imageUrl: string | null; themeColor: string | null; productCount: number }[]>`
+      SELECT b.id, b.name, b.image_url AS "imageUrl", b.theme_color AS "themeColor", COUNT(DISTINCT p.id)::int AS "productCount"
+      FROM store_products sp
+      JOIN products p ON p.id = sp.product_id
+      JOIN brands b ON b.id = p.brand_id
+      WHERE sp.store_id = ${store.id} AND sp.is_active = true AND p.is_active = true
+      GROUP BY b.id
+      ORDER BY "productCount" DESC, b.name ASC
+      LIMIT ${limit}`;
+
+    const response: ApiResponse<typeof brands> = { success: true, data: brands };
+    return response;
+  });
+
   // Get brand by ID
   app.get<{ Params: { id: string } }>("/:id", async (request, reply) => {
     const brand = await app.prisma.brand.findUnique({

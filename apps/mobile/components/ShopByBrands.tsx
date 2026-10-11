@@ -1,45 +1,39 @@
-import { FlatList, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
-import { MIN_BRANDS_FOR_STRIP, type BrandTile } from "../lib/brand-strip";
+import { MIN_BRANDS_FOR_STRIP, brandDisplayName, wordmarkColors, type BrandTile } from "../lib/brand-strip";
 
 interface ShopByBrandsProps {
   brands: BrandTile[];
   selectedId: string | null;
   onSelect: (id: string | null) => void;
+  // When set, a selected brand gets a "Visit <brand> store" link under the strip
+  onVisit?: (brand: BrandTile) => void;
 }
-
-// Pastel background + matching ink per brand, picked stably from the brand name
-const WORDMARK_COLORS = [
-  ["#fde7d3", "#9a3412"], ["#e0f2fe", "#075985"], ["#dcfce7", "#166534"], ["#fef3c7", "#92400e"],
-  ["#ede9fe", "#5b21b6"], ["#fce7f3", "#9d174d"], ["#ccfbf1", "#115e59"], ["#fee2e2", "#991b1b"],
-];
-
-function wordmarkColors(name: string) {
-  const hash = [...name].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 0);
-  return WORDMARK_COLORS[hash % WORDMARK_COLORS.length];
-}
-
-// "Fortune (Adani Wilmar)" → "Fortune": the parenthetical is the parent company
-const displayName = (name: string) => name.replace(/\s*\(.*\)\s*/g, " ").trim();
 
 function BrandPill({ brand, selected, onPress }: { brand: BrandTile; selected: boolean; onPress: () => void }) {
   const [background, ink] = wordmarkColors(brand.name);
   return (
     <TouchableOpacity
-      style={[styles.pill, { backgroundColor: background }, selected && styles.pillSelected]}
+      style={[styles.pill, { backgroundColor: brand.imageUrl ? "#fff" : background }, selected && styles.pillSelected]}
       onPress={onPress}
       activeOpacity={0.7}
       accessibilityRole="button"
       accessibilityState={{ selected }}
       accessibilityLabel={brand.name}
     >
-      <Text style={[styles.wordmark, { color: ink }]} numberOfLines={1}>{displayName(brand.name)}</Text>
+      {brand.imageUrl ? (
+        <Image source={{ uri: brand.imageUrl }} style={styles.logo} resizeMode="contain" />
+      ) : (
+        <Text style={[styles.wordmark, { color: ink }]} numberOfLines={1}>{brandDisplayName(brand.name)}</Text>
+      )}
     </TouchableOpacity>
   );
 }
 
-export function ShopByBrands({ brands, selectedId, onSelect }: ShopByBrandsProps) {
+export function ShopByBrands({ brands, selectedId, onSelect, onVisit }: ShopByBrandsProps) {
   if (brands.length < MIN_BRANDS_FOR_STRIP) return null;
+  const selected = brands.find((b) => b.id === selectedId);
   return (
     <View style={styles.band}>
       <Text style={styles.title}>Shop by brands</Text>
@@ -54,6 +48,12 @@ export function ShopByBrands({ brands, selectedId, onSelect }: ShopByBrandsProps
           <BrandPill brand={item} selected={item.id === selectedId} onPress={() => onSelect(item.id === selectedId ? null : item.id)} />
         )}
       />
+      {selected && onVisit && (
+        <TouchableOpacity style={styles.visit} onPress={() => onVisit(selected)} activeOpacity={0.7}>
+          <Text style={styles.visitText}>Visit {brandDisplayName(selected.name)} store</Text>
+          <Ionicons name="arrow-forward" size={14} color={colors.primary} />
+        </TouchableOpacity>
+      )}
     </View>
   );
 }
@@ -69,4 +69,7 @@ const styles = StyleSheet.create({
   },
   pillSelected: { borderColor: colors.primary },
   wordmark: { fontFamily: fonts.extrabold, fontSize: 15, letterSpacing: -0.2 },
+  logo: { width: 72, height: 30 },
+  visit: { flexDirection: "row", alignItems: "center", gap: 4, alignSelf: "flex-start", marginTop: 12, marginLeft: 16, minHeight: 32 },
+  visitText: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
 });

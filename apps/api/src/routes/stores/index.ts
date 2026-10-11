@@ -231,9 +231,9 @@ export async function storeRoutes(app: FastifyInstance) {
 
   // Get store products (guests allowed)
   app.get<{ Params: { id: string } }>("/:id/products", { preHandler: [authenticateOptional] }, async (request, reply) => {
-    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, foodType, productId, productIds } = request.query as {
-      page?: number; pageSize?: number; isFeatured?: string; hasDiscount?: string;
-      sortBy?: string; q?: string; categoryId?: string; foodType?: string; productId?: string; productIds?: string;
+    const { page = 1, pageSize = 200, isFeatured, hasDiscount, sortBy, q, categoryId, brandId, foodType, productId, productIds } = request.query as {
+      page?: number; pageSize?: number; isFeatured?: string; hasDiscount?: string; sortBy?: string; q?: string;
+      categoryId?: string; brandId?: string; foodType?: string; productId?: string; productIds?: string;
     };
     const skip = (Number(page) - 1) * Number(pageSize);
 
@@ -297,6 +297,9 @@ export async function storeRoutes(app: FastifyInstance) {
     }
     if (foodType) {
       where.product = { ...(where.product as Record<string, unknown> ?? {}), foodType };
+    }
+    if (brandId) {
+      where.product = { ...(where.product as Record<string, unknown> ?? {}), brandId };
     }
 
     let orderBy: Record<string, string> = { createdAt: "desc" };
