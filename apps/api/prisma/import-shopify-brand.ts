@@ -118,7 +118,8 @@ async function toWebp(url: string, size: number): Promise<Buffer> {
   if (!res.ok) throw new Error(`image ${url}: HTTP ${res.status}`);
   // Pack shots often sit small in a wide white canvas: trim it so the pack fills the tile, with a slim margin
   // (flattened in its own pass: within one pipeline sharp trims first, against the transparent pixels)
-  const flat = await sharp(Buffer.from(await res.arrayBuffer())).flatten({ background: "#ffffff" }).png().toBuffer();
+  // failOn "none": brand CDNs serve JPEGs with stray bytes that browsers display fine but sharp rejects by default
+  const flat = await sharp(Buffer.from(await res.arrayBuffer()), { failOn: "none" }).flatten({ background: "#ffffff" }).png().toBuffer();
   const trimmed = await sharp(flat).trim({ background: "#ffffff", threshold: 20 }).toBuffer();
   const margin = Math.round(size * 0.04);
   return sharp(trimmed)

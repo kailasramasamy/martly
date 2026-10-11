@@ -1,0 +1,879 @@
+[
+ {
+  "title": "Gold Refined Oil",
+  "handle": "gold-refined-oil",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/qc-7285-saffola-g-sfo-a-pdp-1l-pch-01-7223.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "925",
+    "compare_at_price": "925",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/qc-7285-saffola-g-sfo-a-pdp-1l-pch-01-7223.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-gold-pdp-1lt-1500x1500px-01-7240.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Tasty Refined Oil",
+  "handle": "tasty-refined-oil",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/qc-7105-saffola-tasty-pdp-1500x1500-px-02-01-6789.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "795",
+    "compare_at_price": "795",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/qc-7105-saffola-tasty-pdp-1500x1500-px-02-05-6803.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/qc-7105-saffola-tasty-pdp-1500x1500-px-02-01-6789.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-pdp-sachet-tasty-plus-01-7152.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Total Pro Heart Conscious Edible Oil",
+  "handle": "total-pro-heart-conscious-edible-oil",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "169",
+    "compare_at_price": "169",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-total-pdp-1lt-1500x1500px-01-7333.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "870",
+    "compare_at_price": "870",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/5lt-saffola-total-pdp-presentation-2025-01-7335.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-total-pdp-1lt-1500x1500px-01-7333.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-total-pdp-1lt-1500x1500px-01-7301.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Active Refined Oil",
+  "handle": "active-refined-oil",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/qc-7318-saffola-g-active-a-pdp-1l-pch-r1-01-6855.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "860",
+    "compare_at_price": "860",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/qc-7318-saffola-g-active-a-pdp-5l-pch-r1-01-6869.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/qc-7318-saffola-g-active-a-pdp-1l-pch-r1-01-6855.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-pdp-sachet-active-01-7179.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Oats",
+  "handle": "oats",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/1-kg300g-6842.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/1-kg300g-6842.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/output-onlinepngtools-1-7552.png"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/output-onlinepngtools-1-7553.png"
+   }
+  ]
+ },
+ {
+  "title": "Masala Oats - Classic Masala",
+  "handle": "masala-oats-classic-masala",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/1-7555.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/1-7555.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/1-2-6947.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/2-2-6948.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Masala Oats - Peppy Tomato",
+  "handle": "masala-oats-peppy-tomato",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/1-3-7058.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/1-3-7058.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/1-3-7053.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/2-3-7054.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Masala Oats - Curry & Pepper",
+  "handle": "masala-oats-curry-pepper",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/1-7052.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/1-7052.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/1-7031.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/2-7032.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Masala Oats - Masala & Coriander",
+  "handle": "masala-oats-masala-coriander",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/1-7039.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/1-7039.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/1-7045.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/2-7046.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Masala Oats - Veggie Twist",
+  "handle": "masala-oats-veggie-twist",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/1-4-7064.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/1-4-7064.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/1-4-7069.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/2-4-7070.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Masala Oats - Karara Crunch",
+  "handle": "masala-oats-karara-crunch",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/71znnlngwzl-sl1500--7441.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/71znnlngwzl-sl1500--7441.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71znnlngwzl-sl1500--7443.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71po2nkqzol-sl1500--7444.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Masala Oats - Cheesy Italian",
+  "handle": "masala-oats-cheesy-italian",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/71sebsjh8vl-sl1500--6708.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/71sebsjh8vl-sl1500--6708.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71sebsjh8vl-sl1500--6714.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71ct-t79osl-sl1500--6715.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Masala Oats - Spicy Mexican",
+  "handle": "masala-oats-spicy-mexican",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/71a6cv2pe2l-sl1500--6718.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/71a6cv2pe2l-sl1500--6718.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71a6cv2pe2l-sl1500--6724.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71onwjlmcl-sl1500--6725.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Oats with Apple & Almonds",
+  "handle": "oats-with-apple-almonds",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/71alo1egcgl-sl1500--6697.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/71alo1egcgl-sl1500--6697.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71alo1egcgl-sl1500--6703.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/7109zl-vaml-sl1500--6704.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Oats with Nutty Chocolate",
+  "handle": "oats-with-nutty-chocolate",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/71jzftz3fel-sl1500--6687.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/71jzftz3fel-sl1500--6687.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71jzftz3fel-sl1500--6693.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/71ojxbkicsl-sl1500--6694.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Muesli Berry Crunch",
+  "handle": "muesli-berry-crunch",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/71suhj58z5l-sl1500--6738.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/71suhj58z5l-sl1500--6738.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/fop-6891.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/bop-6892.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Muesli Choco Crunch",
+  "handle": "muesli-choco-crunch",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/fop-7089-1-7933.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/fop-7089-1-7933.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/fop-6900.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/bop-6901.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Muesli Kesar Crunch",
+  "handle": "muesli-kesar-crunch",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/7119344eu5l-sl1500--1-6728.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/7119344eu5l-sl1500--1-6728.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/fop-6908.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/bop-6909.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Honey Active",
+  "handle": "honey-active",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-forest-honey-listing-2026-new-37-7734.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "495",
+    "compare_at_price": "495",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-forest-honey-listing-2026-new-07-7719.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-forest-honey-listing-2026-new-37-7734.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-forest-honey-listing-2026-new-38-7735.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-forest-honey-listing-2026-new-39-7736.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Wild Forest Organic Honey",
+  "handle": "wild-forest-organic-honey",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "460",
+    "compare_at_price": "460",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/output-onlinepngtools-7619.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/output-onlinepngtools-7619.png"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-honey-organic-listing-2026-01-7625.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-honey-organic-listing-2026-02-7626.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Peanut Butter Creamy",
+  "handle": "peanut-butter-creamy",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-creamy-350g-1-6675.jpg"
+    }
+   },
+   {
+    "title": "850g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-creamy-850g-1-6685.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-creamy-350g-1-6675.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-creamy-350g-2-6656.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-creamy-350g-3-6657.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Peanut Butter Crunchy",
+  "handle": "peanut-butter-crunchy",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-crunchy-350g-1-6665.jpg"
+    }
+   },
+   {
+    "title": "850g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-crunchy-850g-1-6686.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-crunchy-350g-1-6665.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-crunchy-350g-2-6666.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-peanut-butter-crunchy-350g-3-6667.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Eggless Mayonnaise",
+  "handle": "eggless-mayonnaise",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-mayonnaise-eggless-80g-fop-m-6836.jpg"
+    }
+   },
+   {
+    "title": "700g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-mayo-eggless-700g-fop-m-1-6830.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-mayonnaise-eggless-80g-fop-m-6836.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-mayonnaise-eggless-80g-fop-m-6595.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-mayonnaise-eggless-80g-bop-m-6596.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Soya Chunks",
+  "handle": "soya-chunks",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-soya-200g-1-7635.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/30588-1-7651.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-soya-200g-1-7635.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-soya-200g-1-7636.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-soya-200g-2-7637.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Soya Mini Chunks",
+  "handle": "soya-mini-chunks",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/40265952-1-7659.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/40265952-1-7659.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/40265952-1-7660.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/40265952-2-7661.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Oodles Yummy Masala Noodles",
+  "handle": "oodles-yummy-masala-noodles",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "53g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/613hzlllykl-sx679--6626.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/613hzlllykl-sx679--6626.jpg"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/613hzlllykl-sx679--6627.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Crunchiez Millet Cones - Masala Twist",
+  "handle": "crunchiez-millet-cones-masala-twist",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-crunchiez-masala-twist-70g-1a-8113.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-crunchiez-masala-twist-70g-1a-8113.png"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-crunchiez-masala-twist-70g-1-8114.png"
+   }
+  ]
+ },
+ {
+  "title": "Crunchiez Millet Cones - Takatak Tomato",
+  "handle": "crunchiez-millet-cones-takatak-tomato",
+  "vendor": "Saffola (Marico)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://cdn.marico.in/uploads/saffola-crunchiez-takatak-tomato-70g-1a-8108.png"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-crunchiez-takatak-tomato-70g-1a-8108.png"
+   },
+   {
+    "src": "https://cdn.marico.in/uploads/saffola-crunchiez-takatak-tomato-70g-1-6511.png"
+   }
+  ]
+ }
+]

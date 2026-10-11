@@ -1,0 +1,241 @@
+{
+  "brand": "Saffola (Marico)",
+  "manufacturer": "Marico Limited",
+  "feed": "saffola-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/saffola-marico/source/logo-ceb73475.png",
+  "themeColor": "#E01B22",
+  "themeColorSecondary": "#C4A832",
+  "namePrefix": "Saffola ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Saffola Tasty Refined Rice Bran Oil": "Tasty Refined Oil",
+    "Saffola Honey - 100% Pure": "Honey Active"
+  },
+  "rules": [
+    {
+      "match": "^Gold\\ Refined\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Refined\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Total\\ Pro\\ Heart\\ Conscious\\ Edible\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Active\\ Refined\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ \\-\\ Classic\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ \\-\\ Peppy\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ \\-\\ Curry\\ \\&\\ Pepper$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ \\-\\ Masala\\ \\&\\ Coriander$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ \\-\\ Veggie\\ Twist$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ \\-\\ Karara\\ Crunch$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ \\-\\ Cheesy\\ Italian$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ \\-\\ Spicy\\ Mexican$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Oats\\ with\\ Apple\\ \\&\\ Almonds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Oats\\ with\\ Nutty\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Muesli\\ Berry\\ Crunch$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Muesli\\ Choco\\ Crunch$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Muesli\\ Kesar\\ Crunch$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Honey\\ Active$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Wild\\ Forest\\ Organic\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Butter\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Butter\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Eggless\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Soya\\ Chunks$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Soya\\ Mini\\ Chunks$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Oodles\\ Yummy\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Crunchiez\\ Millet\\ Cones\\ \\-\\ Masala\\ Twist$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Crunchiez\\ Millet\\ Cones\\ \\-\\ Takatak\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    }
+  ]
+}

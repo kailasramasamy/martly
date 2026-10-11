@@ -1,0 +1,64 @@
+{
+  "brand": "Nature Fresh (Cargill)",
+  "manufacturer": "Cargill India Private Limited",
+  "feed": "nature-fresh-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nature-fresh-cargill/source/logo-df90f6fc.png",
+  "themeColor": "#E00800",
+  "themeColorSecondary": "#F39200",
+  "namePrefix": "Nature Fresh ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Nature Fresh Acti Heart Blended Oil": "Acti Heart Edible Oil"
+  },
+  "rules": [
+    {
+      "match": "^Acti\\ Heart\\ Edible\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Acti\\ Heart\\ Edible\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Premium\\ Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Soyabean\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Soybean Oil"
+      ]
+    },
+    {
+      "match": "^Refined\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    }
+  ]
+}
