@@ -1,0 +1,368 @@
+{
+  "brand": "Patanjali",
+  "manufacturer": "Patanjali Ayurved Limited",
+  "feed": "patanjali-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/patanjali/logo-2d597644.png",
+  "themeColor": "#AE2A33",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "Patanjali ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Patanjali Dant Kanti Advanced Toothpaste": "Dant Kanti Advanced Dental Cream"
+  },
+  "rules": [
+    {
+      "match": "^Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Virgin\\ Sesame\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    },
+    {
+      "match": "^Virgin\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Groundnut\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Physically\\ Refined\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Oil\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Bandhani\\ Hing$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Gulkand$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Murabba"
+      ]
+    },
+    {
+      "match": "^Classic\\ Atta\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Chatpata\\ Atta\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Pachak\\ Jaljeera\\ Concentrate$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Amla\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Giloy\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Arjun\\ Amla\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Karela\\ Amla\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Panchang\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Dant\\ Kanti\\ Natural\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Dant\\ Kanti\\ Advanced\\ Dental\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Dant\\ Kanti\\ Fresh\\ Active\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Kanti\\ Body\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ Kanti\\ Body\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Haldi\\ Chandan\\ Kanti\\ Body\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Saundarya\\ Sandal\\ Body\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacterial\\ Herbal\\ Hand\\ Wash\\ Refill$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Kesh\\ Kanti\\ Almond\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Sheetal\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Kesh\\ Kanti\\ Damage\\ Control\\ Hair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Saundarya\\ Aloe\\ Vera\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Crack\\ Heal\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Apricot\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Saundarya\\ Multani\\ Mitti\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Saundarya\\ Neem\\ Tulsi\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Peedantak\\ Pain\\ Reliever\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Borosafe\\ Antiseptic\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Wash\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Herbo\\ Wash\\ Lemon\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Super\\ Dishwash\\ Bar$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Tamrkanti\\ Shining\\ Powder$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    }
+  ]
+}
