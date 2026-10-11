@@ -1,8 +1,36 @@
 import type { FastifyInstance } from "fastify";
 import { createBrandSchema, updateBrandSchema } from "@martly/shared/schemas";
-import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
+import type { ApiResponse, BrandDirectory, DirectoryBrand, DirectoryDepartment, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
+
+type Translations = DirectoryDepartment["translations"];
+type DirectoryRow = DirectoryBrand & {
+  deptId: string; deptName: string; deptTranslations: Translations;
+  catId: string; catName: string; catTranslations: Translations;
+};
+
+// Rows arrive ordered by department, category, then brand rank: fold them into the nested directory
+function buildDirectory(rows: DirectoryRow[]): BrandDirectory {
+  const departments: DirectoryDepartment[] = [];
+  const featured = new Map<string, DirectoryBrand>();
+  for (const { deptId, deptName, deptTranslations, catId, catName, catTranslations, ...brand } of rows) {
+    let dept = departments.at(-1);
+    if (dept?.id !== deptId) departments.push(dept = { id: deptId, name: deptName, translations: deptTranslations, categories: [] });
+    let cat = dept.categories.at(-1);
+    if (cat?.id !== catId) dept.categories.push(cat = { id: catId, name: catName, translations: catTranslations, brands: [] });
+    cat.brands.push(brand);
+    if (brand.themeColor) {
+      const seen = featured.get(brand.id);
+      featured.set(brand.id, { ...brand, productCount: (seen?.productCount ?? 0) + brand.productCount });
+    }
+  }
+  return {
+    featured: [...featured.values()].sort((a, b) => b.productCount - a.productCount),
+    departments,
+    brandCount: new Set(rows.map((r) => r.id)).size,
+  };
+}
 
 export async function brandRoutes(app: FastifyInstance) {
   // List brands
@@ -39,7 +67,7 @@ export async function brandRoutes(app: FastifyInstance) {
     return response;
   });
 
-  // Brands with active listings in a store, most products first — powers "Shop by brand"
+  // Brands with active listings in a store: brands with a brand store (theme colour) first, then most products — powers "Shop by brand"
   app.get<{ Params: { storeId: string } }>("/store/:storeId", async (request, reply) => {
     const store = await app.prisma.store.findUnique({ where: { id: request.params.storeId }, select: { id: true } });
     if (!store) return reply.notFound("Store not found");
@@ -52,10 +80,35 @@ export async function brandRoutes(app: FastifyInstance) {
       JOIN brands b ON b.id = p.brand_id
       WHERE sp.store_id = ${store.id} AND sp.is_active = true AND p.is_active = true
       GROUP BY b.id
-      ORDER BY "productCount" DESC, b.name ASC
+      ORDER BY (b.theme_color IS NOT NULL) DESC, "productCount" DESC, b.name ASC
       LIMIT ${limit}`;
 
     const response: ApiResponse<typeof brands> = { success: true, data: brands };
+    return response;
+  });
+
+  // A store's brands by department → category, for the "All brands" screen
+  app.get<{ Params: { storeId: string } }>("/store/:storeId/directory", async (request, reply) => {
+    const store = await app.prisma.store.findUnique({ where: { id: request.params.storeId }, select: { id: true } });
+    if (!store) return reply.notFound("Store not found");
+
+    const rows = await app.prisma.$queryRaw<DirectoryRow[]>`
+      SELECT d.id AS "deptId", d.name AS "deptName", d.translations AS "deptTranslations",
+        c.id AS "catId", c.name AS "catName", c.translations AS "catTranslations",
+        b.id, b.name, b.image_url AS "imageUrl", b.theme_color AS "themeColor",
+        b.theme_color_secondary AS "themeColorSecondary", COUNT(DISTINCT p.id)::int AS "productCount"
+      FROM store_products sp
+      JOIN products p ON p.id = sp.product_id
+      JOIN brands b ON b.id = p.brand_id
+      JOIN subcategories s ON s.id = p.subcategory_id
+      JOIN categories c ON c.id = s.category_id
+      JOIN departments d ON d.id = c.department_id
+      WHERE sp.store_id = ${store.id} AND sp.is_active = true AND p.is_active = true
+      GROUP BY d.id, c.id, b.id
+      ORDER BY d.sort_order, d.name, c.sort_order, c.name,
+        (b.theme_color IS NOT NULL) DESC, "productCount" DESC, b.name`;
+
+    const response: ApiResponse<BrandDirectory> = { success: true, data: buildDirectory(rows) };
     return response;
   });
 

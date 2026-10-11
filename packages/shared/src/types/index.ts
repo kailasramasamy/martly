@@ -91,3 +91,35 @@ export interface DepartmentNode {
   translations?: Record<string, { name?: string; description?: string }> | null;
   categories: CategoryNode[];
 }
+
+// ── Brand Directory ──────────────────────────────────
+export interface DirectoryBrand {
+  id: string;
+  name: string;
+  imageUrl: string | null;
+  themeColor: string | null;
+  themeColorSecondary: string | null;
+  productCount: number;
+}
+
+export interface DirectoryCategory {
+  id: string;
+  name: string;
+  translations?: Record<string, { name?: string; description?: string }> | null;
+  brands: DirectoryBrand[];
+}
+
+export interface DirectoryDepartment {
+  id: string;
+  name: string;
+  translations?: Record<string, { name?: string; description?: string }> | null;
+  categories: DirectoryCategory[];
+}
+
+// A store's brands by department → category (a brand appears under every category it has products in);
+// `featured` = brands with a brand store (theme colour), `brandCount` = distinct brands in the store
+export interface BrandDirectory {
+  featured: DirectoryBrand[];
+  departments: DirectoryDepartment[];
+  brandCount: number;
+}

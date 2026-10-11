@@ -9,6 +9,8 @@ interface ShopByBrandsProps {
   onSelect: (id: string | null) => void;
   // When set, a selected brand gets a "Visit <brand> store" link under the strip
   onVisit?: (brand: BrandTile) => void;
+  // When set, a "See all" link sits beside the title
+  onSeeAll?: () => void;
 }
 
 function BrandPill({ brand, selected, onPress }: { brand: BrandTile; selected: boolean; onPress: () => void }) {
@@ -31,12 +33,20 @@ function BrandPill({ brand, selected, onPress }: { brand: BrandTile; selected: b
   );
 }
 
-export function ShopByBrands({ brands, selectedId, onSelect, onVisit }: ShopByBrandsProps) {
+export function ShopByBrands({ brands, selectedId, onSelect, onVisit, onSeeAll }: ShopByBrandsProps) {
   if (brands.length < MIN_BRANDS_FOR_STRIP) return null;
   const selected = brands.find((b) => b.id === selectedId);
   return (
     <View style={styles.band}>
-      <Text style={styles.title}>Shop by brands</Text>
+      <View style={styles.titleRow}>
+        <Text style={styles.title}>Shop by brands</Text>
+        {onSeeAll && (
+          <TouchableOpacity style={styles.seeAll} onPress={onSeeAll} activeOpacity={0.7} accessibilityRole="button">
+            <Text style={styles.visitText}>See all</Text>
+            <Ionicons name="chevron-forward" size={14} color={colors.primary} />
+          </TouchableOpacity>
+        )}
+      </View>
       <FlatList
         horizontal
         data={brands}
@@ -60,7 +70,9 @@ export function ShopByBrands({ brands, selectedId, onSelect, onVisit }: ShopByBr
 
 const styles = StyleSheet.create({
   band: { backgroundColor: "#fdf8ee", paddingVertical: 16, marginBottom: 12 },
-  title: { fontFamily: fonts.bold, fontSize: 17, color: colors.text, paddingHorizontal: 16, marginBottom: 12 },
+  titleRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, marginBottom: 12 },
+  title: { fontFamily: fonts.bold, fontSize: 17, color: colors.text },
+  seeAll: { flexDirection: "row", alignItems: "center", gap: 2, minHeight: 44, marginVertical: -12, paddingLeft: 12 },
   list: { flexGrow: 0, flexShrink: 0 },
   listContent: { paddingHorizontal: 16, gap: 10 },
   pill: {

@@ -16,5 +16,5 @@ export function HomeBrandRail({ storeId }: { storeId: string }) {
       .catch(() => setBrands([]));
   }, [storeId]);
 
-  return <ShopByBrands brands={brands} selectedId={null} onSelect={(id) => id && router.push(`/brand/${id}`)} />;
+  return <ShopByBrands brands={brands} selectedId={null} onSelect={(id) => id && router.push(`/brand/${id}`)} onSeeAll={() => router.push("/brands")} />;
 }
