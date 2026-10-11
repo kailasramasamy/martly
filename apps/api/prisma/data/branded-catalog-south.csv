@@ -1,0 +1,170 @@
+brand,manufacturer,product,department,category,subcategory,pack_sizes,food_type,verify,notes
+Aachi,Aachi Masala Foods,Aachi Chilli Powder,Grocery & Staples,Spices & Masala,Ground Spices,50g|100g|200g|500g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Turmeric Powder,Grocery & Staples,Spices & Masala,Ground Spices,50g|100g|200g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Coriander Powder,Grocery & Staples,Spices & Masala,Ground Spices,50g|100g|200g|500g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Pepper Powder,Grocery & Staples,Spices & Masala,Ground Spices,50g|100g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Sambar Powder,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g|500g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Rasam Powder,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Kulambu Chilli Powder,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g|500g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Chicken Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Mutton Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Fish Curry Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Chicken 65 Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Biryani Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Garam Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Idly Chilli Powder,Grocery & Staples,Spices & Masala,Blended Masala,100g|200g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Ginger Garlic Paste,Grocery & Staples,Spices & Masala,Curry Paste & Wet Masala,100g|200g|500g,VEG,,
+Aachi,Aachi Masala Foods,Aachi Puliyotharai Mix,Snacks & Packaged Foods,Ready to Eat & Cook,Ready to Cook Gravies,200g,VEG,y,confirm product name and size
+Aachi,Aachi Masala Foods,Aachi Idiyappam Flour,Grocery & Staples,Atta & Flours,Rice Flour,500g|1kg,VEG,y,confirm range
+Aachi,Aachi Masala Foods,Aachi Mango Pickle,Grocery & Staples,Pickles & Chutney,Mango Pickle,200g|300g,VEG,y,confirm sizes
+Aachi,Aachi Masala Foods,Aachi Lemon Pickle,Grocery & Staples,Pickles & Chutney,Lime Pickle,200g|300g,VEG,y,confirm sizes
+Sakthi,Sakthi Masala,Sakthi Chilli Powder,Grocery & Staples,Spices & Masala,Ground Spices,50g|100g|200g|500g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Turmeric Powder,Grocery & Staples,Spices & Masala,Ground Spices,50g|100g|200g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Coriander Powder,Grocery & Staples,Spices & Masala,Ground Spices,50g|100g|200g|500g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Pepper Powder,Grocery & Staples,Spices & Masala,Ground Spices,50g|100g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Sambar Powder,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g|500g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Rasam Powder,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Kulambu Chilli Powder,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g|500g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Chicken Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Mutton Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Fish Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g|200g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Chicken 65 Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Biryani Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Sakthi,Sakthi Masala,Sakthi Garam Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Chilli Powder,Grocery & Staples,Spices & Masala,Ground Spices,100g|250g|500g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Kashmiri Chilli Powder,Grocery & Staples,Spices & Masala,Ground Spices,100g|250g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Turmeric Powder,Grocery & Staples,Spices & Masala,Ground Spices,100g|250g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Coriander Powder,Grocery & Staples,Spices & Masala,Ground Spices,100g|250g|500g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Sambar Powder,Grocery & Staples,Spices & Masala,Blended Masala,100g|200g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Chicken Masala,Grocery & Staples,Spices & Masala,Blended Masala,100g|200g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Meat Masala,Grocery & Staples,Spices & Masala,Blended Masala,100g|200g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Fish Masala,Grocery & Staples,Spices & Masala,Blended Masala,100g|200g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Garam Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Puttu Podi,Grocery & Staples,Atta & Flours,Rice Flour,500g|1kg,VEG,,
+Eastern,Orkla India (Eastern Condiments),Eastern Appam Podi,Grocery & Staples,Atta & Flours,Rice Flour,500g|1kg,VEG,y,confirm product name
+Everest,Everest Spices,Everest Turmeric Powder,Grocery & Staples,Spices & Masala,Ground Spices,100g|200g|500g,VEG,,
+Everest,Everest Spices,Everest Tikhalal Chilli Powder,Grocery & Staples,Spices & Masala,Ground Spices,100g|200g|500g,VEG,,
+Everest,Everest Spices,Everest Garam Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Everest,Everest Spices,Everest Chicken Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+Everest,Everest Spices,Everest Meat Masala,Grocery & Staples,Spices & Masala,Blended Masala,50g|100g,VEG,,
+MTR,MTR Foods (Orkla),MTR Rasam Powder,Grocery & Staples,Spices & Masala,Blended Masala,100g|200g,VEG,,
+MTR,MTR Foods (Orkla),MTR Puliogare Powder,Grocery & Staples,Spices & Masala,Blended Masala,100g|200g,VEG,,
+MTR,MTR Foods (Orkla),MTR Vangibath Powder,Grocery & Staples,Spices & Masala,Blended Masala,100g,VEG,,
+MTR,MTR Foods (Orkla),MTR Chutney Powder,Grocery & Staples,Spices & Masala,Blended Masala,100g|200g,VEG,,
+MTR,MTR Foods (Orkla),MTR Chilli Powder,Grocery & Staples,Spices & Masala,Ground Spices,100g|200g|500g,VEG,,
+MTR,MTR Foods (Orkla),MTR Rava Idli Mix,Snacks & Packaged Foods,Ready to Eat & Cook,Instant Upma & Poha,200g|500g,VEG,,
+MTR,MTR Foods (Orkla),MTR Dosa Mix,Snacks & Packaged Foods,Ready to Eat & Cook,Instant Upma & Poha,200g|500g,VEG,,
+MTR,MTR Foods (Orkla),MTR Rice Idli Mix,Snacks & Packaged Foods,Ready to Eat & Cook,Instant Upma & Poha,200g|500g,VEG,,
+MTR,MTR Foods (Orkla),MTR Vada Mix,Snacks & Packaged Foods,Ready to Eat & Cook,Instant Upma & Poha,200g|500g,VEG,,
+MTR,MTR Foods (Orkla),MTR Ready to Eat Bisibelebath,Snacks & Packaged Foods,Ready to Eat & Cook,Ready to Eat Meals,300g,VEG,,
+MTR,MTR Foods (Orkla),MTR Ready to Eat Pongal,Snacks & Packaged Foods,Ready to Eat & Cook,Ready to Eat Meals,300g,VEG,y,confirm still sold
+Idhayam,VVV & Sons Edible Oils,Idhayam Mantra Groundnut Oil,Grocery & Staples,Edible Oils,Groundnut Oil,500ml|1L|5L,VEG,y,confirm variant name
+Idhayam,VVV & Sons Edible Oils,Idhayam Mantra Sunflower Oil,Grocery & Staples,Edible Oils,Sunflower Oil,500ml|1L|5L,VEG,y,confirm variant name
+Idhayam,VVV & Sons Edible Oils,Idhayam Deepam Oil,Pooja & Festivals,Pooja Essentials,Diya & Wicks,500ml|1L,,y,confirm product exists
+Gold Winner,Kaleesuwari Refinery,Gold Winner Refined Sunflower Oil,Grocery & Staples,Edible Oils,Sunflower Oil,500ml|1L|5L,VEG,,
+Gold Winner,Kaleesuwari Refinery,Gold Winner Refined Groundnut Oil,Grocery & Staples,Edible Oils,Groundnut Oil,500ml|1L|5L,VEG,y,confirm range
+Gold Winner,Kaleesuwari Refinery,Gold Winner Rice Bran Oil,Grocery & Staples,Edible Oils,Rice Bran Oil,1L|5L,VEG,y,confirm range
+VVS,VVS Oil Mills,VVS Gingelly Oil,Grocery & Staples,Edible Oils,Sesame Oil (Til),500ml|1L,VEG,y,brand and naming unverified
+VVD Gold,VVD & Sons,VVD Gold Coconut Oil,Grocery & Staples,Edible Oils,Coconut Oil,200ml|500ml|1L,VEG,,
+KLF Coconad,KLF Nirmal Industries,KLF Coconad Coconut Oil,Grocery & Staples,Edible Oils,Coconut Oil,500ml|1L,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Toned Milk (Blue),Dairy,Milk,Toned Milk,500ml|1L,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Standardised Milk (Green),Dairy,Milk,Full Cream Milk,500ml|1L,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Full Cream Milk (Orange),Dairy,Milk,Full Cream Milk,500ml,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Double Toned Milk (Magenta),Dairy,Milk,Double Toned Milk,500ml,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Curd,Dairy,Curd & Yogurt,Fresh Curd (Dahi),200g|500g|1kg,VEG,y,confirm sizes
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Ghee,Grocery & Staples,Ghee,Cow Ghee,100ml|200ml|500ml|1L,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Butter,Dairy,Butter,Salted Butter,100g|500g,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Paneer,Dairy,Paneer & Tofu,Fresh Paneer,200g|500g,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Flavoured Milk,Beverages,Milk Drinks,Flavoured Milk,200ml,VEG,y,confirm flavours/sizes
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Buttermilk,Beverages,Milk Drinks,Buttermilk (Chaas),200ml,VEG,,
+Aavin,Tamil Nadu Co-op Milk Producers' Federation,Aavin Mysore Pak,Snacks & Packaged Foods,Sweets & Mithai,"Dry Sweet (Ladoo, Barfi, Peda)",250g|500g,VEG,y,seasonal (Diwali)
+Arokya,Hatsun Agro Product,Arokya Toned Milk,Dairy,Milk,Toned Milk,500ml|1L,VEG,,
+Arokya,Hatsun Agro Product,Arokya Full Cream Milk,Dairy,Milk,Full Cream Milk,500ml|1L,VEG,,
+Hatsun,Hatsun Agro Product,Hatsun Curd,Dairy,Curd & Yogurt,Fresh Curd (Dahi),200g|500g|1kg,VEG,,
+Hatsun,Hatsun Agro Product,Hatsun Ghee,Grocery & Staples,Ghee,Cow Ghee,200ml|500ml|1L,VEG,,
+Hatsun,Hatsun Agro Product,Hatsun Paneer,Dairy,Paneer & Tofu,Fresh Paneer,200g|500g,VEG,,
+Arun Icecreams,Hatsun Agro Product,Arun Vanilla Ice Cream Tub,Frozen Foods,Ice Cream & Desserts,Ice Cream Tubs,500ml|1L,VEG,y,confirm sizes
+Arun Icecreams,Hatsun Agro Product,Arun Chocobar,Frozen Foods,Ice Cream & Desserts,Ice Cream Cones & Bars,1 pc,VEG,y,confirm name
+Dodla,Dodla Dairy,Dodla Toned Milk,Dairy,Milk,Toned Milk,500ml|1L,VEG,,
+Dodla,Dodla Dairy,Dodla Curd,Dairy,Curd & Yogurt,Fresh Curd (Dahi),500g|1kg,VEG,,
+Dodla,Dodla Dairy,Dodla Ghee,Grocery & Staples,Ghee,Cow Ghee,200ml|500ml|1L,VEG,,
+Tirumala,Tirumala Milk Products (Lactalis),Tirumala Toned Milk,Dairy,Milk,Toned Milk,500ml|1L,VEG,,
+Tirumala,Tirumala Milk Products (Lactalis),Tirumala Curd,Dairy,Curd & Yogurt,Fresh Curd (Dahi),500g|1kg,VEG,,
+Tirumala,Tirumala Milk Products (Lactalis),Tirumala Ghee,Grocery & Staples,Ghee,Cow Ghee,200ml|500ml|1L,VEG,,
+Heritage,Heritage Foods,Heritage Toned Milk,Dairy,Milk,Toned Milk,500ml|1L,VEG,,
+Heritage,Heritage Foods,Heritage Curd,Dairy,Curd & Yogurt,Fresh Curd (Dahi),500g|1kg,VEG,,
+Heritage,Heritage Foods,Heritage Ghee,Grocery & Staples,Ghee,Cow Ghee,200ml|500ml|1L,VEG,,
+Milky Mist,Milky Mist Dairy,Milky Mist Curd,Dairy,Curd & Yogurt,Fresh Curd (Dahi),200g|400g|1kg,VEG,,
+Milky Mist,Milky Mist Dairy,Milky Mist Ghee,Grocery & Staples,Ghee,Cow Ghee,200ml|500ml|1L,VEG,,
+Milky Mist,Milky Mist Dairy,Milky Mist Salted Butter,Dairy,Butter,Salted Butter,100g|500g,VEG,,
+Milky Mist,Milky Mist Dairy,Milky Mist Cheese Slices,Dairy,Cheese,Processed Cheese (Slices & Blocks),200g,VEG,,
+Milky Mist,Milky Mist Dairy,Milky Mist Mozzarella Cheese,Dairy,Cheese,Mozzarella,200g,VEG,,
+GRB,GRB Dairy Foods,GRB Cow Ghee,Grocery & Staples,Ghee,Cow Ghee,100ml|200ml|500ml|1L,VEG,,
+Nandini (KMF),Karnataka Milk Federation,Nandini Ghee,Grocery & Staples,Ghee,Cow Ghee,200ml|500ml|1L,VEG,,
+Nandini (KMF),Karnataka Milk Federation,Nandini Toned Milk,Dairy,Milk,Toned Milk,500ml|1L,VEG,,
+Nandini (KMF),Karnataka Milk Federation,Nandini Curd,Dairy,Curd & Yogurt,Fresh Curd (Dahi),200g|500g,VEG,,
+Udhaiyam,Udhaiyam Agro Foods (Reliance),Udhaiyam Toor Dal,Grocery & Staples,Dal & Pulses,Toor Dal (Arhar),500g|1kg,VEG,,
+Udhaiyam,Udhaiyam Agro Foods (Reliance),Udhaiyam Urad Dal Whole,Grocery & Staples,Dal & Pulses,Urad Dal,500g|1kg,VEG,,
+Udhaiyam,Udhaiyam Agro Foods (Reliance),Udhaiyam Urad Dal Split,Grocery & Staples,Dal & Pulses,Urad Dal,500g|1kg,VEG,,
+Udhaiyam,Udhaiyam Agro Foods (Reliance),Udhaiyam Moong Dal,Grocery & Staples,Dal & Pulses,Moong Dal,500g|1kg,VEG,,
+Udhaiyam,Udhaiyam Agro Foods (Reliance),Udhaiyam Chana Dal,Grocery & Staples,Dal & Pulses,Chana Dal,500g|1kg,VEG,,
+Udhaiyam,Udhaiyam Agro Foods (Reliance),Udhaiyam Roasted Gram,Grocery & Staples,Dal & Pulses,Chana Dal,200g|500g,VEG,,
+Udhaiyam,Udhaiyam Agro Foods (Reliance),Udhaiyam Idly Rice,Grocery & Staples,Rice,Idli & Dosa Rice,1kg|5kg,VEG,y,confirm range
+Udhaiyam,Udhaiyam Agro Foods (Reliance),Udhaiyam Idly Dosa Batter,Snacks & Packaged Foods,Ready to Eat & Cook,Idli & Dosa Batter,1kg,VEG,y,confirm availability; needs new subcategory
+iD Fresh,iD Fresh Food,iD Idly & Dosa Batter,Snacks & Packaged Foods,Ready to Eat & Cook,Idli & Dosa Batter,1kg,VEG,,needs new subcategory
+iD Fresh,iD Fresh Food,iD Ragi Idly & Dosa Batter,Snacks & Packaged Foods,Ready to Eat & Cook,Idli & Dosa Batter,1kg,VEG,y,confirm availability; needs new subcategory
+iD Fresh,iD Fresh Food,iD Malabar Parota,Frozen Foods,Frozen Snacks,Frozen Paratha & Roti,5 pcs,VEG,,
+iD Fresh,iD Fresh Food,iD Whole Wheat Parota,Frozen Foods,Frozen Snacks,Frozen Paratha & Roti,5 pcs,VEG,y,confirm name
+iD Fresh,iD Fresh Food,iD Filter Coffee Decoction,Beverages,Coffee,Filter Coffee Powder,160ml,VEG,y,confirm size
+Anil,Anil Foods,Anil Roasted Vermicelli,Snacks & Packaged Foods,Instant Noodles & Pasta,Vermicelli (Sevai),180g|450g,VEG,y,confirm sizes
+Anil,Anil Foods,Anil Samba Wheat Vermicelli,Snacks & Packaged Foods,Instant Noodles & Pasta,Vermicelli (Sevai),180g|450g,VEG,y,confirm sizes
+Anil,Anil Foods,Anil Ragi Vermicelli,Snacks & Packaged Foods,Instant Noodles & Pasta,Vermicelli (Sevai),180g,VEG,y,confirm sizes
+Anil,Anil Foods,Anil Rava,Grocery & Staples,Atta & Flours,Sooji & Rava,500g|1kg,VEG,,
+Anil,Anil Foods,Anil Samba Rava,Grocery & Staples,Atta & Flours,Sooji & Rava,500g|1kg,VEG,,
+Anil,Anil Foods,Anil Rice Flour,Grocery & Staples,Atta & Flours,Rice Flour,500g|1kg,VEG,y,confirm range
+Bambino,Bambino Agro Industries,Bambino Macaroni,Snacks & Packaged Foods,Instant Noodles & Pasta,Pasta,400g,VEG,y,confirm size
+Savorit,Savorit,Savorit Vermicelli,Snacks & Packaged Foods,Instant Noodles & Pasta,Vermicelli (Sevai),200g|450g,VEG,y,confirm sizes
+Kannan Devan,Tata Consumer Products,Kannan Devan Tea,Beverages,Tea,Leaf & Dust Tea (CTC),250g|500g|1kg,VEG,,
+3 Roses (HUL),Hindustan Unilever,3 Roses Tea,Beverages,Tea,Leaf & Dust Tea (CTC),250g|500g|1kg,VEG,,
+Taj Mahal,Hindustan Unilever,Taj Mahal Tea,Beverages,Tea,Leaf & Dust Tea (CTC),250g|500g,VEG,,
+Tata Coffee,Tata Consumer Products,Tata Coffee Grand,Beverages,Coffee,Instant Coffee,50g|100g|200g,VEG,,
+Narasu's Coffee,Narasu's,Narasu's Premium Filter Coffee,Beverages,Coffee,Chicory Blend,200g|500g,VEG,y,confirm variant name
+Ambika,Ambika Appalam Depot,Ambika Appalam,Grocery & Staples,Papad & Fryums,Fryums & Appalam,100g|200g,VEG,,
+Priya,Priya Foods,Priya Gongura Pickle,Grocery & Staples,Pickles & Chutney,Chutney,300g,VEG,,
+Priya,Priya Foods,Priya Tomato Pickle,Grocery & Staples,Pickles & Chutney,Mixed Pickle,300g,VEG,,
+Manna,Southern Health Foods,Manna Health Mix,Snacks & Packaged Foods,Breakfast Cereals & Muesli,Porridge & Daliya,200g|500g|1kg,VEG,,
+Manna,Southern Health Foods,Manna Ragi Flour,Grocery & Staples,Atta & Flours,Ragi Flour,500g|1kg,VEG,y,confirm range
+Grand Sweets,Grand Sweets & Snacks,Grand Sweets Mixture,Snacks & Packaged Foods,Namkeen & Savoury Snacks,Mixture & Chivda,200g,VEG,y,confirm packaged range
+Grand Sweets,Grand Sweets & Snacks,Grand Sweets Thenkuzhal,Snacks & Packaged Foods,Namkeen & Savoury Snacks,Murukku & Thattai,200g,VEG,y,confirm packaged range
+Grand Sweets,Grand Sweets & Snacks,Grand Sweets Mysore Pak,Snacks & Packaged Foods,Sweets & Mithai,"Dry Sweet (Ladoo, Barfi, Peda)",250g,VEG,y,confirm packaged range
+A2B,Adyar Ananda Bhavan,A2B Mixture,Snacks & Packaged Foods,Namkeen & Savoury Snacks,Mixture & Chivda,200g,VEG,y,confirm packaged range
+A2B,Adyar Ananda Bhavan,A2B Ribbon Pakoda,Snacks & Packaged Foods,Namkeen & Savoury Snacks,Bhujia & Sev,200g,VEG,y,confirm packaged range
+A2B,Adyar Ananda Bhavan,A2B Mysore Pak,Snacks & Packaged Foods,Sweets & Mithai,"Dry Sweet (Ladoo, Barfi, Peda)",250g,VEG,y,confirm packaged range
+Britannia,Britannia Industries,Britannia Tiger Glucose,Snacks & Packaged Foods,Biscuits & Cookies,Glucose & Marie,50g|100g|250g,VEG,,
+Britannia,Britannia Industries,Britannia Milk Bikis,Snacks & Packaged Foods,Biscuits & Cookies,Glucose & Marie,100g|200g,VEG,,
+Britannia,Britannia Industries,Britannia 50-50 Maska Chaska,Snacks & Packaged Foods,Biscuits & Cookies,Glucose & Marie,100g|200g,VEG,,
+Britannia,Britannia Industries,Britannia Little Hearts,Snacks & Packaged Foods,Biscuits & Cookies,Cashew & Butter Cookies,75g,VEG,,
+Unibic,Unibic Foods,Unibic Choco Chip Cookies,Snacks & Packaged Foods,Biscuits & Cookies,Cashew & Butter Cookies,75g|150g,VEG,,
+Kalimark,Kalimark Bovonto,Bovonto,Beverages,Soft Drinks & Carbonated,Cola,200ml|600ml|2L,VEG,,
+Kalimark,Kalimark Bovonto,Kalimark Panneer Soda,Beverages,Soft Drinks & Carbonated,Soda & Tonic Water,200ml,VEG,y,confirm product name
+Cavin's,CavinKare,Cavin's Chocolate Milkshake,Beverages,Milk Drinks,Milkshake,180ml,VEG,,
+Cavin's,CavinKare,Cavin's Badam Milk,Beverages,Milk Drinks,Flavoured Milk,180ml,VEG,,
+Chik,CavinKare,Chik Black Shampoo,Personal Care,Hair Care,Shampoo,80ml|180ml,,y,confirm sizes
+Meera,CavinKare,Meera Herbal Hairwash Powder,Personal Care,Hair Care,Shampoo,40g|120g,,,
+Meera,CavinKare,Meera Strong & Healthy Shampoo,Personal Care,Hair Care,Shampoo,80ml|180ml|340ml,,y,confirm variant name
+Nyle,CavinKare,Nyle Anti-Dandruff Shampoo,Personal Care,Hair Care,Shampoo,180ml|400ml,,y,confirm variant name
+Spinz,CavinKare,Spinz Deodorant,Personal Care,Deodorants & Fragrances,Deodorant Spray,150ml,,y,confirm variant
+Indica,CavinKare,Indica Natural Black Hair Colour,Personal Care,Hair Care,Hair Colour & Dye,1 pack,,y,confirm variant
+Hamam,Hindustan Unilever,Hamam Neem Tulsi & Aloe Vera Soap,Personal Care,Bath & Body,Bathing Soap (Bar),100g|150g,,,
+Medimix,Cholayil,Medimix Classic Ayurvedic Soap,Personal Care,Bath & Body,Bathing Soap (Bar),75g|125g,,,
+Medimix,Cholayil,Medimix Glycerine Soap,Personal Care,Bath & Body,Bathing Soap (Bar),125g,,y,confirm variant
+Mysore Sandal,Karnataka Soaps & Detergents,Mysore Sandal Soap,Personal Care,Bath & Body,Bathing Soap (Bar),75g|125g,,,
+Santoor,Wipro Consumer Care,Santoor Sandal & Turmeric Soap,Personal Care,Bath & Body,Bathing Soap (Bar),100g|125g,,,
+Santoor,Wipro Consumer Care,Santoor White Soap,Personal Care,Bath & Body,Bathing Soap (Bar),100g|125g,,,
+Margo,Jyothy Labs,Margo Original Neem Soap,Personal Care,Bath & Body,Bathing Soap (Bar),75g|100g,,,
+Ujala,Jyothy Labs,Ujala Supreme Fabric Whitener,Home Care,Detergent,Stain Remover,75ml|250ml,,,
+Henko,Jyothy Labs,Henko Detergent Powder,Home Care,Detergent,Detergent Powder,500g|1kg,,,
+Maxo,Jyothy Labs,Maxo Mosquito Coil,Home Care,Air Fresheners & Repellents,Mosquito Coil & Mat,10 pcs,,y,confirm pack
+Cycle (NR Group),NR Group,Cycle Pure Agarbatti Sandal,Pooja & Festivals,Pooja Essentials,Agarbatti (Incense Sticks),1 pack,,y,confirm variant name
+Zed Black,Mysore Deep Perfumery House,Zed Black Agarbatti,Pooja & Festivals,Pooja Essentials,Agarbatti (Incense Sticks),1 pack,,y,confirm variant
+Madhur,Shree Renuka Sugars,Madhur Pure Sugar,Grocery & Staples,Salt & Sugar,White Sugar,1kg|5kg,VEG,,
