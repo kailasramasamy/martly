@@ -121,6 +121,7 @@ export const ProductList = forwardRef<FlatList<StoreProduct>, ProductListProps>(
 
   return (
     <FlatList
+      key={isGrid ? `grid-${numColumns}` : "rail"}
       ref={ref}
       data={primary}
       keyExtractor={(item) => item.product.id}
