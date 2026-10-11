@@ -1,0 +1,17 @@
+{
+  "brand": "Wok N Roll",
+  "manufacturer": "Orkla India Limited",
+  "store": "https://shop.orklaindia.com",
+  "vendors": ["woknroll"],
+  "logo": "https://www.woknroll.co.in/cdn/shop/files/logo.png?v=1740390170",
+  "themeColor": "#0C1848",
+  "themeColorSecondary": "#1EB4E6",
+  "namePrefix": "Wok N Roll ",
+  "foodType": "VEG",
+  "exclude": ["free"],
+  "aliases": {},
+  "rules": [
+    { "match": "Paste", "path": ["Grocery & Staples", "Spices & Masala", "Curry Paste & Wet Masala"] },
+    { "match": "Pack", "path": ["Grocery & Staples", "Spices & Masala", "Herbs & Seasonings"] }
+  ]
+}

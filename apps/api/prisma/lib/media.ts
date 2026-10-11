@@ -60,5 +60,7 @@ export async function transparentLogoPng(source: Buffer): Promise<Buffer> {
     for (let c = 0; c < 3; c++) data[i * 4 + c] = Math.round(Math.max(0, (data[i * 4 + c] - 255 * (1 - alpha)) / alpha));
     data[i * 4 + 3] = Math.round(alpha * 255);
   }
-  return sharp(data, { raw: info }).trim({ threshold: 1 }).png({ compressionLevel: 9 }).toBuffer();
+  const trimmed = await sharp(data, { raw: info }).trim({ threshold: 1 }).png().toBuffer();
+  // Logos render at most ~80pt; a 3000px source is slow to decode on phones
+  return sharp(trimmed).resize(512, 512, { fit: "inside", withoutEnlargement: true }).png({ compressionLevel: 9 }).toBuffer();
 }

@@ -1,0 +1,19 @@
+{
+  "brand": "Idhayam",
+  "manufacturer": "V.V.V & Sons Edible Oils Limited",
+  "feed": "idhayam-feed.json",
+  "logo": "https://www.idhayam.com/wp-content/uploads/2024/02/images-e1708082074733.png",
+  "themeColor": "#291670",
+  "themeColorSecondary": "#FFF308",
+  "namePrefix": "Idhayam ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Idhayam Gingelly (Sesame) Oil": "Sesame Oil"
+  },
+  "rules": [
+    { "match": "Sesame Oil", "path": ["Grocery & Staples", "Edible Oils", "Sesame Oil (Til)"] },
+    { "match": "Groundnut Oil", "path": ["Grocery & Staples", "Edible Oils", "Groundnut Oil"] },
+    { "match": "Mustard Oil", "path": ["Grocery & Staples", "Edible Oils", "Mustard Oil"] }
+  ]
+}

@@ -87,6 +87,7 @@
       "Bash(adb shell screencap -p /sdcard/screenshot_cart.png && adb pull /sdcard/screenshot_cart.png /tmp/screenshot_cart.png 2>&1)",
       "Bash(echo Port free:*)",
       "Bash(adb:*)",
+      "Bash(railway up:*)",
       "Bash(kill 2966:*)",
       "Bash(PRISMA_USER_CONSENT_FOR_DANGEROUS_AI_ACTION=\"Yes, reset the dev database\" npx prisma:*)"
     ]

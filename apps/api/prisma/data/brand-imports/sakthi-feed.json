@@ -1,0 +1,1651 @@
+[
+ {
+  "title": "Turmeric Powder",
+  "handle": "turmeric-powder",
+  "product_type": "Pure Spices",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "56",
+    "compare_at_price": "56",
+    "available": true
+   },
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true
+   },
+   {
+    "title": "500g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/spices/sakthi-masala-turmeric-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/spices/sakthi-masala-turmeric-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Chilli Powder",
+  "handle": "chilli-powder",
+  "product_type": "Pure Spices",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "32",
+    "compare_at_price": "32",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "62",
+    "compare_at_price": "62",
+    "available": true
+   },
+   {
+    "title": "200g",
+    "price": "116",
+    "compare_at_price": "116",
+    "available": true
+   },
+   {
+    "title": "500g",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/spices/sakthi-masala-chilli-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/spices/sakthi-masala-chilli-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Coriander Powder",
+  "handle": "coriander-powder",
+  "product_type": "Pure Spices",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "56",
+    "compare_at_price": "56",
+    "available": true
+   },
+   {
+    "title": "200g",
+    "price": "112",
+    "compare_at_price": "112",
+    "available": true
+   },
+   {
+    "title": "500g",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/spices/sakthi-masala-coriander-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/spices/sakthi-masala-coriander-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cumin Powder",
+  "handle": "cumin-powder",
+  "product_type": "Pure Spices",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true
+   },
+   {
+    "title": "100g",
+    "price": "78",
+    "compare_at_price": "78",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/spices/sakthi-masala-cumin-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/spices/sakthi-masala-cumin-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Pepper Powder",
+  "handle": "pepper-powder",
+  "product_type": "Pure Spices",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "88",
+    "compare_at_price": "88",
+    "available": true
+   },
+   {
+    "title": "100g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/spices/sakthi-masala-pepper-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/spices/sakthi-masala-pepper-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Aniseed Powder",
+  "handle": "aniseed-powder",
+  "product_type": "Pure Spices",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/spices/sakthi-masala-aniseed-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/spices/sakthi-masala-aniseed-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Chicken Masala",
+  "handle": "chicken-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true
+   },
+   {
+    "title": "100g",
+    "price": "66",
+    "compare_at_price": "66",
+    "available": true
+   },
+   {
+    "title": "200g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-chicken-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-chicken-masala-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Chilli Chicken 65 Masala",
+  "handle": "chilli-chicken-65-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true
+   },
+   {
+    "title": "100g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-chilli-chicken-65.png"
+   }
+  ]
+ },
+ {
+  "title": "Curry Powder",
+  "handle": "curry-powder",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "43",
+    "compare_at_price": "43",
+    "available": true
+   },
+   {
+    "title": "100g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-curry-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-curry-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Fish Fry Masala",
+  "handle": "fish-fry-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true
+   },
+   {
+    "title": "100g",
+    "price": "92",
+    "compare_at_price": "92",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-fish-fry-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-fish-fry-masala-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Garam Masala",
+  "handle": "garam-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "46",
+    "compare_at_price": "46",
+    "available": true
+   },
+   {
+    "title": "100g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-garam-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-garam-masala-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Mutton Masala",
+  "handle": "mutton-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "46",
+    "compare_at_price": "46",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true
+   },
+   {
+    "title": "200g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-mutton-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-mutton-masala-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rasam Powder",
+  "handle": "rasam-powder",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "96",
+    "compare_at_price": "96",
+    "available": true
+   },
+   {
+    "title": "200g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-rasam-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-rasam-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Sambar Powder",
+  "handle": "sambar-powder",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "37",
+    "compare_at_price": "37",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "72",
+    "compare_at_price": "72",
+    "available": true
+   },
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "500g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-sambar-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-sambar-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Biryani Masala",
+  "handle": "biryani-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "46",
+    "compare_at_price": "46",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "106",
+    "compare_at_price": "106",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-briyani-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-briyani-masala-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Fish Curry Masala",
+  "handle": "fish-curry-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "31",
+    "compare_at_price": "31",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "66",
+    "compare_at_price": "66",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "200g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-fish-curry-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-fish-curry-masala-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Kulambu Chilli Powder",
+  "handle": "kulambu-chilli-powder",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "27",
+    "compare_at_price": "27",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "200g",
+    "price": "106",
+    "compare_at_price": "106",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "500g",
+    "price": "255",
+    "compare_at_price": "255",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-kulambu-chilli-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-kulambu-chilli-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Egg Kuruma Masala",
+  "handle": "egg-kuruma-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "41",
+    "compare_at_price": "41",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-egg-kuruma-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-egg-kuruma-masala-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Super Garam Masala",
+  "handle": "super-garam-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-super-garam-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-super-garam-masala-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Channa Masala",
+  "handle": "channa-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-channa-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-channa-masala-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Chettinad Chicken Masala",
+  "handle": "chettinad-chicken-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-chettinad-chicken-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-chettinad-chicken-masala-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Country Chicken Gravy Masala",
+  "handle": "country-chicken-gravy-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-country-chicken-gravy.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-country-chicken-gravy-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Mutton Chukka Masala",
+  "handle": "mutton-chukka-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-mutton-chukka-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-mutton-chukka-masala-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Pepper Chicken Masala",
+  "handle": "pepper-chicken-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-pepper-chicken-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-pepper-chicken-masala-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Pallipalayam Chicken Masala",
+  "handle": "pallipalayam-chicken-masala",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-pallipalayam-chicken-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-pallipalayam-chicken-masala-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Vathal Pulikulambu Powder",
+  "handle": "vathal-pulikulambu-powder",
+  "product_type": "Spice Blends",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "68",
+    "compare_at_price": "68",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/blends/sakthi-masala-vathal-pulikulambu-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/blends/sakthi-masala-vathal-pulikulambu-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Chat Masala",
+  "handle": "chat-masala",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-chat-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-chat-masala-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Sabji Masala",
+  "handle": "sabji-masala",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-sabji-masala.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-sabji-masala-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Sundakkai Vathal Powder",
+  "handle": "sundakkai-vathal-powder",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-sundakkai-vathal.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-sundakkai-vathal-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Chilli Chutney Powder",
+  "handle": "chilli-chutney-powder",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "200g",
+    "price": "118",
+    "compare_at_price": "118",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "500g",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-chilli-chutney-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-chilli-chutney-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Curry Leaf Powder",
+  "handle": "curry-leaf-powder",
+  "product_type": "Export Products",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "56",
+    "compare_at_price": "56",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/export_products/sakthi-masala-curry-leaf-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/export_products/sakthi-masala-curry-leaf-powder-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Tamarind Rice Powder",
+  "handle": "tamarind-rice-powder",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true
+   },
+   {
+    "title": "100g",
+    "price": "58",
+    "compare_at_price": "58",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-tamarind-rice-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-tamarind-rice-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Lemon Rice Powder",
+  "handle": "lemon-rice-powder",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "26",
+    "compare_at_price": "26",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-lemon-rice-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-lemon-rice-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Curry Leaf Rice Powder",
+  "handle": "curry-leaf-rice-powder",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "26",
+    "compare_at_price": "26",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-curry-leaf-rice-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-curry-leaf-rice-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dhall Rice Powder",
+  "handle": "dhall-rice-powder",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-dhal-rice-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-dhal-rice-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Garlic Rice Powder",
+  "handle": "garlic-rice-powder",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "100g",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-garlic-rice-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-garlic-rice-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Bajji Bonda Powder",
+  "handle": "bajji-bonda-powder",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "42",
+    "compare_at_price": "42",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "500g",
+    "price": "106",
+    "compare_at_price": "106",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-bajji-bonda-powder.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-bajji-bonda-powder-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Bengal Gram Flour",
+  "handle": "bengal-gram-flour",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-bengal-gram-flour.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-bengal-gram-flour-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Ragi Flour",
+  "handle": "ragi-flour",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "1kg",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-ragi-flour.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-ragi-flour-big.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Appalam",
+  "handle": "appalam",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "200g",
+    "price": "106",
+    "compare_at_price": "106",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-appalam.png"
+   }
+  ]
+ },
+ {
+  "title": "Refined Sunflower Oil",
+  "handle": "refined-sunflower-oil",
+  "product_type": "Ethnic Range",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/ethnic_range/sakthi-masala-refined-sunflower-oil.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/ethnic_range/sakthi-masala-refined-sunflower-oil-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Amla Pickle",
+  "handle": "amla-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-amla-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-amla-pickle-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Citron Pickle",
+  "handle": "citron-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-citron-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-citron-pickle-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cut Mango Pickle",
+  "handle": "cut-mango-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-cut-mango-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-cut-mango-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-cut-mango-pickle-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Garlic Pickle",
+  "handle": "garlic-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1250",
+    "compare_at_price": "1250",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-garlic-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-garlic-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-garlic-pickle-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Ginger Pickle",
+  "handle": "ginger-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1250",
+    "compare_at_price": "1250",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-ginger-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-ginger-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-ginger-pickle-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Lemon Pickle",
+  "handle": "lemon-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-lemon-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-lemon-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-lemon-pickle-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Mango Avakai Pickle",
+  "handle": "mango-avakai-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mango-avakai-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-mango-avakai-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mango-avakai-pickle-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Mango Ginger Pickle",
+  "handle": "mango-ginger-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mango-ginger-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-mango-ginger-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mango-ginger-pickle-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Mango Lemon Pickle",
+  "handle": "mango-lemon-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mango-lemon-pickle-5kg.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-mango-lemon-pickle-5kg-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Mango Thokku Pickle",
+  "handle": "mango-thokku-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mango-thokku-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-mango-thokku-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mango-thokku-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Mixed Vegetable Pickle",
+  "handle": "mixed-vegetable-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mixed-vegetable-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-mixed-vegetable-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-mixed-vegetable-pickle-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Onion Thokku Pickle",
+  "handle": "onion-thokku-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-onion-thokku-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-onion-thokku-pickle-large.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Tomato Garlic Pickle",
+  "handle": "tomato-garlic-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1250",
+    "compare_at_price": "1250",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-tomato-garlic-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-tomato-garlic-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-tomato-garlic-pickle-5kg.png"
+   }
+  ]
+ },
+ {
+  "title": "Tomato Pickle",
+  "handle": "tomato-pickle",
+  "product_type": "Pickles",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "estimated": true
+   },
+   {
+    "title": "5kg",
+    "price": "1100",
+    "compare_at_price": "1100",
+    "available": true,
+    "estimated": true
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-tomato-pickle.png"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/popup/pickles/sakthi-masala-tomato-pickle-large.jpg"
+   },
+   {
+    "src": "https://www.sakthimasala.com/assets/images/products/pickles/sakthi-masala-tomato-pickle-5kg.png"
+   }
+  ]
+ }
+]

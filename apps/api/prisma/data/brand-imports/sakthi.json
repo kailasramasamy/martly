@@ -1,0 +1,29 @@
+{
+  "brand": "Sakthi Masala",
+  "manufacturer": "Sakthi Masala Private Limited",
+  "feed": "sakthi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sakthi/logo-c588869f.png",
+  "themeColor": "#00A454",
+  "themeColorSecondary": "#EC1824",
+  "namePrefix": "Sakthi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Sakthi Chicken 65 Masala": "Chilli Chicken 65 Masala",
+    "Sakthi Fish Masala": "Fish Curry Masala"
+  },
+  "rules": [
+    { "match": "Mango Ginger Pickle", "path": ["Grocery & Staples", "Pickles & Chutney", "Mixed Pickle"] },
+    { "match": "Mango.*Pickle", "path": ["Grocery & Staples", "Pickles & Chutney", "Mango Pickle"] },
+    { "match": "Lemon Pickle|Citron Pickle", "path": ["Grocery & Staples", "Pickles & Chutney", "Lime Pickle"] },
+    { "match": "Onion Thokku", "path": ["Grocery & Staples", "Pickles & Chutney", "Chutney"] },
+    { "match": "Pickle", "path": ["Grocery & Staples", "Pickles & Chutney", "Mixed Pickle"] },
+    { "match": "Rice Powder", "path": ["Snacks & Packaged Foods", "Ready to Eat & Cook", "Ready to Cook Gravies"] },
+    { "match": "Bajji Bonda Powder|Bengal Gram Flour", "path": ["Grocery & Staples", "Atta & Flours", "Besan (Gram Flour)"] },
+    { "match": "Ragi Flour", "path": ["Grocery & Staples", "Atta & Flours", "Ragi Flour"] },
+    { "match": "Appalam", "path": ["Grocery & Staples", "Papad & Fryums", "Fryums & Appalam"] },
+    { "match": "Sunflower Oil", "path": ["Grocery & Staples", "Edible Oils", "Sunflower Oil"] },
+    { "match": "^(Turmeric|Chilli|Coriander|Cumin|Pepper|Aniseed) Powder$", "path": ["Grocery & Staples", "Spices & Masala", "Ground Spices"] },
+    { "match": "Masala|Powder", "path": ["Grocery & Staples", "Spices & Masala", "Blended Masala"] }
+  ]
+}

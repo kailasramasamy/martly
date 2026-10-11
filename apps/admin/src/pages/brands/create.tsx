@@ -42,6 +42,16 @@ export const BrandCreate = () => {
                     <ColorPicker showText allowClear disabledAlpha format="hex" />
                   </Form.Item>
                 </Col>
+                <Col xs={24} sm={12}>
+                  <Form.Item
+                    label="Accent colour"
+                    name="themeColorSecondary"
+                    tooltip="Optional second logo colour, used for accents in the brand's store"
+                    getValueFromEvent={(_: unknown, hex: string) => hex || null}
+                  >
+                    <ColorPicker showText allowClear disabledAlpha format="hex" />
+                  </Form.Item>
+                </Col>
               </Row>
             </Card>
           </Col>

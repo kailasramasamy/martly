@@ -453,8 +453,9 @@ model Brand {
   name       String
   slug       String   @unique
   imageUrl   String?  @map("image_url")
-  // Brand's primary colour (hex), used to theme its brand store
-  themeColor String?  @map("theme_color")
+  // Brand's primary and accent colours (hex), used to theme its brand store
+  themeColor          String?  @map("theme_color")
+  themeColorSecondary String?  @map("theme_color_secondary")
   createdAt  DateTime @default(now()) @map("created_at")
   updatedAt  DateTime @updatedAt @map("updated_at")
 

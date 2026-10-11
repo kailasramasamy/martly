@@ -1,0 +1,74 @@
+{
+  "brand": "Eastern",
+  "manufacturer": "Eastern Condiments Private Limited (Orkla India)",
+  "store": "https://shop.orklaindia.com",
+  "vendors": [
+    "Eastern"
+  ],
+  "logo": "https://shop.orklaindia.com/cdn/shop/files/Eastern_Logo_Fin_1.png",
+  "themeColor": "#F04818",
+  "namePrefix": "Eastern ",
+  "foodType": "VEG",
+  "exclude": [
+    "Biriyani Masala Powder (Pack of 2)"
+  ],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "Dosa Mix",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "Idiyappam Mix|Palappam Mix",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "Upmavu Mix",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "Payasam",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^(Superr? )?(Kashmiri )?(Chilli|Turmeric|Coriander|Cumin|Black Pepper|Dry Ginger|Amchur|Hing) Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "Masala|Powder",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    }
+  ]
+}

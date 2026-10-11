@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ActivityIndicator, Animated, Image, Pressable, ScrollView, StyleSheet, Text, View, type FlatList, type TextInput } from "react-native";
+import { ActivityIndicator, Animated, Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type FlatList, type TextInput } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
@@ -7,7 +7,7 @@ import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
 import { useLanguage } from "../../lib/language-context";
 import { ProductActionsProvider } from "../../lib/product-actions";
-import { groupBrandProducts, searchBrandListings, type BrandCategory, type BrandSection } from "../../lib/brand-store";
+import { brandHomeBlocks, groupBrandProducts, searchBrandListings, type BrandCategory } from "../../lib/brand-store";
 import { brandDisplayName, brandTheme } from "../../lib/brand-strip";
 import { ProductList } from "../../components/ProductList";
 import { FloatingCart } from "../../components/FloatingCart";
@@ -46,49 +46,72 @@ type ListHandle = ScrollView | FlatList<StoreProduct>;
 // Shared by whichever list is showing: drives the collapsing header and pads content to start below it
 interface ScrollBinding {
   inset: number;
+  // How far the header scrolls before collapsing
+  collapse: number;
   onScroll: (...args: unknown[]) => void;
   register: (list: ListHandle | null) => void;
 }
 
-function useCollapsingScroll(resetKey: string) {
+function useCollapsingScroll(resetKey: string, chipKey: string) {
   const scrollY = useRef(new Animated.Value(0)).current;
+  const offset = useRef(0);
   const listRef = useRef<ListHandle | null>(null);
   const [inset, setInset] = useState(0);
-  const onScroll = useMemo(() => Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], { useNativeDriver: false }), [scrollY]);
+  const [collapse, setCollapse] = useState(0);
+  const onScroll = useMemo(() => Animated.event([{ nativeEvent: { contentOffset: { y: scrollY } } }], {
+    useNativeDriver: false,
+    listener: (e: { nativeEvent: { contentOffset: { y: number } } }) => { offset.current = e.nativeEvent.contentOffset.y; },
+  }), [scrollY]);
   const register = useCallback((list: ListHandle | null) => { listRef.current = list; }, []);
-  // A new view (tab, chip, search) mounts its list at the top, so the header must expand to match
-  useEffect(() => scrollY.setValue(0), [resetKey, scrollY]);
 
-  const scrollToTop = useCallback(() => {
+  const scrollTo = useCallback((y: number) => {
     const list = listRef.current;
-    if (list && "scrollToOffset" in list) list.scrollToOffset({ offset: 0, animated: false });
-    else list?.scrollTo({ y: 0, animated: false });
-    scrollY.setValue(0);
+    if (list && "scrollToOffset" in list) list.scrollToOffset({ offset: y, animated: false });
+    else list?.scrollTo({ y, animated: false });
+    offset.current = y;
+    scrollY.setValue(y);
   }, [scrollY]);
-  const binding: ScrollBinding = { inset, onScroll, register };
-  return { scrollY, binding, setInset, scrollToTop };
+  // A new view (tab, search) mounts its list at the top, so the header must expand to match
+  useEffect(() => { offset.current = 0; scrollY.setValue(0); }, [resetKey, scrollY]);
+  // Switching chips keeps the same list: restart it at the top of its products, leaving a collapsed header collapsed
+  const lastChip = useRef(chipKey);
+  useEffect(() => {
+    if (lastChip.current === chipKey) return;
+    lastChip.current = chipKey;
+    scrollTo(Math.min(offset.current, collapse));
+  }, [chipKey, collapse, scrollTo]);
+
+  const onHeight = useCallback((height: number, distance: number) => { setInset(height); setCollapse(distance); }, []);
+  const binding: ScrollBinding = { inset, collapse, onScroll, register };
+  return { scrollY, binding, onHeight, scrollToTop: () => scrollTo(0) };
 }
 
-function SectionHeader({ section, color, onSeeAll }: { section: BrandSection; color: string; onSeeAll: () => void }) {
-  const { getLocalizedName } = useLanguage();
+function SeeAll({ label, color, onPress }: { label: string; color: string; onPress: () => void }) {
+  return (
+    <Pressable style={styles.seeAll} onPress={onPress} hitSlop={8} accessibilityLabel={`See all ${label}`}>
+      <Text style={[styles.seeAllText, { color }]}>See all</Text>
+      <Ionicons name="chevron-forward" size={14} color={color} />
+    </Pressable>
+  );
+}
+
+function RailHeader({ title, count, color, onSeeAll }: { title: string; count: number; color: string; onSeeAll: () => void }) {
   return (
     <View style={styles.sectionHeader}>
       <Text style={styles.sectionTitle} numberOfLines={1}>
-        {getLocalizedName(section)} <Text style={styles.sectionCount}>{section.productCount}</Text>
+        {title} <Text style={styles.sectionCount}>{count}</Text>
       </Text>
-      <Pressable style={styles.seeAll} onPress={onSeeAll} hitSlop={8} accessibilityLabel={`See all ${section.name}`}>
-        <Text style={[styles.seeAllText, { color }]}>See all</Text>
-        <Ionicons name="chevron-forward" size={14} color={color} />
-      </Pressable>
+      <SeeAll label={title} color={color} onPress={onSeeAll} />
     </View>
   );
 }
 
-// "All": every subcategory as a horizontal rail, grouped under its category
-function AllView({ categories, color, onOpen, scroll }: {
-  categories: BrandCategory[]; color: string; onOpen: (catId: string, subId: string) => void; scroll: ScrollBinding;
+// "All": categories biggest first, each as rails (see brandHomeBlocks), so thin subcategories don't leave lone cards
+function AllView({ categories, brandName, color, onOpen, scroll }: {
+  categories: BrandCategory[]; brandName: string; color: string; onOpen: (catId: string, subId: string | null) => void; scroll: ScrollBinding;
 }) {
   const { getLocalizedName } = useLanguage();
+  const blocks = useMemo(() => brandHomeBlocks(categories), [categories]);
   return (
     <ScrollView
       ref={scroll.register}
@@ -98,20 +121,33 @@ function AllView({ categories, color, onOpen, scroll }: {
       contentContainerStyle={[styles.allContent, { paddingTop: scroll.inset }]}
       keyboardDismissMode="on-drag"
     >
-      {categories.map((cat) => (
-        <View key={cat.id} style={styles.categoryBlock}>
-          <View style={styles.categoryTitleRow}>
-            <View style={[styles.categoryAccent, { backgroundColor: color }]} />
-            <Text style={styles.categoryTitle}>{getLocalizedName(cat)}</Text>
-          </View>
-          {cat.sections.map((section) => (
-            <View key={section.id} style={styles.section}>
-              <SectionHeader section={section} color={color} onSeeAll={() => onOpen(cat.id, section.id)} />
-              <ProductList products={section.products} layout="rail" />
+      {blocks.map(({ key, category, rails }) => {
+        const title = category ? getLocalizedName(category) : `More from ${brandName}`;
+        // A category shown as one pooled rail needs no rail header: its title row carries "See all"
+        const single = rails.length === 1 && !rails[0].section;
+        return (
+          <View key={key} style={styles.categoryBlock}>
+            <View style={styles.categoryTitleRow}>
+              <View style={[styles.categoryAccent, { backgroundColor: color }]} />
+              <Text style={styles.categoryTitle} numberOfLines={1}>{title}</Text>
+              {single && category && <SeeAll label={title} color={color} onPress={() => onOpen(category.id, null)} />}
             </View>
-          ))}
-        </View>
-      ))}
+            {rails.map((rail) => (
+              <View key={rail.key} style={styles.section}>
+                {!single && category && (
+                  <RailHeader
+                    title={rail.section ? getLocalizedName(rail.section) : `More in ${title}`}
+                    count={rail.productCount}
+                    color={color}
+                    onSeeAll={() => onOpen(category.id, rail.section?.id ?? null)}
+                  />
+                )}
+                <ProductList products={rail.products} layout="rail" />
+              </View>
+            ))}
+          </View>
+        );
+      })}
     </ScrollView>
   );
 }
@@ -156,6 +192,8 @@ function SubChips({ category, active, color, onChange }: { category: BrandCatego
 }
 
 function GridView({ products, header, listKey, scroll }: { products: StoreProduct[]; header: React.ReactElement | null; listKey: string; scroll: ScrollBinding }) {
+  const { height } = useWindowDimensions();
+  // Room to stay collapsed even when a chip has only a few products
   return (
     <ProductList
       key={listKey}
@@ -166,7 +204,7 @@ function GridView({ products, header, listKey, scroll }: { products: StoreProduc
       products={products}
       layout="grid"
       ListHeaderComponent={header}
-      contentContainerStyle={[styles.gridContent, { paddingTop: scroll.inset + 4 }]}
+      contentContainerStyle={[styles.gridContent, { paddingTop: scroll.inset + 4, minHeight: height + scroll.collapse }]}
       keyboardDismissMode="on-drag"
       keyboardShouldPersistTaps="handled"
     />
@@ -200,9 +238,9 @@ function BrandBody({ brand, listings, categories, loading, storeName, query, tab
     return <GridView products={results} header={header} listKey={`search:${query}`} scroll={scroll} />;
   }
   const category = categories.find((c) => c.id === tab);
-  if (!category) return <AllView categories={categories} color={base} onOpen={onTab} scroll={scroll} />;
+  if (!category) return <AllView categories={categories} brandName={name} color={base} onOpen={onTab} scroll={scroll} />;
   const products = category.sections.filter((s) => !sub || s.id === sub).flatMap((s) => s.products);
-  return <GridView products={products} header={null} listKey={`${category.id}:${sub ?? "all"}`} scroll={scroll} />;
+  return <GridView products={products} header={null} listKey={category.id} scroll={scroll} />;
 }
 
 export default function BrandStoreScreen() {
@@ -212,14 +250,15 @@ export default function BrandStoreScreen() {
   const [tab, setTab] = useState<string | null>(null);
   const [sub, setSub] = useState<string | null>(null);
   const [query, setQuery] = useState("");
+  const [searchOpen, setSearchOpen] = useState(false);
 
   const searching = query.trim().length > 0;
-  const { scrollY, binding, setInset, scrollToTop } = useCollapsingScroll(`${tab}:${sub}:${searching ? query : ""}`);
+  const { scrollY, binding, onHeight, scrollToTop } = useCollapsingScroll(`${tab}:${searching ? query : ""}`, `${tab}:${sub}`);
   const inputRef = useRef<TextInput>(null);
 
   const productCount = categories.reduce((n, c) => n + c.productCount, 0);
-  const selectTab = (catId: string | null, subId: string | null = null) => { setTab(catId); setSub(subId); setQuery(""); };
-  const openSearch = () => { scrollToTop(); setTimeout(() => inputRef.current?.focus(), 50); };
+  const selectTab = (catId: string | null, subId: string | null = null) => { setTab(catId); setSub(subId); setQuery(""); setSearchOpen(false); };
+  const openSearch = () => { scrollToTop(); setSearchOpen(true); setTimeout(() => inputRef.current?.focus(), 50); };
   const category = !searching ? categories.find((c) => c.id === tab) : undefined;
 
   return (
@@ -234,15 +273,15 @@ export default function BrandStoreScreen() {
           <CollapsingBrandHeader
             brand={brand}
             scrollY={scrollY}
-            onHeight={setInset}
+            onHeight={onHeight}
             onSearchPress={openSearch}
             expanded={
               <>
-                <BrandHero brand={brand} productCount={productCount} categoryCount={categories.length} query={query} onQuery={setQuery} inputRef={inputRef} />
+                <BrandHero brand={brand} productCount={productCount} categoryCount={categories.length} query={query} onQuery={setQuery} inputRef={inputRef} searchOpen={searchOpen} onSearchOpen={(open) => (open ? openSearch() : setSearchOpen(false))} />
                 {!searching && <BrandCategoryTiles brand={brand} categories={categories} activeId={tab} onSelect={(c) => selectTab(c)} />}
               </>
             }
-            pinned={category && <SubChips key={category.id} category={category} active={sub} color={brandTheme(brand).base} onChange={setSub} />}
+            pinned={category && <SubChips key={category.id} category={category} active={sub} color={brandTheme(brand).accent} onChange={setSub} />}
           />
         )}
         <FloatingCart />
@@ -257,9 +296,9 @@ const styles = StyleSheet.create({
   loader: { marginTop: 48 },
   allContent: { paddingBottom: 120 },
   categoryBlock: { paddingTop: 22 },
-  categoryTitleRow: { flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 16, marginBottom: 6 },
+  categoryTitleRow: { flexDirection: "row", alignItems: "center", gap: 8, paddingHorizontal: 16, marginBottom: 6, minHeight: 32 },
   categoryAccent: { width: 4, height: 20, borderRadius: 2 },
-  categoryTitle: { fontFamily: fonts.extrabold, fontSize: 19, color: colors.text, letterSpacing: -0.3 },
+  categoryTitle: { flex: 1, fontFamily: fonts.extrabold, fontSize: 19, color: colors.text, letterSpacing: -0.3 },
   section: { marginTop: 12 },
   sectionHeader: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, marginBottom: 10 },
   sectionTitle: { flex: 1, fontFamily: fonts.bold, fontSize: 15, color: colors.text },

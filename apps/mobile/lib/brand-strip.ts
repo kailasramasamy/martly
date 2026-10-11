@@ -25,10 +25,10 @@ export function shade(hex: string, amount: number): string {
   return `#${ch(16)}${ch(8)}${ch(0)}`;
 }
 
-// A brand's store colours: its own themeColor when set, else the stable wordmark ink
-export function brandTheme(brand: { name: string; themeColor?: string | null }) {
+// A brand's store colours: its own themeColor when set, else the stable wordmark ink; accent is its second logo colour, if any
+export function brandTheme(brand: { name: string; themeColor?: string | null; themeColorSecondary?: string | null }) {
   const base = brand.themeColor ?? wordmarkColors(brand.name)[1];
-  return { base, dark: shade(base, 0.35) };
+  return { base, dark: shade(base, 0.35), accent: brand.themeColorSecondary ?? base };
 }
 
 // "Fortune (Adani Wilmar)" → "Fortune": the parenthetical is the parent company

@@ -9,7 +9,7 @@ import { brandDisplayName, brandTheme } from "../lib/brand-strip";
 import { useLanguage } from "../lib/language-context";
 import type { BrandCategory } from "../lib/brand-store";
 
-export interface BrandInfo { name: string; imageUrl: string | null; themeColor: string | null }
+export interface BrandInfo { name: string; imageUrl: string | null; themeColor: string | null; themeColorSecondary: string | null }
 
 interface HeroProps {
   brand: BrandInfo;
@@ -18,22 +18,35 @@ interface HeroProps {
   query: string;
   onQuery: (q: string) => void;
   inputRef?: RefObject<TextInput | null>;
+  // The search field stays hidden behind an icon until opened
+  searchOpen: boolean;
+  onSearchOpen: (open: boolean) => void;
 }
 
 // Full-bleed brand hero: runs under the status bar, carries the back button, brand block and in-store search
-export function BrandHero({ brand, productCount, categoryCount, query, onQuery, inputRef }: HeroProps) {
+export function BrandHero({ brand, productCount, categoryCount, query, onQuery, inputRef, searchOpen, onSearchOpen }: HeroProps) {
   const insets = useSafeAreaInsets();
-  const { base, dark } = brandTheme(brand);
+  const { base, dark, accent } = brandTheme(brand);
   const name = brandDisplayName(brand.name);
   return (
-    <LinearGradient colors={[base, dark]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={[styles.hero, { paddingTop: insets.top + 6 }]}>
+    <LinearGradient
+      colors={[base, dark]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}
+      style={[styles.hero, { paddingTop: insets.top + 6 }, brand.themeColorSecondary && { borderBottomWidth: 4, borderBottomColor: accent }]}
+    >
       <View style={[styles.orb, styles.orbLarge]} />
       <View style={[styles.orb, styles.orbSmall]} />
       <Text style={styles.watermark} numberOfLines={1}>{name}</Text>
 
-      <Pressable style={styles.back} onPress={() => router.back()} hitSlop={8} accessibilityLabel="Back">
-        <Ionicons name="chevron-back" size={22} color="#fff" />
-      </Pressable>
+      <View style={styles.topRow}>
+        <Pressable style={styles.iconBtn} onPress={() => router.back()} hitSlop={8} accessibilityLabel="Back">
+          <Ionicons name="chevron-back" size={22} color="#fff" />
+        </Pressable>
+        {!searchOpen && (
+          <Pressable style={styles.iconBtn} onPress={() => onSearchOpen(true)} hitSlop={8} accessibilityLabel={`Search in ${name}`}>
+            <Ionicons name="search" size={20} color="#fff" />
+          </Pressable>
+        )}
+      </View>
 
       <View style={styles.brandRow}>
         <View style={styles.logoTile}>
@@ -50,7 +63,7 @@ export function BrandHero({ brand, productCount, categoryCount, query, onQuery, 
         </View>
       </View>
 
-      <View style={styles.search}>
+      {searchOpen && <View style={styles.search}>
         <Ionicons name="search" size={18} color={colors.textSecondary} />
         <TextInput
           ref={inputRef}
@@ -62,12 +75,10 @@ export function BrandHero({ brand, productCount, categoryCount, query, onQuery, 
           returnKeyType="search"
           autoCorrect={false}
         />
-        {query.length > 0 && (
-          <Pressable onPress={() => onQuery("")} hitSlop={10} accessibilityLabel="Clear search">
-            <Ionicons name="close-circle" size={18} color="#94a3b8" />
-          </Pressable>
-        )}
-      </View>
+        <Pressable onPress={() => { onQuery(""); onSearchOpen(false); }} hitSlop={10} accessibilityLabel="Close search">
+          <Ionicons name="close-circle" size={18} color="#94a3b8" />
+        </Pressable>
+      </View>}
     </LinearGradient>
   );
 }
@@ -113,7 +124,8 @@ const styles = StyleSheet.create({
     position: "absolute", right: -10, top: 56, fontFamily: fonts.extrabold, fontSize: 96,
     letterSpacing: -4, color: "rgba(255,255,255,0.08)",
   },
-  back: {
+  topRow: { flexDirection: "row", justifyContent: "space-between" },
+  iconBtn: {
     width: 40, height: 40, borderRadius: 20, backgroundColor: "rgba(255,255,255,0.18)",
     alignItems: "center", justifyContent: "center",
   },

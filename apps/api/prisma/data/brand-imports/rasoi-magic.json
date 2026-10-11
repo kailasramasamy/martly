@@ -1,0 +1,16 @@
+{
+  "brand": "Rasoi Magic",
+  "manufacturer": "Orkla India Limited",
+  "store": "https://shop.orklaindia.com",
+  "vendors": ["Rasoi Magic"],
+  "logo": "https://shop.orklaindia.com/cdn/shop/files/rasoi_logo.png",
+  "themeColor": "#D82418",
+  "namePrefix": "Rasoi Magic ",
+  "titleCase": true,
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    { "match": ".", "path": ["Snacks & Packaged Foods", "Ready to Eat & Cook", "Ready to Cook Gravies"] }
+  ]
+}

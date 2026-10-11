@@ -1,12 +1,14 @@
 /**
  * Import a brand's catalog from its Shopify store (public products.json feed) into the master catalog.
- * Config: prisma/data/brand-imports/<name>.json — brand, store URL, name prefix, exclusions,
+ * Brands without a Shopify store use a hand-built feed in the same shape ("feed": file in this folder);
+ * variants marked "estimated" carry an approximated MRP and are flagged in the review.
+ * Config: prisma/data/brand-imports/<name>.json — brand, store URL or feed file, name prefix, exclusions,
  * aliases (existing product name → site title) and ordered title rules mapping products to subcategories.
  *
  * Every run writes prisma/data/brand-imports/<name>-review.csv: each site product, what will happen to it,
  * its pack sizes with MRP (the store's compare-at price) and online price, and anything that needs a human look.
- * With --apply it also sets the brand logo and theme colour (config "logo"/"themeColor", if given), creates/updates products and variants (MRP set; "pack of N" bundles split into single packs;
- * unreferenced pack sizes the site doesn't sell are removed) and uploads up to 3 images per product to S3.
+ * With --apply it also sets the brand logo and theme colours (config "logo"/"themeColor"/"themeColorSecondary", if given), creates/updates products and variants (MRP set; "pack of N" bundles split into single packs;
+ * unreferenced pack sizes the site doesn't sell are removed) and uploads up to 8 images per product to S3.
  *
  * Run: cd apps/api && npx tsx prisma/import-shopify-brand.ts aachi [--apply] [--refresh-images]
  * Prod: prefix with DATABASE_URL=<prod url>
@@ -19,14 +21,14 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { PRODUCT_TYPE, resolveSubcategory, slugify, type TaxonomyPath } from "./lib/catalog.js";
 import { uploadImage, transparentLogoPng } from "./lib/media.js";
 import {
-  fetchShopifyProducts, toPackVariant, titlePackOf, cleanTitle, plainDescription,
+  fetchShopifyProducts, toPackVariant, titlePackOf, isBogoTitle, cleanTitle, plainDescription,
   type ShopifyProduct, type PackVariant,
 } from "./lib/shopify.js";
 
 dotenv.config();
 
 interface Config {
-  brand: string; manufacturer: string; store: string; logo?: string; themeColor?: string; namePrefix: string; foodType: FoodType;
+  brand: string; manufacturer: string; store?: string; vendors?: string[]; feed?: string; logo?: string; themeColor?: string; themeColorSecondary?: string; namePrefix: string; titleCase?: boolean; foodType: FoodType;
   exclude: string[]; aliases: Record<string, string>; rules: { match: string; path: TaxonomyPath }[];
 }
 interface Plan {
@@ -39,7 +41,7 @@ const CONFIG_NAME = process.argv[2];
 const APPLY = process.argv.includes("--apply");
 const REFRESH_IMAGES = process.argv.includes("--refresh-images");
 const DATA_DIR = new URL("./data/brand-imports/", import.meta.url);
-const MAX_IMAGES = 3;
+const MAX_IMAGES = 8;
 
 // Larger pack priced below a smaller one (per unit family) usually means a pouch vs jar, or a data error
 function priceAnomalies(variants: PackVariant[]): string[] {
@@ -51,25 +53,47 @@ function priceAnomalies(variants: PackVariant[]): string[] {
 }
 
 function planProduct(site: ShopifyProduct, config: Config): Plan {
-  const title = cleanTitle(site.title);
+  // Some stores repeat the brand in the title ("Eastern  Chilli Powder")
+  const title = cleanTitle(site.title, config.titleCase).replace(new RegExp(`^${config.namePrefix.trim()}\\s+`, "i"), "");
   const name = `${config.namePrefix}${title}`;
   const base = { site, title, name, path: null, variants: [], flags: [] };
   if (config.exclude.some((x) => site.title.includes(x))) return { ...base, skip: "excluded" };
 
   const rule = config.rules.find((r) => new RegExp(r.match, "i").test(title));
   const packOf = titlePackOf(site.title);
-  const parsed = site.variants.map((v) => ({ v, pack: toPackVariant(v, packOf) }));
+  const bogo = isBogoTitle(site.title) && site.variants.length === 1;
+  const parsed = site.variants.map((v) => ({ v, pack: toPackVariant(v, packOf, bogo) }));
   const flags = parsed.filter((p) => !p.pack).map((p) => `unparsed size "${p.v.title}"`);
   const byName = new Map<string, PackVariant>();
   for (const { pack } of parsed) if (pack && (!byName.has(pack.name) || !pack.note)) byName.set(pack.name, pack);
-  const variants = [...byName.values()];
+  // "200g x 2" next to a plain "200g" is a bundle offer, not a pack a store would stock
+  const variants = [...byName.values()].filter((v) => !v.single || !byName.has(v.single));
 
   flags.push(...variants.filter((v) => v.note).map((v) => `${v.name}: ${v.note}`));
   flags.push(...variants.filter((v) => !v.available).map((v) => `${v.name}: out of stock online`));
   flags.push(...priceAnomalies(variants));
+  const estimated = site.variants.filter((v) => v.estimated).map((v) => v.title);
+  if (estimated.length) flags.push(`MRP estimated: ${estimated.join(", ")}`);
   if (!rule) flags.push("no category rule matched");
   const skip = !rule ? "unmapped" : variants.length === 0 ? "no usable sizes" : undefined;
   return { ...base, path: rule?.path ?? null, variants, flags, skip };
+}
+
+// "Chana Masala" and "Chana Masala (Pack of 2)" are one product: the plain listing (images, description) takes the bundle's sizes
+function mergeDuplicates(plans: Plan[]): Plan[] {
+  const primary = new Map<string, Plan>();
+  // Plain listings first, then the smallest bundles: their per-pack MRP is closest to the single pack's
+  const bundleSize = (p: Plan) => Math.max(isBogoTitle(p.site.title) ? 2 : 1, titlePackOf(p.site.title), Number(p.site.title.match(/\((\d+)x value pack\)/i)?.[1] ?? 1));
+  const offersLast = [...plans].sort((a, b) => bundleSize(a) - bundleSize(b));
+  for (const plan of offersLast.filter((p) => !p.skip)) {
+    const first = primary.get(plan.name);
+    if (!first) { primary.set(plan.name, plan); continue; }
+    const added = plan.variants.filter((v) => !first.variants.some((f) => f.name === v.name || f.name === v.single));
+    first.variants.push(...added);
+    if (added.length) first.flags.push(`${added.map((v) => v.name).join(", ")} from "${plan.site.title}"`);
+    plan.skip = "merged";
+  }
+  return plans;
 }
 
 function csvCell(s: string): string {
@@ -92,8 +116,14 @@ function writeReview(plans: Plan[], existingNames: Set<string>): string {
 async function toWebp(url: string, size: number): Promise<Buffer> {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`image ${url}: HTTP ${res.status}`);
-  return sharp(Buffer.from(await res.arrayBuffer()))
-    .resize(size, size, { fit: "contain", background: "#ffffff" }).flatten({ background: "#ffffff" })
+  // Pack shots often sit small in a wide white canvas: trim it so the pack fills the tile, with a slim margin
+  // (flattened in its own pass: within one pipeline sharp trims first, against the transparent pixels)
+  const flat = await sharp(Buffer.from(await res.arrayBuffer())).flatten({ background: "#ffffff" }).png().toBuffer();
+  const trimmed = await sharp(flat).trim({ background: "#ffffff", threshold: 20 }).toBuffer();
+  const margin = Math.round(size * 0.04);
+  return sharp(trimmed)
+    .resize(size - 2 * margin, size - 2 * margin, { fit: "contain", background: "#ffffff" })
+    .extend({ top: margin, bottom: margin, left: margin, right: margin, background: "#ffffff" })
     .webp({ quality: 85 }).toBuffer();
 }
 
@@ -110,21 +140,28 @@ async function applyBrandLogo(brand: { id: string; imageUrl: string | null }, lo
 async function uploadProductImages(site: ShopifyProduct, brandSlug: string, slug: string): Promise<string[]> {
   const urls: string[] = [];
   for (const [i, img] of site.images.slice(0, MAX_IMAGES).entries()) {
-    const webp = await toWebp(`${img.src}${img.src.includes("?") ? "&" : "?"}width=1000`, 800);
+    const webp = await toWebp(`${img.src}${img.src.includes("?") ? "&" : "?"}width=2000`, 800);
     urls.push(await uploadImage(`catalog/brands/${brandSlug}/${slug}-${i + 1}`, webp));
   }
   return urls;
 }
 
-// Adds/updates the site's pack sizes (with MRP) and removes old sizes nothing references
-async function syncVariants(productId: string, variants: PackVariant[]): Promise<string[]> {
+// A size's own pack shot, uploaded once (again with --refresh-images); undefined leaves the variant's image as is
+async function variantImage(v: PackVariant, current: string | null | undefined, keyBase: string): Promise<string | undefined> {
+  if (!v.image || (current && !REFRESH_IMAGES)) return undefined;
+  const src = `${v.image}${v.image.includes("?") ? "&" : "?"}width=2000`;
+  return uploadImage(`${keyBase}-${slugify(v.name)}`, await toWebp(src, 800));
+}
+
+// Adds/updates the site's pack sizes (with MRP and pack shot) and removes old sizes nothing references
+async function syncVariants(productId: string, variants: PackVariant[], imageKeyBase: string): Promise<string[]> {
   const existing = await prisma.productVariant.findMany({
     where: { productId },
-    select: { id: true, name: true, _count: { select: { storeProducts: true, orderItems: true } } },
+    select: { id: true, name: true, imageUrl: true, _count: { select: { storeProducts: true, orderItems: true } } },
   });
   for (const v of variants) {
-    const data = { unitType: v.unitType, unitValue: v.unitValue, mrp: v.mrp };
     const match = existing.find((e) => e.name === v.name);
+    const data = { unitType: v.unitType, unitValue: v.unitValue, mrp: v.mrp, imageUrl: await variantImage(v, match?.imageUrl, imageKeyBase) };
     if (match) await prisma.productVariant.update({ where: { id: match.id }, data });
     else await prisma.productVariant.create({ data: { ...data, name: v.name, productId } });
   }
@@ -149,7 +186,7 @@ async function applyPlan(plan: Plan, config: Config, brandId: string): Promise<"
     ? await prisma.product.update({ where: { id: existing.id }, data })
     : await prisma.product.create({ data: { ...data, brandId } });
 
-  const kept = await syncVariants(product.id, plan.variants);
+  const kept = await syncVariants(product.id, plan.variants, `catalog/brands/${slugify(config.brand)}/${slugify(plan.name)}`);
   if (kept.length) console.warn(`  ${plan.name}: kept sizes still referenced by stores/orders: ${kept.join(", ")}`);
   if (REFRESH_IMAGES || product.images.length === 0) {
     const urls = await uploadProductImages(plan.site, slugify(config.brand), slugify(plan.name));
@@ -161,9 +198,13 @@ async function applyPlan(plan: Plan, config: Config, brandId: string): Promise<"
 async function main() {
   if (!CONFIG_NAME) throw new Error("Usage: import-shopify-brand.ts <config-name> [--apply] [--refresh-images]");
   const config: Config = JSON.parse(readFileSync(new URL(`${CONFIG_NAME}.json`, DATA_DIR), "utf8"));
-  console.log(`${APPLY ? "Importing" : "Dry run"}: ${config.brand} from ${config.store} into ${new URL(process.env.DATABASE_URL!).host}`);
+  console.log(`${APPLY ? "Importing" : "Dry run"}: ${config.brand} from ${config.feed ?? config.store} into ${new URL(process.env.DATABASE_URL!).host}`);
 
-  const plans = (await fetchShopifyProducts(config.store)).map((p) => planProduct(p, config));
+  const siteProducts: ShopifyProduct[] = config.feed
+    ? JSON.parse(readFileSync(new URL(config.feed, DATA_DIR), "utf8"))
+    : await fetchShopifyProducts(config.store!);
+  // Multi-brand stores (shop.orklaindia.com) carry other brands too
+  const plans = mergeDuplicates(siteProducts.filter((p) => !config.vendors || config.vendors.includes(p.vendor)).map((p) => planProduct(p, config)));
   const brand = await prisma.brand.findFirst({ where: { OR: [{ name: config.brand }, { slug: slugify(config.brand) }] } });
   const existing = brand
     ? await prisma.product.findMany({ where: { brandId: brand.id, organizationId: null }, select: { name: true } })
@@ -179,7 +220,9 @@ async function main() {
   const target = brand ?? await prisma.brand.create({ data: { name: config.brand, slug: slugify(config.brand) } });
   const brandId = target.id;
   if (config.logo) await applyBrandLogo(target, config.logo, slugify(config.brand));
-  if (config.themeColor) await prisma.brand.update({ where: { id: brandId }, data: { themeColor: config.themeColor } });
+  if (config.themeColor) {
+    await prisma.brand.update({ where: { id: brandId }, data: { themeColor: config.themeColor, themeColorSecondary: config.themeColorSecondary ?? null } });
+  }
   const counts = { created: 0, updated: 0 };
   for (const plan of todo) counts[await applyPlan(plan, config, brandId)]++;
   console.log(`✔ ${counts.created} products created, ${counts.updated} updated`);

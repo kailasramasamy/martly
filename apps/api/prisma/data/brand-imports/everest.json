@@ -1,0 +1,23 @@
+{
+  "brand": "Everest",
+  "manufacturer": "Everest Food Products Private Limited",
+  "feed": "everest-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/everest/source/logo-bbaab741.png",
+  "themeColor": "#EC3237",
+  "namePrefix": "Everest ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Everest Fresh Ginger Garlic Paste": "Ginger Garlic Paste"
+  },
+  "rules": [
+    { "match": "^Eazy Chef", "path": ["Snacks & Packaged Foods", "Ready to Eat & Cook", "Ready to Cook Gravies"] },
+    { "match": "^Tasteeto", "path": ["Grocery & Staples", "Spices & Masala", "Herbs & Seasonings"] },
+    { "match": "^Saffron$", "path": ["Grocery & Staples", "Spices & Masala", "Whole Spices"] },
+    { "match": "^Hing Powder", "path": ["Grocery & Staples", "Spices & Masala", "Ground Spices"] },
+    { "match": "Ginger Garlic Paste", "path": ["Grocery & Staples", "Spices & Masala", "Curry Paste & Wet Masala"] },
+    { "match": "Kasuri Methi", "path": ["Grocery & Staples", "Spices & Masala", "Herbs & Seasonings"] },
+    { "match": "^(Black Pepper|Coriander|Cumin|Dry Mango|Turmeric|Hingraj) Powder$|Chilli Powder$", "path": ["Grocery & Staples", "Spices & Masala", "Ground Spices"] },
+    { "match": "Masala$|Jaljira Powder", "path": ["Grocery & Staples", "Spices & Masala", "Blended Masala"] }
+  ]
+}

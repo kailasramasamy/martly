@@ -17,8 +17,8 @@ interface Props {
   expanded: ReactNode;
   // Stays pinned under the compact bar: the subcategory chips
   pinned?: ReactNode;
-  // Total header height, so the content below can pad itself to start underneath it
-  onHeight: (height: number) => void;
+  // Total header height, so the content below can pad itself to start underneath it, and how far it scrolls before collapsing
+  onHeight: (height: number, distance: number) => void;
   onSearchPress: () => void;
 }
 
@@ -31,7 +31,7 @@ export function CollapsingBrandHeader({ brand, scrollY, expanded, pinned, onHeig
   const compactHeight = insets.top + COMPACT_ROW;
   const distance = Math.max(1, expandedHeight - compactHeight);
 
-  useEffect(() => onHeight(expandedHeight + (pinned ? pinnedHeight : 0)), [expandedHeight, pinnedHeight, pinned, onHeight]);
+  useEffect(() => onHeight(expandedHeight + (pinned ? pinnedHeight : 0), distance), [expandedHeight, pinnedHeight, pinned, distance, onHeight]);
   useEffect(() => {
     const id = scrollY.addListener(({ value }) => setCollapsed(value > distance - 24));
     return () => scrollY.removeListener(id);
@@ -57,10 +57,13 @@ export function CollapsingBrandHeader({ brand, scrollY, expanded, pinned, onHeig
 }
 
 function CompactBar({ brand, top, onSearchPress }: { brand: BrandInfo; top: number; onSearchPress: () => void }) {
-  const { base, dark } = brandTheme(brand);
+  const { base, dark, accent } = brandTheme(brand);
   const name = brandDisplayName(brand.name);
   return (
-    <LinearGradient colors={[base, dark]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={[styles.compactInner, { paddingTop: top }]}>
+    <LinearGradient
+      colors={[base, dark]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
+      style={[styles.compactInner, { paddingTop: top }, brand.themeColorSecondary && { borderBottomWidth: 3, borderBottomColor: accent }]}
+    >
       <Pressable style={styles.iconBtn} onPress={() => router.back()} hitSlop={8} accessibilityLabel="Back">
         <Ionicons name="chevron-back" size={22} color="#fff" />
       </Pressable>

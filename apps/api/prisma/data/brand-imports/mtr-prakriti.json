@@ -1,0 +1,13 @@
+{
+  "brand": "MTR",
+  "manufacturer": "Orkla India Limited",
+  "store": "https://shop.orklaindia.com",
+  "vendors": ["MTR Prakriti"],
+  "namePrefix": "MTR Prakriti ",
+  "foodType": "VEG",
+  "exclude": ["&", "Bundle"],
+  "aliases": {},
+  "rules": [
+    { "match": "Powder$", "path": ["Grocery & Staples", "Spices & Masala", "Ground Spices"] }
+  ]
+}
