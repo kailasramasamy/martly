@@ -1,0 +1,51 @@
+{
+  "brand": "Bertolli",
+  "manufacturer": "Deoleo",
+  "feed": "bertolli-feed.json",
+  "namePrefix": "Bertolli ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Classico\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Extra\\ Light\\ Tasting\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Dress\\ \\&\\ Drizz\\ Cold\\ Extracted\\ Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Indian\\ Cooking\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    }
+  ]
+}
