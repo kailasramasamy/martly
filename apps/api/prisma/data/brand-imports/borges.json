@@ -1,0 +1,337 @@
+{
+  "brand": "Borges",
+  "manufacturer": "Borges India Private Limited",
+  "feed": "borges-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/borges/source/logo-0d1fbc22.png",
+  "themeColor": "#DA2318",
+  "themeColorSecondary": "#6AB023",
+  "namePrefix": "Borges ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Borges Extra Virgin Olive Oil (Organic)": "Eco Natura Extra Virgin Olive Oil",
+    "Borges Fusilli Durum Wheat Pasta": "Fusilli Pasta"
+  },
+  "rules": [
+    {
+      "match": "^Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Eco\\ Natura\\ Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Character\\ Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Fruity\\ Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Classic\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Olive\\ Oil\\ for\\ Indian\\ Cooking$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Canola\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Borgefrit\\ High\\ Oleic\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Sunflower\\ \\&\\ Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Blended Oil"
+      ]
+    },
+    {
+      "match": "^Balsamic\\ Vinegar\\ of\\ Modena$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Balsamic Vinegar"
+      ]
+    },
+    {
+      "match": "^Red\\ Wine\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Unfiltered\\ Apple\\ Cider\\ Vinegar\\ with\\ Mother$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Black\\ Pitted\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Black\\ Sliced\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Green\\ Pitted\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Green\\ Sliced\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Mix\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Gourmet\\ Charm\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Snacking\\ Olives\\ Spanish\\ Soul$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Farfalle\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Fusilli\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Penne\\ Rigate\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Spaghetti\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Tricolour\\ Fusilli\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Fusilli\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Penne\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Mini\\ Fusilli\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Mini\\ Penne\\ Rigate\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Macaroni\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Penne\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Natura\\ Rice\\ \\&\\ Almond\\ Drink$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Natura\\ Rice\\ \\&\\ Walnut\\ Drink$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Natura\\ Rice\\ \\&\\ Hazelnut\\ Drink$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Olive\\ Leaf\\ Infusion\\ \\-\\ Classic$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Olive\\ Leaf\\ Infusion\\ \\-\\ Olive\\ \\&\\ Basil$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Olive\\ Leaf\\ Infusion\\ \\-\\ Olive\\ \\&\\ Mint$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Olive\\ Leaf\\ Infusion\\ 4\\-in\\-1\\ Assorted\\ Pack$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Blanched\\ \\&\\ Peeled\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Pizarro\\ Almonds\\ Fried\\ \\&\\ Salted$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Pizarro\\ Pistachios\\ Roasted\\ \\&\\ Salted$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Pistachios (Pista)"
+      ]
+    }
+  ]
+}
