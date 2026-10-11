@@ -1,0 +1,242 @@
+[
+ {
+  "title": "Extra Virgin Olive Oil",
+  "handle": "extra-virgin-olive-oil",
+  "vendor": "Figaro",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "1019",
+    "compare_at_price": "1019",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100140877_12-figaro-extra-virgin-olive-oil.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "525",
+    "compare_at_price": "525",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011512_6-figaro-extra-virgin-olive-oil.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1999",
+    "compare_at_price": "1999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011505_11-figaro-extra-virgin-olive-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140877_12-figaro-extra-virgin-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140877-2_9-figaro-extra-virgin-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140877-3_9-figaro-extra-virgin-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140877-4_9-figaro-extra-virgin-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140877-5_9-figaro-extra-virgin-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140877-6_2-figaro-extra-virgin-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140877-7_2-figaro-extra-virgin-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011512_6-figaro-extra-virgin-olive-oil.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Extra Light Tasting Olive Oil",
+  "handle": "extra-light-tasting-olive-oil",
+  "vendor": "Figaro",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "1899",
+    "compare_at_price": "1899",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667_6-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297666_6-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "3499",
+    "compare_at_price": "3499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297668_6-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "8499",
+    "compare_at_price": "8499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297669_5-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667_6-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667-2_4-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667-3_4-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667-4_4-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667-5_4-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667-6_4-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667-7_4-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667-8_1-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Multi-Purpose Pure Olive Oil",
+  "handle": "multi-purpose-pure-olive-oil",
+  "vendor": "Figaro",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "1595",
+    "compare_at_price": "1595",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874_12-figaro-pure-olive-oil.jpg"
+    }
+   },
+   {
+    "title": "50ml",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20007753_1-figaro-pure-olive-oil-rich-source-of-vitamin-e.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366621_1-figaro-multi-purpose-pure-olive-oil.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100140858_12-figaro-pure-olive-oil.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "475",
+    "compare_at_price": "475",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366622_1-figaro-multi-purpose-pure-olive-oil.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "939",
+    "compare_at_price": "939",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100140866_12-figaro-pure-olive-oil.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "3999",
+    "compare_at_price": "3999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189355_7-figaro-pure-olive-oil.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "8999",
+    "compare_at_price": "8999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124588_11-figaro-olive-oil-pure.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874_12-figaro-pure-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874-2_1-figaro-pure-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874-3_1-figaro-pure-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874-4_1-figaro-pure-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874-5_1-figaro-pure-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874-6_1-figaro-pure-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874-7_1-figaro-pure-olive-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874-8_1-figaro-pure-olive-oil.jpg"
+   }
+  ]
+ }
+]

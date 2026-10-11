@@ -1,0 +1,38 @@
+{
+  "brand": "Figaro",
+  "manufacturer": "Deoleo",
+  "feed": "figaro-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/figaro/logo-f173b0c7.png",
+  "themeColor": "#E02030",
+  "themeColorSecondary": "#1F4D2E",
+  "namePrefix": "Figaro ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Extra\\ Virgin\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Extra\\ Light\\ Tasting\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    },
+    {
+      "match": "^Multi\\-Purpose\\ Pure\\ Olive\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Olive Oil"
+      ]
+    }
+  ]
+}
