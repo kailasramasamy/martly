@@ -4,14 +4,11 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 
-const { height: SCREEN_HEIGHT, width: SCREEN_WIDTH } = Dimensions.get("window");
-const SHEET_MAX = SCREEN_HEIGHT * 0.7;
+const { height: SCREEN_HEIGHT } = Dimensions.get("window");
+const SHEET_MAX = SCREEN_HEIGHT * 0.8;
 const CONTROL_WIDTH = 72;
 const CONTROL_HEIGHT = 34;
-const CARD_GAP = 12;
-const CARD_WIDTH = (SCREEN_WIDTH - spacing.md * 2 - CARD_GAP) / 2;
-// Square image tile inside the card's 8pt padding and 1pt border
-const TILE = CARD_WIDTH - 16 - 2;
+const THUMB = 88;
 const HIT_SLOP = { top: 6, bottom: 6, left: 4, right: 4 };
 
 interface VariantBottomSheetProps {
@@ -100,30 +97,30 @@ function VariantControl({ sp, qty, isOutOfStock, mode, onAddToCart, onUpdateQuan
   );
 }
 
-// One size as a card: image with the ADD control straddling its corner, then size, price and per-unit price
-function VariantCard({ sp, qty, isMember, ...controlProps }: Omit<ControlProps, "isOutOfStock"> & { isMember?: boolean }) {
+// One size per row: thumbnail, size with price and per-unit price, then the ADD control
+function VariantRow({ sp, qty, isMember, ...controlProps }: Omit<ControlProps, "isOutOfStock"> & { isMember?: boolean }) {
   const { shown, struck, plusHint, discountLabel } = getPrices(sp, isMember);
   const available = sp.availableStock ?? (sp.stock - (sp.reservedStock ?? 0));
   const isOutOfStock = available <= 0;
   const image = sp.variant.imageUrl || sp.product.imageUrl;
   const unitPrice = unitPriceLabel(sp, shown);
   return (
-    <View style={[styles.card, isOutOfStock && styles.cardDisabled]}>
-      <View style={styles.tile}>
-        {image ? <Image source={{ uri: image }} style={styles.tileImage} resizeMode="contain" /> : null}
+    <View style={[styles.row, isOutOfStock && styles.rowDisabled]}>
+      <View style={styles.thumb}>
+        {image ? <Image source={{ uri: image }} style={styles.thumbImage} resizeMode="contain" /> : null}
       </View>
-      <View style={styles.controlWrap}>
-        <VariantControl sp={sp} qty={qty} isOutOfStock={isOutOfStock} {...controlProps} />
+      <View style={styles.info}>
+        <Text style={styles.variantName} numberOfLines={1}>{sp.variant.name}</Text>
+        <View style={styles.priceRow}>
+          <Text style={styles.price}>{"\u20B9"}{shown.toFixed(0)}</Text>
+          {struck != null && <Text style={styles.mrp}>{"\u20B9"}{struck.toFixed(0)}</Text>}
+          {discountLabel && <Text style={styles.discount}>{discountLabel}</Text>}
+        </View>
+        {unitPrice && <Text style={styles.unitPrice}>{unitPrice}</Text>}
+        {plusHint != null && <Text style={styles.plusHint}>{"\u20B9"}{plusHint.toFixed(0)} with Plus</Text>}
+        {isOutOfStock && <Text style={styles.outOfStock}>Out of stock</Text>}
       </View>
-      <Text style={styles.variantName} numberOfLines={1}>{sp.variant.name}</Text>
-      <View style={styles.priceRow}>
-        <Text style={styles.price}>{"\u20B9"}{shown.toFixed(0)}</Text>
-        {struck != null && <Text style={styles.mrp}>{"\u20B9"}{struck.toFixed(0)}</Text>}
-      </View>
-      {discountLabel && <Text style={styles.discount}>{discountLabel}</Text>}
-      {unitPrice && <Text style={styles.unitPrice}>{unitPrice}</Text>}
-      {plusHint != null && <Text style={styles.plusHint}>{"\u20B9"}{plusHint.toFixed(0)} with Plus</Text>}
-      {isOutOfStock && <Text style={styles.outOfStock}>Out of stock</Text>}
+      <VariantControl sp={sp} qty={qty} isOutOfStock={isOutOfStock} {...controlProps} />
     </View>
   );
 }
@@ -171,9 +168,9 @@ export function VariantBottomSheet({
         </TouchableOpacity>
         <Text style={styles.title} numberOfLines={2}>{variants[0].product.name}</Text>
         {mode === "subscribe" && <Text style={styles.subtitle}>Choose a size to subscribe</Text>}
-        <ScrollView bounces={false} contentContainerStyle={styles.grid}>
+        <ScrollView bounces={false} contentContainerStyle={styles.list}>
           {variants.map((sp) => (
-            <VariantCard
+            <VariantRow
               key={sp.id} sp={sp} qty={cartQuantityMap.get(sp.id) ?? 0} isMember={isMember} mode={mode}
               onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} onSelect={onSelect}
             />
@@ -200,23 +197,24 @@ const styles = StyleSheet.create({
   },
   title: { fontFamily: fonts.extrabold, fontSize: 18, lineHeight: 23, color: colors.text, marginBottom: 14 },
   subtitle: { fontFamily: fonts.medium, fontSize: 13, color: colors.textSecondary, marginTop: -10, marginBottom: 14 },
-  grid: { flexDirection: "row", flexWrap: "wrap", gap: CARD_GAP, paddingBottom: 4 },
-  card: {
-    width: CARD_WIDTH, borderRadius: 14, borderWidth: 1, borderColor: "#eef2f6", padding: 8, paddingBottom: 12,
+  list: { gap: 10, paddingBottom: 4 },
+  row: {
+    flexDirection: "row", alignItems: "center", gap: 12,
+    borderRadius: 14, borderWidth: 1, borderColor: "#eef2f6", padding: 6, paddingRight: 12,
   },
-  cardDisabled: { opacity: 0.6 },
-  tile: {
-    width: TILE, height: TILE, borderRadius: 10, backgroundColor: "#f8fafc",
-    padding: 8, alignItems: "center", justifyContent: "center", overflow: "hidden",
+  rowDisabled: { opacity: 0.6 },
+  thumb: {
+    width: THUMB, height: THUMB, borderRadius: 12, backgroundColor: "#f8fafc",
+    padding: 3, alignItems: "center", justifyContent: "center", overflow: "hidden",
   },
   // Multiply blends white product-photo backgrounds into the tile, as on the product cards
-  tileImage: { width: "100%", height: "100%", mixBlendMode: "multiply" },
-  controlWrap: { position: "absolute", top: 8 + TILE - CONTROL_HEIGHT / 2, right: 12 },
-  variantName: { fontFamily: fonts.semibold, fontSize: 14, color: colors.text, marginTop: CONTROL_HEIGHT / 2 + 6 },
-  priceRow: { flexDirection: "row", alignItems: "baseline", gap: 6, marginTop: 4 },
-  price: { fontFamily: fonts.extrabold, fontSize: 18, color: colors.text },
+  thumbImage: { width: "100%", height: "100%", mixBlendMode: "multiply" },
+  info: { flex: 1 },
+  variantName: { fontFamily: fonts.semibold, fontSize: 15, color: colors.text },
+  priceRow: { flexDirection: "row", alignItems: "baseline", flexWrap: "wrap", columnGap: 6, marginTop: 2 },
+  price: { fontFamily: fonts.extrabold, fontSize: 17, color: colors.text },
   mrp: { fontFamily: fonts.medium, fontSize: 12, color: "#94a3b8", textDecorationLine: "line-through" },
-  discount: { fontFamily: fonts.bold, fontSize: 11.5, color: "#2563eb", marginTop: 1 },
+  discount: { fontFamily: fonts.bold, fontSize: 11.5, color: "#2563eb" },
   unitPrice: { fontFamily: fonts.medium, fontSize: 12, color: colors.textSecondary, marginTop: 2 },
   plusHint: { fontFamily: fonts.bold, fontSize: 11.5, color: "#b45309", marginTop: 2 },
   outOfStock: { fontFamily: fonts.semibold, fontSize: 12, color: colors.textSecondary, marginTop: 2 },
