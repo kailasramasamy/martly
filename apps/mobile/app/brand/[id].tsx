@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ActivityIndicator, Animated, Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions, type FlatList, type TextInput } from "react-native";
 import { useLocalSearchParams } from "expo-router";
-import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../../lib/api";
 import { useStore } from "../../lib/store-context";
+import { useLightStatusBar } from "../../lib/use-light-status-bar";
 import { useLanguage } from "../../lib/language-context";
 import { ProductActionsProvider } from "../../lib/product-actions";
 import { brandHomeBlocks, groupBrandProducts, searchBrandListings, type BrandCategory } from "../../lib/brand-store";
@@ -238,6 +238,10 @@ function BrandBody({ brand, listings, categories, loading, storeName, query, tab
     return <GridView products={results} header={header} listKey={`search:${query}`} scroll={scroll} />;
   }
   const category = categories.find((c) => c.id === tab);
+  // A home that would be one lone rail (a few products across categories) reads better as a grid
+  if (!category && brandHomeBlocks(categories).flatMap((b) => b.rails).length === 1) {
+    return <GridView products={listings} header={null} listKey="all" scroll={scroll} />;
+  }
   if (!category) return <AllView categories={categories} brandName={name} color={base} onOpen={onTab} scroll={scroll} />;
   const products = category.sections.filter((s) => !sub || s.id === sub).flatMap((s) => s.products);
   return <GridView products={products} header={null} listKey={category.id} scroll={scroll} />;
@@ -247,12 +251,15 @@ export default function BrandStoreScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { selectedStore } = useStore();
   const { brand, listings, categories, loading } = useBrandStore(id, selectedStore?.id);
-  const [tab, setTab] = useState<string | null>(null);
+  useLightStatusBar();
+  const [chosenTab, setTab] = useState<string | null>(null);
   const [sub, setSub] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
 
   const searching = query.trim().length > 0;
+  // With one category the "All" overview adds nothing: open its grid, with the subcategory chips pinned
+  const tab = chosenTab ?? (categories.length === 1 ? categories[0].id : null);
   const { scrollY, binding, onHeight, scrollToTop } = useCollapsingScroll(`${tab}:${searching ? query : ""}`, `${tab}:${sub}`);
   const inputRef = useRef<TextInput>(null);
 
@@ -263,7 +270,6 @@ export default function BrandStoreScreen() {
 
   return (
     <ProductActionsProvider store={selectedStore ?? null}>
-      <StatusBar style="light" />
       <View style={styles.container}>
         <BrandBody
           brand={brand} listings={listings} categories={categories} loading={loading} storeName={selectedStore?.name}

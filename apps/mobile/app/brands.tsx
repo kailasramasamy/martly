@@ -1,14 +1,15 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { FlatList, Pressable, RefreshControl, StyleSheet, Text, View, useWindowDimensions } from "react-native";
-import { StatusBar } from "expo-status-bar";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import type { BrandDirectory } from "@martly/shared/types";
 import { api } from "../lib/api";
 import { useStore } from "../lib/store-context";
+import { useLightStatusBar } from "../lib/use-light-status-bar";
 import { buildDirectoryItems, TILES_PER_ROW, type DirectoryItem } from "../lib/brand-directory";
 import { BrandTile } from "../components/brands/BrandTile";
-import { BrandsHero, FeaturedBrands } from "../components/brands/BrandsHero";
+import { BrandsHero, FeaturedBrands, HERO_TOP } from "../components/brands/BrandsHero";
 import { CategoryHeader, DepartmentBand, DepartmentChips, ViewAllButton } from "../components/brands/DirectoryRows";
 import { SkeletonBox } from "../components/SkeletonLoader";
 import { colors, fonts } from "../constants/theme";
@@ -89,8 +90,10 @@ function DirectoryRow({ item, tileWidth, header, chips, empty, onOpenBrand, onEx
 
 export default function BrandsScreen() {
   const { selectedStore } = useStore();
+  useLightStatusBar();
   const { directory, loading, failed, load } = useBrandDirectory(selectedStore?.id);
   const { width } = useWindowDimensions();
+  const insets = useSafeAreaInsets();
   const tileWidth = (width - 32 - TILE_GAP * (TILES_PER_ROW - 1)) / TILES_PER_ROW;
   const [query, setQuery] = useState("");
   const [departmentId, setDepartmentId] = useState<string | null>(null);
@@ -129,7 +132,8 @@ export default function BrandsScreen() {
 
   return (
     <View style={styles.screen}>
-      <StatusBar style="light" />
+      {/* The list starts below the status bar so the sticky chips pin under it, not behind it */}
+      <View style={{ height: insets.top, backgroundColor: HERO_TOP }} />
       <FlatList
         ref={listRef}
         data={items}

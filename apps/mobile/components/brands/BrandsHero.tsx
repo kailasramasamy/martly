@@ -1,6 +1,5 @@
 import { FlatList, Image, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import type { DirectoryBrand } from "@martly/shared/types";
@@ -15,11 +14,13 @@ interface HeroProps {
   onQuery: (q: string) => void;
 }
 
-// Teal masthead with an amber accent rule, a giant "BRANDS" watermark and the search field
+export const HERO_TOP = "#0f766e";
+
+// Teal masthead with an amber accent rule, a giant "BRANDS" watermark and the search field.
+// It starts below the status bar; the screen fills the status bar with HERO_TOP so the two read as one
 export function BrandsHero({ storeName, brandCount, categoryCount, query, onQuery }: HeroProps) {
-  const insets = useSafeAreaInsets();
   return (
-    <LinearGradient colors={["#0f766e", "#134e4a"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={[styles.hero, { paddingTop: insets.top + 6 }]}>
+    <LinearGradient colors={[HERO_TOP, "#134e4a"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.hero}>
       <View style={[styles.orb, styles.orbLarge]} />
       <View style={[styles.orb, styles.orbAmber]} />
       <Text style={styles.watermark} numberOfLines={1}>BRANDS</Text>
@@ -105,7 +106,7 @@ export function FeaturedBrands({ brands }: { brands: DirectoryBrand[] }) {
 const CARD_WIDTH = 232;
 
 const styles = StyleSheet.create({
-  hero: { paddingHorizontal: 16, paddingBottom: 18, overflow: "hidden" },
+  hero: { paddingHorizontal: 16, paddingTop: 6, paddingBottom: 18, overflow: "hidden" },
   orb: { position: "absolute", borderRadius: 999, backgroundColor: "rgba(255,255,255,0.08)" },
   orbLarge: { width: 280, height: 280, top: -110, right: -90 },
   orbAmber: { width: 140, height: 140, bottom: -70, left: -40, backgroundColor: "rgba(251,191,36,0.16)" },
