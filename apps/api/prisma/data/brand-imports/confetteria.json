@@ -1,0 +1,22 @@
+{
+  "brand": "Confetteria (Ferrero)",
+  "manufacturer": "Ferrero India Pvt Ltd",
+  "feed": "confetteria-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/confetteria-ferrero/logo-b5044f8a.png",
+  "themeColor": "#D7192D",
+  "themeColorSecondary": "#B08D3C",
+  "namePrefix": "Confetteria ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Raffaello$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    }
+  ]
+}

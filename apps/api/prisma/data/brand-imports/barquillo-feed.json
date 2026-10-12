@@ -1,0 +1,634 @@
+[
+ {
+  "title": "Cocoa Melts Hazelnut Chocolate",
+  "handle": "cocoa-melts-hazelnut-chocolate",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "266",
+    "compare_at_price": "266",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330521_1-barquillo-hazelnut-milk-chocolate.jpg"
+    },
+    "barcode": "6297001172575"
+   },
+   {
+    "title": "200g",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330525_1-barquillo-hazelnut-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330521_1-barquillo-hazelnut-milk-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330521-2_1-barquillo-hazelnut-milk-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330521-3_1-barquillo-hazelnut-milk-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330525_1-barquillo-hazelnut-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "A Barquillo is much more than a chocolate, it is a blissful experience meant to be treasured. Every Barquillo is made using the best quality cocoa and the finest ingredients at a state-of-the-art facility in Dubai. Unwrap it, break its delicate wafer shell and let the smooth filling release a burst of flavour and irresistible taste. Celebrate special bonds an occasions the perfect way with Barquillo.",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Pistachio Chocolate",
+  "handle": "cocoa-melts-pistachio-chocolate",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "311",
+    "compare_at_price": "311",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330522_1-barquillo-pistachio-chocolate.jpg"
+    },
+    "barcode": "6297001172568"
+   },
+   {
+    "title": "200g",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330526_1-barquillo-pistachio-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330522_1-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330522-2_1-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330522-3_1-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330526_1-barquillo-pistachio-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Barquillo is much more than a chocolate, it is a blissful experience meant to be treasured. Every Barquillo is made using the best quality cocoa and the finest ingredients at a state-of-the-art facility in Dubai. Unwrap it, break its delicate wafer shell and let the smooth filling release a burst of flavour and irresistible taste. Celebrate special bonds and occasions the perfect way with Barquillo.\nStep into a world of royal pistachios encased in irresistible cocoa. It’s the perfect way to show love to your special ones or impress a potential client. Prepare for the indulgence of a lifetime.",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Red Velvet Cheesecake Chocolate",
+  "handle": "cocoa-melts-red-velvet-cheesecake-chocolate",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "311",
+    "compare_at_price": "311",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330523_2-barquillo-red-velvet-cheesecake-chocolate.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "622",
+    "compare_at_price": "622",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330527_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330523_2-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330523-2_2-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330523-3_2-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330523-4_2-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330523-5_2-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330523-6_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330527_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the decadent fusion of rich cocoa, velvety red velvet, and creamy cheesecake with Barquillo's premium chocolate creation. Crafted with the finest quality ingredients and chocolate, this delectable treat offers a unique and memorable flavour experience. Boasting a smooth, indulgent taste and a luscious cheesecake-inspired filling, it's the perfect mid-day indulgence or dessert snack. The combination of classic red velvet and creamy textures creates a harmonious flavour-texture balance, while the crisp exterior adds an enticing crunch. Free from added colours and preservatives, this premium chocolate is the ideal gift for any occasion, allowing you to bring dessert dreams to life.",
+   "ingredients": "Cocoa Mass, Cocoa Butter, Cocoa Powder, Whole Cow’S Milk Powder, Sugar, Hydrogenated Vegetable Fat (Palm), Emulsifier (Soya Lecithin – E322), Red Velvet Cake, Cheesecake Filling, Wheat Flour, Salt, Vanillin.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Calories": "524 kcal",
+    "Protein": "6.5 g",
+    "Carbohydrates": "61.5 g",
+    "Total Sugars": "48 g",
+    "Added Sugars": "43.5 g",
+    "Total Fat": "27.9 g",
+    "Saturated Fats": "16.4 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "32.1 mg",
+    "Sodium": "197.8 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place at 18°C\n*After opening, store in an airtight container",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Roasted Almond Chocolate",
+  "handle": "cocoa-melts-roasted-almond-chocolate",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "266",
+    "compare_at_price": "266",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330520_2-barquillo-roasted-almond-chocolate.jpg"
+    },
+    "barcode": "6297001172551"
+   },
+   {
+    "title": "200g",
+    "price": "533",
+    "compare_at_price": "533",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330524_1-barquillo-roasted-almond-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330520_2-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330520-2_2-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330520-3_2-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330520-4_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330520-5_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330520-6_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330524_1-barquillo-roasted-almond-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Barquillo Roasted Almond Premium Chocolate blends rich, smooth chocolate with the satisfying crunch of roasted almonds, wrapped in a delicate wafer shell. This indulgent treat offers a delightful balance of texture and flavour, perfect for moments of sweet enjoyment. Ideal for gifting or personal indulgence, it delivers a refined chocolate experience with a satisfying nutty finish.",
+   "ingredients": "Cocoa Mass, Cocoa Butter, Cocoa Powder, Whole Cow’S Milk Powder, Sugar, Hydrogenated Vegetable Fat (Palm), Emulsifier (Soya Lecithin – E322), Almond, Wheat Flour, Salt, Vanillin.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Calories": "594 kcal",
+    "Protein": "10.6 g",
+    "Carbohydrates": "50.9 g",
+    "Total Sugars": "33.8 g",
+    "Added Sugars": "33.8 g",
+    "Total Fat": "34.7 g",
+    "Saturated Fats": "16.4 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "8.2 mg",
+    "Sodium": "126.4 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place between 18°C to 24°C\n*After opening, store in an airtight container",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Hazelnut Chocolate Tin",
+  "handle": "cocoa-melts-hazelnut-chocolate-tin",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "622",
+    "compare_at_price": "622",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330529_2-barquillo-hazelnut-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330529_2-barquillo-hazelnut-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330529-2_2-barquillo-hazelnut-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330529-3_2-barquillo-hazelnut-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330529-4_2-barquillo-hazelnut-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330529-5_2-barquillo-hazelnut-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330529-6_2-barquillo-hazelnut-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330529-7_2-barquillo-hazelnut-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the rich, cocoa-infused delight of Barquillo Hazelnut Premium Chocolate. Crafted with pure cocoa and free from artificial colours or preservatives, this chocolate bar offers a truly satisfying and guilt-free indulgence. Delighting the senses with its smooth texture and well-balanced flavour, the chocolate is perfectly complemented by the nutty crunch of premium hazelnuts. Savour it as an anytime snack or a sweet afternoon companion, and experience the multi-layered wafer crunch that gives way to a creamy, hazelnut-infused filling. Compact and easy to carry, this chocolate bar is the perfect treat to satisfy your cravings, whether you're gifting it or enjoying it for yourself.",
+   "ingredients": "Cocoa Mass, Cocoa Butter, Cocoa Powder, Whole Cow'S Milk Powder, Sugar, Hydrogenated Vegetable Fat (Palm), Emulsifier: Soya Lecithin (E322), Hazelnut, Wheat Flour, Salt, Vanilin",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Calories": "550 kcal",
+    "Protein": "9.57 g",
+    "Carbohydrates": "55.8 g",
+    "Total Sugars": "39.6 g",
+    "Added Sugars": "36.1 g",
+    "Total Fat": "32 g",
+    "Saturated Fats": "18.8 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "10.4 mg",
+    "Sodium": "59.3 mg"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place at 18 °C\n*After opening, store in an airtight container",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Pistachio Chocolate Tin",
+  "handle": "cocoa-melts-pistachio-chocolate-tin",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "711",
+    "compare_at_price": "711",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330530_2-barquillo-pistachio-chocolate.jpg"
+    },
+    "barcode": "6297001172599"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330530_2-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330530-2_2-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330530-3_2-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330530-4_2-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330530-5_2-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330530-6_2-barquillo-pistachio-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330530-7_2-barquillo-pistachio-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the rich, cocoa-infused experience of Barquillo Pistachio Premium Chocolate. Crafted without added colours or preservatives, this decadent treat offers a smooth, pista-flavoured delight. Made with cocoa, each bite delivers a creamy, crunchy blend that is perfect for gifting or savouring with a cup of coffee or tea. Elevate your senses with the elegant, premium pistachio wafer rolls, featuring crispy layers and a delightful pistachio cream filling. Barquillo's Pistachio Premium Chocolate is a true indulgence, perfect for those seeking a luxurious, guilt-free cocoa experience.",
+   "ingredients": "Cocoa Mass, Cocoa Butter, Cocoa Powder, Whole Cow'S Milk Powder, Sugar, Hydrogenated Vegetable Fat (Palm), Emulsifier: Soya Lecithin (E322), Pistachio, Wheat Flour, Salt, Vanilin",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Calories": "552 kcal",
+    "Protein": "10.9g",
+    "Carbohydrates": "53.1g",
+    "Total Sugars": "40.4g",
+    "Added Sugars": "32.9g",
+    "Total Fat": "32.9g",
+    "Saturated Fats": "19.4g",
+    "Trans Fats": "0g",
+    "Cholesterol": "9.7mg",
+    "Sodium": "50.7mg"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place at 18 °C\n*After opening, store in an airtight container",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Red Velvet Cheesecake Chocolate Tin",
+  "handle": "cocoa-melts-red-velvet-cheesecake-chocolate-tin",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330531_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330531_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330531-2_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330531-3_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330531-4_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330531-5_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330531-6_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330531-7_1-barquillo-red-velvet-cheesecake-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Bite into the velvety delight of Red Velvet cheesecake enveloped by delicious chocolate. Convert your treasured times with loved ones into unforgettable moments. Surprise your tastebuds, every single time.",
+   "ingredients": "Cocoa Mass, Cocoa Butter, Cocoa Powder, Whole Cow's Milk Powder, Sugar, Hydrogenated Vegetable Fat (Palm), Emulsifier: Soya Lecithin (E322), Red Velvet Cake, Cheesecake Filling, Wheat Flour, Salt, Vanilin",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "20g",
+    "Calories": "524 kcal",
+    "Protein": "6.5 g",
+    "Carbohydrates": "61.6 g",
+    "Total Sugars": "48 g",
+    "Added Sugars": "43.5 g",
+    "Total Fat": "27.9 g",
+    "Saturated Fats": "16.4 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "32.1 mg",
+    "Sodium": "197.8 mg"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place at 18 °C\n*After opening, store in an airtight container",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Roasted Almond Chocolate Tin",
+  "handle": "cocoa-melts-roasted-almond-chocolate-tin",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330528_1-barquillo-roasted-almond-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330528_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330528-2_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330528-3_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330528-4_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330528-5_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330528-6_1-barquillo-roasted-almond-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330528-7_1-barquillo-roasted-almond-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Barquillo is much more than chocolate, it is a blissful experience meant to be treasured. Every Barquillo is made using the best quality cocoa and the finest ingredients at a state-of-the-art facility in Dubai. Unwrap it, break its delicate wafer shell and let the smooth filling release a burst of flavour and irresistible taste. Celebrate special bonds and occasions the perfect way with Barquillo. Lose yourself in the world of roasted Almonds wrapped in premium chocolate. Now, every moment will be an extra sweet memory for life. It's time to go nuts over this delightful treat.",
+   "ingredients": "Cocoa Mass, Cocoa Butter, Cocoa Powder, Whole Cow's Milk Powder, Sugar, Hydrogenated Vegetable Fat (Palm), Emulsifier: Soya Lecithin (E322), Almond, Wheat Flour, Salt, Vanilin.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "20g",
+    "Calories": "594 kcal",
+    "Protein": "10.6 g",
+    "Carbohydrates": "50.9 g",
+    "Total Sugars": "33.8 g",
+    "Added Sugars": "33.8 g",
+    "Total Fat": "34.7 g",
+    "Saturated Fats": "16.4 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "8.2 mg",
+    "Sodium": "126.4 mg"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place at 18 °C",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Assorted Chocolate Tin",
+  "handle": "cocoa-melts-assorted-chocolate-tin",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "711",
+    "compare_at_price": "711",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330532_1-barquillo-assorted-flavours-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330532_1-barquillo-assorted-flavours-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330532-2_1-barquillo-assorted-flavours-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330532-3_1-barquillo-assorted-flavours-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330532-4_1-barquillo-assorted-flavours-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330532-5_1-barquillo-assorted-flavours-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330532-6_1-barquillo-assorted-flavours-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330532-7_1-barquillo-assorted-flavours-chocolate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Revel in a tantalising symphony of flavours with Cocoa Melts' scrumptious Assorted Barquillo. Each premium chocolate pack is lovingly filled with a medley of rich and velvety Hazelnut, Roasted Almond, and Pistachio. Satisfy your cravings and let your taste buds relish its pure bliss.",
+   "ingredients": "Cocoa Mass, Cocoa Butter, Cocoa Powder, Whole Cow's Milk Powder, Sugar, Hydrogenated Vegetable Fat (Palm), Emulsifier: Soya Lecithin (E322), Hazelnut, Roasted Almond, Pistachio, Wheat Flour, Salt, Vanilin",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "20g",
+    "Calories": "594 kcal",
+    "Protein": "10.6 g",
+    "Carbohydrates": "50.9 g",
+    "Total Sugars": "33.8 g",
+    "Added Sugars": "33.8 g",
+    "Total Fat": "34.7 g",
+    "Saturated Fats": "15.4 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "8.2 mg",
+    "Sodium": "125.4 mg"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place at 18 °C",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Cocoa Melts Assorted Gift Box",
+  "handle": "cocoa-melts-assorted-gift-box",
+  "vendor": "Barquillo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "622",
+    "compare_at_price": "622",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330533_2-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+    }
+   },
+   {
+    "title": "320g",
+    "price": "1299",
+    "compare_at_price": "1299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330534_1-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330533_2-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330533-2_2-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330533-3_2-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330533-4_2-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330533-5_1-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330533-6_1-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330533-7_1-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40330534_1-barquillo-chocolate-gift-pack-3-assorted-flavours.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the delightful Barquillo Cocoa Melts, a premium chocolate treat that blends smooth, rich cocoa cream with the satisfying crunch of wafer rolls. These melt-in-your-mouth delights offer an irresistible combination of flavours, from the classic cocoa to the decadent notes of pistachio, hazelnut, and roasted almond. Perfectly packaged for gifting, these Cocoa Melts are ideal for birthdays, anniversaries, festive celebrations, or simply to share a touch of luxury with loved ones. Conveniently Sized for on-the-go snacking or as a delicious accompaniment to your tea or coffee, these crunchy wafer bites provide a satisfying texture and a smooth, cocoa-infused experience in every bite.",
+   "ingredients": "Cocoa Mass, Cocoa Butter, Cocoa Powder, Whole Cow'S Milk Powder, Sugar, Hydrogenated Vegetable Fat (Palm), Emulsifier: Soya Lecithin (E322), Almond/Hazelnut/Pistachio, Wheat Flour, Salt, Vanilin",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Calories": "594 kcal",
+    "Protein": "10.6 g",
+    "Carbohydrates": "50.9 g",
+    "Total Sugars": "33.8 g",
+    "Added Sugars": "33.8 g",
+    "Total Fat": "34.7 g",
+    "Saturated Fats": "16.4 g",
+    "Trans Fats": "0 g",
+    "Cholesterol": "8.2 mg",
+    "Sodium": "126.4 mg"
+   },
+   "storageInstructions": "*Store cool and dry place\n*After opening, store in an air-tight container",
+   "manufacturerName": "Cocoa Melts Chocolates LLC Ras Al Khor Industrial 3",
+   "fssaiLicense": "11523998000667",
+   "countryOfOrigin": "UAE"
+  }
+ }
+]

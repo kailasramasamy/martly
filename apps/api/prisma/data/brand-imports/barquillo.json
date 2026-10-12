@@ -1,0 +1,94 @@
+{
+  "brand": "Barquillo",
+  "manufacturer": "Barquillo",
+  "feed": "barquillo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/barquillo/logo-9c469555.png",
+  "themeColor": "#C9A04C",
+  "themeColorSecondary": "#2B1B17",
+  "namePrefix": "Barquillo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cocoa\\ Melts\\ Hazelnut\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Pistachio\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Red\\ Velvet\\ Cheesecake\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Roasted\\ Almond\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Hazelnut\\ Chocolate\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Pistachio\\ Chocolate\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Red\\ Velvet\\ Cheesecake\\ Chocolate\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Roasted\\ Almond\\ Chocolate\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Assorted\\ Chocolate\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Melts\\ Assorted\\ Gift\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}

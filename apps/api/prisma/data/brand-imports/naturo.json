@@ -1,0 +1,110 @@
+{
+  "brand": "Naturo",
+  "manufacturer": "Naturo",
+  "feed": "naturo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/naturo/logo-44e73e7d.png",
+  "themeColor": "#1E9A48",
+  "themeColorSecondary": "#6D6E71",
+  "namePrefix": "Naturo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Berry\\ Fusion\\ Fruit\\ Bars$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Tropical\\ Fun\\ Fruit\\ Bars$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Mango\\ Fruit\\ Bars$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Litchi\\ Fruit\\ Bars$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Blast\\ Sweet\\ Chilli\\ Fruit\\ Bars$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Guava\\ Blast\\ Sweet\\ Chilli\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Imli\\ Blast\\ Sweet\\ Chilli\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Mango\\ Blast\\ Sweet\\ Chilli\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Mango\\ \\&\\ Orange\\ Mini\\ Fruit\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Mango\\ Mini\\ Fruit\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Orange\\ Mini\\ Fruit\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Mango\\ Delight\\ Fruit\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}
