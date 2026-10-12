@@ -1,0 +1,32 @@
+{
+  "brand": "Limca (Coca-Cola)",
+  "manufacturer": "Hindustan Coca-Cola Beverages Pvt. Ltd.",
+  "feed": "limca-feed.json",
+  "themeColor": "#6CB33F",
+  "themeColorSecondary": "#D71920",
+  "namePrefix": "Limca ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Limca Lime 'n' Lemoni Sparkling Drink": "Lime & Lemoni Soft Drink"
+  },
+  "rules": [
+    {
+      "match": "^Lime\\ \\&\\ Lemoni\\ Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Lemon & Lime"
+      ]
+    },
+    {
+      "match": "^Sportz\\ Lemon\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    }
+  ],
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/limca/logo-03637e0b.png"
+}

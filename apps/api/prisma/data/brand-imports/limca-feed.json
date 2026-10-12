@@ -1,0 +1,158 @@
+[
+ {
+  "title": "Lime & Lemoni Soft Drink",
+  "handle": "lime-lemoni-soft-drink",
+  "vendor": "Limca (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251012_11-limca-soft-drink-lime-lemon-flavoured.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/412266_1-limca-lemon.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265906_9-limca-soft-drink-lime-lemon-flavoured.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/271050_14-limca-soft-drink-lemon-lime-flavoured.jpg"
+    }
+   },
+   {
+    "title": "2.5L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346377_1-limca-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362493_1-limca-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/90436_3-limca-lime-n-limca.jpg"
+    }
+   },
+   {
+    "title": "330ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370476_3-limca-lime-lemon-flavoured-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251012_11-limca-soft-drink-lime-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251012-2_8-limca-soft-drink-lime-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251012-3_7-limca-soft-drink-lime-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251012-4_7-limca-soft-drink-lime-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251012-5_5-limca-soft-drink-lime-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251012-6_4-limca-soft-drink-lime-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251012-7_2-limca-soft-drink-lime-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251012-8_2-limca-soft-drink-lime-lemon-flavoured.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Sportz Lemon Drink",
+  "handle": "sportz-lemon-drink",
+  "vendor": "Limca (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276538_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276537_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276538_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276538-2_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276538-3_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276538-4_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276538-5_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276537_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
