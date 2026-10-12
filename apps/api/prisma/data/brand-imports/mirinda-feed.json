@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831_5-mirinda-soft-drink-orange.jpg"
-    }
+    },
+    "barcode": "8902080204052"
    },
    {
     "title": "250ml",
@@ -96,7 +97,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831-8_3-mirinda-soft-drink-orange.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh your day with Mirinda Soft Drink, a sparkling burst of citrus delight. Each sip delivers a vibrant mix of tangy orange and zesty flavour that dances on your taste buds. Perfectly effervescent and irresistibly sweet, Mirinda is your go-to choice for a fizzy escape. Cheers to pure refreshment!",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "154ml",
+    "Energy": "55kcal",
+    "Total Carbohydrate": "13.8g",
+    "of which Sugars": "13.8g",
+    "Total fat": "0g",
+    "Saturated fat": "0g",
+    "Trans fat": "0g",
+    "Protein": "0g",
+    "Sodium": "14mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Orange Soft Drink Can",
@@ -112,7 +130,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/292395_8-mirinda-soft-drink-orange.jpg"
-    }
+    },
+    "barcode": "8902080205028"
    },
    {
     "title": "300ml",
@@ -147,6 +166,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327061_3-mirinda-soft-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Unleash your playful side with Mirinda Soft Drink Can, the perfect blend of bold orange flavour and refreshing fizzy bubbles. Crafted with no artificial flavours, a sip of Mirinda will switch on the Pagalpanti in you, encouraging you to be carefree, spontaneous and playful. Enjoy the great orangey taste and sparkling sensation that will transport you to a world of vibrant, bold flavour. With its convenient can packaging, Mirinda is the perfect companion for any occasion, whether you're looking to quench your thirst or add a touch of fun to your day. Embrace your inner child and let Mirinda's bold taste and refreshing fizz bring out your most playful, carefree self.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators (330, 331), Stabilisers (1450, 445), Preservative (211), Permitted Synthetic Food Colour (110), Natural Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Energy": "55kcal",
+    "Total Carbohydrate": "13.8g",
+    "Sugars": "13.8g",
+    "Total fat": "0g",
+    "Saturated fat": "0g",
+    "Trans fat": "0g",
+    "Protein": "0g",
+    "Sodium": "14mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  }
 ]
