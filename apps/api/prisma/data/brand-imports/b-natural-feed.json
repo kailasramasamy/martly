@@ -1,0 +1,1526 @@
+[
+ {
+  "title": "Apple Juice",
+  "handle": "apple-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842_7-b-natural-apple-awe-juice.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40041694_17-b-natural-juice-apple-awe.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842_7-b-natural-apple-awe-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842-2_7-b-natural-apple-awe-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842-3_7-b-natural-apple-awe-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842-4_6-b-natural-apple-awe-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842-5_6-b-natural-apple-awe-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842-6_7-b-natural-apple-awe-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842-7_2-b-natural-apple-awe-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842-8_2-b-natural-apple-awe-juice.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Apple Beverage 33% Less Sugar",
+  "handle": "apple-beverage-33-less-sugar",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008-2_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008-3_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008-4_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008-5_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008-6_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008-7_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008-8_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Orange Beverage 33% Less Sugar",
+  "handle": "orange-beverage-33-less-sugar",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009-2_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009-3_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009-4_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009-5_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009-6_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009-7_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009-8_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Guava Juice",
+  "handle": "guava-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003841_9-b-natural-guava-juice.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "146",
+    "compare_at_price": "146",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076751_19-b-natural-juice-guava-gush.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003841_9-b-natural-guava-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003841-2_7-b-natural-guava-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003841-3_6-b-natural-guava-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003841-4_5-b-natural-guava-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003841-5_5-b-natural-guava-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003841-6_6-b-natural-guava-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076751_19-b-natural-juice-guava-gush.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Litchi Juice",
+  "handle": "litchi-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003843_9-b-natural-litchi-juice.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "152",
+    "compare_at_price": "152",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076754_16-b-natural-juice-litchi-luscious.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003843_9-b-natural-litchi-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003843-2_7-b-natural-litchi-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003843-3_7-b-natural-litchi-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003843-4_6-b-natural-litchi-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003843-5_6-b-natural-litchi-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003843-6_7-b-natural-litchi-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076754_16-b-natural-juice-litchi-luscious.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mango Juice",
+  "handle": "mango-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003844_8-b-natural-mango-juice.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076748_9-b-natural-juice-mango-magic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003844_8-b-natural-mango-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003844-2_8-b-natural-mango-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003844-3_8-b-natural-mango-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003844-4_7-b-natural-mango-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003844-5_7-b-natural-mango-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003844-6_6-b-natural-mango-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003844-7_1-b-natural-mango-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076748_9-b-natural-juice-mango-magic.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mixed Fruit Juice",
+  "handle": "mixed-fruit-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120603_2-b-natural-mixed-fruit-merry.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "152",
+    "compare_at_price": "152",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076755_21-b-natural-juice-mixed-fruit-merry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120603_2-b-natural-mixed-fruit-merry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120603-2_1-b-natural-mixed-fruit-merry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120603-3_1-b-natural-mixed-fruit-merry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120603-4_1-b-natural-mixed-fruit-merry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120603-5_1-b-natural-mixed-fruit-merry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120603-6_1-b-natural-mixed-fruit-merry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076755_21-b-natural-juice-mixed-fruit-merry.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Orange Juice",
+  "handle": "orange-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845_8-b-natural-orange-juice.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100496033_19-b-natural-juice-orange-oomph.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845_8-b-natural-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845-2_7-b-natural-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845-3_6-b-natural-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845-4_5-b-natural-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845-5_5-b-natural-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845-6_6-b-natural-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845-7_1-b-natural-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100496033_19-b-natural-juice-orange-oomph.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pineapple Juice",
+  "handle": "pineapple-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750_9-b-natural-juice-pineapple-poise.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750_9-b-natural-juice-pineapple-poise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750-2_6-b-natural-juice-pineapple-poise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750-3_5-b-natural-juice-pineapple-poise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750-4_5-b-natural-juice-pineapple-poise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750-5_3-b-natural-juice-pineapple-poise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750-6_1-b-natural-juice-pineapple-poise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750-7_1-b-natural-juice-pineapple-poise.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750-8_1-b-natural-juice-pineapple-poise.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pomegranate Juice",
+  "handle": "pomegranate-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758_20-b-natural-juice-pomegranate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758_20-b-natural-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758-2_17-b-natural-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758-3_16-b-natural-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758-4_16-b-natural-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758-5_13-b-natural-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758-6_1-b-natural-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758-7_1-b-natural-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758-8_1-b-natural-juice-pomegranate.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Chatpata Jamun Juice with Pink Salt",
+  "handle": "chatpata-jamun-juice-with-pink-salt",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324986_1-b-natural-chatpata-jamun-fruit-based-beverage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324986_1-b-natural-chatpata-jamun-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324986-2_1-b-natural-chatpata-jamun-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324986-3_1-b-natural-chatpata-jamun-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324986-4_1-b-natural-chatpata-jamun-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324986-5_1-b-natural-chatpata-jamun-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324986-6_1-b-natural-chatpata-jamun-fruit-based-beverage.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Chilli Guava Juice",
+  "handle": "chilli-guava-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324988_1-b-natural-guava-chilli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324988_1-b-natural-guava-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324988-2_1-b-natural-guava-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324988-3_1-b-natural-guava-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324988-4_1-b-natural-guava-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324988-5_1-b-natural-guava-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324988-6_1-b-natural-guava-chilli.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mixed Fruit Chaat Juice",
+  "handle": "mixed-fruit-chaat-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324987_1-b-natural-mixed-fruit-chaat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324987_1-b-natural-mixed-fruit-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324987-2_1-b-natural-mixed-fruit-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324987-3_1-b-natural-mixed-fruit-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324987-4_1-b-natural-mixed-fruit-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324987-5_1-b-natural-mixed-fruit-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324987-6_1-b-natural-mixed-fruit-chaat.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Masala Jamun Juice",
+  "handle": "masala-jamun-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039_7-b-natural-masala-jamun-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039_7-b-natural-masala-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039-2_7-b-natural-masala-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039-3_6-b-natural-masala-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039-4_6-b-natural-masala-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039-5_3-b-natural-masala-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039-6_2-b-natural-masala-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039-7_2-b-natural-masala-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039-8_2-b-natural-masala-jamun-juice.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cranberry Cooler",
+  "handle": "cranberry-cooler",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034_9-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034_9-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034-2_9-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034-3_9-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034-4_8-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034-5_8-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034-6_8-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034-7_8-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034-8_8-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mixed Fruit+ Juice with Green Coffee Extract",
+  "handle": "mixed-fruit-juice-with-green-coffee-extract",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293_3-b-natural-mixed-fruit-plus.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293_3-b-natural-mixed-fruit-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293-2_3-b-natural-mixed-fruit-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293-3_3-b-natural-mixed-fruit-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293-4_3-b-natural-mixed-fruit-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293-5_3-b-natural-mixed-fruit-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293-6_3-b-natural-mixed-fruit-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293-7_3-b-natural-mixed-fruit-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293-8_2-b-natural-mixed-fruit-plus.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Orange+ Juice with Green Coffee Extract",
+  "handle": "orange-juice-with-green-coffee-extract",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294_2-b-natural-orange-plus.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294_2-b-natural-orange-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294-2_2-b-natural-orange-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294-3_2-b-natural-orange-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294-4_2-b-natural-orange-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294-5_2-b-natural-orange-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294-6_2-b-natural-orange-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294-7_2-b-natural-orange-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294-8_1-b-natural-orange-plus.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pomegranate+ Juice with Green Coffee Extract",
+  "handle": "pomegranate-juice-with-green-coffee-extract",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437_3-b-natural-pomegranate-plus.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437_3-b-natural-pomegranate-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437-2_3-b-natural-pomegranate-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437-3_3-b-natural-pomegranate-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437-4_3-b-natural-pomegranate-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437-5_3-b-natural-pomegranate-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437-6_3-b-natural-pomegranate-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437-7_3-b-natural-pomegranate-plus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437-8_2-b-natural-pomegranate-plus.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Dakshin Pink Guava Juice",
+  "handle": "dakshin-pink-guava-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173_4-b-natural-dakshin-pink-guava.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173_4-b-natural-dakshin-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173-2_4-b-natural-dakshin-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173-3_4-b-natural-dakshin-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173-4_4-b-natural-dakshin-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173-5_4-b-natural-dakshin-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173-6_3-b-natural-dakshin-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173-7_2-b-natural-dakshin-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173-8_2-b-natural-dakshin-pink-guava.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Himalayan Mixed Fruit Juice",
+  "handle": "himalayan-mixed-fruit-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169_4-b-natural-himalayan-mixed-fruit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169_4-b-natural-himalayan-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169-2_7-b-natural-himalayan-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169-3_7-b-natural-himalayan-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169-4_7-b-natural-himalayan-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169-5_7-b-natural-himalayan-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169-6_6-b-natural-himalayan-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169-7_1-b-natural-himalayan-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169-8_1-b-natural-himalayan-mixed-fruit.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Nagpur Orange Juice",
+  "handle": "nagpur-orange-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40214617_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40214616_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214617_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214617-2_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214617-3_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214617-4_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214617-5_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214616_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Ratnagiri Alphonso Mango Juice",
+  "handle": "ratnagiri-alphonso-mango-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172_3-b-natural-ratnagiri-alphonso.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165171_3-b-natural-ratnagiri-alphonso.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172_3-b-natural-ratnagiri-alphonso.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172-2_3-b-natural-ratnagiri-alphonso.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172-3_3-b-natural-ratnagiri-alphonso.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172-4_3-b-natural-ratnagiri-alphonso.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172-5_3-b-natural-ratnagiri-alphonso.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172-6_2-b-natural-ratnagiri-alphonso.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172-7_1-b-natural-ratnagiri-alphonso.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172-8_1-b-natural-ratnagiri-alphonso.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Fruits N Bits Guava Juice",
+  "handle": "fruits-n-bits-guava-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924_3-b-natural-fruits-n-bits-guava.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924_3-b-natural-fruits-n-bits-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924-2_2-b-natural-fruits-n-bits-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924-3_2-b-natural-fruits-n-bits-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924-4_2-b-natural-fruits-n-bits-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924-5_2-b-natural-fruits-n-bits-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924-6_2-b-natural-fruits-n-bits-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924-7_2-b-natural-fruits-n-bits-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924-8_2-b-natural-fruits-n-bits-guava.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Fruits N Bits Litchi Juice",
+  "handle": "fruits-n-bits-litchi-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923_3-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923_3-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923-2_2-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923-3_2-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923-4_2-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923-5_2-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923-6_2-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923-7_2-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923-8_2-b-natural-fruits-n-bits-litchi-with-apple.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Fruits N Bits Mixed Fruit Juice",
+  "handle": "fruits-n-bits-mixed-fruit-juice",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925_3-b-natural-fruits-n-bits-mixed-fruit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925_3-b-natural-fruits-n-bits-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925-2_2-b-natural-fruits-n-bits-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925-3_2-b-natural-fruits-n-bits-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925-4_2-b-natural-fruits-n-bits-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925-5_2-b-natural-fruits-n-bits-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925-6_2-b-natural-fruits-n-bits-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925-7_2-b-natural-fruits-n-bits-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925-8_2-b-natural-fruits-n-bits-mixed-fruit.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cranberry Juice No Added Sugar",
+  "handle": "cranberry-juice-no-added-sugar",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290_8-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290_8-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290-2_8-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290-3_8-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290-4_8-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290-5_8-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290-6_8-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290-7_8-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290-8_4-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Guava Juice No Added Sugar",
+  "handle": "guava-juice-no-added-sugar",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "148",
+    "compare_at_price": "148",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886_6-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886_6-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886-2_6-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886-3_6-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886-4_6-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886-5_6-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886-6_6-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886-7_6-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886-8_5-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mixed Fruit Juice No Added Sugar",
+  "handle": "mixed-fruit-juice-no-added-sugar",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "152",
+    "compare_at_price": "152",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885_6-b-natural-mixed-fruit-beverage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885_6-b-natural-mixed-fruit-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885-2_6-b-natural-mixed-fruit-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885-3_6-b-natural-mixed-fruit-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885-4_6-b-natural-mixed-fruit-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885-5_6-b-natural-mixed-fruit-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885-6_6-b-natural-mixed-fruit-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885-7_6-b-natural-mixed-fruit-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885-8_5-b-natural-mixed-fruit-beverage.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pomegranate Juice No Added Sugar",
+  "handle": "pomegranate-juice-no-added-sugar",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289_8-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289_8-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289-2_8-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289-3_8-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289-4_8-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289-5_8-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289-6_8-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289-7_8-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289-8_4-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Coconut Water with Litchi",
+  "handle": "coconut-water-with-litchi",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "158",
+    "compare_at_price": "158",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887_9-b-natural-coconut-water-with-litchi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887_9-b-natural-coconut-water-with-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887-2_9-b-natural-coconut-water-with-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887-3_9-b-natural-coconut-water-with-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887-4_9-b-natural-coconut-water-with-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887-5_9-b-natural-coconut-water-with-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887-6_9-b-natural-coconut-water-with-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887-7_9-b-natural-coconut-water-with-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887-8_9-b-natural-coconut-water-with-litchi.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Tender Coconut Water",
+  "handle": "tender-coconut-water",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "138",
+    "compare_at_price": "138",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921_9-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921_9-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921-2_8-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921-3_8-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921-4_8-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921-5_8-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921-6_8-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921-7_8-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921-8_8-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Select Tender Coconut Water",
+  "handle": "select-tender-coconut-water",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920_6-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920_6-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920-2_5-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920-3_5-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920-4_5-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920-5_5-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920-6_5-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920-7_5-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920-8_5-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Coconut Cola",
+  "handle": "coconut-cola",
+  "vendor": "B Natural (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950_1-b-natural-coconut-cola-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950_1-b-natural-coconut-cola-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950-2_1-b-natural-coconut-cola-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950-3_1-b-natural-coconut-cola-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950-4_1-b-natural-coconut-cola-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950-5_1-b-natural-coconut-cola-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950-6_1-b-natural-coconut-cola-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950-7_1-b-natural-coconut-cola-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950-8_1-b-natural-coconut-cola-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

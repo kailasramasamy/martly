@@ -1,0 +1,280 @@
+{
+  "brand": "B Natural (ITC)",
+  "manufacturer": "ITC Ltd.",
+  "feed": "b-natural-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/b-natural/logo-79e10dbf.png",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#F58220",
+  "namePrefix": "B Natural ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "B Natural 100% Mixed Fruit Juice": "Mixed Fruit Juice"
+  },
+  "rules": [
+    {
+      "match": "^Apple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Apple\\ Beverage\\ 33%\\ Less\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Orange\\ Beverage\\ 33%\\ Less\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Litchi\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Mango\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Pomegranate\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Chatpata\\ Jamun\\ Juice\\ with\\ Pink\\ Salt$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Chaat\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Masala\\ Jamun\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Cranberry\\ Cooler$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\+\\ Juice\\ with\\ Green\\ Coffee\\ Extract$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Orange\\+\\ Juice\\ with\\ Green\\ Coffee\\ Extract$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Pomegranate\\+\\ Juice\\ with\\ Green\\ Coffee\\ Extract$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Dakshin\\ Pink\\ Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Nagpur\\ Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Ratnagiri\\ Alphonso\\ Mango\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruits\\ N\\ Bits\\ Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruits\\ N\\ Bits\\ Litchi\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruits\\ N\\ Bits\\ Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Cranberry\\ Juice\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Guava\\ Juice\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Juice\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Pomegranate\\ Juice\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Water\\ with\\ Litchi$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Tender\\ Coconut\\ Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Select\\ Tender\\ Coconut\\ Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Cola$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Cola"
+      ]
+    }
+  ]
+}
