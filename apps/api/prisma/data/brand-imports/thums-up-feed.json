@@ -1,0 +1,197 @@
+[
+ {
+  "title": "Soft Drink",
+  "handle": "soft-drink",
+  "vendor": "Thums Up (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251014_13-thums-up-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "1.25L",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265707_10-thums-up-thums-up-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "1.75L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40032982_11-thums-up-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251039_16-thums-up-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222670_2-thums-up-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "2.5L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346375_1-thums-up-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/288927_11-thums-up-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "330ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370474_2-thums-up-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251014_13-thums-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251014-2_11-thums-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251014-3_10-thums-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251014-4_8-thums-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251014-5_6-thums-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251014-6_5-thums-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251014-7_3-thums-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251014-8_3-thums-up-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "XForce Zero Sugar Soft Drink",
+  "handle": "xforce-zero-sugar-soft-drink",
+  "vendor": "Thums Up (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153_1-thums-up-xforce.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339421_1-thums-up-xforce-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153_1-thums-up-xforce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153-2_1-thums-up-xforce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153-3_1-thums-up-xforce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153-4_1-thums-up-xforce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153-5_1-thums-up-xforce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153-6_1-thums-up-xforce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153-7_1-thums-up-xforce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153-8_1-thums-up-xforce.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Charged Berry Bolt",
+  "handle": "charged-berry-bolt",
+  "vendor": "Thums Up (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272433_1-thums-up-charged-soft-drink-berry-bolt-2x-caffeine.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272433_1-thums-up-charged-soft-drink-berry-bolt-2x-caffeine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272433-2_1-thums-up-charged-soft-drink-berry-bolt-2x-caffeine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272433-3_1-thums-up-charged-soft-drink-berry-bolt-2x-caffeine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272433-4_1-thums-up-charged-soft-drink-berry-bolt-2x-caffeine.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

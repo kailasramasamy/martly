@@ -1,0 +1,4 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Soft Drink,Thums Up Soft Drink,update,Beverages > Soft Drinks & Carbonated > Cola,750ml ₹40 | 1.25L ₹70 | 1.75L ₹90 | 2L ₹99 | 2.25L ₹90 | 2.5L ₹110 | 300ml ₹40 | 330ml ₹50,750ml ₹40 | 1.25L ₹70 | 1.75L ₹90 | 2L ₹99 | 2.25L ₹90 | 2.5L ₹110 | 300ml ₹40 | 330ml ₹50,8,750ml MRP ₹40 < 330ml MRP ₹50; 2.25L MRP ₹90 < 2L MRP ₹99
+XForce Zero Sugar Soft Drink,Thums Up XForce Zero Sugar Soft Drink,create,Beverages > Soft Drinks & Carbonated > Diet & Zero Sugar,750ml ₹40 | 300ml ₹40,750ml ₹40 | 300ml ₹40,8,
+Charged Berry Bolt,Thums Up Charged Berry Bolt,create,Beverages > Health & Energy Drinks > Glucose & Energy Drinks,250ml ₹15,250ml ₹15,4,
