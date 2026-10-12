@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265884_12-slice-thickest-mango-drink.jpg"
-    }
+    },
+    "barcode": "8902080404094"
    },
    {
     "title": "1.2L",
@@ -69,7 +70,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189384_6-slice-thickest-mango-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate mango experience with Tropicana Slice, a refreshing and delicious mango drink that celebrates the beloved fruit of India. Crafted with Tropicana's fruit expertise, Slice offers a rich mango flavour that will have you falling in love with every sip. Containing no added preservatives and made with steviol glycoside, this refreshing beverage allows you to enjoy the taste of mangoes all year round. Slice captures the succulent, sweet essence of this cherished fruit, transporting you to the heart of India's mango fascination. Treat your taste buds to the ultimate mango delight with Tropicana Slice.",
+   "ingredients": "Water, Sugar (12.9%), Concentrated Mango Pulp Alphonso Mango Pulp, Acidity Regulator (330), Stabilizer (440), Preservative (202), Antioxidant(300).",
+   "storageInstructions": "*Store in clean, dry and hygienic conditions away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gold Mango Fruit Drink",
@@ -85,7 +93,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671_1-slice-gold-mango-fruit-drink.jpg"
-    }
+    },
+    "barcode": "8902080100217"
    },
    {
     "title": "1.2L",
@@ -132,6 +141,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374672_1-slice-gold-mango-fruit-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, velvety taste of Slice Gold Mango Fruit Drink, crafted with ripe, luscious mangoes for an intensely satisfying experience. Every sip delivers thick, fruity goodness and a smooth tropical flavour that leaves you wanting more. Enjoy it chilled with meals, during celebrations or whenever you crave a refreshing burst of irresistible mango indulgence throughout the day, anytime.",
+   "ingredients": "Water, Sugar, *Concentrated Mango Pulp (6.5%) and *Alphonso\nMango Pulp (1.1%), Acidity Regulator (330), Stabilisers (466, 440), Flavour\n(Natural and Nature Identical Flavouring Substances), Sweetener (960a),\nPreservative (202), Colour (110).",
+   "nutritionalInfo": {
+    "Energy": "52 kcal",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Carbohydrate": "13 g",
+    "Total Sugars": "12.6 g",
+    "Added Sugars": "10.1 g",
+    "Sodium": "12 mg",
+    "Potassium": "22 mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  }
 ]
