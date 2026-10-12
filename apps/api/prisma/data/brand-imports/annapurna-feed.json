@@ -1,0 +1,52 @@
+[
+ {
+  "title": "Farm Fresh Chakki Whole Wheat Atta",
+  "handle": "farm-fresh-chakki-whole-wheat-atta",
+  "vendor": "Annapurna",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "355",
+    "compare_at_price": "355",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/170695_6-annapurna-atta-farm-fresh-whole-wheat.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019059_4-annapurna-farm-fresh-whole-wheat-atta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170695_6-annapurna-atta-farm-fresh-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170695-2_1-annapurna-atta-farm-fresh-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170695-3_1-annapurna-atta-farm-fresh-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170695-4_1-annapurna-atta-farm-fresh-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170695-5_1-annapurna-atta-farm-fresh-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170695-6_1-annapurna-atta-farm-fresh-whole-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019059_4-annapurna-farm-fresh-whole-wheat-atta.jpg"
+   }
+  ]
+ }
+]

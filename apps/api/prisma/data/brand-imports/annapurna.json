@@ -1,0 +1,22 @@
+{
+  "brand": "Annapurna",
+  "manufacturer": "Uma Exports Limited",
+  "feed": "annapurna-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/annapurna/logo-87146b2f.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#F5A800",
+  "namePrefix": "Annapurna ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Farm\\ Fresh\\ Chakki\\ Whole\\ Wheat\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    }
+  ]
+}
