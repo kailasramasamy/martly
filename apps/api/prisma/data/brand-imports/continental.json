@@ -1,0 +1,225 @@
+{
+  "brand": "Continental",
+  "manufacturer": "CCL Products (India) Ltd.",
+  "feed": "continental-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/continental/logo-8b21e732.png",
+  "themeColor": "#F26B34",
+  "themeColorSecondary": "#3E2723",
+  "namePrefix": "Continental ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Continental Pure Instant Coffee": "Speciale Pure Instant Coffee",
+    "Continental XTRA Instant Coffee": "Xtra South Blend Instant Coffee"
+  },
+  "rules": [
+    {
+      "match": "^Speciale\\ Pure\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Speciale\\ Pure\\ Instant\\ Coffee\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Speciale\\ Instant\\ Coffee\\ Sachets$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Xtra\\ South\\ Blend\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Xtra\\ South\\ Blend\\ Instant\\ Coffee\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Xtra\\ Strong\\ South\\ Blend\\ Instant\\ Coffee\\ Sachets$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Super\\ Strong\\ Blend\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Classic\\ Blend\\ Strong\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Freeze\\ Dried\\ Pure\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Decaffeinated\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Speciale\\ Hazelnut\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Speciale\\ Caramel\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Speciale\\ Mocha\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Speciale\\ Vanilla\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Speciale\\ Flavoured\\ Instant\\ Coffee\\ Assorted\\ Box$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^THIS\\ 3\\-in\\-1\\ Cappuccino\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^THIS\\ 3\\-in\\-1\\ Caramel\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^THIS\\ 3\\-in\\-1\\ Creamy\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^THIS\\ 3\\-in\\-1\\ Hazelnut\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^THIS\\ 3\\-in\\-1\\ Mocha\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Malgudi\\ 60\\ Degree\\ Fresh\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Malgudi\\ 80\\ Degree\\ Fresh\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Malgudi\\ 53\\ Degree\\ Fresh\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Malgudi\\ Filter\\ Coffee\\ Liquid\\ Decoction$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Malgudi\\ South\\ Filter\\ Coffee\\ Decoction$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^THIS\\ Sweetened\\ Lemon\\ Iced\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    }
+  ]
+}
