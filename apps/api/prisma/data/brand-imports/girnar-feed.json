@@ -42,7 +42,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120788-8_1-girnar-instant-tea-bag-premix-with-masala.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Masala Chai literally means mixed-spice tea, which is a beverage from the Indian subcontinent. Girnar Instant Tea Premix with Masala is made with natural tea extract and a mixture of aromatic Indian spices. This pepper and ginger-based blend gives a special twist to the taste of tea, and along with Cardamom, the queen of spices, the tea can take the chill out on wintry days. Enjoy this refreshing drink with the warmth of spices.",
+   "ingredients": "Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%) & Masala (2.2%) (Cloves, Cardamom, Ginger, Black Pepper, Cinnamon & Nutmeg).",
+   "nutritionalInfo": {
+    "Per Serving": "14 g",
+    "Energy": "58.96 kcal",
+    "Protein": "1.55 g",
+    "Carbohydrates": "10.76 g",
+    "Total Sugar": "9.42 g",
+    "Added Sugar": "7 g",
+    "Total Fat": "1.08 g",
+    "Saturated Fat": "0.8 g",
+    "Trans Fat": "0.01 g",
+    "Sodium": "13.56 mg"
+   },
+   "usageInstructions": "Empty the contents of the sachet into a cup\nAdd 100 ml of hot water (at 100 degrees) into the cup\nStir well and enjoy",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Ginger Chai Premix",
@@ -87,7 +107,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120792-8_1-girnar-instant-tea-premix-with-ginger.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Girnar brings you, Instant Tea Premix with Ginger, which is a blend of the finest quality instant tea with the warming effects of ginger. It is a fabulous combination and a perfect drink to start your day with. So, add a bit of it to your daily diet and pep up your day.",
+   "ingredients": "Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%) & Ginger (1.1%)",
+   "nutritionalInfo": {
+    "Per Serving": "14 g",
+    "Energy": "58.9 kcal",
+    "Protein": "1.48 g",
+    "Carbohydrates": "10.95 g",
+    "Total Sugar": "7.16 g",
+    "Added Sugar": "7 g",
+    "Total Fat": "1.02 g",
+    "Saturated Fat": "0.98 g",
+    "Trans Fat": "0 g",
+    "Sodium": "15.01 mg"
+   },
+   "usageInstructions": "Empty the contents of the sachet into a cup\nAdd 100 ml of hot water (at 100 degrees) into the cup\nStir well and enjoy",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Cardamom Chai Premix",
@@ -132,7 +172,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120790-8_1-girnar-instant-tea-premix-with-cardamom.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the exotic and delicate flavours of Girnar's Instant Tea with Cardamom. This premium tea blend combines the finest quality tea leaves with the rich, aromatic essence of fresh cardamom - the 'Queen of Spices'. Elevate your tea experience and delight your taste buds with this unique and flavourful infusion. Crafted with care, Girnar's tea offers a special twist of flavour that is a must-try for every tea lover. Enjoy the convenience of easy preparation with the 10 single-serve sachets, perfect for any time of the day. Suitable for vegetarians, this tea is a true sensory delight that will leave you craving more.",
+   "ingredients": "Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%) & Cardamom (1.1%)",
+   "nutritionalInfo": {
+    "Per Serving": "14 g",
+    "Energy": "58.64 kcal",
+    "Protein": "1.43 g",
+    "Carbohydrates": "11.00 g",
+    "Total Sugar": "6.40 g",
+    "Added Sugar": "6.00 g",
+    "Total Fat": "0.99 g",
+    "Saturated Fat": "0.92 g",
+    "Trans Fat": "0.01 g",
+    "Sodium": "12.92 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Express Chai Premix",
@@ -177,7 +237,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120794-8_1-girnar-instant-tea-premix-express.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Express Chai is the perfect choice for anyone looking for a hot, refreshing, and invigorating beverage. Made entirely from the finest quality instant tea, this natural drink offers both flavour and convenience. Simply add it to your daily routine to enjoy a delightful cup that energises your day, uplifts your mood, and keeps you refreshed anytime.",
+   "ingredients": "Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%)",
+   "nutritionalInfo": {
+    "Per Serving": "14 g",
+    "Energy": "58.66 kcal",
+    "Protein": "1.4 g",
+    "Carbohydrates": "10.90 g",
+    "Total Sugar": "6.9 g",
+    "Added Sugar": "7.00 g",
+    "Total Fat": "1.0 g",
+    "Saturated Fat": "0.75 g",
+    "Trans Fat": "0.0 g",
+    "Sodium": "13.90 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Lemongrass Chai Premix",
@@ -222,7 +302,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120796-8_1-girnar-instant-tea-premix-with-lemongrass.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "This tea has a native of Southeast Asian herb, lemongrass, which has a delicate Meyer lemon taste, and is blended with a slight hint of sweet ginger, and a very aromatic floral fragrance. It is smooth and fragrant when steeped in a simple cup of tea, and has a delicate taste, with a clean finish.",
+   "ingredients": "Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%) & Lemongrass (1.1%)",
+   "nutritionalInfo": {
+    "Energy": "58.95 kcal",
+    "Protein": "1.52 g",
+    "Carbohydrates": "10.85 g",
+    "Total Sugar": "8.88 g",
+    "Added Sugar": "7.00 g",
+    "Total Fat": "1.05 g",
+    "Saturated Fat": "0.70 g",
+    "Trans Fat": "0.01 g",
+    "Sodium": "13.84 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Saffron Chai Premix",
@@ -267,7 +366,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120795-8_1-girnar-instant-tea-bag-premix-with-saffron.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "We bring you an exotic blend of instant tea extract and Saffron, which is also termed as the golden spice, which hails from the land of Arabia, making it one of the most expensive spices in the world. Saffron lightens the complexion, gives your skin a nice glow and warmth to the body. Hope you enjoy this ease of instant tea with the golden touch of saffron.",
+   "ingredients": "Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (6%) & Saffron (2.2%)",
+   "nutritionalInfo": {
+    "Per Serving": "14 g",
+    "Energy": "59.09 kcal",
+    "Protein": "1.53 g",
+    "Carbohydrates": "10.87 g",
+    "Total Sugar": "8.18 g",
+    "Added Sugar": "7.00 g",
+    "Total Fat": "1.06 g",
+    "Saturated Fat": "0.70 g",
+    "Trans Fat": "0.0 g",
+    "Sodium": "13.11 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Chai Premix Variety Pack",
@@ -283,7 +402,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40120799_3-girnar-instant-tea-bag-premix-variety-pack.jpg"
-    }
+    },
+    "barcode": "8901037034681"
    }
   ],
   "images": [
@@ -312,7 +432,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120799-8_1-girnar-instant-tea-bag-premix-variety-pack.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Girnar Instant Tea Premix Variety Pack consists of different sachets of Cardamom, Ginger, Masala, Lemongrass and Saffron Instant Premix Tea in one pack. This pack is perfect to gift a tea lover or to have it stored at home so it can be relished when your mood calls for it.",
+   "ingredients": "Instant Tea Premix with Saffron\nIngredients: Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (6%), Saffron (2.2%)\nContains: Milk\nPrepared Product Ingredients: Partly Skimmed Milk, Sugar, Tea & Saffron\nInstant Tea Premix with Cardamom\nIngredients: Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%), Cardamom (1.1%)\nContains: Milk\nPrepared Product Ingredients: Partly Skimmed Milk, Sugar, Tea & Cardamom\nInstant Tea Premix with Masala\nIngredients: Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%), Masala (2.2%)\nMasala includes: Cloves, Cardamom, Ginger, Black Pepper, Cinnamon, Nutmeg\nContains: Milk\nPrepared Product Ingredients: Partly Skimmed Milk, Sugar, Tea, Cloves, Cardamom, Ginger, Black Pepper, Cinnamon & Nutmeg\nInstant Tea Premix with Ginger\nIngredients: Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%), Ginger (1.1%)\nContains: Milk\nPrepared Product Ingredients: Partly Skimmed Milk, Sugar, Tea & Ginger\nInstant Tea Premix with Lemongrass\nIngredients: Dairy Whitener (Partly Skimmed Milk Powder & Sugar), Sugar, Tea Extract (7%), Lemongrass (1.1%)\nContains: Milk\nPrepared Product Ingredients: Partly Skimmed Milk, Sugar, Tea & Lemongrass",
+   "nutritionalInfo": {
+    "Energy": "58.95 kcal",
+    "Protein": "1.52 g",
+    "Carbohydrates": "10.85 g",
+    "Total Sugar": "8.88 g",
+    "Added Sugar": "7.00 g",
+    "Total Fat": "1.05 g",
+    "Saturated Fat": "0.70 g",
+    "Trans Fat": "0.01 g",
+    "Sodium": "13.84 mg"
+   },
+   "usageInstructions": "Empty the contents of the sachet into a cup\nAdd 100 ml of hot water (at 100 degrees) into the cup\nStir well and enjoy",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lemon Iced Tea Premix",
@@ -328,7 +467,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40370959_2-girnar-lemon-flavour-instant-iced-tea-premix.jpg"
-    }
+    },
+    "barcode": "8901037255147"
    }
   ],
   "images": [
@@ -357,7 +497,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370959-8_2-girnar-lemon-flavour-instant-iced-tea-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Lemon Flavour Instant Iced Tea Premix is a refreshing beverage mix that combines the classic taste of tea with a zesty lemon flavour. Easy to prepare, it creates a cool and flavourful drink in moments. Perfect for enjoying chilled, it offers a balanced blend of tea and citrus notes, making it an ideal choice for everyday refreshment and social occasions.",
+   "ingredients": "Sugar, Tea Extract, Nature-Identical Lemon Flavour, Acidity Regulator (INS 330) and Vitamin C (INS 300).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "71.6",
+    "Protein (g)": "0.1",
+    "Carbohydrates (g)": "17.8",
+    "Total Sugars (g)": "16.8",
+    "Added Sugars (g)": "16.0",
+    "Total Fat (g)": "0.1",
+    "Sodium (mg)": "17.3",
+    "Vitamin C (mg)": "22.5"
+   },
+   "manufacturerName": "Girnar Complex",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peach Iced Tea Premix",
@@ -373,7 +530,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40370960_2-girnar-peach-flavour-instant-iced-tea-premix.jpg"
-    }
+    },
+    "barcode": "8901037255253"
    }
   ],
   "images": [
@@ -402,7 +560,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370960-8_2-girnar-peach-flavour-instant-iced-tea-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Peach Flavour Instant Iced Tea Premix combines the smooth taste of tea with the sweet and fruity flavour of peach. Quick and easy to prepare, it creates a refreshing chilled beverage with a pleasant balance of tea and fruit notes. Ideal for everyday enjoyment, it offers a delicious and convenient way to savour a café-style iced tea experience at home or on the go.",
+   "ingredients": "Sugar, Tea Extract, Nature-Identical Peach Flavour, Acidity Regulators (INS 330, INS 296) and Vitamin C (INS 300).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "71.8",
+    "Protein (g)": "0.0",
+    "Carbohydrates (g)": "17.9",
+    "Total Sugars (g)": "16.4",
+    "Added Sugars (g)": "16.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "0.9",
+    "Vitamin C (mg)": "22.5"
+   },
+   "manufacturerName": "Girnar Complex",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masaledar Limbooz Instant Premix",
@@ -418,7 +593,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40370961_2-girnar-masaledar-limbooz-instant-premix.jpg"
-    }
+    },
+    "barcode": "8901037011392"
    }
   ],
   "images": [
@@ -446,7 +622,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370961-8_2-girnar-masaledar-limbooz-instant-premix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Masaledar Limbooz Instant Premix is a tangy and flavourful beverage mix inspired by the classic taste of spiced lemonade. Combining zesty lemon notes with a blend of aromatic spices, it delivers a refreshing and distinctive drinking experience. Easy to prepare and enjoy chilled, it is a convenient choice for those who enjoy traditional Indian-inspired flavours with a modern twist.",
+   "ingredients": "Sugar, Lime Juice Powder (8%), Maltodextrin, Rock Salt, Black Salt, Acidity Regulator (INS 330), Cumin (0.8%), Black Pepper (0.3%), Ginger (0.3%), Lemongrass (0.1%) and Vitamin C (INS 300).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "57.2",
+    "Protein (g)": "0.0",
+    "Carbohydrates (g)": "16.7",
+    "Total Sugars (g)": "14.2",
+    "Added Sugars (g)": "10.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "498.0",
+    "Vitamin C (mg)": "22.5"
+   },
+   "manufacturerName": "Girnar Complex",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Coffee Instant Premix",
@@ -462,7 +655,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40370962_2-girnar-cold-coffee-instant-premix.jpg"
-    }
+    },
+    "barcode": "8901037034780"
    }
   ],
   "images": [
@@ -485,7 +679,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370962-6_2-girnar-cold-coffee-instant-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Cold Coffee Instant Premix offers a rich and smooth coffee experience in a convenient, easy-to-prepare format. Crafted to deliver the classic taste of chilled coffee, it blends creamy and aromatic notes for a refreshing beverage. Simply mix as directed and serve cold for a delicious café-style drink, perfect for enjoying at home, at work or while on the go.",
+   "ingredients": "Dairy Whitener (Partly Skimmed Milk And Sugar), Sugar, Coffee With Chicory (8%)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "92.52",
+    "Protein (g)": "2.37",
+    "Carbohydrates (g)": "17.09",
+    "Total Sugars (g)": "10.74",
+    "Added Sugars (g)": "5.50",
+    "Total Fat (g)": "1.63",
+    "Saturated Fatty Acids (g)": "1.20",
+    "Trans Fatty Acids (g)": "0.02",
+    "Sodium (mg)": "21.05"
+   },
+   "manufacturerName": "Girnar Complex",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Detox Desi Kahwa Green Tea Bags",
@@ -539,7 +751,18 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120804-8_2-girnar-green-tea-detoxdesi-kahwa.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the age-old art of tea-making with Girnar's Desi Kahwa Green Tea. Infused with a harmonious blend of black pepper, tulsi, ginger, clove, and cardamom, this tea not only tantalises the senses but also offers a wealth of health benefits. Revitalise your day with a refreshing twist, as the lemon and honey notes in this revitalising green tea cleanse and uplift your spirits. Sourced from the lushest green slopes, this invigorating brew is packed with antioxidants and natural detoxifying properties, making it the perfect choice for a healthy lifestyle. Enjoy a soothing cup of this unique and flavourful tea to nourish your body and soothe your soul.",
+   "ingredients": "Green Tea, Spices & Herbs (35%) (Black Pepper, Ginger, Tulsi, Asafoetida, Clove, Cardamom, Cinnamon & Nutmeg), Rock Salt (12%) & Acidity Regulator (INS 330).",
+   "nutritionalInfo": {
+    "Typical value per Serving": "2.5 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ginger Green Tea Bags",
@@ -575,7 +798,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120808_1-girnar-green-tea-bag-ginger.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Ginger, a home remedy accepted around the world is combined with the goodness of Green Tea to offer the tea connoisseur a cup full of health. The warmth of the spicy ginger flavour will revitalize and reincarnate the body in an earthly fashion. The tingling sensation of ginger has been delicately balanced by the softness of pure green tea.",
+   "ingredients": "Green Tea, Ginger Natural Flavour & Ginger.",
+   "usageInstructions": "Insert the tea bag into an empty cup. Add 100-120ml of hot water (90 degrees). Infuse tea bag for 2-3 minutes. Remove the tea bag. If desired, add honey/sugar to taste."
+  }
  },
  {
   "title": "Tulsi Green Tea Bags",
@@ -611,7 +839,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120817_3-girnar-green-tea-bag-tulsi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Take a sip of ancient wisdom with Girnar Green Tea with Tulsi. A harmonious blend of tulsi referred as, The Queen of Herbs, and green tea, which provides a sensational taste and blast of freshness in a cup. Tulsi's remarkable life-enhancing qualities, noted repeatedly in ancient Indian scriptures dating back 5000 years are nowhere for you to fully adore. Revitalise your soul after an arduous day.",
+   "ingredients": "Green Tea, Tulsi Natural Flavour, Ram Tulsi & Krishna Tulsi.",
+   "usageInstructions": "Insert the tea bag into an empty cup. Add 100-120ml of hot water (90 degrees). Infuse tea bag for 2-3 minutes. Remove the tea bag. If desired, add honey/sugar to taste."
+  }
  },
  {
   "title": "Lemon & Honey Green Tea Bags",
@@ -647,7 +880,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120813_3-girnar-green-tea-bag-lemon-honey.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Green tea made from the finest leaves plucked from the lush green slopes, tastefully fused with lemon and honey. The unique combo of gentle honey and lemon's citrus zest is likely to entice you right from the aroma. Mildly astringent green tea when fused with piquant lemon and balancing undertones of soothing honey, will strike the right chords of the sensory palate. Enjoy this without any time lag. All you need is a cup of steaming water and this green bag.",
+   "ingredients": "Green Tea, Lemon Natural Flavor & Honey Natural Flavour.",
+   "usageInstructions": "Insert the tea bag into an empty cup. Add 100-120 ml of hot water (90 degrees). Infuse tea bag for 2-3 minutes. Remove the tea bag. If desired, add honey/sugar to taste."
+  }
  },
  {
   "title": "Jasmine Green Tea Bags",
@@ -671,7 +909,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120810_1-girnar-green-tea-jasmine.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Girnar brings you Green Tea with jasmine. Jasmine flowers are picked in the misty twilight when they are the most fragrant and blended with green tea leaves. The cup has natural antioxidants to help strengthen your defence mechanism. The delicate, sweet scent of jasmine petals melds with the rich flavour of green tea evoking a centuries-old tradition. We bring you our Green Tea kissed with exotic flowers to continue these ancient traditions. A fragrant way to good health.",
+   "ingredients": "Green Tea, Jasmine Natural Flavour & Jasmine Flower",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. 401",
+   "usageInstructions": "Insert the tea bag into an empty cup. Add 100-120 ml of hot water (90 degrees). Infuse tea bag for 2-3 minutes. Remove the tea bag. If desired, add honey/sugar to taste."
+  }
  },
  {
   "title": "Mint Green Tea Bags",
@@ -695,7 +939,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120815_1-girnar-green-tea-mint.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wake up with the refreshing taste of Girnar Green Tea with Mint. The blend combines all-natural Green Tea with the kick of mint leaves, for a truly delicious beverage. The refreshing flavour of the cooling mint herb provides an invigourating taste for the delicate flavour of green tea, which is uniquely different and delicious. Your body will love you for it.",
+   "ingredients": "Green Tea, Mint Leaves.",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. 401",
+   "usageInstructions": "Insert the tea bag into an empty cup. Add 100-120ml of hot water (90 degrees). Infuse tea bag for 2-3 minutes. Remove the tea bag. If desired, add honey/sugar to taste."
+  }
  },
  {
   "title": "Jeera Lime Green Tea Bags",
@@ -711,7 +961,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40370963_2-girnar-jeera-lime-green-tea-bags.jpg"
-    }
+    },
+    "barcode": "8901037035121"
    }
   ],
   "images": [
@@ -740,7 +991,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370963-8_2-girnar-jeera-lime-green-tea-bags.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Jeera Lime Green Tea Bags bring together the delicate taste of green tea with the refreshing flavour of lime and the distinctive aroma of cumin. This carefully crafted blend offers a unique and flavourful tea experience with a balance of citrus and spice notes. Convenient tea bags make it easy to prepare and enjoy a refreshing cup at any time of the day.",
+   "ingredients": "Green Tea, Jeera (Cumin) (20%), Rock Salt (12%) and Lime (5%).\nContains Natural Added Flavour and Flavouring Substances.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "8.09",
+    "Protein (g)": "0.40",
+    "Carbohydrates (g)": "1.18",
+    "Total Sugars (g)": "0.10",
+    "Added Sugars (g)": "0.00",
+    "Total Fat (g)": "0.20",
+    "Sodium (mg)": "2.34"
+   },
+   "manufacturerName": "Girnar Complex",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Green Tea Gourmet Collection",
@@ -756,7 +1023,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40120822_1-girnar-green-tea-gourmet-collection.jpg"
-    }
+    },
+    "barcode": "8901037010937"
    }
   ],
   "images": [
@@ -764,7 +1032,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120822_1-girnar-green-tea-gourmet-collection.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Gourmet Collection consists of an assortment of Green Tea Bags, 4 of each, including - Lemon & Honey, Japan Classic, Cardamom, Earl Grey, Jasmine, Ginger, Detox, Tulsi and Mint Green Tea. The pack is perfect to gift a tea lover or to have it stored at home so it can be relished when your mood calls for it.",
+   "ingredients": "4 Tea Bags of each: Lemon & Honey, Japan Classic, Cardamom, Earl Grey, Jasmine, Ginger, Detox, Tulsi & Mint Green Tea.",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. 401",
+   "usageInstructions": "Insert the tea bag into an empty cup. Add 100-120ml of hot water (90 degrees). Infuse tea bag for 2-3 minutes. Remove the tea bag. If desired, add a dollop milk, honey/sugar to taste."
+  }
  },
  {
   "title": "Green Tea",
@@ -800,7 +1074,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120818_1-girnar-green-tea-loose.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Girnar brings you Green Tea with its delicate aroma and clear infusion that infuses you with a sense of well-being. The high antioxidant activity of green tea makes it beneficial by protecting the body from oxidative damage due to free radicals, thus making you feel rejuvenated.",
+   "ingredients": "Green Tea",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. 401"
+  }
  },
  {
   "title": "Royal Cup Premium CTC Tea",
@@ -854,6 +1133,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120802_4-girnar-royal-cup-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the rich, full-bodied taste of Girnar Premium CTC Leaf Royal Cup Tea. Expertly blended for a strong, refreshing brew, it delivers a robust aroma and satisfying flavour in every cup. Perfect for mornings or afternoon breaks, this premium tea brings warmth, energy and authentic daily enjoyment to every sip.",
+   "nutritionalInfo": {
+    "Per Serving": "2 g",
+    "Energy": "4 kcal",
+    "Protein": "0 g",
+    "Carbohydrates": "1 g",
+    "Total Sugars": "0 g",
+    "Added Sugar": "0 g",
+    "Total Fat": "0 g"
+   },
+   "usageInstructions": "Heat 120 ml of water to about 90 degrees Celsius\nAdd 1 tsp of tea to the water\nInfuse the tea leaves for 2-3 minutes\nDecant or strain the tea and serve\nIf desired, add milk and honey or sugar to taste",
+   "manufacturerName": "Girnar Food & Beverages Pvt. Ltd. Regd. Office",
+   "fssaiLicense": "10013022002437",
+   "countryOfOrigin": "India"
+  }
  }
 ]
