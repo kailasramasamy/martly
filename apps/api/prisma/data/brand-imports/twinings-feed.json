@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267231_5-twinings-earl-grey-tea.jpg"
-    }
+    },
+    "barcode": "8906177080109"
    },
    {
     "title": "100 pcs",
@@ -51,7 +52,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267231-8_4-twinings-earl-grey-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your tea-drinking experience with the luxurious Twinings English Classics Earl Grey Bergamot Black Tea. Infused with the citrusy essence of Bergamot, this tea boasts a unique and refreshing flavour that dates back 10 generations to when Richard Twining created an exotic blend for the then Prime Minister, Charles Grey. Sip and savour the richness and calmness of the finest tea gardens in the world, with every cup transporting you to a moment of relaxation and contemplation. Whether you're starting your day with a soothing cup or unwinding in the evening, this tea is the perfect companion, captivating your senses and leaving you yearning for more. Twinings is committed to improving the quality of life in the communities from where they source their products, ensuring you can indulge in this luxurious tea with the knowledge that it is ethically and responsibly sourced.",
+   "ingredients": "Tea (90.25%), Bergamot Flavour",
+   "nutritionalInfo": {
+    "Serving Size": "1 tea bag in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00",
+    "Trans Fat (g)": "0.00",
+    "Saturated Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Pvt Ltd",
+   "countryOfOrigin": "UK"
+  }
  },
  {
   "title": "English Breakfast Tea",
@@ -67,7 +85,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267234_5-twinings-tea-english-breakfast.jpg"
-    }
+    },
+    "barcode": "8906177080116"
    },
    {
     "title": "100 pcs",
@@ -105,7 +124,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267234-8_4-twinings-tea-english-breakfast.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Embark on a journey of flavour and tradition with Twinings Classics English Breakfast Regular Tea, a quintessential blend that captures the essence of a timeless British morning ritual. Crafted by Twinings, a brand synonymous with quality and expertise, this exquisite tea is a celebration of the rich heritage and superior craftsmanship that defines English tea culture. The refreshing and invigorating flavour makes this black tea into a delightful blend, with a skilful combination of the finest black teas sourced from select gardens across the world to create an invigorating cup. From the first sip, you can taste the richness in flavours and aroma, making this the perfect companion for a 'me-time' moment or to enjoy with friends and family. With its robust and satisfying character, this English Breakfast tea is a true delight for the senses.",
+   "ingredients": "Tea",
+   "nutritionalInfo": {
+    "Serving Size": "100ml",
+    "Energy (kcal)": "0.00 kcal",
+    "Protein (g)": "0.00 g",
+    "Carbohydrate (g)": "0.00 g",
+    "Sugar (g)": "0.00 g",
+    "Fat (g)": "0.00 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Twinings Pvt Ltd",
+   "countryOfOrigin": "UK"
+  }
  },
  {
   "title": "Lemon Tea",
@@ -121,7 +155,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267232_5-twinings-lemon-tea.jpg"
-    }
+    },
+    "barcode": "8906177080314"
    },
    {
     "title": "100 pcs",
@@ -159,7 +194,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267232-8_4-twinings-lemon-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The story goes that Admiral Lord Nelson gave his sailors tea with lemon when they were at sea. The fresh lemon kept them healthy and provided a taste of sunshine when skies were stormy. Twinings Lemon tea infuses the subtle citrus notes of lemon with black tea to create a beautifully polished blend that delivers an explosion of flavour that is known to last for well over a minute.",
+   "ingredients": "Tea (87.5%), Lemon Flavour, Lemon Peel",
+   "usageInstructions": "HOW TO MAKE THE PERFECT LEMON TEA: Add a tea-bag to a cup of boiling water for 3 minutes to allow the flavours to infuse. Add honey and sugar at your discretion.",
+   "manufacturerName": "Twinings Pvt Ltd",
+   "countryOfOrigin": "UK"
+  }
  },
  {
   "title": "Darjeeling Tea",
@@ -213,7 +255,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267222-8_4-twinings-origins-darjeeling-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Arabian Date Syrup offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Tea",
+   "nutritionalInfo": {
+    "Serving Size": "1 tea bag in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Twinings Pvt Ltd",
+   "countryOfOrigin": "UK"
+  }
  },
  {
   "title": "Assam Tea",
@@ -229,7 +286,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/200006_7-twinings-tea-bags-assam.jpg"
-    }
+    },
+    "barcode": "8906177080123"
    },
    {
     "title": "100 pcs",
@@ -267,7 +325,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/200006-8_4-twinings-tea-bags-assam.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Assam is one of the finest teas in the world. The deep-amber colour and bold taste ensure that it is the perfect companion throughout the day. There are only two places in the world where tea plants are native. Assam in northeast India is one of them. We've been sourcing tea from gardens on the flood plains of the Brahmaputra River for generations and that ensures you learn a thing or two, like which leaves give the best flavour. That's how we know our Assam contains only the best. Our Assam leaves aren't picked until June because that's when they start making the best-tasting tea. Off-peak is just not the same.",
+   "ingredients": "Classic Assam Tea",
+   "nutritionalInfo": {
+    "Serving Size": "1 Tea Bag In 100ml Of Hot Distilled Water",
+    "Energy (kcal)": "0.00 kcal",
+    "Protein (g)": "0.00 g",
+    "Carbohydrate (g)": "0.00 g",
+    "Sugar (g)": "0.00 g",
+    "Fat (g)": "0.00 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Pvt Ltd",
+   "countryOfOrigin": "UK"
+  }
  },
  {
   "title": "Pure Green Tea",
@@ -283,7 +356,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267237_8-twinings-green-tea.jpg"
-    }
+    },
+    "barcode": "8906177080086"
    },
    {
     "title": "100 pcs",
@@ -321,7 +395,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267237-8_4-twinings-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Turmeric Moringa Herbal Tea offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Pure Green Tea",
+   "nutritionalInfo": {
+    "Serving Size": "1 tea bag in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Twinings Pvt Ltd"
+  }
  },
  {
   "title": "Lemon Green Tea",
@@ -337,7 +425,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267263_6-twinings-green-tea-lemon.jpg"
-    }
+    },
+    "barcode": "8906177080130"
    },
    {
     "title": "100 pcs",
@@ -375,7 +464,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267263-8_4-twinings-green-tea-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the perfect balance of earthy green tea and zesty lemon flavour with Twinings Green Tea Lemon. Carefully sourced from the finest tea gardens around the world, this delicate and beautifully crafted blend offers a harmonious fusion of soothing green tea goodness and bright, citrusy notes. Infused with a touch of deliciously sweet lemon, this sunny and vibrant green tea is a deliciously soothing concoction to be enjoyed any time, providing that sought-after green tea boost. Treat your senses to the earthy, aromatic blend and experience the perfect harmony of flavours in every sip.",
+   "ingredients": "Green Tea (87.5), Lemon Flavour, Lemon Peel",
+   "nutritionalInfo": {
+    "Nutrition Per": "Serve",
+    "Serving Size": "1 Tea Bag In 100ml Of Hot Distilled Water",
+    "Energy (kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Pvt Ltd"
+  }
  },
  {
   "title": "Lemon & Honey Green Tea",
@@ -391,7 +495,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560_6-twinings-green-tea-lemon-honey.jpg"
-    }
+    },
+    "barcode": "8906177080147"
    },
    {
     "title": "100 pcs",
@@ -429,7 +534,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560-8_4-twinings-green-tea-lemon-honey.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Matcha Green Tea Powder offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Green Tea (86%), Lemon Flavour, Honey Flavour, Lemon Peel, Honey Flavour Pieces",
+   "nutritionalInfo": {
+    "Nutrition per gram": "1g",
+    "Serving Size": "1 tea bag in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Pvt Ltd"
+  }
  },
  {
   "title": "Green Tea & Mint",
@@ -445,7 +565,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553_6-twinings-green-tea-mint.jpg"
-    }
+    },
+    "barcode": "8906177080321"
    }
   ],
   "images": [
@@ -474,7 +595,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553-8_4-twinings-green-tea-mint.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the perfect balance of refreshment and relaxation with our exquisite Green Tea & Mint blend. Carefully selected from the finest tea gardens in China's Zhejiang, Jiangxi, and Anhui provinces, this delicate green tea is expertly combined with the crisp, cooling properties of mint leaves and natural mint flavour. The result is a light-bodied, soothing infusion that delivers a gentle, non-overpowering taste profile - perfect for mindful tea drinkers and daily routines. Enjoy the calming, digestive benefits of green tea and mint, which help to soothe the senses and refresh the palate with every sip. Whether you're seeking a revitalising morning pick-me-up or a comforting evening wind-down, this versatile blend supports hydration and daily balance, making it an easy and refreshing choice for tea lovers of all kinds.",
+   "ingredients": "Green Tea (87.5%), Mint Flavour, Peppermint Leaves",
+   "nutritionalInfo": {
+    "Serving Size": "1 tea bag in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Pvt Ltd"
+  }
  },
  {
   "title": "Cranberry Green Tea",
@@ -490,7 +625,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102_3-twinings-green-tea-cranberry.jpg"
-    }
+    },
+    "barcode": "8906177080369"
    }
   ],
   "images": [
@@ -519,7 +655,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102-8_3-twinings-green-tea-cranberry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Looking for that green tea boost? Pure or fruity - we think our green teas are the best in the business. Carefully selected from the best tea gardens around the world, we really know how to take care of it. Green Tea is delicate and beautiful so it should be treated with the utmost respect. Green tea & cranberries come together to create an indulgent blend. Cranberries with their deep red colour and zingy sharpness give a refreshingly juicy taste & add the right kind of spiciness to green tea. A refreshing drink that is bound to lift your senses. A green tea like no other.\nLift Your Senses: Green tea & cranberries come together to create an indulgent blend. Cranberries with their deep red colour and zingy sharpness give a refreshingly juicy taste & add the right kind of spiciness to green tea. A refreshing drink that is bound to lift your senses. A green tea like no other.",
+   "ingredients": "Green Tea(84%), Cranberry Flavour, Cranberry Pieces",
+   "usageInstructions": "How to make the perfect green tea cranberry? Boil some water, but let it cool slightly before pouring. Add a teabag to the cup of hot water and allow to brew for a maximum of 2 minutes, any longer and you may lose the delicate taste. Take the first sip and let the whole cup revitalise your spirits.",
+   "manufacturerName": "Twinings Private Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000102"
+  }
  },
  {
   "title": "Earl Grey Green Tea",
@@ -535,7 +679,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267266_6-twinings-green-tea-earl-grey.jpg"
-    }
+    },
+    "barcode": "8906177080383"
    }
   ],
   "images": [
@@ -564,7 +709,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267266-8_4-twinings-green-tea-earl-grey.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful fusion of premium green tea and the captivating essence of bergamot in Twinings' Earl Grey Green Tea. Carefully selected from the finest tea gardens around the world, this exquisite blend offers a delicate, smooth base that is elevated by the refreshing, zesty notes of bergamot. The result is a bright, perky cup of tea that invigorates the senses and provides a soothing, antioxidant-rich experience. Conveniently packaged in individual tea bags, this green tea is easy to brew to perfection, allowing you to enjoy its delicate citrus flavour and delightful aroma anytime. Whether you're seeking a revitalising morning pick-me-up or a calming afternoon respite, Twinings' Earl Grey Green Tea is the perfect choice to elevate your tea-drinking experience.",
+   "ingredients": "Green Tea(87.75%), Bergamot Flavour",
+   "nutritionalInfo": {
+    "Nutrition per gram": "1g",
+    "Serving Size": "1 tea bag in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00",
+    "Trans Fat (g)": "0.00",
+    "Saturated Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Pvt Ltd"
+  }
  },
  {
   "title": "Green Apple Green Tea",
@@ -580,7 +742,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104_3-twinings-green-tea-green-apple.jpg"
-    }
+    },
+    "barcode": "8906177080338"
    }
   ],
   "images": [
@@ -609,7 +772,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104-8_3-twinings-green-tea-green-apple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Looking for that green tea boost? Pure or fruity - we think our green teas are the best in the business. Carefully selected from the best tea gardens around the world, we really know how to take care of it. Green Tea is delicate and beautiful so it should be treated with the utmost respect. Green Tea and Green Apple create a perfectly balanced dink. Savour this entirely new take on the traditional green tea & allow yourself a little uplifting boost. Pure, fruity & indulgent. This blend is a stunning recipe that will colour your day the natural way. Distinct flavour. Distinct taste.  \nUplifting Boost: Green Tea and Green Apple create a perfectly balanced drink. Savour this entirely new take on the traditional green tea and allow yourself a little uplifting boost.",
+   "ingredients": "Green Tea (79%), Green Apple Flavour, Green Apple Pieces",
+   "usageInstructions": "How to make the perfect green tea green apple? Boil some water, but let it cool slightly before pouring. Add a teabag to the cup of hot water and allow to brew for a maximum of 2 minutes, any longer and you may lose the delicate taste. Take the first sip and let the whole cup revitalise your spirits.",
+   "manufacturerName": "Twinings Private Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000102"
+  }
  },
  {
   "title": "Jasmine Green Tea",
@@ -625,7 +796,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267270_8-twinings-green-tea-jasmine.jpg"
-    }
+    },
+    "barcode": "8906177080345"
    }
   ],
   "images": [
@@ -654,7 +826,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267270-8_4-twinings-green-tea-jasmine.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful fusion of classic green tea and the captivating essence of jasmine with Twinings Green Tea Jasmine. This sense-soothing blend offers a smooth, refined taste with subtle floral notes, creating a calming and uplifting experience. Infused with the delicate aroma of jasmine, this green tea provides a refreshing and aromatic taste that is perfect for tea lovers seeking a moment of relaxation. Known for its antioxidant properties, green tea helps boost metabolism and improve overall health, while the addition of jasmine further enhances its relaxing and detoxifying effects. With 25 convenient teabags, Twinings Green Tea Jasmine is simple to prepare, allowing you to enjoy a fragrant, soothing cup of tea whenever you need a moment of tranquility.",
+   "ingredients": "Jasmine Scented Green Tea",
+   "nutritionalInfo": {
+    "Serving Size": "1 tea bag in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Twinings Pvt Ltd"
+  }
  },
  {
   "title": "Pomegranate Green Tea",
@@ -670,7 +856,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103_3-twinings-green-tea-pomegranate.jpg"
-    }
+    },
+    "barcode": "8906177080376"
    }
   ],
   "images": [
@@ -699,7 +886,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103-8_3-twinings-green-tea-pomegranate.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Looking for that green tea boost? Pure or fruity - we think our green teas are the best in the business. Carefully selected from the best tea gardens around the world, we really know how to take care of it. Green Tea is delicate and beautiful so it should be treated with the utmost respect. Nowadays, the Pomegranate is widely grown in south-west China and is thought to have been originally brought here by the sea traders amongst their spices, teas and precious stones, which they traded along the legendary route of the \"Silk Road\". Green Tea & pomegranate create an intriguing blend. This deep pink fruit with its naturally sharp yet sweet subtle flavour blends perfectly with green tea. A twist to the classic! You have on offer the goodness of fruit with the freshness of green tea.\nAn Intriguing Blend: Green Tea & pomegranate create an intriguing blend. This deep pink fruit with its naturally sharp yet sweet subtle flavour blends perfectly with green tea. A twist to the classic! You have on offer the goodness of fruit with the freshness of green tea. A cup you can raise a toast to. Any time.",
+   "ingredients": "Green Tea (79%), Pomegranate Flavour, Pomegranate Pieces",
+   "usageInstructions": "How to make the perfect green tea pomegranate? Boil some water, but let it cool slightly before pouring. Add a tea bag to the cup of hot water and allow to brew for a maximum of 2 minutes, any longer and you may lose the delicate taste. Take the first sip and let the whole cup revitalise your spirits.",
+   "manufacturerName": "Twinings Private Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000102"
+  }
  },
  {
   "title": "Strawberry Green Tea",
@@ -715,7 +910,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105_3-twinings-green-tea-strawberry.jpg"
-    }
+    },
+    "barcode": "8906177080352"
    }
   ],
   "images": [
@@ -744,7 +940,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105-8_3-twinings-green-tea-strawberry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Looking for that green tea boost? Pure or fruity - we think our green teas are the best in the business. Carefully selected from the best tea gardens around the world, we really know how to take care of it. Green Tea is delicate and beautiful so it should be treated with the utmost respect. Green Tea & Strawberries create an exotic twist to the regular. The sweet subtle flavour of beautifully ripe strawberries added to refreshing green tea provides an enchanting experience. You are sure to be delighted. A must-try.",
+   "ingredients": "Green Tea, Strawberry Flavour, Strawberry Pieces",
+   "nutritionalInfo": {
+    "Serving Size": "1 tea bag in 100ml of not distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Private Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000102"
+  }
  },
  {
   "title": "Lemon & Ginger Infusion",
@@ -760,7 +972,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106_3-twinings-infusion-tea-lemon-ginger.jpg"
-    }
+    },
+    "barcode": "8906177080390"
    }
   ],
   "images": [
@@ -789,7 +1002,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106-8_3-twinings-infusion-tea-lemon-ginger.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "To create this sunny and invigorating infusion, we have blended two of the world's best-loved ingredients; spicy, warming ginger with the bright, zesty taste of lemons. All our herbs are gently steamed to protect their delicate taste.\nA Warming Blend: To create this sunny and invigorating infusion, we have blended two of the world's best-loved ingredients; spicy, warming ginger with the bright, zesty taste of lemons. You can drink it at any time of the day.",
+   "ingredients": "Ginger Root(37%), Lemon Flavour(Natural)(25%), Lemon Grass, Blackberry Leaves, lemon Peel(9%), Sweet Fennel, Ginger Flavour (Natural)(3%).",
+   "usageInstructions": "How to make perfect lemon & ginger tea? Add a tea-bag to a cup of boiling water for 2 minutes to allow the flavours to infuse. To enjoy cold, chill with ice before drinking.",
+   "manufacturerName": "Twinings Private Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000102"
+  }
  },
  {
   "title": "Pure Peppermint Tea",
@@ -805,7 +1026,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267243_5-twinings-pure-peppermint-tea.jpg"
-    }
+    },
+    "barcode": "8906177080406"
    }
   ],
   "images": [
@@ -834,7 +1056,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267243-8_4-twinings-pure-peppermint-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Lemon & Honey Green Tea offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Pure peppermint.",
+   "nutritionalInfo": {
+    "Nutrition per gram": "1g",
+    "Serving Size": "1 infusion sachet in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Pvt Ltd",
+   "countryOfOrigin": "UK"
+  }
  },
  {
   "title": "Pure Chamomile Tea",
@@ -850,7 +1088,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/272465_8-twinings-tea-camomile.jpg"
-    }
+    },
+    "barcode": "8906177080093"
    }
   ],
   "images": [
@@ -879,7 +1118,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/272465-8_4-twinings-tea-camomile.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Flurys Relaxing Night Time Organic Tea offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Camomile Herbal Infusion",
+   "nutritionalInfo": {
+    "Nutrition per gram": "1g",
+    "Serving Size": "1 infusion sachet in 100ml of hot distilled water",
+    "Energy (Kcal)": "0.00",
+    "Protein (g)": "0.00",
+    "Carbohydrate (g)": "0.00",
+    "Sugar (g)": "0.00",
+    "Fat (g)": "0.00"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Twinings Pvt Ltd",
+   "countryOfOrigin": "UK"
+  }
  },
  {
   "title": "Darjeeling Green Tea Whole Leaf",
@@ -924,6 +1179,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558-8_4-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Darjeeling region in northeastern India is a magical place. Nestled in the Himalayan foothills against the backdrop of Mt. Kanchenjunga, one of the highest peaks in the world, its distinctive tea plantations can be reached by the Himalayan Railway. People will travel far and wide for the exquisite teas produced in the Darjeeling tea gardens. The tea, from the foothills of the Himalayas, is considered the champagne of all teas. One whiff of this select blend of un-oxidized leaves and your senses will embark on a journey. A green tea that looks clear with a beautiful golden-yellow hue. Each sip brings with it the mystical and enchanting taste of Darjeeling. Not to mention, it will leave your mind and body fully rejuvenated.",
+   "ingredients": "Green Tea",
+   "usageInstructions": "Make the Perfect Darjeeling Green Whole Leaf Tea: We would use 1 rounded teaspoon per person. Boil some water, but let it cool slightly before pouring. Allow the flavours to infuse for 3 minutes. You don't need to add anything for the perfect flavour.",
+   "manufacturerName": "Twinings Pvt Ltd"
+  }
  }
 ]
