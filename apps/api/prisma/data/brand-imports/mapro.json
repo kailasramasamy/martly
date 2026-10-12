@@ -1,0 +1,382 @@
+{
+  "brand": "Mapro",
+  "manufacturer": "Mapro Foods Pvt. Ltd.",
+  "feed": "mapro-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mapro/logo-2e379ad2.png",
+  "themeColor": "#E3262D",
+  "themeColorSecondary": "#2E8B3E",
+  "namePrefix": "Mapro ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Coolz\\ Khus\\ Sharbat$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Rose\\ Sharbat$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Coolz\\ Strawberry\\ Syrup$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Coolz\\ Variyali\\ Sharbat$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Alphonso\\ Mango\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Black\\ Currant\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Coolz\\ Raw\\ Mango\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Kiwi\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Restore\\ Kokum\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Litchi\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Lounge\\ Lime\\ Juice\\ Cordial$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Mango\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Orange\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Whole\\ Strawberry\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Pink\\ Guava\\ Crush$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Restore\\ Lemon\\ Barley\\ Water$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Limboo\\ Timboo\\ Lemon\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Restore\\ Lemon\\ Ginger\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Restore\\ Amla\\ Ginger\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Lounge\\ Citrus\\ Blue$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Lounge\\ Mojito\\ Syrup$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Lounge\\ Vanilla\\ Syrup$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Lounge\\ Blue\\ Curacao\\ Syrup$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Lounge\\ Green\\ Apple\\ Syrup$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Lounge\\ Kala\\ Khatta\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ Dessert\\ Topping$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Dessert\\ Topping$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Crush\\ Topping$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Falchoos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Falero\\ Mango\\ Fruit\\ Chews$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Falero\\ Jamun\\ Fruit\\ Chews$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Falero\\ Strawberry\\ Fruit\\ Chews$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Mango\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Orange\\ Marmalade$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Scarlet\\ Gulkand$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Mazaana\\ Chocolate\\ Almond\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Mazaana\\ Chocolate\\ Paan$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Sahyadri\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Snackery\\ Cheese\\ Corn\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Snackery\\ Sweet\\ Chilli\\ Corn\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Ketchup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    }
+  ]
+}
