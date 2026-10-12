@@ -1,0 +1,22 @@
+{
+  "brand": "Carnation (Nestle)",
+  "manufacturer": "Nestlé UK Ltd.",
+  "feed": "carnation-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/carnation/logo-9cb70af9.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#1F3B8C",
+  "namePrefix": "Carnation ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Evaporated\\ Milk$",
+      "path": [
+        "Dairy",
+        "Condensed & Evaporated Milk",
+        "Evaporated Milk"
+      ]
+    }
+  ]
+}

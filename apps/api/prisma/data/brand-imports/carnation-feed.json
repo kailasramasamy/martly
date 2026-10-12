@@ -1,0 +1,57 @@
+[
+ {
+  "title": "Evaporated Milk",
+  "handle": "evaporated-milk",
+  "vendor": "Carnation (Nestle)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "410g",
+    "price": "285",
+    "compare_at_price": "285",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/81jUS-zPbDL._SL1500_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/81jUS-zPbDL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71GhhAeSduL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/81jhWh0iptL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71r9rgkvWJL._SL1500_.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Carnation Evaporated Milk is just milk with about half the water removed, making it richer and creamier and perfect to cook with. Use it in curries, sauces, desserts, puddings and baking, or pour it over fruit and crumbles. Fortified with Vitamin D. Minimum 9% milk fat, 22% milk solids not fat.",
+   "ingredients": "Whole Milk, Stabiliser (Sodium Phosphates), Vitamin D",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "50g",
+    "Energy (kcal)": "160",
+    "Total Fat (g)": "9.0",
+    "Saturated Fat (g)": "6.1",
+    "Carbohydrate (g)": "12.1",
+    "Total Sugars (g)": "12.1",
+    "Dietary Fibre (g)": "0.0",
+    "Protein (g)": "7.6",
+    "Salt (g)": "0.33",
+    "Calcium (mg)": "270",
+    "Vitamin D (mcg)": "2.9"
+   },
+   "storageInstructions": "Store in a cool, dry place. Once opened, refrigerate in a suitable sealed container and use within 3 days.",
+   "usageInstructions": "Shake well before opening. Not for infants under 12 months.",
+   "manufacturerName": "Nestlé UK Ltd."
+  }
+ }
+]
