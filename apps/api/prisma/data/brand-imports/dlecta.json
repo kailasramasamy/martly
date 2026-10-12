@@ -1,0 +1,197 @@
+{
+  "brand": "D'Lecta (Dynamix Dairy)",
+  "manufacturer": "Dynamix Dairy Industries Ltd.",
+  "feed": "dlecta-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/d-lecta-dynamix-dairy/logo-db5e580c.png",
+  "themeColor": "#ED323D",
+  "namePrefix": "D'Lecta ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cheddar\\ Cheese\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Cheddar\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Naturally\\ Aged\\ Sharp\\ Cheddar\\ Thick\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Cubes$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Cow\\ Milk\\ Processed\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Melto\\ Processed\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Processed\\ Cheese\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Processed\\ Cheese\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Cream\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^La\\ Cream\\ Strawberry\\ Sandwich\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Mozzarella\\ Cheese\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Shredded\\ Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Feta\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Feta\\ in\\ Brine$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Parmesan\\ Extra\\ Hard\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Grated\\ Italian\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Mascarpone$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Cream$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^D'licia\\ Whip\\ Topping$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Whipping Cream"
+      ]
+    },
+    {
+      "match": "^Milke\\ Condensed\\ Milk\\ Sachets$",
+      "path": [
+        "Dairy",
+        "Condensed & Evaporated Milk",
+        "Condensed Milk (Milkmaid)"
+      ]
+    }
+  ]
+}
