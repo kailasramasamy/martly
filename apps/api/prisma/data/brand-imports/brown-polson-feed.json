@@ -1,0 +1,55 @@
+[
+ {
+  "title": "Corn Flour",
+  "handle": "corn-flour",
+  "vendor": "Brown & Polson",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139_10-brown-polson-corn-flour.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "82",
+    "compare_at_price": "82",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008141_7-brown-polson-corn-flour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139_10-brown-polson-corn-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-2_4-brown-polson-corn-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-3_3-brown-polson-corn-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-4_3-brown-polson-corn-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-5_3-brown-polson-corn-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-6_3-brown-polson-corn-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-7_3-brown-polson-corn-flour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-8_3-brown-polson-corn-flour.jpg"
+   }
+  ]
+ }
+]

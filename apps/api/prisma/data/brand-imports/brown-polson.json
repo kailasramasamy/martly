@@ -1,0 +1,22 @@
+{
+  "brand": "Brown & Polson",
+  "manufacturer": "Conagra Brands",
+  "feed": "brown-polson-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/brown-polson/logo-d90f2b63.png",
+  "themeColor": "#E4252B",
+  "themeColorSecondary": "#F5C400",
+  "namePrefix": "Brown & Polson ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Corn\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Corn Flour"
+      ]
+    }
+  ]
+}
