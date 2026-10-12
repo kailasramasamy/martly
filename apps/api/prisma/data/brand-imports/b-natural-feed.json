@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842_7-b-natural-apple-awe-juice.jpg"
-    }
+    },
+    "barcode": "8901725105150"
    },
    {
     "title": "1L",
@@ -51,7 +52,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003842-8_2-b-natural-apple-awe-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Do you enjoy biting into crisp and juicy apples? Then, you will also enjoy B Natural Apple fruit juice as it brings you the same joy with its delightful flavour. Every sip of this juice brings you the goodness of fruit and fibre as it has been crafted to near perfection, using only the finest apples that have been handpicked from the local Indian farms. Relish an authentic fruit experience as B Natural Apple is made with 100% fruit and 0% concentrate, and no added preservatives. With the goodness of fibre and Vitamin C and E, B Natural ensures complete fruit nutrition for you and your family. This natural juice serves as the perfect start to a busy day or as the perfect in-between drink to rejuvenate you when low on energy. Enjoy the taste of fresh, crispy, and juicy apples in every sip of B Natural Apple juice as it is made with utmost care and dedication.",
+   "ingredients": "Water, Apple Juice, Concentrate 17.6%",
+   "manufacturerName": "Itc Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Apple Beverage 33% Less Sugar",
@@ -96,7 +103,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367008-8_2-b-natural-apple-beverage-33-less-added-sugar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Apple contains 33% less added sugar than the original recipe. This beverage maintains its crisp and familiar apple flavour, ensuring it remains as tasty as ever. It provides a consistent, refreshing drink that balances natural sweetness with a clean finish. Each serving delivers the same quality and authentic fruit notes you expect from a classic apple drink.",
+   "ingredients": "Water, Apple Juice (15%), Sugar, Acidity Regulators [330, 331(iii)], Nature Identical Flavouring Substances, Natural Flavours and Natural Flavouring Substances, Vitamins, Stabilisers (466, 415), Sweetener (960) and Colour (150d).",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Orange Beverage 33% Less Sugar",
@@ -141,7 +155,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367009-8_2-b-natural-orange-beverage-33-less-added-sugar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Orange Beverage now contains 33% less added sugar while remaining as tasty as ever. This beverage delivers a crisp, authentic orange flavour in every glass. It offers the same refreshing experience you expect, but with a refined sweetness. Enjoy the consistent quality and bold citrus notes of a classic orange beverage, crafted to be as delicious as always.",
+   "ingredients": "Water, Sugar, *Orange Juice Concentrate (2.5%), Orange Pulp (1.9%), Acidity Regulator (330), Nature Identical Flavouring Substances, Vitamins, Natural Flavours and Natural Flavouring Substances, lodized Salt, Stabilizers (466, 415), Colours (171, 110, 102) and Sweetener (960).",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Guava Juice",
@@ -157,7 +178,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40003841_9-b-natural-guava-juice.jpg"
-    }
+    },
+    "barcode": "8901725100230"
    },
    {
     "title": "1L",
@@ -192,7 +214,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076751_19-b-natural-juice-guava-gush.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing, authentic taste of B Natural Guava juice, crafted to perfection using only the finest guavas handpicked from local Indian farms. This thick, pulpy nectar brings together the goodness of fruit and fibre, delivering a rich, tart flavour that you won't be able to put down. Made with real fruit pulp and no concentrates or preservatives, B Natural Guava is the perfect start to a busy day or a rejuvenating pick-me-up, providing a natural source of vitamins C and E as well as dietary fibre to support your overall health and digestive well-being. Relish the taste of fresh, juicy guavas in every sip, as this premium juice is produced with the utmost care and dedication.",
+   "ingredients": "Water, Pink Guava Pulp (12%), Sugar, White Guava Pulp (8%), Stabilizers (Ins 440, Ins 466), Acidity Regulators (Ins 330, Ins 296), Antioxidant (Ins 300), Polydextrose (Dietary Fibre) (0.01%), Lodized Salt, Contains Permitted Natural Colour(S) (Ins 160B(I)), Added Flavour(S) (Natural Flavours And Natural Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Energy": "54 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "13.81 g",
+    "Of Which": "- Dietary Fibre: 0.81 g",
+    "Fat": "0.0 g"
+   },
+   "storageInstructions": "* Store in a cool and dry place",
+   "manufacturerName": "Itc Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Litchi Juice",
@@ -208,7 +245,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40003843_9-b-natural-litchi-juice.jpg"
-    }
+    },
+    "barcode": "8901725105181"
    },
    {
     "title": "1L",
@@ -243,7 +281,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076754_16-b-natural-juice-litchi-luscious.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Treat your tastebuds to the sweet, succulent taste of a tropical treat all year round with B Natural Litchi juice. Every sip of this delicious fruit juice brings you the goodness of both, fruit and fibre as it has been crafted to near perfection, using only the finest litchis that have been handpicked from the local Indian farms.\nMade with utmost care and dedication, to give you a delightful fruit experience. Relish an authentic fruit experience as B Natural Litchi is made with 100% fruit pulp and 0% concentrate, and no added preservatives. With the goodness of fiber and Vitamin C and E, B Natural ensures complete fruit nutrition for you and your family.\nThis natural juice serves as the perfect start to a busy day or as the perfect in-between drink to rejuvenate you when low on energy. Enjoy the taste of delightful litchis which has been squeezed in each pack of B Natural Litchi juice.",
+   "ingredients": "Water, Litchi Pulp (12%), Sugar, Dietary Fibre (0.77%) [Resistant Maltodextrin (0.4%), Polydextrose (0.37%)], Stabilizers (INS 440, INS 466), Acidity Regulator (INS 296) and Antioxidant (INS 300). CONTAINS ADDED FLAVOUR(S) (NATURAL FLAVOURS AND NATURAL FLAVOURING SUBSTANCES AND NATURE IDENTICAL FLAVOURING SUBSTANCES)\nSOURCE OF DIETARY FIBRE",
+   "nutritionalInfo": {
+    "Energy (kcal)": "50",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "12.95",
+    "Of Which": "Natural Fruit Sugars (g): 1.7",
+    "Added Sugar (g)": "10.5",
+    "Dietary Fiber (g)": "0.75",
+    "Fat (g)": "0.0"
+   },
+   "manufacturerName": "ITC Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Mango Juice",
@@ -297,7 +351,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076748_9-b-natural-juice-mango-magic.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "As fresh as a summer breeze, B Natural Mango brings the goodness of fruit and fibre in a thick and pulpy juice. Each sip of this fruit juice effortlessly captures the taste and essence of a fruit that we all so dearly love to celebrate. B Natural Mango has been crafted using mangoes that have been handpicked from the orchards of local Indian farmers. Made with utmost care and dedication, this natural juice serves as the perfect start to a busy day or as the perfect in-between drink to rejuvenate you when low on energy. Relish an authentic fruit experience as B Natural Mango is made with 100% mango pulp and 0% concentrate, and no added preservatives. With the goodness of fibre and Vitamin C & E, B Natural ensures complete fruit nutrition for you and your family. Experience the taste of a fruit that has for long, been touted as the king of all fruits, in every sip of B Natural Mango juice.",
+   "ingredients": "Water, Blended Mango Pulp 25%, Sugar, Polydextrose, Acidity Regulator (Citric Acid-E300), Stabilizer (E401) Antioxidant (Ascorbic Acid-E300), Contain Permitted Natural Colour (E160A) And Added Nature Identical Mango Flavour.",
+   "manufacturerName": "Itc Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixed Fruit Juice",
@@ -348,7 +408,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076755_21-b-natural-juice-mixed-fruit-merry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful and nourishing blend of B Natural Mixed Fruit Juice, a refreshing tropical delight crafted with fruit pulp. Bursting with the flavours of mango, banana, pineapple, guava, jamun, and bael, this guilt-free beverage is enriched with essential vitamins, minerals, and fibre to power up your body. Enjoy the authentic fruit experience, free from synthetic colours, artificial flavours, and preservatives, for a truly wholesome and satisfying sip. Relish the freshness of real fruits and elevate your taste buds with every refreshing gulp.",
+   "ingredients": "Water, Sugar, Mango Pulp (6.8%), Banana Puree (4.5%), Guava Pulp [4.4%], Pineapple Pulp (3.2%), Water Melon Pulp [0.6%], Polydextrose [Dietary Fibre) [0.54%], Jamun Pulp (0.5%), Bael Pulp (0.3%), Acidity Regulator (Ins 330], Litchi Pulp [0.16%], Stabilizer (Ins 440), Antioxidant [Ins 300), Pomegranate Juice (0.05%)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "180ml",
+    "Energy": "50 kcal",
+    "Protein": "0.1g",
+    "Carbohydrate": "12.75g",
+    "Of Which Natural Fruit Sugars": "2.8g",
+    "Of Which Added Sugar": "9.2g",
+    "Dietary Fibre": "0.75g",
+    "Fat": "0.0g"
+   },
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Orange Juice",
@@ -364,7 +440,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40003845_8-b-natural-orange-juice.jpg"
-    }
+    },
+    "barcode": "8901725105204"
    },
    {
     "title": "1L",
@@ -402,7 +479,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100496033_19-b-natural-juice-orange-oomph.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "As fresh as the dew drops on leaves, B Natural Orange brings the goodness of fruit and fibre in a thick and pulpy juice. B Natural Orange fruit juice has been crafted to near perfection, using only the finest oranges that have been handpicked from the orchards of local Indian farmers. Each sip of this fruit juice effortlessly captures the taste and essence of a fruit that we all love and cherish. Relish an authentic fruit experience as B Natural Orange is made with 100% fruit and 0% concentrate, and no added preservatives. With the goodness of fibre and Vitamin C & E, B Natural ensures complete fruit nutrition for you and your family. This natural fruit juice serves as the perfect start to a busy day or as the perfect in-between drink to rejuvenate you when low on energy. Enjoy the taste of fresh, juicy oranges in every sip of B Natural Orange as it is made with utmost care and dedication.",
+   "ingredients": "Water, Orange Pulp, Sugar, Acidity Regulator (Ins 330), Salt, Antioxidant",
+   "manufacturerName": "Itc Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pineapple Juice",
@@ -418,7 +501,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750_9-b-natural-juice-pineapple-poise.jpg"
-    }
+    },
+    "barcode": "8901725100124"
    }
   ],
   "images": [
@@ -447,7 +531,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076750-8_1-b-natural-juice-pineapple-poise.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Delight your tastebuds with the unparalleled taste of succulent pineapples with B Natural Pineapple juice. The perfect fruit juice to leave you craving for more. Savour the sweet and tangy interplay of this juice which brings you the goodness of fruit and fibre in every sip you take. B Natural Pineapple fruit juice has been crafted using pineapples that have been handpicked from the farms of local Indian farmers. Relish an authentic fruit experience as B Natural Pineapple is made with 100% fruit and 0% concentrate, and no added preservatives. With the goodness of fibre and Vitamin C and E, B Natural ensures complete fruit nutrition for you and your family. This natural juice serves as the perfect start to a busy day or as the perfect in-between drink to rejuvenate you when low on energy. Enjoy the taste of fresh, juicy pineapples in every sip of B Natural Pineapple juice as it is made with utmost care and dedication.",
+   "ingredients": "Water, Pineapple Juice Concentrate (9%), Sugar, Acidity Regulator (Ins 330), Stabiliser (Ins 440), Antioxidant (Ins 300),\nContains Permitted Natural Colour (S) (Ins 106 A(Ii)) And Added Flavour (S) (Nature Identical Flavouring Substance)",
+   "manufacturerName": "Itc Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pomegranate Juice",
@@ -463,7 +553,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758_20-b-natural-juice-pomegranate.jpg"
-    }
+    },
+    "barcode": "8901725100100"
    }
   ],
   "images": [
@@ -492,7 +583,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100076758-8_1-b-natural-juice-pomegranate.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Have you always been fond of pomegranates but found the task of peeling them too overwhelming? Well, then allow us to show you the easy way out! We introduce you to B Natural Pomegranate Juice, a fruit juice crafted to near perfection using only the finest handpicked pomegranates from local Indian farms.\nEvery sip of this fruit juice comes with the added goodness of fruit and fibre. Relish an authentic fruit experience as B Natural Pomegranate Juice is made with 100% fruit and 0% concentrate, with no added preservatives. With the goodness of fiber and Vitamin C & E, B Natural ensures complete fruit nutrition for you and your family.\nThis natural fruit juice serves as the perfect start to a busy day or as the perfect in-between drink to rejuvenate you when low on energy. Enjoy the taste of this delicious sparkling red fruit in every sip of B Natural Pomegranate Juice, made with utmost care and dedication.",
+   "manufacturerName": "Balan Agro Products Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013043000650"
+  }
  },
  {
   "title": "Chatpata Jamun Juice with Pink Salt",
@@ -531,7 +628,37 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324986-6_1-b-natural-chatpata-jamun-fruit-based-beverage.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the captivating fusion of traditional Indian flavours with B Natural's Chatpata Jamun Fruit Beverage. This revitalising drink offers a unique blend of the nutritious taste of Jamun juice, enhanced with a delightful array of curated spices and a hint of Himalayan Pink Salt. Crafted to ensure the natural essence of Jamun takes centre stage, this beverage tantalises the taste buds with its zesty masalas and added fibre, providing a refreshing and nourishing experience. Whether enjoyed chilled on a hot summer day or served as a refreshing accompaniment to your meals, B Natural's Chatpata Jamun is the perfect choice to quench your thirst and delight your senses with its authentic and exciting flavour profile.",
+   "ingredients": "Water, Jamun Pulp (10%), Sugar, Polydextrose (Dietary Fibre) [0.3%], Acidity Regulator (Ins 330), Natural Flavours And Natural Flavouring Substances, Himalayan Pink Salt [0.12%], Black Salt, Stabilizers (Ins 415, Ins 466), Colours (Ins 150D, Ins 122), May Contain Milk, Nut And Soy",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 ml",
+    "Serving Size": "150 ml",
+    "Energy (kcal)": "37",
+    "Protein (g)": "0.04",
+    "Carbohydrate (g)": "9.56",
+    "Total Sugars (g)": "9.00",
+    "Natural Fruit Sugars (g)": "1.00",
+    "Added Sugars (g)": "8.0",
+    "Dietary Fibre (g)": "0.56",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "90.0",
+    "%RDA (Approx. Values) Per Serve": "3",
+    "Energy (kcal) Per Serve": "56",
+    "Protein (g) Per Serve": "0.06",
+    "Carbohydrate (g) Per Serve": "14.34",
+    "Total Sugars (g) Per Serve": "13.50",
+    "Natural Fruit Sugars (g) Per Serve": "1.50",
+    "Added Sugars (g) Per Serve": "12.0",
+    "Dietary Fibre (g) Per Serve": "0.8",
+    "Total Fat (g) Per Serve": "0.0",
+    "Sodium (mg) Per Serve": "135.0",
+    "%RDA Per Serve": "6.8",
+    "RDA For Adults, Men - Sedentary Work": "Icmr 2020"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight"
+  }
  },
  {
   "title": "Chilli Guava Juice",
@@ -570,7 +697,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324988-6_1-b-natural-guava-chilli.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Guava Chilli Fruit beverage is a delightful blend of taste and health. This unique drink offers a refreshing twist with chilli masala, creating a perfect balance of sweet and spicy. It contains 30% less sugar, making it a healthier choice for those monitoring their sugar intake. The beverage is not only delicious but also packed with dietary fibre, contributing to your daily nutritional needs. Enriched with Vitamin C and watermelon seeds, it provides an added health benefit. Despite its complex blend, the highlight remains its primary ingredient - guava pulp, which provides an authentic fruit experience. Enjoy this innovative and healthier beverage from B Natural, crafted thoughtfully for your palate and wellbeing.",
+   "ingredients": "Water, Guava Pulp (20%), Sugar, Acidity Regulator (INS 330), Himalayan Pink Salt (0.14%), Natural Flavours and Natural Flavouring Substances, Black Salt, Mixed Spices^, Stabilizers (INS 440, INS 415, INS 466), Iodised Salt, Vitamin C, Watermelon Seeds, Polydextrose (Dietary fibre) (0.01%), Colours (INS 150d, INS 124, INS 110) and Dehydrated Kachri",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "62 kcal",
+    "Protein": "0.15 g",
+    "Carbohydrate": "15.78 g",
+    "Total Sugars": "14.85 g",
+    "Natural Fruit Sugars": "2.85 g",
+    "Added Sugars": "12.0 g",
+    "Dietary Fiber": "0.9 g",
+    "Total fat": "0.0 g",
+    "Sodium": "180.0 mg",
+    "Vitamin C": "9.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixed Fruit Chaat Juice",
@@ -609,7 +757,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324987-6_1-b-natural-mixed-fruit-chaat.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Mixed Fruit Chaat beverage is a vibrant concoction of various fruits with the tang of chaat masala, offering a unique flavour explosion. This drink contains 30% less sugar than its previous version, making it an excellent choice for those seeking a healthier alternative. With high dietary fibre content, it contributes positively to your nutrition. The delightful blend of guava, mango, banana, and traces of other fruits provides a genuine fruit experience, enhanced by the intriguing hint of chaat masala. The beverage also contains Vitamin C and watermelon seeds, adding to its health benefits.",
+   "ingredients": "Water, Sugar, Guava Pulp (5.9%), Mango Pulp (4%), Banana Puree (4%), Polydextrose (Dietary fibre) (0.5%), Acidity Regulator (INS 330), Himalayan Pink Salt (0.14%), Black Salt, Pineapple Pulp (0.1%), Mixed Spices, Natural Flavours and Natural Flavouring Substances, Nature Identical Flavouring Substances, Iodised Salt, Vitamin C, Stabilizers (INS 415, INS 466), Watermelon Seeds, Orange Pulp (0.01%), Litchi Pulp (0.01%), Pomegranate Juice (0.01%), Dehydrated Kachri and Colour (INS 110)",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "62 kcal",
+    "Protein": "0.15 g",
+    "Carbohydrate": "15.78 g",
+    "Total Sugars": "14.85 g",
+    "Natural Fruit Sugars": "2.85 g",
+    "Added Sugars": "12.0 g",
+    "Dietary Fiber": "0.9 g",
+    "Total fat": "0.0 g",
+    "Sodium": "180.0 mg",
+    "Vitamin C": "9.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Jamun Juice",
@@ -625,7 +794,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039_7-b-natural-masala-jamun-juice.jpg"
-    }
+    },
+    "barcode": "8901725104665"
    }
   ],
   "images": [
@@ -654,7 +824,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123039-8_2-b-natural-masala-jamun-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Looking for a refreshing fruit juice that you can’t put down? B Natural Masala Jamun fruit juice is just what you need! The perfect fruit juice to leave you craving for more. Quench your thirst with the delicious taste of B Natural Masala Jamun. Savour the interplay of sweet jamuns and masalas with every sip. B Natural Masala Jamun has been crafted to near perfection using only the finest jamuns that have been handpicked from the farms of local Indian farmers. Relish an authentic fruit experience as B Natural Masala Jamun is made with 100% fruit and 0% concentrate, and no added preservatives. With the goodness of fibre and Vitamin C & E, B Natural ensures complete fruit nutrition for you and the family. This natural fruit juice serves as the perfect start to a busy day or as the perfect in-between drink to rejuvenate you when low on energy. Enjoy the flavour of the delicious purple treat with B Natural Masala Jamun.",
+   "ingredients": "Water, Jamun Pulp (18%), Sugar, Acidity Regulator (Ins 330), Edible Common Salt, Black Salt, Polydextrose & Stabilizer (Ins 418)",
+   "manufacturerName": "Itc Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cranberry Cooler",
@@ -699,7 +875,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222034-8_8-b-natural-cranberry-flavoured-cooler-ready-to-serve-beverage.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the delicious and tarty taste of real cranberries with B Natural Cranberry Juice. This juice delivers the authentic essence of cranberries in every sip.\nIts thick, juicy texture and naturally rich flavour make it a delightful choice for any time of day. With no added preservatives and the promise of consistent quality, it's a refreshing beverage you can trust whether you're enjoying it on its own, pairing it with meals, or serving it to guests.\nSealed for freshness and bursting with real fruit goodness, this juice is a great addition to your daily routine.",
+   "ingredients": "Water, Sugar, Apple Juice (9.5%), Cranberry Puree (0.5%), Acidity Regulator (330), Nature Identical Flavouring Substances, Natural Flavours and Natural Flavouring Substances, Colours (150d, 122) and Stabilizer (466).\nMay contain Milk, Nut and Soy",
+   "nutritionalInfo": {
+    "Energy": "46 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "11.5 g",
+    "Total Sugars": "11.5 g",
+    "Natural Fruit Sugars": "1.0 g",
+    "Added Sugars": "10.5 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "4.0 mg"
+   },
+   "manufacturerName": "Balan Agro Products Private Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixed Fruit+ Juice with Green Coffee Extract",
@@ -744,7 +937,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220293-8_2-b-natural-mixed-fruit-plus.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the best of both worlds, flavour, and nutrition with B Natural Mixed Fruit+ juice. So, you never have to worry about falling short on nutrition while sipping on your favourite mixed fruit juice ever again! B Natural Mixed Fruit+ contains green coffee extract which has multiple health benefits which helps in supporting immunity. Simply, enjoy the goodness of fruit and fibre as well as health benefits of a clinically proven ingredient with every sip of this fruit juice. Natural Mixed Fruit+ is a concoction of ripe, juicy fruits like mango, banana, pineapple, guava, jamun, litchi, pomegranate and bael. This natural fruit juice is crafted using fruits that have been handpicked from the orchards of local Indian farmers. With the goodness of fibre and Vitamin C, B Natural ensures complete fruit nutrition for you and your family. Relish an authentic fruit experience as B Natural Mixed Fruit+ juice is made with 100% fruit pulp and 0% concentrate. Treat yourself to the genuine fresh and juicy flavours of your favourite fruits with every sip of B Natural Mixed Fruit+.",
+   "ingredients": "Water, Sugar, Mango Pulp (8.95%), Pineapple Pulp (8.33%), Guava Pulp (5.25%), Banana Puree (3.8%), Polydextrose (Dietary Fiber) (0.62%), Acidity Regulator (INS 330), Jamun Pulp (0.13%), Litchi Pulp (0.13%), Bael Pulp (0.13%), Stabilizer (INS 440), Antioxidant (INS 300), Green Coffee Extract Powder (0.0625%) and Pomegranate Juice (0.04%).",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Orange+ Juice with Green Coffee Extract",
@@ -789,7 +989,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220294-8_1-b-natural-orange-plus.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the best of both worlds, flavour and nutrition with B Natural Orange+ fruit juice. So, you never have to worry about falling short on nutrition while sipping on your favourite orange juice ever again! B Natural Orange+ contains green coffee extract which has multiple health benefits and helps in supporting immunity. Simply, enjoy the goodness of fruit and fibre as well as the health benefits of a clinically proven ingredient with every sip of this juice.\nAs fresh as dew drops on leaves, B Natural Orange+ fruit juice is crafted using oranges that have been handpicked from the orchards of local Indian farmers. Relish an authentic fruit experience as B Natural Orange+ is made with orange pulp and 0% concentrate. With the goodness of fibre and Vitamin C, B Natural ensures complete fruit nutrition for you and your family.\nThis natural fruit juice serves as the perfect start to a busy day or as the perfect in-between drink to rejuvenate you when low on energy. Enjoy the taste of fresh, juicy oranges in every sip of B Natural Orange+ as it is made with utmost care and dedication.",
+   "ingredients": "Water, Orange Pulp (21%), Sugar, Polydextrose (Dietary Fiber) (0.75%), Acidity Regulator (INS 330), Antioxidant (INS 300), lodized Salt and Green Coffee Extract Powder (0.053%).\nCONTAINS PERMITTED NATURAL COLOUR(S) (INS 160a(iii)) AND ADDED FLAVOUR(S) (NATURAL FLAVOURS AND NATURAL FLAVOURING SUBSTANCES AND NATURE IDENTICAL FLAVOURING SUBSTANCES) SOURCE OF DIETARY FIBRE\nSUPPORTS IMMUNITY WITH CLINICALLY PROVEN INGREDIENT*\n*INGREDIENT HERE REFERS TO GREEN COFFEE EXTRACT (G.C.E) BASIS SCIENTIFIC CLINICAL STUDY.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "50",
+    "Protein (g)": "0.05",
+    "Carbohydrates (g)": "12.70",
+    "Of Which Sugar (g)": "2.1",
+    "Added Sugar (g)": "9.85",
+    "Dietary Fiber (g)": "0.75",
+    "Fat (g)": "0.0"
+   },
+   "manufacturerName": "ITC Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Pomegranate+ Juice with Green Coffee Extract",
@@ -834,7 +1050,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206437-8_2-b-natural-pomegranate-plus.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the best of both worlds, flavour, and nutrition with B Natural Pomegranate+ fruit juice. So, you never have to worry about falling short on nutrition while sipping on your favourite pomegranate juice ever again! B Natural Pomegranate+ contains green coffee extract which has multiple health benefits which helps in supporting immunity. Simply, enjoy the goodness of fruit and fibre as well as health benefits of a clinically proven ingredient with every sip of this juice. B Natural Pomegranate+ juice is crafted using pomegranates that have been handpicked from the orchards of local Indian farmers. Relish an authentic fruit experience as this natural fruit juice is made with 100% fruit and 0% concentrate. With the added goodness of fibre and Vitamin C, B Natural ensures complete fruit nutrition for you and your family. Enjoy the taste of this delicious sparkling red fruit in every sip of B Natural Pomegranate+ juice as it is made with utmost care and dedication.",
+   "ingredients": "Water, Pomegranate Juice (30%), Sugar, Acidity Regulator (Ins 330), Salt, Polydextrose, Green Coffee Extract Powder.\nContains Permitted Natural Colour (S) (Ins 106 A(Ii)) And Added Flavour (S) (Nature Identical Flavouring Substance)",
+   "manufacturerName": "Itc Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dakshin Pink Guava Juice",
@@ -879,7 +1102,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165173-8_2-b-natural-dakshin-pink-guava.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Dakshin Pink Guava brings the goodness of fruit and fibre. So, relish the rich, tart flavour of succulent guavas with every sip.\nB Natural Dakshin Pink Guava has been crafted using the finest guavas that have been handpicked from the farms of local Indian farmers from South India. Enjoy an authentic fruit experience as it is made with 100% fruit and 0% concentrate, and no added preservatives. With the goodness of fibre and Vitamin C, B Natural ensures complete fruit nutrition for the family.\nSavour the taste of fresh, juicy pink guavas in every sip of B Natural Dakshin Pink Guava as it is made with utmost care and dedication.",
+   "ingredients": "Water, Pink Guava Pulp (25%), Sugar, Edible Common Salt, Acidity Regulators [Ins 331 (Iii), Ins 330, Ins 296], Antioxidant (Ins 300) And Stabilizers (Ins 418, Ins 466)",
+   "manufacturerName": "Itc Limited Virginia House",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Himalayan Mixed Fruit Juice",
@@ -924,7 +1154,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165169-8_1-b-natural-himalayan-mixed-fruit.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Himalayan Mixed Fruit is a heavenly concoction of delicious and juicy fruits like Himalayan fruits - apple, pear, apricot, plum and peach. Relish the goodness of fruit and fibre as it has been squeezed into each pack of B Natural.\nCrafted using 100% fruit pulp, B Natural Himalayan Mixed Fruit offers an authentic fruit experience. Made with 0% concentrate, B Natural ensures complete fruit nutrition for the family as it retains its nutrients like fibre and Vitamin C.\nTreat yourself to the genuinely fresh and juicy flavours with every sip of B Natural Himalayan Mixed Fruit.",
+   "ingredients": "Water, Sugar, Apple Puree, Pear Puree (7.5%), Apricot Puree (2.1%), Peach Puree, Plum Puree (1.05%), Acidity Regulators [Ins 330, Ins 331(Iii)], Antioxidant (Ins 300), Stabilisers (Ins 418, Ins 466).Contains Permitted Colour(S) - Ins 160B(I), Ins160A(Iii) And Added Flavour(S) - Natural Nature Identical Flavouring Substances.",
+   "manufacturerName": "Itc Limited Virginia House",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Nagpur Orange Juice",
@@ -972,7 +1209,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40214616_1-b-natural-nagpur-orange-with-pulp-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "As fresh as dew drops on leaves, B Natural Nagpur Orange brings the goodness of fruit and fibre in a thick and pulpy juice. B Natural Orange has been crafted using oranges that have been handpicked from the orchards of local Indian farmers from Nagpur.\nRelish an authentic fruit experience as B Natural Nagpur Orange is made with 100% fruit and 0% concentrate, and no added preservatives. With the goodness of fibre and Vitamin C, B Natural ensures complete fruit nutrition for the family.\nEnjoy the taste of fresh, juicy oranges in every sip of B Natural Nagpur Orange as it is made with utmost care and dedication.",
+   "ingredients": "Water, Nagpur Santra Orange Pulp (13%), Sugar, Orange Pulp Cells (7%), Polydextrose (Dietary Fibre) (0.75%), Acidity Regulators [(Ins 330, Ins 331(Iii) )], Antioxidant (Ins 300), Stabilizers (Ins 466 And Ins 418) And Iodised Salt. Contains Permitted Natural Colour(S) (Ins 160a(Iii)) And Added Flavour(S) (Nature Identical Flavouring Substances)",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ratnagiri Alphonso Mango Juice",
@@ -988,7 +1232,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172_3-b-natural-ratnagiri-alphonso.jpg"
-    }
+    },
+    "barcode": "8901725108458"
    },
    {
     "title": "750ml",
@@ -1026,7 +1271,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165172-8_1-b-natural-ratnagiri-alphonso.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "As fresh as a summer breeze, B Natural Ratnagiri Alphonso Mango brings the goodness of fruit and fibre in a thick and pulpy juice. B Natural Ratnagiri Alphonso Mango has been crafted using fresh and succulent mangoes that have been handpicked from the orchards of local Indian farmers in Ratnagiri.\nRelish an authentic fruit experience as B Natural Ratnagiri Alphonso Mango is made with 100% mango pulp and 0% concentrate, and no added preservatives. With the goodness of fibre and Vitamin C, B Natural ensures complete fruit nutrition for the family.\nEnjoy the taste of this royal fruit in every sip of B Natural Ratnagiri Alphonso Mango as it is made with utmost care and dedication.",
+   "ingredients": "Water, Alphonso Mango Pulp, Sugar, Acidity Regulator (Ins 330), Polydextrose, Antioxidants, Stabilizers.\nContains Permitted Natural Colour (S) (Ins 106 A(Ii)) And Added Flavour (S) (Nature Identical Flavouring Substance)",
+   "manufacturerName": "Itc Limited Virginia House",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Fruits N Bits Guava Juice",
@@ -1071,7 +1323,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297924-8_2-b-natural-fruits-n-bits-guava.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a unique and refreshing beverage experience with B Natural Fruits n Bits Guava. Made with the real fruit pulp of juicy guavas and infused with nutritious chia seeds, this drink offers a delightful combination of flavour and texture. Slow down and relish the soft, chewy cha seeds in every sip, as the drink feels like you're eating it as well as drinking it. Crafted with Indian fruits and no concentrates, preservatives or artificial colours, this guilt-free delight is a rich source of dietary fibre. Enjoy the natural goodness anytime, anywhere in the convenient PET bottle. Whether you're looking for a pre- or post-workout drink, a refreshing pick-me-up during a busy day, or a relaxing treat at home, B Natural Fruits n Bits Guava is the perfect addition to any occasion. Discover the joy of savouring the little things in life with this handpicked, natural fruit juice.",
+   "ingredients": "Water, Guava Pulp, Sugar, Chia Seeds, Acidity Regulators, Aloe Vera Bits, Vitamin C, Natural Flavours and Natural Flavouring Substances, Stabilizers, Nature Identical Flavouring Substances, Iodised Salt, Polydextrose (Dietary fibre) and Colours.",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy (kcal)": "83 kcal",
+    "Protein (g)": "0.23 g",
+    "Carbohydrate (g)": "21.20 g",
+    "Total Sugars (g)": "19.95 g",
+    "Natural Fruit Sugars (g)": "2.70 g",
+    "Added Sugars (g)": "17.25 g",
+    "Dietary Fibre (g)": "0.0 g",
+    "Total fat (g)": "22.5 g",
+    "Sodium (mg)": "9.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "ITC Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Fruits N Bits Litchi Juice",
@@ -1116,7 +1388,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297923-8_2-b-natural-fruits-n-bits-litchi-with-apple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Treat your taste buds to a delightful new experience with the B Natural Fruits n Bits Litchi beverage. This cool and refreshing drink is made with real fruit pulp, combining the sweet flavours of litchi and apple, and infused with juicy fruit bits. Sip and savour the soft, chewy textures that make every gulp feel like you're eating the fruit itself. Crafted with Indian fruits and no artificial flavours or preservatives, this beverage is a rich source of dietary fibre, providing a natural and nutritious boost. Enjoy this perfect blend in a convenient PET bottle, perfect for any occasion - whether you need a post-workout refreshment, a thirst-quenching pick-me-up, or a delightful treat during a relaxing day or movie night with friends. Discover the joy of every moment with the B Natural Fruits n Bits Litchi, made from the finest quality fruits handpicked across India.",
+   "ingredients": "Water, Apple Juice (11.0%), Sugar, #Aloe Vera Bits (3.2%), **Litchi Pulp (1.0%), Polydextrose (Dietary Fibre) (0.75%), Acidity Regulators [INS 296, INS 331 (iii), INS 327, INS 330], Nature Identical Flavouring Substances, Stabilizers (INS 418, INS 466, INS 415, INS 401), Vitamin C, Colours (INS 160b (i), INS 171, INS 122) and Natural Flavours and Natural Flavouring Substances.",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100 ml",
+    "Serving Size": "150 ml",
+    "Energy (kcal)": "68 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "17.49 g",
+    "Total Sugars (g)": "16.47 g",
+    "Natural Fruit Sugars (g)": "1.86 g",
+    "Added Sugars (g)": "14.61 g",
+    "Dietary Fiber (g)": "1.02 g",
+    "Total fat (g)": "0.0 g",
+    "Sodium (mg)": "22.5 mg",
+    "Vitamin C (mg)": "9.0 mg"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "ITC Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Fruits N Bits Mixed Fruit Juice",
@@ -1161,7 +1455,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297925-8_2-b-natural-fruits-n-bits-mixed-fruit.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a unique and delightful beverage experience with the B Natural Fruits n Bits Mixed Fruit. This captivating blend bursts with the juicy flavours of pineapple, orange, and mango, infused with real fruit bits that elevate the drink to a whole new level. Savour the heavenly taste as you slowly relish the soft, chewy textures of the fruit pieces, creating a sensory delight. Made with Indian fruits and a rich source of dietary fibre, this sweet and refreshing juice is free from added preservatives and artificial colours. Enjoy the natural goodness of this beverage whenever the craving strikes, whether you're at home, in the office, or on the go. Quench your thirst and energise your day with the perfect balance of quality and taste in every sip of B Natural Fruits n Bits Mixed Fruit.",
+   "ingredients": "Water, Sugar, Guava Pulp, Banana Puree, Mango Pulp, Aloe Vera Bits, Pineapple Pulp, Polydextrose (Dietary fibre), Acidity Regulators, Mango Bits, Natural Flavours and Natural Flavouring Substances, Stabilizers, Nature Identical Flavouring Substances, Vitamin C, Colours, Orange Pulp, Litchi Pulp, Pomegranate Juice, Peach Pulp, Apricot Pulp, Plum Pulp",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100 ml",
+    "Serving Size": "150 ml",
+    "Energy (kcal)": "75 kcal",
+    "Protein (g)": "0.2 g",
+    "Carbohydrate (g)": "19.04 g",
+    "Total Sugars (g)": "17.91 g",
+    "Natural Fruit Sugars (g)": "3.30 g",
+    "Added Sugars (g)": "14.61 g",
+    "Dietory Fibre (g)": "1.13 g",
+    "Total fot (g)": "0.0 g",
+    "Sodium (mg)": "22.5 mg",
+    "Vitamin C (mg)": "30.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "ITC Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Cranberry Juice No Added Sugar",
@@ -1206,7 +1522,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358290-8_4-b-natural-b-natural-cranberry-juice-no-added-sugar-750ml.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Cranberry Juice (No Added Sugar) is a refreshing beverage made with natural fruit sugars, offering a pleasantly tangy taste. This low-calorie drink is perfect for those seeking a lighter option without compromising on flavour. Carefully crafted to retain the goodness of cranberries, it provides a crisp and revitalising experience, making it ideal for everyday enjoyment at home or on the go.",
+   "ingredients": "Water, Apple Juice Concentrate (6.1%), Cranberry Pulp (1%), Natural Flavours and Natural Flavouring Substances, Acidity Regulator (330), Nature Identical Flavouring Substances, Iodized Salt, Stabilisers (466, 415), Sweeteners (960, 955) and Colour (122).\nEquivalent to 42% of reconstituted apple juice.\nMay contain milk, nut, soy, sulphite and oats.",
+   "nutritionalInfo": {
+    "Energy": "18 kcal (1.4%)",
+    "Protein": "0.1 g",
+    "Carbohydrate": "4.5 g",
+    "Total Sugars": "4.4 g",
+    "Natural Fruit Sugars": "4.4 g",
+    "Added Sugars": "0.0 g (0.0%)",
+    "Dietary Fibre": "0.1 g",
+    "Total Fat": "0.0 g (0.0%)",
+    "Sodium": "16.0 mg (1.2%)"
+   },
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Guava Juice No Added Sugar",
@@ -1251,7 +1585,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341886-8_5-b-natural-guava-fruit-beverage-with-natural-fruit-sugar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the refreshing taste of B Natural Guava Fruit Juice, made with natural fruit sugars and no added sugar or preservatives. Packed with the goodness of real guavas, it is a low-calorie drink that is both delicious and wholesome. Enjoy a perfect blend of taste and nutrition in every sip, making it an ideal guilt-free refreshment for any time of the day.",
+   "ingredients": "Water, Guava Pulp (20.3%), Apple Juice Concentrate (4.16%), Natural Flavours and Natural Flavouring Substances, Acidity Regulators [330, 331(iii)], Stabilizers [466, 415], Vitamins, Sweeteners [960, 955], Colours [150d, 124], and Iodized Salt.",
+   "nutritionalInfo": {
+    "Per": "100 ml",
+    "Energy": "20 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "5.0g",
+    "Total Sugars": "4.7g",
+    "Natural Fruit Sugars": "4.7g",
+    "Added Sugars": "0.0 g",
+    "Dietary Fibre": "0.3 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "8.0 mg",
+    "Vitamin C": "10.0 mg"
+   },
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixed Fruit Juice No Added Sugar",
@@ -1296,7 +1650,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341885-8_5-b-natural-mixed-fruit-beverage.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the delightful blend of fruits in B Natural Mixed Fruit Juice, made with natural fruit sugars and no added sugar or preservatives. This low-calorie drink is enriched with the goodness of real fruits, offering a refreshing and nourishing experience in every sip. Enjoy a naturally delicious way to stay refreshed and energised, anytime, anywhere.",
+   "ingredients": "Water, Guava Pulp (90%), Banana Puree (75%), Mango Pulp (3.7%), Apple Juice Concentrate (2.37%), Pomegranate Juice (1.0%), Pineapple Pulp (0.4%), Litchi Pulp (0.27%), Natural Flavours and Natural Flavouring Substances, Acidity Regulators (330, 331(iii)), Nature Identical Flavouring Substances, Vitamin, Stabilisers (466, 415), Colours (171, 110, 102) and Sweeteners (960, 955).\nEquivalent to 16.35% reconstituted apple juice.\nMay contain milk, nut, soy and sulphite.",
+   "nutritionalInfo": {
+    "Energy": "20 kcal",
+    "Protein": "0.1g",
+    "Carbohydrate": "5.0g",
+    "Total Sugars": "4.7g",
+    "Natural Fruit Sugars": "4.7g",
+    "Added Sugars": "0.0g",
+    "Dietary Fibre": "0.3g",
+    "Total Fat": "0.0g",
+    "Sodium": "8.0mg",
+    "Vitamin C": "20.0mg"
+   },
+   "manufacturerName": "Balan Agro Products Private Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pomegranate Juice No Added Sugar",
@@ -1341,7 +1714,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358289-8_4-b-natural-b-natural-pomegranate-juice-no-added-sugar-750ml.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Pomegranate Juice is a fruit beverage made from pomegranate and contains no added sugar, relying on naturally occurring fruit sugars for its taste. With 18 kcal per 100 ml, it offers a light and refreshing option for everyday consumption. Conveniently packaged, it is suitable for on-the-go use and is best enjoyed chilled for a more pleasant drinking experience.",
+   "ingredients": "Water, pomegranate juice (25%), apple juice concentrate (0.5%), natural flavours and natural flavouring substances, acidity regulator (INS 330), nature-identical flavouring substances, iodised salt, stabilisers (INS 466, INS 415), sweeteners (INS 960, INS 955), and colour (INS 122).\nEquivalent to 3.45% reconstituted apple juice.\nAllergen Advice: May contain milk, nuts, soya, sulphite and oats.",
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconut Water with Litchi",
@@ -1386,7 +1766,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341887-8_9-b-natural-coconut-water-with-litchi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Stay refreshed with B Natural Coconut Water with Litchi Fruit Juice, a delicious blend of pure coconut water and the sweet taste of litchi. Made with no added sugar, it offers natural hydration and a refreshing taste. Enjoy a perfect balance of flavour and goodness in every sip, making it an ideal choice to stay refreshed throughout the day.",
+   "ingredients": "Water, Concentrated Tender Coconut Water (5%), Tender Coconut Water, Preservative (202), Litchi Pulp (1.3%), Nature Identical Flavouring Substances, Vitamin and Acidity Regulator (330).\nEquivalent to 9% Reconstituted Tender Coconut Water.\nMay contain milk, nut, soy and sulphite.",
+   "nutritionalInfo": {
+    "Energy": "22 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "5.6 g",
+    "Total Sugars": "5.6 g",
+    "Natural Fruit Sugars": "5.6 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "20.0 mg",
+    "Vitamin C": "6.0 mg"
+   },
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tender Coconut Water",
@@ -1431,7 +1829,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297921-8_8-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Quench your thirst and satisfy your taste buds with the all-new B Natural Select Tender Coconut Water - the ultimate healthy and convenient drink. Naturally refreshing and bursting with the beloved flavour of 'Nariyal Paani', this pure, fat-free beverage offers a tropical paradise experience anytime, anywhere. Crafted with no added sugar or artificial flavours, it's the perfect choice to keep you hydrated throughout the day. Enjoy the smooth, creamy texture and the naturally sweet taste that will transport you to a serene coconut grove. Whether you're on the go or relaxing at home, B Natural Select Tender Coconut Water is your go-to drink for a truly refreshing and satisfying experience.",
+   "ingredients": "Water (90.5%), concentrated tender coconut water (9.5%), minerals, preservatives (INS 202, INS 224, INS 234), natural flavours and natural flavouring substances.",
+   "nutritionalInfo": {
+    "Energy": "21 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "5.3 g",
+    "Total Sugars": "5.3 g",
+    "Natural Fruit Sugars": "5.3 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "30.0 mg"
+   },
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Select Tender Coconut Water",
@@ -1447,7 +1862,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920_6-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
-    }
+    },
+    "barcode": "8901725010577"
    }
   ],
   "images": [
@@ -1476,7 +1892,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297920-8_5-b-natural-select-tender-coconut-water-no-added-sugar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Quench your thirst and satisfy your taste buds with the all-new B Natural Select Tender Coconut Water - the ultimate healthy and convenient drink. Naturally refreshing and bursting with the beloved flavour of 'Nariyal Paani', this pure, fat-free beverage offers a tropical paradise experience anytime, anywhere. Crafted with no added sugar or artificial flavours, it's the perfect choice to keep you hydrated throughout the day. Enjoy the smooth, creamy texture and the naturally sweet taste that will transport you to a serene coconut grove. Whether you're on the go or relaxing at home, B Natural Select Tender Coconut Water is your go-to drink for a truly refreshing and satisfying experience.",
+   "ingredients": "Water (90.5%), concentrated tender coconut water (9.5%), minerals, preservatives (INS 202, INS 224, INS 234), natural flavours and natural flavouring substances.",
+   "nutritionalInfo": {
+    "Energy": "21 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "5.3 g",
+    "Total Sugars": "5.3 g",
+    "Natural Fruit Sugars": "5.3 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "30.0 mg"
+   },
+   "storageInstructions": "Refrigerate after opening and consume within 5 days.\nKeep away from direct sunlight.",
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconut Cola",
@@ -1521,6 +1955,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370950-8_1-b-natural-coconut-cola-soft-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "B Natural Coconut Cola is a refreshing sparkling beverage that combines the distinctive taste of cola with the light, tropical notes of tender coconut water. Crafted for a unique flavour experience, it offers a balanced blend of fizz and refreshment in every sip. Best enjoyed chilled, it is a delightful choice for social gatherings, meals or moments of indulgence.",
+   "ingredients": "Reconstituted Tender Coconut Water (54%) [Water, Concentrated Tender Coconut Water (4.1%), Preservative (INS 202(ii))], Water, Carbonating Agent (Carbon Dioxide), Natural Flavours and Natural Flavouring Substances, Colour (INS 150a), Acidity Regulators (INS 330, INS 331(iii)), Nature-Nature Identical Flavouring Substances, Sweetener (INS 960) and Preservative (INS 211).\nContains Naturally Occurring Sugars.\nMay Contain Sulphites.\nNo Caffeine.\nContains Non-Caloric Sweetener. This Product Contains Steviol Glycosides.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "1.2",
+    "Protein (g)": "0.0",
+    "Carbohydrates (g)": "2.3",
+    "Total Sugars (g)": "2.3",
+    "Natural Fruit Sugars (g)": "2.3",
+    "Added Sugars (g)": "0.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "11.0"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  }
 ]
