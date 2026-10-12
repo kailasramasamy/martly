@@ -1,0 +1,272 @@
+{
+  "brand": "Rajdhani",
+  "manufacturer": "Rajdhani Flour Mills Ltd",
+  "feed": "rajdhani-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/rajdhani/logo-5bfd2ebd.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Rajdhani ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Rajdhani Besan (Gram Flour)": "Besan",
+    "Rajdhani Kabuli Chana (White Chickpeas)": "Kabuli Chana",
+    "Rajdhani Lobia (Black Eyed Peas)": "Lobia Safed",
+    "Rajdhani Maida (Refined Flour)": "Maida",
+    "Rajdhani Masoor Dal": "Masri Dal",
+    "Rajdhani Panchratna Dal (5-Lentil Mix)": "Mix Dal",
+    "Rajdhani Sooji (Semolina)": "Sooji",
+    "Rajdhani Toor Dal": "Arhar Dal",
+    "Rajdhani Urad Dal (Split)": "Urad Dhuli"
+  },
+  "rules": [
+    {
+      "match": "^Arhar\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Toor Dal (Arhar)"
+      ]
+    },
+    {
+      "match": "^Chana\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chana Dal"
+      ]
+    },
+    {
+      "match": "^Unpolished\\ Chana\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chana Dal"
+      ]
+    },
+    {
+      "match": "^Kabuli\\ Chana$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chole (Kabuli Chana)"
+      ]
+    },
+    {
+      "match": "^Lobia\\ Safed$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Lobia (Black Eyed Peas)"
+      ]
+    },
+    {
+      "match": "^Masri\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Masoor Dal"
+      ]
+    },
+    {
+      "match": "^Masoor\\ Malka$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Masoor Dal"
+      ]
+    },
+    {
+      "match": "^Masoor\\ Sabut$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Masoor Dal"
+      ]
+    },
+    {
+      "match": "^Moong\\ Sabut$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Urad\\ Dhuli$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Urad\\ Chilka$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Urad\\ Sabut$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Rajma\\ Lal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Rajma"
+      ]
+    },
+    {
+      "match": "^Rajma\\ Srinagar$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Rajma"
+      ]
+    },
+    {
+      "match": "^Mix\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Matar\\ Safed$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Matar\\ Hara$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Moth\\ Sabut$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Besan$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Besan (Gram Flour)"
+      ]
+    },
+    {
+      "match": "^Mota\\ Besan$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Besan (Gram Flour)"
+      ]
+    },
+    {
+      "match": "^Maida$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Maida (Refined Flour)"
+      ]
+    },
+    {
+      "match": "^Sooji$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Sooji & Rava"
+      ]
+    },
+    {
+      "match": "^Chana\\ Sattu$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Sattu"
+      ]
+    },
+    {
+      "match": "^Makki\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Corn Flour"
+      ]
+    },
+    {
+      "match": "^Chakki\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Dalia$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Instant\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Choco\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Poha$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Poha & Puffed Rice"
+      ]
+    },
+    {
+      "match": "^Plain\\ Makhana$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Chana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    }
+  ]
+}
