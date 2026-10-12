@@ -3,10 +3,7 @@ import {
   View,
   Text,
   FlatList,
-  TouchableOpacity,
-  TextInput,
   StyleSheet,
-  ScrollView,
   ActivityIndicator,
   Dimensions,
 } from "react-native";
@@ -23,8 +20,10 @@ import { FloatingCart } from "../../components/FloatingCart";
 import { HeroBannerSlide } from "../../components/HeroBannerSlide";
 import { ShopByBrands } from "../../components/ShopByBrands";
 import { CategorySidebar } from "../../components/CategorySidebar";
-import { brandsFromProducts } from "../../lib/brand-strip";
-import type { StoreProduct, DepartmentNode, Banner } from "../../lib/types";
+import { CategoryFilterBar, type PriceSort } from "../../components/CategoryFilterBar";
+import { useCategoryFacets, useCategoryProducts } from "../../lib/use-category-browse";
+import type { BrandTile } from "../../lib/brand-strip";
+import type { DepartmentNode, Banner } from "../../lib/types";
 
 // Unified tree node for recursive category browsing
 interface TreeNode {
@@ -58,6 +57,16 @@ interface SubcategoryWithCount {
   translations?: Record<string, { name?: string; description?: string }> | null;
 }
 
+// A node's own id plus every descendant id
+function collectIds(node: TreeNode): Set<string> {
+  const ids = new Set<string>([node.id]);
+  const walk = (n: TreeNode) => n.children.forEach((c) => { ids.add(c.id); walk(c); });
+  walk(node);
+  return ids;
+}
+
+const EMPTY_SCOPE = new Set<string>();
+
 export default function CategoryScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const navigation = useNavigation();
@@ -65,18 +74,18 @@ export default function CategoryScreen() {
   const { getLocalizedName } = useLanguage();
 
   const [category, setCategory] = useState<TreeNode | null>(null);
-  const [allProducts, setAllProducts] = useState<StoreProduct[]>([]);
-  const [loading, setLoading] = useState(true);
   const [activeSub, setActiveSub] = useState<string | null>(null);
   const [contentWidth, setContentWidth] = useState(0);
   const [filterOnSale, setFilterOnSale] = useState(false);
-  const [sortBy, setSortBy] = useState<"price_asc" | "price_desc" | null>(null);
+  const [sortBy, setSortBy] = useState<PriceSort | null>(null);
   const [activeGrandchild, setActiveGrandchild] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [debouncedQuery, setDebouncedQuery] = useState("");
   const [brandId, setBrandId] = useState<string | null>(null);
   const [topBanners, setTopBanners] = useState<Banner[]>([]);
 
   const gridRef = useRef<FlatList>(null);
+  const storeId = selectedStore?.id;
 
   // Fetch full category tree and find our category node (gives recursive children)
   useEffect(() => {
@@ -102,183 +111,65 @@ export default function CategoryScreen() {
       .catch(() => {});
   }, [id, navigation]);
 
-  // Fetch all products for this parent category (includes descendants)
-  useEffect(() => {
-    if (!id || !selectedStore) return;
-    setLoading(true);
-    api
-      .getList<StoreProduct>(
-        `/api/v1/stores/${selectedStore.id}/products?categoryId=${id}&pageSize=200`
-      )
-      .then((res) => setAllProducts(res.data))
-      .catch(() => {})
-      .finally(() => setLoading(false));
-  }, [id, selectedStore]);
-
   // Fetch CATEGORY_TOP banners — detect level from tree to send correct param
   useEffect(() => {
-    if (!selectedStore || !id || !category) return;
+    if (!storeId || !id || !category) return;
     // Determine which level this node is at by checking the tree
     const isTopLevel = category.children.some((c) => c.children.length > 0);
     const param = isTopLevel ? "departmentId" : category.children.length > 0 ? "categoryId" : "subcategoryId";
     api
-      .get<Banner[]>(`/api/v1/banners/by-placement/${selectedStore.id}?placement=CATEGORY_TOP&${param}=${id}`)
+      .get<Banner[]>(`/api/v1/banners/by-placement/${storeId}?placement=CATEGORY_TOP&${param}=${id}`)
       .then((res) => setTopBanners(res.data))
       .catch(() => {});
-  }, [selectedStore, id, category]);
+  }, [storeId, id, category]);
 
-  // Build subcategory list with product counts
-  const subcategories = useMemo((): SubcategoryWithCount[] => {
-    if (!category?.children?.length) return [];
+  // Search as the user pauses typing, not on every keystroke
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedQuery(searchQuery), 300);
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
 
-    // Collect all descendant IDs per direct child
-    const childDescendants = new Map<string, Set<string>>();
-    const allChildren = category.children;
+  const activeSubNode = category?.children.find((c) => c.id === activeSub) ?? null;
+  const activeGrandchildNode = activeSubNode?.children.find((c) => c.id === activeGrandchild) ?? null;
+  const selectedNode = activeGrandchildNode ?? activeSubNode ?? category;
+  const selectedNodeId = selectedNode?.id ?? null;
+  const scope = useMemo(() => (selectedNode ? collectIds(selectedNode) : EMPTY_SCOPE), [selectedNode]);
 
-    for (const child of allChildren) {
-      const ids = new Set<string>([child.id]);
-      // Add grandchildren etc.
-      const collectDescendants = (node: TreeNode) => {
-        for (const c of node.children ?? []) {
-          ids.add(c.id);
-          collectDescendants(c);
-        }
-      };
-      collectDescendants(child);
-      childDescendants.set(child.id, ids);
-    }
+  // Counts for the sidebar and pills come from the whole page's node; brands follow the current selection
+  const pageFacets = useCategoryFacets(storeId, id ?? null);
+  const selectionFacets = useCategoryFacets(storeId, selectedNodeId !== id ? selectedNodeId : null);
+  const nodeFacets = selectedNodeId === id ? pageFacets : selectionFacets;
 
-    // Collect all descendant category IDs across all children
-    const allDescIds = new Set<string>();
-    for (const ids of childDescendants.values()) {
-      for (const cid of ids) allDescIds.add(cid);
-    }
+  const { products, loading, loadingMore, loadMore } = useCategoryProducts({
+    storeId, nodeId: selectedNodeId, onSale: filterOnSale, sortBy, brandId, query: debouncedQuery, scope,
+  });
 
-    const result = allChildren.map((child) => {
-      const descIds = childDescendants.get(child.id)!;
-      const uniqueProducts = new Set(
-        allProducts
-          .filter((p) => p.product?.subcategory?.id && descIds.has(p.product.subcategory?.id))
-          .map((p) => p.product.id)
-      );
-      return { id: child.id, name: child.name, imageUrl: child.imageUrl ?? null, count: uniqueProducts.size, translations: child.translations };
-    });
-
-    // Add "Other" for products not in any subcategory (e.g. assigned to parent category directly)
-    const otherCount = new Set(
-      allProducts
-        .filter((p) => !p.product?.subcategory?.id || !allDescIds.has(p.product.subcategory?.id))
-        .map((p) => p.product.id)
-    ).size;
-    if (otherCount > 0) {
-      result.push({ id: "__other__", name: "Other", imageUrl: null, count: otherCount });
-    }
-
-    return result;
-  }, [category, allProducts]);
-
-  // Build grandchild list (children of the active subcategory) with product counts
-  const grandchildren = useMemo((): SubcategoryWithCount[] => {
-    if (!activeSub || !category?.children?.length) return [];
-    const sub = category.children.find((c) => c.id === activeSub);
-    if (!sub?.children?.length) return [];
-
-    return sub.children.map((gc) => {
-      const ids = new Set<string>([gc.id]);
-      const collectDesc = (node: TreeNode) => {
-        for (const c of node.children ?? []) {
-          ids.add(c.id);
-          collectDesc(c);
-        }
-      };
-      collectDesc(gc);
-      const uniqueProducts = new Set(
-        allProducts
-          .filter((p) => p.product?.subcategory?.id && ids.has(p.product.subcategory?.id))
-          .map((p) => p.product.id)
-      );
-      return { id: gc.id, name: gc.name, count: uniqueProducts.size, translations: gc.translations };
-    });
-  }, [activeSub, category, allProducts]);
-
-  // Filter products by selected subcategory (and grandchild if active)
-  const filteredProducts = useMemo(() => {
-    if (!activeSub) return allProducts;
-
-    // "Other" — products not in any real subcategory
-    if (activeSub === "__other__") {
-      const allDescIds = new Set<string>();
-      for (const child of category?.children ?? []) {
-        const collect = (node: TreeNode) => {
-          allDescIds.add(node.id);
-          for (const c of node.children ?? []) collect(c);
-        };
-        collect(child);
-      }
-      return allProducts.filter((p) => !p.product?.subcategory?.id || !allDescIds.has(p.product.subcategory?.id));
-    }
-
-    const sub = category?.children?.find((c) => c.id === activeSub);
-    if (!sub) return allProducts;
-
-    // If a grandchild is selected, narrow to that grandchild + its descendants
-    const targetNode = activeGrandchild
-      ? sub.children?.find((c) => c.id === activeGrandchild) ?? sub
-      : sub;
-
-    const ids = new Set<string>([targetNode.id]);
-    const collect = (node: TreeNode) => {
-      for (const c of node.children ?? []) {
-        ids.add(c.id);
-        collect(c);
-      }
-    };
-    collect(targetNode);
-    return allProducts.filter(
-      (p) => p.product?.subcategory?.id && ids.has(p.product.subcategory?.id)
-    );
-  }, [allProducts, activeSub, activeGrandchild, category]);
-
-  // Apply chip filters (food type, on sale) and search
-  const chipFilteredProducts = useMemo(() => {
-    let result = filteredProducts;
-
-    if (searchQuery.trim()) {
-      const q = searchQuery.trim().toLowerCase();
-      result = result.filter((p) => {
-        const name = p.product?.name?.toLowerCase() ?? "";
-        const brand = p.product?.brand?.name?.toLowerCase() ?? "";
-        return name.includes(q) || brand.includes(q);
-      });
-    }
-
-    if (filterOnSale) {
-      result = result.filter((p) => p.pricing?.discountActive === true);
-    }
-
-    return result;
-  }, [filteredProducts, searchQuery, filterOnSale]);
-
-  const brandTiles = useMemo(() => brandsFromProducts(filteredProducts), [filteredProducts]);
-  const visibleProducts = useMemo(
-    () => (brandId ? chipFilteredProducts.filter((p) => p.product.brand?.id === brandId) : chipFilteredProducts),
-    [chipFilteredProducts, brandId],
+  const withCounts = useCallback(
+    (nodes: TreeNode[]): SubcategoryWithCount[] =>
+      nodes.map((n) => ({
+        id: n.id, name: n.name, imageUrl: n.imageUrl ?? null, translations: n.translations,
+        count: [...collectIds(n)].reduce((sum, sid) => sum + (pageFacets?.subcategoryCounts[sid] ?? 0), 0),
+      })),
+    [pageFacets],
   );
+  const subcategories = useMemo(() => withCounts(category?.children ?? []), [category, withCounts]);
+  const grandchildren = useMemo(() => withCounts(activeSubNode?.children ?? []), [activeSubNode, withCounts]);
+  const brandTiles: BrandTile[] = nodeFacets?.brands ?? [];
+
+  const scrollToTop = useCallback(() => gridRef.current?.scrollToOffset({ offset: 0, animated: true }), []);
 
   const handleSubcategoryPress = useCallback(
     (subId: string | null) => {
       setActiveSub((prev) => (prev === subId ? null : subId));
       setActiveGrandchild(null);
       setBrandId(null);
-      gridRef.current?.scrollToOffset({ offset: 0, animated: true });
+      scrollToTop();
     },
-    []
+    [scrollToTop]
   );
 
   // Scroll to top when filters change
-  useEffect(() => {
-    gridRef.current?.scrollToOffset({ offset: 0, animated: true });
-  }, [filterOnSale, sortBy, activeGrandchild, brandId]);
+  useEffect(scrollToTop, [filterOnSale, sortBy, activeGrandchild, brandId]);
 
   useEffect(() => setBrandId(null), [activeGrandchild]);
 
@@ -313,145 +204,23 @@ export default function CategoryScreen() {
     );
   };
 
-  const renderSearchBox = () => (
-    <View style={styles.searchContainer}>
-      <Ionicons name="search" size={16} color="#94a3b8" style={styles.searchIcon} />
-      <TextInput
-        style={styles.searchInput}
-        placeholder="Search products..."
-        placeholderTextColor="#94a3b8"
-        value={searchQuery}
-        onChangeText={setSearchQuery}
-        returnKeyType="search"
-        autoCorrect={false}
-      />
-      {searchQuery.length > 0 && (
-        <TouchableOpacity onPress={() => setSearchQuery("")} activeOpacity={0.7}>
-          <Ionicons name="close-circle" size={18} color="#94a3b8" />
-        </TouchableOpacity>
-      )}
-    </View>
-  );
-
-  const renderGrandchildPills = () => {
-    if (grandchildren.length === 0) return null;
-
-    return (
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.pillScroll}
-        contentContainerStyle={styles.pillBar}
-      >
-        <TouchableOpacity
-          style={[styles.pill, !activeGrandchild && styles.pillActive]}
-          onPress={() => {
-            setActiveGrandchild(null);
-            gridRef.current?.scrollToOffset({ offset: 0, animated: true });
-          }}
-          activeOpacity={0.7}
-        >
-          <Text
-            style={[styles.pillText, !activeGrandchild && styles.pillTextActive]}
-          >
-            All
-          </Text>
-        </TouchableOpacity>
-
-        {grandchildren.map((gc) => {
-          const isActive = activeGrandchild === gc.id;
-          return (
-            <TouchableOpacity
-              key={gc.id}
-              style={[styles.pill, isActive && styles.pillActive]}
-              onPress={() => {
-                setActiveGrandchild((prev) => (prev === gc.id ? null : gc.id));
-                gridRef.current?.scrollToOffset({ offset: 0, animated: true });
-              }}
-              activeOpacity={0.7}
-            >
-              <Text style={[styles.pillText, isActive && styles.pillTextActive]}>
-                {getLocalizedName(gc)}
-              </Text>
-            </TouchableOpacity>
-          );
-        })}
-      </ScrollView>
-    );
-  };
-
-  const renderFilterChips = () => (
-    <ScrollView
-      horizontal
-      showsHorizontalScrollIndicator={false}
-      style={styles.chipScroll}
-      contentContainerStyle={styles.chipBar}
-    >
-      {brandId && (
-        <TouchableOpacity style={[styles.chip, styles.chipActive]} onPress={() => setBrandId(null)} activeOpacity={0.7}>
-          <Text style={[styles.chipText, styles.chipTextActive]}>{brandTiles.find((b) => b.id === brandId)?.name}</Text>
-          <Ionicons name="close" size={13} color="#fff" />
-        </TouchableOpacity>
-      )}
-      <TouchableOpacity
-        style={[styles.chip, filterOnSale && styles.chipActive]}
-        onPress={() => setFilterOnSale((v) => !v)}
-        activeOpacity={0.7}
-      >
-        <Ionicons
-          name="pricetag"
-          size={13}
-          color={filterOnSale ? "#fff" : "#64748b"}
-        />
-        <Text style={[styles.chipText, filterOnSale && styles.chipTextActive]}>
-          On Sale
-        </Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        style={[styles.chip, sortBy === "price_asc" && styles.chipActive]}
-        onPress={() =>
-          setSortBy((v) => (v === "price_asc" ? null : "price_asc"))
-        }
-        activeOpacity={0.7}
-      >
-        <Ionicons
-          name="arrow-up"
-          size={13}
-          color={sortBy === "price_asc" ? "#fff" : "#64748b"}
-        />
-        <Text
-          style={[
-            styles.chipText,
-            sortBy === "price_asc" && styles.chipTextActive,
-          ]}
-        >
-          Price
-        </Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        style={[styles.chip, sortBy === "price_desc" && styles.chipActive]}
-        onPress={() =>
-          setSortBy((v) => (v === "price_desc" ? null : "price_desc"))
-        }
-        activeOpacity={0.7}
-      >
-        <Ionicons
-          name="arrow-down"
-          size={13}
-          color={sortBy === "price_desc" ? "#fff" : "#64748b"}
-        />
-        <Text
-          style={[
-            styles.chipText,
-            sortBy === "price_desc" && styles.chipTextActive,
-          ]}
-        >
-          Price
-        </Text>
-      </TouchableOpacity>
-    </ScrollView>
+  const renderFilters = () => (
+    <CategoryFilterBar
+      searchQuery={searchQuery}
+      onSearchChange={setSearchQuery}
+      pills={grandchildren}
+      activePill={activeGrandchild}
+      onPillSelect={(gcId) => {
+        setActiveGrandchild(gcId);
+        scrollToTop();
+      }}
+      brandName={brandId ? brandTiles.find((b) => b.id === brandId)?.name ?? null : null}
+      onClearBrand={() => setBrandId(null)}
+      onSale={filterOnSale}
+      onToggleSale={() => setFilterOnSale((v) => !v)}
+      sortBy={sortBy}
+      onSortChange={setSortBy}
+    />
   );
 
   const renderProductGrid = (narrow: boolean) => {
@@ -463,7 +232,7 @@ export default function CategoryScreen() {
       );
     }
 
-    if (visibleProducts.length === 0) {
+    if (products.length === 0) {
       return (
         <View style={styles.emptyContainer}>
           <View style={styles.emptyIcon}>
@@ -486,11 +255,14 @@ export default function CategoryScreen() {
         keyboardDismissMode="on-drag"
         keyboardShouldPersistTaps="handled"
         ref={gridRef}
-        products={visibleProducts}
+        products={products}
         layout="grid"
         sortBy={sortBy ?? undefined}
         cardWidth={narrow && contentWidth > 0 ? (contentWidth - 20 - GRID_GAP) / 2 : GRID_CARD_WIDTH}
         ListHeaderComponent={renderTopBanner(narrow)}
+        onEndReached={loadMore}
+        onEndReachedThreshold={0.6}
+        ListFooterComponent={loadingMore ? <ActivityIndicator style={styles.pageLoader} color={colors.primary} /> : null}
         midSlot={{
           afterRows: 2,
           bleed: narrow ? styles.gridNarrow.paddingHorizontal : styles.grid.paddingHorizontal,
@@ -516,17 +288,13 @@ export default function CategoryScreen() {
               style={styles.contentArea}
               onLayout={(e) => setContentWidth(e.nativeEvent.layout.width)}
             >
-              {renderSearchBox()}
-              {renderGrandchildPills()}
-              {renderFilterChips()}
+              {renderFilters()}
               {renderProductGrid(true)}
             </View>
           </View>
         ) : (
           <View style={{ flex: 1 }}>
-            {renderSearchBox()}
-            {renderGrandchildPills()}
-            {renderFilterChips()}
+            {renderFilters()}
             {renderProductGrid(false)}
           </View>
         )}
@@ -549,92 +317,6 @@ const styles = StyleSheet.create({
   contentArea: {
     flex: 1,
     backgroundColor: colors.surface,
-  },
-  searchContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginHorizontal: 10,
-    marginTop: 8,
-    paddingHorizontal: 10,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: "#f1f5f9",
-    borderWidth: 1,
-    borderColor: "#e2e8f0",
-  },
-  searchIcon: {
-    marginRight: 6,
-  },
-  searchInput: {
-    flex: 1,
-    fontSize: 13,
-    letterSpacing: 0,
-    color: colors.text,
-    paddingVertical: 0,
-  },
-  pillScroll: {
-    minHeight: 44,
-    flexGrow: 0,
-  },
-  pillBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    gap: 8,
-  },
-  pill: {
-    height: 32,
-    paddingHorizontal: 14,
-    borderRadius: 16,
-    backgroundColor: "#f1f5f9",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  pillActive: {
-    backgroundColor: colors.primary,
-  },
-  pillText: {
-    fontSize: 12,
-    fontWeight: "600",
-    color: colors.textSecondary,
-  },
-  pillTextActive: {
-    color: "#fff",
-  },
-  chipScroll: {
-    minHeight: 40,
-    flexGrow: 0,
-  },
-  chipBar: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    gap: 8,
-  },
-  chip: {
-    flexDirection: "row",
-    height: 30,
-    alignItems: "center",
-    gap: 4,
-    paddingHorizontal: 10,
-    borderRadius: 16,
-    borderWidth: 1,
-    borderColor: "#e2e8f0",
-    backgroundColor: "#fff",
-  },
-  chipActive: {
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
-  },
-  chipText: {
-    fontSize: 12,
-    fontWeight: "600",
-    color: "#64748b",
-  },
-  chipTextActive: {
-    color: "#fff",
   },
   grid: {
     paddingHorizontal: GRID_H_PADDING,
@@ -678,5 +360,8 @@ const styles = StyleSheet.create({
   },
   topBanner: {
     marginBottom: 12,
+  },
+  pageLoader: {
+    paddingVertical: spacing.md,
   },
 });

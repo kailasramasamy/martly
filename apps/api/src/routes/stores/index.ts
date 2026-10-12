@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { createStoreSchema, updateStoreSchema, storeProductSearchQuerySchema } from "@martly/shared/schemas";
-import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
+import type { ApiResponse, CategoryFacets, PaginatedResponse } from "@martly/shared/types";
 import { authenticate, authenticateOptional } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { requireOrgContext, orgScopedStoreFilter, getOrgUser, getOrgStoreIds, verifyStoreOrgAccess } from "../../middleware/org-scope.js";
@@ -10,6 +10,7 @@ import { haversine } from "../../lib/geo.js";
 import { searchStoreProducts } from "../../services/store-search.js";
 import { decorateStoreProducts, storeProductInclude } from "../../services/store-product-view.js";
 import { getStoreDiscoveryInfo } from "../../services/store-discovery.js";
+import { categoryFacets, subcategoryIdsUnder } from "../../services/category-browse.js";
 
 export async function storeRoutes(app: FastifyInstance) {
   // List stores (scoped to user's org; guests see all active stores)
@@ -279,21 +280,8 @@ export async function storeRoutes(app: FastifyInstance) {
       ];
     }
     if (categoryId) {
-      // Detect level: try department → category → subcategory
-      const dept = await app.prisma.department.findUnique({ where: { id: categoryId } });
-      if (dept) {
-        const cats = await app.prisma.category.findMany({ where: { departmentId: categoryId }, select: { id: true } });
-        const subs = await app.prisma.subcategory.findMany({ where: { categoryId: { in: cats.map((c) => c.id) } }, select: { id: true } });
-        where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: { in: subs.map((s) => s.id) } };
-      } else {
-        const cat = await app.prisma.category.findUnique({ where: { id: categoryId } });
-        if (cat) {
-          const subs = await app.prisma.subcategory.findMany({ where: { categoryId }, select: { id: true } });
-          where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: { in: subs.map((s) => s.id) } };
-        } else {
-          where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: categoryId };
-        }
-      }
+      const subcategoryIds = await subcategoryIdsUnder(app.prisma, categoryId);
+      where.product = { ...(where.product as Record<string, unknown> ?? {}), subcategoryId: { in: subcategoryIds } };
     }
     if (foodType) {
       where.product = { ...(where.product as Record<string, unknown> ?? {}), foodType };
@@ -308,7 +296,8 @@ export async function storeRoutes(app: FastifyInstance) {
     else if (sortBy === "newest") orderBy = { createdAt: "desc" };
 
     const [storeProducts, total] = await Promise.all([
-      app.prisma.storeProduct.findMany({ where, skip, take: Number(pageSize), include: storeProductInclude, orderBy }),
+      // id breaks ties (bulk imports share timestamps and prices) so pages never repeat or skip a listing
+      app.prisma.storeProduct.findMany({ where, skip, take: Number(pageSize), include: storeProductInclude, orderBy: [orderBy, { id: "asc" }] }),
       app.prisma.storeProduct.count({ where }),
     ]);
     const data = await decorateStoreProducts(app.prisma, storeProducts);
@@ -320,6 +309,19 @@ export async function storeRoutes(app: FastifyInstance) {
     };
     return response;
   });
+
+  // Per-subcategory product counts and top brands under a browse node, so category screens can page products
+  app.get<{ Params: { id: string }; Querystring: { categoryId?: string } }>(
+    "/:id/category-facets", { preHandler: [authenticateOptional] }, async (request, reply) => {
+      const { categoryId } = request.query;
+      if (!categoryId) return reply.badRequest("categoryId is required");
+      const store = await app.prisma.store.findUnique({ where: { id: request.params.id }, select: { id: true } });
+      if (!store) return reply.notFound("Store not found");
+      if (!(await verifyStoreOrgAccess(request, app.prisma, store.id))) return reply.forbidden("Access denied");
+      const response: ApiResponse<CategoryFacets> = { success: true, data: await categoryFacets(app.prisma, store.id, categoryId) };
+      return response;
+    },
+  );
 
   // ── Product Substitutes ──────────────────────────────
 

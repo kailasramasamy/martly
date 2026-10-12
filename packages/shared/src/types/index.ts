@@ -123,3 +123,9 @@ export interface BrandDirectory {
   departments: DirectoryDepartment[];
   brandCount: number;
 }
+
+// Category browse: how many products a store lists in each subcategory under a node, and its top brands there
+export interface CategoryFacets {
+  subcategoryCounts: Record<string, number>;
+  brands: { id: string; name: string; imageUrl: string | null; count: number }[];
+}
