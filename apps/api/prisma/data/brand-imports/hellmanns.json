@@ -1,0 +1,46 @@
+{
+  "brand": "Hellmann's (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "hellmanns-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/hellmanns/logo-7acf11e2.png",
+  "themeColor": "#1B4C8C",
+  "themeColorSecondary": "#F5C518",
+  "namePrefix": "Hellmann's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Real\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Cheezy\\ Jalapeno\\ Burst\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Garlic\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Smoky\\ Tandoori\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    }
+  ]
+}
