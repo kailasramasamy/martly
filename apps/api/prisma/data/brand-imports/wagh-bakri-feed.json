@@ -60,7 +60,17 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052450-8_6-wagh-bakri-leaf-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Crafted for true chai lovers, Wagh Bakri Premium Tea blends tradition with taste. Its bold flavour and golden hue come from carefully selected Assam leaves, offering a rich, satisfying experience. With 100+ years of legacy and global love, it's more than just tea - it's a moment of warmth, connection, and trusted quality in every sip.",
+   "nutritionalInfo": {
+    "Serving Size": "14g Carbohydrates: 12.6 g Sugar: 10.5 g Protein: 0.6 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Leaf Tea Carton",
@@ -76,7 +86,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267221_5-wagh-bakri-premium-leaf-tea.jpg"
-    }
+    },
+    "barcode": "8901747001539"
    },
    {
     "title": "500g",
@@ -114,7 +125,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267221-8_2-wagh-bakri-premium-leaf-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "This tea is an undisputed leader in Gujarat, Madhya Pradesh and Rajasthan. It is now a preferred choice of consumers in Delhi, Maharashtra, Goa, Chhattisgarh and Andhra Pradesh. The tea is made of fine-quality tea leaves specially handpicked from selected quality gardens. The brand offers region-specific blends for supreme consumer satisfaction.",
+   "storageInstructions": "Store in a cool, dry & hygienic place.\nOnce opened, transfer the contents into an airtight container and keep the lid tightly closed after each use.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Leaf Tea Jar",
@@ -130,7 +147,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/240161_2-wagh-bakri-premium-tea-perfect-leaf.jpg"
-    }
+    },
+    "barcode": "8901747001515"
    }
   ],
   "images": [
@@ -150,7 +168,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/240161-5_1-wagh-bakri-premium-tea-perfect-leaf.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wagh Bakri Premium Leaf Tea is an exceptional tea that delights the senses with its rich colour, strong taste, and stimulating fragrance. Crafted with the finest quality tea leaves meticulously handpicked from selected gardens, this tea is an undisputed leader in Gujarat, Madhya Pradesh, and Rajasthan, and has become the preferred choice of consumers across Delhi, Maharashtra, Goa, Chhattisgarh, and Andhra Pradesh. The brand's region-specific blends ensure supreme consumer satisfaction, catering to every palate with a versatile flavour profile. Each leaf is carefully processed to preserve its natural oils and flavours, resulting in a rich and satisfying tea-drinking experience that evokes nostalgia and warmth with every sip. Wagh Bakri Premium Leaf Tea is not just a beverage, but an experience that provides a comforting respite from the hustle and bustle of daily life, thanks to its natural antioxidants and soothing properties.",
+   "ingredients": "Tea",
+   "storageInstructions": "*Store in a cool, dry place",
+   "usageInstructions": "Add Hot Milk or Water and filter it.\nAdd sugar.\nEnjoy the tasty and aroma tea.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Dust Tea",
@@ -210,7 +236,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052455_3-wagh-bakri-dust-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the rich and robust flavour of Wagh Bakri Dust Tea, a true delight for tea connoisseurs. Crafted with carefully selected leaves since 1892, this tea offers a strong taste, deep colour, and more cups per serving. The experienced tea tasters have blended the leaves to perfection, ensuring an aromatic and invigorating experience with every sip. Handpicked from select quality gardens, these tea leaves provide a rich and satisfying taste that will leave you craving more. Enjoy the unmatched quality and flavour of Wagh Bakri Dust Tea, a timeless classic loved by millions since its inception.",
+   "storageInstructions": "Once opened, transfer the contents into an airtight\ncontainer and keep the lid tightly closed after each use\nStore in a cool, dry & hygienic place.",
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Masala Chai",
@@ -226,7 +259,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20003981_12-wagh-bakri-spiced-tea-blend-of-7-refreshing-spices.jpg"
-    }
+    },
+    "barcode": "8901747002093"
    },
    {
     "title": "500g",
@@ -264,7 +298,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003981-8_2-wagh-bakri-spiced-tea-blend-of-7-refreshing-spices.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Rejuvenate yourself with this refreshing spice tea made from rich, premium fresh leaves and seven authentic Indian spices. The name Wagh Bakri is one of the most trusted names in Indian households. It is especially famous among tea lovers. A Unique Blend of 7 Refreshing Spices. This tea is flavoured with clove, ginger, black pepper, cinnamon, nutmeg, lemongrass, and piper longum.",
+   "ingredients": "Black Tea & Natural Flavouring Substances ^ (Ginger, Black Pepper, Cardamom, Piper Longum, Clove, Cinnamon & Nutmeg. Natural Spice Extracts",
+   "storageInstructions": "Once opened, transfer the contents into an airtight\ncontainer and keep the lid tightly closed after each use\nStore in a cool, dry & hygienic place.",
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Royale Leaf Tea",
@@ -280,7 +322,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40354977_2-wagh-bakri-royale-leaf-tea.jpg"
-    }
+    },
+    "barcode": "8901747006435"
    },
    {
     "title": "450g",
@@ -318,7 +361,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40354977-8_2-wagh-bakri-royale-leaf-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the refined taste of Royale Leaf Tea, carefully selected to offer a rich and aromatic brew. Sourced from quality tea leaves, it delivers a smooth, well-balanced flavour that can be enjoyed at any time of the day. Whether served plain, with milk, or with a hint of lemon, this tea brings comfort and freshness to every cup. Thoughtfully packed to preserve its natural essence, Royale Leaf Tea is perfect for daily use or for sharing with guests.",
+   "manufacturerName": "Wagh Bakri House",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Good Morning Premium Tea",
@@ -366,7 +415,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267217_4-wagh-bakri-good-morning-premium-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Good Morning Premium Tea is favoured by connoisseurs as one of the premium mixes of tea. The mix has been prepared by Wagh Bakri's expert tea tasters and assures a rich blend of aroma, flavour, colour, taste, and strength.",
+   "ingredients": "Tea",
+   "storageInstructions": "*Store in a cool, dry place\n*To retain the flavour store in an air tight container",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Navchetan Strong Leaf Tea",
@@ -429,7 +485,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052463-8_1-wagh-bakri-leaf-tea-navchetan.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wagh Bakri Navchetan Leaf Tea is a premium, expertly crafted blend that delivers a bold and aromatic brew. Carefully selected tea leaves from quality gardens provide a rich, vibrant colour and a delightful flavour profile. The right blend, prepared by experienced tasters, ensures a robust strength and captivating aroma, making this an ideal choice for tea lovers. Hygienically packed for safety, this tea is perfect for starting your day off right, or enjoying as a refreshing pick-me-up with evening snacks. With its considered good blend compared to local brands, this premium tea is sure to awaken your senses and provide a truly satisfying tea experience.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mili Premium Strong Leaf Tea",
@@ -468,7 +531,17 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052460-6_1-wagh-bakri-leaf-tea-mili.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, refreshing flavour of Wagh Bakri's premium tea. Crafted with meticulous care, this tea is made from handpicked leaves sourced from the finest gardens, carefully selected and blended by experienced tea tasters. The result is a harmonious balance of strength and aroma that delivers a truly indulgent tea experience in every sip. Enjoy the deep, vibrant colour and the perfect combination of robustness and refreshment that Wagh Bakri tea has to offer.",
+   "ingredients": "Tea",
+   "nutritionalInfo": {
+    "Serving Size": "500g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mili Dust Tea",
@@ -491,7 +564,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052462_1-wagh-bakri-tea-mili-dust.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tea leaves handpicked from select quality gardens that gives colour quickly. Right blend that gives Strength and Aroma, that has been prepared by experienced tea tasters which also ensures more cuppage.",
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fanning Tea",
@@ -539,7 +618,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052458_1-wagh-bakri-tea-fanning.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wagh Bakri Fanning Tea is a blend cut between Leaf and Dust. It gives strong taste, bright colour and more cuppage.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Assam Tea Bags",
@@ -590,7 +674,18 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052467_2-wagh-bakri-premium-assam-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wagh Bakri Premium Assam Tea is an unmistakable combination of artfully blended tea and breakthrough packaging. It is rich in antioxidants and is packed in innovative double-chambered staple-free bags, ensuring health benefits and safety. The Wagh Bakri Tea Group, well-known for its premium tea, has been in the tea business since 1892 and is one of the leading packaged tea companies in India with a turnover of over Rs. 1500 Cr. and over 40 million Kgs of tea distribution. The group is a leading player in tea exports and has a strong retail presence across India, with a truly global brand image.",
+   "ingredients": "Tea",
+   "nutritionalInfo": {
+    "Serving Size": "2g",
+    "Net Weight": "50g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Tea Bags",
@@ -644,7 +739,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052469_2-wagh-bakri-masala-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wagh Bakri Masala Chai Tea Bag has authentic Indian spices mixed with your favourite blend of Wagh Bakri Tea. These double chambered tea bags facilitate faster infusion and being staple-free they can be used in a microwave oven as well.",
+   "ingredients": "Black Tea, Natural Ginger Flavour, Balck Pepper, Cardamom, Cinnamon, Clove, Nutmeg, Piper Longu",
+   "nutritionalInfo": {
+    "Nutrition per gram": "2g",
+    "Serving Size": "100ml",
+    "Energy (kcal)": "125.28",
+    "Protein": "24.929 Traces",
+    "Carbohydrate": "6.40 Traces",
+    "Fat (All types)": "Traces Traces"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ginger Tea Bags",
@@ -686,7 +796,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052470-7_1-wagh-bakri-ginger-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Now relish the amazing flavour of aromatic Ginger with your favourite Wagh Bakri Tea. Wagh Bakri Ginger Tea Bags ensures you a refreshing aroma, hypnotic colour and natural flavour with every sip you take. It is packed in double chambered tea bags that make tea drinking an enticing and sophisticated experience.",
+   "ingredients": "Tea, Natural Ginger Flavour",
+   "usageInstructions": "Place a teabag in a cup.\nPour hot water over it. infuse for 1-2 mins.\nDip the teabag a few more times.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Green Tea",
@@ -702,7 +819,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20003985_3-wagh-bakri-green-tea.jpg"
-    }
+    },
+    "barcode": "8901747002529"
    }
   ],
   "images": [
@@ -722,7 +840,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003985-5_2-wagh-bakri-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wagh Bakri Green Tea is solely from the leaves of Camellia Sinensis that have undergone minimal oxidation during processing. Green Tea is a rich source of antioxidants that protect your health. So, savour this premium quality brew from the House of Wagh Bakri and cultivate a healthy tea drinking habit.",
+   "ingredients": "Green Tea",
+   "nutritionalInfo": {
+    "Serving Size": "1/2 teaspoon",
+    "Calories": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Total Carbohydrates": "0 g",
+    "Dietary Fiber": "0 g",
+    "Total Sugars": "0 g",
+    "Protein": "0 g"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Darjeeling Green Tea",
@@ -738,7 +876,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20003980_3-wagh-bakri-organic-tea-darjeeling-green.jpg"
-    }
+    },
+    "barcode": "8901747000600"
    }
   ],
   "images": [
@@ -761,7 +900,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003980-6_1-wagh-bakri-organic-tea-darjeeling-green.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "100% Organic Certified. Grown & cultivated by eco-friendly methods without the use of chemical pesticides fertilisers. Grown and cultivated by eco-friendly methods without the use of chemical pesticides, fertilizers or growth promoters. A golden allure, muscatel flavour and superlative taste are definitive characters of this prized tea. The green processing method renders it richer in EGCG and other antioxidants, making it a healthier option.",
+   "ingredients": "100% Organic tea",
+   "usageInstructions": "Bring 1 cup (120 ml) of water to a boil.\nAdd one tablespoon of Darjeeling Green Tea per cup.\nLet it brew for 1-2 mins, based on the desired strength & flavour\nStrain and serve with milk and sugar according to the desired taste.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Good Morning Green Tea Bags",
@@ -777,7 +923,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40052477_1-wagh-bakri-good-morning-tea-bags-green-tea.jpg"
-    }
+    },
+    "barcode": "8901747002949"
    }
   ],
   "images": [
@@ -785,7 +932,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052477_1-wagh-bakri-good-morning-tea-bags-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Green Tea is made solely with the leaves of Camellia Sinesis which is not oxidized during processing. In Asia this smooth, delicate brew has been used for medical purposes for thousands of years.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Honey Lemon Green Tea Bags",
@@ -839,7 +991,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40125792-8_1-waghbakri-green-tea-honey-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Awaken your senses and nourish your body with Wagh Bakri's Green Tea in the delightful Honey Lemon flavour. This refreshing wellness drink is more than just a regular cup of tea - it's a therapeutic experience for your body. Crafted from freshly plucked leaves that are carefully heated, rolled and dried, this green tea retains its precious catechins and antioxidants, making it a rich source of natural goodness. Sip on this Zero-calorie beverage and feel the difference it brings to your day, one refreshing mouthful at a time. Enjoy the benefits of green tea in every revitalising sip.",
+   "ingredients": "Green Tea, Natural Honey Lemon Flavour",
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Gujarat Tea Processor & Packers Limited",
+   "fssaiLicense": "10013022001865",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mint Green Tea Bags",
@@ -881,7 +1041,20 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003984-7_1-wagh-bakri-green-tea-mint.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wagh Bakri Tea master blenders and tasters have selected the finest green tea made from the leaves of Camellia Sinensis that have undergone minimal oxidation during processing. Wagh Bakri Green Tea is naturally rich in antioxidants (flavonoids). The antioxidants (flavonoids) may help to reduce the harmful effects of stress and pollution on your body.",
+   "ingredients": "Green tea and Natural Mint Flavour",
+   "nutritionalInfo": {
+    "Serving Size": "1.5g",
+    "Energy (Kcal)": "111.56 Kcal",
+    "Protein (g)": "21.34 g",
+    "Carbohydrate (g)": "6.55 g",
+    "Total fat (g)": "Traces"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd"
+  }
  },
  {
   "title": "Tulsi Green Tea Bags",
@@ -897,7 +1070,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40052478_2-wagh-bakri-green-tea-tulsi.jpg"
-    }
+    },
+    "barcode": "8901747002796"
    }
   ],
   "images": [
@@ -920,7 +1094,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052478-6_1-wagh-bakri-green-tea-tulsi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your wellness journey with Wagh Bakri Tulsi Green Tea, a premium blend that harmonises the ancient wisdom of Tulsi and the modern rejuvenation of green tea. Crafted with utmost care by master tea blenders and tasters, this unique infusion is rich in antioxidants and bursting with natural healing properties. Infused with the revered Tulsi, known as the 'Queen of Herbs' in India, and complemented by the refreshing notes of green tea, this handcrafted blend offers a delightful sensory experience. Enjoy the soothing aroma, the smooth and balanced flavour, and the rejuvenating effects that will leave you feeling energised and revitalised. Whether you're seeking a moment of calm or a boost of wellness, this travel-friendly, enveloped tea bag is your perfect companion for natural healing and an upgraded tea collection.",
+   "ingredients": "Green tea, Natural Tulsi leaves and Natural Tulsi Flavour",
+   "nutritionalInfo": {
+    "Nutrition per gram": "1.5g",
+    "Serving Size": "1.5g",
+    "Energy (Kcal)": "103.12 Kcal",
+    "Protein (g)": "18.63 g",
+    "Carbohydrate (g)": "7.15 g",
+    "Total fat (g)": "Traces g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd"
+  }
  },
  {
   "title": "Shudh Kahwa Green Tea Bags",
@@ -965,7 +1153,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40300620-8_1-wagh-bakri-green-tea-shudh-kahwa-with-rock-salt.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, aromatic experience of Wagh Bakri Shudh Kahwa Green Tea. Crafted from the finest Camellia Sinensis leaves that have undergone minimal oxidation, this tea is brimming with antioxidants and natural flavonoids that help combat the damaging effects of stress and pollution. Infused with a carefully curated blend of traditional spices, including cinnamon and cardamom, Wagh Bakri Kahwa Green Tea aids digestion and boosts the body's natural defences against external infection. Convenient and easy to carry, this refreshing tea is the perfect pick-me-up for any time of day, whether you're in an afternoon slump or gearing up for a long workday. Sip and savour the authentic flavours of this time-honoured tradition, or enjoy a revitalising cup before your workout to enhance your performance. With over 100 years of expertise, Wagh Bakri delivers a truly exceptional green tea experience.",
+   "ingredients": "Black Pepper, Pink Salt, Rock Salt, Ginger Flavour, Green Tea, Citric Acid (330), Green Tea Extract, Black Salt, Asafoetida, Clove, Ginger, Cinnamon, Tulsi, Cardamom, Basil Flavour & Nutmeg",
+   "nutritionalInfo": {
+    "Nutrition per gram": "2.5g",
+    "Energy (kcal)": "181 kcal",
+    "Protein (g)": "5.13 g",
+    "Carbohydrate": "40.16 g",
+    "Sugar": "Nil",
+    "Fat (All types)": "Traces"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "GTPPL Kheda - Bagodara Highway",
+   "fssaiLicense": "10001202100045",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Lemon Grass Tea",
@@ -1010,7 +1214,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052479-8_2-wagh-bakri-instant-lemon-grass-tea-premix-with-sugar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Wagh Bakri Instant Premix Tea - Lemon Grass is a delightful blend of premium tea, lemon grass, and other natural ingredients. It offers a refreshing and aromatic tea experience, perfect for any time of the day. The tea is made from carefully selected leaves and infused with the goodness of lemon grass, providing a soothing and rejuvenating cup of tea.",
+   "ingredients": "Sugar, Dairy Whitener, Instant Tea(6.5%) And Lemon Grass Flavour.",
+   "nutritionalInfo": {
+    "Serving Size": "14g",
+    "Energy (Kcal)": "56.78",
+    "Protein (g)": "1.31",
+    "Carbohydrate (g)": "11.49",
+    "Sugar (g)": "6.63",
+    "Total Fat (All types) (g)": "0.62",
+    "Saturated Fat (g)": "0.31"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Lemon Grass Tea - No Added Sugar",
@@ -1048,7 +1268,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052481-6_1-wagh-bakri-instant-premix-lemon-grass-no-added-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The lemon grass instant tea premix has a rich aroma and zesty flavour along with multiple health benefits. To relish this amazing tea all you need to do is mix it in hot water.",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sipz Masala Instant Chai Premix",
@@ -1064,7 +1289,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30009200_8-wagh-bakri-instant-tea-premix-masala.jpg"
-    }
+    },
+    "barcode": "8901747002239"
    }
   ],
   "images": [
@@ -1093,7 +1319,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009200-8_7-wagh-bakri-instant-tea-premix-masala.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Whether you're at home, in the office, or on the go, the convenience of the Wagh Bakri Instant Masala Tea Premix allows you to relish the authentic taste of traditional Indian chai without any hassle. Experience the perfect balance of flavour and wellness with Wagh Bakri's premium tea offerings, a brand that has been delighting tea enthusiasts since 1892.",
+   "ingredients": "Sugar, Dairy Whitener, Instant Tea, Masala Flavour",
+   "nutritionalInfo": {
+    "Energy Value": "434.64 kcal",
+    "Protein": "8.11 g",
+    "Carbohydrate": "82.55 g",
+    "Total Sugars": "57.00 g",
+    "Added Sugars": "45.85 g",
+    "Total Fat": "8.00 g",
+    "Saturated Fat": "1.47 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "5.00 mg",
+    "Sodium": "310.56 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sipz Ginger Instant Chai Premix",
@@ -1109,7 +1355,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30009202_8-wagh-bakri-instant-premix-tea-ginger-3-in-1.jpg"
-    }
+    },
+    "barcode": "8901747002260"
    }
   ],
   "images": [
@@ -1138,7 +1385,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009202-8_7-wagh-bakri-instant-premix-tea-ginger-3-in-1.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your tea-drinking experience with Wagh Bakri Instant Tea Premix Ginger, a perfect blend of rich flavours and invigorating aroma. This ginger instant tea premix has an enticing, aromatic taste that is sure to delight your senses. Packed with antioxidants and numerous health benefits, it's the ideal choice for those seeking a refreshing and nourishing beverage. Simply mix a sachet of this premix with hot water, and you'll be greeted with a steaming cup of homemade-style tea in seconds. No need for tea leaves, milk, or sugar - everything you need is conveniently contained in each sachet for your enjoyment. Indulge guilt-free in the remarkable flavour of Wagh Bakri Instant Tea Premix Ginger, now available in a no added sugar variant to cater to health-conscious customers. Whether you're looking to boost your immunity, improve digestion, or simply enjoy a soothing beverage, this tea has you covered. Experience the comforting taste of home anytime, anywhere, with the convenience of Wagh Bakri Instant Tea Premix Ginger.",
+   "ingredients": "Sugar, Milk Solids, Maltodextrin, Instant Tea (6.5%) & Natural Flavouring Substance (Ginger)",
+   "nutritionalInfo": {
+    "Energy Value": "413.76 kcal",
+    "Protein": "8.71 g",
+    "Carbohydrate": "83.93 g",
+    "Total Sugars": "50.00 g",
+    "Added Sugars": "40.00 g",
+    "Total Fat": "4.80 g",
+    "Saturated Fat": "1.17 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "8.00 mg",
+    "Sodium": "171.53 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sipz Elaichi Instant Chai Premix",
@@ -1183,7 +1450,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009201-8_5-wagh-bakri-elaichi-tea-instant-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and rejuvenating experience of Wagh Bakri's lemon-flavoured tea. Crafted to perfection, this premium blend combines the tangy, healthy notes of lemon with the rich, aromatic flavours of cardamom and high-quality tea leaves. Whether you enjoy it in the morning, during a work break, or as a soothing nighttime beverage, this tea is the perfect pick-me-up for your senses. Expertly blended by the Wagh Bakri Tea Group, a trusted brand with over 130 years of experience, this tea offers a truly global and authentic taste. Indulge in the convenience of a quick and easy 3-in-1 preparation, and let every sip transport you through the soothing aroma and invigorating flavours of this cardamom-infused delight.",
+   "ingredients": "Sugar, Milk Solids, Instant Tea (6.5%), Maltodextrin & Natural Flavouring Substance (Cardamom)",
+   "nutritionalInfo": {
+    "Energy Value": "429.66 kcal",
+    "Protein": "7.73 g",
+    "Carbohydrate": "84.61 g",
+    "Total Sugars": "51.29 g",
+    "Added Sugars": "45.00 g",
+    "Total Fat": "6.70 g",
+    "Saturated Fat": "0.00 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "6.00 mg",
+    "Sodium": "170.12 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sipz Instant Chai Premix Combo",
@@ -1228,7 +1515,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052480-8_6-wagh-bakri-instant-premix-tea-3-in-1-combo-pack-with-masalaginger-elaichi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the perfect trio of flavours with Wagh Bakri's Instant Tea Premix Combo Pack. Dive into the fragrant embrace of Elaichi, feel the fiery warmth of Ginger, and savour the exquisite blend of spices in Masala. This trio of flavours brings excitement to every cup, elevating your tea-drinking experience. With the combo pack, you can switch between flavours and indulge in a delightful variety of aromatic teas.",
+   "ingredients": "Wagh Bakri Instant Masala Flavour Chai: Sugar, Milk Solids, Instant Tea (6.5%), Maltodextrin & Natural Flavouring Substance (Masala)\nWagh Bakri Instant Elaichi Flavour Chai: Sugar, Milk Solids, Instant Tea (6.5%), Maltodextrin & Natural Flavouring Substance (Cardamom).\nWagh Bakri Instant Ginger Flavour Chai: Sugar, Milk Solids, Maltodextrin, Instant Tea (6.5%) & Natural Flavouring Substance (Ginger).\nContains Milk.",
+   "nutritionalInfo": {
+    "Energy Value": "429.66 kcal",
+    "Protein": "7.73 g",
+    "Carbohydrate": "84.61 g",
+    "Total Sugars": "51.29 g",
+    "Added Sugars": "45.00 g",
+    "Total Fat": "6.70 g",
+    "Saturated Fat": "0.00 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "6.00 mg",
+    "Sodium": "170.12 mg"
+   },
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sipz Lemon Ice Tea Premix",
@@ -1273,7 +1579,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052485-8_5-wagh-bakri-ice-tea-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the heat with Wagh Bakri Iced Tea, an instant Assam blend packed with rich flavour and vitamin C. Just mix, add ice, and enjoy a classy summer refreshment, with no brewing and no fuss. Free from preservatives, it is your go-to cooler in four flavours. Trusted for 130+ years, sip in style and chill anytime, anywhere.",
+   "ingredients": "Sugar, Soluble Tea Solids (2.4%), Acidity Regulator (INS 330, INS 296), Nature Identical Flavouring Substances (Lemon) and Vitamin C (Ascorbic Acid).",
+   "nutritionalInfo": {
+    "Energy Value": "394.80 kcal",
+    "Protein": "0.43 g",
+    "Carbohydrate": "96.20 g",
+    "Total Sugars": "94.10 g",
+    "Added Sugars": "94.10 g",
+    "Total Fat": "0.00 g",
+    "Vitamin C": "70.86 mg",
+    "Sodium": "105.28 mg"
+   },
+   "manufacturerName": "Gujarat Tea Processors and",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sipz Orange Ice Tea Premix",
@@ -1318,7 +1641,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195758-8_5-wagh-bakri-orange-ice-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the heat with Wagh Bakri Iced Tea - an instant Assam blend packed with rich flavour and Vitamin C. Just mix, add ice, and enjoy a classy summer refreshment. Free from preservatives, it's your go-to cooler in four flavours. Trusted for 130+ years, sip in style, chill anytime, anywhere.",
+   "ingredients": "Sugar, Soluble Tea Solids (2.7%), Nature Identical Flavouring Substances (Orange), Acidity Regulator (INS 330, INS 296), and Vitamin C (Ascorbic Acid).",
+   "nutritionalInfo": {
+    "Energy Value": "391.05 kcal",
+    "Protein": "0.41 g",
+    "Carbohydrate": "96.70 g",
+    "Total Sugars": "94.02 g",
+    "Added Sugars": "94.00 g",
+    "Total Fat": "0.29 g",
+    "Vitamin C": "74.01 mg",
+    "Sodium": "120.12 mg"
+   },
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sipz Peach Ice Tea Premix",
@@ -1363,7 +1703,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195759-8_5-wagh-bakri-peach-ice-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the heat with Wagh Bakri Ice Tea - an instant Assam blend packed with rich flavour and Vitamin C. Just mix, add ice, and enjoy a classy summer refreshment. Free from preservatives, it's your go-to cooler in four flavours. Trusted for 130+ years, sip in style, chill anytime, anywhere.",
+   "ingredients": "Sugar, Soluble Tea Solids (2.8%), Acidity Regulators (INS 296, INS 300), Nature Identical Flavouring Substances (Peach) and Vitamin C (Ascorbic Acid).",
+   "nutritionalInfo": {
+    "Energy Value": "390.48 kcal",
+    "Protein": "0.52 g",
+    "Carbohydrate": "97.10 g",
+    "Total Sugars": "94.34 g",
+    "Added Sugars": "94.00 g",
+    "Total Fat": "0.00 g",
+    "Vitamin C": "72.86 mg",
+    "Sodium": "130.12 mg"
+   },
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lemon Ice Tea Premix",
@@ -1379,7 +1736,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40341092_5-wagh-bakri-lemon-flavour-ice-tea.jpg"
-    }
+    },
+    "barcode": "8901747005254"
    }
   ],
   "images": [
@@ -1407,7 +1765,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341092-8_4-wagh-bakri-lemon-flavour-ice-tea.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Beat the heat with Wagh Bakri Ice Tea, an instant premix Assam blend packed with rich flavour and Vitamin C. Just mix, add ice, and enjoy a classy summer refreshment with no brewing or fuss. It is free from preservatives and is your go-to cooler in four flavours. Trusted for 130+ years, sip in style, chill anytime, anywhere.",
+   "ingredients": "Sugar, Soluble Tea Solids (2.4%), Acidity Regulator (INS 330, INS 296), Nature Identical Flavouring Substances (Lemon) and Vitamin C (Ascorbic Acid)",
+   "nutritionalInfo": {
+    "Energy Value": "394.80 kcal",
+    "Protein": "0.43 g",
+    "Carbohydrate": "96.20 g",
+    "Total Sugars": "94.10 g",
+    "Added Sugars": "94.10 g",
+    "Total Fat": "0 g",
+    "Vitamin C": "70.86 mg",
+    "Sodium": "105.28 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peach Ice Tea Premix",
@@ -1452,6 +1828,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341093-8_5-wagh-bakri-peach-flavour-ice-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the heat with Wagh Bakri Ice Tea, an instant premix Assam blend packed with rich flavour and Vitamin C. Just mix, add ice, and enjoy a classy summer refreshment. Free from preservatives, it's your go-to cooler in four flavours. Trusted for 130+ years, sip in style, chill anytime, anywhere.",
+   "ingredients": "Sugar, Soluble Tea Solids (2.8%), Acidity Regulators (INS 296, INS 330), Nature and Identical Flavouring Substances (Peach) and Vitamin C (Ascorbic Acid)",
+   "nutritionalInfo": {
+    "Energy Value": "390.48 kcal",
+    "Protein": "0.5 g",
+    "Carbohydrate": "97.10 g",
+    "Total Sugars": "94.34 g",
+    "Added Sugars": "94 g",
+    "Total Fat": "0 g",
+    "Vitamin C": "72.86 mg",
+    "Sodium": "130.12 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Gujarat Tea Processors & Packers Ltd. is",
+   "fssaiLicense": "10014021001231",
+   "countryOfOrigin": "India"
+  }
  }
 ]
