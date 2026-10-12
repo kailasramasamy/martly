@@ -1,0 +1,858 @@
+{
+  "brand": "Urban Platter",
+  "manufacturer": "Urban Platter (Gourmet Foodworld Pvt. Ltd.)",
+  "feed": "urban-platter-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/urban-platter/logo-720fd3f7.png",
+  "themeColor": "#111111",
+  "themeColorSecondary": "#E8A33D",
+  "namePrefix": "Urban Platter ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Urban Platter Coconut Cream": "Unsweetened Coconut Cream",
+    "Urban Platter Coconut Milk": "Unsweetened Coconut Milk",
+    "Urban Platter Tahini Paste": "White Tahini Paste"
+  },
+  "rules": [
+    {
+      "match": "^Afghan\\ Munakka\\ Raisins$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Agar\\ Agar\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Alfalfa\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Aka\\ Miso\\ Paste$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Whole\\ Allspice$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Unsweetened\\ Almond\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Arabian\\ Date\\ Syrup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Arabian\\ Sea\\ Salt\\ Crystals$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Bakers\\ Active\\ Dry\\ Yeast$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Baking\\ Soda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Basil\\ Seeds\\ \\(Sabja\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Black\\ Kalamata\\ Olives$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Blue\\ Butterfly\\ Pea\\ Flower\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Cajun\\ Spice\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Cayenne\\ Pepper\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Chalkidiki\\ Green\\ Olives\\ with\\ Wild\\ Oregano$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Cheddar\\ Cheeze\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Chinese\\ Five\\-Spice\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Cinnamon\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Classic\\ Korean\\ Gochujang$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Aminos\\ Onion\\ \\&\\ Garlic$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Soy Sauce"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Flour$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Corn\\ Syrup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Dehydrated\\ Beetroot\\ Powder$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    },
+    {
+      "match": "^Dijon\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^Double\\ Acting\\ Baking\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Dried\\ Shiitake\\ Mushrooms$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Dried\\ Wakame\\ Seaweed$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Fysh\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Instant\\ Coconut\\ Green\\ Chutney\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Instant\\ Idli\\ Podi\\ Chutney\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Instant\\ Tteokbokki\\ Buldak\\ Flavour$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Italian\\ 00\\ Pizza\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Maida (Refined Flour)"
+      ]
+    },
+    {
+      "match": "^Hon\\ Mirin\\ Japanese\\ Cooking\\ Rice\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Komezu\\ Japanese\\ Rice\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Awasezu\\ Japanese\\ Sushi\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Jungmyeon\\ Wheat\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Kaffir\\ Lime\\ Leaves$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Kalguksu\\ Flat\\ Wheat\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Red\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Kewra\\ Water$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Kimchi\\ Paste$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Korean\\ BBQ\\ Chilli\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Korean\\ Buldak\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Korean\\ Gochugaru\\ Hot\\ Pepper\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Korean\\ Gochujang\\ Dipping\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Korean\\ Kimchi\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Juice\\ Concentrate$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Lime\\ Juice\\ Concentrate$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Pepper\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Thai\\ Jasmine\\ Rice$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Mexican\\ Chipotle\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Aji\\-No\\-Moto\\ MSG\\ Shaker$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Natural\\ Cocoa\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Gulkand\\ Rose\\ Petal\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Nori\\ Komi\\ Furikake\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Nutritional\\ Yeast\\ Flakes$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    },
+    {
+      "match": "^OatWOW\\ Classic\\ Oat\\ Beverage$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^OatWOW\\ Barista\\ Edition\\ Oat\\ Beverage$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Panko\\ Japanese\\ Bread\\ Crumbs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Pitted\\ California\\ Prunes$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Chickenless\\ Bouillon\\ \\&\\ Broth\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Portuguese\\ Peri\\ Peri\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Instant\\ Mashed\\ Potato\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Professional\\ Active\\ Dry\\ Yeast\\ Sachets$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Pure\\ Maple\\ Syrup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Ramen\\ Instant\\ Broth\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Ramen\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Red\\ Kidney\\ Beans\\ in\\ Brine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Rice\\ Paper\\ Spring\\ Roll\\ Wrappers$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Rolled\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Shirataki\\ Long\\ Grain\\ Rice$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Shirataki\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Shirataki\\ Rice$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Shiro\\ Miso\\ Paste$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Short\\ Grain\\ Sushi\\ Rice$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Soba\\ Buckwheat\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Somyeon\\ Wheat\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Soya\\ Milk\\ Powder$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Special\\ Dark\\ Cocoa\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Sumac\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Sushi\\ Nori\\ Sheets$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Sushi\\ Rice\\ Seasoning\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Dangmyeon\\ Sweet\\ Potato\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Tikka\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Thai\\ Red\\ Curry\\ Base$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Tofu\\ Scramble\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Ryorizake\\ Japanese\\ Cooking\\ Sake$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Tteokbokki\\ Rice\\ Cakes$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Ready\\-to\\-Cook\\ Udon\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Thick\\ Udon\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Unsweetened\\ Coconut\\ Cream$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Coconut Milk & Cream"
+      ]
+    },
+    {
+      "match": "^Unsweetened\\ Coconut\\ Milk$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Coconut Milk & Cream"
+      ]
+    },
+    {
+      "match": "^California\\ Almond\\ Flour$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^Veg\\ Soya\\ Chaap$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Bengal\\ Mustard\\ Kasundi\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^Vegan\\ Parmesan\\ Cheezy\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Vegan\\ Elaichi\\ Chai\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Vegan\\ Worcestershire\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Vegetable\\ Bouillon\\ \\&\\ Broth\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^White\\ Quinoa\\ Flour$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^White\\ Tahini\\ Paste$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Tahini"
+      ]
+    },
+    {
+      "match": "^Whole\\ White\\ Quinoa$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Quinoa & Couscous"
+      ]
+    },
+    {
+      "match": "^Za'atar\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    }
+  ]
+}
