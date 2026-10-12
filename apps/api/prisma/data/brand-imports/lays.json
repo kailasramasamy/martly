@@ -1,0 +1,224 @@
+{
+  "brand": "Lay's (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt Ltd",
+  "feed": "lays-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lays-pepsico/logo-35fd6923.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Lay's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Lay's Indian Magic Masala Potato Chips": "India's Magic Masala Potato Chips"
+  },
+  "rules": [
+    {
+      "match": "^American\\ Style\\ Cream\\ \\&\\ Onion\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Classic\\ Salted\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^India's\\ Magic\\ Masala\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Spanish\\ Tomato\\ Tango\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^West\\ Indies\\ Hot\\ 'n'\\ Sweet\\ Chilli\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Chile\\ Limon\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Sizzlin'\\ Hot\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Korean\\ Chilli\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Crispz\\ Herb\\ \\&\\ Onion$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Gourmet\\ Kettle\\ Chips\\ Lime\\ \\&\\ Cracked\\ Pepper$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Gourmet\\ Kettle\\ Chips\\ Thai\\ Sweet\\ Chilli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Gourmet\\ Kettle\\ Chips\\ Vintage\\ Cheese\\ \\&\\ Paprika$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Maxx\\ Macho\\ Chilli\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Maxx\\ Sizzling\\ Barbeque\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Maxx\\ Peppery\\ Cheddar\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Wafer\\ Chips\\ Himalayan\\ Pink\\ Salt$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Wafer\\ Chips\\ Red\\ Chilli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Wafer\\ Chips\\ Salt\\ with\\ Pepper$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Wafer\\ Style\\ Tangy\\ Treat\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Wavy\\ Cream\\ \\&\\ Onion\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Wavy\\ Magic\\ Masala\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Shapez\\ Heartiez\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Shapez\\ Heartiez\\ Caramel$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Stax\\ Original$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Stax\\ Cheddar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Stax\\ Sour\\ Cream\\ \\&\\ Onion$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    }
+  ]
+}
