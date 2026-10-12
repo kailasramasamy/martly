@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/251014_13-thums-up-soft-drink.jpg"
-    }
+    },
+    "barcode": "8901764042270"
    },
    {
     "title": "1.25L",
@@ -105,7 +106,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/251014-8_3-thums-up-soft-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Thums Up is India’s leading cola drink, loved for its bold taste, strong fizz & spicy cola flavour. Known for its “Taste the Thunder” identity, Thums Up delivers a powerful carbonated beverage experience with high fizz & distinct strong taste. Perfect pairing for biryani, matchday meals, hangout with friends and biking trips with your gang. Thums Up is best enjoyed chilled for maximum refreshment.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulator (338), Caffeine, Permitted Natural Colour (150d), Added Flavours (Natural, Nature-Identical And Artificial Flavouring Substance – Cola Flavour)",
+   "nutritionalInfo": {
+    "Serving Size": "200 ml",
+    "Energy": "42 kcal",
+    "Carbohydrate": "10.6 g",
+    "Total Sugars": "10.4 g",
+    "Added Sugars": "10.4 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "0.81 mg"
+   },
+   "manufacturerName": "HINDUSTAN COCA-COLA BEVERAGES PVT. LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "XForce Zero Sugar Soft Drink",
@@ -121,7 +138,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153_1-thums-up-xforce.jpg"
-    }
+    },
+    "barcode": "8901764972034"
    },
    {
     "title": "300ml",
@@ -159,7 +177,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371153-8_1-thums-up-xforce.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Thums Up XForce delivers the iconic strong cola taste of Thums Up in a no-sugar variant crafted for those who crave bold refreshment without compromise. With its intense fizz and signature thunderous flavour, it offers the same powerful experience that Thums Up fans love. Whether you're powering through a busy day, enjoying a meal, or sharing moments with friends, Thums Up XForce is designed to keep up with your energetic lifestyle. Served chilled, it provides a crisp and satisfying cola experience that combines great taste with the convenience of a zero-sugar choice.",
+   "ingredients": "Carbonated Water, Acidity Regulator (338), Caffeine, Colour (150d), Preservative (211), Sweeteners (955, 950), and Flavours (Natural, Nature Identical and Artificial (Cola) Flavouring Substances).",
+   "nutritionalInfo": {
+    "Serving Size": "200 ml",
+    "Servings Per Pack": "3.8",
+    "Energy": "0 kcal",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "3.3 mg"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "fssaiLicense": "10012022000261",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Charged Berry Bolt",
@@ -192,6 +228,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272433-4_1-thums-up-charged-soft-drink-berry-bolt-2x-caffeine.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Thums Up Charged Soft Drink is the perfect refreshment for any adventure this summer. Packed with 2X the caffeine, this electrifying cola-flavoured beverage will energise and hydrate you on the go. Available in convenient 250ml bottles or cans, it's easy to carry in your backpack or grab on the way out the door. Enjoy the delicious, refreshing taste and feel the instant boost of energy and hydration, whether you're out on a school trip, a long day of shopping, or a road trip. The vegetarian formula is free of trans fats, making it a guilt-free indulgence on a hot day. Thums Up Charged is the ideal companion to beat the heat and fatigue, delivering a bright, revitalising experience in every sip.",
+   "ingredients": "Carbonated water, Sugar, Acidity Regulators (330, 331 (iii)), Caffeine (24.6 mg/100 ml), Colour (129), and Flavours (Nature identical flavouring substances)",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Energy": "62 kcal",
+    "Carbohydrate": "15.4 g",
+    "Total Sugars": "15.3 g",
+    "Added Sugars": "15.3 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "13.8 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Hindustan Coca Cola Beverages Pvt. Ltd. Survey No. 284 P",
+   "fssaiLicense": "10012022000261",
+   "countryOfOrigin": "India"
+  }
  }
 ]
