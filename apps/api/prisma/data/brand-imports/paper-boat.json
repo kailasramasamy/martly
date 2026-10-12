@@ -1,0 +1,566 @@
+{
+  "brand": "Paper Boat (Hector Beverages)",
+  "manufacturer": "Hector Beverages Pvt. Ltd.",
+  "feed": "paper-boat-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/paper-boat/logo-84065e2b.png",
+  "themeColor": "#1D2E5B",
+  "themeColorSecondary": "#E94E1B",
+  "namePrefix": "Paper Boat ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aam\\ Panna$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Aam Panna"
+      ]
+    },
+    {
+      "match": "^Aamras$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    },
+    {
+      "match": "^Anar\\ Pomegranate\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Apple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Lychee\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Jamun\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Jaljeera$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Jaljeera"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Basil\\ Seeds\\ Drink\\ Mixed\\ Fruit$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Basil\\ Seeds\\ Drink\\ Pomegranate$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Lychee\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Mango\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Berries\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Kiwi\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Orange\\ Nata\\ De\\ Coco$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Coriander\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Pudina\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Southern\\ Masala\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Mango\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Thandai\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Sparkling\\ Lemon\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Iced Tea"
+      ]
+    },
+    {
+      "match": "^Swing\\ Coconut\\ Water\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Swing\\ Jeera\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Swing\\ Lively\\ Orange$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Lush\\ Lychee$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Mixed\\ Fruit\\ Medley$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Slurpy\\ Mango$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    },
+    {
+      "match": "^Swing\\ Yummy\\ Guava$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Zesty\\ Pomegranate$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Crispy\\ Cranberry$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Juicer\\ Mixed\\ Fruit\\ Medley$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Juicer\\ Yummy\\ Guava$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Juicer\\ Lush\\ Lychee$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Juicer\\ Zesty\\ Pomegranate$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Juicer\\ Pulpy\\ Orange$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Swing\\ Juicer\\ Tasty\\ Apple$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sparkling\\ Coffee\\ Dark\\ Roast$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Ginger\\ Ale$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Indian\\ Tonic\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Premium\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Pink\\ Grapefruit\\ Tonic\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Cranberry\\ Lime\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Cumin\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Ginger\\ Lemon\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Green\\ Apple\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Mint\\ Mojito\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Peach\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Yuzu\\ Orange\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Mango\\ Passion\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Cranberry\\ Lime\\ Prebiotic\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Lemon\\ Lime\\ Prebiotic\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Mint\\ Mojito\\ Prebiotic\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Yuzu\\ Orange\\ Prebiotic\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Aam\\ Papad\\ Fruit\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Chikki\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Dry\\ Fruit\\ Chikki\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Sesame\\ Chikki$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Honey\\ Roasted\\ Almond\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Golgappa\\ Pani\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Panipuri\\ Pellets$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    }
+  ]
+}
