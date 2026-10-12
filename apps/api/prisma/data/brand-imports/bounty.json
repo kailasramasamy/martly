@@ -1,0 +1,38 @@
+{
+  "brand": "Bounty (Mars)",
+  "manufacturer": "Mars Wrigley India",
+  "feed": "bounty-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bounty-mars/logo-ba8b5194.png",
+  "themeColor": "#1E4FA3",
+  "themeColorSecondary": "#5BB7E8",
+  "namePrefix": "Bounty ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Coconut\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Imported\\ Coconut\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Miniatures\\ Coconut\\ Chocolates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    }
+  ]
+}

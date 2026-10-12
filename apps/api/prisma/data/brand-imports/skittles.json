@@ -1,0 +1,94 @@
+{
+  "brand": "Skittles (Mars)",
+  "manufacturer": "Mars Wrigley India",
+  "feed": "skittles-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/skittles-mars/logo-7f1a7677.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#7B3FA0",
+  "namePrefix": "Skittles ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Original\\ Fruit\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Original\\ Fruit\\ Candies\\ Tube$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Wild\\ Berry\\ Fruit\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Wild\\ Berry\\ Fruit\\ Candies\\ Tube$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Sour\\ Fruit\\ Candies\\ Tube$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Clear\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Crazy\\ Sours\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Fruits\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Tropical\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Imported\\ Wild\\ Berry\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}

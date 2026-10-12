@@ -1,0 +1,110 @@
+{
+  "brand": "Galaxy (Mars)",
+  "manufacturer": "Mars Wrigley India",
+  "feed": "galaxy-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/galaxy-mars/logo-9edfc22e.png",
+  "themeColor": "#5A2D1F",
+  "themeColorSecondary": "#C9A063",
+  "namePrefix": "Galaxy ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Smooth\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Smooth\\ Milk\\ Minis$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Smooth\\ Milk\\ Share\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cookie\\ Crumble\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Fruit\\ \\&\\ Nut\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Fusions\\ 70%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Fusions\\ 70%\\ Dark\\ Chocolate\\ Minis$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Flutes\\ Chocolate\\ Wafer\\ Rolls$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Festive\\ Favourites\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Jewels\\ Diamond\\ Box\\ Assorted\\ Chocolates$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Jewels\\ Casket\\ Assorted\\ Chocolates$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}

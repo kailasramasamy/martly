@@ -1,0 +1,38 @@
+{
+  "brand": "Mars",
+  "manufacturer": "Mars Wrigley India",
+  "feed": "mars-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mars/logo-dfdfd9e7.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Mars ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Nougat\\ \\&\\ Caramel\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Imported\\ Nougat\\ \\&\\ Caramel\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Miniatures\\ Nougat\\ \\&\\ Caramel\\ Chocolates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "brand": "Twix (Mars)",
+  "manufacturer": "Mars Wrigley India",
+  "feed": "twix-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/twix-mars/logo-3f19b278.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#D4A537",
+  "namePrefix": "Twix ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cookie\\ Caramel\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Imported\\ Cookie\\ Caramel\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Cookie\\ Wafer\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Minis\\ Cookie\\ Caramel\\ Chocolates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    }
+  ]
+}
