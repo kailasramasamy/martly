@@ -1,0 +1,78 @@
+{
+  "brand": "Dhampure",
+  "manufacturer": "Dhampur Bio Organics Ltd",
+  "feed": "dhampure-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dhampure/logo-cad43f18.png",
+  "themeColor": "#4A2420",
+  "themeColorSecondary": "#E8711C",
+  "namePrefix": "Dhampure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^White\\ Crystal\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Breakfast\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Caster\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Icing\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Bura\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Golden\\ Brown\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Mineral\\ Brown\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Mishri$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Mishri (Rock Sugar)"
+      ]
+    }
+  ]
+}
