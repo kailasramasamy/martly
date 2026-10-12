@@ -1,0 +1,237 @@
+{
+  "brand": "Aavin",
+  "manufacturer": "Tamil Nadu Co-operative Milk Producers' Federation Ltd.",
+  "feed": "aavin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/aavin/logo-04e649ce.png",
+  "themeColor": "#278ECD",
+  "themeColorSecondary": "#81BF41",
+  "namePrefix": "Aavin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Aavin Toned Milk (Blue)": "Nice Toned Milk",
+    "Aavin Standardised Milk (Green)": "Standardised Milk",
+    "Aavin Full Cream Milk (Orange)": "Full Cream Milk",
+    "Aavin Double Toned Milk (Magenta)": "Delite Cow Milk",
+    "Aavin Butter": "Cooking Butter",
+    "Aavin Paneer": "Fresh Paneer"
+  },
+  "rules": [
+    {
+      "match": "^Nice\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Standardised\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Full\\ Cream\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Delite\\ Cow\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Double Toned Milk"
+      ]
+    },
+    {
+      "match": "^Green\\ Magic\\ Plus\\ Homogenised\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Agmark\\ Pure\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cooking\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Table\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Skimmed\\ Milk\\ Powder$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Dairy Whitener"
+      ]
+    },
+    {
+      "match": "^Cardamom\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Pista\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Badam\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Carrot\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Maavin\\ Mango\\ Delight\\ Fruit\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    },
+    {
+      "match": "^Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Choco\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Custard\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Butter\\ Murukku$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Nutties\\ Dark\\ Compound\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Gulab\\ Jamun$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    },
+    {
+      "match": "^Rasgulla$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    }
+  ]
+}
