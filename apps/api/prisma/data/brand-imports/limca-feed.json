@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/251012_11-limca-soft-drink-lime-lemon-flavoured.jpg"
-    }
+    },
+    "barcode": "8901764052279"
    },
    {
     "title": "250ml",
@@ -105,7 +106,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/251012-8_2-limca-soft-drink-lime-lemon-flavoured.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the thirst with Limca, India's iconic Lime 'n' Lemoni sparkling drink. Its signature sharp, cloudy fizz and crisp lime-lemon taste deliver the 'freshness wali feeling' that generations have loved — the ultimate thirst quencher that beats the toughest 'Limca waali pyaas'.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators (330, 331(iii)), Stabilizers (414, 471), Preservative (211), Flavours (Natural, Nature-Identical, & Artificial (Lemon) Flavouring Substances)",
+   "nutritionalInfo": {
+    "Energy": "44 kcal, 4.4% RDA per serve",
+    "Carbohydrate": "11.1 g",
+    "Total Sugars": "10.7 g",
+    "Added Sugars": "10.7 g, 42.8% RDA per serve",
+    "Total Fat": "0 g, 0% RDA",
+    "Protein": "0 g",
+    "Sodium": "5.6 mg, 0.6% RDA",
+    "Serving Size": "200 ml"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sportz Lemon Drink",
@@ -153,6 +170,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276537_1-limca-sportz-soft-drink-lemon-flavour-with-glucose-electrolytes-faster-rehydration.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "A hydration-based beverage, Limca Sportz offers the ideal blend of actual lemon juice, glucose, and electrolytes to enable quick fluid intake - a requirement for keeping people engaged in physical activity hydrated. The electrolytes and glucose work together to replenish the body's electrolytes after sweating, while natural lemon juice contributes to the beverage's delicious flavour. Explore a wide range of delicious beverages from Limca only on Big Basket.",
+   "ingredients": "Water, Sugar, Glucose (2.2%), Lemon Juice (5.5%) (Reconstituted From Lemon Juice Concentrate), Acidity Regulator (331 (Iii)), Minerals (Sodium, Potassium, Chloride), Antioxidant (300), Sweetener (956), Lemon Flavours (Nature-Identical Flavouring Substances)",
+   "usageInstructions": "Have it as a refreshing beverage.",
+   "manufacturerName": "Hindustan Coca Cola Beverages Pvt. Ltd. Survey No. 284 P",
+   "fssaiLicense": "10012022000261",
+   "countryOfOrigin": "India"
+  }
  }
 ]
