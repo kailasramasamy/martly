@@ -1,0 +1,24 @@
+{
+  "brand": "Tata Salt",
+  "manufacturer": "Tata Consumer Products",
+  "feed": "tata-salt-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tata-salt/logo-a80a4460.png",
+  "themeColor": "#3D1A1F",
+  "themeColorSecondary": "#F07C22",
+  "namePrefix": "Tata Salt ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Tata Salt - Vacuum Evaporated Iodised Salt": "Vacuum Evaporated Iodised Salt"
+  },
+  "rules": [
+    {
+      "match": "^Vacuum\\ Evaporated\\ Iodised\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    }
+  ]
+}

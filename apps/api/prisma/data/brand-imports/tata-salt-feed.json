@@ -1,0 +1,55 @@
+[
+ {
+  "title": "Vacuum Evaporated Iodised Salt",
+  "handle": "vacuum-evaporated-iodised-salt",
+  "vendor": "Tata Salt",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/241600_11-tata-salt-iodized.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "62",
+    "compare_at_price": "62",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40081603_6-tata-salt-salt-iodized.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/241600_11-tata-salt-iodized.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/241600-2_2-tata-salt-iodized.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/241600-3_1-tata-salt-iodized.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/241600-4_1-tata-salt-iodized.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/241600-5_1-tata-salt-iodized.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/241600-6_1-tata-salt-iodized.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/241600-7_1-tata-salt-iodized.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/241600-8_1-tata-salt-iodized.jpg"
+   }
+  ]
+ }
+]
