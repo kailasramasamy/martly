@@ -1,0 +1,49 @@
+[
+ {
+  "title": "Plain Salted Potato Chips",
+  "handle": "plain-salted-potato-chips",
+  "vendor": "Uncle Chipps (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "48g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004325_14-uncle-chips-uncle-chips-potato-chips-plain-salted-flavour.jpg"
+    }
+   },
+   {
+    "title": "80g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40320924_6-uncle-chips-plain-salted-potato-chips-crispy-chips-snacks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004325_14-uncle-chips-uncle-chips-potato-chips-plain-salted-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004325-2_11-uncle-chips-uncle-chips-potato-chips-plain-salted-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004325-3_11-uncle-chips-uncle-chips-potato-chips-plain-salted-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004325-4_11-uncle-chips-uncle-chips-potato-chips-plain-salted-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004325-5_11-uncle-chips-uncle-chips-potato-chips-plain-salted-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320924_6-uncle-chips-plain-salted-potato-chips-crispy-chips-snacks.jpg"
+   }
+  ]
+ }
+]
