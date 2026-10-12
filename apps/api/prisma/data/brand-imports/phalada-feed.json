@@ -1,0 +1,37 @@
+[
+ {
+  "title": "Organic Sugar",
+  "handle": "organic-sugar",
+  "vendor": "Phalada Pure & Sure",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40014284_3-phalada-pure-sure-organic-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40014284_3-phalada-pure-sure-organic-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40014284-2_4-phalada-pure-sure-organic-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40014284-3_4-phalada-pure-sure-organic-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40014284-4_2-phalada-pure-sure-organic-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40014284-5_2-phalada-pure-sure-organic-sugar.jpg"
+   }
+  ]
+ }
+]

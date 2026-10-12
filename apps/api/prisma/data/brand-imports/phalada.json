@@ -1,0 +1,22 @@
+{
+  "brand": "Phalada Pure & Sure",
+  "manufacturer": "Phalada Agro Research Foundations Pvt Ltd",
+  "feed": "phalada-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/phalada/logo-b3633e7b.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#A39A2B",
+  "namePrefix": "Phalada Pure & Sure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Organic\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    }
+  ]
+}
