@@ -1,0 +1,182 @@
+{
+  "brand": "Lipton (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "lipton-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lipton/logo-a1a26e07.png",
+  "themeColor": "#FFD200",
+  "themeColorSecondary": "#E2231A",
+  "namePrefix": "Lipton ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Clear\\ \\&\\ Light\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Clear\\ \\&\\ Light\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Light\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Light\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Honey\\ Lemon\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Honey\\ Lemon\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Zest\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Natura\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Lemongrass\\ Ginger\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Raspberry\\ Mint\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Mint\\ Burst\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^SipNDigest\\ Spiced\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Night\\ Time\\ Sleep\\ Chamomile\\ \\&\\ Lavender\\ Herbal\\ Infusion$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Darjeeling\\ Long\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Darjeeling\\ Black\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Yellow\\ Label\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Mango\\ Passion\\ Fruit\\ Kombucha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Raspberry\\ Kombucha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Mint\\ Kombucha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Metabolism\\ Boost\\ Green\\ Tea\\ Tablets\\ \\-\\ Green\\ Apple$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Metabolism\\ Boost\\ Green\\ Tea\\ Tablets\\ \\-\\ Watermelon$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    }
+  ]
+}
