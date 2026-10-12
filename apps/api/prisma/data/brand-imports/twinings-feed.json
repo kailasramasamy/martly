@@ -1,0 +1,929 @@
+[
+ {
+  "title": "Earl Grey Tea",
+  "handle": "earl-grey-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267231_5-twinings-earl-grey-tea.jpg"
+    }
+   },
+   {
+    "title": "100 pcs",
+    "price": "955",
+    "compare_at_price": "955",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/147737_6-twinings-earl-grey-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267231_5-twinings-earl-grey-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267231-2_4-twinings-earl-grey-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267231-3_4-twinings-earl-grey-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267231-4_4-twinings-earl-grey-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267231-5_4-twinings-earl-grey-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267231-6_4-twinings-earl-grey-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267231-7_4-twinings-earl-grey-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267231-8_4-twinings-earl-grey-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "English Breakfast Tea",
+  "handle": "english-breakfast-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267234_5-twinings-tea-english-breakfast.jpg"
+    }
+   },
+   {
+    "title": "100 pcs",
+    "price": "1150",
+    "compare_at_price": "1150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208101_3-twinings-english-breakfast-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267234_5-twinings-tea-english-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267234-2_4-twinings-tea-english-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267234-3_4-twinings-tea-english-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267234-4_4-twinings-tea-english-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267234-5_4-twinings-tea-english-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267234-6_4-twinings-tea-english-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267234-7_4-twinings-tea-english-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267234-8_4-twinings-tea-english-breakfast.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Lemon Tea",
+  "handle": "lemon-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "314",
+    "compare_at_price": "314",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267232_5-twinings-lemon-tea.jpg"
+    }
+   },
+   {
+    "title": "100 pcs",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/147738_6-twinings-flavoured-tea-lemon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267232_5-twinings-lemon-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267232-2_4-twinings-lemon-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267232-3_4-twinings-lemon-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267232-4_4-twinings-lemon-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267232-5_4-twinings-lemon-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267232-6_4-twinings-lemon-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267232-7_4-twinings-lemon-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267232-8_4-twinings-lemon-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Darjeeling Tea",
+  "handle": "darjeeling-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267222_7-twinings-origins-darjeeling-tea.jpg"
+    }
+   },
+   {
+    "title": "100 pcs",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/147739_6-twinings-tea-origins-darjeeling.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267222_7-twinings-origins-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267222-2_5-twinings-origins-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267222-3_5-twinings-origins-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267222-4_5-twinings-origins-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267222-5_5-twinings-origins-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267222-6_4-twinings-origins-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267222-7_4-twinings-origins-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267222-8_4-twinings-origins-darjeeling-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Assam Tea",
+  "handle": "assam-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/200006_7-twinings-tea-bags-assam.jpg"
+    }
+   },
+   {
+    "title": "100 pcs",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/150403_7-twinings-assam-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/200006_7-twinings-tea-bags-assam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/200006-2_6-twinings-tea-bags-assam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/200006-3_6-twinings-tea-bags-assam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/200006-4_6-twinings-tea-bags-assam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/200006-5_4-twinings-tea-bags-assam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/200006-6_4-twinings-tea-bags-assam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/200006-7_4-twinings-tea-bags-assam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/200006-8_4-twinings-tea-bags-assam.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pure Green Tea",
+  "handle": "pure-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267237_8-twinings-green-tea.jpg"
+    }
+   },
+   {
+    "title": "100 pcs",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/259192_7-twinings-green-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267237_8-twinings-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267237-2_6-twinings-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267237-3_6-twinings-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267237-4_6-twinings-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267237-5_6-twinings-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267237-6_4-twinings-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267237-7_4-twinings-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267237-8_4-twinings-green-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Lemon Green Tea",
+  "handle": "lemon-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267263_6-twinings-green-tea-lemon.jpg"
+    }
+   },
+   {
+    "title": "100 pcs",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274965_7-twinings-green-tea-lemon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267263_6-twinings-green-tea-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267263-2_6-twinings-green-tea-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267263-3_6-twinings-green-tea-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267263-4_6-twinings-green-tea-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267263-5_6-twinings-green-tea-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267263-6_4-twinings-green-tea-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267263-7_4-twinings-green-tea-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267263-8_4-twinings-green-tea-lemon.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Lemon & Honey Green Tea",
+  "handle": "lemon-honey-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560_6-twinings-green-tea-lemon-honey.jpg"
+    }
+   },
+   {
+    "title": "100 pcs",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208107_3-twinings-green-tea-lemon-honey.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560_6-twinings-green-tea-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560-2_5-twinings-green-tea-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560-3_5-twinings-green-tea-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560-4_5-twinings-green-tea-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560-5_5-twinings-green-tea-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560-6_4-twinings-green-tea-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560-7_4-twinings-green-tea-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002560-8_4-twinings-green-tea-lemon-honey.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Green Tea & Mint",
+  "handle": "green-tea-mint",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "345",
+    "compare_at_price": "345",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553_6-twinings-green-tea-mint.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553_6-twinings-green-tea-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553-2_5-twinings-green-tea-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553-3_5-twinings-green-tea-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553-4_5-twinings-green-tea-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553-5_5-twinings-green-tea-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553-6_4-twinings-green-tea-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553-7_4-twinings-green-tea-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002553-8_4-twinings-green-tea-mint.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cranberry Green Tea",
+  "handle": "cranberry-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "314",
+    "compare_at_price": "314",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102_3-twinings-green-tea-cranberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102_3-twinings-green-tea-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102-2_3-twinings-green-tea-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102-3_3-twinings-green-tea-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102-4_3-twinings-green-tea-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102-5_3-twinings-green-tea-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102-6_3-twinings-green-tea-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102-7_3-twinings-green-tea-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208102-8_3-twinings-green-tea-cranberry.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Earl Grey Green Tea",
+  "handle": "earl-grey-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267266_6-twinings-green-tea-earl-grey.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267266_6-twinings-green-tea-earl-grey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267266-2_4-twinings-green-tea-earl-grey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267266-3_4-twinings-green-tea-earl-grey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267266-4_4-twinings-green-tea-earl-grey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267266-5_4-twinings-green-tea-earl-grey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267266-6_4-twinings-green-tea-earl-grey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267266-7_4-twinings-green-tea-earl-grey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267266-8_4-twinings-green-tea-earl-grey.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Green Apple Green Tea",
+  "handle": "green-apple-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "314",
+    "compare_at_price": "314",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104_3-twinings-green-tea-green-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104_3-twinings-green-tea-green-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104-2_3-twinings-green-tea-green-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104-3_3-twinings-green-tea-green-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104-4_3-twinings-green-tea-green-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104-5_3-twinings-green-tea-green-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104-6_3-twinings-green-tea-green-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104-7_3-twinings-green-tea-green-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208104-8_3-twinings-green-tea-green-apple.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Jasmine Green Tea",
+  "handle": "jasmine-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267270_8-twinings-green-tea-jasmine.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267270_8-twinings-green-tea-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267270-2_8-twinings-green-tea-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267270-3_8-twinings-green-tea-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267270-4_8-twinings-green-tea-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267270-5_8-twinings-green-tea-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267270-6_4-twinings-green-tea-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267270-7_4-twinings-green-tea-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267270-8_4-twinings-green-tea-jasmine.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pomegranate Green Tea",
+  "handle": "pomegranate-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "314",
+    "compare_at_price": "314",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103_3-twinings-green-tea-pomegranate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103_3-twinings-green-tea-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103-2_3-twinings-green-tea-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103-3_3-twinings-green-tea-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103-4_3-twinings-green-tea-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103-5_3-twinings-green-tea-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103-6_3-twinings-green-tea-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103-7_3-twinings-green-tea-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208103-8_3-twinings-green-tea-pomegranate.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Strawberry Green Tea",
+  "handle": "strawberry-green-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "314",
+    "compare_at_price": "314",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105_3-twinings-green-tea-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105_3-twinings-green-tea-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105-2_3-twinings-green-tea-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105-3_3-twinings-green-tea-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105-4_3-twinings-green-tea-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105-5_3-twinings-green-tea-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105-6_3-twinings-green-tea-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105-7_3-twinings-green-tea-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208105-8_3-twinings-green-tea-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Lemon & Ginger Infusion",
+  "handle": "lemon-ginger-infusion",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "445",
+    "compare_at_price": "445",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106_3-twinings-infusion-tea-lemon-ginger.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106_3-twinings-infusion-tea-lemon-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106-2_3-twinings-infusion-tea-lemon-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106-3_3-twinings-infusion-tea-lemon-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106-4_3-twinings-infusion-tea-lemon-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106-5_3-twinings-infusion-tea-lemon-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106-6_3-twinings-infusion-tea-lemon-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106-7_3-twinings-infusion-tea-lemon-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208106-8_3-twinings-infusion-tea-lemon-ginger.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pure Peppermint Tea",
+  "handle": "pure-peppermint-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "395",
+    "compare_at_price": "395",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267243_5-twinings-pure-peppermint-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267243_5-twinings-pure-peppermint-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267243-2_5-twinings-pure-peppermint-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267243-3_5-twinings-pure-peppermint-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267243-4_5-twinings-pure-peppermint-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267243-5_5-twinings-pure-peppermint-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267243-6_5-twinings-pure-peppermint-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267243-7_4-twinings-pure-peppermint-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267243-8_4-twinings-pure-peppermint-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pure Chamomile Tea",
+  "handle": "pure-chamomile-tea",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "395",
+    "compare_at_price": "395",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/272465_8-twinings-tea-camomile.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272465_8-twinings-tea-camomile.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272465-2_5-twinings-tea-camomile.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272465-3_5-twinings-tea-camomile.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272465-4_5-twinings-tea-camomile.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272465-5_5-twinings-tea-camomile.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272465-6_4-twinings-tea-camomile.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272465-7_4-twinings-tea-camomile.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272465-8_4-twinings-tea-camomile.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Darjeeling Green Tea Whole Leaf",
+  "handle": "darjeeling-green-tea-whole-leaf",
+  "vendor": "Twinings",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558_6-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558_6-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558-2_4-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558-3_4-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558-4_4-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558-5_4-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558-6_4-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558-7_4-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002558-8_4-twinings-darjeeling-green-tea-whole-leaf-loose.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
