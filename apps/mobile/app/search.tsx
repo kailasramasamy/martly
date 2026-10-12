@@ -14,7 +14,7 @@ import { ShopByBrands } from "../components/ShopByBrands";
 import { ProductActionsProvider } from "../lib/product-actions";
 import { FloatingCart } from "../components/FloatingCart";
 import { ProductCardSkeleton } from "../components/SkeletonLoader";
-import { SearchTagTabs } from "../components/search/SearchTagTabs";
+import { SearchTabs } from "../components/search/SearchTabs";
 import { SearchControlBar } from "../components/search/SearchControlBar";
 import { SearchEmptyState } from "../components/search/SearchEmptyState";
 import { SearchSheets, type SheetName } from "../components/search/SearchSheets";
@@ -93,7 +93,7 @@ function SearchFacetControls({ facets, filters, search, onOpenSheet }: {
 }) {
   return (
     <>
-      <SearchTagTabs tags={facets.tags} activeTag={filters.tag} onSelect={search.selectTag} />
+      <SearchTabs facets={facets} active={filters.tab} onSelect={search.selectTab} />
       <SearchControlBar
         filterCount={filters.brandIds.length + (filters.foodType ? 1 : 0)}
         sortBy={filters.sortBy}

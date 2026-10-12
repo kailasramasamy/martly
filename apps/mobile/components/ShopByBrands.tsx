@@ -17,7 +17,7 @@ function BrandPill({ brand, selected, onPress }: { brand: BrandTile; selected: b
   const [background, ink] = wordmarkColors(brand.name);
   return (
     <TouchableOpacity
-      style={[styles.pill, { backgroundColor: brand.imageUrl ? "#fff" : background }, selected && styles.pillSelected]}
+      style={[styles.pill, brand.imageUrl ? styles.logoPill : { backgroundColor: background }, selected && styles.pillSelected]}
       onPress={onPress}
       activeOpacity={0.7}
       accessibilityRole="button"
@@ -74,14 +74,15 @@ const styles = StyleSheet.create({
   title: { fontFamily: fonts.bold, fontSize: 17, color: colors.text },
   seeAll: { flexDirection: "row", alignItems: "center", gap: 2, minHeight: 44, marginVertical: -12, paddingLeft: 12 },
   list: { flexGrow: 0, flexShrink: 0 },
-  listContent: { paddingHorizontal: 16, gap: 10 },
+  listContent: { paddingHorizontal: 16, gap: 6 },
   pill: {
     height: 44, paddingHorizontal: 18, borderRadius: 22, justifyContent: "center",
     borderWidth: 2, borderColor: "transparent",
   },
+  logoPill: { backgroundColor: "#fff", paddingHorizontal: 10 },
   pillSelected: { borderColor: colors.primary },
   wordmark: { fontFamily: fonts.extrabold, fontSize: 15, letterSpacing: -0.2 },
-  logo: { width: 72, height: 30 },
+  logo: { width: 88, height: 36 },
   visit: { flexDirection: "row", alignItems: "center", gap: 4, alignSelf: "flex-start", marginTop: 12, marginLeft: 16, minHeight: 32 },
   visitText: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
 });

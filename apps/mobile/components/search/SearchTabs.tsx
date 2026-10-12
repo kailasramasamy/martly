@@ -2,6 +2,7 @@ import { FlatList, Image, Text, TouchableOpacity, View, StyleSheet } from "react
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../../constants/theme";
 import type { SearchFacets } from "../../lib/types";
+import type { SearchTab } from "../../lib/use-product-search";
 
 const IMAGE_SIZE = 56;
 
@@ -11,15 +12,26 @@ export function formatTag(tag: string): string {
 }
 
 interface TabItem {
-  key: string | null;
+  tab: SearchTab | null;
   label: string;
   imageUrl: string | null;
 }
 
-interface SearchTagTabsProps {
-  tags: SearchFacets["tags"];
-  activeTag: string | null;
-  onSelect: (tag: string | null) => void;
+interface SearchTabsProps {
+  facets: SearchFacets;
+  active: SearchTab | null;
+  onSelect: (tab: SearchTab | null) => void;
+}
+
+// Subcategories when the matches span several ("oil" → Sunflower, Groundnut…), else the product tags
+function tabItems({ subcategories, tags }: SearchFacets): TabItem[] {
+  if (subcategories.length >= 2) {
+    return subcategories.map((s) => ({ tab: { kind: "subcategory", key: s.id }, label: s.name, imageUrl: s.imageUrl }));
+  }
+  if (tags.length >= 2) {
+    return tags.map((t) => ({ tab: { kind: "tag", key: t.tag }, label: formatTag(t.tag), imageUrl: t.imageUrl }));
+  }
+  return [];
 }
 
 function TagTab({ item, active, onPress }: { item: TabItem; active: boolean; onPress: () => void }) {
@@ -37,20 +49,18 @@ function TagTab({ item, active, onPress }: { item: TabItem; active: boolean; onP
   );
 }
 
-export function SearchTagTabs({ tags, activeTag, onSelect }: SearchTagTabsProps) {
-  if (tags.length < 2) return null;
-  const items: TabItem[] = [
-    { key: null, label: "All", imageUrl: null },
-    ...tags.map((t) => ({ key: t.tag, label: formatTag(t.tag), imageUrl: t.imageUrl })),
-  ];
+export function SearchTabs({ facets, active, onSelect }: SearchTabsProps) {
+  const tabs = tabItems(facets);
+  if (tabs.length === 0) return null;
+  const items: TabItem[] = [{ tab: null, label: "All", imageUrl: null }, ...tabs];
   return (
     <FlatList
       horizontal
       showsHorizontalScrollIndicator={false}
       data={items}
-      keyExtractor={(i) => i.key ?? "all"}
+      keyExtractor={(i) => i.tab?.key ?? "all"}
       contentContainerStyle={styles.row}
-      renderItem={({ item }) => <TagTab item={item} active={item.key === activeTag} onPress={() => onSelect(item.key)} />}
+      renderItem={({ item }) => <TagTab item={item} active={item.tab?.key === active?.key} onPress={() => onSelect(item.tab)} />}
       style={styles.list}
     />
   );

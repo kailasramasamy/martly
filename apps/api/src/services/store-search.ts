@@ -4,10 +4,12 @@ import { searchProducts } from "./search.js";
 import { decorateStoreProducts, storeProductInclude, type StoreProductView } from "./store-product-view.js";
 
 const MAX_TAG_TABS = 8;
+const MAX_SUBCATEGORY_TABS = 10;
 
 export interface StoreSearchParams {
   q: string;
   tag?: string;
+  subcategoryId?: string;
   brandIds?: string[];
   size?: string;
   foodType?: string;
@@ -17,6 +19,7 @@ export interface StoreSearchParams {
 
 export interface SearchFacets {
   tags: { tag: string; count: number; imageUrl: string | null }[];
+  subcategories: { id: string; name: string; count: number; imageUrl: string | null }[];
   brands: { id: string; name: string; count: number; imageUrl: string | null }[];
   sizes: { label: string; count: number }[];
   offerCount: number;
@@ -43,7 +46,20 @@ function tagFacets(rows: StoreProductView[]): SearchFacets["tags"] {
   }));
 }
 
-function filterFacets(rows: StoreProductView[]): Omit<SearchFacets, "tags"> {
+// In relevance order, so the subcategories that best match the query lead the row
+function subcategoryFacets(ranked: StoreProductView[]): SearchFacets["subcategories"] {
+  const counts = countProducts(ranked, (r) => (r.product.subcategory ? [r.product.subcategory.id] : []));
+  const countOf = new Map(counts.map(({ key, count }) => [key, count]));
+  const facets = new Map<string, SearchFacets["subcategories"][number]>();
+  for (const { product } of ranked) {
+    const sub = product.subcategory;
+    if (!sub || facets.has(sub.id)) continue;
+    facets.set(sub.id, { id: sub.id, name: sub.name, count: countOf.get(sub.id)!, imageUrl: product.imageUrl ?? sub.imageUrl });
+  }
+  return [...facets.values()].slice(0, MAX_SUBCATEGORY_TABS);
+}
+
+function filterFacets(rows: StoreProductView[]): Omit<SearchFacets, "tags" | "subcategories"> {
   return {
     brands: countProducts(rows, (r) => (r.product.brand ? [r.product.brand.id] : []))
       .map(({ key, count }) => {
@@ -85,11 +101,12 @@ function sortByProduct(rows: StoreProductView[], sortBy: SearchSortBy, rank: Map
 
 /**
  * Text search within a store. Returns the whole ranked match set (search caps it), facets for the
- * tag tabs and filter controls, and the search strategy meta. Tag facets ignore every other filter so
- * the tab row stays stable; filter facets reflect the selected tag.
+ * tab row (subcategories, or tags when the matches sit in one subcategory) and filter controls, and the
+ * search strategy meta. Tab facets ignore every other filter so the tab row stays stable; filter facets
+ * reflect the selected tab.
  */
 export async function searchStoreProducts(prisma: PrismaClient, storeId: string, params: StoreSearchParams) {
-  const { productIds, meta } = await searchProducts(prisma, params.q);
+  const { productIds, meta } = await searchProducts(prisma, storeId, params.q);
   const productWhere: Prisma.ProductWhereInput = productIds.length > 0
     ? { id: { in: productIds } }
     : { name: { contains: params.q, mode: "insensitive" } };
@@ -102,8 +119,10 @@ export async function searchStoreProducts(prisma: PrismaClient, storeId: string,
 
   const rank = new Map(productIds.map((id, i) => [id, i]));
   const ranked = sortByProduct(rows, SearchSortBy.RELEVANCE, rank);
-  const inTag = params.tag ? ranked.filter((r) => r.product.tags.includes(params.tag!)) : ranked;
-  const facets: SearchFacets = { tags: tagFacets(ranked), ...filterFacets(inTag) };
+  const inTag = ranked.filter((r) =>
+    (!params.tag || r.product.tags.includes(params.tag)) &&
+    (!params.subcategoryId || r.product.subcategoryId === params.subcategoryId));
+  const facets: SearchFacets = { tags: tagFacets(ranked), subcategories: subcategoryFacets(ranked), ...filterFacets(inTag) };
   const data = sortByProduct(applyFilters(inTag, params), params.sortBy, rank);
   return { data, facets, searchMeta: meta };
 }

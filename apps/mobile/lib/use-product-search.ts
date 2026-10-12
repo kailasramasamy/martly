@@ -6,8 +6,14 @@ import type { SearchFacets, SearchMeta, StoreProduct } from "./types";
 const BROWSE_PAGE_SIZE = 20;
 const DEBOUNCE_MS = 300;
 
+// The tab row filters by subcategory when matches span several, else by product tag
+export interface SearchTab {
+  kind: "subcategory" | "tag";
+  key: string;
+}
+
 export interface SearchFilters {
-  tag: string | null;
+  tab: SearchTab | null;
   brandIds: string[];
   size: string | null;
   foodType: string | null;
@@ -16,7 +22,7 @@ export interface SearchFilters {
 }
 
 export const EMPTY_FILTERS: SearchFilters = {
-  tag: null,
+  tab: null,
   brandIds: [],
   size: null,
   foodType: null,
@@ -36,14 +42,14 @@ interface SearchResponse {
 }
 
 export function hasActiveFilters(f: SearchFilters): boolean {
-  return !!(f.tag || f.brandIds.length || f.size || f.foodType || f.offers);
+  return !!(f.tab || f.brandIds.length || f.size || f.foodType || f.offers);
 }
 
 function buildPath(storeId: string | undefined, q: string, textMode: boolean, filters: SearchFilters, browse: BrowseParams, page: number): string {
   const params = new URLSearchParams();
   if (q) params.set("q", q);
   if (textMode) {
-    if (filters.tag) params.set("tag", filters.tag);
+    if (filters.tab) params.set(filters.tab.kind === "tag" ? "tag" : "subcategoryId", filters.tab.key);
     if (filters.brandIds.length) params.set("brandIds", filters.brandIds.join(","));
     if (filters.size) params.set("size", filters.size);
     if (filters.foodType) params.set("foodType", filters.foodType);
@@ -145,8 +151,8 @@ export function useProductSearch(storeId: string | undefined, browse: BrowsePara
   };
 
   const patchFilters = (patch: Partial<SearchFilters>) => setFilters((f) => ({ ...f, ...patch }));
-  const selectTag = (tag: string | null) => patchFilters({ tag, brandIds: [], size: null });
+  const selectTab = (tab: SearchTab | null) => patchFilters({ tab, brandIds: [], size: null });
   const clearFilters = () => setFilters((f) => ({ ...EMPTY_FILTERS, sortBy: f.sortBy }));
 
-  return { query, changeQuery, textMode, filters, patchFilters, selectTag, clearFilters, ...fetched };
+  return { query, changeQuery, textMode, filters, patchFilters, selectTab, clearFilters, ...fetched };
 }

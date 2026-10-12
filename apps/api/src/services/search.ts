@@ -1,4 +1,4 @@
-import type { PrismaClient } from "../../generated/prisma/index.js";
+import { Prisma, type PrismaClient } from "../../generated/prisma/index.js";
 import Anthropic from "@anthropic-ai/sdk";
 
 export type SearchStrategy = "keyword" | "fuzzy" | "fulltext" | "semantic";
@@ -17,12 +17,18 @@ export interface SearchResult {
 // In-memory cache for semantic expansions (5-minute TTL)
 const semanticCache = new Map<string, { terms: string[]; expiry: number }>();
 
+const MAX_KEYWORD_RESULTS = 200;
+
+const inStore = (storeId: string) => Prisma.sql`EXISTS (
+  SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true
+)`;
+
 function normalizeQuery(q: string): string {
   return q.toLowerCase().trim().replace(/\s+/g, " ");
 }
 
 /**
- * Multi-strategy product search:
+ * Multi-strategy product search over the products a store stocks:
  * 1. Keyword match (contains) — if ≥3 results, return
  * 2. Trigram fuzzy match (pg_trgm) — catches typos
  * 3. Full-text search (tsvector) — stemming, ranking
@@ -30,6 +36,7 @@ function normalizeQuery(q: string): string {
  */
 export async function searchProducts(
   prisma: PrismaClient,
+  storeId: string,
   query: string,
   minResults = 3,
 ): Promise<SearchResult> {
@@ -37,13 +44,13 @@ export async function searchProducts(
   if (!q) return { productIds: [], meta: { strategy: "keyword" } };
 
   // Step 1: Keyword match
-  const keywordIds = await keywordSearch(prisma, q);
+  const keywordIds = await keywordSearch(prisma, q, storeId);
   if (keywordIds.length >= minResults) {
     return { productIds: keywordIds, meta: { strategy: "keyword" } };
   }
 
   // Step 2: Trigram fuzzy match (catches typos via search_text and aliases)
-  const fuzzyIds = await trigramSearch(prisma, q);
+  const fuzzyIds = await trigramSearch(prisma, q, storeId);
   const mergedAfterFuzzy = dedup([...keywordIds, ...fuzzyIds]);
   if (mergedAfterFuzzy.length >= minResults) {
     const corrected = fuzzyIds.length > 0 ? await getCorrectedName(prisma, fuzzyIds[0]) : undefined;
@@ -54,7 +61,7 @@ export async function searchProducts(
   }
 
   // Step 3: Full-text search (stemming, ranking)
-  const ftsIds = await fullTextSearch(prisma, q);
+  const ftsIds = await fullTextSearch(prisma, q, storeId);
   const mergedAfterFts = dedup([...mergedAfterFuzzy, ...ftsIds]);
   if (mergedAfterFts.length >= minResults) {
     return { productIds: mergedAfterFts, meta: { strategy: "fulltext" } };
@@ -79,9 +86,9 @@ export async function searchProducts(
   // Re-run search with expanded terms
   const expandedIds: string[] = [];
   for (const term of expanded) {
-    const kw = await keywordSearch(prisma, term);
-    const tg = await trigramSearch(prisma, term);
-    const ft = await fullTextSearch(prisma, term);
+    const kw = await keywordSearch(prisma, term, storeId);
+    const tg = await trigramSearch(prisma, term, storeId);
+    const ft = await fullTextSearch(prisma, term, storeId);
     expandedIds.push(...kw, ...tg, ...ft);
   }
 
@@ -91,28 +98,48 @@ export async function searchProducts(
   };
 }
 
-async function keywordSearch(prisma: PrismaClient, q: string): Promise<string[]> {
-  // Tiers: 0 whole word in name, 1 word-start, 2 substring, 3 translated name, 4 description only
+async function keywordSearch(prisma: PrismaClient, q: string, storeId: string): Promise<string[]> {
+  // Tiers: 0 whole word in name, 1 word-start, 2 substring, 3 translated name, 4 description only.
+  // Within a tier: category name hit ("oil" → Edible Oils), then subcategory hit (Hair Oil), then brands round-robin
+  // (each brand's best-seller before any brand's second) so one brand's A–Z run can't fill the top rows.
   const rows = await prisma.$queryRaw<{ id: string; tier: number }[]>`
-    WITH term AS (SELECT regexp_replace(${q}, '([^[:alnum:] ])', '\\\\\\1', 'g') AS rx)
+    WITH term AS (SELECT regexp_replace(${q}, '([^[:alnum:] ])', '\\\\\\1', 'g') AS rx),
+    sales AS (
+      SELECT oi.product_id, COUNT(*) AS n FROM order_items oi JOIN orders o ON o.id = oi.order_id
+      WHERE o.store_id = ${storeId} AND o.status <> 'CANCELLED'
+      GROUP BY oi.product_id
+    )
     SELECT id, tier FROM (
-      SELECT p.id, p.name,
-        CASE
-          WHEN p.name ~* ('\\m' || term.rx || '\\M') THEN 0
-          WHEN p.name ~* ('\\m' || term.rx) THEN 1
-          WHEN p.name ILIKE '%' || ${q} || '%' THEN 2
-          WHEN EXISTS (
-            SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
-            WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
-          ) THEN 3
-          WHEN p.description ILIKE '%' || ${q} || '%' THEN 4
-        END AS tier
-      FROM products p, term
-      WHERE p.is_active = true
+      SELECT *, ROW_NUMBER() OVER (PARTITION BY tier, taxonomy, brand_id ORDER BY sold DESC, name) AS brand_round
+      FROM (
+        SELECT p.id, p.name, p.brand_id,
+          CASE
+            WHEN p.name ~* ('\\m' || term.rx || '\\M') THEN 0
+            WHEN p.name ~* ('\\m' || term.rx) THEN 1
+            WHEN p.name ILIKE '%' || ${q} || '%' THEN 2
+            WHEN EXISTS (
+              SELECT 1 FROM jsonb_each(COALESCE(p.translations, '{}'::jsonb)) t
+              WHERE t.value->>'name' ILIKE '%' || ${q} || '%'
+            ) THEN 3
+            WHEN p.description ILIKE '%' || ${q} || '%' THEN 4
+          END AS tier,
+          CASE
+            WHEN c.name ~* ('\\m' || term.rx) THEN 0
+            WHEN s.name ~* ('\\m' || term.rx) THEN 1
+            ELSE 2
+          END AS taxonomy,
+          COALESCE(sales.n, 0) AS sold
+        FROM products p
+        CROSS JOIN term
+        LEFT JOIN subcategories s ON s.id = p.subcategory_id
+        LEFT JOIN categories c ON c.id = s.category_id
+        LEFT JOIN sales ON sales.product_id = p.id
+        WHERE p.is_active = true AND ${inStore(storeId)}
+      ) matched
+      WHERE tier IS NOT NULL
     ) m
-    WHERE tier IS NOT NULL
-    ORDER BY tier, name
-    LIMIT 50
+    ORDER BY tier, taxonomy, brand_round, sold DESC, name
+    LIMIT ${MAX_KEYWORD_RESULTS}
   `;
   return tightestTier(rows).map((r) => r.id);
 }
@@ -126,7 +153,7 @@ function tightestTier<T extends { tier: number }>(rows: T[]): T[] {
   return rows;
 }
 
-async function trigramSearch(prisma: PrismaClient, q: string): Promise<string[]> {
+async function trigramSearch(prisma: PrismaClient, q: string, storeId: string): Promise<string[]> {
   // Search both search_text and search_aliases
   const rows = await prisma.$queryRaw<{ id: string; score: number }[]>`
     SELECT DISTINCT p.id, GREATEST(
@@ -134,7 +161,7 @@ async function trigramSearch(prisma: PrismaClient, q: string): Promise<string[]>
       COALESCE((SELECT MAX(similarity(sa.alias, ${q})) FROM search_aliases sa WHERE sa.product_id = p.id), 0)
     ) as score
     FROM products p
-    WHERE p.is_active = true
+    WHERE p.is_active = true AND ${inStore(storeId)}
       AND (
         p.search_text % ${q}
         OR EXISTS (SELECT 1 FROM search_aliases sa WHERE sa.product_id = p.id AND sa.alias % ${q})
@@ -145,11 +172,11 @@ async function trigramSearch(prisma: PrismaClient, q: string): Promise<string[]>
   return rows.map((r) => r.id);
 }
 
-async function fullTextSearch(prisma: PrismaClient, q: string): Promise<string[]> {
+async function fullTextSearch(prisma: PrismaClient, q: string, storeId: string): Promise<string[]> {
   const rows = await prisma.$queryRaw<{ id: string; rank: number }[]>`
     SELECT p.id, ts_rank(to_tsvector('english', p.search_text), plainto_tsquery('english', ${q})) as rank
     FROM products p
-    WHERE p.is_active = true
+    WHERE p.is_active = true AND ${inStore(storeId)}
       AND to_tsvector('english', p.search_text) @@ plainto_tsquery('english', ${q})
     ORDER BY rank DESC
     LIMIT 50

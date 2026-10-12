@@ -1112,6 +1112,7 @@ export type UpdateRecipeInput = z.infer<typeof updateRecipeSchema>;
 export const storeProductSearchQuerySchema = z.object({
   q: z.string().trim().min(1),
   tag: z.string().trim().toLowerCase().optional(),
+  subcategoryId: z.string().uuid().optional(),
   brandIds: z.string().optional().transform((v) => v?.split(",").filter(Boolean)),
   size: z.string().optional(),
   foodType: z.nativeEnum(FoodType).optional(),
