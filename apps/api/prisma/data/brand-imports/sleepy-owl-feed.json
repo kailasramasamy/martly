@@ -1,0 +1,1295 @@
+[
+ {
+  "title": "Original Cold Brew Coffee",
+  "handle": "original-cold-brew-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "3 pcs",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172085_7-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+    }
+   },
+   {
+    "title": "5 pcs",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40177266_9-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172085_7-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172085-2_7-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172085-3_7-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172085-4_7-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172085-5_2-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172085-6_1-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177266_9-sleepy-owl-cold-brew-coffee-packs-original.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Dark Roast Cold Brew Coffee",
+  "handle": "dark-roast-cold-brew-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "3 pcs",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172086_8-sleepy-owl-cold-brew-coffee-packs-dark-roast.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172086_8-sleepy-owl-cold-brew-coffee-packs-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172086-2_7-sleepy-owl-cold-brew-coffee-packs-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172086-3_7-sleepy-owl-cold-brew-coffee-packs-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172086-4_7-sleepy-owl-cold-brew-coffee-packs-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172086-5_2-sleepy-owl-cold-brew-coffee-packs-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172086-6_1-sleepy-owl-cold-brew-coffee-packs-dark-roast.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "French Vanilla Cold Brew Coffee",
+  "handle": "french-vanilla-cold-brew-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5 pcs",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999-2_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999-3_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999-4_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999-5_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999-6_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Assorted Cold Brew Coffee",
+  "handle": "assorted-cold-brew-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5 pcs",
+    "price": "575",
+    "compare_at_price": "575",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576_5-sleepy-owl-cold-brew-coffee-assorted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576_5-sleepy-owl-cold-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576-2_5-sleepy-owl-cold-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576-3_5-sleepy-owl-cold-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576-4_5-sleepy-owl-cold-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576-5_4-sleepy-owl-cold-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576-6_2-sleepy-owl-cold-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576-7_2-sleepy-owl-cold-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576-8_2-sleepy-owl-cold-brew-coffee-assorted.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Original Hot Brew Coffee Bags",
+  "handle": "original-hot-brew-coffee-bags",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308_9-sleepy-owl-hot-brew-coffee-original.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308_9-sleepy-owl-hot-brew-coffee-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308-2_10-sleepy-owl-hot-brew-coffee-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308-3_9-sleepy-owl-hot-brew-coffee-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308-4_9-sleepy-owl-hot-brew-coffee-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308-5_9-sleepy-owl-hot-brew-coffee-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308-6_2-sleepy-owl-hot-brew-coffee-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308-7_1-sleepy-owl-hot-brew-coffee-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308-8_1-sleepy-owl-hot-brew-coffee-original.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Dark Roast Hot Brew Coffee Bags",
+  "handle": "dark-roast-hot-brew-coffee-bags",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309_9-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309_9-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309-2_11-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309-3_10-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309-4_9-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309-5_9-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309-6_2-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309-7_1-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309-8_1-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Hazelnut Hot Brew Coffee Bags",
+  "handle": "hazelnut-hot-brew-coffee-bags",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200992_2-sleepy-owl-hazelnut-hot-brew-bags.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200992_2-sleepy-owl-hazelnut-hot-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200992-2_3-sleepy-owl-hazelnut-hot-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200992-3_2-sleepy-owl-hazelnut-hot-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200992-4_2-sleepy-owl-hazelnut-hot-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200992-5_2-sleepy-owl-hazelnut-hot-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200992-6_2-sleepy-owl-hazelnut-hot-brew-bags.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Assorted Hot Brew Coffee Bags",
+  "handle": "assorted-hot-brew-coffee-bags",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577_5-sleepy-owl-hot-brew-coffee-assorted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577_5-sleepy-owl-hot-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577-2_6-sleepy-owl-hot-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577-3_5-sleepy-owl-hot-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577-4_5-sleepy-owl-hot-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577-5_4-sleepy-owl-hot-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577-6_2-sleepy-owl-hot-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577-7_2-sleepy-owl-hot-brew-coffee-assorted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577-8_2-sleepy-owl-hot-brew-coffee-assorted.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Classic Kaapi Filter Coffee Bags",
+  "handle": "classic-kaapi-filter-coffee-bags",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469_1-sleepy-owl-filter-coffee-brew-bags.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469_1-sleepy-owl-filter-coffee-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469-2_2-sleepy-owl-filter-coffee-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469-3_1-sleepy-owl-filter-coffee-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469-4_1-sleepy-owl-filter-coffee-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469-5_1-sleepy-owl-filter-coffee-brew-bags.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469-6_1-sleepy-owl-filter-coffee-brew-bags.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Original Instant Coffee",
+  "handle": "original-instant-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352720_1-sleepy-owl-original-instant-coffee.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "595",
+    "compare_at_price": "595",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40239345_7-sleepy-owl-premium-instant-coffee-original-roasted-ground-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352720_1-sleepy-owl-original-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352720-2_1-sleepy-owl-original-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352720-3_1-sleepy-owl-original-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352720-4_1-sleepy-owl-original-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352720-5_1-sleepy-owl-original-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40239345_7-sleepy-owl-premium-instant-coffee-original-roasted-ground-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "French Vanilla Instant Coffee",
+  "handle": "french-vanilla-instant-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352721_1-sleepy-owl-french-vanilla-instant-coffee.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "749",
+    "compare_at_price": "749",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40239347_4-sleepy-owl-premium-instant-coffee-roasted-ground-french-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352721_1-sleepy-owl-french-vanilla-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352721-2_1-sleepy-owl-french-vanilla-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352721-3_1-sleepy-owl-french-vanilla-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352721-4_1-sleepy-owl-french-vanilla-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352721-5_1-sleepy-owl-french-vanilla-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40239347_4-sleepy-owl-premium-instant-coffee-roasted-ground-french-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Hazelnut Instant Coffee",
+  "handle": "hazelnut-instant-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352722_1-sleepy-owl-hazelnut-instant-coffee.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "749",
+    "compare_at_price": "749",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40239346_4-sleepy-owl-premium-instant-coffee-roasted-ground-no-preservatives-hazelnut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352722_1-sleepy-owl-hazelnut-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352722-2_1-sleepy-owl-hazelnut-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352722-3_1-sleepy-owl-hazelnut-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352722-4_1-sleepy-owl-hazelnut-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352722-5_1-sleepy-owl-hazelnut-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40239346_4-sleepy-owl-premium-instant-coffee-roasted-ground-no-preservatives-hazelnut.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Assorted Premium Instant Coffee",
+  "handle": "assorted-premium-instant-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352723_1-sleepy-owl-assorted-premium-instant-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352723_1-sleepy-owl-assorted-premium-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352723-2_1-sleepy-owl-assorted-premium-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352723-3_1-sleepy-owl-assorted-premium-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352723-4_1-sleepy-owl-assorted-premium-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352723-5_1-sleepy-owl-assorted-premium-instant-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Intense Java Xpresso Instant Coffee",
+  "handle": "intense-java-xpresso-instant-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345374_1-sleepy-owl-intense-java-xpresso-strong-instant-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345374_1-sleepy-owl-intense-java-xpresso-strong-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345374-2_1-sleepy-owl-intense-java-xpresso-strong-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345374-3_1-sleepy-owl-intense-java-xpresso-strong-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345374-4_1-sleepy-owl-intense-java-xpresso-strong-instant-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345374-5_1-sleepy-owl-intense-java-xpresso-strong-instant-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Premium Instant Filter Coffee",
+  "handle": "premium-instant-filter-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "449",
+    "compare_at_price": "449",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255216_2-sleepy-owl-premium-instant-coffee-filter-kaapi-chicory-robusta-blend-strong-sweet-flavour-makes-50-cups.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255216_2-sleepy-owl-premium-instant-coffee-filter-kaapi-chicory-robusta-blend-strong-sweet-flavour-makes-50-cups.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255216-2_2-sleepy-owl-premium-instant-coffee-filter-kaapi-chicory-robusta-blend-strong-sweet-flavour-makes-50-cups.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255216-3_1-sleepy-owl-premium-instant-coffee-filter-kaapi-chicory-robusta-blend-strong-sweet-flavour-makes-50-cups.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255216-4_1-sleepy-owl-premium-instant-coffee-filter-kaapi-chicory-robusta-blend-strong-sweet-flavour-makes-50-cups.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "3 In 1 Assorted Instant Coffee Premix",
+  "handle": "3-in-1-assorted-instant-coffee-premix",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "132",
+    "compare_at_price": "132",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724-2_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724-3_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724-4_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724-5_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724-6_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "3 In 1 Cappuccino Instant Coffee Premix",
+  "handle": "3-in-1-cappuccino-instant-coffee-premix",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352725_1-sleepy-owl-3-in-1-cappuccino-bold-creamy-instant-premix-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352725_1-sleepy-owl-3-in-1-cappuccino-bold-creamy-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352725-2_1-sleepy-owl-3-in-1-cappuccino-bold-creamy-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352725-3_1-sleepy-owl-3-in-1-cappuccino-bold-creamy-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352725-4_1-sleepy-owl-3-in-1-cappuccino-bold-creamy-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352725-5_1-sleepy-owl-3-in-1-cappuccino-bold-creamy-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352725-6_1-sleepy-owl-3-in-1-cappuccino-bold-creamy-instant-premix-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "3 In 1 French Vanilla Latte Instant Coffee Premix",
+  "handle": "3-in-1-french-vanilla-latte-instant-coffee-premix",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352726_1-sleepy-owl-3-in-1-french-vanilla-latte-instant-premix-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352726_1-sleepy-owl-3-in-1-french-vanilla-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352726-2_1-sleepy-owl-3-in-1-french-vanilla-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352726-3_1-sleepy-owl-3-in-1-french-vanilla-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352726-4_1-sleepy-owl-3-in-1-french-vanilla-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352726-5_1-sleepy-owl-3-in-1-french-vanilla-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352726-6_1-sleepy-owl-3-in-1-french-vanilla-latte-instant-premix-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "3 In 1 Hazelnut Latte Instant Coffee Premix",
+  "handle": "3-in-1-hazelnut-latte-instant-coffee-premix",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727-2_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727-3_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727-4_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727-5_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727-6_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Classic Cold Coffee",
+  "handle": "classic-cold-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "230ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213_2-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213_2-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213-2_2-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213-3_2-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213-4_2-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213-5_2-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213-6_2-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213-7_1-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213-8_1-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Belgian Mocha Cold Coffee",
+  "handle": "belgian-mocha-cold-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "230ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530-2_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530-3_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530-4_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530-5_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530-6_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Caramel Latte Cold Coffee",
+  "handle": "caramel-latte-cold-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "230ml",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215_7-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215_7-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215-2_1-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215-3_1-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215-4_1-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215-5_1-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215-6_1-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215-7_1-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215-8_1-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "French Vanilla Cold Coffee",
+  "handle": "french-vanilla-cold-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "230ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372-2_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372-3_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372-4_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372-5_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372-6_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Hazelnut Cold Coffee",
+  "handle": "hazelnut-cold-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "230ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214_2-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214_2-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214-2_2-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214-3_2-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214-4_2-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214-5_2-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214-6_2-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214-7_1-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214-8_1-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Vietnamese Espresso & Milk Coffee",
+  "handle": "vietnamese-espresso-milk-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "230ml",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373_1-sleepy-owl-vietnamese-cold-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373_1-sleepy-owl-vietnamese-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373-2_1-sleepy-owl-vietnamese-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373-3_1-sleepy-owl-vietnamese-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373-4_1-sleepy-owl-vietnamese-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373-5_1-sleepy-owl-vietnamese-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373-6_1-sleepy-owl-vietnamese-cold-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Classic Iced Coffee",
+  "handle": "classic-iced-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087_7-sleepy-owl-cold-brew-coffee-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087_7-sleepy-owl-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087-2_7-sleepy-owl-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087-3_7-sleepy-owl-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087-4_7-sleepy-owl-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087-5_2-sleepy-owl-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087-6_2-sleepy-owl-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087-7_2-sleepy-owl-cold-brew-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087-8_2-sleepy-owl-cold-brew-coffee-classic.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Sweet Iced Coffee",
+  "handle": "sweet-iced-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088_5-sleepy-owl-cold-brew-coffee-sweet.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088_5-sleepy-owl-cold-brew-coffee-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088-2_6-sleepy-owl-cold-brew-coffee-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088-3_6-sleepy-owl-cold-brew-coffee-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088-4_6-sleepy-owl-cold-brew-coffee-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088-5_6-sleepy-owl-cold-brew-coffee-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088-6_6-sleepy-owl-cold-brew-coffee-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088-7_1-sleepy-owl-cold-brew-coffee-sweet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088-8_1-sleepy-owl-cold-brew-coffee-sweet.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Hazelnut Iced Coffee",
+  "handle": "hazelnut-iced-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694_3-sleepy-owl-hazelnut-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694_3-sleepy-owl-hazelnut-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694-2_3-sleepy-owl-hazelnut-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694-3_3-sleepy-owl-hazelnut-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694-4_3-sleepy-owl-hazelnut-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694-5_3-sleepy-owl-hazelnut-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694-6_3-sleepy-owl-hazelnut-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694-7_3-sleepy-owl-hazelnut-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694-8_2-sleepy-owl-hazelnut-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mocha Iced Coffee",
+  "handle": "mocha-iced-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092-2_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092-3_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092-4_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092-5_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092-6_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Salted Caramel Cold Coffee",
+  "handle": "salted-caramel-cold-coffee",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091-2_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091-3_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091-4_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091-5_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091-6_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Vanilla Cold Brew Coffee Bottle",
+  "handle": "vanilla-cold-brew-coffee-bottle",
+  "vendor": "Sleepy Owl",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225089_1-sleepy-owl-cold-brew-coffee-vanilla-made-with-high-quality-beans.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225089_1-sleepy-owl-cold-brew-coffee-vanilla-made-with-high-quality-beans.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225089-2_1-sleepy-owl-cold-brew-coffee-vanilla-made-with-high-quality-beans.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225089-3_1-sleepy-owl-cold-brew-coffee-vanilla-made-with-high-quality-beans.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225089-4_1-sleepy-owl-cold-brew-coffee-vanilla-made-with-high-quality-beans.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225089-5_1-sleepy-owl-cold-brew-coffee-vanilla-made-with-high-quality-beans.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40225089-6_1-sleepy-owl-cold-brew-coffee-vanilla-made-with-high-quality-beans.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

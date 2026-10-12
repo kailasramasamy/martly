@@ -1,0 +1,262 @@
+{
+  "brand": "Sleepy Owl",
+  "manufacturer": "Sleepy Owl Coffee Pvt. Ltd.",
+  "feed": "sleepy-owl-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sleepy-owl/logo-84556716.png",
+  "themeColor": "#1D2A6B",
+  "themeColorSecondary": "#E2231A",
+  "namePrefix": "Sleepy Owl ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Original\\ Cold\\ Brew\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Dark\\ Roast\\ Cold\\ Brew\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^French\\ Vanilla\\ Cold\\ Brew\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Assorted\\ Cold\\ Brew\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Original\\ Hot\\ Brew\\ Coffee\\ Bags$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Dark\\ Roast\\ Hot\\ Brew\\ Coffee\\ Bags$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Hot\\ Brew\\ Coffee\\ Bags$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Assorted\\ Hot\\ Brew\\ Coffee\\ Bags$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Classic\\ Kaapi\\ Filter\\ Coffee\\ Bags$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Original\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^French\\ Vanilla\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Assorted\\ Premium\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Intense\\ Java\\ Xpresso\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Premium\\ Instant\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^3\\ In\\ 1\\ Assorted\\ Instant\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^3\\ In\\ 1\\ Cappuccino\\ Instant\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^3\\ In\\ 1\\ French\\ Vanilla\\ Latte\\ Instant\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^3\\ In\\ 1\\ Hazelnut\\ Latte\\ Instant\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Classic\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Belgian\\ Mocha\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Latte\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^French\\ Vanilla\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Vietnamese\\ Espresso\\ \\&\\ Milk\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Classic\\ Iced\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Iced\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Iced\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Mocha\\ Iced\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Salted\\ Caramel\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Cold\\ Brew\\ Coffee\\ Bottle$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    }
+  ]
+}
