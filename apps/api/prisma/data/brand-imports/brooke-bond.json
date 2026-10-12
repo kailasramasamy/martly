@@ -1,0 +1,174 @@
+{
+  "brand": "Brooke Bond (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "brooke-bond-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/brooke-bond/logo-f400aa86.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#1D3C8F",
+  "namePrefix": "Brooke Bond ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Red\\ Label\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Red\\ Label\\ Natural\\ Care\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Red\\ Label\\ Instant\\ Masala\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Red\\ Label\\ Instant\\ Masala\\ Chai\\ Premix\\ \\-\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Red\\ Label\\ Instant\\ Elaichi\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Red\\ Label\\ Instant\\ Ginger\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Red\\ Label\\ Instant\\ Chai\\ Assorted\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Red\\ Label\\ Instant\\ Spiced\\ Tea\\ Mix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Taaza\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Taaza\\ Masala\\ Chaska\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Taaza\\ Elaichi\\ Chaska\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Deccan\\ Rose\\ Flavoured\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Rich\\ Masala\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Fresh\\ Lemon\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Spicy\\ Ginger\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Tea\\ House\\ 2nd\\ Flush\\ Orthodox\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Tea\\ House\\ Bold\\ Spice\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Taj\\ Mahal\\ Tea\\ House\\ Royal\\ Saffron\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    }
+  ]
+}
