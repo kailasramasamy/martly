@@ -1,0 +1,55 @@
+[
+ {
+  "title": "Punjabi Masala Papad",
+  "handle": "punjabi-masala-papad",
+  "vendor": "Lijjat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "77",
+    "compare_at_price": "77",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266408_1-lijjat-papad-punjabi-masala.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264984_4-lijjat-papad-punjabi-masala.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "422",
+    "compare_at_price": "422",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/220945_5-lijjat-papad-punjabi-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266408_1-lijjat-papad-punjabi-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266408-2_1-lijjat-papad-punjabi-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266408-3_1-lijjat-papad-punjabi-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264984_4-lijjat-papad-punjabi-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/220945_5-lijjat-papad-punjabi-masala.jpg"
+   }
+  ]
+ }
+]

@@ -1,0 +1,22 @@
+{
+  "brand": "Lijjat",
+  "manufacturer": "Shri Mahila Griha Udyog Lijjat Papad",
+  "feed": "lijjat-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lijjat/logo-70b15af1.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#F7B500",
+  "namePrefix": "Lijjat ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Punjabi\\ Masala\\ Papad$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Papad"
+      ]
+    }
+  ]
+}
