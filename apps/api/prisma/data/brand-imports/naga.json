@@ -1,0 +1,78 @@
+{
+  "brand": "Naga",
+  "manufacturer": "Naga Limited",
+  "feed": "naga-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/naga/logo-7eccc5f5.png",
+  "themeColor": "#E8711C",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Naga ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Whole\\ Wheat\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Refined\\ Wheat\\ Flour\\ \\(Maida\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Maida (Refined Flour)"
+      ]
+    },
+    {
+      "match": "^Double\\ Roasted\\ Sooji$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Sooji & Rava"
+      ]
+    },
+    {
+      "match": "^Samba\\ Broken\\ Wheat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Gram\\ Flour\\ \\(Besan\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Besan (Gram Flour)"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Ragi Flour"
+      ]
+    },
+    {
+      "match": "^Rice\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Idiyappam\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    }
+  ]
+}

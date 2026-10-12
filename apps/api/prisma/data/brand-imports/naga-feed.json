@@ -1,0 +1,306 @@
+[
+ {
+  "title": "Whole Wheat Flour",
+  "handle": "whole-wheat-flour",
+  "vendor": "Naga",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "74",
+    "compare_at_price": "74",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012605_3-naga-chakki-walla-atta-premium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012605_3-naga-chakki-walla-atta-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012605-2_2-naga-chakki-walla-atta-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012605-3_2-naga-chakki-walla-atta-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012605-4_2-naga-chakki-walla-atta-premium.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Refined Wheat Flour (Maida)",
+  "handle": "refined-wheat-flour-maida",
+  "vendor": "Naga",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012609_6-naga-refined-wheat-flour-maida.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "92",
+    "compare_at_price": "92",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012608_4-naga-refined-wheat-flour-maida.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012609_6-naga-refined-wheat-flour-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012609-2_9-naga-refined-wheat-flour-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012609-3_9-naga-refined-wheat-flour-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012609-4_9-naga-refined-wheat-flour-maida.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012608_4-naga-refined-wheat-flour-maida.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Double Roasted Sooji",
+  "handle": "double-roasted-sooji",
+  "vendor": "Naga",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012612_4-naga-sooji.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "21",
+    "compare_at_price": "21",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012611_3-naga-sooji.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "102",
+    "compare_at_price": "102",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012613_6-naga-sooji.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012612_4-naga-sooji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012612-2_5-naga-sooji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012612-3_6-naga-sooji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012612-4_5-naga-sooji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012611_3-naga-sooji.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012613_6-naga-sooji.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Samba Broken Wheat",
+  "handle": "samba-broken-wheat",
+  "vendor": "Naga",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "93",
+    "compare_at_price": "93",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012607_4-naga-samba-broken-wheat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012607_4-naga-samba-broken-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012607-2_6-naga-samba-broken-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012607-3_6-naga-samba-broken-wheat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012607-4_6-naga-samba-broken-wheat.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Gram Flour (Besan)",
+  "handle": "gram-flour-besan",
+  "vendor": "Naga",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40274886_2-naga-gram-flour-100-chana-dal-besan.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274886_2-naga-gram-flour-100-chana-dal-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274886-2_2-naga-gram-flour-100-chana-dal-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274886-3_2-naga-gram-flour-100-chana-dal-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274886-4_2-naga-gram-flour-100-chana-dal-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274886-5_2-naga-gram-flour-100-chana-dal-besan.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Ragi Flour",
+  "handle": "ragi-flour",
+  "vendor": "Naga",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40274885_2-naga-ragi-flour-finger-millet-rich-in-calcium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274885_2-naga-ragi-flour-finger-millet-rich-in-calcium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274885-2_2-naga-ragi-flour-finger-millet-rich-in-calcium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274885-3_2-naga-ragi-flour-finger-millet-rich-in-calcium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274885-4_2-naga-ragi-flour-finger-millet-rich-in-calcium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274885-5_2-naga-ragi-flour-finger-millet-rich-in-calcium.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rice Flour",
+  "handle": "rice-flour",
+  "vendor": "Naga",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40274887_1-naga-rice-flour-chawal-ka-atta.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274887_1-naga-rice-flour-chawal-ka-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274887-2_2-naga-rice-flour-chawal-ka-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274887-3_2-naga-rice-flour-chawal-ka-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274887-4_2-naga-rice-flour-chawal-ka-atta.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274887-5_2-naga-rice-flour-chawal-ka-atta.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Idiyappam Flour",
+  "handle": "idiyappam-flour",
+  "vendor": "Naga",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40274888_1-naga-idiyappam-flour-for-south-indian-breakfast.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274888_1-naga-idiyappam-flour-for-south-indian-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274888-2_2-naga-idiyappam-flour-for-south-indian-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274888-3_2-naga-idiyappam-flour-for-south-indian-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274888-4_2-naga-idiyappam-flour-for-south-indian-breakfast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40274888-5_2-naga-idiyappam-flour-for-south-indian-breakfast.jpg"
+   }
+  ]
+ }
+]
