@@ -1,0 +1,566 @@
+[
+ {
+  "title": "Udhayam Filter Coffee",
+  "handle": "udhayam-filter-coffee",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "102",
+    "compare_at_price": "102",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003885_2-narasus-coffee-udhayam-blend-of-coffee-chicory.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "357",
+    "compare_at_price": "357",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003875_1-narasus-coffee-udhayam-blend-of-coffee-chicory.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003885_2-narasus-coffee-udhayam-blend-of-coffee-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003885-2_7-narasus-coffee-udhayam-blend-of-coffee-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003885-3_8-narasus-coffee-udhayam-blend-of-coffee-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003875_1-narasus-coffee-udhayam-blend-of-coffee-chicory.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pure Filter Coffee",
+  "handle": "pure-filter-coffee",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003886_3-narasus-coffee-pure.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "463",
+    "compare_at_price": "463",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003714_1-narasus-coffee-pure.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003886_3-narasus-coffee-pure.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003886-2_7-narasus-coffee-pure.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003886-3_8-narasus-coffee-pure.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003714_1-narasus-coffee-pure.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Dhivyam Premium Filter Coffee",
+  "handle": "dhivyam-premium-filter-coffee",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "490",
+    "compare_at_price": "490",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007742_5-narasus-coffee-dhivyam-premium-coarse-ground-filter-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007742_5-narasus-coffee-dhivyam-premium-coarse-ground-filter-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007742-2_7-narasus-coffee-dhivyam-premium-coarse-ground-filter-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007742-3_7-narasus-coffee-dhivyam-premium-coarse-ground-filter-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007742-4_6-narasus-coffee-dhivyam-premium-coarse-ground-filter-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Anandham Delite Hotel Blend Coffee",
+  "handle": "anandham-delite-hotel-blend-coffee",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113208_4-narasus-anandham-delite-hotel-blend.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113208_4-narasus-anandham-delite-hotel-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113208-2_4-narasus-anandham-delite-hotel-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113208-3_3-narasus-anandham-delite-hotel-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113208-4_3-narasus-anandham-delite-hotel-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113208-5_3-narasus-anandham-delite-hotel-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113208-6_3-narasus-anandham-delite-hotel-blend.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Insta Strong Instant Coffee",
+  "handle": "insta-strong-instant-coffee",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "134",
+    "compare_at_price": "134",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003876_4-narasus-insta-strong-coffee-blended-with-chicory.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003877_2-narasus-coffee-insta-strong-coffee-blended-with-chicory.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003876_4-narasus-insta-strong-coffee-blended-with-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003876-2_8-narasus-insta-strong-coffee-blended-with-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003876-3_8-narasus-insta-strong-coffee-blended-with-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003876-4_8-narasus-insta-strong-coffee-blended-with-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003876-5_8-narasus-insta-strong-coffee-blended-with-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003876-6_8-narasus-insta-strong-coffee-blended-with-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003877_2-narasus-coffee-insta-strong-coffee-blended-with-chicory.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Insta Strong Instant Coffee Pouch",
+  "handle": "insta-strong-instant-coffee-pouch",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003884_7-narasus-coffee-instant-insta-strong.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003884_7-narasus-coffee-instant-insta-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003884-2_7-narasus-coffee-instant-insta-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003884-3_7-narasus-coffee-instant-insta-strong.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pure Instant Coffee",
+  "handle": "pure-instant-coffee",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003878_2-narasus-pure-instant-coffee-granulated.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003878_2-narasus-pure-instant-coffee-granulated.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003878-2_5-narasus-pure-instant-coffee-granulated.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003878-3_5-narasus-pure-instant-coffee-granulated.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003878-4_4-narasus-pure-instant-coffee-granulated.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003878-5_4-narasus-pure-instant-coffee-granulated.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003878-6_4-narasus-pure-instant-coffee-granulated.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Extra Strong Instant Coffee",
+  "handle": "extra-strong-instant-coffee",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "1065",
+    "compare_at_price": "1065",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113209_1-narasus-instant-coffee-extra-strong.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113209_1-narasus-instant-coffee-extra-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113209-2_1-narasus-instant-coffee-extra-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113209-3_1-narasus-instant-coffee-extra-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113209-4_1-narasus-instant-coffee-extra-strong.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Instant Coffee Premix",
+  "handle": "instant-coffee-premix",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "18g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003505_1-narasus-instant-coffee-premix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003505_1-narasus-instant-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003505-2_1-narasus-instant-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003505-3_1-narasus-instant-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003505-4_1-narasus-instant-coffee-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003505-5_1-narasus-instant-coffee-premix.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Besh Besh Sukku Coffee",
+  "handle": "besh-besh-sukku-coffee",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135446_1-narasus-sukku-coffee.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "98",
+    "compare_at_price": "98",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135447_1-narasus-sukku-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135446_1-narasus-sukku-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135446-2_1-narasus-sukku-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135447_1-narasus-sukku-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Dhall Rice Powder",
+  "handle": "dhall-rice-powder",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114824_1-narasus-dhall-rice-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114824_1-narasus-dhall-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114824-2_1-narasus-dhall-rice-powder.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Garlic Rice Powder",
+  "handle": "garlic-rice-powder",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114823_1-narasus-garlic-rice-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114823_1-narasus-garlic-rice-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114823-2_1-narasus-garlic-rice-powder.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Idly Chilli Powder",
+  "handle": "idly-chilli-powder",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114825_1-narasus-idly-chilli-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114825_1-narasus-idly-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114825-2_1-narasus-idly-chilli-powder.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Puliyodharai Powder",
+  "handle": "puliyodharai-powder",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "51",
+    "compare_at_price": "51",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114827_1-narasus-puliyodharai-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114827_1-narasus-puliyodharai-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114827-2_1-narasus-puliyodharai-powder.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Wheat Flour",
+  "handle": "wheat-flour",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "61",
+    "compare_at_price": "61",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224790_1-narasus-wheat-flouratta-for-soft-dough.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224790_1-narasus-wheat-flouratta-for-soft-dough.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224790-2_1-narasus-wheat-flouratta-for-soft-dough.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224790-3_1-narasus-wheat-flouratta-for-soft-dough.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224790-4_1-narasus-wheat-flouratta-for-soft-dough.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224790-5_1-narasus-wheat-flouratta-for-soft-dough.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Whole Wheat Atta - Chakki Fresh",
+  "handle": "whole-wheat-atta-chakki-fresh",
+  "vendor": "Narasu's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "71",
+    "compare_at_price": "71",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224791_1-narasus-whole-wheat-flouratta-chakki-fresh.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224791_1-narasus-whole-wheat-flouratta-chakki-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224791-2_1-narasus-whole-wheat-flouratta-chakki-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224791-3_1-narasus-whole-wheat-flouratta-chakki-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224791-4_1-narasus-whole-wheat-flouratta-chakki-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224791-5_1-narasus-whole-wheat-flouratta-chakki-fresh.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
