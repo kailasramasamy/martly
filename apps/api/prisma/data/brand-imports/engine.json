@@ -1,0 +1,48 @@
+{
+  "brand": "Engine (Shree Hari Oil)",
+  "manufacturer": "Shree Hari Oil",
+  "feed": "engine-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/engine-shree-hari-oil/logo-b8555a8c.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#F2B705",
+  "namePrefix": "Engine ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Engine Brand Kachi Ghani Mustard Oil": "Kachi Ghani Mustard Oil"
+  },
+  "rules": [
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Groundnut\\ Filter\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Til\\ Sesame\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sesame Oil (Til)"
+      ]
+    }
+  ]
+}
