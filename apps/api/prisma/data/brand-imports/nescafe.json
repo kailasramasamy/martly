@@ -1,0 +1,270 @@
+{
+  "brand": "Nescafe (Nestle)",
+  "manufacturer": "Nestlé India Ltd.",
+  "feed": "nescafe-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nescafe/logo-e6bdabba.png",
+  "themeColor": "#E3051B",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Nescafe ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Classic\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Classic\\ Instant\\ Coffee\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Classic\\ Instant\\ Coffee\\ Sticks$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Classic\\ Black\\ Roast\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Ice\\ Roast\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Blend\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Blend\\ Instant\\ Coffee\\ Sticks$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Blend\\ Decaf\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Blend\\ Rich\\ Caramel\\ Flavoured\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Blend\\ Smooth\\ Vanilla\\ Flavoured\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Origins\\ Indonesian\\ Sumatra$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Origins\\ Uganda\\ Kenya$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Blend\\ 37\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^All\\ in\\ 1\\ Hot\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^All\\ in\\ 1\\ Frappe\\ Cold\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Cappuccino\\ Instant\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Choco\\ Mocha\\ Instant\\ Coffee\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Latte\\ Coffee\\ Cup$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Sunrise\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Sunrise\\ Instant\\ Coffee\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Sunrise\\ Extra\\ Strong\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Sunrise\\ Liquid\\ Coffee\\ Decoction$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Hazelnut\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Chilled\\ Latte$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Choco\\ Mocha$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Intense\\ Cafe$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Caramel\\ Latte\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Choco\\ Latte\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Classic\\ Latte\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Iced\\ Frappe\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ Iced\\ Latte\\ Can$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    }
+  ]
+}
