@@ -1,0 +1,208 @@
+{
+  "brand": "Balaji",
+  "manufacturer": "Balaji Wafers Pvt Ltd",
+  "feed": "balaji-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/balaji/logo-73286ba3.png",
+  "themeColor": "#3A2F8F",
+  "themeColorSecondary": "#F5D90A",
+  "namePrefix": "Balaji ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Balaji Masala Wafers": "Masala Masti Wafers"
+  },
+  "rules": [
+    {
+      "match": "^Masala\\ Masti\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Cream\\ \\&\\ Onion\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Twist\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Simply\\ Salted\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Chaat\\ Chaska\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Pizzy\\ Masala\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Banana\\ Masala\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Banana Chips"
+      ]
+    },
+    {
+      "match": "^Wheelos\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Chataka\\ Pataka\\ Tangy\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Aloo\\ Sev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Ratlami\\ Sev$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Bhujia & Sev"
+      ]
+    },
+    {
+      "match": "^Shing\\ Bhujia$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Masala\\ Shing$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Chana\\ Dal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Farali\\ Chevdo$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Tikha\\ Mitha\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Sev\\ Murmura$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Masala\\ Sev\\ Murmura$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Bites\\ Jeera\\ Khakhra$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Khakhra"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Bites\\ Methi\\ Khakhra$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Khakhra"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Bites\\ Plain\\ Khakhra$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Khakhra"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Bites\\ Masala\\ Khakhra$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Khakhra"
+      ]
+    },
+    {
+      "match": "^Gold\\ Healthy\\ Happiness\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Gold\\ Royal\\ Treat\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}
