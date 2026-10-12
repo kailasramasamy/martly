@@ -1,0 +1,399 @@
+[
+ {
+  "title": "Soft Drink",
+  "handle": "soft-drink",
+  "vendor": "7UP (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130830_10-7-up-soft-drink-lemon.jpg"
+    },
+    "barcode": "8902080304059"
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216381_1-7-up-lemon-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "400ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339096_1-7up-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251042_9-7-up-soft-drink-lemon.jpg"
+    }
+   },
+   {
+    "title": "1.25L",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/34654_3-7-up-lemon-flavour-coldrink.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40094178_9-7-up-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130830_10-7-up-soft-drink-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130830-2_11-7-up-soft-drink-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130830-3_11-7-up-soft-drink-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130830-4_11-7-up-soft-drink-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130830-5_1-7-up-soft-drink-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130830-6_1-7-up-soft-drink-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216381_1-7-up-lemon-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339096_1-7up-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and iconic taste of 7UP, a sparkling lemon-lime soda that has been delighting generations. With its crisp, clean, and bubbly flavour, 7UP is the perfect thirst-quencher for any occasion. Whether you're looking to cool down on a hot day or seeking a delightful mixer for your favourite cocktails, this versatile beverage delivers a burst of citrusy goodness that will leave you feeling positive and confident. Celebrate your natural self and stand out from the crowd with the 'Hum toh hain like this!' attitude that 7UP embodies. Enjoy the convenience of the 2.25L bottle, perfect for sharing or stocking up your fridge. Indulge in the refreshing and iconic taste of 7UP, a true classic that never fails to delight.",
+   "nutritionalInfo": {
+    "Serving Size": "200 ml",
+    "Energy": "47 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "11.7 g",
+    "Total Sugars": "11.7 g",
+    "Added Sugars": "11.7 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "18 mg"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Soft Drink Can",
+  "handle": "soft-drink-can",
+  "vendor": "7UP (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345438_1-7-up-soft-drink.jpg"
+    },
+    "barcode": "8902080001361"
+   },
+   {
+    "title": "250ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/292396_7-7-up-soft-drink-lemon.jpg"
+    }
+   },
+   {
+    "title": "330ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339531_2-7up-lemon-flavour-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345438_1-7-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345438-2_1-7-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345438-3_1-7-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345438-4_1-7-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345438-5_1-7-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345438-6_1-7-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345438-7_1-7-up-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292396_7-7-up-soft-drink-lemon.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and iconic taste of 7UP, a sparkling lemon-lime soda that has been delighting generations. With its crisp, clean, and bubbly flavour, 7UP is the perfect thirst-quencher for any occasion. Whether you're looking to cool down on a hot day or seeking a delightful mixer for your favourite cocktails, this versatile beverage delivers a burst of citrusy goodness that will leave you feeling positive and confident. Celebrate your natural self and stand out from the crowd with the 'Hum toh hain like this!' attitude that 7UP embodies. Enjoy the convenience of this bottle, perfect for sharing or stocking up your fridge. Indulge in the refreshing and iconic taste of 7UP, a true classic that never fails to delight.",
+   "ingredients": "Carbonated Water, Sugar, Colour (150d), Acidity Regulator (338), Caffeine (10 mg/100g), Flavour (Natural Flavouring Substances), Stabilizer(436)",
+   "nutritionalInfo": {
+    "Energy": "47 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "11.7 g",
+    "Total Sugars": "11.7 g",
+    "Added Sugars": "11.7 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "18 mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Sugar Soft Drink Can",
+  "handle": "zero-sugar-soft-drink-can",
+  "vendor": "7UP (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313395_1-7-up-soft-drink-zero-sugar.jpg"
+    },
+    "barcode": "8902080002412"
+   },
+   {
+    "title": "330ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327058_1-7-up-zero-sugar-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313395_1-7-up-soft-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313395-2_1-7-up-soft-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313395-3_1-7-up-soft-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313395-4_1-7-up-soft-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313395-5_1-7-up-soft-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313395-6_1-7-up-soft-drink-zero-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327058_1-7-up-zero-sugar-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the ultimate refreshment with 7UP's new Zero Sugar variant, offering the same crisp lemony taste that will uplift you on hot summer days or whenever you need a lift. Indulge in the 'Super Duper Refresher' without worrying about added sugars, making it the perfect guilt-free beverage for any occasion. Stay refreshed and invigorated with every sip of this delightful fizzy drink! Embrace the joy of a delightful and guilt-free beverage that keeps you refreshed and energised throughout the day. Introducing 7 Up Zero Sugar, a refreshing lemon-lime soda that offers the classic taste of 7 Up without the sugar. Perfect for those looking to enjoy a guilt-free beverage while savouring the zesty flavour. 7UP's sparkling and crisp lemon and lime flavour keep you positive and confident against all odds. It aims to connect with people who choose to be their natural self and stand out in the crowd. 7UP celebrates the 'Hum toh hain like this!' attitude of consumers. Everyone has their own spark of originality and that is what we celebrate.",
+   "ingredients": "Carbonated Water, Acidity Regulators (330, 331, 296), Flavour (Natural Flavouring Substances), Sweeteners (951, 955, 950), Preservatives (211, 202)",
+   "nutritionalInfo": {
+    "Serving Size": "200 ml",
+    "Energy": "1.2 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "25 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Extra Fizz Soft Drink",
+  "handle": "extra-fizz-soft-drink",
+  "vendor": "7UP (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367903_1-7up-extra-fizz-soft-drink.jpg"
+    },
+    "barcode": "8902080002306"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367903_1-7up-extra-fizz-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367903-2_1-7up-extra-fizz-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367903-3_1-7up-extra-fizz-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367903-4_1-7up-extra-fizz-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367903-5_1-7up-extra-fizz-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367903-6_1-7up-extra-fizz-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367903-7_1-7up-extra-fizz-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a burst of refreshing citrus flavour with 7UP Extra Fizz Soft Drink. Crafted with an enhanced level of carbonation, it delivers a sharper, more invigorating fizz that lifts every sip.\nWith its clean, lemon-lime taste and lively bubbles, this drink offers a crisp and thirst-quenching experience. Perfect for enjoying chilled on its own or as a versatile mixer, it adds a refreshing sparkle to any occasion.\nIdeal for those who enjoy a stronger fizz, 7UP Extra Fizz Soft Drink brings extra refreshment and a vibrant twist to your everyday moments.",
+   "ingredients": "Carbonated Water, Acidity Regulators (330, 331, 296), Natural Flavouring Substances, Sweeteners (951, 955, 950), Preservative (211), Stabiliser (436).",
+   "nutritionalInfo": {
+    "Energy": "1 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "28 mg"
+   },
+   "manufacturerName": "Varun Beverages Ltd",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Nimbooz Lemon Drink",
+  "handle": "nimbooz-lemon-drink",
+  "vendor": "7UP (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672_4-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+    },
+    "barcode": "8902080334179"
+   },
+   {
+    "title": "250ml",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265893_8-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672_4-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672-2_4-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672-3_2-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672-4_2-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672-5_2-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672-6_2-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672-7_2-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325672-8_2-7-up-nimbooz-soft-drink-with-real-lemon-juice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and tangy delight of 7UP Nimbooz, a lemon-lime soft drink that quenches your thirst with its burst of flavour. Made with real lemon juice and free from caffeine, this beverage offers a healthier alternative while still delivering a zesty and bubbly experience. Embrace your confident and vibrant self as you sip on this refreshing elixir, which is as good as homemade nimbu pani and rich in vitamin C to support your immune system. On scorching summer days, 7UP Nimbooz will keep you hydrated and rejuvenated, helping you beat the heat with its lively and revitalising taste.",
+   "ingredients": "7UP, Nimbooz, Lemon Juice (reconstituted)",
+   "nutritionalInfo": {
+    "Serving Size": "200 ml",
+    "Energy": "42 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "10.6 g",
+    "Total Sugars": "10.6 g",
+    "Added Sugars": "10.5 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "65 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ }
+]

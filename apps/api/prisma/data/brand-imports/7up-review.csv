@@ -1,0 +1,6 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Soft Drink,7UP Soft Drink,update,Beverages > Soft Drinks & Carbonated > Lemon & Lime,750ml ₹40 | 250ml ₹20 | 400ml ₹20 | 600ml ₹35 | 1.25L ₹50 | 2.25L ₹100,750ml ₹40 | 250ml ₹20 | 400ml ₹20 | 600ml ₹35 | 1.25L ₹50 | 2.25L ₹100,8,
+Soft Drink Can,7UP Soft Drink Can,create,Beverages > Soft Drinks & Carbonated > Lemon & Lime,300ml ₹40 | 250ml ₹35 | 330ml ₹40,300ml ₹40 | 250ml ₹35 | 330ml ₹40,8,
+Zero Sugar Soft Drink Can,7UP Zero Sugar Soft Drink Can,create,Beverages > Soft Drinks & Carbonated > Diet & Zero Sugar,250ml ₹35 | 330ml ₹40,250ml ₹35 | 330ml ₹40,7,
+Extra Fizz Soft Drink,7UP Extra Fizz Soft Drink,create,Beverages > Soft Drinks & Carbonated > Lemon & Lime,750ml ₹40,750ml ₹40,7,
+Nimbooz Lemon Drink,7UP Nimbooz Lemon Drink,create,Beverages > Juices & Fruit Drinks > Fruit Drinks,350ml ₹25 | 250ml ₹15,350ml ₹25 | 250ml ₹15,8,

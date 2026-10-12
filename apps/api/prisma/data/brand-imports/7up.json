@@ -1,0 +1,56 @@
+{
+  "brand": "7UP (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt. Ltd.",
+  "feed": "7up-feed.json",
+  "themeColor": "#00A94F",
+  "themeColorSecondary": "#E31837",
+  "namePrefix": "7UP ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "7UP Lemon Sparkling Drink": "Soft Drink"
+  },
+  "rules": [
+    {
+      "match": "^Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Lemon & Lime"
+      ]
+    },
+    {
+      "match": "^Soft\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Lemon & Lime"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Soft\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Diet & Zero Sugar"
+      ]
+    },
+    {
+      "match": "^Extra\\ Fizz\\ Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Lemon & Lime"
+      ]
+    },
+    {
+      "match": "^Nimbooz\\ Lemon\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    }
+  ],
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/7up/logo-d2085df6.png"
+}
