@@ -1,0 +1,746 @@
+[
+ {
+  "title": "Cow Ghee",
+  "handle": "cow-ghee",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "57",
+    "compare_at_price": "57",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000373_1-hatsun-cow-ghee.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000374_1-hatsun-cow-ghee.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003735_2-hatsun-cow-ghee.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "700",
+    "compare_at_price": "700",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000375_1-hatsun-cow-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000373_1-hatsun-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000373-2_1-hatsun-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000373-3_1-hatsun-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000373-4_1-hatsun-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000373-5_1-hatsun-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000373-6_1-hatsun-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000374_1-hatsun-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003735_2-hatsun-cow-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Curd",
+  "handle": "curd",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000387_3-hatsun-cup-curd.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000388_3-hatsun-cup-curd.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40353698_1-hatsun-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000387_3-hatsun-cup-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000387-2_1-hatsun-cup-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000387-3_1-hatsun-cup-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000387-4_1-hatsun-cup-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000387-5_1-hatsun-cup-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000388_3-hatsun-cup-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353698_1-hatsun-curd.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Curd Pouch",
+  "handle": "curd-pouch",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339220_2-hatsun-hatsun-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339220_2-hatsun-hatsun-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339220-2_2-hatsun-hatsun-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339220-3_1-hatsun-hatsun-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339220-4_1-hatsun-hatsun-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339220-5_1-hatsun-hatsun-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339220-6_1-hatsun-hatsun-curd.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Soft & Fresh Paneer",
+  "handle": "soft-fresh-paneer",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196746_2-hatsun-paneer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196746_2-hatsun-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196746-2_2-hatsun-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196746-3_1-hatsun-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196746-4_1-hatsun-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196746-5_1-hatsun-paneer.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cow Milk",
+  "handle": "cow-milk",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "34",
+    "compare_at_price": "34",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40177174_3-hatsun-cow-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177174_3-hatsun-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177174-2_2-hatsun-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177174-3_2-hatsun-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177174-4_2-hatsun-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177174-5_2-hatsun-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177174-6_1-hatsun-cow-milk.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Unsalted Cooking Butter",
+  "handle": "unsalted-cooking-butter",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378_3-hatsun-butter-cooking.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000379_3-hatsun-butter-cooking.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378_3-hatsun-butter-cooking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378-2_1-hatsun-butter-cooking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378-3_1-hatsun-butter-cooking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378-4_1-hatsun-butter-cooking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378-5_1-hatsun-butter-cooking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378-6_1-hatsun-butter-cooking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378-7_1-hatsun-butter-cooking.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378-8_1-hatsun-butter-cooking.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Table Butter Chiplets",
+  "handle": "table-butter-chiplets",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468_2-hatsun-table-butter-chiplets.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468_2-hatsun-table-butter-chiplets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468-2_2-hatsun-table-butter-chiplets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468-3_2-hatsun-table-butter-chiplets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468-4_2-hatsun-table-butter-chiplets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468-5_2-hatsun-table-butter-chiplets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468-6_2-hatsun-table-butter-chiplets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468-7_2-hatsun-table-butter-chiplets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468-8_2-hatsun-table-butter-chiplets.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Breakfast Cream",
+  "handle": "breakfast-cream",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339222_1-hatsun-hatsun-breakfast-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339222_1-hatsun-hatsun-breakfast-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339222-2_1-hatsun-hatsun-breakfast-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339222-3_1-hatsun-hatsun-breakfast-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339222-4_1-hatsun-hatsun-breakfast-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339222-5_1-hatsun-hatsun-breakfast-cream.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Fresh Cream",
+  "handle": "fresh-cream",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358469_2-hatsun-fresh-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358469_2-hatsun-fresh-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358469-2_2-hatsun-fresh-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358469-3_2-hatsun-fresh-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358469-4_2-hatsun-fresh-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358469-5_2-hatsun-fresh-cream.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Blueberry Greek Yoghurt",
+  "handle": "blueberry-greek-yoghurt",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123_1-hatsun-blueberry-greek-yoghurt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123_1-hatsun-blueberry-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123-2_1-hatsun-blueberry-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123-3_1-hatsun-blueberry-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123-4_1-hatsun-blueberry-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123-5_1-hatsun-blueberry-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123-6_1-hatsun-blueberry-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123-7_1-hatsun-blueberry-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123-8_1-hatsun-blueberry-greek-yoghurt.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Fig & Dates Greek Yoghurt",
+  "handle": "fig-dates-greek-yoghurt",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339221_1-hatsun-hatsun-greek-yoghurt-fig-and-dates.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339221_1-hatsun-hatsun-greek-yoghurt-fig-and-dates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339221-2_1-hatsun-hatsun-greek-yoghurt-fig-and-dates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339221-3_1-hatsun-hatsun-greek-yoghurt-fig-and-dates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339221-4_1-hatsun-hatsun-greek-yoghurt-fig-and-dates.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339221-5_1-hatsun-hatsun-greek-yoghurt-fig-and-dates.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Red Cherry Greek Yoghurt",
+  "handle": "red-cherry-greek-yoghurt",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339218_1-hatsun-hatsun-greek-yoghurt-red-cherry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339218_1-hatsun-hatsun-greek-yoghurt-red-cherry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339218-2_1-hatsun-hatsun-greek-yoghurt-red-cherry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339218-3_1-hatsun-hatsun-greek-yoghurt-red-cherry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339218-4_1-hatsun-hatsun-greek-yoghurt-red-cherry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339218-5_1-hatsun-hatsun-greek-yoghurt-red-cherry.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mango Layered Yoghurt",
+  "handle": "mango-layered-yoghurt",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124_1-hatsun-mango-layered-yoghurt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124_1-hatsun-mango-layered-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124-2_1-hatsun-mango-layered-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124-3_1-hatsun-mango-layered-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124-4_1-hatsun-mango-layered-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124-5_1-hatsun-mango-layered-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124-6_1-hatsun-mango-layered-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124-7_1-hatsun-mango-layered-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124-8_1-hatsun-mango-layered-yoghurt.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mixed Berry Fruit Yoghurt",
+  "handle": "mixed-berry-fruit-yoghurt",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339217_1-hatsun-hatsun-fruit-yoghurt-mixed-berry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339217_1-hatsun-hatsun-fruit-yoghurt-mixed-berry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339217-2_1-hatsun-hatsun-fruit-yoghurt-mixed-berry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339217-3_1-hatsun-hatsun-fruit-yoghurt-mixed-berry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339217-4_1-hatsun-hatsun-fruit-yoghurt-mixed-berry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339217-5_1-hatsun-hatsun-fruit-yoghurt-mixed-berry.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Rose & Lychee Fruit Yoghurt",
+  "handle": "rose-lychee-fruit-yoghurt",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339216_1-hatsun-hatsun-fruit-yoghurt-rose-and-lychee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339216_1-hatsun-hatsun-fruit-yoghurt-rose-and-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339216-2_1-hatsun-hatsun-fruit-yoghurt-rose-and-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339216-3_1-hatsun-hatsun-fruit-yoghurt-rose-and-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339216-4_1-hatsun-hatsun-fruit-yoghurt-rose-and-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339216-5_1-hatsun-hatsun-fruit-yoghurt-rose-and-lychee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mango Passion Fruit Yoghurt Sip",
+  "handle": "mango-passion-fruit-yoghurt-sip",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339219_1-hatsun-hatsun-yoghurt-sip-mango-passion-fruit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339219_1-hatsun-hatsun-yoghurt-sip-mango-passion-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339219-2_1-hatsun-hatsun-yoghurt-sip-mango-passion-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339219-3_1-hatsun-hatsun-yoghurt-sip-mango-passion-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339219-4_1-hatsun-hatsun-yoghurt-sip-mango-passion-fruit.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Blueberry Yogurt Shake",
+  "handle": "blueberry-yogurt-shake",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339215_1-hatsun-hatsun-yogurt-drink-blueberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339215_1-hatsun-hatsun-yogurt-drink-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339215-2_1-hatsun-hatsun-yogurt-drink-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339215-3_1-hatsun-hatsun-yogurt-drink-blueberry.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Strawberry Yogurt Shake",
+  "handle": "strawberry-yogurt-shake",
+  "vendor": "Hatsun",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339214_1-hatsun-hatsun-yogurt-drink-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339214_1-hatsun-hatsun-yogurt-drink-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339214-2_1-hatsun-hatsun-yogurt-drink-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339214-3_1-hatsun-hatsun-yogurt-drink-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

@@ -1,0 +1,161 @@
+{
+  "brand": "Hatsun",
+  "manufacturer": "Hatsun Agro Product Ltd.",
+  "feed": "hatsun-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/hatsun/logo-6bd1912d.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#1B3F94",
+  "namePrefix": "Hatsun ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Hatsun Ghee": "Cow Ghee",
+    "Hatsun Paneer": "Soft & Fresh Paneer"
+  },
+  "rules": [
+    {
+      "match": "^Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Curd\\ Pouch$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Soft\\ \\&\\ Fresh\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Cow\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Unsalted\\ Cooking\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Table\\ Butter\\ Chiplets$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Breakfast\\ Cream$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Cream$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Greek\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Fig\\ \\&\\ Dates\\ Greek\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Red\\ Cherry\\ Greek\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Mango\\ Layered\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Berry\\ Fruit\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Rose\\ \\&\\ Lychee\\ Fruit\\ Yoghurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Mango\\ Passion\\ Fruit\\ Yoghurt\\ Sip$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Yogurt\\ Shake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Yogurt\\ Shake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    }
+  ]
+}
