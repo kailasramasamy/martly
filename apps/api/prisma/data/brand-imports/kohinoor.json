@@ -1,0 +1,246 @@
+{
+  "brand": "Kohinoor",
+  "manufacturer": "Kohinoor Foods (Adani Wilmar)",
+  "feed": "kohinoor-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kohinoor/logo-73d4ba5e.png",
+  "themeColor": "#1E3F96",
+  "themeColorSecondary": "#D4A017",
+  "namePrefix": "Kohinoor ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Super\\ Value\\ Authentic\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Royale\\ Authentic\\ Biryani\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Royale\\ Pulao\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Classic\\ Gold\\ Extra\\ Long\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Supreme\\ Authentic\\ Aged\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Traditional\\ Authentic\\ Aged\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Feast\\ Rozana\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Mogra\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Charminar\\ Select\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Charminar\\ Everyday\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Charminar\\ Long\\ Grain\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Charminar\\ Rozana\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Charminar\\ Brown\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    },
+    {
+      "match": "^Hyderabadi\\ Biryani\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Amritsari\\ Tandoori\\ Chicken\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Dilli\\ Choley\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Jammu\\ Rajma\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Meat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Mumbai\\ Pav\\ Bhaji\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Punjabi\\ Butter\\ Chicken\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Punjabi\\ Paneer\\ Butter\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Lazeez\\ Sabzi\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Twist\\ Zingy\\ Schezwan\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Hyderabadi\\ Biryani\\ Kit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Kolkata\\ Biryani\\ Kit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Lucknowi\\ Biryani\\ Kit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Xpress\\ Eats\\ Dal\\ Tadka$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Xpress\\ Eats\\ Organic\\ Brown\\ Jeera\\ Rice$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Xpress\\ Eats\\ Zaffrani\\ Rice$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    }
+  ]
+}
