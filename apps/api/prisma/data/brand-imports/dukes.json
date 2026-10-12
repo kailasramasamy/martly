@@ -1,0 +1,320 @@
+{
+  "brand": "Duke's",
+  "manufacturer": "Ravi Foods Pvt Ltd",
+  "feed": "dukes-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dukes/logo-b3ec4f2a.png",
+  "themeColor": "#E8392B",
+  "themeColorSecondary": "#1E4FA3",
+  "namePrefix": "Duke's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Duke's Waffy Vanilla Wafer": "Waffy Vanilla Wafers"
+  },
+  "rules": [
+    {
+      "match": "^Waffy\\ Chocolate\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Orange\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Strawberry\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Pineapple\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Vanilla\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Coconut\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Hazelnut\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Dark\\ Waffy\\ Vanilla\\ Choco\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Duetz\\ Waffy\\ Chocolate\\ \\&\\ Orange\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Duetz\\ Waffy\\ Strawberry\\ \\&\\ Orange\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Choco\\ Wafer\\ Roll$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Strawberry\\ Wafer\\ Roll$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Waffy\\ Kulfi\\ Wafer\\ Roll$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    },
+    {
+      "match": "^Creme\\ 4\\ Fun\\ Chocolate\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Creme\\ 4\\ Fun\\ Orange\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Creme\\ 4\\ Fun\\ Pineapple\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dark\\ N\\ Creme\\ Vanilla\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Nibbles\\ Salted\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Nibbles\\ Jeera\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Nibbles\\ Sour\\ Cream\\ \\&\\ Onion\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^TickTime\\ Spanish\\ Tomato\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Bakiez\\ Sweet\\ Glazed\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Digestive\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Butter\\ Kukkies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Choco\\ Secrets\\ Choco\\ Centred\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Cookie\\ Empire\\ Assorted\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Utsav\\ Danish\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Cocolate\\ Coconut\\ Choco\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Milk\\ Blast\\ White\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "White Chocolate"
+      ]
+    },
+    {
+      "match": "^Choco\\ Safari$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Rich\\ Dry\\ Fruit\\ Collection$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Truffel\\ Caramel\\ Centre$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Truffel\\ Crispy\\ Milky\\ Creme\\ Centre$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Truffel\\ Hazelnut\\ Creme\\ Centre$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Truffel\\ Luxury\\ Butterscotch$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Truffel\\ Luxury\\ Hazelnut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Dots\\ Mini\\ Magic\\ Chocolate\\ Buttons$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Luv\\ Beat\\ Centre\\ Filled\\ Candies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1634 @@
+[
+ {
+  "title": "Waffy Chocolate Wafers",
+  "handle": "waffy-chocolate-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "55g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/276388_19-dukes-wafers-waffy-chocolate-flavor.jpg"
+    }
+   },
+   {
+    "title": "360g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298534_1-dukes-waffy-chocolate-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+    }
+   },
+   {
+    "title": "520g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298531_1-dukes-waffy-chocolate-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276388_19-dukes-wafers-waffy-chocolate-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276388-2_12-dukes-wafers-waffy-chocolate-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276388-3_11-dukes-wafers-waffy-chocolate-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276388-4_11-dukes-wafers-waffy-chocolate-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276388-5_9-dukes-wafers-waffy-chocolate-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276388-6_8-dukes-wafers-waffy-chocolate-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298534_1-dukes-waffy-chocolate-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298531_1-dukes-waffy-chocolate-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Orange Wafers",
+  "handle": "waffy-orange-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "55g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/276385_14-dukes-wafers-waffy-orange-flavor.jpg"
+    }
+   },
+   {
+    "title": "360g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298532_1-dukes-waffy-orange-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+    }
+   },
+   {
+    "title": "520g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298529_1-dukes-waffy-orange-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276385_14-dukes-wafers-waffy-orange-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276385-2_14-dukes-wafers-waffy-orange-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276385-3_13-dukes-wafers-waffy-orange-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276385-4_13-dukes-wafers-waffy-orange-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276385-5_13-dukes-wafers-waffy-orange-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276385-6_8-dukes-wafers-waffy-orange-flavor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298532_1-dukes-waffy-orange-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298529_1-dukes-waffy-orange-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Strawberry Wafers",
+  "handle": "waffy-strawberry-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "55g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/276384_18-dukes-waffy-rolls-strawberry.jpg"
+    }
+   },
+   {
+    "title": "360g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298533_1-dukes-waffy-strawberry-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+    }
+   },
+   {
+    "title": "520g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298530_1-dukes-waffy-strawberry-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276384_18-dukes-waffy-rolls-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276384-2_11-dukes-waffy-rolls-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276384-3_10-dukes-waffy-rolls-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276384-4_10-dukes-waffy-rolls-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276384-5_10-dukes-waffy-rolls-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276384-6_8-dukes-waffy-rolls-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298533_1-dukes-waffy-strawberry-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298530_1-dukes-waffy-strawberry-flavoured-creamy-crunchy-sandwich-wafer-biscuit.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Pineapple Wafers",
+  "handle": "waffy-pineapple-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "55g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111947_12-dukes-waffy-wafers-pineapple-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111947_12-dukes-waffy-wafers-pineapple-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111947-2_12-dukes-waffy-wafers-pineapple-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111947-3_11-dukes-waffy-wafers-pineapple-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111947-4_11-dukes-waffy-wafers-pineapple-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111947-5_10-dukes-waffy-wafers-pineapple-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111947-6_8-dukes-waffy-wafers-pineapple-flavour.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Vanilla Wafers",
+  "handle": "waffy-vanilla-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "55g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100341962_11-dukes-waffy-wafers-vanilla-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100341962_11-dukes-waffy-wafers-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100341962-2_10-dukes-waffy-wafers-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100341962-3_9-dukes-waffy-wafers-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100341962-4_9-dukes-waffy-wafers-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100341962-5_9-dukes-waffy-wafers-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100341962-6_8-dukes-waffy-wafers-vanilla-flavour.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Coconut Wafers",
+  "handle": "waffy-coconut-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "55g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860-2_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860-3_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860-4_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860-5_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860-6_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860-7_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302860-8_1-dukes-waffy-coconut-flavoured-creamy-crunchy-wafers.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Hazelnut Wafers",
+  "handle": "waffy-hazelnut-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361593_1-dukes-waffy-hazelnut-flavoured-creamy-crunchy-wafers.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361593_1-dukes-waffy-hazelnut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361593-2_1-dukes-waffy-hazelnut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361593-3_1-dukes-waffy-hazelnut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361593-4_1-dukes-waffy-hazelnut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361593-5_1-dukes-waffy-hazelnut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361593-6_1-dukes-waffy-hazelnut-flavoured-creamy-crunchy-wafers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361593-7_1-dukes-waffy-hazelnut-flavoured-creamy-crunchy-wafers.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dark Waffy Vanilla Choco Wafers",
+  "handle": "dark-waffy-vanilla-choco-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185218_3-dukes-dark-waffy-premium-vanilla-flavoured-choco-wafer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185218_3-dukes-dark-waffy-premium-vanilla-flavoured-choco-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185218-2_3-dukes-dark-waffy-premium-vanilla-flavoured-choco-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185218-3_3-dukes-dark-waffy-premium-vanilla-flavoured-choco-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185218-4_3-dukes-dark-waffy-premium-vanilla-flavoured-choco-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185218-5_3-dukes-dark-waffy-premium-vanilla-flavoured-choco-wafer.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Duetz Waffy Chocolate & Orange Wafers",
+  "handle": "duetz-waffy-chocolate-orange-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339735_1-dukes-duetz-waffy-chocolate-orange-flavoured-sandwich-wafer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339735_1-dukes-duetz-waffy-chocolate-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339735-2_1-dukes-duetz-waffy-chocolate-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339735-3_1-dukes-duetz-waffy-chocolate-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339735-4_1-dukes-duetz-waffy-chocolate-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339735-5_1-dukes-duetz-waffy-chocolate-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339735-6_1-dukes-duetz-waffy-chocolate-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339735-7_1-dukes-duetz-waffy-chocolate-orange-flavoured-sandwich-wafer.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Duetz Waffy Strawberry & Orange Wafers",
+  "handle": "duetz-waffy-strawberry-orange-wafers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339736_1-dukes-duetz-waffy-strawberry-orange-flavoured-sandwich-wafer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339736_1-dukes-duetz-waffy-strawberry-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339736-2_1-dukes-duetz-waffy-strawberry-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339736-3_1-dukes-duetz-waffy-strawberry-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339736-4_1-dukes-duetz-waffy-strawberry-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339736-5_1-dukes-duetz-waffy-strawberry-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339736-6_1-dukes-duetz-waffy-strawberry-orange-flavoured-sandwich-wafer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339736-7_1-dukes-duetz-waffy-strawberry-orange-flavoured-sandwich-wafer.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Choco Wafer Roll",
+  "handle": "waffy-choco-wafer-roll",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40065768_10-dukes-waffy-choco-roll.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111948_3-dukes-waffy-choco-roll.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065768_10-dukes-waffy-choco-roll.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065768-2_8-dukes-waffy-choco-roll.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065768-3_8-dukes-waffy-choco-roll.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065768-4_8-dukes-waffy-choco-roll.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065768-5_8-dukes-waffy-choco-roll.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065768-6_3-dukes-waffy-choco-roll.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065768-7_1-dukes-waffy-choco-roll.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111948_3-dukes-waffy-choco-roll.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Strawberry Wafer Roll",
+  "handle": "waffy-strawberry-wafer-roll",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/286601_5-dukes-water-sticks-crazy-swirls-strawberry-flavour.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/286586_7-dukes-waffy-roll-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286601_5-dukes-water-sticks-crazy-swirls-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286601-2_5-dukes-water-sticks-crazy-swirls-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286601-3_5-dukes-water-sticks-crazy-swirls-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286601-4_5-dukes-water-sticks-crazy-swirls-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286601-5_5-dukes-water-sticks-crazy-swirls-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286586_7-dukes-waffy-roll-strawberry.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Waffy Kulfi Wafer Roll",
+  "handle": "waffy-kulfi-wafer-roll",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185215_3-dukes-wafer-rolls-kulfi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185215_3-dukes-wafer-rolls-kulfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185215-2_3-dukes-wafer-rolls-kulfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185215-3_3-dukes-wafer-rolls-kulfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185215-4_3-dukes-wafer-rolls-kulfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185215-5_1-dukes-wafer-rolls-kulfi.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Creme 4 Fun Chocolate Sandwich Biscuits",
+  "handle": "creme-4-fun-chocolate-sandwich-biscuits",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/286590_3-dukes-biscuits-chocolate-cream-4-fun.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286590_3-dukes-biscuits-chocolate-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286590-2_5-dukes-biscuits-chocolate-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286590-3_5-dukes-biscuits-chocolate-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286590-4_5-dukes-biscuits-chocolate-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286590-5_5-dukes-biscuits-chocolate-cream-4-fun.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Creme 4 Fun Orange Sandwich Biscuits",
+  "handle": "creme-4-fun-orange-sandwich-biscuits",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/286592_3-dukes-biscuits-orange-cream-4-fun.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286592_3-dukes-biscuits-orange-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286592-2_3-dukes-biscuits-orange-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286592-3_3-dukes-biscuits-orange-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286592-4_3-dukes-biscuits-orange-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286592-5_3-dukes-biscuits-orange-cream-4-fun.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Creme 4 Fun Pineapple Sandwich Biscuits",
+  "handle": "creme-4-fun-pineapple-sandwich-biscuits",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/286595_2-dukes-biscuits-pineapple-cream-4-fun.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286595_2-dukes-biscuits-pineapple-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286595-2_2-dukes-biscuits-pineapple-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286595-3_2-dukes-biscuits-pineapple-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286595-4_2-dukes-biscuits-pineapple-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286595-5_2-dukes-biscuits-pineapple-cream-4-fun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286595-6_1-dukes-biscuits-pineapple-cream-4-fun.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dark N Creme Vanilla Sandwich Biscuits",
+  "handle": "dark-n-creme-vanilla-sandwich-biscuits",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "43.7g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361599_1-dukes-dark-n-creme-vanilla-flavoured-sandwich-biscuits.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": false,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228661_2-dukes-dark-n-creme-sandwich-cookies-crunchy-delicious-vanilla-flavoured.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361599_1-dukes-dark-n-creme-vanilla-flavoured-sandwich-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361599-2_1-dukes-dark-n-creme-vanilla-flavoured-sandwich-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361599-3_1-dukes-dark-n-creme-vanilla-flavoured-sandwich-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361599-4_1-dukes-dark-n-creme-vanilla-flavoured-sandwich-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361599-5_1-dukes-dark-n-creme-vanilla-flavoured-sandwich-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361599-6_1-dukes-dark-n-creme-vanilla-flavoured-sandwich-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361599-7_1-dukes-dark-n-creme-vanilla-flavoured-sandwich-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228661_2-dukes-dark-n-creme-sandwich-cookies-crunchy-delicious-vanilla-flavoured.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Nibbles Salted Crackers",
+  "handle": "nibbles-salted-crackers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/276387_3-dukes-biscuits-salted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276387_3-dukes-biscuits-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276387-2_4-dukes-biscuits-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276387-3_4-dukes-biscuits-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276387-4_4-dukes-biscuits-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276387-5_4-dukes-biscuits-salted.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Nibbles Jeera Crackers",
+  "handle": "nibbles-jeera-crackers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185217_2-dukes-jeera-nibbles.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185217_2-dukes-jeera-nibbles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185217-2_3-dukes-jeera-nibbles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185217-3_3-dukes-jeera-nibbles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185217-4_3-dukes-jeera-nibbles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185217-5_1-dukes-jeera-nibbles.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Nibbles Sour Cream & Onion Crackers",
+  "handle": "nibbles-sour-cream-onion-crackers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/276391_3-dukes-nibbles-baked-snack-sour-cream-onion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276391_3-dukes-nibbles-baked-snack-sour-cream-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276391-2_3-dukes-nibbles-baked-snack-sour-cream-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276391-3_3-dukes-nibbles-baked-snack-sour-cream-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276391-4_3-dukes-nibbles-baked-snack-sour-cream-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/276391-5_3-dukes-nibbles-baked-snack-sour-cream-onion.jpg"
+   }
+  ]
+ },
+ {
+  "title": "TickTime Spanish Tomato Crackers",
+  "handle": "ticktime-spanish-tomato-crackers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594_2-dukes-ticktime-spanish-crackers.jpg"
+    }
+   },
+   {
+    "title": "48g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361598_1-dukes-ticktime-spanish-tomato-flavoured-cracker-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594_2-dukes-ticktime-spanish-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594-2_2-dukes-ticktime-spanish-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594-3_2-dukes-ticktime-spanish-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594-4_2-dukes-ticktime-spanish-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594-5_2-dukes-ticktime-spanish-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594-6_2-dukes-ticktime-spanish-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594-7_2-dukes-ticktime-spanish-crackers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361594-8_2-dukes-ticktime-spanish-crackers.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Bakiez Sweet Glazed Crackers",
+  "handle": "bakiez-sweet-glazed-crackers",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361592_1-dukes-bakiez-sweet-glazed-cracker-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361592_1-dukes-bakiez-sweet-glazed-cracker-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361592-2_1-dukes-bakiez-sweet-glazed-cracker-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361592-3_1-dukes-bakiez-sweet-glazed-cracker-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361592-4_1-dukes-bakiez-sweet-glazed-cracker-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361592-5_1-dukes-bakiez-sweet-glazed-cracker-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361592-6_1-dukes-bakiez-sweet-glazed-cracker-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361592-7_1-dukes-bakiez-sweet-glazed-cracker-biscuits.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Digestive Biscuits",
+  "handle": "digestive-biscuits",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "27",
+    "compare_at_price": "27",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228664_2-dukes-digestive-biscuits-high-in-fibre-no-cholesterol.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228664_2-dukes-digestive-biscuits-high-in-fibre-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228664-2_2-dukes-digestive-biscuits-high-in-fibre-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228664-3_2-dukes-digestive-biscuits-high-in-fibre-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228664-4_2-dukes-digestive-biscuits-high-in-fibre-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228664-5_2-dukes-digestive-biscuits-high-in-fibre-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228664-6_2-dukes-digestive-biscuits-high-in-fibre-no-cholesterol.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Butter Kukkies",
+  "handle": "butter-kukkies",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "8",
+    "compare_at_price": "8",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186559_3-dukes-butter-kukkies.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186559_3-dukes-butter-kukkies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186559-2_3-dukes-butter-kukkies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186559-3_3-dukes-butter-kukkies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186559-4_3-dukes-butter-kukkies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186559-5_3-dukes-butter-kukkies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186559-6_1-dukes-butter-kukkies.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Choco Secrets Choco Centred Cookies",
+  "handle": "choco-secrets-choco-centred-cookies",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "560g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": false,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228662_2-dukes-choco-secrets-cookies-with-chocolate-filled-centre-creamy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861-2_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861-3_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861-4_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861-5_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861-6_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861-7_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302861-8_1-dukes-choco-secrets-choco-centered-cookies.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cookie Empire Assorted Cookies",
+  "handle": "cookie-empire-assorted-cookies",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40138202_2-dukes-cookie-empire-gourmet-assorted-cookies.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138202_2-dukes-cookie-empire-gourmet-assorted-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138202-2_2-dukes-cookie-empire-gourmet-assorted-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138202-3_2-dukes-cookie-empire-gourmet-assorted-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138202-4_1-dukes-cookie-empire-gourmet-assorted-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138202-5_1-dukes-cookie-empire-gourmet-assorted-cookies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138202-6_1-dukes-cookie-empire-gourmet-assorted-cookies.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Utsav Danish Butter Cookies",
+  "handle": "utsav-danish-butter-cookies",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+    }
+   },
+   {
+    "title": "375g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30000484_10-dukes-utsav-danish-butter-cookies-crunchy-light.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247-2_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247-3_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247-4_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247-5_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247-6_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247-7_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237247-8_2-dukes-utsav-danish-butter-cookies-teatime-snack-crunchy-rich-flavour.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cocolate Coconut Choco Bar",
+  "handle": "cocolate-coconut-choco-bar",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186554_1-dukes-cocolate-coconut-centered-choco-bar.jpg"
+    }
+   },
+   {
+    "title": "360g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339737_1-dukes-coconut-centered-choco-bar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186554_1-dukes-cocolate-coconut-centered-choco-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186554-2_1-dukes-cocolate-coconut-centered-choco-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186554-3_1-dukes-cocolate-coconut-centered-choco-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186554-4_1-dukes-cocolate-coconut-centered-choco-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186554-5_1-dukes-cocolate-coconut-centered-choco-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186554-6_1-dukes-cocolate-coconut-centered-choco-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339737_1-dukes-coconut-centered-choco-bar.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Milk Blast White Chocolate",
+  "handle": "milk-blast-white-chocolate",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361597_1-dukes-milk-blast.jpg"
+    }
+   },
+   {
+    "title": "30g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339733_1-dukes-milk-blast-white-chocolate-bar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361597_1-dukes-milk-blast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361597-2_1-dukes-milk-blast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361597-3_1-dukes-milk-blast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361597-4_1-dukes-milk-blast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361597-5_1-dukes-milk-blast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361597-6_1-dukes-milk-blast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361597-7_1-dukes-milk-blast.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339733_1-dukes-milk-blast-white-chocolate-bar.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Choco Safari",
+  "handle": "choco-safari",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186555_4-dukes-choco-safari.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186555_4-dukes-choco-safari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186555-2_4-dukes-choco-safari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186555-3_4-dukes-choco-safari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186555-4_4-dukes-choco-safari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186555-5_4-dukes-choco-safari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186555-6_1-dukes-choco-safari.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186555-7_1-dukes-choco-safari.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rich Dry Fruit Collection",
+  "handle": "rich-dry-fruit-collection",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "425",
+    "compare_at_price": "425",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181602_1-dukes-rich-dry-fruit-collection.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181602_1-dukes-rich-dry-fruit-collection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181602-2_1-dukes-rich-dry-fruit-collection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181602-3_1-dukes-rich-dry-fruit-collection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181602-4_1-dukes-rich-dry-fruit-collection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181602-5_1-dukes-rich-dry-fruit-collection.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Truffel Caramel Centre",
+  "handle": "truffel-caramel-centre",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186558_3-dukes-truffel-caramel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186558_3-dukes-truffel-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186558-2_3-dukes-truffel-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186558-3_3-dukes-truffel-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186558-4_3-dukes-truffel-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186558-5_3-dukes-truffel-caramel.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Truffel Crispy Milky Creme Centre",
+  "handle": "truffel-crispy-milky-creme-centre",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186560_2-dukes-truffel-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186560_2-dukes-truffel-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186560-2_2-dukes-truffel-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186560-3_2-dukes-truffel-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186560-4_2-dukes-truffel-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186560-5_2-dukes-truffel-milk.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Truffel Hazelnut Creme Centre",
+  "handle": "truffel-hazelnut-creme-centre",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186556_2-dukes-truffel-hazelnut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186556_2-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186556-2_2-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186556-3_2-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186556-4_2-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186556-5_2-dukes-truffel-hazelnut.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Truffel Luxury Butterscotch",
+  "handle": "truffel-luxury-butterscotch",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "135g",
+    "price": "158",
+    "compare_at_price": "158",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40138206_5-dukes-truffel-butterscotch.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138206_5-dukes-truffel-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138206-2_5-dukes-truffel-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138206-3_5-dukes-truffel-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138206-4_5-dukes-truffel-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138206-5_4-dukes-truffel-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138206-6_2-dukes-truffel-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138206-7_2-dukes-truffel-butterscotch.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Truffel Luxury Hazelnut",
+  "handle": "truffel-luxury-hazelnut",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "135g",
+    "price": "158",
+    "compare_at_price": "158",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40138204_5-dukes-truffel-hazelnut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138204_5-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138204-2_5-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138204-3_5-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138204-4_5-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138204-5_3-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138204-6_2-dukes-truffel-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40138204-7_2-dukes-truffel-hazelnut.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dots Mini Magic Chocolate Buttons",
+  "handle": "dots-mini-magic-chocolate-buttons",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "126.4g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339734_1-dukes-dots-mini-magic-colourful-chocolate-buttons.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339734_1-dukes-dots-mini-magic-colourful-chocolate-buttons.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339734-2_1-dukes-dots-mini-magic-colourful-chocolate-buttons.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339734-3_1-dukes-dots-mini-magic-colourful-chocolate-buttons.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339734-4_1-dukes-dots-mini-magic-colourful-chocolate-buttons.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339734-5_1-dukes-dots-mini-magic-colourful-chocolate-buttons.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339734-6_1-dukes-dots-mini-magic-colourful-chocolate-buttons.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339734-7_1-dukes-dots-mini-magic-colourful-chocolate-buttons.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Luv Beat Centre Filled Candies",
+  "handle": "luv-beat-centre-filled-candies",
+  "vendor": "Duke's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "360g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361596_1-dukes-luv-beat-centre-filled-assorted-flavour-candies.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361596_1-dukes-luv-beat-centre-filled-assorted-flavour-candies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361596-2_1-dukes-luv-beat-centre-filled-assorted-flavour-candies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361596-3_1-dukes-luv-beat-centre-filled-assorted-flavour-candies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361596-4_1-dukes-luv-beat-centre-filled-assorted-flavour-candies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361596-5_1-dukes-luv-beat-centre-filled-assorted-flavour-candies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361596-6_1-dukes-luv-beat-centre-filled-assorted-flavour-candies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361596-7_1-dukes-luv-beat-centre-filled-assorted-flavour-candies.jpg"
+   }
+  ]
+ }
+]
