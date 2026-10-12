@@ -1,0 +1,2953 @@
+[
+ {
+  "title": "Fruit Power Apple Juice",
+  "handle": "fruit-power-apple-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/282654_4-real-juice-apple.jpg"
+    },
+    "barcode": "8901888009487"
+   },
+   {
+    "title": "1L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265854_11-real-fruit-power-juice-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282654_4-real-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282654-2_4-real-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282654-3_4-real-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282654-4_4-real-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282654-5_4-real-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282654-6_3-real-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282654-7_3-real-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282654-8_2-real-juice-apple.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the pure, refreshing taste of Real Fruit Power Apple Juice, crafted from the finest, sun-ripened apples. This convenient Tetra Pack delivers the wholesome goodness of nature's bounty, with no added sugars, colours, or preservatives. Savour the authentic apple flavour in every sip, whether enjoyed on its own or incorporated into your favourite beverages, smoothies, or recipes. Packed with energy and essential nutrients, Real Fruit Power Apple Juice is the perfect choice for a healthy, on-the-go lifestyle. Explore the brand's wide range of 16 exciting fruit juice variants, from exotic Indian favourites to international classics, and discover new ways to inculcate the goodness of these healthy juices into your daily routine. With its rich Vitamin C content and commitment to preservative-free quality, Real Fruit Power Apple Juice is a delightful and nutritious addition to your pantry.",
+   "ingredients": "Water, Sugar, Liquid Glucose, Apple Juice Concentrate (3.30%)+, Acidity Regulator (Ins 296) And Antioxidant (Ins 300), Permitted Natural Colour (Ins 160A) And Added Natural Apple Flavour.",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "57 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "14.2 g",
+    "Total Sugars": "14.2 g",
+    "Added Sugars": "12 g",
+    "Total Fat": "0 g",
+    "Sodium": "10 mg",
+    "Potassium": "15 mg",
+    "Calcium": "1 mg",
+    "Iron": "0.4 mg",
+    "Vitamin C": "10 mg"
+   },
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Grape Juice",
+  "handle": "fruit-power-grape-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265839_4-real-fruit-juice-grape.jpg"
+    },
+    "barcode": "8901888006585"
+   },
+   {
+    "title": "1L",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229928_5-real-fruit-power-juice-grapes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265839_4-real-fruit-juice-grape.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265839-2_4-real-fruit-juice-grape.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265839-3_4-real-fruit-juice-grape.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265839-4_4-real-fruit-juice-grape.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265839-5_4-real-fruit-juice-grape.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265839-6_3-real-fruit-juice-grape.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265839-7_3-real-fruit-juice-grape.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265839-8_1-real-fruit-juice-grape.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, fruity taste of Real Fruit Power Grape Juice, carefully crafted with the finest sweet grapes to deliver a refreshing and healthy beverage all year round. This delicious drink is not only a treat for the taste buds but is also packed with the goodness of potassium and calcium, making it an excellent choice for children. With its six-layered Tetra-Pak packaging, you can be assured of a product that is well-protected from external factors and germs. Best served chilled, Real Grape Juice is perfect for a relaxing break on a hot afternoon or after a strenuous day at play. Rich in Vitamin C and with no added preservatives, this natural drink is a boon for kids, offering great taste along with numerous health benefits. Shake well before serving and store in a clean place away from direct sunlight for the best experience.",
+   "ingredients": "Water, Sugar, Grape Juice Concentrate (5.86%), Acidity Regulator (INS 296), Antioxidant (INS 300) and Flavour (Natural Flavouring Substances)",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "60 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "15 g",
+    "Total Sugars": "15 g",
+    "Added Sugars": "12 g",
+    "Total Fat": "0 g",
+    "Sodium": "0.7 mg",
+    "Potassium": "20 mg",
+    "Calcium": "15 mg",
+    "Iron": "0.2 mg",
+    "Vitamin C": "13 mg"
+   },
+   "storageInstructions": "*Store in a clean place away from direct sunlight\n*Consume immediately after opening",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Guava Juice",
+  "handle": "fruit-power-guava-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265842_8-real-indias-no1-juice-guava.jpg"
+    },
+    "barcode": "8901207032103"
+   },
+   {
+    "title": "1L",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229930_13-real-fruit-power-juice-guava.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265842_8-real-indias-no1-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265842-2_6-real-indias-no1-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265842-3_6-real-indias-no1-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265842-4_6-real-indias-no1-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265842-5_6-real-indias-no1-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265842-6_5-real-indias-no1-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265842-7_5-real-indias-no1-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265842-8_1-real-indias-no1-juice-guava.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and nutritious delight of Real Fruit Power Guava Juice, crafted from the finest 'Pink' guavas straight from the foothills of Karnataka. Blessed with a vibrant colour, captivating aroma, and a symphony of natural flavours, this juice is a true celebration of the rarest and tastiest guavas of the Deccan plateau. Bursting with an array of essential nutrients, the Real Guava Juice is not only a delightful thirst-quencher but also a health-conscious choice. Encased in a six-layered Tetra Pak, this beverage stays protected from harmful bacteria, preserving its nutritive value and freshness until the last sip. Serve chilled for a refreshing burst of flavour, or use it as a versatile base for smoothies and mocktails, blending in fresh fruits for a deliciously fruity twist. Whether you're lounging by the pool or hosting a gathering, this captivating guava juice is sure to delight and satisfy.",
+   "ingredients": "Water, Guava Pulp (24.9%), Sugar, Acidity Regulator (Ins 330), Stabilizer (Ins 440), Antioxidant (Ins 300) And Salt. Contains Added Nature Identical Guava Flavour. No Added Colour Or Preservatives.",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Servings per pack": "1.2",
+    "Energy": "55 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "13.8 g",
+    "Total Sugars": "13.8 g",
+    "Added Sugars": "11.3 g",
+    "Total Fat": "0 g",
+    "Sodium": "15 mg",
+    "Potassium": "40 mg",
+    "Calcium": "7 mg",
+    "Iron": "0.1 mg",
+    "Vitamin C": "20 mg"
+   },
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Masala Guava Juice",
+  "handle": "fruit-power-masala-guava-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128987_6-real-fruit-power-juice-masala-guava.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128987_6-real-fruit-power-juice-masala-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128987-2_1-real-fruit-power-juice-masala-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128987-3_1-real-fruit-power-juice-masala-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128987-4_1-real-fruit-power-juice-masala-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128987-5_1-real-fruit-power-juice-masala-guava.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Since childhood, we have enjoyed guava with a dash of mouth-watering chatpata masala. So we decided to take the same old guava magic and bring it to you in a way you will love, with Real Masala Guava. Each sip is full of fruit goodness and a taste so exciting that it will make you go GUA- WAAH! Made from the best quality fruits, Réal Fruit juice has no added preservatives; hence it offers not just taste, but also Fruit Power - the power to stay ahead. Réal’s ingredients are endorsed by PFNDAI (Protein Foods & Nutrition Development Association of India) to produce only the finest quality fruit juice in India. This comes to you in an aseptic 6-layered Tetra Pak which ensures that the juice has all of the goodness and nutrition of the fruit when it reaches you.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "46kcal",
+    "Protein": "0g",
+    "Carbohydrate": "11.5g",
+    "Total Sugars": "11.5g",
+    "Added Sugars": "9.7g",
+    "Total Fat": "0g",
+    "Sodium": "135mg",
+    "RDA contribution": "calculated on the basis of average requirements of adult per day including fruit sugars"
+   },
+   "storageInstructions": "Store in clean dry hygienic conditions away from direct sunlight.\nRefrigerate and Consume within 24 hours of opening",
+   "manufacturerName": "Dabur India Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Mixed Fruit Juice",
+  "handle": "fruit-power-mixed-fruit-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763_8-real-fruit-power-juice-mixed-fruit.jpg"
+    },
+    "barcode": "8901888006363"
+   },
+   {
+    "title": "1L",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229922_16-real-fruit-power-juice-mixed.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763_8-real-fruit-power-juice-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763-2_6-real-fruit-power-juice-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763-3_6-real-fruit-power-juice-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763-4_6-real-fruit-power-juice-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763-5_6-real-fruit-power-juice-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763-6_5-real-fruit-power-juice-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763-7_5-real-fruit-power-juice-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190763-8_1-real-fruit-power-juice-mixed-fruit.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A well-mixed fruit juice brings together the best qualities of different fruits while retaining a unique taste of its own. Your child will love the stand-alone tangy-sweet taste of Real Mixed Fruit and will always ask for more. Make it a daily habit for him because he might be fussy with fruit salads and cut fruits but would never say no to the invigorating taste of Real Mixed Fruit. Every time you pour him a glass of Real Mixed Fruit, you can be sure that only the best Real Fruit Power would reach him. That is because every glass of Real Mixed Fruit is loaded with the goodness of 9 nutritious fruits, namely Passion Fruit, Apricot, Mango, Banana, Pineapple, Guava, Orange, Apple, and Lime. Isn't that great? The lushness of 9 fruits in 1 pack not only gives you all the nutrition but also makes you feel recharged. It is this unmatched combination of unique taste and super nutrition that makes Real Mixed Fruit one of the highest-selling fruit beverages in the country. Besides, it can also be used in the preparation of one of the most refreshing summer drinks known as the Mixed Fruit Punch. It is an amazingly made healthy blend of fresh fruits packed with much energy. Its great taste is very filling and full of health benefits. So relish your meals with the Real Mixed Fruit.",
+   "ingredients": "Water, Sugar, Concentrated Mixed Fruit juice\n(8.2%) [From Apple, Orange, Guava, Apricot, Mango, Banana, Lime, Passion Fruit, Pineapple). Acidity Regulator (INS 330), Stabilizer (INS 440), Flavours (Natural and Nature Identical Flavouring Substances), Colour [INS 160a (ii) & (iii) and Antioxidant (INS 300).\nTHIS CONTAINS 40% FRUIT JUICE CONTENT.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "53 kcal",
+    "Protein": "0.2 g",
+    "Carbohydrate": "13.4 g",
+    "Total Sugars": "13.4 g",
+    "Added Sugars": "7.4 g",
+    "Total Fat": "0 g",
+    "Sodium": "20 mg",
+    "Potassium": "42 mg",
+    "Calcium": "6 mg",
+    "Iron": "0.1 mg",
+    "Vitamin C": "20 mg"
+   },
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Mosambi Juice",
+  "handle": "fruit-power-mosambi-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278_6-real-fruit-juice-mosambi.jpg"
+    },
+    "barcode": "8901888006561"
+   },
+   {
+    "title": "1L",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40083959_14-real-fruit-power-juice-mosambi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278_6-real-fruit-juice-mosambi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278-2_5-real-fruit-juice-mosambi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278-3_5-real-fruit-juice-mosambi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278-4_5-real-fruit-juice-mosambi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278-5_5-real-fruit-juice-mosambi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278-6_4-real-fruit-juice-mosambi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278-7_2-real-fruit-juice-mosambi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104278-8_2-real-fruit-juice-mosambi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your summer with the refreshing and nutritious Real Fruit Power Mosambi Juice. Made from the choicest Mosambi fruits and packed in a six-layered Tetra Pak, this juice offers enhanced freshness and protection from external factors. Trusted by mothers for over a decade, it delivers a harmonious blend of taste and health benefits. Rich in Vitamin C, the juice supports your immune system, while its natural enzymes aid digestion and promote a healthy gut environment. With a consistent and irresistible flavour, this beverage is sure to bring a smile to your child's face. Enjoy the goodness of Real Fruit Power, a refreshing and nourishing addition to your daily routine.",
+   "ingredients": "Water, Sweet Lime (Mosambi) Juice Concentrate (24.10%)*, Sugar, Antioxidant (Ins 300) And Acidity Regulator (Ins 330)",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "50 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "12.5 g",
+    "Total Sugars": "12.5 g",
+    "Added Sugars": "3 g",
+    "Total Fat": "0 g",
+    "Sodium": "15 mg",
+    "Potassium": "120 mg",
+    "Calcium": "3 mg",
+    "Magnesium": "6 mg",
+    "Phosphorus": "2 mg",
+    "Vitamin C": "20 mg"
+   },
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Tomato Juice",
+  "handle": "fruit-power-tomato-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "122",
+    "compare_at_price": "122",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229926_5-real-fruit-power-juice-tomato.jpg"
+    },
+    "barcode": "8901888050359"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229926_5-real-fruit-power-juice-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229926-2_4-real-fruit-power-juice-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229926-3_4-real-fruit-power-juice-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229926-4_4-real-fruit-power-juice-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229926-5_4-real-fruit-power-juice-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229926-6_4-real-fruit-power-juice-tomato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229926-7_3-real-fruit-power-juice-tomato.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Tomato is a delight for all tomato lovers for its delicious taste and unmatched nutrition content. For mothers who are keen on building healthy habits for their children, it is virtually a healthy solution.",
+   "ingredients": "Water, Tomato Paste (14.25%)+, Sugar (3 g), Salt, Acidity Regulator (INS 330) and Antioxidant (INS 300)",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Serving Size": "1 Serve = 200ml",
+    "Energy": "47 kcal",
+    "Carbohydrates": "11.8 g",
+    "Sugars": "11.8 g",
+    "Protein": "0.5 g",
+    "Vitamin C": "13.5 mg"
+   },
+   "storageInstructions": "*Refrigerate and consume within 5 days of opening\n*Store in clean, dry and hygienic conditions away from direct sunlight",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Litchi Juice",
+  "handle": "fruit-power-litchi-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265841_11-real-indias-no1-juice-litchi.jpg"
+    },
+    "barcode": "8901207045547"
+   },
+   {
+    "title": "1L",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229936_12-real-fruit-power-juice-litchi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265841_11-real-indias-no1-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265841-2_3-real-indias-no1-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265841-3_3-real-indias-no1-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265841-4_3-real-indias-no1-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265841-5_3-real-indias-no1-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265841-6_3-real-indias-no1-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265841-7_3-real-indias-no1-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265841-8_2-real-indias-no1-juice-litchi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the deliciously refreshing taste of Real Fruit Power Litchi Juice, made from premium litchis sourced from the renowned Muzaffarpur region. These succulent litchis are an annual delight for litchi lovers, and you can now enjoy their goodness in a convenient juice form. Turn your day around with a glass of this delectable litchi nectar - it's the perfect way to boost your immunity and energy levels. Crafted with care, Real Fruit Power offers a range of 16 exciting fruit juice variants, from exotic Indian favourites like mango and guava to international classics like pomegranate and grape. Treat your taste buds to the natural, vibrant flavours of these premium fruit juices and experience the true power of real fruit.",
+   "ingredients": "Water, Sugar, Litchi Pulp Concentrate (6.5%), Apple Juice Concentrate (1.1%), Acidity Regulator (INS 296), Stabilizers (INS 440, INS 466 & INS 418), Antioxidant (INS 300) and Flavours (Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "56 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "14 g",
+    "Total Sugars": "14 g",
+    "Added Sugars": "11.5 g",
+    "Total Fat": "0 g",
+    "Sodium": "3 mg",
+    "Vitamin C": "12.5 mg"
+   },
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Mango Juice",
+  "handle": "fruit-power-mango-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765_3-real-fruit-power-juice-mango.jpg"
+    },
+    "barcode": "8901207006029"
+   },
+   {
+    "title": "1L",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229912_11-real-fruit-power-juice-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765_3-real-fruit-power-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765-2_3-real-fruit-power-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765-3_3-real-fruit-power-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765-4_3-real-fruit-power-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765-5_3-real-fruit-power-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765-6_2-real-fruit-power-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765-7_2-real-fruit-power-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190765-8_1-real-fruit-power-juice-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, juicy taste of mangoes with every sip of Real Fruit Power Mango Juice. Made from the best quality fruits, this fruit beverage is so thick and creamy that it's like biting into a ripe, tender mango. Packed with the natural goodness of mangoes, it provides a healthy source of energy to power your child through school and play. Crafted without any artificial flavours or preservatives, Real Fruit Power Mango Juice offers the pure, unadulterated taste of summer all year round. Whether enjoyed chilled, blended into a refreshing shake, or poured over ice, this mango delight is sure to tantalise your taste buds and satisfy your cravings. Don't let the season dictate your mango fix - order Real Fruit Power Mango Juice online today and experience the ultimate mango indulgence, conveniently delivered to your doorstep.",
+   "ingredients": "Water, Blend Of Mango Pulp, Sugar, Antioxidant",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "57 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "14.3 g",
+    "Total Sugars": "14.3 g",
+    "Added Sugars": "10.8 g",
+    "Total Fat": "0 g",
+    "Sodium": "6 mg",
+    "Potassium": "40 mg",
+    "Calcium": "6 mg",
+    "Vitamin C": "11 mg",
+    "Vitamin A": "12.5 mcg"
+   },
+   "manufacturerName": "Dabur India Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016012000342"
+  }
+ },
+ {
+  "title": "Fruit Power Alphonso Mango Nectar",
+  "handle": "fruit-power-alphonso-mango-nectar",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128989_11-real-fruit-power-juice-alphonso-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128989_11-real-fruit-power-juice-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128989-2_10-real-fruit-power-juice-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128989-3_10-real-fruit-power-juice-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128989-4_10-real-fruit-power-juice-alphonso-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "If mango is considered the king of fruits, then Alphonso is surely the king of kings. Every sip of Alphonso is a royal experience with a taste that makes you long for more. So lose yourself in the heavenly natural goodness of Real Alphonso and savour our promise of nothing but taste and happiness. The best part is there are no added preservatives, artificial colour, and artificial flavours.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "60 kcal",
+    "Protein": "0.1g",
+    "Carbohydrate": "15.1g",
+    "Total Sugars": "15.1g",
+    "Added Sugars": "11.6g",
+    "Total Fat": "0g",
+    "Sodium": "3 mg",
+    "Potassium": "45 mg",
+    "Calcium": "3.5mg",
+    "Vitamin C": "7.5 mg"
+   },
+   "manufacturerName": "Dabur India Limited Registered Office",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Masala Mixed Fruit Juice",
+  "handle": "fruit-power-masala-mixed-fruit-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40170924_11-real-fruit-power-juice-masala-mixed-fruit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170924_11-real-fruit-power-juice-masala-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170924-2_1-real-fruit-power-juice-masala-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170924-3_1-real-fruit-power-juice-masala-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170924-4_1-real-fruit-power-juice-masala-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170924-5_1-real-fruit-power-juice-masala-mixed-fruit.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the goodness of delectable fruits tossed with fine and chatpata masala. Savour the all-time favourite combo of fruity goodness and taste with every sip of Masala Mixed Fruit from Real.",
+   "ingredients": "Water, Sugar, Mixed Fruit Concentrate (4%) [Orange Conc. (1. 5%), Apple Conc. (1. 32%), Pink Guava Puree (0. 33%), Apricot Conc. (0. 29%), Mango Conc. (0. 16%), Banana Puree (0. 16%), Orange Puree (0. 13%), Passion Fruit Conc. (0. 09%), Lime Conc. (0. 01%), Lemon Conc (0. 01%)], Mango Pulp (3. 3%), Acidity Regulator (Ins 330), Salts Stabilisers (Ins 440, Ins 446M Ins 418), Antioxidant (Ins300), Spices & Condiments (0. 017%) [Chili Pepper, Cumin Coriander, Black Pepper And Turmeric ].",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "49 kcal",
+    "Protein": "0.9 g",
+    "Carbohydrate": "12.2 g",
+    "Total Sugars": "12.2 g",
+    "Added Sugars": "9.8 g",
+    "Total Fat": "0 g",
+    "Sodium": "110 mg",
+    "Potassium": "32 mg",
+    "Calcium": "6 mg"
+   },
+   "storageInstructions": "Refrigerate and Consume within 5 days of opening.\nStore in clean, dry hygeinic conditions away from direct sunlight.",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Masala Pomegranate Juice",
+  "handle": "fruit-power-masala-pomegranate-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128988_9-real-fruit-power-juice-masala-pomegranate.jpg"
+    },
+    "barcode": "8901207027758"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128988_9-real-fruit-power-juice-masala-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128988-2_1-real-fruit-power-juice-masala-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128988-3_1-real-fruit-power-juice-masala-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128988-4_1-real-fruit-power-juice-masala-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128988-5_1-real-fruit-power-juice-masala-pomegranate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pomegranate and spicy masala, a love story that is been a part of every Indian home across generations. We, at Real, know exactly how you like your pomegranate because we like it that way too. So, relish every drop of our new masala pomegranate beverage that promises to refresh you with every gulp. Savour the natural fruit goodness brought to you by Real.",
+   "ingredients": "Water, Pomegranate Pulp (20%)*, Sugar, Salts, Acidity Regulator (Ins 330), Stabilizer (Ins 440), Anti Oxidant (Ins 300), Spice And Spice Extracts (0.025%) - (Cumin, Black Pepper, Capsicum, Ginger)",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "50kcal",
+    "Protein": "0g",
+    "Carbohydrate": "12.5g",
+    "Total Sugars": "12.5g",
+    "Added Sugars": "8.9g",
+    "Total Fat": "0g",
+    "Sodium": "72mg",
+    "%RDA": "contribution calculated on the basis of average requirements of adult per day"
+   },
+   "storageInstructions": "Store in clean, dry hygienic conditions away from direct sunlight. Refrigerate and Consume within 5 days of opening.",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Mixed Berries Juice",
+  "handle": "fruit-power-mixed-berries-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40168139_8-real-fruit-power-juice-mixed-berries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40168139_8-real-fruit-power-juice-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40168139-2_6-real-fruit-power-juice-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40168139-3_5-real-fruit-power-juice-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40168139-4_5-real-fruit-power-juice-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40168139-5_3-real-fruit-power-juice-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40168139-6_3-real-fruit-power-juice-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40168139-7_3-real-fruit-power-juice-mixed-berries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The preparation of Real fruit power begins with sourcing the freshest and the juiciest fruit from the finest orchards in the world so you could relish the real fruit goodness and unmatched taste. Presenting Real Mixed Berries, packed with the goodness of 6 superfruits - red grapes, cranberries, raspberries, strawberries, sea buckthorns and blueberries. With the antioxidants and essential nutrients like vitamins and minerals, berries help the immunity and breath health of kids. Every glass of 200 ml Real Mixed Berries contains the goodness of 1 full bowl of mixed berries, making it berry-berry healthy and berry-berry tasty.",
+   "ingredients": "Water, Mixed Berry Blend (12.1%), Sugar, Liquid Glucose, Stabiliser (Ins 440), Acidity Regulator (Ins 330), Antioxidant (Ins 300), Permitted Natural Colour (Ins 150A), Added Flavours (Natural & Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Serving Size": "100g",
+    "Energy": "48 kcal",
+    "Carbohydrate": "12 g",
+    "Sugar": "12 g",
+    "Protein": "0.3 g",
+    "Vitamin C": "17 mg"
+   },
+   "storageInstructions": "*Refrigerate and consume within 5 days of opening\n*Store in clean, dry hygienic conditions away from direct sunlight",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Orange Juice",
+  "handle": "fruit-power-orange-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265843_6-real-indias-no1-juice-orange.jpg"
+    },
+    "barcode": "4796008921091"
+   },
+   {
+    "title": "1L",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229910_12-real-fruit-power-juice-orange.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265843_6-real-indias-no1-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265843-2_7-real-indias-no1-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265843-3_7-real-indias-no1-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265843-4_7-real-indias-no1-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265843-5_7-real-indias-no1-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265843-6_6-real-indias-no1-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265843-7_3-real-indias-no1-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265843-8_3-real-indias-no1-juice-orange.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Orange packs all the fun, quality and nutrition of oranges, sourced from the finest orchards from across the world. You can inculcate the goodness of these healthy fruit juices in your daily life with the various fruit juice mocktail recipes Real Fruit Power offers.",
+   "ingredients": "Water, Orange Juice Concentrate (12.45%), Sugar, Vitamins, Acidity Regulator (Ins 330) And Salt.Contains Added Nature Identical Orange Flavour.No Added Colour Or Preservatives.",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "52 kcal",
+    "Protein": "0.2 g",
+    "Carbohydrate": "13 g",
+    "Total Sugars": "13 g",
+    "Added Sugars": "6.3 g",
+    "Total Fat": "0 g",
+    "Sodium": "50 mg",
+    "Potassium": "80 mg",
+    "Calcium": "4 mg",
+    "Iron": "0.1 mg",
+    "Vitamin C": "20 mg"
+   },
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Pineapple Juice",
+  "handle": "fruit-power-pineapple-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764_3-real-fruit-power-juice-pineapple.jpg"
+    },
+    "barcode": "8901888006387"
+   },
+   {
+    "title": "1L",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229917_18-real-fruit-power-juice-pineapple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764_3-real-fruit-power-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764-2_3-real-fruit-power-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764-3_3-real-fruit-power-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764-4_3-real-fruit-power-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764-5_3-real-fruit-power-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764-6_2-real-fruit-power-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764-7_2-real-fruit-power-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40190764-8_2-real-fruit-power-juice-pineapple.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "the easiest way for you to conveniently include the wholesomeness of pineapple in your daily diet. The beverage is prepared using the best quality pineapples sourced from select farms which are then converted into your favourite pineapple juice. Every 1-litre pack comes with Réal Fruit Power and the nutritional value of 2 pineapples! Today, Réal Fruit Power has a range of 16 exciting variants of fruit juices - from the exotic Indian Mango, Mosambi, Guava, Plum & Litchi to international favourites like Pomegranate, Tomato, Cranberry, Peach, Blackcurrant, Apricot & Grape and the basic Orange, Pineapple, Apple & Mixed Fruit. You can inculcate the goodness of these healthy fruit juices in your daily life with the various fruit juice mocktail recipes Real Fruit Power offers!",
+   "ingredients": "Water, Pineapple Juice Concentrate (12.8%), Sugar (6.5 G), Acidity Regulator (Ins 330), Antioxidant (Ins 300)",
+   "manufacturerName": "Dabur India Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000618"
+  }
+ },
+ {
+  "title": "Fruit Power Pink Guava Juice",
+  "handle": "fruit-power-pink-guava-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700_10-real-fruit-power-pink-guava.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700_10-real-fruit-power-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700-2_7-real-fruit-power-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700-3_7-real-fruit-power-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700-4_7-real-fruit-power-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700-5_7-real-fruit-power-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700-6_7-real-fruit-power-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700-7_7-real-fruit-power-pink-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194700-8_4-real-fruit-power-pink-guava.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real, with its promise of fruit nutrition and irresistible taste, has been offering the goodness of guava over the years, which has been showered by your love, making it one of the best-selling variants for Real. As a new chapter in the Real Guava Story, we bring to you the delectable premium experience of 100% Pink Guava Product. Real Pink Guava is one of the first in the country to offer the goodness of 100% Pink Guava, the premium variety of guava. So, savour the irresistible taste of Pink Guava along with Real's promise of fruit nutrition.",
+   "usageInstructions": "Refrigerate and consume within 5 days of opening. Store in clean, dry, hygienic conditions away from direct sunlight. |",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "52kcal",
+    "Protein": "0g",
+    "Carbohydrate": "13g",
+    "Total Sugars": "13g",
+    "Added Sugars": "10.6g",
+    "Total Fat": "0g",
+    "Sodium": "15mg",
+    "Potassium": "38mg",
+    "Calcium": "7mg",
+    "RDA contribution": "75%*"
+   },
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Fruit Power Pomegranate Juice",
+  "handle": "fruit-power-pomegranate-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279_7-real-indias-no1-juice-pomegranate.jpg"
+    },
+    "barcode": "8901207032127"
+   },
+   {
+    "title": "1L",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265853_21-real-fruit-power-juice-pomegranate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279_7-real-indias-no1-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279-2_3-real-indias-no1-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279-3_3-real-indias-no1-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279-4_3-real-indias-no1-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279-5_3-real-indias-no1-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279-6_3-real-indias-no1-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279-7_3-real-indias-no1-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104279-8_2-real-indias-no1-juice-pomegranate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the exceptional taste and unparalleled health benefits of Real Fruit Power Pomegranate Juice. This premium beverage is crafted from real pomegranates, ensuring you savour the authentic flavour of this super fruit with every refreshing sip. Unlike many fruit juices laden with added sugars and artificial flavours, this juice is made from pure, natural ingredients, allowing you to enjoy a delightfully sweet and tangy taste without compromising on your health. Packed with the goodness of 8 pomegranates in every serving, this juice is a true powerhouse of essential nutrients, antioxidants, and vitamins that can elevate your overall well-being. Whether you're looking to reduce your sugar intake or simply want to incorporate more wholesome, nutrition-dense options into your diet, this pomegranate juice is the perfect choice to quench your thirst and nourish your body. Treat your taste buds and your health with the unbeatable combination of flavour and wellness that Real Fruit Power Pomegranate Juice has to offer.",
+   "ingredients": "Water, Pomegranate Juice, Sugar, Liquid Glucose, Aronia Salt, Acidity Regulator, Antioxidants, Nature Identical Pomegranate Flavour",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "56 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "14 g",
+    "Total Sugars": "14 g",
+    "Added Sugars": "9 g",
+    "Total Fat": "0 g",
+    "Sodium": "15 mg",
+    "Potassium": "35 mg",
+    "Calcium": "3 mg",
+    "Iron": "0.1 mg",
+    "Vitamin C": "20 mg"
+   },
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Vitamin Boost Orange Juice",
+  "handle": "fruit-power-vitamin-boost-orange-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347545_1-real-fruit-power-vitamin-boost-orange-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347545_1-real-fruit-power-vitamin-boost-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347545-2_1-real-fruit-power-vitamin-boost-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347545-3_1-real-fruit-power-vitamin-boost-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347545-4_1-real-fruit-power-vitamin-boost-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347545-5_1-real-fruit-power-vitamin-boost-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347545-6_1-real-fruit-power-vitamin-boost-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347545-7_1-real-fruit-power-vitamin-boost-orange-juice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Stay energized with Real Fruit Power Vitamin Boost Orange. Packed with Vitamins A, C & E, it helps you stay active and refreshed through the day. Made from carefully selected oranges, it delivers delicious fruit goodness and essential nutrients. Ideal for breakfast or a mid-day boost. No added preservatives. Enjoy a tasty, revitalizing drink that’s ready to serve and perfect for the whole family!",
+   "manufacturerName": "Dabur Nepal Pvt. Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Vitamin Boost Pineapple Juice",
+  "handle": "fruit-power-vitamin-boost-pineapple-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347546_1-real-fruit-power-vitamin-boost-pineapple-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347546_1-real-fruit-power-vitamin-boost-pineapple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347546-2_1-real-fruit-power-vitamin-boost-pineapple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347546-3_1-real-fruit-power-vitamin-boost-pineapple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347546-4_1-real-fruit-power-vitamin-boost-pineapple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347546-5_1-real-fruit-power-vitamin-boost-pineapple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347546-6_1-real-fruit-power-vitamin-boost-pineapple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347546-7_1-real-fruit-power-vitamin-boost-pineapple-juice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Stay energized with Real Fruit Power Vitamin Boost Pineapple. Enriched with Vitamins A, C & E, it helps you stay refreshed and supports your daily wellness. Made from carefully selected pineapples, it offers delicious fruit goodness and essential nutrients. Perfect for a tropical twist at breakfast or mid-day break. No added preservatives. A revitalizing, ready-to-serve drink the whole family can enjoy!",
+   "manufacturerName": "Dabur Nepal Pvt. Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Peach Juice",
+  "handle": "fruit-power-peach-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265852_10-real-juice-fruit-power-peach.jpg"
+    },
+    "barcode": "8901888002310"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265852_10-real-juice-fruit-power-peach.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265852-2_2-real-juice-fruit-power-peach.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265852-3_2-real-juice-fruit-power-peach.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265852-4_2-real-juice-fruit-power-peach.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265852-5_2-real-juice-fruit-power-peach.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265852-6_2-real-juice-fruit-power-peach.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Réal Fruit Power Peach brings to your home the exotic goodness of peaches. Peaches as well as Peach Juice are rare and difficult to obtain at any time of the year. Réal Fruit Power captures the vitality of peaches, which are typically grown in colder climates, with the help of the well-known aseptic technology. It doesn’t matter if you are in Delhi, Mumbai or Chennai, you can experience the Peach Nectar by simply opening a pack of Réal Peach at any time of the year and make most of nature's bounty in one of its sweetest forms.\nYou can inculcate the goodness of these healthy fruit juices in your daily life with the various fruit juice mocktail recipes Real Fruit Power offers! Today, Réal Fruit Power has a range of 16 exciting variants of fruit juices - from the exotic Indian Mango, Mosambi, Guava, Plum & Litchi to international favourites like Pomegranate, Tomato, Cranberry, Peach, Blackcurrant, Apricot & Grape and the basic Orange, Pineapple, Apple & Mixed Fruit.",
+   "ingredients": "Water, Peach Puree (20%)+, Sugar,Acidity Regulator (Ins 330), And Antioxidant (Ins 300)",
+   "storageInstructions": "Refrigerate and Consume within 5 days of opening.\nStore in clean, dry hygeinic conditions away from direct sunlight.",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Cranberry Juice",
+  "handle": "fruit-power-cranberry-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229939_17-real-fruit-power-juice-cranberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229939_17-real-fruit-power-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229939-2_7-real-fruit-power-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229939-3_7-real-fruit-power-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229939-4_6-real-fruit-power-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229939-5_6-real-fruit-power-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229939-6_4-real-fruit-power-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229939-7_4-real-fruit-power-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229939-8_4-real-fruit-power-juice-cranberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Fruit Power Cranberry Juice is renowned as the nation's favourite cranberry fruit beverage. It serves as the preferred base for a variety of delightful mocktails, including the popular cranberry fruit punch, making it a staple for home entertainment. Loved for its irresistible taste, cranberry juice is a refreshing choice in summers and adds fruity fun to mocktails year-round. Real Fruit Power Cranberry Juice stands out for its authentic cranberry flavour and versatility, offering a refreshing beverage option that's perfect for any occasion.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "60kcal",
+    "Protein": "0.1g",
+    "Carbohydrate": "15g",
+    "Total Sugars": "15g",
+    "Added Sugars": "13.7g",
+    "Total Fat": "0g",
+    "Sodium": "2mg",
+    "Potassium": "7mg",
+    "Calcium": "1mg",
+    "Vitamin C": "9mg",
+    "RDA contribution": "33.8%"
+   },
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "Sri Lanka"
+  }
+ },
+ {
+  "title": "Fruit Power Aloe Vera Kiwi Juice",
+  "handle": "fruit-power-aloe-vera-kiwi-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202_2-real-aloe-kiwi.jpg"
+    },
+    "barcode": "8901207033056"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202_2-real-aloe-kiwi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202-2_1-real-aloe-kiwi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202-3_1-real-aloe-kiwi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202-4_1-real-aloe-kiwi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202-5_1-real-aloe-kiwi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202-6_1-real-aloe-kiwi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202-7_1-real-aloe-kiwi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198202-8_1-real-aloe-kiwi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The goodness of aloe vera and kiwi from the house of Real, India's No.1 Juices and Nectar Brand. It contains numerous phytonutrients, vitamins and minerals. This drink with its unique composition has an invigorating taste that packs with it strong, nutritional and healthy protective punch.",
+   "ingredients": "Water, Aloe Vera Juice, Sugar, Kiwi Juice Concentrate, Stabilizer, Acidity Regulator, Preservatives.",
+   "storageInstructions": "Refrigerate and Consume within 5 days of opening.\nStore in clean, dry hygienic conditions away from direct sunlight.",
+   "manufacturerName": "Dabur India Ltd",
+   "fssaiLicense": "10012013000061",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Masala Sugarcane Juice",
+  "handle": "fruit-power-masala-sugarcane-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40194699_4-real-fruit-power-masala-sugarcane.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194699_4-real-fruit-power-masala-sugarcane.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194699-2_3-real-fruit-power-masala-sugarcane.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194699-3_3-real-fruit-power-masala-sugarcane.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194699-4_3-real-fruit-power-masala-sugarcane.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194699-5_3-real-fruit-power-masala-sugarcane.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194699-6_3-real-fruit-power-masala-sugarcane.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40194699-7_3-real-fruit-power-masala-sugarcane.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sugarcane and Spicy Masala, a love story that has been part of every Indian home across generations. Real Masala Sugarcane is one of the 1st in India offering the benefits of your age-old sugarcane juice with a sprinkling of traditional Indian masala in the hygienic Tetra pack format. So relish every drop of our new Masala Sugarcane beverage that promises to refresh you with every gulp. Savour the natural sugarcane goodness brought to your home by Real.",
+   "ingredients": "Water; Sugarcane Juice; Antioxidant; Stabilizer; Iodized Salt; Acidity Regulator; Reconstituted Lemon Juice; Black Salt; Spice Extracts",
+   "usageInstructions": "Refrigerate and Consume within 5 days of opening.\nStore in clean, dry hygienic conditions away from direct sunlight.",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012013000061"
+  }
+ },
+ {
+  "title": "Fruit Power Bites Peach Drink",
+  "handle": "fruit-power-bites-peach-drink",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343450_1-real-fruit-power-bites-peach-beverage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343450_1-real-fruit-power-bites-peach-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343450-2_1-real-fruit-power-bites-peach-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343450-3_1-real-fruit-power-bites-peach-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343450-4_1-real-fruit-power-bites-peach-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343450-5_1-real-fruit-power-bites-peach-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343450-6_1-real-fruit-power-bites-peach-beverage.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the luscious taste of Real Bites Peach, infused with real peach chunks for a rich and juicy experience in every sip. As India’s No. 1 Juice & Nectar brand, Real ensures the finest quality and widest range of nutritious beverages. Bursting with the natural sweetness and velvety texture of ripe peaches, this refreshing drink is a true delight. With 13 years of trust and excellence, Real Bites guarantees an authentic fruit experience, making it the perfect pick-me-up for any time of the day.",
+   "manufacturerName": "Del Monte Foods Private Limited",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Bites Pineapple Drink",
+  "handle": "fruit-power-bites-pineapple-drink",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343451_1-real-fruit-power-bites-pineapple-beverage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343451_1-real-fruit-power-bites-pineapple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343451-2_1-real-fruit-power-bites-pineapple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343451-3_1-real-fruit-power-bites-pineapple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343451-4_1-real-fruit-power-bites-pineapple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343451-5_1-real-fruit-power-bites-pineapple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343451-6_1-real-fruit-power-bites-pineapple-beverage.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the tropical delight of Real Bites Pineapple, packed with the authentic taste and texture of real pineapple chunks in every sip. As India’s No. 1 Juice & Nectar brand, Real brings you the widest range of nutritious beverages crafted for pure fruit indulgence. Each sip delivers the perfect balance of sweetness and tanginess, ensuring a rich and refreshing experience. With 13 years of trust and love, Real Bites guarantees superior quality and natural goodness, making it the perfect choice for a revitalising treat.",
+   "manufacturerName": "Del Monte Foods Private Limited",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Power Bites Green Apple Drink",
+  "handle": "fruit-power-bites-green-apple-drink",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343452_1-real-fruit-power-green-apple-beverage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343452_1-real-fruit-power-green-apple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343452-2_1-real-fruit-power-green-apple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343452-3_1-real-fruit-power-green-apple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343452-4_1-real-fruit-power-green-apple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343452-5_1-real-fruit-power-green-apple-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343452-6_1-real-fruit-power-green-apple-beverage.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the crisp and tangy taste of Real Bites Green Apple, made with real apple chunks for a refreshing and wholesome experience. As a part of India’s No. 1 Juice & Nectar brand, Real delivers unmatched quality and fruit nutrition in every sip. The vibrant green apple flavour strikes the perfect balance between tartness and sweetness, making it a deliciously revitalising drink. Loved for over 13 years, Real Bites brings you the goodness of real fruit, ensuring a refreshing and invigorating treat every time.",
+   "manufacturerName": "Del Monte Foods Private Limited",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Frutors Apple Drink",
+  "handle": "frutors-apple-drink",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "42",
+    "compare_at_price": "42",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198738_5-real-frutors-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198738_5-real-frutors-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198738-2_4-real-frutors-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198738-3_4-real-frutors-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198738-4_4-real-frutors-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198738-5_4-real-frutors-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198738-6_1-real-frutors-apple.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Réal FRUTORS has 3 electrolytes (Sodium, Potassium & Chloride) and is a source of Vitamin C. With Glucose that gives energy boost along with fruit goodness and Vitamin C, Réal FRUTORS provides tasty fruit nutrition and is a refreshing drink to help hydrate yourself.this product is not a ors formula as recommended by who",
+   "ingredients": "Water, Sugar, Apple Juice Concentrate, Dextrose, Sodium Citrate, Acidity Regulator (INS 296), Potassium Chloride, Sodium Chloride, Vitamin C, Colour (INS 150 a) and Flavour (Nature Identical Flavouring Substance).",
+   "usageInstructions": "Shake well before use\nSingle-serve pack\nConsume immediately after opening the pack",
+   "manufacturerName": "Dabur India Ltd",
+   "fssaiLicense": "10013021000958",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Drink",
+  "handle": "mango-drink",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195382_1-real-mango-drink.jpg"
+    },
+    "barcode": "8901207050503"
+   },
+   {
+    "title": "600ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195383_2-real-mango-drink.jpg"
+    }
+   },
+   {
+    "title": "1.2L",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195384_2-real-mango-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195382_1-real-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195382-2_1-real-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195382-3_1-real-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195382-4_1-real-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195382-5_1-real-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195383_2-real-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195384_2-real-mango-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the lip-smacking taste of your favourite mango drink from the house of Real, Indias no.1 juices and nectar brand. Real brings to you the new Real mango drinks made from hand-picked mangoes. This fruit beverage is so thick with mangoes that each gulp of it is like biting deep into the tender goodness of ripe, juicy mangoes.",
+   "ingredients": "Water, Mango Pulp, Sugar, Acidity Regulator (Ins 330), Preservatives (Ins 211, Ins 202) And Antioxidant (Ins 300)",
+   "storageInstructions": "Refrigerate and Consume within 3 days of opening.\nStore in clean, dry, hygienic conditions away from direct sunlight.",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016012000342"
+  }
+ },
+ {
+  "title": "Beetroot & Carrot Gut Health Juice",
+  "handle": "beetroot-carrot-gut-health-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265908_16-real-activ-beetroot-carrot-gut-health-no-added-sugars-preservative.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265908_16-real-activ-beetroot-carrot-gut-health-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265908-2_7-real-activ-beetroot-carrot-gut-health-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265908-3_7-real-activ-beetroot-carrot-gut-health-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265908-4_7-real-activ-beetroot-carrot-gut-health-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265908-5_7-real-activ-beetroot-carrot-gut-health-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265908-6_1-real-activ-beetroot-carrot-gut-health-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265908-7_1-real-activ-beetroot-carrot-gut-health-no-added-sugars-preservative.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Réal Activ mixed fruit beetroot carrot packs pure health and natural nutrients. It has the natural sweetness of fruits and no added sugar. It has been prepared from the freshest fruits and vegetables, handpicked from the best gardens and fields. This makes the juice one of the finest tastings in the country.",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Activ Apple Juice",
+  "handle": "activ-apple-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610_11-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+    },
+    "barcode": "8901888007148"
+   },
+   {
+    "title": "1L",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229945_15-real-activ-100-apple-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610_11-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610-2_4-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610-3_4-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610-4_4-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610-5_4-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610-6_1-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610-7_1-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022610-8_1-real-activ-100-apple-juice-with-no-added-sugars-preservative.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Start your day with the refreshing and nourishing taste of Real Fruit Power Activ Apple Juice. Made from the finest quality, handpicked red apples, this delicious juice is bursting with natural goodness and flavour. Quench your thirst and enjoy the crisp, crisp taste of real apples, whether you're sipping it on its own, blending it into smoothies, or using it as a versatile ingredient in marinades and sauces. Ordering this juice online is simple and convenient - just visit your preferred online grocery store, add it to your cart, and have it delivered straight to your doorstep. Say goodbye to the hassle of carrying heavy bottles home and embrace the ease of online shopping. Treat yourself to the perfect juice for any time of the day and experience the true power of real fruit with Real Fruit Power Activ Apple Juice.",
+   "ingredients": "Water, Apple Juice, Concentrate (18.6%), Antioxidant (INS 300)",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Energy": "48 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "12 g",
+    "Natural Fruit Sugars": "12 g",
+    "Added Sugar": "0 g",
+    "Fat": "0 g",
+    "Sodium": "40 mg",
+    "Potassium": "60 mg",
+    "Calcium": "4 mg"
+   },
+   "storageInstructions": "*Refrigerate after opening\n*Store away from direct sunlight",
+   "manufacturerName": "Dabur Nepal Pvt. Ltd",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Activ Mixed Fruit Juice",
+  "handle": "activ-mixed-fruit-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219_5-real-activ-mixed-fruit-juice-100.jpg"
+    },
+    "barcode": "8901888005496"
+   },
+   {
+    "title": "1L",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30012218_17-real-activ-100-mixed-fruit-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219_5-real-activ-mixed-fruit-juice-100.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219-2_4-real-activ-mixed-fruit-juice-100.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219-3_4-real-activ-mixed-fruit-juice-100.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219-4_4-real-activ-mixed-fruit-juice-100.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219-5_4-real-activ-mixed-fruit-juice-100.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219-6_3-real-activ-mixed-fruit-juice-100.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219-7_3-real-activ-mixed-fruit-juice-100.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30012219-8_4-real-activ-mixed-fruit-juice-100.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and nourishing goodness of Real Activ's Mixed Fruit Juice. Crafted with the finest, hand-selected fruits from the world's best orchards, this juice is a perfect choice for a healthy and balanced lifestyle. Bursting with the essential vitamins and phytonutrients of fruits, it provides a delightful taste experience that is both tart and sweet. Boasting 0% added sugars and 0% added preservatives, this fruit juice is free from any artificial additives, ensuring you enjoy the pure, natural flavours. Packed with an abundance of vitamins, dietary fibre, and essential nutrients, a glass of this juice is a fantastic way to start your day, keeping you hydrated and energised. Savour the refreshing and rejuvenating taste of this premium juice, which is surprisingly low in calories yet high in dietary fibre, contributing to your overall health and well-being. Discover the convenience of ordering Real Activ's Mixed Fruit Juice online and experience the goodness of nature in every sip.",
+   "ingredients": "Water, Mixed Fruit Juice Conc., Orange Juice Conc., Apple Juice Conc., Banana Puree, Mango Pulp, Apricot Puree Conc., Vitamin C",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "52 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "13 g",
+    "Total Sugars": "13 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "1.5 mg",
+    "Potassium": "100 mg",
+    "Calcium": "4 mg",
+    "Phosphorus": "9 mg",
+    "Beta-Carotene": "180 mcg",
+    "Magnesium": "4 mg",
+    "Iron": "0.5 mg",
+    "Vitamin C": "40 mg"
+   },
+   "storageInstructions": "*Store away from direct sunlight\n*Refrigerate & consume within 5 days of opening",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Activ Orange Juice",
+  "handle": "activ-orange-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229943_17-real-activ-100-orange-juice.jpg"
+    },
+    "barcode": "8901888010438"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229943_17-real-activ-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229943-2_2-real-activ-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229943-3_2-real-activ-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229943-4_2-real-activ-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229943-5_2-real-activ-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229943-6_2-real-activ-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229943-7_2-real-activ-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229943-8_1-real-activ-100-orange-juice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Activ Orange Fruit Juice delivers the refreshing, naturally vibrant taste of oranges in every sip. With no added sugars and no added preservatives, it offers a wholesome choice for everyday enjoyment. Packed with fruit goodness in every pack, it is ideal for breakfast, mealtimes or a refreshing break during the day.",
+   "ingredients": "Water, Orange Juice Concentrate (12.40%), Sugar, Acidity Regulator (INS 330), Iodised Salt and Antioxidant (INS 300).",
+   "nutritionalInfo": {
+    "Energy": "44 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "11 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "7.5 mg",
+    "Potassium": "81 mg",
+    "Calcium": "12 mg",
+    "Vitamin C": "40 mg"
+   },
+   "manufacturerName": "Dabur Nepal Pvt. Ltd",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Activ Pomegranate Juice",
+  "handle": "activ-pomegranate-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119_6-real-activ-activ-100-juice-pomegranate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119_6-real-activ-activ-100-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119-2_5-real-activ-activ-100-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119-3_5-real-activ-activ-100-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119-4_5-real-activ-activ-100-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119-5_5-real-activ-activ-100-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119-6_5-real-activ-activ-100-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119-7_5-real-activ-activ-100-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327119-8_5-real-activ-activ-100-juice-pomegranate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the perfect blend of real fruit goodness with Real Activ Pomegranate Juice. Packed with the essence of 4.5 fresh pomegranates in every 1L pack, this delicious and nutritious juice promises a healthy and guilt-free indulgence. Bursting with a wealth of antioxidant nutrients, this unique fruit blend offers a delightful taste experience that will elevate your daily routine. Crafted with 0% added sugars or preservatives, this pure juice is a refreshing and nourishing choice, delivering the natural sweetness and vibrant colour of real pomegranates in every sip. Treat your taste buds to the perfect balance of flavour and goodness with this premium pomegranate juice.",
+   "ingredients": "Water, Fruit Juice Concentrate, Apple Juice Concentrate (11%), Pomegranate Juice Concentrate (7%), Acidity Regulator (Ins 330), Flavours (Natural Flavouring Substances), Iodised Salt, Vitamin C, Sweetener (Ins 960)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "51 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "11.8g",
+    "Total Sugars+": "11.8g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "18mg",
+    "Vitamin C": "12mg",
+    "% Contribution To RDA": "{'Energy': '3.8%', 'Vitamin C': '22.5%'}"
+   },
+   "storageInstructions": "*Store in a cool and dry place"
+  }
+ },
+ {
+  "title": "Activ Cranberry Juice",
+  "handle": "activ-cranberry-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120_6-real-activ-activ-100-juice-cranberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120_6-real-activ-activ-100-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120-2_5-real-activ-activ-100-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120-3_5-real-activ-activ-100-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120-4_5-real-activ-activ-100-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120-5_5-real-activ-activ-100-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120-6_5-real-activ-activ-100-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120-7_5-real-activ-activ-100-juice-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327120-8_5-real-activ-activ-100-juice-cranberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cranberry Juice brings the naturally fruity flavour of cranberries to every refreshing sip. Made with no added sugar and no added preservatives, it offers a deliciously fruity taste without unnecessary extras. Perfect for enjoying chilled, it makes a refreshing choice for everyday occasions, whether served on its own or paired with meals. Enjoy the distinctive taste of cranberry in every pack.",
+   "ingredients": "Water, Fruit Juice Concentrate [Apple Juice Concentrate (13.5%) and Cranberry Juice Concentrate (2.5%), equivalent to 80% Apple Juice and 20% Cranberry Juice], Acidity Regulator (INS 330), Flavours (Nature-Identical Flavouring Substances), Vitamin C and Sweetener (INS 960).",
+   "nutritionalInfo": {
+    "Energy": "46 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "11.1 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "5.8 mg",
+    "Vitamin C": "12 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.\nRefrigerate after opening.",
+   "manufacturerName": "Dabur Nepal Pvt. Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "Nepal"
+  }
+ },
+ {
+  "title": "Activ Cucumber Spinach Juice",
+  "handle": "activ-cucumber-spinach-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265909_13-real-activ-cucumber-spinach-juice-with-no-added-sugar.jpg"
+    },
+    "barcode": "8901888005380"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265909_13-real-activ-cucumber-spinach-juice-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265909-2_7-real-activ-cucumber-spinach-juice-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265909-3_7-real-activ-cucumber-spinach-juice-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265909-4_7-real-activ-cucumber-spinach-juice-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265909-5_7-real-activ-cucumber-spinach-juice-with-no-added-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and nourishing goodness of Real Activ Juice Cucumber Spinach. Crafted with a unique blend of choicest luscious fruits like passion fruit, apricot, guava, orange, and apple, combined with the nutritious vegetables of cucumber and spinach, this juice offers a truly remarkable taste experience. Packed with natural ingredients and free from any added sugars or preservatives, it's the perfect way to hydrate, energise, and support your overall well-being. Savour the vibrant flavours and reap the benefits of the phytonutrients for a balanced, nourished lifestyle. Bring this delightful juice home today and enjoy its refreshing and rejuvenating properties throughout your daily routine.",
+   "ingredients": "Water, Blend Of Fruits And Vegetables Juice Concentrate, Apple Juice Concentrate, Grape Juice Concentrate",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "48 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "12 g",
+    "Total Sugars": "12 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "4 mg",
+    "Potassium": "30 mg",
+    "Calcium": "3 mg",
+    "Vitamin C": "2 mg"
+   },
+   "storageInstructions": "* Refrigerate & consume within 5 days of opening\n* Store away from direct sunlight",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Activ Fiber+ Multi Fruit Juice",
+  "handle": "activ-fiber-multi-fruit-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274787_14-real-activ-fiber-multi-fruit-no-added-sugars-preservative.jpg"
+    },
+    "barcode": "8901888005427"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274787_14-real-activ-fiber-multi-fruit-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274787-2_3-real-activ-fiber-multi-fruit-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274787-3_3-real-activ-fiber-multi-fruit-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274787-4_3-real-activ-fiber-multi-fruit-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274787-5_3-real-activ-fiber-multi-fruit-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274787-6_3-real-activ-fiber-multi-fruit-no-added-sugars-preservative.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274787-7_3-real-activ-fiber-multi-fruit-no-added-sugars-preservative.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Activ Fiber+ Multi Fruit Juice combines the refreshing taste of selected fruits with added fibre for a wholesome everyday drink. With no added sugars and no added preservatives, it offers fruit goodness in every pack. Enjoy it chilled at breakfast, with meals or whenever you need a refreshing fruity break.",
+   "ingredients": "Water, Banana Puree (13%)^, Concentrated Apple Juice (9.91%)^, Concentrated Mixed Fruit Juice (3.30%)^ [From Apple, Orange, Guava, Apricot, Mango, Banana, Lime, Passion Fruit, Pineapple], Mango Pulp (2.5%)^, Polydextrose [Dietary Fibre] (1.7%), Stabiliser (INS 440), Acidity Regulator (INS 330), Antioxidant (INS 300), Colour (INS 160a(iii)) and Flavours [Natural and Nature Identical Flavouring Substances].\n^Reconstituted 100% Juice Content",
+   "nutritionalInfo": {
+    "Energy": "56 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "14 g",
+    "Total Sugars": "12.5 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "1.8 g",
+    "Total Fat": "0 g",
+    "Sodium": "16.47 mg",
+    "Potassium": "32.45 mg",
+    "Calcium": "5.05 mg"
+   },
+   "manufacturerName": "Dabur Nepal Pvt. Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Activ Orange, Carrot & Veggie Juice",
+  "handle": "activ-orange-carrot-veggie-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265910_15-real-activ-fruit-beverage-veggieorange-carrot-no-added-sugars-preservatives.jpg"
+    },
+    "barcode": "8901888005403"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265910_15-real-activ-fruit-beverage-veggieorange-carrot-no-added-sugars-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265910-2_7-real-activ-fruit-beverage-veggieorange-carrot-no-added-sugars-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265910-3_7-real-activ-fruit-beverage-veggieorange-carrot-no-added-sugars-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265910-4_7-real-activ-fruit-beverage-veggieorange-carrot-no-added-sugars-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265910-5_7-real-activ-fruit-beverage-veggieorange-carrot-no-added-sugars-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265910-6_6-real-activ-fruit-beverage-veggieorange-carrot-no-added-sugars-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and nutritious blend of Real Activ Orange Carrot juice. Crafted with the finest quality oranges and carrots, this delightful beverage is packed with a wealth of vitamins and antioxidants. Bursting with the natural sweetness of oranges and the earthy goodness of carrots, it provides a delicious and wholesome way to hydrate and nourish your body. Enjoy the convenience of the easy-to-carry packaging, whether you're at work, school, or relaxing at home. With no added preservatives, artificial flavours, or colours, this natural juice is a true delight for the senses, supporting your overall health and well-being with every sip.",
+   "ingredients": "Water, Blend Of Orange And Carrot Juice Concentrates, Orange Juice Concentrate, Apple Juice Concentrate, Grape Juice Concentrate, Carrot Juice Concentrate",
+   "nutritionalInfo": {
+    "Serving Size": "150 ml",
+    "Energy": "48 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "12 g",
+    "Total Sugars": "12 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "4.3 mg",
+    "Potassium": "75 mg",
+    "Calcium": "4 mg",
+    "Beta-Carotene": "1000 mcg",
+    "Vitamin C": "6 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Dabur India Ltd. Plot No-22",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Activ Wellnezz Jamun Juice",
+  "handle": "activ-wellnezz-jamun-juice",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027512_7-real-activ-wellnezz-jamun-juice.jpg"
+    },
+    "barcode": "8901888004611"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027512_7-real-activ-wellnezz-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027512-2_2-real-activ-wellnezz-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027512-3_2-real-activ-wellnezz-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027512-4_2-real-activ-wellnezz-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027512-5_2-real-activ-wellnezz-jamun-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027512-6_2-real-activ-wellnezz-jamun-juice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "With no added colour and preservatives, Real Wellness Jamun has 100% juice content. We bring to you the wellness and goodness of 900 grams of carefully chosen 1 litre of Real Wellness Jamun juice. The average weight of 1 Jamun = 12g. Made from the best quality fruits, Real Juices offers your kids not just great taste but also Fruit Power - the power of fruits.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy": "44kcal",
+    "Protein": "0g",
+    "Carbohydrate": "11g",
+    "Total Sugars": "11g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "28mg",
+    "Potassium": "8mg",
+    "Calcium": "3mg",
+    "%RDA contribution calculated on the basis of average requirements of adult per day": "true"
+   },
+   "storageInstructions": "Store away from direct sunlight.\nRefrigerate and consume within 5 days of opening.",
+   "manufacturerName": "Dabur India Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Activ Coconut Water",
+  "handle": "activ-coconut-water",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198203_4-real-activ-100-coconut-water.jpg"
+    },
+    "barcode": "8901207043772"
+   },
+   {
+    "title": "1L",
+    "price": "178",
+    "compare_at_price": "178",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345205_4-real-activ-coconut-water.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198203_4-real-activ-100-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198203-2_2-real-activ-100-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198203-3_2-real-activ-100-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198203-4_2-real-activ-100-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198203-5_1-real-activ-100-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198203-6_1-real-activ-100-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198203-7_1-real-activ-100-coconut-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345205_4-real-activ-coconut-water.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Coconut water is the ultimate hydration partner. With naturally present electrolytes, low in calories, coconut water is the go to drink whenever you need a refreshing pick me up.Benefits of coconut water include : It helps beat tiredness, Supports metabolism, Supports hydration, Contains natural electrolytes, Helps maintain skin health, Helps maintain digestive health, is naturally fat free.",
+   "ingredients": "Water, Concentrated coconut water (9%), and preservative (INS 202, INS 224)",
+   "nutritionalInfo": {
+    "Energy": "20 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "5 g",
+    "Total Sugars": "4.6 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "25 mg",
+    "Potassium": "250 mg",
+    "Phosphorus": "5 mg",
+    "Calcium": "18 mg",
+    "Magnesium": "10 mg"
+   },
+   "storageInstructions": "Consume immediately after opening\nStore in a clean place away from direct sunlight",
+   "manufacturerName": "Warana Dairy and Agro Industries Limited",
+   "fssaiLicense": "10012022000036",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Activ Tender Coconut Water",
+  "handle": "activ-tender-coconut-water",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430_14-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430_14-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430-2_9-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430-3_9-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430-4_9-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430-5_9-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430-6_9-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430-7_2-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006430-8_2-real-activ-100-tender-coconut-water-with-no-added-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Harvested from carefully chosen, young, green and tender coconuts, Real Activ tender coconut is packaged in a way that it retains the true taste and nutritional values of tender coconut water. Tender coconut water helps maintain skin health, helps maintain digestive health, supports hydration and is a naturally fat-free product. It’s not made from concentrate.",
+   "ingredients": "Tender coconut water (99.99%) and Preservative (INS 234).",
+   "nutritionalInfo": {
+    "Energy": "18 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "4.5 g",
+    "Total Sugars": "4.5 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "10 mg",
+    "Potassium": "200 mg",
+    "Calcium": "30 mg",
+    "Magnesium": "10 mg"
+   },
+   "manufacturerName": "VSA Foods & Beverages Pvt Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheers Ginger Ale Mixer",
+  "handle": "cheers-ginger-ale-mixer",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386_2-real-cheers-ginger-ale-cocktail-mixer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386_2-real-cheers-ginger-ale-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386-2_2-real-cheers-ginger-ale-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386-3_2-real-cheers-ginger-ale-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386-4_1-real-cheers-ginger-ale-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386-5_2-real-cheers-ginger-ale-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386-6_1-real-cheers-ginger-ale-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386-7_1-real-cheers-ginger-ale-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345386-8_1-real-cheers-ginger-ale-cocktail-mixer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Cheers Ginger Ale - Cocktail Mixer - 250ml",
+   "manufacturerName": "Tethys Foods Beverages Private Limited",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheers Tonic Water Mixer",
+  "handle": "cheers-tonic-water-mixer",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387_2-real-cheers-tonic-water-cocktail-mixer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387_2-real-cheers-tonic-water-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387-2_2-real-cheers-tonic-water-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387-3_2-real-cheers-tonic-water-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387-4_1-real-cheers-tonic-water-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387-5_2-real-cheers-tonic-water-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387-6_1-real-cheers-tonic-water-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387-7_1-real-cheers-tonic-water-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345387-8_1-real-cheers-tonic-water-cocktail-mixer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Cheers Tonic Water - Cocktail Mixer - 250ml",
+   "manufacturerName": "Tethys Foods Beverages Private Limited",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheers Green Apple Mojito Mixer",
+  "handle": "cheers-green-apple-mojito-mixer",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388_2-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+    },
+    "barcode": "8901207053900"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388_2-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388-2_2-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388-3_2-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388-4_1-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388-5_2-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388-6_1-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388-7_1-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345388-8_1-real-cheers-green-apple-mojito-cocktail-mixer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Cheers Green Apple Mojito - Cocktail Mixer - 250ml",
+   "manufacturerName": "Tethys Foods Beverages Private Limited",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheers Jamuntini Mixer",
+  "handle": "cheers-jamuntini-mixer",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389_2-real-cheers-jamuntini-cocktail-mixer.jpg"
+    },
+    "barcode": "8901207053894"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389_2-real-cheers-jamuntini-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389-2_2-real-cheers-jamuntini-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389-3_2-real-cheers-jamuntini-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389-4_1-real-cheers-jamuntini-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389-5_2-real-cheers-jamuntini-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389-6_1-real-cheers-jamuntini-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389-7_1-real-cheers-jamuntini-cocktail-mixer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40345389-8_1-real-cheers-jamuntini-cocktail-mixer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Cheers Jamuntini - Cocktail Mixer - 250ml",
+   "manufacturerName": "Tethys Foods Beverages Private Limited",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Milk Power Belgian Chocolate Milkshake",
+  "handle": "milk-power-belgian-chocolate-milkshake",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539_3-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539_3-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539-2_3-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539-3_2-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539-4_2-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539-5_2-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539-6_2-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539-7_2-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199539-8_2-real-milk-power-milkshake-frappe-belgian-chocolate-rich-in-calcium-vitamin-d.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Milk Power Frappe Belgian Chocolate Milkshake has the goodness of milk and Belgian Chocolate. It has 50% more calcium and vitamin D2 than Cow Milk (based on values as per NIN, ICMR). It has no added preservative and is a good source of protein. Taste and health in one packet. It is made from UHT treated flavoured toned milk. Enjoy this to tame your small hunger pangs. Real Milkshake comes in 4 flavours – Belgian Chocolate, Alphonso Mango, French Vanilla and Strawberry.\nBenefits\n1. Real - India's No.1 Juices and Nectars Brand now brings to you Real Milkshakes which contains 50% more Calcium and Vitamin D2 than Cow Milk.\n2. It is a good source of protein.\n3. It is made from UHT Treated Flavoured Toned Milk.\n4. It contains no added preservatives.\n5. Real Milkshake comes in 4 flavours - Belgian Chocolate, French Vanilla, Strawberry and Mango.",
+   "ingredients": "Toned Milk, Sugar, Calcium Carbonate, Stabilizer, Acidity Regulator, Iodized Salt, Vitamin D2, Contains Added Flavours",
+   "usageInstructions": "Shake well before use.\nSingle-serve pack.\nConsume immediately after opening the pack.",
+   "manufacturerName": "DP - Schreiber Dynamix Dairies Pvt Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Milk Power Chocolate Bourbon Frappe Milkshake",
+  "handle": "milk-power-chocolate-bourbon-frappe-milkshake",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298308_1-real-milk-power-chocolate-frappe-bourbon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298308_1-real-milk-power-chocolate-frappe-bourbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298308-2_1-real-milk-power-chocolate-frappe-bourbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298308-3_1-real-milk-power-chocolate-frappe-bourbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298308-4_1-real-milk-power-chocolate-frappe-bourbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298308-5_1-real-milk-power-chocolate-frappe-bourbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298308-6_1-real-milk-power-chocolate-frappe-bourbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298308-7_1-real-milk-power-chocolate-frappe-bourbon.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Milk Powder Frappe Bourbon Chocolate has the goodness of milk and chocolate. It has 50% more calcium and vitamin D2 than cow milk (based on values as per NIN, ICMR). It contains no additional preservatives and is an excellent source of protein. It combines flavour with health. It is made with UHT-treated, flavour-toned milk. Enjoy it to the fullest to satisfy any minor hunger pangs. Can be brought along on road trips or included in your children's lunchboxes. Excellent for protein and immediate energy. \nAs it is packaged in a single-serve container, its goodness should be savoured as soon as the container is opened. It’s rich in Calcium, Protein, Phosphorous, and Vitamin D Order the Real Frappe Milkshake from the whole selection and has it delivered to your house only on Big Basket. They also come in varieties including Mango, Belgian Chocolate, Strawberry, and French Vanilla. So, order now from the comfort of your home and have these hydrating drinks delivered right to your door.",
+   "ingredients": "Toned Milk, Sugar, Cocoa Powder, Acidity Regulator [INS 339(iii)], Stabilizers [INS 407, INS 418], Emulsifier [INS 471], Iodised Salt and Flavors [Nature Identical Flavouring Substances]",
+   "nutritionalInfo": {
+    "Energy": "104 kcal",
+    "Protein": "3.1 g",
+    "Carbohydrate": "15.4 g",
+    "Total Sugars": "15.4 g",
+    "Total Fat": "3.3 g",
+    "Saturated Fat": "2.64 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0mg",
+    "Sodium": "100 mg",
+    "Calcium": "105 mg"
+   },
+   "manufacturerName": "Schreiber Dynamix Diaries Private Limited",
+   "fssaiLicense": "10012022000264",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Milk Power French Vanilla Milkshake",
+  "handle": "milk-power-french-vanilla-milkshake",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541_3-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541_3-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541-2_3-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541-3_2-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541-4_2-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541-5_2-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541-6_2-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541-7_2-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199541-8_2-real-milk-power-milkshake-frappe-french-vanilla-rich-in-calcium-vitamin-d.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Milk Power Frappe French Vanilla Milkshake has the goodness of milk and vanilla. It has 50% more calcium and vitamin D2 than Cow Milk (based on values as per NIN, ICMR). It has no added preservative and is a good source of protein. Taste and health in one packet. It is made from UHT treated flavoured toned milk. Enjoy this to tame your small hunger pangs. Real Milkshake comes in 4 flavours – Belgian Chocolate, Alphonso Mango, French Vanilla and Strawberry.\nBenefits\n1. Real - India's No.1 Juices and Nectars Brand now brings to you Real Milkshakes which contains 50% more Calcium and Vitamin D2 than Cow Milk.\n2. It is a good source of protein.\n3. It is made from UHT Treated Flavoured Toned Milk.\n4. It contains no added preservatives.\n5. Real Milkshake comes in 4 flavours - Belgian Chocolate, French Vanilla, Strawberry and Mango.",
+   "ingredients": "Toned Milk, Sugar, Calcium Carbonate, Stabilizer, Iodized Salt, Acidity Regulator, Emulsifier, Vitamin D2, Contains Added Flavours",
+   "usageInstructions": "Shake well before use.\nSingle-serve pack.\nConsume immediately after opening the pack.",
+   "manufacturerName": "DP - Schreiber Dynamix Dairies Pvt Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Milk Power Alphonso Mango Milkshake",
+  "handle": "milk-power-alphonso-mango-milkshake",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542-2_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542-3_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542-4_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542-5_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542-6_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542-7_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199542-8_2-real-milk-power-milkshake-frappe-alphonso-mango-rich-in-calcium-vitamin-d.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Milk Power Frappe Alphonso Mango Milkshake has the goodness of milk and mango. It has 50% more calcium and vitamin D2 than Cow Milk (based on values as per NIN, ICMR). It has no added preservative and is a good source of protein. Taste and health in one packet. It is made from UHT treated flavoured toned milk. Enjoy this to tame your small hunger pangs. Real Milkshake comes in 4 flavours – Belgian Chocolate, Alphonso Mango, French Vanilla and Strawberry.\nBenefits\n1. Real - India's No.1 Juices and Nectars Brand now brings to you Real Milkshakes which contains 50% more Calcium and Vitamin D2 than Cow Milk\n2. It is a good source of protein\n3. It is made from UHT Treated Flavoured Toned Milk\n4. It contains no added preservatives.\n5. Real Milkshake comes in 4 flavours - Belgian Chocolate, French Vanilla, Strawberry and Mango.",
+   "ingredients": "Toned Milk, Cocoa Powder, Sugar, Calcium Carbonate, Stabilizer, Acidity Regulator, Iodized Salt, Vitamin D2, Contains Added Flavours",
+   "usageInstructions": "Shake well before use.\nSingle-serve pack.\nConsume immediately after opening the pack.",
+   "manufacturerName": "DP - Schreiber Dynamix Dairies Pvt Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Milk Power Strawberry Milkshake",
+  "handle": "milk-power-strawberry-milkshake",
+  "vendor": "Real (Dabur)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540-2_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540-3_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540-4_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540-5_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540-6_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540-7_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199540-8_2-real-milk-power-milkshake-frappe-strawberry-rich-in-calcium-vitamin-d.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Real Milk Power Frappe Strawberry Milkshake has the goodness of milk and strawberry. It has 50% more calcium and vitamin D2 than Cow Milk (based on values as per NIN, ICMR). It has no added preservative and is a good source of protein. Taste and health in one packet. It is made from UHT treated flavoured toned milk. Enjoy this to tame your small hunger pangs. Real Milkshake comes in 4 flavours – Belgian Chocolate, Alphonso Mango, French Vanilla and Strawberry.",
+   "ingredients": "Toned Milk, Sugar, Strawberry Pulp, Stabilizer, Acidity Regulator, Emulsifier, Calcium Carbonate, Vitamin D2",
+   "usageInstructions": "Shake well before use.\nSingle-serve pack.\nConsume immediately after opening the pack.",
+   "manufacturerName": "DP - Schreiber Dynamix Dairies Pvt Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
+ }
+]

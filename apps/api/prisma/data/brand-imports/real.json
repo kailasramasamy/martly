@@ -1,0 +1,408 @@
+{
+  "brand": "Real (Dabur)",
+  "manufacturer": "Dabur India Ltd.",
+  "feed": "real-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/real/logo-010b41c3.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#1B3E93",
+  "namePrefix": "Real ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Dabur Real Activ Coconut Water": "Activ Coconut Water"
+  },
+  "rules": [
+    {
+      "match": "^Fruit\\ Power\\ Apple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Grape\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Masala\\ Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Mosambi\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Tomato\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Litchi\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Mango\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Alphonso\\ Mango\\ Nectar$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Masala\\ Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Masala\\ Pomegranate\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Mixed\\ Berries\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Pineapple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Pink\\ Guava\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Pomegranate\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Vitamin\\ Boost\\ Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Vitamin\\ Boost\\ Pineapple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Peach\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Cranberry\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Aloe\\ Vera\\ Kiwi\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Masala\\ Sugarcane\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Sugarcane Juice"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Bites\\ Peach\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Bites\\ Pineapple\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Power\\ Bites\\ Green\\ Apple\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Frutors\\ Apple\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Mango\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    },
+    {
+      "match": "^Beetroot\\ \\&\\ Carrot\\ Gut\\ Health\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Apple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Pomegranate\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Cranberry\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Cucumber\\ Spinach\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Fiber\\+\\ Multi\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Orange,\\ Carrot\\ \\&\\ Veggie\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Wellnezz\\ Jamun\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Activ\\ Coconut\\ Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Activ\\ Tender\\ Coconut\\ Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Cheers\\ Ginger\\ Ale\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Cheers\\ Tonic\\ Water\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Cheers\\ Green\\ Apple\\ Mojito\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Cheers\\ Jamuntini\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Milk\\ Power\\ Belgian\\ Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Milk\\ Power\\ Chocolate\\ Bourbon\\ Frappe\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Milk\\ Power\\ French\\ Vanilla\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Milk\\ Power\\ Alphonso\\ Mango\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Milk\\ Power\\ Strawberry\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    }
+  ]
+}
