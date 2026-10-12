@@ -1,0 +1,48 @@
+{
+  "brand": "Miltop",
+  "manufacturer": "Miltop",
+  "feed": "miltop-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/miltop/logo-2742aa8f.png",
+  "themeColor": "#D6311F",
+  "themeColorSecondary": "#D4A517",
+  "namePrefix": "Miltop ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Miltop Natural Jaggery Block (Gur)": "Natural Jaggery Cane"
+  },
+  "rules": [
+    {
+      "match": "^Natural\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Natural\\ Jaggery\\ Cane$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery (Gur)"
+      ]
+    },
+    {
+      "match": "^Kolhapuri\\ Jaggery$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery (Gur)"
+      ]
+    },
+    {
+      "match": "^Cube\\ Jaggery$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery (Gur)"
+      ]
+    }
+  ]
+}
