@@ -51,7 +51,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699-8_2-arokya-full-cream-milk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Arokya Full Cream Milk is rich, creamy, and packed with\nwholesome goodness. Pasteurised and homogenised for purity and consistency, it\ndelivers a smooth texture and fresh taste in every sip. Perfect for drinking,\ncooking, or making desserts, it’s a nutritious choice for your family’s daily\nhealth and indulgence.",
+   "manufacturerName": "Hatsun Agro Product",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
  },
  {
   "title": "Standardised Milk",
@@ -93,6 +100,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467-7_2-arokya-standardized-milk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Arokya Standardised Milk is pure, fresh, and thick milk that delivers consistent quality and rich taste. It is processed and packed under hygienic conditions to maintain its natural freshness. Ideal for daily use, it can be enjoyed on its own or used in tea, coffee, and various recipes. This milk ensures a smooth texture and balanced composition, making it suitable for both household and culinary purposes.",
+   "ingredients": "Milk & Milk Solids\nAllergen Information: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "70 kcal",
+    "Protein": "3 g",
+    "Total Carbohydrate": "4.5 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "4.5 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "4.5 g",
+    "Saturated Fat": "3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "15 mg",
+    "Sodium": "40 mg"
+   },
+   "storageInstructions": "For best results, store continuously under refrigeration below 5 degree C until 'UBD'. Once opened, refrigerate and use within 2 days or UBD, whichever is earlier.",
+   "manufacturerName": "Hatsun Agro Product Ltd & Plot No.14",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 3
+  }
  }
 ]
