@@ -1,0 +1,3497 @@
+[
+ {
+  "title": "Agni Tea",
+  "handle": "agni-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263620_4-tata-tea-agni-leaf-tea.jpg"
+    },
+    "barcode": "8901052005116"
+   },
+   {
+    "title": "250g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263613_12-tata-tea-agni-leaf-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40026310_16-tata-tea-agni-leaf-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263620_4-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263620-2_4-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263620-3_4-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263620-4_2-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263620-5_2-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263620-6_2-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263613_12-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40026310_16-tata-tea-agni-leaf-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the robust and invigorating taste of Tata Tea Agni, a superior blend of Assam tea with 10% extra-strong leaves. Sourced from the finest tea estates, these carefully selected and expertly processed leaves offer a bold and flavourful experience for tea enthusiasts. Tata Tea Agni is one of the largest brands in Tata Tea's extensive portfolio, with a presence across more than 22 states in India. Enjoy a cup of this rich, aromatic tea to start your day on a refreshing note or indulge in a relaxing break any time. With its affordable price and 1kg pack size, Tata Tea Agni provides an energising and satisfying tea experience every day.",
+   "ingredients": "Tea",
+   "nutritionalInfo": {
+    "Serving Size": "1g",
+    "Protein": "0 g",
+    "Carbohydrates": "0 g",
+    "Fat": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Agni Dust Tea",
+  "handle": "agni-dust-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "26",
+    "compare_at_price": "26",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264570_9-tata-tea-agni-dust-tea.jpg"
+    },
+    "barcode": "8901052034482"
+   },
+   {
+    "title": "250g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264569_12-tata-tea-agni-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264567_11-tata-tea-agni-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004420_15-tata-tea-agni-dust-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264570_9-tata-tea-agni-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264570-2_2-tata-tea-agni-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264570-3_2-tata-tea-agni-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264569_12-tata-tea-agni-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264567_11-tata-tea-agni-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004420_15-tata-tea-agni-dust-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Agni is a superior blend of Assam tea along with 10% extra-long leaves to give you a strong taste. Agni is the second-largest brand from Tata Tea, with a presence across more than 22 Indian states. Agni reinvented itself by migrating to the Tata Tea umbrella. Tata Tea Agni gives consumers a strong tea with 10% extra-strong leaves at the best price.",
+   "ingredients": "Tea",
+   "nutritionalInfo": {
+    "Serving Size": "2.5 g",
+    "Energy": "0 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Sugar": "0 g",
+    "Fat": "0 g"
+   },
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Agni Strong Blend Tea",
+  "handle": "agni-strong-blend-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263611_12-tata-tea-agni-leaf-tea.jpg"
+    },
+    "barcode": "8901052005093"
+   },
+   {
+    "title": "1.5kg",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251348_4-tata-tea-agni-black-tea-10-extra-strong-leaves-strong-taste-energising.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263611_12-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263611-2_11-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263611-3_11-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263611-4_10-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263611-5_10-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263611-6_10-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263611-7_10-tata-tea-agni-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263611-8_2-tata-tea-agni-leaf-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Agni Elaichi Chai",
+  "handle": "agni-elaichi-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441_3-tata-tea-agni-elaichi-chai.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40305560_2-tata-tea-agni-elaichi-chai.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441_3-tata-tea-agni-elaichi-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441-2_3-tata-tea-agni-elaichi-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441-3_2-tata-tea-agni-elaichi-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441-4_2-tata-tea-agni-elaichi-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441-5_2-tata-tea-agni-elaichi-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441-6_1-tata-tea-agni-elaichi-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441-7_1-tata-tea-agni-elaichi-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302441-8_1-tata-tea-agni-elaichi-chai.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your tea time with the bold and aromatic Tata Tea Agni Elaichi Chai. This rich and warming blend combines the sweet, fragrant flavour of cardamom with the zesty kick of black pepper, creating a beautifully balanced and energising cup of tea. Brew it quickly for an instant aroma and taste that uplifts the senses, making it ideal for everyday enjoyment or the perfect start to your morning. Indulge in this traditional Indian chai with a refreshing twist, and experience a lingering, rejuvenating flavour that will leave you feeling revitalised.",
+   "ingredients": "Tea (99%), Natural Flavour",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use"
+  }
+ },
+ {
+  "title": "Quick Chai Ginger",
+  "handle": "quick-chai-ginger",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775_7-tata-tea-quick-chai-ginger.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775_7-tata-tea-quick-chai-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775-2_7-tata-tea-quick-chai-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775-3_7-tata-tea-quick-chai-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775-4_7-tata-tea-quick-chai-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775-5_3-tata-tea-quick-chai-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775-6_3-tata-tea-quick-chai-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775-7_3-tata-tea-quick-chai-ginger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176775-8_2-tata-tea-quick-chai-ginger.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "There’s tea, and then there’s chai- that fresh, ghar-waali, full-on taste you only get when tea’s been boiled! Enjoy Tata Tea Quick Chai that is made just the way you would at home- boiled with milk & sugar before converting it to powder. This instant tea mix comes in a delicious natural ginger flavour, just add hot water and have a pleasant evening! Quick Chai Ginger has natural ginger flavour, it’s ready in a jiffy and tastes the same. Because when it comes to chai, we know you wouldn’t have it any other way!",
+   "ingredients": "Sugar, Dairy Whitener, Non-Dairy Beverage Whitener, Tea Extract, Natural Ginger Flavour",
+   "usageInstructions": "Empty the contents of the sachet in a cup, then add 100 ml hot water.\nStir until the powder dissolves.",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Quick Chai Masala",
+  "handle": "quick-chai-masala",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468_4-tata-tea-quick-chai-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468_4-tata-tea-quick-chai-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468-2_4-tata-tea-quick-chai-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468-3_4-tata-tea-quick-chai-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468-4_4-tata-tea-quick-chai-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468-5_4-tata-tea-quick-chai-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468-6_4-tata-tea-quick-chai-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468-7_4-tata-tea-quick-chai-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201468-8_4-tata-tea-quick-chai-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "There’s tea, and then there’s chai- that fresh, ghar-waali, full-on taste you only get when tea’s been boiled! Enjoy Tata Tea Quick Chai that is made just the way you would at home - boiled with milk & sugar before converting it to powder. This instant tea mix comes in a delicious natural masala flavour, just add hot water and have a pleasant evening! Masala chai made with the perfect blend of spices- Nutmeg, Ginger and Clove, it’s ready in a jiffy and tastes the same. Because when it comes to chai, we know you wouldn’t have it any other way!",
+   "ingredients": "Sugar, Medium Fat Dairy Whitener, Non-Dairy Beverage Whitener, Tea Extract, TEA. Natural Ginger Flavour (0.2%)",
+   "usageInstructions": "Just cut the pack, mix in hot water and sip.",
+   "manufacturerName": "Zeon Lifesciences Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tulsi Green Tea",
+  "handle": "tulsi-green-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "174",
+    "compare_at_price": "174",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553_2-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553_2-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553-2_2-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553-3_2-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553-4_2-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553-5_1-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553-6_1-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553-7_1-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196553-8_1-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tulsi has been an integral part of Indian tradition and is commonly known for its healing nature. Tata Tea Tulsi Green with an amazing combination of tulsi leaves and green tea is known to improve immunity, lead to better digestion, and have a calming effect on you. Now enjoy the benefits of tulsi in a reviving cup of tea. With no added flavours and preservatives, you can have Tulsi tea at any time of the day. Take a sip and feel refreshed!\nMake a perfectly hot cup. Heat 100ml of water until it begins to bubble at 80 C. Do not boil. Add a teaspoon (1.5 g) of the Tulsi Green Tea leaves per cup. Cover and brew for 2-3 minutes. Strain leaves and pours tea into a cup. Best consumed without milk and sugar.",
+   "ingredients": "Tulsi Leaves 65%, Green Tea 35%",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Tulsi Green Tea Bags",
+  "handle": "tulsi-green-tea-bags",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "174",
+    "compare_at_price": "174",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554_3-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554_3-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554-2_3-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554-3_3-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554-4_3-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554-5_3-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554-6_3-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554-7_2-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40196554-8_2-tata-tea-real-tulsi-leaves-with-green-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tulsi has been an integral part of Indian tradition and is commonly known for its healing nature. Tata Tea Tulsi Green with an amazing combination of tulsi leaves and green tea is known to improve immunity, lead to better digestion, and have a calming effect on you. Now enjoy the benefits of tulsi in a reviving cup of tea. With no added flavours and preservatives, you can use these tea bags at any time of the day whether you are at work or simply busy with household chores. Take a sip and feel refreshed!",
+   "ingredients": "Tulsi Leaves 65%, Green Tea 35%",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Care Cleanse Herbal Infusion",
+  "handle": "care-cleanse-herbal-infusion",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+    },
+    "barcode": "8901052005796"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553-2_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553-3_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553-4_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553-5_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553-6_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553-7_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240553-8_3-tata-tea-care-cleanse-green-tea-tulsi-turmeric-bitter-orange-peel-detoxifying.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "During these uncertain times, why not add green tea based herbal infusions, made with the natural ingredients to your day? For health-conscious people, a warm aromatic brew of herbs may help chase away all kinds of blues. Introducing the all-new range of herbal infusions by Tata Tea Care. Our new range of wellness-focused teas is made with the finest quality green tea, blended with carefully sourced ingredients of the best grade. Tata Tea Care Cleanse is made from natural ingredients such as tulsi, turmeric, and orange peel. Turmeric is traditionally known as a purifier while tulsi is known to be a good cleanser. Combined with the essence of bitter orange, it satisfies the tastebuds. Cleanse herbal infusion helps you to detox and feel pure from within. It has green tea which is regarded as a refreshing beverage due to its high concentration of antioxidants. With the goodness of herbs, you can now look after your and family’s well-being and happiness. Also, explore Tata Tea Care Rejuvenate for soothing nerves & inviting calm, Tata Tea Care Digest to feel light & live free, Tata Tea Care Tulsi for the benefits of tulsi, and Tata Tea Care Pro Woman for your wellbeing.",
+   "ingredients": "Green Tea (56.7%), Orange Peel (25%), Turmeric Root (15%), Tulsi Leaves (3.3%).",
+   "manufacturerName": "(C) Tewari Warehousing Co. Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Care Digest Herbal Infusion",
+  "handle": "care-digest-herbal-infusion",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+    },
+    "barcode": "8901052005789"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554-2_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554-3_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554-4_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554-5_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554-6_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554-7_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240554-8_3-tata-tea-care-digest-green-tea-pudina-ajwain-ginger-aids-digestion.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "During these uncertain times, why not add green tea based herbal infusions, made with the natural ingredients to your day? For health-conscious people, a warm aromatic brew of herbs may help chase away all kinds of blues. Introducing the all-new range of herbal infusions by Tata Tea Care. Our new range of wellness-focused teas is made with the finest quality green tea, blended with carefully sourced ingredients of the best grade. Tata Tea Care Digest is made from natural ingredients such as pudina, ajwain and ginger. Ajwain and Ginger are famously known for their digestive properties, and spearmint's cool and spicy nature is also useful in digestion. Digest herbal infusion helps you to feel light and live free. It has green tea which is regarded as a refreshing beverage due to its high concentration of antioxidants. With the goodness of herbs, you can now look after your and family’s wellbeing and happiness. Also, explore Tata Tea Care Cleanse to detox & feel pure from within, Tata Tea Care Rejuvenate for soothing nerves & inviting calm, Tata Tea Care Tulsi for the benefits of tulsi, and Tata Tea Care Pro Woman for your wellbeing.",
+   "ingredients": "Green Tea (50%), Ginger Root (30%), Pudina Leaves (12%), Ajwain Seeds (8%).",
+   "manufacturerName": "(C) Tewari Warehousing Co. Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Care Pro Woman Herbal Infusion",
+  "handle": "care-pro-woman-herbal-infusion",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555-2_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555-3_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555-4_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555-5_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555-6_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555-7_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240555-8_3-tata-tea-care-pro-woman-green-tea-shatavari-aloe-vera-rosemary-for-overall-wellness.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "During these uncertain times, why not add green tea based herbal infusions, made with the natural ingredients to your day? For health-conscious people, a warm aromatic brew of herbs may help chase away all kinds of blues. Introducing the all-new range of herbal infusions by Tata Tea Care. Our new range of wellness-focused teas is made with the finest quality green tea, blended with carefully sourced ingredients of the best grade. Tata Tea Care Pro Woman is made from natural ingredients such as shatavari, aloe vera and rosemary. Aloe Vera & Shatavari, both are known to be good for female wellbeing and have wonderful rejuvenating properties. Rosemary adds a pleasant essence. Pro Woman herbal infusion makes a cup of tea for your wellbeing. It has green tea which is regarded as a refreshing beverage due to its high concentration of antioxidants. With the goodness of herbs, you can now look after your and family’s wellbeing and happiness. Also, explore Tata Tea Care Cleanse to detox & feel pure from within, Tata Tea Care Rejuvenate for soothing nerves & inviting calm, Tata Tea Care Tulsi for the benefits of tulsi, and Tata Tea Care Digest to feel light and live free.",
+   "ingredients": "Green Tea (50%), Rosemary Leaves (30%), Shatavari Root (12%), Aloe Vera Leaves (8%), Natural Monk Fruit Flavour.",
+   "manufacturerName": "(C) Tewari Warehousing Co. Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Care Rejuvenate Herbal Infusion",
+  "handle": "care-rejuvenate-herbal-infusion",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25 pcs",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556-2_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556-3_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556-4_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556-5_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556-6_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556-7_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240556-8_3-tata-tea-care-rejuvenate-green-tea-chamomile-valerian-root-peppermint-calming-soothes-nerves.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "During these uncertain times, why not add green tea based herbal infusions, made with the natural ingredients to your day? For health-conscious people, a warm aromatic brew of herbs may help chase away all kinds of blues. Introducing the all-new range of herbal infusions by Tata Tea Care. Our new range of wellness-focused teas is made with the finest quality green tea, blended with carefully sourced ingredients of the best grade. Tata Tea Care Rejuvenate is made from natural ingredients such as chamomile, valerian, and peppermint. Chamomile & Valerian root are known for their calming & relaxing properties. This infusion comes with a dash of mint to leave behind a surreal coolness. Rejuvenated herbal infusion helps you in soothing nerves and inviting calm. It has green tea which is regarded as a refreshing beverage due to its high concentration of antioxidants. With the goodness of herbs, you can now look after your and family’s wellbeing and happiness. Also, explore Tata Tea Care Cleanse to detox & feel pure from within, Tata Tea Care Digest to feel light & live free, Tata Tea Care Tulsi for the benefits of tulsi, and Tata Tea Care Pro Woman for your wellbeing.",
+   "ingredients": "Green Tea (56.7 %), Chamomile Flowers (16.7%), Peppermint Leaves (10%), Valerian Root (8.3%).",
+   "manufacturerName": "(C) Tewari Warehousing Co. Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Chakra Gold Care Tea",
+  "handle": "chakra-gold-care-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40215291_13-tata-tea-chakra-gold-care.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "245",
+    "compare_at_price": "245",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40215290_12-tata-tea-chakra-gold-care.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "440",
+    "compare_at_price": "440",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289063_10-tata-tea-chakra-gold-care-black-tea-flavoured-five-natural-ingredients-like-brahmi-ginger-tulsi-elaichi-adhi-madhuram.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40215291_13-tata-tea-chakra-gold-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40215291-2_12-tata-tea-chakra-gold-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40215291-3_12-tata-tea-chakra-gold-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40215291-4_12-tata-tea-chakra-gold-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40215291-5_12-tata-tea-chakra-gold-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40215291-6_11-tata-tea-chakra-gold-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40215290_12-tata-tea-chakra-gold-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289063_10-tata-tea-chakra-gold-care-black-tea-flavoured-five-natural-ingredients-like-brahmi-ginger-tulsi-elaichi-adhi-madhuram.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Every cup of Tata Tea Chakra Gold Care packs the traditional known benefits of 5 natural ingredients, blended with superior quality tea. Now enjoy great-tasting tea with added goodness in every sip, every day. The tea has ingredients like tulsi which is known to improve the body’s immunity, ginger known to be good for the common cold and cough, Brahmi known to help improve memory, elaichi known to help with digestion and adhimadhuram is known to be good for sore throat. With an irresistible taste, this tea will leave you longing for more. Chakra Gold Care - Enjoy goodness in every cup!",
+   "manufacturerName": "White Cliff Tea Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chakra Gold Elaichi Tea",
+  "handle": "chakra-gold-elaichi-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176771_12-tata-tea-chakra-gold-elaichi-tea.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176772_14-tata-tea-chakra-gold-elaichi-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176771_12-tata-tea-chakra-gold-elaichi-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176771-2_11-tata-tea-chakra-gold-elaichi-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176771-3_11-tata-tea-chakra-gold-elaichi-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176771-4_11-tata-tea-chakra-gold-elaichi-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176771-5_11-tata-tea-chakra-gold-elaichi-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176771-6_7-tata-tea-chakra-gold-elaichi-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40176772_14-tata-tea-chakra-gold-elaichi-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Lose yourself in the refreshing flavour of Tata Tea Chakra Gold Elaichi Flavoured Tea! Whenever the mood strikes, enjoy your cup of tea full of freshness and aroma. Made with premium quality Assam Teas, it is carefully selected and blended by Tata Tea experts. Elaichi, the queen of spices, is highly priced for its rich flavour & refreshing aroma. Tata Tea brings you a blend that combines the unique flavour notes of this aromatic spice in the all-new Chakra Gold Elaichi. Now make yourself and your loved ones a cup of strong tea filled with the rich flavour of real elaichi that will leave you refreshed!",
+   "manufacturerName": "White Cliff Tea Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chakra Gold Premium Leaf Tea",
+  "handle": "chakra-gold-premium-leaf-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+    },
+    "barcode": "8901052006793"
+   },
+   {
+    "title": "250g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40303126_10-tata-tea-chakra-gold-premium-leaf-tea-rich-aroma-taste.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40303127_10-tata-tea-chakra-gold-premium-leaf-tea-rich-aroma-taste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393-2_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393-3_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393-4_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393-5_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393-6_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393-7_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363393-8_1-tata-tea-chakra-gold-premium-leaf-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Chakra Gold Premium Leaf Tea, THE CHOICE OF SUCCESS.\nMake moments refreshing with Tata Tea Chakra Gold. Experience the all-new Tata Tea Chakra Gold Premium Leaf Tea and indulge in an unforgettable & rich affair. This premium black tea is made with high-quality leaves and delivers only the delightful experience from quality tea gardens to your cup. Tata Tea Chakra Gold Premium leaf tea combines the flavours of premium Assam tea with added long leaves from the high-grown regions and gives you a refreshing blend of rich taste and delightful aroma. So bring home a rich and flavourful experience with Tata Tea Chakra Gold Premium Leaf tea, relish a delightful cup of this tea with added long leaves, and simply unwind.\nStorage Instructions: Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use.",
+   "manufacturerName": "Amalgamated Plantations Private Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chakra Gold Premium Tea",
+  "handle": "chakra-gold-premium-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641_4-tata-tea-chakra-gold-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264439_18-tata-tea-chakra-gold-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/297575_18-tata-tea-chakra-gold-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/297576_22-tata-tea-chakra-gold-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "680",
+    "compare_at_price": "680",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258744_5-tata-tea-chakra-gold-premium-tea-strong-flavour-long-lasting-taste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641_4-tata-tea-chakra-gold-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641-2_2-tata-tea-chakra-gold-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641-3_2-tata-tea-chakra-gold-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641-4_2-tata-tea-chakra-gold-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641-5_2-tata-tea-chakra-gold-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641-6_2-tata-tea-chakra-gold-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641-7_2-tata-tea-chakra-gold-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024641-8_2-tata-tea-chakra-gold-dust-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Anytime can be teatime when you have Tata Tea Chakra Gold by your side! South India is famous for its rich culture & landscapes, be it the local art forms, music, paintings, sculptures and figurines, breathtaking stretches of coastline or the diverse cuisine across these states. In an ode to this magnificent region, Chakra Gold brings you a blend of high-quality Assam teas that give a rich strong taste loved in these states. With a heritage of over 30 years, Tata Tea Chakra Gold Premium Tea is a blend of premium quality Assam Teas carefully selected and blended by Tata Tea experts. Its long-lasting taste is the hallmark of a superior quality tea. Entice your taste buds with a strong, earthy taste that lingers pleasantly. Now you can wake up to your favourite cup of tea every day with a long-lasting flavour!",
+   "ingredients": "Tea.",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Chakra Gold Premium Tea Jar",
+  "handle": "chakra-gold-premium-tea-jar",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004602_10-tata-tea-chakra-gold-dust-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004602_10-tata-tea-chakra-gold-dust-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Selected and blended by Tata Tea experts, its uniqueness lies in the superior balance of premium Assam teas, known for their strong and lingering taste. This differentiated offering is a hallmark of premium quality teas in the country which has not only helped Tata Tea acquire a sizable share of the premium tea segment but has also helped in upgrading imagery.",
+   "ingredients": "Tea",
+   "usageInstructions": "Bring fresh water to boil and add a pinch of tea leaves. Add Milk and Sugar as per taste.",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gemini Strong Assam Black Tea",
+  "handle": "gemini-strong-assam-black-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597_12-tata-tea-gemini-tea.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004598_14-tata-tea-gemini-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004599_15-tata-tea-gemini-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "540",
+    "compare_at_price": "540",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003336_6-gemini-dust-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597_12-tata-tea-gemini-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597-2_2-tata-tea-gemini-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597-3_2-tata-tea-gemini-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597-4_2-tata-tea-gemini-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597-5_1-tata-tea-gemini-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597-6_1-tata-tea-gemini-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597-7_1-tata-tea-gemini-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004597-8_1-tata-tea-gemini-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Gemini is a premium tea blend that has been delighting tea enthusiasts since 1978. Sourced from the lush Brahmaputra Valley in Assam, these hand-picked tea leaves embody the essence of the region and Tata's unwavering commitment to quality. The signature bright brown colour of the tea symbolises the perfect balance of taste and strength, while the rich aroma and robust flavour provide a fresh start to the day for millions of Indians. Inspired by the vibrant Kalamkari art forms of Telangana, the brand's packaging celebrates the pride and heritage of the region. Tata Tea Gemini is more than just a cup of tea - it is a soulful experience that rekindles the spirit and sets the tone for the day ahead.",
+   "ingredients": "Tea (98.5%), Natural Flavour.\nFlavoured Tea: Rose (Max 1.5%).",
+   "nutritionalInfo": {
+    "Nutrition Per": "Serve (2.5g Tea) Serving_Size: 2.5g Energy: 0 kcal Protein: 0 g Carbohydrate: 0 g Sugar: 0 g Fat: 0 g"
+   },
+   "storageInstructions": "Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use.",
+   "manufacturerName": "For manufacturing unit details",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Gemini Black Tea Jar",
+  "handle": "gemini-black-tea-jar",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "438",
+    "compare_at_price": "438",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40283638_1-tata-tea-gemini-black-tea-rich-in-taste-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40283638_1-tata-tea-gemini-black-tea-rich-in-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40283638-2_1-tata-tea-gemini-black-tea-rich-in-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40283638-3_1-tata-tea-gemini-black-tea-rich-in-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40283638-4_1-tata-tea-gemini-black-tea-rich-in-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40283638-5_1-tata-tea-gemini-black-tea-rich-in-taste-aroma.jpg"
+   }
+  ],
+  "details": {
+   "description": "Use the Tata Tea Gemini Black Tea to make yourself a relaxing cup of tea after a tiring day. This rich and aromatic black tea is sure to awaken your senses and provide a satisfying tea-drinking experience, whether enjoyed with breakfast or as an afternoon pick-me-up.",
+   "ingredients": "Tea",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "1868 Darjeeling Rare Wonder Tea",
+  "handle": "1868-darjeeling-rare-wonder-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "1500",
+    "compare_at_price": "1500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315627_2-1868-by-tata-tea-darjeeling-rare-wonder-tea.jpg"
+    },
+    "barcode": "8901052005376"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315627_2-1868-by-tata-tea-darjeeling-rare-wonder-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315627-2_1-1868-by-tata-tea-darjeeling-rare-wonder-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315627-3_1-1868-by-tata-tea-darjeeling-rare-wonder-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315627-4_1-1868-by-tata-tea-darjeeling-rare-wonder-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315627-5_1-1868-by-tata-tea-darjeeling-rare-wonder-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315627-6_1-1868-by-tata-tea-darjeeling-rare-wonder-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315627-7_1-1868-by-tata-tea-darjeeling-rare-wonder-tea.jpg"
+   }
+  ],
+  "details": {
+   "description": "1868 by Tata Tea is a celebration of diversity, with each carefully selected variant having a unique story to tell. This exclusive collection was launched to celebrate the legacy of the Tata Group on the completion of its milestone 150th year. The collection was first unveiled at the Tata kiosk at the World Economic Forum (WEF) in Davos, Switzerland, in January 2018. Located at the foothills of the Himalayas, Darjeeling is considered one of the most charming hill stations in India. 1868 by Tata Tea Darjeeling Rare Wonder will transport you to those magical hills of Darjeeling with its nuanced and exotic flavour. Experience an unmatched taste with sweetness in every sip of Darjeeling tea, delicately hand-rolled & oxidized to bring out the best flavour and aroma of prime flush tea leaves. Indulge in this rare wonder with 1868 by Tata Tea without milk and sugar for a divine experience.",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10012031000059",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "1868 Kolkata Street Chai",
+  "handle": "1868-kolkata-street-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "550",
+    "compare_at_price": "550",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315625_2-1868-by-tata-tea-kolkata-street-chai.jpg"
+    },
+    "barcode": "8901052005420"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315625_2-1868-by-tata-tea-kolkata-street-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315625-2_1-1868-by-tata-tea-kolkata-street-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315625-3_1-1868-by-tata-tea-kolkata-street-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315625-4_1-1868-by-tata-tea-kolkata-street-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315625-5_1-1868-by-tata-tea-kolkata-street-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315625-6_1-1868-by-tata-tea-kolkata-street-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315625-7_1-1868-by-tata-tea-kolkata-street-chai.jpg"
+   }
+  ],
+  "details": {
+   "description": "1868 by Tata Tea is a celebration of diversity, with each carefully selected variant having a unique story to tell. This exclusive collection was launched to celebrate the legacy of the Tata Group on the completion of its milestone 150th year. The collection was first unveiled at the Tata kiosk at the World Economic Forum (WEF) in Davos, Switzerland, in January 2018. Indulge in the delicious blend of the rich taste of Assam tea & heartwarming spices like cardamom, ginger and nutmeg for an exceptional cup with 1868 by Tata Tea Kolkata Street Chai. Inspired by the streets of Kolkata this premium black tea captures the warmth of the city of joy in every cup. A cup of this Kolkata-style tea has sweet, spicy & strong notes, perfect to savour throughout the day. Delight your senses with a cup of Kolkata Street chai.",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10012031000059",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "1868 Paan Cardamom Tea",
+  "handle": "1868-paan-cardamom-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "500",
+    "compare_at_price": "500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315628_2-1868-by-tata-tea-paan-cardamom-tea.jpg"
+    },
+    "barcode": "8901052005871"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315628_2-1868-by-tata-tea-paan-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315628-2_1-1868-by-tata-tea-paan-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315628-3_1-1868-by-tata-tea-paan-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315628-4_1-1868-by-tata-tea-paan-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315628-5_1-1868-by-tata-tea-paan-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315628-6_1-1868-by-tata-tea-paan-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315628-7_1-1868-by-tata-tea-paan-cardamom-tea.jpg"
+   }
+  ],
+  "details": {
+   "description": "1868 by Tata Tea is a celebration of diversity, with each carefully selected variant having a unique story to tell. This exclusive collection was launched to celebrate the legacy of the Tata Group on the completion of its milestone 150th year. The collection was first unveiled at the Tata kiosk at the World Economic Forum (WEF) in Davos, Switzerland, in January 2018. 1868 by Tata Tea Paan Cardamom is an after-meal green tea that combines paan and cardamom with a medley of flavours to keep your taste buds fresh! This green tea will fulfil the cravings of paan and that of a mouth freshener with its unique blend. Enjoy this delightful pairing of paan & cardamom with 1868 by Tata Tea.",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10012031000059",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold",
+  "handle": "gold",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264565_8-tata-tea-gold-tea.jpg"
+    },
+    "barcode": "8901052005147"
+   },
+   {
+    "title": "250g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263642_23-tata-tea-gold-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/240067_24-tata-tea-gold-tea.jpg"
+    }
+   },
+   {
+    "title": "1.5kg",
+    "price": "930",
+    "compare_at_price": "930",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200082_7-tata-tea-gold-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264565_8-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264565-2_8-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264565-3_7-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264565-4_6-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264565-5_6-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264565-6_5-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263642_23-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/240067_24-tata-tea-gold-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "In the place, where the valley meets the mountains, Tata Tea Gold is born. An exquisite tea that combines the rich fullness of fine valley grown teas from Assam with the irresistible aroma of specially selected long leaves from highlands. Expertly blended by the master craftsmen from Tata Tea, this marque national black tea offering from Tata Tea's portfolio has been specially crafted for the discerning tea consumers. Taste so rich and aroma so irresistible that it will leave you longing for more!",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Assam Tea",
+  "handle": "gold-assam-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "540",
+    "compare_at_price": "540",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/240065_21-tata-tea-gold-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/240065_21-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/240065-2_16-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/240065-3_15-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/240065-4_15-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/240065-5_8-tata-tea-gold-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/240065-6_6-tata-tea-gold-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the exquisite taste and irresistible aroma of Tata Tea Gold, a premium black tea that combines the rich fullness of fine valley-grown Assam teas with the captivating fragrance of specially selected long leaves from the highlands. Expertly blended by Tata Tea's master craftsmen, this marquee offering delivers a refreshing and rejuvenating tea-drinking experience that is unmatched in quality and flavour. Enjoy the convenience of this online-exclusive pack of two, allowing you to indulge in the goodness of Tata Gold tea anytime, anywhere. With its superior balance of strength and aroma, Tata Tea Gold is a true delight for discerning tea connoisseurs, offering a taste so rich and a fragrance so alluring that it will leave you longing for more.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(N) Amalgamated Plantations Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold First Flush Long Leaf Tea",
+  "handle": "gold-first-flush-long-leaf-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326141_2-tata-tea-gold-first-flush-roasted-long-leaf-tea.jpg"
+    },
+    "barcode": "8901052007912"
+   },
+   {
+    "title": "250g",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326142_2-tata-tea-gold-first-flush-roasted-long-leaf-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326141_2-tata-tea-gold-first-flush-roasted-long-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326141-2_1-tata-tea-gold-first-flush-roasted-long-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326141-3_1-tata-tea-gold-first-flush-roasted-long-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326141-4_1-tata-tea-gold-first-flush-roasted-long-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326141-5_1-tata-tea-gold-first-flush-roasted-long-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326142_2-tata-tea-gold-first-flush-roasted-long-leaf-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "We proudly produce and bring world-class teas from our renowned tea estates. Discover the pure freshness in every cup of Tata Tea Gold First Flush. Its sweet flavour and unique aroma make it a treat for any tea lover. Handpicked and carefully packed by our expert blenders, this delightful experience will keep you returning for more!",
+   "ingredients": "Tea",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Second Flush Darjeeling Tea",
+  "handle": "gold-second-flush-darjeeling-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326143_2-tata-tea-gold-second-flush-roasted-darjeeling-tea.jpg"
+    },
+    "barcode": "8901052007936"
+   },
+   {
+    "title": "250g",
+    "price": "405",
+    "compare_at_price": "405",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326144_2-tata-tea-gold-second-flush-roasted-darjeeling-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326143_2-tata-tea-gold-second-flush-roasted-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326143-2_1-tata-tea-gold-second-flush-roasted-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326143-3_1-tata-tea-gold-second-flush-roasted-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326143-4_1-tata-tea-gold-second-flush-roasted-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326143-5_1-tata-tea-gold-second-flush-roasted-darjeeling-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326144_2-tata-tea-gold-second-flush-roasted-darjeeling-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Gold Second Flush Roasted Darjeeling Tea embodies the essence of Darjeeling's finest. This summer flush blend offers a robust yet delicately balanced smoky flavour and a rich, malty taste. Its unique aroma sets it apart, making it the perfect choice. Indulge in this heavenly tea, carefully packed to preserve its goodness, and savour the finest tea experience.",
+   "ingredients": "Tea",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Kashir Noon Chai",
+  "handle": "gold-kashir-noon-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326145_2-tata-tea-gold-kashir-noon-chai.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "345",
+    "compare_at_price": "345",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326146_2-tata-tea-gold-kashir-noon-chai.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "650",
+    "compare_at_price": "650",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326147_2-tata-tea-gold-kashir-noon-chai.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326145_2-tata-tea-gold-kashir-noon-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326145-2_1-tata-tea-gold-kashir-noon-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326145-3_1-tata-tea-gold-kashir-noon-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326145-4_1-tata-tea-gold-kashir-noon-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326145-5_1-tata-tea-gold-kashir-noon-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326146_2-tata-tea-gold-kashir-noon-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326147_2-tata-tea-gold-kashir-noon-chai.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nestled in the 'Doab' land between Neora river and Chel, Nowera Nuddy estate produces some of the highest quality green teas. The two water bodies caressing the land lend a rich full-bodied taste to the tea that grows in the region. Kashir has been crafted from the choice of leaves grown in Nowera Nuddy estate, a blend that creates a magical aroma and everlasting warmth, radiance and magic that is second only to you.",
+   "ingredients": "Tea",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Vita Care Tea",
+  "handle": "gold-vita-care-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793_3-tata-tea-gold-vitacare-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315794_3-tata-tea-gold-vitacare-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793_3-tata-tea-gold-vitacare-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793-2_2-tata-tea-gold-vitacare-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793-3_2-tata-tea-gold-vitacare-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793-4_2-tata-tea-gold-vitacare-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793-5_2-tata-tea-gold-vitacare-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793-6_1-tata-tea-gold-vitacare-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793-7_1-tata-tea-gold-vitacare-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40315793-8_1-tata-tea-gold-vitacare-tea.jpg"
+   }
+  ],
+  "details": {
+   "description": "Start your day with the delightful and revitalising goodness of Tata Tea Gold VitaCare. This unique blend of traditional tea is enriched with 4 key vitamins - Vitamin D, Vitamin B6, Vitamin B9, and Vitamin B12 - to provide a nourishing and energising experience. Just two servings of this aromatic tea deliver 30% of your daily vitamin requirements, supporting normal bone health, reducing tiredness and fatigue, and contributing to healthy energy metabolism. Enjoy the rich, comforting flavour of this tea while incorporating essential vitamins into your daily routine with ease. Kickstart your day with the power of vitamins in a delicious, revitalising cup of Tata Tea Gold VitaCare.",
+   "ingredients": "Tea (99%), Vitamins (1.02%) (D2, B12, B6, B9)",
+   "nutritionalInfo": {
+    "Serving Size": "2g",
+    "Nutrition per gram": "2g",
+    "Energy": "3.2 kcal",
+    "Carbohydrate": "0.8 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "0.5 mg",
+    "Vitamin D": "2.25 mcg",
+    "Vitamin B12": "0.33 mcg",
+    "Vitamin B6": "0.29 mg",
+    "Vitamin B9": "45 mcg"
+   },
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "manufacturerName": "(T) Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Care Tea",
+  "handle": "gold-care-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466_5-tata-tea-gold-care-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "315",
+    "compare_at_price": "315",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201467_4-tata-tea-gold-care-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "630",
+    "compare_at_price": "630",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222687_7-tata-tea-gold-care-tea-blend-with-rich-taste-natural-ingredients-improves-immunity-memory.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466_5-tata-tea-gold-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466-2_3-tata-tea-gold-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466-3_3-tata-tea-gold-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466-4_3-tata-tea-gold-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466-5_3-tata-tea-gold-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466-6_3-tata-tea-gold-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466-7_3-tata-tea-gold-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201466-8_3-tata-tea-gold-care-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "At the heart of Tata Tea Gold Care is our commitment to offering you an exquisite tea blend that combines the rich taste of fine valley-grown teas with the goodness of five natural ingredients.\nThe tea has ingredients like tulsi which is known to improve the body’s immunity, ginger known to be good for the common cold and cough, Brahmi known to help improve memory, cardamom known to help with digestion and mulethi is known to be good for sore throat.\nWith a taste so irresistible, this tea will leave you longing for more.",
+   "manufacturerName": "Tewari Warehousing Co. PVT. Ltd. 20 Coal Berth Road",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Darjeeling Tea",
+  "handle": "gold-darjeeling-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255217_2-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "415",
+    "compare_at_price": "415",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255218_6-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255217_2-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255217-2_1-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255217-3_1-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255217-4_1-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255217-5_1-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255217-6_1-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255217-7_1-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255218_6-tata-tea-gold-fine-long-leaf-tea-black-tea-from-darjeeling-relaxing-energising.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the freshness of Darjeeling in every cup of Tata Tea Gold Darjeeling. It is a fine offering from the misty mountains of Darjeeling. Its distinct sweet flavour, amber-coloured liquor and unique aroma are a sensorial delight for every true tea connoisseur. Handpicked from thousands of cups by our master blenders & gently packed with care, this exquisite bouquet experience will leave you longing for more! Add 1 tbsp of tea to a cup of freshly boiled water. Brew for 3-5 mins depending on the strength desired. May add honey or sugar as per taste preference. Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use.",
+   "ingredients": "Tea",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container\n*Keep the lid tightly closed after each use",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Saffron Tea",
+  "handle": "gold-saffron-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037_2-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279038_2-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037_2-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037-2_2-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037-3_2-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037-4_2-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037-5_2-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037-6_1-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037-7_1-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40279037-8_1-tata-tea-gold-saffron-tea-natural-flavour-rich-taste-aroma.jpg"
+   }
+  ],
+  "details": {
+   "description": "With one of the world’s most luxurious flavours-Saffron, Tata Tea Gold Saffron has all the charms for an ideal break. The refined infusion of the delicate flavour of Saffron with the rich taste of fine-quality Assam tea shows the expertise of our master blenders in preparing this tea. Each sip of this brew treats your taste buds with a perfect balance of flavour and aroma. All the packs of this Saffron flavour-infused tea go through stringent quality and taste checks to ensure a cup of luxury. So make your tea break a lavish affair full of Saffron aroma and rich taste. Storage: Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use.",
+   "ingredients": "Tea ( 98.9%), Natural Saffron Flavour, Natural Flavouring Substance(Cardamom Seeds)",
+   "usageInstructions": "Add Tata Tea Gold Saffron in boiling water.\nAdd Sugar and milk and continue to boil for a few minutes.\nStrain into a cup & enjoy your cup of tea.",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold All In 1 Instant Cardamom Tea Premix",
+  "handle": "gold-all-in-1-instant-cardamom-tea-premix",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606_6-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606_6-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606-2_5-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606-3_5-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606-4_6-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606-5_5-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606-6_4-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606-7_4-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335606-8_4-tata-tea-gold-all-in-1-instant-premix-cardamom-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "All-in-One Instant Premix Cardamom Tea is a delightful blend of premium tea and the soothing aroma of cardamom. Simply add hot water or milk for an instant, flavourful cup of tea. Perfect for quick preparation, it offers the authentic taste of cardamom chai, making it an excellent choice for home, office, or travel.",
+   "ingredients": "Dairy Creamer (Milk Solids, Sucrose, Maltodextrin, Stabilizer (INS 339(ii))), Refined Sugar, Instant Tea (6.9%), Natural Flavour, Colour (INS 160b(i)).",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "14g",
+    "Energy": "418 kcal",
+    "Protein": "11.7 g",
+    "Carbohydrate": "74.7 g",
+    "Total Sugars": "58.7 g",
+    "Added Sugars": "47.6 g",
+    "Dietary Fibre": "7.5 g",
+    "Total Fat": "8.1 g",
+    "Saturated Fat": "5.2 g",
+    "Trans Fat": "0.2 g",
+    "Cholesterol": "18.5 mg",
+    "Sodium": "200 mg"
+   },
+   "storageInstructions": "*Store in a cool & dry place",
+   "manufacturerName": "Senso Foods Pvt Ltd - Plot No. 20",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold All In 1 Instant Masala Tea Premix",
+  "handle": "gold-all-in-1-instant-masala-tea-premix",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605_6-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605_6-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605-2_6-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605-3_6-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605-4_6-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605-5_6-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605-6_5-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605-7_5-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40335605-8_5-tata-tea-gold-all-in-1-instant-premix-masala-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Gold All-in-One Instant Premix Masala Tea is a convenient blend of aromatic spices and premium tea, delivering the rich flavours of traditional Indian masala chai. Just add hot water or milk to enjoy a perfectly spiced, refreshing cup of tea anytime. Ideal for busy mornings, office breaks, or travel, it ensures authentic taste in every sip.",
+   "ingredients": "Dairy Creamer (Milk Solids, Sucrose, Maltodextrin, Stabilizer (INS 339(ii))), Refined Sugar, Instant Tea (6.5%), Natural Flavour, Colour (INS 160b(i)).",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "14g",
+    "Energy": "432 kcal",
+    "Protein": "13.6 g",
+    "Carbohydrate": "68.8 g",
+    "Total Sugar": "51.2 g",
+    "Added Sugars": "36.5 g",
+    "Dietary Fibre": "8.8 g",
+    "Total Fat": "11.4 g",
+    "Saturated Fat": "7.3 g",
+    "Trans Fat": "0.3 g",
+    "Cholesterol": "23.9 mg",
+    "Sodium": "266 mg"
+   },
+   "storageInstructions": "* Store in a cool and dry place",
+   "manufacturerName": "Senso Foods Pvt Ltd - Plot No. 20",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Lemon Iced Tea Premix",
+  "handle": "gold-lemon-iced-tea-premix",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "130g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372232_1-tata-tea-gold-instant-lemon-flavour-iced-tea-premix-sachets.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372232_1-tata-tea-gold-instant-lemon-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372232-2_1-tata-tea-gold-instant-lemon-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372232-3_1-tata-tea-gold-instant-lemon-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372232-4_1-tata-tea-gold-instant-lemon-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372232-5_1-tata-tea-gold-instant-lemon-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372232-6_1-tata-tea-gold-instant-lemon-flavour-iced-tea-premix-sachets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a refreshing burst of flavour with Tata Tea Gold Instant Flavour Iced Tea Premix, a perfect blend of premium tea and invigorating natural flavours. Quick and easy to prepare, this iced tea mix offers a chilled, revitalizing beverage anytime. Ideal for hot summer days, gatherings, or a daily pick-me-up, it combines rich taste, natural aroma, and convenience in every sip for a delightfully refreshing experience.",
+   "ingredients": "Refined Sugar, Instant Tea, Acidity Regulator (INS 330), Vitamin C, Nature-Identical Flavouring Substance",
+   "nutritionalInfo": {
+    "Serve Size": "13g",
+    "Servings per Pack": "1",
+    "Energy": "51 kcal (2.6% RDA)",
+    "Protein": "0 g",
+    "Carbohydrate": "12.7 g",
+    "Total Sugars": "12.5 g",
+    "Added Sugars": "12.4 g (24.8% RDA)",
+    "Total Fat": "0 g",
+    "Sodium": "0 mg",
+    "Vitamin C": "16.2 mg (20.3% RDA)"
+   },
+   "manufacturerName": "Senso Foods Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Peach Iced Tea Premix",
+  "handle": "gold-peach-iced-tea-premix",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "130g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372233_1-tata-tea-gold-instant-peach-flavour-iced-tea-premix-sachets.jpg"
+    },
+    "barcode": "8901052014651"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372233_1-tata-tea-gold-instant-peach-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372233-2_1-tata-tea-gold-instant-peach-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372233-3_1-tata-tea-gold-instant-peach-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372233-4_1-tata-tea-gold-instant-peach-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372233-5_1-tata-tea-gold-instant-peach-flavour-iced-tea-premix-sachets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372233-6_1-tata-tea-gold-instant-peach-flavour-iced-tea-premix-sachets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a refreshing twist with Tata Tea Gold Instant Peach Flavour Iced Tea Premix. Made from premium Tata Tea Gold, this instant iced tea brings the perfect blend of rich tea aroma and the sweet, fruity essence of peach. Quick to prepare and ideal for chilled enjoyment, it’s perfect for hot days, gatherings, or anytime you crave a revitalizing, flavourful iced beverage. Taste the freshness in every sip.",
+   "ingredients": "Refined Sugar, Instant Tea, Acidity Regulator (Ins 330), Vitamin C, Nature-Identical Flavouring Substance",
+   "nutritionalInfo": {
+    "Serve Size": "13g",
+    "Servings per Pack": "1",
+    "Energy": "51 kcal (2.6% RDA)",
+    "Protein": "0 g",
+    "Carbohydrate": "12.7 g",
+    "Total Sugars": "12.5 g",
+    "Added Sugars": "12.4 g (24.8% RDA)",
+    "Total Fat": "0 g",
+    "Sodium": "0 mg",
+    "Vitamin C": "16.2 mg (20.3% RDA)"
+   },
+   "manufacturerName": "Senso Foods Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Kashmiri Kahwa Liquid Tea Premix",
+  "handle": "gold-kashmiri-kahwa-liquid-tea-premix",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325617_2-tata-tea-gold-instant-liquid-tea-premix-kashmiri-kahwa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325617_2-tata-tea-gold-instant-liquid-tea-premix-kashmiri-kahwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325617-2_1-tata-tea-gold-instant-liquid-tea-premix-kashmiri-kahwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325617-3_1-tata-tea-gold-instant-liquid-tea-premix-kashmiri-kahwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325617-4_1-tata-tea-gold-instant-liquid-tea-premix-kashmiri-kahwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325617-5_1-tata-tea-gold-instant-liquid-tea-premix-kashmiri-kahwa.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Gold Assam Tea offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Invert Sugar, Water, Instant Tea (1%), Almond bits (1%), Natural Flavours, Antioxidant (INS 300), Nature-Identical Flavouring Substances, Preservative (INS 202)",
+   "nutritionalInfo": {
+    "Serving Size": "18 ml",
+    "Energy": "60 kcal",
+    "Protein": "0.3 g",
+    "Carbohydrate": "14.6 g",
+    "Total Sugars": "13.9 g",
+    "Added Sugars": "13.9 g",
+    "Total Fat": "0.02 g",
+    "Sodium": "3 mg"
+   },
+   "storageInstructions": "*Keep away from direct sunlight\n*Store in a cool and dry place before opening",
+   "manufacturerName": "Bean Good Private Limited (Formerly known as Markasia Beverages Pvt. Ltd.)",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Lemon & Honey Liquid Tea Premix",
+  "handle": "gold-lemon-honey-liquid-tea-premix",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325616_2-tata-tea-gold-instant-liquid-tea-premix-lemon-honey.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325616_2-tata-tea-gold-instant-liquid-tea-premix-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325616-2_1-tata-tea-gold-instant-liquid-tea-premix-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325616-3_1-tata-tea-gold-instant-liquid-tea-premix-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325616-4_1-tata-tea-gold-instant-liquid-tea-premix-lemon-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40325616-5_1-tata-tea-gold-instant-liquid-tea-premix-lemon-honey.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a delightful tea experience with the Tata Tea Gold Instant Liquid Tea Premix, Lemon and Honey Flavour. This convenient and easy-to-prepare tea offers the perfect balance of refreshing lemon and soothing honey, creating an authentic and rich exotic-style tea. Enjoy a quick, flavourful tea break anytime, anywhere, with no need for steeping or boiling. Simply add hot or cold water, and your delicious tea is ready in seconds. Discover the unique exotic taste and convenience of this innovative liquid tea premix, free from any powder residue. Elevate your tea time and bring this product home today for a truly remarkable tea experience.",
+   "ingredients": "Invert Sugar, Water, Acidity Regulator (INS 330), Instant Tea (0.97%), Natural Flavour, Antioxidant (INS 300), Nature-Identical Flavouring Substance, Preservative (INS 202)",
+   "nutritionalInfo": {
+    "Serving Size": "18 ml",
+    "Energy": "54 kcal",
+    "Protein": "0.08 g",
+    "Carbohydrate": "13.3 g",
+    "Total Sugars": "12.3 g",
+    "Added Sugars": "12.3 g",
+    "Total Fat": "0.02 g",
+    "Sodium": "3.2 mg"
+   },
+   "storageInstructions": "*Keep away from direct sunlight\n*Store in a cool and dry place before opening",
+   "manufacturerName": "Bean Good Private Limited (Formerly known as Markasia Beverages Pvt. Ltd.)",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kanan Devan Tea",
+  "handle": "kanan-devan-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "32",
+    "compare_at_price": "32",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264377_5-tata-tea-kanan-devan-tea.jpg"
+    },
+    "barcode": "8901052006977"
+   },
+   {
+    "title": "250g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264435_4-tata-tea-kanan-devan-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264437_4-tata-tea-kanan-devan-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "335",
+    "compare_at_price": "335",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/252948_2-tata-tea-kanan-devan-tea-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264377_5-tata-tea-kanan-devan-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264377-2_7-tata-tea-kanan-devan-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264377-3_7-tata-tea-kanan-devan-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264377-4_2-tata-tea-kanan-devan-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264377-5_2-tata-tea-kanan-devan-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264377-6_1-tata-tea-kanan-devan-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264435_4-tata-tea-kanan-devan-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264437_4-tata-tea-kanan-devan-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the bold and authentic taste of Tata Kanan Devan Classic Tea, a beloved household brand in South India. Tata Kanan Devan offers a strong, refreshing cup of pure and natural tea, crafted with care by experts to deliver a superior taste and aroma. Enjoy the rich flavour and full-bodied character of this premium leaf tea, whether with or without milk. For those who prefer an even stronger brew, the Tata Tea Kanan Devan Strong variant provides a bolder, more robust drinking experience. Kanan Devan Duet, a unique blend of black CTC tea and green tea, offers the best of both worlds - the robust flavour of black tea combined with the goodness of green tea. This versatile tea can be savoured at any time of the day, making it a true delight for tea connoisseurs.",
+   "ingredients": "Tea",
+   "storageInstructions": "*Store in a cool, dry place"
+  }
+ },
+ {
+  "title": "Kanan Devan Strong Tea",
+  "handle": "kanan-devan-strong-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.2kg",
+    "price": "303",
+    "compare_at_price": "303",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/252943_6-tata-tea-kanan-devan-tea-strong.jpg"
+    },
+    "barcode": "8901052015047"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252943_6-tata-tea-kanan-devan-tea-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252943-2_3-tata-tea-kanan-devan-tea-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252943-3_3-tata-tea-kanan-devan-tea-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252943-4_3-tata-tea-kanan-devan-tea-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252943-5_2-tata-tea-kanan-devan-tea-strong.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Kanan Devan offers a strong cup of tea.",
+   "ingredients": "Tata Tea Kanan Devan has handpicked teas that are grown in the Kanan Devan Hills, in Munnar, at an elevation of 5600 feet.",
+   "usageInstructions": "Bring fresh water to boil and add a pinch of tea leaves. Add Milk and Suagr as per taste.",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kanan Devan Golden Leaf Tea",
+  "handle": "kanan-devan-golden-leaf-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40026307_2-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40026308_3-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40026307_2-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40026307-2_2-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40026307-3_2-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40026307-4_2-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40026307-5_1-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40026307-6_1-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40026308_3-tata-tea-kanan-devan-tea-golden-leaf.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the exquisite taste and aroma of Tata Tea Kanan Devan, a premium tea crafted from handpicked leaves grown in the lush Kanan Devan Hills of Munnar at an elevation of 5,600 feet. This superior CTC leaf blend offers a rich, full-bodied flavour that is perfect for your daily tea ritual. Brimming with antioxidants and boasting a unique high-altitude character, Tata Tea Kanan Devan is sure to elevate your tea-drinking experience. Whether you're looking to start your day with a invigorating cup or unwind in the evening, this carefully selected and expertly crafted tea will delight your senses and leave you craving more. Savour the superior taste and aroma of Tata Tea Kanan Devan, now just a click away on Instamart.",
+   "nutritionalInfo": {
+    "Serving Size": "1 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kanan Devan Rose Black Tea",
+  "handle": "kanan-devan-rose-black-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "475",
+    "compare_at_price": "475",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708-2_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708-3_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708-4_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708-5_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708-6_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708-7_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322708-8_1-tata-tea-kanan-devan-premium-quality-black-tea-with-natural-rose-petals.jpg"
+   }
+  ],
+  "details": {
+   "description": "In the tranquil hills of Munnar, a tale of tea begins. From these hills emerges a blend infused with the delicate essence of Natural Rose Petal Extracts, a testament to purity. Handpicked from Munnar's finest, whose legacy dates back to the 1880s. A journey of authenticity unfolds in every cup with Premium Quality Black Tea - With Natural Rose Petals.",
+   "ingredients": "Tea, Natural Flavouring Substance [Rose Petals (2%)], Natural Flavour.",
+   "manufacturerName": "Kanan Devan Hills Plantations Company Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kanan Devan Premium Green Tea",
+  "handle": "kanan-devan-premium-green-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "840",
+    "compare_at_price": "840",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322710_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709-2_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709-3_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709-4_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709-5_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709-6_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709-7_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322709-8_1-tata-tea-kanan-devan-premium-quality-green-tea.jpg"
+   }
+  ],
+  "details": {
+   "description": "Amidst the emerald hills of Munnar, a tea tale is woven. Born from the tender one-leaf bud, it embodies purity. Handpicked from Munnar's top stations, with roots tracing back to the 1880s, a journey begins. Our Premium Quality Green Tea is an excellent source of antioxidants, cleansing from within with every sip.",
+   "ingredients": "Green Tea",
+   "manufacturerName": "Kanan Devan Hills Plantations Company Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium",
+  "handle": "premium",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263602_3-tata-tea-premium-tea-desh-ki-chai.jpg"
+    },
+    "barcode": "8901052008445"
+   },
+   {
+    "title": "250g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264445_5-tata-tea-premium-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264446_8-tata-tea-premium-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/240049_9-tata-tea-premium-the-countrys-tea.jpg"
+    }
+   },
+   {
+    "title": "1.5kg",
+    "price": "760",
+    "compare_at_price": "760",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199390_6-tata-tea-premium-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263602_3-tata-tea-premium-tea-desh-ki-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263602-2_2-tata-tea-premium-tea-desh-ki-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263602-3_2-tata-tea-premium-tea-desh-ki-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263602-4_1-tata-tea-premium-tea-desh-ki-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263602-5_2-tata-tea-premium-tea-desh-ki-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263602-6_1-tata-tea-premium-tea-desh-ki-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263602-7_1-tata-tea-premium-tea-desh-ki-chai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264445_5-tata-tea-premium-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Premium is a true icon of Indian tea culture, pioneering the packet tea revolution since 1985. Crafted with precision and passion, this exceptional blend embodies the rich heritage and superior quality that Tata Tea is renowned for. Sourced from the finest tea gardens of India, Tata Tea Premium Pouch features a carefully curated selection of the freshest tea leaves, handpicked to ensure only the highest quality makes its way into your cup. Chai is more than a cup of tea; rather it is an integral part of the culture and life of every Indian, and Tata Tea Premium understands the regional tea taste preferences of consumers, offering blends to cater to them. This is why Tata Tea Premium is one of the largest tea brands in India and truly a 'Desh ki Chai'. Tata Tea Premium's social awakening communication platform, Jaago Re, also inspires and facilitates real change on-ground on social issues plaguing the country, cementing its position as one of the leading tea brands in India.",
+   "ingredients": "Tea",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Tea Jar",
+  "handle": "premium-tea-jar",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/307978_1-tata-tea-premium.jpg"
+    },
+    "barcode": "8901052010325"
+   },
+   {
+    "title": "500g",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/240046_1-tata-tea-premium-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307978_1-tata-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307978-2_1-tata-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307978-3_1-tata-tea-premium.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/240046_1-tata-tea-premium-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Premium - Desh ki Chai is more than just a cup of tea; it's an integral part of Indian culture and life. Crafted by our tea experts, this unique blend captures the diverse taste preferences of chai lovers across India. Sourced solely from the finest Indian tea leaves, our tea offers an exquisite flavour that you'll truly relish. Enjoy the natural goodness and freshness of our specially designed poly packs, which preserve the authentic taste and regional preferences. Tata Tea Premium is not just a beverage, but a socially conscious brand that empowers communities through the Jaago Re platform. Whether you prefer your tea in leaf, dust, or tea bag form, Tata Tea Premium is the perfect choice for a delightful and enriching tea experience.",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "manufacturerName": "Tata Consumer Products Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Tea Tin",
+  "handle": "premium-tea-tin",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "279",
+    "compare_at_price": "279",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089-2_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089-3_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089-4_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089-5_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089-6_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089-7_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203089-8_1-tata-tea-premium-festive-pack-art-of-india-collection-pattachitra-painting-east.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Tea Premium is Desh Ki Chai, sourced solely from India, understands these varying taste preferences and hence our tea experts crafted a unique blended. Tata Tea lends support to folk art and Indian art through this new Festive art collection. Festive art of India collection is an ode to the rich and diverse cultural heritage. Now relish your favourite tea and admire exquisite art as you celebrate the festive season.",
+   "ingredients": "Black Tea",
+   "usageInstructions": "Add tea and milk to boiling water, till it rises. Filter the tea and milk. Add sugar to taste.",
+   "manufacturerName": "Tata Consumer products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Tea Bags",
+  "handle": "premium-tea-bags",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100 pcs",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/307985_11-tata-tea-premium-leaf-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307985_11-tata-tea-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307985-2_3-tata-tea-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307985-3_3-tata-tea-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307985-4_3-tata-tea-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307985-5_3-tata-tea-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307985-6_1-tata-tea-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307985-7_1-tata-tea-premium-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307985-8_1-tata-tea-premium-leaf-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Chai' is more than a cup of tea; rather it is an integral part of the culture and life of every Indian. While drinking chai is enjoyed across the country, the way people like their cups in India varies across regions. Tata Tea Premium- Desh ki Chai, sourced solely from India, understands these varying taste preferences and hence our tea experts have crafted a unique blend that 'chai' lovers across India will enjoy. Blended Since 1985.",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Assam Kadak Chai",
+  "handle": "premium-assam-kadak-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372750_1-tata-tea-premium-assam-kadak-chaitea-dust.jpg"
+    },
+    "barcode": "8901052010462"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372750_1-tata-tea-premium-assam-kadak-chaitea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372750-2_1-tata-tea-premium-assam-kadak-chaitea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372750-3_1-tata-tea-premium-assam-kadak-chaitea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372750-4_1-tata-tea-premium-assam-kadak-chaitea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372750-5_1-tata-tea-premium-assam-kadak-chaitea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40372750-6_1-tata-tea-premium-assam-kadak-chaitea-dust.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Assam Kadak Chai/Tea Dust is a premium tea blend crafted to deliver a strong, full-bodied flavour with a rich aroma. Made from carefully selected tea leaves, it brews into a bold and refreshing cup, making it an ideal choice for everyday tea lovers. Enjoy it hot with milk and sugar, or prepare it to suit your preferred taste.",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Care Tea",
+  "handle": "premium-care-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195_2-tata-tea-premium-care-leaf-black-tea.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339194_2-tata-tea-premium-care-leaf-black-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346378_1-tata-tea-premium-care-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195_2-tata-tea-premium-care-leaf-black-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195-2_2-tata-tea-premium-care-leaf-black-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195-3_2-tata-tea-premium-care-leaf-black-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195-4_2-tata-tea-premium-care-leaf-black-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195-5_2-tata-tea-premium-care-leaf-black-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195-6_2-tata-tea-premium-care-leaf-black-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195-7_2-tata-tea-premium-care-leaf-black-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339195-8_1-tata-tea-premium-care-leaf-black-tea.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Tea (96.2%), Natural Flavours and Natural Flavouring Substances [Ginger, Cardamom, Tulsi, Mulethi, Brahmi]",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Delhi Ke Liye Rich Assam Chai",
+  "handle": "premium-delhi-ke-liye-rich-assam-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313386_2-tata-tea-premium-desh-ki-chai-delhi-ke-liye-rich-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313386_2-tata-tea-premium-desh-ki-chai-delhi-ke-liye-rich-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313386-2_2-tata-tea-premium-desh-ki-chai-delhi-ke-liye-rich-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313386-3_2-tata-tea-premium-desh-ki-chai-delhi-ke-liye-rich-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313386-4_1-tata-tea-premium-desh-ki-chai-delhi-ke-liye-rich-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313386-5_1-tata-tea-premium-desh-ki-chai-delhi-ke-liye-rich-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313386-6_1-tata-tea-premium-desh-ki-chai-delhi-ke-liye-rich-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313386-7_1-tata-tea-premium-desh-ki-chai-delhi-ke-liye-rich-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Handlooms of India are as colourful and vibrant as their culture. Steeped in folklore, romancing the age-old ethos of the people while keeping up with the contemporary, the handlooms of India have a long history that can be traced to ancient times. Traversing the onslaught of time and changing of powers and dynasties, the handlooms of India have not only thrived but reinvented themselves to give each region of the country an identity and pride. Tata Tea Premium comes with a unique blend of tea crafted by experts that tea lovers across India will enjoy. This special edition pack of Tata Tea Premium is part of a collection celebrating Independence Day. Each pack design has been inspired by a famous handloom style of India.\nThis pack features the Resham embroidery weaving style by Dhruva Dhir of Delhi. This weaving style is characterized by heavy ornate work using silk, gold and silver threads, often adorned with pearls, beads and precious stones. Make your tea breaks indulgent with a sip of Tata Tea Premium.",
+   "ingredients": "Black Tea",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Premium Haryana Ke Liye Kadak Assam Chai",
+  "handle": "premium-haryana-ke-liye-kadak-assam-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313388_2-tata-tea-premium-desh-ki-chai-haryana-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+    },
+    "barcode": "8901052004539"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313388_2-tata-tea-premium-desh-ki-chai-haryana-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313388-2_2-tata-tea-premium-desh-ki-chai-haryana-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313388-3_2-tata-tea-premium-desh-ki-chai-haryana-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313388-4_1-tata-tea-premium-desh-ki-chai-haryana-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313388-5_1-tata-tea-premium-desh-ki-chai-haryana-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313388-6_1-tata-tea-premium-desh-ki-chai-haryana-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313388-7_1-tata-tea-premium-desh-ki-chai-haryana-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Handlooms of India are as colourful and vibrant as their culture. Steeped in folklore, romancing the age-old ethos of the people while keeping up with the contemporary, the handlooms of India have a long history that can be traced to ancient times. Traversing the onslaught of time and changing of powers and dynasties, the handlooms of India have not only thrived but reinvented themselves to give each region of the country an identity and pride. Tata Tea Premium comes with a unique blend of tea crafted by experts that tea lovers across India will enjoy. This special edition pack of Tata Tea Premium is part of a collection celebrating Independence Day. Each pack design has been inspired by a famous handloom style of India.\nThis pack features the Panja Durries weaving style by Khem Raj Sundriyal of Panipat. Woven on two parallel bars of the loom, durries are rugs used for household purposes. Panja Durries get their name from a claw like weaving tool called Panja. Thick fabrics are a speciality of Haryana, as climatic conditions do not allow the use of fine threads. Make your tea breaks indulgent with a sip of Tata Tea Premium.",
+   "ingredients": "Black Tea",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Premium Hyderabadi Irani Chai",
+  "handle": "premium-hyderabadi-irani-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569-2_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569-3_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569-4_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569-5_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569-6_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569-7_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287569-8_2-tata-tea-premium-hyderabad-irani-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the signature flavours of Hyderabadi Irani Chai with Tata Tea Premium's Street Chai. Expertly blended with cardamom and condensed milk, this street-inspired chai offers a burst of flavour in every sip. Relive the nostalgic memories of sipping hot Irani Chai on the streets of Hyderabad or create new ones, as you savour this indulgent experience in the comfort of your own home. Crafted by skilled artisans, this street chai captures the warmth, camaraderie and charcha (conversation) that are synonymous with the vibrant streets of India. Whether enjoyed alone or shared with family and friends, Tata Tea Premium Hyderabadi Irani Chai is sure to transport you to the heart of Hyderabad, one delightful sip at a time.",
+   "ingredients": "Tea Leaves, Cardamom, Condensed Milk",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Maharashtra Ke Liye Kadak Chai",
+  "handle": "premium-maharashtra-ke-liye-kadak-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313391_2-tata-tea-premium-desh-ki-chai-maharashtra-dust-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313391_2-tata-tea-premium-desh-ki-chai-maharashtra-dust-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313391-2_2-tata-tea-premium-desh-ki-chai-maharashtra-dust-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313391-3_2-tata-tea-premium-desh-ki-chai-maharashtra-dust-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313391-4_1-tata-tea-premium-desh-ki-chai-maharashtra-dust-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313391-5_1-tata-tea-premium-desh-ki-chai-maharashtra-dust-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313391-6_1-tata-tea-premium-desh-ki-chai-maharashtra-dust-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313391-7_1-tata-tea-premium-desh-ki-chai-maharashtra-dust-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Handlooms of India are as colourful and vibrant as their culture. Steeped in folklore, romancing the age-old ethos of the people while keeping up with the contemporary, the handlooms of India have a long history that can be traced to ancient times. Traversing the onslaught of time and changing of powers and dynasties, the handlooms of India have not only thrived but reinvented themselves to give each region of the country an identity and pride. This pack features the Paithani weaving style by Madanlal Prabhakar Dhalkari of Paithan. Dating back to more than 2000 years, Paithani sarees are handcrafted using some of the most exquisite silk. They are created using tapestry weaving technique and are equally beautiful on both sides. Make your tea breaks indulgent with a sip of Tata Tea Premium.",
+   "ingredients": "Black Tea",
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Premium Mumbai Ke Liye Kadak Chai",
+  "handle": "premium-mumbai-ke-liye-kadak-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313390_2-tata-tea-premium-desh-ki-chai-mumbai-ke-liye-kadak-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313390_2-tata-tea-premium-desh-ki-chai-mumbai-ke-liye-kadak-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313390-2_2-tata-tea-premium-desh-ki-chai-mumbai-ke-liye-kadak-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313390-3_1-tata-tea-premium-desh-ki-chai-mumbai-ke-liye-kadak-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313390-4_1-tata-tea-premium-desh-ki-chai-mumbai-ke-liye-kadak-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313390-5_1-tata-tea-premium-desh-ki-chai-mumbai-ke-liye-kadak-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313390-6_1-tata-tea-premium-desh-ki-chai-mumbai-ke-liye-kadak-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313390-7_1-tata-tea-premium-desh-ki-chai-mumbai-ke-liye-kadak-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Handlooms of India are as colourful and vibrant as their culture. Steeped in folklore, romancing the age-old ethos of the people while keeping up with the contemporary, the handlooms of India have a long history that can be traced to ancient times. Traversing the onslaught of time and changing of powers and dynasties, the handlooms of India have not only thrived but reinvented themselves to give each region of the country an identity and pride. Make your tea breaks indulgent with a sip of Tata Tea Premium.",
+   "ingredients": "Black Tea",
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Premium Odisha Ke Liye Kadak Assam Chai",
+  "handle": "premium-odisha-ke-liye-kadak-assam-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313389_2-tata-tea-premium-desh-ki-chai-odisha-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313389_2-tata-tea-premium-desh-ki-chai-odisha-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313389-2_2-tata-tea-premium-desh-ki-chai-odisha-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313389-3_2-tata-tea-premium-desh-ki-chai-odisha-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313389-4_1-tata-tea-premium-desh-ki-chai-odisha-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313389-5_1-tata-tea-premium-desh-ki-chai-odisha-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313389-6_1-tata-tea-premium-desh-ki-chai-odisha-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313389-7_1-tata-tea-premium-desh-ki-chai-odisha-ke-liye-kadak-assam-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Handlooms of India are as colourful and vibrant as their culture. Steeped in folklore, romancing the age-old ethos of the people while keeping up with the contemporary, the handlooms of India have a long history that can be traced to ancient times. Traversing the onslaught of time and changing of powers and dynasties, the handlooms of India have not only thrived but reinvented themselves to give each region of the country an identity and pride. Tata Tea Premium comes with a unique blend of tea crafted by experts that tea lovers across India will enjoy. This special edition pack of Tata Tea Premium is part of a collection celebrating Independence Day. Each pack design has been inspired by a famous handloom style of India.\nThis pack features the Kotpad weaving style by Nabin Panika of Kotpad. An exquisite organic vegetable dyed fabric, which uses a natural dye extracted from the Aul tree grown in this area. Make your tea breaks indulgent with a sip of Tata Tea Premium.",
+   "ingredients": "Black Tea",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Premium Punjab Ke Liye Badi Daanedaar Chai",
+  "handle": "premium-punjab-ke-liye-badi-daanedaar-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313387_2-tata-tea-premium-desh-ki-chai-punjab-ke-liye-badi-daanedaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+    },
+    "barcode": "8901052004553"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313387_2-tata-tea-premium-desh-ki-chai-punjab-ke-liye-badi-daanedaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313387-2_2-tata-tea-premium-desh-ki-chai-punjab-ke-liye-badi-daanedaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313387-3_2-tata-tea-premium-desh-ki-chai-punjab-ke-liye-badi-daanedaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313387-4_1-tata-tea-premium-desh-ki-chai-punjab-ke-liye-badi-daanedaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313387-5_1-tata-tea-premium-desh-ki-chai-punjab-ke-liye-badi-daanedaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313387-6_1-tata-tea-premium-desh-ki-chai-punjab-ke-liye-badi-daanedaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313387-7_1-tata-tea-premium-desh-ki-chai-punjab-ke-liye-badi-daanedaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Handlooms of India are as colourful and vibrant as their culture. Steeped in folklore, romancing the age-old ethos of the people while keeping up with the contemporary, the handlooms of India have a long history that can be traced to ancient times. Traversing the onslaught of time and changing of powers and dynasties, the handlooms of India have not only thrived but reinvented themselves to give each region of the country an identity and pride. Tata Tea Premium comes with a unique blend of tea crafted by experts that tea lovers across India will enjoy. This special edition pack of Tata Tea Premium is part of a collection celebrating Independence Day. Each pack design has been inspired by a famous handloom style of India.\nThis pack features the Phulkari weaving style by Simran (Poppy) Harika of Punjab. Known as the floral embroidery of Punjab, this weaving style is mostly practised by women and is characterized by its skilful handling of the darn stitch on the opposite side of the cloth creating interesting designs and patterns. Make your tea breaks indulgent with a sip of Tata Tea Premium.",
+   "ingredients": "Black Tea",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Premium Uttar Pradesh Ke Liye Dumdaar Chai",
+  "handle": "premium-uttar-pradesh-ke-liye-dumdaar-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313620_2-tata-tea-premium-desh-ki-chai-uttar-pradesh-ke-liye-dumdaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313620_2-tata-tea-premium-desh-ki-chai-uttar-pradesh-ke-liye-dumdaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313620-2_2-tata-tea-premium-desh-ki-chai-uttar-pradesh-ke-liye-dumdaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313620-3_2-tata-tea-premium-desh-ki-chai-uttar-pradesh-ke-liye-dumdaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313620-4_1-tata-tea-premium-desh-ki-chai-uttar-pradesh-ke-liye-dumdaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313620-5_1-tata-tea-premium-desh-ki-chai-uttar-pradesh-ke-liye-dumdaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313620-6_1-tata-tea-premium-desh-ki-chai-uttar-pradesh-ke-liye-dumdaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313620-7_1-tata-tea-premium-desh-ki-chai-uttar-pradesh-ke-liye-dumdaar-chai-special-edition-tea-pack-celebrating-handlooms-of-india.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Handlooms of India are as colourful and vibrant as their culture. Steeped in folklore, romancing the age-old ethos of the people while keeping up with the contemporary, the handlooms of India have a long history that can be traced to ancient times. Traversing the onslaught of time and changing of powers and dynasties, the handlooms of India have not only thrived but reinvented themselves to give each region of the country an identity and pride. This pack features the Banarasi Silk weaving style by Ashok Kumar Singh of Varanasi. Deriving its name from the ancient city, these sarees are an integral part of India's heritage and are an essential part of any wedding trousseau. Banarasi sarees are famous for their opulence and intricate work. Make your tea breaks indulgent with a sip of Tata Tea Premium.",
+   "ingredients": "Black Tea",
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
+ },
+ {
+  "title": "Premium Kolkata Street Chai",
+  "handle": "premium-kolkata-street-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568-2_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568-3_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568-4_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568-5_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568-6_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568-7_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287568-8_2-tata-tea-premium-kolkata-street-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the authentic flavours of the streets of Kolkata with Tata Tea Premium Kolkata Street Chai. Expertly blended with aromatic spices like nutmeg, cardamom, and ginger, this premium chai transports you to the bustling markets of Kolkata with every sip. Crafted by skilled artisans, this street chai captures the warmth, camaraderie, and nostalgia of the iconic masala chai served on the streets. Whether you're starting your day with a revitalising cup or enjoying a relaxing afternoon break, this flavourful brew is perfect for sharing and creating cherished memories with family and friends. Savour the rich, indulgent taste of this authentic street chai in the comfort of your own home.",
+   "ingredients": "Tea Leaves, Nutmeg, Cardamom, Ginger",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Mumbai Cutting Chai",
+  "handle": "premium-mumbai-cutting-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566-2_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566-3_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566-4_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566-5_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566-6_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566-7_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287566-8_2-tata-tea-premium-mumbai-cutting-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the authentic flavours of Mumbai's vibrant street culture with Tata Tea Premium Mumbai Cutting Chai. Expertly blended by master craftsmen, this aromatic tea captures the signature taste of the iconic 'Cutting Chai' served on the bustling streets of Mumbai. Infused with the warm, comforting notes of ginger and lemongrass, this bold and robust blend transports you to the heart of the city, evoking memories of camaraderie and nostalgia. Whether enjoyed as a morning ritual or shared with family and friends, Tata Tea Premium Mumbai Cutting Chai promises a truly unique and indulgent experience. Relive the essence of Mumbai's street culture in the comfort of your own home and savour the signature taste of this exceptional tea.",
+   "ingredients": "Tea Leaves, Masala",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Purani Dilli Ki Mithai Chai",
+  "handle": "premium-purani-dilli-ki-mithai-chai",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567-2_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567-3_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567-4_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567-5_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567-6_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567-7_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40287567-8_2-tata-tea-premium-purani-dilli-ki-mithai-chai-flavoured-tea-100-natural-traditional-authentic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the bustling streets of Delhi with Tata Tea Premium Purani Dilli Ki Mithai Chai, a rich, flavourful, and nostalgic treat that captures the essence of iconic Delhi street chai. Blended by expert crafters, this premium tea brings you the signature flavour of Purani Dilli Ki Mithai Chai, inspired by the beloved Mithai Chai served on the streets of the capital. Infused with the delectable tastes of Pista, Cardamom, and Condensed Milk, this aromatic blend is a delightful ode to the culinary heritage of Old Delhi. Rekindle the memories of sipping a comforting cup of hot Mithai Chai and savour the signature taste in the comfort of your own home, either by yourself or shared with family and friends. Tata Tea Premium Purani Dilli Ki Mithai Chai is the perfect indulgence for those seeking a unique and indulgent tea experience that transports them to the vibrant streets of Delhi.",
+   "ingredients": "Tea Leaves, Pista, Cardamom, Condensed Milk",
+   "storageInstructions": "*Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Teaveda Tea",
+  "handle": "premium-teaveda-tea",
+  "vendor": "Tata Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997_7-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+    },
+    "barcode": "8901052003730"
+   },
+   {
+    "title": "250g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40086998_7-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "285",
+    "compare_at_price": "285",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258745_3-tata-tea-premium-teaveda-natural-extracts-refreshing-taste-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997_7-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997-2_3-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997-3_3-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997-4_3-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997-5_3-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997-6_3-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997-7_1-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40086997-8_1-tata-tea-teaveda-naturally-good-made-from-natural-ingredients.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Desh Ki Chai Ka Asli Swaad, Natural Ingredients Ke Saath! Elevate your tea drinking experience with Tata Tea Premium TeaVeda. Expertly crafted by master blenders of Tata Tea Premium, TeaVeda is made with a superior blend of premium Assam tea leaves and time-tested Indian ingredients - Elaichi Tulsi, Adrak and Brahmi. Get your daily dose of goodness in a tea that tastes just like your regular cup of tea with Tata Tea Premium TeaVeda.\nStorage Instructions: Once opened, transfer the contents into an airtight container and keep the lid tightly closed after each use.",
+   "ingredients": "Tea, Natural Extracts Of Tulsi, Brahmi, Cardamom, Ginger",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

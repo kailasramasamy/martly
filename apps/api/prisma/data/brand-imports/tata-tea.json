@@ -1,0 +1,496 @@
+{
+  "brand": "Tata Tea",
+  "manufacturer": "Tata Consumer Products Ltd.",
+  "feed": "tata-tea-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tata-tea/logo-f09b4bf7.png",
+  "themeColor": "#1F5F3A",
+  "themeColorSecondary": "#F2B705",
+  "namePrefix": "Tata Tea ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Tata Tea Chakra Gold - Care": "Chakra Gold Care Tea"
+  },
+  "rules": [
+    {
+      "match": "^Agni\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Agni\\ Dust\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Agni\\ Strong\\ Blend\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Agni\\ Elaichi\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Quick\\ Chai\\ Ginger$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Quick\\ Chai\\ Masala$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Care\\ Cleanse\\ Herbal\\ Infusion$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Care\\ Digest\\ Herbal\\ Infusion$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Care\\ Pro\\ Woman\\ Herbal\\ Infusion$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Care\\ Rejuvenate\\ Herbal\\ Infusion$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Chakra\\ Gold\\ Care\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Chakra\\ Gold\\ Elaichi\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Chakra\\ Gold\\ Premium\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Chakra\\ Gold\\ Premium\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Chakra\\ Gold\\ Premium\\ Tea\\ Jar$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Gemini\\ Strong\\ Assam\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Gemini\\ Black\\ Tea\\ Jar$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^1868\\ Darjeeling\\ Rare\\ Wonder\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^1868\\ Kolkata\\ Street\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^1868\\ Paan\\ Cardamom\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Gold$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Gold\\ Assam\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Gold\\ First\\ Flush\\ Long\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Gold\\ Second\\ Flush\\ Darjeeling\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Gold\\ Kashir\\ Noon\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Gold\\ Vita\\ Care\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Gold\\ Care\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Gold\\ Darjeeling\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Gold\\ Saffron\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Gold\\ All\\ In\\ 1\\ Instant\\ Cardamom\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Gold\\ All\\ In\\ 1\\ Instant\\ Masala\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Gold\\ Lemon\\ Iced\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Gold\\ Peach\\ Iced\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Gold\\ Kashmiri\\ Kahwa\\ Liquid\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Gold\\ Lemon\\ \\&\\ Honey\\ Liquid\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Kanan\\ Devan\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Kanan\\ Devan\\ Strong\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Kanan\\ Devan\\ Golden\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Kanan\\ Devan\\ Rose\\ Black\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Kanan\\ Devan\\ Premium\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Premium$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Tea\\ Jar$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Tea\\ Tin$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Premium\\ Assam\\ Kadak\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Care\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Premium\\ Delhi\\ Ke\\ Liye\\ Rich\\ Assam\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Haryana\\ Ke\\ Liye\\ Kadak\\ Assam\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Hyderabadi\\ Irani\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Premium\\ Maharashtra\\ Ke\\ Liye\\ Kadak\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Mumbai\\ Ke\\ Liye\\ Kadak\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Odisha\\ Ke\\ Liye\\ Kadak\\ Assam\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Punjab\\ Ke\\ Liye\\ Badi\\ Daanedaar\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Uttar\\ Pradesh\\ Ke\\ Liye\\ Dumdaar\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Kolkata\\ Street\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Premium\\ Mumbai\\ Cutting\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Premium\\ Purani\\ Dilli\\ Ki\\ Mithai\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Premium\\ Teaveda\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    }
+  ]
+}
