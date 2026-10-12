@@ -1,0 +1,22 @@
+{
+  "brand": "Balasa",
+  "manufacturer": "Balasa",
+  "feed": "balasa-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/balasa/logo-dc4d6fd1.png",
+  "themeColor": "#D53434",
+  "themeColorSecondary": "#D4A462",
+  "namePrefix": "Balasa ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Sabudana\\ Kurdai\\ Fryums$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    }
+  ]
+}

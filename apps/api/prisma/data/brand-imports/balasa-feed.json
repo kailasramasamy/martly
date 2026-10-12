@@ -1,0 +1,37 @@
+[
+ {
+  "title": "Sabudana Kurdai Fryums",
+  "handle": "sabudana-kurdai-fryums",
+  "vendor": "Balasa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "72",
+    "compare_at_price": "72",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241840_1-balasa-sabudana-kurdai-papadfryums-crispy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241840_1-balasa-sabudana-kurdai-papadfryums-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241840-2_1-balasa-sabudana-kurdai-papadfryums-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241840-3_1-balasa-sabudana-kurdai-papadfryums-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241840-4_1-balasa-sabudana-kurdai-papadfryums-crispy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241840-5_1-balasa-sabudana-kurdai-papadfryums-crispy.jpg"
+   }
+  ]
+ }
+]
