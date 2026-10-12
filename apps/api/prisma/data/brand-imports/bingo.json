@@ -1,0 +1,321 @@
+{
+  "brand": "Bingo! (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "bingo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bingo-itc/logo-d73f9795.png",
+  "themeColor": "#E4202A",
+  "themeColorSecondary": "#F9D71C",
+  "namePrefix": "Bingo! ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Bingo! Mad Angles Achaari Masti": "Mad Angles Achaari Masti",
+    "Bingo! Tedhe Medhe Masala Tadka": "Tedhe Medhe Masala Tadka"
+  },
+  "rules": [
+    {
+      "match": "^Original\\ Style\\ Salt\\ Sprinkled\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Original\\ Style\\ Chilli\\ Sprinkled\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Original\\ Style\\ Cream\\ \\&\\ Onion\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Original\\ Style\\ Korean\\ Hot\\ \\&\\ Spicy\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Original\\ Style\\ Chilli\\ Charged\\ Tomato\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Bangin'\\ Butter\\ \\&\\ Garlic\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Killin'\\ Cream\\ \\&\\ Onion\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Knockin'\\ Korean\\ Style\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Masala\\ Massacre\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Slayin'\\ Salt\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Thrilling\\ Tomato\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Hashtags\\ Cream\\ \\&\\ Onion\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Hashtags\\ Spicy\\ Masala\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Hashtags\\ Korean\\ Hot\\ \\&\\ Spicy\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Popped\\ Chips\\ Indian\\ Spice\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Popped\\ Chips\\ Salt\\ 'N'\\ Pepper$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Popped\\ Chips\\ Sour\\ Creme\\ \\&\\ Herbs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Mad\\ Angles\\ Achaari\\ Masti$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Mad\\ Angles\\ Mystery\\ Pickle$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Mad\\ Angles\\ Tomato\\ Madness$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Tedhe\\ Medhe\\ Masala\\ Tadka$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Tedhe\\ Medhe\\ Chatar\\ Matar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Street\\ Bites\\ Pani\\ Puri\\ Twist$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Limon\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^No\\ Rulz\\ Cheese\\ Curlz$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^No\\ Rulz\\ Masala\\ Curlz$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^XXX\\ Chilli\\ Cheese\\ Baked\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^XXX\\ Hot\\ N\\ Spicy\\ Baked\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^XXX\\ Hot\\ N\\ Sweet\\ Baked\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Tedhe\\ Medhe\\ Cocktail\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Tedhe\\ Medhe\\ Pulse\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Delishus\\ Namkeen\\ Party\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Delishus\\ Jaggery\\ Coated\\ Makhana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Delishus\\ Masala\\ Coated\\ Peas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Delishus\\ Mexican\\ Style\\ Coated\\ Peas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Delishus\\ Onion\\ \\&\\ Garlic\\ Coated\\ Peas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Style\\ Ribbon\\ Pakoda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Tedhe\\ Medhe\\ Chatpat\\ Kairi\\ Mango\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    }
+  ]
+}
