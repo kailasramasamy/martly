@@ -1,0 +1,1713 @@
+[
+ {
+  "title": "Biryani Basmati Rice",
+  "handle": "biryani-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/255850_11-daawat-basmati-rice-biryani.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "118",
+    "compare_at_price": "118",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263067_7-daawat-biryani-basmati-rice-extra-long-grains-rich-in-aroma-flavour.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "1299",
+    "compare_at_price": "1299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/271073_13-daawat-basmati-rice-biryani.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255850_11-daawat-basmati-rice-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255850-2_11-daawat-basmati-rice-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255850-3_10-daawat-basmati-rice-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255850-4_10-daawat-basmati-rice-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255850-5_6-daawat-basmati-rice-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255850-6_3-daawat-basmati-rice-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255850-7_3-daawat-basmati-rice-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255850-8_3-daawat-basmati-rice-biryani.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Super Basmati Rice",
+  "handle": "super-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/255848_20-daawat-basmati-rice-super.jpg"
+    }
+   },
+   {
+    "title": "3kg",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360360_1-daawat-super-basmati-rice.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "995",
+    "compare_at_price": "995",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/255843_21-daawat-super-basmati-5-kg.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255848_20-daawat-basmati-rice-super.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255848-2_11-daawat-basmati-rice-super.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255848-3_6-daawat-basmati-rice-super.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255848-4_6-daawat-basmati-rice-super.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255848-5_5-daawat-basmati-rice-super.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255848-6_5-daawat-basmati-rice-super.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255848-7_5-daawat-basmati-rice-super.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255848-8_5-daawat-basmati-rice-super.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Traditional Basmati Rice",
+  "handle": "traditional-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/247282_12-daawat-basmati-rice-traditional.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "1245",
+    "compare_at_price": "1245",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/214216_13-daawat-basmati-rice-traditional.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247282_12-daawat-basmati-rice-traditional.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247282-2_5-daawat-basmati-rice-traditional.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247282-3_5-daawat-basmati-rice-traditional.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247282-4_5-daawat-basmati-rice-traditional.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247282-5_5-daawat-basmati-rice-traditional.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247282-6_2-daawat-basmati-rice-traditional.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247282-7_2-daawat-basmati-rice-traditional.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/247282-8_1-daawat-basmati-rice-traditional.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Pulav Basmati Rice",
+  "handle": "pulav-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145_10-daawat-basmati-rice-pulav.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263068_6-daawat-pulav-basmati-rice-slender-grains-rich-in-aroma-flavour.jpg"
+    }
+   },
+   {
+    "title": "1.5kg",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360361_1-daawat-pulav-basmati-rice.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "880",
+    "compare_at_price": "880",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000146_10-daawat-basmati-rice-pulav.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145_10-daawat-basmati-rice-pulav.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145-2_9-daawat-basmati-rice-pulav.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145-3_8-daawat-basmati-rice-pulav.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145-4_8-daawat-basmati-rice-pulav.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145-5_4-daawat-basmati-rice-pulav.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145-6_2-daawat-basmati-rice-pulav.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145-7_2-daawat-basmati-rice-pulav.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145-8_2-daawat-basmati-rice-pulav.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dubar Basmati Rice",
+  "handle": "dubar-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "167",
+    "compare_at_price": "167",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006525_4-daawat-basmati-rice-dubar.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "830",
+    "compare_at_price": "830",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000147_5-daawat-basmati-rice-dubar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006525_4-daawat-basmati-rice-dubar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006525-2_3-daawat-basmati-rice-dubar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006525-3_3-daawat-basmati-rice-dubar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006525-4_1-daawat-basmati-rice-dubar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006525-5_1-daawat-basmati-rice-dubar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000147_5-daawat-basmati-rice-dubar.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Delight Basmati Rice",
+  "handle": "delight-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "650",
+    "compare_at_price": "650",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372999_1-daawat-delight-basmati-rice-5kg.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111-2_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111-3_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111-4_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111-5_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111-6_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111-7_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111-8_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Tibar Basmati Rice",
+  "handle": "tibar-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "96",
+    "compare_at_price": "96",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053313_6-daawat-basmati-rice-daawat-tibar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053313_6-daawat-basmati-rice-daawat-tibar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053313-2_4-daawat-basmati-rice-daawat-tibar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053313-3_4-daawat-basmati-rice-daawat-tibar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053313-4_4-daawat-basmati-rice-daawat-tibar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053313-5_1-daawat-basmati-rice-daawat-tibar.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Devaaya Basmati Rice",
+  "handle": "devaaya-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/255851_4-daawat-basmati-rice-devaaya.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "845",
+    "compare_at_price": "845",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/214217_7-daawat-basmati-rice-devaaya.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255851_4-daawat-basmati-rice-devaaya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255851-2_5-daawat-basmati-rice-devaaya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255851-3_5-daawat-basmati-rice-devaaya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255851-4_5-daawat-basmati-rice-devaaya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255851-5_3-daawat-basmati-rice-devaaya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/214217_7-daawat-basmati-rice-devaaya.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Devaaya Biryani Basmati Rice",
+  "handle": "devaaya-biryani-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40285843_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "1076",
+    "compare_at_price": "1076",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40285844_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40285843_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40285843-2_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40285843-3_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40285843-4_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40285843-5_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40285844_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Devaaya Everyday Basmati Rice",
+  "handle": "devaaya-everyday-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "650",
+    "compare_at_price": "650",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314102_2-daawat-devaaya-everyday-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314102_2-daawat-devaaya-everyday-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314102-2_2-daawat-devaaya-everyday-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314102-3_1-daawat-devaaya-everyday-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314102-4_1-daawat-devaaya-everyday-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40314102-5_1-daawat-devaaya-everyday-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rozana Gold Basmati Rice",
+  "handle": "rozana-gold-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/255849_9-daawat-basmati-rice-rozana-gold.jpg"
+    }
+   },
+   {
+    "title": "4kg",
+    "price": "510",
+    "compare_at_price": "510",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357110_1-daawat-rozana-gold-basmati-rice.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/204005_10-daawat-basmati-rice-rozana-gold.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255849_9-daawat-basmati-rice-rozana-gold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255849-2_6-daawat-basmati-rice-rozana-gold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255849-3_5-daawat-basmati-rice-rozana-gold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255849-4_4-daawat-basmati-rice-rozana-gold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255849-5_4-daawat-basmati-rice-rozana-gold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255849-6_2-daawat-basmati-rice-rozana-gold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255849-7_2-daawat-basmati-rice-rozana-gold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255849-8_2-daawat-basmati-rice-rozana-gold.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rozana Super Basmati Rice",
+  "handle": "rozana-super-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196_8-daawat-basmati-rice-rozana-super-90.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "486",
+    "compare_at_price": "486",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075197_10-daawat-basmati-rice-rozana-super-90.jpg"
+    }
+   },
+   {
+    "title": "10kg",
+    "price": "998",
+    "compare_at_price": "998",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359796_1-daawat-rozana-super-basmati-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196_8-daawat-basmati-rice-rozana-super-90.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196-2_6-daawat-basmati-rice-rozana-super-90.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196-3_5-daawat-basmati-rice-rozana-super-90.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196-4_4-daawat-basmati-rice-rozana-super-90.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196-5_4-daawat-basmati-rice-rozana-super-90.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196-6_3-daawat-basmati-rice-rozana-super-90.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196-7_2-daawat-basmati-rice-rozana-super-90.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196-8_2-daawat-basmati-rice-rozana-super-90.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rozana Platinum Basmati Rice",
+  "handle": "rozana-platinum-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "665",
+    "compare_at_price": "665",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363467_2-daawat-rozana-basmati-rice-platinum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363467_2-daawat-rozana-basmati-rice-platinum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363467-2_2-daawat-rozana-basmati-rice-platinum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363467-3_2-daawat-rozana-basmati-rice-platinum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363467-4_2-daawat-rozana-basmati-rice-platinum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363467-5_2-daawat-rozana-basmati-rice-platinum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363467-6_2-daawat-rozana-basmati-rice-platinum.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rozana Gini 70 Basmati Rice",
+  "handle": "rozana-gini-70-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10kg",
+    "price": "915",
+    "compare_at_price": "915",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000148_2-daawat-basmati-rice-rozana-gini-70-old.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000148_2-daawat-basmati-rice-rozana-gini-70-old.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000148-2_2-daawat-basmati-rice-rozana-gini-70-old.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000148-3_1-daawat-basmati-rice-rozana-gini-70-old.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000148-4_1-daawat-basmati-rice-rozana-gini-70-old.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000148-5_1-daawat-basmati-rice-rozana-gini-70-old.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rozana Mini 60 Basmati Rice",
+  "handle": "rozana-mini-60-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10kg",
+    "price": "835",
+    "compare_at_price": "835",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000149_2-daawat-basmati-rice-rozana-mini-60-old.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000149_2-daawat-basmati-rice-rozana-mini-60-old.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000149-2_2-daawat-basmati-rice-rozana-mini-60-old.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000149-3_1-daawat-basmati-rice-rozana-mini-60-old.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000149-4_1-daawat-basmati-rice-rozana-mini-60-old.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000149-5_1-daawat-basmati-rice-rozana-mini-60-old.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rozana Mini Mogra Rice",
+  "handle": "rozana-mini-mogra-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10kg",
+    "price": "545",
+    "compare_at_price": "545",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414_3-daawat-rozana-mini-mogra-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414_3-daawat-rozana-mini-mogra-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414-2_3-daawat-rozana-mini-mogra-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414-3_3-daawat-rozana-mini-mogra-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414-4_3-daawat-rozana-mini-mogra-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414-5_3-daawat-rozana-mini-mogra-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414-6_2-daawat-rozana-mini-mogra-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414-7_2-daawat-rozana-mini-mogra-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414-8_2-daawat-rozana-mini-mogra-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rozana Niki Rice",
+  "handle": "rozana-niki-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "305",
+    "compare_at_price": "305",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327412_2-daawat-rozana-niki-rice.jpg"
+    }
+   },
+   {
+    "title": "10kg",
+    "price": "545",
+    "compare_at_price": "545",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327411_1-daawat-rozana-niki-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327412_2-daawat-rozana-niki-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327412-2_2-daawat-rozana-niki-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327412-3_1-daawat-rozana-niki-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327412-4_1-daawat-rozana-niki-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327412-5_1-daawat-rozana-niki-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327411_1-daawat-rozana-niki-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Quick Cooking Brown Basmati Rice",
+  "handle": "quick-cooking-brown-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359795_2-daawat-quick-cooking-brown-basmati-rice.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "910",
+    "compare_at_price": "910",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000144_8-daawat-basmati-rice-brown-quick-cooking.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359795_2-daawat-quick-cooking-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359795-2_2-daawat-quick-cooking-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359795-3_2-daawat-quick-cooking-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359795-4_2-daawat-quick-cooking-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359795-5_2-daawat-quick-cooking-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359795-6_1-daawat-quick-cooking-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70000144_8-daawat-basmati-rice-brown-quick-cooking.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Quick Cooking Black Rice",
+  "handle": "quick-cooking-black-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360358_1-daawat-quick-cooking-black-rice.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40285847_1-daawat-quick-cooking-black-rice-immuno-plus-superfood-zero-trans-fat-rich-in-protein.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360358_1-daawat-quick-cooking-black-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360358-2_1-daawat-quick-cooking-black-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360358-3_1-daawat-quick-cooking-black-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360358-4_1-daawat-quick-cooking-black-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360358-5_1-daawat-quick-cooking-black-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360358-6_1-daawat-quick-cooking-black-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360358-7_1-daawat-quick-cooking-black-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40285847_1-daawat-quick-cooking-black-rice-immuno-plus-superfood-zero-trans-fat-rich-in-protein.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Quick Cooking Red Rice",
+  "handle": "quick-cooking-red-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360359_1-daawat-quick-cooking-red-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360359_1-daawat-quick-cooking-red-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360359-2_1-daawat-quick-cooking-red-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360359-3_1-daawat-quick-cooking-red-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360359-4_1-daawat-quick-cooking-red-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360359-5_1-daawat-quick-cooking-red-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360359-6_1-daawat-quick-cooking-red-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Sona Masoori Rice",
+  "handle": "sona-masoori-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532_4-daawat-premium-sona-masoori-rice.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "470",
+    "compare_at_price": "470",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40285846_4-daawat-sona-masoori-premium-light-weight-aromatic.jpg"
+    }
+   },
+   {
+    "title": "10kg",
+    "price": "820",
+    "compare_at_price": "820",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357111_2-daawat-sona-masoori-rice.jpg"
+    }
+   },
+   {
+    "title": "26kg",
+    "price": "2248",
+    "compare_at_price": "2248",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359797_2-daawat-sona-masoori-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532_4-daawat-premium-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532-2_4-daawat-premium-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532-3_4-daawat-premium-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532-4_4-daawat-premium-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532-5_4-daawat-premium-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532-6_4-daawat-premium-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532-7_1-daawat-premium-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532-8_1-daawat-premium-sona-masoori-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Gobindo Bhog Rice",
+  "handle": "gobindo-bhog-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343319_2-daawat-gobindo-bhog-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343319_2-daawat-gobindo-bhog-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343319-2_2-daawat-gobindo-bhog-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343319-3_2-daawat-gobindo-bhog-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343319-4_2-daawat-gobindo-bhog-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343319-5_2-daawat-gobindo-bhog-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Jeerakashala Rice",
+  "handle": "jeerakashala-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "1375",
+    "compare_at_price": "1375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343321_1-daawat-jeerakashala-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343321_1-daawat-jeerakashala-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343321-2_1-daawat-jeerakashala-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343321-3_1-daawat-jeerakashala-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343321-4_1-daawat-jeerakashala-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343321-5_1-daawat-jeerakashala-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Lachkari Wada Kolam Rice",
+  "handle": "lachkari-wada-kolam-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10kg",
+    "price": "1090",
+    "compare_at_price": "1090",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113-2_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113-3_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113-4_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113-5_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113-6_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113-7_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Boiled Ponni Rice",
+  "handle": "boiled-ponni-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10kg",
+    "price": "860",
+    "compare_at_price": "860",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343320_1-daawat-boiled-ponni-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343320_1-daawat-boiled-ponni-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343320-2_1-daawat-boiled-ponni-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343320-3_1-daawat-boiled-ponni-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343320-4_1-daawat-boiled-ponni-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343320-5_1-daawat-boiled-ponni-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "I'm Organic Basmati Rice",
+  "handle": "i-m-organic-basmati-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362_1-daawat-im-organic-basmati-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362_1-daawat-im-organic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362-2_1-daawat-im-organic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362-3_1-daawat-im-organic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362-4_1-daawat-im-organic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362-5_1-daawat-im-organic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362-6_1-daawat-im-organic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362-7_1-daawat-im-organic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362-8_1-daawat-im-organic-basmati-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "I'm Organic Sona Masoori Rice",
+  "handle": "i-m-organic-sona-masoori-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "139",
+    "compare_at_price": "139",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363_1-daawat-im-organic-sona-masoori-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363_1-daawat-im-organic-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363-2_1-daawat-im-organic-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363-3_1-daawat-im-organic-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363-4_1-daawat-im-organic-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363-5_1-daawat-im-organic-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363-6_1-daawat-im-organic-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363-7_1-daawat-im-organic-sona-masoori-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363-8_1-daawat-im-organic-sona-masoori-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Jasmine Thai Hom Mali Rice",
+  "handle": "jasmine-thai-hom-mali-rice",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338534_2-daawat-jasmine-thai-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338534_2-daawat-jasmine-thai-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338534-2_2-daawat-jasmine-thai-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338534-3_2-daawat-jasmine-thai-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338534-4_2-daawat-jasmine-thai-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338534-5_2-daawat-jasmine-thai-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338534-6_2-daawat-jasmine-thai-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Rice Flour",
+  "handle": "rice-flour",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355777_1-daawat-rice-flour-made-from-basmati.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355777_1-daawat-rice-flour-made-from-basmati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355777-2_1-daawat-rice-flour-made-from-basmati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355777-3_1-daawat-rice-flour-made-from-basmati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355777-4_1-daawat-rice-flour-made-from-basmati.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355777-5_1-daawat-rice-flour-made-from-basmati.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Devaaya Daliya",
+  "handle": "devaaya-daliya",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352753_1-daawat-devaaya-daliya.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352753_1-daawat-devaaya-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352753-2_1-daawat-devaaya-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352753-3_1-daawat-devaaya-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352753-4_1-daawat-devaaya-daliya.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352753-5_1-daawat-devaaya-daliya.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dilli Special Biryani Kit",
+  "handle": "dilli-special-biryani-kit",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "354g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112_1-daawat-daawat-biryani-kit-dilli-special.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112_1-daawat-daawat-biryani-kit-dilli-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112-2_1-daawat-daawat-biryani-kit-dilli-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112-3_1-daawat-daawat-biryani-kit-dilli-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112-4_1-daawat-daawat-biryani-kit-dilli-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112-5_1-daawat-daawat-biryani-kit-dilli-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112-6_1-daawat-daawat-biryani-kit-dilli-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112-7_1-daawat-daawat-biryani-kit-dilli-special.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Hyderabadi Biryani Kit",
+  "handle": "hyderabadi-biryani-kit",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "334g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302_7-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302_7-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302-2_5-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302-3_5-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302-4_3-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302-5_3-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302-6_3-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302-7_3-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Kolkata Biryani Kit",
+  "handle": "kolkata-biryani-kit",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "334g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303_7-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303_7-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303-2_5-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303-3_5-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303-4_3-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303-5_3-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303-6_3-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303-7_3-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Lucknowi Biryani Kit",
+  "handle": "lucknowi-biryani-kit",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "334g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304_6-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304_6-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304-2_5-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304-3_5-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304-4_3-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304-5_3-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304-6_3-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304-7_3-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Thai Green Curry Rice Kit",
+  "handle": "thai-green-curry-rice-kit",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228_1-daawat-thai-green-curry-rice-kit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228_1-daawat-thai-green-curry-rice-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228-2_1-daawat-thai-green-curry-rice-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228-3_1-daawat-thai-green-curry-rice-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228-4_1-daawat-thai-green-curry-rice-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228-5_1-daawat-thai-green-curry-rice-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228-6_1-daawat-thai-green-curry-rice-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228-7_1-daawat-thai-green-curry-rice-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228-8_1-daawat-thai-green-curry-rice-kit.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dum Biryani Rice Saute Sauce",
+  "handle": "dum-biryani-rice-saute-sauce",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40170946_6-daawat-saute-sauce-dum-biryani.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170946_6-daawat-saute-sauce-dum-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170946-2_6-daawat-saute-sauce-dum-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170946-3_6-daawat-saute-sauce-dum-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170946-4_6-daawat-saute-sauce-dum-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170946-5_6-daawat-saute-sauce-dum-biryani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170946-6_1-daawat-saute-sauce-dum-biryani.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Hot Garlic Rice Saute Sauce",
+  "handle": "hot-garlic-rice-saute-sauce",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "210g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40170937_6-daawat-saute-sauce-hot-garlic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170937_6-daawat-saute-sauce-hot-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170937-2_6-daawat-saute-sauce-hot-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170937-3_6-daawat-saute-sauce-hot-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170937-4_6-daawat-saute-sauce-hot-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170937-5_1-daawat-saute-sauce-hot-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170937-6_1-daawat-saute-sauce-hot-garlic.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Hyderabadi Biryani Masala Paste",
+  "handle": "hyderabadi-biryani-masala-paste",
+  "vendor": "Daawat",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "67g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363466_2-daawat-hyderabadi-biryani-masala-paste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363466_2-daawat-hyderabadi-biryani-masala-paste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363466-2_2-daawat-hyderabadi-biryani-masala-paste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363466-3_2-daawat-hyderabadi-biryani-masala-paste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363466-4_2-daawat-hyderabadi-biryani-masala-paste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363466-5_2-daawat-hyderabadi-biryani-masala-paste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363466-6_2-daawat-hyderabadi-biryani-masala-paste.jpg"
+   }
+  ]
+ }
+]

@@ -1,0 +1,321 @@
+{
+  "brand": "Daawat",
+  "manufacturer": "LT Foods Limited",
+  "feed": "daawat-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/daawat/logo-60307480.png",
+  "themeColor": "#283593",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Daawat ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Daawat Rozana Basmati Rice": "Rozana Gold Basmati Rice",
+    "Daawat Quick Cooking Brown Rice": "Quick Cooking Brown Basmati Rice"
+  },
+  "rules": [
+    {
+      "match": "^Biryani\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Super\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Traditional\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Pulav\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Dubar\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Delight\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Tibar\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Devaaya\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Devaaya\\ Biryani\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Devaaya\\ Everyday\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Rozana\\ Gold\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Rozana\\ Super\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Rozana\\ Platinum\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Rozana\\ Gini\\ 70\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Rozana\\ Mini\\ 60\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Rozana\\ Mini\\ Mogra\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Rozana\\ Niki\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Quick\\ Cooking\\ Brown\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    },
+    {
+      "match": "^Quick\\ Cooking\\ Black\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    },
+    {
+      "match": "^Quick\\ Cooking\\ Red\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    },
+    {
+      "match": "^Sona\\ Masoori\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Gobindo\\ Bhog\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Jeerakashala\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Lachkari\\ Wada\\ Kolam\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Boiled\\ Ponni\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Parboiled Rice"
+      ]
+    },
+    {
+      "match": "^I'm\\ Organic\\ Basmati\\ Rice$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Organic Staples (Rice, Dal, Atta)"
+      ]
+    },
+    {
+      "match": "^I'm\\ Organic\\ Sona\\ Masoori\\ Rice$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Organic Staples (Rice, Dal, Atta)"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Thai\\ Hom\\ Mali\\ Rice$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Rice\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Devaaya\\ Daliya$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Porridge & Daliya"
+      ]
+    },
+    {
+      "match": "^Dilli\\ Special\\ Biryani\\ Kit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Hyderabadi\\ Biryani\\ Kit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Kolkata\\ Biryani\\ Kit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Lucknowi\\ Biryani\\ Kit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Thai\\ Green\\ Curry\\ Rice\\ Kit$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Dum\\ Biryani\\ Rice\\ Saute\\ Sauce$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Hot\\ Garlic\\ Rice\\ Saute\\ Sauce$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Hyderabadi\\ Biryani\\ Masala\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    }
+  ]
+}
