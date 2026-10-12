@@ -1,0 +1,86 @@
+{
+  "brand": "Mentos (Perfetti)",
+  "manufacturer": "Perfetti Van Melle India",
+  "feed": "mentos-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mentos-perfetti/logo-435b6c8d.png",
+  "themeColor": "#0057B8",
+  "themeColorSecondary": "#E30613",
+  "namePrefix": "Mentos ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Orange\\ Chewy\\ Candy\\ Stick$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Mint\\ Chewy\\ Candy\\ Stick$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Rainbow\\ Chewy\\ Candy\\ Stick$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Chewy\\ Candy\\ Stick$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Mix\\ Chewy\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Orange\\ Chewy\\ Candy\\ Jar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Pure\\ Fresh\\ Sugarfree\\ Fresh\\ Mint\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Pure\\ Fresh\\ Sugarfree\\ Spearmint\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Pure\\ Fresh\\ Strawberry\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    }
+  ]
+}

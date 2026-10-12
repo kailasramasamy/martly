@@ -1,0 +1,470 @@
+[
+ {
+  "title": "3 Layer Sugarfree Peppermint Gum",
+  "handle": "3-layer-sugarfree-peppermint-gum",
+  "vendor": "Center Fresh (Perfetti)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "7 pcs",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40209249_1-center-fresh-3-layer-gum-sugarfreee-peppermint-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209249_1-center-fresh-3-layer-gum-sugarfreee-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209249-2_1-center-fresh-3-layer-gum-sugarfreee-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209249-3_1-center-fresh-3-layer-gum-sugarfreee-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209249-4_1-center-fresh-3-layer-gum-sugarfreee-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209249-5_1-center-fresh-3-layer-gum-sugarfreee-peppermint-flavour.jpg"
+   }
+  ],
+  "details": {
+   "description": "All new Center Fresh Mints - Taazi Saans, Humesha Rakho Paas !! Sugar-free 3 layered mints in refreshing peppermint flavour. Life is full of changes that can provide big opportunity when your big moment arrives. Good thing is, with all-new Center Fresh Mints, you are prepared for a fresh beginning, anytime, anywhere. Pop one of these refreshing mints, for getting a fresh breath.",
+   "ingredients": "Polyols (Xylitol, Sorbitol, Maltitol), Gum Base, Thickeners (INS 407), Sweetener: Aspartame (INS 951), Emulsifier (INS 322), Humectant (INS 422), Antioxidant (INS 321)",
+   "nutritionalInfo": {
+    "Energy value": "167.5 kcal,",
+    "Protein": "0g,",
+    "Carbohydrate": "69.6 g,",
+    "Fat": "0g"
+   },
+   "manufacturerName": "Perfetti Van melle India Pvt Ltd",
+   "fssaiLicense": "10012042000284",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "3 Layer Sugarfree Strawberry Gum",
+  "handle": "3-layer-sugarfree-strawberry-gum",
+  "vendor": "Center Fresh (Perfetti)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "7 pcs",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40209250_1-center-fresh-3-layer-gum-sugarfreee-strawberry-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209250_1-center-fresh-3-layer-gum-sugarfreee-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209250-2_1-center-fresh-3-layer-gum-sugarfreee-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209250-3_1-center-fresh-3-layer-gum-sugarfreee-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209250-4_1-center-fresh-3-layer-gum-sugarfreee-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209250-5_1-center-fresh-3-layer-gum-sugarfreee-strawberry-flavour.jpg"
+   }
+  ],
+  "details": {
+   "description": "All new Center Fresh Mints - Taazi Saans, Humesha Rakho Paas !! Sugar-free 3 layered mints in refreshing peppermint flavour. Life is full of changes that can provide big opportunity when your big moment arrives. Good thing is, with all-new Center Fresh Mints, you are prepared for a fresh beginning, anytime, anywhere. Pop one of these refreshing mints, for getting a fresh breath.",
+   "ingredients": "Polyols (Xylitol, Sorbitol, Maltitol), Gum Base, Humectant (INS 422, INS 1518), Thickeners (INS 407), Sweetener: Aspartame (INS 951), Emulsifier (INS 322), Antioxidant (INS 321)",
+   "nutritionalInfo": {
+    "Energy value": "169 kcal,",
+    "Protein": "0g,",
+    "Carbohydrate": "68.5 g,",
+    "Fat": "0g"
+   },
+   "manufacturerName": "Perfetti Van melle India Pvt Ltd",
+   "fssaiLicense": "10012042000284",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Spearmint Chewy Mints",
+  "handle": "spearmint-chewy-mints",
+  "vendor": "Center Fresh (Perfetti)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "33g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248_2-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+    }
+   },
+   {
+    "title": "60g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40209247_2-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248_2-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248-2_2-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248-3_2-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248-4_2-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248-5_2-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248-6_2-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248-7_1-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40209248-8_1-center-fresh-chewy-mints-spearmint-flavour-candy.jpg"
+   }
+  ],
+  "details": {
+   "description": "From the house of Center Fresh, introduce Center Fresh Chewy Mints for a fresh and cool breath anytime, anywhere. These bite-sized chewy candies give you the confidence to connect and start something fresh. So what are you waiting for? Just dive right in & pop in the very fresh bite-size mint candy, or share it with your friends. Express yourself with Center Fresh’s fresh breath confidence!",
+   "ingredients": "Sugar, Liquid Glucose, Hydrogenated Vegetable Oil, Thickeners (Ins 414, Ins 1405, Ins 464), Flavours (Natural, Nature-Identical & Artificial (Mint) Flavouring Substance), Starch, Humectant (Ins 422), Glazing Agents (Ins 903, Ins 901), Emulsifier (Ins 473), Colours (Ins 102, Ins 133)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "385",
+    "Protein(g)": "0.04",
+    "Carbohydrate(g)": "93.5",
+    "Total Sugars(g)": "77.8",
+    "Added Sugars(g)": "77.8",
+    "Total Fat(g)": "1.2",
+    "Saturated Fat (g)": "1.2",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "46.7"
+   },
+   "manufacturerName": "Perfetti Van Melle India Pvt Ltd",
+   "fssaiLicense": "10012064000100",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Spearmint Chewing Gum Jar",
+  "handle": "spearmint-chewing-gum-jar",
+  "vendor": "Center Fresh (Perfetti)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "225 pcs",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/413349_2-center-fresh-gum-spearmint.jpg"
+    },
+    "barcode": "8901393026689"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/413349_2-center-fresh-gum-spearmint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/413349-2_2-center-fresh-gum-spearmint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/413349-3_2-center-fresh-gum-spearmint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/413349-4_2-center-fresh-gum-spearmint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/413349-5_2-center-fresh-gum-spearmint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/413349-6_1-center-fresh-gum-spearmint.jpg"
+   }
+  ],
+  "details": {
+   "description": "Launched in 1994, Center-Fresh has built strong equity and loyal customers over the years. This Centre-filled chewing gum delivers a great mint-flavoured liquid splash, providing a fresh and cool breath anytime and anywhere. \nThis popular confectionary in refreshing spearmint flavour provides you with a unique gum experience, keeping you confident all the time. So, grab it now and be popular among everyone",
+   "manufacturerName": "Perfetti Van Melle India Pvt. Ltd. 47th Milestone",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012012000057"
+  }
+ },
+ {
+  "title": "Sugar Free Fruity Mints",
+  "handle": "sugar-free-fruity-mints",
+  "vendor": "Center Fresh (Perfetti)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.5g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097_2-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+    },
+    "barcode": "8901393019810"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097_2-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097-2_2-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097-3_2-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097-4_2-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097-5_2-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097-6_1-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097-7_1-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189097-8_1-center-fresh-mint-sugarfree-fruity-flavour.jpg"
+   }
+  ],
+  "details": {
+   "description": "From the house of Center Fresh, introduce Center Fresh Mints for a fresh and cool breath anytime, anywhere. These bite-sized mints give you the confidence to connect and start something fresh. So what are you waiting for? Just dive right in & pop in the very fresh bite-size mints, or share it with your friends. Express yourself with Center Fresh’s fresh breath confidence! Center Fresh gives you a Fresh Breath and Confidence Anytime Anywhere. Center Fresh: Your Favourite gum for over 25 years. Also try: Center Fresh Mints, Center Fresh Clean Breath, Center Fresh 3 Layer, Center Fresh Xtra",
+   "ingredients": "Sorbitol, Anticaking Agent: Magnesium Salt Of Stearic Acid, Flavours, (Natural And Nature-Identical), Humectant (INS 422), Sweetener (INS 955), Colour (INS 122)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "197",
+    "Protein(g)": "0",
+    "Carbohydrate(g)": "98",
+    "Polyols (g)": "97.7",
+    "Total Sugars(g)": "0",
+    "Added Sugars(g)": "0",
+    "Total Fat(g)": "0.4",
+    "Sodium (mg)": "0"
+   },
+   "manufacturerName": "Perfetti Van Melle 1st Floor",
+   "fssaiLicense": "10012064000100",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sugar Free Peppermint Mints",
+  "handle": "sugar-free-peppermint-mints",
+  "vendor": "Center Fresh (Perfetti)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.5g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652_9-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+    },
+    "barcode": "8901393027082"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652_9-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652-2_10-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652-3_8-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652-4_8-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652-5_8-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652-6_8-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652-7_4-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159652-8_4-center-fresh-mint-sugarfree-peppermint-flavour.jpg"
+   }
+  ],
+  "details": {
+   "description": "Introducing the all-new Centre Fresh Mints, the perfect solution for fresh breath and confidence on the go. These bite-sized, sugar-free mints in a convenient pack offer a delightful peppermint flavour that will leave you feeling refreshed and ready to seize any opportunity that comes your way. Whether you're heading to an important meeting, going on a first date, or simply need a quick pick-me-up, Centre Fresh Mints are the ideal companion.\nCrafted by the trusted house of Centre Fresh, these mints have been a favourite for over 25 years, providing a fresh start and the confidence to connect with others. With their confidence-boosting power, Centre Fresh Mints are the perfect way to stay fresh and prepared for life's big moments, anytime, anywhere.",
+   "ingredients": "Sorbitol, Flavour {Natural(Mint)}, Anticaking Agent: Magnesium Salt of Stearic Acid, Humectant (INS 422), Sweetner (INS 955), Colour (INS 133)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "0.6 g",
+    "Energy (Kcal)": "205",
+    "Protein (g)": "0",
+    "Carbohydrate (g)": "98.4",
+    "Polyols (g)": "98",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "0",
+    "Saturated fat(g)": "0.85",
+    "Sodium (mg)": "0"
+   },
+   "storageInstructions": "*Store in cool and dry conditions",
+   "manufacturerName": "Perfetti Van Melle 1st Floor",
+   "fssaiLicense": "10012064000100",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Clean Breath Intense Mint",
+  "handle": "clean-breath-intense-mint",
+  "vendor": "Center Fresh (Perfetti)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922_5-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922_5-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922-2_5-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922-3_5-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922-4_5-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922-5_5-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922-6_5-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922-7_4-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258922-8_4-center-fresh-mints-clean-breath-intense-mint-sugar-free-menthol-eucalyptus-flavour.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your everyday with Centre Fresh Clean Breath Mints! These intense, sugar-free mints deliver a refreshing burst of menthol eucalyptus flavour, perfect for keeping your breath fresh and confidence high. Enjoy the convenience of the compact tin packaging, which allows you to stay fresh and connected, no matter the impromptu moment. Indulge in guilt-free freshness that lasts up to 2 hours, empowering you to make the most of every opportunity that comes your way. With Centre Fresh, you can connect with people, make new friends, and savour the little joys in life, all while experiencing a truly invigorating sensory experience.",
+   "ingredients": "Sorbitol, Flavours (Natural and Nature-Identical), Sweetener (INS 951), Anticaking Agent: Magnesium Salt of Stearic Acid, Humectant (INS 422), Mineral (Zinc Lactate), Colours (INS 133, INS 102)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "1.4 g",
+    "Energy": "199 kcal (3 kcal, 0.1%)",
+    "Protein": "0 g",
+    "Carbohydrate": "97.3 g (1.36 g)",
+    "of which Polyols": "96.9 g (1.35 g)",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g (0 g, 0%)",
+    "Total Fat": "0.4 g (0 g, 0%)",
+    "Sodium": "0 mg (0 mg, 0%)",
+    "Zinc": "36.5 mg (0.51 mg)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Perfetti Van Melle India Pvt Ltd",
+   "fssaiLicense": "10012064000100",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Xtra Fresh Chewing Gum",
+  "handle": "xtra-fresh-chewing-gum",
+  "vendor": "Center Fresh (Perfetti)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647_7-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647_7-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647-2_8-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647-3_8-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647-4_8-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647-5_8-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647-6_8-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647-7_3-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159647-8_3-center-fresh-xtra-peppermint-flavour-chewing-gum-stick.jpg"
+   }
+  ],
+  "details": {
+   "description": "From the house of Centre Fresh, enjoy Centre Fresh Xtra Chewing Gum which gives you fresh breath and helps you to stay prepared for any moment. The peppermint flavour Centre Fresh Xtra has a refreshing splash of minty liquid. All new Centre Fresh Peppermint Xtra is Xtra fresh, Xtra cool. Keep it handy for freshness anytime, anywhere.",
+   "ingredients": "Sugar, Gum Base, Liquid Glucose, Flavour {Natural, Nature-Identical & Artificial (Mint)}, Humectant (INS 422), Sweetener (INS 951), Antioxidant (INS 321), Acidity Regulator (INS 330), Thickener (INS 414), Colour (INS 133)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "205",
+    "Protein(g)": "0",
+    "Carbohydrate(g)": "98.4",
+    "Polyols (g)": "98",
+    "Total Sugars(g)": "0",
+    "Added Sugars(g)": "0",
+    "Total Fat(g)": "0.85",
+    "Saturated Fat (g)": "0.85",
+    "Sodium (mg)": "0"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Perfetti Van Melle 1st Floor",
+   "fssaiLicense": "10012064000100",
+   "countryOfOrigin": "India"
+  }
+ }
+]

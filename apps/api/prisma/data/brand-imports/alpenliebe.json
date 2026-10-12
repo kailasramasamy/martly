@@ -1,0 +1,142 @@
+{
+  "brand": "Alpenliebe (Perfetti)",
+  "manufacturer": "Perfetti Van Melle India",
+  "feed": "alpenliebe-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/alpenliebe-perfetti/logo-cc76a49e.png",
+  "themeColor": "#E2001A",
+  "themeColorSecondary": "#FFC20E",
+  "namePrefix": "Alpenliebe ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Gold\\ Caramel\\ Toffee$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Gold\\ Cream\\ Strawberry\\ Toffee$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Toffee\\ Stick$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Cream\\ Strawberry\\ Toffee\\ Stick$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Creamfills\\ Butter\\ Toffee$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Eclairs\\ Grande\\ Caramel\\ Choco\\ Toffee$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Toffees & Eclairs"
+      ]
+    },
+    {
+      "match": "^Juicyfills\\ Orange\\ \\&\\ Mango\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Juzt\\ Jelly\\ Strawberry\\ Soft\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Juzt\\ Jelly\\ Strawberry\\ \\&\\ Guava\\ Soft\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Juzt\\ Jelly\\ Guava\\ Soft\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Juzt\\ Jelly\\ Heart\\ Strawberry\\ Soft\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Juzt\\ Jelly\\ Orange\\ Bears$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Juzt\\ Jelly\\ Fruity\\ Bears$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Juzt\\ Jelly\\ Cola\\ Bottles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Juzt\\ Jelly\\ Cars\\ \\&\\ Planes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Assorted\\ Lollipops$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Lollipops"
+      ]
+    }
+  ]
+}

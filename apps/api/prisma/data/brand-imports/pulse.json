@@ -1,0 +1,88 @@
+{
+  "brand": "Pulse (DS Group)",
+  "manufacturer": "DS Group",
+  "feed": "pulse-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pulse-ds-group/logo-70134e59.png",
+  "themeColor": "#E4007C",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Pulse ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Pass Pass Pulse Candy - Guava": "Guava Candy"
+  },
+  "rules": [
+    {
+      "match": "^Guava\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Orange\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Kachcha\\ Aam\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Litchi\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Assorted\\ Candy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Golmol\\ Imli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Pops\\ Guava\\ Soft\\ Chews$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Pops\\ Imli\\ Soft\\ Chews$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    },
+    {
+      "match": "^Pops\\ Kacha\\ Aam\\ Soft\\ Chews$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Candy"
+      ]
+    }
+  ]
+}

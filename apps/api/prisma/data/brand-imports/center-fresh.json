@@ -1,0 +1,78 @@
+{
+  "brand": "Center Fresh (Perfetti)",
+  "manufacturer": "Perfetti Van Melle India",
+  "feed": "center-fresh-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/center-fresh-perfetti/logo-4e474d2d.png",
+  "themeColor": "#0072CE",
+  "themeColorSecondary": "#00A651",
+  "namePrefix": "Center Fresh ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^3\\ Layer\\ Sugarfree\\ Peppermint\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^3\\ Layer\\ Sugarfree\\ Strawberry\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Spearmint\\ Chewy\\ Mints$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Spearmint\\ Chewing\\ Gum\\ Jar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Sugar\\ Free\\ Fruity\\ Mints$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Sugar\\ Free\\ Peppermint\\ Mints$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Clean\\ Breath\\ Intense\\ Mint$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    },
+    {
+      "match": "^Xtra\\ Fresh\\ Chewing\\ Gum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chewing Gum & Mints"
+      ]
+    }
+  ]
+}
