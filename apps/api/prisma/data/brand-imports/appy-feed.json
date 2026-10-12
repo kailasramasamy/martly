@@ -1,0 +1,65 @@
+[
+ {
+  "title": "Apple Juice Drink",
+  "handle": "apple-juice-drink",
+  "vendor": "Appy (Parle Agro)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "14",
+    "compare_at_price": "14",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265705_10-appy-apple-juice-drink-classic.jpg"
+    }
+   },
+   {
+    "title": "125ml",
+    "price": "9",
+    "compare_at_price": "9",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274037_9-appy-juice-classic-apple.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265787_1-appy-juice-drink-sparkling-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265705_10-appy-apple-juice-drink-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265705-2_8-appy-apple-juice-drink-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265705-3_8-appy-apple-juice-drink-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265705-4_8-appy-apple-juice-drink-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265705-5_7-appy-apple-juice-drink-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265705-6_7-appy-apple-juice-drink-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265705-7_7-appy-apple-juice-drink-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265705-8_5-appy-apple-juice-drink-classic.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

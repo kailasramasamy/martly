@@ -1,0 +1,21 @@
+{
+  "brand": "Appy (Parle Agro)",
+  "manufacturer": "Parle Agro Pvt. Ltd.",
+  "feed": "appy-feed.json",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Appy ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Apple\\ Juice\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    }
+  ]
+}
