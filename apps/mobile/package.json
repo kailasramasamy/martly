@@ -4,7 +4,7 @@
   "private": true,
   "main": "./index.js",
   "scripts": {
-    "dev": "expo start --port 8081",
+    "dev": "./scripts/dev.sh",
     "build": "echo 'Mobile build handled by EAS'",
     "lint": "eslint app/",
     "android": "expo run:android",
@@ -21,6 +21,7 @@
     "expo-build-properties": "~1.0.10",
     "expo-clipboard": "~8.0.8",
     "expo-constants": "^18.0.13",
+    "expo-dev-client": "~6.0.21",
     "expo-device": "^8.0.10",
     "expo-font": "^14.0.11",
     "expo-image-picker": "~17.0.10",
