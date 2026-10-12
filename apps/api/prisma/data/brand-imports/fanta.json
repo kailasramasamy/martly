@@ -1,0 +1,32 @@
+{
+  "brand": "Fanta (Coca-Cola)",
+  "manufacturer": "Hindustan Coca-Cola Beverages Pvt. Ltd.",
+  "feed": "fanta-feed.json",
+  "themeColor": "#F7861C",
+  "themeColorSecondary": "#0A3C8C",
+  "namePrefix": "Fanta ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Fanta Orange Sparkling Drink": "Orange Flavoured Soft Drink"
+  },
+  "rules": [
+    {
+      "match": "^Orange\\ Flavoured\\ Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    },
+    {
+      "match": "^Apple\\ Delite\\ Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    }
+  ],
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/fanta/logo-8f6fd698.png"
+}

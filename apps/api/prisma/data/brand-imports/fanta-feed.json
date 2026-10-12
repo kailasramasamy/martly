@@ -1,0 +1,164 @@
+[
+ {
+  "title": "Orange Flavoured Soft Drink",
+  "handle": "orange-flavoured-soft-drink",
+  "vendor": "Fanta (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251019_8-fanta-soft-drink-orange-flavoured.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/412247_1-fanta-orange.jpg"
+    }
+   },
+   {
+    "title": "1.25L",
+    "price": "68",
+    "compare_at_price": "68",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265696_9-fanta-soft-drink-orange-flavoured.jpg"
+    }
+   },
+   {
+    "title": "1.75L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40032981_7-fanta-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251041_9-fanta-soft-drink-orange-flavoured.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222668_1-fanta-soft-drink-orange-flavoured.jpg"
+    }
+   },
+   {
+    "title": "2.5L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346376_1-fanta-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362494_1-fanta-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100401175_9-fanta-soft-drink-orange-flavoured.jpg"
+    }
+   },
+   {
+    "title": "330ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371508_1-fanta-orange-flavoured-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251019_8-fanta-soft-drink-orange-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251019-2_7-fanta-soft-drink-orange-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251019-3_7-fanta-soft-drink-orange-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251019-4_6-fanta-soft-drink-orange-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251019-5_6-fanta-soft-drink-orange-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251019-6_6-fanta-soft-drink-orange-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251019-7_2-fanta-soft-drink-orange-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251019-8_2-fanta-soft-drink-orange-flavoured.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Apple Delite Soft Drink",
+  "handle": "apple-delite-soft-drink",
+  "vendor": "Fanta (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251621_1-fanta-apple-delite-natural-juice-tempting-taste-tingling-bubbles.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251621_1-fanta-apple-delite-natural-juice-tempting-taste-tingling-bubbles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251621-2_1-fanta-apple-delite-natural-juice-tempting-taste-tingling-bubbles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251621-3_1-fanta-apple-delite-natural-juice-tempting-taste-tingling-bubbles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251621-4_1-fanta-apple-delite-natural-juice-tempting-taste-tingling-bubbles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251621-5_1-fanta-apple-delite-natural-juice-tempting-taste-tingling-bubbles.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

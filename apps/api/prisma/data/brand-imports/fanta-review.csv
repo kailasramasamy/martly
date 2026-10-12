@@ -1,0 +1,3 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Orange Flavoured Soft Drink,Fanta Orange Flavoured Soft Drink,update,Beverages > Soft Drinks & Carbonated > Orange & Mango,750ml ₹40 | 250ml ₹20 | 1.25L ₹68 | 1.75L ₹90 | 2L ₹99 | 2.25L ₹90 | 2.5L ₹110 | 200ml ₹30 | 300ml ₹50 | 330ml ₹50,750ml ₹40 | 250ml ₹20 | 1.25L ₹68 | 1.75L ₹90 | 2L ₹99 | 2.25L ₹90 | 2.5L ₹110 | 200ml ₹30 | 300ml ₹50 | 330ml ₹50,8,1.75L: out of stock online; 250ml MRP ₹20 < 200ml MRP ₹30; 750ml MRP ₹40 < 300ml MRP ₹50; 750ml MRP ₹40 < 330ml MRP ₹50; 2.25L MRP ₹90 < 2L MRP ₹99
+Apple Delite Soft Drink,Fanta Apple Delite Soft Drink,create,Beverages > Soft Drinks & Carbonated > Orange & Mango,250ml ₹20,250ml ₹20,5,
