@@ -1,0 +1,144 @@
+{
+  "brand": "Blue Tokai",
+  "manufacturer": "Blue Tokai Coffee Roasters (Rarefied Food Pvt. Ltd.)",
+  "feed": "blue-tokai-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/blue-tokai/logo-2888b25b.png",
+  "themeColor": "#1F2A44",
+  "themeColorSecondary": "#F2C14E",
+  "namePrefix": "Blue Tokai ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Blue Tokai Attikan Estate Coffee (Medium Roast)": "Attikan Estate Whole Bean Coffee"
+  },
+  "rules": [
+    {
+      "match": "^Attikan\\ Estate\\ Whole\\ Bean\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^Attikan\\ Estate\\ Moka\\ Pot\\ Grind\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^French\\ Roast\\ Channi\\ Grind\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^French\\ Roast\\ Home\\ Espresso\\ Ground\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^French\\ Roast\\ Dark\\ Ground\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^Vienna\\ Roast\\ Coarse\\ Grind\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^Monsoon\\ Malabar\\ AA\\ Hoysala\\ Estate\\ Ground\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^Silver\\ Oak\\ French\\ Press\\ Ground\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Ground Coffee Beans"
+      ]
+    },
+    {
+      "match": "^South\\ Indian\\ Filter\\ Blend\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Easy\\ Pour\\ Attikan\\ Estate\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Easy\\ Pour\\ Mixed\\ Bag\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Easy\\ Pour\\ Vienna\\ Estate\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Classic\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Mocha\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Iced\\ Latte\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Cold\\ Brew\\ Coffee\\ Bold$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    }
+  ]
+}
