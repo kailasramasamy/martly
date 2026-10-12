@@ -1,0 +1,348 @@
+{
+  "brand": "Sunfeast (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "sunfeast-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sunfeast-itc/logo-d6ac06de.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Sunfeast ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Sunfeast Farmlite Oats with Almonds": "Farmlite Oats & Almonds Cookies",
+    "Sunfeast Marie Light": "Marie Light Active",
+    "Sunfeast Mom's Magic Rich Butter Cookies": "Mom's Magic Butter Biscuits",
+    "Sunfeast Pasta Treat - Masala": "YiPPee! Masala Pasta Treat",
+    "Sunfeast YiPPee! Noodles - Magic Masala": "YiPPee! Magic Masala Noodles"
+  },
+  "rules": [
+    {
+      "match": "^Dark\\ Fantasy\\ Choco\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Bourbon$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Choco\\ Chip\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Dark\\ Crunch\\ Choco\\ Creme\\ Sandwich$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Vanilla\\ Sandwich\\ Creme$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Macaroon\\ Fills\\ Coconut\\ Hazelnut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Mocha\\ Vanilla\\ Dual\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Peanut\\ Butter\\ Choco\\ Dual\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Desserts\\ Choco\\ Chunks$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Desserts\\ Choco\\ Nut\\ Dipped$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Festive\\ Collection\\ Assorted\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Dark\\ Fantasy\\ Yumfills\\ Choco\\ Pie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Bounce\\ Pineapple\\ Creme\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Bounce\\ Choco\\ Creme\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Bounce\\ Elaichi\\ Creme\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Bounce\\ Dream\\ Cream\\ Choco\\ Vanilla$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Bounce\\ Dream\\ Cream\\ Strawberry\\ Vanilla$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Mom's\\ Magic\\ Butter\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Mom's\\ Magic\\ Cashew\\ \\&\\ Almond\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Mom's\\ Magic\\ Fruit\\ \\&\\ Milk\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Mom's\\ Magic\\ Nut\\ Biscotti$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Farmlite\\ Oats\\ \\&\\ Almonds\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Farmlite\\ Oats\\ \\&\\ Raisins\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Farmlite\\ Oats\\ \\&\\ Chocolate\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Farmlite\\ Digestive\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Farmlite\\ Super\\ Millets\\ Ragi\\ \\&\\ Jowar\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Marie\\ Light\\ Active$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
+      "match": "^Glucose\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
+      "match": "^Nice\\ Sugar\\ Sprinkled\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
+      "match": "^HiFi\\ Cashew\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Wowzers\\ Cheese\\ Crackers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Caker\\ Trinity\\ Choco\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Caker\\ Layered\\ Cake\\ Butterscotch$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Breakfast\\ Smoothie\\ with\\ Oats$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^YiPPee!\\ Magic\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^YiPPee!\\ Classic\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^YiPPee!\\ Magic\\ Mood\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^YiPPee!\\ Power\\ Up\\ Atta\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^YiPPee!\\ Masala\\ Pasta\\ Treat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^YiPPee!\\ Cheese\\ Pasta\\ Treat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^YiPPee!\\ Creamy\\ Corn\\ Tricolor\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    }
+  ]
+}
