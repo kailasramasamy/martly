@@ -42,7 +42,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203611-8_2-blue-tokai-coffee-roasters-medium-dark-attikan-estate-whole-bean.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the exceptional flavours of Blue Tokai's Attikan Estate Medium Dark Roasted Whole Beans coffee, a true delight for coffee connoisseurs. Sourced directly from the serene Biligiriranga Hills in Karnataka, India, this specialty-grade Indian Arabica coffee promises depth and complexity in every sip. Thriving in the unique microclimate of the 'white hills' at an elevation of 1650 metres, these beans are roasted with the utmost care to bring out their rich, dark chocolate, fig, and roasted almond notes. Freshly roasted and ground to suit your preferred brewing method, this preservative-free coffee offers a truly exceptional experience, free from any added flavours. Discover the pinnacle of Indian coffee excellence with Blue Tokai's Attikan Estate offering, a testament to their commitment to quality and their direct trade relationships with the country's finest farms.",
+   "ingredients": "coffee, No preservatives, additives or flavouring",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "434.70 Kcal",
+    "Carbohydrates": "67.77 g",
+    "Protein": "15.03 g",
+    "Fat": "11.50 g",
+    "Sugar": "BLQ"
+   },
+   "manufacturerName": "MUHAVRA ENTERPRISES PVT LTD",
+   "fssaiLicense": "13315008000508",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Attikan Estate Moka Pot Grind Coffee",
@@ -87,7 +102,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203612-8_1-blue-tokai-coffee-roasters-medium-dark-attikan-estate-french-press.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Roast Level - Medium Grind Type -French Press 100% Specialty Grade Indian Arabica Coffee (No added flavour or preservatives). We source through direct trade relationships with India's best farms.\nTasting Notes: Dark Chocolate, Figs, Roasted Almonds\nWe freshly roast our coffee only after your order and grind it to suit your particular brewing method. We recommend Channi Grind if you don't have any coffee brewing equipment yet. Our mission since we started has stayed simple: introduce our customers to the estates we directly buy our great tasting coffee from, roast the beans with care, and make high-quality coffee more accessible through our cafes and our website. The coffee we roast is the coffee we like to drink, and we hope you like it too.\nWeight: 250 g (Pouch)",
+   "ingredients": "100% Specialty Grade Indian Arabica Coffee",
+   "usageInstructions": "Add 19 gm of coffee to the french press. Wet the coffee with 40 ml water wait for 30 sec. Add rest of the water and plunge. Slow plunging is key! Always allow 45 secs to 1 min for plunging. Plunging too fast will make a gritty, unclean cup.",
+   "manufacturerName": "MUHAVRA ENTERPRISES PVT LTD",
+   "fssaiLicense": "13315008000508",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "French Roast Channi Grind Coffee",
@@ -103,7 +126,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40203616_6-blue-tokai-coffee-roasters-very-dark-french-roast-channi.jpg"
-    }
+    },
+    "barcode": "7267541107404"
    }
   ],
   "images": [
@@ -132,7 +156,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203616-8_2-blue-tokai-coffee-roasters-very-dark-french-roast-channi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Blue Tokai French Roast Channi Grind Dark Roast Arabica Ground Coffee is a specialty grade Indian Arabica coffee with no added flavour or preservatives. The coffee is sourced through direct trade relationships with India's best farms and has tasting notes of strong, cocoa, and bittersweet. The coffee is freshly roasted and ground to suit the customer's brewing method, with a recommendation for Channi grind for those without coffee brewing equipment. The brand's mission is to introduce customers to the estates they source from, roast the beans with care, and make high-quality coffee more accessible.",
+   "ingredients": "coffee. No preservatives, additives or flavouring.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "0 kcal",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Total Carbohydrates": "0 g",
+    "Dietary Fiber": "0 g",
+    "Total Sugars": "0 g",
+    "Protein": "0 g"
+   },
+   "manufacturerName": "MUHAVRA ENTERPRISES PVT LTD",
+   "fssaiLicense": "13315008000508",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "French Roast Home Espresso Ground Coffee",
@@ -148,7 +192,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40253230_4-blue-tokai-french-roast-home-espresso-coffee-100-arabica-dark-roasted.jpg"
-    }
+    },
+    "barcode": "6738698375776"
    }
   ],
   "images": [
@@ -177,7 +222,19 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253230-8_3-blue-tokai-french-roast-home-espresso-coffee-100-arabica-dark-roasted.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Blue Tokai French Roast Home Espresso Coffee is best enjoyed with milk any time of the day, especially in the morning hours. Blue Tokai French Roast Home Espresso Coffee is made of Indian Arabica Coffee. It is one of the most loved beverages by coffee lovers all over India. They are sold in a 250g pouch and is of the finest grind. It is a premium speciality coffee sourced directly from the Indian farmers and delivered straight to your door.",
+   "ingredients": "Arabica Coffee",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "Not provided"
+   },
+   "storageInstructions": "Store in an airtight container\nKeep in a cool, dry place\nAvoid exposure to moisture and sunlight",
+   "manufacturerName": "MUHAVRA ENTERPRISES PVT LTD",
+   "fssaiLicense": "13315008000508",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "French Roast Dark Ground Coffee",
@@ -193,7 +250,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40362794_1-blue-tokai-french-roast-dark-coffee-grind-roasters.jpg"
-    }
+    },
+    "barcode": "8904384810595"
    }
   ],
   "images": [
@@ -222,7 +280,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362794-8_1-blue-tokai-french-roast-dark-coffee-grind-roasters.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Made from Arabica beans that come straight from some of India’s finest coffee farms.\nExpect a strong cup with a prominent note of cocoa and a bittersweet finish.\nThe beans are ground to a coarse consistency, ideal for your French Press. If you don’t have brewing equipment at home, it works just as well with a channi or as a cold brew.",
+   "ingredients": "Coffee",
+   "storageInstructions": "Store in a cool and dry place. After use seal the pouch",
+   "manufacturerName": "Muhavra Enterprises Pvt. Ltd. Plot no 320",
+   "fssaiLicense": "10821005000101",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vienna Roast Coarse Grind Coffee",
@@ -238,7 +304,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40362792_1-blue-tokai-vienna-roast-coarse-grind-coffee-roasters.jpg"
-    }
+    },
+    "barcode": "8904384825629"
    }
   ],
   "images": [
@@ -267,7 +334,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362792-8_1-blue-tokai-vienna-roast-coarse-grind-coffee-roasters.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Made from Arabica beans that come straight from some of India’s finest coffee farms.\nExpect a strong cup with a prominent note of cocoa, Oaky and a bittersweet finish.\nThe beans are ground to a coarse consistency, ideal for your French Press. If you don’t have brewing equipment at home, it works just as well with a channi or as a cold brew.",
+   "ingredients": "Coffee",
+   "storageInstructions": "Store in a cool and dry place. After use seal the pouch",
+   "manufacturerName": "Muhavra Enterprises Pvt. Ltd. Plot no 320",
+   "fssaiLicense": "10821005000101",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Monsoon Malabar AA Hoysala Estate Ground Coffee",
@@ -312,7 +387,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362793-8_1-blue-tokai-monsoon-malabar-aa-hoysala-estate-medium-grind-coffee-roasters.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Made from Arabica beans that come straight from some of India’s finest coffee farms.\nExpect a smooth, well-rounded cup with a prominent note of cocoa, nutty undertones and a hint of raisin-like sweetness.\nThe beans are ground to a medium consistency, ideal for South Indian Filter, Moka Pot, or AeroPress, delivering a flavourful brew across methods.",
+   "ingredients": "Coffee",
+   "storageInstructions": "Store in a cool and dry place. After use seal the pouch",
+   "manufacturerName": "Muhavra Enterprises Pvt. Ltd. Plot no 320",
+   "fssaiLicense": "10821005000101",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Silver Oak French Press Ground Coffee",
@@ -328,7 +411,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40253232_4-blue-tokai-silver-oak-cafe-blend-french-press-coffee-100-arabica-medium-roasted.jpg"
-    }
+    },
+    "barcode": "6021681931074"
    }
   ],
   "images": [
@@ -357,7 +441,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253232-8_3-blue-tokai-silver-oak-cafe-blend-french-press-coffee-100-arabica-medium-roasted.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, bold flavour of Blue Tokai's Silver Oak Café Blend French Press Coffee. Meticulously sourced and expertly roasted, this premium blend delivers a velvety, bittersweet experience that is perfect for the discerning coffee connoisseur. Enjoy the deep, complex notes of this medium roast, which complements manual brewing methods and espresso drinks alike. With its balanced profile and hints of Silver Oak trees, this versatile coffee is a true delight to savour, whether on its own or with a touch of milk. Elevate your daily coffee ritual with the artisanal quality of Blue Tokai's Silver Oak Café Blend, and discover the perfect blend of flavour and aroma in every sip.",
+   "ingredients": "coffee. No preservatives, additives or flavouring.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "409.93 Kcal",
+    "Carbohydrates": "69.99 g",
+    "Protein": "14.56 g",
+    "Fat": "7.97 g",
+    "Sugar": "BLQ"
+   },
+   "manufacturerName": "MUHAVRA ENTERPRISES PVT LTD",
+   "fssaiLicense": "13315008000508",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "South Indian Filter Blend Coffee",
@@ -396,7 +495,16 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289598-6_1-blue-tokai-south-indian-filter-blend-medium-dark-roast-ground.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and robust flavours of Blue Tokai's South Indian Filter Blend Medium Dark Roast Ground Coffee. This premium specialty coffee is a carefully crafted blend of the finest Indian Arabica beans, expertly roasted to perfection to bring out the unique taste notes of roasted hazelnut and toffee. The medium-dark roast creates a bold and intense flavour profile that is simply irresistible. Whether you prefer to brew it using the traditional South Indian filter or other methods, this versatile coffee works beautifully across various brewing techniques, making it the perfect choice for coffee enthusiasts. The medium brew pairs perfectly with milk, making it an ideal companion for your morning latte or evening cappuccino. Sourced directly from Indian farmers, Blue Tokai's commitment to quality and sustainability ensures you enjoy the finest quality coffee while supporting local communities. Indulge in the rich, velvety texture and let the smooth, chocolatey notes delight your senses.",
+   "ingredients": "Roasted Coffee",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "usageInstructions": "1) Add coffee, start the timer and pour 220ml making sure all grinds are wet. \n2) Add the plunge lid on top to keep the temperature stable.\n3) After 3 minutes stir the grinds on top lightly (break the crust) and leave to brew for another 2 minutes.\n4) At 6 minutes slowly plunge the brew and serve straight away.",
+   "manufacturerName": "MUHAVRA ENTERPRISES PRIVATE LIMITED",
+   "fssaiLicense": "10821005000101",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Easy Pour Attikan Estate Coffee",
@@ -447,7 +555,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40193967_3-blue-tokai-coffee-roasters-attikan-estate-medium-dark-roast-easy-pour.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Roasted Coffee",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "usageInstructions": "1) Tear along the dotted line\n2) Pull out the flaps on the side and anchor them over the sides of your cup\n3) Slowly pour hot water in the filter 2-3 times until your cup is full (-180ml)\n4) Wait 2 minutes, remove the filter and enjoy your coffee!",
+   "manufacturerName": "MUHAVRA ENTERPRISES PRIVATE LIMITED",
+   "fssaiLicense": "10821005000101",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Easy Pour Mixed Bag Coffee",
@@ -463,7 +579,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40253237_3-blue-tokai-easy-pour-mixed-bag-instant-coffee-light-to-dark-roasted.jpg"
-    }
+    },
+    "barcode": "8904384801647"
    },
    {
     "title": "10 pcs",
@@ -501,7 +618,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40193971_4-blue-tokai-coffee-roasters-mixed-bag-light-to-dark-roast-easy-pour.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your coffee experience with the expertly crafted Blue Tokai Easy Pour Mixed Bag Light to Dark Roast Coffee Brew Bags. Carefully curated and roasted to perfection, this premium blend of arabica beans delivers a balanced and satisfying brew every time. Enjoy the unmistakable aroma and bittersweet flavour, with notes of cocoa and a smooth, velvety texture. Whether you prefer a light, fruity roast or a bold, dark roast, this mixed bag offers a range of single-estate coffees to suit your taste. Brewing is a breeze - simply add warm water or milk and you'll have a delightful cup of energy-boosting coffee in just minutes. Perfect for coffee enthusiasts seeking quality and convenience, these brew bags are the ideal companion for your daily caffeine fix.",
+   "ingredients": "100% Arabica Coffee.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "0 kcal",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Total Carbohydrates": "0 g",
+    "Dietary Fiber": "0 g",
+    "Total Sugars": "0 g",
+    "Protein": "0 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "MUHAVRA ENTERPRISES PVT LTD",
+   "fssaiLicense": "13315008000508",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Easy Pour Vienna Estate Coffee",
@@ -517,7 +655,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40253236_3-blue-tokai-easy-pour-vienna-estate-dark-roast-coffee-bold-strong.jpg"
-    }
+    },
+    "barcode": "8904384814869"
    }
   ],
   "images": [
@@ -546,7 +685,19 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253236-8_3-blue-tokai-easy-pour-vienna-estate-dark-roast-coffee-bold-strong.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your coffee experience with the Blue Tokai Easy Pour Vienna Roast Dark Roast Coffee Sachets. These convenient, ready-to-brew sachets allow you to enjoy a delicious cup of coffee anytime, anywhere. Crafted with organic ingredients and roasted to perfection, these sachets deliver a bold, full-bodied Vienna dark roast flavour that is sure to energise and refresh you throughout your day. Simply dip the sachets in hot water or milk and enjoy the rich aroma and smooth, satisfying taste. Embrace the simplicity and versatility of these brew bags, whether you're at home, in the office, or on a camping adventure. Discover the perfect blend of convenience and exceptional flavour with the Blue Tokai Easy Pour Coffee Sachets.",
+   "ingredients": "100% Arabica Coffee.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "Not provided"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "MUHAVRA ENTERPRISES PVT LTD",
+   "fssaiLicense": "13315008000508",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Cold Coffee",
@@ -562,7 +713,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40362790_1-blue-tokai-classic-cold-coffee-with-milk.jpg"
-    }
+    },
+    "barcode": "8904384818010"
    }
   ],
   "images": [
@@ -591,7 +743,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362790-8_1-blue-tokai-classic-cold-coffee-with-milk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Blue Tokai Classic Cold Coffee with Milk is a smooth, refreshing blend of premium Arabica coffee and creamy milk for a perfectly balanced café-style drink. Brewed for rich flavour and natural aroma, it delivers a bold coffee kick without bitterness. Enjoy it chilled for an instant pick-me-up—perfect for busy mornings, afternoon slumps, or whenever you’re craving a cold, creamy coffee fix.",
+   "ingredients": "Water, Milk, Milk Solids, Sugar, Coffee Solids (1.0%), Acidity Regulator (INS 500(I)), Emulsifier (INS 460(I)), Stabilizers (INS 469, INS 407), Nature-Identical Flavouring Substances.\nAllergen Declaration:\nContains Milk.",
+   "nutritionalInfo": {
+    "Energy": "169.4 kcal",
+    "Protein": "5.1 g",
+    "Carbohydrates": "19.1 g",
+    "Total Sugars": "17.6 g",
+    "Added Sugars": "11.4 g",
+    "Total Fat": "8.0 g",
+    "Saturated Fat": "5.0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "35.2 mg",
+    "Sodium": "110.0 mg",
+    "Calcium": "136.4 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place. After opening refrigerated and use within 2 days. Best served chilled. Shake well before use.",
+   "manufacturerName": "Amrit Nagar",
+   "fssaiLicense": "10821005000101",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mocha Cold Coffee",
@@ -607,7 +780,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40362789_1-blue-tokai-mocha-cold-coffee-with-milk.jpg"
-    }
+    },
+    "barcode": "8904384818027"
    }
   ],
   "images": [
@@ -636,7 +810,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362789-8_1-blue-tokai-mocha-cold-coffee-with-milk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Blue Tokai Mocha Cold Coffee with Milk brings together the bold taste of premium coffee and the rich smoothness of cocoa in a perfectly balanced, ready-to-drink blend. Crafted with real coffee and milk, it delivers a creamy, refreshing sip with just the right hint of chocolatey indulgence. Enjoy it chilled for a café-style pick-me-up at home, work, or on the go.",
+   "ingredients": "Water, Milk, Milk Solids, Sugar, Coffee Solids (1.0%), Cocoa Powder, Acidity Regulator (INS 500(I)), Emulsifier (INS 460(I)), Stabilizers (INS 469, INS 407), Nature-Identical Flavouring Substances.\nAllergen Declaration:\nContains Milk.",
+   "nutritionalInfo": {
+    "Energy": "172.5 kcal",
+    "Protein": "5.3 g",
+    "Carbohydrates": "19.5 g",
+    "Total Sugars": "17.7 g",
+    "Added Sugars": "11.5 g",
+    "Total Fat": "8.1 g",
+    "Saturated Fat": "5.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "37.4 mg",
+    "Sodium": "114.4 mg",
+    "Calcium": "136.4 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place. After opening refrigerated and use within 2 days. Best served chilled. Shake well before use.",
+   "manufacturerName": "Amrit Nagar",
+   "fssaiLicense": "10821005000101",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Iced Latte Coffee",
@@ -652,7 +847,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40362791_1-blue-tokai-iced-latte-cold-coffee.jpg"
-    }
+    },
+    "barcode": "8904384823038"
    }
   ],
   "images": [
@@ -678,7 +874,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362791-7_1-blue-tokai-iced-latte-cold-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Blue Tokai Iced Latte Coffee brings you the smooth, café-style experience of freshly brewed coffee, perfectly chilled and ready to enjoy. Made with premium, responsibly sourced coffee beans and blended with creamy milk, it delivers a balanced, refreshing flavour with every sip. Ideal for busy mornings, afternoon pick-me-ups, or on-the-go refreshment, this ready-to-drink iced latte keeps you energised and cool anytime.",
+   "ingredients": "Water, Milk, Sugar, Coffee (1.12%), Acidity Regulator (INS 339(Ii), 500(I)), Stabiliser (INS 407), Nature-Identical Flavouring Substances (Coffee Flavour).",
+   "nutritionalInfo": {
+    "Energy": "92.7 kcal",
+    "Protein": "3.6 g",
+    "Carbohydrates": "14.5 g",
+    "Total Sugars": "12.6 g",
+    "Added Sugars": "7.7 g",
+    "Total Fat": "2.3 g",
+    "Saturated Fat": "1.5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "11 mg",
+    "Sodium": "121 mg",
+    "Calcium": "110 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place. After opening refrigerated and use within 2 days. Best served chilled. Shake well before use.",
+   "manufacturerName": "Amrit Nagar",
+   "fssaiLicense": "10821005000101",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Brew Coffee Bold",
@@ -717,6 +934,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253238-6_2-blue-tokai-cold-brew-coffee-classic-bold-strong-no-milk-ready-to-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Blue Tokai's Classic Bold Cold Brew Cans Coffee. Crafted with organic cocoa beans, this cold brew offers an aroma that lingers delightfully, providing an instant energy boost and refreshment whenever you need it. Enjoy the rich, smooth flavour of this milk-free cold brew, perfect for sipping at the office or savouring at home. Discover the perfect pick-me-up with this convenient and flavourful cold brew, made to suit every taste preference.",
+   "ingredients": "Filtered Water (87.20%), Arabica Coffee (12.50%)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "250ml",
+    "Energy": "37.4kcal",
+    "Protein": "2.32g",
+    "Carbohydrates": "7.02g",
+    "Total Sugar": "0g",
+    "Fat": "0g",
+    "Added Sugar": "0g",
+    "Sodium": "41.12g",
+    "Saturated Fatty Acid": "0g",
+    "Trans Fatty Acid": "0g",
+    "Cholestrol": "0mg",
+    "%RDA": "1.87% (On The Basis Of 2000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "MUHAVRA ENTERPRISES PVT LTD",
+   "fssaiLicense": "13315008000508",
+   "countryOfOrigin": "India"
+  }
  }
 ]
