@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30009568_9-schweppes-indian-tonic-water.jpg"
-    }
+    },
+    "barcode": "8901764241253"
    }
   ],
   "images": [
@@ -39,7 +40,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009568-7_2-schweppes-indian-tonic-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The gold standard G&T mixer, crafted with quinine since 1783. Schweppes Tonic Water delivers a refined, layered bitterness and delicate citrus brightness, carried by the iconic Schweppes effervescence. It amplifies the botanicals in gin, and is equally refined as a sophisticated standalone sip over ice. The world's original and iconic premium tonic, unmistakably Schweppes.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulator (330), Preservative (211), Quinine Flavours (Natural Flavouring Substances)",
+   "nutritionalInfo": {
+    "Energy": "36 kcal",
+    "Carbohydrate": "8.9 g",
+    "Total Sugars": "8.8 g",
+    "Added Sugars": "8.8 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "2 mg"
+   },
+   "manufacturerName": "HINDUSTAN COCA-COLA BEVERAGES PVT",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Sugar Tonic Water",
@@ -55,7 +71,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40352293_1-schweppes-zero-sugar-tonic-water.jpg"
-    }
+    },
+    "barcode": "8901764241673"
    }
   ],
   "images": [
@@ -77,7 +94,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352293-6_1-schweppes-zero-sugar-tonic-water.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "All the refined quinine bitterness and signature Schweppes effervescence of the classic tonic with zero sugar and zero calories. Clean, crisp, and precisely balanced, it pairs perfectly with gin, vodka, or any premium spirit, letting botanicals shine without added sweetness. The smarter pour for mindful drinkers who refuse to compromise on taste.",
+   "ingredients": "Carbonated Water, Acidity Regulator (330, 331(iii)), Sweetener (951, 950), Flavors (Natural Flavouring Substances), Preservative (202), Quinine",
+   "nutritionalInfo": {
+    "Energy": "0 kcal",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "34 mg"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Original Ginger Ale",
@@ -122,7 +154,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009570-8_2-schweppes-soda-original-ginger-ale.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Bold ginger spice meets the legendary Schweppes soft drink in every can. Crisp, clean, and perfectly balanced, it's the definitive mixer for your favourite cocktails and equally satisfying when poured ice-cold as a standalone refreshment. From the world's original sparkling soft drink brand, crafting premium effervescence since 1783.",
+   "manufacturerName": "HINDUSTAN COCA-COLA BEVERAGES PVT",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Original Soda Water",
@@ -138,7 +175,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30009569_9-schweppes-original-soda-water.jpg"
-    }
+    },
+    "barcode": "8901764231254"
    }
   ],
   "images": [
@@ -167,7 +205,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009569-8_2-schweppes-original-soda-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Pure, clean effervescence, perfected since 1783. Schweppes Soda Water's neutral taste makes it the ideal canvas for any drink: it lifts spirits, juices, and syrups without overpowering them. The essential ingredient in a classic Whisky Soda, a sparkling mocktail, or simply poured ice-cold for an instant refresh. From the world's original sparkling drink brand, clean and iconic refreshment, every time.",
+   "ingredients": "Carbonated Water, Salts of Sodium",
+   "nutritionalInfo": {
+    "Serving Size": "200 ml",
+    "Energy": "36 kcal",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "7.7 mg"
+   },
+   "manufacturerName": "HINDUSTAN COCA-COLA BEVERAGES PVT",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bitter Lemon Mixer",
@@ -183,7 +237,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40286474_2-schweppes-bitter-lemon-original-mixer-carbonated-water.jpg"
-    }
+    },
+    "barcode": "8901764251252"
    },
    {
     "title": "330ml",
@@ -221,7 +276,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40286474-8_1-schweppes-bitter-lemon-original-mixer-carbonated-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Fused with a refreshing flavour, Schweppes Bitter Lemon Original Mixer complements your drink perfectly (Cocktail or Mocktail). The delicious and zesty flavour of this mixer makes it ideal to drink on its own or with your favourite spirit.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "51",
+    "Carbohydrate (g)": "12.7",
+    "Total Sugars (g)": "12.5",
+    "Added Sugars (g)": "12.4",
+    "Total Fat (g)": "0",
+    "Protein (g)": "0",
+    "Sodium (mg)": "5.1"
+   },
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulator (330), Preservative (211), Quinine, Colour (102) & Flavours (Natural Flavouring Substances)",
+   "manufacturerName": "HINDUSTAN COCA-COLA BEVERAGES PVT",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mint Mojito Sparkling Mixer",
@@ -237,7 +307,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40286475_1-schweppes-premium-sparkling-mixer-mint-mojito-carbonated-water.jpg"
-    }
+    },
+    "barcode": "8901764481253"
    }
   ],
   "images": [
@@ -257,7 +328,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40286475-5_1-schweppes-premium-sparkling-mixer-mint-mojito-carbonated-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your cocktail game with the Schweppes Mint Mojito Sparkling Mixer Can. This premium-quality mixer combines the crisp, effervescent taste of Schweppes with the zesty flavour of mint and lime, creating the perfect base for an authentic, refreshing mint mojito. Simply pour the mixer over ice, add your favourite rum, and garnish with fresh mint leaves for an instant, delightful cocktail. No more muddling mint or squeezing lemons - this bubbly mixer does all the work for you, allowing you to satisfy your mint mojito cravings anytime, anywhere. Explore the range of high-quality mixers, drinks and more from the trusted Schweppes brand, available exclusively on Big Basket.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulator (330), Iodised Salt, Sweetener (955), Preservative (211) & Flavours (Natural & Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Serving Size": "200 ml",
+    "Energy": "27 kcal",
+    "Carbohydrate": "6.8 g",
+    "Total Sugars": "6.6 g",
+    "Added Sugars": "6.6 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "15.9 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000261"
+  }
  },
  {
   "title": "Cranberry Sparkling Water",
@@ -302,7 +390,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362499-8_1-schweppes-zero-calories-flavoured-sparkling-water-cranberry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tangy, vibrant cranberry meets the iconic Schweppes effervescence with zero sugar and zero calories. Light, bubbly, and clean-tasting, it delivers the tart freshness of cranberry without any heaviness, making it ideal for those who prefer a lighter, guilt-free refreshment. Best enjoyed chilled, it is perfect on its own or as a sophisticated mixer, bringing a refreshing sparkle to everyday moments. From the world's original premium mixer brand, Schweppes, since 1783.",
+   "ingredients": "Carbonated Water, Acidity Regulator (330), Flavours (Nature-Identical Flavouring Substances), Preservative (202), Sweetener (950, 955).",
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "fssaiLicense": "10012022000261",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peach Sparkling Water",
@@ -347,7 +442,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362498-8_1-schweppes-zero-calories-flavoured-sparkling-water-peach.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Smooth, sun-ripened peach sweetness meets the iconic Schweppes effervescence with zero sugar and zero calories. Crisp and gently bubbly, it offers a clean, pleasant taste without heaviness, making it ideal for everyday hydration with a touch of flavour. Best enjoyed chilled, it is perfect on its own or as a refreshing mixer, adding a subtle fruity sparkle to any moment. From the world's original premium mixer brand, Schweppes, since 1783.",
+   "ingredients": "Carbonated Water, Acidity Regulator (330), Flavours (Nature-Identical Flavouring Substances), Preservative (202), Sweetener (950, 955).",
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "fssaiLicense": "10012022000261",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zesty Lime Sparkling Water",
@@ -363,7 +465,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40362497_1-schweppes-zero-calories-flavoured-sparkling-water-zesty-lime.jpg"
-    }
+    },
+    "barcode": "8901764242014"
    }
   ],
   "images": [
@@ -392,6 +495,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362497-8_1-schweppes-zero-calories-flavoured-sparkling-water-zesty-lime.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sharp, lively citrus zest meets the iconic Schweppes effervescence with zero sugar and zero calories. Light, bubbly, and clean on the palate, it delivers a sharp, zesty flavour that uplifts and refreshes. Best enjoyed chilled, it is perfect for those who enjoy a lively, citrusy sparkle, whether on its own or as a refreshing mixer for lime-forward mocktails. From the world's original premium mixer brand, Schweppes, since 1783.",
+   "ingredients": "Carbonated Water, Acidity Regulator (330), Flavours (Natural Flavouring Substances), Sweetener (950, 955), Preservative (202).",
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "fssaiLicense": "10012022000261",
+   "countryOfOrigin": "India"
+  }
  }
 ]
