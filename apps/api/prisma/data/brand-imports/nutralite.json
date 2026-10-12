@@ -1,0 +1,144 @@
+{
+  "brand": "Nutralite (Zydus)",
+  "manufacturer": "Zydus Wellness Ltd.",
+  "feed": "nutralite-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nutralite/logo-405ea39f.png",
+  "themeColor": "#1B4F9C",
+  "themeColorSecondary": "#E52421",
+  "namePrefix": "Nutralite ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Nutralite Classic Butter Spread": "Activ Fat Spread"
+  },
+  "rules": [
+    {
+      "match": "^Activ\\ Fat\\ Spread$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Activ\\ Fat\\ Spread\\ Tub$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Activ\\ Garlic\\ \\&\\ Oregano\\ Fat\\ Spread$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Activ\\ Garlic\\ \\&\\ Herbs\\ Plant\\ Based\\ Buttery\\ Spread$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Activ\\ Olive\\ Plant\\ Based\\ Buttery\\ Spread$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^DoodhShakti\\ Probiotic\\ Butter\\ Spread$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^DoodhShakti\\ Probiotic\\ Butter\\ Spread\\ Tub$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^DoodhShakti\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^DoodhShakti\\ Pure\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Choco\\ Spread\\ Calcium$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Choco\\ Spread\\ Crunchy\\ Quinoa$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Activ\\ Crunchy\\ Chocolate\\ Peanut\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Activ\\ Creamy\\ Natural\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Veg\\ Eggless\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Cheesy\\ Garlic\\ Eggless\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Eggless\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    }
+  ]
+}
