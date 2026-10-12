@@ -1,0 +1,64 @@
+[
+ {
+  "title": "Multigrain Chips - Dahi Papdi Chaat",
+  "handle": "multigrain-chips-dahi-papdi-chaat",
+  "vendor": "Too Yumm! (Guiltfree)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "43.5g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003_15-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+    }
+   },
+   {
+    "title": "21g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127000_6-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+    }
+   },
+   {
+    "title": "70g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40168301_6-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003_15-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003-2_15-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003-3_15-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003-4_15-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003-5_14-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003-6_14-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003-7_8-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127003-8_8-too-yumm-multigrain-chips-dahi-papdi-chaat.jpg"
+   }
+  ]
+ }
+]
