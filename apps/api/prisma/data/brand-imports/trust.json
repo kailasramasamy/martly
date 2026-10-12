@@ -1,0 +1,32 @@
+{
+  "brand": "Trust",
+  "manufacturer": "Simbhaoli Sugars Limited",
+  "feed": "trust-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/trust/logo-5ca52454.png",
+  "themeColor": "#F39200",
+  "themeColorSecondary": "#2E9E3E",
+  "namePrefix": "Trust ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Trust Classic Sugar (Cheeni)": "Classic Sulphurless Sugar"
+  },
+  "rules": [
+    {
+      "match": "^Classic\\ Sulphurless\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Classic\\ Superfine\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    }
+  ]
+}

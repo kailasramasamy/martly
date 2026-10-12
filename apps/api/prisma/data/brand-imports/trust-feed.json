@@ -1,0 +1,81 @@
+[
+ {
+  "title": "Classic Sulphurless Sugar",
+  "handle": "classic-sulphurless-sugar",
+  "vendor": "Trust",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001392_5-trust-classic-sulphurless-sugar.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001393_5-trust-classic-sulphurless-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001392_5-trust-classic-sulphurless-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001392-2_2-trust-classic-sulphurless-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001392-3_2-trust-classic-sulphurless-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001392-4_2-trust-classic-sulphurless-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70001393_5-trust-classic-sulphurless-sugar.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Classic Superfine Sugar",
+  "handle": "classic-superfine-sugar",
+  "vendor": "Trust",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/257849_5-trust-classic-superfine-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/257849_5-trust-classic-superfine-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/257849-2_1-trust-classic-superfine-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/257849-3_1-trust-classic-superfine-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/257849-4_1-trust-classic-superfine-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/257849-5_1-trust-classic-superfine-sugar.jpg"
+   }
+  ]
+ }
+]
