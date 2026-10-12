@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780_3-rkg-agmark-ghee-ghee.jpg"
-    }
+    },
+    "barcode": "8901745111001"
    },
    {
     "title": "200ml",
@@ -69,6 +70,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780-8_1-rkg-agmark-ghee-ghee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your culinary experiences with RKG Agmark Ghee, the secret ingredient to delicious Indian dishes. Whether you're whipping up aromatic biryanis, flaky parathas, or indulgent desserts, this ghee adds a heavenly touch to your recipes, delivering an unparalleled flavour and texture. Crafted with care, RKG Agmark Ghee not only enhances the taste of your favourite Indian delicacies, but also promotes digestion, protects arteries, increases bone density, improves immunity, and supports overall health. Versatile and authentic, this ghee is perfect for every occasion, from weddings and festivals to vacations and parties. Elevate your culinary journey and experience the difference with RKG Agmark Ghee.",
+   "ingredients": "Milk Fat",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "899 kcal",
+    "Protein": "0.1 g",
+    "Total Fat": "99.9 g",
+    "Saturated Fat": "62.9 g",
+    "Trans Fat": "0.0 g",
+    "Carbohydrates": "0.0 g",
+    "Sugars": "0.0 g",
+    "Sodium": "0.0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "M/s.R.K.Ganapathi chettiar",
+   "countryOfOrigin": "India"
+  }
  }
 ]
