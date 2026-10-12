@@ -1,0 +1,96 @@
+{
+  "brand": "Complan (Zydus)",
+  "manufacturer": "Zydus Wellness Ltd.",
+  "feed": "complan-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/complan/logo-fac9af87.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#F7C600",
+  "namePrefix": "Complan ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Complan Royale Chocolate": "Royale Chocolate Jar"
+  },
+  "rules": [
+    {
+      "match": "^Royale\\ Chocolate\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Royale\\ Chocolate\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Classic\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Classic\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Badam\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Badam\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Pista\\ Badam\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^NutriGro\\ Badam\\ Kheer$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^NutriGro\\ Creamy\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^NutriGro\\ Delicious\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    }
+  ]
+}

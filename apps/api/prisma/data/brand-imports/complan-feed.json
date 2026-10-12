@@ -1,0 +1,955 @@
+[
+ {
+  "title": "Royale Chocolate Jar",
+  "handle": "royale-chocolate-jar",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/284782_12-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+    },
+    "barcode": "8901542000003"
+   },
+   {
+    "title": "500g",
+    "price": "301",
+    "compare_at_price": "301",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/284783_20-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "586",
+    "compare_at_price": "586",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40230186_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-pro-immunity-royale-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284782_12-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284782-2_7-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284782-3_6-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284782-4_6-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284782-5_6-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284782-6_5-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284782-7_5-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/284782-8_2-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Milk Solids (51.9%), Sugar, Peanut Oil, Maltodextrin, Minerals, Artificial (Milk Masala And Saffron) Flavouring Substances, Almonds (0.8%), Natural Colours {Ins100(I), Ins160B(Ii)}, Vitamins, Saffron (0.05%), Inositol, Taurine, L-Carnitine",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "33g",
+    "Energy (kcal)": "419 kcal",
+    "Protein (g)": "18 g",
+    "Carbohydrate (g)": "62 g",
+    "Total Sugars (g)": "45.5 g / 50.5 g",
+    "Added Sugars (g)": "21.8 g / 26.8 g",
+    "Total Fat (g)": "11 g",
+    "Cholesterol (mg)": "0 mg",
+    "Saturated Fat": "Not More Than 2.5 g",
+    "Trans Fat": "Not More Than 0.1 g",
+    "calcium (mg)": "800 mg",
+    "Phosphorus (mg)": "780 mg",
+    "Sodium (mg)": "400 mg",
+    "Potassium (mg)": "920 mg",
+    "Magnesium (mg)": "76 mg",
+    "Chloride (mg)": "500 mg",
+    "Copper (µg)": "540 µg",
+    "Zinc (mg)": "4.5 mg",
+    "Selenium (µg)": "15 µg",
+    "Iodine (mg)": "0.1 mg",
+    "Iron (mg)": "13.5 mg",
+    "Manganese (mg)": "1.5 mg",
+    "Chromium (µg)": "7.5 µg",
+    "Molybdenum (µg)": "11 µg",
+    "Vitamin A (µg)": "360 µg",
+    "Vitamin D2 (µg)": "10 µg",
+    "Vitamin E (mg)": "7 mg",
+    "Vitamin K (µg)": "45 µg",
+    "Vitamin C (mg)": "30 mg",
+    "Vitamin B1 (mg)": "0.5 mg",
+    "Vitamin B2 (mg)": "0.7 mg",
+    "Vitamin B3 (mg)": "6 mg",
+    "Vitamin B6 (mg)": "0.76 mg",
+    "Vitamin B12 (µg)": "1 µg",
+    "Folic Acid (µg)": "75 µg",
+    "calcium Pantothenate (mg)": "3 mg",
+    "Biotin (µg)": "14 µg",
+    "Carnitine (mg)": "7 mg",
+    "Choline (mg)": "58 mg",
+    "Inositol (mg)": "30 mg",
+    "Taurine (mg)": "15 mg",
+    "%RDA Per Serve (33g)": "{'Energy': '7%', 'Total Fat': '5.4%', 'Saturated Fat': '3.8%', 'Trans Fat': '1.7%', 'Added Sugars': '14.4% / 17.7%', 'Sodium': '6.6%'}"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "A) Zydus Wellness Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001417"
+  }
+ },
+ {
+  "title": "Royale Chocolate Refill",
+  "handle": "royale-chocolate-refill",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852_2-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "292",
+    "compare_at_price": "292",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/102774_28-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "700g",
+    "price": "419",
+    "compare_at_price": "419",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324377_1-complan-dairy-based-beverage-mix-royale-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "490",
+    "compare_at_price": "490",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071210_9-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/269603_13-complan-nutrition-health-drink-improves-concentration-memory-royale-chocolate-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852_2-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852-2_2-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852-3_2-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852-4_1-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852-5_1-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852-6_1-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852-7_1-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40302852-8_1-complan-nutrition-health-drink-royale-chocolate-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Milk Solids (51.9%), Sugar, Peanut Oil, Maltodextrin, Minerals, Artificial (Milk Masala And Saffron) Flavouring Substances, Almonds (0.8%), Natural Colours {Ins100(I), Ins160B(Ii)}, Vitamins, Saffron (0.05%), Inositol, Taurine, L-Carnitine",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "33g",
+    "Energy (kcal)": "419 kcal",
+    "Protein (g)": "18 g",
+    "Carbohydrate (g)": "62 g",
+    "Total Sugars (g)": "50.5 g",
+    "Added Sugars (g)": "26.8 g",
+    "Total Fat (g)": "11 g",
+    "Cholesterol (mg)": "0 mg",
+    "calcium (mg)": "800 mg",
+    "Phosphorus (mg)": "780 mg",
+    "Vitamin D2 (µg)": "10 µg",
+    "Vitamin A (µg)": "360 µg",
+    "Vitamin E (mg)": "7 mg",
+    "Vitamin K (µg)": "45 µg",
+    "Vitamin C (mg)": "30 mg",
+    "Magnesium (mg)": "76 mg",
+    "Copper (µg)": "540 µg",
+    "Zinc (mg)": "4.5 mg",
+    "Selenium (µg)": "15 µg",
+    "Vitamin B1 (mg)": "0.5 mg",
+    "Vitamin B2 (mg)": "0.7 mg",
+    "Vitamin B3 (mg)": "6 mg",
+    "Vitamin B6 (mg)": "0.76 mg",
+    "calcium Pantothenate (mg)": "3 mg",
+    "Biotin (µg)": "14 µg",
+    "Iodine (mg)": "0.1 mg",
+    "Iron (mg)": "13.5 mg",
+    "Vitamin B12 (µg)": "1 µg",
+    "Folic Acid (µg)": "75 µg",
+    "Sodium (mg)": "400 mg",
+    "Potassium (mg)": "920 mg",
+    "Chloride (mg)": "500 mg",
+    "Chromium (µg)": "7.5 µg",
+    "Molybdenum (µg)": "11 µg",
+    "Carnitine (mg)": "1 mg",
+    "Choline (mg)": "58 mg",
+    "Inositol (mg)": "30 mg",
+    "Taurine (mg)": "15 mg",
+    "Manganese (mg)": "1.5 mg",
+    "Saturated Fat": "Not More Than 2.5 g",
+    "Trans Fat": "Not More Than 0.1 g",
+    "%RDA (Basis Of 2000 kcal Energy) Per Serve (33 g)": "{'Energy': '7%', 'Total Fat': '5.4%', 'Saturated Fat': '3.8%', 'Trans Fat': '1.7%', 'Added Sugars': '17.7%', 'Sodium': '6.6%'}"
+   },
+   "storageInstructions": "* Store in cool, dry place away from strong odours\n* Do not use if pack is damaged or open",
+   "manufacturerName": "Zydus Wellness Products Ltd. House No. 6 & 7",
+   "fssaiLicense": "10013022001417",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Creamy Classic Jar",
+  "handle": "creamy-classic-jar",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184-2_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184-3_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184-4_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184-5_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184-6_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184-7_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230184-8_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Complan is a ‘Dairy-based Beverage Mix’, a Nutrition drink powder scientifically designed to meet the nutritional needs of growing children. Its Creamy Classic Flavour is a nutritious drink with a delicious taste that your kid will enjoy. It provides essential nutrients, including 100% milk protein, vital for their development. Complan contains 63% more protein (per 100g and per serve basis), than regular Malt-based Food Drink powder. Its formulation with 34 key nutrients, such as Vitamin D2, calcium, Zinc etc., is designed to support overall growth and functioning.\nComplan is clinically proven to support 2X faster growth and supports memory and concentration. This nutrition drink for kids contains essential nutrients like iodine, iron, zinc etc., that are known to support brain development and functioning. The pro-immunity nutrients like Vitamin A, Vitamin C etc., support immune function. Serve this delight twice a day (33g x 2) as a part of your child’s balanced diet. It can be served in two delicious ways, both as a hot drink and a cold drink. Give your child the Complan nutrition.",
+   "manufacturerName": "A) Zydus Wellness Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001417"
+  }
+ },
+ {
+  "title": "Creamy Classic Refill",
+  "handle": "creamy-classic-refill",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/161721_7-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/259032_20-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "569",
+    "compare_at_price": "569",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40230183_5-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-creamy-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/161721_7-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/161721-2_7-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/161721-3_7-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/161721-4_7-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/161721-5_7-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/161721-6_5-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/161721-7_5-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/161721-8_5-complan-nutrition-health-drink-improves-concentration-memory-creamy-classic-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Milk Solids (51.9%), Sugar, Peanut Oil, Maltodextrin, Minerals, Artificial (Milk Masala And Saffron) Flavouring Substances, Almonds (0.8%), Natural Colours {Ins100(I), Ins160B(Ii)}, Vitamins, Saffron (0.05%), Inositol, Taurine, L-Carnitine",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "33g",
+    "Energy (kcal)": "419 kcal",
+    "Protein (g)": "18 g",
+    "Carbohydrate (g)": "62 g",
+    "Total Sugars (g)": "50.5 g",
+    "Added Sugars (g)": "26.8 g",
+    "Total Fat (g)": "11 g",
+    "Sodium (mg)": "400 mg",
+    "Potassium (mg)": "920 mg",
+    "Chloride (mg)": "500 mg",
+    "calcium (mg)": "800 mg",
+    "Phosphorus (mg)": "780 mg",
+    "Iron (mg)": "13.5 mg",
+    "Iodine (mg)": "0.1 mg",
+    "Zinc (mg)": "4.5 mg",
+    "Copper (µg)": "540 µg",
+    "Magnesium (mg)": "76 mg",
+    "Manganese (mg)": "1.5 mg",
+    "Chromium (µg)": "7.5 µg",
+    "Molybdenum (µg)": "11 µg",
+    "Selenium (µg)": "15 µg",
+    "Vitamin A (µg)": "360 µg",
+    "Vitamin D2 (µg)": "10 µg",
+    "Vitamin E (mg)": "7 mg",
+    "Vitamin K (µg)": "45 µg",
+    "Vitamin C (mg)": "30 mg",
+    "Vitamin B1 (mg)": "0.5 mg",
+    "Vitamin B2 (mg)": "0.7 mg",
+    "Vitamin B3 (mg)": "6 mg",
+    "Vitamin B6 (mg)": "0.76 mg",
+    "Vitamin B12 (µg)": "1 µg",
+    "Folic Acid (µg)": "75 µg",
+    "Biotin (µg)": "14 µg",
+    "calcium Pantothenate (mg)": "3 mg",
+    "Carnitine (mg)": "7 mg",
+    "Choline (mg)": "58 mg",
+    "Taurine (mg)": "15 mg",
+    "Inositol (mg)": "30 mg",
+    "Cholesterol (mg)": "0 mg"
+   },
+   "storageInstructions": "* On opening this pack, transfer contents immediately into a suitable air-tight container\n* Keep the container closed after use\n* Store in a cool, dry place away from strong odours",
+   "manufacturerName": "A) Zydus Wellness Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001417"
+  }
+ },
+ {
+  "title": "Kesar Badam Jar",
+  "handle": "kesar-badam-jar",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "342",
+    "compare_at_price": "342",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185-2_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185-3_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185-4_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185-5_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185-6_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185-7_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230185-8_6-complan-nutrition-health-drink-2x-faster-growth-34-vital-nutrients-kesar-badam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Milk Solids, Sugar, Peanut Oil, Maltodextrin, Minerals, Artificial (Milk Masala and Saffron) Flavouring Substances, Almonds, Natural Colours, Vitamins, Saffron, Inositol, Taurine, L-Carnitine",
+   "nutritionalInfo": {
+    "Serving Size": "33 g (2 heaped tablespoons)",
+    "Energy (kcal)": "419 kcal",
+    "Protein (g)": "18 g",
+    "Carbohydrate (g)": "62 g",
+    "Total Sugars (g)": "50.5 g",
+    "Added Sugars (g)": "26.8 g",
+    "Total Fat (g)": "11 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "400 mg",
+    "Potassium (mg)": "920 mg",
+    "Calcium (mg)": "800 mg",
+    "Phosphorus (mg)": "780 mg",
+    "Iodine (mg)": "0.1 mg",
+    "Iron (mg)": "13.5 mg",
+    "Vitamin B12 (?g)": "1 ?g",
+    "Folic Acid (?g)": "75 ?g",
+    "Chromium (?g)": "7.5 ?g",
+    "Molybdenum (?g)": "11 ?g",
+    "Carnitine (mg)": "7 mg",
+    "Choline (mg)": "58 mg",
+    "Inositol (mg)": "30 mg",
+    "Taurine (mg)": "15 mg",
+    "Vitamin A (?g)": "360 ?g",
+    "Vitamin E (mg)": "7 mg",
+    "Vitamin C (mg)": "30 mg",
+    "Vitamin K (?g)": "45 ?g",
+    "Copper (?g)": "540 ?g",
+    "Magnesium (mg)": "76 mg",
+    "Zinc (mg)": "4.5 mg",
+    "Manganese (mg)": "1.5 mg",
+    "Selenium (?g)": "15 ?g",
+    "Vitamin B1 (mg)": "0.5 mg",
+    "Vitamin B2 (mg)": "0.7 mg",
+    "Vitamin B3 (mg)": "7 mg",
+    "Vitamin B5 (mg)": "3 mg",
+    "Vitamin B6 (mg)": "0.76 mg",
+    "Biotin (?g)": "14 ?g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "A) Zydus Wellness Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001417"
+  }
+ },
+ {
+  "title": "Kesar Badam Refill",
+  "handle": "kesar-badam-refill",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "129",
+    "compare_at_price": "129",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/258418_14-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+    },
+    "barcode": "8901542000058"
+   },
+   {
+    "title": "500g",
+    "price": "345",
+    "compare_at_price": "345",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/258421_25-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258418_14-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258418-2_12-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258418-3_11-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258418-4_11-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258418-5_6-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258418-6_5-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258418-7_5-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258418-8_5-complan-nutrition-health-drink-improves-concentration-memory-kesar-badam-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Milk Solids (51.9%), Sugar, Peanut Oil, Maltodextrin, Minerals, Artificial (Milk Masala And Saffron) Flavouring Substances, Almonds (0.8%), Natural Colours {Ins100(I), Ins160B(Ii)}, Vitamins, Saffron (0.05%), Inositol, Taurine, L-Carnitine",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "33g",
+    "Energy (kcal)": "419 kcal",
+    "Protein (g)": "18 g",
+    "Carbohydrate (g)": "62 g",
+    "Total Sugars (g)": "50.5 g",
+    "Added Sugars (g)": "26.8 g",
+    "Total Fat (g)": "11 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "400 mg",
+    "Potassium (mg)": "920 mg",
+    "calcium (mg)": "800 mg",
+    "Phosphorus (mg)": "780 mg",
+    "Iron (mg)": "13.5 mg",
+    "Iodine (mg)": "0.1 mg",
+    "Vitamin A (µg)": "360 µg",
+    "Vitamin D2 (µg)": "10 µg",
+    "Vitamin E (mg)": "7 mg",
+    "Vitamin C (mg)": "30 mg",
+    "Vitamin K (µg)": "45 µg",
+    "Vitamin B1 (mg)": "0.5 mg",
+    "Vitamin B2 (mg)": "0.7 mg",
+    "Vitamin B3 (mg)": "6 mg",
+    "Vitamin B6 (mg)": "0.76 mg",
+    "Vitamin B12 (µg)": "1 µg",
+    "Folic Acid (µg)": "75 µg",
+    "Biotin (µg)": "14 µg",
+    "Choline (mg)": "58 mg",
+    "Inositol (mg)": "30 mg",
+    "Taurine (mg)": "15 mg",
+    "Carnitine (mg)": "7 mg",
+    "Copper (µg)": "540 µg",
+    "Zinc (mg)": "4.5 mg",
+    "Magnesium (mg)": "76 mg",
+    "Manganese (mg)": "1.5 mg",
+    "Molybdenum (µg)": "11 µg",
+    "Selenium (µg)": "15 µg",
+    "Chloride (mg)": "500 mg",
+    "Chromium (µg)": "7.5 µg",
+    "Saturated Fat": "Not More Than 2.5 g Per 100g",
+    "Trans Fat": "Not More Than 0.1 g Per 100g",
+    "%RDA Per Serve (33g)": "{'Energy': '1%', 'Saturated Fat': '3.8%', 'Trans Fat': '1.7%', 'Added Sugars': '17.7%', 'Sodium': '6.6%'}",
+    "RDA": "%RDA' (Basis Of 2000 kcal Energy) Per Serve (33 g)"
+   },
+   "storageInstructions": "* On opening this pack, transfer contents immediately into a suitable air-tight container\n* Keep the container closed after use\n* Store in a cool, dry place away from strong odours",
+   "manufacturerName": "A) Zydus Wellness Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001417"
+  }
+ },
+ {
+  "title": "Pista Badam Refill",
+  "handle": "pista-badam-refill",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "328",
+    "compare_at_price": "328",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/280837_18-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+    },
+    "barcode": "8901542000102"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280837_18-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280837-2_2-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280837-3_2-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280837-4_2-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280837-5_2-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280837-6_2-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280837-7_2-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280837-8_2-complan-nutrition-health-drink-improves-concentration-memory-pista-badam-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Milk Solids (51.9%), Sugar, Peanut Oil, Maltodextrin, Minerals, Artificial (Milk Masala and Saffron) Flavouring Substances, Almonds (0.8%), Natural Colours, Vitamins, Saffron (0.05%), Inositol, Taurine, L-Carnitine",
+   "nutritionalInfo": {
+    "Serving Size": "33 g (2 heaped tablespoons)",
+    "Energy (kcal)": "419",
+    "Protein (g)": "18",
+    "Carbohydrate (g)": "62",
+    "Total Sugars (g)": "50.5",
+    "Added Sugars (g)": "26.8",
+    "Total Fat (g)": "11",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "400",
+    "Potassium (mg)": "920",
+    "Iodine (mg)": "0.1",
+    "Vitamin B12 (?g)": "1",
+    "Folic Acid (?g)": "75",
+    "Chromium (?g)": "7.5",
+    "Molybdenum (?g)": "11",
+    "Carnitine (mg)": "7",
+    "Choline (mg)": "58",
+    "Calcium (mg)": "800",
+    "Vitamin A (?g)": "360",
+    "Inositol (mg)": "30",
+    "Phosphorus (mg)": "780",
+    "Vitamin E (mg)": "7",
+    "Taurine (mg)": "15",
+    "Vitamin D2 (?g)": "10",
+    "Vitamin C (mg)": "30",
+    "Vitamin K (?g)": "45",
+    "Copper (?g)": "540",
+    "Magnesium (mg)": "76",
+    "Zinc (mg)": "4.5",
+    "Manganese (mg)": "1.5",
+    "Vitamin B1 (mg)": "0.5",
+    "Vitamin B2 (mg)": "0.7",
+    "Vitamin B3 (mg)": "6",
+    "Vitamin B6 (mg)": "0.76",
+    "Calcium Pantothenate (mg)": "3",
+    "Biotin (?g)": "14"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Keep the container closed after opening",
+   "manufacturerName": "A) Zydus Wellness Products Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001417"
+  }
+ },
+ {
+  "title": "NutriGro Badam Kheer",
+  "handle": "nutrigro-badam-kheer",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361844_1-complan-nutrigro-badam-kheer-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+    },
+    "barcode": "8901542001840"
+   },
+   {
+    "title": "400g",
+    "price": "672",
+    "compare_at_price": "672",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361841_1-complan-nutrigro-badam-kheer-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361844_1-complan-nutrigro-badam-kheer-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361844-2_1-complan-nutrigro-badam-kheer-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361844-3_1-complan-nutrigro-badam-kheer-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361844-4_1-complan-nutrigro-badam-kheer-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361844-5_1-complan-nutrigro-badam-kheer-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361841_1-complan-nutrigro-badam-kheer-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Complan NutriGro is a specially formulated nutritional drink powder designed for children aged 2–6 years. It supports overall growth, healthy weight, height development, and cognitive development during the crucial early years. Enriched with Pro Immuno Nutrients and essential vitamins & minerals, it helps meet the daily nutritional needs of growing kids.",
+   "ingredients": "Milk Solids (26.1%) [Skimmed Milk Powder, Whey Protein Concentrate (7.37%), Casein (2.2%)], Maltodextrin, Sugar, Peanut Oil, Fructo-Oligosaccharide, Minerals, Flavouring Substances (Natural, Nature-Identical And Artificial – Milk Masala), Natural Colour (INS 160b(Ii)), Vitamins, DHA, Choline Bitartrate, Thickener (INS 415), Inositol, Taurine, Bifidobacterium Lactis, L-Carnitine, Nucleotides.\nAllergens: Contains Milk And Nut (Peanut Oil).\nMay Contain Traces Of Soy And Nuts (Almond And Pistachio).",
+   "nutritionalInfo": {
+    "Energy": "429 kcal",
+    "Protein": "12.5 g",
+    "Whey Protein": "6.25 g",
+    "Casein": "6.25 g",
+    "Carbohydrate": "62.5 g",
+    "Total Sugars": "38.2 g",
+    "Added Sugars": "24 g",
+    "Total Fat": "13 g",
+    "Cholesterol": "0 mg",
+    "Vitamin B1": "0.5 mg",
+    "Vitamin B2": "0.6 mg",
+    "Vitamin B3": "7 mg",
+    "Pantothenic Acid": "2 mg",
+    "Biotin": "8 µg",
+    "Calcium": "500 mg",
+    "Phosphorus": "500 mg",
+    "Vitamin D?": "15 µg",
+    "Vitamin K": "30 µg",
+    "Manganese": "1.2 mg",
+    "Magnesium": "50 mg",
+    "Vitamin A": "375 µg",
+    "Vitamin E": "5 mg",
+    "Vitamin C": "27 mg",
+    "Zinc": "3 mg",
+    "Selenium": "17 µg",
+    "Iron": "7.5 mg",
+    "Iodine": "90 µg",
+    "Vitamin B6": "0.9 mg",
+    "Vitamin B12": "1 µg",
+    "Folic Acid": "48 µg",
+    "Potassium": "525 mg",
+    "Chromium": "11 µg",
+    "Molybdenum": "17 µg",
+    "Copper": "340 µg",
+    "Sodium": "170 mg",
+    "Chloride": "190 mg",
+    "Prebiotic (FOS)": "6 g"
+   },
+   "fssaiLicense": "10020021005270",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "NutriGro Creamy Vanilla",
+  "handle": "nutrigro-creamy-vanilla",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "672",
+    "compare_at_price": "672",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361843_1-complan-nutrigro-creamy-vanilla-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+    },
+    "barcode": "8901542001895"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361843_1-complan-nutrigro-creamy-vanilla-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361843-2_1-complan-nutrigro-creamy-vanilla-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361843-3_1-complan-nutrigro-creamy-vanilla-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361843-4_1-complan-nutrigro-creamy-vanilla-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361843-5_1-complan-nutrigro-creamy-vanilla-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Complan NutriGro is a specially formulated nutritional drink powder designed for children aged 2–6 years. It supports overall growth, healthy weight, height development, and cognitive development during the crucial early years. Enriched with Pro Immuno Nutrients and essential vitamins & minerals, it helps meet the daily nutritional needs of growing kids.",
+   "ingredients": "Milk Solids (26.1%) [Skimmed Milk Powder, Whey Protein Concentrate (7.37%), Casein (2.2%)], Maltodextrin, Sugar, Peanut Oil, Fructo-Oligosaccharide, Minerals, Flavouring Substances (Natural And Nature-Identical), Vitamins, DHA, Choline Bitartrate, Thickener (INS 415), Inositol, Taurine, Bifidobacterium Lactis, L-Carnitine, Nucleotides.\nAllergens: Contains Milk And Nut (Peanut Oil).\nMay Contain Traces Of Soy And Nuts (Almond And Pistachio).",
+   "nutritionalInfo": {
+    "Energy": "429 kcal",
+    "Protein": "12.5 g",
+    "Whey protein": "6.25 g",
+    "Casein": "6.25 g",
+    "Carbohydrate": "62.5 g",
+    "Total Sugars": "38.2 g",
+    "Added Sugars": "24 g",
+    "Total Fat": "13 g",
+    "Cholesterol": "0 mg",
+    "Vitamin B?": "0.9 mg",
+    "Pantothenic Acid": "2 mg",
+    "Biotin": "8 µg",
+    "Calcium": "500 mg",
+    "Phosphorus": "500 mg",
+    "Vitamin D?": "15 µg",
+    "Vitamin K": "30 µg",
+    "Manganese": "1.2 mg",
+    "Magnesium": "50 mg",
+    "Vitamin A": "375 µg",
+    "Vitamin E": "5 mg",
+    "Vitamin C": "27 mg",
+    "Zinc": "3 mg",
+    "Selenium": "17 µg",
+    "Iron": "7.5 mg",
+    "Iodine": "90 µg",
+    "Vitamin B??": "1 µg",
+    "Folic Acid": "48 µg",
+    "Potassium": "525 mg",
+    "Chromium": "11 µg",
+    "Molybdenum": "17 µg",
+    "Copper": "340 µg",
+    "Sodium": "170 mg",
+    "Chloride": "190 mg",
+    "Prebiotic (FOS)": "6 g"
+   },
+   "fssaiLicense": "10020021005270",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "NutriGro Delicious Chocolate",
+  "handle": "nutrigro-delicious-chocolate",
+  "vendor": "Complan (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "672",
+    "compare_at_price": "672",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361842_1-complan-nutrigro-delicious-chocolate-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+    },
+    "barcode": "8901542001864"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361842_1-complan-nutrigro-delicious-chocolate-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361842-2_1-complan-nutrigro-delicious-chocolate-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361842-3_1-complan-nutrigro-delicious-chocolate-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361842-4_1-complan-nutrigro-delicious-chocolate-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361842-5_1-complan-nutrigro-delicious-chocolate-flavour-nutritional-drink-powder-for-2-6-years.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Complan NutriGro is a specially formulated nutritional drink powder designed for children aged 2–6 years. It supports overall growth, healthy weight, height development, and cognitive development during the crucial early years. Enriched with Pro Immuno Nutrients and essential vitamins & minerals, it helps meet the daily nutritional needs of growing kids.",
+   "ingredients": "Milk Solids (26.1%) [Skimmed Milk Powder, Whey Protein Concentrate (7.37%), Casein (2.2%)], Sugar, Maltodextrin, Peanut Oil, Fructo-Oligosaccharide, Cocoa Powder, Minerals, Flavouring Substances (Natural, Nature-Identical & Artificial – Chocolate), Vitamins, DHA, Choline Bitartrate, Thickener (INS 415), Inositol, Taurine, Bifidobacterium Lactis, L-Carnitine, Nucleotides.\nAllergens: Contains Milk And Nut (Peanut Oil).\nMay Contain Traces Of Soy And Nuts (Almond And Pistachio).",
+   "nutritionalInfo": {
+    "Energy": "429 kcal",
+    "Protein": "12.5 g",
+    "Whey protein": "6.25 g",
+    "Casein": "6.25 g",
+    "Carbohydrate": "62.5 g",
+    "Total Sugars": "38.2 g",
+    "Added Sugars": "23 g",
+    "Total Fat": "13 g",
+    "Cholesterol": "0 mg",
+    "Vitamin B?": "0.9 mg",
+    "Pantothenic Acid": "2 mg",
+    "Biotin": "8 µg",
+    "Calcium": "500 mg",
+    "Phosphorus": "500 mg",
+    "Vitamin D?": "15 µg",
+    "Vitamin K": "30 µg",
+    "Manganese": "1.2 mg",
+    "Magnesium": "50 mg",
+    "Vitamin A": "375 µg",
+    "Vitamin E": "5 mg",
+    "Vitamin C": "27 mg",
+    "Zinc": "3 mg",
+    "Selenium": "17 µg",
+    "Iron": "7.5 mg",
+    "Iodine": "90 µg",
+    "Vitamin B??": "1 µg",
+    "Folic Acid": "48 µg",
+    "Potassium": "525 mg",
+    "Chromium": "11 µg",
+    "Molybdenum": "17 µg",
+    "Copper": "340 µg",
+    "Sodium": "170 mg",
+    "Chloride": "190 mg",
+    "Prebiotic (FOS)": "6 g"
+   },
+   "fssaiLicense": "10020021005270",
+   "countryOfOrigin": "India"
+  }
+ }
+]
