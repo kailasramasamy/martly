@@ -1,0 +1,75 @@
+[
+ {
+  "title": "Packaged Drinking Water",
+  "handle": "packaged-drinking-water",
+  "vendor": "Aquafina (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/103235_3-aquafina-packaged-drinking-water.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265894_9-aquafina-packaged-drinking-water.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100184006_6-aquafina-packaged-drinking-water.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355754_2-aquafina-packaged-drinking-water.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103235_3-aquafina-packaged-drinking-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103235-2_3-aquafina-packaged-drinking-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103235-3_3-aquafina-packaged-drinking-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103235-4_2-aquafina-packaged-drinking-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103235-5_2-aquafina-packaged-drinking-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103235-6_2-aquafina-packaged-drinking-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/103235-7_1-aquafina-packaged-drinking-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265894_9-aquafina-packaged-drinking-water.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
