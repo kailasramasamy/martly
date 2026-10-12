@@ -1,0 +1,833 @@
+[
+ {
+  "title": "Cotha Blend Coffee",
+  "handle": "cotha-blend-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000105_3-cothas-coffee-coffee-powder-premium-blended.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000104_3-cothas-coffee-coffee-powder-premium-blended.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000105_3-cothas-coffee-coffee-powder-premium-blended.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000105-2_3-cothas-coffee-coffee-powder-premium-blended.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000105-3_3-cothas-coffee-coffee-powder-premium-blended.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000105-4_3-cothas-coffee-coffee-powder-premium-blended.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000104_3-cothas-coffee-coffee-powder-premium-blended.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Speciality Blend Coffee",
+  "handle": "speciality-blend-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "62",
+    "compare_at_price": "62",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100333520_4-cothas-coffee-coffee-powder-speciality-blend-of-coffee-chicory-powder.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/186070_10-cothas-coffee-.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333520_4-cothas-coffee-coffee-powder-speciality-blend-of-coffee-chicory-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333520-2_5-cothas-coffee-coffee-powder-speciality-blend-of-coffee-chicory-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333520-3_5-cothas-coffee-coffee-powder-speciality-blend-of-coffee-chicory-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333520-4_5-cothas-coffee-coffee-powder-speciality-blend-of-coffee-chicory-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333520-5_5-cothas-coffee-coffee-powder-speciality-blend-of-coffee-chicory-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/186070_10-cothas-coffee-.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Extra Strong Hotel Blend Coffee",
+  "handle": "extra-strong-hotel-blend-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "94",
+    "compare_at_price": "94",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/252161_10-cothas-coffee-coffee-powder-extra-strong.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "425",
+    "compare_at_price": "425",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/186232_11-cothas-coffee-coffee-powder-extra-strong.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252161_10-cothas-coffee-coffee-powder-extra-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252161-2_8-cothas-coffee-coffee-powder-extra-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252161-3_3-cothas-coffee-coffee-powder-extra-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252161-4_3-cothas-coffee-coffee-powder-extra-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252161-5_3-cothas-coffee-coffee-powder-extra-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/186232_11-cothas-coffee-coffee-powder-extra-strong.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Premium Special Hotel Blend Coffee",
+  "handle": "premium-special-hotel-blend-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "124",
+    "compare_at_price": "124",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/252164_3-cothas-coffee-coffee-powder-premium-special.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "460",
+    "compare_at_price": "460",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/186077_4-cothas-coffee-coffee-powder-premium-special.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252164_3-cothas-coffee-coffee-powder-premium-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252164-2_6-cothas-coffee-coffee-powder-premium-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252164-3_6-cothas-coffee-coffee-powder-premium-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252164-4_5-cothas-coffee-coffee-powder-premium-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252164-5_5-cothas-coffee-coffee-powder-premium-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/186077_4-cothas-coffee-coffee-powder-premium-special.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Perfect Blend Filter Coffee",
+  "handle": "perfect-blend-filter-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "152",
+    "compare_at_price": "152",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329478_2-cothas-coffee-perfect-blend-filter-coffee.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "510",
+    "compare_at_price": "510",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329479_1-cothas-coffee-perfect-blend-filter-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329478_2-cothas-coffee-perfect-blend-filter-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329478-2_2-cothas-coffee-perfect-blend-filter-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329478-3_2-cothas-coffee-perfect-blend-filter-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329478-4_2-cothas-coffee-perfect-blend-filter-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329478-5_2-cothas-coffee-perfect-blend-filter-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329479_1-cothas-coffee-perfect-blend-filter-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Nova Blend Filter Coffee",
+  "handle": "nova-blend-filter-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "228",
+    "compare_at_price": "228",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40087137_2-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "345",
+    "compare_at_price": "345",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40087136_3-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40087137_2-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40087137-2_2-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40087137-3_2-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40087137-4_2-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40087137-5_2-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40087136_3-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Deccan Brew Coffee",
+  "handle": "deccan-brew-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "82",
+    "compare_at_price": "82",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329480_2-cothas-coffee-deccan-brew-coffee-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329480_2-cothas-coffee-deccan-brew-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329480-2_2-cothas-coffee-deccan-brew-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329480-3_1-cothas-coffee-deccan-brew-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329480-4_1-cothas-coffee-deccan-brew-coffee-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329480-5_1-cothas-coffee-deccan-brew-coffee-powder.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Premium Blend Strong Coffee",
+  "handle": "premium-blend-strong-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "101",
+    "compare_at_price": "101",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100333523_6-cothas-coffee-coffee-powder-premium-blended.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333523_6-cothas-coffee-coffee-powder-premium-blended.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333523-2_5-cothas-coffee-coffee-powder-premium-blended.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333523-3_4-cothas-coffee-coffee-powder-premium-blended.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333523-4_4-cothas-coffee-coffee-powder-premium-blended.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100333523-5_2-cothas-coffee-coffee-powder-premium-blended.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Filter Coffee Decoction",
+  "handle": "filter-coffee-decoction",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244941_3-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577-2_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577-3_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577-4_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577-5_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577-6_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577-7_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244941_3-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Filter Coffee Decoction - 15% Chicory",
+  "handle": "filter-coffee-decoction-15-chicory",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244575_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244576_3-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244575_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244575-2_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244575-3_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244575-4_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244575-5_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244575-6_1-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244576_3-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Classic Cold Coffee",
+  "handle": "classic-cold-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014_2-cothas-cold-coffee-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014_2-cothas-cold-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014-2_2-cothas-cold-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014-3_2-cothas-cold-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014-4_2-cothas-cold-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014-5_2-cothas-cold-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014-6_1-cothas-cold-coffee-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014-7_1-cothas-cold-coffee-classic.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mocha Cold Coffee",
+  "handle": "mocha-cold-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217016_2-cothas-cold-coffee-mocha.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217016_2-cothas-cold-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217016-2_2-cothas-cold-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217016-3_2-cothas-cold-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217016-4_2-cothas-cold-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217016-5_2-cothas-cold-coffee-mocha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217016-6_1-cothas-cold-coffee-mocha.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Bon Bon Cold Coffee",
+  "handle": "bon-bon-cold-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015_2-cothas-cold-coffee-bon-bon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015_2-cothas-cold-coffee-bon-bon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015-2_2-cothas-cold-coffee-bon-bon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015-3_2-cothas-cold-coffee-bon-bon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015-4_2-cothas-cold-coffee-bon-bon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015-5_2-cothas-cold-coffee-bon-bon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015-6_1-cothas-cold-coffee-bon-bon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015-7_1-cothas-cold-coffee-bon-bon.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Java Beri Cold Coffee",
+  "handle": "java-beri-cold-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217017_1-cothas-cold-coffee-java-beri.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217017_1-cothas-cold-coffee-java-beri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217017-2_1-cothas-cold-coffee-java-beri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217017-3_1-cothas-cold-coffee-java-beri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217017-4_1-cothas-cold-coffee-java-beri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217017-5_1-cothas-cold-coffee-java-beri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217017-6_1-cothas-cold-coffee-java-beri.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Peachers Cold Coffee",
+  "handle": "peachers-cold-coffee",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217018_1-cothas-cold-coffee-peachers.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217018_1-cothas-cold-coffee-peachers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217018-2_1-cothas-cold-coffee-peachers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217018-3_1-cothas-cold-coffee-peachers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217018-4_1-cothas-cold-coffee-peachers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217018-5_1-cothas-cold-coffee-peachers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217018-6_1-cothas-cold-coffee-peachers.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Vanilla Milkshake",
+  "handle": "vanilla-milkshake",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011_2-cothas-vanilla-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011_2-cothas-vanilla-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011-2_2-cothas-vanilla-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011-3_2-cothas-vanilla-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011-4_2-cothas-vanilla-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011-5_2-cothas-vanilla-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011-6_1-cothas-vanilla-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011-7_1-cothas-vanilla-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Strawberry Milkshake",
+  "handle": "strawberry-milkshake",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012_2-cothas-strawberry-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012_2-cothas-strawberry-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012-2_2-cothas-strawberry-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012-3_2-cothas-strawberry-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012-4_2-cothas-strawberry-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012-5_2-cothas-strawberry-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012-6_1-cothas-strawberry-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012-7_1-cothas-strawberry-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Choco Banana Milkshake",
+  "handle": "choco-banana-milkshake",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013_2-cothas-choco-banana-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013_2-cothas-choco-banana-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013-2_2-cothas-choco-banana-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013-3_2-cothas-choco-banana-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013-4_2-cothas-choco-banana-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013-5_2-cothas-choco-banana-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013-6_1-cothas-choco-banana-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013-7_1-cothas-choco-banana-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Badam Milk",
+  "handle": "badam-milk",
+  "vendor": "Cothas Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019_2-cothas-badam-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019_2-cothas-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019-2_2-cothas-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019-3_2-cothas-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019-4_2-cothas-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019-5_2-cothas-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019-6_2-cothas-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019-7_1-cothas-badam-milk.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
