@@ -1,0 +1,46 @@
+[
+ {
+  "title": "Khandsari Sugar",
+  "handle": "khandsari-sugar",
+  "vendor": "Safe Harvest",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "179",
+    "compare_at_price": "179",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549_10-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549_10-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549-2_7-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549-3_5-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549-4_5-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549-5_4-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549-6_1-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549-7_1-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549-8_1-safe-harvest-khandsari-sugar-pesticide-free.jpg"
+   }
+  ]
+ }
+]
