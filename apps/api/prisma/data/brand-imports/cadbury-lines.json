@@ -1,0 +1,432 @@
+{
+  "brand": "Cadbury (Mondelez)",
+  "manufacturer": "Mondelez India Foods Pvt Ltd",
+  "feed": "cadbury-lines-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cadbury-mondelez/logo-a7d70513.png",
+  "themeColor": "#4B0082",
+  "themeColorSecondary": "#C9A063",
+  "namePrefix": "Cadbury ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Cadbury Bournville Rich Cocoa Dark Chocolate": "Bournville Rich Cocoa 50% Dark Chocolate"
+  },
+  "rules": [
+    {
+      "match": "^5\\ Star\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^5\\ Star\\ 3D\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^5\\ Star\\ Oreo\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^5\\ Star\\ Mini\\ Treats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Bournville\\ 50%\\ Dark\\ Assorted\\ Collection\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Bournville\\ Intense\\ Orange\\ 70%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Bournville\\ Orange\\ 50%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Bournville\\ Cranberry\\ 50%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Bournville\\ Fruit\\ \\&\\ Nut\\ 50%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Bournville\\ Rich\\ Cocoa\\ 50%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Bournville\\ Rich\\ Cocoa\\ 70%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Bournville\\ Rum\\ \\&\\ Raisin\\ 50%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Almond\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Hazelnut\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Crackle$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Crispello$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Roast\\ Almond$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Mocha\\ Almond$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Madbury\\ Nutty\\ Kulfi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Madbury\\ Tangy\\ Mango$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Mini\\ Treats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Selections\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Bubbly$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Bubbly\\ Bubblegum$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Roast\\ Almond$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Hazelnut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Ganache$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Mousse$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Oreo$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Oreo\\ Red\\ Velvet$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Desserts\\ Plum\\ Cake$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Desserts\\ Walnut\\ Brownie$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Dubai\\ Kunafa$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Mini\\ Treats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Miniatures\\ Premium\\ Assorted\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Silk\\ Pralines\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Fuse\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Fuse\\ Mini\\ Treats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Fuse\\ Fit\\ Almonds\\ \\&\\ Peanuts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Fuse\\ Fit\\ Cranberries\\ \\&\\ Nuts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Gems$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Gems\\ Monster$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Gems\\ Mini\\ Treats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Gems\\ Surprise\\ Ball$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Gems\\ Birthday\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Nutties$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Temptations\\ Almond\\ Treat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Temptations\\ Rum\\ \\&\\ Raisins$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    }
+  ]
+}
