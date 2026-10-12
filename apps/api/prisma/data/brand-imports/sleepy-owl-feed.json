@@ -48,7 +48,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40177266_9-sleepy-owl-cold-brew-coffee-packs-original.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl Original Cold Brew Coffee is a high-quality cold brew coffee made with Arabica coffee beans sourced directly from farms in Chikmagalur, Karnataka. The coffee is medium-roasted to achieve the perfect balance of dark and light flavours, resulting in a deep, characteristic chocolate taste. The cold brew process ensures a smooth, naturally sweet coffee with low acidity. The product is convenient to use, with each pack containing 45 g of coffee that can be brewed in cold water to make 3-5 cups of coffee, depending on your preferred strength.",
+   "ingredients": "Roasted Coffee",
+   "usageInstructions": "Brew in cold water. For 3 cups of regular strength Sleepy Owl, use 500 ml water. For 5 cups of light strength coffee, use 750 ml water and for 2 cups of extra strong coffee use 300 ml water. Once made, have it as you want - plain, heated, with milk, or for a special Vietnamese coffee, with condensed milk.",
+   "manufacturerName": "Sleepy Owl Coffee Pvt Ltd 145/1",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13317008000352"
+  }
  },
  {
   "title": "Dark Roast Cold Brew Coffee",
@@ -87,7 +95,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172086-6_1-sleepy-owl-cold-brew-coffee-packs-dark-roast.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl Brewpacks is a super convenient way to make high-quality cold brew coffee. Just leave a pack in a jar of water for 12 to 15 hours and wake up to a delicious cold brew. The dark roast brew packs are made with Arabica coffee from Chikmagalur, which has been dark roasted to bring out intense, complex notes of chocolate and nuts. The best part is you can customise the strength by adjusting the water quantity. Each pack contains 45 g of Arabica coffee, made with care at the brand's production facility in Delhi. Sleepy Owl's mission is to provide high-quality cold brew that can be enjoyed easily at home, work or on-the-go, without compromising on taste or health. The product contains no artificial additives, sugar or preservatives, and is vegan.",
+   "ingredients": "Roasted Coffee",
+   "usageInstructions": "Brew in cold water. For 3 cups of regular strength Sleepy Owl, use 500 ml water. For 5 cups of light strength coffee, use 750 ml water and for 2 cups of extra strong coffee use 300 ml water. Once made, have it as you want - plain, heated, with milk, or for a special Vietnamese coffee, with condensed milk.",
+   "manufacturerName": "Sleepy Owl Coffee Pvt Ltd 145/1",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13317008000352"
+  }
  },
  {
   "title": "French Vanilla Cold Brew Coffee",
@@ -103,7 +119,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
-    }
+    },
+    "barcode": "8908012230397"
    }
   ],
   "images": [
@@ -126,7 +143,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200999-6_2-sleepy-owl-french-vanilla-cold-brew-packs.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "This product is made from pure 100% Arabica coffee beans, giving you a nutty flavour and aroma of fresh vanilla beans. It has no added sugar and is preservative-free, making it a healthy choice. The product has proprietary filter bags that ensure the grounds stay in and the flavour seeps out. It is super simple to prepare at home, as no equipment is needed - you just have to add water and let it brew overnight. Once brewed, it stays fresh for a week when kept refrigerated, and you can enjoy the characteristic French Vanilla flavour whenever and wherever you wish.",
+   "ingredients": "Ground Coffee\nFrench Vanilla",
+   "usageInstructions": "It is easy to make and can be customised according to your taste.\nNo equipment is needed to brew in. It has its own proprietary filter bags that ensure the ground stays in and the flavour seeps out.\nYou just have to add water and let it brew overnight. Wake up to the strong aroma of fresh cold brew.\nOnce brewed it stays fresh for a week when kept refrigerated. You can enjoy the characteristic French Vanilla flavour whenever and wherever you wish to.",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited & 145/1",
+   "fssaiLicense": "13317008000352",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Assorted Cold Brew Coffee",
@@ -142,7 +167,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576_5-sleepy-owl-cold-brew-coffee-assorted.jpg"
-    }
+    },
+    "barcode": "8908012230700"
    }
   ],
   "images": [
@@ -171,7 +197,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210576-8_2-sleepy-owl-cold-brew-coffee-assorted.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl Assorted Cold Brew Bags are made with high-quality beans. Making this coffee is very easy and simple. It is as simple as adding water to a cup and brewing it to perfection to your desired strength! The bags are made of high-quality filter paper. With its fewer levels of antioxidants, this is your perfect those of caffeine without much hassle. It is slow-brewed and steeped instead of quick brewing. This coffee is made chilled, never heated, and with a higher coffee to water ratio than regular drip coffee. It comes with a high-quality proprietary filter. Contains no sugar or preservatives.",
+   "ingredients": "Roasted Arabica Coffee:",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50 g",
+    "Energy": "0 kcal",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrates": "0 g",
+    "Sugars": "0 g",
+    "Dietary Fiber": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in a Cool, Dry & Hygienic Place",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited & 145/1",
+   "fssaiLicense": "13317008000352",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Original Hot Brew Coffee Bags",
@@ -216,7 +263,18 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184308-8_1-sleepy-owl-hot-brew-coffee-original.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate coffee experience with Sleepy Owl's Original Hot Brew Coffee Dip Bags. Crafted with the finest Arabica beans sourced from sustainable farms, these premium-quality coffee dip bags deliver a smooth, flavourful, and authentic taste that will wake up your senses and kickstart your day. Boasting a deep, rich characteristic and a hint of natural sweetness, this full-bodied coffee is more flavourful than a typical cold brew. The custom-made filter paper bag ensures a hassle-free brewing process, allowing you to steep the coffee dip bag in hot water for a few minutes and enjoy a delicious cup of coffee without the need for any additional equipment. Whether you're a busy hustler, a travelling adventurer, or a true coffee aficionado, Sleepy Owl's Original Hot Brew Coffee Dip Bags offer a convenient and satisfying way to savour the perfect cup of coffee anytime, anywhere.",
+   "ingredients": "Roasted Coffee",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Serving Size: 10 g"
+   },
+   "storageInstructions": "*Store in a cool, dry, and hygienic place",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited & 145/1",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13317008000352"
+  }
  },
  {
   "title": "Dark Roast Hot Brew Coffee Bags",
@@ -261,7 +319,18 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184309-8_1-sleepy-owl-hot-brew-coffee-dark-roast.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, aromatic experience of Sleepy Owl Dark Brew Coffee. Crafted with premium Arabica beans, this expertly roasted coffee delivers an intense, full-bodied flavour that will delight coffee connoisseurs. Sealed in a custom-made filter paper bag, the grounds are kept out while the unique brewing process unlocks the coffee's depth of flavour, allowing you to enjoy a delicious cup in just minutes. Whether you're a busy professional, an adventurous traveller, or a true coffee aficionado, Sleepy Owl's innovative dip bags offer unparalleled convenience without compromising on quality. Sustainably sourced and free from preservatives, this dark roast coffee is the perfect companion for your daily hustle, providing a smooth and satisfying experience with every sip.",
+   "ingredients": "Roasted Coffee",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Calories: 0 kcal Total Fat: 0 g Saturated Fat: 0 g Trans Fat: 0 g Cholesterol: 0 mg Sodium: 0 mg Total Carbohydrates: 0 g Dietary Fiber: 0 g Total Sugars: 0 g Protein: 0 g"
+   },
+   "storageInstructions": "*Store in a Cool, Dry & Hygienic Place",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited & 145/1",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13317008000352"
+  }
  },
  {
   "title": "Hazelnut Hot Brew Coffee Bags",
@@ -300,7 +369,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200992-6_2-sleepy-owl-hazelnut-hot-brew-bags.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Sleepy Owl Hazelnut Hot Brew Bags offer a high-quality Arabica beans blend that provides an earthy and toasted flavour to your morning coffee. Each pack contains 10 individual brew bags, with each bag holding 10 grams of coffee, making it perfect for a single serving. This fully vegetarian product is free from added sugar and chemicals, ensuring a healthy and eco-friendly choice. The recyclable and travel-friendly packaging adds to the convenience.",
+   "ingredients": "Ground Coffee, Hazelnut",
+   "usageInstructions": "Place a Brew Bag in a cup.\nAdd 250ml of hot water, Dip it a few times to activate brewing.\nLeave it—5 minutes, Have it black, or add milk and sugar to your liking.\nStore in a cool and dry place.\nKeep away from direct sunlight.",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited & 145/1",
+   "fssaiLicense": "13317008000352",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Assorted Hot Brew Coffee Bags",
@@ -345,7 +422,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210577-8_2-sleepy-owl-hot-brew-coffee-assorted.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a satisfying and smooth coffee experience with Sleepy Owl Hot Brew Assorted Bags. Crafted with high-quality Arabica beans, this coffee boasts a deep, characteristic flavour that is full-bodied and more flavourful compared to cold brew. With a hint of natural sweetness, it's a delightful caffeine fix without the hassle. The easy, clean, and healthy brewing process simply requires adding water to the high-quality filter paper bags, allowing you to brew at the optimal temperature of 195-205 degrees Fahrenheit for the perfect cup. Packed with antioxidants and free from preservatives, this coffee is your go-to choice for a satisfying and indulgent coffee moment.",
+   "ingredients": "Sugar, Edible Starch, Liquid Glucose And Anticaking Agent (470(I)). Contains Added Flavours (Natural Flavour Nature Identical Flavouring Substances).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "300 kcal",
+    "Protein": "15 g",
+    "Total Fat": "15 g",
+    "Saturated Fat": "5 g",
+    "Carbohydrates": "40 g",
+    "Sugars": "10 g",
+    "Dietary Fiber": "5 g",
+    "Sodium": "100 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited & 145/1",
+   "fssaiLicense": "13317008000352",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Kaapi Filter Coffee Bags",
@@ -361,7 +457,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469_1-sleepy-owl-filter-coffee-brew-bags.jpg"
-    }
+    },
+    "barcode": "8908012230748"
    }
   ],
   "images": [
@@ -384,7 +481,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220469-6_1-sleepy-owl-filter-coffee-brew-bags.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl Filter Coffee is made with high quality 100% Arabica coffee beans. It has a deep, characteristic, caramel flavour. This coffee has is smooth with a hint of natural sweetness. It is a full-bodied and flavorful coffee compared to a cold brew. It contains a high level of antioxidants. The best temperature to brew is between 195-205 degrees Fahrenheit which will extract at the optimum rate.\nBenefits:\nThis filter coffee made using proprietary filter paper.\nNo sugar and No preservatives.\nIt is made from 100% Arabica coffee.\nIt is made from flavourful and smooth coffee beans\nPerfect morning coffee.",
+   "ingredients": "Roasted Coffee (85%) , Chicory (15%).",
+   "storageInstructions": "Add a Brew Bag to a cup and add hot water.\nDip a few times to activate Brewing.\nWe recommend brewing for 5 minutes.\nStore in a cool and dry place.\nKeep away from direct sunlight.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13317008000352"
+  }
  },
  {
   "title": "Original Instant Coffee",
@@ -400,7 +504,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40352720_1-sleepy-owl-original-instant-coffee.jpg"
-    }
+    },
+    "barcode": "8906144492218"
    },
    {
     "title": "100g",
@@ -432,7 +537,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40239345_7-sleepy-owl-premium-instant-coffee-original-roasted-ground-no-preservatives.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl Original Instant Coffee delivers a bold, smooth\nbrew made from premium Arabica beans. Freeze-dried to preserve rich flavour and\naroma, it's perfect for a quick cup anytime, anywhere. Just add hot water or\nmilk and enjoy a café-style experience with every sip—no equipment, no hassle.",
+   "manufacturerName": "Sleepy Owl Coffee Pvt. Ltd",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "French Vanilla Instant Coffee",
@@ -448,7 +559,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40352721_1-sleepy-owl-french-vanilla-instant-coffee.jpg"
-    }
+    },
+    "barcode": "8906144492225"
    },
    {
     "title": "100g",
@@ -480,7 +592,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40239347_4-sleepy-owl-premium-instant-coffee-roasted-ground-french-vanilla.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl French Vanilla Instant Coffee blends rich Arabica\nwith smooth, creamy vanilla for a delightful twist. Freeze-dried for freshness,\nit delivers café-quality flavour in seconds. Just add hot water or milk to\nenjoy a perfectly balanced, aromatic cup anytime, anywhere. Indulgence made\neasy, one sip at a time.",
+   "manufacturerName": "Sleepy Owl Coffee Pvt. Ltd",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hazelnut Instant Coffee",
@@ -528,7 +646,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40239346_4-sleepy-owl-premium-instant-coffee-roasted-ground-no-preservatives-hazelnut.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Crafted from Arabica coffee beans carefully sourced from\nChikmagalur, this premium instant coffee offers a rich and authentic flavour.\nThe travel-friendly pack includes 10 sachets, perfect for enjoying coffee\nanytime, anywhere. Freeze-dried to preserve its full aroma and taste, it brews\nbeautifully—black or with milk, hot or iced—for a smooth, café-style experience\nin every sip.",
+   "manufacturerName": "Sleepy Owl Coffee Pvt. Ltd",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Assorted Premium Instant Coffee",
@@ -544,7 +668,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40352723_1-sleepy-owl-assorted-premium-instant-coffee.jpg"
-    }
+    },
+    "barcode": "8906144490726"
    }
   ],
   "images": [
@@ -564,7 +689,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352723-5_1-sleepy-owl-assorted-premium-instant-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy café-style coffee anytime, anywhere with this Assorted\nPack of 5 flavours, featuring 10 travel-friendly instant sachets. Each blend is\nfreeze-dried to lock in maximum freshness, rich flavour, and bold aroma.\nWhether you prefer it black or with milk, hot or iced, every cup offers a\nsmooth, satisfying taste that suits every mood.",
+   "manufacturerName": "Sleepy Owl Coffee Pvt. Ltd",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Intense Java Xpresso Instant Coffee",
@@ -600,7 +731,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345374-5_1-sleepy-owl-intense-java-xpresso-strong-instant-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dark roasted to perfection, Xpresso is the coffee of your darkest and boldest dreams. Packed with flavour that's downright delicious, leave it to Xpresso to satisfy your coffee cravings like never before. It easily dissolves in hot or cold water or milk and the airtight container keeps it fresh and easy to store. But hey, sip at your own risk.",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Instant Filter Coffee",
@@ -633,7 +770,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255216-4_1-sleepy-owl-premium-instant-coffee-filter-kaapi-chicory-robusta-blend-strong-sweet-flavour-makes-50-cups.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl Premium Instant Coffee - Filter Kaapi is an authentic blend of robusta and chicory that makes a strong coffee concentrate without any equipment! This blend is ideal for a delectable cup of classic Filter Kaapi. It is bold, nutty, and velvety-smooth till the last sip. This instant coffee is unlike anything you have ever had before. Enjoy the taste of authentic South Indian Kaapi from the comfort of your home. Brew the perfect cup of nutty goodness in seconds. All you have to do is add hot or cold milk. Great for making a frothy coffee.",
+   "ingredients": "Instant Coffee - Chicory mixture made from blends of coffee and chicory",
+   "storageInstructions": "*Store in a cool, dry and hygienic place, away from direct sunlight and moisture",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "3 In 1 Assorted Instant Coffee Premix",
@@ -649,7 +794,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
-    }
+    },
+    "barcode": "8906144492133"
    }
   ],
   "images": [
@@ -672,7 +818,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352724-6_1-sleepy-owl-3-in-1-assorted-instant-premix-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl 3 in 1 Assorted Instant Premix Coffee offers a\nperfect trio of flavour, convenience, and comfort. With a blend of coffee,\nmilk, and sugar in every sachet, each cup delivers a smooth, balanced taste.\nEnjoy classic, creamy, or bold variants—anytime, anywhere. Just add hot water\nand sip your way to instant delight.",
+   "manufacturerName": "Microstar Services & Sovereign Foods",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "3 In 1 Cappuccino Instant Coffee Premix",
@@ -711,7 +863,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352725-6_1-sleepy-owl-3-in-1-cappuccino-bold-creamy-instant-premix-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl 3 in 1 Cappuccino Bold & Creamy Instant\nPremix Coffee delivers café-style indulgence in seconds. Rich, robust coffee\nmeets velvety creaminess in every sip—no brewing needed. Just add hot water for\na smooth, satisfying cup that energises and comforts. Perfect for busy mornings\nor relaxing evenings, it’s convenience and flavour in one delicious blend.",
+   "manufacturerName": "Microstar Services & Sovereign Foods",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "3 In 1 French Vanilla Latte Instant Coffee Premix",
@@ -750,7 +908,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352726-6_1-sleepy-owl-3-in-1-french-vanilla-latte-instant-premix-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy café-style comfort anywhere with Sleepy Owl’s 3-in-1\nFrench Vanilla Latte Instant Premix Coffee. Infused with smooth French vanilla\nflavour, this creamy blend combines premium coffee, milk, and sugar in one\nconvenient sachet. Just add hot water and stir. Perfect for busy mornings or\nrelaxing evenings—delicious, aromatic, and effortlessly satisfying in every\nsip.",
+   "manufacturerName": "Microstar Services & Sovereign Foods",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "3 In 1 Hazelnut Latte Instant Coffee Premix",
@@ -766,7 +930,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
-    }
+    },
+    "barcode": "8906144492157"
    }
   ],
   "images": [
@@ -789,7 +954,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352727-6_1-sleepy-owl-3-in-1-hazelnut-latte-instant-premix-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl 3 In 1 Hazelnut Latte Instant Premix Coffee\nblends smooth coffee, creamy milk, and a rich hazelnut flavour in one\nconvenient sachet. Just add hot water for a café-style experience anytime,\nanywhere. Perfectly balanced and irresistibly aromatic, it’s your ideal\npick-me-up for busy mornings or relaxing evenings. No brewing, no hassle—just\npure indulgence.",
+   "manufacturerName": "Microstar Services & Sovereign Foods",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Cold Coffee",
@@ -834,7 +1005,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255213-8_1-sleepy-owl-classic-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Classic Cold Coffee – Crafted with care to deliver exceptional taste and quality, this product offers a delightful balance of flavour and freshness. Perfect for everyday enjoyment, it can be enjoyed on its own or paired with your favourite meals. A reliable choice for those who value both quality and great taste.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "1 Serve = 200 ml",
+    "ENERGY (kcal)": "78",
+    "PROTEIN (g)": "3.10",
+    "CARBOHYDRATE (g)": "10.62",
+    "TOTAL SUGARS (g)": "10.00",
+    "ADDED SUGARS (g)": "6.84",
+    "TOTAL FAT (g)": "2.60",
+    "SATURATED FAT (g)": "1.90",
+    "TRANS FAT (g)": "0.00",
+    "CHOLESTEROL (mg)": "6.48",
+    "SODIUM (mg)": "43.0"
+   },
+   "storageInstructions": "* Keep it in a cool and dry place, away from sunlight\n* After opening, keep refrigerated or use it within 2 days",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Belgian Mocha Cold Coffee",
@@ -850,7 +1042,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
-    }
+    },
+    "barcode": "8906144492324"
    }
   ],
   "images": [
@@ -872,7 +1065,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343530-6_2-sleepy-owl-belgian-mocha-cold-coffee.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Belgian Mocha Cold Coffee offers a smooth and indulgent blend of rich coffee and chocolate flavours. Chilled to perfection, it's a satisfying choice for those who enjoy a cafe-style beverage on the go. With its balanced taste and creamy texture, this cold coffee is ideal for any time you crave a flavourful and refreshing coffee experience.",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Caramel Latte Cold Coffee",
@@ -888,7 +1087,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215_7-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
-    }
+    },
+    "barcode": "8906144491228"
    }
   ],
   "images": [
@@ -917,7 +1117,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255215-8_1-sleepy-owl-salted-caramel-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, bold, and very nutty flavour of Sleepy Owl Salted Caramel Cold Coffee. This delightful cold brew is a true delight, offering a velvety smooth and creamy experience with a burst of unique salted caramel taste. Made with premium Arabica coffee beans sourced from Chikmagalur and real ingredients, this cold coffee is free from any added preservatives, making it the perfect on-the-go refreshment. Elevate your coffee time with the authentic taste of real coffee and a hint of salted caramel, a must-have addition to your beverage collection. Experience the rich and creamy flavour, whether enjoyed straight from the can or over ice, for a refreshing pick-me-up any time of day.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml",
+    "ENERGY (kcal)": "78",
+    "PROTEIN (g)": "3.10",
+    "CARBOHYDRATE (g)": "10.62",
+    "TOTAL SUGARS (g)": "10.00",
+    "ADDED SUGARS (g)": "6.84",
+    "TOTAL FAT (g)": "2.60",
+    "SATURATED FAT (g)": "1.90",
+    "TRANS FAT (g)": "0.00",
+    "CHOLESTEROL (mg)": "6.48",
+    "SODIUM (mg)": "75.0"
+   },
+   "storageInstructions": "* Keep it in a cool and dry place, away from sunlight\n* After opening, keep refrigerated or use within 2 days",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "French Vanilla Cold Coffee",
@@ -933,7 +1154,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
-    }
+    },
+    "barcode": "8906144491648"
    }
   ],
   "images": [
@@ -956,7 +1178,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345372-6_1-sleepy-owl-french-vanilla-cold-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl French Vanilla Cold Coffee is a smooth and aromatic brew crafted from premium Arabica beans and infused with the delicate flavour of French vanilla. Ready to drink and refreshingly chilled, it offers a perfect balance of richness and sweetness. Enjoy a café-style experience anytime, anywhere – no brewing, no fuss, just pure indulgence.",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hazelnut Cold Coffee",
@@ -1001,7 +1229,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255214-8_1-sleepy-owl-hazelnut-cold-coffee-thicker-creamier-richer-ready-to-drink-no-preservatives.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, nutty delight of Sleepy Owl's Hazelnut Cold Coffee. Crafted with premium Arabica beans, this refreshing and convenient cold brew offers the perfect balance of bold coffee flavour and sweet hazelnut notes. Experience the smooth, chocolatey undertones that pair beautifully with the creamy, indulgent texture. Upgrade your coffee routine with this ready-to-drink treat, perfect for enjoying anytime, anywhere. Sleepy Owl's signature cold brew process ensures a consistently delicious and energising coffee experience, making this the ideal companion for your on-the-go lifestyle. Treat yourself to the ultimate hazelnut coffee experience with Sleepy Owl Hazelnut Cold Coffee.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml",
+    "ENERGY (kcal)": "78",
+    "PROTEIN (g)": "3.10",
+    "CARBOHYDRATE (g)": "10.62",
+    "TOTAL SUGARS (g)": "10.00",
+    "ADDED SUGARS (g)": "6.84",
+    "TOTAL FAT (g)": "2.60",
+    "SATURATED FAT (g)": "1.90",
+    "TRANS FAT (g)": "0.00",
+    "CHOLESTEROL (mg)": "6.48",
+    "SODIUM (mg)": "43.0"
+   },
+   "storageInstructions": "* Keep it in a cool and dry place, away from sunlight\n* After opening, keep refrigerated or use it within 2 days",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vietnamese Espresso & Milk Coffee",
@@ -1017,7 +1266,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373_1-sleepy-owl-vietnamese-cold-coffee.jpg"
-    }
+    },
+    "barcode": "8906144491808"
    }
   ],
   "images": [
@@ -1040,7 +1290,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345373-6_1-sleepy-owl-vietnamese-cold-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl Vietnamese Espresso & Milk Coffee offers a bold, aromatic experience inspired by traditional Vietnamese brews. Made with strong espresso and sweetened milk, it delivers a rich, creamy flavour with a smooth finish. Perfectly balanced and ready to drink, it’s your ideal pick-me-up for indulgent mornings or refreshing coffee breaks—no brewing required.",
+   "manufacturerName": "Sleepy Owl Coffee Private Limited",
+   "fssaiLicense": "13321999000263",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Iced Coffee",
@@ -1056,7 +1312,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087_7-sleepy-owl-cold-brew-coffee-classic.jpg"
-    }
+    },
+    "barcode": "8908012230083"
    }
   ],
   "images": [
@@ -1085,7 +1342,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172087-8_2-sleepy-owl-cold-brew-coffee-classic.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl Classic is a cold-brewed iced coffee made from the highest quality Grade A coffee sourced straight from Chikmagalur. Made with just 8 grams of sugar and a little milk, Sleepy Owl Classic is the perfect functional beverage for all lovers of coffee. The bottles contain 200ml of iced coffee and are made with love at our production facility in Ghaziabad. Each bottle has a shelf life of 120 days, which is achieved without any preservatives due to a special production process we use. The bottles are capped with easy-to-pull pop-off caps and have an ambient shelf life meaning they can be stored in cold or warm temperatures. These ready-to-drink bottles are India's first and only bottled iced coffee drink that contains nothing except coffee, milk, and sugar. No preservatives, no stabilisers, no emulsifiers, and no chemicals. Our mission at Sleepy Owl Coffee is to make high-quality cold brew coffee products that you can consume with ease and convenience at home, at work or on the go without having to compromise on taste or health.",
+   "ingredients": "Coffee, Water, Milk, Sugar",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "200 ml (APPROX)",
+    "ENERGY (kcal)": "40",
+    "PROTEIN (g)": "0.7",
+    "CARBOHYDRATE (g)": "6.9",
+    "TOTAL SUGARS (g)": "5.5",
+    "ADDED SUGARS (g)": "4.3",
+    "TOTAL FAT (g)": "1.1",
+    "SATURATED FAT (g)": "0.7",
+    "CHOLESTEROL (mg)": "4",
+    "SODIUM (mg)": "11",
+    "CALCIUM (mg)": "34"
+   },
+   "storageInstructions": "*Store in cold or warm temperatures",
+   "manufacturerName": "Amrit Corp Ltd (Unit Amrit Food)",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13317008000352"
+  }
  },
  {
   "title": "Sweet Iced Coffee",
@@ -1130,7 +1409,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172088-8_1-sleepy-owl-cold-brew-coffee-sweet.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate cold-brewed iced coffee experience with Sleepy Owl Sweet. Crafted from the finest Grade A coffee sourced directly from the lush Chikmagalur region, this ready-to-drink beverage is the perfect functional pick-me-up for coffee lovers. Containing just 13 grams of sugar and a touch of milk, Sleepy Owl Sweet offers a delightfully balanced flavour profile that is both refreshing and satisfying. Boasting a generous 200ml serving size and a remarkable 120-day shelf life without any preservatives, this iced coffee is the epitome of convenience and quality. Conveniently packaged in easy-to-open bottles, Sleepy Owl Sweet can be enjoyed chilled or at ambient temperature, making it the ideal companion for any occasion - whether you're at home, at work, or on the go. Discover the perfect blend of taste and health with this preservative-free, chemical-free iced coffee that captures the essence of premium coffee in every sip.",
+   "ingredients": "Coffee, Water, Milk, Sugar",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy": "49.3kcal",
+    "Protein": "0.70g",
+    "Total Carbohydrates": "9.26g",
+    "Sugar": "6.72g",
+    "Fat": "1.05g",
+    "Saturated Fat": "0.76g",
+    "Trans Fat": "0.0g",
+    "Calcium": "34mg"
+   },
+   "storageInstructions": "*Store in cold or warm temperatures",
+   "manufacturerName": "Amrit Corp Ltd (Unit Amrit Food)",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13317008000352"
+  }
  },
  {
   "title": "Hazelnut Iced Coffee",
@@ -1175,7 +1473,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202694-8_2-sleepy-owl-hazelnut-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful flavour of Sleepy Owl's Hazelnut Cold Brew Coffee, a perfectly balanced blend of premium Arabica coffee and the sweet, nutty notes of roasted hazelnuts. Crafted with care, this refreshing beverage offers a smooth, low-acidity taste that is sure to delight your senses. Enjoy this deliciously rewarding cold brew on a hot summer day, either on its own or with a touch of milk and a hint of sugar. Made with natural ingredients and free from any preservatives, this allergen-free coffee is the perfect pick-me-up to energise your day. Discover the rich aroma and satisfying flavour of Sleepy Owl's signature cold brew, a true treat for coffee lovers.",
+   "ingredients": "Coffee, Milk, Water & Sugar. Contains added flavours (Natural Identical Flavouring)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "200 ml (APPROX)",
+    "ENERGY (kcal)": "40",
+    "PROTEIN (g)": "0.7",
+    "CARBOHYDRATE (g)": "6.9",
+    "TOTAL SUGARS (g)": "5.5",
+    "ADDED SUGARS (g)": "4.3",
+    "TOTAL FAT (g)": "1.1",
+    "SATURATED FAT (g)": "0.7",
+    "CHOLESTEROL (mg)": "4",
+    "SODIUM (mg)": "11",
+    "CALCIUM (mg)": "34"
+   },
+   "storageInstructions": "*Store at ambient temperature (15 to 25 degrees Celsius)",
+   "manufacturerName": "Amrit Corp Ltd. (Unit Amrit Food)",
+   "fssaiLicense": "13317008000352",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mocha Iced Coffee",
@@ -1191,7 +1511,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
-    }
+    },
+    "barcode": "8908012230236"
    }
   ],
   "images": [
@@ -1213,7 +1534,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220092-6_2-sleepy-owl-cold-coffee-mocha-with-no-preservatives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, smooth flavour of Sleepy Owl Mocha, a delightful cold-brewed iced coffee crafted with the highest quality Grade A coffee beans sourced directly from the lush Chikmagalur region. Made with just 8 grams of sugar and a touch of milk, this functional beverage offers coffee lovers an unparalleled experience in every sip. Lovingly produced at our facility in Ghaziabad, each 200ml bottle of Sleepy Owl Mocha is free from preservatives, allowing you to enjoy a pure, wholesome coffee experience. Discover the perfect balance of bold, aromatic coffee and creamy indulgence with every refreshing sip of Sleepy Owl Mocha.",
+   "ingredients": "Water, Milk, Sugar, Coffee and Cocoa Powder",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "52 kcal",
+    "Protein": "1.2 g",
+    "Total Fat": "2.2 g",
+    "Saturated Fat": "1.4 g",
+    "Carbohydrates": "8.2 g",
+    "Sugars": "7.8 g",
+    "Sodium": "0.05 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Sleepy Owl- 145/1",
+   "fssaiLicense": "13317008000352",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Salted Caramel Cold Coffee",
@@ -1229,7 +1568,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
-    }
+    },
+    "barcode": "8908012230649"
    }
   ],
   "images": [
@@ -1251,7 +1591,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220091-6_2-sleepy-owl-cold-coffee-salted-caramel-with-no-preservatives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sleepy Owl Salted Caramel is a cold-brewed iced coffee made from the highest quality 100% Grade A coffee sourced straight from Chikmagalur. Made with just 8 grams of sugar and a little milk, Sleepy Owl Salted Caramel is the perfect functional beverage for all lovers of coffee. The bottles contain 200ml of iced coffee and are made with love at our production facility in Ghaziabad. Each bottle has a shelf life of 180 days, which is achieved without any preservatives due to a special production process we use.",
+   "ingredients": "Salted Caramel",
+   "manufacturerName": "Sleepy Owl- 145/1",
+   "fssaiLicense": "13317008000352",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vanilla Cold Brew Coffee Bottle",
@@ -1290,6 +1637,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225089-6_1-sleepy-owl-cold-brew-coffee-vanilla-made-with-high-quality-beans.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sleepy Owl brings to you ready-to-drink Vanilla Cold Coffee Bottles. It is made with our signature cold brew. A perfect mix of ingredients that makes an intense and aromatic coffee. It tastes sweet and creamy at the same time. Now have this coffee at any time or anywhere. A perfect iced coffee with balanced milk and a little sugar.",
+   "manufacturerName": "Sleepy Owl- 145/1",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "13317008000352"
+  }
  }
 ]
