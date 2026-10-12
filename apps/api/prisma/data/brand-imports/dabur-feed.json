@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100016187_5-dabur-100-pure-honey-worlds-no1-honey-brand-with-no-sugar-adulteration.jpg"
-    }
+    },
+    "barcode": "8901207045370"
    },
    {
     "title": "100g",
@@ -105,7 +106,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100016187-8_1-dabur-100-pure-honey-worlds-no1-honey-brand-with-no-sugar-adulteration.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Do you want to boost your immunity? Do you find it difficult to manage a healthy weight? Do you want to give a healthy start to your day? Do you wish to improve your digestion and metabolism? If the answer to the above questions is yes, then you can include World's No 1 Honey brand - Dabur Honey as a part of your daily regime. Dabur Honey is 100% pure and entirely sourced from Indian beekeepers. Every batch of Dabur Honey conforms strictly with all the 22 parametres mandated by FSSAI for testing honey. Dabur Honey undergoes 100+ tests and is LCMS/MS tested for antibiotics, IRMS tested for no sugar adulteration and LCMS/MS-SMR tested for zero sugar syrup adulteration. Dabur Honey is completely sourced, tested and packed by us, ensuring it is untouched by human hand. According to a recent clinical study, people who consumed Dabur honey with lukewarm water every morning showed significant improvement in stamina, digestion and waist-hip Size. For a healthy start to your day, you can have Dabur Honey with lukewarm water daily to see results. check purity certificate and report of your pack of Dabur Honey by sending your batch code as Whatsapp to 4071781666 or logon to daburhoney.com.",
+   "ingredients": "Honey (100%)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "21g",
+    "Energy": "320 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "80g",
+    "Total Sugars": "80g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "17mg"
+   },
+   "manufacturerName": "DABUR INDIA LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Honey",
@@ -150,7 +168,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226210_6-dabur-honey-certified-organic-for-immunity.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Organic is not just a one-time choice; it’s a way of life. Are you also always in search of organic goodness for your family? Are you looking for Pure and Natural honey straight from the hive? Then here we present to you Dabur Organic Honey, which is NPOP organic certified honey from the house of Dabur Honey – the World’s No. 1 Honey brand. This thick, delicious honey is sourced from the hives of Apis Dorsata honeybees nestled in deep forests. No chemicals or pesticides are used within a 5 km vicinity of these hives, thereby ensuring that honeybees collect nectar only from organically grown wildflowers. It is raw, unprocessed, and unpasteurised honey, which is naturally rich in antioxidants to help boost immunity. It is a good source of nutrition and is considered useful for cough and cold.",
+   "ingredients": "Organic Honey",
+   "nutritionalInfo": {
+    "Energy": "320 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "80 g",
+    "Fat": "0 g",
+    "Natural Sugars": "80 g",
+    "Added Sugar": "0 g",
+    "Sodium": "17 mg",
+    "Potassium": "138 mg",
+    "Calcium": "13 mg",
+    "Iron": "1.5 mg",
+    "Phosphorus": "5 mg"
+   },
+   "manufacturerName": "Foodcoast International",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sundarbans Forest Honey",
@@ -189,7 +226,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287389-6_6-dabur-honey-sundeabans-forest-honey-100-pure-raw-unprocessed-rich-in-antioxidants.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Honey Sundarbans Forest Honey is a smart choice to bring nutrition into your meals along with taste and flavour. The Dabur Sundarbans Forest Honey can make your regular morning oatmeal more appetising and nutritious. Since it is derived from dense mangrove forests, it has various health benefits like boosting immunity, helping with healing, and also keeping heart health in check. The wonderful flavour of the precise amount of sweetness and delectable flavour makes it a superb alternative to sugar and other sweeteners. Mix a spoonful of this Honey with your cup of tea or milk or even drizzle it over desserts for amazing results.",
+   "ingredients": "Honey",
+   "nutritionalInfo": {
+    "Serving Size": "1 Tablespoon (21 g)",
+    "Energy": "320 kcal (3.4% RDA)",
+    "Protein": "0 g",
+    "Carbohydrates": "80 g",
+    "Total Sugars": "79 g",
+    "Added Sugars": "0 g (0% RDA)",
+    "Total Fat": "0 g (0% RDA)",
+    "Sodium": "17 mg (0.2% RDA)",
+    "Potassium": "18 mg (0.1% RDA)",
+    "Calcium": "7 mg (0.1% RDA)",
+    "Iron": "0.8 mg (0.9% RDA)"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Dabur India Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000618"
+  }
  },
  {
   "title": "Honey Ashwagandha",
@@ -205,7 +263,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40198581_1-dabur-honey-ashwagandha.jpg"
-    }
+    },
+    "barcode": "8901207041570"
    }
   ],
   "images": [
@@ -231,7 +290,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198581-7_1-dabur-honey-ashwagandha.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Are you worried about the immunity of your family? Are you looking for natural ways to boost immunity? If the answer to the above questions asked is yes, then you should definitely include Dabur Honey Ashwagandha as a part of your daily regime. From the house of Dabur Honey - World's no. 1 honey - you can now have the goodness of ashwagandha and honey in one pack. Dabur Honey Ashwagandha not only helps in boosting up your immunity but also provides you relief from stress. In addition, honey can provide you with several other health benefits like improvement in stamina, better digestion, improved cholesterol level & reduction of waist/hip size. For a healthy start to your day, You can have Dabur Honey Ashwagandha directly or with lukewarm warm water daily. Buy now.",
+   "ingredients": "Honey, Ashwagandha Extract",
+   "usageInstructions": "Drink with lukewarm water, Consume directly or by adding in food.",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Honey Tasties Chocolate",
@@ -247,7 +313,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40222347_1-dabur-honey-tasties-chocolate.jpg"
-    }
+    },
+    "barcode": "8901207038259"
    }
   ],
   "images": [
@@ -276,7 +343,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222347-8_1-dabur-honey-tasties-chocolate.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Want to give honey to your kids but worried they will not like its taste? Bid goodbye to those worries! Dabur Honey Tasties Chocolate is chocolate-flavoured honey that is utterly appetizing and healthy. First of its kind, from the House of Dabur Honey, it is tasty honey tailored just for your kids. With Dabur Honey Tasties, you can now easily make food more interesting, delicious and nutritious for your kids in a convenient manner. All in all, it is honey made better and tastier! Dabur Honey Tasties Chocolate is your kid’s new fun and versatile friend in the most beloved chocolate flavour -No added sugar -Enriched with Vitamin D -Source of Nutrition & Energy -Source of Antioxidants & Minerals -Helps boost immunity",
+   "ingredients": "Honey (90.5%), Cocoa Powder (3.5%) , Malt Extract , Preservative (INS 211) , Vitamin D",
+   "usageInstructions": "Dabur Honey Tasties Chocolate can be used in so many ways- Add it in milk to make the milk tastier.\nUse it as a spread on bread/chapatis.\nAdd it to your breakfast cereal.\nPour it on your pancakes & waffles.\nUse it to flavour your yoghurt.\nUse it as a topping on ice-creams & cookies",
+   "manufacturerName": "Foodcoast International A-23/A",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051002825"
+  }
  },
  {
   "title": "Honey Tasties Strawberry",
@@ -292,7 +367,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40222348_1-dabur-honey-tasties-strawberry.jpg"
-    }
+    },
+    "barcode": "8901207037993"
    }
   ],
   "images": [
@@ -321,7 +397,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222348-8_1-dabur-honey-tasties-strawberry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Want to give honey to your kids but worried they will not like its taste? Bid goodbye to those worries! Dabur Honey Tasties Strawberry is a strawberry flavoured honey that is utterly appetizing and healthy. First of its kind, from the House of Dabur Honey, it is tasty honey tailored just for your kids. With Dabur Honey Tasties, you can now easily make food more interesting, delicious and nutritious for your kids in a convenient manner. All in all, it is honey made better and tastier! Dabur Honey Tasties Strawberry is your kid’s new fun and versatile friend in the most beloved strawberry flavour -No Added Sugar. -Enriched with Vitamin D -Source of Nutrition & Energy -Source of Antioxidants & Minerals -Helps boost immunity",
+   "ingredients": "Honey (95.34%) , Lemon Juice Concentrate , Preservative (INS 211) , Vitamin D",
+   "usageInstructions": "Dabur Honey Tasties Strawberry can be used in so many ways- Add it in milk to make the milk tastier.\nUse it as a spread on bread/chapatis.\nAdd it to your breakfast cereal.\nPour it on your pancakes & waffles.\nUse it to flavour your yoghurt.\nUse it as a topping on ice-creams & cookies",
+   "manufacturerName": "Foodcoast International A-23/A",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051002825"
+  }
  },
  {
   "title": "Chyawanprash",
@@ -393,7 +477,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265114-8_3-dabur-chyawanprash-2x-immunity.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Do you think your child has inner strength? Do you worry that your child will fall ill? Do you feel that your child may miss school due to falling ill? Do you doubt that only good food is not enough for your child's good health? If your answer to any of the above questions is yes, then Dabur Chyawanprash is the answer to your child's health worries - A recipe used in Ayurveda since ancient times, chyawanprash offers a wide range of health benefits. Dabur Chyawanprash provides strong immunity and good digestion for children and adults alike. Two spoons daily of Dabur Chyawanprash supports immunity and is beneficial for overall health and well-being. It is also good for the digestive and respiratory systems. The primary action of Dabur Chyawanprash is to bolster the immune system and to support the body's natural ability to fight illnesses. Amalaki (the main ingredient) aids in the elimination of ama (toxins). Therefore, regular use of Dabur Chyawanprash helps strengthen body's natural defence systems. It builds the essence of immunity, promoting systemic health and well-being. Ingredients of Dabur Chyawanprash are scientifically validated for their beneficial effects on health. It is considered one of the best family tonics—suitable for all ages from young children to the elderly^. (Children above 3 years of age).",
+   "usageInstructions": "1. Take one teaspoonful (approx 12 g) twice a day.\n2. For children (3 - 12 years old), take half a teaspoonful (approx 5 g) twice a day.",
+   "manufacturerName": "Dabur India LimitedRegistered Office",
+   "fssaiLicense": "10015042002230",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chyawanprash Gur",
@@ -409,7 +500,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40280266_1-dabur-chyawanprash-awaleha-with-goodness-of-jaggery-boosts-immunity.jpg"
-    }
+    },
+    "barcode": "8901207045035"
    }
   ],
   "images": [
@@ -432,7 +524,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40280266-6_1-dabur-chyawanprash-awaleha-with-goodness-of-jaggery-boosts-immunity.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "An excellent source of health supplements, Dabur Chyawanprash (Gur) Awaleha is formulated to give you the best ayurvedic benefits. Made out of time-tested formula, it is a strict herbal composition giving your immunity a boost. Containing the goodness of Amla, Giloy, Shatavari and 40 other herbs, it is a keeper for your fine health and top immunity.",
+   "usageInstructions": "Adults can have 1 teaspoon twice daily, with lukewarm milk or water in the morning and evening.\nFor kids, 1/2 teaspoon of chyawanprash daily is more than enough.",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chyawanprakash Sugar Free",
@@ -448,7 +546,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30009464_12-dabur-chyawanprakash-sugar-free.jpg"
-    }
+    },
+    "barcode": "8901207054372"
    },
    {
     "title": "900g",
@@ -495,7 +594,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009464-8_3-dabur-chyawanprakash-sugar-free.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Chyawanprakash Sugarfree is a unique, clinically-tested immunity-boosting supplement specially formulated for diabetics and those seeking a sugar-free solution. Crafted with over 40 potent Ayurvedic herbs like Amla, Ashwagandha, and Giloy, this innovative formula helps strengthen the immune system and protect against common ailments like cough and cold. Conveniently available for online ordering, Dabur Chyawanprakash Sugarfree delivers the goodness of the traditional Chyawanprash recipe without any added sugar, making it the perfect choice for maintaining a healthy, active lifestyle. Enjoy the benefits of increased energy, improved strength and stamina, and enhanced overall wellbeing with this delightful, sugar-free supplement.",
+   "usageInstructions": "1. With its tangy sweet-sour taste, it can be taken directly, with milk.\n2. We recommend taking Half tsp for children, 1 tsp for adults, twice daily followed by warm milk or water.",
+   "manufacturerName": "Dabur India Limited Registered Office",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ratnaprash",
@@ -537,7 +642,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009462-7_1-dabur-ratnaprash-chyawanprash-for-all-seasons.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "usageInstructions": "1. One teaspoonful (approx 12g) twice a day\n2. Best when followed by milk",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aloe Vera Juice",
@@ -582,7 +692,10 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198132-8_1-dabur-aloe-vera-juice-100-ayurvedic.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "usageInstructions": "1. Take 10-20 ml (1-2 tbsp) of the juice twice a day after meal or as directed by the physician.\n2. Add the juice to a cup of water and drink for best results."
+  }
  },
  {
   "title": "Amla Juice",
@@ -627,7 +740,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195119-8_1-dabur-amla-ayurvedic-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "usageInstructions": "1. Shake the bottle well before use.\n2. Take 10-20 ml (1-2 tablespoons) twice a day or as directed by the physician.\n3. Mix Amla Juice in a cup of water.\n4. May be consumed on empty stomach or as directed by physician",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Giloy Neem Juice with Tulsi",
@@ -672,7 +790,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195118-8_1-dabur-giloy-neem-juice-with-tulsi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the power of nature's finest herbs with Dabur's Giloy Neem Tulsi Juice. Crafted with care, this potent concoction harnesses the synergistic benefits of Giloy, Neem, and Tulsi to support your comprehensive well-being. Giloy, an adaptogenic herb, helps reduce stress and fatigue, while Neem's antimicrobial properties and liver-supporting effects promote skin health and detoxification. Tulsi, the sacred herb, bolsters respiratory wellness and boosts immunity with its antioxidant properties. Blended together, these three revered Ayurvedic ingredients work in harmony to nourish your body, uplift your spirit, and unlock your full potential. Trust in tradition, embrace purity, and thrive with the power of Dabur Giloy Neem Tulsi Juice - your pathway to holistic well-being.",
+   "usageInstructions": "Add 10-20ml juice with a cup of water (100ml- 150ml) and drink twice a day.",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Giloy Juice",
@@ -711,7 +835,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200977-6_1-dabur-giloy-juice-100-ayurvedic-health-juice-for-immunity-boosting.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Giloy Ras is ayurvedic, safe and natural and helps boost immunity. It is free from synthetic colours and flavours and is a natural immunity booster. It has antioxidant properties which help treat many health problems.",
+   "usageInstructions": "1. Add 10-20 ml juice with a cup of water (100 ml- 150 ml) and drink twice a day.\n2. Take twice daily for best result",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jamun Neem Karela Juice",
@@ -756,7 +886,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293670-8_1-dabur-jamun-neem-karela-juice-100-ayurvedic-immunity-booster.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the power of nature's goodness with Dabur Jamun Neem Karela Juice, a unique blend of Jamun, Karela, and Neem that offers a holistic approach to balanced health and vitality. This Ayurvedic, pure, and natural juice combines the remarkable benefits of these key ingredients to support healthy blood sugar levels, boost metabolism and digestion, and enhance immune function. Packed with antioxidants, this juice not only helps promote a healthy weight but also aids in liver and skin health. Enjoy the refreshing taste while nourishing your body with the goodness of Ayurveda. Bring this product home today for a natural path to wellness and rejuvenation.",
+   "usageInstructions": "1. Shake the bottle well before use.\n2. Take 10-20ml (1-2 tablespoons) twice daily or as the physician directs.\n3. Mix Jamun Neem Karela Juice in a glass of 100-150ml water.\n4. If required, add honey/sugar to taste.",
+   "manufacturerName": "Sanskar Ayush Medicare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Triphala Juice",
@@ -772,7 +908,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40298521_1-dabur-triphala-juice-immunity-booster-good-for-liver-health.jpg"
-    }
+    },
+    "barcode": "8901207036477"
    }
   ],
   "images": [
@@ -801,7 +938,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298521-8_1-dabur-triphala-juice-immunity-booster-good-for-liver-health.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Triphala Juice Immunity Booster is formulated to improve bowel health and achieve a healthy digestive system. The juice aids in detoxifying the body and also fortifies the immune system. It is a blend of herbs that are very useful in digestive disorders, constipation and detoxification. Embodies powerful anti-inflammatory properties that may help protect against certain cancers and other chronic diseases.",
+   "usageInstructions": "Use as directed on the label.\nSafety Information: Read the label carefully before use. Store in a cool and dry place away from direct sunlight. Keep out of reach of children.",
+   "manufacturerName": "Sanskar Ayush Medicare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Glucose-D",
@@ -817,7 +960,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265073_6-dabur-glucose-d-energy-boost-with-vitamin-d.jpg"
-    }
+    },
+    "barcode": "8901207017056"
    },
    {
     "title": "450g",
@@ -864,7 +1008,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265073-8_5-dabur-glucose-d-energy-boost-with-vitamin-d.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Dabur Glucose D is a powder mix used to create an energy drink that quickly revitalises you. Made for children, sportspeople or anyone with an active lifestyle, the Dabur Glucose D is an optimised mix of vitamins and minerals designed to quickly quench your thirst.",
+   "ingredients": "Glucose, Calcium Phosphate, Vitamin D",
+   "nutritionalInfo": {
+    "Serving Size": "35g",
+    "Nutrition per gram": "100g",
+    "Energy": "360 kcal",
+    "Carbohydrate": "90 g",
+    "Total Sugars": "90 g",
+    "Added Sugars": "90 g",
+    "Total Fat": "6 g",
+    "Sodium": "15 mg",
+    "Calcium": "170 mg",
+    "Phosphorous": "100 mg",
+    "Vitamin D": "7.5 mcg"
+   },
+   "storageInstructions": "*Store in cool, dry place away from strong odours",
+   "manufacturerName": "Door No 8/3",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Glucoplus-C Lemon",
@@ -880,7 +1044,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40124430_7-dabur-glucoplus-c-lemon.jpg"
-    }
+    },
+    "barcode": "8901207055904"
    },
    {
     "title": "1kg",
@@ -918,7 +1083,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124430-8_3-dabur-glucoplus-c-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "If you just want to relax after a long and hectic day with a cooling drink, then Dabur has just what you need. Daburs New GlucoPlus-C Lemon is the tastiest and refreshing drink you can get. It will not only infuse you with boosting energy but also make you feel revitalized, replenished, and refreshed.",
+   "ingredients": "Glucose, Sugar, Acidity Regulator, Calcium Phosphate, Flavour, Iodised Salt, Stabilizer, Vitamin C, Colour",
+   "manufacturerName": "Door No 8/3",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Glucoplus-C Orange",
@@ -934,7 +1105,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40124431_8-dabur-gluco-plusc-orange-250g-200-g-50-g-free.jpg"
-    }
+    },
+    "barcode": "8901207050015"
    },
    {
     "title": "500g",
@@ -981,7 +1153,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124431-8_3-dabur-gluco-plusc-orange-250g-200-g-50-g-free.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "If you just want to relax after a long and hectic day with a cooling drink, then Dabur has just what you need. Dabur's New GlucoPlus-C Orange is the tastiest and most refreshing drink you can get. It will not only infuse you with boosting energy but also make you feel revitalised, replenished, and refreshed. This pack also comes with a free sipper that you can carry around anywhere.",
+   "ingredients": "Glucose, Sugar, Acidity Regulator, Calcium Phosphate, Flavour, Iodised Salt, Stabilizer, Vitamin C, Colour",
+   "nutritionalInfo": {
+    "Serving Size": "35g",
+    "Energy": "365 kcal",
+    "Carbohydrate": "90 g",
+    "Total Sugars": "90 g",
+    "Added Sugars": "90 g",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "300 mg",
+    "Calcium": "348 mg",
+    "Phosphorous": "185 mg",
+    "Vitamin C": "40 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Door No 8/3",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vita Chocolate Health Drink",
@@ -1035,7 +1227,11 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237654_3-dabur-vita-health-drink-boosts-immunity-chocolate-flavour.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Vita is an Ayurvedic Nutrition Drink with the goodness of 30+ herbs in a chocolaty flavour. It helps in boosting immunity and promotes bones muscular growth. Dabur Vita also supports brain health, learning concentration. Ayurvedic Nutrition Drink with the goodness of 30+ herbs in a chocolaty flavour.",
+   "usageInstructions": "1-2 Tablespoons (approx. 10 -20 g) with milk (200 ml) twice daily or as directed by a physician.\nStorage:\nThe storage area should be well ventilated and free from dampness and dust. It is approved independent adequate space for storage of different types of the finished product. Store cool and dry place"
+  }
  },
  {
   "title": "Hajmola Regular Tablets",
@@ -1051,7 +1247,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/263896_7-dabur-hajmola-regular-digestive-tablets.jpg"
-    }
+    },
+    "barcode": "8901207900839"
    }
   ],
   "images": [
@@ -1080,7 +1277,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/263896-8_1-dabur-hajmola-regular-digestive-tablets.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hajmola allows you to enjoy the tangy taste as it enhances your digestive power, especially when taken regularly after meals. Not only does it improve your digestive juices, but it is also a useful laxative for children. Hajmola's tangy and sweet taste is available in Regular Imli and Anardana flavours.",
+   "manufacturerName": "Dabur India Ltd. Plot No-22 Site 4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hajmola Imli Tablets",
@@ -1096,7 +1298,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/263775_10-dabur-hajmola-imli-digestive-tablets.jpg"
-    }
+    },
+    "barcode": "8901207062865"
    }
   ],
   "images": [
@@ -1125,7 +1328,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/263775-8_1-dabur-hajmola-imli-digestive-tablets.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "usageInstructions": "1. Consume the product regularly or occasionally, before or after meal, taking 1-2 tablets.",
+   "manufacturerName": "Dabur India Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hajmola Pudina Tablets",
@@ -1141,7 +1349,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050840_4-dabur-hajmola-pudina-digestive-tablets.jpg"
-    }
+    },
+    "barcode": "8901207021800"
    }
   ],
   "images": [
@@ -1170,7 +1379,11 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050840-8_1-dabur-hajmola-pudina-digestive-tablets.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "manufacturerName": "Dabur India Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hajmola Anardana Tablets",
@@ -1186,7 +1399,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050841_9-dabur-hajmola-anardana-digestive-tablets.jpg"
-    }
+    },
+    "barcode": "8901207019234"
    }
   ],
   "images": [
@@ -1194,7 +1408,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050841_9-dabur-hajmola-anardana-digestive-tablets.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hajmola Anardana Digestive Tablets are a popular choice for those who enjoy tangy and spicy flavours. Made with anardana (pomegranate seeds) and a blend of traditional spices, these tablets offer a unique taste experience. Conveniently packaged, they are easy to carry and can be enjoyed anytime. Perfect for those who appreciate a burst of flavour in a small, handy tablet.",
+   "manufacturerName": "Dabur India Limited Registered Office",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hajmola Limcola Tablets",
@@ -1239,7 +1458,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40229973-8_1-dabur-hajmola-limcola-lemon-flavour-digestive-tablets.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hajmola is synonymous with the Chatpata Taste of India since the last 5 decades. Hajmola Limcola is the new variant launched under Hajmola. It has the right blend of Tasty Chatpata Hajmola & Refreshing Lemon to get the unique Chatpata Taste which not only changes your taste but helps in digestion as well.",
+   "ingredients": "Ingredients:\nAmra, Shveta Jiraka, Sunthi, Pippali, Dhanayaka, Maricha etc.",
+   "usageInstructions": "Dosage:\nAdults 1 to 2 tablets post meal;\nChildren 1 tablet after meal",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hajmola Amla Candy",
@@ -1284,7 +1510,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261130-8_1-dabur-hajmola-amla-candy-tasty-digestive.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hajmola Amla Candy is a tasty digestive with goodness of Amla. Hajmola Candy is a zingy tangy candy that's fun to have any time of the day. And what's more, it gets your digestive juices working better. It's a wonderful way to enjoy yourself while staying healthy.",
+   "usageInstructions": "2-3 candies twice or thrice a day.",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "Germany"
+  }
  },
  {
   "title": "Hajmola Maha Candy Aam Imli",
@@ -1341,7 +1573,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40119055_2-dabur-hajmola-maha-candy-aamimli.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hajmola Maha Candy is a zingy tangy candy that s fun to have any time of the day And what s more it gets your digestive juices working better It s a wonderful way to enjoy while staying healthy The candy s khatta meetha taste is available in two different fun filled flavours Albela Aam and Chulbuli Imli For beauty tips tricks more visit",
+   "manufacturerName": "Dabur India Limited Registered Office",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Ginger Garlic Paste",
@@ -1357,7 +1594,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264515_11-dabur-hommade-ginger-garlic-paste.jpg"
-    }
+    },
+    "barcode": "8901207004544"
    },
    {
     "title": "200g",
@@ -1404,7 +1642,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264515-8_1-dabur-hommade-ginger-garlic-paste.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the authentic taste of freshly ground ginger and garlic with Dabur Hommade's premium quality Ginger Garlic Paste. Crafted by the trusted Dabur brand, this versatile paste is made from the finest ingredients sourced from the North-Eastern states and Gujarat, ensuring exceptional flavour and quality. Packaged in a convenient squeeze bottle, the paste eliminates the need for tedious peeling, chopping, and grinding, making it a true time-saver for seasoned cooks and aspiring chefs alike. With its distinctive aroma and thick, grainy texture, this ginger garlic paste adds the perfect seasoning to a wide range of dishes, from aromatic rasams and flavourful kebabs to creamy malai kofta and hearty matar paneer. Brimming with the natural health benefits of ginger and garlic, this paste is a must-have for those seeking to elevate their culinary creations with the authentic taste of homemade spices.",
+   "ingredients": "Ginger, Garlic, Water, Salt, Acidity regulator (INS 296), Stabilizer (INS 415), Preservative (INS 211)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "54 kcal",
+    "Protein": "2g",
+    "Carbohydrate": "11g",
+    "Natural Sugars": "3g",
+    "Added Sugar": "0g",
+    "Fat": "0.2g"
+   },
+   "storageInstructions": "Refrigerate after opening and use within 5 days\nIf not refrigerated after opening, the open pack should be consumed the same day",
+   "manufacturerName": "India food tech ltd. E2 & E3",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Ginger Paste",
@@ -1449,7 +1703,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264516-8_1-dabur-hommade-ginger-paste.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hommade Ginger paste is freshly produced from ginger sourced from North-Eastern states, packed in a hygienically sealed bag to provide you with the best ingredient for your cooking. The time one spends peeling, grinding and pasting these spices can now be saved with Dabur Hommade's Ginger Paste. Dabur Hommade Ginger paste contains freshly ground ginger paste, which has a thick and grainy texture that ensures curry is enhanced with a delightful feel, flavour and taste. Our Hommade range is an inspiration for seasoned cooks, experimental folks who like to try cooking and aspiring chefs-to-be. Our Ginger Paste contains no Added Colours. It is thick and grainy, providing the texture of freshly ground paste at Home. 2 tbsp of our Hommade Ginger Paste is equivalent to a 2.5 cm long ginger piece, make sure you use in recipes accordingly. Speaking of recipes, it is great to be used in Rajma, Choley, Biryanis, Sambhar, Matar Paneer, Malai Kofta. Freshest ingredients always - the taste of Hommade!",
+   "ingredients": "Ginger (83%), Water, Salt, Acidity Regulator (INS 296), Stabilizer (INS 415) and Turmeric",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "39 kcal",
+    "Protein": "1g",
+    "Carbohydrate": "8g",
+    "Natural Sugars": "1g",
+    "Added Sugar": "0g",
+    "Fat": "0.3g"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic place away from direct sunlight\nRefrigerate after opening and use within 15 days",
+   "manufacturerName": "India food tech ltd. E2 & E3",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Garlic Paste",
@@ -1494,7 +1764,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264590-8_2-dabur-hommade-garlic-paste.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the authentic taste of freshly ground garlic with Dabur Hommade Garlic Paste. Sourced from the fertile fields of Gujarat, this premium paste is stone-ground to perfection, retaining the scintillating aroma and vibrant flavour. Encased in a unique airlock pack, it preserves the freshness and potency of the garlic over an extended period, allowing you to effortlessly elevate your everyday recipes. With its thick, grainy texture, the paste provides the same satisfying experience as homemade, without the labour-intensive grinding. Infused with no artificial colours, this versatile ingredient is a must-have for seasoned cooks, experimental foodies, and aspiring chefs alike. Elevate your culinary creations with the robust, authentic taste of Dabur Hommade Garlic Paste.",
+   "ingredients": "Garlic (81.5%), Water, Salt, Acidity Regulator (INS 296), Stabilizer (INS 415). Contains Permitted Class II Preservative (INS 211).",
+   "nutritionalInfo": {
+    "Energy": "101 kcal",
+    "Protein": "4.4 g",
+    "Carbohydrate": "20.5 g",
+    "Total Sugars": "6.8 g",
+    "Added Sugars": "0 g",
+    "Dietary Fiber": "2.3 g",
+    "Total Fat": "0.2 g",
+    "Sodium": "1638 mg"
+   },
+   "storageInstructions": "Keep away from direct sunlight. Refrigerate after opening and use within 15 days.",
+   "manufacturerName": "Kapil Anand Agro Pvt. Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Tamarind Paste",
@@ -1539,7 +1827,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264593-8_2-dabur-hommade-tamarind-paste.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hommade Tamarind is part of a popular range of cooking pastes that enriches the taste of any homemade dish it fills. This convenient culinary delight lets you enjoy the tanginess of tamarind. It's time to add this new ingredient and watch it work wonders for your favourite recipes.",
+   "ingredients": "Tamarind (58.8%), Water, Salt, Preservative (INS 211).",
+   "nutritionalInfo": {
+    "Energy": "183 kcal",
+    "Protein": "1.6 g",
+    "Carbohydrate": "38 g",
+    "Total Sugars": "26 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "1 g",
+    "Total Fat": "0 g",
+    "Sodium": "4534 mg"
+   },
+   "storageInstructions": "Keep away from direct sunlight. Refrigerate after opening and use within 15 days.",
+   "manufacturerName": "Sri Devaraja Agro Industries",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Tomato Puree",
@@ -1584,7 +1890,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264513-8_4-dabur-hommade-tomato-puree-from-100-ripe-tomatoes-no-added-preservatives.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hommade Tomato Puree is a premium-quality cooking ingredient made from the finest, hand-picked tomatoes. Crafted with meticulous care, this puree preserves the natural flavour, colour, and nutrients of fresh, ripe tomatoes while offering the convenience of a ready-to-use product. Sourced from the fertile lands of Bangalore, the tomatoes are meticulously processed to ensure superior taste and consistency in every batch. Free from artificial colours, flavours, and preservatives, this tomato puree provides a wholesome, natural option for your culinary creations. Thick, consistent, and bursting with the tangy taste of tomatoes, the puree adds the perfect touch of vibrant colour and flavour to a wide range of dishes, from Rajma Masala and Dum Aloo to Paneer Butter Masala and Butter Chicken. Equivalent to 7 medium-sized tomatoes per 200ml pack, this versatile puree is a worthy alternative to traditional Indian tomato puree, making it a must-have for seasoned cooks, experimental foodies, and aspiring chefs alike.",
+   "ingredients": "Vinegar, Red Chilli Pepper (28%), Water, Liquid Glucose, Iodised Salt, Bhut Jolokia Pepper Pulp (2.5%), Acidity Regulator (INS 260), Stabilisers (INS 415, INS 407), Preservative (INS 211), Antioxidant (INS 300) and Flavour (Nature Identical Flavouring Substances).",
+   "nutritionalInfo": {
+    "Energy": "37 kcal",
+    "Protein": "1.5 g",
+    "Carbohydrate": "7.5 g",
+    "Total Sugars": "4.6 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "1.5 g",
+    "Total Fat": "0.1 g",
+    "Sodium": "33 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Hershey India Pvt. Ltd",
+   "fssaiLicense": "10012026000226",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Coconut Milk",
@@ -1629,7 +1953,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/245509-8_5-dabur-hommade-coconut-milk-goodness-of-2-creamy-coconuts.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of Dabur Hommade Coconut Milk, crafted from the finest quality coconuts. Expertly extracted using a traditional cold-pressing method, this coconut milk retains the true flavour and aroma of fresh coconut without any artificial additives or preservatives. With a thick, velvety texture and no added sugars, it is the perfect ingredient to elevate your culinary creations, from aromatic Thai curries to indulgent Goan prawn dishes and refreshing Sol Kadi. Versatile and packed with the natural nourishment of coconut, Dabur Hommade Coconut Milk is an inspiration for seasoned cooks, experimental foodies, and aspiring chefs alike. Discover the taste of homemade goodness in every sip.",
+   "ingredients": "Coconut milk can be used in milkshakes, smoothies, and gravy dishes (vegetarian and non-vegetarian).\nIt's also good for virgin pina colada, coconut kheer, and sol kadi.\nOther Hommade options include ginger, garlic, ginger-garlic, and tamarind paste, as well as tomato puree, capsico, and lemoneez.",
+   "storageInstructions": "Store in a cool, dry place, away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Imli Saunth Sauce",
@@ -1674,7 +2004,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196445-8_1-dabur-hommade-imli-sauce-saunth.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hommade Imli Sauce is a perfect blend of tangy and sweet tamarind taste with a hint of spicy flavour. It is a perfect accompaniment for Indian snacks.",
+   "ingredients": "Water, Sugar, Tamarind Pulp (18.5%), Spices (Cumin Powder, Chilli Powder & Dried Ginger Powder), Iodized Salt, Thickener (INS 1442), Acidity Regulator (INS 260), Stabilizer (INS 415), Preservative (INS 211)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "17g",
+    "Energy": "219 kcal",
+    "Protein": "0.9g",
+    "Carbohydrate": "53g",
+    "Total Sugars": "45.3g",
+    "Added Sugars": "39.63g",
+    "Dietary Fiber": "1.7g",
+    "Total Fat": "0.3g",
+    "Sodium": "1121 mg",
+    "% RDA contribution": "calculated on the basis of average requirements of adult per day"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "KapilAnand Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051002825"
+  }
  },
  {
   "title": "Hommade Kalonji Tamatar Chutney",
@@ -1719,7 +2070,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196446-8_1-dabur-hommade-kalonji-tamatar-ki-chutney.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hommade Kalonji Tamatar Ki Chutney is crafted with the right touch of spices and multiple choicest ingredients to complement your regular meals or snacks with tangy, sweet, zingy and spicy flavour notes. It is the perfect accompaniment to your chaat, samosa, bhel, parantha and many more snack items. So, enjoy the finger licking, delicious range of Dabur Hommade Chutneys, made just for you.",
+   "ingredients": "Sugar, Tomato Paste (15.5%), Water, Refined Sunflower Oil, Red Chilli Powder, Ginger (1.7%), Iodized Salt, Acidity Regulator (Ins 330), Cumin Seeds, Mustard Seeds (0.4%), Fennel, Black Cumin (Kalonji) (0.3%), Fenugreek (0.3%), Turmeric Powder And Preservative (Ins 211).",
+   "usageInstructions": "It is the perfect accompaniment to your chaat, samosa, bhel, parantha and many more snack items. Just open, serve and enjoy.",
+   "manufacturerName": "Foodcoast International A-23A",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10011063000008"
+  }
  },
  {
   "title": "Hommade Garlic Chutney",
@@ -1764,7 +2123,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196447-8_1-dabur-hommade-rajasthan-ki-garlic-chutney.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hommade Spicy Garlic Chutney is crafted with the right touch of spices and multiple choicest ingredients to complement your regular meals or snacks with tangy, zingy and spicy flavour notes. It is the perfect accompaniment to your Dosas, Momos, Idlis, Rolls and many more snack items. So, enjoy the finger lickin, delicious range of Dabur Hommade Chutneys, made just for you.",
+   "ingredients": "Garlic (28%), Red Chilli Puree, Tomato Paste (20.5%), Onion, Refined Sunflower Oil, Iodised Salt, Cumin Seeds and Powder (1%), Mustard Seeds (0.5%), Acidity Regulator (INS 330), Stabiliser (INS 415) and Preservative (INS 211).",
+   "nutritionalInfo": {
+    "Energy": "200 kcal",
+    "Protein": "3.8 g",
+    "Carbohydrate": "16.0 g",
+    "Sugars": "11.9 g",
+    "Dietary Fibre": "4.2 g",
+    "Fat": "13.4 g",
+    "Saturated Fat": "2.3 g",
+    "Trans Fat": "0.25 g",
+    "Sodium": "1464 mg"
+   },
+   "usageInstructions": "It is the perfect accompaniment to your Dosas, Momos, Idlis, Rolls and many more snack items.\nJust open, serve and enjoy.",
+   "manufacturerName": "Foodcoast International A-23A",
+   "fssaiLicense": "10011063000008",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Hari Chatpati Chutney",
@@ -1809,7 +2187,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196448-8_2-dabur-hommade-dilli-ki-hari-chatpati-chutney.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge your taste buds with the zesty, finger-licking flavours of Dabur Hommade Hari Chatpati Chutney. Crafted with the perfect blend of spices and choicest ingredients, this delightful condiment captures the vibrant essence of street food. Bursting with tangy, zingy, and spicy notes, this chutney makes the perfect accompaniment to your chaat, samosas, biryanis, paranthas, and more. Enjoy the taste experience as this versatile chutney adds a burst of tanginess to elevate your favourite dishes. Made with care using traditional recipes, Dabur Hommade Chutneys are the ideal choice to complement your regular meals or snacks.",
+   "ingredients": "Water, Coriander (36%), Garlic (6.5%), Ginger (4.5%), Green Chilli, Iodised Salt, Sugar, Thickener (INS 1442), Acidity Regulator (INS 330), Cumin Powder, Stabiliser (INS 415) and Preservative (INS 211).",
+   "nutritionalInfo": {
+    "Energy": "30 kcal",
+    "Protein": "1.7 g",
+    "Carbohydrate": "5.5 g",
+    "Total Sugars": "2.4 g",
+    "Added Sugars": "1.25 g",
+    "Dietary Fiber": "2.4 g",
+    "Total Fat": "0.3 g",
+    "Sodium": "1000 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place, away from direct sunlight.",
+   "manufacturerName": "Foodcoast International",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Chatpata Mango Pickle",
@@ -1825,7 +2221,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40202784_4-dabur-hommade-mango-pickle.jpg"
-    }
+    },
+    "barcode": "8901207044618"
    }
   ],
   "images": [
@@ -1854,7 +2251,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202784-8_2-dabur-hommade-mango-pickle.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hommade Mango Pickle is a classic combination of juicy mangoes, prepared, marinated and prickled with a rich blend of spices. It is a tantalizing accompaniment to your favourite meals. Popularly known as Aam ka Achaar it is a delight for all age groups. Mango Pickle can be consumed with rice, paranthas, rolls or can be even added to dishes to give that Achaari flavour.",
+   "ingredients": "Mango Pieces, Water, Spices Condiments [Fenugreek Seed, Fenugreek Powder, Fennel Seed, Chilli Powder, Fennel Powder, Coriander Powder, Cumin Powder, Bishops Seed (Ajwain), Black Cumin (Kalonji), Paprika Extract, Turmeric Powder, Capsicum Extract, Asafoetida], Iodised Salt, Acidity Regulator (Ins 260), Mustard Oil And Preservative (Ins 211).",
+   "storageInstructions": "Store in cool, dry and hygienic place. Use spoon while serving. Ideal accompaniment with everyday meals, or use as a spread on bread or parathas.",
+   "manufacturerName": "The Unati Co-opMarketing cum Processing society Ltd",
+   "fssaiLicense": "10015063000717",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Khatta Lime Pickle",
@@ -1899,7 +2304,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202785-8_2-dabur-hommade-lime-pickle.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hommade Lime Pickle is prepared from plump and juicy limes blended with spices to form a tangy and spicy combination. This traditional recipe imparts the perfect flavour and tanginess to the pickle which can be consumed with multiple dishes, meals or snacks to enjoy the perfect sour and spicy taste. It is a delight for all age groups.",
+   "ingredients": "Lime Pieces, Water, Spices Condiments [Fenugreek Seed, Fennel Seed, Fenugreek Powder, Fennel Powder, Chilli Powder, Bishops Seed (Ajwain), Coriander Powder, Cumin Powder, Turmeric Powder, Paprika Extract, Asafoetida], Iodised Salt, Mustard Oil, Acidity Regulator (Ins 260).",
+   "storageInstructions": "Store in cool, dry and hygienic place. Use spoon while serving. Ideal accompaniment with everyday meals, or use as a spread on bread or parathas.",
+   "manufacturerName": "The Unati Co-opMarketing cum Processing society Ltd",
+   "fssaiLicense": "10015063000717",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Mazedaar Mixed Pickle",
@@ -1944,7 +2357,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202783-8_3-dabur-hommade-mixed-pickle.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Hommade Mixed Vegetable Pickle brings you the perfect mix of Mango, Carrot, Lemon and Chili with a blend of zesty spices. It instantly becomes a perfect accompaniment to your everyday meals. Mixed Pickle can be an accompaniment to lunch, breakfast or dinner routines. It adds a zingy zesty flavourful punch to your meals.",
+   "ingredients": "Mixed Fruits Vegetable Pieces [Mango Pieces, Carrot Pieces, Lime Pieces, Green Chilli Pieces, Dela Fruit], Water, Spices Condiments [Fenugreek Powder, Fenugreek Whole, Fennel Whole, Mustard Powder, Fennel Powder, Chilli Powder, Coriander Powder, Black Cumin (Kalonji), Turmeric Powder, Capsicum Extract, Paprika Extract, Asafoetida], Iodised Salt, Acidity Regulator (Ins 260), Mustard Oil And Preservative (Ins 211).",
+   "nutritionalInfo": {
+    "Energy": "121 kcal",
+    "Protein": "2.8 g",
+    "Carbohydrate": "7.3 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Dietary Fiber": "1.3 g",
+    "Total Fat": "9.4 g",
+    "Saturated Fat": "1.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "5200 mg"
+   },
+   "manufacturerName": "Kapil Anand Agro Pvt. Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Teekhi Green Chilli Pickle",
@@ -1989,7 +2422,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202786-8_3-dabur-hommade-green-chilli-pickle.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the zesty and flavourful delight of Dabur Hommade Chilli Pickle. Crafted with the finest green chillies, this pickle is marinated and pickled with a rich blend of traditional Indian spices, delivering an authentic and spicy chilli flavour. Versatile and delightful, it makes the perfect accompaniment to your favourite meals, from dal rice and sambhar rice to paranthas and snacks. Prepared without any heat treatment, this pickle retains the micronutrients, ensuring a nutritious and wholesome addition to your table. Discover the great Indian taste that Dabur Hommade Chilli Pickle brings to your everyday meals, available throughout the year.",
+   "ingredients": "Green Chilli Pieces (57%), Water, Lime Paste, Spices & Condiments (7.29%) [Mustard Dal, Fenugreek Powder, Mustard Powder, Fenugreek Seed, Fennel Whole, Turmeric Powder, Coriander Powder, Cumin Powder, Fennel Powder, Bishop'S Seed (Ajwain), Asafoetida], Lodised Salt, Mustard Oil, Acidity Regulator (Ins 260), Black Salt And Preservative (Ins 211)",
+   "nutritionalInfo": {
+    "Energy": "121 kcal",
+    "Protein": "2.8 g",
+    "Carbohydrate": "7.3 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Dietary Fiber": "1.3 g",
+    "Total Fat": "9.4 g",
+    "Saturated Fat": "1.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "5200 mg"
+   },
+   "manufacturerName": "Kapil Anand Agro Pvt. Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hommade Lemoneez",
@@ -2005,7 +2458,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100005699_6-dabur-hommade-lemoneez-goodness-of-33-lemons.jpg"
-    }
+    },
+    "barcode": "8901888005717"
    }
   ],
   "images": [
@@ -2034,7 +2488,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005699-8_4-dabur-hommade-lemoneez-goodness-of-33-lemons.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the zesty brilliance of Dabur Hommade Lemoneez, crafted with the finest lemons sourced from Brazil. This convenient 250ml bottle is equivalent to the juice of 33 lemons, delivering the fresh, tangy flavour of just-squeezed citrus in every drop. Made from pure lemon extract, Dabur Hommade Lemoneez is a trusted, high-quality ingredient that will elevate your culinary creations. Whether you're whipping up refreshing beverages, marinating meats, or adding a burst of flavour to your favourite dishes, this versatile lemon juice is a must-have in every kitchen. Experience the unparalleled taste and convenience of Dabur Hommade Lemoneez, a true testament to Dabur's commitment to quality and innovation.",
+   "ingredients": "Water, Lemon Juice Concentrate, Preservative",
+   "nutritionalInfo": {
+    "Serving Size": "2 tsp. (Approx. 10ml)",
+    "Energy": "31 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "2.5 g",
+    "Total Sugars": "2.5 g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "27 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Capsico Red Pepper Sauce",
@@ -2050,7 +2520,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/257131_6-dabur-red-pepper-bhut-jolokia-sauce.jpg"
-    }
+    },
+    "barcode": "8901207004599"
    }
   ],
   "images": [
@@ -2076,7 +2547,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/257131-7_2-dabur-red-pepper-bhut-jolokia-sauce.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing Dabur Capsico, the epitome of fiery perfection for spice enthusiasts and flavour connoisseurs alike. Crafted with fresh Bhut Jolokia (Ghost Peppers) within 24 hours of plucking, this chili sauce guarantees an authentic, intense taste experience like no other. Aged to perfection in wooden barrels for 1-3 years, Capsico boasts a depth of flavour that elevates your culinary journey to new heights. With a commitment to natural goodness, Capsico contains no artificial flavours, allowing the true essence of the Bhut Jolokia peppers' natural heat and flavour to shine through. Embrace the versatility of this chili sauce, as it effortlessly complements a wide array of foods, from Indian breakfasts to rice dishes, curries, and even mocktails.\nFrom dawn to dusk, Capsico is your go-to fiery condiment, ready to enhance every meal. Capsico proudly embodies the spirit of India's spiciest chili, the legendary Bhut Jolokia. Feel the unparalleled intensity and distinctive flavour profile of this iconic pepper in every drop of our sauce. Spice enthusiasts will rejoice as Capsico opens up a world of creative possibilities to ignite your culinary creations, adding an extra kick to your favourite recipes or experimenting with new and exciting flavour combinations. Elevate your taste experience with Dabur Capsico, the ultimate choice for those seeking the true essence of fiery indulgence.",
+   "ingredients": "Vinegar, Red Chilli Pepper (28%), Water, Liquid Glucose, Iodised Salt, Stabilizer (INS 415), Acidity Regulator (INS 260), Emulsifier (INS 1450), Preservative (INS 211), Antioxidant (INS 385), and Flavour (Nature Identical Flavouring Substances).",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "5g",
+    "Energy": "52 kcal",
+    "Protein": "0.5 g",
+    "Carbohydrate": "6.5 g",
+    "Total Sugars": "4.7 g",
+    "Added Sugars": "3.6 g",
+    "Dietary Fiber": "0 g",
+    "Total Fat": "0.3 g",
+    "Sodium": "1400 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "DABUR INDIA LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Himalayan Apple Cider Vinegar",
@@ -2112,7 +2602,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213659-5_6-dabur-organic-apple-cider-vinegar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience Dabur Himalayan Apple Cider Vinegar. It contains the mother of vinegar and can be used in cooking and beverages. With its USDA organic certification, you can trust its quality. Bring Dabur Himalayan Apple Cider Vinegar into your daily routine and enjoy its versatility.",
+   "ingredients": "Apple Juice brewed to 5% acidity",
+   "nutritionalInfo": {
+    "Energy": "22 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "1.7 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "47 mg",
+    "Potassium": "94.7 mg",
+    "Iron": "0.6 mg",
+    "Calcium": "8.4 mg"
+   },
+   "storageInstructions": "Store away from sunlight. Shake well before use.\nDo not use if seal is broken\nDue to natural ingredients, the colour, taste and consistency of Apple cider vinegar may vary but the product efficiency remains unchanged.",
+   "manufacturerName": "The Unati Co-op. Marketing-cum-Processing Society Ltd. 5 Km Idwara Milestone",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Himalayan Organic Apple Cider Vinegar",
@@ -2151,7 +2662,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202782-6_5-dabur-himalayan-raw-apple-cider-vinegar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience Dabur Himalayan Organic Apple Cider Vinegar. It contains the mother of vinegar and can be used in cooking and beverages. With its USDA organic certification, you can trust its quality. Bring Dabur Himalayan Organic Apple Cider Vinegar into your daily routine and enjoy its versatility.",
+   "ingredients": "Organic Apple Juice",
+   "nutritionalInfo": {
+    "Energy": "22 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "1.7 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "9.3 mg",
+    "Potassium": "94.4 mg",
+    "Iron": "0.25 mg",
+    "Calcium": "5.5 mg"
+   },
+   "storageInstructions": "Keep in cool and dry place, away from sunlight\nClose the bottle airtight after use to keep fresh",
+   "manufacturerName": "The Unati Co-op. Marketing-cum-Processing Society Ltd. 5 Km Idwara Milestone",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Keora Water",
@@ -2167,7 +2699,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/271991_3-dabur-keora-water-authentic-flavour-for-biryanis-and-desserts.jpg"
-    }
+    },
+    "barcode": "8901207001321"
    }
   ],
   "images": [
@@ -2193,7 +2726,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/271991-7_1-dabur-keora-water-authentic-flavour-for-biryanis-and-desserts.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Unlock the full potential of your dishes with Dabur Keora Water, a must-have for all food lovers. Crafted from superior quality Keora, this versatile flavouring agent elevates both sweet and savoury creations. Sprinkle a few drops into biryanis, desserts like luscious rasgullas and ras malai, or refreshing sherbets to impart an authentic, aromatic flavour. Equally at home in meat dishes with gravy, such as qorma and kalia, as well as in the milk for making indulgent kulfi and rabri, Dabur Keora Water is a true culinary companion.\nEnhance your cooking game and delight your senses with this versatile, easy-to-use product that brings the flavours of India to your kitchen.",
+   "ingredients": "Purified Water, Keora Extract, Dispersing Agent, Acidity Regulator, Preservatives",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Dabur India Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012061000021"
+  }
  },
  {
   "title": "Sharbat-e-Azam",
@@ -2209,7 +2750,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/258331_4-dabur-sharbat-e-azam.jpg"
-    }
+    },
+    "barcode": "8901207038617"
    }
   ],
   "images": [
@@ -2232,7 +2774,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/258331-6_1-dabur-sharbat-e-azam.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Sharbat E Azam will help you stay hydrated during the summer season. It is made up of several herbs and fruit and vegetable juices with vital nutrients and vitamins essential for good health. This drink will give you energy as well as keep you hydrated throughout the day.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Energy": "300 kcal",
+    "Carbohydrates (g)": "75 g",
+    "Sugar (g)": "74 g",
+    "Protein (g)": "0 g",
+    "Fat (g)": "0 g",
+    "Sodium (mg)": "12 mg",
+    "Potassium (mg)": "3 mg",
+    "Calcium (mg)": "7 mg"
+   },
+   "manufacturerName": "Dabur India Ltd. Plot No-22 Site 4 Sahibabad Sahibabad Industrial Area Sahibabad Industrial Area Ghaziabad Uttar Pradesh",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "A2 Cow Ghee",
@@ -2277,7 +2835,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355801-8_4-dabur-a2-cow-ghee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur A2 Cow Ghee is traditionally known to be a rich source of energy and contains the goodness of Vitamin A, known for its antioxidant benefits. It is naturally rich in short chain fatty acids and supports overall nourishment. Dabur A2 Cow Ghee is made from pure cow milkby modern Bilona Method where the cream is cultured to develop the aroma and flavour. The Bilona Method is a traditional process where curd made from cow milk is hand-churned to extract butter, which is then slowly heated to make ghee. This method helps retain the natural aroma, texture and nutritional goodness of ghee.",
+   "manufacturerName": "Alpha Milk Foods Pvt. Ltd. Plot no. A1 to A7",
+   "fssaiLicense": "10016051001899",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pure Cow Ghee",
@@ -2316,7 +2880,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212653-6_4-dabur-100-pure-cow-ghee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Pure Cow Ghee is sourced from the milk of indigenous cows bred in small farms and is pure and nourishing. Its antioxidant action helps fight cell damage. Add Dabur Pure Cow Ghee every day to your rotis, dal, and paranthas for great taste.",
+   "ingredients": "Milk Fat ()",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "897 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Added Sugars": "0g",
+    "Fat": "99.7 g",
+    "Saturated Fat": "75.0 g",
+    "Monounsaturated Fat": "19.0 g",
+    "Polyunsaturated Fat": "2.0 g",
+    "Trans Fat": "3.25 g",
+    "Cholesterol": "175 mg",
+    "Vitamin A": "820 mcg",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "Store in cool and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Dabur India Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000618"
+  }
  },
  {
   "title": "Cold Pressed Groundnut Oil",
@@ -2352,7 +2939,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258853-5_6-dabur-cold-pressed-groundnut-oil-pure-rich-in-antioxidants-good-for-heart-health.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Cold Pressed Groundnut Oil is made from technology that ensures the natural properties and benefits of nuts are kept intact. It is a vegetable oil derived from peanuts. This oil has a mild or neutral flavour made with roasted peanuts and has a strong peanut flavour and aroma.",
+   "ingredients": "Groundnut Oil",
+   "nutritionalInfo": {
+    "Energy": "899 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "99.9 g",
+    "Saturated Fat": "21.9 g",
+    "Monounsaturated Fatty Acids": "45.1 g",
+    "Polyunsaturated Fatty Acids": "32.9 g",
+    "Omega-3 Fatty Acids": "0.1 g",
+    "Omega-6 Fatty Acids": "32.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg"
+   },
+   "manufacturerName": "Sri Vigneshwara Oil Mill No. I",
+   "fssaiLicense": "10012042000138",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Pressed Mustard Oil",
@@ -2368,7 +2978,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40198884_6-dabur-cold-pressed-mustard-oil.jpg"
-    }
+    },
+    "barcode": "8901207034275"
    },
    {
     "title": "3L",
@@ -2403,7 +3014,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323918_2-dabur-cold-pressed-mustard-oil.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Cold Pressed Mustard Oil is made from carefully selected mustard seeds using the cold-pressing process. It is pure and natural, with a rich mustard flavour and aroma that enhances everyday cooking. The oil contains Omega-3 polyunsaturated fatty acids, including Alpha-Linolenic Acid (ALA), along with natural antioxidants. It is suitable for cooking, frying, sautéing, tadka and traditional recipes.",
+   "nutritionalInfo": {
+    "Energy": "898 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "99.8 g",
+    "Saturated Fat": "8 g",
+    "Monounsaturated Fatty Acids": "65 g",
+    "Polyunsaturated Fatty Acids": "26.8 g",
+    "Omega-3 Fatty Acids (ALA)": "10.6 g",
+    "Omega-6 Fatty Acids": "14.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Vitamin E": "23 mg"
+   },
+   "manufacturerName": "Dabur",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Pressed Sesame Oil",
@@ -2436,7 +3070,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220295-4_2-dabur-cold-pressed-sesame-oilgingelly-oil.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Cold Pressed Sesame (Gingelly/Til) Cooking Oil is extracted from high-quality sesame seeds using a cold-pressing process. This method helps retain the natural nutrients and goodness of sesame oil, as it does not involve high temperatures during extraction. The oil is versatile and suitable for frying, sautéing and raw consumption.",
+   "nutritionalInfo": {
+    "Serving Size": "2",
+    "Servings Per Pack": "100",
+    "Energy": "899",
+    "Protein": "0 g",
+    "Carbohydrate": "0",
+    "Total Sugars": "0",
+    "Added Sugars": "0",
+    "Fatty Acids": "42.1 g",
+    "Acids": "42.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0",
+    "Sodium": "0 mg"
+   },
+   "manufacturerName": "Sri Vigneshwara Oil Mill No.1",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Virgin Coconut Oil",
@@ -2475,7 +3129,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258852-6_3-dabur-virgin-coconut-oil-cold-pressed-100-natural-unrefined-helps-boost-immunity.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Virgin Coconut Oil is a natural, cold-pressed coconut oil made from fresh coconuts. It is unrefined and contains no trans fats, retaining the natural goodness of coconut. With approximately 60% medium-chain triglycerides (MCTs), this versatile oil is suitable for everyday cooking and food preparation. Its mild coconut aroma and natural flavour make it a convenient addition to a variety of dishes. Dabur Virgin Coconut Oil can also be used as part of your regular hair and skincare routine, making it a versatile choice for both culinary and personal care needs.",
+   "nutritionalInfo": {
+    "Energy": "900 kJ / 215 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "100 g",
+    "Saturated Fat": "94.6 g",
+    "Monounsaturated Fatty Acids": "5 g",
+    "Polyunsaturated Fatty Acids": "1 g",
+    "Omega-3 Fatty Acids": "0 g",
+    "Omega-6 Fatty Acids": "1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg"
+   },
+   "manufacturerName": "Shri Veerakumar Industry",
+   "fssaiLicense": "10012042000138",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vedic Tea",
@@ -2538,7 +3214,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40275630-8_1-dabur-vedic-tea-premium-quality-with-30-ayurvedic-herbs-re-energises-boosts-immunity.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Vedic Tea is the perfect beverage for your morning brew. Blended for tea lovers, the smooth finishing of these tea leaves dissolves in your water so quickly and smoothly. Enlighten yourselves with the perfect blend of tea. You simply cannot go wrong with Dabur Vedic Tea. It helps lower your blood sugar levels, reduce heartburn and aids in weight loss. A wonderful way to maintain good health while also enjoying rich, flavours and aroma right at home. It is also infused with 30+ Ayurvedic herbs. Explore a range of energising and delicious teas from Dabur only on Big Basket.",
+   "ingredients": "Tea (97.5%), Herbs & Spices (2.5%) (Cardamom, Ginger, Cinnamon, Mulethi, Tulsi, Vidaari, Varahikand, Shatawar, Ashwagandha, Bael Chhal, Arani (Agnimonth), Shyonok, Gambhari, Shaalparn?, Prishnaparni, Gokshura, Kantkari-shavet, Bruhati, Balla, Mudgaparni, Mashapárni, Karkatasharingi, Bhumyamalaki, Draksha, Jeevanti, Pushkar mool, Haritaki, Guduchi, Kapur-Kachari, Mushtaka, Punarnava, Neel Kamal & Vasa).",
+   "usageInstructions": "Prepare with boiled water.\nAdd milk and sugar as you desire.",
+   "manufacturerName": "Masterblend Industries Pvt. Ltd",
+   "fssaiLicense": "10012011000618",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vedic Suraksha Black Tea Bags",
@@ -2583,7 +3267,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199096-8_1-dabur-vedic-suraksha-black-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Vedic Suraksha Tea comes with the goodness of 5 Ayurvedic Herbs namely Tulsi, Kali Mirch, Daalchini, Sunthi, Kishmish. Each herb has its own unique property which helps boost immunity.",
+   "ingredients": "Green Tea (29%), Herbs; Spices [Basil (20%), Cinnamon (15%), Black Pepper (15%), Ginger (15%)], Raisin(1%)",
+   "usageInstructions": "Place tea Bag\nPour Boiling Water\nBrew for 2 min\nRemove tea bag",
+   "manufacturerName": "Mohani Tea Leaves Pvt. Ltd",
+   "fssaiLicense": "10013051000813",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vedic Suraksha Green Tea Bags",
@@ -2631,7 +3323,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199095_2-dabur-vedic-suraksha-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Green Tea is produced from tea leaves of Camellia sinensis plant by harvesting the leaves followed by quickly heating and drying to prevent too much oxidation from occurring. DABUR Vedic Suraksha Green Tea comes with the goodness of 5 ayurvedic herbs namely tulsi, kali Mirch, daalchini, shunthi, kishmish. The five ayurvedic herbs come together to help boost immunity. The tea contains 71% herbs which enhance the taste and experience of each cup . Each pack contains 25 Tea Bags.\nGreen Tea helps improve:\nBody metabolism\nAids in weight loss\nHas zero calories\nHelps in detoxification It is very easy to prepare.",
+   "ingredients": "Green Tea(29%),Herbs and Spices [Basil (20%) , Cinnamon (15%), Black Pepper (15%) , Ginger (15%)] , Rasin (1%)",
+   "usageInstructions": "Just place the tea bag in a teacup, pour boiling water and let it brew for 2 minutes.\nRemove the tea bag and enjoy the refreshing taste of Dabur Vedic Suraksha Tea.\nHave a cup of Dabur Vedic Suraksha Tea daily by replacing your regular cup of tea.\nHave it any time of the day- morning, evening, or at night to refresh and revitalize yourself.",
+   "manufacturerName": "Mohani Tea Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000618"
+  }
  },
  {
   "title": "Vedic Detox Kahwa Green Tea Bags",
@@ -2676,6 +3376,20 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40242231-8_2-dabur-detox-kahwa-vedic-green-tea-enriched-with-herbs-refreshing.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dabur Detox Kahwa Vedic Green Tea comes with the goodness of herbs. Passes through a rigorous quality check to bring only the best products to your doorstep. We bring to you herbs and the refreshing taste of carefully selected tea leaves. Detox your body naturally with this age-old Indian remedy.",
+   "ingredients": "Tulsi, Daalchini, Shunthi, Black Pepper And Kishmish",
+   "nutritionalInfo": {
+    "Calories": "153",
+    "Carbs": "4g",
+    "Fat": "5g",
+    "Protein": "22g"
+   },
+   "usageInstructions": "Add a teabag to a cup of boiling water for 2 minutes to allow the flavours to infuse.\nLeave a little longer if you prefer a stronger taste.",
+   "manufacturerName": "Masterblend Industires Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10020051003589"
+  }
  }
 ]
