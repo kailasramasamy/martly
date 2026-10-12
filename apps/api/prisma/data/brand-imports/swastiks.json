@@ -1,0 +1,22 @@
+{
+  "brand": "Swastiks",
+  "manufacturer": "Swastiks",
+  "feed": "swastiks-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/swastiks/logo-72d24cc5.png",
+  "themeColor": "#E8401C",
+  "themeColorSecondary": "#7A1E5A",
+  "namePrefix": "Swastiks ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cut\\ Mango\\ Pickle$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+[
+ {
+  "title": "Cut Mango Pickle",
+  "handle": "cut-mango-pickle",
+  "vendor": "Swastiks",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40069255_2-swastiks-pickle-mango.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40069259_2-swastiks-pickle-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40069255_2-swastiks-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40069255-2_1-swastiks-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40069255-3_1-swastiks-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40069255-4_1-swastiks-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40069255-5_1-swastiks-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40069255-6_1-swastiks-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40069255-7_1-swastiks-pickle-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40069259_2-swastiks-pickle-mango.jpg"
+   }
+  ]
+ }
+]
