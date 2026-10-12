@@ -1,0 +1,122 @@
+[
+ {
+  "title": "Natural Mineral Water",
+  "handle": "natural-mineral-water",
+  "vendor": "Himalayan (Tata)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/280459_8-himalayan-natural-mineral-water.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40061437_7-himalayan-natural-mineral-water.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123134_7-himalayan-natural-mineral-water.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/253557_15-himalayan-natural-mineral-water.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280459_8-himalayan-natural-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280459-2_6-himalayan-natural-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280459-3_6-himalayan-natural-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280459-4_6-himalayan-natural-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280459-5_6-himalayan-natural-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280459-6_6-himalayan-natural-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280459-7_6-himalayan-natural-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280459-8_6-himalayan-natural-mineral-water.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Sparkling Water",
+  "handle": "sparkling-water",
+  "vendor": "Himalayan (Tata)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1075035_5-himalyan-water-sparkling-himalyan.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40104659_7-himalayan-sparkling-water.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1075035_5-himalyan-water-sparkling-himalyan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1075035-2_5-himalyan-water-sparkling-himalyan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1075035-3_5-himalyan-water-sparkling-himalyan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1075035-4_5-himalyan-water-sparkling-himalyan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1075035-5_5-himalyan-water-sparkling-himalyan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104659_7-himalayan-sparkling-water.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

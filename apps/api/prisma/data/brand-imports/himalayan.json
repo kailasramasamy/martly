@@ -1,0 +1,30 @@
+{
+  "brand": "Himalayan (Tata)",
+  "manufacturer": "Tata Consumer Products Ltd.",
+  "feed": "himalayan-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/himalayan/logo-526bc9c4.png",
+  "themeColor": "#E6007E",
+  "themeColorSecondary": "#4A4A4A",
+  "namePrefix": "Himalayan ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Natural\\ Mineral\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Mineral Water"
+      ]
+    },
+    {
+      "match": "^Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Mineral Water"
+      ]
+    }
+  ]
+}
