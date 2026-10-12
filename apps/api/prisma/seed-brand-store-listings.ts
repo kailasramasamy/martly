@@ -32,13 +32,23 @@ async function main() {
     select: { id: true, productId: true, mrp: true },
   });
 
+  const listing = (storeId: string, v: (typeof variants)[number]) => ({
+    storeId, productId: v.productId, variantId: v.id,
+    price: Math.round(Number(v.mrp) * factor), stock: 20 + Math.floor(Math.random() * 181), isActive: true,
+  });
   for (const store of stores) {
+    if (values["missing-only"]) {
+      // One insert per store; sizes the store already lists are skipped, never touched
+      const { count } = await prisma.storeProduct.createMany({ data: variants.map((v) => listing(store.id, v)), skipDuplicates: true });
+      console.log(`  ${store.name}: ${count} new listings`);
+      continue;
+    }
     await prisma.$transaction(variants.map((v) => {
-      const data = { price: Math.round(Number(v.mrp) * factor), stock: 20 + Math.floor(Math.random() * 181), isActive: true };
+      const { storeId, productId, variantId, ...data } = listing(store.id, v);
       return prisma.storeProduct.upsert({
-        where: { storeId_variantId: { storeId: store.id, variantId: v.id } },
-        create: { storeId: store.id, productId: v.productId, variantId: v.id, ...data },
-        update: values["missing-only"] ? {} : data,
+        where: { storeId_variantId: { storeId, variantId } },
+        create: { storeId, productId, variantId, ...data },
+        update: data,
       });
     }));
     console.log(`  ${store.name}: ${variants.length} listings`);
