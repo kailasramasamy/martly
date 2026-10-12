@@ -1,0 +1,4590 @@
+[
+ {
+  "title": "GoodLife Toned Milk",
+  "handle": "goodlife-toned-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "26",
+    "compare_at_price": "26",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/242671_1-nandini-goodlife-toned-milk.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "13",
+    "compare_at_price": "13",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006931_4-nandini-tone-milk.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "8",
+    "compare_at_price": "8",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/316331_2-nandini-goodlife-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242671_1-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242671-2_1-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242671-3_1-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242671-4_1-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242671-5_1-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006931_4-nandini-tone-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/316331_2-nandini-goodlife-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "GoodLife milk is the long shelf life range of Milk products from the house of Nandini. Superior quality milk is sourced directly from farmers, processed using UHT (Ultra High Temperature) technology and packaged in aseptic Tetra Pak packages. Hence GoodLife needs no refrigeration till opened and can be consumed directly from the package. And since it is homogenized, GoodLife makes thick and tasty treats - tea, coffee, milkshakes or curd. Goodness of Milk, Minus the Hassle!",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Energy": "60 kcal",
+    "Carbohydrate": "4.8 g",
+    "Sugar (Lactose)": "4.8 g",
+    "Protein": "3.3 g",
+    "Fat": "3.1 g",
+    "Saturated Fat": "2.0 g",
+    "Trans Fat": "0.08 g",
+    "Minerals": "0.7 g",
+    "Calcium": "124 mg",
+    "Vitamin A": "35 µg"
+   },
+   "manufacturerName": "Karnataka Co-Operative Milk Producer's Federation Limited ",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife UHT Toned Milk",
+  "handle": "goodlife-uht-toned-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "64",
+    "compare_at_price": "64",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100285703_15-nandini-goodlife-toned-milk.jpg"
+    },
+    "barcode": "8906153560410"
+   },
+   {
+    "title": "500ml",
+    "price": "36",
+    "compare_at_price": "36",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006916_6-nandini-goodlife-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285703_15-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285703-2_4-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285703-3_4-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285703-4_4-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285703-5_4-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285703-6_4-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285703-7_2-nandini-goodlife-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006916_6-nandini-goodlife-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Goodlife Cow milk is UHT processed milk with Min.3.% fat and Min. 8.5% SNF. Suitable for all generation.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Energy": "60 kcal",
+    "Carbohydrate": "4.8 g",
+    "sugar (Lactose)": "4.8 g",
+    "Protein": "3.3 g",
+    "Fat": "3.1 g",
+    "Saturated Fat": "2.0 g",
+    "Trans Fat": "0.08 g",
+    "Minerals": "0.7 g",
+    "Calcium": "124 mg",
+    "Vitamin A": "35 ?g"
+   },
+   "manufacturerName": "Karnataka Co-Operative Milk Producer's Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Gold Standardised UHT Milk",
+  "handle": "goodlife-gold-standardised-uht-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006910_7-nandini-goodlife-gold-homogenised-standardised-milk.jpg"
+    },
+    "barcode": "8906036675859"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006910_7-nandini-goodlife-gold-homogenised-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006910-2_7-nandini-goodlife-gold-homogenised-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006910-3_7-nandini-goodlife-gold-homogenised-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006910-4_7-nandini-goodlife-gold-homogenised-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006910-5_6-nandini-goodlife-gold-homogenised-standardised-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Sampoorna Standardised Milk is a fresh, homogenised milk from healthy cows that offers a fully untouched, ready-to-drink experience. This UHT-processed milk has a long shelf life and a consistent, creamy texture, thanks to the homogenisation process. Sourced from trusted dairy farms, this milk contains less than 4.5% fat and 8.5% solids-not-fat, providing a nutritious and satisfying beverage. Conveniently packaged in a Tetra Pak, this milk requires no refrigeration until opened, making it a versatile choice for on-the-go consumption or household use.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy, kcal": "74",
+    "Carbohydrate, g": "4.8",
+    "of which Sugars, g": "4.8",
+    "Fat, g": "4.6",
+    "Saturated Fat, g": "3.0",
+    "Trans Fat, g": "0.11",
+    "Protein, g": "3.3",
+    "Minerals, g": "0.7",
+    "Calcium, mg": "124",
+    "Vitamin A, ?g": "51"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Kolar-Chikkballapura Milk Union Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Slim Skimmed Milk",
+  "handle": "goodlife-slim-skimmed-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "29",
+    "compare_at_price": "29",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/242673_1-nandini-slim-skimmed-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242673_1-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242673-2_1-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242673-3_1-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242673-4_1-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242673-5_1-nandini-slim-skimmed-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Goodlife Skimmed Milk is the perfect choice for those looking to maintain a healthy weight. This hygienically processed, no-fat milk is packed with essential nutrients and can be enjoyed twice a day. The combination of delicious taste and wholesome goodness makes Nandini Goodlife Skimmed Milk a preferred option for those seeking to incorporate more nutritious foods into their diet. Whether you add it to your daily tea, coffee, or use it to make a refreshing milkshake, this skimmed milk provides you with the essential vitamins and minerals your body needs, including Vitamin A and D to strengthen bones, repair blood tissue, and boost your energy levels. Enjoy the creamy, satisfying taste of Nandini Goodlife Skimmed Milk and feel good about your health-conscious choice.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy, kcal": "39",
+    "Carbohydrate, g": "5.1",
+    "of which Sugars (Lactose), g": "5.1",
+    "Protein, g": "3.5",
+    "Fat, g": "0.5",
+    "Saturated Fat, g": "0.33",
+    "Trans Fat, g": "0.01",
+    "Minerals, g": "0.7",
+    "Calcium, mg": "127"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Karnataka Co-Operative Milk Producer's Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Slim UHT Skimmed Milk",
+  "handle": "goodlife-slim-uht-skimmed-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "68",
+    "compare_at_price": "68",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000519_2-nandini-slim-skimmed-milk.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "37",
+    "compare_at_price": "37",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001504_4-nandini-slim-skimmed-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000519_2-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000519-2_1-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000519-3_1-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000519-4_1-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000519-5_1-nandini-slim-skimmed-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001504_4-nandini-slim-skimmed-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Slim Skimmed Milk offers a healthy and nutritious choice for those looking to reduce fat intake without compromising on taste. This milk is carefully processed to remove most of the cream, resulting in a lighter option that retains all the essential nutrients of regular milk. High in calcium and protein, it supports bone health and overall wellness. Ideal for weight-conscious individuals, Nandini Slim Skimmed Milk is perfect for daily consumption in cereals, beverages, or cooking. Enjoy the fresh, clean taste and the benefits of a low-fat diet with Nandini Slim Skimmed Milk, a trusted choice for your health needs.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Energy, kcal": "39 kcal",
+    "Carbohydrate, g": "5.2 g",
+    "of which Sugars (Lactose), g": "5.2 g",
+    "Fat, g": "0.5 g",
+    "Protein, g": "3.4 g",
+    "Minerals, g": "0.7 g",
+    "Calcium, mg": "127 mg"
+   },
+   "manufacturerName": "Karnataka Co-Operative Milk Producer's Federation Limited ",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Smart Double Toned Milk",
+  "handle": "smart-double-toned-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40066288_3-nandini-smart-doble-toned-milk.jpg"
+    },
+    "barcode": "8906036675767"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40066288_3-nandini-smart-doble-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40066288-2_3-nandini-smart-doble-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40066288-3_3-nandini-smart-doble-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40066288-4_3-nandini-smart-doble-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40066288-5_3-nandini-smart-doble-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Smart milk in Nutrition Protected Tetra Pak packages assures you complete nutrition protection. Its special UHT process kills all germs without damaging the nutrient value of milk. Its 6 layer packaging keeps all the nutrition protected within and does not need any boiling, making it the most nutritious milk for your child.",
+   "ingredients": "Milk Fat 1.5% Minimum, Milk SNF : 9% Maximum",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy, kcal": "49",
+    "Carbohydrate, g": "5.1",
+    "of which Sugar (Lactose), g": "5.1",
+    "Protein, g": "3.5",
+    "Fat,g": "1.6",
+    "Saturated Fat, g": "1.0",
+    "Trans Fat, g": "0.04",
+    "Minerals, g": "0.7",
+    "Calcium, mg": "127",
+    "Added Vitamin A, IU": "77",
+    "Added Vitamin D as D2, IU": "55"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Kolar-Chikkballapura Milk Union Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Samrudhi Full Cream Milk",
+  "handle": "samrudhi-full-cream-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40161616_3-nandini-samrudhi-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40161616_3-nandini-samrudhi-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40161616-2_3-nandini-samrudhi-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40161616-3_3-nandini-samrudhi-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40161616-4_2-nandini-samrudhi-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40161616-5_2-nandini-samrudhi-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40161616-6_1-nandini-samrudhi-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milk is a good source of calcium and protein. It is rich in essentials vitamins like D and B12. It helps in strengthening the bone health and teeth. Samrudhi Milk from Nandini is full cream pasteurised milk.",
+   "manufacturerName": "Kolar and chikkaballapur milk union",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000195"
+  }
+ },
+ {
+  "title": "A2 Cow Milk",
+  "handle": "a2-cow-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198739_3-nandini-a2-pasteurised-cow-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198739_3-nandini-a2-pasteurised-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198739-2_3-nandini-a2-pasteurised-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198739-3_3-nandini-a2-pasteurised-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198739-4_3-nandini-a2-pasteurised-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198739-5_3-nandini-a2-pasteurised-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198739-6_1-nandini-a2-pasteurised-cow-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Milk is enriched with essential nutrients that are beneficial to our body. It is rich in calcium, phosphorus, B vitamins, potassium and vitamin D. Not only it is immensely important for bone and heart, but also one can prepare a variety of dishes with it.",
+   "ingredients": "Energy - 69 Kcal\nCarbohydrate - 4.8 g\nFat - 4.1 g\nProtein - 3.3 g\nMinerals - 0.7\nCalcium - 127 mg\nVitamin A 40g",
+   "usageInstructions": "Ready to cook and drink.",
+   "manufacturerName": "Bengaluru Co-Operative Milk Union Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000721"
+  }
+ },
+ {
+  "title": "Skimmed Milk Powder",
+  "handle": "skimmed-milk-powder",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100285709_2-nandini-skimmed-milk-powder.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100285710_1-nandini-milk-powder-skimmed.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285709_2-nandini-skimmed-milk-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285709-2_2-nandini-skimmed-milk-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285709-3_2-nandini-skimmed-milk-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285709-4_2-nandini-skimmed-milk-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285710_1-nandini-milk-powder-skimmed.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Skimmed Milk Powder is made from pasteurized fresh Skimmed milk by evaporating and spray drying with agglomerisation process. The easiest way to prepare skimmed milk is by adding 1 part of the milk powder by volume to 10 parts of water by volume. BIS Standards confirmation ensures premium quality and best results",
+   "ingredients": "Skimmed milk",
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Curd",
+  "handle": "curd",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "415g",
+    "price": "27",
+    "compare_at_price": "27",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359295_1-nandini-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359295_1-nandini-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359295-2_1-nandini-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359295-3_1-nandini-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359295-4_1-nandini-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359295-5_1-nandini-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Curd offers a smooth, naturally set texture with a mild, refreshing taste that complements daily meals. Made from fresh, wholesome milk, it delivers reliable quality and gentle richness. Whether paired with hot dishes, blended into drinks, or enjoyed on its own, it brings a comforting balance to the table and fits easily into everyday cooking.",
+   "ingredients": "Milk Solids (Tonned Milk), Active Culture",
+   "nutritionalInfo": {
+    "Energy": "60 kcal",
+    "Carbohydrates": "4.4 g",
+    "Total Sugars": "4.4 g",
+    "Added Sugar": "0.0 g",
+    "Total Fat": "3.1 g",
+    "Saturated Fat": "2.0 g (Not more than)",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "9.3 mg",
+    "Protein": "3.7 g",
+    "Calcium": "127 mg",
+    "Sodium": "50 mg",
+    "Vitamin A": "27 µg"
+   },
+   "manufacturerName": "Dakshina Kannada Co-operative Mig union Ltd. Mangalore dairy",
+   "fssaiLicense": "10012043000216",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 2
+  }
+ },
+ {
+  "title": "Premium Probiotic Curd",
+  "handle": "premium-probiotic-curd",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400ml",
+    "price": "32",
+    "compare_at_price": "32",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359296_1-nandini-premium-probiotic-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359296_1-nandini-premium-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359296-2_1-nandini-premium-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359296-3_1-nandini-premium-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359296-4_1-nandini-premium-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359296-5_1-nandini-premium-probiotic-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Premium Probiotic Curd offers a smooth, creamy texture with the added benefit of active probiotic cultures that support everyday digestion. Made from fresh, high-quality milk, it brings a gentle tang and consistent richness to your meals. Enjoy it on its own or pair it with dishes for a wholesome, reliable addition to your daily routine.",
+   "ingredients": "Pasteurised Toned Milk, Milk Solids, Probiotic Culture (Bifidobacterium Lactis & Lactobacillus Acidophilus [Minimum 10? CFU Per Ml]) Allergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "66 kcal",
+    "Carbohydrates": "5.3 g",
+    "Total Sugars": "5.3 g",
+    "Added Sugar": "0.0 g",
+    "Total Fat": "3.0 g",
+    "Saturated Fat": "2.0 g (not more than)",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "9.0 mg",
+    "Protein": "4.4 g",
+    "Calcium": "165 mg",
+    "Sodium": "50 mg"
+   },
+   "manufacturerName": "Dakshina Kannada Co-operative Mig union Ltd. Mangalore dairy",
+   "fssaiLicense": "10012043000216",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Probiotic Curd Cup",
+  "handle": "probiotic-curd-cup",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360618_2-nandini-probiotic-curd.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360618_2-nandini-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360618-2_2-nandini-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360618-3_2-nandini-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360618-4_2-nandini-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360618-5_2-nandini-probiotic-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360618-6_2-nandini-probiotic-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Probiotic Curd is a wholesome dairy product crafted to support everyday digestive wellness. Made from pasteurised toned milk and enriched with live probiotic cultures, it helps improve gut health while delivering a naturally smooth and creamy taste. Rich in protein and calcium, this curd contributes to stronger bones and overall nourishment. Its balanced nutritional profile makes it suitable for daily consumption by all age groups. Free from added sugar and prepared under strict quality standards, Nandini Probiotic Curd is a reliable choice for those seeking both taste and health. Enjoy it plain or as part of meals for a refreshing, nutritious boost.",
+   "ingredients": "Milk Solids (Pasteurised Toned Milk), Thermophilic Lactic Culture, Probiotic Culture (Bifidobacterium, Lactobacillus acidophilus, Streptococcus thermophilus)",
+   "nutritionalInfo": {
+    "Energy": "66 kcal",
+    "Carbohydrate": "5.3 g",
+    "Total Sugars": "5.3 g",
+    "Added Sugar": "0.0 g",
+    "Total Fat": "3.0 g",
+    "Saturated Fat": "2.0 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "9.0 mg",
+    "Protein": "4.4 g",
+    "Calcium": "165 mg",
+    "Sodium": "50 mg"
+   },
+   "manufacturerName": "Karnataka Milk Federation Limited",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Fresh Paneer",
+  "handle": "fresh-paneer",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "96",
+    "compare_at_price": "96",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/270620_4-nandini-paneer.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/270621_6-nandini-paneer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/270620_4-nandini-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/270620-2_1-nandini-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/270620-3_1-nandini-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/270620-4_1-nandini-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/270621_6-nandini-paneer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "As a part of the Karnataka Co-operative Milk Federation, Nandini is a renowned Indian culinary brand that brings you the purest and best dairy products. Nandini Fresh Paneer is a high-quality Indian cottage cheese known for its rich taste and soft texture. Made from pure cow’s milk, it is a versatile ingredient ideal for a variety of dishes, from curries to snacks and desserts. Nandini Fresh Paneer is renowned for its freshness and nutritional value, providing a good source of protein and calcium. It is free from preservatives and artificial additives, ensuring a healthy and natural product. Whether used in traditional recipes or contemporary cuisine, Nandini Fresh Paneer adds a delightful flavour and creaminess to every meal.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy kcal": "297 kcal",
+    "Carbohydrate g": "4.5 g",
+    "of which Sugar (Lactose) g": "4.5 g",
+    "Fat g": "22.7 g",
+    "Saturated Fat g": "14.8 g",
+    "Trans Fat g": "0.57 g",
+    "Protein g": "18.6 g",
+    "Vitamin A ug": "260 ug"
+   },
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Medium Fat Paneer",
+  "handle": "medium-fat-paneer",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361896_3-nandini-medium-fat-paneer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361896_3-nandini-medium-fat-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361896-2_3-nandini-medium-fat-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361896-3_3-nandini-medium-fat-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361896-4_3-nandini-medium-fat-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361896-5_3-nandini-medium-fat-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361896-6_3-nandini-medium-fat-paneer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini High Protein Medium Fat Paneer is a versatile dairy choice for everyday cooking. With a smooth texture and rich taste, it suits a variety of Indian dishes. Each pack delivers 50 g of protein, making it ideal for balanced meals, from curries to grilled and sautéed preparations.",
+   "ingredients": "Milk Solids, Glucono delta – lactone, Calcium lactate\nAllergen: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "216 kcal",
+    "Carbohydrates": "5.2 g",
+    "Total Sugars": "5.2 g",
+    "Added Sugar": "0.0 g",
+    "Total Fat": "10.6 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "31 mg",
+    "Protein": "25 g",
+    "Calcium": "570 mg",
+    "Sodium": "35 mg"
+   },
+   "storageInstructions": "Store refrigerated at 0 – 4 degree celsius after opening,\nrefrigerate & use the contents within 2 days or expiry date, whichever is\nearlier",
+   "manufacturerName": "Mother Dairy",
+   "fssaiLicense": "10012043000211",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Salted Butter",
+  "handle": "salted-butter",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "198",
+    "compare_at_price": "198",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/242667_1-nandini-butter-salted.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "44",
+    "compare_at_price": "44",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/244997_2-nandini-butter-salted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242667_1-nandini-butter-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/244997_2-nandini-butter-salted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of Nandini Salted Butter. Made from pure cow's milk, this butter boasts a delectable flavour that elevates any dish. Whether you're spreading it on toast, cooking up savoury meals, or baking delectable treats, Nandini Butter adds a deliciously buttery taste and texture. Surprisingly low in calories, this butter is a healthier alternative to ghee and other saturated fats, making it the perfect choice for improving your day and enhancing your overall well-being. Enjoy the perfect balance of taste and fitness with Nandini Salted Butter, a true delight for the senses.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Unsalted Cooking Butter",
+  "handle": "unsalted-cooking-butter",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "198",
+    "compare_at_price": "198",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/242668_5-nandini-cooking-butter-unsalted.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/242672_3-nandini-cooking-butter-unsalted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242668_5-nandini-cooking-butter-unsalted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242668-2_1-nandini-cooking-butter-unsalted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242668-3_1-nandini-cooking-butter-unsalted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242668-4_1-nandini-cooking-butter-unsalted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242668-5_1-nandini-cooking-butter-unsalted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242668-6_1-nandini-cooking-butter-unsalted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/242672_3-nandini-cooking-butter-unsalted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "You will be simply amazed at the soft smooth texture of Nandini unsalted butter which comes from pasteurized cream. This tasty delight is absolutely essential for delicious cakes and yummy muffins. Nandini is a household name and a trusted brand from Karnataka which has been producing some of the finest milk and milk products since a long time.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "10g",
+    "Energy (kcal)": "748 kcal",
+    "Carbohydrates (g)": "0.9 g",
+    "Total Sugars (g)": "0.9 g",
+    "Added Sugar (g)": "0.0 g",
+    "Total Fat (g)": "82.5 g",
+    "Saturated Fat (g)": "54 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "248 mg",
+    "Protein (g)": "0.6 g",
+    "Sodium (mg)": "9.0 mg",
+    "Vitamin A, (µg)": "740 µg"
+   },
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheddar Cheese Block",
+  "handle": "cheddar-cheese-block",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "141",
+    "compare_at_price": "141",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181596_3-nandini-cheddar-cheese.jpg"
+    },
+    "barcode": "8906036672346"
+   },
+   {
+    "title": "1kg",
+    "price": "510",
+    "compare_at_price": "510",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181597_6-nandini-cheddar-cheese.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181596_3-nandini-cheddar-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181596-2_6-nandini-cheddar-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181596-3_6-nandini-cheddar-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181596-4_6-nandini-cheddar-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181597_6-nandini-cheddar-cheese.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cheese is a food that many healthy eaters crave. Add cheese to salads, layer it on sandwiches or just enjoy cheese on its own. Either way, Nandini cheese provides a creamy flavour that most of us find satisfying. As part of our Co-operative movement, we promise to bring you the best of mouth-watering, delicious and most healthy product to your plate. Made with pure cow milk under best hygienic conditions and zero adulteration. We promise the best always. Nutritionally rich in calcium, Phosphorous. The best-concentrated form of energy. Suited for all age groups. Eating 100 grams of cheese will substitute eating 4-5 eggs at a time or eating 10 to 15 slices of bread at a time.",
+   "nutritionalInfo": {},
+   "usageInstructions": "Cheese is valued for its portability, long life, and high content of fat, protein, phosphorus and calcium. Your bones need calcium to stay healthy. Calcium can also contribute to a healthy heart and strong muscle. It is an excellent source of vitamins (A, D, E & K).  It is highly digestible. Cheddar can be used in soup preparation. Cheddar cheese used in appetizers, bread, casseroles, salads and even desserts. Cheddar cheese used in cheese straws. Cheddar cheese used in potato-and-cheese biscuits. Cheddar cheese can be used in preparation bread. Cheddar cheese used in cheddar baked chicken and cheese balls preparation. Cheddar cheese used in cheesecake preparation.",
+   "manufacturerName": "Kolar Chikkaballapura District Co-operative Milk Producer's Union Ltd. Kolar Dairy",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001137"
+  }
+ },
+ {
+  "title": "Processed Cheese Block",
+  "handle": "processed-cheese-block",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181588_5-nandini-processed-cheese-block.jpg"
+    },
+    "barcode": "8906036672551"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181588_5-nandini-processed-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181588-2_6-nandini-processed-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181588-3_6-nandini-processed-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181588-4_6-nandini-processed-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181588-5_6-nandini-processed-cheese-block.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cheese is a food that many healthy eaters crave. Add cheese to salads, layer it on sandwiches or just enjoy cheese on its own. Either way, Nandini cheese provides a creamy flavour that most of us find satisfying. As part of our Co-operative movement, we promise to bring you the best of mouth-watering, delicious and most healthy product to your plate. Made with pure cow milk under best hygienic conditions and zero adulteration. We promise the best always. Nutritionally rich in calcium, Phosphorous. The best-concentrated form of energy. Suited for all age groups. Eating 100 grams of cheese will substitute eating 4-5 eggs at a time or eating 10 to 15 slices of bread at a time.\nProcessed cheese is not 100% cheese.... These ingredients are added to melted, pasteurized cheese, which is then converted to a sliced solid, a jarred sauce, a spread, a spray, or maybe even some little oil cartridge you put in a vape and inhale.Good source of calcium and milk proteins. Easy to spread and use, healthiest form of spread",
+   "nutritionalInfo": {},
+   "usageInstructions": "Sprinkle: Sprinkle cheese on your favourite salad, omelette or any other snack\nBake: Add grated cheese topping to your pasta and pizza\nGrill: Make lip-smacking grilled sandwiches by adding cheese singles. Used in sauces and sou. Used with fruits such as apple, pears and etc. Processed cheese can be used with Dosa (cheese dosa) in grated form.\nRefrigerated at 4 Degree C",
+   "manufacturerName": "Kolar Chikkaballapura District Co-operative Milk Producer's Union Ltd. Kolar Dairy",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001137"
+  }
+ },
+ {
+  "title": "Plain Cheese Slices",
+  "handle": "plain-cheese-slices",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "136",
+    "compare_at_price": "136",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181586_5-nandini-cheese-slice-plain.jpg"
+    },
+    "barcode": "8906036674296"
+   },
+   {
+    "title": "100g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181585_5-nandini-cheese-slice-plain.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "366",
+    "compare_at_price": "366",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181587_5-nandini-cheese-slice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181586_5-nandini-cheese-slice-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181586-2_9-nandini-cheese-slice-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181586-3_9-nandini-cheese-slice-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181586-4_10-nandini-cheese-slice-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181586-5_9-nandini-cheese-slice-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181585_5-nandini-cheese-slice-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181587_5-nandini-cheese-slice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cheese is a food that many healthy eaters crave. Add cheese to salads, layer it on sandwiches or just enjoy cheese on its own. Either way, Nandini cheese provides a creamy flavour that most of us find satisfying. As part of our Co-operative movement, we promise to bring you the best of mouth-watering, delicious and most healthy product to your plate. Made with pure cow milk under best hygienic conditions and zero adulteration. We promise the best always. Nutritionally rich in calcium, Phosphorous. The best-concentrated form of energy. Suited for all age groups. Eating 100 grams of cheese will substitute eating 4-5 eggs at a time or eating 10 to 15 slices of bread at a time.\nProcessed cheese is not 100% cheese.... These ingredients are added to melted, pasteurized cheese, which is then converted to a sliced solid, a jarred sauce, a spread, a spray, or maybe even some little oil cartridge you put in a vape and inhale. Processed cheese can be added to omelettes, pizza, souffles, au gratins, fonduesEasy to spread and use, healthiest form of spread.",
+   "nutritionalInfo": {},
+   "usageInstructions": "Cheese slice used in the preparation of sandwiches and burgers. Cheese slice used in Chapatti and bread rolls\nRefrigerated at 4 Degree C",
+   "manufacturerName": "Kolar Chikkaballapura District Co-operative Milk Producer's Union Ltd. Kolar Dairy",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001137"
+  }
+ },
+ {
+  "title": "Plain Cheese Spread",
+  "handle": "plain-cheese-spread",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181591_5-nandini-cheddar-cheese-spread-plain.jpg"
+    },
+    "barcode": "8906036672568"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181591_5-nandini-cheddar-cheese-spread-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181591-2_14-nandini-cheddar-cheese-spread-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181591-3_14-nandini-cheddar-cheese-spread-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181591-4_13-nandini-cheddar-cheese-spread-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181591-5_14-nandini-cheddar-cheese-spread-plain.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181591-6_1-nandini-cheddar-cheese-spread-plain.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cheese Spread - Plain is a versatile and creamy delight that serves as the perfect base for countless culinary creations. With its rich, smooth texture and mild flavour, this cheese spread can enhance your favourite snacks and meals effortlessly. Ideal for spreading on bread, crackers, or vegetables, it adds a touch of indulgence to sandwiches, wraps, and breakfast dishes. Whether enjoyed on its own or mixed with herbs and spices for added flavour, Nandini Cheese Spread - Plain offers convenience and quality in every bite. Elevate your snacking experience with this delicious spread that cheese lovers will adore!",
+   "manufacturerName": "Kolar Chikkaballapura",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Capsicum Cheese Spread",
+  "handle": "capsicum-cheese-spread",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181593_5-nandini-cheddar-cheese-spread-capsicum.jpg"
+    },
+    "barcode": "8906036672582"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181593_5-nandini-cheddar-cheese-spread-capsicum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181593-2_15-nandini-cheddar-cheese-spread-capsicum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181593-3_15-nandini-cheddar-cheese-spread-capsicum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181593-4_13-nandini-cheddar-cheese-spread-capsicum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181593-5_14-nandini-cheddar-cheese-spread-capsicum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181593-6_1-nandini-cheddar-cheese-spread-capsicum.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cheese Spread - Capsicum is a delightful blend of creamy cheese and vibrant capsicum, offering a refreshing twist to your snacking experience. This cheese spread combines the rich, smooth texture of cheese with the sweet, roasted flavour of capsicum, creating a harmonious balance that enhances a variety of dishes. Perfect for spreading on bread, crackers, or as a dip for fresh vegetables, it adds a burst of flavour to sandwiches and wraps. With its convenient packaging, Nandini Cheese Spread - Capsicum is ideal for quick snacks or gourmet creations, making it a must-have for cheese lovers and culinary enthusiasts alike!",
+   "manufacturerName": "Kolar Chikkaballapura",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Garlic Cheese Spread",
+  "handle": "chilli-garlic-cheese-spread",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181594_5-nandini-cheddar-cheese-spread-chilly-garlic.jpg"
+    },
+    "barcode": "8906036675309"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181594_5-nandini-cheddar-cheese-spread-chilly-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181594-2_7-nandini-cheddar-cheese-spread-chilly-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181594-3_7-nandini-cheddar-cheese-spread-chilly-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181594-4_7-nandini-cheddar-cheese-spread-chilly-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181594-5_7-nandini-cheddar-cheese-spread-chilly-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181594-6_1-nandini-cheddar-cheese-spread-chilly-garlic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cheese Spread - Chilli Garlic is a deliciously creamy blend that tantalises your taste buds with its unique flavour profile. Infused with spicy chillies and aromatic garlic, this cheese spread offers a perfect balance of heat and savouriness, making it an ideal addition to your favourite snacks and dishes. Spread it on toast, use it in sandwiches, or serve it as a dip for crackers and vegetables to elevate your culinary creations. The smooth texture makes it easy to use, ensuring a burst of flavour in every bite. Enjoy the bold taste of Nandini Cheese Spread - Chilli Garlic for an unforgettable experience!",
+   "manufacturerName": "Kolar Chikkaballapura",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Jalapeno Cheese Spread",
+  "handle": "jalapeno-cheese-spread",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181595_6-nandini-cheddar-cheese-spread-jalapeno.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181595_6-nandini-cheddar-cheese-spread-jalapeno.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181595-2_17-nandini-cheddar-cheese-spread-jalapeno.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181595-3_17-nandini-cheddar-cheese-spread-jalapeno.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181595-4_17-nandini-cheddar-cheese-spread-jalapeno.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181595-5_17-nandini-cheddar-cheese-spread-jalapeno.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181595-6_1-nandini-cheddar-cheese-spread-jalapeno.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cheese Spread - Jalapeno is a zesty and creamy delight that brings a bold kick to your snacks and meals. Infused with the perfect amount of jalapeno, this cheese spread offers a tantalising blend of smooth cheese and spicy flavour, making it ideal for those who love a little heat. Perfect for slathering on bread, crackers, or fresh vegetables, it adds a unique twist to sandwiches and wraps. This versatile spread can also be used as a dip for nachos or chips, elevating your snacking experience. Enjoy the bold taste of Nandini Cheese Spread - Jalapeno in every bite!",
+   "manufacturerName": "Kolar Chikkaballapura",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pepper Cheese Spread",
+  "handle": "pepper-cheese-spread",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181592_6-nandini-cheddar-cheese-spread-pepper.jpg"
+    },
+    "barcode": "8906036672575"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181592_6-nandini-cheddar-cheese-spread-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181592-2_7-nandini-cheddar-cheese-spread-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181592-3_7-nandini-cheddar-cheese-spread-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181592-4_7-nandini-cheddar-cheese-spread-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181592-5_7-nandini-cheddar-cheese-spread-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40181592-6_1-nandini-cheddar-cheese-spread-pepper.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cheese Spread - Pepper is a deliciously creamy blend that elevates your snacking experience with a delightful kick. Infused with black pepper, this cheese spread offers a perfect balance of rich flavour and zesty spice, making it an ideal accompaniment to various dishes. Whether you’re spreading it on toast, using it in sandwiches, or serving it as a dip for crackers and vegetables, it adds a burst of taste that complements every bite. The smooth texture ensures easy application, making it a convenient choice for quick meals or snacks. Enjoy the bold flavour of Nandini Cheese Spread - Pepper for a memorable treat!",
+   "manufacturerName": "Kolar Chikkaballapura",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ghee",
+  "handle": "ghee",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "305",
+    "compare_at_price": "305",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/213253_6-nandini-pure-ghee.jpg"
+    },
+    "barcode": "8902026101179"
+   },
+   {
+    "title": "200ml",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/148674_3-nandini-pure-ghee.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/213273_9-nandini-pure-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/213253_6-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/213253-2_3-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/213253-3_3-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/213253-4_3-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/213253-5_2-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/213253-6_1-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/213253-7_1-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/148674_3-nandini-pure-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A taste of purity, Nandini Ghee is made from pure butter. It is fresh and pure with a delicious flavour. Hygienically manufactured and packed in a special pack to retain the goodness of pure ghee. Available in 200 ml, 500 ml, 1000 ml packs & 15 kg tins.",
+   "usageInstructions": "Ghee can be used for deep frying and also for preparing dishes. |",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "10g",
+    "Energy, kcal": "897 kcal",
+    "Carbohydrates, g": "0.0 g",
+    "Total Sugar, g": "0.0 g",
+    "Added Sugar, g": "0.0 g",
+    "Total Fat, g": "99.7 g",
+    "Saturated Fat, g": "65 g",
+    "Trans Fat, g": "0.0 g",
+    "Cholesterol, mg": "300 mg",
+    "Protein, g": "0.0 g",
+    "Sodium, mg": "0.0 mg",
+    "Vitamin A, ?g": "890 ?g"
+   },
+   "manufacturerName": "Karnataka Co-operative Milk Producers' Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ghee Bottle",
+  "handle": "ghee-bottle",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/152541_3-nandini-pure-ghee.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "119",
+    "compare_at_price": "119",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022618_2-nandini-pure-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/152541_3-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/152541-2_1-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/152541-3_1-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/152541-4_1-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/152541-5_1-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/152541-6_1-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/152541-7_1-nandini-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022618_2-nandini-pure-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Ghee, a premium quality clarified butter produced by the Karnataka Milk Federation, is a true delight for the senses. Made from fresh cream using traditional preparation methods, this ghee boasts a rich aroma and authentic taste that has made it a staple in many Indian households. Valued for its purity and medicinal benefits in Ayurveda, Nandini Ghee enhances the flavour of a wide range of dishes, from sweet delicacies to savoury recipes. Versatile in its applications, this pure cow milk ghee can be used for baking, deep-frying, or simply drizzled over vegetables and dal to impart a delectable, traditional flavour. Conveniently packaged to maintain its freshness and quality, Nandini Ghee is a trusted choice for all your cooking and dietary needs, offering an unparalleled culinary experience.",
+   "ingredients": "Clarified Butter, Milk Fat",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy, kcal": "897",
+    "Fat, g": "99.7",
+    "Saturated Fat, g": "65",
+    "Trans Fat, g": "2.5",
+    "Cholesterol, mg": "300",
+    "Protein, g": "0",
+    "Carbohydrate, g": "0",
+    "Vitamin A, ?g": "700"
+   },
+   "storageInstructions": "Store under cool and dry conditions",
+   "manufacturerName": "OKMF Karnataka Co-operative",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Desi Cow Ghee",
+  "handle": "desi-cow-ghee",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "844",
+    "compare_at_price": "844",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329984_1-nandini-desi-cow-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329984_1-nandini-desi-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329984-2_1-nandini-desi-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329984-3_1-nandini-desi-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329984-4_1-nandini-desi-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329984-5_1-nandini-desi-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329984-6_1-nandini-desi-cow-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329984-7_1-nandini-desi-cow-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Desi Cow Ghee is a traditional, premium clarified butter made from the milk of indigenous cows. Renowned for its rich flavour and golden hue, this ghee is prepared using the age-old method of churning curd, which preserves its natural nutrients and aroma. Desi Cow Ghee is prized for its high content of healthy fats and essential vitamins like A, D, E, and K. It enhances the taste of various dishes, from rotis and rice to sweets and snacks, while also being a staple in Ayurvedic practices. Ideal for those who appreciate authentic, wholesome ingredients in their cooking.",
+   "ingredients": "Milk Solids (Milk Fat)",
+   "nutritionalInfo": {
+    "Serving Size": "10 g",
+    "Servings Per Pack": "45",
+    "Energy": "897 kcal",
+    "Carbohydrates": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "99.7 g",
+    "Saturated Fat": "65 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "300 mg",
+    "Protein": "0 g",
+    "Sodium": "0 mg",
+    "Vitamin A": "890 ?g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct heat and sunlight",
+   "manufacturerName": "Bengaluru Co-operative Milk Union Ltd. Bengaluru Dalry",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Pure Ghee",
+  "handle": "goodlife-pure-ghee",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361894_3-nandini-good-life-pure-ghee.jpg"
+    },
+    "barcode": "8906036676634"
+   },
+   {
+    "title": "1L",
+    "price": "760",
+    "compare_at_price": "760",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361895_3-nandini-good-life-pure-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361894_3-nandini-good-life-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361894-2_3-nandini-good-life-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361894-3_3-nandini-good-life-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361894-4_3-nandini-good-life-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361894-5_3-nandini-good-life-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361894-6_3-nandini-good-life-pure-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361895_3-nandini-good-life-pure-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Good Life Pure Ghee is crafted to deliver a rich aroma and authentic taste to everyday cooking. Made from quality milk fat, it enhances the flavour of traditional dishes, sweets, and meals. Ideal for daily use, it adds depth and richness to a wide variety of recipes.",
+   "ingredients": "Milk Solids (Milk Fat)",
+   "nutritionalInfo": {
+    "Energy": "897 kcal",
+    "Carbohydrates": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugar": "0.0 g",
+    "Total Fat": "99.7 g",
+    "Saturated Fat (not more than)": "65",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "300 mg",
+    "Protein": "0.0 g",
+    "Sodium": "0.0 mg",
+    "Vitamin A": "890 µg"
+   },
+   "storageInstructions": "Best before 9 months from\npackaging when stored in a cool & dry place\nAway from direct heat &\nsunlight",
+   "manufacturerName": "HMU",
+   "fssaiLicense": "10013043000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cool Chocolate Milkshake",
+  "handle": "cool-chocolate-milkshake",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006919_2-nandini-cool-choco-milk-shake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006919_2-nandini-cool-choco-milk-shake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cool Choco Milk Shake: Is an all new cool and refreshing chocolate flavoured milk drink made from rich creamy chocolate solids and packed aseptcally into stylish Tetra Pak Slim Package Just dip a Straw and sip to relish the great taste of Creamy Chocolate.",
+   "ingredients": "Ingredients: Double Toned Milk, Sugar, Chocolate Solids, Contain Permitted Stabilizer (E-47) and Permitted Food Colour (E-15b).",
+   "nutritionalInfo": {
+    "Nutritional Facts": "Per 2ml Pack, Energy 228 Calories, Energy fron fat 67 Calories, % Daily Value, Total Fat 7.4g 11.3, Protein 7.6g 15.2, Total Carbohydrate 32.6g 1.9, Calcium 268 mg 26.8."
+   },
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Chocolate Milkshake",
+  "handle": "goodlife-chocolate-milkshake",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40256634_2-nandini-goodlife-chocolate-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256634_2-nandini-goodlife-chocolate-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256634-2_2-nandini-goodlife-chocolate-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256634-3_2-nandini-goodlife-chocolate-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256634-4_2-nandini-goodlife-chocolate-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256634-5_2-nandini-goodlife-chocolate-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256634-6_1-nandini-goodlife-chocolate-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Goodlife Chocolate Milkshake is a delightful beverage that perfectly combines taste and nutrition. This deliciously rich and creamy drink brings the heavenly flavour of chocolate to your palate, offering a delightful experience with every sip. So go on and treat yourself to this delectable, chocolaty delight.",
+   "ingredients": "Milk Solids, Sugar, Cocoa Solids (2%), Stabilizers (INS 471, INS 412, INS 407), Acidity Regulator INS 331(iii), Nature Identical & Artificial Flavours (Chocolate)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "180ml",
+    "Energy (kcal)": "99.5",
+    "Carbohydrates (g)": "15.0",
+    "Total Sugar (g)": "14.0",
+    "Added Sugar (g)": "10.0",
+    "Total Fat (g)": "3.2",
+    "Saturated Fat (g)": "1.9",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "8.7",
+    "Protein (g)": "2.9",
+    "Calcium (mg)": "100",
+    "Sodium (mg)": "40"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Karnataka Milk Federation Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Vanilla Milkshake",
+  "handle": "goodlife-vanilla-milkshake",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40256633_2-nandini-goodlife-vanilla-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256633_2-nandini-goodlife-vanilla-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256633-2_2-nandini-goodlife-vanilla-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256633-3_2-nandini-goodlife-vanilla-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256633-4_2-nandini-goodlife-vanilla-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256633-5_2-nandini-goodlife-vanilla-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256633-6_2-nandini-goodlife-vanilla-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256633-7_2-nandini-goodlife-vanilla-milkshake-nutritious-healthy-classic-taste-flavourful.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Goodlife Vanilla Milk Shake is a delectable, sterilised drink that ensures health and nutrition in every sip. It's a delightful blend of creamy milk and exotic vanilla essence, offering a deliciously smooth flavour. This shake is ultra-heat treated, ensuring a longer shelf life without compromising on its taste or nutritional value. Perfect for a quick snack, breakfast companion, or a refreshing drink on-the-go, the Nandini Goodlife Vanilla Milk Shake offers a delightful taste that children and adults alike will relish. This dairy-based drink is not just a treat to your taste buds, but also contributes to a balanced diet.",
+   "ingredients": "Ingredients: Milk Solids, Sugar, Stabilizers (Ins 407, Ins 412, Ins 415, Ins 471), Acidity Regulator (Ins 331 (Iii)), Nature Identical & Artificial Flavours (Vanilla)\nAllergen Advice: Contains Milk\nUht Treated - Vanilla Milk Shake Proprietary Food (Dairy Based Drink)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "180ml",
+    "Energy (kcal)": "98",
+    "Carbohydrates (g)": "14.3",
+    "Total Sugar (g)": "14.3",
+    "Added Sugar (g)": "10.0",
+    "Total Fat (g)": "3.2",
+    "Saturated Fat (g)": "2.1",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "9.6",
+    "Protein (g)": "3.0",
+    "Calcium (mg)": "110",
+    "Sodium (mg)": "45"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Karnataka Milk Federation Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Pista Flavoured Milk",
+  "handle": "goodlife-pista-flavoured-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40256631_2-nandini-goodlife-pista-flavoured-milk-nutritious-healthy-classic-taste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256631_2-nandini-goodlife-pista-flavoured-milk-nutritious-healthy-classic-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256631-2_2-nandini-goodlife-pista-flavoured-milk-nutritious-healthy-classic-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256631-3_2-nandini-goodlife-pista-flavoured-milk-nutritious-healthy-classic-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256631-4_2-nandini-goodlife-pista-flavoured-milk-nutritious-healthy-classic-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256631-5_2-nandini-goodlife-pista-flavoured-milk-nutritious-healthy-classic-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40256631-6_2-nandini-goodlife-pista-flavoured-milk-nutritious-healthy-classic-taste.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy, nutty goodness of Nandini Pista Flavoured Milk, a delightful blend of premium quality milk and the rich, aromatic flavour of pistachios. Lovingly crafted with double toned milk, this refreshing beverage offers a delightful pista taste that is both nourishing and delicious. Perfect for a quick, on-the-go pick-me-up, this sterilised milk drink is packed with protein and low in risk for cardiovascular disorders, making it a healthy and satisfying choice. Enjoy the creamy, smooth texture and irresistible taste of Nandini Goodlife Flavoured Milk Pista Sterilised, a drink that's as good for you as it is indulgent.",
+   "ingredients": "Ingredients: Milk Solids (Double Toned Milk), Sugar, Stabilizers (INS 460, INS 466, INS 407, INS 331), Synthetic Food Colour (INS 143), Nature Identical & Artificial Flavours (Pista)\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "180ml",
+    "Energy (kcal)": "82",
+    "Carbohydrates (g)": "13.6",
+    "Total Sugar (g)": "13.6",
+    "Added Sugar (g)": "8.5",
+    "Total Fat (g)": "1.5",
+    "Saturated Fat (g)": "1.0",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "4.5",
+    "Protein (g)": "3.4",
+    "Calcium (mg)": "120",
+    "Sodium (mg)": "50"
+   },
+   "storageInstructions": "*Store in a cool and dry place until opened",
+   "manufacturerName": "Karnataka Milk Federation Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pista Flavoured Milk",
+  "handle": "pista-flavoured-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/257406_4-nandini-flavoured-milk-pista.jpg"
+    },
+    "barcode": "8906036670489"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/257406_4-nandini-flavoured-milk-pista.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Nandini's Pista Flavoured Milk, a naturally nutrient-rich and balanced treat that strikes the perfect harmony between carbs and protein. Crafted with high-quality pista and milk, this luscious beverage is enriched with bone-boosting calcium, vitamin D, and phosphorous, making it a nourishing choice for any time of the day. Sterilised and homogenized for a smooth, creamy texture, a chilled glass of this pista-infused delight is the perfect way to quench your thirst and satisfy your cravings, especially during the warm summer months. Shake well before opening and enjoy the authentic flavour of pistachios blended seamlessly with the honesty of milk.",
+   "ingredients": "Pista, Cardamom, Milk, Sugar.",
+   "storageInstructions": "*Store in a cool and dry place, away from direct sunlight",
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Flavoured Milk",
+  "handle": "strawberry-flavoured-milk",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/257399_2-nandini-milk-strawberry-flavor.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/257399_2-nandini-milk-strawberry-flavor.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nutritions & Tasty Strawberry Flavoured Milk, Added Strawberry Flavour.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.\nRefrigerate before serving for the best flavour.\nOnce opened, keep refrigerated and consume within the time specified on the packaging.\nShake well before use.",
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Mango Lassi",
+  "handle": "goodlife-mango-lassi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326254_1-nandini-goodlife-mango-lassi.jpg"
+    },
+    "barcode": "8906153561707"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326254_1-nandini-goodlife-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326254-2_1-nandini-goodlife-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326254-3_1-nandini-goodlife-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326254-4_1-nandini-goodlife-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326254-5_1-nandini-goodlife-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326254-6_1-nandini-goodlife-mango-lassi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Goodlife Mango Lassi is a creamy, delightful beverage that combines the richness of double toned milk curd with the exotic taste of mango pulp. This sterilised and nutritious drink is perfect for those seeking a healthy yet tasty refreshment. It offers a perfect balance of sweet and tart, making it an ideal treat for any time of the day. The mango lassi is thoughtfully packaged, ensuring freshness and quality with every sip. Enjoy the authentic taste of traditional Indian lassi with a fruity twist from Nandini Goodlife. A truly satisfying drink for all mango and lassi lovers alike.",
+   "ingredients": "Milk Solids (Double Toned Milk Curd), Pasteurised Chilled Water, Sugar, Mango Pulp (6%), Stabilizers (INS 466, INS 451, INS 415, INS 440, INS 331), Acidity Regulator (INS 270), Synthetic Food Colour (INS 110, INS 102), Nature Identical & Artificial Flavours (Mango)",
+   "manufacturerName": "Hassan Co-operative Milk Union Limited B.M.Road",
+   "fssaiLicense": "10013043000493",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Probiotic Mango Lassi",
+  "handle": "probiotic-mango-lassi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361898_3-nandini-probiotic-mango-lassi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361898_3-nandini-probiotic-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361898-2_3-nandini-probiotic-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361898-3_3-nandini-probiotic-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361898-4_3-nandini-probiotic-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361898-5_3-nandini-probiotic-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361898-6_3-nandini-probiotic-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361898-7_3-nandini-probiotic-mango-lassi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Probiotic Mango Lassi blends the rich taste of ripe mangoes with smooth, creamy yoghurt. Crafted for a refreshing and satisfying experience, it offers a delightful balance of sweetness and flavour. Enjoy it chilled as a tasty drink with meals or as a refreshing break during the day.",
+   "ingredients": "Milk Solids, Active lactic cultures with Probiotic Bifidobacterium animalis subsp. Lactis, Lactobacillus acidophilus (Min. 10 CFU / Serving size / Day), Pasteurised Chilled Water, Sugar, Mango Crush (10%) (Alphonso Mango Pulp, Apple Juice concentrate), Emulsifiers (INS 440, INS 202), Nature Identical Flavour (Mango), Artificial Colours (INS 102, INS 110)\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "117 kcal",
+    "Carbohydrates": "26 g",
+    "Total Sugars": "26 g",
+    "Added Sugar": "23 g",
+    "Total Fat": "0.7 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "2.0 mg",
+    "Protein": "1.7 g",
+    "Calcium": "60 mg",
+    "Sodium": "25 mg"
+   },
+   "storageInstructions": "Keep refrigerated at 4 degree celsius or below\nShake well\nbefore use\nDo not store after opening",
+   "manufacturerName": "Kolar Co-operative Milk Union Ltd",
+   "fssaiLicense": "10012043000195",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 1
+  }
+ },
+ {
+  "title": "Probiotic Strawberry Lassi",
+  "handle": "probiotic-strawberry-lassi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361897_3-nandini-probiotic-strawberry-lassi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361897_3-nandini-probiotic-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361897-2_3-nandini-probiotic-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361897-3_3-nandini-probiotic-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361897-4_3-nandini-probiotic-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361897-5_3-nandini-probiotic-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361897-6_3-nandini-probiotic-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361897-7_3-nandini-probiotic-strawberry-lassi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Probiotic Strawberry Lassi combines the fresh, fruity taste of strawberries with smooth, creamy yoghurt. Refreshing and flavourful, it offers a pleasant balance of sweetness and tang. Best enjoyed chilled, it makes a delicious drink alongside meals or as a refreshing option any time of the day.",
+   "ingredients": "Milk Solids, Active lactic cultures with Probiotic Bifidobacterium animalis subsp. Lactis, Lactobacillus acidophilus (Min. 10B CFU / Serving Size / day), Pasteurised Chilled Water, Sugar, Strawberry Puree(8.5%), Emulsifier (INS 440, INS 202), Nature identical Flavour (Strawberry), Artificial Color (INS 124, INS 122)\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "118 kcal",
+    "Carbohydrates": "26.5 g",
+    "Total Sugars": "26.5 g",
+    "Added Sugar": "24.3 g",
+    "Total Fat": "0.6 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "2.0 mg",
+    "Protein": "1.7 g",
+    "Calcium": "60 mg",
+    "Sodium": "25 mg"
+   },
+   "storageInstructions": "Keep refrigerated at 4 degree celcius or below\nShake well\nbefore use\nDo not store after opening",
+   "manufacturerName": "Kolar Co-operative Milk Union Ltd",
+   "fssaiLicense": "10012043000195",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 1
+  }
+ },
+ {
+  "title": "Badam Milk Mix",
+  "handle": "badam-milk-mix",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006936_2-nandini-mix-badam-milk.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100285707_1-nandini-badam-milk-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006936_2-nandini-mix-badam-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100285707_1-nandini-badam-milk-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Badam Milk Mix can be used with hot or cold milk to prepare delicious beverage. It contains natural Badam and tastes when used in kheer, kesaribath, ice cream or any other desserts.",
+   "ingredients": "Cane Sugar, Skimmed Milk Powder, Badam Seeds, Corn Flour, Cardamom and Saffron, Contain Permitted Natural Colour (INS 1(ii).",
+   "usageInstructions": "Direction for use:\nFor Hot: Add two teaspoonfuls of Nandini Badam Milk Mix to one cup of hot milk (1 ml). Stir and serve. Add Sugar if required.\nFor chilled delight, allow the prepared hot badam milk to cool, Chill and Serve,",
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gulab Jamun Mix",
+  "handle": "gulab-jamun-mix",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006934_2-nandini-mix-gulab-jamoon.jpg"
+    },
+    "barcode": "8906036672131"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006934_2-nandini-mix-gulab-jamoon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006934-2_1-nandini-mix-gulab-jamoon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006934-3_1-nandini-mix-gulab-jamoon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006934-4_1-nandini-mix-gulab-jamoon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006934-5_1-nandini-mix-gulab-jamoon.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Melt everyone’s heart with soft and delicious Gulab jamoons made using Nandini instant Gulab Jamoon mix. Serve immersed in rose flavoured syrup to make it extra yummy.",
+   "ingredients": "Skimmed Milk Powder, Maida, Ghee, Soji, Baking Soda & Citric Acid (INS 33).",
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vermicelli Payasa Mix",
+  "handle": "vermicelli-payasa-mix",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006935_2-nandini-vermicelli-payasa-instant-magic-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40006935_2-nandini-vermicelli-payasa-instant-magic-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Payasa mix, the only product, which is unique of its kind. Delicious instant payasam will be ready in 2 minutes by adding only hot water. No need for the addition of milk or sugar.",
+   "ingredients": "Milk Solids, Sugar, Vermicelli, Cashew, Raisins and Elaichi.",
+   "manufacturerName": "Karnataka Co-Operative Milk Producer'S Federation Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Whey Protein Dosa Batter",
+  "handle": "whey-protein-dosa-batter",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342143_1-nandini-dosa-batter-whey-protein-based.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342143_1-nandini-dosa-batter-whey-protein-based.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342143-2_1-nandini-dosa-batter-whey-protein-based.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342143-3_1-nandini-dosa-batter-whey-protein-based.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342143-4_1-nandini-dosa-batter-whey-protein-based.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342143-5_1-nandini-dosa-batter-whey-protein-based.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342143-6_1-nandini-dosa-batter-whey-protein-based.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342143-7_1-nandini-dosa-batter-whey-protein-based.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy soft, fluffy idlis and crispy dosas with Nandini Whey Protein-Based Idli Dosa Batter - a ready-to-eat product crafted for taste and nutrition. Traditionally prepared and naturally fermented, this batter ensures authentic South Indian flavours without the need for added soda or preservatives. Enriched with whey protein, it provides a healthy and wholesome meal option, perfect for breakfast or any time of the day. Convenient and easy to use, simply pour, cook, and relish delicious, protein-packed idlis and dosas. Store in the refrigerator at 2-6°C to maintain freshness. Choose Nandini Idli Dosa Batter for a nutritious, tasty, and hassle-free cooking experience.",
+   "ingredients": "Ro Water, Rice (35%), Urad Dal, Whey Powder, Rice Flakes, Fenugreek Seeds, Salt",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "50g",
+    "Energy (kcal)": "150 kcal",
+    "Carbohydrates (g)": "32.0 g",
+    "Total Sugar (g)": "3.5 g",
+    "Added Sugar (g)": "0.0 g",
+    "Total Fat (g)": "0.5 g",
+    "Saturated Fat (g)": "0.06 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "0.3 mg",
+    "Protein (g)": "4.4 g",
+    "calcium (mg)": "6.4 mg",
+    "Sodium (mg)": "136 mg"
+   },
+   "storageInstructions": "*Store in the refrigerator at 2-6°C to maintain freshness\n*Do not freeze the batter",
+   "manufacturerName": "Hasiru Foods Pvt Ltd",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 4
+  }
+ },
+ {
+  "title": "Khova Jamun",
+  "handle": "khova-jamun",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326232_1-nandini-khova-jamun-in-sugar-syrup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326232_1-nandini-khova-jamun-in-sugar-syrup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326232-2_1-nandini-khova-jamun-in-sugar-syrup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326232-3_1-nandini-khova-jamun-in-sugar-syrup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326232-4_1-nandini-khova-jamun-in-sugar-syrup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Khova Jamun in Sugar Syrup is a delightful treat that promises to satiate your sweet tooth. This traditional Indian dessert features succulent, milk-solid balls deep-fried to golden perfection and soaked in a rich sugar syrup. With every bite, you experience a burst of sweetness complemented by the creamy texture of khova. The refined wheat flour and oil lend a unique lightness to the jamuns, while the raising agent ensures their perfect round shape. A dash of preservatives ensures their freshness. Every spoonful of Khova Jamun is an indulgence in pure, delicious sweetness, making it a favoured choice for celebrations or a simple after-meal treat.",
+   "ingredients": "Water, Sugar, Milk Solids, Refined Wheat Flour, Refined Oil, Raising Agent (INS 500 (ii)), Permitted Class II Preservative (INS 202)",
+   "manufacturerName": "Karnataka Milk Producers' Co-Operation Federation Ltd",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Badam Halwa",
+  "handle": "badam-halwa",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128_1-nandini-badam-halwa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128_1-nandini-badam-halwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128-2_1-nandini-badam-halwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128-3_1-nandini-badam-halwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128-4_1-nandini-badam-halwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128-5_1-nandini-badam-halwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128-6_1-nandini-badam-halwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128-7_1-nandini-badam-halwa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342128-8_1-nandini-badam-halwa.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Badam Halwa is a rich and flavourful Indian dessert made with premium almonds, pure ghee, and sugar. This luscious halwa has a smooth, melt-in-the-mouth texture, infused with the natural goodness of almonds and aromatic saffron. It is a perfect treat for festive occasions and celebrations. Made using traditional recipes, it offers an indulgent experience with every bite.",
+   "ingredients": "Milk Solids, Almonds, Sugar, Cardamom Powder, Synthetic Colour",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy": "569.4 kcal",
+    "Carbohydrates": "41.1 g",
+    "Total Sugars": "35.2 g",
+    "Added Sugar": "28.3 g",
+    "Total Fat": "40.2 g",
+    "Saturated Fat": "15.5 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "41.0 mg",
+    "Protein": "10.8 g",
+    "Calcium": "212 mg",
+    "Sodium": "149 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Nandini Milk Products (A Unit of KMF)",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Badam Burfi",
+  "handle": "badam-burfi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342123_1-nandini-badam-burfi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342123_1-nandini-badam-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342123-2_1-nandini-badam-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342123-3_1-nandini-badam-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342123-4_1-nandini-badam-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342123-5_1-nandini-badam-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342123-6_1-nandini-badam-burfi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Badam Burfi is a rich and delightful Indian sweet made from premium-quality almonds, pure milk, and sugar. This burfi boasts a smooth, melt-in-the-mouth texture with the nutty goodness of almonds, making it a perfect treat for festive occasions and celebrations. Infused with traditional flavours, it offers an indulgent experience in every bite. Crafted with care by Nandini, a trusted dairy brand, it ensures purity and superior taste.",
+   "ingredients": "Milk Solids, Sugar, Almonds (12%), Ghee, Synthetic Food Colour (INS 102), Preservative (INS 202)",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy (kcal)": "468",
+    "Carbohydrates (g)": "49",
+    "Total Sugars (g)": "47",
+    "Added Sugar (g)": "28.5",
+    "Total Fat (g)": "24",
+    "Saturated Fat (g)": "12.5",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "44.3",
+    "Protein (g)": "14",
+    "Calcium (mg)": "157",
+    "Sodium (mg)": "170"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid refrigeration",
+   "manufacturerName": "Nandini Milk Products (A Unit of KMF)",
+   "fssaiLicense": "10014043000707",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Besan Ladoo",
+  "handle": "besan-ladoo",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326228_1-nandini-besan-ladoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326228_1-nandini-besan-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326228-2_1-nandini-besan-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326228-3_1-nandini-besan-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326228-4_1-nandini-besan-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326228-5_1-nandini-besan-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326228-6_1-nandini-besan-ladoo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Besan Ladoo is an exquisite Indian dessert that offers a delightful taste experience. This pulse-based sweet is not just food; it's a celebration of flavour, tradition, and craftsmanship. The careful blend of Bengal gram flour and sugar, enriched with milk solids and cashew nuts, creates a harmonious balance that satiates your sweet cravings. The subtle hint of cardamom adds an aromatic charm, making it a treat for all senses. Its rich, melt-in-your-mouth texture is something you can't resist. However, those with milk and nut allergies should be cautious. Experience the joy of Nandini Besan Ladoo and relish each bite.",
+   "ingredients": "Bengal Gram Flour, Sugar, Milk Solids (Ghee), Cashew Nuts, Cardamom Powder",
+   "nutritionalInfo": {
+    "Serving Size": "33.5 g",
+    "Energy (kcal)": "480",
+    "Carbohydrates (g)": "59.6",
+    "Total Sugars (g)": "37",
+    "Added Sugar (g)": "32",
+    "Total Fat (g)": "22",
+    "Saturated Fat (g)": "12",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "51",
+    "Protein (g)": "11",
+    "Calcium (mg)": "23",
+    "Sodium (mg)": "30"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Do not refrigerate",
+   "manufacturerName": "Karnataka Milk Producers' Co-Operation Federation Ltd",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cashew Burfi",
+  "handle": "cashew-burfi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326230_1-nandini-cashew-burfi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326230_1-nandini-cashew-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326230-2_1-nandini-cashew-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326230-3_1-nandini-cashew-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326230-4_1-nandini-cashew-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326230-5_1-nandini-cashew-burfi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Cashew Kaju Burfi is a delightful indulgence that seamlessly blends tradition with luxury. This dry fruit and nut-based sweet treat showcases the rich, buttery flavour of cashews in every bite, offering a unique taste and texture. The creamy richness of milk solids enhances the overall appeal, making this burfi a luscious treat. Whether you're celebrating a special occasion or simply in the mood for a sweet treat, this Kaju Burfi is an excellent choice. However, do be mindful if you have allergies to milk or cashews. Experience the sheer joy of savouring the decadent Nandini Cashew Kaju Burfi.",
+   "ingredients": "Cashew Nuts (41%), Sugar, Milk Solids (Milk, Khova, Ghee), Preservative (INS 202), Humectant (INS 422)",
+   "nutritionalInfo": {
+    "Serving Size": "25 g",
+    "Energy (kcal)": "510",
+    "Carbohydrates (g)": "55.0",
+    "Total Sugar (g)": "47.0",
+    "Added Sugar (g)": "40.0",
+    "Total Fat (g)": "27.5",
+    "Saturated Fat (g)": "9.7",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "28.0",
+    "Protein (g)": "10.7",
+    "Calcium (mg)": "134",
+    "Sodium (mg)": "47.2"
+   },
+   "storageInstructions": "*Keep in a cool and dry place",
+   "manufacturerName": "Karnataka Milk Producers' Co-Operation Federation Ltd",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chakki Ladoo",
+  "handle": "chakki-ladoo",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342131_1-nandini-chakki-ladoo.jpg"
+    },
+    "barcode": "8906036674760"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342131_1-nandini-chakki-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342131-2_1-nandini-chakki-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342131-3_1-nandini-chakki-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342131-4_1-nandini-chakki-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342131-5_1-nandini-chakki-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342131-6_1-nandini-chakki-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342131-7_1-nandini-chakki-ladoo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Chakki Ladoo is a nutritious and delicious Indian sweet made from wholesome wheat flour, pure ghee, and jaggery. These traditional cereal-based ladoos have a rich, nutty flavour and a soft, melt-in-the-mouth texture. Packed with energy and essential nutrients, they are perfect for festive celebrations and daily indulgence.",
+   "ingredients": "Sugar, Wheat Flour (32%), Milk Solids, Ghee, Whole Milk Powder, Cashew Nuts (5%) and Cardamom",
+   "nutritionalInfo": {
+    "Serving Size": "25 g",
+    "Energy (kcal)": "507",
+    "Carbohydrates (g)": "69",
+    "Total Sugar (g)": "42",
+    "Added Sugar (g)": "40",
+    "Total Fat (g)": "23",
+    "Saturated Fat (g)": "13.4",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "54",
+    "Protein (g)": "6.0",
+    "Calcium (mg)": "44",
+    "Sodium (mg)": "17.6"
+   },
+   "storageInstructions": "*Keep in a cool and dry place",
+   "manufacturerName": "MYM",
+   "fssaiLicense": "10019043002527",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Chocolate Burfi",
+  "handle": "chocolate-burfi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342125_1-nandini-chocolate-burfi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342125_1-nandini-chocolate-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342125-2_1-nandini-chocolate-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342125-3_1-nandini-chocolate-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342125-4_1-nandini-chocolate-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342125-5_1-nandini-chocolate-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342125-6_1-nandini-chocolate-burfi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Chocolate Burfi is a delightful fusion of traditional Indian sweets and rich chocolate flavour. Made from pure milk, sugar, and cocoa, this burfi offers a smooth, creamy texture with a perfect balance of sweetness. The rich taste of chocolate combined with the goodness of milk makes it a favourite among kids and adults alike. Ideal for festive celebrations and gifting, it brings a modern twist to classic burfi.",
+   "ingredients": "Milk Solids, Sugar, Cocoa Powder (0.3%), Humectant (INS 422), Synthetic Food Colour (INS 102, INS 122, INS 133), Artificial Flavours (Chocolate & Vanilla), Preservative (INS 202)",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy (kcal)": "410",
+    "Carbohydrates (g)": "52",
+    "Total Sugars (g)": "52",
+    "Added Sugar (g)": "32",
+    "Total Fat (g)": "16.7",
+    "Saturated Fat (g)": "10.8",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "50",
+    "Protein (g)": "13.0",
+    "Calcium (mg)": "146",
+    "Sodium (mg)": "193"
+   },
+   "storageInstructions": "*Store in a cool & dry place\n*Do not refrigerate",
+   "manufacturerName": "Nandini Milk Products (A Unit of KMF)",
+   "fssaiLicense": "10014043000707",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Coconut Burfi",
+  "handle": "coconut-burfi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326229_1-nandini-coconut-burfi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326229_1-nandini-coconut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326229-2_1-nandini-coconut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326229-3_1-nandini-coconut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326229-4_1-nandini-coconut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326229-5_1-nandini-coconut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326229-6_1-nandini-coconut-burfi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Coconut Burfi is a delightful treat that blends the charm of traditional Indian sweets with a tropical twist. This khoa-based sweet, featuring desiccated coconut as its core ingredient, offers a satisfying, slightly crunchy texture with a subtle sweetness.\nInfused with a hint of cardamom, it adds a pleasant and aromatic depth to the flavor. The well-balanced sweetness makes this burfi an indulgent yet guilt-free delight. However, those with a sensitivity to milk should take note.\nEnjoy this Coconut Burfi as the perfect end to a meal or as a delightful midday sweet treat.",
+   "ingredients": "Desiccated Coconut Powder (37.5%), Sugar, Milk Solids, Liquid Glucose, Hu-mectant (INS 422), Preservative (INS 202), Synthetic Food Colour (INS 102), Added Natural Flavour (Cardamom)",
+   "nutritionalInfo": {
+    "Serving Size": "20g",
+    "Energy (kcal)": "511",
+    "Carbohydrates (g)": "46",
+    "Total Sugars (g)": "42",
+    "Added Sugar (g)": "32",
+    "Total Fat (g)": "33",
+    "Saturated Fat (g)": "27",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "10",
+    "Protein (g)": "7.4",
+    "Calcium (mg)": "190",
+    "Sodium (mg)": "89"
+   },
+   "storageInstructions": "*Store in a cool & dry place\n*Advised not to refrigerate",
+   "manufacturerName": "Karnataka Milk Producers' Co-Operation Federation Ltd",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dharwad Peda",
+  "handle": "dharwad-peda",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326227_1-nandini-dharwad-peda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326227_1-nandini-dharwad-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326227-2_1-nandini-dharwad-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326227-3_1-nandini-dharwad-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326227-4_1-nandini-dharwad-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326227-5_1-nandini-dharwad-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326227-6_1-nandini-dharwad-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326227-7_1-nandini-dharwad-peda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, sweet flavour of Nandini Dharwad Peda, a traditional Indian sweet from Dharwad, Karnataka. This delicious treat is crafted with milk, sugar, and a hint of cardamom, resulting in a caramelised, slightly grainy texture with a delightful aroma. As a favourite during festivals and family gatherings, Nandini Dharwad Peda is carefully packed to retain its freshness and quality. With its unique taste and rich flavour, it's a perfect sweet treat for any occasion.",
+   "ingredients": "Milk Solids, Sugar",
+   "nutritionalInfo": {
+    "Energy": "437 kcal",
+    "Carbohydrates": "58 g",
+    "Total Sugars": "58 g",
+    "Added Sugars": "39 g",
+    "Total Fat": "17 g",
+    "Saturated Fat": "11 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "51 mg",
+    "Protein": "13 g",
+    "Calcium": "488 mg",
+    "Sodium": "203 mg",
+    "Vitamin A": "150 ?g"
+   },
+   "storageInstructions": "*Advised not to refrigerate",
+   "manufacturerName": "Karnataka Milk Producers' Co-Operation Federation Ltd",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dry Fruit Burfi",
+  "handle": "dry-fruit-burfi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342124_1-nandini-dry-fruit-burfi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342124_1-nandini-dry-fruit-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342124-2_1-nandini-dry-fruit-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342124-3_1-nandini-dry-fruit-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342124-4_1-nandini-dry-fruit-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342124-5_1-nandini-dry-fruit-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342124-6_1-nandini-dry-fruit-burfi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Dry Fruit Burfi is a rich and nutritious Indian sweet made with a blend of premium dry fruits, pure milk, and sugar. Packed with the goodness of almonds, cashews, pistachios, and raisins, this burfi offers a delightful crunch and natural sweetness in every bite. Its soft, fudgy texture and wholesome ingredients make it a perfect choice for festive occasions and gifting. Crafted by Nandini, a trusted dairy brand, it guarantees purity and authentic taste.",
+   "ingredients": "Milk Solids (Milk, Ghee), Sugar, Cashew Nuts (17.6%), Almonds (6%), Pista Nuts (2%), Liquid Glucose, Synthetic Food Colour (INS 110, INS 102, INS 122), Glycerol (INS 422), Preservative (INS 202)",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy (kcal)": "442",
+    "Carbohydrates (g)": "50",
+    "Total Sugars (g)": "45",
+    "Added Sugar (g)": "17.3",
+    "Total Fat (g)": "23.0",
+    "Saturated Fat (g)": "9.0",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "20.0",
+    "Protein (g)": "8.8",
+    "Calcium (mg)": "102",
+    "Sodium (mg)": "100"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Do not refrigerate",
+   "manufacturerName": "Nandini Milk Products (A Unit of KMF)",
+   "fssaiLicense": "10014043000707",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Elaichi Peda",
+  "handle": "elaichi-peda",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342121_1-nandini-elaichi-peda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342121_1-nandini-elaichi-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342121-2_1-nandini-elaichi-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342121-3_1-nandini-elaichi-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342121-4_1-nandini-elaichi-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342121-5_1-nandini-elaichi-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342121-6_1-nandini-elaichi-peda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Elaichi Peda is a delectable Indian sweet made from high-quality milk, sugar, and aromatic cardamom. Known for its rich, creamy texture and delightful flavour, this peda is a popular choice for festive celebrations and special occasions. The infusion of elaichi enhances its taste, making every bite a flavourful experience. Nandini, a trusted dairy brand, offers a variety of milk-based sweets, including Mysore Pak, peda, khova, burfi, and more. Crafted with pure ingredients, Nandini Elaichi Peda is a perfect treat for those who appreciate traditional sweets, bringing the essence of authentic flavours to every occasion.",
+   "ingredients": "Milk Solids, Sugar, Cardamom (0.1%), Synthetic Food Colour (INS 102, INS 133), Natural and Nature Identical Flavours (Cardamom & Vanilla)",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy (kcal)": "455",
+    "Carbohydrates (g)": "55",
+    "Total Sugars (g)": "55",
+    "Added Sugar (g)": "34",
+    "Total Fat (g)": "20",
+    "Saturated Fat (g)": "13",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "59.6",
+    "Protein (g)": "13.7",
+    "Calcium (mg)": "514",
+    "Sodium (mg)": "204"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Nandini Milk Products (A Unit of KMF)",
+   "fssaiLicense": "10014043000707",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ghee Boondi Ladoo",
+  "handle": "ghee-boondi-ladoo",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342130_1-nandini-ghee-boondi-ladoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342130_1-nandini-ghee-boondi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342130-2_1-nandini-ghee-boondi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342130-3_1-nandini-ghee-boondi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342130-4_1-nandini-ghee-boondi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342130-5_1-nandini-ghee-boondi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342130-6_1-nandini-ghee-boondi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342130-7_1-nandini-ghee-boondi-ladoo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Ghee Boondi Ladoo is a delicious and traditional Indian sweet made from premium-quality gram flour, pure ghee, and sugar. These soft, golden ladoos have a rich aroma and melt-in-the-mouth texture, making them a favourite for festive occasions and celebrations. Prepared using traditional methods, the boondi is deep-fried in ghee and blended with sugar syrup to create perfectly round ladoos bursting with authentic flavour. As a pulse-based sweet, it offers a delightful combination of taste and nutrition.",
+   "ingredients": "Sugar, Bengal Gram Dhal Flour, Milk Solids (Ghee), Brown Sugar, Cashew Nuts (2.1%), Almonds (2.1%), Dry Grapes (2.1%), Cardamom Powder, Cloves, Edible Camphor",
+   "nutritionalInfo": {
+    "Serving Size": "33.5 g",
+    "Energy (kcal)": "516",
+    "Carbohydrates (g)": "61",
+    "Total Sugar (g)": "48",
+    "Added Sugar (g)": "44",
+    "Total Fat (g)": "27.4",
+    "Saturated Fat (g)": "16",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "71",
+    "Protein (g)": "6.4",
+    "Calcium (mg)": "18",
+    "Sodium (mg)": "23"
+   },
+   "storageInstructions": "*Keep in a cool and dry place",
+   "manufacturerName": "Nandini Milk Products (A Unit of KMF)",
+   "fssaiLicense": "10014043000707",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Green Gram Ladoo",
+  "handle": "green-gram-ladoo",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342133_1-nandini-green-gram-ladoo.jpg"
+    },
+    "barcode": "8906153560120"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342133_1-nandini-green-gram-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342133-2_1-nandini-green-gram-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342133-3_1-nandini-green-gram-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342133-4_1-nandini-green-gram-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342133-5_1-nandini-green-gram-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342133-6_1-nandini-green-gram-ladoo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Green Gram Ladoo is a nutritious and flavourful Indian sweet made from high-quality green gram (moong dal), pure ghee, and jaggery. As a pulse-based sweet, it is rich in protein, fibre, and essential nutrients, making it a healthy yet delicious treat. These ladoos have a soft, melt-in-the-mouth texture with a mildly sweet and nutty flavour, perfect for festive occasions and daily snacking. Prepared using traditional recipes, they offer an authentic taste with wholesome goodness. Nandini, a trusted dairy brand, ensures purity and quality in every bite, offering a variety of traditional sweets crafted with the finest ingredients.",
+   "ingredients": "Green gram dhal, Sugar, Milk Solids (Ghee), Cardamom Powder, Pista Nuts",
+   "nutritionalInfo": {
+    "Serving Size": "34 g",
+    "Energy, kcal": "675",
+    "Carbohydrates, g": "66.7",
+    "Total Sugars, g": "42.6",
+    "Added Sugar, g": "39.5",
+    "Total Fat, g": "40.6",
+    "Saturated Fat, g": "12.4",
+    "Trans Fat, g": "0.0",
+    "Cholesterol, mg": "53.2",
+    "Protein, g": "10.7",
+    "Calcium, mg": "60",
+    "Sodium, mg": "77.5"
+   },
+   "manufacturerName": "Dharwad Co-operative Milk Union Ltd.Dharwad - 580 004",
+   "fssaiLicense": "10014043000750",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Jaggery Burfi",
+  "handle": "jaggery-burfi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342126_1-nandini-jaggery-burfi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342126_1-nandini-jaggery-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342126-2_1-nandini-jaggery-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342126-3_1-nandini-jaggery-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342126-4_1-nandini-jaggery-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342126-5_1-nandini-jaggery-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342126-6_1-nandini-jaggery-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342126-7_1-nandini-jaggery-burfi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Jaggery Burfi is a wholesome and delicious sweet made with pure milk and natural jaggery. Unlike regular burfi, this variant is free from refined sugar, offering a rich, caramel-like sweetness with a soft, melt-in-the-mouth texture. Jaggery adds a unique depth of flavour while also providing essential nutrients. Perfect for festive occasions and daily indulgence, it is a healthier alternative for sweet lovers. Nandini, a trusted dairy brand, offers a variety of milk-based sweets, including Mysore Pak, peda, khova, burfi, and more, ensuring purity, quality, and authentic taste in every bite. Enjoy tradition with a touch of wellness.",
+   "ingredients": "Milk Solids (Khova, Ghee), Jaggery, Almond, Cashew Nuts, Cardamom Powder",
+   "nutritionalInfo": {
+    "Serving Size": "25 g",
+    "Energy (kcal)": "562",
+    "Carbohydrates (g)": "45.5",
+    "Total Sugars (g)": "43.0",
+    "Added Sugar (g)": "10.0",
+    "Total Fat (g)": "34.5",
+    "Saturated Fat (g)": "19.2",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "84.5",
+    "Protein (g)": "17.4",
+    "Calcium (mg)": "578",
+    "Sodium (mg)": "261"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid refrigeration",
+   "manufacturerName": "Mandya Co-operative Milk Union Ltd. Product Dairy",
+   "fssaiLicense": "10012043000208",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Jaggery Peda",
+  "handle": "jaggery-peda",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342122_1-nandini-jaggery-peda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342122_1-nandini-jaggery-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342122-2_1-nandini-jaggery-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342122-3_1-nandini-jaggery-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342122-4_1-nandini-jaggery-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342122-5_1-nandini-jaggery-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342122-6_1-nandini-jaggery-peda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Jaggery Peda is a delicious and wholesome Indian sweet made from pure milk and natural jaggery. Unlike regular pedas, it is free from refined sugar, offering a rich, caramel-like sweetness with a soft, melt-in-the-mouth texture. Infused with the goodness of jaggery, it not only enhances the flavour but also provides essential nutrients. Perfect for festive occasions and daily indulgence, this peda is a healthy alternative for sweet lovers.",
+   "ingredients": "Milk Solids, Jaggery, Cashew Nuts",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy (kcal)": "259",
+    "Carbohydrates (g)": "28.5",
+    "Total Sugars (g)": "28.5",
+    "Added Sugar (g)": "14.6",
+    "Total Fat (g)": "12.0",
+    "Saturated Fat (g)": "7.5",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "36",
+    "Protein (g)": "9.2",
+    "Calcium (mg)": "357",
+    "Sodium (mg)": "144"
+   },
+   "storageInstructions": "*Store in room temperature\n*Avoid refrigeration",
+   "manufacturerName": "Dempo Dairy Industries Ltd. (A Unit of KMF) Bagalkote - 587 311",
+   "fssaiLicense": "10012043000255",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kaju Katli",
+  "handle": "kaju-katli",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326231_1-nandini-kaju-katli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326231_1-nandini-kaju-katli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326231-2_1-nandini-kaju-katli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326231-3_1-nandini-kaju-katli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326231-4_1-nandini-kaju-katli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326231-5_1-nandini-kaju-katli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Kaju Katli is a sublime blend of tradition and taste. This diamond-shaped sweet delicacy is a favourite at festive occasions and for good reason. The richness of cashews beautifully intertwined with the subtle sweetness makes it an irresistibly luxurious treat. The velvety texture simply melts in your mouth, leaving a lingering taste of pure joy. Whether you're indulging in a little self-love or sharing the joy with others, Nandini Kaju Katli is a classic choice that never fails to impress. However, those with milk or cashew allergies should be cautious. Experience the timeless delight of Nandini Kaju Katli.",
+   "ingredients": "Cashew Nuts (57%), Sugar, Milk Solids (Ghee), Preservative INS 202",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy (kcal)": "530",
+    "Carbohydrates (g)": "52",
+    "Total Sugars (g)": "41",
+    "Added Sugar (g)": "37.7",
+    "Total Fat (g)": "31.0",
+    "Saturated Fat (g)": "15",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "17",
+    "Protein (g)": "10.8",
+    "Sodium (mg)": "6.8"
+   },
+   "storageInstructions": "*Store in a cool & dry place\n*Not advised to refrigerate",
+   "manufacturerName": "Nandini Milk Products (A Unit of KMF)KMF Complex",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Karadantu",
+  "handle": "karadantu",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342129_1-nandini-karadantu.jpg"
+    },
+    "barcode": "8906036679178"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342129_1-nandini-karadantu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342129-2_1-nandini-karadantu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342129-3_1-nandini-karadantu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342129-4_1-nandini-karadantu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342129-5_1-nandini-karadantu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342129-6_1-nandini-karadantu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342129-7_1-nandini-karadantu.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Karadantu is a traditional Indian sweet packed with dry fruits, nuts, and jaggery. Made from premium-quality almonds, cashews, peanuts, and edible gum, this energy-rich sweet offers a chewy texture and natural sweetness. It is a perfect combination of taste and nutrition, making it an ideal snack for health-conscious individuals. Traditionally crafted, Karadantu is known for its rich flavour and high energy content, making it perfect for festive occasions and daily indulgence.",
+   "ingredients": "Jaggery, cashew, grated dry coconut, pumpkin seeds, edible gum, milk solids (ghee), almonds, raisins, khaskhasi (poppy seeds), pista, dates, anjeer, nutmeg powder, dry ginger powder, cardamom powder",
+   "nutritionalInfo": {
+    "Serving Size": "30 g",
+    "Energy, kcal": "442",
+    "Carbohydrates, g": "51.6",
+    "Total Sugars, g": "36.4",
+    "Added Sugar, g": "32",
+    "Total Fat, g": "23.7",
+    "Saturated Fat, g": "11.8",
+    "Trans Fat, g": "0.0",
+    "Cholesterol, mg": "18",
+    "Protein, g": "5.6",
+    "Calcium, mg": "41.5",
+    "Sodium, mg": "13.6"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Dempo Dairy Industries Ltd. (A Unit of KMF) Bagalkote - 587 311",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kesar Peda",
+  "handle": "kesar-peda",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342120_1-nandini-kesar-peda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342120_1-nandini-kesar-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342120-2_1-nandini-kesar-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342120-3_1-nandini-kesar-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342120-4_1-nandini-kesar-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342120-5_1-nandini-kesar-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342120-6_1-nandini-kesar-peda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Kesar Peda is a delicious, traditional Indian sweet made from premium-quality milk, sugar, and infused with the rich flavour of saffron (kesar). This delicacy is known for its soft, melt-in-the-mouth texture and aromatic taste, making it a favourite for festive occasions and celebrations. Produced by Nandini, a trusted dairy brand, these pedas are crafted using pure ingredients to ensure authenticity and superior taste. The addition of saffron enhances both flavour and colour, offering a delightful experience in every bite. Perfect as a treat for yourself or as a gift, Nandini Kesar Peda brings the essence of tradition and sweetness to every occasion.",
+   "ingredients": "Milk Solids, Sugar, Natural Kesar (0.015%), Synthetic Food Colours (INS 110, INS 122), Natural and Nature Identical Flavours (Saffron & Vanilla)",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy (kcal)": "455",
+    "Carbohydrates (g)": "55",
+    "Total Sugar (g)": "55",
+    "Added Sugar (g)": "34",
+    "Total Fat (g)": "20",
+    "Saturated Fat (g)": "13",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "59.6",
+    "Protein (g)": "13.7",
+    "Calcium (mg)": "514",
+    "Sodium (mg)": "204"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Do not refrigerate",
+   "manufacturerName": "Nandini Milk Products (A Unit of KMF)",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kunda",
+  "handle": "kunda",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326233_1-nandini-kunda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326233_1-nandini-kunda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326233-2_1-nandini-kunda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326233-3_1-nandini-kunda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326233-4_1-nandini-kunda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326233-5_1-nandini-kunda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326233-6_1-nandini-kunda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Belagavi Kunda is a delightful Indian sweet originating from Belagavi in Karnataka. This traditional delicacy boasts a rich texture and subtly sweet flavour with a whisper of elaichi adding a unique touch. Crafted from milk solids and sugar, each bite melts in the mouth, leaving an enchanting aftertaste. Its preparation is an art passed down through generations, reflecting the rich culinary heritage of the region. Savouring this irresistible treat is a celebration of taste, making it a must-try for those with a sweet tooth.",
+   "ingredients": "Milk solids, sugar, Elaichi",
+   "nutritionalInfo": {
+    "Energy": "338 kcal",
+    "Total Carbohydrates": "42 g",
+    "of which sugars": "42 g",
+    "Proteins": "11 g",
+    "Total Fat": "14 g"
+   },
+   "storageInstructions": "*Store at room temperature",
+   "manufacturerName": "Belagavi Milk Union",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ladagi Ladoo",
+  "handle": "ladagi-ladoo",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342132_1-nandini-ladagi-ladoo.jpg"
+    },
+    "barcode": "8906036679161"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342132_1-nandini-ladagi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342132-2_1-nandini-ladagi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342132-3_1-nandini-ladagi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342132-4_1-nandini-ladagi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342132-5_1-nandini-ladagi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342132-6_1-nandini-ladagi-ladoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342132-7_1-nandini-ladagi-ladoo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Ladagi Ladoo is a traditional and nutritious Indian sweet made from premium-quality gram flour, pure ghee, and jaggery. These pulse-based ladoos have a rich, wholesome flavour with a soft, melt-in-the-mouth texture, making them perfect for festive occasions and daily indulgence. Packed with protein and essential nutrients, they provide a healthy energy boost while satisfying sweet cravings. Prepared using authentic recipes, they offer a delightful blend of taste and nutrition.",
+   "ingredients": "Jaggery (50%), Bundhi (Bengal Gram Flour), Milk Solids (Ghee) (12%), Grated Coconut, Cashew Nuts (3%), Raisins (3%), Poppy Seeds, Nutmeg Powder, Dry Ginger Powder, Cardamom Powder",
+   "nutritionalInfo": {
+    "Serving Size": "25 g",
+    "Energy (kcal)": "455",
+    "Carbohydrates (g)": "60.6",
+    "Total Sugars (g)": "48",
+    "Added Sugar (g)": "43",
+    "Total Fat (g)": "21",
+    "Saturated Fat (g)": "12.5",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "48",
+    "Protein (g)": "6.0",
+    "Calcium (mg)": "35",
+    "Sodium (mg)": "15.2"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Do not refrigerate",
+   "manufacturerName": "KMF Dempo Dairy Limited A Unit of KMF",
+   "fssaiLicense": "10012043000255",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Milk Peda",
+  "handle": "milk-peda",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326226_1-nandini-milk-peda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326226_1-nandini-milk-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326226-2_1-nandini-milk-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326226-3_1-nandini-milk-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326226-4_1-nandini-milk-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326226-5_1-nandini-milk-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326226-6_1-nandini-milk-peda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326226-7_1-nandini-milk-peda.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Peda is a mouth-watering delicacy made from pure milk. One bite is enough to fill the heart with its creamy milk flavour. Nandini Milk Peda is a scrumptious Indian sweet made from pure, creamy milk. Manufactured by Karnataka Milk Federation's brand Nandini, this traditional confectionery is highly sought after for its rich and luscious taste. Each bite of the Milk Peda is a delightful experience, bursting with a sweet, creamy flavour that leaves a lingering taste in the mouth. This indulgent sweet is often enjoyed during festivals and celebrations, adding to the joy of the occasion. Nandini Milk Peda truly encapsulates the essence of Indian sweets in its small, round shape.",
+   "ingredients": "Milk Solids, Sugar",
+   "nutritionalInfo": {
+    "Serving Size": "25 g",
+    "Energy": "454 kcal",
+    "Carbohydrates": "55 g",
+    "Total Sugars": "55 g",
+    "Added Sugar": "34 g",
+    "Total Fat": "19.9 g",
+    "Saturated Fat": "12.9 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "59.6 mg",
+    "Protein": "13.7 g",
+    "Calcium": "514 mg",
+    "Sodium": "204 mg"
+   },
+   "storageInstructions": "*Advised not to refrigerate",
+   "manufacturerName": "Karnataka Milk Producers' Co-Operation Federation Ltd",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Millet Laddu",
+  "handle": "millet-laddu",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326235_1-nandini-millet-laddu.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326235_1-nandini-millet-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326235-2_1-nandini-millet-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326235-3_1-nandini-millet-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326235-4_1-nandini-millet-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326235-5_1-nandini-millet-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326235-6_1-nandini-millet-laddu.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Millet Ladoo is a delightful sweet treat that masterfully merges the wholesomeness of millets with the indulgence of traditional Indian confections. This delicacy harmoniously combines pear millet, finger millet flour, and sorghum, sweetened with natural brown sugar and enhanced with milk solids. The infusion of coconut powder and cardamom powder introduces an exceptional flavour profile, while cashew nuts introduce a pleasant crunch. Whether savoured as a dessert or a snack, Nandini Millet Ladoo provides a nutritious and delicious experience. It's a favourite amongst those who relish the goodness of millets intertwined with the sweetness of Indian tradition.",
+   "ingredients": "Milk Solids (Ghee, Dairy Whitener), Sugar, Pear Millet (15%), Finger Millet Flour (15%), Sorghum (15%), Natural Brown Sugar, Coconut Powder, Cardamom Powder, Cashew Nuts",
+   "nutritionalInfo": {
+    "Serving Size": "33 g",
+    "Energy (kcal)": "553",
+    "Carbohydrates (g)": "67.4",
+    "Total Sugars (g)": "33.4",
+    "Added Sugar (g)": "25.0",
+    "Total Fat (g)": "27.6",
+    "Saturated Fat (g)": "17.3",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "69.5",
+    "Protein (g)": "8.7",
+    "Calcium (mg)": "182",
+    "Sodium (mg)": "53.6"
+   },
+   "storageInstructions": "*Store in a cool & dry place",
+   "manufacturerName": "Karnataka Milk Producers' Co-Operation Federation Ltd",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Peanut Burfi",
+  "handle": "peanut-burfi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342127_1-nandini-peanut-burfi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342127_1-nandini-peanut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342127-2_1-nandini-peanut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342127-3_1-nandini-peanut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342127-4_1-nandini-peanut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342127-5_1-nandini-peanut-burfi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342127-6_1-nandini-peanut-burfi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Peanut Burfi is a delicious and protein-rich Indian sweet made from premium-quality peanuts, pure milk, and sugar. This burfi offers a delightful nutty flavour with a soft, fudgy texture, making it a perfect treat for all ages. Packed with the natural goodness of peanuts, it provides a rich source of energy and nutrition. Ideal for festive celebrations and everyday indulgence, it combines traditional taste with wholesome ingredients.",
+   "ingredients": "Peanut (54%), Sugar, Milk Solids (Khova, Milk, Ghee), Liquid Glucose",
+   "nutritionalInfo": {
+    "Serving Size": "10 g",
+    "Energy (kcal)": "572",
+    "Carbohydrates (g)": "52.8",
+    "Total Sugar (g)": "44.7",
+    "Added Sugar (g)": "38.0",
+    "Total Fat (g)": "32.5",
+    "Saturated Fat (g)": "7.5",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "17.5",
+    "Protein (g)": "17",
+    "Calcium (mg)": "165",
+    "Sodium (mg)": "58"
+   },
+   "storageInstructions": "*Advised not to refrigerate",
+   "manufacturerName": "Dakshina Kannada Co-operative Milk Union Ltd. Mangalore Dairy",
+   "fssaiLicense": "10012043000216",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rasakadam",
+  "handle": "rasakadam",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342134_1-nandini-rasakadam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342134_1-nandini-rasakadam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342134-2_1-nandini-rasakadam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342134-3_1-nandini-rasakadam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342134-4_1-nandini-rasakadam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342134-5_1-nandini-rasakadam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342134-6_1-nandini-rasakadam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Rasakadam is a delectable channa-based sweet, crafted from premium-quality chhena, sugar, and khoya. This traditional Bengali delicacy features a soft and spongy texture with a rich, creamy filling, offering a delightful burst of sweetness in every bite. Coated with fine sugar granules, it melts in the mouth while retaining its authentic taste. Perfect for festive celebrations and special occasions, Raskadam is a treat loved by all.",
+   "ingredients": "Milk Solids (Khova (43%), Channa (31%), Sugar, Cardamom Powder, Synthetic Food Colour (INS 102)",
+   "nutritionalInfo": {
+    "Serving Size": "20g",
+    "Energy (kcal)": "439.0",
+    "Carbohydrates (g)": "52.0",
+    "Total Sugar (g)": "52.0",
+    "Added Sugar (g)": "39.0",
+    "Total Fat (g)": "19.6",
+    "Saturated Fat (g)": "12.6",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "35.8",
+    "Protein (g)": "13.7",
+    "Calcium (mg)": "457",
+    "Sodium (mg)": "145"
+   },
+   "storageInstructions": "*Advised not to refrigerate",
+   "manufacturerName": "Dakshina Kannada Co-operative Milk Union Ltd.Mangalore Dairy",
+   "fssaiLicense": "10012043000216",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ullas Gulla",
+  "handle": "ullas-gulla",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342135_1-nandini-ullas-gulla.jpg"
+    },
+    "barcode": "8906153560915"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342135_1-nandini-ullas-gulla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342135-2_1-nandini-ullas-gulla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342135-3_1-nandini-ullas-gulla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342135-4_1-nandini-ullas-gulla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342135-5_1-nandini-ullas-gulla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342135-6_1-nandini-ullas-gulla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Ullas Gulla is a delicious cereal-based sweet made from high-quality ingredients like wheat flour, milk, and sugar. This traditional Indian treat is known for its soft, spongy texture and rich, milky flavour, making it a favourite for festive occasions and celebrations. With a perfect balance of sweetness and fluffiness, Ullas Gulla offers a delightful melt-in-the-mouth experience in every bite. Crafted using time-honoured recipes, it ensures authenticity and superior taste. Nandini, a trusted dairy brand, guarantees purity and quality in every sweet, offering a wide range of traditional Indian sweets made from the finest ingredients to satisfy every sweet craving.",
+   "ingredients": "Milk Solids (Khova Milk, Ghee), Sugar, Semolina (37.5%), Dry Coconut Flakes, Poppy Seeds (3%), Cardamom Powder",
+   "nutritionalInfo": {
+    "Serving Size": "33.5 g",
+    "Energy (kcal)": "462",
+    "Carbohydrate (g)": "55.7",
+    "Total sugars (g)": "38.6",
+    "Added sugar (g)": "32",
+    "Total Fat (g)": "23.0",
+    "Saturated Fat (g)": "13.7",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "41",
+    "Protein (g)": "8.0",
+    "Calcium (mg)": "215",
+    "Sodium (mg)": "75"
+   },
+   "storageInstructions": "*Store in room temperature",
+   "manufacturerName": "Chamarajanagara Co-operative Milk Union Limited Kuderu",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Benne Murukku",
+  "handle": "benne-murukku",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140_1-nandini-benne-murukku.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140_1-nandini-benne-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140-2_1-nandini-benne-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140-3_1-nandini-benne-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140-4_1-nandini-benne-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140-5_1-nandini-benne-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140-6_1-nandini-benne-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140-7_1-nandini-benne-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342140-8_1-nandini-benne-murukku.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Benne Murukku is a crispy and buttery South Indian snack made from premium-quality rice flour, gram flour, and pure butter (benne). Known for its rich, melt-in-the-mouth texture and delicate crunch, this traditional treat is a favourite during festive occasions and tea-time snacking. Lightly spiced and deep-fried to golden perfection, it offers an irresistible taste in every bite. Crafted using authentic recipes, Nandini Benne Murukku ensures superior quality and freshness. Nandini, a trusted brand, brings the essence of tradition to every snack, offering a delightful range of savoury treats and sweets, made with the finest ingredients for pure indulgence.",
+   "ingredients": "Refined Sunflower Oil, Rice Flour, Corn Flour, Fried Gram Flour, Uradh Dal Flour, Milk Solids (Butter 3.2 %), Hydrogenated Vegetable Fat, lodised Salt, Pepper, Cumin, Sesame Seeds",
+   "nutritionalInfo": {
+    "Serving Size": "30 g",
+    "Energy (Kcal)": "609",
+    "Carbohydrate (g)": "50.3",
+    "Total sugar (g)": "0.6",
+    "Added sugar (g)": "0.0",
+    "Total fat (g)": "43.0",
+    "Saturated fat (g)": "8.0",
+    "Trans fat (g)": "0.1",
+    "Cholesterol (mg)": "7.9",
+    "Protein (g)": "5.2",
+    "Sodium (mg)": "546"
+   },
+   "storageInstructions": "*Keep your store in a cool and dry place",
+   "manufacturerName": "Nandini Milk Products",
+   "fssaiLicense": "10014043000707",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Paneer Murukku",
+  "handle": "paneer-murukku",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141_1-nandini-paneer-murukku.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141_1-nandini-paneer-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141-2_1-nandini-paneer-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141-3_1-nandini-paneer-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141-4_1-nandini-paneer-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141-5_1-nandini-paneer-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141-6_1-nandini-paneer-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141-7_1-nandini-paneer-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342141-8_1-nandini-paneer-murukku.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Paneer Murukku is a unique and crispy South Indian snack made with premium-quality rice flour, gram flour, and fresh paneer. This delightful twist on the traditional murukku offers a rich, buttery flavour with a crunchy texture, making it an irresistible treat for all ages. Infused with aromatic spices and deep-fried to perfection, it provides a delicious balance of taste and crispiness. Ideal for festive celebrations or tea-time snacking, it ensures a satisfying experience in every bite. Nandini, a trusted brand, delivers authentic flavours with superior quality, offering a variety of traditional snacks and sweets made from the finest ingredients.",
+   "ingredients": "Milk Solids (Paneer (40.8%)), Refined Sunflower oil, Rice flour, corn flour, Fried gram flour, Urad dal Flour, lodised salt, Red Chilly powder, Sesame seeds, Pepper, Cumin",
+   "nutritionalInfo": {
+    "Serving Size": "30 g",
+    "Energy": "625 kcal",
+    "Carbohydrate": "38.3 g",
+    "Total Sugar": "0.9 g",
+    "Added Sugar": "0.0 g",
+    "Fat": "45.7 g",
+    "Saturated Fat": "13.1 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "46.7 mg",
+    "Protein": "15.1 g",
+    "Calcium": "298 mg",
+    "Sodium": "496.5 mg"
+   },
+   "storageInstructions": "*Keep in a cool and dry place",
+   "manufacturerName": "Nandini Milk Products",
+   "fssaiLicense": "10014043000707",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Masala Kodubale",
+  "handle": "masala-kodubale",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326237_1-nandini-masala-kodubale.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326237_1-nandini-masala-kodubale.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326237-2_1-nandini-masala-kodubale.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326237-3_1-nandini-masala-kodubale.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326237-4_1-nandini-masala-kodubale.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326237-5_1-nandini-masala-kodubale.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326237-6_1-nandini-masala-kodubale.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326237-7_1-nandini-masala-kodubale.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Masala Kodubale is a delectably spicy and crunchy snack, a gem from India's rich culinary heritage. Its unique blend of ingredients delivers a fiery heat and aromatic depth that's truly captivating. The crispiness of this snack is simply irresistible, making it a perfect accompaniment for a cup of tea or as a standalone treat. Its robust flavours and tantalising texture set it apart from other snacks. Overall, Nandini Masala Kodubale offers a delightful gastronomic experience, promising to add a spicy crunch to your snack times.",
+   "ingredients": "Refined Wheat Flour, Rice Flour, Refined Sunflower Oil, Fine Suji, Chilli Powder, Hydrogenated Vegetable Fat, lodised Salt, Pepper, Ajwain, Asafoetida",
+   "nutritionalInfo": {
+    "Serving Size": "30 g",
+    "Energy, kcal": "531",
+    "Carbohydrates, g": "62",
+    "Total Sugars, g": "0.2",
+    "Added Sugar, g": "0.0",
+    "Total Fat, g": "28",
+    "Saturated Fat, g": "13",
+    "Trans Fat, g": "0.04",
+    "Protein, g": "7.5",
+    "Sodium, mg": "764"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Nandini Milk Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Bombay Mixture",
+  "handle": "bombay-mixture",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139_1-nandini-bombay-mixture.jpg"
+    },
+    "barcode": "8906036675033"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139_1-nandini-bombay-mixture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139-2_1-nandini-bombay-mixture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139-3_1-nandini-bombay-mixture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139-4_1-nandini-bombay-mixture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139-5_1-nandini-bombay-mixture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139-6_1-nandini-bombay-mixture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139-7_1-nandini-bombay-mixture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342139-8_1-nandini-bombay-mixture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Bombay Mixture is a crunchy and flavourful snack made from a blend of fried gram flour noodles (sev), peanuts, spices, and lentils. This savoury treat offers a perfect balance of spice, tang, and crunch, making it an irresistible snack for any time of the day. Ideal for festive gatherings or tea-time munching, its rich taste and crispy texture provide a delightful experience in every bite. Crafted with high-quality ingredients, it ensures freshness and authenticity. Nandini, a trusted brand, brings traditional flavours to life with its wide range of snacks and sweets, ensuring superior quality and deliciousness in every pack.",
+   "ingredients": "Bengal Gram Flour, Refined Sunflower Oil, Black Lentils, Fried Bengal Gram, Fried Gram, Chilli Powder, Cashew Nuts, Black Salts, Amchur Powder, Iodised Salt, Asafoetida",
+   "nutritionalInfo": {
+    "Serving Size": "30 g",
+    "Energy (Kcal)": "502",
+    "Carbohydrate (g)": "42",
+    "Total sugar (g)": "6.3",
+    "Added sugar (g)": "0.0",
+    "Total fat (g)": "30",
+    "Saturated fat (g)": "3.8",
+    "Trans fat (g)": "0.0",
+    "Protein (g)": "16",
+    "Sodium (mg)": "327"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Nandini Milk Products",
+   "fssaiLicense": "10015043001137",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Khara Boondi",
+  "handle": "khara-boondi",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326236_1-nandini-khara-boondhi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326236_1-nandini-khara-boondhi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326236-2_1-nandini-khara-boondhi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326236-3_1-nandini-khara-boondhi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326236-4_1-nandini-khara-boondhi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326236-5_1-nandini-khara-boondhi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326236-6_1-nandini-khara-boondhi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326236-7_1-nandini-khara-boondhi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini Khara Boondi is a mouth-watering snack celebrated for its invigorating flavours and delightful crunch. This savoury treat is a perfect blend of taste and texture, featuring a nutty undertone that complements its spicy kick. Its hearty crunch makes it an ideal snack for any time of the day, whether you're enjoying a quiet moment alone or entertaining guests. In essence, Nandini Khara Boondi is a culinary delight, embodying the rich, vibrant flavours of Indian snacking tradition in every bite.",
+   "ingredients": "Bengal Gram Flour, Refined Sunflower Oil, Peanuts, Fried Gram Whole, Chilli Powder, Cashew Nuts, Salt, Curry leaves",
+   "nutritionalInfo": {
+    "Serving Size": "30 g",
+    "Energy (Kcal)": "621",
+    "Carbohydrate (g)": "37.3",
+    "Total Sugar (g)": "8.0",
+    "Added Sugar (g)": "0.0",
+    "Total Fat (g)": "45.5",
+    "Saturated Fat (g)": "5.4",
+    "Trans Fat (g)": "0.0",
+    "Protein (g)": "15.7",
+    "Sodium (mg)": "502"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Nandini Milk Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Chocolate Muffin",
+  "handle": "goodlife-chocolate-muffin",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363478_1-nandini-goodlife-chocolate-muffin.jpg"
+    },
+    "barcode": "8906153563596"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363478_1-nandini-goodlife-chocolate-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363478-2_1-nandini-goodlife-chocolate-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363478-3_1-nandini-goodlife-chocolate-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363478-4_1-nandini-goodlife-chocolate-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363478-5_1-nandini-goodlife-chocolate-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363478-6_1-nandini-goodlife-chocolate-muffin.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "GoodLife Chocolate Muffin is a rich and indulgent treat with a soft, moist texture and deep chocolate flavour. These individually baked mini cakes are crafted for consistent taste and satisfying sweetness in every bite. Packed in a convenient 6-piece pouch, they are ready to eat and easy to carry. Perfect for quick snacks or on-the-go consumption, they offer a delightful chocolatey experience, combining convenience, freshness, and taste for everyday enjoyment.",
+   "ingredients": "Refined Wheat Flour, Sugar, Water, Edible Sunflower Oil, Glycerol, Sorbitol, Cake Gel [Water, Emulsifier And Stabilisers (INS 471, INS 475, INS 470(i)), INS 420(ii)], Cocoa Powder, Cake Improver, Choco Chips, Milk Powder, Iodised Salt, Additives And Preservatives [INS 330, INS 282, INS 320], Artificial Flavouring Substance (Chocolate). Allergen Information: Contains Wheat, Milk And May Contain Soya.",
+   "nutritionalInfo": {
+    "Energy": "415.1 kcal",
+    "Total Carbohydrates": "54.2 g",
+    "Total Sugar": "25.3 g",
+    "Added Sugar": "24.5 g",
+    "Total Fat": "17.2 g",
+    "Saturated Fat (Not More Than)": "6.5 g",
+    "Trans Fat (Not More Than)": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "301.2 mg",
+    "Protein": "10.9 g"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic condition. Keep away from\ndirect sunlight.",
+   "manufacturerName": "Navdurga Food Products Pvt Ltd. Plot No 37",
+   "fssaiLicense": "11222328000579",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Mawa Muffin",
+  "handle": "goodlife-mawa-muffin",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363479_1-nandini-goodlife-mawa-muffin.jpg"
+    },
+    "barcode": "8906153563633"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363479_1-nandini-goodlife-mawa-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363479-2_1-nandini-goodlife-mawa-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363479-3_1-nandini-goodlife-mawa-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363479-4_1-nandini-goodlife-mawa-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363479-5_1-nandini-goodlife-mawa-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363479-6_1-nandini-goodlife-mawa-muffin.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini GoodLife Mawa Muffin offers a rich and indulgent snacking experience with its soft, moist texture and classic mawa flavour. These individually baked mini cakes are crafted for consistent taste and quality, making them a delightful treat at any time of the day. Packed in a convenient 6-piece pouch, they are ready to eat and easy to carry. Ideal for on-the-go consumption, they combine traditional taste with everyday convenience in every bite.",
+   "ingredients": "Refined Wheat Flour, Sugar, Water, Edible Sunflower Oil, Glycerol, Sorbitol, Cake Gel [Water, Emulsifier And Stabilisers (INS 471, INS 475, INS 470(i)), INS 420(ii)], Cake Improver, Milk Powder, Iodised Salt, Additives And Preservatives [INS 330, INS 282, INS 320], Artificial Flavouring Substance (Mawa). Allergen Information: Contains Wheat, Milk And May Contain Soya.",
+   "nutritionalInfo": {
+    "Energy": "449.3 kcal",
+    "Total Carbohydrate": "50.7 g",
+    "Total Sugar": "15.4 g",
+    "Added Sugar": "14.7 g",
+    "Total Fat": "23 g",
+    "Saturated Fat (Not More Than)": "8.7 g",
+    "Trans Fat (Not More Than)": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "334.9 mg",
+    "Protein": "9.9 g"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic condition. Keep away from\ndirect sunlight.",
+   "manufacturerName": "Navdurga Food Products Pvt Ltd. Plot No 37",
+   "fssaiLicense": "11222328000579",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Vanilla Muffin",
+  "handle": "goodlife-vanilla-muffin",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363477_1-nandini-goodlife-vanilla-muffin.jpg"
+    },
+    "barcode": "8906153563602"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363477_1-nandini-goodlife-vanilla-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363477-2_1-nandini-goodlife-vanilla-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363477-3_1-nandini-goodlife-vanilla-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363477-4_1-nandini-goodlife-vanilla-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363477-5_1-nandini-goodlife-vanilla-muffin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363477-6_1-nandini-goodlife-vanilla-muffin.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini GoodLife Vanilla Muffin is a soft and delightful treat with a smooth, classic vanilla flavour. These individually baked mini cakes offer a light texture and consistent taste in every bite. Packed in a convenient 6-piece pouch, they are ready to eat and easy to carry. Ideal for quick snacks or on-the-go consumption, they bring together simplicity, freshness, and flavour, making them a perfect choice for everyday indulgence anytime, anywhere.",
+   "ingredients": "Ingredients: Refined Wheat Flour, Sugar, Water, Edible Sunflower Oil, Glycerol, Sorbitol, Cake Gel [Water, Emulsifier And Stabilisers (INS 471, INS 475, INS 470(i)), INS 420(ii)], Cocoa Powder, Cake Improver, Choco Chips, Milk Powder, Iodised Salt, Additives And Preservatives [INS 330, INS 282, INS 320], Artificial Flavouring Substance (Chocolate). Allergen Information: Contains Wheat, Milk And May Contain Soya.",
+   "nutritionalInfo": {
+    "Energy": "420 kcal",
+    "Total Carbohydrate": "55.2 g",
+    "Total Sugar": "27.9 g",
+    "Added Sugar": "25.2 g",
+    "Total Fat": "17.7 g",
+    "Saturated Fat (Not More Than)": "6.4 g",
+    "Trans Fat (Not More Than)": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "356.9 mg",
+    "Protein": "10 g"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic condition. Keep away from\ndirect sunlight.",
+   "manufacturerName": "Navdurga Food Products Pvt Ltd. Plot No 37",
+   "fssaiLicense": "11222328000579",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Choco Orange Slice Cake",
+  "handle": "goodlife-choco-orange-slice-cake",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363473_1-nandini-goodlife-choco-orange-slice-cake.jpg"
+    },
+    "barcode": "8906153563541"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363473_1-nandini-goodlife-choco-orange-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363473-2_1-nandini-goodlife-choco-orange-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363473-3_1-nandini-goodlife-choco-orange-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363473-4_1-nandini-goodlife-choco-orange-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363473-5_1-nandini-goodlife-choco-orange-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363473-6_1-nandini-goodlife-choco-orange-slice-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini GoodLife Choco Orange Slice Cake is a delicious fusion of rich chocolate and zesty orange flavours, offering a unique and indulgent taste experience. Soft and moist in texture, each slice is crafted for consistent quality and enjoyment. These ready-to-eat cake slices are neatly portioned and packed in a sealed tray to maintain freshness and hygiene. Perfect for convenient snacking, it is an easy and flavourful treat to enjoy anytime, anywhere.",
+   "ingredients": "Refined Wheat Flour, Water, Sugar, Edible Sunflower Oil, Cake\nconcentrate [Milk Solids, Corn Starch, Dextrose Monohydrate, Emulsifier\n(Ins471), Stabilizers(Ins 415), Raising Agent (Ins 500ii), Iodized salt],\nGlycerol, Sorbitol, Cake Improver [Ins 1520, Ins 202, Ins 200, Ins 471,Bha (Ins\n320)], Cocoa Powder (2%), Cake Gel [Water, Emulsifier And stabilizers {Ins 471,\nIns 475, Ins 470(I}, Ins 1520, Ins 420(Ii)], Milk Powder, Iodised Salt,\nIntermediate Bakery Ingredients [Raising Agent (Ins450(I), Ins 500(Ii)),\nEmulsifier (Ins 472e, Ins 475), Acidity Regulator (Ins 330),Stabilizer (Ins\n415), Anti-Caking Agent (Ins 341(Iii))], Additives And preservatives [ Ins 330,\nIns 282, Ins 320]Food Colour (Ins 110), Nature Identical Flavour (Orange) And artificial\nFlavour (Vanilla) Allergen information contains Wheat, Milk & May Contain",
+   "nutritionalInfo": {
+    "Energy": "423.8 kcal",
+    "Carbohydrate": "46.1 g",
+    "Total Sugar": "18.1 g",
+    "Added Sugar": "12.5 g",
+    "Total Fat": "23.4 g",
+    "Saturated Fat (Not More Than)": "8.6 g",
+    "Trans Fat (Not More Than)": "<0.01 g",
+    "Cholesterol": "<0.05 mg",
+    "Sodium": "438.4 mg",
+    "Protein": "6.9 g"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic condition.\nKeep away from direct sunlight.",
+   "manufacturerName": "Navdurga Food Products Pvt Ltd. Plot No 37",
+   "fssaiLicense": "11222328000579",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Coconut Jaggery Cake",
+  "handle": "goodlife-coconut-jaggery-cake",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363480_1-nandini-goodlife-coconut-jaggery-cake.jpg"
+    },
+    "barcode": "8906153563664"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363480_1-nandini-goodlife-coconut-jaggery-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363480-2_1-nandini-goodlife-coconut-jaggery-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363480-3_1-nandini-goodlife-coconut-jaggery-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363480-4_1-nandini-goodlife-coconut-jaggery-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363480-5_1-nandini-goodlife-coconut-jaggery-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363480-6_1-nandini-goodlife-coconut-jaggery-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini GoodLife Coconut Jaggery Cake is a delightful slice cake that blends the rich taste of coconut with the natural sweetness of jaggery. Soft, moist, and flavourful, it offers a comforting and traditional taste in every bite. Each slice is carefully portioned and packed in a sealed tray to ensure freshness and hygiene. Ready to eat and easy to carry, it is perfect for convenient snacking and enjoying a wholesome treat anytime, anywhere.",
+   "ingredients": "Jaggery (30%), Refined Wheat Flour, Refined Sunflower Oil,\nCake Concentrate ( Milk Solids, Starch, Baking Powder, Salt, Stabilizer (Ins\n415)), Cocoa Powder (3.4%), Liquid Glucose, Cake Gel (Water, Emulsifier And\nStabilizers (Ins 471, Ins 475, Ins 470 (I), Ins 1520, Ins 420 (Ii)), Iodized\nSalt, Additives & Preservatives (Ins 330, Ins 282, Ins202), Artificial\nFlavour (Vanilla).",
+   "nutritionalInfo": {
+    "Energy": "360 kcal",
+    "Carbohydrates": "50.5 g",
+    "Total Sugar": "25 g",
+    "Added Sugar": "24.4 g",
+    "Total Fat": "14.8 g",
+    "Saturated Fat (Not More Than)": "2.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Protein": "6.1 g",
+    "Calcium": "3.6 mg",
+    "Sodium": "330 mg"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic condition. Keep away from\ndirect sunlight.",
+   "manufacturerName": "Navdurga Food Products Pvt Ltd. Plot No 37",
+   "fssaiLicense": "11222328000579",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Fruity Slice Cake",
+  "handle": "goodlife-fruity-slice-cake",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363476_1-nandini-goodlife-fruity-slice-cake.jpg"
+    },
+    "barcode": "8906153563572"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363476_1-nandini-goodlife-fruity-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363476-2_1-nandini-goodlife-fruity-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363476-3_1-nandini-goodlife-fruity-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363476-4_1-nandini-goodlife-fruity-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363476-5_1-nandini-goodlife-fruity-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363476-6_1-nandini-goodlife-fruity-slice-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini GoodLife Fruity Slice Cake is a delightful treat infused with vibrant fruity flavours and a soft, moist texture. Each slice is crafted to deliver a balanced sweetness with a pleasant burst of fruitiness in every bite. These ready-to-eat cake slices are neatly portioned and packed in a sealed tray to ensure freshness and hygiene. Perfect for convenient snacking, it is an easy and enjoyable option to satisfy sweet cravings anytime, anywhere.",
+   "ingredients": "Fruity Slice Cake: Product Category 7.2.1 Ingredients: Refined Wheat Flour, Water, Sugar, Edible Sunflower Oil, Tutty Fruity (5%), Glycerol, Sorbitol, Cake Gel [Water, Emulsifier And Stabilisers (INS 471, INS 475, INS 470(i)), INS 1520, INS 420(ii)], Cake Improver [INS 1520, INS 202, INS 200, INS 471, BHA (INS 320)], Milk Powder, Iodised Salt, Additives And Preservatives [INS 330, INS 282, INS 202, INS 200, INS 320], Nature Identical Flavour (Mixed Fruit). Allergen Information: Contains Wheat, Milk Solids And May Contain Soya.\nStorage Conditions: Store In Cool, Dry And Hygienic Condition. Keep Away From Direct Sunlight.",
+   "nutritionalInfo": {
+    "Energy": "404.5 kcal",
+    "Carbohydrates": "54.3 g",
+    "Total Sugar": "21.8 g",
+    "Added Sugar": "16.2 g",
+    "Dietary Fibre": "1.2 g",
+    "Total Fat": "17.3 g",
+    "Saturated Fat (Not More Than)": "7.5 g",
+    "Trans Fat (Not More Than)": "<0.01 g",
+    "Cholesterol": "<0.05 mg",
+    "Sodium": "140.9 mg"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic condition. Keep away from\ndirect sunlight.",
+   "manufacturerName": "Navdurga Food Products Pvt Ltd. Plot No 37",
+   "fssaiLicense": "11222328000579",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Pineapple Slice Cake",
+  "handle": "goodlife-pineapple-slice-cake",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363475_1-nandini-goodlife-pineapple-slice-cake.jpg"
+    },
+    "barcode": "8906153563558"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363475_1-nandini-goodlife-pineapple-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363475-2_1-nandini-goodlife-pineapple-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363475-3_1-nandini-goodlife-pineapple-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363475-4_1-nandini-goodlife-pineapple-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363475-5_1-nandini-goodlife-pineapple-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363475-6_1-nandini-goodlife-pineapple-slice-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "GoodLife Pineapple Slice Cake is a delightful treat with a soft, moist texture and a refreshing pineapple flavour. Crafted for indulgence, it offers a perfect balance of sweetness and fruity notes in every bite. Ideal for tea-time, quick snacks, or light desserts, this slice cake is convenient and ready to enjoy. Packed to maintain freshness, it delivers consistent taste and quality. A simple yet satisfying option, it adds a tropical touch to everyday snacking moments.",
+   "ingredients": "Pineapple Slice Cake: Product Category 7.2.1 Ingredients: Refined Wheat Flour, Water, Sugar, Sunflower Oil, Glycerol, Sorbitol, Milk Powder, Iodised Salt, Cake Gel [Water, Emulsifiers And Stabilisers (INS 471, INS 475, INS 470(i)), INS 1520, INS 420(ii)], Eggless Cake Concentrate [Wheat Flour, Milk Protein, Milk Solids, Edible Starch, Sugar, INS 450(i), Baking Powder, Stabiliser (INS 415), Acidity Regulator (INS 330), Edible Common Salt], Additives And Preservatives [INS 330, INS 282, INS 202, INS 200, INS 320], Synthetic Food Colour (INS 102) And Artificial Flavours (Vanilla And Pineapple). Allergen Information: Contains Wheat, Milk Solids And May Contain Soya. Storage Conditions: Store In Cool, Dry And Hygienic Condition. Keep Away From Direct Sunlight.",
+   "nutritionalInfo": {
+    "Energy": "391.6 kcal",
+    "Carbohydrate": "48.4 g",
+    "Total Sugar": "36.1 g",
+    "Added Sugar": "33.5 g",
+    "Dietary Fibre": "1.6 g",
+    "Total Fat": "18.9 g",
+    "Saturated Fat (Not More Than)": "7.5 g",
+    "Trans Fat (Not More Than)": "0.01 g",
+    "Cholesterol": "<0.05 mg",
+    "Sodium": "420.6 mg",
+    "Protein": "6.9 g"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic condition.\nKeep away from direct sunlight.",
+   "manufacturerName": "Navdurga Food Products Pvt Ltd. Plot No 37",
+   "fssaiLicense": "11222328000579",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "GoodLife Vanilla Slice Cake",
+  "handle": "goodlife-vanilla-slice-cake",
+  "vendor": "Nandini (KMF)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363474_1-nandini-goodlife-vanilla-slice-cake.jpg"
+    },
+    "barcode": "8906153563565"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363474_1-nandini-goodlife-vanilla-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363474-2_1-nandini-goodlife-vanilla-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363474-3_1-nandini-goodlife-vanilla-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363474-4_1-nandini-goodlife-vanilla-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363474-5_1-nandini-goodlife-vanilla-slice-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40363474-6_1-nandini-goodlife-vanilla-slice-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nandini GoodLife Vanilla Slice Cake is a classic treat with a soft, moist texture and smooth vanilla flavour. Carefully baked for consistent taste, each slice offers a light and enjoyable bite. These ready-to-eat cake slices are portioned for convenience and packed in a sealed tray to maintain freshness and hygiene. Ideal for quick snacks or light desserts, it is a simple and delicious option that can be enjoyed anytime, anywhere.",
+   "ingredients": "Refined Wheat Flour, Water, Sugar, Edible Sunflower Oil,\nGlycerol, Sorbitol, Cake Gel [Water, Emulsifier And Stabilizers {Ins 471, Ins\n475,Ins 470(I)}, Ins 1520, Ins 420(Ii)], Cake Improver [Ins 1520, Ins 202, Ins\n200, Ins471, Bha (Ins 320)], Milk Powder, Iodised Salt, Intermediate Bakery ingredients\n[Raising Agent (Ins 450(I), Ins 500(Ii)), Emulsifier (Ins 472e, Ins475),\nAcidity Regulator (Ins 330), Stabilizer (Ins 415), Anti-Caking Agent(Ins\n341(Iii))], Additives And Preservatives [ Ins 330, Ins 282, Ins 202, Ins\n200,Ins 320]Artificial Flavour (Vanilla) And Nature Identical Flavour (Milk)",
+   "nutritionalInfo": {
+    "Energy": "467 kcal",
+    "Carbohydrate": "47 g",
+    "Total Sugar": "17.1 g",
+    "Added Sugar": "11.1 g",
+    "Dietary Fibre": "1.6 g",
+    "Total Fat": "28 g",
+    "Saturated Fat (Not More Than)": "11.7 g",
+    "Trans Fat (Not More Than)": "0 g",
+    "Cholesterol": "2.3 mg",
+    "Sodium": "449.9 mg"
+   },
+   "storageInstructions": "Store in cool, dry and hygienic condition.\nKeep away from direct sunlight.",
+   "manufacturerName": "Navdurga Food Products Pvt Ltd. Plot No 37",
+   "fssaiLicense": "11222328000579",
+   "countryOfOrigin": "India"
+  }
+ }
+]
