@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40113908_5-sting-energy-drink.jpg"
-    }
+    },
+    "barcode": "8902080000227"
    },
    {
     "title": "300ml",
@@ -60,7 +61,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363575_1-sting-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sting energy drink is the perfect solution when you need a quick energy boost to charge up and keep you going throughout the day. Whether you're hitting the gym, studying for exams, or just need a pick-me-up, Sting has got you covered. This electrifying drink packs a powerful punch of caffeine, ginseng, and essential B vitamins to elevate your energy game and help you conquer your day. Sting also invigorates your taste buds with its refreshingly delicious flavour, making it the ultimate companion for boring moments, late-night gaming sessions, or any adventure needing an extra jolt. Not recommended for children, people sensitive to caffeine, or pregnant/breastfeeding women, but for everyone else, Sting is the Energy ka king that will keep you at your best.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators (330, 331), Sequesterants (452(i), 385), Taurine, Caffeine (0.03%), Preservatives (211, 202), Sweeteners (955, 950), Inositol, Vitamin Premix. Contains Permitted Synthetic Food Colour (129) And Added Flavour (Natural And Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Energy": "28 kcal",
+    "Total Carbohydrate": "7 g",
+    "Sugars": "7 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "53 mg",
+    "Vitamin B3": "1.9 mg",
+    "Vitamin B6": "0.2 mg",
+    "Vitamin B12": "0.2 mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Energy Drink - Berry Blast Can",
@@ -111,7 +133,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113907_5-sting-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sting Energy Cans 180 ml deliver a bold and vibrant taste in a handy size, perfect for on-the-go moments. With its striking packaging and refreshing flavour, this drink adds a spark to your day. Conveniently sized, the 180 ml can is easy to carry and enjoy anytime, offering a quick burst of flavour.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators(330,331), Flavour (Natural And Nature Identical Favouring Substances), Caffeine*(29 mg/100 ml), Preservatives (211, 202), Sweeteners (955, 950), Taurine, Colour (129), Sequestrant (385), Vitamins Premix.",
+   "storageInstructions": "Keep in cool, and dry place. Away from direct sunlight.",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Kick Energy Drink",
@@ -127,7 +157,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40370948_1-sting-classic-kick-energy-drink.jpg"
-    }
+    },
+    "barcode": "8902080100798"
    }
   ],
   "images": [
@@ -150,7 +181,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370948-6_1-sting-classic-kick-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sting Classic Kick Energy Drink is a refreshing beverage with a bold and delicious flavour. Formulated with caffeine, taurine and B-vitamins, it delivers a distinctive taste experience in every sip. Its vibrant flavour and refreshing character make it a popular choice for those who enjoy a flavourful energy drink, whether at work, during travel or on the go.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators (INS 330, INS 296, INS 331), Flavour (Natural, Nature-Identical and Artificial Berry Flavouring Substances), Sequestrants (INS 452(i), INS 385), Caffeine (29 mg/100 ml), Preservatives (INS 211, INS 202), Sweeteners (INS 955, INS 950), Taurine, Colours (INS 110, INS 102), Vitamin Premix.\nContains Non-Caloric Sweeteners.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "26",
+    "Protein (g)": "0.0",
+    "Carbohydrates (g)": "6.5",
+    "Total Sugars (g)": "6.5",
+    "Added Sugars (g)": "6.4",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "35.0",
+    "Vitamin B3 (Niacin) (mg)": "1.4",
+    "Vitamin B6 (mg)": "0.13"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Kick Energy Drink Can",
@@ -189,7 +238,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370949-6_1-sting-classic-kick-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sting Classic Kick Energy Drink is a refreshing beverage with a bold and delicious flavour. Formulated with caffeine, taurine and B-vitamins, it delivers a distinctive taste experience in every sip. Its vibrant flavour and refreshing character make it a popular choice for those who enjoy a flavourful energy drink, whether at work, during travel or on the go.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators (INS 330, INS 296, INS 331), Flavour (Natural, Nature-Identical and Artificial Berry Flavouring Substances), Sequestrants (INS 452(i), INS 385), Caffeine (29 mg/100 ml), Preservatives (INS 211, INS 202), Sweeteners (INS 955, INS 950), Taurine, Colours (INS 110, INS 102), Vitamin Premix.\nContains Non-Caloric Sweeteners.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "26",
+    "Protein (g)": "0.0",
+    "Carbohydrates (g)": "6.5",
+    "Total Sugars (g)": "6.5",
+    "Added Sugars (g)": "6.4",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "35.0",
+    "Vitamin B3 (Niacin) (mg)": "1.4",
+    "Vitamin B6 (mg)": "0.13"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gold Night Fuel Energy Drink",
@@ -205,7 +272,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40339532_2-sting-gold-night-fuel-energy-drink.jpg"
-    }
+    },
+    "barcode": "8902080110001"
    }
   ],
   "images": [
@@ -231,6 +299,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339532-7_2-sting-gold-night-fuel-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sting Gold Night Fuel delivers an electrifying jolt that energises you, helping you make the most of every moment with friends throughout the night. Its rich malt flavour enhances the experience. It also contains taurine and vitamins. This energy drink is not recommended for children, pregnant or breastfeeding women, or those sensitive to caffeine. For best results, consume no more than 500 ml per day.",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  }
 ]
