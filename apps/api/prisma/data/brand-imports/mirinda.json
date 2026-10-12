@@ -1,0 +1,32 @@
+{
+  "brand": "Mirinda (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt. Ltd.",
+  "feed": "mirinda-feed.json",
+  "themeColor": "#F68B1F",
+  "themeColorSecondary": "#00843D",
+  "namePrefix": "Mirinda ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Mirinda Orange Sparkling Drink": "Orange Soft Drink"
+  },
+  "rules": [
+    {
+      "match": "^Orange\\ Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    },
+    {
+      "match": "^Orange\\ Soft\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    }
+  ],
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mirinda/logo-05e40140.png"
+}

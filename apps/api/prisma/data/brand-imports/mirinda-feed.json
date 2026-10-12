@@ -1,0 +1,152 @@
+[
+ {
+  "title": "Orange Soft Drink",
+  "handle": "orange-soft-drink",
+  "vendor": "Mirinda (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831_5-mirinda-soft-drink-orange.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216378_1-mirinda-orange-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100021110_6-mirinda-soft-drink-orange.jpg"
+    }
+   },
+   {
+    "title": "1.25L",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/89111_5-mirinda-orange-flavour.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019525_9-mirinda-soft-drink-orange.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251051_11-mirinda-soft-drink-orange.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40094180_11-mirinda-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831_5-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831-2_5-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831-3_5-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831-4_5-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831-5_5-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831-6_4-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831-7_4-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130831-8_3-mirinda-soft-drink-orange.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Orange Soft Drink Can",
+  "handle": "orange-soft-drink-can",
+  "vendor": "Mirinda (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/292395_8-mirinda-soft-drink-orange.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327061_3-mirinda-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292395_8-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292395-2_3-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292395-3_3-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292395-4_3-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292395-5_3-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292395-6_3-mirinda-soft-drink-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327061_3-mirinda-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
