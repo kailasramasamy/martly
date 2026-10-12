@@ -1,0 +1,16 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Chakki Fresh Atta,Pillsbury Chakki Fresh Atta,update,Grocery & Staples > Atta & Flours > Wheat Atta,5kg ₹256 | 1kg ₹52 | 2kg ₹111 | 10kg ₹532,5kg ₹256 | 1kg ₹52 | 2kg ₹111 | 10kg ₹532,8,
+Sharbati Gold Atta,Pillsbury Sharbati Gold Atta,create,Grocery & Staples > Atta & Flours > Wheat Atta,5kg ₹406 | 400g ₹40 | 1kg ₹73 | 10kg ₹730,5kg ₹406 | 400g ₹40 | 1kg ₹73 | 10kg ₹730,8,
+Multigrain Atta,Pillsbury Multigrain Atta,create,Grocery & Staples > Atta & Flours > Multigrain Atta,5kg ₹367 | 1kg ₹72,5kg ₹367 | 1kg ₹72,8,
+Aloo Paratha,Pillsbury Aloo Paratha,create,Frozen Foods > Frozen Snacks > Frozen Paratha & Roti,200g ₹75,200g ₹75,6,200g: out of stock online
+Laccha Paratha,Pillsbury Laccha Paratha,create,Frozen Foods > Frozen Snacks > Frozen Paratha & Roti,140g ₹55,140g ₹55,6,140g: out of stock online
+Malabar Paratha,Pillsbury Malabar Paratha,create,Frozen Foods > Frozen Snacks > Frozen Paratha & Roti,280g ₹130,280g ₹130,6,
+Cheese Corn Crunchies,Pillsbury Cheese Corn Crunchies,create,Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab,340g ₹335 | 200g ₹159,340g ₹335 | 200g ₹159,7,200g: out of stock online
+Veggie Cheese Fingers,Pillsbury Veggie Cheese Fingers,create,Frozen Foods > Frozen Snacks > Frozen Tikki & Kebab,225g ₹149 | 400g ₹249,225g ₹149 | 400g ₹249,7,225g: out of stock online; 400g: out of stock online
+Choco-Molten Lava Cake,Pillsbury Choco-Molten Lava Cake,create,Bakery > Cakes & Pastries > Muffins & Cupcakes,80g ₹79,80g ₹79,7,
+Cookie Cake Choco Trio,Pillsbury Cookie Cake Choco Trio,create,Bakery > Cakes & Pastries > Sliced Cake,20g ₹10 | 10g ₹5,20g ₹10 | 10g ₹5,7,MRP estimated: 10g
+Cookie Cake Tutti Frutti,Pillsbury Cookie Cake Tutti Frutti,create,Bakery > Cakes & Pastries > Sliced Cake,20g ₹10,20g ₹10,6,
+Cookie Cake Vanilla,Pillsbury Cookie Cake Vanilla,create,Bakery > Cakes & Pastries > Sliced Cake,20g ₹10,20g ₹10,7,MRP estimated: 20g
+Pastry Cake Choco,Pillsbury Pastry Cake Choco,create,Bakery > Cakes & Pastries > Sliced Cake,23g ₹10,23g ₹10,7,
+Pastry Cake Strawberry,Pillsbury Pastry Cake Strawberry,create,Bakery > Cakes & Pastries > Sliced Cake,23g ₹10,23g ₹10,6,
+Milk Choco Spread,Pillsbury Milk Choco Spread,create,Grocery & Staples > Sauces & Condiments > Chocolate & Hazelnut Spread,290g ₹350,290g ₹350,8,
