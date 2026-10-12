@@ -48,7 +48,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/255834_6-grb-ghee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Ghee has the same taste, aroma and granulation like traditional home made ghee. It helps in improving digestion and also provides a good supply of energy to the body. Ghee is good for the overall physical health and it aids in enhancing muscle, strengthens the sense organ, nourishes the skin and improves complexion.",
+   "ingredients": "Milk Fat",
+   "usageInstructions": "Ghee is used for cooking, garnishing and making sweets.",
+   "manufacturerName": "GRB dairy foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ghee Pouch",
@@ -64,7 +71,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40270377_1-grb-ghee-pure-rich-in-vitamins.jpg"
-    }
+    },
+    "barcode": "8906010360191"
    },
    {
     "title": "200ml",
@@ -111,7 +119,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/123596_12-grb-ghee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "An ISO.22000:2005 Certified Company GRB Ghee has the same taste, aroma and granulation as traditional homemade Ghee. AGMARK Ghee.",
+   "ingredients": "Milk Fat.",
+   "usageInstructions": "Directly Use.",
+   "manufacturerName": "Bangalore Papa's Trading No 39/40",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000672"
+  }
  },
  {
   "title": "Buffalo Ghee",
@@ -162,7 +178,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276162_1-grb-pure-buffalo-ghee-rich-in-nutrients.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Ghee has the same taste, aroma and granulation like traditional home made ghee. It helps in improving digestion and also provides a good supply of energy to the body. Ghee is good for the overall physical health and it aids in enhancing muscle, strengthens the sense organ, nourishes the skin and improves complexion.",
+   "ingredients": "Milk Fat",
+   "usageInstructions": "Ghee is used for cooking, garnishing and making sweets.",
+   "manufacturerName": "GRB dairy foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Buffalo Ghee Pouch",
@@ -213,7 +236,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127150_2-grb-ghee-buffalo.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Ghee has the same taste, aroma and granulation like traditional home made ghee. It helps in improving digestion and also provides a good supply of energy to the body. Ghee is good for the overall physical health and it aids in enhancing muscle, strengthens the sense organ, nourishes the skin and improves complexion.",
+   "ingredients": "Milk Fat",
+   "usageInstructions": "Ghee is used for cooking, garnishing and making sweets.",
+   "manufacturerName": "GRB dairy foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bombay Halwa",
@@ -229,7 +259,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
-    }
+    },
+    "barcode": "8906010365967"
    }
   ],
   "images": [
@@ -255,7 +286,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718-7_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Bombay Halwa is the classic halwa perfect for festivals and housewarmings!\nThe GRB Bombay Halwa makes your celebrations better. It is made using the best quality ingredients available. It contains ingredients like sugar, corn starch, ghee, and cashew nuts. This comes in a box that is easy to carry any where. So share all and any good news with anyone around you. Halwa can have some health benefits. It contains fats and omega-3 fatty acids that support a healthy heart and cardiovascular system. Enjoy the GRB Bombay Halwa with your friends and family. Or give it to people you love as a gift for their special occasion.\nExplore a wide range of GRB products like butterscotch soan cake, pineapple halwa, and bombay halwa only on Big Basket.",
+   "ingredients": "Sugar, Corn starch, Ghee, Cashew Nuts and Acidity regulator",
+   "usageInstructions": "Share it with others on special occasions or serve it during a feast",
+   "manufacturerName": "GRB dairy foods Pvt ltd # No",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000672"
+  }
  },
  {
   "title": "Ghee Dates Halwa",
@@ -297,7 +336,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715-7_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Ghee Dates Halwa is a mouth-watering delight that you can savour the taste of! The GRB Ghee Dates Halwa is made using the best quality ingredients like sugar, dates, dates syrup, corn starch, ghee, cashew nuts and citric acid. Halwas can give your tastebuds a treat and provide some health benefits as well. They are rich in fat and omega-3 fatty acids that support your heart's health.\nThe GRB Ghee Dates Halwa comes in a box that is easy to carry. You can bring this sweet anywhere with you. Enjoy a delicious, mouth-watering treat during any festivals. Or give it to a person with diabetes whose sugar is running low.",
+   "ingredients": "Sugar, Dates, Dates syrup, Corn starch(g)hee, Cashew nut, Citric Acid",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "40g",
+    "Energy": "1617 kJ (385 Kcal)",
+    "Protein": "2.0g",
+    "Fat, total": "9.0g",
+    "Saturated": "4.8g",
+    "Carbohydrate": "74g",
+    "Sugars": "52.5g",
+    "Sodium": "1mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "GRB dairy foods Pvt ltd # No",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000672"
+  }
  },
  {
   "title": "Ghee Dry Fruits Halwa",
@@ -339,7 +397,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716-7_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Ghee Dry Fruits Halwa is the perfect delight to share on a perfect occasion! The GRB Ghee Dry Fruits Halwa comes in a box that is easy to carry. You can bring these mouth-watering sweets anywhere you'd like. Halwa is a very famous type of sweet that is made in India. It can be made using different kinds of ingredients. There is a halwa type for everyone.\nAnd the GRB Ghee Dry Fruits Halwa is for those who like a sweet with a soft texture that sometimes has a crunch to it. It is made using the best quality ingredients like sugar, dates, dates syrup, corn starch, ghee, cashew nuts and citric acid. Enjoy this with your friends and family on a festival. Or gift it to someone close for their special occasion.",
+   "ingredients": "Sugar, Corn starch(g)hee, Almond, Cashew nuts, Pistachio, Fig, Citric Acid",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "40g",
+    "Energy": "1764 kJ (420 Kcal)",
+    "Protein": "2.4g",
+    "Fat, total": "14.0g",
+    "Saturated": "6.0g",
+    "Carbohydrate": "71g",
+    "Sugars": "60g",
+    "Sodium": "0mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "GRB dairy foods Pvt ltd # No",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000672"
+  }
  },
  {
   "title": "Pineapple Halwa",
@@ -381,7 +458,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717-7_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Pineapple Halwa is the mouth-watering sweet that is perfect for all festivals your celebrate!\nThe GRB Pineapple Halwa is made using the best ingredients. It contains the unique sweetness of pineapple and has a soft texture. Halwa is made in various types, depending on what ingredient goes into it. Halwa can have some health benefits too. It contains high amount of fats, and omega-3 fatty acids that support a healthy heart and cardiovascular system. The GRB Pineapple Halwa contains ingredients like sugar, corn starch, candied pineapple bites, pineapple pulp, cashew nuts, and citric acid. Share it with your friend and family after sharing any good news with them. Or share it to everyone around you during festivals and special occasions.\nExplore a wide range of GRB products like butterscotch soan cake, pineapple halwa, and bombay halwa only on Big Basket.",
+   "ingredients": "Sugar, Corn starch, Candied Pineapple Bites, Pineapple Pulp, Cashew Nuts, and Citric acid",
+   "usageInstructions": "Share it with others on special occasions or serve it during a feast",
+   "manufacturerName": "GRB dairy foods Pvt ltd # No",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000672"
+  }
  },
  {
   "title": "Mysore Pak",
@@ -417,7 +502,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077779-5_1-grb-sweets-mysore-pak-ghee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Mysore Pak, a rich and delectable delicacy, is prepared with just three main ingredients: gram flour, ghee, and sugar. This traditional treat, originating from the Mysore palace, instantly melts in the mouth. It is a wonderful choice for festivals, birthdays, and other special occasions to delight your loved ones.",
+   "ingredients": "Ghee (32%), Sugar, Bengal Gram Flour, Refined Wheat Flour, Milk Solids, Natural Food Colour (INS 100(i)), Contains: Wheat & Milk, May Contain: Nuts & Other Tree Nuts",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy (Kcal)": "609",
+    "Protein (g)": "4.3",
+    "Carbohydrate (g)": "51",
+    "Total Sugars (g)": "40",
+    "Added Sugars (g)": "35",
+    "Total Fat (g)": "43.1",
+    "Saturated Fat (g)": "29.7",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "80",
+    "Sodium (mg)": "10"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct exposure to sunlight",
+   "manufacturerName": "GRB Dairy Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Besan Laddu",
@@ -453,7 +559,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457621-5_1-grb-besan-laddu.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the sublime pleasure of Besan Ladoo, a confection that encapsulates the essence of traditional Indian sweets. Crafted with care, it harmoniously blends besan flour, bura sugar, fragrant cardamom, and rich ghee, resulting in a symphony of flavours with each bite. This delightful treat offers a taste of nostalgia and tradition, making it a beloved choice for festive celebrations or simply to savour the sweetness of life.",
+   "ingredients": "Sugar, Bengal Gram Flour, Ghee & Cardamom.\nContains Milk\nMay Contains Wheat & Nuts.",
+   "manufacturerName": "GRB Dairy Foods Pvt. Ltd. A-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Soan Cake",
@@ -492,7 +604,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261712-6_1-grb-soan-cake-regular-traditional-delicacysweets-dessert-for-celebrations-special-ocassions.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Regular Soan Cake is a delicious, sweet delight perfect for sharing! The GRB Regular Soan Cake is made using the best quality ingredients. Sweets are full of nutrients that are required by the body. They provide the body with an instant dose of sugar, which can help a person with diabetes when their blood sugar is going low.\nEating sweets can reduce the risk of stroke. The GRB Regular Soan Cake contains ingredients like sugar, edible vegetable oil, Bengal gram flour, refined wheat flour, cardamom, almond, and pistachio. You can enjoy these sweets by sharing them with others or gifting them during a housewarming.",
+   "ingredients": "Sugar, Edible Vegetable Oil, Bengalgram flour, Refined Wheat Flour, Cardamom, Almond, Pistachio",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "526",
+    "Protein (g)": "4.82",
+    "Total Fat (g)": "25.98",
+    "Saturated Fatty Acids (g)": "14.89",
+    "Monounsaturated Fatty Acids (g)": "8.29",
+    "Polyunsaturated Fatty Acids (g)": "2.8",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Carbohydrate (g)": "68.32",
+    "Sugars (g)": "52.44"
+   },
+   "storageInstructions": "*Keep the pack away from direct sunlight\n*Store the pack in a cool and dry place\n*Please do not keep in refrigerator",
+   "manufacturerName": "GRB dairy foods Pvt ltd # No",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000672"
+  }
  },
  {
   "title": "Butterscotch Soan Cake",
@@ -531,7 +664,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261713-6_1-grb-soan-cake-butterscotch-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Butterscotch Soan Cake is a delicious butterscotch delight for the days of celebration! The GRB Butterscotch Soan Cake is a sweet made using the best quality ingredients. Sweets in general can provide a boost of energy on a dull day. Sweets can improve your mood instantly, and they are full of ingredients that is required by the body. The GRB Butterscotch Soan Cake contains ingredients like sugar, edible vegetable oil, Bengal gram flour, refined wheat flour, cardamom, almond, & pistachio. It comes in a box that is easy to carry. You can wrap the box and give it to someone as a gift. Or share it with others during any celebrations. Explore a wide range of GRB products like butterscotch soan cake, pineapple halwa, and Bombay halwa only on Big Basket.",
+   "ingredients": "Sugar, Edible Veg Oil, Bengal Gram flour, Refined wheat flour, Cardamom, Almond, & Pistachio",
+   "usageInstructions": "Share it with others on special occasions or serve it during a feast",
+   "manufacturerName": "GRB dairy foods Pvt ltd # No",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000672"
+  }
  },
  {
   "title": "Pineapple Soan Cake",
@@ -570,7 +711,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261714-6_1-grb-soan-cake-pineapple-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Pineapple Soan Cake is the perfect, round, delicious treat to celebrate any occasion with! The GRB Pineapple Soan Cake is made using the best quality ingredients available. In India, it is a tradition to share the good news with others. And with this news comes the sharing of sweets of any kind. To follow this tradition, this soan cake comes in a box that is easy to share with others. You can travel with the box easily. It consists of ingredients like sugar, edible vegetable oil, Bengal gram flour, refined wheat flour, cardamom, almond, & pistachio. Enjoy the GRB Pineapple Soan Cake by sharing it with others and telling them about your wonderful news. Or give it to people as a gift. Explore a wide range of GRB products like butterscotch soan cake, pineapple halwa, and Bombay halwa only on Big Basket.",
+   "ingredients": "Sugar, Edible Veg Oil, Bengal Gram Flour, Refined wheat Flour, Cardamom, Almond, & Pistachio",
+   "usageInstructions": "Share it with others on special occasions or serve it during a feast",
+   "manufacturerName": "GRB dairy foods Pvt ltd # No",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000672"
+  }
  },
  {
   "title": "Cardamom Soan Papdi",
@@ -606,7 +755,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003514-5_8-grb-soan-papdi-real-cardamom.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Soan papdis are softer and more delectable, providing a flavourful experience as soon as you place them in your mouth. They are perfect for gifting or sweetening any occasion with immense happiness. Ingredients such as peanut oil, sugar, Bengal gram flour, and others are used to make these soan papdis richer in flavour.",
+   "ingredients": "Sugar, Edible Vegetable Oil, Bengal Gram Flour, Refined Wheat Flour, Cardamom, Almond, Pistachio",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "526",
+    "Protein (g)": "4.82",
+    "Total Fat (g)": "25.98",
+    "Saturated Fatty Acids (g)": "14.89",
+    "Monounsaturated Fatty Acids (g)": "8.29",
+    "Polyunsaturated Fatty Acids (g)": "2.8",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Carbohydrate (g)": "68.32",
+    "Sugars (g)": "52.44"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chocolate Soan Papdi",
@@ -630,7 +798,10 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003513_1-grb-soan-papdi-chocolate.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Soan Papdi is a traditional Indian sweet made with gram flour, sugar, and ghee. It is known for its rich, crumbly texture and sweet flavour. The product is often enjoyed as a dessert or a snack."
+  }
  },
  {
   "title": "Orange Soan Papdi",
@@ -654,7 +825,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003515_1-grb-soan-papdi-orange.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the refreshing orange flavour of GRB Soan Papdi. This delightful treat melts in your mouth slowly, making it perfect for parties and festivals. Crafted with care, this soan papdi is a sign of purity.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100 g",
+    "Energy (kcal)": "355.22",
+    "Carbohydrate (g)": "74.68",
+    "Total sugar (g)": "4.37",
+    "Added sugar (g)": "0",
+    "Protein (g)": "12",
+    "Total Fat (g)": "0.9",
+    "Saturated Fats (g)": "NMT 0.25",
+    "Trans Fat (g)": "NMT 0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "10.6",
+    "Iron (mg)": "2.5",
+    "Folic acid (mcg)": "16",
+    "Vitamin B 12 (mcg)": "0.15",
+    "Fibre (g)": "3.91"
+   }
+  }
  },
  {
   "title": "Butterscotch Soan Papdi",
@@ -693,7 +885,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457693-6_1-grb-butterscotch-soan-papdi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Butterscotch Soanpapdi is a delectable fusion of traditional Indian sweets with a rich butterscotch flavour. It is a flaky, melt-in-the-mouth texture, enhanced by the caramel-like taste of butterscotch. Crafted from premium ingredients, it’s perfect for festive occasions or as a sweet indulgence anytime. Enjoy a delightful blend of classic and contemporary flavours in every bite.",
+   "ingredients": "Sugar, Bengal gram flour, Refined Wheat Flour, Refined Palmolein Oil, Vegetable Fat (Interesterified), Liquid Glucose, Butterscotch Nuts (Sugar, Butter & Cashew nut), Artificial Butterscotch Flavour & Natural Food Colour (INS 100(i))\nContains Wheat, Milk and Nuts May contains Peanuts & other tree nuts",
+   "manufacturerName": "GRB Dairy Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconut Soan Papdi",
@@ -732,7 +930,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457691-6_1-grb-coconut-soan-papdi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Coconut Soanpapdi is a delightful Indian sweet. This traditional delicacy features a flaky, melt-in-the-mouth texture, enhanced with the rich flavour of coconut. Made from premium quality ingredients, it offers a perfect balance of taste and authenticity, making it an ideal treat for festive occasions or a delicious snack anytime.",
+   "ingredients": "Sugar, Bengal gram flour, Refined Wheat Flour, Refined Palmolein Oil, Vegetable Fat (Interesterified), Coconut powder (2%), Liquid Glucose, Nature Identical & Natural Coconut Flavour, Cardamom, Almond & Pistachio\nContains Wheat and Nuts May contain Peanuts, Milk & other tree nuts",
+   "manufacturerName": "GRB Dairy Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pineapple Soan Papdi",
@@ -771,7 +975,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457692-6_1-grb-pineapple-soan-papdi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Pineapple Soan Papdi is a unique twist on the traditional Indian sweet, flaky, melt-in-the-mouth goodness. Infused with the refreshing pineapple flavour, this delightful treat combines the classic texture of soan papdi with a tropical twist. Made from high-quality ingredients, it’s perfect for festive celebrations or as a delicious, anytime snack.",
+   "ingredients": "Sugar, Bengal gram flour, Refined Wheat Flour, Refined Palmolein Oil, Vegetable Fat (Interesterified), Liquid Glucose, Artificial Pineapple Flavour, Almond, Pistachio & Natural Food Colour (INS 100(i)) Contains Wheat & Nuts May contain Peanuts, Milk & other tree nuts",
+   "manufacturerName": "GRB Dairy Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gulab Jamun",
@@ -795,7 +1005,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077777_1-grb-canned-gulab-jamun.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Gulab Jamun Mix is used to prepare sweet Gulab Jamun, a favourite Indian dessert well-liked by everybody. This recipe is a melt-in-the-mouth dessert and the right mixture to end a luxurious meal. Gulab Jamun is a sugary dumpling prepared from khova, deep-fried and served in sugar syrup. It is a wonderful dessert for any occasion.",
+   "ingredients": "Sugar & Khova/ Milk Solids",
+   "manufacturerName": "GRB Dairy Foods Pvt Ltd"
+  }
  },
  {
   "title": "Rasgulla",
@@ -846,7 +1061,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077778_1-grb-canned-rasogalla.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Rasogolla is a delightful treat for those with a sweet tooth. These spongy, round sweets are soaked in a light sugar syrup, delivering a burst of sweetness with every bite. Made with high-quality ingredients, GRB ensures that each Rasogolla maintains its authentic taste and texture. Packaged in a convenient can, these sweets stay fresh and are easy to serve, making them perfect for festive occasions or as a quick dessert. Experience the richness of traditional Indian sweets with GRB Rasogolla Canned, a delicious indulgence that brings joy to every occasion.",
+   "ingredients": "Sugar, Water, Milk and Rose water\nContains Milk\nMay contain Sulfites",
+   "manufacturerName": "GRB dairy foods Pvt ltd # No",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gulab Jamun Mix",
@@ -894,7 +1115,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40266029_1-grb-gulab-jamun-instant-mix-soft-easy-to-make.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Gulab jamun mix refers to a mix of ingredients, which are essential to prepare an Indian sweet called gulab jamun. The MTR Gulab Jamun provides smooth, soft and delightful jamun sweets that you and your family can enjoy together.",
+   "ingredients": "Wheat Flour, Milk Solids, Hydrogenated Vegetable Oil, Sugar, Raising Agent (Ins 5 (Ii)), Acidity Regulator (Ins 33) And Stabilizers (Ins 331 (Iii), Ins 339 (Ii)). Hydrogenated Vegetable Fats Used - Contains Trans Fats",
+   "usageInstructions": "Add 1/4 cup of water to 1 cup of GRB Gulab Jamun Mix and knead gently into dough. Set aside for 5 minutes. Make small balls of dough applying oil/GRB ghee on both palms. Deep fry in hot oil/GRB ghee over a low flame until golden brown. Soak the fried Jamuns in hot sugar syrup until they completely absorb the syrup. Serve hot.\nTip: Ensure the correct frying temperature of oil/ghee by dropping the ball into it, so that it slowly rises to the surface.\nSugar Syrup: Add equal measures of sugar and water then boil for 5 minutes.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "GRB DAIRY FOOD PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rava Dosa Mix",
@@ -930,7 +1159,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003521-5_1-grb-mix-rava-dosa.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB`s Dosa Mix assists you make delicious and crisp dosas at home. It is a distinctive South Indian dish, eaten for dinner or breakfast, which is high in carbohydrates and proteins. Recipe can be served with numerous variations like a plain Rava Dosa, Onion Rava Dosa or Rava Masala Dosa.",
+   "ingredients": "Wheat Semolina, Refined Wheat Flour (Maida), Rice Flour, Black Gram Dhal, Salt, Malic Acid, Sodium Bicarbonate, Cumin Seeds And Green Chilli.",
+   "usageInstructions": "Just mix water to get the batter ready and within minutes enjoy delicious rava dosa !",
+   "manufacturerName": "GRB Dairy Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rava Idly Mix",
@@ -978,7 +1214,32 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40266192_1-grb-rava-idly-instant-mix-soft-fluffy.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Rava idly is a trendy breakfast recipe and is consumed either during breakfast or evening snack time.",
+   "ingredients": "Semolina(83%), Edible Vegetable Fat, Bengal gram dal, Cashew nut, Salt, Green chilli, Curry leaves, Ginger, Raising Agent (INS 500ii), Mustard",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "45-50g",
+    "Energy(Kcal)": "369 kcal",
+    "Protein(g)": "9.8 g",
+    "Total Fat (g)": "8.0 g",
+    "Saturated Fatty Acids (g)": "4.6 g",
+    "Monounsaturated Fatty Acids (g)": "2.4 g",
+    "Polyunsaturated Fatty Acids (g)": "0.9 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Carbohydrate(g)": "64.3 g",
+    "Sugars (g)": "0 g",
+    "Fibre(g)": "0.5 g",
+    "Calcium(mg)": "34.5 mg",
+    "Sodium(mg)": "653 mg",
+    "Iron(mg)": "1.7 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry, and hygienic place",
+   "manufacturerName": "GRB Dairy Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bajji Bonda Mix",
@@ -1002,7 +1263,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077776_1-grb-ready-mix-bajji-bonda.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB Bajji Bonda Pakoda Snack Mix gives extremely fine taste. With GRB Bajji Bonda Snack Mix, any person can prepare bajji/bonda as it is simple to prepare. Since bajji, bonda is a fine combination for most of the Indian appetisers, you can prepare them simply.",
+   "ingredients": "Besan, Salts, Spices & Condiments",
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "GRB Dairy Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bisibele Bhath Powder",
@@ -1038,7 +1306,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003520-5_1-grb-powder-bisibele-bhath.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "GRB has become synonymous with ‘Purity’ in the Indian market, and over the years we have built a reputation & legacy for authentic traditional taste. A spicy, rice-based dish with a wide variety of spices and ingredients, a truly South Indian experience. No added Preservatives.",
+   "ingredients": "Coriander, Red Chilli, Cumin, Gram Dal, Black Gram Dal, Fenugreek, Cinnamon, Salt, Clove Turmeric And Nutmeg",
+   "storageInstructions": "Store in a cool, dry, and hygienic place.",
+   "manufacturerName": "GRB Dairy Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Puliogare Powder",
@@ -1074,7 +1349,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003526-5_1-grb-powder-puliogare.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Delicious Tamarind rice with peanuts in authentically homemade yet tangy and spicy south Indian flavour. No added preservatives. Serves 2-3 people. It contains peanuts, sesame, and mustard.",
+   "ingredients": "Tamarind Concentrate (15%), Salt (15%), Peanuts (10%), Coriander, Sesame, Dry Coconut, Jaggery, Red Chilli, Bengal Gram Dal, Black Gram Dal, Refined Sunflower Oil, Anti Caking Agent (INS 551), Black Pepper, Cumin, Mustard, Fenugreek, Turmeric, Curry Leaves, Acidity Regulator (INS 296), Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "364 kcal",
+    "Protein (g)": "9.5 g",
+    "Fat (g)": "19.8 g",
+    "Saturated Fat (g)": "3.2 g",
+    "Carbohydrate (g)": "37 g",
+    "Sugars (g)": "13 g",
+    "Sodium (mg)": "6000 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry, and hygienic place\n*Use dry spoon, once open transfer the contents to an air tight container",
+   "manufacturerName": "GRB Dairy Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vangi Bhath Powder",
@@ -1098,7 +1390,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003519_1-grb-powder-vangi-bhath.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience that authentic tangy Brinjal rice with an uplifting South Indian flavour. No preservatives added.",
+   "ingredients": "Coriander, Black Gram Dal, Red Chilli, Cumin, Fenugreek, Cinnamon And Clove.",
+   "usageInstructions": "Cook 200g of rice and keep aside.\nSauté 250g bringal and 100g vegetables with a pinch of turmeric in 1 tbsp Edible vegetable oil.\nAdd 3 tbsp (40) of GRB Vangi bhath, tamarind extract, salt to taste and jaggery (if desired).\nSeason it with 3.1/4 tbsp of cooking oil, 1/4 tbsp mustard, 1/2 tbsp gram dal, a few cashew nuts and 1/4 tbsp green chilli.\nAdd fried copra and cooked rice. Mix well and serve hot.",
+   "manufacturerName": "GRB Dairy Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rasam Powder",
@@ -1170,7 +1469,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077773-5_2-grb-powder-sambar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sambar Powder is a blend of roasted spices and lentils, essential for preparing the popular South Indian dish, sambar. With a balanced mix of ingredients like coriander, cumin, mustard seeds, and dried red chillies, it adds a rich, aromatic flavour to curries, soups, and stews. This versatile spice mix enhances the taste of vegetables and rice, making it a kitchen staple.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Red Chilli Powder",
@@ -1242,6 +1546,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457130-5_1-grb-butter-murukku.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Town Bus Butter Murukku offers a delightful blend of nostalgia and flavour. Crafted from authentic recipes and the freshest ingredients, it evokes memories of unforgettable journeys. Each bite is a journey through time, resonating with the essence of traditional South Indian snacks. Let the taste transport you to a bygone era, filled with warmth, nostalgia, and the rich culinary heritage.",
+   "ingredients": "Rice Flour (42%), Bengal Gram Flour (26%), Refined Palmolein Oil, Butter (2%), Salt, Sesame, Cumin, Asafoetida And Sodium Bicarbonate (Raising Agent Ins 500 (Ii)). Contains: Sesame & Milk Product.\nMay Contain: Nuts (Peanut, Other Tree Nut) And Wheat.",
+   "manufacturerName": "GRB DAIRY FOODS PVT.LTD. A)B - I",
+   "countryOfOrigin": "India"
+  }
  }
 ]
