@@ -234,7 +234,7 @@ async function applyPlan(plan: Plan, config: Config, brandId: string): Promise<"
   const description = plainDescription(plan.site.body_html) ?? undefined;
   const data = {
     name: plan.name, subcategoryId: sub.id, manufacturerName: plan.site.details?.manufacturerName ?? config.manufacturer,
-    productType: PRODUCT_TYPE[plan.path![0]], foodType: isFoodPath(plan.path!) ? config.foodType : null, description,
+    productType: PRODUCT_TYPE[plan.path![0]], foodType: isFoodPath(plan.path!) ? plan.site.food_type ?? config.foodType : null, description,
     ...detailUpdates(plan.site.details, existing && { ...existing, description: description ?? existing.description }),
   };
   const product = existing

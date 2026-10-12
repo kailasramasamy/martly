@@ -1,6 +1,6 @@
 // Reads a Shopify store's public products.json feed and normalises it into catalog variants
 
-import type { UnitType } from "../../generated/prisma/index.js";
+import type { FoodType, UnitType } from "../../generated/prisma/index.js";
 
 // `estimated` is not a Shopify field: hand-built feeds set it on approximated MRPs.
 // `featured_image` is the size's own pack shot, when the store has one
@@ -18,6 +18,7 @@ export interface ProductDetails {
 export interface ShopifyProduct {
   title: string; handle: string; vendor: string; product_type: string; body_html: string;
   variants: ShopifyVariant[]; images: { src: string }[]; details?: ProductDetails;
+  food_type?: FoodType; // the product's own veg / non-veg mark (hand-built feeds take it from BigBasket); else the brand's
 }
 
 export interface PackVariant {
