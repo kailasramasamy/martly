@@ -1,0 +1,74 @@
+[
+ {
+  "title": "Agmark Ghee",
+  "handle": "agmark-ghee",
+  "vendor": "RKG",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "97",
+    "compare_at_price": "97",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780_3-rkg-agmark-ghee-ghee.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "187",
+    "compare_at_price": "187",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128779_2-rkg-agmark-ghee-ghee.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "446",
+    "compare_at_price": "446",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128778_2-rkg-agmark-ghee-ghee.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "996",
+    "compare_at_price": "996",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128777_2-rkg-agmark-ghee-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780_3-rkg-agmark-ghee-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780-2_3-rkg-agmark-ghee-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780-3_3-rkg-agmark-ghee-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780-4_2-rkg-agmark-ghee-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780-5_2-rkg-agmark-ghee-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780-6_1-rkg-agmark-ghee-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780-7_1-rkg-agmark-ghee-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128780-8_1-rkg-agmark-ghee-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
