@@ -13,7 +13,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/60000373_1-hatsun-cow-ghee.jpg"
-    }
+    },
+    "barcode": "8904057395985"
    },
    {
     "title": "200ml",
@@ -69,7 +70,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003735_2-hatsun-cow-ghee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Rich Aroma Of Traditional Ghee",
+   "ingredients": "Milk Fat",
+   "manufacturerName": "HATSUN AGRO PRODUCTS LIMITED",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Curd",
@@ -129,7 +136,34 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40353698_1-hatsun-curd.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the thick, creamy delight of Hatsun Curd, a true culinary companion for your afternoon meals. Boasting a rich texture and flavour, this curd is a delightful addition to any dish, elevating the taste experience. Packed in hygienic, high-quality packaging, Hatsun Curd ensures lasting freshness, allowing you to enjoy the convenience and superior quality in every bite. With a burst of flavour and a creamy, fresh texture, Hatsun Curd is the perfect choice to add a touch of indulgence to your daily culinary adventures.",
+   "ingredients": "Pasteurized toned milk & starter culture",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100 g",
+    "Calories": "76 kcal",
+    "Total Fat": "4 g",
+    "Saturated Fat": "2.5 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "15 mg",
+    "Sodium": "50 mg",
+    "Total Carbohydrate": "6 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "6 g",
+    "Added Sugars": "0 g",
+    "Protein": "4 g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "134 mg",
+    "Iron": "0 mg",
+    "Potassium": "160 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Hatsun Agro product Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000171"
+  }
  },
  {
   "title": "Curd Pouch",
@@ -168,7 +202,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339220-6_1-hatsun-hatsun-curd.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Curd, made with toned milk, is a delicious and wholesome dairy product with a smooth, creamy texture. Prepared from high-quality milk, it has a mild, tangy flavour that enhances a variety of dishes. Whether enjoyed on its own, paired with rice, or used in cooking, this curd adds a rich and refreshing taste. Its thick consistency makes it ideal for preparing raitas, lassis, and marinades. Hatsun Curd is crafted to retain freshness and purity, ensuring a delightful experience with every spoonful. A staple in every kitchen, it brings natural goodness and authentic taste to your daily meals.",
+   "ingredients": "Pasteurised Toned Milk, Starter Culture. Allergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy": "67 kcal",
+    "Protein": "4 g",
+    "Total Carbohydrate": "6 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "6 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "3 g",
+    "Saturated Fat": "1.9 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "10 mg",
+    "Sodium": "50 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Soft & Fresh Paneer",
@@ -204,7 +259,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196746-5_1-hatsun-paneer.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The succulent Hatsun Paneer is prepared under high levels of hygiene using only the freshest of milk cream. Now make your meals even tastier.",
+   "usageInstructions": "Cook & eat |",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Calories": "280 kcal",
+    "Total Fat": "23 g",
+    "Saturated Fat": "14 g",
+    "Trans Fat": "0.5 g",
+    "Carbohydrate": "3 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "3 g",
+    "Added Sugars": "0 g",
+    "Sodium": "95 mg",
+    "Protein": "15 g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "250 mg",
+    "Potassium": "290 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12415018000317"
+  }
  },
  {
   "title": "Cow Milk",
@@ -243,7 +321,33 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40177174-6_1-hatsun-cow-milk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Cow Milk is pasteurised and packed under hygienic conditions with nothing added or taken away. It is neither standardised nor homogenised and therefore, it leaves a creamy layer on top after boiling.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "1/2 cup (100 ml)",
+    "Calories": "70 kcal",
+    "Total Fat": "4 g",
+    "Saturated Fat": "2.5 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "15 mg",
+    "Sodium": "40 mg",
+    "Total Carbohydrate": "5 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "5 g",
+    "Added Sugars": "0 g",
+    "Protein": "3 g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "110 mg",
+    "Iron": "0 mg",
+    "Potassium": "130 mg"
+   },
+   "storageInstructions": "*Store continuously under refrigeration below 5°C until use by date",
+   "manufacturerName": "HATSUN AGRO PRODUCTLTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014042001375"
+  }
  },
  {
   "title": "Unsalted Cooking Butter",
@@ -259,7 +363,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378_3-hatsun-butter-cooking.jpg"
-    }
+    },
+    "barcode": "8904057395534"
    },
    {
     "title": "500g",
@@ -297,7 +402,33 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000378-8_1-hatsun-butter-cooking.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the rich, creamy goodness of Hatsun Pasteurised Cooking Butter, a versatile and high-quality butter that adds depth and authentic flavour to your culinary creations. Crafted with the finest ingredients, this unsalted butter offers a smooth texture and a delightful taste that elevates any dish, whether you're frying, sautéing or baking. The pasteurisation process preserves the natural flavours, ensuring a fresh and delicious result every time, just like homemade butter. Bring home Hatsun Pasteurised Cooking Butter and elevate your cooking to new heights, enjoying the rich taste of real butter in all your favourite recipes.",
+   "ingredients": "Milk Fat , Not Less Than 80 %",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1 Tbsp (15 g)",
+    "Calories": "108 kcal",
+    "Total Fat": "12 g",
+    "Saturated Fat": "8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "31 mg",
+    "Sodium": "2 mg",
+    "Total Carbohydrate": "0 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Protein": "0 g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "4 mg",
+    "Iron": "0 mg",
+    "Potassium": "4 mg"
+   },
+   "storageInstructions": "*Store at 4°C or below under hygienic conditions",
+   "manufacturerName": "HATSUN AGRO PRODUCT LIMITED",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Table Butter Chiplets",
@@ -313,7 +444,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468_2-hatsun-table-butter-chiplets.jpg"
-    }
+    },
+    "barcode": "8904057396203"
    }
   ],
   "images": [
@@ -342,7 +474,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358468-8_2-hatsun-table-butter-chiplets.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Made from cream churned from farm-fresh milk, Hatsun Butter is ideal for a wide range of dishes, from butter dosa to traditional sweets. Conveniently packed as Table Butter Chiplets, it adds rich flavour and smooth texture to every meal.",
+   "ingredients": "Milk Fat: 80% Minimum, Milk Solids, Iodised Salt & Starter Culture\nAllergen Information: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "722 kcal",
+    "Protein": "0.6 g",
+    "Total Carbohydrate": "0 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "80 g",
+    "Saturated Fat": "51 g",
+    "Cholesterol": "207 mg",
+    "Sodium": "820 mg"
+   },
+   "storageInstructions": "For best results, store continuously under refrigeration below 4 degree C until ?UBD'.",
+   "manufacturerName": "Hatsun Agro Product Ltd & Plot No.14",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Breakfast Cream",
@@ -378,7 +530,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339222-5_1-hatsun-hatsun-breakfast-cream.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Breakfast Cream with 30% milk fat is a rich and creamy delight, perfect for enhancing your morning meals. Made from high-quality milk, it has a smooth texture and a luscious taste that pairs well with a variety of dishes. Whether you're spreading it on toast, adding it to coffee, or using it in desserts, this cream brings a deliciously indulgent touch. Its thick consistency makes it ideal for both sweet and savoury recipes. A great addition to any kitchen, Hatsun Breakfast Cream elevates your breakfasts with its fresh and natural flavour, making every bite irresistibly creamy and satisfying.",
+   "ingredients": "Milk Solids, Water, Stabilisers (471, 401)",
+   "nutritionalInfo": {
+    "Serving Size": "25 g",
+    "Energy": "87 kcal",
+    "Protein": "0.8 g",
+    "Total Carbohydrate": "1.2 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "1.2 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "8.7 g",
+    "Saturated Fat": "6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "28 mg",
+    "Sodium": "7 mg",
+    "Calcium": "17 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fresh Cream",
@@ -414,7 +588,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358469-5_2-hatsun-fresh-cream.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Fresh Cream, made from cow's milk, brings rich flavour and creamy smoothness to recipes, be it gravies, curries or sweet dishes. It comes in a convenient resealable pouch that ensures freshness and easy use.",
+   "ingredients": "Milk Solids. Emulsifiers (INS 471, INS 401)\nAllergen Information: Contains Milk",
+   "storageInstructions": "Do not buy if the pack is puffed or leaking. Once opened, close cap tightly, refrigerate and use within 3 days or 'UBD', whichever is earlier. For best results, store continuously under refrigeration below 4 c until UBD.",
+   "manufacturerName": "Hatsun Agro Product Ltd & Plot No.14",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Blueberry Greek Yoghurt",
@@ -430,7 +612,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123_1-hatsun-blueberry-greek-yoghurt.jpg"
-    }
+    },
+    "barcode": "8904057396500"
    }
   ],
   "images": [
@@ -459,7 +642,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372123-8_1-hatsun-blueberry-greek-yoghurt.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Blueberry Greek Yoghurt combines the rich, creamy texture of Greek yoghurt with the fruity taste of blueberries. Made with milk solids, active cultures and a blueberry preparation, it offers a smooth consistency and refreshing flavour. Enjoy it as a snack, breakfast option or dessert, chilled for the best taste.",
+   "ingredients": "Milk Solids, Blueberry Preparation (15%) [Sugar, Blueberry Puree, Stabilizers (INS 1422, INS 440), Natural Flavour, Colour (INS 163(ii))], Stabilizer (INS 1422), Active Cultures.\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "112.5",
+    "Protein (g)": "7",
+    "Total Carbohydrate (g)": "11",
+    "Dietary Fiber (g)": "0",
+    "Total Sugars (g)": "10.5",
+    "Added Sugars (g)": "8",
+    "Total Fat (g)": "4.5",
+    "Saturated Fat (g)": "2.8",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "17",
+    "Sodium (mg)": "58",
+    "Calcium (mg)": "151"
+   },
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fig & Dates Greek Yoghurt",
@@ -495,7 +698,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339221-5_1-hatsun-hatsun-greek-yoghurt-fig-and-dates.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and creamy taste of Greek Yoghurt Fig & Dates, made with no artificial flavours, colours, or preservatives. This delicious yoghurt combines the natural sweetness of figs and dates with the velvety smoothness of authentic Greek yoghurt. Perfect for a wholesome breakfast, a midday snack, or a guilt-free dessert, it offers a delightful balance of flavour and texture. Enjoy it on its own or pair it with granola and nuts for an extra crunch. Packed with natural goodness, this yoghurt is a truly satisfying treat for those who love pure, simple, and delicious ingredients.",
+   "ingredients": "Milk Solids, Dates & Fig Preparation (25%), (Water, Dates Syrup, Fig Pieces, Sugar, Natural Flavours, Stabilizers (1442, 440), Colour (150a)) And Active Cultures.\nAllergen Information: Contains Milk",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Servings per Pack": "1",
+    "Energy": "154 kcal (8% RDA)",
+    "Protein": "6 g (11% RDA)",
+    "Total Carbohydrate": "22 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "20 g",
+    "Added Sugars": "15 g (30% RDA)",
+    "Total Fat": "4.6 g (7% RDA)",
+    "Saturated Fat": "3 g (13% RDA)",
+    "Trans Fat": "0 g (0% RDA)",
+    "Cholesterol": "18 mg",
+    "Sodium": "40 mg (2% RDA)",
+    "Calcium": "227 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Red Cherry Greek Yoghurt",
@@ -531,7 +757,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339218-5_1-hatsun-hatsun-greek-yoghurt-red-cherry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Greek Yoghurt - Red Cherry is a thick, creamy delight infused with the bold sweetness of ripe red cherries. Made from high-quality ingredients, this rich and satisfying yoghurt offers a perfect balance of smooth texture and fruity flavour. The luscious taste of red cherries adds a refreshing twist, making it an indulgent yet wholesome treat. Enjoy it as a quick snack, a delicious dessert, or pair it with granola for a crunchy contrast. With its velvety consistency and natural goodness, Hatsun Greek Yoghurt - Red Cherry is a delightful choice for those who love creamy and fruity indulgence.",
+   "ingredients": "Milk Solids, Red Cherry Preparation (25%) [Sugar, Cherry Pieces, Elderberry Juice Concentrate, Water, Natural Flavours, Stabilisers (INS 1442, INS 440)], Active Cultures.\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy": "157 kcal (8% RDA)",
+    "Protein": "6 g (11% RDA)",
+    "Total Carbohydrate": "23 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "22 g",
+    "Added Sugars": "18 g (36% RDA)",
+    "Total Fat": "4.6 g (7% RDA)",
+    "Saturated Fat": "3 g (13% RDA)",
+    "Trans Fat": "0 g (0% RDA)",
+    "Cholesterol": "18 mg",
+    "Sodium": "34 mg (2% RDA)",
+    "Calcium": "208 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mango Layered Yoghurt",
@@ -547,7 +794,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124_1-hatsun-mango-layered-yoghurt.jpg"
-    }
+    },
+    "barcode": "8904057396487"
    }
   ],
   "images": [
@@ -576,7 +824,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372124-8_1-hatsun-mango-layered-yoghurt.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Mango Layered Yoghurt combines smooth, creamy yoghurt with a delicious layer of mango preparation for a refreshing and fruity experience. Made with milk solids and active cultures, it offers a rich texture and balanced flavour. Enjoy it chilled as a convenient snack, breakfast option or light dessert at any time of the day.",
+   "ingredients": "Milk Solids, Mango Fruit Preparation (25%) [Alphonso Mango, Sugar, Water, Stabilizers (INS 440, INS 412, INS 410), Acidity Regulator (INS 330), Natural Flavour], Sugar, Stabilizer (INS 1422), Active Cultures.\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "94",
+    "Protein (g)": "3.5",
+    "Total Carbohydrate (g)": "15.5",
+    "Dietary Fiber (g)": "0",
+    "Total Sugars (g)": "13",
+    "Added Sugars (g)": "10",
+    "Total Fat (g)": "2",
+    "Saturated Fat (g)": "1.2",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "8",
+    "Sodium (mg)": "44",
+    "Calcium (mg)": "114"
+   },
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixed Berry Fruit Yoghurt",
@@ -612,7 +880,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339217-5_1-hatsun-hatsun-fruit-yoghurt-mixed-berry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Fruit Yoghurt - Mixed Berry is a delightful blend of smooth, creamy yoghurt swirled with a luscious mix of berries. Bursting with tangy and sweet flavours, it offers a refreshing and indulgent taste in every spoonful. The rich combination of berries adds a natural fruitiness, perfectly complementing the velvety texture of the yoghurt. Ideal as a quick snack, a light dessert, or a nutritious addition to breakfast, this yoghurt is both satisfying and delicious. Enjoy it chilled for a refreshing treat that's packed with flavour and goodness, making every bite a delightful fusion of creamy and fruity bliss.",
+   "ingredients": "Milk Solids, Mixed Berry Preparation (13.5%) [Sugar, Water, Strawberries, Blueberries, Raspberry Juice Concentrate, Black Carrot Concentrate, Colour (INS 163(Ii)), Stabiliser (INS 440), Acidity Regulator (INS 330), Natural Flavours], Sugar, Stabiliser (INS 1422), Active Cultures.\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy": "137 kcal (7% RDA)",
+    "Protein": "3 g (5.5% RDA)",
+    "Total Carbohydrate": "24 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "22 g",
+    "Added Sugars": "16 g (32% RDA)",
+    "Total Fat": "3.2 g (5% RDA)",
+    "Saturated Fat": "2 g (9% RDA)",
+    "Trans Fat": "0 g (0% RDA)",
+    "Cholesterol": "12 mg",
+    "Sodium": "42 mg (2% RDA)",
+    "Calcium": "120 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rose & Lychee Fruit Yoghurt",
@@ -648,7 +937,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339216-5_1-hatsun-hatsun-fruit-yoghurt-rose-and-lychee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Fruit Yoghurt - Rose & Lychee is a delightful fusion of floral and fruity flavours in a smooth, creamy yoghurt. The delicate aroma of rose perfectly complements the sweet, juicy taste of lychee, creating a uniquely refreshing treat. With its velvety texture and exotic flavour, this yoghurt is perfect for a light snack or an indulgent dessert. Enjoy it on its own or pair it with granola for added crunch. Each spoonful offers a delicious balance of sweetness and creaminess, making it a truly satisfying choice for those who love a touch of elegance in their everyday treats.",
+   "ingredients": "Milk Solids, Rose–Lychee Preparation (13.5%) [Sugar, Lychee Pulp, Gulkand, Water, Apple Juice Concentrate, Stabiliser (INS 440), Acidity Regulator (INS 330), Black Carrot Concentrate, Colour (INS 162), Natural Flavours], Sugar, Stabiliser (INS 1422), Active Cultures. Allergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy": "140 kcal (7% RDA)",
+    "Protein": "3 g (5.5% RDA)",
+    "Total Carbohydrate": "25 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "23 g",
+    "Added Sugars": "16 g (32% RDA)",
+    "Total Fat": "3.2 g (5% RDA)",
+    "Saturated Fat": "2 g (9% RDA)",
+    "Trans Fat": "0 g (0% RDA)",
+    "Cholesterol": "12 mg",
+    "Sodium": "43 mg (2% RDA)",
+    "Calcium": "130 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mango Passion Fruit Yoghurt Sip",
@@ -681,7 +991,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339219-4_1-hatsun-hatsun-yoghurt-sip-mango-passion-fruit.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Hatsun Yoghurt Sip - Mango Passion Fruit is a refreshing and delicious drink that blends the goodness of yoghurt with the tropical flavours of mango and passion fruit. A tropical blend of juicy mango and tangy passion fruit in a smooth yogurt drink, it offers a delightful balance of flavours. Smooth, creamy, and naturally refreshing, this yoghurt-based beverage is perfect for a quick, on-the-go treat. Packed with the richness of dairy, it's a tasty and nourishing choice for any time of the day. Enjoy it chilled for a revitalising sip that keeps you energised and satisfied with every drop.",
+   "ingredients": "Milk Solids, Mango–Passion Fruit Preparation (10.5%) [Water, Sugar, Mango Pulp Concentrate, Passion Fruit Juice Concentrate, Natural Flavours, Colours (INS 160b(Ii), INS 100(I)), Stabiliser (INS 440)], Sugar, Stabiliser (INS 1422), Active Cultures.",
+   "nutritionalInfo": {
+    "Energy": "113 kcal",
+    "Protein": "3.3 g",
+    "Total Carbohydrate": "18 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "16 g",
+    "Added Sugars": "11 g",
+    "Total Fat": "3.2 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "12 mg",
+    "Sodium": "45 mg",
+    "Calcium": "130 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Blueberry Yogurt Shake",
@@ -711,7 +1042,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339215-3_1-hatsun-hatsun-yogurt-drink-blueberry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the rich and fruity taste of Hatsun Yogurt Shake Blueberry, a delicious blend of creamy yogurt and the goodness of juicy blueberries. This smooth and refreshing shake offers a perfect balance of sweetness and tanginess, making it a delightful treat for any time of the day. Packed with probiotics, it supports digestion and overall wellness while keeping you energised. The convenient sip-ready pack makes it easy to enjoy on the go. Whether as a nutritious snack or nutritious refreshment, Hatsun Yogurt Shake Blueberry is the perfect way to indulge in a burst of berry goodness.",
+   "ingredients": "Milk Solids, Sugar, Blueberry Puree (2.2%), Blueberry Juice Concentrate, Starter Culture, Natural Flavour. Allergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Serving Size": "175 ml",
+    "Servings per Pack": "1",
+    "Energy": "193 kcal",
+    "Protein": "5.3 g",
+    "Total Carbohydrate": "35 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "35 g",
+    "Added Sugars": "24.5 g",
+    "Total Fat": "3.5 g",
+    "Saturated Fat": "2.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "8.8 mg",
+    "Sodium": "78.8 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Strawberry Yogurt Shake",
@@ -741,6 +1094,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339214-3_1-hatsun-hatsun-yogurt-drink-strawberry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and delightful taste of Hatsun Yogurt Shake Strawberry, a perfect fusion of creamy yogurt and luscious strawberry flavour. Crafted with care by the renowned Hatsun brand, this probiotic-rich yogurt drink offers a delightful balance of sweetness and tanginess, making it an ideal on-the-go beverage. Packed with the goodness of real yogurt, it's rich in probiotics to aid digestion while keeping you energised. The convenient sip-ready pack allows you to savour this smooth, flavourful, and nourishing delight anytime, anywhere - whether as a quick snack or a healthy treat. Enjoy the refreshing taste and creamy texture of this yogurt shake, infused with the natural goodness of real strawberry flavour and free from artificial additives. A delightful way to indulge in fruity freshness and support your overall well-being.",
+   "ingredients": "Milk Solids, Sugar, Strawberry Juice Concentrate (0.8%), Starter Culture, Colour (162), Natural Flavour.",
+   "nutritionalInfo": {
+    "Serving Size": "175 ml",
+    "Energy": "197 kcal",
+    "Protein": "5.6 g",
+    "Total Carbohydrate": "35.9 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugars": "35.9 g",
+    "Added Sugars": "21.9 g",
+    "Total Fat": "3.5 g",
+    "Saturated Fat": "2.8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "8.8 mg",
+    "Sodium": "78.8 mg"
+   },
+   "manufacturerName": "Hatsun Agro Product Limited Dharmapuri",
+   "fssaiLicense": "10014042001375",
+   "countryOfOrigin": "India"
+  }
  }
 ]
