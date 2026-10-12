@@ -1,0 +1,37 @@
+[
+ {
+  "title": "Kerala Pappadam",
+  "handle": "kerala-pappadam",
+  "vendor": "Jimmy's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221702_1-jimmys-kerala-pappadam-handmade.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221702_1-jimmys-kerala-pappadam-handmade.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221702-2_1-jimmys-kerala-pappadam-handmade.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221702-3_1-jimmys-kerala-pappadam-handmade.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221702-4_1-jimmys-kerala-pappadam-handmade.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221702-5_1-jimmys-kerala-pappadam-handmade.jpg"
+   }
+  ]
+ }
+]

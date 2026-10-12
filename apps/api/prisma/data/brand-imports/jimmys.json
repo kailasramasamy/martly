@@ -1,0 +1,22 @@
+{
+  "brand": "Jimmy's",
+  "manufacturer": "Jimmy's",
+  "feed": "jimmys-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/jimmys/logo-6c4ce3c8.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1E7A3C",
+  "namePrefix": "Jimmy's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Kerala\\ Pappadam$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    }
+  ]
+}
