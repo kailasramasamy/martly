@@ -1,0 +1,137 @@
+[
+ {
+  "title": "Mango Drink",
+  "handle": "mango-drink",
+  "vendor": "Slice (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265884_12-slice-thickest-mango-drink.jpg"
+    }
+   },
+   {
+    "title": "1.2L",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265879_17-slice-thickest-mango-drink.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339533_2-slice-mango-fruit-beverage.jpg"
+    }
+   },
+   {
+    "title": "1.75L",
+    "price": "94",
+    "compare_at_price": "94",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189384_6-slice-thickest-mango-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265884_12-slice-thickest-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265884-2_7-slice-thickest-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265884-3_7-slice-thickest-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265884-4_6-slice-thickest-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265884-5_6-slice-thickest-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265879_17-slice-thickest-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339533_2-slice-mango-fruit-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189384_6-slice-thickest-mango-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Gold Mango Fruit Drink",
+  "handle": "gold-mango-fruit-drink",
+  "vendor": "Slice (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671_1-slice-gold-mango-fruit-drink.jpg"
+    }
+   },
+   {
+    "title": "1.2L",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374672_1-slice-gold-mango-fruit-drink.jpg"
+    }
+   },
+   {
+    "title": "1.75L",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374670_1-slice-gold-mango-fruit-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671_1-slice-gold-mango-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671-2_1-slice-gold-mango-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671-3_1-slice-gold-mango-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671-4_1-slice-gold-mango-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671-5_1-slice-gold-mango-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671-6_1-slice-gold-mango-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374671-7_1-slice-gold-mango-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374672_1-slice-gold-mango-fruit-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
