@@ -1,0 +1,22 @@
+{
+  "brand": "Just Organik",
+  "manufacturer": "Just Organik",
+  "feed": "just-organik-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/just-organik/logo-6e25258e.png",
+  "themeColor": "#0B6B3A",
+  "themeColorSecondary": "#E8501E",
+  "namePrefix": "Just Organik ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Organic\\ Raw\\ Sugar\\ \\(Desi\\ Khand\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    }
+  ]
+}

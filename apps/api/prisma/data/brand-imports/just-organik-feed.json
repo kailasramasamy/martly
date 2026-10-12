@@ -1,0 +1,43 @@
+[
+ {
+  "title": "Organic Raw Sugar (Desi Khand)",
+  "handle": "organic-raw-sugar-desi-khand",
+  "vendor": "Just Organik",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40065015_8-just-organik-sugar-raw-and-unrefined.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065015_8-just-organik-sugar-raw-and-unrefined.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065015-2_6-just-organik-sugar-raw-and-unrefined.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065015-3_6-just-organik-sugar-raw-and-unrefined.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065015-4_4-just-organik-sugar-raw-and-unrefined.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065015-5_4-just-organik-sugar-raw-and-unrefined.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065015-6_1-just-organik-sugar-raw-and-unrefined.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40065015-7_1-just-organik-sugar-raw-and-unrefined.jpg"
+   }
+  ]
+ }
+]
