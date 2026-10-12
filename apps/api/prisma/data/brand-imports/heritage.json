@@ -1,0 +1,753 @@
+{
+  "brand": "Heritage",
+  "manufacturer": "Heritage Foods Limited",
+  "feed": "heritage-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/heritage/logo-a494f401.png",
+  "themeColor": "#349A3A",
+  "themeColorSecondary": "#E21B24",
+  "namePrefix": "Heritage ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Heritage Curd": "Total Curd",
+    "Heritage Ghee": "Cow Ghee Jar"
+  },
+  "rules": [
+    {
+      "match": "^Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Special\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Nourish\\+\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Standardised\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^A2\\ Full\\ Cream\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "A2 Milk"
+      ]
+    },
+    {
+      "match": "^Gold\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Super\\ Gold\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Sampurna\\ Cow\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Sampurna\\ A2\\ Buffalo\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "A2 Milk"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cow\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Organic Milk"
+      ]
+    },
+    {
+      "match": "^Organic\\ Buffalo\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Organic Milk"
+      ]
+    },
+    {
+      "match": "^Organic\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Organic Milk"
+      ]
+    },
+    {
+      "match": "^Farm\\ Fresh\\ Toned\\ UHT\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "UHT / Long Life Milk"
+      ]
+    },
+    {
+      "match": "^Lite\\ Fit\\ UHT\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "UHT / Long Life Milk"
+      ]
+    },
+    {
+      "match": "^Total\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Total\\ Curd\\ Pouch$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Creamilicious\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Nourish\\+\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Sampurna\\ A2\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Probiotic\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Probiotic Yogurt"
+      ]
+    },
+    {
+      "match": "^Plain\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Livo\\ Blueberry\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Livo\\ Mango\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Livo\\ Strawberry\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^A\\-One\\ Plain\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^A\\-One\\ Spiced\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Spiced\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Real\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Classic\\ Sweet\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Classic\\ Mango\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Lassi\\ Cup$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Mango\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Badam\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Mango\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Livo\\ Badam\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Livo\\ Pista\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Livo\\ Strawberry\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Premium\\ Badam\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ \\&\\ Caramel\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Cafe\\ Latte\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Cafe\\ Latte\\ Milk\\ with\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Cafe\\ Mocha\\ Milk\\ with\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Cafe\\ Latte\\ Coffee\\ \\&\\ Chill\\ Can$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Cooking\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Pasteurized\\ Table\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Cubes$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Cream$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Nourish\\ High\\ Protein\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Sampurna\\ A2\\ Creamy\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Malai Paneer"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee\\ Spout\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Pure\\ Danedar\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Buffalo\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Buffalo Ghee"
+      ]
+    },
+    {
+      "match": "^Doodh\\ Peda$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Truly\\ Good\\ Ghee\\ Besan\\ Laddu$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Truly\\ Good\\ Ghee\\ Jowar\\ Laddu$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Truly\\ Good\\ Ghee\\ Millet\\ Laddu$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Gulab\\ Jamun\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    },
+    {
+      "match": "^Rasgulla\\ Tin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Afghan\\ Delight\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Anjeer\\ Badam\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Black\\ Currant\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Butterscotch\\ Bliss\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Butterscotch\\ Frozen\\ Dessert$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Chocolate\\ Frozen\\ Dessert$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Vanilla\\ Frozen\\ Dessert$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Choco\\ Fruit\\ \\&\\ Nut\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Mango\\ Cream\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Roasted\\ Cashew\\ Delight\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Cotton\\ Candy\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Cotton\\ Candy\\ Premium\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Sitaphal\\ Premium\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Rajbhog\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Rich\\ Almond\\ Crunch\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Swiss\\ Choco\\ Fantasy\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Rich\\ Belgian\\ Chocolate\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Rich\\ Pista\\ Delight\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Rich\\ Vanilla\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Tutti\\-Frutti\\ Fusion\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Vanilla\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alpenvie\\ Kohinoor\\ Rabri\\ Kulfi\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Kulfi"
+      ]
+    }
+  ]
+}
