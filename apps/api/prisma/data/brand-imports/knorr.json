@@ -1,0 +1,249 @@
+{
+  "brand": "Knorr (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "knorr-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/knorr/logo-afff24d5.png",
+  "themeColor": "#3B8338",
+  "themeColorSecondary": "#FFD500",
+  "namePrefix": "Knorr ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Knorr Classic Tomato Soup": "Thick Tomato Soup",
+    "Knorr Chinese Hot & Sour Veg Soup": "Hot & Sour Vegetable Soup"
+  },
+  "rules": [
+    {
+      "match": "^Thick\\ Tomato\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Hot\\ \\&\\ Sour\\ Vegetable\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Vegetable\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Corn\\ Vegetable\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Thai\\ Vegetable\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Delite\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Corn\\ Chicken\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^International\\ Italian\\ Mushroom\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^International\\ Cream\\ of\\ Broccoli\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^International\\ Hong\\ Kong\\ Manchow\\ Noodle\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^International\\ Shanghai\\ Hot\\ \\&\\ Sour\\ Chicken\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^International\\ Mexican\\ Tomato\\ Corn\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^International\\ Spicy\\ Korean\\ Kimchi\\ Soup$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Soup"
+      ]
+    },
+    {
+      "match": "^Soupy\\ Noodles\\ Mast\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Italian\\ Noodles\\ Cheese\\ \\&\\ Herbs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^K\\-Pot\\ Korean\\ Ramen\\ Spicy\\ Kimchi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^K\\-Pot\\ Korean\\ Ramen\\ Spicy\\ Jjajangmyeon$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Korean\\ Ramen\\ Spicy\\ Gochujang\\ Chicken$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Schezwan\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Pizza\\ \\&\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Dark\\ Soya\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Soy Sauce"
+      ]
+    },
+    {
+      "match": "^Red\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Green\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Korean\\ Gochujang\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Green\\ Thai\\ Curry\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Red\\ Thai\\ Curry\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Chinese\\ Chilli\\ Gravy\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Manchurian\\ Gravy\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Cook Gravies"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Cubes$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    }
+  ]
+}
