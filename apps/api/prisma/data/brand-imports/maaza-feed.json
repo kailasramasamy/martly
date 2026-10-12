@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265690_16-maaza-mango-drink.jpg"
-    }
+    },
+    "barcode": "8901764092206"
    },
    {
     "title": "125ml",
@@ -78,7 +79,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265690-8_3-maaza-mango-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Maaza is India's No.1 mango drink, loved for its rich, indulgent taste of real mangoes. Launched in 1976 and now celebrating 50 years of mango delight, Maaza is made from carefully chosen mangoes to deliver a rich, authentic flavour that generations have loved. One sip and you'll know why Maaza is 'mango in a bottle' — a toast to your everyday wins.",
+   "nutritionalInfo": {
+    "Energy": "63 kcal",
+    "Carbohydrates": "15.8 g",
+    "Total Sugars": "14.9 g",
+    "Added Sugars": "13.3 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "21.9 mg"
+   },
+   "manufacturerName": "HINDUSTAN COCA-COLA BEVERAGES PVT. LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aam Panna Fruit Drink",
@@ -111,6 +126,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251623-4_2-maaza-aam-panna-refreshing-fruit-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Maaza, in India, is synonymous with the very spirit of mangoes. Enjoy a delicious, sweet, and delightful mango experience with a chilled glass of Maaza. Maaza Aampanna offers a refreshingly chatapata experience of authentic Aampanna; made from Real green mangoes along with mint leaves, black salt and cumin. The drink is universally loved for its taste, colour, thickness and wholesome properties.",
+   "ingredients": "Water, Sugar, Green Mango Pulp (6.3%), Mango Juice (4.3%) (Reconstituted from Mango Concentrate), Acidity Regulator (330), Black Salt (0.13%), Stabilizer (466), Iodized Salt, Antioxidant (300), Colours (141(ii)), 160a(ii)), Mixed Spice Flavours (Natural and Nature Identical Substances). Total Mango Pulp & Juice Content in the Beverage is 10.6%",
+   "nutritionalInfo": {
+    "Energy": "57 kcal,",
+    "Carbohydrate": "14.3g,",
+    "Total Sugars": "14.2g",
+    "Protein": "0g,",
+    "Fat": "0g,",
+    "Sodium": "71.5mg"
+   },
+   "usageInstructions": "1. It can be served with snacks.\n2. Also an ideal gifting option.",
+   "manufacturerName": "Coca-Cola India Pvt Ltd. Survey No. 284 P",
+   "countryOfOrigin": "India"
+  }
  }
 ]
