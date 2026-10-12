@@ -1,0 +1,376 @@
+{
+  "brand": "Maggi (Nestle)",
+  "manufacturer": "Nestlé India Ltd.",
+  "feed": "maggi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/maggi/logo-d5b8a5e2.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Maggi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Maggi Cuppa Mania - Yo Masala": "Masala Cuppa Noodles"
+  },
+  "rules": [
+    {
+      "match": "^2\\-Minute\\ Instant\\ Noodles\\ \\-\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^2\\-Minute\\ Special\\ Chicken\\ 65\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^2\\-Minute\\ Noodles\\ \\-\\ No\\ Onion\\ \\&\\ Garlic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^2\\-Minute\\ Veggie\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Maha\\ 2\\-Minute\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Double\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Fusian\\ Bangkok\\ Sweet\\ Chilli\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Fusian\\ Hong\\ Kong\\ Spicy\\ Garlic\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Happy\\ Bowl\\ Twisty\\ Tomato\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Happy\\ Bowl\\ Yummy\\ Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Korean\\ BBQ\\ Chicken\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Korean\\ BBQ\\ Veg\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Cheesy\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Garlic\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Green\\ Chilli\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Manchurian\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Pepper\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Nutri\\-Licious\\ Veg\\ Atta\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Nutri\\-Licious\\ Masala\\ Veg\\ Atta\\ Noodles\\ with\\ Spinach$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Nutri\\-Licious\\ Herby\\ Cheesy\\ Veg\\ Atta\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Nutri\\-Licious\\ Tangy\\ Tomato\\ Veg\\ Atta\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Nutri\\-Licious\\ Masala\\ Oats\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Nutri\\-Licious\\ Chatpata\\ Besan\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Masala\\ Cuppa\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Chilly\\ Chow\\ Cuppa\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Cheesy\\ Cuppa\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Garlic\\ Cuppa\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Manchurian\\ Cuppa\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Korean\\ Spicy\\ Cheesy\\ Cup\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Cup Noodles"
+      ]
+    },
+    {
+      "match": "^Pazzta\\ Cheese\\ Macaroni$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Pazzta\\ Cheesy\\ Tomato\\ Twist$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Pazzta\\ Masala\\ Penne$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Pazzta\\ Mushroom\\ Penne$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Rich\\ Tomato\\ Ketchup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Rich\\ Tomato\\ Sauce\\ \\-\\ No\\ Onion\\ \\&\\ Garlic$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Hot\\ \\&\\ Sweet\\ Tomato\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Style\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Imli\\ Pichkoo\\ Tamarind\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Milk$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Coconut Milk & Cream"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Coconut\\ Milk\\ Powder$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Coconut Milk & Cream"
+      ]
+    },
+    {
+      "match": "^Magic\\ Cubes\\ \\-\\ Chicken$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Magic\\ Cubes\\ \\-\\ Vegetarian$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Masala\\-ae\\-Magic$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Rich\\ Tomato\\ Ketchup\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    }
+  ]
+}
