@@ -1,0 +1,149 @@
+[
+ {
+  "title": "ORS Powder",
+  "handle": "ors-powder",
+  "vendor": "Electral (FDC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "21.8g",
+    "price": "22",
+    "compare_at_price": "22",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334274_1-electral-ors-powder-oral-rehydration-salts.jpg"
+    },
+    "barcode": "8902346012353"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334274_1-electral-ors-powder-oral-rehydration-salts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334274-2_1-electral-ors-powder-oral-rehydration-salts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334274-3_1-electral-ors-powder-oral-rehydration-salts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Electral Powder / ORS for Replenishing Body Fluids & Electrolytes / For Stomach Care is an oral rehydration salt that helps restore lost fluids and minerals in the body due to an illness or injury. It is a source of the body's electrolytes, water, and calories. The powder is packaged in a durable PET sachet to ensure product stability. It is manufactured in state-of-the-art plants approved by WHO and UNICEF with stringent quality standards.",
+   "usageInstructions": "1. Dissolve entire contents of the sachet in one litre of drinking water.\n2. Daily dose should be equivalent to patient's fluid requirement for maintenance and replacement of losses.",
+   "storageInstructions": "*Store protected from moisture",
+   "manufacturerName": "FDC Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ready to Drink ORS - Apple",
+  "handle": "ready-to-drink-ors-apple",
+  "vendor": "Electral (FDC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "31",
+    "compare_at_price": "31",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200013773_3-electral-rtd-liquid-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200013773_3-electral-rtd-liquid-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200013773-2_2-electral-rtd-liquid-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200013773-3_2-electral-rtd-liquid-apple.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "is a ready-to-drink-based ORS (oral rehydration salt) formula. Oral rehydration salt combines dextrose and several essential electrolytes (sodium chloride, potassium chloride, sodium citrate). Electoral RTD restores body fluids and electrolytes lost due to dehydration during diarrhoea, vomiting, muscle cramping, and exertional heat illness while exercising in hot or humid weather.",
+   "manufacturerName": "FDC Ltd",
+   "countryOfOrigin": "Country of Origin",
+   "ingredients": "Sodium Chloride IP\nSodium Citrate IP\nPotassium IP\nDextrose anhydrous IP"
+  }
+ },
+ {
+  "title": "Ready to Drink ORS - Mango",
+  "handle": "ready-to-drink-ors-mango",
+  "vendor": "Electral (FDC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "31",
+    "compare_at_price": "31",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000217_3-electral-rtd-liquid-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000217_3-electral-rtd-liquid-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000217-2_2-electral-rtd-liquid-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000217-3_2-electral-rtd-liquid-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000217-4_2-electral-rtd-liquid-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "manufacturerName": "FDC Ltd",
+   "countryOfOrigin": "Country of Origin"
+  }
+ },
+ {
+  "title": "Ready to Drink ORS - Orange",
+  "handle": "ready-to-drink-ors-orange",
+  "vendor": "Electral (FDC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "31",
+    "compare_at_price": "31",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000377_3-electral-rtd-liquid-orange.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000377_3-electral-rtd-liquid-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000377-2_2-electral-rtd-liquid-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000377-3_2-electral-rtd-liquid-orange.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "is a ready-to-drink-based ORS (oral rehydration salt) formula. Oral rehydration salt combines dextrose and several essential electrolytes (sodium chloride, potassium chloride, sodium citrate). Electoral RTD restores body fluids and electrolytes lost due to dehydration during diarrhoea, vomiting, muscle cramping, and exertional heat illness while exercising in hot or humid weather.",
+   "manufacturerName": "FDC Ltd",
+   "countryOfOrigin": "Country of Origin",
+   "ingredients": "Sodium Chloride IP\nSodium Citrate IP\nPotassium IP\nDextrose anhydrous IP"
+  }
+ }
+]

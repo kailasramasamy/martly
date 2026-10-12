@@ -1,0 +1,48 @@
+{
+  "brand": "Electral (FDC)",
+  "manufacturer": "FDC Limited",
+  "feed": "electral-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/electral/logo-d076d217.png",
+  "themeColor": "#1E9A4B",
+  "themeColorSecondary": "#231F20",
+  "namePrefix": "Electral ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Electral ORS Powder - Orange": "ORS Powder"
+  },
+  "rules": [
+    {
+      "match": "^ORS\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ ORS\\ \\-\\ Apple$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ ORS\\ \\-\\ Mango$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Ready\\ to\\ Drink\\ ORS\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    }
+  ]
+}
