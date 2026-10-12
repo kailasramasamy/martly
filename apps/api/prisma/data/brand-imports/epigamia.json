@@ -1,0 +1,584 @@
+{
+  "brand": "Epigamia",
+  "manufacturer": "Drums Food International Pvt. Ltd.",
+  "feed": "epigamia-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/epigamia/logo-03ec2520.png",
+  "themeColor": "#231F20",
+  "themeColorSecondary": "#0076C0",
+  "namePrefix": "Epigamia ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Epigamia Greek Yogurt - Strawberry": "Strawberry Greek Yogurt"
+  },
+  "rules": [
+    {
+      "match": "^Natural\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Alphonso\\ Mango\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Zero\\ Fat\\ Mango\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Bean\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Wild\\ Raspberry\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Honey\\ Banana\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Rose\\ \\&\\ Lychee\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Greek\\ Yogurt\\ with\\ Oats\\ \\&\\ Seeds$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Natural\\ Greek\\ Yogurt\\ with\\ Granola$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Alphonso\\ Mango\\ Greek\\ Yogurt\\ with\\ Granola$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Greek\\ Yogurt\\ with\\ Granola$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^No\\ Added\\ Sugar\\ Blueberry\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^No\\ Added\\ Sugar\\ Mixed\\ Berry\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^No\\ Added\\ Sugar\\ Strawberry\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Natural\\ Protein\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Alphonso\\ Mango\\ Protein\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Mixed\\ Berries\\ Protein\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Strawberry\\ Protein\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Alphonso\\ Mango\\ Fruit\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Fruit\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Bean\\ Fruit\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Everyday\\ Lychee\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Everyday\\ Mango\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Everyday\\ Strawberry\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Squeezy\\ Blueberry,\\ Beetroot\\ \\&\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Squeezy\\ Mango,\\ Carrot\\ \\&\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Coconut\\ Milk\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Plant\\ Based\\ Coconut\\ Blend\\ with\\ Jaggery$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Plant\\ Based\\ Coconut\\ Blend\\ Alphonso\\ Mango$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Plant\\ Based\\ Coconut\\ Blend\\ Unsweetened$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Classic\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Lactose\\ Free\\ Probiotic\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Probiotic Yogurt"
+      ]
+    },
+    {
+      "match": "^Artisanal\\ Mishti\\ Doi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Mishti Doi"
+      ]
+    },
+    {
+      "match": "^Alphonso\\ Mango\\ Greek\\ Yogurt\\ Smoothie$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Greek\\ Yogurt\\ Smoothie$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Mulberry\\ Greek\\ Yogurt\\ Smoothie$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Greek\\ Yogurt\\ Smoothie$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Zero\\ Added\\ Sugar\\ Strawberry\\ Smoothie$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Refresh\\ Kesar\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Refresh\\ Mango\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Refresh\\ Strawberry\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Mint\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Spice\\ Blend\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Rose\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Belgian\\ Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Cookies\\ \\&\\ Cream\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Coffee\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Chocolate\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Cookies\\ \\&\\ Cream\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Coffee\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Vanilla\\ Caramel\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Turbo\\+\\ Chocolate\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Turbo\\+\\ Alphonso\\ Mango\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Turbo\\+\\ Malai\\ Kulfi\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Unsweetened\\ Almond\\ Beverage$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Almond\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Classic\\ Oat\\ Beverage$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Hazelnut\\ Pudding$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Pudding$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Rice\\ Kheer$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Cream\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Garlic\\ \\&\\ Herbs\\ Buttery\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Hazelnut\\ Ghee\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Caramel\\ Ghee\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Orange\\ Ghee\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Banana\\ Caramel\\ Ghee\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    }
+  ]
+}

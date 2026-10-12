@@ -1,0 +1,4318 @@
+[
+ {
+  "title": "Natural Greek Yogurt",
+  "handle": "natural-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546_7-epigamia-greek-yogurt-natural.jpg"
+    },
+    "barcode": "8906059635007"
+   },
+   {
+    "title": "400g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103424_6-epigamia-greek-yogurt-natural-low-fat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546_7-epigamia-greek-yogurt-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546-2_4-epigamia-greek-yogurt-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546-3_3-epigamia-greek-yogurt-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546-4_3-epigamia-greek-yogurt-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546-5_3-epigamia-greek-yogurt-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546-6_2-epigamia-greek-yogurt-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546-7_2-epigamia-greek-yogurt-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046546-8_1-epigamia-greek-yogurt-natural.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Natural Greek Yogurt is an unadulterated, creamy delight with a thick, velvety texture, offering more protein than any other yoghurt. Ideal for crafting delicious smoothie bowls, it pairs perfectly with a sprinkle of nuts or granola. Indulge in its pure taste and elevate your culinary creations with this nutritious, versatile ingredient, ideal for a health-conscious lifestyle.",
+   "nutritionalInfo": {
+    "Nutrition per": "85g",
+    "Serving Size": "85g",
+    "Energy": "55 kcal",
+    "Protein": "6.1 g",
+    "Carbohydrate": "4.0 g",
+    "Total Sugars": "4.0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "1.9 g",
+    "Saturated Fat": "1.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "6 mg",
+    "Sodium": "52 mg",
+    "Calcium": "168 mg",
+    "% RDA per Serve Energy": "3",
+    "% RDA per Serve Protein": "11",
+    "% RDA per Serve Carbohydrate": "3",
+    "% RDA per Serve Added Sugars": "0",
+    "% RDA per Serve Total Fat": "2.8",
+    "% RDA per Serve Saturated Fat": "5",
+    "% RDA per Serve Sodium": "3",
+    "% RDA per Serve Calcium": "17",
+    "RDA": "%RDA Values based on 2000kcal diet for adult men. (RDA as per ICMR NIN 2020)"
+   },
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Greek Yogurt",
+  "handle": "strawberry-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548_5-epigamia-greek-yogurt-strawberry.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218838_2-epigamia-greek-yogurt-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548_5-epigamia-greek-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548-2_3-epigamia-greek-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548-3_3-epigamia-greek-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548-4_3-epigamia-greek-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548-5_3-epigamia-greek-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548-6_2-epigamia-greek-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548-7_2-epigamia-greek-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046548-8_1-epigamia-greek-yogurt-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia, which means in Ancient Greek a way to formalie the relationship between different nations, offers Greek yoghurt that is one of the most authentic yoghurts advocating a healthy lifestyle with a delicious taste. The creamy, rich texture enables it to be nutritionally dense and satisfying. Yoghurt is a source of iodine, which helps to increase metabolism and promote weight loss. It is lower in lactose as well as carbohydrates, making it much easier to digest. Strawberry pulp and lemon juice concentrate are added to Greek Yoghurt to make the delicious Strawberry Greek Yogurt. All natural, no preservatives, no added colours or flavours, high protein, low fat. Pasteurised double-toned milk was used. Active live cultures S Thermophilus, L Bacillus Delbrueckii Subsp Bulgaricus added. Fruit Content: 9%; Contains added natural flavour (Strawberry); Contains permitted natural colours: Beetroot and black carrot concentrate.",
+   "nutritionalInfo": {
+    "Nutrition per": "85g",
+    "Serving Size": "85g",
+    "Energy": "77 kcal",
+    "Protein": "5.1 g",
+    "Carbohydrate": "11 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "7 g",
+    "Total Fat": "1.6 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "43 mg",
+    "Calcium": "140 mg"
+   },
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Alphonso Mango Greek Yogurt",
+  "handle": "alphonso-mango-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547_6-epigamia-greek-yogurt-alphonso-mango.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218839_2-epigamia-greek-yogurt-alphonso-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547_6-epigamia-greek-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547-2_5-epigamia-greek-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547-3_5-epigamia-greek-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547-4_4-epigamia-greek-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547-5_4-epigamia-greek-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547-6_2-epigamia-greek-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547-7_2-epigamia-greek-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046547-8_1-epigamia-greek-yogurt-alphonso-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia, in Ancient Greek, meant a way to formalise the relationship between different nations. Epigamia Greek Yogurt is one of the most authentic yoghurts, advocating a healthy lifestyle with a delicious taste. The creamy, rich texture enables it to be nutritionally dense and satisfying. Yoghurt is a source of iodine, which helps to increase metabolism and promote weight loss. It is lower in lactose as well as carbohydrates, making it much easier to digest. Alphonso Mango Pulp and lemon juice concentrate are added to Greek Yogurt to make the delicious Alphonso Mango Yogurt. No preservatives, no added colours or flavours, high protein, low fat. Pasteurised double-toned milk was used. Active live cultures S. Thermophilus, L. Bacillus Delbrueckii Subsp. Bulgaricus added. Fruit Content: 16%; Contains Alphonso Mango pulp.",
+   "nutritionalInfo": {
+    "Nutrition per": "85g",
+    "Serving Size": "85g",
+    "Energy": "82 kcal",
+    "Protein": "5 g",
+    "Carbohydrate": "12 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "7 g",
+    "Total Fat": "1.4 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "40 mg",
+    "Calcium": "129 mg",
+    "% RDA per Serve Energy": "4",
+    "% RDA per Serve Protein": "9",
+    "% RDA per Serve Carbohydrate": "9",
+    "% RDA per Serve Added Sugars": "13",
+    "% RDA per Serve Total Fat": "2",
+    "% RDA per Serve Saturated Fat": "4",
+    "% RDA per Serve Sodium": "2",
+    "% RDA per Serve Calcium": "13",
+    "RDA": "Values based on 2000kcal diet for adult men. (RDA as per ICMR NIN 2020)"
+   },
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Fat Mango Greek Yogurt",
+  "handle": "zero-fat-mango-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40191096_3-epigamia-greek-yogurt-alphonso-mango-no-added-sugar.jpg"
+    },
+    "barcode": "8906059636295"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191096_3-epigamia-greek-yogurt-alphonso-mango-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191096-2_3-epigamia-greek-yogurt-alphonso-mango-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191096-3_3-epigamia-greek-yogurt-alphonso-mango-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191096-4_3-epigamia-greek-yogurt-alphonso-mango-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191096-5_3-epigamia-greek-yogurt-alphonso-mango-no-added-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191096-6_3-epigamia-greek-yogurt-alphonso-mango-no-added-sugar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Of all the things the Greeks have given us, democracy and yogurt take the top spots. While the former is of no use when you're hungry, a cup of Epigamia Greek yogurt is just perfect. Epigamia was the term used for marriage between two city-states in ancient Greece. We have adopted this word to talk about our celebration of the marriage of health and taste in our products; healthy preservative-free snacks that help you find your happy balance! Our journey started with us wanting to contemporize tradition by creating innovative items that have classic ingredients with modern twists thrown in. We wanted to push boundaries to create something new but familiar. Our Greek yogurt is an example of this. It has all the healthy goodness of homemade dahi, with the added punch of high protein and zero preservatives. Taking forward this love we have for innovation, we daresay we've done it again!\nIntroducing the first no added sugar Greek yogurt in India. Made with real ingredients and no preservatives, this alphonso mango yogurt brings together the classic pairing of real mangoes and thick velvety yogurt. Zero preservatives, high protein, real fruit content and no added sugar make this a great snack to beat the everyday hunger pangs. Give it a try and tell us what you think!\nPasteurized double toned milk used. Active Live Cultures S Thermophilus, L Bacillus, Delbrueckii Subsp, Bulgaricus added. Fruit Content : 20%; Contains permitted natural flavour (Alphonso Mango).\nWeight: 120 g\nKeep it refrigerated at 4 to 8 Deg C.",
+   "ingredients": "Greek Yogurt (Pasteurized Double Toned Milk, Milk Solids, Permitted Starter Cultures), Processed Alphonso Mango Pulp (Alphonso Mango Puree), Total Fruit Content: 20%",
+   "usageInstructions": "Ready to eat",
+   "manufacturerName": "Drums Food International Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019022010155"
+  }
+ },
+ {
+  "title": "Blueberry Greek Yogurt",
+  "handle": "blueberry-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139_5-epigamia-greek-yogurt-blueberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139_5-epigamia-greek-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139-2_3-epigamia-greek-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139-3_3-epigamia-greek-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139-4_3-epigamia-greek-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139-5_3-epigamia-greek-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139-6_2-epigamia-greek-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139-7_2-epigamia-greek-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075139-8_1-epigamia-greek-yogurt-blueberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the creamy delight of Epigamia Greek Yogurt in Blueberry flavour. Crafted with rich Greek yoghurt and real blueberry pieces, it delivers a perfect balance of tanginess and sweetness. Ideal for a refreshing snack or a healthy breakfast option. Enjoy the blend of smooth texture and vibrant berry taste with every spoonful.",
+   "nutritionalInfo": {
+    "Nutrition per": "85g",
+    "Serving Size": "85g",
+    "Energy": "78 kcal",
+    "Protein": "5.2 g",
+    "Carbohydrate": "11 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "7 g",
+    "Total Fat": "1.6 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "44 mg",
+    "Calcium": "143 mg"
+   },
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Bean Greek Yogurt",
+  "handle": "vanilla-bean-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683_5-epigamia-greek-yogurt-vanilla-bean.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683_5-epigamia-greek-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683-2_4-epigamia-greek-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683-3_4-epigamia-greek-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683-4_4-epigamia-greek-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683-5_4-epigamia-greek-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683-6_3-epigamia-greek-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683-7_2-epigamia-greek-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40094683-8_2-epigamia-greek-yogurt-vanilla-bean.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "We were seeking a flavour that connoted goodness and did not have to look too far! The blend of locally sourced vanilla beans and Greek yogurt is so heavenly, you can almost see its halo.\nThis high protein yogurt is a perfect mid meal snack made from real ingredients and has zero preservatives.\nPro tip - These yogurts are versatile, so enjoy the cup as is or mix them with nuts or cereals to make your own smoothie bowls.",
+   "nutritionalInfo": {
+    "Nutrition per": "85g",
+    "Serving Size": "85g",
+    "Energy": "75 kcal",
+    "Protein": "5.2 g",
+    "Carbohydrate": "10 g",
+    "Total Sugars": "10 g",
+    "Added Sugars": "7 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "56 mg",
+    "Calcium": "148 mg",
+    "% RDA per Serve Energy": "4",
+    "% RDA per Serve Protein": "10",
+    "% RDA per Serve Carbohydrate": "8",
+    "% RDA per Serve Added Sugars": "13",
+    "% RDA per Serve Total Fat": "2.2",
+    "% RDA per Serve Saturated Fat": "5",
+    "% RDA per Serve Trans Fat": "0",
+    "% RDA per Serve Sodium": "3",
+    "% RDA per Serve Calcium": "15",
+    "RDA": "Values based on 2000kcal diet for adult men. (RDA as per ICMR NIN 2020)"
+   },
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Wild Raspberry Greek Yogurt",
+  "handle": "wild-raspberry-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550_6-epigamia-greek-yogurt-wild-raspberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550_6-epigamia-greek-yogurt-wild-raspberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550-2_4-epigamia-greek-yogurt-wild-raspberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550-3_4-epigamia-greek-yogurt-wild-raspberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550-4_4-epigamia-greek-yogurt-wild-raspberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550-5_3-epigamia-greek-yogurt-wild-raspberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550-6_2-epigamia-greek-yogurt-wild-raspberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550-7_2-epigamia-greek-yogurt-wild-raspberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046550-8_1-epigamia-greek-yogurt-wild-raspberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigama, in Ancient Greek, meant a way to formalise the relationship between different nations. Epigamia Greek yogurt is one of the most authentic yoghurts, advocating a healthy lifestyle with a delicious taste. The creamy, rich texture enables it to be nutritionally dense and satisfying. Yoghurt is a source of iodine, which helps to increase metabolism and promote weight loss. It is lower in lactose as well as carbohydrates, making it much easier to digest. Raspberry pulp is added to Greek Yoghurt to make the delicious Wild Raspberry Greek Yogurt. All natural, no preservatives, no added colours or flavours, high protein, low fat.",
+   "nutritionalInfo": {
+    "Nutrition per": "85g",
+    "Serving Size": "85g",
+    "Energy": "81 kcal",
+    "Protein": "5 g",
+    "Carbohydrate": "12 g",
+    "Total Sugars": "12 g",
+    "Added Sugars": "8 g",
+    "Total Fat": "1.6 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "43 mg",
+    "Calcium": "138 mg",
+    "% RDA per Serve Energy": "4",
+    "% RDA per Serve Protein": "9",
+    "% RDA per Serve Carbohydrate": "9",
+    "% RDA per Serve Added Sugars": "17",
+    "% RDA per Serve Total Fat": "2.3",
+    "% RDA per Serve Saturated Fat": "4",
+    "% RDA per Serve Sodium": "2",
+    "% RDA per Serve Calcium": "14",
+    "RDA": "Values based on 2000kcal diet for adult men. (RDA as per ICMR NIN 2020)"
+   },
+   "manufacturerName": "Shri Krishna Farms",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Honey Banana Greek Yogurt",
+  "handle": "honey-banana-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40046551_3-epigamia-greek-yogurt-honey-banana.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046551_3-epigamia-greek-yogurt-honey-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046551-2_1-epigamia-greek-yogurt-honey-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046551-3_1-epigamia-greek-yogurt-honey-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046551-4_1-epigamia-greek-yogurt-honey-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40046551-5_1-epigamia-greek-yogurt-honey-banana.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Low Fat and High protein delicious and thick Greek Yogurt.",
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "High Protein Rose & Lychee Greek Yogurt",
+  "handle": "high-protein-rose-lychee-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+    },
+    "barcode": "8906059635205"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757-2_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757-3_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757-4_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757-5_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757-6_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757-7_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231757-8_1-epigamia-greek-yogurt-high-protein-rose-lychee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia brings to you Rose & Lychee flavoured Greek Yogurt. It is made with 100% real fruits and high-quality ingredients. It makes a healthy snack option. This versatile yogurt is high in protein and low in fat. Enjoy this healthy snack anytime and anywhere. We offer to you 9 unique and different flavours of Greek yogurt. It is rich, smooth and has a delicious taste. It does not contain any added chemical preservatives and sugar.",
+   "ingredients": "Greek Yogurt (Pasteurised Double Toned Milk, Milk Solids, Permitted Starter Cultures), Processed Rose Lychee Pulp (Lychee Puree, Sugar, Water, Rose Petals, Thickener (Pectin), Natural Flavouring Substances, Beetroot Juice Concentrate, Acidity Regulator (Citric Acid)) .",
+   "manufacturerName": "Shri Krishna Farms",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Greek Yogurt with Oats & Seeds",
+  "handle": "greek-yogurt-with-oats-seeds",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199-2_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199-3_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199-4_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199-5_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199-6_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199-7_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321199-8_1-epigamia-greek-yogurt-with-oats-seed-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the wholesome goodness of Epigamia Greek Yogurt with Oats & Seed Mix, a delectable blend that combines the richness of creamy Greek yoghurt with the satisfying crunch and nutritional benefits of a power-packed medley of oats, chia seeds, amaranth, and flax seeds. This nourishing and energising snack tantalises the taste buds with its irresistible flavour and texture, providing a protein-rich treat that is sure to leave you feeling satisfied and energised.",
+   "ingredients": "Pasteurized Double Toned Milk, Milk Solids, Stabiliser (INS 440)], Permitted Lactic Acid Cultures, Date Puree (10%), Honey (6%), Water, Rolled Oats (0.8%), Seed Mix (1.3%) [Chia Seeds, Amaranth Seeds, Flax Seeds], Lemon Juice Concentrate, Natural Flavouring Substances (Cereal)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "85 g",
+    "Energy": "75 kcal",
+    "Protein": "5 g",
+    "Carbohydrate": "10 g",
+    "Total Fiber": "1 g",
+    "Total Sugars": "9 g",
+    "Added Sugars": "5 g",
+    "Total Fat": "1.7 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "42 mg",
+    "Calcium": "139 mg"
+   },
+   "storageInstructions": "*Keep refrigerated at 4°C or below to avoid early expiry",
+   "manufacturerName": "Shri Krishna Farms",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Natural Greek Yogurt with Granola",
+  "handle": "natural-greek-yogurt-with-granola",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "115g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426_7-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+    },
+    "barcode": "8906059635229"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426_7-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426-2_1-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426-3_1-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426-4_1-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426-5_1-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426-6_1-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426-7_1-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103426-8_1-epigamia-snack-pack-mango-with-chunky-granola.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful combination of thick, creamy Greek yogurt and crunchy granola with Epigamia Natural Crunch Cup. This wholesome snack is packed with protein and probiotics, making it a naturally delicious and nutritious choice for a balanced breakfast or an on-the-go treat. The satisfying crunch of the granola topping complements the rich, velvety texture of the yogurt, creating a truly satisfying experience. Enjoy the convenience of this preservative-free, high-protein snack that effortlessly elevates your healthy eating routine.",
+   "ingredients": "Partly Skimmed Yogurt, Pasteurized Double Toned Milk, Milk Solids, Stabilizer (Pectin), Permitted Lactic Acid Culture Granola Ingredients (14%): Rolled Oats, Honey, Edible Vegetable Oil (Groundnut), Almonds, Cranberries (Cranberries, Sugar, Sunflower Oil), Sugar, Sunflower Seeds, Pumpkin Seeds, Cinnamon, Antioxidant (Tocopherol Concentrate)",
+   "nutritionalInfo": {
+    "Nutrition Per": "115g Serving_Size: 115g Energy: 137 kcal Protein: 9g Carbohydrate: 14g Total Sugars: 8g Added Sugars: 2g Total Fat: 5g Saturated Fat: 3g Trans Fat: 0g Cholesterol: 7mg Sodium: 61mg calcium: 196mg"
+   },
+   "storageInstructions": "* Keep refrigerated at 4°C or below",
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Alphonso Mango Greek Yogurt with Granola",
+  "handle": "alphonso-mango-greek-yogurt-with-granola",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "115g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900_4-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+    },
+    "barcode": "8906059635120"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900_4-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900-2_2-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900-3_2-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900-4_2-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900-5_2-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900-6_2-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900-7_2-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40340900-8_2-epigamia-alphanso-mango-greek-yogurt-with-granola-crunch-cup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Mango Crunch Cup is a delicious blend of creamy Greek yogurt and crunchy granola, offering a perfect balance of taste and texture. Made with real mango, this high-protein snack is rich, thick, and packed with probiotics. Ideal for a wholesome breakfast or an on-the-go treat, it delivers both nutrition and indulgence in every bite.",
+   "ingredients": "Partly Skimmed Yogurt (Pasteurized Double Toned Milk, Milk Solids, Stabilizer (Pectin), Permitted Lactic Acid Culture), Alphonso Mango Pulp (20%) (Alphonso Mango Pulp, Sugar, Water).",
+   "nutritionalInfo": {
+    "Nutrition Per": "115g Serving_Size: 115g Energy: 163 kcal Protein: 8g Carbohydrate: 23g Total Sugars: 15g Added Sugars: 8g Total Fat: 5g Saturated Fat: 2g Trans Fat: 0g Cholesterol: 6mg Sodium: 49mg calcium: 158mg"
+   },
+   "storageInstructions": "* Keep refrigerated at 4°C or below",
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Greek Yogurt with Granola",
+  "handle": "strawberry-greek-yogurt-with-granola",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "112g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103427_3-epigamia-snack-pack-strawberry-with-chunky-granola.jpg"
+    },
+    "barcode": "8906059635137"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103427_3-epigamia-snack-pack-strawberry-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103427-2_6-epigamia-snack-pack-strawberry-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103427-3_5-epigamia-snack-pack-strawberry-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103427-4_5-epigamia-snack-pack-strawberry-with-chunky-granola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103427-5_4-epigamia-snack-pack-strawberry-with-chunky-granola.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigama in Ancient Greek meant a way to Formalize the relationship between different nations. Thus with this cup of Greek Yogurt we applaud the marriage of a healthy lifestyle with delicious taste using only natural ingredients. No Prevervatives or artificial Flavours. Don't waste a Second.\nStrawberry Greek Yogurt with Chunky Granola. High protein, low fat.\nPasteurized double toned milk used. Active Live Cultures S Thermophilus, L Bacillus, Delbrueckii Subsp, Bulgaricus added.\nWeight: 112 g\nKeep it refrigerated at 4 to 8 Deg C.",
+   "ingredients": "Fruit yogurt: Pasteurized double toned milk, processed strawberry fruit pulp (strawberry fruit (50%), sugar, stabilizer & thickener-pectin E440 (natural) acidity regulator- malic acid E296, milk solids and stabilizer & thickener-pectin E440 (natural) . Added active live cultural- S.Thermophilus, L.Bacilius Delbrueckii Subsp, Bulgaricus.\nCONTAINS PERMITTED NATURAL COLOUR E160c/E163c & ADDED NATURAL STRAWBERRY FLAVOUR.\nGRANOLA: Oats, golden syrup, jumbo oats, refined oil, rice crispies, rajgira puff, flaxseed, sunflower seed, coconut oil, cinnamon.",
+   "usageInstructions": "Open cup on top; Mix snack with yogurt; Open spoon and dig in.",
+   "manufacturerName": "Shri Krishna Farms",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "No Added Sugar Blueberry Yogurt",
+  "handle": "no-added-sugar-blueberry-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+    },
+    "barcode": "8906059636332"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412-2_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412-3_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412-4_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412-5_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412-6_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412-7_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343412-8_2-epigamia-no-added-sugar-blueberry-yogurt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "No Added Sugar Blueberry Yogurt offers a smooth and creamy texture with the natural sweetness of blueberries. Made without added sugar, it provides a refreshing and fruity flavour in every spoonful. Perfect for enjoying on its own or as a tasty addition to snacks and meals.",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "No Added Sugar Mixed Berry Yogurt",
+  "handle": "no-added-sugar-mixed-berry-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410-2_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410-3_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410-4_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410-5_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410-6_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410-7_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343410-8_3-epigamia-no-added-sugar-mixed-berry-yogurt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "No Added Sugar Mixed Berry Yogurt offers a creamy texture with the natural sweetness of assorted berries. Made without added sugar, it delivers a refreshing blend of flavours in every spoonful. Perfect for enjoying on its own or as a versatile addition to snacks and meals.",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "No Added Sugar Strawberry Yogurt",
+  "handle": "no-added-sugar-strawberry-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+    },
+    "barcode": "8906059636318"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411-2_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411-3_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411-4_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411-5_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411-6_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411-7_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343411-8_3-epigamia-no-added-sugar-strawberry-yogurt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "No Added Sugar Strawberry Yogurt offers a smooth and creamy texture with the sweet, natural flavour of strawberries. Made without added sugar, it provides a delicious balance of taste and freshness. Perfect for enjoying on its own or as a complement to meals and snacks.",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo Natural Protein Greek Yogurt",
+  "handle": "turbo-natural-protein-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117_3-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117_3-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117-2_1-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117-3_1-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117-4_1-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117-5_1-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117-6_1-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117-7_1-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336117-8_1-epigamia-turbo-17g-protein-natural-greek-yogurt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Turbo 17g Protein Natural Greek Yogurt is a thick, creamy, and refreshing yogurt packed with 17g of protein per serving. Its smooth texture and natural taste make it a satisfying option for any time of the day. Enjoy the richness of this protein-enriched Greek yogurt in every spoonful.",
+   "ingredients": "Skimmed Milk, Stabilizer (Ins 440), Permitted Lactic Acid Cultures (S. Thermophilus, L. Bacillus Delbrueckii Subsp. Bulgaricus).",
+   "nutritionalInfo": {
+    "Serving Size": "140 g",
+    "Energy": "91 kcal",
+    "Protein": "17 g",
+    "Carbohydrate": "5.6 g",
+    "Added Sugar": "0 g",
+    "Total Fat": "0.1 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.4 mg",
+    "Sodium": "87 mg",
+    "calcium": "280 mg"
+   },
+   "storageInstructions": "*Keep refrigerated at 4°C or below",
+   "manufacturerName": "(D) Shri Krishna Farms",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo Alphonso Mango Protein Greek Yogurt",
+  "handle": "turbo-alphonso-mango-protein-greek-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363-2_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363-3_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363-4_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363-5_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363-6_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363-7_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367363-8_1-epigamia-turbo-15-g-protein-alphonso-mango-greek-yoghurt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Turbo 15 g Protein Alphonso Mango Greek Yoghurt offers a deliciously creamy and high-protein snack. With zero fat, no added sugars, and no preservatives, it’s a wholesome option for health-conscious individuals. Sourced from milk protein concentrate instead of added whey protein, this yoghurt provides a natural, nutritious boost with the refreshing taste of Alphonso mango.",
+   "ingredients": "Yoghurt (Skimmed Milk, Milk Solids, Stabiliser (Pectin), Permitted Lactic Acid Cultures), Alphonso Mango Pulp (12%), Sweetener (Steviol Glycosides, Monk Fruit Extract and Natural Flavour)\nAllergens: Contains Milk. Manufactured in a facility that also processes Nuts & Cereals containing Gluten.\nContains Non-Caloric Sweetener, Steviol Glycosides,\nNaturally Occurring Sugars",
+   "nutritionalInfo": {
+    "Energy": "98 kcal",
+    "Protein": "15 g",
+    "Carbohydrate": "9 g",
+    "Total Sugars": "9 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.4 mg",
+    "Sodium": "76 mg",
+    "Calcium": "243 mg"
+   },
+   "storageInstructions": "Keep refrigerated at 4°C or below to avoid early expiry",
+   "manufacturerName": "Farmgate Agro Milch Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo Mixed Berries Protein Yogurt",
+  "handle": "turbo-mixed-berries-protein-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276_4-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276_4-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276-2_1-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276-3_1-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276-4_1-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276-5_1-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276-6_1-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276-7_1-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329276-8_1-epigamia-turbo-12-g-protein-yogurt-mixed-berries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the deliciousness of Turbo Mixed Berries Flavoured Refreshing Thick Yogurt, enriched with 12g of protein per serving. This rich and creamy yogurt combines the vibrant flavours of mixed berries, offering a refreshing and satisfying taste. Perfect for any time of day, it provides a delightful blend of sweetness and tanginess, ensuring a delicious and nutritious treat in every spoonful. Enjoy the smooth, thick texture and the berrylicious flavour.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "140 g",
+    "Energy": "97 kcal",
+    "Protein": "15 g",
+    "Carbohydrate": "9 g",
+    "Total Sugars": "9 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.1 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "78 mg",
+    "Calcium": "252 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "(0) Alpha Milk Foods Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo Strawberry Protein Yogurt",
+  "handle": "turbo-strawberry-protein-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277_4-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277_4-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277-2_1-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277-3_1-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277-4_1-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277-5_1-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277-6_1-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277-7_1-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40329277-8_1-epigamia-turbo-12-g-protein-yogurt-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of our Strawberry Flavoured Refreshing Thick Yogurt, enriched with 15g of protein per serving. This creamy, thick yogurt offers a perfect balance of sweetness and fruity freshness, making it an ideal treat for any time of the day. Enjoy the rich, smooth texture and the vibrant strawberry flavour in every spoonful, providing a satisfying and delicious experience with every bite. Epigamia Turbo 12 G Protein Yogurt is a high-protein option that is sure to satisfy your cravings.",
+   "ingredients": "Yogurt (Skimmed Milk, Milk Solids, Stabiliser (Ins 440), Permitted Lactic Acid Cultures), Strawberry Preparation (10%) (Strawberry Puree, Apple Juice Concentrate, Fructooligosaccharides, Emulsifier (Ins 440), Water, Colour (Black Carrot Juice Concentrate), Nature Identical Flavouring Substances (Strawberry) And Sweetener (Ins 960))",
+   "nutritionalInfo": {
+    "Serving Size": "140 g",
+    "Energy": "97 kcal",
+    "Protein": "15 g",
+    "Carbohydrate": "9 g",
+    "Total Sugars": "9 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.1 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "78 mg",
+    "calcium": "252 mg"
+   },
+   "storageInstructions": "*Keep refrigerated at 4°C or below to avoid early expiry",
+   "manufacturerName": "(0) Alpha Milk Foods Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Alphonso Mango Fruit Yogurt",
+  "handle": "alphonso-mango-fruit-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834_3-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834_3-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834-2_3-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834-3_3-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834-4_3-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834-5_3-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834-6_3-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834-7_2-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200834-8_1-epigamia-probiotic-yogurt-alphonso-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "At Epigamia, we love food and are always finding ways to bring out the best in yoghurts. Flavoured Probiotic yoghurt is strained dahi to obtain higher protein and infused with real fruit to tantalise the taste buds. The probiotics and vitamins provide a boost to the yoghurt. We have been pushing the boundaries of what is possible with yoghurt that is tastier and better for you. 100 million probiotics per pack. Enriched with Vitamin C and D2.",
+   "nutritionalInfo": {
+    "Nutrition per": "75g",
+    "Serving Size": "75g",
+    "Energy": "57 Kcal",
+    "Protein": "3g",
+    "Total Carbohydrate": "12 g",
+    "Total Sugar": "9g",
+    "Added Sugars": "4g",
+    "Total Fat": "1g",
+    "Saturated Fat": "1g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "4 mg",
+    "Sodium": "41 mg",
+    "Calcium": "103 mg"
+   },
+   "manufacturerName": "Drums Food International Pvt Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Fruit Yogurt",
+  "handle": "strawberry-fruit-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835_3-epigamia-probiotic-yogurt-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835_3-epigamia-probiotic-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835-2_3-epigamia-probiotic-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835-3_3-epigamia-probiotic-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835-4_3-epigamia-probiotic-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835-5_3-epigamia-probiotic-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835-6_3-epigamia-probiotic-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835-7_2-epigamia-probiotic-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200835-8_1-epigamia-probiotic-yogurt-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The classic pairing of strawberries and cream comes alive in this flavour. Ripe strawberries and thick high protein Greek yogurt come together to create that timeless combination, with a unique twist.\nThis high protein yogurt is a perfect mid meal snack made from real ingredients and has zero preservatives.\nPro tip - These yogurts are versatile, so enjoy the cup as is or mix them with nuts or cereals to make your own smoothie bowls.",
+   "nutritionalInfo": {
+    "Nutrition per": "75g",
+    "Serving Size": "75g",
+    "Energy": "59 Kcal",
+    "Protein": "3g",
+    "Total Carbohydrate": "10g",
+    "Total Sugar": "10g",
+    "Includes Added Sugars": "6g",
+    "Total Fat": "1g",
+    "Saturated Fat": "1g",
+    "Trans Fat": "0g",
+    "Cholesterol": "4mg",
+    "Sodium": "39mg",
+    "Calcium": "92mg"
+   },
+   "manufacturerName": "Drums Food International Pvt Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Bean Fruit Yogurt",
+  "handle": "vanilla-bean-fruit-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836_3-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836_3-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836-2_3-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836-3_3-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836-4_3-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836-5_3-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836-6_3-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836-7_2-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200836-8_1-epigamia-probiotic-yogurt-vanilla-bean.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "At Epigamia, we love food and we are always finding ways to unleash the best out of yoghurts. Flavoured Probiotic yoghurt, is strained dahi to get higher protein and infused with real fruit to stimulate the taste buds. The probiotics and vitamins pack a punch to the yoghurt. We have been challenging the boundaries of what is possible with  that are yoghurt that is tastier and better for you\n100 million probiotics per pack\nEnriched with Vitamin C and D2\nNo Preservatives",
+   "ingredients": "Stirred Yoghurt (Pasteurised Double Toned Milk, Milk Solids, Inulin, Stabilizer (Pectin), Permitted Starter Cultures), Processed Vanilla Syrup (Sugar, Water, Vanilla Bean, Lemon Juice Concentrate), Vitamin C, Vitamin D (ergocalciferol)",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Drums Food International Pvt Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Everyday Lychee Yogurt",
+  "handle": "everyday-lychee-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232_1-epigamia-everyday-yogurt-lychee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232_1-epigamia-everyday-yogurt-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232-2_1-epigamia-everyday-yogurt-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232-3_1-epigamia-everyday-yogurt-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232-4_1-epigamia-everyday-yogurt-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232-5_1-epigamia-everyday-yogurt-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232-6_1-epigamia-everyday-yogurt-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232-7_1-epigamia-everyday-yogurt-lychee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328232-8_1-epigamia-everyday-yogurt-lychee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful and refreshing taste of Epigamia Everyday Lychee Yogurt, a creamy and nutritious snack made with real lychee pulp. This yogurt offers a perfect balance of sweet and tangy flavours, packed with protein and probiotics for a healthy treat. Crafted without preservatives or artificial additives, it's an ideal choice for breakfast, a mid-day pick-me-up, or a delectable dessert. Experience the exotic tropical twist that will transport your taste buds, as the smoothness of the yogurt blends seamlessly with the sweet and tangy notes of lychee. Whether you're seeking a refreshing and energising snack or a delightful indulgence, Epigamia Lychee Flavoured Yogurt is sure to delight your senses and keep you nourished throughout the day.",
+   "ingredients": "Pasteurized Double Toned Milk (86%), Sugar, Milk Solids(3%), Nature Identical Flavouring Substances (Lychee), Stabilizer (Ins 440), Permitted Lactic Acid Cultures",
+   "nutritionalInfo": {
+    "Nutrition Per": "75 g",
+    "Serving Size": "75 g",
+    "Energy": "71 kcal",
+    "Protein": "3 g",
+    "Carbohydrate": "13 g",
+    "Total Sugars": "13 g",
+    "Added Sugars": "8 g",
+    "Total Fat": "1 g",
+    "Saturated Fat": "0.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "3 mg",
+    "Sodium": "44 mg",
+    "calcium": "91 mg",
+    "% RDA Per Serve": "4",
+    "RDA": "%RDA Values Based On 2000kcal Diet For Adult Men. (RDA As Per Icmr Nin 2020)"
+   },
+   "storageInstructions": "*Keep refrigerated at 4°C or below to avoid early expiry",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Everyday Mango Yogurt",
+  "handle": "everyday-mango-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233_1-epigamia-everyday-yogurt-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233_1-epigamia-everyday-yogurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233-2_1-epigamia-everyday-yogurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233-3_1-epigamia-everyday-yogurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233-4_1-epigamia-everyday-yogurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233-5_1-epigamia-everyday-yogurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233-6_1-epigamia-everyday-yogurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233-7_1-epigamia-everyday-yogurt-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328233-8_1-epigamia-everyday-yogurt-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the luscious goodness of Epigamia Mango Flavoured Yogurt, a delightful treat made with the natural sweetness of real Alphonso mangoes. This creamy, probiotic-rich yogurt offers a perfect balance of flavours, providing a satisfying snack or a great addition to your breakfast or dessert routine. Packed with essential nutrients and free from preservatives and artificial flavours, Epigamia Mango Yogurt combines taste and health in every refreshing spoonful. Enjoy its rich, creamy texture and tropical mango flavour for a nutritious and indulgent experience.",
+   "ingredients": "Pasteurized Double Toned Milk, Sugar, Milk Solids, Nature Identical Flavouring Substances (Mango), Stabilizer, Permitted Lactic Acid Cultures, Colour",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "75g",
+    "Serving Size": "75 g",
+    "Energy": "71 kcal",
+    "Protein": "3 g",
+    "Carbohydrate": "13 g",
+    "Total Sugars": "13 g",
+    "Added Sugars": "8 g",
+    "Total Fat": "1 g",
+    "Saturated Fat": "0.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "3 mg",
+    "Sodium": "44 mg",
+    "Calcium": "91 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat\n*Refrigerate after opening and consume within 2-3 days",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Everyday Strawberry Yogurt",
+  "handle": "everyday-strawberry-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231_1-epigamia-everyday-yogurt-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231_1-epigamia-everyday-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231-2_1-epigamia-everyday-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231-3_1-epigamia-everyday-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231-4_1-epigamia-everyday-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231-5_1-epigamia-everyday-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231-6_1-epigamia-everyday-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231-7_1-epigamia-everyday-yogurt-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328231-8_1-epigamia-everyday-yogurt-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Everyday Strawberry Yogurt is a delicious and healthy snack made with real strawberries. This creamy yoghurt is rich in protein and probiotics, offering a nutritious treat for any time of the day. Free from preservatives and artificial flavours, it delivers a natural and refreshing taste. Perfect for breakfast or a mid-day snack, it combines taste and health in every bite.",
+   "ingredients": "Pasteurized Double Toned Milk(86%), Sugar, Milk Solids(3%), Nature Identical Flavouring Substances (Strawberry), Stabilizer (INS 440), Permitted Lactic Acid Cultures, Colour (INS 127)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "75g",
+    "Serving Size": "75 g",
+    "Energy": "71 kcal",
+    "Protein": "3 g",
+    "Carbohydrate": "13 g",
+    "Total Sugars": "13 g",
+    "Added Sugars": "8 g",
+    "Total Fat": "1 g",
+    "Saturated Fat": "0.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "3 mg",
+    "Sodium": "44 mg",
+    "Calcium": "91 mg"
+   },
+   "storageInstructions": "*Keep refrigerated at 4°C or below to avoid early expiry",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Squeezy Blueberry, Beetroot & Yogurt",
+  "handle": "squeezy-blueberry-beetroot-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297712_1-epigamia-squeezy-fruit-drink-blueberry-beetroot-yogurt-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297712_1-epigamia-squeezy-fruit-drink-blueberry-beetroot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297712-2_1-epigamia-squeezy-fruit-drink-blueberry-beetroot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297712-3_1-epigamia-squeezy-fruit-drink-blueberry-beetroot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297712-4_1-epigamia-squeezy-fruit-drink-blueberry-beetroot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297712-5_1-epigamia-squeezy-fruit-drink-blueberry-beetroot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297712-6_1-epigamia-squeezy-fruit-drink-blueberry-beetroot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297712-7_1-epigamia-squeezy-fruit-drink-blueberry-beetroot-yogurt-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Squeezy - Blueberry, Beetroot & Yogurt is a quick snack for kids to take with them. Blueberry and Beetroot are combined to create this tasty and nutritious snack for your kids. Its squeezing format makes your life simple and enjoyable in addition to being entertaining for children. All you have to do is twist, squeeze, and sip to prepare it for your child's lunchbox or mid-meal snack. It is an excellent source of Calcium, Vitamin D, and Vitamin K. It is produced entirely of natural components and does not contain any preservatives. It is the ideal combination of fruits, vegetables, and yoghurt, making it a tasty and healthful snack. Visit Big Basket to purchase the premium selection of Epigamia Squeezy Yogurts. They come in unique flavours like mango and carrot. Order it right away and add it to your kids' snack collection.",
+   "ingredients": "Processed Blueberry (6%) And Beetroot (9%) Pulp [water, Sugar, Blueberry Puree, Beetroot Juice Concentrate, Blueberry Juice Concentrate, Stabilizer (pectin), Acidity Regulator (citric Acid) And Black Carrot Colouring Concentrate, Flavour (Natural Flavouring Substances)], Yogurt (20%) (toned Milk), Water, Stabilizer (pectin), Vitamin D2, Vitamin K1, Tricalcium Phosphate",
+   "nutritionalInfo": {
+    "Energy": "59 Kcal",
+    "Protein": "1 g",
+    "Carbohydrate": "13 g",
+    "Total Sugar": "12 g",
+    "Added Sugar": "10 g",
+    "Total Fat": "0.6 g",
+    "Saturated Fat": "0.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "19 mg",
+    "Calcium": "79 mg",
+    "Vitamin D": "80 IU",
+    "Vitamin K": "8 mcg"
+   },
+   "manufacturerName": "Gat No 139/2",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Squeezy Mango, Carrot & Yogurt",
+  "handle": "squeezy-mango-carrot-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297711_1-epigamia-squeezy-fruit-drink-mango-carrot-yogurt-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297711_1-epigamia-squeezy-fruit-drink-mango-carrot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297711-2_1-epigamia-squeezy-fruit-drink-mango-carrot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297711-3_1-epigamia-squeezy-fruit-drink-mango-carrot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297711-4_1-epigamia-squeezy-fruit-drink-mango-carrot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297711-5_1-epigamia-squeezy-fruit-drink-mango-carrot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297711-6_1-epigamia-squeezy-fruit-drink-mango-carrot-yogurt-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297711-7_1-epigamia-squeezy-fruit-drink-mango-carrot-yogurt-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Epigamia Squeezy - Mango, Carrot & Yogurt is an easy on-the-go snack for kids. It is made by combining mango and carrot to make a delicious and healthy snack for your little ones. Its squeeze format is not just fun for kids but makes your life easy, peasy squeezy! Pack it in their lunch box or make it their mid-meal snack, all you gotta do is twist, squeeze and sip! It is a good source of Calcium and Vitamins D and K. It contains no preservatives and is made from all-natural ingredients. It is the perfect mix of fruits+veggies+yogurt thus making it a healthy and delicious snack. So hop onto Big Basket and shop the exclusive range of Epigamia Squeezy Yogurts. They are available in exotic flavours like Blueberry Beetroot. So order now and add it to your little ones' snack cabinet.",
+   "ingredients": "Processed Mango (7.5%) And Carrot (6%) Pulp [water, Sugar, Mango Puree Concentrate, Carrot Juice Concentrate, Stabiliser (pectin), Acidity Regulator (citric Acid & Ascorbic Acid), Colour 160(iii) & Flavour (Natural Flavouring Substances)], Yogurt (20%) (toned Milk), Water, Stabilizer (pectin), Vitamin D2, Vitamin K1, Tricalcium Phosphate.",
+   "nutritionalInfo": {
+    "Energy": "57 Kcal",
+    "Protein": "1 g",
+    "Carbohydrate": "12 g",
+    "Total Sugar": "11 g",
+    "Added Sugar": "10 g",
+    "Total Fat": "0.6 g",
+    "Saturated Fat": "0.5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "8 mg",
+    "Calcium": "79 mg",
+    "Vitamin D": "80 IU",
+    "Vitamin K": "8 mg"
+   },
+   "manufacturerName": "Gat No 139/2",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Blueberry Coconut Milk Yogurt",
+  "handle": "blueberry-coconut-milk-yogurt",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198139_1-epigamia-coconut-milk-yogurt-blueberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198139_1-epigamia-coconut-milk-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198139-2_1-epigamia-coconut-milk-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198139-3_1-epigamia-coconut-milk-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198139-4_1-epigamia-coconut-milk-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198139-5_1-epigamia-coconut-milk-yogurt-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198139-6_1-epigamia-coconut-milk-yogurt-blueberry.jpg"
+   }
+  ],
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Coconuts are nuts! And they run a riot when they get together with blueberries. This dairy-free yoghurt made from Coconut Milk, infused with handpicked blueberries and topped up with probiotics, is a great snack without having you compromise between taste and health! Preservative-free and 100% plant-based, you can now enjoy dairy without the dairy.",
+   "ingredients": "Coconut Milk Yogurt (Water, Coconut Milk, Starch, Stabilizer (E417)), Processed Blueberry Pulp (Sugar, Blueberry Puree, Water, Stabilizer (Pectin), Lemon Juice Concentrate), Total Fruit Content: 3%",
+   "usageInstructions": "Ready to eat",
+   "manufacturerName": "Drums Food International Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Plant Based Coconut Blend with Jaggery",
+  "handle": "plant-based-coconut-blend-with-jaggery",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197481_3-epigamia-plant-based-coconut-blend-with-jaggery.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197481_3-epigamia-plant-based-coconut-blend-with-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197481-2_3-epigamia-plant-based-coconut-blend-with-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197481-3_3-epigamia-plant-based-coconut-blend-with-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197481-4_3-epigamia-plant-based-coconut-blend-with-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197481-5_3-epigamia-plant-based-coconut-blend-with-jaggery.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197481-6_3-epigamia-plant-based-coconut-blend-with-jaggery.jpg"
+   }
+  ],
+  "food_type": "VEGAN",
+  "details": {
+   "description": "What better sidekick to Coconut than Coconut Jaggery? If you don't believe us, try this deadly duo in action in these little cups of probiotic-rich, dairy-free yoghurts. This one gets those taste buds going! Preservative-free and 100% plant-based, you can now enjoy dairy without the dairy.",
+   "ingredients": "Water, Coconut Milk, Coconut Palm Jaggery, Starch, Stabiliser (E417)",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Drums Food International Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Plant Based Coconut Blend Alphonso Mango",
+  "handle": "plant-based-coconut-blend-alphonso-mango",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198138_3-epigamia-plant-based-coconut-blend-alphonso-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198138_3-epigamia-plant-based-coconut-blend-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198138-2_3-epigamia-plant-based-coconut-blend-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198138-3_3-epigamia-plant-based-coconut-blend-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198138-4_3-epigamia-plant-based-coconut-blend-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198138-5_3-epigamia-plant-based-coconut-blend-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198138-6_3-epigamia-plant-based-coconut-blend-alphonso-mango.jpg"
+   }
+  ],
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Know why there is \"nuts\" in coconuts? 'Cuz it's crazy what you can do with them. And our latest offering of dairy-free Coconut Milk Yogurts, infused with the king of fruits from the freshest farms of Ratnagiri and topped up with choicest probiotics, are a proof of that! Preservative-free and 100% plant-based, you can now enjoy dairy without the dairy.",
+   "ingredients": "Coconut Milk Yogurt (Water, Coconut Milk, Starch, Stabilizer (E417)), Processed Alphonso Mango Pulp (Alphonso Mango Puree, Sugar), Total Fruit Content: 16%",
+   "usageInstructions": "Ready to eat",
+   "manufacturerName": "Drums Food International Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Plant Based Coconut Blend Unsweetened",
+  "handle": "plant-based-coconut-blend-unsweetened",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197480_3-epigamia-plant-based-coconut-blend-unsweetened.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197480_3-epigamia-plant-based-coconut-blend-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197480-2_3-epigamia-plant-based-coconut-blend-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197480-3_3-epigamia-plant-based-coconut-blend-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197480-4_3-epigamia-plant-based-coconut-blend-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197480-5_3-epigamia-plant-based-coconut-blend-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197480-6_3-epigamia-plant-based-coconut-blend-unsweetened.jpg"
+   }
+  ],
+  "food_type": "VEGAN",
+  "details": {
+   "description": "One of our favourite ingredients to play with, we could not help but make Coconut the hero of our first plant-based offering. This dairy-free Coconut Milk Yogurt is rich in probiotics and makes for a super tasty and healthy snack! Preservative-free and plant-based, you can now enjoy dairy without the dairy.",
+   "ingredients": "Water, Coconut Milk, Starch, Stabilizer (E417)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "90g",
+    "Energy": "164.6 kcal",
+    "Total Fat": "15 g",
+    "Saturated Fat": "13.2 g",
+    "Trans Fat": "Nil g",
+    "Cholesterol": "Nil mg",
+    "Total Carbohydrate": "6.0 g",
+    "Total Sugar": "1.5 g",
+    "Natural Sugar": "1.5 g",
+    "Added Sugar": "0 g",
+    "Sodium": "6.2 mg",
+    "Protein": "1.4 g"
+   },
+   "storageInstructions": "*Keep refrigerated below 5°C to avoid early expiry",
+   "manufacturerName": "Drums Food International Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Curd",
+  "handle": "classic-curd",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+    },
+    "barcode": "8906059639814"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756-2_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756-3_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756-4_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756-5_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756-6_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756-7_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231756-8_1-epigamia-origins-classic-curd-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Classic Curd is fresh, creamy and delicious. It has superior quality and taste. It is rich and tasty. This curd is good for your gut health and soothes the inflamed digestive system. It is a naturally thick dhai made with farm-fresh milk. It is hygienically processed and packed making it safe for you to consume. It is flavourful and has many nutritional values.",
+   "ingredients": "Pasteurized Toned Milk, Active Lactic Culture.",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt Ltd & DRUMS Food International Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Lactose Free Probiotic Curd",
+  "handle": "lactose-free-probiotic-curd",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049_5-epigamia-curd-artisanal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049_5-epigamia-curd-artisanal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049-2_4-epigamia-curd-artisanal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049-3_4-epigamia-curd-artisanal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049-4_4-epigamia-curd-artisanal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049-5_4-epigamia-curd-artisanal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049-6_2-epigamia-curd-artisanal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049-7_1-epigamia-curd-artisanal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120049-8_1-epigamia-curd-artisanal.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing Epigamia Artisanal Curd, the revolutionary lactose-free curd that caters to those with sensitive stomachs. Crafted with the highest quality ingredients and meticulous attention to detail, this curd is a must-have for anyone who appreciates superior taste and texture. Enriched with 6 billion probiotics in each serving, it not only aids in easy digestion but also supports overall gut health. With its creamy and natural flavour, this lactose-free curd is perfect for enhancing your meals or enjoying on its own. Indulge in the perfect balance of taste and nutrition with Epigamia Artisanal Curd, the ultimate choice for those seeking a delightful and gut-friendly curd experience.",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Artisanal Mishti Doi",
+  "handle": "artisanal-mishti-doi",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284_3-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284_3-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284-2_3-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284-3_3-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284-4_3-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284-5_3-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284-6_2-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284-7_1-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129284-8_1-epigamia-misti-doi-artisanal-mishti-doi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Inspired by our all-time favourite Bengali dessert, we crafted Epigamia Artisanal Mishti Doi.\nMade with cow’s milk, hints of caramel nougat and zero preservatives, our Mishti Doi is a lactose-free, gut-friendly take on a time-held tradition.",
+   "nutritionalInfo": {
+    "Nutrition per": "80g",
+    "Serving Size": "80g",
+    "Energy": "109kcal",
+    "Protein": "4g",
+    "Carbohydrate": "14g",
+    "TotalSugars": "14g",
+    "AddedSugars": "12g",
+    "TotalFat": "4g",
+    "SaturatedFat": "3g",
+    "TransFat": "0.2g",
+    "Cholesterol": "13mg",
+    "Sodium": "63mg",
+    "Calcium": "76mg",
+    "Lactose": "<0.1%"
+   },
+   "manufacturerName": "1785/1 Kulur Panchayat",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Alphonso Mango Greek Yogurt Smoothie",
+  "handle": "alphonso-mango-greek-yogurt-smoothie",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682_3-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682_3-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682-2_3-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682-3_3-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682-4_2-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682-5_2-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682-6_2-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682-7_1-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159682-8_1-epigamia-greek-yogurt-smoothie-alphonso-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Epigamia Smoothies, a guilt-free snack that combines the refreshing flavour of lassi with the added fuel of high-protein and real fruit chunks. This preservative-free smoothie is the perfect way to tame your hunger and satisfy your sweet cravings. Crafted with Epigamia Greek yogurt, these smoothies offer a healthy and flavourful treat that will keep you energised throughout the day. Enjoy the perfect blend of health and taste with Epigamia Smoothies, a delicious and nourishing snack that's free from any junk. Fuel your body and taste buds with this tasty and protein-packed smoothie, perfect for on-the-go indulgence.",
+   "ingredients": "Yogurt, Water, Processed Alphonso Mango Pulp, Sugar, Stabiliser, Acidity Regulator",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "180 ml",
+    "Energy": "161 kcal",
+    "Protein": "8 g",
+    "Carbohydrate": "26 g",
+    "Total Sugars": "26 g",
+    "Added Sugars": "18 g",
+    "Total Fat": "2.9 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "9 mg",
+    "Sodium": "47 mg",
+    "Calcium": "164 mg",
+    "Lactose": "<0.1 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Drums Food International Pvt Ltd No.11",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11518005000697"
+  }
+ },
+ {
+  "title": "Blueberry Greek Yogurt Smoothie",
+  "handle": "blueberry-greek-yogurt-smoothie",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830_3-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830_3-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830-2_3-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830-3_3-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830-4_3-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830-5_3-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830-6_3-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830-7_2-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191830-8_2-epigamia-greek-yogurt-smoothie-blueberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "At Epigamia, we believe in pushing boundaries. Our smoothie is just like your Lassi, with the added fuel of high protein and real fruits for a stimulating taste. This preservative-free smoothie is an ideal snack that will curb your hunger in no time! So gulp it down, and your stomach can thank you later!",
+   "nutritionalInfo": {
+    "Nutrition per": "180ml",
+    "Serving Size": "180ml",
+    "Energy": "148 kcal",
+    "Protein": "8 g",
+    "Carbohydrate": "23 g",
+    "Total Sugars": "23 g",
+    "Added Sugars": "19 g",
+    "Total Fat": "2.9 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "9 mg",
+    "Sodium": "47 mg",
+    "Calcium": "166 mg",
+    "Lactose": "<0.1 g"
+   },
+   "manufacturerName": "Drums Food International Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515023000328"
+  }
+ },
+ {
+  "title": "Mulberry Greek Yogurt Smoothie",
+  "handle": "mulberry-greek-yogurt-smoothie",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681_4-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+    },
+    "barcode": "8906059638527"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681_4-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681-2_4-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681-3_4-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681-4_3-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681-5_3-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681-6_2-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681-7_2-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159681-8_2-epigamia-greek-yogurt-smoothie-mulberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Smoothies is just Like the lassi, with the added fuel of high protein and with real fruits for stimulating taste. This preservative-free smoothie is an ideal snack that will tame your hunger in no time.\nSo say no to the all the junk and enjoy a healthy and tasty treat with Epigamia Smoothies. Tame your sweet craving with this tasty smoothie.",
+   "ingredients": "Yogurt (50%) [Lactose Free Pasteurized Toned Milk, Milk Solids, Permitted Lactic Acid Cultures (Lactobacillus delbrueckii subsp. bulgaricus Streptococcus thermophilus)], Water, Processed Mulberry Squash (14%) [Sugar, Mulberry Puree**, Water, Acidity Regulator (Citric Acid), Stabilizer (Pectin), Natural Flavouring Substances, Natural Colour (INS163)], Sugar, Stabilizer (Pectin), Acidity Regulator (Citric Acid)",
+   "usageInstructions": "Ready to drink.",
+   "manufacturerName": "Drums Food International Pvt Ltd No.11",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11518005000697"
+  }
+ },
+ {
+  "title": "Strawberry Greek Yogurt Smoothie",
+  "handle": "strawberry-greek-yogurt-smoothie",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683_4-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683_4-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683-2_4-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683-3_4-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683-4_3-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683-5_3-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683-6_2-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683-7_1-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40159683-8_1-epigamia-greek-yogurt-smoothie-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful fusion of traditional lassi flavours and modern health-consciousness with Epigamia Smoothies. Crafted with creamy Greek yogurt, real fruit, and a boost of high-quality protein, these preservative-free smoothies offer a guilt-free and satisfying snack or breakfast option. Tame your sweet cravings and hunger pangs with the refreshing taste of strawberry, while enjoying the added benefits of probiotics and a nutritious boost. Enjoy this chilled, delicious treat anytime, anywhere for a delightful and nourishing experience.",
+   "ingredients": "Yogurt, Water, Strawberry Squash, Sugar, Stabiliser, Acidity Regulator",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "180 ml",
+    "Energy": "151 kcal",
+    "Protein": "8 g",
+    "Carbohydrate": "23 g",
+    "Total Sugars": "23 g",
+    "Added Sugars": "18 g",
+    "Total Fat": "2.9 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "9 mg",
+    "Sodium": "48 mg",
+    "Calcium": "167 mg",
+    "Lactose": "<0.1 g"
+   },
+   "manufacturerName": "Drums Food International Pvt Ltd No.11",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11518005000697"
+  }
+ },
+ {
+  "title": "Zero Added Sugar Strawberry Smoothie",
+  "handle": "zero-added-sugar-strawberry-smoothie",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220792_1-epigamia-smoothie-zero-added-sugar-strawberry.jpg"
+    },
+    "barcode": "8906059638596"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220792_1-epigamia-smoothie-zero-added-sugar-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220792-2_1-epigamia-smoothie-zero-added-sugar-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220792-3_1-epigamia-smoothie-zero-added-sugar-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220792-4_1-epigamia-smoothie-zero-added-sugar-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220792-5_1-epigamia-smoothie-zero-added-sugar-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220792-6_1-epigamia-smoothie-zero-added-sugar-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia brings to you Zero Added Sugar Smoothies that are made without any added sugar. The smoothie is made with natural and finest ingredients. We help you live your best life. Now enjoy a delicious and healthy, yummy treat at any time you want. This Passion fruit smoothie is not only delicious but also healthy. It makes a perfect breakfast smoothie or for your mid-day hunger. Our smoothies do not contain any added sugar it only has natural sugars from the fruits used to make them.\nBenefits:\nIt is a healthy and yummy smoothie.\nA perfect breakfast or mid-day energy booster.\nDoes not contain any added sugar.\nReady to consume the drink.",
+   "ingredients": "Greek Yogurt (Toned Milk, Milk Solids, Enzyme (b Galactosidase), Permitted Starter Cultures), Water, Processed Passion Fruit Pulp (passion Fruit, Apple Puree, Fructo Oligosaccharide (fos)), Stabilizing Agent (pectin), Acidity Regulator (Citric Acid).",
+   "storageInstructions": "Enjoy this ready-made smoothie for breakfast.\nYou can also have it during any time of the day as it is healthy.\nKeep it Refrigerated 4-8c to avoid early expiry.\nSo be sure not to purchase if puffed or leaking.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019022010155"
+  }
+ },
+ {
+  "title": "Refresh Kesar Lassi",
+  "handle": "refresh-kesar-lassi",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274_1-epigamia-refresh-kesar-lassi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274_1-epigamia-refresh-kesar-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274-2_1-epigamia-refresh-kesar-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274-3_1-epigamia-refresh-kesar-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274-4_1-epigamia-refresh-kesar-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274-5_1-epigamia-refresh-kesar-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274-6_1-epigamia-refresh-kesar-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274-7_1-epigamia-refresh-kesar-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324274-8_1-epigamia-refresh-kesar-lassi.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Refresh Mango Lassi",
+  "handle": "refresh-mango-lassi",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272_1-epigamia-refresh-mango-lassi.jpg"
+    },
+    "barcode": "8906059638732"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272_1-epigamia-refresh-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272-2_1-epigamia-refresh-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272-3_1-epigamia-refresh-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272-4_1-epigamia-refresh-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272-5_1-epigamia-refresh-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272-6_1-epigamia-refresh-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272-7_1-epigamia-refresh-mango-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324272-8_1-epigamia-refresh-mango-lassi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your refreshment experience with our Mango Flavoured Refreshing Thick Lassi, a tropical delight enriched with proteins for a wholesome indulgence. Immerse yourself in the vibrant taste of ripe mangoes, expertly blended into a luscious and thick yoghurt-based concoction. This revitalising lassi not only tantalises your taste buds with its authentic mango flavour made from real mango pulp, but also provides a nourishing boost of proteins, making it the perfect blend of flavour and nutrition. Enjoy the smooth and creamy texture, blended to perfection for a rich and indulgent lassi experience, perfect as a snack, refreshment or post-meal treat, adding joy to your routine and leaving you refreshed, satisfied, and energised.",
+   "ingredients": "Skimmed Milk, Water, Sugar, Milk Solids, Stabilizer [INS 466, INS 451(i), INS 415, INS 440], Acidity Regulator [INS 330, INS 331(iii)], Nature Identical Flavouring Substances (Kesar Badam), Colour (INS 102) and Permitted Lactic Acid Cultures.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "150 ml",
+    "Energy": "113 kcal",
+    "Protein": "2.4 g",
+    "Carbohydrate": "26 g",
+    "Total Sugars": "26 g",
+    "Added Sugars": "21 g",
+    "Total Fat": "0.1 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "3 mg",
+    "Sodium": "64 mg",
+    "Calcium": "102 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Rajendra And Ursula Joshi Food Industries Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Refresh Strawberry Lassi",
+  "handle": "refresh-strawberry-lassi",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273_1-epigamia-refresh-strawberry-lassi.jpg"
+    },
+    "barcode": "8906059638725"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273_1-epigamia-refresh-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273-2_1-epigamia-refresh-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273-3_1-epigamia-refresh-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273-4_1-epigamia-refresh-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273-5_1-epigamia-refresh-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273-6_1-epigamia-refresh-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273-7_1-epigamia-refresh-strawberry-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324273-8_1-epigamia-refresh-strawberry-lassi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and nourishing delight of Epigamia's Strawberry Flavoured Thick Lassi. Crafted with real strawberry pulp, this delectable beverage offers a tantalising blend of fruity goodness and creamy, protein-rich indulgence. Sip on the sun-kissed flavour of strawberries, perfectly harmonised with the smooth, satisfying texture of premium yogurt. Whether enjoyed as a snack, refreshment or dessert, this lassi is a versatile treat that will captivate your taste buds and provide a protein-packed boost to your day. Start your morning on a delicious note or savour it chilled for a nutritious and revitalising experience anytime, anywhere.",
+   "ingredients": "Skimmed Milk, Water, Sugar, Milk Solids, Stabilizer [INS 466, INS 451(i), INS 415, INS 440], Acidity Regulator [INS 330, INS 331(iii)], Nature Identical Flavouring Substances (Strawberry), Colour (INS 127) and Permitted Lactic Acid Cultures.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "150 ml",
+    "Energy": "116 kcal",
+    "Protein": "2.8 g",
+    "Carbohydrate": "26 g",
+    "Total Sugars": "26 g",
+    "Added Sugars": "22 g",
+    "Total Fat": "0.1 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "4 mg",
+    "Sodium": "91 mg",
+    "Calcium": "120 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.\nRefrigerate before serving for a refreshing taste.\nOnce opened, keep refrigerated and consume within the time indicated on the packaging.\nShake well before use.",
+   "manufacturerName": "Rajendra And Ursula Joshi Food Industries Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mint Buttermilk",
+  "handle": "mint-buttermilk",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+    },
+    "barcode": "8906059638398"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196-2_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196-3_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196-4_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196-5_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196-6_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196-7_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301196-8_1-epigamia-buttermilk-mint-rich-in-vitamin-d.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Buttermilk, Mint is a refreshing, low calorie drink that is perfect for summer.\nMade with no preservatives and source of vitamin D, it improves digestive health and gives you the energy needed during this hot weather. This buttermilk is a refreshing and creamy beverage that adds a touch of mint to your favourite summertime recipe. This is just real dairy goodness with a twist of cool minty freshness.\nExplore more such products available at Big Basket.",
+   "ingredients": "Water, Yogurt (Double Toned Milk), Milk Solids, Stabilizer, Iodised Salt, Stablizer, Nature Identical Flavouring Substances (Garden Mint, Cumin, Chilli Green, Vitamin A & Vitamin D)",
+   "manufacturerName": "Warana Dairy and Agro Industries Ltd & Drums Food International Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Spice Blend Buttermilk",
+  "handle": "spice-blend-buttermilk",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195-2_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195-3_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195-4_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195-5_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195-6_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195-7_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40301195-8_1-epigamia-buttermilk-spice-blend-rich-in-vitamin-d.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Buttermilk, Spice Blend is buttermilk with a twist of spices to give you a delicious blend of flavor.\nA blend of spices that gives this buttermilk a delicious taste. This buttermilk is made with no added sugar, no preservatives and it's source of vitamin D. Buttermilk improves the digestive health and is a perfect drink for summers. This is a flavoursome drink that you can enjoy a delicious, nutritious breakfast every day!\nExplore more such products available at Big Basket.",
+   "ingredients": "Water, Yogurt (Double Toned Milk And Permitted Lactic Acid Culture), Iodised Salt, Stablizer, Himalayan Pink Salt, Natural Identocal Flavouring Substancess (Masala Blend )Vitamin A & Vitamin D)",
+   "manufacturerName": "Warana Dairy and Agro Industries Ltd & Drums Food International Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Milkshake",
+  "handle": "chocolate-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231753_2-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751-2_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751-3_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751-4_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751-5_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751-6_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751-7_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231751-8_3-epigamia-origins-chocolate-milkshake-contains-vitamin-a.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delectable Epigamia Chocolate Flavoured Milkshake, a guilt-free treat that combines the rich, chocolatey flavour with the goodness of pure milk. Enriched with vitamin A and a source of calcium, this energising beverage is perfect for growing kids and adults alike. Preservative-free and super convenient, it's a refreshing delight that can be enjoyed on the go. Made with vegetarian ingredients, this indulgent milkshake satisfies your sweet cravings while providing essential nutrients. Ordering Epigamia Chocolate Milkshake online is a hassle-free way to stock up on this delicious and nutritious beverage.",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt Ltd & DRUMS Food International Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Milkshake",
+  "handle": "strawberry-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231754_2-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752-2_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752-3_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752-4_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752-5_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752-6_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752-7_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231752-8_3-epigamia-origins-strawberry-milkshake-contains-vitamin-a.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy, delectable Epigamia Strawberry Flavoured Milkshake, a nutritious and preservative-free treat bursting with real strawberry flavour. Enriched with Vitamin A and a source of calcium, this energising beverage is perfect for both growing kids and health-conscious adults. Enjoy the refreshing, guilt-free experience of this milkshake, which is packed with crucial nutrients to nourish your body. Convenient and easy to consume on-the-go, this preservative-free delight is a delicious way to boost your energy levels throughout the day.",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Milkshake",
+  "handle": "vanilla-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+    },
+    "barcode": "8906059639906"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750-2_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750-3_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750-4_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750-5_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750-6_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750-7_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40231750-8_2-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Start your day off right with the refreshing and nutritious Epigamia Vanilla Flavoured Milkshake. Enriched with vitamin A and a source of calcium, this milkshake provides essential nutrients for both growing kids and active adults. The delightful vanilla flavour combines perfectly with the wholesome goodness of pure milk, creating a delicious and satisfying beverage. Whether you're in a hurry, at the office, heading to the gym, or simply relaxing at home, this convenient milkshake offers a healthier alternative to sugary sodas, allowing you to indulge your cravings without sacrificing taste or nutrition. Enjoy the smooth, creamy texture and the energising boost this preservative-free milkshake provides, making it the ideal choice for any time of day.",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rose Milkshake",
+  "handle": "rose-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401-2_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401-3_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401-4_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401-5_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401-6_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401-7_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40244401-8_3-epigamia-rose-milkshake-rich-creamy-high-protein-greek-yogurts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Rose Milkshake is enriched with vitamin a and is a source of calcium. It is an energiser for whenever you need it. This is pure milk flavoured with rose. It contains crucial nutrients for growing kids and adults. A refreshing beverage for all times. These milkshakes are preservative-free and super convenient to have on the go.\n1. Enriched with vitamin a and are a source of calcium.\n2. Energising milkshakes.\n3. Refreshing beverage.\n4. Preservative-free and super convenient.",
+   "ingredients": "Fortified Milk, Sugar, Water, Milk Solids And Natural Flavouring & Nature Identical Flavouring Substances.",
+   "nutritionalInfo": {
+    "Calories": "200,",
+    "Carbs": "30g,",
+    "Fat": "6g,",
+    "Protein": "8g."
+   },
+   "storageInstructions": "1. Perfect to have on the go.\n2. A refreshing beverage.\n3.Store at a temperature of 4°C to 8°C.",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Belgian Chocolate Milkshake",
+  "handle": "belgian-chocolate-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200_1-epigamia-belgian-chocolate-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200_1-epigamia-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200-2_1-epigamia-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200-3_1-epigamia-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200-4_1-epigamia-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200-5_1-epigamia-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200-6_1-epigamia-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200-7_1-epigamia-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321200-8_1-epigamia-belgian-chocolate-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cookies & Cream Milkshake",
+  "handle": "cookies-cream-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275_1-epigamia-cookies-cream-milkshake.jpg"
+    },
+    "barcode": "8906059636790"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275_1-epigamia-cookies-cream-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275-2_1-epigamia-cookies-cream-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275-3_1-epigamia-cookies-cream-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275-4_1-epigamia-cookies-cream-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275-5_1-epigamia-cookies-cream-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275-6_1-epigamia-cookies-cream-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275-7_1-epigamia-cookies-cream-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324275-8_1-epigamia-cookies-cream-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful chaos of our Cookies and Cream Flavoured Thick Milkshakes, now infused with the bold allure of coffee flavour. Blended with real cookie crumbles, this extraordinary fusion delivers an irresistibly tasty experience, offering a smooth and indulgent milkshake that promises an explosion of taste with every sip. Savour the rich and robust essence of coffee, seamlessly combined with the sweetness of cookies, for a delightful treat that elevates the creaminess of milk to new heights. Designed for busy lifestyles, this milkshake is perfect for enjoying anywhere, anytime, ensuring each moment is a sheer bliss for your palate.",
+   "ingredients": "Toned Milk (87%), Sugar, Water, Milk Solids, Emulsifier & Stabilizer (INS 471, INS 412, INS 407, INS 415), Acidity Regulator [INS339(iii)], Nature Identical Flavoring Substances (Vanilla, Coffee, Milk Caramel)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "180ml",
+    "Serving Size": "180 ml",
+    "Energy": "177 kcal",
+    "Protein": "5.6 g",
+    "Carbohydrate": "25 g",
+    "Total Sugars": "25 g",
+    "Added Sugars": "16 g",
+    "Total Fat": "6 g",
+    "Saturated Fat": "4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "14 mg",
+    "Sodium": "72 mg",
+    "Calcium": "198 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Dairy Rich Foods",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Coffee Milkshake",
+  "handle": "vanilla-coffee-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201_1-epigamia-vanilla-coffee-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201_1-epigamia-vanilla-coffee-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201-2_1-epigamia-vanilla-coffee-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201-3_1-epigamia-vanilla-coffee-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201-4_1-epigamia-vanilla-coffee-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201-5_1-epigamia-vanilla-coffee-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201-6_1-epigamia-vanilla-coffee-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201-7_1-epigamia-vanilla-coffee-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321201-8_1-epigamia-vanilla-coffee-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the velvety smoothness of Epigamia's Vanilla Coffee Milkshake, a delightful fusion of rich vanilla and bold coffee flavours. Experience an irresistible symphony of taste with every sip, as the sweet vanilla notes intertwine with the aromatic essence of coffee and caramel. This luscious milkshake delivers a truly indulgent and captivating treat for your taste buds, elevating your moments with an unparalleled flavour experience. Savour the velvety texture and revel in the perfect harmony of flavours that Epigamia has masterfully crafted, redefining the milkshake experience.",
+   "ingredients": "Toned Milk (87%), Sugar, Water, Milk Solids, Emulsifier & Stabilizer (INS 471, INS 412, INS 407, INS 415), Acidity Regulator [INS339(Iii)], Nature Identical Flavoring Substances (Vanilla, Coffee, Milk Caramel).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "180 ml",
+    "Energy": "174 kcal",
+    "Protein": "5.5 g",
+    "Carbohydrate": "25 g",
+    "Total Sugars": "25 g",
+    "Added Sugars": "16 g",
+    "Total Fat": "6 g",
+    "Saturated Fat": "4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "14 mg",
+    "Sodium": "72 mg",
+    "Calcium": "198 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Dairy Rich Foods",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo Chocolate Protein Milkshake",
+  "handle": "turbo-chocolate-protein-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "141",
+    "compare_at_price": "141",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768-2_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768-3_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768-4_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768-5_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768-6_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768-7_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318768-8_3-epigamia-turbo-chocolate-25-g-protein-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in guilt-free decadence with Epigamia Turbo Chocolate 25g Protein Milkshake. This delicious delight boasts an impressive 25g of protein per serving, making it a perfect choice for those looking to fuel their body with goodness. Crafted from a blend of quality ingredients including skimmed milk, milk solids, and a touch of cocoa powder, it's a rich and creamy sensation with a dash of nature-identical chocolate flavouring. Enjoy this healthy treat without compromise, as it contains no added sugar, no preservatives, and absolutely no fat. In the unlikely event of a damaged, defective, or incorrect item, you can request a refund or replacement within 4 days of purchase.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "250ml",
+    "Serving Size": "250 ml",
+    "Energy": "137 kcal",
+    "Protein": "25 g",
+    "Carbohydrate": "9 g",
+    "Total Sugars": "8 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.6 mg",
+    "Sodium": "206 mg",
+    "Calcium": "410 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.\nRefrigerate before serving for the best taste.\nOnce opened, keep refrigerated and consume within the time indicated on the packaging.\nShake well before use.",
+   "manufacturerName": "Dairy Rich Foods Factory Unit - Gat No. 143",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo Cookies & Cream Protein Milkshake",
+  "handle": "turbo-cookies-cream-protein-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "141",
+    "compare_at_price": "141",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270-2_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270-3_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270-4_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270-5_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270-6_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270-7_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324270-8_3-epigamia-turbo-cookies-cream-25-g-protein-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Turbo Coffee Protein Milkshake",
+  "handle": "turbo-coffee-protein-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "141",
+    "compare_at_price": "141",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+    },
+    "barcode": "8906059637469"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116-2_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116-3_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116-4_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116-5_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116-6_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116-7_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336116-8_2-epigamia-turbo-coffee-25-g-protein-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Turbo+ 25 g Coffee Protein Milkshake combines the bold flavour of coffee with a high-protein boost. With zero fat, no added sugars, and no preservatives, it's a wholesome choice for coffee lovers seeking a nutritious drink. Sourced from milk protein concentrate instead of added whey protein, this milkshake offers a deliciously smooth and energising option for your day.",
+   "ingredients": "Skimmed Milk (79%), Milk Solids, Water, Coffee Powder (0.3%), Nature Identical Flavouring Substances (Coffee), Acidity Regulators [INS 340, INS 452, INS 339(ii)], Stabilizers (INS 407), Sweetener (INS 955), Edible Common Salt.\nContains Naturally Occurring Sugars.\nContains Non-Caloric Sweetener.\nThis Contains Sucralose.\nAllergens: Contains Milk.\nManufactured in a facility that also processes Nuts and Cereals Containing Gluten.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "138",
+    "Protein (g)": "25",
+    "Carbohydrate (g)": "9",
+    "Total Sugars (g)": "9",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "0.2",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0.6",
+    "Sodium (mg)": "210",
+    "Calcium (mg)": "410"
+   },
+   "storageInstructions": "Store away from sunlight\nRefrigerate after opening\nUse within 24 hours of opening\nServe chilled for best taste\nDon't buy if leaking or swollen. Contact us if compromised.",
+   "manufacturerName": "Dairy Rich Foods LLP",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo Vanilla Caramel Protein Milkshake",
+  "handle": "turbo-vanilla-caramel-protein-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "141",
+    "compare_at_price": "141",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769-2_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769-3_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769-4_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769-5_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769-6_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769-7_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318769-8_3-epigamia-turbo-vanilla-caramel-25-g-protein-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in guilt-free indulgence with Epigamia Turbo Vanilla Caramel 25g Protein Milkshake. This delectable delight is a healthy alternative with no added sugar, no preservatives, and Zero fat. Crafted from a thoughtfully curated blend of ingredients, including skimmed milk, water, milk solids, and nature-identical flavouring substances such as vanilla and caramel, it offers an irresistibly creamy and satisfying taste. The inclusion of natural ingredients and an absence of unnecessary additives make it a smart choice for those seeking a protein-packed treat. With the bonus of 25g of protein per serving, you can relish this milkshake while nourishing your body. Enjoy the goodness of Epigamia Turbo Vanilla Caramel guilt-free.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "250 ml",
+    "Energy": "136 kcal",
+    "Protein": "25 g",
+    "Carbohydrate": "8 g",
+    "Total Sugars": "8 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.6 mg",
+    "Sodium": "221 mg",
+    "Calcium": "412 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Dairy Rich Foods Factory Unit - Gat No. 143",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo+ Chocolate Protein Milkshake",
+  "handle": "turbo-chocolate-protein-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+    },
+    "barcode": "8906059637452"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360-2_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360-3_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360-4_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360-5_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360-6_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360-7_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367360-8_1-epigamia-turbo-30-g-protein-chocolate-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Turbo+ 30 g Protein Chocolate Milkshake offers a high-protein, indulgent treat with zero fat and no added sugars or preservatives. The protein is sourced from milk protein concentrate, not added whey protein, providing a natural, wholesome boost. Perfect for those seeking a nutritious and delicious on-the-go option to fuel their day.",
+   "ingredients": "Ingredients: Ultrafiltered Skimmed Milk (91%), Water, Natural & Nature Identical Flavouring Substances (Chocolate & Vanilla), Cocoa Powder (0.35%), Acidity Regulators [INS 340, INS 452, INS 339 (ii)], Sweetener (INS 955), Stabiliser (INS 407), Edible Common Salt",
+   "nutritionalInfo": {
+    "Energy": "163 kcal",
+    "Protein": "30 g",
+    "BCAA": "5 g (Isoleucine, Leucine,",
+    "Carbohydrate": "10 g",
+    "Total Sugars": "10 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.7 mg",
+    "Sodium": "187 mg",
+    "Calcium": "470 mg"
+   },
+   "storageInstructions": "Store away from sunlight\nRefrigerate after opening\nUse within 24 hours of opening\nServe chilled for best taste\nDon't buy if leaking or swollen. Contact us if compromised.",
+   "manufacturerName": "Dairy Rich Foods",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo+ Alphonso Mango Protein Milkshake",
+  "handle": "turbo-alphonso-mango-protein-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361-2_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361-3_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361-4_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361-5_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361-6_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361-7_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367361-8_1-epigamia-turbo-30-g-alphonso-mango-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Turbo+ 30 g Alphonso Mango Milkshake offers a delicious, high-protein treat with zero fat, no added sugars, and no preservatives. The protein is sourced from milk protein concentrate, not added whey protein, ensuring a natural and wholesome boost. Perfect for those seeking a nutritious and refreshing mango-flavoured milkshake to fuel their day with taste and quality.",
+   "ingredients": "Ultrafiltered Skimmed Milk (91.5%), Water, Alphonso Mango Powder(0.8%), Colour [INS 160a(iii)], Acidity Regulators [INS 340, INS 452, INS 339 (ii)], Nature Identical flavouring substances (Mango), Edible common salt, Sweetener(INS 955), Stabiliser (INS 407)\nContains Non-Caloric Sweetener, Naturally occuring sugars, Sucralose",
+   "nutritionalInfo": {
+    "Energy": "166 kcal",
+    "Protein": "30 g",
+    "BCAA": "5 g (Isoleucine, Leucine,",
+    "Carbohydrate": "11 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.7 mg",
+    "Sodium": "188 mg",
+    "Calcium": "473 mg"
+   },
+   "storageInstructions": "Store away from sunlight\nRefrigerate after opening\nUse within 24 hours of opening\nServe chilled for best taste\nDon't buy if leaking or swollen. Contact us if compromised",
+   "manufacturerName": "Dairy Rich Foods",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turbo+ Malai Kulfi Protein Milkshake",
+  "handle": "turbo-malai-kulfi-protein-milkshake",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+    },
+    "barcode": "8906059637476"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362-2_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362-3_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362-4_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362-5_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362-6_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362-7_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367362-8_1-epigamia-turbo-30-g-malai-kulfi-protein-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Turbo+ 30 g Malai Kulfi Protein Milkshake combines the rich flavour of Malai Kulfi with high-quality protein. Offering zero fat, no added sugars, and no preservatives, it’s a wholesome, indulgent treat. Sourced from milk protein concentrate rather than added whey protein, it’s the perfect protein-packed shake for those seeking a delicious, nutritious boost throughout the day.",
+   "ingredients": "Ultrafiltered Skimmed Milk (93%), Water, Natural flavouring substances ( Dulche de leche & Malai), Acidity Regulators [INS 340, INS 452, INS 339 (ii)], Colour (INS 150a), Edible common salt, Stabiliser (INS 407), Sweetener(INS 955).\nContains Non-Caloric Sweetener, naturally occurring sugars, Sucralose",
+   "nutritionalInfo": {
+    "Energy": "162 kcal",
+    "Protein": "30 g",
+    "BCAA": "5 g (Isoleucine, Leucine,",
+    "Carbohydrate": "10 g",
+    "Total Sugars": "10 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.7 mg",
+    "Sodium": "191 mg",
+    "Calcium": "481 mg"
+   },
+   "storageInstructions": "Store away from sunlight\nRefrigerate after opening\nUse within 24 hours of opening\nServe chilled for best taste\nDon't buy if leaking or swollen. Contact us if compromised",
+   "manufacturerName": "Dairy Rich Foods",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Unsweetened Almond Beverage",
+  "handle": "unsweetened-almond-beverage",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359_1-epigamia-almond-beverage-unsweetened.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "289",
+    "compare_at_price": "289",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201828_6-epigamia-almond-milk-unsweetened-dairy-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359_1-epigamia-almond-beverage-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359-2_1-epigamia-almond-beverage-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359-3_1-epigamia-almond-beverage-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359-4_1-epigamia-almond-beverage-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359-5_1-epigamia-almond-beverage-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359-6_1-epigamia-almond-beverage-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359-7_1-epigamia-almond-beverage-unsweetened.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367359-8_1-epigamia-almond-beverage-unsweetened.jpg"
+   }
+  ],
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Epigamia Almond Beverage - Unsweetened offers a delicious, dairy-free alternative to milk. Fortified with calcium and essential vitamins, it provides the perfect balance of health and taste. This plant-based, gluten-free almond milk contains no preservatives or added sugars, making it a wholesome choice for those seeking a natural, nutritious drink that complements a healthy lifestyle.",
+   "ingredients": "Water, Almonds (4%), Minerals (Tricalcium Phosphate), Emulsifier [INS 322(ii)], Stabiliser (INS 418), Vitamins (Vit A, Vit B, Vit D)\nAllergens: Contains Nuts (Almond). Manufactured in a facility processing milk & cereals containing gluten.",
+   "nutritionalInfo": {
+    "Energy": "48 kcal",
+    "Protein": "2 g",
+    "Carbohydrate": "2 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "3.2 g",
+    "Saturated Fat": "0.2 g",
+    "Trans Fat": "0 g",
+    "Sodium": "1.8 mg",
+    "Calcium": "80 mg",
+    "Vitamin A": "122 mcg",
+    "Vitamin B1": "0.16 mg",
+    "Vitamin B2": "0.28 mg",
+    "Vitamin B3": "3.2 mg",
+    "Vitamin B5": "0.88 mg",
+    "Vitamin B6": "0.34 mg",
+    "Vitamin B9": "58 mcg",
+    "Vitamin B12": "0.34 mcg",
+    "Vitamin D": "3.54 mcg"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place]\nRefrigerate after opening and consume within 5 days\nServe chilled for best taste\nDon't buy if leaking or swollen. Contact us if compromised",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt. Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Almond Milk",
+  "handle": "chocolate-almond-milk",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201829_1-epigamia-almond-milk-chocolate-dairy-free.jpg"
+    },
+    "barcode": "8906059639203"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201829_1-epigamia-almond-milk-chocolate-dairy-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201829-2_1-epigamia-almond-milk-chocolate-dairy-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201829-3_1-epigamia-almond-milk-chocolate-dairy-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201829-4_1-epigamia-almond-milk-chocolate-dairy-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201829-5_1-epigamia-almond-milk-chocolate-dairy-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201829-6_1-epigamia-almond-milk-chocolate-dairy-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201829-7_1-epigamia-almond-milk-chocolate-dairy-free.jpg"
+   }
+  ],
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Epigamia introduces a range of vegan and dairy free almond milk fortified with calcium and vitamins, a perfect balance of health and taste. Epigamia Almond Milk is plant based, gluten free, and has zero preservatives.",
+   "ingredients": "Water, Almond (4%), Sugar, Cocoa solids (1.1%), Tri calcium phosphate, Vitamin premix (Vit A and Vit D2)",
+   "manufacturerName": "Drums Food International Pvt Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Oat Beverage",
+  "handle": "classic-oat-beverage",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341_1-epigamia-classic-oat-beverage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341_1-epigamia-classic-oat-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341-2_1-epigamia-classic-oat-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341-3_1-epigamia-classic-oat-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341-4_1-epigamia-classic-oat-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341-5_1-epigamia-classic-oat-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341-6_1-epigamia-classic-oat-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341-7_1-epigamia-classic-oat-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312341-8_1-epigamia-classic-oat-beverage.jpg"
+   }
+  ],
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Indulge in the delightful and nourishing Epigamia Classic Oat Beverage, a plant-based delight that's rich in fibre, calcium, and essential vitamins. Crafted from high-quality oats, this creamy and subtly sweet drink offers a smooth, satisfying texture that can be enjoyed on its own or seamlessly incorporated into your favourite smoothies, cereals, and recipes. Boost your health with this versatile and refreshing oat-based beverage, perfect for a wholesome lifestyle.",
+   "ingredients": "Water, Oat Extract Powder, Rapeseed Oil, Minerals, Acidity Regulator, Emulsifier, Salt, Stabilizer, Vitamins",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "200ml",
+    "Energy": "57 kcal",
+    "Protein": "1 g",
+    "Carbohydrate": "9 g",
+    "Total Sugars": "4 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "2 g",
+    "Saturated Fat": "0.3 g",
+    "Trans Fat": "0.03 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "9 mg",
+    "Calcium": "103 mg",
+    "Vitamin D": "1.5 mcg",
+    "Vitamin B2": "0.2 mg",
+    "Vitamin B12": "0.4 mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Refrigerate after opening",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt Ltd",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Hazelnut Pudding",
+  "handle": "chocolate-hazelnut-pudding",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+    },
+    "barcode": "8906059637834"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745-2_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745-3_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745-4_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745-5_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745-6_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745-7_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312745-8_2-epigamia-desserts-chocolate-pudding-mithai-indian-sweets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a luscious chocolate hazelnut pudding that offers the perfect blend of flavour and indulgence. Crafted with 80% milk, this delectable treat is free from preservatives and artificial colours, providing a boost of calcium to make it your go-to post-meal delight. Satisfy your sweet tooth guilt-free with Epigamia's divine Chocolate Pudding, featuring a spoon included for your convenience. Enjoy the rich, creamy texture and irresistible flavour in every mouthwatering bite, ensuring you'll keep coming back for more.",
+   "ingredients": "Standardized Milk (79%), Sugar, Milk Solids (3%), Thickener (INS 1442), Cocoa Powder (1.5%), Stabilizers (INS 466, INS 415, INS 440), Acidity Regulator [INS 451 (i), INS 331 (iii)], Nature Identical Flavouring Substances (Hazel Nut), Natural Flavouring Substances (Dark Chocolate)",
+   "nutritionalInfo": {
+    "Nutrition per": "70 g",
+    "Serving Size": "70 g",
+    "Energy": "94 kCal",
+    "Protein": "2.6 g",
+    "Carbohydrate": "15 g",
+    "Total Sugars": "14 g",
+    "Added Sugars": "10 g",
+    "Total Fat": "2.6 g",
+    "Saturated Fat": "1.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "8 mg",
+    "Sodium": "62 mg",
+    "Calcium": "93 mg",
+    "RDA": "Approximate Values. %RDA Values based on 2000 kCal diet for adult men. (RDA as per ICMR NIN 2020)"
+   },
+   "storageInstructions": "*Store away from direct sunlight in a hygienic place\n*Keep refrigerated once opened\n*Consume within 24 hours after opening",
+   "manufacturerName": "Dairy Rich Foods LLP",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Caramel Pudding",
+  "handle": "caramel-pudding",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746-2_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746-3_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746-4_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746-5_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746-6_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746-7_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312746-8_1-epigamia-desserts-caramel-pudding-creamy-bliss-mithai-indian-sweets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful world of Epigamia Desserts, where each spoonful takes you on a blissful journey of flavours. Their Caramel Pudding, with its velvety texture and rich caramel notes, is a heavenly treat for your taste buds. For those craving something creamy and luscious, Creamy Bliss offers a divine experience, leaving you craving for more. Epigamia also offers a range of Mithai-inspired desserts that pay homage to traditional Indian sweets, giving them a contemporary twist.\nWhat sets Epigamia apart is their commitment to quality, with 80% milk in their desserts, ensuring a truly indulgent experience. Moreover, their identical flavouring substances of caramel and vanilla create a symphony of taste, elevating each dessert to perfection. Each pack contains 70g, perfect for a satisfying dessert experience anytime, anywhere. Crafted to satisfy your sweet cravings, Epigamia Desserts are a source of calcium, making them a delightful treat you can enjoy anywhere, anytime.",
+   "ingredients": "Whole Milk (79%), Sugar, Milk Solids (3%), Food Starch - Modified (E1442), Stabilizers (E466, E415, E44), Acidity Regulator [E451 (i), E331 (ii)], Nature Identical Flavouring Substances (Caramel and Vanilla)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "70 g",
+    "Energy": "99 kcal",
+    "Protein": "3.6 g",
+    "Carbohydrate": "16 g",
+    "Total Sugars": "16 g",
+    "Added Sugars": "10 g",
+    "Total Fat": "2.6 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "6 mg",
+    "Sodium": "44 mg",
+    "Calcium": "88 mg"
+   },
+   "storageInstructions": "*Keep refrigerated once opened\n*Consume within 24 hours after opening\n*Tastes best when served chilled",
+   "manufacturerName": "Factory Unit - Gat No. 143",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rice Kheer",
+  "handle": "rice-kheer",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271_1-epigamia-desserts-rice-kheer.jpg"
+    },
+    "barcode": "8906059637827"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271_1-epigamia-desserts-rice-kheer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271-2_1-epigamia-desserts-rice-kheer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271-3_1-epigamia-desserts-rice-kheer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271-4_1-epigamia-desserts-rice-kheer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271-5_1-epigamia-desserts-rice-kheer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271-6_1-epigamia-desserts-rice-kheer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271-7_1-epigamia-desserts-rice-kheer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324271-8_1-epigamia-desserts-rice-kheer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Embark on a nostalgic journey with Epigamia's Ready-to-Eat Rice Kheer, a delightful fusion of convenience and tradition. Indulge in the creamy goodness of this delicious, ready-to-eat dessert, made from high-quality ingredients for a smooth texture and perfect blend of flavours. Satisfy your sweet cravings effortlessly, whether enjoyed hot, chilled, or at room temperature. This rice kheer brings the authentic taste of Indian sweets to your table, offering a rich, comforting experience. With a luscious, creamy texture, it's the perfect after-meal treat, effortlessly bringing the flavours of tradition to your palate. Overall, a taste beyond imagination!",
+   "ingredients": "Standardized Milk (8%), Sugar, Rice (5%), Milk Solids, Rice Starch, Acidity Regulator [INS 339 (iii)], Natural Flavouring Substances (Cardamom)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "70g",
+    "Serving Size": "70 g",
+    "Energy": "94 kcal",
+    "Protein": "2.5 g",
+    "Carbohydrate": "15 g",
+    "Total Sugars": "12 g",
+    "Added Sugars": "8.4 g",
+    "Total Fat": "2.5 g",
+    "Saturated Fat": "1.5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "7 mg",
+    "Sodium": "32 mg",
+    "Calcium": "88 mg"
+   },
+   "storageInstructions": "*Store away from direct sunlight in a hygienic place\n*Keep refrigerated once opened\n*Consume within 24 hours after opening",
+   "manufacturerName": "Dairy Rich Foods LLP",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cream Cheese",
+  "handle": "cream-cheese",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793_2-epigamia-cream-cheese-no-preservatives.jpg"
+    },
+    "barcode": "8906059639739"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793_2-epigamia-cream-cheese-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793-2_2-epigamia-cream-cheese-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793-3_2-epigamia-cream-cheese-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793-4_2-epigamia-cream-cheese-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793-5_2-epigamia-cream-cheese-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793-6_2-epigamia-cream-cheese-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793-7_2-epigamia-cream-cheese-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220793-8_2-epigamia-cream-cheese-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Cream Cheese is made with high-quality ingredients. It is a soft, mild fresh cheese. This cheese is soft, creamy, sweet with a bit of tang. It is high in fat and contains and a good source of vitamin A. This soft cheese can be used in many different ways. It can be used in both sweet and savoury recipes. It should be consumed within 45 days after opening.\nBenefits:\nIt is a healthy and smooth cheese.\nHigh in fat and contains and a good source of vitamin A.\nDoes not contain any added sugar.\nCan be used in both sweet and savoury recipes.",
+   "ingredients": "Milk, Cream, whey protein concentrate, Iodized common salt, Stabilizers (INS 415, INS 412, INS 407), Permitted lactic acid starter cultures.",
+   "storageInstructions": "Can be used in both sweet and savoury recipes.\nYou can use it as a spread, add it to baked goods, etc.\nDo not freeze.\nOnly Refrigerate (at 2-6c).\nOnce opened consume it within 1-2 days for best taste.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019022010155"
+  }
+ },
+ {
+  "title": "Roasted Garlic & Herbs Buttery Spread",
+  "handle": "roasted-garlic-herbs-buttery-spread",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238643_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644-2_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644-3_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644-4_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644-5_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644-6_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644-7_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40238644-8_1-epigamia-buttery-spread-with-roasted-garlic-herbs-omega-3-rich-tangy-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This log is a mix of roasted garlic, creamy cheese and fresh herbs that’s utterly addictive. This spread is a fabulous appetizer on crackers, but even better on sandwiches or spread on a bagel. It is a distinctive flavoured spicy condiment. It makes each bite relishing, spread it on your bread, prepare sandwiches or simply use it as a dip for french fries, sandwiches, snacks, pakoras or twisty bread. It contains natural vitamins and minerals and has antioxidant properties.\nBenefits\n1. Give your senses a tangy twist with the zing of garlic and chilli.\n2. It is made to spice up your taste buds and make your snacks tastier.",
+   "ingredients": "Ghee (96%), Garlic Extract, Salt, Mixed Herbs (Oregano, Thyme, Basil, Salt), Vegetarian Omega Concentrate Blend, Emulsifier (INS 471), Natural Rosemary Extract, Herb Extract",
+   "nutritionalInfo": {
+    "Energy": "844 Kcal",
+    "Proteins": "2 gm",
+    "Total fats": "93 gm",
+    "Sodium": "612 mg"
+   },
+   "storageInstructions": "Spread it on your bread, prepare sandwiches or simply use it as a dip for french fries, sandwiches, snacks, pakoras or twisty bread.\nKeep in cool and dry place",
+   "manufacturerName": "DRUMS Food International Pvt. Ltd R&D Unit",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Hazelnut Ghee Spread",
+  "handle": "chocolate-hazelnut-ghee-spread",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40183061_4-epigamia-spreads-chocolate-hazelnut-made-from-ghee-source-of-omega-3.jpg"
+    },
+    "barcode": "8906059639494"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183061_4-epigamia-spreads-chocolate-hazelnut-made-from-ghee-source-of-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183061-2_9-epigamia-spreads-chocolate-hazelnut-made-from-ghee-source-of-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183061-3_9-epigamia-spreads-chocolate-hazelnut-made-from-ghee-source-of-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183061-4_9-epigamia-spreads-chocolate-hazelnut-made-from-ghee-source-of-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183061-5_9-epigamia-spreads-chocolate-hazelnut-made-from-ghee-source-of-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183061-6_7-epigamia-spreads-chocolate-hazelnut-made-from-ghee-source-of-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183061-7_7-epigamia-spreads-chocolate-hazelnut-made-from-ghee-source-of-omega-3.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ghee is indigenous to India and is known for its health benefits & medicinal applications. With its use being limited to the kitchen, Epigamia decided to bring it to the dining table. By adding Unique Flavours to Ghee, we found a spread that is Super tasty, preservative Free and Source of Omega 3. \nMore importantly, this one is made from Ghee and not palm oil like some other spreads. We love fusion and we could not help but blend our two favourite ingredients, chocolate and ghee, to come up with this super tasty spread. It tastes great with bread, pancakes, roti and crackers to name a few.",
+   "ingredients": "Ghee (37%), Sugar, Hazelnut Paste (14%) (Hazelnut, Sugar), Date, Cocoa Solid (4%), Emulsifier (E 471), Vegeterian Omega Concentrate Blend, Natural Rosemary Extract",
+   "usageInstructions": "Ghee meets Chocolate in this spread that you can relish with bread or bake with.",
+   "manufacturerName": "Drums Food International Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019022010155"
+  }
+ },
+ {
+  "title": "Chocolate Caramel Ghee Spread",
+  "handle": "chocolate-caramel-ghee-spread",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211532_1-epigamia-ghee-spreads-chocolate-caramel.jpg"
+    },
+    "barcode": "8906059639609"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211532_1-epigamia-ghee-spreads-chocolate-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211532-2_1-epigamia-ghee-spreads-chocolate-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211532-3_1-epigamia-ghee-spreads-chocolate-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211532-4_1-epigamia-ghee-spreads-chocolate-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211532-5_1-epigamia-ghee-spreads-chocolate-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211532-6_1-epigamia-ghee-spreads-chocolate-caramel.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Spreads made from Ghee Chocolate Caramel brings the richness of Chocolate and Caramel together with the goodness of Ghee It is a tasty chocolate spread and pairs well with all kinds of foods It has Omega 3 to make this just as healthy as it is tasty It has no added preservatives so that you eat only fresh and clean.",
+   "ingredients": "Ghee (36%), Sugar, Processed Caramel Preparation (Sugar, Milk solids, Common Salt, Stabilizer (Pectin), Acidity Regulator (INS 270)), Dates, Milk Solids, Cocoa Solids (3.5%), Emulsifier (INS 471), Vegetarian Omega Concentrate Blend, Natural Rosemary extract",
+   "usageInstructions": "Consume as a sweet spread.",
+   "manufacturerName": "Drums Food International Private Limited",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dark Chocolate Orange Ghee Spread",
+  "handle": "dark-chocolate-orange-ghee-spread",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211533_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+    },
+    "barcode": "8906059639616"
+   },
+   {
+    "title": "250g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211531_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211533_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211533-2_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211533-3_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211533-4_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211533-5_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211533-6_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211531_1-epigamia-ghee-spreads-dark-chocolate-orange.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Epigamia Spreads made from Ghee Dark Chocolate Orange brings the classic fusion of Chocolate and Orange together with the goodness of Ghee\nIt is a tasty chocolate spread and pairs well with all kinds of foods\nIt has Omega 3 to make this just as healthy as it is tasty\nIt has no added preservatives so that you eat only fresh and clean",
+   "ingredients": "Ghee (26%), Dates, Processed Orange Pulp (sugar, Water, Orange, Stabilizer (pectin), Lemon Juice Concentrate), Orange Peel, Sugar, Cocoa Solids (11%), Emulsifier (ins 471), Vegetarian Omega Concentrate Blend, Cocoa Extract, Natural Rosemary Extract",
+   "usageInstructions": "Consume as a sweet spread.",
+   "manufacturerName": "Drums Food International Private Limited",
+   "fssaiLicense": "10019022010155",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Banana Caramel Ghee Spread",
+  "handle": "banana-caramel-ghee-spread",
+  "vendor": "Epigamia",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40183063_3-epigamia-spreads-banana-caramel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183063_3-epigamia-spreads-banana-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183063-2_7-epigamia-spreads-banana-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183063-3_8-epigamia-spreads-banana-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183063-4_7-epigamia-spreads-banana-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183063-5_7-epigamia-spreads-banana-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40183063-6_7-epigamia-spreads-banana-caramel.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "At Epigamia we love food and are always finding ways to unleash the best out of food by adding fresh twists to age-old classics. That’s exactly what happened when we added unique flavours to Ghee! Ghee is no stranger to anyone, many of us have grown up with it in our households. What happens though when ghee becomes more than just an ingredient? What happens, when it becomes a flavoured accompaniment to everyday snacking? Introducing Epigamia Spreads, Made from Ghee.\nThese super tasty spreads are preservative-free and are also a great source of Omega 3. Free of vegetable oil and trans fats, these spreads are bursting with the healthy goodness of ghee along with the added twist of enticing flavours like Chocolate, Banana Caramel and Blueberry. You can relish these spreads with toast, buns, Rotis, sandwiches or anything else you wish to pair it with. We are all about experimentation, you should be too!\nGo ahead, see what happens when Ghee meets Blueberry in this super tasty preservative-free spread. We are of the opinion that berries go with everything and are constantly trying to pick favourites between our Blueberry Greek Yogurt, Greek Yogurt Smoothie and Spreads. Try this one out and join the debate!",
+   "ingredients": "Ghee (41%), Caramelized Banana Prepn (29%), (sugar, Banana Pury, Pectin (ins 440), Acidity Regulators ( Ins330, Ins300, Sugar, Emulsifier - Ins4711), Omega 3 Fatty Acid Natural Antioxidants ( Rosemerry Extract) Contains Added Natural Flavouring Substance ( Banana & Caramel ) & Permitted Natural Colour (caramel Ins 150a).",
+   "usageInstructions": "Ghee meets Banana and Caramel in this spread that you can relish with bread or bake with.",
+   "manufacturerName": "Drums Food International Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11517006000002"
+  }
+ }
+]
