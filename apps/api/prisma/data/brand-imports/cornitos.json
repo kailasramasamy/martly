@@ -1,0 +1,352 @@
+{
+  "brand": "Cornitos",
+  "manufacturer": "Greendot Health Foods Pvt Ltd",
+  "feed": "cornitos-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cornitos/source/logo-badge5-bfdc90d9.png",
+  "themeColor": "#551E3C",
+  "themeColorSecondary": "#FBB040",
+  "namePrefix": "Cornitos ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Cornitos Nacho Crisps - Cheese & Herbs": "Cheese & Herbs Nacho Crisps"
+  },
+  "rules": [
+    {
+      "match": "^Cheese\\ \\&\\ Herbs\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Sizzlin\\ Jalapeno\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Mexicana\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Tikka\\ Masala\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Chili\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Cheesy\\ Sour\\ Cream\\ \\&\\ Onion\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Barbeque\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Sea\\ Salt\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Lime\\ n\\ Mint\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Korean\\ Chilli\\ Nacho\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Beetroot\\ Gourmet\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Spinach\\ Gourmet\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Quinoa\\ Gourmet\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Melange\\ Veggie\\ Nachos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ Nachos\\ \\&\\ Salsa\\ Dip\\ Tray$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Nachos\\ \\&\\ Salsa\\ Dip\\ Tray$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Taco\\ Shells\\ 10\\ cm$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Taco\\ Shells\\ 15\\ cm$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Wheat\\ Flour\\ Tortilla\\ Wraps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Spinach\\ Tortilla\\ Wraps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Cheesy\\ Jalapeno\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Chunky\\ Salsa\\ Hot$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Sliced\\ Jalapeno\\ Peppers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Crusties\\ Classic\\ Cheese\\ Balls$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Crusties\\ Fiery\\ Peri\\ Peri\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Crusties\\ Honey\\ Chilli\\ Potato\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Crusties\\ Korean\\ Chilli\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Crusties\\ Sour\\ Cream\\ \\&\\ Onion\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Crusties\\ Italian\\ Cheese\\ Potato\\ Puffs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Crusties\\ Lemon\\ Chilli\\ Rajma\\ Snacks$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Crusties\\ King\\ Curry\\ Rajma\\ Snacks$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Hot\\ \\&\\ Spicy\\ Coated\\ Green\\ Peas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Wasabi\\ Coated\\ Green\\ Peas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Spanish\\ Tomato\\ Corn\\ Nuts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Party\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Premium\\ Salted\\ Peanuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Peanuts"
+      ]
+    },
+    {
+      "match": "^Lightly\\ Salted\\ Roasted\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Pepper\\ \\&\\ Herbs\\ Roasted\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Super\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ \\&\\ Salted\\ Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    }
+  ]
+}
