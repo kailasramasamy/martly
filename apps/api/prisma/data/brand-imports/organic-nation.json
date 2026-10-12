@@ -1,0 +1,22 @@
+{
+  "brand": "Organic Nation",
+  "manufacturer": "Organic Nation",
+  "feed": "organic-nation-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/organic-nation/logo-d7813050.png",
+  "themeColor": "#7A2424",
+  "themeColorSecondary": "#8B6E1E",
+  "namePrefix": "Organic Nation ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Organic\\ Brown\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    }
+  ]
+}

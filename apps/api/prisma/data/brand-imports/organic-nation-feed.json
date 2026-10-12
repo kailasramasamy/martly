@@ -1,0 +1,37 @@
+[
+ {
+  "title": "Organic Brown Sugar",
+  "handle": "organic-brown-sugar",
+  "vendor": "Organic Nation",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135724_2-organic-nation-organic-brown-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135724_2-organic-nation-organic-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135724-2_1-organic-nation-organic-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135724-3_1-organic-nation-organic-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135724-4_1-organic-nation-organic-brown-sugar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135724-5_1-organic-nation-organic-brown-sugar.jpg"
+   }
+  ]
+ }
+]
