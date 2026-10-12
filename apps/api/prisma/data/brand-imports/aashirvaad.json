@@ -1,0 +1,385 @@
+{
+  "brand": "Aashirvaad (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "aashirvaad-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/aashirvaad-itc/logo-b5b9fec3.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Aashirvaad ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Aashirvaad Vermicelli (Roasted)": "Roasted Vermicelli",
+    "Aashirvaad Select Suji": "Double Roasted Suji Rava"
+  },
+  "rules": [
+    {
+      "match": "^Superior\\ MP\\ Whole\\ Wheat\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Select\\ MP\\ Sharbati\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Multigrain Atta"
+      ]
+    },
+    {
+      "match": "^Atta\\ with\\ Millets$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Multigrain Atta"
+      ]
+    },
+    {
+      "match": "^Sugar\\ Release\\ Control\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Organic\\ Whole\\ Wheat\\ Atta$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Organic Staples (Rice, Dal, Atta)"
+      ]
+    },
+    {
+      "match": "^Chakki\\ Khapli\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Namma\\ Chakki\\ Atta\\ with\\ Methi$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Namma\\ Chakki\\ Atta\\ with\\ Moringa$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Gluten\\ Free\\ Flour$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^Double\\ Roasted\\ Suji\\ Rava$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Sooji & Rava"
+      ]
+    },
+    {
+      "match": "^Bansi\\ Rava$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Sooji & Rava"
+      ]
+    },
+    {
+      "match": "^Organic\\ Urad\\ Dal\\ Split$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Vermicelli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Vermicelli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Cardamom$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Jeera$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Methi$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Poppy\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Guntur\\ \\&\\ Byadagi\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Mirch\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Pepper\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Chaat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ King\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Paneer\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Punjabi\\ Chole\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sabji\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sambar\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Iodised\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    },
+    {
+      "match": "^Crystal\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    },
+    {
+      "match": "^Iron\\ Shakti\\ Iodised\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    },
+    {
+      "match": "^Salt\\ Active$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    },
+    {
+      "match": "^Gulab\\ Jamun\\ Instant\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    },
+    {
+      "match": "^Instant\\ Suji\\ Halwa\\ with\\ Jaggery$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Instant\\ Khatta\\ Meetha\\ Poha$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Rice\\ Idli\\ Instant\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Aloo\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Malabar\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Naan$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Garlic\\ \\&\\ Coriander\\ Naan$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    }
+  ]
+}
