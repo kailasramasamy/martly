@@ -43,6 +43,7 @@ const REFRESH_IMAGES = process.argv.includes("--refresh-images");
 const DATA_DIR = new URL("./data/brand-imports/", import.meta.url);
 const MAX_IMAGES = 8;
 const IMAGE_CONCURRENCY = 4; // pack shots processed at once per product
+const PRODUCT_CONCURRENCY = 6; // products applied at once (each product's own writes stay in order)
 
 // Larger pack priced below a smaller one (per unit family) usually means a pouch vs jar, or a data error
 function priceAnomalies(variants: PackVariant[]): string[] {
@@ -224,12 +225,20 @@ async function syncVariants(productId: string, variants: PackVariant[], imageKey
   return stale.filter((e) => !removable.includes(e)).map((e) => e.name);
 }
 
+// One lookup per category path per run; concurrent products share it, so a new subcategory is created once
+const subcategories = new Map<string, ReturnType<typeof resolveSubcategory>>();
+function subcategoryFor(path: TaxonomyPath): ReturnType<typeof resolveSubcategory> {
+  const key = path.join(" > ");
+  if (!subcategories.has(key)) subcategories.set(key, resolveSubcategory(prisma, path));
+  return subcategories.get(key)!;
+}
+
 async function applyPlan(plan: Plan, config: Config, brandId: string): Promise<"created" | "updated"> {
   const oldNames = Object.entries(config.aliases).filter(([, t]) => t === plan.title).map(([old]) => old);
   const existing = await prisma.product.findFirst({
     where: { brandId, organizationId: null, name: { in: [plan.name, ...oldNames] } },
   });
-  const sub = await resolveSubcategory(prisma, plan.path!);
+  const sub = await subcategoryFor(plan.path!);
   // A feed without a description (hand-built feeds often have none) keeps the catalog's own
   const description = plainDescription(plan.site.body_html) ?? undefined;
   const data = {
@@ -279,7 +288,7 @@ async function main() {
     await prisma.brand.update({ where: { id: brandId }, data: { themeColor: config.themeColor, themeColorSecondary: config.themeColorSecondary ?? null } });
   }
   const counts = { created: 0, updated: 0 };
-  for (const plan of todo) counts[await applyPlan(plan, config, brandId)]++;
+  for (const result of await mapLimit(todo, PRODUCT_CONCURRENCY, (plan) => applyPlan(plan, config, brandId))) counts[result]++;
   console.log(`✔ ${counts.created} products created, ${counts.updated} updated`);
 }
 
