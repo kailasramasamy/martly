@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/412401_6-paper-boat-aam-panna-mango-drink.jpg"
-    }
+    },
+    "barcode": "8906080600913"
    },
    {
     "title": "215ml",
@@ -51,7 +52,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/412401-8_4-paper-boat-aam-panna-mango-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The pre-vacation between your actual summer vacation and the last day of the final exams. The buffer time it took for your teachers to grade you, to graduate you into another class. That was the window of the Kairi. There was something poetic about raw, unfledged mangoes enticing our fully formed taste buds. Like it was another fruit altogether. Mixed with spices, mint and served cold, almost inversely to the soaring temperatures outside. You gushed it down in a single gulp. But the moment lingered forever. Relive those memories and unforgettable tastes yet again with Paper Boat Aam Panna.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy (kcal)": "52.0 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "13.0 g",
+    "Total Sugars (g)": "12.5 g",
+    "added sugars (g)": "11.6 g",
+    "Total fat (g)": "0.0 g",
+    "cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "150.0 mg"
+   },
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aamras",
@@ -123,7 +141,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/412400-8_6-paper-boat-aamras-mango-fruit-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The one treasure that easily transforms Indian summer into the festivity that it is, is Aamras. An honest treat for an honest day's work. A silk-like ale cascading down your throat - Soothing, serenading, and more importantly, lingering. Sometimes enveloped in rotis, sometimes guzzled with milk, but the best way to enjoy Aamras is to have it directly as-is, the way the ancients intended. Without preservatives or artificial flavour, without frills or hassles. Ah! One just cannot help but submit to the tasty tyranny of the one true king of the fruit realm. All hail the mango! Long live the king! |",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy (kcal)": "67.2 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "16.8 g",
+    "Total Sugars (g)": "16.0 g",
+    "added sugars (g)": "9.6 g",
+    "Total fat (g)": "0.0 g",
+    "cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "2.6 mg"
+   },
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Anar Pomegranate Juice",
@@ -174,7 +209,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40105628_7-paper-boat-anar-pomegranate-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the ancient and vibrant taste of Paper Boat Anar Pomegranate Fruit Juice. Originating from the rich history of Iran, this princely fruit has journeyed along the Silk Route to grace your table. Bursting with the goodness of juicy pomegranates, each sip of this liquid miracle is a refreshing experience that will awaken your senses. Packed with vitamins and antioxidants, this tetrapack juice is a healthy choice for any time of day, whether you're enjoying it with breakfast or seeking a mid-day pick-me-up. Quench your thirst and indulge in the delicious flavour of this vibrant fruit juice, free from fuss, frills, pollutants or preservatives. Treat your taste buds to the revitalising taste of Paper Boat Anar Juice and experience the timeless elegance of this ancient superfruit.",
+   "ingredients": "Water, Pomegranate Juice Concentrate (7.9%), Pomegranate Juice (2.9%), Sweeteners (968, 955), Flavours (Nature-Identical And Natural Flavouring Substances), Acidity Regulator (Citric Acid) And Iodised Salt.\n*Reconstituted 45% Pomegranate Juice.",
+   "nutritionalInfo": {
+    "Energy": "22.0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "5.5 g",
+    "Total Sugars": "4.9 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "29.0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Apple Juice",
@@ -219,7 +270,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40105620-8_7-paper-boat-apple-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "An apple a day keeps the doctor away might just be the main mantra of the Indian parent's handbook, no? Which kid wasn't raised with sermons on how one must eat apples for health? It's a good thing that this biblical fruit is juicy, tasty and fulfilling or else we really have a bone to pick with our parents.",
+   "nutritionalInfo": {
+    "Serving Size": "150ml",
+    "Energy (kcal)": "55.2 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "13.8 g",
+    "Total Sugars (g)": "13.0 g",
+    "added sugars (g)": "12.0 g",
+    "Total fat (g)": "0.0 g",
+    "cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "58.6 mg",
+    "Added Vitamin D (mcg)": "5.0 mcg"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chilli Guava Juice",
@@ -273,7 +342,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165687-8_5-paper-boat-chilli-guava-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the tangy, tasty delight of Paper Boat's Chilli Guava Fruit Drink, a refreshing twist on a classic favourite. Crafted with care and expertise, this unique beverage captures the essence of India's culinary heritage, transporting you to bustling streets and vibrant markets with every sip. Made from real guava pulp and carefully selected chilli extracts, this drink offers a one-of-a-kind drinking experience that is both sweet and tangy, perfectly balanced to tantalize your taste buds. Imagine the way the juicy guava is sliced open and dunked in the aromatic masala, creating a mouthwatering sensation that will have you savouring every moment. Savour the nostalgic flavours and innovative concoctions that make this Chilli Guava Fruit Drink a beloved choice, free from any added colours, preservatives or GMOs. Enjoy this refreshing treat that captures the essence of childhood memories and the vibrant spirit of India.",
+   "ingredients": "Guava Pulp, Chilli Extract",
+   "nutritionalInfo": {
+    "Serving Size": "200ml",
+    "Energy (kcal)": "47.2 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "11.8 g",
+    "Total Sugars (g)": "11.5 g",
+    "added sugars (g)": "9.4 g",
+    "Total fat (g)": "0.0 g",
+    "cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "200.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000057"
+  }
  },
  {
   "title": "Guava Juice",
@@ -318,7 +406,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40105625-8_1-paper-boat-guava-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The restless few minutes before the school bell. The thap-thap-thap of your black shoes running down the school steps. The old school guard pushing open the gate. You rushing to the aunty with her basket of guavas perched on her cycle so that you can partake in this glorious after-school feast with both hands. Our guava drink is like we took that memory, squished it, and put it in a pack just for you.",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lychee Juice",
@@ -334,7 +427,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40114331_15-paper-boat-lychee-ras-litchi-juice.jpg"
-    }
+    },
+    "barcode": "8906080600265"
    }
   ],
   "images": [
@@ -363,7 +457,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114331-8_6-paper-boat-lychee-ras-litchi-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Every year the roads are lined with little bulbs in shades of red and pink. They are a beautiful sight and hard to miss! Every year we wait patiently for these decorated streets and we beg our parents for a taste of these plump, juicy, flavourful fruits. Oh, the love for lychee! We do know where it began and we do not see an end. This fruit is as sweet as they come and as delicious as it gets. We've taken its best bits and put it in a drink, cutely packaged for you to slurp on. No more craving for nature's best treat!",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy (kcal)": "62.4 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "15.6 g",
+    "Total Sugars (g)": "15.0 g",
+    "added sugars (g)": "13.0 g",
+    "Total fat (g)": "0.0 g",
+    "cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "56.0 mg",
+    "^Added Vitamin D (mcg)": "5.0 mcg"
+   },
+   "manufacturerName": "Hector Beverages 330 Finchley Castle Outer Circle Dodsworth Layout",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Orange Juice",
@@ -417,7 +529,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40105621-8_8-paper-boat-orange-juice-with-vitamin-d-no-preservatives.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Do you remember the little window between breakfast and morning break? That unexpected rumble from our stomachs while we were still trying to concentrate in the math class (one can only try). It was only then that we understood the true value of oranges packed in the blue Tupperware Dabba (Ma¢‚¬„¢s prized possession). Day after day, we would carry this powerhouse of vitamins with us and let its juicy freshness take over during those short breaks between classes, keeping us well-fed until lunch break a few hours later. It has been many years now, but even today, a bit of this citrus wonder transports us to a carefree time when Ma packed thoughtful dabbas and we actually got breaks to replenish ourselves. Ah, the sweet old days!\nPaper Boat Orange takes us on a nostalgic ride. Made with Nagpuri Oranges, it offers an unparalleled fresh and juicy taste. Not only delicious, but oranges are also packed with health benefits and are great for our immune system. At Paper Boat, we do not use any added colours, preservatives, or GMOs.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "150ml",
+    "Energy (kcal)": "60.0 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "15.0 g",
+    "Total Sugars (g)": "13.9 g",
+    "added sugars (g)": "12.6 g",
+    "Total fat (g)": "0.0 g",
+    "cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "62.0 mg",
+    "Vitamin D2 (ERGOCALCIFEROL)": "5.0 mcg",
+    "% RDA per serving+": "various"
+   },
+   "manufacturerName": "Hector Beverages 330 Finchley Castle Outer Circle Dodsworth Layout",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Sugar Jamun Juice",
@@ -433,7 +564,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40004590_9-paper-boat-jamun-drink.jpg"
-    }
+    },
+    "barcode": "8908001705127"
    }
   ],
   "images": [
@@ -456,7 +588,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40004590-6_5-paper-boat-jamun-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "We recently time-travelled and got you a little gift. We went back to the good old summers and fetched a fistful of memories. Remember Jamun? Our favourite telltale fruit that would leave us with purple tongues and full hearts. It turns out this humble fruit has more to offer than purple-stained tongues. Jamun is a powerhouse of essential vitamins, minerals, and antioxidants. And as if all this wasn't enough, we wanted to give you more, just like that return gift you weren't expecting. We made this drink with all the goodness of Jamun but with no added sugar! Yes, that's right, this drink has no added sugar. So if you're on a low-calorie diet or just watching your weight, this is the drink that will make sure you don't miss out on anything. No big deal. Nope. Not at all. This is just like any other drink.",
+   "ingredients": "Water, Jamun Pulp (25%), Sweeteners (968, 955), Iodised Salt, Lemon Juice Concentrate (0.4%), Flavours (Natural And Nature-Identical Flavouring Substances), Stabilizers (466, 412), Acidity Regulator (Citric Acid) And Black Salt. *Equivalent To 28% Jamun-Lemon Fruit Juice.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 ml",
+    "Serving Size": "200 ml",
+    "Energy": "14.0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "3.5 g",
+    "Total Sugars": "2.8 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "49.0 mg"
+   },
+   "manufacturerName": "Hector Beverages 330 Finchley Castle Outer Circle Dodsworth Layout Whitefield Bengaluru Karnataka 560066",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jaljeera",
@@ -472,7 +622,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20001195_16-paper-boat-jaljeera-drink.jpg"
-    }
+    },
+    "barcode": "8906080600906"
    }
   ],
   "images": [
@@ -501,7 +652,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20001195-8_1-paper-boat-jaljeera-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Escape the scorching summer heat with the refreshing and revitalising Jaljeera - a perfect blend of cumin, lemon juice, black pepper, and rock salt. This traditional Indian drink not only quenches your thirst but also aids digestion naturally, making it the ideal companion for heavy meals and elaborate family gatherings. Crafted with no added preservatives, Jaljeera offers a delightful sensory experience, with its tantalizing flavours and cooling properties. Whether you're seeking a respite from the sun's might or simply craving a delicious and nourishing beverage, Jaljeera is the answer, ready to transport you to a world of refreshment and delight.",
+   "ingredients": "Water, Sweeteners (968, 955), Lemon Juice Concentrate (1%)*, Spices And Condiments (Cumin Powder, Ginger Powder And Black Pepper Powder), Flavours (Nature-Identical And Natural Flavouring Substances), Iodised Salt, Black Salt, Acidity Regulator (330). Reconstituted 8% Lemon Juice. Contains Non-Caloric Sweetener. This Fruit Drink Contains An Admixture Of Erythritol And Sucralose.",
+   "nutritionalInfo": {
+    "Energy": "4.0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "1.0 g",
+    "Total Sugars": "0.1 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "146.0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconut Water",
@@ -517,7 +684,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40114332_10-paper-boat-coconut-water.jpg"
-    }
+    },
+    "barcode": "8906080601248"
    }
   ],
   "images": [
@@ -546,7 +714,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114332-8_6-paper-boat-coconut-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The sweet taste of nature¢‚¬„¢s coolest hydrant is reminiscent of many evenings at the beach. We¢‚¬„¢d have just enough money for one treat. After a sweaty evening filled with activities like running and playing ball, the whole bunch of cousins, elder ones being in charge of course, would invariably end up at their favourite nariyal pani wala who would help us pick the sweetest coconuts (it¢‚¬„¢s still a mystery to me how they can always tell those ones apart). To think that all these years later, we still pick a nariyal pani to cool down on a hot summer day, that says a lot about our allegiance to this natural coolant. Sadly there¢‚¬„¢s not as much playtime anymore but as long as there¢‚¬„¢s coconut juice, all we got to do is shut our eyes and be transported, giggles, laughter and all.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "200ml",
+    "Energy (kcal)": "22 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "5.5 g",
+    "Total Sugars (g)": "5.5 g",
+    "added sugars (g)": "0.6 g",
+    "Total fat (g)": "0.0 g",
+    "cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "8.5 mg",
+    "% RDA per serving": "2%, 2%, 0.9%"
+   },
+   "manufacturerName": "Hector Beverages 330 Finchley Castle Outer Circle Dodsworth Layout Whitefield Bengaluru Karnataka 560066",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Basil Seeds Drink Mixed Fruit",
@@ -591,7 +777,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327077-8_1-paper-boat-basilsabja-seeds-drink-mixed-fruit-flavour.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the goodness of a Mixed Fruit Sabja Seeds Drink €“ a delightful blend that combines the refreshing taste of mixed fruits with the unique texture of sabja seeds. It's a sweet experience that adds a twist to your beverage routine. So, take a sip, bite and savour the goodness with every gulp!",
+   "manufacturerName": "Salisons",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Basil Seeds Drink Pomegranate",
@@ -636,7 +828,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327078-8_1-paper-boat-paper-boat-basil-sabja-seeds-pomegranate-250ml.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the vibrant burst of flavour with a Pomegranate and Sabja Seeds Drink. A tangy pomegranate fruit drink, enhanced with the pleasant bite of sabja seeds, creates a truly invigorating drink. Enjoy the refreshing taste of this unique blend €“ a perfect companion for moments of pure refreshment. Cheers to a flavourful sip!",
+   "manufacturerName": "Salisons",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lychee Nata De Coco",
@@ -652,7 +850,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40327075_4-paper-boat-lychee-nata-de-coco-drink.jpg"
-    }
+    },
+    "barcode": "8906080604652"
    }
   ],
   "images": [
@@ -681,7 +880,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327075-8_2-paper-boat-lychee-nata-de-coco-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dive into a tropical escape with Paper Boat Nata de Coco Lychee Drink, a harmonious blend of sweet lychee and chewy nata de coco. Each sip transports you to lychee orchards, with the succulent flavour and delightful texture creating a refreshing, indulgent experience. Quench your thirst and savour the aroma and taste of this heavenly fusion, perfect for any occasion. Enjoy the journey to a tropical paradise in every drop.",
+   "ingredients": "Water, Sugar, Nata De Coco (9.5%) [98% Coconut Water, Sugar], Lychee Juice Concentrate (1.1%), Apple Juice Concentrate (0.6%), Acidity Regulators (Ins 330, Ins 331(Iii), Ins 296, Ins 327), Flavours (Nature-Identical And Natural Flavouring Substances), Gelling Agent (Ins 418), Antioxidant (Ins 385), Preservatives (Ins 211, Ins 202), Colours (Ins 124, Ins 129)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "250ml",
+    "Energy (kcal)": "60.8",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "15.2",
+    "Total Sugars (g)": "15.0",
+    "Added Sugars (g)": "12.2",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "103.0",
+    "%RDA": "7.6% As Per 2000kcal Energy"
+   },
+   "storageInstructions": "*Store in clean, dry and hygienic conditions, away from direct sunlight\n*Refrigerate and consume within 24 hours of opening",
+   "manufacturerName": "Salisons",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mango Nata De Coco",
@@ -726,7 +945,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352457-8_2-paper-boat-mango-flavour-nata-de-coco.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Imagine a drink that captures the decadence of pulpy mango with a delightful twist. Paper Boat Mango with Nata De Coco brings this perfect combo to life - rich, juicy mango blended with fun, chewy bits of nata de coco. It's refreshing, delicious, and irresistibly mango-licious - every sip is a playful burst of flavour and texture",
+   "manufacturerName": "Salisons",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixed Berries Nata De Coco",
@@ -771,7 +996,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352456-8_2-paper-boat-mixed-berries-nata-de-coco.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Presenting from the house of Paper Boat – a fun and delicious mixed berry drink bursting with notes of raspberries, blueberries, and strawberries. Enhanced with chewy, snackable chunks, it’s a refreshing treat you’ll want to sip again and again. Perfect for anytime indulgence, this delightful blend is one you’ll truly love.",
+   "manufacturerName": "Salisons",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kiwi Nata De Coco",
@@ -816,7 +1047,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40368976-8_1-paper-boat-nata-kiwi-flavoured-fruit-beverage.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Nata de Coco Kiwi is a vibrant and refreshing beverage that combines the tangy, zesty flavour of ripe kiwi with the fun, chewy texture of nata de coco. Designed for those who enjoy bold and refreshing drinks, it delivers a crisp, fruity taste that instantly uplifts the senses.\nThe bright kiwi notes offer a clean, slightly tart finish, perfectly balanced by soft, jelly-like nata de coco pieces that add a playful texture to every sip. This creates a refreshing and engaging drinking experience that feels both modern and satisfying.\nBest enjoyed chilled, Paper Boat Kiwi is an ideal choice for a refreshing break, a post-activity refresher, or simply a light and flavourful drink on the go.",
+   "ingredients": "Water, Nata de Coco (14%) (98% coconut water, sugar), Sugar, Kiwi Juice Concentrate (1%), Apple Juice Concentrate (0.6%), Acidity Regulators [INS 330, INS 331(iii), INS 327], Flavourings (nature-identical and natural flavouring substances), Gelling Agent (INS 418), Antioxidant (INS 385), Iodised Salt, Preservatives (INS 211, INS 202), Food Colours (INS 102, INS 133).",
+   "nutritionalInfo": {
+    "Energy": "50 kcal",
+    "Protein": "0 g",
+    "Carbohydrates": "12.5 g",
+    "Total Sugars": "12 g",
+    "Added Sugars": "8.6 g",
+    "Total Fat": "0 g",
+    "Sodium": "39 mg"
+   },
+   "usageInstructions": "Enjoy it with meals or as a standalone treat - this fruity beverage pairs perfectly with snacks and everyday moments.",
+   "manufacturerName": "(EE) GEO NUTRI FOODS PVT. LTD",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Orange Nata De Coco",
@@ -861,7 +1109,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327076-8_2-paper-boat-orange-nata-de-coco-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the captivating fusion of citrusy zest and chewy delight with the Paper Boat Orange Nata de Coco Drink. Crafted with real orange juice, this refreshing beverage delivers an authentic and vibrant citrus flavour that dances on your taste buds. The jelly-like goodness of Nata de Coco adds a burst of texture, creating a symphony of citrus notes and a tropical paradise in every sip. Quench your thirst with this zesty and rejuvenating treat, which is sure to transport you to a realm of citrus bliss.",
+   "ingredients": "Water, Sugar, Nata De Coco (9.5%) [98% Coconut Water, Sugar], Orange Juice Concentrate (1.9%)*, Acidity Regulators (Ins 330, Ins 331(Iii), Ins 327), Flavours (Nature-Identical And Natural Flavouring Substances), Gelling Agent (Ins 418), Iodised Salt, Preservatives (Ins 211, Ins 202), Food Colour (Ins 110)",
+   "nutritionalInfo": {
+    "Serving Size": "250ml",
+    "Serving Per Package": "1",
+    "Energy (kcal)": "53.2",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "13.3",
+    "Total Sugars (g)": "11.5",
+    "Added Sugars (g)": "10.3",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "54.0",
+    "%RDA": "7% (Energy), 52% (Added Sugars), 7% (Sodium)"
+   },
+   "storageInstructions": "*Store in a clean, dry and hygienic condition, away from direct sunlight\n*Refrigerate and consume within 24 hours of opening",
+   "manufacturerName": "Salisons",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Buttermilk",
@@ -897,7 +1165,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135113-5_4-paper-boat-butter-milkchaas-with-vitamin-d.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat buttermilk has no added preservatives and colours. This pack contains 50% of your daily vitamin D requirements. In spite of how delicious this drink is, we advise you not to drink more than two packs a day, as this would exceed your daily required value.",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000057"
+  }
  },
  {
   "title": "Coriander Buttermilk",
@@ -913,7 +1187,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40193427_6-paper-boat-coriander-buttermilk.jpg"
-    }
+    },
+    "barcode": "8906080602559"
    }
   ],
   "images": [
@@ -942,7 +1217,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40193427-8_5-paper-boat-coriander-buttermilk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Remember back in the day on Sunday mornings Maa would send us to the shop 'just around the corner' for a quick dhaniya run? Coriander was the last-minute addition to any recipe that would never fail to do the trick (funnily, this 'last minute' came very often). Coriander is the undisputed versatile tastemaker that Indian cooking can never get enough of. The humble condiment has added flavour not only to our haute cuisine but also to the lives of Indian kids everywhere what with all the 'dhaniya runs' and all. Maybe that's why our love for coriander chaas is unparalleled; nostalgia at its tastiest best! Coriander added to buttermilk would make for the most refreshing summer drink and we'd wait for it to be prepared right in front of our eyes, often helping with the churning of the creamy curd used to make it. The outcome would be so rich and flavourful that we'd instantly demand Maa make a fresh batch at the earliest.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "250ml",
+    "Energy (kcal)": "21.45",
+    "Protein (g)": "1.4",
+    "Carbohydrate (g)": "2.5",
+    "Total Sugars (g)": "2.0",
+    "added sugars (g)": "0.0",
+    "Total fat (g)": "0.65",
+    "saturated fat (g)": "NMT 0.4",
+    "trans fat (g)": "NMT 0.02",
+    "cholesterol (mg)": "2.0",
+    "Sodium (mg)": "284.0",
+    "Calcium (mg)": "51.0",
+    "Added Vitamin D (mcg)": "3.0",
+    "Added Vitamin B12 (mcg)": "0.45"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "HECTOR BEVERAGES PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001132"
+  }
  },
  {
   "title": "Jeera Buttermilk",
@@ -958,7 +1257,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40193426_6-paper-boat-jeera-buttermilk.jpg"
-    }
+    },
+    "barcode": "8906080602580"
    }
   ],
   "images": [
@@ -987,7 +1287,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40193426-8_5-paper-boat-jeera-buttermilk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "As kids you really don't understand the value of herbs, spices and tastemakers that add that special touch to your favourite dishes. Growing up, Didi and I disliked the look of jeera. We would spend many meal times picking jeera out of our buttermilk thinking what flavour could this little brown seed possibly could give much. Anything she explained to us about the taste it adds to our favourite food fell on deaf ears. Until, one day, she decided to teach us a lesson by not adding jeera to the buttermilk that she used to so lovingly used to make at home. She went a step further just to make her point and made us buttermilk with no additives, not even the usual salt and pepper. One gulp and we knew what had happened. It suffices to say that we *never* plucked out jeera from our food again and guzzled jeera buttermilk at once when Ma made it because we knew what life without it looked like. The answer is bland, very bland.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "250ml",
+    "Energy (kcal)": "21.45",
+    "Protein (g)": "1.4",
+    "Carbohydrate (g)": "2.5",
+    "Total Sugars (g)": "2.0",
+    "added sugars (g)": "0.0",
+    "Total fat (g)": "0.65",
+    "saturated fat (g)": "NMT 0.4",
+    "trans fat (g)": "NMT 0.02",
+    "cholesterol (mg)": "2.0",
+    "Sodium (mg)": "272.0",
+    "Calcium (mg)": "51.0",
+    "Added Vitamin D (mcg)": "3.0",
+    "Added Vitamin B12 (mcg)": "0.45"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "HECTOR BEVERAGES PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001132"
+  }
  },
  {
   "title": "Pudina Buttermilk",
@@ -1003,7 +1327,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40193425_6-paper-boat-pudina-buttermilk.jpg"
-    }
+    },
+    "barcode": "8906080602566"
    }
   ],
   "images": [
@@ -1032,7 +1357,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40193425-8_5-paper-boat-pudina-buttermilk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Our evening playtime started by making systematic rounds to all the gully houses to assemble the avengers ahem.. we mean assemble the gang. However, there was one house we'd always spend a little extra time. Why do you ask? Naughty, prankster twins Bunny and Sunny's mom made the freshest, tastiest pudina buttermilk and generously offered it to all the kids whenever we visited. The lure of zingy pudina when added to the perfect, cool glass of refreshing buttermilk was the perfect coolant between the badminton matches, hide & seek marathons or even cricket innings. Looking back it does seem like their mom secretly knew that we'd all surreptitiously land up there just for the promise of our favourite minty treat. Features: No added colours, preservatives, or added sugar. Enriched with Vitamin D, this food by its nature is gluten-free.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "250ml",
+    "Energy (kcal)": "21.05",
+    "Protein (g)": "1.4",
+    "Carbohydrate (g)": "2.4",
+    "Total Sugars (g)": "2.0",
+    "added sugars (g)": "0.0",
+    "Total fat (g)": "0.65",
+    "saturated fat (g)": "NMT 0.4",
+    "trans fat (g)": "NMT 0.02",
+    "cholesterol (mg)": "2.0",
+    "Sodium (mg)": "140.0",
+    "Calcium (mg)": "51.0",
+    "Added Vitamin D (mcg)": "3.0",
+    "Added Vitamin B12 (mcg)": "0.45"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "HECTOR BEVERAGES PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001132"
+  }
  },
  {
   "title": "Southern Masala Buttermilk",
@@ -1048,7 +1397,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40197560_3-paper-boat-southern-masala-buttermilk.jpg"
-    }
+    },
+    "barcode": "8906080602535"
    }
   ],
   "images": [
@@ -1077,7 +1427,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197560-8_1-paper-boat-southern-masala-buttermilk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "As distinct as the temples of Madurai and as cooling as the breeze on the backwaters of Alleypey, South Indian masala added to buttermilk is like a symphony of flavours for your taste buds. Besides, find us something as healthy and as refreshing as buttermilk on a hot summer day - we€™ll wait! The experience of sipping on a drink so uniquely homegrown with delicious masalas as a perfect accomplice is a rite of passage for every Indian. Take a sip and you€™ll instantly be transported to palm lined Kerala roads, feeling more blissed out and refreshed than you have in a long, long time!",
+   "manufacturerName": "HECTOR BEVERAGES PVT. LTD",
+   "fssaiLicense": "10015043001132",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lassi",
@@ -1122,7 +1478,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176474-8_1-paper-boat-lassi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Lassi, marks its humble beginnings in Ma's kitchen when she would churn a cold, creamy concoction in a matka bigger than me. She'd then artfully dole out the mix into the glass from a height (as if gravity was going to make the lassi sweeter). When the lassi hit the glass, it would magically be bubbly, frothy, and creamier. The classic lassi, with a cult following that swears to its legendary taste. Made from freshly churned dahi and a dash of rose, it is an irreplaceable childhood treat. Lush and rich with flavour, it'll leave your palate asking for more.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy": "92.2 kcal",
+    "Carbohydrate": "16.5 g",
+    "Sugar": "13.3 g",
+    "Protein": "1.6 g",
+    "Fat": "2.2 g",
+    "Calcium": "62.4 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Hector Beverages pvt ltd 330",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014047000094"
+  }
  },
  {
   "title": "Mango Lassi",
@@ -1167,7 +1539,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176475-8_1-paper-boat-mango-lassi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Lassi, marks its humble beginnings in Ma’s kitchen when she would churn a cold, creamy concoction in a Matka bigger than me. She’d then artfully dole out the mix into the glass from a height (as if gravity was going to make the lassi sweeter). When the lassi hit the glass, it would magically be bubbly, frothy, and creamier. Mango? Good! Lassi? Good! Mango Lassi? Best thing ever! The succulent taste of golden, ripe mangoes meets the freshly churned dahi- a dreamy love story between two of our favourites. Simply put, a delicacy so opulent with flavour that chilled glass of it will put the F5 back in the refresh button.",
+   "manufacturerName": "Hector Beverages pvt ltd 330",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014047000094"
+  }
  },
  {
   "title": "Chocolate Milkshake",
@@ -1183,7 +1561,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40165699_7-paper-boat-chocolate-milkshake.jpg"
-    }
+    },
+    "barcode": "8906080602177"
    }
   ],
   "images": [
@@ -1212,7 +1591,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165699-8_5-paper-boat-chocolate-milkshake.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "A cult favourite! Who can ever say no to chocolate, right? No birthday party, picnic, or family gathering was ever complete without a rich chocolate shake. Enjoyed by the kids and adults of the family alike, this delicious source of Vitamin D along with milk is really good for immunity. Besides, it was and always will be a family approved treat!",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "180ml",
+    "Energy (kcal)": "119.7",
+    "Protein (g)": "3.4",
+    "Carbohydrate (g)": "18.2",
+    "Total Sugars (g)": "17.3",
+    "added sugars (g)": "12.2",
+    "Total fat (g)": "3.7",
+    "saturated fat (g)": "2.1",
+    "trans fat (g)": "0.1",
+    "cholesterol (mg)": "10.4",
+    "Sodium (mg)": "113.0",
+    "Calcium (mg)": "95.8",
+    "Added Vitamin D (mcg)": "4.2"
+   },
+   "manufacturerName": "Hector Beverages pvt ltd 330",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Strawberry Milkshake",
@@ -1257,7 +1658,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165701-8_5-paper-boat-strawberry-milkshake.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tastes as delightful as it sounds, this rich, fruit flavoured drink is a thirst quencher for the ages. You canƒ¢¢€š¬¢€ž¢t go wrong with a strawberry milkshake because this Vitamin D enriched drink is so delicious by itself but is also the perfect accomplice to any snack ƒ¢¢€š¬¢‚¬Å“ sandwich, popcorn, French fries, you name it. Berry, berry yummy!",
+   "manufacturerName": "Hector Beverages pvt ltd 330",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Vanilla Milkshake",
@@ -1302,7 +1709,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165700-8_5-paper-boat-vanilla-milkshake.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The best way to get your essential Proteins and Calcium to maintain strong and healthy bones is through a simple and delicious vanilla milkshake. The true embodiment of the phrase, €˜Simplicity has its own charm€™, the vanilla variant is a humble ode to all things wholesome and wonderful.",
+   "manufacturerName": "Hector Beverages pvt ltd 330",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Thandai Flavoured Milk",
@@ -1318,7 +1731,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/412406_3-paper-boat-flavoured-milk-thandai.jpg"
-    }
+    },
+    "barcode": "8908001705745"
    }
   ],
   "images": [
@@ -1347,7 +1761,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/412406-8_2-paper-boat-flavoured-milk-thandai.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful flavours of Paper Boat Thandai, a traditional Indian beverage that's perfect for festive celebrations. This cooling drink is a delicious blend of milk, cardamom, fennel, and black pepper, enriched with the nutty goodness of almonds, melon seeds, and khus khus. Crafted with care and without any added preservatives or colours, this thandai offers a rich, creamy texture and a soothing, aromatic experience. Whether you're celebrating Holi or simply seeking a refreshing treat, Paper Boat Thandai is the ideal choice to add a touch of traditional charm to your day.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "180ml",
+    "Energy (kcal)": "113.0",
+    "Protein (g)": "4.4",
+    "Carbohydrate (g)": "18.0",
+    "Total Sugars (g)": "17.5",
+    "added sugars (g)": "11.7",
+    "Total fat (g)": "2.6",
+    "saturated fat (g)": "NMT 1.1",
+    "trans fat (g)": "NMT 0.1",
+    "cholesterol (mg)": "0.0",
+    "Sodium (mg)": "33.0",
+    "Calcium (mg)": "142.0"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sparkling Lemon Tea",
@@ -1392,7 +1827,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245065-8_5-paper-boat-sparkling-tea-lemon-ginger-flavoured-carbonated-drink-0-added-sugar-zero-calories.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Why reach for a can of sugar-filled, extra fizzy, ridiculously unhealthy soda when you can have what we€™re having? A perfect partner for your fast-food cravings and a delicious excuse to keep yourself feeling fresh, hydrated and healthy. ZERO sugar and calories! Need we say more? Grab a bottle and be on your way!",
+   "manufacturerName": "Hector beverages Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000078"
+  }
  },
  {
   "title": "Swing Coconut Water Drink",
@@ -1434,7 +1875,32 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327079-7_2-paper-boat-swing-coconut-water-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Embark on a tropical escape with Swing Coconut Water, a pure and refreshing delight for your senses. Sourced from young coconuts, this divine drink offers an authentic, light coconut flavour that is naturally sweet and mildly refreshing. Packed with essential electrolytes and nutrients, it replenishes lost fluids and keeps you hydrated, making it the perfect choice for health-conscious individuals seeking a natural alternative to sugary beverages. Designed to provide a clean and pure taste, this coconut water is free from preservatives and artificial ingredients, allowing you to indulge in the true essence of the tropics. Sip and unwind as the subtle sweetness of coconut transports you to a serene paradise, quenching your thirst and delighting your senses.",
+   "ingredients": "Water, Coconut Water Concentrate (4.3%), Sugar, Mineral (Potassium Chloride), Nature-Identical Flavouring Substances, Iodised Salt, Preservatives (242, 202, 224), Acidity Regulator (Citric Acid), Antioxidant (Ascorbic Acid)",
+   "nutritionalInfo": {
+    "Serving Size": "200ml",
+    "Servings Per Package": "6",
+    "Energy (kcal)": "25.0 Per 100ml",
+    "% RDA Per Serving": "2.5 %",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "6.2",
+    "Total Sugars (g)": "5.0/6.0",
+    "Added Sugars (g)": "3.6",
+    "% RDA": "14%",
+    "Total Fat (g)": "0.0",
+    "%": "0 %",
+    "Sodium (mg)": "20.0",
+    "RDA": "2%",
+    "Potassium (mg)": "500.0",
+    "RDA Per Serving": "29%"
+   },
+   "storageInstructions": "*Store in a cool place\n*Refrigerate after opening and consume within 48 hours of opening",
+   "manufacturerName": "1) Hindustan Foods Limited",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Jeera Soda",
@@ -1450,7 +1916,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40346719_1-paper-boat-swing-jeera.jpg"
-    }
+    },
+    "barcode": "8906080602634"
    }
   ],
   "images": [
@@ -1473,7 +1940,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346719-6_1-paper-boat-swing-jeera.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Swing Jeera drink (600ml) gives a fun, fizzy twist to the classic Indian beverage, celebrated for its cooling and digestive qualities. Swap out your usual cold drink for this cool yet traditional jeera soda, now available in a generous 600 ml bottle—perfect for sharing!",
+   "manufacturerName": "(HF) HINDUSTAN FOODS LIMITED",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Lively Orange",
@@ -1527,7 +2000,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366651_2-paper-boat-swing-swing-lively-orange-flavoured-fruit-beverage.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "This orange drink is the perfect refresher to savour your morning, noon or night! That's not all, it also takes care of 50% of your daily vitamin D requirement. So make way for the yummiest orange drink with Paper Boat Swing Orange. Sip a Swing!",
+   "ingredients": "Water, Sugar, Orange Juice Concentrate (2.8%), Acidity Regulator (330), Flavours (Natural And Nature-Identical Flavouring Substances), Stabilisers (466, 415), Preservatives (242, 202), Iodised Salt, Food Colour (110) And Vitamin D2 (Ergocalciferol).",
+   "nutritionalInfo": {
+    "Serving Size": "250ml",
+    "Servings Per Package": "1",
+    "Energy (kcal)": "55.6",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "13.9",
+    "Total Sugars (g)": "13.3",
+    "Added Sugars (g)": "12.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "12.0",
+    "Added Vitamin D2 (Mcg)": "3.0"
+   },
+   "storageInstructions": "*Store in a cool place\n*Refrigerate after opening\n*Consume within 24 hours of opening",
+   "manufacturerName": "1) HINDUSTAN FOODS LIMITED",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Lush Lychee",
@@ -1590,7 +2083,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218096_7-paperboat-swing-lush-lychee-juice-enriched-with-vitamin-d-no-gmos.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Swing+ Lush Lychee with Vitamin D is a delightful fusion of the exotic lychee's sweet essence and the nourishing touch of Vitamin D. This refreshing beverage offers a tropical escape in every sip, while the added goodness of Vitamin D makes it a perfect choice for those seeking a healthy twist. Enjoy the natural goodness of lychee with the added benefit of Vitamin D in a single, thirst-quenching package.",
+   "ingredients": "Water, Sugar, Lychee Juice Concentrate (1.2%), Apple Juice Concentrate (0.7%), Flavours (Nature-Identical and Natural Flavouring Substances), Acidity Regulator (330), Stabilisers (456, 412), Preservatives (202, 242), Antioxidant (300) and Vitamin D2 (Ergocalciferol)",
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy (kcal)": "64.0",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "16.0",
+    "Total Sugars (g)": "15.0",
+    "Added Sugars (g)": "14.7",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "9.0",
+    "Added Vitamin D2 (mcg)": "3.0"
+   },
+   "storageInstructions": "*Store in cool place\n*Refrigerate after opening and consume within 24 hours of opening",
+   "manufacturerName": "1) HINDUSTAN FOODS LIMITED",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Mixed Fruit Medley",
@@ -1644,7 +2156,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218093_7-paperboat-swing-mixed-fruit-medley-juice-enriched-with-vitamin-d-no-gmos.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the tropical ride of our Mixed Fruit Medley drink, a delicious and refreshing blend that's perfect for any occasion. Not only does it taste amazing, but it also takes care of 50% of your daily vitamin D requirement, making it a great way to boost your Vitamin D levels. Enriched with Vitamin D and containing ascorbic acid for an extra dose of Vitamin C, this all-natural drink is free from GMOs and is sure to leave you feeling fresh and full of energy. With its unique blend of mango, apple, and orange juices, this drink is a delightful treat that's both healthy and indulgent.",
+   "ingredients": "Water, Sugar, Mango Pulp Concentrate (1.1%), Apple Juice Concentrate (1%), Orange Juice Concentrate (0.65%), Acidity Regulator (330), Flavours (Nature-Identical and Natural Flavouring Substances), Iodised Salt, Stabilisers (466, 415), Preservatives (202, 242), Food Colours (102, 124, 110) and Vitamin D2 (Ergocalciferol)",
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy (kcal)": "53.6",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "13.4",
+    "Total Sugars (g)": "13.0",
+    "Added Sugars (g)": "11.7",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "28.0",
+    "Added Vitamin D2 (mcg)": "3.0"
+   },
+   "storageInstructions": "*Store in cool place\n*Refrigerate after opening and consume within 24 hours of opening",
+   "manufacturerName": "1) HINDUSTAN FOODS LIMITED",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Slurpy Mango",
@@ -1707,7 +2238,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218092_7-paperboat-swing-slurpy-mango-juice-enriched-with-vitamin-d-no-gmos.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Not only does this drink taste great but it feels great. With the added goodness of vitamin D, this drink takes care of 50% of your daily vitamin D requirement while satisfying your mango cravings.",
+   "ingredients": "Water, Sugar, Mango Pulp Concentrate, Acidity Regulator, Flavours, Stabilisers, Preservatives, Food Colours, Vitamin D2",
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy (kcal)": "62.8",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "15.7",
+    "Total Sugars (g)": "15.5",
+    "Added Sugars (g)": "13.7",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "3.2",
+    "Added Vitamin D2 (mcg)": "3.0"
+   },
+   "storageInstructions": "*Store in a cool place\n*Refrigerate after opening and consume within 24 hours",
+   "manufacturerName": "1) HINDUSTAN FOODS LIMITED",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Yummy Guava",
@@ -1770,7 +2320,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218094_7-paperboat-swing-yummy-guava-juice-enriched-with-vitamin-d-no-gmos.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "This drink is sure to leave you feeling fresh and full of energy, that's right, not only does it taste good, but it also takes care of 50% of your daily vitamin D requirement! A delicious source of ascorbic acid that gives this drink its vitamin C properties, and as we all know, we could always do with a little extra vitamin C.",
+   "ingredients": "Water, Guava Puree (14%), Sugar, Acidity Regulators (330, 331(iii)), Iodised Salt, Flavours (Nature-identical and Natural Flavouring Substances), Stabilisers (418, 466), Preservatives (202, 242), Antioxidant (300), Food Colour (160a(iii)) and Vitamin D2 (Ergocalciferol)",
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy (kcal)": "55.6",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "13.9",
+    "Total Sugars (g)": "13.5",
+    "Added Sugars (g)": "12.4",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "105.0",
+    "Added Vitamin D2 (mcg)": "3.0"
+   },
+   "storageInstructions": "*Store in a cool place\n*Refrigerate after opening and consume within 24 hours of opening",
+   "manufacturerName": "1) HINDUSTAN FOODS LIMITED",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Zesty Pomegranate",
@@ -1833,7 +2402,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218097_7-paperboat-swing-zesty-pomegranate-juice-enriched-with-vitamin-d-no-gmos.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Swing zesty pomegranate is made to make you better, enriched with vitamin D, each pack of this drink takes care of 50% of your daily vitamin D requirements. It is also a source of ascorbic acid, which gives this drink its vitamin C properties.",
+   "ingredients": "Water, Sugar, Pomegranate Juice Concentrate (1.9%), Flavours (Nature-Identical and Natural Flavouring Substances), Acidity Regulator (330), Iodised Salt, Preservatives (202, 242), Food Colours (150d, 124, 122) and Vitamin D2 (Ergocalciferol)",
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy (kcal)": "52.8",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "13.2",
+    "Total Sugars (g)": "13.0",
+    "Added Sugars (g)": "12.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "40.0",
+    "*Added Vitamin D2 (mcg)": "3.0"
+   },
+   "storageInstructions": "*Store in a cool place\n*Refrigerate after opening and consume within 24 hours",
+   "manufacturerName": "1) HINDUSTAN FOODS LIMITED",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Crispy Cranberry",
@@ -1849,7 +2437,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40366652_2-paper-boat-swing-swing-crispy-cranberry-flavoured-fruit-beverage.jpg"
-    }
+    },
+    "barcode": "8906080604003"
    }
   ],
   "images": [
@@ -1875,7 +2464,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366652-7_1-paper-boat-swing-swing-crispy-cranberry-flavoured-fruit-beverage.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Swing Crispy Cranberry Flavoured Fruit Beverage offers a refreshing twist with its tangy cranberry taste and crisp finish. Crafted for those who enjoy bold, fruity flavours, it delivers a delightful balance of sweetness and tartness. Conveniently packaged for on-the-go enjoyment, it is perfect for quick refreshment anytime, whether at work, school, or during travel.",
+   "ingredients": "Water, Sugar, Apple Juice Concentrate (0.7%), Cranberry Juice Concentrate (0.6%), Acidity Regulator (Citric Acid), Preservatives (202, 242), Flavours (Nature-Identical and Natural Flavouring Substances), Food Colours (150d, 129, 122), and Vitamin D2.",
+   "nutritionalInfo": {
+    "Energy": "54.8 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "13.7 g",
+    "Total Sugars": "13.6 g",
+    "Added Sugars": "12.8 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "3.0 mg",
+    "Added Vitamin D2": "3.0 mcg"
+   },
+   "manufacturerName": "(AF) Ameya Foods Ventures Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swing Juicer Mixed Fruit Medley",
@@ -1926,7 +2532,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40257288_5-paperboat-swing-swing-juicer-drink-mixed-fruit-medley-thick-flavourful-ready-to-serve.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Paper Boat Mixed Fruit, a well-balanced blend of the finest fruits that tantalizes the taste buds. This invigorating juice is enriched with vitamin D, ensuring your child receives the essential nutrients they need. Packaged in a convenient pouch, it's the perfect on-the-go refreshment, free from any added preservatives. Whether your little one is fussy with fruit salads or craves a burst of flavour, Paper Boat Mixed Fruit is sure to become a daily favourite, satisfying their thirst and providing a healthy dose of fruit power.",
+   "ingredients": "Water, Sugar, Apple Juice Concentrate (1%)*, Mango Pulp Concentrate (0.9%), Orange Juice Concentrate (0.6%)*, Acidity Regulator (330), Flavours (Nature- Identical and Natural Flavouring Substances), Stabilizers (466,412), Iodised Salt and Antioxidant (300)",
+   "nutritionalInfo": {
+    "Serving Size": "125ml",
+    "Energy (kcal)": "52.8",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "13.2",
+    "Total Sugars (g)": "12.9",
+    "added sugars (g)": "11.7",
+    "Total fat (g)": "0.0",
+    "Sodium (mg)": "28.0"
+   },
+   "storageInstructions": "*Refrigerate",
+   "manufacturerName": "HECTOR BEVERAGES PVT LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Swing Juicer Yummy Guava",
@@ -1977,7 +2601,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40256950_5-paperboat-swing-swing-juicer-drink-yummy-guava-thick-flavourful-ready-to-serve.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The restless a few minutes before the school bell. The thap-thap-thap of your black shoes running down the school steps. The old school guard pushing open the gate. You rushing to the aunty with her basket of guavas perched on her cycle. Our guava is like we took that memory, squished it, and put it in a pack just for you. And hey, here are more slow-mo shots for you to savour - imagine the way she slices open the guava and dunks in all that masala. Imagine you have to bite the collar of your uniform just so you don't salivate. Imagine hitching your lunch basket between your knees so that you can partake in this glorious feast with both hands. Yaaas. That's what we're talking about.",
+   "nutritionalInfo": {
+    "Serving Size": "125ml",
+    "Energy (kcal)": "56.0",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "14.0",
+    "Total Sugars (g)": "13.5",
+    "added sugars (g)": "12.5",
+    "Total fat (g)": "0.0",
+    "Sodium (mg)": "73.0"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "HECTOR BEVERAGES PVT LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Swing Juicer Lush Lychee",
@@ -2022,7 +2663,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40257287-8_5-paperboat-swing-swing-juicer-drink-lush-lychee-thick-flavourful-ready-to-serve.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "A crowd-pleaser--Lush Lychee! If you like lychee, you will love this rich drink. Made to help you unwind after a long day, the taste of divine lychees is sure to take your tastebuds on a trip. So indulge in a drink that is both good for you and your tastebuds. Plus, this drink comes with the added benefit of Vitamin D. What's more? It is also free of GMOs. Well? What are you waiting for, take that sip!",
+   "manufacturerName": "Hector beverages pvt ltd plot no 8(p)&9",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Swing Juicer Zesty Pomegranate",
@@ -2067,7 +2714,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40257286-8_5-paperboat-swing-swing-juicer-drink-zesty-pomegranate-thick-flavourful-ready-to-serve.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Ruby red, is just the right kind of sweet, and a boost for the rest of your day. There’s nothing like Swing Zesty Pomegranate to beat the heat. First, you drink it with your eyes and then you let its taste take over you. Absolutely tasty and filled with Vitamin D, this drink has got your back this summer!",
+   "manufacturerName": "Hector beverages pvt ltd plot no 8(p)&9",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Swing Juicer Pulpy Orange",
@@ -2083,7 +2736,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/414652_3-paper-boat-swing-juicier-drink-pulpy-orange.jpg"
-    }
+    },
+    "barcode": "8906080604096"
    }
   ],
   "images": [
@@ -2106,7 +2760,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/414652-6_2-paper-boat-swing-juicier-drink-pulpy-orange.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delight of Swing pulpy orange, a beverage that beautifully blends the taste of orange. So refreshing, you will not be able to put it down. We believe that being healthy is a natural state, best served with great taste, fun and enjoyment. Besides the goodness of essential macro and micronutrients, fresh fruits also provide nutrients and fibre which have vital significance.",
+   "nutritionalInfo": {
+    "Serving Size": "125ml",
+    "Energy (kcal)": "55.6 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "13.9 g",
+    "Total Sugars (g)": "13.5 g",
+    "added sugars (g)": "12.6 g",
+    "Total fat (g)": "0.0 g",
+    "Sodium (mg)": "10.8 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "HECTOR BEVERAGES PVT LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Swing Juicer Tasty Apple",
@@ -2145,7 +2816,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/414649-6_2-paper-boat-swing-juicier-drink-tasty-apple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Paper Boat apple is the best in the industry, offering wellness and goodness in a refreshing and enjoyable way. It is believed that being healthy is a natural state, best served with great taste, fun and enjoyment. Besides the essential macro and micronutrients, the fresh fruit also provides phytonutrients and fibre which have vital significance.",
+   "nutritionalInfo": {
+    "Serving Size": "125ml",
+    "Energy (kcal)": "58.8",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "14.7",
+    "Total Sugars (g)": "14.0",
+    "added sugars (g)": "13.3",
+    "Total fat (g)": "0.0",
+    "Sodium (mg)": "3.7"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "HECTOR BEVERAGES PVT LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Zero Sparkling Coffee Dark Roast",
@@ -2199,7 +2887,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40368060-8_1-paper-boat-zero-dark-roast-sparkling-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh your senses with the rich and energising flavour of Paper Boat Zero Sparkling Coffee Dark Roast, a zero-sugar sparkling drink crafted for those who enjoy light, bubbly beverages with no added sugar. This caffeinated beverage blends premium dark roasted coffee with a crisp, effervescent finish, delivering a bold cold brew taste that feels refreshing and invigorating. This zero-sugar sparkling coffee can is ideal for everyday hydration and those moments when you need a caffeine lift.\nThe depth of premium dark roasted cold brew, combined with the lightness of sparkling water, creates a vibrant coffee drink that feels energising. This zero-sugar sparkling drink offers a unique caffeinated beverage experience that keeps you feeling refreshed and energetic throughout the day.\nPaper Boat Zero Sugar Sparkling Coffee is a no-sugar and zero-calorie drink, making it a smart choice for those looking for lighter drinks and better beverage options without compromising on flavour. A perfect alternative to a cappuccino or latte as your coffee for the day.\nEnjoy this zero-sugar sparkling drink chilled on its own, pair it with meals, or use it as a mid-day refreshing, caffeinated, ready to drink beverage.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Flavours (Nature-Identical\nAnd Natural Flavouring Substances), Acidity Regulators [330, 331 (Iii)], Coffee\nBean Extractives, Caffeine (25mg/100ml), Preservative (211), Cocoa Extractives.",
+   "nutritionalInfo": {
+    "Energy": "0.0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "23.0 mg"
+   },
+   "manufacturerName": "Hector Beverages Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Ginger Ale",
@@ -2244,7 +2948,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40368062-8_1-paper-boat-zero-ginger-ale-flavoured-carbonated-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Zero Sugar Ginger Ale is a delicious, uplifting, and refreshing drink crafted for those who love fizzy drinks with no added sugar. With the bold, warming kick of ginger and crisp effervescence, this zero-sugar sparkling drink delivers a familiar ginger ale experience that feels light and enjoyable. With no sugar and zero calorie refreshment, it's your everyday soda but better.\nThe bold warmth of ginger creates a vibrant, sparkling drink that feels invigorating with every sip. Light and bubbly, Paper Boat Zero Sugar Ginger Ale can be enjoyed on its own, paired with meals, or used as a cocktail mixer. Familiar, refreshing, and balanced, this zero-sugar ginger ale keeps hydration enjoyable, without any guilt.\nPaper Boat Zero Sugar Ginger Ale is a no-sugar and zero-calorie drink, making it a smart choice for those looking for lighter drinks and better beverage options without compromising on the bold ginger flavour you love.\nPaper Boat Zero Sugar Ginger Ale fits seamlessly into daily moments. A guilt-free drink for those looking to cut back on sugar. The calorie-free beverage makes it an effortless swap.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Flavours (Natural And Nature-Identical Flavouring Substances), Acidity Regulators [330, 331 (Iii)], Caffeine (10mg/100ml), Preservative (211), Natural Food Colour (150d), Ginger Extractives.",
+   "nutritionalInfo": {
+    "Energy": "0.0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "13.0 mg"
+   },
+   "manufacturerName": "Hector Beverages Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Indian Tonic Water",
@@ -2298,7 +3018,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40368063-8_1-paper-boat-zero-indian-tonic-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh your senses with the crisp and sophisticated flavour of Paper Boat Zero Indian Tonic Water, a zero-sugar sparkling drink crafted for those who enjoy light, bubbly beverages with no added sugar. This zero-sugar sparkling water blends a carefully crafted botanical mix with a clean, slightly bitter finish, delivering a refined tonic taste that feels refreshing and elegant. Whether sipped on its own or used as a cocktail mixer, this zero-sugar sparkling water is ideal for everyday hydration and social occasions.\nThe signature botanical blend creates a sophisticated sparkling tonic water that feels clean and refined with every sip. This zero-sugar sparkling water offers a premium beverage experience that keeps you feeling refreshed throughout the day.\nPaper Boat Zero Sugar Indian Tonic Water is a no-sugar and zero-calorie drink, making it a smart choice for those looking for lighter drinks and better beverage options without compromising on flavour.\nEnjoy this zero-sugar sparkling water chilled on its own, pair it with meals, or use it as a cocktail mixer — its crisp botanical character pairs beautifully with gin and other spirits, making it an elegant zero-sugar choice for any occasion.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Acidity Regulator (330), Flavours (Natural & Nature-Identical Flavouring Substances), Preservative (211) And Quinine Salt.",
+   "nutritionalInfo": {
+    "Energy": "0.0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "2.0 mg"
+   },
+   "manufacturerName": "Hector Beverages Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Premium Sparkling Water",
@@ -2314,7 +3050,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40368061_1-paper-boat-zero-premium-sparkling-water.jpg"
-    }
+    },
+    "barcode": "8906080605062"
    }
   ],
   "images": [
@@ -2340,7 +3077,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40368061-7_1-paper-boat-zero-premium-sparkling-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Zero Sugar Premium Sparkling Water is a delicious, clean, and refreshing drink crafted for those who love the crisp simplicity of sparkling water. Pure, light, and effortlessly bubbly, this zero-sugar sparkling drink delivers a clean, crisp taste that feels refreshing. With no sugar and calorie-free refreshment, it's your everyday hydration but better.\nThe pure effervescence of premium sparkling water creates a clean, satisfying drink that feels light and refreshing. This soda water can be enjoyed on its own, paired with meals, or used as a cocktail mixer base. Simple, refreshing, and balanced, this Premium Soda Water keeps hydration enjoyable, without any guilt.\nPaper Boat Zero Sugar Premium Sparkling Water is a no-sugar and zero-calorie drink, making it a smart choice for those looking for lighter drinks and better beverage options without any compromise.\nIt fits seamlessly into daily moments and serves as the perfect mixer. A guilt-free drink for those looking to cut back on sugar. The calorie-free beverage makes it an effortless swap. Clean, refreshing, and crisp soda — the perfect drink for any mood or occasion.",
+   "ingredients": "Carbonated Water, Salts of Sodium",
+   "nutritionalInfo": {
+    "Energy": "0.0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "2.0 mg"
+   },
+   "manufacturerName": "Hector Beverages Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Pink Grapefruit Tonic Water",
@@ -2379,7 +3132,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346718-6_1-paper-boat-zero-pink-grapefruit-tonic-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Zero Sugar Grapefruit Tonic Water is a refreshing and healthy alternative to traditional tonic waters and sugary cocktail mixers. Infused with the citrusy blush of pink grapefruit and a balanced blend of botanicals, this zero sugar tonic water offers a crisp, tangy burst of flavour with the right fizz. Ideal for pairing with your favourite gin or using as a mixer.",
+   "manufacturerName": "Hindustan Foods Limited",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Cranberry Lime Sparkling Water",
@@ -2418,7 +3177,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333707-6_4-paper-boat-zero-cranberry-lime-sparkling-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your taste buds with the refreshing and zesty delight of Paper Boat Zero Sugar Sparkling Water. This cranberry-lime fusion delivers a bold, tangy flavour that energises and refreshes with every sip. The perfect balance of the tartness from cranberry and the citrusy zing of lime creates an exciting and satisfying experience, perfect for those who love a drink that surprises the palate. Indulge in this guilt-free pleasure, free from sugar and aspartame, and enjoy the fizzy, bubbly treat as a mixer for your favourite drinks, a revitalising companion on hot days, or a relaxing moment at home. Whether you're craving a unique beverage experience or seeking a refreshing twist, Paper Boat flavoured Soda Water is here to elevate your moments.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Acidity Regulators [330, 331(Ii)], Flavours (Natural And Nature-Identical Flavouring Substances), Preservative (211), Iodised Salt, Food Colours (129, 122, 133)",
+   "nutritionalInfo": {
+    "Per": "100ml",
+    "Energy (kcal)": "0.0 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "0.0 g",
+    "Total Sugars (g)": "0.0 g",
+    "Added Sugars (g)": "0.0 g",
+    "Total Fat (g)": "0.0 g",
+    "Sodium (mg)": "26.0 mg"
+   },
+   "storageInstructions": "Store in cool place. Refrigerate after opening.",
+   "manufacturerName": "Hindustan Foods Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000078"
+  }
  },
  {
   "title": "Zero Cumin Sparkling Water",
@@ -2457,7 +3234,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40239140-6_12-paper-boat-zero-sugar-sparkling-water-no-calories-hydrating-refreshing-drink-cumin-flavoured.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Old is Gold! Here is a beverage that combines an old favourite and a new range to make it iconic and refreshing! Ladies and gentlemen, put your hands together for Cumin, also known as Jeera! This super spice has a special place in every Indian household. We've taken its versatile flavour and given it a bubbly makeover. Indulge in this zero-sugar drink - a delightful, low-calorie option that gives your health the taste it deserves!",
+   "nutritionalInfo": {
+    "Per": "100ml",
+    "Energy (kcal)": "0.0 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "0.0 g",
+    "Total Sugars (g)": "0.0 g",
+    "Added sugars (g)": "0.0 g",
+    "Total Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "196.0 mg"
+   },
+   "manufacturerName": "Hindustan Foods Limited",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Ginger Lemon Sparkling Water",
@@ -2496,7 +3290,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40233853-6_12-paper-boat-fruit-beverage-no-added-sugar-low-calories-ginger-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a refreshing drink with a hint of ginger's flavorful fun! Say hello to cool tangy fun. Satisfy your taste buds without adding any calories to your daily intake. Introducing Zero Sugar Sparkling Water, the ultimate choice for tasty hydration without the guilt! A delicious alternative to soft drinks, colas, and other carbonated drinks with zero sugar and zero calories. Try our range of fizzy goodness with Peach, Ginger, Lemon, Coffee, Green Apple, Lemon Lime, Cumin, and Sparkling Tea. Count moments, not calories!\nWhether you're enjoying a sunny day at the beach, using it as a drink mixer for amazing cocktails, or simply relaxing at home, this Zero Sugar drink is your go-to beverage for a refreshing and guilt-free treat. The perfect fit for health-conscious folks who are looking for a solution to their fizzy cravings without the sugar. No aspartame, so you can sip without worry.",
+   "nutritionalInfo": {
+    "Per": "100ml",
+    "Energy (kcal)": "0.0 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "0.0 g",
+    "Total Sugars (g)": "0.0 g",
+    "Added sugars (g)": "0.0 g",
+    "Total Fat (g)": "0.0 g",
+    "Sodium (mg)": "56.0 mg"
+   },
+   "manufacturerName": "Hindustan Foods Limited",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Green Apple Sparkling Water",
@@ -2535,7 +3345,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245066-6_12-paper-boat-sparkling-water-green-apple-flavoured-fruit-drink-0-added-sugar-zero-calories.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a sip of sweet apple to refresh yourself during warm days, workouts, or long meetings. A sweet kick meets a hint of tangy green apple to make your zero-sugar drink most enjoyable! Satisfy your taste buds without adding any calories to your daily intake. Introducing Zero Sugar Sparkling Water, the ultimate choice for tasty hydration without the guilt! A delicious alternative to soft drinks, colas, and other carbonated drinks with zero sugar and zero calories. Try our range of fizzy goodness with Peach, Ginger, Lemon, Coffee, Green Apple, Lemon Lime, Cumin, and Sparkling Tea. Count moments, not calories! Whether you're enjoying a sunny day at the beach, using it as a drink mixer for amazing cocktails, or simply relaxing at home, this Zero Sugar drink is your go-to beverage for a refreshing and guilt-free treat. The perfect fit for health-conscious individuals who are looking for a solution to their fizzy cravings without the sugar. No aspartame, so you can sip without worry.",
+   "nutritionalInfo": {
+    "Per": "100ml:",
+    "Energy (kcal)": "0.0 kcal",
+    "Protein (g)": "0.0 g",
+    "Carbohydrate (g)": "0.0 g",
+    "Total Sugars (g)": "0.0 g",
+    "Added sugars (g)": "0.0 g",
+    "Total Fat (g)": "0.0 g",
+    "Sodium (mg)": "49.0 mg"
+   },
+   "manufacturerName": "Hindustan Foods Limited",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Mint Mojito Sparkling Water",
@@ -2574,7 +3400,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333709-6_3-paper-boat-zero-mint-mojito-sparkling-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh yourself with Mint Mojito Sparkling Water, a crisp and invigorating drink that combines the coolness of mint with the zesty flavour of mojito. This fizzy beverage is perfect for those seeking a revitalising, calorie-free option. Ideal for hot days, parties, or a light refreshment, it offers a delightful burst of flavour with every sip.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Acidity Regulators (330, 331(Iii)), Flavours (Nature-identical And Natural Flavouring Substances), And Preservative (211)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "0.0",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "0.0",
+    "Total Sugars (g)": "0.0",
+    "Added Sugars (g)": "0.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "31.0"
+   },
+   "storageInstructions": "Store in cool place. Refrigerate after opening.",
+   "manufacturerName": "Hindustan Foods Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000078"
+  }
  },
  {
   "title": "Zero Peach Sparkling Water",
@@ -2628,7 +3471,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40233852_13-paper-boat-peach-drink-no-added-sugar-low-calories.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Try the refreshing cooler that beats the heat while being a flavourful trip! Presenting, Paper Boat Zero Sugar Peach Sparkling Water! Whether at home or on the go, Zero Sugar Peach can be your perfect companion in its new bubbly form. This sugar-free drink is also a great mixer of cocktails/ mocktails to add a sparkle to your day! While being a zero-sugar drink, it gets the sweetness just right with a sparkling mouth-feel to top it off. It's a cold beverage with zero sugar and high on flavour and fun, offering a refreshing alternative that keeps your waistline and taste buds happy!",
+   "ingredients": "Carbonated water, sweeteners (968, 955), flavours (natural and nature-identical flavouring substances), acidity regulators (330, 331), preservative (211), food colours (110, 124)",
+   "nutritionalInfo": {
+    "Serving Size": "250ml",
+    "Energy (kcal)": "0.0",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "0.0",
+    "Total Sugars (g)": "0.0",
+    "Added Sugars (g)": "0.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "4.3"
+   },
+   "storageInstructions": "*Store in a cool place\n*Refrigerate after opening",
+   "manufacturerName": "1) HINDUSTAN FOODS LIMITED",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Yuzu Orange Sparkling Water",
@@ -2667,7 +3528,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333706-6_4-paper-boat-zero-yuzu-orange-sparkling-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Meet Yuzu, the citrus superstar with roots in Japan. This zesty cousin of the orange is bursting with flavour and fragrance, transforming every sip into a refreshing escape. Yuzu Sparkling Water blends tangy citrus with lively bubbles, making it the perfect companion for parties, road trips, or just chilling at home. Forget ordinary orange drinks - Yuzu's enchanting aroma and bold taste will leave you hooked, becoming your new favourite refresher wherever you go. Indulge in the refreshing essence of Paper Boat Zero Sugar Sparkling Water, a delightful twist for your taste buds. Whether you're craving a unique beverage experience, enhancing your favourite cocktail, or simply seeking a revitalising twist at home, Paper Boat flavoured Soda Water is here to elevate your moments. Free from sugar and aspartame, it's a guilt-free pleasure you can savour anytime.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Acidity Regulators (330, 331 (Iii), 296), Flavours (Nature-identical And Natural Flavouring Substances), Iodised Salt, Preservative (211) And Food Colours (102, 110)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "0.0",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "0.0",
+    "Total Sugars (g)": "0.0",
+    "Added Sugars (g)": "0.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "52.6"
+   },
+   "storageInstructions": "Store in a cool place. Refrigerate after opening.",
+   "manufacturerName": "Hindustan Foods Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000078"
+  }
  },
  {
   "title": "Zero Mango Passion Sparkling Water",
@@ -2706,7 +3584,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366645-6_1-paper-boat-zero-zero-mango-passion-sparkling-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh your senses with the tropical taste of Paper Boat Zero Sugar Mango Passion Sparkling Water, a light and bubbly beverage crafted for those who enjoy refreshing drinks without added sugar. Blending the sweetness of mango with the tangy notes of passion fruit, it delivers a vibrant and satisfying flavour with every sip, perfect for everyday hydration and social occasions.\nThis zero sugar, zero calorie drink offers a guilt-free way to enjoy a fruity, tropical experience without compromising on taste. Versatile and easy to enjoy, it can be served chilled on its own, paired with meals, or used as a mixer to create refreshing beverages for any occasion.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Acidity Regulators [330, 331 (iii)], Flavours (Nature-Identical and Natural Flavouring Substances), Iodised Salt, Preservative (211), and Food Colours (110, 102).",
+   "nutritionalInfo": {
+    "Energy": "0.0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "30.0 mg"
+   },
+   "manufacturerName": "(EE) Geo Nutri Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Cranberry Lime Prebiotic Soda",
@@ -2745,7 +3639,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366648-6_1-paper-boat-zero-zero-cranberry-lime-prebiotic-soda.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Cranberry Lime with Prebiotic is a refreshing, uplifting fizzy drink crafted for those who enjoy soda with a better-for-you twist. Blending the tangy zest of lime with the bold taste of cranberry, it offers a crisp and clean flavour that feels light and satisfying. With no sugar and zero calories, it delivers guilt-free refreshment for everyday enjoyment.\nEnriched with 5g of added prebiotic dietary fibre per can, it helps support digestive wellness by nourishing beneficial gut bacteria. Ideal for complementing high-protein diets, it can be enjoyed on its own, paired with meals, or used as a mixer. Convenient and versatile, this prebiotic soda fits seamlessly into daily life—refreshing, balanced, and thoughtfully crafted.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Fibre (Resistant Dextrin), Flavours (Natural and Nature-Identical Flavouring Substances), Acidity Regulators [330, 331 (iii)], Caffeine (14 mg/100 ml), Preservative (211), Iodised Salt, and Food Colours (129, 122, 133).",
+   "nutritionalInfo": {
+    "Energy": "3.82 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "1.8 g",
+    "Total Sugars": "0.1 g",
+    "Added Sugars": "0.0 g",
+    "Dietary Fibre": "1.7 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "7.0 mg"
+   },
+   "manufacturerName": "(EE) Geo Nutri Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Lemon Lime Prebiotic Soda",
@@ -2784,7 +3695,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366647-6_1-paper-boat-zero-zero-lemon-lime-prebiotic-soda.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Lemon Lime with Prebiotic is a refreshing and uplifting fizzy drink, crafted for those who enjoy soda with a better-for-you twist. Combining zesty lemon with tangy lime, it delivers a crisp and clean flavour that feels light and satisfying. With no sugar and zero calories, it offers guilt-free refreshment for everyday enjoyment.\nEnriched with 5g of added prebiotic dietary fibre per can, it helps support digestive wellness by nourishing beneficial gut bacteria. Ideal for complementing high-protein diets, it can be enjoyed on its own, paired with meals, or used as a mixer. Convenient and versatile, this prebiotic soda fits seamlessly into daily life—refreshing, balanced, and thoughtfully crafted.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Fibre (Resistant Dextrin), Flavours (Nature-Identical and Natural Flavouring Substances), Acidity Regulators [330, 331 (iii)], Iodised Salt, Caffeine (14 mg/100 ml), and Preservative (211).",
+   "nutritionalInfo": {
+    "Energy": "3.8 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "1.8 g",
+    "Total Sugars": "0.1 g",
+    "Added Sugars": "0.0 g",
+    "Dietary Fibre": "1.7 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "51.0 mg"
+   },
+   "manufacturerName": "(EE) Geo Nutri Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Mint Mojito Prebiotic Soda",
@@ -2800,7 +3728,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40366649_1-paper-boat-zero-zero-mint-mojito-prebiotic-soda.jpg"
-    }
+    },
+    "barcode": "8906080605000"
    }
   ],
   "images": [
@@ -2823,7 +3752,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366649-6_1-paper-boat-zero-zero-mint-mojito-prebiotic-soda.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Mint Mojito with Prebiotic is a refreshing, uplifting fizzy drink designed for those who enjoy soda with a better-for-you twist. Infused with a cool blend of mint and a hint of lime, it delivers a crisp and clean taste that feels light and satisfying. With no sugar and zero calories, it offers guilt-free refreshment for everyday enjoyment.\nEnriched with 5g of added prebiotic dietary fibre per can, it helps support digestive wellness by nourishing beneficial gut bacteria. Ideal for complementing high-protein diets, it can be enjoyed on its own, paired with meals, or used as a mixer. Convenient and versatile, this prebiotic soda fits seamlessly into your daily routine—refreshing, balanced, and thoughtfully crafted.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Fibre (Resistant Dextrin), Acidity Regulators [330, 331 (iii)], Flavours (Nature-Identical and Natural Flavouring Substances), Caffeine (14 mg/100 ml), and Preservative (211).",
+   "nutritionalInfo": {
+    "Energy": "3.82 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "1.8 g",
+    "Total Sugars": "0.1 g",
+    "Added Sugars": "0.0 g",
+    "Dietary Fibre": "1.7 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "28.0 mg"
+   },
+   "manufacturerName": "(EE) Geo Nutri Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Yuzu Orange Prebiotic Soda",
@@ -2839,7 +3785,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40366646_1-paper-boat-zero-zero-yuzu-orange-prebiotic-soda.jpg"
-    }
+    },
+    "barcode": "8906080604959"
    }
   ],
   "images": [
@@ -2862,7 +3809,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366646-6_1-paper-boat-zero-zero-yuzu-orange-prebiotic-soda.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Paper Boat Yuzu Orange with Prebiotic is a refreshing and uplifting fizzy drink, crafted for those who enjoy soda with a better-for-you twist. Blending citrusy orange notes with a hint of yuzu, it delivers a crisp and clean flavour that feels light and satisfying. With no sugar and zero calories, it offers guilt-free refreshment for everyday enjoyment.\nEnriched with 5g of added prebiotic dietary fibre per can, it helps support digestive wellness by nourishing beneficial gut bacteria. Ideal for complementing high-protein diets, it can be enjoyed on its own, paired with meals, or used as a mixer. Convenient and versatile, this prebiotic soda fits seamlessly into daily life—refreshing, balanced, and thoughtfully crafted.",
+   "ingredients": "Carbonated Water, Sweeteners (968, 955), Fibre (Resistant Dextrin), Acidity Regulators [330, 331 (iii), 296], Flavours (Nature-Identical and Natural Flavouring Substances), Caffeine (14 mg/100 ml), Iodised Salt, Preservative (211), and Food Colours (102, 110).",
+   "nutritionalInfo": {
+    "Energy": "3.82 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "1.8 g",
+    "Total Sugars": "0.1 g",
+    "Added Sugars": "0.0 g",
+    "Dietary Fibre": "1.7 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "30.0 mg"
+   },
+   "manufacturerName": "(EE) Geo Nutri Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aam Papad Fruit Bar",
@@ -2907,7 +3871,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121100-8_1-paper-boat-aam-papad-fruit-bar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, nostalgic flavour of Paper Boat Aam Papad, a delightful treat that captures the essence of homemade goodness. Crafted from handpicked, ripe mangoes sourced from sun-kissed orchards, these bite-sized papads boast a perfect balance of sweet and tangy, with no added colours or preservatives. Experience a burst of flavour in every piece as you rediscover the child-like joy of sneaking into the kitchen for a forbidden snack, just like the author's cherished memories.\nWhether you're craving a traditional Indian delight or exploring new taste sensations, Paper Boat Aam Papad is the perfect choice for any occasion, offering a gluten-free, plant-based indulgence that will transport you back to the carefree days of your youth.",
+   "ingredients": "MANGO PUREE (79%), SUGAR, WATER, STABILIZER (PECTIN), ACIDITY REGULATOR (CITRIC ACID), ADDED FLAVOURS (NATURAL AND NATURE-IDENTICAL FLAVOURING SUBSTANCES)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "321.6",
+    "Carbohydrate (g)": "80.0",
+    "Added Sugar (g)": "51.2",
+    "Protein (g)": "0.4",
+    "Fat (g)": "0.0"
+   },
+   "storageInstructions": "*Store in cool, dry and hygienic conditions\n*Keep the pack away from direct sunlight and heat",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peanut Chikki Bar",
@@ -2923,7 +3902,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40117875_12-paper-boat-chikki-peanut-bar.jpg"
-    }
+    },
+    "barcode": "8906080600920"
    },
    {
     "title": "100g",
@@ -2958,7 +3938,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185238_3-paper-boat-chikki-peanut-bar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Made with the finest quality peanuts and jaggery, its crunchy sweetness is sure to bring a smile to your face.",
+   "ingredients": "Peanuts (50%), Jaggery, Sugar And Liquid Glucose",
+   "nutritionalInfo": {
+    "Serving Size": "25g",
+    "Serving Per Package": "1",
+    "Energy (kcal)": "497.6",
+    "Protein (g)": "13.9",
+    "Carbohydrate (g)": "56.5",
+    "Total Sugars (g)": "45.3",
+    "Added Sugars (g)": "24.4",
+    "Total Fat (g)": "24.0",
+    "Saturated Fat (g)": "5.4",
+    "Trans Fat (g)": "0.05",
+    "Sodium (mg)": "25.6"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place away from direct sunlight\n*Consume immediately after opening",
+   "manufacturerName": "Hector Beverages",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dry Fruit Chikki Bar",
@@ -3003,7 +4003,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200952-8_6-paper-boat-dry-fruit-chikki.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the nostalgic flavours of holidays past with Paper Boat's Dry Fruit Chikki Multi Pack. This classic snack has long been synonymous with the joy of family adventures to scenic locales, where the crisp, fresh air and laughter of loved ones created cherished memories. Crafted with the finest quality peanuts and jaggery, each bite of this crunchy, sweet treat transports you back to those carefree days, when the simple pleasures of life were the most satisfying.\nWhether enjoyed as a mid-day snack, an after-dinner delight, or a tiffin box favourite, this Paper Boat Dry Fruit Chikki is sure to bring a smile to your face and a sense of warmth to your heart. Relive the magic of holidays in the hills with every delectable morsel.",
+   "ingredients": "MIXED NUTS 50% (CASHEW, ALMONDS AND PISTACHIO), JAGGERY, SUGAR, GLUCOSE SYRUP, EDIBLE COMMON SALT (IODISED SALT)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "25g",
+    "Energy (kcal)": "463.4 kcal",
+    "Protein (g)": "8.9 g",
+    "Carbohydrate (g)": "59.7 g",
+    "Total Sugars (g)": "48.2 g",
+    "added sugars (g)": "28.8 g",
+    "Dietary Fibre (g)": "3.6 g",
+    "Total fat (g)": "21.0 g",
+    "saturated fat (g)": "NMT 2.8 g",
+    "trans fat (g)": "NMT 0.0 g",
+    "cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "36.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place away from direct sunlight\n*Consume immediately after opening",
+   "manufacturerName": "Ramdev Food Products Pvt. Ltd",
+   "fssaiLicense": "10012064000017",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sesame Chikki",
@@ -3048,7 +4071,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185240-8_1-paper-boat-sesame-chikki.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The crunch of golden roasted sesame seeds, the earthy sweetness of jaggery - it is a match made in heaven. Imagine heavenly blend simply melting in your mouth as you're transcended back to fonder days, Yass, that's what we are talking about! But don't take our word for it, go on, give it a try, you'll come back again for more, we swear!",
+   "manufacturerName": "Hector Beverages Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Honey Roasted Almond Bar",
@@ -3064,7 +4093,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40200953_6-paper-boat-honey-roasted-almond-bar.jpg"
-    }
+    },
+    "barcode": "8906080602764"
    }
   ],
   "images": [
@@ -3093,7 +4123,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200953-8_5-paper-boat-honey-roasted-almond-bar.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Growing up, we siblings will never forget the customary Diwali rounds to the homes of all our extended family. We would be dressed to the nines in Indian finery, and nervously making shy guesses about who is who when quizzed by half-familiar adults of the family. The one thing we would actually look forward to were the yummy snacks; especially the unique dry fruit and nut recipes waiting to be devoured by us. Hey, who can after all make a pass on perfectly roasted badam laced in the finest honey and jaggery? But our parents were of a different opinion, we were often met with a ˜dont embarrass us\" look that only we knew existed- a memory that sends the whole family into a fit of laughter even to this day!",
+   "manufacturerName": "Hector Beverages Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Golgappa Pani Mix",
@@ -3138,7 +4174,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221317-8_6-paper-boat-golgappa-pani-mix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Trying to conquer the big puris overflowing with teekha-meetha pani and boiled aaloo before they fell apart was an extreme sport. Losing count while wanting more and waiting for sookha puri was part of the routine. There is no way to explain the emotion while eating golgappa. You just open your mouth as wide as you can and the rest is out of your control! Here's an ode to one of India's finer culinary experiences, the tangy-sweet-twisted taste of our beloved Golgappa. A flavour that's bound to go down in history and will forever dance on our tongues!",
+   "manufacturerName": "Symega Food Ingredients Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  },
  {
   "title": "Panipuri Pellets",
@@ -3183,6 +4225,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200037-8_5-paper-boat-panipuri-pellets.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Toh chalein pani puri khaane? 72 year old, usually stern Gupta uncle became a child once again with an unmistakable look of mischief in his eyes. As annoyed as he always got with the building kids and their rowdy cricket shenanigans, he made up for it by being the provider of pani puri! Every Sunday, as if to make peace, he chaperoned all the bacchas to the best pani puri wallah in the area and treated them to what is undoubtedly the monarch of all Indian snacks. As they gobbled one puri after another, talking, laughing, at that moment there would be no difference between a 72-year-old and a 7-year-old. That's the power of pain puri!",
+   "manufacturerName": "HECTOR BEVERAGES PVT LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000017"
+  }
  }
 ]
