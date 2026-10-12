@@ -1,0 +1,263 @@
+[
+ {
+  "title": "Tea",
+  "handle": "tea",
+  "vendor": "3 Roses (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266535_4-3-roses-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266591_9-3-roses-tea-dust.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266596_13-3-roses-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266572_6-3-roses-dust-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "740",
+    "compare_at_price": "740",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/102875_5-3-roses-dust-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266535_4-3-roses-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266535-2_4-3-roses-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266535-3_4-3-roses-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266535-4_4-3-roses-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266591_9-3-roses-tea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266596_13-3-roses-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266572_6-3-roses-dust-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/102875_5-3-roses-dust-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Top Star Tea",
+  "handle": "top-star-tea",
+  "vendor": "3 Roses (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "92",
+    "compare_at_price": "92",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/281595_6-3-roses-topstar-tea-dust.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40119014_2-3-roses-tea-top-star.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "430",
+    "compare_at_price": "430",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002111_12-3-roses-top-star.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/281595_6-3-roses-topstar-tea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/281595-2_7-3-roses-topstar-tea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/281595-3_7-3-roses-topstar-tea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/281595-4_7-3-roses-topstar-tea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/281595-5_7-3-roses-topstar-tea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/281595-6_3-3-roses-topstar-tea-dust.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40119014_2-3-roses-tea-top-star.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002111_12-3-roses-top-star.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Natural Care Tea",
+  "handle": "natural-care-tea",
+  "vendor": "3 Roses (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40062834_7-3-roses-natural-care-tea.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/281594_9-3-roses-natural-care-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160308_6-3-roses-natural-care-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062834_7-3-roses-natural-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062834-2_8-3-roses-natural-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062834-3_6-3-roses-natural-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062834-4_6-3-roses-natural-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062834-5_7-3-roses-natural-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062834-6_2-3-roses-natural-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/281594_9-3-roses-natural-care-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160308_6-3-roses-natural-care-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Elaichi Tea",
+  "handle": "elaichi-tea",
+  "vendor": "3 Roses (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506_1-3-roses-elaichi-flavoured-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367507_1-3-roses-elaichi-flavoured-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506_1-3-roses-elaichi-flavoured-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506-2_1-3-roses-elaichi-flavoured-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506-3_1-3-roses-elaichi-flavoured-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506-4_1-3-roses-elaichi-flavoured-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506-5_1-3-roses-elaichi-flavoured-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506-6_1-3-roses-elaichi-flavoured-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506-7_1-3-roses-elaichi-flavoured-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506-8_1-3-roses-elaichi-flavoured-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

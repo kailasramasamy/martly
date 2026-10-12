@@ -1,0 +1,46 @@
+{
+  "brand": "3 Roses (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "3-roses-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/brooke-bond/logo-f400aa86.png",
+  "themeColor": "#D7141A",
+  "themeColorSecondary": "#F2B705",
+  "namePrefix": "3 Roses ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Top\\ Star\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Care\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Elaichi\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    }
+  ]
+}

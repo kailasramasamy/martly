@@ -1,0 +1,5 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Tea,3 Roses Tea,update,Beverages > Tea > Leaf & Dust Tea (CTC),50g ₹45 | 100g ₹90 | 250g ₹220 | 500g ₹380 | 1kg ₹740,50g ₹45 | 100g ₹90 | 250g ₹220 | 500g ₹380 | 1kg ₹740,8,
+Top Star Tea,3 Roses Top Star Tea,create,Beverages > Tea > Leaf & Dust Tea (CTC),100g ₹92 | 250g ₹220 | 500g ₹430,100g ₹92 | 250g ₹220 | 500g ₹430,8,
+Natural Care Tea,3 Roses Natural Care Tea,create,Beverages > Tea > Herbal & Flavoured Tea,100g ₹100 | 250g ₹240 | 500g ₹480,100g ₹100 | 250g ₹240 | 500g ₹480,8,
+Elaichi Tea,3 Roses Elaichi Tea,create,Beverages > Tea > Herbal & Flavoured Tea,250g ₹235 | 500g ₹450,250g ₹235 | 500g ₹450,8,
