@@ -1,0 +1,30 @@
+{
+  "brand": "Maaza (Coca-Cola)",
+  "manufacturer": "Hindustan Coca-Cola Beverages Pvt. Ltd.",
+  "feed": "maaza-feed.json",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FDB913",
+  "namePrefix": "Maaza ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Mango\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    },
+    {
+      "match": "^Aam\\ Panna\\ Fruit\\ Drink$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Aam Panna"
+      ]
+    }
+  ],
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/maaza/logo-f30c1d6a.png"
+}

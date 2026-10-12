@@ -1,0 +1,116 @@
+[
+ {
+  "title": "Mango Drink",
+  "handle": "mango-drink",
+  "vendor": "Maaza (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265690_16-maaza-mango-drink.jpg"
+    }
+   },
+   {
+    "title": "125ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265725_18-maaza-juice-mango-refresh.jpg"
+    }
+   },
+   {
+    "title": "1.2L",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265695_19-maaza-mango-drink.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001001_23-maaza-juice-mango.jpg"
+    }
+   },
+   {
+    "title": "1.75L",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197903_1-maaza-mango-fruit-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265690_16-maaza-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265690-2_16-maaza-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265690-3_14-maaza-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265690-4_13-maaza-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265690-5_13-maaza-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265690-6_8-maaza-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265690-7_5-maaza-mango-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265690-8_3-maaza-mango-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Aam Panna Fruit Drink",
+  "handle": "aam-panna-fruit-drink",
+  "vendor": "Maaza (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251623_2-maaza-aam-panna-refreshing-fruit-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251623_2-maaza-aam-panna-refreshing-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251623-2_2-maaza-aam-panna-refreshing-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251623-3_2-maaza-aam-panna-refreshing-fruit-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40251623-4_2-maaza-aam-panna-refreshing-fruit-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
