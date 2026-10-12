@@ -1,0 +1,137 @@
+[
+ {
+  "title": "Masala Balls",
+  "handle": "masala-balls",
+  "vendor": "Cheetos (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "28g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003270_3-cheetos-masala-balls-snacks.jpg"
+    }
+   },
+   {
+    "title": "84g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324276_4-cheetos-masala-balls-crispy-chips-snacks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003270_3-cheetos-masala-balls-snacks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003270-2_3-cheetos-masala-balls-snacks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003270-3_3-cheetos-masala-balls-snacks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003270-4_3-cheetos-masala-balls-snacks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003270-5_2-cheetos-masala-balls-snacks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003270-6_2-cheetos-masala-balls-snacks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003270-7_2-cheetos-masala-balls-snacks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324276_4-cheetos-masala-balls-crispy-chips-snacks.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cheez Puffs",
+  "handle": "cheez-puffs",
+  "vendor": "Cheetos (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "28g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272_5-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272_5-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272-2_7-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272-3_7-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272-4_7-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272-5_7-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272-6_3-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272-7_3-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272-8_1-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Puffs",
+  "handle": "puffs",
+  "vendor": "Cheetos (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "135g",
+    "price": "134",
+    "compare_at_price": "134",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027_1-cheetos-puffs.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027_1-cheetos-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027-2_1-cheetos-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027-3_1-cheetos-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027-4_1-cheetos-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027-5_1-cheetos-puffs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027-6_1-cheetos-puffs.jpg"
+   }
+  ]
+ }
+]
