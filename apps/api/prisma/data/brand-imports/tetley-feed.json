@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264559_2-tetley-green-tea-regular.jpg"
-    }
+    },
+    "barcode": "8901052087778"
    },
    {
     "title": "25 pcs",
@@ -60,7 +61,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264559-8_1-tetley-green-tea-regular.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, rejuvenating flavours of Tetley Green Tea, a true delight for the senses. Packed with a powerful punch of antioxidants, this tea not only cleanses your body from within but also supports your immune system with the added boost of Vitamin C. Sip on this refreshing beverage to experience a surge of energy and mental clarity, perfect for those busy work hours or cosy nights in. Driven by sustainability, these plastic-free and staple-free tea bags ensure you can enjoy a guilt-free moment of relaxation, while the natural flavours transport you to a realm of pure indulgence. Embrace the goodness of Tetley Green Tea and feel the difference in your overall well-being.",
+   "ingredients": "Green Tea^ (99.4%), Vitamin C (0.62%)",
+   "nutritionalInfo": {
+    "Nutrition Per": "Serve",
+    "Serving Size": "1 Teabag Brewed In 120 ml Water",
+    "Energy": "0 kcal",
+    "Protein": "Nil g",
+    "Carbohydrate": "Traces g",
+    "Sugar": "Nil g",
+    "Fat": "Nil g",
+    "Vitamin C": "8 mg",
+    "RDA": "20% Recommended Dietary Allowance Per Day (Ref: Nutrient Requirements And Recommended Dietary Allowances For Indians', Icmr, 2010)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Immune Classic Green Tea",
@@ -76,7 +96,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/297461_26-tetley-green-tea-long-leaf.jpg"
-    }
+    },
+    "barcode": "8901052004447"
    },
    {
     "title": "250g",
@@ -123,7 +144,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/297461-8_4-tetley-green-tea-long-leaf.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the refreshing delight of Tetley's Long Leaf Green Tea. Crafted using an age-old Japanese technique, this premium green tea is naturally rich in antioxidants, providing a light and smooth flavour without the bitterness often associated with green teas. Sip and savour the refreshing goodness as it helps you feel relaxed, hydrated, and flushed of toxins throughout the day. Whether enjoyed after breakfast, before exercise, or before bedtime, Tetley's Long Leaf Green Tea offers a truly refreshing experience, allowing you to stay energised and rejuvenated from dawn till dusk.",
+   "ingredients": "Green Tea^(99.52%), Vitamin C (0.48%)",
+   "nutritionalInfo": {
+    "Serving Size": "1.25 g",
+    "Servings Per Pack": "80",
+    "Energy": "0 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "0 mg",
+    "Vitamin C": "7.5%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Immune Lemon & Honey Green Tea Bags",
@@ -139,7 +180,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/263599_2-tetley-green-tea-lemon-honey.jpg"
-    }
+    },
+    "barcode": "8901052087785"
    },
    {
     "title": "25 pcs",
@@ -186,7 +228,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/263599-8_1-tetley-green-tea-lemon-honey.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the ultimate in refreshment and rejuvenation with Tetley's Lemon and Honey Green Tea. This exquisite blend combines the goodness of premium green tea with the tangy zest of lemon and the soothing sweetness of honey, creating a delightful and invigorating experience for your senses. Packed with antioxidants and the added immunity-boosting power of Vitamin C, this tea not only cleanses your body from within but also supports your immune system, helping you feel light, active, and energised with every sip. Enjoy the natural flavours of lemon and honey in perfect harmony with the refreshing notes of green tea, and experience true rejuvenation in every cup. Tetley's commitment to quality and taste ensures a delightful and uplifting experience that will leave you feeling refreshed and revitalised.",
+   "ingredients": "Green Tea (98.5%), Natural Lemon Flavour (0.9%), Vitamin C (0.62%), Natural Honey Flavour (0.02%)",
+   "nutritionalInfo": {
+    "Nutrition Per": "Serve",
+    "Serving Size": "1 Teabag Brewed In 120 ml Water",
+    "Energy": "0 kcal",
+    "Protein": "Nil g",
+    "Carbohydrate": "Traces g",
+    "Sugar": "Nil g",
+    "Fat": "Nil g",
+    "Vitamin C": "8 mg",
+    "RDA": "20% Recommended Dietary Allowance Per Day (Ref: `Nutrient Requirements And Recommended Dietary Allowances For Indians', Icmr, 2010)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Immune Ginger Mint & Lemon Green Tea Bags",
@@ -202,7 +263,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/263594_4-tetley-green-tea-ginger-mint-lemon.jpg"
-    }
+    },
+    "barcode": "8901052008803"
    },
    {
     "title": "25 pcs",
@@ -249,7 +311,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/263594-8_1-tetley-green-tea-ginger-mint-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the ultimate wellness experience with Tetley Green Tea Immune Range. Infused with the power of antioxidants and the immunity-boosting benefits of added Vitamin C, this green tea offers a delightful and nourishing beverage for your daily routine. Enjoy the refreshing taste and the knowledge that you're supporting your body's natural defences, all while indulging in a calorie-free treat. Driven by sustainability, these plastic-free and staple-free tea bags ensure an eco-friendly sipping experience. Whether you're seeking a mid-day pick-me-up or a moment of relaxation, Tetley Green Tea Immune Range is the perfect companion to help you feel light, active, and rejuvenated from within.",
+   "ingredients": "Green Tea^ (98.5%), Vitamin C (0.62%), Natural Flavours (Ginger- 0.3%, Lemon - 0.3%, Mint- 0.3%)",
+   "nutritionalInfo": {
+    "Nutrition Per": "Serve",
+    "Serving Size": "1 Teabag Brewed In 120 ml Water",
+    "Energy": "0 kcal",
+    "Protein": "Nil g",
+    "Carbohydrate": "Traces g",
+    "Sugar": "Nil g",
+    "Fat": "Nil g",
+    "Vitamin C": "8 mg",
+    "RDA": "20% Recommended Dietary Allowance Per Day (Ref: `Nutrient Requirements And Recommended Dietary Allowances For Indians', Icmr, 2010)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Immune Tulsi Green Tea Bags",
@@ -293,7 +374,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40284111-8_2-tetley-green-tea-immune-with-added-vitamin-c-tulsi-natural-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Classic Green Tea offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Green Tea (96.3%), Natural Flavour, Vitamin C (0.95%) Flavoured Tea Tulsi (1.5%)",
+   "nutritionalInfo": {
+    "Serving Size": "1 tea bag (1.2 g)",
+    "Servings per pack": "25",
+    "Energy": "0 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "0.1 mg",
+    "Vitamin C": "8 mg"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Immune Kahwa Green Tea Bags",
@@ -334,7 +435,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322711-7_1-tetley-green-tea-kahwa-immune-with-added-vitamin-c.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Tetley's Green Tea Kahwa, now fortified with the power of Vitamin C for an extra boost to your immune system. With its blend of invigorating green tea leaves and a unique seasoning, each box contains 25 tea bags to uplift your spirits and support your well-being. Embrace the heritage of Tetley with this delightful infusion!",
+   "ingredients": "Kahwa Seasoning (74%) [Pink Salt (40.7%),\nMaltodextrin, Acidity Regulator\n(INS 330), Flavouring agents (Asafoetida, Cardamom, Cinnamon, Nutmeg, Clove),\nNatural Flavouring Substances, Black Pepper (3%), Ginger 11.3%)], Green Tea^ (25%), Vitamin C.",
+   "nutritionalInfo": {
+    "Energy": "2.4kcal",
+    "Protein": "0.8g",
+    "Carbohydrate": "0.8g",
+    "Total Sugars": "0.8g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "207mg"
+   },
+   "usageInstructions": "Bring Fresh Water to boil. Allow water to cool for 1-2 mins. Pour this water into cup.\nPlace one tea bag and allow it to brew for about 1 minute. Dip tea bag 3-4 times and then remove.\nGreen tea is best had without milk.",
+   "manufacturerName": "Kanan Devan Hills Plantations Company Private Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Immune Mango Green Tea Bags",
@@ -379,7 +496,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196552-8_2-tetley-green-tea-immune-with-added-vitamin-c-natural-mango.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience a revitalising boost with Tetley Green Tea, enhanced with the immune-supporting power of Vitamin C and the natural sweetness of refreshing mango. This delightful green tea not only helps strengthen your body's natural defences, but also offers a delicious tropical twist to your daily wellness routine. Packed with antioxidants that promote overall health and wellbeing, this green tea supports your body's natural detox process while helping to boost fat metabolism and keep you feeling light and hydrated throughout the day. Crafted with sustainability in mind, the plastic-free and staple-free tea bags are made from high-quality, responsibly sourced green tea leaves that deliver an exceptional flavour experience. Enjoy this flavourful and nourishing beverage as a refreshing pick-me-up or a soothing moment of relaxation.",
+   "ingredients": "Green Tea, Vitamin C, Natural Monk Fruit Flavour, Natural Mango Flavour",
+   "nutritionalInfo": {
+    "Nutrition per gram": "1.3g",
+    "Serving Size": "1 teabag",
+    "Energy": "kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "Traces g",
+    "Sugar": "NIL g",
+    "Fat": "Nil g",
+    "Vitamin C": "8 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Immune Lemon Green Tea",
@@ -424,7 +559,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176777-8_2-tetley-long-leaf-green-tea-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Start afresh with\nTetley! To stay refreshed all day, sip the refreshing Tetley Long Leaf Lemon\nGreen Tea. Being an excellent source of antioxidants, Tetley Green Tea has\nvarious beneficial effects on health such as it helps you feel relaxed by\nhydrating your body and flushing out all the toxins from your body. The finest\nand longest tea leaves are blended for a smooth and soft taste with an\nall-natural green tea flavour. You can now enjoy freshness whenever and\nwherever you want, such as after breakfast, before exercise, or before bedtime.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "1.25g",
+    "Energy": "0 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "0.1mg",
+    "Vitamin C": "6mg"
+   },
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Beauty Care Ginger Mint & Lemon Green Tea Bags",
@@ -469,7 +622,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339859-8_1-tetley-beauty-care-ginger-mint-lemon-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tetley Beauty Care Green Tea with Ginger, Mint & Lemon is infused with biotin to support healthy hair and glowing skin. This refreshing blend combines the goodness of natural ingredients with a delightful flavour to enhance your wellness and beauty routine.",
+   "ingredients": "Green Tea (99.1%), Natural Flavours, Biotin",
+   "nutritionalInfo": {
+    "Nutrition Per": "1 Tea Bag (1.4g)",
+    "Serving Size": "1.4g",
+    "Energy": "0 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "0.1 mg",
+    "Biotin": "6 Mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(S) SFS Global Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Beauty Care Lemon & Honey Green Tea Bags",
@@ -514,7 +687,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339858-8_1-tetley-beauty-care-lemon-honey-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tetley Beauty Care Green Tea with Lemon & Honey is enriched with biotin to nourish hair and support radiant skin. Combining the natural goodness of lemon and honey, this flavourful blend is perfect for enhancing your beauty and wellness routine.",
+   "ingredients": "Green Tea (99.1%), Natural Flavours, Biotin",
+   "nutritionalInfo": {
+    "Nutrition Per": "1 Tea Bag (1.4g)",
+    "Serving Size": "1.4g",
+    "Energy": "0 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "0.1mg",
+    "Biotin": "6 Mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(S) SFS Global Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Slim Care Ginger Mint & Lemon Green Tea Bags",
@@ -559,7 +752,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339857-8_1-tetley-slim-care-ginger-mint-lemon-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tetley Slim Care Green Tea with Ginger, Mint, and Lemon is a refreshing blend infused with L-Carnitine to support fat burning and energy enhancement. Perfect for a healthy lifestyle, it combines natural flavours to boost your metabolism while keeping you revitalised.",
+   "ingredients": "Green Tea (68.7%), Carnitine, Natural Flavours",
+   "nutritionalInfo": {
+    "Nutrition Per": "1 Tea Bag (1.7g)",
+    "Serving Size": "1 Tea Bag (1.7g)",
+    "Energy": "2.6 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "0.5 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "0.6 mg",
+    "Carnitine": "125 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(S) SFS Global Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Slim Care Lemon & Honey Green Tea Bags",
@@ -575,7 +788,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40339856_3-tetley-slim-care-lemon-honey-green-tea.jpg"
-    }
+    },
+    "barcode": "8901052008827"
    }
   ],
   "images": [
@@ -604,7 +818,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339856-8_1-tetley-slim-care-lemon-honey-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tetley Slim Care Green Tea with Lemon & Honey is a delicious and healthful blend designed to complement your fitness goals. Enriched with L-Carnitine, it helps burn body fat and improves energy levels naturally. Its refreshing lemon and honey flavour makes every sip delightful.",
+   "ingredients": "Green Tea (70.2%), Carnitine, Natural Flavours.",
+   "nutritionalInfo": {
+    "Nutrition Per": "1 Tea Bag (1.7g)",
+    "Serving Size": "1 Tea Bag (1.7g)",
+    "Energy": "2.6 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "0.5 g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "0g",
+    "Sodium": "0.6 mg",
+    "Carnitine": "125 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(S) SFS Global Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Slim Care Mixed Berry Green Tea Drink",
@@ -620,7 +854,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40362841_1-tetley-slim-care-mixed-berry-flavoured-green-tea.jpg"
-    }
+    },
+    "barcode": "8903754001236"
    }
   ],
   "images": [
@@ -649,7 +884,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362841-8_1-tetley-slim-care-mixed-berry-flavoured-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Say goodbye to ordinary drinks and hello to Tetley Green Tea. Delicious, flavourful, and refreshing with no added sugar. It’s the smarter way to stay on track. Expertly crafted for a clean, balanced taste, each cup offers gentle refreshment you can enjoy any time of day. Light, soothing, and effortlessly uplifting, Tetley Green Tea supports mindful sipping and healthier daily habits, hot or cold, at home or on the go.",
+   "ingredients": "Water, Apple Juice Concentrate (3%)^, Prebiotic (Polydextrose), L-Carnitine, Acidity regulators (INS330, INS331), Green Tea, Natural Flavouring Substances, Iodised Salt, Vitamin C, Preservative (INS202), Non-caloric Sweeteners (INS960, INS955), Nature-Identical Flavouring Substance",
+   "manufacturerName": "Life Line Spring Waters (I) Pvt Ltd 205A",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Slim Care Orange Lime Green Tea Drink",
@@ -694,7 +936,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362842-8_1-tetley-slim-care-orange-lime-flavoured-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Say goodbye to ordinary drinks and hello to Tetley Green Tea. Delicious, flavourful, and refreshing with no added sugar. It’s the smarter way to stay on track. Expertly crafted for a clean, balanced taste, each cup offers gentle refreshment you can enjoy any time of day. Light, soothing, and effortlessly uplifting, Tetley Green Tea supports mindful sipping and healthier daily habits, hot or cold, at home or on the go.",
+   "ingredients": "Water, Apple Juice Concentrate (3%)^, Prebiotic (Polydextrose), L-Carnitine, Acidity regulators (INS330, INS331), Green Tea, Natural Flavouring Substances, Iodised Salt, Vitamin C, Preservative (INS202), Nature-Identical Flavouring Substance, Non-caloric Sweeteners (INS960, INS955)",
+   "manufacturerName": "Life Line Spring Waters (I) Pvt Ltd 205A",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Japanese Matcha Tea",
@@ -739,7 +988,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40351255-8_2-tetley-japanese-matcha-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the rich, earthy essence of Tetley Japanese Matcha Tea—crafted from premium green tea leaves sourced directly from Japan. With its smooth, creamy texture and vibrant flavour, this finely ground matcha offers a truly authentic and revitalising experience. Perfect for mindful moments or an energising start to your day.",
+   "manufacturerName": "For manufacturing unit details",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "Japan"
+  }
  },
  {
   "title": "Classic Matcha Latte Premix",
@@ -778,7 +1033,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367702-6_1-tetley-all-in-1-classic-matcha-latte-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "All-In-1 Classic Matcha Latte Premix blends finely milled matcha green tea with a smooth, creamy base in a convenient, ready-to-mix format. Simply add water or milk to prepare a well-balanced beverage with a gentle, earthy flavour. Designed for easy preparation, it offers a consistent taste and texture, suitable for a refreshing drink at any time of the day.",
+   "ingredients": "Dairy Whitener [Milk Solids, Sugar, Maltodextrin, Stabilizers (INS 339 (ii), INS 339 (iii))], Refined Sugar, Milk Solids, Matcha Green Tea Powder (10%). Allergens: Contains Milk",
+   "nutritionalInfo": {
+    "Serve size": "18 g",
+    "Energy": "72 kcal",
+    "Protein": "2.8 g",
+    "Carbohydrate": "12.8 g",
+    "Total Sugars": "10.8 g",
+    "Added Sugars": "6.3 g",
+    "Dietary Fibre": "1.7 g",
+    "Total Fat": "1.0 g",
+    "Saturated Fat": "0.7 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5.4 mg",
+    "Sodium": "61 mg"
+   },
+   "manufacturerName": "Vending Updates (India) Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mango Matcha Latte Premix",
@@ -794,7 +1070,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40367700_1-tetley-all-in-1-mango-flavour-matcha-latte-premix.jpg"
-    }
+    },
+    "barcode": "8901052014354"
    }
   ],
   "images": [
@@ -817,7 +1094,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367700-6_1-tetley-all-in-1-mango-flavour-matcha-latte-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "All-In-1 Mango Flavour Matcha Latte Premix blends smooth matcha green tea with a subtle mango flavour in a convenient, ready-to-mix format. Simply add water or milk to create a creamy, well-balanced beverage with a distinctive taste. Designed for easy preparation, it offers a refreshing twist on a classic latte, suitable for any time of the day.",
+   "ingredients": "Dairy Whitener [Milk Solids, Sugar, Maltodextrin, Stabilizers (INS 339 (ii), INS 339 (iii))], Refined Sugar, Milk Solids, Matcha Green Tea Powder (10%), Nature-Identical Flavouring Substance. Allergens: Contains Milk",
+   "nutritionalInfo": {
+    "Serve size": "18 g",
+    "Energy": "72 kcal",
+    "Protein": "2.8 g",
+    "Carbohydrate": "12.8 g",
+    "Total Sugars": "10.8 g",
+    "Added Sugars": "6.3 g",
+    "Dietary Fibre": "1.7 g",
+    "Total Fat": "1.0 g",
+    "Saturated Fat": "0.7 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5.4 mg",
+    "Sodium": "61 mg"
+   },
+   "manufacturerName": "Vending Updates (India) Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vanilla Matcha Latte Premix",
@@ -833,7 +1131,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40367701_1-tetley-all-in-1-vanilla-flavour-matcha-latte-premix.jpg"
-    }
+    },
+    "barcode": "8901052014361"
    }
   ],
   "images": [
@@ -856,7 +1155,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367701-6_1-tetley-all-in-1-vanilla-flavour-matcha-latte-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "All-In-1 Vanilla Flavour Matcha Latte Premix combines smooth matcha green tea with a gentle hint of vanilla flavour in a convenient, ready-to-mix format. Simply add water or milk to prepare a creamy beverage with a balanced taste. Crafted for ease, it offers a comforting and flavourful drink, suitable for any time of the day.",
+   "ingredients": "Dairy Whitener [Milk Solids, Sugar, Maltodextrin, Stabilizers (INS 339 (ii), INS 339 (iii))], Refined Sugar, Milk Solids, Matcha Green Tea Powder (10%), Nature-Identical Flavouring Substance. Allergens: Contains Milk",
+   "nutritionalInfo": {
+    "Serve size": "18 g",
+    "Energy": "72 kcal",
+    "Protein": "2.8 g",
+    "Carbohydrate": "12.8 g",
+    "Total Sugars": "10.8 g",
+    "Added Sugars": "6.3 g",
+    "Dietary Fibre": "1.7 g",
+    "Total Fat": "1.0 g",
+    "Saturated Fat": "0.7 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "5.4 mg",
+    "Sodium": "61 mg"
+   },
+   "manufacturerName": "Vending Updates (India) Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Original Tea Bags",
@@ -919,7 +1239,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/240057-8_2-tetley-original-real-taste-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Now refresh, rejuvenate and relax with Tetley. Introducing, Tetley Original which makes you feel refreshed with every sip. The first sip will make you smile at the invigorating freshness of our excellent Assam blend. The next sip will leave you sighing in appreciation of the deep hue and rich taste of our unique blend. Before you know it, you're enveloped in the warm satisfaction that comes with the perfect cup of tea. It's that little moment when everything comes together in perfect harmony to bring a touch of magic to your day. Tetley is available in a variety of black tea flavours, including Tetley Ginger Zing, Lemon Twist, Masala Chai, Elaichi, Darjeeling, and English Breakfast.\nPACK CONTENT: The pack contains 25 tea bags inside \nFeatures:\nREFRESHING TEA: Tetley Original gives a feeling of refreshment at every sip\nFINEST ASSAM TEA: Each sip will make you smile at the invigorating freshness of our excellent Assam blend\nENVIRONMENT-FRIENDLY TEA BAGS: Our tea bags are plastic-free and biodegradable\nALSO TRY: Try Tetley Ginger Zing, Lemon Twist, Masala Chai, Elaichi, Darjeeling & English Breakfast tea",
+   "ingredients": "Black Tea",
+   "usageInstructions": "Place the teabag in a cup.\nPour freshly boiled water into the cup.\nBrew the tea bag for about 2 minutes or till you get the desired colour.\nRemove the teabag. Drink it as black tea or add milk as desired. Add sugar to taste.",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lemon Twist Tea Bags",
@@ -935,7 +1262,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/297498_8-tetley-lemon-twist-tea.jpg"
-    }
+    },
+    "barcode": "8901052087754"
    }
   ],
   "images": [
@@ -964,7 +1292,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/297498-8_3-tetley-lemon-twist-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Now refresh, rejuvenate, and relax with Tetley. Introducing Tetley Lemon Twist Tea which indulges you in the refreshing flavour of lemon. The first sip will make you smile at the zesty freshness of our unique lemon flavour. The next sip will delight you with the full-bodied robustness and rich taste of our unique Assam blend. Before you know it, you're enveloped in the golden glow that comes with the perfect cup of our Lemon Twist. It's that little moment when delightful lemon comes together with the finest Assam Tea to bring a touch of magic to your day.",
+   "ingredients": "Tea (99.5%) & Natural Flavour",
+   "nutritionalInfo": {
+    "Serving Size": "2 g",
+    "Protein": "0 g",
+    "Carbohydrates": "0 g",
+    "Fat": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Earl Grey Tea Bags",
@@ -980,7 +1322,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/297531_4-tetley-earl-grey-tea.jpg"
-    }
+    },
+    "barcode": "8901052087723"
    }
   ],
   "images": [
@@ -1009,7 +1352,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/297531-8_2-tetley-earl-grey-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tetley Black Tea with natural earl grey flavour. Add some flavour to your cup of green tea with our flavoured teas, perfect for a refreshing start to your day or your first steps towards a life of wellness.",
+   "ingredients": "Tea (98.9%) and Bergamot Flavour (Natural Flavour)",
+   "nutritionalInfo": {
+    "Energy": "92 kcal",
+    "Protein": "1.9 g",
+    "Carbohydrate": "4 g",
+    "Sugar": "No. g",
+    "Fat": "Traces g"
+   },
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Elaichi Tea Bags",
@@ -1025,7 +1382,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/297511_10-tetley-elaichi-tea.jpg"
-    }
+    },
+    "barcode": "8901052087716"
    }
   ],
   "images": [
@@ -1054,7 +1412,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/297511-8_7-tetley-elaichi-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Now refresh, rejuvenate, and relax with Tetley. Introducing Tetley Elaichi Tea, which indulges you in the sweet flavour of cardamom seeds. The first sip will awaken your senses with the sweet aroma of our Elaichi flavour. The next sip will delight you with the full-bodied robustness and rich taste of our unique Assam blend. Before you know it, you're enveloped by the comforting cheer that comes with the perfect cup of Elaichi tea. It's that little moment when calming cardamom blends with our finest Assam tea to bring a touch of magic to your day. Tetley is available in a variety of black tea flavours, including Tetley Original, Lemon Twist, Masala Chai, Ginger Zing, Darjeeling, and English Breakfast.",
+   "usageInstructions": "Place the teabag in a cup. Pour freshly boiled water into the cup. Brew the tea bag for about 2 minutes or until you get the desired colour. Remove the teabag. Drink it as black tea or add milk. Elaichi tea is best had with milk and sugar. |",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ginger Zing Tea Bags",
@@ -1070,7 +1434,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/297481_9-tetley-ginger-zing-tea.jpg"
-    }
+    },
+    "barcode": "8901052087747"
    }
   ],
   "images": [
@@ -1099,7 +1464,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/297481-8_5-tetley-ginger-zing-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Now refresh, rejuvenate and relax with Tetley. Introducing, Tetley Ginger Zing Tea which indulges you in the aroma of ginger. The first sip will awaken your senses with the bite and aroma of our Ginger flavour. The next sip will delight you with the full-bodied robustness and rich taste of our unique Assam blend. Before you know it, you're enveloped by the comforting cheer that comes with the perfect cup of Ginger Zing. It's that little moment when flavourful ginger, blends with our finest Assam tea to bring a touch of magic to your day.",
+   "ingredients": "Black Tea, Natural Ginger Flavour",
+   "nutritionalInfo": {
+    "Serving Size": "2g",
+    "Protein": "0 g",
+    "Carbohydrates": "0 g",
+    "Fat": "0 g",
+    "Fiber": "0 g",
+    "Sugar": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Tata Global Beverages Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Chai Tea Bags",
@@ -1115,7 +1496,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/297467_12-tetley-masala-tea.jpg"
-    }
+    },
+    "barcode": "8901052087730"
    }
   ],
   "images": [
@@ -1144,7 +1526,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/297467-8_5-tetley-masala-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Now refresh, rejuvenate, and relax with Tetley. Introducing Tetley Masala Chai, which indulges you in the refreshing flavours of spicy masala. The first sip will overwhelm you with a spicy mix of our renowned Masala flavour. The next sip will delight you with the full-bodied robustness and rich taste of our unique Assam blend. Before you know it, you're enveloped in the lip-smacking bliss that comes with the perfect cup of Masala chai. It's that little moment when our spicy Masala collides with our finest Assam tea to bring a touch of magic to your day. Tetley is available in a variety of black tea flavours, including Tetley Original, Lemon Twist, Elaichi, Ginger Zing, Darjeeling, and English Breakfast.",
+   "manufacturerName": "Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ceylon Tea Bags",
@@ -1160,7 +1548,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369420_1-tetley-ceylon-tea-premium-single-origin-black-tea.jpg"
-    }
+    },
+    "barcode": "8901052015580"
    }
   ],
   "images": [
@@ -1186,7 +1575,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369420-7_1-tetley-ceylon-tea-premium-single-origin-black-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a rich and premium tea experience with this Ceylon tea. Sourced as a single origin black tea, it offers a refined and classic taste in every cup. Carefully crafted for quality, this tea brings together tradition and excellence, making it a perfect choice for your daily tea moments. Each pack contains 25 tea bags, designed for convenience while maintaining freshness.",
+   "manufacturerName": "Tata Consumer Products Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Black Leaf Tea",
@@ -1248,7 +1643,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314644-8_2-tetley-premium-black-leaf-tea-with-added-long-leaves.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A delightful tea experience. Tetley Premium Black Leaf Tea is an exquisite blend of full-bodied, strong teas handpicked from the gardens of Assam and blended with aromatic long leaves from the high-grown region to give you a Strong Taste and Rich Aroma!\nStorage Instructions: Once opened, transfer the contents into an airtight container and keep the lid tightly closed after every use.",
+   "ingredients": "Tea Leaves",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Digest Chai",
@@ -1293,7 +1695,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314899-8_3-tetley-black-tea-digest-chai-loose-leaf-flavoured-fennel-cardamom-black-pepper.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh, rejuvenate, and relax with Tetley Digest Chai. Relish the delightful sips of this digestive chai made with natural flavours of cardamom, black pepper, ginger & fennel. Made with the goodness of prebiotic fibre which helps support gut health. Makes up to 100 cups* of Tetley Digest Chai where each sip is packed with flavour & fragrance from carefully sourced premium ingredients. *When made with 2g (1 tablespoon) of tea.",
+   "ingredients": "Tea (93%), Oligofructose (3.2%), Natural Flavours (Black Pepper, Cardamom), Fennel Whole (1%), Natural Flavouring Substances [Oleoresins Of Ginger (0.9%) & Fennel]",
+   "nutritionalInfo": {
+    "Energy": "360 kcal",
+    "Protein": "20.4 g",
+    "Carbohydrate": "65.9 g",
+    "Total Sugar": "0.9 g",
+    "Added Sugar": "0.0 g",
+    "Dietary Fibre": "41.6 g",
+    "Total Fat": "1.8 g",
+    "Saturated Fat": "0.7 mg",
+    "Sodium": "7 mg"
+   },
+   "manufacturerName": "(T) Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Immuno Chai",
@@ -1338,7 +1758,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314900-8_4-tetley-black-tea-immuno-chai-loose-leaf-flavoured-haldi-ashwagandha-black-pepper.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh, rejuvenate, and relax with Tetley Immuno Chai. Relish the delightful sips of this Immuno Chai made with natural flavours of haldi, ashwagandha, masala & ginger. Natural masala flavour has black pepper extract. This delicious cup of Tetley Black Tea also contains zinc which helps in supporting the immune system. Tetley Immuno Chai contains curcumin found in turmeric which is known for its antioxidant properties. It also contains ashwagandha, which is known to relieve stress. You can make up to 100 cups* of Tetley Immuno Chai, where each sip is packed with flavour & fragrance from carefully sourced premium ingredients. *When made with 2g (1 tablespoon) of tea.",
+   "ingredients": "Tea (95%), Natural Masala Flavour, Turmeric Bits (1.2%), Ginger Oleoresin, Ashwagandha Extract (0.2%), Zinc Sulphate (0.4%), Natural Masala Flavour With Black Pepper Extract.",
+   "nutritionalInfo": {
+    "Energy": "358 kcal",
+    "Protein": "20.1 g",
+    "Carbohydrate": "66.9 g",
+    "Total Sugar": "0.9 g",
+    "Added Sugar": "0.0 g",
+    "Total Fat": "1.1 g",
+    "Saturated Fat": "0.4 mg",
+    "Sodium": "6 mg",
+    "Zinc": "89.2 mg"
+   },
+   "manufacturerName": "(T) Tewari Warehousing Co. Pvt. Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cranberry Kombucha",
@@ -1380,7 +1818,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369421-7_1-tetley-cranberry-flavour-kombucha.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Meet your new go-to refreshment — Tetley Kombucha Zero Sugar. Crafted with Tetley’s signature tea expertise, this is where timeless brewing meets a new-age lifestyle.\nDelicious, crisp, and effortlessly refreshing, it’s designed for those who want more from what they sip. With zero sugar, every bottle delivers a balanced taste that feels as good as it tastes no heaviness, no compromise.\nWhether you’re powering through your day, unwinding post-work, or just vibing with friends, this is refreshment that keeps up. Available in bold, feel-good flavours like Pineapple and Cranberry, each sip is bright, smooth, and made to match your mood.\nChill it, sip it, and keep it light because great taste doesn’t need the extra sugar.",
+   "ingredients": "Kombucha Base (Water, Sugar^, Black Tea, Pink Salt, Kombucha Culture), Natural and Nature-Identical Flavouring Substance, Lemon Juice Concentrate, Live Culture (Bacillus subtilis) (0.04%), Non-Caloric Sweetener (INS 955), Carbon Dioxide^. During fermentation, microorganisms metabolize the sugar and convert it into lactic acid.",
+   "nutritionalInfo": {
+    "Energy": "6 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "1.5 g",
+    "Total Sugars": "0 g",
+    "Added Sugars^": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "6.2 mg"
+   },
+   "manufacturerName": "Terrenova Food Pvt Ltd 108/85",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pineapple Kombucha",
@@ -1422,7 +1876,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369422-7_1-tetley-pineapple-flavour-kombucha.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Meet your new go-to refreshment — Tetley Kombucha Zero Sugar. Crafted with Tetley’s signature tea expertise, this is where timeless brewing meets a new-age lifestyle.\nDelicious, crisp, and effortlessly refreshing, it’s designed for those who want more from what they sip. With zero sugar, every bottle delivers a balanced taste that feels as good as it tastes no heaviness, no compromise.\nWhether you’re powering through your day, unwinding post-work, or just vibing with friends, this is refreshment that keeps up. Available in bold, feel-good flavours like Pineapple and Cranberry, each sip is bright, smooth, and made to match your mood.\nChill it, sip it, and keep it light because great taste doesn’t need the extra sugar.",
+   "ingredients": "Kombucha Base (Water, Sugar^, Black Tea, Pink Salt, Kombucha Culture), Natural and Nature-Identical Flavouring Substance, Lemon Juice Concentrate, Live Culture (Bacillus subtilis) (0.04%), Non-Caloric Sweetener (INS 955), Carbon Dioxide^. During fermentation, microorganisms metabolize the sugar and convert it into lactic acid.",
+   "manufacturerName": "Terrenova Food Pvt Ltd 108/85",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ginger Lemon Kombucha",
@@ -1467,7 +1928,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40349996-8_2-tetley-ginger-lemon-kombucha-fermented-sparkling-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the refreshing taste of kombucha with this fermented sparkling drink. Infused with the zesty essence of lemons, it delivers a bright, invigorating burst of flavour in every sip. With prebiotic fibre and no artificial Flavors, this drink offers a satisfying experience. Ready-to-drink This sparkling drink offers hydration on the go or a quick refreshment during a busy day. Let Tetley Kombucha refresh and revitalize you.",
+   "ingredients": "Kombucha Base (Water, Refined Sugar, Black Tea, Pink Salt, Kombucha Culture), Ginger Juice Concentrate (0.2%), Lemon Juice Concentrate (0.05%), Natural Flavouring Substance, Live Culture (Bacillus Subtilis) (0.04%), Carbon Dioxide.",
+   "nutritionalInfo": {
+    "Serve Size": "265 ml",
+    "Energy": "24 kcal per 100 ml",
+    "Protein": "0 g per 100 ml",
+    "Carbohydrate": "6.1 g per 100 ml",
+    "Total Sugars": "6.0 g per 100 ml",
+    "Added Sugars": "5.8 g per 100 ml",
+    "Total Fat": "0 g per 100 ml",
+    "Sodium": "5 mg per 100 ml"
+   },
+   "manufacturerName": "(TN)",
+   "fssaiLicense": "12220026001347",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peach Kombucha",
@@ -1512,7 +1990,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40349995-8_2-tetley-peach-kombucha-fermented-sparkling-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the delightful taste of kombucha with this fermented sparkling drink. Infused with the vibrant essence of juicy peaches, it delivers a refreshing burst of flavour in every sip. With prebiotic fibre and no artificial Flavors, this drink offers a satisfying experience. Ready-to-drink: This sparkling drink provides hydration on the go or a quick refreshment during a busy day. Let Tetley Kombucha refresh and revitalize you.",
+   "ingredients": "Kombucha Base (Water, Refined Sugar, Black Tea, Pink Salt, Kombucha Culture), Lemon Juice Concentrate, Natural Flavouring Substance, Live Culture (Bacillus Subtilis 0.04%), Carbon Dioxide.",
+   "nutritionalInfo": {
+    "Energy": "25 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "6.3 g",
+    "Total Sugars": "6.3 g",
+    "Added Sugars": "5.8 g",
+    "Total Fat": "0 g",
+    "Sodium": "5.6 mg"
+   },
+   "manufacturerName": "(TN)",
+   "fssaiLicense": "12220026001347",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ginger Lemon Kombucha Can",
@@ -1557,7 +2051,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332693-8_3-tetley-kombucha-ginger-lemon-fermented-sparkling-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy": "58 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "16.3 g",
+    "Total Sugars": "12.5 g",
+    "Added Sugars": "12.5 g",
+    "Dietary Fiber": "3.8 g",
+    "Total Fat": "0 g",
+    "Sodium": "6 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(TH) Tethys Foods & Beverages (P) Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
  },
  {
   "title": "Peach Kombucha Can",
@@ -1602,6 +2113,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332692-8_2-tetley-kombucha-peach-fermented-sparkling-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy": "58 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "16.3 g",
+    "Total Sugars": "12.5 g",
+    "Added Sugars": "12.5 g",
+    "Dietary Fiber": "3.8 g",
+    "Total Fat": "0g",
+    "Sodium": "6 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(TH) Tethys Foods & Beverages (P) Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014031001025"
+  }
  }
 ]
