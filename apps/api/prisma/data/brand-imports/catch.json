@@ -1,0 +1,374 @@
+{
+  "brand": "Catch",
+  "manufacturer": "DS Group",
+  "feed": "catch-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/catch/logo-952a5fd4.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#F5B400",
+  "namePrefix": "Catch ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ajwain\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Methi\\ Dana\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Grinder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Coriander\\ \\(Dhaniya\\)\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Red\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Mirch\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Kuti\\ Mirch\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Dry\\ Ginger\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Amchur\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Saunf\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Compounded\\ Hing$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Premium\\ Hing$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Chana\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Biryani\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Dal\\ Makhani\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Dal\\ Tadka\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Egg\\ Curry\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ King\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Meat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Pav\\ Bhaji\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Rajma\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sambhar\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Paneer\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Super\\ Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Kasuri\\ Methi$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Sprinkler$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Chat\\ Masala\\ Sprinkler$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ Sprinkler$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Red\\ Chilli\\ Flakes\\ Sprinkler$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Jeeravan\\ Poha\\ Masala\\ Sprinkler$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Italian\\ Combo\\ Oregano\\ \\&\\ Chilli\\ Flakes$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Table\\ Salt\\ Sprinkler$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    },
+    {
+      "match": "^Pink\\ Rock\\ Salt\\ Sprinkler$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Pink\\ Rock\\ Salt\\ Grinder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Black\\ Salt\\ Sprinkler$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Black Salt (Kala Namak)"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Garlic\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    },
+    {
+      "match": "^Schezwan\\ Paste$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Curry Paste & Wet Masala"
+      ]
+    }
+  ]
+}

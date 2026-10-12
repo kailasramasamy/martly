@@ -30,7 +30,9 @@ export async function uploadImage(keyBase: string, body: Buffer, format: "webp" 
 // Background = near-white pixels connected to the image border (so white artwork inside the logo is kept).
 // Those become fully transparent; light edge pixels next to them get partial alpha to keep anti-aliasing smooth.
 export async function transparentLogoPng(source: Buffer): Promise<Buffer> {
-  const { data, info } = await sharp(source).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  // Already-transparent sources store hidden pixels as black: flatten onto white so they read as background
+  const flat = await sharp(source).flatten({ background: "#ffffff" }).png().toBuffer();
+  const { data, info } = await sharp(flat).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const { width, height } = info;
   const lightness = (i: number) => Math.min(data[i * 4], data[i * 4 + 1], data[i * 4 + 2]);
   const isBackground = new Uint8Array(width * height);

@@ -1,0 +1,318 @@
+{
+  "brand": "MDH",
+  "manufacturer": "Mahashian Di Hatti Pvt Ltd",
+  "feed": "mdh-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mdh/logo-38ff3a8d.png",
+  "themeColor": "#E8323A",
+  "themeColorSecondary": "#1F3B8C",
+  "namePrefix": "MDH ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Chana\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chunky\\ Chat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ King\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Meat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sambhar\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Pav\\ Bhaji\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Biryani\\ Pulao\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Biryani\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Veg\\ Biryani\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Achari\\ Aloo\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Karahi\\ Paneer\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Paneer\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Fish\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Chicken\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Dal\\ Makhani\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Rajmah\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Pani\\ Puri\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Dahi\\ Vada\\ Raita\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sabzi\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Curry\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^T\\-Plus\\ Tea\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Jal\\ Jeera\\ Masala$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Jaljeera"
+      ]
+    },
+    {
+      "match": "^Deggi\\ Mirch$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Mirch$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Lal\\ Mirch\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ \\(Haldi\\)\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Dhania\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Amchoor\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^White\\ Pepper\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Super\\ Hing$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Kasoori\\ Methi$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Kesar$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Soyatein\\ Warian$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Soyatein\\ Granules$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    }
+  ]
+}
