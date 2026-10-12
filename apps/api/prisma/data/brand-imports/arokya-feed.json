@@ -1,0 +1,98 @@
+[
+ {
+  "title": "Full Cream Milk",
+  "handle": "full-cream-milk",
+  "vendor": "Arokya",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "82",
+    "compare_at_price": "82",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699_2-arokya-full-cream-milk.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358466_2-arokya-full-cream-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699_2-arokya-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699-2_2-arokya-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699-3_2-arokya-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699-4_2-arokya-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699-5_2-arokya-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699-6_2-arokya-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699-7_2-arokya-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40353699-8_2-arokya-full-cream-milk.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Standardised Milk",
+  "handle": "standardised-milk",
+  "vendor": "Arokya",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.5L",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467_2-arokya-standardized-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467_2-arokya-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467-2_2-arokya-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467-3_2-arokya-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467-4_2-arokya-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467-5_2-arokya-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467-6_2-arokya-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358467-7_2-arokya-standardized-milk.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

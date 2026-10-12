@@ -1,0 +1,30 @@
+{
+  "brand": "Arokya",
+  "manufacturer": "Hatsun Agro Product Ltd.",
+  "feed": "arokya-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/arokya/logo-92bf409d.png",
+  "themeColor": "#0072BC",
+  "themeColorSecondary": "#E2231A",
+  "namePrefix": "Arokya ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Full\\ Cream\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Standardised\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    }
+  ]
+}
