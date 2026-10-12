@@ -1,0 +1,312 @@
+{
+  "brand": "American Garden",
+  "manufacturer": "Abu Dhabi National Foodstuff Co.",
+  "feed": "american-garden-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/american-garden/logo-ee725342.png",
+  "themeColor": "#1B4D9E",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "American Garden ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "American Garden Chickpeas in Brine": "Chick Peas"
+  },
+  "rules": [
+    {
+      "match": "^U\\.S\\.\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^U\\.S\\.\\ Eggless\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^U\\.S\\.\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^Soy\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Soy Sauce"
+      ]
+    },
+    {
+      "match": "^White\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Apple\\ Cider\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Apple\\ Cider\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Pancake\\ Syrup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Dessert Syrups"
+      ]
+    },
+    {
+      "match": "^Original\\ BBQ\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Honey\\ BBQ\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Hickory\\ BBQ\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Worcestershire\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Louisiana\\ Style\\ Hot\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Classic\\ Pizza\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Traditional\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Italian\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^Thousand\\ Island\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^U\\.S\\.\\ Ranch\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^Green\\ Olives\\ Sliced$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Green\\ Olives\\ Pitted$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Green\\ Olives\\ Stuffed$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Green\\ Olives\\ Whole$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Black\\ Olives\\ Pitted$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Black\\ Olives\\ Sliced$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Black\\ Olives\\ Whole$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Olives"
+      ]
+    },
+    {
+      "match": "^Chick\\ Peas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Kidney\\ Beans\\ Dark\\ Red$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Baked\\ Beans\\ in\\ Tomato\\ Sauce$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Foul\\ Medammas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Beans & Legumes"
+      ]
+    },
+    {
+      "match": "^Sliced\\ Jalapeno\\ Pepper$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Canned & Preserved Foods",
+        "Canned Vegetables"
+      ]
+    },
+    {
+      "match": "^Butter\\ Microwave\\ Popcorn$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Extra\\ Butter\\ Microwave\\ Popcorn$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Microwave\\ Popcorn$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Hot\\ n\\ Spicy\\ Microwave\\ Popcorn$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Natural\\ Microwave\\ Popcorn$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Lite\\ Natural\\ Microwave\\ Popcorn$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Lite\\ Butter\\ Microwave\\ Popcorn$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    }
+  ]
+}
