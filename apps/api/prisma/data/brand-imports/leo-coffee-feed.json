@@ -1,0 +1,218 @@
+[
+ {
+  "title": "Madras Blend Coffee & Chicory",
+  "handle": "madras-blend-coffee-chicory",
+  "vendor": "Leo Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293082_1-leo-coffee-chicory-madras-blend-roast-and-ground.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "148",
+    "compare_at_price": "148",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293083_1-leo-coffee-madras-blend-roast-ground-with-chicory.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "370",
+    "compare_at_price": "370",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293084_2-leo-coffee-madras-blend.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293082_1-leo-coffee-chicory-madras-blend-roast-and-ground.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293083_1-leo-coffee-madras-blend-roast-ground-with-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293084_2-leo-coffee-madras-blend.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Breakfast Blend Coffee & Chicory",
+  "handle": "breakfast-blend-coffee-chicory",
+  "vendor": "Leo Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293080_1-leo-coffee-breakfast-blend-roast-ground-with-chicory.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293080_1-leo-coffee-breakfast-blend-roast-ground-with-chicory.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "House Blend Filter Coffee",
+  "handle": "house-blend-filter-coffee",
+  "vendor": "Leo Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "192",
+    "compare_at_price": "192",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293075_1-leo-coffee-filter-house-blend.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "570",
+    "compare_at_price": "570",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293076_1-leo-coffee-filter-house-blend.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293075_1-leo-coffee-filter-house-blend.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293076_1-leo-coffee-filter-house-blend.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Top Blend Filter Coffee",
+  "handle": "top-blend-filter-coffee",
+  "vendor": "Leo Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293077_2-leo-coffee-filter-top-blend-roast-ground.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293078_1-leo-coffee-filter-top-blend-roast-ground.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293077_2-leo-coffee-filter-top-blend-roast-ground.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293078_1-leo-coffee-filter-top-blend-roast-ground.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Aroma Classic Instant Coffee",
+  "handle": "aroma-classic-instant-coffee",
+  "vendor": "Leo Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048734_1-leo-coffee-instant-aroma-classic-70-coffee-30-chicory.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048735_1-leo-instant-coffee-aroma-classic-70-coffee-30-chicory.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40048734_1-leo-coffee-instant-aroma-classic-70-coffee-30-chicory.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40048735_1-leo-instant-coffee-aroma-classic-70-coffee-30-chicory.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Ultimate Pure Instant Coffee",
+  "handle": "ultimate-pure-instant-coffee",
+  "vendor": "Leo Coffee",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048736_1-leo-coffee-instant-ultimate-pure.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048737_1-leo-instant-coffee-ultimate-pure.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40048736_1-leo-coffee-instant-ultimate-pure.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40048737_1-leo-instant-coffee-ultimate-pure.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

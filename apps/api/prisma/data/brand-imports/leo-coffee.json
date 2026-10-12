@@ -1,0 +1,62 @@
+{
+  "brand": "Leo Coffee",
+  "manufacturer": "Leo Coffee Pvt. Ltd.",
+  "feed": "leo-coffee-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/leo-coffee/logo-8c6a36bc.png",
+  "themeColor": "#8B1A2B",
+  "themeColorSecondary": "#C8A24A",
+  "namePrefix": "Leo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Madras\\ Blend\\ Coffee\\ \\&\\ Chicory$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Breakfast\\ Blend\\ Coffee\\ \\&\\ Chicory$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^House\\ Blend\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Top\\ Blend\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Aroma\\ Classic\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Ultimate\\ Pure\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    }
+  ]
+}
