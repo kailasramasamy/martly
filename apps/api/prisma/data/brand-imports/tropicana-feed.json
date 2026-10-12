@@ -51,7 +51,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/229785_13-tropicana-100-juice-apple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tropicana 100% Apple fruit juice with no added sugar for a healthy you. With no added preservatives, colour or artificial flavouring, Tropicana puts the good in the morning. Add a glass of Tropicana 100% to your breakfast and give your day a great start. Its 9 nutrients revitalise your body and awaken your senses. Be alive, all day long.",
+   "ingredients": "Water, Concentrated Apple Juice. Contains Added Flavour (Natural Apple Flavouring Substances).",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "100% Orange Juice",
@@ -67,7 +73,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265700_11-tropicana-100-orange-juice.jpg"
-    }
+    },
+    "barcode": "8902080011025"
    }
   ],
   "images": [
@@ -93,7 +100,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265700-7_2-tropicana-100-orange-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tropicana 100% Orange juice with no added sugar for a healthy you. With no added preservatives, colour or artificial flavouring, Tropicana puts the good in the morning. Add a glass of Tropicana 100% to your breakfast and give your day a great start. Its 9 nutrients revitalise your body and awaken your senses. Be alive, all day long. Tropicana Products is a world-famous beverage brand mainly famous because of its Fruit Juices. Founded in Florida, USA in the year 1947 by Italian-born Antony T Rossi, Tropicana Products has become the world leader in the manufacture of Fruit Juices. The company was taken over by PepsiCo in 1998 and ventured into the Indian market in early 2004. The company is known for setting high standards for Fresh Fruit Juice when it comes to quality and hygiene.",
+   "ingredients": "Water, Concentrated Orange Juice. Contains Added Flavour (Natural Orange Flavouring Substances).",
+   "storageInstructions": "Store in a cool, dry & hygienic place.\nAfter opening, store under refrigerated conditions and consume within the same day to protect taste & quality.\nDo not use it if the pack is swollen/puffed/leaking.",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "100% Mixed Fruit Juice",
@@ -109,7 +123,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/292475_10-tropicana-100-mixed-fruit-juice.jpg"
-    }
+    },
+    "barcode": "8902080011575"
    },
    {
     "title": "1L",
@@ -147,7 +162,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/292475-8_1-tropicana-100-mixed-fruit-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tropicana 100% Mixed fruit juice has no added sugar for a healthy you. With no added preservatives, colour or artificial flavouring, Tropicana puts the good in the morning. Add a glass of Tropicana 100% to your breakfast and give your day a great start. Its 9 nutrients revitalize your body and awaken your senses. Be alive, all day long.",
+   "ingredients": "Water, Mixed Fruit Juice Concentrate 24.2% (From Banana, Apricot, Pineapple, Mango, Orange, Strawberry, Apple And Lime)",
+   "storageInstructions": "Store away from direct sunlight.\nRefrigerate & consume within 5 days of opening.",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Gold Orange Juice",
@@ -192,7 +214,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/229787-8_1-tropicana-100-orange-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Tropicana Premium Gold Orange Juice is a refreshing and nutritious beverage made from the finest oranges. Packed with the natural goodness of freshly squeezed oranges, it contains no added sugars, preservatives, or artificial flavours. Rich in Vitamin C and essential nutrients, Tropicana Orange Juice supports a healthy immune system and overall well-being. Its vibrant, tangy taste makes it a perfect choice for breakfast, a midday refreshment, or a post-workout drink. Each sip offers the authentic flavour of sun-ripened oranges, providing a wholesome and delightful experience. Enjoy the pure, revitalising taste of Tropicana 100% Orange Juice any time of the day.",
+   "nutritionalInfo": {
+    "Energy": "45 kcal",
+    "Protein": "0.7 g",
+    "Carbohydrate": "10.3 g",
+    "Added Sugar": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "5 mg"
+   },
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Apple Delight",
@@ -208,7 +245,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/229791_20-tropicana-delight-fruit-juice-apple.jpg"
-    }
+    },
+    "barcode": "8902080013302"
    }
   ],
   "images": [
@@ -228,7 +266,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/229791-5_1-tropicana-delight-fruit-juice-apple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the refreshing and delicious taste of apples! The farm-fresh apples make this juice irresistible. Packed with vitamin C, start your day with a sweet tangy taste. Did You Know? Apples provide many health-promoting properties and hence they are a preferred filler between meals. That's why they say an apple a day keeps the doctor away. Special 6-layer protection gives you the goodness of tasty ready-to-serve fruit beverage in every glass of Tropicana.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "200ml",
+    "Energy": "42kcal",
+    "Protein": "0g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Carbohydrate": "10.4g",
+    "Total Sugars": "10g",
+    "Added Sugars": "6.9g",
+    "Sodium": "3.6mg",
+    "Potassium": "30mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Guava Delight",
@@ -244,7 +301,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265693_16-tropicana-delight-fruit-juice-guava.jpg"
-    }
+    },
+    "barcode": "8902080002047"
    },
    {
     "title": "500ml",
@@ -291,7 +349,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265693-8_2-tropicana-delight-fruit-juice-guava.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Gold Brokens Special Tea offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Water, Guava Pulp 20%, Sugar, Acidity Regulator (330), Antioxidant (300), Permitted Natural Colour (160a(I)), Added Flavour",
+   "nutritionalInfo": {
+    "Serving Size": "180 ml",
+    "Energy": "57 kcal",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrate": "14.4 g",
+    "Total Sugars": "13.5 g",
+    "Added Sugars": "11.6 g",
+    "Sodium": "3 mg",
+    "Potassium": "58 mg"
+   },
+   "storageInstructions": "*Refrigerate and consume within 5 days of opening\n*Store in clean, dry hygienic conditions away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Litchi Delight",
@@ -307,7 +385,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/229790_19-tropicana-fruit-juice-delight-litchi.jpg"
-    }
+    },
+    "barcode": "8902080013272"
    }
   ],
   "images": [
@@ -327,7 +406,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/229790-5_1-tropicana-fruit-juice-delight-litchi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the superior taste of hand-picked litchis! The sweet, refreshing taste makes it a great ready-to-serve fruit beverage. A healthy addition to your daily breakfast. Did You Know? Litchi was first cultivated as early as 1700 BC. They are known to be an excellent source of vitamins and minerals. Special 6-layer protection gives you the goodness of a tasty ready-to-serve fruit beverage in every glass of Tropicana.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "200 ml",
+    "Energy": "54 kcal",
+    "Protein": "0.1 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrate": "13.4 g",
+    "Total Sugars": "13.1 g",
+    "Added Sugars": "10 g",
+    "Sodium": "9 mg",
+    "Potassium": "29 mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mango Delight",
@@ -343,7 +441,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265710_14-tropicana-delight-fruit-juice-mango.jpg"
-    }
+    },
+    "barcode": "8902028002023"
    },
    {
     "title": "1L",
@@ -381,7 +480,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265710-8_2-tropicana-delight-fruit-juice-mango.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and delightful taste of Tropicana Mango Delight Juice. Bursting with the natural sweetness and goodness of mangoes, this ready-to-serve fruit beverage is the perfect addition to your breakfast or any time of day. Packed with Vitamin C and natural sugars, it offers a tropical escape in every sip. The special 6-layer protection ensures you get the full flavour and nutritional benefits in every glass. Enjoy the convenience of this flavourful and hydrating mango juice, with no added preservatives. Whether you're looking for a quick pick-me-up or a moment of indulgence, Tropicana Mango Delight Juice is a delightful and satisfying choice.",
+   "nutritionalInfo": {
+    "Serving Size": "180 ml",
+    "Energy": "61 kcal",
+    "Protein": "0.2 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrate": "15 g",
+    "Total Sugars": "15 g",
+    "Added Sugars": "12.4 g",
+    "Sodium": "2 mg",
+    "Potassium": "17 mg"
+   },
+   "storageInstructions": "*Refrigerate and consume within 5 days of opening\n*Store in clean, dry hygienic conditions away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixed Fruit Delight",
@@ -397,7 +515,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/229789_16-tropicana-fruit-juice-delight-mixed-fruit.jpg"
-    }
+    },
+    "barcode": "8902080013395"
    }
   ],
   "images": [
@@ -417,7 +536,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/229789-5_1-tropicana-fruit-juice-delight-mixed-fruit.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "200 ml",
+    "Energy": "42 kcal",
+    "Protein": "0g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Carbohydrate": "10.5 g",
+    "Total Sugars": "10.2 g",
+    "Added Sugars": "6.9 g",
+    "Sodium": "25 mg",
+    "Potassium": "34 mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Orange Delight",
@@ -433,7 +570,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265719_10-tropicana-delight-fruit-juice-orange.jpg"
-    }
+    },
+    "barcode": "8902080002085"
    },
    {
     "title": "1L",
@@ -471,7 +609,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265719-8_2-tropicana-delight-fruit-juice-orange.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Mango Delight Fruit Juice offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Water, Concentrated Orange Juice, Sugar, Acidity Regulator, Iodised Salt, Stabiliser. Contains Permitted Natural Colours & Added Flavour (Natural & Nature Identical Flavouring Substances).",
+   "nutritionalInfo": {
+    "Serving Size": "180 ml",
+    "Energy": "50 kcal",
+    "Protein": "0.1 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrate": "12.4 g",
+    "Total Sugars": "12 g",
+    "Added Sugars": "7 g",
+    "Sodium": "34 mg",
+    "Potassium": "82 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pineapple Delight",
@@ -487,7 +645,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265701_10-tropicana-delight-fruit-juice-pineapple.jpg"
-    }
+    },
+    "barcode": "8902080011520"
    },
    {
     "title": "1L",
@@ -525,7 +684,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265701-8_2-tropicana-delight-fruit-juice-pineapple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the refreshing and delicious taste of pineapple! Special 6-layer protection gives you the goodness of tasty, ready to serve fruit beverage in every glass of Tropicana. Did You Know? Pineapple is a compound fruit that develops from many small fruits fused together around a central core. It contains an enzyme that is recognized to help in food digestion.",
+   "ingredients": "Water, Sugar, Concentrated Pineapple Juice (8.5%),\nAcidity Regulator (330), Salt, Stabilizer (466,440),Sweetner (960)",
+   "usageInstructions": "Ready to serve.",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cranberry Delight",
@@ -564,7 +730,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30001744-6_1-tropicana-fruit-juice-delight-cranberry.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the refreshing and delicious taste of cranberries! A special 6-layer protection gives you the goodness of a tasty, ready-to-serve fruit beverage in every glass of Tropicana. Rich with health benefits, it's a great addition to your daily breakfast. Did You Know? Cranberry is rich in pigments that add an exciting colour to its juice, making it a great choice for making blended drinks.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "200ml",
+    "Energy": "43 kcal",
+    "Protein": "0g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Carbohydrate": "10.8g",
+    "Total Sugars": "10.5g",
+    "Added Sugars": "6.9g",
+    "Sodium": "26 mg",
+    "Potassium": "52mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pomegranate Delight",
@@ -580,7 +765,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/293396_21-tropicana-delight-fruit-juice-pomegranate.jpg"
-    }
+    },
+    "barcode": "8902080013869"
    }
   ],
   "images": [
@@ -600,7 +786,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/293396-5_1-tropicana-delight-fruit-juice-pomegranate.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the rich taste of pomegranate! A special 6-layer protection gives you the goodness of tasty ready-to-serve fruit beverage in every glass of Tropicana. Did You Know? Pomegranate is a fruit of great antiquity grown for the last 5000 years in Iran and Afghanistan. A good source of nutrients, this fruit makes for a sweet and great-tasting juice.",
+   "usageInstructions": "Ready to serve. |",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "200ml",
+    "Energy": "47 kcal",
+    "Protein": "0g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Carbohydrate": "11.8g",
+    "Total Sugars": "11.4g",
+    "Added Sugars": "6.9g",
+    "Sodium": "53mg",
+    "Potassium": "51mg"
+   },
+   "manufacturerName": "Varun Beverages Limited Plot No. 31 Institutional Area Sector - 44 Gurgaon - 122002 Haryana",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Frutz Appletini",
@@ -642,7 +848,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265770-7_3-tropicana-delight-fruit-juice-apple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Orange Delight Fruit Juice offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Water, Concentrated Apple Juice, Sugar, Acidity Regulator, Contains Permitted Natural Colours & Added Flavour (Natural & Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Serving Size": "180 ml",
+    "Energy": "44 kcal",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrate": "11 g",
+    "Total Sugars": "10.9 g",
+    "Added Sugars": "9.8 g",
+    "Sodium": "6 mg",
+    "Potassium": "10 mg"
+   },
+   "storageInstructions": "*Refrigerate and Consume within 5 days of opening\n*Store in clean, dry and hygienic conditions away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Frutz Mixed Fruit Magic",
@@ -705,7 +932,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199584_3-tropicana-mixed-fruit-delight.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the refreshing and delicious taste of mixed fruits! A special 6-layer protection gives you the goodness of tasty, ready to serve fruit beverage in every glass of Tropicana. Did You Know? Fruits are an important part of a balanced daily diet and provide the body with nutrients which are good for healthy living.",
+   "manufacturerName": "Pepsico India Holdings Pvt Ltd",
+   "fssaiLicense": "10019063001359",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Frutz Litchi Love",
@@ -721,7 +954,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265688_10-tropicana-delight-fruit-juice-litchi.jpg"
-    }
+    },
+    "barcode": "8902080002672"
    }
   ],
   "images": [
@@ -747,6 +981,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265688-7_3-tropicana-delight-fruit-juice-litchi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Frutz Appletini Fruit Juice offers a refined and refreshing experience, crafted with care to deliver exceptional flavour and quality. Perfect for any occasion, it combines tradition and taste in every sip. Enjoy it on its own or paired with your favourite meal, making it an ideal choice for moments of indulgence or relaxation.",
+   "ingredients": "Water, Litchi Pulp, Sugar Concentrated Apple Juice, Acidity Regulator, Iodised Salt, Antioxidants, Permitted Natural Colours & Added Flavour (Natural & Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Serving Size": "180 ml",
+    "Energy": "48 kcal",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrate": "12 g",
+    "Total Sugars": "11.3 g",
+    "Added Sugars": "10 g",
+    "Sodium": "6 mg",
+    "Potassium": "19 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  }
 ]
