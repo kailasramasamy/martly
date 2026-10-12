@@ -1,0 +1,22 @@
+{
+  "brand": "Beyond Snack",
+  "manufacturer": "Beyond Snack",
+  "feed": "beyond-snack-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/beyond-snack/logo-25465e42.png",
+  "themeColor": "#14833B",
+  "themeColorSecondary": "#F5A623",
+  "namePrefix": "Beyond Snack ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Original\\ Style\\ Kerala\\ Banana\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Banana Chips"
+      ]
+    }
+  ]
+}

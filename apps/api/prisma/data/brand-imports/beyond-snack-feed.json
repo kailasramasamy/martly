@@ -1,0 +1,61 @@
+[
+ {
+  "title": "Original Style Kerala Banana Chips",
+  "handle": "original-style-kerala-banana-chips",
+  "vendor": "Beyond Snack",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221579_3-beyond-snack-kerala-banana-chips-original-style.jpg"
+    }
+   },
+   {
+    "title": "25g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263289_5-beyond-snack-kerala-banana-chips-original-style-thin-crispy-delicious.jpg"
+    }
+   },
+   {
+    "title": "125g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263293_3-beyond-snack-kerala-banana-chips-original-style-thin-crispy-delicious.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221579_3-beyond-snack-kerala-banana-chips-original-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221579-2_3-beyond-snack-kerala-banana-chips-original-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221579-3_2-beyond-snack-kerala-banana-chips-original-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221579-4_2-beyond-snack-kerala-banana-chips-original-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221579-5_2-beyond-snack-kerala-banana-chips-original-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40263289_5-beyond-snack-kerala-banana-chips-original-style-thin-crispy-delicious.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40263293_3-beyond-snack-kerala-banana-chips-original-style-thin-crispy-delicious.jpg"
+   }
+  ]
+ }
+]
