@@ -1,0 +1,38 @@
+{
+  "brand": "Kinley (Coca-Cola)",
+  "manufacturer": "Hindustan Coca-Cola Beverages Pvt. Ltd.",
+  "feed": "kinley-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kinley/logo-3378bbb4.png",
+  "themeColor": "#1E2A5A",
+  "themeColorSecondary": "#2BB8D1",
+  "namePrefix": "Kinley ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Packaged\\ Drinking\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Packaged Drinking Water"
+      ]
+    },
+    {
+      "match": "^Club\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Soda\\ Extra\\ Punch$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    }
+  ]
+}

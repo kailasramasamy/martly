@@ -1,0 +1,146 @@
+[
+ {
+  "title": "Packaged Drinking Water",
+  "handle": "packaged-drinking-water",
+  "vendor": "Kinley (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265686_9-kinley-drinking-water-with-added-minerals.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265718_9-kinley-drinking-water-with-added-minerals.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "68",
+    "compare_at_price": "68",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365318_2-kinley-water.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265686_9-kinley-drinking-water-with-added-minerals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265686-2_5-kinley-drinking-water-with-added-minerals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265686-3_5-kinley-drinking-water-with-added-minerals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265686-4_4-kinley-drinking-water-with-added-minerals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265686-5_3-kinley-drinking-water-with-added-minerals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265686-6_2-kinley-drinking-water-with-added-minerals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265718_9-kinley-drinking-water-with-added-minerals.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365318_2-kinley-water.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Club Soda",
+  "handle": "club-soda",
+  "vendor": "Kinley (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "18",
+    "compare_at_price": "18",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265680_14-kinley-sparkling-water-club-soda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265680_14-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265680-2_13-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265680-3_13-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265680-4_12-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265680-5_11-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265680-6_10-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265680-7_2-kinley-sparkling-water-club-soda.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Soda Extra Punch",
+  "handle": "soda-extra-punch",
+  "vendor": "Kinley (Coca-Cola)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.25L",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/288068_6-kinley-sparkling-water-club-soda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/288068_6-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/288068-2_4-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/288068-3_3-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/288068-4_3-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/288068-5_2-kinley-sparkling-water-club-soda.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/288068-6_1-kinley-sparkling-water-club-soda.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
