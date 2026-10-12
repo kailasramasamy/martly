@@ -1,0 +1,14 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Tea,Society Tea,create,Beverages > Tea > Leaf & Dust Tea (CTC),100g ₹50 | 250g ₹140 | 500g ₹280 | 1kg ₹620 | 1.25kg ₹750,100g ₹50 | 250g ₹140 | 500g ₹280 | 1kg ₹620 | 1.25kg ₹750,8,
+Tea Jar,Society Tea Jar,create,Beverages > Tea > Leaf & Dust Tea (CTC),250g ₹155 | 500g ₹300,250g ₹155 | 500g ₹300,6,
+Kadak Chai Premium Blended Leaf Tea,Society Kadak Chai Premium Blended Leaf Tea,create,Beverages > Tea > Leaf & Dust Tea (CTC),250g ₹130 | 500g ₹260 | 1kg ₹510,250g ₹130 | 500g ₹260 | 1kg ₹510,6,
+Premium Assam CTC Leaf Tea,Society Premium Assam CTC Leaf Tea,create,Beverages > Tea > Leaf & Dust Tea (CTC),1kg ₹720,1kg ₹720,4,
+Masala Tea,Society Masala Tea,update,Beverages > Tea > Masala Tea,250g ₹170 | 500g ₹330 | 1kg ₹740,250g ₹170 | 500g ₹330 | 1kg ₹740,8,
+Elaichi Adrak Tea,Society Elaichi Adrak Tea,create,Beverages > Tea > Herbal & Flavoured Tea,250g ₹250,250g ₹250,4,
+Premium Green Tea Jar,Society Premium Green Tea Jar,create,Beverages > Tea > Green Tea,250g ₹250,250g ₹250,5,
+One Minute Elaichi Tea Premix,Society One Minute Elaichi Tea Premix,create,Beverages > Tea > Instant Tea Premix,140g ₹135,140g ₹135,7,
+One Minute Masala Tea Premix,Society One Minute Masala Tea Premix,create,Beverages > Tea > Instant Tea Premix,140g ₹135,140g ₹135,7,
+One Minute Lemongrass Tea Premix,Society One Minute Lemongrass Tea Premix,create,Beverages > Tea > Instant Tea Premix,140g ₹150,140g ₹150,7,140g: out of stock online
+One Minute Ginger Lemongrass Tea Premix,Society One Minute Ginger Lemongrass Tea Premix,create,Beverages > Tea > Instant Tea Premix,140g ₹135,140g ₹135,7,
+Cleanse Green Tea Detox Kahwa Premix,Society Cleanse Green Tea Detox Kahwa Premix,create,Beverages > Tea > Green Tea,50g ₹100,50g ₹100,6,
+Haldi Doodh Turmeric Latte Premix,Society Haldi Doodh Turmeric Latte Premix,create,"Beverages > Health & Energy Drinks > Malted Beverages (Bournvita, Horlicks)",75g ₹67,75g ₹67,8,

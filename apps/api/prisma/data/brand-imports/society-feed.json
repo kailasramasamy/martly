@@ -1,0 +1,605 @@
+[
+ {
+  "title": "Tea",
+  "handle": "tea",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267218_3-society-tea.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267229_4-society-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267227_4-society-tea.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "620",
+    "compare_at_price": "620",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/271089_5-society-tea.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360972_1-society-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267218_3-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267218-2_3-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267218-3_3-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267218-4_3-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267218-5_1-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267229_4-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267227_4-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/271089_5-society-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Tea Jar",
+  "handle": "tea-jar",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267228_3-society-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267230_3-society-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267228_3-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267228-2_5-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267228-3_5-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267228-4_5-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267228-5_5-society-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267230_3-society-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Kadak Chai Premium Blended Leaf Tea",
+  "handle": "kadak-chai-premium-blended-leaf-tea",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40294875_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40294874_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "510",
+    "compare_at_price": "510",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40294873_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40294875_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40294875-2_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40294875-3_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40294875-4_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40294874_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40294873_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Premium Assam CTC Leaf Tea",
+  "handle": "premium-assam-ctc-leaf-tea",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "720",
+    "compare_at_price": "720",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/314821_6-society-premium-tea-pure-assam-ctc-leaf-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/314821_6-society-premium-tea-pure-assam-ctc-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/314821-2_8-society-premium-tea-pure-assam-ctc-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/314821-3_8-society-premium-tea-pure-assam-ctc-leaf-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/314821-4_1-society-premium-tea-pure-assam-ctc-leaf-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Masala Tea",
+  "handle": "masala-tea",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299112_12-society-tea-masala-tea.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40243329_1-society-masala-flavour-tea-rich-aroma-taste.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "740",
+    "compare_at_price": "740",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40191703_1-society-masala-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299112_12-society-tea-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299112-2_9-society-tea-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299112-3_7-society-tea-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299112-4_7-society-tea-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299112-5_7-society-tea-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299112-6_2-society-tea-masala-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243329_1-society-masala-flavour-tea-rich-aroma-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191703_1-society-masala-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Elaichi Adrak Tea",
+  "handle": "elaichi-adrak-tea",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258924_1-society-elaichi-adrak-flavoured-tea-goodness-of-nature-for-your-wealth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258924_1-society-elaichi-adrak-flavoured-tea-goodness-of-nature-for-your-wealth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258924-2_1-society-elaichi-adrak-flavoured-tea-goodness-of-nature-for-your-wealth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258924-3_1-society-elaichi-adrak-flavoured-tea-goodness-of-nature-for-your-wealth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40258924-4_1-society-elaichi-adrak-flavoured-tea-goodness-of-nature-for-your-wealth.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Premium Green Tea Jar",
+  "handle": "premium-green-tea-jar",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299131_3-society-premium-green-tea.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299131_3-society-premium-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299131-2_3-society-premium-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299131-3_3-society-premium-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299131-4_3-society-premium-green-tea.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299131-5_1-society-premium-green-tea.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "One Minute Elaichi Tea Premix",
+  "handle": "one-minute-elaichi-tea-premix",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299118_2-society-one-minute-tea-elaichi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299118_2-society-one-minute-tea-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299118-2_2-society-one-minute-tea-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299118-3_2-society-one-minute-tea-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299118-4_2-society-one-minute-tea-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299118-5_2-society-one-minute-tea-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299118-6_1-society-one-minute-tea-elaichi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299118-7_1-society-one-minute-tea-elaichi.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "One Minute Masala Tea Premix",
+  "handle": "one-minute-masala-tea-premix",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299120_6-society-one-minute-tea-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299120_6-society-one-minute-tea-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299120-2_7-society-one-minute-tea-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299120-3_7-society-one-minute-tea-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299120-4_7-society-one-minute-tea-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299120-5_7-society-one-minute-tea-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299120-6_7-society-one-minute-tea-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299120-7_1-society-one-minute-tea-masala.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "One Minute Lemongrass Tea Premix",
+  "handle": "one-minute-lemongrass-tea-premix",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840_5-society-one-minute-tea-lemon-grass-tea-premix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840_5-society-one-minute-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840-2_5-society-one-minute-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840-3_5-society-one-minute-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840-4_4-society-one-minute-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840-5_4-society-one-minute-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840-6_1-society-one-minute-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840-7_1-society-one-minute-tea-lemon-grass-tea-premix.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "One Minute Ginger Lemongrass Tea Premix",
+  "handle": "one-minute-ginger-lemongrass-tea-premix",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841_2-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841_2-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841-2_2-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841-3_2-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841-4_1-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841-5_1-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841-6_1-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841-7_1-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cleanse Green Tea Detox Kahwa Premix",
+  "handle": "cleanse-green-tea-detox-kahwa-premix",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40191704_1-society-cleanse-green-tea-detox-kahwa-premix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191704_1-society-cleanse-green-tea-detox-kahwa-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191704-2_1-society-cleanse-green-tea-detox-kahwa-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191704-3_1-society-cleanse-green-tea-detox-kahwa-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191704-4_1-society-cleanse-green-tea-detox-kahwa-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191704-5_1-society-cleanse-green-tea-detox-kahwa-premix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191704-6_1-society-cleanse-green-tea-detox-kahwa-premix.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Haldi Doodh Turmeric Latte Premix",
+  "handle": "haldi-doodh-turmeric-latte-premix",
+  "vendor": "Society Tea",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "67",
+    "compare_at_price": "67",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233-2_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233-3_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233-4_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233-5_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233-6_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233-7_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233-8_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
