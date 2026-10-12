@@ -1,0 +1,46 @@
+[
+ {
+  "title": "Green Stevia Sweetener",
+  "handle": "green-stevia-sweetener",
+  "vendor": "Sugar Free (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "515",
+    "compare_at_price": "515",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363-2_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363-3_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363-4_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363-5_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363-6_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363-7_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298363-8_1-sugarfree-green-sweetener-100-natural-made-from-meethi-tulsi.jpg"
+   }
+  ]
+ }
+]

@@ -1,0 +1,22 @@
+{
+  "brand": "Sugar Free (Zydus)",
+  "manufacturer": "Zydus Wellness Limited",
+  "feed": "sugar-free-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sugar-free-zydus/logo-55522488.png",
+  "themeColor": "#0A6EBD",
+  "themeColorSecondary": "#F5D90A",
+  "namePrefix": "Sugar Free ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Green\\ Stevia\\ Sweetener$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Sugar-Free & Diet Foods"
+      ]
+    }
+  ]
+}
