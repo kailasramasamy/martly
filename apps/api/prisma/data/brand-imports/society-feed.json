@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267218_3-society-tea.jpg"
-    }
+    },
+    "barcode": "8901095005012"
    },
    {
     "title": "250g",
@@ -78,7 +79,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/271089_5-society-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the luxurious experience of Society Tea, crafted from the finest Assam tea leaves. This premium tea is known for its superior quality, rich aroma, and delightful flavour. The tea leaves are meticulously compressed, twisted, and curled to create a clean and invigorating brew that will elevate your tea-drinking ritual. Treat yourself to the ease and simplicity of ordering Society Leaf Tea online, and enjoy the convenience of having this exceptional tea delivered straight to your doorstep. Embrace the rich and satisfying flavours that will transport you to the lush tea gardens of Assam, and savour the perfect cup of tea that will leave you feeling refreshed and rejuvenated.",
+   "ingredients": "Tea",
+   "nutritionalInfo": {
+    "Energy": "304 kcal",
+    "Protein": "18 g",
+    "Carbohydrate": "56 g",
+    "Fat (All Type)": "0.8 g",
+    "Fatty Acid": "Traces",
+    "Cholesterol": "Nil",
+    "Vitamins": "20 mg",
+    "calcium": "300 mg",
+    "Iron": "10 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry and hygienic place"
+  }
  },
  {
   "title": "Tea Jar",
@@ -126,7 +143,20 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267230_3-society-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Society Tea is processed from the finest powdered tea leaves and is known for its tasty, aromatic, and uniquely refreshing taste. The colour and taste of tea depend on the place from where it is cultivated and the quality of the tea leaves.",
+   "ingredients": "Tea Leaves",
+   "nutritionalInfo": {
+    "Energy (kcal)": "Nil",
+    "Protein (g)": "Traces",
+    "Carbohydrates (g)": "Traces",
+    "Fat (all types) (g)": "Traces",
+    "Sugar (g)": "Nil"
+   },
+   "manufacturerName": "Amar Tea Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kadak Chai Premium Blended Leaf Tea",
@@ -183,7 +213,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40294873_3-society-tea-kadak-premium-blended-leaf-tea-rich-aroma-taste.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, aromatic experience of Society Cha Kadak Premium Tea. Crafted with handpicked tea leaves from the renowned Assam region, this CTC (Crush, Tear, Curl) leaf tea offers a clean, stimulating taste. Compressed, warped and curled to perfection, the tea leaves deliver a natural flavour and aroma that will delight tea lovers. Packed with care and sealed for freshness, this energising blend is perfect for those seeking a robust, all-natural tea. Enjoy the legacy of this premium quality tea, loved globally since 1892, and experience the delicious taste and health benefits of its natural herbs. Whether you're looking to start your day with a refreshing pick-me-up or unwind with a soothing cup, Society Cha Kadak Premium Tea is your worldwide indulgence.",
+   "ingredients": "C T C Leaf Tea",
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Transfer the contents to a clean and airtight container"
+  }
  },
  {
   "title": "Premium Assam CTC Leaf Tea",
@@ -216,7 +251,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/314821-4_1-society-premium-tea-pure-assam-ctc-leaf-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, aromatic experience of Society Pure Assam CTC Premium Tea. Crafted with the finest crushed, curled, and twisted tea leaves, this tea delivers a robust and flavourful infusion that will delight your senses. Sourced from the renowned tea-growing region of Assam, the leaves are expertly processed to ensure a strong, vibrant colour and an unparalleled depth of taste. Whether you prefer it with a splash of creamy milk or a zesty squeeze of lemon, this tea is a true game-changer. Packaged with meticulous care, the tea leaves are sealed to preserve their freshness and aroma, allowing you to savour the comforting, familiar scent of a warm hug from your favourite grandma. Indulge in the pure, unadulterated pleasure of a perfectly brewed cup of Society Tea, and experience the difference that quality and attention to detail can make.",
+   "ingredients": "Pure Tea Leaves.",
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Amar Tea Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Tea",
@@ -232,7 +274,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/299112_12-society-tea-masala-tea.jpg"
-    }
+    },
+    "barcode": "8901095001496"
    },
    {
     "title": "500g",
@@ -279,7 +322,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40191703_1-society-masala-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Society Tea is one of the most established tea brands, and it brings you a healthy cup of brew to give a perfect start to your day. The tea pack contains finely chosen fresh tea leaves straight from the farms of Assam. The tea has an amazing aroma and incredible taste. Society Tea has a strong colour and fragrance, which rejuvenates you at any point of the day.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "2.5g",
+    "Energy (kcal)": "37 kcal",
+    "Protein": "5.3 g",
+    "Carbohydrate": "56.7 g",
+    "total Sugars": "0.45 g",
+    "Added Sugars": "0 g",
+    "total Fat": "0.17 g",
+    "Saturated fat": "0.036 g",
+    "Trans Fat": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "9 mg"
+   },
+   "manufacturerName": "Amar Tea Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Elaichi Adrak Tea",
@@ -312,7 +374,16 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258924-4_1-society-elaichi-adrak-flavoured-tea-goodness-of-nature-for-your-wealth.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the perfect blend of tradition and taste with Society Tea's Elaichi Adrak Flavour Tea. Infused with the aromatic essence of cardamom and ginger, this premium tea offers a refreshing and soothing experience with every sip. Crafted from the finest Assam tea leaves, this unique blend is carefully selected to ensure a rich, flavourful cup every time. The natural sweetness of cardamom and the spicy kick of ginger combine to create a harmonious flavour profile that is both comforting and invigorating. Whether you're starting your day or winding down in the evening, this tea is the perfect choice, with no preservatives and only natural ingredients. Enjoy this cup of bliss with your family, paired with Khari, cookies, savoury snacks, or toast for the overall experience. This brilliant blend of Society Elaichi Adrak Tea is sure to tantalize your taste buds and leave you craving more.",
+   "ingredients": "Flavoured Tea, Elaichi, Adrak",
+   "nutritionalInfo": {
+    "Nutritional Values": "Per 100 gm."
+   },
+   "storageInstructions": "*Store in a cool, dry and high place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Green Tea Jar",
@@ -328,7 +399,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/299131_3-society-premium-green-tea.jpg"
-    }
+    },
+    "barcode": "8901095800167"
    }
   ],
   "images": [
@@ -348,7 +420,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/299131-5_1-society-premium-green-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the premium experience of Society Tea Green, a true marvel of nature's bounty. Cultivated from select tea bushes renowned for their exceptional antioxidant content, this tea offers a delightful fusion of health benefits and captivating flavour. Sip and savour the refreshing notes that invigorate the senses, while the powerful antioxidants work tirelessly to combat cancer-causing cells, improve skin health, and neutralise the harmful free radicals responsible for premature skin ageing. This beverage is not merely a thirst-quencher, but a wellness elixir that nourishes your body and soul. Elevate your daily routine with the premium quality and unparalleled benefits of Society Tea Green, the perfect choice for health-conscious connoisseurs.",
+   "ingredients": "Pure Green Tea Leaves.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Amar Tea Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "One Minute Elaichi Tea Premix",
@@ -390,7 +469,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/299118-7_1-society-one-minute-tea-elaichi.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, aromatic experience of Society Tea's Elaichi Instant Tea Premix. Crafted with the finest tea leaves from the lush Assam region, this tea offers a delightful blend of traditional flavours and modern convenience. Infused with the captivating essence of cardamom, each sip promises a rejuvenating and satisfying start to your day. Whether you're enjoying it during your morning routine or seeking a revitalising pick-me-up throughout the day, this tea's strong colour, fragrance, and incredible taste will leave you feeling refreshed and energised. Boasting a range of health benefits, from aiding digestion to supporting overall immunity, this tea is the perfect companion for your wellness journey. Savour the taste of tradition and convenience with every cup of Society Tea Elaichi Instant Tea Premix.",
+   "ingredients": "Sugar, Milk Solids, Tea Extract, Emulsifier (E339)",
+   "nutritionalInfo": {
+    "Serving Size": "14g",
+    "Energy (kcal)": "60.0",
+    "Protein (g)": "1.6",
+    "Carbohydrate (g)": "10.6",
+    "Sugar (g)": "6.45",
+    "Fat (g)": "1.2",
+    "Trans fatty acids (g)": "Nil",
+    "Saturated fatty acids (g)": "0.077"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Amar Tea Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "One Minute Masala Tea Premix",
@@ -432,7 +528,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/299120-7_1-society-one-minute-tea-masala.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a healthy and rejuvenating start to your day with Society Masala Tea. Crafted from the finest Assam tea leaves, this premium blend boasts a rich aroma, bold colour, and exceptional flavour. Infused with traditional herbal ingredients, Society Masala Tea promotes sound health, offering relief from flu, digestive benefits, reduced headaches and joint pains, and overall immunity support. Enjoy the perfect cup of tea, free from adulterants, that will leave you feeling refreshed and energised throughout the day. Discover the superior quality and unparalleled taste of Society tea, a trusted brand known for its commitment to excellence.",
+   "ingredients": "Medium fat dairy whitener {Milk solids, Sugar and Emulsifiers [INS 339 (ii),339 (iii)]}, Sugar, Milk solids, Tea extract (4.5%) and Mix masala powder (0.9%)",
+   "nutritionalInfo": {
+    "Serving Size": "14g",
+    "Energy": "60.0 kcal",
+    "Protein": "1.6 g",
+    "Carbohydrate": "10.6 g",
+    "Sugar": "6.45 g",
+    "Fat": "1.2 g",
+    "Trans fatty acids": "0 g",
+    "Saturated fatty acids": "0.88 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Amar Tea Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "One Minute Lemongrass Tea Premix",
@@ -474,7 +587,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153840-7_1-society-one-minute-tea-lemon-grass-tea-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Society tea is processed by utilising premium quality tea leaves and advanced technology in adherence with industry standards. This herbal tea is really good for your health. The product is hygienically packed to give you the best premium quality. Love our Lemongrass Flavour Instant Premix? Then this Pack of 3 is made just for you. Enjoy Lemongrass tea instantly. Just add hot water & sip!!",
+   "ingredients": "Sugar, Milk solids, Tea extract & Emulsifier (E339)",
+   "usageInstructions": "Empty the contents of the sachet in a cup and just add 100ml hot water (not boiling water). Stir and enjoy the great taste of Society One Minute Ginger Lemongrass Tea.\n(societytea)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "60",
+    "Protein (g)": "1. 6",
+    "Carbohydrate (g)": "10. 6",
+    "Sugar (g)": "6. 45",
+    "Fat (g)": "1. 2",
+    "Trans fatty acids (g)": "Nil",
+    "Saturated fatty acids (g)": "0. 077"
+   },
+   "manufacturerName": "Amar Tea Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002850"
+  }
  },
  {
   "title": "One Minute Ginger Lemongrass Tea Premix",
@@ -516,7 +646,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153841-7_1-society-one-minute-tea-ginger-tea-lemon-grass-tea-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Society Tea is processed by utilising premium quality tea leaves and advanced technology in adherence with industry standards. This herbal tea is really good for your health. The product is hygienically packed to give you the best premium quality. More and more Indians are looking to get into healthier grooves in their lives. Lemongrass tea is not just refreshing but also delightfully healthy. The best part? Can be made in under a minute.",
+   "ingredients": "Sugar, Milk Solids, Tea Extract, Emulsifier (E339)",
+   "nutritionalInfo": {
+    "Serving Size": "14g",
+    "Energy (kcal)": "58.0",
+    "Protein (g)": "1.6",
+    "Carbohydrate (g)": "10.0",
+    "Sugar (g)": "6.45",
+    "Fat (g)": "1.2",
+    "Trans fatty acids (g)": "0",
+    "Saturated fatty acids (g)": "0.077"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Amar Tea Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002850"
+  }
  },
  {
   "title": "Cleanse Green Tea Detox Kahwa Premix",
@@ -555,7 +703,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40191704-6_1-society-cleanse-green-tea-detox-kahwa-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "It's good to cleanse your mind and body once in a while. But who has the time? Exactly why, we came up with Society Cleanse. It's your Detox cuppa. Best part? It's on-the-go. So get one, go-getter.",
+   "ingredients": "Black Salt, Maltodextrin, Mix Masala Powder (Black Pepper, Ginger, Cardimom, Clove Bud And Cinnamon, Acidity Regulator, Asafoetida Powder, Green Tea Extract, Coriander Powder, Turmeric, Oleoresin Powder, Anticaking Agent And Nutmeg Powder)",
+   "usageInstructions": "Take 100 ml hot water add 1 sachet of 5gm and stir.",
+   "manufacturerName": "Amar Tea Pvt Ltd 61",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10018021003177"
+  }
  },
  {
   "title": "Haldi Doodh Turmeric Latte Premix",
@@ -600,6 +756,20 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40230233-8_2-society-haldi-doodh-turmeric-latte-instant-premix-with-higher-curcumin-content.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Society Turmeric Latte Instant Premix is made with high-quality ingredients. One cup of this latte will leave you craving for more. Turmeric milk is very beneficial and good for your . It helps you by relieving gas and bloating. It is a perfect starter for a bright new day. The fine quality of the premix has a magnetic aroma and strong flavour set this turmeric milk apart. It has a refreshing taste that makes it a perfect treat for your taste buds.",
+   "ingredients": "Medium Fat Dairy Whitener (39%) {milk Solids, Sugar, Emulsifiers [ins 339(Ii) And Ins 339(Iii)]} Jaggery Powder Premix {jaggery, Maltodextrin, Anticaking Agent (Ins 551)}, Milk Solids (16%), Turmeric Powder (1. 1%), Sugar, Ginger Powder, Black Pepper, Cinnamon And Encapsulated Ajowan Seed Oil {ajowan Oil, Emulsifier (Ins414)}",
+   "usageInstructions": "1. Empty the content of the sachet in a cup and add 100 ml of hot water.\n2. Stir to dissolve the contents and enjoy the great taste of Society Haldi Doodh.",
+   "nutritionalInfo": {
+    "Calories": "77,",
+    "Carbs": "10g,",
+    "Fat": "3g,",
+    "Protein": "4g."
+   },
+   "manufacturerName": "Amar Tea Pvt Ltd 61",
+   "fssaiLicense": "10013022001835",
+   "countryOfOrigin": "India"
+  }
  }
 ]
