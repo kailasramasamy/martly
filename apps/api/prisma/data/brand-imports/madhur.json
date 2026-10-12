@@ -1,0 +1,22 @@
+{
+  "brand": "Madhur",
+  "manufacturer": "Shree Renuka Sugars Limited",
+  "feed": "madhur-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/madhur/logo-dea35804.png",
+  "themeColor": "#70B840",
+  "themeColorSecondary": "#1E4FA3",
+  "namePrefix": "Madhur ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Pure\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    }
+  ]
+}

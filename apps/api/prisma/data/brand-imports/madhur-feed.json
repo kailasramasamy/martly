@@ -1,0 +1,46 @@
+[
+ {
+  "title": "Pure Sugar",
+  "handle": "pure-sugar",
+  "vendor": "Madhur",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253563_2-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253564_2-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253563_2-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253563-2_2-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253563-3_1-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253563-4_1-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253564_2-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
+   }
+  ]
+ }
+]
