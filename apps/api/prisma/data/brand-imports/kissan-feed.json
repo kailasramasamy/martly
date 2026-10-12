@@ -1,0 +1,2344 @@
+[
+ {
+  "title": "Fresh Tomato Ketchup",
+  "handle": "fresh-tomato-ketchup",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "63",
+    "compare_at_price": "63",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266545_15-kissan-fresh-tomato-ketchup.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266541_15-kissan-fresh-tomato-ketchup.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/152450_16-kissan-fresh-tomato-ketchup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266545_15-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266545-2_9-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266545-3_10-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266545-4_10-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266545-5_6-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266545-6_4-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266545-7_4-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266545-8_4-kissan-fresh-tomato-ketchup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kissan Tomato Ketchup is the ultimate versatile condiment that can elevate any dish to new heights. Crafted from real, juicy tomatoes, this ketchup boasts a perfect balance of sweet and tangy flavours that will delight your taste buds. With its rich, smooth texture, it spreads effortlessly on your favourite rolls, frankies, and snacks, adding a delightful burst of flavour.\nWhether you're looking to enhance the taste of samosas, pakoras, noodles, or a simple roti roll, Kissan Tomato Ketchup is the ideal companion, making your meals even more wholesome and delectable. Indulge in the ultimate culinary experience with this versatile and flavourful ketchup that is sure to become a staple in your kitchen.",
+   "ingredients": "WATER, TOMATO PASTE# (28%), SUGAR, IODISED SALT, ACIDITY REGULATOR - E260, STABILIZERS - E1422, E415, PRESERVATIVE - E211, ONION POWDER, GARLIC POWDER, SPICES AND CONDIMENTS",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "15 g",
+    "ENERGY (kcal)": "133",
+    "ENERGY (kcal) per serve": "20",
+    "ENERGY (kcal) % RDA": "1%",
+    "PROTEIN (g)": "1.1",
+    "PROTEIN (g) per serve": "0.2",
+    "CARBOHYDRATE (g)": "31",
+    "CARBOHYDRATE (g) per serve": "4.6",
+    "TOTAL SUGARS (g)": "29.2",
+    "TOTAL SUGARS (g) per serve": "4.4",
+    "ADDED SUGARS (g)": "26",
+    "ADDED SUGARS (g) per serve": "3.9",
+    "ADDED SUGARS (g) % RDA": "8%",
+    "DIETARY FIBRE (g)": "0.6",
+    "DIETARY FIBRE (g) per serve": "0.1",
+    "TOTAL FAT (g)": "0.4",
+    "TOTAL FAT (g) per serve": "0.1",
+    "TOTAL FAT (g) % RDA": "<1%",
+    "SATURATED FAT (g)": "0.03",
+    "SATURATED FAT (g) per serve": "TRACE",
+    "SATURATED FAT (g) % RDA": "0%",
+    "TRANS FAT (g)": "0",
+    "TRANS FAT (g) per serve": "0",
+    "TRANS FAT (g) % RDA": "0%",
+    "CHOLESTEROL (mg)": "0",
+    "CHOLESTEROL (mg) per serve": "0",
+    "SODIUM (mg)": "948",
+    "SODIUM (mg) per serve": "142",
+    "SODIUM (mg) % RDA": "7%",
+    "RDA": "% OF AN AVERAGE ADULT'S RECOMMENDED DIETARY ALLOWANCE (2000 kcal diet)."
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*After opening, keep refrigerated and use within 6 months or use by date, whichever date you've started using",
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001897"
+  }
+ },
+ {
+  "title": "Fresh Tomato Ketchup Pouch",
+  "handle": "fresh-tomato-ketchup-pouch",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "85g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293385_26-kissan-fresh-tomato-ketchup.jpg"
+    },
+    "barcode": "8909106098497"
+   },
+   {
+    "title": "400g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113115_12-kissan-fresh-tomato-ketchup.jpg"
+    }
+   },
+   {
+    "title": "825g",
+    "price": "93",
+    "compare_at_price": "93",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40029538_42-kissan-fresh-tomato-ketchup.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226027_13-kissan-fresh-tomato-ketchup-tasty-yummy-healthy.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212583_3-kissan-tomato-ketchup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293385_26-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293385-2_11-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293385-3_11-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293385-4_11-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293385-5_11-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293385-6_9-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293385-7_9-kissan-fresh-tomato-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293385-8_9-kissan-fresh-tomato-ketchup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kissan Fresh Tomato Ketchup is made with real, naturally ripened fresh tomatoes, delivering a deliciously tangy flavour that is loved by families across India. Perfect for pairing with fries, noodles, dhokla, samosas, pakoras, roti rolls and more, it adds a tasty twist to everyday meals and snacks. Enjoy it as a tomato sauce or chutney, and make every dish more flavourful.",
+   "ingredients": "Water, Tomato Paste* (28%), Sugar, Iodised Salt, Acidity Regulator (INS 260), Stabilizers (INS 1422, INS 415), Preservative (INS 211), Onion Powder, Garlic Powder, Spices and Condiments.",
+   "nutritionalInfo": {
+    "Energy": "133 kcal",
+    "Protein": "1.1 g",
+    "Carbohydrate": "31 g",
+    "Total Sugars": "29.2 g",
+    "Added Sugars": "26 g",
+    "Dietary Fibre": "0.6 g",
+    "Total Fat": "0.4 g",
+    "Saturated Fat": "0.03 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "948 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "fssaiLicense": "11522999000129",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fresh Tomato Ketchup Squeeze",
+  "handle": "fresh-tomato-ketchup-squeeze",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "118",
+    "compare_at_price": "118",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266555_8-kissan-fresh-tomato-ketchup-squeeze.jpg"
+    },
+    "barcode": "8901030932069"
+   },
+   {
+    "title": "900g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251275_7-kissan-squeezo-fresh-tomato-ketchup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266555_8-kissan-fresh-tomato-ketchup-squeeze.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266555-2_5-kissan-fresh-tomato-ketchup-squeeze.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266555-3_5-kissan-fresh-tomato-ketchup-squeeze.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266555-4_5-kissan-fresh-tomato-ketchup-squeeze.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266555-5_4-kissan-fresh-tomato-ketchup-squeeze.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266555-6_3-kissan-fresh-tomato-ketchup-squeeze.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266555-7_3-kissan-fresh-tomato-ketchup-squeeze.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251275_7-kissan-squeezo-fresh-tomato-ketchup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kissan Fresh Tomato Ketchup is made with real naturally ripened fresh Tomatoes. The Tangy Tomato Ketchup is a must-have at all homes and most loved by Indians! This sauce bottle and pouch packs can either be paired with fries, noodles or dhokla. This can be added to almost every dish to make them so much tastier. It's an assured hero for all the snacks - be it samosas, pakoras, noodles or roti roll - a perfect ally for making wholesome and yummy food. Kissan Tomato ketchup helps healthy foods turn into yummy and tasty for the entire family. You can use this tomato ketchup as a tomato sauce or tomato chutney.",
+   "ingredients": "Water, Tomato Paste (28%), Sugar, Iodised Salt, Acidity Regulator -E260, Stabilisers - E1422, E415, Preservative - E211, Onion Powder, Garlic Powder, Spices And Condiments",
+   "nutritionalInfo": {
+    "Serving Size": "15 g (1 Tbsp)",
+    "Energy": "133 kcal",
+    "Protein": "1.1 g",
+    "Carbohydrate": "31 g",
+    "Total Sugars": "29.2 g",
+    "Added Sugars": "26 g",
+    "Dietary Fibre": "0.6 g",
+    "Total Fat": "0.4 g",
+    "Saturated Fat": "0.03 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "948 mg"
+   },
+   "storageInstructions": "*Store in cool, dry and hygienic place\n*After opening, keep refrigerated and use within 6 months or use by date whichever is earlier",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "fssaiLicense": "11522999000129",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sweet & Spicy Sauce",
+  "handle": "sweet-spicy-sauce",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299451_14-kissan-sweet-spicy-ketchup.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076753_7-kissan-sweet-spicy-ketchup.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299451_14-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299451-2_5-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299451-3_6-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299451-4_5-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299451-5_7-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299451-6_3-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299451-7_3-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299451-8_3-kissan-sweet-spicy-ketchup.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Sweet & Spicy Sauce Pouch",
+  "handle": "sweet-spicy-sauce-pouch",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "415g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299449_27-kissan-sweet-spicy-ketchup.jpg"
+    },
+    "barcode": "8901030702556"
+   },
+   {
+    "title": "850g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40353022_2-kissan-sweet-spicy-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299449_27-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299449-2_1-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299449-3_1-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299449-4_1-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299449-5_1-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299449-6_1-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299449-7_1-kissan-sweet-spicy-ketchup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299449-8_1-kissan-sweet-spicy-ketchup.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kissan Sweet and Spicy Sauce is sure to spark your taste buds with the combination of its sweet & spicy taste. Its both THEEKHA & MEETHA!! Made with real Tomatoes use this sauce as a spicy chilli chutney or as a chilli spread with hot pakoras samosa or idli and you cannot find a better match for this hot and sweet tomato sauce. This ketchup compliments desi chinese South Indian and north Indian meals with finesse. Addictive at best relish the taste of tomatoes and red chillies in your meal instead of tabasco sauce bbq sauce or chipotle sauce to add a tangy and spicy twist to a regular meal. Started in 1934, Kissan one of the most popular food brand in India. At Kissan, we keep the farmer's interest in mind along every step of the way. True to its name, Kissan works with over 8000 farmers who grow tomatoes for Kissan Ketchup Kissan. The brand’s reassurance to mothers is that they can turn any healthy but boring meal turn into a fun ketchup recipe with Kissan Ketchup and sauce ranges! The tangy red burst of tomatoes in ketchup and red chillies will give you the sensorial delight of nature’s goodness.",
+   "ingredients": "WATER, SUGAR, TOMATO PASTE# (14.6%), CHILLI PUREE (5.6%), IODISED SALT, STABILIZERS - E1422, E415, E412, ACIDITY REGULATOR - E260, GARLIC POWDER, CHILLI FLAKES, ONION POWDER, SPICES AND CONDIMENTS, PRESERVATIVE - E211, NATURAL FLAVORING SUBSTANCE",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "15 g (1 Tbsp.)",
+    "ENERGY (Kcal)": "136",
+    "PROTEIN (g)": "0.5",
+    "CARBOHYDRATE (g)": "32.9",
+    "TOTAL SUGARS (g)": "30.3",
+    "ADDED SUGARS (g)": "28",
+    "DIETARY FIBRE (g)": "1",
+    "TOTAL FAT (g)": "0.2",
+    "SATURATED FAT (g)": "0.1",
+    "TRANS FAT (g)": "0",
+    "CHOLESTEROL (mg)": "0",
+    "SODIUM (mg)": "728"
+   },
+   "manufacturerName": "Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "No Onion No Garlic Tomato Sauce",
+  "handle": "no-onion-no-garlic-tomato-sauce",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "415g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120_12-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+    },
+    "barcode": "8901030702679"
+   },
+   {
+    "title": "850g",
+    "price": "116",
+    "compare_at_price": "116",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008128_6-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120_12-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120-2_10-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120-3_9-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120-4_9-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120-5_8-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120-6_6-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120-7_1-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002120-8_1-kissan-no-onion-no-garlic-tomato-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the rich, tangy flavour of tomatoes without the pungency of onions and garlic with Kissan's No Onion No Garlic Tomato Sauce. Try our No Onion No Garlic Tomato sauce which is made with real Tomatoes. The taste of the Tomatoes takes centre stage in this one. This tomato sauce is made following Jain recipe will sink into your taste buds and leave you feeling utterly happy and spell bound. The Kissan No Onion No Garlic Sauce can be added with Paneer Tikka Masala, Sev Tameta Khakhra Jain Vada Pav Jain Pav Bhaji and Papad poha will give you the sensorial delight of nature’s goodness. Add this sauce to your regular homemade chutney, pickles and salad to made family drool over your food. Started in 1934, Kissan one of the most popular food brand in India. At Kissan, we keep the farmer's interest in mind along every step of the way. True to its name, Kissan works with over 8000 farmers who grow tomatoes for Kissan Ketchup Kissan. The brand’s reassurance to mothers is that they can turn any healthy but boring meal turn into a fun recipe with Kissan No Onion no Garlic sauce ranges which comes in a premium bottle pack of 1 kg and 500 ml.",
+   "ingredients": "WATER, TOMATO PASTE# (28%), SUGAR, IODISED SALT, ACIDITY REGULATOR - E260, STABILIZERS - E1422, E415, PRESERVATIVE - E211, SPICES AND CONDIMENTS",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15 g",
+    "ENERGY (kcal)": "133",
+    "PROTEIN (g)": "1.1",
+    "CARBOHYDRATE (g)": "30.9",
+    "TOTAL SUGARS (g)": "29.2",
+    "ADDED SUGARS (g)": "26",
+    "DIETARY FIBRE (g)": "0.6",
+    "TOTAL FAT (g)": "0.4",
+    "SATURATED FAT (g)": "0.02",
+    "TRANS FAT (g)": "0",
+    "CHOLESTEROL (mg)": "0",
+    "SODIUM (mg)": "689",
+    "RDA": "% OF AN AVERAGE ADULT'S RECOMMENDED DIETARY ALLOWANCE (2000 kcal diet)"
+   },
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Tomato Sauce",
+  "handle": "chilli-tomato-sauce",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "67",
+    "compare_at_price": "67",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266546_12-kissan-chilli-tomato-sauce.jpg"
+    },
+    "barcode": "8901030926525"
+   },
+   {
+    "title": "500g",
+    "price": "112",
+    "compare_at_price": "112",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266570_16-kissan-chilli-tomato-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266546_12-kissan-chilli-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266546-2_6-kissan-chilli-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266546-3_5-kissan-chilli-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266546-4_6-kissan-chilli-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266546-5_7-kissan-chilli-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266546-6_3-kissan-chilli-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266546-7_3-kissan-chilli-tomato-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266546-8_3-kissan-chilli-tomato-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful fusion of tangy tomatoes and fiery chillies in Kissan Chilli Tomato Sauce. Crafted with real tomatoes and spicy chillies, this versatile sauce delivers a mouthwatering blend of flavours that will elevate any dish. Enjoy the bold, addictive taste as a replacement for green chilli sauce, a spicy chutney, or a flavourful spread with pakoras, samosas, and idlis. Complement your desi Chinese, South Indian, and North Indian meals with the unique twist of this chilli tomato sauce, offering a sensorial delight of natural goodness.\nKissan, a trusted brand since 1934, works closely with over 8,000 farmers to ensure the highest quality ingredients, making this sauce a true celebration of the farmer's interest. Whether you're craving a burst of flavour or seeking to add a spicy kick to your meals, Kissan Chilli Tomato Sauce is the perfect choice to satisfy your cravings.",
+   "ingredients": "WATER, SUGAR, TOMATO PASTE (22%), CHILLI PUREE (4.5%), SALT, ACIDITY REGULATOR- 260, STABILIZERS- 1422, 415, GARLIC POWDER, ONION POWDER, PRESERVATIVE- 211, SPICES AND CONDIMENTS, CONTAINS ADDED FLAVOUR NATURE IDENTICAL FLVOURING SUBSTANCE",
+   "nutritionalInfo": {
+    "Nutrition per": "Per Serve (15 g)",
+    "Serving Size": "15 g",
+    "ENERGY (Kcal)": "22",
+    "PROTEIN (g)": "0.2",
+    "CARBOHYDRATE (g)": "5.6",
+    "OF WHICH SUGARS (g)": "5.3",
+    "DIETARY FIBRE (g)": "0.1",
+    "FAT (g)": "TRACE",
+    "SATURATED FAT (g)": "0",
+    "TRANS FAT (g)": "0",
+    "SODIUM (mg)": "111"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001897"
+  }
+ },
+ {
+  "title": "Tomato Puree",
+  "handle": "tomato-puree",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121_9-kissan-tomato-puree.jpg"
+    },
+    "barcode": "8901030931864"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121_9-kissan-tomato-puree.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121-2_7-kissan-tomato-puree.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121-3_7-kissan-tomato-puree.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121-4_6-kissan-tomato-puree.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121-5_6-kissan-tomato-puree.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121-6_4-kissan-tomato-puree.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121-7_3-kissan-tomato-puree.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002121-8_3-kissan-tomato-puree.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Now add the taste and rich colour of 100% real juicy\ntomatoes to your dishes at a pocket-friendly pack. Now no one needs to worry\nabout tomato price increase as everyone can use Kissan Tomato Puree in their\nday-to-day cooking. Two spoons of this tomato puree are equal to a\nregular-sized tomato… such is the purity and honesty! This cooking sauce is a\nmust-have in every Indian household fridge.\nStarted in 1934, Kissan is one of the most popular food\nbrands in India. At Kissan, we keep the farmer's interest in mind along every\nstep of the way. True to its name, Kissan works with over 8,000 farmers who\ngrow tomatoes for Kissan ketchup and sauce.\nThe brand reassures that every cook can turn any healthy\nbut boring meal into a delicious restaurant-style dish just with the addition\nof Kissan Tomato Puree. Our tomato puree is made from 100% real, fresh, juicy\ntomatoes.\nKissan Tomato Puree is perfect for all types of Indian\ncuisines – ranging from North Indian Kadai Paneer and Chicken Butter Masala to\nSouth Indian Tomato Rice, as well as international dishes like Tomato Relish\nand Tomato Gazpacho! The tangy red burst of real juicy tomatoes in our tomato\npuree will give you the sensorial delight of nature’s goodness.",
+   "ingredients": "Water, Tomato Paste (34.8%), Salt, Acidity Regulator - 330",
+   "nutritionalInfo": {
+    "Energy": "32 kcal",
+    "Protein": "1.2 g",
+    "Carbohydrate": "6.6 g",
+    "Of Which Sugars": "5.6 g",
+    "Dietary Fibre": "0.6 g",
+    "Fat": "0.1 g",
+    "Saturated Fat": "0.01 g",
+    "Trans Fat": "Nil",
+    "Sodium": "16 mg"
+   },
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mixed Fruit Jam",
+  "handle": "mixed-fruit-jam",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266547_20-kissan-mixed-fruit-jam.jpg"
+    },
+    "barcode": "8901030686726"
+   },
+   {
+    "title": "200g",
+    "price": "58",
+    "compare_at_price": "58",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266543_10-kissan-mixed-fruit-jam.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266577_11-kissan-mixed-fruit-jam.jpg"
+    }
+   },
+   {
+    "title": "700g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002118_14-kissan-mixed-fruit-jam.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40122884_5-kissan-mixed-fruit-jam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266547_20-kissan-mixed-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266547-2_12-kissan-mixed-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266547-3_10-kissan-mixed-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266547-4_10-kissan-mixed-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266547-5_7-kissan-mixed-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266547-6_4-kissan-mixed-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266547-7_1-kissan-mixed-fruit-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266543_10-kissan-mixed-fruit-jam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "All your favourite fruits come together in Kissan Mixed\nFruit Jam. A medley of flavours from 8 fruits such as Banana Papaya Apple Pear Pineapple\nMango Grape and Orange blended in to one lip smacking jam. Kissan jam is the\nbest jam with the goodness of your favorite 8 fruits. Kissan Mixed Fruit Jam is\nbest partnered with bread to provide yummy on the go breakfast for your kid\nevery morning. Think of different ways to eat it in. Spread it on a crunchy cracker\nroll it up in a chapatti drink it stirred in milk or whip up a bread and Jam\ndelight for your kids’ breakfast with an assortment of flavours. Started in 1934\nKissan is a popular brand in India. Kissan is more than just jams ketchups and\nsquashes. It’s all about kids eating happily & growing up happily. Kissan\nJam’s yummy and fruit based sweet spread keeps both mothers & kids happy.\nThe brand’s reassurance to mothers is that they can make breakfast times fun\nyet wholesome every morning with the Kissan range of fruit jams that are made\nwith 100% real fruit ingredients! Remember craving something utterly sweet?\nThis is your answer to that in a packed sweet spread bottle.",
+   "ingredients": "SUGAR, MIXED FRUIT PULP BLEND - 60% (PAPAYA PULP, PEAR PULP, APPLE JUICE, BANANA PULP, PINEAPPLE JUICE, ORANGE JUICE, MANGO PULP, GRAPE JUICE), ACIDITY REGULATOR - E330, THICKENER - E440, IODISED SALT, VITAMINS & MINERAL, PRESERVATIVE - E202, NATURAL FLAVOURING SUBSTANCES, FOOD COLOUR - E122",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "ENERGY (kcal)": "285",
+    "PROTEIN (g)": "0.3",
+    "CARBOHYDRATE (g)": "70.5",
+    "TOTAL SUGARS (g)": "68.1",
+    "ADDED SUGARS (g)": "62.6",
+    "DIETARY FIBRE (g)": "0.8",
+    "TOTAL FAT (g)": "0.1",
+    "SATURATED FAT (g)": "TRACE",
+    "TRANS FAT (g)": "0.0",
+    "CHOLESTEROL (mg)": "0",
+    "SODIUM (mg)": "51",
+    "VIT. A (µg)": "189",
+    "VIT. B6 (µg)": "0.45",
+    "VIT. B7 (µg)": "7.5",
+    "ZINC (mg)": "1.77",
+    "RDA": "% OF AN AVERAGE ADULT'S RECOMMENDED DIETARY ALLOWANCE (2000 kcal DIET). 30% RDA PER 100 g FOR 7 TO 9 YEARS: BASED ON ICMR - NIN, 2020 & FSSAI DIRECTION ON RDA, 2021."
+   },
+   "manufacturerName": "SAHYADRI FARMERS PRODUCER COMPANY LTD",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Jam",
+  "handle": "mango-jam",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "188g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008101_7-kissan-mango-jam.jpg"
+    }
+   },
+   {
+    "title": "490g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008105_9-kissan-mango-jam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008101_7-kissan-mango-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008101-2_2-kissan-mango-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008101-3_2-kissan-mango-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008101-4_2-kissan-mango-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008101-5_2-kissan-mango-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008101-6_1-kissan-mango-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008105_9-kissan-mango-jam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the sweet, rich flavour of Alphonso mangoes all year round with Kissan Mango Jam. Made with 100% real Alphonso fruit, this delectable spread captures the essence of summer in every spoonful. Enjoy it on its own, spread on toast, or incorporated into a variety of dishes for a burst of mango goodness. The carefully sealed glass packaging ensures the jam retains its fresh, natural taste. Whether you're craving a quick breakfast or looking to add a touch of sweetness to your day, Kissan Mango Jam is the perfect pantry staple. Versatile and easy to use, it's a delightful addition to your morning routine or a delicious topping for pancakes, waffles, and more. Embrace the taste of summer with this irresistible mango jam.",
+   "ingredients": "Sugar, Mango Pulp (46%), Thickener - E440, Acidity Regulator - E330, Nature Identical Flavouring Substance, Preservative - E202, Food Colour - E110",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g Product",
+    "Serving Size": "15 g (1 Tbsp)",
+    "Energy (kcal)": "281",
+    "Protein (g)": "0.3",
+    "Carbohydrate (g)": "70.5",
+    "Total Sugars (g)": "67.5",
+    "Added Sugars (g)": "60.9",
+    "Dietary Fibre (g)": "2.7",
+    "Total Fat (g)": "0.2",
+    "Saturated Fat (g)": "Trace",
+    "Trans Fat (g)": "Nil",
+    "Cholesterol (mg)": "Nil",
+    "Sodium (mg)": "19",
+    "RDA": "% Of An Average Adult'S Recommended Dietary Allowance (2000 kcal Diet)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pineapple Jam",
+  "handle": "pineapple-jam",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008115_5-kissan-pineapple-jam.jpg"
+    },
+    "barcode": "8901030535031"
+   },
+   {
+    "title": "500g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008118_7-kissan-pineapple-jam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008115_5-kissan-pineapple-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008115-2_1-kissan-pineapple-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008115-3_1-kissan-pineapple-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008115-4_1-kissan-pineapple-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008115-5_1-kissan-pineapple-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008118_7-kissan-pineapple-jam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Packed with the goodness of fresh pineapples, this jam is one sweet-sour treat you and your kids should not give a miss. Add a generous amount of Kissan Pineapple Jam on a slice of brown/white bread, and watch the happiness meter hit an all-time high! Kissan Pineapple Jam is best partnered with bread to provide yummy on the go breakfast for your kid every morning. Think of different ways to eat it. Spread it on a crunchy cracker, roll it up in a chapatti, drink it stirred in milk or whip up a bread and Jam delight for your kid's breakfast with an assortment of flavours. Heres making breakfast time, merrier and healthier since Pineapples are known to be rich in vitamin A and calcium.\nKissan Pineapple Jam is made with 100% real fruit Ingredients\nIs easy to use and can be enjoyed on the go every morning\nEnjoy it best with Bread, Roti, Paratha or Dosa for a wholesome breakfast\nTurns boring breakfast into an empty plate\nSpreads easily with a spoon or a knife\nCarefully sealed in impermeable glass packaging to retain the best flavour and taste of the product",
+   "ingredients": "Pineapple Pulp, Sugar, Thickener - 440, Acidity Regulator - 330, Preservative - 202, 10% Alphanso Pulp, Vitamin B3.\nContains Added Artificial Flavours (Pineapple)\n(Bb - Sku 100008118 - Attached Image)",
+   "usageInstructions": "Use a clean and dry spoon/knife to scoop the jam.",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Orange Marmalade",
+  "handle": "orange-marmalade",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114_6-kissan-orange-marmalade-jam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114_6-kissan-orange-marmalade-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114-2_4-kissan-orange-marmalade-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114-3_4-kissan-orange-marmalade-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114-4_4-kissan-orange-marmalade-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114-5_4-kissan-orange-marmalade-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114-6_3-kissan-orange-marmalade-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114-7_2-kissan-orange-marmalade-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100008114-8_1-kissan-orange-marmalade-jam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A powerhouse of taste and health Kissan Orange Marmalade is not just a blend of freshly grown ripe orange pulp but also has bursts of delicious shredded orange peels. This gives it a bitter-sweet taste that will only leave you craving for more. Kissan Orange Marmalade Jam is best partnered with bread to provide yummy on the go breakfast for your kid every morning. Think of different ways to eat it in. Spread it on a crunchy cracker roll it up in a chapatti drink it stirred in milk or whip up a bread and Jam delight for your kids’ breakfast with an assortment of flavors.Make your kid’s breakfast time an orangey delight! Started in 1934 Kissan is a popular brand in India. Kissan is more than just jams ketchups and squashes. It’s all about kids eating happily & growing up happily. Kissan Jam’s yummy and fruit based sweet spread keeps both mothers & kids happy. The brand’s reassurance to mothers is that they can make breakfast times fun yet wholesome every morning with the Kissan range of fruit jams that are made with 100% real fruit ingredients! Remember craving for something Orangey? This is your answer to that in a packed sweet spread bottle.*OLD",
+   "ingredients": "SUGAR, ORANGE EXTRACT (45%), GLAZED PEEL (5%), THICKENER - E440, ACIDITY REGULATOR - E330, NATURAL FLAVOURING SUBSTANCE, PRESERVATIVE - (E211, E223), FOOD COLOUR - E122, MAY CONTAIN SULPHITE",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "ENERGY (Kcal)": "290",
+    "ENERGY (Kcal) per serve": "58",
+    "ENERGY (Kcal) RDA": "3%",
+    "PROTEIN (g)": "0.1",
+    "PROTEIN (g) per serve": "TRACE",
+    "CARBOHYDRATE (g)": "72.3",
+    "CARBOHYDRATE (g) per serve": "14.5",
+    "TOTAL SUGARS (g)": "71.5",
+    "TOTAL SUGARS (g) per serve": "14.3",
+    "ADDED SUGARS (g)": "69.3",
+    "ADDED SUGARS (g) per serve": "13.9",
+    "ADDED SUGARS (g) RDA": "28%",
+    "DIETARY FIBRE (g)": "0.6",
+    "DIETARY FIBRE (g) per serve": "0.1",
+    "TOTAL FAT (g)": "0.1",
+    "TOTAL FAT (g) per serve": "TRACE",
+    "TOTAL FAT (g) less than": "<1%",
+    "SATURATED FAT (g)": "0",
+    "SATURATED FAT (g) per serve": "0",
+    "SATURATED FAT (g) RDA": "0%",
+    "TRANS FAT (g)": "0",
+    "TRANS FAT (g) per serve": "0%",
+    "CHOLESTEROL (mg)": "0",
+    "CHOLESTEROL (mg) per serve": "0",
+    "SODIUM (mg)": "30.6",
+    "SODIUM (mg) per serve": "<1%"
+   },
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Berry Blast Jam",
+  "handle": "berry-blast-jam",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "320g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022649_5-kissan-berry-blast-jam.jpg"
+    },
+    "barcode": "8901030581953"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022649_5-kissan-berry-blast-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022649-2_3-kissan-berry-blast-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022649-3_2-kissan-berry-blast-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022649-4_2-kissan-berry-blast-jam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40022649-5_2-kissan-berry-blast-jam.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "This new fruity delight is sure to make you want more! Kissan Berry Blast- the fruit-based jammy spread. Juicy black grapes and ripe strawberries blended with a burst of blueberry flavour to create the perfect little sweet, little tangy combination!. Kissan Berry Blast Jam is best partnered with bread to provide yummy on the go breakfast for your kid every morning. Spread it on a crunchy cracker, roll it up in a chapatti, drink it stirred in milk or whip up a bread and Jam delight for your kid's breakfast with an assortment of flavours. The burst of Berry flavour is a quirky taste that you will love so much, you will surely have quite a blast. Sit back and enjoy the best of both worlds! \nKhatta Meetha Taste\nFruity taste\nMakes boring food interesting\nTurns boring breakfast into an empty plate\nSpreads easily with a spoon or a knife\nCarefully sealed in impermeable glass packaging to retain the best flavour and taste of the product",
+   "ingredients": "Grape Pulp And Strawberry Pulp, Sugar, Thickener - 440, Acidity Regulator - 330, Preservative - 202. Contains Permitted Synthetic Food Colours(102, 133, 122), Added Natural, Nature Indentical Flavours (Blueberry)",
+   "usageInstructions": "Use a clean and dry spoon/knife to scoop the jam.",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fables Blueberry & Mulberry Spread",
+  "handle": "fables-blueberry-mulberry-spread",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851-2_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851-3_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851-4_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851-5_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851-6_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851-7_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344851-8_4-kissan-fables-blueberry-the-beast-blueberry-mulberry-spread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "From the house of Kissan, we bring you Kissan Fables - a premium fruit spread where each pack is a storybook, telling a fable of magical fruits and unique combinations. A story of 100% fruits, and nothing else.\nCarefully crafted recipe that has just 5 ingredients and that too all from fruits! Including natural sweetness that comes just from fruits. No added refined sugars at all, just fruit & fruit and only fruits!\nAnd not to our surprise, no nasties at all - No added colours, preservatives, flavours and of course not even refined sugar.\nEach variant is carefully crafted with unique fruit combinations to give you the best flavour and is gently cooked to retain fruits’ original taste, flavour, and colours.\nTastes amazing with bread, roti, pancakes or may be with vanilla ice-cream or cheese cake and tell us if you try anything else, we'll recommend it to others too.\nAnd as a proof of how this product is just 100% fruit and literally nothing else not even preservatives, if you keep the product outside fridge after opening it, you’ll see fungus on it, just like how you see it on real fruits. Hence, we recommend refrigerating it after opening.",
+   "ingredients": "Fruit Pulps-50% (Blueberry, Mulberry), Date Juice Concentrate, Apple Juice Concentrate, Citrus Pectin (Gelling Agent)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "214",
+    "Protein (g)": "1.2",
+    "Carbohydrate (g)": "53.1",
+    "Total Sugars (g)": "48.4",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "3.4",
+    "Total Fat (g)": "0.4",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "37"
+   },
+   "manufacturerName": "(F) Malas Food Products Pvt. Ltd",
+   "fssaiLicense": "10012022000012",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fables Apricot & Peach Spread",
+  "handle": "fables-apricot-peach-spread",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852-2_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852-3_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852-4_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852-5_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852-6_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852-7_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344852-8_4-kissan-fables-apricot-in-wonderland-apricot-peach-spread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "From the house of Kissan, we bring you Kissan Fables - a premium fruit spread where each pack is a storybook, telling a fable of magical fruits and unique combinations. A story of 100% fruits, and nothing else.\nCarefully crafted recipe that has just 5 ingredients and that too all from fruits! Including natural sweetness that comes just from fruits. No added refined sugars at all, just fruit & fruit and only fruits!\nAnd not to our surprise, no nasties at all - No added colours, preservatives, flavours and of course not even refined sugar.\nEach variant is carefully crafted with unique fruit combinations to give you the best flavour and is gently cooked to retain fruits’ original taste, flavour, and colours.\nTastes amazing with bread, roti, pancakes or may be with vanilla ice-cream or cheese cake and tell us if you try anything else, we'll recommend it to others too.\nAnd as a proof of how this product is just 100% fruit and literally nothing else not even preservatives, if you keep the product outside fridge after opening it, you’ll see fungus on it, just like how you see it on real fruits. Hence, we recommend refrigerating it after opening.",
+   "ingredients": "Fruit Pulps-50% (Apricot, Peach), Date Juice Concentrate, Apple Juice Concentrate, Citrus Pectin (Gelling Agent)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "219",
+    "Protein (g)": "1.4",
+    "Carbohydrate (g)": "54.2",
+    "Total Sugars (g)": "49.5",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "2.4",
+    "Total Fat (g)": "0.2",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "36"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd B-47 B-48/1 &",
+   "fssaiLicense": "10012022000012",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fables Strawberry & Raspberry Spread",
+  "handle": "fables-strawberry-raspberry-spread",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340g",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+    },
+    "barcode": "8901030539879"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850-2_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850-3_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850-4_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850-5_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850-6_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850-7_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344850-8_4-kissan-fables-little-red-strawberry-raspberry-spread.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "From the house of Kissan, we bring you Kissan Fables - a premium fruit spread where each pack is a storybook, telling a fable of magical fruits and unique combinations. A story of 100% fruits, and nothing else.\nCarefully crafted recipe that has just 5 ingredients and that too all from fruits! Including natural sweetness that comes just from fruits. No added refined sugars at all, just fruit & fruit and only fruits!\nAnd not to our surprise, no nasties at all - No added colours, preservatives, flavours and of course not even refined sugar.\nEach variant is carefully crafted with unique fruit combinations to give you the best flavour and is gently cooked to retain fruits’ original taste, flavour, and colours.\nTastes amazing with bread, roti, pancakes or may be with vanilla ice-cream or cheese cake and tell us if you try anything else, we'll recommend it to others too.\nAnd as a proof of how this product is just 100% fruit and literally nothing else not even preservatives, if you keep the product outside fridge after opening it, you’ll see fungus on it, just like how you see it on real fruits. Hence, we recommend refrigerating it after opening.",
+   "ingredients": "Fruit Pulps-50% (Strawberry, Raspberry), Date Juice Concentrate, Apple Juice Concentrate, Citrus Pectin (Gelling Agent)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "218",
+    "Protein (g)": "1.2",
+    "Carbohydrate (g)": "53.9",
+    "Total Sugars (g)": "48.8",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "2.5",
+    "Total Fat (g)": "0.3",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "36"
+   },
+   "manufacturerName": "(F) Malas Food Products Pvt. Ltd",
+   "fssaiLicense": "10012022000012",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Creamy Peanut Butter",
+  "handle": "creamy-peanut-butter",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441_8-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+    },
+    "barcode": "8901030980046"
+   },
+   {
+    "title": "920g",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224760_6-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441_8-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441-2_8-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441-3_8-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441-4_8-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441-5_8-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441-6_8-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441-7_8-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203441-8_1-kissan-peanut-butter-creamy-25-protein-indias-finest-quality-peanuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of Kissan Creamy Peanut Butter, crafted with real peanuts handpicked from the farms of Gujarat. This protein-packed spread is an excellent choice for mothers seeking nutritious options for their children, providing the same amount of protein as a glass of cow's milk in just a 30g serving. Boasting a remarkable 25% protein content, Kissan Peanut Butter surpasses the protein levels of eggs, milk, lentils, poultry, and fish, making it one of the richest plant-based protein sources available.\nEnjoy the versatility of this delectable spread, elevating the flavour of your favourite foods, from smoothies and oatmeal to cookies and cakes. The convenient bottle packaging and resealable top ensure you can savour the nutty, fresh taste of Kissan Peanut Butter whenever the craving strikes, without compromising on quality or nutrition. With no added colours, flavours, or preservatives, this premium peanut butter is the perfect choice for health-conscious families seeking a protein-rich, all-natural treat.",
+   "ingredients": "ROASTED PEANUTS (90%), SUGAR, HYDROGENATED RAPESEED OIL, IODISED SALT",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "609 kcal",
+    "Protein (g)": "25.1 g",
+    "Carbohydrate (g)": "21.6 g",
+    "Total Sugars (g)": "11.6 g",
+    "Added Sugars (g)": "7.9 g",
+    "Dietary Fibre (g)": "8.4 g",
+    "Total Fat (g)": "48.8 g",
+    "Saturated Fat (g)": "9.5 g",
+    "Monounsaturated Fat (g)": "23.3 g",
+    "Polyunsaturated Fat (g)": "13.7 g",
+    "Trans Fat (g)": "0.02 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "314 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry & hygienic place away from direct sunlight\n*After opening, keep refrigerated. It is natural to have some oil separation on top\n*Stir it well before scooping",
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crunchy Peanut Butter",
+  "handle": "crunchy-peanut-butter",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+    },
+    "barcode": "8901030980053"
+   },
+   {
+    "title": "920g",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224759_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758-2_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758-3_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758-4_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758-5_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758-6_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758-7_7-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40224758-8_1-kissan-peanut-butter-crunchy-25-protein-indias-finest-quality-peanuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the wholesome goodness of Kissan Crunchy Peanut Butter, crafted with real peanuts handpicked from the farms of Gujarat. This premium-quality peanut butter is an excellent source of protein, providing the same amount as a glass of cow's milk in just a 30g serving. Packed with 25% protein, it surpasses the protein content of eggs, milk, lentils, poultry, and fish, making it a nutritious choice for growing children.\nKissan Peanut Butter is free from artificial colours, flavours, and preservatives, allowing you to indulge in the pure, delicious taste of peanuts. Enjoy the creamy texture and satisfying crunch, while supporting your child's growth and development with this protein-rich spread. Discover the power of peanut protein and treat your family to the wholesome goodness of Kissan Crunchy Peanut Butter.",
+   "ingredients": "ROASTED PEANUTS (91%), SUGAR, HYDROGENATED RAPESEED OIL, IODISED SALT",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "612 kcal",
+    "Protein (g)": "25.7 g",
+    "Carbohydrate (g)": "20.3 g",
+    "Total Sugars (g)": "10.1 g",
+    "Added Sugars (g)": "6.3 g",
+    "Dietary Fibre (g)": "8.6 g",
+    "Total Fat (g)": "49.5 g",
+    "Saturated Fat (g)": "9.3 g",
+    "Monounsaturated Fat (g)": "23.8 g",
+    "Polyunsaturated Fat (g)": "14.0 g",
+    "Trans Fat (g)": "0.01 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "253 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place away from direct sunlight\n*After opening, keep refrigerated",
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hazelnut Choco Peanut Spread",
+  "handle": "hazelnut-choco-peanut-spread",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "350g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390_4-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+    },
+    "barcode": "8901030944376"
+   },
+   {
+    "title": "950g",
+    "price": "549",
+    "compare_at_price": "549",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40278391_2-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390_4-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390-2_4-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390-3_4-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390-4_4-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390-5_4-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390-6_4-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390-7_4-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40278390-8_1-kissan-hazelnut-choco-peanut-spread-protein-rich-30-dark-chocolate-creme.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kissan Hazelnut Choco Peanut Spread is a delightful fusion of 70% peanut butter and 30% dark chocolate creme, delivering a rich, creamy texture with a unique hazelnut flavour. Crafted from India's finest export-quality peanuts, this spread offers a wholesome and indulgent experience. With 18% protein in every serving, it stands out as a nutritious option for those seeking high protein peanut butter alternatives. Compared to traditional chocolate peanut butter, it contains 50% less sugar, making it a healthier choice for your family.\nThis versatile spread is perfect for breakfast or snacks. Whether you slather it on bread, chapati, or enjoy it straight from the jar, it satisfies your cravings with its rich chocolate peanut butter taste. Its creamy consistency is ideal for peanut butter lovers, offering a delectable twist to your daily meals. Unlike some peanut butter varieties, Kissan Hazelnut Choco Peanut Spread is 100% vegetarian and free from added colours and preservatives, ensuring a natural and wholesome treat.\nElevate your mornings with this spread, a great alternative to jams like kissan mixed fruit jam or pineapple jam. Its exotic flavour and protein-packed goodness make it a favourite for kids and adults alike. Whether you're a fan of peanut butter creamy textures or searching for a healthier jam kissan alternative, this spread is the ultimate choice. Indulge in the perfect balance of taste and nutrition with Kissan Hazelnut Choco Peanut Spread.",
+   "ingredients": "Peanut Spread Ingredients: Roasted Peanuts* (63%), Sugar, Dark Chocolate Compound- 30% [sugar, Edible Vegetable Oil (Palmolein, Palm Oil), Cocoa Solids, Hydrogenated Palm Fat, Emulsifier - E322 (I), Nature Identical Flavouring Substances (Hazelnut)], Sugar, Hydrogenated Palm Oil, Iodised Salt.",
+   "nutritionalInfo": {
+    "Energy": "598 kcal",
+    "Protein": "18.4 g",
+    "Carbohydrate": "32.5 g",
+    "Total Sugars": "25.5 g",
+    "Added Sugars": "20.8 g",
+    "Dietary Fibre": "6.1 g",
+    "Total Fat": "45.2 g",
+    "Saturated Fat": "12.4 g",
+    "Trans Fat": "0.04 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "224 mg"
+   },
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chatpati Hari Chutney",
+  "handle": "chatpati-hari-chutney",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377_4-kissan-chatpati-hari-chutney.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358376_4-kissan-chatpati-hari-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377-2_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377-3_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377-4_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377-5_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377-6_2-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377-7_1-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358377-8_1-kissan-chatpati-hari-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the vibrant and authentic flavours of Kissan Chatpati Hari Chutney, a delightful condiment crafted with fresh coriander, mint, and green chillies. Inspired by traditional Indian recipes, this chutney delivers a tangy and zesty twist to your meals, enhanced by its rustic silbatta-like texture that mimics hand-ground masalas. Made with fresh ingredients sourced from trusted Indian farms, every spoonful guarantees purity and bold flavours.\nThis versatile chutney pairs effortlessly with a variety of dishes. Spread it on sandwiches, enjoy it as a dip for samosas and pakoras, or drizzle it over chaats for a burst of flavour. It complements kebabs, theplas, and even adds a unique Indian twist to avocado toast. Whether you're hosting a gathering or preparing everyday meals, this chutney is your go-to for enhancing flavours.\nPackaged to preserve its strong and tangy taste, Kissan Chatpati Hari Chutney is ready to eat and easy to store. Simply refrigerate after opening to maintain its freshness for months. Perfect for pairing with Kissan tomato ketchup or tomato sauce dishes, this chutney is a must-have for those who love sauces with a unique twist. Elevate your culinary creations with the exceptional taste of Kissan, a trusted name in condiments, including their popular ketchup range. Add this chutney to your pantry and enjoy a flavorful journey through India in every bite.",
+   "ingredients": "Ingredients: Water, Vegetables (40%) [Coriander Puree (22%), Mint Puree (13%), Green Chilli Puree (4%), Garlic Paste], Sugar, Spices & Condiments [Chaat Masala, Black Salt, Onion Powder, Turmeric Powder, Cumin Powder (0.32%), Ginger Powder], Roasted Bengal Gram Flour, Iodized Salt, Acetic Acid, Lemon Juice, Nature Identical Flavouring Substances, Thickener (Xanthan Gum), Natural Food Colour (Chlorophyll), Preservative (Sodium Benzoate).\nAllergen Information: May contain traces of Sesame, Mustard, Gluten, Soya, Sulphite & Nuts.\nNutritional Info:\nPer 100 g\nPer 100 g:\nEnergy: 50 kcal\nProtein: 1.5 g\nCarbohydrate: 10 g\nTotal Sugars: 5 g\nAdded Sugars: 4.7 g\nDietary Fibre: 1.2 g\nTotal Fat: 0.5 g\nSaturated Fat: 0 g\nSodium: 100 mg\nPer Serve (20 g):\nEnergy: 10 kcal\nProtein: 0.3 g\nCarbohydrate: 2 g\nTotal Sugars: 1 g\nAdded Sugars: 0.9 g\nDietary Fibre: 0.2 g\nTotal Fat: 0.1 g\nSaturated Fat: 0 g\nSodium: 200 mg",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chatpati Hari Chutney Jar",
+  "handle": "chatpati-hari-chutney-jar",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373_4-kissan-chatpati-hari-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373-2_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373-3_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373-4_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373-5_4-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373-6_2-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373-7_2-kissan-chatpati-hari-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358373-8_2-kissan-chatpati-hari-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the vibrant and authentic flavours of Kissan Chatpati Hari Chutney, a delightful condiment crafted with fresh coriander, mint, and green chillies. Inspired by traditional Indian recipes, this chutney delivers a tangy and zesty twist to your meals, enhanced by its rustic silbatta-like texture that mimics hand-ground masalas. Made with fresh ingredients sourced from trusted Indian farms, every spoonful guarantees purity and bold flavours.\nThis versatile chutney pairs effortlessly with a variety of dishes. Spread it on sandwiches, enjoy it as a dip for samosas and pakoras, or drizzle it over chaats for a burst of flavour. It complements kebabs, theplas, and even adds a unique Indian twist to avocado toast. Whether you're hosting a gathering or preparing everyday meals, this chutney is your go-to for enhancing flavours.\nPackaged to preserve its strong and tangy taste, Kissan Chatpati Hari Chutney is ready to eat and easy to store. Simply refrigerate after opening to maintain its freshness for months. Perfect for pairing with Kissan tomato ketchup or tomato sauce dishes, this chutney is a must-have for those who love sauces with a unique twist. Elevate your culinary creations with the exceptional taste of Kissan, a trusted name in condiments, including their popular ketchup range. Add this chutney to your pantry and enjoy a flavorful journey through India in every bite.",
+   "ingredients": "Ingredients: Water, Vegetables (40%) [Coriander Puree (22%), Mint Puree (13%), Green Chilli Puree (4%), Garlic Paste], Sugar, Spices & Condiments [Chaat Masala, Black Salt, Onion Powder, Turmeric Powder, Cumin Powder (0.32%), Ginger Powder], Roasted Bengal Gram Flour, Iodized Salt, Acetic Acid, Lemon Juice, Nature Identical Flavouring Substances, Thickener (Xanthan Gum), Natural Food Colour (Chlorophyll), Preservative (Sodium Benzoate).\nAllergen Information: May contain traces of Sesame, Mustard, Gluten, Soya, Sulphite & Nuts.\nNutritional Info:\nPer 100 g\nPer 100 g:\nEnergy: 50 kcal\nProtein: 1.5 g\nCarbohydrate: 10 g\nTotal Sugars: 5 g\nAdded Sugars: 4.7 g\nDietary Fibre: 1.2 g\nTotal Fat: 0.5 g\nSaturated Fat: 0 g\nSodium: 100 mg\nPer Serve (20 g):\nEnergy: 10 kcal\nProtein: 0.3 g\nCarbohydrate: 2 g\nTotal Sugars: 1 g\nAdded Sugars: 0.9 g\nDietary Fibre: 0.2 g\nTotal Fat: 0.1 g\nSaturated Fat: 0 g\nSodium: 200 mg",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Peanut Thecha Chutney",
+  "handle": "chilli-peanut-thecha-chutney",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375_4-kissan-chilli-peanut-thecha-chutney.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358383_4-kissan-chilli-peanut-thecha-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375-2_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375-3_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375-4_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375-5_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375-6_2-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375-7_1-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358375-8_1-kissan-chilli-peanut-thecha-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the authentic taste of Maharashtra with Kissan Chilli Peanut Thecha Chutney, a delightful fusion of spice and nuttiness. Crafted with roasted peanuts, fresh green chillies, and aromatic garlic sourced from trusted Indian farms, this chutney offers a bold, flavorful experience. Its silbatta-like texture, reminiscent of traditional hand-pounded recipes, ensures every bite bursts with heritage and authenticity.\nThis versatile chutney is perfect for enhancing your favourite dishes. Pair it with Indian breads like parathas, theplas, or bhakris, or use it to add a spicy kick to snacks such as pakoras and batata vadas. It's an excellent alternative to tomato ketchup or tomato sauce, bringing a unique twist to wraps, rice bowls, and marinations. Stir it into yoghurt for a creamy, tangy dip or use it as a flavour-packed addition to your everyday meals.\nKissan Chilli Peanut Thecha Chutney is ready-to-eat and conveniently packaged to preserve its freshness and rich flavours. Unlike traditional tomato ketchup or tomato sauce, this chutney delivers a bold and nutty taste that stands out in any dish. Whether you're a fan of syrups & sauces or looking for a distinctive condiment, this chutney is a must-have for your kitchen.\nExperience a perfect blend of tradition and spice with Kissan Chilli Peanut Thecha Chutney - a flavorful companion for those who crave authentic Indian taste.",
+   "ingredients": "Ingredients: Vegetables (40%) [Green Chillies (24%), Freshly Peeled Garlic (11%), Coriander Puree], Water, Nuts & Pulses [Peanuts (15%), Roasted Bengal Gram Flour], Refined Soyabean Oil, Sugar, Iodised Salt, Spices & Condiments [Roasted Cumin Powder (0.3%), Spice Extract, Onion Powder, Ginger Powder], Acetic Acid, Citric Acid, Nature Identical Flavouring Substances, Preservative (Sodium Benzoate), Natural Food Colour (Chlorophyll).\nAllergen Information: Contains Peanuts. May Contain Traces Of Celery, Soya, Mustard, Milk, Gluten & Sulphite.\nNutritional Info:\nPer 100 g\n(Approx. Values):\nServing Size: 20 g (Approx. 1 Tbsp)\nServings Per Pack: 10\nPer Serving (20 g):\nEnergy: 44 kcal (2% RDA)\nProtein: 1.1 g\nCarbohydrates: 2.8 g\nTotal Sugars: 1.1 g\nAdded Sugars: 0.7 g (1% RDA)\nDietary Fibre: 0.4 g\nTotal Fat: 3.2 g (5% RDA)\nSaturated Fat: 0.5 g (2% RDA)\nTrans Fat: 0.02 g (<1% RDA)\nCholesterol: 0 mg\nSodium: 260 mg (13% RDA)",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Peanut Thecha Chutney Jar",
+  "handle": "chilli-peanut-thecha-chutney-jar",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374_4-kissan-chilli-peanut-thecha-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374-2_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374-3_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374-4_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374-5_4-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374-6_2-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374-7_2-kissan-chilli-peanut-thecha-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358374-8_2-kissan-chilli-peanut-thecha-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savor the bold and authentic taste of Maharashtra with Kissan Chilli Peanut Thecha Chutney, a delightful blend of roasted peanuts, fresh green chilies, and aromatic garlic. This chutney captures the essence of traditional Thecha with its silbatta-like texture, offering a nutty base and a fiery kick that tantalizes your taste buds. Made with farm-sourced ingredients, it ensures freshness and quality in every spoonful.\nKissan Chilli Peanut Thecha Chutney is a versatile condiment that pairs perfectly with Indian breads like parathas, bhakris, and theplas. It also enhances the flavor of fried snacks like pakoras and batata vadas. For a creative twist, use it as a dip, spread, or even a marinade to elevate your dishes. Unlike tomato ketchup or tomato sauce, this chutney offers a unique and spicy alternative to conventional condiments, making it a standout addition to your pantry.\nPackaged to preserve its robust flavors, this ready-to-eat chutney is perfect for quick snacks or elaborate meals. Whether you're a fan of kissan tomato ketchup 1kg or exploring beyond tomato paste and ketchup sachets, this chutney provides a refreshing departure from the usual. Its nutty and spicy flavor makes it an excellent choice for those seeking an authentic culinary experience.\nExperience the handcrafted goodness of Kissan Chilli Peanut Thecha Chutney--a celebration of tradition, spice, and unmatched flavor.",
+   "ingredients": "Ingredients: Vegetables (40%) [Green Chillies (24%), Freshly Peeled Garlic (11%), Coriander Puree], Water, Nuts & Pulses [Peanuts (15%), Roasted Bengal Gram Flour], Refined Soyabean Oil, Sugar, Iodised Salt, Spices & Condiments [Roasted Cumin Powder (0.3%), Spice Extract, Onion Powder, Ginger Powder], Acetic Acid, Citric Acid, Nature Identical Flavouring Substances, Preservative (Sodium Benzoate), Natural Food Colour (Chlorophyll).\nAllergen Information: Contains Peanuts. May Contain Traces Of Celery, Soya, Mustard, Milk, Gluten & Sulphite.\nNutritional Info:\nPer 100 g\nEnergy: 218 kcal (per 100 g)\nProtein: 5.4 g (per 100 g)\nCarbohydrate: 14 g (per 100 g)\nTotal Sugars: 5.5 g (per 100 g)\nAdded Sugars: 3.5 g (per 100 g)\nDietary Fibre: 2 g (per 100 g)\nTotal Fat: 15.8 g (per 100 g)\nSaturated Fat: 2.3 g (per 100 g)\nTrans Fat: 0.08 g (per 100 g)\nCholesterol: 0 mg (per 100 g)\nSodium: 1301 mg (per 100 g)",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Khatti Meethi Imli Khajoor Chutney",
+  "handle": "khatti-meethi-imli-khajoor-chutney",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358380_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381-2_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381-3_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381-4_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381-5_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381-6_2-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381-7_1-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358381-8_1-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful taste of Kissan Khatti Meethi Imli Khajoor Chutney, a perfect blend of tangy tamarind, sweet dates, and rich jaggery. Unlike regular tomato ketchup or tomato sauce, this chutney offers a unique khatta-meetha flavour that complements both traditional and modern dishes. Crafted with a silbatta-like texture, it brings authentic homemade goodness to your meals.\nThis versatile chutney pairs beautifully with samosas, dhoklas, and spicy chaats, offering a refreshing alternative to ketchup. Drizzle it over dahi bhalla or use it as a glaze for paneer and tofu skewers to add a tangy-sweet twist. Its wholesome ingredients make it a standout choice compared to standard tomato ketchup or tomato sauce, elevating your snacks effortlessly.\nKissan Khatti Meethi Imli Khajoor Chutney is made with farm-sourced tamarind, dates, and jaggery, with no added artificial flavours, ensuring a clean and natural taste. Conveniently packaged, it is ready to eat and perfect for festive gatherings or quick snacks. Its rich, balanced flavour makes it an essential addition to your sauces combo, offering a bold alternative to kissan tomato ketchup 1kg or other ketchup varieties.\nRediscover the joy of traditional Indian flavours with Kissan's commitment to quality. Whether as a dip, drizzle, or glaze, this chutney transforms your dining experience with its tangy-sweet profile. Elevate your meals today with Kissan Khatti Meethi Imli Khajoor Chutney, a wholesome and flavorful alternative to tomato ketchup!",
+   "ingredients": "Ingredients: Fruits (35%) [Tamarind Pulp (31%), Dates Paste (4%)], Jaggery (34%), Water, Spices & Condiments [Kashmiri Red Chilli Powder, Roasted Cumin Powder, Ginger Powder, Cardamom Powder, Black Pepper Powder (0.1%)], Natural Vinegar, Toasted Watermelon Seeds (0.6%), Iodised Salt, Thickener (Xanthan Gum), Preservative (Sodium Benzoate).\nAllergen Information: May contain traces of Sulphite, Gluten, Nuts, Sesame, and Mustard.\nNutritional Facts \nPer 100 g\nEnergy: 213 kcal\nProtein: 0.7 g\nCarbohydrate: 51.8 g\nTotal Sugars: 42.6 g\nAdded Sugars: 32.8 g\nDietary Fibre: 1 g\nTotal Fat: 0.5 g\nSaturated Fat: 0.1 g\nSodium: 210 mg",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Khatti Meethi Imli Khajoor Chutney Jar",
+  "handle": "khatti-meethi-imli-khajoor-chutney-jar",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372-2_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372-3_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372-4_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372-5_4-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372-6_2-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372-7_2-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358372-8_2-kissan-khatti-meethi-imli-khajoor-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the rich and authentic taste of Kissan Khatti Meethi Imli Khajoor Chutney, a delightful blend of tamarind, dates, and jaggery, crafted with traditional Indian spices. This chutney offers a silbatta-like texture, reminiscent of age-old grinding techniques, ensuring a rustic and flavorful experience in every bite. Made with tamarind pulp and dates paste sourced from trusted farms, it guarantees purity and natural goodness.\nPerfect for enhancing a variety of dishes, this chutney pairs wonderfully with crispy samosas, tangy chaat, or soft dhoklas. It's also an excellent addition to creamy dahi bhalla or as a glaze for paneer skewers, bringing a sweet-sour twist to your meals. Unlike regular tomato ketchup or tomato sauce, this chutney provides a wholesome and traditional alternative for those who crave authentic Indian flavours.\nFree from artificial colours and flavours, Kissan Khatti Meethi Imli Khajoor Chutney celebrates clean eating with every spoonful. Its convenient packaging ensures long-lasting freshness, making it easy to store and enjoy. Whether you're preparing a family meal or hosting a festive gathering, this chutney elevates every culinary experience with its unique flavour profile.\nRediscover the joy of homemade goodness with Kissan Khatti Meethi Imli Khajoor Chutney. Taste tradition, savour authenticity, and make every meal memorable with this versatile condiment that stands apart from ordinary ketchup or tomato sauce.",
+   "ingredients": "Ingredients: Fruits (35%) [Tamarind Pulp (31%), Dates Paste (4%)], Jaggery (34%), Water, Spices & Condiments [Kashmiri Red Chilli Powder, Roasted Cumin Powder, Ginger Powder, Cardamom Powder, Black Pepper Powder (0.1%)], Natural Vinegar, Toasted Watermelon Seeds (0.6%), Iodised Salt, Thickener (Xanthan Gum), Preservative (Sodium Benzoate).\nAllergen Information: May contain traces of Sulphite, Gluten, Nuts, Sesame, and Mustard.\nNutritional Facts \nPer 100 g\nEnergy: 213 kcal\nProtein: 0.7 g\nCarbohydrate: 51.8 g\nTotal Sugars: 42.6 g\nAdded Sugars: 32.8 g\nDietary Fibre: 1 g\nTotal Fat: 0.5 g\nSaturated Fat: 0.1 g\nSodium: 210 mg",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Teekhi Lehsun Mirch Chutney",
+  "handle": "teekhi-lehsun-mirch-chutney",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379_4-kissan-teekhi-lehsun-mirch-chutney.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358382_4-kissan-teekhi-lehsun-mirch-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379_4-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379-2_4-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379-3_4-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379-4_4-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379-5_4-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379-6_2-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379-7_1-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358379-8_1-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bring the authentic taste of Rajasthan to your table with Kissan Teekhi Lehsun Mirch Chutney. Crafted with freshly minced whole garlic and the renowned Mathania red chillies, this chilli garlic chutney offers a bold, fiery flavour and a silbatta-like texture reminiscent of traditional hand-ground masalas. Perfectly balanced with aromatic spices, it delivers a burst of authentic taste in every spoonful.\nThis versatile chutney pairs beautifully with Indian breads like parathas, bhakris, and theplas, or fried snacks such as batata vada and pakoras. Add a desi twist to your favourite dishes like noodles, momos, or wraps, or use it as a flavorful dip for grilled tofu and paneer. Its handcrafted blend of whole garlic and red chilli paste ensures a rich, rustic texture that enhances any meal.\nSourced from trusted Indian farms, Kissan Teekhi Lehsun Mirch Chutney celebrates purity and freshness. Conveniently packaged, it's ready to eat and easy to store, making it a must-have for busy kitchens. Whether you're spicing up a snack or adding depth to your main course, this chutney is your go-to choice for bold, traditional flavors.\nKissan Teekhi Lehsun Mirch Chutney is a celebration of Rajasthani heritage, bringing handcrafted goodness and fiery spice to your meals. Experience the difference with this premium condiment that redefines taste and tradition.",
+   "ingredients": "Ingredients: Vegetables (47%) [Freshly Minced Garlic (40%), Red Chilli Paste (3%), Tomato Paste, Coriander Puree], Water, Refined Soyabean Oil, Spices & Condiments [Mathania Red Chilli Powder, Coriander Powder (2%), Red Chilli Powder, Roasted Cumin Powder (0.1%)], Iodised Salt, Sugar, Acetic Acid, Citric Acid, Nature Identical & Natural Flavouring Substances, Preservative (Sodium Benzoate).\nAllergen Information: May Contain Traces Of Gluten, Soya, Nuts & Sulphites.\nNutritional Info:\nPer 100 g\nEnergy: 248 kcal\nProtein: 3.5 g\nCarbohydrate: 19.9 g\nTotal Sugars: 3.7 g\nAdded Sugars: 2 g\nDietary Fibre: 3.1 g\nTotal Fat: 17.4 g\nSaturated Fat: 2.8 g\nTrans Fat: 0.2 g\nCholesterol: Nil\nSodium: 1334 mg",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Teekhi Lehsun Mirch Chutney Jar",
+  "handle": "teekhi-lehsun-mirch-chutney-jar",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378_4-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378_4-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378-2_4-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378-3_4-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378-4_4-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378-5_4-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378-6_2-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378-7_2-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358378-8_2-kissan-kissan-teekhi-lehsun-mirch-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bring the authentic taste of Rajasthan to your table with Kissan Teekhi Lehsun Mirch Chutney. Crafted with freshly minced whole garlic and the renowned Mathania red chillies, this chilli garlic chutney offers a bold, fiery flavour and a silbatta-like texture reminiscent of traditional hand-ground masalas. Perfectly balanced with aromatic spices, it delivers a burst of authentic taste in every spoonful.\nThis versatile chutney pairs beautifully with Indian breads like parathas, bhakris, and theplas, or fried snacks such as batata vada and pakoras. Add a desi twist to your favourite dishes like noodles, momos, or wraps, or use it as a flavorful dip for grilled tofu and paneer. Its handcrafted blend of whole garlic and red chilli paste ensures a rich, rustic texture that enhances any meal.\nSourced from trusted Indian farms, Kissan Teekhi Lehsun Mirch Chutney celebrates purity and freshness. Conveniently packaged, it's ready to eat and easy to store, making it a must-have for busy kitchens. Whether you're spicing up a snack or adding depth to your main course, this chutney is your go-to choice for bold, traditional flavors.\nKissan Teekhi Lehsun Mirch Chutney is a celebration of Rajasthani heritage, bringing handcrafted goodness and fiery spice to your meals. Experience the difference with this premium condiment that redefines taste and tradition.",
+   "ingredients": "Ingredients: Vegetables (47%) [Freshly Minced Garlic (40%), Red Chilli Paste (3%), Tomato Paste, Coriander Puree], Water, Refined Soyabean Oil, Spices & Condiments [Mathania Red Chilli Powder, Coriander Powder (2%), Red Chilli Powder, Roasted Cumin Powder (0.1%)], Iodised Salt, Sugar, Acetic Acid, Citric Acid, Nature Identical & Natural Flavouring Substances, Preservative (Sodium Benzoate).\nAllergen Information: May Contain Traces Of Gluten, Soya, Nuts & Sulphites.\nNutritional Info:\nPer 100 g\nEnergy: 248 kcal\nProtein: 3.5 g\nCarbohydrate: 19.9 g\nTotal Sugars: 3.7 g\nAdded Sugars: 2 g\nDietary Fibre: 3.1 g\nTotal Fat: 17.4 g\nSaturated Fat: 2.8 g\nTrans Fat: 0.2 g\nCholesterol: Nil\nSodium: 1334 mg",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aam Kasundi Chutney",
+  "handle": "aam-kasundi-chutney",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369286_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285-2_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285-3_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285-4_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285-5_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285-6_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285-7_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369285-8_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kissan Aam Kasundi Chutney delivers the authentic taste of Bengal's beloved Mango Kasundi, blending farm-sourced raw mangoes with black and yellow mustard seeds and aromatic spices for a tangy, pungent flavour reminiscent of traditional Indian culinary practices. Crafted with silbatta-like texture and premium farm-sourced ingredients, this chutney offers unmatched versatility, pairing seamlessly with burgers, cutlets, chops, tacos, and more. Its bold flavour profile enhances everyday meals while adding a unique twist to global favourites, making it an exceptional choice for food enthusiasts seeking authentic Indian condiments. The kasundi paste, green mango pulp, and green chilli puree combine to create a coarsely ground chutney that not only complements classic dishes like luchi but also elevates modern recipes with a burst of vibrant taste. Designed to preserve freshness and strong flavours, the convenient packaging ensures every serving delivers the same high-quality experience. Inspired by India's rich culinary heritage, Kissan Aam Kasundi Chutney stands out with its farm-to-table authenticity, offering a delightful alternative to tomato ketchup and tomato sauce for those exploring bold, tangy condiments. Perfect for every meal, this chutney is a testament to the brand's commitment to sourcing the finest ingredients directly from Indian farms, providing a flavourful and aromatic experience that celebrates the essence of Indian cuisine. Store in a cool, dry place and refrigerate after opening to maintain its rich texture and taste.",
+   "ingredients": "Kasundi Paste (31%) [yellow Mustard (4%), Black Mustard (4%), Seasoning, Maize Starch, Acetic ACID], Green Mango Pulp (28%), Water, Refined Soybean Oil, Iodised Salt, Sugar, Natural And Nature-identical Flavouring Substances, Green Chilli Purée (1%), Thickeners (Modified Tapioca Starch, Xanthan Gum), Spices And Condiments (Roasted Cumin Powder (0.6%), Black Mustard Powder, Turmeric Powder, Fennel Powder, Coriander Seed Powder, Black Pepper Powder, Kalonji Powder, Fenugreek Powder, Bay Leaf Powder), Acetic ACID, Preservative (Sodium Benzoate).\nContains Mustard. May Contain Traces Of Gluten, Nuts, Soya, Sesame, And Sulphite.",
+   "nutritionalInfo": {
+    "Energy": "132 kcal",
+    "Protein": "1.9 g",
+    "Carbohydrate": "11.3 g",
+    "Total Sugars": "6.9 g",
+    "Added Sugars": "3 g",
+    "Dietary Fibre": "0.7 g",
+    "Total Fat": "8.8 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0.05 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1485 mg"
+   },
+   "manufacturerName": "Sahyadri Farms",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aam Kasundi Chutney Jar",
+  "handle": "aam-kasundi-chutney-jar",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+    },
+    "barcode": "8909106070646"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287-2_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287-3_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287-4_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287-5_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287-6_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287-7_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369287-8_1-kissan-raw-mango-mustardaam-kasundi-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kissan Aam Kasundi Chutney brings the authentic essence of Bengal's cherished Mango Kasundi tradition to your table, crafted with care using Indian farm-sourced raw mangoes, a blend of black and yellow mustard seeds, and aromatic spices. Its silbatta-like coarse texture and bold, tangy flavour make it a versatile addition to any meal. Perfectly suited for pairing with burgers, cutlets, chops, and tacos, this chutney elevates everyday dishes with its unique punch. The green mango pulp and green chilli puree deliver a delightful balance of tanginess and heat, while the kasundi paste ensures a rich and robust taste. Inspired by traditional preparation methods, this chutney reflects the brand's dedication to preserving cultural heritage and supporting local farmers. Whether savoured with luchi or drizzled over tacos for a creative twist, it offers a burst of regional flavour that stands apart from generic tomato ketchup or tomato sauce. Made with farm-sourced ingredients, it guarantees freshness and quality in every spoonful. This chutney offers a distinctive alternative to conventional condiments, enhancing both Indian and global cuisines with its pungent, tangy profile. Its hygienic preparation and storage recommendations ensure long-lasting freshness, making it a reliable choice for households seeking authentic, flavour-packed accompaniments. Embrace the rich culinary heritage of India with Kissan Aam Kasundi Chutney, a product that redefines versatility and taste in the world of sauces and condiments.",
+   "ingredients": "Kasundi Paste (31%) [yellow Mustard (4%), Black Mustard (4%), Seasoning, Maize Starch, Acetic ACID], Green Mango Pulp (28%), Water, Refined Soybean Oil, Iodised Salt, Sugar, Natural And Nature-identical Flavouring Substances, Green Chilli Purée (1%), Thickeners (Modified Tapioca Starch, Xanthan Gum), Spices And Condiments (Roasted Cumin Powder (0.6%), Black Mustard Powder, Turmeric Powder, Fennel Powder, Coriander Seed Powder, Black Pepper Powder, Kalonji Powder, Fenugreek Powder, Bay Leaf Powder), Acetic ACID, Preservative (Sodium Benzoate).\nContains Mustard. May Contain Traces Of Gluten, Nuts, Soya, Sesame, And Sulphite.",
+   "nutritionalInfo": {
+    "Energy": "132 kcal",
+    "Protein": "1.9 g",
+    "Carbohydrate": "11.3 g",
+    "Total Sugars": "6.9 g",
+    "Added Sugars": "3 g",
+    "Dietary Fibre": "0.7 g",
+    "Total Fat": "8.8 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0.05 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1485 mg"
+   },
+   "manufacturerName": "Sahyadri Farms",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Karipatta Coconut Chutney",
+  "handle": "karipatta-coconut-chutney",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288-2_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288-3_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288-4_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288-5_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288-6_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288-7_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369288-8_1-kissan-curry-leafkaripatta-coconut-chutney.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kissan Coconut Chutney brings the rich tradition of coastal Indian flavours to every meal, crafted using farm-sourced coconut and aromatic curry leaves for an authentic taste that evokes nostalgia. With a silbatta-like texture, this chutney is a versatile addition to Indian classics like idli, dosa, upma, vada, and aloo bonda, or a flavourful dip for grilled fish. Carefully selected ingredients, including grated coconut, curry leaf paste, green chilli, ginger, and garlic, deliver an earthy, aromatic kick that elevates every bite. Perfectly seasoned with hot tadka, it transforms everyday dishes into irresistible culinary experiences. Made with farm-sourced ingredients, it reflects a commitment to quality and tradition, ensuring every pouch captures the essence of Indian heritage. Its unique texture and bold flavours set it apart from generic sauces and condiments, offering a superior alternative for those seeking authentic Indian taste. Stored in a cool, dry place, this chutney retains its freshness and quality, making it an ideal choice for families and food enthusiasts alike. Whether paired with tomato ketchup, tomato sauce, or general sauces, it complements a variety of dishes and enhances the dining experience with its robust flavour profile. Kissan Coconut Chutney is a testament to the brand's dedication to preserving India's culinary heritage through farm-sourced, high-quality ingredients that deliver unmatched authenticity.",
+   "ingredients": "Water, Rehydrated Grated Coconut (25%) [water, Desiccated Coconut], Coconut Cream (20%), Sautéed Curry Leaf Paste (5%), Roasted Bengal Gram Flour, Fresh Vegetables (4%) [minced Green Chilli (3%), Ginger And Garlic], Iodised Salt, Refined Soybean Oil, Sugar, Spices [mustard (0.12%), Hing], Dehydrated Curry Leaf (0.04%). Contains Mustard. May Contain Traces Of Soya, Milk, Sulphite, And Gluten.",
+   "nutritionalInfo": {
+    "Energy": "118 kcal",
+    "Protein": "2.6 g",
+    "Carbohydrate": "7.1 g",
+    "Total Sugars": "1 g",
+    "Added Sugars": "0.3 g",
+    "Dietary Fibre": "1.5 g",
+    "Total Fat": "9.2 g",
+    "Saturated Fat": "6.2 g",
+    "Trans Fat": "0.03 g",
+    "Cholesterol": "0.25 mg",
+    "Sodium": "514 mg"
+   },
+   "manufacturerName": "Sahyadri Farms",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Juicy Orange Squash",
+  "handle": "juicy-orange-squash",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "164",
+    "compare_at_price": "164",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265837_14-kissan-juicy-orange-squash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265837_14-kissan-juicy-orange-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265837-2_8-kissan-juicy-orange-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265837-3_10-kissan-juicy-orange-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265837-4_9-kissan-juicy-orange-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265837-5_9-kissan-juicy-orange-squash.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "We make Kissan Juicy Orange Squash with naturally ripened oranges\nhandpicked from renowned farms. Kissan Juicy Orange Squash also contains the\ngoodness of fruit vitamins A, B, and C. Enjoy a delightfully refreshing orange\ndrink that tastes just like fresh orange juice whenever you feel tired.\nIt is a great drink to enjoy on a hot summer day. You can quickly make\nabout 5 litres or 25 glasses from one pack of Kissan Juicy Orange Squash, as\nper the serving suggestion of 210 ml (180 ml of water and 30 ml of Kissan Juicy\nOrange Squash).\nEasily prepare your refreshing orange drink by mixing one part of\nKissan Juicy Orange Squash with six parts of chilled water or soda — or simply\nmix 2 tablespoonfuls (30 ml) of the squash with one glass (180 ml) of water or\nchilled soda.\nYou can also use Kissan Juicy Orange Squash to make a refreshing iced\ntea or mocktails. Enjoy the taste of real orange juice in every sip!\nKissan Juicy Squash also comes in delightful Juicy Lemon, Juicy Grape,\nJuicy Pineapple, and Juicy Mango flavours. Started in 1934, Kissan is a popular\nIndian brand known for its range of jams, ketchups, sauces, and peanut butter.",
+   "ingredients": "Sugar, Water, Orange Juice (25%), Acidity Regulator (E330), Natural Flavouring Substance, Iodised Salt, Preservative (E223), Food Colour (E110).",
+   "nutritionalInfo": {
+    "Energy": "64 kcal",
+    "Protein": "0.1 g",
+    "Carbohydrate": "15.6 g",
+    "Total Sugars": "15.3 g",
+    "Added Sugars": "14.7 g",
+    "Dietary Fibre": "0.3 g",
+    "Total Fat": "0.1 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "26 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001897"
+  }
+ },
+ {
+  "title": "Juicy Mango Squash",
+  "handle": "juicy-mango-squash",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "164",
+    "compare_at_price": "164",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265832_14-kissan-juicy-mango-squash.jpg"
+    },
+    "barcode": "8901030731358"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265832_14-kissan-juicy-mango-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265832-2_10-kissan-juicy-mango-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265832-3_10-kissan-juicy-mango-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265832-4_8-kissan-juicy-mango-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265832-5_9-kissan-juicy-mango-squash.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "We make Kissan\nJuicy Mango Squash with juicy and naturally ripened mangoes that are handpicked\nfrom the renowned farms of South India. With Kissan Juicy Mango Squash, you can\nenjoy a delightfully refreshing mango drink when you feel tired easily because all\nit takes is to pour, mix, and drink! It is also a great refreshing drink that\ntastes just like mango juice, which can be had on a hot summer day.\nYou can quickly\nmake about 5 litres or 25 glasses from one pack of Kissan Juicy Mango Squash as\nper the serving suggestion of 210 ml (180 ml of water and 30 ml of Kissan Juicy\nMango Squash).\nEasily make your\nrefreshing juicy mango drink by mixing one part of Kissan Juicy Mango Squash\nwith six parts of chilled water or soda, or 2 capfuls or one tablespoon (30 ml)\nof Kissan Juicy Mango Squash with one glass (180 ml) of water or even chilled\nsoda.\nUse Kissan Juicy\nMango Squash to make a refreshing iced tea or mocktails. Enjoy the taste of\nmango juice in every sip!\nKissan Juicy\nSquash also comes in delightful Juicy Orange, Juicy Grape, Juicy Pineapple, and\nJuicy Lemon flavours.\nStarted in 1934,\nKissan is a popular brand in India and maker of jams, ketchups, sauces, and\npeanut butter.",
+   "ingredients": "Sugar, Water,\nMango Pulp (25%), Acidity Regulator (330), Iodised Salt, Potassium Chloride,\nPreservative (223).\nContains Sulphite.\nContains Permitted Synthetic Food Colour (110) and Added Flavour – Nature\nIdentical Flavouring Substance.\nContains Permitted Class II Preservative.\nIt Contains Additional Sodium/Potassium Salts.",
+   "nutritionalInfo": {
+    "(g)": "0, 0, 0%"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001897"
+  }
+ },
+ {
+  "title": "Juicy Lemon Squash",
+  "handle": "juicy-lemon-squash",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "164",
+    "compare_at_price": "164",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265836_13-kissan-juicy-lemon-squash.jpg"
+    },
+    "barcode": "8901030731341"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265836_13-kissan-juicy-lemon-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265836-2_10-kissan-juicy-lemon-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265836-3_10-kissan-juicy-lemon-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265836-4_9-kissan-juicy-lemon-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265836-5_8-kissan-juicy-lemon-squash.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "We make Kissan Juicy Lemon Squash with naturally ripened lemons handpicked from the Himalayan foothills. With Kissan Juicy Lemon Squash, you can enjoy a delightfully refreshing lemon drink whenever you feel tired — all it takes is to pour, mix, and drink!\nIt is a great refreshing beverage that tastes just like real lemon juice, perfect for a hot summer day. You can quickly make about 5 litres or 25 glasses from one pack of Kissan Juicy Lemon Squash, following the per-serve suggestion of 210 ml (180 ml of water and 30 ml of Kissan Juicy Lemon Squash).\nEasily make your refreshing lemon drink by mixing one part of Kissan Juicy Lemon Squash with six parts of chilled water or soda, or simply add 2 capfuls (30 ml) of Kissan Juicy Lemon Squash to one glass (180 ml) of water or chilled soda. You can also use Kissan Juicy Lemon Squash to make a refreshing iced tea or mocktails.\nEnjoy the tangy taste of lemon juice in every sip! Kissan Juicy Squash is also available in delightful Juicy Orange and Juicy Mango flavours. Started in 1934, Kissan is a popular Indian brand known for its jams, ketchups, sauces, and peanut butter.",
+   "ingredients": "Sugar, Water, Lemon Juice (26%), Acidity Regulator (E330), Thickener (E415), Iodised Salt, Antioxidant (E300), Potassium Chloride, Nature-Identical Flavouring Substance, Preservative (E223), Food Colour (E133).",
+   "nutritionalInfo": {
+    "Energy": "61 kcal",
+    "Protein": "Trace",
+    "Carbohydrate": "15.1 g",
+    "Total Sugars": "14.6 g",
+    "Added Sugars": "14.4 g",
+    "Dietary Fibre": "0.1 g",
+    "Total Fat": "Trace",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "21 mg",
+    "Potassium": "11 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001897"
+  }
+ },
+ {
+  "title": "Juicy Grape Squash",
+  "handle": "juicy-grape-squash",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265830_11-kissan-juicy-grape-squash.jpg"
+    },
+    "barcode": "8901030731334"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265830_11-kissan-juicy-grape-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265830-2_8-kissan-juicy-grape-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265830-3_8-kissan-juicy-grape-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265830-4_6-kissan-juicy-grape-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265830-5_6-kissan-juicy-grape-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265830-6_3-kissan-juicy-grape-squash.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "We make Kissan Juicy Grape squash with luscious and naturally ripe blue grapes that are handpicked from the renowned vineyards of Karnataka. With Kissan Juicy Grape squash you can enjoy a delightfully refreshing juicy grape drink that tastes like grape juice when you feel tired. It is also a great refreshing drink which can be had in a hot summer day .You can quickly make about 5 litres or 25 glasses from one pack of Kissan Juicy Grape squash as according to the per serve suggestion of 210 ml (180 ml of water and 30 ml of Kissan Juicy Grape Squash). Easily make your refreshing juicy grape drink by mixing one part of Kissan Juicy Grape squash with six parts of chilled water or soda or 2 capfuls or tablespoonful (30ml) of Kissan Juicy Grape squash with one glass( 180ml) of water or even chilled soda. Use Kissan Juicy Grape squash to make a refreshing iced tea or mocktails. Enjoy the taste of luscious grape juice in every sip! Kissan Juicy squash also comes in delightful Juicy Orange Juicy Mango Juicy Grape and Juicy Pineapple flavours. Started in 1934 Kissan is a popular brand in India and maker of jams ketchups and sauces and peanut butter.*OLD",
+   "ingredients": "Ingredients:Sugar, Water, Grape Juice (25%), Acidity Regulator - 330, Iodised Salt, Preservative - 211, Potassium Chloride.\nContains permitted synthetic food colours - 122, 102, 132 and added flavour - nature identical flavouring substance.\nContains permitted Class II preservative.\nIt contains additional sodium/potassium salts.",
+   "nutritionalInfo": {
+    "Energy": "251 kcal",
+    "Protein": "0.2 g",
+    "Carbohydrates": "62.4 g",
+    "Total Sugar": "61.2 g",
+    "Dietary Fibre": "0.8 g",
+    "Total Fat": "0.1 g",
+    "Saturated Fat": "Nil",
+    "Trans Fat": "Nil",
+    "Sodium": "70 mg",
+    "Potassium": "37 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001897"
+  }
+ },
+ {
+  "title": "Juicy Pineapple Squash",
+  "handle": "juicy-pineapple-squash",
+  "vendor": "Kissan (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "164",
+    "compare_at_price": "164",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265834_11-kissan-pineapple-squash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265834_11-kissan-pineapple-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265834-2_8-kissan-pineapple-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265834-3_9-kissan-pineapple-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265834-4_6-kissan-pineapple-squash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265834-5_5-kissan-pineapple-squash.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Packed with real pineapple juice, Kissan Pineapple Squash has a delightful, refreshing taste. Just mix one part of Kissan Pineapple squash with two parts of chilled water or soda and enjoy a delicious glass of nature's goodness. Kissan Pineapple squash provides a yummy on-the-go breakfast on a hot summer morning. Think of different ways to drink it - stirred in a milkshake, added to your iced tea, or lassi to give a delightful assortment of flavours for your kids' breakfast. This can be your answer to a cool, refreshing drink on a hot sunny day. Kissan Pineapple squash is a real fruit ka mazaa har sip mein.",
+   "ingredients": "Sugar, water, pineapple juice (25%), acidity regulator - E330, nature identical flavouring substance, iodised salt, preservative - E223, food colour - E102",
+   "nutritionalInfo": {
+    "Basis": "100ml",
+    "Serving Size": "30 ml",
+    "Energy (kcal)": "213",
+    "Protein (g)": "0.1",
+    "Carbohydrate (g)": "52.7",
+    "Total Sugars (g)": "52.0",
+    "Added Sugars (g)": "49.3",
+    "Dietary Fibre (g)": "0.1",
+    "Total Fat (g)": "Trace",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "91"
+   },
+   "storageInstructions": "*Refrigerate after opening",
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001897"
+  }
+ }
+]

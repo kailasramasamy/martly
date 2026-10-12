@@ -1,0 +1,294 @@
+{
+  "brand": "Kissan (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "kissan-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kissan/logo-5ca2a56e.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#0B8A3E",
+  "namePrefix": "Kissan ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Fresh\\ Tomato\\ Ketchup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Tomato\\ Ketchup\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Tomato\\ Ketchup\\ Squeeze$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Sweet\\ \\&\\ Spicy\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Sweet\\ \\&\\ Spicy\\ Sauce\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^No\\ Onion\\ No\\ Garlic\\ Tomato\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Tomato\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Puree$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Mango\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Orange\\ Marmalade$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Berry\\ Blast\\ Jam$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Fables\\ Blueberry\\ \\&\\ Mulberry\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Fables\\ Apricot\\ \\&\\ Peach\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Fables\\ Strawberry\\ \\&\\ Raspberry\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Jam & Marmalade"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Choco\\ Peanut\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Chatpati\\ Hari\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Chatpati\\ Hari\\ Chutney\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Peanut\\ Thecha\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Peanut\\ Thecha\\ Chutney\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Khatti\\ Meethi\\ Imli\\ Khajoor\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Khatti\\ Meethi\\ Imli\\ Khajoor\\ Chutney\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Teekhi\\ Lehsun\\ Mirch\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Teekhi\\ Lehsun\\ Mirch\\ Chutney\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Aam\\ Kasundi\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Aam\\ Kasundi\\ Chutney\\ Jar$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Karipatta\\ Coconut\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Juicy\\ Orange\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Juicy\\ Mango\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Juicy\\ Lemon\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Juicy\\ Grape\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Juicy\\ Pineapple\\ Squash$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    }
+  ]
+}
