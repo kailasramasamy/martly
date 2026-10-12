@@ -1,0 +1,62 @@
+{
+  "brand": "Top Ramen (Nissin)",
+  "manufacturer": "Indo Nissin Foods Pvt. Ltd.",
+  "feed": "top-ramen-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/top-ramen/logo-462d9e00.png",
+  "themeColor": "#D7182A",
+  "themeColorSecondary": "#FFD100",
+  "namePrefix": "Top Ramen ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Masala\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Curry\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Fiery\\ Chilli\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Masala\\ Atta\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Super\\ Noodles\\ \\-\\ More\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    }
+  ]
+}

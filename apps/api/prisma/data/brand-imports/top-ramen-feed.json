@@ -1,0 +1,388 @@
+[
+ {
+  "title": "Masala Noodles",
+  "handle": "masala-noodles",
+  "vendor": "Top Ramen (Nissin)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "11",
+    "compare_at_price": "11",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001627_9-top-ramen-noodles-masala.jpg"
+    },
+    "barcode": "8901014002023"
+   },
+   {
+    "title": "140g",
+    "price": "24",
+    "compare_at_price": "24",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001611_3-top-ramen-noodles-masala.jpg"
+    }
+   },
+   {
+    "title": "240g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263521_5-top-ramen-noodles-masala.jpg"
+    }
+   },
+   {
+    "title": "360g",
+    "price": "78",
+    "compare_at_price": "78",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263524_4-top-ramen-noodles-masala.jpg"
+    }
+   },
+   {
+    "title": "480g",
+    "price": "112",
+    "compare_at_price": "112",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001598_3-top-ramen-noodles-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001627_9-top-ramen-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001627-2_1-top-ramen-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001627-3_1-top-ramen-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001627-4_1-top-ramen-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001627-5_1-top-ramen-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001611_3-top-ramen-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263521_5-top-ramen-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263524_4-top-ramen-noodles-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Top Ramen Super Noodles now comes with 20% more masala. The noodles are masala flavoured and they are non-sticky too. That's more taste and more mazaa in each bite. It has Vitamin B1 and B2, which help make energy when your body requires it. It is a fast appetite manager and can be utilized as a fast food with low calories.",
+   "ingredients": "Wheat Flour, Edible Vegetable Oil (Palm), Common Salt, Acidity Regulators, INS, Anti Oxidant And Guar Gum.",
+   "manufacturerName": "Nissin",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Curry Noodles",
+  "handle": "curry-noodles",
+  "vendor": "Top Ramen (Nissin)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/310178_4-top-ramen-noodles-curry-veg.jpg"
+    },
+    "barcode": "8901014003174"
+   },
+   {
+    "title": "280g",
+    "price": "103",
+    "compare_at_price": "103",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263515_3-top-ramen-noodles-curry-veg.jpg"
+    }
+   },
+   {
+    "title": "420g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40299137_1-top-ramen-curry-veg-noodles-saucy-flat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/310178_4-top-ramen-noodles-curry-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/310178-2_2-top-ramen-noodles-curry-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/310178-3_2-top-ramen-noodles-curry-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/310178-4_1-top-ramen-noodles-curry-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263515_3-top-ramen-noodles-curry-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299137_1-top-ramen-curry-veg-noodles-saucy-flat.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Top Ramen Saucy Flat Curry Veg Noodles are delectably flat noodles in a tongue-tingling spicy saucy flavour which melts in the mouth. It is sufficient to satisfy your hunger, and the fragrance is enough to remind you of its lip-smacking ingredients. It is ready to eat in 2 minutes.",
+   "ingredients": "NOODLES (85%): Wheat Flour, Edible Vegetable Oil (Palm), Iodised Salt, Acidity Regulators (INS 500(i), INS 451(i)), Thickener (INS 412) & Antioxidant (INS 319)., SEASONING MIX (15%): Corn Starch, Iodised Salt, Sugar, Onion Powder, Spice Mix - 8.8% (Red Chilli, Turmeric, Coriander, Cumin, Ginger, Cinnamon, Fenugreek, Clove & Asafoetidal), Noodle Powder (Wheat Flour, Edible Vegetable Oil (Palm), Iodised Salt, Acidity Regulators (INS 500(i), INS 451(i)), Thickener (INS 412) & Antioxidant (INS 319)), Edible Vegetable Oil (Palm), Flavour Enhancers (Yeast Extract, INS 627, INS 631), Garlic, Tomato Powder, Acidity Regulator (INS 330), Colours (INS 160c(i), INS 150d), Anticaking Agent (INS 551) & Antioxidant (INS 319)., CONTAINS PERMITTED NATURAL COLOURS & ADDED FLAVOUR (NATURE IDENTICAL)., ALLERGEN INFORMATION: CONTAINS WHEAT. MAY CONTAIN TRACES OF MILK & SOYA.",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "462.00",
+    "Protein (g)": "8.90",
+    "Carbohydrate (g)": "64.60",
+    "Sugars (g)": "5.10",
+    "Fat (g)": "18.70",
+    "Saturated fatty acids (g)": "9.20",
+    "Trans fatty acids (g)": "ND*",
+    "RDA": "*ND-Not Detected."
+   },
+   "usageInstructions": "Add 225 ml of water and cook for 3 minutes.",
+   "manufacturerName": "Nissin",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Noodles",
+  "handle": "chicken-noodles",
+  "vendor": "Top Ramen (Nissin)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "12",
+    "compare_at_price": "12",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100003775_3-top-ramen-noodles-chicken.jpg"
+    },
+    "barcode": "8901014002542"
+   },
+   {
+    "title": "280g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/269414_4-top-ramen-noodles-chicken.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003775_3-top-ramen-noodles-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003775-2_2-top-ramen-noodles-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003775-3_2-top-ramen-noodles-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003775-4_2-top-ramen-noodles-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003775-5_2-top-ramen-noodles-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003775-6_1-top-ramen-noodles-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/269414_4-top-ramen-noodles-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Twist your taste with the yummy Top Ramen Chicken Super Noodles. The best noodles to accompany you in order to fulfil the tasty and healthy snack time. These delicious chicken-flavoured and non-sticky masala-flavoured noodles add oodles of taste to a meal fit for a champion.",
+   "ingredients": "Noodles (90.57%): Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm Oil), lodised Salt, Acidity Regulators [INS 451(i) & INS 500(i)], Mixed Spices 0.17% (Turmeric, Coriander, Cumin & Red Chilli), Antioxidant (INS 319) & Thickener (INS 412). SEASONING MIX (9.43%): lodised Salt, Sugar, Flavours (Natural & Nature Identical), Textured Soya, Onion Powder, Hydrolysed Vegetable Protein Powder (Soya), Noodle Powder {Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm Oil), lodised Salt, Acidity Regulators [INS 451(i) & INS 500(i)], Mixed Spices 0.17% (Turmeric, Coriander, Cumin & Red Chilli), Antioxidant (INS 319) & Thickener (INS 412)}, Edible Vegetable Oil (Palm Oil), Corn Starch, Mixed Spices 3.15% (Red Chilli, Ginger, Turmeric, Black Pepper & Nutmeg), Garlic Chips, Skimmed Milk Powder, Flavour Enhancers (INS 631 & INS 627), Dehydrated Chicken Powder, Chilli Flakes, Dehydrated Chicken Bits, Acidity Regulator (INS 330), Egg Powder, Garlic Powder, Dried Fenugreek Leaves, Anticaking Agent (INS 551), Thickener (INS 415) & Colour [INS 160c(i)]",
+   "nutritionalInfo": {
+    "Serving Size": "70 g",
+    "Energy (kcal)": "459.01",
+    "Protein (g)": "9.25",
+    "Carbohydrate (g)": "66.85",
+    "Total Sugars (g)": "1.91",
+    "Added Sugars (g)": "1.72",
+    "Total Fat (g)": "16.20",
+    "Saturated Fat (g)": "8.22",
+    "Trans Fat (g)": "0.099",
+    "Cholesterol (mg)": "0.15",
+    "Sodium (mg)": "1542.23"
+   },
+   "storageInstructions": "*Store in a cool, hygienic, dry place and avoid direct sunlight",
+   "manufacturerName": "Nissin",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fiery Chilli Noodles",
+  "handle": "fiery-chilli-noodles",
+  "vendor": "Top Ramen (Nissin)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052966_3-top-ramen-noodles-fiery-chilli.jpg"
+    },
+    "barcode": "8901014000555"
+   },
+   {
+    "title": "240g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052971_3-top-ramen-noodles-fiery-chilli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052966_3-top-ramen-noodles-fiery-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052966-2_1-top-ramen-noodles-fiery-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052966-3_1-top-ramen-noodles-fiery-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052966-4_1-top-ramen-noodles-fiery-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052966-5_1-top-ramen-noodles-fiery-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052971_3-top-ramen-noodles-fiery-chilli.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Catering to all types of taste buds, Top Ramen noodles delight folks with a wide variety of options to choose from. Ranging from yummy saucy curry noodles to healthy atta noodles, Top Ramen is the perfect snack for everyone. Fiery Chilli Noodles is the spiciest of the lot and is great for those who like a flaming hot bite in every mouthful.",
+   "ingredients": "Wheat Flour, Edible Vegetable Oil (Palm), lodised Salt, Acidity Regulators {INS 451(i), INS 500(i)}, Red Chilli Powder, Colour {INS 160c(i)}, Antioxidant (INS 319) & Thickener (INS 412)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "474.82",
+    "Protein (g)": "8.20",
+    "Carbohydrate (g)": "62.94",
+    "Sugars (g)": "5.70",
+    "Fat (g)": "21.14",
+    "Saturated fatty acids (g)": "8.10",
+    "Trans fatty acids (g)": "ND"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Indo Nissin Foods Pvt. Ltd",
+   "fssaiLicense": "10013043000622",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Masala Atta Noodles",
+  "handle": "masala-atta-noodles",
+  "vendor": "Top Ramen (Nissin)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007743_10-top-ramen-atta-noodles-masala.jpg"
+    },
+    "barcode": "8901014011117"
+   },
+   {
+    "title": "280g",
+    "price": "103",
+    "compare_at_price": "103",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007742_9-top-ramen-atta-noodles-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007743_10-top-ramen-atta-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007743-2_1-top-ramen-atta-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007743-3_2-top-ramen-atta-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007743-4_1-top-ramen-atta-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007743-5_1-top-ramen-atta-noodles-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007742_9-top-ramen-atta-noodles-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "To discover the proper combination of Taste and Health, and crave the best, get Top Ramen Atta Masala Noodles. Made from 100% wholesome Atta and packed with an exciting masala for delicious taste. Top Ramen Atta noodles are a stomach-filling treat for all. Wheat or Atta is a rich source of Carbohydrates and Proteins that plays a great role in reducing the risk of developing metabolic syndromes.",
+   "manufacturerName": "Nissin",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Super Noodles - More Masala",
+  "handle": "super-noodles-more-masala",
+  "vendor": "Top Ramen (Nissin)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001631_1-top-ramen-super-noodles-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001631_1-top-ramen-super-noodles-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Top Ramen Super Noodles now comes with 20% more masala. The noodles are also masala flavoured and they are non-sticky too. That’s more taste and more mazaa in every bite.",
+   "ingredients": "Wheat flour, edible vegetable oil (palm), common salt, acidity regulators, INS, Anti oxidant and guar gum",
+   "manufacturerName": "Nissin",
+   "countryOfOrigin": "India"
+  }
+ }
+]
