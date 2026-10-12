@@ -46,3 +46,6 @@ coverage/
 # Local env backups and TypeScript incremental build info
 .env.bak*
 *.tsbuildinfo
+
+# Local scratch (db-sync dumps hold prod data)
+tmp/
