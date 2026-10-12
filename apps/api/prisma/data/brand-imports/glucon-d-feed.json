@@ -1,0 +1,966 @@
+[
+ {
+  "title": "Regular Glucose Powder",
+  "handle": "regular-glucose-powder",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/258390_9-glucon-d-energy-drink-pure-glucose-original.jpg"
+    },
+    "barcode": "8901542016226"
+   },
+   {
+    "title": "200g",
+    "price": "62",
+    "compare_at_price": "62",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40164536_6-glucon-d-instant-energy-health-drink-regular.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "124",
+    "compare_at_price": "124",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/277117_12-glucon-d-instant-energy-health-drink-regular.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169416_7-glucon-d-instant-energy-health-drink-regular-refill.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258390_9-glucon-d-energy-drink-pure-glucose-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258390-2_6-glucon-d-energy-drink-pure-glucose-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258390-3_6-glucon-d-energy-drink-pure-glucose-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258390-4_6-glucon-d-energy-drink-pure-glucose-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258390-5_4-glucon-d-energy-drink-pure-glucose-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258390-6_3-glucon-d-energy-drink-pure-glucose-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258390-7_3-glucon-d-energy-drink-pure-glucose-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258390-8_3-glucon-d-energy-drink-pure-glucose-original.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon-D is the preferred choice in summer when the scorching heat drains out body glucose. Glucon-D contains 99.4% glucose. It is easily absorbed by the body, thus giving instant energy and rejuvenation.",
+   "ingredients": "Dextrose (Glucose), Minerals (Calcium Phosphates), Vitamin D2",
+   "nutritionalInfo": {
+    "Serving Size": "35 g",
+    "Energy (kcal)": "360",
+    "Carbohydrates (g)": "90",
+    "Total Sugars (g)": "90",
+    "Added Sugars (g)": "90",
+    "Protein (g)": "0",
+    "Total Fat (g)": "0",
+    "Sodium (mg)": "0",
+    "Calcium (mg)": "170",
+    "Phosphorus (mg)": "100",
+    "Vitamin D2 (µg)": "7.5"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "A) Heinz India Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014051000865"
+  }
+ },
+ {
+  "title": "Regular Glucose Powder Jar",
+  "handle": "regular-glucose-powder-jar",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "137",
+    "compare_at_price": "137",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/258392_11-glucon-d-instant-energy-health-drink-regular.jpg"
+    },
+    "barcode": "8901542011702"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258392_11-glucon-d-instant-energy-health-drink-regular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258392-2_9-glucon-d-instant-energy-health-drink-regular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258392-3_7-glucon-d-instant-energy-health-drink-regular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258392-4_7-glucon-d-instant-energy-health-drink-regular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258392-5_7-glucon-d-instant-energy-health-drink-regular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258392-6_5-glucon-d-instant-energy-health-drink-regular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258392-7_5-glucon-d-instant-energy-health-drink-regular.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258392-8_4-glucon-d-instant-energy-health-drink-regular.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon-D Instant Energy Nutrition Drink contains 99. 4% of the glucose that helps replenish body glucose and fills you with the energy required to stay active. It comes in a variety of flavours like nimbu, tangy orange and regular. It is easily absorbed by the body, thus giving out an instant energy boost and refreshment. Enriched with Vitamin-D and Minerals, including Calcium and Phosphorus, this glucose drink helps you charge up to fight tiredness and supports immunity. Add Glucon-D to a glass of water every day to provide growing active children with the energy that keeps them going and acts as a refreshment after a long day.",
+   "usageInstructions": "Add three tablespoons of powder in 200ml water.\nStir well and drink.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "35g",
+    "Energy": "360 kcal",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "0 mg",
+    "Carbohydrate": "90 g",
+    "Total Sugars": "90 g",
+    "Added Sugars": "90 g",
+    "Vitamin D2": "7.5 µg",
+    "Calcium": "170 mg",
+    "Phosphorus": "100 mg"
+   },
+   "manufacturerName": "Heinz India Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001417"
+  }
+ },
+ {
+  "title": "Nimbu Pani Glucose Powder",
+  "handle": "nimbu-pani-glucose-powder",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264324_12-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/295519_17-glucon-d-instant-energy-health-drink-nimbu-pani-refill.jpg"
+    }
+   },
+   {
+    "title": "450g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264330_9-glucon-d-glucose-based-beverage-mix-nimbu-pani.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "369",
+    "compare_at_price": "369",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022369_17-glucon-d-glucose-based-beverage-mix-nimbu-pani.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264324_12-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264324-2_9-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264324-3_9-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264324-4_9-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264324-5_7-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264324-6_6-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264324-7_6-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264324-8_5-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Unlock instant energy and refreshment with Glucon-D, the versatile glucose drink that's packed with essential vitamins, minerals, and the power of 99.4% pure glucose. Designed to quickly replenish your body's glucose levels, this delightful drink comes in a variety of flavours like tangy orange, refreshing nimbu, and the classic regular, ensuring there's a taste to suit every palate. Enriched with Vitamin D and minerals like calcium and phosphorus, Glucon-D not only provides an energy boost but also supports your immunity and bone health. Whether you're an active adult or a growing child, this glucose-rich beverage is the perfect companion to help you power through the day, whether it's tackling the summer heat or conquering your daily tasks. With its easy absorption and refreshing properties, Glucon-D is the ideal solution to fight fatigue and keep you charged, energised, and ready to take on the world.",
+   "ingredients": "Glucose (52%), Sucrose (45%), Acidity Regulator (INS 330), Natural Flavouring Substance, Mineral (Calcium Phosphate), Edible Common Salt, Vitamin C",
+   "nutritionalInfo": {
+    "Serving Size": "30g",
+    "Energy (kcal)": "368",
+    "Protein (g)": "0",
+    "Carbohydrate (g)": "92",
+    "Total Sugars (g)": "92",
+    "Added Sugars (g)": "92",
+    "Total Fat (g)": "0",
+    "Sodium (mg)": "113",
+    "Vitamin D? (µg)": "40",
+    "Calcium (mg)": "114",
+    "Phosphorus (mg)": "57"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "A) Heinz India Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014051000865"
+  }
+ },
+ {
+  "title": "Nimbu Pani Glucose Powder Jar",
+  "handle": "nimbu-pani-glucose-powder-jar",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "191",
+    "compare_at_price": "191",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169418_7-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169418_7-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169418-2_7-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169418-3_7-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169418-4_7-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169418-5_7-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169418-6_7-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169418-7_6-glucon-d-instant-energy-health-drink-nimbu-pani.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Summers can be daunting and especially when there’s an enormous scorching sun always ready to drain out your energy and stop you from being the best of you. But thank god there is Glucon-D! The new and improved Glucon-D now comes with 3 benefits - Glucose for Instant Energy, Magnesium for Muscle Recovery, and Vitamin C & Zinc for Immunity. What’s better? Add Glucon-D to a glass of water every day to provide growing active children the energy that keeps them going and adults, refreshment after a long day.",
+   "ingredients": "Glucose, Sucrose, Acidity Regulator (INS 330), Minerals (Magnesium\nSulphate, Calcium Phosphate, Zinc Gluconate), Natural Flavouring Substances (Nimbu\nPani), Edible Common Salt, Vitamin C.",
+   "nutritionalInfo": {
+    "Energy": "368 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "92 g",
+    "Total Sugars": "92 g",
+    "Added Sugars": "92 g",
+    "Total Fat": "0 g",
+    "Sodium": "113 mg",
+    "Vitamin D2": "40 µg",
+    "Calcium": "114 mg",
+    "Phosphorus": "57 mg"
+   },
+   "usageInstructions": "Add three tablespoons of powder to 200 ml water. Stir well and drink.",
+   "fssaiLicense": "10014051000865",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tangy Orange Glucose Powder",
+  "handle": "tangy-orange-glucose-powder",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "22g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+    }
+   },
+   {
+    "title": "75g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169419_7-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "79",
+    "compare_at_price": "79",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263373_17-glucon-d-instant-energy-health-drink-tangy-orange-refill.jpg"
+    }
+   },
+   {
+    "title": "450g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263372_16-glucon-d-glucose-based-beverage-mix-orange.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325580_1-glucon-d-tangy-orange-instant-energy-drink.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "369",
+    "compare_at_price": "369",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264326_18-glucon-d-tangy-orange-flavoured-glucose-based-beverage-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002-2_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002-3_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002-4_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002-5_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002-6_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002-7_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304002-8_1-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon D fills you with the energy required to stay active. Kick away tiredness and feel rejuvenated with Glucon-D, the preferred choice in summer when the scorching heat drains out body glucose. Glucon D helps to provide instant energy. Available in regular as well as delicious Lime, Orange and Mango flavours. It contains Vitamin C which improves mental alertness that helps you to concentrate better while doing various daily tasks.",
+   "nutritionalInfo": {
+    "Serving Size": "22 g",
+    "Energy Value": "81 kcal",
+    "Protein": "0 g",
+    "Carbohydrates": "20.2 g",
+    "Total Sugar": "20.2 g",
+    "Added Sugar": "20.2 g",
+    "Fat": "0 g",
+    "Sodium": "29.6 mg",
+    "Vitamin C": "8.8 mg",
+    "Calcium": "25.1 mg",
+    "Phosphorus": "12.5 mg"
+   },
+   "storageInstructions": "*Store in cool, dry place\n*Away from direct sunlight and hot-humid conditions",
+   "manufacturerName": "Zydus Wellness Products Ltd",
+   "fssaiLicense": "10020021005270",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tangy Orange Glucose Powder Jar",
+  "handle": "tangy-orange-glucose-powder-jar",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "191",
+    "compare_at_price": "191",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417_7-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417_7-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417-2_7-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417-3_7-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417-4_7-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417-5_7-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417-6_7-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417-7_6-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169417-8_5-glucon-d-instant-energy-health-drink-tangy-orange.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Summers can be daunting and especially when there’s an enormous scorching sun always ready to drain out your energy and stop you from being the best of you. But thank god there is Glucon-D! The new and improved Glucon-D now comes with 3 benefits - Glucose for Instant Energy, Magnesium for Muscle Recovery, and Vitamin C & Zinc for Immunity. What’s better? Add Glucon-D to a glass of water every day to provide growing active children the energy that keeps them going and adults, refreshment after a long day.",
+   "ingredients": "Sucrose, Glucose, Acidity Regulator (INS 330), Minerals (Magnesium\nSulphate, Calcium Phosphate, Zinc Gluconate), Natural Identical Flavouring\nSubstances (Orange), Edible Common Salt, Vitamin C, Colour (INS 110).",
+   "nutritionalInfo": {
+    "Energy": "368 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "92 g",
+    "Total Sugars": "92 g",
+    "Added Sugars": "92 g",
+    "Total Fat": "0 g",
+    "Sodium": "71 mg",
+    "Vitamin D2": "40 µg",
+    "Calcium": "114 mg",
+    "Phosphorus": "57 mg"
+   },
+   "fssaiLicense": "10014051000865",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Blast Glucose Powder",
+  "handle": "mango-blast-glucose-powder",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "56",
+    "compare_at_price": "56",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421_3-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+    }
+   },
+   {
+    "title": "450g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40164542_6-glucon-d-glucose-based-beverage-mix-mango.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "409",
+    "compare_at_price": "409",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40164543_6-glucon-d-glucose-based-beverage-mix-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421_3-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421-2_3-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421-3_3-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421-4_3-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421-5_3-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421-6_3-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421-7_2-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40169421-8_2-glucon-d-instant-energy-health-drink-mango-punch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Summers can be daunting and especially when there's an enormous scorching sun always ready to drain out your energy and stop you from being the best of you. But thank god there is Glucon-D! Glucon-D contains glucose that helps replenish body glucose and fills you with the energy required to stay active. It is easily absorbed by the body, thus giving out an instant energy boost and refreshment.\nEnriched with Vitamin-C and Minerals, including Calcium and Phosphorus, this glucose drink helps charge you up to fight tiredness and promotes mental alertness. What's better? Added Mango flavour makes it loved by children as well as adults. Add Glucon-D to a glass of water every day to provide growing active children with the energy that keeps them going and adults, refreshment after a long day.\nAvailable in Regular as well as Delicious Lime, Orange and Mango flavours. It contains Vitamin C which improves the mental alertness that helps you to concentrate better while doing various daily tasks",
+   "ingredients": "Sucrose (56%), Glucose (40%), Acidity Regulator (330), Mineral (Calcium Phosphate), Common Edible Salt, Thickener (415), Added Colours (171, 110, 102) And Vitamin C. Contains Permitted Synthetic Food Colours & Added Flavour (Nature Identical Mango Flavour).",
+   "usageInstructions": "Add 4 teaspoons of Glucon-D (approx 35g) to 1 glass of water (200ml) and stir.\nRecommended 2 glasses per day.",
+   "manufacturerName": "Heinz India Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001417"
+  }
+ },
+ {
+  "title": "Activon Electrolytes & Glucose Drink - Apple",
+  "handle": "activon-electrolytes-glucose-drink-apple",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750_6-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750_6-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750-2_6-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750-3_6-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750-4_6-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750-5_6-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750-6_6-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750-7_5-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339750-8_5-glucon-d-activors-apple-flavour-electrolyte-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon-D Activon Electrolyte Energy Drink is here to supercharge your day! Life moves fast, and we’re all constantly on the go—whether it’s work, exercise, or just keeping up with the hustle and bustle of daily activities. But we all know the feeling: the heat, the sweat, and the exhaustion that hits when you push yourself too hard. That’s when you need a pick-me-up that truly works, not just any ordinary ‘thanda’ drink.\nEnter Glucon-D Activon—the ultimate solution to restore what you’ve lost. Packed with powerful electrolytes and glucose, this drink instantly recharges you, giving you the boost you need to keep moving, stay focused, and crush whatever’s next on your to-do list. Whether you're sweating it out during a workout, traveling, or simply feeling worn out, Glucon-D Activon is your go-to energy partner.\nBut that’s not all—it’s delicious too, bursting with a refreshing apple flavor! And with the added vitamins and glucose, you’ll feel that energy surge, helping you stay active, sharp, and ready to take on anything the day throws at you.\nNo mixing, no hassle—just pop in the straw and enjoy a swift, delicious boost. Perfect for whenever you’re feeling drained or need that extra jolt to keep your momentum going!\nShake it up before you drink, enjoy it straight away after opening, and store it away from direct sunlight to keep it fresh. With Glucon-D Activon, you’re not just staying energized—you’re staying charged.",
+   "ingredients": "Water, Apple Juice (10%) [Reconstituted From Apple Juice\nConcentrate],\nGlucose^, Sucrose^, Minerals (Potassium Citrate, Sodium\nChloride, Sodium\nCitrate, Calcium Lactate), Malic Acid (INS 296), Acidity\nRegulator (INS 330),\nNature Identical Apple Flavouring Substances, Vitamins (Vitamin\nC, Vitamin\nB3, Vitamin B5, Vitamin B6), Stabilizer (INS 415, INS 466),\nNatural Food\nColour (Caramel, INS 150a)",
+   "nutritionalInfo": {
+    "Energy": "51 kcal (5.1% RDA)",
+    "Total Carbohydrates": "12.6 g",
+    "Total Sugars": "12.6 g",
+    "Added Sugars": "11.6 g (46.3% RDA)",
+    "Protein": "0.0 g (0.0% RDA)",
+    "Total Fat": "0.0 g (0.0% RDA)",
+    "Saturated Fat": "0.0 g",
+    "Trans Fat": "0.0 g",
+    "Sodium": "55 mg (5.5% RDA)",
+    "Calcium": "5 mg (1.0% RDA)",
+    "Potassium": "90 mg (5.1% RDA)",
+    "Chloride": "52 mg (5.8% RDA)",
+    "Vitamin C": "17 mg (42.5% RDA)",
+    "Vitamin B3": "4.5 mg (64.3% RDA)",
+    "Vitamin B5": "1.6 mg (64.0% RDA)",
+    "Vitamin B6": "0.6 mg (63.2% RDA)"
+   },
+   "storageInstructions": "Shake well before use. Consume immediately after opening. Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "address",
+   "fssaiLicense": "10018022007399"
+  }
+ },
+ {
+  "title": "Activon Electrolytes & Glucose Drink - Mango",
+  "handle": "activon-electrolytes-glucose-drink-mango",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752_6-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+    },
+    "barcode": "8901542002823"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752_6-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752-2_6-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752-3_6-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752-4_6-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752-5_6-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752-6_6-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752-7_5-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339752-8_5-glucon-d-activors-mango-flavour-electrolyte-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon-D Activon Electrolyte Energy Drink is here to supercharge your day! Life moves fast, and we are all constantly on the go, whether it is work, exercise, or just keeping up with the hustle and bustle of daily activities. But we all know the feeling, the heat, the sweat, and the exhaustion that hits when you push yourself too hard. That is when you need a pick-me-up that truly works, not just any ordinary ‘thanda’ drink.\nEnter Glucon-D Activon, the ultimate solution to restore what you have lost. Packed with powerful electrolytes and glucose, this drink instantly recharges you, giving you the boost you need to keep moving, stay focused, and crush whatever is next on your to-do list. Whether you are sweating it out during a workout, travelling, or simply feeling worn out, Glucon-D Activon is your go-to energy partner.\nBut that is not all, it is delicious too, bursting with a refreshing apple flavour! And with the added vitamins and glucose, you will feel that energy surge, helping you stay active, sharp, and ready to take on anything the day throws at you.\nNo mixing, no hassle, just pop in the straw and enjoy a swift, delicious boost. Perfect for whenever you are feeling drained or need that extra jolt to keep your momentum going.\nShake it up before you drink, enjoy it straight away after opening, and store it away from direct sunlight to keep it fresh. With Glucon-D Activon, you are not just staying energised, you are staying charged.",
+   "ingredients": "Water, Mango Puree (10%) **, Glucose, ^Sucrose^, Minerals\n(Potassium Citrate, Sodium Chloride, Sodium Citrate, Calcium Lactate), Acidity Regulator\n(INS 330), Nature Identical Mango Flavouring Substances, Vitamins (Vitamin C, Vitamin\nB3, Vitamin B5, Vitamin B6), Stabilizer (INS 415, INS 466), Permitted Food Colour\n(INS 110, 1 INS 102)",
+   "nutritionalInfo": {
+    "Nutritional Information (Approximate Values)": "1 Serving",
+    "Energy": "67.8 kcal (6.8% RDA)",
+    "Total Carbohydrates": "17.0 g",
+    "Total Sugars": "17.0 g",
+    "Added Sugars": "15.5 g (61.9% RDA)",
+    "Proteins": "0.0 g (0.0% RDA)",
+    "Total Fat": "0.0 g (0.0% RDA)",
+    "Saturated Fat": "0.0 g",
+    "Trans Fat": "0.0 g",
+    "Sodium": "72 mg (7.2% RDA)",
+    "Calcium": "7 mg (1.3% RDA)",
+    "Potassium": "120 mg (6.9% RDA)",
+    "Chloride": "120 mg (13.3% RDA)",
+    "Vitamin C": "17 mg (42.5% RDA)",
+    "Vitamin B3": "4.50 mg (64.3% RDA)",
+    "Vitamin B5": "1.60 mg (64.0% RDA)",
+    "Vitamin B6": "0.60 mg (63.2% RDA)"
+   },
+   "storageInstructions": "Shake well before use. Consume immediately after opening. Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "address",
+   "fssaiLicense": "10018022007399"
+  }
+ },
+ {
+  "title": "Activon Electrolytes & Glucose Drink - Orange",
+  "handle": "activon-electrolytes-glucose-drink-orange",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751_6-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+    },
+    "barcode": "8901542002816"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751_6-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751-2_6-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751-3_6-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751-4_6-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751-5_6-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751-6_6-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751-7_5-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40339751-8_5-glucon-d-activors-orange-flavour-electrolyte-energy-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon-D Activon Electrolyte Energy Drink is here to supercharge your day! Life moves fast, and we’re all constantly on the go—whether it’s work, exercise, or just keeping up with the hustle and bustle of daily activities. But we all know the feeling: the heat, the sweat, and the exhaustion that hits when you push yourself too hard. That’s when you need a pick-me-up that truly works, not just any ordinary ‘thanda’ drink.\nEnter Glucon-D Activon—the ultimate solution to restore what you’ve lost. Packed with powerful electrolytes and glucose, this drink instantly recharges you, giving you the boost you need to keep moving, stay focused, and crush whatever’s next on your to-do list. Whether you're sweating it out during a workout, traveling, or simply feeling worn out, Glucon-D Activon is your go-to energy partner.\nBut that’s not all—it’s delicious too, bursting with a refreshing apple flavor! And with the added vitamins and glucose, you’ll feel that energy surge, helping you stay active, sharp, and ready to take on anything the day throws at you.\nNo mixing, no hassle—just pop in the straw and enjoy a swift, delicious boost. Perfect for whenever you’re feeling drained or need that extra jolt to keep your momentum going!\nShake it up before you drink, enjoy it straight away after opening, and store it away from direct sunlight to keep it fresh. With Glucon-D Activon, you’re not just staying energized—you’re staying charged.",
+   "ingredients": "Water, Orange Juice (10%) [Reconstituted From Orange Juice\nConcentrate]. Glucose, Sucrose^, Minerals (Potassium Citrate, Sodium Chloride, Sodium\nCitrate, Calcium Lactate), Acidity Regulator (INS 330), Nature Identical Orange\nFlavouring Substances, Vitamins (Vitamin C, Vitamin B3, Vitamin B5, Vitamin B6),\nStabilizer (INS 415,\nINS 466), Permitted Food Colour (INS 110)",
+   "nutritionalInfo": {
+    "Energy": "51 kcal (5.1% RDA)",
+    "Total Carbohydrates": "12.8 g",
+    "Total Sugars": "12.6 g",
+    "Added Sugars": "11.6 g (46.5% RDA)",
+    "Protein": "0.0 g (0.0% RDA)",
+    "Total Fat": "0.0 g (0.0% RDA)",
+    "Saturated Fat": "0.0 g",
+    "Trans Fat": "0.0 g",
+    "Sodium": "55 mg (5.5% RDA)",
+    "Calcium": "5 mg (1.0% RDA)",
+    "Potassium": "90 mg (5.1% RDA)",
+    "Chloride": "52 mg (5.8% RDA)",
+    "Vitamin C": "17 mg (42.5% RDA)",
+    "Vitamin B3": "4.5 mg (64.3% RDA)",
+    "Vitamin B5": "1.6 mg (64.0% RDA)",
+    "Vitamin B6": "0.6 mg (63.2% RDA)"
+   },
+   "storageInstructions": "Shake well before use. Consume immediately after opening. Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "address",
+   "fssaiLicense": "10018022007399"
+  }
+ },
+ {
+  "title": "Recharge Hydration Drink - Green Apple",
+  "handle": "recharge-hydration-drink-green-apple",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032_2-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+    },
+    "barcode": "8901542004353"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032_2-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032-2_2-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032-3_2-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032-4_2-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032-5_2-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032-6_1-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032-7_1-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366032-8_1-glucon-d-green-apple-flavoured-recharge-hydration-formula.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon-D Green Apple Flavoured Recharge Hydration Formula is specially designed to provide instant energy and refreshment when you need it most. Enriched with a revitalising green apple flavour, it helps replenish lost fluids and keeps you energised throughout the day. Its fast-absorbing formula supports quick hydration, making it ideal after physical activity, during hot weather or whenever you feel low on energy. Easy to prepare and refreshing to consume, it is a convenient way to stay active, refreshed and recharged.",
+   "ingredients": "Water, minerals (magnesium sulphate, sodium chloride, sodium citrate, potassium chloride, calcium lactate, zinc gluconate), nature identical flavouring substances (apple), acidity regulators (INS 295, INS 350), preservative (INS 202), antioxidants (INS 300, INS 307), sweetener (INS 955), stabilisers (INS 415, INS 466), vitamins (vitamin B3, vitamin B6, vitamin B12).",
+   "nutritionalInfo": {
+    "Energy": "2 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0.5 g",
+    "Sugars": "0.3 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fatty Acids": "0 g",
+    "Monounsaturated Fatty Acids": "0 g",
+    "Polyunsaturated Fatty Acids": "0 g",
+    "Trans Fatty Acids": "0 g",
+    "Cholesterol": "<1 mg",
+    "Sodium": "0 mg"
+   },
+   "manufacturerName": "Organico Agro Foods & Beverages Pvt. Ltd",
+   "fssaiLicense": "10020021005270",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Recharge Energy + Hydration Drink - Orange",
+  "handle": "recharge-energy-hydration-drink-orange",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031_2-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031_2-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031-2_2-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031-3_2-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031-4_2-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031-5_2-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031-6_1-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031-7_1-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366031-8_1-glucon-d-orange-flavoured-recharge-energy-hydration-formula.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon-D Recharge Energy + Hydration is a specially formulated drink that provides instant energy and rapid hydration to support your workouts and active lifestyle. It helps restore essential energy levels quickly, keeping you refreshed and energised. Ideal for fitness activities and everyday use, it delivers a quick boost to help maintain performance and reduce fatigue.",
+   "ingredients": "Water, Glucose, Minerals (Magnesium Sulphate, Sodium Citrate, Sodium Chloride, Potassium Chloride, Calcium Lactate, Zinc Gluconate), Nature Identical Flavouring Substances (Orange), Acidity Regulator (INS 330), Preservative (INS 202), Antioxidants (INS 300, INS 301), Sweetener (INS 955), Vitamins (Vitamin B, Vitamin B3, Vitamin B6, Vitamin B12).",
+   "nutritionalInfo": {
+    "Energy": "14.6 kcal",
+    "Total Carbohydrate": "36 g",
+    "Total Sugars": "3.6 g",
+    "Added Sugars": "3.6 g",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Potassium": "60 mg",
+    "Chloride": "80 mg",
+    "Magnesium": "25 mg",
+    "Calcium": "7 mg",
+    "Vitamin B1": "21 mg",
+    "Vitamin B6": "0.8 mg",
+    "Vitamin B12": "0.3 mg"
+   },
+   "manufacturerName": "Organico Agro Foods & Beverages Pvt. Ltd",
+   "fssaiLicense": "10020021005270",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "ORS Drink - Orange",
+  "handle": "ors-drink-orange",
+  "vendor": "Glucon-D (Zydus)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "31",
+    "compare_at_price": "31",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366745_1-glucon-d-orange-flavour-ors.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366745_1-glucon-d-orange-flavour-ors.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366745-2_1-glucon-d-orange-flavour-ors.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366745-3_1-glucon-d-orange-flavour-ors.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366745-4_1-glucon-d-orange-flavour-ors.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366745-5_1-glucon-d-orange-flavour-ors.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366745-6_1-glucon-d-orange-flavour-ors.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366745-7_1-glucon-d-orange-flavour-ors.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Glucon-D Orange Flavour ORS is formulated in accordance with WHO-recommended standards to support rapid hydration during dehydration. It helps replenish essential electrolytes and restore lost body fluids effectively. Ideal for use during illness, heat exposure, or physical activity, it aids in maintaining fluid balance and supports overall well-being and recovery in a convenient, refreshing orange flavour.",
+   "ingredients": "Each pack (200 ml) contains: Sodium Chloride I.P. – 0.52 g, Potassium Chloride I.P. – 0.30 g, Sodium Citrate I.P. – 0.58 g, Dextrose Anhydrous I.P. – 2.70 g, Excipients – Q.S.",
+   "nutritionalInfo": {
+    "Sodium": "75",
+    "Potassium": "20",
+    "Chloride": "65",
+    "Citrate": "10",
+    "Dextrose": "75",
+    "Total Osmolarity": "245"
+   },
+   "storageInstructions": "Store at a temparature not exceeding 30° C.",
+   "manufacturerName": "Halewoood Laboratories Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

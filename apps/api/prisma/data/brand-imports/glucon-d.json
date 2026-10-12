@@ -1,0 +1,120 @@
+{
+  "brand": "Glucon-D (Zydus)",
+  "manufacturer": "Zydus Wellness Products Ltd.",
+  "feed": "glucon-d-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/glucon-d/logo-85acece0.png",
+  "themeColor": "#E4007C",
+  "themeColorSecondary": "#2EA3DB",
+  "namePrefix": "Glucon-D ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Glucon-D Instant Energy - Orange": "Tangy Orange Glucose Powder"
+  },
+  "rules": [
+    {
+      "match": "^Regular\\ Glucose\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Regular\\ Glucose\\ Powder\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Nimbu\\ Pani\\ Glucose\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Nimbu\\ Pani\\ Glucose\\ Powder\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Orange\\ Glucose\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Orange\\ Glucose\\ Powder\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Mango\\ Blast\\ Glucose\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Activon\\ Electrolytes\\ \\&\\ Glucose\\ Drink\\ \\-\\ Apple$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Activon\\ Electrolytes\\ \\&\\ Glucose\\ Drink\\ \\-\\ Mango$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Activon\\ Electrolytes\\ \\&\\ Glucose\\ Drink\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Recharge\\ Hydration\\ Drink\\ \\-\\ Green\\ Apple$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Recharge\\ Energy\\ \\+\\ Hydration\\ Drink\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^ORS\\ Drink\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    }
+  ]
+}
