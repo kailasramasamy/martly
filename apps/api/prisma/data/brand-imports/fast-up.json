@@ -1,0 +1,193 @@
+{
+  "brand": "Fast&Up",
+  "manufacturer": "Aeronutrix Sports Products Pvt. Ltd.",
+  "feed": "fast-up-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/fast-up/logo-3244e2a2.png",
+  "themeColor": "#0B5CAB",
+  "themeColorSecondary": "#F47B20",
+  "namePrefix": "Fast&Up ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Fast&Up Reload Electrolyte Drink": "Reload Low Sugar Energy Tablets - Cola",
+    "Fast&Up Reload Electrolyte Energy Drink - Lime": "Reload Low Sugar Energy Tablets - Lime Lemon"
+  },
+  "rules": [
+    {
+      "match": "^Charge\\ Vitamin\\ C\\ Effervescent\\ Tablets\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Apple\\ Cider\\ Vinegar\\ Effervescent\\ Tablets\\ \\-\\ Green\\ Apple$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Detox\\ Lung\\ Effervescent\\ Tablets\\ \\-\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Lean\\ Body\\ Effervescent\\ Tablets\\ \\-\\ Lemon$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Lean\\ Body\\ Effervescent\\ Tablets\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Magnesio\\ Sleep\\ Effervescent\\ Tablets\\ \\-\\ Lemon$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Melatonin\\ Sleep\\ Effervescent\\ Tablets\\ \\-\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Vitalize\\ Multivitamin\\ Effervescent\\ Tablets\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^NightOut\\ Hangover\\ Relief\\ Effervescent\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Gas\\ Gone\\ Effervescent\\ Tablets\\ \\-\\ Jaljeera$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Reload\\ Electrolyte\\ Tablets\\ \\-\\ Berry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Reload\\ Electrolyte\\ Tablets\\ \\-\\ Ice\\ Current$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Reload\\ Electrolyte\\ Tablets\\ \\-\\ Lime\\ \\&\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Reload\\ Zero\\ Sugar\\ Electrolyte\\ Drink\\ \\-\\ Orange\\ Rush$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Reload\\ Low\\ Sugar\\ Energy\\ Tablets\\ \\-\\ Cola$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Reload\\ Low\\ Sugar\\ Energy\\ Tablets\\ \\-\\ Lime\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Reload\\ Energy\\ Drink\\ \\-\\ Lemon\\ Blast$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^EAA\\ Intra\\ Workout\\ Drink\\ \\-\\ Watermelon\\ Splash$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Plant\\ Protein\\ Powder\\ \\-\\ Rich\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Isolate\\ Whey\\ Protein\\ \\-\\ Rich\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Whey\\ Essentials\\ Protein\\ \\-\\ Rich\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Creatine\\ Monohydrate\\ \\-\\ Unflavoured$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    }
+  ]
+}
