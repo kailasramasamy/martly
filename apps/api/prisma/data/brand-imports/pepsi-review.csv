@@ -1,0 +1,5 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Soft Drink,Pepsi Soft Drink,update,Beverages > Soft Drinks & Carbonated > Cola,750ml ₹40 | 400ml ₹20 | 600ml ₹38 | 1.25L ₹50 | 1.5L ₹75 | 2L ₹90 | 2.25L ₹90,750ml ₹40 | 400ml ₹20 | 600ml ₹38 | 1.25L ₹50 | 1.5L ₹75 | 2L ₹90 | 2.25L ₹90,8,2L: out of stock online
+Soft Drink Can,Pepsi Soft Drink Can,create,Beverages > Soft Drinks & Carbonated > Cola,250ml ₹35 | 300ml ₹40,250ml ₹35 | 300ml ₹40,8,
+Black Zero Sugar Soft Drink Can,Pepsi Black Zero Sugar Soft Drink Can,update,Beverages > Soft Drinks & Carbonated > Diet & Zero Sugar,250ml ₹35 | 300ml ₹40,250ml ₹35 | 300ml ₹40,8,
+Diet Soft Drink Can,Pepsi Diet Soft Drink Can,create,Beverages > Soft Drinks & Carbonated > Diet & Zero Sugar,250ml ₹25,250ml ₹25,7,

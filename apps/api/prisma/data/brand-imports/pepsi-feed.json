@@ -1,0 +1,316 @@
+[
+ {
+  "title": "Soft Drink",
+  "handle": "soft-drink",
+  "vendor": "Pepsi (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251047_26-pepsi-soft-drink.jpg"
+    },
+    "barcode": "8902080104055"
+   },
+   {
+    "title": "400ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216379_5-pepsi-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/118424_7-pepsi-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "1.25L",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40073204_6-pepsi-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019524_9-pepsi-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251050_6-pepsi-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40094179_10-pepsi-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251047_26-pepsi-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251047-2_18-pepsi-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251047-3_16-pepsi-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251047-4_16-pepsi-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251047-5_16-pepsi-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251047-6_11-pepsi-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251047-7_11-pepsi-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251047-8_7-pepsi-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pepsi is a popular soft drink known for its refreshing taste. It contains carbonated water, sugar, caramel colour, phosphoric acid, caffeine, and natural flavourings. Pepsi offers a fizzy, sweet beverage option enjoyed worldwide.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "200 ml",
+    "Energy": "43 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "10.9g",
+    "Total Sugars": "10.9g",
+    "Added Sugars": "10.9g",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Sodium": "3mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Soft Drink Can",
+  "handle": "soft-drink-can",
+  "vendor": "Pepsi (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263334_19-pepsi-swag-can.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327060_5-pepsi-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263334_19-pepsi-swag-can.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263334-2_9-pepsi-swag-can.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263334-3_9-pepsi-swag-can.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263334-4_9-pepsi-swag-can.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263334-5_9-pepsi-swag-can.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263334-6_9-pepsi-swag-can.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263334-7_9-pepsi-swag-can.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263334-8_4-pepsi-swag-can.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate any occasion with the iconic Pepsi Pack of 6, 250ml cans. This refreshing and bold soft drink delivers a signature blend of flavours that invigorates the taste buds. Enjoy the crisp, classic cola taste that pairs perfectly with meals and social gatherings. Packed in a completely safe and hygienic facility, Pepsi promises top-quality products that stand true to their signature taste and safety. Whether you're hosting a birthday party, a home get-together, or simply looking to quench your thirst, this Pepsi Pack is your ideal companion, offering enough to share or enjoy yourself. With its refreshing and lively character, Pepsi will make every sip a bold and bubbly experience.",
+   "ingredients": "Carbonated Water, Sugar, Colour (150d), Acidity Regulator (338), Caffeine (10 mg/100g), Flavour (Natural Flavouring Substances), Stabilizer (436)",
+   "nutritionalInfo": {
+    "Serving Size": "200 ml",
+    "Energy": "43 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "10.9 g",
+    "Total Sugars": "10.9 g",
+    "Added Sugars": "10.9 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "3 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Black Zero Sugar Soft Drink Can",
+  "handle": "black-zero-sugar-soft-drink-can",
+  "vendor": "Pepsi (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245_9-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327059_6-pepsi-zero-sugar-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245_9-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245-2_7-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245-3_7-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245-4_7-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245-5_6-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245-6_6-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245-7_5-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104245-8_1-pepsi-black-soft-drink-max-taste-zero-caldiet.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pepsi is the soda that shakes things up! Pepsi introduces Pepsi Black - a zero-calorie cola with maximum flavour. It's a soft drink that complements your diet plan without disrupting it. So don't worry about those extra calories. If you're thirsty, grab a Pepsi Black and drink without any hassle.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "200ml",
+    "Energy": "0 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "6 mg"
+   },
+   "manufacturerName": "Varun Beverages Limited",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Diet Soft Drink Can",
+  "handle": "diet-soft-drink-can",
+  "vendor": "Pepsi (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263333_9-pepsi-soft-drink-diet.jpg"
+    },
+    "barcode": "8902080115020"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263333_9-pepsi-soft-drink-diet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263333-2_1-pepsi-soft-drink-diet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263333-3_1-pepsi-soft-drink-diet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263333-4_1-pepsi-soft-drink-diet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263333-5_1-pepsi-soft-drink-diet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263333-6_1-pepsi-soft-drink-diet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263333-7_1-pepsi-soft-drink-diet.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A can that goes well with your diet plan.\nPepsi is the pop that shakes things up! Pepsi is ubiquitous on just about every social occasion.",
+   "ingredients": "Carbonated Water, Sugar (10.4%), Acidity Regulator(338), Caffeine, Contains Permitted Natural Colour (150d) And Added Flavour (Natural Flavouring Substances)",
+   "manufacturerName": "Varun Beverages Limitied",
+   "countryOfOrigin": "India"
+  }
+ }
+]

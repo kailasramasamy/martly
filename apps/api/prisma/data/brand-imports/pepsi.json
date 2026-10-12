@@ -1,0 +1,48 @@
+{
+  "brand": "Pepsi (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt. Ltd.",
+  "feed": "pepsi-feed.json",
+  "themeColor": "#004B93",
+  "themeColorSecondary": "#E32934",
+  "namePrefix": "Pepsi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Pepsi Black Zero Sugar": "Black Zero Sugar Soft Drink Can"
+  },
+  "rules": [
+    {
+      "match": "^Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Cola"
+      ]
+    },
+    {
+      "match": "^Soft\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Cola"
+      ]
+    },
+    {
+      "match": "^Black\\ Zero\\ Sugar\\ Soft\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Diet & Zero Sugar"
+      ]
+    },
+    {
+      "match": "^Diet\\ Soft\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Diet & Zero Sugar"
+      ]
+    }
+  ],
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pepsi/logo-6de7f59f.png"
+}
