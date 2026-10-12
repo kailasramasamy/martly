@@ -1,0 +1,550 @@
+{
+  "brand": "Keventer",
+  "manufacturer": "Keventer Agro Limited",
+  "feed": "keventer-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/keventer/logo-321c1236.png",
+  "themeColor": "#00651F",
+  "themeColorSecondary": "#C8102E",
+  "namePrefix": "Keventer ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aloo\\ Tikki$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^American\\ Hash\\ Browns$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Breakfast\\ Chicken\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Cheese\\ \\&\\ Onion\\ Chicken\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Chicken\\ Momo$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Corn\\ Momo$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Finger$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Pop$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Strips$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Wings$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Hot\\ Dog$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Garlic\\ Potato\\ Shots$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Darjeeling\\ Chicken\\ Momo$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    },
+    {
+      "match": "^Delights\\ Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Delights\\ Coffee\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Delights\\ Strawberry\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Delights\\ Veg\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^French\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Frozen\\ Sweet\\ Corn$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Sweet Corn"
+      ]
+    },
+    {
+      "match": "^Veg\\ Cheese\\ Corn\\ Bites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veg\\ Cheese\\ Fingers$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veg\\ Cutlet$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Frozen\\ Green\\ Peas$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Peas"
+      ]
+    },
+    {
+      "match": "^Herb\\ \\&\\ Pepper\\ Chicken\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^UHT\\ Double\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "UHT / Long Life Milk"
+      ]
+    },
+    {
+      "match": "^UHT\\ Standardised\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "UHT / Long Life Milk"
+      ]
+    },
+    {
+      "match": "^UHT\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "UHT / Long Life Milk"
+      ]
+    },
+    {
+      "match": "^Italian\\ Chicken\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ \\&\\ Cheese\\ Chicken\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Metro\\ Aam\\ Doi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Metro\\ Barz\\ Chocolatey\\ Choco\\ Gold$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Metro\\ Barz\\ Classic\\ Choco$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Metro\\ Barz\\ Choco\\ Scotch$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Metro\\ Black\\ Forest\\ Temptation\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Metro\\ Caramel\\ Gateau\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Metro\\ Pistachio\\ Crush\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Metro\\ Konez\\ Butterscotch$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Metro\\ Konez\\ Chocolate\\ \\&\\ Nuts\\ Grande$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Metro\\ Cow\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Metro\\ Full\\ Cream\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Metro\\ Rich\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Metro\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Metro\\ Dahi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Metro\\ Dahi\\ Cup$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Metro\\ Mishti\\ Doi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Mishti Doi"
+      ]
+    },
+    {
+      "match": "^Metro\\ Malai\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Malai Paneer"
+      ]
+    },
+    {
+      "match": "^Mozzarella\\ Cheese\\ Sticks$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Plain\\ Chicken\\ Salami$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Salami"
+      ]
+    },
+    {
+      "match": "^Bell\\ Pepper\\ Chicken\\ Salami$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Salami"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Chipolata\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Tandoori\\ Kebab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Lucknowi\\ Kebab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Cheese\\ \\&\\ Jalapeno\\ Bites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Chilli\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Momo$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    },
+    {
+      "match": "^Veg\\ Momo$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Pepper\\ Wursts$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Onion\\ Rings$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Chicken\\ Loaf$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Ham & Cold Cuts"
+      ]
+    },
+    {
+      "match": "^Paneer\\ Double\\ Decker$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Paneer\\ Steak$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Smoked\\ Chicken\\ Franks$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Chicken\\ Cocktail\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Smoked\\ Chicken\\ Momo$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Smoked\\ Veg\\ Momo$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    }
+  ]
+}

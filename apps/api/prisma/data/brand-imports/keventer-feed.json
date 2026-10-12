@@ -1,0 +1,3509 @@
+[
+ {
+  "title": "Aloo Tikki",
+  "handle": "aloo-tikki",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "360g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160686_3-keventer-aloo-tikki.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160686_3-keventer-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160686-2_3-keventer-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160686-3_2-keventer-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160686-4_2-keventer-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160686-5_2-keventer-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160686-6_1-keventer-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160686-7_1-keventer-aloo-tikki.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Made with boiled potato and Indian spices, aloo tikki is just the perfect snack for those small hunger pangs at evening. Mingle it with curd or chutney to enjoy this delicious snack to the fullest.",
+   "ingredients": "Potato, Spices, Green Chilli, Garlic, Onion, Red Chilli, Cumin, Corn Flakes, Corn Flour, Vegetable Oil, Rice",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "American Hash Browns",
+  "handle": "american-hash-browns",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "210g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160691_1-keventer-american-hash-browns.jpg"
+    },
+    "barcode": "8906015501025"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160691_1-keventer-american-hash-browns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160691-2_1-keventer-american-hash-browns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160691-3_1-keventer-american-hash-browns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160691-4_1-keventer-american-hash-browns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160691-5_1-keventer-american-hash-browns.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Hash Brown Potatoes are a simple preparation in which potatoes are pan-fried to form a browned potato cake after being shredded and diced mixed with shortening and chopped onions.",
+   "ingredients": "Potato, Edible Veg Oil, Iodised Salt, Onion Powder, Etc.",
+   "usageInstructions": "Deep fry and serve it hot.",
+   "manufacturerName": "Hyfun Foods Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000034"
+  }
+ },
+ {
+  "title": "Breakfast Chicken Sausages",
+  "handle": "breakfast-chicken-sausages",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160694_5-keventer-breakfast-sausages.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160694_5-keventer-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160694-2_4-keventer-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160694-3_4-keventer-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160694-4_4-keventer-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160694-5_4-keventer-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160694-6_1-keventer-breakfast-sausages.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Wake up to the delightful taste of Keventer Breakfast Chicken Sausages. Crafted with premium chicken and a blend of savoury spices, these sausages promise a flavourful start to your day. Perfectly versatile, they pair wonderfully with eggs, toast, or your favourite breakfast sides for a wholesome morning feast.",
+   "ingredients": "Chicken (62%), Corn Starch, Soy Protein Isolate, Modified Starch (INS1420), Edible Iodised Salt, Acidity Regulator [Phosphate INS 451(i)], Dextrose, Spices and Condiments, Dehydrated Onion, Flavour Enhancer (INS 627 and INS 631), Dehydrated Garlic",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "168",
+    "Protein (g)": "11.4",
+    "Carbohydrate (g)": "6.3",
+    "Total Sugar (g)": "<1",
+    "Added Sugar (g)": "<1",
+    "Total Fat (g)": "10.8",
+    "Saturated Fat (g)": "4.1",
+    "Added Trans-fat (g)": "0",
+    "Cholesterol (mg)": "33",
+    "Sodium (mg)": "855",
+    "RDA": "Recommended Dietary Allowance"
+   }
+  }
+ },
+ {
+  "title": "Cheese & Onion Chicken Sausages",
+  "handle": "cheese-onion-chicken-sausages",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160699_1-keventer-cheese-onion.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160698_1-keventer-cheese-onion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160699_1-keventer-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160699-2_1-keventer-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160699-3_1-keventer-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160699-4_1-keventer-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160699-5_1-keventer-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160698_1-keventer-cheese-onion.jpg"
+   }
+  ],
+  "food_type": "NON_VEG"
+ },
+ {
+  "title": "Cheese Chicken Momo",
+  "handle": "cheese-chicken-momo",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8 pcs",
+    "price": "179",
+    "compare_at_price": "179",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347234_2-keventer-cheese-chicken-momo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347234_2-keventer-cheese-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347234-2_2-keventer-cheese-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347234-3_2-keventer-cheese-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347234-4_2-keventer-cheese-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347234-5_2-keventer-cheese-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347234-6_2-keventer-cheese-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347234-7_2-keventer-cheese-chicken-momo.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Savour the rich taste of Keventer Cheese Chicken Momo, where succulent chicken meets creamy cheese in a soft, steamed dumpling. Each bite offers a burst of flavour, perfectly seasoned and crafted for indulgent snacking. Easy to prepare and enjoy, these momos are ideal for sharing or treating yourself to a comforting, flavour-packed experience at home.",
+   "manufacturerName": "Keventer Agro Limited",
+   "fssaiLicense": "10012031000034",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheese Corn Momo",
+  "handle": "cheese-corn-momo",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8 pcs",
+    "price": "158",
+    "compare_at_price": "158",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347236_2-keventer-cheese-corn-momo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347236_2-keventer-cheese-corn-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347236-2_2-keventer-cheese-corn-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347236-3_2-keventer-cheese-corn-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347236-4_2-keventer-cheese-corn-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347236-5_2-keventer-cheese-corn-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347236-6_2-keventer-cheese-corn-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347236-7_2-keventer-cheese-corn-momo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the irresistible taste of Keventer Cheese Corn Momo—a delightful fusion of creamy cheese and sweet corn, wrapped in a soft, delicate shell. Perfectly crafted for a quick bite or casual indulgence, each momo offers a burst of flavour in every bite. Easy to prepare and enjoy, it’s a delicious addition to any snacking moment.",
+   "manufacturerName": "Keventer Agro Limited",
+   "fssaiLicense": "10012031000034",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Finger",
+  "handle": "chicken-finger",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076094_4-keventer-chicken-finger.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076094_4-keventer-chicken-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076094-2_3-keventer-chicken-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076094-3_3-keventer-chicken-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076094-4_3-keventer-chicken-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076094-5_2-keventer-chicken-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076094-6_1-keventer-chicken-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076094-7_1-keventer-chicken-finger.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Savour the delectable crunch and succulent taste of Keventer Chicken Fingers, delivering irresistible flavour in every bite! These chicken fingers are prepared by coating the meat in a delectable breading mixture and then deep frying them, similar to the preparation of Schnitzel. Preserve the freshness and quality of these tasty morsels by freezing them, which helps inhibit bacterial growth and retain the moisture as ice. Whether you choose to freeze them mechanically or cryogenically, these chicken fingers are sure to delight with their irresistible flavour and satisfying texture in every mouthwatering bite.",
+   "ingredients": "Chicken (49.3%), Water, Bread Crumbs (Wheat Flour, Yeast, Iodised Salt, Dextrose), Edible Vegetable Oil (Palm Oil), Batter [Stabiliser (INS 466)], Soya Protein, Garlic Seasoning Mix (1.3%), Iodised Salt, White Pepper, Red Chilli Flakes, Sequestrant [INS 451(i), INS 450(iii), INS 451(ii)]",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20 g (approx.)",
+    "Energy (kcal)": "228",
+    "Protein (g)": "11.7",
+    "Carbohydrate (g)": "14.8",
+    "Total Sugar (g)": "4",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "13.5",
+    "Saturated Fat (g)": "5.7",
+    "Added Trans-fat (g)": "0",
+    "Cholesterol (mg)": "39",
+    "Sodium (mg)": "507"
+   },
+   "storageInstructions": "*Store at -18°C or below\n*Transport at -18°C or below"
+  }
+ },
+ {
+  "title": "Chicken Patty",
+  "handle": "chicken-patty",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "272",
+    "compare_at_price": "272",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076096_3-keventer-chicken-patty.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076096_3-keventer-chicken-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076096-2_2-keventer-chicken-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076096-3_2-keventer-chicken-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076096-4_2-keventer-chicken-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076096-5_1-keventer-chicken-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076096-6_1-keventer-chicken-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076096-7_1-keventer-chicken-patty.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Chicken - Patty is a frozen food product that is packaged under stringent standards to ensure quality and taste. With a heritage of over 125 years, the brand is committed to excellence. The product is deep-fried and ready-to-cook. It is packed and marketed by Keveres Agro Limited and contains added natural flavouring substances.",
+   "ingredients": "Chicken Meat (51%), Water, Bread Crumbs (Wheat Flour, Iodised Salt, Yeast, Dextrose), Edible Vegetable Oil (Palm Oil), Batter [Stabiliser (INS 466)], Soya Protein, Seasoning Mix [Flavour Enhancer (INS 627, INS 631), Anti-Caking Agent (INS 551), Acidity Regulator (INS 270)], Iodised Salt and Sequestrant [INS 451(i), INS 450 (iii), INS 451(ii)]",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "232",
+    "Protein (g)": "11.8",
+    "Carbohydrate (g)": "14.6",
+    "Total Sugar (g)": "2.1",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "14",
+    "Saturated Fat (g)": "6.2",
+    "Added Trans-fat (g)": "0",
+    "Cholesterol (mg)": "36",
+    "Sodium (mg)": "564",
+    "Energy": "12.8",
+    "Total Fat": "23.0",
+    "Saturated Fat": "31.0",
+    "Added Trans-fat": "0",
+    "Added Sugar": "0",
+    "Sodium": "31.0"
+   },
+   "storageInstructions": "*Store at -18°C or below\n*Do not thaw"
+  }
+ },
+ {
+  "title": "Chicken Pop",
+  "handle": "chicken-pop",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076095_4-keventer-chicken-pop.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076095_4-keventer-chicken-pop.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076095-2_3-keventer-chicken-pop.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076095-3_3-keventer-chicken-pop.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076095-4_3-keventer-chicken-pop.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076095-5_2-keventer-chicken-pop.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076095-6_1-keventer-chicken-pop.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076095-7_1-keventer-chicken-pop.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in a delightful taste experience with our Crunchy Chicken Delight. These irresistible poppable bites feature a golden, crispy coating that encases succulent Keventer chicken, seasoned to perfection for a flavour explosion. Ideal for any occasion, these Chicken Pops redefine snack time with every bite. Should you receive a damaged, defective or incorrect item, you may raise a refund or replacement request within 2 days of purchase.",
+   "ingredients": "Chicken (43%), Water, Bread Crumbs (Wheat Flour, Yeast, Iodised Salt, Dextrose), Soya Protein, Edible Vegetable Oil (Palm Oil), Seasoning Mix Powder [Stabilisers INS 451(i), INS 450 (v), INS 450 (i), INS 452 (i), Anti-Caking Agent (INS 551)], Batter [Stabiliser (INS 466)], Sequestrant [INS 451(i), INS 450 (iii), INS 451 (ii)]",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "233",
+    "Protein (g)": "13.4",
+    "Carbohydrate (g)": "17.2",
+    "Total Sugar (g)": "4.5",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "12.3",
+    "Saturated Fat (g)": "5.4",
+    "Added Trans-Fat (g)": "0",
+    "Cholesterol (mg)": "40",
+    "Sodium (mg)": "598",
+    "Energy": "9.3",
+    "Total Fat": "14.7",
+    "Saturated Fat": "19.6",
+    "Added Trans-Fat": "0",
+    "Sodium": "23.9",
+    "Serving Size": "8g (approx.)",
+    "RDA": "Approximate Values * Recommended Dietary Allowance"
+   },
+   "storageInstructions": "*Store at -18°C or below"
+  }
+ },
+ {
+  "title": "Chicken Strips",
+  "handle": "chicken-strips",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "320g",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160688_1-keventer-chicken-strips.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160688_1-keventer-chicken-strips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160688-2_1-keventer-chicken-strips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160688-3_1-keventer-chicken-strips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160688-4_1-keventer-chicken-strips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160688-5_1-keventer-chicken-strips.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer frozen chickenstrips are made with high-quality chicken meat and a delicious batter and breading. They are carefully prepared to ensure a crispy, flavourful texture. These frozen chicken strips are perfect for a quick and easy meal, offering a convenient and tasty option for the whole family.",
+   "ingredients": "Chicken Meat (56%), Batter [Wheat Flour, Corn Starch (INS 1420), Dextrose, Spices and Condiments, Iodised Salt, Carrageenan (INS 407), Dehydrated Garlic, Xanthan Gum (INS 415)], Water, Breader [Wheat Flour, Corn Starch, Modified Starch (INS 1404), Dextrose, Spices & Condiments, Iodised Salt], Breadcrumb [Wheat Flour, Yeast, Iodised Salt, Dextrose], Edible Veg. Oil (Palm Oil), Marinade [Water Retention Agent (INS 451), Carrageenan (INS 407), Xanthan Gum (INS 415), Yeast Extract Powder, Spices & Condiments]",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Fat": "9.9 g",
+    "Protein": "15.7 g",
+    "Carbohydrate": "16.9 g",
+    "Energy": "219.8 kcal",
+    "Sugar": "0.1 g"
+   },
+   "storageInstructions": "*Store at -10°C or below\n*Avoid storing at room temperature"
+  }
+ },
+ {
+  "title": "Chicken Wings",
+  "handle": "chicken-wings",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "335",
+    "compare_at_price": "335",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076097_3-keventer-chicken-wings.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076097_3-keventer-chicken-wings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076097-2_2-keventer-chicken-wings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076097-3_2-keventer-chicken-wings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076097-4_2-keventer-chicken-wings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076097-5_1-keventer-chicken-wings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076097-6_1-keventer-chicken-wings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076097-7_1-keventer-chicken-wings.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Chicken Wings is a premium frozen food product that comes in a 400g pack, perfect for a satisfying snack or sharing with friends and family. Made with 71.1% chicken meat, the wings are coated in a flavourful breading for a crispy golden exterior when cooked. This frozen food product is ready to cook, making it the perfect option for busy individuals or families who are looking for a quick and easy meal solution.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "400g",
+    "Fat": "13.8g",
+    "Protein": "12.1g",
+    "Carbohydrate": "15.5g",
+    "Sugar": "2.7g",
+    "Energy": "234.5kcal",
+    "Total Trans Fat Content": "Not More Than 0.1 Percent By Weight",
+    "Total Saturated Fat Content": "Not More Than 62 Percent By Weight"
+   },
+   "storageInstructions": "*Store and transport at -18°C or below"
+  }
+ },
+ {
+  "title": "Chicken Hot Dog",
+  "handle": "chicken-hot-dog",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347237_2-keventer-chicken-hot-dog.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347237_2-keventer-chicken-hot-dog.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347237-2_2-keventer-chicken-hot-dog.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347237-3_2-keventer-chicken-hot-dog.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347237-4_2-keventer-chicken-hot-dog.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347237-5_2-keventer-chicken-hot-dog.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347237-6_2-keventer-chicken-hot-dog.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Savour the delicious taste of Keventer Chicken Hot Dog, crafted for quick bites and hearty meals alike. Made with quality chicken and seasoned to perfection, these hot dogs offer a satisfying flavour in every bite. Easy to prepare and perfect for grills, buns, or wraps, they bring convenience and taste together for any occasion or snack craving.",
+   "manufacturerName": "Keventer Agro Limited",
+   "fssaiLicense": "10012031000034",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Nuggets",
+  "handle": "chicken-nuggets",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076093_4-keventer-chicken-nugget.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076093_4-keventer-chicken-nugget.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076093-2_3-keventer-chicken-nugget.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076093-3_3-keventer-chicken-nugget.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076093-4_3-keventer-chicken-nugget.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076093-5_2-keventer-chicken-nugget.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076093-6_1-keventer-chicken-nugget.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076093-7_1-keventer-chicken-nugget.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Chicken Nuggets offer a delectable crunch with every bite. Made from tender, seasoned chicken breast and coated in a crispy golden breadcrumb, these nuggets promise a delightful flavour experience. Perfect for a quick meal or a tasty snack, they bring comfort and quality to your plate.",
+   "ingredients": "Chicken (52%), Water, Bread Crumbs (Wheat Flour, Yeast, Iodised Salt, Dextrose), Edible Vegetable Oil (Palm Oil), Batter [Stabiliser (INS 466)], Soya, Iodised Salt, Garlic, Onion, Sequestrant [INS 451 (i), INS 450 (iii), INS 451 (ii)], Red Chilli Powder",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20 g (approx.)",
+    "Energy (kcal)": "243",
+    "Protein (g)": "10.5",
+    "Carbohydrate (g)": "24",
+    "Total Sugar (g)": "5.4",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "11.7",
+    "Saturated Fat (g)": "5.1",
+    "Added Trans-Fat (g)": "0",
+    "Cholesterol (mg)": "42",
+    "Sodium (mg)": "564"
+   }
+  }
+ },
+ {
+  "title": "Chilli Garlic Potato Shots",
+  "handle": "chilli-garlic-potato-shots",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "240g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160690_2-keventer-chilli-garlic-potato-shots.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160690_2-keventer-chilli-garlic-potato-shots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160690-2_2-keventer-chilli-garlic-potato-shots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160690-3_2-keventer-chilli-garlic-potato-shots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160690-4_2-keventer-chilli-garlic-potato-shots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160690-5_2-keventer-chilli-garlic-potato-shots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160690-6_1-keventer-chilli-garlic-potato-shots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160690-7_1-keventer-chilli-garlic-potato-shots.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Chilli Garlic Potato Shots are basically mashed potatoes added with chopped green chilli, chilli flakes and minced garlic that can be served hot when guests arrive at very short notice or when children crave a tasty snack.",
+   "ingredients": "Potato, Edible Veg Oil, Garlic Paste, Corn Flour, Iodized Salt, Onion Red Chill, Etc.",
+   "usageInstructions": "Deep fry and serve it hot.",
+   "manufacturerName": "Hyfun Foods Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000034"
+  }
+ },
+ {
+  "title": "Darjeeling Chicken Momo",
+  "handle": "darjeeling-chicken-momo",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8 pcs",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347232_2-keventer-darjeeling-chicken-momo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347232_2-keventer-darjeeling-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347232-2_2-keventer-darjeeling-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347232-3_2-keventer-darjeeling-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347232-4_2-keventer-darjeeling-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347232-5_2-keventer-darjeeling-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347232-6_2-keventer-darjeeling-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347232-7_2-keventer-darjeeling-chicken-momo.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the rich flavours of Keventer Darjeeling Chicken Momo, inspired by the culinary traditions of the hills. Each bite-sized delight is filled with seasoned chicken wrapped in a soft, delicate covering. Ideal for quick snacks or casual gatherings, these momos bring authentic taste and satisfying texture straight to your plate. Steam and serve with your favourite dip.",
+   "manufacturerName": "Keventer Agro Limited",
+   "fssaiLicense": "10012031000034",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Delights Chocolate Milkshake",
+  "handle": "delights-chocolate-milkshake",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40248779_1-keventer-delights-chocolate-milk-shake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248779_1-keventer-delights-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248779-2_1-keventer-delights-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248779-3_1-keventer-delights-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248779-4_1-keventer-delights-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248779-5_1-keventer-delights-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248779-6_1-keventer-delights-chocolate-milk-shake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Keventer Delights Chocolate Milk Shake is a super convenient on-the-go drink. There is something so deliciously rich about this chocolate milkshake. Enjoyed by kids and adults alike, this delicious source of Vitamins along with Calcium is good for boosting immunity. Nothing beats a creamy, thick chocolate shake alongside a nice burger and fries. This indulgent masterpiece is one seriously special treat. Perfect your presentation and serve this chilled chocolate milkshake with a drizzle of chocolate spread. Explore the other flavors of Keventer milkshakes available only on Big Basket.",
+   "ingredients": "Milk Solids, Sugar, Cocoa Solids, Erythritol - Ins 968, Steviol Glycoside - Ins 960, Stabilizers - Ins 407, 412, 471, 1442, Mineral Salt - 339i. Contains Permitted Natural And Synthetic Food Colours - Ins 102, 110, 122, 133 And Added Vanilla And Chocolate Flavours - Nature Identical Artificial And Natural Flavouring Substances.",
+   "manufacturerName": "Keventer Agro Ltd. 34/1",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Delights Coffee Milkshake",
+  "handle": "delights-coffee-milkshake",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40248781_1-keventer-delights-coffee-milk-shake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248781_1-keventer-delights-coffee-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248781-2_1-keventer-delights-coffee-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248781-3_1-keventer-delights-coffee-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248781-4_1-keventer-delights-coffee-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248781-5_1-keventer-delights-coffee-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248781-6_1-keventer-delights-coffee-milk-shake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Keventer Delights Coffee Milk Shake is the perfect alternative for that same old and boring cold coffee. This milkshake is deliciously creamy, thick, and loaded with coffee flavor. This coffee milkshake is the perfect afternoon pick-me-up drink for you and your folks. This is a rich blended coffee treat much like an iced cappuccino you might buy at a restaurant. A perfect milkshake treats for a coffee lover and to top it add some vanilla ice cream on top and drizzle some heavenly coffee powder and enjoy the exotic flavors melting your mouth. Explore the other flavors of Keventer milkshakes available only on Big Basket.",
+   "ingredients": "Milk Solids, Sugar, Coffee Powder, Erythritol - Ins 968, Steviol Glycoside - Ins 960, Stabilizers - Ins 1442, 471, 412, 407 Mineral Salt - 339i. Contains Permitted Natural And Synthetic Food Colours - Ins 102, 110, 122, 133 And Added Strawberry Flavours - Nature Identical Artificial And Natural Flavouring Substances.",
+   "manufacturerName": "Keventer Agro Ltd. 34/1",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Delights Strawberry Milkshake",
+  "handle": "delights-strawberry-milkshake",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40248780_1-keventer-delights-strawberry-milk-shake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248780_1-keventer-delights-strawberry-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248780-2_1-keventer-delights-strawberry-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248780-3_1-keventer-delights-strawberry-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248780-4_1-keventer-delights-strawberry-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248780-5_1-keventer-delights-strawberry-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40248780-6_1-keventer-delights-strawberry-milk-shake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Keventer Delights Strawberry Milk Shake is the perfect sweet and refreshing drink for summer. There are so many ways to celebrate the heavenly taste of sweet strawberries, but one of the best is this strawberry milkshake. Sweet summertime is the perfect season for a strawberry milkshake. The rich creamy and thick texture just melts in your mouth, leaving you feeling refreshed and relaxed after a sizzling summer afternoon workday. With the sun shining bright as you sit by the pool, just grab a bottle of Keventer's milkshake and feel the aromatic flavors. Explore the other flavors of Keventer milkshakes available only on Big Basket.",
+   "ingredients": "Milk Solids, Sugar, Erythritol - Ins 968, Steviol Glycoside - Ins 960, Stabilizers - Ins 1442, 471, 412, 407 Mineral Salt - 339i. Contains Permitted Natural And Synthetic Food Colours - Ins 110, 122, And Added Strawberry Flavours - Nature Identical Artificial And Natural Flavouring Substances.",
+   "manufacturerName": "Keventer Agro Ltd. 34/1",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Delights Veg Nuggets",
+  "handle": "delights-veg-nuggets",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40264673_1-keventer-disney-delights-veg-nuggets-ideal-snack-crisp-oozy-ready-to-cook.jpg"
+    }
+   },
+   {
+    "title": "720g",
+    "price": "315",
+    "compare_at_price": "315",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40264674_1-keventer-avengers-delights-chicken-strips-zero-trans-fat-ready-to-cook.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264673_1-keventer-disney-delights-veg-nuggets-ideal-snack-crisp-oozy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264673-2_1-keventer-disney-delights-veg-nuggets-ideal-snack-crisp-oozy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264673-3_1-keventer-disney-delights-veg-nuggets-ideal-snack-crisp-oozy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264673-4_1-keventer-disney-delights-veg-nuggets-ideal-snack-crisp-oozy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264673-5_1-keventer-disney-delights-veg-nuggets-ideal-snack-crisp-oozy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264673-6_1-keventer-disney-delights-veg-nuggets-ideal-snack-crisp-oozy-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40264674_1-keventer-avengers-delights-chicken-strips-zero-trans-fat-ready-to-cook.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "French Fries",
+  "handle": "french-fries",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160685_3-keventer-french-fries.jpg"
+    }
+   },
+   {
+    "title": "720g",
+    "price": "239",
+    "compare_at_price": "239",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197815_2-keventer-french-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160685_3-keventer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160685-2_3-keventer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160685-3_3-keventer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160685-4_3-keventer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160685-5_2-keventer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160685-6_1-keventer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160685-7_1-keventer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197815_2-keventer-french-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the crispy goodness of Keventer French Fries, a delectable snack loved by all ages. Satisfy your cravings for perfectly golden fries with the convenience of buying Keventer French Fries online, making it effortless to get your hands on your favourite snack from the comfort of your home.",
+   "ingredients": "Potatoes, Edible Vegetable Oil (Palmolein)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "450g",
+    "Energy": "154.32 kcal",
+    "Protein": "2.81 g",
+    "Fat": "6.53 g",
+    "Carbohydrate": "21.61 g",
+    "Sugar": "0.33 g",
+    "Cholesterol": "0.00 g",
+    "Saturated Fat": "3.74 g",
+    "Monounsaturated Fat": "1.62 g",
+    "Poly Unsaturated Fat": "1.44 g",
+    "Trans Fat": "0g"
+   },
+   "storageInstructions": "*Store and transport at 10°C or below"
+  }
+ },
+ {
+  "title": "Frozen Sweet Corn",
+  "handle": "frozen-sweet-corn",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076087_4-keventer-frozen-sweet-corn.jpg"
+    },
+    "barcode": "8906015500394"
+   },
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076088_3-keventer-frozen-sweet-corn.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076086_4-keventer-frozen-sweet-corn.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076087_4-keventer-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076087-2_3-keventer-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076087-3_3-keventer-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076087-4_3-keventer-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076087-5_2-keventer-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076087-6_1-keventer-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076087-7_1-keventer-frozen-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076088_3-keventer-frozen-sweet-corn.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing Keventer Sweet Corn, a delectable and nutritious addition to your pantry. Made from the finest quality corn kernels, Keventer Sweet Corn is a versatile ingredient that can be used in a variety of dishes. Whether you're looking to whip up a quick and easy snack or add a burst of flavour to your favourite recipes, Keventer Sweet Corn is a perfect choice.",
+   "ingredients": "Green Peas.",
+   "nutritionalInfo": {
+    "Energy": "99 kcal",
+    "Protein": "3.5 g",
+    "Carbohydrate": "19 g",
+    "Total Fat": "1.2 g"
+   },
+   "storageInstructions": "*Store at -18°C or below"
+  }
+ },
+ {
+  "title": "Veg Cheese Corn Bites",
+  "handle": "veg-cheese-corn-bites",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "272",
+    "compare_at_price": "272",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076089_4-keventer-frozen-veg-cheese-corn-bite.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076089_4-keventer-frozen-veg-cheese-corn-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076089-2_3-keventer-frozen-veg-cheese-corn-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076089-3_3-keventer-frozen-veg-cheese-corn-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076089-4_3-keventer-frozen-veg-cheese-corn-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076089-5_2-keventer-frozen-veg-cheese-corn-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076089-6_1-keventer-frozen-veg-cheese-corn-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076089-7_1-keventer-frozen-veg-cheese-corn-bite.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Frozen Veg Cheese Corn Bite is a delightful snack made with sweet corn, potato, and melted cheese. The corn bites are coated in a crispy breadcrumb batter and deep-fried to perfection. Enjoy these savoury, cheesy bites as a tasty appetiser or side dish.",
+   "ingredients": "Sweet Corn (34%), Potato (28%), Cheese (14%), Contains Milk Solids, Emulsifier (E-331, E339(i), E-340(i), E452(ii)), Common Salt, Preservative (E-200, E-234), Acidifying Agent (270), Breadcrumbs (8%) {Contains Wheat Flour, Dextrose, Iodised Salt, Preservative (E-282), Yeast, Acidity Regulator (E-260)}, Water (6%), Batter (4%), Iodised Salt, Garlic, Potato Flakes, Corn Flour, Chilli Flakes, Refined Vegetable Oil (for frying)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "234",
+    "Protein (g)": "7.2",
+    "Carbohydrate (g)": "21.7",
+    "Total Sugar (g)": "2.9",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "13.1",
+    "Saturated Fat (g)": "7.6",
+    "Added Trans-Fat (g)": "0",
+    "Cholesterol (mg)": "17",
+    "Sodium (mg)": "403",
+    "Energy": "11.7",
+    "Total Fat": "19.6",
+    "Saturated Fat": "34.5",
+    "Added Trans-Fat": "0",
+    "Added Sugar": "0",
+    "Sodium": "20.2"
+   },
+   "storageInstructions": "*Store at -18°C or below"
+  }
+ },
+ {
+  "title": "Veg Cheese Fingers",
+  "handle": "veg-cheese-fingers",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076090_2-keventer-frozen-veg-cheese-finger.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076090_2-keventer-frozen-veg-cheese-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076090-2_1-keventer-frozen-veg-cheese-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076090-3_1-keventer-frozen-veg-cheese-finger.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076090-4_1-keventer-frozen-veg-cheese-finger.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The fingers that offer the finger-licking taste with the amazing crisp and taste of it. Racking your brains to finalise a good vegetarian snack when your hunger pang hits, is worrisome! Keventer Frozen Food range offers an extensive range of vegetarian snacks before you that can help you in minutes! So, why to waste time preparing a yummy veg snack, when you can get ready to eat ones? Keventer offers a wide variety of veg snacks that are pre-cooked and can be quickly made ready for consumption. From Paneer Bites, Potato crispies, Veggie Delights or Cheesy Delights, every piece delivers a burst of delight. Be prepared to electrify taste buds!\nEnjoy yourselves, share it with friends or serve it at family dinners and simply have a good time!",
+   "ingredients": "Vegetable Mix, Potato, Procced Cheese, Contains Milk Soilds, Common Salt, Acidfiying Agent, Bread Crumbs, Yeast, Water, Batter, Salt, Potato Flakes, Corn Flour, Chilli Flakes, Vegetable Oil",
+   "usageInstructions": "Cook and add as an ingredient as per recipe.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veg Cutlet",
+  "handle": "veg-cutlet",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076091_2-keventer-frozen-veg-cutlet.jpg"
+    },
+    "barcode": "8906015500622"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076091_2-keventer-frozen-veg-cutlet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076091-2_1-keventer-frozen-veg-cutlet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076091-3_1-keventer-frozen-veg-cutlet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076091-4_1-keventer-frozen-veg-cutlet.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Vegetable cutlet or patties is snack item made with mixed boiled vegetables. Racking your brains to finalise a good vegetarian snack when your hunger pang hits, is worrisome! Keventer Frozen Food range offers an extensive range of vegetarian snacks before you that can help you in minutes! So, why to waste time in preparing a yummy veg snack, when you can get ready to eat ones? Keventer offers a wide variety of veg snacks that are pre-cooked and can be quickly made ready for consumption. From Paneer Bites, Potato crispies, Veggie Delights or Cheesy Delights, every piece delivers a burst of delight. Be prepared to electrify taste buds!\nEnjoy yourselves, share it with friends or serve it at family dinners and simply have a good time!",
+   "ingredients": "Vegetable Mix, Potato, Procced Cheese, Contains Milk Soilds, Common Salt, Acidfiying Agent, Bread Crumbs, Yeast, Water, Batter, Salt, Potato Flakes, Corn Flour, Chilli Flakes, Vegetable Oil",
+   "usageInstructions": "Cook and add as an ingredient as per recipe.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Frozen Green Peas",
+  "handle": "frozen-green-peas",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076084_4-keventer-frozen-green-peas.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076085_3-keventer-frozen-green-peas.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076083_4-keventer-frozen-green-peas.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076084_4-keventer-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076084-2_3-keventer-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076084-3_3-keventer-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076084-4_3-keventer-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076084-5_2-keventer-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076084-6_1-keventer-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076084-7_1-keventer-frozen-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076085_3-keventer-frozen-green-peas.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Frozen - Green Peas 500 g. Experience the convenience of farm-fresh goodness with Keventer Green Peas, a versatile and nutritious addition to your culinary repertoire. Instamart proudly introduces this essential ingredient, offering the perfect solution for busy individuals and families seeking convenience without compromising on taste or quality.",
+   "ingredients": "Sweet Corn",
+   "nutritionalInfo": {
+    "Energy": "81.0 kcal",
+    "Protein": "5.6 g",
+    "Carbohydrate": "14.5 g",
+    "Total Fat": "0.4 g"
+   },
+   "storageInstructions": "*Keep frozen at -18°C or below"
+  }
+ },
+ {
+  "title": "Herb & Pepper Chicken Sausages",
+  "handle": "herb-pepper-chicken-sausages",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "352",
+    "compare_at_price": "352",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160696_1-keventer-herb-pepper.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160697_1-keventer-herb-pepper.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160696_1-keventer-herb-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160696-2_1-keventer-herb-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160696-3_1-keventer-herb-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160696-4_1-keventer-herb-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160696-5_1-keventer-herb-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160697_1-keventer-herb-pepper.jpg"
+   }
+  ],
+  "food_type": "NON_VEG"
+ },
+ {
+  "title": "UHT Double Toned Milk",
+  "handle": "uht-double-toned-milk",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160704_2-keventer-double-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160704_2-keventer-double-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160704-2_2-keventer-double-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160704-3_2-keventer-double-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160704-4_2-keventer-double-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160704-5_2-keventer-double-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Double Toned Milk is low-fat milk and is ideal for those who want to stay slim and trim. It contains 1.5% fat. The yummy Keventer Double Toned Milk is preservative-free and chemical-free and requires neither boiling nor chilling. To top it off, the aseptic six-layered Tetra Pak carton ensures that the milk inside retains its nutrients and is naturally preserved by the UHT process, which ensures Zero bacteria and spores. The pack has a shelf-life of 180 days, and after opening the pack, refrigerate and consume within 2 days. It is easy to carry and convenient to use on the go.",
+   "ingredients": "Milk Fat Minimum 1.5%.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy Value": "50 Kcal",
+    "Protein": "3.1 gm",
+    "Carbohydrate": "5.2 gm",
+    "Fat": "1.5 gm",
+    "Added Vitamin A": "27 ?g RE",
+    "Added Vitamin D": "0.5 µg",
+    "Calcium": "140 mg"
+   },
+   "storageInstructions": "*Store in cool, dry and hygienic place\n*After opening, refrigerate and consume within 2 days",
+   "manufacturerName": "Metro Dairy Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10011031000005"
+  }
+ },
+ {
+  "title": "UHT Standardised Milk",
+  "handle": "uht-standardised-milk",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160700_1-keventer-standardised-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160700_1-keventer-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160700-2_1-keventer-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160700-3_1-keventer-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160700-4_1-keventer-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160700-5_1-keventer-standardised-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Standardised Milk is thick and creamy which provides wholesome nourishment and is awesome for your taste buds. It contains 4.5% fat. The yummy Keventer Standardised Milk is preservative free and chemical free and requires neither boiling nor chilling. To top it off, the aseptic six-layered Tetra Pak carton ensures that the milk inside retains its nutrients and is naturally preserved by UHT process which ensures zero bacteria and spores. The pack has a shelf-life of 180 days and after opening the pack, refrigerate and consume within 2 days. It is easy to carry and convenient to use on the go.",
+   "ingredients": "Milk Fat Minimum 4.5%.",
+   "usageInstructions": "Pour and drink. No need to boil.",
+   "manufacturerName": "Metro Dairy Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10011031000005"
+  }
+ },
+ {
+  "title": "UHT Toned Milk",
+  "handle": "uht-toned-milk",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "76",
+    "compare_at_price": "76",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160702_2-keventer-toned-milk.jpg"
+    },
+    "barcode": "8901553000092"
+   },
+   {
+    "title": "200ml",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160703_2-keventer-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160702_2-keventer-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160702-2_2-keventer-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160702-3_2-keventer-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160702-4_2-keventer-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160702-5_2-keventer-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160703_2-keventer-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Toned Milk is the perfect choice for your daily milk needs. Naturally awesome and wholesomely pure, this preservative-free and chemical-free milk contains 3% fat and requires no boiling or chilling. The aseptic six-layered Tetra Pak carton ensures the milk retains its nutrients and is naturally preserved by the UHT process, eliminating bacteria and spores. With a shelf-life of 180 days and the ability to be refrigerated and consumed within 2 days after opening, this milk is convenient and easy to carry on the go. Stay slim and healthy with Keventer Toned UHT Milk, made with all-natural ingredients and no artificial additives or harmful chemicals. Enjoy the yummy, low-fat goodness of this preservative-free milk for a truly delightful experience.",
+   "ingredients": "Milk Fat Minimum 3.0%.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "Not Specified",
+    "Energy Value": "60 Kcal",
+    "Protein": "3 gm",
+    "Carbohydrate": "4.95 gm",
+    "Fat": "3 gm",
+    "Added Vitamin A": "27 ?g RE",
+    "Added Vitamin D": "0.5 µg",
+    "Calcium": "130 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Do not buy if the pack is puffed or leaking",
+   "manufacturerName": "Metro Dairy Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10011031000005"
+  }
+ },
+ {
+  "title": "Italian Chicken Sausages",
+  "handle": "italian-chicken-sausages",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "370",
+    "compare_at_price": "370",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197811_1-keventer-italian-sausage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197811_1-keventer-italian-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197811-2_1-keventer-italian-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197811-3_1-keventer-italian-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197811-4_1-keventer-italian-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197811-5_1-keventer-italian-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197811-6_1-keventer-italian-sausage.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Italian Chicken Sausages offers a gourmet experience with every bite. Made from premium chicken, these sausages are infused with authentic Italian herbs and spices, delivering a rich, savoury flavour. Perfect for grilling, frying, or adding to pasta dishes, they bring a taste of Italy to your table.",
+   "ingredients": "Chicken (72%), Water (18%), Soya Protein Isolate, Breadcrumbs (Contains Acidity Regulator INS-260 and Preservative INS-282), Cornflour, lodised Salt, Spices, Acidity Regulator (INS-451), Sugar, Preservative (INS-250)",
+   "nutritionalInfo": {
+    "Energy": "155 kcal",
+    "Carbohydrate": "8.6 g",
+    "Added Sugar": "<0.01 g",
+    "Protein": "12.3 g",
+    "Fat": "8 g",
+    "Saturated Fatty Acids": "3.1 g",
+    "Trans Fatty Acids": "0.02 g"
+   },
+   "storageInstructions": "*Stored at -18°c or below"
+  }
+ },
+ {
+  "title": "Jalapeno & Cheese Chicken Sausages",
+  "handle": "jalapeno-cheese-chicken-sausages",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197813_1-keventer-jalapeno-cheese-sausage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197813_1-keventer-jalapeno-cheese-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197813-2_1-keventer-jalapeno-cheese-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197813-3_1-keventer-jalapeno-cheese-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197813-4_1-keventer-jalapeno-cheese-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197813-5_1-keventer-jalapeno-cheese-sausage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197813-6_1-keventer-jalapeno-cheese-sausage.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Jalapeno & Cheese Sausage is a delicious and spicy sausage made with chicken, cheese, and jalapeno. It is a ready-to-cook product that can be cooked in a variety of ways.",
+   "ingredients": "Chicken (70%), Water (15%), Cheese (6%), Fresh Jalapeno (4%), Soya Protein (1.2%), Wheat Fibre (0.8%), Milk Solids (1%), Iodised Salt (1.5%), Stabiliser (INS-451), Antioxidant (INS-316), Preservative (INS-251)",
+   "nutritionalInfo": {
+    "Energy": "186 kcal",
+    "Carbohydrate": "6.36 g",
+    "Added Sugar": "<1.0 g",
+    "Protein": "12.67 g",
+    "Fat": "12.2 g",
+    "Saturated Fatty Acids": "6.65 g",
+    "Trans Fatty Acids": "<0.1 g"
+   },
+   "storageInstructions": "*Store below -18°c\n*Keep frozen until use"
+  }
+ },
+ {
+  "title": "Metro Aam Doi",
+  "handle": "metro-aam-doi",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344739_2-keventer-metro-aam-doimango-dahi.jpg"
+    },
+    "barcode": "8901553000849"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344739_2-keventer-metro-aam-doimango-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344739-2_2-keventer-metro-aam-doimango-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344739-3_2-keventer-metro-aam-doimango-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344739-4_2-keventer-metro-aam-doimango-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344739-5_2-keventer-metro-aam-doimango-dahi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "?Keventer Metro Aam Doi (Mango Dahi) is a thick, creamy curd infused with rich mango flavour. Made from high-quality milk, it is available in an 80g cup, making it convenient for individual servings. This product combines the sweetness of mango with the smoothness of traditional doi, offering a delightful taste experience. ?",
+   "manufacturerName": "& Marketed By",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Metro Barz Chocolatey Choco Gold",
+  "handle": "metro-barz-chocolatey-choco-gold",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+    },
+    "barcode": "8901553552058"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869-2_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869-3_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869-4_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869-5_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869-6_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869-7_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348869-8_1-keventer-metro-barz-chocolatey-choco-gold-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Unleash your chocolate cravings with Keventer Metro Barz\nChocolatey Choco Gold Ice Cream, a luxurious 70ml treat. This decadent bar\nboasts creamy chocolate ice cream, enrobed in a lavish, golden-hued chocolate\ncoating that adds a touch of elegance. Each bite delivers a rich, velvety\ntexture and intense cocoa flavour, perfectly balanced for pure indulgence.\nCrafted with premium ingredients, it’s a favourite across eastern India, ideal\nfor kids and adults alike. Whether as a quick snack or a delightful dessert,\nKeventer’s Choco Gold Barz transforms any moment into a golden, chocolatey\nescape!",
+   "manufacturerName": "(For Address",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Barz Classic Choco",
+  "handle": "metro-barz-classic-choco",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+    },
+    "barcode": "8901553552010"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868-2_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868-3_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868-4_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868-5_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868-6_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868-7_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348868-8_1-keventer-metro-barz-classic-choco-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the timeless Keventer Metro Barz Classic Choco\nIce Cream, a 70 ml delight that delivers pure chocolate bliss. This iconic bar\nfeatures creamy chocolate ice cream wrapped in a rich, glossy chocolate\ncoating, offering a smooth, velvety texture that melts in your mouth. Each bite\nis a perfect balance of sweetness, making it an ideal treat for all ages.\nCrafted with premium ingredients, it’s a beloved choice across eastern India,\nperfect for a quick snack or dessert. Keventer’s Classic Choco Barz elevates\nany moment, satisfying chocolate cravings with its irresistible, classic flavour!",
+   "manufacturerName": "(For Address",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Barz Choco Scotch",
+  "handle": "metro-barz-choco-scotch",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+    },
+    "barcode": "8901553552027"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867-2_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867-3_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867-4_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867-5_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867-6_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867-7_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348867-8_1-keventer-metro-barz-surprising-choco-scotch-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the delightful Keventer Metro Barz Surprising\nChoco Scotch Ice Cream, a 70ml treat that marries rich chocolate with luscious\nbutterscotch. This indulgent bar features creamy chocolate ice cream enveloped\nin a smooth chocolate coating, concealing a surprising butterscotch ripple that\nbursts with flavour. Its velvety texture and harmonious sweetness make every\nbite a joy, perfect for a quick snack or dessert. Crafted with high-quality\ningredients, it’s loved by kids and adults across eastern India. This Keventer\ngem transforms any moment into a sweet escape, ideal for chocolate and\nbutterscotch lovers!",
+   "manufacturerName": "(For Address",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Black Forest Temptation Ice Cream",
+  "handle": "metro-black-forest-temptation-ice-cream",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871_1-keventer-metro-black-forest-temptation.jpg"
+    },
+    "barcode": "8901553000900"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871_1-keventer-metro-black-forest-temptation.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871-2_1-keventer-metro-black-forest-temptation.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871-3_1-keventer-metro-black-forest-temptation.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871-4_1-keventer-metro-black-forest-temptation.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871-5_1-keventer-metro-black-forest-temptation.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871-6_1-keventer-metro-black-forest-temptation.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871-7_1-keventer-metro-black-forest-temptation.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348871-8_1-keventer-metro-black-forest-temptation.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Surrender to the allure of Keventer Metro Black Forest\nTemptation Medium Fat Frozen Dessert, a 100ml treat inspired by the classic\ncake. This indulgent dessert blends creamy chocolate frozen dessert with tangy\ncherry swirls, delivering a rich, velvety texture. Each spoonful offers a\nsymphony of cocoa and fruit, reminiscent of lush forests. Crafted with premium\ningredients, it’s a balanced indulgence for all ages, cherished across eastern\nIndia. Perfect for a quick snack or decadent dessert, Keventer’s Black Forest\nTemptation transforms every moment into a delightful escape, captivating\nchocolate and cherry lovers alike!",
+   "manufacturerName": "(For Address",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Caramel Gateau Ice Cream",
+  "handle": "metro-caramel-gateau-ice-cream",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870_1-keventer-metro-caramel-gateau.jpg"
+    },
+    "barcode": "8901553000931"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870_1-keventer-metro-caramel-gateau.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870-2_1-keventer-metro-caramel-gateau.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870-3_1-keventer-metro-caramel-gateau.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870-4_1-keventer-metro-caramel-gateau.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870-5_1-keventer-metro-caramel-gateau.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870-6_1-keventer-metro-caramel-gateau.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870-7_1-keventer-metro-caramel-gateau.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348870-8_1-keventer-metro-caramel-gateau.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Delight in the exquisite Keventer Metro Caramel Gateau\nMedium Fat Frozen Dessert, a 100ml masterpiece of indulgence. This luscious\ntreat layers creamy caramel-infused frozen dessert with delicate cake-like\ntextures, offering a velvety mouthfeel and rich, buttery sweetness. Each\nspoonful unveils a harmonious blend of caramel swirls, perfect for satisfying\ndessert cravings. Crafted with premium ingredients, it’s a guilt-free pleasure\nfor all ages, widely loved across eastern India. Ideal for special moments or a\nquick treat, Keventer’s Caramel Gateau elevates every occasion with its\nsophisticated flavour and irresistible charm!",
+   "manufacturerName": "(For Address",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Pistachio Crush Ice Cream",
+  "handle": "metro-pistachio-crush-ice-cream",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872_1-keventer-metro-pistachio-crush.jpg"
+    },
+    "barcode": "8901553000924"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872_1-keventer-metro-pistachio-crush.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872-2_1-keventer-metro-pistachio-crush.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872-3_1-keventer-metro-pistachio-crush.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872-4_1-keventer-metro-pistachio-crush.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872-5_1-keventer-metro-pistachio-crush.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872-6_1-keventer-metro-pistachio-crush.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872-7_1-keventer-metro-pistachio-crush.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348872-8_1-keventer-metro-pistachio-crush.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Immerse yourself in the nutty elegance of Keventer Metro\nPistachio Crush Medium Fat Frozen Dessert, a 100ml treat that captivates the\nsenses. This creamy delight blends smooth pistachio-flavoured frozen dessert\nwith crunchy nut pieces, offering a velvety texture and rich, earthy sweetness.\nEach spoonful delivers a perfect balance of indulgence and lightness, crafted\nwith premium ingredients. Loved across eastern India, it’s ideal for all ages\nas a quick snack or sophisticated dessert. Keventer’s Pistachio Crush elevates\nany moment, making it a must-try for nut enthusiasts seeking a refreshing,\nflavorful escape!",
+   "manufacturerName": "(For Address",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Konez Butterscotch",
+  "handle": "metro-konez-butterscotch",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865_1-keventer-metro-konez-butterscotch.jpg"
+    },
+    "barcode": "8901553000429"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865_1-keventer-metro-konez-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865-2_1-keventer-metro-konez-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865-3_1-keventer-metro-konez-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865-4_1-keventer-metro-konez-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865-5_1-keventer-metro-konez-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865-6_1-keventer-metro-konez-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865-7_1-keventer-metro-konez-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348865-8_1-keventer-metro-konez-butterscotch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy delight of Keventer Metro Konez\nButterscotch Medium Fat Frozen Dessert, a perfect blend of rich buttery flavours\nand luscious caramel swirls. Encased in a crisp, golden cone, this 80ml treat\noffers a velvety texture that melts in your mouth, delivering a symphony of\nsweetness with every bite. Crafted with high-quality ingredients, it’s a\nguilt-free indulgence for all ages, ideal for a quick snack or dessert.\nAvailable across eastern India, this Keventer favourite elevates any moment\nwith its irresistible taste, making it a must-try for butterscotch lovers",
+   "manufacturerName": "(For Address",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Konez Chocolate & Nuts Grande",
+  "handle": "metro-konez-chocolate-nuts-grande",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+    },
+    "barcode": "8901553001266"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866-2_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866-3_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866-4_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866-5_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866-6_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866-7_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348866-8_1-keventer-metro-konez-chocolate-nuts-grande.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dive into the decadent Keventer Metro Konez Chocolate &\nNuts Grande Medium Fat Frozen Dessert, a 100ml treat that combines rich\nchocolatey goodness with crunchy nutty bursts. Nestled in a crisp waffle cone,\nthis frozen delight offers a creamy, medium-fat texture that balances\nindulgence and lightness. Each bite delivers a harmonious blend of velvety\nchocolate and roasted nuts, perfect for satisfying sweet cravings. Crafted with\npremium ingredients, it’s a crowd-pleaser for all ages, ideal for any occasion.\nAvailable across eastern India, this Keventer masterpiece is a must-have for\nchocolate and nut enthusiasts!",
+   "manufacturerName": "(For Address",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Cow Milk",
+  "handle": "metro-cow-milk",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "31",
+    "compare_at_price": "31",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344729_2-keventer-metro-cow-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344729_2-keventer-metro-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344729-2_2-keventer-metro-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344729-3_2-keventer-metro-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344729-4_2-keventer-metro-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344729-5_2-keventer-metro-cow-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Metro Cow Milk provides a wholesome dairy choice sourced from local farms, ensuring freshness and quality. This pure milk is ideal for daily consumption, offering essential nutrients without additives. Perfect for families and individuals alike, it supports a balanced diet.",
+   "manufacturerName": "& Marketed By",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 1
+  }
+ },
+ {
+  "title": "Metro Full Cream Milk",
+  "handle": "metro-full-cream-milk",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "37",
+    "compare_at_price": "37",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344731_2-keventer-metro-full-cream-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344731_2-keventer-metro-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344731-2_2-keventer-metro-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344731-3_2-keventer-metro-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344731-4_2-keventer-metro-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344731-5_2-keventer-metro-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344731-6_2-keventer-metro-full-cream-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "?Keventer Metro Full Cream Milk is a pasteurised and homogenised dairy product. With a fat content of 6%, it offers a rich and creamy texture, making it suitable for various culinary applications. The milk is fortified with vitamins A and D and is processed under stringent quality controls to ensure consistency and freshness. ?",
+   "manufacturerName": "& Marketed By",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 1
+  }
+ },
+ {
+  "title": "Metro Rich Milk",
+  "handle": "metro-rich-milk",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "34",
+    "compare_at_price": "34",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344727_2-keventer-metro-rich-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344727_2-keventer-metro-rich-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344727-2_2-keventer-metro-rich-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344727-3_2-keventer-metro-rich-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344727-4_2-keventer-metro-rich-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344727-5_2-keventer-metro-rich-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Metro Rich Milk is a creamy, full-bodied milk sourced from quality farms and processed for consistent taste and texture. Ideal for cooking, baking, or enjoying on its own, it adds richness to a variety of dishes. Packaged for freshness, Metro Rich Milk is a convenient choice for those who prefer a thicker, more indulgent dairy option.",
+   "manufacturerName": "& Marketed By",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 1
+  }
+ },
+ {
+  "title": "Metro Toned Milk",
+  "handle": "metro-toned-milk",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344728_2-keventer-metro-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344728_2-keventer-metro-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344728-2_2-keventer-metro-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344728-3_2-keventer-metro-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344728-4_2-keventer-metro-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344728-5_2-keventer-metro-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344728-6_2-keventer-metro-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344728-7_1-keventer-metro-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Metro Toned Milk is a lighter dairy option that retains the natural taste of milk while reducing fat content. Sourced from trusted farms and processed with care, it's suitable for everyday use in tea, coffee, or cooking. Packaged to preserve freshness, Metro Toned Milk offers a convenient way to enjoy the goodness of milk with a smoother consistency.",
+   "manufacturerName": "& Marketed By",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Metro Dahi",
+  "handle": "metro-dahi",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "380g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344733_4-keventer-metro-dahi.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "18",
+    "compare_at_price": "18",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344734_2-keventer-metro-dahi.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344732_2-keventer-metro-dahi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344733_4-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344733-2_4-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344733-3_4-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344733-4_4-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344733-5_4-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344733-6_2-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344734_2-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344732_2-keventer-metro-dahi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Metro Dahi is a set curd made from high-quality milk, offering a rich and creamy texture. Carefully packaged to retain freshness, it delivers a smooth and consistent taste in every spoonful. Ideal for preparing raita, adding to meals as a side dish, or enjoying on its own, it is a versatile and wholesome addition to your daily diet.",
+   "manufacturerName": "Keventer Agro Limited",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 4
+  }
+ },
+ {
+  "title": "Metro Dahi Cup",
+  "handle": "metro-dahi-cup",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344738_2-keventer-metro-dahi.jpg"
+    },
+    "barcode": "8901553000757"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344738_2-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344738-2_2-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344738-3_2-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344738-4_2-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344738-5_2-keventer-metro-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344738-6_2-keventer-metro-dahi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Metro Dahi is a set curd crafted from high-quality milk, offering a rich and creamy texture. The curd is packaged to maintain freshness and is suitable for use in raita, side dishes, or enjoyed on its own.",
+   "manufacturerName": "& Marketed By",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Metro Mishti Doi",
+  "handle": "metro-mishti-doi",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344737_2-keventer-metro-mishti-doisweetened-dahi.jpg"
+    }
+   },
+   {
+    "title": "70g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344736_2-keventer-metro-mishti-doisweetened-dahi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344737_2-keventer-metro-mishti-doisweetened-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344737-2_2-keventer-metro-mishti-doisweetened-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344737-3_2-keventer-metro-mishti-doisweetened-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344737-4_2-keventer-metro-mishti-doisweetened-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344737-5_2-keventer-metro-mishti-doisweetened-dahi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344736_2-keventer-metro-mishti-doisweetened-dahi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Metro Mishti Doi is a traditional Bengali sweetened curd presented in a convenient, ready-to-eat format. It offers a rich, creamy texture suitable for dessert or as part of a meal.",
+   "manufacturerName": "& Marketed By",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Metro Malai Paneer",
+  "handle": "metro-malai-paneer",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344730_2-keventer-metro-malai-paneer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344730_2-keventer-metro-malai-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344730-2_2-keventer-metro-malai-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344730-3_2-keventer-metro-malai-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344730-4_2-keventer-metro-malai-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344730-5_2-keventer-metro-malai-paneer.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Metro Malai Paneer is a premium dairy product crafted from high-quality milk, offering a soft and creamy texture. It is ideal for a variety of Indian dishes, from curries to grilled recipes. The paneer is packaged to maintain freshness and is suitable for home cooks and professional chefs.",
+   "manufacturerName": "& Marketed By",
+   "fssaiLicense": "10011031000005",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Mozzarella Cheese Sticks",
+  "handle": "mozzarella-cheese-sticks",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160687_3-keventer-mozzarella-cheese-sticks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160687_3-keventer-mozzarella-cheese-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160687-2_3-keventer-mozzarella-cheese-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160687-3_3-keventer-mozzarella-cheese-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160687-4_2-keventer-mozzarella-cheese-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160687-5_2-keventer-mozzarella-cheese-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160687-6_1-keventer-mozzarella-cheese-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160687-7_1-keventer-mozzarella-cheese-sticks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful Keventer Mozzarella Cheese Sticks, a gourmet snack crafted with the finest ingredients. Each stick promises a harmonious blend of a crispy, golden breadcrumb coating and a gooey, stretchy mozzarella interior, delivering a truly satisfying taste and texture. Carefully produced to capture the pure essence of mozzarella, these versatile cheese sticks are perfect for dipping or enjoying on their own, making them an ideal choice for any occasion, from movie nights to lively parties.\nElevate your snacking experience with the irresistible crunch and irresistible cheesiness of Keventer Mozzarella Cheese Sticks, where flavour and satisfaction come together in every bite.",
+   "ingredients": "Cheese (55%) [Mozzarella Cheese, Corn Starch, Iodised Salt, Wheat Flour, Preservatives (INS 200)], Breadcrumbs (Wheat Flour, Wheat Gluten, Iodised Salt, Dextrose, Edible Vegetable Oil, Yeast), Spices and Condiments (Parsley Flakes), Water, Batter [Wheat Flour, Maize Starch, Maize Flour, Iodised Salt, Stabiliser (INS 466)], Edible Vegetable Oil (Palm Oil), Seasoning Mix",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "294",
+    "Protein (g)": "13.6",
+    "Carbohydrate (g)": "20.1",
+    "Total Sugar (g)": "1.8",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "17.7",
+    "Saturated Fat (g)": "11.2",
+    "Added Trans-fat (g)": "0",
+    "Cholesterol (mg)": "36",
+    "Sodium (mg)": "55"
+   },
+   "storageInstructions": "*Store and transport at -18°C or below"
+  }
+ },
+ {
+  "title": "Plain Chicken Salami",
+  "handle": "plain-chicken-salami",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197812_1-keventer-plain-salami.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197812_1-keventer-plain-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197812-2_1-keventer-plain-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197812-3_1-keventer-plain-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197812-4_1-keventer-plain-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197812-5_1-keventer-plain-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197812-6_1-keventer-plain-salami.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Plain Salami is a frozen processed meat product made with chicken. It is a convenient and ready-to-cook product that can be easily prepared by pan-frying, microwaving, or thawing.",
+   "ingredients": "Chicken (72%), Water (18%), Soya Protein Isolate, Wheat Flour, Cornflour, Iodised Salt, Milk Solids, Spices, Acidity Regulator (INS-451), Preservative (INS-250)",
+   "nutritionalInfo": {
+    "Energy": "135.6 kcal",
+    "Carbohydrate": "11.81 g",
+    "Added Sugar": "0 g",
+    "Protein": "11.2 g",
+    "Fat": "4.8 g"
+   },
+   "storageInstructions": "*Store in the refrigerator at 6' to 8°c\n*Do not freeze once thawed"
+  }
+ },
+ {
+  "title": "Bell Pepper Chicken Salami",
+  "handle": "bell-pepper-chicken-salami",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "222",
+    "compare_at_price": "222",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197814_1-keventer-salami-bell-pepper.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197814_1-keventer-salami-bell-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197814-2_1-keventer-salami-bell-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197814-3_1-keventer-salami-bell-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197814-4_1-keventer-salami-bell-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197814-5_1-keventer-salami-bell-pepper.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197814-6_1-keventer-salami-bell-pepper.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Salami Bell Pepper is a ready-to-cook chicken salami product that combines chicken with bell peppers. It is a frozen processed comminuted meat product made with chicken (72%), water (18%), bell pepper, soya protein isolate, and other ingredients. The product is designed to be cooked before consumption and can be prepared using various methods such as pan-frying or microwaving.",
+   "ingredients": "Chicken (72%), Water (18%), Bell Pepper, Soya Protein Isolate, Wheat Flour, Cornflour, Iodised Salt, Milk Solids, Spices, Acidity Regulator (INS-451), Preservative (INS-250)",
+   "nutritionalInfo": {
+    "Energy": "106 kcal",
+    "Carbohydrate": "12.82 g",
+    "Added Sugar": "0 g",
+    "Protein": "9.75 g",
+    "Fat": "1.9 g"
+   },
+   "storageInstructions": "*Store at -18°c or below"
+  }
+ },
+ {
+  "title": "Chicken Chipolata Sausages",
+  "handle": "chicken-chipolata-sausages",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218065_1-keventer-ready-to-cook-frozen-snack-chicken-chipolata-sausages.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218065_1-keventer-ready-to-cook-frozen-snack-chicken-chipolata-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218065-2_1-keventer-ready-to-cook-frozen-snack-chicken-chipolata-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218065-3_1-keventer-ready-to-cook-frozen-snack-chicken-chipolata-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218065-4_1-keventer-ready-to-cook-frozen-snack-chicken-chipolata-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218065-5_1-keventer-ready-to-cook-frozen-snack-chicken-chipolata-sausages.jpg"
+   }
+  ],
+  "food_type": "NON_VEG"
+ },
+ {
+  "title": "Chicken Tandoori Kebab",
+  "handle": "chicken-tandoori-kebab",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "356",
+    "compare_at_price": "356",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218070_1-keventer-ready-to-cook-frozen-snack-chicken-tandoori-kebab.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218070_1-keventer-ready-to-cook-frozen-snack-chicken-tandoori-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218070-2_1-keventer-ready-to-cook-frozen-snack-chicken-tandoori-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218070-3_1-keventer-ready-to-cook-frozen-snack-chicken-tandoori-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218070-4_1-keventer-ready-to-cook-frozen-snack-chicken-tandoori-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218070-5_1-keventer-ready-to-cook-frozen-snack-chicken-tandoori-kebab.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Ready To Cook Frozen Snack - Chicken Tandoori Kebab is a delicious and convenient frozen snack made with high-quality chicken meat, onions, and a blend of spices. It is easy to prepare, cooking in just 4 minutes, and is perfect for a quick and tasty meal or snack. The product is sourced and processed with care to ensure the best quality and taste.",
+   "ingredients": "Chicken Meat, Onion, Soya Granules, Wheat Flour, Iodised Salt, Isolated Soya Protein, Dry and Wet Spices, Acidity Regulator (E-451), Preservative Nitrite (E-25)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "225.3 kcal",
+    "Protein": "19.1 g",
+    "Carbohydrate": "10.9 g",
+    "Sugar": "0 g",
+    "Total Fat": "11.7 g"
+   },
+   "storageInstructions": "*Store at -18°C or below"
+  }
+ },
+ {
+  "title": "Chicken Lucknowi Kebab",
+  "handle": "chicken-lucknowi-kebab",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "356",
+    "compare_at_price": "356",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218069_1-keventer-ready-to-cook-frozen-snack-chicken-lucknowi-kebab.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218069_1-keventer-ready-to-cook-frozen-snack-chicken-lucknowi-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218069-2_1-keventer-ready-to-cook-frozen-snack-chicken-lucknowi-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218069-3_1-keventer-ready-to-cook-frozen-snack-chicken-lucknowi-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218069-4_1-keventer-ready-to-cook-frozen-snack-chicken-lucknowi-kebab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218069-5_1-keventer-ready-to-cook-frozen-snack-chicken-lucknowi-kebab.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Ready To Cook Frozen Snack - Chicken Lucknowi Kebab is a delicious and convenient frozen snack made with high-quality chicken meat, onions, and a blend of spices. Crafted with care, this kebab offers an authentic Lucknowi flavour that can be easily prepared at home. Enjoy this tasty and satisfying snack as a quick meal or appetiser.",
+   "ingredients": "Chicken Meat (72%), Onion (1%), Soya Granules, Wheat Flour, Iodised Salt, Isolated Soya Protein, Dry and Wet Spices, Acidity Regulator (E-451), Preservative Nitrite (E-25)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "180 kcal",
+    "Protein": "18.66 g",
+    "Carbohydrate": "6.83 g",
+    "of which Sugar": "<1.0g",
+    "Fat": "8.7 g",
+    "Saturated Fat": "3.15 g",
+    "Mono Unsaturated Fatty Acid": "3.88 g",
+    "Poly Unsaturated Fatty Acid": "1.68 g",
+    "Trans Fat": "<0.1g"
+   },
+   "storageInstructions": "*Store at -18°C or below\n*Freeze the product"
+  }
+ },
+ {
+  "title": "Cheese & Jalapeno Bites",
+  "handle": "cheese-jalapeno-bites",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218064_2-keventer-ready-to-cook-frozen-snack-cheese-jalapeno-bites.jpg"
+    },
+    "barcode": "8906015501414"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218064_2-keventer-ready-to-cook-frozen-snack-cheese-jalapeno-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218064-2_2-keventer-ready-to-cook-frozen-snack-cheese-jalapeno-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218064-3_2-keventer-ready-to-cook-frozen-snack-cheese-jalapeno-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218064-4_2-keventer-ready-to-cook-frozen-snack-cheese-jalapeno-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218064-5_2-keventer-ready-to-cook-frozen-snack-cheese-jalapeno-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218064-6_1-keventer-ready-to-cook-frozen-snack-cheese-jalapeno-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218064-7_1-keventer-ready-to-cook-frozen-snack-cheese-jalapeno-bites.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible crunch and flavour explosion of Keventer Cheese and Jalapeno Bites. These delectable frozen snacks are made with processed cheese, milk solids, and a blend of spices, offering a perfect balance of savoury and spicy notes. Designed to be deep-fried, these bites are ready in just 3 minutes, making them an ideal choice for any occasion.\nBursting with flavour and perfectly crispy, these bites are both vegetarian and non-vegetarian friendly, catering to a wide range of tastes. Whether you're hosting a gathering or simply craving a tasty treat, these Keventer Bites are sure to delight your senses and satisfy your cravings.",
+   "ingredients": "Processed Cheese (3%) [Cheddar Cheese (Made from Microbial Enzyme)], Milk Solids, Emulsifier [INS 331, INS 339(i), INS 34(i), INS 452(i)], Iodised Salt, Preservative (INS 2, INS 234), Bread Crumbs [Refined Wheat Flour (Maida), Iodised Salt, Dextrose, Yeast], Water, Refined Palm Oil [Antioxidant (INS 319)], Potato, Red Capsicum, Dehydrated Potato, Batter [Stabiliser (INS 466)], Green Capsicum, Pickled JalapEno [Acidity Regulator (INS 26), Firming Agent (INS 59)], Seasoning, Thickener",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "283 kcal",
+    "Protein": "8.9 g",
+    "Carbohydrate": "22.7 g",
+    "of which Sugar": "1.3 g",
+    "Fat": "18.1 g",
+    "Saturated Fat": "9.8 g",
+    "Trans Fat": "0.3 g"
+   },
+   "storageInstructions": "*Store at -18°C or below"
+  }
+ },
+ {
+  "title": "Cheese Chilli Patty",
+  "handle": "cheese-chilli-patty",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "360g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218062_1-keventer-ready-to-cook-frozen-snack-cheese-chilli-patty.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218062_1-keventer-ready-to-cook-frozen-snack-cheese-chilli-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218062-2_1-keventer-ready-to-cook-frozen-snack-cheese-chilli-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218062-3_1-keventer-ready-to-cook-frozen-snack-cheese-chilli-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218062-4_1-keventer-ready-to-cook-frozen-snack-cheese-chilli-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218062-5_1-keventer-ready-to-cook-frozen-snack-cheese-chilli-patty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Ready To Cook Frozen Snack - Cheese Chilli Patty is a delicious and convenient frozen snack made with a blend of cheese, potatoes, and a mix of spices. It is easy to prepare, requiring just 3-4 minutes of cooking time. The patty is coated in a crispy breadcrumb batter, making it a perfect snack or appetiser. Enjoy this tasty and satisfying cheese and chilli-flavoured patty as a quick and easy meal option.",
+   "ingredients": "Cheese (24%), Pasteurised Skimmed Milk, Iodised Salt, Stabilisers (Calcium Chloride, Microbial Rennet), Water, Potatoes, Bread Crumbs (Refined Wheat Flour (Maida), Tapioca Starch, Wheat Gluten, Yeast, Edible Vegetable Oil (Palm), Spices and Condiments), Refined Palm Oil, Bread Crumb (Refined Wheat Flour (Maida), Dextrose, Salt, Spices and Condiments, Yeast), Jalapeno Mix (Stabiliser (Guar Gum), Green Chilli (2%), Jalapeno, Corn Starch, Rice Flakes, Red Chilli Flakes (0.5%)), Salt",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy": "290 kCal",
+    "Protein": "9 g",
+    "Carbohydrate": "21.5 g",
+    "of which Sugar": "1.5 g",
+    "Fat": "18.5 g",
+    "Saturated Fat": "10.5 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "25 mg"
+   },
+   "storageInstructions": "*Keep frozen at -18°C or below\n*Do not thaw before cooking"
+  }
+ },
+ {
+  "title": "Chicken Momo",
+  "handle": "chicken-momo",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750g",
+    "price": "441",
+    "compare_at_price": "441",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218071_2-keventer-ready-to-cook-frozen-snack-chicken-momo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218071_2-keventer-ready-to-cook-frozen-snack-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218071-2_2-keventer-ready-to-cook-frozen-snack-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218071-3_2-keventer-ready-to-cook-frozen-snack-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218071-4_2-keventer-ready-to-cook-frozen-snack-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218071-5_2-keventer-ready-to-cook-frozen-snack-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218071-6_1-keventer-ready-to-cook-frozen-snack-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218071-7_1-keventer-ready-to-cook-frozen-snack-chicken-momo.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Ready To Cook Frozen Snack - Chicken Momo is a delicious and convenient frozen snack made with high-quality chicken mince, eggs, and vegetables. It is seasoned with a blend of spices and is ready to cook, making it an ideal choice for a quick and tasty meal. The product is frozen to lock in the freshness and nutrition, ensuring you can enjoy a delicious and nutritious snack anytime.",
+   "ingredients": "Chicken Mince (35%), Egg and Vegetables (3%), Spices, Iodised Salt, Sugar, Wheat Flour, Water, Flavour Enhancer (INS 621), Edible Vegetable Oil (Soya Oil), Soya",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "230kcal",
+    "Protein": "8.1g",
+    "Carbohydrate": "26g",
+    "Sugar": "0.23g",
+    "Total Fat": "10.2g",
+    "Cholesterol": "19mg",
+    "Saturated Fatty Acids": "3.1g",
+    "Monounsaturated Fatty Acids": "4.1g",
+    "Polyunsaturated Fatty Acids": "3.0g",
+    "Trans Fatty Acids": "0.46g"
+   },
+   "storageInstructions": "*Store at -18°C\n*Consume after proper cooking"
+  }
+ },
+ {
+  "title": "Veg Momo",
+  "handle": "veg-momo",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750g",
+    "price": "413",
+    "compare_at_price": "413",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218072_2-keventer-ready-to-cook-frozen-snack-veg-momo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218072_2-keventer-ready-to-cook-frozen-snack-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218072-2_2-keventer-ready-to-cook-frozen-snack-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218072-3_2-keventer-ready-to-cook-frozen-snack-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218072-4_2-keventer-ready-to-cook-frozen-snack-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218072-5_2-keventer-ready-to-cook-frozen-snack-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218072-6_1-keventer-ready-to-cook-frozen-snack-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218072-7_1-keventer-ready-to-cook-frozen-snack-veg-momo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste and convenience of Keventer's Ready to Cook Frozen Veg Momos. These soft, juicy momos are made with a delectable blend of fresh vegetables like cabbage, onion, and carrot, carefully selected to deliver a flavourful and nutritious snack. Simply steam or pan-fry these momos for a quick and satisfying meal, perfect for any time of the day.\nFrozen to lock in the freshness and flavour, these momos offer a hassle-free way to enjoy a delicious vegetable-based treat. With their soft and juicy texture, these momos are sure to delight your taste buds and provide a nourishing option for a convenient and delicious snack or appetiser.",
+   "ingredients": "Cabbage (4%), Onion, Carrot and Other Vegetables (3%), Spices, Iodised Salt, Sugar, Flavour Enhancer (INS 621), Wheat Flour, Edible Vegetable Oil (Soya Oil), Soya",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "213 kcal",
+    "Protein": "4.8 g",
+    "Carbohydrate": "25.5 g",
+    "of which Sugar": "0.34 g",
+    "Total Fat": "10.2 g",
+    "Cholesterol": "0 mg",
+    "Saturated Fatty Acids": "4.76 g",
+    "Monounsaturated Fatty Acids": "4.09 g",
+    "Polyunsaturated Fatty Acids": "1.35 g",
+    "Trans Fatty Acids": "0.86 g"
+   },
+   "storageInstructions": "*Store at -18°C"
+  }
+ },
+ {
+  "title": "Chicken Pepper Wursts",
+  "handle": "chicken-pepper-wursts",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218067_1-keventer-ready-to-cook-frozen-snack-chicken-pepper-wursts.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218067_1-keventer-ready-to-cook-frozen-snack-chicken-pepper-wursts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218067-2_1-keventer-ready-to-cook-frozen-snack-chicken-pepper-wursts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218067-3_1-keventer-ready-to-cook-frozen-snack-chicken-pepper-wursts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218067-4_1-keventer-ready-to-cook-frozen-snack-chicken-pepper-wursts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218067-5_1-keventer-ready-to-cook-frozen-snack-chicken-pepper-wursts.jpg"
+   }
+  ],
+  "food_type": "NON_VEG"
+ },
+ {
+  "title": "Crispy Onion Rings",
+  "handle": "crispy-onion-rings",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218060_1-keventer-ready-to-cook-frozen-snack-crispy-onion-rings.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218060_1-keventer-ready-to-cook-frozen-snack-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218060-2_1-keventer-ready-to-cook-frozen-snack-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218060-3_1-keventer-ready-to-cook-frozen-snack-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218060-4_1-keventer-ready-to-cook-frozen-snack-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218060-5_1-keventer-ready-to-cook-frozen-snack-crispy-onion-rings.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible crunch and delightful flavour of Keventer Crispy Onion Rings. Crafted with premium ingredients and a light, crispy coating, these restaurant-quality onion rings deliver a satisfying snacking experience in the comfort of your own home. Bursting with a delicious onion taste, they are the perfect way to satisfy your cravings for a convenient and flavourful treat. Whether you're enjoying them as a snack or entertaining guests, Keventer Crispy Onion Rings are sure to delight with their irresistible texture and mouthwatering taste.",
+   "ingredients": "Onion (39%), Bread Crumbs [Refined Wheat Flour (Maida), Dextrose, Salt, Spices and Condiments, Yeast], Water, Refined Palm Oil, Corn Starch, Green Chilli, Rice Flakes, Bengal Gram Flour, Seasoning, Potato Flakes, Refined Wheat Flour (Maida), Batter Mix [Stabiliser (Guar Gum)], Wheat Fibre, Yeast Extract, Milk Solids, Sugar, Stabiliser (Guar Gum)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "250 kcal",
+    "Protein": "4g",
+    "Carbohydrate": "31g",
+    "of which Sugar": "4g",
+    "Total Fat": "12g",
+    "Saturated Fat": "6g",
+    "Trans Fat": "<0.1g",
+    "Cholesterol": "<1mg"
+   },
+   "storageInstructions": "*Store at -18°C or below"
+  }
+ },
+ {
+  "title": "Smoked Chicken Loaf",
+  "handle": "smoked-chicken-loaf",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "335",
+    "compare_at_price": "335",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218068_1-keventer-ready-to-cook-frozen-snack-natural-wood-smoked-chicken-loaf.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218068_1-keventer-ready-to-cook-frozen-snack-natural-wood-smoked-chicken-loaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218068-2_1-keventer-ready-to-cook-frozen-snack-natural-wood-smoked-chicken-loaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218068-3_1-keventer-ready-to-cook-frozen-snack-natural-wood-smoked-chicken-loaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218068-4_1-keventer-ready-to-cook-frozen-snack-natural-wood-smoked-chicken-loaf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218068-5_1-keventer-ready-to-cook-frozen-snack-natural-wood-smoked-chicken-loaf.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Ready To Cook Frozen Snack - Natural Wood Smoked Chicken Loaf is a delicious and convenient frozen snack made with high-quality chicken meat. It is smoked with natural wood to impart a rich, smoky flavour. The loaf is pre-cooked and ready to heat and serve, making it an ideal choice for a quick and tasty meal or snack.",
+   "ingredients": "Chicken Meat (72%), Water (19%), Isolated Soya Protein, Wheat Flour, Iodised Salt, Acidity Regulator (E-451), Preservative Nitrite (E-25)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "125 kcal",
+    "Protein": "16 g",
+    "Carbohydrate": "2 g",
+    "Sugar": "0 g",
+    "Fat": "5.86 g"
+   },
+   "storageInstructions": "*Store in freezer at -18°C or below"
+  }
+ },
+ {
+  "title": "Paneer Double Decker",
+  "handle": "paneer-double-decker",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "360g",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218063_1-keventer-ready-to-cook-frozen-snack-paneer-double-decker.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218063_1-keventer-ready-to-cook-frozen-snack-paneer-double-decker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218063-2_1-keventer-ready-to-cook-frozen-snack-paneer-double-decker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218063-3_1-keventer-ready-to-cook-frozen-snack-paneer-double-decker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218063-4_1-keventer-ready-to-cook-frozen-snack-paneer-double-decker.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218063-5_1-keventer-ready-to-cook-frozen-snack-paneer-double-decker.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your culinary experience with Keventer's Paneer Double Decker, a frozen snack that boasts a delightful 40% paneer content. Renowned for its smooth texture and rich flavour, this versatile ingredient can transform traditional dishes or inspire creative new recipes. Carefully cooked in hot vegetable oil for 5.30 minutes, the snack ensures a delicious and satisfying internal core temperature, delivering a truly indulgent taste sensation.\nWhether you're looking to add a touch of paneer magic to your curries or grill it to perfection, this product is a must-have for any discerning home chef. Bring the flavours of Keventer Paneer into your kitchen today and elevate your meals to new heights.",
+   "ingredients": "Paneer (40%), Bread Crumbs (Refined Wheat Flour (Maida), Dextrose, Salt, Spices and Condiments, Yeast), Water, Hectic Palm Oil, Cheese, Pasteurised Cow's Milk, Pasteurised Skimmed Milk, Iodised Salt, Stabiliser (Calcium Chloride), Microbial Culture and Microbial Rennet, Jalapeno, Product Stabiliser (Guar Gum), Tomato Paste, Butter Mix (Stabiliser (Guar Gum)), Basil, Seasoning Spices and Herbs, Rice Flakes, Lemon Juice Powder",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy": "300 kCal",
+    "Protein": "12 g",
+    "Carbohydrate": "21.5 g",
+    "of which Sugar": "4 g",
+    "Fat": "19 g",
+    "Saturated Fat": "12 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "30 mg"
+   },
+   "storageInstructions": "*Store and transport at -18°C or below"
+  }
+ },
+ {
+  "title": "Paneer Steak",
+  "handle": "paneer-steak",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "305",
+    "compare_at_price": "305",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218061_1-keventer-ready-to-cook-frozen-snack-paneer-steak.jpg"
+    },
+    "barcode": "8906015501421"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218061_1-keventer-ready-to-cook-frozen-snack-paneer-steak.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218061-2_1-keventer-ready-to-cook-frozen-snack-paneer-steak.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218061-3_1-keventer-ready-to-cook-frozen-snack-paneer-steak.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218061-4_1-keventer-ready-to-cook-frozen-snack-paneer-steak.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40218061-5_1-keventer-ready-to-cook-frozen-snack-paneer-steak.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer's ready-to-cook frozen paneer steak is a delicious and convenient snack. Made with high-quality paneer, it is flavoured with a blend of spices and herbs. The steak can be easily grilled or pan-fried for a quick and tasty meal. Packed with 15 g of protein per 100 g, it is a nutritious option for those seeking a satisfying savoury treat.",
+   "ingredients": "Paneer (83%), Refined Sunflower Oil, Jalapeno, Garlic, Coriander, Salt, Spices",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "430 kcal",
+    "Protein": "15.0g",
+    "Carbohydrate": "6.0g",
+    "of which Sugar": "1.0g",
+    "Fat": "40.0g",
+    "Saturated Fat": "13.0g",
+    "Trans Fat": "<0.1g",
+    "Dietary Fibre": "2.0g"
+   },
+   "storageInstructions": "*Store at -18°C or below"
+  }
+ },
+ {
+  "title": "Smoked Chicken Franks",
+  "handle": "smoked-chicken-franks",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160693_2-keventer-smoked-franks.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "385",
+    "compare_at_price": "385",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160692_2-keventer-smoked-franks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160693_2-keventer-smoked-franks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160693-2_2-keventer-smoked-franks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160693-3_2-keventer-smoked-franks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160693-4_2-keventer-smoked-franks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160693-5_2-keventer-smoked-franks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160692_2-keventer-smoked-franks.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Smoked Franks are frozen chicken sausages made with 62% chicken, water, corn starch, and spices. They are best stored in the refrigerator at 0-6°C. Cooking instructions include grilling, pan-frying, or boiling. The product contains no artificial preservatives and is rich in protein.",
+   "ingredients": "Chicken (62%), Water, Corn Starch, Soy Protein Isolate, Modified Starch (INS-1420), Edible Iodised Salt, Acidity Regulator (Phosphate INS 451(I)), Spices and Condiments, Flavour Enhancer (INS-627 & INS-631), Dehydrated Garlic, Dehydrated Onion, Beet and Fruit Extract Powder, Dextrose, Anti Oxidant (INS-316), Preservative (INS250) and Anti Caking Agent (INS 500(ii))",
+   "nutritionalInfo": {
+    "Energy": "141.1 kcal",
+    "Fat": "6.7 g",
+    "Protein": "11.6 g",
+    "Carbohydrate": "8.7 g",
+    "Sugar": "0.0 g",
+    "Saturated Fatty Acids": "2.5 g",
+    "Trans Fatty Acids": "0.03 g"
+   },
+   "storageInstructions": "*Store in refrigerator at 0-6°c"
+  }
+ },
+ {
+  "title": "Spicy Chicken Cocktail Sausages",
+  "handle": "spicy-chicken-cocktail-sausages",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347238_2-keventer-spicy-chicken-cocktail-sausages.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347238_2-keventer-spicy-chicken-cocktail-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347238-2_2-keventer-spicy-chicken-cocktail-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347238-3_2-keventer-spicy-chicken-cocktail-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347238-4_2-keventer-spicy-chicken-cocktail-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347238-5_2-keventer-spicy-chicken-cocktail-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347238-6_2-keventer-spicy-chicken-cocktail-sausages.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Keventer Spicy Chicken Cocktail Sausages bring bold flavour to every bite. Crafted for those who enjoy a fiery twist, these sausages are perfect for quick snacks, party platters, or delicious appetisers. Enjoy them pan-fried, grilled, or straight from the pack. With their rich taste and juicy texture, they’re a sure crowd-pleaser at any gathering.",
+   "manufacturerName": "Keventer Agro Limited",
+   "fssaiLicense": "10012031000034",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Spicy Smoked Chicken Momo",
+  "handle": "spicy-smoked-chicken-momo",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8 pcs",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347233_2-keventer-spicy-smoked-chicken-momo.jpg"
+    },
+    "barcode": "8906015502121"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347233_2-keventer-spicy-smoked-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347233-2_2-keventer-spicy-smoked-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347233-3_2-keventer-spicy-smoked-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347233-4_2-keventer-spicy-smoked-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347233-5_2-keventer-spicy-smoked-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347233-6_2-keventer-spicy-smoked-chicken-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347233-7_2-keventer-spicy-smoked-chicken-momo.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Experience bold flavours with Keventer Spicy Smoked Chicken Momo. Each dumpling is filled with tender smoked chicken, expertly seasoned with aromatic spices for a fiery kick. Steamed to perfection, these momos offer a deliciously smoky twist on a classic favourite. Ideal as a quick snack or party treat, they bring warmth and zest to every bite.",
+   "manufacturerName": "Keventer Agro Limited",
+   "fssaiLicense": "10012031000034",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Spicy Smoked Veg Momo",
+  "handle": "spicy-smoked-veg-momo",
+  "vendor": "Keventer",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8 pcs",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347235_2-keventer-spicy-smoked-veg-momo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347235_2-keventer-spicy-smoked-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347235-2_2-keventer-spicy-smoked-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347235-3_2-keventer-spicy-smoked-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347235-4_2-keventer-spicy-smoked-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347235-5_2-keventer-spicy-smoked-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347235-6_2-keventer-spicy-smoked-veg-momo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347235-7_2-keventer-spicy-smoked-veg-momo.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Keventer Spicy Smoked Veg Momo brings bold flavours to your plate with a delicious blend of seasoned vegetables wrapped in a soft, smoky dumpling. Each bite offers a perfect balance of spice and aroma, crafted for those who crave something exciting. Ideal as a snack or appetiser, it delivers a street-style experience right at home.",
+   "manufacturerName": "Keventer Agro Limited",
+   "fssaiLicense": "10012031000034",
+   "countryOfOrigin": "India"
+  }
+ }
+]
