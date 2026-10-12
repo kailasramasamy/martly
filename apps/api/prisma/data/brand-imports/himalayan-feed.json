@@ -69,7 +69,20 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/280459-8_6-himalayan-natural-mineral-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Pure, unprocessed, and untouched, Himalayan Natural Mineral Water originates in the upper reaches of the Himalayan mountains. Every drop travels through layers of rock, sand, and silt for around 20 years and is then packed for consumption. It is naturally enriched with minerals such as magnesium, sodium, and calcium, and has the perfect pH balance. Himalayan's unique mineral composition gives it a characteristic taste and is packaged in a premium bottle. This makes it a great meal accompaniment and instantly elevates the dining experience. People who appreciate the finer things in life enjoy Himalayan with their meals at fine restaurants and at home. It is one of the most consumed natural mineral waters in the finest homes across the country. Experience the taste of Raw, Rare, and Remarkable with Himalayan.",
+   "nutritionalInfo": {
+    "Calcium": "6.2 mg/100 ml",
+    "Bicarbonate": "25.6 mg/100 ml",
+    "Magnesium": "1.6 mg/100 ml",
+    "Sodium": "1.6 mg/100 ml",
+    "Nitrates": "<1 mg/100 ml",
+    "pH": "8.0",
+    "Total Dissolved Solids": "280-320 mg/L"
+   },
+   "storageInstructions": "* Keep in a cool place\n* Avoid freezing\n* Consume within a day once opened"
+  }
  },
  {
   "title": "Sparkling Water",
@@ -117,6 +130,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40104659_7-himalayan-sparkling-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "A crisp and refreshing sparkling mineral water sourced from natural springs and lightly carbonated for a clean, balanced taste. Ideal for everyday hydration or as a refreshing alternative to soft drinks.",
+   "ingredients": "Natural Mineral Water, Carbon Dioxide",
+   "manufacturerName": "Tata Consumer Products Limited",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  }
 ]
