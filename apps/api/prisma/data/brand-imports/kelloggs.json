@@ -1,0 +1,382 @@
+{
+  "brand": "Kellogg's",
+  "manufacturer": "Kellogg India Pvt Ltd",
+  "feed": "kelloggs-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kelloggs/logo-23e04405.png",
+  "themeColor": "#D20A35",
+  "themeColorSecondary": "#FFC20E",
+  "namePrefix": "Kellogg's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Corn\\ Flakes\\ Original$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Real\\ Honey\\ Corn\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Real\\ Strawberry\\ Puree\\ Corn\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Real\\ Almonds\\ \\&\\ Honey\\ Corn\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Real\\ Kesar\\ Pista\\ Badam\\ Corn\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Plus\\ Corn\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^All\\ Bran\\ Wheat\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Special\\ K\\ Original$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Special\\ K\\ Multigrain\\ \\&\\ Honey$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Special\\ K\\ Protein\\ \\&\\ Fibre$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Chocos\\ \\-\\ Crunchy\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Chocos\\ Magic\\ Hearts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Chocos\\ Webs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Chocos\\ Moons\\ \\&\\ Stars$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Chocos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Chocos\\ Moons\\ \\&\\ Stars$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Chocos\\ Duet$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Chocos\\ Chhota\\ Laddoo$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Chocos\\ Fills\\ Choco\\ Vanilla$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Chocos\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Chocos\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Caramel\\ Chocos\\ Fills$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Hershey's\\ Chocos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Protein\\ Chocos$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Froot\\ Loops$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Muesli\\ Fruit,\\ Nut\\ \\&\\ Seeds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Muesli\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Muesli\\ Nuts\\ \\&\\ Seeds\\ Crunch$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Muesli\\ Fruit\\ Magic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Muesli\\ Nuts\\ Delight$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Muesli\\ 0%\\ Added\\ Sugar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Choco\\ Millet\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Millet\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Pro\\ Muesli\\ with\\ Plant\\ Protein$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Almond\\ Berry\\ Crumble\\ Granola$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Baked\\ Chocolate\\ Cookie\\ Crumble\\ Granola$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Granola\\ Chocolate\\ \\&\\ Almond$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Granola\\ Honey,\\ Almonds\\ \\&\\ Strawberries$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Heart\\ to\\ Heart\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^K\\-Energy\\ Bar\\ Berry\\ Yoghurty$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^K\\-Energy\\ Bar\\ Choco\\ Nutty$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^K\\-Energy\\ Bar\\ Protein\\ Almonds\\ \\&\\ Berries$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Upma\\ Nutty\\ Rava$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Upma\\ Veggie\\ Masala\\ Burst$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    }
+  ]
+}
