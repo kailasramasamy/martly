@@ -39,7 +39,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003875_1-narasus-coffee-udhayam-blend-of-coffee-chicory.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasus Udhayam - Blend of Coffee and Chicory is a captivating fusion of the finest Arabica and Robusta coffee beans, meticulously selected and expertly roasted to unlock their full-bodied richness. This 100% coffee, chicory coffee powder offers an explosion of flavour in every sip, with pungent and intoxicating notes that tantalize the senses. Crafted with care, the blend delivers a perfect balance of colour, flavour and strength, making it an ideal choice for coffee connoisseurs. Consistently ground to perfection, Narasu's Udhayam Filter Coffee ensures a smooth and satisfying experience, cup after cup. Indulge in the rich aroma and velvety texture of this exceptional coffee, perfect for starting your day or savouring a moment of relaxation.",
+   "ingredients": "Coffee 80% Chicory 20%.",
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pure Filter Coffee",
@@ -81,7 +87,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003714_1-narasus-coffee-pure.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, aromatic flavours of Narasu's Pure Filter Coffee, a quintessential South Indian delight crafted with the finest quality coffee beans and perfected through generations of expertise. This meticulously blended coffee boasts a full-bodied flavour profile with hints of caramel and chocolate, guaranteed to awaken your senses and brighten your day. Narasu's Pure Filter Coffee is a sugary milky coffee prepared from dark roasted coffee beans and chicory, including the preferred Peaberry as well as Malabar, Arabica and Robusta varieties. Expertly roasted and ground to perfection, these coffee beans undergo a meticulous filtration process to ensure a smooth, satisfying brew every time. Whether enjoyed in the comfort of your own home or savoured at your local hotel, restaurant or dhaba, Narasu's Pure Filter Coffee promises a sensory journey like no other, delivering an unparalleled taste and aroma that will delight even the most discerning coffee connoisseurs.",
+   "ingredients": "100% Pure Coffee",
+   "nutritionalInfo": {
+    "Nutrition per gram": "6ml",
+    "Serving Size": "100g",
+    "Protein": "0 g",
+    "Carbohydrates": "0 g",
+    "Fat": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "NARASUS",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dhivyam Premium Filter Coffee",
@@ -114,7 +135,20 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007742-4_6-narasus-coffee-dhivyam-premium-coarse-ground-filter-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "South Indian Coffee, also known as Filter Coffee is a sweet milky coffee made from dark roasted coffee beans (70%-80%) and chicory (20%-30%), especially popular in the southern states of Andhra Pradesh, Karnataka, Kerala and Tamil Nadu. The most commonly used coffee beans are Peaberry (preferred), Arabica, Malabar and Robusta grown in the hills of Kerala, Karnataka, Kodagu Chikkamagaluru and Tamil Nadu - Nilgiris District Yercaud Kodaikanal. Outside India, a coffee drink prepared using a filter may be known as Filter Coffee or as Drip Coffees the water passes through the grounds solely by gravity and not under pressure or in longer-term contact.",
+   "ingredients": "Dark roasted coffee beans(Peaberry (preferred), Arabica, Malabar and Robusta), Chicory",
+   "nutritionalInfo": {
+    "Nutrition per gram": "2g",
+    "Protein": "0 g",
+    "Carbohydrates": "0 g",
+    "Fat": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Anandham Delite Hotel Blend Coffee",
@@ -153,7 +187,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113208-6_3-narasus-anandham-delite-hotel-blend.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a hot cup of Coffee made from the Narasu's Coffee in the morning or evening along with your friends and family. The delicious taste and aroma of the fresh Coffee beans produced from the gardens of South India deliver an instant energy and freshness. It tastes better when consumed along with some savouries or cookies.",
+   "ingredients": "Coffee Beans & Chicory, Coffee:60% Chicory: 40%",
+   "storageInstructions": "*Store in a cool, dry place",
+   "usageInstructions": "Take 1 Teaspoon Of Narasus Pure Instant In A Cup,Add Sugar If Necessary,Dilute With Boiling Water,Add Hot Water & Milk As Reqierd.",
+   "manufacturerName": "NARASUS",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Insta Strong Instant Coffee",
@@ -204,7 +246,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003877_2-narasus-coffee-insta-strong-coffee-blended-with-chicory.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasus Insta Strong Coffee blended with Chicory creates a bittersweet, complex flavour in a smooth, and rich. Savour the fragile combination of fine coffee beans and high-quality chicory instantly. It suggests a great cup of aromatic coffee that creates those moments of genuine warmth and cheerfulness even more special.",
+   "ingredients": "Coffee Beans & Chicory.",
+   "usageInstructions": "Take 2.5 gms of Narasu's Insta Strong in a Mug, add sugar if necessary.\nDilute with boiling water, add hot water/milk as required, stir gently.",
+   "storageInstructions": "Keep the container airtight.",
+   "manufacturerName": "NARASUS",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Insta Strong Instant Coffee Pouch",
@@ -234,7 +284,18 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003884-3_7-narasus-coffee-instant-insta-strong.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasu's Insta Strong Instant Coffee is a delightful beverage that brings the rich, aromatic flavour of freshly brewed coffee to your fingertips. Crafted from carefully selected coffee beans, this instant coffee offers a bold and intense taste that is sure to energise and delight. With its 70% coffee and 30% chicory blend, it delivers a perfect caffeine boost, bursting with delightful aromas and flavours. Enjoy the convenience of a quick and easy coffee experience, perfect for those moments when you need a genuine warmth and a touch of happiness. Indulge in the smooth, velvety texture and the captivating aroma of this instant coffee, which is sure to elevate your coffee-drinking experience.",
+   "ingredients": "Coffee Beans & Chicory",
+   "nutritionalInfo": {
+    "Serving Size": "1 teaspoon",
+    "Nutrition per gram": "50g"
+   },
+   "storageInstructions": "*Transfer contents into an air-tight container\n*Store in a cool, dry & hygienic place",
+   "manufacturerName": "NARASUS",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pure Instant Coffee",
@@ -273,7 +334,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003878-6_4-narasus-pure-instant-coffee-granulated.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, aromatic experience of Narasu's Pure Instant Coffee. Crafted with a delightful blend of premium Robusta beans and chicory, this instant coffee offers an unparalleled taste and satisfaction. Whether you're starting your day or seeking a midday pick-me-up, this distinctive blend delivers a pleasurable and exclusive coffee experience. Each granule encapsulates the essence of Narasu's commitment to exceptional quality, allowing you to enjoy the convenience of instant coffee without compromising on flavour. Awaken your senses with the intense taste and captivating aroma of this medium-dark roasted coffee, and let it inspire you to seize new opportunities throughout your day.",
+   "ingredients": "Coffee Beans.",
+   "storageInstructions": "*Keep the container airtight",
+   "usageInstructions": "Take 3 gms of Narasu's Instant in a Mug\nAdd Sugar if necessary\nDilute with boiling water, add hot water/Milk as required, Stir gently.",
+   "manufacturerName": "NARASUS",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Extra Strong Instant Coffee",
@@ -306,7 +375,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113209-4_1-narasus-instant-coffee-extra-strong.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a hot cup of coffee made from Narasu's coffee in the morning or evening along with your friends and family. The delicious taste and aroma of the fresh coffee beans produced from the gardens of South India deliver instant energy and freshness. It tastes better when consumed along with some savouries or cookies. Narasu's Instant Coffee is a beverage derived from brewed coffee beans. Through various manufacturing processes, the coffee is dehydrated into the form of powder or granules. It offers a great cup of aromatic coffee that makes those moments of genuine warmth, strong and happiness even more special. Instant Coffee -Chicory mixture made from blends of coffee and chicory. Coffee-60% and Chicory-40%.",
+   "ingredients": "Coffee Beans & Chicory, Coffee:60% Chicory: 40%",
+   "storageInstructions": "*Keep the container airtight",
+   "usageInstructions": "Take 1 teaspoon of narasus pure instant in a cup\nAdd sugar if necessary\nDilute with boiling water\nAdd hot water & milk as required.",
+   "manufacturerName": "NARASUS",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Coffee Premix",
@@ -322,7 +399,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40003505_1-narasus-instant-coffee-premix.jpg"
-    }
+    },
+    "barcode": "8906005665850"
    }
   ],
   "images": [
@@ -342,7 +420,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003505-5_1-narasus-instant-coffee-premix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasus Instant Coffee Pre-Mix is made from the finest ingredients and hygienically produced. It offers a rich flavour and energizing aroma that will leave you with an exclusive & delightful experience. Narasu's is one of the oldest reputed and traditional companies established way back in the year 1926 with a vision of becoming the most preferred household brand. Narasu's is one of India's best coffee companies and its quality of taste is being talked about.",
+   "ingredients": "Chicory Mixture, Sugar, Dairy Whitener.",
+   "storageInstructions": "Keep the container airtight.",
+   "usageInstructions": "Empty the contents into the cup. Just add hot water and your coffee is ready.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Besh Besh Sukku Coffee",
@@ -358,7 +443,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40135446_1-narasus-sukku-coffee.jpg"
-    }
+    },
+    "barcode": "8906005666574"
    },
    {
     "title": "200g",
@@ -381,7 +467,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135447_1-narasus-sukku-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasus Sukku coffee aids a lot of medicinal value. Sukku, which means dry ginger, helps in digestion and headache. It is a great remedy for a bad cough and cold. Coffee is one of the most popular drinks in the world and can be prepared and presented in a variety of ways (e.g., espresso, French press, cafe latte, etc.). It is usually served hot, although iced coffee is a popular alternative.",
+   "ingredients": "Dry Ginger, Pepper, Coriander, Thippili, Chitharathai, Adhimaduram, Nannari, Palm Jaggery, Cane Sugar.",
+   "usageInstructions": "Mix one teaspoon of Narasus Sukku Powder in 100 ml of water or milk. You can add palm jaggery for a more sweeter taste.",
+   "manufacturerName": "31-B",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dhall Rice Powder",
@@ -408,7 +501,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114824-2_1-narasus-dhall-rice-powder.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Ready To Mix Its Made With Real Dhall Added Some Salt Increase The Taste Rice Mix",
+   "ingredients": "Fried Gram Dhall, Salt Garlic, Chillies, Refined Ground Nut Oil, Mustard, Urid Dhall, Cury Leaves And Asafetida.",
+   "usageInstructions": "Take Some Hot Cooked Rice, Add Little Ghee Or Gingelly Oiland Required Quantity Of Narasus Dhall Rice Powder. Mix Well For Good Taste. It Can Be Used For Idlies, Dosai, Chappathi &Poori Also.",
+   "manufacturerName": "SRI NARASU'S COFFEE COMPANY LIMITED",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Garlic Rice Powder",
@@ -435,7 +535,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114823-2_1-narasus-garlic-rice-powder.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasus Garlic Rice Powder is a ready-to-mix product made with real garlic and added salt to enhance the taste. The rice mix ingredients include fried gram dhall, salt, garlic, chillies, refined ground nut oil, cumin, mustard, urid dhall, curry leaves, and asafoetida.",
+   "ingredients": "Fried Gram Dhall, Salt, Garlic, Chillies, Refined Ground Nut Oil, Cumin, Mustard, Urid Dhall, Curry Leaves, Asafoetida",
+   "usageInstructions": "Take Some Hot Cooked Rice, Add Little Ghee Or Gingelly Oiland Required Quantity Of Narasus Garlic Powder. Mix Well For Good Taste. It Can Be Used For Idlies, Dosai, Chappathi &Poori Also.",
+   "storageInstructions": "Store in an airtight container after opening\nKeep away from direct sunlight and moisture",
+   "manufacturerName": "SRI NARASU'S COFFEE COMPANY LIMITED",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Idly Chilli Powder",
@@ -462,7 +570,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114825-2_1-narasus-idly-chilli-powder.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasus Idly Chilli Powder is a ready-to-mix product that contains a blend of basin dhall, urid dhall, gram flour, salt, chillies, curry leaves, cumin, mustard, and asafetida, along with refined groundnut oil. It is designed to be mixed with ghee or gingelly oil and served with hot idlies, dosai, poori, and chappathi.",
+   "ingredients": "Basin Dhall, Urid Dhall, Gram Flour, Salt, Chillies, Curry Leaves, Cumin, Mustard, Asafetida And Refined Groundnut Oil",
+   "usageInstructions": "Mix Narasus Idly Chilli Powder With Some Ghee, Gingelly Oil And Serve With Hot Idlies, Dosai, Poori & Chappathi Etc.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "SRI NARASU'S COFFEE COMPANY LIMITED",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Puliyodharai Powder",
@@ -489,7 +605,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114827-2_1-narasus-puliyodharai-powder.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Ready To Mix Added Tamarind, Peanuts, Bengal Gram, Black Gram, Chilli, Cumin, Coriander, Asafoetida, Groundnutoil, Sesame Seed And Salt.",
+   "ingredients": "Tamarind, Peanuts, Bengal Gram, Black Gram, Chilli, Cumin, Coriander, Asafoetida, Groundnutoil, Sesame Seed And Salt.",
+   "usageInstructions": "Take Some Hot Cooked Rice And Groundnut Or Gingelly Oil And Necessary Quantity Of Narasus Curry Tamarind Powder. Mix Well For A Good Taste.",
+   "manufacturerName": "SRI NARASU'S COFFEE COMPANY LIMITED",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wheat Flour",
@@ -505,7 +628,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40224790_1-narasus-wheat-flouratta-for-soft-dough.jpg"
-    }
+    },
+    "barcode": "8906005970244"
    }
   ],
   "images": [
@@ -525,7 +649,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224790-5_1-narasus-wheat-flouratta-for-soft-dough.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasu's Atta is the finest atta that is produced from selected, grade and cleaned wheat. It is manufactured from golden wheat grains, it's hygienically milled in a state-of-art roller flour mill which preserves its colour, taste and nutrition. It is nutritious, healthy, filled with fibre that promotes a healthy digestive system and iron that strengthens the body. You can make soft dough for perfect Chapatis, Rotis, Puris and more.\n1. Manufactured from finest golden wheat grains\n2. Made extremely hygienically\n3. It is nutritious, healthy, filled with fibre that promotes a healthy digestive system",
+   "ingredients": "Wheat Flour (atta)",
+   "storageInstructions": "1. You can use it to make bread, baked goods, pancakes, and more.\n2. Take the preferred amount of atta according to the servings.\n3. Add the preferred amount of water to make the dough.\n4. Make beautiful fulka rotis from it & serve it hot with dal & sabji.\n5. Keep it in cool & dry place & always in air-tight condition.",
+   "manufacturerName": "Narasu's Saarathy Enterprises Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12416018000078"
+  }
  },
  {
   "title": "Whole Wheat Atta - Chakki Fresh",
@@ -541,7 +673,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40224791_1-narasus-whole-wheat-flouratta-chakki-fresh.jpg"
-    }
+    },
+    "barcode": "8906005970442"
    }
   ],
   "images": [
@@ -561,6 +694,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224791-5_1-narasus-whole-wheat-flouratta-chakki-fresh.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Narasu’s Whole Wheat Atta is superior atta made from the finest golden wheat. The selection process is stringent and only the best is chosen. This is cleaned and milled using a state-of-art Chakki process that preserves its colour, taste and nutrition.\n1. Manufactured from finest golden wheat grains\n2. Made extremely hygienically\n3. It is nutritious, healthy, filled with fibre that promotes a healthy digestive system",
+   "ingredients": "Whole Wheat Flour (Atta)",
+   "storageInstructions": "1. You can use it to make bread, baked goods, pancakes, and more.\n2. Take the preferred amount of atta according to the servings.\n3. Add the preferred amount of water to make the dough.\n4. Make beautiful fulka rotis from it & serve it hot with dal & sabji.\n5. Keep it in a cool & dry place & always in air-tight condition",
+   "manufacturerName": "Narasu's Saarathy Enterprises Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12416018000078"
+  }
  }
 ]
