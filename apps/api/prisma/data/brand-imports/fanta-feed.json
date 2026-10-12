@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/251019_8-fanta-soft-drink-orange-flavoured.jpg"
-    }
+    },
+    "barcode": "8901764022272"
    },
    {
     "title": "250ml",
@@ -123,7 +124,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/251019-8_2-fanta-soft-drink-orange-flavoured.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Fanta is India’s favourite playful orange-flavoured soft drink, loved for its irresistible taste, vibrant colour, and sparkling fizz. Since launching in India in 1993, its signature orangey blast and tingling carbonation have turned everyday moments into fun-filled “Fanta Mangta” experiences, whether with friends, snacks, or a quick break. Fanta is best enjoyed chilled.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulator (330), Stabilizers (414, 445), Preservative (211), Colour (110), Flavours (Natural & Nature-Identical Flavoring Substances)",
+   "nutritionalInfo": {
+    "per": "100ml",
+    "Serving Size": "200ml",
+    "Energy": "56 KCAL",
+    "Carbohydrate": "14 g",
+    "Total Sugars": "13.7 g",
+    "Added Sugars": "13.7 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "22.3 mg"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages PVT. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Apple Delite Soft Drink",
@@ -159,6 +177,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251621-5_1-fanta-apple-delite-natural-juice-tempting-taste-tingling-bubbles.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Fun, vibrant and bubbly – that’s what defines Fanta best! Fanta lets you make the most of a moment with the tempting taste and its tingling bubbles. Earlier it was available in orange flavour only but now, here enters a new fantastic and tempting Fanta in Apple flavour too. This vibrant soft drink can uplift feelings and help free your spirit, encouraging you to indulge in and enjoy each moment to the fullest.",
+   "ingredients": "Carbonated Water, Sugar, Apple Juice(10.5%) (Reconstituted from Apple Juice Concentrate), Acidity Regulator (296), Stabilizer (452(i)), Preservatives (202,211), Colour (150d), Apple Flavour (Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Energy": "48 kcal,",
+    "Carbohydrate": "12.1g,",
+    "Sugar": "12g,",
+    "Protein": "0g,",
+    "Fat": "0g,",
+    "Sodium": "8.5mg"
+   },
+   "usageInstructions": "1. It can be served with snacks.\n2. Also, an ideal gifting option.",
+   "manufacturerName": "Coca-Cola India Pvt Ltd. Survey No. 284 P",
+   "countryOfOrigin": "India"
+  }
  }
 ]
