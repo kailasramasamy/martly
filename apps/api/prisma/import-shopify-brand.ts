@@ -42,6 +42,7 @@ const APPLY = process.argv.includes("--apply");
 const REFRESH_IMAGES = process.argv.includes("--refresh-images");
 const DATA_DIR = new URL("./data/brand-imports/", import.meta.url);
 const MAX_IMAGES = 8;
+const IMAGE_CONCURRENCY = 4; // pack shots processed at once per product
 
 // Larger pack priced below a smaller one (per unit family) usually means a pouch vs jar, or a data error
 function priceAnomalies(variants: PackVariant[]): string[] {
@@ -148,13 +149,26 @@ async function applyBrandLogo(brand: { id: string; imageUrl: string | null }, lo
   console.log(`  logo: ${imageUrl}`);
 }
 
+// Runs fn over items with at most `limit` in flight, keeping results in item order
+async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T, index: number) => Promise<R>): Promise<R[]> {
+  const results = new Array<R>(items.length);
+  let next = 0;
+  const worker = async () => {
+    while (next < items.length) {
+      const i = next++;
+      results[i] = await fn(items[i], i);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
+}
+
 async function uploadProductImages(site: ShopifyProduct, brandSlug: string, slug: string): Promise<string[]> {
-  const urls: string[] = [];
-  for (const [i, img] of site.images.slice(0, MAX_IMAGES).entries()) {
+  const urls = await mapLimit(site.images.slice(0, MAX_IMAGES), IMAGE_CONCURRENCY, async (img, i) => {
     const webp = await toWebp(`${img.src}${img.src.includes("?") ? "&" : "?"}width=2000`, 800);
-    if (webp) urls.push(await uploadImage(`catalog/brands/${brandSlug}/${slug}-${i + 1}`, webp));
-  }
-  return urls;
+    return webp ? uploadImage(`catalog/brands/${brandSlug}/${slug}-${i + 1}`, webp) : null;
+  });
+  return urls.filter((u): u is string => u !== null);
 }
 
 // A size's own pack shot, uploaded once (again with --refresh-images); undefined leaves the variant's image as is.
@@ -192,10 +206,13 @@ async function syncVariants(productId: string, variants: PackVariant[], imageKey
     where: { productId },
     select: { id: true, name: true, imageUrl: true, barcode: true, _count: { select: { storeProducts: true, orderItems: true } } },
   });
-  for (const v of variants) {
+  // Pack shots download and upload in parallel; the row writes below stay sequential
+  const images = await mapLimit(variants, IMAGE_CONCURRENCY,
+    (v) => variantImage(v, existing.find((e) => e.name === v.name)?.imageUrl, imageKeyBase));
+  for (const [i, v] of variants.entries()) {
     const match = existing.find((e) => e.name === v.name);
     const data = {
-      unitType: v.unitType, unitValue: v.unitValue, mrp: v.mrp, imageUrl: await variantImage(v, match?.imageUrl, imageKeyBase),
+      unitType: v.unitType, unitValue: v.unitValue, mrp: v.mrp, imageUrl: images[i],
       barcode: await freeBarcode(v.barcode, match?.barcode),
     };
     if (match) await prisma.productVariant.update({ where: { id: match.id }, data });
