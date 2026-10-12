@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265686_9-kinley-drinking-water-with-added-minerals.jpg"
-    }
+    },
+    "barcode": "8901764082405"
    },
    {
     "title": "2L",
@@ -60,7 +61,21 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365318_2-kinley-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Kinley Packaged Drinking Water is one of India's most trusted hydration brands. Every bottle goes through a rigorous 10-Step Purification Process, living up to its promise of Trust in Every Drop, trusted by MS Dhoni. Safe, great-tasting water enriched with added minerals of Magnesium &Calcium - BIS/ISI certified (IS 14543). Your perfect hydration partner for travel, commute, the gym or at home.",
+   "nutritionalInfo": {
+    "Energy": "0 kcal",
+    "Carbohydrate": "0g",
+    "Sugar": "0g",
+    "Protein": "0g",
+    "Fat": "0g",
+    "Sodium": "0.3mg",
+    "Magnesium": "0.1mg"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Club Soda",
@@ -76,7 +91,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265680_14-kinley-sparkling-water-club-soda.jpg"
-    }
+    },
+    "barcode": "8901764072277"
    }
   ],
   "images": [
@@ -102,7 +118,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265680-7_2-kinley-sparkling-water-club-soda.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Kinley Soda — Hits Hard! Pure, crisp carbonation in a bottle, Kinley Soda is a go-to companion for every drink and can be enjoyed standalone. Its strong fizz makes it the perfect mixer for spirits, fresh juices, lemonades and syrups, letting your drink's star ingredients take centre stage.",
+   "ingredients": "Carbonated Water, Salts Of Magnesium And Sodium.",
+   "nutritionalInfo": {
+    "per": "100ml",
+    "Serving Size": "200 ml",
+    "Energy": "0 kcal",
+    "Carbohydrate": "0 g",
+    "Total sugars": "0 g",
+    "Added sugars": "0 g",
+    "Total fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "2.2 mg"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Soda Extra Punch",
@@ -118,7 +151,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/288068_6-kinley-sparkling-water-club-soda.jpg"
-    }
+    },
+    "barcode": "8901764072604"
    }
   ],
   "images": [
@@ -141,6 +175,19 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/288068-6_1-kinley-sparkling-water-club-soda.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Kinley sparkling water is the go-to choice. Launched in 2002, the bubbly zing of Kinley soda makes a perfect mixer for your mocktails! This Coca-Cola product goes through an intensive 10-step filtration method before reaching you. The consistency and purity of the carbonated water is maintained using various procedures. Also containing added minerals, Kinley soda water is the one to reckon with.\nKinley Soda is a neutral-flavoured soda which blends well with all kinds of drinks. It has been quite a favourite among people who want to experiment with their drinks. The bubbly zing of Kinley soda makes a perfect mixer for your mocktails!",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Energy": "0 KCAL",
+    "Sugar": "0g",
+    "Carbohydrate": "0g",
+    "Fat": "0g",
+    "Protein": "0g"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  }
 ]
