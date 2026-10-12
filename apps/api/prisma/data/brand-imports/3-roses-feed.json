@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/266535_4-3-roses-dust-tea.jpg"
-    }
+    },
+    "barcode": "8901030985607"
    },
    {
     "title": "100g",
@@ -78,7 +79,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/102875_5-3-roses-dust-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the perfect tea experience with Brooke Bond 3 Roses, a time-honoured brand that has been delighting tea lovers since 1869. Skillfully blended with the finest Assam leaves, this tea promises a rich, irresistible taste and a vibrant colour that will captivate your senses. Packed with natural flavonoids, each sip of 3 Roses tea helps improve blood circulation and enhance your overall immunity, making it a truly healthy and rejuvenating beverage. Expertly crafted through a blend of tradition and innovation, Brooke Bond 3 Roses delivers a superior taste experience that will have you coming back for more. Indulge in the perfect cup of tea, with the perfect colour, taste, and strength, and let Brooke Bond 3 Roses transform your tea-drinking experience.",
+   "ingredients": "Tea",
+   "storageInstructions": "*Store the tea in a dry, airtight container in a cool, dry place after opening the pack",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Top Star Tea",
@@ -141,7 +150,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002111_12-3-roses-top-star.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Brooke Bond 3 Roses Topstar Dust Tea is crafted to deliver the Perfect Colour, Perfect Taste, and Perfect Strength, the signature promise that has made it the No.1 tea brand in South India. Expertly blended using the finest quality Assam tea leaves, every batch is curated by master tasters at the Brooke Bond Tea Excellence Centre, where thousands of teas are evaluated, graded, and harmoniously combined to achieve 3 Roses Topstar Dust Tea's perfect balance. This meticulous process ensures consistent perfection in every cup—rich in flavour, vibrant in colour, and strong in taste.\nRooted in a legacy of trust since 1869, 3 Roses Topstar Dust Tea is more than a blend; it is a symbol of warmth and togetherness. Its deep, comforting aroma and flavourful taste make it an integral part of everyday moments—from early-morning rituals to relaxed evening conversations. Designed especially to suit South Indian preferences for a strong, quick-brewing tea, 3 Roses Topstar Dust Tea brings families together, fostering connections with every sip.\nWhether you enjoy it plain, with milk, or as part of your favourite chai recipe, Brooke Bond 3 Roses Topstar Dust tea powder delivers a consistently satisfying cup that elevates ordinary moments into cherished ones. Experience why generations have chosen 3 Roses Topstar Dust Tea as their perfect daily tea.\nBuy now to Savour and enjoy a perfect cup of tea.",
+   "manufacturerName": "(HF) Hindustan Foods Limited",
+   "fssaiLicense": "10018042004059",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Care Tea",
@@ -204,7 +219,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160308_6-3-roses-natural-care-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "3 Roses Natural Care Tea comes with the quality and trust of Brooke Bond, which has been providing the best quality to consumers for 150 years. 3 Roses Natural Care is made with the goodness of 5 Natural Ingredients- Ashwagandha, Licorice, Ginger, Cardamom and Tulsi.\nIn Ayurvedic texts each of these 5 ingredients have unique benefits. Ashwagandha helps cope with stress, Licorice helps soothe the throat, ginger helps protect from cough and cold, cardamom helps in digestion and tulsi helps build body resistance. All these 5 rich ingredients come together in every sip of 3 Roses Natural Care tea.\nWith 3 Roses Natural Care you don’t have to choose between a tea that tastes good and a tea that’s good for you. Its bold masala flavor and rich aroma ensure every sip is a delightful experience, blending taste and health benefits seamlessly.\n3 Roses Natural Care has made regular tea even better by adding the goodness of 5 ayurvedic ingredients. Rooted in a legacy that has delighted generations of tea lovers, switch to 3 Roses Natural Care and take the first step towards a fresh change in your lifestyle & make 3 Roses Natural Care the delicious part of your daily routine today.",
+   "ingredients": "Tea, Natural Flavouring Substances.\nFlavour:\nCardamom: 1.5% W/W\nGinger: 1.5% W/W\nMulethi (Liquorice): 0.5% W/W\nAshwagandha: 0.5% W/W\nTulsi: 0.5% W/W",
+   "manufacturerName": "(J) HUL",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Elaichi Tea",
@@ -220,7 +242,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506_1-3-roses-elaichi-flavoured-tea.jpg"
-    }
+    },
+    "barcode": "8909106079533"
    },
    {
     "title": "500g",
@@ -258,6 +281,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367506-8_1-3-roses-elaichi-flavoured-tea.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Introducing New 3 Roses Elaichi. 3 Roses Elaichi Tea is crafted to elevate your tea experience—it delivers heavenly flavour through the richness of real, premium quality elaichi.\nThe blend is made with selected 3 Roses tea leaves from Assam that are known for brewing Perfect colour, taste, and strength in every cup. To this, crushed Elaichi is added sourced from high quality green cardamom pods that are prized for their sweet, floral aroma and cooling flavour.\nWhether enjoyed with milk or plain, it brews into a fragrant cup that refreshes the senses and elevates your daily tea ritual. A perfect balance of strong tea and premium elaichi makes every cup truly indulgent.\nTo preserve this rich aroma, the blend comes in a specially designed Aroma Lock Jar. This jar keeps the elaichi freshness sealed in, ensuring every cup smells as pure and inviting as the first time you open it.\nElaichi is known as the queen of spices, treasured for its ability to make everyday tea feel special. Whether enjoyed on a rainy day, served to guests or sipped during quiet moments of unwinding, its warm and inviting fragrance will leave you feeling relaxed yet refreshed.\nTry New 3 Roses Elaichi - The Perfect Colour, Taste and Strength of 3 Roses now with the heavenly flavour of real Elaichi.",
+   "ingredients": "Tea, Natural Flavouring Substances (2%) (Cardamom Husk And Seeds), Natural Flavour.",
+   "manufacturerName": "\"Manufactured by - Hindustan Unilever Limited",
+   "fssaiLicense": "10012031000165",
+   "countryOfOrigin": "India"
+  }
  }
 ]
