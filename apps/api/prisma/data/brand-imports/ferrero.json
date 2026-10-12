@@ -1,0 +1,72 @@
+{
+  "brand": "Ferrero",
+  "manufacturer": "Ferrero India Pvt Ltd",
+  "feed": "ferrero-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ferrero/logo-a3dbf55c.png",
+  "themeColor": "#5B2C1E",
+  "themeColorSecondary": "#D4AF37",
+  "namePrefix": "Ferrero ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Ferrero Rocher Chocolates Gift Pack": "Rocher Gift Pack"
+  },
+  "rules": [
+    {
+      "match": "^Rocher\\ Gift\\ Pack$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Collection\\ Assorted\\ Chocolates$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Rocher\\ Moments\\ Chocolates$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Rocher\\ Original\\ Milk\\ Chocolate\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Rocher\\ Dark\\ 55%\\ Hazelnut\\ Chocolate\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Rocher\\ 70%\\ Cocoa\\ Hazelnut\\ Dark\\ Chocolate\\ Bar$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Rocher\\ Golden\\ Diya\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}

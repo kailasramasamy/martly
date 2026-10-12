@@ -1,0 +1,254 @@
+{
+  "brand": "Lindt",
+  "manufacturer": "Lindt & Sprüngli",
+  "feed": "lindt-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lindt/logo-203583f1.png",
+  "themeColor": "#B08D57",
+  "themeColorSecondary": "#C8102E",
+  "namePrefix": "Lindt ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Excellence\\ 70%\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ 78%\\ Cocoa\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ 85%\\ Cocoa\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ 90%\\ Cocoa\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Caramel\\ with\\ Sea\\ Salt\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Chilli\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Intense\\ Orange\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Mint\\ Intense\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Fleur\\ de\\ Sel\\ Feinherb\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Extra\\ Creamy\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Les\\ Grandes\\ Milk\\ Chocolate\\ 34%\\ Hazelnuts$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Les\\ Grandes\\ Dark\\ Chocolate\\ 34%\\ Hazelnuts$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Milk\\ Chocolate\\ Truffles$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Assorted\\ Chocolate\\ Truffles$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Extra\\ Dark\\ Chocolate\\ Truffles$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Hazelnut\\ Milk\\ Chocolate\\ Truffles$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ White\\ Chocolate\\ Truffles$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Strawberries\\ \\&\\ Cream\\ White\\ Chocolate\\ Truffles$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Singles\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Singles\\ 60%\\ Cocoa\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Singles\\ White\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Milk\\ Chocolate\\ Gift\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Assorted\\ Chocolates\\ Gift\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Lindor\\ Milk\\ Chocolate\\ Heart\\ Tin$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Swiss\\ Classic\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Swiss\\ Classic\\ Milk\\ Chocolate\\ Roasted\\ Almonds$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Swiss\\ Classic\\ Milk\\ Chocolate\\ Roasted\\ Hazelnuts$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Swiss\\ Premium\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Swiss\\ Premium\\ Milk\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Swiss\\ Premium\\ Napolitains\\ Assorted\\ Chocolates$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}
