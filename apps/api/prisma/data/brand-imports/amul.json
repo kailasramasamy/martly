@@ -7,7 +7,12 @@
   "themeColorSecondary": "#1E4FA3",
   "namePrefix": "Amul ",
   "foodType": "VEG",
-  "exclude": [],
+  "exclude": [
+    "Til Flower Honey",
+    "Dark Passion Choc Wafers",
+    "Kesariya Doodh Kesar Latte",
+    "Pro Chocolate Flavoured Milk"
+  ],
   "aliases": {
     "Amul Ice Cream - Vanilla Magic": "Vanilla Magic Ice Cream",
     "Amul Masti Masala Buttermilk (Chaas)": "Spiced Buttermilk",
