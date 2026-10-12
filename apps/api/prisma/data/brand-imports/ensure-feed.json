@@ -1,0 +1,913 @@
+[
+ {
+  "title": "Complete Nutrition Drink - Vanilla",
+  "handle": "complete-nutrition-drink-vanilla",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295_12-ensure-complete-balenced-vanilla.jpg"
+    }
+   },
+   {
+    "title": "375g",
+    "price": "745",
+    "compare_at_price": "745",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/227052_17-ensure-nutritional-powder-vanilla-flavour.jpg"
+    }
+   },
+   {
+    "title": "950g",
+    "price": "1685",
+    "compare_at_price": "1685",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200010840_2-ensure-powder-complete-balanced-drink-for-adults-for-strength-immunity-energy-with-essential-vitamins-nutrition-formula-vanilla.jpg"
+    }
+   },
+   {
+    "title": "1.9kg",
+    "price": "3100",
+    "compare_at_price": "3100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241645_7-ensure-complete-balance-nutrition-powder-high-in-protein-boosts-immunity-strength-for-adults-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295_12-ensure-complete-balenced-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295-2_10-ensure-complete-balenced-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295-3_10-ensure-complete-balenced-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295-4_10-ensure-complete-balenced-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295-5_1-ensure-complete-balenced-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295-6_1-ensure-complete-balenced-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295-7_1-ensure-complete-balenced-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068295-8_1-ensure-complete-balenced-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "As you age, you may frequently feel weak and tired due to the loss of muscle mass. Ensure Complete balanced nutrition can help support bone and muscle strength to help you stay strong and active. New Ensure is the only complete balanced supplement now with HMB to help build and protect muscles.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "55g",
+    "Energy": "423 kcal",
+    "Protein": "15.10g",
+    "Fat": "11.50g",
+    "Saturated fatty acids": "4.00g",
+    "Monounsaturated fatty acids": "4.50g",
+    "Polyunsaturated fatty acids": "2.60g",
+    "Trans fatty acids": "0.20g",
+    "Cholesterol": "<50.0mg",
+    "Carbohydrate": "62.38g",
+    "Total sugars": "35.00g",
+    "Added sugars": "14.80g",
+    "FOS": "3.40g",
+    "Vitamin A (palmitate)": "422 mcg RE",
+    "Vitamin D2": "7.00 mcg",
+    "Vitamin E": "7.0 mg",
+    "Vitamin K": "24.0 mcg",
+    "Vitamin C": "28.1 mg",
+    "Folic acid": "95 mcg",
+    "Vitamin B1": "0.70 mg",
+    "Vitamin B2": "1.00 mg",
+    "Vitamin B6": "1.00 mg",
+    "Vitamin B12": "0.70 mcg",
+    "Niacin": "7.33 mg",
+    "Pantothenic acid": "3.50 mg",
+    "Biotin": "21.1 mcg",
+    "Choline": "108.0 mg",
+    "Sodium": "314 mg",
+    "Potassium": "600 mg",
+    "Chloride": "550 mg",
+    "Calcium": "421 mg",
+    "Phosphorus": "421 mg",
+    "Magnesium": "72.0 mg",
+    "Iron": "8.00 mg",
+    "Zinc": "3.50 mg",
+    "Manganese": "1.30 mg",
+    "Copper": "410 mcg",
+    "Iodine": "32.0 mcg",
+    "Selenium": "15.0 mcg",
+    "Chromium": "15.0 mcg",
+    "Molybdenum": "30.0 mcg"
+   },
+   "manufacturerName": "Abbott Healthcare Pvt Ltd",
+   "fssaiLicense": "10013021000829",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Complete Nutrition Drink - Chocolate",
+  "handle": "complete-nutrition-drink-chocolate",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "405",
+    "compare_at_price": "405",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132_11-ensure-chocolate-flavour-bib.jpg"
+    }
+   },
+   {
+    "title": "375g",
+    "price": "780",
+    "compare_at_price": "780",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/258403_15-ensure-nutritional-powder-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "950g",
+    "price": "1730",
+    "compare_at_price": "1730",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364660_2-ensure-chocolate-flavoured-health-supplement.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132_11-ensure-chocolate-flavour-bib.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132-2_10-ensure-chocolate-flavour-bib.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132-3_11-ensure-chocolate-flavour-bib.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132-4_10-ensure-chocolate-flavour-bib.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132-5_1-ensure-chocolate-flavour-bib.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132-6_1-ensure-chocolate-flavour-bib.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132-7_1-ensure-chocolate-flavour-bib.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103132-8_1-ensure-chocolate-flavour-bib.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "As you age, you may frequently feel weak and tired due to loss of muscle mass. Ensure Complete, balanced nutrition can help support bone and muscle strength to help you stay strong and active. New Ensure is the only complete, balanced supplement now with HMB to help build and protect muscles.",
+   "ingredients": "Skimmed Milk Powder, Sucrose, Maltodextrin, Edible Vegetable Oil (High Oleic Sunflower Oil, Soy Oil), Cocoa Powder (4.5%), Fructose, Fructo-Oligosaccharide (3.9%), Flavouring(S) (Nature Identical And Artificial Chocolate), Natural Colour (Caramel), Minerals**, Vitamins***, Antioxidant (Mixed Tocopherol)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "55g",
+    "Energy": "420 kcal",
+    "Protein": "15.10 g",
+    "Fat": "11.50 g",
+    "Saturated Fatty Acids": ">4.00 g",
+    "Monounsaturated Fatty Acids": "4.50 g",
+    "Polyunsaturated Fatty Acids": "2.60 g",
+    "Trans Fatty Acids": "> 0.20 g",
+    "Cholesterol": "<50.0 mg",
+    "Carbohydrate": "61.73 g",
+    "Total Sugars": "35.00 g",
+    "Added Sugars": "18.80 g",
+    "Fos": "3.40 g",
+    "Sodium": "314 mg",
+    "Potassium": "600 mg",
+    "Chloride": "550 mg",
+    "calcium": "421 mg",
+    "Phosphorus": "421 mg",
+    "Magnesium": "72.0 mg",
+    "Iron": "8.00 mg",
+    "Zinc": "3.50 mg",
+    "Manganese": "1.30 mg",
+    "Copper": "410 Mcg",
+    "Iodine": "32.0 Mcg",
+    "Selenium": "15.0 Mcg",
+    "Chromium": "15.0 Mcg",
+    "Molybdenum": "30.0 Mcg",
+    "Vitamin A (Palmitate)": "422 Mcg Re",
+    "Vitamin D2": "7.00 Mcg",
+    "Vitamin E": "7.0 mg",
+    "Vitamin K": "24.0 Mcg",
+    "Vitamin C": "28.1 mg",
+    "Folic Acid": "95 Mcg",
+    "Vitamin B1": "0.70 mg",
+    "Vitamin B2": "1.00 mg",
+    "Vitamin B6": "1.00 mg",
+    "Vitamin B12": "0.70 Mcg",
+    "Niacin": "7.33 mg",
+    "Pantothenic Acid": "3.50 mg",
+    "Biotin": "21.1 Mcg",
+    "Choline": "108.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Do not refrigerate\n*Once opened, use within 3 weeks",
+   "manufacturerName": "Abbott Healthcare Pvt Ltd",
+   "fssaiLicense": "10013021000829",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Diabetes Care Nutrition Drink - Vanilla",
+  "handle": "diabetes-care-nutrition-drink-vanilla",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "930",
+    "compare_at_price": "930",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418_6-ensure-diabetes-care-vanilla.jpg"
+    }
+   },
+   {
+    "title": "950g",
+    "price": "1555",
+    "compare_at_price": "1555",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247795_11-ensure-diabetes-care-diabetic-care-formula-specialised-nutrition-for-diabetes-management.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418_6-ensure-diabetes-care-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418-2_6-ensure-diabetes-care-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418-3_6-ensure-diabetes-care-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418-4_6-ensure-diabetes-care-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418-5_6-ensure-diabetes-care-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418-6_2-ensure-diabetes-care-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418-7_2-ensure-diabetes-care-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114418-8_2-ensure-diabetes-care-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ensure Diabetes Care is the leading diabetes-specific nutritional supplement drink worldwide, offering a unique scientific formula to assist in managing blood sugar, weight, and heart health. This scientifically formulated nutrition has been clinically proven in Indian patients. With 36 essential nutrients, including proteins, vitamins, fibre, minerals, and MUFA-rich fat blend slow-release carbs, it promotes heart health while effectively managing blood glucose. Designed as a complete balanced nutrition for individuals with diabetes, it ensures steady energy throughout the day while helping to regulate blood glucose levels. Additionally, this drink provides high protein content, supporting muscle health crucial for strength and mobility, along with vital vitamins and minerals.",
+   "usageInstructions": "Take 200 ml of water and add 6 scoops of Ensure Diabetes Care as directed. |",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "52.1g",
+    "Energy": "417 kcal",
+    "Protein": "20.77g",
+    "Total fat": "16.70g",
+    "Monounsaturated fatty acids": "7.77g",
+    "Polyunsaturated fatty acids": "3.78g",
+    "n-3 fatty acids": "0.30g",
+    "?-linolenic acid": "0.30g",
+    "Cholesterol": "<8.0mg",
+    "Saturated fatty acids": "2.52g",
+    "Trans fatty acids": "0.20g",
+    "Carbohydrate": "42.28g",
+    "Total sugars": "12.94g",
+    "Added sugars": "12.41g",
+    "Added sucrose": "0g",
+    "Total dietary fiber": "14.05g",
+    "FOS": "2.05g",
+    "Taurine": "38.2mg",
+    "Carnitine": "33.0mg",
+    "Inositol": "1536.0mg",
+    "Vitamin A (palmitate)": "318mcg RE",
+    "Vitamin D2": "12.5mcg",
+    "Vitamin E": "9.5mg ?-TE",
+    "Vitamin K": "38.0mcg",
+    "Vitamin C": "41.0mg",
+    "Folic acid": "122mcg",
+    "Thiamin (Vitamin B1)": "780mcg",
+    "Riboflavin (Vitamin B2)": "920mcg",
+    "Pyridoxine (Vitamin B6)": "1200mcg",
+    "Vitamin B12": "1.58mcg",
+    "Niacin": "9.20mg NE",
+    "Pantothenic acid": "3.70mg",
+    "Biotin": "18.0mcg",
+    "Choline": "191.0mg",
+    "Sodium": "405mg",
+    "Potassium": "710mg",
+    "Chloride": "601mg",
+    "Calcium": "428mg",
+    "Phosphorus": "323mg",
+    "Magnesium": "114.0mg",
+    "Iron": "4.03mg",
+    "Zinc": "5.75mg",
+    "Manganese": "1.50mg",
+    "Copper": "320mcg",
+    "Iodine": "73.0mcg",
+    "Selenium": "30.0mcg",
+    "Chromium": "47.0mcg",
+    "Molybdenum": "42.0mcg"
+   },
+   "manufacturerName": "Abbott Healthcare Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Diabetes Care Nutrition Drink - Rich Chocolate",
+  "handle": "diabetes-care-nutrition-drink-rich-chocolate",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419_11-ensure-diabetes-care-chocolate.jpg"
+    },
+    "barcode": "8904145913855"
+   },
+   {
+    "title": "375g",
+    "price": "945",
+    "compare_at_price": "945",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247797_11-ensure-diabetes-care-diabetic-care-formula-mix-specialised-nutrition-for-diabetes-management-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419_11-ensure-diabetes-care-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419-2_11-ensure-diabetes-care-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419-3_11-ensure-diabetes-care-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419-4_11-ensure-diabetes-care-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419-5_11-ensure-diabetes-care-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419-6_7-ensure-diabetes-care-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419-7_7-ensure-diabetes-care-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40114419-8_7-ensure-diabetes-care-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ensure Diabetes Care is the leading diabetes-specific nutritional supplement drink worldwide, offering a unique scientific formula to assist in managing blood sugar, weight, and heart health. This scientifically formulated nutrition has been clinically proven in Indian patients and is enriched with 36 essential nutrients, including proteins, vitamins, fibre, minerals, and a MUFA-rich fat blend. Designed as a complete, balanced nutrition for individuals with diabetes, it promotes heart health, provides sustained energy, and helps regulate blood glucose levels. The slow-release carbohydrates and high-quality protein content support muscle strength and mobility, while the essential vitamins and minerals ensure overall well-being. Whether used as a meal replacement or a between-meal snack, Ensure Diabetes Care Nutrition Drink is an essential part of a diabetes management plan, providing the nourishment needed to thrive.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "200g",
+    "Energy": "435 kcal",
+    "Protein": "20.10 g",
+    "Fat": "14.61 g",
+    "Saturated Fatty Acids": "2.34 g",
+    "Monounsaturated Fatty Acids": "10.33 g",
+    "Polyunsaturated Fatty Acids": "2.32 g",
+    "Trans Fatty Acids": "< 0.20 g",
+    "Cholesterol": "< 10.0 mg",
+    "Carbohydrates": "59.79 g",
+    "Sugar (Sucrose)": "0g",
+    "Dietary Fibre": "5.19 g",
+    "Fos": "3.00 g",
+    "Taurine": "30.6 mg",
+    "Carnitine": "26.2 mg",
+    "Inositol": "305.7 mg",
+    "Vitamin A (Palmitate)": "255 Mcg Re",
+    "Vitamin A (Beta Carotene)": "109 Mcg Re",
+    "Vitamin D2": "4.0 Mcg",
+    "Vitamin E": "10.0 mg A-Te",
+    "Vitamin K": "30.6 Mcg",
+    "Vitamin C": "33.1 mg",
+    "Folic Acid": "127 Mcg",
+    "Thiamin (Vitamin B1)": "582 Mcg",
+    "Riboflavin (Vitamin B2)": "655 Mcg",
+    "Pyridoxine (Vitamin B6)": "1529 Mcg",
+    "Vitamin B12": "1.48 Mcg",
+    "Niacin": "5.11 mg Ne",
+    "Pantothenic Acid": "2.91 mg",
+    "Biotin": "13.8 Mcg",
+    "Choline": "152.9 mg",
+    "Sodium": "324 mg",
+    "Potassium": "568 mg",
+    "Chloride": "480 mg",
+    "calcium": "258 mg",
+    "Phosphorus": "258 mg",
+    "Magnesium": "91.0 mg",
+    "Iron": "4.73 mg",
+    "Zinc": "2.50 mg",
+    "Manganese": "1.16 mg",
+    "Copper": "764 Mcg",
+    "Iodine": "58.2 Mcg",
+    "Selenium": "16.4 Mcg",
+    "Chromium": "25.5 Mcg",
+    "Molybdenum": "35.3 Mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "fssaiLicense": "10013021000829",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "High Protein Drink - Vanilla",
+  "handle": "high-protein-drink-vanilla",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "880",
+    "compare_at_price": "880",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241640_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638-2_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638-3_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638-4_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638-5_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638-6_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638-7_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241638-8_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ensure High Protein is a scientifically formulated nutritional drink designed for active adults, providing a perfect blend of 31 vital nutrients, including high-quality protein, calcium, and vitamin D. This delicious vanilla-flavoured drink supports muscle health and energy metabolism, making it an ideal choice for those looking to maintain an active lifestyle. With its high protein content and L-carnitine, it helps support strength and energy levels, while its unique blend of essential vitamins and minerals fills nutritional gaps in your diet. Simply mix 2 tablespoons in 150ml of milk or 4 tablespoons in 190ml of water to enjoy a great-tasting, nutritious drink that supports overall health and wellbeing.",
+   "ingredients": "Skimmed Milk Powder, Maltodextrin, Soy Protein, Sucrose, Flavourings (Natural And Nature Identical Flavouring Substances - Vanilla), L-Carnitine, Stabilizer (Carrageenan), Minerals**, Vitamins***, Natural Colour (Curcumin), Sucralose, Contains Milk And Soy",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "25g/50g",
+    "Energy": "364 kcal",
+    "Protein": "30.00 g",
+    "Carnitine": "500 mg",
+    "Fat": "0.40 g",
+    "Cholesterol": "< 20 mg",
+    "Carbohydrate": "60.00 g",
+    "Total Sugars": "32.00 g",
+    "Added Sugars": "4.50 g",
+    "Added Sucrose": "4.50 g",
+    "Vitamin A": "523 Mcg Re",
+    "Vitamin D2": "10.00 Mcg",
+    "Vitamin E": "7.5 mg Te",
+    "Vitamin K": "55.0 Mcg",
+    "Vitamin C": "40.0 mg",
+    "Folic Acid": "118 Mcg",
+    "Vitamin B1": "1.40 mg",
+    "Vitamin B2": "1.60 mg",
+    "Vitamin B6": "1.90 mg",
+    "Vitamin B12": "1.00 Mcg",
+    "Niacin": "14.00 mg",
+    "Pantothenic Acid": "5.00 mg",
+    "Biotin": "22.5 Mcg",
+    "Sodium": "314 mg",
+    "Potassium": "939 mg",
+    "Chloride": "600 mg",
+    "calcium": "600 mg",
+    "Phosphorus": "450 mg",
+    "Magnesium": "85.0 mg",
+    "Iron": "13.60 mg",
+    "Zinc": "6.00 mg",
+    "Manganese": "0.60 mg",
+    "Copper": "425 Mcg",
+    "Iodine": "22.5 Mcg",
+    "Selenium": "6.0 Mcg",
+    "Chromium": "37.5 Mcg",
+    "Molybdenum": "6.8 Mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry & hygienic place\n*Do not refrigerate\n*Once opened, use within 3 weeks\n*Reconstituted Ensure High Protein should be used promptly or covered, refrigerated and used within 24 hours",
+   "manufacturerName": "Manufactured by",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "High Protein Drink - Chocolate",
+  "handle": "high-protein-drink-chocolate",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "365",
+    "compare_at_price": "365",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "780",
+    "compare_at_price": "780",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241641_2-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639-2_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639-3_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639-4_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639-5_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639-6_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639-7_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241639-8_1-ensure-high-protein-powder-health-supplement-supports-muscle-strength-for-active-adults-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ensure High Protein is scientifically formulated for active adults. It has high protein and L carnitine to help support strength and energy metabolism. it has a perfect blend of 31 vital nutrients.  It is suitable for both males and females, active adults it contains high-quality proteins that supports muscle . Scientifically formulated with 31 nutrients including protein, calcium, vitamin D that could be missing from your diet.  it is great to taste, and it contains high quality nutrients which helps give you strength to keep doing things you enjoy. This specialized nutritional drink is available in chocolate and vanilla flavour and comes in 200gm and 400gm size.",
+   "ingredients": "Skim Milk Powder, Maltodextrin, Soy Protein, Cocoa Powder, Sucrose, Flavorings (Natural And Nature Identical Flavouring Substances - Chocolate), Natural Color (Caramel), L-Carnitine, Stabilizer (Carrageenan), Vitamins***, Minerals**, Sucralose",
+   "usageInstructions": "2 tablespoons in 150 ml milk or 4 tablespoons in 190 ml water.",
+   "nutritionalInfo": {
+    "Energy": "364 kcal",
+    "Protein": "30. 00g",
+    "Fat": "0. 40g",
+    "Carbohydrates": "60. 00g",
+    "Iron": "13. 60mg"
+   },
+   "manufacturerName": "Manufactured by",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Plus Nutrition Drink - Vanilla",
+  "handle": "plus-nutrition-drink-vanilla",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "980",
+    "compare_at_price": "980",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364658_2-ensure-plus-vanilla-flavoured-health-drink-powder.jpg"
+    },
+    "barcode": "8904145914005"
+   },
+   {
+    "title": "1kg",
+    "price": "1835",
+    "compare_at_price": "1835",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200003598_2-ensure-plus-powder-scientifically-formulated-to-support-recovery-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364658_2-ensure-plus-vanilla-flavoured-health-drink-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364658-2_2-ensure-plus-vanilla-flavoured-health-drink-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364658-3_2-ensure-plus-vanilla-flavoured-health-drink-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364658-4_2-ensure-plus-vanilla-flavoured-health-drink-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364658-5_2-ensure-plus-vanilla-flavoured-health-drink-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364658-6_2-ensure-plus-vanilla-flavoured-health-drink-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364658-7_1-ensure-plus-vanilla-flavoured-health-drink-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200003598_2-ensure-plus-powder-scientifically-formulated-to-support-recovery-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ensure Plus Vanilla Powder is a scientifically formulated nutritional supplement that provides balanced nutrition with essential nutrients to support recovery, muscle health, and immune function. Enriched with over 28 vital nutrients, including vitamins, minerals, and HMB, it helps meet special dietary requirements during recovery. Its smooth vanilla flavour makes it a convenient and nourishing addition to the daily diet.",
+   "ingredients": "Maltodextrin, sucrose, edible vegetable oils (high oleic sunflower oil, soy oil, coconut oil), sodium caseinate, whey protein concentrate, soy protein isolate, fructo-oligosaccharides (FOS) (4.2%), minerals, flavourings (natural, nature-identical and artificial vanilla flavouring substances), vitamins, and antioxidants (mixed tocopherols).",
+   "nutritionalInfo": {
+    "Energy": "430 kcal",
+    "Protein": "19.00 g",
+    "Total Fat": "11.90 g",
+    "Saturated Fatty Acids": "5.60 g",
+    "Monounsaturated Fatty Acids": "6.35 g",
+    "Polyunsaturated Fatty Acids": "2.70 g",
+    "Trans Fatty Acids": "0.20 g",
+    "Cholesterol": "20 mg",
+    "Carbohydrate": "60.08 g",
+    "Total Sugars": "15.00 g",
+    "Added Sugars": "14.80 g",
+    "Fructo-oligosaccharides (FOS)": "3.52 g",
+    "Vitamin A (Palmitate)": "383 mcg RE (1276 IU)",
+    "Vitamin D2": "7.0 mcg (281 IU)",
+    "Vitamin E": "6.7 mg ?-TE (10 IU)",
+    "Vitamin K": "28.1 mcg",
+    "Vitamin C": "28.5 mg",
+    "Folic Acid": "83 mcg",
+    "Vitamin B1 (Thiamin)": "0.68 mg",
+    "Vitamin B2 (Riboflavin)": "0.68 mg",
+    "Vitamin B6 (Pyridoxine)": "0.85 mg",
+    "Vitamin B12": "0.70 mcg",
+    "Niacin": "5.22 mg",
+    "Pantothenic Acid": "3.51 mg",
+    "Biotin": "15.3 mcg",
+    "Choline": "116 mg",
+    "Sodium": "273 mg",
+    "Potassium": "571 mg",
+    "Chloride": "350 mg",
+    "Calcium": "295 mg",
+    "Phosphorus": "221 mg",
+    "Magnesium": "78.3 mg",
+    "Iron": "3.40 mg",
+    "Zinc": "3.74 mg",
+    "Manganese": "1.19 mg",
+    "Copper": "243 mcg",
+    "Iodine": "54.5 mcg",
+    "Selenium": "18.7 mcg",
+    "Chromium": "17.5 mcg",
+    "Molybdenum": "31.6 mcg"
+   },
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "fssaiLicense": "10013021000829",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strength Pro Nutrition Drink - Rich Chocolate",
+  "handle": "strength-pro-nutrition-drink-rich-chocolate",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490-2_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490-3_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490-4_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490-5_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490-6_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490-7_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369490-8_1-ensure-strength-pro-rich-chocolate-flavour-nutritional-supplement-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "As we age, strength and energy can decline, holding us back from everyday moments.\nEnriched with the POWER OF 7, Ensure Strength Pro nourishes the body's 7 vital systems - muscles, bones, heart, nerves, immunity, metabolism & blood cells.\nBacked by 50+ years of Ensure science & 30+ clinical studies, it offers trusted daily nutrition with 30g protein, L-Carnitine, low GI, lower fat & sugar, gluten-free and no artificial flavours.",
+   "ingredients": "Skim Milk Powder, Maltodextrin, Soy Protein, Cocoa Powder, Sucrose, Natural and Nature-Identical Flavouring Substances, Colour (Caramel III Powder), L-Carnitine, Stabiliser [Carrageenan], Vitamins, Minerals, Sweetener (Sucralose).\nContains Milk and Soy. This Contains Sucralose. Contains Non-Caloric Sweetener.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "366",
+    "Protein (g)": "30.00",
+    "Carbohydrate (g)": "60.60",
+    "Total Sugars (g)": "32.00",
+    "Added Sugars (g)": "4.50",
+    "Added Sucrose (g)": "4.50",
+    "Total Fat (g)": "0.40",
+    "Cholesterol (mg)": "<20",
+    "Carnitine (mg)": "500Vitamin D2 (mcg): 10.00",
+    "Vitamin K (mcg)": "55.0",
+    "Calcium (mg)": "600",
+    "Phosphorus (mg)": "450",
+    "Manganese (mg)": "0.60",
+    "Vitamin B1 (mg)": "1.10",
+    "Vitamin B2 (mg)": "1.60",
+    "Niacin (mg)": "14.00",
+    "Folic Acid (mcg)": "118",
+    "Pantothenic Acid (mg)": "5.00",
+    "Vitamin B12 (mcg)": "1.00",
+    "Iodine (mcg)": "22.5",
+    "Selenium (mcg)": "6.0",
+    "Chromium (mcg)": "37.5",
+    "Vitamin A (mcg RE)": "523",
+    "Vitamin E (mg ?-TE)": "7.5",
+    "Vitamin C (mg)": "40.0",
+    "Vitamin B6 (mg)": "1.90",
+    "Biotin (mcg)": "22.5",
+    "Magnesium (mg)": "85.0",
+    "Iron (mg)": "13.60",
+    "Zinc (mg)": "6.00",
+    "Copper (mcg)": "425",
+    "Sodium (mg)": "314",
+    "Potassium (mg)": "939",
+    "Chloride (mg)": "600",
+    "Molybdenum (mcg)": "6.8"
+   },
+   "usageInstructions": "Step 1: Take 190 ml of water.\nStep 2: Add 50 g (approx. 4 tablespoons) while stirring and mix until dissolved.",
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "fssaiLicense": "10012022000149",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strength Pro Nutrition Drink - Vanilla Delight",
+  "handle": "strength-pro-nutrition-drink-vanilla-delight",
+  "vendor": "Ensure (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491-2_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491-3_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491-4_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491-5_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491-6_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491-7_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369491-8_1-ensure-strength-pro-vanilla-delight-flavour-nutritional-supplement-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "As we age, strength and energy can decline, holding us back from everyday moments.\nEnriched with the POWER OF 7, Ensure Strength Pro nourishes the body's 7 vital systems - muscles, bones, heart, nerves, immunity, metabolism & blood cells.\nBacked by 50+ years of Ensure science & 30+ clinical studies, it offers trusted daily nutrition with 30g protein, L-Carnitine, low GI, lower fat & sugar, gluten-free and no artificial flavours.",
+   "ingredients": "Skim Milk Powder, Maltodextrin, Soy Protein, Cocoa Powder, Sucrose, Natural and Nature-Identical Flavouring Substances, Colour (Caramel III Powder), L-Carnitine, Stabiliser (Carrageenan), Vitamins, Minerals, Sweetener (Sucralose).\nContains Milk and Soy. This Contains Sucralose. Contains Non-Caloric Sweetener.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "365",
+    "Protein (g)": "30.00",
+    "Carbohydrate (g)": "60.60",
+    "Added Sugars (g)": "4.50",
+    "Added Sucrose (g)": "4.50",
+    "Total Fat (g)": "0.40",
+    "Cholesterol (mg)": "<20",
+    "Carnitine (mg)": "500",
+    "Vitamin D2 (mcg)": "10.00",
+    "Vitamin K (mcg)": "55.0",
+    "Calcium (mg)": "600",
+    "Phosphorus (mg)": "450",
+    "Manganese (mg)": "0.60",
+    "Vitamin B1 (mg)": "1.10",
+    "Vitamin B2 (mg)": "1.60",
+    "Niacin (mg)": "14.00",
+    "Folic Acid (mcg)": "118",
+    "Pantothenic Acid (mg)": "5.00",
+    "Vitamin B12 (mcg)": "1.00",
+    "Iodine (mcg)": "22.5",
+    "Selenium (mcg)": "6.0",
+    "Chromium (mcg)": "37.5",
+    "Vitamin A (mcg RE)": "523",
+    "Vitamin E (mg ?-TE)": "7.5",
+    "Vitamin C (mg)": "40.0",
+    "Vitamin B6 (mg)": "1.90",
+    "Biotin (mcg)": "22.5",
+    "Magnesium (mg)": "85.0",
+    "Iron (mg)": "13.60",
+    "Zinc (mg)": "6.00",
+    "Copper (mcg)": "425",
+    "Sodium (mg)": "154",
+    "Potassium (mg)": "939",
+    "Chloride (mg)": "400",
+    "Molybdenum (mcg)": "6.8"
+   },
+   "usageInstructions": "Step 1: Take 190 ml of water.\nStep 2: Add 50 g (approx. 4 tablespoons) while stirring and mix until dissolved.",
+   "manufacturerName": "Abbott Healthcare Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000149"
+  }
+ }
+]

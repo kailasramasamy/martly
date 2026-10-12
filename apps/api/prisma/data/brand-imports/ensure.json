@@ -1,0 +1,88 @@
+{
+  "brand": "Ensure (Abbott)",
+  "manufacturer": "Abbott India Ltd.",
+  "feed": "ensure-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ensure/logo-fe51e079.png",
+  "themeColor": "#0B3B8C",
+  "themeColorSecondary": "#C9A15A",
+  "namePrefix": "Ensure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Ensure Complete Balanced Nutrition - Vanilla": "Complete Nutrition Drink - Vanilla"
+  },
+  "rules": [
+    {
+      "match": "^Complete\\ Nutrition\\ Drink\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Complete\\ Nutrition\\ Drink\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Diabetes\\ Care\\ Nutrition\\ Drink\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Diabetes\\ Care\\ Nutrition\\ Drink\\ \\-\\ Rich\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Drink\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Drink\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Plus\\ Nutrition\\ Drink\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Strength\\ Pro\\ Nutrition\\ Drink\\ \\-\\ Rich\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Strength\\ Pro\\ Nutrition\\ Drink\\ \\-\\ Vanilla\\ Delight$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    }
+  ]
+}
