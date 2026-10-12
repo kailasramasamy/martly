@@ -1,0 +1,32 @@
+{
+  "brand": "Appy Fizz (Parle Agro)",
+  "manufacturer": "Parle Agro Pvt. Ltd.",
+  "feed": "appy-fizz-feed.json",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Appy Fizz ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Appy Fizz Sparkling Apple Drink": "Apple Flavoured Sparkling Drink"
+  },
+  "rules": [
+    {
+      "match": "^Apple\\ Flavoured\\ Sparkling\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    },
+    {
+      "match": "^Apple\\ Flavoured\\ Sparkling\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    }
+  ],
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/appy-fizz/logo-a9bc13a2.png"
+}

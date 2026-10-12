@@ -1,0 +1,151 @@
+[
+ {
+  "title": "Apple Flavoured Sparkling Drink",
+  "handle": "apple-flavoured-sparkling-drink",
+  "vendor": "Appy Fizz (Parle Agro)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/298955_5-appy-juice-drink-sparkling-apple.jpg"
+    },
+    "barcode": "8902579002046"
+   },
+   {
+    "title": "175ml",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185245_2-appy-fizz-apple-juice-based-drink.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "18",
+    "compare_at_price": "18",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/271119_8-appy-fizz-apple-juice-based-drink.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265692_10-appy-fizz-apple-juice-based-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/298955_5-appy-juice-drink-sparkling-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/298955-2_1-appy-juice-drink-sparkling-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/298955-3_1-appy-juice-drink-sparkling-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/298955-4_1-appy-juice-drink-sparkling-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/298955-5_1-appy-juice-drink-sparkling-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/298955-6_1-appy-juice-drink-sparkling-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185245_2-appy-fizz-apple-juice-based-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/271119_8-appy-fizz-apple-juice-based-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and invigorating taste of Appy Fizz Sparkling Apple Juice. Sourced from the finest orchards, this beverage is crafted using only the juiciest and most succulent apples, ensuring a burst of authentic flavour with every sip. Meticulously carbonated using cutting-edge technology, Appy Fizz infuses each bottle with lively bubbles, creating a sensorial experience like no other. Whether enjoyed as a refreshing drink on a scorching summer day, a celebratory toast during special occasions, or as a sophisticated mixer in cocktails, its crisp and mouth-watering taste is sure to captivate discerning palates. With a real apple flavour and a healthy, non-alcoholic appeal, Appy Fizz is the perfect choice for a relaxed time with friends, providing a delightful and rejuvenating experience.",
+   "ingredients": "Water, Sugar, Carbonating Agent (INS 290), Acidity Regulators [INS 296, INS 331(iii), INS 330], Stabilizer (INS 440), Natural Colour (INS 150d), Preservative (INS 211), Antioxidant (INS 300), Nature - Identical Flavouring Substance (Apple) (INS)",
+   "nutritionalInfo": {
+    "Serving Size": "100ml",
+    "Energy (kcal)": "56.0",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "14.0",
+    "Total Sugars (g)": "13.9",
+    "Added Sugars (As Sucrose) (g)": "13.9",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "21.2"
+   },
+   "storageInstructions": "*Store in a clean, dry and hygienic place away from direct sunlight",
+   "manufacturerName": "Parle Agro Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10018043002353"
+  }
+ },
+ {
+  "title": "Apple Flavoured Sparkling Drink Can",
+  "handle": "apple-flavoured-sparkling-drink-can",
+  "vendor": "Appy Fizz (Parle Agro)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003722_8-appy-fizz-apple-juice-based-drink.jpg"
+    },
+    "barcode": "8902579002022"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003722_8-appy-fizz-apple-juice-based-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003722-2_1-appy-fizz-apple-juice-based-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003722-3_1-appy-fizz-apple-juice-based-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003722-4_1-appy-fizz-apple-juice-based-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003722-5_1-appy-fizz-apple-juice-based-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003722-6_1-appy-fizz-apple-juice-based-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Appy Fizz is a refreshing and trendy carbonated apple juice that offers a burst of fruity goodness in every sip. This infusion of real apple flavour provides a mouth-watering and delightful experience, making it the perfect beverage for any occasion. Whether you're looking to enjoy a refreshing drink on its own or use it as a mixer for cocktails, Appy Fizz's carbonated apple juice delivers a flavourful and rejuvenating taste that will delight your senses. With its sparkling and refreshing qualities, Appy Fizz is a big hit for hanging out with friends and creating memorable moments.",
+   "ingredients": "Water, Sugar, Carbonating Agent (Ins 290), Acidity Regulators [Ins 296, Ins 331(Iii), Ins 330], Stabilizer (Ins 440), Food Colour (Ins 150D), Preservative (Ins 211), Antioxidant (Ins 300), Nature - Identical Flavouring Substance (Apple)",
+   "nutritionalInfo": {
+    "Nutrition Per": "Serve",
+    "Serving Size": "250 ml",
+    "Energy (kcal)": "140.0",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "35.0",
+    "Total Sugars (g)": "34.8",
+    "Added Sugars (As Sucrose) (g)": "34.8",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "53.0",
+    "%RDA*": "7.0%",
+    "RDA": "*Percent RDA Values Are Based On A 2000kcal Energy Diet."
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight"
+  }
+ }
+]
