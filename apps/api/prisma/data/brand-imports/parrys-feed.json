@@ -1,0 +1,55 @@
+[
+ {
+  "title": "White Label Sugar",
+  "handle": "white-label-sugar",
+  "vendor": "Parry's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538_4-parrys-sugar-white-label.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40214887_4-parrys-white-label-sugar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538_4-parrys-sugar-white-label.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538-2_3-parrys-sugar-white-label.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538-3_3-parrys-sugar-white-label.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538-4_3-parrys-sugar-white-label.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538-5_2-parrys-sugar-white-label.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538-6_2-parrys-sugar-white-label.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538-7_2-parrys-sugar-white-label.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40004538-8_1-parrys-sugar-white-label.jpg"
+   }
+  ]
+ }
+]
