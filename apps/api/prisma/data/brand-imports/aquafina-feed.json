@@ -70,6 +70,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265894_9-aquafina-packaged-drinking-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Aquafine Bottled Water is filtered to provide you with incredible quality of pure drinking water. It is your perfect companion for happy bodies everywhere. Every bottle of Aquafina Packaged Drinking Water consists of drinking water that has been sourced from the most unadulterated sources like mountains and hills, where there are numerous fresh-water springs with water that is rich with rock-infused minerals and nutrients. The water is safe for drinking and cooking purposes.",
+   "ingredients": "Treated Water, Salts of Calcium and Magnesium",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100ml",
+    "Energy": "0 kcal",
+    "Total Carbohydrate": "0 g",
+    "Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "1 mg",
+    "Calcium": "2 mg",
+    "Magnesium": "1 mg"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "Varun Beverages Limited",
+   "countryOfOrigin": "India"
+  }
  }
 ]
