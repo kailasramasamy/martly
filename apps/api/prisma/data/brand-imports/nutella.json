@@ -1,0 +1,30 @@
+{
+  "brand": "Nutella (Ferrero)",
+  "manufacturer": "Ferrero India Pvt. Ltd.",
+  "feed": "nutella-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nutella/logo-42b1ac64.png",
+  "themeColor": "#E3000F",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Nutella ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Hazelnut\\ Spread\\ with\\ Cocoa$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^B\\-ready\\ Wafer\\ with\\ Hazelnut\\ Spread$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Wafers & Waffle"
+      ]
+    }
+  ]
+}
