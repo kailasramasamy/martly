@@ -1,0 +1,254 @@
+{
+  "brand": "Cadbury (Mondelez)",
+  "manufacturer": "Mondelez India Foods Pvt Ltd",
+  "feed": "cadbury-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cadbury-mondelez/logo-a7d70513.png",
+  "themeColor": "#4B0082",
+  "themeColorSecondary": "#C9A063",
+  "namePrefix": "Cadbury ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Perk\\ Wafer\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Perk\\ Plus\\ Wafer\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Perk\\ Mini\\ Treats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Mini\\ Treats\\ Assorted\\ Chocolate\\ Bars$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Lickables\\ with\\ Oreo$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Milkinis$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Madbury\\ Crispy\\ Rabdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Madbury\\ Crunchy\\ Cola$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Dark\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Bournville\\ Cranberry\\ 50%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Imported\\ Tablet$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Dairy\\ Milk\\ Whole\\ Nut\\ Imported$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Studio\\ Gianduja\\ Hazelnut\\ Pralines$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Studio\\ Brownie\\ Aux\\ Noix\\ Pralines$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Studio\\ Chocolat\\ a\\ l'Orange\\ Pralines$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Studio\\ Assorted\\ Signature\\ Pralines$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Exotic Chocolates"
+      ]
+    },
+    {
+      "match": "^Celebrations\\ Birthday\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Milk\\ Chocolate\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Baking\\ Dark\\ Choco\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Baking\\ Choco\\ Melts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Baking\\ Dark\\ Cooking\\ Block$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Hot\\ Chocolate\\ Powder\\ Mix$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Instant\\ Hot\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Oreo\\ Milkshake\\ Mix$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^ChocChip\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^ChocFilled\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^ChocLayered\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Rich\\ \\&\\ Fudgy\\ Chocolate\\ Brownie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    }
+  ]
+}
