@@ -1,0 +1,22 @@
+{
+  "brand": "Kurkure (PepsiCo)",
+  "manufacturer": "PepsiCo India",
+  "feed": "kurkure-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kurkure-pepsico/logo-620990ee.png",
+  "themeColor": "#F26F21",
+  "themeColorSecondary": "#1E5BA8",
+  "namePrefix": "Kurkure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Masala\\ Munch$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    }
+  ]
+}
