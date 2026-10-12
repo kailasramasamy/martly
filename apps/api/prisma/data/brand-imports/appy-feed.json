@@ -60,6 +60,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265705-8_5-appy-apple-juice-drink-classic.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Appy Fizz is the champagne of fruit drinks, offering a delightfully bubbly and refreshing experience. This carbonated apple juice is the perfect base for cocktails or an indulgent treat on its own. Bursting with a sweet and tangy flavour, Appy Fizz is a healthier alternative to traditional colas, packed with the goodness of vitamin A. Fizz up your taste buds with every sip and feel the fun, edgy spirit of this beloved beverage. Whether enjoyed alone or mixed into your favourite cocktail, Appy Fizz is the ultimate refreshment for those young at heart.",
+   "ingredients": "Water, Reconstituted Apple Juice, Sugar, CO2 (290), Acidity Regulators (330, 296), Antioxidant (300)",
+   "nutritionalInfo": {
+    "Serving Size": "200ml",
+    "Energy (kcal)": "126.0",
+    "Protein (g)": "0.0",
+    "Carbohydrate (g)": "31.6",
+    "Total Sugars (g)": "31.6",
+    "Added Sugars (as Sucrose) (g)": "28.6",
+    "Natural Fruit Sugars (g)": "3.0",
+    "Total Fat (g)": "0.0",
+    "Sodium (mg)": "34.0"
+   },
+   "storageInstructions": "*Store in clean, dry, hygienic conditions away from direct sunlight",
+   "manufacturerName": "Parle Agro Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10018043002353"
+  }
  }
 ]
