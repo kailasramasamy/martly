@@ -1,0 +1,376 @@
+{
+  "brand": "Raw Pressery",
+  "manufacturer": "Sustainable Foods Pvt. Ltd.",
+  "feed": "raw-pressery-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/raw-pressery/logo-c70bde9d.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#F15A29",
+  "namePrefix": "Raw Pressery ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Raw Pressery Valencia Orange Cold Pressed Juice": "Valencia Orange Juice"
+  },
+  "rules": [
+    {
+      "match": "^Aam\\ Mango\\ Refresher$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Refresher$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Pink\\ Guava\\ Chilli\\ Refresher$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Cranberry\\ Refresher$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Aam\\ Panna$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Aam Panna"
+      ]
+    },
+    {
+      "match": "^Masala\\ Shikanji$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Nimbu\\ Paani$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Classic\\ Lemon\\ Juice\\ with\\ Aloe\\ Vera$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Jal\\ Jeera$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Jaljeera"
+      ]
+    },
+    {
+      "match": "^Dates\\ Almond\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Mango\\ Almond\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Cacao\\ Almond\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Unsweetened\\ Almond\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Plant-Based Milk"
+      ]
+    },
+    {
+      "match": "^Lactose\\ Free\\ Skimmed\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Skimmed Milk"
+      ]
+    },
+    {
+      "match": "^Alphonso\\ Mango\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Grapefruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Guava\\ Blend\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Lean\\ Cold\\ Pressed\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Life\\ Cold\\ Pressed\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Flush\\ Cold\\ Pressed\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Mango\\ \\+\\ Pineapple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Pomegranate\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Valencia\\ Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Sugarcane\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Sugarcane Juice"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Water$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Water\\ with\\ Aloe\\ Vera\\ \\&\\ Lemon$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Coconut Water"
+      ]
+    },
+    {
+      "match": "^Berry\\ Healthy\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Drink\\ A\\ Salad\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Good\\ OL'\\ ABC\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Twist\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Vit\\-C\\ Burst\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Iced\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Iced Tea"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Iced\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Iced Tea"
+      ]
+    },
+    {
+      "match": "^Mint\\ Mojito\\ Iced\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Iced Tea"
+      ]
+    },
+    {
+      "match": "^Peach\\ Iced\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Iced Tea"
+      ]
+    },
+    {
+      "match": "^Beer\\ Buzz\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Crazy\\ Cola\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Red\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Banana\\ Honey\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Choco\\ Mint\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Cold\\ Coffee\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Protein\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Natural\\ Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Banana\\ Honey\\ Protein\\ Milkshake\\ Classic$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    }
+  ]
+}
