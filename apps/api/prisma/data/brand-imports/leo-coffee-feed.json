@@ -45,7 +45,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/293084_2-leo-coffee-madras-blend.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Leo offers genuine flavour of Madras filter coffee and indulges in a delicate mixture of selected coffee beans and high quality chicory that is steeped in the customs of Madras. The bittersweet richness of chicory lends itself to a heavy-bodied coffee that has become a favourite of the coffee lovers of South India.",
+   "ingredients": "Coffee 60% & Chicory 40%.",
+   "usageInstructions": "Add 1 teaspoon of coffee powder with hot milk. Add needed sugar.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Breakfast Blend Coffee & Chicory",
@@ -69,7 +75,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/293080_1-leo-coffee-breakfast-blend-roast-ground-with-chicory.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Leo Chicory Breakfast Blend Roast & Ground Strong Coffee uses only the handpicked coffee beans and high quality chicory to make a rich cup of strong coffee with unmatched flavour. It is created for those staunch lovers of strong coffee with revitalizing fragrance. It mellows the mix and offers a bittersweet wealth. It is combining with roasted coffee with chicory which offers you a full-bodied rich coffee with sweet smell.",
+   "ingredients": "60% Medium roasted Coffee and 40% Chicory.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "House Blend Filter Coffee",
@@ -105,7 +116,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/293076_1-leo-coffee-filter-house-blend.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your coffee experience with Leo Filter Coffee, a delightful blend of dark roasted coffee beans (70%-80%) and chicory (20%-30%). This sugary, milky coffee delivers an exquisite aroma and a bittersweet richness that will captivate your senses. Enjoy the authentic taste of Leo Filter Coffee, whether you're brewing it at home, serving it in your hotel, or offering it at your restaurant. The aromatic fragrance and flavour of this coffee will transport you to a cosy café, providing a moment of indulgence in every sip. Crafted with care, Leo Filter Coffee is a must-try for coffee enthusiasts seeking a truly exceptional and memorable coffee experience.",
+   "ingredients": "100% Coffee.",
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Top Blend Filter Coffee",
@@ -121,7 +138,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/293077_2-leo-coffee-filter-top-blend-roast-ground.jpg"
-    }
+    },
+    "barcode": "8908000008069"
    },
    {
     "title": "500g",
@@ -141,7 +159,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/293078_1-leo-coffee-filter-top-blend-roast-ground.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Leo Top Blend is a completely balanced coffee with a smooth, wealthy texture. It is prepared from high-grown coffee beans preferred from the best superiority coffee growing tracts in the Western Ghats of South India. This premium coffee is softly roasted for brilliant body and flavor. It is combined with infinite care to make incredible flavor and refreshing aroma.",
+   "ingredients": "60% coffee powder and 40% chicory powder.",
+   "usageInstructions": "A hot cup of coffee every morning, after a tiresome day adds aroma and energy to your soul.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aroma Classic Instant Coffee",
@@ -177,7 +201,11 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048735_1-leo-instant-coffee-aroma-classic-70-coffee-30-chicory.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Instant Coffee",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ultimate Pure Instant Coffee",
@@ -193,7 +221,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40048736_1-leo-coffee-instant-ultimate-pure.jpg"
-    }
+    },
+    "barcode": "8908000008786"
    },
    {
     "title": "100g",
@@ -213,6 +242,10 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048737_1-leo-instant-coffee-ultimate-pure.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Instant Coffee",
+   "countryOfOrigin": "India"
+  }
  }
 ]
