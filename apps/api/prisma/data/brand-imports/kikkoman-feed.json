@@ -1,0 +1,55 @@
+[
+ {
+  "title": "Naturally Brewed Soy Sauce",
+  "handle": "naturally-brewed-soy-sauce",
+  "vendor": "Kikkoman",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "253",
+    "compare_at_price": "253",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40216130_1-kikkoman-soy-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216130_1-kikkoman-soy-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216130-2_1-kikkoman-soy-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216130-3_1-kikkoman-soy-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216130-4_1-kikkoman-soy-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40216130-5_1-kikkoman-soy-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Kikkoman Soya Sauce is naturally brewed from the best quality soybeans, wheat and seasoned with salt. It is a well-balanced flavour and taste of saltiness, sweetness and tartness. It has potential health benefits, including for the immune system, gut health, cancer and blood pressure. The overall flavour of soy sauce helps balance different taste components.",
+   "ingredients": "Water, Soybeans (24%), Wheat, Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy": "15kcal",
+    "Total Carbohydrate": "2.0g",
+    "Sugar": "1.9g",
+    "Dietary Fibre": "0.1g",
+    "Protein": "1.5g",
+    "Fat": "0g",
+    "Sodium": "971mg"
+   },
+   "manufacturerName": "Kikkoman India Pvt Ltd 7th Floor",
+   "fssaiLicense": "10020022012120",
+   "countryOfOrigin": "India"
+  }
+ }
+]

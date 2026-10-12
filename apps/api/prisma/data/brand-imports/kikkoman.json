@@ -1,0 +1,22 @@
+{
+  "brand": "Kikkoman",
+  "manufacturer": "Kikkoman Corporation",
+  "feed": "kikkoman-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kikkoman/logo-f5934396.png",
+  "themeColor": "#F18A00",
+  "themeColorSecondary": "#D7000F",
+  "namePrefix": "Kikkoman ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Naturally\\ Brewed\\ Soy\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Soy Sauce"
+      ]
+    }
+  ]
+}
