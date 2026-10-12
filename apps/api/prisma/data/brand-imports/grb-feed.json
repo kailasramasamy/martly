@@ -1,0 +1,1247 @@
+[
+ {
+  "title": "Ghee",
+  "handle": "ghee",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127155_1-grb-ghee-cow.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/252427_8-grb-ghee.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "939",
+    "compare_at_price": "939",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/255834_6-grb-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127155_1-grb-ghee-cow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127155-2_1-grb-ghee-cow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252427_8-grb-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/255834_6-grb-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Ghee Pouch",
+  "handle": "ghee-pouch",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "13ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270377_1-grb-ghee-pure-rich-in-vitamins.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "173",
+    "compare_at_price": "173",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/252425_7-grb-ghee.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "419",
+    "compare_at_price": "419",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/252423_9-grb-ghee.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "885",
+    "compare_at_price": "885",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/123596_12-grb-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270377_1-grb-ghee-pure-rich-in-vitamins.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270377-2_1-grb-ghee-pure-rich-in-vitamins.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252425_7-grb-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/252423_9-grb-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/123596_12-grb-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Buffalo Ghee",
+  "handle": "buffalo-ghee",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127149_1-grb-ghee-buffalo.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276161_1-grb-pure-buffalo-ghee-rich-in-nutrients.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "425",
+    "compare_at_price": "425",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276162_1-grb-pure-buffalo-ghee-rich-in-nutrients.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127149_1-grb-ghee-buffalo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127149-2_1-grb-ghee-buffalo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276161_1-grb-pure-buffalo-ghee-rich-in-nutrients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276162_1-grb-pure-buffalo-ghee-rich-in-nutrients.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Buffalo Ghee Pouch",
+  "handle": "buffalo-ghee-pouch",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "136",
+    "compare_at_price": "136",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127151_2-grb-ghee-buffalo.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "470",
+    "compare_at_price": "470",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127150_2-grb-ghee-buffalo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127151_2-grb-ghee-buffalo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127151-2_2-grb-ghee-buffalo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127151-3_1-grb-ghee-buffalo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127151-4_1-grb-ghee-buffalo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127151-5_1-grb-ghee-buffalo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127151-6_1-grb-ghee-buffalo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127150_2-grb-ghee-buffalo.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Bombay Halwa",
+  "handle": "bombay-halwa",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718-2_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718-3_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718-4_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718-5_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718-6_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261718-7_1-grb-bombay-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Ghee Dates Halwa",
+  "handle": "ghee-dates-halwa",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715-2_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715-3_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715-4_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715-5_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715-6_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261715-7_1-grb-ghee-dates-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Ghee Dry Fruits Halwa",
+  "handle": "ghee-dry-fruits-halwa",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716-2_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716-3_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716-4_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716-5_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716-6_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261716-7_1-grb-ghee-dry-fruits-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pineapple Halwa",
+  "handle": "pineapple-halwa",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717-2_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717-3_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717-4_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717-5_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717-6_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261717-7_1-grb-pineapple-halwa-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mysore Pak",
+  "handle": "mysore-pak",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077779_2-grb-sweets-mysore-pak-ghee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077779_2-grb-sweets-mysore-pak-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077779-2_1-grb-sweets-mysore-pak-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077779-3_1-grb-sweets-mysore-pak-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077779-4_1-grb-sweets-mysore-pak-ghee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077779-5_1-grb-sweets-mysore-pak-ghee.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Besan Laddu",
+  "handle": "besan-laddu",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457621_1-grb-besan-laddu.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457621_1-grb-besan-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457621-2_1-grb-besan-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457621-3_1-grb-besan-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457621-4_1-grb-besan-laddu.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457621-5_1-grb-besan-laddu.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Soan Cake",
+  "handle": "soan-cake",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261712_1-grb-soan-cake-regular-traditional-delicacysweets-dessert-for-celebrations-special-ocassions.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261712_1-grb-soan-cake-regular-traditional-delicacysweets-dessert-for-celebrations-special-ocassions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261712-2_1-grb-soan-cake-regular-traditional-delicacysweets-dessert-for-celebrations-special-ocassions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261712-3_1-grb-soan-cake-regular-traditional-delicacysweets-dessert-for-celebrations-special-ocassions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261712-4_1-grb-soan-cake-regular-traditional-delicacysweets-dessert-for-celebrations-special-ocassions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261712-5_1-grb-soan-cake-regular-traditional-delicacysweets-dessert-for-celebrations-special-ocassions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261712-6_1-grb-soan-cake-regular-traditional-delicacysweets-dessert-for-celebrations-special-ocassions.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Butterscotch Soan Cake",
+  "handle": "butterscotch-soan-cake",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261713_1-grb-soan-cake-butterscotch-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261713_1-grb-soan-cake-butterscotch-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261713-2_1-grb-soan-cake-butterscotch-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261713-3_1-grb-soan-cake-butterscotch-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261713-4_1-grb-soan-cake-butterscotch-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261713-5_1-grb-soan-cake-butterscotch-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261713-6_1-grb-soan-cake-butterscotch-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pineapple Soan Cake",
+  "handle": "pineapple-soan-cake",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40261714_1-grb-soan-cake-pineapple-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261714_1-grb-soan-cake-pineapple-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261714-2_1-grb-soan-cake-pineapple-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261714-3_1-grb-soan-cake-pineapple-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261714-4_1-grb-soan-cake-pineapple-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261714-5_1-grb-soan-cake-pineapple-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40261714-6_1-grb-soan-cake-pineapple-traditional-delicacysweets-dessert-for-celebrations-special-occasions.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cardamom Soan Papdi",
+  "handle": "cardamom-soan-papdi",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003514_4-grb-soan-papdi-real-cardamom.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003514_4-grb-soan-papdi-real-cardamom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003514-2_8-grb-soan-papdi-real-cardamom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003514-3_8-grb-soan-papdi-real-cardamom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003514-4_8-grb-soan-papdi-real-cardamom.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003514-5_8-grb-soan-papdi-real-cardamom.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Chocolate Soan Papdi",
+  "handle": "chocolate-soan-papdi",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003513_1-grb-soan-papdi-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003513_1-grb-soan-papdi-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Orange Soan Papdi",
+  "handle": "orange-soan-papdi",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003515_1-grb-soan-papdi-orange.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003515_1-grb-soan-papdi-orange.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Butterscotch Soan Papdi",
+  "handle": "butterscotch-soan-papdi",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457693_1-grb-butterscotch-soan-papdi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457693_1-grb-butterscotch-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457693-2_1-grb-butterscotch-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457693-3_1-grb-butterscotch-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457693-4_1-grb-butterscotch-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457693-5_1-grb-butterscotch-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457693-6_1-grb-butterscotch-soan-papdi.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Coconut Soan Papdi",
+  "handle": "coconut-soan-papdi",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457691_1-grb-coconut-soan-papdi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457691_1-grb-coconut-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457691-2_1-grb-coconut-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457691-3_1-grb-coconut-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457691-4_1-grb-coconut-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457691-5_1-grb-coconut-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457691-6_1-grb-coconut-soan-papdi.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pineapple Soan Papdi",
+  "handle": "pineapple-soan-papdi",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457692_1-grb-pineapple-soan-papdi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457692_1-grb-pineapple-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457692-2_1-grb-pineapple-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457692-3_1-grb-pineapple-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457692-4_1-grb-pineapple-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457692-5_1-grb-pineapple-soan-papdi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457692-6_1-grb-pineapple-soan-papdi.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Gulab Jamun",
+  "handle": "gulab-jamun",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077777_1-grb-canned-gulab-jamun.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077777_1-grb-canned-gulab-jamun.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Rasgulla",
+  "handle": "rasgulla",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457694_1-grb-rasogolla.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077778_1-grb-canned-rasogalla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457694_1-grb-rasogolla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457694-2_1-grb-rasogolla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457694-3_1-grb-rasogolla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457694-4_1-grb-rasogolla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457694-5_1-grb-rasogolla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457694-6_1-grb-rasogolla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077778_1-grb-canned-rasogalla.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Gulab Jamun Mix",
+  "handle": "gulab-jamun-mix",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003524_1-grb-mix-gulab-jamun.jpg"
+    }
+   },
+   {
+    "title": "175g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003522_1-grb-mix-gulab-jamun.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40266029_1-grb-gulab-jamun-instant-mix-soft-easy-to-make.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003524_1-grb-mix-gulab-jamun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003522_1-grb-mix-gulab-jamun.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266029_1-grb-gulab-jamun-instant-mix-soft-easy-to-make.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Rava Dosa Mix",
+  "handle": "rava-dosa-mix",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003521_1-grb-mix-rava-dosa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003521_1-grb-mix-rava-dosa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003521-2_1-grb-mix-rava-dosa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003521-3_1-grb-mix-rava-dosa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003521-4_1-grb-mix-rava-dosa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003521-5_1-grb-mix-rava-dosa.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Rava Idly Mix",
+  "handle": "rava-idly-mix",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003532_3-grb-mix-rava-idli.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40266192_1-grb-rava-idly-instant-mix-soft-fluffy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003532_3-grb-mix-rava-idli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003532-2_1-grb-mix-rava-idli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003532-3_1-grb-mix-rava-idli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003532-4_1-grb-mix-rava-idli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003532-5_1-grb-mix-rava-idli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40266192_1-grb-rava-idly-instant-mix-soft-fluffy.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Bajji Bonda Mix",
+  "handle": "bajji-bonda-mix",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "37",
+    "compare_at_price": "37",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077776_1-grb-ready-mix-bajji-bonda.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077776_1-grb-ready-mix-bajji-bonda.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Bisibele Bhath Powder",
+  "handle": "bisibele-bhath-powder",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003520_1-grb-powder-bisibele-bhath.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003520_1-grb-powder-bisibele-bhath.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003520-2_1-grb-powder-bisibele-bhath.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003520-3_1-grb-powder-bisibele-bhath.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003520-4_1-grb-powder-bisibele-bhath.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003520-5_1-grb-powder-bisibele-bhath.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Puliogare Powder",
+  "handle": "puliogare-powder",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003526_2-grb-powder-puliogare.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003526_2-grb-powder-puliogare.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003526-2_1-grb-powder-puliogare.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003526-3_1-grb-powder-puliogare.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003526-4_1-grb-powder-puliogare.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003526-5_1-grb-powder-puliogare.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Vangi Bhath Powder",
+  "handle": "vangi-bhath-powder",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003519_1-grb-powder-vangi-bhath.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003519_1-grb-powder-vangi-bhath.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Rasam Powder",
+  "handle": "rasam-powder",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "58",
+    "compare_at_price": "58",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003527_2-grb-powder-rasam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003527_2-grb-powder-rasam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003527-2_2-grb-powder-rasam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003527-3_2-grb-powder-rasam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003527-4_2-grb-powder-rasam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003527-5_2-grb-powder-rasam.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Sambar Powder",
+  "handle": "sambar-powder",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077773_2-grb-powder-sambar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077773_2-grb-powder-sambar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077773-2_2-grb-powder-sambar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077773-3_2-grb-powder-sambar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077773-4_2-grb-powder-sambar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077773-5_2-grb-powder-sambar.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Red Chilli Powder",
+  "handle": "red-chilli-powder",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "37",
+    "compare_at_price": "37",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077774_2-grb-powder-red-chilli.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077774_2-grb-powder-red-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077774-2_2-grb-powder-red-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077774-3_2-grb-powder-red-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077774-4_2-grb-powder-red-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40077774-5_2-grb-powder-red-chilli.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Butter Murukku",
+  "handle": "butter-murukku",
+  "vendor": "GRB",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457130_1-grb-butter-murukku.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457130_1-grb-butter-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457130-2_1-grb-butter-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457130-3_1-grb-butter-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457130-4_1-grb-butter-murukku.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900457130-5_1-grb-butter-murukku.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

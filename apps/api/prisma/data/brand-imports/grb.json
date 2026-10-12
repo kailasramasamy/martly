@@ -1,0 +1,272 @@
+{
+  "brand": "GRB",
+  "manufacturer": "GRB Dairy Foods Pvt. Ltd.",
+  "feed": "grb-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/grb/logo-85f28477.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#F7B500",
+  "namePrefix": "GRB ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "GRB Cow Ghee": "Ghee"
+  },
+  "rules": [
+    {
+      "match": "^Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Ghee\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Buffalo\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Buffalo Ghee"
+      ]
+    },
+    {
+      "match": "^Buffalo\\ Ghee\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Buffalo Ghee"
+      ]
+    },
+    {
+      "match": "^Bombay\\ Halwa$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Ghee\\ Dates\\ Halwa$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Ghee\\ Dry\\ Fruits\\ Halwa$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Halwa$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Mysore\\ Pak$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Besan\\ Laddu$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Soan\\ Cake$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ Soan\\ Cake$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Soan\\ Cake$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Cardamom\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Orange\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Gulab\\ Jamun$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    },
+    {
+      "match": "^Rasgulla$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Rasgulla & Gulab Jamun"
+      ]
+    },
+    {
+      "match": "^Gulab\\ Jamun\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Rava\\ Dosa\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Rava\\ Idly\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Bajji\\ Bonda\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Besan (Gram Flour)"
+      ]
+    },
+    {
+      "match": "^Bisibele\\ Bhath\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Puliogare\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Vangi\\ Bhath\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Rasam\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sambar\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Red\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Butter\\ Murukku$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    }
+  ]
+}
