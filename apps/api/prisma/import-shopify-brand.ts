@@ -115,7 +115,12 @@ function writeReview(plans: Plan[], existingNames: Set<string>): string {
 
 // null when the source no longer serves the image: one dead pack shot shouldn't stop a brand's import
 async function toWebp(url: string, size: number): Promise<Buffer | null> {
-  const res = await fetch(url);
+  let res = await fetch(url);
+  // Image CDNs throw the odd 502/503/504 under load: retry a few times before giving up
+  for (let attempt = 1; attempt <= 3 && res.status >= 502 && res.status <= 504; attempt++) {
+    await new Promise((resolve) => setTimeout(resolve, attempt * 2000));
+    res = await fetch(url);
+  }
   if (res.status === 404 || res.status === 410) {
     console.warn(`  skipped image (HTTP ${res.status}): ${url}`);
     return null;
