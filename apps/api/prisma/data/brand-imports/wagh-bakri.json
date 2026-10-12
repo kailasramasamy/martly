@@ -1,0 +1,272 @@
+{
+  "brand": "Wagh Bakri",
+  "manufacturer": "Wagh Bakri Tea Group",
+  "feed": "wagh-bakri-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/wagh-bakri/logo-18019b5a.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Wagh Bakri ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Wagh Bakri Masala Chai": "Premium Masala Chai"
+  },
+  "rules": [
+    {
+      "match": "^Premium\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Leaf\\ Tea\\ Carton$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Leaf\\ Tea\\ Jar$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Dust\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Masala\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Royale\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Good\\ Morning\\ Premium\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Navchetan\\ Strong\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Mili\\ Premium\\ Strong\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Mili\\ Dust\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Fanning\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Assam\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Masala\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Organic\\ Darjeeling\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Good\\ Morning\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Honey\\ Lemon\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Mint\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Shudh\\ Kahwa\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Instant\\ Lemon\\ Grass\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Instant\\ Lemon\\ Grass\\ Tea\\ \\-\\ No\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Sipz\\ Masala\\ Instant\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Sipz\\ Ginger\\ Instant\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Sipz\\ Elaichi\\ Instant\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Sipz\\ Instant\\ Chai\\ Premix\\ Combo$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Sipz\\ Lemon\\ Ice\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Sipz\\ Orange\\ Ice\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Sipz\\ Peach\\ Ice\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Ice\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Peach\\ Ice\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    }
+  ]
+}
