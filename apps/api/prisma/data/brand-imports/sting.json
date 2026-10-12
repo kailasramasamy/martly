@@ -1,0 +1,54 @@
+{
+  "brand": "Sting (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt. Ltd.",
+  "feed": "sting-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sting/logo-d58487d5.png",
+  "namePrefix": "Sting ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Berry\\ Blast$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Energy\\ Drink\\ \\-\\ Berry\\ Blast\\ Can$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Classic\\ Kick\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Classic\\ Kick\\ Energy\\ Drink\\ Can$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Gold\\ Night\\ Fuel\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    }
+  ],
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1A1A1A"
+}
