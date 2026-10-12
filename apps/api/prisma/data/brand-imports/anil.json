@@ -1,0 +1,22 @@
+{
+  "brand": "Anil",
+  "manufacturer": "Anil Foods",
+  "feed": "anil-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/anil/logo-098f7aea.png",
+  "themeColor": "#4A2511",
+  "themeColorSecondary": "#F5A623",
+  "namePrefix": "Anil ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Happala$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    }
+  ]
+}

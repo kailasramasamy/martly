@@ -1,0 +1,46 @@
+[
+ {
+  "title": "Happala",
+  "handle": "happala",
+  "vendor": "Anil",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "82",
+    "compare_at_price": "82",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266293_4-anil-happala.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "57",
+    "compare_at_price": "57",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266294_2-anil-happala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266293_4-anil-happala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266293-2_2-anil-happala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266293-3_2-anil-happala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266293-4_2-anil-happala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/266294_2-anil-happala.jpg"
+   }
+  ]
+ }
+]
