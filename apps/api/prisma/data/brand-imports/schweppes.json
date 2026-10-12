@@ -1,0 +1,88 @@
+{
+  "brand": "Schweppes (Coca-Cola)",
+  "manufacturer": "Hindustan Coca-Cola Beverages Pvt. Ltd.",
+  "feed": "schweppes-feed.json",
+  "themeColor": "#FDB913",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Schweppes ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Schweppes Tonic Water": "Indian Tonic Water"
+  },
+  "rules": [
+    {
+      "match": "^Indian\\ Tonic\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Zero\\ Sugar\\ Tonic\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Original\\ Ginger\\ Ale$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Original\\ Soda\\ Water$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Bitter\\ Lemon\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Mint\\ Mojito\\ Sparkling\\ Mixer$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Cranberry\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Flavoured Water"
+      ]
+    },
+    {
+      "match": "^Peach\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Flavoured Water"
+      ]
+    },
+    {
+      "match": "^Zesty\\ Lime\\ Sparkling\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Flavoured Water"
+      ]
+    }
+  ],
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/schweppes/logo-885b2db9.png"
+}
