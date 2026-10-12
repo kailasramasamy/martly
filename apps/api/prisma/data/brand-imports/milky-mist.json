@@ -1,0 +1,883 @@
+{
+  "brand": "Milky Mist",
+  "manufacturer": "Milky Mist Dairy Food Ltd",
+  "feed": "milky-mist-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/milky-mist/logo-5a4d675a.png",
+  "themeColor": "#09234D",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Milky Mist ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Milky Mist Fresh Paneer Block": "Paneer",
+    "Milky Mist Greek Yogurt - Plain": "Probiotic Plain Greek Yogurt",
+    "Milky Mist Mozzarella Cheese": "Pizza Mozzarella Cheese",
+    "Milky Mist Salted Butter": "Table Butter Salted"
+  },
+  "rules": [
+    {
+      "match": "^Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Processed\\ Cheese\\ Tin$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Processed\\ Cheese\\ Cubes$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Cheddar\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cheddar"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Mozzarella\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Mozzarella\\ Pizza\\ Cheese\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Shredded\\ Mozzarella\\ Pizza\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Diced\\ Mozzarella\\ Pizza\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Diced\\ Mozzarella\\ \\&\\ Cheddar\\ Cheese\\ Blend$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Cream\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Italian\\ Cream\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Plain\\ Cheese\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Cheese\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Pepper\\ Cheese\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    },
+    {
+      "match": "^Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Low\\ Fat\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Table\\ Butter\\ Salted$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Salted\\ Table\\ Butter\\ Tub$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Table\\ Butter\\ Chiplets$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Salted Butter"
+      ]
+    },
+    {
+      "match": "^Unsalted\\ Cooking\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Ghee\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Cream$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Low\\ Fat\\ UHT\\ Cream$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Unsweetened\\ Khova$",
+      "path": [
+        "Dairy",
+        "Condensed & Evaporated Milk",
+        "Khoya (Mawa)"
+      ]
+    },
+    {
+      "match": "^Sweetened\\ Condensed\\ Milk$",
+      "path": [
+        "Dairy",
+        "Condensed & Evaporated Milk",
+        "Condensed Milk (Milkmaid)"
+      ]
+    },
+    {
+      "match": "^Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Curd\\ Pouch$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Farm\\ Fresh\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Probiotic\\ Curd$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Probiotic Yogurt"
+      ]
+    },
+    {
+      "match": "^Probiotic\\ Plain\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Mango\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Cereals\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Honey\\ \\&\\ Fig\\ Greek\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Skyr\\ High\\ Protein\\ Plain\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Skyr\\ Blueberry\\ Icelandic\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Greek Yogurt"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Fruit\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Mango\\ Fruit\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Fruit\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Peach\\ Fruit\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Fruit\\ Yogurt$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Elachi\\ Shrikhand$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Mango\\ Shrikhand$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Flavoured Yogurt"
+      ]
+    },
+    {
+      "match": "^Mishti\\ Doi$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Mishti Doi"
+      ]
+    },
+    {
+      "match": "^Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Double\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Double Toned Milk"
+      ]
+    },
+    {
+      "match": "^Skimmed\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Skimmed Milk"
+      ]
+    },
+    {
+      "match": "^Lactose\\ Free\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "UHT / Long Life Milk"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Mango\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Mango\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Rose\\ Lassi$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Lassi"
+      ]
+    },
+    {
+      "match": "^Spiced\\ Buttermilk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Buttermilk (Chaas)"
+      ]
+    },
+    {
+      "match": "^French\\ Vanilla\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Butterscotch\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Prime\\ Strawberry\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Italian\\ Chocolate\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Italian\\ Chocolate\\ Delight\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Afghani\\ Fruit\\ 'N'\\ Nut\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Black\\ Currant\\ Splash\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Cookies\\ O\\ Cream\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Frosty\\ Cookies\\ O\\ Creamie\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Dulce\\ De\\ Leche\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Majestic\\ Roasted\\ Almond\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Doom\\ Litchi\\ Frosty\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Tender\\ Coconut\\ Frosty\\ Fusion\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Mango\\ Frosty\\ Fusion\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Mango\\ Pulpy\\ Delight\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Spanish\\ Orange\\ Frosty\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Spanish\\ Tangy\\ Orange\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alphonso\\ Mango\\ Delight\\ Ice\\ Cream\\ Cup$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Almond\\ Capella\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ \\&\\ Vanilla\\ Capella\\ Duet\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ \\&\\ Vanilla\\ Capella\\ Duet\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Banana\\ Caramel\\ Capella\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ Capella\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Capella\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Pista\\ Badam\\ Ice\\ Cream\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Sandwich\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Sandwich\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Cassata\\ Slice\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Capella\\ 70%\\ Dark\\ Chocolate\\ Classic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ 70%\\ Dark\\ Chocolate\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ 70%\\ Dark\\ Chocolate\\ Hazelnut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ 70%\\ Dark\\ Chocolate\\ Orange$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ 55%\\ Dark\\ Chocolate\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ 55%\\ Dark\\ Chocolate\\ Hazelnut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ Cameroon\\ Single\\ Origin\\ 55%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ Peru\\ Single\\ Origin\\ 55%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ Venezuela\\ Single\\ Origin\\ 55%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Capella\\ Milk\\ Chocolate\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Paneer\\ Crunchies$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Smart\\ Chef\\ Paneer\\ Tikka$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Smart\\ Chef\\ Margherita\\ Pizza$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Smart\\ Chef\\ Four\\ Cheese\\ Pizza$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Smart\\ Chef\\ Paneer\\ Makhani\\ Pizza$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Smart\\ Chef\\ Indian\\ Farmers\\ Pizza$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Asal\\ Half\\ Cooked\\ Methi\\ Chapati$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Asal\\ Red\\ Rice\\ Idly\\ \\&\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    }
+  ]
+}
