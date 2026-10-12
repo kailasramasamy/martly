@@ -1,0 +1,175 @@
+[
+ {
+  "title": "Traditional Basmati Rice",
+  "handle": "traditional-basmati-rice",
+  "vendor": "Lal Qilla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30008715_3-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "1330",
+    "compare_at_price": "1330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30008716_3-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008715_3-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008715-2_2-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008715-3_2-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008715-4_2-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008715-5_2-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008716_3-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Super Silverline Basmati Rice",
+  "handle": "super-silverline-basmati-rice",
+  "vendor": "Lal Qilla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220305_1-lal-qilla-basmati-rice-super-silverline.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "945",
+    "compare_at_price": "945",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220306_1-lal-qilla-basmati-rice-super-silverline.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220305_1-lal-qilla-basmati-rice-super-silverline.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220305-2_1-lal-qilla-basmati-rice-super-silverline.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220305-3_1-lal-qilla-basmati-rice-super-silverline.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220305-4_1-lal-qilla-basmati-rice-super-silverline.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220305-5_1-lal-qilla-basmati-rice-super-silverline.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220305-6_1-lal-qilla-basmati-rice-super-silverline.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220306_1-lal-qilla-basmati-rice-super-silverline.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Majestic Basmati Rice",
+  "handle": "majestic-basmati-rice",
+  "vendor": "Lal Qilla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220307_1-lal-qilla-majestic-basmati-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220307_1-lal-qilla-majestic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220307-2_1-lal-qilla-majestic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220307-3_1-lal-qilla-majestic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220307-4_1-lal-qilla-majestic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220307-5_1-lal-qilla-majestic-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220307-6_1-lal-qilla-majestic-basmati-rice.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Brown Basmati Rice",
+  "handle": "brown-basmati-rice",
+  "vendor": "Lal Qilla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220309_1-lal-qilla-brown-basmati-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220309_1-lal-qilla-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220309-2_1-lal-qilla-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220309-3_1-lal-qilla-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220309-4_1-lal-qilla-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220309-5_1-lal-qilla-brown-basmati-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220309-6_1-lal-qilla-brown-basmati-rice.jpg"
+   }
+  ]
+ }
+]

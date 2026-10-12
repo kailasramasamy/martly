@@ -1,0 +1,46 @@
+{
+  "brand": "Lal Qilla",
+  "manufacturer": "Amar Singh Chawal Wala",
+  "feed": "lal-qilla-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lal-qilla/logo-b9db26d7.png",
+  "themeColor": "#E8262E",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Lal Qilla ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Traditional\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Super\\ Silverline\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Majestic\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Brown\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    }
+  ]
+}
