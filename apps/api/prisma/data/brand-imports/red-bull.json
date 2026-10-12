@@ -1,0 +1,94 @@
+{
+  "brand": "Red Bull",
+  "manufacturer": "Red Bull India Pvt. Ltd.",
+  "feed": "red-bull-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/red-bull/logo-5098d899.png",
+  "themeColor": "#DB0A40",
+  "themeColorSecondary": "#FFC906",
+  "namePrefix": "Red Bull ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Sugar\\ Free\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Purple\\ Edition\\ Energy\\ Drink\\ \\-\\ Acai\\ Berry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Green\\ Edition\\ Energy\\ Drink\\ \\-\\ Curuba\\ Elderflower$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Green\\ Edition\\ Energy\\ Drink\\ \\-\\ Dragon\\ Fruit$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Red\\ Edition\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Yellow\\ Edition\\ Energy\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Summer\\ Edition\\ Energy\\ Drink\\ \\-\\ Apricot\\ Strawberry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Pink\\ Edition\\ Energy\\ Drink\\ \\-\\ White\\ Peach$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Plus\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    }
+  ]
+}
