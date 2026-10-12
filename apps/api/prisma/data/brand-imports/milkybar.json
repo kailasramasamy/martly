@@ -1,0 +1,57 @@
+{
+  "brand": "Milkybar (Nestle)",
+  "manufacturer": "Nestle India Limited",
+  "feed": "milkybar-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/milkybar-nestle/logo-b75bc77e.png",
+  "themeColor": "#1F4E9C",
+  "themeColorSecondary": "#E1261C",
+  "namePrefix": "Milkybar ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Nestle Milkybar White Chocolate": "White Chocolate",
+    "Nestle Milkybar Choo": "Choo Classic"
+  },
+  "rules": [
+    {
+      "match": "^White\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "White Chocolate"
+      ]
+    },
+    {
+      "match": "^Choo\\ Classic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "White Chocolate"
+      ]
+    },
+    {
+      "match": "^Choo\\ Strawberry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "White Chocolate"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ Bite$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "White Chocolate"
+      ]
+    },
+    {
+      "match": "^Moosha\\ Cocoa\\ Crispies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "White Chocolate"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+[
+ {
+  "title": "White Chocolate",
+  "handle": "white-chocolate",
+  "vendor": "Milkybar (Nestle)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "12.5g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40090019_19-nestle-milkybar-bar.jpg"
+    },
+    "barcode": "8901058861433"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40090019_19-nestle-milkybar-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40090019-2_18-nestle-milkybar-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40090019-3_17-nestle-milkybar-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40090019-4_17-nestle-milkybar-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40090019-5_17-nestle-milkybar-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40090019-6_15-nestle-milkybar-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40090019-7_2-nestle-milkybar-bar.jpg"
+   }
+  ],
+  "details": {
+   "ingredients": "Milk Solids (35%), Sugar, Hydrogenated Vegetable Fats, Fractionated Vegetable Fat, Emulsifier (Soya Lecithin), Nature-Identical Flavouring Substance.\nAllergen Note: Contains Milk, Soy And Sesame. May Contain Wheat.\nNutritional Info:\nServing Size: 1 Bar (12.5 g)\nPer 100 g\nEnergy: 524 kcal\nProtein: 11.1 g\nCarbohydrates: 50.1 g\nTotal Sugars: 40.9 g\nAdded Sugars: 33.9 g\nTotal Fat: 30 g\nSaturated Fat: 28.7 g\nTrans Fat: 0.09 g\nSodium: 1171 mg",
+   "manufacturerName": "India Ltd",
+   "fssaiLicense": "10012011000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choo Classic",
+  "handle": "choo-classic",
+  "vendor": "Milkybar (Nestle)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221_10-nestle-milkybar-choo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221_10-nestle-milkybar-choo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221-2_9-nestle-milkybar-choo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221-3_9-nestle-milkybar-choo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221-4_9-nestle-milkybar-choo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221-5_9-nestle-milkybar-choo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221-6_7-nestle-milkybar-choo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221-7_7-nestle-milkybar-choo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020221-8_7-nestle-milkybar-choo.jpg"
+   }
+  ],
+  "details": {
+   "description": "Enjoy a delicious treat with Nestle Milkybar Moosha. A true delight that lets you enjoy the yummy and creamy taste in every bite. The delicious and creamy taste of caramel and nougat in Nestle Milkybar makes it an indulgent treat. This yummy bar with milk being 1st in its recipe is best enjoyed when shared. Relish life’s little pleasures with treats that are yummy to eat and fun to share.",
+   "ingredients": "Sugar, Liquid Glucose, Milk Solids (16%), Hydrogenated Vegetable Fats, Fractionated Vegetable Fat, Emulsifier (Soya Lecithin), Acidity Regulator (330), Stabilizer (501(I)), Nature-Identical Flavouring Substances And Artificial (Vanilla) Flavouring Substances.\nAllergen Note: Contains Milk, Sesame, Soy And Wheat. May Contains Barley.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "434",
+    "Protein (g)": "4.8",
+    "Carbohydrate (g)": "68.9",
+    "Total Sugars (g)": "55.4",
+    "Added Sugars (g)": "48.0",
+    "Total Fat (g)": "15.4",
+    "Saturated Fat (g)": "14.7",
+    "Trans Fat (g)": "0.07",
+    "Sodium (mg)": "59.9"
+   },
+   "manufacturerName": "Nestlé India Ltd",
+   "fssaiLicense": "10012011000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choo Strawberry",
+  "handle": "choo-strawberry",
+  "vendor": "Milkybar (Nestle)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40020219_13-nestle-milkybar-choo-strawberry-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020219_13-nestle-milkybar-choo-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020219-2_11-nestle-milkybar-choo-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020219-3_11-nestle-milkybar-choo-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020219-4_11-nestle-milkybar-choo-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020219-5_11-nestle-milkybar-choo-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020219-6_9-nestle-milkybar-choo-strawberry-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020219-7_2-nestle-milkybar-choo-strawberry-flavour.jpg"
+   }
+  ],
+  "details": {
+   "description": "Enjoy a delicious treat with Nestle Milkybar Moosha. A true delight that lets you enjoy the yummy and creamy taste in every bite. The delicious and creamy taste of caramel and nougat in Nestle Milkybar makes it an indulgent treat. This yummy bar with milk being 1st in its recipe is best enjoyed when shared. Relish life’s little pleasures with treats that are yummy to eat and fun to share.",
+   "ingredients": "Sugar, Liquid Glucose, Milk Solids (16%), Hydrogenated Vegetable Fats, Fractionated Vegetable Fat. Emulsifier (Soya Lecithin), Color (162), Artificial (Strawberry And Vanilla) Flavouring Substances, Acidity Regulator (330), Stabilizer (501(I)) And Nature-Identical Flavouring Substances.\nAllergen Note: Contains Milk, Sesame, Soy And Wheat.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "436",
+    "Protein (g)": "5.0",
+    "Carbohydrate (g)": "69.8",
+    "Total Sugars (g)": "52.0",
+    "Added Sugars (g)": "45.0",
+    "]Total Fat (g)": "15.1",
+    "Saturated Fat (g)": "13.6",
+    "Trans Fat (g)": "0.08",
+    "Sodium (mg)": "93.1"
+   },
+   "manufacturerName": "India Limited",
+   "fssaiLicense": "10012011000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Butterscotch Bite",
+  "handle": "butterscotch-bite",
+  "vendor": "Milkybar (Nestle)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "45g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359867_1-nestle-milkybar-butterscotch-bite.jpg"
+    },
+    "barcode": "8901058027051"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359867_1-nestle-milkybar-butterscotch-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359867-2_1-nestle-milkybar-butterscotch-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359867-3_1-nestle-milkybar-butterscotch-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359867-4_1-nestle-milkybar-butterscotch-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359867-5_1-nestle-milkybar-butterscotch-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359867-6_1-nestle-milkybar-butterscotch-bite.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359867-7_1-nestle-milkybar-butterscotch-bite.jpg"
+   }
+  ],
+  "details": {
+   "description": "Milkybar Mould Crunchy Butterscotch Bits is a deliciously creamy white choco treat from Nestlé, featuring the classic smooth Milkybar taste paired with crunchy butterscotch bits in every bite. Made with milk as the number one ingredient, it offers a rich, melt-in-your-mouth experience perfect for satisfying sweet cravings on the go or sharing with family and friends.",
+   "ingredients": "Milk Solids (31%), Sugar, Hydrogenated Vegetable Fats, Butterscotch Bits (10%) [Sugar, Cashew Nut, Hydrogenated Vegetable Fats, Edible Starch, And Nature-Identical (Butterscotch) Flavouring Substances], Fractionated Vegetable Fat, Emulsifier (Soya Lecithin), And Nature-Identical Flavouring Substances.\nAllergen Information: Contains Milk, Soya, Sesame, And Nuts.",
+   "nutritionalInfo": {
+    "Serving Size": "22.5 G (1/4 Bar)",
+    "Energy": "478 Kcal",
+    "Protein": "7.1 G",
+    "Carbohydrate": "53.6 G",
+    "Total Sugars": "43.7 G",
+    "Added Sugars": "39.5 G",
+    "Total Fat": "26.2 G",
+    "Saturated Fat": "25.8 G (Not More Than)",
+    "Trans Fat": "0.01 G (Not More Than)*",
+    "Sodium": "87.2 Mg"
+   },
+   "manufacturerName": "Nestlé India Ltd",
+   "fssaiLicense": "10012011000168",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Moosha Cocoa Crispies",
+  "handle": "moosha-cocoa-crispies",
+  "vendor": "Milkybar (Nestle)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "45g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40173054_3-milkybar-moosha-wheat-cocoa-crispies.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173054_3-milkybar-moosha-wheat-cocoa-crispies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173054-2_4-milkybar-moosha-wheat-cocoa-crispies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173054-3_4-milkybar-moosha-wheat-cocoa-crispies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173054-4_4-milkybar-moosha-wheat-cocoa-crispies.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173054-5_4-milkybar-moosha-wheat-cocoa-crispies.jpg"
+   }
+  ],
+  "details": {
+   "description": "Why Milkybar®?\nEnjoy a delicious treat with Nestlé® Milkybar® Moosha Wheat Cocoa Crispies. A true delight which lets you enjoy the yummy and creamy taste in every bite with milk 1st in its recipe.\nWhat makes it unique?\nThe delicious and creamy taste of Nestlé® Milkybar® Moosha Wheat Cocoa Crispies with crispy cocoa balls made of wheat flour and cocoa makes it an indulgent treat.\nWhen to have Milkybar®?\nThis yummy bar with milk being 1st in its recipe is best enjoyed when shared. Relish life’s little pleasures with treats that are yummy to eat and fun to share. Benefits.GOODNESS OF MILK: Enjoy the goodness of milk with Nestlé® Milkybar® Moosha Wheat Cocoa Crispies\nMILK* IS 1ST IN ITS RECIPE: Enjoy a creamy and crunchy treat with Nestlé® Milkybar® Moosha Wheat Cocoa Crispies\nCRISPY COCOA: Crispy cocoa balls made of wheat flour and cocoa added to the creamy treat\nENJOY IT ANYTIME: A perfect treat for after-meal indulgence or on the go\nVEGETARIAN PRODUCT: Milkybar® is a vegetarian product\n*Milk here refers to milk solids",
+   "ingredients": "Milk Solids (32.6%), Sugar, Hydrogenated Vegetable Fats (Contain Sesame Oil), Wheat Cocoa Crispy Balls (8%) (Refined Wheat Flour (Maida), Edible Starch, Cocoa Solids (0.2%), Stabilizer (170(I)) And Sugar), Edible Vegetable Fats And Emulsifier (Soya Lecithin).",
+   "storageInstructions": "Usage: Consume Directly.\nStorage: Store in a cool, dry and hygienic place.\nSafety Information (Warning): May contain Gluten.",
+   "manufacturerName": "Nestle India Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000168"
+  }
+ }
+]

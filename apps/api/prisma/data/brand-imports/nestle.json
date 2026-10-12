@@ -1,0 +1,442 @@
+{
+  "brand": "Nestle",
+  "manufacturer": "Nestle India Limited",
+  "feed": "nestle-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nestle/logo-63d5d592.png",
+  "themeColor": "#63513D",
+  "themeColorSecondary": "#E1261C",
+  "namePrefix": "Nestle ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Nestle Cerelac Baby Cereal - Multigrain Dal Veg (Stage 4)": "Cerelac Multigrain Dal Veg Baby Cereal",
+    "Nestle Cerelac Baby Cereal - Wheat Apple (Stage 2)": "Cerelac Wheat Apple Baby Cereal",
+    "Nestle NAN PRO 1 Infant Formula": "NAN Pro 1 Infant Formula"
+  },
+  "rules": [
+    {
+      "match": "^Cerelac\\ 5\\ Grains\\ \\&\\ Fruits\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ 5\\ Grains\\ \\&\\ Vegetables\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Khichdi\\ with\\ Vegetables\\ \\&\\ Ghee\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Multigrain\\ \\&\\ Fruits\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Multigrain\\ Dal\\ Veg\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Rice\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Ragi\\ Apple\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Rice\\ Vegetables\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Wheat\\ Apple\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Wheat\\ Apple\\ Carrot\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Wheat\\ Apple\\ Cherry\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Wheat\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Wheat\\ Orange\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Wheat\\-Rice\\ Mixed\\ Fruit\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Wheat\\-Rice\\ Mixed\\ Veg\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Ceregrow\\ Grain\\ Selection\\ Ragi,\\ Mixed\\ Fruit\\ \\&\\ Ghee\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Ceregrow\\ Multigrain\\ Cereal\\ with\\ Milk\\ \\&\\ Fruits$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Nestum\\ Rice\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Nestum\\ Rice\\ Fruits\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Lactogen\\ Pro\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Lactogen\\ Pro\\ 2\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Lactogen\\ Pro\\ 3\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Lactogen\\ Pro\\ 4\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Lactogrow\\ Nutritious\\ Milk\\ Powder\\ \\(2\\-6\\ Years\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Nangrow\\ Nutritious\\ Milk\\ Drink\\ \\(2\\-6\\ Years\\)$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^NAN\\ Pro\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^NAN\\ Pro\\ 2\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^NAN\\ Pro\\ 3\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^NAN\\ Pro\\ 4\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^NAN\\ Excella\\ Pro\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^NAN\\ Excella\\ Pro\\ 2\\ Follow\\-Up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^NAN\\ Lo\\-Lac\\ Infant\\ Milk\\ Powder$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Nestogen\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^Resource\\ High\\ Protein\\ Whey\\ Supplement$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Resource\\ Diabetic\\ Nutrition\\ Supplement$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Bar\\ One\\ Nougat\\ \\&\\ Caramel\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Chocolate Bars & Countlines"
+      ]
+    },
+    {
+      "match": "^Classic\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Classic\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Classic\\ Home\\ Treat\\ Chocolates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Classic\\ Fruit\\ N\\ Nut\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Festive\\ Greetings\\ Chocolate\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Everyday\\ Dairy\\ Whitener$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Dairy Whitener"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Mate\\ Original\\ Coffee\\ Creamer$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Dairy Whitener"
+      ]
+    },
+    {
+      "match": "^Cream\\ Original$",
+      "path": [
+        "Dairy",
+        "Cream & Dairy Whitener",
+        "Fresh Cream"
+      ]
+    },
+    {
+      "match": "^Everyday\\ Shahi\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Crunchy\\ Corn\\ \\&\\ Oat\\ Flakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Cornflakes"
+      ]
+    },
+    {
+      "match": "^Gold\\ Crunchy\\ Nutty\\ Granola$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Milkmaid\\ Sweetened\\ Condensed\\ Milk$",
+      "path": [
+        "Dairy",
+        "Condensed & Evaporated Milk",
+        "Condensed Milk (Milkmaid)"
+      ]
+    },
+    {
+      "match": "^Milo\\ Activ\\-Go\\ Chocolate\\ Malt\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Milo\\ for\\ Teenage\\ Nutrition\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Milo\\ Ready\\ to\\ Drink\\ Cocoa\\ Malt$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nesquik\\ Banana\\ Milkshake\\ Mix$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Nestea\\ Iced\\ Tea\\ Green\\ Tea\\ Mint$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    }
+  ]
+}
