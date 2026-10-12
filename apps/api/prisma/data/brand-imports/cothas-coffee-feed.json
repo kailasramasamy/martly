@@ -42,7 +42,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000104_3-cothas-coffee-coffee-powder-premium-blended.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Cothas Premium Blended Coffee Powder brings to you the authentic taste of coffee in its purest form. It is pure granulated coffee from South Indian plantations with the perfect blend of high-quality Arabica and Robusta coffee beans. The coffee is finely sorted and roasted to perfection it delivers a mix that retains its qualities for a long time. This smooth coffee mix is an excellent way to kick start the day. Now savour the authentic flavour in every sip with this pure coffee. It is easy to make without any hassle.",
+   "manufacturerName": "Cothas Coffee Co",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Speciality Blend Coffee",
@@ -58,7 +63,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100333520_4-cothas-coffee-coffee-powder-speciality-blend-of-coffee-chicory-powder.jpg"
-    }
+    },
+    "barcode": "8906002771011"
    },
    {
     "title": "500g",
@@ -90,7 +96,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/186070_10-cothas-coffee-.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, aromatic experience of Cothas Speciality Blend Coffee, a premium coffee powder that has captivated coffee enthusiasts for generations. Crafted with 85% premium coffee and 15% chicory, this blend delivers an authentic South Indian taste that is both delicious and healthful. Sourced from the exceptional coffee-growing regions of Karnataka, such as Kodagu and Chikmangaluru, each cup promises a distinctly rich flavour that provides physical and mental stimulation - the perfect fuel to start your day with inspiration and energy. Not only is this blend delightful, but it also offers remarkable health benefits, including the ability to destroy intestinal parasites, cleanse the blood, and improve liver health. As the leading South Indian filter coffee in India, Cothas Coffee is a brand you can trust for a consistently great cup of coffee, whether enjoyed on its own or as part of your daily ritual.",
+   "ingredients": "Roast And Ground Coffee, Chicory",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "429 kcal",
+    "Protein (g)": "12.9 g",
+    "Carbohydrate (g)": "69.5 g",
+    "Total Sugars (g)": "10.4 g",
+    "Total Fat (g)": "11.5 g",
+    "Saturated Fat (g)": "4.7 g",
+    "Polyunsaturated Fat (g)": "5.5 g",
+    "Monounsaturated Fat (g)": "1.0 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Vitamin C (mg)": "39.6 mg",
+    "calcium (mg)": "104.1 mg",
+    "Iron (mg)": "4.3 mg",
+    "Sodium (mg)": "72.5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Cothas Coffee Co",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Extra Strong Hotel Blend Coffee",
@@ -138,7 +168,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/186232_11-cothas-coffee-coffee-powder-extra-strong.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the robust and invigorating essence of Cothas Coffee Powder - Extra Strong. Perfectly roasted and ground, this premium blend delivers a bold, rich flavour with every cup. Ideal for true coffee connoisseurs seeking a powerful and aromatic brew to start their day or enjoy any time.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "386 kcal",
+    "Protein (g)": "10.2 g",
+    "Carbohydrate (g)": "73.9 g",
+    "Fat (g)": "7.6 g",
+    "Saturated Fat (g)": "3.7 g",
+    "Polyunsaturated Fat (g)": "3.1 g",
+    "Monounsaturated Fat (g)": "0.7 g",
+    "Trans Fat (g)": "TRACES",
+    "Cholesterol": "NIL",
+    "Vitamins": "TRACES",
+    "Minerals": "TRACES"
+   },
+   "manufacturerName": "Cothas Coffee Co. 609-560/1 609-560/2 & 323 Part B Jigani Bommasandra Link Road Jigani Ind. Area Anekal Taluk Bengaluru ",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Special Hotel Blend Coffee",
@@ -154,7 +203,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/252164_3-cothas-coffee-coffee-powder-premium-special.jpg"
-    }
+    },
+    "barcode": "8906002777020"
    },
    {
     "title": "500g",
@@ -186,7 +236,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/186077_4-cothas-coffee-coffee-powder-premium-special.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, captivating flavour of Cothas Premium Coffee Powder. Crafted from the finest roasted coffee beans, this authentic South Indian blend offers a smooth and invigorating taste that is sure to delight coffee enthusiasts. With a medium roast and a harmonious blend of 80% coffee and 20% chicory, this coffee powder delivers a wonderful aroma and a light, yet kind acerbity that lingers pleasantly on the palate. Prepare it quickly and hassle-free for a truly memorable coffee experience that will stay in your memory long after the last sip.",
+   "ingredients": "Roast and Ground Coffee, Chicory",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Energy (Kcal)": "391 Kcal",
+    "Protein (g)": "12.4 g",
+    "Carbohydrate (g)": "69.4 g",
+    "Fat (g)": "9.0 g",
+    "Saturated Fat (g)": "3.7 g",
+    "Polyunsaturated Fat (g)": "4.6 g",
+    "Monounsaturated Fat (g)": "0.6 g",
+    "Trans Fat (g)": "TRACES",
+    "Cholesterol": "NIL",
+    "Vitamins": "TRACES",
+    "Minerals": "TRACES"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Cothas Coffee Co",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Perfect Blend Filter Coffee",
@@ -234,7 +305,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329479_1-cothas-coffee-perfect-blend-filter-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Cothas Premium Blended Coffee Powder brings to you the authentic taste of coffee in its purest form. It is pure granulated coffee from South Indian plantations with the perfect blend of high-quality Arabica and Robusta coffee beans. The coffee is finely sorted and roasted to perfection it delivers a mix that retains its qualities for a long time. This smooth coffee mix is an excellent way to kick start the day. Now savour the authentic flavour in every sip with this pure coffee. It is easy to make without any hassle.",
+   "ingredients": "Roast And Ground Coffee, Chicory",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "200g",
+    "Energy (kcal)": "406 kcal",
+    "Protein (g)": "10.8 g",
+    "Carbohydrate (g)": "70.7 g",
+    "Fat (g)": "10.8 g",
+    "Saturated Fat (g)": "5.5 g",
+    "Polyunsaturated Fat (g)": "4.4 g",
+    "Monounsaturated Fat (g)": "0.8 g",
+    "Trans Fat (g)": "Traces",
+    "Cholesterol": "Nil",
+    "Vitamins": "Traces",
+    "Minerals": "Traces"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Cothas Coffee Co. & 609-560/1",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Nova Blend Filter Coffee",
@@ -282,7 +376,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40087136_3-cothas-coffee-coffee-powder-pure-filter-nova-therm.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Made with an innovative thermal manufacturing process to long retain maximum aroma, Nova Therm offers the purest taste of coffee in our range, being devoid of any chicory. Mountainous regions in Karnataka like Kodagu and Chikmangaluru have always boasted of slopes teeming with exceptional coffee beans. Cothas partners with select growers from these areas to ensure that nothing but the finest beans are procured.",
+   "ingredients": "Roast and ground coffee powder",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Energy (Kcal)": "417 Kcal",
+    "Protein (g)": "11.2 g",
+    "Carbohydrate (g)": "68.7 g",
+    "Fat (g)": "12.7 g",
+    "Saturated Fat (g)": "6.4 g",
+    "Polyunsaturated Fat (g)": "5.2 g",
+    "Monounsaturated Fat (g)": "0.9 g",
+    "Trans Fat (g)": "TRACES",
+    "Cholesterol": "NIL",
+    "Vitamins": "TRACES",
+    "Minerals": "TRACES"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Cothas Coffee Co",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Deccan Brew Coffee",
@@ -318,7 +433,32 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329480-5_1-cothas-coffee-deccan-brew-coffee-powder.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Inspired by the bold flavours of the Deccan region, our Deccan Brew coffee is the perfect blend for those who like their coffee to be packed with flavour and strength. Finely powdered coffee beans give you a rich, smooth decoction for flavourful coffee that will rejuvenate your senses.",
+   "ingredients": "Roast And Ground Coffee & Chicory",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "100g",
+    "Energy (kcal)": "399 kcal",
+    "Protein (g)": "14.4 g",
+    "Carbohydrate (g)": "72.3 g",
+    "Total Fat (g)": "5.8 g",
+    "Saturated Fat (g)": "4.47 g",
+    "Polyunsaturated Fat (g)": "0.47 g",
+    "Monounsaturated Fat (g)": "0.86 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Vitamin C (mg)": "Traces mg",
+    "calcium (mg)": "157 mg",
+    "Iron (mg)": "5.1 mg",
+    "Sodium (mg)": "360.8 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Cothas Coffee Co. & 609-560/1",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Blend Strong Coffee",
@@ -354,7 +494,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100333523-5_2-cothas-coffee-coffee-powder-premium-blended.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Cothas Premium Special Coffee Powder offers the rich flavour and aroma of usual filter coffee along with the belief and superiority of a truly world-class product. It has good quality flavour, which is affordable and suitable. It has robust roasted and aromatic flavour. The quantity is high and consistent, the flavour is rich, and the aroma is outstanding.",
+   "ingredients": "Roast and Ground Coffee, Chicory",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Energy (Kcal)": "421.9",
+    "Protein (g)": "15.0",
+    "Carbohydrate (g)": "67.9",
+    "Total Fat (g)": "10.4",
+    "Saturated Fat (g)": "4.5",
+    "Polyunsaturated Fat (g)": "4.8",
+    "Monounsaturated Fat (g)": "1.0",
+    "Trans Fat (g)": "0.1",
+    "Cholesterol (mg)": "0.2",
+    "Vitamin C (mg)": "0.1",
+    "Calcium (mg)": "133.0",
+    "Iron (mg)": "4.9",
+    "Sodium (mg)": "70.9"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Cothas Coffee Co",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Filter Coffee Decoction",
@@ -370,7 +533,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40244577_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
-    }
+    },
+    "barcode": "8906002770618"
    },
    {
     "title": "200ml",
@@ -408,7 +572,24 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244941_3-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Cothas Premium Blend Filter Coffee Decoction is made of a blend of 70% coffee and 30% chicory. It is a perfect way to enjoy traditional filter coffee. The coffee is roasted and ground authentically. A simple solution that helps you make the perfect filter coffee. Just open this pack and mix it with whole milk to enjoy the perfect cup of nostalgia. It does not contain any added preservatives, colour or artificial flavours. This smooth coffee mix is an excellent way to kick start the day. It is easy to make without any hassle.",
+   "ingredients": "Ro-Purified Water, Coffee 70%, Chicory 30%",
+   "nutritionalInfo": {
+    "Energy": "31.6 kcal",
+    "Protein": "1.0 g",
+    "Carbohydrate": "6.9 g",
+    "Total Fat": "0.5 g",
+    "Moisture": "91.3 g",
+    "Total Sugars": "0 g",
+    "Caffeine Content": "0.27 g\\"
+   },
+   "storageInstructions": "* Store in a clean, dry place away from sunlight\n* Consume immediately once opened and do not reheat the decoction",
+   "manufacturerName": "Cothas Coffee Co",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000955"
+  }
  },
  {
   "title": "Filter Coffee Decoction - 15% Chicory",
@@ -424,7 +605,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40244575_2-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
-    }
+    },
+    "barcode": "8906002770595"
    },
    {
     "title": "200ml",
@@ -459,7 +641,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244576_3-cothas-coffee-filter-coffee-decoction-chicory-blend-roasted-ground-smooth-no-preservatives.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Cothas Speciality Blend Filter Coffee Decoction is made of a blend of 85% coffee and 15% chicory. It is a perfect way to enjoy traditional filter coffee. The coffee is roasted and ground authentically. A simple solution that helps you make the perfect filter coffee. Just open this pack and mix it with whole milk to enjoy the perfect cup of nostalgia. It does not contain any added preservatives, colour or artificial flavours. This smooth coffee mix is an excellent way to kick-start the day. It is easy to make without any hassle. Mountainous regions in Karnataka like Kodagu and Chikmangaluru have always boasted of slopes teeming with exceptional coffee beans. Cothas partners with select growers from these areas to ensure that nothing but the finest beans are procured.",
+   "ingredients": "RO-Purified Water, Coffee 85%, Chicory 15%",
+   "nutritionalInfo": {
+    "Nutrition per gram": "100g",
+    "Energy (Kcal)": "29 Kcal",
+    "Protein (g)": "1.8 g",
+    "Carbohydrate (g)": "4.2 g",
+    "Total Fat (g)": "0.5 g",
+    "Moisture (g)": "92.1 g",
+    "Total Sugars (g)": "0 g",
+    "Caffeine Content (g)": "0.28 g"
+   },
+   "storageInstructions": "*Store in a clean, dry place, away from sunlight\n*Consume within 5 days once opened and do not reheat the decoction",
+   "manufacturerName": "Cothas Coffee Co",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000955"
+  }
  },
  {
   "title": "Classic Cold Coffee",
@@ -501,7 +701,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217014-7_1-cothas-cold-coffee-classic.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the ultimate in cold coffee perfection with our premium 250ml cold brew extract. Crafted with pure coffee extracts and natural flavours, this refreshing beverage offers a rich, smooth texture and a delightful balance of coffee flavour and sweetness. Relish the classic taste of cold coffee and enjoy a satisfying caffeine boost, whether you're looking to cool down on a hot day or need a quick pick-me-up. Indulge in the pure coffee experience with our tamper-proof, ready-to-serve cold coffee extract, made with the finest ingredients for a truly exceptional taste. Elevate your coffee routine and savour the perfect cold coffee classic.",
+   "ingredients": "Cold Coffee Prepared With Natural Coffee Extract And Aroma In Toned Milk 3.0% Fat & 8.5% SNF",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "92",
+    "Total Fat (g)": "2.8",
+    "Saturated Fat (g)": "2.1",
+    "Trans Fat (g)": "0",
+    "Total Carbohydrate (g)": "13.3",
+    "Added Sugars (g)": "9",
+    "Protein (g)": "3.4",
+    "Calcium (mg)": "113"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mocha Cold Coffee",
@@ -540,7 +759,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217016-6_1-cothas-cold-coffee-mocha.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and refreshing flavours of Cothas Cold Coffee - Mocha, a premium cold coffee beverage that combines the bold taste of pure coffee extracts with the decadent notes of chocolate. Crafted with pure coffee extracts and natural flavours, this ready-to-drink cold coffee is the perfect pick-me-up on a hot day or a delightful treat any time. Presented in a convenient, tamper-proof 250ml bottle, this cold coffee is perfect for enjoying on the go. With its smooth, creamy texture and irresistible blend of coffee and chocolate, Cothas Cold Coffee - Mocha is a truly indulgent and satisfying experience.",
+   "ingredients": "Cold Coffee Prepared With Dash Of 100% Natural Chocolate Powder In Natural Coffee Extract & Aroma In Toned Milk 3.0% Fat & 8.5% SNF",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "92 kcal",
+    "Total Fat (g)": "3.0 g",
+    "Saturated Fat (g)": "2.2 g",
+    "Trans Fat (g)": "0 g",
+    "Total Carbohydrate (g)": "13 g",
+    "Added Sugars (g)": "9 g",
+    "Protein (g)": "3 g",
+    "Calcium (mg)": "120 mg"
+   },
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bon Bon Cold Coffee",
@@ -582,7 +819,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217015-7_1-cothas-cold-coffee-bon-bon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Made with pure coffee extracts, tinged with the sought-after flavour of hazelnut. Available in 250ml tamper-proof PP bottles. Best served cold. It contains Pure Coffee Extracts with Natural Flavours. Relish this refreshing Cold Coffee Bon Bon and enjoy your happy time. This sweet beverage has a rich texture.",
+   "ingredients": "Cold Coffee Prepared With Dash Of Hazelnut Flavour In Natural Coffee Extract & Aroma In Toned Milk 3.0% Fat & 8.5% SNF",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "89 kcal",
+    "Total Fat (g)": "3.1 g",
+    "Saturated Fat (g)": "2.4 g",
+    "Trans Fat (g)": "0 g",
+    "Total Carbohydrate (g)": "12.3 g",
+    "Added Sugars (g)": "9 g",
+    "Protein (g)": "2.9 g",
+    "Calcium (mg)": "119 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Java Beri Cold Coffee",
@@ -621,7 +877,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217017-6_1-cothas-cold-coffee-java-beri.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "A silky coffee shake with a tangy blueberry finish undertone. It contains 100% Pure Coffee Extracts with Natural Flavours. Relish this refreshing Cold Coffee Java Beri and enjoy your happy time. This sweet beverage has a rich texture.",
+   "ingredients": "Cold Coffee Prepared With Dash Of Blueberry Flavour In Natural Coffee Extract & Aroma In Toned Milk 3.0% Fat & 8.5% SNF",
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peachers Cold Coffee",
@@ -660,7 +923,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217018-6_1-cothas-cold-coffee-peachers.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "A fresh and fruity cold coffee with hints of a sweet peach flavour and aroma. It contains 100% Pure Coffee Extracts with Natural Flavours. Relish these refreshing Cold Coffee Peachers and enjoy your happy time. This sweet beverage has a rich texture.",
+   "ingredients": "Cold Coffee Prepared With Dash Of Peach Flavour In Natural Coffee Extract & Aroma In Toned Milk 3.0% Fat And 8.5% SNF",
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vanilla Milkshake",
@@ -702,7 +972,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217011-7_1-cothas-vanilla-milkshake.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a delightful, refreshing treat with this premium Vanilla Milkshake from Cothas. Crafted with natural vanilla flavour, this creamy, smooth beverage offers a rich, indulgent texture that is perfect for breaking the monotony of your day. Enjoy the goodness of milk in a convenient, ready-to-drink format, making it an ideal snack or refreshing pick-me-up. Packaged in tamper-proof bottles, this milkshake is best served chilled, providing a delightful and satisfying experience. Relish the natural flavour and relax with this delectable vanilla-infused delight.",
+   "ingredients": "Naturally Flavoured Vanilla Mixed With Toned Milk 3.0% Fat & 8.5% SNF",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "89",
+    "Total Fat (g)": "2.6",
+    "Saturated Fat (g)": "1.5",
+    "Trans Fat (g)": "0",
+    "Total Carbohydrate (g)": "13.4",
+    "Added Sugars (g)": "9",
+    "Protein (g)": "3",
+    "Calcium (mg)": "115"
+   },
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Strawberry Milkshake",
@@ -744,7 +1032,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217012-7_1-cothas-strawberry-milkshake.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Cothas Strawberry Milkshake, a refreshing and creamy treat that captures the essence of fresh, ripe strawberries. Crafted with natural strawberry flavour, this milkshake boasts a rich, velvety texture that provides a truly indulgent mouthfeel. Whether you're seeking a refreshing snack on a hot day or a satisfying dessert, this convenient, ready-to-drink beverage is the perfect choice. Sip and savour the balanced sweetness and creaminess, allowing the vibrant flavour of strawberries to transport you to a moment of pure joy. Packaged in tamper-proof 250 ml bottles, Cothas Strawberry Milkshake is the ideal on-the-go companion, making it easy to enjoy the delightful taste of fresh strawberries wherever you go.",
+   "ingredients": "Naturally Flavoured Strawberry Mixed With Toned Milk 3.0% Fat & 8.5% SNF",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "95 kcal",
+    "Total Fat (g)": "2.9 g",
+    "Saturated Fat (g)": "2.1 g",
+    "Trans Fat (g)": "0 g",
+    "Total Carbohydrate (g)": "13.2 g",
+    "Added Sugars (g)": "9 g",
+    "Protein (g)": "4.1 g",
+    "Calcium (mg)": "131 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Banana Milkshake",
@@ -786,7 +1093,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217013-7_1-cothas-choco-banana-milkshake.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Relish this refreshing Choco Banana Milkshake and enjoy your happy time. This sweet beverage has a rich texture.",
+   "ingredients": "Naturally Flavoured Chocolate And Banana Mixed With Toned Milk 3.0% Fat & 8.5% SNF",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "89",
+    "Total Fat (g)": "2.4",
+    "Saturated Fat (g)": "1.4",
+    "Trans Fat (g)": "0",
+    "Total Carbohydrate (g)": "13.8",
+    "Added Sugars (g)": "9",
+    "Protein (g)": "3.1",
+    "Calcium (mg)": "120"
+   },
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Badam Milk",
@@ -828,6 +1153,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217019-7_1-cothas-badam-milk.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a creamy and nutty treat with our upgraded Cold Badam Milk, an authentic Indian classic made with the finest quality almonds and fresh whole cream milk. Relish the refreshing and rich texture of this sweet beverage, which contains real almond pieces and natural flavours for a pure, unadulterated taste. Enjoy the premium almonds and fresh milk that come together to create a truly indulgent experience, perfect for any happy occasion.",
+   "ingredients": "Toned Milk (90%), Sugar\nAlmond, Acidity Regulator (Ins 339(Iii)) And Saffron. Contains Natural Almond Flavour\nType Of Almond - Sweet Of Snf (Solid Non Fat) - Not Less Than 8.5",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "101 kcal",
+    "Total Fat (g)": "3.5 g",
+    "Saturated Fat (g)": "2.06 g",
+    "Trans Fat (g)": "0 g",
+    "Total Carbohydrate (g)": "14 g",
+    "Added Sugars (g)": "9 g",
+    "Protein (g)": "3.4 g",
+    "calcium (mg)": "147 mg"
+   },
+   "storageInstructions": "*Keep away from direct sunlight\n*Store in a cool and dry place",
+   "manufacturerName": "Cothas Coffee Co",
+   "fssaiLicense": "10014043000955",
+   "countryOfOrigin": "India"
+  }
  }
 ]
