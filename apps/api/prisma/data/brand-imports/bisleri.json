@@ -1,0 +1,81 @@
+{
+  "brand": "Bisleri",
+  "manufacturer": "Bisleri International Pvt. Ltd.",
+  "feed": "bisleri-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bisleri/logo-e504cc33.png",
+  "themeColor": "#00A99D",
+  "themeColorSecondary": "#0B7A6F",
+  "namePrefix": "Bisleri ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Bisleri Mineral Water": "Packaged Drinking Water",
+    "Bisleri Vedica Himalayan Spring Water": "Vedica Natural Mountain Water"
+  },
+  "rules": [
+    {
+      "match": "^Packaged\\ Drinking\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Packaged Drinking Water"
+      ]
+    },
+    {
+      "match": "^Vedica\\ Natural\\ Mountain\\ Water$",
+      "path": [
+        "Beverages",
+        "Water",
+        "Mineral Water"
+      ]
+    },
+    {
+      "match": "^Club\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Club\\ Soda\\ Extra\\ Power$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Spyci\\ Masala\\ Soda$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Soda & Tonic Water"
+      ]
+    },
+    {
+      "match": "^Fonzo\\ Mango\\ Fizz$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    },
+    {
+      "match": "^Pop\\ Orange\\ Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Orange & Mango"
+      ]
+    },
+    {
+      "match": "^Rev\\ Cola\\ Soft\\ Drink$",
+      "path": [
+        "Beverages",
+        "Soft Drinks & Carbonated",
+        "Cola"
+      ]
+    }
+  ]
+}

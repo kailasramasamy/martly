@@ -1,0 +1,9 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Packaged Drinking Water,Bisleri Packaged Drinking Water,update,Beverages > Water > Packaged Drinking Water,500ml ₹10 | 1L ₹20 | 2L ₹27 | 5L ₹59 | 10L ₹130,500ml ₹10 | 1L ₹20 | 2L ₹27 | 5L ₹59 | 10L ₹130,8,"MRP estimated: 500ml, 1L"
+Vedica Natural Mountain Water,Bisleri Vedica Natural Mountain Water,update,Beverages > Water > Mineral Water,500ml ₹20 | 1L ₹60,500ml ₹20 | 1L ₹60,6,
+Club Soda,Bisleri Club Soda,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,600ml ₹13,600ml ₹13,5,
+Club Soda Extra Power,Bisleri Club Soda Extra Power,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,750ml ₹20,750ml ₹20,5,
+Spyci Masala Soda,Bisleri Spyci Masala Soda,create,Beverages > Soft Drinks & Carbonated > Soda & Tonic Water,160ml ₹10 | 600ml ₹40,160ml ₹10 | 600ml ₹40,7,
+Fonzo Mango Fizz,Bisleri Fonzo Mango Fizz,create,Beverages > Soft Drinks & Carbonated > Orange & Mango,160ml ₹10 | 250ml ₹20,160ml ₹10 | 250ml ₹20,7,
+Pop Orange Soft Drink,Bisleri Pop Orange Soft Drink,create,Beverages > Soft Drinks & Carbonated > Orange & Mango,160ml ₹10 | 600ml ₹40,160ml ₹10 | 600ml ₹40,6,
+Rev Cola Soft Drink,Bisleri Rev Cola Soft Drink,create,Beverages > Soft Drinks & Carbonated > Cola,160ml ₹10 | 600ml ₹40,160ml ₹10 | 600ml ₹40,6,

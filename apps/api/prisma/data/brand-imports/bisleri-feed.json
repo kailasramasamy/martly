@@ -1,0 +1,403 @@
+[
+ {
+  "title": "Packaged Drinking Water",
+  "handle": "packaged-drinking-water",
+  "vendor": "Bisleri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/197349_4-bisleri-mineral-water.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265875_9-bisleri-mineral-water.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "27",
+    "compare_at_price": "27",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265872_6-bisleri-mineral-water.jpg"
+    }
+   },
+   {
+    "title": "5L",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/174367_5-bisleri-mineral-water.jpg"
+    }
+   },
+   {
+    "title": "10L",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211241_5-bisleri-mineral-water.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/197349_4-bisleri-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/197349-2_4-bisleri-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/197349-3_3-bisleri-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/197349-4_3-bisleri-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/197349-5_3-bisleri-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265875_9-bisleri-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265872_6-bisleri-mineral-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/174367_5-bisleri-mineral-water.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Vedica Natural Mountain Water",
+  "handle": "vedica-natural-mountain-water",
+  "vendor": "Bisleri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40013622_7-bisleri-natural-mountain-water-vedica.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40013621_10-bisleri-natural-mountain-water-vedica.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013622_7-bisleri-natural-mountain-water-vedica.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013622-2_8-bisleri-natural-mountain-water-vedica.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013622-3_8-bisleri-natural-mountain-water-vedica.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013622-4_8-bisleri-natural-mountain-water-vedica.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013622-5_5-bisleri-natural-mountain-water-vedica.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40013621_10-bisleri-natural-mountain-water-vedica.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Club Soda",
+  "handle": "club-soda",
+  "vendor": "Bisleri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600ml",
+    "price": "13",
+    "compare_at_price": "13",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100126200_5-bisleri-soda-the-club.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100126200_5-bisleri-soda-the-club.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100126200-2_1-bisleri-soda-the-club.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100126200-3_1-bisleri-soda-the-club.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100126200-4_1-bisleri-soda-the-club.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100126200-5_1-bisleri-soda-the-club.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Club Soda Extra Power",
+  "handle": "club-soda-extra-power",
+  "vendor": "Bisleri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241698_4-bisleri-club-soda-extra-power-refreshing-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241698_4-bisleri-club-soda-extra-power-refreshing-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241698-2_4-bisleri-club-soda-extra-power-refreshing-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241698-3_3-bisleri-club-soda-extra-power-refreshing-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241698-4_3-bisleri-club-soda-extra-power-refreshing-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241698-5_3-bisleri-club-soda-extra-power-refreshing-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Spyci Masala Soda",
+  "handle": "spyci-masala-soda",
+  "vendor": "Bisleri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240299_1-bisleri-spyci-masala-maar-ke-refreshing-ready-to-serve-spiced-cola.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097835_2-bisleri-spyci-masala-maar-ke.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240299_1-bisleri-spyci-masala-maar-ke-refreshing-ready-to-serve-spiced-cola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240299-2_1-bisleri-spyci-masala-maar-ke-refreshing-ready-to-serve-spiced-cola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240299-3_1-bisleri-spyci-masala-maar-ke-refreshing-ready-to-serve-spiced-cola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240299-4_1-bisleri-spyci-masala-maar-ke-refreshing-ready-to-serve-spiced-cola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240299-5_1-bisleri-spyci-masala-maar-ke-refreshing-ready-to-serve-spiced-cola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240299-6_1-bisleri-spyci-masala-maar-ke-refreshing-ready-to-serve-spiced-cola.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097835_2-bisleri-spyci-masala-maar-ke.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Fonzo Mango Fizz",
+  "handle": "fonzo-mango-fizz",
+  "vendor": "Bisleri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240301_1-bisleri-fonzo-mango-with-fizz-refreshing-ready-to-serve-fruit-based-beverage.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126212_13-bisleri-fonzo-mango-with-fizzz.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240301_1-bisleri-fonzo-mango-with-fizz-refreshing-ready-to-serve-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240301-2_1-bisleri-fonzo-mango-with-fizz-refreshing-ready-to-serve-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240301-3_1-bisleri-fonzo-mango-with-fizz-refreshing-ready-to-serve-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240301-4_1-bisleri-fonzo-mango-with-fizz-refreshing-ready-to-serve-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240301-5_1-bisleri-fonzo-mango-with-fizz-refreshing-ready-to-serve-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240301-6_1-bisleri-fonzo-mango-with-fizz-refreshing-ready-to-serve-fruit-based-beverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126212_13-bisleri-fonzo-mango-with-fizzz.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pop Orange Soft Drink",
+  "handle": "pop-orange-soft-drink",
+  "vendor": "Bisleri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40309650_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40309651_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309650_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309650-2_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309650-3_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309650-4_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309650-5_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309651_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Rev Cola Soft Drink",
+  "handle": "rev-cola-soft-drink",
+  "vendor": "Bisleri",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40309652_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40309653_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309652_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309652-2_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309652-3_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309652-4_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309652-5_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309653_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
