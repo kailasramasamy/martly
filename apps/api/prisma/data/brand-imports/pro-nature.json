@@ -1,0 +1,406 @@
+{
+  "brand": "Pro Nature",
+  "manufacturer": "Pro Nature Organic Foods Pvt Ltd",
+  "feed": "pro-nature-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pro-nature/logo-3819b8a7.png",
+  "themeColor": "#D9531E",
+  "themeColorSecondary": "#7AB648",
+  "namePrefix": "Pro Nature ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Classic\\ Gir\\ A2\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Groundnut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Groundnut Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Cold\\ Pressed\\ Sunflower\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Sunflower Oil"
+      ]
+    },
+    {
+      "match": "^Classic\\ Soya\\ Chunks$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Organic\\ Toor\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Toor Dal (Arhar)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Chana\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chana Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Masoor\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Masoor Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Moong\\ Dal\\ Yellow$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Green\\ Moong\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Urad\\ Dal\\ White\\ Split$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Urad\\ White\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Rajma\\ Chitra$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Rajma"
+      ]
+    },
+    {
+      "match": "^Organic\\ Kabuli\\ Chana$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chole (Kabuli Chana)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Kala\\ Chana$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Organic\\ Panchratna\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Organic\\ Roasted\\ Chana\\ Dal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Organic\\ Raw\\ Peanuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Peanuts"
+      ]
+    },
+    {
+      "match": "^Organic\\ White\\ Sesame\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Flaxseed$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sonamasoori\\ Rice\\ White$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sonamasoori\\ Rice\\ Hand\\ Pound$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Organic\\ Brown\\ Sonamasoori\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    },
+    {
+      "match": "^Organic\\ Whole\\ Wheat\\ Chakki\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Organic\\ Rice\\ Flour$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Rice Flour"
+      ]
+    },
+    {
+      "match": "^Organic\\ Idli\\ Rava$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Sooji & Rava"
+      ]
+    },
+    {
+      "match": "^Organic\\ Mixed\\ Millet\\ Khichdi$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Millets (Ragi, Jowar, Bajra)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Atta\\ Vermicelli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sooji\\ Vermicelli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "White Sugar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Classic\\ Himalayan\\ Pink\\ Salt\\ Crystals$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Classic\\ Sendha\\ Namak$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Tamarind$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Tamarind"
+      ]
+    },
+    {
+      "match": "^Organic\\ Ajwain$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Black\\ Cardamom$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Green\\ Cardamom$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Red\\ Chilli\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Saunf$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Bay\\ Leaf$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cassia$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Coriander\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Fenugreek$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Black\\ Pepper\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Mustard\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Turmeric\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Cumin\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Red\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sambhar\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    }
+  ]
+}
