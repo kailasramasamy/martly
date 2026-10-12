@@ -1,0 +1,289 @@
+{
+  "brand": "Tetley (Tata)",
+  "manufacturer": "Tata Consumer Products Ltd.",
+  "feed": "tetley-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tetley/logo-669cc1ae.png",
+  "themeColor": "#00539B",
+  "themeColorSecondary": "#7AB51D",
+  "namePrefix": "Tetley ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Tetley Green Tea Pure Original": "Immune Classic Green Tea Bags",
+    "Tetley Green Tea - Lemon & Honey": "Immune Lemon & Honey Green Tea Bags"
+  },
+  "rules": [
+    {
+      "match": "^Immune\\ Classic\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Classic\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Lemon\\ \\&\\ Honey\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Ginger\\ Mint\\ \\&\\ Lemon\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Tulsi\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Kahwa\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Mango\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Immune\\ Lemon\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Beauty\\ Care\\ Ginger\\ Mint\\ \\&\\ Lemon\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Beauty\\ Care\\ Lemon\\ \\&\\ Honey\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Slim\\ Care\\ Ginger\\ Mint\\ \\&\\ Lemon\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Slim\\ Care\\ Lemon\\ \\&\\ Honey\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Slim\\ Care\\ Mixed\\ Berry\\ Green\\ Tea\\ Drink$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Slim\\ Care\\ Orange\\ Lime\\ Green\\ Tea\\ Drink$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Japanese\\ Matcha\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Classic\\ Matcha\\ Latte\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Mango\\ Matcha\\ Latte\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Matcha\\ Latte\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Original\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Twist\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Earl\\ Grey\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Elaichi\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Zing\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Masala\\ Chai\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Ceylon\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Tea Bags"
+      ]
+    },
+    {
+      "match": "^Premium\\ Black\\ Leaf\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    },
+    {
+      "match": "^Digest\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Immuno\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Cranberry\\ Kombucha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Kombucha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Lemon\\ Kombucha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Peach\\ Kombucha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Lemon\\ Kombucha\\ Can$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Peach\\ Kombucha\\ Can$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    }
+  ]
+}
