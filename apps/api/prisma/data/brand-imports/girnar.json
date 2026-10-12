@@ -1,0 +1,184 @@
+{
+  "brand": "Girnar",
+  "manufacturer": "Girnar Food & Beverages Pvt. Ltd.",
+  "feed": "girnar-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/girnar/logo-cb81ed28.png",
+  "themeColor": "#1F5C3A",
+  "themeColorSecondary": "#B8932E",
+  "namePrefix": "Girnar ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Girnar Instant Premix Chai - Adrak (Ginger)": "Instant Ginger Chai Premix"
+  },
+  "rules": [
+    {
+      "match": "^Instant\\ Masala\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Instant\\ Ginger\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Instant\\ Cardamom\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Instant\\ Express\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Instant\\ Lemongrass\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Instant\\ Saffron\\ Chai\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Instant\\ Chai\\ Premix\\ Variety\\ Pack$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Iced\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Peach\\ Iced\\ Tea\\ Premix$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Instant Tea Premix"
+      ]
+    },
+    {
+      "match": "^Masaledar\\ Limbooz\\ Instant\\ Premix$",
+      "path": [
+        "Beverages",
+        "Sherbet & Traditional",
+        "Rooh Afza & Sharbat"
+      ]
+    },
+    {
+      "match": "^Cold\\ Coffee\\ Instant\\ Premix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Detox\\ Desi\\ Kahwa\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Ginger\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Lemon\\ \\&\\ Honey\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Mint\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Lime\\ Green\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ Gourmet\\ Collection$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Royal\\ Cup\\ Premium\\ CTC\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Leaf & Dust Tea (CTC)"
+      ]
+    }
+  ]
+}
