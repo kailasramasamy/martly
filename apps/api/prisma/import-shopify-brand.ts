@@ -113,8 +113,13 @@ function writeReview(plans: Plan[], existingNames: Set<string>): string {
   return file.pathname;
 }
 
-async function toWebp(url: string, size: number): Promise<Buffer> {
+// null when the source no longer serves the image: one dead pack shot shouldn't stop a brand's import
+async function toWebp(url: string, size: number): Promise<Buffer | null> {
   const res = await fetch(url);
+  if (res.status === 404 || res.status === 410) {
+    console.warn(`  skipped image (HTTP ${res.status}): ${url}`);
+    return null;
+  }
   if (!res.ok) throw new Error(`image ${url}: HTTP ${res.status}`);
   // Pack shots often sit small in a wide white canvas: trim it so the pack fills the tile, with a slim margin
   // (flattened in its own pass: within one pipeline sharp trims first, against the transparent pixels)
@@ -142,7 +147,7 @@ async function uploadProductImages(site: ShopifyProduct, brandSlug: string, slug
   const urls: string[] = [];
   for (const [i, img] of site.images.slice(0, MAX_IMAGES).entries()) {
     const webp = await toWebp(`${img.src}${img.src.includes("?") ? "&" : "?"}width=2000`, 800);
-    urls.push(await uploadImage(`catalog/brands/${brandSlug}/${slug}-${i + 1}`, webp));
+    if (webp) urls.push(await uploadImage(`catalog/brands/${brandSlug}/${slug}-${i + 1}`, webp));
   }
   return urls;
 }
@@ -152,8 +157,9 @@ async function uploadProductImages(site: ShopifyProduct, brandSlug: string, slug
 async function variantImage(v: PackVariant, current: string | null | undefined, keyBase: string): Promise<string | null | undefined> {
   if (!v.image) return REFRESH_IMAGES ? null : undefined;
   if (current && !REFRESH_IMAGES) return undefined;
-  const src = `${v.image}${v.image.includes("?") ? "&" : "?"}width=2000`;
-  return uploadImage(`${keyBase}-${slugify(v.name)}`, await toWebp(src, 800));
+  const webp = await toWebp(`${v.image}${v.image.includes("?") ? "&" : "?"}width=2000`, 800);
+  if (!webp) return REFRESH_IMAGES ? null : undefined;
+  return uploadImage(`${keyBase}-${slugify(v.name)}`, webp);
 }
 
 // Adds/updates the site's pack sizes (with MRP and pack shot) and removes old sizes nothing references

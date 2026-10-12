@@ -17,6 +17,14 @@
         "Atta & Flours",
         "Corn Flour"
       ]
+    },
+    {
+      "match": "^Vanilla\\ Custard\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
     }
   ]
 }

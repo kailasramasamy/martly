@@ -33,17 +33,19 @@ export async function fetchShopifyProducts(store: string, delayMs = 10_000): Pro
   }
 }
 
-const UNIT: Record<string, [UnitType, string]> = { g: ["GRAM", "g"], kg: ["KG", "kg"], ml: ["ML", "ml"], l: ["LITER", "L"] };
+const UNIT: Record<string, [UnitType, string]> = {
+  g: ["GRAM", "g"], kg: ["KG", "kg"], ml: ["ML", "ml"], l: ["LITER", "L"], pcs: ["PIECE", " pcs"],
+};
 
 // "Buy One Get One" / "One Plus One Free": two packs sold for the price of one
 const BOGO = /\((?:buy one get one|one plus one)[a-z ]*\)/i;
-// "200g", "1 KG"; bundles of single packs are split back into one pack with its own MRP: "50g (Pack of 2)",
+// "200g", "1 KG", "60 pcs" (capsules, tea bags); bundles of single packs are split back into one pack with its own MRP: "50g (Pack of 2)",
 // "45 g x 2 (Pack of 2)", "60 gx2 (Buy One Get One)". A bare "20 gX4" is a multipack sold as one, as is any
 // size under a title-level "(pack of 6)". `bogo` marks a buy-one-get-one listing whose size label doesn't say so
 export function toPackVariant(v: ShopifyVariant, titlePackOf: number, bogo = false): PackVariant | null {
   const label = v.title.trim().toLowerCase().replace(/\s+/g, " ");
   const m = label.replace(BOGO, "(pack of 2)")
-    .match(/^(\d+(?:\.\d+)?) ?(g|kg|ml|l) ?(?:x ?([2-9]|1[0-2]))? ?(?:\( ?pack of (\d+) ?\))?$/);
+    .match(/^(\d+(?:\.\d+)?) ?(g|kg|ml|l|pcs) ?(?:x ?([2-9]|1[0-2]))? ?(?:\( ?pack of (\d+) ?\))?$/);
   if (!m) return null;
   const [unitType, unit] = UNIT[m[2]];
   const qty = Number(m[1]);

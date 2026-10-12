@@ -51,5 +51,58 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-8_3-brown-polson-corn-flour.jpg"
    }
   ]
+ },
+ {
+  "title": "Vanilla Custard Powder",
+  "handle": "vanilla-custard-powder",
+  "vendor": "Brown & Polson",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585_8-brown-polson-custard-powder-vanilla-flavour.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "148",
+    "compare_at_price": "148",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008143_8-brown-polson-custard-powder-vanilla-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585_8-brown-polson-custard-powder-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585-2_3-brown-polson-custard-powder-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585-3_2-brown-polson-custard-powder-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585-4_2-brown-polson-custard-powder-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585-5_2-brown-polson-custard-powder-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585-6_1-brown-polson-custard-powder-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585-7_1-brown-polson-custard-powder-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585-8_1-brown-polson-custard-powder-vanilla-flavour.jpg"
+   }
+  ]
  }
 ]
