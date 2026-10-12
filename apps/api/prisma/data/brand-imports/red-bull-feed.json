@@ -51,7 +51,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100012278-8_3-red-bull-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Energy Drink is a functional beverage that vitalizes body and mind.\nRed Bull Energy Drink's special formula contains high quality ingredients: Caffeine, Taurine, B-Group Vitamins, Sucrose & Glucose, Natural Water",
+   "ingredients": "Water, Sucrose, Glucose, Acidulant (Citric Acid), Carbon Dioxide, Taurine (0. 4%), Acidity Regulators (Sodium Bicarbonate, Magnesium Carbonate), Flavours (natural and artificial), Colour (caramel), Caffeine (0. 03%), Vitamins (Niacin, B6, B2, B12)",
+   "nutritionalInfo": {
+    "Per": "100 ml",
+    "Energy": "45 kcal",
+    "Fat": "0 g",
+    "Carbohydrates": "11 g",
+    "Sugars": "11 g",
+    "Protein": "0 g",
+    "Sodium": "41 mg",
+    "Taurine": "400 mg",
+    "Caffeine": "30 mg",
+    "Niacin": "2.4 mg",
+    "Vitamin B2": "0.2 mg",
+    "Vitamin B6": "0.4 mg",
+    "Vitamin B12": "0.2 ug"
+   },
+   "manufacturerName": "Red Bull Gmbh Rauch Fruchtsafte Gmbh & Co OG 6714 Nuziders",
+   "countryOfOrigin": "India, Austria"
+  }
  },
  {
   "title": "Sugar Free Energy Drink",
@@ -93,7 +114,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005089-7_3-red-bull-energy-drink-sugar-free.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Sugarfree Energy Drink is a functional beverage that vitalizes body and mind. It contains no sugar with only 3 calories per 100ml.\nRed Bull Sugarfree Energy Drink contains high quality ingredients: Caffeine, Taurine, B-Group Vitamins,Sweeteners, Natural Water",
+   "ingredients": "Water, Sucrose, Glucose, Acidulant (Citric Acid), Carbon Dioxide, Taurine (0. 4%), Acidity Regulators (Sodium Bicarbonate, Magnesium Carbonate), Flavours (natural and artificial), Colour (caramel), Caffeine (0. 03%), Vitamins (Niacin, B6, B2, B12)",
+   "nutritionalInfo": {
+    "Energy": "3 kcal",
+    "Fat": "0 g",
+    "Carbohydrates": "0 g",
+    "Sugars": "0 g",
+    "Protein": "0 g",
+    "Sodium": "42 mg",
+    "Taurine": "400 mg",
+    "Caffeine": "30 mg",
+    "Niacin": "2.4 mg",
+    "Vitamin B2": "0.2 mg",
+    "Vitamin B6": "0.4 mg",
+    "Vitamin B12": "0.2 ug"
+   },
+   "manufacturerName": "Red Bull Gmbh Rauch Fruchtsafte Gmbh & Co OG 6714 Nuziders",
+   "countryOfOrigin": "India, Austria"
+  }
  },
  {
   "title": "Purple Edition Energy Drink - Acai Berry",
@@ -135,7 +176,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225403-7_1-red-bull-energy-drink-acai-berry-purple-edition.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Energy drink, with the taste of acai berry Red Bull The Purple Edition, contains the same high-quality ingredients – Caffeine, Taurine, some B-group Vitamins, Sugars and Alpine water\nVitalizes Body and Mind\nRed Bull cans are made of 100% recyclable aluminium\nRed Bull is appreciated worldwide by top athletes, busy professionals, university students and travellers on long journeys\nRed Bull produces a variety of energy drinks in both sugar and sugar-free varieties.\n250 ml Red Bull The Purple Edition cans.",
+   "ingredients": "Red Bull Energy Drink's Special Formula Contains High-Quality Ingredients: Caffeine, Taurine, B-Group Vitamins, Flavors Sucrose & Glucose, Alpine Spring Water",
+   "usageInstructions": "Red Bull is appreciated worldwide by top athletes, busy professionals, university students and travellers on long journeys.\nConsume no more than 500 ml per day.",
+   "manufacturerName": "Rauch Fruchtsafte Gmbh & Co OG 6714 Nuziders",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000719"
+  }
  },
  {
   "title": "Green Edition Energy Drink - Curuba Elderflower",
@@ -180,7 +229,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40354922-8_1-red-bull-the-green-edition-curuba-elderflower-flavour-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Energy Drink - The Green Edition comes with the taste of curuba-elderflower and is a functional beverage that vitalizes body and mind.\nRed Bull Energy Drink's special formula contains high quality ingredients: Caffeine, Taurine, B-Group Vitamins, Sucrose & Glucose, Natural Water",
+   "ingredients": "Water, Sucrose, Glucose, Acidulant (Citric Acid), Carbon Dioxide, Taurine (0.4%), Acidity Regulator (Sodium Citrate), Natural Colour (Anthocyanins), Caffeine (30 Mg/100 Ml), Flavours (Natural And Artificial [Watermelon]), Vitamins (Niacin, B6, B2, B12)",
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy": "45 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "11 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "11 g",
+    "Total Fat": "0 g",
+    "Sodium": "35 mg",
+    "Taurine": "400 mg",
+    "Caffeine": "30 mg",
+    "Niacin": "2.4 mg",
+    "Vitamin B6": "0.4 mg",
+    "Vitamin B2": "0.2 mg",
+    "Vitamin B12": "0.2 µg",
+    "RDA": "Recommended Daily Allowance"
+   },
+   "manufacturerName": "Rauch Fruchtsafte Gmbh & Co OG 6714 Nuziders",
+   "fssaiLicense": "10012022000719",
+   "countryOfOrigin": "Austria"
+  }
  },
  {
   "title": "Green Edition Energy Drink - Dragon Fruit",
@@ -225,7 +298,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270706-8_2-red-bull-the-green-edition-energy-drink-dragon-fruit-flavour-caffeinated-beverage.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Green Edition's special formula contains ingredients of high quality: Caffeine, Taurine, B-Group Vitamins, Sugars, and water. One 250ml can of Red Bull Green Edition contains 75mg of caffeine, about the same amount as in a cup of home-brewed coffee. The amount of sugars in a can of Red Bull Green Edition is comparable to the level of sugars in an equivalent amount of orange juice. For sugar-free options, try Red Bull Sugarfree. Red Bull cans are made of 100% recyclable aluminium.",
+   "ingredients": "Water, Sucrose, Glucose, Acidulant (Citric Acid), Carbon Dioxide, Taurine (0.4%), Acidity Regulators (Sodium Bicarbonates, Magnesium Carbonates), Flavours (Natural and Artificial [Mixed Fruits]), Colour (Caramel), Caffeine (30mg/100ml), Vitamins (Niacin, B2, B6, B12).",
+   "usageInstructions": "Red Bull Energy Drink is appreciated worldwide by top athletes, busy professionals, university students and travellers on long journeys.",
+   "manufacturerName": "Rauch Fruchtsafte Gmbh & Co OG 6714 Nuziders",
+   "countryOfOrigin": "Austria"
+  }
  },
  {
   "title": "Red Edition Energy Drink",
@@ -270,7 +350,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238464-8_1-red-bull-energy-drink-red-edition-caffeinated-beverage-for-body-mind-watermelon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Energy Drink - The Red Edition comes with the taste of watermelon and is a functional beverage that vitalizes body and mind.\nRed Bull Energy Drink's special formula contains high quality ingredients: Caffeine, Taurine, B-Group Vitamins, Sucrose & Glucose, Natural Water",
+   "ingredients": "Water, Sucrose, Glucose, Acidulant (Citric Acid), Carbon Dioxide, Taurine (0.4%), Acidity Regulator (Sodium Citrate), Natural Colour (Anthocyanins), Caffeine (30 Mg/100 Ml), Flavours (Natural And Artificial [Watermelon]), Vitamins (Niacin, B6, B2, B12)",
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy": "45 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "11 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "11 g",
+    "Total Fat": "0 g",
+    "Sodium": "35 mg",
+    "Taurine": "400 mg",
+    "Caffeine": "30 mg",
+    "Niacin": "2.4 mg",
+    "Vitamin B6": "0.4 mg",
+    "Vitamin B2": "0.2 mg",
+    "Vitamin B12": "0.2 µg",
+    "RDA": "Recommended Daily Allowance"
+   },
+   "manufacturerName": "Rauch Fruchtsafte Gmbh & Co OG 6714 Nuziders",
+   "countryOfOrigin": "Austria",
+   "fssaiLicense": "10012022000719"
+  }
  },
  {
   "title": "Yellow Edition Energy Drink",
@@ -315,7 +419,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195765-8_1-red-bull-energy-drink-tropical-yellow-edition.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Energy Drink - The Yellow edition comes with the taste of tropical fruits and is a functional beverage that vitalizes body and mind.\nRed Bull Energy Drink's special formula contains high quality ingredients: Caffeine, Taurine, B-Group Vitamins, Sucrose & Glucose, Natural Water",
+   "ingredients": "Water, Sucrose, Glucose, Acidulant (Citric Acid), Carbon Dioxide, Taurine (0. 4%), Acidity Regulators (Sodium Bicarbonate, Magnesium Carbonate), Flavours (natural and artificial), Colour (caramel), Caffeine (0. 03%), Vitamins (Niacin, B6, B2, B12)",
+   "manufacturerName": "Red Bull Gmbh Rauch Fruchtsafte Gmbh & Co OG 6714 Nuziders",
+   "countryOfOrigin": "India, Austria"
+  }
  },
  {
   "title": "Summer Edition Energy Drink - Apricot Strawberry",
@@ -357,7 +467,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293773-7_1-red-bull-energy-drink-the-summer-edition-apricot-strawberry-flavour.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Summer Edition's special formula contains ingredients of high quality: Caffeine, Taurine, B-Group Vitamins, Sugars, water One 250ml can of Red Bull Summer Edition contains 75mg of caffeine, about the same amount as in a cup of home-brewed coffee. The amount of sugars in a can of Red Bull Summer Edition is comparable to the level of sugars in an equivalent amount of apple or orange juice - 11g per 100ml. For sugar free options, try Red Bull Sugarfree Red Bull cans are made of 100% recyclable aluminium The new limited Red Bull Summer Edition with the taste of Apricot- Strawberry Vitalizes Body and Mind ®",
+   "ingredients": "Red Bull Summer Edition's Special Formula Contains Ingredients Of High Quality: Caffeine, Taurine, B-Group Vitamins, Sugars, Water",
+   "usageInstructions": "Red Bull Energy Drink is appreciated worldwide by top athletes, busy professionals, university students and travellers on long journeys. Consume not more than 500 ml per day.",
+   "manufacturerName": "Rauch Fruchtsafte Gmbh & Co OG 6714 Nuziders",
+   "countryOfOrigin": "Austria",
+   "fssaiLicense": "10012022000719"
+  }
  },
  {
   "title": "Pink Edition Energy Drink - White Peach",
@@ -402,7 +520,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362689-8_1-red-bull-the-pink-edition-white-peach-flavour-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "The Red Bull Pink Edition delivers wiiings for every taste with the refreshing flavour of white peach, complemented by subtle notes of citrus peel and gentle floral hints. Crafted using high-quality ingredients, its unique formula includes caffeine, with each 250 ml can containing 75 mg. Designed for moments when you want to kickstart your day or stay refreshed, the Pink Edition offers a distinctive taste experience in every sip.",
+   "ingredients": "Water, Sugar, Glucose, Acidulant (Citric Acid), Carbon Dioxide, Taurine (0.4%), Flavours (Natural And Artificial [white Peach Flavour]), Acidity Regulator (Sodium Citrate), Caffeine (30 Mg/100 Ml), Vitamins (Niacin, B6, B12).",
+   "nutritionalInfo": {
+    "Energy": "45 kcal (6% RDA)",
+    "Protein": "0 g (0% RDA)",
+    "Carbohydrates": "11 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "11 g (54% RDA)",
+    "Total Fat": "0 g (0% RDA)",
+    "Sodium": "35 mg (4% RDA)",
+    "Taurine": "400 mg",
+    "Caffeine": "30 mg",
+    "Niacin": "2.4 mg (33% RDA)",
+    "Vitamin B6": "0.4 mg (42% RDA)",
+    "Vitamin B12": "0.2 µg (23% RDA)"
+   },
+   "manufacturerName": "Red Bull India Pvt Ltd",
+   "fssaiLicense": "10012022000719",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Plus Drink",
@@ -444,6 +583,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357284-7_1-red-bull-plus-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Red Bull Plus High Vitamin Zero Sugar Drink is a performance-enhancing energy beverage enriched with essential vitamins and completely free of sugar. Designed to boost energy and focus without added calories, it is ideal for fitness enthusiasts, busy professionals, or anyone seeking a revitalising lift. Perfect for those searching for “zero sugar energy drink” or “Red Bull vitamin drink”, Red Bull Plus delivers a refreshing, energising experience in every can.",
+   "ingredients": "Taurine (1000 mg), D-Glucuronolactone (400 mg), Caffeine (80 mg), Inositol (50 mg), Lysine (50 mg), Choline Bitartrate (50 mg), Vitamin B3 (30 mg), Dexpanthenol (7 mg), Vitamin B6 (6 mg), Vitamin B12 (7 µg), Citric Acid, Sodium Benzoate, Colouring (E102, E124), Emulsifier (E415), Flavouring Substances, Maltitol Syrup, Artificial Sweeteners: Acesulfame-K and Sucralose.",
+   "nutritionalInfo": {
+    "Energy": "28.5 kcal",
+    "Protein": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Cholesterol": "0.0 mg",
+    "Carbohydrate": "17.0 g",
+    "Sugars": "0.0 g",
+    "Dietary Fibre": "0.0 g",
+    "Sodium": "280 mg",
+    "Niacin (Vitamin B3)": "13.1 mg",
+    "Dexpanthenol": "0.0 g",
+    "Vitamin B6": "2.8 mg",
+    "Vitamin B12": "2.93 mcg"
+   },
+   "manufacturerName": "T.C. Pharmaceutical Industries Co",
+   "countryOfOrigin": "Thailand"
+  }
  }
 ]
