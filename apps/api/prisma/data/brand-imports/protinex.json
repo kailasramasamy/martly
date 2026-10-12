@@ -1,0 +1,64 @@
+{
+  "brand": "Protinex (Danone)",
+  "manufacturer": "Danone India Pvt. Ltd.",
+  "feed": "protinex-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/protinex/logo-607203cc.png",
+  "themeColor": "#E31837",
+  "themeColorSecondary": "#1F3D8F",
+  "namePrefix": "Protinex ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Protinex Original Protein Powder": "Original Nutritional Drink Mix"
+  },
+  "rules": [
+    {
+      "match": "^Original\\ Nutritional\\ Drink\\ Mix$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Rich\\ Chocolate\\ Nutritional\\ Drink\\ Mix$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Vanilla\\ Nutritional\\ Drink\\ Mix$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Diabetes\\ Care\\ Nutritional\\ Drink\\ \\-\\ Creamy\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Lite\\ Nutritional\\ Drink\\ \\-\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Mother's\\ Nutritional\\ Drink\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    }
+  ]
+}
