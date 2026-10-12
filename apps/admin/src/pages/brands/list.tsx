@@ -1,14 +1,9 @@
+import { useRef, useState } from "react";
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Space, Input } from "antd";
+import { Table, Space, Input, Avatar, Typography } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
-
-interface BrandRecord {
-  id: string;
-  name: string;
-  slug: string;
-  imageUrl: string | null;
-}
+import { BrandDrawer, type BrandRecord } from "./brand-drawer";
 
 export const BrandList = () => {
   const { tableProps, searchFormProps } = useTable<BrandRecord, HttpError, { q: string }>({
@@ -18,6 +13,19 @@ export const BrandList = () => {
       { field: "q", operator: "eq", value: values.q },
     ],
   });
+  const [selected, setSelected] = useState<BrandRecord | null>(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const openBrand = (brand: BrandRecord) => {
+    setSelected(brand);
+    setDrawerOpen(true);
+  };
+  const debounceRef = useRef<ReturnType<typeof setTimeout>>(undefined);
+
+  const search = (q: string, delay = 0) => {
+    clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(() => searchFormProps.onFinish?.({ q }), delay);
+  };
 
   return (
     <List>
@@ -26,23 +34,24 @@ export const BrandList = () => {
           placeholder="Search brands..."
           allowClear
           prefix={<SearchOutlined />}
-          onSearch={(value) => searchFormProps.onFinish?.({ q: value })}
-          onChange={(e) => {
-            if (!e.target.value) searchFormProps.onFinish?.({ q: "" });
-          }}
+          onSearch={(value) => search(value)}
+          onChange={(e) => search(e.target.value, 300)}
           style={{ maxWidth: 360 }}
         />
       </div>
       <Table {...tableProps} rowKey="id">
-        <Table.Column dataIndex="name" title="Name" />
-        <Table.Column dataIndex="slug" title="Slug" />
         <Table.Column
-          dataIndex="imageUrl"
-          title="Image"
-          render={(v: string | null) =>
-            v ? <img src={v} alt="" style={{ height: 32, borderRadius: 4 }} /> : "—"
-          }
+          dataIndex="name"
+          title="Name"
+          render={(name: string, record: BrandRecord) => (
+            <Space style={{ cursor: "pointer" }} onClick={() => openBrand(record)}>
+              <Avatar shape="square" src={record.imageUrl} size={32}>{name[0]}</Avatar>
+              <Typography.Link>{name}</Typography.Link>
+            </Space>
+          )}
         />
+        <Table.Column dataIndex="slug" title="Slug" />
+        <Table.Column title="Products" render={(_, record: BrandRecord) => record._count.products} />
         <Table.Column
           title="Actions"
           render={(_, record: BrandRecord) => (
@@ -53,6 +62,7 @@ export const BrandList = () => {
           )}
         />
       </Table>
+      <BrandDrawer brand={selected} open={drawerOpen} onClose={() => setDrawerOpen(false)} />
     </List>
   );
 };
