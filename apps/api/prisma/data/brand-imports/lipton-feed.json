@@ -997,5 +997,53 @@
    }
   ],
   "food_type": "VEG"
+ },
+ {
+  "title": "Lemon Ice Tea",
+  "handle": "lemon-ice-tea",
+  "vendor": "Lipton (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40170409_1-lipton-ice-tea-lemon-flavoured.jpg"
+    }
+   },
+   {
+    "title": "350ml",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/280702_16-lipton-ice-tea-lemon-flavoured.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170409_1-lipton-ice-tea-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170409-2_1-lipton-ice-tea-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170409-3_1-lipton-ice-tea-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170409-4_1-lipton-ice-tea-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40170409-5_1-lipton-ice-tea-lemon-flavoured.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280702_16-lipton-ice-tea-lemon-flavoured.jpg"
+   }
+  ],
+  "food_type": "VEG"
  }
 ]

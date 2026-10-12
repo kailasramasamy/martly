@@ -177,6 +177,14 @@
         "Tea",
         "Green Tea"
       ]
+    },
+    {
+      "match": "^Lemon\\ Ice\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
     }
   ]
 }
