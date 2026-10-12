@@ -1,0 +1,8 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Nutrition Drink Jar,Boost Nutrition Drink Jar,update,"Beverages > Health & Energy Drinks > Malted Beverages (Bournvita, Horlicks)",200g ₹105 | 500g ₹264,200g ₹105 | 500g ₹264,8,
+Nutrition Drink Pouch,Boost Nutrition Drink Pouch,create,"Beverages > Health & Energy Drinks > Malted Beverages (Bournvita, Horlicks)",9g ₹5 | 75g ₹30 | 500g ₹214 | 750g ₹349,9g ₹5 | 75g ₹30 | 500g ₹214 | 750g ₹349,8,750g: out of stock online
+Nutrition Drink Refill Carton,Boost Nutrition Drink Refill Carton,create,"Beverages > Health & Energy Drinks > Malted Beverages (Bournvita, Horlicks)",450g ₹264 | 750g ₹415 | 1kg ₹599,450g ₹264 | 750g ₹415 | 1kg ₹599,8,
+Protein Zero Added Sugar,Boost Protein Zero Added Sugar,create,Beverages > Health & Energy Drinks > Protein Drinks,400g ₹319,400g ₹319,8,
+Classic Milkshake,Boost Classic Milkshake,create,Beverages > Milk Drinks > Milkshake,180ml ₹40,180ml ₹40,8,
+Badam Milkshake,Boost Badam Milkshake,create,Beverages > Milk Drinks > Milkshake,180ml ₹40,180ml ₹40,8,
+Caramel Milkshake,Boost Caramel Milkshake,create,Beverages > Milk Drinks > Milkshake,180ml ₹40,180ml ₹40,8,

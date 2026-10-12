@@ -1,0 +1,72 @@
+{
+  "brand": "Boost (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "boost-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/boost/logo-b2caf266.png",
+  "themeColor": "#D7141A",
+  "themeColorSecondary": "#4A2511",
+  "namePrefix": "Boost ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Boost Chocolate Energy & Sports Drink": "Nutrition Drink Jar"
+  },
+  "rules": [
+    {
+      "match": "^Nutrition\\ Drink\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutrition\\ Drink\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Nutrition\\ Drink\\ Refill\\ Carton$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Protein\\ Zero\\ Added\\ Sugar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Classic\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Badam\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    }
+  ]
+}
