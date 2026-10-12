@@ -1,0 +1,73 @@
+{
+  "brand": "Doritos (PepsiCo)",
+  "manufacturer": "PepsiCo India",
+  "feed": "doritos-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/doritos-pepsico/logo-fb13aa14.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Doritos ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Doritos Nacho Cheese Tortilla Chips": "Nacho Cheese Nacho Chips",
+    "Doritos Sweet Chilli Tortilla Chips": "Sweet Chilli Nacho Chips"
+  },
+  "rules": [
+    {
+      "match": "^Nacho\\ Cheese\\ Nacho\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Chilli\\ Nacho\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Masala\\ Mayhem\\ Nacho\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Sizzlin'\\ Hot\\ Nacho\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Dinamita\\ Fiery\\ Lime\\ \\&\\ Chilli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^International\\ Cool\\ Ranch\\ Nacho\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ Salsa\\ Mexicana\\ Nacho\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    }
+  ]
+}
