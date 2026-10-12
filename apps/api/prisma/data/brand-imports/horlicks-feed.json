@@ -1,0 +1,2833 @@
+[
+ {
+  "title": "Classic Malt Jar",
+  "handle": "classic-malt-jar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119396_12-horlicks-health-nutrition-drink-classic-malt.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "264",
+    "compare_at_price": "264",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119386_15-horlicks-health-nutrition-drink-classic-malt.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "425",
+    "compare_at_price": "425",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119384_16-horlicks-health-nutrition-drink-classic-malt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119396_12-horlicks-health-nutrition-drink-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119396-2_11-horlicks-health-nutrition-drink-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119396-3_11-horlicks-health-nutrition-drink-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119396-4_11-horlicks-health-nutrition-drink-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119396-5_10-horlicks-health-nutrition-drink-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119396-6_8-horlicks-health-nutrition-drink-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119396-7_8-horlicks-health-nutrition-drink-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119396-8_8-horlicks-health-nutrition-drink-classic-malt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is India's #1 Nutrition Drink that helps kids be Taller, Stronger, Sharper. It contains 27 vital nutrients like Folic Acid, Vitamin D, Protein, Calcium, and Iron that help in mental development and physical strength. It also has Zinc and Vitamin E that build immunity. Horlicks is also available in Chocolate delight flavour. For over 150 years, Horlicks has stayed true to its original purpose of providing high-quality, wholesome nutrition. Made with the goodness of milk, wheat, and barley, and fortified with 27 vital nutrients. Regular intake of Horlicks with daily diet helps in children's growth and development like better bones, more muscles and improved concentration scores. Horlicks is clinically proven to make kids Taller, Stronger, Sharper! • Calcium, Phosphorus, Magnesium & Vitamin D supporting height gain — Taller. • Protein & Potassium supporting healthy bones and muscles — Stronger. • Vitamin B9, B12, Iron, Iodine & Zinc supporting attention & concentration — Sharper. • Vitamin A, E, C, Copper & Selenium to support immunity. For your favourite cup of Horlicks, just take 200 ml of hot or cold milk or water, add 3 spoons (27 g) of Horlicks, stir briskly, and enjoy! This iconic drink has been a household name for over a century, synonymous with nourishment and wellness. Today, Horlicks stands as a beacon of nutritional goodness, cherished by generations across the globe.",
+   "ingredients": "Malt (65.6%) [Barley (31.3%), Wheat Flour (Atta), Wheat, Millet], Milk Solids (14%), Sugar, Wheat Gluten, Minerals, Emulsifier (INS 471), Edible Iodised Salt, Soy Protein Isolate, Acidity Regulators [INS 501(ii), INS 500(ii)], Vitamins",
+   "nutritionalInfo": {
+    "Nutrition per gram": "27g",
+    "Serving Size": "200 ml",
+    "Energy": "377 kcal",
+    "Protein": "11 g",
+    "Carbohydrate": "79 g",
+    "Total Sugars": "46 g",
+    "Added Sugar": "13.5 g",
+    "Total Fat": "2 g",
+    "Saturated Fat": "<1.4 g",
+    "Trans Fat": "<0.1 g",
+    "Cholestrol": "<5 mg",
+    "Sodium": "<400 mg",
+    "Vitamin B1": "1.3 mg",
+    "Vitamin D": "9.3 mcg",
+    "Vitamin B2": "3 mg",
+    "Calcium": "741 mg",
+    "Magnesium": "65 mg",
+    "Phosphorus": "280 mg",
+    "Potassium": "450 mg",
+    "Chloride": "565 mg",
+    "Vitamin A": "741 mcg",
+    "Vitamin B9": "370 mcg",
+    "Vitamin E": "2.5 mg",
+    "Vitamin B12": "1.9 mcg",
+    "Vitamin C": "148 mg",
+    "Iron": "26 mg",
+    "Copper": "0.65 mg",
+    "Iodine": "139 mcg",
+    "Selenium": "74 mcg",
+    "Zinc": "8.3 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Hindustan Unilever Limited|| Patiala Road|| Nabha-147201|| (Punjab)",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Malt Refill",
+  "handle": "classic-malt-refill",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "18g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/73978_1-horlicks-horlicks-classic-malt.jpg"
+    },
+    "barcode": "8909106053137"
+   },
+   {
+    "title": "200g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/253504_11-horlicks-health-nutrition-drink-classic-malt.jpg"
+    }
+   },
+   {
+    "title": "450g",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40117959_11-horlicks-health-nutrition-drink-classic-malt.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "234",
+    "compare_at_price": "234",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119387_19-horlicks-health-nutrition-drink-classic-malt.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "405",
+    "compare_at_price": "405",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071513_12-horlicks-health-nutrition-drink-classic-malt.jpg"
+    }
+   },
+   {
+    "title": "900g",
+    "price": "425",
+    "compare_at_price": "425",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100006552_8-horlicks-health-drink-original.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "440",
+    "compare_at_price": "440",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119385_16-horlicks-health-nutrition-drink-classic-malt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/73978_1-horlicks-horlicks-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/73978-2_1-horlicks-horlicks-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/73978-3_1-horlicks-horlicks-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/73978-4_1-horlicks-horlicks-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/73978-5_1-horlicks-horlicks-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/73978-6_1-horlicks-horlicks-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/253504_11-horlicks-health-nutrition-drink-classic-malt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40117959_11-horlicks-health-nutrition-drink-classic-malt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is a malt based food drink. Did you know that your child needs nutrients important for growth which might get missed in the daily diet. Everyday consumption of Horlicks helps provide those nutrients. It has been clinically proven^ that children consuming Horlicks everyday were Taller, Stronger & Sharper^ compared to those who were not. Horlicks is available in two yummy flavours – Classic Malt and Chocolate Delight, so there's no compromise on nutrition and taste!",
+   "manufacturerName": "GSK CH India",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Malt Container",
+  "handle": "classic-malt-container",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2kg",
+    "price": "1150",
+    "compare_at_price": "1150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/236635_10-horlicks-health-drink-original.jpg"
+    },
+    "barcode": "8901030976193"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236635_10-horlicks-health-drink-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236635-2_8-horlicks-health-drink-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236635-3_8-horlicks-health-drink-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236635-4_8-horlicks-health-drink-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236635-5_8-horlicks-health-drink-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236635-6_7-horlicks-health-drink-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236635-7_7-horlicks-health-drink-original.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236635-8_6-horlicks-health-drink-original.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is India's #1 Nutrition Drink that helps kids be Taller, Stronger, Sharper. It contains 27 vital nutrients like Folic Acid, Vitamin D, Protein, Calcium, and Iron that help in mental development and physical strength. It also has Zinc and Vitamin E that build immunity. Horlicks is also available in Chocolate delight flavour. For over 150 years, Horlicks has stayed true to its original purpose of providing high-quality, wholesome nutrition. Made with the goodness of milk, wheat, and barley, and fortified with 27 vital nutrients. Regular intake of Horlicks with daily diet helps in children's growth and development like better bones, more muscles and improved concentration scores. Horlicks is clinically proven to make kids Taller, Stronger, Sharper! • Calcium, Phosphorus, Magnesium & Vitamin D supporting height gain — Taller. • Protein & Potassium supporting healthy bones and muscles — Stronger. • Vitamin B9, B12, Iron, Iodine & Zinc supporting attention & concentration — Sharper. • Vitamin A, E, C, Copper & Selenium to support immunity. For your favourite cup of Horlicks, just take 200 ml of hot or cold milk or water, add 3 spoons (27 g) of Horlicks, stir briskly, and enjoy! This iconic drink has been a household name for over a century, synonymous with nourishment and wellness. Today, Horlicks stands as a beacon of nutritional goodness, cherished by generations across the globe.",
+   "ingredients": "Malt, Milk Solids, Sugar, Wheat Flour, Wheat Gluten, Minerals, Edible Iodised Salt, Acidity Regulators",
+   "nutritionalInfo": {
+    "Serving Size": "27g",
+    "Nutrition per gram": "100g",
+    "Energy": "377 kcal",
+    "Protein": "11 g",
+    "Carbohydrate": "79 g",
+    "Total Sugars": "46 g",
+    "Added Sugar": "13.5 g",
+    "Total Fat": "2 g",
+    "Saturated Fat": "<1.4 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "<5 mg",
+    "Sodium": "<400 mg",
+    "Vitamin B1": "1.3 mg",
+    "Vitamin B2": "3 mg",
+    "Vitamin B3": "17 mg",
+    "Vitamin B5": "1.4 mg",
+    "Vitamin B6": "3.7 mg",
+    "Vitamin B7": "9 mcg",
+    "Vitamin A": "741 mcg",
+    "Vitamin B9": "370 mcg",
+    "Vitamin E": "2.5 mg",
+    "Vitamin B12": "1.9 mcg",
+    "Vitamin C": "148 mg",
+    "Calcium": "741 mg",
+    "Magnesium": "65 mg",
+    "Phosphorus": "280 mg",
+    "Potassium": "450 mg",
+    "Chloride": "565 mg",
+    "Iron": "26 mg",
+    "Copper": "0.65 mg",
+    "Iodine": "139 mcg",
+    "Selenium": "74 mcg",
+    "Zinc": "8.3 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Hindustan Unilever Limited|| Patiala Road|| Nabha-147201|| (Punjab)",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Superfoods Classic Malt Jar",
+  "handle": "superfoods-classic-malt-jar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+    },
+    "barcode": "8909106074774"
+   },
+   {
+    "title": "500g",
+    "price": "264",
+    "compare_at_price": "264",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359126_2-horlicks-classic-malt-nutrition-drink.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360530_1-horlicks-classic-malt-nutrition-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209-2_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209-3_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209-4_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209-5_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209-6_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209-7_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364209-8_1-horlicks-stdhlx-icon-jar-200g-48-plsf.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is India's #1 Nutrition Drink that helps kids be Taller, Stronger, Sharper. It contains 27 vital nutrients like Folic Acid, Vitamin D, Protein, Calcium, and Iron that help in mental development and physical strength. It also has Zinc and Vitamin E that build immunity. Horlicks is also available in Chocolate delight flavour.\nFor over 150 years, Horlicks has stayed true to its original purpose of providing high-quality, wholesome nutrition. Made with the goodness of milk, wheat, and barley, and fortified with 27 vital nutrients. Regular intake of Horlicks with daily diet helps in children’s growth and development like better bones, more muscles and improved concentration scores. Horlicks is clinically proven to make kids Taller, Stronger, Sharper!\nCalcium, Phosphorus, Magnesium & Vitamin D supporting height gain – Taller\nProtein & Potassium supporting healthy bones and muscles – Stronger\nVitamin B9, B12, Iron, Iodine & Zinc supporting attention & concentration – Sharper\nVitamin A, E, C, Copper & Selenium to support immunity.\nFor your favourite cup of Horlicks, just take 200 ml of hot or cold milk or water, add 3 spoons (27 g) of Horlicks, stir briskly, and enjoy!\nThis iconic drink has been a household name for over a century, synonymous with nourishment and wellness. Today, Horlicks stands as a beacon of nutritional goodness, cherished by generations across the globe.",
+   "ingredients": "Superfood Blend (38%) [Barley Products (Malted Barley (24%), Barley) Millet (4%), Oat Powder (1%), Almond Powder+(0.5%)], Wheat Product [Wheat Flour (Atta) (26%), Wheat Extract, Wheat Gluten], Milk Solid (14%), Sugar, Minerals & Vitamins, Edible lodised Salt, Extract, Wheat Gluten], Milk Solids (14%), Sugar, Minerals & Vitamins, Edible lodised Salt, Soy Protein Isolate, Acidity Regulators (Potassium Bicarbonate, Sodiu Bicarbonate).+ Natural Flavouring Substance\nAllergen Information: Contains Wheat, Barley, Oats, Nuts, Milk & Soy. Horlicks is a nourishing beverage to be taken alongside regular daily diet.",
+   "manufacturerName": "Hindustan Unilever Limited|| Patiala Road|| Nabha-147201|| (Punjab)",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Superfoods Classic Malt Refill",
+  "handle": "superfoods-classic-malt-refill",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+    },
+    "barcode": "8909106074811"
+   },
+   {
+    "title": "500g",
+    "price": "219",
+    "compare_at_price": "219",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359127_2-horlicks-classic-malt-nutrition-drink.jpg"
+    }
+   },
+   {
+    "title": "800g",
+    "price": "415",
+    "compare_at_price": "415",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359128_2-horlicks-classic-malt-nutrition-drink.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "449",
+    "compare_at_price": "449",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360527_1-horlicks-classic-malt-nutrition-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208-2_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208-3_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208-4_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208-5_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208-6_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208-7_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40364208-8_1-horlicks-std-hlx-200g-cs-pouch-plsf.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is India's #1 Nutrition Drink that helps kids be Taller, Stronger, Sharper. It contains 27 vital nutrients like Folic Acid, Vitamin D, Protein, Calcium, and Iron that help in mental development and physical strength. It also has Zinc and Vitamin E that build immunity. Horlicks is also available in Chocolate delight flavour.\nFor over 150 years, Horlicks has stayed true to its original purpose of providing high-quality, wholesome nutrition. Made with the goodness of milk, wheat, and barley, and fortified with 27 vital nutrients. Regular intake of Horlicks with daily diet helps in children’s growth and development like better bones, more muscles and improved concentration scores. Horlicks is clinically proven to make kids Taller, Stronger, Sharper!\nCalcium, Phosphorus, Magnesium & Vitamin D supporting height gain – Taller\nProtein & Potassium supporting healthy bones and muscles – Stronger\nVitamin B9, B12, Iron, Iodine & Zinc supporting attention & concentration – Sharper\nVitamin A, E, C, Copper & Selenium to support immunity.\nFor your favourite cup of Horlicks, just take 200 ml of hot or cold milk or water, add 3 spoons (27 g) of Horlicks, stir briskly, and enjoy!\nThis iconic drink has been a household name for over a century, synonymous with nourishment and wellness. Today, Horlicks stands as a beacon of nutritional goodness, cherished by generations across the globe.",
+   "ingredients": "Superfood Blend (38%) [Barley Products (Malted Barley (24%), Barley) Millet (4%), Oat Powder (1%), Almond Powder+(0.5%)], Wheat Product [Wheat Flour (Atta) (26%), Wheat Extract, Wheat Gluten], Milk Solid (14%), Sugar, Minerals & Vitamins, Edible lodised Salt, Extract, Wheat Gluten], Milk Solids (14%), Sugar, Minerals & Vitamins, Edible lodised Salt, Soy Protein Isolate, Acidity Regulators (Potassium Bicarbonate, Sodiu Bicarbonate).+ Natural Flavouring Substance\nAllergen Information: Contains Wheat, Barley, Oats, Nuts, Milk & Soy. Horlicks is a nourishing beverage to be taken alongside regular daily diet.",
+   "manufacturerName": "Hindustan Unilever Limited|| Patiala Road|| Nabha-147201|| (Punjab)",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Superfoods Classic Malt Carton",
+  "handle": "superfoods-classic-malt-carton",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531_1-horlicks-classic-malt-nutrition-drink.jpg"
+    },
+    "barcode": "8909106074804"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531-2_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531-3_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531-4_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531-5_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531-6_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531-7_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360531-8_1-horlicks-classic-malt-nutrition-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is India's #1 Nutrition Drink that helps kids be Taller, Stronger, Sharper. It contains 27 vital nutrients like Folic Acid, Vitamin D, Protein, Calcium, and Iron that help in mental development and physical strength. It also has Zinc and Vitamin E that build immunity. Horlicks is also available in Chocolate delight flavour.\nFor over 150 years, Horlicks has stayed true to its original purpose of providing high-quality, wholesome nutrition. Made with the goodness of milk, wheat, and barley, and fortified with 27 vital nutrients. Regular intake of Horlicks with daily diet helps in children’s growth and development like better bones, more muscles and improved concentration scores. Horlicks is clinically proven to make kids Taller, Stronger, Sharper!\nCalcium, Phosphorus, Magnesium & Vitamin D supporting height gain – Taller.\nProtein & Potassium supporting healthy bones and muscles – Stronger.\nVitamin B9, B12, Iron, Iodine & Zinc supporting attention & concentration – Sharper.\nVitamin A, E, C, Copper & Selenium to support immunity.\nFor your favourite cup of Horlicks, just take 200 ml of hot or cold milk or water, add 3 spoons (27 g) of Horlicks, stir briskly, and enjoy!\nThis iconic drink has been a household name for over a century, synonymous with nourishment and wellness. Today, Horlicks stands as a beacon of nutritional goodness, cherished by generations across the globe.",
+   "ingredients": "Multi Cereal Mix [Wheat Flour (Atta) (26%), Cereal Derivatives, Barley, Wheat], Superfood Blend (30%) [Malted Barely (24%), Millet (4%), Oats Powder(1%), Almonds Powder*], Milk Solidds (14%), Minerals & Vitamins, Edible Iodised Salt, Soy Protein Isolate, Acidity Regulators (Potassium Bicarbonate, Sodium Bicarbonate). *Natural Flavouring Substance",
+   "nutritionalInfo": {
+    "Energy": "358 kcal",
+    "Protein": "11 g",
+    "Carbohydrates": "77 g",
+    "Total Sugars": "45 g",
+    "Added Sugars": "12 g",
+    "Dietary Fiber": "6.1 g",
+    "Total Fat": "2 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "<5 mg",
+    "Sodium": "175 mg",
+    "Vitamin B1 (Thiamine)": "1.65 mg",
+    "Vitamin B2 (Riboflavin)": "3 mg",
+    "Vitamin B3 (Niacin)": "17 mg",
+    "Vitamin B5 (Pantothenic Acid)": "6.4 mg",
+    "Vitamin B6": "3.55 mg",
+    "Vitamin B7 (Biotin)": "45 mcg",
+    "Chloride": "565 mg",
+    "Folic Acid": "250 mcg",
+    "Vitamin B12": "4.0 mcg",
+    "Iron": "26 mg",
+    "Iodine": "139 mcg",
+    "Zinc": "14.8 mg",
+    "Vitamin D": "27.5",
+    "Calcium": "741 mg",
+    "Magnesium": "65 mg",
+    "Phosphorus": "280 mg",
+    "Potassium": "450 mg",
+    "Vitamin A": "940 mcg",
+    "Vitamin E": "10 mg",
+    "Vitamin C": "107 mg",
+    "Copper": "0.65 mg",
+    "Selenium": "68 mcg"
+   },
+   "manufacturerName": "Hindustan Unilever Limited|",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Superfoods Classic Malt Container",
+  "handle": "superfoods-classic-malt-container",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2kg",
+    "price": "1150",
+    "compare_at_price": "1150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529_1-horlicks-classic-malt-nutrition-drink.jpg"
+    },
+    "barcode": "8909106074842"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529-2_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529-3_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529-4_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529-5_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529-6_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529-7_1-horlicks-classic-malt-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360529-8_1-horlicks-classic-malt-nutrition-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is India's #1 Nutrition Drink that helps kids be\nTaller, Stronger, Sharper. It contains 27 vital nutrients like Folic Acid,\nVitamin D, Protein, Calcium, and Iron that help in mental development and\nphysical strength. It also has Zinc and Vitamin E that build immunity. Horlicks\nis also available in Chocolate delight flavour. For over 150 years, Horlicks\nhas stayed true to its original purpose of providing high-quality, wholesome\nnutrition. Made with the goodness of milk, wheat, and barley, and fortified\nwith 27 vital nutrients. Regular intake of Horlicks with daily diet helps in\nchildren’s growth and development like better bones, more muscles and improved\nconcentration scores. Horlicks is clinically proven to make kids Taller,\nStronger, Sharper!\nCalcium, Phosphorus, Magnesium & Vitamin D supporting\nheight gain – Taller.\nProtein & Potassium supporting healthy bones and\nmuscles – Stronger.\nVitamin B9, B12, Iron, Iodine & Zinc supporting\nattention & concentration – Sharper.\nVitamin A, E, C, Copper & Selenium to support\nimmunity. For your favourite cup of Horlicks, just take 200 ml of hot or cold\nmilk or water, add 3 spoons (27 g) of Horlicks, stir briskly, and enjoy!\nThis iconic drink has been a household name for over a\ncentury, synonymous with nourishment and wellness. Today, Horlicks stands as a\nbeacon of nutritional goodness, cherished by generations across the globe.",
+   "ingredients": "Multi Cereal Mix [Wheat Flour (Atta) (26%), Cereal\nDerivatives, Barley, Wheat], Superfood Blend (30%) [Malted Barely (24%), Millet\n(4%), Oats Powder(1%), Almonds Powder*], Milk Solidds (14%), Minerals &\nVitamins, Edible Iodised Salt, Soy Protein Isolate, Acidity Regulators\n(Potassium Bicarbonate, Sodium Bicarbonate). *Natural Flavouring Substance",
+   "nutritionalInfo": {
+    "Energy": "358 kcal",
+    "Protein": "11 g",
+    "Carbohydrates": "77 g",
+    "Total Sugars": "45 g",
+    "Added Sugars": "12 g",
+    "Dietary Fiber": "6.1 g",
+    "Total Fat": "2 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "<5 mg",
+    "Sodium": "175 mg",
+    "Vitamin B1 (Thiamine)": "1.65 mg",
+    "Vitamin B2 (Riboflavin)": "3 mg",
+    "Vitamin B3 (Niacin)": "17 mg",
+    "Vitamin B5 (Pantothenic Acid)": "6.4 mg",
+    "Vitamin B6": "3.55 mg",
+    "Vitamin B7 (Biotin)": "45 mcg",
+    "Chloride": "565 mg",
+    "Folic Acid": "250 mcg",
+    "Vitamin B12": "4.0 mcg",
+    "Iron": "26 mg",
+    "Iodine": "139 mcg",
+    "Zinc": "14.8 mg",
+    "Vitamin D": "27.5",
+    "Calcium": "741 mg",
+    "Magnesium": "65 mg",
+    "Phosphorus": "280 mg",
+    "Potassium": "450 mg",
+    "Vitamin A": "940 mcg",
+    "Vitamin E": "10 mg",
+    "Vitamin C": "107 mg",
+    "Copper": "0.65 mg",
+    "Selenium": "68 mcg"
+   },
+   "manufacturerName": "Hindustan Unilever Limited Patiala Road Nabha-147201 (Punjab)",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "No Added Sugar Nutrition Drink",
+  "handle": "no-added-sugar-nutrition-drink",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "470g",
+    "price": "284",
+    "compare_at_price": "284",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+    },
+    "barcode": "8909106095472"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447-2_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447-3_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447-4_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447-5_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447-6_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447-7_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358447-8_2-horlicks-classic-malt-nutrition-drink-powder-with-superfoods.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "\"Horlicks is India's #1 Nutrition Drink that helps kids be Taller, Stronger, Sharper. It contains 27 vital nutrients like Folic Acid, Vitamin D, Protein, Calcium, and Iron that help in mental development and physical strength. It also has Zinc and Vitamin E that build immunity. Horlicks is also available in Chocolate delight flavour.\nFor over 150 years, Horlicks has stayed true to its original purpose of providing high-quality, wholesome nutrition. Made with the goodness of milk, wheat, and barley, and fortified with 27 vital nutrients. Regular intake of Horlicks with daily diet helps in children’s growth and development like better bones, more muscles and improved concentration scores.\nHorlicks is clinically proven to make kids Taller, Stronger, Sharper!\nCalcium, Phosphorus, Magnesium & Vitamin D supporting height gain – Taller.\nProtein & Potassium supporting healthy bones and muscles – Stronger.\nVitamin B9, B12, Iron, Iodine & Zinc supporting attention & concentration – Sharper.\nVitamin A, E, C, Copper & Selenium to support immunity.\nFor your favourite cup of Horlicks, just take 200 ml of hot or cold milk or water, add 3 spoons (27 g) of Horlicks, stir briskly, and enjoy!\nThis iconic drink has been a household name for over a century, synonymous with nourishment and wellness. Today, Horlicks stands as a beacon of nutritional goodness, cherished by generations across the globe.\"",
+   "ingredients": "Almonds, Oats, Millets, Malt\nPer 100 g\nMacronutrients:\nEnergy: 358 kcal\nProtein: 11 g\nCarbohydrates: 77 g\nTotal Sugars: 32 g\nAdded Sugars: 0 g\nDietary Fibre: 6.1 g\nTotal Fat: 2 g\nSaturated Fat: 1 g\nTrans Fat: <0.1 g\nCholesterol: <5 mg\nSodium: 175 mg\nEnergy & Metabolism Support:\nVitamin B1 (Thiamine): 1.65 mg\nVitamin B2 (Riboflavin): 3 mg\nVitamin B3 (Niacin): 6.4 mg\nVitamin B6: 3.55 mg\nVitamin B7 (Biotin): 45 mcg\nChloride: 565 mg\nActive Brain Support:\nFolic Acid: 250 mcg\nVitamin B12: 4.0 mcg\nIron: 26 mg\nIodine: 139 mcg\nZinc: 14.8 mg\nHealthy Bones & Muscles:\nVitamin D: 27.5 mcg\nCalcium: 741 mg\nMagnesium: 65 mg\nPhosphorus: 280 mg\nPotassium: 450 mg\nImmunity Support\nVitamin A: 940 mcg\nVitamin E: 10 mg\nVitamin C: 107 mg\nCopper: 0.65 mg\nSelenium: 68 mcg",
+   "manufacturerName": "Hindustan Unilever Limited Hindustan Unilever Ltd|| Unilever House|| B D Sawant Marg|| Chakala Andheri East - 400099",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Delight Jar",
+  "handle": "chocolate-delight-jar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119373_14-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+    },
+    "barcode": "8901030986321"
+   },
+   {
+    "title": "500g",
+    "price": "229",
+    "compare_at_price": "229",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119375_19-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "425",
+    "compare_at_price": "425",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068967_8-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119373_14-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119373-2_9-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119373-3_9-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119373-4_8-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119373-5_8-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119373-6_6-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119373-7_5-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119373-8_5-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is a Malt based food drink that has nutrients to support immunity. Horlicks is clinically proven to improve 5 signs of growth and is clinically proven to make kids taller, stronger and sharper. Horlicks is scientifically proven to improve the power of milk. Horlicks is now available in 4 exciting and yummy flavours - Classic Malt, Chocolate, Elaichi, and Kesar Badam. Enjoy with a cup of hot milk or a glass of cold milk.",
+   "ingredients": "Malted Cereals (Extracted Solids) (23%) [Barley Malt (13%), Wheat Malt (10%)], Cereal Extract (19%) [Barley (11%), Wheat (8%)], Partially Hydrolysed Cereal Solids, Sugar, Milk Solids (8%), Cocoa Powder (6%), Wheat Gluten, Minerals, Soy Protein Isolate, Emulsifier (Ins 471), Liquid Glucose, Natural Colour (Ins 150C), Nature Identical Flavouring Substances, Vitamins, Stabiliser (Ins 412), Edible Iodised Salt, Acidity Regulators (Ins 501(Ii), Ins 500(Ii))",
+   "nutritionalInfo": {
+    "Serving Size": "27 g",
+    "Energy": "365 kcal",
+    "Carbohydrate": "78 g",
+    "Total Sugars": "32 g",
+    "Added Sugar": "14 g",
+    "Dietary Fibre": "2.4 g",
+    "Total Fat": "2 g",
+    "Saturated Fat": "<1.4 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "<5 mg",
+    "Sodium": "350 mg",
+    "Protein": "10 g",
+    "calcium": "741 mg",
+    "Iron": "26 mg",
+    "Vitamin B9": "370 Mcg",
+    "Vitamin B12": "1.9 Mcg",
+    "Magnesium": "65 mg",
+    "Iodine": "139 Mcg",
+    "Zinc": "8.3 mg",
+    "Vitamin D": "9.3 Mcg",
+    "Vitamin A": "741 Mcg",
+    "Phosphorus": "190 mg",
+    "Vitamin E": "2.5 mg",
+    "Potassium": "300 mg",
+    "Vitamin C": "148 mg",
+    "Copper": "0.65 mg",
+    "Selenium": "74 Mcg",
+    "Vitamin B1": "1.3 mg",
+    "Vitamin B2": "3 mg",
+    "Vitamin B3": "17 mg",
+    "Vitamin B5": "1.4 mg",
+    "Vitamin B6": "3.7 mg",
+    "Vitamin B7": "9 Mcg",
+    "Chloride": "180 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Hindustan Unilever Limited|| Patiala Road|| Nabha-147201|| (Punjab)",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Delight Refill",
+  "handle": "chocolate-delight-refill",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222427_3-chocolate-horlicks-health-nutrition-drink-chocolate.jpg"
+    },
+    "barcode": "8901030986024"
+   },
+   {
+    "title": "500g",
+    "price": "229",
+    "compare_at_price": "229",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119376_13-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071514_9-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005341_11-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222427_3-chocolate-horlicks-health-nutrition-drink-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222427-2_1-chocolate-horlicks-health-nutrition-drink-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222427-3_1-chocolate-horlicks-health-nutrition-drink-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222427-4_1-chocolate-horlicks-health-nutrition-drink-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222427-5_1-chocolate-horlicks-health-nutrition-drink-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40222427-6_1-chocolate-horlicks-health-nutrition-drink-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/119376_13-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071514_9-horlicks-health-nutrition-drink-chocolate-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is a nutrition drink that contains nutrients to support immunity. Horlicks has been clinically proven to improve 5 signs of growth and to make kids taller, stronger, and sharper. It is also scientifically proven to improve the power of milk. Horlicks is now available in 4 exciting and delicious flavours - Classic Malt, Chocolate, Elaichi, and Kesar Badam. Enjoy with a cup of hot milk or a glass of cold milk. Horlicks is a leading force in the ‘Science of Food’ and has bio-available nutrients, meaning nutrients that are more available for growth. These get absorbed in the blood and are carried to all parts of the body.\nHorlicks contains 9 nutrients (Vitamin B6, B12, C, D, Copper, Folic Acid, Iron, Selenium, and Zinc) which are scientifically proven to support immunity. It also increases the density of minerals such as calcium in bones to give children bigger and stronger bones. Horlicks is clinically proven to increase lean tissue, making children 'stronger'. It helps improve attention and concentration to make your child sharper. Horlicks is also clinically proven for more haemopoietic nutrients in the blood, leading to 'healthier blood', referring to improvement in the levels of blood health-related nutrients (Vitamin A & Folate) in circulation. Horlicks is also clinically proven to increase fat-free mass, making children stronger.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g Serving_Size: 27g Energy: 370 kcal Protein: 10 g Carbohydrate: 78 g Total Sugars: 32 g Added Sugars: 14 g Total Fat: 2 g Saturated Fat: <1.4 g Trans Fat: <0.1 g Cholesterol: <5 mg Sodium: 145 mg Vitamin A: 741 mcg Vitamin B1: 1.3 mg Vitamin B2: 3 mg Vitamin B3: 17 mg Vitamin B5: 1.4 mg Vitamin B6: 3.7 mg Vitamin B7: 9 mcg Vitamin B9: 370 mcg Vitamin B12: 1.9 mcg Vitamin C: 148 mg Vitamin D: 9.3 mcg Vitamin E: 2.5 mg Calcium: 741 mg Chloride: 180 mg Copper: 0.65 mg Iodine: 139 mcg Iron: 26 mg Magnesium: 65 mg Phosphorus: 190 mg Potassium: 300 mg Selenium: 74 mcg Zinc: 8.3 mg RDA per Serve (27 g): Energy-5%, Added Sugars-8%, Total Fat-1%, Saturated Fat-<2%, Trans Fat-<1%, Sodium-2%"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Milkshake",
+  "handle": "chocolate-milkshake",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301_1-horlicks-chocolate-milkshake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301_1-horlicks-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301-2_1-horlicks-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301-3_1-horlicks-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301-4_1-horlicks-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301-5_1-horlicks-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301-6_1-horlicks-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301-7_1-horlicks-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341301-8_1-horlicks-chocolate-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks, India's #1 Nutrition Drink, has been a household staple for over a century. Synonymous with nourishment and wellness, Horlicks has been a trusted companion in Indian homes, offering essential nutrients to families for generations. Now, we are excited to introduce the Horlicks Chocolate Milkshake - a rich, thick, and creamy chocolate-flavoured treat that is now available in a convenient and long-lasting tetra pack. This delightful beverage is perfect for those who crave a delicious and nutritious drink. Whether it's a hot summer day or a chilly winter evening, you can now indulge in the delectable taste of Horlicks Chocolate Milkshake all year round. The convenient tetra pack ensures that the milkshake remains fresh and ready to enjoy anytime, anywhere. Incorporate the Horlicks Chocolate Milkshake into your daily routine as part of a balanced diet and regular exercise plan to maximise its health benefits. This beverage not only satisfies your taste buds with its fantastic chocolate flavour but also provides essential nutrients that contribute to overall well-being. Enjoy the perfect combination of great taste and health benefits with every sip of Horlicks Chocolate Milkshake. For the best experience, serve this creamy, chocolatey delight chilled. Whether you're enjoying it as a refreshing pick-me-up during the day or as a tasty treat to unwind in the evening, the Horlicks Chocolate Milkshake is sure to become a favourite in your household. Embrace the new packaging and relish the timeless goodness of Horlicks in this exciting and delicious new form.",
+   "ingredients": "Pasteurized Toned Milk (60%), Water, Sugar, Cereal Product (3%), Milk Solids, Acidity Regulator (Ins 339 (Ii)), Stabilizers (Ins 418, Ins 407).\nAllergen Information: Contains Milk. Wheat. Barley And Sov.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "180ml",
+    "Energy": "70kcal",
+    "Protein": "2.7g",
+    "Carbohydrate": "11g",
+    "Total Sugars": "10g",
+    "Added Sugars": "5.3g",
+    "Dietary Fibre": "0.1g",
+    "Total Fat": "1.7g",
+    "Saturated Fat": "<1.6g",
+    "Trans Fat": "<0.01g",
+    "Cholesterol": "<5.50mg",
+    "Sodium": "<100mg",
+    "RDA Per Single Consumption Pack": "{'Energy': '6%', 'Added_Sugars': '19%', 'Total_Fat': '5%', 'Saturated_Fat': '<13%', 'Trans_Fat': '<1%'}"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Schreiber Dynamix Dairies Pvt. Ltd",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lite Jar",
+  "handle": "lite-jar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/170752_11-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+    },
+    "barcode": "8909106084728"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170752_11-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170752-2_4-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170752-3_4-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170752-4_4-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170752-5_4-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170752-6_3-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170752-7_3-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/170752-8_2-horlicks-lite-health-nutrition-drink-regular-malt-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks Lite is a specialized adult nutrition drink that caters to the unique nutritional requirements of active adults aged 35 and above. Horlicks Lite with no added sugar contains high-quality protein that helps in cell maintenance and repair, which is essential for maintaining a healthy body. Moreover, Horlicks Lite is free from added sugars and cholesterol, making it a perfect fit for older adults.\nAbout Horlicks Lite: Nutrition designed for Active Adults. Horlicks adult contains essential nutrients like Vitamin C, Vitamin D, and Zinc that are known to support the optimal functioning of the immune system, promoting a healthy body. Lite Horlicks is with no added sugar. It contains six antioxidant nutrients, like Vitamin C, Vitamin E, Vitamin B2, Zinc, Selenium, and Copper, that protect cells from oxidative stress, ensuring the body's overall well-being. Horlicks Lite is a nutrition drink for adults is designed to support the healthy lifestyle of active adults and provides a maximum shelf life of 12 months. Add three heaped teaspoonfuls (25g) of the powder to 200ml of cold or hot milk or water to prepare your nourishing Horlicks Lite drink. Stir quickly to mix well and enjoy great taste of Horlicks Lite. Available in 2 tasty flavours - Regular Malt and Badam.",
+   "ingredients": "Cereal Extract (65%) [Barley (37%)|| Wheat (15%)|| Malted Barley (12%)||Wheat Malt (1%)]|| Milk Solids (17%)|| Corn Solids (Hydrolyzed)|| Minerals|| Soy Protein Isolate||Wheat Gluten|| Nature Identical Flavouring Substances|| Vitamins|| Edible Iodized Salt||Non-Caloric Sweetener [Ins 950]|| Natural Flavour.\nAllergen Information: Contains Wheat || Barley || Milk & Soy || May Contain Oats And Nuts.\nNutritional Info:\nEnergy: 367 kcal\nProtein: 13 g\nCarbohydrate: 74 g\nTotal Sugars: 45 g\nAdded Sugar: 0.0 g\nTotal Fat: < 2.1 g\nSaturated Fat: < 1.5 g\nMUFA: 0.3 g\nPUFA: 0.3 g\nTrans Fat: 0 g\nCholesterol: 0 mg\nVitamin A: 800 mcg\nVitamin B1: 1.2 mg\nVitamin B2: 1.3 mg\nVitamin B3: 16 mg\nVitamin B5: 5 mg\nVitamin B6: 2.6 mg\nVitamin B7: 30 mcg\nVitamin B9: 240 mcg\nVitamin B12: 2.0 mcg\nVitamin C: 80 mg\nVitamin D: 5.0 mcg\nVitamin E: 10 mg\nCalcium: 800 mg\nCopper: 1.8 mg\nIron: 27.4 mg\nIodine: 150 mcg\nMagnesium: 88.4 mg\nPotassium: 419 mg\nSelenium: 34 mcg\nSodium: < 400 mg\nZinc: 4.2 mg",
+   "manufacturerName": "Hindustan Unilever LimitedHindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lite Refill",
+  "handle": "lite-refill",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102_2-horlicks-lite-regular-malt-health-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102_2-horlicks-lite-regular-malt-health-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102-2_2-horlicks-lite-regular-malt-health-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102-3_2-horlicks-lite-regular-malt-health-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102-4_2-horlicks-lite-regular-malt-health-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102-5_2-horlicks-lite-regular-malt-health-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102-6_2-horlicks-lite-regular-malt-health-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102-7_2-horlicks-lite-regular-malt-health-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321102-8_2-horlicks-lite-regular-malt-health-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks Lite is a specialised adult nutrition drink that caters to the unique nutritional requirements of active adults aged 35 and above. Horlicks Lite with no added sugar contains high-quality protein that helps in cell maintenance and repair, which is essential for maintaining a healthy body. Moreover, Horlicks Lite is free from added sugars and cholesterol, making it a perfect fit for older adults. About Horlicks Lite: Nutrition designed for Active Adults. Horlicks adult contains essential nutrients like Vitamin C, Vitamin D, and Zinc that are known to support the optimal functioning of the immune system, promoting a healthy body. Lite Horlicks is with no added sugar. It contains six antioxidant nutrients, like Vitamin C, Vitamin E, Vitamin B2, Zinc, Selenium, and Copper, that protect cells from oxidative stress, ensuring the body's overall well-being. Horlicks Lite is a nutrition drink for adults designed to support the healthy lifestyle of active adults and provides a maximum shelf life of 12 months.\nAdd three heaped teaspoonfuls (25 g) of the powder to 200 ml of cold or hot milk or water to prepare your nourishing Horlicks Lite drink. Stir quickly to mix well and enjoy the great taste of Horlicks Lite. Available in 2 tasty flavours - Regular Malt and Badam.",
+   "ingredients": "Cereal Extract (65%) [Barley (37%), Wheat (15%), Malted Barley (12%), Wheat Malt (1%)], Milk Solids (17%), Corn Solids (Hydrolysed), Minerals, Soy Protein Isolate, Wheat Gluten, Nature Identical Flavouring Substances, Vitamins, Edible lodized Salt, Non-Caloric Sweetener [INS 950], Natural Flavour.\nAllergen Information: Contains Wheat, Barley, Milk & Soy. May Contain Oats & Nuts.\nNutritional Information\nSource of Energy\nEnergy: 367 kcal\nProtein: 13 g\nCarbohydrate: 74 g\nTotal Sugars: 45 g\nAdded Sugar: 0 g\nTotal Fat: <2.1 g\nSaturated Fat: <1.5 g\nMUFA: 0.3 g\nPUFA: 0.3 g\nTrans Fat: 0 g\nCholesterol: 0 mg\nOther Nutrients\nVitamin B1: 1.2 mg\nVitamin B2: 1.3 mg\nVitamin B3: 16 mg\nVitamin B5: 5 mg\nVitamin B7: 30 mcg\nVitamin E: 10 mg\nCalcium: 800 mg\nIodine: 150 mcg\nMagnesium: 88.4 mg\nPotassium: 419 mg\nSodium: <400 mg\nSupports Normal Immune System\nFunction\nVitamin A: 800 mg\nVitamin B6: 2.6 mg\nVitamin B9: 240 mcg\nVitamin B12: 2.0 mcg\nVitamin C: 80 mg\nVitamin D: 5.0 mcg\nCopper: 1.8 mg\nIron: 27.4 mg\nSelenium: 34 mcg\nZinc: 4.2 mg",
+   "manufacturerName": "Legacy Foods Pvt. Ltd",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lite Badam",
+  "handle": "lite-badam",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336_7-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+    },
+    "barcode": "8901030824944"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336_7-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336-2_5-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336-3_5-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336-4_5-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336-5_5-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336-6_4-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336-7_4-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005336-8_2-horlicks-lite-health-nutrition-drink-badam-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks Lite is a specialized adult nutrition drink that caters to the unique nutritional requirements of active adults aged 35 and above. Horlicks Lite with no added sugar contains high-quality protein that helps in cell maintenance and repair, which is essential for maintaining a healthy body. Moreover, Horlicks Lite is free from added sugars and cholesterol, making it a perfect fit for older adults. About Horlicks Lite: Nutrition designed for Active Adults. Horlicks adult contains essential nutrients like Vitamin C, Vitamin D, and Zinc that are known to support the optimal functioning of the immune system, promoting a healthy body. Lite Horlicks is with no added sugar. It contains six antioxidant nutrients, like Vitamin C, Vitamin E, Vitamin B2, Zinc, Selenium, and Copper, that protect cells from oxidative stress, ensuring the body's overall well-being. Horlicks Lite is a nutrition drink for adults is designed to support the healthy lifestyle of active adults and provides a maximum shelf life of 12 months. Add three heaped teaspoonfuls (25g) of the powder to 200ml of cold or hot milk or water to prepare your nourishing Horlicks Lite drink. Stir quickly to mix well and enjoy great taste of Horlicks Lite. Available in 2 tasty flavors - Regular Malt and Badam.",
+   "ingredients": "Cereal Extract (65%) [Barley (37%), Wheat (15%), Malted Barley (12%),Wheat Malt (1%)], Milk Solids (17%), Corn Solids (Hydrolyzed), Minerals, Soy Protein Isolate,Wheat Gluten, Nature Identical Flavouring Substances, Vitamins, Edible Iodized Salt,Non-Caloric Sweetener [INS 950], Natural Flavour. Allergen Information: Contains Wheat,Barley, Milk & Soy.",
+   "nutritionalInfo": {
+    "Energy": "367 kcal",
+    "Protein": "13 g",
+    "Carbohydrate": "74 g",
+    "Total Sugars": "45 g",
+    "Added Sugar": "0.0 g",
+    "Total Fat": "2.1 g",
+    "Saturated Fat": "1.5 g",
+    "MUFA": "0.3 g",
+    "PUFA": "0.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Calcium": "800 mg",
+    "Iron": "27.4 mg",
+    "Zinc": "4.2 mg",
+    "Sodium": "<400 mg",
+    "Potassium": "419 mg",
+    "Magnesium": "88.4 mg",
+    "Iodine": "150 mcg",
+    "Copper": "1.8 mg",
+    "Selenium": "34 mcg",
+    "Vitamin A": "800 mcg",
+    "Vitamin B1": "1.2 mg",
+    "Vitamin B2": "1.3 mg",
+    "Vitamin B3": "16 mg",
+    "Vitamin B5": "5 mg",
+    "Vitamin B6": "2.6 mg",
+    "Vitamin B7": "30 mcg",
+    "Vitamin B9": "240 mcg",
+    "Vitamin B12": "2.0 mcg",
+    "Vitamin C": "80 mg",
+    "Vitamin D": "5.0 mcg",
+    "Vitamin E": "10 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001897"
+  }
+ },
+ {
+  "title": "Millet Chocolate",
+  "handle": "millet-chocolate",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+    }
+   },
+   {
+    "title": "600g",
+    "price": "355",
+    "compare_at_price": "355",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40299543_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542-2_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542-3_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542-4_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542-5_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542-6_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542-7_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40299542-8_1-horlicks-millet-chocolate-rich-in-calcium-protein-iron.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful fusion of traditional wisdom and modern nutrition with Millet Chocolate Horlicks. Crafted with a blend of nutrient-rich millets, including finger millet, sorghum, and foxtail millet, this delectable drink offers a healthier alternative to regular chocolate beverages. Enriched with the goodness of these ancient grains, Millet Chocolate Horlicks provides a wealth of essential vitamins, minerals, and fibre, supporting your child's overall well-being. The unique combination of millets ensures a balanced nutritional profile, catering to your little one's diverse needs. Presented in a tempting chocolate flavour, this drink mix makes nutrition a delightful experience, encouraging your child to enjoy their glass without any fuss. Whether enjoyed with milk or water, Millet Chocolate Horlicks is a convenient, ready-to-consume beverage that can be savoured hot or cold, making it the perfect start to your child's day.",
+   "ingredients": "Cereal Extract (34%), [Barley, Malted Barley (11%), Wheat], Sugar, Millets (17%), [Pearl Millet (Bajra) (8%), Finger Millet (Ragi) (3%), Foxtail Millet (Kanngani) (3%), Sorghum (Jowar) (3%)], Milk Solids (8%), Cocoa Powder (6.5%), Wheat Gluten, Minerals, Soy Protein Isolate, Partially Hydrolysed Cereal Solids, Emulsifier (Ins 471), Liquid Glucose, Natural Colour (Ins 150C), Nature Identical Flavouring Substances, Vitamins, Stabilizer (Ins 412), Edible Iodised Salt, Acidity Regulators [Ins 501(Ii), Ins 500(Ii)]",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "27g",
+    "Energy": "kcal",
+    "Protein": "10g",
+    "Carbohydrate": "78g",
+    "Total Sugars": "And Added Sugar* 20g",
+    "Dietary Fibre": "2.4g",
+    "Saturated Fat": "<1.4g",
+    "Trans Fat": "<0.1g",
+    "Sodium": "<550mg",
+    "B1": "741Mcg",
+    "B2": "1.3mg",
+    "B3": "17mg",
+    "B5": "2.4mg",
+    "B6": "3.7mg",
+    "B7": "9Mcg",
+    "B9": "370Mcg",
+    "calcium": "741mg",
+    "Copper": "0.65mg",
+    "Chloride": "180mg",
+    "Iodine": "139Mcg",
+    "Iron": "26mg",
+    "Magnesium": "65mg",
+    "Phosphorus": "190mg",
+    "Potassium": "300mg",
+    "Selenium": "74Mcg",
+    "Zinc": "8.3mg",
+    "C": "148mg",
+    "D": "9.3Mcg",
+    "E": "2.5mg",
+    "RDA": "Lic. No. 1001302200 Bining 4D Anoverage Adult'S Recommended Dietary Allowance (2000 kcal)",
+    "Energy % RDA": "5%",
+    "Total Fat % RDA": "7%",
+    "Saturated Fat % RDA": "<2%",
+    "Sodium % RDA": "<7%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight"
+  }
+ },
+ {
+  "title": "Growth+ Chocolate",
+  "handle": "growth-chocolate",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "535",
+    "compare_at_price": "535",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075373_11-horlicks-health-drink-growth-chocolate.jpg"
+    },
+    "barcode": "8901571008223"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075373_11-horlicks-health-drink-growth-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075373-2_8-horlicks-health-drink-growth-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075373-3_6-horlicks-health-drink-growth-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075373-4_5-horlicks-health-drink-growth-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075373-5_5-horlicks-health-drink-growth-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is a malt based food drink. Horlicks Growth+ is an advanced Nutrition Drink for the growth, development of children. It is meant to nourish children who have fallen behind with their weight and height and is clinically proven to increase height, weight in 6 months. Enjoyed twice daily mixed with hot or cold water or milk, it contains high-quality whey protein to improve weight gain, and essential amino acids to naturally activate growth for strong, children. It is designed to naturally enhance growth without causing obesity in children. It also contains important nutrients Calcium, Iron, Vitamin D, A, C and Zinc. Horlicks Growth+ is clinically proven to increase growth in children in 6 months. Specially formulated with high-quality whey protein to help children who had fallen behind the average height and weight for their age. Contains essential amino acids Arginine, Glutamic acid, Leucine and Lysine to naturally activate growth in bones for strong children. Easily digested and quickly absorbed into the body.",
+   "ingredients": "Milk Solids (39. 7%), Sugar, Edible Vegetable Oil, Glucose Syrup Solids, Caseinates, Emulsifiers, Stabilizer, Corn Solids Hydrolysed, Edible Fibre, Minerals, Nature Identical Flavouring Substances, Acidity Regulator, Salt, Stabilizer, Amino Acids, Natural Colour, Vitamins",
+   "usageInstructions": "Take 200 ml of hot milk or water.\nAdd 3 scoops (48 gms) of Horlicks Growth+.\nStir quickly to mix well.",
+   "manufacturerName": "GSK CH India",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Junior Chocolate Jar",
+  "handle": "junior-chocolate-jar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "305",
+    "compare_at_price": "305",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329_8-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+    },
+    "barcode": "8901030820052"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329_8-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329-2_8-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329-3_8-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329-4_8-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329-5_8-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329-6_8-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329-7_8-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205329-8_2-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Junior Horlicks is one of India’s leading nutritional\ncereal-based drinks for toddlers in the age group of 2–6 years. It contains\nnutrients that help support brain development, growth and immunity in toddlers\nand pre-schoolers.\nJunior Horlicks is tailor-made for your little fussy eaters\nand helps in completing their A to Z nutrition. Two cups of Junior Horlicks\ncontain 85% RDA of Iron, 75% RDA of Vitamin C and 64% RDA of Calcium for your\ntoddler.*\nPhysical Growth: Junior Horlicks\ncontains nutrients such as Calcium, Vitamin D, Vitamin K1 and Protein that\nare known to support physical growth and development.\nImmunity: When children step out\ninto new environments, they must have a strong immune system. Junior\nHorlicks contains nutrients that are known to support immune function like\nZinc, Selenium, Copper, Vitamin E and Vitamin A.\nBrain Development: Key brain\nfunctions develop during the early years. Junior Horlicks contains\nnutrients like Iron, Choline, Vitamin B6 and Iodine that are known to\nsupport brain development and function.\nJunior Horlicks is available in Vanilla and Chocolate\nvariants which can be enjoyed with a glass of cold or hot milk or hot water to\nsupport your child’s A to Z nutrition along with daily food.\n*Nutrient Requirements and Recommended Dietary Allowances\nfor Indians, ICMR 2010. *OLD",
+   "ingredients": "Maltodextrin, Milk Solids (25%), Wheat Flour (Atta), Malted Barley (Extracted Solids) (13%), Sugar, Cocoa Powder, Minerals, Natural Colour [Ins 150C], Nature Identical Flavouring Substances, Vitamins, Docosahexaenoic Acid (Dha) Powder From Schizochytrium Sp. (0.26%), Edible Iodized Salt, Acidity Regulator [Ins 501(Ii)]",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "23g",
+    "Energy": "376 kcal",
+    "Carbohydrate": "74 g",
+    "Total Sugars": "40 g",
+    "Added sugar": "5g",
+    "Dietary Fiber": "2g",
+    "Total Fat": "4 g",
+    "Saturated Fat": "<3.2 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "<15 mg",
+    "Sodium": "<400 mg",
+    "DHA": "40 mg",
+    "Choline": "110 mg",
+    "Protein": "12 g",
+    "Iron": "16.6 mg",
+    "Calcium": "833 mg",
+    "Iodine": "97.8 mcg",
+    "Vitamin D": "8.2 mcg",
+    "Vitamin K": "13 mcg",
+    "Magnesium": "70.7 mg",
+    "Zinc": "6 mg",
+    "Potassium": "580 mg",
+    "Vitamin B6": "1.5 mg",
+    "Vitamin B9": "82 mcg",
+    "Vitamin B12": "1.6 mcg",
+    "Vitamin C": "65.2 mg",
+    "Vitamin E": "5.4 mg",
+    "Vitamin B1": "0.8 mg",
+    "Vitamin A": "521.7 mcg",
+    "Vitamin B2": "1 mg",
+    "Copper": "0.3 mg",
+    "Vitamin B3": "8.7 mg",
+    "Selenium": "34.8 mcg",
+    "Vitamin B5": "2.6 mg",
+    "Vitamin B7": "8.7 mcg",
+    "Chloride": "500 mg"
+   },
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Junior Chocolate Refill",
+  "handle": "junior-chocolate-refill",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330_12-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+    },
+    "barcode": "8901030915864"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330_12-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330-2_10-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330-3_10-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330-4_10-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330-5_10-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330-6_10-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330-7_10-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205330-8_3-horlicks-junior-health-drink-chocolate-specialized-nutrition-for-kids.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Junior Horlicks is one of India's leading nutritional Cereal based drinks for toddlers in the age group of 2-6 years. It contains nutrients that help support brain development|| growth & immunity in toddlers & pre-schoolers. Junior Horlicks is tailor-made for your little fussy eaters and helps in completing their A to Z Nutrition. Two cups of Junior Horlicks contain 85% RDA of Iron, 75% RDA of Vitamin C and 64% RDA of Calcium for your toddler.\nPhysical Growth: Junior Horlicks contains nutrients such as Calcium, Vitamin D, Vitamin K1 & Protein that are known to support physical growth & development\nImmunity: When children step out into new environments they must have a strong immune system. Junior Horlicks contains nutrients that are known to support immune function like Zinc, Selenium, Copper, Vitamin E, and Vitamin A.\nBrain Development: Key brain functions develop during the early years. Junior Horlicks contains nutrients like Iron, Choline, Vitamin B6, Iodine that are known to support brain development and function.\nJunior Horlicks is available in Vanilla & Chocolate variants which can be enjoyed with a glass of cold or hold milk or hot water to support your child's A to Z nutrition along with daily food.\nNutrient Requirements and recommended dietary allowances for Indians ICMR 2010 *OLD",
+   "ingredients": "Maltodextrin, Milk Solids (25%), Wheat Flour (Atta), Malted Barley (Extracted Solids) (13%), Sugar, Cocoa Powder, Minerals, Natural Colour [INS 150c], Nature Identical Flavouring Substances, Vitamins, Docosahexaenoic Acid (DHA) powder from Schizochytrium sp. (0.26%), Edible Iodized Salt, Acidity Regulator [INS 501(ii)]",
+   "usageInstructions": "Take 200ml of hot or cold milk.\nAdd 23 g (approx 2-3 heaped spoonful) of Junior Horlicks while stirring to remove lumps.\nRecommended twice a day.",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Junior Vanilla Jar",
+  "handle": "junior-vanilla-jar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783_19-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+    },
+    "barcode": "8901030820014"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783_19-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783-2_11-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783-3_11-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783-4_11-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783-5_10-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783-6_9-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783-7_7-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011783-8_2-horlicks-junior-health-nutrition-drink-with-dha-nutrients-for-growth-vanilla-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Junior Horlicks is one of India’s leading nutritional\ncereal-based drinks for toddlers in the age group of 2–6 years. It contains\nnutrients that help support brain development, growth, and immunity in toddlers\nand pre-schoolers.\nJunior Horlicks is specially formulated for fussy eaters and\nhelps complete their A-to-Z nutrition. Two cups of Junior Horlicks provide 85%\nRDA of Iron, 75% RDA of Vitamin C, and 64% RDA of Calcium for your toddler. *\nPhysical Growth: Junior Horlicks contains nutrients such as\nCalcium, Vitamin D, Vitamin K1, and Protein that support physical growth and\ndevelopment.\nImmunity: As children begin exploring new environments, a\nstrong immune system becomes essential. Junior Horlicks contains nutrients like\nZinc, Selenium, Copper, Vitamin E, and Vitamin A that help support immune\nfunction.\nBrain Development: Key brain functions develop during the\nearly years. Junior Horlicks provides nutrients such as Iron, Choline, Vitamin\nB6, and Iodine that support brain development and function.\nJunior Horlicks is available in Vanilla and Chocolate\nvariants, which can be enjoyed with a glass of hot or cold milk, or even hot\nwater, to help meet your child’s A to Z nutritional needs along with daily\nfood.\n*Based on Nutrient Requirements and Recommended Dietary\nAllowances for Indians, ICMR 2010.",
+   "ingredients": "Wheat Flour (Atta), Malted Barley (Extracted Solids) (25%), Milk Solids (22%), Cereal Extract (8%) [Barley, Malted Barley, Millet, Wheat], Sugar, Minerals, Wheat Gluten, Vitamins, Edible Iodized Salt, Acidity Regulator [Ins 501 (Ii)], Docosahexaenoic Acid (Dha) Powder From Schizochytrium Sp. (0.26%), Nature Identical Flavouring Substance, Soy Protein Isolate",
+   "nutritionalInfo": {
+    "Energy": "376 kcal",
+    "Carbohydrate": "74 g",
+    "Total Sugars": "40 g",
+    "Of Which Added Sugar (Sucrose)": "5 g",
+    "Dietary Fibre": "2 g",
+    "Total Fat": "4 g",
+    "Saturated Fat": "<3.2 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "<15 mg",
+    "Sodium": "<400 mg"
+   },
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Junior Vanilla Refill",
+  "handle": "junior-vanilla-refill",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328_13-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+    },
+    "barcode": "8909106043916"
+   },
+   {
+    "title": "500g",
+    "price": "294",
+    "compare_at_price": "294",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/119400_21-horlicks-junior-health-nutrition-drink-vanilla.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "575",
+    "compare_at_price": "575",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205327_10-horlicks-junior-health-drink-vanilla-specialized-nutrition-for-kids.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328_13-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328-2_12-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328-3_12-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328-4_12-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328-5_12-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328-6_12-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328-7_12-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40205328-8_5-horlicks-junior-health-drinkvanilla-specialized-nutrition-for-kids.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Junior Horlicks is one of India’s leading nutritional\ncereal-based drinks for toddlers in the age group of 2–6 years. It contains\nnutrients that help support brain development, growth and immunity in toddlers\nand pre-schoolers.\nJunior Horlicks is tailor-made for your little fussy eaters\nand helps in completing their A to Z nutrition. Two cups of Junior Horlicks\ncontain 85% RDA of Iron, 75% RDA of Vitamin C and 64% RDA of Calcium for your\ntoddler.*\nPhysical Growth: Junior Horlicks\ncontains nutrients such as Calcium, Vitamin D, Vitamin K1 and Protein that\nare known to support physical growth and development.\nImmunity: When children step out\ninto new environments, they must have a strong immune system. Junior\nHorlicks contains nutrients that are known to support immune function like\nZinc, Selenium, Copper, Vitamin E and Vitamin A.\nBrain Development: Key brain\nfunctions develop during the early years. Junior Horlicks contains\nnutrients like Iron, Choline, Vitamin B6 and Iodine that are known to\nsupport brain development and function.\nJunior Horlicks is available in Vanilla and Chocolate\nvariants, which can be enjoyed with a glass of cold or hot milk or hot water to\nsupport your child’s A to Z nutrition along with daily food.\n*Nutrient Requirements and Recommended Dietary Allowances\nfor Indians, ICMR 2010. *OLD",
+   "ingredients": "Wheat Flour (Atta), Malted Barley (Extracted Solids) (25%), Milk Solids (22%), Cereal Extract (8%) [Barley, Malted Barley, Millet, Wheat], Sugar, Minerals, Wheat Gluten, Vitamins, Edible Iodised Salt, Acidity Regulator [INS 501(ii)], Docosahexaenoic Acid (DHA) Powder from Schizochytrium sp. (0.26%), Nature Identical Flavouring Substance, Soy Protein Isolate.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "23g",
+    "Energy": "376 kcal",
+    "Carbohydrate": "74 g",
+    "Total Sugars": "40 g",
+    "Added Sugar": "5 g",
+    "Dietary Fiber": "2 g",
+    "Total Fat": "4 g",
+    "Saturated Fat": "<3.2 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "<15 mg",
+    "Sodium": "<400 mg",
+    "DHA": "4 mg",
+    "Protein": "12 g",
+    "Calcium": "833 mg",
+    "Chloride": "500 mg",
+    "Copper": "0.3 mg",
+    "Iodine": "97.83 mcg",
+    "Iron": "16.63 mg",
+    "Magnesium": "70.7 mg",
+    "Potassium": "580 mg",
+    "Selenium": "34.8 mcg",
+    "Zinc": "6 mg",
+    "Choline": "110 mg",
+    "Vitamin A": "521.7 mcg",
+    "Vitamin B1": "0.8 mg",
+    "Vitamin B2": "1 mg",
+    "Vitamin B3": "8.7 mg",
+    "Vitamin B5": "2.6 mg",
+    "Vitamin B6": "1.5 mg",
+    "Vitamin B7": "8.7 mcg",
+    "Vitamin B9": "82 mcg",
+    "Vitamin B12": "1.6 mcg",
+    "Vitamin C": "65.2 mg",
+    "Vitamin D": "8.2 mcg",
+    "Vitamin E": "5.4 mg",
+    "Vitamin K": "13 mcg",
+    "%RDA per serve (23g)": "{'Energy': '4%', 'Added Sugar': '2%', 'Total Fat': '1.4%', 'Saturated Fat': '<3%', 'Trans Fat': '<1.1%', 'Sodium': '<5%'}"
+   },
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Junior Stage 1 Chocolate",
+  "handle": "junior-stage-1-chocolate",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "288",
+    "compare_at_price": "288",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/236634_12-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+    },
+    "barcode": "8901571002641"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236634_12-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236634-2_4-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236634-3_4-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236634-4_4-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236634-5_3-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236634-6_1-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236634-7_1-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/236634-8_1-horlicks-junior-health-nutrition-drink-chocolate-flavour-stage-1-2-3-years.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Junior Horlicks is designed to provide age-appropriate nutrition for your child. Junior Horlicks (stage 1) helps fussy toddlers by providing nutrients that help in weight gain. DHA and choline ensure brain development. It is also easy to digest, allowing kids to consume it comfortably. Milk calcium and high protein are very important for bone growth in nursery-going children. With all these, coupled with 6 immune nutrients, junior Horlicks (stage 2) assists in immune function, helping in the overall development of the child.",
+   "ingredients": "Sugar, Milk Solids (30%), Wheat Flour (20%), Malted Barley (12%), Cocoa Powder, Minerals, Natural Color, Vitamins, Nature Identical Flavouring Substances, Salt, Acidity Regulator, DHA Rich Algal Oil",
+   "usageInstructions": "3 heaped teaspoonfuls (30g) of junior horlicks. Add a little hot milk stirred in slowly to make a thick paste. Topped up with hot or cold milk, stirring to remove lumps. Add little sugar if required.",
+   "manufacturerName": "GSK CH India",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Junior Stage 1 Original",
+  "handle": "junior-stage-1-original",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "288",
+    "compare_at_price": "288",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629_9-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629_9-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629-2_4-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629-3_4-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629-4_4-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629-5_3-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629-6_1-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629-7_1-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100006629-8_1-horlicks-junior-health-nutrition-drink-for-brain-development-original-flavour-stage-1.jpg"
+   }
+  ],
+  "details": {
+   "description": "Horlicks is a malt based food drink. Junior Horlicks is designed to provide age-appropriate nutrition for your child. Junior Horlicks (Stage 1) helps fussy toddlers by providing nutrients that help in weight gain. DHA and Choline ensure brain development. It is also easy to digest, allowing kids to consume it comfortably. Milk Calcium and high protein is very important for bone growth in nursery-going children. With all these, coupled with 6 immune nutrients, Junior Horlicks (Stage 2) assists in immune function, helping in the overall development of the child.",
+   "ingredients": "Wheat Flour (33%), Malted Barley (Extracted Solids) (30%), Milk Solids (29%), Sugar, Minerals, Vitamins, Salt, Acidity Regulator, Nature Identical Flavouring Substances, Protein Isolate, DHA Rich Algal Oil",
+   "usageInstructions": "3 heaped teaspoonfuls (30g) of Junior Horlicks.\nAdd a little hot milk stirred in slowly to make a thick paste. Topped up with hot or cold milk, stirring to remove lumps.\nAdd little sugar if required.",
+   "manufacturerName": "GSK CH India",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Women's Plus Chocolate Jar",
+  "handle": "women-s-plus-chocolate-jar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "359",
+    "compare_at_price": "359",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/272456_24-horlicks-womens-plus-chocolate.jpg"
+    },
+    "barcode": "8901030985096"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272456_24-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272456-2_15-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272456-3_14-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272456-4_14-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272456-5_14-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272456-6_8-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272456-7_7-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272456-8_6-horlicks-womens-plus-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bones form the structural framework of the human body. Up until the age of 30, bone formation is faster than bone loss, which causes the skeleton to grow both in size and density, resulting in an overall increase in bone mass. After the age of 30, bone mineral density may start to decrease. Unfortunately, there are no visible signs of weak bones. They often go unnoticed over many years, with no symptoms or discomfort until a bone breaks. To maintain strong bones you don’t just need an adequate intake of Calcium, but also Vitamin D for Calcium absorption and Vitamin K2 for binding Calcium to bones, daily. Remember, Vitamin K2 is not commonly found in the Indian diet, and Vitamin D is not even available in your daily diet. Horlicks Women’s Plus is a bone nutrition specialist powered with CALSEAL formula. It provides 100% RDA^ of Calcium, Vitamin D & Vitamin K2 requirements.\nNIH Osteoporosis and related bone diseases national resource center (https://www.bones.nih.gov/health-info/bone/bone-basics).\nRef: Malhotra N and Mithal A. Osteoporosis in Indians. Indian J med res 127, march 2008, pp 263-268\nUnique combination of Vitamin K2, Calcium and Vitamin D to support bone health.\nIn 2 serves (60 g) as per ICMR 2010 Guidelines on Women.\nAdded sugar refers to Sucrose.'CONTAINS NATURALLY OCCURRING SUGARS'.\nHorlicks Women’s Plus is a nourishing beverage to be consumed as a part of regular diet.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "360 kcal",
+    "Protein": "15g",
+    "Carbohydrate": "68.2g",
+    "Total Sugars": "28g",
+    "Added Sugar": "0g",
+    "Dietary Fiber": "2g",
+    "Total Fat": "<3g",
+    "Saturated Fat": "<1.5g",
+    "Trans Fat": "<0.1g",
+    "Cholesterol": "<6mg",
+    "Calcium": "1000mg",
+    "Vitamin D": "16.7mcg",
+    "Vitamin K2": "91.7mcg",
+    "Vitamin B1": "0.6mg",
+    "Vitamin B2": "1.8mg",
+    "Vitamin B3": "6.7mg",
+    "Vitamin B5": "2.8mg",
+    "Vitamin B6": "3.3mg",
+    "Vitamin B7": "16.5mcg",
+    "Vitamin B9": "200mcg",
+    "Vitamin B12": "1.6mcg",
+    "Vitamin C": "66.6mg",
+    "Vitamin A": "330mcg",
+    "Vitamin E": "4.1mg",
+    "Magnesium": "121mg",
+    "Zinc": "2.7mg",
+    "Pottasium": "542mg",
+    "Iodine": "82.5mcg",
+    "Sodium": "<650mg"
+   },
+   "manufacturerName": "Marketed by",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Women's Plus Chocolate Refill",
+  "handle": "women-s-plus-chocolate-refill",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960_22-horlicks-womens-plus-chocolate.jpg"
+    },
+    "barcode": "8901030949654"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960_22-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960-2_17-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960-3_16-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960-4_15-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960-5_15-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960-6_9-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960-7_8-horlicks-womens-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052960-8_7-horlicks-womens-plus-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bones form the structural framework of the human body. Up until the age of 30, bone formation is faster than bone loss, which causes the skeleton to grow both in size and density, resulting in an overall increase in bone mass. After the age of 30, bone mineral density may start to decrease. Unfortunately, there are no visible signs of weak bones. They often go unnoticed over many years, with no symptoms or discomfort until a bone breaks. To maintain strong bones, you don’t just need an adequate intake of Calcium, but also Vitamin D for Calcium absorption and Vitamin K2 for binding Calcium to bones, daily. Remember, Vitamin K2 is not commonly found in the Indian diet, and Vitamin D is not even available in your daily diet. Horlicks Women’s Plus is a bone nutrition specialist powered with CALSEAL formula. It provides 100% RDA^ of Calcium, Vitamin D & Vitamin K2 requirements. NIH Osteoporosis and related bone diseases national resource center (https://www.bones.nih.gov/health-info/bone/bone-basics). Ref: Malhotra N and Mithal A. Osteoporosis in Indians. Indian J med res 127, March 2008, pp 263-268 Unique combination of Vitamin K2, Calcium and Vitamin D to support bone health. In 2 serves (60 g) as per ICMR 2010 Guidelines on Women. Added sugar refers to Sucrose. 'CONTAINS NATURALLY OCCURRING SUGARS'. Horlicks Women’s Plus is a nourishing beverage to be consumed as a part of regular diet.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "360 kcal",
+    "Protein": "15 g",
+    "Carbohydrate": "68.2 g",
+    "Total Sugars": "28 g",
+    "Added Sugar*": "0 g",
+    "Dietary Fiber": "2 g",
+    "Total Fat": "<3 g",
+    "Saturated Fat": "<1.5 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "<6 mg",
+    "Calcium": "1000 mg",
+    "Magnesium": "121 mg",
+    "Zinc": "2.7 mg",
+    "Pottasium": "542 mg",
+    "Sodium": "<650 mg",
+    "Vitamin A": "330 mcg",
+    "Vitamin E": "4.1 mg",
+    "Vitamin B1": "0.6 mg",
+    "Vitamin B2": "1.8 mg",
+    "Vitamin B3": "6.7 mg",
+    "Vitamin B5": "2.8 mg",
+    "Vitamin B6": "3.3 mg",
+    "Vitamin B7": "16.5 mcg",
+    "Vitamin B9": "200 mcg",
+    "Vitamin B12": "1.6 mcg",
+    "Vitamin C": "66.6 mg",
+    "Vitamin D": "16.7 mcg",
+    "Vitamin K2": "91.7 mcg",
+    "Iodine": "82.5 mcg",
+    "Selenium": "43 mcg"
+   },
+   "manufacturerName": "\"(N) Hindustan Unilever Ltd",
+   "fssaiLicense": "10012063000134",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Women's Plus Caramel Jar",
+  "handle": "women-s-plus-caramel-jar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "339",
+    "compare_at_price": "339",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/272455_25-horlicks-womens-plus-caramel.jpg"
+    },
+    "barcode": "8901030973499"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272455_25-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272455-2_16-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272455-3_15-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272455-4_15-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272455-5_15-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272455-6_9-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272455-7_8-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/272455-8_7-horlicks-womens-plus-caramel.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bones form the structural framework of the human body. Up until the age of 30, bone formation is faster than bone loss, which causes the skeleton to grow both in size and density, resulting in an overall increase in bone mass. After the age of 30, bone mineral density may start to decrease. Unfortunately, there are no visible signs of weak bones. They often go unnoticed over many years, with no symptoms or discomfort until a bone breaks. To maintain strong bones, you don’t just need an adequate intake of Calcium, but also Vitamin D for Calcium absorption and Vitamin K2 for binding Calcium to bones, daily. Remember, Vitamin K2 is not commonly found in the Indian diet, and Vitamin D is not even available in your daily diet. Horlicks Women’s Plus is a bone nutrition specialist powered with CALSEAL formula. It provides 100% RDA^ of Calcium, Vitamin D & Vitamin K2 requirements. NIH Osteoporosis and related bone diseases national resource centre (https://www.bones.nih.gov/health-info/bone/bone-basics). Ref: Malhotra N and Mithal A. Osteoporosis in Indians. Indian J med res 127, March 2008, pp 263-268 Unique combination of Vitamin K2, Calcium and Vitamin D to support bone health. In 2 serves (60 g) as per ICMR 2010 Guidelines on Women. Added sugar refers to Sucrose. 'CONTAINS NATURALLY OCCURRING SUGARS'. Horlicks Women’s Plus is a nourishing beverage to be consumed as a part of regular diet.",
+   "ingredients": "Cereal Extract (46%) [Barley, Wheat, Malted Barley, Wheat Malt], Milk Solids (37%), Maltodextrin, Minerals, Edible Iodized Salt, Nature Identical Flavouring Substances, Vitamins, Non-Caloric Sweetener (INS 950). Allergen Information: Contains Wheat, Barley & Milk. May Contain Traces of Soy.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Protein": "15g",
+    "Energy": "360kcal",
+    "Vitamin B2": "1.8mg",
+    "Calcium": "1000mg",
+    "Carbohydrate": "68.2g",
+    "Vitamin B6": "3.3mg",
+    "Vitamin D": "16.7mcg",
+    "Total Sugars": "28g",
+    "Vitamin B12": "1.6mcg",
+    "Vitamin K2": "91.7mcg",
+    "Added Sugar": "0g",
+    "Magnesium": "121mg",
+    "Dietary Fiber": "2g",
+    "Zinc": "2.7mg",
+    "Total Fat": "<3g",
+    "Potassium": "542mg",
+    "Saturated Fat": "<1.5g",
+    "Trans Fat": "<0.1g",
+    "Cholesterol": "<6mg",
+    "Vitamin B1": "0.6mg",
+    "Vitamin B3": "6.7mg",
+    "Vitamin B5": "2.8mg",
+    "Vitamin B7": "16.5mcg",
+    "Iodine": "82.5mcg",
+    "Vitamin A": "330mcg",
+    "Sodium": "650mg",
+    "Vitamin E": "4.1mg",
+    "Selenium": "43mcg"
+   },
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Women's Plus Caramel Refill",
+  "handle": "women-s-plus-caramel-refill",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "284",
+    "compare_at_price": "284",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959_21-horlicks-womens-plus-caramel.jpg"
+    },
+    "barcode": "8901030949647"
+   },
+   {
+    "title": "750g",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186468_7-womens-horlicks-womens-plus-caramel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959_21-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959-2_16-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959-3_15-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959-4_14-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959-5_14-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959-6_8-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959-7_7-horlicks-womens-plus-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40052959-8_6-horlicks-womens-plus-caramel.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bones form the\nstructural framework of the human body. Up until the age of 30, bone formation\nis faster than bone loss, which causes the skeleton to grow both in size and\ndensity, resulting in an overall increase in bone mass. After the age of 30,\nbone mineral density may start to decrease. Unfortunately, there are no visible\nsigns of weak bones. They often go unnoticed over many years, with no symptoms\nor discomfort until a bone breaks.\nTo maintain strong\nbones, you don’t just need an adequate intake of calcium, but also vitamin D\nfor calcium absorption and vitamin K2 for binding calcium to bones daily.\nRemember, vitamin K2 is not commonly found in the Indian diet, and vitamin D is\nnot even available in your daily diet. Horlicks Women’s Plus is a bone\nnutrition specialist powered with CALSEAL formula. It provides 100% RDA^ of\ncalcium, vitamin D, and vitamin K2 requirements.\nNIH Osteoporosis\nand Related Bone Diseases National Resource Center (https://www.bones.nih.gov/health-info/bone/bone-basics).\nRef: Malhotra N and Mithal A. Osteoporosis in Indians. Indian J Med Res\n127, March 2008, pp 263–268.\nUnique combination\nof vitamin K2, calcium, and vitamin D to support bone health.\nIn 2 serves (60 g) as per ICMR 2010 guidelines on women.\nAdded sugar refers to sucrose. Contains naturally occurring sugars.\nHorlicks Women’s Plus is a\nnourishing beverage to be consumed as a part of a regular diet.",
+   "ingredients": "Cereal Extract (46%) [Barley, Wheat, Malted Barley, Wheat Malt], Milk Solids (37%), Maltodextrin, Minerals, Edible Iodized Salt, Nature Identical Flavouring Substances, Vitamins, Non-Caloric Sweetener (Ins 950). Allergen Information: Contains Wheat, Barley & Milk. May Contain Traces Of Soy.",
+   "nutritionalInfo": {
+    "Protein": "15 g",
+    "Calcium": "1000",
+    "Vitamin D": "16.7",
+    "Vitamin C": "66.6",
+    "Magnesium": "121",
+    "Zinc": "2.7 mg",
+    "Potassium": "542",
+    "Energy": "360",
+    "(Folic Acid)": "<200 mcg",
+    "Sodium": "<650"
+   },
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mother's Plus Vanilla",
+  "handle": "mother-s-plus-vanilla",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/249672_17-horlicks-mothers-plus-vanilla.jpg"
+    },
+    "barcode": "8909106013513"
+   },
+   {
+    "title": "400g",
+    "price": "635",
+    "compare_at_price": "635",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/249671_20-horlicks-mothers-plus-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249672_17-horlicks-mothers-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249672-2_1-horlicks-mothers-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249672-3_1-horlicks-mothers-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249672-4_1-horlicks-mothers-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249672-5_1-horlicks-mothers-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249672-6_1-horlicks-mothers-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249672-7_1-horlicks-mothers-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249671_20-horlicks-mothers-plus-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "nutritionalInfo": {
+    "Milk Solids, Wheat Flour, Sugar, Cocoa Powder, Minerals (Calcium, Iron, Iodine, Zinc), Vitamins (A, B1, B2, B6, B12, C, D, E), Emulsifier (Soy Lecithin), Flavour (Vanilla)Nutrition per gram/ml": "100g",
+    "Protein": "22 g",
+    "Vitamin A": "866 mcg",
+    "Vitamin B1": "0.9 mg",
+    "Vitamin B2": "1.86 mg",
+    "Vitamin B3": "12 mg",
+    "Vitamin B6": "2.7 mg",
+    "Vitamin B12": "1.6 mcg",
+    "Vitamin C": "80 mg",
+    "Vitamin D": "3.3 mcg",
+    "Vitamin E": "10 mg",
+    "Vitamin K": "60 mcg",
+    "Choline": "111 mg",
+    "DHA": "80 mg",
+    "Calcium": "1333.3 mg",
+    "Phosphorus": "466.7 mg",
+    "Iodine": "193.3 mcg",
+    "Magnesium": "62 mg",
+    "Iron": "28 mg",
+    "Zinc": "4 mg",
+    "Selenium": "46.7 mcg",
+    "Copper": "0.9 mg",
+    "Potassium": "620 mg",
+    "Sodium": "<500 mg",
+    "Chloride": "476 mg",
+    "Energy": "351 kcal",
+    "Carbohydrates": "58.5 g",
+    "Dietary Fiber": "8 g",
+    "Total Sugars": "35 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "5 g",
+    "Saturated Fatty Acids": "<1.8 g",
+    "Monounsaturated Fatty Acids": "3 g",
+    "Polyunsaturated Fatty Acids": "0.4 g",
+    "Trans Fatty Acid": "0.01 g",
+    "Cholesterol": "<15 mg"
+   },
+   "storageInstructions": "*Store in a clean and dry place away from sunlight1. Take 200 ml of hot or cold water or milk.\n2. Add 20g (approximately 2 heaped spoonfuls) of Horlicks Mother's Plus.\n3. Mix well and enjoy.",
+   "manufacturerName": "Hindustan Unilever Limited (N) Hindustan Unilever Ltd",
+   "fssaiLicense": "10012063000134",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mother's Plus Kesar",
+  "handle": "mother-s-plus-kesar",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294_25-horlicks-mothers-plus-kesar.jpg"
+    },
+    "barcode": "8901030960475"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294_25-horlicks-mothers-plus-kesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294-2_1-horlicks-mothers-plus-kesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294-3_1-horlicks-mothers-plus-kesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294-4_1-horlicks-mothers-plus-kesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294-5_1-horlicks-mothers-plus-kesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294-6_1-horlicks-mothers-plus-kesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294-7_1-horlicks-mothers-plus-kesar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076294-8_1-horlicks-mothers-plus-kesar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "nutritionalInfo": {
+    "Protein Blend, Vitamins, MineralsNutrition per gram/ml": "100g",
+    "Serving Size": "25g",
+    "Energy": "351 kcal",
+    "Protein": "22 g",
+    "Carbohydrate": "58.5 g",
+    "Total Fat": "5 g",
+    "Saturated fatty acids": "<1.8 g",
+    "Monounsaturated Fatty Acids": "3 g",
+    "Polyunsaturated Fatty Acids": "0.4 g",
+    "Trans Fatty Acid": "0.01 g",
+    "Dietary Fiber": "8 g",
+    "Total Sugars": "35 g",
+    "Added Sugar": "0 g",
+    "Cholesterol": "<15 mg",
+    "Vitamin A": "866 mcg",
+    "Vitamin B1": "0.9 mg",
+    "Vitamin B2": "1.86 mg",
+    "Vitamin B3": "12 mg",
+    "Vitamin B6": "2.7 mg",
+    "Vitamin B12": "1.6 mcg",
+    "Vitamin C": "80 mg",
+    "Vitamin D": "3.3 mcg",
+    "Vitamin E": "10 mg",
+    "Vitamin K": "60 mcg",
+    "Calcium": "1333.3 mg",
+    "Phosphorus": "466.7 mg",
+    "Iron": "28 mg",
+    "Iodine": "193.3 mcg",
+    "Magnesium": "62 mg",
+    "Zinc": "4 mg",
+    "Selenium": "46.7 mcg",
+    "Copper": "0.9 mg",
+    "Potassium": "620 mg",
+    "Sodium": "<500 mg",
+    "Chloride": "476 mg",
+    "DHA": "80 mg",
+    "Choline": "111 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from sunlight1. Take 200 ml of either hot or cold water or milk.\n2. Add 20 g (2 heaped spoonfuls) of Horlicks Mother's Plus.\n3. Mix well and enjoy.",
+   "manufacturerName": "(B) Legacy Foods Pvt. Ltd",
+   "fssaiLicense": "10012062000189",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Diabetes Plus Vanilla",
+  "handle": "diabetes-plus-vanilla",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "374",
+    "compare_at_price": "374",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "820",
+    "compare_at_price": "820",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40218090_8-horlicks-diabetes-plus-helps-manage-blood-sugar-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095-2_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095-3_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095-4_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095-5_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095-6_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095-7_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321095-8_3-horlicks-diabetes-plus-vanilla-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks Diabetes Plus is a nutritional beverage designed for Indian adults.\nIt is scientifically formulated to support the dietary management of at-risk\nand diabetic individuals.\nIt contains high fibre (22%) with a dual blend of Fibresol-2 and Nutriose®^.\nResearch has shown that a diet rich in fibre helps reduce glucose and lipid\nlevels in the blood*. Horlicks Diabetes Plus is high in protein and contains 16\nvital nutrients. These fibres are known to promote satiety and reduce calorie\nintake.\nSoluble dietary fibre, when taken as part of a balanced diet, contributes to\nthe reduction of blood cholesterol levels. The beneficial effect is obtained\nwith a daily intake of a minimum of 3 g of soluble dietary fibre.\nHorlicks Diabetes Plus is not intended to replace any existing medication.\nIt is a nutritional beverage to be consumed as part of a balanced daily diet\nand exercise routine.\n*Journal of Diabetes and Metabolism; 2020 Feb; 11(2):841.\nNutriose® is a registered trademark of Roquette Frères.\n^Nutriose® and Fibresol-2 are trade names for Wheat Fibre Dextrin and Corn\nFibre Dextrin respectively.\nAdditional Information:\nHorlicks Diabetes Plus contains artificial sweetener and is suitable for\ncalorie-conscious individuals.\nFood for special dietary use – formulated to help manage blood glucose.\nContains naturally occurring sugars.\nContains dietary fibre (Dextrin – Wheat and Corn).\nContains Acesulfame Potassium.\nNot recommended for children.\nNo sugar added in the product.\nContains added flavour (Nature-Identical Flavouring Substances).",
+   "ingredients": "Ingredients:\nMilk Solids, Dietary Fibre (26%) [Wheat Dextrin (18%), Corn Dextrin (8%)], Edible Vegetable Fat Powder [High Oleic Sunflower Oil, Corn Solids, Sodium Caseinate, Emulsifier (INS 471), Antioxidant (INS 305)], Nature-Identical Flavouring Substances, Minerals, Soy Protein Isolate, Medium Chain Triglyceride Oil (Palm Kernel Oil), Vitamins, Non-Caloric Sweetener (INS 950).\nAllergen Information:\nContains Soy and Milk.\nMay contain Wheat and Barley.\nNutritional Information (Approx.\nPer 100 g):\nEnergy: 356 kcal\nCarbohydrate: 35.5 g\nTotal Sugars: 28 g\nOf Which Added Sugar*: 0 g\nTotal Fat: 10 g\nSaturated Fat: <2.5 g\nTrans Fat: <0.1 g\nCholesterol: <15 mg\nVitamin B1: 1.11 mg\nVitamin B2: 1.2 mg\nVitamin B3: 14.8 mg\nVitamin B5: 3.09 mg\nVitamin B7: 18.5 mcg\nCalcium: 617 mg\n*No added sugar.",
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Protein Plus Chocolate",
+  "handle": "protein-plus-chocolate",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121940_3-horlicks-protein-plus-chocolate.jpg"
+    },
+    "barcode": "8901030825521"
+   },
+   {
+    "title": "400g",
+    "price": "570",
+    "compare_at_price": "570",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121938_7-horlicks-protein-plus-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121940_3-horlicks-protein-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121940-2_2-horlicks-protein-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121940-3_6-horlicks-protein-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121940-4_6-horlicks-protein-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121940-5_6-horlicks-protein-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121940-6_2-horlicks-protein-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121940-7_2-horlicks-protein-plus-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121938_7-horlicks-protein-plus-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is a malt based food drink. Horlicks Protein+ is a scientifically formulated daily nutrition drink for adults which helps support muscle mass and maintains strength over time. It is a blend of three high-quality proteins, namely: Whey, Soy and Casein. This triple protein blend provides fast and sustained release of amino acids over time. Horlicks Protein+ contains 3 times more protein than the leading Food Drink.",
+   "ingredients": "Protein Products (Whey protein concentrate, Soy Protein Isolate, Sugar, Cereal Extract, Casein), Minerals, Nature Identical Flavouring Substance, Vitamins",
+   "usageInstructions": "Take 200 ml of lukewarm cow/buffalo whole milk\nAdd 3 scoops (30 gms) of Horlicks Protein+.\nStir quickly to mix well.",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Protein Plus Vanilla",
+  "handle": "protein-plus-vanilla",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121939_2-horlicks-protein-plus-vanilla.jpg"
+    },
+    "barcode": "8901030825545"
+   },
+   {
+    "title": "400g",
+    "price": "570",
+    "compare_at_price": "570",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40121937_7-horlicks-protein-plus-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121939_2-horlicks-protein-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121939-2_6-horlicks-protein-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121939-3_6-horlicks-protein-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121939-4_6-horlicks-protein-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121939-5_6-horlicks-protein-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121939-6_2-horlicks-protein-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121939-7_2-horlicks-protein-plus-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40121937_7-horlicks-protein-plus-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks is a malt based food drink. Horlicks Protein+ Vanilla Flavour is a scientifically formulated daily nutrition drink for adults which helps support muscle mass and maintains strength over time. It is a blend of three high-quality proteins, namely: Whey, Soy and Casein. This triple protein blend provides fast and sustained release of amino acids over time. Horlicks Protein+ contains 3 times more protein than the leading Food Drink.",
+   "ingredients": "Protein Products (Whey Protein Concentrate, Soy Protein Isolate, Sugar, Cereal Extract, Casein), Minerals, Nature Identical Flavouring Substance, Vitamins",
+   "usageInstructions": "Take 200 ml of lukewarm cow/buffalo whole milk.\nAdd 3 scoops (30 gms) of Horlicks Protein+.\nStir quickly to mix well.",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pro Fitness Chocolate Meal Replacement",
+  "handle": "pro-fitness-chocolate-meal-replacement",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "1250",
+    "compare_at_price": "1250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446-2_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446-3_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446-4_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446-5_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446-6_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446-7_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358446-8_1-horlicks-pro-fitness-chocolate-flavour-meal-replacement-for-weight-loss.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Did you know that you could lose up to 2 kgs in one month by eating 500 calories less per day? Horlicks Pro Fitness is a scientifically formulated meal replacement shake which has 60% LESS CALORIES vs compared to an avg Indian meal (600-700kcal) and keeps you FULLER FOR LONGER. L-carnitine for Fat Burn, High Protein and Fiber, With Vit D & Calcium for Bone Strength. Horlicks Pro Fitness is available in 2 tasty Flavors, Mango & Chocolate. Get your Free Shaker and Booklet with every pack. Your wellness guide includes smart tips for weight loss, Easy and delicious recipes, Personal weight tracker & Physical activity planner. Ready in 3 easy Steps, take 300ml of Hot/Cold skimmed Milk, add 35g of Horlicks Pro Fitness, Mix & enjoy. Three Steps to a Fitter Lifestyle, Shake it up, replace up to 2 meals with Horlicks Pro Fitness, add regular exercise to boost energy, Balance your diet with nutrition rich foods. You are not alone in this weight loss journey; you are one call away to talk with India’s certified nutritionists.",
+   "ingredients": "Milk Solids, Edible Vegetable Fat Powder [Refined Sunflower Oil, Milk Solids, Emulsifier (INS 471), Antioxidant (INS 300)], Fructo-oligosaccharide (FOS), Cocoa Powder, Nature Identical Flavouring Substances, L-Carnitine, Minerals, Vitamins, Stabilizer (INS 415), Non-Caloric Sweeteners (INS 960, INS 950), Beetroot Juice powder. \nAllergen Information: Contains Milk. May Contain Wheat, Barley & Soy\nApprox. Per 100 g\nMacronutrients:\nEnergy: 377 kcal\nProtein: 36 g\nCarbohydrate: 40 g\nTotal Sugars: 18 g\nAdded Sugars: 0 g\nDietary Fibre: 6.1 g\nTotal Fat: 9.5 g\nSaturated Fat: 1.9 g\nTrans Fat: <0.1 g\nMonounsaturated Fat: 2 g\nPolyunsaturated Fat: 2.5 g\nLinoleic Acid: 2.2 g\nCholesterol: <70 mg\nSodium: 200 mg\nVitamins:\nVitamin A: 720 mcg\nVitamin B1: 1.2 mg\nVitamin B2: 1.6 mg\nVitamin B3: 9.4 mg\nVitamin B6: 1.6 mg\nVitamin B9: 188.6 mcg\nVitamin B12: 1.9 mcg\nVitamin C: 55.7 mg\nVitamin D: 12.9 mcg\nVitamin E: 6.9 mg\nMinerals:\nCalcium: 428.6 mg\nIron: 24.9 mg\nMagnesium: 317.1 mg\nZinc: 11.3 mg\nOther Nutrient – L-Carnitine: 1.4\ng",
+   "manufacturerName": "Legacy Foods Pvt. Ltd",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pro Fitness Mango Meal Replacement",
+  "handle": "pro-fitness-mango-meal-replacement",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "1250",
+    "compare_at_price": "1250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+    },
+    "barcode": "8909106059559"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445-2_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445-3_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445-4_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445-5_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445-6_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445-7_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358445-8_1-horlicks-pro-fitness-mango-flavour-meal-replacement-for-weight-loss.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Did you know that you could lose up to 2 kgs in one month by eating 500 calories less per day? Horlicks Pro Fitness is a scientifically formulated meal replacement shake which has 60% LESS CALORIES vs compared to an avg Indian meal (600-700kcal) and keeps you FULLER FOR LONGER. L-carnitine for Fat Burn, High Protein and Fiber, With Vit D & Calcium for Bone Strength. Horlicks Pro Fitness is available in 2 tasty Flavors, Mango & Chocolate. Get your Free Shaker and Booklet with every pack. Your wellness guide includes smart tips for weight loss, Easy and delicious recipes, Personal weight tracker & Physical activity planner. Ready in 3 easy Steps, take 300ml of Hot/Cold skimmed Milk, add 35g of Horlicks Pro Fitness, Mix & enjoy. Three Steps to a Fitter Lifestyle, Shake it up, replace up to 2 meals with Horlicks Pro Fitness, add regular exercise to boost energy, Balance your diet with nutrition rich foods. You are not alone in this weight loss journey; you are one call away to talk with India’s certified nutritionists.",
+   "ingredients": "Milk Solids, Edible Vegetable Fat Powder [Refined Sunflower Oil, Milk Solids, Emulsifier (INS 471), Antioxidant (INS 300)], Fructo-oligosaccharide (FOS), Cocoa Powder, Nature Identical Flavouring Substances, L-Carnitine, Minerals, Vitamins, Stabiliser (INS 415), Non-Caloric Sweeteners (INS 960, INS 950), Beetroot Juice powder.\nAllergen Info: Contains Milk. May contain Soy, Wheat and Barley\nApprox. Per 100 g\nNutrients:\nEnergy: 377 kcal\nProtein: 36 g\nCarbohydrate: 40 g\nTotal Sugars: 18 g\nAdded Sugars: 0 g\nDietary Fibre: 6.1 g\nTotal Fat: 9.5 g\nSaturated Fat: 1.9 g\nTrans Fat: <0.1 g\nMonounsaturated Fat: 2 g\nPolyunsaturated Fat: 2.5 g\nLinoleic Acid: 2.2 g\nCholesterol: <70 mg\nSodium: 200 mg\nVitamins:\nVitamin A: 720 mcg\nVitamin B1 (Thiamine): 1.2 mg\nVitamin B2 (Riboflavin): 1.6 mg\nVitamin B3 (Niacin): 9.4 mg\nVitamin B6: 1.6 mg\nVitamin B9 (Folate): 188.6 mcg\nVitamin B12: 1.9 mcg\nVitamin C: 55.7 mg\nVitamin D: 12.9 mcg\nVitamin E: 6.9 mg\nMinerals:\nCalcium: 428.6 mg\nIron: 24.9 mg\nMagnesium: 317.1 mg\nZinc: 11.3 mg\nOther Nutrient – L-Carnitine: 1.4\ng",
+   "manufacturerName": "Legacy Foods Pvt. Ltd",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Protein Chocolate Milk",
+  "handle": "protein-chocolate-milk",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "240ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+    },
+    "barcode": "8909106084704"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539-2_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539-3_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539-4_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539-5_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539-6_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539-7_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366539-8_1-horlicks-horlicks-protein-milkshake-with-20g-protein-chocolate-flavour-240ml-for-daily-strength.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks Protein Chocolate Flavour is your ultimate high-protein milk, designed to fuel your active lifestyle with clean and balanced nutrition. Packed with 20g of high-quality protein, it aids muscle growth, recovery, and daily strength, making it perfect for fitness enthusiasts and busy individuals alike. Enriched with 16 essential nutrients, including 30mg of magnesium to combat fatigue and enhance muscle performance, and 3g of fibre to support healthy digestion, this drink is a powerhouse of advanced nutrition. With zero added sugar, Horlicks Protein offers a guilt-free way to meet your daily protein needs without compromising on taste or health. Free from artificial flavours, trans fats, and preservatives, it ensures clean and trustworthy nutrition in every sip. The rich chocolate flavour delivers a deliciously indulgent experience, making it a delightful choice for health-conscious individuals. This versatile protein milk fits seamlessly into your routine, whether as a post-workout recovery drink, a quick breakfast replacement, or a midday energy boost. Horlicks, a trusted name in nutrition for decades, also offers options like Horlicks Lite and Women Horlicks, ensuring quality in every product. Whether you prefer Horlicks 500g or larger packs like Horlicks 1kg or Horlicks 2kg pack family pack offer, there's a size for everyone. Milk, chill, and enjoy Horlicks Protein Chocolate Flavour, the perfect companion for an active, healthy lifestyle. Elevate your nutrition today!",
+   "ingredients": "Milk+, Water, Sweetener (Ins 965(Ii)), Edible Fiber, Cocoa Powder, Cereal Product, Vitamins & Minerals, Nature Identical Flavouring Substances, Acidity Regulators (Ins 340(Ii), Ins 340(Iii), Ins 452(I), Ins 339(Iii)), Stabilizers (Ins 460(I), Ins 466), Edible Iodised Salt. +Ultrafiltered",
+   "nutritionalInfo": {
+    "Energy": "171 kcal",
+    "Protein": "20 g",
+    "Carbohydrates": "17 g",
+    "Total Sugars": "8 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "3.5 g",
+    "Total Fat": "3.6 g",
+    "Saturated Fat": "2.4 g",
+    "Trans Fat": "<0.01 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "150 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Protein Peanut Butter Milk",
+  "handle": "protein-peanut-butter-milk",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "240ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+    },
+    "barcode": "8909106084742"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541-2_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541-3_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541-4_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541-5_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541-6_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541-7_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366541-8_1-horlicks-horlicks-protein-milkshake-with-20g-protein-peanut-butter-flavour-240ml-for-active-lifestyle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks Protein Peanut Butter Flavour Sterilised Double Toned Milk is a premium choice for those seeking clean and effective nutrition. Each 240ml serving packs 20g of high-quality protein, making it ideal for muscle growth, recovery, and daily strength needs. Enriched with 16 essential nutrients, 30mg magnesium to reduce fatigue, and 3g gut-friendly fibre for healthy digestion, this Sterilised Double Toned Milk supports energy, immunity, and overall wellness. Designed for active lifestyles, this high-protein milk Sterilised Double Toned Milk, is free from added sugar, artificial flavours, trans fats, and preservatives, ensuring a guilt-free and trustworthy nutritional experience. The delightful peanut butter flavour adds a refreshing twist, making it perfect for post-workout recovery, a quick breakfast replacement, or a midday energy boost. Horlicks, a trusted name in nutrition, continues its legacy with this advanced protein Sterilised Double Toned Milk. Known for products like Horlicks Lite, Women's Horlicks, and Junior Horlicks 1kg, the brand ensures quality and innovation in every sip. This protein Sterilised Double Toned Milk is suitable for both men and women, offering balanced nutrition for adults. Whether you're managing a busy schedule or pursuing fitness goals, Horlicks Protein Sterilised Double Toned Milk fits seamlessly into your routine. Sterilised Double Toned Milk well, chill, and enjoy the benefits of this superior health drink. Elevate your nutrition with Horlicks Protein Peanut Butter Flavour Protein Sterilised Double Toned Milk, a delicious and reliable choice for modern lifestyles. Choose Horlicks for clean, convenient, and effective nutrition every day.",
+   "ingredients": "Milk+, Water, Sweetener (INS 965(Ii)), Edible Fibre, Cocoa Powder, Cereal Product, Vitamins & Minerals, Acidity Regulators [INS 340(Ii), INS 340(Iii), INS 452(I), INS 339(Iii)], Nature Identical Flavouring Substances, Stabilizers (INS 460(I), INS 466), Edible Iodised Salt.",
+   "nutritionalInfo": {
+    "Energy": "171 kcal",
+    "Protein": "20 g",
+    "Carbohydrates": "17 g",
+    "Total Sugars": "8 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "3.5 g",
+    "Total Fat": "3.6 g",
+    "Saturated Fat": "2.4 g",
+    "Trans Fat": "<0.01 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "150 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Protein Proffee Milk",
+  "handle": "protein-proffee-milk",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "240ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+    },
+    "barcode": "8909106084698"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538-2_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538-3_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538-4_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538-5_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538-6_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538-7_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366538-8_1-horlicks-horlicks-protein-milkshake-with-20g-protein-proffee-flavour-240ml-for-active-lifestyle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks Protein Proffee Flavour Protein Shake is a premium health drink designed for active adults seeking balanced nutrition. With 20g of high-quality protein per 240ml serving, it supports muscle growth, recovery, and strength, making it an ideal choice for fitness enthusiasts and busy professionals. Enriched with 16 essential nutrients, 30mg magnesium, and 3g of gut-friendly fibre, this milk promotes energy, digestion, and muscle performance while boosting immunity. The unique Proffee flavour combines the richness of protein with the invigorating taste of cold coffee, offering a refreshing and delicious experience. With zero added sugar, it provides guilt-free nutrition without compromising on taste, making it perfect for daily consumption. Whether used as a post-workout recovery drink, a quick breakfast alternative, or a midday energy boost, this shake seamlessly fits into your active lifestyle. Free from artificial flavours, trans fats, and preservatives, Horlicks Protein Proffee Milk ensures clean, trustworthy nutrition for men and women. Known for its commitment to quality, Horlicks continues to deliver excellence with products like Horlicks Lite, Women's Horlicks, and Junior Horlicks 1kg, catering to diverse health needs. Available in convenient options like Horlicks 500g, Horlicks 1kg, and the Horlicks 2kg pack family pack offer, it upholds the brand's legacy of superior nutrition. Elevate your health journey with Horlicks Protein Proffee Milk, the perfect companion for an active and healthy lifestyle.",
+   "ingredients": "Milk+, Water, Sweetener [INS 965(ii)], Edible Fiber, Coffee Powder (0.8%), Nature Identical Flavouring Substances, Vitamins & Minerals, Acidity Regulators [INS 340(ii), INS 340(iii), INS 452(i), INS 339(iii)], Stabilizers (INS 460(i), INS 466), Colour (INS 150c), Edible Iodised Salt. +Ultrafiltered",
+   "nutritionalInfo": {
+    "Energy": "171 kcal",
+    "Protein": "20 g",
+    "Carbohydrates": "17 g",
+    "Total Sugars": "8 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "3.5 g",
+    "Total Fat": "3.6 g",
+    "Saturated Fat": "2.4 g",
+    "Trans Fat": "<0.01 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "150 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Protein Vanilla Milk",
+  "handle": "protein-vanilla-milk",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "240ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+    },
+    "barcode": "8909106084711"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540-2_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540-3_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540-4_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540-5_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540-6_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540-7_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366540-8_1-horlicks-horlicks-protein-milkshake-with-20g-protein-vanilla-flavour-240ml-for-active-lifestyle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the perfect blend of taste and nutrition with Horlicks Protein Vanilla Flavour milk. Packed with 20g of high-quality protein, it supports muscle growth, recovery, and daily strength, making it ideal for active lifestyles. With zero added sugar, this guilt-free protein shake is a healthier choice for meeting your daily nutritional needs. Enriched with 16 essential nutrients, 30mg of magnesium, and 3g of gut-friendly fibre, this scientifically formulated drink promotes energy, muscle function, and healthy digestion. Free from artificial flavours, trans fats, and preservatives, it delivers clean and trustworthy nutrition in every sip. Whether you're a fan of Horlicks Lite, Junior Horlicks, or Women's Horlicks Plus, this protein shake upholds the brand's commitment to quality and innovation. The rich vanilla flavour offers a delightful taste, making it a refreshing and energizing option for any time of the day. Perfect as a post-workout drink, breakfast replacement, or midday snack, it seamlessly fits into your busy routine. Whether tackling the morning rush or satisfying afternoon cravings, this versatile drink is your go-to solution. Horlicks Protein Vanilla Flavour milk combines modern taste with advanced nutrition, ensuring you stay fueled and energised. Shake well, chill, and enjoy the goodness of Horlicks, trusted for generations. With options like Horlicks 1kg, Horlicks 500g, and Horlicks Lite, the brand continues to deliver superior nutrition for every lifestyle. Choose Horlicks Protein for a delicious and nutritious boost every day.",
+   "ingredients": "Milk+, Water, Sweetener (Ins 965(Ii)), Edible Fiber, Vitamins & Minerals, Nature Identical Flavouring Substances, Acidity Regulators (Ins 340(Ii), Ins 340(Iii), Ins 452(I), Ins 339(Iii)), Stabilizers (Ins 460(I), Ins 466), Edible Iodised Salt.",
+   "nutritionalInfo": {
+    "Energy": "171 kcal",
+    "Protein": "20 g",
+    "Carbohydrates": "17 g",
+    "Total Sugars": "8 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "3.5 g",
+    "Total Fat": "3.6 g",
+    "Saturated Fat": "2.4 g",
+    "Trans Fat": "<0.01 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "150 mg"
+   },
+   "manufacturerName": "Hindustan Unilever Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Biscuits",
+  "handle": "biscuits",
+  "vendor": "Horlicks (HUL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/268184_1-horlicks-biscuits.jpg"
+    },
+    "barcode": "8901030718861"
+   },
+   {
+    "title": "150g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/256016_2-horlicks-biscuits.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/256017_6-horlicks-biscuits.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268184_1-horlicks-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268184-2_1-horlicks-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268184-3_1-horlicks-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268184-4_1-horlicks-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268184-5_1-horlicks-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/256016_2-horlicks-biscuits.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/256017_6-horlicks-biscuits.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Horlicks Biscuits contains the power of calcium which creates this biscuit a boon for your bones. It is a favourite between parents and children. It is strong and filled with vitamins. It is developed with 26 vital nutrients such as vitamin B6, B12, folate for a strong heart, and antioxidant nutrients. It has the 'Power of Calcium' providing 100% RDA of calcium.",
+   "nutritionalInfo": {
+    "(per 100 g)Calories": "480 kcalSodium : 300 mgPotassium : 220 mgTotal Fat : 21 g Saturated : 10 g Polyunsaturated : 2 g Monounsaturated : 7 g Trans : 0 g Total Carbs : 74 gDietary Fiber : 6 gSugars : 0 gProtein : 6 gCholesterol : 0 mg"
+   },
+   "usageInstructions": "Not just for kids, but even adults can opt for this healthy biscuits for their tea time and snack-time. Buy Horlicks Biscuits online now and get great taste as well as nourishment.",
+   "countryOfOrigin": "India"
+  }
+ }
+]

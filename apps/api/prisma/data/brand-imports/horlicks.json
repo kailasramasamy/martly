@@ -1,0 +1,320 @@
+{
+  "brand": "Horlicks (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "horlicks-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/horlicks/logo-e2c5f2fd.png",
+  "themeColor": "#F37021",
+  "themeColorSecondary": "#1F3B8C",
+  "namePrefix": "Horlicks ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Horlicks Classic Malt Health Drink": "Classic Malt Jar"
+  },
+  "rules": [
+    {
+      "match": "^Classic\\ Malt\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Classic\\ Malt\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Classic\\ Malt\\ Container$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Superfoods\\ Classic\\ Malt\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Superfoods\\ Classic\\ Malt\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Superfoods\\ Classic\\ Malt\\ Carton$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Superfoods\\ Classic\\ Malt\\ Container$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^No\\ Added\\ Sugar\\ Nutrition\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Delight\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Delight\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Lite\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Lite\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Lite\\ Badam$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Millet\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Growth\\+\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Junior\\ Chocolate\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Junior\\ Chocolate\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Junior\\ Vanilla\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Junior\\ Vanilla\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Junior\\ Stage\\ 1\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Junior\\ Stage\\ 1\\ Original$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Women's\\ Plus\\ Chocolate\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Women's\\ Plus\\ Chocolate\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Women's\\ Plus\\ Caramel\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Women's\\ Plus\\ Caramel\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Mother's\\ Plus\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Mother's\\ Plus\\ Kesar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Diabetes\\ Plus\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Protein\\ Plus\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Protein\\ Plus\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Pro\\ Fitness\\ Chocolate\\ Meal\\ Replacement$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Pro\\ Fitness\\ Mango\\ Meal\\ Replacement$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Protein\\ Chocolate\\ Milk$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Protein\\ Peanut\\ Butter\\ Milk$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Protein\\ Proffee\\ Milk$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Protein\\ Vanilla\\ Milk$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    }
+  ]
+}
