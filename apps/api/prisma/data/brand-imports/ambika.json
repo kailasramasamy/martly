@@ -1,0 +1,22 @@
+{
+  "brand": "Ambika",
+  "manufacturer": "Ambika Appalam Depot",
+  "feed": "ambika-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ambika/logo-5266ffbb.png",
+  "themeColor": "#E3262B",
+  "themeColorSecondary": "#1E9AD6",
+  "namePrefix": "Ambika ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Appalam$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    }
+  ]
+}

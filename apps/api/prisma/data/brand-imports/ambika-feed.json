@@ -1,0 +1,37 @@
+[
+ {
+  "title": "Appalam",
+  "handle": "appalam",
+  "vendor": "Ambika",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "225g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004423_4-ambika-appalam-no-3.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004423_4-ambika-appalam-no-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004423-2_2-ambika-appalam-no-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004423-3_2-ambika-appalam-no-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004423-4_2-ambika-appalam-no-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004423-5_2-ambika-appalam-no-3.jpg"
+   }
+  ]
+ }
+]
