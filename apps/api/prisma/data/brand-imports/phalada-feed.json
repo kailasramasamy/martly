@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40014284_3-phalada-pure-sure-organic-sugar.jpg"
-    }
+    },
+    "barcode": "8906047000367"
    }
   ],
   "images": [
@@ -32,6 +33,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40014284-5_2-phalada-pure-sure-organic-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Phalada Pure & Sure Organic Sugar is a high quality sugarwhich acts as a great sweetener in soft drinks, candy, confectionary, pastries, chocolates etc.\nSugar is naturally whiteWhite table sugar comes from either sugarcane or sugar beets and is usually sold without its plant source clearly identifiedIt is easy to use and a great sweetenerIt is mostly used in soft drinks, candy, confectionary, pastries, chocolates etcWhite sugar is sweeter than brown sugar, so you can use less of it to attain your desired tasteIts neutral flavor makes it a versatile ingredient in baking, working well in fruit sponges and sweet pastries.\nExplore the natural and organic range of Phalada Pure & Sure products Brown Rice, Honey, Jaggery and more, sourced from organic agricultural practices available on Big Basket",
+   "ingredients": "Ingredients: Sugar",
+   "usageInstructions": "Make yourself a refreshing lemonade on a summer afternoonOr mix up a cocktail/ mocktails for your guests with freshly squeezed orange juice and the right amount of sugar",
+   "storageInstructions": "Keep in a cool, dry place.\nStore in an airtight container once open",
+   "manufacturerName": "Phalada Ango Research Foundation Pvt Ltd -Sy.No.92/5 Kannalli Segehalli Cross",
+   "fssaiLicense": "10019043002548"
+  }
  }
 ]

@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000248_2-rajdhani-arhar-dal-new.jpg"
-    }
+    },
+    "barcode": "8906002345861"
    }
   ],
   "images": [
@@ -41,7 +42,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000248-8_1-rajdhani-arhar-dal-new.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful Toor Dal, grown in a vigorous and hygienic environment to ensure the highest quality. This lentil is rich in protein and easy to digest, making it a nutritious and hassle-free addition to your meals. With its yummy taste and high dietary value, Toor Dal is the perfect ingredient for a variety of delicious recipes. Perfectly cleaned and free from any foreign materials, this versatile pulse absorbs flavours beautifully and adds a comforting consistency to your dals, stews and soups. Whether you're a vegetarian looking to increase your protein intake or simply seeking a satisfying and flavourful base for your dishes, Toor Dal is the ideal choice. Explore our unique and delicious recipe collection to unlock the full potential of this exceptional lentil.",
+   "storageInstructions": "*Store in a cool, dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chana Dal",
@@ -57,7 +63,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000252_2-rajdhani-chana-dal.jpg"
-    }
+    },
+    "barcode": "8906002345847"
    }
   ],
   "images": [
@@ -85,7 +92,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000252-8_1-rajdhani-chana-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful flavours of Channa Dal, a beloved staple in Indian cuisine. This versatile pulse boasts a subtly sweet and nutty taste that makes it a cherished ingredient in a balanced diet. Rajdhani Chana Dal undergoes a meticulous drying and roasting process, ensuring a pure and natural product packed with flavour and goodness. Bursting with dietary fibre and a negligible amount of polyunsaturated fat, this dal is an excellent source of plant-based protein, making it a fantastic choice for those seeking to reduce their meat intake. Whether simmered in a hearty curry or incorporated into a variety of dishes, Channa Dal's unique taste and nutritional profile will elevate your culinary experience.",
+   "storageInstructions": "*Store in a cool, dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Unpolished Chana Dal",
@@ -117,7 +129,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289852-4_1-rajdhani-chana-dal-unpolished-natural-rich-in-protein.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rajdhani Chana Dal is dried and roasted to remove moisture and what you get is the purest and most natural form of Chana Dal. It is a premium quality product that can be used to make tasty dishes. Rajdhani Chana Dal is perfect for food preparation into various dishes at houses, hotels, restaurants, cafeterias, etc and is rich in protein. It is one of the most essential pulses in India and when you go for Rajdhani, you get chana dal that is free from synthetic chemicals and pesticides. Healthy and nutritious, make some wholesome dishes at your home with our A-grade Dal. We guarantee you satisfaction!\nBenefits\nChana Dal.\nRich in protein.\nTop-grade quality.\nUnpolished and natural.\nNo pesticides.\nFree from synthetic chemicals.\nHealthy and nutritious.",
+   "ingredients": "Chana Dal",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "370 kcal",
+    "Protein": "Min. 20.0%",
+    "Fat": "Max. 6.0%",
+    "Trans Fat": "Not Detected",
+    "Carbohydrates": "Max. 65.0%",
+    "Dietary Fibre": "Max. 12.0%",
+    "Cholesterol": "Not Detected",
+    "gluten Content": "Not Detected"
+   },
+   "storageInstructions": "* Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "TATA GLOBAL BEVERAGES LTD Ashapura Agrocomm Private Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kabuli Chana",
@@ -161,7 +192,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000277-8_1-rajdhani-chana-kabuli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kabuli channa or garbanzo beans are pale brown colored sensitive bland and starchy tasting spongy and creamy textured legumes It is a wealthy source of minerals such as magnesium phosphorous calcium iron potassium and importantly molybdenum They are utilized to make delicacies like falafels Curried Chole and hummus Click here for unique and delicious recipes",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Lobia Safed",
@@ -205,7 +242,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000286-8_1-rajdhani-lobhiya-safed.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Lobia White is an extremely delicious nutritious and protein packed dish These are high in fiber soluble fiber complex protein iron carbohydrates and folate They are well known for their consistency and their ability to absorb tastes Rich in fiber white lobia also contain necessary nutrients such as minerals and vitamins Click here for unique and delicious recipes",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Masri Dal",
@@ -258,7 +301,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000258-8_1-rajdhani-masri-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Masoor dal is possibly the most commonly used dal in India. It is essentially the split lentil with no skin and is red in colour. Being a rich source of protein, it forms an important food item for all, especially for vegetarians and vegans. It is low in fat and contains high amounts of fibre.",
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Masoor Malka",
@@ -302,7 +352,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000280-8_1-rajdhani-masoor-malka.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Masoor Whole Black is one of the most normally used lentils in India It has high levels of proteins including the important amino acids isoleucine and lysine which are a necessary supply of inexpensive protein It is also rich in Folate iron potassium vitamin B1 and other minerals all with nearly no fat Click here for unique and delicious recipes",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masoor Sabut",
@@ -346,7 +400,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000279-8_1-rajdhani-masoor-sabut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Masoor Whole Black is one of the most normally used lentils in India It has high levels of proteins including the important amino acids isoleucine and lysine which are a necessary supply of inexpensive protein It is also rich in Folate iron potassium vitamin B1 and other minerals all with nearly no fat Click here for unique and delicious recipes",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Moong Sabut",
@@ -362,7 +422,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000245_3-rajdhani-moong-sabut.jpg"
-    }
+    },
+    "barcode": "8906002348602"
    }
   ],
   "images": [
@@ -390,7 +451,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000245-8_1-rajdhani-moong-sabut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rajdhani Moong Sabut is a nutrient-rich addition to your kitchen pantry. These whole green moong beans are small, cylindrical and have a bright green skin. They are nutritious and mild in flavour, taking on the taste of the spices and other ingredients added to them. Rajdhani Moong Sabut is a fine source of protein and dietary fibre, and is low in fat while being rich in calcium, B complex vitamins and potassium.",
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Urad Dhuli",
@@ -434,7 +502,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000274-8_1-rajdhani-urad-dhuli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Urad dal split is a skinned fawn colored lentil with a strong flavor that has been split in half This Urad dal includes fat protein and carbohydrates that your body requires It gives vitamins and dietary fibers which also improves digestion It aids to reduce cholesterol and develops cardiovascular health The consistency of urad dal is typically thicker than any other dals Click here for unique and delicious recipes",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Urad Chilka",
@@ -478,7 +552,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000273-8_1-rajdhani-urad-chilka.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Urad dal is the most valued pulse in India because of it rich dietary value Urad dal is trendy amongst vegetarians as it acts like a rich protein source It is widely utilized in different cooking preparations such as papad dosa and vada Click here for unique and delicious recipes",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Urad Sabut",
@@ -522,7 +602,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000272-8_1-rajdhani-urad-sabut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Urad wash gota is a skinned off white coloured lentil with a strong aroma and is native to India It has high dietary value and is rich resource of vitamin B iron magnesium and potassium It is generally used in preparation of different cuisines Our product is hygienically processed in our units to eliminate all kind of dust and foreign particles Urad dal is generally soaked and ground to make batter for idlis dosas vadas etc It is used in curries chutneys and sometimes too makes desserts as well Click here for unique and delicious recipes",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Rajma Lal",
@@ -566,7 +652,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000284-8_1-rajdhani-rajma-lal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rajma Red is dark red kidney beans embrace their shape really well during cooking and gladly absorb contiguous flavors they are a choice bean to use in simmered dishes These are an outstanding source of folate manganese and dietary fiber It is an excellent source of protein thiamine vitamin B1 potassium copper phosphorus magnesium iron and potassium These are little in fat and loaded with nutrients Click here for unique and delicious recipes",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rajma Srinagar",
@@ -604,7 +694,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000285_1-rajdhani-rajma-srinagar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kashmiri rajma are dark red kidney beans which are known for their rich red colour even after being cooked. These are an outstanding supply of folate, manganese and dietary fibre. It is a fine supply of protein, phosphorus, copper, thiamine (vitamin B1), iron, potassium and magnesium. These are low in fat & loaded with nutrients.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Keep the package tightly sealed to preserve freshness",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Mix Dal",
@@ -701,7 +798,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000265-8_1-rajdhani-matar-safed.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rajdhani White Dried Peas are a small but mighty legume packed with an impressive nutritional profile. These peas are a fantastic source of cholesterol-lowering fibre, as well as a good to outstanding supply of essential proteins, B-vitamins, and minerals. With virtually no fat, these peas offer a filling, wholesome addition to a variety of dishes. Whether used in hearty soups, flavourful curries, or fresh salads, Rajdhani White Dried Peas lend a delicious taste and satisfying texture. Versatile and quick-cooking, these peas make a convenient and nutritious ingredient for busy weeknights or elaborate feasts alike. Bursting with vitamins A, C, K, and B6, these green peas are low in calories and contain negligible amounts of sodium, fat, and cholesterol, making them a healthy and delightful choice.",
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Matar Hara",
@@ -745,7 +849,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000289-8_1-rajdhani-matar-hara.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Green Peas are small, round and green, and are generally harvested in the early summer. They give a delicious taste as fresh Green Peas. These are low in calories and contain negligible amounts of sodium, fat and cholesterol. Vitamins A, C, K and B6 are present in plenty.",
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Moth Sabut",
@@ -789,7 +900,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000282-8_1-rajdhani-moth-sabut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Whole Mataki or Mot dal is a small brown colored oblong shaped bean which is especially familiar in Indian cuisine These have a superior attention of vitamins proteins minerals and enzymes Sprouts are simply digestible It also has dietary fiber Folate all with virtually no fat They are a fine supply of potassium and iron Click here for unique and delicious recipes",
+   "manufacturerName": "B-32",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000176"
+  }
  },
  {
   "title": "Besan",
@@ -836,7 +953,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200334_3-rajdhani-besan-gram-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rajdhani Besan is finely ground chickpea flour, ideal for a variety of dishes. Its rich, nutty flavour and smooth texture enhance traditional recipes, from pakoras to sweets. Perfect for adding depth to your cooking, this besan is pure and versatile, making it a kitchen essential for authentic Indian cuisine. Elevate your dishes with Rajdhani Besan's quality and taste.",
+   "usageInstructions": "For Cooking.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "370.8 kcal",
+    "Protein": "21.0 g",
+    "Fat": "6.0 g",
+    "Carbohydrates": "65.0 g",
+    "Total Dietary Fibre": "10.0 g",
+    "Trans Fat": "Not Detected",
+    "Gluten Content": "Not Detected",
+    "Cholesterol": "Not Detected"
+   },
+   "manufacturerName": "Rajdhani Flour Mills Ltd",
+   "fssaiLicense": "10014011002322",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mota Besan",
@@ -871,7 +1006,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289851-5_1-rajdhani-mota-besan-100-natural-rich-in-protein-gluten-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Besan is also known as gram flour or chickpea flour. It is made by grinding pure chana dal and made from the best quality chana dal, our Besan from Rajdhani makes for a versatile kitchen flour. No gluten and made using pure desi chana, it has high natural and digestible protein. Arriving with an earthy aroma and binding nature, this makes besan a key ingredient in the batter used for preparing onion pakodas, traditional potato and vegetable bhajiyas and some sweet dishes. Suitable for regular use, its batter can be used in making spicy and crispy fritters as well. Make some delicious recipes with Rajdhani Mota Besan and call it a deal!\nBenefits\nMota Besan.\nMade from the best quality Chana Dal.\nVersatile kitchen flour.\nHigh in natural and digestible protein.\nGluten-free.",
+   "ingredients": "Chana Dal",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Protein": "21.0%",
+    "Fat": "6.0%",
+    "Total Dietary Fibre": "10.0%",
+    "Carbohydrates": "65.0%",
+    "Energy": "370.8 kcal",
+    "Trans Fat": "Not Detected",
+    "gluten Content": "Not Detected",
+    "Cholesterol": "Not Detected"
+   },
+   "storageInstructions": "*Store in a cool, dry and insect-free place",
+   "manufacturerName": "TATA GLOBAL BEVERAGES LTD Ashapura Agrocomm Private Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maida",
@@ -924,7 +1078,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000235-8_1-rajdhani-maida.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with Rajdhani Maida, the premium all-purpose flour that delivers exceptional results. This wonderful blend of soft and rigid wheat is a versatile choice, perfect for a wide range of dishes. Boasting a fine texture and smooth batter, Rajdhani Maida is ideal for crafting irresistibly delicious pies, quick breads, cookies, pancakes, and waffles. Beyond baking, this self-rising flour also shines in savoury applications, lending its expertise to the making of paratha, puris, and other breads. Whether you're whipping up decadent desserts or crafting mouthwatering savoury creations, Rajdhani Maida is the flour that will elevate your culinary experience with ease.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sooji",
@@ -977,7 +1136,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000238-8_1-rajdhani-sooji.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rajdhani Sooji is made from high-quality durum wheat. Sooji is also known as semolina or rava. It is one of the staple ingredients in the Indian diet. It has a sweet, nutty flavour and earthy aroma. This nutritious sooji has a rich flavour and aroma. It is easy to cook and digest. It is rich in iron minerals and antioxidants. This can be used to make both sweet and savoury dishes. It is mainly used in making couscous, pasta, upma, and sweet puddings. It does not contain any added preservatives or flavourings. |",
+   "countryOfOrigin": "India",
+   "storageInstructions": "Adds a distinctive texture to recipes. Used for a wide range of preparations like Halwa, upma, Pasta, daal, bhati, kheer, ladoo, etc. Store in a cool and dry place. |"
+  }
  },
  {
   "title": "Chana Sattu",
@@ -993,7 +1157,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40206907_3-rajdhani-chana-sattu.jpg"
-    }
+    },
+    "barcode": "8906055100066"
    }
   ],
   "images": [
@@ -1012,7 +1177,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206907-5_1-rajdhani-chana-sattu.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "abc",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50g",
+    "Energy": "411 kcal",
+    "Protein": "23.0 g",
+    "Carbohydrate": "61.8 g",
+    "Sugar": "7.1 g",
+    "Added Sugar": "0.0 g",
+    "Dietary Fibre": "16.0 g",
+    "Fat": "7.7 g",
+    "Sodium": "640 mg"
+   }
+  }
  },
  {
   "title": "Makki Atta",
@@ -1028,7 +1208,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40359034_1-rajdhani-makki-atta.jpg"
-    }
+    },
+    "barcode": "8906002347872"
    }
   ],
   "images": [
@@ -1047,7 +1228,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359034-5_1-rajdhani-makki-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rajdhani Makki Atta is a premium-quality maize flour made from the finest corn grains. It is natural, gluten-free, and rich in fibre, making it a healthy addition to your diet. Rajdhani Makki Atta is a staple in many households. Enjoy the goodness of maize in every bite, packed with essential nutrients to support a balanced diet.",
+   "nutritionalInfo": {
+    "Calories": "365 kcal",
+    "Total Fat": "4 g",
+    "Saturated Fat": "1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "5 mg",
+    "Total Carbohydrates": "76 g",
+    "Dietary Fibre": "10 g",
+    "Sugar": "1 g",
+    "Protein": "9 g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "0%",
+    "Iron": "8%"
+   },
+   "manufacturerName": "Victoria Foods (P) Ltd",
+   "fssaiLicense": "10012011000176",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chakki Atta",
@@ -1091,7 +1294,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000233-8_1-rajdhani-whole-wheat-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rajdhani Whole Wheat - Atta is made from the choicest grains, which are heavy on the palm, golden amber in colour and hard in bite. It is carefully ground using a modern 'chakki - grinding' process for the perfect balance of colour, taste and nutrition. This ensures that the atta contains 0% maida and is sampoorna atta. The dough made from Rajdhani Atta absorbs more water, hence rotis remain softer for longer.",
+   "storageInstructions": "Store in a cool, dry and hygienic place\nAvoid exposure to sunlight",
+   "manufacturerName": "VICTORIA FOODS PVT. LTD. B-32 Lawrence Road Newdelhi 110035",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dalia",
@@ -1107,7 +1316,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000237_2-rajdhani-dalia.jpg"
-    }
+    },
+    "barcode": "8906002347469"
    }
   ],
   "images": [
@@ -1135,7 +1345,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000237-8_1-rajdhani-dalia.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the wholesome goodness of Rajdhani Dalia, a premium wheat dalia that is not only rich in dietary fibre but also free from any added colouring or chemical enamelling. This nutritious breakfast option is the perfect choice for the fitness-conscious and those with diabetes, providing an excellent source of essential nutrients. Crafted from the finest quality wheat grains harvested from the well-drained loamy soil of the Deccan plateau in Madhya Pradesh, Rajdhani Dalia is hygienically packed and of exceptional quality. Enjoy the delightful texture and flavour of this versatile ingredient, which can be easily incorporated into a variety of dishes to meet your family's dietary fibre needs.",
+   "storageInstructions": "Store in a dry place away from heat and light",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Oats",
@@ -1170,7 +1385,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313937-5_1-rajdhani-instant-oats.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience wholesome nutrition with Rajdhani Instant Oats. Packed with goodness, these oats provide a quick and nutritious meal option. Start your day right by indulging in the perfect blend of taste and health. Whether it's a hearty breakfast or a convenient snack, Rajdhani Instant Oats offers the fibre and energy you need. Elevate your lifestyle with this versatile and easy-to-prepare choice, making wellness effortlessly delicious.",
+   "ingredients": "Oats",
+   "nutritionalInfo": {
+    "Energy (kcal)": "407",
+    "Protein (g)": "12.1",
+    "Carbohydrates (g)": "67.7",
+    "Total Sugar (g)": "0",
+    "Added Sugar (g)": "0",
+    "Fat (g)": "9.7",
+    "Saturated Fats (g)": "1.8",
+    "Trans Fat (g)": "<0.1",
+    "Sodium": "2.7mg",
+    "Cholesterol": "0mg",
+    "MUFA (Monounsaturated Fats)": "4.3g",
+    "PUFA (Polyunsaturated Fats)": "3.5g"
+   },
+   "usageInstructions": "Empty a sachet into a bowl.\nAdd hot water/milk.\nStir well and cover for 3 minutes.\nCustomize with honey, fruits, or nuts.\nEnjoy a quick, nourishing meal bursting with natural flavours. Ideal for a wholesome breakfast or anytime snack.",
+   "manufacturerName": "Address",
+   "fssaiLicense": "10014011002322",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Flakes",
@@ -1205,7 +1442,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313935-5_1-rajdhani-choco-flakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful Rajdhani Choco Flakes, a perfect blend of crunchy goodness and chocolatey flavour. Made with premium ingredients, these flakes offer a delightful breakfast experience. Each bite is a harmony of crispy flakes and rich chocolate, making mornings truly delightful. Whether enjoyed with milk or yoghurt, Rajdhani Choco Flakes ensure a satisfying start to your day. Elevate your breakfast routine with this scrumptious treat that's loved by both kids and adults.",
+   "ingredients": "Wheat Solids (49%) Refined Wheat Flour(Maida) (28%) Wheat Flour (Atta), Sugar, Oat Flour, Rice Flour, Cocoa Solids (4.3%), Palmolein Oil, Liquid Glucose, Malt Extract, Artificial Flavouring Substances- Chocolate & Vanilla iodized Salt, Calcium Carbonate, Emulsifier Soya Lecithin 322(i), Natural Colour (Ins 150d), Tocopherol(INS 307b). CONTAINS PERMITTED NATURAL COLOUR (INS 150d) & ADDED FLAVOURS (NATURE -IDENTICAL & ARTIFICIAL FLAVOURING SUBSTANCES - CHOCOLATE & VANILLA).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "389",
+    "Protein (g)": "6.8",
+    "Carbohydrates (g)": "80.4",
+    "Total Sugar (g)": "31.36",
+    "Added Sugar (g)": "29.4",
+    "Fat (g)": "3.3",
+    "Saturated Fats (g)": "1.48",
+    "Trans Fat (g)": "0",
+    "Sodium": "100mg",
+    "Cholesterol": "0mg",
+    "MUFA (Monounsaturated Fats)": "0.99g",
+    "PUFA (Polyunsaturated Fats)": "0.82g"
+   },
+   "usageInstructions": "Pour the desired amount into a bowl.\nAdd milk or yoghurt.\nStir and relish the chocolaty crunch.\nPerfect for breakfast or a quick snack.\nExperience a delightful fusion of flavours that adds joy to every bite.",
+   "manufacturerName": "Address",
+   "fssaiLicense": "10014011002322",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Poha",
@@ -1221,7 +1480,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/97133_1-rajdhani-poha-mota.jpg"
-    }
+    },
+    "barcode": "8906002348169"
    }
   ],
   "images": [
@@ -1240,7 +1500,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/97133-5_1-rajdhani-poha-mota.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Prepared from the finest-quality rice grains, the Rajdhani\nMota Poha is widely used in Indian homes for preparing various dishes. This\npoha is full of nutrients and is low in fat. Hygienically packed for the\nhighest quality and best taste. Rich source of carbohydrates, dietary fibre,\nvitamins, and minerals to keep the body healthy and fit. Can be used for making\nbreakfast dishes and evening snacks.",
+   "ingredients": "Rice Flakes",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "5g",
+    "Energy (kcal)": "389.61 kcal",
+    "Protein (g)": "7.16 g",
+    "Carbohydrates (g)": "87.52 g",
+    "Total Sugar (g)": "0.0 g",
+    "Added Sugar (g)": "0.0 g",
+    "Dietary Fibre (g)": "2.58 g",
+    "Total Fat (g)": "1.21 g",
+    "Saturated Fat (g)": "0.00 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "12.32 mg",
+    "Iron (mg)": "0.62 mg",
+    "% RDA Per Serve": "19.48",
+    "RDA": "Value Percent May Be Higher Or Lower Depending On Your Daily Needs On 2,000 calorie Diet."
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Store in airtight container once opened",
+   "manufacturerName": "Victoria Foods Pvt. Ltd. B-32",
+   "fssaiLicense": "10012011000176",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Plain Makhana",
@@ -1275,7 +1561,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289850-5_1-rajdhani-plain-fox-nutsmakhana-premium-healthy-for-weight-management.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Makhana is made from popped lotus seeds and has traditionally been eaten as a snack during fasting in North India. It is handpicked and then packed to deliver the perfect product from the shelves of Rajdhani. Makhana is a dry fruit packed with benefits of a superfood, with 20% fewer calories and 67% less fat than popcorn, making it a healthy snack for weight loss.",
+   "ingredients": "Makhana.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "360Kcal",
+    "Protein": "9.0g",
+    "Carbohydrate": "77.0g",
+    "Total Dietary Fibre": "7.5g",
+    "Fat": "0.5g",
+    "Sodium": "70mg",
+    "Calcium": "70mg",
+    "Phosphorus": "53.0mg",
+    "Potassium": "53.0mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "TATA GLOBAL BEVERAGES LTD Ashapura Agrocomm Private Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Roasted Chana",
@@ -1310,6 +1616,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289849-5_1-rajdhani-roasted-chana-premium-healthy-rich-in-protein-fibre.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bengal gram is consumed in the form of entire dried seeds and in the form of dhal, made by splitting the seeds in a mill and separating the husk. A rich source of protein, Bengal gram can be used in a variety of recipes. It makes a great, healthy snack on the go because they are rich in fibre and protein, and low in fat and calories. It is perfect for food preparation into various dishes at houses, hotels, restaurants, cafeterias, etc. It is one of the most essential pulses in India. It is free of synthetic chemicals and pesticides. Our Rajdhani Roasted Chana is an ideal snack. Perfect for road-tripping or late-night movie sessions, this snack has got you all covered. \nBenefits\nRoasted Chana Dal.\nRich in protein and fibre.\nLow in fats and calories.\nFree from synthetic chemicals.\nNo pesticides.\nA great and healthy snack.",
+   "ingredients": "Roasted Chana",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "100g",
+    "Energy": "411 K.cal",
+    "Protein": "Min.15.0 g",
+    "Fat": "Max.6.5g",
+    "Carbohydrate": "Max.74.5g",
+    "Dietary Fibre": "Max.17.5g",
+    "Sodium": "640 mg",
+    "Trans Fat": "Not Detected",
+    "Cholesterol": "Not Detected",
+    "gluten Content": "Not Detected"
+   },
+   "storageInstructions": "* Store in a cool, dry and insect-free place\n* Avoid exposure to direct sunlight",
+   "manufacturerName": "TATA GLOBAL BEVERAGES LTD Ashapura Agrocomm Private Ltd",
+   "fssaiLicense": "10014031001025",
+   "countryOfOrigin": "India"
+  }
  }
 ]

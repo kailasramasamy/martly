@@ -47,7 +47,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/177208_3-american-garden-us-mayonnaise.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Mayonnaise is a classic mayonnaise with a rich, creamy texture and a delightful flavour that enhances the taste of various dishes. Made with high-quality ingredients, this mayonnaise is perfect for sandwiches, salads, dips, and more, adding a burst of flavour to every bite.",
+   "ingredients": "Vegetable oil, water, egg yolk, distilled vinegar, salt, sugar, lemon juice concentrate, calcium disodium EDTA (to protect flavour), natural flavours.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "100 kcal",
+    "Total Fat": "14g",
+    "Saturated Fat": "11g",
+    "Cholesterol": "5mg",
+    "Sodium": "55mg"
+   },
+   "storageInstructions": "Store in a cool, dry place\nKeep away from direct heat or sunlight"
+  }
  },
  {
   "title": "U.S. Eggless Mayonnaise",
@@ -79,7 +92,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002151-4_1-american-garden-mayonnaise-eggless-gluten-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Mayonnaise - Eggless (Gluten Free) is arranged from a recipe that is egg less but provides chunky texture of the best usual mayonnaise. It will give you the normal flavour that is found in the top mayonnaise without the addition of eggs. It is yummy and rich mayonnaise which does not have egg and gluten free. The product is vegetarian.",
+   "ingredients": "Vegetable Oil (Soybean And/Or Canola), Distilled Vinegar, Water, Maltodextrin, Sugar, Salt, Modified Food Starch, Mustard Flour, Xanthan Gum, Propylene",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "U.S. Mustard",
@@ -102,7 +121,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/177319_3-american-garden-easy-squeeze-yellow-mustard.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden® U.S. Mustard is a gluten-free mustard sauce born in the USA. It is made with high-quality ingredients and has a rich, creamy texture. The sauce can be used as a condiment, marinade, or dressing to add flavour to a variety of dishes.",
+   "storageInstructions": "Store in a cool, dry place\nKeep away from direct heat or sunlight"
+  }
  },
  {
   "title": "Soy Sauce",
@@ -137,7 +160,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002127-5_1-american-garden-sauce-soy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Sauce - Soy. A classic condiment that also acts as an ingredient in an array of mouth-watering dishes, American Garden soy sauce lets you enjoy the flavour of Asia no matter where you are. Weight: 295 g, Type of tin: Bottle, Vegetarian.",
+   "ingredients": "Distilled vinegar, hydrolysed soy protein, corn syrup, citric acid, caramel colour (E150d).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "15ml",
+    "Serving Size": "1 Tbsp (15ml)",
+    "Calories": "10",
+    "Total Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "1040mg",
+    "Total Carbohydrates": "2g",
+    "Protein": "0g"
+   },
+   "storageInstructions": "Store in a cool, dry place\nKeep away from direct sunlight"
+  }
  },
  {
   "title": "White Vinegar",
@@ -160,7 +198,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017225_3-american-garden-natural-vinegar-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden puts energy into sourcing the best ingredients, finding the most authentic recipes and creating products that can enrich every moment to make it even better – like the icing on a cake!\nAmerican Garden Vinegar is natural and stands out because of its ideal taste profile. It also has antiseptic and disinfectant qualities that significantly extend its uses.\nThis vinegar is made with 5% acidity. It has no smell and is sour to taste.\nQuantity : 473 ml\nStore at room temperature.",
+   "ingredients": "Water and vinegar, 5% acidity.",
+   "usageInstructions": "For marinations, cooking, making pickles.",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Apple Cider Vinegar",
@@ -198,7 +243,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/205988-6_4-american-garden-vinegar-apple-cider.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Apple Cider Vinegar is a versatile and flavourful pantry essential. Crafted with care, it is made from the finest quality apples, fermented to perfection to unlock a myriad of health benefits and culinary possibilities. Known for its natural acidity and tangy flavour, this apple cider vinegar has been cherished for its medicinal properties and culinary uses across cultures. With its unparalleled quality and purity, it retains the natural goodness of the fruit while boasting a distinctively rich flavour profile. Whether used in cooking, as a wellness tonic, or for various household applications, American Garden Apple Cider Vinegar's versatility knows no bounds.",
+   "ingredients": "Water And Apple Juice From Concentrate, 5% Acidity",
+   "nutritionalInfo": {
+    "Nutrition Per": "15ml",
+    "Serving Size": "1 Tbsp (15ml)",
+    "Calories": "0",
+    "Total Fat": "0g",
+    "Sodium": "0mg",
+    "Total Carbohydrates": "0g",
+    "Protein": "0g",
+    "Sugar": "0g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "fssaiLicense": "10012022000625",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Organic Apple Cider Vinegar",
@@ -227,7 +289,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40110426-3_1-american-garden-organic-cider-vinegar-with-the-mother.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Apple Cider Vinegar is a versatile and flavourful pantry essential. Crafted with care, it is made from the finest quality apples, fermented to perfection to unlock a myriad of health benefits and culinary possibilities. Known for its natural acidity and tangy flavour, this apple cider vinegar has been cherished for its medicinal properties and culinary uses across cultures. With its unparalleled quality and purity, it retains the natural goodness of the fruit while boasting a distinctively rich flavour profile. Whether used in cooking, as a wellness tonic, or for various household applications, American Garden Apple Cider Vinegar's versatility knows no bounds.",
+   "ingredients": "Organic apple vinegar diluted with water",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "15ml",
+    "Serving Size": "1 Tbsp (15ml)",
+    "Calories": "0",
+    "Total Fat": "0g",
+    "Sodium": "0mg",
+    "Total Carbohydrates": "0g",
+    "Protein": "0g"
+   }
+  }
  },
  {
   "title": "Pancake Syrup",
@@ -262,7 +337,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/177140_8-american-garden-syrup-pancake.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, velvety goodness of American Garden Pancake Maple Syrup, a true taste of quality and tradition. Crafted with care and precision, this syrup is sourced from the finest maple trees in North America, capturing the essence of the great outdoors in every golden, flavourful drop. With a low glycemic index and a delightful 2% maple syrup content, this syrup is a nutritious alternative to refined sugars, making it a delectable and guilt-free addition to your breakfast spread. Elevate your pancakes, waffles, and other breakfast dishes with the irresistible sweetness and distinct maple flavour of this gluten-free, vegan-friendly syrup. Boasting a vibrant hue and a smooth, luxurious texture, American Garden Pancake Maple Syrup is a standout product that will transform your ordinary meals into extraordinary culinary experiences.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy": "210 kcal",
+    "Carbohydrate": "53 g",
+    "Sugars": "53 g",
+    "Sodium": "10 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Manufactured by",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014011001614"
+  }
  },
  {
   "title": "Original BBQ Sauce",
@@ -297,7 +386,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/177150-5_2-american-garden-barbeque-sauce-original.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Barbeque sauce with a classic smoky flavour that is perfect for parties and other outdoor events. Savour it along with your favourite food on a special occasion along with your favourite ones. A great American classic, our BBQ sauces use authentic American recipes to ensure the best taste for any backyard barbecue, sunny beach day or TV snack session. Enjoy this gourmet-quality sauce in original, hickory and honey flavours - all popular choices for marinades or as a dip on the side.",
+   "ingredients": "Corn syrup, distilled vinegar, water, tomato paste, molasses, apple cider vinegar, modified corn starch, salt, contains 2% or less of: natural hickory and mesquite smoke flavours, mustard flour, paprika, dried garlic, spices (ginger, cumin, bay leaf), dried onions, potassium sorbate as a preservative.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "2 Tbsp (36g)",
+    "Energy": "50 Kcal",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "340mg",
+    "Total Carbohydrates": "13g",
+    "Dietary Fiber": "0g",
+    "Sugars": "11g",
+    "Protein": "0g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "0%",
+    "Iron": "4%"
+   },
+   "manufacturerName": "Bajoria Foods Pvt Ltd",
+   "fssaiLicense": "10017022006870",
+   "countryOfOrigin": "USA, India"
+  }
  },
  {
   "title": "Honey BBQ Sauce",
@@ -320,7 +434,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003337_2-american-garden-bbq-sauce-honey.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the ultimate finger-licking barbeque delight with the American Garden Honey BBQ Sauce. This gourmet-quality sauce boasts an authentic American recipe, infused with a delectable honey flavour that will elevate your grilled meats, prime cuts, and even vegetables to new heights. Smother your culinary creations in this versatile sauce before firing them up on the grill, and experience the perfect balance of sweet and savoury that will have your taste buds dancing. Crafted with the finest ingredients, this BBQ sauce is the perfect companion for your barbeque adventures, promising a truly exceptional dining experience.",
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Hickory BBQ Sauce",
@@ -358,7 +478,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100020676-6_2-american-garden-sauce-hickory-bbq.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Gardens Hickory Barbeque Sauce. Blending the best ingredients to give you a sweet and spicy taste, this sauce is perfect for smearing on all kinds of grilled dishes and makes a good choice of sauce for hot dogs as well.",
+   "ingredients": "High fructose corn syrup, vinegar, water, tomato pasta, molasses, apple cider vinegar, modified food starch, salt, contains 2% or less of: natural smoke flavors (hickory and mesquite), mustard flour, caramel color, dried garlic, spices (black pepper, ginger, bay leaf), dried onions, paprika.",
+   "usageInstructions": "Apply this flavour for all savory dishes, vegetables, soups, and gravies.",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Worcestershire Sauce",
@@ -396,7 +523,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017239-6_1-american-garden-worcestershire-sauce.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Worcestershire Sauce is a food store must-have that never fails to deliver a bold splash of flavour. It is prepared from the good ingredients and excellent blended spices, this sauce are perfect for enlivening bland dishes and giving them a more luscious taste.",
+   "ingredients": "Distilled vinegar, corn syrup, molasses, salt, mustard, aged red peppers, hydrolysed soy protein, spices (black pepper), citric acid (E330) (preservative), celery, granulated garlic, ground cloves, granulated onion, anchovies, caramel colour (E150d), tamarind",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1 Tsp 5g",
+    "Energy": "5 Kcal",
+    "Total Fat": "1g",
+    "Saturated fat": "0g",
+    "Trans fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "60mg",
+    "Total Carbohydrates": "1g",
+    "Sugars": "1g",
+    "Protein": "0g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Louisiana Style Hot Sauce",
@@ -419,7 +564,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017240_3-american-garden-hot-sauce-louisiana-style.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary adventures with the American Garden Hot Sauce, a zesty delight that brings the authentic flavours of Louisiana straight to your table. Crafted with the finest aged red chili peppers and natural vinegar, this pocket-Sized powerhouse packs a punch of heat that's sharp, clean, and oh-so-satisfying. Versatile and travel-ready, this hot sauce is the perfect companion for wings, fries, and a wide array of dishes, adding a touch of New Orleans flair without lingering heat or any added calories, fat, or sugar - just pure, unadulterated flavour. Compact and convenient, the small bottle allows you to spice up your meals on the go, from takeout to outdoor barbecues, ensuring you never miss a chance to elevate your culinary experience.",
+   "ingredients": "American garden hot sauces are of premium quality and are created with the finest aged red chili peppers and natural vinegar weight: 88g, flavor: Louisiana, type of tin: bottle, vegetarian",
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Classic Pizza Sauce",
@@ -442,7 +594,10 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100020679_3-american-garden-sauce-classic-pizza.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your homemade pizza experience with American Garden's Classic Pizza Sauce. This rich and tangy sauce is crafted with a perfect blend of ripe tomatoes and aromatic spices, delivering an authentic, restaurant-quality flavour. Made with all-natural ingredients and free from preservatives or artificial additives, this sauce ensures a healthier and more genuine taste profile for your homemade pizzas. Offering a balanced, complementary flavour that enhances a variety of toppings, this convenient sauce saves you time in preparation, allowing you to quickly and easily create delicious, flavourful pizzas at home. Infused with the essence of traditional Italian cuisine, this classic pizza sauce is the perfect solution for bringing an authentic, high-quality taste to your homemade culinary creations."
+  }
  },
  {
   "title": "Traditional Pasta Sauce",
@@ -480,7 +635,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/177155-6_2-american-garden-sauce-traditional-pasta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Traditional Pasta Sauce has a rich and flavoursome taste that is made to complement all kinds of pasta dishes perfectly. Pasta sauces are made of all-natural juicy tomatoes and a blend of exotic herbs and spices.",
+   "ingredients": "Tomato puree (water, tomato paste), sugar, salt, soybean oil, dehydrated onions, garlic, herbs & spices (basil, oregano, white pepper, ground fennel), pecorino romano cheese, extra virgin olive oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "70 Kcal",
+    "Total Fat": "1g",
+    "Saturated fat": "0g",
+    "Trans fat": "0g",
+    "Sodium": "490mg",
+    "Total Carbohydrates": "12g",
+    "Protein": "2g"
+   }
+  }
  },
  {
   "title": "Italian Dressing",
@@ -503,7 +672,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017238_3-american-garden-italian-dressing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This Italian Dressing from American Garden turns your drab salad into fab in no time! It also makes homemade sandwiches and burgers tastier. Use it as a side dip with chips, French Fries and potato wedges when guests are over. You can also use it as a marinade or seasoning. And when you're on a healthy diet of salads and raw foods, salad dressings come to the rescue by adding the zing to your life.\nAmerican Garden's Italian Dressing is vegetarian and has no MSG. It's made of fresh herbs plucked from the garden blended beautifully in a combination of vegetable oil, garlic, vinegar and a mix of spices which results in a well-balanced flavour. This dressing from American Garden is rich in texture and has all the ingredients to make your daily meals extraordinary. Foodies love experimenting with salad dressings to come up with new and innovative recipes. So waste no time and quickly add American Garden Italian Dressing to your pantry's collection of salad dressings. Because admit it, can you ever have enough dressing in your fridge?\nweight: 267ml,\nvegetarian",
+   "ingredients": "Water, Distilled Vinegar, Sugar, (Soybean and/or Canola), Vegetable Oil, High Fructose Corn Syrup, Salt, Sugar, Onion, Xathan Gum, Red Bell Pepper, Spices (Oregano, Red Pepper), Natural Flavour, Lemon Juice Concentrate, Calcium Disodium EDTA to protect flavour, Annatto, Paprika, Caramel Colour. Contains less than 2% of Garlic.\nallergen info: Beef Free, Fish Free",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Thousand Island Dressing",
@@ -526,7 +701,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/177259_3-american-garden-dressing-thousand-island.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Thousand Island takes you on cooking adventures. Toss some zing into a summer salad, mix up a fast dip or make a new secrets marinade.\nweight: 267g,\nnon vegetarian",
+   "ingredients": "Vegetable oil, pickle relish (cucumbers, distilled vinegar, water, salt, xanthan gum, alum), high fructose corn syrup, water, cucumber juice, tomato paste, sugar, distilled vinegar, egg yolk, contains less than 2% of: salt, modified food starch, natural flavor, spices (catsup seasoning, allspice, ginger, mustard flour, turmeric), onion powder, propylene glycol alginate, xanthan gum, calcium disodium EDTA to protect flavor, caramel color.\nallergen info: Dairy",
+   "usageInstructions": "You can try your dressing for your favorite foods like Toast, Sandwiches, Chips, Crackers.",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "U.S. Ranch Dressing",
@@ -549,7 +731,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002139_3-american-garden-dressing-u-s-ranch-creamy-born-in-the-usa.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden products are completed to the highest U.S quality standards so you can feel free to split and get pleasure from your food with family and friends. It delivers amazing richness with least calories and fat.",
+   "ingredients": "Vegetable Oil (Soybean and / or Canola), Water, Distilled, Vinegar, Sugar, egg yolk, Buttermilk Solids, Contains less than 2% of : Salt, Garlic, Onion, Natural Flavor(Milk), Monosodium Glutamate, Phosphoric Acid, Sorbic acid, Xanthan gum, disodium Inosinate and disodium guanylate, Spice (Black pepper), beta Carotene, Calcium Disodium EDTA to protect flavor.",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Green Olives Sliced",
@@ -584,7 +772,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40131397-5_1-american-garden-olives-green-sliced-drained-158oz.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with American Garden's Sliced Green Olives. Carefully picked, sliced, and washed, these olives boast an exceptional flavour, texture, and colour that will delight your senses. Conveniently available for online ordering, you can now enjoy the versatility of these delectable olives without the hassle of visiting specialty stores. Ideal for snacking or enhancing the flavours of your meals, these pre-sliced olives are ready to use and offer a hassle-free shopping experience. Shelf-stable for up to 18 months and vegetarian-friendly, American Garden's Sliced Green Olives are a must-have addition to your pantry.",
+   "ingredients": "Green olives Sliced, water, salt, permitted colour retention agent (E 573) and acidifying agents",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Sodium": "1.5g",
+    "Carbohydrates": "1.5g",
+    "Protein": "0.5g"
+   },
+   "storageInstructions": "*Refrigerate after opening",
+   "manufacturerName": "#103",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Green Olives Pitted",
@@ -607,7 +808,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004904_2-american-garden-olives-pitted-green.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful taste and texture of American Garden Stuffed Green Olives. Carefully selected from Spain, where the perfect climate and cultivation expertise produce olives of exceptional quality, these green olives are a delicious source of antioxidants. With a positive effect on cholesterol levels and blood sugar control, they are a healthful addition to your diet. Perfectly pitted and packed for your convenience, these olives will elevate any savoury dish, from baked chicken to grilled salmon. Serve them as a flavourful appetiser with a squeeze of lemon, or incorporate them into your homemade bread for a unique twist. Savour the excellent flavour, colour, and culinary experience that American Garden Stuffed Green Olives provide.",
+   "ingredients": "Water, Green Olives Pitted, Salt, Acidity Regulator Latic Acid (E270)",
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA, Spain"
+  }
  },
  {
   "title": "Green Olives Stuffed",
@@ -642,7 +850,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004909-5_1-american-garden-olives-stuffed-green.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Stuffed Green Olives have excellent flavour, texture and colour. The olives come from Spain, where the weather, soil and cultivation expertise results in the production of quality olives. American Garden Stuffed Green Olives is a delicious source of antioxidants.",
+   "ingredients": "Green Olives, Water, Salt, Lactic Acid E270, Paprika Paste (Paprika, Sodium Alginate E401, Guar Gum E412, Calcium Chloride E509)",
+   "storageInstructions": "*Refrigerate after opening",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA, Spain"
+  }
  },
  {
   "title": "Green Olives Whole",
@@ -677,7 +892,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004907-5_2-american-garden-olives-whole-green.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Olives Are Awesome In Terms Of Quality; It Has Excellent Flavour, Texture, And Colour. Olives Can Be Used In Any Recipe, As It Makes Them Delicious And Healthy. American Garden Olives Can Be Used In Homes, Restaurants, And Hotels For The Preparation Of Many Kinds Of Food. American gareen whole olives are your perfect choice to add flavour to pasta sauces and sandwiches. They are also good to go on top of a pizza, salad, or the perfect plate of nachos. Carefully pitted and sliced.",
+   "ingredients": "Green olives, water, salt, acidity regulator:lactic acid (E270). in 4%brine (when packed). pasterurized treated olives.",
+   "storageInstructions": "*Refrigerate after opening",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA, Spain"
+  }
  },
  {
   "title": "Black Olives Pitted",
@@ -709,7 +931,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004905-4_3-american-garden-olives-pitted-black.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Olives Are Awesome In Terms Of Quality; It Has Excellent Flavour, Texture, And Colour. Olives Can Be Used In Any Recipe, As It Makes Them Delicious And Healthy. American Garden Olives Can Be Used In Homes, Restaurants, And Hotels For The Preparation Of Many Kinds Of Food. American Garden black olives pitted are pre-cooked, all you have to do is heat them up in microwave or boil them up in a pot. It's an ideal snack or accompaniment to any meal. American Garden black pitted olives are carefully picked to be of the in order to release an explosion of flavour that everyone will enjoy. Black olives stay longer on the tree, giving them the deeper colour, and less bitter taste than their green cousins.",
+   "ingredients": "Water, blackbened olive, salt, colour stabilizer: ferrous gluconate (E579)added to stabilize the colour.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "115 kcal",
+    "Fat": "11 g",
+    "Saturated Fat": "1.5 g",
+    "Carbohydrates": "4 g",
+    "Sugars": "0.5 g",
+    "Protein": "1 g",
+    "Salt": "3.5 g"
+   },
+   "storageInstructions": "*Refrigerate after opening"
+  }
  },
  {
   "title": "Black Olives Sliced",
@@ -741,7 +978,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004908-4_1-american-garden-olives-sliced-black.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Olives Are Awesome In Terms Of Quality; It Has Excellent Flavour, Texture, And Colour. Olives Can Be Used In Any Recipe, As It Makes Them Delicious And Healthy. American Garden Black Sliced Olives are your perfect choice to add flavour to pasta sauces and sandwiches. They are also good to go on top of a pizza, salad, or the perfect plate of nachos. Carefully pitted and sliced, they're a time-saver, so always keep them in your pantry to give your cooking that Mediterranean touch.",
+   "ingredients": "Blackened olives sliced, water, salt, colour stabiliser: ferrous gluconate (E579) added to stabilise colour in 2.5% Brine (when packed). Darkened by oxidation with alkaline treatment Sterilised product.",
+   "storageInstructions": "*Refrigerate after opening"
+  }
  },
  {
   "title": "Black Olives Whole",
@@ -776,7 +1018,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004906-5_1-american-garden-olives-whole-black.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with the exquisite flavour and texture of American Garden Stuffed Green Olives. Sourced from the renowned olive-growing regions of Spain, these olives boast an excellent flavour, vibrant colour, and firm yet delectable texture. Infused with a delightful spicy and flavourful taste, they make a versatile addition to a wide range of dishes, from salads and pasta to pizzas and more. Packed with antioxidants and known to have a positive effect on cholesterol and blood sugar levels, these olives are not only a delicious ingredient but also a healthful one. Discover the Mediterranean flair and exceptional quality of American Garden Stuffed Green Olives, a must-have for your kitchen pantry.",
+   "ingredients": "Blackened olives, water, salt, colour stabilizer: ferrous gluconate (E579) added to stabilize colour in 2.5% Brine (when packed). Darkened by oxidation with alkaline treatment",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Refrigerate after opening",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA, Spain"
+  }
  },
  {
   "title": "Chick Peas",
@@ -805,7 +1054,19 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017243-3_1-american-garden-chick-peas-classic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This can of ready-to-use classic chickpeas is a saviour when there's no time to cook. The easy-to-open can is convenient and available to use at any time whether you're cooking at home or out camping. Chickpeas are the most versatile ingredient which makes it a must-have for your pantry! With ready-to-use chickpeas always handy, you can experiment with a whole range of cuisines and relish a new dish every day. Chickpeas are also a great option when you're on a healthy diet and can be used to make a variety of healthy recipes. If you're a fan of hummus, you should add a can or to your cart already. Did you know that studies have found one portion of chickpeas helps to reduce bad cholesterol and keep heart disease at bay. They are also famous for their rich protein content and are a favourite meat substitute for vegetarians and vegans. Luckily, you can enjoy them in many tasty dishes. These chickpeas from American Garden come with the goodness of habanero and tabasco peppers to add an extra zing to your meal.",
+   "ingredients": "Chickpeas, water & salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "120 kcal",
+    "Protein": "8g",
+    "Carbohydrate": "19g",
+    "Sodium": "370mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place"
+  }
  },
  {
   "title": "Kidney Beans Dark Red",
@@ -840,7 +1101,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002136-5_1-american-garden-kidney-beans-dark-red.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden brings you a wide range of authentic foods from the United States and Around the World. Rich in flavour and texture, perfect for various dishes, high in protein and fibre, versatile ingredient for meals.",
+   "ingredients": "Red Kidney Beans, Water, Sugar, Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "130kcal",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "440mg",
+    "Total Carbohydrate": "19g",
+    "Dietary Fiber": "10g",
+    "Protein": "9g"
+   },
+   "storageInstructions": "*Store in a ventilated place",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA, UAE"
+  }
  },
  {
   "title": "Baked Beans in Tomato Sauce",
@@ -875,7 +1155,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100183390-5_1-american-garden-baked-beans-in-tomato-sauce.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your meals with AG Baked Beans, the perfect side dish that blends well-cooked beans in a rich, flavourful sauce. These premium quality beans offer a delicious continental taste, with a rich tomato sauce flavour that is high in protein and easy to prepare. Indulge in the perfect accompaniment to your savoury dishes, or enjoy them as a quick and satisfying meal on their own. With easy storage and a vegetarian option, AG Baked Beans are the ideal addition to your pantry, delivering a dash of continental flair to all your culinary creations.",
+   "nutritionalInfo": {
+    "Nutrition per": "130g",
+    "Energy": "130 kcal",
+    "Total Fat": "1 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "25 g",
+    "Total Sugars": "8 g",
+    "Dietary Fibre": "10 g",
+    "Sodium": "500 mg",
+    "Protein": "5 g"
+   },
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA,UAE"
+  }
  },
  {
   "title": "Foul Medammas",
@@ -913,7 +1211,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002134-6_1-american-garden-foul-mudammas-grade-a.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your everyday meals with the authentic taste and nourishing goodness of American Garden's Foul Medammas. This classic Middle-Eastern favourite is made with a healthy blend of premium fava beans, water and salt, delivering a delightful combination of fibre and rich proteins. Conveniently packaged in an easy-to-open tin, this versatile product can be elegantly incorporated into both traditional and modern dishes, making it a perfect choice for indoor cooking and outdoor picnics. Fava beans are renowned for their ability to boost immunity, improve bone health and aid in weight loss, making this a truly wholesome and nutritious addition to your pantry. Unlock the flavours of the Middle East and enjoy a delicious and satisfying meal with American Garden's Foul Medammas.",
+   "ingredients": "Premium Fava Beans (65%), Water & Salt, Sugar, Citric Acid (Acidifying Agent), Calcium Disodium Edta (E385) For Colour Retention, May Contain Traces Of Sesame",
+   "nutritionalInfo": {
+    "Nutrition Per": "130g",
+    "Serving Size": "130g",
+    "Energy": "100 kcal",
+    "Total Fat": "1g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Total Carbohydrate": "15g",
+    "Sugar": "1g",
+    "Dietary Fibre": "7g",
+    "Sodium": "430mg",
+    "Protein": "7g"
+   },
+   "storageInstructions": "* Store in a ventilated, dry place",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA, UAE"
+  }
  },
  {
   "title": "Sliced Jalapeno Pepper",
@@ -936,7 +1255,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/177139_3-american-garden-jalapeno-pepper-sliced.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with the bold and versatile flavour of American Garden Sliced Jalapeno Peppers. These perfectly sliced peppers are a must-have for adding a delightful kick to a variety of dishes. Ideal for exotic international salads, subway sandwiches, Tex-Mex favourites, and more, these peppers promise to boost the flavour profile of your culinary masterpieces. Conveniently sliced for easy incorporation, the peppers deliver a zing of spice without the intense burn, allowing you to fully savour their bold flavour. Whether tossing them into salads, stuffing tacos, or pairing them with fajitas and enchiladas, these peppers will become a staple in your kitchen, empowering you to unleash your creativity and experiment with new tastes and textures.",
+   "ingredients": "Jalapeno, pepper, water, olive extracts, salt, vinegar, turmeric, calcium chloride",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "16 kcal",
+    "Fat": "0.2 g",
+    "Saturated Fat": "0 g",
+    "Carbohydrate": "3.1 g",
+    "Sugars": "2.4 g",
+    "Fibre": "1.5 g",
+    "Protein": "0.7 g",
+    "Sodium": "5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "Mexico"
+  }
  },
  {
   "title": "Butter Microwave Popcorn",
@@ -974,7 +1311,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279194-6_1-american-garden-microwave-popcorn-butter.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Microwave Popcorn - Butter is a delicious, gluten-free, and vegetarian popcorn with a buttery flavour. It is quick and easy to prepare, taking just 3 minutes in the microwave. The popcorn is made with high-quality ingredients and contains Zero trans fats.",
+   "ingredients": "Corn, palm oil, salt, soy lecithin (E322), beta carotene (E160a)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "160 kcal",
+    "Total Fat": "8g",
+    "Saturated Fat": "4g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "320mg",
+    "Total Carbohydrates": "19g",
+    "Dietary Fiber": "3g",
+    "Sugars": "0g",
+    "Protein": "3g",
+    "Iron": "4%"
+   },
+   "storageInstructions": "*Store in a cool and dry place"
+  }
  },
  {
   "title": "Extra Butter Microwave Popcorn",
@@ -997,7 +1353,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017248_3-american-garden-popcorn-extra-butter.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Microwave Popcorn - Extra Butter Flavour 273 g is a delicious and convenient snack option. Made with high-quality popcorn kernels, it is infused with a rich, buttery flavour that will satisfy your cravings. The microwave-ready bag makes it easy to prepare, and the extra butter adds a indulgent touch. Enjoy this American Garden popcorn as a tasty treat or movie-time snack.",
+   "ingredients": "Popcorn, Palm Oil, Salt, Natural and artificial butter flavour, annatto (E160b), May contain Milk and Soy.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Cheese Microwave Popcorn",
@@ -1020,7 +1383,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/206458_4-american-garden-microwave-popcorn-cheese.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Microwave Popcorn Cheese is an ideal selection for cheese lovers. It is an entire grain pleasure that gives you high-quality carbohydrates for vitality and loads of fibre at an astonishingly low calorie count. This Microwave Popcorn is not only the ideal home activity snack but an all-time, everywhere snack too.",
+   "ingredients": "Popcorn, partially hydrogenated soybean oil, salt, natural and artificial cheddar cheese flavour",
+   "storageInstructions": "Store in a cool, dry place\nKeep away from direct heat or sunlight"
+  }
  },
  {
   "title": "Hot n Spicy Microwave Popcorn",
@@ -1043,7 +1411,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017249_3-american-garden-popcorn-hot-n-spicy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Microwave Popcorn - Hot n' Spicy is a delicious and convenient snack that can be enjoyed anytime. This popcorn is made with high-quality ingredients, including partially hydrogenated soybean oil, salt, natural and artificial butter flavour, and soy lecithin. The addition of beta-carotene provides a vibrant colour. This popcorn is suitable for those with milk and soy allergies.",
+   "ingredients": "Popcorn, Partially Hydrogenated SoyBean Oil, Salt, Naturally and Artificial Butter Flavour, Soy lecithinand beta, Carotene for colour (E160a)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "375 kcal",
+    "Protein": "8.2 g",
+    "Fat": "16.4 g",
+    "Saturated Fat": "2.7 g",
+    "Carbohydrate": "52.1 g",
+    "Sugars": "0.1 g",
+    "Sodium": "1.1 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place"
+  }
  },
  {
   "title": "Natural Microwave Popcorn",
@@ -1066,7 +1449,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002167_3-american-garden-microwave-popcorn-natural.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Garden Microwave Popcorn - Natural is a delicious and healthy snack option. Made with natural ingredients, it is gluten-free and vegetarian, with Zero trans fats and no artificial colours. This popcorn is perfect for movie nights, parties, or as a quick and satisfying snack. Enjoy the natural flavour and crunch of this microwave popcorn.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "360 kcal",
+    "Fat": "4.5 g",
+    "Saturated Fat": "0.5 g",
+    "Carbohydrate": "72 g",
+    "Sugars": "0 g",
+    "Dietary Fiber": "8 g",
+    "Protein": "10 g",
+    "Sodium": "5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Lite Natural Microwave Popcorn",
@@ -1107,7 +1505,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/206460-8_1-american-garden-microwave-popcorn-lite.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "American Gardens Microwave Popcorn Light enjoys the popcorn taste without any fancy flavor and hassle with the original light texture. It contains the natural flavors without any addition of ingredients, giving you a genuine and crunchy taste that will suit any pallet.",
+   "ingredients": "Popcorn, Partially, Hydrogenated Soybean Oil, Salt.",
+   "usageInstructions": "May Contain Milk",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  },
  {
   "title": "Lite Butter Microwave Popcorn",
@@ -1130,6 +1535,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017247_3-american-garden-popcorn-lite-butter-94-fat-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Complete your at-home movie experience with this satisfying carton of ready-to-make popcorn from American Garden. You'll never miss cinema hall popcorn again! This Lite Butter pack is 94 per cent fat-free so you can munch away and not worry about the calories. Doesn't that sound like the ultimate combination of flavour and fun? You won't even have to be away from your TV for too long because this ready-to-make popcorn from American Garden takes just three minutes to be ready.\nAnd you have to do nothing because all the seasoning and flavour is already there. Just pop it into the microwave or a pan if you're cooking on the stove and you'll have yummy popcorn ready in 3 minutes flat. Dive into your tub of popcorn and relish the buttery goodness in all its glory guilt-free! Just because it's 94 per cent fat-free doesn't mean it compromises on the heaven that is the taste of butter. It's also very rich in fibre so you won't be snacking in vain. So get those movie marathons going because the snacking is sorted courtesy American Garden. This is a Vegetarian product and has no added MSG.",
+   "ingredients": "Popcorn, Partially Hydrogenated SoyBean Oil, Salt, Natural & Artificial Cheddar Cheese Flavour, Soy Leclithin, Yellow #5 (E102) and #6 (E110), Beta Carotene Color (E160a), Contains Milk and Soy.",
+   "nutritionalInfo": {
+    "Per serving of 2 Tablespoon, unpopped, 33g Calories": "125 Total Fat: 2.5g Sodium: 330mg Carbohydrate: 22g Iron: 4%* Vitamin A: 2%* *% Daily Values are based on 2,000 calorie diet"
+   },
+   "usageInstructions": "Remove the plastic cover and unfold the bag, Place bag Instruction SIDE UP in centre of Oven, Microwave on High (full power) for 2 to 3 minutes,\nListen carefully stop microwave when popping slows to 1 to 2 seconds between pops, Be careful not to overcook as popcorn will scorch,\nHandle hot bag carefully, For optimum flavour, Shake bag before opening, Open by tugging to diagonal corners.",
+   "manufacturerName": "American Garden Co",
+   "countryOfOrigin": "USA"
+  }
  }
 ]

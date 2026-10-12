@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40007055_3-dalda-mustard-oil-kachi-ghani.jpg"
-    }
+    },
+    "barcode": "8906014646529"
    },
    {
     "title": "5L",
@@ -50,7 +51,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007055-8_1-dalda-mustard-oil-kachi-ghani.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dalda 'Kachi Ghani' Mustard Oil is your trusted kitchen partner. With a strong aroma, elevated pungency level, and an authentic mustard flavour, this pure Kachi Ghani Mustard oil will enhance your cooking experience and add a unique flavour to your food. High in MUFA, omega-3, and unsaturated fats, Dalda Kachi Ghani Mustard Oil is the perfect blend of flavour and health.",
+   "ingredients": "Kachi Ghani Mustard Oil, Vitamin A And Vitamin D.",
+   "manufacturerName": "Bunge India Private Limited",
+   "fssaiLicense": "10013022002173",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kachi Ghani Mustard Oil Pouch",
@@ -66,7 +74,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40006865_6-dalda-kachi-ghani-mustard-oil.jpg"
-    }
+    },
+    "barcode": "8906014646574"
    }
   ],
   "images": [
@@ -88,7 +97,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006865-6_3-dalda-kachi-ghani-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dalda 'Kachi Ghani' Mustard Oil is your trusted kitchen partner. With a strong aroma, elevated pungency level, and an authentic mustard flavour, this pure Kachi Ghani Mustard oil will enhance your cooking experience and add a unique flavour to your food. High in MUFA, omega-3, and unsaturated fats, Dalda Kachi Ghani Mustard Oil is the perfect blend of flavour and health.",
+   "ingredients": "Kachi Ghani Mustard Oil, Vitamin A And Vitamin D.",
+   "manufacturerName": "es And Their",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022002173"
+  }
  },
  {
   "title": "Refined Groundnut Oil",
@@ -141,7 +157,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006864-8_1-dalda-refined-groundnut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dalda Refined Groundnut Oil is made from good quality groundnuts.\nThe groundnut oil is enriched with Vitamin A, D & E.\nIt is extracted from groundnuts sourced from the best farms.\nIt improves HDL levels (healthy body cholesterol) and helps decrease the risk of heart disease.\nIt is light and contain all the essential nutrients. It is ideal for deep frying as it has a high smoking point.\nThe oil has a strong peanut flavour and aroma.\nBenefits:\nIt is made from good quality groundnuts. \nIt provides high MUFA and helps decrease the risk of heart disease. \nIt is enriched with Vitamin A, D & E. \nIt is ideal for deep frying as it has a high smoking point and is light. \nIt is also known as multipurpose oil.",
+   "ingredients": "Groundnut oil.",
+   "manufacturerName": "BUNGE INDIA PVT LTD",
+   "countryOfOrigin": "India",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "10g",
+    "Energy": "900 kcal",
+    "Fat": "100 g",
+    "Saturated Fat": "25 g",
+    "Trans Fat": "1g",
+    "Mono Unsaturated Fat": "48 g",
+    "Poly Unsaturated Fat": "26 g",
+    "Linoleic (Omega 6) Fat": "26 g",
+    "Alpha - Linolenic (Omega 3) Fat": "0g",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Sodium": "0 mg",
+    "Added Vitamin A": "750 °g RE",
+    "Added Vitamin D": "11.25 °g",
+    "Vitamin E": "10 mg"
+   },
+   "storageInstructions": "Store in a dry place away from heat and sunlight. \nIt is most generally used when frying foods and extra preparations. \nUse a suitable amount for cooking your favourite dish."
+  }
  },
  {
   "title": "Refined Soyabean Oil",
@@ -157,7 +200,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40006863_3-dalda-refined-soyabean-oil.jpg"
-    }
+    },
+    "barcode": "8906014646642"
    },
    {
     "title": "4.2kg",
@@ -191,7 +235,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006861_5-dalda-refined-soyabean-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Full of vitamins A, D, and E, Dalda Refined Soyabean Oil from the house of Dalda is a premium quality product. It is one of your best culinary companions in the kitchen. It is a healthy cooking oil that contains high amounts of PUFA, rich in omega-3 unsaturated fats and vitamins A, D, and E.",
+   "ingredients": "Refined Soyabean Oil, Antioxidant (E319), Vitamin A And Vitamin D.",
+   "manufacturerName": "es And Their",
+   "fssaiLicense": "10013022002173",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Refined Sunflower Oil",
@@ -207,7 +258,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40006862_4-dalda-refined-imported-sunflower-oil.jpg"
-    }
+    },
+    "barcode": "8906014646673"
    },
    {
     "title": "4.2kg",
@@ -238,7 +290,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006866_4-dalda-refined-imported-sunflower-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Refined sunflower oil is a versatile cooking oil extracted from sunflower seeds. Known for its light texture and neutral flavour, it is suitable for a wide range of culinary applications, including frying, baking, and salad dressings. Its high smoke point makes it ideal for high-temperature cooking, ensuring that food retains its natural taste and quality. Widely used in kitchens around the world, refined sunflower oil is valued for its versatility and ability to enhance various dishes.",
+   "ingredients": "Refined Sunflower Oil, Antioxidant (E319), Vitamin A And Vitamin D.",
+   "manufacturerName": "es And Their",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022002173"
+  }
  },
  {
   "title": "Vanaspati",
@@ -300,6 +359,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006893_3-dalda-vanaspati.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the rich, aromatic flavour of Dalda Vanaspati, the perfect versatile and convenient substitute for ghee. Crafted from high-quality ingredients and processed to perfection, this trusted brand with a 75-year legacy elevates any dish with its authentic taste and aroma. Whether frying, baking, or cooking traditional Indian recipes, Dalda Vanaspati is the ideal choice, adding richness and flavour to a variety of dishes. Elevate your cooking with the consistent quality and performance of this time-tested product, perfect for deep frying and all your cooking needs.",
+   "ingredients": "INTERESTERIFIED PALM OIL, TIL OIL, VITAMIN A and VITAMIN D",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "10 g",
+    "Energy": "900 kcal",
+    "Fat": "100 g",
+    "Saturated Fat (Not More Than)": "62 g",
+    "Trans Fat (Not More Than)": "1 g",
+    "Mono Unsaturated Fat": "30 g",
+    "Poly Unsaturated Fat": "7 g",
+    "of which Omega 6 Fat": "7 g",
+    "of which Omega 3 Fat": "0 g",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added sugars": "0 g",
+    "Sodium": "0 mg",
+    "Vitamin A": "750 mcg / 2500 IU",
+    "Vitamin D": "5 mcg / 200 IU"
+   },
+   "storageInstructions": "Store in a cool and dry place, away from direct sunlight"
+  }
  }
 ]

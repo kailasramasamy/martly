@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549_10-safe-harvest-khandsari-sugar-pesticide-free.jpg"
-    }
+    },
+    "barcode": "8903794504100"
    }
   ],
   "images": [
@@ -41,6 +42,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40004549-8_1-safe-harvest-khandsari-sugar-pesticide-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "100% Chemical and Sulphur - Free. Physically extracted from liquid jaggery by the traditional method. Unrefined, natural and sourced from small farmers in Uttarakhand.Safe Harvest Unrefined Khandsari Sugar retains its natural molasses for a rich, caramel-like sweetness and Ayurvedic benefits.Tested for 231+ pesticides, heavy metals, and aflatoxins, ensuring purity and safety from farm to kitchen.",
+   "ingredients": "Pesticide free Khandsari Sugar",
+   "nutritionalInfo": {
+    "Energy (kcal)": "398.6",
+    "Carbohydrate (g)": "99.65",
+    "Total Sugars (g)": "99.49",
+    "Saturated Fat (g)": "<0.0",
+    "Trans Fat (g)": "<0.0",
+    "Sodium (mg)": "0.3"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Safe Harvest Pvt Ltd",
+   "fssaiLicense": "10021047000004",
+   "countryOfOrigin": "India"
+  }
  }
 ]

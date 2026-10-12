@@ -59,7 +59,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011512_6-figaro-extra-virgin-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Figaro is the oldest olive oil brand in India with a 100-year legacy. We are committed to quality and health, and thus we are constantly evolving to bring you a superior olive oil experience. Every bottle of Figaro comes with an assurance of purity - only the finest quality olives are used, and great care is taken to ensure that the oil retains all its nutritional benefits. Enriched with the goodness of Vitamin E, every drop of our healthy olive oil is pure and primed. Figaro olive oils are also beneficial for reducing cholesterol levels and maintaining the cardio-circulatory system. Matters of the heart are just better with Figaro Olive Oil. But that’s not all!\nFrom maintaining a healthy heart to helping you shed those extra pounds, our oils are cold extracted without any harmful additives like Argemone oil, so you can rest assured that they are the perfect dietary addition for your most precious people. The best part is that it can enrich all your healthy diets with the refreshing taste and fragrance of traditional Olives, from garnishing some Tomato Soup, grinding up some fresh Green Chutney, experimenting with a new Greek Salad, or marinating some tender Chicken Tikka for a house party. So whether you’re planning a perfect meal with the delectable aroma of fresh olives or worried about the risks of diabetes, you know you can trust Figaro Extra Virgin Olive Oil to make it right.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "15ml",
+    "Energy": "821 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "91g",
+    "Saturated Fat": "15g",
+    "Monounsaturated Fat": "70g",
+    "Polyunsaturated Fat": "6g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg"
+   },
+   "manufacturerName": "Deoleo Global Sau Ctra N-Iv Km 388 14610 Alcolea (Cordoba)- Spain",
+   "fssaiLicense": "12819008000130",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Extra Light Tasting Olive Oil",
@@ -130,7 +152,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297667-8_1-figaro-extra-light-tasting-olive-oil-ideal-for-indian-cooking-suitable-for-deep-frying.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your Indian cooking with Figaro's Extra Light Olive Oil - the perfect choice for high-heat cooking, deep frying, and more. This heart-conscious superfood is refined to remove any strong taste, allowing the natural flavours of your dishes to shine through. Packed with healthy monounsaturated fats and Zero trans fats, Figaro's Extra Light Olive Oil is a trusted, versatile cooking companion that has been celebrated for over a century. Upgrade your kitchen with this light-tasting, flavour-neutral oil that can seamlessly substitute any regular cooking oil without altering the taste of your food.",
+   "ingredients": "Edible Olive Oil.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "15ml (1tbsp)",
+    "ENERGY": "821 kcal",
+    "PROTEIN": "0g",
+    "CARBOHYDRATE": "0g",
+    "TOTAL SUGARS": "0g",
+    "ADDED SUGARS": "0g",
+    "TOTAL FAT": "91g",
+    "SATURATED FAT": "14g",
+    "MONOUNSATURATED FAT": "69g",
+    "POLYUNSATURATED FAT": "8g",
+    "TRANS FAT": "0g",
+    "CHOLESTEROL": "0 mg",
+    "SODIUM": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Deoleo Global",
+   "fssaiLicense": "12819008000130",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Multi-Purpose Pure Olive Oil",
@@ -146,7 +192,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874_12-figaro-pure-olive-oil.jpg"
-    }
+    },
+    "barcode": "8410125246351"
    },
    {
     "title": "50ml",
@@ -237,6 +284,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100140874-8_1-figaro-pure-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Figaro Olive Oil is an excellent all-purpose edible oil loaded with the goodness of pure olives. It has multiple health benefits - rich source of Vitamin E, full of antioxidants, maintains cardio-circulatory system, regulates cholesterol level. It is suitable for all types of cooking. It is free from Argemone Oil.",
+   "nutritionalInfo": {
+    "Energy": "900 kcal (6% RDA*)",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g (0% RDA)",
+    "Total Fat": "100 g (21% RDA)",
+    "Saturated Fat": "16 g (10% RDA)",
+    "Trans Fat": "0 g (0% RDA)",
+    "Sodium": "0 mg (0% RDA)",
+    "Omega 3": "0.7 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Deoleo Global Sau Ctra N-IV Km 388 14610 Alcolea (Cordoba)",
+   "fssaiLicense": "12819008000130",
+   "countryOfOrigin": "Spain"
+  }
  }
 ]

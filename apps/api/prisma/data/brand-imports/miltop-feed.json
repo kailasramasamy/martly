@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40047906_3-miltop-jaggery-powder.jpg"
-    }
+    },
+    "barcode": "8902929009688"
    }
   ],
   "images": [
@@ -41,7 +42,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40047906-8_1-miltop-jaggery-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the remarkable benefits of jaggery, a natural sweetener that offers a healthier alternative to traditional sugar. Jaggery's ability to cleanse the body, aid digestion, and provide essential nutrients makes it a versatile and nutritious addition to your kitchen. Processed hygienically, this unrefined cane sugar is rich in minerals and offers a unique, caramelized flavour that can elevate your cooking and baking. Whether you're looking to sweeten your food in a more wholesome way or simply explore the versatility of this traditional ingredient, jaggery is a must-try for health-conscious consumers. Embrace the goodness of this natural sweetener and experience its transformative power in your culinary creations.",
+   "ingredients": "Jaggery",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "355 Kcal",
+    "Protein": "1.0 g",
+    "Carbohydrates": "87.4 g",
+    "Sugar": "85.0 g",
+    "Fat": "0.1 g",
+    "Iron": "17.0 mg",
+    "Phosphorus": "32.0 mg",
+    "Calcium": "23.0 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place, away from heat and preferably under refrigeration\nReplace lid tightly after use",
+   "manufacturerName": "Miltop Exports",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Jaggery Cane",
@@ -85,7 +104,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363296-8_1-miltop-natural-jaggery-cane.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A natural form of sweetener and a healthy alternative to sugar, Natural Jaggery is rich in molasses and contains trace minerals like iron. Jaggery can be used in recipes, including baked goods and desserts like puddings, ice cream, and chocolate sauce.",
+   "ingredients": "Concentrated Sugarcane Juice",
+   "manufacturerName": "Miltop Exports",
+   "fssaiLicense": "10018021003386",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kolhapuri Jaggery",
@@ -101,7 +127,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40363295_2-miltop-kolhapuri-jaggery.jpg"
-    }
+    },
+    "barcode": "8902929006212"
    },
    {
     "title": "900g",
@@ -138,7 +165,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363295-8_1-miltop-kolhapuri-jaggery.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the sweet taste of authentic Kolhapuri Jaggery,\nmade from the finest sugarcane. It is completely natural and free from any\nchemicals. It has a rich, golden-brown colour and a unique flavour. Jaggery is\nknown for its medicinal properties and is often used in Ayurvedic medicines to\ntreat various ailments.",
+   "ingredients": "Concentrated Sugarcane Juice",
+   "manufacturerName": "Miltop Exports",
+   "fssaiLicense": "10018021003386",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cube Jaggery",
@@ -154,7 +188,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40047890_2-miltop-cube-jaggery.jpg"
-    }
+    },
+    "barcode": "8902929008292"
    }
   ],
   "images": [
@@ -182,6 +217,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40047890-8_1-miltop-cube-jaggery.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the remarkable benefits of our premium jaggery, crafted from the finest selected sugarcane and processed in hygienic conditions. This natural sweetener is rich in iron and antioxidants, making it a healthier alternative to refined sugar. Enjoy the deep, caramelized flavour of jaggery in your curries, desserts, and more. Jaggery's unique properties make it a versatile ingredient that can cleanse your body, aid digestion, and provide essential minerals. Embrace the goodness of this unrefined, wholesome sweetener and elevate your culinary experiences with its distinctive taste and texture.",
+   "ingredients": "Concentrated Sugar cane juice",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "355 Kcal",
+    "Protein": "1.0 g",
+    "Carbohydrates": "87.4 g",
+    "Sugar": "85.0 g",
+    "Fat": "0.1 g",
+    "Iron": "17.0 mg",
+    "Phosphorus": "32.0 mg",
+    "Calcium": "23.0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place, away from direct sunlight",
+   "manufacturerName": "Miltop Exports",
+   "countryOfOrigin": "India"
+  }
  }
 ]

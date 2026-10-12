@@ -77,7 +77,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011515_7-bertolli-classico-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Bertolli's Classico olive oil, the world's no. 1 olive oil brand. Established in 1865 in Tuscany, Bertolli is committed to providing high-quality, pure and natural olive oil rich in omega-9 unsaturated fats that help regulate the cardiovascular system. Reimagine your cooking with this versatile oil, offering a perfect blend of light flavour and rich aroma. Ideal for sautéing, frying, grilling, drizzling over salads or dishes, it enhances your recipes effortlessly. Elevate your culinary creations with this premium oil and savour the difference in every bite. Bring the taste of Tuscany to your kitchen today.",
+   "ingredients": "Olive Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "15 ml (1 TABLESPOON)",
+    "Energy": "821 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0 g",
+    "Total sugars": "0g",
+    "added sugars": "0g",
+    "Total Fat": "91 g",
+    "saturated fat": "13 g",
+    "trans fat": "0g",
+    "cholesterol": "0 mg",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "Deoleo Global",
+   "countryOfOrigin": "Deoleo India Pvt Ltd. Dbs Business Cnt., Gr. Flr, 'B Wing' , Kanakia Wall St, Chakala, Mumbai - 400093, India<br> FSSAI:12819008000130<br> Country of Origin: India <br>Best Before 12-10-2027.",
+   "fssaiLicense": "12819008000130"
+  }
  },
  {
   "title": "Extra Virgin Olive Oil",
@@ -127,7 +149,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011501_11-bertolli-extra-virgin-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the exquisite flavour and aroma of over 150 years of award-winning heritage with Bertolli Olive Oils. Each batch of Bertolli Extra Virgin Olive Oil is First Cold Pressed, ensuring the purest quality that meets the highest standards of taste, fragrance and nutrition. Authentically Italian Bertolli Extra Light Olive Oil adds a delicate fresh flavour to soups, pastas, salads and more, with a robust flavour profile for culinary excellence. Ideal for dressings, drizzling, and enhancing dishes, Bertolli Olive Oils are ecologically packaged to minimise harm to the environment and prevent spoiling. Enjoy the exotic sensibility of fresh olives, the superior taste and low acidity, and the authentic flavour of the Mediterranean in your Indian cuisines and beyond.",
+   "ingredients": "Extra Virgin Olive Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "15 ml",
+    "Energy": "821 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total sugars": "0 g",
+    "added sugars": "0 g",
+    "Total Fat": "91 g",
+    "saturated fat": "13 g",
+    "trans fat": "0 g",
+    "cholesterol": "0 mg",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Deoleo Global",
+   "fssaiLicense": "12819008000130",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Extra Light Tasting Olive Oil",
@@ -143,7 +187,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40011504_7-bertolli-extra-light-olive-oil.jpg"
-    }
+    },
+    "barcode": "8002470032255"
    }
   ],
   "images": [
@@ -165,7 +210,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011504-6_1-bertolli-extra-light-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the exquisite flavour and aroma of over 150 years of award-winning heritage with Bertolli Olive Oils. Thus, each batch of Bertolli Olive Oil is cold-pressed to meet the standards of taste, fragrance and nutrition. Not to mention, every container is ecologically packaged to minimize harm to the environment. Besides its many well-known health benefits, Extra Light Tasting Olive Oil has just a subtle hint of olive flavour that makes it a better substitute for Indian cooking compared to other plain vegetable oils. Use it in that heavenly Italian Pasta or mouth-watering Bhendi Tadka, fry up some crispy Kachoris, or even some dreamy golden Gujiyas, the possibilities are just limitless with Bertolli Extra Light Tasting Olive Oil that comes in 2 Litre, 1 Litre and 500 ml bottle.",
+   "ingredients": "Edible Olive Oil",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "15ml",
+    "Energy": "821 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "91 g",
+    "Saturated Fat": "13 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from light",
+   "manufacturerName": "Deoleo Global",
+   "countryOfOrigin": "Deoleo India Pvt Ltd. Dbs Business Cnt., Gr. Flr, 'B Wing' , Kanakia Wall St, Chakala, Mumbai - 400093, India<br> FSSAI:12819008000130<br> Country of Origin: India <br>Best Before 12-10-2027.",
+   "fssaiLicense": "12819008000130"
+  }
  },
  {
   "title": "Dress & Drizz Cold Extracted Extra Virgin Olive Oil",
@@ -181,7 +248,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40366620_1-bertolli-dress-drizz-cold-extracted-extra-virgin-olive-oil.jpg"
-    }
+    },
+    "barcode": "8002470033467"
    }
   ],
   "images": [
@@ -209,7 +277,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366620-8_1-bertolli-dress-drizz-cold-extracted-extra-virgin-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "From the world’s No. 1 olive oil brand, Bertolli Dress & Drizz is crafted for modern kitchens that value both taste and convenience. Made from carefully cold-extracted extra virgin olive oil, it delivers a rich Mediterranean flavour in every drop. The smart dual-function bottle allows you to dress salads with precision or drizzle effortlessly over finished dishes. Its ergonomic and stylish design ensures controlled pouring with no mess, making everyday cooking simpler and more enjoyable.\nPerfect for salads, vegetables, dips, and finishing touches.",
+   "ingredients": "Extra Virgin Olive Oil",
+   "nutritionalInfo": {
+    "Energy": "900 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "100 g",
+    "Saturated Fat": "16 g",
+    "Trans Fat": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "Store tightly capped in a cool dry place away from light.\nThis product may become cloudy at around 10 °c, this has no impact on the quality.",
+   "manufacturerName": "Deoleo Global S.A.U",
+   "fssaiLicense": "10016022004983",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Indian Cooking Olive Oil",
@@ -262,6 +349,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011507_12-bertolli-extra-light-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the exquisite flavour and aroma of over 150 years of award-winning heritage with Bertolli Olive Oils. Each batch is cold-pressed to meet the highest standards of taste, fragrance, and nutrition. This Extra Light Tasting Olive Oil has a subtle hint of olive flavour, making it a versatile choice for a wide range of cooking, from delectable Italian pasta dishes to mouthwatering Indian curries and crispy fried snacks. Mild and delicate in taste, it is ideal for high-heat cooking, maintaining the original flavours of your ingredients. Enriched with vitamin E and cholesterol-free, this light and easily digestible oil is a healthier alternative to traditional vegetable oils. Ecologically packaged to minimise environmental impact, Bertolli Olive Oil offers endless culinary possibilities, from savouring to sautéing, for a truly exceptional cooking experience.",
+   "nutritionalInfo": {
+    "Energy": "900 kcal (6% RDA*)",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g (0% RDA)",
+    "Total Fat": "100 g (21% RDA)",
+    "Saturated Fat": "16 g (10% RDA)",
+    "Monounsaturated Fat": "75 g",
+    "Trans Fat": "0 g (0% RDA)",
+    "Sodium": "0 mg (0% RDA)",
+    "Omega 3": "0.7 g",
+    "Omega 6": "8.9 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Deoleo Global",
+   "fssaiLicense": "12819008000130",
+   "countryOfOrigin": "Spain"
+  }
  }
 ]

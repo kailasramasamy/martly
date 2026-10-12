@@ -68,7 +68,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076067_2-engine-kachi-ghani-mustard-oil-grade-1.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A range of quality Kacchi Ghani Mustard Oil Agmark Grade-1, that has more antioxidants and vitamins than any other normal oil. It is very helpful in preventing early ageing and is cholesterol free. It heart friendly cooking oil.",
+   "ingredients": "Mustard oil (100%) FREE FROM ARGEMONE OIL",
+   "storageInstructions": "Ready to use for frying and cooking. Store in a dry and hygienic place away from heat and light in a air tight container.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Vitamin E": "31mg",
+    "Saturated Fatty Acids": "5g",
+    "Trans Fatty Acids": "0g",
+    "Mono - Unsaturated Fatty Acids": "63.7g",
+    "Poly - Unsaturated Fatty Acids": "31.3g",
+    "Calories": "892.7 Kcal",
+    "Total Fat Content": "100g",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Cholesterol": "0mg",
+    "Vitamin A": "750mcg (2500 I.U.)",
+    "Vitamin D": "11.25mcg(450 I.U.)"
+   },
+   "manufacturerName": "Super Market Grocery Supplies PVT Ltd D No",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kachi Ghani Mustard Oil Pouch",
@@ -84,7 +106,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40059444_2-engine-kacchi-ghani-mustard-oil.jpg"
-    }
+    },
+    "barcode": "8906020930124"
    }
   ],
   "images": [
@@ -103,7 +126,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40059444-5_1-engine-kacchi-ghani-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A range of quality Kacchi Ghani Mustard Oil Agmark Grade-1, that has more antioxidants and vitamins than any other normal oil. It is very helpful in preventing early ageing and is cholesterol free. It heart friendly cooking oil.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "892.7 Kcal",
+    "Total Fat Content": "100 g",
+    "Saturated Fatty Acids": "05 g",
+    "Trans Fatty Acids": "0g",
+    "Mono-Unsaturated Fatty Acids": "63.7 g",
+    "Poly-Unsaturated Fatty Acids": "31.3 g",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Cholesterol": "0 mg",
+    "Vitamin A": "750mcg (2500 I.U.)",
+    "Vitamin D": "11.25mcg (450 I.U.)",
+    "Vitamin E": "31 mg"
+   },
+   "storageInstructions": "Ready to use for frying and cooking. Store in a cool and dry place away from heat and light",
+   "manufacturerName": "HARI OIL & GENERAL MILLS",
+   "countryOfOrigin": "India",
+   "ingredients": "Mustard oil (100%)"
+  }
  },
  {
   "title": "Groundnut Filter Oil",
@@ -138,7 +183,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202818-5_1-engine-groundnut-filter-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Engine Groundnut Filter Oil is prepared with the finest seed through a cold filtration process. Kachi Ghani/ Filter oils are obtained through traditional filtration methods, without the use of chemicals. This process preserves the nutrients and original taste of the oil. It adds a unique flavour to your food and is generally darker in shade with a strong smell of groundnut seeds.\nFilter Groundnut oil has a high smoke point which makes it ideal for high-temperature cooking. It is free from cholesterols and thus good for your heart health, also, it helps you maintain blood sugar levels.",
+   "storageInstructions": "Store in a cool,dry place",
+   "ingredients": "Groundnut Oil with Vitamin A & Vitamin D2.",
+   "manufacturerName": "Shree Hari Industries (Hari Oil Mills)",
+   "fssaiLicense": "10012013000119",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Til Sesame Oil",
@@ -173,6 +226,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40104061-5_2-engine-oil-tilsesame.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sesame oil is a popular edible oil that adds a rich, nutty flavour to many dishes. If used properly and in moderation (as it is high in omega-6 fats), this oil can provide certain health benefits.",
+   "ingredients": "Til Oil ()",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "900 Kcal",
+    "Omega 6 (LA)": "45% PUFA",
+    "MUFA": "41%",
+    "Vitamin E": "29.5 mg",
+    "SFA": "14%",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "NIL",
+    "Protein": "NIL",
+    "Omega 3 (ALA)": "NIL",
+    "TFA": "NIL"
+   },
+   "storageInstructions": "Store in a dry and hygienic place away from heat and light\nKeep in an airtight container",
+   "manufacturerName": "HARI OIL & GENERAL MILLS",
+   "countryOfOrigin": "India"
+  }
  }
 ]

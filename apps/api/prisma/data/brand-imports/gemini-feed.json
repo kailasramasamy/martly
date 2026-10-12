@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/274132_19-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
-    }
+    },
+    "barcode": "8907970002169"
    },
    {
     "title": "4.2kg",
@@ -50,7 +51,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/274132-8_1-gemini-sunflower-oil-with-nutri-fresh-technology.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Gemini Sunflower Oil comes with Nutri Fresh Lock Technology that helps to retain the nutrients and freshness of your food for a long time, unlocking time for you to chase your dreams. Perfect for everyday cooking needs, it guarantees freshness and purity in every drop, making it a smart choice for your kitchen and well-being.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "5g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "100g",
+    "Saturated Fatty Acids": "16g",
+    "Monounsaturated Fatty Acids": "40g",
+    "Polyunsaturated Fatty Acids": "67g",
+    "Trans Fatty Acids": "1g",
+    "Sodium": "0mg",
+    "Added Vitamin A RE##": "750 mcg",
+    "Added Vitamin D": "11.25 mcg",
+    "Natural Vitamin E": "30mg",
+    "Cholesterol": "0mg",
+    "% RDA per Serve": "23"
+   },
+   "manufacturerName": "Cargill India Pvt. Ltd",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pureit Refined Sunflower Oil",
@@ -66,7 +93,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929_5-gemini-pureit-refined-sunflower-oil.jpg"
-    }
+    },
+    "barcode": "8906006330283"
    },
    {
     "title": "4.35kg",
@@ -103,7 +131,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40300929-8_1-gemini-pureit-refined-sunflower-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Unlock the boundless potential of your cooking with India's No. 1 sunflower oil, Gemini Pureit Refined Sunflower Oil. Ranked number 1 in quality by the Government of India-recognised Consumer Voice testing organisation, this exceptional oil comes equipped with NutriFreshLock technology to retain the freshness and nutrients of your food for longer, giving you more time to chase your dreams. Enriched with essential vitamins A, D, and E, this versatile oil is ideal for all your cooking and frying needs, delivering a delightful flavour and texture to your culinary creations. Experience the difference of India's finest sunflower oil, trusted by households across the country.",
+   "ingredients": "Refined Sunflower Oil, Antioxidant (INS 319), Vitamins (A, D), Antifoaming Agent (INS 900a)\nSaturated Fatty Acids may vary by Season, Region, Seed, Crop etc.",
+   "nutritionalInfo": {
+    "Energy": "900 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "100 g",
+    "(NMT***)": "67 g",
+    "Trans Fatty Acids (NMT***)": "2 g",
+    "Sodium": "0 mg",
+    "Added Vitamin A (RE)": "750 mcg",
+    "Added Vitamin D": "11.25 mcg*",
+    "Natural Vitamin E": "30 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Store in a dry and hygienic place away from heat and light",
+   "manufacturerName": "Cargill India Pvt. Ltd",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Refined Soyabean Oil",
@@ -119,7 +170,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/274152_11-gemini-refined-soyabean-oil-with-nutri-v.jpg"
-    }
+    },
+    "barcode": "8906006330153"
    },
    {
     "title": "4.2L",
@@ -156,7 +208,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/274152-8_1-gemini-refined-soyabean-oil-with-nutri-v.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Gemini Soyabean Oil is a PUFA-rich oil with Omega 6. It is enriched with vitamins A, D, and E. Vitamin A is essential for the immune system, vitamin D controls calcium and phosphorus in the human body and is required for optimal health, and vitamin E supports overall well-being.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "5g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "100g",
+    "Saturated Fatty Acids": "21g",
+    "Monounsaturated Fatty Acids": "39g",
+    "Polyunsaturated Fatty Acids": "64g",
+    "Trans Fatty Acids": "2g",
+    "Sodium": "0mg",
+    "Added Vitamin A RE##": "750 mcg",
+    "Added Vitamin D": "11.25 mcg",
+    "Natural Vitamin E": "30mg",
+    "Cholesterol": "0mg"
+   },
+   "manufacturerName": "CARGIL INDIA PRIVATE LIMITED Y-65",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Filtered Groundnut Oil",
@@ -172,7 +249,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608_5-gemini-filtered-groundnut-oil.jpg"
-    }
+    },
+    "barcode": "8906006330665"
    },
    {
     "title": "4.35kg",
@@ -209,7 +287,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197608-8_1-gemini-filtered-groundnut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Gemini Filtered Groundnut Oil is 100% Pure Groundnut oil extracted from groundnuts sourced from the best farms in Gujarat. It has a distinct sweet aroma and taste and comes with zero cholesterol.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "5g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "100g",
+    "Saturated Fatty Acids": "26g",
+    "Monounsaturated Fatty Acids": "60g",
+    "Polyunsaturated Fatty Acids": "35g",
+    "Trans Fatty Acids": "1g",
+    "Sodium": "0mg",
+    "Cholesterol": "0mg"
+   },
+   "manufacturerName": "Cargill India Pvt Ltd Y-65 Ground Floor Hauz Khas New Delhi-110016",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Refined Groundnut Oil",
@@ -225,7 +325,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143_7-gemini-refined-groundnut-oil.jpg"
-    }
+    },
+    "barcode": "8906006330733"
    }
   ],
   "images": [
@@ -253,7 +354,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000143-8_1-gemini-refined-groundnut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the pure, wholesome goodness of Gemini Refined Groundnut Oil, sourced from the finest farms of Gujarat. Enriched with the nourishing power of Vitamins A, D, and E, this versatile cooking oil not only enhances the flavour and aroma of your culinary creations but also supports your overall health and well-being. Vitamin A strengthens your immune system, while Vitamin D regulates calcium and phosphorus levels. The antioxidant-rich Vitamin E helps prevent skin issues like acne, dryness, and premature ageing. Whether you're frying, sautéing, or baking, Gemini Refined Groundnut Oil adds a delightful, nutty flavour that will elevate your favourite dishes. Enjoy the pure, sustainable, and vegetarian goodness of Gujarat in every drop.",
+   "ingredients": "Edible Vegetable Oil (Groundnut Oil), Vitamins (A,E,D), Antifoaming Agent (Dimethyl Polysiloxane)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "7.5g",
+    "Energy": "900 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "100 g",
+    "Saturated Fatty Acids": "26 g",
+    "Monounsaturated Fatty Acids": "67 g",
+    "Polyunsaturated Fatty Acids": "35 g",
+    "Trans Fatty Acids": "2 g",
+    "Sodium": "0 mg",
+    "Added Vitamin A RE": "750 mcg",
+    "Added Vitamin D": "11.25 mcg",
+    "Natural Vitamin E": "20 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture\nKeep the package tightly sealed to preserve freshness",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Smart Health Rice Bran Oil",
@@ -269,7 +395,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375_9-gemini-refined-rice-bran-oil.jpg"
-    }
+    },
+    "barcode": "8907970002039"
    },
    {
     "title": "4.35kg",
@@ -306,7 +433,36 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130375-8_1-gemini-refined-rice-bran-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional health benefits of Gemini Refined Rice Bran Oil. Boasting 40% more Oryzanol than most other rice bran oils, this versatile oil helps to lower bad cholesterol and boost good cholesterol, making it an excellent choice for those prioritising heart health. Fortified with essential vitamins A, D and E, this vegetarian oil not only nourishes your body but also preserves the natural flavours of your dishes. Suitable for both deep-frying and dressing salads, Gemini Rice Bran Oil's high smoke point and neutral taste allow you to cook with confidence, while its eco-friendly production aligns with the values of environmentally-conscious consumers. Unlock a culinary heritage and infuse your meals with authentic flavours, all while enjoying the convenience of a versatile oil that caters to your nutritional needs. Discover the difference Gemini Refined Rice Bran Oil can make in your kitchen and your overall well-being.",
+   "ingredients": "Physically Refined Rice Bran Oil, Antioxidant (INS 319), Vitamins (A, D), Antifoaming Agent (INS 900a)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "100 g",
+    "Saturated Fatty Acids": "NMT*** 28 g",
+    "Monounsaturated Fatty Acids": "NMT*** 48 g",
+    "Polyunsaturated Fatty Acids": "NMT*** 40 g",
+    "Omega-6": "NMT*** 37.5 g",
+    "Omega-3": "NMT*** 2.5 g",
+    "Trans Fatty Acids": "NMT*** 2g",
+    "Sodium": "0 mg",
+    "Added Vitamin A": "750 mcg^",
+    "Added Vitamin D": "11.25 mcg^",
+    "Natural Vitamin E": "50 mg",
+    "Oryzanol": "NLT 1000 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Stored in a dry and hygienic place away from heat and light",
+   "manufacturerName": "Cargill India Pvt Ltd",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Kachi Ghani Mustard Oil",
@@ -350,7 +506,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000090-8_1-gemini-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Gemini Mustard Oil is made by sourcing the best quality mustard seeds. It brings to your food that great tinge of aroma and taste. Added to that is Cargill's stamp of quality assurance, ensuring your every meal is replete with taste and health. Wonderfully pleasant, it contains essential fatty acids making it as one of the healthiest cooking oils. Gemini Mustard Oil is made from Mustard seeds and is adulteration free and comes with 100% assurance of purity. It has the right aroma and pungency to add the perfect taste to your food.",
+   "ingredients": "Mustard Oil",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Serving Size": "1 Litre (910 g)",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrates": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "% RDA Per Serve": "2.3",
+    "Total Fat": "100 g",
+    "Saturated Fatty Acids": "Nmt+ 10 g",
+    "Monounsaturated Fatty Acids": "Nmt+ 75 g",
+    "Polyunsaturated Fatty Acids": "Nmt+ 32 g",
+    "Omega 3": "Nmt+ 12 g",
+    "Omega 6": "Nmt+ 20 g",
+    "Trans Fatty Acids": "Nmt+ 1g",
+    "Sodium": "0 mg",
+    "% RDA Per Serve Sodium": "0"
+   },
+   "storageInstructions": "* Store in a cool and dry place\n* Store away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vanaspati",
@@ -366,7 +547,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092_7-gemini-vanaspati.jpg"
-    }
+    },
+    "barcode": "8906006330849"
    },
    {
     "title": "840g",
@@ -403,6 +585,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000092-8_1-gemini-vanaspati.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, aromatic flavour of Gemini Vanaspati, a versatile cooking oil made with the finest quality oils. Crafted with partially hydrogenated vegetable oils, this vanaspati offers the perfect texture and right-sized granules for all your deep-frying and baking needs. Gemini Vanaspati is a delicious substitute for ghee, boasting a vibrant aroma and sumptuous taste. Packed with essential vitamins A and D, this convenient pouch ensures a long shelf life and makes for an ideal addition to your kitchen.",
+   "ingredients": "Edible Vegetable Fat (Hydrogenated Palm Oil), Edible Vegetable Oil (Palm Oil, Sesame Oil)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "5g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "100 g",
+    "Saturated Fatty Acids": "64.0 g",
+    "Trans Fatty Acids": "2.0 g",
+    "Sodium": "0 mg",
+    "Added Vitamin A": "750 mcg"
+   },
+   "storageInstructions": "Store in a dry and hygienic place away from heat and light",
+   "manufacturerName": "Cargill India Pvt. Ltd",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  }
 ]

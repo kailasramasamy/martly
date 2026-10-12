@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40100618_13-bingo-potato-chips-original-style-salt-sprinkled.jpg"
-    }
+    },
+    "barcode": "8901725111649"
    },
    {
     "title": "21g",
@@ -59,7 +60,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40100618-8_7-bingo-potato-chips-original-style-salt-sprinkled.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the timeless delight of Bingo! Original Style Salt Sprinkled Potato Chips. Crafted from the finest quality potatoes, these flat-cut crisps are meticulously sliced to achieve a delicate, airy texture that delivers a satisfying crunch with every bite. The delicate sprinkling of salt enhances the natural potato flavour, creating a harmonious balance of savoury goodness that is simply irresistible. Whether you're enjoying a cosy movie night, hosting a gathering with friends, or seeking a quick and convenient snack on the go, these classic salted potato chips are the perfect choice.\nWith their convenient packaging, you can savour the taste of your childhood memories wherever you are. Bingo! Original Style Salt Sprinkled Potato Chips are the ultimate snacking companion, offering a delightful experience that will leave you craving more.",
+   "ingredients": "POTATO (64.0%), REFINED PALMOLEIN, IODIZED SALT (1.4%)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy (kcal)": "561 kcal",
+    "Protein (g)": "6.9 g",
+    "Carbohydrate (g)": "54.8 g",
+    "Total Sugars (g)": "0.6 g",
+    "Added Sugars (g)": "0.0 g",
+    "Total Fat (g)": "34.9 g",
+    "Trans Fat (g)": "0.1 g",
+    "Saturated Fat (g)": "16.2 g",
+    "Sodium (mg)": "573.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Original Style Chilli Sprinkled Potato Chips",
@@ -75,7 +96,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40219148_11-bingo-original-style-potato-chips-chilli-sprinkled.jpg"
-    }
+    },
+    "barcode": "8901725007508"
    },
    {
     "title": "21g",
@@ -121,7 +143,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40219148-8_10-bingo-original-style-potato-chips-chilli-sprinkled.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Original Style Chilli Sprinkled Potato Chips bring the perfect blend of crispiness and spice to your snack time. Made with hot chillies, these chips deliver a mouth-watering, eye-watering experience in every bite. Irresistibly spicy, they're perfect to enjoy anytime, anywhere. Indulge in the fiery flavour you can't get enough of!",
+   "ingredients": "Potato (60.0%), Refined Palmolein, Seasoning {Iodized Salt, Red Chilli Powder (1.1%), Maltodextrin, Spices And Condiments, Onion Powder, Refined Wheat Flour (Maida), Nature Identical Flavouring Substances, Black Salt, Milk Solids, Natural Flavours And Natural Flavouring Substances, Sugar, Tomato Powder, Hydrolyzed Vegetable Protein, Garlic Powder, Flavour Enhancer (INS 508)}, Iodized Salt.",
+   "nutritionalInfo": {
+    "Energy": "531 kcal",
+    "Protein": "7.1 g",
+    "Carbohydrate": "50.5 g",
+    "Total Sugars": "1.5 g",
+    "Added Sugars": "0.8 g",
+    "Total Fat": "33.4 g",
+    "Trans Fat (Other Than Naturally Occurring Trans Fat)": "0.1",
+    "Saturated Fat": "14.2 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "824.6 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Original Style Cream & Onion Potato Chips",
@@ -137,7 +178,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40226234_8-bingo-potato-chips-original-style-cream-onion.jpg"
-    }
+    },
+    "barcode": "8901725007454"
    },
    {
     "title": "21g",
@@ -174,7 +216,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226234-8_7-bingo-potato-chips-original-style-cream-onion.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Whoever looked at the potato in the ground and decided to eat it, was a true visionary. Because if it wasn’t for him/ her, centuries later we wouldn’t have had the brilliant idea of making crispy potato chips! Tear open the pack of Bingo! Original Style Cream & Onion and savour this yummy concoction. Experience a burst of sour-salty taste as thinly sliced potato chips are enveloped in a layer of cream and seasoned with freshly diced and pickled spring onions. Enjoy the delicious flavours with every crunchy bite of Bingo! Original Style Cream & Onion. Whether you’re bored in a meeting, watching your screens buffer or waiting for your games to load. It is incomplete without a bag of Bingo! Original Style Cream & Onion potato chips.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Original Style Korean Hot & Spicy Potato Chips",
@@ -227,7 +274,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457734-8_1-bingo-original-potato-chips-hot-spicy-korean-style.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the fiery heat of our Super Spicy Hot Original Style Chips! These tantalising potato chips are infused with a Korean-inspired flavour that will set your taste buds ablaze. Bursting with bold Korean flavours, the signature taste of Korean cuisine combines fiery chili heat and aromatic spices for a savoury, flavourful experience. The perfectly crunchy texture of these Bingo chips makes every bite satisfying, ensuring a delightful crunch that complements the intense, addictive seasoning. Ideal for spice-lovers, the hot and spicy Korean-style seasoning delivers a fiery, flavourful kick that will excite your taste buds and leave you craving more. Indulge in this bold and tantalising snacking experience that will transport you to the vibrant flavours of Korea with every irresistible, mouthwatering crunch.",
+   "ingredients": "Potato (58.8%), Refined Palmolein, Seasoning {Sugar, Iodised Salt, \"Spices And Condiments, Nature Identical Flavouring Substances, Acidity Regulators (Ins 330, 260, 334, 296), Garlic, Dehydrated Onion, Natural Flavours And Natural Flavouring Substances, Flavour Enhancer (Ins 635), Refined Sunflower Oil}, Iodised Salt",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Energy (kcal)": "533 kcal",
+    "Protein (g)": "7.3 g",
+    "Carbohydrate (g)": "54.5 g",
+    "Total Sugars (g)": "6.4 g",
+    "Added Sugars (g)": "2.8 g",
+    "Total Fat(g)": "32.4 g",
+    "Trans Fat* (g)": "0.1 g",
+    "Saturated Fat (g)": "14.5 g",
+    "Sodium (mg)": "1031.4 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "ITC limited Foods Division Snacks UNIT",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Original Style Chilli Charged Tomato Potato Chips",
@@ -271,7 +338,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314951-8_2-bingo-original-potato-chips-chilli-charged-tomato.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Chilli Charged Tomato - A killer combination of tangy and spicy. The delicate presence of the light grains of salt, carefully sprinkled on these lighter-than-air potato chips will change the way you see the world! So much so, everything around you changes into funny memes, every person talking turns into your own little stand-up comedy!\nWhoever looked at the potato in the ground and decided to eat it was a true visionary. Because if it wasn't for him or her, centuries later we wouldn't have had the brilliant idea of making crispy potato chips! Tear open a pack of Bingo! Original Style Chilli Charged Tomato and enjoy some spicy and tangy chips.\nExperience the fiery tang in the original style of potato chips. Each flat-cut wafer is made with handpicked golden-quality potatoes, sliced nice and thin. These lighter than air chips are then carefully cooked to give you the right amount of crunchiness and charged up with flavour. The spicy mix of hot red chillies and juicy tomatoes is sure to bring your taste buds alive.\nWhether you're bored in a meeting, watching your screens buffer or waiting for your games to load, the moments are incomplete without a pack of potato chips by your side. Just add some spicy zing to every moment with a bag of Bingo! Original Style Chilli Charged Tomato.\nFeatures:\nBingo! Original Style Potato Chips: Craving for something with a flavourful kick? Tear open a pack of Bingo! Original Style Chilli Charged Tomato!\nFlat Cut Wafers: Charge up your snack time with the spicy and tangy flat-cut wafers, the original style of potato chips\nFiery Burst Of Flavour: Get ready to taste the lip-smacking fusion of hot red chillies and juicy tomatoes in every crunchy bite\nHandpicked Ingredients: Made from golden-quality potatoes that are sliced so thinly that the chips are lighter than air with a satisfying crunch\nOG Snacking Partner: Satisfy your snack cravings anytime, anywhere with a pack of Bingo! Original Style Chilli Charged Tomato",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bangin' Butter & Garlic Potato Chips",
@@ -324,7 +397,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361472-8_3-bingo-bangin-butter-garlic-potato-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Bangin’ Butter & Garlic Potato Chips offer a rich, savoury taste with the perfect blend of creamy butter and aromatic garlic on crisp, golden potato slices. Each bite delivers a satisfying crunch, making them ideal for casual snacking, sharing with friends, or adding flavour to relaxed moments.",
+   "ingredients": "Potato (87.1%), \"Edible Vegetable Oil, Maltodextrin, Sugar, Iodized Salt, Garlic Powder (0.2%), Natural Flavours And Natural Flavouring Substances Nature Identical Flavouring Substances, #Spices And Condiments, Non-Dairy Creamer, Flavour Enhancer (635), Medium Chain Triglycerides And Acidity Regulator (Lactic Acid).",
+   "nutritionalInfo": {
+    "Energy": "538 kcal",
+    "Protein": "7.1 g",
+    "Carbohydrate": "58.5 g",
+    "Total Sugars": "3.9 g",
+    "Added Sugars": "2.4 g",
+    "Total Fat": "31.3 g",
+    "Saturated Fat (^^)": "7.3 g",
+    "Saturated Fat (^)": "13.4 g",
+    "Trans Fat+ (M)": "0.10 g",
+    "Trans Fat+": "0.10 g",
+    "Cholesterol": "0.10 mg",
+    "Sodium": "725.3 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Killin' Cream & Onion Potato Chips",
@@ -368,7 +462,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361474-8_3-bingo-killin-cream-onion-potato-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Killin Cream & Onion Potato Chips combine smooth creaminess with a mild onion tang on crisp potato slices. The well-balanced seasoning delivers a rich yet light flavour with a satisfying crunch. Perfect for everyday snacking, sharing with friends, or enjoying during movie nights and relaxed breaks.",
+   "ingredients": "Potato (87.4%), \"Edible Vegetable Oil, Sugar, Maltodextrin, Milk Solids (0.5%), Iodized Salt, Onion Powder (0.2%), Palm Fat Powder, Dried Parsley (0.06%), Natural Flavours And Natural Flavouring Substances, Nature Identical Flavouring Substances, Flavour Enhancer (635), Acidity Regulators (Lactic Acid, Citric Acid), Fructose And Black Pepper Powder.",
+   "nutritionalInfo": {
+    "Energy": "534 kcal",
+    "Protein": "7.4 g",
+    "Carbohydrate": "57.0 g",
+    "Total Sugars": "3.5 g",
+    "Added Sugars": "2.4 g",
+    "Total Fat": "31.6 g",
+    "Saturated Fat (^)": "14.8 g",
+    "Trans Fat+ (M)": "0.10 g",
+    "Trans Fat+ (^)": "0.12 g",
+    "Cholesterol": "0.1 mg",
+    "Sodium": "499.6 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Knockin' Korean Style Potato Chips",
@@ -412,7 +526,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361471-8_2-bingo-knockin-korean-style-potato-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Knockin’ Korean Style Potato Chips bring the bold, vibrant flavours of Korean cuisine to crisp, crunchy potato slices. With a perfect balance of spice and umami, each bite delivers a satisfying crunch. Ideal for adventurous snack lovers, sharing with friends, or enjoying during casual, relaxed moments.",
+   "ingredients": "Potato (87.2%), \"Edible Vegetable Oil, Seasoning {Sugar, #Spices And Condiments (Red Chilli Powder, Garlic Powder, Red Chilli Extract, Onion Powder, Ginger Powder), Iodized Salt, Nature Identical Flavouring Substances, Acidity Regulators (Citric Acid, Acetic Acid, Tartaric Acid Malic Acid), Natural Flavours And Natural Flavouring Substances, Flavour Enhancer (635) And Refined Sunflower Oil) And Iodised Salt.",
+   "nutritionalInfo": {
+    "Energy": "526 kcal",
+    "Protein": "7.6 g",
+    "Carbohydrate": "55.6 g",
+    "Total Sugars": "4.2 g",
+    "Added Sugars": "3.0 g",
+    "Total Fat": "31.5 g",
+    "Saturated Fat (^)": "14.3 g",
+    "Trans Fat+ (M)": "0.1 g",
+    "Trans Fat+ (^)": "0.07 g",
+    "Sodium": "934.7 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Massacre Potato Chips",
@@ -428,7 +561,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40361469_5-bingo-masala-massacre-potato-chips.jpg"
-    }
+    },
+    "barcode": "8909081007866"
    },
    {
     "title": "80g",
@@ -465,7 +599,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361469-8_4-bingo-masala-massacre-potato-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Masala Massacre Potato Chips pack a bold blend of Indian spices on crisp, crunchy potato slices. Bursting with rich masala flavour, each bite delivers a satisfying kick without overpowering the taste. Perfect for spice lovers, casual snacking, or sharing during get-togethers and relaxed moments with friends.",
+   "ingredients": "Potato (87.8%), ~Edible Vegetable Oil, Seasoning {Onion Powder, #Spices And Condiments, Iodized Salt, Black Salt, Sugar, Acidity Regulators (Citric Acid, Malic Acid, Tartaric Acid), Tomato Powder, Natural Flavours And Natural Flavouring Substances, Hydrolysed Vegetable Protein, Flavour Enhancers (508, 635), Garlic Powder, Yeast Extract, Nature Identical Flavouring Substances, Maltodextrin} And Iodized Salt.",
+   "nutritionalInfo": {
+    "Energy": "530 kcal",
+    "Protein": "6.6 g",
+    "Carbohydrate": "57.4 g",
+    "Total Sugars": "2.9 g",
+    "Added Sugars": "1.2 g",
+    "Total Fat": "31.3 g",
+    "Saturated Fat (^^)": "7.3 g",
+    "Saturated Fat (^)": "15.8 g",
+    "Trans Fat+ (^^)": "0.10 g",
+    "Trans Fat+ (^)": "0.09 g",
+    "Sodium": "817 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Slayin' Salt Potato Chips",
@@ -509,7 +663,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361470-8_2-bingo-slayin-salt-potato-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Slayin’ Salt Potato Chips deliver a classic, lightly salted flavour on perfectly crisp potato slices. Each bite offers a satisfying crunch and a clean, balanced taste. Ideal for everyday snacking, sharing with friends, or enjoying alongside your favourite dips for a simple yet delicious treat.",
+   "ingredients": "Potato (89.6%), \"Edible Vegetable Oil And Iodised Salt (0.39%).",
+   "nutritionalInfo": {
+    "Energy": "550 kcal",
+    "Protein": "6.9 g",
+    "Carbohydrate": "56.0 g",
+    "Total Sugars": "0.8 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "33.8 g",
+    "Saturated Fat": "7.9 g",
+    "Saturated Fat (^)": "15.6 g",
+    "Trans Fat+ (M)": "0.08 g",
+    "Trans Fat+ (^)": "0.08 g",
+    "Sodium": "510 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Thrilling Tomato Potato Chips",
@@ -525,7 +699,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/254362_20-bingo-potato-chips-tomato.jpg"
-    }
+    },
+    "barcode": "8909081007149"
    },
    {
     "title": "80g",
@@ -562,7 +737,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/254362-8_1-bingo-potato-chips-tomato.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Potato Chips Thrilling Tomato bring a bold burst of tangy tomato flavour with every crunchy bite. Made from quality potatoes and seasoned with a zesty spice blend, these chips deliver a balanced mix of sweet, sour, and savoury notes. Perfect for tea-time snacking, movie nights, or on-the-go cravings, they offer a satisfying crunch and vibrant taste. Enjoy them solo or share with friends for a lively snacking experience that keeps you reaching for more.",
+   "ingredients": "Potato 87.4%, Edible Vegetable Oil, Sugar, Maltodextrin, Milk Solids 0.5%, Iodised Salt, Onion Powder 0.2%, Palm Fat Powder, Dried Parsley 0.06%, Natural Flavours And Natural Flavouring Substances, Nature Identical Flavouring Substances, Flavour Enhancer 635, Acidity Regulators Lactic Acid, Citric Acid, Fructose, Black Pepper Powder",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hashtags Cream & Onion Potato Chips",
@@ -578,7 +760,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40270540_4-bingo-hashtags-potato-chips-cream-onion-unique-flavour-crispy.jpg"
-    }
+    },
+    "barcode": "8901725004576"
    },
    {
     "title": "22.5g",
@@ -615,7 +798,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270540-8_3-bingo-hashtags-potato-chips-cream-onion-unique-flavour-crispy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the ultimate snacking experience with Bingo Hashtag! Cream and Onion Potato Chips. These perfectly checkered chips are meticulously crafted to deliver the highest level of crunch and a delightful texture that's beyond compare. Elevate your taste buds with the bold and irresistible cream and onion flavour that packs a punch, creating a flavour-packed adventure with every satisfying bite.\nWhether you're hosting a party, enjoying a movie night, or simply craving a more sophisticated chip experience, these thicker, crunchier, and tastier delights are the answer. Prepare your palate for a savoury explosion that lingers, and let your taste buds thank you for this unique and elevated snacking sensation.",
+   "ingredients": "Potato (59.5%), Refined Palmolein and Seasoning (Onion Powder (1.9%), Sugar, lodized Salt, Milk Solids, Maltodextrin, Dehydrated Parsley Leaves, Natural Flavours and Natural Revouring Substances, Nature Identical Flavouring Substances and Black Pepper)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy (kcal)": "532 kcal",
+    "Protein (g)": "7.1 g",
+    "Carbohydrate (g)": "56.1 g",
+    "Total Sugars (g)": "2.4 g",
+    "Added Sugars (g)": "1.1 g",
+    "Total fat (g)": "31.9 g",
+    "Trans fat (other than naturally occurring trans fat) (g)": "0.1 g",
+    "Saturated fat (g)": "14.7 g",
+    "Cholesterol (mg)": "1.0 mg",
+    "Sodium (mg)": "652.6 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hashtags Spicy Masala Potato Chips",
@@ -668,7 +871,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270541-8_3-bingo-hashtags-spicy-masala-unique-flavour-crispy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Get ready for a snacking adventure that's as wild as your taste buds can handle with Bingo! Hashtags Spicy Masala Potato Chips. These desi masala chips are not just spicy, but the daredevils of the snack world, bringing a bold flavour that'll have your taste buds doing the tango. Prepare for a flavour explosion in your mouth - these crispy, crunchy wonders offer a spicy, wacky experience that's sure to tantalize your senses.\nWith each satisfying bite, you'll enjoy a crispy crescendo that'll leave you wondering if you've stepped into a snack symphony. Grab a bag, gather your friends, and get ready for a snack attack that's spicier, crunchier, and more unique than ever before. Bingo! Hashtags Spicy Masala Potato Chips - the perfect addition to your snacking routine.",
+   "ingredients": "Potato (59.5%), Refined Palmolein and Seasoning, Onion Powder, Spices and Condiments, Iodized Salt, Black Salt, Sugar, Natural Flavours and Natural Flavouring Substances, Tomato Powder, Nature Identical Flavouring Substances, Hydrolyzed Vegetable Protein, Garlic Powder (0.1%), Yeast Extract",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy (kcal)": "528 kcal",
+    "Protein (g)": "6.3 g",
+    "Carbohydrate (g)": "55.7 g",
+    "Total Sugars (g)": "1.4 g",
+    "Added Sugars (g)": "0.3 g",
+    "Total fat (g)": "32.2 g",
+    "Trans fat (other than naturally occurring trans fat) (g)": "0.1 g",
+    "Saturated fat (g)": "14.7 g",
+    "Cholesterol (mg)": "1.0 mg",
+    "Sodium (mg)": "871.7 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hashtags Korean Hot & Spicy Potato Chips",
@@ -709,7 +932,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323265-7_1-bingo-hashtags-korean-style-hot-spicy-potato-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the trendiest twist on classic potato chips with the Bingo Hashtags Hot and Spicy Korean Style chips! Each crisp, hashtag-shaped morsel is packed with numerous small hashtags that deliver an extra crunch and an extra kick of Korean-inspired flavour. Infused with a rich, spicy seasoning blend of chili, garlic and tangy spices, these chips offer a balanced, bold taste that transports you straight to the vibrant streets of Seoul.\nThinly sliced and coated in a red-hot seasoning, these crisps unleash a super-crunchy, super-tasty, super-spicy experience with every bite. Whether you're a spice lover or simply craving a unique snacking adventure, these Korean-style potato chips are sure to satisfy your cravings and leave you craving more.",
+   "ingredients": "Potato (58.8%), Refined Palmolein, Seasoning {Sugar, Iodised Salt, #Spices And Condiments, Nature Identical Flavouring Substances, Acidity Regulators (INS 33, 26, 334, 296), Garlic, Dehydrated Onion, Natural Flavours And Natural Flavouring Substances, Flavour Enhancer (INS 635), Refined Sunflower Oil}",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy (kcal)": "528 kcal",
+    "Protein (g)": "5.9 g",
+    "Carbohydrate (g)": "56.0 g",
+    "Total Sugars (g)": "3.9 g",
+    "Added Sugars (g)": "3.5 g",
+    "Total fat (g)": "32.0 g",
+    "Trans fat (other than naturally occurring trans fat) (g)": "0.1 g",
+    "Saturated fat (g)": "14.6 g",
+    "Sodium (mg)": "922.4 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Popped Chips Indian Spice Mix",
@@ -762,7 +1005,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333065-8_3-bingo-indian-spice-mix-popped-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Potato Pellets (Potato Flakes, Potato Starch, Rice Flour, Tapioca Starch, Iodized Salt, Refined Rice Bran Oil), Seasoning (Refined Rice Bran Oil, Dehydrated Onion, Spices and Condiments, Iodized Salt, Black Salt, Sugar, Acidity Regulators (ins 330, ins 296, ins 334), Tomato Powder, Hydrolyzed Vegetable Protein, Natural Flavours and Natural Flavouring Substances, Dehydrated Garlic, Yeast Extract, Nature Identical Flavouring Substances, Flavour enhancer (ins 635)), Yellow pea grits (7.3%), and Green pea grits (7.3%), *used as flavouring agents, Contains Milk, May Contain Soy, Wheat, Barley",
+   "nutritionalInfo": {
+    "Energy": "486 kcal",
+    "Protein": "6.9 g",
+    "Carbohydrate": "66.9 g",
+    "Total Sugars": "1.7 g",
+    "Added Sugars": "0.24 g",
+    "Total Fat": "22.1 g",
+    "Saturated Fat": "5.1 g",
+    "Trans Fat": "0.10 g",
+    "Sodium": "955.2 mg"
+   },
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Popped Chips Salt 'N' Pepper",
@@ -815,7 +1073,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333066-8_3-bingo-salt-n-pepper-popped-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Potato Pellets (Potato Flakes, Potato Starch, Rice Flour, Tapioca Starch, Iodised Salt (0.6%), Refined Rice Bran Oil), Seasoning (Refined Rice Bran Oil, Maltodextrin, Iodised Salt (1.6%), Milk Solids, Black Pepper Powder (0.4%), Sugar, Flavour Enhancer (INS 635), Acidity Regulator (INS 330), Nature-Identical Flavouring Substances, Natural Flavours And Natural Flavouring Substances), Yellow Pea Grits (7.3%), Green Pea Grits (7.3%). Contains Milk. May Contain Soy And Wheat.",
+   "nutritionalInfo": {
+    "Energy": "489 kcal",
+    "Protein": "6.8 g",
+    "Carbohydrate": "66.7 g",
+    "Total Sugars": "1.6 g",
+    "Added Sugars": "0.29 g",
+    "Total Fat": "22.1 g",
+    "Saturated Fat": "5.1 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "0.1 mg",
+    "Sodium": "950.3 mg"
+   },
+   "manufacturerName": "(P) ITC Limited – Foods Division",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Popped Chips Sour Creme & Herbs",
@@ -868,7 +1144,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333067-8_3-bingo-sour-cream-herbs-popped-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Potato Pellets {Potato Flakes (20.9%), Potato Starch, Rice Flour, Tapioca Starch, Iodised Salt, Refined Rice Bran Oil}, Seasoning {Refined Rice Bran Oil, Sugar, Maltodextrin, Milk Solids, Iodised Salt, Dehydrated Onion (0.8%), Fat Powder, Dehydrated Parsley (0.2%), Nature-Identical Flavouring Substances, Hydrolysed Vegetable Protein, Cheese Powder, Natural Flavours And Natural Flavouring Substances, Acidity Regulators (INS 270, INS 330), Flavour Enhancer (INS 1123), Black Pepper}, Yellow Pea Grits (7.3%), Green Pea Grits (7.3%). Contains Milk And Soy. May Contain Wheat And Barley.",
+   "nutritionalInfo": {
+    "Energy": "491 kcal",
+    "Protein": "6.9 g",
+    "Carbohydrate": "67.4 g",
+    "Total Sugars": "6.1 g",
+    "Added Sugars": "2.8 g",
+    "Total Fat": "22.0 g",
+    "Saturated Fat": "5.2 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "0.1 mg",
+    "Sodium": "740.2 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mad Angles Achaari Masti",
@@ -912,7 +1206,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172829-8_6-bingo-mad-angles-chips-achaari-masti.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Want to try something different from the regular crisps? How about some crunchy crisps with the delicious flavour of mango pickles? Get home a pack of Bingo! Mad Angles Achaari Masti. A triangular crisp made from a corn base and cooked with rice and flour. The authentic taste of achaar is added, giving a delightful taste to the uniquely textured, crunchy crisps. Reminiscent of your grandmother’s mango pickles stored in a white and brown ceramic jar, the taste of Achaari Masti will transport you to those good old days with each bite. Bingo! Mad Angles takes the joy of having achaar and has turned it into fun and delicious triangular crisps. Dig into the pack of this desi-flavoured Mad Angles and satisfy your snack cravings anytime, anywhere. Whether you’re bored in a meeting, waiting for your favourite team to score the winning goal, or having a party, they are just incomplete without a bag of Bingo! Mad Angles by your side.",
+   "ingredients": "Rice Grits, Seasoning (Refined Palmolein, Sugar, Spices And Condiments, Iodized Salt, Nature Identical Flavouring Substances, Hydrolyzed Vegetable Protein, Natural Flavours And Natural Flavouring Substances), Refined Palmolein, Degermed Corn Grits, Bengal Gram Grits.",
+   "nutritionalInfo": {
+    "Energy": "526 kcal",
+    "Protein": "5.6 g",
+    "Carbohydrate": "61.2 g",
+    "Total Sugars": "6.0 g",
+    "Added Sugars": "5.2 g",
+    "Total Fat": "29.5 g",
+    "Trans Fat (Other Than Naturally Occurring Trans Fat)": "0.1 g",
+    "Saturated Fat": "13.8 g",
+    "Sodium": "758.8 mg",
+    "Serving Size": "20 g"
+   },
+   "manufacturerName": "ITC Limited 37 J.L. Nehru Road Kolkata- 700071",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Mad Angles Mystery Pickle",
@@ -928,7 +1241,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40358294_4-bingo-bingo-mad-angle-mystery-pickle-60g.jpg"
-    }
+    },
+    "barcode": "8909081008399"
    },
    {
     "title": "30g",
@@ -974,7 +1288,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345819_3-bingo-mystery-pickle-mad-angles.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Mad Angles Mystery Pickle offers a unique twist of tangy and spicy flavours inspired by traditional Indian pickles. Each crunchy triangle delivers a burst of taste with every bite, blending zest and spice in perfect balance. Made from quality ingredients, these snacks are ideal for sharing or enjoying anytime you crave something bold and exciting. Perfect for those who love adventurous flavours with a desi touch.",
+   "ingredients": "Cereals and Pulse Mix [Rice Grits, Degermed Corn Grits, Bengal Gram Grits, Pea Grits], Edible Vegetable Oil, Sugar, Iodized Salt, Spices and Condiments, Acidity Regulator (Citric Acid), Nature-Identical Flavouring Substances, Citrus Aurantifolia Juice Powder, Fructose, Natural Flavours and Natural Flavouring Substances, Flavour Enhancer (635). Used as flavouring agents. Includes garlic.\nAllergen Information: Contains Wheat. May contain Soy, Milk, and Barley.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mad Angles Tomato Madness",
@@ -990,7 +1312,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20006261_7-bingo-mad-angles-tomato-madness.jpg"
-    }
+    },
+    "barcode": "8901725013745"
    }
   ],
   "images": [
@@ -1018,7 +1341,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20006261-8_1-bingo-mad-angles-tomato-madness.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo Mad Angles Tomato Madness is a delicious crunchy snack made from potatoes. With its exclusive triangular chips and spicy edge, Bingo Mad Angles Tomato Mischief will maintain you addicted to it. Make happy your snack craving as the rush of juicy tomatoes, the instability of the texture and the distinctiveness of the shape.",
+   "ingredients": "Rice Grits, Seasoning Mix (Refined Palmoliene, Refined Sugar, Tomato Powder (0'7%), Spices & Condiments, Maltodextrin, Onion Powder, Garlic Powder, Acidity Regulators, Milk Solids, Anti Cacking Agents, Yeast Extract & Flavour Enhancer, Corn Grits And Acidity Regulators.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tedhe Medhe Masala Tadka",
@@ -1034,7 +1365,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40226709_12-bingo-tedhe-medhe-snacks-with-corn-rice-dal-masala-tadka.jpg"
-    }
+    },
+    "barcode": "8901725118921"
    },
    {
     "title": "38g",
@@ -1071,7 +1403,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226709-8_9-bingo-tedhe-medhe-snacks-with-corn-rice-dal-masala-tadka.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Want something spicy to shake things up? All you need is a pack of Bingo! Tedhe Medhe Masala Tadka to satisfy every 'something masaledaar' craving of yours. We Indians are very attached to our spices. No food is complete without a dash of masalas to make it more exciting. To make sure that you feel a little more desi with every bite you take, Indian masalas are added to the spindle-shaped sticks. Experience a satisfying crunch and balanced flavour as you munch on these delightful sticks.\nThere are no two sticks alike in the pack, each spicy stick will give you something new and delightful with every bite and will leave you wanting for more. The desi flavour, handpicked spices and special aroma added to the snack will make you Eat, Phir Repeat on a loop.\nWhether you're bored in a meeting or waiting for your boring class to end or elevating the taste of your favourite snacks like jhalmuri or papdi chaat by adding a Tedhe Medhe twist! Bingo! Tedhe Medhe Masala Tadka is the ideal addition to any occasion.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy (kcal)": "546 kcal",
+    "Protein (g)": "5.5 g",
+    "Carbohydrate (g)": "57.3 g",
+    "Total Sugars (g)": "1.7 g",
+    "Added Sugars (g)": "1.2 g",
+    "Total Fat (g)": "32.8 g",
+    "Saturated fat (g)": "15.5 g",
+    "Trans fat (g)": "0.1 g",
+    "Cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "738.4 mg",
+    "%RDA": "5.5"
+   },
+   "manufacturerName": "(A) ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tedhe Medhe Chatar Matar",
@@ -1115,7 +1468,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40236942-8_1-bingo-tedhe-medhe-chatar-matar-crunchy-snack-with-green-peas.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Treat your taste buds to a crunchy and delicious snack with Bingo! Tedhe Medhe Cocktail Mix. Seasoned with a spicy and tangy flavour, the delectable nuts – peanuts, Kabuli chana and green peas are the perfect munchies with your favourite drinks. Made from only the best of ingredients, this crunchy masaledaar namkeen will give you a delectable taste in every bite. From house parties to just chilling, from your regular tea-time to last-minute plans, Bingo! Tedhe Medhe Cocktail Mix adds a Tedhe Medhe twist to your day",
+   "ingredients": "Peas Flour, Seasoning {Refined Palmolein, #Spices and Condiments, Maltodextrin, Iodized Salt, Sugar , Onion Powder, Black Salt, Milk Solids, Nature Identical Flavouring Substances, Natural Flavours and Natural Flavouring Substances Medium Chain Triglycerides (Coconut Oil & Refined Palm Oil) and Garlic Powder}, Degermed Corn Grits, Rice Grits, Wheat Flour (Atta), Starch, Stabilizer [INS 170(i)] and Colours (INS 133, INS 100(i)). #Used as Flavouring Agents.",
+   "nutritionalInfo": {
+    "Calories": "557,",
+    "Carbs": "53 g,",
+    "Fat": "35 g,",
+    "Protein": "8 g."
+   },
+   "usageInstructions": "1. Bingo! Tedhe Medhe is the best snack to spice up any hour of the day and have some fun. 2. Grab a pack today to enjoy with your family. 3. Satisfy your snack cravings anytime, anywhere .",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Street Bites Pani Puri Twist",
@@ -1159,7 +1526,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270542-8_1-bingo-street-bites-pani-puri-twist-unique-flavour-crispy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ever craved the mouth-watering pani puri? Or for scrumptious dahi chaat? Bingo! is here to fulfil your cravings through light and crispy chips in fun street flavours! Tickle your tastebuds with Pani Puri twist and Dahi Chaat Remix! Bringing you the flavour of Pani Puri for all those irresistible cravings. “Iss craving se no saving!” Bingo brings to you its unique flavour to be your fun-time snacking and hangout partner. Grab a pack today and enjoy it with your loved ones!",
+   "ingredients": "Refined Wheat Flour (Maida), Seasoning (Refined Palmolein, Iodized Salt, Sugar, Spices and Condiments, Dextrose, Black Salt, Tamarind Powder, Natural Flavours and Natural Flavouring Substances), Refined Palmolein, Dehydrated Potato Flakes, Stabilizer (INS 1412), Sugar Iodized Salt, Emulsifier [Diacetyltartaric and fatty acid esters of glycerol (From Sunflower & Palm Oil)] and Natural Flavours and Natural Flavouring Substances.",
+   "usageInstructions": "Have it directly from the pack.\nYou can also pair this with your favourite sauce, dip or chutney.\nCan also be added to bhel and papdi chaat.",
+   "manufacturerName": "ITC Limited Kolkata",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chilli Limon Nachos",
@@ -1221,7 +1595,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314949-8_5-bingo-nachos-chilli-limon-with-dip.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ready to elevate your snacking game? Introducing the all-new Bingo! Nachos Chilli Lemon Flavour - a fusion of spicy chillies and tangy lemon that creates an incredibly irresistible-tasting snack. Made from corn, these nacho chips offer a unique texture and crunch, perfectly balanced with the exciting international flavour where the tanginess of lemon and the hotness of chillies are expertly seasoned together. Relish the perfect harmony of heat and tang with every mouth-watering bite. Whether you're enjoying a party or movie night, these Bingo! Nachos are your go-to companion. Pair them with a creamy cheesy dip or spice things up with a zesty salsa - or for the truly adventurous, try them with the free Sriracha dip included in every pack. Indulge in the irresistible crunch and tantalising flavours, and embark on a flavour-filled snacking adventure that's sure to get your taste buds dancing.",
+   "ingredients": "Degermed Corn Grits, Refined Palmolien, Seasoning {Refined Palmolien, Sugar, Iodised Salt, Natural Identical Flavouring Substances, *Spices And Condiments, Acidity Regulator (Ins 296), Lemon Juice Powder (0.2%), Starch, Tamarind Powder, Refined Palm Oil, Flavour Enhancer (Ins 627, Ins 631) And Asafetida}",
+   "nutritionalInfo": {
+    "Energy": "499 kcal",
+    "Protein": "5.7 g",
+    "Carbohydrate": "66.2 g",
+    "Total Sugars": "7.1 g",
+    "Added Sugars": "5.1 g",
+    "Total Fat": "24.2 g",
+    "Trans Fat": "0.1 g",
+    "Saturated Fat": "10.9 g",
+    "Sodium": "961.4 mg",
+    "Serving Size": "20 g"
+   },
+   "storageInstructions": "Store in a cool, dry & hygienic place.",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "No Rulz Cheese Curlz",
@@ -1237,7 +1631,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40207044_7-bingo-no-rulz-cheese-curlz-corn-puffs.jpg"
-    }
+    },
+    "barcode": "8901725117528"
    },
    {
     "title": "80g",
@@ -1274,7 +1669,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40207044-8_5-bingo-no-rulz-cheese-curlz-corn-puffs.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! No Rulz Cheese Curlz is a baked snack you must try. It's got it all, cheesy taste and aroma, creamy bite, and the goodness of a baked snack. This yummy and cheesy puff will melt in your mouth. Just open a pack and let its taste take over your taste buds. Bingo! No Rulz Cheese Curlz is a light and airy puff that's a fun and baked snack you can enjoy anytime and anywhere. You can have it while watching your favourite series on the TV, during your daily commute, while playing games with your buds, or just sneak a bite between lectures. Whenever hunger strikes, just open a pack. These cheesy puffs don't have loud and explosive masala flavours, but it has the perfect balance of cheese and creamy flavour to leave you craving for more. So, forget all the rules and make playtime, Bingo! No Rulz time with this cheesy snack. There's no end to fun when you have these by your side.",
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "No Rulz Masala Curlz",
@@ -1290,7 +1691,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40207045_7-bingo-no-rulz-masala-curlz-corn-puffs.jpg"
-    }
+    },
+    "barcode": "8901725117504"
    }
   ],
   "images": [
@@ -1318,7 +1720,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40207045-8_5-bingo-no-rulz-masala-curlz-corn-puffs.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! No Rules Masala Curls is the perfect baked snack you were looking for. These tasty puffs are seasoned with the perfect balance of handpicked spices to give you the tasty and spicy baked puffs you so deserve. Made with quality ingredients, the puffs are not fried but baked, giving them a crispy and crunchy texture. Light and airy, these spicy puffs will melt in your mouth. You can enjoy Bingo! No Rules Masala Curls anytime and anywhere, whether you are travelling, taking a break from work or lectures, playing your favourite game on your mobile, streaming the latest movie, or just hungry and in the mood to have something baked and yummy. Pop open a pack and treat your taste buds. One bite will leave you craving for more. So forget all the rules and make playtime Bingo! No Rules time with this masala snack. There's no end to fun when you have these by your side.",
+   "ingredients": "Dedermed corn grits, seasoning mix {refined palmolein, spices & condiments (onion, garlic, chilli, coriander, cumin, turmeric), sugar, iodized salt, maltooextrin, milk solids, hydrolysed vegetables, protein, anticacking agent (insss1), emulsifier (ins 414), flavour enhancers (ins 627, ins 631), refined palm oil)}",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "507",
+    "Protein (g)": "6.0",
+    "Carbohydrate (g)": "44",
+    "Of which Sugar (g)": "6.4",
+    "Fat (g)": "25.0",
+    "Trans fat (g)": "0.1",
+    "Saturated (g)": "11.7",
+    "Sodium (mg)": "796.0"
+   },
+   "manufacturerName": "(A) ITC Limited Foods Division Plot No. 1 Sector 11 IIE Ranipur Sidcul Haridwar Hardwar (Uttarakhand) - 249403",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "XXX Chilli Cheese Baked Puffs",
@@ -1353,7 +1773,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361065-5_1-bingo-chilli-cheese-baked-puff-snacks.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo Chilli Cheese Baked Puff Snacks are a crunchy and flavoursome treat perfect for snacking anytime. These baked puffs combine the zest of chilli with a hint of cheese, creating a tasty and satisfying bite. Ideal for sharing with friends or enjoying on your own, they make a delightful addition to your snack collection. Light, crispy and full of flavour, Bingo Chilli Cheese Baked Puffs are a fun and enjoyable snack option.",
+   "ingredients": "Degermed Corn Grits, Edible Vegetable Oil And Seasoning (Sugar, Iodized Salt, Onion Powder, Spices And Condiments, Whey Powder, Cheese Powder (0.35%), Maida (Refined Wheat Flour), Flavour Enhancers (635, 508), Garlic Powder, Natural Flavours And Natural Flavouring Substances, Black Salt, Acidity Regulators (Citric Acid, Malic Acid, Tartaric Acid), Nature Identical Flavouring Substances, Tomato Powder, Hydrolyzed Vegetable Protein And Yeast Extract).",
+   "nutritionalInfo": {
+    "Energy": "520 kcal",
+    "Protein": "6.1g",
+    "Carbohydrate": "61.1g",
+    "Total Sugars": "5.0g",
+    "Added Sugars": "4.6g",
+    "Total Fat": "28.7g",
+    "Saturated Fat": "6.7g",
+    "Trans Fat": "0.1g",
+    "Cholesterol": "0.1mg",
+    "Sodium": "952.0mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "XXX Hot N Spicy Baked Puffs",
@@ -1400,7 +1839,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361069_1-bingo-hot-n-spicy-baked-puff-snacks.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Hot N Spicy Baked Puff Snacks are a crunchy and flavourful snack perfect for any time of day. These baked puffs combine a delightful mix of spices to create a tasty and enjoyable bite. Ideal for sharing with friends or enjoying on your own, they offer a fun and satisfying snacking experience. Light, crispy and packed with flavour, Hot N Spicy Baked Puffs are a treat for all snack lovers.",
+   "ingredients": "Degermed Corn Grits, Edible Vegetable Oil And Seasoning [Sugar, Spices And Condiments (Red Chilli Powder, Garlic Powder, Red Chilli Extract, Onion Powder, Ginger Powder), Iodized Salt, Nature Identical Flavouring Substances, Acidity Regulators (Citric Acid, Acetic Acid, Tartaric Acid, Malic Acid), Natural Flavours And Natural Flavouring Substances, Flavour Enhancer (635) And Refined Sunflower Oil] And Iodized Salt.",
+   "nutritionalInfo": {
+    "Energy": "522kcal",
+    "Protein": "5.9g",
+    "Carbohydrate": "61.3g",
+    "Total Sugars": "3.2g",
+    "Added Sugars": "3.0g",
+    "Total Fat": "28.8g",
+    "Saturated Fat": "6.7g",
+    "Trans Fat": "0.1g",
+    "Sodium": "1040.1mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "XXX Hot N Sweet Baked Puffs",
@@ -1435,7 +1892,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361067-5_1-bingo-hot-n-sweet-baked-puff-snacks.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Hot N Sweet Baked Puff Snacks are a light and crunchy snack, perfect for anytime enjoyment. These baked puffs combine a subtle sweetness with a hint of spice to create a flavoursome bite. Ideal for sharing with friends or enjoying on your own, they make a tasty and satisfying snack option. Crispy, enjoyable and full of flavour, Hot N Sweet Baked Puffs are a fun treat for all snack lovers.",
+   "ingredients": "Degermed Corn Grits, Edible Vegetable Oil And Seasoning (Sugar (3.0%), Iodized Salt, Spices And Condiments, Maltodextrin, Onion Powder, Garlic Powder (0.44%), Sweet Whey Powder, Tomato Powder, Acidity Regulators (Citric Acid, Tartaric Acid), Natural Flavours And Natural Flavouring Substances, Hydrolyzed Vegetable Protein, Flavour Enhancer (635) And Nature Identical Flavouring Substances).",
+   "nutritionalInfo": {
+    "Energy": "533kcal",
+    "Protein": "5.8g",
+    "Carbohydrate": "62.7g",
+    "Total Sugars": "3.6g",
+    "Added Sugars": "3.1g",
+    "Total Fat": "28.8g",
+    "Saturated Fat": "6.7g",
+    "Trans Fat": "0.1g",
+    "Cholesterol": "0.1mg",
+    "Sodium": "964.2mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tedhe Medhe Cocktail Mix",
@@ -1451,7 +1927,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40200733_10-bingo-tedhe-medhe-namkeens-cocktail-mix.jpg"
-    }
+    },
+    "barcode": "8901725000066"
    }
   ],
   "images": [
@@ -1479,7 +1956,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200733-8_8-bingo-tedhe-medhe-namkeens-cocktail-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Want some tasty and spicy snacks to serve to your guests? Looking for some crunchy munchies to complement your drinks? Need something fun to add to the party spread? No need to look anymore. We have the perfect snack for any occasion - Bingo! Tedhe Medhe Cocktail Mix. This crunchy and spicy snack is the namkeen that you were searching for.\nThe Cocktail Mix has a delectable combination of flavoured nibbles like peanuts, Kabuli chana, and green peas. Together, they give you the ideal snack to complement any drink. Give your parties a Tedhe Medhe twist with this namkeen snack. Seasoned with a spicy and tangy flavour, this delectable mix is the perfect nibble with your favourite drinks.",
+   "ingredients": "PEANUT (29.5%), PEAS DRY (27.1%), KABULI CHANA (26.5%), REFINED PALMOLEIN, SEASONING {SPICES AND CONDIMENTS}, IODIZED SALT, BLACK SALT, NATURAL FLAVOURS AND NATURAL FLAVOURING SUBSTANCES, COLOURS (INS 100 (i), INS 133), CONTAINS WHEAT, NUT, MAY CONTAINS SOY, MILK",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20 g",
+    "Energy (Kcal)": "495",
+    "Carbohydrate (g)": "46.3",
+    "Total Sugars (g)": "2.9",
+    "Added Sugars (g)": "0.0",
+    "Dietary Fibre (g)": "14.9",
+    "Total Fat (g)": "29.3",
+    "Trans fat* (g)": "0.1",
+    "Saturated fat (g)": "9.5",
+    "Sodium (mg)": "1127.0",
+    "Protein (g)": "18.9"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tedhe Medhe Pulse Mix",
@@ -1495,7 +1994,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40200734_10-bingo-tedhe-medhe-namkeens-pulse-mix.jpg"
-    }
+    },
+    "barcode": "8901725000219"
    }
   ],
   "images": [
@@ -1523,7 +2023,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200734-8_8-bingo-tedhe-medhe-namkeens-pulse-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The anytime namkeen snack that you were looking for is here. Get yourself a pack of Bingo! Tedhe Medhe Pulse Mix. This snack is perfect to satisfy your cravings. Looking for something chatpata to spice up the boring lecture? Want something fun to add to the party spread? Just in the mood to nibble something yummy while streaming a movie? The answer is Bingo! Tedhe Medhe Pulse Mix. No matter the occasion, this crunchy snack is just perfect. This crunchy snack has a great combination of dals - chana dal, moong dal, and masoor dal.\nThey are seasoned with a spicy and tangy flavour, with the classic Bingo! Tedhe Medhe twist. Not just that, it is also low in sugar and is a source of dietary fibre and protein. What more do you need! The next time you are planning a party or just looking for some namkeen, bring home a pack of Bingo! Tedhe Medhe Pulse Mix and give your day a Bingo! twist.",
+   "ingredients": "BENGAL GRAM (30.7%), GREEN GRAM (22.5%), LENTIL (21.7%), REFINED PALMOLEIN AND SEASONING (#SPICES AND CONDIMENTS, IODIZED SALT, BLACK SALT, NATURAL FLAVOURS AND NATURAL FLAVOURING SUBSTANCES, MALTODEXTRIN, ONION POWDER, STARCH, GARLIC POWDER, NATURE IDENTICAL FLAVOURING SUBSTANCES, TAMARIND POWDER, REFINED PALMOLEIN, DEHYDRATED KACHRI, DEHYDRATED YELLOW CHILLI AND HYDROLYZED VEGETABLE PROTEIN), CONTAINS WHEAT, SOY, MAY CONTAINS NUT, MILK",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "486",
+    "Protein (g)": "17.5",
+    "Carbohydrate (g)": "49.7",
+    "Total Sugars (g)": "0.6",
+    "Added Sugars (g)": "0.0",
+    "Total Fat (g)": "26.4",
+    "Trans fat* (g)": "0.1",
+    "Saturated fat (g)": "11.7",
+    "Sodium (mg)": "897.0",
+    "Serving Size": "20 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Delishus Namkeen Party Mix",
@@ -1539,7 +2060,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371048_1-bingo-delishus-namkeen-party-mix.jpg"
-    }
+    },
+    "barcode": "8909081012877"
    },
    {
     "title": "165g",
@@ -1570,7 +2092,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371049_1-bingo-delishus-namkeen-party-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy the bold and savoury taste of Bingo! Delishus Namkeen Party Mix, a perfect snack for every celebration. Packed with the goodness of fibre and protein, it offers a satisfying crunch in every bite. Made with no palm oil, it is a smarter choice for mindful snacking. Ideal for parties, gatherings, or everyday cravings, this delicious mix brings together flavour, texture, and quality for a truly enjoyable snacking experience.",
+   "ingredients": "Peanut (21.5%), Refined Rice Bran Oil, Kabuli Chana (15.5%), Maida (Refined Wheat Flour), Green Peas (9.5%), Sugar, Stabilizers (1403, 1420), Starch, Iodized Salt, #~Spices and Condiments, Maltodextrin, Milk Solids, Sesame Seed, Raising Agent [500(ii)], Black Salt, Soya Sauce Powder, Acidity Regulator (Citric Acid), Colours (133, 100) and Flavour Enhancer (635).\n#Used as flavouring agents. ~Contains Onion and Garlic.",
+   "nutritionalInfo": {
+    "Energy": "496 kcal",
+    "Protein": "14.9 g",
+    "Carbohydrate": "52.8 g",
+    "Total Sugars": "9.4 g",
+    "Added Sugars": "9.3 g",
+    "Dietary Fibre": "14.9 g",
+    "Total Fat": "28.3 g",
+    "Saturated Fat": "6.4 g",
+    "Occurring Trans Fat)": "0.09 g",
+    "Cholesterol": "0.1 mg",
+    "Sodium": "615.9 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Delishus Jaggery Coated Makhana",
@@ -1586,7 +2128,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371051_1-bingo-delishus-jaggery-coated-makhana.jpg"
-    }
+    },
+    "barcode": "8909081013119"
    },
    {
     "title": "100g",
@@ -1617,7 +2160,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371052_1-bingo-delishus-jaggery-coated-makhana.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy a deliciously wholesome snack with Bingo! Delishus Jaggery Coated Makhana, crafted for mindful indulgence. Packed with the goodness of fibre, it supports a balanced lifestyle while offering a satisfying crunch. Made with no palm oil and low in sodium, it is a lighter snacking option for any time of the day. The natural jaggery coating adds a subtle sweetness, making it a tasty yet better-for-you treat.",
+   "ingredients": "Cane Jaggery (57.0%), Makhana (17.0%), Refined Ricebran Oil and Sesame Seed.",
+   "nutritionalInfo": {
+    "Energy": "484 kcal",
+    "Protein": "4.1 g",
+    "Carbohydrate": "71.7 g",
+    "Total Sugars": "58.3 g",
+    "Added Sugars": "57.1 g",
+    "Dietary Fibre": "8.1 g",
+    "Total Fat": "21.9 g",
+    "Saturated Fat": "5.2 g",
+    "Trans Fat": "0.05 g",
+    "Sodium": "16.9 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Delishus Masala Coated Peas",
@@ -1633,7 +2195,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371046_1-bingo-delishus-masala-coated-peas.jpg"
-    }
+    },
+    "barcode": "8909081012853"
    }
   ],
   "images": [
@@ -1655,7 +2218,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371046-6_1-bingo-delishus-masala-coated-peas.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy the bold and tangy taste of Bingo! Delishus Masala Coated Peas, a crunchy snack perfect for every occasion. Packed with the goodness of protein, it offers a satisfying bite while supporting your daily nutritional needs. Made with no palm oil, it is a smarter snacking option for mindful indulgence. Ideal for parties, movie nights, or everyday cravings, this flavourful treat delivers the perfect balance of spice, crunch, and enjoyment in every handful.",
+   "ingredients": "Green Peas (41.8%), Refined Rice Bran Oil, Stabilizer (1403), Starch, Sugar, #Spices and Condiments, Iodized Salt, Black Salt, Maltodextrin, Acidity Regulator (Citric acid), Flavour Enhancer (635), Natural Flavours and Natural Flavouring Substances, Nature Identical Flavouring Substances and Colours [133, 100(i)].\n#Used as Flavouring Agents.",
+   "nutritionalInfo": {
+    "Energy": "461 kcal",
+    "Protein": "13.5 g",
+    "Carbohydrate": "64.5 g",
+    "Total Sugars": "11.9 g",
+    "Added Sugars": "9.7 g",
+    "Total Fat": "17.1 g",
+    "Saturated Fat": "4.0 g",
+    "Occurring Trans Fat)": "0.1 g",
+    "Sodium": "1150.2 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Delishus Mexican Style Coated Peas",
@@ -1671,7 +2252,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371047_1-bingo-delishus-mexican-style-coated-peas.jpg"
-    }
+    },
+    "barcode": "8909081012860"
    }
   ],
   "images": [
@@ -1693,7 +2275,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371047-6_1-bingo-delishus-mexican-style-coated-peas.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy the bold and zesty flavour of Bingo! Delishus Mexican Style Coated Peas, a crunchy snack perfect for any occasion. Packed with the goodness of iron and protein, it supports your daily nutritional needs while delivering a satisfying bite. Made with no palm oil, it is a smarter snacking choice. Ideal for parties, movie nights, or everyday cravings, this tasty treat brings together flavour, crunch, and better-for-you indulgence in every handful.",
+   "ingredients": "Green Peas (42.5%), Refined Rice Bran Oil, Stabilizer (1403), Starch, Sugar, Seasoning [#~Spices and Condiments, Iodized Salt, Maltodextrin, Maida (Refined Wheat flour), Sugar, Black Salt, Sweet Whey Powder, Nature Identical Flavouring Substances, Acidity Regulators (Citric acid, Malic acid, Tartaric acid), Hydrolyzed Vegetable Protein, Flavour Enhancers (635, 508), Natural Flavours and Natural Flavouring Substances and Tomato Powder], Iodized Salt and Colours [133, 100(i)].\n#Used as Flavouring Agents. ~Contains Onion and Garlic.",
+   "nutritionalInfo": {
+    "Energy": "465 kcal",
+    "Protein": "14.1 g",
+    "Carbohydrate": "64.9 g",
+    "Total Sugars": "11.8 g",
+    "Added Sugars": "9.6 g",
+    "Total Fat": "16.8 g",
+    "Saturated Fat": "3.9 g",
+    "Occurring Trans Fat)": "0.1 g",
+    "Sodium": "750.1 mg",
+    "Iron": "6.5 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Delishus Onion & Garlic Coated Peas",
@@ -1709,7 +2310,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371045_1-bingo-delishus-onion-garlic-coated-peas.jpg"
-    }
+    },
+    "barcode": "8909081012846"
    }
   ],
   "images": [
@@ -1731,7 +2333,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371045-6_1-bingo-delishus-onion-garlic-coated-peas.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy the savoury taste of Bingo! Delishus Onion & Garlic Coated Peas, a crunchy snack perfect for any time cravings. Packed with the goodness of protein and iron, it supports your daily nutritional needs while delivering bold flavour in every bite. Trans fat-free, it is a smarter snacking choice for mindful indulgence. Ideal for parties, gatherings, or everyday enjoyment, this tasty snack combines crunch, seasoning, and satisfaction in every handful.",
+   "ingredients": "Green Peas (41.6%), Refined Rice Bran Oil, Stabilizer (1403), Starch, Sugar, #~Spices and Condiments, Iodized Salt, Wheat Flour (Atta), Maltodextrin, Acidity Regulator (Citric acid), Refined Palm Oil, Flavour Enhancers (627, 631), Natural Flavours and Natural Flavouring Substances, Colours [133, 100(i)] and Nature Identical Flavouring Substances.\n#Used as Flavouring Agents. ~Contains Onion and Garlic.",
+   "nutritionalInfo": {
+    "Energy": "460 kcal",
+    "Protein": "12.7 g",
+    "Carbohydrate": "65.8 g",
+    "Total Sugars": "12.8 g",
+    "Added Sugars": "10.4 g",
+    "Total Fat": "16.9 g",
+    "Saturated Fat": "4.0 g",
+    "Occurring Trans Fat)": "0.1 g",
+    "Sodium": "960.1 mg",
+    "Iron": "4.5 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kitchen Style Ribbon Pakoda",
@@ -1747,7 +2368,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40371640_1-bingo-kitchen-style-ribbon-pakoda.jpg"
-    }
+    },
+    "barcode": "8909081011566"
    }
   ],
   "images": [
@@ -1766,7 +2388,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371640-5_1-bingo-kitchen-style-ribbon-pakoda.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Kitchen Style Ribbon Pakoda brings you the authentic taste of a traditional South Indian favourite in every crunchy bite. Made with carefully selected ingredients and expertly seasoned, these crisp ribbon-shaped snacks deliver a delicious balance of flavour and texture. Perfect for teatime, parties, or on-the-go snacking, they offer a satisfying crunch that's ideal for sharing with family and friends.",
+   "ingredients": "Rice Flour, Refined Rice Bran Oil, Gram Flour (Besan), Roasted Bengal Gram Flour, Urad Flour, Iodised Salt, Red Chilli Powder, Ajwain (0.4%), Asafoetida, and Paprika Oleoresin.\nAllergen Information:\nContains Wheat. May also contain Nuts, Milk, Soya, and Sulphites.",
+   "nutritionalInfo": {
+    "Energy": "585 kcal",
+    "Protein": "7.5 g",
+    "Carbohydrate": "44.4 g",
+    "Total Sugars": "0.6 g",
+    "Added Sugars": "0.0 g",
+    "Dietary Fibre": "4.5 g",
+    "Total Fat": "43.0 g",
+    "Saturated Fat": "10.5 g",
+    "Trans Fat*": "0.1 g",
+    "Sodium": "648 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tedhe Medhe Chatpat Kairi Mango Drink",
@@ -1782,7 +2423,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40347815_1-bingo-chatpat-kairi-kaccha-mango-drink.jpg"
-    }
+    },
+    "barcode": "8909081006142"
    }
   ],
   "images": [
@@ -1804,6 +2446,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347815-6_1-bingo-chatpat-kairi-kaccha-mango-drink.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bingo! Chatpat Kairi Kaccha Mango Drink is a delicious and refreshing drink made from raw mangoes, blended with traditional spices for a tangy and cooling flavour. It’s perfect for keeping you refreshed and hydrated on warm days. This tasty drink offers a healthy and flavourful way to enjoy the classic summer favourite anytime, whether on its own or with your meals.",
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  }
 ]

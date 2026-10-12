@@ -68,7 +68,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40268428-8_3-del-monte-extra-light-olive-oil-rich-in-antioxidants-cholesterol-trans-fat-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional quality and versatility of Del Monte Extra Light Olive Oil, a culinary delight sourced from premium olives in Italy and Spain. This refined oil boasts a delicate flavour and high smoke point, making it the perfect choice for a variety of cooking techniques, from baking and sautéing to frying. Its light texture ensures a seamless blend in marinades, dressings, and sauces, allowing the natural flavours of your dishes to shine. Renowned for its health benefits, Del Monte Extra Light Olive Oil is rich in monounsaturated fats and antioxidants, promoting heart health and overall well-being. Whether you're cooking everyday meals or crafting gourmet recipes, this versatile oil from the house of Del Monte will become a staple in your kitchen, offering a refined yet unobtrusive addition to your culinary creations.",
+   "ingredients": "Refined Olive Oil, Extra Virgin Olive Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "15ml",
+    "Energy (kcal)": "824",
+    "Protein (g)": "0",
+    "Carbohydrate (g)": "0",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "91.6",
+    "Saturated Fat (g)": "14",
+    "Trans Fat (g)": "0",
+    "Monounsaturated Fat (mg)": "68.7",
+    "Polyunsaturated Fat (mg)": "9.2",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "0"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Keep tightly sealed to preserve freshness",
+   "manufacturerName": "Packalia SL. Ctra Isla Menor",
+   "fssaiLicense": "10012042000203",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Classic Multipurpose Olive Oil",
@@ -139,7 +163,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40041191-8_2-del-monte-classic-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary and self-care experiences with the finest blend of extra virgin and refined olive oil from Italy and Spain. Crafted by Del Monte to bring the best of global cuisine to your kitchen, this versatile oil is perfect for continental, Mediterranean, and light Indian cooking, from shallow frying to hair and skin care. Infused with a delightful taste and aroma, it is rich in healthy fats, monounsaturated fatty acids, and vitamin E, while being free from argemone oil and boasting Zero trans fat and Zero cholesterol. Unlock a world of flavour and nourishment with this exceptional olive oil, suitable for a wide range of culinary and personal care applications.",
+   "ingredients": "Refined Olive Oil, Virgin Olive Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Energy": "824 kcal",
+    "Protein": "0 g",
+    "Total Carbohydrate": "0 g",
+    "Sugars": "0 g",
+    "Total Fat": "91.6 g",
+    "Saturated Fat": "13.7 g",
+    "Trans Fat": "0 g",
+    "Monounsaturated Fat": "68.7 g",
+    "Polyunsaturated Fat": "9.2 g",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place, away from direct heat and light",
+   "manufacturerName": "Packalia SL. Ctra Isla Menor",
+   "countryOfOrigin": "Spain, Italy, India"
+  }
  },
  {
   "title": "Olive Pomace Oil",
@@ -210,7 +254,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40041184-8_3-del-monte-olive-pomace-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Brought to you from the house of Del Monte, this olive oil is imported especially from Italy and Spain. It has a light flavour and aroma which ensures minimal change in the taste of the preparation. It is ideal for Indian cooking, including sautéing and deep frying.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15ml",
+    "Energy (kcal)": "824 kcal",
+    "Protein (g)": "0 g",
+    "Carbohydrate (g)": "0 g",
+    "Total Sugars (g)": "0 g",
+    "Added Sugars (g)": "0 g",
+    "Total Fat (g)": "92 g",
+    "Saturated Fat (g)": "17 g",
+    "Trans Fat (g)": "0 g",
+    "Monounsaturated Fat (mg)": "59 mg",
+    "Polyunsaturated Fat (mg)": "16 mg",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "0 mg"
+   },
+   "usageInstructions": "With a high smoking point, Pomace Olive Oil is ideal for everyday Indian cooking- from making pulao gravies paranthas to deep-frying pakoras & snacks etc.",
+   "manufacturerName": "Packalia SL. Ctra Isla Menor Km 18 41703 Dos Hermanas (Sevilla)",
+   "countryOfOrigin": "Spain, Italy, India"
+  }
  },
  {
   "title": "Canola Oil",
@@ -226,7 +292,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40319627_1-del-monte-canolarefined-rapeseed-oil.jpg"
-    }
+    },
+    "barcode": "8901246007315"
    },
    {
     "title": "5L",
@@ -257,7 +324,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40319628_1-del-monte-canolarefined-rapeseed-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Canola oil is a premium edible oil extracted from the finest quality rapeseeds in Canada. It is light in flavour, has a high smoke point, and a smooth texture. Well-suited for regular Indian dishes and cooking methods.",
+   "ingredients": "Edible Refined Rapeseed Oil - Low Erucic Acid (Canola Oil)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "15 g",
+    "Energy": "900 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "100 g",
+    "Saturated Fat": "7 g",
+    "Trans Fat": "0 g",
+    "Monounsaturated Fat": "60 g",
+    "Polyunsaturated Fat": "30 g",
+    "Omega-3": "8 g",
+    "Omega-6": "19 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and well-ventilated place\n*Avoid direct heat and light",
+   "manufacturerName": "Del Monte Foods Private Limited Edible Oil Co (D) (L.L.C)",
+   "countryOfOrigin": "UAE"
+  }
  },
  {
   "title": "Olivkare Pro Multi Source Edible Oil",
@@ -273,7 +365,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40366844_1-del-monte-olivkare-heart-pro-blended-oil.jpg"
-    }
+    },
+    "barcode": "8901246006899"
    }
   ],
   "images": [
@@ -295,7 +388,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366844-6_1-del-monte-olivkare-heart-pro-blended-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Blended Oil From Del Monte: Oil is blended in a proportion\nthat helps control bad cholesterol, leveraging the nutritional benefits of\nolive oil and rice bran oil.\nContains MUFA, PUFA, Omega-6: Oil contains good fats which\nhelp control bad cholesterol.\nPacked With Antioxidants: Contains natural antioxidants for\na stronger you.\nContains Oryzanol: Helps keep a check on cholesterol levels\nand works best as part of a healthy diet and active lifestyle.\nIdeal For Everyday Indian Cooking: Suitable for daily\ncooking needs such as sautéing, deep frying and tempering.",
+   "ingredients": "Physically Refined Rice Bran Oil - 80% By Weight, Olive Pomace Oil - 20% By Weight\nFree From Argemone Oil.",
+   "nutritionalInfo": {
+    "Serving Size": "10 g",
+    "No. Of Servings": "87",
+    "Energy": "900 kcal",
+    "Protein": "0 g",
+    "Total Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "100 g",
+    "Saturated Fat": "22 g",
+    "Trans Fat": "0 g",
+    "Monounsaturated Fat": "48 g",
+    "Polyunsaturated Fat": "28 g",
+    "Cholesterol": "0 mg",
+    "Oryzanol": "850 mg",
+    "Sodium": "0 mg",
+    "Omega 6 Fatty Acids": "15.07 g",
+    "Omega 3 Fatty Acids": "1.4 g",
+    "Omega 9 Fatty Acids": "40 g"
+   },
+   "manufacturerName": "Del Monte Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Eggless Mayonnaise",
@@ -311,7 +431,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40102152_5-del-monte-mayonnaise-eggless-spout.jpg"
-    }
+    },
+    "barcode": "8901246004444"
    },
    {
     "title": "700g",
@@ -366,7 +487,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40102152-8_1-del-monte-mayonnaise-eggless-spout.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightfully thick and creamy goodness of Del Monte Mayo, a versatile condiment that elevates every snack and dish. Crafted with carefully selected quality ingredients, this eggless mayonnaise boasts a smooth and rich texture, delivering a burst of flavour in every bite. Spread it on bread slices, burgers, pizzas, and pasta for an extra layer of creaminess and taste.\nDip your nuggets, wedges, chips, and French fries into this versatile mayo for a flavourful experience. With 80% less fat and no artificial colours or flavours, Del Monte Mayo is the ultimate kitchen essential, perfect for whipping up delicious burgers, sandwiches, and wraps. Discover the perfect balance of creaminess and flavour with this truly versatile condiment.",
+   "ingredients": "Water, Edible Vegetable Oil (Soyabean Oil), Sugar, Thickeners (INS 1442, INS 415), Iodized Salt, Milk Solids, Acidity Regulators (INS 260, INS 270, INS 330), Preservatives (INS 211, INS 202), Spice Extract and Sequestrant (INS 386). ALLERGEN: CONTAINS MILK",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "10 g",
+    "Energy": "359 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "11.10 g",
+    "Total Sugars": "6 g",
+    "Added Sugars": "6 g",
+    "Total Fat": "35 g",
+    "Saturated Fat": "7.81 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "586 mg",
+    "RDA": "Recommended Dietary Allowance of an average adult (2000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Refrigerate after opening and consume within one month\n*Do not freeze",
+   "manufacturerName": "Â Del Monte Foods Private Limited C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sandwich Spread Mayo",
@@ -416,7 +559,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226276_1-del-monte-sandwich-spread-mayo.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Sandwich Spread is a magical blend of eggless mayo, cheese, exotic spices, jalapeno, gherkins & Del Monte Tomato Ketchup which creates lip-smacking sandwiches in no time.",
+   "ingredients": "Edible Vegetable Oil (Soyabean Oil), Water, Gherkins (8%), Jalapenos (8%), Tomato Ketchup {Water, Tomato Paste (29%), Sugar, Iodized Salt, Acidity Regulator (INS 260), Thickeners (INS 1422, INS 415), Spices & Condiments (Onion Powder, Garlic Powder & Mixed Spices) & Preservative (INS 211)}, Cheese Powder (5%), Sugar, Iodized Salt, Milk Solids, Thickeners (INS 1442, INS 415), Acidity Regulators (INS 260, INS 330), Mixed Spices {Garlic Powder (0.3%), Parsley (0.05%), Spice Extracts}, Preservatives (INS 202, INS 211) & Sequestrant (INS 386).",
+   "usageInstructions": "Makes for a perfect sandwich or burger spread. Use it as a dip with fried snacks like French Fries, Nuggets & Chicken Wings.",
+   "nutritionalInfo": {
+    "Energy": "430 kcal,",
+    "Total Carbohydrate": "5.2 g,",
+    "Sugars": "10.6 g,",
+    "Protein": "1.6 g,",
+    "Total Fat": "40.3 g,",
+    "Saturated Fat": "6.2 g,",
+    "Trans Fat": "0 g,",
+    "Cholesterol": "0 mg"
+   },
+   "manufacturerName": "Del Monte Foods Private Limited C-2",
+   "fssaiLicense": "10012042000203",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Achari Mayo",
@@ -454,7 +615,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226278-6_5-del-monte-achari-mayo.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Achari Mayo is a tangy mix of Eggless Mayo and premium Achari seasoning. Spread it on your parantha or apply it on paneer sandwiches to get that chatpata taste. Use as a dip for fried and grilled snacks.",
+   "ingredients": "Water, Edible Vegetable Oil (Soyabean Oil), Achari Seasoning (5%) (Spices, Iodized Salt, Maltodextrin, Sugar, Refined Soyabean Oil), Thickeners (Ins 1442, Ins 1405, Ins 415, Ins 412), Sugar, Milk Solids, Acidity Regulators (Ins 260, Ins 334), Iodized Salt, Preservatives (Ins 211, Ins 202) And Sequestrant (Ins 386). Contains Permitted Natural Colour {ins 160 A(Iii)} And Added Nature Identical Flavouring Substances.",
+   "usageInstructions": "Use it as a Dip for fried or grilled snacks like Paneer Tikka, Chicken Tikka or Grilled Kebabs.\nSpread to give your burgers and sandwiches a unique spicy Indian touch.",
+   "nutritionalInfo": {
+    "Energy": "264.15 kcal,",
+    "Total Carbohydrate": "14.37 g,",
+    "Sugars": "6.38 g,",
+    "Protein": "1.20 g,",
+    "Total Fat": "24.0 g,",
+    "Monounsaturated Fat": "6.33 g,",
+    "Polyunsaturated Fat": "11.77 g,",
+    "Saturated Fat": "4.33 g,",
+    "Trans Fat": "0 g,",
+    "Cholesterol": "0 mg"
+   },
+   "manufacturerName": "Del Monte Foods Private Limited C-2",
+   "fssaiLicense": "10012042000203",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mint Mayo",
@@ -492,7 +673,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40295203-6_4-del-monte-mint-mayo.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Mint Mayo gives the eggless mayo a delightful desi twist. Del Monte Eggless Mayo is made with carefully selected quality ingredients, which give it a smooth and thick texture coupled with a rich and creamy taste. Spread it on bread slices, burgers and pizzas or use it as a sauce for pasta to create a flavourful experience. It can also be used as a dip for a variety of snacks like nuggets, wedges, french fries or meats like kebabs, etc.",
+   "ingredients": "Water, Edible Vegetable Oil (Soyabean Oil), Lodized Salt, Sugar, Milk Solids, Thickeners (Ins 1442, Ins 415), Acidity Regulators (Ins 260, Ins 270, Ins 330), Herbs And Spice Extract, Natural & Nature-Identical Flavouring Substances (Mint Flavour), Garlic Powder, Natural Food Colour (Ins 140), Preservatives (Ins 211, Ins 202), Lime Juice Powder, Sequestrant (Ins 386)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "10g",
+    "Energy": "393.3 kcal",
+    "Protein": "1.2 g",
+    "Carbohydrate": "5.9 g",
+    "Total Sugars": "2.1g",
+    "Added Sugars": "2g",
+    "Total Fat": "40.1 g",
+    "Saturated Fat": "6g",
+    "Trans Fat": "0g",
+    "Sodium": "786 mg"
+   },
+   "storageInstructions": "*Store in cool, dry & hygienic place\n*Refrigerate after opening\n*Do not freeze",
+   "manufacturerName": "Del Monte Foods Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000180"
+  }
  },
  {
   "title": "Tandoori Mayo",
@@ -530,7 +732,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40275471-6_5-del-monte-tandoori-mayo-used-as-dip-rich-creamy-texture.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experiences with Del Monte Tandoori Mayo, a delightful fusion of creamy mayonnaise and the bold, spicy flavours of traditional Indian tandoori masala. Crafted with high-quality ingredients, including egg yolks, oil, and a carefully curated blend of aromatic spices, this versatile condiment adds a delectable twist to a variety of dishes. Spread it on sandwiches and wraps, use it as a dip for tandoor-grilled meats and paneer tikka, or incorporate it into your favourite pasta and pizza recipes - the possibilities are endless. Indulge in the rich, tangy taste that perfectly complements the Indian palate, and discover how Del Monte Tandoori Mayo can transform your meals into culinary masterpieces.",
+   "ingredients": "Edible Vegetable Oil, Water, Mixed Spices, Sugar, Thickness (Ins 1442, Ins 1450, Ins 416), Milk Solids, Iodised Salt, Acidity Regulator (Ins 202, Ins 211), Parsley (0.15%) And Sequestrant (Ins 385)",
+   "nutritionalInfo": {
+    "Serving Size": "10 g",
+    "Servings Per Container": "28 (Approx.)",
+    "Energy": "339 kcal",
+    "Protein": "0.9 g",
+    "Carbohydrates": "15 g",
+    "Total Sugars": "7.8 g",
+    "Added Sugars": "6.6 g",
+    "Total Fat": "30.6 g",
+    "Saturated Fat": "4.5 g",
+    "Trans Fat": "0 g",
+    "Sodium": "1220 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Do not freeze",
+   "manufacturerName": "Del Monte Foods Private Limited",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tomato Ketchup Classic Blend",
@@ -546,7 +769,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40015687_5-del-monte-tomato-ketchup-classic-blend-rich-thick-condiment.jpg"
-    }
+    },
+    "barcode": "8901246000422"
    }
   ],
   "images": [
@@ -565,7 +789,18 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40015687-5_7-del-monte-tomato-ketchup-classic-blend-rich-thick-condiment.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, lip-smacking taste of Del Monte Classic Blend Tomato Ketchup. Crafted with the finest vine-ripened tomatoes and a signature blend of spices, this timeless classic delivers a flavourful profile that is sure to elevate any meal. Made with a non-caloric sweetener, it offers the taste you love without the extra calories. Each batch is carefully processed to ensure a smooth texture and consistent quality, making it a versatile condiment that complements a variety of dishes. Whether you prefer the Original Blend or the tempting Sweet and Spicy variant, there's a Del Monte Tomato Ketchup to suit every taste.",
+   "ingredients": "Water, Tomato Paste (25%), Sugar, Lodized Salt, Thickeners (Ins 1422, Ins 415), Acidity Regulator (Ins 260), Spices And Condiments (Onion Powder, Garlic Powder And Mixed Spices), Sea Salt, Preservative (Ins 211), Sweetener {Steviol Glycoside (Ins 960)}",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g Serving_Size: 15 g Energy (kcal): 109.8 kcal Protein (g): 0 g Carbohydrate (g): 27.5 g Total Sugars (g): 18.4 g Added Sugars (g): 18.1 g Total Fat (g): 0 g Sodium (mg): 932.1 mg % RDA* Per Serve Energy (kcal): 0.8% Added Sugars (g) % RDA* Per Serve: 5.4% Sodium (mg) % RDA* Per Serve: 7.0% RDA*: Recommended Dietary Allowance Of An Average Adult (2000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place *Recommended refrigeration after opening",
+   "manufacturerName": "Del Monte Foods Private Limited",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tomato Ketchup Original Blend",
@@ -581,14 +816,30 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40015686_13-del-monte-tomato-ketchup-classic-blend-rich-thick-condiment.jpg"
-    }
+    },
+    "barcode": "8901246000606"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40015686_13-del-monte-tomato-ketchup-classic-blend-rich-thick-condiment.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Original Blend is now a classic blend with the same finger-licking taste! Each batch of Del Monte Tomato Ketchup goes through a rigorous process to give you a rich textured ketchup perfect for a classic, lip-smacking taste. Also available in flavours like Sweet and Spicy Tomato Ketchup and No Onion No Garlic.",
+   "ingredients": "Water, Tomato paste (25%), Sugar, Iodized Salt, Thickeners (INS 1422, INS 415), Acidity Regulator (INS 260), Spices and Condiments (Onion Powder, Garlic Powder and Mixed Spices), Sea Salt, Preservative (INS 211), Sweetener {Steviol Glycoside (INS 960)}",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "108 kcal",
+    "Total Carbohydrate": "27 g",
+    "Sugars": "18 g",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Sodium": "648 mg"
+   },
+   "manufacturerName": "Del Monte Foods Private Limited C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Honey Mustard Dressing",
@@ -626,7 +877,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318737-6_1-del-monte-honey-mustard-dressing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Honey Mustard Dressing is a delicious blend of real stone ground mustard, honey and eggless mayo. Its perfect balance of sweet and tangy notes coupled with a thick and creamy texture makes it perfect for all kinds of green, leafy salads. Elevate your salads with our delectable Honey Mustard Dressing. Crafted with a perfect balance of sweet honey and zesty mustard, this dressing adds a burst of flavour to your greens.\nVersatile for drizzling over salads or using as a dipping sauce. Enjoy the harmonious blend of natural ingredients, enhancing the taste of your dishes. Elevate your culinary experience with the rich and tangy profile of our Honey Mustard Dressing, a delightful addition to your kitchen pantry.",
+   "ingredients": "Water, Sugar, Edible Vegetable Oil (Soyabean Oil), Mustard Paste (6%), Thickeners (INS 1442, INS 415, INS 401), Honey (2.5%), Iodized Salt, Milk Solids, Acidity Regulators (INS 260, INS 270, INS 330), Preservatives (INS 211, INS 202), Spices and Condiments, Sequestrant (INS 386), Nature- Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "10 g",
+    "Energy": "187 kCal (0.9%)",
+    "Protein": "1.15 g",
+    "Carbohydrate": "19.5g",
+    "Total Sugars": "17.2 g",
+    "Added Sugars": "1.5 g (3%)",
+    "Total Fat": "11.6 g (1.7%)",
+    "Saturated Fat": "6.9 g (3.1%)",
+    "Trans Fat": "0 g (0%)",
+    "Cholesterol": "0 mg",
+    "Sodium": "668.1 mg (3.3%)",
+    "RDA": "*Recommended Dietary Allowance of an average adult (2000 kCal)"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Address",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "South West Chipotle Dressing",
@@ -664,7 +937,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318735-6_1-del-monte-south-west-chipotle-dressing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Southwest Chipotle Dressing is a mouth-watering mix of smoke-dried chipotle peppers, lime juice powder and eggless mayo. It has a distinctive smoky flavour, with mild heat that makes it perfect for any salad preparation. Immerse your taste buds in the bold and smoky flavour of our South West Chipotle Dressing. Crafted with the perfect balance of chipotle peppers, spices, and creamy goodness, it adds a spicy kick to salads, tacos, and more.\nThis versatile dressing transforms your dishes into a fiesta of flavours. Elevate your culinary journey with the enticing taste of South West Chipotle Dressing—an essential condiment that brings the spirit of the Southwest to your table.",
+   "ingredients": "Edible Vegetable Oil (Soyabean oil), Water, Spices and Condiments {Onion Powder, Garlic Powder, Chipotle Seasoning (.4%), Spice Extracts, Herbs}, Milk Solids, Sugar, Iodised Salt, Acidity Regulators (INS 26, INS 27, INS 33), Thickeners (INS 1442, INS 415), Preservatives (INS 22, INS 211), Lime Juice Powder (.5%), Sequestrant (INS 386) and Natural Flavouring Substances.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "10 g",
+    "Energy": "447 kcal",
+    "Protein": "1.5 g",
+    "Carbohydrate": "3.5 g",
+    "Total Sugars": "2.5 g",
+    "Added Sugars": "2 g",
+    "Total Fat": "47.5 g",
+    "Saturated Fat": "7.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "786 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Address",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Thousand Island Dressing",
@@ -702,7 +996,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318736-6_1-del-monte-thousand-island-dressing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Thousand Island Dressing is a magical blend of jalapeños, tomato ketchup, and eggless mayonnaise. Its sweet and spicy taste, combined with its crunchy texture, makes it a perfect spread for burgers. This classic blend of creamy goodness and zesty flavour is rich in tomato, pickle relish, and a secret mix of spices, making it the perfect companion for salads, sandwiches, and more. Versatile and delicious, it adds a burst of savoury delight to your dishes, elevating ordinary meals into extraordinary dining experiences.",
+   "ingredients": "Edible Vegetable Oil (Soyabean Oil), Water, Jalapenos, Tomato Ketchup {Water, Tomato Paste (25%), Sugar, Iodised Salt, Acidity Regulator (INS 26), Thickeners (INS 1422, INS 415), Spices & Condiments (Onion Powder, Garlic Powder and Mixed Spices), Sea Salt and Preservative (INS 211)}, Sugar, Iodised Salt, Milk Solids, Acidity Regulators (INS 26, INS 27, INS 33), Thickeners (INS 1442, INS 415), Preservatives (INS 211, INS 22), Spices Extract and Sequestrant (INS 386)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "10 g",
+    "Energy": "476 kcal",
+    "Protein": "1.1g",
+    "Carbohydrate": "24.7g",
+    "Total Sugars": "7.6 g",
+    "Added Sugars": "7.2 g",
+    "Total Fat": "40.4 g",
+    "Saturated Fat": "13.4g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "619mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Address",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Smoky Barbecue Sauce",
@@ -740,7 +1055,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318738-6_1-del-monte-smoky-barbecue-sauce.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dive into the rich and smoky goodness of our Smoky Barbecue Sauce. Crafted with a perfect blend of spices, tomatoes, and hickory smoke flavour, this sauce adds an irresistible barbecue flair to your grilled favourites. Whether used as a marinade, basting sauce, or dipping condiment, its robust taste elevates your barbecue experience. Fire up the grill and get ready to indulge in the smoky goodness of this sauce, made with the finest ingredients and authentic smoky flavour. Whether you're cooking meats, veggies, or tofu, this barbecue sauce adds a deliciously bold flavour to any dish, making every cookout a flavourful celebration of savoury delights.",
+   "ingredients": "Water, Sugar, Tomato Paste (24%), Thickeners (Ins 1422, Ins 415, Ins 457), Iodised Salt, Spices & Condiments (Mixed Spices, Garlic Powder & Onion Powder), Acidity Regulator (Ins 260), Natural Flavouring Substances, Natural Food Colour (Ins 150 C), Preservative (Ins 211)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Serving Size": "30 g",
+    "Energy": "135 kcal",
+    "Protein": "1 g",
+    "Carbohydrate": "31 g",
+    "Total Sugars": "28 g",
+    "Added Sugars": "25 g",
+    "Total Fat": "0.1 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "792 mg",
+    "RDA": "Recommended Dietary Allowance Of An Average Adult (2000 kcal)"
+   },
+   "storageInstructions": "* Store in a cool, dry, and hygienic place\n* Refrigerate after opening",
+   "manufacturerName": "Address",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Twango Sweet & Sour Sauce",
@@ -775,7 +1110,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006664-5_1-del-monte-twango-sweet-sour-sauce.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Twango Sweet and Sour Sauce with real bell-pepper bits and pineapple pulp. Del Monte Twango is perfect for adding a tangy twist to your food. It is a great dip for snacks or cooking sauce for continental dishes.",
+   "ingredients": "Water, Cream, Cheddar Cheese (8%), Onion, Edible Sunflower Oil, Modified Starch (Ins 1422), Whey Powder, Edible Common Salt, Sugar, Garlic, Lactic Acid, (Ins 270), Soya Lecithin, Flavour Enhancers (E635), Oregano, Xanthan Gum (Ins 415), Yeast Extract, Black Pepper, Sodium Benzoate (Ins 211), Potassiom Sorbate, Thyme",
+   "nutritionalInfo": {
+    "Energy": "150. 6 kcal,",
+    "Protein": "1. 3 g,",
+    "Total Fat": "0. 4 g,",
+    "Total Carbohydrate": "35. 5 g,",
+    "Sugars": "28. 4 g,",
+    "Dietary Fiber": "1. 3 g"
+   },
+   "usageInstructions": "Perfect as a dip with fried/baked/steamed snacks.",
+   "manufacturerName": "FieldFresh Foods Pvt. Ltd. C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Brewed Vinegar",
@@ -791,7 +1141,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40006671_3-del-monte-vinegar-brewed.jpg"
-    }
+    },
+    "barcode": "8901246007483"
    }
   ],
   "images": [
@@ -813,7 +1164,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006671-6_1-del-monte-vinegar-brewed.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte brewed vinegar contains no artificial chemicals or preservatives, only the natural goodness from the best vinegar. It is a mild, subtly sweet-sour vinegar, perfect for salads, dressings and dips.",
+   "ingredients": "Brewed Vinegar diluted to 5% acidity.",
+   "nutritionalInfo": {
+    "Nutrition per": "100 ml",
+    "Serving Size": "15 ml",
+    "Energy (kcal)": "0",
+    "Protein (g)": "0",
+    "Carbohydrate (g)": "0",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "0",
+    "Sodium (mg)": "0",
+    "RDA": "*Recommended Dietary Allowance of an average adult (2000 kcal)"
+   },
+   "storageInstructions": "*Keep in cool and dry place, away from sunlight\n*Close the bottle air tight after use to keep fresh",
+   "manufacturerName": "Â Del Monte Foods Private Limited C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chocolate Flavoured Syrup",
@@ -866,7 +1236,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40275470-8_1-del-monte-flavoured-syrup-chocolate-40-more-cocoa-rich-taste-thick-texture.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, decadent flavour of Del Monte Chocolate Syrup. Boasting 40% more cocoa, this syrup delivers an elevated chocolate experience that is richer, thicker, and more chocolatey than ever before. Drizzle it over your favourite ice cream, mix it into a glass of cold milk, or pair it with a slice of moist chocolate cake for a truly indulgent treat.\nThe intense, indulgent flavour of this syrup will elevate any dessert, adding a touch of decadence to your favourite sweet creations. Whether you're craving a comforting milkshake or a luxurious topping for your weekend pancakes, Del Monte Chocolate Syrup is the perfect ingredient to satisfy your chocolate cravings.",
+   "ingredients": "Sugar, Water, Liquid Glucose, Cocoa Powder (8.5%), Malt Extract, Acidity Regulator (INS 330), Preservative (INS 202), Iodized Salt, Thickener (INS 415), Nature identical flavouring substance, Allergen: Contains Wheat & Barley",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "25 g",
+    "Energy": "286.5 kCal (3.6%)",
+    "Protein": "1.9 g",
+    "Carbohydrate": "68.6 g",
+    "Total Sugars": "67.5 g",
+    "Added Sugars": "62.8 g (31.4%)",
+    "Total Fat": "0.5 g (0.2%)",
+    "Saturated Fat": "0.1 g (0.1%)",
+    "Trans Fat": "0 g (0%)",
+    "Sodium": "32 mg (0.4%)",
+    "RDA": "#Recommended Dietary Allowance of an average adult (2000 kCal)"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Del Monte Foods Private Limited",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pitted Green Olives",
@@ -910,7 +1302,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006657-8_1-del-monte-pitted-green-olives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic, versatile, and nutritious flavours of Del Monte Pitted Green Olives, sourced from the largest olive producer and exporter in Spain. These Hojiblanca olives boast a deep, rich flavour that pairs exceptionally well in a variety of Italian and Mediterranean dishes, from salads and pasta to antipasti and cocktails. Enjoy them as a healthy, convenient snacking option with their firm texture and sharp taste. Pitted for your convenience, these low-fat olives are the perfect topping or ingredient to elevate your culinary creations.",
+   "ingredients": "Olives, Water, Iodised Salt, Acidity Regulator (INS 330)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "152kcal",
+    "Protein": "0.9 g",
+    "Total Carbohydrate": "2.8 g",
+    "Sugars": "0 g",
+    "Dietary Fiber": "2.8 g",
+    "Total Fat": "15.2 g",
+    "Trans Fat": "0.2 g",
+    "Saturated Fat": "2.0 g",
+    "Monounsaturated Fat": "10.0 g",
+    "Polyunsaturated Fat": "1.1 g",
+    "Sodium": "1.5 g",
+    "Iron": "0.4 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Refrigerate after opening",
+   "manufacturerName": "AGRO SEVILLA ACEITUNAS S.C.A. La Roda de Andalucia",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Whole Green Olives",
@@ -954,7 +1368,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/256687-8_1-del-monte-whole-green-olives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with Del Monte Whole Green Olives, sourced from the largest olive producer and exporter in Spain. These vibrant green olives boast a firm texture and sharp, briny flavour that adds a refreshing contrast to rich or savoury dishes. Whether you're a seasoned chef or a home cook, these versatile olives are a must-have pantry staple. Enjoy them in a variety of Mediterranean-inspired dishes, from pizzas and pastas to antipasti platters and cocktails. With their superb colour, texture, and flavour, Del Monte Olives are not only a delicious addition to your cooking, but also a healthy snacking option. Discover the authentic taste of Spain in every bite.",
+   "ingredients": "Olives, Water, Iodised Salt, Acidity Regulator (INS 330)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "161 kcal",
+    "Protein": "0.9 g",
+    "Total Carbohydrate": "3.1 g",
+    "Sugars": "0 g",
+    "Dietary Fiber": "3.1 g",
+    "Total Fat": "16.1 g",
+    "Trans Fat": "0.2 g",
+    "Saturated Fat": "3.0 g",
+    "Monounsaturated Fat": "11.0 g",
+    "Polyunsaturated Fat": "1.2 g",
+    "Sodium": "1.3 g",
+    "Iron": "0.8 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Refrigerate after opening to maintain freshness",
+   "manufacturerName": "AGRO SEVILLA ACEITUNAS S.C.A. La Roda de Andalucia",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Sliced Green Olives",
@@ -970,7 +1406,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/256688_5-del-monte-sliced-green-olives.jpg"
-    }
+    },
+    "barcode": "8901246003621"
    },
    {
     "title": "235g",
@@ -1007,7 +1444,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/256688-8_1-del-monte-sliced-green-olives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte olives are sourced from the largest olive producer and exporter in Spain. Olives can be used while preparing Italian & Mediterranean cuisines at home, as well as for healthy snacking. Evenly cut black olive slices, ready to be used in a variety of recipes- as a topping on pasta & pizzas, or a filling in sandwiches & burgers. Ready-to-use Spanish olives of the Hojiblanca variety. Use these in pizzas, pasta, bruschetta, garlic bread, or for plain healthy snacking.",
+   "ingredients": "Olives, Water, Iodised Salt, Acidity Regulator (INS 330).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "142 kcal",
+    "Protein": "0.8 g",
+    "Total Carbohydrate": "3.2 g",
+    "Sugars": "0 g",
+    "Dietary Fiber": "3.2 g",
+    "Total Fat": "14.0 g",
+    "Trans Fat": "0.1 g",
+    "Saturated Fat": "2.0 g",
+    "Monounsaturated Fat": "9.0 g",
+    "Polyunsaturated Fat": "0.8 g",
+    "Sodium": "1.5 g",
+    "Iron": "0.5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "AGRO SEVILLA ACEITUNAS S.C.A. La Roda de Andalucia",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Sliced Black Olives",
@@ -1023,7 +1482,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100252949_7-del-monte-sliced-black-olives.jpg"
-    }
+    },
+    "barcode": "8901246003614"
    },
    {
     "title": "235g",
@@ -1060,7 +1520,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100252949-8_1-del-monte-sliced-black-olives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte olives are sourced from the largest olive producer and exporter in Spain. Olives can be used while preparing Italian Mediterranean cuisines at home, as well as for healthy snacking. Evenly cut black olive slices, ready to be used in a variety of recipes- as a topping on pasta pizzas, or a filling in sandwiches burgers. Ready-to-use Spanish olives of the Hojiblanca variety. Use these in pizzas, pasta, bruschetta, garlic bread, or for plain healthy snacking.",
+   "ingredients": "Olives, Water, Iodized Salt, Color Retention Agent (INS 579)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "145 kcal",
+    "Protein": "0.5 g",
+    "Total Carbohydrate": "3.0 g",
+    "Sugars": "0 g",
+    "Dietary Fiber": "3.0 g",
+    "Total Fat": "14.6 g",
+    "Trans Fat": "0.1 g",
+    "Saturated Fat": "2.3 g",
+    "Monounsaturated Fat": "9.3 g",
+    "Polyunsaturated Fat": "0.8 g",
+    "Sodium": "0.7 g",
+    "Iron": "8.1 mg"
+   },
+   "manufacturerName": "AGRO SEVILLA ACEITUNAS S.C.A. La Roda de Andalucia",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Green Olives Stuffed with Pimiento Paste",
@@ -1092,7 +1573,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100252948-4_1-del-monte-green-olives-stuffed-with-pimiento-paste.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Stuffed Green Olives have a red chilli pepper called Pimento stuffed in them to add flavour, colour and texture. They are great size, firm quality and somewhat salty flavour. The olives are sourced from the Andalusia region of Spain and are predominantly the Hojiblanca variety, which is used both as Table Olives and for making Olive Oil.",
+   "ingredients": "INGREDIENTS\nOlives (49.78%), Water, Pimiento, thickening agent (INS 401, 412), Salt, acidifying agent (INS 330), Permitted Class 2 Preservatives (INS 202).",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "135 kcal",
+    "Protein": "0.7g",
+    "Total Carbohydrate": "2.1g",
+    "Sugars": "0g",
+    "Dietary Fiber": "2.1g",
+    "Total Fat": "13.8g",
+    "Trans Fat": "0.1g",
+    "Saturated Fat": "3.0g",
+    "Monounsaturated Fat": "9.0g",
+    "Polyunsaturated Fat": "0.7g",
+    "Sodium": "1.5g",
+    "Iron": "0.4mg"
+   },
+   "manufacturerName": "AGRO SEVILLA ACEITUNAS S.C.A. La Roda de Andalucia",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Durum Wheat Spaghetti",
@@ -1108,7 +1610,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40006655_5-del-monte-durum-wheat-pasta-spaghetti.jpg"
-    }
+    },
+    "barcode": "8901246003577"
    }
   ],
   "images": [
@@ -1136,7 +1639,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006655-8_1-del-monte-durum-wheat-pasta-spaghetti.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in an authentic Italian dining experience with Del Monte's exceptional pasta, crafted from the finest durum wheat semolina. Each strand of their Spaghetti Pasta is meticulously prepared to achieve the perfect balance of firmness and tenderness, delivering a satisfying bite with every forkful. Whether you prefer your pasta al dente or cooked to perfection, Del Monte's consistent texture pairs beautifully with your favourite sauces and ingredients. Packed with protein, an essential building block for healthy muscles and bones, and a source of dietary fibre that helps you feel fuller for longer, Del Monte pasta is not only delicious but also nutritious. Elevate your home-cooked meals with the unparalleled quality and flavour of Del Monte's pasta, a true taste of Italy in the comfort of your own kitchen.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "350 kcal",
+    "Protein": "12 g",
+    "Total Carbohydrate": "71 g",
+    "Sugar": "3.2 g",
+    "Dietary Fibre": "3.5 g",
+    "Total Fat": "1.2 g",
+    "Saturated Fat": "0.3 g",
+    "Trans Fat": "0 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Pasta Zara Via Castellana",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Durum Wheat Spirali",
@@ -1180,7 +1701,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/258602-8_1-del-monte-durum-wheat-pasta-spirali.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte pasta is made from durum wheat semolina. It is a source of protein - an essential building block for healthy muscles and bones. It is also a source of dietary fibre which slows down the absorption of carbohydrates and fats in the body, thereby making you feel satiated for a longer period of time.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "80g (Dry)",
+    "Energy (kcal)": "360",
+    "Protein (g)": "12",
+    "Carbohydrate (g)": "71",
+    "Total Sugars (g)": "3",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "2",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "10",
+    "Dietary Fibre (g)": "4"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Pasta Zara Via Castellana",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Fiesta Fruit Cocktail",
@@ -1233,7 +1775,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/260595-8_1-del-monte-fiesta-fruit-cocktail.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Fiesta Fruit Cocktail is a tasty and lively mix of sweet pineapples, crispy papaya, tasty cherries and chewy nata de coco that makes for a strong dessert or snack for the complete family. The product weighs 439g, is vegetarian, comes in a tin, has a shelf life of 24 months, and should be stored in a cool, dry and hygienic place, away from direct heat and light.",
+   "ingredients": "Peaches, Pears, Water, Grapes, Corn Syrup, Sugar, Pineapple, Cherries (Cherries, Carmine)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "91 kcal",
+    "Total Carbohydrate": "22.8 g",
+    "Sugars": "20.9 g",
+    "Protein": "0.37 g",
+    "Total Fat": "0.17 g",
+    "Saturated Fat": "0.03 g",
+    "Trans Fat": "0 g",
+    "Dietary Fiber": "0.9 g",
+    "Sodium": "3.87 mg"
+   },
+   "manufacturerName": "Del Monte Philippines",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pineapple Slices in Syrup",
@@ -1249,7 +1809,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/256647_5-del-monte-pineapple-slices.jpg"
-    }
+    },
+    "barcode": "8901246006493"
    }
   ],
   "images": [
@@ -1277,7 +1838,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/256647-8_1-del-monte-pineapple-slices.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful taste of Del Monte's premium Pineapple Slices, a true classic in the world of canned fruits. Born in 1886, Del Monte has long been renowned for its path-breaking canned products, and these pineapple slices are no exception. Packed with freshness and bursting with flavour, these vegetarian-friendly slices are a convenient and lightweight delight to savour. Encased in a light sugar syrup and free from preservatives, these high-quality pineapple slices are a true taste of tropical indulgence. Bring the refreshing and vibrant flavour of Del Monte's Pineapple Slices into your home today and enjoy their delightful texture and sweetness, perfect for a quick snack or as a versatile ingredient in your culinary creations.",
+   "ingredients": "Pineapple, Water, Sugar, Acidity Regulator",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "71 kcal",
+    "Protein": "0.4 g",
+    "Total Carbohydrate": "18.5 g",
+    "Sugars": "16.2 g",
+    "Total Fat": "0.1 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Dietary Fiber": "0.9 g",
+    "Sodium": "1.7 mg",
+    "Potassium": "82 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place, away from direct heat and light",
+   "manufacturerName": "Del Monte Philippines",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sweet Corn Kernels",
@@ -1293,7 +1874,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/256683_4-del-monte-corn-whole-kernel.jpg"
-    }
+    },
+    "barcode": "8901246001320"
    }
   ],
   "images": [
@@ -1312,7 +1894,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/256683-5_2-del-monte-corn-whole-kernel.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Whole Kernel Corn is picked and packed at the ideal stage of maturity. This guarantees both quality and taste. It has no artificial additives or preservatives but offers an unsurpassed fresh-cut taste and the required nutrients for healthy living.",
+   "ingredients": "Corn (61.9%), Water, Sugar, Iodized Salt, Acidity Regulator (INS 330)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "61.8 kcal",
+    "Protein": "1.5 g",
+    "Total Fat": "0.8 g",
+    "Total Carbohydrate": "12.1g",
+    "Sugars": "4.2 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "Del Monte Foods Private Limited C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Baked Beans in Tomato Sauce",
@@ -1328,7 +1925,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40102161_3-del-monte-baked-beans-in-sauce.jpg"
-    }
+    },
+    "barcode": "8901246004437"
    }
   ],
   "images": [
@@ -1350,7 +1948,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40102161-6_3-del-monte-baked-beans-in-sauce.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "DelMonte Baked Beans is the source of protein, an essential building block for healthy muscles and bones. Baked beans provide energy while being low in fat which makes them a perfect accompaniment.",
+   "ingredients": "Water, Beans(19.9%), Tomato Paste (10%), Sugar, Iodized Salt, Starch, Vinegar",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "79kcal",
+    "Protein": "5.0g",
+    "Total Carbohydrate": "13.5g",
+    "Sugars": "5.3g",
+    "Total Fat": "0.5g",
+    "Saturated Fat": "0.2g",
+    "Trans Fat": "0.1g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Â Del Monte Foods Private Limited C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Four Seasons Mixed Fruit Drink",
@@ -1394,7 +2009,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124303-8_1-del-monte-fruit-juice-four-seasons.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Four Seasons mixed fruit drink is made using Pineapple, Mango, Orange and Guava. Have it chilled and it is sure to refresh and delight you with its fruity goodness and exotic flavours. The flavours of 4 fantastic fruits – Pineapple, Mango, Guava and Orange – come together in one divine fruit drink.",
+   "ingredients": "Water, Pineapple Juice (Reconstituted from Pineapple Juice Concentrate) (21%), Sugar, Mango Pulp (5%), Guava Pulp (1%), Acidity Regulator (INS 330), Antioxidant (INS 300), Contains Permitted Natural And Synthetic Food Colours (ins 160a(iii) & Ins 127) And Added Flavours (natural, Nature Identical And Artificial Flavouring Substances - Orange Flavour)",
+   "storageInstructions": "Store in a cool, dry & hygienic place.\nAfter opening, store under refrigerated conditions and consume within the same day to protect taste & quality.\nDo not use it if the pack is swollen/puffed/leaking.",
+   "nutritionalInfo": {
+    "Energy": "52 kcal(6.2%)",
+    "Protein": "0.1 g",
+    "Total Carbohydrate": "13 g",
+    "Total Sugars": "12.7 g",
+    "Added Sugars": "9.3 g (45%)",
+    "Total Fat": "0 g (0%)",
+    "Sodium": "0 mg (10%)"
+   },
+   "manufacturerName": "Del Monte Foods Private Limited C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Green Apple Fruit Drink",
@@ -1410,7 +2041,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/266866_5-del-monte-fruit-drink-green-apple.jpg"
-    }
+    },
+    "barcode": "8901246001443"
    }
   ],
   "images": [
@@ -1438,7 +2070,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/266866-8_1-del-monte-fruit-drink-green-apple.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the refreshing and delectable taste of Del Monte's Green Apple Fruit Drink. Crafted from the finest orchard-fresh apples, this tantalizing beverage offers a burst of crisp, tangy flavour that is perfect for enjoying on its own or as a mixer in your favourite cocktails and mocktails. With each sip, you'll be transported to a lush, crunchy apple orchard, leaving a lingering, refreshing finish that is sure to brighten your day. Versatile and bursting with fruitiness, this green apple delight is a must-try for apple lovers and those seeking a truly uplifting and rejuvenating drinking experience.",
+   "ingredients": "Water, Apple Juice (Reconstituted From Apple Juice Concentrate) (21%), Sugar, Acidity Regulator (Ins 296, Ins 330), Natural And Nature Identical Flavouring Substances, Iodised Salt, Sweetener {Steviol Glycoside (Ins 960)}, Synthetic Food Colours (Ins 102, Ins 133)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "240 ml",
+    "Energy (kcal)": "45.2 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "11.3 g",
+    "Total Sugars": "11.3 g",
+    "Added Sugars": "8.6 g (41.3%)",
+    "Total Fat": "0 g (0%)",
+    "Sodium": "12 mg (1.4%)",
+    "RDA": "Recommended Dietary Allowance Of An Average Adult (2000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*After opening, refrigerate and consume within same day",
+   "manufacturerName": "DMonte Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mango Fruit Drink",
@@ -1454,7 +2106,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100423119_4-del-monte-fruit-drink-mango.jpg"
-    }
+    },
+    "barcode": "8901246001511"
    }
   ],
   "images": [
@@ -1473,7 +2126,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100423119-5_2-del-monte-fruit-drink-mango.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Our pure juice category contains a full range of 100% pure juice from concentrate. Del Monte Mango Fruit Drink is made from the yummy and delicious flavour of juicy and delicious mangoes. This uplifting green mango fruit drink is a real treat for mango lovers.",
+   "ingredients": "Water, Mango Pulp (17%), Sugar, Acidity Regulator (Ins 330), Stabiliser (Ins 440) And Antioxidant (Ins 300)",
+   "storageInstructions": "Store in a cool, dry & hygienic place.\nAfter opening, store under refrigerated conditions and consume within the same day to protect taste & quality.\nDo not use if the pack is swollen/puffed/leaking.",
+   "manufacturerName": "Fieldfresh Foods Pvt. Ltd. C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peach Fruit Drink",
@@ -1517,7 +2177,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304008-8_1-del-monte-peach-fruit-drink.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the ultimate peach experience with this premium Del Monte Peach Fruit Drink. Crafted from the ripest, most succulent peaches sourced from around the world, including Africa, this refreshing beverage is bursting with juicy peach chunks that deliver a tongue-tingling, flavourful delight. Containing phosphorous and other essential minerals, it helps strengthen bones and teeth, making it a healthful choice. With no artificial colours, flavours or preservatives, this drink offers pure, fresh peach goodness in every sip. Enjoy the combination of the peach's exquisite flavours and the satisfying texture of the peach bits for a truly exquisite taste sensation.",
+   "ingredients": "Water, Peach Puree (Reconstituted From Peach Puree Concentrate) And Bits (14%), Sugar, Acidity Regulator (Ins 330), Stabilizer (Ins 466), Iodised Salt, Synthetic Food Colours (Ins 102, Ins 110), Added Nature-Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "240 ml",
+    "Energy (kcal)": "54.8 kcal",
+    "Protein (g)": "0 g",
+    "Carbohydrate (g)": "13.7 g",
+    "Total Sugars (g)": "13.3 g",
+    "Added Sugars (g)": "11.6 g",
+    "Total Fat (g)": "0 g",
+    "Sodium (mg)": "4 mg",
+    "RDA": "96°RDA Per Serve"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Refrigerate after opening and consume within 2-3 days to protect taste",
+   "manufacturerName": "DMonte Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pineapple Fruit Drink",
@@ -1533,7 +2213,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/265882_5-del-monte-fruit-drink-pineapple-with-real-pineapple-pulp.jpg"
-    }
+    },
+    "barcode": "8901246001719"
    }
   ],
   "images": [
@@ -1561,7 +2242,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265882-8_1-del-monte-fruit-drink-pineapple-with-real-pineapple-pulp.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the refreshing and tropical delight of Del Monte Pineapple Fruit Drink. Crafted with the finest quality pineapples handpicked in the Philippines, this thirst-quenching beverage is bursting with the sweet and tangy flavour of ripe pineapples, making every sip a truly rejuvenating experience. Packed with real pineapple pulp and juice, this naturally fat-free drink is a delightful treat for all age groups. Brimming with antioxidants, it helps boost the immune system, providing a delicious way to refresh your spirits any time of the day. With its vibrant colour and irresistible fruitiness, this flavourful fruit drink is sure to transport you to a tropical paradise with every sip.",
+   "ingredients": "Water, Pineapple Juice (Reconstituted From Pineapple Juice Concentrate) (13.5%), Sugar, Pineapple Pulp (6%), Acidity Regulator (Ins 330), Antioxidant (Ins 300), Natural Food Colour {Ins 160A (Iii)}, Added Flavours (Natural Flavouring Substances- Pineapple), Sweetener {Steviol Glycoside (Ins 960)}",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "240 ml",
+    "Energy (kcal)": "53",
+    "Protein (g)": "0.1",
+    "Carbohydrate (g)": "13.2",
+    "Total Sugars (g)": "13.1",
+    "Added Sugars (g)": "10.6",
+    "Total Fat (g)": "0",
+    "Sodium (mg)": "0",
+    "RDA": "Recommended Dietary Allowance Of An Average Adult (2000 kcal)"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*After opening, refrigerate and consume within same day to protect taste",
+   "manufacturerName": "DMonte Foods Pvt. Ltd",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pineapple Orange Fruit Drink",
@@ -1605,7 +2306,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/265873-8_1-del-monte-fruit-drink-pineapple-orange.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte Pineapple Orange Fruit Drink brings the wonderful yet exclusive blend of pineapple and orange together. The users thus can like the flavour of the two delicious fruits in one drink only. Prepared from natural and real pineapple juice, this drink gives the greatest quality. Premium Ingredients:- Del Monte Pineapple Orange fruit drink is made from sweet, juicy pineapples sourced from the Philippines and tangy oranges.",
+   "ingredients": "Water, Pineapple Juice (Reconstituted from Pineapple Juice Concentrate) (34%), Sugar, Orange Juice (Reconstituted from Orange Juice Concentrate) (6.3%), Acidity Regulator (INS 330) and Antioxidant (INS 300) Contains Permitted Natural Colour (ins 160a(iii)) And Added Flavours (natural And Artificial Flavouring Substances - Orange Flavour)",
+   "nutritionalInfo": {
+    "Energy": "48.8 kcal (5.9%)",
+    "Protein": "0.1 g",
+    "Total Carbohydrate": "12.1 g",
+    "Total Sugars": "12 g",
+    "Added Sugars": "7.5 g (36%)",
+    "Total Fat": "0 g (0%)",
+    "Sodium": "0 mg (0%)"
+   },
+   "storageInstructions": "Store in a cool, dry & hygienic place.\nAfter opening, store under refrigerated conditions and consume within the same day to protect taste & quality.",
+   "manufacturerName": "Del Monte Foods Private Limited C-2",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixed Fruit Juice",
@@ -1621,7 +2338,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40215924_1-del-monte-100-mixed-fruit-juice-with-vitamins-a-c-e-boosts-immunity.jpg"
-    }
+    },
+    "barcode": "8901246005632"
    }
   ],
   "images": [
@@ -1640,7 +2358,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40215924-5_1-del-monte-100-mixed-fruit-juice-with-vitamins-a-c-e-boosts-immunity.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte 100% Mixed Fruit Juice comes with Vitamins A-C-E that helps boost immunity. It is filled with the goodness of antioxidants. Now enjoy the taste of best-picked apples, guavas, pineapple, mangoes and oranges. A smart way to start your day with. It was loved not only because of its great taste but because of its high nutrition content. It does not contain any added sugar and additional preservatives.",
+   "ingredients": "Water, Mixed Fruit Juice Concentrate(22%) ( Apple, Pineapple, Orange, Mango, Guava) and Vitamin Premix ( Vitamin A, Vitamin C, Vitamin E ) Contains Added flavours ( Natural Flavouring Substances) Reconstituted from Fruit Juice Concentrate. Contains Naturally Occurring Sugar - No Added Preservatives",
+   "nutritionalInfo": {
+    "Energy": "48.4 kcal,",
+    "Protein": "0.3 g,",
+    "Total Carbohydrate": "11.8 g,",
+    "Sugars": "10.3 g,",
+    "Total Fat": "0 g,",
+    "Saturated Fat": "0 g,",
+    "Trans Fat": "0 g,"
+   },
+   "usageInstructions": "1. A smart way to start your day.\n2. Enjoy with your friends and family.",
+   "manufacturerName": "FieldFresh Foods Pvt. Ltd Survey No. 155/1",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000180"
+  }
  },
  {
   "title": "King Coconut Water",
@@ -1684,7 +2419,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40215923-8_1-del-monte-king-coconut-water.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Replenish & Refresh naturally with Del Monte King Coconut Water. Golden Brown in colour, King Coconuts are native only to Sri Lanka, where they are loved for their higher water content and their sweeter, richer taste. Harvested from handpicked King Coconuts in Sri Lanka, Del Monte King Coconut Water is loaded with electrolytes, that help you rehydrate quickly - whether it's post a workout or a hot day in the sun.",
+   "ingredients": "Coconut Water (99%), Fructose & Antioxidant (INS 300)",
+   "usageInstructions": "Store in a cool, dry & hygienic place.\n After opening, store under refrigerated conditions and consume within the same day to protect taste & quality. \nDo not use it if the pack is swollen/puffed/leaking.",
+   "manufacturerName": "Silvermill Natural Beverages (Pvt.) Ltd",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "Sri Lanka"
+  }
  },
  {
   "title": "Premium Dried Cranberries",
@@ -1700,7 +2443,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40006651_5-del-monte-premium-dried-cranberries.jpg"
-    }
+    },
+    "barcode": "8901246002945"
    }
   ],
   "images": [
@@ -1728,7 +2472,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40006651-8_1-del-monte-premium-dried-cranberries.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Del Monte offers the finest quality dried cranberries. The dark maroon dried cranberries are replete with quality, nutrients and health.",
+   "ingredients": "Cranberries, Sugar and Edible Vegetable Oil (Sunflower Oil)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "338kcal",
+    "Protein": "0.38g",
+    "Total Carbohydrate": "82.9g",
+    "Sugars": "73.7g",
+    "Dietary Fibre": "7.5g",
+    "Total Fat": "0.13g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Monounsaturated Fatty Acids": "0g",
+    "Polyunsaturated Fatty Acids": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "4.86mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Ocean Spray Cranberries",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dried Blueberries",
@@ -1772,7 +2538,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40102151-8_1-del-monte-dried-blueberries.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dried blueberries are a source of dietary fibre which slows absorption of carbohydrates and fats making you feel satiated.\nThey also provide energy while being low in fat and sodium making it a perfect health snack",
+   "ingredients": "Blueberries",
+   "usageInstructions": "Dried blueberries are packed with antioxidants and vitamins. dried blueberries are ideal for mixing in cereals or adding to cakes and muffins.\nThey also make a delicious addition to salads and are perfect for snacking on. One taste of these plump and sweet dried blueberries and your taste buds will be in paradise.",
+   "manufacturerName": "Meduri Farms",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "California Prunes Premium Pitted",
@@ -1816,7 +2589,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40015681-8_1-del-monte-california-prunes-premium-pitted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Prunes is a known Super Fruit that has both health enhancing nutrients and an appealing taste. Having Prunes everyday paves the way to a healthier lifestyle and brings the fun back into nutrition. Del Monte Premium Pitted Prunes from California are simply the juiciest prunes of unsurpassed richness and flavour. A tasty snack naturally fat free and very low in sodium. Bite away to a youthful skin eat Del Monte prunes everyday to maintain healthy skin as they are a good source of vitamin A. Improves digestive health prunes are a known laxative, rich in soluble and insoluble fibre which helps you maintain a good digestive system.",
+   "ingredients": "Prunes, Preservative (Ins 202)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "130g",
+    "Energy": "240kcal",
+    "Protein": "2.2g",
+    "Total Carbohydrate": "63.9g",
+    "Sugars": "38.1g",
+    "Dietary Fibre": "7.1g",
+    "Total Fat": "0.4g",
+    "Saturated Fat": "0.1g",
+    "Trans Fat": "0g",
+    "Sodium": "2.0mg",
+    "Monounsaturated Fatty Acids": "0g",
+    "Polyunsaturated Fatty Acids": "0g",
+    "Cholesterol": "0mg",
+    "Potassium": "732mg"
+   },
+   "storageInstructions": "* Store in a cool, dry place\n* The convenient re-sealable bag ensures that prunes remain fresh for a longer time",
+   "manufacturerName": "A) Mariani packing Company",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Prunes",
@@ -1860,7 +2657,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40102150-8_1-del-monte-prunes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pitted California prunes are a great ready-to-eat snack. They can be used for cooking as well as baking. High in soluble and insoluble fibre, they act as antioxidants. Prunes play an important role in improving your digestive system by acting as a natural laxative. Besides, they also help in maintaining healthy eyes, hair, skin, and nails. As pioneers in packaged fruits with a heritage that goes back more than a century, Del Monte believes in sourcing the tastiest and best quality fruits from around the world for our consumers in India. It is this philosophy that drives us to source the juiciest pineapple slices and tidbits from the Philippines, the most succulent peach halves imaginable from South Africa, and exquisite prunes and cranberries from North and South America. Del Monte prunes are highly beneficial if consumed every day as they are rich in dietary fibre, a source of potassium, and naturally low in sodium and fat.",
+   "ingredients": "Ingredients\nPrunes\nPreservative (INS 202).",
+   "usageInstructions": "Prunes are a rich source of dietary fiber, they are naturally fat and cholesterol free, and very low in sodium, are a source of potassium. Can be had on daily basis as a part of a healthy lifestyle. Blend them in smoothies or add them in salads and breakfast cereals. Can also be used to make cakes and cookies.",
+   "manufacturerName": "A) Mariani packing Company",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Royal Arabian Dates",
@@ -1895,6 +2699,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40306997-5_4-del-monte-royal-arabian-dates.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the sweet and succulent taste of Del Monte Royal Arabian Dates. Sourced from the finest date palms, these premium dates are handpicked and carefully selected for their quality and flavour. With their soft texture and rich caramel-like flavour, they're perfect for snacking, baking, or adding to your favourite recipes. Whether you're enjoying them on their own or incorporating them into your cooking, Del Monte Royal Arabian Dates offer a delicious and nutritious way to satisfy your sweet cravings.",
+   "ingredients": "Dates",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "28g",
+    "Energy": "337 kcal",
+    "Protein": "2.4 g",
+    "Carbohydrate": "82 g",
+    "Total Sugars": "68 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "7 g",
+    "Sodium": "28 mg"
+   },
+   "storageInstructions": "Store in cool and dry place\nTransfer contents to an airtight container after opening",
+   "manufacturerName": "Del Monte Foods Private Limited",
+   "fssaiLicense": "10012064000180",
+   "countryOfOrigin": "India"
+  }
  }
 ]

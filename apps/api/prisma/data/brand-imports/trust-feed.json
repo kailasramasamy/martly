@@ -41,7 +41,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70001393_5-trust-classic-sulphurless-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Trusts Classic, Sulphurless Sugar is a classy way to sweeten the cup of hot or cold beverages. It is ideal for travel and table use in cafes in an elegant way of serving and provides clean and defined portions. It dissolves instantly and has no harmful chemicals and is completely untouched as well as hygienically packed in a dust-free environment. Also, it is a vegetarian product and also conforms to European standards.",
+   "ingredients": "Sulphurless Sugar",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (kcal)": "399",
+    "Carbohydrates (g)": "99.8",
+    "Cholesterol (mg)": "0",
+    "Fat (g)": "0",
+    "Protein": "0"
+   },
+   "storageInstructions": "Store in a clean and dry place\nOnce opened, store in an airtight container",
+   "manufacturerName": "SIMBHAOLI SUGARS LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Superfine Sugar",
@@ -76,6 +91,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/257849-5_1-trust-classic-superfine-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Superfine Sugar dissolves instantly and this is particularly helpful when mixing sugar into cold drinks such as iced tea. It is an ideal sweetener for cold beverages, breakfast cereals and juices, dairy desserts, milk and puddings, bakery snacks, cakes and cooking, sweetmeat preparations and fruit and salad dressings. It has no harmful chemicals and is completely untouched, hygienically packed in a dust-free environment. Also, it is a 100% vegetarian product and also conforms to European standards. Benefits -- 100% Vegetarian.",
+   "ingredients": "Refined Sugar",
+   "storageInstructions": "Ready to use\nStore in a clean and dry Place . Once opend it has to stored in a air tight container",
+   "manufacturerName": "SIMBHAOLI SUGARS LTD",
+   "countryOfOrigin": "India"
+  }
  }
 ]

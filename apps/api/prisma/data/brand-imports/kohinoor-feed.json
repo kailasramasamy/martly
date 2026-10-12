@@ -44,7 +44,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370720_1-kohinoor-super-value-authentic-basmati-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Each grain of Kohinoor Super Value Authentic Basmati Rice keeps alive the tradition of serving true flavours. These grains are naturally curated and nurtured with the utmost care so that they bring out authentic taste of every dish.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "345.00",
+    "Protein (g)": "6.50",
+    "Carbohydrates (g)": "79.00",
+    "Total Sugars (g)": "0.10",
+    "Added Sugars (g)": "0.00",
+    "Total Fat (g)": "0.50",
+    "Sodium (mg)": "3.00"
+   },
+   "manufacturerName": "(AQ) Adani Wilmar Limited",
+   "fssaiLicense": "10013021000661",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Royale Authentic Biryani Basmati Rice",
@@ -60,7 +75,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40114916_5-kohinoor-basmati-rice-royale-authentic-biryani.jpg"
-    }
+    },
+    "barcode": "8906008813937"
    },
    {
     "title": "500g",
@@ -97,7 +113,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129876_4-kohinoor-basmati-rice-royale-authentic-biryani.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The extra-long and flavourful grains of Kohinoor Royale Authentic Basmati rice is best suited for special dishes like Biryani. They bring out the true flavours of every ingredient to give you the most authentic experience. Kohinoor Royale Basmati Rice is ideal for both everyday consumption and for special occasions when you want to put up your best dishes. It is characterized by long grains that double in size when cooked.",
+   "ingredients": "Basmati Rice",
+   "usageInstructions": "Store it in a cool and dry place in an airtight container.",
+   "nutritionalInfo": {
+    "Energy Value": "345.00 kcal",
+    "Protein": "6.50g",
+    "Carbohydrate": "79.00g",
+    "Total Sugar": "Not More Than 0.10g",
+    "Added Sugar": "0.00g",
+    "Fat": "0.50g",
+    "Sodium": "3.00mg"
+   },
+   "manufacturerName": "Adani Wilmar Ltd. 'Fortune House'",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Royale Pulao Basmati Rice",
@@ -113,7 +145,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40114915_6-kohinoor-basmati-rice-royale-authentic-biryani.jpg"
-    }
+    },
+    "barcode": "8906008814019"
    }
   ],
   "images": [
@@ -141,7 +174,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114915-8_2-kohinoor-basmati-rice-royale-authentic-biryani.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The extra-long, flavourful grains of Kohinoor Royale Authentic Basmati Rice are best suited for special dishes such as biryani. They enhance the true flavours of every ingredient, giving you an authentic culinary experience. Kohinoor Royale Basmati Rice is ideal for both everyday consumption and special occasions when you want to serve your finest dishes. It is characterised by long grains that double in size when cooked.",
+   "ingredients": "Basmati Rice",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g And Per Serve",
+    "Serving Size": "30g",
+    "Servings Per Pack": "33",
+    "Energy Value (kcal)": "345.00 Per 100g, 104.00 Per Serve",
+    "Protein (g)": "6.50 Per 100g, 2.00 Per Serve",
+    "Carbohydrate (g)": "79.00 Per 100g, 24.00 Per Serve",
+    "Total Sugar (g)": "#Nmt 0.10 Per 100g, 0.10 Per Serve",
+    "Added Sugar (g)": "0.00 Per 100g, 0.00 Per Serve",
+    "Fat (g)": "0.50 Per 100g, 0.15 Per Serve",
+    "Sodium (mg)": "3.00 Per 100g, 1.00 Per Serve",
+    "%Contribution To RDA Per Serve Energy Value": "5.20%",
+    "%Contribution To RDA Per Serve Fat": "0.20%",
+    "%Contribution To RDA Per Serve Sodium": "0.05%",
+    "%Contribution To RDA Per Serve Added Sugar": "0.00%"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Adani Wilmar Limited",
+   "fssaiLicense": "10013021000661",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Gold Extra Long Basmati Rice",
@@ -157,7 +214,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/271541_7-kohinoor-basmati-rice-extra-long-gold.jpg"
-    }
+    },
+    "barcode": "8904505700187"
    },
    {
     "title": "5kg",
@@ -188,7 +246,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/271070_1-kohinoor-basmati-rice-extra-long-gold.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kohinoor Extra Long Grain Basmati Rice - The grains are in uniform size and do not stick after cooking. If cooked properly it enlarges almost double its size. It has a rich aroma, and great taste and is known for its freshness. This rice is free from pesticides and chemicals and has high nutritional content. It is widely used for making delicious cuisines like Pulao, Biryani, Plain Rice, Kheer, etc.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy Value(kcal)": "345.00 kcal",
+    "Protein(g)": "6.50 g",
+    "Carbohydrate(g)": "79.00 g",
+    "Total Sugar(g)": "0.10 g",
+    "Added Sugar(g)": "0.00 g",
+    "Fat(g)": "0.50 g",
+    "Sodium(mg)": "3.00 mg"
+   },
+   "manufacturerName": "Adani Wilmar Ltd. 'Fortune House'",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Supreme Authentic Aged Basmati Rice",
@@ -204,7 +278,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40158501_3-kohinoor-basmati-rice-supreme-authentic-aged.jpg"
-    }
+    },
+    "barcode": "8904250701453"
    }
   ],
   "images": [
@@ -226,7 +301,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40158501-6_2-kohinoor-basmati-rice-supreme-authentic-aged.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Supreme range of Kohinoor has extra-long basmati rice that is grown in the foot hills of Himalayas and nurtured with river water. This exceptionally long basmati rice gives sweet aroma and taste to your food. Each pack comes with the guaranteed quality standards of Kohinoor products. Use it to cook delicious pulao, jeera rice or biryani.",
+   "usageInstructions": "Best used for all types for rice delicacies like Biryani and steamed rice.",
+   "ingredients": "Basmati Rice",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt. Ltd. 71",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000729"
+  }
  },
  {
   "title": "Traditional Authentic Aged Basmati Rice",
@@ -270,7 +353,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005687-8_1-kohinoor-basmati-rice-traditional-authentic-aged.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exquisite taste and aroma of Kohinoor's traditional authentic basmati rice, cultivated in the foothills of the Himalayas. This premium-quality rice undergoes a meticulous process, with each grain hand-picked and naturally aged for 1-2 years to attain a length of approximately 7.25 mm. The result is a flavourful, aromatic, and extra-long grain basmati rice that delivers a sweet, nutty flavour and enriches the taste of your dishes. Carefully nurtured and processed at a world-class facility, Kohinoor rice is a perfect blend of traditional techniques and modern processes, ensuring strict quality checks for every grain. Indulge in the essence of good food and bring boundless happiness to your family with this naturally enriched, long-grained basmati rice.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30 g",
+    "Energy Value (kcal)": "345.00",
+    "Protein (g)": "6.50",
+    "Carbohydrate (g)": "79.00",
+    "Total Sugar (g)": "0.10",
+    "Added Sugar (g)": "0.00",
+    "Fat (g)": "0.50",
+    "Sodium (mg)": "3.00"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place",
+   "manufacturerName": "Adani Wilmar Ltd. 'Fortune House'",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Feast Rozana Basmati Rice",
@@ -286,7 +386,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40355315_1-kohinoor-feast-rozana-basmati-rice.jpg"
-    }
+    },
+    "barcode": "8904505700002"
    },
    {
     "title": "5kg",
@@ -317,7 +418,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355316_1-kohinoor-feast-rozana-basmati-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kohinoor Feast Rozana Basmati Rice brings the perfect blend of taste, aroma, and texture to your everyday meals. Carefully sourced from the finest fields, each grain is naturally aged to ensure long, slender grains that cook fluffy and non-sticky. Its subtle fragrance and delicate flavour make it an ideal choice for daily cooking, from simple pulao to wholesome curries. With a consistent quality that you can trust, Kohinoor Feast Rozana turns everyday dining into a delightful experience. Celebrate the joy of authentic basmati rice in every meal, crafted to make ordinary moments truly memorable.",
+   "manufacturerName": "AWL Agri Business Limited (Formerly known as",
+   "fssaiLicense": "10013021000661",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mogra Basmati Rice",
@@ -352,7 +459,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900459015-5_1-kohinoor-mogra-basmati-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kohinoor mogra basmati rice has been an integral part of different rice recipes in every Indian household. It is makes yummy dishes as this rice is processed under the supervision of experts. It can be used in a variety of rice dishes including biryani pulao and other Indian dishes. One can have it with meat, curries, dals and many more food items.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Charminar Select Basmati Rice",
@@ -368,7 +480,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100005768_10-kohinoor-charminar-basmati-rice-select.jpg"
-    }
+    },
+    "barcode": "8906008813913"
    },
    {
     "title": "5kg",
@@ -405,7 +518,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005768-8_1-kohinoor-charminar-basmati-rice-select.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the exquisite flavours and aromas of Kohinoor Charminar Select Basmati Rice, a true tribute to the delectable culinary traditions of the Nizams. Sourced from the foothills of the Himalayas, this premium rice offers a distinct aroma and exceptional taste, making it the preferred choice for those who appreciate the finest quality in their meals. Harvested with meticulous care and precision, the long, delicate grains undergo a meticulously crafted milling process to ensure they retain their natural whiteness, slender shape, and captivating essence. Known for its fluffy texture and non-sticky consistency, this versatile rice is perfect for a variety of dishes, from aromatic biryanis and flavourful pilafs to everyday favourites like steamed rice, jeera rice, and fried rice. Unlock the taste of royalty in every bite and elevate your culinary experiences with Kohinoor Charminar Select Basmati Rice, a delicious and nutritious addition to your pantry that will delight you and your family at every meal and every occasion.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30 g",
+    "Energy Value (kcal)": "345.00",
+    "Protein (g)": "6.50",
+    "Carbohydrate (g)": "79.00",
+    "Total Sugar (g)": "0.10",
+    "Added Sugar (g)": "0.00",
+    "Fat (g)": "0.50",
+    "Sodium (mg)": "3.00"
+   },
+   "storageInstructions": "Store in a cool, dry and Hygienic place",
+   "manufacturerName": "Adani Wilmar Ltd. 'Fortune House'",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Charminar Everyday Basmati Rice",
@@ -421,7 +551,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002369_12-kohinoor-charminar-everyday-basmati-rice.jpg"
-    }
+    },
+    "barcode": "8906008813876"
    }
   ],
   "images": [
@@ -449,7 +580,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002369-8_1-kohinoor-charminar-everyday-basmati-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the superior taste and quality of Kohinoor Charminar Everyday Basmati Rice, a delightful concoction that pays tribute to the delicious traditions of the Nizams. Crafted with expertise, these long and delicate grains are processed to preserve their distinctive aroma, providing a delicious and nutritious meal at an affordable cost. Ideal for a variety of home-prepared dishes such as Pulao, Steamed Rice, Jeera Rice, Khichdi and Fried Rice, this versatile rice helps you bring the taste of authentic Basmati to your everyday meals. Enjoy the superior flavour and texture of this handpicked rice, which promotes nutrition for a healthier you. Experience the touch of royalty in every bite as you delight your family at every meal and every occasion.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30 g",
+    "Energy Value (kcal)": "345.00 kcal",
+    "Protein (g)": "6.50 g",
+    "Carbohydrate (g)": "79.00 g",
+    "Total Sugar (g)": "0.10 g",
+    "Added Sugar (g)": "0.00 g",
+    "Fat (g)": "0.50 g",
+    "Sodium (mg)": "3.00 mg"
+   },
+   "storageInstructions": "Store in a cool, dry, and hygienic place\nOnce opened, consume immediately\nDo not use if the inner pouch is leaking or bloated",
+   "manufacturerName": "Adani Wilmar Ltd. 'Fortune House'",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Charminar Long Grain Rice",
@@ -502,7 +650,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004195-8_1-kohinoor-long-grain-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the exquisite taste and superior quality of Kohinoor Charminar Long Grain Rice. Grown in rich soils, this meticulously selected rice embodies the true essence of flavour and culinary perfection. Fluffy, fragrant, and versatile, it is perfect for a wide range of delectable dishes, from aromatic biryanis and flavourful pulaos to creamy kheer. With its uniform, non-sticky grains that double in size when cooked, this long-grain rice elevates every meal, delivering an unparalleled dining experience. Free from pesticides and chemicals, it boasts a high nutritional content, making it a healthier choice for your kitchen. Elevate your culinary skills and delight your senses with the choicest long-grain rice that defines excellence in every bite.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30 g",
+    "Energy Value (kcal)": "345.00 kcal",
+    "Protein (g)": "6.50 g",
+    "Carbohydrate (g)": "79.00 g",
+    "Total Sugar (g)": "0.10 g",
+    "Added Sugar (g)": "0.00 g",
+    "Fat (g)": "0.50 g",
+    "Sodium (mg)": "3.00 mg"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place",
+   "manufacturerName": "Adani Wilmar Ltd. 'Fortune House'",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Charminar Rozana Basmati Rice",
@@ -518,7 +683,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/305651_8-kohinoor-charminar-rozana-rice.jpg"
-    }
+    },
+    "barcode": "8906008814354"
    },
    {
     "title": "5kg",
@@ -555,7 +721,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40094164_10-kohinoor-charminar-rozana-basmati-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kohinoor Charminar Rozana Basmati Rice is a well-defined concoction to delight you and your family at every meal and every occasion. This rice is a tribute to the delicious traditions of the Nizams. Its long and delicate grains are processed with expertise to preserve their distinctive aroma, Charminar Rice provides a delicious and nutritious meal at an affordable cost, in line with the brand's mission of making everyday meals memorable. is consistent. Ideal for regular home-prepared dishes like Pulao, Steamed Rice, Jeera Rice, Khichdi and Fried Rice, these value rice cereals help you bring the taste of Basmati at half the cost and also ensure.",
+   "ingredients": "Rozana Rice",
+   "nutritionalInfo": {
+    "Nutrition Per": "Uncooked Rice",
+    "Serving Size": "30g",
+    "Energy Value(kcal)": "104.00",
+    "Protein(g)": "2.00",
+    "Carbohydrate(g)": "24.00",
+    "Total Sugar(g)": "0.10",
+    "Added Sugar(g)": "0.00",
+    "Fat(g)": "0.15",
+    "Sodium(mg)": "1.00",
+    "%Contribution To RDA Per Serve Energy Value": "5.20%",
+    "%Contribution To RDA Per Serve Added Sugar": "0.00%",
+    "%Contribution To RDA Per Serve Fat": "0.20%",
+    "%Contribution To RDA Per Serve Sodium": "0.05%"
+   },
+   "storageInstructions": "* Store in a cool, dry and hygienic place\n* Protect from insects, pests and strong odour",
+   "manufacturerName": "Adani Wilmar Ltd. 'Fortune House'",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Charminar Brown Rice",
@@ -571,7 +759,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40120478_5-kohinoor-charminar-brown-rice.jpg"
-    }
+    },
+    "barcode": "8904250701019"
    }
   ],
   "images": [
@@ -593,7 +782,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120478-6_2-kohinoor-charminar-brown-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kohinoor Charminar Brown Rice is deliciously nutritious and flavorful.\nA dish of steamy and fluffy brown rice, with a delectably mild & nutty flavor, is all you need to add a healthy touch to your everyday diet.\nMade of whole grain, it helps you lead an active life. No wonder, it is the healthy choice, for healthy families.",
+   "manufacturerName": "Ebro India Pvt Ltd",
+   "countryOfOrigin": "India",
+   "storageInstructions": "Store in a Cool , dry and hygienic place.\nPerfect for dishes like steamed brown rice, brown rice pulao etc."
+  }
  },
  {
   "title": "Hyderabadi Biryani Masala",
@@ -609,7 +804,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40111875_2-kohinoor-ready-masala-hyderabadi-biryani.jpg"
-    }
+    },
+    "barcode": "5900774701101"
    }
   ],
   "images": [
@@ -628,7 +824,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111875-5_1-kohinoor-ready-masala-hyderabadi-biryani.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A Hyderabadi biryani that comes straight from the royal kitchens of the Nizams, known for its rich flavours and enticing aroma. This Hyderabadi Biryani Masala transforms an ordinary meal into a celebratory feast. Expertly crafted by seasoned culinary specialists, it blends authentic spices to recreate the traditional, time-honoured taste of classic Hyderabadi biryani.",
+   "usageInstructions": "Single serve sachet, use one full pack for 1 dish to serve 3-4 people.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "fssaiLicense": "10013064000341",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Amritsari Tandoori Chicken Masala",
@@ -663,7 +866,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111874-5_1-kohinoor-ready-masala-amritsari-tandoori-chicken.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A dish that was born before partition has managed to cross all boundaries. This mouthwatering appetizer ‘Amritsari Tandoori Chicken’ has made its place in the menus of restaurants across the globe. The succulent bright orange chicken with its smoky flavor is a true treat for taste buds. This masala is crafted by the culinary experts.",
+   "usageInstructions": "Single serve sachet, use one full pack for 1 dish to serve 3-4 people.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dilli Choley Masala",
@@ -698,7 +907,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111873-5_1-kohinoor-ready-masala-dilli-choley.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Choley is a unanimous choice when it comes to North Indian cuisine. Found across the streets of India and even in many parts of the globe, Choley masala is popular for all the right reasons. Flavoured with a wide range of spices, the masaledar taste and tempting aroma of this delectable delight is a hard thing to resist.",
+   "usageInstructions": "Single serve sachet, use one full pack for North dish to serve 3-4 people.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jammu Rajma Masala",
@@ -733,7 +948,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111872-5_1-kohinoor-ready-masala-jammu-rajma.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "An integral part of North Indian Culture, Rajma is the ideal comfort food for all. But when you cook this all-time favourite with the flavorful grains of Jammu Rajma Masala and unique pahadi spices, you get a dish that’s a true delight for the senses.",
+   "usageInstructions": "Single serve sachet, use one full pack for 1 dish to serve 3-4 people.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kashmiri Meat Masala",
@@ -768,7 +989,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111871-5_1-kohinoor-ready-masala-kashmiri-meat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This flavorful delicacy is the pride of Kashmir and one of the main dishes of the famous Kashmiri Wazwan, known for its heavenly taste and aromatic gravy, this dish is full of flavours and should not be missed by any meat lover. It won’t be untrue to say that if there’s a dish that tastes like heaven then this is it!",
+   "usageInstructions": "Single serve sachet, use one full pack for 1 dish to serve 3-4 people.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mumbai Pav Bhaji Masala",
@@ -803,7 +1030,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111876-5_1-kohinoor-ready-masala-mumbai-pav-bhaji.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Born in the streets of Bombay, Pav Bhaji today is the true star of Mumbai. This tangy, mouthwatering dish is relished by people from all walks of life. Served with 2 hot butter Pav, this street food is irresistible, to say the least. This masala is crafted by the culinary experts.",
+   "usageInstructions": "Single serve sachet, use one full pack for 1 dish to serve 3-4 people.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Punjabi Butter Chicken Masala",
@@ -838,7 +1071,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111870-5_1-kohinoor-ready-masala-punjabi-butter-chicken.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Foodies across the world have given this Indian classic cult status. It has made the highways of Punjab world famous. The juicy chicken pieces bathed in a creamy gravy tickles palate across the world. Goes without saying, it’s a true culinary star.",
+   "usageInstructions": "Single serve sachet, use one full pack for 1 dish to serve 3-4 people.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Punjabi Paneer Butter Masala",
@@ -873,7 +1112,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111869-5_1-kohinoor-ready-masala-punjabi-paneer.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This dish is a part of every celebration in any north Indian household. Any lavish spread is incomplete without this rich creamy dish. The soft paneer pieces wrapped in creamy gravy delight all palates and rules the hearts of vegetarians.",
+   "usageInstructions": "Single serve sachet, use one full pack for 1 dish to serve 3-4 people.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lazeez Sabzi Masala",
@@ -908,7 +1153,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40117473-5_1-kohinoor-rasoi-ka-raaz-lazeez-sabzi-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Full of intense flavours, rich aromas and freshly ground texture, Kohinoor Lazeez Sabzi Masala is all you need to bring alive the flavours of India from the comfort of your home. Just add a pinch of this secret ingredient to turn your everyday veggies into true delicacies.",
+   "usageInstructions": "Use it while preparing various vegetable dishes.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tasty Twist Zingy Schezwan Seasoning",
@@ -943,7 +1194,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40207759-5_1-kohinoor-tasty-twist-zingy-schezwan-multi-use-seasoning.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Zingy Schezwan flavour of Tasty Twist comes with chatpata mixture of Red Chilli, Garlic and Black pepper.\nToss your rice and veggies with this Zingy Schezwan seasoning for a bowl of quick fried rice or just sprinkle on your Chinese stir-fries for that Schezwan kick. You could even add it to pakora batter for an interesting snack.",
+   "nutritionalInfo": {
+    "Energy": "312.59 Kcal/100 g;",
+    "Carbohydrate": "56.22 g;",
+    "Sugar": "35.97 g;",
+    "Protein": "7.46 g;",
+    "Fat": "6.43 g;",
+    "Saturated Fatty Acids": "1.79 g;",
+    "Trans Fatty Acids": "<0.1 g."
+   },
+   "ingredients": "Spices and Spice Extracts (Chilli 21%, Garlic 15.4%, Sichuan Pepper 2.5%)\nEdible Common Salt\nCorn Flour\nSugar\nAcidity Regulator (INS330)\nHydrolysed Vegetable Protein\nFlavour Enhancer (INS635)\nAnticaking Agent (INS551).\nCONTAINS ADDED FLAVOUR - NATURE IDENTICAL FLAVOURING SUBSTANCE Contains Soy.\nMay Contain Milk\nNut\nPeanut\nMustard\nCelery\nGluten\nSesame products.",
+   "storageInstructions": "Add a twist to everyday food with just a pinch.\nMake a dip to go with ‘em chips.\nSprinkle some for a yummy snack.\nCook up a beautiful feast to remember.\nPreserve in a cool and dry place",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt. Ltd. 71",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012011000729"
+  }
  },
  {
   "title": "Hyderabadi Biryani Kit",
@@ -959,7 +1227,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40135884_8-kohinoor-biryani-basmati-rice-kit-authentic-hyderabadi.jpg"
-    }
+    },
+    "barcode": "8906008815528"
    }
   ],
   "images": [
@@ -978,7 +1247,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135884-5_7-kohinoor-biryani-basmati-rice-kit-authentic-hyderabadi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary journey with the Kohinoor Hyderabadi Biryani Kit, a meticulously crafted blend of authentic flavours. This ready-to-cook kit combines premium basmati rice, aromatic spices, and a special biryani masala, allowing you to effortlessly recreate the rich and indulgent taste of traditional Hyderabadi Biryani. Enjoy a seamless cooking experience with the easy 3-step process, and savour the vibrant colours and tantalising aromas without any artificial additives. This recipe has been curated to provide you with a truly immersive Hyderabadi Biryani experience, making every meal a celebration of taste and tradition. In the unlikely event of a damaged, defective, or incorrect item, you can easily request a refund or replacement within 4 days of purchase.",
+   "ingredients": "Basmati Rice, Onion, Refined Sunflower Oil, Curd, Water, Tomatoes, Green Chilli, Ginger, Iodised Salt, Garlic, Coriander, Garam Masala Seasoning, Coriander Powder, Flavour Enhancer (INS 627), Cumin Seed, Keora Water, Spices and Condiments, Cinnamon Stick, Green Cardamom, Bay Leaf, Clove, Black Pepper, Maltodextrin, Cumin Powder, Chilli Powder, Coriander Powder, Ginger Powder, Sugar, Iodised Salt, Black Salt, Dehydrated Onion Powder, Dehydrated Garlic Powder, Dehydrated Parsley, Cumin Extract, Flavour Enhancer (INS 551), Natural Colouring Agent (INS 160 C (i))",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "83.5 g",
+    "Energy (kcal)": "307.1 kcal",
+    "Protein (g)": "5.8 g",
+    "Carbohydrate (g)": "53.9 g",
+    "Total Sugar (g)": "2.6 g",
+    "Added Sugar (g)": "0.3 g",
+    "Total Fat (g)": "7.6 g",
+    "Saturated Fat (g)": "1.2 g",
+    "Trans Fat (g)": "0.1 g",
+    "Cholesterol (mg)": "0.6 mg",
+    "Sodium (mg)": "857.7 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "Adani Wilmar Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kolkata Biryani Kit",
@@ -994,7 +1284,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40358473_1-kohinoor-kolkata-biryani-kit.jpg"
-    }
+    },
+    "barcode": "8906008818574"
    }
   ],
   "images": [
@@ -1013,7 +1304,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358473-5_1-kohinoor-kolkata-biryani-kit.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kohinoor Kolkata Biryani Kit includes authentic basmati rice, Kolkata biryani paste, whole spices, and burani raita seasoning. Thoughtfully put together, it provides all the essential ingredients needed to prepare a flavourful biryani meal at home. Ideal for family gatherings or everyday meals, this kit helps you enjoy a wholesome and aromatic cooking experience with ease.",
+   "ingredients": "Kolkata Biryani Paste: Onion, refined sunflower oil, ginger, garlic, tomato paste, iodised salt, spices, ghee (milk), green chilli, flavour enhancers (INS 627, INS 631), kewra water, rose water, nature-identical flavours (biryani flavour, potato flavour), acidity regulator (INS 330).\nWhole Spices: Cinnamon stick, green cardamom, bay leaf, clove, black pepper.\nBurani Raita Seasoning: Maltodextrin, spices and condiments (cumin powder, chilli powder, coriander powder, ginger powder), sugar, iodised salt, black salt, dehydrated onion powder, dehydrated garlic powder, hydrolysed vegetable protein (soya), dried mango powder, anticaking agent (INS 551), dehydrated parsley, cumin extract, flavour enhancers (INS 627, INS 631), natural colouring agent (INS 160).",
+   "nutritionalInfo": {
+    "Energy": "323 kcal",
+    "Protein": "6.1 g",
+    "Total Carbohydrate": "55.2 g",
+    "Total Sugar": "1.1 g",
+    "Added Sugar": "0.3 g",
+    "Dietary Fibre": "1.5 g",
+    "Total Fat": "8.9 g",
+    "Saturated Fat": "1.3 g (#NMT)",
+    "Trans Fat": "0.1 g (#NMT)",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "558 mg"
+   },
+   "usageInstructions": "Cook Rice: Boil the rice with whole spices and drain.\nMake Gravy: Cook vegetables, paneer, chicken, or meat with the biryani paste to prepare the gravy.\nLayer: In a pan or handi, layer the cooked rice and the prepared gravy.\nDum Cook: Cover and cook on low heat (dum) until all flavours are well blended.",
+   "manufacturerName": "AWL Agri Business Limited (formerly known as Adani Wilmar Limited)",
+   "fssaiLicense": "10013021000661",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lucknowi Biryani Kit",
@@ -1029,7 +1341,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40135885_8-kohinoor-biryani-basmati-rice-kit-authentic-lucknowi.jpg"
-    }
+    },
+    "barcode": "8906008815535"
    }
   ],
   "images": [
@@ -1057,7 +1370,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135885-8_3-kohinoor-biryani-basmati-rice-kit-authentic-lucknowi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the rich and authentic flavour of Lucknow's renowned biryani in the comfort of your own home with Kohinoor's carefully curated biryani kit. Featuring the finest quality basmati rice and an aromatic biryani masala paste made with secret Nizami spices, this kit allows you to recreate the captivating blend of fragrant herbs and exotic flavours that define the culinary masterpiece that is Lucknowi biryani. Prepared using traditional methods, this biryani kit promises to delight your taste buds and transport you to the vibrant streets of Lucknow, all in just 30 minutes. Enjoy the rich, fragrant experience of this premium biryani, free from artificial colours or preservatives, and savour the authentic taste of India's culinary heritage.",
+   "ingredients": "Basmati Rice, Onion, Water, Curd, Refined Sunflower Oil, Lucknowi Biryani (Magaz) Seed Paste, Iodised Salt, Ginger, Garlic, Garam Masala Seasoning, Rose Water, Keora Water, Flavour Enhancers (INS 627, INS 631), Spices and Condiments, Rice Flour, Acidity Regulator (INS 330), Saffron, Cinnamon Stick, Green Cardamom, Bay Leaf, Clove, Black Pepper, Maltodextrin, Cumin Powder, Chilli Powder, Coriander Powder, Ginger Powder, Sugar, Black Salt, Dehydrated Onion Powder, Dehydrated Garlic Powder, Hydrolysed Vegetable Protein (Soya), Dried Mango Powder, Anticaking (INS 551), Dehydrated Parsley, Cumin Extract, Flavour Enhancer (INS 627, INS 631), Natural Colouring Agent (INS 160 c)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "83.5 gms",
+    "Energy (kcal)": "264.7",
+    "Protein (g)": "6.5",
+    "Carbohydrate (g)": "53.1",
+    "Total Sugar (g)": "0.83",
+    "Added Sugar (g)": "0.3",
+    "Total Fat (g)": "2.9",
+    "Saturated Fat (g)": "0.5",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "1.0",
+    "Sodium (mg)": "577.2"
+   },
+   "storageInstructions": "Store in a cool, dry, and hygienic place\nOnce opened, consume immediately\nDo not use if the inner pouch is leaking or bloated",
+   "manufacturerName": "Adani Wilmar Limited (AM)",
+   "fssaiLicense": "10013021000661",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Xpress Eats Dal Tadka",
@@ -1101,7 +1436,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176248-8_5-kohinoor-xpress-eats-ready-to-eat-dal-tadka.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "An Indian mealtime favourite, Dal Tadka is now available in a handy ready Eat pack. Get the comfort of Homestyle Indian yellow lentils simmered with tomatoes and ginger and tempered with Indian spices! Comes in a microwave-friendly pack Ready to Eat in 90 seconds No added preservatives and MSG No artificial colour or flavours.",
+   "ingredients": "Water, Arhar Dal, Onion, Moong Dal, Tomato, Edible Vegetable Oil (Sunflower Oil), Desi Ghee, Coriander Leaves, Garlic, Ginger, Edible Common Salt, Green Chilli, Coriander Powder, Cumin, Red Chilli Whole, Turmeric Powder, Red Chilli Powder",
+   "usageInstructions": "Tear open the pouch by about 2 cm where indicated. Heat in microwave for 90 seconds keeping pouch upright.\nEmpty contents in a fry pan and heat\nImmerse the unopened pouch in boiling water for 5 mins.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013064000341"
+  }
  },
  {
   "title": "Xpress Eats Organic Brown Jeera Rice",
@@ -1117,7 +1460,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40176254_4-kohinoor-xpress-eats-ready-to-eat-organic-brown-jeera-rice.jpg"
-    }
+    },
+    "barcode": "8904250701552"
    }
   ],
   "images": [
@@ -1145,7 +1489,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176254-8_5-kohinoor-xpress-eats-ready-to-eat-organic-brown-jeera-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "It is ready to eat cooked authentic brown basmati rice with organic cumin, chilli salt. Who says Organic Brown Rice is not easy to cook? We bring you this versatile rice, in a ready-to-eat pack! Get the goodness of authentic Brown Basmati Rice with the mild flavour of organic cumin. Comes in a microwave-friendly pack Ready to Eat in 90 seconds No added preservatives and MSG No artificial colour or flavours.",
+   "ingredients": "Cooked Organic Brown Rice, Water, Edible Vegetable Oil (Organic Sunflower Oil), Edible Common Salt, Organic Cumin Seed, Organic Chilli Flakes, Organic Chilli Powder.",
+   "usageInstructions": "Tear open the pouch by about 2 cm where indicated. Heat in microwave for 90 seconds keeping pouch upright.\nEmpty contents in a fry pan and heat\nImmerse the unopened pouch in boiling water for 5 mins.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013064000341"
+  }
  },
  {
   "title": "Xpress Eats Zaffrani Rice",
@@ -1161,7 +1513,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40176253_5-kohinoor-xpress-eats-ready-to-eat-zaffrani-rice.jpg"
-    }
+    },
+    "barcode": "8904250701576"
    }
   ],
   "images": [
@@ -1189,6 +1542,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40176253-8_5-kohinoor-xpress-eats-ready-to-eat-zaffrani-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Our heat & eat Zaffrani Rice pack is all a delightful reward after a challenging day. In this pack, you will find ready-to-eat authentic Basmati Rice lightly spiced with cardamom and saffron. Comes in a microwave-friendly pack Ready to Eat in 90 seconds. No added preservatives and MSG. No artificial colour or flavours.",
+   "ingredients": "Cooked Basmati Rice, Edible Vegetable Oil (Refined Sunflower Oil), Edible Common Salt, Green Cardamom Powder, Turmeric Powder, Saffron",
+   "usageInstructions": "Tear open the pouch by about 2 cm where indicated. Heat in microwave for 90 seconds keeping pouch upright.\nEmpty contents in a fry pan and heat\nImmerse the unopened pouch in boiling water for 5 mins.",
+   "manufacturerName": "Kohinoor Speciality Foods India Pvt Ltd 71",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013064000341"
+  }
  }
 ]

@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/126903_12-aashirvaad-atta-whole-wheat.jpg"
-    }
+    },
+    "barcode": "8909081005541"
    },
    {
     "title": "1kg",
@@ -59,7 +60,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/126903-8_5-aashirvaad-atta-whole-wheat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Whole Wheat Atta is a premium, all-natural flour that has become the number one choice for health-conscious consumers across India. Sourced directly from rural Indian farmers, this pure whole wheat atta is made with the utmost care and attention to detail. The wheat grains are showered with the perfect balance of rain and sun, resulting in a heavy, amber-coloured flour that is rich in natural dietary fibres and nutrients. Through a meticulous 3-step cleaning process and traditional 'chakki' grinding method, Aashirvaad ensures the retention of the wheat's highest nutritional value. The dough made from this superior atta absorbs more water, creating soft, fluffy rotis that stay fresh for longer. Enjoy the benefits of a protein-rich, fibre-packed whole wheat flour that supports easy digestion and overall well-being for you and your family.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (kcal)": "338",
+    "Protein (g)": "10.7",
+    "Carbohydrate (g)": "76.0",
+    "Total Sugars (g)": "3.6",
+    "Added Sugars (g)": "0.0",
+    "Dietary Fiber (g)": "10.4",
+    "Total fat (g)": "1.3",
+    "Saturated Fat (g)": "0.3",
+    "Trans Fat (other than naturally occuring trans fat (g))": "0.0",
+    "Cholesterol (mg)": "0.0",
+    "Sodium (mg)": "1.5"
+   },
+   "storageInstructions": "Keep in a dry place",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Select MP Sharbati Atta",
@@ -121,7 +142,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/204629-8_10-aashirvaad-select-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Select Atta is produced from the golden-hued Sharbati Wheat that is typically grown in the state of Madhya Pradesh in Central India. This 5 Kg pouch contains Atta or flour which has been ground to a fine powder and is rich in nutrients and minerals. With its store of nutrients, this flour is a rich source of fibre, vitamins and minerals.",
+   "ingredients": "MP Sharbati wheat",
+   "nutritionalInfo": {
+    "Nutrition as per 100g": "Energy 368kcal, Carbohydrates 77.8g, Protein 18.1g, Fat 1.9g."
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Multigrain Atta",
@@ -183,7 +213,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/284420-8_2-aashirvaad-multigrains-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "60g",
+    "Energy (kcal)": "336 kcal",
+    "Carbohydrate (g)": "71.8 g",
+    "Total Sugars (g)": "4.8 g",
+    "Added Sugars (g)": "0.0 g",
+    "Dietary Fibre (g)": "13.0 g",
+    "Total Fat (g)": "1.9 g",
+    "Saturated Fat (g)": "0.35 g",
+    "Trans Fatty Acid (g)": "0.1 g",
+    "Sodium (mg)": "4.6 mg",
+    "Protein (g)": "14.4 g",
+    "Iron (mg)": "4.3 mg",
+    "Vitamin B1 (mg)": "0.38 mg"
+   },
+   "manufacturerName": "(04) Uttam Agro Foods India Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Atta with Millets",
@@ -221,7 +272,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316448-6_2-aashirvaad-atta-with-millets.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Looking to switch to an atta that contains the goodness of wheat as well as traditional millets? Look no further. Aashirvaad Atta with Millets provides you and your family with a nutritious atta containing 25% Millets flour mixed with wheat atta. Expertly sourced, carefully processed and hygienically packed, this flour ensures that you get the best of nutrition and taste as millets have been a part of Indian food culture for thousands of years and are known for their numerous health benefits. Aashirvaad atta with Millet contains the benefits of ancient grains like Jowar, Bajra, Ragi, Quinoa and Navane, thus it's not only tasty but is loaded with nutritional benefits. It is rich in dietary fibre which aids in digestion, is a source of protein, is also a source of manganese which helps you in the maintenance of normal bones, and is a source of Iron that aids in the formation of haemoglobin. So, Try Aashirvaad atta with millets today!",
+   "ingredients": "Wheat Flour, Jowar Flour, Bajra Flour, Navane Flour, Ragi Flour, Quinoa Flour. Contains Wheat. May Contain Soy, Oats",
+   "storageInstructions": "Store in a cool and dry condition.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sugar Release Control Atta",
@@ -274,7 +332,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077102_10-aashirvaad-sugar-release-control-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Sugar Release Control Atta is a unique combination of whole wheat and natural grain mix. The wholesome mix includes a range of natural grains, that makes it suitable to be consumed by the entire family, including diabetic patients. The natural ingredients in the atta like oats and methi further ensure that the atta has high protein and fibre content with a low Glycemic Index.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "60g",
+    "Energy (kcal)": "335 kcal",
+    "Protein (g)": "14.7 g",
+    "Carbohydrate (g)": "71.6 g",
+    "Total Sugars (g)": "3.8 g",
+    "Added Sugars (g)": "0.0 g",
+    "Dietary Fibre (g)": "13.6 g",
+    "Total Fat (g)": "1.9 g",
+    "Saturated Fat (g)": "0.32 g",
+    "Trans Fat (g)": "0.0 g",
+    "Sodium (mg)": "6.3 mg",
+    "RDA": "10 (24)"
+   },
+   "manufacturerName": "(01) Vishwas Foods Private Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Whole Wheat Atta",
@@ -290,7 +369,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40202316_7-aashirvaad-natures-super-foods-organic-atta.jpg"
-    }
+    },
+    "barcode": "8901725019723"
    },
    {
     "title": "1kg",
@@ -327,7 +407,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202316-8_6-aashirvaad-natures-super-foods-organic-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad, a brand that you love and trust, ensures that good quality products reach your kitchen. Hence, it brings to you a range of organic products that are certified by the leading organic product body. Aashirvaad Organic Atta adheres to stringent quality checks and organic product norms. It has been expertly sourced and hygienically packed to give you both taste and nutrition. This organic whole wheat atta has natural dietary fibres and nutrients. It helps in easy digestion and supports immunity, which are essential for you and your family's daily intake. So, enjoy a healthy and sustainable lifestyle as you indulge in soft and tasty rotis with Aashirvaad's 100% organic wheat atta. Aashirvaad Organic range also includes products like Chana Dal, Moong Dal, Arhar/Tur Dal, and Urad Dal. So, switch to Aashirvaad Organics and take one step forward towards a sustainable way of life.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "60g",
+    "Energy (kcal)": "346 kcal",
+    "Protein (g)": "10.6 g",
+    "Carbohydrate (g)": "77.6 g",
+    "Total Sugars (g)": "4.7 g",
+    "Added Sugars (g)": "0.0 g",
+    "Dietary Fibre (g)": "10.6 g",
+    "Total Fat (g)": "1.6 g",
+    "Saturated Fat (g)": "0.34 g",
+    "Trans Fat (g)": "0.0 g",
+    "Sodium (mg)": "2.1 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chakki Khapli Atta",
@@ -380,7 +479,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358278-8_1-aashirvaad-chakki-khapli-atta-emmer-wheat-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "India's No. 1 atta brand presents Aashirvaad Chakki Khapli Atta, bringing the treasure of ancient Indian grains to your kitchen. Experience the goodness of Khapli wheat, a heritage grain that has been cherished for generations.\nThis atta is crafted from 100% pure Khapli wheat, known for its nutritional profile with 30% more protein and high fibre content. The traditional Chakki Jaisi Pisai method ensures that every grain is meticulously ground to preserve its natural nutrients.\nOur commitment to quality is reflected in the 40+ rigorous quality checks each batch undergoes, ensuring you receive nothing but high-quality atta for your family. Create nutritious, flavourful rotis that connect you to India’s rich culinary heritage. Embrace the high-quality blend of ancient wisdom and modern quality in every bite.",
+   "nutritionalInfo": {
+    "Energy": "340 kcal",
+    "Carbohydrate": "73.1 g",
+    "Total Sugars": "1.8 g",
+    "Added Sugars": "0.0 g",
+    "Dietary Fibre": "11.4 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "0.25 g",
+    "Trans Fat (Other Than Naturally Occurring)": "0.0 g",
+    "Protein": "14.3 g",
+    "Sodium": "2.4 mg",
+    "Iron": "3.3 mg"
+   },
+   "manufacturerName": "(04) Uttam Agro Foods India Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Namma Chakki Atta with Methi",
@@ -418,7 +536,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358280-6_1-aashirvaad-namma-chakki-methi-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Namma Chakki Methi Atta brings together the goodness of whole wheat and the aromatic flavour of methi (fenugreek). Ground using the traditional chakki method, it retains natural fibre and nutrients for soft, healthy rotis with a hint of earthy aroma. Methi adds a touch of warmth and a distinctive taste, making your everyday meals more flavourful. Ideal for those who prefer wholesome, nutritious food, this atta combines health, taste, and authenticity in every serving.",
+   "ingredients": "Wheat Flour (Atta) (93.4%), Dehydrated Vegetables (5.5%)\n[Onion, Carrot, and Fenugreek (Methi) Leaves (1.7%)], Mixed Spices [Fenugreek\n(Methi) (0.3%), Cumin, and Red Chilli], and Iodised Salt. Contains Wheat. May\nContain Soy and Oats.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "344",
+    "Protein (g)": "11.4",
+    "Carbohydrate (g)": "75.5",
+    "Total Sugars (g)": "6.9",
+    "Added Sugars (g)": "0.0",
+    "Dietary Fibre (g)": "10.9",
+    "Total Fat (g)": "2.0",
+    "Saturated Fat (g)": "0.5",
+    "Sodium (mg)": "237.8"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "Sahuwala Grains Private Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Namma Chakki Atta with Moringa",
@@ -456,7 +593,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358281-6_1-aashirvaad-namma-chakki-atta-with-moringa.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Namma Chakki Atta with Moringa is a nutritious blend crafted to bring health and flavour to your daily meals. Made using traditional chakki grinding, it ensures soft, fluffy rotis packed with natural goodness. Enriched with the benefits of moringa, known for its vital nutrients, this atta supports everyday wellness while adding a mild, earthy taste to your food. Perfect for those seeking a wholesome twist to their regular atta, it balances taste, nutrition, and freshness in every bite.",
+   "ingredients": "Wheat Flour (Atta) (98%) and Dehydrated Moringa Leaves Powder (2%).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "342",
+    "Carbohydrate (g)": "76.9",
+    "Total Sugars (g)": "1.9",
+    "Added Sugars (g)": "0.0",
+    "Dietary Fibre (g)": "12.5",
+    "Total Fat (g)": "1.7",
+    "Saturated Fat (g)": "0.35",
+    "Trans Fat (Other Than Naturally Occurring Trans Fat) (g)": "0.0",
+    "Sodium (mg)": "2.5",
+    "Protein (g)": "11.1",
+    "Iron (mg)": "4.3"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "(25) Sahuwala Grains Private Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gluten Free Flour",
@@ -509,7 +667,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172985_5-aashirvaad-natures-super-foods-gluten-free-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Nature's Superfoods Gluten-Free Flour is a versatile and nutritious alternative to traditional wheat flour. Crafted from a blend of gluten-free grains and pulses, this flour is ideal for those with gluten sensitivity or intolerance. Packed with essential nutrients like protein, fibre, vitamins, and minerals, it supports muscle repair, digestion, and overall well-being. With a neutral flavour, this flour can be used to create a variety of delectable dishes, from traditional Indian rotis and dosas to Western favourites like pancakes and muffins. Whether you're baking sweet or savoury treats, you can trust the quality and purity of Aashirvaad Nature's Superfoods Gluten-Free Flour, as each batch is carefully tested to meet the strictest standards for gluten-free products.",
+   "ingredients": "Jowar Flour, Flaked Rice Flour, Starch, Ragi Flour, Dehydrated Potato, Milk Solids, Thickener (INS 415), Psyllium Husk Powder, Emulsifier (INS 471), Iodised Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "60g",
+    "Energy (kcal)": "352",
+    "Carbohydrate": "47.8g",
+    "Total Sugars": "4.8g",
+    "Dietary Fiber (g)": "16.7g",
+    "Total fat": "2.6g",
+    "Saturated Fat": "0.1g",
+    "Trans fat": "0g",
+    "Cholesterol (mg)": "0mg",
+    "Sodium (mg)": "13mg",
+    "Protein (g)": "9.6g",
+    "Iron (mg)": "4.3mg",
+    "Magnesium (mg)": "97.8mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Double Roasted Suji Rava",
@@ -559,7 +740,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293256_1-aashirvaad-double-roasted-suji-rava-less-moisture-more-quantity-made-from-mp-wheat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful Aashirvaad Double Roasted Suji Rava, a premium-quality wheat product that brings a world of flavour and nutrition to your kitchen. Crafted with care, this versatile rava (semolina) boasts a rich, nutty aroma and a delectable, smooth texture that elevates both sweet and savoury dishes. Packed with essential iron, minerals, and antioxidants, this double-roasted rava is a healthful addition to your culinary repertoire. Enjoy the convenience of its extended shelf life and the absence of any added preservatives or artificial flavours. Whether you're whipping up a traditional Indian upma, crafting delectable couscous, or indulging in a creamy pudding, Aashirvaad Double Roasted Suji Rava is the perfect ingredient to elevate your cooking experience. Bring the authentic flavours of India to your table with this premium, non-sticky, and delicious rava.",
+   "usageInstructions": "1. Adds a distinctive texture to recipes.\n2. Used for a wide range of preparations like Halwa, upma, Pasta, daal, bhati, kheer, ladoo, etc.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "360 kcal",
+    "Protein (g)": "11.0 g",
+    "Carbohydrate (g)": "77.5 g",
+    "Total Sugars (g)": "1.7 g",
+    "Added Sugars (g)": "0.0 g",
+    "Total Fat (g)": "0.7 g",
+    "Saturated Fat (g)": "0.15 g",
+    "Trans fat#(other than naturally occurring trans fat) (g)": "0.0 g",
+    "Sodium (mg)": "2.5 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bansi Rava",
@@ -609,7 +810,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293254_1-aashirvaad-bansi-rava-made-from-durum-wheat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Bansi Rava, also known as broken wheat, is a versatile and nutritious cereal food made from parboiled wheat groats. This premium quality ingredient is rich in natural proteins, vitamins, and minerals, making it the perfect choice for a wholesome, delicious breakfast for the whole family. With its slightly nutty and chewy texture, and a warm, grainy flavour, Bansi Rava is a delight to cook with. Versatile enough to be used in soups, stuffed vegetables, and a variety of other dishes, this preservative-free product offers ease of cooking and hygienic packaging, ensuring a premium culinary experience. Indulge in the goodness of this wholesome, nutritious ingredient and elevate your meals with the delightful taste and texture of Aashirvaad Bansi Rava.",
+   "ingredients": "Durum Wheat, Contains Wheat",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30 g",
+    "Energy (kcal)": "362",
+    "Carbohydrate (g)": "76.8",
+    "Total Sugars (g)": "1.7",
+    "Added Sugars (g)": "0.0",
+    "Total Fat (g)": "1.1",
+    "Saturated Fat (g)": "0.23",
+    "Trans fat (other than naturally occurring trans fat) (g)": "0.0",
+    "Sodium (mg)": "2.1",
+    "Protein (g)": "11.1",
+    "Iron (mg)": "3.8",
+    "Magnesium (mg)": "87.6"
+   },
+   "storageInstructions": "Store under cool and dry conditions",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Urad Dal Split",
@@ -662,7 +886,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202029-8_4-aashirvaad-natures-super-foods-organic-urad-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful taste and exceptional quality of Aashirvaad Organic Urad Dal. This certified organic black gram dal is expertly sourced and hygienically packed to deliver both exceptional flavour and outstanding nutrition. Bursting with protein, dietary fibre, and a rich source of iron, this versatile ingredient is perfect for crafting a wide range of beloved Indian dishes, from fluffy idlis and crisp dosas to hearty dals and flavourful snacks. Adhering to the strictest organic standards and free from any pesticide residues, this premium urad dal offers a guilt-free culinary experience. Elevate your meals with the trusted goodness of Aashirvaad, a brand you can count on for high-quality, nutritious ingredients.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "Not provided",
+    "Energy (kcal)": "332",
+    "Protein (g)": "22.8",
+    "Carbohydrate (g)": "62.5",
+    "Total Sugars (g)": "3.9",
+    "Added Sugars (g)": "0.0",
+    "Dietary Fiber (g)": "12.3",
+    "Total fat (g)": "1.7",
+    "Saturated Fat (g)": "0.32",
+    "Trans Fat (g)": "0.0",
+    "Sodium (mg)": "31.0"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Roasted Vermicelli",
@@ -715,7 +959,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225060-8_5-aashirvaad-roasted-vermicelli-made-from-high-quality-wheat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad ensures that only good quality ingredients reach your kitchen. A fully automated state-of-the-art production process and stringent quality tests ensure the superior and consistent quality of Aashirvaad Roasted Vermicelli. This also ensures that vermicelli remains non-sticky and does not become lumpy when cooked. So, you can enjoy delicious dishes every time with Aashirvaad Vermicelli. Aashirvaad Roasted Vermicelli packs the goodness of wheat in each strand. Make nutritious recipes with this wheat vermicelli.\nA versatile ingredient, it can also be used to make both, delicious sweet and savoury dishes. Enjoy delicious breakfast options like Vermicelli Upma or mouth-watering sweets like Payasam, Sweet Semiya and more. Make everyday dishes or festival and celebration specials with this wholesome and high-quality Aashirvaad Vermicelli. Delight your taste buds with quick, healthy and delicious treats made effortlessly as Aashirvaad brings to you pre-roasted wheat Vermicelli.",
+   "ingredients": "Wheat Semolina (Rawa), Contains Wheat",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "370 Kcal (5.6%)",
+    "Protein": "10.0g",
+    "Carbohydrate": "81.6g",
+    "Total Sugars": "1.9g",
+    "Added Sugars": "0.0g (0%)",
+    "Total Fat": "0.4g (0%)",
+    "Cholesterol": "0.0mg",
+    "Sodium": "2.2mg (0%)"
+   },
+   "storageInstructions": "*Keep in a cool, dry place\n*Avoid direct sunlight",
+   "manufacturerName": "(21) ITC Limited - Foods Division",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Vermicelli",
@@ -731,7 +995,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40225058_6-aashirvaad-vermicelli-made-from-high-quality-wheat-non-sticky.jpg"
-    }
+    },
+    "barcode": "8901725009038"
    },
    {
     "title": "150g",
@@ -777,7 +1042,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225058-8_6-aashirvaad-vermicelli-made-from-high-quality-wheat-non-sticky.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad ensures that only good quality ingredients reach your kitchen. A fully automated state-of-the-art production process and stringent quality tests ensure the superior and consistent quality of Aashirvaad Vermicelli. This also ensures that vermicelli remains non-sticky and does not become lumpy when cooked. So, you can enjoy delicious dishes every time with Aashirvaad Vermicelli.",
+   "ingredients": "Wheat Semolina (Rawa), Contains Wheat",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "349 Kcal (5.2%)",
+    "Protein": "9.5g",
+    "Carbohydrate": "77.9g",
+    "Total Sugars": "1.8g",
+    "Added Sugars": "0.0 8(0.0%)",
+    "Total Fat": "0.4g (0.2%)",
+    "Sodium": "2.1mg (0.03%)",
+    "RDA": "The values within brackets indicate%RDA per serve (30g)."
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "(21) ITC Limited - Foods Division",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Black Pepper",
@@ -830,7 +1114,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322399-8_1-aashirvaad-black-pepper.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Whole Black Pepper",
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "(J) ITC Ltd. F 170-171 G 172-173",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cardamom",
@@ -883,7 +1174,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322396-8_2-aashirvaad-cardamom.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experiences with Aashirvaad's premium whole cardamom pods. Sourced for their exceptional quality and purity, these naturally green cardamom pods are free from any contaminants, ensuring an authentic and aromatic flavour. Infuse your dishes, from savoury curries to sweet desserts, with the captivating essence of cardamom that will leave your taste buds craving more. Aashirvaad's cardamom is the secret ingredient that transforms ordinary meals into unforgettable culinary delights, adding a refreshing and aromatic touch to every bite. Enjoy the versatility of this premium spice, whether you're baking cardamom cookies, seasoning a fragrant pulao, or brewing a soothing cardamom-infused tea. With its vibrant natural colour, fully closed pods, and robust aroma, Aashirvaad Cardamom is a must-have for any discerning home cook or professional chef.",
+   "storageInstructions": "Store in a cool and dry place\nAfter opening, store in an airtight container",
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jeera",
@@ -936,7 +1234,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322385-8_1-aashirvaad-jeera.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Whole Cumin",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(J) ITC Ltd. F 170-171 G 172-173",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Methi",
@@ -989,7 +1294,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322394-8_1-aashirvaad-methi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad, the world where quality and purity take the lead, brings to you Aashirvaad Methi - a must-have whole spice in Indian households. Putting quality at the forefront, Aashirvaad brings you methi seeds in their purest form, free of any contaminants. Elevate your meals with the rich aroma and flavour of the big and full-Sized seeds of Aashirvaad Methi. With Aashirvaad Whole Methi seeds, you can explore both classic and modern recipes such as dhoklas, achaar, methi pulao, dal makhani, and many more. All you need in your kitchen is Aashirvaad Methi to add a punch of flavour.",
+   "ingredients": "Whole Fenugreek Seeds (Methi)",
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "(J) ITC Ltd. F 170-171 G 172-173",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mustard",
@@ -1042,7 +1355,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322392-8_1-aashirvaad-mustard.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Whole Mustard (Rai)",
+   "storageInstructions": "Store in a cool and dry place\nAfter opening, store in an airtight container",
+   "manufacturerName": "(J) ITC Ltd. F 170-171 G 172-173",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Poppy Seeds",
@@ -1086,7 +1406,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322391-8_1-aashirvaad-poppy-seeds.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad, the world where quality and purity take the lead, brings to you Aashirvaad Poppy Seeds - a must-have whole spice in Indian households. Putting quality at the forefront, Aashirvaad brings poppy seeds, popularly known as posto or khus khus, in their purest form, free of any contaminants. Transform your recipes with the aroma and flavour of these fat and white posto seeds.\nWith their regional flavours, Aashirvaad Poppy Seeds are the perfect choice to craft local delicacies or experiment with new recipes. From thick, delectable gravies to tempting desserts, Aashirvaad Poppy Seeds finds its place in a variety of cuisines and is all you need in your spice cabinet.",
+   "manufacturerName": "(A) ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chilli Powder",
@@ -1157,7 +1483,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267168_10-aashirvaad-powder-chilli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad ensures that only superior-quality ingredients reach your kitchen, and Aashirvaad Chilli Powder stays true to that promise. Carefully made in India using a four-step advanced process, it delivers consistent quality in every pack.\nSourced directly from a wide network of farmers, the chillies are hand-selected by experts, then traditionally sun-dried and thoroughly cleaned to preserve their natural richness. This ensures a chilli powder that is perfectly balanced in both colour and taste.\nWith automated processing and packaging carried out under zero human intervention, purity is guaranteed. Free from added flavours and colours, Aashirvaad Chilli Powder is so potent that even a small quantity elevates the colour, aroma, and spiciness of your dishes.\nAdd a pinch of Aashirvaad Chilli Powder to bring your preparations to life with authentic flavour and vibrant colour.",
+   "ingredients": "Whole Red Chilli",
+   "manufacturerName": "(B) S P Edible Products Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Guntur & Byadagi Chilli Powder",
@@ -1173,7 +1506,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40293260_7-aashirvaad-chilli-powder-with-guntur-byadagi-chilli.jpg"
-    }
+    },
+    "barcode": "8901725006068"
    },
    {
     "title": "100g",
@@ -1219,7 +1553,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293259_7-aashirvaad-chilli-powder-with-guntur-byadagi-chilli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Aashirvaad Guntur + Byadagi Chilli Powder, a meticulously crafted blend that brings together the best of Andhra Pradesh and Karnataka. Sourced from the vibrant red chillies of these regions, this powder delivers a burst of fiery flavour and vivid colour in every sprinkle. Carefully selected by Aashirvaad experts and traditionally sun-dried, the chillies are then blended in perfect proportions to create a harmonious balance of spiciness and natural hue.\nInfuse your chutneys, rasam, sambar, and rice dishes with the captivating aroma and taste of this chilli powder, crafted to perfection for the discerning palates of Karnataka. Elevate your culinary creations with the superior quality and hygienically packaged Aashirvaad Guntur + Byadagi Chilli Powder.",
+   "ingredients": "Red Chilli (98%) and Refined Sunflower Oil.",
+   "manufacturerName": "(A) ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kashmiri Mirch Powder",
@@ -1272,7 +1613,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322412_1-aashirvaad-kashmiri-mirch-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made from the choicest stalkless Kashmiri chillies to give the right colour and taste. The pack consists of \"Aroma Locked Technology\" which ensures that the product has long lasting freshness. So, just add a pinch of this Kashmiri Mirch powder to bring alive aroma, flavour and vibrant colour to your dish!",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (kcal)": "412 kcal",
+    "Protein (g)": "14.1 g",
+    "Carbohydrate (g)": "54.1 g",
+    "Of Which Sugar (g)": "14.1 g",
+    "Fat (g)": "15.4 g",
+    "Trans fat (g)": "0.1 g",
+    "Saturated Fat (g)": "4.1 g"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Turmeric Powder",
@@ -1288,7 +1646,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100532774_9-aashirvaad-turmeric-powder.jpg"
-    }
+    },
+    "barcode": "8901725125363"
    },
    {
     "title": "100g",
@@ -1334,7 +1693,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267169_7-aashirvaad-powder-turmeric.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with Aashirvaad Turmeric Powder, a versatile and essential spice for every kitchen. Packed with natural antioxidants and anti-inflammatory properties, this turmeric powder not only enhances the taste of your dishes but also provides numerous health benefits. Sourced directly from farmers and carefully processed using traditional methods, Aashirvaad Turmeric Powder is made with love in India. With a perfectly balanced colour and flavour, this powder is naturally golden and potent, requiring only a small amount to enrich the taste and appearance of your meals. Enjoy the rich, earthy aroma and vibrant hue it brings to curries, rice dishes, and more, all while supporting your overall well-being. Aashirvaad’s commitment to quality ensures that only the finest ingredients reach your kitchen, making this turmeric powder a must-have addition to your daily diet.",
+   "ingredients": "Whole Turmeric",
+   "manufacturerName": "(B) S P Edible Products Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jeera Powder",
@@ -1350,7 +1716,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369862_1-aashirvaad-jeera-powder.jpg"
-    }
+    },
+    "barcode": "8909081007514"
    }
   ],
   "images": [
@@ -1369,7 +1736,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369862-5_1-aashirvaad-jeera-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "To bring you Aashirvaad Jeera Powder, we source jeera seeds that are full and golden brown. The seeds are then carefully selected by experts to ensure that you get powder that preserves its rich aroma, is finely ground, and has a balanced colour and texture. Aashirvaad Jeera Powder is prepared much like how you do things for your family — with care. Chun Chun Ke.",
+   "ingredients": "Whole Cumin.\nMay contain wheat and nuts.",
+   "manufacturerName": "(A) ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pepper Powder",
@@ -1410,7 +1784,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322404-7_1-aashirvaad-pepper-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Black Pepper Powder is made from carefully selected peppercorns that are finely ground to deliver a bold aroma and distinctive flavour. Hygienically packed and dust-free, it blends easily into a variety of dishes, including soups, curries, marinades, and snacks. Ideal for everyday cooking, this versatile spice adds depth and warmth to both traditional Indian recipes and global cuisines.",
+   "ingredients": "Whole Black Pepper.\nMay contain soy, wheat, and nuts.",
+   "manufacturerName": "(A) ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chaat Masala",
@@ -1448,7 +1829,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237524-6_6-aashirvaad-chaat-masala-mixed-spices-masala-aroma-locked.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad ensures that only excellent-quality ingredients reach your kitchen, and Aashirvaad Chaat Masala stays true to that promise. This tasty and tangy spice mix is a kitchen staple and a difference-maker for a wide range of dishes. Its signature chatpata flavour is sure to excite your taste buds.\nSimply sprinkle it atop your favourite dishes such as Pani Puri, Bhel Puri, Papdi Chaat, Tikki Chaat, or Dahi Bhalla, and experience it for yourself! This exquisite chaat masala is made from locally sourced ingredients from across India, carefully selected by experts to ensure the right aroma, pungency, quality, and consistency.\nThe pack also features Aroma-Lock Technology — a resealable zip-lock pouch that preserves the masala’s long-lasting freshness. Enjoy the perfect balance of aromas and flavours as Aashirvaad Chaat Masala adds the magical combination of sweet, salty, and tangy to your all-time favourite chaat dishes.",
+   "ingredients": "Mixed spices (50.7%) – Dried Mango Powder (35%), Cumin (6%), Coriander (3.3%), Pomegranate Seeds, Dried Mint, Ginger (0.7%), Black Pepper (0.5%), Ajowan, Compounded Asafoetida, Nutmeg, Clove (0.2%), Spice Extracts. Iodised Salt (29.3%), Black Salt (12%), Dehydrated Kachri, Dehydrated Tamarind, Dehydrated Yellow Chilli, and Sugar.",
+   "nutritionalInfo": {
+    "Energy": "218 kcal",
+    "Protein": "5.0 g",
+    "Carbohydrate": "39.3 g",
+    "Total Sugars": "7.9 g",
+    "Added Sugars": "0.8 g",
+    "Total Fat": "4.5 g",
+    "Trans Fat (other than naturally occurring)": "0.0 g",
+    "Saturated Fat": "0.8 g",
+    "Sodium": "1695.4 mg"
+   },
+   "manufacturerName": "C) Salute Water House Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kitchen King Masala",
@@ -1486,7 +1885,18 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237525-6_5-aashirvaad-kitchen-king-masala-mixed-spices-powder-aroma-locked.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad, the brand you love and trust, ensures that only excellent-quality products reach your kitchen, and Aashirvaad Kitchen King Masala stays true to that promise. A truly versatile spice blend, it can elevate both dry and gravy dishes to the next level. With subtle notes of nutmeg, clove, green cardamom, and cassia perfuming your dishes, paired with a highly appetising colour and taste, you have a real winner in your hands!\nThis ethnic spice blend is made from locally sourced ingredients from across India, carefully selected by experts to ensure the right aroma, pungency, quality, and consistency. The pack also features Aroma-Lock Technology - a resealable zip-lock pouch that preserves the masala’s long-lasting freshness. Enjoy the perfect balance of aromas and flavours as Aashirvaad Kitchen King Masala adds the authentic taste and colour of traditional cooking.",
+   "ingredients": "Mixed spices (84.3%) [Coriander (42%), Cumin (11.4%), Red chilli (7.7%), Turmeric, Black pepper (3%), Fennel, Dried bay leaf (1.2%), Spice extracts, Cardamom (1.1%), Clove, Ginger, Garlic, Cassia (1%), Dried mango powder, Mustard, Fenugreek, Star anise (0.5%), Compounded asafoetida, Caraway, Nutmeg, Ajowan], lodized salt (5.7%), Chana dal, Sesame, Hydrolyzed vegetable protein, Refined sunflower oil and Dehydrated fenugreek leaves.",
+   "nutritionalInfo": {
+    "Saturated fat": "2.2 g/100 g",
+    "Trans fat": "0.04 g/100 g"
+   },
+   "manufacturerName": "C) Salute Water House Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Paneer Masala",
@@ -1530,7 +1940,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200514-8_7-aashirvaad-paneer-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "From the trusted house of Aashirvaad, comes a unique blend of spices - Aashirvaad Paaneer Masala. It is the perfect balance of select spices like kasuri methi, shah jeera, mace, and ajwain. The spices have been blended in perfect proportions to provide the right mix of taste and aroma to your dishes. So, add the masala to your Paneer dishes and with every bite, taste the aromatic, earthy, and delicious flavours. An exquisite spice blend of Paneer masala, it is made from locally sourced ingredients from across India. Experts have carefully selected them to ensure the right aroma, pungency, quality, and consistency. The pack also consists of Aroma Locked Technology re-sealable zip lock pouch inside which ensures that the masala has long-lasting freshness. Enjoy the right balance of aromas and flavours as Aashirvaad Paneer Masala enhances the colour and adds an authentic taste to your all-time favourite Paneer dishes.",
+   "ingredients": "Mixed Spices (47.8%) {Onion, Red Chilli (11.3%), Cumin, Caraway, Black Pepper (2%), Cardamom (1.9%), Cloves (1.4%), Cassia (1.3%), Garlic (1.3%), Ginger (1.3%), Dried Bay Leaf (1%), Mace (0.6%), Ajwain and Long Pepper}, Iodised Salt, Dehydrated Fenugreek Leaves and Cashew nut (6.8%)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (kcal)": "240",
+    "Protein (g)": "9.8",
+    "Carbohydrate (g)": "36.7",
+    "Of Which Sugar (g)": "10.0",
+    "Fat (g)": "6.0",
+    "Trans Fat (g)": "0.1",
+    "Saturated Fat (g)": "1.5"
+   },
+   "storageInstructions": "Store the product in an air-tight container in a cool and dry place",
+   "manufacturerName": "C) Salute Water House Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Punjabi Chole Masala",
@@ -1571,7 +1999,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200513-7_9-aashirvaad-punjabi-chole-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "From the trusted house of Aashirvaad comes a unique blend of spices – Aashirvaad Punjabi Chole Masala. Inspired by the iconic foods from the streets of Punjab, this rustic spice blend delivers authentic dark-coloured, tangy, and flavourful Punjabi chole with the perfect texture for the gravy.\nMake every bite of your Punjabi chole aromatic and full of delicious flavour with Aashirvaad Punjabi Chole Masala. Made from locally sourced ingredients across India, this ethnic spice blend is carefully selected by experts to ensure the right aroma, pungency, quality, and consistency.\nThe pack features Aroma-Lock Technology – a resealable zip-lock pouch that preserves the masala’s long-lasting freshness. Enjoy the perfect balance of aromas and flavours as Aashirvaad Punjabi Chole Masala enhances the colour and adds an authentic taste to this all-time favourite North Indian dish.",
+   "ingredients": "Mixed Spices (52.2%) – Cumin (16.2%), Pomegranate Seed, Red Chilli (6%), Coriander (5%), Black Pepper (3%), Amchur, Cardamom (2%), Dried Mint, Ajwain, and Cassia (1%).\nIodised Salt, Dehydrated Amla, Bengal Gram, Black Salt, Dehydrated Fenugreek Leaves, and Acidity Regulator (INS 330).",
+   "manufacturerName": "C) Salute Water House Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sabji Masala",
@@ -1609,7 +2044,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237526-6_5-aashirvaad-sabji-masala-mixed-spices-powder-aroma-locked.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad, the brand that you love and trust, ensures that excellent quality products reach your kitchen and Aashirvaad Sabji Masala stays true to that. If it's convenient and consistency in your dishes that you're looking for, you can't go wrong with this spice blend. Acting as a genuine pillar of taste and aroma for a wide range of dishes, trust Aashirvaad Sabji Masala to ensure the 'S' in Sabji stands for 'Scintillating!' An ethnic spice blend of Sabji masala, it is made from locally sourced ingredients from across India. Experts have carefully selected them to ensure the right aroma, pungency, quality, and consistency. The pack also consists of Aroma Locked Technology - re-sealable zip lock pouch inside which ensures that the masala has long-lasting freshness. Enjoy the right balance of aromas and flavours as Aashirvaad Sabji Masala adds an authentic taste and colour of traditional cooking and elevates the taste of your everyday dishes.",
+   "ingredients": "Mixed spices (95.1%) [Coriander (57.8%), Cumin (12%), Red chilli (7.6%), Dried mango powder, Turmeric, Mustard, Fennel, Black pepper (0.8%), Fenugreek (0.7%), Ginger, Garlic, Clove (0.3%), Cardamom (0.3%), Nutmeg, Spice extracts, Cassia (0.2%)], Iodised salt",
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "C) Salute Water House Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sambar Masala",
@@ -1653,7 +2096,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200516-8_6-aashirvaad-sambar-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Aashirvaad Sambar Masala, a unique blend of handpicked spices that captures the authentic flavours of South Indian cuisine. Crafted by the trusted house of Aashirvaad, this carefully curated spice mix is infused with rich, earthy, and umami notes, delivering the perfect balance of aroma and taste. Made with locally sourced ingredients from across India, Aashirvaad Sambar Masala is a true representation of the diverse flavours of the country. The aroma-locked technology used in the packaging ensures the masala retains its freshness and flavour for longer, allowing you to savour the authentic taste and colour of traditional cooking. Whether you're pairing it with idlis, dosas, or rice, Aashirvaad Sambar Masala will elevate your homemade sambar to new heights, transporting you to the heart of South India with every bite.",
+   "ingredients": "Coriander, Red Chilli, Cumin, Black Pepper, Fenugreek, Compounded Asafoetida, Mustard, Ginger, Dehydrated Curry Leaves, Turmeric",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (kcal)": "407",
+    "Protein (g)": "14.8",
+    "Carbohydrate (g)": "51.8",
+    "Of Which Sugar (g)": "3.5",
+    "Fat (g)": "15.6",
+    "Trans Fat (g)": "0.01",
+    "Saturated Fat (g)": "1.6"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "C) Salute Water House Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Shahi Garam Masala",
@@ -1697,7 +2158,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200515-8_7-aashirvaad-shahi-garam-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Aashirvaad Shahi Garam Masala, a unique and richly aromatic spice blend crafted to perfection. Sourced from the finest, locally grown ingredients across India, this exotic spice mix features a harmonious balance of star anise, cassia, nutmeg, mace, and black cardamom. The result is a depth of flavour that transforms even the simplest dish into a truly 'shahi' (royal) delight. Packaged in an aroma-locked, resealable pouch, this premium masala ensures long-lasting freshness and the perfect blend of aromas and flavours in every use. Elevate your culinary creations with the authentic taste and vibrant colour of traditional Indian cooking, courtesy of Aashirvaad Shahi Garam Masala.",
+   "ingredients": "Mixed Spices (93.0%) {Coriander (30.7%), Cumin (23.9%), Black Pepper (15.5%), Bay Leaf, Cloves (5.7%), Cassia (5.0%), Cardamom (3.6%), Star anise (0.9%), Mace (0.8%) and Nutmeg}, Iodised Salt and Refined Sunflower Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (kcal)": "399",
+    "Protein (g)": "15.9",
+    "Carbohydrate (g)": "58.6",
+    "Of Which Sugar (g)": "2.9",
+    "Fat (g)": "11.2",
+    "Trans Fat (g)": "0.01",
+    "Saturated Fat (g)": "1.2"
+   },
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "C) Salute Water House Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Iodised Salt",
@@ -1713,7 +2192,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/236834_11-aashirvaad-salt-iodised.jpg"
-    }
+    },
+    "barcode": "8909081007408"
    }
   ],
   "images": [
@@ -1741,7 +2221,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/236834-8_3-aashirvaad-salt-iodised.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad ensures that only good quality ingredients reach your kitchen, and Aashirvaad Iodised Salt stays true to that promise. Made from natural sea salt crystals with a 4-step advantage process, Aashirvaad Iodised Salt ensures that you and your family receive the pure goodness of nature daily. Aashirvaad Iodised Salt is obtained by first evaporating sea water or brine in shallow basins by sunlight and wind for 3 weeks. When the water evaporates, a salt bed forms at the bottom of the basin. This salt is then collected and put through an elaborate cleansing process and finally enriched with iodine to take care of your family’s iodine requirements. The moisture-proof packaging ensures a free-flowing granular form that enables easy handling as well as clean storage. Aashirvaad Iodised Salt's 4-step advantage is what gives your meals a balanced original taste - free of any impurities. We take extra care to ensure that only quality salt reaches your home, simply because we know that it is the only way you would have it! |",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "0",
+    "Protein (g)": "0",
+    "Fat (g)": "0",
+    "Carbohydrate (g)": "0",
+    "of which Sugar (g)": "0",
+    "Iodine (ppm)": ">15"
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crystal Salt",
@@ -1785,7 +2279,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210226-8_4-aashirvaad-iodized-crystal-salt.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Iodized Crystal Salt helps you enjoy the taste of age-old cooking even today. It is made from the traditional solar evaporation process and is sun-dried for 3 weeks, making each crystal unique with a natural white colour and balanced taste. Salt helps in balancing blood pressure and maintaining the fluid in the blood. The mineral content in the salt acts as important electrolytes in the body. Add this salt to your food and enhance the flavour.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "0 kcal",
+    "Protein (g)": "0 g",
+    "Carbohydrate (g)": "0 g",
+    "Total Sugar (g)": "0 g",
+    "Added Sugar (g)": "0 g",
+    "Sodium (mg)": "39100 mg",
+    "Iodine (mg)": ">1.5 mg"
+   },
+   "manufacturerName": "ITC Limited 37 J.L. Nehru Road Kolkata- 700071",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Iron Shakti Iodised Salt",
@@ -1829,7 +2339,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359893-8_3-aashirvaad-iron-shakti-salt.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Iron Shakti Salt is a Double Fortified salt containing Iron as well as Iodine. With visible iron boosters along with iodine, 1 teaspoon (5g) of this salt provides 25% of average daily iron requirement, while ensuring no change in food’s taste. 1 teaspoon (5g) of Aashirvaad Iron Shakti Salt provides as much iron as in 1 bowl of spinach. Iron Shakti helps to boost iron intake daily, with minimal habit shift and at the same price as a normal powdered salt.",
+   "ingredients": "Edible Common Salt, Encapsulated Iron Premix [Ferrous Fumarate, Stabiliser (464)], Anticaking Agents (551, 536), Potassium Iodate.",
+   "nutritionalInfo": {
+    "Energy": "0.0 kcal",
+    "Carbohydrates": "0.0 g",
+    "Protein": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "39,100.0 mg",
+    "Iodine": "1.5 mg",
+    "Iron": "100.0 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Salt Active",
@@ -1845,7 +2373,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40200518_5-aashirvaad-salt-proactive.jpg"
-    }
+    },
+    "barcode": "8901725012540"
    }
   ],
   "images": [
@@ -1867,7 +2396,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200518-6_5-aashirvaad-salt-proactive.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad ensures that only superior quality ingredients reach your kitchen and Aashirvaad Salt Proactive stays true to that word. Refined, iodised and potassium-enriched, Aashirvaad Salt Proactive ensures good health for you and your family without compromising on taste.\nAashirvaad Salt Proactive is a sodium-reduced salt that has been specially formulated to provide 15% lesser sodium than regular salt. It helps in adopting a healthy lifestyle and managing the blood pressure as it is generally accepted that sodium-reduced diets assist in the management of blood pressure. Enriched with the right amount of iodine, Aashirvaad Salt Proactive aids in physical growth and mental development.\nThe moisture-proof packaging gives a free-flowing texture to the salt and a balanced taste to your daily meals. Aashirvaad takes extra care to ensure that only quality salt reaches your home. Simply because we know that it is the only way you would have it!\nSo, Keep your Family Active and switch to Aashirvaad Salt Proactive.",
+   "ingredients": "Edible Common Salt (85%), Potassium Chloride, Anticaking Agents (Ins 551, Ins 536), Potassium Iodate",
+   "nutritionalInfo": {
+    "Energy": "0 kcal",
+    "Protein": "0.0 g",
+    "Carbohydrate": "0.0 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Fat": "0.0 g",
+    "Sodium": "33400.0 mg",
+    "Potassium": "7800.0 mg",
+    "Iodine": ">1.5 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place.",
+   "manufacturerName": "Terapanth Foods Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012021000280"
+  }
  },
  {
   "title": "Gulab Jamun Instant Mix",
@@ -1883,7 +2431,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40001310_9-aashirvaad-gulab-jamun-instant-mix.jpg"
-    }
+    },
+    "barcode": "8901725018320"
    },
    {
     "title": "500g",
@@ -1920,7 +2469,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001310-8_2-aashirvaad-gulab-jamun-instant-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Instant Mix Gulab Jamun is the perfect solution for busy homemakers who crave the authentic taste of this beloved Indian dessert. Crafted with premium ingredients, this convenient mix delivers soft, melt-in-your-mouth gulab jamuns every time. The addition of milk solids ensures a rich, creamy texture that is free from preservatives, making it a healthier and more reliable choice compared to store-bought options.\nWhether you're preparing for a special celebration or simply satisfying a post-dinner sweet craving, this instant mix allows you to whip up 32-35 delectable jamuns in just 3 easy steps. Enjoy the comforting flavours of a traditional Indian dessert with minimal effort, thanks to the Aashirvaad Instant Mix range.",
+   "ingredients": "Refined Wheat Flour (Maida), Milk solids (20%), Refined Palm oil, Raising agent (INS 500 (ii)), Acidity regulator (INS 296)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "10g",
+    "Energy": "419 kcal",
+    "Protein": "12.7g",
+    "Carbohydrate": "64.5g",
+    "Total Sugars": "11.6g",
+    "Added Sugars": "0.0g (0%)",
+    "Total Fat": "12.7g (1.9%)",
+    "Saturated Fat": "6.5g (3.0%)",
+    "Trans Fat (other than naturally occurring trans fat)": "0.03g (0.2%)",
+    "Cholesterol": "2.0mg",
+    "Sodium": "604.3mg (3.0%)"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Instant Suji Halwa with Jaggery",
@@ -1973,7 +2544,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40209300-8_3-aashirvaad-instant-suji-halwa-with-jaggery.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aashirvaad Instant Meals range is packed with the promise of a taste that takes you home. With no cooking or preparation required, these ready-to-eat Instant Meals can be made in just a few minutes. Feeling nostalgic? Revive your sweet childhood memories of gorging on a whole bowl of suji halwa with Aashirvaad Instant Suji Halwa with Jaggery. Add hot water, stir, and wait. You can enjoy your favourite dessert with the added goodness of jaggery in just 8 minutes!\nConveniently packed in a cup, you can now relish suji halwa, anytime and anywhere. Semolina and jaggery are cooked in ghee are flavoured with cashews, nutmeg, and cardamom. You can now indulge guilt-free as the ready to eat halwa is made with jaggery and not refined sugar.",
+   "ingredients": "Jaggery (38.6%), Semolina (36.8%), Ghee, Milk Solids, Cashewnuts (3.2%), Nutmeg and Green Cardamom(0.1%)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "22.5g",
+    "Energy (kcal)": "435 kcal",
+    "Protein (g)": "8.6 g",
+    "Carbohydrate (g)": "69.5 g",
+    "Total Sugars (g)": "38.8 g",
+    "Added Sugars (g)": "31.1 g",
+    "Total fat (g)": "14.0 g",
+    "Trans fat (g)": "0.30 g",
+    "Saturated fat (g)": "8.9 g",
+    "Cholesterol (mg)": "37.0 mg",
+    "Sodium (mg)": "97.6 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Khatta Meetha Poha",
@@ -2026,7 +2619,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40209298-8_2-aashirvaad-instant-khatta-meetha-poha-with-millets.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful taste of home with Aashirvaad's Instant Meals range. Crafted with the finest ingredients, these ready-to-eat meals offer a convenient and flavourful solution for busy mornings or when you crave a comforting, homemade-style dish. The Instant Khatta Meetha Poha with Millets is a standout, blending the goodness of millets like foxtail, quinoa, kodo, and barnyard with the perfect balance of spices, peanuts, and onions.\nMillets are a highly nutritious grain, rich in fibre, protein, and essential minerals, making this poha a healthier alternative to regular rice. With just a few minutes of preparation, you can enjoy a delicious, nourishing breakfast that will transport you back to your mother's kitchen. Aashirvaad's Instant Meals range is the perfect solution for those seeking the taste of home without the time-consuming preparation.",
+   "ingredients": "Rice Flakes (62.2%), Sugar (7.6%), Refined Palm Oil, Peanut (5.6%), Raisin, Iodized Salt, Dehydrated Onion (2.3%), Green Chilli Paste (1.8%), Dehydrated Potato, Spices and Condiments, Proso Millet (0.5%), Foxtail Millet (0.5%), Barnyard Millet (0.5%), Kodo Millet (0.5%), Quinoa (0.5%), Curry Leaves (0.5%), Coriander Leaves (0.5%), Mustard (0.4%), Dried Mango Powder (0.4%), Acidity Regulator (INS 296), Antioxidant (INS 300)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "60g",
+    "Energy (kcal)": "406 kcal",
+    "Protein (g)": "7.2 g",
+    "Carbohydrate (g)": "73.3 g",
+    "Of which Sugar (g)": "11.0 g",
+    "Added sugar (g)": "7.6 g",
+    "Dietary Fibre (g)": "3.0 g",
+    "Fat (g)": "9.3 g",
+    "Trans Fat (g)": "0.01 g",
+    "Saturated Fat (g)": "4.0 g",
+    "Sodium (mg)": "1340.0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rice Idli Instant Mix",
@@ -2079,7 +2694,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40223581-8_3-aashirvaad-breakfast-instant-mix-rice-idli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Aasirvaad Instant Mix range promises discerning Indian homemakers authentic tasting dishes that are easy to make.\nSavour the all-time favourite South Indian dish with the idli batter by Aashirvaad Instant Mix Rice Idlis. Relish it as a yummy breakfast or a delicious meal or as a quick snack, anytime you want. Because all you have to do is follow 3 quick and easy steps and voila! Tasty and healthy Rice Idlis are ready easily.\nEnjoy the softest idlis every time with Aashirvaad instant mix. This idli batter includes rice flour and urad dal. Each pack of Aashirvaad Instant Mix can make 20 Rice Idlis. So, store it in a cool, dry place and use it repeatedly over a period of time.\nConvenient to make and authentic in taste, Aashirvaad Instant Mix range also includes the decadent Indian sweet - Gulab Jamun and tasty South Indian favourites - Rava Idli, and Rice Dosa.",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aloo Paratha",
@@ -2123,7 +2744,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282381-8_2-aashirvaad-aloo-paratha-ready-to-cook-frozen-no-added-preservatives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic flavours of North Indian cuisine with Aashirvaad's Ready to Cook Aloo Paratha. These delectable parathas are made with the finest ingredients and traditional spices, offering a quick and delicious meal option that can be enjoyed any time of day. Forget the hassle of preparing the potato filling and kneading the dough - simply heat and serve these flaky, soft parathas with your favourite accompaniments for a truly satisfying dining experience.\nElevate your meals with the convenience of Aashirvaad's frozen paratha range, which also includes tempting options like Garlic and Coriander Naan, Tandoori Naan, Paneer Paratha and Malabar Paratha. Enjoy the simplicity of ordering these wholesome treats online, with doorstep delivery straight to your kitchen, ready to be savoured whenever hunger strikes.",
+   "ingredients": "Vegetables [potato (25.2%), Onion And Green Chili], Wheat Flour (atta), Water, Refined Corn Oil, Chat Masala {rock Salt, black Salt, Dried Mango, Cumin, Pomegranate Seed, Black Pepper, Dried Ginger, Red Chilli, Dried Mint, Nutmeg, Ajowan and Asafoetida}, Coriander Leaves (1.2%), Iodized Salt, Dehydrated Potato (0.4%), Sugar, Wheat Gluten and Emulsifier (mono- and Di-glycerides of Fatty Acids (from Palm Oil)), Contains Wheat, May Contains Milk, Soy, Nut",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "100 g",
+    "ENERGY ( kCal)": "230",
+    "PROTEIN (g)": "5.4",
+    "CARBOHYDRATE (g)": "32.5",
+    "TOTAL SUGARS (g)": "2.9",
+    "ADDED SUGAR (g)": "0.3",
+    "TOTAL FAT (g)": "8.7",
+    "TRANS FAT (g)": "0.1",
+    "SATURATED FAT (g)": "2.5",
+    "CHOLESTEROL (mg)": "0.2",
+    "SODIUM (mg)": "610.0",
+    "RDA PER SERVE": "RDA PER SERVE"
+   },
+   "storageInstructions": "Store in deep freezer at -18°C or below.",
+   "manufacturerName": "Global Gourmet Pvt Ltd Unit-1",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Malabar Paratha",
@@ -2139,7 +2783,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40282384_4-aashirvaad-malabar-paratha-ready-to-cook-frozen-no-added-preservatives.jpg"
-    }
+    },
+    "barcode": "8909081009839"
    }
   ],
   "images": [
@@ -2167,7 +2812,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282384-8_3-aashirvaad-malabar-paratha-ready-to-cook-frozen-no-added-preservatives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable flavours of South India with Aashirvaad's Ready-To-Cook Malabar Paratha. This crispy, flaky, and melt-in-your-mouth paratha is a quick and convenient solution for a traditional and satisfying meal. Bursting with authentic taste and made with the highest quality ingredients, these frozen parathas contain no added preservatives, allowing you to enjoy a wholesome and homely dish in just minutes.\nSimply heat the paratha on both sides, and you're ready to pair it with your favourite sabji or dal for a truly delightful dining experience. Aashirvaad, a brand renowned for its quality products, brings you this versatile and flavourful addition to your daily meals, adding a touch of excitement to your routine.",
+   "ingredients": "Refined Wheat Flour (Maida), Milk Solids, Water, Refined Corn Oil, Sugar, Iodised Salt and Baking Powder {Raising Agent [Ins 5(ii)] And Acidulant [Ins 45(i)]}",
+   "nutritionalInfo": {
+    "Energy (kcal)": "316",
+    "Protein (g)": "8.1",
+    "Carbohydrate (g)": "46.2",
+    "Total Sugars (g)": "1.3",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "11.4",
+    "Saturated Fat (g)": "5.6",
+    "Trans Fat (Other Than Naturally Occurring Trans Fat) (g)": "0.0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "316"
+   },
+   "storageInstructions": "Store in deep freezer at -18°C or below.",
+   "manufacturerName": "Global Gourmet Pvt Ltd Unit-1",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tandoori Naan",
@@ -2211,7 +2876,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282382-8_2-aashirvaad-tandoori-naan-ready-to-cook-frozen-no-added-preservatives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic flavours of India with Aashirvaad's Ready-to-Cook Tandoori Naan. This frozen naan offers a wholesome and convenient dining experience in the comfort of your own home. Crafted with care and no added preservatives, the naan boasts a soft, pillowy texture and the distinctive taste of a tandoor-baked delight. Simply heat and enjoy these mouth-watering naans with your favourite curries, dals, and sabzis for a quick and flavourful meal.\nWhether you're craving a taste of traditional Indian cuisine or seeking a hassle-free option for your busy schedule, Aashirvaad's Tandoori Naan is the perfect solution. Elevate your home-cooked meals with this authentic and hygienically prepared frozen flatbread.",
+   "ingredients": "Refined Wheat Flour (Maida), Water, Milk Solids, Refined Corn Oil, Iodised Salt, Sugar, Yeast and Baking Powder {Raising Agent [INS 5 (ii)] and Acidulant [INS 45(i)]}.Contains Wheat, Milk. May contains Soy, Nut.",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy (kcal)": "312 kcal",
+    "Protein (g)": "6.2 g",
+    "Carbohydrate (g)": "54.5 g",
+    "Total Sugars (g)": "3.1 g",
+    "Added Sugars (g)": "0.7 g",
+    "Total Fat (g)": "7.7 g",
+    "Saturated Fat (g)": "3.3 g",
+    "Trans Fat (g)": "0.1 g",
+    "Cholesterol (mg)": "10.0 mg",
+    "Sodium (mg)": "380.0 mg"
+   },
+   "storageInstructions": "Always store in a deep freezer at -18°C or below.",
+   "manufacturerName": "Global Gourmet Pvt Ltd Unit-1",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Garlic & Coriander Naan",
@@ -2255,6 +2941,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282383-8_2-aashirvaad-garlic-coriander-naan-ready-to-cook-frozen-no-added-preservatives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your dining experience with Aashirvaad's ready-to-cook Garlic & Coriander Naan. Infused with the perfect blend of aromatic garlic and refreshing coriander, this naan delivers a rich, savoury flavour that pairs beautifully with a variety of Indian curries, gravies and dishes. Convenient and easy to prepare, simply heat the frozen naan in a pan or oven, and you'll have soft, fragrant naan ready in an instant.\nIdeal for busy weeknights, quick meals or special occasions, this versatile naan offers the perfect balance of taste and convenience, making it a must-have for naan lovers. Crafted with care and without any added preservatives, Aashirvaad's Garlic & Coriander Naan is a delicious and wholesome addition to your home-cooked meals.",
+   "ingredients": "Refined wheat flour (maida), Water, Milk solids, Garlic (7%), Refined Corn Oil, Iodised Salt, Sugar, Yeast, Coriander Leaves (.3%), Baking Powder (Raising Agent [INS 5 (ii)]) and Acidulant [INS 45]",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy (kcal)": "333 kcal",
+    "Protein (g)": "6.0 g",
+    "Carbohydrate (g)": "54.1 g",
+    "Total Sugars (g)": "3.0 g",
+    "Added Sugars (g)": "0.6 g",
+    "Total Fat (g)": "10.3 g",
+    "Saturated Fat (g)": "3.7 g",
+    "Trans Fat (g)": "0.1 g",
+    "Cholesterol (mg)": "10.0 mg",
+    "Sodium (mg)": "373.5 mg"
+   },
+   "storageInstructions": "Always store in a deep freezer at -18°C or below.",
+   "manufacturerName": "Global Gourmet Pvt Ltd Unit-1",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  }
 ]

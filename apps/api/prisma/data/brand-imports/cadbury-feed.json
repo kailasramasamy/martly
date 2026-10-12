@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20005973_17-cadbury-perk-double-chocolate-bar.jpg"
-    }
+    },
+    "barcode": "7622202819339"
    },
    {
     "title": "10.3g",
@@ -50,7 +51,18 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005973-8_2-cadbury-perk-double-chocolate-bar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Spark the lighter side of life with Cadbury Perk, a delightful combination of chocolate-coated wafer and delicious Cadbury milk chocolate that enlivens your mood and adds sweet moments to your day. Munch on these crunchy, chocolate-covered wafer bars for a delicious break from the ordinary. Whether you're craving a treat for yourself or looking to share the joy with friends and family, this multi-pack of Cadbury Perk is the perfect choice to satisfy your chocolate cravings. The chocolate-coated wafer with Cadbury's signature milk chocolate is sure to elevate your mood and provide a moment of pure indulgence, making it the ideal companion for a pick-me-up or a shared delight.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Interesterified Vegetable Fat, Milk Solids, Starch, Cocoa Solids (3%*), Emulsifiers (442, 322, 476), Palmolein, Flavours (Natural, Natural Identical And Artificial (Milk And Vanilla) Flavouring Substances), Iodised Salt, Yeast, Raising Agent (500(Ii)), Improver (1101(I))",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g Serving_Size: 9.1g Energy: 513kcal Protein: 4.7g Carbohydrate: 67.6g Total_Sugars: 45.1g Added_Sugars: 43g Total_Fat: 25.2g Saturated_Fat: 20g Trans_Fat: 0.2g Cholesterol: 6.5mg Sodium: 103mg"
+   },
+   "storageInstructions": "*Keep in a cool, dry place *Avoid direct sunlight",
+   "manufacturerName": "Mondelez India Foods Private Limited",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Perk Plus Wafer Bar",
@@ -66,7 +78,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40338571_4-cadbury-perk-plus-wafer-coated-chocolate-bar.jpg"
-    }
+    },
+    "barcode": "7622202344152"
    }
   ],
   "images": [
@@ -94,7 +107,18 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338571-8_4-cadbury-perk-plus-wafer-coated-chocolate-bar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Spark the lighter side of life with Cadbury Perk Plus, a delightful combination of chocolate-coated wafer and smooth Cadbury milk chocolate that enlivens your mood and adds sweet moments to your day. Enjoy the light, crunchy texture of the crispy wafers coated in rich, velvety chocolate for a delicious break from the ordinary. This pocket-Sized treat is perfect for satisfying sudden sweet cravings, with a flavour that will transport you to a world of pure indulgence. Munch on these chocolate bars and unbox delightful times, perfect for sharing with friends or savouring all to yourself. Just like every bar of Cadbury Milk Chocolate, this chocolate packet is suitable for vegetarians, making it a guilt-free indulgence.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Interesterified Vegetable Fat, Milk Solids, Starch, Cocoa Solids (3%), Emulsifiers (442, 322, 476), Palmolein, Flavours (Natural, Natural Identical And Artificial (Milk And Vanilla) Flavouring Substances), Iodised Salt, Yeast, Raising Agent (500(I)), Improver (1101(I))",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g Serving_Size: 38g Energy: 513 kcal Protein: 4.7 g Carbohydrate: 67.6 g Total Sugars: 45.1 g Added Sugars: 43 g Total Fat: 25.2 g Saturated Fat: 20 g Trans Fat: 0.2 g Cholesterol: 6.5 mg Sodium: 103 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry place",
+   "manufacturerName": "Mondelez India Foods Private Limited",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Perk Mini Treats",
@@ -110,7 +134,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40019375_24-cadbury-perk-chocolate-home-treats.jpg"
-    }
+    },
+    "barcode": "7622202336058"
    }
   ],
   "images": [
@@ -138,7 +163,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019375-8_7-cadbury-perk-chocolate-home-treats.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Spark the lighter side of life with Cadbury Perk, a combination of chocolate coated wafer and delicious Cadbury milk chocolate that enlivens your mood and adds sweet moments to your day. Munch on these chocolate bars for a delicious break from a boring day. Get a share pack of this crunchy wafer chocolate and enjoy delicious times. Just like every bar of Cadbury Dairy Milk, this chocolate packet is suitable for vegetarians.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Interesterified Vegetable Fat, Starch, Milk solids, Cocoa Solids (3%*), Emulsifiers (442, 322, 476), Palmolein, Flavours (Natural, Natural Identical and Artificial (Milk and Vanilla) Flavouring Substances), Iodised Salt, Yeast, Raising Agent (500(ii)), Improver (1101(i))",
+   "nutritionalInfo": {
+    "Nutrition per": "100g Serving_Size: 5.5 g Energy: 513 kcal Protein: 4.7 g Carbohydrate: 67.6 g Total Sugars: 45.1 g Added Sugars: 43 g Total Fat: 25.2 g Saturated Fat: 20 g Trans Fat: 0.2 g Cholesterol: 6.5 mg Sodium: 103 mg"
+   },
+   "manufacturerName": "Mondelez India Foods Private Limited",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mini Treats Assorted Chocolate Bars",
@@ -154,7 +189,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40333454_9-cadbury-mini-treats-assorted-chocolate-bars.jpg"
-    }
+    },
+    "barcode": "7622202848742"
    }
   ],
   "images": [
@@ -179,7 +215,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333454-7_4-cadbury-mini-treats-assorted-chocolate-bars.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury Mini Treats is an assorted pouch pack offering the bite-sized treats for sharing. Cadbury Assorted Mini Treats offering a mouthful of goodness in every piece. These chocolate bars are perfect sweet for snacking or as a chocolate gift pack for gifting on special occasions like birthdays & get-togethers. Made from sustainably sourced cocoa & suitable for vegetarians.",
+   "ingredients": "Cadbury Fuse (3 Units × 13 g Each)\nIngredients:\nCentre Filling 72%: Peanuts (19%), Sugar, Interesterified Vegetable Fat, Liquid Glucose, Milk Solids, Hydrogenated Vegetable Oil, Cocoa Solids, Invert Sugar, Humectant (422), Iodised Salt, Emulsifiers (322, 471), Flavours (Nature Identical and Artificial (Vanilla) Flavouring Substances).\nMilk Chocolate 28%: Sugar, Cocoa Butter, Milk Solids (4%), Lactose, Cocoa Solids, Fractionated Fat, Emulsifiers (442, 476), Flavours (Natural, Nature Identical and Artificial (Vanilla and Caramel) Flavouring Substances).\nContains Vegetable Fat in Addition to Cocoa Butter.\nAllergen Information: Contains Milk, Peanut, Soy and Sulphites. May Contain Wheat and Barley.\nCadbury Dairy Milk (3 Units × 7 g Each)\nIngredients:\nSugar, Milk Solids (23%), Cocoa Butter, Cocoa Solids, Emulsifiers (442, 476), Flavours (Natural, Nature Identical and Artificial (Vanilla) Flavouring Substances).\nAllergen Information: Contains Milk. May Contain Tree Nuts, Wheat, Barley and Soy.\nCadbury Perk (5 Units × 5.5 g Each)\nIngredients:\nSugar, Interesterified Vegetable Fat, Refined Wheat Flour (Maida), Milk Solids, Starch, Cocoa Solids (5%), Palmolein, Emulsifiers (442, 322, 476), Iodised Salt, Yeast, Flavours (Natural, Nature Identical and Artificial (Caramel and Vanilla) Flavouring Substances), Raising Agent (500(ii)), Improver (1101(i)).\nAllergen Information: Contains Milk, Wheat, Soy and Sulphites. May Contain Barley.\nCadbury 5 Star (4 Units × 9.8 g Each)\nIngredients:\nSugar, Liquid Glucose, Milk Solids, Invert Sugar, Hydrogenated Oil, Cocoa Solids, Cocoa Butter, Fractionated Fat, Emulsifiers (442, 471, 476), Hydrolysed Vegetable Protein, Iodised Salt, Flavours (Natural, Nature Identical and Artificial (Milk, Caramel and Vanilla) Flavouring Substances).\nAllergen Information: Contains Milk, Soy and Sulphites. May Contain Peanut, Wheat, Barley and Tree Nut.",
+   "manufacturerName": "(As Per Batch Code)",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lickables with Oreo",
@@ -195,7 +238,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40104492_23-cadbury-dairy-milk-lickables.jpg"
-    }
+    },
+    "barcode": "7622202335518"
    }
   ],
   "images": [
@@ -220,7 +264,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40104492-7_8-cadbury-dairy-milk-lickables.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy delicious Cadbury Dairy Milk with Oreo chunks in a scoopable format. It comes with an exciting toy of your child’s favourite cartoon character. Access the PlayPad App from the pack and make learning full of fun and joy for them. Cadbury Dairy Milk lickables is the perfect chocolate for birthdays and playtime for kids. This milk chocolate pack of Cadbury Lickables is perfect for snacking.",
+   "ingredients": "Sugar, Palm Superolein, Milk Solids (16%*), Biscuit 7%*,\n(Refined Wheat Flour (Maida), Sugar, Palmolein, Invert Sugar, Cocoa Solids,\nLeavening Agents (500(ii), 503(ii)), lodised Salt, Emulsifier (322), Flavours (Artificial\n(Vanilla) Flavouring Substances)), Mineral, Stabilizing Agent (1400), Cocoa\nSolids, Wheat crispies 2%* (Refined Wheat Flour (Maida), Sugar, Starch, lodised\nSalt, Palm Kernel Oil, Leavening Agents (450(i), 500(ii), 341(i))), Hydrogenated Vegetable Fat,\nEmulsifiers (442, 476), Cocoa Buter, Fractionated Fat, Flavours (Natural,\nNature Identical, Artificial (Caramel and Vanilla) Flavouring Substances).\nAllergen Information: Contains Milk, Wheat, Soy. May\nContain Barley.",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy": "490 kcal",
+    "Protein": "7 g",
+    "Carbohydrate": "59.2 g",
+    "Total Sugars": "48.8 g",
+    "Added Sugars": "39.6 g",
+    "Total Fat": "25.9 g",
+    "Saturated Fat": "15.0 g",
+    "Trans Fat": "0.2 g",
+    "Cholesterol": "7.1 mg",
+    "Sodium": "222 mg"
+   },
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dairy Milk Milkinis",
@@ -236,7 +299,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40352454_3-cadbury-dairy-milk-milkinis-chocolate-bars.jpg"
-    }
+    },
+    "barcode": "7622202847653"
    },
    {
     "title": "34g",
@@ -273,7 +337,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352453_4-cadbury-dairy-milk-milkinis-chocolate-bars.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury Dairy Milk Milkinis Chocolate Bar is a delightful treat made with smooth and creamy milk chocolate, offering a rich and indulgent taste. Its bite-sized pieces make it perfect for sharing or enjoying on the go. Crafted with the classic Cadbury goodness, it delivers a satisfying chocolate experience that melts in the mouth, making every moment extra special.",
+   "ingredients": "Milk Chocolate (60%) – Sugar, Milk Solids (11%), Cocoa Butter, Cocoa Solids, Fractionated Fat, Emulsifiers (E442, E476), Flavours (Natural, Nature Identical and Artificial) including Caramel and Vanilla Flavouring Substances. Centre Filling (40%) – Milk Solids (16%), Sugar, Fractionated Fat, Palm Superolein, Emulsifiers (E442, E476), Flavours (Nature Identical Flavouring Substances). Contains cocoa butter equivalent in addition to cocoa butter.",
+   "nutritionalInfo": {
+    "Energy": "540 kcal",
+    "Protein": "8.7 g",
+    "Carbohydrate": "57.0 g",
+    "Total Sugars": "54.7 g",
+    "Added Sugars": "42.8 g",
+    "Total Fat": "31.0 g",
+    "Saturated Fat": "17.5 g",
+    "Trans Fat": "0.2 g",
+    "Cholesterol": "12.0 mg",
+    "Sodium": "124.2 mg"
+   },
+   "manufacturerName": "Makson Pharmaceuticals (I) Private Limited",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dairy Milk Madbury Crispy Rabdi",
@@ -311,7 +394,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269041-6_1-cadbury-dairy-milk-crispy-rabdi-madbury-chocolate-bar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy the all-new Limited Edition of Cadbury – Crispy Rabdi,  blend of one of everyone’s favourite Indian Dessert- rich & creamy Rabdi along with crispy Butterscotch Nuts. Created by Omkar Madhav Awate and voted by the consumers, this limited-edition Cadbury Dairy Milk Chocolate with mouthwatering taste of a desi delicacy is sure to delight you. Share it with your friends and family and let it be a small part of your happiness.",
+   "ingredients": "Sugar, Milk Solids (19%*) Cocoa Butter, Cocoa Solids, Butterscotch Pieces 9%* Sugar, Butter, Lactose Skimmed Milk Powder, Flavours (Artificial (Toffee) Flavouring Substances), Edible Salt, Emulsifier (322)), Emulsifiers (442, 476), Flavours (Natural, Natural Identical (Rabdi) and Artificial (Vanilla) Flavouring Substances). #Contains added Rabdi Flavour",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "MONDELEZ INDIA FOODS PVT LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
  },
  {
   "title": "Dairy Milk Madbury Crunchy Cola",
@@ -349,7 +440,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269040-6_1-cadbury-dairy-milk-crunchy-cola-madbury-chocolate-bar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy the all-new Limited Edition of Cadbury – Crunchy Cola, which is a perfect mixture of fizzy cola with crunchy gems that gives a fun & zingy twist to your favourite Cadbury. Created by Mughda Satish Kulkarni and voted by the consumers, this limited-edition Cadbury Dairy Milk Chocolate with a nostalgic twist is sure to delight you.",
+   "ingredients": "Sugar, Milk Solids (19%*), Panned Confectionery (Gems (15% (Sugar, Hydrogenated Oils, Cocoa Solids, Lactose-Rich Deproteinized Whey Permeate Powder, Milk Solids, Refined Wheat Flour (Maida), Emulsifiers (414,442, 476), Colours (171, 102, 133, 124, 127, 122, 132, 110), Glazing Agent (903), Liquid Glucose, Flavours (Natural, Nature) Identical and Artificial (Caramel and Vanilla) Flavouring Substances), Cocoa Butter, Cocoa Solids, Emulsifiers (442,476), Flavour (Natural, Nature Identical (Cola) and Artificial (Vanilla) Flavouring Substances). Contains added Cola Flavour",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "MONDELEZ INDIA FOODS PVT LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
  },
  {
   "title": "Dark Milk Chocolate",
@@ -399,7 +498,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40178138_2-cadbury-dark-milk-chocolate-bar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Welcome to Cadbury Dark milk with a delightful contrast of exceptionally fine dark chocolate and smooth and creamy milk chocolate. The richest, creamiest chocolate ever made with the perfect blend of aromatic cocoa beans to create rich and refined chocolate of intense flavour and elegant texture.",
+   "ingredients": "Sugar, Milk Solids (15%*), Cocoa Butter, Cocoa Solids, Emulsifiers (322). Contains Added Flavour (Natural, Nature Identical And Artificial (Ethyl Vanillin) Flavouring Substances).",
+   "storageInstructions": "Store in a cool, hygienic and dry place to retain freshness.",
+   "manufacturerName": "Mondelez India Foods Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
  },
  {
   "title": "Bournville Cranberry 50% Dark Chocolate",
@@ -434,7 +541,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352455-5_1-cadbury-bournville-cranberry.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury Bournville is a premium dark chocolate that delivers an intense experience to lovers of dark chocolate! Each Bournville dark chocolate is made from the finest cocoa sourced from some of the best places around the world, perfectly roasted for an intense taste. Along with this cranberry dark chocolate, also try other variants of Bournville chocolate bar – 50% dark, 70% dark, and fruit & nut.",
+   "ingredients": "Sugar, Cocoa Butter (24%), Cocoa Solids (18%), Dried Sweetened Carnberries (11%) (Carnberries, Sugar), Almonds (7%), Milk Solids, Emulsifiers (442, 476), Flavours (Natural And Nature Identical Flavouring Substances).\nAllergen Information: Contains Milk, Almond. May Contain Tree Nuts, Soy",
+   "nutritionalInfo": {
+    "Energy": "526 kcal",
+    "Protein": "6.1 g",
+    "Carbohydrate": "58.0 g",
+    "Total sugars": "45.7 g",
+    "Added sugars": "43.7 g",
+    "Total fat": "31.6 g",
+    "Saturated fat": "19 g",
+    "Trans fat": "0.1 g",
+    "Cholesterol": "4.4 mg",
+    "Sodium": "13.6 mg"
+   },
+   "manufacturerName": "Makson Pharmaceuticals (I) Private Limited",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dairy Milk Imported Tablet",
@@ -450,7 +576,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40068030_4-cadbury-dairy-milk.jpg"
-    }
+    },
+    "barcode": "9300617041092"
    }
   ],
   "images": [
@@ -469,7 +596,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068030-5_2-cadbury-dairy-milk.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury dairy milk bar is an ideal choice for chocolate lovers. It is thoroughly filled with creaminess and richness. With a fair amount of cocoa and sugar, Cadbury has aced this product. This premium quality chocolate uses fresh milk and is super silky.\nFresh milk is used for making it.\nGood quality cocoa.\nSmooth and velvety.",
+   "ingredients": "Milk, Sugar, Cocoa Butter, Cocoa Mass, Vegetable Fats (Palm), Emulsifiers (E442, E476), Cocoa, Flavourings.",
+   "storageInstructions": "A perfect choice in festivals and functions to share among family.\nCan be added with birthday presents.\nNumerous desserts can be made using this.",
+   "manufacturerName": "Cadbury-Linden Rd",
+   "countryOfOrigin": "UK"
+  }
  },
  {
   "title": "Dairy Milk Whole Nut Imported",
@@ -528,7 +662,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40264859_1-cadbury-cadbury-dairy-milk-whole-nut-tablet-300-gm.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury Dairy Milk Whole Nut is a pleasant chocolate that not only provides the finest gourmet chocolate but also a delightful crunch from hazelnuts. It will be a great deal if you are a chocolate lover.",
+   "ingredients": "Milk**, Sugar, Cocoa Butter, Roasted Hazelnuts, Cocoa Mass, Vegetable Fats (Palm, Shea), Emulsifiers (E442, E476), Flavourings",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "45g",
+    "Energy": "2276 Kj",
+    "Fat": "34.0g",
+    "Of Which Saturates": "16.0g",
+    "Carbohydrate": "50.0g",
+    "Of Which Sugars": "49.0g",
+    "Fibre": "3.0g",
+    "Protein": "8.3g",
+    "Salt": "0.21g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "Mondelez",
+   "countryOfOrigin": "United Kingdom"
+  }
  },
  {
   "title": "Studio Gianduja Hazelnut Pralines",
@@ -544,7 +697,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40329721_5-cadbury-studio-signature-pralines-gianduja-hazelnut-chocolate.jpg"
-    }
+    },
+    "barcode": "7622202335532"
    },
    {
     "title": "52g",
@@ -581,7 +735,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329721-8_4-cadbury-studio-signature-pralines-gianduja-hazelnut-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Centre Filling- Sugar, Hazelnut Paste (11%), Hazelnut Pieces (7%), Milk Solids, Fractionated Fat, Cocoa Butter, Cocoa Solids, Emulsifiers (442, 476), Flavours (Natural, Nature Identical and Artificial (Vanilla) Flavouring Substances). Blended Chocolate- Sugar, Cocoa Butter, Cocoa Solids, Milk Solids, Emulsifiers (442, 476), Nature Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "13g",
+    "Energy": "605 kcal",
+    "Protein": "7.4 g",
+    "Carbohydrate": "50.0 g",
+    "Total Sugars": "41.0 g",
+    "Added Sugars": "36.8 g",
+    "Total Fat": "43.0 g",
+    "Saturated Fat": "20.1 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "10.4 mg",
+    "Sodium": "47 mg",
+    "% RDA per serve - Energy": "4 %",
+    "% RDA per serve - Added Sugars": "10 %",
+    "% RDA per serve - Total Fat": "8%",
+    "% RDA per serve - Saturated Fat": "12%",
+    "% RDA per serve - Trans Fat": "1%",
+    "% RDA per serve - Sodium": "0.3%"
+   },
+   "storageInstructions": "*Store in a cool, hygienic and dry place\n*Do not store above temperature of 25°C",
+   "manufacturerName": "Makson Pharmaceuticals (I) Pvt. Ltd",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Studio Brownie Aux Noix Pralines",
@@ -625,7 +806,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329723-8_1-cadbury-studio-signature-pralines-brownie-aux-noix-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Milk Chocolate - Sugar, Milk Solids (14%), Cocoa Butter, Cocoa Solids, Emulsifiers (442, 476), Flavours (Natural, Nature Identical and Artificial (Vanilla) Flavouring Substances). Centre - Fractionated fat, Sugar, Walnuts (7%), Refined Wheat flour (Maida), Cocoa Solids, Milk Solids, Interesterified fat, Humectant (422), Water, Palmolein, Emulsifiers (322, 476, 442), Invert sugar, Flavours (Natural, Nature Identical (Brownie) and Artificial (Vanilla) Flavouring Substances), Raising Agents (5(ii), 53(ii)), Iodised Salt, Antioxidant (37c)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "13g",
+    "Energy": "570kcal",
+    "Protein": "7.9g",
+    "Carbohydrate": "51.6g",
+    "Total Sugars": "41g",
+    "Added Sugars": "32.8g",
+    "Total Fat": "37.5g",
+    "Saturated Fat": "17.8g",
+    "Trans Fat": "0.1g",
+    "Cholesterol": "18mg",
+    "Sodium": "144mg",
+    "%RDA Energy": "4%",
+    "%RDA Added Sugars": "9%",
+    "%RDA Total Fat": "7%",
+    "%RDA Saturated Fat": "11%",
+    "%RDA Trans Fat": "1%",
+    "%RDA Sodium": "1%"
+   },
+   "storageInstructions": "*Store in a cool, hygienic and dry place\n*Do not store above temperature of 25°C",
+   "manufacturerName": "Makson Pharmaceuticals (I) Pvt. Ltd",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Studio Chocolat a l'Orange Pralines",
@@ -641,7 +849,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40329722_4-cadbury-studio-signature-pralines-chocolat-a-lorange-chocolates.jpg"
-    }
+    },
+    "barcode": "7622202335556"
    }
   ],
   "images": [
@@ -669,7 +878,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329722-8_3-cadbury-studio-signature-pralines-chocolat-a-lorange-chocolates.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Centre Filling - Sugar, Milk Solids, Cocoa Butter, Apple Orange Pieces (5.5%) (Invert Syrup, Humectant (422), Apple Puree Concentrate (1%), Liquid Glucose, Sugar, Wheat Fibre, Orange Juice Concentrate (.4%), Refined Palm Oil, Thickening Agent (44), Acidity Regulator (33), Flavour (Natural (Orange) Flavouring Substances), Colour (1)), Cocoa Solids, Fractionated Fat, Emulsifiers (442, 476), Flavour (Natural (Orange), Nature Identical and Artificial (Vanilla) Flavouring Substances). Blended Chocolate - Sugar, Cocoa Butter, Cocoa Solids, Milk Solids, Emulsifiers (442, 476), Flavour (Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "13g",
+    "Energy": "573 kcal",
+    "Protein": "6.0 g",
+    "Carbohydrate": "55.6 g",
+    "Total Sugars": "47.0 g",
+    "Added Sugars": "40.3 g",
+    "Total Fat": "36.5 g",
+    "Saturated Fat": "23.6 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "18.9 mg",
+    "Sodium": "65 mg",
+    "% RDA per serve - Energy": "4%",
+    "% RDA per serve - Added Sugars": "10%",
+    "% RDA per serve - Total Fat": "7%",
+    "% RDA per serve - Saturated Fat": "14%",
+    "% RDA per serve - Trans Fat": "1%",
+    "% RDA per serve - Sodium": "0.4%"
+   },
+   "storageInstructions": "*Store in a cool, hygienic and dry place",
+   "manufacturerName": "Makson Pharmaceuticals (I) Pvt. Ltd",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Studio Assorted Signature Pralines",
@@ -685,7 +921,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40329724_4-cadbury-studio-signature-pralines-assorted-flavours-chocolate.jpg"
-    }
+    },
+    "barcode": "7622202335594"
    }
   ],
   "images": [
@@ -713,7 +950,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40329724-8_3-cadbury-studio-signature-pralines-assorted-flavours-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Sugar, Hazelnut Paste, Hazelnut Pieces, Milk Solids, Fractionated Fat, Cocoa Butter, Cocoa Solids, Emulsifiers, Flavours (Natural, Nature Identical and Artificial (Vanilla)), Sugar, Cocoa Butter, Cocoa Solids, Milk Solids, Emulsifiers, Nature Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "13g",
+    "Energy": "605 kcal",
+    "Protein": "7.4g",
+    "Carbohydrate": "50.0g",
+    "Total Sugars": "41.0g",
+    "Added Sugars": "36.8g",
+    "Total Fat": "43.0g",
+    "Saturated Fat": "20.1g",
+    "Trans Fat": "0.1g",
+    "Cholesterol": "10.4mg",
+    "Sodium": "47mg",
+    "% RDA per serve - Energy": "4%",
+    "% RDA per serve - Added Sugars": "10%",
+    "% RDA per serve - Total Fat": "8%",
+    "% RDA per serve - Saturated Fat": "12%",
+    "% RDA per serve - Trans Fat": "1%",
+    "% RDA per serve - Sodium": "0.3%"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Makson Pharmaceuticals (I) Pvt. Ltd",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Celebrations Birthday Gift Pack",
@@ -757,7 +1021,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366987-8_2-cadbury-celebrations-assorted-chocolate-gift-pack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Cadbury Celebrations, from the House of Cadbury. An irresistible chocolate gift pack featuring Dairy Milk, Chocobakes, Lolly, 5 Star, and Gems - curated to bring joy to every festive moment. Sealed with love and crafted to delight, this chocolate box turns every bite into a celebration. Make every Birthday celebration sweeter with this special pack from Cadbury Celebrations.",
+   "ingredients": "Cadbury 5 Star:\nSugar Boiled Confectionery (1 pc x 16 g Each And 2 Units x 9.8 g Each)\nIngredients: Sugar, Liquid Glucose, Milk Solids, Invert Sugar, Hydrogenated Oil, Cocoa Solids, Cocoa Butter, Fractionated Fat, Emulsifiers (442, 471, 476), Hydrolysed Vegetable Protein, Iodised Salt, Flavours (Natural, Nature Identical And Artificial (Milk, Caramel And Vanilla) Flavouring Substances).\nAllergen Information: Contains Milk, Soy, Sulphites. May Contain Peanut, Wheat, Barley, and Tree Nut.\nCadbury Dairy Milk:\nMilk Chocolate (1 pc x 12.1 g Each)\nIngredients: Sugar, Milk Solids (19%*), Cocoa Butter, Cocoa Solids, Fractionated Fat, Emulsifiers (442, 476), Flavours (Natural, Nature Identical And Artificial (Caramel And Vanilla) Flavouring Substances).\nContains Cocoa Butter Equivalent In Addition To Cocoa Butter\nAllergen Information: Contains Milk, Sulphite, Soy. May Contain Tree Nuts, Wheat, Barley.\nCadbury Gems\nPanned Confectionery (3 pcs x 7.34 g Each)\nIngredients: Sugar, Hydrogenated Oils, Milk Solids, Cocoa Solids (8%*), Refined Wheat Flour (Maida), Emulsifiers (414, 442, 476), Colours (171, 102, 133, 124, 127, 122, 132, 110), Glazing Agent (903), Liquid Glucose, Cocoa Butter, Flavours (Natural, Nature Identical And Artificial (Caramel And Vanilla) Flavouring Substances).\nAllergen Information: Contains Milk, Wheat, Sulphites. May Contain Soy.\nCadbury Chocobakes Choc Layered Cake\nProprietary Food Choco Layered Cake (Category 7.2.1) (1 pc x 19 g Each)\nIngredients:\nCake (45%*): Refined Wheat Flour (Maida), Sugar, Humectants (420(ii), 422, 1520), Palm Olein, Liquid Glucose, Milk Solids, Cocoa Solids, Starch, Emulsifiers (322, 475, 471, 491), Raising Agents (500(ii), 450(i), 341(i)), Iodised Salt, Flavours (Natural And Nature Identical Flavouring Substances), Preservative (202), Stabiliser (415)\nChoco Layer (29%*): Sugar, Hydrogenated Vegetable Oils, Milk Solids, Cocoa Solids, Emulsifiers (442, 476), Flavours (Nature Identical, Artificial (Vanilla And Caramel) Flavouring Substances)\nFilling (26%*): Sugar, Fractionated Fat, Liquid Glucose, Humectants (422, 1520), Water, Emulsifiers (322, 475, 471, 491), Cocoa Solids, Flavours (Natural And Nature Identical Flavouring Substances), Iodised Salt, Preservative (202)\nAllergen Information: Contains Milk, Wheat, Sulphites, and Soy.\nCadbury Dairy Milk Lolly\nModified Toffee With Chocolate Centre (1 pc x 8.3 g Each)\nIngredients: Liquid Glucose, Sugar, Milk Chocolate (12%) (Sugar, Milk Solids (2.3%), Cocoa Butter, Cocoa Solids, Fractionated Fat, Emulsifiers (442, 476), Flavours (Natural, Nature Identical And Artificial (Caramel And Vanilla) Flavouring Substances)), Hydrogenated Vegetable Oils, Milk Solids, Humectant (422), Emulsifier (471), Stabiliser (414), Iodised Salt, Artificial (Vanilla) Flavouring Substance.\nAllergen Information: Contains Soy, Milk, and Sulphite. May Contain Wheat.",
+   "nutritionalInfo": {
+    "Energy": "449 kcal",
+    "Protein": "3.2 g",
+    "Carbohydrate": "74.3 g",
+    "Total Sugars": "47.7 g",
+    "Added Sugars": "43.1 g",
+    "Total Fat": "15.6 g",
+    "Saturated Fat": "8.2 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "3 mg",
+    "Sodium": "190 mg"
+   },
+   "manufacturerName": "Mondelez India Foods Private Limited",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milk Chocolate Spread",
@@ -789,7 +1072,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208514-4_1-cadbury-milk-chocolate-spread.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The all-time favourite taste of Cadbury dairy milk chocolate in a smooth spread. It is a sweet chocolate-flavoured paste which does not solidify, even at room temperature. Spread it on anything and everything, like toasts, roti, sandwiches, cakes, ice cream, pancakes, muffins, pitas, etc. Delicious and creamy, this spread must be tried by all Cadbury fans.",
+   "ingredients": "Cadbury Milk Chocolate Spread Ingredients: Sugar, Rapeseed Oil, Lactose (from Milk) Palm Oil, Milk Chocolate Crumb 7%, Milk Sugar, Coco Mass, Full Cream Milk Powder 7%, Fat Reduced Cocoa 5%, Whey Powder (milk) Emulsifier, Sunflower Lecithin, Flavouring.",
+   "nutritionalInfo": {
+    "Nutritional Information - Each 15g Portion Contains": "Energy 358 k, 86 kcal, Fat 5.7 g, Saturates 1.3 g, Sugars 7.8 g, Salt 0.02 g."
+   },
+   "usageInstructions": "Spread it on anything and everything, like toasts, roti, sandwiches, cakes, ice cream, pancakes, muffins, pitas, etc.",
+   "manufacturerName": "NESTLE",
+   "countryOfOrigin": "UK FSSAI Number: 1121333200076"
+  }
  },
  {
   "title": "Caramel Spread",
@@ -821,7 +1114,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208515-4_1-cadbury-caramel-spread.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury Caramel Chocolate Spread is the extremely delectable, completely versatile, sweet spread that delight your senses with each bite. Made with rich caramel and Cadbury dairy milk chocolate, this spread is ideal as a dessert sandwich, as a dip for salted pretzels, and even as a topping for baked goods.",
+   "ingredients": "Sugar, Vegetable Oil (rapeseed, Palm), Whey Powder, Milk Chocolate Crumb (milk Sugar, Cocoa Mass) 3.5% Full Cream Milk Powder 3.5%, Fat-reduced Cocoa 2.5%, Caramel Powder (caramelised Sugar Syrup, Maltodextrin) 0.5%, Emulsifier (sunflower Lecithin), Honeycomb Flavouring Skimmed Milk Powder, Colouring (paprika Extract), Flavouring.",
+   "nutritionalInfo": {
+    "Nutritional Information - Each 15 G Portion Contains": "Energy 361k, 87 Kcal, Fat 5.7 G, Saturates 1.4g, Sugars 8.4 G, Salt 0.02 G."
+   },
+   "usageInstructions": "Spread it on anything and everything, like toasts, roti, sandwiches, cakes, ice cream, pancakes, muffins, pitas, etc.",
+   "manufacturerName": "NESTLE",
+   "countryOfOrigin": "UK FSSAI Number: 1121333200076"
+  }
  },
  {
   "title": "Baking Dark Choco Chips",
@@ -859,7 +1162,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40236905-6_1-cadbury-baking-range-choco-chips-dark-delectable-creamy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Try out this new scrumptious Cadbury dark choco-chips, which is perfect for decorating cakes, cookies, brownies, cupcakes, ice cream, muffins, sundaes and more. Made with your favourite taste of Cadbury, milk choco chips are specially formulated to hold their shape when baked. Add choco-chips to kheer, halwa, or barfi to bring your favourite Cadbury taste into your mithai. Mix in cake or sprinkle over your milkshake or ice cream to add the Cadbury taste.",
+   "ingredients": "Sugar, Hydrogenated Vegetable Fat, Cocoa Solids, Milk Solids, Dextrose, Cocoa Butter, Emulsifier.",
+   "manufacturerName": "Parsons Nutritionals Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000056"
+  }
  },
  {
   "title": "Baking Choco Melts",
@@ -897,7 +1207,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40236906-6_1-cadbury-baking-range-choco-melts-delectable-creamy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury Choco Melts are perfect to make the ganache, frostings, topping and garnish, work equally well with inclusions in cakes, muffins and biscuits. Add warm cream to equal parts of melt and stir continuously to make delectable ganache or mix in cake/brownie to add Cadbury taste to your dessert.",
+   "ingredients": "Sugar, Hydrogenated Vegetable Fat, Cocoa Solids, Lactose-Rich Deproteinized Whey Permeate Powder, Milk Solids, Emulsifiers (442,476).",
+   "manufacturerName": "Parsons Nutritionals Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000056"
+  }
  },
  {
   "title": "Baking Dark Cooking Block",
@@ -935,7 +1252,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40236709-6_1-cadbury-baking-range-cooking-block-dark-rich-chocolaty-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury Dark Cooking Blocks are made using real cocoa solids, ensuring you get the rich chocolatey flavour, velvety smooth texture to all your desserts. It can be used for decorating, moulding and dipping purposes. It melts smoothly and mixes easily to make your choco lava cake and decoration on cakes, muffins, dipping doughnuts, chocolate cakes & mousse.",
+   "ingredients": "Sugar, Hydrogenated Vegetable Fat, Cocoa Solids(13%*), Milk Solids, Dextrose, Cocoa Butter, Emulsifiers (442).",
+   "usageInstructions": "Cut into pieces and microwave in a bowl for the 20s on low power\nStir and heat until completely melted to make icing/frosting",
+   "manufacturerName": "Mondelez India Foods Private Limited",
+   "fssaiLicense": "10012062000160",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cocoa Powder",
@@ -951,7 +1276,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20005968_14-cadbury-cocoa-powder-mix.jpg"
-    }
+    },
+    "barcode": "7622202304040"
    }
   ],
   "images": [
@@ -979,7 +1305,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005968-8_1-cadbury-cocoa-powder-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This natural, unsweetened cocoa powder jar packs the real Cadbury chocolate flavour! Grab the Cocoa powder that comes in a beautifully equipped jar ensuring its freshness and longevity. Enjoy it as a hot chocolate drink or get creative using it for chocolate recipes, delicious desserts or baking cakes & cookies.",
+   "ingredients": "Cocoa Powder (99.98%), Flavours (Natural and Artificial (Vanilla) Flavouring Substances)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "346",
+    "Protein (g)": "24",
+    "Carbohydrate (g)": "52",
+    "Total Sugars (g)": "1.7",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "12",
+    "Saturated Fat (g)": "6.7",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "21"
+   },
+   "manufacturerName": "D.P. Chocolates",
+   "fssaiLicense": "10012062000160",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hot Chocolate Powder Mix",
@@ -995,7 +1340,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/277866_20-cadbury-powder-mix-hot-chocolate-drink.jpg"
-    }
+    },
+    "barcode": "7622202845857"
    }
   ],
   "images": [
@@ -1023,7 +1369,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/277866-8_6-cadbury-powder-mix-hot-chocolate-drink.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury presents Hot Chocolate Powder mix to easily enjoy the Cadbury taste in an instant! When made with milk, Cadbury Chocolate Drink has a warming, comforting and uplifting effect any time of the day! Stir 2 heaped teaspoons (20g) of Hot Chocolate Powder mix in a cup of hot or cold milk Cadburys Drinking Chocolate is the perfect way to make milk enjoyable for your children.",
+   "ingredients": "Sugar, Cocoa Powder (30%*), Artificial (Vanilla) Flavouring Substances.\nAllergen Information: Contains Sulphites.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "379",
+    "Protein (g)": "6.7",
+    "Carbohydrate (g)": "85.3",
+    "Total Sugars (g)": "70.2",
+    "Added Sugars (g)": "69.9",
+    "Total Fat (g)": "3.3",
+    "Saturated Fat (g)": "2",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "7"
+   },
+   "manufacturerName": "D.P. Chocolates",
+   "fssaiLicense": "10012062000160",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Hot Chocolate",
@@ -1067,7 +1432,36 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333579-8_1-cadbury-instant-hot-chocolate-powder-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cadbury presents Hot Chocolate Powder mix to easily enjoy the Cadbury taste in an instant! When made with milk, Cadbury Chocolate Drink has a warming, comforting and uplifting effect any time of the day. Stir 2 heaped teaspoons of Hot Chocolate Powder mix in a cup of hot or cold milk. Cadbury's Drinking Chocolate is the perfect way to make milk enjoyable for your children.",
+   "ingredients": "Sugar, Non-dairy creamer [Glucose syrup, Hydrogenated vegetable oil, Sodium caseinate, Emulsifier (INS 471), Anticaking agent (INS 551), Stabilizer (INS 340(ii))], Cocoa solids (8%*), Milk solids, Maltodextrin, Stabilizer (INS 415), Iodised Salt, Flavours (Natural, Nature Identical and Artificial (Vanilla) Flavouring Substances)\nAllergens: Contains Milk, Sulphites. May contain Peanuts, Soy, Wheat, Barley.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "30g",
+    "Energy": "420kcal",
+    "Protein": "3.1g",
+    "Carbohydrate": "81g",
+    "Total Sugars": "56.3g",
+    "Added Sugars": "48g",
+    "Dietary Fibre": "2.4g",
+    "Total Fat": "11g",
+    "Saturated Fat": "10.5g",
+    "Trans Fat": "0.3g",
+    "Cholesterol": "0.3mg",
+    "Sodium": "409mg",
+    "% RDA^ Per Serve (Basis RDA Average Adult) - Energy": "6%",
+    "% RDA^ Per Serve (Basis RDA Average Adult) - Added Sugars": "29%",
+    "% RDA^ Per Serve (Basis RDA Average Adult) - Total Fat": "5%",
+    "% RDA^ Per Serve (Basis RDA Average Adult) - Saturated Fat": "14%",
+    "% RDA^ Per Serve (Basis RDA Average Adult) - Trans Fat": "5%",
+    "% RDA^ Per Serve (Basis RDA Average Adult) - Sodium": "6%"
+   },
+   "storageInstructions": "*Store in a cool, hygienic and dry place",
+   "manufacturerName": "Parsons Nutritionals Pvt. Ltd",
+   "fssaiLicense": "10012043000056",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Oreo Milkshake Mix",
@@ -1111,7 +1505,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213828-8_1-cadbury-oreo-milkshake-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy delicious chocolaty Oreo crumb milkshake with the all-new Cadbury Oreo milkshake mix. This scrumptious Oreo shake will delight your taste buds with yumminess from the first sip right down to the last. Put 25g/3 tablespoons of Milkshake mix in approximately 200ml of cold milk and mix well for 10 seconds to enjoy this shake with the yumminess of chocolate and the crunchiness of Oreo. Top it up with whipped cream and some pieces of Cadbury Dairy Milk chocolate, Oreos for an even more delectable experience.",
+   "ingredients": "Sugar, Biscuit 20%*(Refined Wheat Flour(Maida), Sugar, Palmolein, Invert Sugar, Cocoa Solids, Leavening Agents (500(II), 503(II)), Iodised Salt, Emulsifiers (322)), Milk Solids, Cocoa Solids(6. 3%*), Thickeners(466,415). Contains Added Flavour (Nature Identical And Artificial (Vanilla) Flavouring Substances) Allergen Information: Contains Milk, Wheat, Sulphites. May Contain Peanut, Soy.",
+   "manufacturerName": "Mondelez India Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
  },
  {
   "title": "ChocChip Cookies",
@@ -1164,7 +1565,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40283779_13-cadbury-chocobakes-choco-chip-cookies-delicious-treat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Crunch into the irresistible Cadbury Choc-Chip Cookie — deliciously crisp cookies packed with rich chocolate chips in every bite. Baked to perfection with the signature taste of Cadbury, these cookies are perfect for satisfying sweet cravings anytime, anywhere.",
+   "ingredients": "Refined Wheat Flour (Maida), Milk Chocolate Chips (23%) [Sugar, Cocoa Butter, Milk Solids (4%), Cocoa Solids, Dextrose, Emulsifier (442), Natural, Nature-Identical & Artificial (Vanilla & Caramel) Flavouring Substances], Sugar, Palmolein, Cocoa Solids, Invert Sugar, Raising Agents [503(ii), 500(ii), 450(i)], Iodised Salt, Emulsifier (322), Natural & Artificial (Vanilla) Flavouring Substances.\nAllergen Information: Contains Milk, Wheat and Soy. May contain Tree Nuts and Barley.",
+   "nutritionalInfo": {
+    "Energy": "466 kcal",
+    "Protein": "7.2 g",
+    "Carbohydrate": "69.3 g",
+    "Total Sugars": "31.2 g",
+    "Added Sugars": "29.6 g",
+    "Total Fat": "18.0 g",
+    "Saturated Fat": "8.9 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "2.0 mg",
+    "Sodium": "305 mg"
+   },
+   "manufacturerName": "Parsons Nutritionals Private Limited",
+   "fssaiLicense": "10012043000056",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "ChocFilled Cookies",
@@ -1235,7 +1655,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185712-8_2-cadbury-chocobakes-choc-filled-cookiesbiscuits-family-pack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the rich Cadbury Choc Filled Cookies with a crisp chocolatey cookie outside and smooth choco-filled centre inside, with every bite delivering the signature Cadbury taste. These individually wrapped cookies are perfect for school and office tiffins, late-night sweet cravings, evening tea breaks, or an anytime treat.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "23 g",
+    "Energy": "503.12 kcal",
+    "Protein": "5.12 g",
+    "Carbohydrate": "65.52 g",
+    "Total Sugars": "38.62 g",
+    "Added Sugars": "38.44 g",
+    "Total Fat": "25 g",
+    "Saturated Fat": "12.12 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "0.03 mg",
+    "Sodium": "196.72 mg"
+   },
+   "manufacturerName": "Mrs. Bectors Food Specialities Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
  },
  {
   "title": "ChocLayered Cake",
@@ -1288,7 +1728,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196698-8_2-cadbury-chocobakes-choc-layered-cakes-family-pack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the Cadbury Choc Layered Cake—a spongy chocolate cake coated in a rich chocolate layer, with every bite reminding you of the signature Cadbury taste. Perfect for school or office tiffins, evening snack breaks, post-meal dessert cravings, or late-night indulgence, this delicious treat brings together the goodness of soft cake and the beloved taste of Cadbury.",
+   "ingredients": "Cake (45%*) – Refined Wheat Flour (Maida), Sugar, Humectants [420(ii), 422, 1520], Palm Olein, Liquid Glucose, Milk Solids, Cocoa Solids, Starch, Emulsifiers (322, 475, 471, 491), Raising Agents [500(ii), 450(i), 341(i)], Iodised Salt, Flavours (Natural Flavour and Nature-Identical Flavouring Substances), Preservative (202), and Stabiliser (415).\nChoco Layer (29%*) – Sugar, Hydrogenated Vegetable Oils, Milk Solids, Cocoa Solids, Emulsifiers (442, 476), and Flavours (Nature-Identical and Artificial Vanilla and Caramel Flavouring Substances).\nFilling (26%*) – Sugar, Fractionated Fat, Liquid Glucose, Humectants (422, 1520), Water, Emulsifiers (322, 475, 471, 491), Cocoa Solids, Flavours (Natural Flavour and Nature-Identical Flavouring Substances), Iodised Salt, and Preservative (202).\nAllergen Information: Contains Milk, Wheat, Sulphites, and Soy.",
+   "nutritionalInfo": {
+    "Energy": "466 kcal",
+    "Protein": "3.8 g",
+    "Carbohydrates": "64.2 g",
+    "Total Sugars": "40.3 g",
+    "Added Sugars": "39.7 g",
+    "Total Fat": "21.9 g",
+    "Saturated Fat": "14.1 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "4.0 mg",
+    "Sodium": "203 mg"
+   },
+   "manufacturerName": "(U) Gandour India Food Processing Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rich & Fudgy Chocolate Brownie",
@@ -1341,6 +1799,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357684-8_1-cadbury-cadbury-brownie-38g.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dive into the rich, fudgy delight of Cadbury Brownie, crafted for moments when you crave the goodness of Cadbury wrapped in a dessert. It offers a gooey texture, topped with decadent, melt-in-the-mouth chocolate chips. It is an ideal post-meal treat to satisfy your sweet tooth. Whether enjoyed solo or shared with loved ones, Cadbury Brownie pairs beautifully with ice cream or a hot beverage.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Palmolein, Choco Chips (12%) [Sugar, Hydrogenated Vegetable Fat, Milk Solids, Cocoa Solids, Maltodextrin, Flavours (Natural, Nature-Identical & Artificial (Vanilla & Caramel) Flavouring Substances), Emulsifier (322), Iodised Salt], Water, Humectants (422, 42), Liquid Glucose, Cocoa Solids, Milk Solids, Emulsifiers (477, 471, 322, 45(I), 472e), Flavours (Natural, Nature-Identical & Artificial (Vanilla) Flavouring Substances), Iodised Salt, Preservatives (282, 22), Acidity Regulator (33), Raising Agent [5(Ii)], Stabiliser (415), Anticaking Agent [341(I)].\nAllergen Information: Contains Milk, Wheat, Sulphites, And Soy.",
+   "manufacturerName": "Parsons Nutritionals Private Limited",
+   "countryOfOrigin": "Spain"
+  }
  }
 ]

@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40009511_17-patanjali-cow-ghee.jpg"
-    }
+    },
+    "barcode": "8904422712157"
    },
    {
     "title": "200ml",
@@ -68,7 +69,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009511-8_6-patanjali-cow-ghee.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "In India, ghee holds sacred significance and is regarded as a traditional symbol of auspiciousness and well-being. Referred to as Amritam in Ayurveda, it is a rich source of saturated fat. Cow ghee, in particular, is widely used in traditional Ayurvedic practices and is believed to possess a variety of beneficial properties.",
+   "ingredients": "Milk fat from cow's milk. Allergen Info: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "897.3 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "99.7 g",
+    "Saturated Fat": "Not more than 78.46 g",
+    "Trans Fat": "Not more than 3 g",
+    "Cholesterol": "249 mg",
+    "Sodium": "0 mg",
+    "Vitamin A": "944 mcg"
+   },
+   "manufacturerName": "(N) Patanjali Foods Limited",
+   "fssaiLicense": "11522999000273",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cow Ghee Jar",
@@ -84,7 +105,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40308710_6-patanjali-cow-ghee.jpg"
-    }
+    },
+    "barcode": "8904422713741"
    },
    {
     "title": "950ml",
@@ -121,7 +143,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308710-8_1-patanjali-cow-ghee.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Cow Ghee is a sacred and revered product in India, considered a traditional symbol of auspiciousness and sound well-being. Referred to as Amritam in Ayurveda, this pure, wholesome, and nutritious ghee is made from the finest Indian cows, rich in healthy fats and Ojas. Containing primarily short-chain fatty acids, it is easy to digest and helps promote weight gain, enhance memory, and aid digestion. Patanjali cow ghee also supports hormone production, strengthens cell membranes, and increases intelligence and memory power. Enjoy the rich, creamy flavour and experience the numerous benefits of this traditional Ayurvedic treasure.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "20 g",
+    "Energy": "897.3 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "99.7 g",
+    "Saturated fat": "Not more than 78.46 g",
+    "Trans fat": "Not more than 3g",
+    "Cholesterol": "249 mg",
+    "Sodium": "0 mg",
+    "Vitamin A": "944 mcg"
+   },
+   "usageInstructions": "Use it for sauting vegetables, frying, baking, or as a spread on bread or toast.\nAdditionally, ghee can be used in traditional Ayurvedic practices, such as oil pulling or as a moisturiser for the skin.",
+   "manufacturerName": "Patanjali Foods Limited (Formerly Known As Ruchi Soya Industries)",
+   "fssaiLicense": "10015022004287",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kachi Ghani Mustard Oil",
@@ -137,7 +181,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002397_14-patanjali-mustard-oil.jpg"
-    }
+    },
+    "barcode": "8904422712614"
    },
    {
     "title": "200ml",
@@ -174,7 +219,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002397-8_5-patanjali-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Kachi Ghani Mustard Oil is a mustard oil prepared using the traditional cold-press method. It is commonly used in Indian cooking for everyday preparation of a variety of dishes. The oil has a distinct aroma and flavour that is characteristic of mustard seeds. It is suitable for frying, sautéing, and general culinary use in home kitchens.",
+   "ingredients": "Mustard Oil, Vitamin A (25 IU per gram) & Vitamin D (4.5 IU per gram).",
+   "nutritionalInfo": {
+    "Energy": "898.2 kcal",
+    "Carbohydrate": "0 g",
+    "Protein": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "99.8 g",
+    "Saturated Fat": "Not more than 5.54 g",
+    "Trans Fat": "Not more than 0 g",
+    "Monounsaturated Fatty Acids": "76.27 g",
+    "Polyunsaturated Fatty Acids": "17.20 g",
+    "Omega-3 Fatty Acids": "6.97 g",
+    "Omega-6 Fatty Acids": "10.20 g",
+    "Vitamin E": "32.11 mg",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "Store in a dry and hygienic place away from heat and light in a air tight container.",
+   "manufacturerName": "For Identification of Packaging Unit",
+   "fssaiLicense": "10015022004287",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kachi Ghani Mustard Oil Pouch",
@@ -190,7 +259,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40140644_10-patanjali-mustard-oil.jpg"
-    }
+    },
+    "barcode": "8904422700970"
    }
   ],
   "images": [
@@ -218,7 +288,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40140644-8_1-patanjali-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mustard oil is a versatile and highly beneficial edible and cooking oil that is extracted from the seeds of the mustard plant. Patanjali Kachi Ghani Mustard Oil is a superior quality vegetable oil that is produced by pressing mustard seeds using the cold press extraction method, also known as \"Kachi Ghani\". This process involves crushing the seeds at low temperatures to preserve the oil's natural properties, antioxidants, and essential oils. Its unique flavour and aroma add a distinct taste to dishes. It is also used in traditional medicine for its numerous health benefits. Patanjali Kachi Ghani Mustard Oil is a premium quality mustard oil that can be used in a variety of ways.",
+   "usageInstructions": "Use a suitable amount for cooking your favourite dish.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "898.2 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g (0%)",
+    "Total Fat": "99.8g (44.69%)",
+    "Saturated Fat": "Not More than 5.54g (7.55%)",
+    "Trans Fat": "Not More Than 0g(0%)",
+    "Monounsaturated Fatty Acid": "76.27g",
+    "Polyunsaturated Fatty Acid": "24.46g",
+    "Omega - 3 Fatty acid": "6.97g",
+    "Omega - 6 Fatty acid": "10.20g",
+    "Sodium": "0 mg (0%)",
+    "Vitamin E": "32.11 mg",
+    "Added Vitamin A": "750µg",
+    "Added Vitamin D": "11.25µg"
+   },
+   "manufacturerName": "(A) Divya Gram Udhyog",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Virgin Sesame Oil",
@@ -234,7 +330,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40168249_6-patanjali-sesame-oil.jpg"
-    }
+    },
+    "barcode": "8904422701625"
    },
    {
     "title": "200ml",
@@ -280,7 +377,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40168249-8_1-patanjali-sesame-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the natural richness and versatility of Patanjali Sesame Oil, a premium-quality edible oil that brings a delightful nutty flavour and numerous health benefits to your kitchen. Crafted from the finest sesame seeds and cold-pressed to preserve its nutrients, this oil is a versatile choice for cooking, frying, and even traditional Ayurvedic remedies. Packed with antioxidants and healthy fats, Patanjali Sesame Oil is an excellent option for everyday cooking, adding a depth of flavour and complexity to a wide range of dishes. Enjoy the peace of mind that comes with its 4-day refund or replacement policy, ensuring you receive a high-quality product every time. Elevate your culinary experience with the natural goodness of Patanjali Sesame Oil.",
+   "ingredients": "First Pressed And Filtered Sesame Oil.",
+   "usageInstructions": "Use a suitable amount for cooking your favourite dish.",
+   "storageInstructions": "Store in a cool, dry place, away from direct sunlight",
+   "manufacturerName": "(A) Patanjali Ayurved Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014012000266"
+  }
  },
  {
   "title": "Virgin Groundnut Oil",
@@ -296,7 +402,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40168238_11-patanjali-virgin-groundnut-oil.jpg"
-    }
+    },
+    "barcode": "8904109401695"
    }
   ],
   "images": [
@@ -324,7 +431,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40168238-8_3-patanjali-virgin-groundnut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali groundnut oil is obtained by expression of the best quality groundnut of the first press which is low in saturated fats, free from cholesterol, contains essential fatty acid linoleic acid (omega-fatty acid) making it as one of the healthiest cooking oils. It will reduce the risk of heart disease, improve insulin sensitivity, and lowers the health risk.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "37 kcal (13.49%)",
+    "Total Fat": "3.99g (99.0%)",
+    "Saturated Fat": "0.82g",
+    "Monounsaturated Fats": "24.45g",
+    "Polyunsaturated Fats": "2.40g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "0mg",
+    "Total Carbohydrates": "0g",
+    "Dietary Fiber": "0g",
+    "Sugars": "0g",
+    "Protein": "0g"
+   },
+   "ingredients": "First Pressed Groundnut Oil and Antifoaming Agent",
+   "storageInstructions": "Store in a cool,dry place,away from direct sunlight",
+   "manufacturerName": "(A) Patanjali Ayurved Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014012000266"
+  }
  },
  {
   "title": "Groundnut Oil Pouch",
@@ -340,7 +470,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40168239_12-patanjali-virgin-groundnut-oil.jpg"
-    }
+    },
+    "barcode": "8904109410321"
    }
   ],
   "images": [
@@ -368,7 +499,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40168239-8_4-patanjali-virgin-groundnut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Groundnut oil (or Arachis oil) is a vegetable oil extracted from the groundnut or peanut plant. It has a mild to neutral flavour and is widely used in cooking, baking, and frying. Patanjali groundnut oil is made from carefully selected peanuts that are roasted and then pressed to extract the oil.  This premium-quality groundnut oil is rich in monounsaturated and polyunsaturated fats, which are essential for maintaining good health.",
+   "ingredients": "Groundnut Oil, Antioxidant (INS 319), Antifoaming Agent (INS 900a), Vitamin A (25 IU Per Gram) & Vitamin D (4.5 IU Per Gram).",
+   "nutritionalInfo": {
+    "Energy": "899.37 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "99.93 g",
+    "Saturated Fat": "18.82 g",
+    "Trans Fat": "0 g",
+    "Monounsaturated Fatty Acid": "56.65 g",
+    "Polyunsaturated Fatty Acid": "24.46 g",
+    "Omega-3 Fatty Acid": "1.05 g",
+    "Omega-6 Fatty Acid": "23.40 g",
+    "Sodium": "0 mg",
+    "Added Vitamin A": "750 µg",
+    "Added Vitamin D": "11.25 µg"
+   },
+   "manufacturerName": "For Manufacturer & Manufacturing Unit Address",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012013000030"
+  }
  },
  {
   "title": "Physically Refined Sunflower Oil",
@@ -384,7 +539,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40140643_12-patanjali-sunflower-oil.jpg"
-    }
+    },
+    "barcode": "8904422705753"
    }
   ],
   "images": [
@@ -412,7 +568,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40140643-8_6-patanjali-sunflower-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunflower oil is an edible oil that is extracted from the seeds of the sunflower plant (Helianthus annuus). It is a versatile oil that is widely used in cooking, baking, and frying. Patanjali sunflower oil is made from high-quality sunflower seeds that are carefully selected and processed to ensure maximum purity and freshness. It is made with a refining process in which hard chemicals are removed with the help of enzymes.",
+   "ingredients": "Physically Refined Sunflower Seed Oil, Antioxidant (INS 319), Antifoaming Agent (INS 900a), Vitamin A (25 IU Per Gram) & Vitamin D (4.5 IU Per Gram).",
+   "nutritionalInfo": {
+    "Energy": "900 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "100 g",
+    "Saturated Fat": "11.05 g",
+    "Trans Fat": "0 g",
+    "Monounsaturated Fatty Acid": "25.41 g",
+    "Polyunsaturated Fatty Acid": "63.51 g",
+    "Omega-3 Fatty Acid": "0.37 g",
+    "Omega-6 Fatty Acid": "63.13 g",
+    "Sodium": "0 mg",
+    "Added Vitamin A": "750 µg",
+    "Added Vitamin D": "11.25 µg"
+   },
+   "manufacturerName": "Patanjali Foods Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012013000030"
+  }
  },
  {
   "title": "Coconut Oil",
@@ -428,7 +608,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002426_11-patanjali-coconut-oil.jpg"
-    }
+    },
+    "barcode": "8904109400414"
    }
   ],
   "images": [
@@ -453,7 +634,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002426-7_3-patanjali-coconut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali's premium-quality coconut oil is a true household essential, offering a wealth of benefits for your life. Derived from the finest coconuts through a hands-free, hygienic extraction process, this completely natural and pure oil is free from any added chemicals or fragrances, ensuring its wholesome goodness. With a light, tropical aroma and a silky, luxurious texture, it is highly versatile, perfect for a variety of culinary and personal care applications. Strengthening and nourishing hair, it promotes long and healthy locks, suitable for all hair types. Affordable and highly recommended, this coconut oil is a must-have for your beauty and wellness routine, delivering numerous benefits to enrich your everyday life.",
+   "usageInstructions": "1. Apply to damp or dry hair.\n2. Massage the oil into the roots for a scalp treatment.\n3. It can also be rubbed over cracked, dry skin for it to be moisturised.",
+   "manufacturerName": "(A) Patanjali Ayurved Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconut Oil Jar",
@@ -469,7 +656,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40009513_12-patanjali-coconut-oil.jpg"
-    }
+    },
+    "barcode": "8904109400421"
    }
   ],
   "images": [
@@ -491,7 +679,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009513-6_5-patanjali-coconut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali's premium-quality coconut oil is a true household essential, offering a wealth of benefits for your life. Derived from the finest coconuts through a hands-free, hygienic extraction process, this completely natural and pure oil is free from any added chemicals or fragrances, ensuring its wholesome goodness. With a light, tropical aroma and a silky, luxurious texture, it is highly versatile, perfect for a variety of culinary and personal care applications. Strengthening and nourishing hair, it promotes long and healthy locks, suitable for all hair types. Affordable and highly recommended, this coconut oil is a must-have for your beauty and wellness routine, delivering numerous benefits to enrich your everyday life.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bandhani Hing",
@@ -507,7 +700,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40026892_7-patanjali-bandhani-hing.jpg"
-    }
+    },
+    "barcode": "8904422702295"
    },
    {
     "title": "10g",
@@ -544,7 +738,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40026892-8_3-patanjali-bandhani-hing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Hing (or asafoetida) is a resinous gum derived from the roots of the Ferula plant. Hing has a characteristic pungent smell, and it is commonly used in Indian cuisine as a flavour enhancer. Its strong aroma and taste make it a popular substitute for onions and garlic. Patanjali Bandhani Hing (unrefined asafoetida) is a premium-quality hing recognised for its quality and strong aroma. Major ingredients in Patanjali Bandhani Hing include edible cereal flour, gum Arabic, and asafoetida.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "25g",
+    "Energy": "366 kcal",
+    "Protein": "8.3 g",
+    "Carbohydrate": "77.5 g",
+    "Sugar": "5g",
+    "Dietary Fibre": "4.1g",
+    "Total Fat": "2.58 g",
+    "Saturated Fat": "0.51 g",
+    "Trans Fat": "0g",
+    "Iron": "16.52 mg",
+    "Sodium": "14.12 mg",
+    "Calcium": "229 mg"
+   },
+   "manufacturerName": "R.B. Heeng Company Private Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gulkand",
@@ -560,7 +774,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40189311_2-patanjali-gulkand.jpg"
-    }
+    },
+    "barcode": "8904049110466"
    }
   ],
   "images": [
@@ -585,7 +800,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189311-7_2-patanjali-gulkand.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjaliayurved.net domain is owned by Patanjali Ayurved Limited, incorporated in 2006 under the Companies Act, 1956, with its registered office at D-26, Pushpanjali Bijwasan Enclave, New Delhi - 110061. Patanjaliayurved.net is the official online Patanjali store of Patanjali Ayurved Limited. The full range of best quality, trusted Patanjali products are now just a click away from your doorstep. We are dedicated to providing the best service, quality products, and real-time assistance. Patanjali Gulkand or rose petal jam is a sweet Indian delicacy. It is easy to prepare and is listed under the best Ayurvedic medicines for their enormous health benefits. Gulkand has cooling properties, thus it is beneficial in alleviating all heat-related problems like tiredness, lethargy, itching, aches, and pains.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Divya Pharmacy",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Atta Noodles",
@@ -638,7 +859,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40083735_4-patanjali-atta-noodles-classic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the amazing spicy taste of Patanjali Atta Noodles Classic. Made from high-quality ingredients. The seasoning mix comes packed with healthy spices such as turmeric powder, cumin seeds, onion, ginger, and garlic. Made with whole-wheat flour and rice bran oil unlike palm oil used popularly. Open a pack and have a mouth-watering and nutritious feast ready in minutes.",
+   "ingredients": "Wheat flour (Atta)- 80%, Rice bran Oil, Edible Common Salt, Acidity regulator {INS 500 (ii), INS 451 (i)}, Anticaking agent {INS 170 (i)}, Thickener (INS 415), Salt, Dehydrated Vegetables {Onion (10%), Garlic (6%), Cabbage, Carrot}, Sugar, Hydrolyzed vegetable protein, Maltodextrin, Mixed spices {Chilli (2%), Coriander (2%), Turmeric (1.5%), Cumin (1.5%), Garam Masala (1.5%)}, Spice extract, Acidity regulator (INS 330), Flavour enhancer (INS 627, INS 631), Sunflower oil, Anticaking agent (INS 551), Yeast extract, Soya sauce powder, Thickener (INS 415), Antioxidant (INS 319)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy": "462 kCal",
+    "Protein": "10.16 g",
+    "Carbohydrates": "62.60 g",
+    "Sugar": "3.33 g",
+    "Fat": "19 g",
+    "Saturated Fat": "4.16 g",
+    "MUFA": "8.22 g",
+    "PUFA": "6.12 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "5.57 g",
+    "Iron": "13.81 mg",
+    "Sodium": "1364 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "SWASTH AAHAR PRIVATE LIMITED 15KM MILE STONE",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014012000266"
+  }
  },
  {
   "title": "Chatpata Atta Noodles",
@@ -682,7 +927,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077749-8_1-patanjali-instant-noodles-atta-chatpata.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the amazing spicy taste of Patanjali Atta Noodles Chatpata. Made from high-quality ingredients, the seasoning mix is infused with a blend of healthy spices including turmeric powder, cumin seeds, onion, ginger and garlic, adding a burst of flavour to every bite. Unlike other instant noodles on the market, these noodles are made with wholesome whole-wheat flour and rice bran oil, providing a nutritious and delectable meal option. Open a pack and have a mouth-watering feast ready in just minutes, perfect for a quick snack or a convenient meal. Crafted with care, these versatile noodles can also be used to add a unique twist to your favourite soups, stir-fries or salads. Upgrade your mealtime with this satisfying and wholesome instant noodle option that is sure to please even the most discerning palate.",
+   "ingredients": "Noodles: Wheat Flour (Atta) (80%), Refined Palm Oil, Refined Rice Bran Oil, Iodized Salt, Thickener (INS 1420, INS 415), Acidity Regulators [INS 451(i), INS 500(i) & INS 501(i)], Antioxidant (INS 319).\nSeasoning Mix: Mixed Spices [Onion (10%), Chilli (9%), Garlic (6%), Cumin (2.5%), Turmeric (2.5%), Bishop Seed, Spice Extract, Celery Flower], Iodized Salt, Sugar, Hydrolysed Vegetable Protein, Dehydrated Vegetables [Carrot (4%), Cabbage (4%), Tomato (3%)], Maltodextrin, Acidity Regulators (INS 330, INS 296), Anticaking Agent (INS 551), Sunflower Oil, Flavour Enhancers (INS 627, INS 634), Dehydrated Herb (Coriander Leaf (1%)), Natural & Nature Identical Flavouring Substances, Soy Sauce Powder, Yeast Extract, Thickener (INS 415), Antioxidant (INS 319).\nContains Wheat & Soy.",
+   "nutritionalInfo": {
+    "Energy": "461 kcal",
+    "Protein": "10.44 g",
+    "Carbohydrate": "62.43 g",
+    "Total Sugars": "5.81 g",
+    "Added Sugars": "0.84 g",
+    "Total Fat": "18.88 g",
+    "Saturated Fat": "Not More Than 5.15 g",
+    "Trans Fat": "Not More Than 0.03 g",
+    "Sodium": "1410 mg"
+   },
+   "manufacturerName": "Swasth Aahar Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016064000863"
+  }
  },
  {
   "title": "Pachak Jaljeera Concentrate",
@@ -698,7 +961,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40017847_3-patanjali-concentrate-pachak-jaljeera.jpg"
-    }
+    },
+    "barcode": "8904422703551"
    }
   ],
   "images": [
@@ -714,7 +978,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017847-4_1-patanjali-concentrate-pachak-jaljeera.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali pachak jal jeera helps in cooling the body. It is anti-acidic, anti-phlegmatic, carminative, and digestive. It also contains essential minerals beneficial for body functions. It helps increase digestive power and acts as a refresher. It helps treat problems like amlapitta, indigestion, loss of appetite, and laziness. It is an Indian beverage served as an appetiser.",
+   "ingredients": "Sea Salt, Cumin Seed, Coriander, Rock Salt, Black Pepper, Black Salt, Citric Acid, Long Pepper, Mint Leaf, Dried Mango Powder, Nausadar, Saunth, Red Chilli, Asafoetida",
+   "storageInstructions": "*Store in clean, dry hygienic conditions away from direct sunlight\n*Consume within 1 month of opening",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aloe Vera Juice",
@@ -730,7 +1001,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002399_10-patanjali-aloe-vera-juice-fiber.jpg"
-    }
+    },
+    "barcode": "8904422701663"
    }
   ],
   "images": [
@@ -758,7 +1030,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002399-8_3-patanjali-aloe-vera-juice-fiber.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Aloe Vera Juice is a natural tonic made from high-quality Aloe vera leaves, ensuring purity and effectiveness. Known for its soothing properties, this juice supports digestive health and can help maintain overall wellness. Rich in vitamins, minerals, and antioxidants, it can be a refreshing addition to your daily routine. Regular consumption may support skin health and provide a gentle detoxifying effect. Ideal for those looking to incorporate natural products into their lifestyle, Patanjali Aloe Vera Juice offers a simple way to enjoy the benefits of Aloe vera in a convenient, easy-to-consume form.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Amla Juice",
@@ -774,7 +1051,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002402_10-patanjali-amla-juice.jpg"
-    }
+    },
+    "barcode": "8904422700314"
    }
   ],
   "images": [
@@ -802,7 +1080,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002402-8_1-patanjali-amla-juice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Amla Juice is carefully extracted from ripe amla fruits, preserving their natural goodness. Free from synthetic additives, it offers a refreshing taste and is rich in Vitamin C and essential nutrients. This natural Amla Juice enhances immunity, aids digestion, lowers cholesterol, and supports overall well-being.",
+   "usageInstructions": "If you are suffering from hair loss and experiencing premature greying of hair, a daily dose of amla juice can be really helpful. It is also useful for treating skin problems like acne and pimples. Amla juice is quite effective in increasing the level of haemoglobin in blood and strengthens nails and teeth. Amla juice should always be taken on an empty stomach. You can mix it with water and drink it every day to achieve amazing results. |",
+   "storageInstructions": "Consume within 1 month of opening. Store in clean, dry, hygienic conditions away from direct sunlight.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Giloy Juice",
@@ -843,7 +1128,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017842-7_3-patanjali-juice-giloy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Giloy juice is an ayurvedic proprietary medicine composition, known as the root of immortality because of its abundant medicinal properties. It is useful in fever and various infectious diseases. It treats gout, arthritis and disorder of the urinary system. It also balances all three dosha. It has the quality of cell generation.",
+   "usageInstructions": "Mix 15-30 ml of Giloy Juice with water & consume empty stomach in the morning & evening or as directed by physician.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Arjun Amla Juice",
@@ -884,7 +1175,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017843-7_1-patanjali-juice-arjun-amla.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Arjun-Amla juice is a combination of Arjun bark extract and Amla juice. It is a natural source of vitamin C. Arjun is considered the best herb for heart disease as it prevents and helps in the recovery of angina and heals heart tissues.",
+   "ingredients": "Amla Fruit (Emblica Officinalis Gaertn.), Arjun Chaal (Terminalia Arjuna (Roxb.) Wight & Am.), Citric Acid (Anhydrous), Potassium Sorbate (Food Grade), Sodium Benzoate (Food Grade)",
+   "usageInstructions": "1. Mix 10-20 ml of Juice with water.\n2. Consume 2-3 times after meal or as directed by Physician.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Karela Amla Juice",
@@ -928,7 +1226,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017841-8_1-patanjali-juice-karela-amla.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Karela Amla Juice contains no. of important nutrients ranging from iron, magnesium and vitamin to potassium and vitamin C. An excellent source of dietary fibre, it also contains twice the calcium of spinach, beta-carotene of broccoli, and the potassium of a banana. It is used for the treatment, control, prevention and improvement of Diabetes, Blood purifier, Hyperlipidemia, Breast cancer, Inflammation, Oxidative stress, Iron deficiency, Urinary infection, Leucorrhea, Hypertension, Constipation, Jaundice and fever.",
+   "ingredients": "Karela Fruit (Momordica Charantia L.)\nAmla Fruit (Emblica Officinalis Gaertn.)\nCitric Acid (Anhydrous)\nPotassium Sorbate (Food Grade)\nSodium Benzoate (Food Grade)",
+   "usageInstructions": "Mix 5-10 ml of Juice with water & consume 2-3 times after meal or as directed by Physician.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tulsi Panchang Juice",
@@ -944,7 +1249,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40017840_7-patanjali-juice-tulsi-panchang.jpg"
-    }
+    },
+    "barcode": "8904422703001"
    }
   ],
   "images": [
@@ -969,7 +1275,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017840-7_1-patanjali-juice-tulsi-panchang.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Karela Amla Juice contains no. of important nutrients ranging from iron, magnesium and vitamin to potassium and vitamin C. An excellent source of dietary fibre, it also contains twice the calcium of spinach, beta-carotene of broccoli, and the potassium of a banana. It is used for the treatment, control, prevention and improvement of Diabetes, Blood purifier, Hyperlipidemia, Breast cancer, Inflammation, Oxidative stress, Iron deficiency, Urinary infection, Leucorrhea, Hypertension, Constipation, Jaundice and fever.",
+   "ingredients": "Tulsi(Ocimum Sanctum).",
+   "storageInstructions": "Consume within 1 month of opening.\nStore in clean, dry hygeinic conditions away from direct sunlight.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dant Kanti Natural Toothpaste",
@@ -985,7 +1298,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002406_11-patanjali-dant-kanti-natural-toothpaste.jpg"
-    }
+    },
+    "barcode": "8904422711105"
    },
    {
     "title": "100g",
@@ -1031,7 +1345,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002406-8_3-patanjali-dant-kanti-natural-toothpaste.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Dant Kanti Natural Toothpaste is an herbal blend with Ayurvedic ingredients and essential oils. It guards gums and teeth, fights bacteria, and provides fresh breath. It contains natural elements like Akarkara, Babul, Neem, Timbaru, Turmeric, Cloves, Pudhina, Pipli, Peelu, and Maju Phal. Regular use reduces pyorrhea, gingivitis, and bad odours.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dant Kanti Advanced Dental Cream",
@@ -1048,7 +1367,8 @@
     "estimated": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40328864_1-patanjali-dant-kanti-dental-cream-adv.jpg"
-    }
+    },
+    "barcode": "8904422708525"
    }
   ],
   "images": [
@@ -1076,7 +1396,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328864-8_1-patanjali-dant-kanti-dental-cream-adv.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurvedic toothpaste Patanjali Dant Kanti Advanced Dental Cream is made to support strong, healthy gums and teeth. With the addition of natural herbs, it offers strong defence against plaque, cavities, and foul breath. This natural remedy ensures teeth stay fresh for longer while improving them. Neem, clove, and babool are among its strong components, which are well-known for their antibacterial and gum-care properties. It is safe for all family members to use on a daily basis. With two 100g tubes each pack, you may take care of your tooth health over time. Choosing Patanjali will result in a naturally cleaner, fresher smile.",
+   "usageInstructions": "Useful in toothache, halitosis, gingival bleeding and periodontal diseases",
+   "manufacturerName": "Patanjali Ayurved Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dant Kanti Fresh Active Gel Toothpaste",
@@ -1130,7 +1456,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457489-8_4-patanjali-dant-kanti-fresh-active-gel-toothpaste.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Dant Kanti Fresh Active Gel Toothpaste, a refreshing and effective oral care solution that revitalises your mouth with every brush. Infused with a blend of natural ingredients like neem, mint, and cloves, this gel toothpaste not only cleanses your teeth but also provides long-lasting freshness. The active formula helps fight germs and bacteria, promoting healthier gums and teeth. Its revitalising mint flavour leaves your mouth feeling clean, cool, and confident. Incorporate Dant Kanti Fresh Active Gel into your daily dental routine for a rejuvenating experience that banishes bad breath and keeps your smile radiant.",
+   "usageInstructions": "1. Brush teeth with toothpaste.\n2. Lightly and gently massage cream on gums too.\n3. Use twice a day.",
+   "manufacturerName": "PATANJALI AYURVED LTD. Unit-III",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aloe Vera Kanti Body Cleanser",
@@ -1146,7 +1478,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002408_8-patanjali-aloe-vera-kanti-body-cleanser-soap.jpg"
-    }
+    },
+    "barcode": "8904422709751"
    }
   ],
   "images": [
@@ -1174,7 +1507,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002408-8_1-patanjali-aloe-vera-kanti-body-cleanser-soap.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Aloe Vera Kanti Body Cleanser rejuvenates and nourishes the skin, effectively removing dryness. This cleanser provides oxygen to strengthen skin tissues, ensuring healthy and glowing skin. Aloe vera acts as a source of oxygen for skin cells, strengthening skin tissues and contributing to overall skin health. This combination of benefits promotes a healthy, radiant complexion, making it an essential addition to your daily skincare routine.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Neem Kanti Body Cleanser",
@@ -1190,7 +1528,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002409_6-patanjali-neem-kanti-body-cleanser-soap.jpg"
-    }
+    },
+    "barcode": "8904422709782"
    },
    {
     "title": "150g",
@@ -1225,7 +1564,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457659_4-patanjali-neem-kanti-body-cleanser.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Kanti Neem Soap is useful in revitalising, nourishing and glorifying the skin, and eliminates dryness and roughness of the skin. Kanti Neem Body Cleanser is an efficient and skin-friendly soap. It contains neem which helps in removing every kind of skin allergy. It is an antiseptic soap which keeps the skin strong.",
+   "usageInstructions": "Rub on wet body surface while taking bath and rinse off.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Haldi Chandan Kanti Body Cleanser",
@@ -1279,7 +1624,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002417-8_1-patanjali-somya-haldi-chandan-kanti-body-cleanser-soap.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the nourishing and rejuvenating experience of Patanjali's Haldi Chandan Soap. This herbal masterpiece is designed to keep your skin protected from bacteria, pollution, and the signs of ageing. Infused with the goodness of turmeric and sandalwood, this soap gently cleanses your skin, leaving it feeling refreshed and radiant. Bid farewell to acne and other inflammatory skin conditions, as this skin-friendly formula nourishes and recovers your complexion, making your skin beautiful and shining. Start your day on a refreshing note with the Patanjali Haldi-Chandan Kanti Body Cleanser, which effectively removes dirt while filling you with confidence and a sense of cleanliness. Treat your senses to a luxurious bathing experience and let your skin bask in the gentle, cleansing goodness of this exceptional product.",
+   "usageInstructions": "1. Rub on wet body surface while taking bath.\n2. Rinse off.",
+   "storageInstructions": "*Store in a cool, dark and dry place",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Saundarya Sandal Body Cleanser",
@@ -1295,7 +1647,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40077746_3-patanjali-body-cleanser-saundarya-sandal.jpg"
-    }
+    },
+    "barcode": "8904422709829"
    }
   ],
   "images": [
@@ -1320,7 +1673,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077746-7_1-patanjali-body-cleanser-saundarya-sandal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "For healthy and fair skin, made from natural oil cleanser base, sandalwood oil extract of aloe vera which cleanses gently and keeps your skin glorified and soft, forever young and beautiful. Useful in nourishing, rejuvenating and glorifying the skin.",
+   "storageInstructions": "*Store in a cool, dark & dry place",
+   "usageInstructions": "1. Rub on wet body surface while taking bath.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Anti-Bacterial Herbal Hand Wash Refill",
@@ -1336,7 +1696,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/900459186_3-patanjali-anti-bacterial-herbal-hand-wash.jpg"
-    }
+    },
+    "barcode": "8904422713840"
    }
   ],
   "images": [
@@ -1364,7 +1725,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900459186-8_2-patanjali-anti-bacterial-herbal-hand-wash.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali anti-bacterial herbal hand wash blend of antibacterial properties of neem & tulsi gives you 99.9% protection against diseases causing bacteria & safeguards your skin. Clinically tested hand wash which not only cleans your hands but also moisturises too. These medicinal herbs are uniformly combined in a soap base to grant a hygienic wash every time and keep your hands clean, germ free and moisturise.",
+   "manufacturerName": "Patanjali Ayurved Ltd. For mfg.unit address",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kesh Kanti Almond Hair Oil",
@@ -1380,7 +1746,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40016320_12-patanjali-almond-hair-oil.jpg"
-    }
+    },
+    "barcode": "8904422709270"
    }
   ],
   "images": [
@@ -1405,7 +1772,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016320-7_1-patanjali-almond-hair-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This Patanjali Almond Oil strengthens, softens, conditions the hair and reduces loss. Almond oil has been valued for centuries for its nourishing properties and healthy hair-growing ingredients such as vitamin E, Omega-3 fatty acids and magnesium that absorb easily into the hair and soothe the scalp. The oil forms a protective layer around hair and leaves it silkier and shinier after wash.",
+   "usageInstructions": "1. Apply 2-5 drops of the oil on the hair and massage gently.\n2. Leave for an hour or two and wash off with a shampoo.",
+   "manufacturerName": "(A) Patanjali Ayurved Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sheetal Oil",
@@ -1446,7 +1819,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075291-7_1-patanjali-sheetal-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sheetal Oil A product of Patanjali Ayurved Relief from stress headache sleeplessness body ache joint pain hair fall and dandruff An Ayurvedic proprietary medicine Apply gently on the affected part for relief Ingredients Til oil Pudina oil Amla oil Kapur Tulsi Jatamanshi Ratanjyot Long oil Bhringraj Nilgiri oil For Beauty tips tricks more visit",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kesh Kanti Damage Control Hair Conditioner",
@@ -1487,7 +1865,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017859-7_1-patanjali-hair-conditioner-damage-control.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Protect your hair from environmental damage and keep it soft with Patanjali Damage Control Conditioner. This formula repairs and safeguards dry and damaged hair, leaving it silky and shiny. Infused with vitamins, essential oils, and a herbal blend, it offers protection and a healthy shine to your tresses.",
+   "usageInstructions": "Apply 2-5g on Hairs after wash, massage gently and leave in 1-2 minutes then rinse with water.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Saundarya Aloe Vera Gel",
@@ -1525,7 +1909,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002398-6_3-patanjali-saundarya-aloe-vera-gel.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Saundarya Aloe Vera Gel rejuvenates, nourishes, and beautifies the skin. It can also be used as an anti-tan pack, effectively reducing dryness and roughness. This versatile gel addresses dandruff and hair fall, making it an excellent all-in-one solution. Regular use helps reduce dark spots and enhances skin glow, leaving your skin radiant and healthy. Perfect for achieving a natural, flawless complexion.",
+   "manufacturerName": "Works",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crack Heal Cream",
@@ -1566,7 +1955,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009492-7_4-patanjali-crack-heal-cream.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the nourishing and restorative power of Patanjali's Crack Heal Cream. Formulated with a blend of ayurvedic components, this cream softens and heals cracked heels, feet and fingers. Penetrating deeply into the skin, it helps to repair dry and cracked areas, keeping them moist and supple. The quick-absorbing formula relieves the discomfort of cracked heels, leaving your feet feeling refreshed and rejuvenated. Elevate your self-care routine with this luxurious cream that nourishes and revitalises your skin.",
+   "usageInstructions": "Take 2-3 grams of the cream and apply it on the cracked portion.",
+   "manufacturerName": "(A) Patanjali Ayurved Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Apricot Face Scrub",
@@ -1601,7 +1996,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344686-5_1-patanjali-apricot-face-scrub.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Face Scrub is a skincare product designed to gently exfoliate and nourish the skin. Infused with the goodness of aloe vera and apricot extracts, Patanjali Aloevera Apricot Face Scrub effectively removes dead skin cells, unclogs pores, and reveals a smoother and brighter complexion. The natural exfoliating particles of apricot gently buff away impurities, while aloe vera soothes and hydrates the skin, leaving it feeling refreshed and revitalised. Wheat germ oil, rich in natural vitamin E, acts as a potent antioxidant, helping to tone the skin and minimise the impact of environmental pollution.",
+   "manufacturerName": "Patanjali Ayurved Ltd Patanjali Foods Limited Laksar Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Saundarya Multani Mitti Face Scrub",
@@ -1617,7 +2017,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40344685_1-patanjali-saundarya-multani-mitti-face-scrub.jpg"
-    }
+    },
+    "barcode": "8904422709201"
    }
   ],
   "images": [
@@ -1642,7 +2043,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344685-7_1-patanjali-saundarya-multani-mitti-face-scrub.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Saundarya Multani Mitti facial scrub contains a special combination of natural ingredients such as multani mitti (Fuller’s earth), aloevera, neem, haldi, lemon, and more. This unique blend works together to cleanse and purify the skin, while also providing nourishment, conditioning, and revitalization. With the help of neem, tulsi, mint, and lemon peel, the scrub effectively removes impurities, leaving the complexion looking fresh, clear, and radiant.",
+   "manufacturerName": "Patanjali Ayurved Ltd Patanjali Foods Limited Laksar Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Saundarya Neem Tulsi Face Wash",
@@ -1686,7 +2092,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002420-8_1-patanjali-face-wash-neem-tulsi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience clear, refreshed skin with Patanjali Saundarya Neem Tulsi Face Wash. Enriched with Neem, it combats acne-causing bacteria, while Tulsi purifies the skin by removing impurities from pollution. Aloe Vera deeply moisturises and rejuvenates skin tissues. This soap-free, herbal formulation effectively fights bacteria, excess oil, and pollution, leaving your skin fresh, clear, and healthy-looking.",
+   "usageInstructions": "1. Apply on wet face.\n2. Massage gently for a minute with water.\n3. Wash off with water.",
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Patanjali Ayurved Ltd. Unit- III",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Herbal Shave Gel",
@@ -1730,7 +2143,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009510-8_1-patanjali-herbal-shave-gel.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali herbal Shave Gel provides a smooth and fresh shaving experience. The natural extracts of revitalizing herbs such as ghritkumari (aloe vera) and lemongrass gently cleanse and nourish the skin tissues. Pudina, neem, tulsi and haldi are natural disinfectants that protect the skin from germs and act as astringents.",
+   "usageInstructions": "Step 1: Wet your beard and apply the gel\nStep 2: Lather and shave\nStep 3: Rinse off remaining cream with water",
+   "manufacturerName": "(A) Patanjali Ayurved Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peedantak Pain Reliever Cream",
@@ -1746,7 +2165,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40017858_5-patanjali-peedantak-pain-reliever.jpg"
-    }
+    },
+    "barcode": "8904422708068"
    }
   ],
   "images": [
@@ -1774,7 +2194,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017858-8_1-patanjali-peedantak-pain-reliever.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjaliayurved.net domain is owned by Patanjali Ayurved Limited, incorporated in 2006 under the Companies Act, 1956, with its registered office at D-26, Pushpanjali Bijwasan Enclave, New Delhi - 110061. Patanjaliayurved.net is the official online Patanjali store of Patanjali Ayurved Limited. The full range of best quality, trusted Patanjali products are now just a click away from your doorstep. We are dedicated to providing the best service, quality products, and real-time assistance. Patanjali peedantak pain reliever ointment is an herbal formulation which gives instant pain relief. Massaging the ointment at the affected areas increases blood circulation and warmth, and relieves the pain.",
+   "usageInstructions": "Apply twice or thrice on the painful part of the body or as per doctors recommendations.",
+   "manufacturerName": "PATANJALI AYURVED LIMITED",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Borosafe Antiseptic Cream",
@@ -1790,7 +2216,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40017851_5-patanjali-borosafe-antiseptic-cream.jpg"
-    }
+    },
+    "barcode": "8904109450587"
    }
   ],
   "images": [
@@ -1812,7 +2239,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017851-6_2-patanjali-borosafe-antiseptic-cream.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This Boro safe antiseptic cream has tea tree oil and wheat germ oil, which are always known for their good antiseptic properties. It lights and refreshes your skin. This useful cream fights any kind of inflammatory skin. It helps in rejuvenation of skin cells and gives you soft and smooth skin naturally condition. It helps to give relief from the damaging effects of the sun rays and helps to cure minor burns, cuts, wounds and cracked foot.",
+   "usageInstructions": "Apply externally on the affected area twice daily or as directed by the physician.",
+   "manufacturerName": "(A) Patanjali Ayurved Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Herbal Wash Detergent Powder",
@@ -1828,7 +2261,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40135449_4-patanjali-detergent-powder-herbal-wash.jpg"
-    }
+    },
+    "barcode": "8904422713710"
    },
    {
     "title": "450g",
@@ -1883,7 +2317,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135449-8_1-patanjali-detergent-powder-herbal-wash.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The herbal washing detergent powder helps in removing common stains and maintains the colour of the clothes. This herbal wash contains neem, which is antibacterial and kills germs. It also acts as an anti-allergic agent. The rose extract permeates your clothes with freshness and fragrance. It clears out the toughest stains and retains the original texture of the fabric.",
+   "usageInstructions": "Add 1 teaspoon of Patanjali detergent powder in the water and soak the clothes for 30 minutes. Then rinse with water.",
+   "manufacturerName": "A. Patanjali Ayurved Ltd. Unit - III Village - Padartha Laksar Road Haridwar-249404 Uttarakhand | Vaishnavi Kosmeticos I",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Herbo Wash Lemon Detergent Powder",
@@ -1899,7 +2339,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40135454_4-patanjali-detergent-powder-herbo-wash.jpg"
-    }
+    },
+    "barcode": "8904422713680"
    },
    {
     "title": "450g",
@@ -1945,7 +2386,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135454-8_1-patanjali-detergent-powder-herbo-wash.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The herbal wash detergent powder helps in removing common stains and maintains the colour of the clothes. This herbal wash contains neem, which is anti-bacterial and kills germs. It also acts as an anti-allergic agent. The lemon extract permeates your clothes with freshness and fragrance. It clears out the toughest stains and retains the original texture of the fabric.",
+   "usageInstructions": "Add 1 teaspoon of Patanjali detergent powder in the water and soak the clothes for 30 minutes. Then, rinse with water.",
+   "manufacturerName": "A. Patanjali Ayurved Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Super Dishwash Bar",
@@ -1978,7 +2425,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457603-4_2-patanjali-super-dishwash-bar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your dishwashing experience with the Patanjali Super Dishwash Bar, a powerful and natural cleaning solution. Infused with the sparkling power of lemon and the superior cleansing properties of wood ash, this dishwash bar effortlessly tackles grease, stubborn stains, and food residues, leaving your dishes sparkling clean with minimal effort. Crafted with 100% natural ingredients, this gentle yet effective formula is kind to your hands, ensuring they stay soft even after multiple washes. Enjoy a refreshing fragrance that lingers on your utensils, offering a fresh and clean feeling after every use. Offering excellent value for money with a special B3G1 offer, the Patanjali Super Dishwash Bar is a must-have in every kitchen, providing superior cleaning performance at an affordable price. Embrace the natural and disinfecting power of this versatile dishwash bar for a spotless and hygienic cleaning experience.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "usageInstructions": "1. Wet a sponge cloth or scrubber and rub on the soap in a circular motion to create rich suds.\n2. Use to clean all types of dishes including ceramic and non-stick ware.",
+   "manufacturerName": "Village Beelwadi",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tamrkanti Shining Powder",
@@ -2016,6 +2470,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/900458291-6_3-patanjali-tamrkanti-shining-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Aastha Tamrakanti Shining Powder effectively cleans various metals such as copper, brass, aluminium, iron, steel, and more. This remarkable powder effortlessly eliminates stains from any metal surface, providing enduring outcomes.",
+   "usageInstructions": "Wet the article.\nClean it well with tamrakanti shining powder.\nWash it well & wipe it to dry.\nUse scrubber for aluminium, steel & iron utensils.",
+   "manufacturerName": "Patanjali Ayurved Ltd",
+   "countryOfOrigin": "India"
+  }
  }
 ]

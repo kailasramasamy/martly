@@ -44,7 +44,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30008716_3-lal-qilla-traditional-basmati-rice-special-old-malai.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made with Special Old Malai serve this extra long grain basmati rice that your whole family will love Click here for unique and delicious recipes",
+   "ingredients": "Low Fat. GMO Free, Cholesterol Free, Free From Genetically Engineered Rice",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Super Silverline Basmati Rice",
@@ -94,7 +99,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220306_1-lal-qilla-basmati-rice-super-silverline.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amar Singh Chawal Wala proudly presents Lal Qilla Super Silverline Basmati Rice which is nourished and watered by snow-fed rivers. This class of Basmati rice gets better with ageing to enhance & intensify its taste, bouquet and cooking characteristics. This Super Silverline Basmati Rice is our guarantee for perfectly aged rice,extra-long grain with smooth texture and firmness. Aged Super Silverline Basmati Rice cooks fluffy with separate grains and is aromatic. What would delight you the most is the elongation of the grains after cooking which adds nourishment to every dish makes each meal a Royal feast.",
+   "ingredients": "Basmati Rice",
+   "usageInstructions": "COOKING METHOD:\nThoroughly rinse one cup of Lal Qilla basmati rice and soak for 30-35 minutes in lukewarm water.\nAdd soaked rice and salt to 2.5-3 cups of boiling water.\nCook on medium heat until the rice absorbs the water.\nCover with a tight lid and remove the pan from the fire.\nWait for 10-15 minutes and serve.\nNOTE: If the cooked rice is too hard, then use more water in the next cooking and if the same is too soft, use less water.\nMICROWAVE METHOD:\nPlace 1 cup of soaked Lal Qillla basmati Rice in a deep microwave container.\nAdd 2.5-3 of water and add salt if desired.\nCover container loosely with microwave cling film and cook on medium or 60% for 10-15 mins.\nAllow standing time of 15 mins.",
+   "manufacturerName": "AMAR SINGH CHAWAL WALA; Registered Office address",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12117001000102"
+  }
  },
  {
   "title": "Majestic Basmati Rice",
@@ -132,7 +145,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220307-6_1-lal-qilla-majestic-basmati-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amar Singh Chawal Wala proudly presents Lal Qilla Majestic which is nourished and watered by snow-fed rivers of the Himalayas. This class of Basmati Rice is distinguished by the extra-long grain with smooth texture and firmness. The grain is extra polished and shines pearly white. What would delight you the most is the elongation of the grain after cooking. Lal Qilla Majestic Basmati Rice adds nourishment to every dish and makes each meal a Royal Feast.",
+   "ingredients": "Basmati Rice",
+   "usageInstructions": "Cooking Method:\nThoroughly rinse one cup of Lal Qilla basmati rice and soak for 30-35 minutes in lukewarm water.\nAdd soaked rice and salt to 2.5 - 3 cups of boiling water.\nCook on medium heat until the rice absorbs the water.\nCover with a tight lid and remove the pan from the fire.\nWait for 10-15 minutes and serve.\nNote: If the cooked rice is too hard, then use more water in the next cooking and if the same is too soft, use less water.\nMicrowave Method:\nPlace 1 cup of soaked Lal Qillla basmati Rice in a deep microwave container.\nAdd 2.5 - 3 of water and add salt if desired.\nCover container loosely with microwave cling film and cook on medium or 60% for 10-15 mins.\nAllow it to stand for 15 mins.",
+   "manufacturerName": "AMAR SINGH CHAWAL WALA; Registered Office address",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12117001000102"
+  }
  },
  {
   "title": "Brown Basmati Rice",
@@ -170,6 +191,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220309-6_1-lal-qilla-brown-basmati-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amar Singh Chawal Wala proudly presents Lal Qilla Majestic which is nourished and watered by snow-fed rivers of the Himalayas. This class of Basmati Rice is distinguished by the extra-long grain with smooth texture and firmness. The grain is extra polished and shines pearl white. What would delight you the most is the elongation of the grain after cooking. Lal Qilla Majestic Basmati Rice adds nourishment to every dish and makes each meal a Royal Feast.",
+   "ingredients": "Basmati Rice",
+   "nutritionalInfo": {
+    "Energy": "350 kcal;"
+   },
+   "usageInstructions": "COOKING METHOD:\nThoroughly rinse one cup of Lal Qilla basmati rice and soak for 30-35 minutes in lukewarm water.\nAdd soaked rice and salt to 2.5-3 cups of boiling water.\nCook on medium heat until the rice absorbs the water.\nCover with a tight lid and remove the pan from the fire.\nWait for 10-15 minutes and serve.\nNOTE: If the cooked rice is too hard, then use more water in the next cooking and if the same is too soft, use less water.\nMICROWAVE METHOD:\nPlace 1 cup of soaked Lal Qillla basmati Rice in a deep microwave container.\nAdd 2.5-3 of water and add salt if desired.\nCover container loosely with microwave cling film and cook on medium or 60% for 10-15 mins.\nAllow standing time of 15 mins.",
+   "manufacturerName": "AMAR SINGH CHAWAL WALA; Registered Office address",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12117001000102"
+  }
  }
 ]

@@ -50,7 +50,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100008139-8_3-brown-polson-corn-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with Brown & Polson Cornstarch, a gluten-free and finely milled ingredient that delivers superior thickening power and a naturally smooth texture. This versatile cornstarch can be used as a thickening agent for sauces and stews, or as a batter for delicious fried dishes, adding a unique and satisfying taste to your recipes. Crafted by a trusted brand, Brown & Polson Cornstarch boasts a natural sweetness and rich flavour that will enhance any dish, from cakes and baked goods to savoury meals.\nIts neutral taste ensures it won't overpower the original flavours, making it the perfect addition to your cooking arsenal. Discover the difference that this premium cornstarch can make in your kitchen, and take your recipes to new heights of culinary excellence.",
+   "ingredients": "Maize Starch",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "365",
+    "Protein (g)": "0.3",
+    "Carbohydrate (g)": "91.3",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "0.9",
+    "Total Fat (g)": "0.1",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "9"
+   },
+   "manufacturerName": "A) Hindustan Unilever Limited",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vanilla Custard Powder",
@@ -103,6 +124,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005585-8_1-brown-polson-custard-powder-vanilla-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Make yummy vanilla flavoured custard in a jiffy. Now enjoy yummy desserts with family and friends with Brown Polson custard powder. It is as easy as breathing! Add the custard powder to milk, stir it and ensure there are no lumps, boil it and leave it in the fridge until set. Voila!",
+   "ingredients": "Maize Starch, Iodised Salt, Food Colours - (E102, E110, E124), Nature Identical Flavouring Substance",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "4.24 g",
+    "Energy (kcal)": "362",
+    "Protein (g)": "0.3",
+    "Carbohydrate (g)": "90.7",
+    "Total Sugars (g)": "Trace",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "0.9",
+    "Total Fat (g)": "Trace",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "247",
+    "RDA": "% of an average adult’s Recommended Dietary Allowance (2000 kcal diet)"
+   },
+   "storageInstructions": "*Keep in an airtight container after opening",
+   "manufacturerName": "Hindustan Unilever Limited",
+   "countryOfOrigin": "India"
+  }
  }
 ]

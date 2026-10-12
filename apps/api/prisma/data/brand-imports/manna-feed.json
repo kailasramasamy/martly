@@ -59,7 +59,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001243_5-manna-health-mix-for-kids-100-natural-nutrition.jpg"
    }
-  ]
+  ],
+  "details": {
+   "storageInstructions": "Take 3 tbsp (30g) of Manna Nutrition Mix and stir with 1 1/4 cups (300ml) of water or milk, so no lumps are formed\nPlace on stove and bring to boil, stirring continuously for 3 minutes to avoid lumps\nAdd sugar/ honey to taste and serve warm.\nStore in a cool, dry place away from sunlight",
+   "manufacturerName": "SOUTHERN FOODS PVT. LTD Khivraj Complex – I",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India",
+   "ingredients": "Millets, Cereals 82% (Ragi, Bajra, Corn, Jowar, Wheat, Red rice, Barley), Pulses 12% (Bengal gram, Green gram), Sago, Nuts 2% (Groundnut, Cashew, Almond), Cardamom."
+  }
  },
  {
   "title": "Health Mix Kids Nutrition Drink",
@@ -75,7 +82,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40271329_2-manna-health-mixsathu-maavu-100-natural-nutrition-no-added-sugar-multigrain-drink.jpg"
-    }
+    },
+    "barcode": "8906008350043"
    },
    {
     "title": "325g",
@@ -121,7 +129,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40271329-8_2-manna-health-mixsathu-maavu-100-natural-nutrition-no-added-sugar-multigrain-drink.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Say no to refined sugar in your kid's drink. Also say no to all forms of sugar including skimmed milk powder, maltodextrin, fructose, sucrose, artificial sweeteners, date and stevia powder, honey, jaggery, etc. Manna Health Mix is a traditional drink that brings together the goodness of 14 natural ingredients, including cereals, pulses, and nuts. It does not contain any stabilisers, artificial colours, or artificial flavours. It is naturally flavoured with cardamom. Manna Health Mix is a staple drink for millions of households in India who have moved away from misleading drinks that promise nutrition and energy but are largely sugar. It is made with 54% millets, an ancient hardy grain that is a powerhouse of macro and micro nutrients. Take 30 g (thick consistency) and heat along with milk or water for 7 minutes and the drink is ready. Manna believes in nutrition from natural sources and real ingredients, not artificially added nutrition. We believe 100% natural nutrition is best absorbed by your body. Manna Health Mix has 10 g of protein and 10 g of fibre per 100 g of the product.",
+   "ingredients": "Millets and Cereals 82.8% (Ragi, Bajra, Corn, Jowar, Wheat, Red Rice, Barley and Sago), Pulses and Nuts 16% (Bengal Gram, Green Gram, Groundnut, Almond and Cashewnut), Cardamom 1.2%.\nAllergen Advice: Contains Wheat, Barley and Nuts",
+   "nutritionalInfo": {
+    "Energy": "360 kcal",
+    "Protein": "10 g",
+    "Carbohydrates": "76 g",
+    "Total Sugars": "2.1 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "10 g",
+    "Total Fat": "4 g",
+    "Saturated Fat": "0.8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Calcium": "85 mg",
+    "Iron": "3.5 mg",
+    "Sodium": "15 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Health Mix+ Cereal & Fruits",
@@ -165,7 +196,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40294735-8_1-manna-instant-health-mix-multigrain-cereal-fruits-ready-to-eat-no-preservatives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The goodness of Manna Health Mix plus is now made easy and Instant. Enriched with three super grains - Quinoa, Amaranth & Black Rice, with Fruits - Banana, Dates and Honey Powder.\nRich in Protein – Proteins are Building blocks of our body and help to boost immunity.\nRich in Iron – Iron helps in the formation of red blood cells, boosts Stamina and helps in fighting anaemia.\nRich in Calcium – Calcium helps in building strong bones and teeth.",
+   "usageInstructions": "Take 30g (2 tbsp) of Manna Health Mix plus in a bowl.\nAdd 150 ml of lukewarm/warm milk and stir well to avoid lumps.\nCheck for sweetness and add any sweetener of your choice (Honey/Jaggery) if required.\nMix well and is ready to be served.",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Instant Health Mix+ Cereal & Vegetables",
@@ -209,7 +247,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40294734-8_1-manna-instant-health-mix-multigrain-cereal-vegetables-ready-to-eat-no-preservatives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The goodness of Manna Health Mix plus is now made easily and Instant Enriched with three super grains - Quinoa, Amaranth & Black Rice), with Vegetables - Spinach, Carrot and Dhal Powder.\nRich in Protein – Proteins are Building blocks of our body and help to boost immunity.\nRich in Iron – Iron helps in the formation of red blood cells, boosts Stamina and helps in fighting anaemia.\nRich in Calcium – Calcium helps in building strong bones and teeth.",
+   "usageInstructions": "Take 30g (2 tbsp) of Manna Health Mix plus in a bowl.\nAdd 150 ml of lukewarm/warm milk and stir well to avoid lumps.\nCheck for sweetness and add any sweetener of your choice (Honey/Jaggery) if required.\nMix well and is ready to be served.",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Barnyard Millet",
@@ -262,7 +307,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075358-8_2-manna-barnyard-millet-khiraswankkuthiraivallyudalukodisama.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional nutritional benefits and culinary versatility of Manna Barnyard Ethnic Millets. These premium grains, harvested from the fertile soils of rural India, have been a staple in Indian kitchens for generations, celebrated for their exceptional digestibility, high protein content, and low carbohydrate levels. Enjoy the convenience of shopping for these premium millets online, where you can explore our selection and have them delivered directly to your doorstep. Packed with essential minerals and a low glycemic index, Manna Barnyard Ethnic Millets are a fantastic choice for those seeking a light, energetic, and nutritious addition to their diet. Whether you're looking to manage your diabetes, boost your iron intake, or simply indulge in the rich culinary heritage of India, these versatile grains are sure to delight your senses and nourish your body.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Energy: 307 kcal Carbohydrates: 66g Of which Sugar: 0g Dietary Fibre: 9g Protein: 6g Fat: 2g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Foxtail Millet",
@@ -315,7 +370,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075360-8_2-manna-foxtail-millet-kaonkangkangnikakumnavanikorralukorrathinai.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional nutritional benefits of Kodo Millet, a versatile and minimally processed grain that is rich in smart carbohydrates, dietary fibre, and essential minerals. This gluten-free superfood is a fantastic substitute for rice, offering a low glycemic index that helps regulate blood sugar levels and improve insulin response. Packed with B vitamins, iron, copper, and a variety of other essential nutrients, Kodo Millet is an excellent choice for strengthening the immune system and supporting overall health. Easily incorporated into a wide range of dishes, from porridge and payasam to chapatti, this millet can be enjoyed in various forms to create delicious and nourishing meals. With its easy-to-digest properties and ability to lower bad cholesterol, Kodo Millet is a versatile and health-conscious addition to any pantry.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Energy: 355 kcal Carbohydrates: 75g Of which Sugar: 0g Dietary Fibre: 6g Protein: 11g Fat: 2g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kodo Millet",
@@ -368,7 +433,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075359-8_2-manna-kodo-millet-kodravaraguarikeluharkvarigu.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional versatility and nutritional benefits of Kodo millet, the perfect rice alternative. This gluten-free grain is an excellent source of fibre, rich in B vitamins, B6 and folic acid, as well as a treasure trove of essential minerals like calcium, iron, potassium, magnesium, and zinc. Easily digestible and excellent for strengthening the nervous system, Kodo millet is a delightful choice for pilafs, pongal, khichdi, and any rice-based recipe. Organic Kodo millets also contain high amounts of polyphenols, an antioxidant compound that inhibits glycation and cross-linking of collagen, making it a truly nourishing addition to your diet. Unlock a world of unique and delicious recipes with this versatile and nutritious grain - click here to explore our collection. Elevate your culinary experience with the goodness of Kodo millet.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Energy: 353 kcal Carbohydrates: 72g Of which Sugar: 0g Dietary Fibre: 5g Protein: 8g Fat: 3g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Little Millet",
@@ -421,7 +496,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075361-8_2-manna-little-millet-kutkisamaisamesamulu.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the nutritional powerhouse of Manna Little Millets, a minimally processed, healthy whole grain that retains its bran and essential nutrients. These tiny wonders are carefully selected to boast a high antioxidant content, making them a delightful and nourishing addition to your diet. Packed with an abundance of minerals, dietary fibre, and iron, Manna Little Millets outshine traditional staples like white rice and wheat, offering a substantial dose of essential nutrients in their petite form. Easily digestible and versatile, these millets can be enjoyed in ground form or as a whole grain, providing a convenient and flavourful way to elevate your meals. Embrace the exceptional antioxidant properties and phytochemical richness of Manna Little Millets, and embark on a journey of exceptional taste and unparalleled nutrition.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Energy: 341 kcal Carbohydrates: 74g Of which Sugar: 0g Dietary Fibre: 7g Protein: 8g Fat: 5g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Browntop Millet",
@@ -465,7 +550,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40223880-8_2-manna-browntop-millet-chotti-kangni-andu-korralu-korale-rich-in-protein-gluten-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the ancient wisdom of millets with Manna's Ethnic Millets. Packed with a wealth of essential nutrients, these wholesome grains offer a delightful and nourishing addition to any meal. Grown with precision and care, the Black Masoor Whule - Supreme Harvest boasts superior quality and freshness, delivering a flavourful and satisfying experience. Rich in dietary fibre, high in protein, and gluten-free, these millets cook in just 10 minutes, making them a convenient and versatile choice for busy households. Embrace the health-promoting properties of these age-old grains and bring back the wisdom of your ancestors to your home with Manna's Ethnic Millets.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Serving Size: 60g Energy: 335 kcal Protein: 13 g Carbohydrates: 71 g Total Sugars: 0 g Added Sugars: 0 g Dietary Fibre: 12 g Total Fat: 3 g Saturated Fat: 0.6 g Trans Fat: 0 g Cholesterol: 0 mg Sodium: 1 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place, away from sunlight",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Proso Millet",
@@ -509,7 +604,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075362-8_2-manna-proso-millet-barripanivaraguvarigulubaragu.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Beneficial in anti aging as it contains a high amount of anti oxidants which help in reducing wrinkles on skin and complexion loss Contains very high amounts of Niacin that is beneficial in preventing skin diseases like pellagra Contains high amounts of absorbable content which is essential for growing healthy bones Rich in essential amino acids vitamins and minerals such as copper magnesium B vitamins Click here for unique and delicious recipes a href",
+   "storageInstructions": "Store in a cool, dry place, away from sunlight.",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Go Grains Crunchies Choco Nut",
@@ -553,7 +655,52 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276050-8_1-manna-go-grain-crunchies-choco-nut-real-chocolate-multigrain-breakfast-cereal-for-kids.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Go Grain Crunchies Choconut Muesli is made from natural ingredients and is a perfect healthy breakfast for you and your family members. Made from millets, oats & super grains, wheat, Johar, bajra, ragi, Kodo millet, barnyard millet, quinoa, Amarnath, and maise, these Crunchies are loaded with 23% fruits and nuts. Explore an entire range of Mnna Go Grain products and many more only on Big Basket.",
+   "ingredients": "Multigrain 36.5% (Oats, Wheat, Jowar, Bajra, Ragi, Kodo millet, Barnyard millet, Quinoa, Amaranth, Maize, Malt Extract, Sugar, Salt), Brown Sugar, Nuts 15% (Almonds, Walnuts, Peanuts), Milk Chocolate (8%), Dark Chocolate (8%), Soya granules, Edible vegetable oil (Sunflower Oil), Cocoa solids, Minerals, Sodium Bicarbonate (500 (ii)), Sodium Hydrogen Carbonate (500(ii)), Vitamins, Rosemary Extract, Mixed tocopherols",
+   "nutritionalInfo": {
+    "Nutrition per": "Per Serve",
+    "Serving Size": "60 g",
+    "Energy (Kcal)": "293",
+    "Protein (g)": "7",
+    "Carbohydrates (g)": "38",
+    "of which sugars (Sucrose) (g)": "11",
+    "Dietary Fibre (g)": "6",
+    "Total Fat (g)": "11",
+    "Saturated Fat (g)": "2",
+    "Trans Fat (g)": "1",
+    "Cholesterol (mg)": "2",
+    "Sodium (mg)": "5",
+    "Vitamin B1 (mg)": "0.5",
+    "Vitamin B3 (mg)": "5",
+    "Vitamin B5 (mg)": "2",
+    "Vitamin B6 (mg)": "1",
+    "Vitamin B7 (mcg)": "15",
+    "Chromium (mcg)": "25",
+    "Iodine (mcg)": "60",
+    "Vitamin B9 (mcg)": "85",
+    "Iron (mg)": "8",
+    "Vitamin B12 (mcg)": "0.8",
+    "Vitamin K (mcg)": "27",
+    "Vitamin D (mcg)": "8",
+    "Calcium (mg)": "325",
+    "Phosphorus (mg)": "325",
+    "Magnesium (mg)": "107",
+    "Manganese (mg)": "2",
+    "Vitamin A (mcg)": "315",
+    "Vitamin C (mg)": "21",
+    "Vitamin E (mg)": "5",
+    "Zinc (mg)": "3",
+    "Selenium (mcg)": "20",
+    "Copper (mg)": "1",
+    "Molybdenum (mcg)": "23"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Southern Health Foods Private Limited",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Go Grains Crunchies Fruit & Nut",
@@ -597,7 +744,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276049-8_1-manna-go-grain-crunchies-fruit-nut-real-blueberry-multigrain-breakfast-cereal-for-kids.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Go Grain Crunchies - Blueberries Fruit and Nut Muesli is made from natural ingredients and is a perfect healthy breakfast for you and your family members.\nManna Go Grain Crunchies is a healthy made and tasty kid-approved as 97% of the kids in Chennai enjoyed eating it. Made from millets, oats & super grains, wheat, Johar, bajra, ragi, Kodo millet, barnyard millet, quinoa, Amarnath, and maize, these Crunchies are loaded with 23% fruits and nuts. This muesli contains no maida, no added colours, No artificial additives and is fit to use for people of any age group. It provides 12 hrs nutrition to your kid and also stays crunchy even in hot milk.\nExplore an entire range of Mnna Go Grain products and many more only on Big Basket!",
+   "ingredients": "Oats, Wheat, Johar Bajra, Radi , Kado Millet, Barnyard Millet, Quinoa, Amarnath Maize, Almonds, Cashews, Raisins, Peanuts, Blueberries",
+   "usageInstructions": "Use it as breakfast with hot milk.",
+   "manufacturerName": "Southern Health Foods Private Limited",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Go Grains Crunchies Nutty Buddy",
@@ -641,7 +796,52 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276048-8_1-manna-go-grain-crunchies-nutty-buddy-caramel-flavour-oats-nuts-multigrain-breakfast-cereal-for-kids.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Go Grain Crunchies provide 12-hour nutrition to your kids. Made of nine grains - oats, wheat, Johar bajra, ragi, kado millet, barnyard millet, Quinoa, and Amarnath maise. At Manna, we believe that what we eat directly impacts what we get out of life. That's why we are on a mission to make food occasions more nutritious. Go Grains Crunchies is specially formulated to provide 50% RDA (Recommended Daily Allowance) of 23 vital essential nutrients, that ensures half-day nutrition (12 hours) for your child as per the recommended guidelines.\nGet more from every bowl of Go Grains Crunchies. More taste, more nutrition and making the most every day. This product contains real, almonds, cashews, raisins and peanuts.",
+   "ingredients": "Multigrains 45% (Oats, Wheat, Jowar, Bajra, Ragi, Kodo Millet, Barnyard Millet, Quinoa, Amaranth, Maize, Malt Extract, Sugar, Salt), Nuts 23.3% (Almonds, Cashew, Raisins, Peanut), Brown Sugar, Soya Granules, Edible Vegetable Oil (Sunflower Oil), Minerals, Sodium Bicarbonate (500 (ii)), Sodium Hydrogen Carbonate (500 (ii)), Vitamins, Rosemary Extract, Mixed Tocopherols",
+   "nutritionalInfo": {
+    "Nutrition per": "Per Serve",
+    "Serving Size": "60 g",
+    "Energy (Kcal)": "311",
+    "Protein (g)": "6",
+    "Carbohydrates (g)": "37",
+    "of which sugars (Sucrose) (g)": "14",
+    "Dietary Fibre (g)": "7",
+    "Total Fat (g)": "14",
+    "Saturated Fat (g)": "5",
+    "Trans Fat (g)": "1",
+    "Cholesterol (mg)": "2",
+    "Sodium (mg)": "7",
+    "Vitamin B1 (mg)": "0.5",
+    "Vitamin B3 (mg)": "5",
+    "Vitamin B5 (mg)": "2",
+    "Vitamin B6 (mg)": "1",
+    "Vitamin B7 (mcg)": "15",
+    "Chromium (mcg)": "25",
+    "Iodine (mcg)": "60",
+    "Vitamin B9 (mcg)": "85",
+    "Iron (mg)": "8",
+    "Vitamin B12 (mcg)": "0.8",
+    "Vitamin K (mcg)": "27",
+    "Vitamin D (mcg)": "8",
+    "Calcium (mg)": "325",
+    "Phosphorus (mg)": "325",
+    "Magnesium (mg)": "107",
+    "Manganese (mg)": "2",
+    "Vitamin A (mcg)": "315",
+    "Vitamin C (mg)": "21",
+    "Vitamin E (mg)": "5",
+    "Zinc (mg)": "3",
+    "Selenium (mcg)": "20",
+    "Copper (mg)": "1",
+    "Molybdenum (mcg)": "23"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight and moisture",
+   "manufacturerName": "Southern Health Foods Private Limited",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Go Grains Multigrain Drink Mix Chocolate",
@@ -657,7 +857,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40168102_4-manna-go-grains-health-nutrition-drink-mix-for-kids-chocolate.jpg"
-    }
+    },
+    "barcode": "8906008351675"
    },
    {
     "title": "400g",
@@ -694,7 +895,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40168102-8_3-manna-go-grains-health-nutrition-drink-mix-for-kids-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Specially formulated, Manna Go Grains is a wisely chosen blend of cereals, pulse and milk proteins enriched with 24 micronutrients.\n7 grains: Millets - Ragi, Jowar and Bajra\nCereals - Wheat, Maize and Barley\nPulse - Bengal Gram, rich in protein - from Cereals, Pulse, Whey Protein and Milk Powder\n2 serves of Go grains deliver almost 25% RDA of protein for your child. Manna Go Grains delivers 33% RDA of 11 Minerals and 13 Vitamins in one serving for your child's overall growth and development along with a multigrain goodness rich source of 24 micronutrients like calcium, iron, vitamin A, C, D.",
+   "ingredients": "Grains 35% {Cereals, Pulse - 26%: Wheat, Maize, Barley, Bengal Gram, Millets - 9%: Jowar, Bajra, Ragi}, Sugar, Milk Solids (17%), Maltodextrin, Cocoa Solids, (17%), Maltodextrin, Cocoa Solids (6%), Minerals, Stabilisers (INS 466, INS 415), Vitamins, Steviol Glycoside (INS 960). Extracted From Stevia Leaf.",
+   "usageInstructions": "Take 2 heaped teaspoons [approx. 24 g] of manna Go grain in a cup.\nAdd 2/3 cup (180 ml) of warm milk.\nPour the contents in another cup repeat for a smooth frothy drink.",
+   "manufacturerName": "SOUTHERN FOODS PVT. LTD Khivraj Complex €“ I",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Go Grains Multigrain Drink Mix Classic Malt",
@@ -710,7 +919,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40221508_1-manna-go-grains-malt-health-and-nutrition-multigrain-malted-drink-for-growth-immunity.jpg"
-    }
+    },
+    "barcode": "8906008351705"
    }
   ],
   "images": [
@@ -738,7 +948,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221508-8_1-manna-go-grains-malt-health-and-nutrition-multigrain-malted-drink-for-growth-immunity.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Go Grains is a specially formulated blend of cereals, millets, pulses and milk protein, enriched with vitamins and minerals for your child's overall growth and immunity. Each serve of Manna Go Grains delivers 6 grams of grains, 9% of your child's daily requirement of protein and 33% RDA of 24 vitamins and minerals. Store in a cool and dry place away from sunlight.",
+   "ingredients": "Grains 26% (Cereals and Pulse - 19% | Wheat, Maize, Barley, Bengal Gram, Millets - 7%| Jowar, Bajra, Ragi), Malted Barley (Extracted Solids) - 23%, Milk Solids - 20%, Maltodextrin, Sugar, Minerals, Vitamins, Natural Colour, Stabilizers, Steviol, Glycoside.",
+   "usageInstructions": "Take 2 heaped teaspoons (approx. 24g) of Manna Go Grains in a glass.\nAdd 3/4th cup (180ml) of warm milk.\nPour the contents into another cup and repeat for a smooth frothy drink.",
+   "manufacturerName": "Southern Foods Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Badam Almond Drink Mix",
@@ -782,7 +1000,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/286623-8_1-manna-badam-mix-with-10-almonds.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Badam Drink Mix is a great blend of badam and kesar, and so appetising that your child will now look forward to drinking milk. It has rich proteins, vitamins, and the honesty of almonds. It is good for your child as it has real pieces of badam and real saffron.",
+   "ingredients": "Sucrose, Glucose, Badam, Cashew Nut, Starch, Milk Powder, Artificial Cardamom And Vanilla Flavour",
+   "nutritionalInfo": {
+    "Serving Size": "15g",
+    "Energy": "63 kcal",
+    "Total Carbohydrates": "13 g",
+    "Of which Sugars (Sucrose)": "11 g",
+    "Protein": "1 g",
+    "Total Fat": "1 g",
+    "Sodium": "11 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "SOUTHERN FOODS PVT. LTD Khivraj Complex €“ I",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "iStrong Women's Nutrition Drink Caramel",
@@ -826,7 +1061,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40219169-8_1-manna-womens-health-drink-mix-istrong-with-vitamins-iron-caramel.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna iStrong Iron Fortified Women's Nutrition Drink Mix is made with all-natural ingredients. It is a mix of high-quality multi-grains that keep you . This Nutrition Drink is especially for women that help keep their bones and strong. It provides all the iron, protein and calcium needed for the body. It is filled with many benefits such as helping increase haemoglobin, helps in absorbing iron, helps in making RBCs, and many more. Vitamin B1, B2, B3, B5, B6, B7 helps release energy from food. It provides all the nutrients that help keep bone . This Nutrition Drink comes in a caramel flavour without any artificial sweeteners.",
+   "ingredients": "Milk Solids 29%, Grains 20% (Millets - 7. 3% | Bajra, Sorghum, Ragi, Cereals - 6. 7% | Maize, Wheat, Super Grains - 6% | Quinoa, Amaranth, Black Rice), Sugar, Malted Barley (Extracted Solids), Maltodextrin, Cocoa Solids, Minerals, Stabilizers (INS 446, INS 415), Vitamins, Steviol Glycosides (E960) Extracted From Stevia Leaves.",
+   "usageInstructions": "Take 3 heaped tablespoons (approx. 30g) of Manna iStrong in a glass.\nAdd 200ml (approx. 1 cup) of warm milk.\nPour the contents into another glass and repeat the process to mix well and make a smooth drink.\nYour delicious nutritious iStrong drink is ready.",
+   "manufacturerName": "Southern Foods Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "iStrong Women's Nutrition Drink Chocolate",
@@ -842,7 +1085,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40293113_2-manna-istrong-womens-health-drink-fortified-with-iron-chocolate-flavour.jpg"
-    }
+    },
+    "barcode": "8906008350142"
    }
   ],
   "images": [
@@ -870,7 +1114,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293113-8_2-manna-istrong-womens-health-drink-fortified-with-iron-chocolate-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna iStrong 200g Women, s Nutrition Drink Mix Chocolate flavour is an Iron Supplement. Iron Lock Formula with Vit C, B9 and B12 improves haemoglobin and fights Anemia. It contains micronised iron and vitamin C to help in iron absorption.",
+   "ingredients": "Milk Solids, Grains (Bajra, Sorghum, Ragi cereals), Maize, Wheat, Super Grains(Quinoa, Amaranth, Black Rice), Sugar, Maltodextrin, Malted Barley, (Extracted Solids) Minerals, Stabilizers (INS 466, INS 415), Vitamins, Steviol Glycosides(E960)(Extracted from Steviol leaf), Added Flavour- Nature Identical Flavouring Substance – Chocolate. Allergen Advice: Contains – Wheat, Barley and Milk.",
+   "usageInstructions": "Take 3 tablespoons (Approx, 30g) of Manna iStrong in a glass.\nAdd 200ml (approx. one cup) of Warm Milk.\nPour the contents into another glass and repeat to mix well and make a smooth drink.  \nYour delicious nutritious iStrong is ready.",
+   "manufacturerName": "Southern Foods Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Ragi Malt",
@@ -886,7 +1138,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/286622_8-manna-ragi-malt-instant-drink-mix.jpg"
-    }
+    },
+    "barcode": "8906008350388"
    }
   ],
   "images": [
@@ -914,7 +1167,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/286622-8_1-manna-ragi-malt-instant-drink-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Ragi Malt is the favoured instant health drink due to its wonderful taste and nourishing nature. It has malted Ragi which is the natural process of germination that gives ragi improved digestibility and nutritional qualities. It is a tasty and rejuvenating energy drink for all age groups.",
+   "ingredients": "Sugar, Ragi, Milk Solids, Maltodextrin, Barley Malt Extract, Cardamom",
+   "nutritionalInfo": {
+    "Serving Size": "15 g (1 1/2 tsp)",
+    "Servings per pack": "13",
+    "Energy": "58 kcal",
+    "Protein": "1.2 g",
+    "Carbohydrates": "13 g",
+    "Total Sugars": "11 g",
+    "Added Sugars": "8.6 g",
+    "Total Fat": "0.2 g",
+    "Saturated Fat": "0.1 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "0.0 mg",
+    "Calcium": "45 mg",
+    "Phosphorus": "32 mg",
+    "Sodium": "17 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "SOUTHERN FOODS PVT. LTD Khivraj Complex €“ I",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chana Sattu Drink Powder",
@@ -955,7 +1232,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017084-7_1-manna-chana-sattu-refreshing-drink-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Chana Sattu Refreshing Drink Powder is a distinctive blend of nutrient dense Bengal gram making it the perfect choice for a wholesome and invigorating beverage Effortless to prepare this drink powder offers a traditional flavour that is both delightful and refreshing Manna ensures that their Chana Sattu is free from any artificial colours flavours or preservatives making it a natural source of energy Ideal for a quick breakfast drink or a mid day energy boost this refreshing drink powder is versatile and nutritious Manna Chana Sattu Refreshing Drink Powder provides the perfect balance of health and taste delivering a truly gratifying beverage experience Click here for unique and delicious recipes",
+   "usageInstructions": "Take 3 teaspoonfuls of manna sattu & mix it with water. Stir it well. Add salt or sugar. Can add lemon juice or roasted cumin powder if desired.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g Serving_Size: 20g Energy: 381 kcal Protein: 20 g Carbohydrates: 66 g Dietary Fibre: 9 g Total Sugars: 2 g Added Sugars: 0 g Total Fat: 6 g Saturated fatty acid: 0.5 g Trans Fatty Acid: 0 g Cholesterol: 0 mg Sodium: 11 mg Iron: 4.5 mg Magnesium: 112 mg Vitamin B6: 0.8 mg"
+   },
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sprouted Bajra & Apple Baby Cereal",
@@ -971,7 +1258,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40294728_2-manna-baby-cereal-sprouted-bajra-apple-ready-to-cook-6-months.jpg"
-    }
+    },
+    "barcode": "8906008350371"
    }
   ],
   "images": [
@@ -996,7 +1284,46 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40294728-7_2-manna-baby-cereal-sprouted-bajra-apple-ready-to-cook-6-months.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Blend of sprouted bajra, sprouted green gram, and roasted Bengal gram with apple powder. 100% natural baby food with sprouted grains fortified with essential vitamins and minerals. Sprouted grains are easier to digest, thus providing more usable energy for babies than unsprouted grains. Sprouting of grains lowers the level of anti-nutrients and improves nutritional quality. Contains no added sugar, artificial colours, flavours, or preservatives. Contains no milk or milk products.",
+   "nutritionalInfo": {
+    "Sprouted Grains 76% (Sprouted Bajra, Sprouted Green Gram), Roasted Bengal Gram, Apple Powder (18%), Vitamins and MineralsNutrition per gram/ml": "100g",
+    "Serving Size": "20g",
+    "Energy*": "375 kcal",
+    "Protein*": "15 g",
+    "Carbohydrates": "75 g",
+    "Total Sugars": "5 g",
+    "Added Sugars^": "0 g",
+    "Dietary Fibre": "12 g",
+    "Total Fat A": "4.5 g",
+    "Saturated Fat^": "0.5 g",
+    "Trans Fat^": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium^": "13 mg",
+    "Vitamin A": "350 mcg",
+    "Vitamin B1": "0.5 mg",
+    "Vitamin B2": "0.4 mg",
+    "Vitamin B3": "4 mg",
+    "Vitamin B5": "2 mg",
+    "Vitamin B6": "100 mcg",
+    "Vitamin B7": "7.5 mcg",
+    "Vitamin B9": "2.4 mcg",
+    "Vitamin B12": "0.25 mcg",
+    "Choline": "32 mg",
+    "Inositol": "30 mg",
+    "Vitamin C": "25 mg",
+    "Vitamin D": "5 mcg",
+    "Calcium": "63 mg",
+    "Iron": "5 mg",
+    "Zinc": "2.5 mg",
+    "Selenium": "5 mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry place in an airtight container\nWash Your Hands and use clean utensils.\nTake 2 level Scoops (20g Approx.) of Bajra Rich in a clean vessel.\nAdd 180ml (3/4 cup) Milk and stir well.\nBoil the mixture for two minutes. Add sugar if required.",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sprouted Ragi & Pulses Baby Cereal",
@@ -1012,7 +1339,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40001249_4-manna-baby-food-with-sprouted-grains-ragi-rich-6-months-rich-in-vitamins-minerals-no-milk.jpg"
-    }
+    },
+    "barcode": "8906008350630"
    }
   ],
   "images": [
@@ -1040,7 +1368,44 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001249-8_2-manna-baby-food-with-sprouted-grains-ragi-rich-6-months-rich-in-vitamins-minerals-no-milk.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Ragi Rich is the right mix of sprouted ragi, sprouted green gram and fortified with vitamins essential for child's growth and development. In ragi and green gram, sprouting helps in the breakdown of the complex sugars and proteins to much simpler forms which make digestion easier.",
+   "nutritionalInfo": {
+    "Sprouted Grains 76% (Sprouted Ragi (46%), Sprouted Green Gram), Roasted Bengal Gram, Vitamins and MineralsNutrition per gram/ml": "100g",
+    "Serving Size": "29g",
+    "Energy": "366 kcal",
+    "Protein": "15 g",
+    "Carbohydrates": "77 g",
+    "Total Sugars": "1 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "15 g",
+    "Total Fat": "3 g",
+    "Saturated Fat": "0.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "2 mg",
+    "Vitamin A": "350 mcg",
+    "Vitamin B1": "0.5 mg",
+    "Vitamin B2": "0.4 mg",
+    "Vitamin B3": "4 mg",
+    "Vitamin B9": "20 mcg",
+    "Vitamin B5": "2 mg",
+    "Vitamin B6": "100 mcg",
+    "Vitamin B7": "7.5 mcg",
+    "Vitamin B12": "0.25 mcg",
+    "Choline": "32 mg",
+    "Inositol": "30 mg",
+    "Vitamin C": "25 mg",
+    "Vitamin D": "5 mcg",
+    "Calcium": "219 mg",
+    "Iron": "5 mg",
+    "Zinc": "2.5 mg",
+    "Selenium": "5 mcg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture1. Mix the required quantity of Manna Ragi Rich with water or milk.\n2. Cook the mixture on low heat until it reaches the desired consistency.\n3. Serve warm to your baby.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Millets & More Instant Khichdi",
@@ -1056,7 +1421,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40179768_5-manna-instant-khichidi-ready-to-cook-40-multi-millets.jpg"
-    }
+    },
+    "barcode": "8906008351859"
    }
   ],
   "images": [
@@ -1084,7 +1450,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40179768-8_1-manna-instant-khichidi-ready-to-cook-40-multi-millets.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Goodness of Foxtail Millet, Little Millet, Wheat Semolina, Rice Flakes Split Green Gram\nGreat source of Fibre Protein makes Millet Khichdi a great healthy eating option\n100% Natural Ingredients without any Preservatives, Artificial Colours and Flavours\nNo Additives and is Transfat Free\nCooks in just 6 minutes. One pack contains 3 servings",
+   "ingredients": "Millets (45% - Foxtail, Little), Wheat Semolina, Rice Flakes, Split Green Gram, Cow Ghee, Salt, Coriander, Turmeric, Sugar, Dehydrated Green Chilly, Red Chilly, Asafoetida, Star Anise, Onion, Rosemary Extract.",
+   "usageInstructions": "Y\n+\nTake ½ cup of Khichadi mix & 1 cup of water in a microwave safe bowl. Mircowave on high power for 3 minutes & serve hot.",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Millets & More Instant Poha",
@@ -1128,7 +1502,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40179766-8_1-manna-instant-poha-ready-to-cook-40-multi-millets.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This popular dish from Maharashtra now has taken a healthy twist! Manna brings you poha with the goodness of multi millets. A delicious blend of three millets with rice flakes, peanuts and onions make this light and tasty dish a great option for breakfast or snack!",
+   "ingredients": "Millet Flakes (43% - Bajra, Jowar, Little Millet), Rice Flakes, Ground Nuts, Edible Vegetable Oil (Rice Bran), Salt, Dehydrated Onion Flakes, Sugar, Dried Green Chilli, Dehydrated Curry Leaves, Turmeric, Mustard, Cumin, Dry Mango Powder, Asafoetida, Acidity Regulator (Ins 330), Rosemary Extract.",
+   "usageInstructions": "Take 1/2 Cup Of Poha Mix In Bowl.\nAdd 1/2 Cup Of Boiling Water to it. Stir well & keep it closed for 3 minutes.\nMix and serve Hot",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Millets & More Instant Pongal",
@@ -1172,7 +1554,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40179767-8_1-manna-instant-pongal-ready-to-cook-40-multi-millets.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This traditional south Indian combination of rice and lentil now has a healthy twist to it - Manna Millet Pongal made with a combination of millets, lentil and pure ghee! This dish is also rich in protein and dietary fibre making it a healthy option for the whole family.",
+   "ingredients": "Millets (40% - Barnyard Millet, Little Millet), Green Gram, Wheat Semolina, Cow Ghee, Rice Flakes, Salt, Cashew Nut, Broken Black Pepper, Dehydrated Curry Leaves, Cumin Seeds, Dehydrated Green Chilli, Dehydrated Ginger, Sugar, Asafoetida, Turmeric, Rosemary Extract.",
+   "usageInstructions": "Take ½ cup of Pongal mix & 1 ½ cup of water in a microwave safe bowl. Mircowave on high power for 3 minutes & serve hot.",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Millets & More Idli Mix",
@@ -1188,7 +1578,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40221712_1-manna-instant-multigrain-idli-ready-mix-millets-more-foxtail-kodo-little-millet.jpg"
-    }
+    },
+    "barcode": "8906008351880"
    }
   ],
   "images": [
@@ -1210,7 +1601,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221712-6_1-manna-instant-multigrain-idli-ready-mix-millets-more-foxtail-kodo-little-millet.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Instant Multigrain Millet Idli is an earnest attempt to improve the nutrition content of the food that we eat, crafted with a high percentage of multi-millets & other goodness. The authentic taste of our ready cook & eat millet meals is sure to satiate your desire for delicious home food. Eating healthy can seem like a task with the easy availability of unhealthy ready to cook food all around us. At Manna, we have made eating healthy simple so that you can replace your unhealthy eating habits with healthier millet options. Now you can relish a plateful of those soft, fluffy, light-as-air idlis. This delicious traditional breakfast will now be ready to serve in a matter of minutes. Follow the easy instructions to prepare it in a jiffy. Manna Instant Multigrain mix today is your friend in the kitchen and promises to help you serve the authentic taste of India to your family.",
+   "ingredients": "Millets 52% (Little Millet, Kodo Millet, Foxtail Millet), Wheat Semolina, Edible Vegetable Oil (Sunflower Oil), Bengal Gram, Salt, Green Chillies, Mustard, Curry Leaves, Sodium Bicarbonate",
+   "usageInstructions": "Add 1 cup mix to 1 cup sour curd to form the batter.\nSteam the batter in a greased idli cooker for 5 minutes to 10 minutes.\nHot, Tasty, Multi Millet Idli is ready",
+   "manufacturerName": "Southern Health Foods Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Millets & More Dosa Mix",
@@ -1226,7 +1625,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40222020_1-manna-instant-multigrain-millet-dosa-ready-mix.jpg"
-    }
+    },
+    "barcode": "8906008351873"
    }
   ],
   "images": [
@@ -1248,7 +1648,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222020-6_1-manna-instant-multigrain-millet-dosa-ready-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Instant Multigrain Millet Dosa Ready Mix is an earnest attempt to improve the nutrition content of the food that we eat, crafted with a high percentage of multi-millets & other goodness. The authentic taste of our ready cook & eat millet meals is sure to satiate your desire for delicious home food. Eating healthy can seem like a task with the easy availability of unhealthy ready to cook food all around us. At Manna, we have made eating healthy simple so that you can replace your unhealthy eating habits with healthier millet options. Delightfully crispy and golden on the edges, dosa is quite the signature dish. Follow the easy instructions to prepare it in a jiffy. Manna Instant Multigrain mix today is your friend in the kitchen and promises to help you serve the authentic taste of India to your family.",
+   "ingredients": "Millets 42% (Little Millet, Kodo Millet, Foxtail Millet), Bengal Gram, Raw Rice, Wheat Semolina, Black Gram Dal, Rice Flakes, Salt, Fenugreek Seed, Red Chillies, Cumin",
+   "usageInstructions": "1. - Add 1 cup mix to 1 cup water to form a batter. Set aside for 5 minutes.\n2. Set aside for 6 minutes.\n3. Spread enough batter on hot Tawa on medium flame.\n4. Add 1tsp oil to the sides.\n5. Roast till golden brown.\n6. Spread enough batter on hot tava on medium flame. Add 1 tablespoon oil to the sides. Roast till golden brown.",
+   "manufacturerName": "Urban Millets Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Millets & More Rava Dosa Mix",
@@ -1264,7 +1672,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40221711_1-manna-instant-multigrain-rava-dosa-ready-mix-millets-more-kodo-little-millet-jowar.jpg"
-    }
+    },
+    "barcode": "8906008351897"
    }
   ],
   "images": [
@@ -1286,7 +1695,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221711-6_1-manna-instant-multigrain-rava-dosa-ready-mix-millets-more-kodo-little-millet-jowar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Instant Multigrain Rava Dosa is an earnest attempt to improve the nutrition content of the food that we eat, crafted with a high percentage of multi-millets & other goodness. The authentic taste of our ready cook & eat millet meals is sure to satiate your desire for delicious home food. Eating healthy can seem like a task with the easy availability of unhealthy ready to cook food all around us. At Manna, we have made eating healthy simple so that you can replace your unhealthy eating habits with healthier millet options. Delightfully crispy and golden on the edges, Rava dosa is quite the signature dish. Follow the easy instructions to prepare it in a jiffy. Manna Instant Multigrain mix today is your friend in the kitchen and promises to help you serve the authentic taste of India to your family.",
+   "ingredients": "Millets 72% (Little Millet, Kodo Millet, Jowar), Raw Rice, Wheat Semolina, Pepper, Cumin, Green Chillies, Asafoetida, Curry Leaves",
+   "usageInstructions": "Add 1 cup mix to 1.5 cup water and 1.5 cups curd to form a batter.\nSet aside for 5 minutes. \nSpread enough batter on a hot tawa on medium flame.\nAdd 1tsp oil to the sides. \nRoast till golden brown. \nHot, Tasty, Multi Millet Rava Dosa is ready",
+   "manufacturerName": "Southern Health Foods Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Dried Figs",
@@ -1318,7 +1735,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40223877-4_1-manna-dried-figsanjeer-natural-rich-in-dietary-fibre-calcium.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Figs being agricultural produce are sorted and packed under hygienic conditions with utmost care. We recommend that figs may be checked before consumption. Dried Anjeer or Figs are very good for health and have umpteen benefits like being rich in dietary fibre, calcium among others. These are seedless as well.",
+   "ingredients": "Dried Figs",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "249 kcal",
+    "Carbohydrates": "63 g",
+    "Total Sugars": "48 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "10 g",
+    "Protein": "3.3 g",
+    "Fat": "0.9 g",
+    "Calcium": "162 mg",
+    "Potassium": "680 mcg"
+   },
+   "manufacturerName": "Southern Health Foods Pvt Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Black Dates",
@@ -1356,7 +1792,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40223879-6_1-manna-premium-black-dates-natural-rich-in-dietary-fibre-iron.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dates, being agricultural produce, are sorted and packed under hygienic conditions with utmost care. We recommend that dates may be opened and checked before consumption. They are very good for health and have numerous benefits, such as being rich in dietary fibre, vitamins, and iron.",
+   "ingredients": "Black Dates",
+   "storageInstructions": "Store in a cool, dry place, away from sunlight",
+   "manufacturerName": "Southern Health Foods Pvt Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Brown Rice",
@@ -1397,7 +1841,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240514-7_1-manna-manna-brown-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "At Manna, we belive nature provides the best and do little to interfere with it. Brown rice is not polished like white rice, hence retains most of its nutrients in its bran layer. Modern science is continously researching brown rice for its various health benifits. It is seen as a healthier alternative for people with Diabetes. Swith to brown rice as it is wholesome and nutritious for your whole family.",
+   "ingredients": "Brown Rice",
+   "usageInstructions": "(1) Wash and soak 1 cup of Manna Brown Rice for 10 min in sufficient water. Strain / Drain Water. (2) Add 3 cups of water to cook. Pressure cook on high flame till second whistle. Simmer / Lower the flame and cook the rice for another 10 minutes. (3) Wait for pressure to release. Serve hot wih your favourate Curry / Sambar",
+   "manufacturerName": "Southern Health Foods Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Millet Bytes Chocolate Cream Wafers",
@@ -1441,7 +1893,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40302025-8_1-manna-millet-bytes-multigrain-wafers-chocolate-cream.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Millet Bytes Wafers Chocolate Cream Multigrain is a delightful and nutritious snack made from a combination of millets, lentils, and other grains. This snack is devoid of cholesterol, artificial flavours, and preservatives. It is also free of gluten. The chocolate cream flavour of the wafers, which is rich and decadent, makes them the ideal snack for any time of day. All things considered, Manna Millet Bytes Wafers Chocolate Cream Multigrain are a tasty and wholesome snack option that is ideal for people seeking a healthier alternative to conventional snacks. They are a terrific way to satisfy your desires for sweet and chocolatey foods while increasing the number of whole grains and nutrients in your diet. As they are high in protein and fibre, low in fat, and include necessary vitamins and minerals, they are a great alternative for individuals searching for a healthy and nourishing snack option. These wafers contain millet, a nutrient-dense grain high in antioxidants, magnesium, and other necessary nutrients, as one of their main constituents. Another benefit of millets is their high fibre content, which aids in regulating digestion and fostering satiety. Explore the range of Manna Millet Bytes Wafers only on Big Basket. Make snacking time more nutritious, healthy and tasty. So shop now and have them delivered to your doorstep.",
+   "ingredients": "Refined Wheat Flour(Maida), Edible Vegetable Fat and Oil, Sugar, Multigrain Blend(15% -, Oats, Jowar, Foxtail), Starch, Milk Solids, Wheat Fibre, Real Chocolate (0.5%), Emulsifier (INS 322), Edible Common Salt, Raising Agent (INS 500(ii)), Acidity Regulator (INS 330), Dough Conditioner (INS 223). Contains Added Flavours- Nature Identical Flavouring Substances (Chocolate) and Permitted Synthetic Food Colour (INS 155). ALLERGEN ADVICE : Contains Wheat, Milk and Soya.",
+   "nutritionalInfo": {
+    "Energy": "90kcal",
+    "Total Carbohydrate": "13g",
+    "Added sugar": "5g",
+    "Total sugar": "5g",
+    "Dietary Fiber": "0.18g",
+    "Protein": "1g Fat: 4g",
+    "Saturated fat": "3g",
+    "Trans fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "17mg"
+   },
+   "usageInstructions": "Pairs great with evening tea or coffee.",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Millet Bytes Butter Chilli Thattai",
@@ -1482,7 +1954,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293105-7_1-manna-millet-bytes-thattai-real-butter-guntur-chilly-crunchy-traditional-indian-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Now experience this crunchy traditional snack with a nourishing millet twist. Blend 30% millet (barnyard millet), with real butter and spiced with Guntur chilli. No artificial colour, no artificial flavour, no added preservatives, no trans fat and no gluten.",
+   "ingredients": "Rice Flour, Barnyard Millet Flour (30%), Roasted Bengal Gram Flour, Red Chilli, Butter, Garlic, Edible Common Salt, Potato Starch, Asafoetida, Curry Leaves, Sodium Bicarbonate (500(ii)), Rosemary Extract and Mixed Tocopherols, Edible Vegetable Oil (Palm).",
+   "usageInstructions": "Ready to Eat.",
+   "manufacturerName": "Southern Health Foods (P) Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Multi Millet Atta",
@@ -1498,7 +1978,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/277012_6-manna-multimillet-multigrain-atta.jpg"
-    }
+    },
+    "barcode": "8906008350937"
    },
    {
     "title": "5kg",
@@ -1529,7 +2010,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40239785_1-manna-multi-millet-atta-made-from-ragi-jowar-bajra-rich-in-protien-fibre-iron-healthy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful blend of wholesome goodness with Manna Multi Millet Atta. This unique flour combines the flavourful and nutritious combination of Bajra, Ragi, and Jowar millets with the versatility of whole wheat. Enjoy the enhanced taste and texture of your rotis, chapatis, and parathas, as the millets lend a delightful flavour and heartier texture. Manna Multi Millet Atta is specially formulated to help combat diabetes naturally, as the slow release of glucose into the bloodstream helps maintain healthy blood sugar levels throughout the day. High in protein and dietary fibre, this atta is a rich source of iron and magnesium, making it a truly nourishing choice for your family's everyday meals. Embrace the multigrain goodness and experience the benefits of improved blood sugar management and overall well-being with every bite.",
+   "ingredients": "Whole wheat atta, Multi millet, flour Mixture, (Bajra,ragi,jowar)soybean, fenugreek seed",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "Not provided",
+    "Energy (kcal)": "365",
+    "Protein*(g)": "11",
+    "Total carbohydrate(g)": "74",
+    "of which sugars(g)": "6",
+    "Dietary Fibre*(g)": "9",
+    "Total Fat(g)": "3",
+    "Saturated Fat(g)": "0.8",
+    "Transfat(g)": "0",
+    "Sodium(mg)": "3",
+    "Iron*(mg)": "5.1",
+    "Magnesium*(mg)": "120",
+    "Zinc(mg)": "3"
+   },
+   "storageInstructions": "Store in a cool, dry place, away from sunlight",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Multigrain Atta with 35% Oats",
@@ -1570,7 +2075,36 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40268891-7_1-manna-multigrain-atta-with-35-oats-loaded-with-nutrients-reduces-cholestrol.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Oats Atta is a nourishing blend of Oats and Wheat flour which provides protein and essential minerals. It is also rich in both insoluble and soluble fibre necessary for a healthy gut and managing cholesterol levels. It has a mild, pleasant taste and can be used in a variety of recipes such as roti, dosa, chilla, porridge etc. Enjoy the double nutrition of Oats and Wheat together, with our new Oats Atta and make innovative and healthy recipes for you and your family.",
+   "ingredients": "Whole Wheat Atta, Oat Flour (35%)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50 g",
+    "Energy (kcal)": "364",
+    "Protein* (g)": "10",
+    "Total Carbohydrate (g)": "74",
+    "Total Sugars (g)": "2",
+    "Added Sugars (g)": "0",
+    "Total Dietary Fibre (g)": "13",
+    "Soluble Dietary Fibre** (g)": "2.5",
+    "Insoluble Dietary Fibre (g)": "10.5",
+    "Total Fat (g)": "6.0",
+    "Saturated Fat (g)": "1.2",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "0.0",
+    "Sodium (mg)": "38",
+    "Iron* (mg)": "4",
+    "Magnesium* (mg)": "90",
+    "Manganese* (mg)": "3",
+    "Phosphorus* (mg)": "180"
+   },
+   "storageInstructions": "Store in a cool, dry place\nKeep in an airtight container",
+   "manufacturerName": "Southern Health Foods Private Limited",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ragi Flour",
@@ -1586,7 +2120,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40001257_5-manna-ragi-flour.jpg"
-    }
+    },
+    "barcode": "8906008350685"
    }
   ],
   "images": [
@@ -1608,7 +2143,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001257-6_1-manna-ragi-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Ragi Flour also known as finger millet flour is high in protein, dietary fibre, and enhances iron bioavailability compared to plain ragi flour. It is a rich source of fibre. This flour can be included in the everyday diet. It can be used to make porridge, rotis, dosa, puttu, and various other dishes. It increases protein, mineral, vitamin and grain fibre content in your body. It has a low-fat content and many nutritional health benefits.",
+   "ingredients": "Ragi (Finger Millet) Flour",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50 g",
+    "Energy (kcal)": "331",
+    "Protein* (g)": "7",
+    "Carbohydrates (g)": "77",
+    "Total Sugars (g)": "0.5",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "11",
+    "Total Fat (g)": "2",
+    "Saturated Fat (g)": "0.4",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "5",
+    "Iron* (mg)": "3.5",
+    "Calcium* (mg)": "257"
+   },
+   "storageInstructions": "Store in a cool and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "OUTHERN HEALTH FOODS PVT. LTD Khivraj Complex I",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Sprouted Ragi Flour",
@@ -1624,7 +2182,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/278982_8-manna-sprouted-ragi-flour.jpg"
-    }
+    },
+    "barcode": "8906008350104"
    },
    {
     "title": "1kg",
@@ -1649,7 +2208,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017085_2-manna-sprouted-ragi-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional taste and nutrition of Manna Sprouted Ragi Flour. Crafted with care and expertise, this flour boasts a delightful texture and nutty flavour that elevates any dish it touches. Whether you're baking bread, making pancakes, or preparing savoury snacks, this versatile flour delivers exceptional results. Sprouted ragi flour is a rich source of dietary fibre, protein, and enhanced iron bioavailability, making it a nutritious and gluten-free choice for your everyday cooking and baking needs. Enjoy the benefits of this vegan-friendly flour, which is also ideal for baby food due to its nutrient-dense profile. Indulge in the delightful taste and experience the exceptional quality of Manna Sprouted Ragi Flour.",
+   "ingredients": "Ragi.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rice Flour",
@@ -1665,7 +2232,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40001252_3-manna-rice-flour.jpg"
-    }
+    },
+    "barcode": "8906008350081"
    }
   ],
   "images": [
@@ -1678,7 +2246,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001252-3_3-manna-rice-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna® Rice Flour is a premium quality, finely milled rice flour that makes an excellent substitute for wheat flour. Crafted from the best selected rice, this versatile flour has a neutral flavour and a delightfully gritty, sand-like texture. Rich in fibre and boasting anti-inflammatory and antioxidant properties, Manna Rice Flour is perfect for creating a variety of delicious traditional Indian delicacies, such as puttu, roti, kozhukattai, paniyaram, appam, murukku, and adhirasam. Naturally preservative-free, this flour is a healthy and flavourful choice for making wholesome, homemade meals. Whether you're thickening sauces, baking breads, or preparing authentic regional specialties, Manna Rice Flour is a must-have ingredient for your kitchen.",
+   "ingredients": "Rice.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD Khivraj Complex I",
+   "fssaiLicense": "10013042001197"
+  }
  },
  {
   "title": "Red Puttu Powder",
@@ -1694,7 +2269,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40001261_3-manna-red-puttu-powder.jpg"
-    }
+    },
+    "barcode": "8906008350128"
    }
   ],
   "images": [
@@ -1707,7 +2283,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001261-3_7-manna-red-puttu-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Red Puttu Powder is prepared from selected red rice. Red Puttu Powder is a balanced combination of rice powder and wheat. It is suitable for preparing soft and fluffy Puttu. We bring to you a instant mix red Puttu that helps you make tasty breakfast. Ease preparation for a quick breakfast.",
+   "nutritionalInfo": {
+    "Calories": "327,",
+    "Carbs": "75g,",
+    "Fat": "0g,",
+    "Protein": "7g."
+   },
+   "ingredients": "Rice flour,\nSalt.",
+   "storageInstructions": "Mix 1 cup of rice puttu podi with 1 cup of water and salt.\nKeep aside for 20 mins.\nMix the powder thoroughly and fill into the puttu maker with coconut scrapping, layer by layer.\nSteam for 3-5 serve hot.\nStore in a cool and dry place\nKeep away from direct sunlight .",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD Khivraj Complex – I",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "White Puttu Powder",
@@ -1736,7 +2326,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001256-3_1-manna-white-puttu-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna White Puttu Powder is prepared from selected red rice. White Puttu Powder is a balanced combination of rice powder and wheat. It is suitable for preparing soft and fluffy Puttu. We bring to you a instant mix white Puttu that helps you make tasty breakfast. Ease preparation for a quick breakfast.",
+   "nutritionalInfo": {
+    "Calories": "327,",
+    "Carbs": "75g,",
+    "Fat": "0g,",
+    "Protein": "7g."
+   },
+   "ingredients": "Rice flour,\nSalt.",
+   "storageInstructions": "Mix 1 cup of rice puttu podi with 1 cup of water and salt. Keep aside for 20 mins.\nMix the powder thoroughly and fill into the puttu maker with coconut scrapping, layer by layer.\nSteam for 3-5 serve hot.1. Store in a cool and dry place\nKeep away from direct sunlight .",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD Khivraj Complex – I",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ragi Sevai",
@@ -1752,7 +2356,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40001253_8-manna-ragi-vermicelli-finger-millet-semiya.jpg"
-    }
+    },
+    "barcode": "8906008356014"
    }
   ],
   "images": [
@@ -1771,7 +2376,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001253-5_4-manna-ragi-vermicelli-finger-millet-semiya.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the healthy and delicious Ragi Sevai/Vermicelli, a nutritious twist to traditional vermicelli. Made from the finest quality ragi, this healthy alternative is packed with essential nutrients and an outstanding source of fibre, iron and calcium. Each strand of Ragi Sevai is expertly crafted to perfection, ensuring a light and fluffy texture. Whether you're looking for a wholesome breakfast or a quick meal option, Ragi Sevai is a fantastic choice. Enjoy the goodness of ragi in every bite, while satisfying your taste buds with its mild and nutty flavour. Make Ragi Sevai/Vermicelli a part of your daily diet for a balanced and healthy lifestyle.",
+   "ingredients": "Rice, Ragi (40%).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "348",
+    "Protein (g)": "7.4",
+    "Carbohydrates (g)": "80",
+    "Total Sugars (g)": "0.6",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "6",
+    "Total Fat (g)": "1.1",
+    "Saturated Fat (g)": "0.5",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "5"
+   },
+   "usageInstructions": "Incorporate the ragi vermicelli effortlessly into your daily meals, including Kichadi, Upma, Kheer and more delicious dishes.",
+   "manufacturerName": "3V Tasty Foods Pvt Ltd",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rice Sevai",
@@ -1806,7 +2431,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/286621-5_3-manna-rice-sevai.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna vermicelli is finished with an unusual process that guarantees it is non-sticky and does not form lumps. It is versatile and can be used to prepare savoury upma, healthy pulao with boiled vegetables, or a smooth sweet kheer. The vermicelli can be used in both spicy and sweet dishes.",
+   "ingredients": "Rice",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy, kcal": "351.6",
+    "Carbohydrate, g": "78.3",
+    "Protein, g": "8.7",
+    "Sugar, g": "0.0",
+    "Fat, g": "0.4"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rolled Oats",
@@ -1847,7 +2488,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282042-7_1-manna-rolled-oats-gluten-free-old-fashioned-diabetic-friendly-100-wholegrain.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Rolled Oats is a gluten-free, old-fashioned, diabetic-friendly, and wholegrain product. It is low in sodium, making it great for your heart. The oats are rich in protein, carbohydrates, and dietary fibre, which help strengthen your bones and keep you energetic throughout the day. It also aids in maintaining a well-oiled digestive system. The product is completely whole-grain and helps regulate cholesterol levels. Additionally, it is extremely low in sugar and fats, making it an ideal choice for adding to protein bars or using in overnight oats. You can also use it to make healthy cookies or cupcakes.",
+   "ingredients": "ROLLED OATS",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "40g",
+    "Energy (Kcal)": "422",
+    "Protein (g)": "13.1",
+    "Total Carbohydrate (g)": "65",
+    "Total Sugar (g)": "1",
+    "Added Sugar (g)": "0",
+    "Total Dietary Fibre (g)": "11",
+    "Soluble Dietary Fibre (g)": "4",
+    "Total Fat (g)": "10",
+    "Saturated Fat (g)": "2",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "3",
+    "Magnesium (mg)": "114",
+    "Iron (mg)": "3.7",
+    "Zinc (mg)": "2"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Southern Health Foods Private Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Steel Cut Oats",
@@ -1863,7 +2530,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/286615_7-manna-steel-cut-oats-gluten-free.jpg"
-    }
+    },
+    "barcode": "8906008350470"
    }
   ],
   "images": [
@@ -1888,7 +2556,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/286615-7_1-manna-steel-cut-oats-gluten-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna Hi Fibre White Oats is a rich supply of Soluble and Insoluble fibre that keeps blood cholesterol and blood sugar level below control. Oats are low in fat, salt and they are a good supply of natural iron. It will be treating your body to quick and immediate nourishment that will assist keep you going during the day.\nTake care of your heart's health, start your day the healthy way with the goodness of oats\nStart off your day with a balanced, great-tasting breakfast that can put you on the fast track to good nutrition and better overall health\nNo added preservatives\nManna oats are made from 100% whole grain oats, which is a source of protein and dietary fibre\nA quick and convenient breakfast in just 3 minutes",
+   "ingredients": "White Oats.",
+   "usageInstructions": "Add one cup of manna White Oats to two cups of boiling water.\nCook 3-5 min over low flame stirring constantly and then add milk and sugar or salt to taste.\nGarnish with graded fruits.",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD",
+   "fssaiLicense": "10013042001197",
+   "countryOfOrigin": "India Best before 14-07-2027 For Queries/Feedback/Complaints, Contact our Customer Care Executive at: Phone: 1860 123 1000 | Address: Innovative Retail Concepts Private Limited, Ranka Junction 4th Floor, Tin Factory bus stop. KR Puram, Bangalore - 560016 Email:customerservice@bigbasket. com"
+  }
  },
  {
   "title": "White Oats",
@@ -1926,6 +2602,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/211494-6_3-manna-steel-cut-oats-gluten-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Manna White Oats are made from wholegrain oats, which are a source of protein and dietary fibre. They offer a quick and convenient breakfast in just 3 minutes. The oats do not contain any salt, sugar or preservatives, making them a healthy choice to start your day with the goodness of oats and take care of your heart's health.",
+   "ingredients": "OATS, No Preservatives, No Added Salt, No Added Sugar",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "40g",
+    "Energy (Kcal)": "402.0",
+    "Protein(g)": "11.0",
+    "Total carbohydrate(g)": "67.0",
+    "Total sugars(g)": "1.5",
+    "Added sugars(g)": "0.0",
+    "Total Dietary Fibre(g)": "10.0",
+    "Soluble dietary fibre(g)": "4.0",
+    "Insoluble dietary fibre (g)": "6.0",
+    "Total Fat(g)": "10.0",
+    "Saturated fat(g)": "2.0",
+    "Cholesterol(mg)": "0.0",
+    "Sodium(g)": "6.0",
+    "Magnesium(mg)": "95.0",
+    "Iron(mg)": "3.0",
+    "Zinc(mg)": "1.8"
+   },
+   "storageInstructions": "*Keep in a cool, dry place\n*Avoid direct sunlight",
+   "manufacturerName": "SOUTHERN HEALTH FOODS PVT. LTD Khivraj Complex“ I",
+   "fssaiLicense": "10013042001197"
+  }
  }
 ]

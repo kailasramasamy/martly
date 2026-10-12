@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100004426_2-mdh-masala-chana.jpg"
-    }
+    },
+    "barcode": "8902167000089"
    },
    {
     "title": "50g",
@@ -44,7 +45,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019854_6-mdh-chhole-ka-chana-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Chana Masala is the best ingredient to cook peppery, flavoursome, and tasty chana masala. If you desire chana masala to be spicier, add extra spices along with MDH Chana Masala. This is an easy recipe for the channa masala powder, which is simple to make and tastes remarkable.",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd Dl 9/44 Kirti Nagar Industrial Area New Delhi 110015 ",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chunky Chat Masala",
@@ -60,7 +66,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100004448_4-mdh-chunky-chat.jpg"
-    }
+    },
+    "barcode": "8902167000065"
    },
    {
     "title": "50g",
@@ -94,7 +101,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019857_1-mdh-chat-chunky.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Chunky Chat Masala is a spice mix for salads. Chat Masala is a necessary seasoning in Indian cuisine. This alluring, tart, spicy, peppery, and salty mix of spices is used to enhance the flavour of everything from fruits to flavourful snacks. It is a blend of salt, black salt, cumin, dry mango powder, pomegranate seeds, coriander, black pepper, nutmeg, mint leaves, and other spices.",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd Dl 9/44 Kirti Nagar Industrial Area New Delhi 110015 ",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Garam Masala",
@@ -141,7 +153,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019860_3-mdh-masala-garam.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amongst spices blends, Garam masala is a speciality of North India. It is a powdered blend of highly aromatic spices & Black Pepper to make it hot. It is sprinkled in small quantity, when the dish is nearly ready, be it curried or dry, lentils, meat or vegetables, to pep up the spicy aroma for which Indian food is renowned all over the world.",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd DL 9/44 Kirti Nagar Industrial Area New Delhi 110015",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kitchen King Masala",
@@ -157,7 +174,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100004502_7-mdh-masala-kitchen-king.jpg"
-    }
+    },
+    "barcode": "8902167000102"
    },
    {
     "title": "50g",
@@ -191,7 +209,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019867_4-mdh-masala-kitchen-king.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Kitchen King Masala has a combination of coriander, turmeric, cumin, black pepper, chili, and other spices. It is dark brown in colour, contains a strong spicy taste, and should be used carefully. Explore the curry experience with this classic mix that provides vegetable curries with a lordly flavour and a mild, subdued taste. Being coriander and turmeric-based, the mix gives curry a delicious golden hue.",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd Dl 9/44 Kirti Nagar Industrial Area New Delhi 110015 ",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chicken Masala",
@@ -207,7 +230,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/260798_4-mdh-masala-chicken.jpg"
-    }
+    },
+    "barcode": "8902167000218"
    },
    {
     "title": "50g",
@@ -244,7 +268,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019855_4-mdh-masala-chicken.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the authentic flavours of Indian cuisine with MDH Chicken Masala Powder, a premium blend of aromatic spices that promises to elevate your chicken dishes to new heights of taste and aroma. Crafted with care by MDH, a trusted name in Indian spices for over a century, this chicken masala powder is the secret ingredient behind mouthwatering chicken curries, gravies, and tandoori dishes enjoyed by families across India and beyond. Prepared with chilli, cumin, coriander, fenugreek leaves, turmeric, and additional ingredients, this natural spice blend is free from any false flavours or preservatives, ensuring the purity, freshness, and authentic flavour of your homemade chicken delicacies.",
+   "ingredients": "Coriander Seeds, Red Chillies, Turmeric, Cumin, Lodised Salt, Black Pepper, Fenugreek Leaves, Mustard Seeds, Dried Ginger, Cassia, Cardamom Amomum, Cloves, Nutmeg, Mace, Asafoetida",
+   "storageInstructions": "*Keep in a clean, cool and dry place\n*Transfer contents into an airtight container after opening",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Meat Masala",
@@ -260,7 +291,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40019869_2-mdh-masala-meat.jpg"
-    }
+    },
+    "barcode": "8902167000140"
    },
    {
     "title": "50g",
@@ -291,7 +323,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019870_2-mdh-masala-meat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your meals to a whole new level with the bold and authentic flavours of MDH Meat Masala. This spice blend is a true delight for meat lovers, imparting a deep, rich tan and a delightful spicy kick to your non-vegetarian dishes. Crafted with a harmonious blend of pepper, coriander, chilli, and a variety of aromatic spices, this masala creates a sweet-smelling chorus that perfectly complements the Indian love for well-spiced meat. Allergen-free and made in India, this versatile seasoning will transform your meat dishes, adding a depth of flavour and a satisfying spicy punch that will leave your taste buds craving more. Indulge in the rich, flavourful experience of MDH Meat Masala and elevate your culinary adventures to new heights.",
+   "ingredients": "Coriander, Chilli, Cumin, Black Pepper, Cassio, Cardamom, Clove, Salt, Turmeric, Garlic, Fennel Seed, Mint Leaf, Fenugreek, Anistar, Mustard, Dry Ginger, Bengal Gram",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "<br>MAHASHIAN DI HATTI PVT LTD"
+  }
  },
  {
   "title": "Sambhar Masala",
@@ -341,7 +379,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019872_2-mdh-masala-sambar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Sambar Powder is a mix of sweet-smelling spices and herbs that are usually used for making sambar, a dish that is a necessary part of the South Indian diet. It can be served with idli, chapati, rice, etc.",
+   "ingredients": "Coriander, Turmeric, Cumin, Chilli, Fenugreek Seeds, Mustard, Salt, Black Pepper, Mustard, Pulse, Caraway, Cloves, Nutmeg, Mace, Cinnamon, Cardamom Seeds, Dry Ginger, Asafoetida",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pav Bhaji Masala",
@@ -357,7 +402,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100004529_1-mdh-masala-pav-bhaji.jpg"
-    }
+    },
+    "barcode": "8902167000256"
    },
    {
     "title": "50g",
@@ -385,7 +431,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019871_2-mdh-masala-pav-bhaji.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Immerse yourself in the authentic flavours of Mumbai's beloved street food with MDH Pav Bhaji Masala Powder. This expertly blended spice mix is the secret weapon to recreating the iconic pav bhaji experience in your own kitchen. Effortlessly elevate your cooking with this versatile seasoning, which features a harmonious blend of 14 aromatic spices including coriander seeds, chillies, dry mango powder, and pepper. Whether you're a seasoned chef or a novice in the kitchen, this masala guarantees unmatched flavour, transforming your pav bhaji into a gourmet delight. Simply add a teaspoon to your mashed vegetables (bhaji) and serve with hot, buttery pavs (buns) for an authentic taste of Mumbai's vibrant street food culture. Unlock the secrets of this beloved dish and enjoy the perfect balance of spices, textures, and aromas in your own home.",
+   "ingredients": "Coriander, Chilli, Cumin, Dry Mango, Cardamom Seeds, Black Pepper, White Salt, Fennel, Cinnamon, Dry Ginger, Bay Leaf, Cloves, Star Anise, Caraway, Nutmeg, Mace",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Biryani Pulao Masala",
@@ -423,7 +476,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019853-6_1-mdh-masala-birayani-pulao.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mdh Briyani Masala Is An Aromatic Mix Of Spices. It Made Up Of Quality Of Ingredients. It Can Be Used To Make Exotic Briyani.",
+   "ingredients": "Coriander, Bay leaf, Chilli,Black pepper, Turmeric, Aniseed, Cinnamon, Cardamom, Salt, Cloves, Nutmeg, Cumin.",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chicken Biryani Masala",
@@ -458,7 +517,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200942-5_1-mdh-chicken-biryani-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This is a mixed blend of various spices and ingredients used to give your Chicken Biryani Masala amazing spicy taste. Cook now delicious biriyani at home for your loved ones with this amazing spice mixtures.",
+   "ingredients": "Iodised Salt, Red Chillies, Dry Mango, Cassia,  Fennel, Musk Melon, Cumin, Cardamom Amomum, Black Pepper, Cloves, Garlic, Onion, Green Cardamom, Turmeric, Nutmeg, Mace, Star Anise, Coriander",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "fssaiLicense": "10018011005811",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Veg Biryani Masala",
@@ -496,7 +562,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200951-6_1-mdh-veg-biryani-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This mixed spice from India is a combination of several kinds of spice prepared to fit with food material. This product itself DOES NOT CONTAIN any ingredient against a vegetarian standard such as meat, fish, eggs, soup stock from the animal, etc. You can use it without hesitation for any vegetarian cuisine.",
+   "ingredients": "Iodised Salt, Coriander, Red Chilli, Dried Mango, Cassia, Fennel, Musk Melon, Cumin, Cardamom Amomum, Black Pepper, Cloves,Garlic, Onion, Green Cardamom, Turmeric, Nutmeg, Mace, Star Anise",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "fssaiLicense": "10018011005811",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Achari Aloo Masala",
@@ -531,7 +604,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200941-5_1-mdh-achari-aloo-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Achari Aloo Masala is a dry powder mix of spices and herbs formulated to enable even a novice to cooking a delicious dish of achar Aloo. Achari Aloo Masala may also be used to cook achari potatoes, a dish featuring South Asian pickle.",
+   "ingredients": "Iodised Salt, Red chilli, Coriander, Fennel, Turmeric, Musk melon, Dry Mango, Fenugreek Seeds, Mustard, Nigella, Ani Seeds,Cumin, Black Pepper, Ginger, Star Anise, Cloves, Nutmeg,",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "fssaiLicense": "10018011005811",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Karahi Paneer Masala",
@@ -566,7 +646,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200946-5_1-mdh-karahi-paneer-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH is one of the best-known brands of Indian spices. Paneer masala is a mixture of spices used to add flavour to karachi paneer (hard cubes of cheese), which is a prominent Indian vegetarian dish.",
+   "ingredients": "Coriander, Iodised Salt, Red Chillies, Turmeric, Cumin, Nigella, Onion, Ginger, Black Pepper, Fenugreek Seeds, Fenugreek Leaves, Cassia, Nutmeg, Cloves, Mace",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "fssaiLicense": "10018011005811",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Shahi Paneer Masala",
@@ -604,7 +691,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100004547-6_1-mdh-masala-shahi-paneer.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in a regal and aromatic experience with MDH Shahi Paneer Masala. This well-spiced blend is perfect for creating a luscious and creamy Indian cheese curry that your whole family will enjoy. Handpicked, roasted, and expertly blended for authentic flavours, this masala effortlessly elevates your paneer dishes to new heights. Simply follow the easy-to-cook instructions on the back of the box and add cream for a truly indulgent and royal culinary journey. With its rich blend of spices, MDH Shahi Paneer Masala enhances the flavour of your curries, making it a must-have for any home chef seeking to bring the flavours of India to their table.",
+   "ingredients": "Coriander, Red Chilli, Onion Flakes, Salt, Green Cardamom, Black Pepper, Dry Ginger, Cassia, Turmeric, Cloves, Garlic Flakes, Nutmeg, Mace, Star Anise",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture\nKeep the container tightly sealed after each use to preserve freshness",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fish Masala",
@@ -639,7 +733,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100004468-5_1-mdh-masala-fish.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Fish Masala is completed pure spices and ready mixes that are used to create the popular South Indian Curries. It finished from the finest quality spices. The mix uses pure spices in such exact measures that it brings out the finest in your preferred fish.",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tandoori Chicken Masala",
@@ -677,7 +776,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019878-6_1-mdh-tandoori-chicken-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tandoori masala is awesome, it does not contain salt and hence provides value for money. Tandoori chicken is a chicken dish prepared by roasting chicken marinated in yoghurt and skewered foods. It is suitable for Indian cuisine, arabic cuisine, Bengali cuisine as well as for Indian chicken dishes.",
+   "ingredients": "Coriander Seeds, Cumin, Red Chillies, Iodised Salt, Unripe Dry Mango, Kachri, Fenugreek Leaves, Black Pepper, Garlic, Dried Ginger, Cassia, Cardamom Amomum, Nutmeg",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "fssaiLicense": "10018011005811",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dal Makhani Masala",
@@ -693,7 +799,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100004464_3-mdh-masala-dal-makhni.jpg"
-    }
+    },
+    "barcode": "8902167001017"
    }
   ],
   "images": [
@@ -712,7 +819,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100004464-5_1-mdh-masala-dal-makhni.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Dal Makhni Masala is a spice mix for black lentil. The major ingredients of this masala contain clove, ginger, chilly, cardamom, pepper, coriander, cassia, dry mango, cumin, salt etc. The curds and yoghurt become enriched with the rich and spicy flavour of this masala.",
+   "ingredients": "Coriander Seeds, Red Chilli, Dry Mango, Onion, Black Pepper, Ginger, Salt, Cassia, Garlic, Nutmeg, Cloves, Mace Badian, Asafoetida.",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rajmah Masala",
@@ -728,7 +841,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100004538_5-mdh-masala-rajmah.jpg"
-    }
+    },
+    "barcode": "8902167000454"
    }
   ],
   "images": [
@@ -747,7 +861,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100004538-5_1-mdh-masala-rajmah.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Rajmah Masala is a flavor mix for red kidney beans curry. Take the fresh and fine, high grade excellence MDH Rajmah Masala, comes ensuring the germ-free conditions that improve the flavor of your Rajmah. The smell, colour, flavor and feel of the astonishing varieties of spices in India nourish a rich assortment of cuisines and cultures.",
+   "ingredients": "Coriander, Salt, Dry Mango, Pomegranate Seeds, Chilli, Cumin, Musk Melon, Black Pepper, Black Salt, Fenugreek Leaves, Cloves, Mint, Nutmeg, Dry Ginger, Cinnamon, Bay Leaf, Cardamom Seeds, Caraway, Mace.",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pani Puri Masala",
@@ -798,14 +918,21 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40019859_1-mdh-masala-dahivada-raita.jpg"
-    }
+    },
+    "barcode": "8902167000355"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019859_1-mdh-masala-dahivada-raita.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mdh Dahi Vada Raita Masala",
+   "ingredients": "Black salt, Cumin, Mint Leaves, Dried Mango",
+   "manufacturerName": "EAN Code",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sabzi Masala",
@@ -843,7 +970,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40101492-6_1-mdh-sabzi-masala-multi-purpose-use.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Sabji masala is the perfect ingredient for any kind of dry or wet vegetable dish. This aromatic blend of spices gives the dish a delicately spicy and highly appetising flavour.",
+   "ingredients": "Coriander Seeds, Cumin, Unripe Dry Mango, Red Chilli, Mustard Seeds, Iodised Salt, Pomegranate Seeds, Cassia, Turmeric, Black Pepper, Salt Black, Garlic, Cardamom Amomum, Clove, Dried Ginger",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Curry Powder",
@@ -881,7 +1015,10 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100004456-6_3-mdh-powder-curry.jpg"
    }
-  ]
+  ],
+  "details": {
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "T-Plus Tea Masala",
@@ -919,7 +1056,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019877-6_1-mdh-t-plus-masala-powder-for-tea-milk.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "T-Plus Masala powder provides a taste into tea or better fragrance. This is a Vegetarian product. To makes food tasty and delicious. MDH T-Plus masala powder is made from grind all spices and makes into powdered form.",
+   "ingredients": "Fennel Seeds, Cardamom Amomum, Dried Ginger, Cassia, Black Pepper, Green Cardamom, Star Anise, Cloves",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "fssaiLicense": "10018011005811",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jal Jeera Masala",
@@ -954,7 +1098,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/268024-5_1-mdh-masala-jal-jeera.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with the versatile MDH Jaljeera Masala. This iconic spice blend is crafted to perfection, combining a medley of spices that awaken your taste buds and leave you craving for more. Experience a burst of tangy and refreshing flavours, as this spice blend can be used to prepare a variety of delectable dishes, from Pani Puri and Gol-Gupa to Dahi Bhalla, papri, chat, and papad. Infused with the highest quality ingredients, including iodised salt, black salt, dried mango powder, cumin, seedless tamarind, citric acid, mint, kachri, black pepper, dried ginger, red chillies, cloves, and asafoetida, MDH Jaljeera Masala is your secret weapon for adding a unique and mouthwatering twist to your culinary creations. Beat the heat with the ultimate summer cooler; simply mix it with cold water for a delicious and rejuvenating drink that not only cools you down but also tantalizes your palate with its zesty blend of spices. Trust the heritage of MDH spices to bring you a product that not only meets but exceeds your expectations, making every meal a delightful experience.",
+   "ingredients": "Iodised Salt, Black Salt, Unripe Dry Mango, Cumin, Seedless Tamarind, Citric Acid, Mint Leaves, Kachri, Dried Ginger, Yellow Chillies, Black Pepper, Turmeric, Cloves, Asafoetida",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture\nKeep the container tightly sealed after each use to preserve the freshness and aroma",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Deggi Mirch",
@@ -970,7 +1121,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/260799_3-mdh-powder-deggi-mirch.jpg"
-    }
+    },
+    "barcode": "8902167000034"
    },
    {
     "title": "500g",
@@ -1001,7 +1153,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/410482_2-mdh-deggi-mirch-pwdr.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH deggi mirch is made from the finest chilies. It not only imparts a spicy hot flavor to cooked dishes, but also lends a wonderful rich red color. This spice is also replete with nutrients which are good for your health. Coming from the house of MDH, which is known for its vast offering of spices, this masala is a must for Indian kitchens.",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kashmiri Mirch",
@@ -1017,7 +1174,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/269268_4-mdh-powder-kashmiri-chilli.jpg"
-    }
+    },
+    "barcode": "8902167000058"
    },
    {
     "title": "50g",
@@ -1048,7 +1206,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019856_2-mdh-powder-chilly-kashmiri.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "MDH Powder - Kashmiri chilli imparts a rich flavour and colour to dishes, mainly tandoori and other marinades. It has a vibrant red colour and a slightly sweet flavour. When used in curry, it imparts a bright red colour, making the food more attractive and appealing. Exotic Kashmiri Mirch is a special blend of medium hot quality Red Pepper that is used for Tandoori (Clay oven) preparations. When used in curry it imparts bright red colour making food more appealing and palatable. It is added to marinade for marinating and to frying onions along with chopped tomatoes while preparing curries.",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lal Mirch Powder",
@@ -1064,7 +1227,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100004593_8-mdh-powder-lal-mirch.jpg"
-    }
+    },
+    "barcode": "8902167004384"
    },
    {
     "title": "200g",
@@ -1107,7 +1271,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019868_9-mdh-powder-lal-mirch.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with the vibrant and pungent MDH Lal Mirch Powder. Sourced from the finest red chillies, this spice is a true flavour powerhouse, adding a bold and fiery kick to every dish. Sealed for freshness, the MDH Lal Mirch Powder retains its potency until the last pinch, ensuring your meals are consistently packed with intense heat and rich, vibrant flavour. Versatile and vegetarian, this chilli powder is a culinary essential, perfect for enhancing the colour and taste of a wide range of Indian cuisines. Experience the perfect balance of heat and flavour in every sprinkle, and let your taste buds be captivated by the exceptional quality of MDH Lal Mirch Powder.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Turmeric (Haldi) Powder",
@@ -1123,7 +1293,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/268013_2-mdh-powder-haldi.jpg"
-    }
+    },
+    "barcode": "8902167000706"
    },
    {
     "title": "200g",
@@ -1166,7 +1337,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019880_4-mdh-powder-haldi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic flavour and vibrant hue of MDH Haldi Powder, a premium turmeric spice that is a staple in Indian cuisine. Sourced from the finest farmlands and meticulously processed, this 100-gram pack of haldi powder is a true delight for the senses. Rich in antioxidants, MDH Haldi Powder enhances the taste and appearance of a wide range of dishes, from traditional curries and stews to innovative new recipes. With its convenient online availability, you can easily stock up on this versatile ingredient and enjoy the unmatched quality and freshness of MDH Haldi Powder anytime, right at your doorstep. Whether you're cooking up a classic Indian feast or experimenting with new flavours, this fragrant turmeric powder is the perfect addition to your culinary arsenal.",
+   "ingredients": "This 100 gram pack of haldi contains a fine powder made from the choicest spices available in the country. The turmeric has been gathered from the best farmlands before being boiled and dried for further processing. At one of the many MDH state of the art centres, the haldi is then churned into a powder that is filled with aroma and flavour.",
+   "usageInstructions": "Haldi is recognised in Ayurveda as a condiment that fixes many ailments. It can also be used while cooking the seasoning for dal, vegetables and curries.",
+   "storageInstructions": "Keep in a clean, cool, dry place\nTransfer contents to an airtight container after opening\nUse a dry spoon when taking from the packet",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dhania Powder",
@@ -1213,7 +1392,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071976_4-mdh-powder-dhaniya.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with MDH Dhaniya Powder, a premium-quality coriander powder crafted from the freshest crops. Sourced directly from farms, this powder boasts an authentic, zesty flavour that will add an appetising appeal to your dishes. Processed under meticulous hygienic conditions, MDH Dhaniya Powder is not only a staple ingredient in Indian cooking, but also offers a wealth of health benefits. Rich in potassium, vitamins A, K and C, folic acid and magnesium, this powder can aid digestion and even help clear the body of heavy metals. Versatile in its applications, it can be used as a garnish, condiment, or seasoning in a variety of savoury and sweet preparations, from pickles and curries to baked goods and beverages. For maximum freshness, store this powder in an airtight container. Elevate your culinary creations with the authentic flavour and nutritional prowess of MDH Dhaniya Powder.",
+   "ingredients": "MDH Dhaniya powder is processed under hygienic conditions which mean that you are assured to get only the best quality products. For lasting effect, it is best to keep it in an air-tight container. Both fresh coriander and dhaniya powder helps in the process of digestion. It is rich in potassium, Vitamins like A, K and C, folic acid and magnesium. It helps to get rid of the ugly pimples, and is a much-used element for treating cold and flu.",
+   "usageInstructions": "Add Dhaniya powder to Indian dishes for a appealing taste.",
+   "storageInstructions": "Store in a cool, dry place\nKeep away from direct sunlight",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jeera Powder",
@@ -1248,7 +1435,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071977-5_9-mdh-powder-jeera.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your Indian culinary experience with MDH Jeera Powder, a fine-graded, high-quality colour enhancer that delivers a delightful aroma. Boasting a robust and authentic cumin flavour, this versatile spice blend can elevate a variety of dishes, from curries to rice dishes and beyond. Rich in flavour and aroma, the powder is made from carefully selected cumin, ensuring a delicious and satisfying taste that is suitable for vegetarians. Unlock the true essence of Indian cuisine with this culinary essential.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g"
+   },
+   "storageInstructions": "Store in a cool, dry place\nKeep away from direct sunlight and moisture",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Amchoor Powder",
@@ -1264,7 +1461,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/268022_3-mdh-powder-amchoor.jpg"
-    }
+    },
+    "barcode": "8902167000300"
    }
   ],
   "images": [
@@ -1283,7 +1481,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/268022-6_2-mdh-powder-amchoor.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with the irresistible sour twist of MDH Amchoor Powder. Crafted from the finest sun-dried green mangoes, this premium spice powder adds a tangy flavour that will elevate curries, chutneys, and snacks alike. With its rich, savoury aroma and distinctive taste, this versatile ingredient is a must-have for any discerning home cook. Sourced from the best mango suppliers and expertly processed in MDH's facilities, this powder delivers an authentic, traditional Indian flavour that has been perfected over generations. Bring the delicious scent of home-cooked food to your kitchen and enjoy the culinary versatility of this aromatic spice.",
+   "ingredients": "Amchoor powder is made from mangoes. Raw mangoes from the best sources are brought together in an MDH plant. Here, the best ones are selected before they are processed. Thereafter the powder is made from the dried mango pieces and packaged by skilled hands.",
+   "usageInstructions": "Amchoor powder can be put to many uses. It can be used in the filling of various traditional Indian snacks and savouries. It can also be added to curries to give a tangy flavour. Also, it is used liberally in Indian street food.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight\nKeep the container tightly sealed after opening",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Black Pepper Powder",
@@ -1312,7 +1518,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019863-3_1-mdh-powder-pepper.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Fine Ground Pepper",
+   "ingredients": "Pepper Seeds",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "White Pepper Powder",
@@ -1350,7 +1562,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019881-6_1-mdh-white-pepper-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "White pepper is used mostly as a direct spice. Black pepper is used in a wide variety of foods, particularly meat products, while white pepper is used in light-coloured sauces, mayonnaise, and cream soups when dark particles are undesirable.",
+   "ingredients": "White Pepper",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "fssaiLicense": "10018011005811",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Super Hing",
@@ -1388,7 +1607,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019861-6_1-mdh-hing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with MDH Super Hing, a potent asafoetida that infuses your dishes with an authentic, savoury essence of Indian cuisine. Just a pinch of this premium hing powder transforms lentils, curries, and pickles, unlocking a depth of flavour that is both pungent and pleasing. Crafted from the finest quality ingredients, MDH Compounded Hing Powder is a staple in Indian kitchens, known for its unique taste and aromatic qualities. Beyond its remarkable flavour-enhancing properties, this versatile spice also offers potential health benefits, aiding in respiratory issues and digestive problems such as intestinal gas, upset stomach, and irritable bowel syndrome. Embrace the remarkable flavour and aroma of MDH Super Hing, and let it become your kitchen's secret weapon for creating truly authentic and delectable Indian-inspired meals.",
+   "ingredients": "Wheat Flour, Hing, Gum Arabic",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Mahashian Di Hatti Pvt. Ltd",
+   "fssaiLicense": "10018011005811",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kasoori Methi",
@@ -1447,7 +1674,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019865_1-mdh-peacock-kasoori-methi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with MDH Peacock - Kasoori Methi, a remarkable dried fenugreek leaf that adds an exotic flavour to your dishes. Renowned for its wonderful taste, longer shelf life, and purity, this hygienic and flavourful ingredient is a staple in Indian cooking. Enhance the flavour of your meals with the aromatic dried leaves, which are suitable for vegetarians. Enjoy the convenience of this versatile spice that will transform your dishes into culinary masterpieces.",
+   "ingredients": "Dried Fenugreek Leaves.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calorific Value": "49 Kcal",
+    "Protein": "4.4 g",
+    "Carbohydrates": "6.0 g",
+    "Sugar": "NIL",
+    "Fat": "0.9 g"
+   },
+   "storageInstructions": "Store in a clean, cool and dry place",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kesar",
@@ -1476,7 +1718,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40117521-3_8-mdh-saffronkesar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ever wondered how biriyani gets its fine yellow colour or the kulfi soaked in mouth-watering fluid gets its smooth yellowy tinge? This is all because of saffron or kesar, an expensive spice derived from the flower of Saffron Crocus.",
+   "manufacturerName": "MAHASHIAN DI HATTI PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Soyatein Warian",
@@ -1514,7 +1761,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019874-6_1-mdh-soyatein-protein-rich-warian.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This is a Vegetarian product. Rich in spices. It makes food tasty and delicious. MDH Soyatein Chunks provide vitamins, minerals, and fibres for growing children.",
+   "ingredients": "100% Soya (Defatted)",
+   "storageInstructions": "Soak warian in warm water for 10-15 min.\nsqueeze out the water soak and squeeze again.\nIt will become extra soft.\nNow use warian either by cooking itself or in combination with any of your favorite dishes, be it vegetarian or Non-vegetarian. Serve hot.\nKeep on a cool,dry place,",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "fssaiLicense": "12116841000022",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Soyatein Granules",
@@ -1537,6 +1792,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019873_3-mdh-soya-granules.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Soya Chunks is our special product that is prepared using defatted soybean flour which is rich in proteins. These are highly recommended for growing children, elderly persons, expectant mothers, diabetic and cardiac patients. Rich in proteins and natural minerals, it gives a balanced and nutritious diet.",
+   "ingredients": "100% Soya (Defatted)",
+   "storageInstructions": "Keep on a cool,dry place,",
+   "manufacturerName": "Mahashian Di Hatti Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  }
 ]

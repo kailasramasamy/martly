@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/124656_6-pillsbury-atta-chakki-fresh.jpg"
-    }
+    },
+    "barcode": "8906000210314"
    },
    {
     "title": "1kg",
@@ -68,7 +69,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/124656-8_3-pillsbury-atta-chakki-fresh.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Pillsbury Chakki Fresh Atta is made of locally sourced high-quality whole wheat. It makes your rotis healthy and soft for up to 6 hours. The whole wheat goodness lies in the fact that even the husk of the grain is ground, ensuring each bite is rich in dietary fibre, nutrition, and texture, leading to improved digestion. Pillsbury uses a special traditional chakki grinding method that locks in the nutrients in the flour, ensuring easy digestion for you and your family.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "364 kcal",
+    "Protein (g)": "11.3 g",
+    "Total Carbohydrate (g)": "74.5 g",
+    "Total Sugars (g)": "4.6 g",
+    "Added Sugar (g)": "0 g",
+    "Dietary fiber (g)": "10 g",
+    "Total fat (g)": "2.2 g",
+    "Saturated fat (g)": "0.5 g",
+    "Trans fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "1.7 mg"
+   },
+   "manufacturerName": "Sunil Agro Foods Ltd",
+   "fssaiLicense": "10013022001874",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sharbati Gold Atta",
@@ -139,7 +161,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/290131-8_3-pillsbury-atta-gold.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This Pillsbury Atta comes from the King of Wheat, Sharbati, and is sourced from the pure and golden fields in Madhya Pradesh. Because the Pillsbury Sharbati Atta dough absorbs more water, the rotis have a sweeter flavour, softer texture, and up to 6-hour freshness. Local sourcing ensures only fresh produce is used for the atta. With 100% wheat and 0% maida, your rotis will be healthy so that you can tear a bite with just 3 fingers. The whole wheat goodness is in the fact that even the husk of the grain is ground along, ensuring each bite is rich in dietary fibre, nutrition, and texture, leading to improved digestion. |",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "368 kcal",
+    "Protein (g)": "10.6 g",
+    "Total Carbohydrate (g)": "76.3 g",
+    "Total Sugars (g)": "5.4 g",
+    "Added Sugar (g)": "0.0 g",
+    "Dietary fiber (g)": "10.7 g",
+    "Total fat (g)": "2.3 g",
+    "Saturated fat (g)": "0.5 g",
+    "Trans fat (g)": "0.0 g",
+    "Cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "1.7 mg"
+   },
+   "manufacturerName": "Sunil Agro Foods Ltd",
+   "fssaiLicense": "10013022001874",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Multigrain Atta",
@@ -192,7 +235,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/255505-8_4-pillsbury-atta-multigrain.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Multigrain Atta combines seven natural wholesome grainsÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âwheat, soy, maize, barley, ragi, oats, and chana dalÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âto create a nutritious blend rich in dietary fibre and flavour. With 100% wheat content and zero maida, each bite is packed with essential proteins, vitamins, minerals, and fibre, promoting a fit and active lifestyle. Locally sourced grains ensure freshness and quality, enhancing the nutritional value of every meal prepared with Pillsbury Multigrain Atta. Whether used for chapatis, parathas, or other Indian breads, this versatile flour supports a balanced diet and is ideal for those seeking wholesome goodness without compromising on taste or health benefits.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "364 kcal",
+    "Protein (g)": "12.3 g",
+    "Total carbohydrate (g)": "73.5 g",
+    "Total Sugars (g)": "4.4 g",
+    "Added Sugar (g)": "0 g",
+    "Dietary fiber (g)": "12.2 g",
+    "Total fat (g)": "2.3 g",
+    "Saturated fat (g)": "0.5 g",
+    "Trans fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "2.2 mg"
+   },
+   "manufacturerName": "Sunil Agro Foods Ltd",
+   "fssaiLicense": "10013022001874",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aloo Paratha",
@@ -208,7 +272,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40270928_1-pillsbury-aloo-paratha-healthy-nutritious-no-added-preservatives-flavours.jpg"
-    }
+    },
+    "barcode": "8904150503775"
    }
   ],
   "images": [
@@ -230,7 +295,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270928-6_1-pillsbury-aloo-paratha-healthy-nutritious-no-added-preservatives-flavours.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury brings to you Aloo Paratha. It is a unique and flavourful flatbread. Paratha is fried in a Tawa using butter or cooking oil. It is truly a treat for everyone. This healthy layered flatbread has a refreshing taste. It contains potatoes and whole wheat flour. It is healthy and nutritious. These are pre-cooked paratha that you just need to reheat. It is easy and without any hassle. Now enjoy the rotis at home within minutes. It is made with natural ingredients without any preservatives and trans fat.",
+   "ingredients": "Dough (Wheat Flour), Potato (24%), Water, Onion, Refined Wheat Flour, Refined Corn Oil, Masala Filling, Green Chili, Potato Flakes, Chat Masala, Coriander Leaves, Iodized Salt, Sugar, Coriander Seed, Cumin Seed.",
+   "usageInstructions": "Remove frozen paratha.\nCook on medium heat for about 3-5 minutes.\nRemove from pan and serve hot.",
+   "manufacturerName": "Global Gourmet Pvt Ltd -Unit",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013021000868"
+  }
  },
  {
   "title": "Laccha Paratha",
@@ -246,7 +319,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40270926_1-pillsbury-laccha-paratha-soft-crispy-no-added-preservatives-flavours.jpg"
-    }
+    },
+    "barcode": "8904150503782"
    }
   ],
   "images": [
@@ -268,7 +342,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270926-6_1-pillsbury-laccha-paratha-soft-crispy-no-added-preservatives-flavours.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury brings to you Laccha Paratha. It is a unique and flavourful flatbread. Paratha is fried in a Tawa using butter or cooking oil. It is truly a treat for everyone. This healthy layered flatbread has a refreshing taste and is crispy and flaky. It contains whole wheat flour. It is healthy and nutritious. These are pre-cooked paratha that you just need to reheat it. It is easy and without any hassle. Now enjoy the rotis at home within minutes. It is made with natural ingredients without any preservatives and trans fat.",
+   "ingredients": "Wheat Flour, Refined Wheat Flour, Water, Refined Corn Oil, Milk Solids, Iodized Salt, Sugar, Baking Powder.",
+   "usageInstructions": "Do not thaw.\nCook on a medium hot frying pan or tawa till crisp.\nMay use ghee or oil as per taste.\nServe hot with a dollop of butter.",
+   "manufacturerName": "Global Gourmet Pvt Ltd -Unit",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013021000868"
+  }
  },
  {
   "title": "Malabar Paratha",
@@ -284,7 +366,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40270925_1-pillsbury-malabar-paratha-crispy-flaky-no-added-preservatives-flavours.jpg"
-    }
+    },
+    "barcode": "8904150503737"
    }
   ],
   "images": [
@@ -306,7 +389,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270925-6_1-pillsbury-malabar-paratha-crispy-flaky-no-added-preservatives-flavours.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Malabar Paratha is a flavoured flatbread. Pillsbury brings to you Malabar Paratha. It is a unique and flavourful flatbread. Paratha is fried in a tawa using butter or cooking oil. It is truly a treat for everyone. This healthy layered flatbread has a refreshing taste and is crispy and flaky. It contains whole wheat flour. It is healthy and nutritious. These are pre-cooked paratha that you just need to reheat. It is easy and without any hassle. Now enjoy the rotis at home within minutes. It is made with natural ingredients without any preservatives and trans fat.",
+   "ingredients": "Refined Wheat Flour, Milk Solids, Water, Refined Corn Oil, Sugar, Iodized Salt, Baking Powder.",
+   "usageInstructions": "Remove frozen paratha.\nCook on medium heat for about 3-5 minutes.\nRemove from pan and serve hot.",
+   "manufacturerName": "Global Gourmet Pvt Ltd -Unit",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013021000868"
+  }
  },
  {
   "title": "Cheese Corn Crunchies",
@@ -322,7 +413,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40270921_1-pillsbury-cheese-corn-crunchies-large-crunchy-cheesy-delight.jpg"
-    }
+    },
+    "barcode": "8904150503706"
    },
    {
     "title": "200g",
@@ -356,7 +448,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270920_1-pillsbury-cheese-corn-crunchies-small-crunchy-cheesy-delight.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury brings to you Cheese Corn Crunchies Large ready to fry poppers. The classic potato corn poppers are filled with cheese. They are seasoned to perfection with unique flavours. It has an extra crunchy and unique taste. A triple cheese delight, it contains cheese. It is a rich source of protein and fibre. These poppers are quick and convenient. It is easy to prepare a meal or snack that is loved by kids and adults alike.",
+   "ingredients": "Potato, Processed Cheese, Breadcrumb, Refined Palmolein, Sweet Corn, Green Capsicum, Water, Batter Mix, Rice Flakes Powder, Corn Flour, Coriander Leaves, Green Chilli, Potato Flakes, Salt, Chilli Flakes, Oregano.",
+   "usageInstructions": "Remove frozen snacks from the bag.\nPreheat the oil to 175°C.\nFry the snacks and serve hot.\nOr Preheat the oven to 220°C.\nHeat thoroughly until brown and serve hot.",
+   "manufacturerName": "Global Gourmet Pvt Ltd -Unit",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013021000868"
+  }
  },
  {
   "title": "Veggie Cheese Fingers",
@@ -406,7 +506,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270919_1-pillsbury-veggie-cheese-fingers-large-crispy-crunchy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Veggies Cheese Fingers small is a ready-to-fry dish. It has a nice crunch with Indian Seasoning. Bite into the crispy, crunchy taste within minutes. These veggie fingers are a rich source of proteins. They are easy to prepare and cook. It is made from premium veggies and cheese, these breaded veggie fingers are ready to fry.",
+   "ingredients": "Processed Cheese, Carrot, Onion, Water, Potato, Green Peas, Refined Palmolein Oil, Batter Mix, Breadcrumbs, Green Capsicum, Potato Flakes, Corn Flour, Jalapeno, Iodized Salt, Green Chili, Black Pepper, Chili Flakes, Oregano.",
+   "usageInstructions": "Heat edible oil to 180 C.\nImmerse the required quantity in hot oil. \nDeep fry the fingers in the hot oil for one and half minutes.\nDrain Excess oil with absorbent paper and serve hot.",
+   "manufacturerName": "Global Gourmet Pvt Ltd -Unit",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013021000868"
+  }
  },
  {
   "title": "Choco-Molten Lava Cake",
@@ -422,7 +530,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40270922_1-pillsbury-choco-molten-lava-cake-single-rich-velvety.jpg"
-    }
+    },
+    "barcode": "8904150503683"
    }
   ],
   "images": [
@@ -447,7 +556,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270922-7_1-pillsbury-choco-molten-lava-cake-single-rich-velvety.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury brings to you Choco Lava Cake a popular dessert. This dessert has a liquid chocolate centre. It is an excellent dessert that has a delicate chocolate cake filled with rich molten chocolate. It is wonderfully rich and chocolatey. Indulge your senses with this velvety cake. It contains minerals like selenium, potassium, and zinc that are good for our health. We bring to you these exotic desserts at home in minutes. Just defrost, heat and serve it.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Bakery Shortening [Edible Vegetable Oil (Palm) and Edible Vegetable Oil (Sesame)], Cocoa Powder (5%), Milk Solids, Iodized Salt, Nature Identical Flavouring Substance - Vanilla, Nature Identical Substance Chocolate and Stabilizer (INS 415).",
+   "usageInstructions": "Delight your loved ones and celebrate those special moments with the perfect chocolate treat.\nJust heat and serve.",
+   "manufacturerName": "General Mills India Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000148"
+  }
  },
  {
   "title": "Cookie Cake Choco Trio",
@@ -498,7 +615,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40125239_2-pillsbury-pillsbury-cookie-cake-choco.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Cookie Cake - An unexpected treat that combines the playfulness of a cookie and the elegance of a cake. Experience the unique combination of chunky choco chips hidden inside moist rich soft cake with choco drizzle on top. Available in Vanilla Flavour also. Cookies are so last season. The new delicious snack in town is Pillsbury Cookie Cake! Leaving conventional Cookies far behind, this on-the-go snack combines the soft indulgence of a cake with delightful choco chips. These cookies double up as yummy cakes and are a unique snack with delicious choco-chips hidden in moist, rich and soft chocolate cake with choco drizzle.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Humectants (Ins422, Ins420), Glucose Syrup, Edible Vegetable Oil(Palm), Dark Compound Choco Chips (5.49)(Sugar, Hydrogenated Vegetable Fat (Palm), Cocoa Solids, Dertrose, Emulsifier (Ins491, Ins322), Dark Compound Choco Drizzle (4.8%) (Sugar, Hydrogenated Vegetable Fat\n(Palm), Cocoa Solids, Fructose, Emulsier (Ins322)), Water, Invert Sugar, Ccoa Solids (2.2%), Modified Starch (Insi442), Baking Powder, Emulsifier (Ins471, Ins477, Ins470), Lodized Salt, Food Colour (Insi50C), Leavening Agents (Ins500(Ii)), Ins341(I)), Stabilizers(Ins 415, Ins412), Inmprover (Ins 11100)",
+   "usageInstructions": "Ready to eat Cookie Cake. Open the wrapper and just enjoy the indulgent experience of it.",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cookie Cake Tutti Frutti",
@@ -536,7 +660,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120847-6_4-pillsbury-pillsbury-cookie-cake-tutti-frutti.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cookies are so last season. The new delicious snack in town is Pillsbury Cookie Cake!!\nLeaving conventional cookies far behind, this on-the-go snack combines the cake with fruit bits. These cookies double up as a yummy cake and gives you an exquisite combination of yummy fruity bits hidden in moist, rich and soft cake with vanilla drizzle. All of this, along with the rich taste of sweet vanilla makes it a great surprise for kids at snack time or as a treat.",
+   "ingredients": "Wheat Flour, Sugar, Edible Vegetable Oil (Sunflower, Palm), Glucose Syrup, Fruit Bits, Sugar, Cocoa Solids, Hydrogenated Vegetable Oil (Palm), Dextrose, Emulsifier (INS491, INS322), Artificial Flavoring substances (Chocolate)), Water, Vanilla Drizzle (5.2%) (Sugar, Edible Vegetable Fat (Palm), Dextrose, Emulsifier (INS 322)), Nature Identical Flavoring substance (Vanilla), Artificial Flavoring substance (Vanilla)), Glycerol, Cocoa Solids (3.9%), Starch, Fructose, Milk Solids (1.8%), Calcium Carbonate, Baking Powder, Iodized Salt, Leavening Agent (INS500 (i), INS341 (i)), Stabilizers (INS415, INS410), Vitamin D.",
+   "usageInstructions": "Ready to eat"
+  }
  },
  {
   "title": "Cookie Cake Vanilla",
@@ -553,7 +682,8 @@
     "estimated": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40093982_3-pillsbury-pillsbury-cookie-cake-vanilla.jpg"
-    }
+    },
+    "barcode": "8904150501757"
    }
   ],
   "images": [
@@ -578,7 +708,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40093982-7_3-pillsbury-pillsbury-cookie-cake-vanilla.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Cookie Cake - An unexpected treat that combines the playfulness of a cookie and the elegance of a cake. Experience the unique combination of chunky choco chips hidden inside moist rich soft cake with choco drizzle on top. Available in Vanilla Flavour also. Moist, rich, soft cake with mouth-watering vanilla flavour Sweet choco cravings with the creamy flavour of the vanilla cookie cake",
+   "ingredients": "Wheat Flour, Sugar, Glucose Syrup, Edible Vegetable Oil (Palm), Dark Compound Choco Chips(7.8%)(Sugar, Cocoa Solids, Hydrogenated Vegetable Oil(Palm), Dextrose, Emulsifier(Ins491, Ins322)), Water, Dark Compound Choco Drizzle(5.4%)(Sugar, Cocoa Solids, Hydrogenated Vegetable Fat(Palm), Emulsifier(Ins 322)), Glycerol, Dextrose, Starch, Milk Solids(2.9%), Baking Powder, Maltodextrin, Fructose, Calcium Carbonate, Emulsifiers(Ins471, Ins475, Ins433), Iodized Salt, Stabilizers(Ins415, Ins410), Leavening Agent(Ins341(I)), Food Colours (Ins102, Ins110), Vitamin D",
+   "usageInstructions": "Ready to eat Cookie Cake. Open the wrapper and just enjoy the indulgent experience of it.",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pastry Cake Choco",
@@ -619,7 +756,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120848-7_7-pillsbury-pillsbury-cake-pastry-choco.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Pastry Cake is a unique combination of soft chocolate cake and rich vanilla creme that is sure to delight your senses. It pairs well with tea or coffee and is also the perfect travel companion. It can easily be carried on-the-go, to be relished anytime as a light snack.",
+   "ingredients": "Cake (84%): (Whole Eggs, Wheat Flour, Sugar, Invert Syrup, Humectant (INS422), Edible Vegetable Oil (Palm, Sunflower), Cocoa Solids (2.5%), Starch, Emulsifiers (INS471, INS477, INS470), Baking Powder, Colors (INS150c, INS129), Leavening Agents (INS341 (ii), INS500 (ii)), Modified Starch (INS1422), Iodized Salt, Acidity Regulators (INS260, INS262 (i)), Preservatives (INS282, INS200), Stabilizers (INS410, INS415)) Filling (16%): (Glucose Syrup, Edible Vegetable Fat (Margarine, Hydrogenated Oils), Sugar, Dextrose, Humectant (INS422), Milk Solids, Emulsifiers (INS471, INS477, INS470), Preservative (INS282), Iodized Salt).",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pastry Cake Strawberry",
@@ -657,7 +799,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40125241-6_7-pillsbury-pillsbury-pastry-cake-strawberry.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Strawberry Pastry Cake is a yummy combination of soft cake and rich strawberry cream, which is sure to delight your tastebuds. These pastry cakes are loved by kids of all ages and can be packed for school and pairs amazingly well with milk, therefore, making it a deliciously light snack that can be relished mid-day or in the evening.",
+   "ingredients": "Cake (84%): (Whole eggs, Wheat flour, Sugar, Invert Syrup, Humectant (INS422), Edible vegetable oil (palm, sunflower), Cocoa solids (2.5%), Starch, Emulsifiers (INS471, INS477, INS470), Baking Powder, Colours (INS150c, INS129), Leavening agents (INS341(ii), INS500(ii)), Modified starch (INS1422), Iodised salt, Acidity Regulators (INS260, INS262(i)), Preservatives (INS282, INS200), Stabilizers (INS410, INS415))\nFilling (16%): (Glucose Syrup, Edible Vegetable fat (Margarine, Hydrogenated Oils), Sugar, Dextrose, Humectant (INS422), Milk solids, Emulsifiers (INS471, INS477, INS470), Preservative (INS282), Iodised salt)",
+   "manufacturerName": "Dream Bake Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milk Choco Spread",
@@ -701,7 +849,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40059138-8_2-pillsbury-milk-choco-spread.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Add a chocolatey surprise to your breads and rotis with the scrumptious Pillsbury choco spread.",
+   "ingredients": "Sugar, Refined Palmolein, Milk Solids (19.5%), Cocoa Powder (7.8%), Emulsifier [INS 322(i)], Hydrogenated Vegetable Fat (Palm), Artificial Flavouring Substance - Chocolate, Nature identical Flavouring Substances - Vanilla",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "13g",
+    "Energy (kcal)": "534 kcal",
+    "Protein (g)": "8.3 g",
+    "Carbohydrate (g)": "59 g",
+    "Total sugars (g)": "45 g",
+    "Added sugars (g)": "44.4 g",
+    "Total Fat (g)": "29 g",
+    "Saturated fat (g)": "27.3 g",
+    "Trans fat (g)": "0.1 g",
+    "Cholesterol (mg)": "5 mg",
+    "Sodium (mg)": "110 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place, away from direct sunlight",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chocolate Pancake Mix",
@@ -763,7 +932,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276539-8_1-pillsbury-pancake-mix-chocolate-flavour-makes-soft-fluffy-pancakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable flavour of Pillsbury's Chocolate Pancake Mix, the ultimate solution for effortless and delicious pancake preparation. Crafted to perfection, this mix simplifies your morning routine, allowing you to whip up fluffy, flavourful pancakes with ease. Infused with the rich taste of chocolate, these pancakes are sure to become a family favourite, satisfying the cravings of both kids and adults alike. Simply add milk to the mix, stir until smooth, and pour the batter onto a hot griddle for pancakes that are irresistibly tasty, whether enjoyed for breakfast, brunch, or even dessert.\nElevate your pancake experience with the addition of toppings like bananas, berries, syrups, whipped cream, or chocolate chips, creating a truly indulgent and satisfying treat. Pillsbury's Chocolate Pancake Mix is the perfect way to start your day with a touch of decadence.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Cocoa Powder (3.7%), Baking Powder [INS 500(ii), INS 541(i)], Artificial Flavouring Substance (Vanilla, Chocolate), Milk Solids, lodized Salt, Raising Agent [INS 500(ii)], Colour (INS 150d)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "24 g",
+    "Energy (kcal)": "372 kcal",
+    "Protein (g)": "8.1 g",
+    "Carbohydrate (g)": "74.5 g",
+    "Total sugars (g)": "27.9 g",
+    "Added sugars(g)": "26.4 g",
+    "Total fat (g)": "5.3 g",
+    "Saturated fat (g)": "2.5 g",
+    "Trans fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "677 mg"
+   },
+   "storageInstructions": "*Store in an air tight container to maintain freshness",
+   "manufacturerName": "Global Gourmet Pvt Ltd -Unit-1 296",
+   "fssaiLicense": "10012022000148",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Butterscotch Pancake Mix",
@@ -825,7 +1016,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276542-8_1-pillsbury-pancake-mix-butterscotch-flavour-makes-soft-fluffy-pancakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Butterscotch Pancake Mix is super simple and makes your morning routine seamless. The Pillsbury Butterscotch Pancake Mix is the easiest way to whip up fluffy, soft and ultra-delicious breakfast goodies at home. These butterscotch pancakes are the ideal treat for mornings, evenings or even as a snack! Pair these pancakes with maple syrup, chopped-up fruits and berries, some cream or even honey to enhance the experience and enjoy truly delectable tastes. Explore a wide range of ready-to-cook pancake mixes, cake mixes and more from Pillsbury only on Big Basket.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Butterscotch Bits (7.0%)[Sugar, Edible Vegetable Fat (Hydrogenated), Iodized Salt and Artificial Flavouring Substances (Butterscotch)], Edible Vegetable Oil (Palm), Baking Powder [INS500(ii), INS541(i)], Iodized Salt, Artificial Flavouring Substances (Caramel, Butterscotch) and Raising Agent [INS500(ii)].",
+   "nutritionalInfo": {
+    "Energy (kcal)": "381",
+    "Protein (g)": "8.2",
+    "Carbohydrate (g)": "73.2",
+    "Total sugars (g)": "20.6",
+    "Added sugars (g)": "19.7",
+    "Total Fat (g)": "5.8",
+    "Saturated fat (g)": "2.7",
+    "Trans fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "728"
+   },
+   "usageInstructions": "Method of Preparation:\nMix all the ingredients together until uniformly blended.\nHeat pan over medium flame and lightly grease it with oil.\nPour approx 40-45 ml (1/4th cup) of batter.\nCook the pancake for 1 minute until bubbles break on top and edges begin to dry.\nFlip & cook the other side for 1 minute.\nServe hot with any topping of your choice like honey, chocolate sauce, fruits, etc!",
+   "manufacturerName": "Global Gourmet Pvt Ltd -Unit-1 296",
+   "fssaiLicense": "10012022000148",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Pancake Mix",
@@ -878,7 +1089,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276545_2-pillsbury-pancake-mix-classic-flavour-makes-soft-fluffy-pancakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Classic Pancake Mix is the best way to enjoy a wholesome breakfast at home.\nThe traditional American pleasure for the entire family at home is now possible with the Pillsbury Classic Pancake Mix. You get incredibly soft, fluffy, and full pancakes in their traditional and original flavour with this mix. These pancakes include a variety of topping options, including chocolate syrup, honey, maple syrup, some cream, fruits, berries, and even some butter. With pancakes for breakfast, you can never go wrong! Now select your box!\nExplore a wide range of ready-to-cook pancake mixes, cake mixes and more from Pillsbury only on Big Basket.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Rice Flour, Edible Vegetable Oil (Palm), Baking Powder [INS 500(ii), INS 541(i)], Dextrose, Iodized Salt, Raising Agents [INS 341(i), INS 500(ii)], Milk solids and Anticaking agent [INS 170(i)).",
+   "nutritionalInfo": {
+    "Energy (kcal)": "370",
+    "Protein (g)": "8.7",
+    "Carbohydrate (g)": "71.6",
+    "Total sugars (g)": "15.5",
+    "Added sugars (g)": "12",
+    "Total fat (g)": "5.1",
+    "Saturated fat (g)": "2.3",
+    "Trans fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "781"
+   },
+   "usageInstructions": "Method of Preparation:\nMix all the ingredients together until uniformly blended.\nHeat pan over medium flame and lightly grease it with oil.\nPour approx 40-45 ml (1/4th cup) of batter.\nCook the pancake for 1 minute until bubbles break on top and edges begin to dry.\nFlip & cook the other side for 1 minute.\nServe hot with any topping of your choice like honey, chocolate sauce, fruits, etc!",
+   "manufacturerName": "Global Gourmet Pvt Ltd -Unit-1 296",
+   "fssaiLicense": "10012022000148",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Chips Pancake Mix",
@@ -931,7 +1162,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40219142-8_1-pillsbury-pancake-mix-choco-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A pancake mix, that is extremely convenient and easy to prepare and can be had as a snack or a dessert any time of the day. A sure-shot favourite among all age groups including adults and kids as well. An eggless mixture that contains no artificial colour or preservatives and is extremely convenient.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Dark Compound Choco Chips (10%) (Sugar, Hydrogenated Vegetable Oil (Palm), Cocoa, Emulsifier (INS491, INS322), Dextrose, Natural Vanilla Flavour), Edible Vegetable Oil (Palm), Soy Flour, Cocoa Powder (4%), Baking Powder, Dextrose, Iodized Salt, Raising Agent (INS341(I), INS500(Ii)), Milk Solids, Anticaking Agent (INS170(I)), Flavours (Nature Identical Chocolate, Artificial Vanilla)",
+   "usageInstructions": "Step 1- Mix pancake mix and water together until uniformly blended; brush the pan with oil and heat on medium flame.\nStep 2 - Pour approximately 45ml(1/4th cup) of batter into a hot pan.\nStep 3 - Flip only after bubbles break on top and edges begin to dry within 1 minute and cook the other side for 1 minute.",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000148"
+  }
  },
  {
   "title": "Funfetti Pancake Mix",
@@ -984,7 +1223,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40219144-8_2-pillsbury-pancake-mix-funfetti.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A pancake mix, that is extremely convenient and easy to prepare and can be had as a snack or a dessert any time of the day. A sure-shot favourite among all age groups including adults and kids as well. An eggless mixture that contains no artificial colour or preservatives and is extremely convenient.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Rice Flour, Edible Vegetable Oil (Palm), Soy Flour, Baking Powder, Dextrose, Iodized Salt, Raising Agent (INS341(I), INS500(Ii)), Milk Solids, Anticaking Agent (INS170(I))",
+   "usageInstructions": "Step 1- Mix pancake mix and water together until uniformly blended; brush the pan with oil and heat on medium flame.\nStep 2 - Pour approximately 45ml(1/4th cup) of batter into a hot pan.\nStep 3 - Flip only after bubbles break on top and edges begin to dry within 1 minute and cook the other side for 1 minute.",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000148"
+  }
  },
  {
   "title": "Eggless Chocolate Cooker Cake Mix",
@@ -1025,7 +1272,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100012255-7_1-pillsbury-cooker-cake-chocolate-eggless.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of Pillsbury's Choco Cake Mix, the ideal treat for chocolate lovers. This easy-to-bake cake mix promises a deliciously moist and luscious experience, perfect for any special occasion, whether it's a birthday celebration or a casual gathering with loved ones. Pillsbury's iconic Doughboy has been a beloved part of kitchens around the world, and this cake mix continues the brand's tradition of innovation and quality.\nWith just a few simple steps, you can create a decadent chocolate cake that will leave everyone craving more. Spread the love and treat your family and friends to a dessert experience they'll never forget. Pillsbury's Choco Cake Mix is the perfect way to make every moment sweeter.",
+   "ingredients": "Chocolate Flavoured Cooker Cake Mix (155 g), Sugar, Refined Wheat Flour (Maida), Cocoa Powder (5%), Milk Solids, Edible Vegetable Oil (Palm), Emulsifier & Stabilizer (INS1442, INS477, INS415, INS471), Baking Powder [Raising Agent INS 500(ii), Acidity Regulator INS 541(i)], Raising Agents (INS500(ii), INS341(i)), Iodized Salt, Flavour (Artificial vanilla, Nature identical chocolate), Sugar Sprinkle (Sugar Confectionary) (4 g), Sugar, Hydrogenated Vegetable Oil (Palm), Milk solids, Corn Starch, Colours (INS124, INS133, INS102), Preservative (INS202)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "26.5 g",
+    "Energy (kcal)": "382",
+    "Protein (g)": "8.6",
+    "Carbohydrate (g)": "75.0",
+    "Total sugars (g)": "43.0",
+    "Added sugars (g)": "42.4",
+    "Total fat (g)": "6.3",
+    "Saturated fat (g)": "3.7",
+    "Trans fat (g)": "0.1",
+    "Cholesterol (mg)": "10.0",
+    "Sodium (mg)": "776",
+    "RDA": "Based on adult's Recommended Dietary allowance of 2000kcal"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Eggless Vanilla Cooker Cake Mix",
@@ -1041,7 +1310,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100012256_3-pillsbury-cooker-cake-vanilla-eggless.jpg"
-    }
+    },
+    "barcode": "8906000210628"
    }
   ],
   "images": [
@@ -1066,7 +1336,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100012256-7_1-pillsbury-cooker-cake-vanilla-eggless.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bring the joy of baking into your home with Pillsbury's delectable cake mixes. Crafted with the iconic Doughboy's signature touch, these mixes make it easy for anyone to create mouthwatering cakes, whether you're using a traditional oven or a convenient pressure cooker. Whip up a batch in just 35-40 minutes without the need for an oven, and enjoy 6 delicious slices adorned with colourful sprinkles for a truly special touch.\nPillsbury has been a trusted name in kitchens around the world, delivering innovations that elevate the baking experience. Indulge in the rich flavours and irresistible textures that have made Pillsbury a family favourite for generations.",
+   "ingredients": "Vanilla Flavoured Cooker Cake Mix (155 g): Sugar, Refined Wheat flour (Maida), Milk Solids, Edible Vegetable Oil (Palm), Emulsifier and Stabilizer (INS1442, INS477, INS415, INS471), Baking Powder [Raising Agent INS 500(ii), Acidity Regulator INS 541(i)], Artificial Vanilla Flavour, Iodized Salt, Raising Agent (INS341(i)), Acidity regulator (INS330), Colour (INS110)., Sugar Sprinkle (Sugar Confectionery) (4 g): Sugar, Hydrogenated Vegetable Oil (Palm), Milk Solids, Corn Starch, Food Colours (INS124, INS133, INS102), Preservative (INS202).",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "26.5 g",
+    "Energy (kcal)": "380",
+    "Protein (g)": "8.1",
+    "Carbohydrate (g)": "78.1",
+    "Total sugars (g)": "44.4",
+    "Added sugars (g)": "43.7",
+    "Total fat (g)": "5",
+    "Saturated fat (g)": "2.9",
+    "Trans fat (g)": "0",
+    "Cholesterol (mg)": "7",
+    "Sodium (mg)": "410",
+    "RDA": "Based on adult's Recommended dietary allowance of 2000 kcal."
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rich Choco Oven Cake Mix",
@@ -1082,7 +1374,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/180983_6-pillsbury-rich-choco-oven-cake-mix-moist-supreme.jpg"
-    }
+    },
+    "barcode": "8906000212004"
    }
   ],
   "images": [
@@ -1110,7 +1403,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/180983-8_4-pillsbury-rich-choco-oven-cake-mix-moist-supreme.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the decadent and eggless Pillsbury Choco Cake Mix, a creamy, rich, and delectable cake that's perfect for any celebration or sweet craving. This high-quality cake mix from the trusted Pillsbury brand is rich in chocolate and contains all the ingredients you need to create an amazing cake at home. Enjoy the guilt-free pleasure of this nutritious and flavourful dessert, which has been a favourite with bakers for many years. With its moist, rich texture and irresistible chocolate taste, this Pillsbury Supreme Moist Rich Choco Cake Mix is sure to satisfy your sweet tooth and elevate any occasion.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Cocoa Powder (4.5%), Dextrose, Edible vegetable oil (Palm), Emulsifier & Stabilizer (INS1442, INS477, INS471, INS415), Baking Powder [Raising Agent INS 500(ii)], Acidity Regulator INS 541(i), Raising agent (INS500(ii)), Colours (INS150c, INS150d), Iodized Salt, Artificial Vanilla Flavor",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "35.63 g",
+    "Energy (kcal)": "373",
+    "Protein (g)": "5.3",
+    "Carbohydrate (g)": "81.2",
+    "Total sugars (g)": "47.8",
+    "Added sugars (g)": "47.5",
+    "Total fat (g)": "4.3",
+    "Saturated fat (g)": "2.6",
+    "Trans fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "733",
+    "RDA": "*Based on adult's Recommended Dietary allowance of 2000 kcal"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vanilla Oven Cake Mix",
@@ -1126,7 +1441,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40005394_6-pillsbury-vanilla-oven-cake-mix-moist-supreme.jpg"
-    }
+    },
+    "barcode": "8906000211007"
    }
   ],
   "images": [
@@ -1154,7 +1470,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005394-8_4-pillsbury-vanilla-oven-cake-mix-moist-supreme.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pillsbury Moist Supreme Vanilla Flavoured Cake Mix is an ideal sweet treat, a dessert that delights your taste buds. Making a delicious cake at home is now as easy as bringing you convenient cooking and refreshingly biting into your favourite cake.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Baking Powder [Raising Agent INS 500(ii)], Acidity Regulator INS 541(i), Dextrose, Edible Vegetable Oil (Palm), Artificial Vanilla Flavour, Emulsifier & Stabilizer (INS477, INS471, INS415), Starch, Iodized Salt, Raising agent (INS341(i))",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "37.5 g",
+    "Energy (kcal)": "367",
+    "Protein (g)": "4.7",
+    "Carbohydrate (g)": "83.5",
+    "Total sugars (g)": "49.5",
+    "Added sugars (g)": "48.1",
+    "Total fat (g)": "2.7",
+    "Saturated fat (g)": "1.6",
+    "Trans fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "470",
+    "RDA": "Based on adult's Recommended Dietary allowance of 2000kcal"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "General Mills India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vanilla Custard Powder",
@@ -1198,6 +1536,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/295743-8_2-pillsbury-custard-powder-vanilla-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable flavours of Pillsbury's premium quality custard powder. Crafted with the finest ingredients, this creamy and delicious treat is perfect for a variety of occasions, from quick and easy desserts to irresistible family gatherings. With its authentic vanilla flavour and fine texture, the Pillsbury Custard Powder is a hassle-free preparation that's simple enough for anyone to enjoy. Elevate your dessert game by adding your favourite fruits to enhance the taste and happiness. Whether you're looking to soothe your taste buds or impress your guests, this versatile custard powder is a must-have in your pantry. Discover the joy of homemade, delectable desserts with the help of Pillsbury.",
+   "ingredients": "Starch, Iodised Salt, Colours (INS 102, INS 110), Artificial Flavouring Substance - Vanilla.\nAllergen Information: Contains Milk And Sulphite Ingredients.",
+   "nutritionalInfo": {
+    "Energy": "348 kcal",
+    "Protein": "0 g",
+    "Carbohydrates": "87.1 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "172 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Twilite Products (India)",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019022010319"
+  }
  }
 ]

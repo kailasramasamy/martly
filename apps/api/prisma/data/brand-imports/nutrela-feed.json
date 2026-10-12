@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40003518_8-nutrela-soya-chunks.jpg"
-    }
+    },
+    "barcode": "8906032016571"
    },
    {
     "title": "80g",
@@ -56,7 +57,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/257382_9-nutrela-soya-chunks.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Foods Ltd Nutrela Soya Chunks are made from soy flour. Soya Chunks contain immunity-building nutrients, protein, iron, and zinc. They are rich in dietary fibre and strengthen your immunity. They are very easy to prepare and make tasty dishes. They are a blank canvas that you can paint on; they are odourless and tasteless by themselves. They can be used in many dishes and are healthy and a good source of calcium.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "25g",
+    "Energy (kcal)": "354.14 kcal",
+    "Protein (g)": "53.19 g",
+    "Carbohydrate (g)": "33.5 g",
+    "Total Sugars (g)": "7.18 g",
+    "Added Sugars (g)": "0 g",
+    "Total fat (g)": "0.82 g",
+    "Saturated Fat not more than (g)": "0.19 g",
+    "Trans Fat not more than (g)": "0 g",
+    "Sodium (mg)": "8 mg",
+    "RDA": "*Per serve percentage (%) contribution to RDA calculated on the basis of 2000 kcal energy, 67 g total fat, 22 g Saturated fat, 2 g trans-fat, 50 g added sugar and 2000 mg of sodium (5 g salt) requirement for average adult per day."
+   },
+   "manufacturerName": "Patanjali Foods Ltd. (TC) Talawali Chanda"
+  }
  },
  {
   "title": "Soya Granules",
@@ -72,7 +91,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/257383_9-nutrela-soya-granules.jpg"
-    }
+    },
+    "barcode": "8906032010999"
    },
    {
     "title": "1kg",
@@ -103,7 +123,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/261821_5-nutrela-soya-granules-high-protein.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Patanjali Foods Ltd. Nutrela Soya Granules are made from soy flour. Soya Granules contain immunity-building nutrients, protein, iron, and zinc. They are rich in dietary fibre and strengthen your immunity. They are ready to cook and in an easily manageable shape. It is very easy to prepare and makes tasty dishes. They are a blank canvas that you can paint on, they are odourless and tasteless by themselves. They can be used in many dishes and are healthy and a good source of calcium.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "25g",
+    "Energy (kcal)": "354.14 kcal",
+    "Protein (g)": "53.19 g",
+    "Carbohydrate (g)": "33.5 g",
+    "Total Sugars (g)": "7.18 g",
+    "Added Sugars (g)": "0 g",
+    "Total fat (g)": "0.82 g",
+    "Saturated Fat (g)": "0.19 g",
+    "Trans Fat (g)": "0 g",
+    "Sodium (mg)": "8 mg"
+   },
+   "manufacturerName": "Patanjali Foods Ltd.(TC) Talawali Chanda"
+  }
  },
  {
   "title": "Kachi Ghani Mustard Oil",
@@ -156,7 +193,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293853-8_1-nutrela-kachi-ghani-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Nutrela Kachi Ghani Mustard Oil is a pure & healthy edible oil which is fortified with Vitamins A & D and contains heart-healthy MUFA. The characteristic pungency shows the purity of Nutrela.",
+   "ingredients": "Kachi Ghani Mustard Oil, Antioxidants (INS 319), Vitamin A (25 IU per gram) & Vitamin D (4.5 IU per gram). Free From Argemone Oil.",
+   "usageInstructions": "Use it as cooking oil.",
+   "manufacturerName": "(GN) A 69-70",
+   "fssaiLicense": "10012013000051",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kachi Ghani Mustard Oil Pouch",
@@ -172,7 +217,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/304457_3-nutrela-oil-mustard-kachhi-ghani.jpg"
-    }
+    },
+    "barcode": "8906032010272"
    }
   ],
   "images": [
@@ -194,7 +240,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/304457-6_2-nutrela-oil-mustard-kachhi-ghani.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Nutrela Mustard Kachhi Ghani Oils are superior for your health in more ways than one. Nutrela Oils have upto 25% lower absorption. Nutrela Healthy Oils make sure that your food obtains the wonderful taste and steadiness, with no being excessively oily. Helps avoid coronary heart diseases and also assists digestion and blood circulation.",
+   "storageInstructions": "Ready to use . Store in a cool and dry place",
+   "manufacturerName": "Ruchi house",
+   "countryOfOrigin": "India",
+   "ingredients": "Mustard Oil , Vitamin A & Vitamin D."
+  }
  },
  {
   "title": "Refined Soyabean Oil",
@@ -210,7 +263,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30005313_4-nutrela-refined-oil-soyabean.jpg"
-    }
+    },
+    "barcode": "8906032010548"
    }
   ],
   "images": [
@@ -232,7 +286,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005313-6_3-nutrela-refined-oil-soyabean.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Nutrela Soyabean Refined Oil contains natural plant sterols that helps in reducing cholesterol. The natural taste of Soyabean oil enhances the flavour of food, and works well with other ingredients including fats and oils, making it edible in salad dressings, sauces and baked foods.",
+   "storageInstructions": "Ready to use . Store in a cool and dry place .",
+   "manufacturerName": "Ruchi house",
+   "countryOfOrigin": "India",
+   "ingredients": "Refined Soyabean oil"
+  }
  },
  {
   "title": "Refined Sunflower Oil",
@@ -248,7 +309,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/277046_6-nutrela-refined-oil-sunflower.jpg"
-    }
+    },
+    "barcode": "8906032010920"
    }
   ],
   "images": [
@@ -270,7 +332,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/277046-6_1-nutrela-refined-oil-sunflower.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Nutrela Refined Sunflower Oil is good for your health in more methods than one. It is the No.1 Low absorption oil in the countryÃƒÆ’Ã‚¢Ãƒ¢Ã¢‚¬Å¡Ã‚¬Ãƒ¢Ã¢‚¬Å¾Ã‚¢ Lasts 3 times longer and is enriched with Vitamins A; D & E. Vitamin E is a great antioxidant that protects cells against the effect of damaging free radicals.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "884Protein (g) : 0Carbohydrate (g) : 0Total Fatty Acid ( g) : 100Saturated Fatty Acid (g) : 11Mono Saturated Fatty Acid (g) : 21Poly Unsaturated Fatty Acid (g) : 68Trans Fatty Acid (g) : 0Cholesterol (mg) : 0Vitamin A (mcg/IU) : 375Vitamin D (mcg/IU) : 2.5Vitamin E (mg/IU) : 6"
+   },
+   "usageInstructions": "It can be used for deep frying and cooking.",
+   "manufacturerName": "Ruchi house",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maxx Nuts Almonds",
@@ -311,7 +382,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316088-7_1-nutrela-maxx-nuts-almond.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the natural goodness of Nutrela Maxx Nuts Almonds. Packed with essential nutrients, these almonds offer a delectable crunch and a rich source of energy. are a powerhouse of nutrition, boasting high levels of essential nutrients such as Phosphorus and Magnesium. These nutrient-rich almonds are also an excellent source of protein, making them a satisfying and healthful snack choice. Whether enjoyed on their own or added to dishes, these almonds provide a delightful experience while contributing to your overall well-being.",
+   "ingredients": "Almond Kernels.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "607.04",
+    "Protein (g)": "20.91",
+    "Carbohydrates (g)": "20.15",
+    "Total Sugars (g)": "3.9",
+    "Added Sugars (g)": "0.00",
+    "Dietary Fibre (g)": "12.15",
+    "Total Fat (g)": "49.20",
+    "Saturated Fat (g)": "3.82",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Calcium (mg)": "229.72",
+    "Iron (mg)": "2.18",
+    "Copper (mg)": "1.42",
+    "Phosphorus (mg)": "470",
+    "Magnesium (mg)": "255.16",
+    "Sodium (mg)": "5.45"
+   },
+   "manufacturerName": "Bolas Agro Private Limited",
+   "fssaiLicense": "10012043000051",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maxx Nuts Cashews",
@@ -352,7 +448,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316089-7_1-nutrela-maxx-nuts-cashew.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Nutrela Maxx Nuts Cashew: A premium delight that captures the essence of wholesome goodness. They offer a concentrated source of essential nutrients. Abundant in zinc, phosphorus, copper, and magnesium, these nuts provide vital minerals that support various bodily functions. Enjoy a wholesome snack that contributes to overall well-being with Nutrela Maxx Nuts Cashew.",
+   "ingredients": "Cashew Kernels.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "631.85",
+    "Protein (g)": "18.2",
+    "Carbohydrates (g)": "31.20",
+    "Total Sugars (g)": "7.50",
+    "Added Sugars (g)": "0.00",
+    "Dietary Fibre (g)": "3.22",
+    "Total Fat (g)": "48.25",
+    "Saturated Fat (g)": "<8.79",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Copper (mg)": "1.99",
+    "Phosphorus (mg)": "417",
+    "Magnesium (mg)": "281.05",
+    "Sodium (mg)": "6.87",
+    "Zinc (mg)": "7.48"
+   },
+   "manufacturerName": "Bolas Agro Private Limited",
+   "fssaiLicense": "10012043000051",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maxx Nuts Roasted & Salted Pistachios",
@@ -393,7 +513,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316090-7_1-nutrela-maxx-nuts-pistachio-premium-roasted-salted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Nutrela Maxx Nuts Pistachio: Nature's vibrant green gems, thoughtfully roasted and salted to perfection. Indulge in the irresistible crunch and rich, buttery flavour of pistachios. A delightful snack that satisfies cravings and adds a touch of elegance to your moments. Enjoy the premium quality and taste of Nutrela Maxx Nuts Pistachio – a truly irresistible treat.",
+   "ingredients": "Pistachio Nuts, Iodized Salt.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "604.64",
+    "Protein (g)": "21.05",
+    "Carbohydrates (g)": "28.23",
+    "Total Sugars (g)": "6.5",
+    "Added Sugars (g)": "0.00",
+    "Dietary Fibre (g)": "8.14",
+    "Total Fat (g)": "45.28",
+    "Saturated Fat (g)": "<4.60",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Iron (mg)": "3.4",
+    "Phosphorus (mg)": "435.83",
+    "Sodium (mg)": "776.04"
+   },
+   "manufacturerName": "Bolas Agro Private Limited",
+   "fssaiLicense": "10012043000051",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maxx Nuts Walnut Kernels",
@@ -434,6 +576,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316087-7_1-nutrela-maxx-nuts-walnut-kernels.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, nutty goodness of Nutrela Maxx Nuts Walnut Kernels. These premium walnuts are packed with essential nutrients, offering a delightful balance of flavour and texture. Bursting with natural antioxidants, omega-3 fatty acids, and plant-based proteins, these kernels are a versatile addition to your diet. Enjoy them as a satisfying snack, incorporate them into your baking, or elevate your favourite dishes with their wholesome, crunchy presence. Upgrade your snacking experience with the natural goodness and burst of flavour in every bite of these high-protein, guilt-free Nutrela Maxx Nuts Walnuts.",
+   "ingredients": "Walnut Kernels.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "25 g",
+    "Energy (kcal)": "675.87",
+    "Protein (g)": "18.20",
+    "Carbohydrates (g)": "10.57",
+    "Total Sugars (g)": "0.00",
+    "Added Sugars (g)": "0.00",
+    "Dietary Fiber (g)": "6.55",
+    "Total Fat (g)": "62.31",
+    "Saturated Fat not more than (g)": "5.01",
+    "Trans Fat not more than (g)": "0.00",
+    "Omega-3 Fatty Acid (g)": "6.20",
+    "Cholesterol (mg)": "0.00",
+    "Iron (mg)": "1.14",
+    "Potassium (mg)": "474.25",
+    "Sodium (mg)": "6.79"
+   },
+   "storageInstructions": "Store in a cool, dry place, away from direct sunlight, heat & strong odour\nDo not use if the pack is damaged or open, transfer the content in a suitable airtight container after opening",
+   "manufacturerName": "Bolas Agro Private Limited",
+   "fssaiLicense": "10012043000051",
+   "countryOfOrigin": "India"
+  }
  }
 ]

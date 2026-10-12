@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100432222_8-cornitos-nacho-chips-cheese-and-herbs.jpg"
-    }
+    },
+    "barcode": "8908001017893"
    },
    {
     "title": "32g",
@@ -59,7 +60,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100432222-8_5-cornitos-nacho-chips-cheese-and-herbs.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos Nacho Crisps Cheese & Herbs is a unique combination of cheddar cheese and cool Italian herbs that you will surely fall in love with. It is a 100% corn snack and contains up to 40% less oil than regular potato chips. It has zero cholesterol and trans fat, making it a healthier snack for you which you can enjoy at any time of the day. It is gluten-free.",
+   "ingredients": "Corn (70%), Edible Vegetable Oil (Corn Oil), Corn Starch, lodized Salt, Sugar, Milk Solids (Skim Milk Powder, Whey Powder, Cheddar Cheese Powder (0.7%)), Spices & Condiments (Oregano (0.3%), Parsley (0.1%), Black Pepper, Chilli, Turmeric), Onion Powder, Acidity Regulator (INS 270), Anticaking Agent (INS 551), Flavour Enhancer (INS 627, INS 631)",
+   "nutritionalInfo": {
+    "Calories": "143 Kcal",
+    "Total Fat": "7g",
+    "Saturated Fat": "1g",
+    "Monounsaturated Fat": "2g",
+    "Polyunsaturated Fat": "4g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "161mg",
+    "Total Carbohydrates": "18g",
+    "Dietary Fibre": "2g",
+    "Sugar": "1g",
+    "Protein": "2g"
+   },
+   "storageInstructions": "Ready to eat. Store in a cool and dry place. Do not buy the pack if found tampered with.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peri Peri Nacho Crisps",
@@ -75,7 +97,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40071519_8-cornitos-nacho-chips-peri-peri.jpg"
-    }
+    },
+    "barcode": "8908001017183"
    },
    {
     "title": "32g",
@@ -121,7 +144,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071519-8_5-cornitos-nacho-chips-peri-peri.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the bold and spicy flavour of Cornitos Peri-Peri Nacho Crisps, a delightful corn snack that packs a punch. Bursting with the unique combination of African chilli and tangy lemon, these crisps offer a flavourful experience that will tantalize your taste buds. Boasting up to 40% less oil than regular potato crisps, they are a healthier snacking option that is gluten-free and contains zero cholesterol or trans fat. Whether you're enjoying them at home, hosting a gathering, or on the go, Cornitos Peri-Peri Nacho Crisps are the perfect treat to satisfy your cravings for a spicy and flavourful snack. Indulge in the irresistible taste of these nacho crisps, now conveniently available online for delivery straight to your doorstep.",
+   "ingredients": "Corn, Edible Vegetable Oil (Corn Oil), Iodised Salt, Spices & Herbs (Chilli, Black Pepper, Red Bell Pepper, Oregano), Corn Starch, Sugar, Lime Juice Powder, Garlic Powder, Soya Sauce Powder, Acidity Regulator (Citric Acid)",
+   "nutritionalInfo": {
+    "Calories": "134 kcal",
+    "Calories from Fat": "54 kcal",
+    "Total Fat": "6g",
+    "Saturated Fat": "1g",
+    "Monounsaturated Fat": "2g",
+    "Polyunsaturated Fat": "3g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "188mg",
+    "Total Carbohydrates": "19g",
+    "Dietary Fibre": "1g",
+    "Sugar": "1g",
+    "Protein": "2g"
+   },
+   "storageInstructions": "Store in a cool and dry place. Avoid exposure to moisture and direct sunlight.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sizzlin Jalapeno Nacho Crisps",
@@ -137,7 +182,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100432238_9-cornitos-nacho-chips-sizzlin-jalapeno.jpg"
-    }
+    },
+    "barcode": "8908001017886"
    },
    {
     "title": "32g",
@@ -192,7 +238,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100432238-8_5-cornitos-nacho-chips-sizzlin-jalapeno.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the bold and sizzling flavour of Cornitos Sizzling Jalapeno Nacho Crisps, a delightful snack made from corn and cooked in healthier oil. These gluten-free crisps are a guilt-free treat, with Zero cholesterol and trans fat, ensuring you can satisfy your hunger without packing on the pounds. The simple heat of jalapeno peppers is perfectly balanced with a fresh, rounded flavour that will tantalize your taste buds and leave you craving more. Enjoy these crisps straight from the bag for a satisfying snack experience, or pair them with your favourite dips, salsas, or guacamole for an extra kick of flavour. Cornitos Sizzling Jalapeno Nacho Crisps are the perfect companion for any time of the day, offering a delicious and nutritious snacking option that will sizzle your senses.",
+   "ingredients": "Corn (70%), Edible Vegetable Oil (Corn Oil), Sugar, Iodised Salt, Jalapeno (0.4%), Onion Powder, Garlic Powder, Ginger, Green Chilli, Parsley, Milk Solids (skim Milk Powder, Whey Powder), Soya Sauce Powder, Acidity Regulator (Malic Acid- Ins 296).",
+   "nutritionalInfo": {
+    "Serving Size": "28g",
+    "Calories": "135 kcal",
+    "Total Fat": "6g",
+    "Saturated Fat": "1g",
+    "Monounsaturated Fat": "2g",
+    "Polyunsaturated Fat": "3g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "227mg",
+    "Total Carbohydrates": "19g",
+    "Dietary Fiber": "1g",
+    "Sugar": "1g",
+    "Protein": "2g"
+   },
+   "storageInstructions": "Ready to eat.\nStore in a cool and dry place.\nDo not buy the pack if found tampered with.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tomato Mexicana Nacho Crisps",
@@ -208,7 +276,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100432237_7-cornitos-nacho-chips-tomato-mexicana.jpg"
-    }
+    },
+    "barcode": "8908001017909"
    },
    {
     "title": "30g",
@@ -254,7 +323,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100432237-8_5-cornitos-nacho-chips-tomato-mexicana.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the tantalizing flavours of Cornitos Tomato Mexicana Nacho Crisps, a delightful snack that combines the juicy taste of red tomatoes and the kick of jalapenos. These crunchy crisps are infused with a bold, spicy-yet-tangy seasoning, offering a perfect balance of flavour and texture. Made from corn and cooked in healthier corn oil, these nacho crisps are a guilt-free treat that won't weigh you down. Gluten-free and cholesterol-free, they make for a nutritious snacking option that can be enjoyed at any time of the day. Whether you prefer them on their own or paired with your favourite dips, these Cornitos Nacho Crisps are sure to delight your taste buds and satisfy your savoury cravings.",
+   "ingredients": "Corn (70%), Edible Vegetable Oil (Corn Oil), Sugar, Dehydrated Vegetable Powder (tomato Powder (1.2%), Onion Powder & Garlic Powder), Iodised Salt, Spices & Herbs (Chilli, Ginger, Cinnamon, Clove, Oregano, Turmeric, Black Pepper & Parsley), Milk Solids, Soya Sauce Powder, Acidity Regulator (citric Acid-ins 330, Malic Acid-ins 296).",
+   "nutritionalInfo": {
+    "Serving Size": "28 g",
+    "Calories": "135 Kcal",
+    "Total Fat": "6g",
+    "Saturated Fat": "1g",
+    "Monounsaturated Fat": "2g",
+    "Polyunsaturated Fat": "3g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "188 mg",
+    "Total Carbohydrates": "19 g",
+    "Dietary Fiber": "2 g",
+    "Sugar": "1 g",
+    "Protein": "2 g"
+   },
+   "storageInstructions": "Use as a snack with dip.\nStore in a cool & dry place.\nDo not buy the pack if found tampered with.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tikka Masala Nacho Crisps",
@@ -316,7 +407,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40110476-8_1-cornitos-nacho-chips-tikka-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos Tikka Masala Nacho Crisps are prepared from corn and are cooked in healthier oil, which kills your hunger without making you fat. It has zero Trans fat and cholesterol making it a healthier snack for you which you can munch any time of the day you similar. Nacho crisp can also be served as a dish with cream, cheese and extra toppings as a full meal. It's gluten free.\nWeight: 150 g\nStore in a cool & dry place. Do not buy the pack if found tampered with.",
+   "ingredients": "Corn (70%), Edible Vegetable Oil (Corn oil), Iodized Salt, Milk Solids, Spices and Extracts, Maltodextrin, Sugar, Fruits & Vegetable Powders (onion, garlic, pomegranate), Hydrolyzed Vegetable Protein, Food Acids (E330, E334), Anti-caking Agent (E551), Gum Arabic, Flavor Enhancer (E627, E631).\nContains soya and milk products.\nContains added flavours - natural and nature identical (Mint, smoke)",
+   "usageInstructions": "Ready To Eat, Tastes best with salsa.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sweet Chili Nacho Crisps",
@@ -378,7 +476,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005537-8_1-cornitos-nacho-chips-sweet-chili.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in a delightful snacking experience with Cornitos' Sweet Chili Nacho Crisps. These gluten-free chips offer a captivating balance of sweet and spicy flavours, perfect for any occasion. Crafted with non-GMO corn and cooked in healthy corn oil, they provide a guilt-free indulgence that caters to health-conscious consumers. Cornitos Nacho Crisps are made using the traditional Mexican Lime-treatment process, ensuring a unique and authentic taste. With over 10 exotic international flavours available, these versatile crisps can be enjoyed as a complete meal, an appetiser, or a tasty accompaniment while binge-watching your favourite shows. Whether you're hosting a family gathering or socialising with friends, Cornitos Nacho Crisps are the perfect snack to elevate the experience.",
+   "ingredients": "Corn (70%), Edible Vegetable Oil (Corn Oil), Sugar, Salt, Spices And Condiments (Onion, Garlic, Chilli, Paprika, Pepper, Rosemary, Capsicum), Soy Sauce Powder, Dehydrated Vegetable (Tomato), Fructose, Acidity Regulators (Malic Acid - INS 296, Citric Acid - INS 330)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1 oz. (28g / 16 chips)",
+    "Calories": "138 kcal",
+    "Calories from Fat": "61 kcal",
+    "Total Fat": "7g",
+    "Saturated Fat": "1g",
+    "Monounsaturated Fat": "2g",
+    "Polyunsaturated Fat": "3g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "188mg",
+    "Total Carbohydrates": "18g",
+    "Dietary Fiber": "2g",
+    "Sugar": "0g",
+    "Protein": "2g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd. Khasra No. 64",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India Manufactured & Marketed by: Greendot Health Foods Pvt. Ltd. Khasra No. 64, Shiv Ganga Industrial Estate, Bhagwanpur, Roorkee-247667, Dist. Haridwar, Uttarakhand."
+  }
  },
  {
   "title": "Cheesy Sour Cream & Onion Nacho Crisps",
@@ -431,7 +554,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40109164_5-cornitos-nacho-chips-cheesy-sour-cream-onion.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Get Dipped into the Exotic Savour of Cheesilicious Sour Cream and Zesty Onion to add zing to your Palate.\nMade from Stone Ground, Non-GMO Corn, Baked / Cooked in Healthier Corn Oil, 0g Trans Fat and Gluten Free.\nProduct: Nacho chips, Flavour: Cheesy sour cream & onion\nWeight: 150 g\nStore in a cool & dry place. Do not buy the pack if found tampered with.",
+   "ingredients": "Corn ( 70 % ) ,Edible Vegetable Oil (Corn Oil) ,Edible Common Salt, Milk Solids (Whole Milk Powder, Whey Powder, Cheddar Cheese Powder (7%) ) , Sugar, Onion Powder, Dextrose, Corn Starch, , Garlic Powder, Mixed Herbs (Parsley, Chives [1%]) , Acidity Regulator (Citric Acid - Ins 330), (Lactic Acid - Ins 270)\nContains Milk And Milk Products.\nContains Added Flavours -Natural And Nature Identical Flavouring Substances (Sour Cream).",
+   "usageInstructions": "Nachos are anytime anywhere mexican snack. It goes well with variety of dips or in your favorite Burgers.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Barbeque Nacho Crisps",
@@ -447,7 +577,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40015022_6-cornitos-nacho-chips-barbeque.jpg"
-    }
+    },
+    "barcode": "8908001017220"
    }
   ],
   "images": [
@@ -475,7 +606,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40015022-8_1-cornitos-nacho-chips-barbeque.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The hot and spicy chargrilled taste infused with spices creates sensations of sweet, heat, tangy and smokey rich flavour. Crispy tortilla chips are made from stone-ground non-GMO corn and are completely gluten-free. What makes Cornitos different is its unique preparation and ingredients used. Cornitos products are exported globally to over 30 countries. It is 100% vegetarian and is cooked in corn oil which makes it a healthy snack option as it has zero cholesterol and trans fat. The perfect snack for a movie date or a picnic outside!",
+   "ingredients": "Corn (70%), Edible Vegetable Oil (Corn Oil), Sugar, Iodised Salt, Spices & Condiments (Chili), Yeast Extract, Flavourings (Smoke Flavourings), Soya Sauce Powder, Acidity Regulator (Citric Acid-iIns 330).",
+   "usageInstructions": "Use as a snack with dip.\nStore in a cool & dry place.\nDo not buy the pack if found tampered with.",
+   "nutritionalInfo": {
+    "Serving Size": "28 g"
+   },
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sea Salt Nacho Crisps",
@@ -519,7 +660,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005536-8_5-cornitos-nacho-chips-sea-salt.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the savoury goodness of Cornitos Sea Salt Nacho Crisps, a delightfully guilt-free snack that tantalizes the taste buds. These crisps are crafted from stone-ground, non-GMO corn and cooked or baked using healthier corn oil, ensuring a crunchy texture and fresh, natural flavour. Boasting a range of health benefits, the Cornitos Sea Salt Nacho Crisps are gluten-free, contain Zero cholesterol and trans fat, and are a vegetarian product. Enjoy the lingering taste of sea salt, which adds a delightful touch of seasoning to this irresistible snack. Whether you're looking for a tasty on-the-go option or an ingredient to elevate your own culinary creations, these Cornitos crisps are sure to satisfy even the most discerning palate.",
+   "ingredients": "Corn (75%), Edible Vegetable Oil (Corn Oil), Iodised Salt, Flavourings (Malt Vinegar, Vinegar Powder), Acidity Regulator (Citric Acid- Ins 330, Malic Acid-ins 296), Contains Added Natural Flavours- Natural And Nature Identical",
+   "nutritionalInfo": {
+    "Energy": "136 Kcal",
+    "Total Fat": "6 g",
+    "Saturated Fat": "1 g",
+    "Monounsaturated Fat": "2 g",
+    "Polyunsaturated Fat": "3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "49 mg",
+    "Total Carbohydrate": "19 g",
+    "Dietary Fiber": "2 g",
+    "Total Sugar": "1.1 g",
+    "Added Sugar": "0.35 g",
+    "Protein": "2 g"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lime n Mint Nacho Crisps",
@@ -535,14 +698,21 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30005534_3-cornitos-nacho-crisps-lime-n-mint.jpg"
-    }
+    },
+    "barcode": "8908001017107"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005534_3-cornitos-nacho-crisps-lime-n-mint.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos Nacho Chips - Lime n Mint Flavour\nGluten free Nacho crisps are made with corn. It's cooked in healthier oil and has upto 40 percent less oil. Zero trans fat, cholestrol free and MSG free .\nWeight: 60 g\nStore in a cool and dry place. Do not buy the pack if found tampered with.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Korean Chilli Nacho Crisps",
@@ -583,7 +753,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359407-7_1-cornitos-korean-chilli-nacho-crisps.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos Korean Nachos bring you the bold and exciting flavours of Korean Cuisine in every crunchy bite! Crafted from premium-quality corn, these nachos deliver the fiery essence of Korean street food with a perfect balance of spicy gochujang-style chilli, tangy zest, and subtle smoky notes. Each chip offers a delicious fusion of East and West - combining the authentic crunch of nachos with Korea’s signature heat and flavour. Gluten-free, perfectly crispy, and irresistibly flavourful, Cornitos Korean Nachos promise an adventurous snacking experience — enjoy them straight from the pack or pair them with your favourite dip for a truly global taste sensation.",
+   "ingredients": "Corn (70%), Edible Vegetable Oil (Corn Oil), Sugar, lodized\nSalt, Acidity Regulator (INS 260, INS 330, INS 296, INS 334), Mixed Spices (Red\nChilli (0.9%), Black Pepper) Dehydrated Vegetables (Garlic, Onion), Flavour\nEnhancer (INS 627, INS 631), Spice Extract, Anticaking Agent (INS 551).",
+   "nutritionalInfo": {
+    "Serving Size": "1 oz (28 g)",
+    "Servings per Container": "3",
+    "Energy": "137 kcal",
+    "Total Fat": "6 g",
+    "Saturated Fat": "1 g",
+    "Monounsaturated Fat": "2 g",
+    "Polyunsaturated Fat": "3 g",
+    "Trans Fat": "0.02 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "192 mg",
+    "Total Carbohydrate": "19 g",
+    "Dietary Fibre": "2 g",
+    "Total Sugar": "2 g",
+    "Added Sugar": "1 g",
+    "Protein": "2 g"
+   },
+   "storageInstructions": "Store in a cool and dry place. Distributed at ambient\ntemperature.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd. Khasra No. 64",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Beetroot Gourmet Nachos",
@@ -627,7 +822,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126902-8_3-cornitos-nacho-chips-beetroot.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Natural extracts of beetroot blended with Corn Masa & sprinkled with Spicy Pepper, Cornitos Beetroot Nachos make everyday snacking healthy and tasty, bringing the health benefits of beetroot with a Mexican twist in a nacho form. Dairy Free | Soy Free | Egg Free| Nut Free| Wheat Free| Yeast free| Gluten Free | Vegetarian |Rice Free | Preservative Free | GMO Free. Store in a cool & dry place. Do not buy the pack if found tampered with.",
+   "ingredients": "Corn (70%), Corn Oil, Salt, Sugar, Salt, Spices (Chilli, Fennel), Corn starch, Onion Powder, Garlic Powder, Tomato Powder, Beetroot Powder (<1%), Soy Sauce Powder (Soyabean, Salt, Corn Starch), Citric Acid, Acetic Acid, Natural Beetroot Colour, Natural Turmeric Colour.",
+   "nutritionalInfo": {
+    "Calories": "144 kcal",
+    "Total Fat": "8g",
+    "Saturated Fat": "1.9g",
+    "Monounsaturated Fat": "3g",
+    "Polyunsaturated Fat": "4g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "98mg",
+    "Total Carbohydrate": "17g",
+    "Dietary Fiber": "2g",
+    "Sugar": "0g",
+    "Protein": "2g"
+   },
+   "storageInstructions": "Store in a cool & dry place. Do not buy the pack if found tampered with.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Spinach Gourmet Nachos",
@@ -643,7 +859,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40126903_5-cornitos-nacho-chips-spinach.jpg"
-    }
+    },
+    "barcode": "8906082570153"
    }
   ],
   "images": [
@@ -671,7 +888,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126903-8_3-cornitos-nacho-chips-spinach.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Natural Extracts of Spinach blended with Corn Masa & sprinkled with Italian Herbs, Cornitos brings excitement to everyday veggies with its flavourful Spinach nachos, enriching health with taste in each bite with a Mexican twist in a nacho form. Loved by millions of people around the globe, nachos are the life of a party or the best binge snack while binge-watching your favourite movies with friends. Feeling adventurous? Try lip-smackingly amazing recipes using Cornitos Spinach nachos, Cornitos chunky salsa dip and cheese and make your snack-time fun time with mouthwatering Mexican recipes with an Indian touch. Infused with the choicest of ingredients, the flavour is a must-try for anyone who wants something extra-fun on their palate. What makes Cornitos different is its unique preparation and ingredients used. Cornitos products are exported globally to over 30 countries. Kids, youngsters and the elderly - Nachos are the ultimate happiness and satisfaction wrapped in alluring packaging.",
+   "ingredients": "Corn (70%), Edible Vegetable Oil (Corn Oil), Salt, Spices and Condiments (Black Pepper, Chilli, Bell Pepper, Thyme, Oregano, Basil), Sugar, Garlic Powder (15%), Onion Powder, Milk Solids (5%) (Whey Powder, Skim Milk Powder), Cheese Powder, Spinach Powder, Soyasauce Powder (Soyabean, Salt, Corn Starch), Acidity Regulator (Citric Acid (INS 330))",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "28 g",
+    "Calories": "143 kcal",
+    "Total Fat": "7 g",
+    "Saturated Fat": "1 g",
+    "Monounsaturated Fat": "3 g",
+    "Polyunsaturated Fat": "4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "147 mg",
+    "Total Carbohydrate": "17 g",
+    "Dietary Fiber": "2 g",
+    "Sugar": "0 g",
+    "Protein": "2 g"
+   },
+   "storageInstructions": "*Store in a cool & dry place",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Quinoa Gourmet Nachos",
@@ -715,7 +955,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126900-8_3-cornitos-nacho-chips-quinoa.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Quinoa Nacho Crisps in Himalayan pink salt flavour is made with quinoa, chia seeds and flax seeds blended with corn masa. Quinoa Nacho Crisps are gluten-free and are cooked in corn oil made with Non-GMO Corn. This product contains 60% corn and 10% quinoa.",
+   "ingredients": "Corn (60%), Edible Vegetable Oil (Corn Oil), Quinoa (10%), Chia Seeds, Flax Seed, Salt, Beetroot Juice Powder, Rock Salt, Sugar, Acidity Regulator (Citric Acid-INS330)",
+   "nutritionalInfo": {
+    "Calories": "143 kcal",
+    "Total Fat": "7 g",
+    "Saturated Fat": "1 g",
+    "Monounsaturated Fat": "2 g",
+    "Polyunsaturated Fat": "4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "185 mg",
+    "Total Carbohydrate": "17 g",
+    "Dietary Fiber": "3 g",
+    "Sugar": "0 g",
+    "Protein": "2 g"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Melange Veggie Nachos",
@@ -759,7 +1020,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126901-8_2-cornitos-nacho-chips-melange.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Melange Nacho Crisps in pink salt and roast garlic flavour is made with natural extracts of spinach, beetroot and white beans blended with corn masa. Melange Nacho Crisps are gluten-free cooked in corn oil made with Non-GMO corn.\nWeight: 70 g\nStore in a cool & dry place. Do not buy the pack if found tampered with.",
+   "ingredients": "Corn (70 %), Edible Vegetable Oil (Corn Oil), White Beans, Salt, Garlic Powder, Beet Root Juice Powder, Spinach Powder, Sugar, Rock Salt, Acidity Regulator(Citric Acid-Ins 330).\nContains Permitted Natural Colours (Ins 162, Ins 100, Ins 141) And Natural & Natural Identical Flavouring Substances.",
+   "usageInstructions": "Ready to eat",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jalapeno Nachos & Salsa Dip Tray",
@@ -803,7 +1071,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40166030-8_6-cornitos-on-the4-go-jalapeno-nachos-salsa-dip.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tingle your taste buds with the Cornitos On The Go range of crunchy round nacho crisps in a delectable Jalapeno flavour, accompanied by a spicy and tangy salsa dip. This convenient tray features separate compartments for the nachos and dip, ensuring a seamless and enjoyable snacking experience. Cholesterol-free and gluten-free, these nachos are the perfect on-the-go option to spice up your snack game. Whether you're hosting a party or craving a savoury treat, this tray is sure to satisfy your taste buds and leave you craving for more.",
+   "ingredients": "Corn, Edible Vegetable Oil, Sugar, Iodised Salt, Jalapeno, Onion Powder, Garlic Powder, Ginger, Green Chili, Parsley, Milk Solids, Soya Sauce Powder, Acidity Regulator",
+   "nutritionalInfo": {
+    "Calories": "135 kcal",
+    "Calories from Fat": "50 kcal",
+    "Total Fat": "6 g",
+    "Saturated Fat": "1 g",
+    "Monounsaturated Fat": "2 g",
+    "Polyunsaturated Fat": "3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "227 mg",
+    "Total Carbohydrates": "19 g",
+    "Dietary Fiber": "1 g",
+    "Sugar": "1 g",
+    "Protein": "2 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peri Peri Nachos & Salsa Dip Tray",
@@ -847,7 +1138,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40166031-8_6-cornitos-on-the-go-peri-peri-nachos-salsa-dip.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tingle your taste buds with the Cornitos On The Go range of crunchy round nacho crisps in the tantalising Peri Peri flavour. Bursting with a spicy and zesty blend of African chili and tangy lemon, these nacho crisps are perfectly paired with a bold and flavourful salsa dip. Cholesterol-free and gluten-free, this convenient tray features separate compartments for the crisps and dip, ensuring a delightful snacking experience. Whether you're enjoying them with friends and family or indulging on your own, these Cornitos Peri Peri Nacho Crisps are sure to satisfy your cravings and leave you craving more.",
+   "ingredients": "Tomatoes (45%), Tomato Paste (15%), Onions, Water, Liquid Glucose, Jalapenos, Lemon Juice, Sugar, Capsicum, Iodised Salt, Garlic, Permitted Stabilizing Agent (INS415), Permitted Acid (INS260), Spices & Condiments and Herbs",
+   "nutritionalInfo": {
+    "Calories": "135 kcal",
+    "Total Fat": "6 g",
+    "Saturated Fat": "1 g",
+    "Monounsaturated Fat": "2 g",
+    "Polyunsaturated Fat": "3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "227 mg",
+    "Total Carbohydrates": "19 g",
+    "Dietary Fibre": "1 g",
+    "Sugar": "1 g",
+    "Protein": "2 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Taco Shells 10 cm",
@@ -891,7 +1204,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071516-8_3-cornitos-taco-shells-4-inches.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Get your creative side kicking with Cornitos Do it Yourself product - cocktail size (10 cm) and 12 Shells in a pack. Taco Shells are cooked in healthy Corn Oil and are high in fibre and protein. Taco Shell pack comes in dual packaging and scrumptious Taco recipes are printed at the back of every pack. It is gluten-Free.",
+   "ingredients": "Corn Masa Flour, Edible Vegetable Oil (Corn Oil), Salt",
+   "nutritionalInfo": {
+    "Calories": "453 kcal",
+    "Calories from Fat": "135 kcal",
+    "Total Fat": "15g",
+    "Saturated Fat": "3g",
+    "Monounsaturated Fat": "5g",
+    "Polyunsaturated Fat": "7g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "58mg",
+    "Total Carbohydrate": "71g",
+    "Dietary Fibre": "7g",
+    "Sugars": "0g",
+    "Protein": "8g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "0%",
+    "Iron": "0%"
+   },
+   "storageInstructions": "Store in a cool, dry place.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd. Khasra No. 64",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Taco Shells 15 cm",
@@ -907,7 +1246,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40166032_6-cornitos-taco-shells-6-inches.jpg"
-    }
+    },
+    "barcode": "8906082570467"
    }
   ],
   "images": [
@@ -935,7 +1275,35 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40166032-8_2-cornitos-taco-shells-6-inches.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Get your creative side kicking with Cornitos Do it Yourself product - standard size (15cm) and 12 Shells in a pack. Taco Shells are cooked in healthy Corn Oil and are high in fibre and protein. Taco Shell pack comes in dual packaging and scrumptious Taco recipes are printed at the back of every pack.",
+   "ingredients": "Corn Masa Flour, Edible Vegetable Oil (Corn Oil), Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "453 kcal",
+    "Calories from Fat": "135 kcal",
+    "Total Fat": "15g",
+    "Saturated Fat": "3g",
+    "Monounsaturated Fat": "5g",
+    "Polyunsaturated Fat": "7g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "58mg",
+    "Total Carbohydrate": "71g",
+    "Dietary Fiber": "7g",
+    "Sugars": "0g",
+    "Protein": "8g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "0%",
+    "Iron": "0%"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012012000185"
+  }
  },
  {
   "title": "Wheat Flour Tortilla Wraps",
@@ -951,7 +1319,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40193817_10-cornitos-tortilla-wrap-wheat-flour.jpg"
-    }
+    },
+    "barcode": "8906082571525"
    }
   ],
   "images": [
@@ -979,7 +1348,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40193817-8_1-cornitos-tortilla-wrap-wheat-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the goodness of our wheat flour tortilla wraps, offering a pack of 6 super thin and soft wraps measuring 8 inches each. These versatile wraps are perfect for creating healthy and delicious rolls for parties. Plus, they are vegan-friendly, ensuring a delightful and inclusive culinary experience.",
+   "ingredients": "Wheat Flour, Water, Refined Vegetable Oil (Palm Oil), Humectant (INS 422), Edible Common Salt, Stabilizer & Emulsifier (INS 412, INS 471), Preservatives (INS 202, INS 282), Acidity Regulator (INS 330), Raising Agent (INS 500 (ii)), Improver (INS 1100), Dough Conditioner (INS 223).",
+   "nutritionalInfo": {
+    "Energy": "326 kcal",
+    "Total Fat": "8.0 g",
+    "Saturated Fat": "5.0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "389 mg",
+    "Total Carbohydrates": "53 g",
+    "Total Sugar": "3.0 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "2.6 g",
+    "Protein": "8.0 g"
+   },
+   "storageInstructions": "Store in cool and dry conditions.\nOnce opened, store in an airtight container.\nConsume within 24 hrs.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd. Khasra No. 64",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "UAE"
+  }
  },
  {
   "title": "Spinach Tortilla Wraps",
@@ -995,7 +1385,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40359408_1-cornitos-spinach-tortilla-wraps-20-cm.jpg"
-    }
+    },
+    "barcode": "8906082572492"
    }
   ],
   "images": [
@@ -1023,7 +1414,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359408-8_2-cornitos-spinach-tortilla-wraps-20-cm.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bored of plain meals? Go green — literally!\nCornitos Spinach Wraps are here to add a fresh, healthy twist to your plate. Soft, flavourful and packed with spinach goodness — roll in your favourite fillings and taste the green magic!",
+   "ingredients": "Wheat Flour, Spinach Powder, Spinach Paste (6%), Water,\nRefined Vegetable Oil (Palm), Humectant (INS 422), Edible Common Salt, Stabiliser\n(INS 412), Emulsifier (INS 471), Preservatives (INS 202, INS 282), Acidity\nRegulator (INS 330) Raising Agent (INS 500 (ii)), Improver (INS 1100), Dough Conditioner\n(INS 223)",
+   "nutritionalInfo": {
+    "Energy": "324 kcal",
+    "Total Fat": "8.5 g",
+    "Saturated Fat": "5.45 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "212 mg",
+    "Total Carbohydrates": "54 g",
+    "Total Sugar": "6.1 g",
+    "Added Sugar": "0.80 g",
+    "Dietary Fibre": "3.8 g",
+    "Protein": "8.5 g"
+   },
+   "storageInstructions": "Store in a cool, dry place under ambient conditions\nHandle\ngently\nOnce packet is opened, store in an airtight container, and consume\nwithin 12 hours of opening\nFor best results serve hot\nRefrigerate after\nopening and use within 12 hours",
+   "manufacturerName": "Flour Masters Bakery L.L.C",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "UAE"
+  }
  },
  {
   "title": "Cheesy Jalapeno Dip",
@@ -1039,7 +1451,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40112934_7-cornitos-dip-cheesy-jalapeno.jpg"
-    }
+    },
+    "barcode": "8906082570306"
    },
    {
     "title": "300g",
@@ -1076,7 +1489,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112934-8_6-cornitos-dip-cheesy-jalapeno.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the cheesilicious goodness of Cornitos Cheesy Jalapeno Dip, a delectable accompaniment that adds a delightful twist to your snacking experience. Crafted with high-quality ingredients, this dip boasts a perfect balance of creamy cheese and the tantalising heat of jalapeno, creating a flavourful and textural delight. Versatile in its applications, the Cheesy Jalapeno Dip can be enjoyed as a dip with Nacho Crisps, or used as a spread on burgers, sandwiches, and even French fries, elevating the overall taste and experience. Explore the wide range of premium snacking options offered by Cornitos, where quality and flavour are the cornerstones of their commitment to providing a superior snacking experience.",
+   "ingredients": "Water, Edible Vegetable Oil (Refined Soyabean Oil ), Sugar, Milk Solids( 5%), Jalapeno(4%), Liquid Glucose, Tomato Paste, Edible Common Salt, Thickeners(Ins1442, Ins415, Ins412), Onion(Dehydrated), Acidity Regulators (Ins260,ins270), Spices And Condiments, Antioxidant (Ins319), Sequesterant (Ins385).contains Added Flavour (Nature-identical) Contains Permitted Class Ii Preservatives (Ins211,ins202) Contains Allergen: Milk And Soya.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chunky Salsa Hot",
@@ -1120,7 +1539,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095091-8_5-cornitos-chunky-salsa-hot.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Attention all young foodies! Are you on the lookout for a tangy salsa dip with a spicy kick? Look no further than Cornitos Chunky Salsa Dip - Hot variety!\nOur chunky salsa dip is made with succulent, juicy tomatoes, spicy peppers, and herbs, creating a flavour explosion that can add excitement to just about any dish. Whether you're looking to spice up your chips, tacos, or burritos, Cornitos Chunky Salsa Dip - Hot is the perfect complement.\nFor the ultimate flavour experience, we recommend pairing our Chunky Salsa Dip with our delicious Nachos. The combination of crispy corn chips and tangy salsa is sure to tantalise your taste buds and leave you craving more.\nSo why settle for boring and bland when you can add a hot and spicy twist with Cornitos Chunky Salsa Dip? Give it a try today and get ready to elevate your meals to the next level!",
+   "ingredients": "Fresh Tomatoes (30%), Water, Tomato Paste, Onions (10.6%),\nLiquid Glucose, Sugar, Jalapeno (5%), Capsicum, Iodised Salt, Garlic, Spices\nand Condiments, Acidity Regulator (INS 260), Stabiliser (INS 415), Lemon\nPowder.\nAllergy Advice: May Contain Milk & Soya",
+   "nutritionalInfo": {
+    "Energy": "65.3 kcal",
+    "Protein": "1 g",
+    "Carbohydrate": "14.1 g",
+    "Total Sugar": "7.80 g",
+    "Added Sugar": "5.1 g",
+    "Dietary Fibre": "1.0 g",
+    "Total Fat": "0.10 g",
+    "Saturated Fat": "0 g",
+    "Monounsaturated Fat": "0 g",
+    "Polyunsaturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Sodium": "750 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place\nRefrigerate after opening, don't freeze",
+   "manufacturerName": "Ficus Food Lab Private",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sliced Jalapeno Peppers",
@@ -1164,7 +1605,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359410-8_1-cornitos-sliced-jalapeno-peppers.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Looking to add some heat and flavour to your favourite recipes? Look no further than Cornitos Sliced Jalapeno Peppers!\nOur Sliced Jalapeno Peppers offer just the right amount of spice and zing to take your dishes to the next level. Add them to your favourite recipes for an exciting and delicious taste that's sure to please.\nWhether you're looking to spice up your tacos or add some kick to your burger, Cornitos Sliced Jalapeno Peppers are the perfect addition. They're versatile, easy to use, and guaranteed to satisfy even the most adventurous taste buds.\nSo go ahead, add some excitement to your cooking with Cornitos Sliced Jalapeno Peppers. Experience the heat and flavour that you crave with just the right amount of spicy and perfect zing.",
+   "ingredients": "Jalapenos (54.29%), Water, lodised salt, Acidity Regulator (INS 260), Firming Agent (INS 509), and Preservative (INS 224)\nAllergy Information: Contains Sulphites",
+   "nutritionalInfo": {
+    "Energy": "15.8 kcal",
+    "Protein": "0.71 g",
+    "Total Carbohydrates": "1.44 g",
+    "Dietary Fibre": "0.8 g",
+    "Total Sugar": "0.5 g",
+    "Added Sugar": "0 g",
+    "Total Fat": "0.8 g",
+    "Saturated Fat": "0.16 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1000 mg"
+   },
+   "storageInstructions": "Refrigerate after opening",
+   "manufacturerName": "India Agro Exports Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crusties Classic Cheese Balls",
@@ -1208,7 +1670,35 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238016-8_8-cornitos-crusties-chana-snacks-cholesterol-gluten-free-dilli-chaat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos Crusties Classic Cheese Balls offer a light, crunchy bite with a smooth cheese flavour. Made without cholesterol or gluten, they are ideal for easy snacking at home or on the go. Enjoy their crisp texture and classic taste whenever you want a simple, satisfying treat.",
+   "ingredients": "Corn Grits, Edible Vegetable Oil (Corn Oil), lodised Salt, Sugar, Cheese Powder (1.3%), Dehydrated Vegetables (Onion, Garlic), Dextrose, Glucose Syrup Solids, Tamarind Powder, Mixed Spices (Red Chilli, Cumin, Garam Masala), Milk Powder, Anticaking Agent (INS 170(i), INS 551), Flavour Enhancer (INS 627, INS 631), Maltodextrin, Dehydrated Oregano Powder, Soya Sauce Powder, Acidity Regulator (INS 330), Emulsifiers (INS 471, INS 340(ii)).\nContains Milk & Soya. Contains Permitted Natural Food Colour\n(Ins 160c(I)), Contains Added Flavours, Natural and Nature Identical Flavouring\nSubstances.",
+   "nutritionalInfo": {
+    "Serving Size": "28 g",
+    "Energy": "142.9 kcal",
+    "Total Fat": "7.8 g",
+    "Saturated Fat": "1.3 g",
+    "Monounsaturated Fat": "2.5 g",
+    "Polyunsaturated Fat": "4.0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "245.9 mg",
+    "Total Carbohydrates": "17.7 g",
+    "Dietary Fibre": "0.7 g",
+    "Total Sugar": "1.6 g",
+    "Added Sugar": "1.2 g",
+    "Protein": "2.3 g",
+    "Vitamin A": "106.5 mcg",
+    "Vitamin C": "3.1 mg",
+    "Calcium": "30.3 mg",
+    "Iron": "0.2 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place, distributed at ambient temperature.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crusties Fiery Peri Peri Puffs",
@@ -1224,7 +1714,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40238017_9-cornitos-crusties-chana-snacks-cholesterol-gluten-free-cheesy-garlic.jpg"
-    }
+    },
+    "barcode": "8906082577046"
    }
   ],
   "images": [
@@ -1252,7 +1743,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238017-8_8-cornitos-crusties-chana-snacks-cholesterol-gluten-free-cheesy-garlic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in a guilt-free snacking experience with Cornitos Crusties Chana Snacks. These crunchy, zigzag-shaped puffs offer a delightful blend of savoury and zesty flavours, perfect for satisfying your cravings any time of the day. Made with protein-rich chana, a traditionally loved legume, these baked snacks are a healthier alternative to fried options. Infused with a tantalizing cheesy garlic seasoning, the Crusties deliver a satisfying crunch and a burst of flavour that will leave you craving more. Enjoy these cholesterol-free, gluten-free treats as a quick break or a nutritious snack, without any guilt. Cornitos Crusties Chana Snacks are the perfect balance of indulgence and wellness, providing a delicious and guilt-free snacking experience.",
+   "ingredients": "Corn Grits, Bengal Gram Grits, Rice Grits, Corn Starch, Edible Common Salt, Edible Vegetable Oil (Corn Oil), Chickpea Grits (1.5%), Sugar, Garlic Powder (1%), Onion Powder, Milk Solids (Whole Milk Powder (0.2%)), Maltodextrin, Herbs, Anticaking Agent (INS 551, INS 170(i)), Flavour Enhancer (INS 627, INS 631)",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "136.5",
+    "Total Fat (g)": "5.9",
+    "Saturated Fat (g)": "1.0",
+    "Monounsaturated Fat (g)": "1.9",
+    "Polyunsaturated Fat (g)": "3.0",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "0.0",
+    "Sodium (mg)": "388.5",
+    "Total Carbohydrates (g)": "18.9",
+    "Dietary Fibre (g)": "0.6",
+    "Total Sugar (g)": "2.1",
+    "Added Sugar (g)": "1.4",
+    "Protein (g)": "1.8",
+    "Vitamin A (mcg)": "111.9",
+    "Vitamin c (mg)": "7.2",
+    "Calcium (mg)": "97.9",
+    "Iron (mg)": "0.3"
+   },
+   "storageInstructions": "Store in a cool, dry place.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crusties Honey Chilli Potato Puffs",
@@ -1268,7 +1786,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40238018_10-cornitos-crusties-potato-snacks-cholesterol-gluten-free-peri-peri.jpg"
-    }
+    },
+    "barcode": "8906082577022"
    }
   ],
   "images": [
@@ -1296,7 +1815,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238018-8_9-cornitos-crusties-potato-snacks-cholesterol-gluten-free-peri-peri.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "When you are in the mood for some munching, but also looking for a healthy option, you can't go wrong with Cornitos Crusties Potato Snacks. The funky zigzag shape and the perky Peri Peri flavour add a snacky spin to Potato, the ever-popular tuber. Savoury and crunchy, the Potato Snacks are baked, not fried, with a great mix of spices and herbs, and are just right for happy and guilt-free crustying, any time of the day! Made of Potato, the traditionally loved nutrient-rich tuber, this is a vegetarian snack.",
+   "ingredients": "Rice Grits, Potato Flakes, Edible Vegetable Oil (Corn & Soybean Oil), Corn Grits, Anticaking Agent (INS 170(i), INS 551), Iodised Salt, Sugar, Mixed Spices (Chilli Powder (1.3%), Black Pepper Powder), Dehydrated Powder (Garlic, Onion), Acidity Regulator (INS 260, INS 330, INS 296), Tamarind Powder, Flavour Enhancer (INS 627, INS 631), Spice Extract",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "142.5",
+    "Total Fat (g)": "7.0",
+    "Saturated Fat (g)": "1.1",
+    "Monounsaturated Fat (g)": "2.2",
+    "Polyunsaturated Fat (g)": "3.6",
+    "Trans Fat (g)": "0.06",
+    "Cholesterol (mg)": "0.0",
+    "Sodium (mg)": "309.6",
+    "Total Carbohydrates (g)": "18.1",
+    "Dietary Fibre (g)": "0.7",
+    "Total Sugar (g)": "1.8",
+    "Added Sugar (g)": "1.1",
+    "Protein (g)": "1.8",
+    "Vitamin A (mcg)": "115.6",
+    "Vitamin c (mg)": "5.3",
+    "Calcium (mg)": "53.9",
+    "Iron (mg)": "0.7"
+   },
+   "storageInstructions": "Store in a cool, dry place.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crusties Korean Chilli Puffs",
@@ -1312,7 +1858,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40238014_9-cornitos-crusties-rajma-snacks-cholesterol-gluten-free-king-curry.jpg"
-    }
+    },
+    "barcode": "8906082577411"
    }
   ],
   "images": [
@@ -1340,7 +1887,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238014-8_8-cornitos-crusties-rajma-snacks-cholesterol-gluten-free-king-curry.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "When you are in the mood for some munching, but also looking for a healthy option, you can't go wrong with Cornitos Crusties Rajma Snacks. The funky zigzag shape and the zappy Curry flavour add a snacky spin to Rajma, the popular powerhouse legume. Savoury and crunchy, the Rajma Snacks are baked, not fried, with a great mix of spices and herbs, and are just right for happy and guilt-free crusting any time of the day! Made of Rajma, the traditionally loved protein-rich healthy legume, this is a vegetarian snack.",
+   "ingredients": "Kidney Beans Grits (32%), Rice Grits, Corn Grits, Tapioca Starch, Edible Common Salt, Edible Vegetable Oil (Corn Oil), Dehydrated Vegetable Powder (Onion Powder, Garlic Powder, Tomato Powder, Dry Ginger Powder), Spices and Condiments (Red Chilli Powder, Coriander Powder, Fennel Powder, Turmeric Powder, Cumin Powder, Black Pepper Powder, Clove Powder, Big Cardamom Powder, Cinnamon Powder, Nutmeg Powder, Fenugreek Seed Powder, Bay Leaf Powder, Fenugreek Leaves Powder, Star Anise Powder), Sugar, Black Salt, Maltodextrin Powder, Acidity Regulators (INS 330, INS 296, INS 262(ii)), Whey Powder, Flavour Enhancer (INS 627, INS 631), Corn Starch, Anticaking Agent (INS 551, INS 170(i))",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "143.7",
+    "Total Fat (g)": "7.3",
+    "Saturated Fat (g)": "1.2",
+    "Monounsaturated Fat (g)": "2.3",
+    "Polyunsaturated Fat (g)": "3.7",
+    "Trans Fat (g)": "0.06",
+    "Cholesterol (mg)": "0.0",
+    "Sodium (mg)": "369.20",
+    "Total Carbohydrates (g)": "17.4",
+    "Dietary Fiber (g)": "0.7",
+    "Total Sugar (g)": "2.8",
+    "Added Sugar (g)": "1.9",
+    "Protein (g)": "2.2",
+    "Vitamin A (mcg)": "118.8",
+    "Vitamin c (mg)": "7.3",
+    "Calcium (mg)": "103.6",
+    "Iron (mg)": "0.5"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crusties Sour Cream & Onion Puffs",
@@ -1356,7 +1930,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40238019_10-cornitos-crusties-potato-snacks-cholesterol-gluten-free-italian-cheese.jpg"
-    }
+    },
+    "barcode": "8906082577626"
    }
   ],
   "images": [
@@ -1384,7 +1959,35 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238019-8_9-cornitos-crusties-potato-snacks-cholesterol-gluten-free-italian-cheese.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable combination of crispy, baked potato snacks and the irresistible flavour of Italian cheese with Cornitos Potato Crusties Italian Cheese. These crunchy, zigzag-shaped treats offer a satisfying texture and a burst of cheesy goodness that will tantalize your taste buds. Made from the nutrient-rich potato, these vegetarian snacks are baked, not fried, for a healthier indulgence. Infused with a blend of savoury spices and herbs, each bite delivers a flavourful punch that will leave you craving more. Whether you're looking for a guilt-free snack to enjoy on your own or a delightful addition to your gatherings, Cornitos Potato Crusties Italian Cheese is the perfect choice. Order a pack today and treat yourself to this irresistible blend of potato goodness and cheesy delight, conveniently delivered to your doorstep.",
+   "ingredients": "Rice Grits, Potato Flakes, Edible Vegetable Oil (Corn & Sunflower Oil), Corn Grits, Anticaking Agent (INS 170(i), INS 551), Iodised Salt, Sugar, Spice & Condiments (Onion, Garlic, Parsley, Black Pepper), Dextrose, Milk Solids, Dried Glucose Syrup, Flavour Enhancer (INS 635), Acidity Regulator (INS 330, INS 270, INS 331), Maltodextrin, Stabilizers (INS 339 (ii), INS 340 (ii), INS 407), Emulsifier (INS 471), Cheese Solids",
+   "nutritionalInfo": {
+    "Per g": "100g",
+    "Energy (Kcal)": "143.1",
+    "Total Fat (g)": "6.9",
+    "Saturated Fat (g)": "1.1",
+    "Monounsaturated Fat (g)": "2.2",
+    "Polyunsaturated Fat (g)": "3.5",
+    "Trans Fat (g)": "0.06",
+    "Cholesterol (mg)": "0.0",
+    "Sodium (mg)": "195.6",
+    "Total Carbohydrates (g)": "18.4",
+    "Dietary Fiber (g)": "0.6",
+    "Total Sugar (g)": "2.3",
+    "Added Sugar (g)": "1.6",
+    "Protein (g)": "1.9",
+    "Vitamin A (mcg)": "54.4",
+    "Vitamin c (mg)": "6.0",
+    "Calcium (mg)": "110.8",
+    "Iron (mg)": "0.6"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture.",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crusties Italian Cheese Potato Puffs",
@@ -1419,7 +2022,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324978-5_1-cornitos-potato-crusties-italian-cheese.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Are you in search of a snack that's both delicious and healthy, and offers a fun and flavourful experience? The funky zigzag shape and the punchy Italian Cheese flavour add a snacky spin to Potato. The complex flavours of rich Italian Cheese and the creamy yet crunchy texture of Potato Crusties will surely make your tastebuds go Mamma Mia! Savoury and crunchy, the Potato Snacks are baked, not fried, and are just right for a happy and guilt-free crustying, any time of the day.",
+   "ingredients": "Rice Grits, Potato Flakes (28%), Corn Grits, Potato Starch, Edible Common Salt, Edible Vegetable Oil (Corn Oil), Maltodextrin, Sugar, Milk Solids, Iodised Salt, Spices & Condiments (Onion, Garlic, Chilli), Cheese Powder, Hydrolysed Vegetable Protein (Soya), Yeast Extract Powder, Acidity Regulator (INS 270), Anticaking Agent (INS 551, INS 170(i)), Flavour Enhancer (INS 627, INS 631)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "950",
+    "Total Fat (g)": "18",
+    "Saturated Fat (g)": "3",
+    "Monounsaturated Fat (g)": "7",
+    "Polyunsaturated Fat (g)": "7",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "471",
+    "Total Carbohydrates (g)": "68",
+    "Dietary Fiber (g)": "3",
+    "Sugar (g)": "18",
+    "Protein (g)": "2"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India Manufactured & Marketed by: Greendot Health Foods Pvt. Ltd.,Khasra No. 64, Shiv Ganga Industrial Estate, Bhagwanpur, Roorkee-247667, Dist. Haridwar, Uttarakhand."
+  }
  },
  {
   "title": "Crusties Lemon Chilli Rajma Snacks",
@@ -1463,7 +2089,35 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238015-8_3-cornitos-crusties-rajma-snacks-cholesterol-gluten-free-lemon-chilli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful and zesty Cornitos Crusties Rajma Snacks, a guilt-free snacking option that's packed with protein. Made with the traditionally loved and protein-rich rajma legume, these baked snacks offer a savoury and crunchy texture with a tantalising Lemon Chilli flavour. Boasting a unique zigzag shape, these gluten-free and cholesterol-free snacks provide a nutritious boost, making them the perfect choice for happy and healthy munching any time of the day. Baked, not fried, these Cornitos Crusties are a delicious and nutritious treat that you can enjoy without any guilt.",
+   "ingredients": "Kidney Beans Grits (32%), Rice Grits, Corn Grits, Tapioca Starch, Edible Common Salt, Edible Vegetable Oil (Corn Oil), Sugar, Corn Starch, Garlic Powder, Onion Powder, Chilli (0.9%), Anticaking Agent (INS 551, INS 170(i)), Flavour Enhancer (INS 631, INS 627), Acacia Gum (INS 414), Acidity Regulator (INS 330, INS 334).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1 oz. (28 g)",
+    "Calories": "125 kcal",
+    "Calories from Fat": "45 kcal",
+    "Total Fat": "5 g",
+    "Saturated Fat": "1 g",
+    "Monounsaturated Fat": "2 g",
+    "Polyunsaturated Fat": "2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "620 mg",
+    "Total Carbohydrates": "18 g",
+    "Dietary Fiber": "1 g",
+    "Sugar": "2 g",
+    "Protein": "2 g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "60 mg",
+    "Iron": "1 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crusties King Curry Rajma Snacks",
@@ -1498,7 +2152,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324976-5_1-cornitos-rajma-crusties-king-curry.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "If you're on the hunt for a snack that's both delicious and healthy, look no further than Cornitos Crusties Bean Snacks! With their unique zigzag shape and zesty Curry flavor, these snacks are the perfect choice when you're in the mood for something crunchy and flavorful. And the best part? They're a guilt-free option that won't compromise your health goals! So why settle for boring snacks when you can indulge in a tasty and healthy option like Cornitos Crusties Bean Snacks? Give them a try today and satisfy your snack cravings in style! King Curry is a unique blend of spices, herbs, and aromatics from various cultures that will satisfy all your curry cravings. The best part? These Bean Snacks are baked, not fried, making them the perfect guilt-free snack for any time of day. So why settle for boring snacks when you can enjoy a delicious and healthy option like Cornitos Crusties Bean Snacks? Try them out today!",
+   "ingredients": "Kidney Beans Grits (32%), Rice Grits, Corn Grits, Tapioca Starch, Edible Common Salt, Edible Vegetable Oil (Corn Oil), Dehydrated Vegetable Powder (Onion Powder, Garlic Powder, Tomato Powder, Dry Ginger Powder), Spices And Condiments (Red Chilli Powder, Coriander Powder, Fennel Powder, Turmeric Powder, Cumin Powder, Black Pepper Powder, Clove Powder, Big Cardamom Powder, Cinnamon Powder, Nutmeg Powder, Fenugreek Seed Powder, Bay Leaf Powder, Fenugreek Leaves Powder, Star Anise Powder), Sugar, Black Salt, Maltodextrin Powder, Acidity Regulators (Ins 330, Ins 296, Ins 262(Ii)), Whey Powder, Flavour Enhancer (Ins 627, Ins 631), Corn Starch, Anticaking Agent (Ins 551, Ins 170(I)).\nContain Milk & Milk Products\nContains Added Flavours, Natural And Nature Identical Flavouring Substances (Onion Flavour & Curry Flavour)",
+   "usageInstructions": "Crusties can be eaten in a variety of ways, depending on personal preference.\nCommon ways to enjoy puff: Straight out of the bag, With dips, In salads, As a garnish, In recipes.\nIn short, puff snacks are versatile and can be eaten in a variety of ways, so feel free to get creative and experiment with different ways to enjoy them!",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India Manufactured & Marketed by: Greendot Health Foods Pvt. Ltd.,Khasra No. 64, Shiv Ganga Industrial Estate, Bhagwanpur, Roorkee-247667, Dist. Haridwar, Uttarakhand."
+  }
  },
  {
   "title": "Hot & Spicy Coated Green Peas",
@@ -1551,7 +2213,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095090-8_1-cornitos-coated-green-peas-hot-spicy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Hot & Spicy Coated Green Peas will leave a lingering irresistible taste that you simply cannot resist. The product is highly rich in fibre and proteins. It is also 100% vegeterian and cholestrol free which makes it a super healthy snack to munch on at any time of the day! It is also made with premium quality ingredients so that you dont have to compromise with taste and quality.\nA perfect snack for your binge-watch days. Pair it up with drinks and shakes to spice up its hotness or try new recipes.",
+   "ingredients": "Processed green peas (62-percent), glutinous rice flour, wheat flour, spices and condiments, edible vegetable oil, salt, sugar",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wasabi Coated Green Peas",
@@ -1595,7 +2263,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095089-8_2-cornitos-coated-green-peas-wasabi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Wasabi Coated Green Peas has a smooth & delicate flavours that will make you come back for more. They are generously coated in a flavoursome batter, an added bonus to an already addictive snack. When you're hungry and in a hurry, reach for one of these quick, easy and nutritious snack. The product is highly rich in fibre and proteins. It is also 100% vegeterian and cholestrol free which makes it a super healthy snack to munch on at any time of the day! It is also made with premium quality ingredients so that you dont have to compromise with taste and quality.",
+   "ingredients": "Processed green peas (62-percent), glutinous rice flour, wheat flour, spices and condiments, edible vegetable oil, salt, sugar",
+   "nutritionalInfo": {
+    "Amount Per Serving": "28g"
+   },
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Spanish Tomato Corn Nuts",
@@ -1633,7 +2310,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210110-6_1-cornitos-corn-nuts-spanish-tomato.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Surprise guests with the crunchy Spanish Tomato Corn Nut, tempting taste add a spark to your party. Corn Nut is cooked in healthy Sunflower Oil. Cornitos Corn Nuts in a tangy Spanish Tomato flavor adds a kick of taste to your healthy snack. Corn Nuts is a cholesterol-free snack, fit for an active lifestyle. The healthy snack time pack makes your snacking habit healthy and delicious. Corn Nuts comes in the palatable flavor of Spanish Tomato, which is tempting and refreshes the taste buds with its exotic flavor.\nThese are available in easy-to-open and resealable stand-up packs of 150g. They lock in freshness and deliver great taste. Its functional design gives it an advantage of multiple time product use instead of one-time snacking. Corn nuts earlier were an ingredient in Cornitos Party Mix Pack, now it is launched as an independent product in three flavors. Corn is a source of iron and fiber-containing nutrients and essential minerals. Corn Nuts are an ideal snack for house parties, travel time munching, snacking in the office, or post-workout snacking. Cornitos Spanish Tomato Corn Nut is processed through unique technology for a uniform roast and a crunchy bite. The irresistible flavor and tempting taste add a spark to your party",
+   "ingredients": "Roasted Corn Nuts, Edible Vegetable Oil (Sunflower Oil & Corn Oil), Sugar Dehydrated Vegetable Powder (Tomato Powder, Onion Powder, & Garlic Powder), Iodized Salt, Spices & Herbs (Chili, Ginger, Cinnamon, Clove, Oregano, Turmeric Black Pepper & Parsley), Milk Solids, Soya Sauce Powder, Acidity Regulator (Citric Acid- INS 330, Malic Acid- INS 296)",
+   "usageInstructions": "To use as a snack with beaverage",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd. Khasra No. 64",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India Manufactured & Marketed by: Greendot Health Foods Pvt. Ltd. Khasra No. 64, Shiv Ganga Industrial Estate, Bhagwanpur, Roorkee-247667, Dist. Haridwar, Uttarakhand."
+  }
  },
  {
   "title": "Party Mix",
@@ -1686,7 +2371,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137468-8_1-cornitos-nut-mixture-crunchy-party-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your snacking experience with Cornitos Party Mix, a flavourful and nutritious assortment of wasabi green peas, salted peanuts, and crunchy corn nuts. This party-ready blend is the perfect kick-start for any gathering, offering a delightful balance of heat, saltiness, and crunch. Packed with protein, fibre, and essential minerals, this cholesterol-free snack is an ideal choice for house parties, travel, office snacking, or even post-workout refuelling. Indulge in the bold, wasabi-infused green peas, the satisfying crunch of the roasted peanuts, and the savoury delight of the corn nuts - a truly sensational snacking experience that will have your guests coming back for more.",
+   "ingredients": "Peanut, Corn Nut, Coated Green Peas, Corn Starch, Edible Vegetable Oil (Corn Oil), Edible Common Salt, Sugar, Spices & Condiments (Mustard, Cumin, Black Pepper, Chilli, Coriander, Clove, Tamarind, Caribbean Chilli, Parsley, Oregano, Wasabi Powder (5%), Soya Sauce Powder, Acidity Regulator (Citric Acid - INS 330, Acetic Acid - INS 260))",
+   "nutritionalInfo": {
+    "Energy": "144 Kcal",
+    "Total Fat": "8 g",
+    "Saturated Fat": "2 g",
+    "Monounsaturated Fat": "4 g",
+    "Polyunsaturated Fat": "3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "87 mg",
+    "Total Carbohydrate": "13 g",
+    "Dietary Fiber": "2 g",
+    "Total Sugar": "1.5 g",
+    "Added Sugar": "1 g",
+    "Protein": "5 g",
+    "Vitamin A": "0 mcg",
+    "Vitamin C": "0 mg",
+    "Calcium": "0 mg",
+    "Iron": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place.",
+   "manufacturerName": "Khasra No. 64",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012012000185"
+  }
  },
  {
   "title": "Premium Salted Peanuts",
@@ -1739,7 +2451,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112936-8_2-cornitos-peanut-premium-salted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos Premium Peanuts Salted are handpicked and processed through unique roasting technology for a uniform roast and a crunchy bite.",
+   "ingredients": "Peanuts, Edible Vegetable Oil (Palmolin oil ),Edible Common Salt.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lightly Salted Roasted Cashews",
@@ -1774,7 +2491,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40061877_9-cornitos-roasted-cashews-lightly-salted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy premium roasted cashews with the right amount of salt that makes for a perfect healthy snack. The product is highly rich in fibre and proteins. It is also vegetarian and cholesterol-free, which makes it a super healthy snack to munch on at any time of the day. It is also made with premium quality ingredients so that you don't have to compromise with taste and quality.",
+   "ingredients": "Cashew, Edible Common Salt",
+   "nutritionalInfo": {
+    "Calories": "174 kcal",
+    "Calories from Fat": "126 kcal",
+    "Total Fat": "14 g",
+    "Saturated Fat": "2 g",
+    "Monounsaturated Fat": "8 g",
+    "Polyunsaturated Fat": "3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "39 mg",
+    "Total Carbohydrate": "6 g",
+    "Dietary Fiber": "3 g",
+    "Sugar": "1 g",
+    "Protein": "6 g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "0%",
+    "Iron": "0%"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pepper & Herbs Roasted Cashews",
@@ -1827,7 +2570,35 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095086-8_1-cornitos-roasted-cashews-crack-pepper.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in a delightful snacking experience with Cornitos Pop n Crunch Roasted Cashews. These premium quality cashews are roasted to perfection and lightly seasoned with a unique blend of crack pepper and herbs, creating a flavourful and satisfying crunch in every bite. Packed with essential nutrients like fibre, protein, magnesium, and zinc, these cashews offer a nutritious boost to your diet. Relished by people of all ages, these versatile cashews can be enjoyed as a standalone snack, added to trail mixes, or used as a topping for salads. Cholesterol-free and suitable for vegetarians, these roasted cashews are a guilt-free indulgence that nourishes your body and delights your taste buds. Savour the delicious cashews any time of the day, whether you're looking for a quick snack or a lazy afternoon treat with your favourite beverage.",
+   "ingredients": "Cashew, Edible Common Salt, Sugar, Mixed Spices & Herbs (Black Pepper (15%), Chilli, Parsley), Corn Starch, Acidity Regulator (Ins 330), Edible Vegetable Oil (Sunflower)",
+   "nutritionalInfo": {
+    "Serving Size": "1 Oz (28 g)",
+    "Servings Per Container": "7",
+    "Calories": "172",
+    "Calories From Fat": "121",
+    "Total Fat": "13",
+    "Saturated Fat": "3",
+    "Monounsaturated Fat": "8",
+    "Polyunsaturated Fat": "2",
+    "Trans Fat": "0",
+    "Cholesterol": "0",
+    "Sodium": "196",
+    "Total Carbohydrate": "9",
+    "Dietary Fibre": "2",
+    "Sugar": "2",
+    "Protein": "4",
+    "Vitamin A": "0",
+    "Vitamin C": "0",
+    "calcium": "0",
+    "Iron": "0"
+   },
+   "storageInstructions": "* Store in a cool and dry place",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Roasted Almonds",
@@ -1843,7 +2614,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40095088_7-cornitos-roasted-almonds-smoky-barbeque.jpg"
-    }
+    },
+    "barcode": "8906082570054"
    },
    {
     "title": "30g",
@@ -1880,7 +2652,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095088-8_2-cornitos-roasted-almonds-smoky-barbeque.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos : With a strong determination to revolutionize the snacking category, Greendot Health Foods Pvt. Ltd. (GHFPL) embarked on its journey in 2009, to bridge the gap between healthy and delicious. Thereby, creating a strong foothold in the market as a healthylicious snack.\nThe smokey zesty flavours of Barbeque with Premium Roasted California Almonds makes for a delicious healthy snack. The product is highly rich in fibre and proteins. It is also 100% vegeterian and cholestrol free which makes it a super healthy snack to munch on at any time of the day! It is also made with premium quality ingredients so that you don't have to compromise with taste and quality.\nFeatures: They are rich in taste with a hint of smokey flavour. This product contains soya, may contain traces and shell pieces of seeds, peanuts and tree nuts. Contains permitted natural colours and permitted natural flavours. Nitrogen flushed to retain freshness.\nWeight: 200 g",
+   "ingredients": "Almonds, Edible Common Salt, Sugar, Onion Powder, Garlic Powder, Spices and Condiments (Chilli, Black Pepper, Coriandar, Ginger, Cumin), Soya Sauce Powder, Acidity Regulator (INS 330).",
+   "usageInstructions": "Ready to eat.\nStore in a cool and dry place.",
+   "manufacturerName": "Greendot Health Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Super Seeds",
@@ -1896,7 +2675,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40210108_2-cornitos-pop-n-crunch-super-seeds.jpg"
-    }
+    },
+    "barcode": "8906082571686"
    }
   ],
   "images": [
@@ -1921,7 +2701,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210108-7_2-cornitos-pop-n-crunch-super-seeds.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos Super Seeds is a mix of 4 seeds - Sunflower Seeds, Pumpkin Seeds, Flax Seeds, and Watermelon Seeds. It helps in building immunity along with being a nutritional powerhouse filled with the goodness of proteins, vitamins, omega 3, magnesium, and zinc. Cornitos comes with Roasted Pumpkin and Natural sunflower seeds. This combines these two and provides two more seeds all in one pack. They are processed through unique technology for a uniform roast and a crunchy bite. Cornitos Super Seeds is lightly salted for a flavourful experience. Cornitos Super Seeds Pack is Gluten Free with No Artificial Flavours, and No Added Preservatives or Sugar. Each pack is packed with special attention to the quality of the product and freshness. The seed mix is made with imported roasting technology they are lightly salted providing an additional appeal to the tastebuds. It comes in a re-sealable pack giving consumers the advantage of multiple time product use instead of one-time snacking. Cornitos, the Made in India snack brand launches, seed mix in a munchy avatar - Cornitos Super Seeds 200 gms resealable pack. These seeds are great to taste, convenient to carry, and can also be added to salads, Yogurt, Parfait and any other dish you can think of! So, grab a Cornitos Super Seeds pack and munch on with your loved ones.",
+   "ingredients": "Sunflower Seeds, Pumpkin Seeds, Flax Seeds, Watermelon Seeds, Iodized Salt.",
+   "usageInstructions": "To use with salad and as a snack",
+   "manufacturerName": "Greendot Health Foods Pvt. Ltd. Khasra No. 64",
+   "fssaiLicense": "10012012000185",
+   "countryOfOrigin": "India Manufactured & Marketed by: Greendot Health Foods Pvt. Ltd. Khasra No. 64, Shiv Ganga Industrial Estate, Bhagwanpur, Roorkee-247667, Dist. Haridwar, Uttarakhand."
+  }
  },
  {
   "title": "Roasted & Salted Pumpkin Seeds",
@@ -1974,6 +2762,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137471-8_1-cornitos-pumpkin-seeds-roasted-salted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cornitos Roasted Pumpkin Seeds are full of vital nutrients with a uniform roast. Available in handy 30g packs, these roasted seeds could occupy a permanent place in your travel or daily bags. Sprinkled with salt, the perfectly roasted pumpkin seeds are excellent sources of dietary fibre, proteins and minerals like zinc, iron and magnesium. In just 100 g serving, they are dense in calories and loved by children and grown-ups alike. The seeds are hygienically packed and undergo stringent laboratory tests to follow the best food quality standards.",
+   "ingredients": "Pumpkin Kernels, Edible Common Salt",
+   "nutritionalInfo": {
+    "Calories": "172",
+    "Calories from Fat": "127",
+    "Total Fat": "14 g",
+    "Saturated Fat": "3 g",
+    "Monounsaturated Fat": "5 g",
+    "Polyunsaturated Fat": "7 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "111 mg",
+    "Total Carbohydrate": "1 g",
+    "Dietary Fiber": "1 g",
+    "Sugar": "0 g",
+    "Protein": "10 g",
+    "Vitamin A": "0%",
+    "Vitamin C": "0%",
+    "Calcium": "0%",
+    "Iron": "0%"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture.",
+   "manufacturerName": "Khasra No. 64",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012012000185"
+  }
  }
 ]

@@ -1,11 +1,11 @@
 site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
-Soya Chunks,Nutrela Soya Chunks,create,Grocery & Staples > Dal & Pulses > Mixed Pulses,200g ₹47 | 80g ₹15 | 1kg ₹190,200g ₹47 | 80g ₹15 | 1kg ₹190,7,
-Soya Granules,Nutrela Soya Granules,create,Grocery & Staples > Dal & Pulses > Mixed Pulses,200g ₹47 | 1kg ₹190,200g ₹47 | 1kg ₹190,6,
-Kachi Ghani Mustard Oil,Nutrela Kachi Ghani Mustard Oil,create,Grocery & Staples > Edible Oils > Mustard Oil,1L ₹205 | 5L ₹1300,1L ₹205 | 5L ₹1300,8,1L: out of stock online
-Kachi Ghani Mustard Oil Pouch,Nutrela Kachi Ghani Mustard Oil Pouch,create,Grocery & Staples > Edible Oils > Mustard Oil,1L ₹200,1L ₹200,6,1L: out of stock online
-Refined Soyabean Oil,Nutrela Refined Soyabean Oil,create,Grocery & Staples > Edible Oils > Soybean Oil,1L ₹160,1L ₹160,6,
-Refined Sunflower Oil,Nutrela Refined Sunflower Oil,create,Grocery & Staples > Edible Oils > Sunflower Oil,5L ₹1125,5L ₹1125,6,
-Maxx Nuts Almonds,Nutrela Maxx Nuts Almonds,create,Grocery & Staples > Dry Fruits & Nuts > Almonds (Badam),200g ₹275,200g ₹275,7,
-Maxx Nuts Cashews,Nutrela Maxx Nuts Cashews,create,Grocery & Staples > Dry Fruits & Nuts > Cashews (Kaju),200g ₹335,200g ₹335,7,200g: out of stock online
-Maxx Nuts Roasted & Salted Pistachios,Nutrela Maxx Nuts Roasted & Salted Pistachios,create,Grocery & Staples > Dry Fruits & Nuts > Pistachios (Pista),200g ₹395,200g ₹395,7,200g: out of stock online
-Maxx Nuts Walnut Kernels,Nutrela Maxx Nuts Walnut Kernels,create,Grocery & Staples > Dry Fruits & Nuts > Walnuts (Akhrot),200g ₹495,200g ₹495,7,
+Soya Chunks,Nutrela Soya Chunks,update,Grocery & Staples > Dal & Pulses > Mixed Pulses,200g ₹47 | 80g ₹15 | 1kg ₹190,200g ₹47 | 80g ₹15 | 1kg ₹190,7,
+Soya Granules,Nutrela Soya Granules,update,Grocery & Staples > Dal & Pulses > Mixed Pulses,200g ₹47 | 1kg ₹190,200g ₹47 | 1kg ₹190,6,
+Kachi Ghani Mustard Oil,Nutrela Kachi Ghani Mustard Oil,update,Grocery & Staples > Edible Oils > Mustard Oil,1L ₹205 | 5L ₹1300,1L ₹205 | 5L ₹1300,8,1L: out of stock online
+Kachi Ghani Mustard Oil Pouch,Nutrela Kachi Ghani Mustard Oil Pouch,update,Grocery & Staples > Edible Oils > Mustard Oil,1L ₹200,1L ₹200,6,1L: out of stock online
+Refined Soyabean Oil,Nutrela Refined Soyabean Oil,update,Grocery & Staples > Edible Oils > Soybean Oil,1L ₹160,1L ₹160,6,
+Refined Sunflower Oil,Nutrela Refined Sunflower Oil,update,Grocery & Staples > Edible Oils > Sunflower Oil,5L ₹1125,5L ₹1125,6,
+Maxx Nuts Almonds,Nutrela Maxx Nuts Almonds,update,Grocery & Staples > Dry Fruits & Nuts > Almonds (Badam),200g ₹275,200g ₹275,7,
+Maxx Nuts Cashews,Nutrela Maxx Nuts Cashews,update,Grocery & Staples > Dry Fruits & Nuts > Cashews (Kaju),200g ₹335,200g ₹335,7,200g: out of stock online
+Maxx Nuts Roasted & Salted Pistachios,Nutrela Maxx Nuts Roasted & Salted Pistachios,update,Grocery & Staples > Dry Fruits & Nuts > Pistachios (Pista),200g ₹395,200g ₹395,7,200g: out of stock online
+Maxx Nuts Walnut Kernels,Nutrela Maxx Nuts Walnut Kernels,update,Grocery & Staples > Dry Fruits & Nuts > Walnuts (Akhrot),200g ₹495,200g ₹495,7,

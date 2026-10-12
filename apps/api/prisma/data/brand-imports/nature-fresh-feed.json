@@ -41,7 +41,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130365-8_1-nature-fresh-acti-heart-edible-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "NatureFresh Acti Heart is a unique blend of Rice Bran & Canola oil, that through the power of its 5 warriors takes better care of your heart.",
+   "ingredients": "Canola Oil, Rice Brand Oil, High Oleic Acid, Sunflower Oil, Vitamin A, E, D, Antioxidant, Antifoaming Agent.",
+   "manufacturerName": "Cargill India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Acti Heart Edible Oil Pouch",
@@ -79,7 +85,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130364-6_1-nature-fresh-acti-heart-edible-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "NatureFresh Acti Heart is a heart-healthy oil that has Power of 5 Warriors that take better heart care. NatureFresh Acti Heart does more than just cholesterol reduction and hence, takes better heart care than your current heart oil.",
+   "ingredients": "Canola Oil, Rice Brand Oil, High Oleic Acid, Sunflower Oil, Vitamin A, E, D, Antioxidant, Antifoaming Agent.",
+   "manufacturerName": "Cargill India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kachi Ghani Mustard Oil",
@@ -95,7 +107,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000473_5-nature-fresh-kachi-ghani-pure-mustard-oil.jpg"
-    }
+    },
+    "barcode": "8906006331129"
    }
   ],
   "images": [
@@ -123,7 +136,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000473-8_1-nature-fresh-kachi-ghani-pure-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "We know that you don’t compromise on the quality and purity of the food that you put on your family’s plate. That’s why NatureFresh Purita Premium KachiGhani Mustard Oil ensures that the mustard oil is in its purest form with a fine balance of aroma, colour, and thickness for the perfect tasting food; be it Chatpati Bhindi or Bharwa Karela. It is made from the choicest mustard seeds, tested and certified for the highest quality, that are cold-pressed with hands-free automated packaging so the oil remains completely untouched by hand, retaining the purity and natural goodness.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "5g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrates": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "100 g",
+    "Saturated Fatty Acids": "NMT 10 g",
+    "Monounsaturated Fatty Acids": "NMT 75 g",
+    "Polyunsaturated Fatty Acids": "NMT 32 g",
+    "Omega 3": "NMT 12 g",
+    "Omega 6": "NMT 20 g",
+    "Trans Fatty Acids": "NMT 1g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "Ready to use. Store in a dry and hygienic place in an airtight container.",
+   "manufacturerName": "Cargil India Private Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Kachi Ghani Mustard Oil",
@@ -139,7 +175,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40070779_7-nature-fresh-mustard-oil.jpg"
-    }
+    },
+    "barcode": "8906006330337"
    },
    {
     "title": "2L",
@@ -185,7 +222,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068247_7-nature-fresh-kachi-ghani-pure-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "We know that you don't compromise on the quality and purity of the food that you put on your family's plate. That's why NatureFresh Purita Premium KachiGhani Mustard Oil ensures that the mustard oil is in its purest form with a fine balance of aroma, colour and thickness for the perfect tasting food - be it Chatpati Bhindi or Bharwa Karela. It is made from the choicest mustard seeds, tested and certified for the highest quality, that are cold-pressed with hands-free automated packaging so the oil remains completely untouched by hand retaining the purity and natural goodness.",
+   "ingredients": "Mustard Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "100 g",
+    "Saturated Fatty Acids": "NMT+ 10 g",
+    "Monounsaturated Fatty Acids": "NMT+ 75 g",
+    "Polyunsaturated Fatty Acids": "NMT+ 32 g",
+    "Omega 3": "NMT+ 12 g",
+    "Omega 6": "NMT+ 20 g",
+    "Trans Fatty Acids": "NMT+ 1g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Cargill India Pvt. Ltd",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Refined Soyabean Oil",
@@ -201,7 +262,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000472_11-nature-fresh-soyabean-oil-acti-lite-refined.jpg"
-    }
+    },
+    "barcode": "8906006330726"
    },
    {
     "title": "4.2kg",
@@ -238,7 +300,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000472-8_1-nature-fresh-soyabean-oil-acti-lite-refined.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Are you trying to find the perfect balance between eating your favourite food and adopting an active lifestyle? Then Nature Fresh Refined Soyabean Oil is the right choice of cooking oil for your family. When cooked in Nature Fresh oil, your favourite food will absorb 15% less oil and also be enriched with the goodness of Vitamins A, D, and E. We understand that you don't compromise on the quality of food, and neither do we. Our 6-stage extensive refining process ensures that you get the best quality of cooking oil.",
+   "ingredients": "Refined Soyabean Oil, Antioxidant (INS 319), Vitamins (A, D), Antifoaming Agent (INS 900a).",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "5g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total Sugars": "0g",
+    "Added Sugars": "0g",
+    "Total Fat": "100g",
+    "Saturated Fatty Acids": "NMT 21g",
+    "Monounsaturated Fatty Acids": "NMT 39g",
+    "Polyunsaturated Fatty Acids": "NMT 64g",
+    "Omega 3": "NMT 10g",
+    "Omega 6": "NMT 54g",
+    "Trans Fatty Acids": "NMT 2g",
+    "Sodium": "0 mg",
+    "Added Vitamin A RE": "750 mcg",
+    "Added Vitamin D": "11.25 mcg",
+    "Natural Vitamin E": "30 mg"
+   },
+   "manufacturerName": "Cargill India Private Limited",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Refined Sunflower Oil",
@@ -254,7 +343,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000145_9-nature-fresh-refined-sunflower-oil-acti-lite.jpg"
-    }
+    },
+    "barcode": "8906006330368"
    }
   ],
   "images": [
@@ -282,6 +372,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000145-8_1-nature-fresh-refined-sunflower-oil-acti-lite.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the perfect balance between indulgence and a healthy lifestyle with NatureFresh Acti-Lite Refined Sunflower Oil. Crafted with a meticulous 6-stage refining process, this versatile cooking oil ensures your favourite dishes absorb 15% less oil while being enriched with the goodness of vitamins A, D, and E. Enjoy guilt-free culinary delights, as the oil's unique formulation allows for lower oil absorption without compromising on flavour or texture. Whether you're sautéing, frying, or baking, NatureFresh Acti-Lite Refined Sunflower Oil is the ideal choice for nourishing, flavourful meals that support an active, healthy lifestyle. Indulge in the rich, smooth taste and experience the difference quality makes in your cooking.",
+   "ingredients": "Edible Vegetable Oil (Sunflower Oil), Vitamins (A,E,D), Antifoaming Agent (Dimethyl Polysiloxane)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "900 kcal",
+    "Protein": "0 g",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "100 g",
+    "Saturated Fatty Acids": "NMT+ 16 g",
+    "Monounsaturated Fatty Acids": "NMT+ 40 g",
+    "Polyunsaturated Fatty Acids": "NMT+ 67 g",
+    "Trans Fatty Acids": "NMT 2 g",
+    "Sodium": "0 mg",
+    "Added Vitamin A": "750 mcg",
+    "Added Vitamin D": "11.25 mcg",
+    "Natural Vitamin E": "30 mg"
+   },
+   "storageInstructions": "Store under cool, dry conditions\nTransfer contents to an airtight container after opening",
+   "manufacturerName": "Cargill India Pvt Ltd",
+   "fssaiLicense": "10012011000442",
+   "countryOfOrigin": "India"
+  }
  }
 ]

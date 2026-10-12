@@ -59,6 +59,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/102761-8_1-kurkure-namkeen-masala-munch.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Masala Munch is a classic Kurkure flavour, offering a perfect blend of spice and crunch. This delicious snack delivers a tantalizing taste experience, making it an ideal companion for any time of the day. Each bite of Masala Munch bursts with the bold and zesty flavours that Indian snack lovers crave, ensuring it is a favourite for all ages.",
+   "ingredients": "Rice Meal (42.7%), Edible Vegetable Oil (Palmolein Oil), Corn Meal (19.7%), Spices and Condiments (Onion Powder, Red Chilli Powder, Amchur Powder, Coriander Seed Powder, Garlic Flakes & Powder, Ginger Powder, Black Pepper Powder, Turmeric Powder, Spice Extract, Fenugreek), Gram Meal (3.3%), Salt, Sugar, Tomato Powder (0.1%), Citric Acid (330), Dextrose, Milk Solids, Edible Starch",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "556 kcal",
+    "Protein": "6.4g",
+    "Carbohydrate": "56.8g",
+    "Total Sugars": "1.7g",
+    "Added Sugars": "0.8g",
+    "Total Fat": "33.7g",
+    "Saturated Fat": "15.2g",
+    "Trans Fat": "0.1g",
+    "Sodium": "694 mg"
+   },
+   "countryOfOrigin": "India"
+  }
  }
 ]

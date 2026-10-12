@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000805_3-haldirams-namkeen-all-in-one-del.jpg"
-    }
+    },
+    "barcode": "8904063235350"
    },
    {
     "title": "400g",
@@ -50,7 +51,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000805-8_1-haldirams-namkeen-all-in-one-del.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldirams began as a small shop in Bikaner, a land famed for its savouries, leather-faced pipe players, and fierce warriors. In 1937, two brothers from a noble family in Bikaner started a small namkeens shop. Their dream of doing something big turned out to be the Haldirams of today. What began as a small-town enterprise in India is now a global phenomenon. Haldirams is a way of life for Indians all over the globe. Savour the essence of India with Haldirams All In One Namkeen. A delectable mix of crunchy sev, zesty spices, and savoury bites, it's the ultimate snack indulgence. Immerse yourself in the rich tradition of Haldirams, where every bite tells a tale of authentic flavours and timeless quality. Elevate your snacking experience!",
+   "ingredients": "Gram Pulse Flour, Edible Vegetable Oil (Cotton Seed, Corn & Palmolein Oil), Tepary Beans Flour, Gram Pulse, Split Green Gram, Lentil, Potatoes, Cornflakes (Derived from Corn), Rice Flakes, Rice Powder, Edible Starch, Sago, Raisins, Cashew Nuts, Peanuts, Sugar Powder, Spinach Powder, Edible Common Salt Powder, Fennel, Sesame Seeds, Spices & Condiments (Red Chilli Powder, Turmeric Powder, Mango Powder, Black Pepper Powder, Ginger Powder, Clove Powder, Mace Powder, Nutmeg Powder, Onion Powder, Garlic Powder, Cardamom Powder, Coriander, Mint Leaves Powder, Cumin Powder, Asafoetida Powder), Acidity Regulator (INS 330 and INS 296), Anticaking Agent (INS 551), Leavening Agent (INS 500)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "554.2 kcal",
+    "Protein": "14.2 g",
+    "Total Carbohydrate": "43.8 g",
+    "Sugars": "9.3 g",
+    "Total Fat": "35.8 g",
+    "Saturated Fat": "10.5 g",
+    "Trans Fat": "0.1 g"
+   },
+   "manufacturerName": "Haldiram Foods International Pvt. Ltd. (Unit - Kasana) 20 Km Stone Kh. No. 405 Vill. Gumthala Tah. Kamptee Bhandara Road",
+   "fssaiLicense": "10012022000308",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aloo Bhujia",
@@ -103,7 +121,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/263128-8_1-haldirams-namkeen-aloo-bhujia.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "An aloo bhujia packet is the perfect companion to have while you're working, studying, travelling, or simply sitting at home, thinking of a delicious snack. The ultimate comfort snack - spicy potato and besan noodles that will keep you coming back for more! This classic Haldiram's offering is perfect not just to top your salads, chaats and bhel, but also to have all alone, without any accompaniment.",
+   "ingredients": "Potato, Refined Palmolein Oil, Bengal Gram Flour (Besan), Potato Flakes, Potato Starch, Tapioca Starch, Tepary Beans (Moth Dal) Flour, Edible Common Salt, Red Chilli Powder, Black Salt, Acidity Regulator (INS 330), Black Pepper, Clove, Dried Ginger Powder, Dried Garlic Powder, Cumin Powder, Bay Leaf, Nutmeg, Cinnamon, Turmeric, Mint Leaves, Natural Flavouring Substances, Nature Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50 g",
+    "Energy Value (kcal)": "569",
+    "Protein (g)": "8.68",
+    "Carbohydrate (g)": "46.1",
+    "Total Sugars (g)": "0.25",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "38.12",
+    "Saturated Fat (g)": "16.5",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "615",
+    "Dietary Fiber (g)": "3.56",
+    "RDA": "Per serve (%) contribution to Recommended Dietary Allowance (RDA) calculated on the basis of 2000 kcal energy"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "Haldirams' price is also quite reasonable. Buy Haldirams' snack online now and have it delivered right to your doorstep! Now no more hassle of standing in long queues at billing counters. |"
+  }
  },
  {
   "title": "Bhujia Sev",
@@ -192,7 +232,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003289_3-haldirams-namkeen-bhujia-sev.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldirams Bhujia Sev is an authentic namkeen. This classic snack is made with chickpea flour and some spices. It is a popular Indian snack that originated from Rajasthan. It is a great accompaniment to savoury snacks, adding texture to classic Indian snacks. These are delicious and flavourful snacks. They are crispy, flavourful, and textured. This delightful snack can be eaten as it is.",
+   "ingredients": "0",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "50 g",
+    "Energy": "2478 kJ",
+    "Protein": "12.93 g",
+    "Fat, total": "43.50 g",
+    "saturated": "11.5 g",
+    "Carbohydrate": "37.14 g",
+    "sugar": "0 g",
+    "Sodium": "771 mg"
+   },
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ratlami Sev",
@@ -208,7 +265,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100022493_6-haldirams-namkeen-ratlami-sev.jpg"
-    }
+    },
+    "barcode": "8904004400458"
    }
   ],
   "images": [
@@ -233,7 +291,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100022493-7_4-haldirams-namkeen-ratlami-sev.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldirams Ratlami Sev is an authentic namkeen. This classic snack is made with chickpea flour and some spices. It is a popular Indian snack that originated in Rajasthan. It is a great accompaniment to savoury snacks, adding texture to classic Indian snacks. These are delicious and flavourful snacks. They are crispy, flavourful, and textured. This delightful snack can be eaten as it is.",
+   "ingredients": "Bengal Gram Flour, Edible Vegetable Oil, Ajwain, Cumin, Black Pepper, Clove, Iodised Salt, Red Chilli, Turmeric",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "587 kcal",
+    "Protein": "13.42 g",
+    "Carbohydrate": "38.76 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Dietary Fiber": "6.22 g",
+    "Total Fat": "42.04 g",
+    "Saturated Fat": "16.82 g",
+    "Trans Fat": "<0.1 g",
+    "Sodium": "996.75 mg"
+   },
+   "manufacturerName": "Haldiram Foods International Private Ltd 20 Km Stone Vill. Gumthala Bhandara Road Nagpur - 441104 (M.S.)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Moong Dal Namkeen",
@@ -329,7 +407,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264457_5-haldirams-namkeen-chana-choor.jpg"
-    }
+    },
+    "barcode": "8904004400861"
    }
   ],
   "images": [
@@ -354,7 +433,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264457-7_1-haldirams-namkeen-chana-choor.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Delicious bits of spicy and rich chana dal, a mouthwatering delicacy from the house of Haldiram's. Serve with freshly chopped tomatoes, onions and a dash of lime juice to whip up a nutritious evening snack.",
+   "ingredients": "Whole Bengal Gram Flakes (65%), Refined Palmolein Oil, Cumin, Iodised Salt, Black Salt, Red Chilli, Refined Sugar, Acidity Regulator (INS 330), Dried Ginger Powder, Turmeric",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50 g",
+    "Energy": "517 kcal",
+    "Carbohydrate": "50.53 g",
+    "Sugar": "0.5 g",
+    "Total Fat": "28.27 g",
+    "Saturated Fatty Acids": "10.07 g",
+    "Monounsaturated Fatty Acids": "8.94 g",
+    "Polyunsaturated Fatty Acids": "3.3 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "15.1 g",
+    "Dietary Fiber": "5.16 g",
+    "Sodium": "301 mg",
+    "Cholesterol": "0 mg",
+    "RDA": "Per serve (*) contribution to Recommended Dietary Allowance (RDA) calculated on the basis of 2000 kcal energy"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chatpata Dal Namkeen",
@@ -370,7 +473,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264460_4-haldirams-namkeen-chatpata-dal.jpg"
-    }
+    },
+    "barcode": "8904004404760"
    }
   ],
   "images": [
@@ -395,7 +499,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264460-7_2-haldirams-namkeen-chatpata-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldirams Chatpata Dal is one of their zesty and yummy snacks to be liked by most people. Haldiram Chatpata Dal is a pleasant mix of Bengal Gram, Peanut Oil, Pulse, Salt, Mix Spices and Citric Acid. It is a delicious, warm and sour treat of gram that is crunchy and brittle; you get a burst of peppery flavour in your mouth.",
+   "ingredients": "Split Pulse Bengal Gram (Chana Dal), Refined Palmolein Oil, Red Chilli, Iodised Salt, Black Pepper, Clove Powder, Black Salt, Acidity regulator & Antioxidant (E 330), Cardamom, Cinnamon, Cumin, Bay Leaves, Nutmeg, Dried Mango Powder, Dried Ginger Powder, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "481 kcal",
+    "Carbohydrate": "54.25 g",
+    "Sugar": "0 g",
+    "Total Fat": "20.51 g",
+    "Saturated Fatty Acids": "8.93 g",
+    "Monounsaturated Fatty Acids": "7.15 g",
+    "Polyunsaturated Fatty Acids": "1.80 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "19.89 g",
+    "Fiber": "0.68 g",
+    "Sodium": "491 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dal Biji",
@@ -411,7 +537,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264453_3-haldirams-namkeen-dal-biji.jpg"
-    }
+    },
+    "barcode": "8904004401226"
    }
   ],
   "images": [
@@ -433,7 +560,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264453-6_2-haldirams-namkeen-dal-biji.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the perfect balance of spicy and tangy flavours with Haldiram's Nagpur Dal Biji, the ultimate snacking delight. Crafted with authentic Indian spices and ingredients, this crunchy and crusty mix promises a lip-smacking, distinctive taste in every bite. Featuring a delightful blend of fried gram flour noodles, brown lentils, and musk melon seeds, this snack is a favourite among children and adults alike.\nEnjoy the salty, tangy, and peppery goodness of this crispy treat, either as a side dish or a guilt-free indulgence. With its high-quality ingredients and authentic flavours, Haldiram's Dal Biji is the perfect choice for those seeking a truly satisfying and flavourful snacking experience.",
+   "ingredients": "Bengal Gram Flour (Besan), Refined Palmolein Oil, Red Lentils (Masur Whole), Iodised Salt, Red Chilli, Black Pepper, Spinach, Cumin, Clove, Nutmeg, Black Salt, Dried Ginger Powder, Cinnamon, Bay Leaves, Dried Mango Powder, Mint Leaves, Cardamom, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "540 kcal",
+    "Carbohydrate": "45.41 g",
+    "Sugar": "0 g",
+    "Total Fat": "32.88 g",
+    "Saturated Fatty Acids": "13.65 g",
+    "Monounsaturated Fatty Acids": "10.14 g",
+    "Polyunsaturated Fatty Acids": "4.43 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "15.64 g",
+    "Fiber": "0.62 g",
+    "Sodium": "388 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Khatta Meetha",
@@ -513,7 +662,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003281_2-haldirams-namkeen-khatta-meetha.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's Namkeen Khatta Meetha offers a delightful blend of sweet and tangy flavours in every bite. This popular Indian snack mix combines crunchy sev, spicy peanuts, and crispy fried lentils, seasoned with a perfect balance of spices. Ideal for snacking or serving at gatherings, it provides a burst of taste that satisfies both sweet and savoury cravings. Haldiram's commitment to quality ensures each piece is crisp and full of authentic flavours, making Khatta Meetha a beloved choice among snack enthusiasts worldwide. Enjoy the irresistible combination of textures and tastes with Haldiram's Namkeen Khatta Meetha.",
+   "ingredients": "Bengal Gram Flour (Besan), Rice Flakes, Split Bengal Gram (Chana Dal), Groundnuts (Peanuts), Red Chilli, Ajwain, Turmeric, Raisins, Edible Vegetable Oils, Sago",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50g",
+    "Energy Value (kcal)": "530 kcal",
+    "Protein (g)": "9.26 g",
+    "Carbohydrate (g)": "57.38 g",
+    "Total Sugars (g)": "13.1 g",
+    "Added Sugars (g)": "13.1 g",
+    "Total Fat (g)": "21.8 g",
+    "Saturated Fat (g)": "12.48 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "368 mg",
+    "Dietary Fiber (g)": "4.01 g",
+    "% Contribution to RDA": "13.4"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "This snack can be enjoyed anytime, anywhere.\nOpen a pack when you have friends around and those munchies strike.\nWork it into your teatime routine for a subtle street food flavour.\nAlso, enjoy it on the go with this easy-to-carry pack!"
+  }
  },
  {
   "title": "Navratan Mixture",
@@ -529,7 +700,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/263124_4-haldirams-namkeen-navratan-mix.jpg"
-    }
+    },
+    "barcode": "8904004412956"
    }
   ],
   "images": [
@@ -557,7 +729,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/263124-8_2-haldirams-namkeen-navratan-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the royal flavours of Haldirams Navratan Mix, a delightful blend of premium ingredients carefully crafted to satisfy your cravings. This delicious mix of dried nuts, seasoned lentils, and aromatic Indian spices offers an exquisite taste and excellent crunchiness. Enjoy the traditional Indian flavour and aroma in every bite, perfect for an indulgent tea-time treat. Haldirams Navratan Mix is made with vegetable oil, ensuring a high-quality snacking experience. Elevate your taste buds with this royal snacking delight.",
+   "ingredients": "Gram Pulse Flour, Edible Vegetable Oil, Gram Pulse, Lentil, Peanuts, Rice Flakes, Potatoes, Tepary Beans Flour, Iodised Salt, Black Salt Powder, Spinach Powder, Rice Powder, Edible Starch, Spices & Condiments",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "518.7 kcal",
+    "Protein": "20.3 g",
+    "Total Carbohydrate": "43.0 g",
+    "Total Sugars": "2.7 g",
+    "Added Sugars": "0.0 g",
+    "Dietary Fiber": "3.5 g",
+    "Total Fat": "29.5 g",
+    "Saturated Fat": "7.2 g",
+    "Trans Fat": "<0.1# g",
+    "Sodium": "798.5 mg"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Panchratan Mixture",
@@ -595,7 +788,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/291244-6_3-haldirams-mixture-panchratan.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful flavours of Haldiram's Panchratan Mixture, a delectable blend of sour and sweet rice flakes, crispy potato sticks, and nourishing dry fruits. Expertly crafted by the renowned Haldiram's Nagpur, this snack is a true delight for the senses. Bursting with a mildly sweet and spicy profile, the mixture offers a satisfying and nutritious snacking experience, packed with fibre, protein, and iron.\nWhether you're enjoying it as a midday treat, serving it at a gathering, or savouring it while watching your favourite film, Haldiram's Panchratan Mixture is sure to captivate your taste buds and leave you craving more. Crafted with the finest quality ingredients and expertly blended spices, this traditional Indian recipe is a must-try for all snack enthusiasts.",
+   "ingredients": "Potato, Cashews, Almonds, Raisins, Edible Oils, Rice Flakes",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "526 kcal",
+    "Protein": "6.61 g",
+    "Carbohydrate": "52.61 g",
+    "Total Sugars": "10.3 g",
+    "Added Sugars": "10 g",
+    "Dietary Fiber": "4.6 g",
+    "Total Fat": "32.13 g",
+    "Saturated Fat": "13.45 g",
+    "Trans Fat": "<0.1 g",
+    "Sodium": "480 mg",
+    "RDA": "%RDA Daily values are based on 2000 kcal diet. 1 Per Serve size is 20g; 10 Serving in this pack.# Limit of Quantification."
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mixture Namkeen",
@@ -611,7 +825,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/263120_9-haldirams-namkeen-mixture.jpg"
-    }
+    },
+    "barcode": "8904004400939"
    },
    {
     "title": "48g",
@@ -648,7 +863,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002981_1-haldirams-namkeen-mixture.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's Mixture Namkeen is a beloved Indian snack known for its unique blend of spices and flavours. This crispy, savoury treat combines an assortment of ingredients such as crunchy sev, lentils, peanuts, and spicy boondi. Each bite offers a delightful mix of textures and tastes, making it a perfect companion for tea-time or a quick snack. Haldiram's ensures quality with hygienic preparation and packaging, maintaining the authentic Indian flavours that have made it a household favourite. Ideal for sharing or enjoying solo, Haldiram's Mixture Namkeen is a versatile snack that brings a burst of deliciousness with every mouthful.",
+   "ingredients": "Split Pulse Bengal Gram (Chana Dal), Edible Vegetable Oils, Bengal Gram Flour (Besan), Groundnuts (Peanuts), Hydrolysed Vegetable Protein (Soya)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20 g",
+    "Energy (Kcal)": "533",
+    "Protein (g)": "16.03",
+    "Carbohydrate (g)": "46.44",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Dietary Fiber (g)": "11.83",
+    "Total Fat (g)": "31.49",
+    "Saturated Fat (g)": "13.22",
+    "Trans Fat (g)": "<0.1#",
+    "Sodium (mg)": "834.82"
+   },
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rajasthan Mix Mixture",
@@ -664,7 +899,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/101316_2-haldirams-mixture-rajasthan-mix.jpg"
-    }
+    },
+    "barcode": "8904004400946"
    }
   ],
   "images": [
@@ -686,7 +922,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/101316-6_1-haldirams-mixture-rajasthan-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldirams Mixture is a delightful, authentic Indian snack that captures the taste of tradition. Inspired by a small namkeen shop in Bikaner, this all-natural, wholesome and homemade mixture is a blend of flavourful ingredients like gram flour, wholesome grains, peanuts, sev and more. With a crunchy texture and vibrant colours, this mixture is a true delight for the senses.\nEnjoy it as a tasty tea-time snack or a standalone treat that your family and friends are sure to love. Haldiram's is a name trusted by millions of snack lovers worldwide, and this mixture is a testament to their commitment to quality and tradition. Indulge in the mouthwatering flavours and satisfying crunch of Haldirams Mixture today.",
+   "ingredients": "Split Pulse Bengal Gram (Chana Dal), Refined Palmolein Oil, Bengal Gram Flour (Besan)(10%), Red Lentils (Masur Whole) (8%), Groundnut (Peanuts)(7%), Potato, Rice Flakes, Spinach, Edible Common Salt, Red Chilli Powder, Acidity Regulator (INS 330), Black Salt, Black Pepper, Pipal, Coriander Powder, Dried Ginger Powder, Clove Powder, Cumin Powder, Nutmeg, Bay Leaf, Turmeric Powder, Dried Mango Powder, Fennel Seed, Cinnamon, Garlic Powder, Hydrolysed Vegetable Protein (Soya), Colour (INS 141), Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "50 g",
+    "Energy": "2236 kJ",
+    "Protein": "15.81 g",
+    "Fat, total": "32.27 g",
+    "saturated": "13.20 g",
+    "Carbohydrate": "45.11 g",
+    "sugar": "0 g",
+    "Sodium": "675 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Store in an air-tight container once opened",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cornflakes Mixture",
@@ -702,7 +956,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100022519_6-haldirams-mixture-cornflakes.jpg"
-    }
+    },
+    "barcode": "8904004401981"
    },
    {
     "title": "30g",
@@ -748,7 +1003,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40079769_3-haldirams-namkeen-cornflakes-mixture.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic and delightful Haldirams Cornflakes Mixture, a captivating blend of crunchy cornflakes, savoury nuts, and aromatic spices. This irresistible snack offers a unique and tantalising experience for your taste buds. Crafted with high-quality ingredients, each bite delivers a burst of flavour and texture, with the satisfying crunch of the cornflakes complemented by the rich taste of roasted nuts and the subtle heat of the spices. Whether you're enjoying it as a mid-day pick-me-up or serving it to guests, this mixture is sure to be a crowd-pleaser.\nPacked with essential vitamins and minerals, Haldirams Cornflakes Mixture is a great source of energy, making it the perfect snack for busy days or when you need a quick and satisfying indulgence. Versatile and delicious, this mixture can be enjoyed on its own or used as a crunchy topping to elevate your favourite dishes, adding a delightful flavour and texture.",
+   "ingredients": "Corn Flakes (32%), Edible Vegetable Oil (Palmolein, Cotton Seed, Corn, Sunflower, Rice Bran), Potato, Cashew Nuts, Raisin, Refined Sugar, Bengal Gram Flour (Besan), Groundnut (Peanuts), Spinach, Tapioca Starch, Iodised Salt, Fennel, Dried Mango Powder, Curry Leaves, Red Chilli Powder, Black Salt, Sesame Seed, Black Pepper, Pipal, Dried Ginger Powder, Colours (INS 141, INS 160c(i)), Cumin, Bay Leaves, Clove, Nutmeg, Cinnamon, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "540 kcal",
+    "Protein": "10.79 g",
+    "Carbohydrate": "52.17 g",
+    "Total Sugars": "11.81 g",
+    "Added Sugars": "9.05 g",
+    "Dietary Fiber": "3.18 g",
+    "Total Fat": "31.27 g",
+    "Saturated Fat": "13.13 g",
+    "Trans Fat": "<0.1 g",
+    "Sodium": "235 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bhel Puri",
@@ -764,7 +1039,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/215757_5-haldirams-namkeen-bhel-puri.jpg"
-    }
+    },
+    "barcode": "8904004401486"
    },
    {
     "title": "540g",
@@ -801,7 +1077,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/215757-8_1-haldirams-namkeen-bhel-puri.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A generous mix of crispy sev, bhel, and potato bits, Haldiram's Bhel Puri is a lip-smacking take on India’s beloved street food. Perfect on its own or whipped up with some chopped fresh onions and tomatoes, the authentic Mumbai style.",
+   "ingredients": "Puffed Rice (16%), Edible Vegetable Oil (Palmolein, Cotton Seed, Corn, Sunflower, Rice Bran), Split Pulse Bengal Gram (Chana Dal) (10%), Groundnut (Peanuts) (8%), Bengal Gram Flour (Besan) (8%), Refined Wheat Flour (Maida) (8%), Rice Flakes (4%), Whole Bengal Gram Flakes (2%), Tapioca Starch, Iodised Salt, Turmeric, Cumin, Coriander Powder, Curry Leaves, Red Chilli, Black Salt, Acidity Regulator (INS 330), Dried Ginger Powder, Black Pepper, Ajwain, Cardamom, Clove, Cinnamon, Nutmeg, Bay Leaf, Asafoetida, Refined Sugar, Green Chilli, Red Chilli, Tamarind Powder, Dates, Iodised Salt, Acidity Regulator (INS 330), Black Pepper, Dried Ginger Powder, Clove, Dried Garlic Powder, Cardamom, Cumin Powder, Nutmeg, Bay Leaf, Black Salt, Cinnamon, Thickener (INS 401), Preservative (INS 211), Preservative (INS 250), Preservative (INS 260)",
+   "nutritionalInfo": {
+    "Energy": "462 kcal",
+    "Protein": "8.86 g",
+    "Carbohydrate": "42.81 g",
+    "Total Sugars": "8.08 g",
+    "Added Sugars": "8.08 g",
+    "Dietary Fibre": "3.21 g",
+    "Total Fat": "28.41 g",
+    "Saturated Fat": "12.58 g",
+    "Trans Fat": "<0.1 g",
+    "Sodium": "671 mg",
+    "Serving Size": "20"
+   },
+   "manufacturerName": "Haldiram Snacks Food Private Limited Unit Kasana",
+   "fssaiLicense": "10001401100191",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lemon Bhel",
@@ -863,7 +1159,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003287_9-haldirams-namkeen-lemon-bhel.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Mumbai's iconic Lemon Bhel with Haldiram's delectable offering. Crafted by expert chefs, this tantalising snack combines the refreshing zest of lemon with a medley of puffed rice, spices, dry fruits, and crunchy nuts. The burst of tangy lemon infuses the crisp puffed rice and sev, creating a delightful contrast with the savoury and spicy elements. Boasting a light and airy texture, this snack delivers a satisfying crunch in every bite, making it the perfect companion for a midday pick-me-up or a casual gathering.\nWith its ready-to-eat convenience and authentic street food flavour, Haldiram's Lemon Bhel brings the vibrant tastes of Mumbai right to your doorstep, allowing you to indulge in a truly indulgent and flavourful experience.",
+   "ingredients": "Puffed Rice (40%), Refined Palmolein Oil, Bengal Gram Flour (Besan), Split Pulse Bengal Gram (Chana Dal), Curry Leaves, Edible Common Salt, Turmeric, Lemon Powder, Acidity Regulator (INS 330), Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50 g",
+    "Energy Value (kcal)": "509",
+    "Protein (g)": "9.45",
+    "Carbohydrate (g)": "61.03",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "24.53",
+    "Saturated Fat (g)": "9.15",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "568",
+    "Dietary Fiber (g)": "3.11",
+    "RDA": "Per serve (%) contribution to Recommended Dietary Allowance (RDA) calculated on the basis of 2000 kcal energy"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fatafat Bhel",
@@ -879,7 +1198,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264463_5-haldirams-fatafat-bhel.jpg"
-    }
+    },
+    "barcode": "8904004401530"
    },
    {
     "title": "42g",
@@ -916,7 +1236,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264463-8_2-haldirams-fatafat-bhel.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's Fatafat Bhel is a zesty, crunchy delight that brings street food magic to your snack time. Bursting with tangy tamarind, spicy masala, and crispy rice puffs, it promises an authentic taste of India. Perfect for quick cravings or party nibbles, it’s a flavourful escape in every bite.",
+   "ingredients": "Ingredients: Puffed Rice 16%, Refined Palmolein Oil,\nSplit Pulse Bengal Gram Chana Dal 10%, Groundnut Peanut 8%, Bengal Gram Flour\nBesan 6%, Refined Wheat Flour Maida 6%, Rice Flakes 4%, Whole Bengal Gram\nFlakes 3%, Iodised Salt, Turmeric, Cumin, Coriander Powder, Curry Leaves, Red\nChilli, Black Salt, Acidity Regulator E330, Antioxidant E330, Dried Ginger\nPowder, Black Pepper, Ajowan, Cardamom, Clove, Cinnamon, Nutmeg, Bay Leaf,\nAsafoetida\nIngredients Of Red Green And Tamarind Sauce:\nRefined Sugar, Green\nChilli, Red Chilli, Tamarind Powder, Dates, Iodised Salt, Acidity Regulator\nE330, Black Pepper, Dried Ginger Powder, Clove, Dried Garlic Powder, Cardamom,\nCumin Powder, Nutmeg, Bay Leaves, Black Salt, Cinnamon, Thickener E401, Preservative\nE211, E202, E260\nAllergy Advice:\nContains Peanut, Gluten\nMay Contain Tree Nuts, Soya, Milk, Mustard Seed, Sesame Seed",
+   "nutritionalInfo": {
+    "Energy": "462 kcal",
+    "Carbohydrate": "42.81 g",
+    "Sugar": "8.08 g",
+    "Total Fat": "28.41 g",
+    "Saturated Fatty Acids": "12.58 g",
+    "Monounsaturated Fatty Acids": "8.82 g",
+    "Polyunsaturated Fatty Acids": "3.19 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "8.86 g",
+    "Fibre": "0.62 g",
+    "Sodium": "671 mg",
+    "Cholesterol": "0 mg"
+   },
+   "manufacturerName": "Haldiram Snacks Food Private Limited Unit Kasana",
+   "fssaiLicense": "10001401100191",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lite Chiwda",
@@ -969,7 +1310,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002429-8_1-haldirams-namkeen-lite-chiwda.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldirams Lite Chiwda is a puffed rice snack that is slightly sweet and very crunchy. It is prepared using high-quality ingredients and includes the goodness of chickpea flour and other healthy ingredients. So now, lighten up your tea breaks with Haldirams Lite Chiwda.",
+   "ingredients": "Rice Flakes, Refined Palmolein Oil, Bengal Gram Flour (Besan), Tapioca Starch, Refined Sugar, Iodised Salt, Turmeric",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "512 kcal",
+    "Carbohydrate": "55.55 g",
+    "Sugar": "2 g",
+    "Total Fat": "28.62 g",
+    "Saturated Fatty Acids": "11.99 g",
+    "Monounsaturated Fatty Acids": "12.62 g",
+    "Polyunsaturated Fatty Acids": "8.93 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "8.03 g",
+    "Fiber": "1.32 g",
+    "Sodium": "780 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat. |"
+  }
  },
  {
   "title": "Phalahari Chiwda",
@@ -1013,7 +1375,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100022522-8_2-haldirams-namkeen-phalhari-chiwda.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the exquisite blend of crispy potato sticks, peanuts, and savoury spices with Haldiram's Phalhari Chiwda Namkeen. This light and delightful snack offers a perfect balance of crunch and flavour, ideal for any occasion. Enjoy a guilt-free treat that's both satisfying and delicious, crafted with traditional Indian expertise.",
+   "ingredients": "0",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "50 g",
+    "Energy": "587 kcal",
+    "Carbohydrate": "37.89 g",
+    "Sugar": "4.23 g",
+    "Total Fat": "42.08 g",
+    "Saturated Fatty Acids": "8.61 g",
+    "Monounsaturated Fatty Acids": "20.57 g",
+    "Polyunsaturated Fatty Acids": "6.70 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "14.12 g",
+    "Fiber": "1.13 g",
+    "Sodium": "220 mg",
+    "Cholesterol": "0 mg"
+   }
+  }
  },
  {
   "title": "Boondi",
@@ -1029,7 +1411,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20002413_3-haldirams-boondi.jpg"
-    }
+    },
+    "barcode": "8904004404449"
    }
   ],
   "images": [
@@ -1048,7 +1431,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002413-5_2-haldirams-boondi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's Khara Boondi is a classic Indian snack known for its crunchy texture and savoury taste. Made from chickpea flour batter, shaped into small, crispy balls, and seasoned with a blend of spices, Khara Boondi offers a delightful snacking experience. Perfectly spiced with a balanced flavour profile, it is a popular choice for festivals, gatherings, or as a crunchy accompaniment to meals. Haldiram's ensures each batch is fried to perfection, retaining its freshness and crunchiness. Enjoyed across India, Khara Boondi by Haldiram's is a timeless favourite, loved for its crispy texture and satisfyingly bold flavours.",
+   "ingredients": "Boondi: Bengal Gram Flour (Besan), Refined Palmolein Oil, Tapioca Starch & Edible Common Salt, Chat Masala : Cumin Powder, Edible Common Salt, Red Chilli & Black Salt, Allergen: May Contains Peanut, Almond, Cashew, Wheat, Milk, Soy, Sesame Seed & Mustard Seed",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50 g",
+    "Energy Value (Kcal)": "593",
+    "Protein (g)": "13.75",
+    "Carbohydrate (g)": "39.55",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "41.17",
+    "Saturated Fat (g)": "18.97",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "176",
+    "Dietary Fiber (g)": "4.63"
+   },
+   "storageInstructions": "Store in a cool, dry, and hygienic place.",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Punjabi Tadka",
@@ -1064,7 +1469,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264468_5-haldirams-namkeen-punjabi-tadka.jpg"
-    }
+    },
+    "barcode": "8904004400298"
    }
   ],
   "images": [
@@ -1089,7 +1495,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264468-7_2-haldirams-namkeen-punjabi-tadka.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the bold and irresistible flavours of Haldiram's Punjabi Tadka namkeen. Bursting with a perfect blend of spices and masalas, this crunchy and delicious snack is the perfect accompaniment to any meal. Elevate your snacking experience with the unmatched taste and quality of Punjabi Tadka. Filled with the rich cultural goodness of Punjab, this namkeen can add a zing of flavour to your taste buds and elevate your dining experience.\nEnjoy it as a side dish, with your tea or coffee, or simply as a standalone treat. Crafted with utmost care to retain its freshness, aroma, and flavour, Haldiram's Punjabi Tadka is a must-try for all snack enthusiasts.",
+   "ingredients": "Refined Palmolein Oil, Bengal Gram Flour (Besan), Tepary Beans (Moth Dal) Flour, Potato Flakes, Spices & Condiments (Edible Common Salt, Refined Sugar, Red Chilli, Maltodextrin, Black Salt, Dried Mango, Dried Onion, Dextrose, Coriander Powder, Cumin, Dried Garlic, Milk Solids, Yeast Extract, Pipal, Black Pepper, Dried Ginger, Bay Leaves, Clove, Nutmeg, Cinnamon, Turmeric, Large Cardamom, Encapsulated Capsicum Powder, Mint Leaves, Dehydrated Vegetable Powder (Soya), Mint Oil, Aniseed, Dried Tamarind Powder, Acidity Regulator (INS 330, INS 296, INS 262(i)), Flavour Enhancer (INS 627, INS 631), Anticaking Agent (INS 551, INS 341(iii)), Asafoetida, Colour (INS 160c), Natural Flavouring Substances And Nature Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50g",
+    "Energy Value (kcal)": "547",
+    "Protein (g)": "11.12",
+    "Carbohydrate (g)": "45.16",
+    "Total Sugars (g)": "0.24",
+    "Added Sugars (g)": "0.24",
+    "Total Fat (g)": "35.23",
+    "Saturated Fat (g)": "13.71",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "748",
+    "Dietary Fiber (g)": "2.46",
+    "RDA": "*Per serve (%) contribution to Recommended Dietary Allowance (RDA) calculated on the basis of 2000 kcal energy"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gol Kachauri",
@@ -1105,7 +1534,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40079768_4-haldirams-gol-kachauri.jpg"
-    }
+    },
+    "barcode": "8904004414509"
    },
    {
     "title": "350g",
@@ -1142,7 +1572,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40079768-8_1-haldirams-gol-kachauri.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable Haldirams Gol Kachori, a traditional Indian snack that tantalizes the senses. Crafted with wheat flour and a blend of aromatic spices, this deep-fried delight is filled with a mouthwatering combination of roasted chickpeas, cashews, and a medley of flavours. Crispy on the outside and bursting with texture and taste on the inside, these kachoris are the perfect teatime treat or crowd-pleasing snack.\nSavour the irresistible blend of roasted chickpeas, flour, cashews, and spices that come together to create a truly satisfying experience. Whether enjoyed on its own or paired with fresh mint chutney or ketchup, the Haldirams Gol Kachori is sure to leave you craving more of its delightful flavour and texture.",
+   "ingredients": "Wheat Flour, Edible Vegetable Oil, Chick Peas Flour, Sugar, Cashew, Edible Vegetable Fat, Red Chilli Powder, Salt, Acidity Regulator & Antioxidant (E330), Dry Mango Powder, Cumin Powder, Ginger Powder, Green Chilli, Coriander Powder, Black Pepper, Cinnamon, Clove, Bay Leaf, Black Salt",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50 g",
+    "Energy": "502 kcal",
+    "Carbohydrate": "52.39 g",
+    "Sugar": "0.6 g",
+    "Total Fat": "28.62 g",
+    "Saturated Fatty Acids": "10.56 g",
+    "Monounsaturated Fatty Acids": "11.57 g",
+    "Polyunsaturated Fatty Acids": "2.76 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "8.72 g",
+    "Fiber": "1.0 g",
+    "Sodium": "410 mg",
+    "Cholesterol": "Nil"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mini Samosa",
@@ -1158,7 +1611,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264467_2-haldirams-namkeen-mini-samosa.jpg"
-    }
+    },
+    "barcode": "8904004404210"
    }
   ],
   "images": [
@@ -1186,7 +1640,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264467-8_1-haldirams-namkeen-mini-samosa.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful world of Haldirams, a renowned brand in the Indian food industry. Known for its one-of-a-kind street food, savoury packages, and traditional Indian sweets, Haldirams now brings you a quaint, bite-sized version of the beloved samosa. Indulge in the zesty and tangy delight of Haldirams Nimbu Masala, a perfect blend of spices and flavours that will tantalise your taste buds.\nBursting with lemony goodness in every bite, this mouthwatering snack is made with the finest ingredients and Haldirams' signature touch, making it the ultimate treat for any time of the day. Experience the rich heritage and flavours of India in every delectable morsel.",
+   "ingredients": "Refined Wheat Flour (Maida), Refined Palmolein Oil, Split Pulse Moong (Moong Dal), Hydrogenated Vegetable Oil (Vanaspati), Refined Sugar, Potato Flakes, Bengal Gram Flour (Besan), Iodised Salt, Cashew Nuts, Raisins, Cumin, Red Chilli Powder, Dried Mango Powder, Fennel Seed, Black Salt, Coriander, Black Pepper, Dried Ginger Powder, Clove, Bay Leaves, Nutmeg, Mace, Cardamom, Cinnamon, Acidity Regulator (INS 330), Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "504 kcal",
+    "Carbohydrate": "50.36 g",
+    "Sugar": "4.83 g",
+    "Total Fat": "30.50 g",
+    "Saturated Fatty Acids": "12.73 g",
+    "Monounsaturated Fatty Acids": "10.59 g",
+    "Polyunsaturated Fatty Acids": "3.23 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "7.13 g",
+    "Fiber": "0.63 g",
+    "Sodium": "638 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mini Bhakarwadi",
@@ -1227,7 +1703,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264465-7_1-haldirams-namkeen-mini-bhakarwadi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's Namkeen Mini Bhakarwadi offers a delightful fusion of flavours and textures in a bite-sized snack. These spiral-shaped rolls are stuffed with a spicy and tangy filling, making them a perfect blend of sweet, sour, and savoury notes. Crispy on the outside and filled with a flavourful paste inside, they are ideal for munching on their own or pairing with tea or coffee. Haldiram's meticulous preparation ensures each Mini Bhakarwadi retains its crispiness and authentic taste, making it a popular choice for those who appreciate traditional Indian snacks with a modern twist.",
+   "ingredients": "Refined Wheat Flour (Maida), Bengal Gram Flour (Besan), Refined Palmolein Oil, Refined Sugar, Iodised Salt, Dried Mango Powder, Red Chilli, Fennel Seed, Sesame Seed, Ajowan, Dried Ginger Powder, Black Pepper, Cinnamon, Clove, Cardamom, Bay Leaves, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "539 kcal",
+    "Carbohydrate": "49.89 g",
+    "Sugar": "4.82 g",
+    "Total Fat": "34.22 g",
+    "Saturated Fatty Acids": "11.22 g",
+    "Monounsaturated Fatty Acids": "14.35 g",
+    "Polyunsaturated Fatty Acids": "3.39 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "7.77 g",
+    "Fiber": "3.1 g",
+    "Sodium": "434 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "This snack can be enjoyed at any time of the day to satisfy sudden munchies.\nIt is also the perfect bite-sized snack for teatime."
+  }
  },
  {
   "title": "Mathri",
@@ -1243,7 +1740,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/264466_2-haldirams-namkeen-mathri.jpg"
-    }
+    },
+    "barcode": "8904063200662"
    }
   ],
   "images": [
@@ -1271,7 +1769,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264466-8_1-haldirams-namkeen-mathri.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Haldirams Mathri, a classic Indian snack that originated from the rich culinary heritage of Rajasthan. Crafted with expertise and passion by the renowned Haldiram's brand, these delectable mathris are made from the finest ingredients and traditional recipes passed down through generations. Each bite delivers a burst of flavour that delights the senses, with a crisp, flaky texture and a perfect balance of spices.\nEnjoy these mathris as a delightful accompaniment to your tea, savouring the rich cultural experience they offer. Haldirams Mathri is a true celebration of the vibrant flavours and traditions of Indian cuisine, inviting you on a culinary journey through the heart of the subcontinent.",
+   "ingredients": "Refined Wheat Flour (Maida), Refined Palmolein Oil, Hydrogenated Vegetable Oil (Vanaspati), Ginger, Iodised Salt, Black Pepper, Ajowan, Fenugreek Leaves, Red Chilli Powder, Turmeric, Acidity Regulator (INS 330)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "522 kcal",
+    "Carbohydrate": "55.24 g",
+    "Sugar": "0 g",
+    "Total Fat": "30.96 g",
+    "Saturated Fatty Acids": "12.56 g",
+    "Monounsaturated Fatty Acids": "9.11 g",
+    "Polyunsaturated Fatty Acids": "4.66 g",
+    "Trans Fatty Acids": "0.71 g",
+    "Protein": "5.64 g",
+    "Fiber": "0.48 g",
+    "Sodium": "856 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Murukku",
@@ -1287,7 +1807,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20002437_2-haldirams-murukku.jpg"
-    }
+    },
+    "barcode": "8904004404111"
    }
   ],
   "images": [
@@ -1306,7 +1827,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002437-5_2-haldirams-murukku.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram Murukku is a savoury snack. It is a deep-fried rice-based snack with an uneven texture and a coil shape that gives it an extra crunch. It is an attractive and simple snack that is crispy, delicious, and crunchy. This is often served as a tea-time snack or when you need something to munch on during various festivals and special occasions. It is enjoyed by all age groups and can be had as a snack along with tea or by itself. It is blended with traditional spices that you can't get enough of.",
+   "ingredients": "Rice Flour, Refined Palmolein Oil, Bengal Gram Flour (Besan), Split Pulse Urd (Urd Dal), Iodised Salt, Sesame Seed, Ajowan, Black Pepper, Red Chilli",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "526 kcal",
+    "Carbohydrate": "52.69 g",
+    "Sugar": "0 g",
+    "Total Fat": "31.51 g",
+    "Saturated Fatty Acids": "10.13 g",
+    "Monounsaturated Fatty Acids": "13.40 g",
+    "Polyunsaturated Fatty Acids": "3.13 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "7.83 g",
+    "Fiber": "2.46 g",
+    "Sodium": "525 mg",
+    "Cholesterol": "0 mg"
+   },
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Moorkulu",
@@ -1322,7 +1864,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20002436_2-haldirams-moorkulu.jpg"
-    }
+    },
+    "barcode": "8904004408720"
    }
   ],
   "images": [
@@ -1341,7 +1884,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002436-5_2-haldirams-moorkulu.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldirams Moorkulu is very delicious crispy snack. It cooked by using premium ingredients. It is best at tea time. It tastes just like home made muruku you will certainly enjoy.",
+   "ingredients": "Rice Flour, Edible Vegetable Oil, Black Gram Flour, Tapioca Starch, Edible Vegetable Fat (Palm Oil, Rice Bran Oil & Sesame Oil), Roasted Chick Peas, Salt, Sesame Seed, Red Chilli Powder, Asafoetida & Raising Agent (E 500 ii). Contains: Sesame Seed. May Contains Peanut, Other Tree nuts & Gluten.",
+   "storageInstructions": "Store in a Cool and Dry Place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Soya Sticks",
@@ -1357,7 +1906,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20004451_4-haldirams-soya-sticks.jpg"
-    }
+    },
+    "barcode": "8904004400250"
    }
   ],
   "images": [
@@ -1382,7 +1932,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004451-7_1-haldirams-soya-sticks.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram Soya Sticks are wholesome crisps. They are made with soya flour blended with some spices. These tasty and crispy Indian snacks are also known as the time pass snack. It is a healthy and nutritious snack which is high in protein. It is a great snack option for your child's tiffin box. They are tasty, crunchy, and spicy snacks. Savour these at any time of the day. Enjoy them with tea, coffee, or as an evening snack, or as a snack to munch on while travelling.",
+   "ingredients": "Tapioca Starch, Refined Palmolein Oil, Soya Flour (8%), Split Pulse Urd (Urd Dal) Flour, Refined Sugar, Iodised Salt, Hydrogenated Vegetable Oil (Vanaspati), Red Chilli Powder, Coriander Powder, Cumin Powder, Clove Powder, Dried Mango Powder, Black Pepper, Cardamom, Acidity Regulator (INS 330), Onion Powder, Garlic Powder, Black Salt, Asafoetida, Bay Leaf, Nutmeg, Cinnamon, Fennel Seed, Turmeric, Mustard Seed",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50 g",
+    "Energy": "554 kcal",
+    "Carbohydrate": "45.0 g",
+    "Sugar": "4.21 g",
+    "Total Fat": "38.21 g",
+    "Saturated Fatty Acids": "18.56 g",
+    "Monounsaturated Fatty Acids": "11.28 g",
+    "Polyunsaturated Fatty Acids": "3.46 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "7.46 g",
+    "Fiber": "0.88 g",
+    "Sodium": "629 mg",
+    "Cholesterol": "0 mg",
+    "RDA": "All values are considered averages unless otherwise indicated."
+   },
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Takatak Chatpata Masala Chips",
@@ -1423,7 +1996,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000803-7_1-haldirams-namkeen-taka-tak-del.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's began as a tiny shop in Bikaner, the land famed for its savouries as for its leather-faced pipe players and fierce warriors. In 1937, two brothers from a noble family in Bikaner started from a small 'namkeens' shop. Their dream of doing something big turned out to be Haldiram's today. What began as a small-town enterprise in India is today a global phenomenon. Haldiram's is a way of life for Indians all over the globe.",
+   "ingredients": "Rice Grits, Edible Vegetable Oil, Corn Grits, Bengal Gram Grits, Tomato Powder, Cumin Powder, Red Chilli Powder, Onion Powder, Salt, Dry Mango Powder, Garlic Powder, Coriander Powder, Black Salt, Clove Powder, Acidity Regulator & Antioxidant (E 330), Cinnamon, Bay Leaf, Nutmeg and Preservative (E 260)"
+  }
  },
  {
   "title": "Khari Jeera Crispy Puffs",
@@ -1461,7 +2038,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40165498-6_2-haldirams-whole-jeera-crispy-puffs.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made with the finest ingredients, these crispy puffs contain wheat flour and aromatic cumin seeds, baked in refined cottonseed oil for a melt-in-the-mouth texture. Enjoy these flavourful puffs whenever you want a tasty snack to tame your hunger pangs.",
+   "ingredients": "Wheat Flour (62.1%), Hydrogenated Vegetable Oil (Palm, Soyabean, Sunflower and Sesame), Refined Cotton Seed Oil, Cumin Seeds, Salt, Cumin Powder, Gluten Powder",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "17g",
+    "Energy": "487 kJ (117 kcal)",
+    "Protein": "3.6 g",
+    "Fat, total": "6.4 g",
+    "Saturated fat": "4.1 g",
+    "Sugars": "1.6 g",
+    "Sodium": "128 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Haldiram Manufacturing Co. Pvt Ltd. vill.Kherki Daula",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012064000112"
+  }
  },
  {
   "title": "Salted Peanuts",
@@ -1532,7 +2127,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002441-8_1-haldirams-salted-peanut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's Salted Peanuts are a timeless snack favourite, offering a perfect balance of crunch and saltiness. Made from high-quality peanuts, each bite delivers a satisfying crunch and a burst of flavour. These peanuts are lightly salted, ensuring they are not overly salty, making them an ideal snack for any time of the day. Whether you're watching a movie, hosting a party, or just looking for a quick bite, Haldiram's Salted Peanuts are a versatile and delicious option. Packaged to retain freshness, they provide a convenient and tasty treat that everyone can enjoy. Perfect for snacking or adding to your favourite recipes.",
+   "ingredients": "Groundnut (Peanuts)(93%), Refined Palmolein Oil, Iodised Salt (1%), Refined Sugar",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "637 kcal",
+    "Carbohydrate": "21.85 g",
+    "Sugar": "0.5 g",
+    "Total Fat": "51.91 g",
+    "Saturated Fatty Acids": "10.76 g",
+    "Monounsaturated Fatty Acids": "23.59 g",
+    "Polyunsaturated Fatty Acids": "10.33 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "20.62 g",
+    "Dietary Fiber": "3.33 g",
+    "Sodium": "425 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat."
+  }
  },
  {
   "title": "Tasty Nuts",
@@ -1548,7 +2164,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20002444_1-haldirams-namkeen-tasty-nuts.jpg"
-    }
+    },
+    "barcode": "8904004403633"
    },
    {
     "title": "20g",
@@ -1603,7 +2220,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002445_2-haldirams-namkeen-tasty-nuts.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Inclusive of all taxes A signature Haldiram's recipe featuring irresistible coated peanuts. The delicious nutty flavour and masaledaar besan crust make these crispies a hit with the young and old alike!",
+   "ingredients": "Groundnut (Peanuts), Refined Palmolein Oil, Bengal Gram Flour (Besan), Maize Starch, Iodised Salt, Red Chilli, Acidity Regulator (INS 330), Turmeric, Black Salt, Black Pepper, Dried Ginger Powder, Cardamom, Cumin, Cinnamon, Clove, Bay Leaves, Nutmeg, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50 g",
+    "Energy": "2613 kJ",
+    "Protein": "21.24 g",
+    "Fat,total": "49.53 g",
+    "saturated": "8.39 g",
+    "Carbohydrate": "23.34 g",
+    "sugar": "0 g",
+    "Sodium": "493 mg"
+   },
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Salted Kaju",
@@ -1619,7 +2253,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20002440_2-haldirams-kaju-salted.jpg"
-    }
+    },
+    "barcode": "8904004403923"
    }
   ],
   "images": [
@@ -1644,7 +2279,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20002440-7_1-haldirams-kaju-salted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Munch on to your favourite blend of Haldirams Salted Cashew nuts which emulsifies the taste of delicious nuts into your mouth. It gives a tantalising effect which will leave you wanting to chew more every time. Our cashews are baked with love with no added salt or preservatives. Nourish your body today, stay healthy tomorrow. They are rich in fibre, protein, and healthy fats. It also contains a variety of vitamins, minerals, and health-protective beneficial plant compounds.",
+   "ingredients": "Cashew Nuts, Refined Palmolein Oil, Rock Salt, Refined Sugar",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy": "553 kcal",
+    "Carbohydrate": "36.67 g",
+    "Sugar": "0.5 g",
+    "Total Fat": "41.87 g",
+    "Saturated Fatty Acids": "9 g",
+    "Monounsaturated Fatty Acids": "26.06 g",
+    "Polyunsaturated Fatty Acids": "6.16 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "16.81 g",
+    "Dietary Fiber": "3.17 g",
+    "Sodium": "651 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Kaju",
@@ -1685,7 +2342,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/264461-7_1-haldirams-namkeen-masala-kaju.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's Masala Kaju offers a savoury twist to premium cashew nuts, delicately coated in a blend of aromatic spices. Known for their crunchy texture and rich flavours, these roasted cashews are a favourite indulgence for snacking or as a gourmet addition to meals. Each cashew is carefully seasoned to perfection, balancing heat and spice with a hint of sweetness. Haldiram's commitment to quality ensures every bite of Masala Kaju delivers freshness and authentic taste, making it a popular choice for both casual snacking and special occasions. Enjoy the irresistible blend of flavours with Haldiram's Masala Kaju.",
+   "ingredients": "Cashew Nuts, Refined Palmolein Oil, Red Chilli, Black Pepper, Cumim, Clove, Nutmeg, Rock Salt, Black Salt, Dried Ginger Powder, Cinnamon, Bay Leaves, Iodised Salt, Dried Mango Powder, Cardamom, Mint Leaves, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "619 kcal",
+    "Carbohydrate": "28.62 g",
+    "Sugar": "0 g",
+    "Total Fat": "48.72 g",
+    "Saturated Fatty Acids": "9.26 g",
+    "Monounsaturated Fatty Acids": "25.31 g",
+    "Polyunsaturated Fatty Acids": "7.64 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "16.43 g",
+    "Dietary Fiber": "3.12 g",
+    "Sodium": "363 mg",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place. Once opened, store in an airtight container.",
+   "usageInstructions": "Ready to eat."
+  }
  },
  {
   "title": "Soan Papdi",
@@ -1744,7 +2422,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100022365_1-haldirams-soan-papdi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram's Soan Papdi will definitely satisfy your taste buds' sweet cravings. Made with besan and creamy milk, this delicacy melts in your mouth almost instantly. Haldiram's Soan Papdi is an admired South Asian sweet. It is generally square in shape or served as flakes and has a crispy and flaky texture. It is very spongy like flakes or fibre. It has a tangy and lip-smacking taste. This sweet delicacy will definitely satisfy your sweet cravings. This original cotton candy confection of India is a treat for the young and the old. Available in a variety of flavours, Haldiram's ensures you get a taste of every flavour of this fluffy sugary ghee-dipped delicacy. Explore an entire range of Haldiram products and many more only on Big Basket!",
+   "ingredients": "Refined Sugar, Refined Wheat Flour (Maida), Refined Palmolein Oil, Bengal Gram Flour (Besan), Hydrogenated Vegetable Oil (Vanaspati), Liquid Glucose, Cardamom, Almond, Pistachio Nuts",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "490 kcal",
+    "Carbohydrate": "65.35 g",
+    "Sugar": "46.06 g",
+    "Total Fat": "23.06 g",
+    "Saturated Fatty Acids": "13.80 g",
+    "Monounsaturated Fatty Acids": "5.50 g",
+    "Polyunsaturated Fatty Acids": "0.60 g",
+    "Trans Fatty Acids": "0.40 g",
+    "Protein": "5.33 g",
+    "Fiber": "0.62 g",
+    "Sodium": "8 mg",
+    "Cholesterol": "0 mg"
+   },
+   "manufacturerName": "Haldiram Foods International Pvt. Ltd. (Unit - Kasana) 20 km Stone",
+   "fssaiLicense": "10012022000308",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kaju Katli",
@@ -1788,7 +2488,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40373863-8_1-haldiram-kaju-katli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Kaju Katli is a classic Indian sweet crafted with premium cashew nuts for a rich, smooth texture and delicate flavour. Expertly prepared and finished with an elegant silver leaf, each diamond-shaped piece offers a melt-in-the-mouth experience. Perfect for festive celebrations, gifting, and everyday indulgence.",
+   "ingredients": "Cashew Nut (53%), Refined Sugar, Silver Leaf (0.03%), and Preservative (INS 202).\nAllergen Information: Contains Nuts. May contain Wheat, Milk, Soy, and Sulphites.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "479",
+    "Protein (g)": "9.27",
+    "Total Carbohydrate (g)": "56.77",
+    "Total Sugars (g)": "44.41",
+    "Added Sugars (g)": "42.19",
+    "Dietary Fibre (g)": "2.15",
+    "Total Fat (g)": "23.91",
+    "Saturated Fat (g)": "3.92",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "13.46"
+   },
+   "manufacturerName": "Harrshiv Healthy Foods & More Pvt. Ltd",
+   "fssaiLicense": "11522999000321",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gud Kaju Katli",
@@ -1826,7 +2545,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358830-6_1-haldirams-gud-kaju-katli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldiram Gud Kaju katli is an Indian dessert for winter. Made by thickening milk with jaggery powder. Made by thickening milk with jaggery powder & sugar and other ingredients such as dry fruits, mild spices and Ghee. Perfect winter kaju katli taste with jaggery (Gud).",
+   "ingredients": "Cashew Nut (53%), Jaggery Powder, Refined Sugar, Silver Leaves, Preservatives (INS 202)\nAllergen Information: Contains Cashew\nMay Contains Milk, Wheat, Other Tree Nuts, Peanut, Sulphite.",
+   "manufacturerName": "Harrshiv Healthy Foods & More Private Limited",
+   "fssaiLicense": "10014011001919",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Agra Taj Petha",
@@ -1842,7 +2568,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20004457_7-haldirams-agra-taj-petha.jpg"
-    }
+    },
+    "barcode": "8904004406313"
    }
   ],
   "images": [
@@ -1870,7 +2597,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004457-8_1-haldirams-agra-taj-petha.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the iconic taste of Agra with Haldiram Nagpur Agra Taj Petha, a delightful and authentic Indian delicacy that will transport your taste buds to the majestic Taj Mahal. Crafted from tender pumpkin pieces cooked to perfection in a subtly sweet Sugar syrup, this traditional sweet boasts a translucent, chewy texture and a delicate, aromatic flavour enhanced by the fragrant notes of cardamom.\nBursting with fruity and Sugary goodness in every bite, Agra Taj Petha offers a delightful and satisfying indulgence, perfect for satisfying your sweet tooth. Whether enjoyed as a dessert or a festive treat, this classic Indian confection celebrates the rich culinary heritage of the region, delivering a truly memorable taste experience.",
+   "ingredients": "Refined Sugar, Ash Gourd (Pumpkin), Preservative (INS 224), CONTAINS ADDED NATURAL FLAVOURING SUBSTANCE (KEWRA WATER)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50 g",
+    "Energy": "322 kcal",
+    "Carbohydrate": "79.70 g",
+    "Sugar": "61.28 g",
+    "Total Fat": "0.02 g",
+    "Saturated Fatty Acids": "0.009 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "0.86 g",
+    "Dietary Fiber": "2.93 g",
+    "Sodium": "43 mg",
+    "Cholesterol": "0 mg",
+    "RDA": "All values are considered averages unless otherwise indicated."
+   },
+   "storageInstructions": "*Store in cool and dry place",
+   "manufacturerName": "Haldiram Foods International Pvt. Ltd. (Unit- Krishi)",
+   "fssaiLicense": "10012022000234",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Motichoor Ladoo",
@@ -1914,7 +2664,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40373615-8_1-haldirams-motichoor-laddo-made-with-desi-ghee.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Satisfy your sweet cravings with Haldiram Motichoor Laddu. These sweet bite-sized treats are a symphony of flavours and textures. Crafted with the finest ingredients and immersed in rich aromatic ghee, each laddu bursts with the sweetness of boondi and a hint of cardamom. Whether it's a celebration or a moment of personal indulgence, these laddus are the perfect choice. Each bite is a celebration of tradition, quality, and irresistible taste.",
+   "ingredients": "Sugar, Besan (20.51%), Ghee (17.64%), Refined Wheat Flour (Maida), Natural Flavour (Rose), Cardamom, Nature-Identical Flavouring Substances (Saffron, Cardamom and Kewra), Saffron (0.006%), Synthetic Food Colours (INS 102, INS 110), and Preservative (INS 202).\nAllergen Information: Contains Wheat (Gluten) and Milk. May contain Peanuts, Nuts, and Soy.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "402.23",
+    "Protein (g)": "6.21",
+    "Total Carbohydrate (g)": "65.21",
+    "Total Sugars (g)": "26.79",
+    "Added Sugars (g)": "25.45",
+    "Total Fat (g)": "12.96",
+    "Saturated Fat (g)": "9.21",
+    "Trans Fat (g)": "0.17",
+    "Cholesterol (mg)": "15.19",
+    "Sodium (mg)": "8.08"
+   },
+   "manufacturerName": "Haldiram Marketing Private Limited",
+   "fssaiLicense": "10014011001919",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Badam Halwa",
@@ -1930,7 +2699,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100022298_3-haldirams-badam-halwa.jpg"
-    }
+    },
+    "barcode": "8904004405613"
    }
   ],
   "images": [
@@ -1949,7 +2719,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100022298-5_1-haldirams-badam-halwa.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Haldirams Badam Halwa is a rich and delicious Indian dessert made with almonds. It is prepared with pureed almonds, sugar, and butter/ghee (clarified butter).",
+   "ingredients": "Refined Sugar, Maize Starch, Refined Palmolein Oil, Almonds, Cashew Nuts, Acidity Regulator (E 330), Permitted Synthetic Food Colours [Sunset Yellow (E 110), Tartrazine (E 102) & Brilliant Blue (E 133)], Nature Identical Flavouring Substances (Orange & Pistachio)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "417 Kcal",
+    "Carbohydrate": "78.8g",
+    "Sugar": "29.18g",
+    "Total Fat": "9.07g",
+    "Saturated Fatty Acids": "4.4g",
+    "Monounsaturated Fatty Acids": "2.2g",
+    "Polyunsaturated Fatty Acids": "1.1g",
+    "Trans Fatty Acids": "0g",
+    "Protein": "5.2g",
+    "Fiber": "0.5g",
+    "Sodium": "5mg",
+    "Cholesterol": "0mg"
+   },
+   "storageInstructions": "*Store in cool and dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Haldiram Foods International Private Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gulab Jamun",
@@ -1996,7 +2788,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001719_5-haldirams-gulab-jamun.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Gulab Jamun is a classic sweet dish favoured by the young and old alike. After all, a wedding buffet, birthday celebration or even religious function cannot be complete until the guests have been served the warm, sticky and absolutely mouth-watering delights of Gulab Jamuns. Gulab Jamun is a popular North Indian mithai or sweet, commonly served as a dessert after a meal. These classic small sweet balls or sweet dumplings are made from flour, sugar and chhena (Indian cottage cheese) and fried before they are dipped luxuriously in sweetened sugary syrup. A tin of Haldirams Gulab Jamun is a pure sinful delight and is normally bought or presented to mark an auspicious occasion at home such as weddings or festivals. Explore an entire range of Haldiram products and many more only on Big Basket!",
+   "ingredients": "Refined Sugar, Water, Milk Solids, Refined Palmolein Oil, Refined Wheat Flour (Maida), Semolina, Cardamom",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "410 kcal",
+    "Carbohydrate": "68.1 g",
+    "Sugar": "52.01 g",
+    "Total Fat": "12.36 g",
+    "Saturated Fatty Acids": "5.9 g",
+    "Monounsaturated Fatty Acids": "3.21 g",
+    "Polyunsaturated Fatty Acids": "1.55 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "6.58 g",
+    "Fiber": "0.4 g",
+    "Sodium": "18 mg",
+    "Cholesterol": "26.8 mg"
+   },
+   "manufacturerName": "Haldiram Foods International Pvt. Ltd. (Unit - Kasana) 20 km Stone",
+   "fssaiLicense": "10012022000308",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rasgulla",
@@ -2012,7 +2826,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/101212_2-haldirams-rasgulla.jpg"
-    }
+    },
+    "barcode": "8904004405729"
    },
    {
     "title": "500g",
@@ -2043,6 +2858,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001716_7-haldirams-delhi-rasgulla.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rasgulla is a syrup-based dessert that has a soft and spongy texture. A Bengali favourite, this is a popular Indian sweet dish. Haldirams is known for recreating the magic of several traditional sweets and savouries. The Rasgulla is one of its high-quality products that comes packed in a tin and is ideal for dessert time.",
+   "ingredients": "Refined Sugar, Water, Milk Solids (Chhanna), Rose Water",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "277 kcal",
+    "Carbohydrate": "57.99 g",
+    "Sugar": "51.86 g",
+    "Total Fat": "1.2 g",
+    "Saturated Fatty Acids": "0.62 g",
+    "Monounsaturated Fatty Acids": "0 g",
+    "Polyunsaturated Fatty Acids": "0 g",
+    "Trans Fatty Acids": "0 g",
+    "Protein": "8.52 g",
+    "Fiber": "0.34 g",
+    "Sodium": "13 mg",
+    "Cholesterol": "0 mg"
+   },
+   "manufacturerName": "Haldiram Foods International Pvt. Ltd. (Unit - Kasana) 20 Km Stone",
+   "fssaiLicense": "10012022000308",
+   "countryOfOrigin": "India"
+  }
  }
 ]

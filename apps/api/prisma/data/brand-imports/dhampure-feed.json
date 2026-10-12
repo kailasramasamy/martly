@@ -56,7 +56,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344000_1-dhampure-white-crystal-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "White Crystal Sugar is made hygienically from fresh farm cane using a double filter process and modern technology. The result is clean, consistent crystals with a natural sweetness, perfect for everyday use. Ideal for sweetening beverages, cooking, or baking, it blends easily and maintains quality in a variety of recipes without altering the original flavours.",
+   "manufacturerName": "Dhampur Bio Organics Limited Unit - Asmoli",
+   "countryOfOrigin": ""
+  }
  },
  {
   "title": "Breakfast Sugar",
@@ -72,7 +77,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40344009_2-dhampure-breakfast-sugar.jpg"
-    }
+    },
+    "barcode": "8906157850562"
    }
   ],
   "images": [
@@ -91,7 +97,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344009-5_2-dhampure-breakfast-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Breakfast Sugar is made hygienically from fresh farm cane using a double filter process and the latest technology. With its medium-sized crystals and clean sweetness, it’s perfect for sprinkling over cereals, fruits, or adding to your morning tea or coffee. Designed for daily use, it dissolves easily and enhances the taste of your breakfast favourites with just the right touch of sweetness.",
+   "manufacturerName": "Dhampur Bio Organics Limited Unit - Asmoli",
+   "fssaiLicense": "10012051000386",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Caster Sugar",
@@ -126,7 +138,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344010-5_2-dhampure-caster-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Caster Sugar is made hygienically from fresh farm cane using a double filter process and the latest technology. With its fine, quick-dissolving crystals, it’s perfect for baking, especially in cakes, meringues, and desserts. Its smooth texture ensures even mixing, making it a preferred choice for recipes that require a delicate sweetness and consistent results.",
+   "manufacturerName": "Dhampur Bio Organics Limited Unit - Asmoli",
+   "fssaiLicense": "10012051000386",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Icing Sugar",
@@ -161,7 +179,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344011-5_2-dhampure-icing-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Icing Sugar is made hygienically from fresh farm cane using a double filter process and the latest technology. Finely ground to a soft, smooth powder, it’s perfect for dusting desserts, making frostings, or blending into icings and glazes. Its quick-dissolving texture ensures a flawless finish, making it a baking essential for both home cooks and professionals.",
+   "manufacturerName": "Dhampur Bio Organics Limited Unit - Asmoli",
+   "fssaiLicense": "10012051000386",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bura Sugar",
@@ -177,7 +201,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40344004_2-dhampure-bura-sugar.jpg"
-    }
+    },
+    "barcode": "8906157850029"
    }
   ],
   "images": [
@@ -196,7 +221,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344004-5_2-dhampure-bura-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bura Sugar is made hygienically from fresh farm cane using a double filter process and the latest technology. Known for its fine, powdery texture and mild sweetness, it dissolves quickly, making it ideal for traditional Indian sweets, desserts, and everyday use. Its smooth consistency ensures even mixing, adding a delicate sweetness to your culinary creations.",
+   "manufacturerName": "Mangalam Foods Private Limited - C-8/2",
+   "fssaiLicense": "10012051000386",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Golden Brown Sugar",
@@ -212,7 +243,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40344012_2-dhampure-golden-brown-sugar.jpg"
-    }
+    },
+    "barcode": "8906157850586"
    }
   ],
   "images": [
@@ -231,7 +263,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344012-5_2-dhampure-golden-brown-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Golden Brown Sugar is made hygienically from fresh farm cane using a double filter process and the latest technology. With its soft texture and rich golden hue, it adds a warm, molasses-like flavour to baked goods, sauces, and beverages. Perfect for recipes that call for a deeper sweetness and a hint of caramel, it blends smoothly and evenly.",
+   "manufacturerName": "Dhampur Bio Organics Limited Unit - Asmoli",
+   "fssaiLicense": "10012051000386",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mineral Brown Sugar",
@@ -266,7 +304,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344003-5_2-dhampure-mineral-brown-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mineral Brown Sugar is made hygienically from fresh farm cane using a double filter process and the latest technology. With its rich colour and distinct flavour, it’s ideal for baking, cooking, or sweetening beverages. The fine, moist texture blends smoothly, making it a versatile choice for those who enjoy a deeper, more caramel-like sweetness in their recipes.",
+   "manufacturerName": "Mangalam Foods Private Limited - C-8/2",
+   "fssaiLicense": "10012051000386",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mishri",
@@ -282,7 +326,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40344002_2-dhampure-mishri.jpg"
-    }
+    },
+    "barcode": "8906157850005"
    }
   ],
   "images": [
@@ -301,6 +346,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344002-5_2-dhampure-mishri.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mishri – Pure White Candy Sugar Crystals are made hygienically from fresh farm cane using a double filter process and the latest technology. These sparkling, naturally sweet crystals offer purity and traditional appeal. Ideal for desserts, beverages, or as a mouth freshener, they add a touch of sweetness and elegance to your daily moments and special occasions.",
+   "manufacturerName": "Dhampur Bio Organics Limited Unit - Asmoli",
+   "fssaiLicense": "10012051000386",
+   "countryOfOrigin": "India"
+  }
  }
 ]

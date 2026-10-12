@@ -50,7 +50,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324276_4-cheetos-masala-balls-crispy-chips-snacks.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the deliciously spicy and mischievous fun of Cheetos Masala Balls Snacks! These bite-sized treats are made with the finest quality corn and rice, seasoned to perfection with a unique blend of authentic Indian masala flavours. Crispy on the outside and bursting with flavour on the inside, these snacks are a true delight for the senses.\nSatisfy your cravings anytime, whether you're on the go, at work, or relaxing at home. Cheetos Masala Balls Snacks are the perfect companion for igniting your imagination and a sense of adventure. Crafted with care using the best ingredients, these snacks are sure to become a favourite among snack lovers of all ages.",
+   "ingredients": "Corn meal, Rice meal, Edible Vegetable Oil (Palmolein), Gram meal, *Seasoning (~Spices & Condiments, Iodised Salt, Black salt, Flavour (Natural & Nature identical flavouring substances)), Maltodextrin, Tomato powder, Sugar, Acidity Regulator (330, 296, 334)), Wheat fibre",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20 g",
+    "Energy": "504 kcal",
+    "Protein": "8.2 g",
+    "Carbohydrate": "65.7 g",
+    "Total Sugars": "1.6 g",
+    "Added Sugars": "0.2 g",
+    "Total Fat": "23.1 g",
+    "Saturated Fat": "10.4 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "862 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry and hygienic place\n* Keep away from direct sunlight\n* Once opened, keep in airtight container",
+   "manufacturerName": "MFD. BY - For manufacturing unit address",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cheez Puffs",
@@ -94,7 +114,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003272-8_1-cheetos-cheez-puffs-snacks-crunchy-made-with-best-quality-ingredients.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the deliciously cheesy and mischievous delight of Cheetos Cheez Puffs. Crafted with the finest quality ingredients, these light and airy snacks offer a bold, cheesy flavour that will satisfy your cravings. Enjoy the crunchy texture and real cheese goodness, perfect for sharing with loved ones or as a quick and convenient treat. Whether you're craving a snack at home or on the go, Cheetos Cheez Puffs are just a few clicks away, allowing you to satisfy your snack desires without ever leaving the comfort of your own space.\nEmbrace the sense of adventure and fun that Cheetos inspires, and let your imagination soar as you dive into the irresistible, cheesy goodness of these delightful puffs.",
+   "ingredients": "Corn Meal, Edible Vegetable Oil (Palmolein), Seasoning (Maltodextrin, Sugar, lodised Salt, Flavour (Natural and Nature Identical Flavouring Substances), Milk Solids, Spices and Condiments, Cheese Powder, Hydrolysed Vegetable Protein, Emulsifier (414), Salt Substitute (Potassium Chloride), Edible Vegetable Oil (Coconut, Sunflower), Flavour Enhancers (627, 631), Dextrose), Gram Meal, Stabilizer (170(i))",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "518 kcal",
+    "Protein": "6.6 g",
+    "Carbohydrate": "61.6 g",
+    "Total Sugars": "3.0 g",
+    "Added Sugars": "2.6 g",
+    "Total Fat": "27.2 g",
+    "Saturated Fat": "12.2 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "614 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Pepsico India Holdings Pvt Ltd. ",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Puffs",
@@ -110,7 +151,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027_1-cheetos-puffs.jpg"
-    }
+    },
+    "barcode": "8901491100014"
    }
   ],
   "images": [
@@ -132,6 +174,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40349027-6_1-cheetos-puffs.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cheetos Puffs are irresistibly cheesy, airy snacks that melt in your mouth with every bite. Made without palm oil, they’re a lighter choice for guilt-free fun. Packed with bold flavour and a satisfying crunch, they’re perfect for snacking anytime, anywhere. Enjoy the cheesy goodness with a cleaner, no-palm-oil twist!",
+   "manufacturerName": "PEPSICO INDIA HOLDINGS PVT LTD",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  }
 ]

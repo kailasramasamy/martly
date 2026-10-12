@@ -59,7 +59,36 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40145471-8_4-coco-soul-virgin-coconut-oil-cold-pressed-natural.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your wellness routine with Coco Soul's pure and natural Cold Pressed Virgin Coconut Oil. Crafted with meticulous care and expertise, this superfood oil is a powerhouse of natural goodness. Prepared from fresh raw coconuts through a unique cold extraction process, it preserves vital nutrients and boasts a rich, aromatic coconut flavour perfect for raw consumption. Coco Soul Cold Pressed Virgin Coconut Oil is one of the richest plant-based sources of naturally occurring Medium Chain Triglycerides (MCTs), which contribute to 60% of the total fatty acid content and provide instant energy release. Its high lauric acid and vitamin E content offer an incredible array of health-promoting properties, including supporting cognition, memory function, and weight management. Whether you're cooking up a storm in the kitchen or nourishing your hair and skin, this heart-friendly, expertly-packed oil is your go-to solution for transforming your daily self-care routine.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (kcal)": "900 kcal",
+    "Protein (g)": "0 g",
+    "Carbohydrate (g)": "0 g",
+    "Total Sugars (g)": "0 g",
+    "Added Sugars (g)": "0 g",
+    "Total Fat (g)": "100 g",
+    "Saturated Fat (g)": "94.2 g",
+    "Trans Fat (g)": "0 g",
+    "Monounsaturated Fatty Acid (g)": "5 g",
+    "Polyunsaturated Fatty Acid (g)": "0.8 g",
+    "Omega -3 fatty acids (g)": "0 g",
+    "Omega -6 fatty acids (g)": "0.8 g",
+    "Sodium (mg)": "0 mg",
+    "Medium Chain Fatty Acids Caprylic C-8 (g)": "8 g",
+    "Capric C - 10 (g)": "6 g",
+    "Lauric C- 12 (g)": "48 g",
+    "Long Chain Fatty Acids Palmitic C- 16 (g)": "9 g",
+    "Stearic C- - 18 (g)": "3 g",
+    "Myristic C- 14 (g)": "19 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Vama Oil Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000258"
+  }
  },
  {
   "title": "Cold Pressed Virgin Coconut Oil Jar",
@@ -103,7 +132,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160075-8_2-coco-soul-cold-pressed-natural-virgin-coconut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Cold Pressed Virgin Coconut Oil (VCNO) Superfood is 100% pure &amp; natural. It is specifically prepared from fresh raw coconuts through a meticulous No Heat Process, a cold extraction technology which helps preserve the vital nutrients, rich aroma and flavour of real coconuts, making it fit for raw consumption.\nVCNO Superfood is one of the richest plant-based sources of naturally occurring Medium Chain Triglycerides (MCTs). These MCTs contribute to 60% of the total fatty acid content and unlike long-chain saturated fats, get rapidly digested for instant energy release. Its high content of naturally occurring Lauric acid (C12) &amp; Vitamin E allows for an incredible array of health-promoting properties. It can also help in weight management. The MCTs in VCNO break down into ketones that can support cognition/ memory function. Due to its better oxidative stability, VCNO is a great cooking medium even at high temperatures.",
+   "manufacturerName": "Vama Oil Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000258"
+  }
  },
  {
   "title": "Cold Pressed Coconut Oil",
@@ -135,7 +170,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40351604-4_1-coco-soul-coco-soul-cold-press-coconut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Cold Pressed Coconut Oil is made from the finest quality, freshly harvested raw coconuts using a cold-pressed extraction process. It is pure, natural, and unrefined. This method ensures that all the essential nutrients are preserved, resulting in a rich aroma and the authentic flavour of real coconuts.",
+   "manufacturerName": "M/s Shri Veesakumar Industry",
+   "fssaiLicense": "10012042000138",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Amla Hair Oil",
@@ -151,7 +192,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40308733_1-coco-soul-amla-hair-oil.jpg"
-    }
+    },
+    "barcode": "8901088731034"
    }
   ],
   "images": [
@@ -179,7 +221,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308733-8_1-coco-soul-amla-hair-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurveda believes, there are three doshas (life-giving energies) that flow through all humans — Vata, Pitta, and Kapha. An excess of any one of them has negative consequences that are especially visible in the way it affects our hair. The scalp, in Ayurveda, is composed of multiple energy-relieving points called marmas. Hair-oiling or Shiro Abyanga is considered a cure for all your hair issues. Regular practice of hair oil or Shiro Abhyanga helps extract any excess doshas that get accumulated on the scalp. Cocosoul from the makers of Parachute have created Cocosoul Amla Hair Oil with Extra Virgin Coconut Oil, to help solve issues like premature greying of hair, hair fall, dryness & dandruff with the added advantage of protecting the natural colour of your hair.",
+   "usageInstructions": "Apply the oil directly to your scalp.\nMassage gently on your scalp using a circular motion.\nLeave it overnight or for a few hours for that deep nourishment.\nWash off with Cocosoul sulphate and paraben-free shampoo & conditioner.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bhringraj Hair Oil",
@@ -195,7 +243,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40308734_1-coco-soul-bhringraj-hair-oil.jpg"
-    }
+    },
+    "barcode": "8901088731065"
    }
   ],
   "images": [
@@ -223,7 +272,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308734-8_1-coco-soul-bhringraj-hair-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cocosoul from the makers of Parachute have created Cocosoul Ayurvedic Bhringraj Hair Oil with Extra Virgin Coconut Oil, to help solve issues like premature greying of hair, hair fall, and dryness with the advantage of protecting the natural colour of your hair.",
+   "usageInstructions": "1. Apply the oil directly to your scalp.\n2. Massage gently on your scalp using a circular motion.\n3. Leave it overnight or for a few hours for that deep nourishment.\n4. Wash off with Cocosoul Sulphate and paraben-free shampoo & conditioner.",
+   "storageInstructions": "*Store in cool place away from direct sunlight",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Curry Leaves Hair Oil",
@@ -267,7 +323,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308735-8_1-coco-soul-curry-leaves-hair-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurveda believes, there are three doshas (life-giving energies) that flow through all humans — Vata, Pitta, and Kapha. An excess of any one of them has negative consequences that are especially visible in the way it affects our hair. The scalp, in Ayurveda, is composed of multiple energy-relieving points called marmas. Hair-oiling or Shiro Abyanga is considered a cure for all your hair issues. Regular practice of hair oil or Shiro Abhyanga helps extract any excess doshas that get accumulated on the scalp. Cocosoul from the makers of Parachute have created Cocosoul Ayurvedic Curry Leaves Hair Oil with Extra Virgin Coconut Oil, to help solve issues like hair fall, dandruff & hair breakage with the advantage of protecting the natural colour of your hair.",
+   "usageInstructions": "Apply the oil directly to your scalp.\nMassage gently on your scalp using a circular motion.\nLeave it overnight or for a few hours for that deep nourishment.\nWash off with Cocosoul sulphate and paraben-free shampoo & conditioner.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rosemary Hair Oil",
@@ -311,7 +373,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308736-8_1-coco-soul-rosemary-hair-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurveda believes, there are three doshas (life-giving energies) that flow through all humans — Vata, Pitta, and Kapha. An excess of any one of them has negative consequences that are especially visible in the way it affects our hair. The scalp, in Ayurveda, is composed of multiple energy-relieving points called marmas. Hair-oiling or Shiro Abyanga is considered a cure for all your hair issues. Regular practice of hair oil or Shiro Abhyanga helps extract any excess doshas that get accumulated on the scalp. Cocosoul from the makers of Parachute have created Cocosoul Ayurvedic Rosemary Hair Oil with Extra Virgin Coconut Oil, to help solve issues like hair fall, dandruff & hair breakage with the added advantage of adding shine to your hair.",
+   "usageInstructions": "Section hair into parts & directly apply the oil from root to tip.\nMassage gently on your scalp using a circular motion.\nLeave it overnight or for a few hours for that deep nourishment.\nWash off with Cocosoul sulphate and paraben-free shampoo & conditioner.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconut Hair Oil with Vitamin E",
@@ -355,7 +423,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263288-8_1-coco-soul-hair-oil-with-extra-virgin-coconut-oil-vitamin-e-for-healthy-hair-growth-deep-nourishment-no-parabens-without-perfume.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurveda believes there are three doshas (life-giving energies) that flow through all humans - Vata, Pitta, and Kapha. An excess of any one of them has negative consequences that are especially visible it affects our hair. The scalp, in Ayurveda, is composed of multiple energy-relieving points called marmas. Hair-oiling or Shiro Abyanga is considered a cure for all your hair issues. Regular practice of hair oil or Shiro Abhyanga, helps extract any excess doshas that get accumulated on the scalp. Cocosoul from the makers of Parachute have created Cocosoul Extra Virgin Coconut oil with Vitamin E, to help solve issues like premature greying of hair, hair fall, dryness & dandruff.",
+   "usageInstructions": "Apply on the scalp and massage with your fingers.\nWash it off with your regular shampoo.",
+   "manufacturerName": "for Marico Ltd Cosmic Nutracos Solutions Pvt. Ltd. Plot No. 12"
+  }
  },
  {
   "title": "Long & Strong Hair Oil with Amla",
@@ -399,7 +472,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269582-8_2-coco-soul-hair-oil-long-strong-black-hair-nourishing-conditioning.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurvedic Acharyas have identified many herbs which are beneficial for hair & scalp health, these are called Kesha herbs. These herbs reduce inflammation, provide nourishment and aid in long strong, and black hair when used regularly. Our Cocosoul Long Strong & Black range is made with select Ayurvedic Kesha herbs and oils which are recommended by Ayurvedic Acharyas for long strong and black hair.",
+   "usageInstructions": "Apply the oil directly to your scalp with the help of the easy applicator provided on the bottle.\nMassage gently on your scalp using a circular motion.\nLeave it overnight or for a few hours for that deep nourishment.\nWash off with Cocosoul Sulphate and paraben shampoo.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "INDIA"
+  }
  },
  {
   "title": "Dandruff Control Hair Oil",
@@ -443,7 +522,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269581-8_2-coco-soul-dandruff-control-hair-oil-with-ayurvedic-medicine-treats-itchness-dryness.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dandruff is called Darunak in Ayurveda. According to Acharya Sushrut, it is a Vata-Kapha predominant condition of the scalp. The symptomatic indications are Dandruff, itching, dryness, and the hardness of scalp skin. Our Anti Dandruff range and our Coco Soul dandruff control hair oil are made with select Ayurvedic ingredients which not only correct the Vata-Kapha imbalance but also have anti-infective, nourishing & soothing properties which relieve the symptoms of Dandruff. Enriched with the goodness of A1-grade cold-pressed coconut oil, this hair oil is highly effective on dandruff. Enriched with the goodness of Neem, Meethi seeds, Karanja, Shatavari & Amla, this oil helps soothe itchy scalp and helps treat dandruff.",
+   "usageInstructions": "Apply the oil directly to your scalp with the help of the easy applicator provided on the bottle.\nMassage gently on your scalp using a circular motion.\nLeave it overnight or for a few hours for that deep nourishment.\nWash off with Cocosoul Sulphate and paraben shampoo.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "INDIA"
+  }
  },
  {
   "title": "Hair Fall Control Hair Oil",
@@ -487,7 +572,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269580-8_3-coco-soul-hair-fall-control-oil-strenthens-root-nourishes-soothes-scalp.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Hair fall (Khalitya) is primarily a Pitta dominant Tridosha condition, where Pitta along with Vata affects and makes hair follicles weak which causes hair fall. The Coco Soul Hair fall Control Shampoo & Conditioner is specifically curated with selected Ayurvedic herbs and oils with Pitta – Vata pacifying properties. Created using traditional ayurvedic Tel Pak Vidhi and 30 Ayurvedic herbs, this potent oil will help control your hair fall issues. Made with A1 Quality cold pressed Virgin Coconut Oil is a soothing and nourishing oil that helps reduce hair fall. This ayurvedic hair oil is enriched with the goodness of Bhringraj helps control hair loss, encourages new hair growth & helps strengthen new hair follicles. Banyan Tree & Hibiscus helps strengthen hair from roots and helps arrest hair fall! Amla - the Indian gooseberry is a traditional hair remedy that is known as a remedy for hair loss. Coco Soul Hair fall control Hair oil is all you need for long and strong hair.",
+   "usageInstructions": "Apply the oil directly to your scalp with the help of the easy applicator provided on the bottle.\nMassage gently on your scalp using a circular motion.\nLeave it overnight or for a few hours for that deep nourishment.\nWash off with Cocosoul Sulphate and paraben shampoo.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "INDIA"
+  }
  },
  {
   "title": "Hair & Scalp Cleanser Shampoo",
@@ -503,7 +594,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40242640_4-coco-soul-hair-scalp-cleansershampoo-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
-    }
+    },
+    "barcode": "8901088160568"
    }
   ],
   "images": [
@@ -531,7 +623,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40242640-8_4-coco-soul-hair-scalp-cleansershampoo-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Shampoo is powered with 100% Organic Virgin King Coconut Oil, Kikirindiya, Godapara and 4 other ayurvedic herbs. Virgin King Coconut oil penetrates 90% into hair strands and repairs damaged hair by reversing upto 50% of internal structural damage. Lauric Acid present in coconut oil binds the protein in hair & scalp and helps protect both the roots and strands of hair from breakage. Kikirindiya boosts blood circulation in the scalp and is effective in stopping hair loss. Godapara soothes itchy scalp and has anti-dandruff properties. This product is free from Sulphates, Parabens, Mineral Oil, Silicones, Phthalates, Formaldehyde, DEA, Propylene Glycol, Petrolatum etc.",
+   "usageInstructions": "Take a small amount & apply it on wet hair.\nWork it into your scalp & hair in a small circular motion. \nLather & rinse well using lukewarm water.",
+   "manufacturerName": "(For Marico Ltd)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Amla & Sesame Shampoo",
@@ -547,7 +645,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40279799_1-coco-soul-shampoo-with-virgin-coconut-oil-for-long-strong-hair.jpg"
-    }
+    },
+    "barcode": "8901088719346"
    }
   ],
   "images": [
@@ -575,7 +674,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279799-8_1-coco-soul-shampoo-with-virgin-coconut-oil-for-long-strong-hair.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurvedic scholars have identified many herbs that are beneficial for hair & scalp health called keshya Herbs. Coco Soul Long, Strong & Black Shampoo is formulated using Keshya herbs like Amla, Sesame, Hibiscus & Reetha along with 100% Cold Pressed Virgin Coconut Oil that reduces hair breakage and promotes hair growth for regular use.",
+   "usageInstructions": "Take a small amount and apply it to wet hair.\nWork it into your scalp and hair in small circular motions.\nLather and rinse well using lukewarm water.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "United Kingdom"
+  }
  },
  {
   "title": "Hair Fall Control Shampoo",
@@ -591,7 +696,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40279797_2-coco-soul-hair-fall-control-shampoo-with-virgin-coconut-oil-thick-silky.jpg"
-    }
+    },
+    "barcode": "8901088719360"
    }
   ],
   "images": [
@@ -619,7 +725,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279797-8_2-coco-soul-hair-fall-control-shampoo-with-virgin-coconut-oil-thick-silky.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Hairfall Control Shampoo is formulated using 100% natural ayurvedic herbs that contain Keshya properties and pacify Pitta-Vata Dosha. Enriched with the goodness of bhringraj, banyan aerial roots, hibiscus roots and reetha, it is a cruelty-free product from the house of Coco Soul which will help you to have healthy, thick and silky hair. An ayurvedic proprietary medicine, it feels gentle on the scalp and hair. You can use it and swap it with your regular shampoo to have the best of Ayurveda. A totally pure solution for your healthy haircare, make a way for it to reside on your shelves and gain the right benefits from the same!",
+   "usageInstructions": "Take a small amount and apply it to wet hair.\nWork it into your scalp and hair in small circular motions.\nLather and rinse well using lukewarm water.\nStorage Instructions: Best to be stored at room temperature, away from direct sunlight and heat.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "United Kingdom"
+  }
  },
  {
   "title": "Dandruff Control Shampoo",
@@ -635,7 +747,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40279798_1-coco-soul-dandruff-control-shampoo-with-virgin-coconut-oil-nourishing.jpg"
-    }
+    },
+    "barcode": "8901088719384"
    }
   ],
   "images": [
@@ -663,7 +776,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279798-8_1-coco-soul-dandruff-control-shampoo-with-virgin-coconut-oil-nourishing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Dandruff Control Shampoo is formulated using 100% natural Ayurvedic herbs and is enriched with the goodness of neem, methi, karanj, reetha and cold pressed virgin coconut oil. Regular use of Coco Soul Dandruff Control Shampoo not only helps correct Vata-Kapha imbalance but also maintains a healthy scalp, and fights dryness, dullness & dandruff. An Ayurvedic proprietary medicine, it feels gentle on the scalp and hair. You can use it and swap it with your regular shampoo to have the best of Ayurveda. A totally pure solution for your healthy haircare, make a way for it to reside on your shelves and gain the right benefits from the same!",
+   "usageInstructions": "Take a small amount and apply it to wet hair.\nWork it into your scalp and hair in small circular motions.\nLather and rinse well using lukewarm water.\nStorage Instructions: Best to be stored at room temperature, away from direct sunlight and heat.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "United Kingdom"
+  }
  },
  {
   "title": "Curl Cult Hydrating Shampoo",
@@ -679,7 +798,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40279805_3-coco-soul-curl-cult-hydrating-shampoo-with-virgin-coconut-oil-reduces-frizz.jpg"
-    }
+    },
+    "barcode": "8901088719933"
    }
   ],
   "images": [
@@ -707,7 +827,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279805-8_3-coco-soul-curl-cult-hydrating-shampoo-with-virgin-coconut-oil-reduces-frizz.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the magic of Ayurveda, we have created a curl-loving range to celebrate your curls. Coco Soul Curl Cult range is formulated using select Ayurvedic herbs, flaxseeds and 100% cold-pressed virgin coconut oil that defines your glorious curls to perfection, leaving them soft, manageable and hydrated. An Ayurvedic proprietary medicine, it feels gentle on the scalp and hair. You can use it and swap it with your regular shampoo to have the best of Ayurveda. A totally pure solution for your healthy haircare, make a way for it to reside on your shelves and gain the right benefits from the same!",
+   "usageInstructions": "Take a small amount and apply it to wet hair.\nWork it into your scalp and hair in small circular motions.\nLather and rinse well using lukewarm water.\nStorage Instructions: Best to be stored at room temperature, away from direct sunlight and heat.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "United Kingdom"
+  }
  },
  {
   "title": "Hair & Scalp Conditioner",
@@ -723,7 +849,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40242637_4-coco-soul-hair-scalp-conditioner-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
-    }
+    },
+    "barcode": "8901088160551"
    }
   ],
   "images": [
@@ -751,7 +878,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40242637-8_4-coco-soul-hair-scalp-conditioner-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Hair Conditioner is powered with 100% Organic Virgin King Coconut Oil, Hibiscus, Lunuwila and 2 other ayurvedic herbs. Virgin King Coconut oil penetrates 90% of hair strands and repairs damaged hair by reversing up to 50% of internal structural damage. The lauric Acid present in coconut oil binds the protein in hair & scalp and helps protect both the roots and strands of hair from breakage. Hibiscus makes your hair beautifully soft while adding extra shine to it. Lunuwila is beneficial in checking dandruff, itchiness and the formation of split ends and flakes. This product is free from Sulphates, Parabens, Mineral Oil, Silicones, Phthalates, Formaldehyde, DEA, Propylene Glycol, Petrolatum etc.",
+   "usageInstructions": "Massage into wet hair and scalp, then rinse with water.",
+   "manufacturerName": "(For Marico Ltd)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Amla & Sesame Conditioner",
@@ -767,7 +900,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40286027_2-coco-soul-conditioner-for-long-strong-black-with-100-cold-pressed-virgin-coconut-oil-amla-sesame.jpg"
-    }
+    },
+    "barcode": "8901088719339"
    }
   ],
   "images": [
@@ -795,7 +929,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40286027-8_2-coco-soul-conditioner-for-long-strong-black-with-100-cold-pressed-virgin-coconut-oil-amla-sesame.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurvedic scholars have identified many herbs that are beneficial for hair & scalp health called Keshya Herbs. Coco Soul Long, Strong & Black Conditioner is formulated using Keshya herbs like Amla, Sesame, Hibiscus, Castor Oil & Aloe Vera along with 100% Cold Pressed Virgin Coconut Oil that increases blood flow and deeply moisturises hair & scalp.",
+   "usageInstructions": "Apply the Coco Soul Conditioner for Long Strong on wet hair after shampoo.\nLet it sit for 2-3 minutes and then rinse it with water.\nFor best results, use it with Coco Soul Hair Fall Control Hair Oil and Coco Soul Hair Fall Control Shampoo.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hair Fall Control Conditioner",
@@ -811,7 +951,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40279800_2-coco-soul-hairfall-control-conditioner-with-virgin-coconut-oil-strengthens-roots.jpg"
-    }
+    },
+    "barcode": "8901088719353"
    }
   ],
   "images": [
@@ -839,7 +980,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279800-8_2-coco-soul-hairfall-control-conditioner-with-virgin-coconut-oil-strengthens-roots.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Hairfall Control Conditioner is formulated using select herbs and 100% natural Ayurvedic actives that contain keshya properties and pacify Pitta-Vata dosha. Enriched with the goodness of bhringraj, banyan aerial root, hibiscus and aloe vera, Coco Soul Hair Fall Control Conditioner strengthens hair roots and supports hair growth. An Ayurvedic proprietary medicine, it feels gentle on the scalp and hair. You can use it and swap it with your regular conditioner to have the best of Ayurveda. A totally pure solution for your healthy haircare, make a way for it to reside on your shelves and gain the right benefits from the same!",
+   "usageInstructions": "Take a small amount of the conditioner.\nMassage it gently on hair lengths.\nLeave on for 2-3 minutes and rinse well with cool water.\nStorage Instructions: Best to be stored at room temperature, away from direct sunlight and heat.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "United Kingdom"
+  }
  },
  {
   "title": "Curl Cult Nourishing Conditioner",
@@ -855,7 +1002,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40279806_3-coco-soul-curl-cult-nourishing-conditioner-with-virgin-coconut-oil-moisturises-hair.jpg"
-    }
+    },
+    "barcode": "8901088719919"
    }
   ],
   "images": [
@@ -883,7 +1031,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40279806-8_2-coco-soul-curl-cult-nourishing-conditioner-with-virgin-coconut-oil-moisturises-hair.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the magic of Ayurveda, we have created a curl-loving range to celebrate your curls. Coco Soul Curl Cult range is formulated using select Ayurvedic Herbs, Flaxseeds & 100% Cold-Pressed Virgin Coconut Oil that defines your glorious curls to perfection, leaving them soft, manageable & hydrated.",
+   "usageInstructions": "Take a small amount of the conditioner.\nMassage it gently on hair lengths.\nLeave on for 2-3 minutes and rinse well with cool water.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "United Kingdom"
+  }
  },
  {
   "title": "Dandruff Control Hair Mask",
@@ -924,7 +1078,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287278-7_1-coco-soul-dandruff-control-hair-mask-with-100-cold-pressed-virgin-coconut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Dandruff Control Hair Mask is formulated using 100% Natural Ayurvedic Herbs & is enriched with the Goodness of 100% Cold Pressed Virgin Coconut Oil, Neem, Methi, karanj & Dhurdhoorapthradikera Tailam. Regular use of Coco Soul Dandruff Control Hair Mask not only helps correct Vata-Kapha imbalance but also maintains a healthy scalp, and fights dryness, dullness & dandruff.",
+   "usageInstructions": "After cleansing your hair, ideally with Coco Soul Dandruff Control Shampoo, apply the Coco Soul Dandruff Control hair mask over your hair & scalp, from roots to tips.\nLeave it for 15-20 minutes and then rinse thoroughly.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hair Fall Control Hair Mask",
@@ -940,7 +1100,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40287277_2-coco-soul-hairfall-control-mask-with-virgin-coconut-oil-supports-growth.jpg"
-    }
+    },
+    "barcode": "8901088719896"
    }
   ],
   "images": [
@@ -968,7 +1129,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287277-8_2-coco-soul-hairfall-control-mask-with-virgin-coconut-oil-supports-growth.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Hairfall Control Hair Mask from the house of Parachute Advansed is formulated using select & 100% Natural Ayurvedic Herbs that contain Keshya properties and pacify Pitta-Vata Dosha. Enriched with the goodness of Yastimadhuka Tailam, Bhringraj, Banyan Aerial Roots, Hibiscus Roots, Aloe & Virgin Coconut Oil, Coco Soul Hairfall Control Hair Mask strengthens hair roots, controls hair fall & supports hair growth.",
+   "usageInstructions": "Take a small amount of hair mask. \nApply it generously on well-cleansed wet hair from roo to tip. \nWash off with lukewarm water after 15-20 mins & allow your hair to air dry.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Amla Hair Mask",
@@ -1012,7 +1179,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287279-8_1-coco-soul-hair-mask-for-long-strong-black-texture-with-100-cold-pressed-virgin-coconut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ayurvedic scholars have identified many herbs that are beneficial for hair & scalp health called Keshya Herbs. Coco Soul Long, Strong & Black Hair Mask is formulated using Keshya herbs like Amla, Sesame, Hibiscus, Castor Oil & Aloe Vera along with 100% Cold Pressed Virgin Coconut Oil that increases blood flow and deeply moisturises hair & scalp.",
+   "usageInstructions": "After cleansing your hair, ideally with Coco Soul Long, Strong & Black Hair Shampoo, apply the Coco Soul Long, strong & Black Hair mask over your hair & scalp, from roots to tips.\nLeave it for 15-20 minutes and then rinse thoroughly.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Curl Cult Deep Conditioning Hair Mask",
@@ -1056,7 +1229,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287280-8_3-coco-soul-curl-cult-deep-conditioning-hair-mask-for-soft-healthy-texture.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the magic of Ayurveda, we have created a curl-loving range to celebrate your curls.\nCoco Soul Curl Cult range is formulated using select Ayurvedic Herbs, Flaxseeds & 100% Cold-Pressed Virgin Coconut Oil that defines your glorious curls to perfection, leaving them soft, manageable & hydrated.",
+   "usageInstructions": "Take a small amount of the conditioner. \nApply it gently on hair lengths. \nLeave on for 2-3 minutes and rinse well with cool water.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Curl Cult Hair Defining Cream",
@@ -1100,7 +1279,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287282-8_1-coco-soul-curl-cult-hair-defining-cream-moisturises.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the magic of Ayurveda, we have created a curl-loving range to celebrate your curls.\nCoco Soul Curl Cult range is formulated using select Ayurvedic Herbs, Flaxseeds & 100% Cold-Pressed Virgin Coconut Oil that defines your glorious curls to perfection, leaving them soft, manageable & hydrated.",
+   "usageInstructions": "Apply the cream evenly on wet hair. \nScrunch curls upwards or use the praying hand's method. \nAir dry or use a diffuser for long-lasting, defined curls.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Curl Cult Taming Hair Gel",
@@ -1144,7 +1329,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40287281-8_1-coco-soul-curl-cult-hair-taming-gel-for-frizz-control.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the magic of Ayurveda, we have created a curl-loving range to celebrate your curls.\nCoco Soul Curl Cult range is formulated using select Ayurvedic Herbs, Flaxseeds & 100% Cold-Pressed Virgin Coconut Oil that defines your glorious curls to perfection, leaving them soft, manageable & hydrated.",
+   "usageInstructions": "Work a generous amount between your palms and onto wet or damp curls.\nAllow it to rest for 10-15 minutes & scrunch throughout for frizz-free hair.",
+   "manufacturerName": "Stella Industries Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Body Lotion with Virgin Coconut Oil",
@@ -1160,7 +1351,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40242636_8-coco-soul-nourishing-body-lotion-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
-    }
+    },
+    "barcode": "8901088160582"
    }
   ],
   "images": [
@@ -1188,7 +1380,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40242636-8_2-coco-soul-nourishing-body-lotion-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Nourishing Body Lotion is powered with 100% Organic Virgin King Coconut Oil, Sandalwood, Welmi and 2 other ayurvedic herbs. Virgin King Coconut oil promotes cellular repair and penetrates 10 layers deep into the skin to restore lost moisture and repair dry & damaged skin. Sandalwood has emollient properties. It also aids in minimising age spots and reverses sun damage. Loaded with Vitamin C makes the skin radiant. This product is free from Sulphates, Parabens, Mineral Oil, Silicones, Phthalates, Formaldehyde, DEA, Propylene Glycol, Petrolatum etc.",
+   "usageInstructions": "Take a small amount and gently massage it on the skin.",
+   "manufacturerName": "(For Marico Ltd)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Shower Gel with Coconut & Turmeric",
@@ -1204,7 +1402,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40242635_4-coco-soul-revitalising-shower-gel-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
-    }
+    },
+    "barcode": "8901088160575"
    }
   ],
   "images": [
@@ -1232,7 +1431,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40242635-8_2-coco-soul-revitalising-shower-gel-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Shower Gel is powered with 100% Organic Virgin King Coconut Oil, Turmeric, Gotukola and 2 other ayurvedic herbs. Virgin King Coconut oil promotes cellular repair and penetrates 10 layers deep into the skin to restore lost moisture and repair dry & damaged skin. Turmeric provides glow and lustre to the skin and it has anti-bacterial and anti-fungal properties. Gotukola has anti-ageing properties and it reduces the appearance of fine lines and wrinkles on the face by promoting collagen production. This product is free from Sulphates, Parabens, Mineral Oil, Silicones, Phthalates, Formaldehyde, DEA, Propylene Glycol, Petrolatum etc.",
+   "usageInstructions": "1. Lather up in the shower with your hands or a loofah.\n2. Rinse well.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(For Marico Ltd)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Face Scrub with Virgin Coconut Oil",
@@ -1248,7 +1454,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40242638_3-coco-soul-face-scrub-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
-    }
+    },
+    "barcode": "8901088141000"
    }
   ],
   "images": [
@@ -1276,7 +1483,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40242638-8_2-coco-soul-face-scrub-with-virgin-king-coconut-oil-paraben-sulphate-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Coco Soul Face Scrub is powered with 100% Organic Virgin King Coconut Oil, Venivel and Sandalwood. Virgin King Coconut oil promotes cellular repair and penetrates 10 layers deep into the skin to restore lost moisture and repair dry & damaged skin. Venivel, a natural exfoliating agent along with Coconut Shell powder deep cleans pores, removes dirt, and clears dead skin to reveal radiant/glowing skin. Sandalwood has emollient properties. It also aids in minimizing age spots and reverses sun damage. This product is free from Sulphates, Parabens, Mineral Oil, Silicones, Phthalates, Formaldehyde, DEA, Propylene Glycol, Petrolatum etc.",
+   "usageInstructions": "Massage onto wet skin in a circular motion.\nRinse with lukewarm water.",
+   "manufacturerName": "(For Marico Ltd)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Baby Ayurvedic Massage Oil",
@@ -1292,7 +1505,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40263287_3-coco-soul-100-natural-baby-massage-oil-with-extra-virgin-coconut-oil-ayurvedic-herbs-from-the-makers-of-parachute-no-parabens-without-perfume.jpg"
-    }
+    },
+    "barcode": "8901088212120"
    }
   ],
   "images": [
@@ -1317,7 +1531,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263287-7_3-coco-soul-100-natural-baby-massage-oil-with-extra-virgin-coconut-oil-ayurvedic-herbs-from-the-makers-of-parachute-no-parabens-without-perfume.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "In our lifetime, we tend to grow & develop the most during our childhood years. These early years are responsible for the bones lengthening, the muscles becoming sturdy, sense organs getting strong and the brain growing rapidly. With so many activities going on during childhood, the baby must have sufficient care & maintenance.\nThis can happen in two ways –\nA healthy and nutritious food that facilitates healthy metabolism.\nCare of the body through Oil massage. \nThe traditional practice of Shishu Abhyanga done to babies is very much under the principles of Ayurveda. Shishu Abhyanga is a massage that's done with warm oil. The oil is applied to the entire body, from the scalp to the soles of the baby's feet. To make this traditional and enriching experience a beautiful bonding moment between a mother & a child, we from the house of Parachute, bring to you Coco Soul Baby Massage Oil with Extra Virgin Coconut oil & Ayurvedic Herbs. Enriched with Virgin Coconut Oil, Wheatgerm Oil, Shea Butter, Rosehip Oil & flaxseed oil, this product can help promote the overall growth of the child. Extra virgin coconut oil, which is rich in lauric acid, not only makes the baby's skin soft but also smooth & supple. Indulge in the practice of Shishu Abhyanga with your baby, for smooth, soft & supple skin while promoting wholesome growth.",
+   "usageInstructions": "Apply the Cocosoul Baby Massage oil from the head to the baby's feet.\nUsing soft pressure, apply the oil in a circular motion to gently stimulate the baby's skin.\nTraditionally, Shishu Abhyanga can be practised in the morning or evening.",
+   "manufacturerName": "for Marico Ltd Cosmic Nutracos Solutions Pvt. Ltd. Plot No. 12"
+  }
  },
  {
   "title": "Baby Ayurvedic Shampoo",
@@ -1349,7 +1568,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293285-4_1-coco-soul-baby-ayurvedic-shampoo-nourishing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the Magic of Ayurveda, we have created safe & toxin-free Ayurvedic Baby products that follow the wisdom of ancient rituals and traditions. Curated using 100% Cold Pressed Virgin Coconut Oil and select herbs, Coco Soul Baby Ayurvedic products are a perfect companion for your baby’s initial skincare & haircare needs!",
+   "usageInstructions": "Pour a small amount of the Coco Soul Baby Ayurvedic Shampoo onto your hands. Apply it to the baby's wet hair and scalp. Massage gently using fingertips and create a lather. Rinse thoroughly with plain water and pat dry.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Baby Ayurvedic Head to Toe Wash",
@@ -1365,7 +1590,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40293286_1-coco-soul-baby-ayurvedic-head-to-toe-wash-nourishing.jpg"
-    }
+    },
+    "barcode": "8901088886741"
    }
   ],
   "images": [
@@ -1387,7 +1613,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293286-6_1-coco-soul-baby-ayurvedic-head-to-toe-wash-nourishing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the Magic of Ayurveda, we have created safe & toxin-free Ayurvedic Baby products that follow the wisdom of ancient rituals and traditions. Curated using 100% Cold Pressed Virgin Coconut Oil and select herbs, Coco Soul Baby Ayurvedic products are a perfect companion for your baby’s initial skincare & haircare needs!",
+   "usageInstructions": "Pour a generous amount of the Coco Soul Baby Ayurvedic Head to Toe wash onto your palms. Apply it to the baby's wet body, hair, and massage gently. Work up a lather and rinse thoroughly with plain water.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Baby Ayurvedic Bathing Soap",
@@ -1404,7 +1636,8 @@
     "estimated": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40293288_1-coco-soul-baby-ayurvedic-bathing-soap-nourishing.jpg"
-    }
+    },
+    "barcode": "8901088886734"
    }
   ],
   "images": [
@@ -1432,7 +1665,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293288-8_1-coco-soul-baby-ayurvedic-bathing-soap-nourishing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the magic of Ayurveda, we have created safe & toxin-free Ayurvedic Baby products that follow the wisdom of ancient rituals and traditions. Curated using 100% Cold Pressed Virgin Coconut Oil and select herbs, Coco Soul Baby Ayurvedic products are a perfect companion for your baby’s initial skincare & haircare needs!",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Baby Ayurvedic Body Lotion",
@@ -1448,7 +1686,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40293287_1-coco-soul-baby-ayurvedic-body-lotion-nourishing.jpg"
-    }
+    },
+    "barcode": "8901088886758"
    }
   ],
   "images": [
@@ -1467,6 +1706,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293287-5_1-coco-soul-baby-ayurvedic-body-lotion-nourishing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With the goodness of Coconut and the Magic of Ayurveda, we have created safe & toxin-free Ayurvedic Baby products that follow the wisdom of ancient rituals and traditions. Curated using 100% Cold Pressed Virgin Coconut Oil and select herbs, Coco Soul Baby Ayurvedic products are a perfect companion for your baby’s initial skincare & haircare needs!",
+   "usageInstructions": "Clean your hands thoroughly. Take a small amount of Coco Soul Baby Ayurvedic Lotion and spread it on the palms and fingers of your hands. Gently massage the baby's body such that the lotion spreads evenly all over.",
+   "manufacturerName": "Krauter Healthcare Ltd. B-44 Sector-80",
+   "countryOfOrigin": "India"
+  }
  }
 ]

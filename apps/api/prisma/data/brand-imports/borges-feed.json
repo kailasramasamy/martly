@@ -77,7 +77,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40015518-8_1-borges-olive-oil-extra-virgin.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Original Extra Virgin Olive Oil, a masterful blend of first cold-extraction oils from select, high-quality olives. Enjoy a delicately balanced mild flavour with hints of fruitiness, sharpness, and spice. Perfect for enhancing any dish, this exquisite oil offers a touch of gourmet sophistication to your culinary creations.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Sugars": "0g",
+    "Fat": "100g",
+    "Saturated Fat": "15g",
+    "Monounsaturated": "75g",
+    "Polyunsaturated": "10g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg"
+   },
+   "manufacturerName": "Aceites Borges Pont",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Eco Natura Extra Virgin Olive Oil",
@@ -93,7 +111,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40186486_1-borges-eco-natura-organic-extra-virgin-olive-oil.jpg"
-    }
+    },
+    "barcode": "8410179100708"
    }
   ],
   "images": [
@@ -115,7 +134,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186486-6_1-borges-eco-natura-organic-extra-virgin-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "100% Organic Extra virgin olive oil with an exquisite taste and flavour. Cold-pressed from organic olives. It is a product of Spain. Virgin Olive oil will reduce the risk of heart disease,  protect against stroke, and lower the risk of type 2 diabetes.",
+   "ingredients": "Extra Virgin Olive Oil",
+   "usageInstructions": "Direct consumption or in salads, dressings, marinades.",
+   "manufacturerName": "Borges Agricultural & Edible Industrial Edible Oils",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Character Extra Virgin Olive Oil",
@@ -150,7 +177,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338400-5_1-borges-character-extra-virgin-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Character extra virgin olive oil, crafted from the Picual olive variety, boasts an intense personality with a bold, spicy touch. Its robust flavour enhances a variety of dishes, making it perfect for dressing and drizzling over grilled meats, fish, seafood, and vegetables. Cold-pressed to preserve its rich aroma and depth, this high-quality oil adds a distinctive Mediterranean touch to your culinary creations. Ideal for those who appreciate strong, well-defined flavours in their cooking.",
+   "manufacturerName": "Borges Agricultural & Industrial Edible Oils",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Fruity Extra Virgin Olive Oil",
@@ -188,7 +221,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338401-6_1-borges-fruity-extra-virgin-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Fruity extra virgin olive oil, made from the Arbequina olive variety, offers a sweet, elegant, and gentle flavour. Its smooth texture and balanced taste make it ideal for salad dressings, soft creams, greens, pasta, and soups. Cold-pressed to retain its natural aromas, this premium oil enhances dishes with a delicate yet rich fruity note. Perfect for drizzling or finishing meals, it brings a touch of Mediterranean excellence to your kitchen, elevating both simple and gourmet recipes.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Borges Agricultural & Industrial Edible Oils",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Classic Olive Oil",
@@ -259,7 +299,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40306989_2-borges-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges Olive Oil - Classic 250 ml is a rich olive oil with a classic Mediterranean flavour and aroma. It is perfect for use in a variety of Mediterranean dishes such as pastas and pizzas. The oil is high in monounsaturated fats and is cholesterol-free, making it a healthy choice. It also has antioxidant properties.",
+   "ingredients": "Olive Oil",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (Kj)": "3700 Kj",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Sugars": "0g",
+    "Fat": "100g",
+    "Saturated Fat": "15g",
+    "Monounsaturated": "75g",
+    "Polyunsaturated": "10g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Olive Oil for Indian Cooking",
@@ -339,7 +398,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267280-8_1-borges-olive-oil-extra-light.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges Extra Light Olive oil is handcrafted in Spain keeping in mind the Indian cooking methods. The olive oil is light in flavour & mild in the aroma which does not interfere with the original flavor of the dishes. Extra Light Olive oil has a high smoking point which makes it perfect for any high heat cooking including frying. And being an olive oil of the highest quality, it has all the health benefits like 75% MUFA, natural antioxidants, phenols and Vitamins that help in all-round health of your body.",
+   "ingredients": "Olive Oil",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "229g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Sugars": "0g",
+    "Fat": "100g",
+    "Saturated Fat": "15g",
+    "Monounsaturated": "75g",
+    "Polyunsaturated": "10g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "*Store away from direct heat and light\n*Recap after each use",
+   "manufacturerName": "Borges Agricultural & Industrial Edible Oils",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Canola Oil",
@@ -355,7 +435,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40023114_8-borges-canola-oil.jpg"
-    }
+    },
+    "barcode": "8410179010809"
    },
    {
     "title": "5L",
@@ -386,7 +467,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023115_2-borges-canola-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Derived from a variety of rapseed canola oil is a vegetable oil. Used for cooking and baking at home. It is low in euric acid. It is healthy reduces inflammation and is much lighter on the pallete. It can used in cooking many dishes and is similar to the common vegetable oil used in hoseholds.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "917g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "of which sugars": "0g",
+    "Fat": "100g",
+    "Saturated Fat": "7g",
+    "Mono-unsaturates Fat (MUFA)": "60g",
+    "Polyunsaturated Fat (PUFA)": "33g",
+    "Salt": "0g",
+    "Fiber": "0g",
+    "Cholesterol": "0mg",
+    "Vitamin E": "20mg",
+    "Omega 3": "6.0g"
+   },
+   "manufacturerName": "Aceites Borges Pont",
+   "countryOfOrigin": "SPAIN"
+  }
  },
  {
   "title": "Borgefrit High Oleic Sunflower Oil",
@@ -433,7 +536,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023113_2-borges-borgefrit-high-mufa-oleic-sunflower-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges has produced its own High Oleic Sunflower oil since 1982 and has had contracts with cooperatives and producers to ensure supply, traceability and quality control from the field to our customers. \"High-oleic\" sunflower oil is similar in composition to olive oil. Its quality-price ratio makes Borgefrit hi-oleic sunflower oil the most suitable frying oil. Its fatty-acid composition is similar to that in olive oil (70-85%) but it has a higher content of vitamin E. Frying at 180 deg, this oil remains unchangeable 70% longer than average sunflower oil, so it may be used more times. Sunflower oil is mainly composed of polyunsaturated fatty acids which include linoleic acids. 75% MUFA - good for heart and blood sugar management.",
+   "ingredients": "Refined High Oleic Sunflower Oil, Anti-foaming agent \"E-900 a\"",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "900 kcal",
+    "Protein": "0 g",
+    "Carbohydrates": "0 g",
+    "Sugar": "0 g",
+    "Fat": "100 g",
+    "Saturated Fat": "10 g",
+    "Monounsaturated Fat (MUFA)": "75 g",
+    "Polyunsaturated Fat (PUFA)": "15 g",
+    "Trans fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Vitamin-E": "60 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Aceites Borges Pont",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "SPAIN"
+  }
  },
  {
   "title": "Sunflower & Extra Virgin Olive Oil",
@@ -486,7 +612,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325391_1-borges-sunflower-extra-virgin-olive-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary creations with our expertly crafted blend of 20% extra virgin olive oil and sunflower oil. Created by olive oil specialists, this super blend is tailored to support your lifestyle and fitness goals. With the balance of MUFA & PUFA, naturally rich in Vitamin E & added Vitamin D. The super blend contains tocopherols & polyphenols which are natural anti-oxidants; good for skin, helps bones to absorb calcium and minerals, good for gut health, also helps delaying Type-2 Diabetes. It contains anti-ageing properties.",
+   "ingredients": "Refined Sunflower oil (80%), Extra Virgin olive oil (20%) and Vitamin D",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "14g",
+    "Energy": "900 kcal",
+    "Protein": "0g",
+    "Carbohydrate": "0g",
+    "Total sugars": "0g",
+    "Added sugars": "0g",
+    "Total fat": "100g",
+    "Saturated fat": "12g",
+    "Monounsaturated fat": "40g",
+    "Polyunsaturated fat": "46g",
+    "Trans fat": "<0.5g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Vitamin D": "25 ?g"
+   },
+   "storageInstructions": "Store in a cool, dry place\nKeep away from direct sunlight and heat\nSeal tightly after use",
+   "manufacturerName": "BORGES AGRICULTURAL & INDUSTRIAL EDIBLE OILS",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "SPAIN"
+  }
  },
  {
   "title": "Balsamic Vinegar of Modena",
@@ -530,7 +681,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016762-8_1-borges-vinegar-balsamico-modena.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, nuanced flavour of Borges Balsamico Modena Vinegar, crafted with care in the heart of Italy. This premium vinegar is aged to perfection using ancient processes, resulting in a deep, complex character that elevates any dish. Versatile and multipurpose, this vinegar is perfect for marinating meats, dressing salads, and adding a delightful touch to sauces and dressings. Its sweet and tangy profile complements a wide range of ingredients, from veal and duck to smoked fish like trout and salmon. Elevate your culinary creations with the exceptional quality and flavour of this Modena-made vinegar, a true taste of Italy.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "15 kcal",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "5 mg",
+    "Total Carbohydrates": "3.5 g",
+    "Dietary Fiber": "0 g",
+    "Total Sugars": "3.5 g",
+    "Protein": "0 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Red Wine Vinegar",
@@ -559,7 +727,19 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322814-3_1-borges-borges-red-wine-vinegar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A versatile Red Wine vinegar made from selected Spanish wines from renowned vineyards. Produced using the finest raw ingredients with the ancient art of vinegar making, our premium vinegar benefits from painstaking oversight and our thorough sensitivity throughout all stages of the production process.",
+   "ingredients": "Red Wine Vinegar, Preservative E-224 potassium metabisulfite",
+   "nutritionalInfo": {
+    "Energy": "20 Kcal",
+    "Protein": "0.14 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Borges India Pvt. Ltd. A-47",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Unfiltered Apple Cider Vinegar with Mother",
@@ -612,7 +792,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114032-8_1-borges-organic-unfiltered-apple-cider-vinegar-with-the-mother.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "BORGES Unfiltered Apple Cider Vinegar With Mother is crafted to retain its natural goodness. Rich in nutrients and live cultures, this vinegar supports digestion and overall wellness. Its robust flavour enhances salads and marinades, while the presence of 'Mother' boosts its probiotic benefits. Embrace this versatile ingredient for health and flavour in every meal.",
+   "usageInstructions": "1 tbsp Borges ACV in a glass of water 30 minutes before breakfast/any meal of the day. Start with only once a day before breakfast. For best use, have the same dosage twice a day 30 minutes before any meal. |",
+   "manufacturerName": "Vinagreras del Peneds",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Black Pitted Olives",
@@ -650,7 +836,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325392-6_1-borges-black-pitted-olives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Borges Black Pitted Olives, a true taste of the Mediterranean. These carefully selected olives boast a rich, savoury flavour that is both subtly tangy and utterly delightful. With their smooth texture and convenient pre-pitted design, they are the perfect addition to a wide array of dishes, from vibrant salads and flavourful pasta to indulgent pizzas and irresistible tapas. Embrace the timeless elegance of these black olives and let their exquisite taste and unmatched charm transform your culinary creations. Whether you're seeking a healthy snack or a versatile ingredient to enhance your recipes, Borges Black Pitted Olives are the culinary treasure you've been searching for.",
+   "ingredients": "Water, black olives, salt, stabilizer: ferrous gluconate",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "25g",
+    "Energy": "125 kcal",
+    "Fat": "13 g",
+    "Saturated fat": "2.2 g",
+    "Cholesterol": "0.1 g",
+    "Carbohydrate": "0 g",
+    "Total sugars": "0 g",
+    "Sodium": "0.5 g"
+   },
+   "manufacturerName": "BORGES AGRICULTURAL & INDUSTRIAL EDIBLE OILS",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "SPAIN"
+  }
  },
  {
   "title": "Black Sliced Olives",
@@ -688,7 +892,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325393-6_1-borges-black-sliced-olives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary adventures with the rich, versatile flavour of Borges Black Sliced Olives. These premium olives, sourced from trusted producers, bring a burst of Mediterranean allure to any dish. Their smooth texture and subtly salty taste make them a delightful addition to salads, pizzas, pasta, sandwiches, wraps, dips, and spreads. Whether sliced or pitted, these black olives infuse each bite with a savoury satisfaction that will transport your taste buds to the sun-drenched shores of the Mediterranean. Embrace the timeless elegance of Borges black olives and let their exquisite flavour and unmatched charm elevate your culinary creations to new heights.",
+   "ingredients": "Black olives, water, salt, stabilizer: ferrous gluconate",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "25g",
+    "Energy value": "125 kcal",
+    "Fat": "13g",
+    "saturated fat": "2.3 g",
+    "trans fat": "0.1g",
+    "Carbohydrate": "0.21 mg",
+    "total sugars": "0.0 g",
+    "added sugars": "0g",
+    "Protein": "0.5 g",
+    "Sodium": "1080 mg"
+   },
+   "manufacturerName": "BORGES AGRICULTURAL & INDUSTRIAL EDIBLE OILS",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "SPAIN"
+  }
  },
  {
   "title": "Green Pitted Olives",
@@ -704,7 +928,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40016761_4-borges-olives-green-pitted.jpg"
-    }
+    },
+    "barcode": "8410179012476"
    }
   ],
   "images": [
@@ -726,7 +951,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016761-6_2-borges-olives-green-pitted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges Green Pitted Olives are a delicious and versatile snack. These olives are carefully selected, pitted, and preserved to retain their natural flavour and texture. They are perfect for adding to salads, sandwiches, or as a standalone appetiser. Enjoy the rich, savoury taste of these premium green olives.",
+   "ingredients": "Green olives, water, salt, acidity regulator: citric acid, antioxidant: ascorbic acid",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "669 kJ/163 kcal",
+    "Fat": "17 g",
+    "Saturated": "3.0 g",
+    "Carbohydrates": "0 g",
+    "Sugars": "0 g",
+    "Protein": "1.0 g",
+    "Salt": "5.5 g"
+   }
+  }
  },
  {
   "title": "Green Sliced Olives",
@@ -758,7 +997,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40088922-4_1-borges-green-olives-sliced.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Perfectly sliced green Manzanilla olives stored in brine water. Vegetarian product.",
+   "ingredients": "Sliced Green Olives, Brine Solution",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "669 kJ/163 kcal",
+    "Fat": "17g",
+    "Saturated": "3.0 g",
+    "Carbohydrates": "0g",
+    "Sugars": "0g",
+    "Protein": "0.9 g",
+    "Salt": "5.5 g"
+   },
+   "manufacturerName": "Arasol",
+   "countryOfOrigin": "Italy,SPAIN"
+  }
  },
  {
   "title": "Garlic Mix Olives",
@@ -793,7 +1048,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197235-5_1-borges-garlic-mix-olives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "If you thought Olives were boring, Think again! Borges Garlic Mix Olives are a beautiful snack mix of green pitted Spanish olives & Garlic in Extra virgin olive oil and herbs. For everyone who loves the aroma & taste of garlic, this is a must-buy. The intense garlic flavour makes it perfect for adding on to pasta, risotto or on top of the bread. \nComes in a re-sealable zip pouch making it convenient to keep snacking on. Pair it with a glass of your favourite drink or toss it into a salad, these olives are versatile in use, flavorful in taste and healthy too. Unique recipes, Real vegetables & herbs, Extra Virgin Olive oil and easy snack packs. Available in 3 different variants.\nMarinated pitted olives with garlic and provençal herbs. Pitted green olives with garlic and extra virgin olive oil (2%)\nweight: 350g, vegan",
+   "ingredients": "Pitted Green Olives, Dehydrated Garlic (6%), Salt, Extra Virgin Olive Oil, Provencal Herbs (1%), Parsley (0,4%), Acidity Regulator: Citric Acid, Antioxidant: Ascorbic Acid.",
+   "manufacturerName": "ARASOL",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Gourmet Charm Olives",
@@ -809,7 +1071,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40197236_1-borges-gourmet-charm-olives.jpg"
-    }
+    },
+    "barcode": "8410179015811"
    }
   ],
   "images": [
@@ -828,7 +1091,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197236-5_1-borges-gourmet-charm-olives.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "If you thought Olives were boring, Think again! Borges Gourmet Charm Olives are a beautiful mix of green and black olives with Carrots, Bell peppers & garlic in Extra virgin olive oil. These are quintessential gourmet snacking Olives from the Mediterranean - your house parties will never be the same again with this on the side. \nComes in a re-sealable zip pouch making it convenient to keep snacking on. Pair it with a glass of your favourite drink or just a snack as it is or add it to your pasta, salads etc. This takes your gourmet dish to another level. Unique recipes, Real vegetables & herbs, Extra Virgin Olive oil and easy snack packs. Available in 3 different variants.\nMarinated whole mixed olives with red pepper and carrot. Whole green olives and whole natural black olives in variable proportion with vegetables with extra virgin olive oil (2%)\nweight: 350g, vegan",
+   "ingredients": "Whole Green Olives, Whole Natural Black Olives, Gourmet Preparation 5% (garlic, Pepper, Carrot) Salt, Extra Virgin Olive Oil, Acidity Regulator: Citric Acid, Antioxidant: Ascorbic Acid.",
+   "manufacturerName": "ARASOL",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Snacking Olives Spanish Soul",
@@ -844,7 +1114,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40225099_1-borges-snacking-olives-spanish-soul.jpg"
-    }
+    },
+    "barcode": "8410179017679"
    }
   ],
   "images": [
@@ -863,7 +1134,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40225099-5_1-borges-snacking-olives-spanish-soul.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Get the flavour of the Mediterranean with the lip-smacking Spanish soul snacking olives from Borges. With real vegetables, extra virgin olive oil, herbs & spices, it is perfect as a party snack or as an addition to your salad, pasta or pizzas. Comes in a beautiful zip pouch making it easy to snack & store.",
+   "ingredients": "Pitted green olives, Whole natural black olives, Salt, Carrot(4%), Extra virgin olive oil (0.6%), Dehydrated lemon (2%), Spices, Acidity Regulator: Citric acid, Antioxidant: Ascorbic acid.",
+   "storageInstructions": "Consume directly as a snack with your favourite beverage.\nAdd to your salad or pasta.",
+   "manufacturerName": "Aceites Borges Pont",
+   "countryOfOrigin": "SPAIN"
+  }
  },
  {
   "title": "Farfalle Pasta",
@@ -907,7 +1185,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/303137-8_1-borges-durum-wheat-pasta-farfalle.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Italy with Borges Pasta. Crafted from Durum Wheat Semolina, this protein-rich pasta offers a wholesome and delicious foundation for your favourite meals. Free from cholesterol and trans fats, it is perfect for quick meals or elaborate dishes. Bronze-cut for a rough surface, it is designed to hold sauces beautifully, ensuring every bite is flavourful and satisfying.\nAuthentic Italian Pasta: Imported from Italy and made the traditional Italian way.\nPremium Durum Wheat: Crafted from Durum Wheat Semolina for a firm texture and rich flavour.\nProtein-Rich & Wholesome: High in protein and free from cholesterol and trans fats.\nVersatile Meal Solution: Ideal for quick weeknight dinners, hearty family meals, or refreshing pasta salads.\nBronze-Cut For Better Sauce Absorption: The rough surface helps sauces cling to the pasta for more flavour in every bite.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "354 kcal",
+    "Protein": "12.5 g",
+    "Carbohydrate": "71.9 g",
+    "Of Which Sugars": "3.2 g",
+    "Fat": "1.3 g",
+    "Of Which Saturated Fat": "0.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "2.5 g",
+    "Sodium": "0.002 g",
+    "Serving Size": "100 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Pastificio Mediterranea SRL Italy",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Fusilli Pasta",
@@ -951,7 +1251,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/303129-8_1-borges-durum-wheat-pasta-fusilli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Italy with Borges Pasta. Crafted from Durum Wheat Semolina, this protein-rich pasta offers a wholesome and delicious foundation for your favourite meals. Free from cholesterol and trans fats, it is perfect for quick meals or elaborate dishes. Bronze-cut for a rough surface, it is designed to hold sauces beautifully, ensuring every bite is flavourful and satisfying.\nAuthentic Italian Pasta: Imported from Italy and made the traditional Italian way.\nPremium Durum Wheat: Crafted from Durum Wheat Semolina for a firm texture and rich flavour.\nProtein-Rich & Wholesome: High in protein and free from cholesterol and trans fats.\nVersatile Meal Solution: Ideal for quick weeknight dinners, hearty family meals, or refreshing pasta salads.\nBronze-Cut For Better Sauce Absorption: The rough surface helps sauces cling to the pasta for more flavour in every bite.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "354 kcal",
+    "Protein": "12.5 g",
+    "Carbohydrate": "71.9 g",
+    "Of Which Sugars": "3.2 g",
+    "Fat": "1.3 g",
+    "Of Which Saturated Fat": "0.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "2.5 g",
+    "Sodium": "0.002 g",
+    "Serving Size": "500 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Pastificio Mediterranea SRL Italy",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Penne Rigate Pasta",
@@ -967,7 +1289,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/303219_11-borges-durum-wheat-pasta-penne-rigate.jpg"
-    }
+    },
+    "barcode": "8410179007502"
    }
   ],
   "images": [
@@ -995,7 +1318,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/303219-8_1-borges-durum-wheat-pasta-penne-rigate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Italy with Borges Pasta. Crafted from Durum Wheat Semolina, this protein-rich pasta offers a wholesome and delicious foundation for your favourite meals. Free from cholesterol and trans fats, it is perfect for quick meals or elaborate dishes. Bronze-cut for a rough surface, it is designed to hold sauces beautifully, ensuring every bite is flavourful and satisfying.\nAuthentic Italian Pasta: Imported from Italy and made the traditional Italian way.\nPremium Durum Wheat: Crafted from Durum Wheat Semolina for a firm texture and rich flavour.\nProtein-Rich & Wholesome: High in protein and free from cholesterol and trans fats.\nVersatile Meal Solution: Ideal for quick weeknight dinners, hearty family meals, or refreshing pasta salads.\nBronze-Cut For Better Sauce Absorption: The rough surface helps sauces cling to the pasta for more flavour in every bite.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "354 kcal",
+    "Protein": "12.5 g",
+    "Carbohydrate": "71.9 g",
+    "Of Which Sugars": "3.2 g",
+    "Fat": "1.3 g",
+    "Of Which Saturated Fat": "0.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "2.5 g",
+    "Sodium": "0.002 g",
+    "Serving Size": "500 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight.",
+   "manufacturerName": "Pastificio Mediterranea SRL Italy",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Spaghetti Pasta",
@@ -1011,7 +1356,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/303124_7-borges-durum-wheat-pasta-spaghetti.jpg"
-    }
+    },
+    "barcode": "8410179007496"
    }
   ],
   "images": [
@@ -1039,7 +1385,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/303124-8_2-borges-durum-wheat-pasta-spaghetti.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Italy with Borges Pasta. Crafted from Durum Wheat Semolina, this protein-rich pasta offers a wholesome and delicious foundation for your favourite meals. Free from cholesterol and trans fats, it is perfect for quick meals or elaborate dishes. Bronze-cut for a rough surface, it is designed to hold sauces beautifully, ensuring every bite is flavourful and satisfying.\nAuthentic Italian Pasta: Imported from Italy and made the traditional Italian way.\nPremium Durum Wheat: Crafted from Durum Wheat Semolina for a firm texture and rich flavour.\nProtein-Rich & Wholesome: High in protein and free from cholesterol and trans fats.\nVersatile Meal Solution: Ideal for quick weeknight dinners, hearty family meals, or refreshing pasta salads.\nBronze-Cut For Better Sauce Absorption: The rough surface helps sauces cling to the pasta for more flavour in every bite.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "349 kcal",
+    "Protein": "12.5 g",
+    "Carbohydrate": "71.9 g",
+    "Of Which Sugars": "3.2 g",
+    "Fat": "1.3 g",
+    "Of Which Saturated Fat": "0.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "2.5 g",
+    "Sodium": "0.002 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight.",
+   "manufacturerName": "Pastificio Mediterranea SRL Italy",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Tricolour Fusilli Pasta",
@@ -1055,7 +1422,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40014631_5-borges-fusilli-tricolor-pasta.jpg"
-    }
+    },
+    "barcode": "8410179009889"
    }
   ],
   "images": [
@@ -1083,7 +1451,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40014631-8_1-borges-fusilli-tricolor-pasta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Italy with Borges Pasta. Crafted from Durum Wheat Semolina, this protein-rich pasta offers a wholesome and delicious foundation for your favourite meals. Free from cholesterol and trans fats, it is perfect for quick meals or elaborate dishes. Bronze-cut for a rough surface, it is designed to hold sauces beautifully, ensuring every bite is flavourful and satisfying.\nAuthentic Italian Pasta: Imported from Italy and made the traditional Italian way.\nPremium Durum Wheat: Crafted from Durum Wheat Semolina for a firm texture and rich flavour, with real tomato and spinach for natural colour.\nProtein-Rich & Wholesome: High in protein and free from cholesterol and trans fats.\nVersatile Meal Solution: Ideal for quick weeknight dinners, hearty family meals, or refreshing pasta salads.\nBronze-Cut For Better Sauce Absorption: The rough surface helps sauces cling to the pasta for more flavour in every bite.",
+   "ingredients": "Durum Wheat Semolina, Dehydrated tomato 3%, Dehydrated spinach 2%",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "353 kcal",
+    "Protein": "11.2 g",
+    "Carbohydrate": "72.2 g",
+    "Sugars": "3.9 g",
+    "Fat": "1.4 g",
+    "Saturated Fat": "0.32 g",
+    "Monounsaturated Fat": "0.13 g",
+    "Polyunsaturated Fat": "0.95 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "3 g",
+    "Sodium": "0.010 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Pastificio Mediterranea SRL Italy",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Whole Wheat Fusilli Pasta",
@@ -1127,7 +1518,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114033-8_1-borges-pasta-whole-wheat-fusilli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Italy with Borges Pasta.\nCrafted from Whole Wheat Semolina, this protein-rich pasta offers a wholesome\nand delicious foundation for your favourite meals. Free from cholesterol and\ntrans fats, it is perfect for quick meals or elaborate dishes. Bronze-cut for a\nrough surface, it is designed to hold sauces beautifully, making every bite\nflavourful and satisfying.\nAuthentic Italian Pasta: Imported from Italy and made the\ntraditional Italian way.\nPremium Durum Wheat: Crafted from Whole Wheat Semolina\nfor a firm texture and rich flavour.\nProtein-Rich & Wholesome: High in protein and free\nfrom cholesterol and trans fats.\nVersatile Meal Solution: Ideal for quick weeknight\ndinners, hearty family meals, or refreshing pasta salads.\nBronze-Cut For Better Sauce Absorption: The rough surface\nhelps sauces cling to the pasta for more flavour in every bite.",
+   "ingredients": "Whole Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "344.7 kcal",
+    "Protein": "11.5 g",
+    "Carbohydrate": "67 g",
+    "Total Sugars": "4.4 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "2 g",
+    "Saturated Fat": "0.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "6.2 g",
+    "Sodium": "7.8 mg",
+    "Serving Size": "70 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Pastificio Mediterranea SRL Italy",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Whole Wheat Penne Pasta",
@@ -1171,7 +1585,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40014630-8_1-borges-whole-wheat-pasta-penne-rigate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic taste of Italy with Borges Pasta.\nCrafted from Whole Wheat Semolina, this protein-rich pasta offers a wholesome\nand delicious foundation for your favourite meals. Free from cholesterol and\ntrans fats, it is perfect for quick meals or elaborate dishes. Bronze-cut for a\nrough surface, it is designed to hold sauces beautifully, ensuring every bite\nis flavourful and satisfying.\nAuthentic Italian Pasta: Imported from Italy and made the\ntraditional Italian way.\nPremium Durum Wheat: Crafted from Whole Wheat Semolina\nfor a firm texture and rich flavour.\nProtein-Rich & Wholesome: High in protein and free\nfrom cholesterol and trans fats.\nVersatile Meal Solution: Ideal for quick weeknight\ndinners, hearty family meals, or refreshing pasta salads.\nBronze-Cut For Better Sauce Absorption: The rough surface\nhelps sauces cling to the pasta for more flavour in every bite.",
+   "ingredients": "Whole Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "349 kcal",
+    "Protein": "12.2 g",
+    "Carbohydrate": "63.1 g",
+    "Of Which Sugars": "4.7 g",
+    "Fat": "3.3 g",
+    "Of Which Saturated Fats": "0.6 g",
+    "Of Which Monounsaturated Fats": "0.7 g",
+    "Of Which Polyunsaturated Fats": "2.0 g",
+    "Dietary Fibre": "8.9 g",
+    "Sodium": "0.004 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Serving Size": "100 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight.",
+   "manufacturerName": "Pastificio Mediterranea SRL Italy",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Mini Fusilli Pasta",
@@ -1187,7 +1625,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/303127_4-borges-durum-wheat-pasta-mini-fusilli.jpg"
-    }
+    },
+    "barcode": "8410179008042"
    }
   ],
   "images": [
@@ -1206,7 +1645,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/303127-5_4-borges-durum-wheat-pasta-mini-fusilli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made from high-quality Indian durum wheat, Borges Pasta delivers great taste and texture in every bite. It cooks up firm and non-sticky, holding its shape without turning mushy. Its ideal bite size makes it a favourite with kids, while its versatility makes it perfect for quick weeknight dinners, hearty family meals, or refreshing pasta salads.\nMade With Durum Wheat: Crafted from high-quality Indian durum wheat for great taste and texture.\nFirm, Non-Sticky Texture: Cooks up perfectly, holding its shape without becoming sticky or mushy.\nHigh Protein, No Trans Fat, Cholesterol-Free: A wholesome choice for the whole family.\nVersatile Meal Solution: Ideal for quick weeknight dinners, hearty family meals, or refreshing pasta salads.\nPerfect For Kids: An ideal bite size that makes mealtimes enjoyable for children.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "344 kcal",
+    "Protein": "12 g",
+    "Carbohydrate": "72.3 g",
+    "Total Sugars": "3 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "2 g",
+    "Sodium": "13.4 mg",
+    "Serving Size": "70 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Ebro India Pvt Ltd",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mini Penne Rigate Pasta",
@@ -1222,7 +1684,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/303122_9-borges-durum-wheat-pasta-mini-penne-rigate.jpg"
-    }
+    },
+    "barcode": "8410179008059"
    }
   ],
   "images": [
@@ -1250,7 +1713,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/303122-8_4-borges-durum-wheat-pasta-mini-penne-rigate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made from high-quality Indian durum wheat, Borges Pasta delivers great taste and texture in every bite. It cooks up firm and non-sticky, holding its shape perfectly without turning mushy. It's a wholesome treat the whole family can enjoy without guilt. Its ideal bite size makes it a favourite with kids too, while its versatility makes it perfect for quick weeknight dinners, hearty family meals, or refreshing pasta salads.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "344 kcal",
+    "Protein": "12 g",
+    "Carbohydrate": "72.3 g",
+    "Total Sugars": "3 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "2 g",
+    "Sodium": "13.4 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight.",
+   "manufacturerName": "Ebro India Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Macaroni Pasta",
@@ -1294,7 +1777,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352450_2-borges-penne-rigate-durum-wheat-pasta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made from high-quality Indian durum wheat, Borges Pasta\ndelivers great taste and texture in every bite. It cooks up firm and\nnon-sticky, holding its shape without turning mushy. Its versatility makes it\nperfect for quick weeknight dinners, hearty family meals, or refreshing pasta\nsalads.\nMade With Durum Wheat: Crafted from high-quality Indian\ndurum wheat for great taste and texture.\nFirm, Non-Sticky Texture: Cooks up perfectly, holding its\nshape without becoming sticky or mushy.\nHigh Protein, No Trans Fat, Cholesterol-Free: A wholesome\nchoice for the whole family.\nVersatile Meal Solution: Ideal for quick weeknight\ndinners, hearty family meals, or refreshing pasta salads.\nRich, Flavourful Taste: A flavourful bite that makes\nevery meal more enjoyable.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "344 kcal",
+    "Protein": "12 g",
+    "Carbohydrate": "72.3 g",
+    "Total Sugars": "3 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "2 g",
+    "Sodium": "13.4 mg",
+    "Serving Size": "70 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Ebro India Pvt Ltd",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Penne Pasta",
@@ -1335,7 +1841,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352449-7_2-borges-macaroni-durum-wheat-pasta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made from high-quality Indian durum wheat, Borges Pasta\ndelivers great taste and texture in every bite. It cooks up firm and\nnon-sticky, holding its shape without turning mushy. Its versatility makes it\nperfect for quick weeknight dinners, hearty family meals, or refreshing pasta\nsalads.\nMade With Durum Wheat: Crafted from high-quality Indian\ndurum wheat for great taste and texture.\nFirm, Non-Sticky Texture: Cooks up perfectly, holding its\nshape without becoming sticky or mushy.\nHigh Protein, No Trans Fat, Cholesterol-Free: A wholesome\nchoice for the whole family.\nVersatile Meal Solution: Ideal for quick weeknight\ndinners, hearty family meals, or refreshing pasta salads.\nRich, Flavourful Taste: A flavourful bite that makes\nevery meal more enjoyable.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 g",
+    "Energy": "344 kcal",
+    "Protein": "12 g",
+    "Carbohydrate": "72.3 g",
+    "Total Sugars": "3 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0.3 g",
+    "Saturated Fat": "0.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Dietary Fibre": "2 g",
+    "Sodium": "13.4 mg",
+    "Serving Size": "70 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from sunlight.",
+   "manufacturerName": "Ebro India Pvt Ltd",
+   "fssaiLicense": "10012011000434",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natura Rice & Almond Drink",
@@ -1388,7 +1917,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238774-8_1-borges-natura-rice-almond-drink-vegan-no-added-sugar-gluten-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges Natura Rice & Almond drink is 100% dairy and lactose-free. It is a rich and creamy texture. It is low in salt and sodium to promote normal blood pressure and low in saturated fat to keep cholesterol low. Enjoy all the nutritional benefits with a great taste, designed for all those who want to take care of their health and increase the consumption of vegetable proteins.",
+   "ingredients": "Water, Rice, Almonds, Sea Salt, Stabilizer(Gellan Gum).",
+   "manufacturerName": "Liquats Vegtals",
+   "countryOfOrigin": "Spain",
+   "nutritionalInfo": {
+    "Calories": "55,",
+    "Carbs": "8g,",
+    "Fat": "2g,",
+    "Protein": "1g."
+   },
+   "storageInstructions": "1. Perfect for tea/coffee or your favourite desserts.\n2. Store in a cool and dry place."
+  }
  },
  {
   "title": "Natura Rice & Walnut Drink",
@@ -1441,7 +1983,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238775-8_1-borges-natura-rice-walnut-drink-vegan-no-added-sugar-gluten-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges Natura Rice & Walnut drink is dairy and lactose-free. It has a rich and creamy texture. It is low in salt and sodium to promote normal blood pressure and low in saturated fat to keep cholesterol low. Enjoy all the nutritional benefits with a great taste, designed for all those who want to take care of their health and increase the consumption of vegetable proteins.",
+   "ingredients": "Water, Rice, Walnuts, Sea Salt, Stabilizer(Gellan Gum).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "250ml",
+    "Energy": "71 kcal",
+    "Protein": "1.1g",
+    "Carbohydrates": "5.8g",
+    "Total sugar": "5.8g",
+    "Added sugar": "0g",
+    "Dietary Fibre": "0.9g",
+    "Total fat": "3.3g",
+    "Saturated fat": "0.3g",
+    "Monounsaturated fat": "0.5g",
+    "Polyunsaturated fat": "2.5g",
+    "Trans fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "30mg",
+    "Omega 3": "0.5g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Liquats Vegtals",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Natura Rice & Hazelnut Drink",
@@ -1485,7 +2052,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40174839-8_1-borges-natura-rice-hazelnut-drink-vegan.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Borges Natura Rice & Hazelnut drink is an innovative one of its kind product. It is a ready-to-drink beverage that is lactose-free, gluten-free and has the nutrition of a handful of hazelnuts in every glass. The Borges Natura hazelnut drink is a plant-based drink to enjoy all the nutritional benefits with a great taste, designed for all those who want to take care of their health and increase the consumption of plant-based proteins. It has a rich and creamy texture, making it perfect for tea, coffee or your favourite desserts.",
+   "ingredients": "Rice, Hazelnuts, Water, Gellangum, Sea Salt",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "250 ml",
+    "Energy": "65 kcal",
+    "Protein": "0.9 g",
+    "Carbohydrates": "11 g",
+    "Total sugar": "3.0 g",
+    "Added sugar": "0 g",
+    "Dietary Fibre": "<0.5 g",
+    "Total fat": "1.7 g",
+    "Saturated fat": "0.2 g",
+    "Monounsaturated fat": "1.1 g",
+    "Polyunsaturated fat": "0.4 g",
+    "Trans fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "40 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Liquats Vegetals S.A.Crta",
+   "fssaiLicense": "10012011000492",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Olive Leaf Infusion - Classic",
@@ -1529,7 +2121,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198310-8_1-borges-olive-leaf-infusion-classic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A unique infusion made from leaves of the olive tree. Olive leaf infusion contains Twice the Antioxidants compared to Green tea and yet has Zero Caffeine. It also has 4 times the Vitamin C as compared to ordinary green tea. The presence of Oleuropein in the olive leaves are known to help reduce hypertension and blood pressure hence relieving stress. Also, there are no added flavours. The flavours come from real leaves of mint, lemongrass or basil as the case may be. Hence, the taste/aroma is subtle and not overpowering.",
+   "ingredients": "Olive Leaves ()",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "196 kcal",
+    "Fat": "0.5 g",
+    "Carbohydrates": "42 g",
+    "Sugar": "0 g",
+    "Protein": "5.8 g",
+    "Iron": "2.1 mg",
+    "Vitamin C": "5.42 mg",
+    "Calcium": "278.8 mg"
+   },
+   "manufacturerName": "Olitia Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Olive Leaf Infusion - Olive & Basil",
@@ -1573,7 +2182,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198312-8_1-borges-olive-leaf-infusion-olive-basil-leaves.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A unique infusion made from leaves of the olive tree. Olive leaf infusion contains twice the Antioxidants compared to Green tea and yet has Zero Caffeine. It also has 4 times the Vitamin C as compared to ordinary green tea. The presence of Oleuropein in the olive leaves are known to help reduce hypertension and blood pressure hence relieving stress. Also, there are no added flavours. The flavours come from real leaves of mint, lemongrass or basil as the case may be. Hence, the taste/aroma is subtle & not overpowering. Basil or tulsi as it is known in India has numerous health benefits including being a natural immunity builder. 3000 years - that's the age of the oldest olive tree in the world and it still bears fruit! The longevity of the tree is not only a sign of its natural prowess but also a reminder of how the olive tree has been a gift to the world over centuries. The human race has reaped countless benefits by consuming its fruit as well as the oil from the fruit - the olive and the olive oil, considered to be the elixir of life. The magic however doesn't end at the fruit & its oil.\nMiraculously, the leaves of the olive tree have been found to be a natural reservoir thanks to multiple healthy phenols and flavonoids found in them. Percent Oleuropein, one of the phenols is best-known for its dramatic effect on regulating blood pressure levels. Amidst ever increasing stress levels & hypertension, the olive tree has endowed us with yet another gift through the incredible powers of its leaves. As the chaos of the modern world continues to increase, a cup of the olive leaf infusion is all you need to calm your nerves, unwind and find peace - as the olive branch symbolises.",
+   "ingredients": "Olive Leaves, Basil Leaves",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "196 kcal",
+    "Fat": "0.5 g",
+    "Carbohydrates": "42 g",
+    "Sugar": "0 g",
+    "Protein": "5.8 g",
+    "Iron": "2.1 mg",
+    "Vitamin C": "5.42 mg",
+    "Calcium": "278.8 mg"
+   },
+   "manufacturerName": "Olitia Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Olive Leaf Infusion - Olive & Mint",
@@ -1617,7 +2243,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198311-8_1-borges-olive-leaf-infusion-olive-mint-leaves.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A unique infusion made from leaves of the olive tree. Olive leaf infusion contains Twice the Antioxidants compared to Green tea and yet has Zero Caffeine. It also has 4 times the Vitamin C as compared to ordinary green tea. The presence of Oleuropein in the olive leaves are known to help reduce hypertension and blood pressure hence relieving stress. Also, there are no added flavours. The flavours come from real leaves of mint, lemongrass or basil as the case may be. Hence, the taste/aroma is subtle & not overpowering. Mint leaves add a touch of freshness to the drink to charge you for the day. 3000 years – that's the age of the oldest olive tree in the world and it still bears fruit! The longevity of the tree is not only a sign of its natural prowess but also a reminder of how the olive tree has been a gift to the world over centuries. The human race has reaped countless benefits by consuming its fruit as well as the oil from the fruit – the olive and the olive oil, considered to be the elixir of life. The magic however doesn't end at the fruit & its oil.\nMiraculously, the leaves of the olive tree have been found to be a natural reservoir thanks to multiple healthy phenols and flavonoids found in them. Percent Oleuropein, one of the phenols is best-known for its dramatic effect on regulating blood pressure levels. Amidst ever increasing stress levels & hypertension, the olive tree has endowed us with yet another gift through the incredible powers of its leaves. As the chaos of the modern world continues to increase, a cup of the olive leaf infusion is all you need to calm your nerves, unwind and find peace – as the olive branch symbolises.",
+   "ingredients": "Olive Leaves, Mint Leaves",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "196 kcal",
+    "Fat": "0.5 g",
+    "Carbohydrates": "42 g",
+    "Sugar": "0 g",
+    "Protein": "5.8 g",
+    "Iron": "2.1 mg",
+    "Vitamin C": "5.42 mg",
+    "Calcium": "278.8 mg"
+   },
+   "manufacturerName": "Olitia Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Olive Leaf Infusion 4-in-1 Assorted Pack",
@@ -1661,7 +2304,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206290-8_1-borges-stress-relief-olive-leaf-infusion-4-in-1-assorted-pack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A unique infusion made from leaves of the olive tree. Olive leaf infusion contains twice the Antioxidants compared to Green tea and yet has Zero Caffeine. It also has 4 times the Vitamin C as compared to ordinary green tea. The presence of Oleuropein in the olive leaves are known to help reduce hypertension and blood pressure hence relieving stress. Also, there are no added flavours. The flavours come from real leaves of mint, lemongrass or basil as the case may be. Hence, the taste/aroma is subtle & not overpowering. Natural herbs like Basil, Mint & Lemongrass have numerous medicinal benefits including immunity boosting capabilities. 4-In-1 Assorted Pack With the following flavours: Classic, Mint, Basil, Lemongrass.",
+   "ingredients": "Olive Leaves, Basil Leaves, Mint Leaves, Lemongrass",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "196 kcal",
+    "Fat": "0.5 g",
+    "Carbohydrates": "42 g",
+    "Sugar": "0 g",
+    "Protein": "5.8 g",
+    "Iron": "2.1 mg",
+    "Vitamin C": "5.42 mg",
+    "Calcium": "278.8 mg"
+   },
+   "manufacturerName": "Olitia Foods Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Blanched & Peeled Almonds",
@@ -1705,7 +2365,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238773-8_1-borges-almonds-blanched-peeled-wholesome-nutrition.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges Blanched & Peeled Almonds are the best selected high-quality almonds. We bring to your almonds that are blanched to perfection and salted to taste. It emulsifies the taste of these delicious nuts. It gives a tantalising effect that will leave you wanting to chew more every time. Our almonds are blanched with love with no added preservatives. It is a perfect snack for parties when having guests over or as a healthy snack at the office. It is packed with vitamin E, magnesium and potassium.",
+   "ingredients": "Raw Almonds ( Without Skin).",
+   "manufacturerName": "Borges agricultural & indutrial Nuts S.A",
+   "countryOfOrigin": "Spain",
+   "nutritionalInfo": {
+    "Calories": "628,",
+    "Carbs": "4g,",
+    "Fat": "56g,",
+    "Protein": "21g."
+   },
+   "storageInstructions": "1. Treat yourself and your loved ones with this snack of joy that will provide you wholesome nutrition.\n2. You can enjoy the snack during any time of the day with a chilled beverage or can quickly grab it and have it on the go while you're rushing to work, gym etc.\n3. Store in a cool and dry place."
+  }
  },
  {
   "title": "Pizarro Almonds Fried & Salted",
@@ -1731,7 +2404,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238771-2_1-borges-pizarro-almonds-fried-salted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges brings to you Pizarro Almonds Fried & Salted a yummy & healthy snack to indulge into without any guilt. These classic salted almonds are a perfect healthy snack for you. It can be eaten any time anywhere. Almonds are the best superfood to fill up your tummy when hungry and has an amazing flavour that ensures that you can't get enough of it. Go ahead - give it a try and experience the flavour of it.",
+   "ingredients": "Almonds, Sunflower Oil, Salt.",
+   "nutritionalInfo": {
+    "Calories": "622,",
+    "Carbs": "3g,",
+    "Fat": "53g,",
+    "Protein": "26g."
+   },
+   "storageInstructions": "1. You can munch them any time of the day.\n2. Store in a cool and dry place.",
+   "manufacturerName": "Borges agricultural & indutrial Nuts S.A",
+   "countryOfOrigin": "Spain"
+  }
  },
  {
   "title": "Pizarro Pistachios Roasted & Salted",
@@ -1757,6 +2443,19 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40238772-2_1-borges-pizarro-pistachios-roasted-salted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Borges brings to you the best selected Pizarro Pistachios Roasted & Salted. This pista is loaded with nutrients and high in protein. They are perfectly roasted and salted that giving a distinct nutty flavour. Now enjoy these perfect trail snacks anytime and anywhere. They are healthy and make a good healthy snack option for you and you're loved ones. Pista makes a wonderful and tasty snack for all pista lovers. These are one of the healthiest nuts for a lively lifestyle.",
+   "ingredients": "Pistachios, Salt.",
+   "nutritionalInfo": {
+    "Calories": "642,",
+    "Carbs": "7g,",
+    "Fat": "56g,",
+    "Protein": "23g."
+   },
+   "storageInstructions": "1. They are a perfect healthy snack.\n2. Serve it to your guest, friends or while travelling.\n3. Store in a cool and dry place.",
+   "manufacturerName": "Borges agricultural & indutrial Nuts S.A",
+   "countryOfOrigin": "Spain"
+  }
  }
 ]

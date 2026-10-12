@@ -13,7 +13,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267156_2-unibic-cookies-butter.jpg"
-    }
+    },
+    "barcode": "8906009072500"
    },
    {
     "title": "67.5g",
@@ -44,7 +45,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016295_3-unibic-cookies-butter.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Baked with Real Butter, Contains added artificial flavour ( Vanllin) Contains Gluten, Milk, Soy and Nut Store in a cool, dry place and away from direct sunlight. Once opened, store in an air tight container Please dispose of this package thoughtfully",
+   "manufacturerName": "UNIBIC FOODS INDIA PRIVATE LIMITED 55/1 & 61 HEGGADADEVANAPURA VILLAGE",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Chip Cookies",
@@ -60,7 +66,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267154_6-unibic-cookies-chocolate-chip.jpg"
-    }
+    },
+    "barcode": "8906009071800"
    },
    {
     "title": "67.5g",
@@ -97,7 +104,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/267154-8_1-unibic-cookies-chocolate-chip.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Chocolate chip cookies from Unibic are sprinkled with chocolate chips, which is also its most prominent distinguishing ingredient. The ingredients of this traditional recipe are butter, white and brown sugar, and semi-sweet chocolate chips. These mouthwatering cookies with chocolate chips on them are yet so crisp that you will surely love them from the first bite itself.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Choco Chips (22%) [Sugar, Edible Vegetable Fat, Cocoa Solids, Dextrose, Emulsifiers (INS 322 from Soy, INS 476), Nature Identical and Artificial Flavouring Substances (Vanilla, Chocolate)], Edible Vegetable Oil (Palm), Desiccated Coconut Powder, Milk Solids, Butter, Leavening Agents (INS 500(ii), INS 503(ii)), Iodised Salt, Emulsifier (INS 322 from Soy), Natural, Nature Identical and Artificial Flavouring Substances (Butter, Vanillin, Chocolate).\nAllergen Advice: Contains Wheat, Milk and Soy. May Contain Traces of Nut.",
+   "nutritionalInfo": {
+    "Energy": "471 kcal",
+    "Protein": "5.8 g",
+    "Carbohydrate": "68 g",
+    "Total Sugars": "28 g",
+    "Added Sugars": "26.5 g",
+    "Total Fat": "19.5 g",
+    "Saturated Fat": "12.2 g",
+    "Monounsaturated Fat": "4.6 g",
+    "Polyunsaturated Fat": "1.7 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "213 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place and away from direct sunlight. Once opened, store in an airtight container.",
+   "manufacturerName": "For the name",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11222999000012"
+  }
  },
  {
   "title": "Cashew Cookies",
@@ -144,7 +173,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/273864_5-unibic-cashew-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Baked with Real Butter, Contains added artificial flavour (Vanillin) Contains Gluten, Milk, Soy and Nut Store in a cool, dry place and away from direct sunlight. Once opened, store in an airtight container Please dispose of this package thoughtfully. Unibic Cashew Butter is 100% sugar-free and will give you the guilt-free bliss of intake sweet butter cookies. In these cookies, sugar is replaced by multirole, as a result of which sugar levels in your body do not get higher. The cookies are completely baked with the right amount of crispness that they melt in your mouth.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Milk Solids, Dry Nuts (1%) (Almond & Cashew), Golden Syrup, Leavening Agents (E500 (Ii), E503 (Ii)), Emulsifier (E322 From Soya, 472 E), Salt.\nContains Added Artificial Flavours (Saffron, Almond & Milk)",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "UNIBIC FOODS INDIA PRIVATE LIMITED 55/1 & 61 HEGGADADEVANAPURA VILLAGE",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cashew Badam Cookies",
@@ -189,7 +225,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289027-8_1-unibic-cashew-badam-cookies-crisp-soft-zero-cholesterol-no-trans-fat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, melt-in-your-mouth experience of Unibic's Cashew Badam Cookies. Crafted with the finest cashews and almonds, these delightfully crispy and soft cookies will pamper your taste buds. Unibic's sugar-free recipe ensures a healthier, more conscious indulgence, making them the perfect accompaniment to your tea or coffee. The carefully selected ingredients and thoughtful packaging guarantee freshness and enjoyment with every bite. Treat yourself to the irresistible flavour and texture of these premium Cashew Cookies, a true delight for the senses.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Milk Solids, Dry Nuts (1%) (Almond and Cashew), Golden Syrup, Leavening Agents (INS 53 ii, INS 5 ii), Emulsifiers (INS 322 from Soy, INS 472e), Iodised Salt, Artificial Flavouring Substances (Saffron, Cashew, Almond & Milk)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30g",
+    "Energy": "476.8 kcal",
+    "Protein": "5.5 g",
+    "Total Fat": "21.2 g",
+    "Saturated Fat": "9.5 g",
+    "Monounsaturated Fat": "7.7 g",
+    "Polyunsaturated Fat": "1.9 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "66 g",
+    "Total Sugars": "24.6 g",
+    "Added Sugars": "22.9 g",
+    "Sodium": "195 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place and away from direct sunlight\n*Once opened, store in an airtight container",
+   "manufacturerName": "Unibic Foods India Private Limited",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Kiss Cookies",
@@ -236,7 +296,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201563_4-unibic-choco-kiss-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Unibic choco kiss biscuits are sure to enjoy your flavour buds with the chocolate filling in these cookies. The promising flavour of the chocolate filling guarantees the softness and the outer layer provides it with a light, crisp break. Whether it is the flavour or the sight, it is sufficient to suggest an amazing experience- when one savours it and portrays an absolute commitment of senses. The right mixture makes sure that you treat yourself in the chocolate and would always desire more.",
+   "ingredients": "Choco Cream (36%) [Sugar,\nVegetable Fat, Cocoa Solids, Emulsifiers (E322 From\nSoya)], Refined Wheat Flour (Maida), Sugar, Edible\nVegetable Oil (Palm), Milk Solids, Golden Syrup,\nCocoa Powder, Emulsifier (E322 From Soya),\nLeavening Agents (E503 (Ii), E500 (Ii)), Salt.\nContains Added Artificial Flavour\n(Vanillin).",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "UNIBIC FOODS INDIA PRIVATE LIMITED 55/1 & 61 HEGGADADEVANAPURA VILLAGE",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Nut Cookies",
@@ -252,7 +319,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267112_2-unibic-cookies-choco-nut.jpg"
-    }
+    },
+    "barcode": "8906009071619"
    },
    {
     "title": "67.5g",
@@ -307,7 +375,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201564_2-unibic-choco-nut-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Chock full of nuts, Trans Fat Free",
+   "ingredients": "Contains Added Milk Soy and Nuts.",
+   "manufacturerName": "UNIBIC FOODS INDIA PRIVATE LIMITED 55/1 & 61 HEGGADADEVANAPURA VILLAGE",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Honey Oatmeal Cookies",
@@ -323,7 +397,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40016292_2-unibic-cookies-honey-oatmeal.jpg"
-    }
+    },
+    "barcode": "8906188960117"
    }
   ],
   "images": [
@@ -345,7 +420,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016292-6_2-unibic-cookies-honey-oatmeal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable and crunchy Unibic Anzac Oatmeal Cookies, crafted with the real goodness of oats, golden syrup, and honey. These wholesome treats are made using rolled oats, flour, desiccated coconut, sugar, butter, and baking soda, offering a delicious balance of flavour and health. Enjoy the natural sweetness and hearty texture of these trans fat-free, cholesterol-free cookies that are high in dietary fibre. Perfect for guilt-free snacking, these delightful treats are sure to sweeten up your day with happiness and yumminess.",
+   "ingredients": "Wheat Flour, Sugar, Edible Vegetable Oil (Palm), Rolled Oats (15%), Desiccated Coconut, Golden Syrup, Butter, Leavening Agents (E503 ii, E500 ii), Honey (1.5%), Emulsifier (E322 from Soya), Salt",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "485kcal",
+    "Protein": "6.2g",
+    "Fat - Total": "20g",
+    "Fat - Saturated": "11.2g",
+    "Fat - Monounsaturated": "6.2g",
+    "Fat - Polyunsaturated": "1.9g",
+    "Fat - Trans": "0g",
+    "Cholesterol": "0mg",
+    "Carbohydrate": "70g",
+    "Sugars": "35g"
+   },
+   "storageInstructions": "*Store in a cool, dry place and away from direct sunlight\n*Once opened, store in an airtight container",
+   "manufacturerName": "UNIBIC FOODS INDIA PRIVATE LIMITED 55/1 & 61 HEGGADADEVANAPURA VILLAGE",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pista Badam Cookies",
@@ -361,7 +456,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30004680_4-unibic-cookies-pista-badam.jpg"
-    }
+    },
+    "barcode": "8906188960049"
    }
   ],
   "images": [
@@ -389,7 +485,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004680-8_1-unibic-cookies-pista-badam.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Delightful pista and almond blend, no trans-fat for healthier snacking, sweeten up your moments, delight in every bite.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Nuts(8%) (Almond, Pista, Cashew), Butter Milk Solids, Liquid Glucose, Leavening Agents (INS 503 ii, INS 500 ii), Emulsifier (INS 322 from Soy), Iodised Salt, Artificial Flavouring Substances (Vanillin, Almond & Saffron)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "497.3 kcal",
+    "Protein": "7.4 g",
+    "Total Fat": "25.3 g",
+    "Saturated Fat": "12.6 g",
+    "Monounsaturated Fat": "7.2 g",
+    "Polyunsaturated Fat": "1.9 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "2.8 mg",
+    "Carbohydrate": "60 g",
+    "Total Sugars": "23.7 g",
+    "Added Sugars": "20.9 g",
+    "Sodium": "196 mg",
+    "RDA per Serving": "Sodium: 2.9"
+   },
+   "storageInstructions": "*Store in a cool, dry place and away from direct sunlight\n*Once opened, store in an airtight container",
+   "manufacturerName": "Unibic Foods India Pvt LTD",
+   "fssaiLicense": "10012043000039",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fruit & Nut Cookies",
@@ -405,7 +526,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/267117_5-unibic-cookies-fruit-nut.jpg"
-    }
+    },
+    "barcode": "8906009078670"
    },
    {
     "title": "67.5g",
@@ -436,7 +558,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016298_5-unibic-cookies-fruit-nut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Unibic Fruit & Nut Cookies are delectably soft and chewy cookies with blackberry, cranberry, cashew, tooti frooti, and almonds. These cookies are a grand snack to have with coffee or tea, or just to treat yourself to a small packet of tasty cookies; they will become your daily dose of deliciousness.",
+   "ingredients": "Wheat flour, sugar, margarine, dry fruits, nuts, butter, liquid glucose, dates syrup, milk solids, raising agents, emulsifier, salt, spices",
+   "nutritionalInfo": {
+    "Serving Size": "100g",
+    "Energy": "510 kcal",
+    "Protein": "7.4 g",
+    "Fat - Total": "24 g",
+    "Fat - Saturated": "14.4 g",
+    "Fat - Monounsaturated": "6.8 g",
+    "Fat - Polyunsaturated": "1.8 g",
+    "Carbohydrate": "66 g",
+    "Sugars": "25 g",
+    "Sodium": "255 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry place\n* Away from direct sunlight\n* In an airtight container once opened",
+   "manufacturerName": "UNIBIC FOODS INDIA PRIVATE LIMITED 55/1 & 61 HEGGADADEVANAPURA VILLAGE",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Doosra Jeera Cookies",
@@ -452,7 +593,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40016297_3-unibic-cookies-doosra-jeera-butter.jpg"
-    }
+    },
+    "barcode": "8906188960094"
    }
   ],
   "images": [
@@ -471,7 +613,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016297-5_3-unibic-cookies-doosra-jeera-butter.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in a delightful treat with our flavourful butter cookies, infused with the aromatic blend of jeera and ajwain. These cookies are the perfect 4 pm companion, offering a burst of healthy flavours that will elevate your tea-time experience. Crafted with care, the combination of butter, jeera, and ajwain creates a mouthwatering delight that will leave you craving more. Enjoy the perfect balance of savoury and indulgent notes in every bite, making these cookies a must-have for your tea time ritual.",
+   "ingredients": "Wheat Flour, Edible Vegetable Oil (Palm), Sugar, Butter, Liquid Glucose, Spices (3%) (Cumin Seed And Ajwain), Milk Solids, Leavening Agents (E503 Ii, E500 Ii), Acidity Regulator (E330), Emulsifier (E322 From Soya), Salt",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "490kcal",
+    "Protein": "7.5g",
+    "Fat - Total": "22.6g",
+    "Fat - Saturated Fat": "13g",
+    "Fat - Monounsaturated Fat": "6.4g",
+    "Fat - Polyunsaturated Fat": "1.6g",
+    "Fat - Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Carbohydrate": "65g",
+    "Sugars": "19.2g"
+   },
+   "storageInstructions": "* Store in a cool, dry place and away from direct sunlight",
+   "manufacturerName": "UNIBIC FOODS INDIA PRIVATE LIMITED 55/1 & 61 HEGGADADEVANAPURA VILLAGE",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Double Choco Chip Cookies",
@@ -487,7 +649,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40307381_1-unibic-double-choco-chip-cookies.jpg"
-    }
+    },
+    "barcode": "8906009074351"
    }
   ],
   "images": [
@@ -506,7 +669,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307381-5_1-unibic-double-choco-chip-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enhance your taste buds with UNIBIC’s Double Choco Chip Cookies which are rich in chocolate that they will melt in your mouth right away! Savour the exotic taste of chocolate that is specially made to make your experience even richer and happier.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Choco Chunks (15%) [Sugar, Edible Vegetable Fat, Cocoa Solids, Emulsifiers (INS 322 from Soy & INS 476)], Edible Vegetable Oil (Palm), Desiccated Coconut Powder, Butter, Cocoa Powder, Milk Solids, Leavening Agents (INS 503 ii, INS 500 ii), Emulsifier (INS 322 from Soy), Iodised Salt, Artificial Flavouring Substance (Vanillin).",
+   "usageInstructions": "Consume directly.",
+   "manufacturerName": "Unibic Foods India Pvt LTD",
+   "fssaiLicense": "10012043000039",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Danish Coconut Cookies",
@@ -522,7 +693,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40303001_2-unibic-foods-danish-coconut-cookies.jpg"
-    }
+    },
+    "barcode": "8906188961565"
    }
   ],
   "images": [
@@ -550,7 +722,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40303001-8_1-unibic-foods-danish-coconut-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful flavours of Unibic's Danish Coconut cookies, inspired by traditional Danish recipes. These delectable treats feature a unique blend of rich coconut and buttery notes, creating a truly satisfying snacking experience. Crafted with the finest ingredients, these cookies boast a crisp, crunchy exterior that gives way to a soft, chewy interior, delivering a delightful contrast of textures.\nPerfect for enjoying with a refreshing cup of tea or coffee, or as a sweet treat on their own, these Unibic Danish Coconut cookies are a must-try for any lover of baked goods. Discover the full range of Unibic's high-quality and delicious offerings, from cookies to crackers, and find the perfect addition to your pantry.",
+   "ingredients": "Desiccated Coconut Powder (3%), Sugar, Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm), Golden Syrup, Milk Solids, Iodised Salt, Emulsifier (INS 322 from Soy), Leavening Agents (INS 5 ii, INS 53 ii)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30g",
+    "Energy": "502.3 kcal",
+    "Protein": "6.5 g",
+    "Total Fat": "27.9 g",
+    "Saturated Fat": "19.2 g",
+    "Monounsaturated Fat": "5.7 g",
+    "Polyunsaturated Fat": "1.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.5 mg",
+    "Carbohydrate": "60.3 g",
+    "Total Sugars": "33.1 g",
+    "Added Sugars": "32.6 g",
+    "Dietary Fibre": "8 g",
+    "Sodium": "260 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry place and away from direct sunlight",
+   "manufacturerName": "Unibic Foods India Pvt LTD",
+   "fssaiLicense": "10012043000039",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milk Cookies",
@@ -586,7 +783,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196263-5_1-unibic-milk-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the goodness of Milk and make it a daily favourite. After all, 3 glasses of milk are equal to a pack of these amazing cookies. So go ahead and give yourself a much needed delicious nourishment.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Veg Oil (Palm), Milk Solids(6%), Liquid Glucose, Leavening Agents(E503 Ii, E500Ii), Emulsifier (E322From Soya E472E), Salt.\nContains Added Artificial Flavours (Milk, Butter, Vanillin).",
+   "usageInstructions": "Ready to eat. Store in a cool and dry place, away from sunlight. Store in an airtight container.",
+   "manufacturerName": "Unibic Foods India Pvt LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000039"
+  }
  },
  {
   "title": "Cookizo Brown Butter & Pineapple Cookies",
@@ -627,7 +832,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362712-7_1-unibic-cookizo-brown-butter-pineapple-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Unibic Cookizo Brown Butter & Pineapple Cookies bring together the nutty richness of brown butter with the sweet-tangy burst of real pineapple bits. Baked to golden perfection, these chunky cookies deliver a soft, indulgent bite with pockets of tropical flavour in every mouthful. Perfect for tea-time treats, quick snack breaks, or sharing with friends when cravings strike.",
+   "ingredients": "Refined Wheat Flour(Maida), Sugar, Edible Vegetable Oil(Palm), Candied Pineapple(11%)[Pineapple,Sugar, Acidity Regulator(INS 330), Preservative(INS 223)], Almond Bits, Butter(4%), Corn Flakes, Candied Papaya[Papaya, Sugar, Acidity Regulator(INS 330), Preservative(INS 202)], Milk Solid, Humectant(INS 422), Leavening Agents(INS 503 ii, INS 500 ii), Iodised Salt, Emulsifier(INS 322 from Soy), Acidity Regulator(INS 330), Natural & Artificial Flavouring Substances(Butter,Pineapple, Vanillin).Allergen Advice: Contains Wheat, Milk, Soy, Nut & Sulphite.",
+   "nutritionalInfo": {
+    "Energy": "503 kcal",
+    "Protein": "4.7 g",
+    "Total Fat": "24.96 g",
+    "Saturated Fat": "11.9 g",
+    "Monounsaturated Fat": "10.6 g",
+    "Polyunsaturated Fat": "2.5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "65 g",
+    "Total Sugars": "28.4 g",
+    "Added Sugars": "20.8 g",
+    "Dietary Fibre": "4.5 g",
+    "Sodium": "311.4 mg"
+   },
+   "manufacturerName": "RPA Unibakes Private Limited",
+   "fssaiLicense": "13622999000152",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cookizo Choco Chip Cookies",
@@ -668,7 +895,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362715-7_1-unibic-cookizo-choco-chip-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Unibic Cookizo Choco Chip Cookies bring together crunchy golden cookies with generous, gooey chocolate chips in every bite. Baked to a perfect crunch outside and a melt-in-the-mouth centre, they’re great for mid-day cravings, tea-time treats, or late-night munching. Enjoy them on their own or dunked in milk for extra indulgence. A convenient snack to share with friends, family, or keep all to yourself.",
+   "ingredients": "Refined Wheat Flour(Maida), Sugar, Edible Vegetable Oil(Palm), Chocolate Chunks(12%)[Sugar, Cocoa Butter, Cocoa Solids, Dextrose, Emulsifiers(INS 322 From Soy, INS 476), Artificial Flavouring Substance(Vanilla)], Choco Chunks(12%)[Sugar, Edible Vegetable Fat (Hydrogenated), Cocoa Solids, Emulsifiers [INS 492, INS 322 From Soy], Dextrose & Nature Identical Flavouring Substances], Milk Solids, Butter, Invert Syrup, Emulsifiers(INS 471, INS 322 From Soy), Leavening Agents(INS 500 Ii, INS 503 Ii), Iodised Salt, Colour(INS 150 D), Natural & Artificial Flavouring Substances(Butter, Vanillin, Chocolate). Allergen Advice: Contains Wheat, Milk, Soy. May Contain Traces Of Nut.",
+   "nutritionalInfo": {
+    "Energy": "525 kcal",
+    "Protein": "5.5 g",
+    "Total Fat": "26.97 g",
+    "Saturated Fat": "15.7 g",
+    "Monounsaturated Fat": "9.0 g",
+    "Polyunsaturated Fat": "2.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "65 g",
+    "Total Sugars": "37.8 g",
+    "Added Sugars": "34.1 g",
+    "Dietary Fibre": "5.3 g",
+    "Sodium": "246.8 mg"
+   },
+   "manufacturerName": "RPA Unibakes Private Limited",
+   "fssaiLicense": "13622999000152",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Biscot Caramel Biscuits",
@@ -712,7 +961,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369811-8_1-unibic-biscot.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "UNIBIC Biscot brings rich caramel flavour combined with a hint of cinnamon for a deliciously addictive treat. These biscuits are the perfect accompaniment to your favourite cup of tea or coffee, adding a delightful crunch and warm flavours.",
+   "ingredients": "Whole Wheat Flour(Atta), Sugar, Edible Vegetable Oil(Palm), Candy Sugar Syrup(5%), (Sugar, Milk Solids, Glucose Syrup), Raising Agents (INS 500 Ii, INS 503 Ii), Emulsifier (INS 322 From Soy), Iodised Salt, Natural Food Colour(INS 150d), Flavour(Nature Identical & Artificial Flavouring Substance)(Caramel), Cinnamon Powder(0.1%).",
+   "nutritionalInfo": {
+    "Energy": "470 kcal",
+    "Protein": "6 g",
+    "Total Fat": "18 g",
+    "Saturated Fat": "10.5 g",
+    "Monounsaturated Fat": "5.1 g",
+    "Polyunsaturated Fat": "1.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "71 g",
+    "Total Sugars": "30 g",
+    "Added Sugars": "29.2 g",
+    "Dietary Fibre": "6.5 g",
+    "Sodium": "240 mg"
+   },
+   "manufacturerName": "Unibic Foods India Private Limited",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Oats Digestive",
@@ -757,7 +1028,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40167048-8_1-unibic-oatmeal-digestive-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Unibic Oatmeal Digestive Cookies are a pack of 4 single packs of Oatmeal Daily Digestive, with each pack weighing 150g (total 600 grams). The cookies contain 26% fibre and have a unique melting texture in the mouth. They can be enjoyed with tea or coffee for a refreshing experience.",
+   "ingredients": "Whole Wheat Flour (Atta), Edible Vegetable Oil (Palm), Sugar, Bran Flakes (5%), Oats (5%), Invert Syrup, Milk Solids, Leavening Agents (INS 500 ii, INS 503 ii), Iodised Salt, Emulsifier (INS 322 from Soy), Allergen advice: Contains Wheat, Oats, Milk , Soya, May contain traces of nuts",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "484 kcal",
+    "Protein": "8.3 g",
+    "Total Fat": "19.4 g",
+    "Saturated Fat": "9.4 g",
+    "Monounsaturated Fat": "7.5 g",
+    "Polyunsaturated Fat": "2.5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "68 g",
+    "Total Sugars": "18.8 g",
+    "Added Sugars": "16.6 g",
+    "Dietary Fibre": "9.2 g",
+    "Sodium": "655.7 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight",
+   "manufacturerName": "Unibic Foods India Private",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sugar Free Butter Cookies",
@@ -773,7 +1069,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/273862_10-unibic-sugar-free-butter-cookies.jpg"
-    }
+    },
+    "barcode": "8906009077277"
    }
   ],
   "images": [
@@ -801,7 +1098,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/273862-8_2-unibic-sugar-free-butter-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge your sweet tooth without guilt with Unibic's delectable sugar-free cookies. Specially crafted to be low on the glycaemic index, these cookies offer a healthier, sugar-conscious treat that won't compromise on flavour or enjoyment. Baked to perfection with the right amount of crispness, they melt deliciously in your mouth, making them the ideal accompaniment to a soothing cup of tea. Whether you're watching your sugar intake or simply seeking a more mindful indulgence, these Unibic cookies provide a guilt-free way to satisfy your cravings and elevate your day. Enjoy the pure pleasure of savouring these delightful, low-GI treats without any of the usual sugar-related concerns.",
+   "ingredients": "Whole Wheat Flour(Atta), Sweetener( INS 965 - Maltitol), Butter(12.5%), Edible Vegetable Oil(Palm), Leavening Agents( INS 503 ii, INS 500 ii, INS 450 i), Iodised Salt, Emulsifier(INS 322 from Soy), Natural & Nature Identical Flavouring Substance , Allergen Advice: Contains Wheat, Milk & Soy. May contain traces of Nut Polyols may have laxative effect.",
+   "nutritionalInfo": {
+    "Energy": "6.66%",
+    "Protein": "6.3 g",
+    "Total Fat": "10.1%",
+    "Saturated Fat": "20%",
+    "Monounsaturated Fat": "6.2 g",
+    "Polyunsaturated Fat": "0.85 g",
+    "Trans Fat": "0%",
+    "Cholesterol": "49 mg",
+    "Carbohydrate": "65 g",
+    "Total Sugars (Naturally Occurring Sugars)": "0.5 g",
+    "Added Sugars": "0%",
+    "Polyols": "23 g",
+    "Sodium": "1.3%",
+    "Serving Size": "30 g"
+   },
+   "manufacturerName": "For Name",
+   "fssaiLicense": "12421999000167",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sugar Free Cashew Cookies",
@@ -817,7 +1137,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30004676_13-unibic-sugar-free-cashew-cookies.jpg"
-    }
+    },
+    "barcode": "8906009077284"
    }
   ],
   "images": [
@@ -845,7 +1166,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004676-8_2-unibic-sugar-free-cashew-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful taste and texture of Unibic's Sugar-free Cashew Cookies. Carefully crafted with premium, natural ingredients, these cookies are a healthier choice that won't compromise on flavour. Enjoy the rich, buttery goodness of cashew nuts perfectly paired with a soft, chewy biscuit. Suitable for a diabetic lifestyle, these cookies are low on the glycaemic index, ensuring you can satisfy your sweet cravings without the guilt. Treat yourself to a midday snack or an after-dinner delight, knowing that these cookies are trans-fat free and contain no added sugar or maltitol. Indulge in the joy of savouring a delicious, guilt-free cookie that caters to your health-conscious lifestyle.",
+   "ingredients": "Whole Wheat Flour (Atta), Sweetener (INS 965 - Maltitol), Butter, Edible Vegetable Oil (Palm), Cashew Bits (9.5%), Leavening Agents (INS 503(ii), INS 500(ii)), Iodised Salt, Emulsifier (INS 322 from Soy), Natural, Nature Identical and Artificial Flavouring Substances (Butter, Cashew Nut, Vanillin).\nAllergen Advice: Contains Wheat, Milk, Soy and Nut.",
+   "nutritionalInfo": {
+    "Energy": "448.1 kcal",
+    "Protein": "8.1 g",
+    "Carbohydrate": "62 g",
+    "Total Sugars": "0.5 g",
+    "Added Sugars": "0 g",
+    "Sugar Alcohol (Polyols)": "20 g",
+    "Dietary Fibre": "7.3 g",
+    "Total Fat": "24.7 g",
+    "Saturated Fat": "14.1 g",
+    "Monounsaturated Fat": "8.1 g",
+    "Polyunsaturated Fat": "1.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "23.7 mg",
+    "Sodium": "125 mg"
+   },
+   "storageInstructions": "Keep away from direct sunlight heat and moisture.",
+   "manufacturerName": "For the name",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sugar Free Multigrain Cookies",
@@ -861,7 +1206,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30004682_9-unibic-sugar-free-multigrain-cookies.jpg"
-    }
+    },
+    "barcode": "8906009077543"
    }
   ],
   "images": [
@@ -889,7 +1235,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004682-8_2-unibic-sugar-free-multigrain-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the joy of guilt-free snacking with Unibic's Sugar-free Cookies. Crafted with your health in mind, these delectable treats are specially formulated to be low on the glycaemic index, making them a perfect choice for those seeking a more conscious, sugar-free diet. Sweetened to perfection with the natural sweetener maltitol, these cookies offer a satisfying and satisfying taste experience, free from artificial ingredients. Boasting a deliciously soft and chewy texture, the Unibic Sugar-free Multigrain Cookies are a true delight, with 45% cereal and 4% nuts for added nutritional value. Enjoy these trans-fat-free cookies as a healthy snack option, perfect for any health-conscious consumer looking to satisfy their cravings without compromising their wellbeing.",
+   "ingredients": "Cereal Products (45%) (Whole Wheat Flour (Atta), Rice, Ragi, Oats, Corn), Sweetener (INS 965 - Maltitol), Edible Vegetable Oil (Palm), Oat Fibre, Nuts (4%) (Almond & Cashew), Butter, Desiccated Coconut Powder, Wheat Bran, Leavening Agents (INS 503 ii, INS 500 ii), Emulsifier (INS 322 from Soy), lodised Salt, Vitamins and Minerals, Nature Identical and Artificial Flavouring Substances (Vanillin)",
+   "nutritionalInfo": {
+    "Energy": "6.1%",
+    "Protein": "6.0 g",
+    "Total Fat": "8.8%",
+    "Saturated Fat": "15.9%",
+    "Monounsaturated Fat": "5.7 g",
+    "Polyunsaturated Fat": "1.7 g",
+    "Trans Fat": "0%",
+    "Cholesterol": "2.8 mg",
+    "Carbohydrate": "65 g",
+    "Total Sugars (Naturally Occurring Sugars)": "0.5 g",
+    "Added Sugars": "0%",
+    "Polyols": "29 g",
+    "Sodium": "3.7%",
+    "Serving Size": "30 g"
+   },
+   "manufacturerName": "For Name",
+   "fssaiLicense": "12421999000167",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sugar Free Oatmeal Cookies",
@@ -905,7 +1274,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/273867_7-unibic-cookies-oatmeal-sugar-free.jpg"
-    }
+    },
+    "barcode": "8906188960124"
    }
   ],
   "images": [
@@ -933,7 +1303,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/273867-8_3-unibic-cookies-oatmeal-sugar-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Nothing should take away the joy of savouring your favourite cookies. That's why Unibic Sugar-free cookies are specially made with specific ingredients that make them low for a healthier, sugar-conscious diet on glycaemic index. If you're looking for healthier, sugar-conscious diet choices, go ahead and enjoy these cookies.",
+   "ingredients": "Whole Wheat Flour (Atta), Sweetener (INS 965 – Maltitol), Butter, Edible Vegetable Oil (Palm), Rolled Oats (8%), Desiccated Coconut Powder, Bran, Dextrin, Leavening Agents (INS 500(ii), INS 503(ii)), Emulsifier (INS 322 from Soy), Iodised Salt, Natural and Artificial Flavouring Substances (Butter, Vanillin).\nAllergen Advice: Contains Wheat, Milk, Oats and Soy. May Contain Traces of Nut.\nPolyols may have a laxative effect.",
+   "nutritionalInfo": {
+    "Energy": "418.9 kcal",
+    "Protein": "6.2 g",
+    "Carbohydrate": "56 g",
+    "Total Sugars": "0.5 g",
+    "Added Sugars": "0 g",
+    "Sugar Alcohol (Polyols)": "19 g",
+    "Dietary Fibre": "6.2 g",
+    "Total Fat": "24.5 g",
+    "Saturated Fat": "13.9 g",
+    "Monounsaturated Fat": "7.8 g",
+    "Polyunsaturated Fat": "1.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "19 mg",
+    "Sodium": "185 mg"
+   },
+   "manufacturerName": "For the name",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Fudge Cake",
@@ -986,7 +1379,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321754-8_1-unibic-cake-choco-fudge.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Unibic Cake - a delightful mix of tradition and innovation made with the finest quality ingredients. Every bite of Unibic cake is filled with delicious flavours of celebration. Dive into the carefully crafted flavours and textures with your loved ones and make every moment a celebration with the deliciousness of Unibic Cakes.",
+   "ingredients": "Chocolate Mix(45%) [Sugar, Refined Wheat Flour (Maida), Cocoa Solids, Milk Solids, Acidity Regulator (INS 450 i), Raising Agent (INS 500(ii))], Edible Vegetable Oil(Palm), Egg, Water, Glycerine (INS 422), Humectant (INS 420 i),Preservatives (INS 202, INS 200, INS 281, INS 260), Cake Gel [Water, Emulsifier (INS 471, INS 477, INS 470), Humectant (INS 1520, INS 422)], Colour (INS 150), Natural, Nature Identical and Artificial Flavouring Substances(Chocolate).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50 g",
+    "Energy": "458.2 kcal",
+    "Protein": "6.8 g",
+    "Total Fat": "26.2 g",
+    "Saturated Fat": "3.4 g",
+    "Monounsaturated Fat": "14 g",
+    "Polyunsaturated Fat": "8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "15.7 mg",
+    "Carbohydrate": "48.4 g",
+    "Total Sugars": "20.3 g",
+    "Added Sugar": "19.11 g",
+    "Sodium": "438.4 mg",
+    "Dietary Fibre": "0.8 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "BAKEMILL FOODS 159-B Andanikulam Road",
+   "fssaiLicense": "11323999000236",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dates & Carrot Cake",
@@ -1039,7 +1457,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321753-8_1-unibic-cake-dates-carrot.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful fusion of tradition and innovation with Unibic Cake. Crafted with the finest quality ingredients, each bite of this cake is a celebration of flavour. Satisfy your cravings with the rich and wholesome combination of naturally sweet dates and fresh, nutritious carrots. Ideal for an anytime treat, this cake offers the perfect balance of taste and nutrition. Whether you're looking for a sweet indulgence with your tea or a delectable post-meal dessert, Unibic Dates and Carrot Cake is sure to delight your senses. Dive into the carefully crafted flavours and textures, and make every moment a celebration with the deliciousness of Unibic Cakes.",
+   "ingredients": "Egg, Sugar, Edible Vegetable Oil(Palm), Refined Wheat Flour(Maida), Soaked Dates [Dates(10%) , Sugar, Acidity Regulator (INS 330)], Soaked Carrot [ Carrot(6%), Sugar, Acidity Regulator (INS 330)], Vanilla Concentrate [Sugar, Refined Wheat Flour(Maida), Edible Vegetable Oil, Thickeners (INS 1414, INS 1442), Humectant (INS 420), Raising Agents (INS 500, INS 341), Leavening Agent (INS 500 ii), Emulsifier, Stabilizers (INS 471, INS 477, INS 415, INS 466), Acidity Regulator (INS 330), Iodized Salt, Preservatives (INS 282, INS 202), Food Colour (INS 150c)], Cashew Nuts, Pineapple Jam [Sugar, Pineapple Pulp, Pectin (INS 440), Malic Acid (INS 296), Synthetic Food Colour (INS 122) and Preservative (INS 211)], Mixed Fruit Jam [Sugar, Mixed Fruit Pulp, Pectin (INS 440), Malic Acid (INS 296), Synthetic Food Colour (INS 122) Preservative (INS 211)], Humectant (INS 420 i), Colour (INS 150), Glycerine (INS 422), Milk Solids, Cake Gel [Water, Emulsifiers (INS 471, INS 477, INS 470), Humectant (INS 1520, INS 422)], Leavening Agent (INS 500 ii), Natural, Nature Identical and Artificial Flavouring Substances(Milk,Cardamom). Preservatives (INS 202, INS 200), Baking Powder, cardamom Powder, Garam Masala (Fennel seed, Cardamom, Clove, Cinnamon, Anistar, Jadi Flower, Cumin Seed, Jadi Seed, Bay leaves).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50g",
+    "Energy": "213.7 kcal",
+    "Protein": "3.6 g",
+    "Total Fat": "10.4 g",
+    "Saturated Fat": "1.5 g",
+    "Monounsaturated Fat": "5 g",
+    "Polyunsaturated Fat": "3.5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "16.1 mg",
+    "Carbohydrate": "25.5 g",
+    "Total Sugars": "17.9 g",
+    "Added Sugar": "10 g",
+    "Sodium": "50.7 mg",
+    "Dietary Fibre": "1.9 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "BAKEMILL FOODS",
+   "fssaiLicense": "11323999000236",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Royal Vanilla Cake",
@@ -1092,7 +1535,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321752-8_1-unibic-cake-royal-vanilla.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful and celebratory flavours of Unibic's Royal Vanilla Cake. Crafted with the finest quality ingredients, this soft and moist vanilla cake is a true delight for any occasion. From a quick snack to a birthday celebration or a midnight dessert, each bite of this heavenly cake melts in your mouth, delivering a perfectly balanced flavour and texture. Carefully baked to perfection, the Unibic Royal Vanilla Cake is the perfect choice for all cake lovers, whether you're treating yourself or sharing with friends and family. Pair it with your favourite beverage for an elevated experience or enjoy it as is for a sweet indulgence. Dive into the carefully crafted flavours and textures, and make every moment a celebration with the deliciousness of Unibic Cakes.",
+   "ingredients": "Egg, Sugar, Edible Vegetable Oil(Palm), Refined Wheat Flour(Maida), Vanilla Concentrate(6%) [Sugar, Refined Wheat Flour(Maida), Edible Vegetable Oil, Thickeners (INS 1414, INS 1442), Humectant (INS 420), Raising Agents (INS 500, INS 341), Leavening Agent (INS 500 ii), Emulsifier, Stabilizers (INS 471, INS 477, INS 415, INS 466), Acidity Regulator (INS 330), Iodized Salt, Preservatives (INS 282, INS 202), Food Colour (INS 150c)], Humectant (INS 420 i), Glycerine (INS 422), Milk solids, Cake Gel[Water,Emulsifiers (INS 471, INS 477, INS 470), Humectants (INS 1520, INS 422)], Leavening Agent (INS 500 ii),Baking Powder, Natural, Nature Identical and Artificial Flavouring Substances(Vanilla, Cardamom), Preservatives (INS 202, INS 200).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50 g",
+    "Energy": "235kcal",
+    "Protein": "3.6 g",
+    "Total Fat": "14 g",
+    "Saturated Fat": "6.4 g",
+    "Monounsaturated Fat": "5.5 g",
+    "Polyunsaturated Fat": "1.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "36.2 mg",
+    "Carbohydrate": "23.5 g",
+    "Total Sugars": "12.1 g",
+    "Added Sugar": "11.5 g",
+    "Sodium": "227 mg",
+    "Dietary Fibre": "0.6 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "BAKEMILL FOODS",
+   "fssaiLicense": "11323999000236",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Qubz Belgian Chocolate Wafer Cubes",
@@ -1108,7 +1576,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40269910_3-unibic-foods-qubz-wafer-cubes-belgian-chocolate-sandwich-biscuit.jpg"
-    }
+    },
+    "barcode": "8906009073507"
    }
   ],
   "images": [
@@ -1136,7 +1605,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269910-8_2-unibic-foods-qubz-wafer-cubes-belgian-chocolate-sandwich-biscuit.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable taste of Unibic's Belgian chocolate wafer cubes, the perfect treat for any occasion. These irresistible bites are crafted to perfection, offering a delightful balance of crunchy wafer and creamy, decadent chocolate. Enjoy them as a movie snack, a sweet pick-me-up after a meal, or a satisfying treat to curb your cravings throughout the day. With their rich, melt-in-your-mouth flavour and satisfying texture, these wafer cubes are a true delight for the senses.\nWhether you're sharing them with friends and family or treating yourself, these Belgian chocolate delights are sure to leave you craving more. Versatile and convenient, they make a wonderful addition to lunchboxes, travel snacks, and party platters. Elevate your everyday moments with the irresistible taste of Unibic's Belgian chocolate wafer cubes.",
+   "ingredients": "Sugar, Edible Vegetable Oil (Coconut), Refined Wheat Flour (Maida), Choco Cream (7%), Milk Solids, Cocoa Powder, Emulsifier (INS 322 from Soy), Malt Extract, Natural Food Colour (INS 15 d), Nature Identical and Artificial Flavouring Substances (Chocolate) & Artificial Flavour - Ethyl Vanillin), Iodised Salt, Raising Agents (INS 5 ii, INS 45 i), Maltodextrin, Improver [INS 111 (i)]",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30g (10 Cubes)",
+    "Energy": "511kcal",
+    "Protein": "5.2g",
+    "Total Fat": "26g",
+    "Saturated Fat": "23g",
+    "Monounsaturated Fat": "1.6g",
+    "Polyunsaturated Fat": "0.5g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Carbohydrate": "64g",
+    "Total Sugars": "29g",
+    "Added Sugars": "27.5g",
+    "Sodium": "130mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Once opened, consume within a few days",
+   "manufacturerName": "MNS Foods Ltd",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Qubz English Strawberry Wafer Cubes",
@@ -1180,7 +1673,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269909-8_1-unibic-foods-qubz-wafer-cubes-english-strawberry-sandwich-biscuit.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful crunch and creamy strawberry flavour of UNIBIC Wafer Strawberry Cubes. These delectable wafer biscuits are the perfect accompaniment to your afternoon tea or evening coffee. Individually wrapped for freshness, they make a convenient and satisfying snack whether you're on the go, studying, or relaxing at home. Crafted with care, these wafer cubes offer a delightful balance of crisp texture and smooth, creamy strawberry filling that will delight both children and adults alike.\nEnjoy these sweet treats as an energy-boosting pick-me-up or savour them as a tasty complement to your favourite movies and books. Explore the full range of delicious UNIBIC biscuits and wafers, available exclusively on Big Basket.",
+   "ingredients": "Sugar, Edible Vegetable Oil (Coconut), Refined Wheat Flour (Maida), Dextrose, Milk Solids, Maltodextrin, Emulsifier (INS 322 From Soy), Artificial Flavouring Substance (Strawberry), Iodised Salt, Raising Agents (INS 5 Ii, INS 45 I), Acidity Regulator (INS 33), Synthetic Food Colour (INS 122 And INS 127), Improver [INS 111 (I)]",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30g (10 Cubes)",
+    "Energy": "525kcal",
+    "Protein": "3.2g",
+    "Total Fat": "28g",
+    "Saturated Fat": "16g",
+    "Monounsaturated Fat": "9g",
+    "Polyunsaturated Fat": "2.3g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Carbohydrate": "65g",
+    "Total Sugars": "29.4g",
+    "Added Sugars": "28g",
+    "Sodium": "145mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "MNS Foods Ltd",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rich Chocolate Wafer",
@@ -1196,7 +1713,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40210383_5-unibic-wafers-rich-chocolate.jpg"
-    }
+    },
+    "barcode": "8906188960186"
    }
   ],
   "images": [
@@ -1224,7 +1742,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210383-8_4-unibic-wafers-rich-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of Unibic's chocolate-flavoured wafers. Crafted with top-quality ingredients, these delectable treats feature a delightful combination of crispy wafers and a smooth, chocolatey filling that melts in your mouth. Experience the perfect balance of sweetness and the aroma of cocoa, layered between the crunchy and soft textures of these carefully crafted wafers. Enjoy a quick chocolate indulgence any time of day, whether as a shareable snack with friends and family or a satisfying on-the-go treat. Unibic's choco wafers offer an unparalleled taste and texture, sure to satisfy your sweet tooth and leave you craving more.",
+   "ingredients": "Sugar, Edible Vegetable Oil (Palm) & Edible Vegetable Fat (Interesterified Fat), Dextrose, Cocoa Powder, Milk Solids, Emulsifier (INS 322 from Soy), Food Colour (INS 150d), Nature Identical and Artificial Flavouring Substances (Chocolate & Ethyl Vanillin), Iodised Salt, Maltodextrin, Wafer Sheet - Whole Wheat Flour (Atta), Cocoa Powder, Maize Starch Powder, Edible Vegetable Oil (Palm Olein), Iodised Salt, Emulsifier (INS 322 from Soy), Raising Agents (INS 500 ii, INS 450 i), Food Colour (INS 150 d), Improver (INS 1101 i)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "30 g",
+    "Energy": "519 kCal",
+    "Protein": "5.4 g",
+    "Total Fat": "26.7 g",
+    "Saturated Fat": "14.9 g",
+    "Monounsaturated Fat": "9.4 g",
+    "Polyunsaturated Fat": "2.3 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "64.3 g",
+    "Total Sugars": "35 g",
+    "Added Sugars": "33 g",
+    "Sodium": "134 mg",
+    "RDA": "RDA per Serving: Energy 7.8, Total Fat 11.9, Saturated Fat 20.4, Trans Fat 0, Added Sugars 19.8, Sodium 2."
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Avoid direct sunlight",
+   "manufacturerName": "MNS FOODS LIMITED",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000039"
+  }
  },
  {
   "title": "Creamy Cheese Wafers",
@@ -1263,7 +1806,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40246049-6_1-unibic-wafers-creamy-cheese-sandwich-biscuits-light-crispy-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Whether you are looking for an indulgent, melt-in-mouth kind of cookies or for guilt-free snacking, we have got your back. With over 40 flavours to choose from, right from our classic Choco Chip cookies to our Sugarfree range, we will be part of your happy culinary experience through and through. ‘Say cheese’ to wafers with cheese. What a yummy tease! Crispy crunchy wafers. Rich, superior cream.",
+   "ingredients": "Sugar, Refined Wheat Flour (Maida), Edible Vegetable Oil (Coconut) and Interesterified Vegetable Fat, Non-Dairy Cream Powder, Cheese Powder, Maize Starch, Iodised Salt, Emulsifier (E322 from Soya), Raising Agents (E500ii,",
+   "usageInstructions": "1. They make for great accompaniments with tea and coffee.\n2. These biscuits are considered good for the health and can be consumed without any hesitation.\n3. Enjoy a pack of Unibic with your entire family.",
+   "manufacturerName": "Unibic Foods India Pvt LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000039"
+  }
  },
  {
   "title": "Snappers Indi Spice Potato Crackers",
@@ -1279,7 +1830,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40246052_4-unibic-snappers-potato-crackers-indi-spice-light-crispy-snack.jpg"
-    }
+    },
+    "barcode": "8906009072425"
    }
   ],
   "images": [
@@ -1307,7 +1859,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40246052-8_1-unibic-snappers-potato-crackers-indi-spice-light-crispy-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bursting with authentic Indian spices and the crispiness of freshly baked potatoes, Unibic Snappers Potato Crackers Indi Spice offer a flavourful symphony that will tantalise your taste buds with every bite. Beyond just a snack, these crackers are a culinary experience, inviting you to savour the rich tapestry of Indian flavours. Get to savour the unique taste of Indian masalas, with zesty spices that entice your palate, unlike any other cracker.\nWhether enjoyed on its own or paired with your favourite dips and spreads, these light and crispy potato crackers made with a combination of wheat and potato are sure to become a staple in your pantry.",
+   "ingredients": "Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm and Palmolein), Sugar, Dehydrated Potato Flakes [Potato (6%)], Emulsifier (INS 471), Stabilizer (INS 450(i)), Antioxidants (INS 223, INS 330), Seasoning Powder [Sugar, Dehydrated Vegetables (Garlic, Tomato, Onion), Iodized Salt, Maltodextrin, Spices and Condiments, Acidifying Agents (INS 330, INS 296), Flavour Enhancers (INS 627, INS 631)], Liquid Glucose, Starch, Iodized Salt, Invert Syrup, Milk Solids, Raising Agents (INS 503(ii), INS 500(ii)), Emulsifiers (INS 322 from Soy, INS 471), Flour Treatment Agents (INS 223, INS 1101(i)), Natural and Nature Identical Flavouring Substances.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "18.72g",
+    "Energy": "486 kcal",
+    "Protein": "7.1 g",
+    "Total Fat": "22 g",
+    "Saturated Fat": "10.2 g",
+    "Monounsaturated Fat": "5.5 g",
+    "Polyunsaturated Fat": "5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "65 g",
+    "Total Sugars": "15.6 g",
+    "Added Sugars": "13.8 g",
+    "Sodium": "999 mg",
+    "RDA per Serving": "Sodium: 0.0"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Unibic Foods India Pvt LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000039"
+  }
  },
  {
   "title": "Snappers Achari Mango Potato Crackers",
@@ -1354,7 +1931,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40278729_1-unibic-foods-snappers-potato-crackers-achari-mango-crispy-crunchy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Unibic Snappers Achari Mango is the perfect crunchy snack for tea-time munching. Made with fried potatoes, this delectable snack is crispy, light, and super satisfying. The Unibic Snappers Achari Mango is the ideal blend of texture and flavour with a generous pickled mango taste that is truly desi and makes for the best evening snack. These snappers have no cholesterol and no trans fats. It is ready-to-eat and can be carried with you anywhere. Explore a wide range of delicious biscuits, wafers, snappers, chips and more from Unibic only on Big Basket.",
+   "ingredients": "Refined Wheat Flour (Maida), Refined Oil (Palm and Palmolein), Sugar, Dehydrated Potato Flakes [Potato (6%), Emulsifier (INS 471), Stabilizer (INS 450 i), Antioxidants (INS 223, INS 330)], Seasoning Powder [lodized Salt, Sugar, Spices and Condiments, Acidifying Agents (INS 330, INS 296), Dry Mango Powder, Starch, Anticaking Agent (INS 551), Natural and Nature Identical Flavouring Substances], Liquid Glucose, Invert Syrup, lodized Salt, Milk Solids, Raising Agents (INS 503 ii, INS 500 ii), Emulsifiers (INS 322 from Soy, INS 471), Flavour Enhancers (INS 627, INS 631), Flour Treatment Agents [INS 223, INS 1101 (i)], Natural and Nature Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "18.75g",
+    "Energy": "487kcal",
+    "Protein": "7.3g",
+    "Total Fat": "21.8g",
+    "Saturated Fat": "10.5g",
+    "Monounsaturated Fat": "6.5g",
+    "Polyunsaturated Fat": "3.2g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Carbohydrate": "65.5g",
+    "Total Sugars": "11g",
+    "Added Sugars": "9g",
+    "Sodium": "998mg",
+    "% RDA per Serving": "4.5",
+    "RDA": "%Calculated based on reference daily energy intake value of 2000 kcal."
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Unibic Foods India Pvt LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012043000039"
+  }
  },
  {
   "title": "Swaadesi Garlic Mixture",
@@ -1370,7 +1973,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369807_1-unibic-swaadesi-garlic-mixture.jpg"
-    }
+    },
+    "barcode": "8906188961886"
    }
   ],
   "images": [
@@ -1392,7 +1996,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369807-6_1-unibic-swaadesi-garlic-mixture.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A classic crunchy Indian mix of sev, peanuts, lentils and rice flakes, tossed with garlic. Each handful brings a mix of textures and savoury flavour rooted in simple, familiar ingredients. This snack is the sort that belongs on every snack table.",
+   "ingredients": "Ice Flour, Edible Vegetable Oil (Rice Bran Oil, Sunflower Oil, Cotton Seed Oil), Bengal Gram, Groundnut, Pea Flour, Bengal Gram Flour, Iodized Salt, Garlic Powder (0.9%), Spices, Flavour Enhancer (INS 635), Natural & Nature Identical Flavouring Substances.\nAllergen Advice: Contains Nut. May Contain Traces Of Wheat, Milk, And Soy.",
+   "nutritionalInfo": {
+    "Energy": "542.1 kcal",
+    "Protein": "12.3 g",
+    "Carbohydrates": "46 g",
+    "Total Sugar": "1.1 g",
+    "Added Sugar": "0 g",
+    "Dietary Fiber": "5.3 g",
+    "Total Fat": "35.5 g",
+    "Saturated Fat": "7.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "427.1 mg"
+   },
+   "manufacturerName": "For Name",
+   "fssaiLicense": "12421999000167",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swaadesi Mysore Garlic Mix",
@@ -1408,7 +2032,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40335680_2-unibic-swaadesi-mysore-garlic-mix.jpg"
-    }
+    },
+    "barcode": "8906009075884"
    }
   ],
   "images": [
@@ -1436,7 +2061,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335680-8_2-unibic-swaadesi-mysore-garlic-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic flavours of South India with Unibic's Swaadesi Mysore Garlic Mix. This delightful blend of spicy sev, boondi, poha, and peanuts is perfectly seasoned with aromatic garlic, red chilli, and fragrant curry leaves. Crafted without the use of palm oil, this snack offers a tastier and healthier alternative to traditional options. Experience the irresistible taste of tradition in every crunchy bite, as the diverse textures and flavours come together to transport you to the vibrant streets of Mysore. Whether enjoyed as a savoury snack or as a flavourful accompaniment to your meals, this Mysore Mix is sure to delight your senses and satisfy your cravings for the authentic tastes of South India.",
+   "ingredients": "Chickpeas Flour, Rice Flour, Edible Vegetable Oil (Refined Rice Bran Oil, Sunflower Oil & Cotton Seed Oil), Bengal Gram Dal, Peanuts, Garlic (3%), Iodised Salt, Red Chilli Powder, Black Salt, Dry Mango Powder, Asafoetida, Curry Leaves & Turmeric",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "563.7",
+    "Protein (g)": "12.3",
+    "Total Fat (g)": "35.5",
+    "Saturated Fat (g)": "7.2",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "0.0",
+    "Carbohydrate (g)": "46.0",
+    "Total Sugars (g)": "1.1",
+    "Added Sugars (g)": "0.0",
+    "Dietary Fibre (g)": "5.3",
+    "Sodium (mg)": "427.1"
+   },
+   "storageInstructions": "* Store in a cool, dry place and away from direct sunlight\n* Once opened, store in an airtight container",
+   "manufacturerName": "Ghanta Foods Pvt Ltd",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swaadesi Crunchy Nuts",
@@ -1480,7 +2128,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335676-8_2-unibic-swaadesi-crunchy-nuts.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the ultimate snacking experience with Unibic Swaadesi Crunchy Nuts. These plump peanuts, coated in a crispy and spicy batter, deliver a burst of flavour with every bite. Elevate your drink pairing with a crunch that's simply irresistible. Crafted without the use of palm oil, these crunchy delights are a tastier and better choice for your cravings. Savour the perfect balance of crunch and spice, and let your taste buds be transported to a world of delightful indulgence.",
+   "ingredients": "Peanut (65%), Gram Flour, Edible Vegetable Oil (Rice Bran Oil, Sunflower Oil & Cotton Seed Oil), Spices & Condiments (Red Chilli Powder, Kashmiri Chilli Powder, Dry Mango Powder, Black Salt, Clove Powder, Cumin Powder, Black Pepper, Ginger Powder, Cardamom Powder, Mace Powder & Nutmeg Powder), Iodised Salt, Arrowroot Powder, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "623.4",
+    "Protein (g)": "17.4",
+    "Total Fat (g)": "48.1",
+    "Saturated Fat (g)": "13.9",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Carbohydrate (g)": "28.1",
+    "Total Sugars (g)": "1.3",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "4.3",
+    "Sodium (mg)": "460.2"
+   },
+   "storageInstructions": "*Store in a cool, dry place and away from direct sunlight\n*Once opened, store in an airtight container",
+   "manufacturerName": "Btw India Pvt. Ltd",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swaadesi Onion Murukku",
@@ -1496,7 +2167,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369810_1-unibic-swaadesi-onion-murukku.jpg"
-    }
+    },
+    "barcode": "8906188961794"
    }
   ],
   "images": [
@@ -1518,7 +2190,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369810-6_1-unibic-swaadesi-onion-murukku.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A classic murukku with a savoury onion twist. Made with rice flour and sesame seeds, this murukku is light, golden, crunchy and deeply satisfying. This classic snack brings the familiar South Indian flavours to your evening snack bowl.",
+   "ingredients": "Rice Flour, Edible Vegetable Oil (Ricebran Oil, Sunflower Oil, Cotton Seed Oil), Semolina, Onion (6.4%), Butter Milk, Iodized Salt, Spices, Sesame Seeds, Flavour Enhancer (INS 635), Natural and Natural Identical Flavours Allergen Advice: Contains Milk. May contain traces of Soy Wheat and Nut.",
+   "nutritionalInfo": {
+    "Energy": "513.31 kcal",
+    "Protein": "7.76 g",
+    "Carbohydrate": "60.38 g",
+    "Total Sugar": "2.5 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "3.24 g",
+    "Total Fat": "27.47 g",
+    "Saturated Fat": "12.28 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "773.06 mg"
+   },
+   "manufacturerName": "For Name",
+   "fssaiLicense": "12421999000167",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swaadesi Butter Murukku",
@@ -1562,7 +2254,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335678-8_2-unibic-swaadesi-butter-murukku.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the timeless treat of Unibic Swaadesi Butter Murukku, a delightful blend of South India's favourite snack made even better. Crafted with a delightful combination of rice flour and besan, these crunchy Murukku deliver a luscious, buttery taste that melts in your mouth. Lightly spiced to perfection, these Murukku offer a wholesome twist on a classic, with no palm oil for a healthier indulgence. Savour the irresistible, crumbly texture and rich, buttery flavour that will leave you craving more of this timeless treat.",
+   "ingredients": "Rice Flour, Edible Vegetable Oil (Rice Bran Oil, Sunflower Oil & Cotton Seed Oil), Chickpea Flour (Besan), Butter (4.3%), Iodised Salt, Cumin, White Sesame Seeds, Ajwain, Raising Agents (Ins 500(Ii))",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "30 g",
+    "Energy (kcal)": "173.5",
+    "Protein (g)": "2.6",
+    "Total Fat (g)": "11.4",
+    "Saturated Fat (g)": "2.3",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Carbohydrate (g)": "14.5",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "1.2",
+    "Sodium (mg)": "114",
+    "% RDA": "9"
+   },
+   "storageInstructions": "*Store in a cool, dry place and away from direct sunlight\n*Once opened, store in an airtight container",
+   "manufacturerName": "Ghanta Foods Pvt Ltd",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swaadesi Butter Ribbon Murukku",
@@ -1606,7 +2322,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335679-8_2-unibic-swaadesi-butter-ribbon-murukku.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic flavours of South India with Unibic's Swaadesi Butter Ribbon Murukku. Crafted with a delightful blend of rice and besan flour, this crispy snack is infused with the rich creaminess of butter, the aromatic notes of garlic, and the subtle heat of red chilli. Fried to perfection without the use of palm oil, this murukku offers a healthier alternative for mindful snacking. Experience the perfect balance of tradition and taste in every delectable, crunchy bite.",
+   "ingredients": "Rice Flour, Edible Vegetable Oil (Rice Bran Oil, Unibic Sunflower Oil & Cotton Seed Oil), Gram Flour, Butter (2.5%), Garlic (3%), Iodised Salt, Chilli Powder, Sesame Seeds",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "164.3",
+    "Protein (g)": "3.5",
+    "Total Fat (g)": "9.7",
+    "Saturated Fat (g)": "2.5",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Carbohydrate (g)": "14.9",
+    "Total Sugars (g)": "0.2",
+    "Added Sugars (g)": "0",
+    "Dietary Fibre (g)": "1.5",
+    "Sodium (mg)": "198.1",
+    "% RDA": "8"
+   },
+   "storageInstructions": "* Store in a cool, dry place and away from direct sunlight\n* Once opened, store in an airtight container",
+   "manufacturerName": "Ghanta Foods Pvt Ltd",
+   "fssaiLicense": "11222999000012",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swaadesi Hot Chips",
@@ -1622,7 +2362,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369809_1-unibic-swaadesi-hot-chips.jpg"
-    }
+    },
+    "barcode": "8906188961787"
    }
   ],
   "images": [
@@ -1644,7 +2385,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369809-6_1-unibic-swaadesi-hot-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Extra crunchy chips coated in fiery spices that linger long enough to make the next bite inevitable. Crisp, savoury and satisfying, these chips bring flavour and crunch in a straightforward, addictive way. These hot chips are made for those who enjoy a spicy kick in their snacks.",
+   "ingredients": "Potato (90.46%), Edible Vegetable Oil (Rice Bran Oil, Sunflower Oil, Cotton Seed Oil), Spices, Iodized Salt, Flavour Enhancer (INS 635), Natural & Nature Identical Flavouring Substances.\nAllergen Advice: May Contain Traces Of Wheat, Milk, Soy, And Nut.",
+   "nutritionalInfo": {
+    "Energy": "527.13 kcal",
+    "Protein": "8.23 g",
+    "Carbohydrates": "54.85 g",
+    "Total Sugar": "0 g",
+    "Added Sugar": "0 g",
+    "Dietary Fiber": "3.22 g",
+    "Total Fat": "31.25 g",
+    "Saturated Fat": "8.63 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "476 mg"
+   },
+   "manufacturerName": "For Name",
+   "fssaiLicense": "12421999000167",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swaadesi Salted Kerala Banana Chips",
@@ -1688,7 +2449,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335681-8_3-unibic-swaadesi-classic-salted-kerala-banana-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Unibic Swaadesi Classic Salted Kerala Banana Chips are super thin, golden, and perfectly crunchy, offering a delightful snack for any time of the day. Lightly salted to enhance the natural flavour of bananas, these chips are a wholesome treat. Made without palm oil, they're a better choice for guilt-free indulgence. Enjoy the classic taste of Kerala.",
+   "ingredients": "Raw Banana (70%), Edible Vegetable Oil (Rice Bran Oil), Unibic Stabilized Salt (2%), Iodised Salt & Anticaking Agent (Ins 551)",
+   "nutritionalInfo": {
+    "Energy": "468.6 kcal",
+    "Protein": "3.4 g",
+    "Total Fat": "23 g",
+    "Saturated Fat": "5.8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "64.5 g",
+    "Total Sugars": "1.5 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "5 g",
+    "Sodium": "477.6 mg",
+    "Serving Size": "30 g"
+   },
+   "storageInstructions": "Store in a cool, dry place and away from direct sunlight\nOnce opened, store in an airtight container",
+   "manufacturerName": "For Name",
+   "fssaiLicense": "12421999000167",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Swaadesi Fiery Red Hot Kerala Banana Chips",
@@ -1732,6 +2515,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335682-8_2-unibic-swaadesi-fiery-red-hot-kerala-banana-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "If you love spice, our Fiery Red Hot Kerala Banana Chips are made just for you! Super thin, golden crisp, crunchy and made without any palm oil, and tossed in our signature spicy masala blend, the Fiery Red Hot Swaadesi Kerala Banana Chips are a spice-lovers delight. Enjoy these chips with any drink or while watching TV - they will add flavour to your day.",
+   "ingredients": "Raw Banana(70%), Edible Vegetable Oil (Rice Bran Oil), Seasoning Powder {Iodised Salt, Maltodextrine, Sugar, Spices And Condiments (Chilli, Cumin)}, Dehydrated Garlic Powder, Corn Starch, Milk Solids, Natural And Nature Identical Flavouring Substances, Dehydrated Onion Powder, Yeast Extract, Acidity Regulator (Ins 330, Ins 296), Flavour Enhancer (Ins 627, Ins 631), Lemon Powder, Vinegar Powder, Edible Vegetable Oil (Refined Sunflower Oil), Anticaking Agent (Ins 551), Antioxidant (Ins 319)",
+   "nutritionalInfo": {
+    "Energy": "464 kcal",
+    "Protein": "3.7 g",
+    "Total Fat": "22.2 g",
+    "Saturated Fat": "5.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Carbohydrate": "64.8 g",
+    "Total Sugars": "3.1 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "4.9 g",
+    "Sodium": "621.6 mg",
+    "Serving Size": "30 g"
+   },
+   "storageInstructions": "Store in a cool, dry place and away from direct sunlight.\nOnce opened, store in an airtight container.",
+   "manufacturerName": "For Name",
+   "fssaiLicense": "12421999000167",
+   "countryOfOrigin": "India"
+  }
  }
 ]

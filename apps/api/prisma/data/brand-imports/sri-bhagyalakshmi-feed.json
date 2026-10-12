@@ -32,7 +32,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231085-5_2-sri-bhagyalakshmi-toor-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Toor Dall is skinned and split superior quality dal which is one of the most popular Lentils Of India. It is fresh and 100% natural. The processing is done very carefully keeping in mind the required quality standards.",
+   "ingredients": "Toor Dal",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gram Dal",
@@ -64,7 +71,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231083-4_2-sri-bhagyalakshmi-gram-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhayalaksmi Gram Dal is made from the best ingredients under strict quality control measures and is packed in a multilayer packet. It is rich in fibre and proteins. The Dal is natural and does not contain any preservatives or artificial colours.",
+   "ingredients": "Gram Dal",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Moong Dal",
@@ -96,7 +110,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231087-4_2-sri-bhagyalakshmi-moong-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Foods procures excellent quality Green Gram from Rajasthan, Maharashtra, Andhra Pradesh, Gujarat, Bihar, Karnataka, Tamil Nadu. It is the best, premium quality and the tastiest green gram available in the market. It is rich in fibre and proteins which have been proved best for all age groups.",
+   "ingredients": "Moong Dal",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Moong Whole",
@@ -128,7 +149,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231086-4_2-sri-bhagyalakshmi-moong.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Foods procures excellent quality Green Gram from Rajasthan, Maharashtra, Andhra Pradesh, Gujarat, Bihar, Karnataka, Tamil Nadu. It is the best, premium quality and the tastiest green gram available in the market. It is rich in fibre and proteins which have been proved best for all age groups.",
+   "ingredients": "Moong",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Urad Dal",
@@ -160,7 +188,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231088-4_2-sri-bhagyalakshmi-urad-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Foods procures excellent quality Urad Dal from Guntur in Andhra Pradesh and one the highly nutritious and highly prized as it is the ultimate, best quality. It is rich in fibre and proteins which have been proved best for all age groups.",
+   "ingredients": "Urad Dal",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bengal Gram",
@@ -192,7 +227,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231082-4_2-sri-bhagyalakshmi-bengal-gram.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bengal Gram is a Roasted gram known with different names in different regions of India such as Channa, Kala Channa, Varukadalai, Pottu Kadalai, Pori Kadalai, ChickPea, Numkeen Channa (Salted Roasted Gram). Sri Bhayalaksmi Fried Gram is made from the best ingredients under strict quality control measures and is packed in a multilayer packet.",
+   "ingredients": "Bengal Gram Dal",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Green Peas",
@@ -224,7 +266,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231091-4_2-sri-bhagyalakshmi-green-peas.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Foods procures superior quality Green Peas on a very large scale from Uttar Pradesh, Uttarakhand, Himachal Pradesh, Bihar, Orissa, MP and Karnataka as the demand is very high. It is fresh and natural and comes in multi-layer packing.",
+   "ingredients": "Green Peas",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fried Gram",
@@ -271,7 +320,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231073_3-sri-bhagyalakshmi-fried-gram.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Fried Gram is the Roasted gram known with different names in different regions of India such as Channa, Bengal gram, Kala Channa, Varukadalai, Pottu Kadalai, Pori Kadalai, ChickPea, Numkeen Channa (Salted Roasted Gram). Sri Bhayalaksmi Fried Gram is made from the best ingredients under strict quality control measures and is packed in a multilayer packet.",
+   "ingredients": "Gram Dal",
+   "nutritionalInfo": {
+    "Nutrition Per": "100 gms",
+    "Energy": "165 kcal",
+    "Proteins": "9.0 gms",
+    "Carbohydrate": "24.0 gms",
+    "Fat": "1.0 gms"
+   },
+   "storageInstructions": "*Must be stored in a cool & dry place\n*Once opened, store the fried gram in air tight container",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gram Flour",
@@ -306,7 +370,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231075-5_1-sri-bhagyalakshmi-gram-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Gram flour is higher in protein than wheat flour, which may help decrease hunger and increase the number of calories you burn. It has been a staple in Indian cooking for centuries, made from Bengal gram. It is made from 100% chana dal and does not contain any artificial colours.",
+   "ingredients": "Gram Flour",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Protein": "21.6g",
+    "Fat": "7.5g",
+    "Carbohydrates": "58.2g"
+   },
+   "storageInstructions": "*Must be stored in a cool and dry place",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bansi Suji",
@@ -356,7 +434,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231076_3-sri-bhagyalakshmi-bansi-suji.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Basmati Rava is Sortex cleaned. It comes in eco-friendly and premium-quality packaging. Sri Bhagyalakshmi Rava is processed in the company-owned state-of-the-art wheat milling plant by grinding husked wheat and also preserves the natural goodness.",
+   "ingredients": "Suji",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "358.8 kcal",
+    "Proteins": "13.3 gms",
+    "Carbohydrates": "75.7 gms",
+    "Fat": "0.3 gms"
+   },
+   "storageInstructions": "*Must be stored in a cool and dry place\n*Once opened, store the Bansi Sooji in an airtight container",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rice Flakes",
@@ -394,7 +487,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231081-6_1-sri-bhagyalakshmi-rice-flakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Foods uses the most advanced machinery in the production of Sri Bhagyalakshmi Poha (also known as Aval or Avalakki) from superior quality rice that is widely consumed in India. It is also known as poha or flattened rice and is very easy to digest and helps in weight management.",
+   "ingredients": "Rice Paddy, Aval Akki",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "500g",
+    "Energy": "346.0 kcal",
+    "Proteins": "6.6g",
+    "Carbohydrates": "77.3g",
+    "Fat": "1.2g"
+   },
+   "storageInstructions": "* Store in a cool & dry place\n* Once opened, store in an air-tight container",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Thick Rice Flakes",
@@ -410,7 +519,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40231080_3-sri-bhagyalakshmi-thick-rice-flakes.jpg"
-    }
+    },
+    "barcode": "8901869197264"
    }
   ],
   "images": [
@@ -429,7 +539,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231080-5_1-sri-bhagyalakshmi-thick-rice-flakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi Foods uses the most advanced machinery in the production of Sri Bhagyalakshmi Poha (also known as Aval or Avalakki) from superior quality rice that is widely consumed in India. It is also known as poha and is very easy to digest and helps in weight management.",
+   "ingredients": "Aval Akki",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy": "346.0 kcal",
+    "Proteins": "6.6 gms",
+    "Carbohydrates": "77.3 gms",
+    "Fat": "1.2 gms"
+   },
+   "storageInstructions": "*Must be stored in a cool & dry place\n*Once opened, store the rice flakes in an air-tight container",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Groundnut",
@@ -464,7 +589,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231092-5_2-sri-bhagyalakshmi-ground-nut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi presents fresh and premium quality Ground Nuts. It is brown in colour and bought from big and popular farms. It is very rich in proteins and can be preferred by gym-going adults and kids in their growth phase.",
+   "ingredients": "Ground Nut",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Iodised Crystal Salt",
@@ -480,7 +612,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40231093_2-sri-bhagyalakshmi-iodised-crystal-salt.jpg"
-    }
+    },
+    "barcode": "8908014694210"
    }
   ],
   "images": [
@@ -499,6 +632,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40231093-5_2-sri-bhagyalakshmi-iodised-crystal-salt.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sri Bhagyalakshmi presents Crystal Salt with the goodness of iodine and crystal salt in it. It is sourced directly from the sea and then processed under quality standards. It comes in multi-layer packing the preserve the cleanliness of the content.",
+   "ingredients": "Salt",
+   "manufacturerName": "SRI BHAGYALAKSHMI ENTERPRISES",
+   "fssaiLicense": "11216332000165",
+   "countryOfOrigin": "India"
+  }
  }
 ]

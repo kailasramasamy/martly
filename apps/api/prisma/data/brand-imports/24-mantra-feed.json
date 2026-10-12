@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100448228_12-24-mantra-organic-whole-wheat-atta.jpg"
-    }
+    },
+    "barcode": "8904083512400"
    },
    {
     "title": "1kg",
@@ -56,7 +57,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017628_3-24-mantra-organic-whole-wheat-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Wheat flour is a staple and is one of the main sources of energy. It also provides a number of essential nutrients such as protein, B vitamins, and vitamin E in significant amounts, which are beneficial for health. 24 Mantra Organic Atta is made from whole wheat using the traditional chakki procedure and brings the old-world goodness of rotis into homes. Therefore, wheat flour has a significant amount of dietary fibre and phytochemicals, which deliver a lot of health benefits. Our Organic Whole Wheat Atta is 100% organic, grown without synthetic pesticides and GMOs.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "320 kcal / 1340 kJ",
+    "Protein (g)": "10 g",
+    "Total Fat (g)": "2 g",
+    "of which saturates (g)": "0.2 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Total Carbohydrates (g)": "76 g",
+    "of which sugars (g)": "2 g",
+    "of which added sugars (g)": "0 g",
+    "Dietary fiber(g)": "11 g",
+    "Sodium (mg)": "2 mg"
+   },
+   "usageInstructions": "Wheat flour is used in the baking of bread. Wheat is the major ingredient in most bread rolls, crackers, cookies, biscuits, cakes, doughnuts, muffins, pancakes, waffles, noodles, pie crusts, ice cream cones, macaroni, spaghetti, puddings, pizza, and many prepared hot and cold breakfast foods.",
+   "manufacturerName": "Sresta Natural Bioproducts Pvt Ltd. Sy. No. 659",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "7 Grain Atta",
@@ -100,7 +123,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240039-8_2-24-mantra-organic-7-grain-atta-blended-wholegrain-flour-with-sorghum-maize-barley-makes-soft-healthy-rotis.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with 24 Mantra Organic 7 Grain Atta, a nutritional powerhouse that combines the goodness of organic cereals, millets, and pulses. This exceptional blend offers a diverse range of vitamins, minerals, and dietary fibre, catering to health-conscious individuals and culinary enthusiasts alike. Crafted with meticulous attention to quality and purity, this multigrain atta is perfect for creating soft, fluffy rotis that nourish both body and soul. With just a few clicks, you can conveniently order this organic delight and enjoy the hassle-free shopping experience, whether you're looking to invest in your well-being or explore new culinary horizons. Indulge in the wholesome flavour and reap the benefits of this certified organic masterpiece, a true testament to the harmony of nutrition and taste.",
+   "ingredients": "Wheat, Barley, Finger Millet, Maize, Sorghum, Mungbean, Soyabean",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Protein": "12.5g",
+    "Fat": "1.5g",
+    "Carbohydrates": "69g",
+    "Fiber": "9g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Bajra Flour",
@@ -116,7 +154,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279783_9-24-mantra-organic-bajra-flour.jpg"
-    }
+    },
+    "barcode": "8904083506065"
    }
   ],
   "images": [
@@ -135,7 +174,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279783-5_5-24-mantra-organic-bajra-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the ancient wonder of pearl millet, also known as 'Bajra', with 24 Mantra Organic Bajra Flour. This versatile and nutritious flour is made from organic, unadulterated pearl millet that is carefully cleaned, ground, and sieved. Grown without the use of synthetic pesticides or GMOs, this gluten-free flour is a fantastic source of energy, fibre, and antioxidants. Renowned for its resilience in drought and high-temperature conditions, pearl millet has been a staple crop in the African and Indian subcontinent for generations. Studies have shown that this ancient grain can help reduce blood glucose and lipid levels, making it a beneficial choice for those seeking to improve their overall health and wellbeing. Enjoy the rich, earthy flavour and satisfying texture of 24 Mantra Organic Bajra Flour in a wide variety of culinary creations, from traditional Indian dishes to modern baked goods. Embrace the power of this nutritious superfood and elevate your cooking with the natural goodness of organic pearl millet.",
+   "ingredients": "Organic Bajra",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1/4 cup (30g)",
+    "Energy": "350 kcal",
+    "Protein (g)": "11",
+    "Total Fat (g)": "5",
+    "of which saturates (g)": "1",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Total Carbohydrates (g)": "73",
+    "of which sugars (g)": "1",
+    "of which added sugars (g)": "0",
+    "Dietary fiber(g)": "11",
+    "Sodium (mg)": "4"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Jowar Flour",
@@ -179,7 +241,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279827-8_2-24-mantra-organic-flour-jowar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Jowar flour, made from ground sorghum grains, is a versatile ingredient widely used in various culinary applications. Common in traditional Indian dishes, it is particularly popular for making flatbreads such as roti and bhakri. Jowar flour is known for its mild, slightly sweet flavour, making it a suitable choice for diverse recipes, including pancakes, porridges, and baked goods. Its adaptability extends to both savoury and sweet dishes, allowing for creative cooking options. This flour is a staple in many regions, valued for its distinctive taste and culinary flexibility.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "335 kcal",
+    "Energy (kJ)": "1400 kJ",
+    "Protein (g)": "10 g",
+    "Total Fat (g)": "2 g",
+    "of which saturates (g)": "0.2 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Total Carbohydrates (g)": "78 g",
+    "of which sugars (g)": "1 g",
+    "of which added sugars (g)": "0 g",
+    "Dietary fiber(g)": "10 g",
+    "Sodium (mg)": "5 mg"
+   },
+   "usageInstructions": "24 Mantra organic Jowar is free of pesticides and can be used to make chapatis. It can also be combined with organic bajra as well as wheat flour for a wholesome meal when eaten with lentils and vegetables.",
+   "manufacturerName": "Sresta Natural Bioproducts Pvt Ltd. Sy. No. 659 Devaryajmal Shamierpet Mandai",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Ragi Flour",
@@ -223,7 +308,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279808-8_2-24-mantra-organic-flour-ragi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the wholesome goodness of 24 Mantra Organic Ragi Flour, a nutrient-rich flour made from organically grown finger millet. Ideal for preparing a variety of delicious and healthy meals, this versatile flour retains all the essential vitamins and minerals, providing a natural, earthy flavour that supports a healthier lifestyle. Enjoy the pure, unadulterated goodness of this organic ragi atta, free from artificial colours and a great source of complex carbohydrates, protein, and fibre. Whether you're whipping up nutritious rotis, dosas, or porridges, this ragi flour is the perfect choice for health-conscious and weight-conscious individuals seeking a wholesome, natural ingredient for their culinary creations.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1/4 cup (30g)",
+    "Energy": "320 kcal",
+    "Protein (g)": "7",
+    "Total Fat (g)": "2",
+    "of which saturates (g)": "0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Total Carbohydrates (g)": "78",
+    "of which sugars (g)": "0.3",
+    "of which added sugars (g)": "0",
+    "Dietary fiber(g)": "11",
+    "Sodium (mg)": "5"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Sresta Natural Bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Sattu",
@@ -267,7 +374,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/306533-8_2-24-mantra-organic-sattu-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sattu Atta is made from roasted chana dal which has an earthy, nutty flavour. 24 Mantra Organic Sattu Atta is unadulterated, traditional with no added additives. It is made by cleaning, grinding and sieving organic roasted Bengal gram.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "340 kcal",
+    "Energy (kJ)": "1410 kJ",
+    "Protein": "22 g",
+    "Total Fat": "5 g",
+    "Total Fat (of which saturates)": "1 g",
+    "Total Fat (of which Trans Fat)": "0 g",
+    "Cholesterol": "0 mg",
+    "Total Carbohydrates": "63 g",
+    "Total Carbohydrates (of which sugars)": "1 g",
+    "Total Carbohydrates (of which added sugars)": "0 g",
+    "Dietary fiber": "15 g",
+    "Sodium": "21 mg"
+   },
+   "manufacturerName": "Sresta Natural Bioproducts Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Idly Rava",
@@ -311,7 +440,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20001076-8_2-24-mantra-organic-rava-idly.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the perfect ingredient for your delectable idli creations with 24 Mantra Organic Idli Rava. Crafted from pesticide-free, purely organic Indian parboiled rice, this premium rava delivers an exceptional texture that results in soft, fluffy idlis that are easy on the stomach. Grown by our trusted farmers in the rice heartlands, this gluten-free rava is naturally rich in resistant starch, making it a healthier choice. With just a few clicks, you can conveniently order 24 Mantra Organic Idly Rava online and have it delivered straight to your doorstep, saving you time and effort. Whether you're a busy professional or a homemaker seeking quality and convenience, this organic rava is the perfect solution for your idli-making needs.",
+   "ingredients": "Organic Rice Rava",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "30g",
+    "Energy": "360 kcal",
+    "Protein": "8 g",
+    "Total Fat": "1 g",
+    "Of which Saturates": "0.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Total Carbohydrates": "82 g",
+    "Of which Sugars": "1 g",
+    "Of which added Sugars": "0 g",
+    "Dietary Fiber": "4 g",
+    "Sodium": "3 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Wheat Daliya",
@@ -355,7 +507,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279852-8_2-24-mantra-organic-wheat-daliya.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the wholesome goodness of 24 Mantra Organic Wheat Daliya. Made from organic wheat grains, this nutritious daliya (broken wheat) is rich in fibre, vitamins, and minerals, providing a healthy and satisfying addition to your meals. With its nutty flavour and chewy texture, it is perfect for making a variety of delicious dishes, from savoury porridge, upma, and pulao to sweet treats like kheer and halwa. Embrace the purity and nourishment of this organic wheat daliya, which is a good source of energy, protein, and B vitamins, as well as dietary fibre and beneficial phytochemicals. Ordering 24 Mantra Organic Wheat Daliya online is convenient, with doorstep delivery available anytime, anywhere.",
+   "ingredients": "Wheat Daliya",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Whole Wheat",
@@ -371,7 +531,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/301971_10-24-mantra-organic-wheat-whole.jpg"
-    }
+    },
+    "barcode": "8904083500476"
    }
   ],
   "images": [
@@ -384,7 +545,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/301971-3_4-24-mantra-organic-wheat-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the wholesomeness of 24 Mantra Organic Whole Wheat. Sourced from organic farms, this whole wheat is packed with natural goodness and superior quality. With its nutty flavour and hearty texture, it is ideal for making chapatis, rotis, bread, and other baked goods. Rich in fibre, vitamins, and minerals, this organic whole wheat provides nourishment and promotes a healthy lifestyle. Embrace the purity and authenticity of 24 Mantra Organic Whole Wheat in your kitchen.",
+   "ingredients": "Whole Wheat",
+   "storageInstructions": "Store in a cool, dry place in an airtight container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Sonamasuri Brown Rice",
@@ -431,7 +600,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100448218_12-24-mantra-organic-rice-sonamasuri-brown.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the wholesome goodness of 24 Mantra Organic Sonamasuri Brown Rice. This nutritious grain, grown sustainably, offers a delightful nutty flavour and chewy texture. Perfect for health-conscious meals, it’s a rich source of fibre and essential nutrients, making every bite both delicious and nourishing. Organic purity in every grain.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "45g",
+    "Energy": "159 kcal",
+    "Energy (kJ)": "666 kJ",
+    "Protein (g)": "4 g",
+    "Fat (g)": "0.4 g",
+    "Of which saturates (g)": "0 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Total Carbohydrates (g)": "36 g",
+    "Of which sugars (g)": "0.3 g",
+    "Of which added sugars (g)": "0 g",
+    "Dietary fiber (g)": "2 g",
+    "Sodium (mg)": "2 mg"
+   },
+   "manufacturerName": "Sresta Natural Bioproducts Pvt Ltd",
+   "fssaiLicense": "10021047000201",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sonamasuri Semi Brown Rice",
@@ -447,7 +638,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279837_10-24-mantra-organic-sonamasuri-semi-brown-hand-pounded-rice.jpg"
-    }
+    },
+    "barcode": "8904083505044"
    },
    {
     "title": "5kg",
@@ -490,7 +682,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40012909_5-24-mantra-organic-semi-brown-sonamasuri-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the wholesome goodness of 24 Mantra Organic Sonamasuri Semi Brown Rice. Sourced from organic farms, this semi-brown rice retains the outer bran layer, which is rich in fibre and nutrients. With its slightly nutty flavour and fluffy texture, it is perfect for a variety of rice dishes. Packed with essential minerals and vitamins, this organic Sonamasuri semi-brown rice offers a nutritious and flavourful addition to your meals. Embrace the purity and authenticity of 24 Mantra Sonamasuri Semi Brown Rice in your cooking.",
+   "ingredients": "Sonamasuri Semi Brown Hand Pounded Rice/Akki",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "45g",
+    "Energy": "160 kcal",
+    "Protein": "4 g",
+    "Total Fat": "0.4 g",
+    "of which saturates": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Total Carbohydrates": "37 g",
+    "of which sugars": "0.4 g",
+    "of which added sugars": "0 g",
+    "Dietary fiber": "2 g",
+    "Sodium": "1 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place\nOnce opened, keep in a sealed container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Idli Rice",
@@ -519,7 +734,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017636-3_10-24-mantra-organic-idlyidli-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic taste of South Indian cuisine with 24 Mantra Organic Idly Rice. Sourced from the finest organic farms and carefully processed by a trusted name in organic products, this premium rice is the key to achieving soft, fluffy, and delicious idlis in the comfort of your own home. Made from handpicked organic rice grains that are parboiled and finely ground, this rice flour boasts an excellent texture, aroma, and taste. With its perfect balance of starch and moisture, it ensures your idlis turn out perfectly every time - soft, pillowy, and irresistibly flavourful. Embrace the purity and wholesomeness of organic idly rice and enjoy the authentic flavours of South India at home.",
+   "ingredients": "Organic Parboiled Rice",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "45g",
+    "Energy": "350 kcal",
+    "Protein": "8 g",
+    "Total Fat": "1 g",
+    "Of which saturates": "0.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Total Carbohydrates": "81 g",
+    "Of which sugars": "1 g",
+    "Of which added sugars": "0 g",
+    "Dietary Fiber": "4 g",
+    "Sodium": "3 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place\nTransfer contents to an air-tight container after opening",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Poha",
@@ -563,7 +801,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279831-8_3-24-mantra-organic-poha-flattened-riceavalatukulu.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the simplicity and nourishment of 24 Mantra Organic Poha, a versatile and quick-cooking ingredient made from flattened rice flakes sourced from organic farms. With its light and fluffy texture, this poha is perfect for creating traditional Indian breakfast dishes like poha upma or poha cutlet. Packed with essential nutrients and dietary fibre, 24 Mantra Organic Poha offers a wholesome and convenient option for a satisfying meal. Embrace the purity and authenticity of this organic poha, which combines traditional methods with modern organic farming practices to deliver a culinary delight that aligns with your values of health and well-being. Flattened rice, also known as poha, is a staple in Indian cuisine, prized for its ability to absorb a myriad of flavours and its relatively higher nutritional content compared to white rice. Enjoy the convenience and versatility of 24 Mantra Organic Poha in your kitchen.",
+   "ingredients": "Organic Rice",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "40 g",
+    "Energy": "355 kcal",
+    "Protein (g)": "8",
+    "Fat (g)": "1",
+    "Of which saturates (g)": "0.1",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Total Carbohydrates (g)": "81",
+    "Of which sugars (g)": "1",
+    "Of which added sugars (g)": "0",
+    "Dietary fiber (g)": "3",
+    "Sodium (mg)": "2"
+   },
+   "storageInstructions": "Store in a cool & dry place\nTransfer contents to air tight container after opening pack",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Puffed Rice",
@@ -607,7 +868,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279832-8_2-24-mantra-organic-puffed-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic Puffed Rice offers a delightful, light and crisp texture with a natural, wholesome flavour. Made from certified organic rice, it is the perfect choice for a quick, healthy snack or as a versatile ingredient in various recipes. One key benefit of puffed rice is its ability to help control blood sugar levels when paired with fibre-rich foods, making it an excellent option for maintaining stable energy levels throughout the day. Additionally, puffed rice is a popular choice among children, who love its crunchy texture and mild flavour. Enjoy this organic, gluten-free product that supports your well-being and sustainable farming practices.",
+   "ingredients": "RICE, SALT",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "15g",
+    "Energy (kcal)": "378",
+    "Protein (g)": "8",
+    "Carbohydrates (g)": "81",
+    "of which Sugars (g)": "0",
+    "Dietary fiber (g)": "2.7",
+    "Fat (g)": "1.7",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Sodium (mg)": "100",
+    "Potassium (mg)": "147"
+   },
+   "storageInstructions": "Store in a clean, dry place in an airtight container",
+   "manufacturerName": "Sresta",
+   "fssaiLicense": "10015047000447",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masoor Dal",
@@ -642,7 +925,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279818-5_4-24-mantra-organic-dal-masoor.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the delightful 24 Mantra Organic Masoor Dal, a must-have pantry staple for health-conscious individuals. This reddish-yellow lentil is known for its quick cooking time and gentle nature on the stomach. With the skin removed, the Masoor Dal lends itself beautifully to a variety of culinary creations, from delectable halwa to flavourful parathas and dals. Packed with protein, this versatile ingredient is easy to cook and elevates any meal with its simplicity and nutritional benefits. Quickly whip up nutritious dishes and enjoy the flexibility and golden colour of the 24 Mantra Organic Masoor Dal.",
+   "ingredients": "Organic Masoor Dal",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "35g",
+    "Energy": "1350 kJ",
+    "Protein (g)": "24",
+    "Total Fat (g)": "0.3",
+    "of which saturates (g)": "0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Total Carbohydrates (g)": "63",
+    "of which sugars (g)": "2",
+    "of which added sugars (g)": "0",
+    "Dietary fiber(g)": "10",
+    "Sodium (mg)": "10"
+   },
+   "storageInstructions": "Store in a clean, dry place in an air-tight container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Moong Dal",
@@ -695,7 +1001,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279814-8_2-24-mantra-organic-moong-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the goodness of 24 Mantra Organic Yellow Moong Dal, a versatile and nutritious addition to your pantry. This organic, chemical-free pulse is a boon for vegetarians and vegans, providing a rich source of plant-based protein, calcium, potassium, and magnesium. With its low glycemic index, it is also a diabetic-friendly choice. The unpolished, easy-to-digest dal yields a soft texture and mildly sweet flavour when cooked, making it perfect for a variety of delectable recipes. Beyond its culinary uses, this organic moong dal can even be used to create nourishing face packs for beautiful, glowing skin. Embrace the natural goodness and experience the difference with 24 Mantra Organic Yellow Moong Dal.",
+   "ingredients": "Organic Moong Dal",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "35g",
+    "Energy": "480 kJ",
+    "Protein (g)": "8",
+    "Total Fat (g)": "0.3",
+    "of which saturates (g)": "0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Total Carbohydrates (g)": "22",
+    "of which sugars (g)": "0.3",
+    "of which added sugars (g)": "0",
+    "Dietary fiber(g)": "3",
+    "Sodium (mg)": "4"
+   },
+   "storageInstructions": "Store in a cool, dry place in an airtight container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Green Moong Dal Split",
@@ -711,7 +1040,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279824_10-24-mantra-organic-green-moong-dal-split.jpg"
-    }
+    },
+    "barcode": "8904083505501"
    }
   ],
   "images": [
@@ -730,7 +1060,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279824-5_3-24-mantra-organic-green-moong-dal-split.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the nutritional powerhouse of 24 Mantra Organic Green Moong Dal Split. This premium quality, organic pulse is a fantastic source of plant-based protein, especially for vegetarians and vegans. Sustainably grown without the use of synthetic pesticides or GMOs, this dal is unadulterated and unpolished, retaining its natural goodness. Rich in dietary fibre, it provides a satisfying and wholesome addition to your meals when paired with rice, roti or other grains. Enjoy the delightful flavour and texture of this chemical-free, pesticide-free cultivation, which is sure to elevate your culinary experience. Embrace the benefits of this versatile, organic ingredient and incorporate it into your balanced, plant-based diet.",
+   "ingredients": "Organic Greeen Moong",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Green Moong Whole",
@@ -771,7 +1108,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20001057_6-24-mantra-organic-dal-green-moong-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful versatility of 24 Mantra Organic Green Moong Dal, a true vegetarian superfood. Packed with natural shine and vibrant colour, this premium quality organic green moong is free from impurities, chemicals, and pesticides. Bursting with protein and dietary fibre, it's the perfect ingredient for healthy and delicious meals. Enjoy the light, nourishing texture of this low-carb dal, which can be cooked as lentils or soaked overnight as flavourful sprouts. Extremely rich in essential nutrients, this moong dal is a fantastic choice during illness, helping to regulate insulin, blood glucose, and fat levels in the body. Indulge in the authentic flavours of Indian cuisine with this wholesome, high-quality superfood.",
+   "ingredients": "Organic Greeen Moong",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Urad Dal White Split",
@@ -806,7 +1150,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279800-5_5-24-mantra-organic-dal-urad-white-split.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the creamy and flavourful 24 Mantra Organic Urad Dal White Split, sourced from organic farms and known for its smooth texture and distinct taste. These versatile split white lentils are perfect for making delectable dals, dosas, and papads, offering a wholesome and nutritious addition to your meals. Packed with protein, fibre, and essential minerals, this organic Urad Dal White Split is a true delight for the senses. Whether you're looking to create a hearty stew, a fragrant curry, or a nourishing salad, this versatile ingredient will elevate your culinary endeavours with its purity and authenticity.",
+   "ingredients": "Urad Dal White Split",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "35g",
+    "Energy": "115 kcal",
+    "Protein (g)": "6",
+    "Total Fat (g)": "1",
+    "of which saturates (g)": "0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Total Carbohydrates (g)": "22",
+    "of which sugars (g)": "0.3",
+    "of which added sugars (g)": "0",
+    "Dietary fiber(g)": "4",
+    "Sodium (mg)": "7"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Urad Dal Black Split",
@@ -822,7 +1189,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/301968_6-24-mantra-organic-dal-urad-black-split.jpg"
-    }
+    },
+    "barcode": "8904087503947"
    }
   ],
   "images": [
@@ -841,7 +1209,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/301968-5_5-24-mantra-organic-dal-urad-black-split.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional quality and nourishing benefits of 24 Mantra Organic Urad Dal Black (Split). This versatile pulse is naturally gluten-free and packed with protein, fibre, and essential nutrients, making it a must-have for a healthy diet. Grown through organic cultivation and carefully processed, this urad dal boasts unmatched purity and a rich, creamy flavour that will elevate your meals. Versatile and delicious, 24 Mantra Organic Urad Dal Black (Split) can be used in a variety of beloved Indian dishes, adding a velvety texture and delightful taste. Boost your culinary experience with this nutrient-rich, handpicked pulse that delivers exceptional quality in every bite.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "35g",
+    "Energy": "425 kJ",
+    "Protein (g)": "22 g",
+    "Total Fat (g)": "2 g",
+    "of which saturates (g)": "0.2 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Total Carbohydrates (g)": "64 g",
+    "of which sugars (g)": "0.4 g",
+    "of which added sugars (g)": "0 g",
+    "Dietary fiber(g)": "20 g",
+    "Sodium (mg)": "27 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place\nOnce opened, transfer to an airtight container"
+  }
  },
  {
   "title": "Urad Black Whole",
@@ -857,7 +1244,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/301975_6-24-mantra-organic-urad-black-whole.jpg"
-    }
+    },
+    "barcode": "8904083505853"
    }
   ],
   "images": [
@@ -873,7 +1261,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/301975-4_5-24-mantra-organic-urad-black-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the excellence of 24 Mantra Organic Urad Black Whole. Sourced from organic farms, these whole black gram lentils are packed with nutrition and flavour. With their earthy taste and creamy texture, they are perfect for making dals, curries, and savoury snacks. Rich in protein, fibre, and essential minerals, these organic urad black whole lentils offer a wholesome addition to your meals. Embrace the purity and authenticity of 24 Mantra Organic Urad Black Whole in your cooking.",
+   "ingredients": "Urad Black Whole",
+   "usageInstructions": "Urad is used to prepare numerous dishes such as purees, soups, dal makhni, etc.",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Roasted Bengal Gram",
@@ -914,7 +1310,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279809-7_1-24-mantra-organic-roasted-chana-dalbengal-gram.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Roasted Chana Dal or Bengal gram husk is removed, and a gram is split and roasted. Roasted chana dal has an earthy, nutty flavour. It has a very distinctive texture. 24 Mantra Organic Roasted Chana Dal is an unadulterated source of protein. Roasted Chana Dal is a good source of plant protein, Therefore, effective in reducing the risk of heart-related problems. Similar positive results were seen when animal protein is replaced with plant protein on glucose levels in the blood. Dals have a low glycaemic index, therefore good for diabetics! Our Roasted Chana Dal (Bengal Gram) is 100 % Organic, grown without synthetic pesticides and grown without synthetic GMOs. Unadulterated. A good protein source. Helpful in improving blood lipid levels. Helpful to maintain the ideal body weight. Helpful in improving blood glucose levels.",
+   "ingredients": "Organic Roasted Chana/Bengal Gram Dal",
+   "nutritionalInfo": {
+    "Energy": "340 kcal",
+    "Protein": "23 g",
+    "Fat": "5 g",
+    "Of Which Saturates": "1 g",
+    "Carbohydrate": "65 g",
+    "Of Which Sugars": "1 g",
+    "Sodium": "22 mg"
+   },
+   "storageInstructions": "*Store in a clean, dry place in an air-tight container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Brown Chana",
@@ -967,7 +1380,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279830-8_2-24-mantra-organic-brown-chana.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic Brown Chana is a good source of plant protein that helps in substituting animal protein and improve lipid profile. Therefore, 24 Mantra Organic Brown Chana helps in reducing the risk of heart-related problems and is also diabetic-friendly.",
+   "ingredients": "Organic Brown Chickpea",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peanuts",
@@ -983,7 +1403,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279812_12-24-mantra-organic-raw-peanut.jpg"
-    }
+    },
+    "barcode": "8904083505693"
    },
    {
     "title": "1kg",
@@ -1020,7 +1441,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279812-8_2-24-mantra-organic-raw-peanut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the natural goodness of 24 Mantra Organic Raw Peanuts, a premium-quality snack sourced from organic farms. Grown with care and dedication using sustainable farming practices, these peanuts are 100% organic, free from synthetic pesticides and GMOs. Packed with protein, healthy fats, and essential nutrients, they offer a plethora of health benefits, including supporting heart health, promoting brain function, and boosting overall well-being. Enjoy the rich, distinctive taste of these peanuts, whether sprinkled on salads, added to curries and vegetables, or savoured on their own as a satisfying snack. With their natural goodness and carefully selected quality, 24 Mantra Organic Raw Peanuts are a wholesome addition to your diet, delivering the pure and natural flavours you crave.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "540 kcal / 2257 kJ",
+    "Protein (g)": "23.7 g",
+    "Total Fat (g)": "39.5 g",
+    "Of which Saturates (g)": "8.2 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Total Carbohydrates (g)": "27.7 g",
+    "Of which Sugars (g)": "4.5 g",
+    "Of which Added Sugars (g)": "0 g",
+    "Dietary Fiber(g)": "10.3 g",
+    "Sodium (mg)": "12.5 mg",
+    "% RDA": "Values are based on 8400 kJ / 2000 kcal diet"
+   },
+   "storageInstructions": "Used to make peanut oil, pancake flour, and more.\nCrush them to sprinkle over food to make it tasty.",
+   "manufacturerName": "Sresta Natural Bioproducts Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Chia Seeds",
@@ -1064,7 +1508,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241566-8_1-24-mantra-organic-chia-seeds-grown-without-pesticides-gmos-rich-in-fibre-vegan-gluten-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Chia seeds are a vegetarian meal that is naturally gluten-free. It is naturally high in critical fatty acids omega-3 and omega-6, dietary fibre, protein and other minerals. A tablespoon of raw chia seeds a day is a tasty method to assist your digestive health while satisfying your hunger. Buffalo dung is used as compost during the growth of these seedlings. As there were no pesticides or insecticides applied, so it was close to being organic.",
+   "ingredients": "Organic Chia Seeds",
+   "usageInstructions": "Can be used as sprinklers on salads, stews & soups.\nCan be used as a thickener in smoothies, puddings, etc. \n1 teaspoon each day in water or juice.",
+   "manufacturerName": "Sresta Natural Bio Product PVT. LTD",
+   "fssaiLicense": "10014047000217",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chilli Powder",
@@ -1080,7 +1532,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279857_9-24-mantra-organic-red-chilli-powder.jpg"
-    }
+    },
+    "barcode": "8904083500810"
    },
    {
     "title": "200g",
@@ -1117,7 +1570,35 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279857-8_2-24-mantra-organic-red-chilli-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with the exceptional 24 Mantra Organic Chilli Powder. Crafted from carefully selected organic red chillies, this vibrant powder boasts an intense flavour and fiery kick that will add a spicy and tangy punch to your curries, marinades, and seasonings. Grown without the use of synthetic pesticides or GMOs, the 24 Mantra Organic Red Chilli retains its natural aroma, colour, and potent health benefits, making it an indispensable ingredient for those seeking quality and organic integrity in their cooking. Indulge in the rich red glow and sharp spicy flavour that this organic chilli powder brings to your dishes, and enjoy the celebration of taste, heat, and wellness that it provides.",
+   "ingredients": "Chilli Powder",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (kcal)": "324",
+    "Protein (g)": "10.58",
+    "Fat (g)": "5.81",
+    "Carbohydrate (g)": "69.86",
+    "Fiber (g)": "28.7",
+    "Calcium (mg)": "45",
+    "Iron (mg)": "6.04",
+    "Magnesium (mg)": "88",
+    "Phosphorus (mg)": "159",
+    "Sodium (mg)": "91",
+    "Thiamin (mg)": "0.081",
+    "Riboflavin (mg)": "1.205",
+    "Niacin (mg)": "8.669",
+    "Vitamin B-6 (mg)": "0.81",
+    "Folate, DFE (µg)": "51",
+    "Vitamin C (mg)": "31.4",
+    "Vitamin A, RAE (µg)": "1324"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Turmeric Powder",
@@ -1133,7 +1614,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279801_9-24-mantra-organic-powder-turmeric.jpg"
-    }
+    },
+    "barcode": "8904083500872"
    },
    {
     "title": "200g",
@@ -1170,7 +1652,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279801-8_1-24-mantra-organic-powder-turmeric.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Embrace the vibrant colour and robust flavour of 24 Mantra Organic Turmeric Powder. Sourced from certified organic farms, this powder is made from carefully selected turmeric rhizomes and is known for its powerful antioxidant properties. Elevate your cooking and well-being with the rich flavour and unmatched quality of this organic turmeric, which boasts 50% more Curcumin power to give your meals a healthy, aromatic difference. Add it to curries, stews, soups, and golden milk for a delightful taste experience and a host of wellness benefits. Bring home the Curcumin power and enjoy the purity and authenticity of this organic turmeric powder in your everyday cooking.",
+   "ingredients": "Organic Turmeric Powder",
+   "storageInstructions": "Add it to curries, stews, soups, and golden milk for a delightful flavour and health benefits.",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Cumin Powder",
@@ -1199,7 +1689,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100346904-3_6-24-mantra-organic-cumin-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic Cumin Powder is a must-have spice for enhancing the flavour of your culinary creations. Made from carefully selected organic cumin seeds, this powder delivers a rich, earthy aroma and a warm, slightly bitter taste. Sprinkle it into curries, soups, stews, and marinades to add depth and complexity to your dishes. This organic cumin powder is free from pesticides and additives, ensuring a pure and natural spice experience.",
+   "ingredients": "Organic Cumin",
+   "storageInstructions": "Store in a clean, dry place in an air-tight container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Cumin Whole",
@@ -1215,7 +1713,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279864_10-24-mantra-organic-cumin-seed-whole.jpg"
-    }
+    },
+    "barcode": "8904083525257"
    }
   ],
   "images": [
@@ -1243,7 +1742,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279864-8_2-24-mantra-organic-cumin-seed-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Embrace the rich aroma and distinct flavour of 24 Mantra Organic Cumin/Jeera. Sourced from organic farms, this cumin is carefully selected and packed with care. Its earthy and warm taste adds depth to curries, soups, and spice blends. Rich in antioxidants and essential oils, this organic cumin offers potential health benefits. Indulge in the unparalleled quality of 24 Mantra Organic Cumin Seeds, known for their aromatic flavour that gives a unique taste to your dishes. Whole Organic Cumin/Jeera Seeds come from Cuminum cyminum, a popular culinary spice from ancient times. The strong aromatic smell is present due to the volatile oil, which is about 2 to 4 per cent, mainly a mixture of cymol or cymene and cuminic aldehyde or cyminol. Enjoy the pure and authentic flavours of 24 Mantra Organic Cumin/Jeera in your culinary creations.",
+   "ingredients": "Organic Cumin",
+   "storageInstructions": "Store in a cool, dry place in an airtight container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Coriander Seeds",
@@ -1287,7 +1794,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279863-8_2-24-mantra-organic-coriander-seeds-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your meals with 24 Mantra Organic Coriander Seeds. These whole coriander seeds are a versatile and aromatic spice that not only lend a distinct, citrusy flavour to your dishes but also act as a natural digestive agent, accelerating the digestion process. Unadulterated and pesticide-free, these organic coriander seeds are a must-have for every household. Coriander powder, made by crushing the dried seeds, is an essential part of every kitchen, adding a delightful aroma and flavour to a variety of dishes. Embrace the benefits of this versatile spice and let it transform your meals into culinary delights.",
+   "ingredients": "OrganicCorianderPowder",
+   "storageInstructions": "Store in a cool, dry place in an airtight container",
+   "manufacturerName": "SrestaNaturalbioproductsPvtltd"
+  }
  },
  {
   "title": "Fenugreek Seeds",
@@ -1303,7 +1816,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279817_9-24-mantra-organic-fenugreek-seeds.jpg"
-    }
+    },
+    "barcode": "8904083500650"
    }
   ],
   "images": [
@@ -1328,7 +1842,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279817-7_2-24-mantra-organic-fenugreek-seeds.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic Fenugreek Seeds offer a premium choice for culinary and health purposes. Grown organically without synthetic chemicals, these seeds are packed with natural goodness and essential nutrients. Known for their distinctive aroma and slightly bitter taste, they are versatile in Indian cuisine, enhancing curries, pickles, and bread. 24 Mantra ensures strict adherence to organic farming practices, ensuring purity and quality in every batch. Whether used for flavouring dishes or as an herbal remedy, Organic Fenugreek Seeds from 24 Mantra embody the essence of pure, sustainable agriculture, appealing to consumers seeking nutritious and environmentally friendly options.",
+   "usageInstructions": "Fenugreek seeds are used in cooking to add flavour. They are also used as a flavouring agent in imitation maple syrup, foods, beverages, etc. |",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Mustard Seeds Big",
@@ -1369,7 +1890,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279819-7_2-24-mantra-organic-mustard-seeds-whole-big.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the bold and robust flavour of 24 Mantra Organic Mustard Big. Sourced from organic farms, these large mustard seeds are known for their distinct taste and aroma. With their pungent and spicy profile, they add depth and character to various dishes. From pickles and marinades to curries and spice blends, these organic mustard seeds are a versatile addition to your culinary repertoire. Packed with essential oils, antioxidants, and minerals, they offer potential health benefits. Embrace the purity and authenticity of 24 Mantra Organic Mustard Big, elevating the flavours of your favourite recipes.",
+   "ingredients": "Organic Mustard Seeds",
+   "storageInstructions": "Store in a clean, dry place in an airtight container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Sugar",
@@ -1422,7 +1951,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279829-8_2-24-mantra-organic-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful sweetness of 24 Mantra Organic Sugar, a premium-quality sugar sourced from certified organic farms. This sugar is made from sugarcane grown without the use of chemical pesticides or fertilisers, ensuring a pure and sustainable sweetener. Undergoing minimal processing, it retains its natural flavour and nutritional goodness, making it the perfect choice for sweetening beverages, desserts, and baked goods. Enjoy the fine texture and delicate taste of this organic sugar, which is free from additives and artificial substances. Embrace the natural sweetness of 24 Mantra Organic Sugar and elevate your culinary creations with its wholesome goodness. Bura sugar, the least refined form of sugar, is made by extracting sugarcane juice, boiling it, and allowing it to crystallise. This process preserves the natural nutrients present in the sugarcane, including small amounts of minerals and vitamins. The darker the bura sugar, the higher the molasses content, adding depth and complexity to its flavour. Sugar holds a unique place in our culture, from simple tea to gourmet desserts, and 24 Mantra Organic Sugar offers a pure, organic alternative that celebrates the natural sweetness of sugarcane.",
+   "ingredients": "Sugar",
+   "usageInstructions": "Replace refined sugar with this organic alternative while preparing your favourite desserts, cakes, sweets, tea, coffee and even juices.",
+   "storageInstructions": "Store in a clean, dry place in an air-tight container",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Brown Sugar",
@@ -1457,7 +1995,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313665-5_1-24-mantra-organic-brown-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic Demerera or Bura or Brown Sugar is the least refined or processed form of sugar. It contains molasses which possesses certain minerals which include calcium, iron, and vitamins-B. It is safe as it does not contain sulphur. It is organic. Any celebration is incomplete without organic sugar. Organic sugar occupies a very unique place in our culture.",
+   "ingredients": "Sugar",
+   "storageInstructions": "Store in a cool, dry place away from sunlight",
+   "manufacturerName": "Sresta Natural Bio Products limited",
+   "fssaiLicense": "10014047000217",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jaggery Powder",
@@ -1501,7 +2047,18 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279803-8_1-24-mantra-organic-jaggery-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made from organic sugarcane and naturally farmed without chemicals and harmful pesticides, this 24 Mantra Organic Jaggery powder is healthy and naturally sweet, filled with minerals like iron and magnesium. This jaggery powder helps keep your diet rich in nutrients while also ensuring taste. Add this powdered jaggery to your morning black tea or your favourite summer drink. It is even used to prepare traditional sweets, curries, and gravies. Explore the wide range of organic groceries from 24 Mantra like jaggery, sugar, and more, only on Big Basket.",
+   "ingredients": "Organic Jaggery",
+   "nutritionalInfo": {
+    "Nutrition per": "100g Serving_Size: 8g Energy: 380 kcal Protein (g): 3 g Fat (g): 1 g Of which saturates (g): 1 g Trans Fat (g): 0 g Cholesterol (mg): 0 mg Total Carbohydrates (g): 89 g Of which sugars (g): 83 g Of which added sugars (g): 0 g Dietary fiber (g): 0.4 g Sodium (mg): 25 mg"
+   },
+   "usageInstructions": "In Cooking: Add grated or powdered jaggery to sweets, curries, sauces, and traditional dishes for a rich, caramel-like sweetness.\nFor Beverages: Dissolve jaggery in warm water, milk, or herbal drinks for natural sweetness.\nIn Baking: Use jaggery powder in cakes, cookies, and baked treats as an alternative sweetening ingredient.",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Himalayan Rock Salt Powder",
@@ -1539,7 +2096,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40158108-6_2-24-mantra-himalayan-rock-salt-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the natural wonder of Himalayan Rock Salt, a treasure trove of minerals and trace elements. Harvested from ancient salt mines Nestléd in the foothills of the Himalayas, 24 Mantra Natural Saindhava Lavana Powder is an unrefined, naturally pink salt that is free from any added additives. This versatile kitchen essential lends itself beautifully to a variety of culinary applications, from enhancing the flavour of your dishes to providing a unique and healthful seasoning. Revered in Ayurvedic Pharmaceutics and Rasashastra, Saindhava Lavana is considered the best of salts, offering a pure and natural taste experience. Embrace the rich history and natural goodness of this Himalayan rock salt, perfect for vegetarians and those seeking a wholesome, unprocessed seasoning option.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Sodium": "38g",
+    "Calcium": "180mg",
+    "Potassium": "160mg",
+    "Magnesium": "130mg",
+    "Iron": "6.5mg",
+    "Copper": "4mg",
+    "Manganese": "0.1mg",
+    "Zinc": "0.05mg",
+    "Selenium": "0.05mg",
+    "Vanadium": "0.02mg",
+    "Chromium": "0.02mg"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Honey",
@@ -1627,7 +2205,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075079-8_3-24-mantra-organic-wild-honey.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exquisite taste and numerous health benefits of 24 Mantra Organic Wild Honey. This pure and freshly filtered honey retains its natural goodness, obtained from the nectar of blossoms and transformed into a golden brown fluid in honeycombs. Embrace its remarkable properties, such as improved physical performance, mental activity, and resistance to fatigue. With its high fructose content, it offers relief for colds and respiratory irritations.\nPacked with nutrition, it aids digestion and bone development, and lowers the risk of diabetes. Make it your family's sweetest health secret. Enjoy the natural goodness of 24 Mantra Organic Himalayan Multiflower Honey, a delicious, nutrient-rich treat from the Himalayas. This pure and nutritious Himalayan honey is rich and exquisite in taste, savoured by pleasure seekers and health freaks alike.",
+   "ingredients": "Organic Honey",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1 tbsp (21 g)",
+    "Energy": "320 kcal",
+    "Protein": "0g",
+    "Total fat": "0 g",
+    "Of which saturated fat": "0g",
+    "Trans fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Total carbohydrates": "80 g",
+    "Dietary fiber": "0g",
+    "Of which sugars": "80 g",
+    "Of which added sugar": "0g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store in cool and dry place\n*In cold conditions, honey tends to crystallise, place the jar in warm water to melt the crystals",
+   "manufacturerName": "Sresta Natural bioproducts Pvt ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Mixed Fruit Jam",
@@ -1662,7 +2263,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40012911-5_4-24-mantra-organic-mixed-fruit-jam.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic from its organic section brings a tasty accompaniment to your daily meal with mixed fruit jam. Enjoy the jam as a leisure food; spread them on toasts, bread and rotis. It can also be used to give a twisty taste to the dosas and puris. It is a blend of whole fruit pieces as well as fresh fruit pulp for a more natural taste. 24 Mantra Organic uses organic fruits which are cooked along with sugar and natural preservatives in the right proportions. This mixed fruit jam is free of artificial flavours and synthetic colours. Relish the jam with tasty fruit pieces and flavour. It is free of fat and cholesterol. This mixed fruit jam of 24 Mantra Organic is 100% organic, pure and unadulterated. All products of 24 Mantra Organic are certified as per Indian, US and European Organic Standards.",
+   "ingredients": "Organic Mix Fruit Pulp (Papaya, Pineapple, Guava, Banana), Organic Sugar, Stabilising Agent (Pectin), Acidulant (Citric Acid)",
+   "storageInstructions": "Store in a cool and dry place. Refrigerate after opening. Use dry, clean spoon for scooping.",
+   "manufacturerName": "Cears Consumer Products",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Pressed Groundnut Oil",
@@ -1678,7 +2286,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/301981_16-24-mantra-organic-pressed-groundnutpeanut-oil.jpg"
-    }
+    },
+    "barcode": "8904083505945"
    }
   ],
   "images": [
@@ -1706,7 +2315,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/301981-8_5-24-mantra-organic-pressed-groundnutpeanut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Groundnut Oil, extracted from high-quality peanuts, is renowned for its nutty flavour and numerous health benefits. This cooking essential is rich in monounsaturated fats, which promote heart health by lowering LDL cholesterol. Its high smoke point makes it ideal for frying and deep-frying without compromising nutritional value. Whether used in stir-fries, baking, or salad dressings, this versatile oil adds a delicious nutty taste and beneficial nutrients to everyday cooking.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "14g",
+    "Energy": "884 kcal",
+    "Protein (g)": "0g",
+    "Total Fat (g)": "100g",
+    "Of which saturates (g)": "17g",
+    "Of which mono unsaturates (g)": "46g",
+    "Of which poly unsaturates (g)": "32g",
+    "Trans Fat (g)": "0g",
+    "Cholesterol (mg)": "0mg",
+    "Total Carbohydrates (g)": "0g",
+    "Of which sugars (g)": "0g",
+    "Of which added sugars (g)": "0g",
+    "Dietary fiber (g)": "0g",
+    "Sodium (mg)": "0mg"
+   },
+   "manufacturerName": "Sresta Natural Bioproducts Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Cold Pressed Sunflower Oil",
@@ -1722,7 +2354,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20001049_11-24-mantra-organic-expeller-pressed-sunflower-oil.jpg"
-    }
+    },
+    "barcode": "8904083506003"
    }
   ],
   "images": [
@@ -1750,7 +2383,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20001049-8_4-24-mantra-organic-expeller-pressed-sunflower-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The organic expeller-pressed sunflower oil is a branded edible oil with multiple health benefits. A light, healthy, and nutritious oil that is easy to digest, it is an important source of energy, essential fatty acids, and fat-soluble vitamins in our diet. Unlike refined oils, this cold-pressed oil is not exposed to high temperatures and no chemicals are added.\nGrown without synthetic pesticides\nCold/Expeller pressed. Preservative-free\nUnadulterated\nCholesterol and trans-fat-free\nNot exposed to extremely high temperatures\nChemical-free",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "14g",
+    "Energy": "900 kcal",
+    "Protein (g)": "0g",
+    "Total Fat (g)": "100g",
+    "Of which saturates (g)": "13g",
+    "Of which mono unsaturates (g)": "46g",
+    "Of which poly unsaturates (g)": "36g",
+    "Trans Fat (g)": "0g",
+    "Cholesterol (mg)": "0mg",
+    "Total Carbohydrates (g)": "0g",
+    "Of which sugars (g)": "0g",
+    "Of which added sugars (g)": "0g",
+    "Dietary fiber (g)": "0g",
+    "Sodium (mg)": "0mg"
+   },
+   "manufacturerName": "Sresta Natural Bioproducts Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Green Tea",
@@ -1785,7 +2441,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40012916-5_3-24-mantra-organic-green-tea.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tea or \"Chai\" is one of the most popular beverages consumed worldwide. Tea is consumed in different parts of the world as oragnic green tea, black, or Oolong tea. Among these, organic green tea bag is the one which has been reported to have the most significant effects on human health. Our 24 Mantra Organic Green Tea bag is of premium quality and sourced from the highest altitudes of Nilgiri Hills.",
+   "manufacturerName": "Sresta Natural Bioproducts pvt ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hot Mixture",
@@ -1820,7 +2481,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307380-5_3-24-mantra-organic-hot-mixture.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic Hot Mixture is a delicious and healthy snack made with a variety of organic ingredients. It is a great source of protein, fibre, and healthy fats. The mixture is made using a traditional method that results in a crispy and flavourful snack.",
+   "ingredients": "Chick Pea Flour*, Peanut Oil*, Peanut*, Whole Masoor (Lentil)*, Chick Pea*, Himalayan Salt, Red Chilli Powder*, Turmeric Powder*, Cumin*, Black Pepper*, Clove*, Mint Leaves*, Ajwain*",
+   "nutritionalInfo": {
+    "Nutrition per": "per serving",
+    "Serving Size": "1/4 cup (30 g)",
+    "Calories": "135",
+    "Total Fat": "11g",
+    "Saturated Fat": "2g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "177mg",
+    "Total Carbohydrate": "6g",
+    "Dietary Fiber": "2g",
+    "Total Sugars": "0g",
+    "Includes Added Sugars": "0%",
+    "Protein": "3g",
+    "Vitamin D": "0mcg",
+    "Calcium": "8mg",
+    "Iron": "1mg",
+    "Potassium": "140mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "SY No. 69",
+   "fssaiLicense": "10021047000201",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mullu Murukku",
@@ -1852,7 +2540,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307377-4_4-24-mantra-organic-mullu-murukku.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic Mullu Murukku is a delicious and healthy snack made with rice flour, water, salt, etc. It is a great source of carbohydrates, protein, and fibre. The murukku is made using a traditional method that results in a crispy and flavourful snack.",
+   "ingredients": "Rice Flour*, Peanut Oil*, Chick Pea Flour*, Hulled Black Gram Flour*, Green Chilli*, Himalayan Salt, Red Chilli Powder*",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30 g",
+    "Calories": "160",
+    "Total Fat": "11g",
+    "Saturated Fat": "8g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "138mg",
+    "Total Carbohydrate": "14g",
+    "Dietary Fiber": "1g",
+    "Total Sugars": "0g",
+    "Includes 0g Added Sugars": "0%",
+    "Protein": "2g",
+    "Vitamin D": "0mcg",
+    "Calcium": "5mg",
+    "Iron": "0mg",
+    "Potassium": "85mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "SY No. 69",
+   "fssaiLicense": "10021047000201",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Thick Sev",
@@ -1896,7 +2611,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307378-8_2-24-mantra-organic-thick-sev.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "24 Mantra Organic Thick Sev is a delicious and healthy snack made with chickpea flour, water, salt, etc. It is a great source of protein, fibre, and iron. The sev is made using a traditional method that results in a crispy and flavourful snack.",
+   "ingredients": "Chick Pea Flour*, Peanut Oil*, Himalayan Salt, Red Chilli Powder*, Turmeric Powder*, Ajwain*, Cumin*, Coriander*, Black Pepper*, Clove*, Cinnamon*, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "1/4 cup (30 g)",
+    "Energy": "155 kcal",
+    "Total Fat": "12 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "346 mg",
+    "Total Carbohydrate": "9 g",
+    "Dietary Fiber": "3 g",
+    "Total Sugars": "0 g",
+    "Includes 0g Added Sugars": "0%",
+    "Protein": "4 g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "12 mg",
+    "Iron": "1 mg",
+    "Potassium": "208 mg"
+   },
+   "storageInstructions": "*Keep away from heat and sunlight\n*Store in a cool and dry place",
+   "manufacturerName": "SY No. 69",
+   "fssaiLicense": "10021047000201",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Roasted Chana Plain",
@@ -1940,7 +2682,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241561-8_3-24-mantra-organic-roasted-chana-not-fried-rich-in-protein-fibre-vegan-healthy-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The husk of roasted Chana Dal also known as Bengal gram is removed and a gram is split and roasted. The flavour of roasted chana dal is earthy and nutty. It has a particular texture to it. Our Organic Roasted Chana Dal (Bengal Gram) is farmed without synthetic chemicals or genetically modified organisms.",
+   "ingredients": "Organic Roasted Chana",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "287",
+    "Protein, g": "18.8",
+    "Carbohydrates(g)": "39.5",
+    "of which Sugars(g)": "1",
+    "Dietary fiber(g)": "25.2",
+    "Fat(g)": "5.1",
+    "Saturated Fat(g)": "0.4",
+    "Trans Fat(g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (g)": "0.02",
+    "Potassium (g)": "0.9",
+    "Iron (mg)": "6.8",
+    "Calcium (mg)": "150"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Sresta Natural Bio Product PVT. LTD",
+   "fssaiLicense": "10014047000217",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Roasted Chana Salted",
@@ -1984,7 +2750,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241562-8_3-24-mantra-organic-roasted-chana-salted-not-fried-rich-in-protein-fibre-vegan-healthy-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your snacking experience with 24 Mantra's Organic Roasted Chana Salted, a delightful and nutritious treat. Crafted from premium organic Bengal gram, this roasted chana dal boasts a delectable earthy and nutty flavour, with a satisfying texture. Packed with plant-based protein, it's a guilt-free indulgence that promotes heart health and helps control blood glucose levels, making it a wonderful choice for health-conscious consumers. Enjoy this versatile snack on its own or as a flavourful addition to your favourite dishes. Discover the goodness of organic, sustainably-grown ingredients in every crunchy bite.",
+   "ingredients": "Roasted Chana*, Peanut Oil*, Himalayan Salt, *are Organic",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "302",
+    "Protein, g": "17.6",
+    "Carbohydrates(g)": "38.7",
+    "of which Sugars(g)": "1",
+    "Dietary fiber(g)": "25.2",
+    "Fat(g)": "7.7",
+    "Saturated Fat(g)": "0.9",
+    "Trans Fat(g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (g)": "0.7",
+    "Potassium (g)": "0.9",
+    "Iron (mg)": "6.3",
+    "Calcium (mg)": "141"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Sresta Natural Bio Product PVT. LTD",
+   "fssaiLicense": "10014047000217",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peanut Chikki",
@@ -2028,7 +2818,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330849-8_5-24-mantra-organic-peanut-chikki.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful and nourishing experience of 24 Mantra's Organic Peanut Jaggery Chikki. Crafted with the finest organic peanuts and jaggery, this traditional Indian snack is a perfect pick-me-up when you need a burst of energy or a satisfying sweet treat. The rich, creamy peanuts are complemented by the unique, caramelised flavour of pure jaggery, creating a truly delectable and wholesome snack. Packed with protein, essential minerals, and natural sweetness, this chikki is a guilt-free indulgence that supports your overall well-being. Enjoy the clean, organic ingredients and the absence of any artificial additives or preservatives. Savour the authentic taste and texture of this time-honoured recipe, perfect for satisfying cravings and fuelling your day.",
+   "nutritionalInfo": {
+    "Energy": "500kcal",
+    "Protein": "9g",
+    "Fat": "26g",
+    "Of which saturates": "4g",
+    "Trans fat": "0g",
+    "Cholestrol": "0mg",
+    "Total Carbohydrates": "60g",
+    "Dietary fiber": "5g",
+    "Of which sugars": "47g",
+    "Of which added sugars": "6g",
+    "Sodium": "0%"
+   },
+   "storageInstructions": "Away from direct sunlight.\nStore in an airtight container.",
+   "manufacturerName": "Sresta Natural Bioproducts Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021047000201"
+  }
  },
  {
   "title": "Sesame Chikki",
@@ -2072,6 +2882,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40330848-8_1-24-mantra-organic-sesame-chikki.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful crunch and sweetness of 24 Mantra Organic Sesame Chikki, a beloved snack that delights taste buds across generations. Crafted with the finest quality organic sesame and jaggery, this chikki offers a rich, nutritious treat that is sure to bring a smile to your face. Bursting with the natural goodness of sesame, the chikki's crispy texture and delightful jaggery flavour make it a versatile snack that can be enjoyed at any time of the day, whether as a mid-morning pick-me-up, an afternoon treat, or a post-dinner delight. Packed with essential proteins and minerals, this organic snack is a wholesome choice for kids, youngsters, and adults alike, satisfying sweet cravings in a truly delicious and nourishing way.",
+   "ingredients": "Sesame, Jaggery and Sugar. Ingredients with are Organic. Contains Sesame.\nJaggery and sugar only. No liquid glucose/corn syrup is used. Produced in a facility that also handles Wheat, Soy, Peanuts, Mustard and Tree Nuts.",
+   "nutritionalInfo": {
+    "Per": "100g Serving_Size: 18g",
+    "Energy": "486kcal",
+    "Protein": "9.3g",
+    "Fat": "26.4g",
+    "Saturated fat": "3%",
+    "Trans fat": "0g",
+    "Carbohydrates": "58g",
+    "Of which sugars": "43.8g",
+    "Dietary fiber": "7.7g",
+    "Sodium": "0%",
+    "Calcium": "500mg",
+    "Iron": "7mg"
+   },
+   "storageInstructions": "Keep in a cool, dry place. Avoid direct sunlight.",
+   "manufacturerName": "Sresta Natural Bioproducts Pvt. Ltd",
+   "fssaiLicense": "10021047000201",
+   "countryOfOrigin": "India"
+  }
  }
 ]

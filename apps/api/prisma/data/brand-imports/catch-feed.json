@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30006844_11-catch-ajwain-whole.jpg"
-    }
+    },
+    "barcode": "8901192110121"
    }
   ],
   "images": [
@@ -35,7 +36,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006844-6_3-catch-ajwain-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ajwain is an aromatic spice with a smoky taste that is consumed both raw and cooked. Catch Ajwain is sourced from the prime spice growing areas for the finest quality of Ajwain that is known for its unique aroma, texture and flavour. Ajwain Whole lends an exotic taste and is an essential ingredient in a variety of Indian delicacies. It is also used for tempering, â€œtadkaâ€ for dals and in pakoras to give it a pleasing and distinct aroma. Ajwain is also highly beneficial in indigestion.",
+   "usageInstructions": "Ajwain is used majorly in any choice of cuisine to add flavour. Some of the most common applications are an addition to simple and bland food like potatoes, fish, and bean-based delicacies. Many homes in India follow a practice of adding ajwain to wheat parathas and rotis. Add Catch Ajwain to your tadka and make every meal full of flavours. Keep the material in an airtight container once opened. |",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Jeera Whole",
@@ -51,7 +59,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30006786_6-catch-jeera-whole.jpg"
-    }
+    },
+    "barcode": "8901192109125"
    },
    {
     "title": "200g",
@@ -97,7 +106,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199056_3-catch-jeera-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Jeera (Cumin) has been a popular spice in India since ancient times. Jeera is used extensively in all Indian cuisines for imparting a tantalizing smell and taste. Catch finest quality Jeera is sourced from the prime spice growing areas and is known for its unique aroma, texture and flavour. Jeera also has medicinal properties and is known to aid digestion and provide relief in stress & low blood pressure. Hygienically packed, it is a must have ingredient in every Indian Kitchen.",
+   "usageInstructions": "Uses: Catch Jeera is commonly used in Indian cuisines as a basic ingredient for tadka (tempering).\nCooking Applications: Can be fried or sautéed and widely used in curries, stews and soups.\nStorage Instructions: Keep in an airtight container once opened.\nStorage: Store in a cool and dry place.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Methi Dana Whole",
@@ -135,7 +151,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006842-6_3-catch-methi-dana-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Methi Dana Whole is a staple Indian spice that's often used in fish-based delicacies and vegetable curries. You can also use it for 'tadka' and garnishing purposes. Catch Methi Dana is sourced from prime spice-growing locations in India to ensure premium quality spice and is packed using state-of-the-art equipment, ensuring minimal human contact. Catch Methi Dana does not have any additional fillers, ensuring premium quality spice.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "DS SPICECO PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Black Pepper Whole",
@@ -176,7 +198,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006836-7_1-catch-black-pepper.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the perfect balance of heat and aroma with Catch Black Pepper, also known as Kali Mirch. Sourced from the finest spice-growing regions in India, this premium-quality spice is packed using state-of-the-art equipment to ensure minimal human contact and maximum hygiene. Boasting an intense flavour and aroma, Catch Black Pepper is free from any additional fillers, delivering a pure and authentic spice experience. Elevate your culinary creations with the versatile Catch Black Pepper, a true delight for the senses.",
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "DS SPICECO PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Black Pepper Grinder",
@@ -220,7 +248,19 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153414-8_1-catch-black-pepper-grinder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Black Pepper wholes are sourced from prime spice-growing locations in India to ensure high-quality spice. Catch Black Pepper Grinder comes with a special ceramic grinding head that enables uniform and smooth grinding. It is packed using state-of-the-art equipment, ensuring minimal human contact. Catch spices do not have any additional fillers, ensuring high quality of spice.",
+   "ingredients": "Black Peppercorn",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Black Pepper Powder",
@@ -273,7 +313,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006797-8_1-catch-black-pepper-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Black Pepper Powder brings wholesome spicy goodness to every dish from your kitchen. The high piperine content, bold quality, and natural sundried process whole black peppercorns are sourced from Chikmagalur, Coorg and Sirsi in Karnataka, and Idukki, Kottayam and Alleppey in Kerala. Its fresh taste and aroma can bring zest to any dish from soups and salads to more eclectic recipes. Black Pepper powder is used as a common seasoning ingredient to add a punch of spiciness to any dish. Excellent natural remedy for cold.",
+   "ingredients": "Powdered Black Peppercorns",
+   "usageInstructions": "Sprinkle Catch Black Pepper powder as a spicy seasoning to your soup, salad or fruit.\nStorage Instructions: Keep in a cool & dry place.",
+   "storageInstructions": "Keep in a cool & dry place",
+   "manufacturerName": "DS SPICECO PVT LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016011003518"
+  }
  },
  {
   "title": "Coriander (Dhaniya) Powder",
@@ -344,7 +393,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097501_8-catch-coriander-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Catch Coriander Powder is all about lending any curry its distinct aroma, flavour and colour. Rich in flavour and taste, Coriander Powder is a must have ingredient if you want to turn your dish truly scrumptious. Indian Food can never taste the same without coriander in it. Catch coriander contrived from the farms of Ramganj and Kota (Rajasthan). Although the unique taste and enhances the flavour of different cuisines, and little did we know that this little miraculous powder has an abundance of benefits for your health for enhancing the nutritional value of the food.",
+   "ingredients": "abc",
+   "usageInstructions": "Add Catch Coriander Powder to your dishes to make it a treat.",
+   "manufacturerName": "(7M) DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Jeera Powder",
@@ -397,7 +454,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/284340-8_2-catch-jeera-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enhance your culinary creations with our finely ground Catch Jeera Powder. Crafted from the finest cumin seeds, this aromatic spice delivers a robust flavour to every dish, from hearty curries to fragrant rice pilafs. Elevate your cooking with a sprinkle of tradition and a pinch of excellence, guaranteed to tantalise taste buds and transform your kitchen into a haven of irresistible aromas.",
+   "usageInstructions": "Add Catch Jeera Powder to your favorite gravy or curry and turn it into a delicacy. STORAGE INSTRUCTIONS: Keep in a cool & dry place. |",
+   "manufacturerName": "DS Spiceco Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016011003518"
+  }
  },
  {
   "title": "Red Chilli Powder",
@@ -413,7 +477,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30006783_11-catch-red-chilli-powder.jpg"
-    }
+    },
+    "barcode": "8901192106124"
    },
    {
     "title": "50g",
@@ -477,7 +542,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006782_4-catch-red-chilli-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Red chilli powder is abundantly used in various regular to the exotic dishes. It adds texture, colour, spice and punch to the Indian food to enhance the taste, flavour and look of the dish. Catch Red Chilli powder is made by Low Temperature Grinding Technology. The raw material is sourced from the prime spice growing farms of Guntur(Andhra Pradesh) & Byadigi (Karnataka), which not only makes the food taste good but also provides health benefits. It is an important ingredient for preparing chutneys, curries, gravies and sauces.",
+   "usageInstructions": "Add Catch Red Chilli Powder to your dishes to enhance their taste and colour.\nStore the powder in an airtight container once opened, and keep it in a cool and dry place.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Turmeric Powder",
@@ -557,7 +629,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006777-8_2-catch-turmeric-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "For centuries, turmeric has been a key ingredient in Indian cooking. Turmeric is not only restricted in the culinary world but, has many medicinal and other uses. Catch Turmeric Powder is a balanced combination of pure quality, richness and strong aroma that enriches the Indian dish by adding distinct colour and flavour. Catch Turmeric Powder with high curcumin content is procured from the prime spice growing farms of Sangli (Maharashtra) and Erode (Tamil Nadu). It goes through stringent quality control to ensure that it does not contain any adulteration.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Kashmiri Mirch Powder",
@@ -598,7 +676,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100194275-7_1-catch-kashmiri-mirch-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Kashmiri Mirch Powder adds a touch of red hot colour to any dish without making it too spicy. Catch Kashmiri chillies are sourced from prime spice-growing locations in India like Baydgi, Karnataka with the best stem-less quality & higher colour value. Catch Kashmiri Mirch Powder is prepared using Low-Temperature Grinding Technology ensuring better retention of natural oils and flavours in spices. Catch spices are packed using state-of-the-art equipment ensuring minimal human contact. Catch spices do not contain additional fillers.",
+   "usageInstructions": "Garnish your dish with Catch Kashmiri Mirch Powder to add a vibrant red colour.\nStorage Instructions: Keep in a cool & dry place.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd. B - 6 17 18 19 Sector - 3 Gautham Buddha Nagar Noida 201301 UP",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Kuti Mirch Powder",
@@ -636,7 +721,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006788-6_2-catch-kuti-mirch-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the vibrant, spicy delight of Catch Kuti Mirch, a premium quality red chilli that will elevate your culinary experiences. Sourced from the best farms in India, these high-quality chillies are known for their rich aroma, authentic flavour, and vibrant red colour. Catch Kuti Mirch is the perfect addition to a wide range of dishes, from dal tadka and chutneys to sauces and meat preparations, adding a delightful kick to your Indian cuisine. Packed hygienically using state-of-the-art technology, Catch Kuti Mirch ensures minimal human contact, guaranteeing the freshness and purity of these low-temperature ground spices. Enjoy the true taste of India with Catch Kuti Mirch, a versatile and premium-quality ingredient that will elevate your culinary creations.",
+   "ingredients": "Ground Chilly Powder",
+   "usageInstructions": "Add as per requirement for taste and aroma.\nSTORAGE INSTRUCTIONS: Keep in a cool & dry place.",
+   "storageInstructions": "Keep in a cool and dry place",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016011003518"
+  }
  },
  {
   "title": "Dry Ginger Powder",
@@ -680,7 +774,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006804-8_1-catch-dry-ginger-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic taste and aroma of Catch Dry Ginger Powder, a premium spice sourced from the best farms in Sagar, Karnataka. This traditional-style grainy powder is made using a low-temperature grinding process, ensuring the rich, earthy flavour and freshness of the ginger is preserved. Packed with state-of-the-art equipment to minimise human contact, this kitchen essential is perfect for adding a touch of earthiness and vibrancy to both vegetarian and non-vegetarian curries. Enjoy the high-quality, unadulterated spice experience with Catch Dry Ginger Powder.",
+   "ingredients": "Dry Ginger Powder",
+   "usageInstructions": "Add Catch Dry Ginger Powder to your favourite gravy or curry and enjoy the earthy aroma and flavour. It can also be used to prepare Ginger Tea.\nStorage Instructions Keep in a cool & dry place.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Amchur Powder",
@@ -696,7 +799,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100099606_10-catch-dry-mangoamchur-powder.jpg"
-    }
+    },
+    "barcode": "8901192105110"
    },
    {
     "title": "50g",
@@ -733,7 +837,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100099606-8_1-catch-dry-mangoamchur-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Dry Mango Powder takes your dish’s zesty flavour to the next level. Made from the pulp of high-quality dry mangoes, this powder can be added to cooked vegetable dishes, chicken, meat, and even to your fruits. Catch Spices are ground to perfection, with no addition of fillers. This makes Catch Amchur powder tasty and healthy. Catch Dry Mango/Amchur Powder is available in 100g & 50g packs, giving you the flexibility to choose as per your needs. Catch Spices are packed with state-of-the-art equipment ensuring minimal human contact.",
+   "usageInstructions": "There are several uses of Catch Amchur powder. The primary being as a seasoning on fresh fruits. There are other applications where amchur powder is used as a sour agent in vegetables, curries, meat preparations and gravies.\nStorage Instructions Keep in a cool & dry place.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "fssaiLicense": "10015051001304",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Saunf Powder",
@@ -749,7 +860,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30006802_4-catch-saunf-powder.jpg"
-    }
+    },
+    "barcode": "8901192222152"
    }
   ],
   "images": [
@@ -768,7 +880,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006802-5_1-catch-saunf-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amazing in flavour, rich in quality, and good for health - Catch Saunf Powder is what your dishes need. Catch Saunf Powder is made using the low temperature grinding technology, ensuring natural oils & flavours are intact.",
+   "ingredients": "Saunf Powder (Fennel Powder)",
+   "usageInstructions": "Add Catch Saunf Powder to any dish and elevate the taste. Great to cut through excess acidity and spiciness of any Indian dish.",
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Compounded Hing",
@@ -784,7 +905,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30006792_5-catch-hingasafoetida.jpg"
-    }
+    },
+    "barcode": "8901192226051"
    },
    {
     "title": "10g",
@@ -839,7 +961,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006792-8_3-catch-hingasafoetida.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Hing, also known as Asafoetida, is an Indian condiment that adds a unique flavour and aroma to almost any Indian cuisine. Catch Hing is a flavour-enhancer that is essential ingredient for kitchens. Asafoetida is sourced from prime spice growing areas and is a perfect substitute for Onion and Garlic. Hing also has medicinal properties to treat Stomach ailments.",
+   "nutritionalInfo": {
+    "Energy": "382 kcal",
+    "Protein": "8.6 g",
+    "Total Carbohydrate": "77.8 g",
+    "Total Sugars": "12.3 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "4 g",
+    "Trans Fat": "0 g",
+    "Saturated Fat": "1.7 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "61.3 mg"
+   },
+   "usageInstructions": "Add a pinch of Catch Hing to your tadka.\nOther applications include using it as a direct spice in curries, vegetables, and gravies.\nCatch Hing can also be used for marinating white and red meat.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Premium Hing",
@@ -874,7 +1015,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213020-5_1-catch-premium-hing-compounded.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Premium Hing is known for its intense aroma as it is four times stronger and aromatic. Whether you are preparing Daal Tadka, Masala Chole, or Rajma Curry, start by adding a pinch of Catch Premium Hing into hot oil to make a lip-smacking dish. The extracted resin for Catch Premium Hing is sourced from some of the best farms located in prime spice-growing areas in India to ensure the most authentic hing. Catch spices are packed using state-of-the-art equipment, ensuring minimal human contact. It does not contain any additional fillers.",
+   "ingredients": "Wheat Flour (45% Approx.), Asafoetida, Gum Arabic",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "DS SPICECO PVT LTD.4828/24",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Chana Masala",
@@ -918,7 +1067,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100099598-8_2-catch-chana-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Chana Masala has the perfect blend of spices that brings out a spicy and tangy flavour and adds aroma to create this Punjabi delicacy. Add Catch Chana Masala to make your chana dish a finger-licking one. Catch Chana Masala powder is available in 100g and 50g packs, giving you the flexibility of purchasing as per your needs. Catch Spices are packed with state-of-the-art equipment, ensuring minimal human contact. Catch Chana Masala has no additional fillers, ensuring the highest quality of spice.",
+   "ingredients": "Coriander Whole, Cumin Whole, Ginger Whole, Dried Mango Slices, Whole Chillies and Capsicum, Iodized Salt, Dehydrated Onion, Cassia Whole, Bay Leaves, Large Cardamom Whole, Cucumis, Anistar, Dried Garlic, Black Pepper Whole, Fenugreek Whole, Black Mustard Whole, Nutmeg Whole, Cloves Whole, Long Pepper, Pomegranate Seeds, Citric Acid (INS 330).",
+   "usageInstructions": "Soak 240 g of kabuli chana overnight and boil.\nHeat 5 tbsp. of ghee/oil in a pan and fry 1 tsp. of jeera.\nAdd 2 tbsp. of onion paste and fry until golden brown.\nAdd 1 tbsp. of ginger-garlic paste and fry well.\nAdd 3 tbsp. of chopped tomatoes, 3 tsp. of Catch Chana Masala, 1 tsp. of Catch Red Chilli Powder, and cook until the masala leaves the ghee/oil.\nAdd the boiled kabuli chana and simmer for 15 minutes.\nAdd 60 g of paneer (diced into cubes) and 20 g of halved, roasted cashew nuts, and cook for 5 minutes.\nBefore serving, add 1 tsp. of Catch Garam Masala, 1 tsp. of lemon juice, and check for seasoning.\nServe hot, garnished with juliennes of ginger and coriander leaves.",
+   "storageInstructions": "Keep in a cool and dry place Avoid exposure to direct sunlight or moisture",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Chicken Biryani Masala",
@@ -962,7 +1120,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019835-8_3-catch-biryani-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your biryani experience with Catch Biryani Masala, a meticulously crafted blend of premium spices that captures the essence of traditional Indian cuisine. Sourced from the finest spice-growing regions, this aromatic masala enhances the flavour of your biryani dishes with a perfect balance of heat, fragrance and depth.\nPrepared using state-of-the-art LTG technology, Catch Biryani Masala ensures the natural oils and flavours of the spices are expertly retained, delivering an authentic and flavourful result every time.\nWhether you're preparing a classic chicken biryani, a delectable vegetable biryani or any other variation, this masala will transform your dish into a true culinary masterpiece, infusing it with a burst of flavour in every bite.\nCrafted with care and packed with minimal human contact, Catch Biryani Masala is the ultimate spice blend for the perfect homemade biryani experience.",
+   "ingredients": "Ingredients: Cumin, Black Pepper, Cardamom, Coriander, Large Cardamom, Dehydrated Onion, Star Anise, Cloves, Cassia, Fennel, Dried Bay Leaf, Caraway, Dried Ginger, Nutmeg, Chillies, Capsicum, Mace, Turmeric, Kalonji, Iodised Salt, Refined Sugar, Fenugreek Leaf, Spices Extract.\nSpice Content: 96% (Approx.)\nAllergen Advice: This product is manufactured in a facility that may process Gluten, Soy, Sesame, Tree Nuts, Peanuts, Celery Seeds and Mustard Products. Scan the QR code and refer to the first two letters of the batch code for allergen information.",
+   "usageInstructions": "For instructions please refer to the recipe at the back of the pack.\nStorage Instructions: Keep in a cool & dry place.\nChicken Biryani Recipe:\nSoak 250 g basmati rice for 30 minutes. Cook the rice,\ndrain the excess water, and keep aside.\nMarinate 250 g chicken with 50 g curd, salt as per taste,\nand 1 tsp Catch Chicken Biryani Masala. Keep aside for 15 minutes.\nHeat 3 tbsp oil in a thick-bottom pan. Fry 3 sliced\nonions until golden brown. Remove half for layering. Add 1 tbsp Catch Ginger\nGarlic Paste and sauté well.\nAdd the puree of 1 tomato and cook until the oil\nseparates. Add 1/2 tsp Catch Turmeric and 1/2 tsp Catch Red Chilli Powder.\nAdd the marinated chicken and cook until the chicken is\nalmost done. Add water as required and cook until the oil separates.\nAdd 2 tsp Catch Chicken Biryani Masala and cook for 1\nminute.\nGrease the pan. Arrange alternate layers of cooked rice\nand cooked chicken. Spread butter, chopped mint, fried onions, and rose water\nbetween the layers and on top.\nAdd 5 tbsp milk. Cover the pan with a lid, seal the edges\nwith thick dough or wrap with aluminium foil, and cook on a low flame for 12 to\n15 minutes.\nOpen the lid, mix gently, garnish with green coriander\nleaves, and serve hot.",
+   "storageInstructions": "Keep in a cool & dry place",
+   "manufacturerName": "and Brand Owner details",
+   "fssaiLicense": "10019011006679",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chicken Masala",
@@ -1015,7 +1182,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006812_3-catch-chicken-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Chicken Masala goes well with any chicken preparation. A suitable combination of simple spices that gives aroma, colour and taste to any of your chicken preparations. Catch Chicken Masala is recommended for chicken gravies, tandoori chicken, chicken masala, butter chicken, chicken tikka and many more.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd. B - 6 17 18 19 Sector - 3 Gautam Buddha Nagar Noida 201301 UP",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Dal Makhani Masala",
@@ -1059,7 +1232,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006807-8_2-catch-dal-makhani-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Dal Makhani Masala adds a sweet and savoury aroma and taste to your simple dal recipe, turning it into an instant delicacy. Ingredients sourced from the best farms of prime spice-growing locations in India, Catch Dal Makhani Masala is prepared using LTG Technology to ensure better retention of natural oils and flavours in spices.",
+   "ingredients": "Coriander Whole, Chillies And Capsicum Whole, Cumin Whole, Dried Mango Slices, Iodised Salt, Turmeric Whole, Bay Leaves, Ginger Whole, Anistar, Pepper Black Whole, Asafoetida, Cloves Whole, Large Cardamom Whole, Cinnamon Whole, Mace Whole",
+   "usageInstructions": "For instructions please refer to the recipe at the back of the pack.\nStorage Instructions Keep in a cool & dry place.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Dal Tadka Masala",
@@ -1091,7 +1273,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40305036-4_3-catch-dal-tadka-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Dal Tadka Masala is one of its own kind in the market. This Indian spice adds a tadka and savoury aroma to the arhar dal or mix dal. The blended Indian masalas are measured to perfection and ground at low temperatures, thus assuring the perfect combination of various simple Indian spices.",
+   "ingredients": "Coriander Whole, Iodised Salt, Cumin Whole, Dried Mango Slices, Chillies and Capsicum Whole, Edible Common Salt, Dried Ginger Whole, Long Pepper Whole, Large Cardamom Whole, Pepper Black Whole, Asafoetida, Cassia Whole, Cloves Whole, Nutmeg Whole, Dehydrated Green Coriander Leaves, Fenugreek Leaves, Mace Whole, Citric Acid (INS 330)",
+   "usageInstructions": "Dal Tadka Recipe:\nClean and wash 200 gm Tur Dal (Arhar dal)/Mix Dal. Add 8 cups (1200ml) water, 1⁄2 tsp Catch Turmeric Powder, salt as per taste and pressure cook. After one whistle, keep on low flame for 8-10 minutes.\nHeat 2 tbsp desi ghee or oil in a pan or 'kadhai', now add 1 tsp Catch Cumin Seeds and let them crackle.\nAdd 1⁄2 tsp Catch Hing and cook for a few seconds, now add 1 tsp chopped garlic, 1 tsp chopped ginger and add 1⁄2 tsp green chillis and cook for 2 minutes.\nNow add 2 medium size finely chopped onions and cook for 3 minutes after this add 2 medium-sized chopped tomatoes and cook for 2 minutes on medium flame.\nNow add 2 tsp 'Dal Tadka Masala' and cook for 2 minutes on low flame then add 100ml water and cook for 2 minutes.\nAdd boiled dal and mix well. Let it simmer for 3 minutes on a low flame.\nGarnish with freshly chopped coriander leaves and 1 tsp of desi ghee and serve hot with rice/roti.\nStorage:\nKeep in a clean, cool and dry place away from sunlight.\nOnce opened, store the contents in an airtight container.",
+   "storageInstructions": "Keep in a cool & dry place",
+   "manufacturerName": "DS SPICECO PVT. LTD. PLOT NO. 117",
+   "fssaiLicense": "10021051000106",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Egg Curry Masala",
@@ -1132,7 +1323,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359278-7_1-catch-egg-curry-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Egg Curry Masala is made with fresh and pure spices procured from the origin. You can make a rich egg curry masala gravy using this. It makes the dish zestful without much investment in time and effort. The balanced formulation of aromatic spices lends a unique flavour which makes Catch egg curry masala matchless.",
+   "ingredients": "Chillies and Capsicum, Coriander, Cumin, Dehydrated Onion , Turmeric, Iodized Salt , Cassia, Cardamom, Black Pepper, Dried Ginger, Fenugreek, Dehydrated Garlic, Large Cardamom, Cloves, White Til, Dried Bay Leaf, Nutmeg, Dried Mango Slices, Long Pepper, Star Anise, Fenugreek Leaves, Mace, Spice extracts & Oleoresins, Acidity Regulator (INS 330)\nAllergen: Contains White Til\nSpice content – 88.5 % (Approx.)\nSalt content – 8.4 % (Approx.)",
+   "manufacturerName": "DS Spiceco Pvt. Ltd. Plot No. 117",
+   "fssaiLicense": "10021051000106",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kitchen King Masala",
@@ -1185,7 +1383,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006813_3-catch-kitchen-king-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Missing that ‘flavour’ in what you eat regularly? Here’s a pro tip - use Catch Kitchen King Masala Powder to add a great flavour to your everyday food. Catch Kitchen King Masala Powder is a classic blend of different traditional ingredients coming together. Now you can cook mouth-watering dishes without worrying about adding different spices in the right proportions. Catch Kitchen King Masala Powder has got you covered and is available in different packages: 8g, 50g, 100g. Catch Ka Koi Match Nahi.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd. B - 6 17 18 19 Sector - 3 Gautham Buddha Nagar Noida 201301 UP",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Meat Masala",
@@ -1238,7 +1442,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006810_2-catch-meat-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your home-cooked meals to restaurant-quality delights with Catch Meat Masala Powder. Sourced from authentic spice farms in India, this finely ground and expertly blended spice mix delivers a decadent, aromatic flavour that will captivate your senses. Whether you're preparing chicken, mutton or beef, this masala brings a rich and warm taste that perfectly complements the natural flavour of the meat without overpowering it. Its unique combination of spices, including a delightful pepper-coriander-chilli blend, imparts a dark tan colour and a deliciously hot taste that will have your taste buds craving more. Crafted with care to provide a balanced level of spice, this masala creates a mouthwatering experience that celebrates the wholesomeness of your food preparations. Elevate your culinary journey with the authentic, aromatic allure of Catch Meat Masala Powder.",
+   "ingredients": "Coriander Whole, Turmeric Whole, Cumin Whole, Chillies & Capsicum Whole, Iodised Salt, Ginger Whole, White Til, Fennel Whole, Pepper Black Whole, Cardamom Whole, Mustard Whole, Large Cardamom Whole, Bay Leaves, Common Edible Salt (Black Salt), Nutmeg Whole",
+   "storageInstructions": "Keep in a cool and dry place",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Pav Bhaji Masala",
@@ -1291,7 +1503,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100099594-8_3-catch-pav-bhaji-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic flavours of Mumbai's iconic street food with Catch Pav Bhaji Masala. This world-famous blend of Indian spices delivers the same savoury, spice-filled experience you'd find at a bustling Mumbai food stall, right in your own kitchen. Crafted using low-temperature grinding technology to preserve the natural oils and flavours of the finest quality ingredients, this masala ensures your pav bhaji is bursting with bold, fresh tastes. The unique combination of red chilli, coriander, and cumin creates the perfect balance of spice and flavour, enhancing every bite. With no artificial colours or additional fillers, you can trust that Catch Pav Bhaji Masala is made with the highest quality standards, allowing you to enjoy an authentic street food experience at home. Simply add the masala to your pav bhaji preparation for an easy, delicious meal that will transport your taste buds to the vibrant streets of Mumbai.",
+   "ingredients": "Chillies and Capsicum Whole, Turmeric Whole, Iodised Salt, Coriander Whole, Dried Mango Slices, Cumin Whole, Fenugreek Leaves, Black Pepper Whole, Fennel Whole, Large Cardamom Whole, Cassia Whole, Nutmeg Whole, Mustard Whole, Cucumis, Fenugreek Seeds Whole, Mace Whole, Star Anise, Edible Common Salt, Asafoetida.",
+   "storageInstructions": "Keep in a cool & dry place.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Rajma Masala",
@@ -1335,7 +1555,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006808-8_2-catch-rajma-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your traditional rajma dish with the exceptional Catch Rajma Masala. This all-in-one masala is a perfect blend of rich and authentic Indian spices, expertly combined using LTG technology to retain the natural oils and flavours. Infused with a delightful aroma and a balanced spice profile, Catch Rajma Masala delivers an unparalleled North Indian flavour that will enhance both the taste and presentation of your rajma preparations. Crafted from the finest spices and packed using state-of-the-art equipment, this premium masala ensures freshness and superior quality in every dish. Effortlessly elevate your culinary experience with the aromatic and flavourful Catch Rajma Masala.",
+   "ingredients": "Coriander Whole, Chillies And Capsicum Whole, Ginger Whole, Cumin Whole, Dried Mango Slices, Cinnamon Whole, Large Cardamom Whole, Pepper Black Whole, Bay Leaves, Iodised Salt, Cloves Whole, Nutmeg Whole, Long Pepper, Pomegranate Seeds, Mace Whole, Citric Acid (INS No.330)",
+   "storageInstructions": "Keep in a cool and dry place.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Sambhar Masala",
@@ -1379,7 +1607,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100099595-8_2-catch-sambhar-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "India is a land of distinct regional delicacies. Catch Spices ensures that you experience the authentic taste of regional cuisines in the comfort of your home. Introducing Catch Sambhar Masala, which will add a unique blend of spices to your delicious bowl of lentil and vegetable stew, Sambar. The Catch Sambar Masala Powder is sourced from the best farms in prime spice-growing locations in India to ensure the highest quality and taste for your dishes.\nThe Catch Sambar Masala Powder contains coriander, cumin, fenugreek seeds, black pepper, spicy chillies, and turmeric to provide a perfect blend of flavours in your Sambar. Catch spices are packed using state-of-the-art equipment, ensuring minimal human contact, and are free from added fillers. Use Catch Sambhar Masala Powder to prepare classic South-Indian style sambhar at home. Catch Ka Koi Match Nahi.",
+   "ingredients": "Coriander Whole, Chillies and Capsicum Whole, Fenugreek Whole, Split Pulse Arhar, Cumin Whole, Turmeric Whole, Curry Leaves, Asafoetida, Iodised Salt.\nSpice Content: 87%",
+   "usageInstructions": "Add Catch Sambhar Masala Powder to your dishes to make it a treat.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Shahi Paneer Masala",
@@ -1395,7 +1631,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30006806_4-catch-shahi-paneer-masala.jpg"
-    }
+    },
+    "barcode": "8901192225115"
    }
   ],
   "images": [
@@ -1423,7 +1660,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006806-8_1-catch-shahi-paneer-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your shahi paneer dish to new heights with Catch Shahi Paneer Masala, the all-in-one spice blend that infuses your recipe with an authentic, rich and aromatic flavour profile. Crafted using a special low-temperature grinding technology, this masala retains the natural oils and maximum flavour of the carefully selected Indian spices. The perfectly balanced combination of spices enhances the creamy, indulgent taste of paneer, bringing the royal essence of traditional Indian cuisine to your kitchen. Versatile and convenient, this masala can be used in a variety of dishes, from curries and gravies to marinades, making it an essential ingredient for anyone who loves cooking authentic Indian meals. Discover the true essence of shahi paneer with Catch Shahi Paneer Masala.",
+   "ingredients": "Coriander Whole, Cumin Whole, Whole Chillies and Capsicum, Fennel Whole, Iodized Salt, Dried Mango Slices, White Salt, Cardamom Whole, Bay Leaves, Ginger Whole, Curry Leaves, Turmeric Whole, Large Cardamom Whole, Cassia Whole, Black Pepper Whole, Cloves Whole, Nutmeg Whole, Mace Whole, Ajowan, Star Anise.",
+   "storageInstructions": "Keep in a cool & dry place.",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Super Garam Masala",
@@ -1439,7 +1684,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30006818_5-catch-super-garam-masala.jpg"
-    }
+    },
+    "barcode": "8901192219121"
    },
    {
     "title": "200g",
@@ -1470,7 +1716,17 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006819_6-catch-super-garam-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Super Garam Masala is an exquisite blend of rich and premium Indian spices. It adds amazing flavour, aroma and colour to any gravy/curry. It's made with advanced Low Temperature Grinding (LTG) technology, which retains the flavour and aroma of spices in their original state. Catch Super Garam Masala is perfect for Indian-style curries. Super Garam Masala can be used across any Indian cuisine for a powerful punch of spiciness.",
+   "ingredients": "Coriander Whole, Cumin Whole, Cloves Whole, Whole Chillies and Capsicum, Iodized Salt, Bay Leaves, Black Pepper Whole, Ginger Whole, Fennel Whole, Cucumis Whole, Cardamom Whole, Turmeric Whole, Cassia Whole, Large Cardamom Whole.\nSpice Content: 94%\nSalt Content: 6%",
+   "nutritionalInfo": {
+    "Nutrition per": "100g Energy, Kcal: 397 kcal Protein, g: 10.8 g Carbohydrate, g: 58.4 g Sugar, g: 3.5 g Added Sugar, g: 0 g Fat, g: 13.4 g"
+   },
+   "manufacturerName": "(7M) DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10021051000106"
+  }
  },
  {
   "title": "Kasuri Methi",
@@ -1486,7 +1742,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30006795_3-catch-kasuri-methi.jpg"
-    }
+    },
+    "barcode": "8901192322029"
    },
    {
     "title": "25g",
@@ -1532,7 +1789,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006794_7-catch-kasuri-methi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Catch Kasuri Methi, a premium-quality fenugreek leaf product that adds depth and complexity to your dishes. Sourced from the finest spice-growing regions, these dried methi leaves are carefully processed to preserve their authentic and flavourful taste. Catch Spices' state-of-the-art packaging ensures minimal human contact, guaranteeing the purity and freshness of this versatile ingredient. Infuse your curries, dals, and marinades with the intense aroma and robust flavour of Catch Kasuri Methi, which seamlessly enhances the overall taste profile while neutralising any strong or overpowering notes. Enjoy the authentic taste of India with this all-natural, additive-free spice that will elevate your cooking to new heights.",
+   "ingredients": "Dried Fenugreek Leaves/Kasuri Methi",
+   "usageInstructions": "Add a pinch of Catch Kasuri Methi to tadka or use it as marination for Paneer, Vegetables or Meat.\nStorage Instructions Keep in a cool & dry place.",
+   "storageInstructions": "Keep in a cool and dry place",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Black Pepper Sprinkler",
@@ -1585,7 +1851,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006771-8_1-catch-sprinklers-black-pepper.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A Black Pepper Sprinkler is always required on the dining table as an integral part of our everyday life. Catch Black Pepper is prepared from the finest peppercorns sourced from India's Malabar region to ensure you get the most wholesome seasoning. Catch Black Pepper comes in a unique HIPS container to keep the spice moisture-free and make it easy to use. Catch Black Pepper Sprinkler is packed using state-of-the-art equipment, ensuring minimal human contact. Catch spices do not have any additional fillers, ensuring premium quality spices.",
+   "usageInstructions": "Sprinkle Catch Black Pepper powder as a spicy seasoning to your soup, salad, or fruit. Storage Instructions: Keep in a cool & dry place. |",
+   "manufacturerName": "DS SPICECO PVT LTD B - 6 17 18 19 SECTOR - 3 NOIDA 201301 UP",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016011003518"
+  }
  },
  {
   "title": "Chat Masala Sprinkler",
@@ -1601,7 +1874,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/266585_9-catch-sprinklers-chat-masala.jpg"
-    }
+    },
+    "barcode": "8901192205100"
    },
    {
     "title": "50g",
@@ -1638,7 +1912,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/266585-8_4-catch-sprinklers-chat-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experiences with Catch Chat Masala Sprinkler, a blend of premium spices sourced from India's finest spice-growing regions. This versatile seasoning can add an irresistible twist to your salads, snacks, and even fruits, tantalizing your taste buds with its robust flavour and aroma. Packaged in an innovative HIPS container that keeps the spices moisture-free and easy to use, Catch Chat Masala is the secret weapon that can transform simple meals into extraordinary gastronomic delights. Whether you're heading out on a picnic or a train journey, this masala is the perfect companion, allowing you to elevate the flavour of your dishes and turn them into unforgettable experiences. From kids to adults, this blend of herbs and spices is sure to be a hit, invigorating your taste buds and leaving you craving more.",
+   "ingredients": "Iodised Salt, Dried Mango Slices, Cucumis, Edible Common Salt, Cumin Whole, Mint, Ajowan, Pepper Black Whole, Plantation White Sugar, Large Cardamom Whole, Chillies and Capsicum Whole, Coriander Whole, Cassia Whole, Long Pepper, Cloves Whole, Cardamom Whole, Asafoetida, Citric Acid (INS No. 330), Ammonium Chloride (INS No. 510)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1g",
+    "Energy, kcal": "202",
+    "Protein, g": "6.8",
+    "Total Carbohydrate, g": "30",
+    "Total Sugars, g": "8",
+    "Added Sugars, g": "1.9",
+    "Total Fat, g": "6.1",
+    "Trans Fat, g": "0",
+    "Saturated Fat, g": "0.5",
+    "Cholesterol, mg": "0",
+    "Sodium, g": "17.95"
+   },
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "DS Spiceco Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Peri Peri Sprinkler",
@@ -1682,7 +1978,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40285102-8_2-catch-peri-peri-sprinkler-adds-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your meals with the Catch Peri Peri Masala Sprinkler, a flavourful seasoning that adds a burst of tangy, savoury goodness to any dish. Crafted with the choicest spices, this versatile sprinkler can spice up your salads, snacks, and even your favourite comfort foods like french fries, nuggets, and pizza. With its convenient and easy-to-use design, you can effortlessly add a touch of Peri Peri magic to your culinary creations. Enjoy the perfect balance of flavours, with no fillers and only high-quality ingredients. Elevate your dining experience and say goodbye to bland meals with the Catch Peri Peri Masala Sprinkler.",
+   "ingredients": "Chillies And Capsicum Whole, Iodised Salt, Dehydrated Garlic Whole, Plantation White Sugar, Dried Onion, Pepper Black Whole, Tamarind Powder, Herbs, Instant Dry Yeast, Citric Acid (INS 330), Silicon Dioxide (INS 551), Disodium 5'-Ribonucleotides (INS 635), Spice Oleoresins, Monosodium Glutamate (INS 621), Refined Sunflower Oil, Nature Identical Flavouring Substances (Lemon).\nSpice Content: 62%\nSalt Content: 20% (Approx.)",
+   "nutritionalInfo": {
+    "Per": "100 g",
+    "Serving Size": "1 g",
+    "Energy": "307 kcal",
+    "Protein": "11.9 g",
+    "Total Carbohydrate": "52 g",
+    "Total Sugars": "25 g",
+    "Added Sugars": "9 g",
+    "Total Fat": "5.7 g",
+    "Trans Fat": "0 g",
+    "Saturated Fat": "0.8 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "8.81 g"
+   },
+   "storageInstructions": "Keep in a clean, cool and dry place away from sunlight\nOnce opened, store the contents in an airtight container",
+   "manufacturerName": "DS Spiceco Pvt Ltd.DS SPICECO PVT LTD. Plot No 117",
+   "fssaiLicense": "10021051000106",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Red Chilli Flakes Sprinkler",
@@ -1717,7 +2035,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359275-5_1-catch-red-chilli-flakes-sprinkler.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Red Chilli Flakes come in an easy-to-dispense bottle, which allows you to add a finishing touch to cooked dishes. You can add to the spice level and crunchiness of your soups, pizzas, pastas and gravies with red chilli flakes. Delight your family by adding flakes to already prepared dishes like dal, khichdi, etc.",
+   "ingredients": "Chillies & Capsicum",
+   "nutritionalInfo": {
+    "Energy": "373.02 kcal",
+    "Protein": "12.80 g",
+    "Total Carbohydrate": "65.65 g",
+    "Total Sugars": "0.0 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "6.58 g",
+    "Trans Fat": "0.0 g",
+    "Saturated Fat": "1.90 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "20 mg"
+   },
+   "manufacturerName": "DS Spiceco Pvt. Ltd. Plot No. 117",
+   "fssaiLicense": "10021051000106",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jeeravan Poha Masala Sprinkler",
@@ -1752,7 +2089,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359273-5_1-catch-jeeravanpoha-masala-sprinkler.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Jeeravan/Poha Masala is a flavorful spice blend crafted to enhance the taste of your everyday dishes. Made with premium-quality spices like cumin, black salt, dried mango slices, and nutmeg, this versatile masala adds a deliciously tangy and spicy twist to poha, salads, and snacks. Perfectly balanced to deliver authentic Indori-style flavour.",
+   "ingredients": "Iodised Salt, Chillies and Capsicum, Coriander, Cumin, Refined Sugar, Turmeric, Dried Mango Slices, Black Salt, Cassia, Black Pepper, Dried Ginger, Acidity Regulator (INS 330), Large Cardamom, Cloves, Cardamom, Fennel, Bay Leaves, Rock Salt, Star Anise, Long Pepper, Ajwain, Compounded Asafoetida, Nutmeg.\nAllergen - Contains Wheat (Gluten)",
+   "nutritionalInfo": {
+    "Energy": "248.39 kcal",
+    "Protein": "7.04 g",
+    "Total Carbohydrate": "40.59 g",
+    "Total Sugars": "7.27 g",
+    "Added Sugars": "6.50 g",
+    "Total Fat": "6.43 g",
+    "Trans Fat": "0.0 g",
+    "Saturated Fat": "1.92 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "16,015.19 mg"
+   },
+   "manufacturerName": "DS Spiceco Pvt. Ltd. Plot No. 117",
+   "fssaiLicense": "10021051000106",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Italian Combo Oregano & Chilli Flakes",
@@ -1784,7 +2140,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326180-4_2-catch-italian-combo-oregano-red-chilli-flakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This Italian Combo is a combo of Oregano and chilli flakes to add crunch and flavour to your dishes. They offer innovative options to individuals who have a continuous urge to experiment with food and want to create variations of existing recipes. You can add a dash of garlic and crunchiness to your soups, pizzas, pastas, gravies and other dishes with garlic flakes. Delight your family by adding to already prepared dishes like dal, khichdi, etc\n5 Sachets each of Oregano and Chilli Flakes.",
+   "ingredients": "Oregano\nChilli Flakes",
+   "manufacturerName": "DS SPICECO PVT. LTD Plot No. 117",
+   "fssaiLicense": "10021051000106",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Table Salt Sprinkler",
@@ -1837,7 +2200,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/266592-8_3-catch-sprinklers-iodised-table-salt.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Catch Sprinklers Iodised Table Salt. Encased in a moisture-proof HIPS container, this iodised salt ensures effortless dispensing and keeps your salt fresh and dry, even in humid conditions. Infused with the essential nutrients of iodine, this salt helps regulate your heart rate and blood pressure, while also aiding in the burning of excess fat deposits that may contribute to heart disease. Conveniently placed on your dining table, this easy-to-use salt can be sprinkled over your salads, soups, and savouries, eliminating the hassle of refilling your salt-shaker. Explore Catch's diverse range of spices and condiments, from Black Salt and Pepper to Jeera and Chaat Masala, for a truly delightful culinary journey.",
+   "ingredients": "1. Free flow\n2. HIPS Container keeps the condiment moisture-free\n3. Easy dispensing",
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Pink Rock Salt Sprinkler",
@@ -1878,7 +2249,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30006774-7_2-catch-sprinklers-sendha-namak.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Sprinklers Sendha Namak is a finely ground can of Himalayan Rock Salt to elevate the flavours of your savoury dishes. In Ayurveda it is considered as the healthiest form of salt. Rock salt, commonly known as \"Sendha Namak\", is the purest type of salt which is devoid of any chemical components and environmental pollutants. As a healthier alternative, Sendha Namak will leave your dishes tasting delectable with a punch of sharp flavours. With additional minerals and trace elements, this pink salt is thought to be much more natural than table salt. Use it in your sauces and marinades or replace your regular salt to see the difference.",
+   "ingredients": "1. Free flow\n2. HIPS Container keeps the condiment moisture-free\n3. Easy dispensing",
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Pink Rock Salt Grinder",
@@ -1894,7 +2273,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40153419_4-catch-pink-rock-salt-grinder.jpg"
-    }
+    },
+    "barcode": "8901192209757"
    }
   ],
   "images": [
@@ -1922,7 +2302,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153419-8_1-catch-pink-rock-salt-grinder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Catch Pink Rock Salt Grinder comes in a user-friendly glass grinder for those who love to freshly grind their condiments. As a healthier alternative, Himalayan Pink salt will leave your dishes tasting delectable with a punch of sharp flavours. Though mined like rock salt, Himalayan pink salt is technically a sea salt. Salt is an essential nutrient required for many biological processes that has seasoned our dinners for thousands of years. With additional minerals and trace elements, this pink salt is thought to be much more natural than table salt. Use it in your sauces and marinades or replace your regular salt to see the difference. Explore the vibrant range of spices and condiments offered by Catch from Black Salt, Pepper, Jeera to Chaat Masala and more, only on Big Basket.",
+   "ingredients": "1. Free flow\n2. HIPS Container keeps the condiment moisture-free\n3. Easy dispensing",
+   "storageInstructions": "Store in a cool, dry place\nOnce opened, transfer to an airtight container",
+   "manufacturerName": "DS SPICECO PVT. LTD",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Black Salt Sprinkler",
@@ -1966,7 +2354,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100005089-8_1-catch-sprinklers-black-salt.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Black Salt is known for its tangy taste and is an essential condiment in soups, salads, snacks, and fruits. Catch Black Salt Sprinkler comes in a unique HIPS container that helps keep the spice moisture-free and makes it easy to use. Give your food a personal touch with Catch Sprinklers. Catch spices are packed using state-of-the-art equipment, ensuring minimal human contact. Catch Black Salt is available in a 200g Sprinkler pack that can be easily purchased online. Catch spices do not have any additional fillers, ensuring premium quality spice.",
+   "usageInstructions": "Sprinkle Catch Black Salt as a seasoning on your soup, salad, or fruit. Storage Instructions: Keep in a cool & dry place.",
+   "manufacturerName": "DS Spiceco Pvt Ltd B - 6 17 18 19 Sector - 3 Noida 201301 Up ",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10016011003518"
+  }
  },
  {
   "title": "Ginger Garlic Paste",
@@ -2019,7 +2414,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189260-8_1-catch-ginger-garlic-paste.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ginger Garlic Paste is one of the essential ingredients in Indian cuisine. It adds a piquant taste to the dishes. Why not save yourself the never-ending task of peeling ginger and garlic? Use Catch Ginger Garlic Paste, which will enhance the flavour of your dishes, giving them a characteristic bite. Make your food aromatic and easily digestible at the same time. Catch ka Koi Match Nahi. Storage Instruction: Keep in a cool & dry place.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "64.68 kcal",
+    "Protein": "1.86 g",
+    "Carbohydrate": "13.95 g",
+    "Sugar": "6.42 g",
+    "Added Sugar": "0.00 g",
+    "Fat": "0.16 g"
+   },
+   "manufacturerName": "DS Spiceco Pvt. Ltd. B - 6 17 18 19 Sector - 3 Gautham Buddha Nagar Noida 201301 UP",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015051001304"
+  }
  },
  {
   "title": "Ginger Paste",
@@ -2035,7 +2445,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40196595_2-catch-ginger-paste.jpg"
-    }
+    },
+    "barcode": "8901192205278"
    }
   ],
   "images": [
@@ -2063,7 +2474,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196595-8_1-catch-ginger-paste.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Catch Ginger Paste, the ultimate solution for all your ginger needs. Made from freshly ground ginger, this paste delivers a distinct and delicious flavour that will elevate your culinary creations. Featuring a thick, grainy texture, Catch Ginger Paste ensures a perfect consistency for your gravies and sauces, cutting down on preparation time and letting you cook sumptuous meals with ease. Packed hygienically using state-of-the-art equipment, this ginger paste contains no added fillers, ensuring a pure and authentic taste. The easy-to-use, easy-to-store spouted pack makes it a convenient addition to your kitchen, no more hassle of peeling and grating. Catch Ginger Paste is the perfect way to add a burst of fresh, aromatic ginger flavour to your dishes, elevating your cooking experience.",
+   "ingredients": "Ginger(43%),Water, Iodised Salt, Acidity Regulator, Turmeric",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy, kcal": "50.0",
+    "Protein, g": "1.0",
+    "Carbohydrate, g": "11.1",
+    "Sugar, g": "0.0",
+    "Fat, g": "0.2"
+   },
+   "storageInstructions": "Keep in a cool & dry place",
+   "manufacturerName": "Kapil Anand Agro Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051002825"
+  }
  },
  {
   "title": "Garlic Paste",
@@ -2101,7 +2528,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196596-6_1-catch-garlic-paste.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Catch Garlic Paste, the perfect blend of authentic flavour and convenience. This aromatic paste adds the precise flavour that makes a variety of Indian, Chinese, and continental dishes truly divine. Crafted with the finest ingredients and no added fillers, Catch Lahasun Paste delivers the genuine taste and goodness of garlic. With its thick, grainy texture, this ready-to-use paste can be easily incorporated into hot oil along with whole spices to create sumptuous gravies. Versatile and time-saving, Catch Garlic Paste is the ideal companion for cooks of all levels, allowing you to transform your meals with an explosion of flavours. Embrace the authentic and pure taste of Catch Lahasun Paste and elevate your culinary creations to new heights.",
+   "ingredients": "Garlic(80.5%),Water,Iodised Salt,Acidity Regulator,Stabilizer,Preservatives",
+   "storageInstructions": "Store in a cool and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Kapil Anand Agro Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051002825"
+  }
  },
  {
   "title": "Schezwan Paste",
@@ -2145,6 +2580,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40285103-8_1-catch-schezwan-paste-adds-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your Indo-Chinese culinary experience with Catch Schezwan Paste. This versatile, spicy and flavourful chutney is crafted with high-quality ingredients like red chilies, garlic and aromatic spices to deliver an authentic, intense flavour. Whether you're whipping up a delectable Schezwan fried rice, sizzling noodles or tantalizing spring rolls, this paste is a time-saving solution that adds a fiery kick and bold, savoury notes to your dishes. Conveniently packaged, it can be used as a dip, spread or directly in cooking to achieve the perfect consistency for gravies and other Chinese delicacies. Elevate your home-cooked meals with the bold, spicy and tangy taste of Catch Schezwan Paste.",
+   "ingredients": "Water, Sugar, Chillies and Capsicum Whole, Iodised Salt, Onion Paste, Raw Garlic, Soy Sauce, Sunflower oil, Tomato Paste, Acetic Acid (INS No. 260), Modified Starch (INS No. 1400), Raw Ginger, Seasoning, Xanthan Gum (INS No. 415), Pepper Black Whole, Pepper White Whole, Spice Extract, Sodium Benzoate (INS No. 211), Citric Acid (INS No. 330), Disodium 5' - Ribonucleotides (INS No. 635), Silicon Di Oxide (INS No. 551)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "2g",
+    "Energy, kcal": "93",
+    "Protein, g": "2.7",
+    "Total Carbohydrate, g": "19",
+    "Total Sugars, g": "11.8",
+    "Added Sugars, g": "10.2",
+    "Total Fat, g": "0.65",
+    "Trans Fat, g": "0",
+    "Saturated Fat, g": "0.3",
+    "Cholesterol, mg": "0",
+    "Sodium, mg": "1700"
+   },
+   "storageInstructions": "Keep in a cool & dry place",
+   "manufacturerName": "DS Spiceco Pvt Ltd.Tapovan Foods Pvt Ltd",
+   "fssaiLicense": "10013051000845",
+   "countryOfOrigin": "India"
+  }
  }
 ]

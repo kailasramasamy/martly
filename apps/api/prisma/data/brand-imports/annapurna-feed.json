@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/170695_6-annapurna-atta-farm-fresh-whole-wheat.jpg"
-    }
+    },
+    "barcode": "8906170470013"
    },
    {
     "title": "1kg",
@@ -47,6 +48,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019059_4-annapurna-farm-fresh-whole-wheat-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Annapurna Atta is made from the\nchoicest of grains brought fresh from the farms, cleaned three times and ground\nand packed in the most clean conditions to give you soft, appetising rotis that\nsimply melt in the mouth. It absorbs additional water while kneading, makes\nrotis stay smooth for a longer time and contains the full nutrition of minerals\nand vitamins of wheat grains.",
+   "ingredients": "Whole Wheat Atta",
+   "nutritionalInfo": {
+    "Energy": "350 kcal",
+    "Protein": "11 g",
+    "Carbohydrate": "76.4 g",
+    "Total Sugars": "7.1 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "9 g",
+    "Total Fat": "2 g",
+    "Saturated Fat": "0.4 g",
+    "Trans Fat": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "*Store under cool and dry conditions\n*Free from ants and insects",
+   "manufacturerName": "Hindustan",
+   "fssaiLicense": "10013022001897",
+   "countryOfOrigin": "India"
+  }
  }
 ]

@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/266408_1-lijjat-papad-punjabi-masala.jpg"
-    }
+    },
+    "barcode": "8901441017010"
    },
    {
     "title": "250g",
@@ -50,6 +51,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/220945_5-lijjat-papad-punjabi-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Lijjat Papad Punjabi Masala offers a burst of authentic Punjabi flavour with each bite. Made from high-quality ingredients, these papads are crispy, spicy, and perfect as a snack or accompaniment to meals. Enjoy the traditional taste of carefully crafted spices in every crunchy bite.",
+   "ingredients": "0",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Serving Size": "100 gms",
+    "Calories": "326",
+    "Calories from Fat": "6",
+    "Total Fat": "0.66 g",
+    "Saturated Fat": "< 0.5 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1390 mg",
+    "Total Carbohydrate": "59.02 g",
+    "Dietary Fibre": "1.22 g",
+    "Sugars": "0 g",
+    "Protein": "20.94 g",
+    "Iron": "4.6 mg",
+    "Calcium": "0 mg",
+    "Vitamin A": "NIL",
+    "Vitamin C": "NIL",
+    "% Daily Value": "Percent daily values are based on a 2,000 calorie diet."
+   },
+   "countryOfOrigin": "India"
+  }
  }
 ]

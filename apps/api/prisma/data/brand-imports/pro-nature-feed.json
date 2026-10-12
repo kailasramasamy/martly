@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40302603_2-pro-nature-classic-gir-a2-cow-ghee-bilona-method.jpg"
-    }
+    },
+    "barcode": "8904117903723"
    }
   ],
   "images": [
@@ -32,7 +33,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40302603-5_2-pro-nature-classic-gir-a2-cow-ghee-bilona-method.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "It is Bilona Ghee which is rich in nutrients. The health benefits of A2 Cow Ghee to our bodies and mind are indisputable. The cows, which are fed chemical-free grass, produce milk high in CLA (Conjugated Linoleic Acid), an antioxidant and essential fatty acid that exhibits anti-carcinogenic and other beneficial physiological effects. Unsalted, pure and fresh, Pro Nature Gir A2 Cow Ghee is produced from the traditional curd churning method. Now elevate your lifestyle with healthy dairy products from Pro Nature. We are well known to value the consumer's and their family’s health. Our products retain their original taste and aroma and have no added colours or flavours. To know more, explore our whole range of products! Benefits Gir A2 Cow Ghee. Pure and natural. Bilona ghee. Produced from curd churning method. Healthy and classic. Rich in nutrition. A proud India-based product. Hygienically processed and packed.",
+   "ingredients": "Gir A2 Cow Milk Fat",
+   "usageInstructions": "Ghee is incredibly versatile. You can use it to saute, roast, and even fry. To roast vegetables or make an omelette, cow ghee adds a great taste and health benefits.",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd",
+   "fssaiLicense": "10020043003132",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Pressed Groundnut Oil",
@@ -48,7 +57,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40129348_5-pro-nature-oil-groundnut.jpg"
-    }
+    },
+    "barcode": "8904117900326"
    },
    {
     "title": "500ml",
@@ -79,7 +89,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137363_4-pro-nature-groundnut-oil-cold-pressed.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the perfect blend of flavour and nutrition with Pro Nature's Organic Groundnut Oil, your go-to choice for a healthy lifestyle. This pure and healthy cold-pressed groundnut oil is rich in essential nutrients, vitamins, and polyunsaturated fats, making it an excellent addition to your daily routine. Clinically proven to lower cholesterol and promote good hormonal activity, this organic oil retains all the beneficial properties of raw peanut seeds. Versatile and great for deep frying, this oil offers a delightful taste and texture that will elevate your cooking. Embrace a healthier future with Pro Nature's Organic Groundnut Oil, the perfect companion for a vibrant and nourishing lifestyle.",
+   "ingredients": "Organic Groundnut Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "10g",
+    "Energy (Kcal)": "900.0 kcal",
+    "Total fat (g)": "100.0 g",
+    "Saturated fat (g)": "19.4 g",
+    "Monounsaturated fatty acid (g)": "55.6 g",
+    "Polyunsaturated fatty acid (g)": "25.0 g",
+    "Omega-6 fatty acid (mg)": "25002 mg",
+    "Sodium (mg)": "1.5 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Pressed Mustard Oil",
@@ -95,7 +123,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40129347_5-pro-nature-oil-mustard.jpg"
-    }
+    },
+    "barcode": "8904117900319"
    },
    {
     "title": "500ml",
@@ -126,7 +155,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137362_5-pro-nature-mustard-oil-cold-pressed.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Mustard Oil (cold pressed) is extracted by pressing mustard seeds without using refining agents. It contains fatty acids, anti-oxidants and nutrients that makes it the healthiest oil for cooking.",
+   "ingredients": "Organic Mustard Oil",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Calories": "884kcal",
+    "Polyunsaturated Fat": "21.0g",
+    "Monounsaturated": "59.0g",
+    "Saturated Fat": "12.0g",
+    "Trans Fat": "0g",
+    "Protein": "0.0g",
+    "Cholestrol": "0.0g",
+    "Vitamins": "0.0g"
+   },
+   "storageInstructions": "*Keep in a cool, dry, and hygienic place",
+   "manufacturerName": "Amaara Foods & Wellness (P) Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cold Pressed Sunflower Oil",
@@ -161,7 +208,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137364-5_2-pro-nature-sunflower-oil-cold-pressed.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the pure, organic goodness of Pro Natures Sunflower Oil. This cold-pressed, versatile oil is perfect for healthy cooking and nourishing your skin. Crafted from the finest sunflower seeds, it retains the natural flavour and nutritional benefits of this beloved ingredient. Enjoy the rich, golden hue and silky texture as you use this oil for frying, sautéing, or as a flavourful addition to your favourite dishes. Brimming with essential vitamins and antioxidants, this sunflower oil is a healthier alternative that will elevate your culinary creations. Whether you're looking to add a delicious touch to your meals or nourish your skin with its emollient properties, Pro Natures Sunflower Oil is the perfect choice for a truly satisfying and wholesome experience.",
+   "ingredients": "Orgaic Sunflower oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "10g",
+    "Energy (Kcal)": "893.0 kcal",
+    "Total fat (g)": "99.2 g",
+    "Saturated fat (g)": "11.0 g",
+    "Monounsaturated fatty acid (g)": "24.9 g",
+    "Polyunsaturated fatty acid (g)": "63.8 g",
+    "Omega-6 fatty acid (mg)": "63700 mg",
+    "Sodium (mg)": "0.8 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place"
+  }
  },
  {
   "title": "Classic Soya Chunks",
@@ -196,7 +259,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40302598-5_2-pro-nature-classic-soya-chunkssoya-badi-protein-rich.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature is well known to value the consumers and their family’s health. Our products retain their original taste and aroma and have no added colours or flavours. Pro Nature Classic Soya Chunks are made from Soya flour and are rich in protein that helps in muscle growth. It uses minimum oil which makes it healthier to consume. Our Soya Chunks also have 9 amino acids that are essential for human growth. Being a pro-women organization, our production workforce largely comprises women and we support women-driven initiatives. Make the best use of Soya Chunks/ Soya Badi and to know more about us, explore our whole range of products! Benefits Soya Chunks. Rich in protein. Contains 9 essential amino acids. Helps in muscle growth. Vegetarian source of protein. Naturally gluten-free. Made from soya flour.",
+   "ingredients": "Defatted Soya Flour",
+   "usageInstructions": "Soaking the soya chunks in hot water and adding them to your fried rice and salads are the easiest ways to include them in your diet. You can also roast them and make soya chap.",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd",
+   "fssaiLicense": "10020043003132",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Toor Dal",
@@ -212,7 +283,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000042_6-pro-nature-organic-dal-tur.jpg"
-    }
+    },
+    "barcode": "8904117900043"
    },
    {
     "title": "1kg",
@@ -243,7 +315,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472772_7-pro-nature-organic-dal-tur.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Tur Dal is an unpolished, organic and nutritious choice for your cooking needs. It is rich in fibre and enhances the flavour of Indian dishes. This trustworthy brand is certified and packed with health benefits.",
+   "ingredients": "Organic Tur Dal (Unpolished)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "340 kcal",
+    "Total Fat (g)": "2.13 g",
+    "Protein (g)": "21.28 g",
+    "Saturated Fat (g)": "0 g",
+    "Carbohydrates (g)": "61.7 g",
+    "Sodium (mg)": "43 mg",
+    "Total Sugar (g)": "2.13 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place"
+  }
  },
  {
   "title": "Organic Chana Dal",
@@ -278,7 +365,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472768-5_2-pro-nature-organic-channa-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the versatility and nutritional benefits of Pro Nature Organic Channa Dal, a pulse that's perfect for everyday Indian cooking. This organic pulse is rich in protein and fibre, making it a staple in balanced diets as it supports muscle health and aids digestion. With a deliciously nutty flavour, Pro Nature Organic Channa Dal can be added to a variety of dishes, from curries and soups to fritters, adding a wholesome twist to your meals. Sourced naturally without chemicals, each grain delivers purity and natural taste, perfect for those seeking a healthy, organic option for their kitchen.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "380",
+    "Total Fat (g)": "6",
+    "Protein (g)": "22",
+    "Saturated Fat (g)": "2",
+    "Carbohydrates (g)": "60",
+    "Sodium (mg)": "50",
+    "Total Sugar (g)": "12"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Organic Masoor Dal",
@@ -294,7 +395,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000033_5-pro-nature-organic-dal-masoor.jpg"
-    }
+    },
+    "barcode": "8904117900869"
    }
   ],
   "images": [
@@ -313,7 +415,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000033-5_1-pro-nature-organic-dal-masoor.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Looking to add more plant-based protein to your meals? Pro Nature Organic Masoor Dal is the perfect option. Ideal for a variety of curries, soups or stews, this dal is perfect for anyone looking for a nutritious and flavourful food. Grab it now for a wholesome dining experience! Rich in Protein: Masoor Dal is a great source of plant-based protein, making it an essential part of a vegetarian or vegan diet. Easy to Cook: This split masoor dal cooks quickly, making it a perfect option for busy individuals or those looking to prepare a fast, healthy meal. Supports Digestion: Packed with fibre, this dal promotes healthy digestion and supports gut health, making it a great choice for your meals.",
+   "ingredients": "Organic Masoor Dal",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "380 kcal",
+    "Total Fat (g)": "6 g",
+    "Protein (g)": "22 g",
+    "Saturated Fat (g)": "2 g",
+    "Carbohydrates (g)": "60 g",
+    "Sodium (mg)": "50 mg",
+    "Total Sugar (g)": "12 g"
+   },
+   "storageInstructions": "* Store under cool and dry conditions"
+  }
  },
  {
   "title": "Organic Moong Dal Yellow",
@@ -348,7 +465,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000035-5_2-pro-nature-organic-moong-yellow.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Moong - Yellow is a high-quality organic moong product that is free from any genetically modified organisms. It is sourced from trusted organic farms and processed in a hygienic facility to ensure purity and freshness. This organic moong is a versatile ingredient that can be used in a variety of Indian dishes, from curries to dals. It is a good source of protein, fibre, and other essential nutrients, making it a healthy choice for your meals.",
+   "ingredients": "Organic Moong",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "343",
+    "Total Fat (g)": "1.43",
+    "Protein (g)": "22.86",
+    "Saturated Fat (g)": "0",
+    "Carbohydrates (g)": "62.86",
+    "Sodium (mg)": "0",
+    "Total Sugar (g)": "5.71"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Organic Green Moong Whole",
@@ -364,7 +496,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100472770_8-pro-nature-organic-moong-green-whole.jpg"
-    }
+    },
+    "barcode": "8904117900067"
    }
   ],
   "images": [
@@ -383,7 +516,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472770-5_2-pro-nature-organic-moong-green-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional quality and versatility of Pro Nature Organic Moong - Green (Whole), a premium-quality organic whole moong that is grown using sustainable farming methods without the use of pesticides or harmful chemicals. This highly nutritious legume is an excellent source of plant-based protein, making it a perfect addition to any vegetarian or vegan diet. Packed with essential vitamins, minerals and antioxidants, Pro Nature Organic Moong Green Whole supports overall health and well-being. The beans are also high in fibre, aiding digestion and helping to maintain a healthy digestive system. With its light texture and mild flavour, this versatile ingredient can be used in a variety of delectable dishes such as soups, dals, curries and salads, or even sprouted for added nutritional benefits. Certified organic and eco-friendly, Pro Nature Organic Moong Green Whole is a conscious choice that contributes to a sustainable food system, ensuring a clean, natural product for you and your family.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "356",
+    "Total Fat (g)": "0",
+    "Protein (g)": "24.44",
+    "Saturated Fat (g)": "0",
+    "Carbohydrates (g)": "62.22",
+    "Sodium (mg)": "11",
+    "Total Sugar (g)": "6.67"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture"
+  }
  },
  {
   "title": "Organic Urad Dal White Split",
@@ -434,7 +581,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000047_6-pro-nature-organic-urad-white-whole.jpg"
-    }
+    },
+    "barcode": "8904117900463"
    },
    {
     "title": "1kg",
@@ -465,7 +613,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472774_7-pro-nature-organic-urad-white-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Urad White Whole is a premium quality legume, carefully grown through organic farming practices. It is packed with essential nutrients like protein, fibre and vitamins, making it an excellent addition to your meals. Enjoy a wholesome, healthy diet with this versatile ingredient, perfect for a variety of traditional dishes. Organic and Pure: Sourced from certified organic farms, ensuring a natural, chemical-free product. High in Nutrients: Packed with protein, fibre and vitamins for a nourishing addition to your diet. Versatile Usage: Ideal for dals, soups and other traditional recipes, offering rich flavour and texture.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "180",
+    "Total Fat (g)": "0",
+    "Protein (g)": "11.43",
+    "Saturated Fat (g)": "0",
+    "Carbohydrates (g)": "40",
+    "Sodium (mg)": "26",
+    "Total Sugar (g)": "0"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Organic Rajma Chitra",
@@ -481,7 +643,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000037_6-pro-nature-organic-rajma.jpg"
-    }
+    },
+    "barcode": "8904117900661"
    }
   ],
   "images": [
@@ -500,7 +663,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000037-5_1-pro-nature-organic-rajma.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the natural goodness of Organic Rajma (Chithra), a staple in traditional Indian cuisine. Grown without harmful chemicals, these beans bring authentic flavour and wholesome nutrition to your everyday meals. Enjoy the perfect blend of taste and health in every bite, adding depth to your favourite curries and stews. Organic Farming Practices: Sourced from certified organic farms, ensuring no use of harmful pesticides or fertilisers, promoting healthier eating and sustainable agriculture. Rich in Protein and Fibre: Packed with essential nutrients like protein and dietary fibre, this rajma variety helps support digestion, energy levels and overall well-being. Versatile in Cooking: Perfect for creating a variety of delicious dishes such as rajma masala, soups and salads, bringing authentic taste to your kitchen with ease.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "343",
+    "Total Fat (g)": "0",
+    "Protein (g)": "22.9",
+    "Saturated Fat (g)": "0",
+    "Carbohydrates (g)": "60",
+    "Sodium (mg)": "0",
+    "Total Sugar (g)": "2.86",
+    "Total Fibre (g)": "14.3"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Organic Kabuli Chana",
@@ -535,7 +713,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000032-5_2-pro-nature-organic-kabuli-channa.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic taste of India with Pro Nature's Organic Kabuli Channa, a versatile and nutritious superfood that is perfect for a variety of Indian dishes. This organic channa is free from any GMO ingredients, ensuring a pure and authentic flavour that captures the true essence of Indian cuisine. With its rich, robust taste and impressive nutritional profile, this Kabuli channa is the ideal ingredient for curries, salads, and dips, allowing you to create delicious and wholesome meals that are bursting with flavour. Sourced from high-quality, sustainable sources, this organic superfood is a versatile and nutritious addition to any kitchen, perfect for adding depth and authenticity to your favourite Indian recipes.",
+   "ingredients": "Organic Kabuli Channa",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "372",
+    "Total Fat (g)": "5.81",
+    "Protein (g)": "20.93",
+    "Saturated Fat (g)": "0",
+    "Carbohydrates (g)": "62.8",
+    "Sodium (mg)": "28",
+    "Total Sugar (g)": "11.63",
+    "Total Fibre (g)": "11.6"
+   },
+   "storageInstructions": "Storage as per packaging"
+  }
  },
  {
   "title": "Organic Kala Chana",
@@ -570,7 +764,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472769-5_2-pro-nature-organic-kala-channa.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional nutritional benefits of Pro Nature Organic Kala Channa (Black Chickpeas), a premium legume sourced from certified organic farms. This versatile and wholesome ingredient is a true superfood, packed with plant-based protein to support muscle building and overall bodily functions. Rich in fibre, it aids digestion, promotes gut health, and helps manage cholesterol levels. Enjoy the consistency in taste and aroma, as well as the superior quality and hygienically packed nature of this product. Reimagine your meals with the Pro Nature Organic Kala Chana, whether in salads, curries, soups or even as a nutritious snack. Indulge in a natural, healthy choice that is free from harmful chemicals and pesticides, ensuring a pure and wholesome experience.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "363 kcal",
+    "Total Fat (g)": "5.71 g",
+    "Protein (g)": "20 g",
+    "Saturated Fat (g)": "0 g",
+    "Carbohydrates (g)": "60 g",
+    "Sodium (mg)": "23 mg",
+    "Total Sugar (g)": "11.43 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture"
+  }
  },
  {
   "title": "Organic Panchratna Dal",
@@ -605,7 +813,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137356-5_1-pro-nature-panchratna-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional taste and quality of Pro Nature Panchratna dal, a certified organic blend of five premium lentils. Crafted from superior-quality grains, this gluten-free dal boasts a consistently uniform grain sise for optimal cooking and a delightful, protein-rich flavour. Minimally processed to preserve the natural proteins, this nutritious blend combines the goodness of multiple lentils to deliver a balanced, protein-packed meal option. Perfect for everyday cooking, Pro Nature Panchratna dal is ideal for creating flavourful dals, soups, and curries that will delight your senses and nourish your body with its organic, pesticide-free goodness.",
+   "ingredients": "Panchratna Dal",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "282.4",
+    "Total Fat (g)": "3.546",
+    "Protein (g)": "17.086",
+    "Saturated Fat (g)": "1.104",
+    "Carbohydrates (g)": "47.43",
+    "Sodium (mg)": "28",
+    "Total Sugar (g)": "5.942"
+   },
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Roasted Chana Dal",
@@ -621,7 +846,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40005008_6-pro-nature-organic-roasted-channa-dal.jpg"
-    }
+    },
+    "barcode": "8904117900357"
    },
    {
     "title": "200g",
@@ -652,7 +878,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005009_9-pro-nature-organic-roasted-channa-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Roasted Chana Dal is a nutritious and delicious snack made from high-quality organic chana dal. It is roasted to perfection, giving it a crunchy texture and a rich, savoury flavour. This product is organic, with no genetically modified ingredients used in its production. It is a healthy and satisfying snack that can be enjoyed on its own or as an accompaniment to various dishes.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "191 kcal",
+    "Total Fat (g)": "5.9 g",
+    "Protein (g)": "8.7 g",
+    "Saturated Fat (g)": "0.7 g",
+    "Carbohydrates (g)": "27.2 g",
+    "Sodium (mg)": "36 mg",
+    "Total Sugar (g)": "4.9 g",
+    "Total Fibre (g)": "7.5 g"
+   },
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Raw Peanuts",
@@ -668,7 +911,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002008_6-pro-nature-organic-raw-peanut.jpg"
-    }
+    },
+    "barcode": "8904117900418"
    }
   ],
   "images": [
@@ -687,7 +931,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002008-5_1-pro-nature-organic-raw-peanut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the goodness of Pro Nature Organic Raw Peanuts, a delightful snack and versatile ingredient that supports a balanced diet. Sourced from India, these fresh and wholesome peanuts are packed with protein, healthy fats, and essential vitamins. Enjoy them as a nutritious on-the-go snack or incorporate them into your culinary creations. Beyond their delectable flavour and texture, these peanuts also offer cardiovascular benefits, helping to reduce LDL (bad) cholesterol and increase HDL (good) cholesterol levels, promoting a healthier heart. Whether you choose to bake, roast, or boil them, Pro Nature Organic Raw Peanuts are a versatile and nourishing addition to your kitchen.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "570 kcal",
+    "Total Fat (g)": "49.6 g",
+    "Protein (g)": "26.2 g",
+    "Saturated Fat (g)": "7.1 g",
+    "Carbohydrates (g)": "15.8 g",
+    "Sodium (mg)": "22 mg",
+    "Total Sugar (g)": "0 g",
+    "Total Fibre (g)": "9.5 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Organic White Sesame Seeds",
@@ -722,7 +981,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000039-5_1-pro-nature-organic-sesame.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Sesame (White, Natural) 200g | 7.05oz. Experience the rich, nutty flavour of Pro Nature Organic Sesame Seeds! Perfect for adding texture and nutrients to your dishes, these seeds are ideal for health-conscious food lovers. Enjoy the benefits of organic sesame in your daily meals. Try them today for an enhanced culinary experience! Rich in Nutrients: Pro Nature sesame seeds are packed with essential vitamins and minerals like calcium, magnesium and iron. Versatile Ingredient: These seeds can be used in a variety of dishes, from salads and snacks to smoothies and baking. Supports Bone Health: Thanks to their high calcium content, these sesame seeds are great for maintaining strong bones and overall skeletal health.",
+   "ingredients": "Organic Sesame Seeds",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "573",
+    "Total Fat (g)": "49.7",
+    "Protein (g)": "17.7",
+    "Saturated Fat (g)": "6.96",
+    "Carbohydrates (g)": "23.4",
+    "Sodium (mg)": "11",
+    "Total Sugar (g)": "0.3"
+   },
+   "storageInstructions": "Storage as per packaging"
+  }
  },
  {
   "title": "Organic Flaxseed",
@@ -757,7 +1031,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137355-5_1-pro-nature-flaxseed.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the pure, organic goodness of Pro Nature Flax Seeds, a true superfood packed with essential nutrients. Sourced from certified organic farms, these tiny seeds are a powerhouse of nutrition, offering a range of health benefits with every serving. Taste the purity of these organic spices by adding them to your daily breakfast for a healthy and delicious start to your day. Rich in healthy fats, antioxidants, and fibre, these flax seeds contain protein, lignans, and the essential fatty acid alpha-linolenic acid, making them a versatile ingredient that can be easily incorporated into your diet, from breakfast to snacks and more. Enjoy the benefits of their omega-3 fatty acids, which support heart health and reduce inflammation, as well as their soluble and insoluble fibre, which promote digestive health and help regulate blood sugar levels. Indulge in the pure, natural goodness of Pro Nature Flax Seeds, a true superfood for your wellbeing.",
+   "ingredients": "Flax Seeds",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "548",
+    "Total Fat (g)": "41.94",
+    "Protein (g)": "19.35",
+    "Saturated Fat (g)": "3.23",
+    "Carbohydrates (g)": "29.03",
+    "Sodium (mg)": "32",
+    "Total Sugar (g)": "0",
+    "Total Fibre (g)": "25.8"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Sonamasoori Rice White",
@@ -804,7 +1096,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009041_6-pro-nature-organic-sonamasoori-rice-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the purity and wholesomeness of Pro Nature Organic Sonamasoori Rice, a premium grain cultivated without the use of synthetic chemicals. This organic rice is a dietary staple, especially for people in Asia, providing a rich source of energy and protein. Grown naturally without pesticides or fertilisers, this light and fluffy rice boasts a subtly fragrant aroma that enhances the flavour of any meal, whether it's a daily dish, biryani, or traditional South Indian fare. Certified organic and of the highest quality, Pro Nature Organic Sonamasoori Rice is the perfect everyday staple for a nutritious and wholesome lifestyle.",
+   "ingredients": "Organic - Sonamasoori Rice/Akki (White)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "400",
+    "Total Fat (g)": "0",
+    "Protein (g)": "6.7",
+    "Saturated Fat (g)": "0",
+    "Carbohydrates (g)": "93.3",
+    "Sodium (mg)": "0",
+    "Total Sugar (g)": "0",
+    "Total Fibre (g)": "0"
+   },
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "fssaiLicense": "10020043003132"
+  }
  },
  {
   "title": "Organic Sonamasoori Rice Hand Pound",
@@ -820,7 +1130,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002007_5-pro-nature-organic-rice-sonamasoori-semi-polished.jpg"
-    }
+    },
+    "barcode": "8904117900425"
    }
   ],
   "images": [
@@ -839,7 +1150,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002007-5_1-pro-nature-organic-rice-sonamasoori-semi-polished.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Sonamasoori Rice is a dietary staple food especially for people in Asia. Organic Sonamasoori rice is one of the major grains and is the main source of energy for Indians. Pro Nature Organic Sonamasuri rice provides a large amount of protein Our Organic Sonamasoori Rice is a good source of energy.",
+   "nutritionalInfo": {
+    "Calories": "334 ,",
+    "Carbs": "80g ,",
+    "Fat": "1g ,",
+    "Protein": "7g"
+   },
+   "ingredients": "Organic Rice/Akki - Sonamasoori, Semi Polished,",
+   "storageInstructions": "One cup of rice should be added to at least two cups of boiling water.\nOnce it is cooked, it should be covered and left to stand before it is drained.\nStore in cool and dry place.\nKeep away from direct sunlight.",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "fssaiLicense": "10020043003132"
+  }
  },
  {
   "title": "Organic Brown Sonamasoori Rice",
@@ -886,7 +1210,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009040_5-pro-nature-organic-brown-sonamasoori-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Sonamasoori Rice is a dietary staple food especially for people in Asia. Organic Sonamasoori rice is one of the major grains and is the main source of energy for Indians. Pro Nature Organic Sonamasuri rice provides a large amount of protein Our Organic Sonamasoori Rice is a good source of energy.",
+   "ingredients": "Organic Sonamasoori Rice (Brown)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "355.6",
+    "Total Fat (g)": "2.2",
+    "Protein (g)": "6.7",
+    "Saturated Fat (g)": "0",
+    "Carbohydrates (g)": "53.3",
+    "Sodium (mg)": "0",
+    "Total Sugar (g)": "0",
+    "Total Fibre (g)": "4.4"
+   },
+   "storageInstructions": "*Store in a cool and dry place, Keep away from direct sunlight",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "fssaiLicense": "10020043003132"
+  }
  },
  {
   "title": "Organic Whole Wheat Chakki Atta",
@@ -902,7 +1244,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000022_7-pro-nature-organic-atta-whole-wheat.jpg"
-    }
+    },
+    "barcode": "8904117900913"
    },
    {
     "title": "5kg",
@@ -933,7 +1276,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002009_8-pro-nature-organic-atta-whole-wheat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful and nutritious difference with Pro Nature Organic Whole Wheat Atta. Carefully cleaned, handpicked, and bursting with freshness, this premium atta elevates the taste and texture of your favourite dishes. Crafted from organic wheat, free from additives and preservatives, it supports sustainable farming practices while providing essential nutrients and complex carbohydrates to boost your energy. Versatile and perfect for making supple puris, flavourful parathas, and much more, Pro Nature Organic Whole Wheat Atta is the healthier, environmentally-friendly choice for your kitchen.",
+   "ingredients": "Organic Atta - Whole Wheat",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "300 kcal",
+    "Total Fat (g)": "1.67 g",
+    "Protein (g)": "13.33 g",
+    "Saturated Fat (g)": "0 g",
+    "Carbohydrates (g)": "66.67 g",
+    "Sodium (mg)": "0 mg",
+    "Total Sugar (g)": "0 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Rice Flour",
@@ -968,7 +1328,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129354-5_2-pro-nature-rice-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Natures rice flour is organic and easy to use. It is produced using the best organic rice. It can be used to thicken soups and stews, as well as provide an alternative to wheat flour in cakes and biscuits.",
+   "ingredients": "Organic Rice Flour, Rice Flour",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "500g",
+    "Energy (kcal)": "366 kcal",
+    "Total Fat (g)": "1.42 g",
+    "Protein (g)": "5.95 g",
+    "Saturated Fat (g)": "0.386 g",
+    "Carbohydrates (g)": "80.1 g",
+    "Sodium (mg)": "0 mg",
+    "Total Sugar (g)": "0.12 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "A-4",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001204"
+  }
  },
  {
   "title": "Organic Idli Rava",
@@ -991,7 +1370,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137361_3-pro-nature-idli-rava.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Rava Idli is a made of finest ingredients used to make rava idli. It is boiled and perfectly grounded into rice granules to give your idli’s the right taste and texture. It makes soft and rich batter for the soft idli. This rava idli has a right consistency. It is a simple and easy breakfast. It is quick and easy. This comes without any added preservatives.",
+   "nutritionalInfo": {
+    "Calories": "372,",
+    "Carbs": "65g,",
+    "Fat": "8g,",
+    "Protein": "10g."
+   },
+   "manufacturerName": "A-4",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001204",
+   "ingredients": "Idli Rava.",
+   "storageInstructions": "Use it to make soft and fluffy idlis.\nStore in a cool and dry place ."
+  }
  },
  {
   "title": "Organic Mixed Millet Khichdi",
@@ -1026,7 +1419,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137357-5_2-pro-nature-mixed-millet-khichdi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful taste and exceptional nutritional benefits of Pro Nature's Mixed Millet Khichdi. This certified organic blend brings together a healthy roasted combination of moong green split, Sonam masoori brown rice, little millet, barnyard millet, and foxtail millet. Packed with essential nutrients and fibre, this gluten-free, ready-to-cook khichadi mix is the perfect choice for a balanced, wholesome meal. Enjoy a tasty and fulfilling experience with every bite, as the blend of organic millets provides a nourishing and satisfying culinary delight. Reimagine your meals with this convenient, easy-to-prepare product, and embrace better health with every spoonful.",
+   "ingredients": "Mixed Millet Khichdi",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "345.46",
+    "Total Fat (g)": "2.732",
+    "Protein (g)": "17.972",
+    "Saturated Fat (g)": "0.128",
+    "Carbohydrates (g)": "66.103",
+    "Trans fat (g)": "0",
+    "Total Sugar (g)": "4.3",
+    "Cholesterol (mg)": "0",
+    "Added Sugar (g)": "0",
+    "Sodium (mg)": "41.437"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "A-4",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001204"
+  }
  },
  {
   "title": "Organic Atta Vermicelli",
@@ -1055,7 +1469,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130617-3_1-pro-nature-organic-vermicelli-atta.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature organic vermicelli is India's first organic vermicelli. It is made from organic atta. Thus, a meal of Pro Nature organic atta vermicelli is healthy and guilt-free.",
+   "ingredients": "Atta Vermicelli",
+   "usageInstructions": "This Vermicilli can be used to make variety of dishes like upma, kheer, etc",
+   "manufacturerName": "Pro Nature organic Foods (P) Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Sooji Vermicelli",
@@ -1081,7 +1502,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130615-2_1-pro-nature-organic-vermicelli-sooji.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature organic vermicelli is India's first organic vermicelli. It is made from organic semolina (also known as sooji /Rava) extracted from a protein-rich variety of wheat. Thus, a meal of Pro Nature organic sooji vermicelli is healthy and guilt-free.",
+   "ingredients": "Sooji Vermicelli",
+   "nutritionalInfo": {
+    "Energy": "372kcal",
+    "Carbohydrate": "82. 2g",
+    "Natural sugar": "0g",
+    "Protein": "10. 5g"
+   },
+   "usageInstructions": "This Vermicilli can be used to make variety of dishes like upma, kheer, etc.",
+   "manufacturerName": "Pro Nature organic Foods (P) Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Sugar",
@@ -1116,7 +1550,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000041-5_1-pro-nature-organic-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Sugar is a high-quality sugar which acts as a great sweetener in soft drinks, candy, confectionary, pastries, chocolates etc. Sugar is naturally white. White table sugar comes from either sugarcane or sugar beets and is usually sold without its plant source clearly identified. It is easy to use and a great sweetener. It is mostly used in soft drinks, candy, confectionary, pastries, chocolates etc. White sugar is sweeter than brown sugar, so you can use less of it to attain your desired taste. Its neutral flavour makes it a versatile ingredient in baking, working well in fruit sponges and sweet pastries. Explore Pro Nature's wide range of products including Millets, Flours, Spices, Breakfast products and more, on Big Basket.",
+   "ingredients": "Organic Sugar",
+   "usageInstructions": "Make yourself a refreshing lemonade on a summer afternoon.\nOr mix up a cocktail/mocktail for your guests with freshly squeezed orange juice and the right amount of sugar.",
+   "storageInstructions": "Keep in a cool, dry place.\nStore in an airtight container once open.",
+   "manufacturerName": "Pro Nature Organic Foods Pvt LtdA-4"
+  }
  },
  {
   "title": "Organic Jaggery Powder",
@@ -1151,7 +1592,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002003-5_2-pro-nature-organic-powder-jaggery.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Pro Nature Organic Powder Jaggery is an unrefined sugar made from sugarcane and is used as a sweetener for various sweets and savouries. You can easily replace refined sugar with jaggery and make any dessert healthier. Jaggery does not contain sulphur that is commonly found in refined sugar, it is made with 100% organic ingredients and using 100% organic compliant processes from the best crops of organic sugarcane. It is slightly less sweet than maple syrup and has a dark brown colour due to its richness in many essential nutrients, it is an effective natural treatment for menstrual problems, especially providing relief from cramps. It also boosts intestinal strength due to its high magnesium content. Jaggery helps in maintaining normal body temperature which helps in keeping your stomach cool. It is a good and healthy option over sugar to be added in fresh fruit juices, lemonades, cookies, chocolates, cakes, fruit bars and many more. Explore Pro Nature's wide range of products including Millets, Flours, Spices, Breakfast products and more, on Big Basket.",
+   "ingredients": "Organic Jaggery Powder, Jaggery",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "400 kcal",
+    "Fat (g)": "0 g",
+    "Carbohydrates (g)": "100 g",
+    "Protein (g)": "0 g",
+    "Sugar (g)": "100 g",
+    "Sodium (mg)": "250 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry place\n* Store in an airtight container once open",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "fssaiLicense": "10020043003132"
+  }
  },
  {
   "title": "Classic Himalayan Pink Salt Crystals",
@@ -1167,7 +1624,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40129351_5-pro-nature-himalayan-pink-salt-crystals.jpg"
-    }
+    },
+    "barcode": "8904117902016"
    }
   ],
   "images": [
@@ -1186,7 +1644,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129351-5_3-pro-nature-himalayan-pink-salt-crystals.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the pure, natural goodness of Himalayan pink salt, hand-mined from the majestic Himalayan mountains. This chemical-free, unrefined salt is a true treasure trove of essential minerals and electrolytes, with an impressive 84 different nutrients intact. Savour the authentic, robust flavour and enjoy the versatility of this sustainable, environmentally-friendly choice. Elevate your cooking with the purity and health benefits of this remarkable Himalayan salt, free from any artificial processing or modifications. Indulge in the rich, mineral-dense experience and discover the true taste of nature's bounty.",
+   "ingredients": "Himalayan Pink Salt Crystals",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "0",
+    "Protein (g)": "0",
+    "Fat (g)": "0",
+    "Carbohydrates (g)": "0",
+    "Sodium (mg)": "38.79",
+    "Potassium (g)": "0.69",
+    "Magnesium (g)": "0.06",
+    "Calcium (g)": "0.15",
+    "Iron (mg/kg)": "14.78",
+    "Cholesterol (mg)": "0"
+   },
+   "storageInstructions": "Store in a cool, dry place away from heat and light",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Sendha Namak",
@@ -1202,7 +1680,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40129350_5-pro-nature-rock-salt-sendha-namak.jpg"
-    }
+    },
+    "barcode": "8904117900838"
    }
   ],
   "images": [
@@ -1221,7 +1700,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129350-5_2-pro-nature-rock-salt-sendha-namak.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the rich, natural taste and health benefits of Pro Nature Classic Organic Rock Salt. Mined directly from the Himalayan mountains, this unrefined rock salt retains its essential mineral richness, providing a unique and tantalizing flavour to your dishes. Sprinkle it on your meals for a burst of mineral-infused goodness, or use it to elevate your cooking game with this additive-free, chemical-free alternative to regular table salt. Naturally crystallized and packed with nutrients, this versatile rock salt will add a distinct, wholesome touch to all your culinary creations.",
+   "ingredients": "Rock Salt (Sendha Namak )",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "0",
+    "Protein, Fat (g)": "0",
+    "Carbohydrates (g)": "0",
+    "Sodium (mg)": "38.79",
+    "Potassium (g)": "0.69",
+    "Magnesium (g)": "0.06",
+    "Calcium (g)": "0.15",
+    "Iron (mg/kg)": "14.78",
+    "Cholesterol (mg)": "0"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Tamarind",
@@ -1256,7 +1754,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40302601-5_3-pro-nature-organic-tamarindimli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tamarind is a widely cultivated Indian spice. It is used in a sticky, pulpy form to infuse dishes with a sweet and sour flavour. Tamarind is also a must-have ingredient in jams, sauces, jellies and fruit drinks. If you are looking for premium quality tamarind, then Pro Nature is the place for you. Giving you rich and full of nutrition tamarind, now make your favourite recipes with more ease. Pro Nature is well known to value the consumers and their family’s health. Our products retain their original taste and aroma and have no added colours or flavours. To know more, explore our whole range of products! Benefits Tamarind. No GMO is used. 100% natural and organic. Rich in taste and nutrition. A proud India-based product. Hygienically processed and packed.",
+   "ingredients": "Organic Tamarind",
+   "usageInstructions": "You can make the best use of tamarind to make tangy chutneys, sambar, vegetable curry or soups. It is a versatile ingredient.",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd",
+   "fssaiLicense": "10020043003132",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Ajwain",
@@ -1272,7 +1778,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40005010_6-pro-nature-organic-ajwain.jpg"
-    }
+    },
+    "barcode": "8904117901484"
    }
   ],
   "images": [
@@ -1291,7 +1798,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005010-5_1-pro-nature-organic-ajwain.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Ajwain contains a decidedly musty base taste. The ground seed can even assist decrease the gaseous effects of beans when cooked for a short time together. Try it anywhere you use cumin for the surprisingly various flavour.",
+   "ingredients": "Organic Ajwain",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "238 kcal",
+    "Total Fat (g)": "0.62 g",
+    "Protein (g)": "23.81 g",
+    "Saturated Fat (g)": "0.62 g",
+    "Carbohydrates (g)": "47.62 g",
+    "Sodium (mg)": "0 mg",
+    "Total Sugar (g)": "0 g",
+    "Total Fibre (g)": "47.6 g"
+   },
+   "storageInstructions": "* Store in a cool, dry place",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Black Cardamom",
@@ -1361,7 +1886,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137366-5_1-pro-nature-cardamom.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Taste the purity of Pro Nature organic spices. These are hand-picked spices which they are best grown from. They have an authentic aroma, colour and texture. No GMO is used in production.",
+   "ingredients": "Organic Cardamom",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g (Approx.)",
+    "Energy (kcal)": "311",
+    "Total Fat (g)": "6.7",
+    "Protein (g)": "10.8",
+    "Saturated Fat (g)": "0.68",
+    "Carbohydrates (g)": "68.5",
+    "Sodium (mg)": "18",
+    "Total Sugar (g)": "0",
+    "Total Fibre (g)": "28"
+   },
+   "storageInstructions": "*Store under cool and dry conditions",
+   "manufacturerName": "A-4",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001204"
+  }
  },
  {
   "title": "Organic Red Chilli Whole",
@@ -1396,7 +1940,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016242-5_4-pro-nature-organic-red-chilli-whole-hot.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rich in protein MilkyMist processed cheese block",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "282 kcal",
+    "Total Fat (g)": "14 g",
+    "Protein (g)": "13 g",
+    "Saturated Fat (g)": "2.5 g",
+    "Carbohydrates (g)": "50 g",
+    "Sodium (mg)": "9 mg",
+    "Total Sugar (g)": "7.2 g",
+    "Total Fibre (g)": "35 g"
+   },
+   "storageInstructions": "Storage as per packaging"
+  }
  },
  {
   "title": "Organic Saunf",
@@ -1412,7 +1971,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100472760_7-pro-nature-organic-saunf.jpg"
-    }
+    },
+    "barcode": "8904117901064"
    }
   ],
   "images": [
@@ -1431,7 +1991,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472760-5_2-pro-nature-organic-saunf.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your meals with Pro Nature Organic Saunf Seeds. These organic fennel seeds are packed with a subtle, refreshing flavour and aroma that will elevate your dishes. Grown without pesticides and sourced from sustainable farms, these vegan and gluten-free seeds are a healthier choice that offer anti-inflammatory and digestive benefits. Enjoy the full-bodied flavour and essential nutrients of these premium organic fennel seeds.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "345",
+    "Total Fat (g)": "14.9",
+    "Protein (g)": "15.8",
+    "Saturated Fat (g)": "0.48",
+    "Carbohydrates (g)": "52.3",
+    "Sodium (mg)": "88",
+    "Total Sugar (g)": "0",
+    "Total Fibre (g)": "39.8"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Organic Bay Leaf",
@@ -1466,7 +2041,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40137354-5_1-pro-nature-bay-leaf.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Natures bay leaves are organic and can be used in cooking vegetables and curries. It is used in cooking for its distinctive flavour and fragrance. The leaves should be removed from the cooked food before eating. It can also be used in place of curry leaves.",
+   "ingredients": "Organic Bay Leaf, Bay Leaf",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "313 kcal",
+    "Total Fat (g)": "8.36 g",
+    "Protein (g)": "7.61 g",
+    "Saturated Fat (g)": "2.28 g",
+    "Carbohydrates (g)": "75 g",
+    "Trans Fat": "0 g",
+    "Total Sugar (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Added Sugar (g)": "0 g",
+    "Sodium (mg)": "23 mg",
+    "Total Fibre (g)": "26.3 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "A-4",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015043001204"
+  }
  },
  {
   "title": "Organic Cassia",
@@ -1501,7 +2098,10 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472754-5_3-pro-nature-organic-cinnamon-bark.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the rich warmth of Organic Cinnamon Bark, a staple in culinary delights. Hand-harvested and meticulously dried, this aromatic spice adds a delightful depth to both sweet and savoury dishes. Perfect for infusing your recipes with a natural, robust flavour that elevates any meal to gourmet status."
+  }
  },
  {
   "title": "Organic Coriander Whole",
@@ -1548,7 +2148,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009038_5-pro-nature-organic-coriander-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful flavours and nutritional benefits of Pro Nature's Organic Coriander Seeds. Sourced from certified organic farms, these premium-quality seeds lend a distinctive aromatic flair to your favourite dishes. Brimming with dietary fibre and a rich supply of essential minerals like copper, magnesium, iron, calcium, potassium, manganese, and zinc, these organic coriander seeds not only enhance the taste of your meals but also promote overall health and wellbeing. Versatile and easy to use, simply add them to curries, dals, rice dishes, and more for an extra burst of flavour. Ethically sourced and free from harmful chemicals, Pro Nature's Organic Coriander Seeds offer a pure and safe culinary experience, perfect for satisfying your family's nutritional needs throughout the day.",
+   "ingredients": "Organic Coriander Seeds",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "278 kcal",
+    "Total Fat (g)": "0 g",
+    "Protein (g)": "0 g",
+    "Saturated Fat (g)": "0 g",
+    "Carbohydrates (g)": "55.56 g",
+    "Sodium (mg)": "0 mg",
+    "Total Sugar (g)": "0 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Fenugreek",
@@ -1583,7 +2200,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472757-5_1-pro-nature-organic-fenugreek.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Pro Nature Organic Fenugreek, a flavourful and nutritious addition to your pantry. Sourced from certified organic farms, these pure and natural methi seeds are free from synthetic pesticides and chemicals, ensuring a wholesome and authentic taste. Infuse your traditional recipes with the distinct aroma and flavour of these versatile seeds, which can enhance the health benefits of any dish. Whether you're preparing aromatic curries or adding a delightful twist to your everyday meals, Pro Nature Organic Fenugreek is the perfect ingredient to elevate your culinary creations.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "327",
+    "Total Fat (g)": "9.09",
+    "Protein (g)": "27.27",
+    "Saturated Fat (g)": "1.82",
+    "Carbohydrates (g)": "54.55",
+    "Sodium (mg)": "64",
+    "Total Sugar (g)": "0"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture"
+  }
  },
  {
   "title": "Organic Black Pepper Whole",
@@ -1618,7 +2249,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000024-5_2-pro-nature-organic-pepper-black-whole.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Pepper - Black (Whole) 100 g Pouch Organic Masalas & Spices. Spice up your meals and support sustainable farming with Pro Nature's Organic Black Pepper, packed with flavour and nutrition in every bite. Versatile organic Pro Nature Organic Black Pepper adds irresistible flavour to your meals while also providing essential nutrients and antioxidants. Packed with Piperine, grown on organic farms in South India, our pepper helps your body absorb water-soluble nutrients and enhances the bioavailability of other healthy ingredients. Supporting sustainability, our black pepper supports sustainable agriculture practices and local Indian farmers, making it a win-win for your taste buds and the environment.",
+   "ingredients": "Black Pepper Whole",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g (Approx)",
+    "Energy (kcal)": "172",
+    "Total Fat (g)": "0",
+    "Protein (g)": "17.24",
+    "Saturated Fat (g)": "0",
+    "Carbohydrates (g)": "68.97",
+    "Sodium (mg)": "0",
+    "Total Sugar (g)": "0"
+   },
+   "storageInstructions": "*Store in a cool, dry place"
+  }
  },
  {
   "title": "Organic Mustard Seeds",
@@ -1653,7 +2299,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472758-5_2-pro-nature-organic-seeds-mustard.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Pro Nature Organic Mustard Seeds, a premium organic spice that infuses your dishes with a bold, tangy flavour. Grown using natural farming methods, these pesticide-free seeds offer a healthy and sustainable way to add depth and complexity to your cooking. Whether you're whipping up pickles, tempering spices, or crafting flavourful blends, the fiery hot taste of these organic mustard seeds will lend a delightful zing to your creations. Embrace the versatility of this versatile ingredient and unlock a world of culinary possibilities with Pro Nature Organic Mustard Seeds.",
+   "ingredients": "Mustard",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g (Approx.)",
+    "Energy (kcal)": "61",
+    "Total Fat (g)": "3.38",
+    "Protein (g)": "4.25",
+    "Saturated Fat (g)": "0.252",
+    "Carbohydrates (g)": "5.3",
+    "Sodium (mg)": "1100",
+    "Total Sugar (g)": "1.42"
+   },
+   "storageInstructions": "* Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Organic Turmeric Powder",
@@ -1669,7 +2330,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40000043_6-pro-nature-organic-powder-turmeric.jpg"
-    }
+    },
+    "barcode": "8904117901019"
    }
   ],
   "images": [
@@ -1688,7 +2350,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000043-5_1-pro-nature-organic-powder-turmeric.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Powder - Turmeric 100 g Pouch. Experience the rich and authentic taste of 24 Mantra Organic Turmeric Powder, now available for purchase online at the best rate. Say goodbye to the hassle of searching for 24 Mantra Organic Turmeric Powder near stores and simply order 24 Mantra Organic Turmeric Powder online through Instamart for convenient delivery to your doorstep.",
+   "ingredients": "Organic Turmeric Powder",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Energy (kcal)": "312 kcal",
+    "Total Fat (g)": "3.25 g",
+    "Protein (g)": "9.68 g",
+    "Saturated Fat (g)": "0 g",
+    "Carbohydrates (g)": "67.14 g",
+    "Sodium (mg)": "0 mg",
+    "Total Sugar (g)": "0 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Organic Cumin Powder",
@@ -1723,7 +2400,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000028-5_2-pro-nature-organic-powder-cumin.jpg"
    }
-  ]
+  ],
+  "details": {
+   "manufacturerName": "Pro Nature Organic Foods Pvt Ltd. A-4",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Red Chilli Powder",
@@ -1739,7 +2420,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100472759_8-pro-nature-organic-powder-red-chilli.jpg"
-    }
+    },
+    "barcode": "8904117901026"
    }
   ],
   "images": [
@@ -1758,7 +2440,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100472759-5_3-pro-nature-organic-powder-red-chilli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Pro Nature Organic Red Chilli Whole is a premium-quality ingredient that adds bold heat and rich colour to your recipes. Grown organically, these chillies bring the authentic taste of Indian cuisine to your kitchen without compromising on health. Perfect for tempering, curries and chutneys, Pro Nature Red Chilli Whole ensures vibrant and flavourful meals.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "282",
+    "Total Fat (g)": "14",
+    "Protein (g)": "13",
+    "Saturated Fat (g)": "2.5",
+    "Carbohydrates (g)": "50",
+    "Sodium (mg)": "9",
+    "Total Sugar (g)": "7.2",
+    "Total Fibre (g)": "35"
+   },
+   "storageInstructions": "Storage as per packaging"
+  }
  },
  {
   "title": "Organic Sambhar Powder",

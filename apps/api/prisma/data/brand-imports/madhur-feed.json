@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40253563_2-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
-    }
+    },
+    "barcode": "8906026900046"
    },
    {
     "title": "5kg",
@@ -41,6 +42,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253564_2-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Madhur sugar is pure, hygienic, and meets international standards. It is available in small and medium crystal sizes, packed in 1 kg and 5 kg quantities. Madhur has brought together knowledge of sweetening passion to develop a product that is untouched by hand for the consumers. From the morning cuppa to the favourite cake and special recipe, we make it better. No matter what the occasion is, we are there with a brand you know and trust.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "398 kcal",
+    "Carbohydrate": "99.4 gm",
+    "Calcium": "12 mg",
+    "Iron": "0.15 mg",
+    "Protein": "Nil",
+    "Fat": "Nil",
+    "Cholesterol": "Nil"
+   },
+   "manufacturerName": "Shree Renuka Sugars Ltd. BC 105 Havelock Road Camp Belgaum",
+   "fssaiLicense": "10020011007437",
+   "countryOfOrigin": "India"
+  }
  }
 ]

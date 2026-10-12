@@ -13,14 +13,27 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40008440_1-popular-appalam.jpg"
-    }
+    },
+    "barcode": "8906016500058"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008440_1-popular-appalam.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Appalams have been a crunchy part of South Indian cuisine for more than a century. They are not only tasty but highly nutritious as well. Appalams are made from a variety of pulses like urad dal, black gram, and chickpeas, which make them rich in protein.",
+   "ingredients": "Urid Flour 85%, Rice Flour 1%, Salt, Calcium Oxide, Vegetable Oil",
+   "nutritionalInfo": {
+    "Energy (kcal)": "297",
+    "Protein": "24.13%",
+    "Carbohydrates": "53.02%",
+    "Fat": "0.17%"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dinner Special Appalam",
@@ -55,7 +68,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009447_4-popular-appalam-dinner-special.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Iyers Papad Mangalore is made with all-natural ingredients like rice, chilli powder. It serves along with Rice and Rasam or with other curries. Dinner special appalam is specially crafted for dinners when you want the perfect accompaniment with some hot meals. Nothing beats the taste of this appalam which is the perfect appetiser to fill the void in your dinners.",
+   "ingredients": "Rice, Salt, Chilly Powder And Other Spices.",
+   "usageInstructions": "Microwave 1 minute or deep fry in oil.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mini Special Appalam",
@@ -87,7 +106,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000846-4_1-popular-appalam-mini-special.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Appalams have been a crunchy part of South Indian Cuisine for more than a century. They are not only tasty but highly nutritious as well. Appalams are full of protien, as their main ingredients are a variety of pulses like urad dal, black gram, chickpea Chipoo Mini is always attracting the kids for their peculiar taste.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Carbohydrates": "53.07%",
+    "Crude Protein": "24.19%",
+    "Energy": "287 Kcal/100g",
+    "Fat": "0.17%",
+    "Fibre": "0.45%",
+    "Sodium": "1.87%"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Party Special Appalam",
@@ -125,7 +158,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008441-6_1-popular-appalam-party-special.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Appalams have been a crunchy part of South Indian Cuisine for more than a century. They are not only tasty but highly nutritious as well. Appalams are full of protien, as their main ingredients are a variety of pulses like urad dal, black gram, chickpeas… Party Special is very special for an Indian tradition occasion appalam.",
+   "ingredients": "Urid Flour 85%, Rice Flour 10%, Salt, Calcium Oxide, Vegetable Oil.",
+   "usageInstructions": "You can have it roasted or fried and even top it with chaat masala, tomatoes, onions and green chillies for a delectable twist.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Appalam No 1",
@@ -160,7 +199,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000847-5_1-popular-appalam-no-1.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Appalams have been a crunchy part of South Indian cuisine for more than a century. They are not only tasty but highly nutritious as well. Appalams are full of protein, as their main ingredients are a variety of pulses like urad dal, black gram, and chickpeas.",
+   "ingredients": "URID FLOUR 85%, RICE FLOUR 10%, SALT, FLOUR TREATMENT AGENT [170 (i)], VEGETABLE OIL",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "CARBOHYDRATES": "53.02%",
+    "CRUDE PROTEIN": "24.13%",
+    "ENERGY": "297 Kcal/100g",
+    "FAT": "0.17%",
+    "FIBRE": "0.45%",
+    "SODIUM": "1.97%"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Super Special Appalam",
@@ -195,6 +249,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053964-5_1-popular-super-special-appalam.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Atish Papad Punjabi Masala Papad is a crunchy Indian-style wafer made with fine-quality urad dal flour and freshly blended spices. This high-quality Atish Papad is tasty and prepared in hygienic conditions with the traditional papad recipe. You may have the Masala Papad in a number of ways such as for starters, papad sabzi served with roti or even as a fried or roasted side dish with the meals.",
+   "ingredients": "URID FLOUR (85%), RICE FLOUR (10%), EDIBLE COMMON SALT, CALCIUM OXIDE (E529), EDIBLE VEGETABLE OIL (COCONUT OIL)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Carbohydrates": "53.02%",
+    "Crude Protein": "24.13%",
+    "Energy": "297 Kcal/100g",
+    "Fat": "0.17%",
+    "Fibre": "0.45%",
+    "Sodium": "1.97%"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "No.27",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000216"
+  }
  }
 ]

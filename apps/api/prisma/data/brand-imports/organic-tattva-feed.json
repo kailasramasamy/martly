@@ -59,7 +59,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009409_6-organic-tattva-flour-wheat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Processed with the utmost care in a hygienic environment, without chemicals, pesticides and additives, Organic Whole Wheat Flour is abundant in essential nutrients such as iron, calcium, and protein. It is also rich in dietary fibre owing to its high bran content and contains sodium that your body requires. With Organic Whole Wheat Flour, you can make now soft and fluffy rotis!",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "393.24 kcal",
+    "Total Fat (g)": "1.76 g",
+    "Saturated fat (g)": "0.31 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "6.66 mg",
+    "Total Carbohydrates (g)": "77.05 g",
+    "Dietary Fiber (g)": "10.58 g",
+    "Total sugar (g)": "5.38 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "12.01 g",
+    "Potassium (mg)": "240.61 mg"
+   }
+  }
  },
  {
   "title": "Multigrain Atta",
@@ -109,7 +128,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40196743_4-organic-tattva-organic-multigrain-flour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the wholesome goodness of Organic Tattva's Multigrain Atta, a delightful blend of nourishing grains that brings both health and flavour to your everyday meals. Crafted with a careful selection of organic ingredients, including jowar, ragi, bajra, kodo, and amaranth, this flour is a true delight for the senses. Boasting a light, mild flavour, it is the perfect canvas for both sweet and savoury baking, allowing you to create a variety of delectable dishes. Rich in fibre, protein, and essential amino acids, this multigrain atta is not only a healthier choice but also a commitment to organic farming and the delivery of pure, unadulterated goodness straight to your kitchen. Enjoy the benefits of Zero trans fats, no additives, and the versatility to create delicious chapatis and rotis that will leave your taste buds craving more. Embrace the wholesome experience of Organic Tattva's Multigrain Atta and elevate your culinary journey to new heights.",
+   "ingredients": "Jowar, Ragi, Bajra, Kodo, Amaranth",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "393.34 kcal",
+    "Total Fat (g)": "2.18 g",
+    "Saturated fat (g)": "0.43 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "15.48 mg",
+    "Total Carbohydrates (g)": "73.49 g",
+    "Dietary Fiber (g)": "13.36 g",
+    "Total sugar (g)": "5.32 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "13.26 g",
+    "Potassium (mg)": "254.69 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ragi Flour",
@@ -125,7 +168,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40009410_6-organic-tattva-flour-ragi.jpg"
-    }
+    },
+    "barcode": "8906055440377"
    }
   ],
   "images": [
@@ -147,7 +191,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009410-6_2-organic-tattva-flour-ragi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional Organic Tattva Organic Ragi Flour, a gluten-free and nutrient-rich addition to your culinary repertoire. Crafted from high-quality, organically grown finger millet, this flour boasts a delightful earthy and slightly nutty flavour that adds a unique twist to both savoury and sweet recipes. Packed with protein, fibre, and essential minerals like calcium, iron, and magnesium, this flour is not only a delicious choice but also a nutritious one, supporting bone health, digestion, and overall wellness. Certified organic and free from additives or preservatives, this flour is an excellent option for those following a gluten-free diet, as well as those seeking to manage blood sugar levels and maintain a balanced, healthy lifestyle. Versatile and easy to incorporate into your daily meals, the Organic Tattva Organic Ragi Flour is a premium, environmentally conscious ingredient that will elevate your culinary creations.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "372.52",
+    "Total Fat (g)": "1.58",
+    "Saturated fat (g)": "0.39",
+    "Trans fat (g)": "<0.005",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "3.65",
+    "Total Carbohydrates (g)": "80.55",
+    "Dietary Fiber (g)": "3.85",
+    "Total Sugar (g)": "<0.50",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "7.10",
+    "Potassium (mg)": "436.98"
+   },
+   "storageInstructions": "Store in a cool, dry place"
+  }
  },
  {
   "title": "Besan",
@@ -163,7 +227,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002643_6-organic-tattva-organic-besan.jpg"
-    }
+    },
+    "barcode": "8906055440278"
    }
   ],
   "images": [
@@ -188,7 +253,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002643-7_2-organic-tattva-organic-besan.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Tattva's Gram Flour, or Besan, is a versatile and nutritious ingredient that can elevate your cooking to new heights. Made from organic chickpeas, this premium flour is packed with essential nutrients and offers a range of health benefits. Boasting a high protein content, Organic Tattva Besan is an excellent source of plant-based protein for vegetarians and vegans, supporting muscle repair and growth. Additionally, the flour is rich in dietary fibre, which aids digestive health and helps regulate blood sugar levels. Crafted with meticulous care, this besan retains its signature nutty flavour and fragrance, ensuring your dhoklas are always spongy and fluffy, and your pakoras are always delightfully crisp. Gluten-free and vegan, with no additives or chemicals, Organic Tattva Besan is a versatile ingredient that can be used in a variety of Indian dishes, adding both flavour and nutrition to your culinary creations.",
+   "ingredients": "Organic Besan",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "414.16",
+    "Total Fat (g)": "6.34",
+    "Saturated fat (g)": "0.76",
+    "Trans fat (g)": "<0.005",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "18.81",
+    "Total Carbohydrates (g)": "61.95",
+    "Dietary Fiber (g)": "9.97",
+    "Total sugar (g)": "3.29",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "22.34",
+    "Potassium (mg)": "795.60"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maida",
@@ -226,7 +314,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002650-6_2-organic-tattva-organic-maida.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your baking experience with Organic Tattva's premium Organic Maida. This pure, nourishing, and versatile flour is the perfect choice for creating delectable breads, cookies, and other delicious treats. Crafted with care, our Organic Maida is free from any chemical additives, ensuring a wholesome and fibre-rich indulgence. Enjoy the rich flavour and satisfying texture of your baked goods, knowing that you're nourishing your body with every bite. Organic Tattva's commitment to quality shines through in this essential ingredient, perfect for the discerning home baker.",
+   "ingredients": "Organic Maida",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "382.76",
+    "Total Fat (g)": "1.68",
+    "Saturated fat (g)": "0.35",
+    "Trans fat (g)": "<0.005",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "11.63",
+    "Total Carbohydrates (g)": "75.62",
+    "Dietary Fiber (g)": "10.70",
+    "Total Sugar (g)": "3.71",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "10.94",
+    "Potassium (mg)": "90.33"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Suji",
@@ -242,7 +353,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002657_6-organic-tattva-organic-suji.jpg"
-    }
+    },
+    "barcode": "8906055440261"
    }
   ],
   "images": [
@@ -264,7 +376,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002657-6_2-organic-tattva-organic-suji.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Semolina, also known as suji or rava is a staple in every Indian household. A slightly coarse flour, it’s also known to be a weight-watchers delight. Organic Suji by Organic Tattva has a rich flavour and aroma that enhances every meal. Use it to make a variety of foods, both sweet and savoury. Processed with the utmost care in a hygienic environment, Organic Suji always ensures your family’s good health.\n100% vegan\nNo additives\nZero cholesterol\nZero trans fat\nIdeal for making upma, rava dosa, rava idli, sheera, barfi and kesari",
+   "usageInstructions": "Semolina/Suji is used to make savoury foods like rava dosa and upma, or puddings like kesari or sheera. |",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "358.00 kcal",
+    "Total Fat (g)": "0.88 g",
+    "Saturated fat (g)": "0.18 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "1.54 mg",
+    "Total Carbohydrates (g)": "75.21 g",
+    "Dietary Fiber (g)": "3.84 g",
+    "Total Sugar (g)": "0.58 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "12.31 g",
+    "Potassium (mg)": "169.23 mg",
+    "% RDA": "17.90"
+   },
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Wheat Dalia",
@@ -280,7 +416,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002646_6-organic-tattva-organic-wheat-dalia.jpg"
-    }
+    },
+    "barcode": "8906055440285"
    }
   ],
   "images": [
@@ -302,7 +439,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002646-6_2-organic-tattva-organic-wheat-dalia.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the wholesome goodness of Organic Tattva's Wheat Dalia, a natural source of fibre that's perfect for health-conscious individuals and diabetics alike. This versatile cracked wheat cereal boasts a delightful texture and earthy flavour that will delight your palate, whether you enjoy it for breakfast, lunch, or dinner. Savour the cosy warmth and nourishing benefits of this pesticide and chemical-free cereal, which is rich in fibre and protein. Ideal for sharing with friends and family or for a moment of relaxation, Organic Tattva's Wheat Dalia is a truly adaptable and satisfying meal that promotes digestive health and helps maintain blood sugar levels, all without any harmful additives. Indulge in the wholesome goodness of this organic delight and experience the difference in every bite.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "387.76",
+    "Total Fat (g)": "1.28",
+    "Saturated fat (g)": "0.23",
+    "Trans fat (g)": "<0.005",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "2.36",
+    "Total Carbohydrates (g)": "75.08",
+    "Dietary Fiber (g)": "12.04",
+    "Total Sugar (g)": "0.44",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "12.96",
+    "Potassium (mg)": "259.62"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sonamasuri Brown Rice",
@@ -343,7 +502,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009446-7_2-organic-tattva-sonamasuri-rice-brown.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional quality and flavour of Organic Tattva Basmati Brown Rice. Sourced directly from organic farms, this premium rice is cultivated with meticulous care to bring you the finest grains nature has to offer. Enriched with fibre, protein, calcium, and iron, this organic sonamasuri brown rice is a true delight for the health-conscious. Versatile and nourishing, it can be enjoyed daily or used to create delicious, special recipes. Organic Tattva ensures the lowest possible starch content, providing a sumptuous flavour and the organic assurance that sets it apart. By choosing this rice, you are not only treating yourself to a delicious meal but also supporting the livelihoods of local farmers and promoting eco-friendly agriculture. Indulge in the wholesome goodness of Organic Tattva Basmati Brown Rice and elevate your culinary experience.",
+   "ingredients": "Sonamasuri Rice/Akki - Brown",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "362.91",
+    "Total Fat (g)": "1.07",
+    "Saturated fat (g)": "0.70",
+    "Trans fat (g)": "<0.005",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "1.56",
+    "Total Carbohydrates (g)": "78.39",
+    "Dietary Fiber (g)": "1.16",
+    "Total Sugar (g)": "<0.50",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "9.17",
+    "Potassium (mg)": "148.62"
+   },
+   "storageInstructions": "Store in a cool and dry place\nKeep away from direct sunlight",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd"
+  }
  },
  {
   "title": "Sonamasuri Semi-Brown Rice",
@@ -381,7 +562,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002644-6_2-organic-tattva-organic-sona-masuri-brown.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional quality and flavour of Organic Tattva Basmati Brown Rice. Sourced directly from organic farms, this premium rice is cultivated with meticulous care to bring you the finest grains nature has to offer. Enriched with fibre, protein, calcium, and iron, this organic sonamasuri brown rice is a true delight for the health-conscious. Versatile and nourishing, it can be enjoyed daily or used to create delicious, special recipes. Organic Tattva ensures the lowest possible starch content, providing a sumptuous flavour and the organic assurance that sets it apart. By choosing this rice, you are not only treating yourself to a delicious meal but also supporting the livelihoods of local farmers and promoting eco-friendly agriculture. Indulge in the wholesome goodness of Organic Tattva Basmati Brown Rice and elevate your culinary experience.",
+   "ingredients": "Tattva Organic Sona Masuri Rice Brown",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "362.75 kcal",
+    "Total Fat (g)": "0.87 g",
+    "Saturated fat (g)": "1.47 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "4.82 mg",
+    "Total Carbohydrates (g)": "78.85 g",
+    "Dietary Fiber (g)": "1.02 g",
+    "Total Sugar (g)": "<0.50 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "9.37 g",
+    "Potassium (mg)": "144.35 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "MEHROTRA CONSUMER PRODUCTS PVT. LTD. Plot No. 266",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Toor Dal",
@@ -397,7 +601,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40019639_4-organic-tattva-arhar-tur-dal.jpg"
-    }
+    },
+    "barcode": "8906055440704"
    },
    {
     "title": "500g",
@@ -431,7 +636,38 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002642_7-organic-tattva-organic-turdal-arhar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "For most Indian households, there’s nothing quite as flavourful and enjoyable as a simple meal of dal-chawal. And what better dal than Organic Arhar Dal (Tur) Dal, a kitchen staple across Indian cuisines, it is ideal for making every kind of delicious dal recipe, from dal fry to sambar or even a simple dal khichdi.\nZero trans fats\n100% vegan\nNo additives• High protein content\nGluten-free, ideal for making delicious dal tadka, dal fry, sambar, dal khichdi",
+   "usageInstructions": "Toor dal is used in the preparation of sambar, dal tadka, the Maharashtrian varan, and more.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "386.00 kcal",
+    "Total Fat (g)": "1.90 g",
+    "Saturated fat (g)": "1.44 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "9.54 mg",
+    "Total Carbohydrates (g)": "65.95 g",
+    "Dietary Fiber (g)": "11.97 g",
+    "Total Sugar (g)": "4.64 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "20.31 g",
+    "Potassium (mg)": "1103.34 mg",
+    "% RDA per serving (per serve)": "19.34",
+    "Total Fat (% RDA)": "2.96",
+    "Saturated fat (% RDA)": "6.55",
+    "Trans fat (% RDA)": "0.00",
+    "Sodium (% RDA)": "0.45",
+    "Dietary Fiber (% RDA)": "30.90",
+    "Protein (% RDA)": "37.61",
+    "Potassium (% RDA)": "31.52"
+   },
+   "manufacturerName": "Metro Consumer Product Pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chana Dal",
@@ -481,7 +717,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002645_7-organic-tattva-organic-dal-chana.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the rich and wholesome goodness of Organic Tattva Chana Dal, a versatile pantry staple that embodies purity and nutrition. Sourced from organic farms and meticulously processed to retain its natural goodness, this hygienically packed legume is a testament to the commitment to quality and sustainability. Whether you're a health-conscious individual or a culinary enthusiast, this low-fat, vitamin and mineral-rich dal with its firm texture and earthy robust flavour is a must-have in your kitchen. Enjoy the versatility of this organically certified, vegan-friendly product, which can be used to create spicy curries, savoury dishes, and even sweet treats. With its easy digestibility and simple cooking process, Organic Tattva Chana Dal is a nourishing and delicious addition to your meals, offering a satisfying and wholesome experience with every bite.",
+   "ingredients": "Chana Dal",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "409.35 kcal",
+    "Total Fat (g)": "6.51 g",
+    "Saturated fat (g)": "0.34 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "13.21 mg",
+    "Total Carbohydrates (g)": "61.79 g",
+    "Dietary Fiber (g)": "10.06 g",
+    "Total Sugar (g)": "2.69 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "20.87 g",
+    "Potassium (mg)": "656.12 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight\nKeep the package tightly sealed",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Moong Dal",
@@ -531,7 +791,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002663_7-organic-tattva-organic-moong-dhuli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the exceptional quality and unparalleled health benefits of Organic Tattva Organic Moong Dal/Dhuli. Grown with meticulous care using sustainable methods, this versatile superfood is packed with a wealth of natural nutrients that make every meal delicious and nourishing. Bursting with vitamins A, B, C, and E, as well as essential minerals like iron, calcium, and potassium, this vegan and gluten-free moong dal is a true culinary delight. Whether cooked or enjoyed raw when sprouted, its rich, authentic flavour and satisfying texture will elevate your culinary experience. Unpolished for maximum natural goodness, this moong dal is free from artificial additives, synthetic pesticides, and other unwanted chemicals, ensuring a pure and wholesome taste in every preparation. Renowned for its weight-loss properties, this low-fat, high-protein and high-fibre superfood also helps to lower cholesterol levels, making it an excellent choice for a healthier lifestyle. Discover the power of nature's bounty with Organic Tattva Organic Moong Dal/Dhuli, your gateway to delicious and nourishing meals.",
+   "ingredients": "Moong Dal",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "376.74 kcal",
+    "Total Fat (g)": "1.38 g",
+    "Saturated fat (g)": "0.82 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "10.26 mg",
+    "Total Carbohydrates (g)": "60.19 g",
+    "Dietary Fiber (g)": "14.22 g",
+    "Total Sugar (g)": "3.67 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "23.78 g",
+    "Potassium (mg)": "135.62 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Urad Dal White Split",
@@ -569,7 +853,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002658-6_2-organic-tattva-organic-urad-dal-white-split.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic and nourishing flavour of Organic Tattva's Urad Dal White Split, a versatile and protein-rich choice for health-conscious individuals and vegans alike. Bursting with essential nutrients, this unpolished dal is a natural way of life, offering a strong, earthy flavour and calming, cooling qualities. Grown and packaged with care to preserve its excellence, this urad dal absorbs flavours beautifully, making it a versatile ingredient in your culinary creations. Enjoy the rich, satisfying texture and the abundance of protein that this organic, chemical-free dal provides, perfect for those seeking a nutritious and delicious addition to their diet.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "367.17 kcal",
+    "Total Fat (g)": "1.39 g",
+    "Saturated fat (g)": "0.33 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "9.56 mg",
+    "Total Carbohydrates (g)": "61.71 g",
+    "Dietary Fiber (g)": "3.99 g",
+    "Total Sugar (g)": "0.00 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "24.96 g",
+    "Potassium (mg)": "694.01 mg"
+   },
+   "storageInstructions": "Store under cool and dry conditions\nTransfer contents to an airtight container after opening"
+  }
  },
  {
   "title": "Urad Whole White",
@@ -619,7 +923,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019642_7-organic-tattva-urad-dal-whole-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Organic Tattva Urad Dal Whole White, a premium selection of organic pulses that promise both quality and taste. Sourced from the finest organic farms, this urad dal is packed with nutrients and flavour, making it an essential addition to your pantry. Enjoy the distinct, special flavour it brings to all your Indian dishes, from delicious dals to fluffy dhokla. With its vegan and gluten-free composition, and no additives for purity, this urad dal is rich in dietary fibres and ideal for a variety of authentic Indian preparations. Discover the versatility and culinary delight of Organic Tattva Urad Dal Whole White.",
+   "ingredients": "Urad Dal",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "359.69 kcal",
+    "Total Fat (g)": "1.21 g",
+    "Saturated fat (g)": "0.21 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "10.26 mg",
+    "Total Carbohydrates (g)": "60.11 g",
+    "Dietary Fiber (g)": "4.16 g",
+    "Total Sugar (g)": "0.57 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "25.01 g",
+    "Potassium (mg)": "680.27 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture\nEnsure the package is tightly sealed when not in use",
+   "manufacturerName": "Mehrotra Consumer Product Pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kabuli Chana",
@@ -669,7 +997,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002648_4-organic-tattva-organic-kabuli-chana.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Embrace the wholesome goodness of nature with Organic Tattva Kabuli Chana. These organic chickpeas, sourced from the fertile lands of India, are a treasure trove of essential vitamins and minerals, making them a must-have in your pantry. Cultivated without the use of harmful pesticides and fertilisers, Organic Tattva Kabuli Chana ensures that you receive only the purest and most natural form of nutrition. Boasting a high fibre content, these chickpeas promote digestive health and regularity. Whether you're preparing hearty curries, wholesome salads, or savoury snacks, Organic Tattva Kabuli Chana adds a delightful flavour and texture to a variety of dishes. Kabuli channa or white chick peas from Organic Tattva are huge in size and superb to taste, with a high nutritive value that makes them a popular choice for the delicious chole, a spicy gravy from the Punjabi cooking tradition.",
+   "ingredients": "Organic Kabuli Chana",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "407.07 kcal",
+    "Total Fat (g)": "5.05 g",
+    "Saturated fat (g)": "0.68 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "10.26 mg",
+    "Total Carbohydrates (g)": "62.90 g",
+    "Dietary Fiber (g)": "15.67 g",
+    "Total Sugar (g)": "7.62 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "19.67 g",
+    "Potassium (mg)": "135.26 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Kala Chana",
@@ -719,7 +1071,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002649_5-organic-tattva-organic-kala-chana.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the rich, earthy flavour and robust texture of Organic Tattva Brown/Kala Chana, the best-selected chickpeas from India. These small, wrinkled black chickpeas are not only low in fat but also an excellent source of protein, vitamins, and minerals. Enjoy them as a nutritious snack or incorporate them into delectable chaat preparations, where their nutty taste and firm bite will elevate your culinary experience. Certified organic and unpolished, these natural chickpeas are free from any additives, making them a wholesome and guilt-free choice for your meals. Whether you're looking to add a protein-packed side dish to your plate or seeking a versatile ingredient for your culinary creations, Organic Tattva Brown/Kala Chana is the perfect addition to your pantry.",
+   "ingredients": "Kala Chana",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "397.91",
+    "Total Fat (g)": "3.53",
+    "Saturated fat (g)": "0.45",
+    "Trans fat (g)": "<0.005",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "12.69",
+    "Total Carbohydrates (g)": "66.09",
+    "Dietary Fiber (g)": "13.27",
+    "Total Sugar (g)": "2.38",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "18.81",
+    "Potassium (mg)": "856.32"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rajma Chitra",
@@ -757,7 +1133,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002654-6_2-organic-tattva-organic-rajma-chitra.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the power of Organic Tattva Chitra White Rajma, a high-protein vegetarian option that's perfect for a healthy and balanced diet. Packed with essential minerals, this versatile cooking ingredient is a great alternative to meat, making it an ideal choice for vegetarians. Unpolished, gluten-free, and free from any additives, Organic Tattva Rajma Chitra offers an organic assurance, ensuring a safe and nutritious addition to your meals. Indulge in the rich flavour and satisfying texture of this premium rajma, which can be seamlessly incorporated into a variety of delectable dishes. Elevate your culinary experience with the goodness of Organic Tattva Chitra White Rajma.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "401.34 kcal",
+    "Total Fat (g)": "2.58 g",
+    "Saturated fat (g)": "0.34 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "111.26 mg",
+    "Total Carbohydrates (g)": "63.99 g",
+    "Dietary Fiber (g)": "19.96 g",
+    "Total Sugar (g)": "1.86 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "20.56 g",
+    "Potassium (mg)": "125.62 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Red Rajma",
@@ -773,7 +1171,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002655_8-organic-tattva-organic-rajma-red.jpg"
-    }
+    },
+    "barcode": "8906055440117"
    }
   ],
   "images": [
@@ -795,7 +1194,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002655-6_2-organic-tattva-organic-rajma-red.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic flavours of Punjab with Organic Tattva's Red Rajma. These mature, dry beans are a nutritious and chemical-free addition to your meals, packed with essential nutrients and a low glycaemic index. Renowned for their high fibre content, the robust taste of these rajma beans shines through when blended with aromatic spices like cumin, amchur, and coriander, creating a unique and flavourful rajma curry. Versatile and versatile, these rajma can be enjoyed in a variety of dishes, from curries and salads to rotis and rice. Indulge in the true essence of Punjabi cuisine with Organic Tattva's premium quality Red Rajma.",
+   "ingredients": "Organic Red Rajma",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "391.71 kcal",
+    "Total Fat (g)": "1.67 g",
+    "Saturated fat (g)": "0.22 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "10.23 mg",
+    "Total Carbohydrates (g)": "65.34 g",
+    "Dietary Fiber (g)": "20.04 g",
+    "Total Sugar (g)": "1.96 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "18.81 g",
+    "Potassium (mg)": "136.54 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "MEHROTRA CONSUMER PRODUCTS PVT. LTD. Plot No. 266",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "White Cowpea (Lobia)",
@@ -833,7 +1255,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009414-6_2-organic-tattva-coupea-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful Organic Tattva Cowpea White, a versatile and nutritious bean that can elevate a variety of dishes. With its little oval structure and distinctive black eye, this bean boasts a soft texture that readily absorbs flavours. Rich in soluble fibre, protein, folate, complex carbohydrates, and iron, these cowpeas are a powerhouse of essential nutrients. Enjoy their outstanding taste and high freshness, perfect for adding to hearty lentil dishes, vibrant salads, and more. Organic and vegan-certified, these cowpeas are grown without synthetic pesticides, ensuring natural goodness in every bite. Embrace the benefits of this plant-based protein, as Organic Tattva Cowpea White supports muscle repair, aids digestion, and promotes feelings of fullness to support your healthy lifestyle.",
+   "ingredients": "White Cowpea",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "356.97",
+    "Total Fat (g)": "0.25",
+    "Saturated fat (g)": "0.04",
+    "Trans fat (g)": "<0.005",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "12.06",
+    "Total Carbohydrates (g)": "64.07",
+    "Dietary Fiber (g)": "6.90",
+    "Total Sugar (g)": "3.04",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "21.16",
+    "Potassium (mg)": "1232.02"
+   },
+   "storageInstructions": "Store in a dry place at room temperature, away from direct sunlight",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Brown Sugar",
@@ -868,7 +1314,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019647-5_3-organic-tattva-brown-sugar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Tattva's Brown Sugar is a natural sweetener that retains its natural molasses, offering a rich flavour and texture. It is free from any chemicals or artificial additives, ensuring a pure and healthy sweetening option. Brown sugar is known for its slightly higher mineral content compared to white sugar, making it a popular choice for those looking for a more wholesome alternative. Use Organic Tattva's Brown Sugar in your baking, cooking, or beverages for a delicious and natural sweetness.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "10g",
+    "Energy (Kcal)": "400.24 kcal",
+    "Total Fat (g)": "0.18 g",
+    "Saturated fat (g)": "0.09 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.1 mg",
+    "Sodium (mg)": "15.26 mg",
+    "Total Carbohydrates (g)": "99.19 g",
+    "Dietary Fiber (g)": "0.19 g",
+    "Total Sugar (g)": "99.68 g",
+    "Added sugar (g)": "99.68 g",
+    "Protein (g)": "0.37 g",
+    "Potassium (mg)": "120.36 mg"
+   },
+   "manufacturerName": "Mehrotra Consumer Product Pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Jaggery Powder",
@@ -915,7 +1383,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002647_5-organic-tattva-organic-powder-jaggery.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Jaggery holds a very important place in the medicinal and culinary industries. The jaggery offered to you is nutritious and chemical-free. Organic jaggery powder is extracted from the most nutritious sugar canes to ensure that it is free from any chemicals. A 100g serving of Organic Tattva’s Organic Jaggery Powder contains 0g trans-fat and 0mg cholesterol. The calorie count per serving of Organic Jaggery Powder is 383 kcal. For a healthy lifestyle, switch to Organic Jaggery Powder by Organic Tattva today!",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "10g",
+    "Energy (Kcal)": "385.61 kcal",
+    "Total Fat (g)": "1.01 g",
+    "Saturated fat (g)": "0.50 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Sodium (mg)": "29.84 mg",
+    "Total Carbohydrates (g)": "93.53 g",
+    "Dietary Fiber (g)": "0.78 g",
+    "Total Sugar (g)": "84.94 g",
+    "Added sugar (g)": "80.90 g",
+    "Protein (g)": "0.21 g",
+    "Potassium (mg)": "650.98 mg"
+   },
+   "usageInstructions": "Instead of using sugar in your tea or milk, you can mix jaggery powder. Add some powdered jaggery or a small block of jaggery to ragi malt or oats in your breakfast. Can be used to make Indian desserts like kheer and phirni. Storage Information: Store it in a cool and dry place away from direct sunlight and moisture. |",
+   "manufacturerName": "M/s Grihasthi Udyog",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10315001000037"
+  }
  },
  {
   "title": "Wild Honey",
@@ -950,7 +1441,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40087598-5_4-organic-tattva-organic-honey.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the pure, unadulterated goodness of Organic Tattva's Organic Honey, sourced from the pristine forests of the Himalayas. This premium honey offers a natural and wholesome sweetness, perfect for enhancing the flavour of your dishes or beverages. Packed with essential nutrients like calcium, iron and protein, this certified organic honey is a true delight for the senses.\nEnjoy a spoonful straight from the bottle or mix it into your favourite tea or lemon water to boost your immunity and support a healthier, more balanced lifestyle. Crafted with care and free from any chemical inputs, Organic Tattva's Organic Honey is the perfect natural sweetener to elevate your culinary experiences and nourish your body from within.",
+   "ingredients": "Honey",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "330 kcal",
+    "Protein": "0.2 g",
+    "Carbohydrates": "82 g",
+    "Sugar": "82 g",
+    "Fat": "0 g",
+    "Fibre": "0 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mustard Oil",
@@ -985,7 +1491,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112945-5_3-organic-tattva-organic-mustard-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Extracted from organically grown mustard seeds, Organic Mustard Oil is a healthy and a great substitute for other cooking oils. Its nutty aroma and piquant flavour add immense character to every dish you choose to use it in. Moreover, Organic Mustard Oil is a great source of iron and nutrients and can help build immunity.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "13.65g",
+    "Energy (Kcal)": "899 kcal",
+    "Total Fat (g)": "99.91 g",
+    "Saturated fat (g)": "7.13 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.10 mg",
+    "Monounsaturated fat (g)": "62.31 g",
+    "Polyunsaturated fat (g)": "30.56 g"
+   },
+   "storageInstructions": "It is used for cooking and frying. Store in a cool, dry, and hygienic place |",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kashmiri Almonds",
@@ -1001,7 +1524,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40255826_4-organic-tattva-mamra-almonds-rich-in-nutrients-vitamin-e.jpg"
-    }
+    },
+    "barcode": "8906055442807"
    },
    {
     "title": "100g",
@@ -1035,7 +1559,36 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255825_4-organic-tattva-mamra-almonds-rich-in-nutrients-vitamin-e.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the wholesome goodness of Organic Tattva Mamra Almonds, a true superfood from the ancient lands of Iran and surrounding countries. These organic almonds are packed with heart-healthy benefits, offering a delicious guilt-free snacking experience. Sourced from the finest organic farms, these almonds boast a rich, creamy texture and a delightful flavour that will tantalize your taste buds. Bursting with natural goodness, they are a nutritional powerhouse, brimming with vitamin E, magnesium, and potassium to help oxygen and nutrients flow more freely through your blood. Enjoy these almonds as a healthy snack or incorporate them into your favourite recipes for an extra boost of nutrition. With no added preservatives or artificial flavours, Organic Tattva Mamra Almonds are the perfect choice for those seeking a wholesome and nourishing snack option.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Energy (Kcal)": "640.89",
+    "Total Fat (g)": "48.91",
+    "Saturated fat (g)": "3.82",
+    "Trans fat (g)": "<0.005",
+    "Monounsaturated fat (g)": "32.55",
+    "Polyunsaturated fat (g)": "12.53",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "210.33",
+    "Total Carbohydrates (g)": "20.22",
+    "Dietary Fiber (g)": "9.73",
+    "Total sugar (g)": "3.12",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "25.09",
+    "Potassium (mg)": "515.54",
+    "Calcium (mg)": "169.44",
+    "Iron (mg)": "6.94",
+    "Vitamin E (mg)": "27.37",
+    "Manganese (mg)": "1.32"
+   },
+   "storageInstructions": "Keep airtight and refrigerated for optimum freshness",
+   "manufacturerName": "Mehrotra Consumer Product Pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peanuts",
@@ -1051,7 +1604,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40009413_7-organic-tattva-groundnuts.jpg"
-    }
+    },
+    "barcode": "8906055440568"
    }
   ],
   "images": [
@@ -1073,7 +1627,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009413-6_2-organic-tattva-groundnuts.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Tattva Groundnut/Peanut is pure and hygienically packed. It is of the best quality from select farms and is a staple in most Indian food. It is a good source of healthy fats, protein, and fibre. Peanuts have a unique and delicious flavour with a sweet and nutty taste. They contain nutrients and antioxidants and are used to make both sweet and savoury dishes. They do not contain any added preservatives or colours. These groundnuts are unpolished and organic.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (Keal)": "612.98 Kcal",
+    "Total Fat (g)": "49.90 g",
+    "Saturated fat (g)": "8.95 g",
+    "Trans fat (g)": "<0.005 g",
+    "Cholesterol (mg)": "<0.30 mg",
+    "Sodium (mg)": "5.03 mg",
+    "Total Carbohydrates (g)": "16.72 g",
+    "Dietary Fiber (g)": "8.90 g",
+    "Total Sugar (g)": "<0.10 g",
+    "Added sugar (g)": "0.00 g",
+    "Protein (g)": "24.80 g",
+    "Potassium (mg)": "210.43 mg",
+    "% RDA per serving (per serve)": "81.65"
+   },
+   "manufacturerName": "Mehrotra Consumer Product Pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Flax Seeds",
@@ -1089,7 +1666,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002641_8-organic-tattva-organic-seeds-flax.jpg"
-    }
+    },
+    "barcode": "8906055442098"
    }
   ],
   "images": [
@@ -1108,7 +1686,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002641-5_2-organic-tattva-organic-seeds-flax.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the subtle, nutty flavour and exceptional nutritional benefits of Organic Tattva's premium flax seeds. These organic, chemical-free seeds are a rich source of omega-3 fatty acids, making them a versatile and wholesome addition to your diet. Certified organic and pure, these raw, unroasted seeds contain no artificial additives, ensuring you receive the full spectrum of their natural goodness. Enjoy the satisfying crunch and health-boosting properties of these flax seeds, which have been shown to nourish the body and aid in better weight management. Elevate your meals and snacks with the superior quality and uncompromising purity of Organic Tattva's flax seeds - a delicious and nutritious choice for a healthy, wholesome lifestyle.",
+   "ingredients": "Organic Flax Seeds",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "566 kcal",
+    "Calories from Fat": "378 kcal",
+    "Total Fat": "42g",
+    "Saturated Fat": "3.62g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "28mg",
+    "Total Carbohydrate": "29g",
+    "Dietary Fiber": "27.27g",
+    "Sugars": "1.6g",
+    "Protein": "18g",
+    "Vitamin A": "0%",
+    "Vitamin C": "1%",
+    "Calcium": "25%",
+    "Iron": "31%"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture\nTransfer contents to an airtight container after opening",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Amaranth",
@@ -1124,7 +1728,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002661_4-organic-tattva-organic-seeds-amaranthrajgeera.jpg"
-    }
+    },
+    "barcode": "8906055440292"
    }
   ],
   "images": [
@@ -1146,7 +1751,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002661-6_2-organic-tattva-organic-seeds-amaranthrajgeera.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "OrganicTattvaisknownforitscommitmenttowardsgrowinggenuineandorganicproductsthatarefreeofpesticidesandcommerciallyinclinedfarmingpractices.\nThebrandmanufacturesvariedproductsthatareraisedbyfarmersinvariouspartsofthecountry.\nTheAmaranthorganicseedorgrainisonesuchproduct.",
+   "ingredients": "OrganicAmarnath",
+   "storageInstructions": "TheAmaranthgrainisrichinmineralsandcanbeusedformakingporridgeorevenasapartofseasoningforvarioussaladsandotherdishes.\nAlso,youcanusetheroastedseedsontoasttogowithjamorhoney.\nStoreinacool,dryplaceinairtightcontainer.",
+   "manufacturerName": "MEHROTRA CONSUMER PRODUCTS PVT. LTD. Plot No. 266",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Super Grains Amaranth",
@@ -1190,7 +1802,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112947-8_1-organic-tattva-organic-amaranth-seeds.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Lowers cholesterol and risk of cardiovascular disease, full of antioxidants and minerals, improves eyesight.",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wheat Grass Powder",
@@ -1231,7 +1848,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112952-7_1-organic-tattva-organic-wheat-grass-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the power of Organic Tattva Wheat Grass Powder, a nutrient-rich superfood that boosts your overall health and well-being. Made from the young shoots of wheat plants, this powder is a natural source of chlorophyll, which supports detoxification and immune function. Whether mixed into refreshing smoothies, invigorating juices, or revitalising water, this versatile powder delivers a wealth of vitamins, minerals, and antioxidants to energise your body and promote a sense of balance. Enjoy the earthy, grassy flavour as it aids digestion, eliminates impurities and toxins, and provides a rich array of essential nutrients. Embrace the natural goodness of Organic Tattva Wheat Grass Powder for a healthier, more vibrant you.",
+   "ingredients": "Oranic Wheat powder",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "2g",
+    "Energy (Kcal)": "384.02",
+    "Total Fat (g)": "0.12",
+    "Saturated fat (g)": "0.07",
+    "Trans fat (g)": "<0.005",
+    "Cholesterol (mg)": "<0.10",
+    "Sodium (mg)": "5.62",
+    "Total Carbohydrates (g)": "86.47",
+    "Dietary Fiber (g)": "4.03",
+    "Total sugar (g)": "0.49",
+    "Added sugar (g)": "0.00",
+    "Protein (g)": "7.25",
+    "Potassium": "265.98"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight\nKeep the container tightly sealed after each use to preserve freshness",
+   "manufacturerName": "MehrotraConsumerProductsPvtLtd"
+  }
  },
  {
   "title": "Turmeric Powder",
@@ -1269,7 +1908,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002636-6_2-organic-tattva-organic-powder-turmeric.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This pure yellow Organic Tattva Turmeric Powder is undoubtedly the most necessary spice in every Indian cuisine. It is generally used in almost all curries, snacks, soups, pickles, stews, seasonings, and masalas. Organic Tattva Turmeric Powder is a premium quality product that is rich in flavour and packed with health benefits. Made from organically grown turmeric, this powder is free from any harmful chemicals or pesticides, making it a safe and healthy choice for you and your family. Vegan and gluten-free, with no additives or preservatives, this turmeric powder is rich in natural oils and has a high curcumin content. Buying Organic Tattva Turmeric Powder online is convenient and easy, allowing you to browse through a wide range of organic products from the comfort of your home and have them delivered right to your doorstep.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "380 kcal",
+    "Total Fat": "9g",
+    "Saturated Fat": "4.2g",
+    "Trans Fat": "0g",
+    "Polyunsaturated Fat": "1.24g",
+    "Monounsaturated Fat": "3.8g",
+    "Cholesterol": "0mg",
+    "Sodium": "45mg",
+    "Total Carbohydrate": "67g",
+    "Dietary Fiber": "17g",
+    "Total Sugars": "0g",
+    "Includes 0g Added Sugars": "0%",
+    "Protein": "7g",
+    "Vitamin D": "0mcg",
+    "Calcium": "190mg",
+    "Iron": "35mg",
+    "Potassium": "2420mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Red Chilli Powder",
@@ -1285,7 +1951,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002637_8-organic-tattva-organic-powder-red-chilly.jpg"
-    }
+    },
+    "barcode": "8906055442050"
    }
   ],
   "images": [
@@ -1307,7 +1974,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002637-6_2-organic-tattva-organic-powder-red-chilly.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Tattva is a brand that nurtures a culture of sustainability and wholesome living by working towards a healthier planet and a healthier you. Their organic red chilli powder is pesticide-free and undergoes a natural cold-grinding process to preserve its natural aroma and oils. This USDA-certified organic product is gluten-free and adheres to the Jaivik Bharat standards.",
+   "ingredients": "Organic Red Chilli Whole",
+   "nutritionalInfo": {
+    "Calories": "400",
+    "Total Fat": "11 g",
+    "Saturated Fat": "2.4 g",
+    "Trans Fat": "0 g",
+    "Polyunsaturated Fat": "6.2 g",
+    "Monounsaturated Fat": "2.2 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "2,890 mg",
+    "Total Carbohydrate": "64 g",
+    "Dietary Fibre": "25 g",
+    "Total Sugars": "0 g",
+    "Includes Added Sugars": "0 g",
+    "Protein": "12 g",
+    "Vitamin D": "0 mcg",
+    "Calcium": "341 mg",
+    "Iron": "19 mg",
+    "Potassium": "1,898 mg"
+   },
+   "storageInstructions": "Store under cool & dry conditions. Transfer contents to an airtight container after opening.",
+   "manufacturerName": "Mehrotra Consumer Products Pvt",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Cumin Powder",
@@ -1339,7 +2032,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210361-4_3-organic-tattva-cumin-powder-organic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Organic Tattva Cumin Powder. Crafted from the finest, hand-selected cumin seeds, this pure and versatile spice is a pantry essential that adds a burst of rich, earthy flavour to any dish. Bursting with natural goodness, it is free from artificial additives, preservatives, or colourings, making it a healthy choice for your kitchen. Cumin is renowned for its digestive properties and is also a great source of iron and antioxidants, providing therapeutic benefits for the skin. Whether you're seasoning savoury meals, marinades, or even baked goods, this cumin powder will elevate your dishes with its deep, aromatic notes and enhance the overall dining experience. Unlock the full potential of your culinary creations with the pure, organic goodness of Organic Tattva Cumin Powder.",
+   "ingredients": "Cumin Powder",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "0 kcal",
+    "Protein": "0 g",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Carbohydrates": "0 g",
+    "Dietary Fiber": "0 g",
+    "Total Sugars": "0 g",
+    "Sodium": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Black Pepper Powder",
@@ -1371,7 +2084,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210359-4_2-organic-tattva-black-pepper-powder-organic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your meals with Organic Tattva Black Pepper Powder, a premium spice made from the finest, best-selected black peppers. This finely ground powder is highly aromatic, adding a superb flavour and bite to any dish. Certified organic and non-GMO, it is ethically sourced for the highest quality nutrition. Packed with antioxidants and anti-inflammatory properties, this versatile pepper powder can be used to enhance pies, creamy seafood dishes, mayonnaise, soups and more. Enjoy the rich aroma and robust flavour of this certified organic, gluten-free and vegan spice, free from any additives or preservatives.",
+   "ingredients": "Black Pepper",
+   "storageInstructions": "Store under cool and dry conditions\nTransfer contents to an airtight container after opening",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cinnamon Powder",
@@ -1406,7 +2127,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210360-5_1-organic-tattva-cinnamon-powder-organic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Tattva's Organic Cinnamon Powder is pure and flavourful. It is carefully processed and powdered to bring out perfection in your Dishes every time. Organic Tattva's Organic Cinnamon is Gluten Free and is Vegan Friendly. As a widely used Spice in the Indian kitchen, Cinnamon enjoys a reputation of being an essential ingredient. Cinnamon is known to have higher levels of magnesium and chromium along with other cancer-fighting anti-oxidants. It's organic cultivation and hygienic production makes Organic Tattva's Cinnamon a great choice. It imparts beautiful flavour and taste to your favourite cup of chai to your meticulously prepared non-vegetarian dishes.  It is full of natural benefits such as protein, iron, and calcium. It has ample dietary fibres, potassium and other essential nutrients. This aromatic condiment and flavouring additive can be added to a wide variety of cuisines, sweet and savoury dishes, breakfast cereals, snack foods, tea and traditional foods etc.",
+   "ingredients": "Organic Cinnamon",
+   "storageInstructions": "Storage: Store in a cool, dry place. Empty the contents in an air-tight Jar for enhanced Freshness.\nUsage: Just a pinch combines perfectly with coffee or masala chai. A flavoursome sprinkle in curries, soups, stews, rice dishes and Indian desserts towards the end of cooking.  In baking, add to sweet bread dough, cookie, and cake mixes",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Dry Ginger Powder",
@@ -1438,7 +2167,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210362-4_3-organic-tattva-dry-ginger-powder-organic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Tattva's Dry Ginger Powder is a versatile and flavourful addition to your kitchen. This pure, unadulterated powder is carefully sun-dried and crushed to create a fine, off-white to slightly brownish powder that imparts a strong, aromatic ginger flavour without the need for frying. Infuse your gravies, curries, marinades, stews and even baked goods with the zesty kick of this ginger powder, which enhances both sweet and savoury recipes. Beyond its culinary uses, ginger powder is known for its therapeutic properties, helping to relieve nausea, improve circulation and support overall wellness through regular consumption. vegan and gluten-free, this pesticide and chemical-free powder retains the natural oils and rich aroma of high-quality ginger, making it a pure and authentic addition to your pantry.",
+   "ingredients": "Organic Dry Ginger",
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Cumin Whole",
@@ -1454,7 +2191,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002633_8-organic-tattva-organic-seeds-cumin.jpg"
-    }
+    },
+    "barcode": "8906055442012"
    }
   ],
   "images": [
@@ -1476,7 +2214,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002633-6_2-organic-tattva-organic-seeds-cumin.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Tattva Organic Cumin - Whole offers an authentic and aromatic spice for your culinary needs. Sourced from organically grown cumin plants, these seeds are free from synthetic pesticides and chemicals, ensuring purity and natural goodness. Renowned for their distinctive flavour and rich aroma, they enhance the taste of various dishes, from curries to soups and salads. Organic Tattva prioritises quality and sustainability, ensuring that each pack of cumin seeds retains its essential oils and nutritional benefits. Perfect for health-conscious cooks and spice enthusiasts, Organic Tattva Organic Cumin - Whole is a wholesome choice for elevating your culinary creations.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Calories": "450",
+    "Total Fat": "21g",
+    "Saturated Fat": "2g",
+    "Trans Fat": "0g",
+    "Polyunsaturated Fat": "6.3g",
+    "Monounsaturated Fat": "13g",
+    "Cholesterol": "0mg",
+    "Sodium": "170mg",
+    "Total Carbohydrate": "49g",
+    "Dietary Fiber": "10g",
+    "Total Sugars": "0g",
+    "Includes Og Added Sugars": "0%",
+    "Protein": "16g",
+    "Vitamin D": "0mcg",
+    "Calcium": "940mg",
+    "Iron": "60mg",
+    "Potassium": "1745mg"
+   },
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Black Pepper Whole",
@@ -1492,7 +2256,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40009423_8-organic-tattva-black-peppercorns.jpg"
-    }
+    },
+    "barcode": "8906055442142"
    }
   ],
   "images": [
@@ -1514,7 +2279,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009423-6_2-organic-tattva-black-peppercorns.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Organic Tattva Black Pepper Whole, a premium spice that delivers exceptional flavour and aroma. Sourced ethically from prime harvest gardens in India, these certified USDA organic and non-GMO verified peppercorns offer a burst of pungent, biting taste that will transform your dishes. Packed with health benefits, a pinch of this black pepper can help boost nutrient absorption, making it more than just a flavour enhancer. Crafted with natural, pesticide and chemical-free ingredients, this culinary staple is a must-have for any Indian kitchen, elevating the taste and experience of your meals. Indulge in the rich, aromatic flavour and experience the difference that Organic Tattva Black Pepper Whole can make.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "318 kcal",
+    "Total Fat": "3.2g",
+    "Saturated Fat": "1.2g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "32mg",
+    "Total Carbohydrate": "62g",
+    "Dietary Fiber": "26g",
+    "Sugars": "0.5g",
+    "Protein": "10g",
+    "Vitamin A": "5.8%",
+    "Vitamin C": "31.7%",
+    "Calcium": "43.1%",
+    "Iron": "150%"
+   },
+   "storageInstructions": "Store in a cool, dry place\nKeep the container tightly sealed after opening",
+   "manufacturerName": "Mehrotra Consumer Product Pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ajwain Whole",
@@ -1530,7 +2319,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002632_9-organic-tattva-organic-seeds-ajwain.jpg"
-    }
+    },
+    "barcode": "8906055442005"
    }
   ],
   "images": [
@@ -1552,7 +2342,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002632-6_2-organic-tattva-organic-seeds-ajwain.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the bold and aromatic flavour of Organic Tattva Ajwain Whole. These olive green to brown ajwain seeds, with their distinctive vertical stripes, closely resemble the appearance of caraway or cumin. Sourced from certified organic farms in India, these whole ajwain seeds are prized for their rich, thyme-like taste and impressive digestive benefits. Ajwain, a staple in Indian kitchens, is known to help alleviate bloating, indigestion, and flatulence. Organically grown without pesticides, these versatile seeds can be used to add a unique and flavourful twist to a variety of savoury dishes. Discover the bold and aromatic experience of Organic Tattva Ajwain Whole.",
+   "ingredients": "Oats, Protein Blend, Cocoa Powder",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "470 kcal",
+    "Total Fat": "24g",
+    "Saturated Fat": "2.6g",
+    "Trans Fat": "0g",
+    "Polyunsaturated Fat": "5.5g",
+    "Monounsaturated Fat": "16g",
+    "Cholesterol": "0mg",
+    "Sodium": "180mg",
+    "Total Carbohydrate": "50g",
+    "Dietary Fiber": "16g",
+    "Total Sugars": "0g",
+    "Includes 0g Added Sugars": "0%",
+    "Protein": "14g",
+    "Vitamin D": "0mcg",
+    "Calcium": "642mg",
+    "Iron": "21.4mg",
+    "Potassium": "1281mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and humidity\nOnce opened, store in an airtight container",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fenugreek",
@@ -1568,7 +2385,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40009421_9-organic-tattva-fenugreek.jpg"
-    }
+    },
+    "barcode": "8906055442111"
    }
   ],
   "images": [
@@ -1590,7 +2408,35 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009421-6_2-organic-tattva-fenugreek.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your culinary experience with Organic Tattva Methi/Fenugreek Seeds. These aromatic seeds boast a complex, nutty and slightly sweet flavour that can enhance a wide range of traditional and modern recipes. Carefully processed and packed under hygienic conditions, the seeds retain their natural oils and freshness, providing an authentic taste and exceptional nutritional value. Organic and additive-free, these versatile seeds are rich in antioxidants, vitamins and minerals, making them a must-have ingredient for the health-conscious kitchen. Whether you're preparing classic dishes or exploring new flavours, Organic Tattva Fenugreek Seeds will add a delightful depth of flavour and aroma to your culinary creations. Enjoy the benefits of this gluten-free, vegan superfood that also aids in weight loss and controls blood sugar levels.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g",
+    "Calories": "390 kcal",
+    "Total Fat": "6g",
+    "Saturated Fat": "0.8g",
+    "Trans Fat": "0g",
+    "Polyunsaturated Fat": "4g",
+    "Monounsaturated Fat": "1g",
+    "Cholesterol": "0mg",
+    "Sodium": "60mg",
+    "Total Carbohydrate": "63g",
+    "Dietary Fiber": "23g",
+    "Total Sugars": "0g",
+    "Includes 0g Added Sugars": "0%",
+    "Protein": "21g",
+    "Vitamin D": "0mcg",
+    "Calcium": "180mg",
+    "Iron": "30mg",
+    "Potassium": "775mg"
+   },
+   "storageInstructions": "Store in a cool, dry place\nTransfer contents to an airtight container after opening",
+   "manufacturerName": "Mehrotra Consumer Product Pvt Ltd",
+   "fssaiLicense": "10019051003029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Black Mustard",
@@ -1606,7 +2452,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40002634_10-organic-tattva-organic-seeds-black-mustard.jpg"
-    }
+    },
+    "barcode": "8906055442029"
    }
   ],
   "images": [
@@ -1628,7 +2475,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002634-6_2-organic-tattva-organic-seeds-black-mustard.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Tattva Organic Black Mustard is a premium choice for those seeking quality and purity in their spices. Grown organically without synthetic pesticides or fertilizers, these black mustard seeds are rich in flavour and nutritional benefits. Known for their strong, pungent taste, they add depth to various dishes and pickles. Organic Tattva ensures stringent quality control from seed to packaging, maintaining the integrity of the product. Whether used in cooking or for health remedies, Organic Black Mustard from Organic Tattva promises authenticity and superior taste, making it a preferred option among consumers who value organic and wholesome ingredients.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Calories": "540",
+    "Total Fat": "35g",
+    "Saturated Fat": "2.2g",
+    "Trans Fat": "0g",
+    "Polyunsaturated Fat": "9.2g",
+    "Monounsaturated Fat": "23.8g",
+    "Cholesterol": "0mg",
+    "Sodium": "15mg",
+    "Total Carbohydrate": "33g",
+    "Dietary Fiber": "11g",
+    "Total Sugars": "0g",
+    "Includes Og Added Sugars": "0%",
+    "Protein": "23g",
+    "Vitamin D": "0mcg",
+    "Calcium": "270mg",
+    "Iron": "7.2mg",
+    "Potassium": "720mg"
+   },
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Brown Mustard",
@@ -1666,7 +2539,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002635-6_2-organic-tattva-organic-seeds-brown-mustard.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Organic Brown mustard seeds are spicy and hot and are used in making mustards and in curry recipes. It is hotter in flavor than yellow mustard and is used in little amounts either whole or ground, in marinades, vinaigrettes, stews, sauces, soups, pickling, and with seafood, poultry and meats.",
+   "ingredients": "Organic Brown Mustard",
+   "nutritionalInfo": {
+    "Serving Size": "100g",
+    "Energy": "469 kcal",
+    "Carbohydrates": "34.94 g",
+    "Sugars": "6.89 g",
+    "Dietary Fibre": "14.7 g",
+    "Total Fat": "28.76 g",
+    "Saturated Fat": "1.46 g",
+    "Monounsaturated Fat": "19.83 g",
+    "Polyunsaturated Fat": "5.39 g",
+    "Protein": "24.94 g",
+    "Water": "6.86 g"
+   },
+   "storageInstructions": "* Store in a cool, dry place\n* Transfer to an airtight container after opening",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rasam Powder",
@@ -1704,7 +2597,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128466-6_2-organic-tattva-organic-rasam-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the delightful flavours of Organic Tattva's Organic Rasam Powder, a harmonious blend of aromatic spices that elevates your culinary experience. This flavourful powder brings a tangy and spicy kick to your soups, curries, and other dishes, perfectly balancing the rich aroma and peppery notes. Crafted with high-quality, organic ingredients, this rasam powder ensures a natural and healthy experience, allowing you to indulge in the authentic taste of traditional Indian cuisine. The convenient packaging makes it easy to store and use, so you can effortlessly enhance the flavour of your meals whenever the craving strikes. Unlock a world of deliciousness with Organic Tattva's Organic Rasam Powder, a true delight for your senses.",
+   "ingredients": "Organic Spices",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "5g",
+    "Energy (Kcal)": "492.14",
+    "Total Fat (g)": "28.22",
+    "Total Carbohydrates (g)": "41.19",
+    "Total Sugar (g)": "6.60",
+    "Protein (g)": "18.35"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Rice Dosa Ready Mix",
@@ -1739,7 +2646,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206877-5_3-organic-tattva-organic-rice-dosa-ready-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Everyone's favourite South Indian-style, deliciously crispy, anytime meal.\nRich in protein\nZero Trans Fat\nMakes 10-12 dosas\nReady to Cook pre-mix.\nOnly requires water to be added.\nPrepare as per instructions provided on the pack.",
+   "ingredients": "Rice Flour* (52%), Black Gram Dal* (28%), Beaten Rice*, Bengal Gram Dal*, Edible Vegetable Oil* (Organic Sunflower Oil), Rock Salt, Raising Agent (Ins 500 Iii), Acidity Regulator (Ins 296), Fenugreek*. Contains Permitted Natural Antioxidant (Ins 307 B)\n*Organic Ingredient",
+   "usageInstructions": "Ready to cook.",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "fssaiLicense": "10012022000719",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Multigrain Dosa Ready Mix",
@@ -1774,7 +2689,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40259477-5_4-organic-tattva-organic-multigrain-dosa-ready-mix-crispy-source-of-iron-calcium-zero-trans-fat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Organic Tattva’s Multigrain Dosa is a flavourful healthy meal for your daily breakfast fix. This dosa is a delicious package of the goodness of multi-grains. This is a light and fluffy option for breakfast or as an evening snack after work or school. You can put in some potato, cabbage, and paneer stuffing in the centre to satiate your hunger pangs and make you full. You can have it with some coconut chutney and sambar or even experiment with pairing this dosa with some chicken curry or masala gravy. It is easy and effortless to make and takes hardly any time. It is perfect for a Sunday brunch with your entire family. Explore the entire range of Organic Tattva instant mixes including khatta dhokla, multigrain dosa, uttapam, rava upma and more only on Big Basket!",
+   "ingredients": "Rice Flour (52%), Black Gram Dal (28%), Beaten Rice, Bengal Gram Dal, Edible Vegetable Oil (Organic Sunflower Oil), Rock Salt, Raising Agent (INS 500 Iii), Acidity Regulator (INS 296), Fenugreek. Contains Permitted Natural Antioxidant (INS 307 B) *Organic Ingredient",
+   "usageInstructions": "1. Mix one measure of multigrain dosa mix to 1 ½ measure of water, to form a smooth batter and keep aside for 5 minutes.\n2. Grease the non-stick tava and heat on a medium flame. Sprinkle little water and wipe with a cloth.\n3. Pour enough batter and spread it evenly in a circular motion. Add oil to the edges and centre and roast till crispy Serve hot.",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Uttapam Ready Mix",
@@ -1809,7 +2732,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40259478-5_4-organic-tattva-organic-uttapam-ready-mix-crispy-source-of-protein-zero-cholesterol.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Organic Tattva’s Uttapam is a flavourful South Indian delicacy that is quick to make and easy to prepare.\nMade with rice, black gram and wheat, this delicious uttapam mix is a simple fix for when you want to indulge in authentic South Indian cuisine at home. Add some vegetables of your choice to make this uttapam delicious and nutritious. You can have this uttapam with some coconut or mint chutney, with gun powder chutney or even sambar. This uttapam is enjoyed by kids and adults as well. It is soft and spongy full of flavours. You can choose to make it soft or crispy. This is a great way to get your kids to eat more veggies without making any fuss.\nExplore the entire range of Organic Tattva instant mixes including khatta dhokla, multigrain dosa, uttapam, rava upma and more only on Big Basket!",
+   "ingredients": "Rice (62%), Black Gram Dal, Refined Wheat Flour, Edible Vegetable Oil (Organic Sunflower Oil), Fenugreek, Salt, Raising Agent (INS 500 Ii), Acidity Regulators (INS 296), Contains Permitted Natural Antioxidant (INS 307 B) *Organic Ingredient",
+   "usageInstructions": "1. Mix one measure of Uttapam mix to 1 measure of water, into a smooth batter and keep aside for 5 minutes. Add little water and mix well, if required.\n2. Heat a non-stick tava on a medium flame, sprinkle little water and wipe with a cloth. Pour enough batter and spread it gently to form a thick pancake.\n3. Spread 1 tbsp of chopped onion, tomatoes and fresh coriander, along with ½ tsp of chopped green chilly on the uttappam, and press with your wet palm. Add oil to the edges and centre and roast till crispy Serve hot.",
+   "manufacturerName": "Mehrotra Consumer Products Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10019051003029"
+  }
  },
  {
   "title": "Vada Ready Mix",
@@ -1844,7 +2775,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206880-5_3-organic-tattva-organic-vada-ready-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Make tasty and delicious vadas instantly at the comfort of your home. Have it all by yourself or serve it to your loved ones. \nIndia's favourite South Indian-style breakfast, crispy and a treat for the palate.\nSource of protein\nZero Trans Fat\nMake 12-14 videos\nReady to Cook pre-mix.\nOnly requires water to be added.\nPrepare as per instructions provided on the pack.",
+   "ingredients": "Black Gram Dal* (80%), Refined Wheat Flour*, Edible Vegetable Oil* (Organic Sunflower Oil), Bengal Gram Dal*, Rice Flour*, Rock Salt, Raising Agent (Ins 500 Ii), Acidity Regulator (Ins 296)\nContains Permitted Natural Antioxidant (Ins 307 B)\n*Organic Ingredient",
+   "usageInstructions": "Ready to cook.",
+   "manufacturerName": "Mehtro Consumer Product pvt Ltd",
+   "fssaiLicense": "10012022000719",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Green Tea",
@@ -1860,7 +2799,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40189829_4-organic-tattva-green-tea.jpg"
-    }
+    },
+    "barcode": "8906055442890"
    }
   ],
   "images": [
@@ -1882,7 +2822,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189829-6_2-organic-tattva-green-tea.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Being completely natural, Organic Green Tea leaves retain their original green colour and other constituent minerals. Organic Green Tea is best known for its fresh fragrance and soothing properties.",
+   "ingredients": "Organic Darjeeling Green Tea",
+   "usageInstructions": "Place the teabag in a cup.\nBring water to a rolling boil and immediately pour over the teabag.\nSteep for 3-5 minutes.\nRemove the teabag and enjoy your tea.",
+   "manufacturerName": "Mehrotra Consumer Products Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12715055000323"
+  }
  },
  {
   "title": "Green Tea & Lemon",
@@ -1917,7 +2865,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189830-5_2-organic-tattva-green-tea-lemon.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the refreshing and soothing experience of Organic Tattva's Organic Green Tea with a twist of lemon. Crafted from the finest organic Darjeeling green tea leaves and infused with the zesty flavour of organic lemongrass, this USDA certified organic tea is a true delight for the senses. Rich in antioxidants, it promotes a healthy lifestyle, while the natural lemon flavour adds a rejuvenating twist, making it the perfect energising drink for any time of day. Free from harmful pesticides and chemicals, this pure and natural tea offers a fresh fragrance and soothing properties, with the added benefit of being an ideal digestive tonic. Enjoy the perfect cup of organic green tea, crafted with care to elevate your daily wellness routine.",
+   "ingredients": "Organic Darjeeling Green Tea, Organic Lemongrass",
+   "nutritionalInfo": {
+    "Serving Size": "1 infusion bag (2 g)",
+    "Total Calories (kcal)": "2.1 kcal",
+    "Total Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Total Carbohydrate (g)": "0.1 g",
+    "Protein (g)": "0.4 g",
+    "Vitamin A (mg)": "0.8 mg",
+    "Vitamin C (mg)": "1.1 mg",
+    "Calcium (mg)": "56.2 mg",
+    "Iron (mg)": "0.7 mg",
+    "Sodium (mg)": "28.3 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Mehrotra Consumer Products Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12715055000323"
+  }
  },
  {
   "title": "Tulsi Green Tea",
@@ -1933,7 +2902,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40189831_1-organic-tattva-tulsi-green-tea.jpg"
-    }
+    },
+    "barcode": "8906055442869"
    }
   ],
   "images": [
@@ -1952,6 +2922,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189831-5_1-organic-tattva-tulsi-green-tea.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Popularly known to help in weight loss, Tulsi Green tea improves metabolism. Organic Tulsi Green Tea provides a natural boost of energy since the combination of tulsi and green tea leaves is completely free from any chemical preservatives. Organic Tattva’s Organic Tulsi Green Tea is packed with the goodness of protein, calcium, iron and vitamins.",
+   "ingredients": "Rama Tulsi, Krishna Tulsi, Vana Tulsi, Green Tea.",
+   "usageInstructions": "Place the teabag in a cup.\nBring water to a rolling boil and immediately pour over the teabag.\nSteep for 3-5 minutes.\nRemove the teabag and enjoy your tea.",
+   "manufacturerName": "Mehrotra Consumer Products Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "12715055000323"
+  }
  }
 ]

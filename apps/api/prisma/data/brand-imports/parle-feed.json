@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20004286_8-parle-glucos-biscuits-parle-g.jpg"
-    }
+    },
+    "barcode": "8901719123870"
    },
    {
     "title": "28g",
@@ -80,7 +81,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/104065_1-parle-parle-g-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle India has been the largest manufacturer of biscuits and confectionery for almost 80 years. Makers of the world's largest selling biscuit Parle-G and a host of other extremely popular brands, the Parle name symbolises quality, nutrition, and great taste. With a reach spanning even to the remotest villages of India, the company has come an exceptionally long way since its inception.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "15 g",
+    "ENERGY (kcal)": "454.0",
+    "PROTEIN (g)": "6.9",
+    "CARBOHYDRATE (g)": "77.3",
+    "TOTAL SUGARS (g)": "25.5",
+    "ADDED SUGARS (g)": "25.0",
+    "TOTAL FAT (g)": "13.0",
+    "SATURATED FAT (g)": "6.0",
+    "TRANS FAT (g)": "0",
+    "CHOLESTEROL (mg)": "0",
+    "SODIUM (mg)": "296",
+    "RDA": "APPROX. VALUES RDA REQUIREMENT FOR AVERAGE ADULT PER DAY (2000 kcal)"
+   },
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "G Royale Biscuits",
@@ -96,7 +117,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40289830_2-parle-royale-biscuts.jpg"
-    }
+    },
+    "barcode": "8901719135491"
    }
   ],
   "images": [
@@ -118,7 +140,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289830-6_2-parle-royale-biscuts.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the royal taste of Parle-G Royale Glucose Biscuits, a beloved Indian classic that delights both children and adults alike. Crafted with the finest ingredients, these premium biscuits offer a delightful crunch and a balanced sweetness that pairs perfectly with your favourite beverages. Experience the rich legacy of this trusted brand, known for its energy-rich content and satisfying protein content.\nWhether you're packing a light snack for school or the office, or simply enjoying a moment of indulgence at home, Parle-G Royale Biscuits are the perfect choice to elevate your tea time and satisfy your cravings. Indulge in the melt-in-mouth texture and the high-quality ingredients that make this a truly premium biscuit experience.",
+   "ingredients": "Refined Wheat Flour, Sugar, Refined Palm Oil, Invert Sugar Syrup, Raising Agents, Milk Solids, Iodised Salt, Emulsifier Of Vegetable Origin, Flour Treatment Agent, Artificial Flavouring Substance Like Vanilla",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "12 g",
+    "Energy (kcal)": "464 kcal",
+    "Protein (g)": "6.5 g",
+    "Carbohydrate (g)": "74.5 g",
+    "Total Sugars (g)": "27.3 g",
+    "Added Sugars (g)": "26.5 g",
+    "Total Fat (g)": "15.5 g",
+    "Saturated Fat (g)": "7.2 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "268 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Parle Products Pvt Ltd",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milk Shakti Biscuits",
@@ -187,7 +231,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/216875_18-parle-marie-biscuits.jpg"
-    }
+    },
+    "barcode": "8901719140204"
    }
   ],
   "images": [
@@ -212,7 +257,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/216875-7_2-parle-marie-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful crunch and exceptional flavour of Parle Marie Biscuits. These light and crispy biscuits are the perfect companion for your tea or coffee, offering a joyful snacking experience. Crafted with care, Parle Marie Biscuits are not only delectable but also nutritionally proven to be excellent for your strength. Embrace the convenience of online shopping and have these delectable biscuits delivered right to your doorstep, without the hassle of searching grocery store aisles. Treat yourself or share the pleasure of these Parle Marie Biscuits with your loved ones, and enjoy the perfect balance of taste, texture, and togetherness.",
+   "ingredients": "REFINED WHEAT FLOUR (MAIDA) (72%), SUGAR, REFINED PALM OIL, INVERT SUGAR SYRUP, RAISING AGENTS [503 (ii), 500 (ii), 341 (i)], MILK SOLIDS, IODISED SALT, FLOUR TREATMENT AGENTS [223, 1101 (ii)], EMULSIFIER OF VEGETABLE ORIGIN [DIACETYLTARTARIC AND FATTY ACID ESTERS OF GLYCEROL], ADDED FLAVOURS (ARTIFICIAL FLAVOURING SUBSTANCES - MILK, BUTTER & VANILLA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "ENERGY": "451 kcal",
+    "PROTEIN": "7.4 g",
+    "CARBOHYDRATE": "77.4 g",
+    "OF WHICH SUGARS": "22.0 g",
+    "FAT": "12.4 g",
+    "SATURATED FAT": "5.8 g",
+    "TRANS FAT": "0 g"
+   },
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "20-20 Butter Cookies",
@@ -228,7 +289,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20004284_12-parle-20-20-butter-cookies.jpg"
-    }
+    },
+    "barcode": "8901719139963"
    },
    {
     "title": "30g",
@@ -266,7 +328,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/302099_9-parle-20-20-butter-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the irresistible richness of Parle 20-20 biscuits, a delightful blend of flavours that will delight your senses. These crispy, crunchy cookies are filled with the goodness of cashew, the buttery decadence of butter, and a subtle hint of jeera, creating a truly satisfying snacking experience. Satisfy your cravings anytime, anywhere, as you savour the rich, buttery texture and the harmonious interplay of flavours. Whether you're looking for a quick bite or a moment of indulgence, Parle 20-20 biscuits are the perfect companion, offering a taste of pure delight in every mouthful.",
+   "ingredients": "Wheat Flour, Sugar, Edible Vegetable Oil (Palm Oil), Invert Sugar Syrup, Milk Solids, Raising Agents (Ins 503(Ii), Ins 500(Ii)), Iodised Salt, Butter (0.3%), Emulsifier [Di-Acetyl Tartaric Acid Esters Of Mono And Di-Glycerides Of Edible Vegetable Oils]",
+   "nutritionalInfo": {
+    "Energy": "491 kcal",
+    "Protein": "6.5 g",
+    "Carbohydrate": "70.3 g",
+    "Added Sugar": "23.2 g",
+    "Total Fat": "20.4 g",
+    "Saturated Fat": "9.5 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "0.5 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry place",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fab Bourbon Chocolate Biscuits",
@@ -282,7 +361,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40005873_11-parle-fab-bourbon.jpg"
-    }
+    },
+    "barcode": "8901719136498"
    },
    {
     "title": "54g",
@@ -325,7 +405,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289825_2-parle-fab-bourbon-cream-biscuits-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich and decadent taste of Parle Fab Bourbon, the perfect treat for any occasion. Buying Parle Fab Bourbon online offers you the convenience of having your favourite biscuits delivered directly to your home. Parle Hide and Seek Bourbon Chocolate Cream Biscuit have captured the hearts as well as the flavour buds of children and adults alike. The chocolate crumbs are wrecked down into crunchy little marvels that are mixed with the delicately refined hot baked cookies, creating a delightful and nostalgic treat that brings back fond memories of childhood. These biscuits are also high in carbohydrates, minerals, proteins and which add more energy to your day. Parle Hide and Seek Bourbon Chocolate Cream Biscuit lets you play a game of hide and seek to find the hidden chocolate cream sandwiched between 2 biscuits, offering a creamy and chocolaty rich experience in an attractive package.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Refined Palm Oil, Cocoa Solids (2.7%), Invert Sugar Syrup, Raising Agents [503(Ii),500(Ii)], Iodised Salt And Emulsifier (Soy Lecithin)",
+   "nutritionalInfo": {
+    "Serving Size": "18 g",
+    "Energy": "473 kcal",
+    "Protein": "4.8 g",
+    "Carbohydrate": "75.6 g",
+    "Total Sugars": "40.8 g",
+    "Added Sugars": "40.6 g",
+    "Total Fat": "16.8 g",
+    "Saturated Fat": "8.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "100 mg"
+   },
+   "storageInstructions": "*Store in a cool dry place",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Magix Orange Creme Biscuits",
@@ -342,7 +443,8 @@
     "estimated": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40101059_8-parle-magix-creme-orange.jpg"
-    }
+    },
+    "barcode": "8901719141072"
    }
   ],
   "images": [
@@ -367,7 +469,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40101059-7_1-parle-magix-creme-orange.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The pack contains Orange flavour sandwich biscuits. Escape into the delicious Magical Masti of rich creamy goodness with Parle Magix Creme Biscuits. Biscuits are a great way to snack. Biscuits are loved by people of all age groups and are a wonderful accompaniment with tea or coffee. Serve these biscuits to guests at home.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Refined Palm Oil, Invert Sugar Syrup, Iodised Salt, Raising Agents [503 (ii), 500 (ii)], Starch and Emulsifier of Vegetable Origin (Soy Lecithin), Contains Added Flavours (Artificial Flavouring Substances - Orange) and Permitted Synthetic Food Colours [129, 110]",
+   "nutritionalInfo": {
+    "Serving Size": "13.6 g",
+    "Energy (kcal)": "466",
+    "Protein (g)": "5.5",
+    "Carbohydrate (g)": "76.6",
+    "Total Sugars (g)": "34.4",
+    "Added Sugars (g)": "34.1",
+    "Total Fat (g)": "15.3",
+    "Saturated Fat (g)": "7.1",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "233"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Magix Strawberry Creme Biscuits",
@@ -383,7 +505,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40101058_8-parle-magix-creme-strawberry.jpg"
-    }
+    },
+    "barcode": "8901719141102"
    }
   ],
   "images": [
@@ -408,7 +531,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40101058-7_1-parle-magix-creme-strawberry.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The pack contains strawberry flavour sandwich biscuits. Escape into the delicious Magical Masti of rich creamy goodness with Parle Magix Creme Biscuits.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Happy Happy Choco-Chip Cookies",
@@ -424,7 +554,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40204967_5-parle-happy-happy-cookies.jpg"
-    }
+    },
+    "barcode": "8901719130038"
    },
    {
     "title": "31.5g",
@@ -470,7 +601,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204966_6-parle-happy-happy-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Happy Happy Choco-chip cookies are perfectly baked and topped with delicious choco-chips. It is a perfect fusion of fun and indulgence. Made with the best ingredients. This delicious biscuit can be savoured with a hot cup of tea or coffee. Mouthwatering delicious taste and aroma that lingers in the mouth for long.\nBenefits\nIt is a perfectly baked cookie topped with delicious choco-chips.\nMade with the best ingredients.\nSavour them with a hot cup of tea or coffee.\nIt has a delicious taste and aroma.",
+   "ingredients": "Sugar, Refined Wheat Flour, Refined Palm Oil, Choco Chips, Edible Vegetable Fat, Cocoa Solids, Emulsifier. Artificial Flavouring Substances, Cocoa Solids, Invert Sugar Syrup, Raising Agents, Iodised Salt & Emulsifier, Contains Permitted Natural Food Colour & Added Flavours.",
+   "usageInstructions": "It goes well with beverages like tea or coffee.\nConveniently packed easy to carry for a quick bite.",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Chocolate Chip Cookies",
@@ -486,7 +625,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/302121_15-parle-hide-seek-chocolate.jpg"
-    }
+    },
+    "barcode": "8901719139734"
    },
    {
     "title": "200g",
@@ -533,7 +673,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289827_1-parle-hide-seek-choco-chip-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Platina Hide & Seek Chocolate Chip Cookies are a delightful blend of rich chocolate and buttery goodness. Each bite offers a perfect balance of crispy cookie and smooth chocolate chips, creating a heavenly treat. Ideal for indulging alone or sharing, these cookies are loved for their irresistible taste and texture. Platina ensures quality with every batch, baking these cookies to golden perfection. Whether paired with milk, tea, or enjoyed straight from the pack, Platina Hide & Seek Chocolate Chip Cookies promise a satisfying snack experience. Perfect for satisfying sweet cravings with a touch of chocolaty bliss in every bite.",
+   "ingredients": "Refined Wheat Flour (Maida), Chocolate (23%), Sugar, Cocoa Solids, Cocoa Butter, Dextrose, Emulsifier Of Vegetable Origin (Soya Lecithin), Artificial Flavouring Substances (Vanilla), Refined Palm Oil, Invert Sugar Syrup, Raising Agents (503(Ii), 500(Ii)), Cocoa Solids, Iodised Salt, Emulsifier Of Vegetable Origin (Diacetyl Tartaric And Fatty Acid Esters Of Glycerol).\nContains Added Flavour: Artificial Flavouring Substances (Vanilla).",
+   "nutritionalInfo": {
+    "Energy": "479 kcal (per 100g)",
+    "Protein": "5.9 g (per 100g)",
+    "Carbohydrate": "73.4 g (per 100g)",
+    "Of Which Sugars": "32.2 g (per 100g)",
+    "Fat": "18.0 g (per 100g)",
+    "Saturated Fat": "9.4 g (per 100g)",
+    "Trans Fat": "0 g (per 100g)"
+   },
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Choco Chip Cookies with Almonds",
@@ -574,7 +729,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204944-7_3-parle-hide-seek-chocolate-almonds.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made with the world’s best Real Choco Chips, Parle Platina Hide & Seek is the most preferred brand and a market leader in the Chocolate Chip Cookies segment. Indulge in a perfect blend of Real Choco Chips and Delicious Almonds, offering a delectable taste.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Refined Palm Oil, Chocolate (10.7%) [Sugar, Cocoa Solids, Cocoa Butter, Dextrose, Emulsifier Of Vegetable Origin (Soya Lecithin) And Artificial Flavouring Substances - Vanilla], Almonds (4%), Invert Sugar Syrup, Raising Agents [503 (Ii), 500 (Ii)], Cocoa Solids, Iodised Salt, Emulsifier Of Vegetable Origin [Diacetyl Tartaric And Fatty Acid Esters Of Glycerol], Added Flavours (Artificial Flavouring Substances - Chocolate And Nut)",
+   "nutritionalInfo": {
+    "Energy": "496 kcal",
+    "Protein": "6.3 g",
+    "Carbohydrate": "69.5 g",
+    "Of which Sugars": "28.9 g",
+    "Fat": "21.4 g",
+    "Saturated Fat": "9.6 g",
+    "Trans Fat": "0 g"
+   },
+   "manufacturerName": "McCain Foods (India) Private Limited",
+   "fssaiLicense": "10013011001570",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Caffe Mocha Cookies",
@@ -590,7 +761,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100145877_13-parle-hide-seek-caffe-mocha-cookies.jpg"
-    }
+    },
+    "barcode": "8901719117206"
    }
   ],
   "images": [
@@ -615,7 +787,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100145877-7_3-parle-hide-seek-caffe-mocha-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made with the world’s best Real Choco Chips, Parle Platina Hide & Seek is the most preferred brand and a market leader in the Chocolate Chip Cookies segment. Indulge in first-of-its-its kind Coffee-flavoured Choco Chip Cookies. Indulge in the irresistible combination of rich coffee and chocolate with Parle Platina Hide & Seek Caffe Mocha Flavoured Cookies. Each bite delivers the perfect blend of smooth mocha flavor and crunchy choco chips, offering a delightful treat for coffee lovers. Perfect for a snack or paired with your favourite beverage, these cookies bring a gourmet experience to every moment.",
+   "ingredients": "Refined Wheat Flour (Maida), Chocolate (21%) [Sugar, Cocoa Solids, Cocoa Butter, Dextrose, Emulsifier Of Vegetable Origin (Soya Lecithin) And Artificial Flavouring Substances – Vanilla], Sugar, Refined Palm Oil, Invert Sugar Syrup, Coffee And Chicory Mixture (1%), Raising Agents [503 (Ii), 500 (Ii)], Iodised Salt And Emulsifier Of Vegetable Origin (Diacetyl Tartaric And Fatty Acid Esters Of Glycerol), Contains Permitted Natural Food Colour (150d) And Added Flavour (Artificial Flavouring Substances – Coffee).",
+   "nutritionalInfo": {
+    "Energy": "479 kcal",
+    "Protein": "5.7 g",
+    "Carbohydrate": "74.0 g",
+    "Of which Sugars": "32.0 g",
+    "Fat": "17.8 g",
+    "Saturated Fat": "9.2 g",
+    "Trans Fat": "0 g"
+   },
+   "storageInstructions": "Store it in a dry place. Keep away from moist areas.",
+   "manufacturerName": "Parle Biscuits Pvt Ltd 131/2 Kirkhindi Khopoli - Pen Road Raigad MH-410202",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Black Bourbon Choco Creme",
@@ -631,7 +819,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40005875_9-parle-hide-seek-black-bourbon-choco.jpg"
-    }
+    },
+    "barcode": "8901719133114"
    }
   ],
   "images": [
@@ -653,7 +842,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005875-6_3-parle-hide-seek-black-bourbon-choco.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the ultimate chocolate experience with Parle's Hide & Seek Black Bourbon Vanilla Biscuits. These first-of-their-kind chocolate chip cookies have been delighting Indian consumers since 1996, offering a rich, chocolatey delight. Featuring a delectable combination of crisp chocolate biscuits, a creamy chocolate-creme filling, and a sprinkling of sugar crystals, each bite promises a sweet surprise.\nCrafted with high-quality dark cocoa and a creamy vanilla filling, these biscuits provide a truly indulgent and satisfying treat. Whether enjoyed as a snack or paired with a cup of tea, the Hide & Seek Black Bourbon Vanilla Biscuits are sure to tantalize your taste buds and leave you craving more of their irresistible flavour.",
+   "ingredients": "SUGAR, WHEAT FLOUR, EDIBLE VEGETABLE OIL (PALM OIL), COCOA SOLIDS (7.5%), SPRINKLED SUGAR (2%), INVERT SUGAR SYRUP, EDIBLE COMMON SALT, RAISING AGENTS [503 (ii), 500 (ii)], EMULSIFIER [ LECITHIN OF SOYA ORIGIN ], PERMITTED NATURAL COLOUR [150d], ADDED FLAVOURS (ARTIFICIAL FLAVOURING SUBSTANCES - CHOCOLATE, VANILLA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "ENERGY": "470 kcal",
+    "PROTEIN": "5.2 g",
+    "CARBOHYDRATE": "75.8 g",
+    "OF WHICH SUGARS": "42.8 g",
+    "FAT": "16.2 g",
+    "SATURATED FAT": "8.3 g",
+    "TRANS FAT": "0.1 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Black Bourbon Vanilla Creme",
@@ -669,7 +875,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40007120_5-parle-hide-seek-black-bourbon-vanilla.jpg"
-    }
+    },
+    "barcode": "8901719133121"
    }
   ],
   "images": [
@@ -694,7 +901,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007120-7_3-parle-hide-seek-black-bourbon-vanilla.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the timeless delight of Hide & Seek Black Bourbon Vanilla Crème Sandwich Biscuits. Featuring rich chocolate biscuits layered with a smooth, creamy vanilla filling, every bite delivers the perfect balance of crunch and sweetness. Ideal for snacking or sharing, these classic treats bring a delicious twist to your tea-time moments, making every indulgence truly satisfying.",
+   "ingredients": "Sugar, Wheat Flour, Edible Vegetable Oil (Palm Oil), Cocoa Solids (4.5%), Sprinkled Sugar (2%), Invert Sugar Syrup, Edible Common Salt, Raising Agents (503(I), 500(Ii)), Emulsifier (Lecithin Of Soya Origin), Permitted Natural Colour (150d), Added Flavours (Artificial Flavouring Substances – Chocolate, Vanilla).",
+   "nutritionalInfo": {
+    "Energy": "474 kcal",
+    "Protein": "4.6 g",
+    "Carbohydrate": "75.6 g",
+    "Of which Sugars": "45.0 g",
+    "Total Fat": "17.0 g",
+    "Saturated Fat": "8.7 g",
+    "Trans Fat": "0.1 g"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Choco Rolls",
@@ -710,7 +933,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40057895_5-parle-hide-seek-choco-rolls.jpg"
-    }
+    },
+    "barcode": "8901719136863"
    },
    {
     "title": "75g",
@@ -756,7 +980,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204934_6-parle-platina-hide-seek-choco-rolls.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "First, of its kind chocolate chip cookies in India, Hide Seek was launched in 1996; best known today for its rich chocolaty experience. Delicious choco-filling in crunchy and crispy rolls, offering a rich Chocolaty experience.  Parle Platina is the premium and exclusive range from the House of Parle. Our indulgent and aspirational range includes Hide & Seek, Milano, Nutricrunch & Mexitos, made from the finest ingredients such as Dark Cocoa, Mixed Berries and Real Chocolate Chips.",
+   "ingredients": "Choco Cream, Wheat Flour, Edible Vegetable Oil, Sugar, Invert Sugar Syrup, Salt.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Choco Chip Creme Sandwich Assorted",
@@ -772,7 +1004,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40289826_4-parle-hide-seek-creme-combi-creme-sandwiches-assorted-flavours.jpg"
-    }
+    },
+    "barcode": "8901719135828"
    }
   ],
   "images": [
@@ -797,7 +1030,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289826-7_3-parle-hide-seek-creme-combi-creme-sandwiches-assorted-flavours.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "One bite, and you’re in for two much fun, magically layered with Parle Platina Hide & Seek Creme Sandwiches. Savour the crunch of choco chip cookies with a delicious swirl of creme sandwiched within! 1. Munch on it throughout the day.\n2. Serve it as an evening snack for kids or at family gatherings.",
+   "ingredients": "Hide & Seek Strawberry Flavoured Choco Chip Sandwich Biscuits\nRefined Wheat Flour (Maida), Sugar, Refined Palm Oil, Choco Chips (12%) [Sugar, Edible Vegetable Fat (Hydrogenated Oils), Cocoa Solids, Dextrose, Emulsifier Of Vegetable Origin (Soy Lecithin), Artificial Flavouring Substances (Vanilla)], Invert Sugar Syrup, Cocoa Solids (1.5%), Raising Agents (503(Ii), 500(Ii)), Iodised Salt, Emulsifiers Of Vegetable Origin (Soy Lecithin, 472e), Permitted Natural Colour (150d), Synthetic Food Colour (129), Added Flavours (Artificial Flavouring Substances – Chocolate, Strawberry).Contains: Wheat, Soy\nHide & Seek Orange Flavoured Choco Chip Sandwich Biscuits\nRefined Wheat Flour (Maida), Sugar, Refined Palm Oil, Choco Chips (12%) [Sugar, Edible Vegetable Fat (Hydrogenated Oils), Cocoa Solids, Dextrose, Emulsifier Of Vegetable Origin (Soy Lecithin), Artificial Flavouring Substances (Vanilla)], Invert Sugar Syrup, Cocoa Solids (1.5%), Raising Agents (503(Ii), 500(Ii)), Iodised Salt, Emulsifiers Of Vegetable Origin (Soy Lecithin, 472e), Permitted Natural Colour (150d), Synthetic Food Colour (110), Added Flavours (Artificial Flavouring Substances – Orange, Chocolate).Contains: Wheat, Soy\nHide & Seek Vanilla Flavoured Choco Chip Sandwich Biscuits\nRefined Wheat Flour (Maida), Sugar, Refined Palm Oil, Choco Chips (12%) [Sugar, Edible Vegetable Fat (Hydrogenated Oils), Cocoa Solids, Dextrose, Emulsifier Of Vegetable Origin (Soy Lecithin), Artificial Flavouring Substances (Vanilla)], Invert Sugar Syrup, Cocoa Solids (1.5%), Raising Agents (503(Ii), 500(Ii)), Iodised Salt, Emulsifiers Of Vegetable Origin (Soy Lecithin, 472e), Permitted Natural Colour (150d), Added Flavours (Artificial Flavouring Substances – Chocolate, Vanilla).Contains: Wheat, Soy\nHide & Seek Chocolate Flavoured Choco Chip Sandwich Biscuits\nRefined Wheat Flour (Maida), Sugar, Refined Palm Oil, Choco Chips (12%) [Sugar, Edible Vegetable Fat (Hydrogenated Oils), Cocoa Solids, Dextrose, Emulsifier Of Vegetable Origin (Soy Lecithin), Artificial Flavouring Substances (Vanilla)], Cocoa Solids (4.4%), Invert Sugar Syrup, Raising Agents (503(Ii), 500(Ii)), Iodised Salt, Emulsifiers Of Vegetable Origin (Soy Lecithin, 472e), Permitted Natural Colour (150d), Added Flavours (Artificial Flavouring Substances – Chocolate, Vanilla).\nContains: Wheat, Soy",
+   "nutritionalInfo": {
+    "Serving Size": "12.5 g",
+    "Servings per container": "32",
+    "Energy": "500 kcal",
+    "Protein": "4.5 g",
+    "Carbohydrate": "70.4 g",
+    "Total Sugars": "39.8 g",
+    "Added Sugars": "39.6 g",
+    "Total Fat": "22.3 g",
+    "Saturated Fat": "12.1 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "142 mg"
+   },
+   "manufacturerName": "Parle Products Pvt Ltd",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Milano Choco Chip Cookies",
@@ -813,7 +1067,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100590731_10-parle-milano-choco-chip-cookies.jpg"
-    }
+    },
+    "barcode": "8901719137037"
    }
   ],
   "images": [
@@ -832,7 +1087,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100590731-5_3-parle-milano-choco-chip-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in a delightful surprise with Hide & Seek Milano Choco Chip cookies. It has the exact balance of crunchiness and chocolate.\nEnjoy the rich and delightful taste of Parle Platina Hide & Seek Milano Collections Choco Chip Biscuits. These premium biscuits feature a perfect blend of crunchy layers and generous chocolate chips, offering a melt-in-your-mouth experience. Ideal for snack time or with your favourite beverage, these biscuits make every bite a delectable treat, loved by all.",
+   "ingredients": "Refined Wheat Flour (Maida), Choco Chips (19.6%), Sugar, Edible Vegetable Fat (Hydrogenated Oils), Cocoa Solids, Dextrose, Emulsifier (Soy Lecithin), Artificial Flavouring Substance (Vanilla), Refined Palm Oil, Sugar, Chocolate Chips (6.5%), Cocoa Solids, Cocoa Butter, Dextrose, Emulsifier (Soy Lecithin), Artificial Flavouring Substance - Vanilla, Invert Sugar Syrup, Liquid Glucose, Butter, Raising Agents (503 (Ii)), Skimmed Milk Powder, Cocoa Solids, Iodised Salt, Emulsifier Of Vegetable Origin (472e).",
+   "nutritionalInfo": {
+    "Energy": "521 kcal",
+    "Protein": "5.3 g",
+    "Carbohydrate": "65.2 g",
+    "Total Sugars": "31.7 g",
+    "Added Sugars": "30.3 g",
+    "Total Fat": "26.6 g",
+    "Saturated Fat": "15.8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "4.0 mg",
+    "Sodium": "200 mg"
+   },
+   "manufacturerName": "Patwari Bakers Pvt Ltd B1/B2 Kappalur Indl Estate Madurai TN - 625008",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hide & Seek Milano Choco Filled Biscuits",
@@ -848,7 +1121,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40019261_10-parle-milano-centre-filled-dark-cookies-choco-delight.jpg"
-    }
+    },
+    "barcode": "8901719140938"
    },
    {
     "title": "200g",
@@ -876,7 +1150,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204936_9-parle-platina-milano-dark-choco-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience a sweet indulgence with Parle Milano Centre Filled Dark Cookies. The best choice for your chocolate cravings, they are perfect for your small hunger pangs too! Launched in 2006, Milano has today grown and evolved to become a synonym for chocolate indulgence in the cookies segment.",
+   "ingredients": "CHOCO CRÈME (33%), SUGAR, REFINED OILS (PALMOLEIN, PALM OIL), COCOA SOLIDS, EMULSIFIER (SOY LECITHIN), NATURE IDENTICAL AND ARTIFICIAL (VANILLIN) FLAVOURING SUBSTANCES, REFINED WHEAT FLOUR (MAIDA), REFINED PALM OIL, SUGAR, INVERT SUGAR SYRUP, LIQUID GLUCOSE, IODISED SALT, RAISING AGENTS [500 (ii), 503 (i), 341(i)], EMULSIFIER OF VEGETABLE ORIGIN (472e)",
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Parle Biscuits Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000118"
+  }
  },
  {
   "title": "Milano Minis Chocolate Chip Cookies",
@@ -914,7 +1196,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40057900-6_7-parle-milano-minis-chocolate-chip-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Every Milano is as rich and exotic as it is premium and delicious. Indulge in the sinful taste of Milano, a cookie with a reputation for romance, and enjoy everything that follows.\nA treat to your taste buds spoil in devilish festivities by biting into Parle Hide & Seek Milano Chocolate Chip Cookies. It has the exact balance of crunchiness and chocolate. Taste and delight flow bite after bite. There is a secret following all Milano, making it equally unbelievably and mysteriously luxurious. A wonderful hint of these cookies and chocolate is yummy, tasty, ready and crunchy to melt in your mouth.",
+   "ingredients": "Wheat Flour, Chocolate (26 %) (Sugar, Cocoa Solids, Cocoa Butter, Dextrose Emulsifier (Lecithin Of Soya Origin) And Added Flavour (Artificial Flavouring Substances- Vanilla)], Edible Vegetable Oil (Palm Oil), Sugar, Invert Sugar Syrup, Milk Solids, Cocoa Solids (0.7%), Raising Agents (503 (Ii). 500 (Ii)), Edible Common Salt, Butter And Emulsifier [ Die-Acetyl Tartaric Acid Esters Of Mono And Di-Glycerides Of Edible Vegetable Oils ]. Contains Added Flavours (Artificial Flavouring Substances Chocolate, Vanilla)",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Krack Jack Sweet & Salty Crackers",
@@ -1002,7 +1290,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100114531_6-parle-monaco.jpg"
-    }
+    },
+    "barcode": "8901719135156"
    },
    {
     "title": "29g",
@@ -1057,7 +1346,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204986_5-parle-monaco-classic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Monaco Salted Biscuits are light, crunchy biscuits offered with a namkeen or salty twist. They can be enjoyed at any time of the day and with something else.",
+   "ingredients": "WHEAT FLOUR, EDIBLE VEGETABLE OILS ( PALM OIL , PALMOLEIN OIL ), SUGAR, RAISING AGENTS [ 503 ( ii ), 500 (ii),341(i) ], INVERT SUGAR SYRUP, IODISED SALT ( 2.5% ), YEAST, ACIDITY REGULATORS [ 270, 296 ], EMULSIFIERS [ DI-ACETYL TARTARIC ACID ESTERS OF MONO AND DI-GLYCERIDES OF EDIBLE VEGETABLE OILS ], DOUGH CONDITIONER [ 223 ], IMPROVER [ AMYLASE & OTHER ENZYMES ( PAPAIN - 1101 ( ii ))], CONTAINS ADDED FLAVOUR ( ARTIFICIAL FLAVOURING SUBSTANCES - BUTTER )",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "ENERGY": "495 Kcal",
+    "PROTEIN": "7.7g",
+    "CARBOHYDRATE": "68.9g",
+    "OF WHICH SUGARS": "7.7g",
+    "FAT": "21.0g",
+    "SATURATED FAT": "9.9g",
+    "TRANS FAT": "0.0g"
+   },
+   "manufacturerName": "Marketed by",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Monaco Zeera Salty Snack",
@@ -1089,7 +1395,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374267-4_1-parle-monaco-zeera-salty-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Monaco Zeera is a popular savory biscuit snack known for its light, crispy texture and distinctive cumin (zeera) flavor. The product is positioned as a “crispy light salty snack,” making it a convenient choice for quick munching, tea-time, or pairing with toppings like cheese, chutneys, or spreads. Its mild saltiness combined with the aromatic taste of cumin gives it a simple yet appealing flavor profile that is widely enjoyed across age groups. The biscuits are easy to carry and consume on the go, making them a staple in many households for everyday snacking. However, being a processed product made with refined flour, oils, and flavouring agents, it is best consumed in moderation as part of a balanced diet.",
+   "ingredients": "Refined Wheat Flour (Maida), Refined Oils (Palmolein, Palm), Sugar, Raising Agents [INS 503(ii), INS 500(ii), INS 341(i)], Invert Sugar Syrup, Iodized Salt (2.4%), Cumin (Zeera) (2.3%), Yeast, Acidity Regulators [INS 270, INS 296], Flour Treatment Agents [INS 223, INS 1101(ii), INS 1100(i)], Emulsifier of Vegetable Origin (INS 472e), and Artificial (Butter) Flavouring Substance.\nAllergen Info: Contains Wheat and Sulphite.\nStorage Conditions: Store in a cool, hygienic and dry place.",
+   "nutritionalInfo": {
+    "Energy": "494 kcal",
+    "Protein": "8 g",
+    "Carbohydrate": "68.1 g",
+    "Total Sugars": "8.2 g",
+    "Added Sugars": "7.6 g",
+    "Total Fat": "21.1 g",
+    "Saturated Fat": "10.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "943 mg"
+   },
+   "manufacturerName": "(BG) Parle Biscuits Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012022000223"
+  }
  },
  {
   "title": "Monaco Cheeslings Classic",
@@ -1105,7 +1430,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/149829_8-parle-monaco-cheeslings-classic.jpg"
-    }
+    },
+    "barcode": "8901719135330"
    },
    {
     "title": "300g",
@@ -1127,7 +1453,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009924_8-parle-monaco-cheesling.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Crunchy savouries for bite-sized snacks are the ideal description for Parle Cheeslings. A favourite for all ages, this mini biscuit-like snack is made of cheese and presents a baked alternative to hunger that strikes in between meals. This healthy and tasty snack is one of the best-selling products of Parle.",
+   "ingredients": "Wheat Flour, Edible Vegetable Oils, Sugar, Salt, Cheese, Yeast, Raising Agents, [503 (ii), Baking Powder), Invert Sugar Syrup, Spice & Condiments, Acidity Regulators [Lactic acid, Malic Acid], Emulsifiers [Mono and and Diglycerides of Fatty Acids and Edible Vegetable Oils] Dough Conditioner [223] and Improver",
+   "manufacturerName": "Parle Biscuits Pvt. Ltd North Level Crossing",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Happy Happy Chocolate Cake",
@@ -1162,7 +1495,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369557-5_1-parle-happy-happy-chocolate-flavoured-cake.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Happy Happy Chocolate Flavoured Cake is a ready-to-eat snack cake baked for a soft and indulgent taste experience. It offers a delightful fusion of fun and chocolate flavour, making it suitable for tea-time and quick snacking. Simply open the pack and consume directly for a convenient anytime treat.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Eggs, Edible Vegetable Fat (Hydrogenated Oils) & Refined Palmolein, Candied Fruit (Papaya-7.9%), Liquid Glucose, Humectants (420, 422, 1520), Invert Sugar Syrup, Cocoa Solids (1.2%), Emulsifiers Of Vegetable Origin (471, 475, 433, 477, 491, 470), Starch, Raising Agents [500(ii), 450(i)], Iodised Salt, Preservatives (202, 281), Acidity Regulators (270, 330), Stabilizer (415), Contains Permitted Natural Food Colours [150c And 150d] And Added Nature Identical And Artificial Flavouring Substances (Chocolate & Vanilla). Contains: Wheat, Eggs.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "424",
+    "Protein (g)": "5.4",
+    "Carbohydrate (g)": "59.3",
+    "Total Sugars (g)": "29.8",
+    "Added Sugars (g)": "28.7",
+    "Total Fat (g)": "17.8",
+    "Saturated Fat (g)": "8.9",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "65",
+    "Sodium (mg)": "131"
+   },
+   "manufacturerName": "Parle Products Pvt. Ltd. V.S. Khandekar Marg",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Happy Happy Mawa Cake",
@@ -1178,7 +1530,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369558_1-parle-happy-happy-mawa-flavoured-cakes.jpg"
-    }
+    },
+    "barcode": "8901719133602"
    }
   ],
   "images": [
@@ -1197,7 +1550,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369558-5_1-parle-happy-happy-mawa-flavoured-cakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Happy Happy Mawa Flavoured Cakes are baked with love and perfection, offering a delightful fusion of fun and indulgence. These ready-to-eat snack cakes are suitable for tea-time and quick snacking. Simply open the pack and consume directly for a soft and flavourful treat with rich mawa-inspired taste.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Eggs, Refined Palmolein Oil & Edible Vegetable Fat (Hydrogenated Oils), Humectants (420, 422, 1520), Milk Solids (4.1%), Liquid Glucose, Cake Improver {Maltodextrin, Starch, Emulsifiers (472e, 475), Raising Agents [450(i), 500(ii)], Stabilizer (415)}, Invert Sugar Syrup, Emulsifiers Of Vegetable Origin (471, 475, 433, 477, 491, 470), Iodised Salt, Preservatives (202, 281), Acidity Regulator (270) And Raising Agent [341(i)]. Contains Added Flavours - Artificial Flavouring Substances (Milk, Butter And Cardamom). Contains: Wheat, Eggs.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "424",
+    "Protein (g)": "7.2",
+    "Carbohydrate (g)": "58.6",
+    "Total Sugars (g)": "26.0",
+    "Added Sugars (g)": "23.8",
+    "Total Fat (g)": "16.8",
+    "Saturated Fat (g)": "8.2",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "72",
+    "Sodium (mg)": "149"
+   },
+   "manufacturerName": "Parle Products Pvt. Ltd. V.S. Khandekar Marg",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Happy Happy Orange Cake",
@@ -1232,7 +1604,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369559-5_1-parle-happy-happy-orange-flavoured-cakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Happy Happy Orange Flavoured Cakes are baked with love and perfection, offering a delightful fusion of fun and indulgence. These ready-to-eat snack cakes are suitable for tea-time and quick snacking. Simply open the pack and consume directly for a soft and flavourful treat with refreshing orange flavour.",
+   "ingredients": "Refined Wheat Flour (Maida), Eggs, Sugar, Refined Palmolein Oil & Edible Vegetable Fat (Hydrogenated Oils), Humectants (420, 422, 1520), Fruit Products [Candied (Papaya-6.1%) And Orange Fruit Prep (Orange Concentrate (1.3%), Stabilizer (440), Acidity Regulators (330), And Preservative (202))], Cake Improver (Maltodextrin, Starch, Emulsifiers (472e, 475), Raising Agents [450(i), 500(ii)], Stabilizer (415)), Liquid Glucose, Emulsifiers Of Vegetable Origin (471, 475, 433, 477, 491, 470), Invert Sugar Syrup, Preservatives (202, 281), Acidity Regulators (270, 330), Iodised Salt And Raising Agent [341(i)]. Contains Permitted Synthetic Food Colour [110] And Added Flavours - Nature Identical And Artificial Flavouring Substances (Orange). Contains: Wheat, Eggs.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "421",
+    "Protein (g)": "5.6",
+    "Carbohydrate (g)": "60.6",
+    "Total Sugars (g)": "28.7",
+    "Added Sugars (g)": "27.7",
+    "Total Fat (g)": "16.3",
+    "Saturated Fat (g)": "8.0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "70",
+    "Sodium (mg)": "66"
+   },
+   "manufacturerName": "Parle Products Pvt. Ltd. V.S. Khandekar Marg",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Happy Happy Pineapple Cake",
@@ -1248,7 +1639,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369560_1-parle-happy-happy-pineapple-flavoured-cakes.jpg"
-    }
+    },
+    "barcode": "8901719133619"
    }
   ],
   "images": [
@@ -1267,7 +1659,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369560-5_1-parle-happy-happy-pineapple-flavoured-cakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Happy Happy Pineapple Flavoured Cakes are baked with love and perfection, offering a delightful fusion of fun and indulgence. These ready-to-eat snack cakes are suitable for tea-time and quick snacking. Simply open the pack and consume directly for a soft and flavourful treat with refreshing pineapple flavour.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Eggs, Refined Palmolein Oil & Edible Vegetable Fat (Hydrogenated Oils), Humectants (420, 422, 1520), Fruit Products [Candied (Papaya-6.1%) And Pineapple Fruit Crush (Pineapple Pieces & Juice Concentrate (1.3%), Stabilizer (440), Acidity Regulators [330, 331(iii)] And Preservative (202))], Cake Improver (Maltodextrin, Starch, Emulsifiers (472e, 475), Raising Agents [450(i), 500(ii)], Stabilizer (415)), Liquid Glucose, Invert Sugar Syrup, Emulsifiers Of Vegetable Origin (471, 475, 433, 477, 491, 470), Iodised Salt, Preservatives (202, 281), Acidity Regulators (270, 330) And Raising Agent [341(i)]. Contains Permitted Synthetic Food Colour [102] And Added Flavours - Nature Identical Flavouring And Artificial Flavouring Substances (Pineapple). Contains: Wheat, Eggs.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "418",
+    "Protein (g)": "5.4",
+    "Carbohydrate (g)": "61.2",
+    "Total Sugars (g)": "30.0",
+    "Added Sugars (g)": "29.0",
+    "Total Fat (g)": "15.9",
+    "Saturated Fat (g)": "7.7",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "68",
+    "Sodium (mg)": "142"
+   },
+   "manufacturerName": "Parle Products Pvt. Ltd. V.S. Khandekar Marg",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Happy Happy Tutti Fruity Cake",
@@ -1302,7 +1713,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369561-5_1-parle-happy-happy-tutti-fruity-flavoured-cakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Happy Happy Tutti Fruity Flavoured Cakes are soft, ready-to-eat snack cakes made for enjoyable tea-time moments and quick snacking. Baked with a delightful blend of flavour and texture, they feature a fun tutti fruity taste in every bite. Convenient and easy to enjoy, simply open the pack and consume directly whenever you want a sweet and flavourful snack experience.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Eggs, Edible Vegetable Fat (Hydrogenated Oils) & Refined Palmolein Oil, Humectants (420, 422, 1520), Candied Fruit (Papaya-5.9%), Cake Improver (Maltodextrin, Starch, Emulsifiers (472e, 475), Raising Agents [450(i), 500(ii)], Stabilizer (415)), Liquid Glucose, Invert Sugar Syrup, Emulsifiers Of Vegetable Origin (471, 475, 433, 477, 491, 470), Iodised Salt, Preservatives (202, 281), Acidity Regulators (270, 330), Raising Agent [341(i)] And Stabilizer (415). Contains Permitted Synthetic Food Colours [102, 129, 110] And Added Flavours - Artificial Flavouring Substances (Vanilla, Nut & Fruit). Contains: Wheat And Eggs.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "432",
+    "Protein (g)": "5.3",
+    "Carbohydrate (g)": "58.6",
+    "Total Sugars (g)": "29.1",
+    "Added Sugars (g)": "28.3",
+    "Total Fat (g)": "18.6",
+    "Saturated Fat (g)": "9.3",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "68",
+    "Sodium (mg)": "157"
+   },
+   "manufacturerName": "Parle Products Pvt. Ltd. V.S. Khandekar Marg",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Happy Happy Vanilla Cake",
@@ -1337,7 +1767,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369562-5_1-parle-happy-happy-vanilla-flavoured-cakes.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Happy Happy Vanilla Flavoured Cakes are soft and ready-to-eat snack cakes made for enjoyable tea-time moments and quick snacking. Baked with a delightful blend of flavour and texture, they offer a rich vanilla taste in every bite. Convenient and easy to enjoy, simply open the pack and consume directly whenever you want a sweet and flavourful snack treat.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Eggs, Edible Vegetable Fat (Hydrogenated Oils) & Refined Palmolein Oil, Humectants (420, 422, 1520), Candied Fruit (Papaya-5.9%), Cake Improver (Maltodextrin, Starch, Emulsifiers (472e, 475), Raising Agents [450(i), 500(ii)], Stabilizer (415)), Liquid Glucose, Invert Sugar Syrup, Emulsifiers Of Vegetable Origin (471, 475, 433, 477, 491, 470), Iodised Salt, Preservatives (202, 281), Acidity Regulators (270, 330), Raising Agents [341(i)] And Stabilizer (415). Contains Added Flavour (Artificial Flavouring Substances - Vanilla). Contains: Wheat And Eggs.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "431",
+    "Protein (g)": "5.3",
+    "Carbohydrate (g)": "58.6",
+    "Total Sugars (g)": "29.1",
+    "Added Sugars (g)": "28.2",
+    "Total Fat (g)": "18.6",
+    "Saturated Fat (g)": "9.3",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "68",
+    "Sodium (mg)": "157"
+   },
+   "manufacturerName": "Parle Products Pvt. Ltd. V.S. Khandekar Marg",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mango Bite Candy",
@@ -1353,7 +1802,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40204958_4-parle-bigger-mango-bite.jpg"
-    }
+    },
+    "barcode": "8901719119286"
    },
    {
     "title": "390g",
@@ -1387,7 +1837,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129487_5-parle-mango-bite-candy-bigger.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the juicy, mouthwatering goodness of Parle's Bigger Mango Bite. This hard-boiled candy features a delectable, tangy-sweet centre that bursts with the flavour of real mangoes. Crafted with high-quality ingredients, it offers a perfect balance of taste and health, making it a guilt-free treat for all ages. Enjoy the enhanced mango flavour and larger size for longer-lasting enjoyment, whether as a refreshing snack or a delightful sharing and gifting option. With its soft, chewy texture, the Bigger Mango Bite delivers a truly satisfying experience that will transport you to the heart of a tropical paradise with every bite.",
+   "ingredients": "SUGAR, LIQUIDgLUCOSE, ACIDITY REGULATOR (330), MANGO POWDER(1%), PERMITTED SYNTHETIC FOOD COLOUR (102), ADDED FLAVOUR (ARTIFICIAL FLAVOURING SUBSTANCES - MANGO)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "3.9g PER SERVE",
+    "ENERGY (Kcal)": "385.0",
+    "PROTEIN (g)": "0",
+    "CARBOHYDRATE (g)": "96.3",
+    "TOTAL SUGARS (g)": "79.3",
+    "ADDED SUGARS (g)": "71.6",
+    "TOTAL FAT (g)": "0",
+    "SATURATED FAT (g)": "0",
+    "TRANS FAT (g)": "0",
+    "CHOLESTEROL (mg)": "0",
+    "SODIUM (mg)": "5",
+    "RDA": "RDA REQUIREMENT FOR AVERAGE ADULT PER DAY (2000 Kcal)"
+   },
+   "storageInstructions": "*Keep in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kaccha Mango Bite Candy",
@@ -1437,7 +1910,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129485_1-parle-kaccha-mango-bite-candy-bigger.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the tantalising taste of raw mango with Parle's Kacheh Mango Bites, a nostalgic treat that transports you back to the good old days. Bursting with a natural, tangy flavour, these hygienically packed candies offer a mouthwatering balance that delights the senses. Indulge in the tanginess and natural goodness of raw mango, perfect for kids and adults alike seeking a taste of nostalgia. Savour the burst of flavour in every bite and relive the memories of simpler times. Parle's Kacheh Mango Bites are a delightful, sensory experience that will leave you craving more.",
+   "ingredients": "SUGAR, LIQUIDgLUCOSE, ACIDITY REGULATORS (270, 296, 330, 331(iii)), PERMITTED SYNTHETIC FOOD COLOURS (102, 133), ADDED FLAVOUR (NATURE IDENTICAL FLAVOURING SUBSTANCES - RAW MANGO)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "3.96g",
+    "ENERGY (Kcal)": "380",
+    "PROTEIN (g)": "0",
+    "CARBOHYDRATE (g)": "95.1",
+    "TOTAL SUGARS (g)": "78.8",
+    "ADDED SUGARS (g)": "62.4",
+    "TOTAL FAT (g)": "0",
+    "SATURATED FAT (g)": "0",
+    "TRANS FAT (g)": "0",
+    "CHOLESTEROL (mg)": "0",
+    "SODIUM (mg)": "18",
+    "RDA": "RDA REQUIREMENT FOR AVERAGE ADULT PER DAY (2000 Kcal)"
+   },
+   "storageInstructions": "*Keep in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Orange & Mango Bite Assorted Candies",
@@ -1475,7 +1971,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204960-6_5-parle-mango-orange-bite-candy-assorted-tasty-juicy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Assorted Mango Bite and Orange Bite are the goodness of juicy orange and mango. It is a hard-boiled candy that has a juicy centre, a sweet and tangy taste. It can be enjoyed at any time by anyone. It is made from high-quality ingredients that are a perfect combination of taste and health. Enjoy it after meals or at any time of the day.\nBenefits:\nMade with the goodness of real juicy mangoes and orange.\nSweet and tangy taste with a juicy centre.\nMade from high-quality ingredients.\nIt can be enjoyed at any time of the day.",
+   "ingredients": "Bigger Mango Bite: Sugar, Liquid Glucose, Acidity Regulator & Mango Powder, Contains Permitted Synthetic Food Colour And Added Flavour. \nBigger Orange Bite: Sugar, Liquid Glucose, Acidity Regulator & Orange Powder, Contains Permitted Synthetic Food Colour And Added Flavour.",
+   "usageInstructions": "It can be consumed directly.\nYou can also enjoy eating them after meals.",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mazelo Assorted Candies",
@@ -1491,7 +1995,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40204961_6-parle-mazelo-fruity-candy-with-assorted-flavours-tasty.jpg"
-    }
+    },
+    "barcode": "8901719129513"
    }
   ],
   "images": [
@@ -1510,7 +2015,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204961-5_5-parle-mazelo-fruity-candy-with-assorted-flavours-tasty.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Mazelo is a delicious fruity candy that can be enjoyed at any time by anyone. It is made from high-quality ingredients that are a perfect combination of taste and health. Enjoy it after meals or at any time of the day. It is available in five mouth-watering flavours: Apple, Guava, Watermelon, Banana, and Litchi.",
+   "ingredients": "Sugar, Liquid Glucose, Acidity Regulators (270, 325), Permitted Synthetic Food Colour (102, 129, 133, 171), Added Flavours (Artificial Flavouring Substances - Banana, Watermelon, Guava, Apple, Litchi)",
+   "nutritionalInfo": {
+    "Serving Size": "3.96 g",
+    "Energy (kcal)": "380",
+    "Protein (g)": "0",
+    "Carbohydrate (g)": "95.1",
+    "Total Sugars (g)": "79.7",
+    "Added Sugars (g)": "63",
+    "Total Fat (g)": "0",
+    "Saturated Fat (g)": "0",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "18"
+   },
+   "storageInstructions": "* Store cool, hygienic and dry place",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Poppins Fruit Candy",
@@ -1526,7 +2052,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40204963_4-parle-poppins.jpg"
-    }
+    },
+    "barcode": "8901719128202"
    }
   ],
   "images": [
@@ -1548,7 +2075,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204963-6_3-parle-poppins.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Poppins are a delightful and nostalgic candy that will tantalize your taste buds. These vibrant, fruit-flavoured hard candies come in a rainbow of colours, each representing a unique and tantalising flavour. Bursting with juicy, fruity goodness, Poppins are the perfect on-the-go treat to satisfy your sweet cravings. Enjoy the satisfying crunch and refreshing taste anytime, anywhere - whether as an after-meal snack or a fun, shareable indulgence. With their playful appearance and irresistible flavours, Parle Poppins are a delightful candy option for all ages to savour and enjoy.",
+   "ingredients": "SUGAR, LIQUIDgLUCOSE, ACIDITY REGULATOR [ 296 ], CONTAINS PERMITTED SYNTHETIC FOOD COLOURS [ 110 / 102 / 133 /122 ], ADDED FLAVOURS ( ARTIFICIAL FLAVOURING SUBSTANCES - BLACK CURRANT / MANGO / ORANGE / PINEAPPLE / RASPBERRY )",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "ENERGY": "391 Kcal",
+    "PROTEIN": "0g",
+    "CARBOHYDRATE": "97.8g",
+    "OF WHICH SUGARS": "80.2g",
+    "FAT": "0g",
+    "SATURATED FAT": "0g",
+    "TRANS FAT": "0g"
+   },
+   "storageInstructions": "*In a cool and dry place\n*Away from direct sunlight",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rol-A-Cola Candy",
@@ -1564,7 +2109,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40181883_2-parle-rolacola-candy.jpg"
-    }
+    },
+    "barcode": "8901719128226"
    }
   ],
   "images": [
@@ -1583,7 +2129,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181883-5_2-parle-rolacola-candy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the nostalgic flavour of the iconic Parle Rola Cola Candy. This delightful treat transports you back to the 90s, offering a refreshing taste of cola with a tantalising twist. The fizzy sensation and compact, round shape make it the perfect on-the-go snack or a delightful treat to share with friends and family.\nRelive the memories of your childhood as you savour the familiar flavour and experience the delightful crunch of this classic candy. Parle's Rola Cola Candy is a true blast from the past, capturing the essence of a simpler time and delivering a taste that will delight your taste buds.",
+   "ingredients": "SUGAR, LIQUIDgLUCOSE, ACIDITY REGULATOR (296), PERMITTED NATURAL COLOUR (150 d), ADDED FLAVOUR (ARTIFICIAL FLAVOURING SUBSTANCES- COLA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "391 Kcal",
+    "Protein": "0g",
+    "Carbohydrate": "97.8g",
+    "OF WHICH SUGARS": "80.3g",
+    "Fat": "0g",
+    "SATURATED FAT": "0g",
+    "TRANS FAT": "0g"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Parle Biscuits PVT LTS",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022002253"
+  }
  },
  {
   "title": "2 in 1 Eclairs",
@@ -1621,7 +2185,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40101050-6_2-parle-toffee-2-in-1-eclairs.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Premium Eclairs soft bite chews for kids who like eclairs with milk. You will feel a creamy sensation in your mouth after eating this toffee. Ideal for snacking on the go when you crave sweetness. Milk containing toffee encrusted in sugar and vanilla won't stop you from enjoying it indefinitely.",
+   "ingredients": "Sugar, Liquid Glucose, Edible Vegetable Oil (Palm Oil), Milk Solids, Edible Salt, Emulsifier, Contains Added Flavour (Artificial flavouring Substance – Milk & Vanilla).",
+   "storageInstructions": "Store in a cool, dry and hygienic place to retain freshness.",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Grand Londonderry Milk Candy",
@@ -1637,7 +2208,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40129489_10-parle-candy-grand-londonderry.jpg"
-    }
+    },
+    "barcode": "8901719131868"
    }
   ],
   "images": [
@@ -1659,7 +2231,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129489-6_9-parle-candy-grand-londonderry.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle presents their authentic and flavourful range of sweets and snacks that are made from the richest of ingredients that are delectable to the palate and will make you crave for more with each and every bite. Serve them to your guests during get-togethers and parties for fun-filled and memorable times and watch their expressions lighten up.",
+   "ingredients": "Sugar, Liquid Glucose, Sweetened Condensed Milk (16.5%), Milk Fat, Iodised Salt, Malt Extract, Emulsifier (Soy Lecithin), Added Flavour (Artificial Milk Flavouring Substances)",
+   "nutritionalInfo": {
+    "Serving Size": "3.96 g",
+    "Energy": "397 kcal",
+    "Protein": "1.2 g",
+    "Carbohydrate": "90.6 g",
+    "Total Sugars": "75 g",
+    "Added Sugars": "55.6 g",
+    "Total Fat": "3.3 g",
+    "Saturated Fat": "1.9 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "10.2 mg",
+    "Sodium": "249 mg"
+   },
+   "storageInstructions": "* Store in cool, hygienic and dry place",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kismi Toffee",
@@ -1675,7 +2268,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/116516_7-parle-toffee-kismi.jpg"
-    }
+    },
+    "barcode": "8901719127830"
    }
   ],
   "images": [
@@ -1700,7 +2294,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/116516-7_1-parle-toffee-kismi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the iconic taste of elaichi (cardamom) blended with rich, creamy caramel in Parle Kismi Toffees. These delectable treats offer a tantalising flavour experience, with the prominent elaichi notes complemented by the luscious caramel and sugar. Elevate your snacking with the irresistible combination of Kismi's flavourful bliss - savour it alone or share it with friends and family for a truly satisfying sweet treat. Available in exciting new varieties like Kulfi, Rajbhog, Rosemilk and Meetha Paan, Parle Kismi Toffees are a must-try for anyone with a sweet tooth.",
+   "ingredients": "SUGAR, LIQUID GLUCOSE, EDIBLE VEGETABLE OIL, MILK SOLIDS, SALT, EMULSIFIER (SOYA LECITHIN), ADDED FLAVOUR (ARTIFICIAL FLAVOURING SUBSTANCES - CARDAMOM)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "CARBOHYDRATE": "80.9 g",
+    "OF WHICH SUGARS": "48.0 g",
+    "PROTEIN": "2.1 g",
+    "FAT": "9.5 g",
+    "SATURATED FAT NOT MORE THAN": "4.9 g",
+    "TRANS FAT NOT MORE THAN": "0.0 g",
+    "ENERGY": "418 kcal"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place",
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chatkeens Aloo Bhujia",
@@ -1716,7 +2327,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40101053_6-parle-namkeen-aloo-bujia.jpg"
-    }
+    },
+    "barcode": "8901719128158"
    }
   ],
   "images": [
@@ -1738,7 +2350,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40101053-6_6-parle-namkeen-aloo-bujia.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Aloo Bhujia Namkeen is a lip-smacking delicious snack created to add excitement to your life. It is quite irresistible and best to munch on all the time. Since 1929, Parle has grown to become India's leading manufacturer of biscuits and confectionery. The Parle name symbolises quality, nutrition, and superior taste, being the makers of the world's largest selling biscuit, Parle-G.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmoilein), Gram Flour, Moth Flour, Starch, Edible Common Salt, Spices & Condiments, Seasoning (Starch, Maltodextrin, Edible Common Salt, Spices, Anticaking Agent (Silicon Dioxide))",
+   "nutritionalInfo": {
+    "Energy": "600 kcal",
+    "Carbohydrate": "47.7 g",
+    "of which Sugars": "0.0 g",
+    "Protein": "7.8 g",
+    "Fat": "42.0 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Once opened, store in an airtight container",
+   "manufacturerName": "Parle Biscuits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chatkeens Moong Dal",
@@ -1785,7 +2411,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204927_2-parle-moong-dal-namkeen.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Chatkeens Moong Dal is a simple yet flavorful ready-to-eat savory snack made from crispy fried split moong lentils, offering a crunchy texture and mildly tangy, salty taste. The packaging highlights it as “rich in protein,” appealing to consumers looking for a pulse-based snack option compared to typical namkeens. Its clean, green-themed design emphasizes freshness and the primary ingredient, making it easy to recognize as a lentil-based product. It is convenient for on-the-go snacking, tea-time, or light munching, and can also be used as a topping for chaats or salads to add crunch. While it is comparatively simpler in ingredients than mixed snacks, it is still a fried, processed product, so it is best enjoyed in moderation as part of a balanced diet.",
+   "ingredients": "Moong Dal [Split Mung Pulse (88%)], Refined Oil(s)*, Iodised Salt, Black Salt, Citric Acid (INS 330).\nLast Character of the Batch Indicates Name of the Oil:\n@ - Refined Palmolein Oil\n$ - Refined Cotton Seed Oil\n 0 - Refined Palmolein & Cotton Seed Oil",
+   "nutritionalInfo": {
+    "Energy (kcal)": "493",
+    "Protein (g)": "21.5",
+    "Carbohydrate (g)": "54.5",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "21.0",
+    "Saturated Fat (g)": "10.0",
+    "Trans Fat (g)": "7.7",
+    "Cholesterol (mg)": "0",
+    "Sodium (mg)": "535"
+   },
+   "manufacturerName": "(15) Om Industries",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chatkeens Khatta Meetha Mixture",
@@ -1801,7 +2446,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40289824_1-parle-chatkeens-khatta-meetha-mixture.jpg"
-    }
+    },
+    "barcode": "8901719130991"
    }
   ],
   "images": [
@@ -1826,7 +2472,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289824-7_1-parle-chatkeens-khatta-meetha-mixture.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle Chatkeens Khatta Meetha Mixture is a great Indian snack made with besan and flattened rice.\nIt has high protein and energy content for a fresh and active day. It is filled with the goodness of chana dal, peanuts and sago that can add essential nutrients even to your snacks. Carry it to your college or workplace and share it with friends over a cup of coffee or tea.",
+   "ingredients": "Refined Oil, Besan, Flattened Rice, Sugar, Chana Dal, Sago, Peanuts, Masur, Dehydrated Peas, Iodised Salt, Spices And Condiments (Turmeric, Chilli Powder, Bishop Seeds), Citric Acid, Dehydrated Spinach",
+   "usageInstructions": "1. Munch on it at any time of the day.\n2. Have your choice of beverage in the evenings with the tasty mixture.\n3. Serve it as an evening snack for kids or at family gatherings or share with friends at your workplace.",
+   "manufacturerName": "Parle Products Pvt Ltd",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Full Toss Noodle Masala",
@@ -1842,7 +2496,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40204975_4-parle-fulltoss-noodle-masala.jpg"
-    }
+    },
+    "barcode": "8901719133909"
    },
    {
     "title": "35g",
@@ -1876,7 +2531,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204976_3-parle-fulltoss-noodle-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Brand: Parle; Product Name: Karare Masala Snacks; Flavour: Noodles Masala\nA snacking sensation which brings a little flavour and fun to everyone. It is a flaming hot rice chip with the brakes of spices. Made with rice flour, these snacks look and crunches hot. Take one bite of this awsome noodles masala flavour and you won't just stop at one. It will keep making you Eat on repeat. Every twisted turn explodes with masala flavours that are perfect to scoop up your favourite dips.\nBenefits:\n1. Whether you need some extra help concentrating at work or you want to feel alert during the afternoon, snack on these namkeens that can help fuel you're body and you're brain.\n2. When you snack during the day, it prevents you from getting ravenously hungry.\n3. It can be best accompanied during evening snacks with a cup of tea or coffee.\nWeight: 23 g (Pouch)",
+   "ingredients": "Rice meal, Refined Palmolein oil, Cornmeal, Seasoning (chilli, garlic, dehydrated onion, black pepper, ginger, cumin, coriander, turmeric, cardamom, nutmeg), iodised salt, refined wheat flour (maida), milk solids, yeast extract powder, vegetable protein products, acidity regulator, flavour enhancer, anticaking agent, gram meal.\nContains added flavours - natural and nature identical flavouring substances\nAllergens: Contains wheat, milk and soya",
+   "usageInstructions": "It goes well with beverages like tea or coffee.\nConveniently packed easy to carry for quick bite.\nKeep in a cool and dry place and away from direct sunlight.\nOnce opened store in an airtight container.",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Full Toss Tangy Tomato",
@@ -1892,7 +2555,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40204977_4-parle-fulltoss-tangy-tomato.jpg"
-    }
+    },
+    "barcode": "8901719125669"
    }
   ],
   "images": [
@@ -1914,7 +2578,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204977-6_3-parle-fulltoss-tangy-tomato.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Brand: Parle; Product Name: Karare Masala Snacks; Flavour: Tangy Tomato\nA snacking sensation which brings a little flavour and fun to everyone. It is a flaming hot rice chip with the brakes of spices. Made with rice flour, these snacks look and crunches hot. Take one bite of this tangy tomato flavour and you won't just stop at one. It will keep making you Eat on repeat. Every twisted turn explodes with tangy flavours that are perfect to scoop up your favourite dips.\nBenefits:\nWhether you need some extra help concentrating at work or you want to feel alert during the afternoon, snack on these namkeens that can help fuel you're body and you're brain.\nWhen you snack during the day, it prevents you from getting ravenously hungry.\nIt can be best accompanied during evening snacks with a cup of tea or coffee.\nWeight: 23 g (Pouch)",
+   "ingredients": "Rice meal, Refined Palmolein oil, Cornmeal, Seasoning mixed powder (sugar, iodised salt, dehydrated tomato, dehydrated onion, spices & condiments - chilli, cumin & cinnamon), Acidity regulator, anticaking agent, Gram meal.",
+   "usageInstructions": "It goes well with beverages like tea or coffee.\nConveniently packed easy to carry for quick bite.\nKeep in a cool and dry place and away from direct sunlight.\nOnce opened store in an airtight container.",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Full Toss Thai Sriracha",
@@ -1964,7 +2636,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204979_2-parle-fulltoss-thai-sriracha.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A snacking sensation which brings a little flavour and fun to everyone. It is a flaming hot rice chip with the brakes of spices. Made with rice flour, these snacks look and crunches hot. Take one bite of this Thai Sriracha flavour and you won't just stop at one. It will keep making you Eat on repeat. Every twisted turn explodes with masala flavours that are perfect to scoop up your favourite dips.\nBenefits:\n1. Whether you need some extra help concentrating at work or you want to feel alert during the afternoon, snack on these namkeens that can help fuel you're body and you're brain.\n2. When you snack during the day, it prevents you from getting ravenously hungry.\n3. It can be best accompanied during evening snacks with a cup of tea or coffee.\nWeight: 19 g",
+   "usageInstructions": "It goes well with beverages like tea or coffee.\nConveniently packed easy to carry for quick bite.\nKeep in a cool and dry place and away from direct sunlight.\nOnce opened store in an airtight container.",
+   "manufacturerName": "PARLE BISCUITS PVT LTD",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wafers Cream N Onion Potato Chips",
@@ -2005,6 +2684,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289831-7_1-parle-wafers-potato-chips-cream-n-onion-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Parle’s Cream n’ Onion Wafers come in a packet and weigh 110g. They are made of a delightful and tasty combination of cream and onion with herbs, salt and spices.\nThe wafers are made of potatoes that are crisp and light in appearance and are enriched with the exotic flavours of cream cheese and onion. It has an energy content of 556 kcal and a protein content of 8.1 g per 100g and is very essential for a fresh and energetic experience. Crispy and light chips with fresh flavours of cream cheese and onion can satisfy your personal cravings at any odd hour of the day. Share with your friends and family and spread the joy and cheer.",
+   "ingredients": "Potatoes, Refined Palm Olein, Seasoning (Milk Solids, Corn Starch, Dehydrated Vegetables Like Onion And Garlic, Herbs, Sugar, Iodised Salt, Cheese Powder, Refined Wheat Flour, Acidity Regulators, Anticaking Agents, Flavour Enhancers)",
+   "usageInstructions": "1. Munch on it throughout the day as a light snack.\n2. Keep it with you for a midnight snack or while pulling long hours of study sessions.\n3. Serve it as an evening snack for kids or at family gatherings.\n4. Share with friends and strengthen your bond.",
+   "manufacturerName": "Parle Products Pvt Ltd",
+   "fssaiLicense": "10013022002253",
+   "countryOfOrigin": "India"
+  }
  }
 ]

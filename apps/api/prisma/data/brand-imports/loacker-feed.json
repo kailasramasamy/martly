@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100010312_4-loacker-classic-wafer-napolitaner-hazelnut.jpg"
-    }
+    },
+    "barcode": "8000380201600"
    }
   ],
   "images": [
@@ -41,7 +42,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100010312-8_1-loacker-classic-wafer-napolitaner-hazelnut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Delicious Hazelnut cream made with exclusive Italian hazelnuts which are freshly roasted on-site at Loacker. Crispy Hazelnut flavoured cream filled wafers (74% cream filling). No artificial flavours, no artificial colours, no hydrogenated fats, no preservatives, no ingredients derived from bioengineered crops, made from 100% natural ingredients. Allergen information: Contains wheat, hazelnuts, milk, barley and soy. May contain peanuts and almonds. Weight: 175 g Keep cool and dry.",
+   "ingredients": "Wheat Flour, Coconut Oil, Glucose Syrup, Sugar, Hazelnuts 9% In The Cream Filling, Whey Powder (milk), Soy Flour, Skimmed Milk Powder, At-reduced Cocoa, Dextrose, Barley Malt Extract, Raising Agents (sodium Hydrogen Carbonate, Disodium Diphosphate), Salt, Emulsifier Soy Lecithins, Bourbon Vanilla Pods, Spices. May Contain Almonds.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "energy": "2169kJ",
+    "energy (kcal)": "519 kcal",
+    "fat": "27g",
+    "of which saturated fatty acids": "20g",
+    "carbohydrates": "59g",
+    "of which sugars": "26g",
+    "protein": "8.1g",
+    "salt": "0.33g"
+   },
+   "usageInstructions": "Ready to eat",
+   "manufacturerName": "A.Loacker Konfekt GmbH/Heinfels - Tyrol - Austria",
+   "countryOfOrigin": "Italy, Austria"
+  }
  },
  {
   "title": "Quadratini Napolitaner",
@@ -165,7 +184,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003189-8_1-loacker-quadratini-wafer-cookies-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the exquisite Loacker Chocolates, crafted with a unique recipe that delivers a delightful experience. These chocolates boast a crispy core enveloped in a decadent, silky chocolate coating, infused with the renowned Loacker exclusive flavours that will leave you craving more. Delight in the perfect balance of rich chocolate and crispy wafer layers with every bite, making these bite-sized cookies an ideal treat for satisfying your sweet tooth. Packed with protein, fibre, and essential nutrients, Loacker Quadratini Chocolate Bite Size Wafer Cookies are not only delectable but also beneficial for your overall well-being. Enjoy these chocolates as a delightful snack or share them with friends and family, and let the Loacker experience transport you to a world of pure indulgence. Crafted with care and without any preservatives, added flavours, or hydrogenated fats, these chocolates are a true delight for the senses.",
+   "ingredients": "Wheat flour, coconut oil, glucose syrup, sugar, fat-reduced cocoa, dextrose, whey powder (milk), chocolate 5% in the cream filling (sugar, cocoa mass), soy flour, skimmed milk powder, barley malt extract, raising agents, hazelnuts, emulsifier soy lecithins, salt, Bourbon vanilla pods, spices.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "2135kJ / 511kcal",
+    "Fat": "26g",
+    "of which saturated fatty acids": "22g",
+    "Carbohydrates": "59g",
+    "of which Sugars": "27g",
+    "Protein": "7.7g",
+    "Salt": "0.34g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Quadratini Dark Chocolate",
@@ -218,7 +253,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003188-8_1-loacker-quadratini-wafer-cookies-dark-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, authentic flavour of Italy with Loacker Quadratini, the irresistible wafer cube cookies layered with decadent dark chocolate. Crafted with care in the heart of Italy, these bite-sized treats embody the unparalleled quality and tradition of the renowned Loacker brand. Experience the perfect balance of a crisp, delicate wafer texture and a luscious, mouth-melting chocolate filling that will elevate your snacking experience. Conveniently packaged for enjoyment anywhere, these all-natural, preservative-free cookies make for a delightful break at home, on the go, or during your workday. Savour the rich, dark chocolate notes and the satisfying crunch in every delectable cube, crafted with no added flavours or colours. Discover the unmatched satisfaction of indulging in these Italian-made Loacker Quadratini, now available for purchase online.",
+   "ingredients": "Wheat flour, coconut oil, glucose syrup, sugar, fat-reduced cocoa, dextrose, dark chocolate 8% in the cream filling (cocoa mass, sugar), soy flour, whey powder (milk), skimmed milk powder, barley malt extract, raising agents (sodium hydrogen carbonate, disodium diphosphate), hazelnuts, salt, emulsifier soy lecithins, Bourbon vanilla pods, spices. May contain almonds.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "2106 kJ / 504 kcal",
+    "Fat": "25 g",
+    "of which Saturated": "21 g",
+    "Carbohydrates": "59 g",
+    "of which Sugars": "27 g",
+    "Protein": "7.7 g",
+    "Salt": "0.32 g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "A.Loacker Konfekt GmbH/Heinfels - Tyrol - Austria",
+   "countryOfOrigin": "Italy, Austria"
+  }
  },
  {
   "title": "Quadratini Cappuccino",
@@ -234,7 +286,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/306778_5-loacker-quadratini-cappuccino.jpg"
-    }
+    },
+    "barcode": "8000380140565"
    },
    {
     "title": "220g",
@@ -271,7 +324,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/306778-8_1-loacker-quadratini-cappuccino.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Delicate cappuccino cream that will guarantee creamy coffee pleasure! Crispy Cappuccino wafer cubes with 74% cream filling, comes in a resealable pack.\nNo artificial flavors, no artificial colors, no hydrogenated fats, no preservatives, no ingredients derived from bioengineered crops, made from 100% natural ingredients.\nAllergen information: Contains wheat, milk, soy, barley, hazelnuts. May contain almonds.\nWeight : 110 g\nStore in a cool and dry place.",
+   "ingredients": "Wheat Flour, Coconut Oil, Glucose Syrup, Whey Powder (milk), Sugar, Skimmed Milk Powder 5% In The Cream Filling, Whole Milk Powder 5% In The Cream Filling, Soy Flour, Barley Malt Extract, Dextrose, Coffee Powder 1% In The Cream Filling: Hazelnuts, Fat-reduced Cocoa, Raising Agents (sodium Hydrogen Carbonate, Disodium Diphosphate), Emulsifier Soy Lecithins, Salt, Bourbon Vanilla Pods, Spices. May Contain Almonds.",
+   "usageInstructions": "Perfect accompaniment to hot or iced tea, coffee, ice cream.\nReady to eat.",
+   "manufacturerName": "A.Loacker Konfekt GmbH/Heinfels - Tyrol - Austria",
+   "countryOfOrigin": "Italy, Austria"
+  }
  },
  {
   "title": "Quadratini Tiramisu",
@@ -287,7 +347,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30003187_4-loacker-quadratini-wafer-cookies-tiramisu.jpg"
-    }
+    },
+    "barcode": "8000380140541"
    },
    {
     "title": "220g",
@@ -324,7 +385,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003187-8_1-loacker-quadratini-wafer-cookies-tiramisu.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Loacker Tiramisu Wafer Cookies are all normal and come in bite-size for a delicious snack. They are finished with Quadratini wafers with an enjoyable Tiramisu filling between layers and come in a pack of 8 8.82-oz packages. The handy, resealable bag permits you to have as many or as few tasty bites as you wish. Natural, No Preservatives, No added flavour or colour, No hydrogenated fats. Allergen information: Contains wheat, milk, soy, barley, hazelnuts. May contain almonds. Weight: 110 g. Store in a cool and dry place.",
+   "ingredients": "Unbleached Wheat Flour, Expeller Pressed Coconut Oil, Whey Protein (Milk), Sugar, Coconut Flavour, Cream Powder 7%, Soy Flour, Skimmed Milk Powder, Barley Malt Extract, Dextrose, Mascarpone Powder (Milk), Hazelnuts, Cocoa, Coffee Powder, Salt, Leavening Agents (Sodium Hydrogen Carbonate, Disodium Diphosphate), Emulsifier Soy Lecithin, Natural Flavour, Natural Vanilla Pods, Spices",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "518 kcal",
+    "Protein": "10.7 g",
+    "Carbohydrates": "55.7 g",
+    "of which Sugars": "31.0 g",
+    "Total Fat": "28.1 g",
+    "of which Saturated Fatty Acids": "22.6 g",
+    "Sodium": "211 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "A.Loacker Konfekt GmbH/Heinfels - Tyrol - Austria",
+   "countryOfOrigin": "Italy, Austria"
+  }
  },
  {
   "title": "Quadratini Vanilla",
@@ -377,7 +455,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002854-8_1-loacker-quadratini-wafer-cookies-vanilla.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful Loacker Quadratini Vanilla wafers, a true Italian specialty that delights both teenagers and youngsters alike. These extra rich and smooth cube-shaped wafers offer a symphony of flavours and textures. Bite through the crunchy wafer squares to reveal a soft, creamy vanilla filling that is simply irresistible. The convenient resealable bag allows you to enjoy a few cubes at a time or indulge in a handful, while keeping the Quadratini fresh and delicious between snacking sessions. Crafted with natural ingredients and free from preservatives, added flavours or colours, and hydrogenated fats, these wafers provide a truly satisfying and guilt-free treat. Whether paired with a refreshing cup of coffee or enjoyed on their own, the Loacker Quadratini Vanilla is a delightful Italian specialty that is sure to delight your senses.",
+   "ingredients": "Unbleached wheat flour, expeller pressed coconut oil, glucose syrup, sugar, dextrose, sweet whey powder (milk), skimmed milk powder, soy flour, barley malt extract, salt, raising agents (sodium hydrogen carbonate, disodium diphosphate), emulsifier soy lecithin, Bourbon vanilla pods",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "521kcal",
+    "Fat": "27g",
+    "Saturated Fatty Acids": "23g",
+    "Carbohydrates": "61g",
+    "Sugars": "30g",
+    "Protein": "7,9g",
+    "Salt": "0.4g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "A.Loacker Konfekt GmbH/Heinfels - Tyrol - Austria",
+   "countryOfOrigin": "Italy, Austria"
+  }
  },
  {
   "title": "Quadratini Cocoa & Milk",
@@ -421,7 +516,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123535-8_1-loacker-quadratini-wafer-cookies-cocoa-milk.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Locker Quadratini is crispy, bite-sized wafer cubes that contain four layers of smooth, light-coloured milk cream, sandwiched between five layers of dark cocoa wafers. These delicious wafers with its contrasting look and taste is an irresistible snack and is perfect for school, office, as an on-the-go snack, or as a sweet afternoon delight. No added flavour, colourings or preservatives and no hydrogenated fats. Allergen information: Contains wheat, milk, soy and barley. May contain almonds. Weight: 125 g Store in a cool and dry place.",
+   "ingredients": "Coconut oil, wheat flour, glucose syrup, whey powder (milk), dextrose, skimmed milk powder 6%, sugar, soy flour, whole milk powder 4%, fat-reduced cocoa 2%, barley malt extract, hazelnuts, raising agents (sodium hydrogen carbonate, disodium diphosphate), salt, emulsifier soy lecithins, Bourbon vanilla pods, spices. May contain almonds",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "525kcal",
+    "Fat": "28g",
+    "Saturated Fatty Acids": "24g",
+    "Carbohydrates": "58g",
+    "Sugars": "27g",
+    "Protein": "9.1g",
+    "Salt": "0.48g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "A. Loacker Konfekt GmbH/Heinfels - Tyrol - Austria",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Quadratini Coconut",
@@ -465,7 +577,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123534-8_1-loacker-quadratini-wafer-cookies-coconut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Locker Quadratini is crispy, bite-sized wafer cubes that contain four layers of smooth coconut cream, sandwiched between five layers of the light wafer. These delicious wafers with a tropical twist are perfect for school, office, as an on-the-go snack, or as a sweet afternoon delight. No added flavour, colourings or preservatives and no hydrogenated fats. Allergen information: Contains wheat, milk, soy and barley. May contain hazelnuts and almonds. Weight: 125 g Store in a cool and dry place.",
+   "ingredients": "Coconut flakes, wheat flour, whey powder (milk), sugar, glucose syrup, dextrose, coconut oil, soy flour, barley malt extract, raising agents, emulsifier soy lecithins, salt, fat-reduced cocoa, Bourbon vanilla pods, spices.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "530kcal",
+    "Fat": "31g",
+    "Saturated fatty acids": "27g",
+    "Carbohydrates": "53g",
+    "Sugars": "28g",
+    "Protein": "7.7g",
+    "Salt": "0.35g"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "A. Loacker Konfekt GmbH/Heinfels - Tyrol - Austria",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Quadratini Double Choc",
@@ -509,7 +638,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184674-8_1-loacker-quadratini-wafer-cookies-double-choc.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "An exclusive combination of crispy and creamy bliss featuring bittersweet cocoa notes of the wafer segueing into the sweet embrace of the chocolate cream filling. Enjoy this delicious delight and please your tastebuds. You can have it as a snack or even add this to your desserts. No Preservatives, No hydrogenated fats. Allergen information: Contains wheat, milk, barley, soy and hazelnuts. May contain peanuts and almonds. Weight: 125 g Store in a cool and dry place.",
+   "ingredients": "Wheat Flour, Coconut Oil, Glucose Syrup, Fat-Reduced Cocoa 9%, Sugar, Dextrose, Whey Powder (Milk), Soy Flour, Chocolate (Sugar, Cocoa Mass) 4%, Skimmed Milk Powder, Barley Malt Extract, Raising Agents (Sodium Hydrogen Carbonate, Disodium Diphosphate), Hazelnuts, Emulsifier Soy Lecithins, Salt, Bourbon Vanilla Pods, Spices",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "498 kcal",
+    "Protein": "7.9g",
+    "Carbohydrates": "57.5g",
+    "of which Sugars": "27.6g",
+    "Total Fat": "26.2g",
+    "of which Saturated Fatty Acids": "22.1g",
+    "Sodium": "154mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "A.Loacker Konfekt GmbH",
+   "fssaiLicense": "10012022001121",
+   "countryOfOrigin": "Italy"
+  }
  },
  {
   "title": "Quadratini Espresso",
@@ -525,7 +672,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30002853_6-loacker-quadratini-wafer-cookies-espresso.jpg"
-    }
+    },
+    "barcode": "8000380147144"
    }
   ],
   "images": [
@@ -553,6 +701,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002853-8_1-loacker-quadratini-wafer-cookies-espresso.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Loacker Quadratini Espresso Wafer is yummy little cubes with the premium cream between crunchy wafer leaves in a practical reusealable bag. Quadratini is the pure pleasure of the cube with core flavors and unusual flavors. Bite into the crunchy wafer, flavor the delectable cream filling and enjoy.\n100% Natural, No Preservatives, No added flavour or colour, No hydrogenated fats.\nAllergen information : Contains wheat, milk, soy, barley, hazelnuts. May contain almonds.\nWeight: 110 g\nStore in a cool and dry place.",
+   "ingredients": "Unbleached Wheat Flour, Expeller Pressed Coconut Oil, Whey Powder (Milk), Glucose Syrup (Wheat), Sugar, Soy Flour, Skimmed Milk Powder, Cocoa, Dextrose, Coffee Powder 2.5% In The Cream, Barley Malt Extract, Salt, Leavening Agents (Sodium Hydrogen Carbonate, Disodium Diphosphate), Emulsifier Soy Lecithin's, Natural Vanilla Pods, Hazelnuts, Spices. Contains Wheat, Milk, Soybeans, Tree Nuts. May Contain Almonds And Oats",
+   "usageInstructions": "Perfect accompaniment to hot or iced tea, coffee, ice cream.\nReady to eat.",
+   "manufacturerName": "A.Loacker Konfekt GmbH/Heinfels - Tyrol - Austria",
+   "countryOfOrigin": "Italy, Austria"
+  }
  }
 ]

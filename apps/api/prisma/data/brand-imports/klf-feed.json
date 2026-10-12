@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40043576_5-klf-nirmal-pure-coconut-oil.jpg"
-    }
+    },
+    "barcode": "8906002660759"
    },
    {
     "title": "500ml",
@@ -59,7 +60,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/144159_2-klf-oil-pure-coconut.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "KLF Pure Coconut Oil is made from the goodness of the highest quality fresh coconuts. It is a powerhouse of well-being and epitome of goodness. It is attained by fresh meat of mature coconut and not the dried coconuts. We extract our oils from high quality coconuts without adding any additional chemicals or harmful solvents. It is a natural superfood that is full of many minerals and nutrients. Our coconut oil is filled with healthy saturated fats which works wonders for your heart, skin, hair and dental hygiene. It can be used in many ways.",
+   "ingredients": "Coconut.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "900 kcal",
+    "Saturated fat": "91 g",
+    "Mono unsaturated fat": "7 g",
+    "Poly unsaturated fat": "2 g",
+    "Trans fat": "0 g",
+    "Carbohydrates": "0 g",
+    "Protein": "0 g",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "<br>KLF Nirmal Industries (P) Ltd<br>"
+  }
  },
  {
   "title": "Nirmal Cold Pressed Virgin Coconut Oil",
@@ -75,7 +93,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40026102_8-klf-coconut-oil-nirmal-cold-press-virgin.jpg"
-    }
+    },
+    "barcode": "8906002661459"
    },
    {
     "title": "250ml",
@@ -121,7 +140,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40026102-8_1-klf-coconut-oil-nirmal-cold-press-virgin.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the pure, unrefined goodness of Nirmal cold-pressed virgin coconut oil. Extracted from fresh, grated white coconuts, this premium oil offers a treasure trove of benefits for your overall wellness. With its mild, sweet aroma of fresh green coconuts, Nirmal VCO is a versatile addition to your kitchen and beauty routine. Packed with lauric acid, antioxidants, and essential fatty acids, this oil is a natural skin moisturiser that leaves your skin smooth and supple. Enjoy the numerous health benefits of Nirmal VCO, from boosting metabolism and aiding weight loss to balancing cholesterol levels. Whether you're using it for culinary or cosmetic applications, this pure, unrefined oil embodies the essence of the coconut, retaining its natural flavour and aroma. Invest in your well-being with Nirmal virgin coconut oil, a true testament to purity and excellence.",
+   "ingredients": "Virgin Coconut Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "900 kcal",
+    "Cholesterol": "0.0 g",
+    "Trans fat": "0 g",
+    "Vitamin E": "2.0 mg",
+    "Lauric Acid": "50.27 g",
+    "Caprylic Acid": "7.66 g",
+    "Capric Acid": "6.44 g",
+    "Myristic Acid": "19.11 g",
+    "Palmitic Acid": "7.10 g",
+    "Stearic Acid": "0.68 g",
+    "Mono unsaturated - Oleic Acid": "7 g",
+    "Poly unsaturated - Linoleic Acid": "1.45 g"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "Fr Dismas Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Nirmal Virgin Coconut Oil Narrow Neck",
@@ -137,7 +178,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40147026_3-klf-nirmal-virgin-coconut-oil-narrow-neck.jpg"
-    }
+    },
+    "barcode": "8906002661411"
    },
    {
     "title": "500ml",
@@ -174,7 +216,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40147026-8_1-klf-nirmal-virgin-coconut-oil-narrow-neck.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the wonders of Nirmal Virgin Coconut Oil, a true 'Miracle Oil' that offers a world of health and beauty benefits. Extracted from the freshest coconuts without the use of heat, this light, mild, and wholesome oil is a treasure trove of lauric acid (monolaurin) and antioxidants, just like the nourishing goodness found in mother's milk. Nirmal VCO is free from preservatives, chemicals, artificial colours, and genetic modification, ensuring you bring home a pure, premium product that embodies excellence. Whether you're a health enthusiast, a culinary artist, or someone seeking holistic beauty solutions, this versatile oil is your gateway to enhanced cardiovascular health, soft and frizz-free hair, and a host of other benefits. Indulge in the delicate coconut aroma and experience the transformative power of this pure, cold-pressed oil.",
+   "ingredients": "Cold Pressed Virgin Coconut Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "900 kcal",
+    "Cholesterol": "0.0 g",
+    "Trans fat": "0 g",
+    "Vitamin E": "2.0 mg",
+    "Lauric Acid": "50.27 g",
+    "Caprylic Acid": "7.66 g",
+    "Capric Acid": "6.44 g",
+    "Myristic Acid": "19.11 g",
+    "Palmitic Acid": "7.10 g",
+    "Stearic Acid": "0.68 g",
+    "Mono unsaturated - Oleic Acid": "7 g",
+    "Poly unsaturated - Linoleic Acid": "1.45 g"
+   },
+   "storageInstructions": "Store in a cool, dry place free from argemone oil",
+   "manufacturerName": "Dismas Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconad Pure Coconut Oil",
@@ -224,7 +288,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/262814_4-klf-coconad-coconut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic taste of Kerala with KLF's Coconad Coconut Oil. This pure, expeller-pressed vegan coconut oil is unrefined and only filtered, retaining the rich aroma and flavour of roasted Kerala coconuts. Ideal for healthy cooking, it is rich in antioxidants, triglycerides and free of cholesterol. Coconut oil is one of the four key traditional oils best suited for Indian cuisine, making it a much healthier substitute for regular cooking oils. Carefully sourced from the finest coconuts and packaged to prevent leaks or contamination, this versatile oil will elevate the light and delicious taste of your coastal and Kerala-style dishes. Embrace the mouthwatering experience of cooking with KLF's premium Coconad Coconut Oil.",
+   "ingredients": "Coconut Oil",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "900 kcal",
+    "Saturated fat": "91g",
+    "Mono unsaturated fat": "7g",
+    "Poly unsaturated fat": "2g",
+    "Trans fat": "0g",
+    "Carbohydrates": "0g",
+    "Protein": "0g",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "KLF Nirmal Industries Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000085"
+  }
  },
  {
   "title": "Coconad Pure Coconut Oil Pouch",
@@ -274,7 +357,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40026100_1-klf-coconut-oil-coconad.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "KLF's Coconad coconut oil is a much healthier substitute than regular cooking oil as it is made from the finest coconuts from Kerala. It makes the food light and healthy and exudes a delicious aroma which is mouthwatering. KLF makes sure that the oil is procured from the most trustworthy vendors and the packaging is done carefully to prevent leaks or contaminations. Ideal for a variety of culinary uses, it enhances the taste of dishes while offering numerous health benefits. This versatile oil is also free from additives and chemicals, ensuring a pure and healthy cooking experience. Perfect for those who value natural and nutritious ingredients in their daily diet.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "900 kcal",
+    "Saturated fat": "91 g",
+    "Mono unsaturated fat": "7g",
+    "Poly unsaturated fat": "2g",
+    "Trans fat": "0g",
+    "Carbohydrates": "0g",
+    "Protein": "0g",
+    "Cholesterol": "0 mg"
+   },
+   "fssaiLicense": "10012041000085",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconad Edible Coconut Oil Pouch",
@@ -309,7 +408,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352788-5_1-klf-coconad-100-edible-coconut-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The oil that is healthy and tasty? We got you one! Richness of coconuts and their all-time health benefits are the real deal that you shouldn’t miss out on. Healthy for hair, skin and heart, the coconad coconut oil is pure, chemical-free and a great option for you to feed your family.The Coconad Coconut Oil has numerous health benefits for your body! Pure, enriched with essential minerals and rich in taste, this oil is suitable for all types of cooking be it high temperature, baking, frying etc. One taste and it takes you back to the land of coconuts, Kerala, and its authenticity. Going on a diet? Have a movie night but don’t want to deviate from your diet? We got you sorted. This oil is suitable for salads, popcorn, frying your favorite pass-time snack, everything!\n100% Pure\nunrefined expeller pressed filtered coconut oil\nSweet aroma of\nroasted coconuts\nUnrefined &\nonly filtered coconut oil. No Refining, Bleaching or Deodorizing done.\nRich in antioxidants,\ntriglycerides and devoid of cholesterol. Ideal for healthy cooking",
+   "manufacturerName": "address",
+   "fssaiLicense": "10012041000085",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tilnad Sesame Oil",
@@ -325,7 +430,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40141896_5-klf-tilnad-sesame-oil.jpg"
-    }
+    },
+    "barcode": "8906002663415"
    },
    {
     "title": "200ml",
@@ -368,7 +474,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40141897_3-klf-tilnad-sesame-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tilnad is 100% pure edible grade Gingelly or Sesame Oil, Ideal for cooking and Body massage. Nirmal extends superior quality of oil production to sesame oil, extracted from the finest crop of India. KLF Nirmal produces sesame oil, which is extracted from premium seeds procured from farmers across the country. Sesame oil is packed using high-end packaging technology in a leak-proof and tamper-proof container and is available in convenient packs.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "900 kcal",
+    "Saturated fat": "13 g",
+    "Mono unsaturated fat": "44 g",
+    "Poly unsaturated fat": "43 g",
+    "Trans fat": "0g",
+    "Carbohydrates": "0g",
+    "Protein": "0g",
+    "Sodium": "0g",
+    "Cholesterol": "0 mg"
+   },
+   "ingredients": "Sesame oil,Edible Grade",
+   "storageInstructions": "Store in a cool,dry place free from argemone oil",
+   "manufacturerName": "KLF Nirmal Industries Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000085"
+  }
  },
  {
   "title": "Tilnad Gingelly Oil Pouch",
@@ -415,7 +541,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40026098_3-klf-gingelly-oil-tilnad-100-pure.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tilnad is 100% pure edible grade Gingelly or Sesame Oil , Ideal for cooking and also Body massage .",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "910g",
+    "Energy": "900kcal",
+    "Saturated fat": "13g",
+    "Mono unsaturated fat": "44g",
+    "Poly unsaturated fat": "43g",
+    "Trans fat": "0g",
+    "Carbohydrates": "0g",
+    "Protein": "0g",
+    "Sodium": "0g",
+    "Cholesterol": "0mg"
+   },
+   "ingredients": "Sesame seed oil,Jaggery",
+   "storageInstructions": "Store in a cool,dry place free from argemone oil",
+   "manufacturerName": "Dismas Road",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cocodaily Multi Source Edible Oil",
@@ -453,7 +599,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40354685-6_1-klf-cocodaily-multi-source-edible-oil.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "KLF Cocodaily, the world’s first multi-source edible oil, blends 80% refined sunflower oil with 20% raw coconut oil. AGMARK-certified and developed with CSIR and CFTRI, it combines the best of both oils. Rich in lauric acid, omega-6 fatty acids, and vitamins A, D, and E, it supports cholesterol balance and immunity. Ideal for Kerala dishes and snacks like banana chips, its advanced blending ensures crisp, non-greasy results with a mild coconut aroma. Free from added flavours, its low solidification point keeps it liquid, perfect for frying, sautéing, and daily cooking.",
+   "manufacturerName": "KLF Nirmal Industries(P) Ltd",
+   "fssaiLicense": "10012041000085",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconad Coconut Milk",
@@ -491,7 +643,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40141899-6_1-klf-coconad-coconut-milk.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of KLF Coconad Coconut Milk, a premium, natural coconut milk made from the finest quality coconuts harvested in Kerala, India. Extracted from the white flesh of freshly picked coconuts, this dairy-free, vegan-friendly milk offers a smooth, consistent texture and a delightful, mild coconut flavour that will elevate your culinary creations. Ideal for a variety of dishes, from curries and soups to smoothies and desserts, Coconad Coconut Milk is free from preservatives and artificial additives, making it a healthy choice for those seeking a pure, natural coconut product. With a long shelf life of 24 months, this versatile ingredient is suitable for lactose-intolerant individuals, allowing you to enjoy the authentic taste of Kerala coconut in your favourite recipes.",
+   "ingredients": "Real Coconut Milk extract, Water, Stabiliser: E466, Acidity Regulator: E330",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Coconut Fat": "17g",
+    "Carbohydrates": "1.7g",
+    "Total Fat": "17g",
+    "Saturated Fat": "12g",
+    "Total Sugar": "1.4g",
+    "Potassium": "0.1g",
+    "Protein": "1.4g",
+    "Sodium": "30mg",
+    "Fiber": "0.0g",
+    "Energy": "165Kcal"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place to protect from insects",
+   "manufacturerName": "KLF Nirmal Industries Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012041000085"
+  }
  },
  {
   "title": "Coconad Coconut Milk Powder",
@@ -535,7 +708,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40043577-8_1-klf-coconad-coconut-milk-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "KLF Coconad Coconut Milk Powder is made from select authentic Kerala Coconuts, for creamy and authentic taste of real coconuts. KLF Coconad Coconut Milk Powder is suitable for Kerala, Mangalorean, Thai and all cuisines with a coconut base. Coconut Milk Powder is non-messy, easy & convenient to use. Just add it in warm water to make coconut milk. Ready in under a minute.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy Value": "623.3 kcal",
+    "Total fat": "50.1 g",
+    "Saturated fat": "47.3 g",
+    "Trans fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "62.6 mg",
+    "Total Carbohydrate": "29.9 g",
+    "Dietary Fibre": "16.8 g",
+    "Sugar": "8.2 g",
+    "Protein": "13.2 g",
+    "Vitamin A": "0mcg",
+    "Vitamin C": "0 mg",
+    "Calcium": "66.4 mg",
+    "Iron": "4.6 mg",
+    "Potassium": "903.7 mg"
+   },
+   "manufacturerName": "Dismas Road Near Christ College Irinjalakuda Kerala 680121",
+   "fssaiLicense": "12418007000003",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Coconad Coconut Chutney",
@@ -570,7 +767,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40354686-5_1-klf-coconad-coconut-chutney-ready-to-eat.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the authentic taste of South Indian coconut chutney with KLF Coconad. Crafted using advanced technology, this ready-to-eat chutney captures the rich flavour and texture of homemade goodness. Made from 100% vegetarian ingredients, it’s free from preservatives, ensuring purity and quality. Simply open and mix for a convenient, delicious accompaniment to dosas, idlis, or snacks. KLF Coconad blends tradition with modern convenience, delivering an authentic coconut taste in every bite. Perfect for those craving a quick, wholesome, and flavourful chutney without compromising on quality or authenticity.",
+   "manufacturerName": "Klf Nirmal Industries (P) Ltd",
+   "fssaiLicense": "12418007000003",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cocosoft Coconut Soap",
@@ -593,6 +796,10 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40043578_1-klf-cocosoft-coconut-soap.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "100 Natural hand made soap made from pure cococnut oil it has all the good ness of coconut oil it works great on skin lathers very well in hard water For Beauty tips tricks more visit",
+   "countryOfOrigin": "India"
+  }
  }
 ]

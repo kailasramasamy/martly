@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/286082_24-sunfeast-dark-fantasy-choco-fills-biscuits-cookies.jpg"
-    }
+    },
+    "barcode": "8901725015909"
    },
    {
     "title": "230g",
@@ -50,7 +51,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/286082-8_3-sunfeast-dark-fantasy-choco-fills-biscuits-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "ingredients": "Choco Creme (38.0%) {Sugar, Refined Palmolein, Refined Palm Oil, Cocoa Solids, Emulsifier [Lecithin (From Soyabean)], Nature-Identical Flavouring Substances (Chocolate), Artificial Flavouring Substances (Vanilla)}, Maida (Refined Wheat Flour), Hydrogenated Vegetable Oil, Sugar, Invert Syrup, Liquid Glucose, Raising Agents [INS 503(ii), INS 500(ii), INS 450(i)], Cocoa Solids (0.7%), Butter, Milk Solids, Iodised Salt, Nature-Identical Flavouring Substances (*Milk Chocolate), Colours (INS 150c, INS 150d), Emulsifiers [Lecithin (From Soyabean), Mono and Diglycerides of Fatty Acids (From Palm Oil)], Artificial Flavouring Substances (Milk, Vanilla).\nContains Wheat, Milk and Soy. May Contain Nuts and Sulphites.",
+   "nutritionalInfo": {
+    "Energy": "507 kcal (2.9% RDA)",
+    "Protein": "7.3 g",
+    "Carbohydrate": "61.1 g",
+    "Total Sugars": "35.7 g",
+    "Added Sugars": "33.9 g (7.8% RDA)",
+    "Total Fat": "27.3 g (4.6% RDA)",
+    "Trans Fat": "0.1 g (0.5% RDA)",
+    "Saturated Fat": "12.7 g (6.8% RDA)",
+    "Cholesterol": "0.3 mg",
+    "Sodium": "181.5 mg (1.0% RDA)"
+   },
+   "manufacturerName": "Food Creations Pvt. Ltd. - SY No. 34",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Bourbon",
@@ -66,7 +85,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30008604_6-sunfeast-dark-fantasy-bourbon-chocolate-cream-biscuits.jpg"
-    }
+    },
+    "barcode": "8901725016234"
    },
    {
     "title": "108g",
@@ -103,7 +123,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40077089_20-sunfeast-dark-fantasy-bourbon-chocolate-cream-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Dark Fantasy Bourbon brings together crunchy choco biscuits, smooth choco creme, and sparkling sugar crystals on top for an indulgent chocolatey experience. The rich choco creme is sandwiched between crunchy choco biscuits, delivering the perfect balance of crunch and creaminess in every bite.\nWhether you're taking a break, enjoying a cup of tea, catching up with friends, or simply looking for a quick chocolatey snack, Sunfeast Dark Fantasy Bourbon makes every moment more enjoyable. Its rich chocolatey taste, creamy filling, and sugar crystals create a delightful treat for chocolate lovers.",
+   "ingredients": "Maida (Refined Wheat Flour), Sugar (32.8%), Refined Palm Oil, Colours [INS 150a, INS 150c, INS 150d, INS 129], Starch, Cocoa Solids (2.3%), Milk Solids, Raising Agents [INS 503(ii), INS 500(ii), INS 450(i)], Artificial Flavouring Substances (Vanilla, Chocolate), Emulsifiers [Mono- and Di-Glycerides of Fatty Acids (from Palm Oil), Lecithin (from Soyabean)], Plain Chocolate (0.1%), Iodized Salt and Nature Identical Flavouring Substances (Chocolate).",
+   "nutritionalInfo": {
+    "Energy": "479 kcal",
+    "Protein": "5.4 g",
+    "Carbohydrate": "73.5 g",
+    "Total Sugars": "36.4 g",
+    "Added Sugars": "34.2 g",
+    "Total Fat": "18.2 g",
+    "Saturated Fat": "8.8 g",
+    "Trans Fat (other than naturally occurring trans fat)": "0.1 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "93.2 mg"
+   },
+   "manufacturerName": "(05) Utsav Food Products - PIJ Road",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Choco Chip Cookies",
@@ -141,7 +180,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205147-6_6-sunfeast-dark-fantasy-biscuit-choco-chip-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Dark Fantasy Choco Chip Cookies are deliciously crunchy cookies loaded with rich chocolate chips for an indulgent snacking experience. Baked to perfection, they offer a delightful combination of crisp texture and intense chocolate flavour in every bite. Perfect for enjoying with tea or coffee, sharing with family and friends, or satisfying sweet cravings, these cookies make a delicious treat for any time of the day.",
+   "ingredients": "Refined Wheat Flour (Maida), Dark Chocolate Chips (21%) [Sugar, Cocoa Solids, Cocoa Butter, Dextrose, Emulsifier (Lecithin from Soyabean), and Artificial Flavouring Substances (Vanilla)], Sugar, Refined Palm Oil, Invert Syrup, Cocoa Solids, Choco Chips (1%), Raising Agents (INS 500(ii), INS 503(ii), INS 450(i)), Iodised Salt, Emulsifier [Diacetyl Tartaric and Fatty Acid Esters of Glycerol (from Sunflower and Palm Oil)], Artificial Flavouring Substances (Chocolate and Vanilla), Colours (INS 150d, INS 150c), and Flour Treatment Agent (INS 223).",
+   "nutritionalInfo": {
+    "Energy": "480 kcal",
+    "Protein": "7.3 g",
+    "Carbohydrate": "71.0 g",
+    "Total Sugars": "31.2 g",
+    "Added Sugars": "28.7 g",
+    "Total Fat": "18.5 g",
+    "Saturated Fat": "10.0 g",
+    "Trans Fat (other than naturally occurring trans fat)": "0.06 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "150.5 mg",
+    "Serving Size": "20 g"
+   },
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Dark Crunch Choco Creme Sandwich",
@@ -157,7 +216,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/273006_19-sunfeast-dark-fantasy-choco-creme-biscuits.jpg"
-    }
+    },
+    "barcode": "8909081000256"
    },
    {
     "title": "237g",
@@ -194,7 +254,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/273006-8_11-sunfeast-dark-fantasy-choco-creme-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Dark Fantasy Choco Crème brings together crunchy choco biscuits and smooth, rich choco Crème to create a deliciously indulgent treat. The rich choco Crème and crunchy biscuit come together to deliver the perfect balance of crunch and creaminess in every bite.\nWhether you're taking a quick tea break, enjoying a movie night or simply craving something chocolatey during the day, these sandwich biscuits make for a delightful snack anytime. Share with friends and family or savour them on your own.\nSunfeast Dark Fantasy Choco Crème is made for every chocolate lover who enjoys rich flavour and creamy indulgence in every bite.",
+   "ingredients": "Maida (Refined Wheat Flour), Sugar, Refined Palm Oil, Hydrogenated Vegetable Oil, Cocoa Solids (2.4%), Invert Syrup, Colours (INS 150c, INS 150d, INS 133, INS 129), Raising Agents [INS 503(ii), INS 500(ii), INS 450(i)], Iodised Salt, Emulsifiers [Lecithin (From Soyabean), Polysorbate 60 (From Palm)], Artificial Flavouring Substances (Vanilla, Chocolate), Humectant (INS 1520).\nContains Wheat and Soy. May Contain Nuts, Milk and Sulphites.",
+   "nutritionalInfo": {
+    "Energy": "472 kcal (4.7% RDA)",
+    "Protein": "5.0 g",
+    "Carbohydrate": "73.9 g",
+    "Total Sugars": "38.4 g",
+    "Added Sugars": "36.6 g (14.6% RDA)",
+    "Total Fat": "17.8 g (5.4% RDA)",
+    "Trans Fat": "0.07 g (0.5% RDA)",
+    "Saturated Fat": "9.3 g (8.6% RDA)",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "353.0 mg (3.5% RDA)"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Vanilla Sandwich Creme",
@@ -210,7 +289,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/273005_17-sunfeast-dark-fantasy-vanilla-cream.jpg"
-    }
+    },
+    "barcode": "8909081000317"
    },
    {
     "title": "237g",
@@ -247,7 +327,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/273005-8_11-sunfeast-dark-fantasy-vanilla-cream.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Dark Fantasy Vanilla Crème brings together crunchy choco biscuits and smooth, rich vanilla Crème for a deliciously indulgent treat. The rich vanilla Crème and crunchy biscuit come together perfectly to deliver a perfect balance of crunch and creaminess in every bite.\nWhether you're taking a quick break, enjoying a movie night, or looking for a sweet treat, these sandwich biscuits make for a delightful snack anytime. Share with friends and family or savour them on your own.\nSunfeast Dark Fantasy Vanilla Crème is for those who enjoy rich flavour and creamy indulgence.",
+   "ingredients": "Maida (Refined Wheat Flour), Sugar, Refined Palm Oil, Hydrogenated Vegetable Oil, Invert Syrup, Cocoa Solids, Raising Agents [INS 503(ii), INS 500(ii), INS 450(i)], Iodized Salt, Emulsifier [Lecithin (from Soyabean)], Artificial Flavouring Substances (Vanilla), Humectant (INS 1520).",
+   "nutritionalInfo": {
+    "Energy": "477 kcal",
+    "Protein": "4.9 g",
+    "Carbohydrate": "73.2 g",
+    "Total Sugars": "38.6 g",
+    "Added Sugars": "34.9 g",
+    "Total Fat": "18.7 g",
+    "Saturated Fat": "9.8 g",
+    "Trans Fat (other than naturally occurring trans fat)": "0.08 g",
+    "Sodium": "351.8 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012012000154",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Macaroon Fills Coconut Hazelnut",
@@ -291,7 +389,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356707-8_2-sunfeast-dark-fantasy-coconut-hazelnut-macaroon-fills-biscuit.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover a taste like no other with the all-new Sunfeast Dark Fantasy Macaroon Fills - a one-of-a-kind coconut macaroon cookie filled with a luxuriously creamy choco-hazelnut centre. This premium creation is a celebration of flavour and texture - a sweet, crunchy coconut cookie shell paired with a rich, nutty hazelnut filling, crafted to delight your senses.\nCoconut meets hazelnut in a truly unforgettable cookie experience, perfect for those who crave something decadent, dreamy, and deliciously unique. Indulge in the exotic Sunfeast Dark Fantasy Macaroon Fills - perfect for snacking, gifting, or elevating your tea-time moments. Double the cream, double the fantasy - only with Dark Fantasy Macaroon Fills. Dreamy coconut indulgence with a hazelnut heart.\nStorage: Store in a cool, dry place.",
+   "ingredients": "White Creme (25.9%) {Sugar, Refined Palm Oil, Milk Solids, Cocoa Butter, Emulsifier [Lecithin (from Soyabean)], Anhydrous Milk Fat, Iodised Salt, Nature-Identical Flavouring Substance (Vanilla)}, Desiccated Coconut (21.8%), Maida (Refined Wheat Flour), Choco Hazelnut Crème (11.0%) {Sugar, Refined Palmolein, Cocoa Solids (15.0%), Hazelnut Paste (4.0%), Emulsifier [Lecithin (from Soyabean)], Iodised Salt, Nature-Identical Flavouring Substance (Chocolate, Hazelnut)}, Sugar, Bakery Shortening, Liquid Glucose, Invert Syrup, Sweetened Condensed Milk, Butter, Raising Agents [500(ii), 503(ii), 450(i)], Iodised Salt, Artificial Flavouring Substances (Sweet Coconut, Vanilla), Emulsifiers [Lecithin (from Soyabean), Mono and Diglycerides of Fatty Acids (from Palm Oil)], Colour (150d), Cardamom, Flour Treatment Agent (223).",
+   "nutritionalInfo": {
+    "Energy": "578 kcal",
+    "Protein": "5.7 g",
+    "Carbohydrate": "52.0 g",
+    "Total Sugars": "30.8 g",
+    "Added Sugars": "29.8 g",
+    "Total Fat": "39.7 g",
+    "Saturated Fat": "13.0 g",
+    "Trans Fat (other than naturally occurring trans fat)": "0.09 g",
+    "Cholesterol": "6.0 mg",
+    "Sodium": "69.0 mg"
+   },
+   "manufacturerName": "Food Creations Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Mocha Vanilla Dual Fills",
@@ -335,7 +452,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356705-8_1-sunfeast-dark-fantasy-mocha-vanilla-dual-fills-biscuit.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Step into a whole new world of indulgence with Sunfeast Dark Fantasy Mocha Vanilla Dual Fills – a revolutionary treat from the house of Sunfeast Dark Fantasy. India’s first cookie with two distinctive, luscious cream fillings at its heart.\nCrunchy Coffee Crusted Cookie baked to perfection is filled with rich, aromatic taste of mocha and smooth, velvety sweetness of vanilla – creating a dual, that is nothing short of magical. Crafted for true connoisseurs of flavor. Premium café-style coffee experience, right from the comfort of your home.\nWhether you’re looking to elevate your snack time, impress your guests, or simply indulge your senses, the Mocha Vanilla Dual Fills is your perfect partner in indulgence.\nDouble the Cream, Double the Fantasy. Only with Dark Fantasy Mocha Vanilla Dual Fills\nStorage: Store in cool & dry place.",
+   "ingredients": "Maida (Refined Wheat Flour), White Compound Filling (18.5%) {Sugar, Refined Palm Oil, Milk Solids, Cocoa Butter, Emulsifier [Lecithin (from Soyabean)], Anhydrous Milk Fat, Iodised Salt, Nature-Identical Flavouring Substance (Vanilla)}, Tiramisu Flavoured Filling (18.5%) {Sugar, Refined Palmolein, Cocoa Solids, Milk Solids, Refined Palm Oil, Emulsifier [Lecithin (from Soyabean)], Nature-Identical Flavouring Substance (Tiramisu, Vanilla), Artificial Flavouring Substances (Milk Chocolate)}, Sugar, Bakery Shortening, Invert Syrup, Liquid Glucose, Colours (150c, 150d, 133), Cocoa Solids (0.4%), Raising Agents [500(ii), 503(ii), 450(i)], Artificial Flavouring Substances (Milk, Coffee, Vanilla), Iodised Salt, Emulsifiers [Lecithin (from Soyabean), Mono and Diglycerides of Fatty Acids (from Palm Oil)], Nature-Identical Flavouring Substances (Milk Chocolate, *White Chocolate, Tiramisu), Coffee–Chicory Mixture (0.1%).",
+   "nutritionalInfo": {
+    "Energy": "465 kcal",
+    "Protein": "4.3 g",
+    "Carbohydrate": "55.5 g",
+    "Total Sugars": "38.9 g",
+    "Added Sugars": "36.9 g",
+    "Total Fat": "25.3 g",
+    "Saturated Fat": "12.4 g",
+    "Trans Fat (other than naturally occurring trans fat)": "0.16 g",
+    "Cholesterol": "0.04 mg",
+    "Sodium": "177.0 mg"
+   },
+   "manufacturerName": "Food Creations Pvt. Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Peanut Butter Choco Dual Fills",
@@ -379,7 +515,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356706-8_2-sunfeast-dark-fantasy-peanut-butter-choco-dual-fills-biscuit.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience a new level of indulgence with Sunfeast Dark Fantasy Peanut Butter Choco Dual Fills - Indias first-ever dual-filled cookie featuring two distinctive, luscious cream layers at its heart. The dual crème filling blends indulgence with nourishment, combining the creamy sweetness of chocolate with the wholesome richness of peanut butter, a natural source of protein. Bold, nutty peanut butter and rich, velvety choco crème - all encased in our signature, perfectly baked Dark Fantasy cookie shell.\nWhether you're craving a quick pick-me-up, a satisfying mid-day treat, or an on-the-go snack, Dark Fantasy Peanut Butter Choco Dual Fills is your anytime indulgence.\nStorage: Store in a cool, dry place.",
+   "ingredients": "Maida (Refined Wheat Flour), Choco Creme (18.5%) [Sugar, Refined Palmolein, Refined Palm Oil, Cocoa Solids, Emulsifier [Lecithin (From Soybean)], Nature Identical Flavouring Substances (Chocolate), Artificial Flavouring Substances (Vanilla)], Peanut Butter (18.5%) [Roasted Peanut (16.8%), Sugar, Iodized Salt, Hydrogenated Vegetable Oil, Emulsifier [Mono And Diglycerides Of Fatty Acids (From Palm Oil)]], Hydrogenated Vegetable Oil, Sugar, Invert Syrup, Liquid Glucose, Cocoa Solids (0.96%), Raising Agents [500(ii), 503(ii), 450(i)], Butter, Milk Solids, Iodized Salt, Nature Identical Flavouring Substances (Milk Chocolate), Colours (150d, 150c), Emulsifiers [Lecithin (From Soybean), Mono And Diglycerides Of Fatty Acids (From Palm Oil)], Artificial Flavouring Substances (Milk, Vanilla).\nContains: Wheat, Soy, Nut, Milk. May Contain Sulphite.",
+   "nutritionalInfo": {
+    "Energy": "539 kcal",
+    "Protein": "9.7 g",
+    "Carbohydrate": "54.2 g",
+    "Total Sugars": "27.4 g",
+    "Added Sugars": "24.3 g",
+    "Total Fat": "32.3 g",
+    "Saturated Fat": "18.0 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "0.46 mg",
+    "Sodium": "114.3 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Desserts Choco Chunks",
@@ -423,7 +578,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237159-8_2-sunfeast-dark-fantasy-choco-chunks-choco-chip-molten-choco-creme-filled-cookie.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in a delectable dessert that will transport you to a world of pure fantasy with Sunfeast Dark Fantasy Choco Chunks. This gourmet choco chip cookie is a true sensorial delight, with a rich and indulgent flavour that is hard to describe. Generously sprinkled with crunchy choco chips on the outside and filled with decadent molten choco crème on the inside, this cookie is the ultimate treat for the new-age sweet tooth.\nWhether you're looking for a midday pick-me-up or satisfying a late-night craving, Sunfeast Dark Fantasy Choco Chunks is there to delight your taste buds. Conveniently order it online for an indulgent dessert experience with doorstep delivery. Savour the perfect balance of crunch, taste and freshness in every bite of this irresistible treat.",
+   "ingredients": "Choco Crème (34%) (Sugar, Refined Palmolein, Refined Palm Oil, Cocoa Solids, Emulsifier [Lecithin (From Soyabean)], Nature Identical Flavouring Substances And Artificial Flavouring Substances - Vanilla), Refined Wheat Flour (Maida), Sugar, Hydrogenated Vegetable Oil, Dark Chocolate Chips (10.1%) (Sugar, Cocoa Solids, Cocoa Butter, Dextrose, Emulsifier [Lecithin (From Soyabean)] And Artificial Flavouring Substances - Vanilla), Eggs (2.5%), Invert Syrup, Liquid Glucose, Raising Agents [INS 500(ii), INS 450(i), INS 503(i)], Iodized Salt, Milk Solids, Nature Identical Flavouring Substances, Emulsifier [Lecithin (From Soyabean)], Artificial Flavouring Substances (Milk, Vanilla, Coffee), Colours (INS 150c, INS 150d).\nContains: Wheat, Milk, Soy, Eggs.\nMay Contain Nuts, Sulphites.",
+   "nutritionalInfo": {
+    "Energy": "508 kcal",
+    "Protein": "5.4 g",
+    "Carbohydrate": "66.3 g",
+    "Total Sugars": "39.2 g",
+    "Added Sugars": "37.9 g",
+    "Total Fat": "24.6 g",
+    "Saturated Fat": "13.2 g",
+    "Trans Fat": "0.03 g",
+    "Cholesterol": "14 mg",
+    "Sodium": "370.7 mg"
+   },
+   "manufacturerName": "(11) Food Creations Pvt. Ltd",
+   "fssaiLicense": "10012043000081",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Desserts Choco Nut Dipped",
@@ -467,7 +641,18 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237160-8_2-sunfeast-dark-fantasy-choco-nut-dipped-cookie-choco-filled-with-hazelnuts.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the ultimate dessert experience with Sunfeast Dark Fantasy Choco Nut Dipped cookies. These decadent treats feature a rich, hazelnut-infused centre, dotted with crunchy cashews and almonds, all enveloped in a silky-smooth chocolate coating. Savour the sensorial delight with every bite as the flavours melt together, transporting you to a choco-fantasy. Whether enjoyed as an afternoon pick-me-up or a satisfying end to your day, these cookies are sure to brighten your mood and leave you craving more. Crafted with care, Sunfeast Dark Fantasy Choco Nut Dipped cookies offer the perfect balance of indulgence and crispness, making them a must-have for new-age sweet tooths. Treat yourself to this delectable dessert and experience the ultimate choco-fantasy.",
+   "ingredients": "Choco Crème, Choco Covering, Refined Wheat Flour, Hydrogenated Vegetable Oil, Sugar, Cashew Nuts, Invert Syrup, Liquid Glucose, Almonds, Cocoa Solids, Raising Agents, Butter, Hazelnut Paste, Emulsifiers, Colours, Artificial Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g Energy (Kcal): 548 Protein (g): 5.2 Carbohydrate (g): 61.1 Total Sugars (g): 38.1 Added Sugars (g): 36.2 Total Fat (g): 31.5 Saturated Fat (g): 17.8 Trans Fat (fg): 0.04 Cholesterol (mg): 3 Sodium (mg): 142.8"
+   },
+   "storageInstructions": "*Store in cool and dry place",
+   "manufacturerName": "Food Creations Pvt. Ltd. - SY No. 34",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Festive Collection Assorted Cookies",
@@ -511,7 +696,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40320366-8_2-sunfeast-dark-fantasy-dark-fantasy-festive-collection-260-g.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy a delicious assortment of premium chocolate cookies with the ITC Dark Fantasy Bourbon Festive Collection. This indulgent gift pack includes Dark Fantasy Choco Fills (2 x 20 g), Dark Fantasy Choco Creme (1 x 83 g), and Bourbon with Classic Chocolate (1 x 111.6 g), offering a rich combination of cocoa flavour, creamy chocolate fillings, and classic chocolate cookies. Perfect for festive celebrations, gifting, sharing with family and friends, or treating yourself to a delightful chocolate-filled cookie experience.",
+   "ingredients": "Dark Fantasy Choco Fills: Choco Creme (38.0%) [Sugar, Refined Palmolein, Refined Palm Oil, Cocoa Solids, Emulsifier Lecithin (from Soyabean), Nature Identical Flavouring Substances (Chocolate), Artificial Flavouring Substances (Vanilla)], Maida (Refined Wheat Flour), Hydrogenated Vegetable Oil, Sugar, Invert Syrup, Liquid Glucose, Raising Agents (INS 503(ii), INS 500(i), INS 450(i)), Cocoa Solids (0.7%), Butter, Milk Solids, Iodised Salt, Nature Identical Flavouring Substances (Milk Chocolate), Colours (INS 150c, INS 150d), Emulsifiers [Lecithin (from Soyabean), Mono- and Diglycerides of Fatty Acids (from Palm Oil)], Artificial Flavouring Substances (Milk, Vanilla).\nDark Fantasy Choco Creme: Maida (Refined Wheat Flour), Sugar, Refined Palm Oil, Hydrogenated Vegetable Oil, Cocoa Solids (3.4%), Invert Syrup, Raising Agents (INS 503(ii), INS 500(i), INS 450(i)), Iodised Salt, Emulsifier [Lecithin (from Soyabean)], Artificial Flavouring Substances (Vanilla), Humectant (INS 1520).\nBourbon with Classic Chocolate: Maida (Refined Wheat Flour), Sugar (32.8%), Refined Palm Oil, Colours (INS 150a, INS 150c, INS 150d, INS 129), Starch, Cocoa Solids (2.3%), Milk Solids, Raising Agents (INS 503(ii), INS 500(i), INS 450(i)), Artificial Flavouring Substances (Vanilla, Chocolate), Emulsifiers [Mono- and Diglycerides of Fatty Acids (from Palm Oil), Lecithin (from Soyabean)], Plain Chocolate (0.1%), Iodised Salt, Nature Identical Flavouring Substances (Chocolate).",
+   "nutritionalInfo": {
+    "Energy": "479 kcal",
+    "Protein": "5.4 g",
+    "Carbohydrate": "73.5 g",
+    "Total Sugars": "36.4 g",
+    "Added Sugars": "34.2 g",
+    "Total Fat": "18.2 g",
+    "Saturated Fat": "8.8 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "93.2 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dark Fantasy Yumfills Choco Pie",
@@ -527,7 +731,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40110217_6-sunfeast-dark-fantasy-yumfills-pie-cake.jpg"
-    }
+    },
+    "barcode": "8901725134686"
    },
    {
     "title": "242g",
@@ -561,7 +766,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40110218_7-sunfeast-choco-pie-dark-fantasy-yumfills-pie.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Combining luscious cream, rich chocolate, and a soft pie cake, the Sunfeast Yumfills Pie ensures you experience bliss with every bite. Dipped in smooth, rich chocolate, the Yumfills Whoopie Pie is sure to become one of your favourites. With the goodness of egg, this pie cake makes the snack time fun and healthy. A deliciously soft pie cake. Filled with luscious cream. Enrobed generously by a smooth and rich chocolate layer.",
+   "ingredients": "Refined Wheat Flour (Maida), Milk Choco Covering (22.9%) {Sugar, Interesterified Vegetable Fat, Milk Solids (2.75%), Cocoa Solids (1.37%), Hydrogenated Vegetable Oils, Artificial Flavouring Substances (Vanilla)}, Sugar, Liquid Glucose, Refined Palmolein, Humectant (INS 422), Invert Syrup, Cake Gel {Emulsifiers [Mono- and Di-Glycerides of Fatty Acids (from Palm Oil), Salts of Myristic, Palmitic and Stearic Acids with Ammonia, Calcium, Potassium and Sodium (from Palm Oil), Propylene Glycol Esters of Fatty Acids (from Palm Oil)], Humectant (INS 422)}, Milk Solids (1.61%), Raising Agents [INS 500(ii), INS 450(i), INS 450(vii), INS 503(ii)], Emulsifiers [Polyglycerol Esters of Fatty Acid (from Palm Oil), Lecithin (from Soyabean)], Stabilizers (INS 407, INS 415), Acidity Regulator (INS 330), Preservative (INS 202), Hydrolysed Vegetable Protein, Nature Identical Flavouring Substances, Iodized Salt, Flour Treatment Agent (INS 223) and Colour (INS 102).\nAllergen Information: Contains Wheat, Milk, Soy and Sulphite. May Contain Nut.",
+   "nutritionalInfo": {
+    "Energy": "425 kcal",
+    "Protein": "5.4 g",
+    "Carbohydrate": "63.9 g",
+    "Total Sugars": "26.3 g",
+    "Added Sugars": "16.4 g",
+    "Total Fat": "18.9 g",
+    "Trans Fat": "0.05 g",
+    "Saturated Fat": "10.7 g",
+    "Cholesterol": "24 mg",
+    "Sodium": "146.8 mg"
+   },
+   "manufacturerName": "ITC Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Bounce Pineapple Creme Biscuits",
@@ -577,7 +801,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20004259_12-sunfeast-bounce-biscuits-pineapple-zing.jpg"
-    }
+    },
+    "barcode": "8909081015267"
    },
    {
     "title": "30g",
@@ -614,7 +839,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019287_7-sunfeast-bounce-biscuits-pineapple-creme-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Bounce Pineapple Creme Flavoured Biscuits bring a delightful combination of crunchy biscuits and a smooth, creamy pineapple-flavoured filling. Each bite delivers a refreshing fruity taste with a perfect balance of sweetness and crunch, making it an enjoyable snack for all ages. Ideal for tea breaks, lunch boxes, or anytime you crave a fun and flavourful treat.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Refined Palm Oil, Invert Syrup, Liquid Glucose (1.0%), Raising Agents [Ins 503(Ii), Ins 500(Ii), Ins 450(I)], Starch, Dextrose, Iodized Salt, Emulsifiers [Lecithin (From Soyabean), Polyoxyethylene Sorbyton Monostearate (From Palm)], Nature Identical Flavouring Substances (Pineapple, Butter), Milk Solids, Acidity Regulators (Ins 330, Ins 296), Flour Treatment Agent (Ins 223), Artificial Flavouring Substances (Vanilla), Colour (Ins 102)",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy": "468 kcal",
+    "Protein": "5.8 g",
+    "Carbohydrates": "74 g",
+    "Total Sugars": "35.4 g",
+    "Added Sugars": "35.4 g (14.1%)",
+    "Total Fat": "16.5 g (4.9%)",
+    "Saturated Fat": "8.1 g (7.4%)",
+    "Trans Fat": "0.02 g (0.2%)",
+    "Cholesterol": "0 mg",
+    "Sodium": "239.1 mg (2.4%)"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bounce Choco Creme Biscuits",
@@ -630,7 +875,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20004260_12-sunfeast-bounce-choco-twist-cream-biscuits.jpg"
-    }
+    },
+    "barcode": "8909081015236"
    }
   ],
   "images": [
@@ -652,7 +898,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004260-6_14-sunfeast-bounce-choco-twist-cream-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Choco Cream Biscuits offer a delightful chocolate indulgence with rich, smooth dark chocolate cream sandwiched between two crunchy chocolate biscuits. Every bite delivers a perfect blend of crisp texture and luscious cocoa flavour, creating a satisfying treat for chocolate lovers. Enjoy these delicious biscuits during snack time, with tea, or whenever you crave a sweet escape.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Refined Palm Oil, Invert Syrup, Raising Agents [Ins 450(I), Ins 500(Ii), Ins 503(Ii)], Liquid Glucose (1.0%), Colours (Ins 122, Ins 150d, Ins 150c), Cocoa Solids (0.5%), Iodized Salt, Emulsifiers [Lecithin (From Soyabean), Polyoxyethylene Sorbyton Monostearate (From Palm)], Artificial Flavouring Substances (Milk, Vanilla, Chocolate), Milk Solids, Starch, Plain Chocolate (0.06%){Sugar, Cocoa Solids, Cocoa Butter, Emulsifiers [Lecithin (From Soyabean), Polyglycerol Esters Of Interesterified Ricinoleic Acid (From Castor Bean)]}, Flour Treatment Agent (Ins 223), Nature Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy": "465 kcal",
+    "Protein": "6.2 g",
+    "Carbohydrates": "74.1 g",
+    "Total Sugars": "35.2 g",
+    "Added Sugars": "35.2 g",
+    "Total Fat": "16 g",
+    "Saturated Fat": "8.4 g",
+    "Trans Fat": "0.02 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "282.4 mg"
+   },
+   "usageInstructions": "Store in cool and dry place.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bounce Elaichi Creme Biscuits",
@@ -668,7 +934,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40019281_8-sunfeast-sunfeast-bounce-biscuits-elaichi-creme-cookies.jpg"
-    }
+    },
+    "barcode": "8909081015212"
    }
   ],
   "images": [
@@ -690,7 +957,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019281-6_7-sunfeast-sunfeast-bounce-biscuits-elaichi-creme-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Bounce Biscuits - Elaichi Creme Cookies 41 g",
+   "ingredients": "Wheat Flour, Sugar, Edible Vegetable Oil, Invert Syrup, Raising Agent (Ins 503 (Ii) Baking Powder, Starch, Edible Common Salt, Emulsifier (Ins 322), Milk Solids And Dough Conditioner (Ins 223), Contain Permitted Synthetic Food Colour (S) (Ins 102) And Added Flavour (S) (Nature Identical Flavouring Substance-Cardamom Artificial Flavouring Substance Vanilla.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bounce Dream Cream Choco Vanilla",
@@ -706,7 +980,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/288990_1-sunfeast-dream-cream-choco-vanilla-biscuits.jpg"
-    }
+    },
+    "barcode": "8909081013249"
    }
   ],
   "images": [
@@ -722,7 +997,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/288990-4_1-sunfeast-dream-cream-choco-vanilla-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Chocolate Vanilla taste Cream Biscuits is wealthy creamy appetising biscuits. This flavour is liked by all people. It is a truthfully delicious range of cream biscuits that have become an instant hit with children. It will give a high-quality taste.",
+   "ingredients": "Flour, Sugar, Edible Vegetable Oil, Hydrogenated Vegetable Oils, Milk Solids, Dextrose, Invert Syrup, Raising Agents (500 (Ii), Baking Powder, Starch, Edible Common Salt, Emulsifier (Ins 322), Acidity Regulator (Ins 296), Chocolate And Vanilla.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "A sweet treat, you can eat it as an after-dinner dessert. It is also a perfect companion for your evening snacks and tea-times also. Being a cream biscuit, children love it. The best part? Even adults seem to revel in the chocolaty goodness of it!",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Bounce Dream Cream Strawberry Vanilla",
@@ -738,7 +1021,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/286788_3-sunfeast-dream-cream-strawberry-vanilla.jpg"
-    }
+    },
+    "barcode": "8909081005121"
    }
   ],
   "images": [
@@ -760,7 +1044,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/286788-6_1-sunfeast-dream-cream-strawberry-vanilla.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Dream Cream strawberry vanilla is the wealthy strawberry vanilla biscuits. It has crusty biscuits outside and an appetising strawberry and vanilla flavoured creamy layer in the interior. The biscuits are shaped using cautiously chosen first-class ingredients for a sensory skill unlike any other. It's a comfortable mix of sweet-smelling strawberry and vanilla.",
+   "ingredients": "Wheat Flour, Sugar, Edible Vegetable Oil, Hydrogenated Vegetable Oils, Milk Solids, Dextrose, Invert Syrup, Raising Agents (Ins 503(Ii), Baking Powder), Starch, Edible Common Salt, Emulsifier (Ins 322), Acidity Regulator (Ins 296) And Strawberry Juice Powder (0.015%)",
+   "nutritionalInfo": {
+    "Energy (kcal)": "497",
+    "Protein (g)": "5.3",
+    "Carbohydrate (g)": "70.2",
+    "Of which Sugar (g)": "31.9",
+    "Fat (g)": "21.7",
+    "Trans fat (g)": "0.2",
+    "Saturated fat (g)": "10.6"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mom's Magic Butter Biscuits",
@@ -813,7 +1113,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30008746-8_10-sunfeast-moms-magic-rich-butter-biscuits-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Mom's Magic Butter Cookies are a delightful treat that captures the warmth and comfort of homemade baking. Crafted with premium ingredients, including rich roasted butter and subtle caramel notes, these cookies offer a velvety smooth texture that melts in your mouth. Baked to golden perfection, they have a satisfying crunch that's perfect for afternoon tea or an indulgent snack. Infused with the love and care of a mother's touch, Sunfeast Mom's Magic Butter Cookies are a true taste of heartwarming nostalgia.",
+   "ingredients": "MAIDA (REFINED WHEAT FLOUR), REFINED PALM OIL, SUGAR, INVERT SYRUP, BUTTER (0.5%), IODIZED SALT, RAISING AGENTS [INS 503(ii), INS 500(ii), INS 450(i)], EMULSIFIERS [LECITHIN (FROM SOYABEAN), MONO AND DIGLYCERIDES OF FATTY ACIDS (FROM PALM OIL), DIACETYLTARTRIC AND FATTY ACID ESTER OF GLYCEROL (FROM SOYABEAN)], MILK SOLIDS, NATURE IDENTICAL FLAVOURING SUBSTANCES, COLOUR (INS 150a) AND ARTIFICIAL FLAVOURING SUBSTANCES (VANILLA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy (kcal)": "489 kcal",
+    "Protein (g)": "6.9 g",
+    "Carbohydrate (g)": "68.1 g",
+    "Total Sugars (g)": "21.7 g",
+    "Added Sugars (g)": "20.4 g",
+    "Total fat (g)": "21.4 g",
+    "Saturated fat (g)": "10.7 g",
+    "Trans fat (other than naturally occurring trans fat) (g)": "0.0 g",
+    "Cholesterol (mg)": "6.0 mg",
+    "Sodium (mg)": "253.5 mg"
+   },
+   "manufacturerName": "ITC Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mom's Magic Cashew & Almond Cookies",
@@ -829,7 +1150,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30008744_19-sunfeast-moms-magic-cookies-cashew-almond-biscuits.jpg"
-    }
+    },
+    "barcode": "8909081014277"
    },
    {
     "title": "88g",
@@ -866,7 +1188,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30008744-8_17-sunfeast-moms-magic-cookies-cashew-almond-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful combination of Sunfeast Mom's Magic Cashews & Almonds cookies. Crafted with the utmost care and attention, these cookies offer a delectable balance of nutty and buttery flavours that will delight your taste buds. Packed with the goodness of premium cashews and almonds, each bite provides a satisfying crunch and a touch of sweetness. Perfect for enjoying with a cup of tea or as a guilt-free snack, these cookies embody the warmth and wholesomeness of homemade baking. Treat yourself or share the joy with loved ones - Sunfeast Mom's Magic Cashews & Almonds cookies are a true delight for any occasion.",
+   "ingredients": "Maida (Refined Wheat Flour), Sugar, Refined Palm Oil, Invert Syrup, Nuts (0.9%) [cashews Nuts (0.85%), Almonds (0.05%)], Raising Agents [500(Ii), 503(Ii), 450(I)], Iodized Salt, Nature Identical Flavouring Substances (Butter, Nut, Vanilla, Milk), Emulsifiers [mono And Diglycerides Of Fatty Acids (From Palm Oil), Lecithin (From Soyabean), Diacetyltartaric And Fatty ACID Esters Of Glycerol (From Sunflower And Palm Oil)], Artificial Flavouring Substances (Butter), Ghee (0.01%), Flour Treatment Agent (223), Colour (150a)",
+   "nutritionalInfo": {
+    "Per": "100g Serving_Size: 20g",
+    "Energy (kcal)": "481 kcal",
+    "Protein (g)": "6.8 g",
+    "Carbohydrate (g)": "69.0 g",
+    "Total Sugars (g)": "25.5 g",
+    "Added Sugars (g)": "24.1 g",
+    "Total fat (g)": "20.1 g",
+    "Saturated fat (g)": "10.1 g",
+    "Trans fat (other than naturally occurring trans fat) (g)": "0.08 g",
+    "Cholesterol (mg)": "0.03 mg",
+    "Sodium (mg)": "270.1 mg"
+   },
+   "manufacturerName": "(01) Mrs. Bectors Food Specialities Ltd. - Plot No. 13",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mom's Magic Fruit & Milk Cookies",
@@ -882,7 +1224,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40101421_4-sunfeast-moms-magic-biscuits-cookies-fruit-milk.jpg"
-    }
+    },
+    "barcode": "8901725109561"
    },
    {
     "title": "51.1g",
@@ -919,7 +1262,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40101421-8_2-sunfeast-moms-magic-biscuits-cookies-fruit-milk.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cookies with the goodness of Milk, Strawberries and Cranberries.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mom's Magic Nut Biscotti",
@@ -957,7 +1305,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005871-6_2-sunfeast-moms-magic-biscuits-cookies-nut-biscotti.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast brings to you the original yummy gourmet cookie experience, generously filled with almonds and cashews. It gives a delicious taste.",
+   "ingredients": "Wheat Flour, Sugar, Hydrogenated Vegetable Oils, Cashewnut (7.7%, Invert Syrup, Butter, Almond (3.0), Milk\nSolids, Liquid Glucose, Raising Agents (Ins 503(Ii), Ins 500(Ii), Ins 450(I)), Starch, Edible Common Salt And Emulsifiers (Ins\n322(I), Ins 472E)\nContains Added Flavours) (Natural Flavours And Natural Flavouring Substances, Nature Identical Flavouring Substances\nAnd Artificial Flavouring Substances Vanilla)",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Farmlite Oats & Almonds Cookies",
@@ -973,7 +1328,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40007921_19-sunfeast-farmlite-biscuit-cookies-oats-almonds.jpg"
-    }
+    },
+    "barcode": "8901725004668"
    },
    {
     "title": "75g",
@@ -1010,7 +1366,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007921-8_5-sunfeast-farmlite-biscuit-cookies-oats-almonds.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Farmlite Oats & Almonds is a range of wholesome biscuits made from grains sourced from some of India's finest farms. Along with the goodness of grains, these biscuits contain tasty ingredients such as wheat, oats and almonds, offering a rich and satisfying flavour. Perfect for your everyday chai moments or those sudden hunger pangs, these biscuits make a convenient and delicious snack.",
+   "ingredients": "Wheat Flour (Atta) (35.3%), Oat Flakes (21.2%), Refined Palm Oil, Sugar, Liquid Glucose, Almonds (3.2%), Raising Agents [INS 503 (ii), INS 500 (ii), INS 450 (i)], Maltodextrin, Invert Syrup, Milk Solids, Iodized Salt, Artificial Flavouring Substances (Milk, Vanilla), Emulsifier [Lecithin (from Soyabean)] and Nature Identical Flavouring Substances. \nAllergen Information: Contains Wheat, Oats, Milk, Soy and Nuts.May Contain Sulphite.",
+   "nutritionalInfo": {
+    "Energy": "482 kcal",
+    "Carbohydrate": "62.5 g",
+    "Total Sugars": "20.5 g",
+    "Added Sugars": "19.4 g",
+    "Dietary Fibre": "4.7 g",
+    "Total Fat": "21.4 g",
+    "Saturated Fat": "9.6 g",
+    "Trans Fat (Other Than Naturally Occurring Trans Fat)": "0.0 g",
+    "Cholesterol": "0.2 mg",
+    "Sodium": "423.6 mg",
+    "Protein": "12.3 g"
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Farmlite Oats & Raisins Cookies",
@@ -1026,7 +1401,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40007920_15-sunfeast-farmlite-biscuit-cookies-oats-raisins.jpg"
-    }
+    },
+    "barcode": "8901725004675"
    },
    {
     "title": "75g",
@@ -1063,7 +1439,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007920-8_1-sunfeast-farmlite-biscuit-cookies-oats-raisins.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Farmlite Oats & Raisins is a range of wholesome biscuits made from grains sourced from some of India's finest farms. Along with the goodness of grains, these biscuits contain tasty ingredients such as wheat and raisins, offering a rich and satisfying flavour. Perfect for your everyday chai moments or those sudden hunger pangs, these biscuits make a convenient and delicious snack.",
+   "ingredients": "Wheat Flour (Atta) (35.3%), Oat Flakes (21.2%), Refined Palm Oil, Sugar, Liquid Glucose, Almonds (3.2%), Raising Agents [INS 503 (ii), INS 500 (ii), INS 450 (i)], Maltodextrin, Invert Syrup, Milk Solids, Iodized Salt, Artificial Flavouring Substances (Milk, Vanilla), Emulsifier [Lecithin (from Soyabean)] and Nature Identical Flavouring Substances.",
+   "nutritionalInfo": {
+    "Energy": "482 kcal",
+    "Carbohydrate": "62.5 g",
+    "Total Sugars": "20.5 g",
+    "Added Sugars": "19.4 g",
+    "Dietary Fibre": "4.7 g",
+    "Total Fat": "21.4 g",
+    "Saturated Fat": "9.6 g",
+    "Trans Fat (Other Than Naturally Occurring Trans Fat)": "0.0 g",
+    "Cholesterol": "0.2 mg",
+    "Sodium": "423.6 mg",
+    "Protein": "12.3 g"
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Farmlite Oats & Chocolate Cookies",
@@ -1079,7 +1474,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40048722_12-sunfeast-farmlite-biscuit-cookies-oats-and-chocolate.jpg"
-    }
+    },
+    "barcode": "8901725004682"
    }
   ],
   "images": [
@@ -1107,7 +1503,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048722-8_1-sunfeast-farmlite-biscuit-cookies-oats-and-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Farmlite Oats & Chocolate is a range of wholesome biscuits made from grains sourced from some of India's finest farms. Along with the goodness of grains, these biscuits contain tasty ingredients such as wheat, oats and chocolate, offering a delicious combination of flavours and textures. Perfect for your everyday chai moments or those sudden hunger pangs, these biscuits make a convenient and satisfying snack.",
+   "ingredients": "Wheat Flour (Atta) (31.3%), Oat Flakes (20.3%), Sugar, Refined Palm Oil, Plain Chocolate Chips (6.2%) [Sugar, Cocoa Solids, Cocoa Butter, Dextrose, Emulsifier [Lecithin (from Soyabean)], Natural Flavours and Natural Flavouring Substances], Liquid Glucose, Invert Syrup, Raising Agents [INS 503(ii), INS 500(ii), INS 450(i)], Cocoa Solids (1.4%), Almond (1.4%), Maltodextrin, Iodized Salt, Artificial Flavouring Substances (Milk, Vanilla) and Emulsifier [Lecithin (from Soyabean)].\nAllergen Information: Contains Wheat, Oats, Milk, Soy and Nuts.May Contain Sulphite.",
+   "nutritionalInfo": {
+    "Energy": "484 kcal",
+    "Protein": "11.0 g",
+    "Carbohydrate": "63.6 g",
+    "Total Sugars": "26.2 g",
+    "Added Sugars": "23.3 g",
+    "Dietary Fibre": "4.6 g",
+    "Total Fat": "21.6 g",
+    "Saturated Fat": "10.1 g",
+    "Trans Fat (Other Than Naturally Occurring Trans Fat)": "0.0 g",
+    "Cholesterol": "0.2 mg",
+    "Sodium": "248.8 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Farmlite Digestive Biscuits",
@@ -1145,7 +1560,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40058542-6_2-sunfeast-farmlite-digestive-biscuits-cookies-all-good-rich-fibre.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Real Digestive Biscuit with no maida & no added sugar. This Biscuit is made from whole wheat flour of Aashirvaad Atta which makes it naturally rich in fibre content.",
+   "ingredients": "Wheat Flour, Refined Palm Oil, Sweetener (Ins 965(I)), Raising Agents (Ins 503 (Ii), Ins 500 (N), Ins 450(I)), Wheat Barn, Starch, Milk Solids, Wheat Fibres, Corn Flakes (0.70%) Emulsifiers (Ins 471, Ins 472E), Elible Common Salt, Acidity Regulator (Ins 296) And Cinnamon Powder Contains Permitted Natural Color (S) (Ins 150D) And Added Flavour (S) (Natural Flavours And Natural Flavouring Substances Butter, Nature Identical Flavouring Substances•Creamy, Butter And Artificial Flavouring Substances Milk, Vanilla)",
+   "usageInstructions": "It goes well with beverages like tea or coffee. Conveniently packed easy to carry for quick bite. Store in a cool and dry place.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Farmlite Super Millets Ragi & Jowar Cookies",
@@ -1189,7 +1611,31 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298512-8_2-sunfeast-farmlite-super-millets-ragi-jowar-cookies-no-added-maida.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the perfect blend of taste and crunch with the all-new Sunfeast Farmlite Super Millets Ragi and Jowar Cookies. These scrumptious biscuits make for the ideal snack-time treat, crafted with the goodness of millets like ragi and jowar, and enhanced with delightful cashew bits to elevate the flavour. Packed with the nutritional benefits of millets, including iron, protein, and fibre, and free from maida, these cookies offer a pleasantly surprising taste without compromising on flavour.\nRelish these ragi and jowar biscuits as a delightful breakfast treat or an evening tea-time companion, and enjoy the amazing snacking experience they provide to satisfy your hunger pangs at any moment. Crafted by master bakers, these incredibly delicious millet cookies are sure to be loved by all.",
+   "ingredients": "JOWAR FLOUR (38.2%), SUGAR, HYDROGENATED VEGETABLE OIL, REFINED PALM OIL, RAGI FLOUR (5.0%), CASHEW BITS, MILK SOLIDS, OLIGOFRUCTOSE, INVERT SYRUP, RAISING AGENTS [INS 500(ii), INS 503(ii)], IODIZED SALT, EMULSIFIERS [LECITHIN (FROM SOYABEAN), MONO AND DI-GLYCERIDES OF FATTY ACIDS (FROM PALM OIL), DIACETYLTARTARIC AND FATTY ACID ESTERS OF GLYCEROL (FROM REFINED PALM OIL AND SUNFLOWER OIL)], NATURE IDENTICAL FLAVOURING SUBSTANCES, BUTTER, STABILIZER (INS 415), MALTODEXTRIN AND MINERAL, CONTAINS SOY, MILK, NUT, MAY CONTAIN WHEAT, SULPHITE",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "12.5 g",
+    "Energy (Kcal)": "496",
+    "Carbohydrate (g)": "56.7",
+    "Total Sugars (g)": "21.0",
+    "Added Sugars (g)": "17.7",
+    "Dietary fibre (g)": "3.2",
+    "Total fat (g)": "27.9",
+    "Trans fat (other than naturally occurring trans fat) (g)": "0.16",
+    "Saturated fat (g)": "15.1",
+    "Cholesterol (mg)": "1.0",
+    "Sodium (mg)": "470.1",
+    "Protein (g)": "6.2",
+    "Iron (mg)": "4.73"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012031000312"
+  }
  },
  {
   "title": "Marie Light Active",
@@ -1205,7 +1651,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/263654_9-sunfeast-marie-light-biscuits-active.jpg"
-    }
+    },
+    "barcode": "8909081012938"
    },
    {
     "title": "62.1g",
@@ -1251,7 +1698,34 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/263654-8_2-sunfeast-marie-light-biscuits-active.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Elevate your tea-time with Sunfeast Marie Light Active biscuits, the perfect companion for a refreshing break or quality moments with loved ones. These classic Marie biscuits are crafted with the goodness of wheat, providing a light, crunchy texture and a delightful taste. Enriched with wheat fibre, iron, and 6 vitamins, they offer a wholesome snack option that contributes to a healthy relationship. Enjoy the satisfying crunch and the convenience of a quick, nutritious treat, free from trans-fat. Whether it's a moment of recharge, a daily ritual, or time spent with your partner, Sunfeast Marie Light Active biscuits are here to make your tea-time both fun and nourishing. Indulge in the classic Marie experience and let the goodness of wheat be the foundation for quality moments with your loved ones.",
+   "ingredients": "Refined wheat flour (Maida) (66.6%), Sugar, Refined palm oil, Invert syrup, Milk solids, Raising agents (INS 503 (ii), INS 500 (ii)), Iodized salt, Nature identical flavouring substances, Flour treatment agent (INS 223), Emulsifier (Diacetyltartaric and fatty acid esters of glycerol (from refined sunflower oil and palm oil)), Artificial flavouring substances (Milk, Vanilla), Mineral, Colour (INS 150d), Vitamins, Contains wheat, milk, Sulphite, May contain nut, soy",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy": "452 kcal (4.5%)",
+    "Protein": "8.9 g",
+    "Carbohydrate": "75.8 g",
+    "Total Sugars": "22.2 g",
+    "Added Sugars": "22.0 g (8.8%)",
+    "Total Fat": "13.0 g (3.9%)",
+    "Trans fat (other than naturally occurring trans fat)": "0.05 g (0.5%)",
+    "Saturated fat": "6.3 g (5.9%)",
+    "Cholesterol": "0.1 mg",
+    "Sodium": "308.8 mg (3.1%)",
+    "Iron": "3.18 mg (16.7%)",
+    "Vitamin B1": "0.33 mg (23.6%)",
+    "Vitamin B2": "0.35 mg (17.5%)",
+    "Vitamin B3": "3.07 mg (21.9%)",
+    "Vitamin B6": "0.46 mg (24.2%)",
+    "Vitamin B9": "38.0 mcg (21.5%)",
+    "Vitamin B12": "0.83 mcg (37.7%)"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012045000007",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Glucose Biscuits",
@@ -1313,7 +1787,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/249369_5-sunfeast-glucose-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Glucose Biscuits are made from the best excellence wheat. With the integrity of glucose, it makes sures you stay energetic all over the day. For those light hunger pangs among meals, nothing works superior than these entire and nutritious golden brown biscuits.",
+   "ingredients": "Maida (Refined Wheat Flour) (62.6%), Sugar, Refined Palm Oil, Invert Syrup, Raising Agents [Ins 503(Ii), Ins 500(Ii)], Iodized Salt, Liquid Glucose (0.2%), Artificial Flavouring Substances (Vanilla, Butter, Milk), Emulsifiers [Lecithin (From Soyabean), Diacetyltartaric And Fatty Acid Esters Of Glycerol (From Sunflower And Palm Oil)], Nature Identical Flavouring Substances, Flour Treatment Agent (Ins 223), Mineral, Milk Solids (0.002%), Vitamin, Contains Wheat, Milk, Soy, Sulphite, May Contain Nut",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy": "436 kcal",
+    "Protein": "7.1 g",
+    "Carbohydrates": "79.0 g",
+    "Total Sugars": "27.7 g",
+    "Added Sugars": "27.0 g",
+    "Total Fat": "10.6 g",
+    "Saturated Fat": "5.3 g",
+    "Trans Fat (Other Than Naturally Occurring Trans Fat)": "0.01 g",
+    "Cholesterol": "0.1 mg",
+    "Sodium": "421.2 mg",
+    "Vitamin A": "259.58 mcg",
+    "Zinc": "2.76 mg"
+   },
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Nice Sugar Sprinkled Biscuits",
@@ -1329,7 +1825,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40001347_4-sunfeast-nice-sugar-sprinkled-biscuits.jpg"
-    }
+    },
+    "barcode": "8901725017552"
    }
   ],
   "images": [
@@ -1351,7 +1848,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001347-6_1-sunfeast-nice-sugar-sprinkled-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in pure coconut bliss with Sunfeast Nice Sugar Sprinkled Biscuits, a beloved treat loved by all ages. Bite into the crisp, sugary sweetness that lingers on, offering a truly nice experience. Carefully made with the finest ingredients, these crunchy biscuits boast an irresistible blend of coconut and vanilla flavours. Enjoy the coconut goodness and the delightful sugary crunch in every bite.",
+   "ingredients": "REFINED WHEAT FLOUR (MAIDA), SUGAR (26.4%), REFINED PALM OIL, EDIBLE DESICCATED COCONUT, INVERT SYRUP, MILK SOLIDS, STARCH, RAISING AGENTS [INS 503(ii), INS 500(ii), INS 450(i)], COCONUT MILK POWDER, IODIZED SALT, EMULSIFIERS [INS 322(i), INS 471], FLOUR TREATMENT AGENT (INS 223)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "473 kcal",
+    "Protein (g)": "7.5 g",
+    "Carbohydrate (g)": "72.8 g",
+    "Of which Sugar (g)": "31.7 g",
+    "Fat (g)": "16.9 g",
+    "Trans fat (g)": "0.1 g",
+    "Saturated fat (g)": "9.9 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "HiFi Cashew Butter Cookies",
@@ -1367,7 +1881,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/20005919_3-sunfeast-hifi-cookies-biscuits-cashew-butter.jpg"
-    }
+    },
+    "barcode": "8909081012433"
    }
   ],
   "images": [
@@ -1392,7 +1907,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005919-7_1-sunfeast-hifi-cookies-biscuits-cashew-butter.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sunfeast Brings To You The Unique Appetising Gourmet Cookie Experience, Kindly Loaded With Almonds And Cashews. It Is A Great Accessory For Coffee Lovers, The Biscotti Is Sugary, Crispy And Full Of Wealthy Cashews. And It Gives Mouth-Watering Flavour. Made from rich cashew, creamy butter and sun-kissed wheat; HiFi Cashew Cookies from Sunfeast comes to you with the promise of crispy goodness in every bite. So, go ahead and treat yourself.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Refined Palm Oil, Cashew Nut (1.9%), Invert Syrup,\nRaising Agents [Ins 503(Ii), Ins 500(Ii), Ins 450(0), Iodized Salt, Butter (0.2%), Emulsifiers [Ins 471, Ins 322(I), Ins 472E), Milk Solids And Flour Treatment Agent (Ins 223).\nContains Permitted Synthetic Food Colour(S) (Ins 102) And Added Flavour(S) (Nature Identical\nFlavouring Substances And Artificial Flavouring Substances - Butter)",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wowzers Cheese Crackers",
@@ -1436,7 +1957,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358292-8_5-sunfeast-sunfeast-cheese-wowzers-288g.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Wowzers Cheese Crackers is a delightful biscuit crafted with 14 crisp, golden layers. One side is coated with rich cheese cream, while the other is sprinkled with sugar for a perfect balance of savoury and sweet. Each bite delivers a satisfying crunch and a burst of cheesy flavour that truly makes you go \"wow\".",
+   "ingredients": "Maida (Refined Wheat Flour), Enrobing Creme (21.3%) {Sugar, Interesterified Vegetable Fat, Milk Solids, Seasoning [Milk Solids, Maltodextrin, Salt, Refined Palm Oil, Cheese Powder (0.05%), Sugar, Natural Flavours & Natural Flavouring Substances, Nature-Identical Flavouring Substances, Anticaking Agent (INS 551), Stabilizer (INS 339(iii)), Flavour Enhancer (INS 635), Spice Extract], Iodized Salt, Emulsifier [Lecithin (From Soyabean), Polyglycerol Esters of Interesterified Ricinoleic Acid (From Castor Oil), Nature-Identical Flavouring Substances]}, Refined Palm Oil, Sugar, Refined Palmolein, Margarine, Liquid Glucose, Starch, Wheat Gluten, Raising Agents (INS 503(i), INS 500(i)), Iodized Salt, Malt Extract, Milk Solids, Artificial Flavouring Substances (Cheese), Dried Yeast, Emulsifier [Mono and Diglycerides of Fatty Acids (From Palm Oil)], Nature-Identical Flavouring Substances, Flour Treatment Agent (INS 223)\nAllergens: Contains Wheat, Milk, Sulphite, Soy. May contain Nut.",
+   "nutritionalInfo": {
+    "Energy": "509 kcal (5.1% RDA)",
+    "Protein": "9.1 g",
+    "Carbohydrate": "65.4 g",
+    "Total Sugars": "19.3 g",
+    "Added Sugars": "16.5 g (6.6% RDA)",
+    "Total Fat": "23.8 g (7.2% RDA)",
+    "Saturated Fat": "12.0 g (10.9% RDA)",
+    "Trans Fat": "0.1 g (1.0% RDA)",
+    "Cholesterol": "0.2 mg",
+    "Sodium": "419.5 mg (4.2% RDA)"
+   },
+   "manufacturerName": "(11) Foods Creations Pvt. Ltd. - S.No. 34",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Caker Trinity Choco Cake",
@@ -1452,7 +1992,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40201700_9-sunfeast-caker-trinity-cake-triple-chocolate.jpg"
-    }
+    },
+    "barcode": "8901725007270"
    }
   ],
   "images": [
@@ -1480,7 +2021,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201700-8_6-sunfeast-caker-trinity-cake-triple-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the ultimate chocolate experience with Sunfeast Caker Trinity! This delectable layered cake features a tantalizing trio of chocolate delights. Sink your teeth into the moist chocolate cake, enveloped in a rich chocolate sauce and creamy chocolate crème. The cake is further coated in a luscious chocolate glaze and drizzled with a delicate chocolate design, creating a visually stunning and irresistibly flavourful treat. Relish the burst of sweet, chocolatey goodness in every bite, perfect for satisfying your chocolate cravings. Whether you're looking for a tasty snack, a mood-boosting pick-me-up, or a delightful travel companion, Sunfeast Caker Trinity is the ideal choice. Indulge in this delectable chocolate-lovers' dream anytime, anywhere, and experience the ultimate chocolate indulgence.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (Kcal)": "423",
+    "Protein (g)": "5.7",
+    "Carbohydrate (g)": "65.5",
+    "Of which Sugar (g)": "34.0",
+    "Fat (g)": "15.4",
+    "Trans fat (g)": "0.07",
+    "Saturated fat (g)": "9.6"
+   },
+   "storageInstructions": "*Store in cool and dry place",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Caker Layered Cake Butterscotch",
@@ -1496,7 +2054,8 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40201698_4-sunfeast-sunfeast-caker-layered-cake-butterscotch.jpg"
-    }
+    },
+    "barcode": "8909081007569"
    }
   ],
   "images": [
@@ -1524,7 +2083,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201698-8_3-sunfeast-sunfeast-caker-layered-cake-butterscotch.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "New Sunfeast caker crème layered cake, now satisfy your sweet tooth cravings anytime, anywhere, Soft fluffy cake layered with luscious Butterscotch crème. Enjoy the perfect cake to crème ratio, baked with love and care for you.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Eggs, Center Filling",
+   "manufacturerName": "ITC Limited",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Breakfast Smoothie with Oats",
@@ -1568,7 +2134,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358291-8_6-sunfeast-sunfeast-breakfast-smoothie-160ml.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Breakfast Smoothie with Oats is a quick and satisfying drink made from a blend of oats, milk, and real fruit. It offers a creamy texture and a naturally sweet flavour, making it an ideal choice for a convenient morning beverage. Perfect for those with busy mornings, this smoothie provides a wholesome start to the day and can be enjoyed at home or on the go.",
+   "ingredients": "Milk Solids (84.5%), Banana Puree(6.6%), Oligofructose, Almond (0.7%), Date Paste (0.5%), Milk Protein Concentrate, Edible Seeds (0.34%)(Water Melon Seeds(0.2%), Chia Seeds (0.1%), Basil Seeds (0.1%), Flax Seeds (0.03%)), Stabilizers (418, 407 & 339(¡¡¡)), Natural Flavours And Natural Flavouring Substances, Fig Paste, Oat Products (Oat Bran, Rolled Oats (0.01%)), Colour (160 (Iii)), Quinoa.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "manufacturerName": "Itc Ltd",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "YiPPee! Magic Masala Noodles",
@@ -1673,7 +2247,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/287002_5-sunfeast-yippee-noodles-classic-masala.jpg"
-    }
+    },
+    "barcode": "8901725181123"
    }
   ],
   "images": [
@@ -1695,7 +2270,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/287002-6_1-sunfeast-yippee-noodles-classic-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "ITC entered the instant noodles segment with the launch of Sunfeast Yippee! in 2010. The sourcing and blending expertise that has made Aashirvaad Indias No 1 branded Atta has been leveraged to create a delightful noodle block. The block being round in shape does not need to be broken while cooking, providing really long & slurpy noodles. A special scientific process ensures that the noodles does not lump even 30 minutes after cooking.\nYippee! instant noodles is available in three lip smacking variants - Classic Masala, Magic Masala and Chinese Masala. Classic Masala is the Classical Indian Masala flavour with a perfect blend of spices. Magic Masala is a special masala created by ITC with spices and also has five different types of dehydrated vegetables. Chinese Masala is a unique combination of Chinese and Masala Flavours.",
+   "usageInstructions": "Sunfeast India has studied the needs of the consumers and come out with this perfect product. And the best part, the noodle block is made out of wheat. For healthy eaters it doesnt get any better than this! Sunfeast Yippee Noodles Classic masala can now be bought online. Add to your cart now!",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "YiPPee! Magic Mood Masala Noodles",
@@ -1739,7 +2320,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103232-8_9-sunfeast-yippee-noodles-mood-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable flavours of Sunfeast YiPPee Mood Masala Instant Noodles, the perfect snack for those instant cravings. Packed with two masala sachets, the main masala mix and the mood mix, this unique round block of noodles promises a deliciously flavourful experience. Crafted with a blend of delectable Indian spices, these noodles are never bland or dull, delivering the much-loved 'masaledaar' taste you crave. The two-sachet system allows you to customise the flavour to your preference, ensuring your noodles are piping hot and bursting with flavour every time. Designed to remain long, non-sticky, and slurpy, these noodles offer a truly satisfying texture and mouthfeel. Whether you're hosting a gathering or looking for a quick and tasty meal, Sunfeast YiPPee Mood Masala Instant Noodles is the perfect solution, with its easy preparation and irresistible flavour.",
+   "ingredients": "Instant Noodles: Refined Wheat Flour (Maida), Refined Palm Oil, Iodized Salt, Wheat Gluten, Thickeners (INS 508, INS 412), Stabilizers (INS 170(1), INS 339(ii), INS 450 (m) and INS 452(i)) and Acidity Regulators (INS 501(1), INS 50001) and INS 330, Seasoning: Main Masala Mix: Spices and Condiments (22.3%) [Garlic, Red Chilli (3.1%), Coriander (2.1%), Aniseed, Ginger, Cumin, Black Pepper, Cassia, Cardamom, Nutmeg and Clove], Onion Powder, Instant Noodle Powder (Refined Wheat Flour (Maida), Refined Palm Oil, Iodized Salt and Wheat Gluten), Iodized Salt, Sugar, Hydrolyzed Vegetable Protein, Maltodextrin, Fat powder, Flavour Enhancers (INS 627, INS 631), Starch, Yeast Extract, Natural Flavours and Natural Flavouring Substances, Nature Identical Flavouring Substances, Dairy Whitener (Milk Solids, Sugar), Anticaking Agent (INS 551), Acidity Regulator (INS 330) and Refined Sunflower Oil., Mood Masala Mix: Spices and Condiments (25.4%) [Garlic, Red Chilli (3.8%), Ginger, Coriander (2.0%), Black Pepper, Aniseed, Cumin, Cassia and Cardamom], Onion Powder, Sugar, Instant Noodle Powder (Refined Wheat Flour (Maida), Refined Palm Oil, Iodized Salt and Wheat Gluten), Iodized Salt, Dairy Whitener (Milk Solids, Sugar), Hydrolyzed Vegetable Protein, Starch, Fat Powder, Maltodextrin, Flavour Enhancers (INS 627, INS 631), Nature Identical Flavouring Substances, Yeast Extract, Anticaking Agent (INS 551), Natural Flavours and Natural Flavouring Substances and Acidity Regulator (INS 330). Contains Wheat, Soy, Milk, Nut.",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "448",
+    "Protein (g)": "9.6",
+    "Carbohydrate (g)": "62.5",
+    "Total Sugars (g)": "3.6",
+    "Added Sugars (g)": "1.5",
+    "Total fat (g)": "18.6",
+    "Trans fat (other than naturally occurring trans fat) (g)": "0.01",
+    "Saturated fat (g)": "9.6",
+    "Cholesterol (mg)": "0.0",
+    "Sodium (mg)": "1485.3"
+   },
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "YiPPee! Power Up Atta Noodles",
@@ -1755,7 +2355,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40079792_18-sunfeast-yippee-power-up-atta-noodles.jpg"
-    }
+    },
+    "barcode": "8901725005207"
    },
    {
     "title": "280g",
@@ -1792,7 +2393,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40088405_18-sunfeast-yippee-power-up-atta-noodles.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Looking for a tasty and healthy quick meal? Sunfeast YiPPee! Power Up Atta Noodles is the answer. Made with Aashirvaad whole wheat atta, which is a source of fibre, calcium, protein, and iron. These atta noodles are a healthier alternative to traditional instant noodles, often made with maida. Infused with vegetables in every noodle strand and real chunks of carrots and beans, you can expect a slurpy healthy bowl of noodles every time. What's more? YiPPee!'s signature delectable Indian masala flavour gives it a power-packed yummy taste, and its unique round block ensures long and non-sticky instant noodles. They are quick and easy to prepare, making them the perfect snack solution for busy families. So, enjoy these delicious atta noodles when you are craving something tasty as well as healthy.",
+   "ingredients": "Instant Noodles: Wheat Flour (Atta) (76%), Refined Palm Oil, Dehydrated Potato (1.9%), lodised Salt, Acidity Regulators [INS 500(ii), INS 450(i)], Stabilisers [INS 170(i), INS 339(i)], Dehydrated Parsley (0.2%), Wheat Gluten, Thickener (INS 412) and Red Chilli (0.08%), Masala Mix: Dehydrated Vegetables (31.1%) [Beans, Carrot, Onion and Cabbage], Spices & Condiments (16.9%) [Garlic, Red Chilli, Ginger, Black Pepper, Cumin, Cardamom, Cassia, Clove, Turmeric and Star Anise], lodised Salt, Instant Noodle Powder {Wheat Flour (Atta), Refined Palm Oil, Dehydrated Potato, lodised Salt, Dehydrated Parsley, Wheat Gluten and Red Chilli}, Sugar, Cheese Premix Powder, Dairy Whitener (Milk Solids, Sugar), Hydrolyzed Vegetable Protein, Flavour Enhancers (INS 627, INS 631), Nature Identical Flavouring Substances, Soy Sauce Powder, Tamarind Powder, Starch, Acidity Regulator (INS 330), Anticaking Agent (INS 551) and Refined Sunflower Oil",
+   "nutritionalInfo": {
+    "Serving Size": "30 g",
+    "Energy (kcal)": "132",
+    "Carbohydrate (g)": "19.8",
+    "Total Sugars (g)": "1.0",
+    "Added Sugars (g)": "0.4",
+    "Dietary Fibre (g)": "1.9",
+    "Total Fat (g)": "4.9",
+    "Trans Fat (g)": "0.01",
+    "Saturated Fat (g)": "2.3",
+    "Sodium (mg)": "458.3",
+    "Protein (g)": "3.0",
+    "Iron (mg)": "0.9",
+    "Calcium (mg)": "45.0"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place to protect from insects, pests and strong odours",
+   "manufacturerName": "(A) ITC Limited - Foods Division",
+   "fssaiLicense": "10012012000154",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "YiPPee! Masala Pasta Treat",
@@ -1808,7 +2432,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279367_13-sunfeast-yippee-pasta-treat-masala.jpg"
-    }
+    },
+    "barcode": "8901725112158"
    },
    {
     "title": "195g",
@@ -1845,7 +2470,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189258_2-sunfeast-yippee-pasta-treat-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Get ready to spice up your pasta game with this Sunfeast YiPPee! Pasta Treat - the instant masala pasta. It's a fusion of Italian pasta with a delicious desi twist. Imagine creamy, melt-in-mouth pasta infused with aromatic masala flavours that tingle your taste buds. Made with suji/ rava, it is the perfect snack partner for your snack cravings. In just 8 minutes, you can enjoy this delicious snack that combines the best of both worlds - Italian pasta with a desi flair.",
+   "ingredients": "PASTA: Wheat Semolina (Suji) (100%), MASALA PASTA SAUCEMAKER: Dairy Whitener (Milk Solids, Sugar), Iodized Salt, Instant Noodle Powder [Refined Wheat Flour (Maida), Refined Palm Oil, Iodized Salt and Wheat Gluten], Spices and Condiments, Hydrolyzed Vegetable Protein, Sugar, Onion Powder, Hydrogenated Vegetable Oil, Dehydrated Garlic Bits (2.5%), Natural Flavours and Natural Flavouring Substances, Flavour Enhancers (INS 627, INS 631), Acidity Regulator (INS 330), Dehydrated Fenugreek Leaves (0.04%)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (Kcal)": "347",
+    "Carbohydrate (g)": "72.7",
+    "Total Sugars (g)": "6.6",
+    "Added Sugars (g)": "2.6",
+    "Total Fat (g)": "1.6",
+    "Trans Fat (other than naturally occurring trans fat) (g)": "0.01",
+    "Saturated fat (g)": "0.6",
+    "Cholesterol (mg)": "2.6",
+    "Sodium (mg)": "1652.5",
+    "Protein (g)": "11.9"
+   },
+   "manufacturerName": "ITC Limited - Foods Division",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "YiPPee! Cheese Pasta Treat",
@@ -1861,7 +2506,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/279356_13-sunfeast-yippee-pasta-treat-cheese.jpg"
-    }
+    },
+    "barcode": "8901725112141"
    }
   ],
   "images": [
@@ -1889,7 +2535,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/279356-8_5-sunfeast-yippee-pasta-treat-cheese.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Dive into the delectable world of Sunfeast YiPPee! Pasta Treat, a cheesy explosion that will tantalize your taste buds. Crafted with suji/rava, this instant pasta offers a quick and easy meal option that is both hearty and satisfying. Indulge in the rich, creamy flavour of the cheese-infused sauce that melts in your mouth, delivering a comforting and irresistible dining experience. Whether you're craving a quick lunch or a comforting dinner, this cheesy pasta is ready in just 8 minutes, making it a convenient choice without compromising on flavour.\nSavour the delectable taste of Sunfeast Yippee Cheese Instant Pasta, now available in a pack of three, perfect for satisfying your cheese cravings. Made with suji and no added preservatives, this pasta treat is a delightful and guilt-free indulgence.",
+   "ingredients": "PASTA : Wheat Semolina (Suji) (100%), CHEESE PASTA SAUCEMAKER : Milk Solids, Dairy Whitener (Milk Solids, Sugar), Dehydrated Onion Bits, Wheat Flour (Atta), Iodized Salt, Hydrogenated Vegetable Oil, Corn Flour, Cheese Premix Powder (5.5%) (Cheese Solids (2.7%), Maltodextrin, Milk Solids, Iodized Salt, Refined Soyabean Oil and Nature Identical Flavouring Substances), Nature Identical Flavouring Substances, #Spices and Condiments, Dairy Creamer, Thickener (INS 1450), Flavour Enhancers (INS 627, INS 631) and Natural Flavours and Natural Flavouring Substances. #Used as Flavouring Agents.",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (Kcal)": "364",
+    "Carbohydrate (g)": "72.0",
+    "Total Sugars (g)": "7.8",
+    "Added Sugars (g)": "0.6",
+    "Total fat (g)": "3.8",
+    "Trans fat (g)": "0.05",
+    "Saturated fat (g)": "2.7",
+    "Cholesterol (mg)": "2.5",
+    "Sodium (mg)": "1115.0",
+    "Protein (g)": "12.0"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "ITC Limited - Foods Division",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "YiPPee! Creamy Corn Tricolor Pasta",
@@ -1905,7 +2572,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40008100_9-sunfeast-yippee-tricolor-pasta-creamy-corn.jpg"
-    }
+    },
+    "barcode": "8901725111663"
    }
   ],
   "images": [
@@ -1933,6 +2601,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008100-8_4-sunfeast-yippee-tricolor-pasta-creamy-corn.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Sunfeast YiPPee! Tricolour Pasta - your new favourite snack that's both delicious and nutritious. Made with suji/rava, this vibrant pasta boasts a rich, creamy flavour, cheesy goodness, and a melt-in-your-mouth texture. The captivating colours of orange, cream, and green come from natural vegetable extracts, making it a safe and appealing choice for kids. Mums can rest assured that this soft, cheesy, and wholesome pasta is a win-win for the whole family.\nInfused with the flavours of creamy corn, this unique tricolour pasta dish combines the classic pasta you love with a sweet and savoury twist. Quick to prepare in just 8 minutes, Sunfeast YiPPee! Tricolour Pasta is the perfect snack time upgrade that's sure to delight your taste buds.",
+   "ingredients": "PASTA: WHEAT SEMOLINA (99.3%), PAPRIKA EXTRACT POWDER (0.4%) and SPINACH EXTRACT POWDER (0.3%)., CREAMY CORN PASTA SAUCEMAKER: Milk Solids (28.7%), Refined Palm Oil, Starch, Iodized Salt, Maltodextrin, Sugar, Dehydrated Garlic Bits, Fat Powder, Dehydrated Corn (3.8%), Yeast Extract, Onion Powder, #Spices and Condiments, Nature Identical Flavouring Substances, Acidity Regulator [INS 331(iii)], Dehydrated Chives (0.9%), Flavour Enhancers (INS 627, INS 631) and Natural Flavours and Natural Flavouring Substances. #Used as Flavouring Agents., CONTAINS WHEAT, MILK. MAY CONTAIN SOY, NUT.",
+   "nutritionalInfo": {
+    "Nutrition per": "per 100 g",
+    "Energy (Kcal)": "382",
+    "Carbohydrate (g)": "71.4",
+    "Total Sugars (g)": "11.4",
+    "Added Sugars (g)": "2.1",
+    "Total fat (g)": "6.7",
+    "Trans fat (g)": "0.01",
+    "Saturated fat (g)": "4.1",
+    "Cholesterol (mg)": "0.1",
+    "Sodium (mg)": "1150.0",
+    "Protein (g)": "10.3"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "ITC Limited – Foods Division",
+   "fssaiLicense": "10012031000312",
+   "countryOfOrigin": "India"
+  }
  }
 ]

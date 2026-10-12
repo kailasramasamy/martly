@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/266293_4-anil-happala.jpg"
-    }
+    },
+    "barcode": "8906042150630"
    },
    {
     "title": "150g",
@@ -41,6 +42,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/266294_2-anil-happala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Anil Happala is the most exclusive product of the Anil brand that delights consumers all around with its blend of traditional and modern crispy and crunchy taste. It is a crispy wafer-like dish that can be enjoyed as an evening snack or at any time. It refreshingly complements every meal and is a preferred choice in numerous households.",
+   "ingredients": "Urid Flour, Rice Flour, Edible Oil, Iodised Salt, Sodium Bi Carbonate, Asafoetida",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "336.71 kcal",
+    "Protein": "18.10 g",
+    "Total Carbohydrate": "65.29 g",
+    "of which Sugar": "0 g",
+    "Total Fat": "0.35 g",
+    "Saturated Fat": "0.10 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "2390.70 mg",
+    "Dietary Fibre": "5.87 g",
+    "Iron": "4.76 mg",
+    "Calcium": "71.10 mg",
+    "Vitamin A": "0 mcg",
+    "Vitamin C": "1.10 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "TOP ANIL MARKETING COMPANY",
+   "countryOfOrigin": "India"
+  }
  }
 ]

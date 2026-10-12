@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050183_12-anmol-bakery-biscuits-bakersbix-jeera.jpg"
-    }
+    },
+    "barcode": "8902268011281"
    },
    {
     "title": "35g",
@@ -47,7 +48,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40190691_6-anmol-bakers-bix-jeera.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "These products are made using high-quality ingredients, including sugar, cocoa, and more. By selecting the finest ingredients for production, we ensure these baked biscuits meet the expectations of our valued customers. Truly a baker's delight, this mild, sweet-tasting biscuit features a subtle hint of cumin. It evokes the authentic flavours of a traditional English bakery. A light, sweet biscuit rich in carbohydrates and proteins, Bakersbix is a real treat.",
+   "ingredients": "Refined Wheat Flour (Maida), Edible Vegetable Oil (Palm), Sugar, Starch, Milk Solids, Edible Common Salt, Spice & Condiments (Cumin-0.8%), Raising Agents [Ins 503(Ii), Ins 500(Ii)], Emulsifiers (Ins 322, Ins 472E), Acidity Regulator [Ins 450(I)], Contains Added Flavours (Nature Identical Flavouring Substance - Spice Mix & Artificial Flavouring Substance - Milk)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "15g",
+    "Energy (kcal)": "494 kcal",
+    "Protein (g)": "7.0 g",
+    "Carbohydrates (g)": "67.5 g",
+    "Total Sugars (g)": "18.6 g",
+    "Added Sugars (g)": "18.2 g",
+    "Total Fat (g)": "21.8 g",
+    "Saturated Fat (g)": "10.8 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "471 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Butter Bake Rich Butter Cookies",
@@ -100,7 +121,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050164_11-anmol-butter-bake-cookies-healthy-delicious-biscuits-tea-time-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful Anmol Butter Bake Rich Butter Cookies, the perfect accompaniment to your teatime ritual. These light and crispy biscuits offer a tantalising burst of buttery goodness with every crunchy bite, satisfying your cravings for a sweet and delectable treat. Crafted with high-quality ingredients, these cookies are rich in flavour and protein, making them an ideal snack to enjoy alongside your tea or coffee. Treat yourself to the irresistible combination of a satisfying crunch and a delightful buttery taste that will elevate your everyday moments into something truly special.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Milk Solids, Invert Syrup, Edible Common Salt, Butter (0.6%), Raising Agents [Ins 503(Ii), Ins 500(Ii)], Permitted Emulsifiers (Ins 322, Ins 472E)",
+   "nutritionalInfo": {
+    "Serving Size": "7 Pieces (35g)",
+    "Servings Per Pack": "About 17.1",
+    "Energy (kcal)": "494",
+    "Protein (g)": "7.0",
+    "Carbohydrates (g)": "68.8",
+    "Total Sugars (g)": "21.1",
+    "Added Sugars (g)": "20.6",
+    "Total Fat (g)": "21.2",
+    "Saturated Fat (g)": "11.5",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "1.2",
+    "Sodium (mg)": "298"
+   },
+   "storageInstructions": "*Store in a dry, cool but not refrigerated place\n*Keep away from direct sunlight and strong odours",
+   "manufacturerName": "Anmol Industries Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Chip Cookies",
@@ -116,7 +158,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40328609_4-anmol-anmol-choco-chip-cookies.jpg"
-    }
+    },
+    "barcode": "8902268013148"
    }
   ],
   "images": [
@@ -138,7 +181,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328609-6_4-anmol-anmol-choco-chip-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Anmol Choco Chip Cookies offer a delightful treat with their rich, chocolatey flavour and generous choco chip content. Perfect for satisfying sweet cravings, these cookies are ideal for snacking anytime. Enjoy the crisp texture and delectable taste, making them a favourite for both children and adults alike.",
+   "ingredients": "Refined Wheat Flour (Maida), Chocolate Chips (21%) [Sugar, Cocoa Solids, Cocoa Butter, Dextrose, Emulsifiers (Ins 322, Ins 476)], Refined Palm Oil, Sugar, Desiccated Coconut, Milk Solids, Butter, Invert Syrup, Edible Common Salt, Raising Agents [Ins 503(Ii), Ins 500(Ii)], Emulsifier (Ins 322), Natural Food Colour (Ins 150D) & Artificial Flavouring Substances (Vanilla & Chocolate)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "25g",
+    "Energy (kcal)": "525 kcal",
+    "Protein (g)": "5.5 g",
+    "Carbohydrates (g)": "63.5 g",
+    "Total Sugars (g)": "31.0 g",
+    "Added Sugars (g)": "29.0 g",
+    "Total Fat (g)": "27.7 g",
+    "Saturated Fat (g)": "16.5 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "1.4 mg",
+    "Sodium (mg)": "184 mg"
+   },
+   "storageInstructions": "*Store in cool, hygienic and dry place\n*Transfer contents to a clean airtight container once opened",
+   "manufacturerName": "Address",
+   "fssaiLicense": "10012031000131",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hit & Run Choco Chip Cookies",
@@ -191,7 +256,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40303492_1-anmol-hit-run-choco-chip-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delectable Hit & Run biscuits, a delightful treat that will captivate your senses. Bite into these crisp, crunchy delights and experience a burst of rich chocolate flavour that will tantalise your taste buds. Crafted with high-quality ingredients, these biscuits are the perfect on-the-go snack, providing a satisfying energy boost whenever you need it. Savour the decadent chocolate that runs through each bite, leaving you craving more of this irresistible delight. With a perfect balance of texture and flavour, the Hit & Run biscuits are a must-try for any chocolate lover seeking a truly satisfying and enjoyable snacking experience.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Palm), Choco Chips (7%) Sugar, Edible Vegetable Fat (Hydrogenated, Cocoa Solids, Dextrose & Emulsifier (Ins 322)), Invert Syrup, Starch, Raising Agents [Ins 500(Ii), Ins 503(Ii)], Cocoa Solids, Edible Common Salt, Emulsifiers [Ins 322, Ins 471]",
+   "nutritionalInfo": {
+    "Serving Size": "5 Pieces (25g)",
+    "Servings Per Pack": "About 5",
+    "Energy": "121.8 kcal",
+    "Protein": "1.5 g",
+    "Carbohydrates": "18.2 g",
+    "Total Sugars": "7.2 g",
+    "Added Sugars": "7.1 g",
+    "Total Fat": "4.8 g",
+    "Saturated Fat": "2.9 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "73.8 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry place away from direct sunlight and strong odours",
+   "manufacturerName": "Anmol Industries Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10017031002269"
+  }
  },
  {
   "title": "Rich & Buttery Shortbread Cookies",
@@ -232,7 +319,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40299320-7_1-anmol-shortbread-cookies-rich-buttery.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in a luxuriously delicious treat with Anmol Shortbread Cookies. Each bite delivers melt-in-your-mouth goodness, with an unforgettable buttery flavour that’s sure to satisfy even the most discerning palates. These cookies are delicate and crumbly, with a subtly sweet taste that will delight anyone. Classic Scottish biscuits, rich and buttery.",
+   "manufacturerName": "PEDDAMMAGADDA",
+   "fssaiLicense": "10018047000985",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dreamlite Salty Butterly Crunch Biscuits",
@@ -273,7 +366,38 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050176-7_1-anmol-biscuits-dreamlite.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the buttery goodness of Anmol's Dream Lite biscuits, a salty, crunchy and delightful snack that satisfies mid-day hunger pangs. Baked with love and care, these biscuits offer a guilt-free snacking experience, featuring a delightful combination of salt crispiness and buttery flavour. Enjoy the fresh and energetic feel of this versatile treat, perfect for pairing with a refreshing cup of tea or coffee. Available in a variety of flavours to cater to every craving, Dream Lite biscuits are a must-have for all salty biscuit lovers, providing a satisfying and nourishing snacking experience.",
+   "ingredients": "Refined Wheat Flour (Maida), Edible Vegetable Oils (Palm), Sugar, Liquid Glucose, Iodised Salt, Raising Agents (Ins 503(Ii), Ins 500(Ii)), Butter (1.2%), Milk Solids, Malt Extract, Cheese Powder, Permitted Emulsifiers (Ins 322, Ins 471, Ins 472E), Improver (Ins 1101), Contains Permitted Synthetic Food Colours (Ins 102, Ins 124) And Added Flavours (Nature Identical Flavouring Substance & Artificial Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "18g",
+    "Energy (kcal)": "444 kcal",
+    "Protein (g)": "8.3 g",
+    "Carbohydrates (g)": "78.6 g",
+    "Total Sugars (g)": "19.2 g",
+    "Added Sugars (g)": "17.4 g",
+    "Total Fat (g)": "10.7 g",
+    "Saturated Fat (g)": "5.1 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "366 mg",
+    "Carbohydrates": "68.0 g",
+    "Sugar": "7.0 g",
+    "Malt Protein": "8.8 g",
+    "Fat": "20.6 g",
+    "Saturated Fatty Acids": "10.4 g",
+    "Monounsatured Fatty Acids": "7.6 g",
+    "Polyunsatured Fatty Acids": "2.6 g",
+    "Trans Fatty Acids": "0 g",
+    "Cholesterol": "1.5 mg",
+    "Energy": "492.6 kcal"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Keep away from direct sunlight and strong odours",
+   "manufacturerName": "Anmol Industries Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jadoo Spicy Masaledaar Biscuits",
@@ -314,7 +438,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050160-7_3-anmol-salted-biscuits-jadoo-premium-light-butter-crackers.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful crunch and melt-in-your-mouth experience of Anmol's Jadoo biscuits. These premium salted crackers are crafted with a unique bite that delivers a satisfying texture. Perfect for snacking or as an accompaniment to tea or coffee, these biscuits are loved by people of all ages. For those seeking a healthy yet flavourful option, the spicy Jadoo biscuits offer a delightful surprise with their Indian spices and bold flavours. Serve these biscuits to your guests and watch them delight in the crisp, flavourful experience. Anmol's Jadoo biscuits are the ideal choice for satisfying your cravings and elevating your snacking moments.",
+   "ingredients": "Refined Wheat Flour (Maida), Edible Vegetable Oils (Palm), Sugar, Raising Agents [Ins 503(Ii), Ins 500(Ii)], Edible Common Salt, Liquid Glucose, Invert Syrup, Milk Solids, Yeast, Malt Extract, Spices & Condiments (Cumin, Ajwain, Red Chilli & Garlic Powder) 0.83%, Emulsifiers (Ins 322, Ins 472E), Dough Conditioner (Ins 223), Improver (Ins 1101), Contains Permitted Synthetic Food Colours (Ins 102, Ins 110), Contains Wheat, Milk And Soya",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Carbohydrates": "69.2g",
+    "Total Sugars": "9.2g",
+    "Added Sugars": "8.7g",
+    "Proteins": "8.3g",
+    "Total Fat": "18.2g",
+    "Saturated Fat": "9.8g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Energy": "474 kcal",
+    "Polyunsaturated Fatty Acids": "1070 mg"
+   },
+   "storageInstructions": "* Store in a cool, dry and hygienic place\n* Once opened, store in an airtight container",
+   "manufacturerName": "Anmol Industries Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Snack It Biscuits",
@@ -330,7 +474,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40130621_6-anmol-snack-it-biscuits.jpg"
-    }
+    },
+    "barcode": "8902268013506"
    }
   ],
   "images": [
@@ -352,7 +497,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130621-6_3-anmol-snack-it-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Snack time just got better with the salty, crispy delight of Anmol Snack-it! These crunchy biscuits are perfect to serve at the parties with the toppings of your choice as a light snack and let flavours take over. These salt biscuits will take your snacking experience to a whole new level. Crispy, light and salty, this is a perfect cracker to satisfy your daytime hunger pangs. You can also top up your biscuits with exotic spices and vegetables to make it a complete evening snack.",
+   "ingredients": "Refined Wheat Flour, Edible Vegetable Oil (Palm), Sugar, Raising Agents [Ins 503(Ii), Ins 500(Ii)], Liquid Glucose, Edible Common Salt (2. 1%), Invert Syrup, Malt Extract, Milk Solids, Permitted Emulsifiers (Ins 322, Ins 471), Dough Conditioner (Ins 223) And Improver (Ins 1101). Contains Permitted Synthetic Food Colours (Ins 102, Ins 124) And Added Flavour (Artificial Flavouring Substance-Butter).",
+   "usageInstructions": "Enjoy the delicious flavour in every bite of these ready to eat biscuits.",
+   "storageInstructions": "Store in a cool, dry and hygienic place. Once opened, store in an airtight container.",
+   "manufacturerName": "Anmol Industries Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lemon Maaza Biscuits",
@@ -368,7 +521,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050174_8-anmol-lemon-maaza-biscuits.jpg"
-    }
+    },
+    "barcode": "8902268014961"
    }
   ],
   "images": [
@@ -393,7 +547,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050174-7_1-anmol-lemon-maaza-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the tangy and crisp delight of Anmol's Lemon Mazaa and Lemon Flavoured Biscuits. Savour the perfect balance of a light and airy puff pastry encasing a zesty lemon cream filling, creating a heavenly teatime treat. These biscuits are bursting with the refreshing flavour of real lemon extract, making them the ideal pick-me-up on a hot summer day. Enjoy the satisfying crunch and tantalizing citrus notes that will awaken your taste buds and leave you craving more. Whether you're seeking a mid-afternoon snack or a delightful accompaniment to your tea, these Anmol biscuits are sure to satisfy your cravings and transport you to a world of flavour and indulgence.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oils (Palm), Hydrogenated Edible Vegetable Fat, Liquid Glucose, Invert Syrup, Raising Agents [Ins 503(I), Ins 500(I)], Edible Starch, Milk Solids, Malt Extract, Iodised Salt, Yeast, Permitted Emulsifiers (Ins 322, Ins 471), Dough Conditioner (Ins 223) & Improver (Ins 1101), Permitted Synthetic Food Colour (Ins 102) And Added Flavour (Nature Identical Flavouring Substance Lemon)",
+   "nutritionalInfo": {
+    "Serving Size": "100g",
+    "Energy": "481.8 kcal",
+    "Carbohydrates": "70.1 g",
+    "Protein": "7.0 g",
+    "Total Fat": "19.3 g",
+    "Saturated Fat": "9.8 g",
+    "Monounsaturated Fat": "7.6 g",
+    "Polyunsaturated Fat": "1.9 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Keep away from direct sunlight and strong odours",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Romanzo Choco Filled Cookies",
@@ -409,7 +581,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40130622_5-anmol-romanzo-choco-filled-cookies.jpg"
-    }
+    },
+    "barcode": "8902268016774"
    }
   ],
   "images": [
@@ -431,7 +604,46 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130622-6_1-anmol-romanzo-choco-filled-cookies.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the irresistible taste of Anmol Romanzo Choco Cookies, a delectable treat that will captivate your senses. Savour the crunchy crust that gives way to a rich, flowing chocolate centre, creating a harmonious blend of textures and flavours. These cookies are the perfect indulgence for any sweet craving, whether enjoyed with a refreshing glass of milk or on their own. Crafted with the finest ingredients, the Romanzo Choco Cookies offer a truly passionate and indulgent experience, leaving you craving more of their chocolatey goodness. Treat yourself to the ultimate in chocolate-filled delight with these delectable Anmol Romanzo Choco Cookies.",
+   "ingredients": "Choco Filling (36%), [Sugar, Edible Vegetable Oil (Palm), Cocoa Solids, Emulsifier (Ins 322), Edible Common Salt, Contain Nature Identical Flavour-Vanillin], Refined Wheat Flour (Maida), Hydrogenated Vegetable Oils, Sugar, Starch, Milk Solids, Invert Syrup, Butter, Cocoa Solids (1.3%), Liquid Glucose, Edible Common Salt, Emulsifier (Ins 322), Raising Agents [Ins 500(Ii), Ins 503(Ii)], Contains Permitted Natural Food Colour (Ins 150D), Added Flavours (Nature Identical Flavouring Substance-Chocolate And Artificial Flavouring Substance-Vanilla), Contains Wheat, Milk & Soya",
+   "nutritionalInfo": {
+    "Nutrition Per": "Per 100g And Per Serve",
+    "Serving Size": "2 Pieces (25g)",
+    "Serving Per Pack": "3",
+    "Net Weight": "75g (6 Packs X 12.5g)",
+    "Energy (kcal)": "522",
+    "Energy Per Serve (kcal)": "130.5",
+    "% Average Contribution To RDA": "6.5",
+    "Protein (g)": "4.9",
+    "Protein Per Serve (g)": "1.2",
+    "Carbohydrates (g)": "62.3",
+    "Carbohydrates Per Serve (g)": "15.6",
+    "Total Sugars (g)": "35.2",
+    "Total Sugars Per Serve (g)": "8.8",
+    "Added Sugars (g)": "34.5",
+    "Added Sugars Per Serve (g)": "8.6",
+    "% RDA Added Sugars": "17.3",
+    "Total Fat (g)": "28.1",
+    "Total Fat Per Serve (g)": "7.0",
+    "% RDA Total Fat": "10.5",
+    "Saturated Fat (g)": "15.5",
+    "Saturated Fat Per Serve (g)": "3.9",
+    "% RDA Saturated Fat": "17.6",
+    "Machine Trans Fat (g)": "0",
+    "Machine Trans Fat Per Serve (g)": "0",
+    "Cholesterol (mg)": "2.9",
+    "Cholesterol Per Serve (mg)": "0.7",
+    "Sodium (mg)": "154",
+    "Sodium Per Serve (mg)": "38.5",
+    "% RDA Sodium": "1.9",
+    "RDA": "Percent RDA Values Are calculated As The Basis Of 2000 kcal Energy For Average Adult Per Day."
+   },
+   "storageInstructions": "* Store in a cool and dry place\n* Avoid direct sunlight",
+   "manufacturerName": "Anmol Industries Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Yummy Chocolate Sandwich Biscuits",
@@ -472,7 +684,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050173-7_3-anmol-biscuits-yummy-chocolate.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mouthwatering rich chocolate cream sandwiched between crunchy chocolate flavoured shells. Biscuits are a great way to snack. Biscuits are loved by people of all age groups and are a wonderful accompaniment with tea or coffee. Serve these biscuits to those guests at home.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "Ready to eat.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Yummy Orange Sandwich Biscuits",
@@ -488,7 +706,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050168_9-anmol-biscuits-yummy-orange.jpg"
-    }
+    },
+    "barcode": "8902268010840"
    }
   ],
   "images": [
@@ -510,7 +729,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050168-6_7-anmol-biscuits-yummy-orange.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mouthwatering tangy orange cream sandwiched between crunchy orange flavoured shells. Orange Temptation Biscuit is in compliance with the international quality standards. The offered Orange Temptation Biscuit is widely demanded in the market due to its impeccable and delicious taste and nice Flavours. Further, this product is hygienically packed using high-grade packaging material.",
+   "storageInstructions": "Store in a cool and dry place.",
+   "usageInstructions": "Ready to eat.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Marie Plus Biscuits",
@@ -526,7 +751,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050154_16-anmol-biscuits-marie.jpg"
-    }
+    },
+    "barcode": "8902268013537"
    },
    {
     "title": "783g",
@@ -563,7 +789,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050154-8_3-anmol-biscuits-marie.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful crunch and light, airy texture of Anmol Marie Plus biscuits - the perfect teatime treat. These low-fat, zero-cholesterol biscuits are made from the goodness of wheat and milk, providing a nutritious and guilt-free snacking experience. Savour the distinct flavour as you dip these crunchy biscuits into a piping hot cup of tea, creating a moment of pure vitality. Cherished by all generations, from grandparents to kids and adults, Marie Plus is the beloved biscuit that makes chai time complete. Spread a little jam or enjoy it on its own, these versatile biscuits are the best option for a quick and healthy snack that will keep you energised throughout the day.",
+   "ingredients": "Refined Wheat Flour (Maida) (65.6%), Sugar, Edible Vegetable Oil (Palm), Invert Syrup, Liquid Glucose, Raising Agents [Ins 503(Ii), Ins 500(Ii)], Milk Solids (1.57%), Edible Common Salt, Emulsifier (Ins 472E), Dough Conditioner (Ins 223), Contains Permitted Natural (Ins 150D) & Synthetic (Ins 102, Ins 124) Food Colours And Added Flavours (Artificial Flavouring Substances - Milk & Butter)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "18g",
+    "Energy (kcal)": "441 kcal",
+    "Protein": "8.2 g",
+    "Carbohydrates (g)": "78.2 g",
+    "Sugars (g)": "19.2 g",
+    "Total Fat": "10.6 g",
+    "Saturated Fat (g)": "6.3 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "0 mg",
+    "Sodium (mg)": "365 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Keep away from direct sunlight and strong odours",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Milk Made Biscuits",
@@ -579,7 +824,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40125659_6-anmol-milk-made-biscuits-healthy-delicious-tea-time-snack.jpg"
-    }
+    },
+    "barcode": "8902268015968"
    }
   ],
   "images": [
@@ -604,7 +850,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40125659-7_3-anmol-milk-made-biscuits-healthy-delicious-tea-time-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Anmol milk made biscuits are made with the freshest of ingredients which gives it a rich, flavourful texture. Experience the crispiness and authentic taste of these yummy biscuits, every bite of which melts in your mouth giving you the ultimate joy and happiness. These biscuits go great with your morning/evening tea and coffee.",
+   "ingredients": "Wheat Flour, Sugar, Vegetable Shortening (Palm Oil). Liquid Glucose, Raising Agents - Ammonium Bicarbonate (503Ii), Sodium Bicarbonate (500Ii), Skimmed Milk Powder, Salt, Emulsifier -Soya Lecithin (322), Antioxidant -TBHQ (INS 319), Contains Synthetic Food Color Fdc Yellow No. 5 -Tartrazine (102) Artificial Flavours (Vanilla Butter). Contains Wheat And Soya Products. Allergen Warning: May Contain Traces Of Milk, Sulphites, Peanuts And Tree Nuts.",
+   "usageInstructions": "Perfect as a tea time snack, this biscuit is great even whenever hunger strikes",
+   "storageInstructions": "Store in a cool,\ndry and hygienic place",
+   "manufacturerName": "Anmol Industries Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sugar Free Cream Cracker Biscuits",
@@ -620,7 +874,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050167_15-anmol-biscuits-sugar-free-cream-cracker.jpg"
-    }
+    },
+    "barcode": "8902268012042"
    }
   ],
   "images": [
@@ -645,7 +900,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050167-7_1-anmol-biscuits-sugar-free-cream-cracker.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Flaky cracker with zero added sugar. Fitness enthusiasts and diabetic patients will find this biscuit useful. This sugar-free cream cracker biscuit is a delectable combination of sugar-free cream. Our zero-sugar cream cracker biscuit is a perfect experience for those who treasure taste. We offer this product at the most affordable price to our precious customers. We offer a complete assortment of products in the form of attractive packaging in various quantities, prepared by our professionals using the best ingredients and flavours.",
+   "ingredients": "Refined Wheat Flour (Maida) (75%), Edible Vegetable Oil (Palm), Yeast, Edible Common Salt, Starch, Milk Solids, Malt Extract, Dough Conditioner (Ins 223) & Improver [Ins 1101(I)] Contains Added Flavours (Nature Identical / Flavouring Substance - Milk & Cheese), Contains Wheat And Milk.",
+   "usageInstructions": "It goes well with beverages like tea or coffee\nConveniently packed easy to carry for a quick bite\nStore in a cool and dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tru Choice Zero Sugar Cream Cracker",
@@ -683,7 +944,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40315799-6_3-anmol-sugar-free-cream-cracker-biscuits.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge guilt-free with Anmol Sugar-Free Cream Cracker Biscuits, a flaky delight with no added sugar. Ideal for fitness enthusiasts and diabetics, this biscuit combines sugar-free cream for a delectable taste. Experience the perfect blend of health and flavour at an affordable price. Our range comes in attractive packaging and various quantities, crafted by experts using premium ingredients and flavours. Try Anmol Sugar Free Cream Cracker Biscuits today and savour the goodness of taste and health in every bite. Treat yourself without the guilt!",
+   "ingredients": "Refined Wheat Flour (Maida) (75%), Edible Vegetable Oil (Palm), Yeast, Edible Common Salt, Starch, Milk Solids, Malt Extract, Dough Conditioner (Ins 223) & Improver [Ins 1101(I)], Contains Added Flavours (Nature Identical Flavouring Substance - Milk & Cheese)",
+   "nutritionalInfo": {
+    "Energy": "446 kcal",
+    "Protein": "10.2 g",
+    "Carbohydrates": "74.1 g",
+    "Naturally Occurring Sugars": "<0.5 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "12.1 g",
+    "Saturated Fat": "6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "560 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place. Keep away from direct sunlight and strong odours.",
+   "manufacturerName": "Anmol Industries Limited",
+   "fssaiLicense": "10017031002269",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chocolate Cake",
@@ -699,7 +980,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40153788_9-anmol-cake-chocolate-flavoured.jpg"
-    }
+    },
+    "barcode": "8902268014473"
    }
   ],
   "images": [
@@ -724,7 +1006,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153788-7_3-anmol-cake-chocolate-flavoured.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Nothing beats the rich decadence of a luscious chocolate cake when you are craving something sweet! Every bit of Anmol's chocolate cake is sinfully dark and incredibly satisfying. Whether you want to end your meal on a sweet note or are just in the mood for something delectable, this is the perfect thing to reach out for! Britannia chocolate cake has soft and delicious cake slices with the goodness of chocolate, milk and eggs. With each bite feel the richness and smoothness of chocolate which gives mouth-watering flavour. Britannia cakes have soft spongy and fluffy slices that deliciously melts in your mouth. Believing in delivering fresh and healthy products.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Hydrogenated Vegetable Oils (Palmolein), Egg Powder, Humectants (Ins 422, Ins 420, Ins 1520), Invert Syrup, Liquid Glucose, Baking Powder, Emulsifiers [Ins 471, Ins 322, Ins 477, 472E, Ins 491, Ins 470(I)], Edible Common Salt, Milk Solids, Cocoa Solids (0.4%), Preservatives (Ins 200, Ins 202, Ins 281), Raising Agents [Ins 500(Ii), 450(I)], Acidity Regulator (Ins 330)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "50g",
+    "Energy (kcal)": "417.5 kcal",
+    "Saturated Fat (g)": "11.7 g",
+    "Protein (g)": "6.1 g",
+    "Trans Fat (g)": "0.25 g",
+    "Carbohydrates (g)": "50.8 g",
+    "Added Sugar (g)": "29.1 g",
+    "Cholesterol (mg)": "115 mg",
+    "Total Fat (g)": "21.1 g",
+    "Sodium (mg)": "224 mg"
+   },
+   "storageInstructions": "* Store in dry, cool but not refrigerated place\n* Keep away from direct sunlight and strong odours",
+   "manufacturerName": "ANMOL INDUSTRIES LTD./ C -107",
+   "fssaiLicense": "10017031002269",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fruit Cake",
@@ -740,7 +1043,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40153787_8-anmol-cake-fruit-flavoured.jpg"
-    }
+    },
+    "barcode": "8902268014480"
    }
   ],
   "images": [
@@ -765,7 +1069,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153787-7_3-anmol-cake-fruit-flavoured.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "What could be better than soft and spongy slices of cake embedded with tiny jewels of candied fruit? Fruit cake is a holiday season classic, but with Anmol, you can enjoy this seasonal treat any time of the year! So dig right in and enjoy the unbeatable moistness of this rich fruit cake. Contains Traces of Trans Fats. Healthy elements together create this soft and luscious fruit cake. This cake is very fluffy and the experience of eating it is always delightful.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Hydrogenated Vegetable Oils (Palmolein), Egg Powder, Fruit Products (4%) [Crystallized Fruit (Papaya Cuts)], Humectants (Ins 422, Ins 420, Ins 1520), Invert Syrup, Liquid Glucose, Baking Powder, Emulsifiers (Ins 471, Ins 322, Ins 472E, Ins 491, Ins 470(I)), Edible Common Salt, Milk Solids, Preservatives (Ins 200, Ins 202, Ins 281), Raising Agents [Ins 500(Iii), 450(I)], Acidity Regulator (Ins 330), Contains Permitted Synthetic Food Colour (Ins 102), Added Flavours {Artificial Flavouring Substances - Mixed Fruit & Vanilla}, Contains Wheat, Milk, Soya & Eggs",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "50g",
+    "Energy (kcal)": "412 kcal",
+    "Saturated Fat (g)": "10.7 g",
+    "Protein (g)": "6.0 g",
+    "Carbohydrates (g)": "51 g",
+    "Trans Fat (g)": "0.2 g",
+    "Added Sugar (g)": "26.0 g",
+    "Cholesterol (mg)": "98.2 mg",
+    "Total Fat (g)": "20.4 g",
+    "Sodium (mg)": "210 mg"
+   },
+   "storageInstructions": "*Store in dry, cool but not refrigerated place\n*Keep away from direct sunlight and strong odours",
+   "manufacturerName": "ANMOL INDUSTRIES LTD./ C -107",
+   "fssaiLicense": "10017031002269",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Yummy Orange Bar Cake",
@@ -781,7 +1106,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050196_13-anmol-yummy-bar-cake-orange.jpg"
-    }
+    },
+    "barcode": "8902268012523"
    }
   ],
   "images": [
@@ -806,6 +1132,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050196-7_6-anmol-yummy-bar-cake-orange.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Close to your heart. The flavour that your taste buds, heart. It is ideal to bond over this tiffin cake. Bar Cake can be carried in the tiffin box as a snack. Ideal for those uninvited instant hunger pangs.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Edible Hydrogenated Vegetable Oils (Palmolein), Egg Powder, Fruit Products (3.8%) [Crystallised Fruit (Papaya Cuts)], Humectants (Ins 422, Ins 420, Ins 1520), Invert Syrup, Liquid Glucose, Baking Powder, Emulsifiers [Ins 471, Ins 322, Ins 477, 472E, Ins 491, Ins 470(I)], Edible Common Salt, Preservatives (Ins 200, Ins 202, Ins 281), Raising Agents [Ins 500(Ii), 450(I)], Acidity Regulator (Ins 330), Contains Permitted Synthetic Food Colours (Ins 110, Ins 122), Added Flavours (Artificial Flavouring Substances - Orange & Vanilla)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "30g",
+    "Energy (kcal)": "424 kcal",
+    "Total Fat (g)": "21.6 g",
+    "Protein (g)": "6.1 g",
+    "Saturated Fat (g)": "11.4 g",
+    "Carbohydrates (g)": "51.2 g",
+    "Trans Fat (g)": "0 g",
+    "Sugars (g)": "27.5 g",
+    "Cholesterol (mg)": "117 mg",
+    "Added Sugars (g)": "27.0 g",
+    "Sodium (mg)": "200 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Keep away from direct sunlight and strong odours",
+   "manufacturerName": "229"
+  }
  }
 ]

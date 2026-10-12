@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/290183_3-balaji-magic-masala-wafers-potato-snacks.jpg"
-    }
+    },
+    "barcode": "8906010503529"
    }
   ],
   "images": [
@@ -38,7 +39,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/290183-7_2-balaji-magic-masala-wafers-potato-snacks.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the tantalising flavours of Balaji's Masala Masti Potato Wafers, a spicy and crunchy snack that's perfect for any occasion. These thinly sliced and fried potato wafers are coated with a zesty blend of handpicked spices, including chili, cumin, and turmeric, creating a rich, savoury taste with just the right amount of heat. Whether you're craving a flavourful evening snack or looking to add some excitement to a boring dinner, these Balaji Potato Wafers are sure to delight your taste buds.\nEnjoy them with a chilled beverage for the ultimate snacking experience, or serve them as a crunchy side dish to your favourite meal. With their high-quality ingredients and irresistible texture, these Masala Masti Potato Wafers are a must-try for all spice enthusiasts.",
+   "ingredients": "Potato (87%), Edible Vegetable Oil (Palmolein), Sugar, Spices & Condiments 1% (Chilli, Dry Mango, Coriander, Cumin, Black Pepper, Ginger, Clove), lodized Salt, Black Salt",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "526 Kcal",
+    "Protein": "4.8 g",
+    "Carbohydrates": "58.1 g",
+    "of which Sugar": "8.1 g",
+    "Fat": "30.5 g",
+    "Total Trans Fat content": "not more than 0.2 Per cent by weight",
+    "Total Saturated Fat content": "not more than 14.0 Per cent by weight"
+   },
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "fssaiLicense": "10012021000039",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cream & Onion Wafers",
@@ -54,7 +72,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40053581_2-balaji-cream-onion-chips.jpg"
-    }
+    },
+    "barcode": "8906010503550"
    },
    {
     "title": "35g",
@@ -91,7 +110,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053585_2-balaji-cream-onion-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the irresistible fusion of sour cream, herbs, and spring onion with these delectable Balaji cream and onion wafers. Crafted with 88% potato, these crunchy and delicious snacks offer a rich, well-balanced flavour that is both tangy and satisfying. The creamy onion seasoning provides a savoury taste that is smooth and indulgent, making it the perfect treat for any time of day. Pair these vegetarian-friendly wafers with a cold drink and let the party in your mouth begin. Balaji's authentic taste and use of handpicked ingredients ensure a masterpiece of flavour that will have you coming back for more.",
+   "ingredients": "Potato (88%), Edible Vegetable Oil (Palmolein), Milk Solids (0.7%), Sugar, Iodized Salt, Onion Powder (0.4%), Herbs (Chives, Parsley), Acidity Regulator (INS 330), Anticaking Agent (INS 551)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "523 Kcal",
+    "Protein": "6.3 g",
+    "Carbohydrates": "57.2 g",
+    "of which Sugar": "7.4 g",
+    "Fat": "30.0 g",
+    "Total Trans Fat content": "not more than 0.2 Per cent by weight",
+    "Total Saturated Fat content": "not more than 14.0 Per cent by weight"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tomato Twist Wafers",
@@ -107,7 +142,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/290186_2-balaji-tomato-masti-wafers-potato-snacks.jpg"
-    }
+    },
+    "barcode": "8906010503482"
    },
    {
     "title": "35g",
@@ -144,7 +180,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053584_5-balaji-tomato-masti-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Give in to the sweet notes of tomato. Balaji is one of India's leading snack food manufacturers and distributors. Enjoy the taste of tomato on potato chips. Have a delightful experience with your friends and family.",
+   "ingredients": "POTATO (87%), EDIBLE VEGETABLE OIL (PALMOLEIN), SUGAR, EDIBLE COMMON SALT, MALTODEXTRIN, SPICES & CONDIMENTS (CHILLI, CUMIN, CLOVE, CINNAMON), DEHYDRATED VEGETABLE POWDER (TOMATO (1%), ONION, GARLIC), ACIDITY REGULATOR (INS 296, INS 330), ANTICAKING AGENT (INS 551), FLAVOUR ENHANCER (INS 627, INS 631), NATURAL & NATURE IDENTICAL FLAVOURING SUBSTANCES (TOMATO)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "ENERGY": "556 Kcal",
+    "PROTEIN": "6.5 g",
+    "CARBOHYDRATES": "53.5 g",
+    "TOTAL SUGARS": "6.0 g",
+    "ADDED SUGARS": "3.9 g",
+    "TOTAL FAT": "33.8 g",
+    "SATURATED FAT": "16.0 g",
+    "TRANS FAT": "0.1 g",
+    "CHOLESTEROL": "< 1 mg",
+    "SODIUM": "691 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry and hygienic place\n*Keep away from direct sunlight\n*Once opened, keep in an airtight container",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Simply Salted Wafers",
@@ -160,7 +216,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40053582_2-balaji-simply-salted-chips.jpg"
-    }
+    },
+    "barcode": "8906010503512"
    }
   ],
   "images": [
@@ -185,7 +242,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053582-7_1-balaji-simply-salted-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the ultimate snacking experience with Balaji Simply Salted Potato Wafers. Crafted with the true essence of potatoes and a perfect balance of salt, these crispy wafers are a delightful fusion of crunch and flavour. Satisfy your cravings and elevate your snacking game with this trusted brand's offering. Enjoy the mildly flavoured, yet delicious treat, perfect for any age, from 5 to 50.\nPair it with your favourite chilled beverage for a truly satisfying snacking moment. Balaji's potato wafers are made from quality potatoes, ensuring a crispy and delectable texture in every bite. Embrace the simple pleasures of this salty delight and make it your go-to snack for any occasion.",
+   "ingredients": "Potato (89%), Edible Vegetable Oil (Palmolein), lodized Salt (0.4%)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "559 Kcal",
+    "Protein": "6.4 g",
+    "Carbohydrates": "53.8 g",
+    "of which Sugar": "0.4 g",
+    "Fat": "35.3 g",
+    "Total Trans Fat content": "not more than 0.2 Per cent by weight",
+    "Total Saturated Fat content": "not more than 16.0 Per cent by weight"
+   },
+   "storageInstructions": "*Store away from direct heat and sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chaat Chaska Wafers",
@@ -201,7 +274,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30010126_2-balaji-chat-chaska-namkeen.jpg"
-    }
+    },
+    "barcode": "8906010500535"
    }
   ],
   "images": [
@@ -226,7 +300,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30010126-7_1-balaji-chat-chaska-namkeen.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Eat Balaji Chaat Chaska Namkeen as you watch your favourite show. These potato crisps are low in trans fat and cholesterol, making them the ideal choice over other potato chips. They are also coated nicely with a host of spices that leaves a resounding taste in your mouth. Give them to your kids as a snack. Munch on them while finishing your article or carry them for game night with your friends. These go great with some soda, fruit juice, or smoothies. Explore other Balaji Chaat products on Big Basket.",
+   "ingredients": "POTATO (88%), EDIBLE VEGETABLE OIL (PALMOLEN), EDIBLE COMMON SALT, SPICES & CONDIMENTS 0.5% (CUMIN, CHILLI, PARSLEY, GINGER, CINNAMON, BLACK PEPPER, DRY MANGO), DEHYDRATED VEGETABLE POWDER (ONION, GARLIC), SUGAR, MALTODEXTRIN, FLAVOUR ENHANCER (INS 627, INS 631), ACIDITY REGULATOR (INS 296, INS 330), ANTICAKING AGENT (INS 551), NATURAL & NATURE IDENTICAL FLAVOURING SUBSTANCES (CHAAT)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "ENERGY": "545 Kcal",
+    "PROTEIN": "7.4 g",
+    "CARBOHYDRATES": "53.5 g",
+    "TOTAL SUGARS": "3.0 g",
+    "ADDED SUGARS": "2.2 g",
+    "TOTAL FAT": "32.2 g",
+    "SATURATED FAT": "15.3 g",
+    "TRANS FAT": "0.1 g",
+    "CHOLESTEROL": "<1 mg",
+    "SODIUM": "982 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and moisture",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pizzy Masala Wafers",
@@ -267,7 +361,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053586-7_1-balaji-pizzy-wafer.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Bite into the lush flavours of pepper, oregano and cheese and see yourself turn into a pizza lover in no time! Or if you are already a Pizza lover, grab a packet of Pizzy wafers whenever you are craving a pizza! A perfect blend of the pizza flavoured crispy wafers, you can never get enough of this mouthwatering snack. It's a snack, especially for kids. Feeling pizzy? Balaji Wafer Pizzy is here! Want to celebrate pizza day? Order Pizza's and Pizzy and pair them with a chilled beverage. Of course, choco-lava cake and then some more pizzy will make your day pizzy-pizzy.",
+   "ingredients": "Partly Skimmed Milk, Sugar, Minerals And Vitamins.",
+   "storageInstructions": "Store in a cool, dry and hygienic place. Keep away from direct sunlight. Once opened, keep in airtight container.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Banana Masala Wafers",
@@ -283,14 +383,21 @@
     "available": false,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30010121_1-balaji-namkeen-banana-masala-wafers.jpg"
-    }
+    },
+    "barcode": "8906010500153"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30010121_1-balaji-namkeen-banana-masala-wafers.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Finely sliced bananas; fried to perfection and moderately spiced with locally grown chillies, Balaji spicy banana wafers enhances the taste and flavour of every snack. Its not just the perfect evening snack to fill your tummy with but is also an anytime snack. The banana masala wafers are perfect for Jains who do not eat potato made snacks. Team it up with chai for a oh-so perfect evening snack! Vegetarian product.",
+   "ingredients": "Bananas, Edible Vegitable Oil, Iodised Salt, Chilli Powder",
+   "storageInstructions": "Store away from direct heat & sunlight",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wheelos Masala",
@@ -328,7 +435,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053589-6_1-balaji-namkeen-wheelos-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "These cute little edible wheels are a favourite among the children. The lip-smacking flavour of handpicked spices and the mild spiciness put together creates this wholesome snack that children love munching on whether it's during a school picnic or while watching their favourite cartoon show. Shaped like a wheel, this iconic snack will roll into your mouth and rock your taste buds with its masala and crunch. Want something healthy and tasty for your kids? Balaji Wheelos Masala is your answer.",
+   "ingredients": "REFINED WHEAT FLOUR (MAIDA) (60%), EDIBLE VEGETABLE OIL (PALMOLEIN, RICE BRAN), TAPIOCA STARCH, CORN FLOUR, EDIBLE COMMON SALT, DEHYDRATED VEGETABLE POWDER (ONION, GARLIC, TAMARIND), SPICES & CONDIMENTS 2% (DRY MANGO, CHILLI, PEPPER, CUMIN), SUGAR, YEAST EXTRACT, ACIDITY REGULATOR (INS 296, INS 330, INS 334), NATURAL & NATURE IDENTICAL FLAVOURING SUBSTANCES (MASALA), FLAVOUR ENHANCER (INS 627, INS 631), ANTICAKING AGENT (INS 551, INS 341 (III)), PAPRIKA EXTRACT (INS 160C)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "ENERGY": "484 Kcal",
+    "PROTEIN": "7.5 g",
+    "CARBOHYDRATES": "62.6 g",
+    "TOTAL SUGARS": "2.0 g",
+    "ADDED SUGARS": "1.0 g",
+    "TOTAL FAT": "21.5 g",
+    "SATURATED FAT": "10.0 g",
+    "TRANS FAT": "0.1 g",
+    "CHOLESTEROL": "<1 mg",
+    "SODIUM": "1423 mg",
+    "RDA": "RECOMMENDED DIETARY ALLOWANCE FOR AVERAGE ADULT PER DAY (2000 KCAL DIET) AS PER FSSR (LABELLING & DISPLAY) 2020."
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chataka Pataka Tangy Tomato",
@@ -369,7 +497,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053590-7_1-balaji-namkeen-chataka-pataka-tangy-tomato.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The tanginess of the tomato and the zinginess of the freshly-blended spices put together brings you this scrumptious, finger-licking snack that is going to be the family favourite! The chataka and pataka flavours of this snack are going to tingle your taste buds like no other adding that extra tang to these crispy and yummy-chips! They are twisted. They get the party started. Presenting the tangiest variant of this super tasty evening snack. Balaji's Chataka Pataka can be paired with a cold beverage to create the aroma and set the mood for a great evening. Invite your friends over and let the tangy-ness of Chataka Pataka roll for the match-evening or your favourite movie-screening!",
+   "ingredients": "Rice Meal(42%), Edible Oil(Palmolein), Corn Meal(13%), Chickpea Flour, Sugar, Iodized Salt, Dehydrated Vegetable Powder(Tomato 0.8%, Onion Garlic), Chilli Powder, Anticaking Agent (INS 551), Emulsifier (INS 414), Flavour Enhancer ( INS 627 INS 631)",
+   "nutritionalInfo": {
+    "Calories": "533",
+    "Calories from Fat": "274",
+    "Total Fat": "30g",
+    "Total Carbohydrates": "57g",
+    "Sugars": "5.9g",
+    "Protein": "8.3g"
+   },
+   "storageInstructions": "Store in a cool and dry place.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aloo Sev",
@@ -385,7 +527,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40053574_2-balaji-namkeen-aloo-sev.jpg"
-    }
+    },
+    "barcode": "8906010503505"
    },
    {
     "title": "45g",
@@ -422,7 +565,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30010145_7-balaji-namkeen-aloo-sev.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the classic taste of chickpea with Balaji's delicately peppered and lightly minted Aloo Sev. This fantastically delicious treat is crafted with care and expertise, promising a burst of authentic flavour that will tantalise your taste buds. Whether you're craving a crunchy snack to enjoy with a cup of chai on a rainy day or looking to add a zing of spice to your meals, these crispy potato-based sev strands, infused with a medley of aromatic spices, are the perfect choice.\nSourced from the finest ingredients and prepared with precision, each moreish mouthful will leave you craving more. From the first satisfying crunch to the last, you'll experience a symphony of flavours that is both addictive and deeply satisfying. Ideal for parties, gatherings, or simply as a indulgent afternoon treat, the Balaji Aloo Sev Pouch is a must-have for snack enthusiasts Everywhere.",
+   "ingredients": "EDIBLE VEGETABLE OIL (PALMOLEIN), POTATO FLAKES (25%), CHICKPEA FLOUR (25%), RICE FLOUR, MALTODEXTRIN, EDIBLE COMMON SALT, SPICES & CONDIMENTS (DRY MANGO, CUMIN, FENNEL, CHILLI, CORIANDER, CLOVE, TURMERIC, PEPPER, CARDAMOM, GINGER), DEHYDRATED VEGETABLE POWDER (MINT 0.2%, GARLIC, TAMARIND), NATURAL & NATURE IDENTICAL FLAVOURING SUBSTANCES (MINT), ACIDITY REGULATOR (INS 330, INS 296), FLAVOUR ENHANCER (INS 635), ANTICAKING AGENT (INS 551, INS 341 (III))",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "618 Kcal",
+    "Protein": "8.6 g",
+    "Carbohydrates": "38.6 g",
+    "Total Sugars": "0.7 g",
+    "Added Sugars": "0.6 g",
+    "Total Fat": "46.5 g",
+    "Saturated Fat": "21.4 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1206 mg",
+    "RDA": "Recommended Dietary Allowance for average adult per day (2000 kcal diet) as per FSSR (Labelling & Display) 2020."
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ratlami Sev",
@@ -484,7 +648,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053580_3-balaji-namkeen-ratlami-sev.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the authentic taste of Ratlami Sev, a delightful snack that captures the essence of traditional Indian street food. Crafted with care and expertise by the trusted Balaji brand, this crunchy, crispy delight is a perfect blend of chickpea flour (besan) sev and a symphony of spices. Infused with the bold flavours of chili, hing, and ajwain, this snack offers a zesty and flavourful experience that will tantalize your taste buds. Enjoy it as a standalone treat with your evening tea, or use it as a topping to add a delightful crunch and zing to your freshly-cooked vegetables and curries.\nWith its unique blend of spices, including ajwain, black pepper, and cloves, this Ratlami Sev Pouch is a true tribute to the culinary heritage of the Ratlam region in Madhya Pradesh. Indulge in the perfect balance of spicy, tikha, and chatakedaar flavours for a truly satisfying snacking experience.",
+   "ingredients": "CHICKPEA FLOUR (45%), EDIBLE VEGETABLE OIL (PALMOLEIN), MOTH BEAN FLOUR (16%), EDIBLE COMMON SALT, SPICES & CONDIMENTS (CHILLI, GINGER, CLOVE, PEPPER, CAROM SEED, CUMIN, ASAFOETIDA)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "ENERGY": "570 Kcal",
+    "PROTEIN": "14.8 g",
+    "CARBOHYDRATES": "42.1 g",
+    "TOTAL SUGARS": "2.0 g",
+    "ADDED SUGARS": "0.0 g",
+    "TOTAL FAT": "36.1 g",
+    "SATURATED FAT": "16.0 g",
+    "TRANS FAT": "0.1 g",
+    "CHOLESTEROL": "0 mg",
+    "SODIUM": "1084 mg",
+    "SERVING PER PACKAGE": "7"
+   },
+   "storageInstructions": "* Store in a cool and dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Shing Bhujia",
@@ -537,7 +722,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30010142_2-balaji-namkeen-shing-bhujiya.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful flavour and satisfying crunch of Balaji Shing Bhujia. This irresistible snack features a seamless blend of garam masala and gram flour-coated peanuts, creating a bold and zesty taste experience. Elevate your snacking with the perfect balance of spice and crispiness, making it the ideal accompaniment to your favourite juice, fruit, or sandwich. Crafted with care and free from preservatives, Balaji Shing Bhujia is a nutritious and convenient option that will have you coming back for more. Discover why this snack is a favourite among enthusiasts Everywhere and order yours today for a truly elevated snacking experience.",
+   "ingredients": "PEANUT (63%), CHICKPEA FLOUR (13%), EDIBLE VEGETABLE OIL (PALMOLEIN), CORN FLOUR, BLACK GRAM FLOUR, SPICES & CONDIMENTS 2% (CHILLI, BLACK PEPPER, GINGER, DRY MANGO, CLOVE, CAROM SEEDS, TAMARIND), EDIBLE COMMON SALT, ACIDITY REGULATOR (INS 330)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "ENERGY": "640 Kcal",
+    "PROTEIN": "20.3 g",
+    "CARBOHYDRATES": "26.5 g",
+    "TOTAL SUGARS": "2.0 g",
+    "ADDED SUGARS": "0.0 g",
+    "TOTAL FAT": "47.4 g",
+    "SATURATED FAT": "12 g",
+    "TRANS FAT": "0.1 g",
+    "CHOLESTEROL": "0 mg",
+    "SODIUM": "798 mg"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Shing",
@@ -553,7 +758,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30010137_6-balaji-namkeen-masala-shing.jpg"
-    }
+    },
+    "barcode": "8906010500443"
    }
   ],
   "images": [
@@ -578,7 +784,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30010137-7_1-balaji-namkeen-masala-shing.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy Shing Bhujia. Enjoy its seamless blend of garam masala and gram flour coated peanuts. Balaji Shing Bhujia is an interesting snack that is made up of peanuts and a blend of a variety of spices adds a crispy zingy flavour leaving you wanting for more. Enjoy it as a side snack with a juice, fruit or sandwich to experience it in a tastier way. These crispy peanuts have a shelf life of a few months, and are easier to store as well. Keep the pack sealed for long-lasting freshness. Happy Muching your favourite snack!",
+   "ingredients": "ROASTED PEANUT (88%), EDIBLE VEGETABLE OIL (COTTON SEED), SPICES & CONDIMENTS 2% (CHILLI, BLACK PEPPER, CUMIN, DRY MANGO, CINNAMON, ANISEED, CLOVE, CORIANDER, ASAFOETIDA, SUGAR, BLACK SALT)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "Energy": "699 Kcal",
+    "Protein": "23.2 g",
+    "Carbohydrates": "13.2 g",
+    "Total Sugars": "9.0 g",
+    "Added Sugars": "9.0 g",
+    "Total Fat": "58.2 g",
+    "Saturated Fat": "9.4 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "<1 mg",
+    "Sodium": "662 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Keep the pack sealed for long-lasting freshness",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chana Dal",
@@ -619,7 +845,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30010131-7_1-balaji-namkeen-chana-dal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Roasted to perfection, crispy and delicious masala chana dal. It can be enjoyed plain or garnish it with various dressings for an added taste. Add to your salads and chats. One can also enjoy this snack with drinks and shakes or simply carry it as a perfect snack for your snack box to school, college and office.\nMade with authentic and choicest chana dal and spices, children, youngsters and adults, its everyone's favourite. Why settle for less when you can have healthy chana dal in your snacks too! Afterall, sometimes dal is not as boring. Relish the chatpata flavour that melts in your mouth.",
+   "ingredients": "CHICKPEA SPLITS (83%), EDIBLE VEGETABLE OIL (PALMOLEIN, RICE BRAN), SPICES & CONDIMENTS (CHILLI, CORIANDER, CUMIN, TURMERIC, DRY MANGO, CLOVE, CAROM SEED, GINGER, CINNAMON, CARDAMOM, NUTMEG, MACE, BAY LEAVES), EDIBLE COMMON SALT",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "ENERGY": "531 Kcal",
+    "PROTEIN": "19.4 g",
+    "CARBOHYDRATES": "51.5 g",
+    "TOTAL SUGARS": "1.0 g",
+    "ADDED SUGARS": "0.0 g",
+    "TOTAL FAT": "22.8 g",
+    "SATURATED FAT": "9 g",
+    "TRANS FAT": "0.1 g",
+    "CHOLESTEROL": "< 1 mg",
+    "SODIUM": "619 mg"
+   },
+   "manufacturerName": "Patwari Bakers Pvt Ltd",
+   "fssaiLicense": "10012021000039",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Farali Chevdo",
@@ -660,7 +907,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30010139-7_1-balaji-namkeen-farali-chevdo.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful crunch and flavour of Balaji Farali Chevdo, a high-quality snack that's perfect for any occasion. Crafted with the finest ingredients and traditional recipes, this lightly spiced potato sticks and peanut blend offers a burst of taste in every bite. Enjoy the robust, yummy texture as you savour the goodness of carefully selected spices. Serve this crispy, mouthwatering namkeen fresh alongside your favourite drinks or shakes for the ultimate mid-day treat.\nBalaji, a trusted brand for years, ensures top-notch quality and great taste in every pack, making this a must-have in your kitchen. With just a few clicks, you can have this delectable snack delivered straight to your doorstep, ready to be enjoyed whenever the craving strikes.",
+   "ingredients": "POTATO (75%), ROASTED PEANUT (12%), EDIBLE VEGETABLE OIL (PALMOLEIN), SUGAR, ROCK SALT, SPICES & CONDIMENTS (CHILLI, CORIANDER, CUMIN, TURMERIC, DRY MANGO, CLOVE, CAROM SEED, GINGER, CINNAMON, CARDAMOM, NUTMEG, MACE, BAY LEAVES)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "ENERGY": "589 Kcal",
+    "PROTEIN": "15.2 g",
+    "CARBOHYDRATES": "40.9 g",
+    "TOTAL SUGARS": "8.0 g",
+    "ADDED SUGARS": "8.0 g",
+    "TOTAL FAT": "38.9 g",
+    "SATURATED FAT": "14.0 g",
+    "TRANS FAT": "0.1 g",
+    "CHOLESTEROL": "<1 mg",
+    "SODIUM": "404 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tikha Mitha Mix",
@@ -713,7 +980,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053576_3-balaji-namkeen-tikha-mitha-mix.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the captivating interplay of sweet and spicy flavours with Balaji's Tikha Mitha Mix. This unique blend of crispy sev, namkeen, and premium ingredients offers a burst of contrasting tastes in every bite. Whether enjoyed as a mid-day snack or served as a crunchy topping for chaats and salads, this delightful mix is sure to tantalize your taste buds and brighten up even the dullest of days.\nSavour the perfect balance of sweet and tangy, with a delightful crunch that will leave you craving more. Elevate your tea or coffee break, or add a touch of spicy-sweet excitement to your meals with this irresistible Tikha Mitha Mix from Balaji.",
+   "ingredients": "EDIBLE VEGETABLE OIL (PALMOLEIN), CHICKPEA FLOUR (22%), RICE FLAKES (10%), ROASTED PEANUT (9%), SPICES & CONDIMENTS 5% (TURMERIC, FENNEL, CURRY LEAVES, CORIANDER, SESAME SEEDS, CUMIN, DRY MANGO, BLACK PEPPER, CAROM SEED, GINGER, CLOVE, BAY LEAVES, CARDAMOM, NUTMEG, MACE, CINNAMON), SUGAR (8%), PEAS (7%), CORN FLAKES (6%), CHILLI POWDER, EDIBLE COMMON SALT, RICE FLOUR, CHICKPEA SPLITS, ACIDITY REGULATOR (INS 330), MILK POWDER",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "30g",
+    "ENERGY": "573 Kcal",
+    "PROTEIN": "15.0 g",
+    "CARBOHYDRATES": "47.0 g",
+    "TOTAL SUGARS": "8.0 g",
+    "ADDED SUGARS": "8.0 g",
+    "TOTAL FAT": "34.0 g",
+    "SATURATED FAT": "14.0 g",
+    "TRANS FAT": "0.1 g",
+    "CHOLESTEROL": "0 mg",
+    "SODIUM": "673 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sev Murmura",
@@ -754,7 +1041,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053587-7_2-balaji-namkeen-sev-murmura.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful symphony of crunchy sev and fluffy kurmura with Balaji's Sev Murmura Pouch. This versatile snack from the land of Gujarat offers a perfectly balanced flavour that's sure to satisfy your taste buds. Enjoy it as a wholesome, on-the-go treat or use it as a flavourful topping to elevate your favourite dishes. The convenient, easy-to-open pouch makes it the ideal companion whether you're at home, at work, or out and about.\nCrafted with care and without any added preservatives, this vegetarian snack is a healthier choice that the whole family can savour. Discover new ways to impress your little ones by incorporating this delectable blend into your culinary creations. With its moreish taste and practical packaging, Balaji's Sev Murmura Pouch is the perfect snack to keep your cupboard stocked and your cravings satisfied.",
+   "ingredients": "Puffed rice (50%), chickpea flour (24%), edible vegetable oil (palmolein, rice bran), rice flour, edible common salt, spices and condiments (turmeric, chilli, clove, ginger, asafoetida, curry leaves).",
+   "nutritionalInfo": {
+    "Energy": "507 kcal",
+    "Protein": "10.9 g",
+    "Carbohydrates": "60.6 g",
+    "Total Sugars": "9.0 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "23.4 g",
+    "Saturated Fat": "11.0 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "<1 mg",
+    "Sodium": "809 mg"
+   },
+   "manufacturerName": "Unit 2",
+   "fssaiLicense": "10012021000039",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Sev Murmura",
@@ -770,7 +1076,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40053588_4-balaji-namkeen-sev-murmura-masala.jpg"
-    }
+    },
+    "barcode": "8906010501259"
    }
   ],
   "images": [
@@ -798,7 +1105,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053588-8_1-balaji-namkeen-sev-murmura-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy the symphony of masala, sev, and kurmura, infused with chilli and garlic. From the land of Gujarat, some puffed beaten rice along with delicious fried sev and some incredible spices to enhance the taste. Enjoy this crunchy and wholesome snack at any time of the day! The Masala Sev Murmura is a delicacy you wouldn't want to miss. It's a hit among children, youngsters, and adults alike. Try new recipes for evening snack and never run out of ideas!",
+   "ingredients": "Puffed rice (45%), chickpea flour (25%), edible vegetable oil (palmolein, rice bran), spices and condiments (4%) (chilli, black pepper, curry leaves, oregano, asafoetida, cumin, ginger), dehydrated vegetable powder (garlic, tamarind, onion), rice flour, edible common salt, black salt, sugar, hydrolysed vegetable protein (soya), natural and nature-identical flavouring substances (chilli, garlic), acidity regulator (INS 330), anticaking agent (INS 551), flavour enhancer (INS 627, INS 631).",
+   "nutritionalInfo": {
+    "Energy": "571 kcal",
+    "Protein": "10.8 g",
+    "Carbohydrates": "74.2 g",
+    "Total Sugars": "9.2 g",
+    "Added Sugars": "0.1 g",
+    "Total Fat": "24.1 g",
+    "Saturated Fat": "9.6 g",
+    "Trans Fat": "0.1 g",
+    "Cholesterol": "<1 mg",
+    "Sodium": "1143 mg"
+   },
+   "manufacturerName": "Unit 2",
+   "fssaiLicense": "10012021000039",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Healthy Bites Jeera Khakhra",
@@ -839,7 +1165,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076621-7_1-balaji-khakhra-jeera.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Khakhra is a popular roasted Indian low-calorie crisp bread or snack made from whole wheat flour. Different supporting ingredients are added to make the Khakhra crisp and crunchy.",
+   "ingredients": "Wheat Flour (85%), Edible Vegetable Oil (Palmolein), Iodized Salt, Cumin Seeds (1%)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "435 Kcal",
+    "Protein": "9.6 g",
+    "Carbohydrates": "58.0 g",
+    "of which Sugar": "0.0 g",
+    "Fat": "18.3 g"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Healthy Bites Methi Khakhra",
@@ -880,7 +1220,23 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076620-7_1-balaji-methi-khakhra.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Khakhra is a popular roasted Indian low-calorie crisp bread or snack made from whole wheat flour. Different supporting ingredients are added to make the Khakhra crisp and crunchy.",
+   "ingredients": "Wheat Flour (85%), Edible Vegetable Oil (Palmolein), Iodized Salt, Dry Fenugreek Leaves (1%), Turmeric Powder",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "432 Kcal",
+    "Protein": "9.4 g",
+    "Carbohydrates": "57.8 g",
+    "of which Sugar": "0.0 g",
+    "Fat": "18.1 g",
+    "Total Trans Fat content": "not more than 0.2 Per cent by weight",
+    "Total Saturated Fat content": "not more than 9.0 Per cent by weight"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Healthy Bites Plain Khakhra",
@@ -921,7 +1277,22 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076623-7_1-balaji-khakhra-plain.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delightful crunch and wholesome goodness of Balaji Plain Khakhras, a classic Indian snack that combines traditional flavour with modern appeal. These roasted, low-calorie crisps are made from premium whole wheat flour, offering a satisfying and guilt-free snacking experience. Enjoy them on their own, paired with your favourite dips, or as a flavourful accompaniment to your meals - Balaji Plain Khakhras are sure to tantalize your taste buds and transport you to the heart of authentic Indian cuisine.\nWith their irresistible texture and the trusted quality of the Balaji brand, these khakhras are a must-have for any snack lover seeking a taste of tradition.",
+   "ingredients": "Wheat Flour (85%), Edible Vegetable Oil (Palmolein), Iodized Salt",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "426 Kcal",
+    "Protein": "9.0 g",
+    "Carbohydrates": "57.0 g",
+    "of which Sugar": "0.0 g",
+    "Fat": "18.0 g",
+    "RDA": "Total Trans Fat content not more than 0.2 Per cent by weight. Total Saturated Fat content not more than 9.0 Per cent by weight."
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Healthy Bites Masala Khakhra",
@@ -962,7 +1333,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076622-7_1-balaji-khakhra-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Khakhra is a popular roasted Indian low-calorie crisp bread or snack made from whole wheat flour. Added to it are different supporting ingredients to make that special khakhra which is crisp and crunchy.",
+   "ingredients": "Wheat Flour (85%), Edible Vegetable Oil (Palmolein), Iodized Salt, Spices & Condiments 2% (Black Pepper, Cumin Seeds, Chilli Powder, Carom Seeds, Turmeric Powder)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "435 Kcal",
+    "Protein": "9.5 g",
+    "Carbohydrates": "58.1 g",
+    "of which Sugar": "0.0 g",
+    "Fat": "18.3 g"
+   },
+   "storageInstructions": "*Store in a Cool and Dry Place",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gold Healthy Happiness Gift Pack",
@@ -997,7 +1382,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181057-5_1-balaji-healthy-happiness-gift-pack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Balaji roasted almonds, roasted cashew and roasted pistachios are healthy nuts and wonderful in taste.\nThey are a fantastic source of antioxidants. Roasted almonds, roasted cashew and roasted pistachios are most healthy nuts for a lively lifestyle.\nThey help weight loss as roasted almonds, roasted cashew and roasted pistachios are high in protein and fibre.\nThese roasted almonds, roasted cashew and roasted pistachios are relished by children and grownups alike. Roasted almonds, roasted cashew and roasted pistachios are a source of vitamin-E, copper, magnesium, and high-quality protein.\nThey also contain high levels of healthy unsaturated fatty acids along with high levels of bioactive molecules (such as fibre, phytosterols, vitamins, other minerals and antioxidants) which may help prevent cardiovascular disease. Balaji is a premium flavoured nuts and dry fruits brand.",
+   "ingredients": "Almonds kernel\nedible salt,\nCashews kernel\nedible salt\nPistachios in shell\nedible salt.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "R. Gopal Impex Pvt. Ltd. 511",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015011002844"
+  }
  },
  {
   "title": "Gold Royal Treat Gift Pack",
@@ -1032,6 +1425,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40181060-5_1-balaji-royal-treat-gift-pack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Balaji roasted and salted almonds, roasted and salted cashew are healthy nuts and wonderful in taste. They are a fantastic source of antioxidants. Roasted and salted almonds, roasted and salted cashew are most healthy nuts for a lively lifestyle. They help weight loss as roasted and salted almonds, roasted and salted cashew are high in protein and fibre. These roasted and salted almonds, roasted and salted cashew are relished by children and grownups alike. \nRoasted and salted almonds, roasted and salted cashew are a source of vitamin-E, copper, magnesium, and high-quality protein. They also contain high levels of healthy unsaturated fatty acids along with high levels of bioactive molecules (such as fibre, phytosterols, vitamins, other minerals and antioxidants) which may help prevent cardiovascular disease. Balaji is a premium flavoured nuts and dry fruits brand.",
+   "ingredients": "Almonds and Cashews.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "R. Gopal Impex Pvt. Ltd. 511",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015011002844"
+  }
  }
 ]

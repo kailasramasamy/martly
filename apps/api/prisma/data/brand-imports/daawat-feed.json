@@ -59,7 +59,43 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/255850-8_3-daawat-basmati-rice-biryani.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enhances your dishes to a whole new level of deliciousness. Whether you're making a delectable biryani or exploring vegetarian recipes, Daawat Biryani Real Basmati Rice is your go-to, choice, for an authentic and unforgettable dining experience. Bring home the essence of true Basmati tradition and savour the best taste in every bite.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "45gm",
+    "Energy": "371.39 Kcal",
+    "Protein": "9.20 Gm",
+    "Carbohydrate": "80.40 Gm",
+    "Total Sugar": "0.00 Gm",
+    "Added Sugar": "0.0 Gm",
+    "Dietary Fibre": "3.03 Gm",
+    "Total Fat": "0.77 Gm",
+    "Saturated Fat": "0.19 Gm",
+    "Trans Fat": "0 Gm",
+    "Cholesterol": "0 Mg",
+    "Sodium": "2 Mg",
+    "Iron": "1.08 Mg",
+    "Calcium": "5.90 Mg",
+    "Energy per serving": "8.35 Kcal",
+    "Protein per serving": "2.07 Gm",
+    "Carbohydrate per serving": "16.28 Gm",
+    "Total Sugar per serving": "0.00 Gm",
+    "Added Sugar per serving": "0.00 Gm",
+    "Dietary Fibre per serving": "0.61 Gm",
+    "Total Fat per serving": "0.35 Gm",
+    "Saturated Fat per serving": "0.09 Gm",
+    "Trans Fat per serving": "0.00 Gm",
+    "Cholesterol per serving": "0 Mg",
+    "Sodium per serving": "0.4 Mg",
+    "Iron per serving": "0.22 Mg",
+    "Calcium per serving": "1.20 Mg"
+   },
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Super Basmati Rice",
@@ -75,7 +111,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/255848_20-daawat-basmati-rice-super.jpg"
-    }
+    },
+    "barcode": "8901537080751"
    },
    {
     "title": "3kg",
@@ -121,7 +158,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/255848-8_5-daawat-basmati-rice-super.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enhance your dishes with superior quality and aromatic essence, ideal for an array of exotic dishes, adding a touch of sophistication and flavour to every meal. Whether it's the vibrant flavours of fried rice, the creamy richness of risotto, the comforting essence of Rajma rice, or any other gourmet creation, this Basmati rice lends itself seamlessly to diverse culinary creations.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "358.74",
+    "Protein (g)": "3.80",
+    "Carbohydrate (g)": "35.53",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Dietary Fibre (g)": "1.27",
+    "Total Fat (g)": "0.23",
+    "Saturated Fat (g)": "0.05",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "0.77",
+    "Iron (mg)": "0.49",
+    "Calcium (mg)": "3.42"
+   },
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Traditional Basmati Rice",
@@ -137,7 +195,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/247282_12-daawat-basmati-rice-traditional.jpg"
-    }
+    },
+    "barcode": "8901537024014"
    },
    {
     "title": "5kg",
@@ -174,7 +233,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/247282-8_1-daawat-basmati-rice-traditional.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "With a legacy of offering superior quality rice, Daawat Traditional Basmati Rice is renowned for its rich aromatic profile, making it an ideal choice for those craving authenticity in every meal. Experience the essence of tradition in every grain with this aged basmati rice.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "45gm",
+    "Energy": "358.74 Kcal",
+    "Protein": "3.80 Gm",
+    "Carbohydrate": "35.53 Gm",
+    "Total Sugar": "0.00 Gm",
+    "Added Sugar": "0.00 Gm",
+    "Dietary Fibre": "1.27 Gm",
+    "Total Fat": "0.23 Gm",
+    "Saturated Fat": "0.05 Gm",
+    "Trans Fat": "0.00 Gm",
+    "Cholesterol": "0.00 Mg",
+    "Sodium": "0.77 Mg",
+    "Iron": "0.49 Mg",
+    "Calcium": "3.42 Mg"
+   },
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pulav Basmati Rice",
@@ -190,7 +272,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145_10-daawat-basmati-rice-pulav.jpg"
-    }
+    },
+    "barcode": "8901537074231"
    },
    {
     "title": "400g",
@@ -245,7 +328,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000145-8_2-daawat-basmati-rice-pulav.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Pulav Basmati Rice is crafted for flavourful, aromatic pulao dishes. Each long grain cooks fluffy, separate, and evenly, absorbing spices while retaining its delicate fragrance. Carefully aged and sorted, it delivers consistent texture and taste. Ideal for festive meals or everyday cooking, it turns simple ingredients into a well-balanced, satisfying rice experience with trusted Daawat quality in every serving.",
+   "ingredients": "Pulav Basmati Rice",
+   "nutritionalInfo": {
+    "Energy": "161.43 kcal",
+    "Protein": "3.80 g",
+    "Carbohydrate": "35.53 g",
+    "Total Sugar": "0.00 g",
+    "Added Sugar": "0.00 g",
+    "Dietary Fibre": "1.27 g",
+    "Total Fat": "0.23 g",
+    "Saturated Fat": "0.05 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "0.77 mg",
+    "Iron": "0.49 mg",
+    "Calcium": "3.42 mg"
+   },
+   "manufacturerName": "LT Foods Ltd",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dubar Basmati Rice",
@@ -261,7 +366,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40006525_4-daawat-basmati-rice-dubar.jpg"
-    }
+    },
+    "barcode": "8908000258419"
    },
    {
     "title": "5kg",
@@ -292,7 +398,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000147_5-daawat-basmati-rice-dubar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Dubar Basmati Rice is a true delight for the senses. Sourced from the foothills of the Himalayas, this exceptional rice is renowned for its long, delicate grains, delicate texture, and distinctive fragrance. Each grain is carefully aged to perfection, allowing it to effortlessly absorb flavours and impart a rich, aromatic essence to every dish it accompanies. With its wonderful aroma and size, this rice is best suited for a variety of dishes, from the comforting Dal Chawal and Jeera Rice to the more elaborate Pulao and Biryani. Processed in Daawat's most hygienic and modern plants using their unique Octa Q processes, this basmati rice meets the highest quality standards, ensuring superior quality and exceptional nutritional value. Enjoy the flavour and fluffy texture of this nature's priceless gift, now available at an affordable price.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "348Kcal",
+    "Carbohydrate": "78g",
+    "Sugars": "0g",
+    "Protein": "8.2g",
+    "Total Fat": "0.5g",
+    "Saturated Fat": "0.1g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "0.75mg",
+    "Dietary Fiber": "1.9g",
+    "Calcium": "7.6mg",
+    "Iron": "1.08mg"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place",
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Delight Basmati Rice",
@@ -345,7 +473,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369111-8_1-daawat-daawat-delight-basmati-rice-1kg.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Delight Basmati Rice brings you premium-quality full grains with superior flavour absorption, making every meal rich, aromatic, and delicious. Carefully aged and processed, the long grains cook fluffy, separate, and non-sticky, delivering an authentic dining experience. Its exceptional ability to absorb spices and seasonings makes it perfect for biryani, pulao, fried rice, and everyday meals. Known for its delightful aroma and fine texture, this basmati rice enhances the taste of every recipe with ease. Ideal for home kitchens and special occasions alike, Daawat Delight Basmati Rice offers the perfect balance of quality, taste, and consistency in every serving for your family.",
+   "ingredients": "Delight Basmati Rice - Full Grain",
+   "nutritionalInfo": {
+    "Energy": "371.39 kcal",
+    "Protein": "9.20 g",
+    "Carbohydrate": "80.40 g",
+    "Total Sugar": "0.00 g",
+    "Added Sugar": "0.00 g",
+    "Dietary Fibre": "3.03 g",
+    "Total Fat": "0.77 g",
+    "Saturated Fat": "0.19 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "2.00 mg",
+    "Iron": "1.08 mg",
+    "Calcium": "5.90 mg"
+   },
+   "manufacturerName": "LT Foods Ltd",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Tibar Basmati Rice",
@@ -380,7 +530,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053313-5_1-daawat-basmati-rice-daawat-tibar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Tibar Basmati Rice brings to you the perfect basmati at an affordable price Daawat Tibar is third fourth of the basmati grain length and belongs to the popular super pusa grains It is carefully chosen naturally grown and processed in our ultra modern milling plants Click here for unique and delicious recipes",
+   "storageInstructions": "Store in a cool,dry place,away from direct sunlight.",
+   "ingredients": "Basmati Rice",
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "countryOfOrigin": "LT foods Ltd #43 milestone, GT road, Nahalgarh, Sonipat, Haryana. 131021 Country of origin: India Best before 16-12-2022 For Queries/Feedback/Complaints, Contact our Customer Care Executive at: Phone: 1860 123 1000 | Address: Innovative Retail Concepts Private Limited, No.18, 2nd & 3rd Floor, 80 Feet Main Road, Koramangala 4th Block, Bangalore - 560034 | Email: customerservice@bigbasket.com"
+  }
  },
  {
   "title": "Devaaya Basmati Rice",
@@ -427,7 +584,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/214217_7-daawat-basmati-rice-devaaya.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the exquisite flavour and aroma of Daawat Devaaya Basmati Rice, a true delight for the senses. This exceptional rice boasts a delicate, long-grained texture that becomes delightfully fluffy and almost doubles in size when cooked. With its pearly white appearance and responsibly sourced natural grains, Devaaya Basmati Rice promises superior quality and high nutritional value. Versatile for a wide range of dishes, from aromatic biryanis and fragrant pulaos to hearty khichdis and flavourful Mexican rice, this rice is a must-have in any kitchen. Experience the perfect blend of taste and tradition with Devaaya Basmati Rice, the finest choice for all your culinary adventures.",
+   "ingredients": "Rice",
+   "nutritionalInfo": {
+    "Energy (kcal)": "349",
+    "Carbohydrate (g)": "78",
+    "Protein (g)": "8.2",
+    "Total Fat (g)": "0.5",
+    "Saturated Fat (g)": "0.1",
+    "Trans Fat (g)": "0",
+    "Cholesterol (mg)": "0",
+    "Sugar (g)": "0",
+    "Sodium (mg)": "1.7",
+    "Dietary Fibre (g)": "1.9",
+    "Calcium (mg)": "7.6",
+    "Iron (mg)": "1.08"
+   },
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Devaaya Biryani Basmati Rice",
@@ -474,7 +652,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40285844_1-daawat-devaaya-biryani-basmati-rice-aromatic-long-grain.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Devaaya Biryani Basmati Rice is the best way to impress your guests with delicious homemade biryani. Daawat is the best way to keep the tradition of serving true flavours in every way. Right from the selection of the rice fields using scientific methods to choosing the right grains and keeping each grain intact. Use this Daawat Devaaya Biryani Basmati Rice not only to make biryani but also your favourite dishes from pulao to Mexican rice, khichdi and more.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "348 kcal",
+    "Carbohydrate": "78 g",
+    "Sugars": "0g",
+    "Protein": "8.2 g",
+    "Total Fat": "0.5 g",
+    "Saturated Fat": "0.1 g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0.75 mg",
+    "Dietary Fibre": "1.9 g",
+    "Calcium": "7.6 mg",
+    "Iron": "1.08 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "For manufacturing information please refer to factory code printed along with Lot Number on the pack Code Factory Addres",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Devaaya Everyday Basmati Rice",
@@ -509,7 +709,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314102-5_1-daawat-devaaya-everyday-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Devaaya Everyday Rice is the perfect choice for your daily meals. Known for its superior quality, this basmati rice variety offers consistently long, fluffy grains with a delightful aroma. Carefully selected and aged to perfection, it provides a wholesome source of carbohydrates and is rich in essential nutrients. Enjoy the light, delicate taste and texture that complements a variety of dishes, from curries and pulao to plain rice. This high-quality, hygienic rice is processed to remove impurities, ensuring superior results every time. Whether you're preparing a savoury curry or a sweet rice dish, Daawat Devaaya Everyday Rice will make every meal more enjoyable and satisfying.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "Approx. 45gm",
+    "Energy": "355.72 Kcal",
+    "Protein": "8.43 Gm",
+    "Carbohydrate": "78.02 Gm",
+    "Total Sugar": "0.0 Gm",
+    "Added Sugar": "0.0 Gm",
+    "Dietary Fibre": "0.37 Gm",
+    "Total Fat": "1.02 Gm",
+    "Saturated Fat": "0.25 Gm",
+    "Trans Fat": "0.0 Gm",
+    "Cholesterol": "0.0 Mg",
+    "Sodium": "9.02 Mg",
+    "Calcium": "33.09 Mg",
+    "Iron": "1.32 Mg",
+    "Potassium": "53 Mg"
+   },
+   "storageInstructions": "Store in a cool, dry place",
+   "manufacturerName": "For manufacturing information please refer to factory code printed along with Lot Number on the pack Code Factory Addres",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rozana Gold Basmati Rice",
@@ -525,7 +750,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/255849_9-daawat-basmati-rice-rozana-gold.jpg"
-    }
+    },
+    "barcode": "8901537006867"
    },
    {
     "title": "4kg",
@@ -571,7 +797,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/255849-8_2-daawat-basmati-rice-rozana-gold.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enhance daily meals with goodness and flavour. With its premium quality raw rice, Rozana Gold Basmati Rice ensures an exceptional culinary experience for everyday cooking. Enjoy the rich aroma and superior quality of this basmati rice, making every meal a delightful affair.",
+   "ingredients": "Rice",
+   "nutritionalInfo": {
+    "Energy (kcal)": "355.72",
+    "Protein (g)": "3.82",
+    "Carbohydrate (g)": "35.64",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Dietary Fibre (g)": "0.77",
+    "Total Fat (g)": "0.26",
+    "Saturated Fat (g)": "0.08",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "0.77",
+    "Iron (mg)": "0.97",
+    "Calcium (mg)": "1.76"
+   },
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rozana Super Basmati Rice",
@@ -587,7 +835,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196_8-daawat-basmati-rice-rozana-super-90.jpg"
-    }
+    },
+    "barcode": "8901537007123"
    },
    {
     "title": "5kg",
@@ -633,7 +882,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075196-8_2-daawat-basmati-rice-rozana-super-90.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the exceptional quality of Daawat Rozana Super Basmati Rice, aged to perfection for a rich aroma, superior taste, and long, slender grains. Savour the aromatic essence of Rozana Super Basmati Rice, with its long grains and delightful fragrance, enhancing the flavour of your dishes. Relish the distinct aroma and elongated grains of Rozana Super Basmati Rice, adding authentic Basmati flavour to your meals. Perfect for everyday meals or special occasions, this Basmati rice elevates your culinary creations.",
+   "ingredients": "Rice",
+   "nutritionalInfo": {
+    "Energy (kcal)": "355.72",
+    "Protein (g)": "3.82",
+    "Carbohydrate (g)": "35.64",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Dietary Fibre (g)": "0.77",
+    "Total Fat (g)": "0.26",
+    "Saturated Fat (g)": "0.08",
+    "Trans Fat (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "0.77",
+    "Iron (mg)": "0.97",
+    "Calcium (mg)": "1.76"
+   },
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rozana Platinum Basmati Rice",
@@ -671,7 +942,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363467-6_2-daawat-rozana-basmati-rice-platinum.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Basmati Rice Rozana Platinum is premium quality rice, aged for 2 years to enhance its natural aroma and texture. With every grain carefully selected, it elongates up to 16 mm upon cooking, offering a soft and fluffy texture that complements any dish. Ideal for daily meals, it delivers unmatched taste and perfect consistency, making every bite a delightful experience.",
+   "ingredients": "Basmati Rice",
+   "nutritionalInfo": {
+    "Energy": "160.07 kcal",
+    "Protein": "3.82 g",
+    "Carbohydrate": "35.64 g",
+    "Total Sugar": "0.00 g",
+    "Added Sugar": "0.00 g",
+    "Dietary Fibre": "0.77 g",
+    "Total Fat": "0.26 g",
+    "Saturated Fat": "0.08 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 g",
+    "Sodium": "0.77 g",
+    "Iron": "0.97 mg",
+    "Calcium": "1.76 mg"
+   },
+   "manufacturerName": "LT Foods Ltd. 43 KM Milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rozana Gini 70 Basmati Rice",
@@ -706,7 +999,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000148-5_1-daawat-basmati-rice-rozana-gini-70-old.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the taste of royalty with Daawat Rozana Gini 70, the purest and most aromatic basmati rice for all your rice preparations. Daawat Rozana Gini 70 is pure basmati which comes from our premium Specialist range for its smaller size. It has all the magnificent qualities of pure basmati, uniformly graded by our aromatic sortex machines into different sizes and rozana brands, which you may buy as per your rice preparation. Once a luxury enjoyed only by royalty, the queen of rice can now grace your dining table every day.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "348Kcal",
+    "Carbohydrates": "78g",
+    "Sugars": "0g",
+    "Protein": "8.2g",
+    "Total Fat": "0.5g",
+    "Saturated Fat": "0.1g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "0.75mg",
+    "Dietary Fiber": "1.9g",
+    "Calcium": "7.6mg",
+    "Iron": "1.08mg"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place",
+   "manufacturerName": "LT Foods Ltd #43 Milestone",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rozana Mini 60 Basmati Rice",
@@ -722,7 +1037,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/70000149_2-daawat-basmati-rice-rozana-mini-60-old.jpg"
-    }
+    },
+    "barcode": "8901537021587"
    }
   ],
   "images": [
@@ -741,7 +1057,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000149-5_1-daawat-basmati-rice-rozana-mini-60-old.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Rozana Mini 60 is pure basmati which comes from our premium Specialist range for its smaller size. It has all the magnificent qualities of pure basmati uniformly graded by our aromatic sortex machines into different sizes & rozana brands, which you may buy as per your rice preparation. Once a luxury enjoyed only by royalty, the queen of rice can now grace your dining table every day.",
+   "ingredients": "Basmati Rice",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "348Kcal",
+    "Carbohydrates": "78g",
+    "Sugars": "0g",
+    "Protein": "8.2g",
+    "Total Fat": "0.5g",
+    "Saturated Fat": "0.1g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "0.75mg",
+    "Dietary Fiber": "1.9g",
+    "Calcium": "7.6mg",
+    "Iron": "1.08mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "LT Foods Ltd #43 Milestone",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rozana Mini Mogra Rice",
@@ -785,7 +1124,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327414-8_2-daawat-rozana-mini-mogra-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the delicate aroma and delicious taste of this premium broken basmati rice from Daawat. Aged up to 24 months for maximum flavour, this rice boasts a fluffy, almost double-in-size texture after cooking, making it a truly delectable experience. Sourced with the utmost care, this superior quality rice is high in nutrition and ensures a consistent, high-standard quality. Whether you prefer a gentle boil, covered pan, or microwave cooking method, this versatile rice will elevate your meals with its unique and flavourful profile.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "Approx. 45gm",
+    "Energy": "359.38 Kcal",
+    "Protein": "8.49 Gm",
+    "Carbohydrate": "79.2 Gm",
+    "Total Sugar": "0.0 Gm",
+    "Added Sugar": "0.0 Gm",
+    "Dietary Fibre": "1.7 Gm",
+    "Total Fat": "0.58 Gm",
+    "Saturated Fat": "0.17 Gm",
+    "Trans Fat": "0.0 Gm",
+    "Cholesterol": "0.0 Mg",
+    "Sodium": "1.7 Mg",
+    "Calcium": "3.91 Mg",
+    "Iron": "2.15 Mg",
+    "Potassium": "59.57 Mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "LT Foods Ltd #43 Milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rozana Niki Rice",
@@ -832,7 +1196,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327411_1-daawat-rozana-niki-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This is Broken Basmati rice has a delicate aroma, delicious taste. It has delectable aroma and gives you a unique flavour. It ensures superior quality and is high in nutrition. It is aged up to 24 months and is of good quality. After cooking it becomes fluffy and almost double in size and delicious.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "348Kcal",
+    "Carbohydrate": "78g",
+    "Sugars": "0g",
+    "Protein": "8.2g",
+    "Total Fat": "0.5g",
+    "Saturated Fat": "0.1g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "0.75mg",
+    "Dietary Fiber": "1.9g",
+    "Calcium": "7.6mg",
+    "Iron": "1.08mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Quick Cooking Brown Basmati Rice",
@@ -882,7 +1268,36 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/70000144_8-daawat-basmati-rice-brown-quick-cooking.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy nutritious meals with Daawat Quick Cooking Brown Basmati Rice. Made from whole grain rice, it cooks in just 15 minutes, making it ideal for busy days. With its natural texture and pleasant aroma, it is a convenient choice for wholesome everyday dishes and balanced home-cooked meals.",
+   "ingredients": "Rice",
+   "nutritionalInfo": {
+    "Energy": "383.71",
+    "Protein": "9.2 g",
+    "Carbohydrate": "72.05 g",
+    "Total Sugar": "0.00 g",
+    "Added Sugar": "0.00 g",
+    "Dietary Fibre": "4.35 g",
+    "Total Fat": "2.18 g",
+    "Saturated Fat": "0.68 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 g",
+    "Sodium": "1.7 mg",
+    "Iron": "1.95 mg",
+    "Calcium": "14.4 mg",
+    "Vitamin A": "<0.1 mg",
+    "Vitamin B1": "<0.1 mg",
+    "Vitamin B3": "<0.1 mg",
+    "Vitamin B6": "<0.05 mg",
+    "Vitamin B12": "<1.00 mg",
+    "Vitamin C": "<0.1 mg",
+    "Vitamin D": "<0.01 mg"
+   },
+   "manufacturerName": "LT Foods Ltd & 43 KM Milestone",
+   "fssaiLicense": "10012064000073",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Quick Cooking Black Rice",
@@ -935,7 +1350,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40285847_1-daawat-quick-cooking-black-rice-immuno-plus-superfood-zero-trans-fat-rich-in-protein.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Quick Cooking Black Rice brings wholesome goodness with a naturally nutty flavour and striking colour. Carefully processed to cook faster, it saves time without losing texture or nutrition. Rich in fibre and antioxidants, it suits modern meals, from hearty bowls to elegant sides, offering taste, nourishment, and everyday convenience. Ideal for health-conscious kitchens seeking variety and balance, daily cooking.",
+   "ingredients": "Black Rice",
+   "nutritionalInfo": {
+    "Energy": "167.90 kcal",
+    "Protein": "3.37 g",
+    "Carbohydrate": "34.37 g",
+    "Total Sugar": "0.0 g",
+    "Added Sugar": "0.0 g",
+    "Dietary Fibre": "2.7 g",
+    "Total Fat": "1.29 g",
+    "Saturated Fat": "0.32 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "1.44 mg",
+    "Calcium": "10.82 mg",
+    "Iron": "3.49 mg",
+    "Potassium": "52.81 mg"
+   },
+   "manufacturerName": "LT Foods",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Quick Cooking Red Rice",
@@ -973,7 +1411,30 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360359-6_1-daawat-quick-cooking-red-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Quick Cooking Red Rice brings wholesome goodness to everyday meals without long cooking hours. Naturally rich in fibre, this nutritious red rice cooks faster while retaining its earthy flavour and firm texture. Ideal for busy kitchens, it pairs beautifully with curries, stir-fries, and salads, making healthy eating simple, satisfying, and consistently delicious for modern lifestyles across diverse Indian homes.",
+   "ingredients": "Red Rice",
+   "nutritionalInfo": {
+    "Energy": "161.12 kcal",
+    "Protein": "2.36 g",
+    "Carbohydrate": "35.83 g",
+    "Total Sugar": "0.0 g",
+    "Added Sugar": "0.0 g",
+    "Dietary Fibre": "2.7 g",
+    "Total Fat": "0.33 g",
+    "Saturated Fat": "0.09 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "3.36 mg",
+    "Calcium": "14.55 mg",
+    "Iron": "1.68 mg",
+    "Potassium": "43.83 mg"
+   },
+   "manufacturerName": "LT Foods",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sona Masoori Rice",
@@ -989,7 +1450,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532_4-daawat-premium-sona-masoori-rice.jpg"
-    }
+    },
+    "barcode": "8901537081505"
    },
    {
     "title": "5kg",
@@ -1044,7 +1506,33 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338532-8_1-daawat-premium-sona-masoori-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat brings you the finest aromatic, authentic, and lightweight Sona Masoori Rice, carefully sourced from the best Sona Masoori-growing regions of Karnataka, Telangana, and Andhra Pradesh, including Raichur and Koppal. Aged to perfection, this premium rice offers a delicate texture and exquisite flavour, making it the ultimate choice for a variety of dishes.",
+   "ingredients": "Rice",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "370.98 kcal",
+    "Protein": "8.74 g",
+    "Carbohydrate": "76.88 g",
+    "Added Sugar": "0.00 g",
+    "Dietary Fibre": "2.73 g",
+    "Total Fat": "2.56 g",
+    "Saturated Fat": "0.00 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "7.62 mg",
+    "Calcium": "102.03 mg",
+    "Iron": "23.79 mg",
+    "Vitamin B12": "0.11 mg",
+    "Vitamin B1": "0.15 mg",
+    "Vitamin B3": "1.97 mg",
+    "Vitamin B6": "0.25 mg"
+   },
+   "manufacturerName": "LT Foods Ltd #43 Milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gobindo Bhog Rice",
@@ -1079,7 +1567,36 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343319-5_2-daawat-gobindo-bhog-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Gobindo Bhog Rice is a premium, aromatic short-grain rice known for its rich fragrance and delicate texture. Traditionally used in festive and religious offerings, this rice is perfect for preparing flavourful dishes like khichdi, pulao, kheer, and Indian delicacies. Its naturally sweet aroma and soft, fluffy grains enhance every meal, making it a must-have for special occasions and daily cooking alike. Experience the authentic taste of heritage with Daawat Govind Bhog Rice.",
+   "ingredients": "Rice",
+   "nutritionalInfo": {
+    "Energy": "383.71",
+    "Protein": "9.2 g",
+    "Carbohydrate": "72.05 g",
+    "Total Sugar": "0.00 g",
+    "Added Sugar": "0.00 g",
+    "Dietary Fibre": "4.35 g",
+    "Total Fat": "2.18 g",
+    "Saturated Fat": "0.68 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 g",
+    "Sodium": "1.7 mg",
+    "Iron": "1.95 mg",
+    "Calcium": "14.4 mg",
+    "Vitamin A": "<0.1 mg",
+    "Vitamin B1": "<0.1 mg",
+    "Vitamin B3": "<0.1 mg",
+    "Vitamin B6": "<0.05 mg",
+    "Vitamin B12": "<1.00 mg",
+    "Vitamin C": "<0.1 mg",
+    "Vitamin D": "<0.01 mg"
+   },
+   "manufacturerName": "LT Foods Ltd #43 Milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jeerakashala Rice",
@@ -1114,7 +1631,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343321-5_1-daawat-jeerakashala-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Jeerakashala Rice is a premium, aromatic short-grain rice known for its delicate fragrance and rich flavour. A staple in Kerala and North Indian cuisines, this rice is perfect for preparing flavorful biryanis, pulao, and traditional festive dishes. Its soft texture and subtle nutty aroma enhance every meal, making it a preferred choice for special occasions and daily cooking alike. Experience the authentic taste of Jeerakashala rice with Daawat. Explore a wide range of premium rice options from Daawat.",
+   "manufacturerName": "LT Foods Ltd #43 Milestone",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lachkari Wada Kolam Rice",
@@ -1155,7 +1678,29 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369113-7_1-daawat-daawat-lachkari-wada-kolam-raw-rice-10-kg.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Lachkari Wada Kolam Raw Rice is a cherished speciality of Maharashtra, loved for its soft texture, rich aroma, and delicious taste. Carefully selected and processed, this premium-quality rice is ideal for preparing everyday meals such as steamed rice, khichdi, pulao, and traditional Maharashtrian dishes. Its fine grains cook evenly and remain fluffy, making every meal wholesome and satisfying. Naturally gluten-free and easy to digest, Daawat Lachkari Wada Kolam Rice brings authentic regional flavour and superior quality to your kitchen. Perfect for daily cooking, it offers a delightful balance of taste, nutrition, and purity for families who value quality food every day.",
+   "ingredients": "Raw Rice",
+   "nutritionalInfo": {
+    "Energy": "355.00 kcal",
+    "Protein": "7.00 g",
+    "Carbohydrate": "78.00 g",
+    "Total Sugar": "0.00 g",
+    "Added Sugar": "0.00 g",
+    "Dietary Fibre": "2.00 g",
+    "Total Fat": "2.00 g",
+    "Saturated Fat": "0.50 g",
+    "Trans Fat": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "1.70 mg",
+    "Iron": "0.50 mg",
+    "Calcium": "7.60 mg"
+   },
+   "manufacturerName": "(A1) LT Foods Limited 43 Km Stone",
+   "fssaiLicense": "10012064000073",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Boiled Ponni Rice",
@@ -1171,7 +1716,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40343320_1-daawat-boiled-ponni-rice.jpg"
-    }
+    },
+    "barcode": "8901537078178"
    }
   ],
   "images": [
@@ -1190,7 +1736,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343320-5_1-daawat-boiled-ponni-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Ponni Rice is a premium-quality, aromatic rice variety that is soft, fluffy, and perfect for everyday meals. Widely popular in South Indian cuisine, this rice is ideal for preparing steamed rice, idlis, dosa batter, curd rice, and a variety of traditional delicacies. Its light texture and subtle sweetness make it easy to digest while enhancing the flavours of your favourite dishes. Naturally nutritious and easy to cook, Daawat Ponni Rice is a wholesome choice for a balanced diet. Explore a wide range of premium rice options from Daawat.",
+   "manufacturerName": "LT Foods Ltd #43 Milestone",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "I'm Organic Basmati Rice",
@@ -1234,7 +1786,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360362-8_1-daawat-im-organic-basmati-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat I’m Organic Basmati Rice is grown with care on certified organic farms, preserving the grain’s natural purity and aroma. Each long, slender grain cooks to a soft, fluffy texture with a delicate flavour that elevates everyday meals and special dishes alike. A wholesome choice for those who value authenticity, quality, and mindful eating.",
+   "ingredients": "Organic Basmati Rice",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Calories": "349 kcal",
+    "Total Fat": "1 g (1.54% DV)",
+    "Saturated Fat": "0.4 g (2% DV)",
+    "Trans Fat": "0 g (0% DV)",
+    "Cholesterol": "0 mg (0% DV)",
+    "Sodium": "0.5 mg (0.02% DV)",
+    "Total Carbohydrate": "75.8 g (25.27% DV)",
+    "Dietary Fibre": "1.2 g (4.8% DV)",
+    "Added Sugar": "0 g (0% DV)",
+    "Protein": "8.6 g (17.20% DV)"
+   },
+   "manufacturerName": "LT Foods Ltd",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "I'm Organic Sona Masoori Rice",
@@ -1278,7 +1850,32 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360363-8_1-daawat-im-organic-sona-masoori-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat I’m Organic Sona Masoori Rice is naturally grown and carefully processed to preserve its light texture and subtle aroma. Each slender grain cooks fluffy without turning sticky, making it ideal for everyday meals. Grown without synthetic chemicals, it delivers clean taste, easy digestion, and dependable quality for wholesome family cooking, trusted for balanced nutrition and consistent results in kitchens.",
+   "ingredients": "Organic Sona Masoori Rice",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Calories": "349 kcal",
+    "Total Fat": "0 g (0% DV)",
+    "Saturated Fat": "0 g (0% DV)",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg (0% DV)",
+    "Sodium": "0 mg (0% DV)",
+    "Carbohydrate": "80 g (26.7% DV)",
+    "Dietary Fibre": "0 g (0% DV)",
+    "Total Sugar": "0 g",
+    "Added Sugar": "0 g (0% DV)",
+    "Protein": "6.7 g (13.4% DV)",
+    "Vitamin D": "0 mcg (0% DV)",
+    "Calcium": "8.9 mg (0.7% DV)",
+    "Iron": "0 mg (0% DV)",
+    "Potassium": "86.7 mg (1.8% DV)"
+   },
+   "manufacturerName": "LT Foods Ltd",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Jasmine Thai Hom Mali Rice",
@@ -1316,7 +1913,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338534-6_2-daawat-jasmine-thai-rice.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Thai Hom Mali Jasmine Rice boasts a delicate texture and a fragrance as enchanting as the sweet-scented jasmine flower. Renowned for its soft, melt-in-your-mouth flavour, this aromatic rice is incredibly versatile, making it the perfect companion for a wide range of dishes. Its light, fluffy grains effortlessly elevate any meal with their exquisite taste and aroma.",
+   "manufacturerName": "LT Foods Ltd #43 Milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rice Flour",
@@ -1351,7 +1954,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355777-5_1-daawat-rice-flour-made-from-basmati.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Rice Flour, made from premium basmati rice, is a gluten-free pantry essential crafted to perfection. Finely milled for a smooth texture, it brings freshness and versatility to everyday cooking, baking and frying. Whether you’re preparing crisp batters, soft breads or delicate desserts, this rice flour delivers excellent results. It works wonderfully as a natural thickener for soups and sauces and adds a light, crunchy finish to fried dishes. Perfect for traditional favourites such as dosa, noodles and rice cakes, Daawat Rice Flour comes in a fresh vacuum pack, ensuring quality, taste and purity in every meal you create with confide",
+   "manufacturerName": "For manufacturing info",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Devaaya Daliya",
@@ -1386,7 +1995,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352753-5_1-daawat-devaaya-daliya.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Daliya is made from premium quality wheat, coarsely ground to preserve its natural fibre, nutrients, and earthy flavour. Rich in goodness and easy to digest, it is a wholesome, versatile ingredient perfect for preparing nourishing dishes such as upma, porridge, khichdi, and a variety of other healthy recipes, making it an ideal choice for everyday meals.",
+   "manufacturerName": "LT Foods Limited",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dilli Special Biryani Kit",
@@ -1402,7 +2017,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112_1-daawat-daawat-biryani-kit-dilli-special.jpg"
-    }
+    },
+    "barcode": "8901537082670"
    }
   ],
   "images": [
@@ -1427,7 +2043,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369112-7_1-daawat-daawat-biryani-kit-dilli-special.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat, India’s finest basmati brand, brings you the finest\nBiryani Kit to prepare delicious, authentic biryani at home in just 30 minutes.\nSpecially crafted to satisfy your anytime biryani cravings, the kit includes\nfinest basmati rice, Burani raita seasoning, spice pouch, authentic biryani\npaste, and achari seasoning for a rich and flavourful experience.\nThe Daawat biryani paste and achari seasoning are expertly\ncrafted by master chefs and made fresh to deliver an elevated taste experience.\nInspired by the rich heritage of traditional biryani recipes, this convenient\nkit helps you enjoy restaurant-style biryani easily at home.",
+   "ingredients": "Biryani Basmati Rice (200 g): Basmati Rice\nAuthentic Biryani Paste (125 g): Curd, Dehydrated Onion, Sunflower Oil, Water, Iodized Salt, Spice Mix, Ginger And Garlic Paste, Rose Water, Kewra Water, Saffron Strands, Flavour Enhancer (INS 635), Acidity Regulator (INS 330), Hydrolyzed Vegetable Protein (Soy) And Permitted Natural Color (INS 160c)\nSpice Pouch (2 g): Cinnamon, Green Cardamom, Bay Leaf, Clove And Black Pepper\nBurani Raita Seasoning (7 g): Mixed Spices (Garlic, Chilli Powder, Cumin, Dried Mango Powder, Coriander, Onion, Dried Ginger Powder), Maltodextrin, Sugar, Iodized Salt, Black Salt, Soy Sauce Powder, Spice Extract, Dehydrated Parsley Flakes, Anticaking Agent (INS 551), Nature-Identical Flavouring Substances\nAchari Seasoning (20 g): Green Chilli, Sunflower Oil, Edible Common Salt, Lime Pulp, Permitted Natural Colours (INS 160c, INS 100), Spices, Acidity Regulators (INS 260, INS 330), Nature-Identical Flavouring Substance",
+   "nutritionalInfo": {
+    "Energy": "307 kcal",
+    "Protein": "7.2 g",
+    "Carbohydrate": "57 g",
+    "Total Sugars": "4.5 g",
+    "Added Sugars": "2.0 g",
+    "Dietary Fibre": "2.2 g",
+    "Total Fat": "5.8 g",
+    "Saturated Fat": "1.0 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "2.5 mg",
+    "Sodium": "1243 mg"
+   },
+   "manufacturerName": "LT Foods Limited Registered Office",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hyderabadi Biryani Kit",
@@ -1468,7 +2104,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253302-7_3-daawat-biryani-kit-hyderabadi-spicy-flavour-no-added-preservatives-colours.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Hot, spicy, and tangy with a hint of sweetness, this biryani is a celebration of Hyderabadi cuisine. Artfully crafted by master chefs with a perfect blend of spices, gently simmered in aromatic onion and tomato gravy, it adds an aura of the secret to this style of biryani. This melange of flavourful gravy and long grain Daawat Basmati rice together is a revelation of Hyderabadi culinary expertise. Accompanied by a delicious raita seasoning, which completes the authentic Hyderabadi experience.",
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kolkata Biryani Kit",
@@ -1509,7 +2151,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253303-7_3-daawat-biryani-kit-kolkata-medium-spicy-no-added-preservatives-colours.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the authentic flavours of Kolkata with the Daawat Biryani Kit Kolkata Box. Crafted with a uniquely delicate flavour and rich fragrance, the mild aroma of yakhni gravy and fragrant long-grain Daawat Basmati Rice brings alive the true experience of a delicious Kolkata Biryani. This meticulously curated kit includes all the essential ingredients required to create a delectable Kolkata-style biryani in the comfort of your own kitchen. From fragrant basmati rice to aromatic spices and tender meat, each component has been carefully selected to ensure a truly memorable culinary experience. Whether you are a seasoned chef or a novice in the kitchen, this ready-to-cook kit makes it easy to whip up a mouth-watering biryani that will impress even the most discerning palates. Unlock your way to the secret of a delightfully sweet aroma reminiscent of legendary preparation from Kolkata where each bite bursts with flavour. Serve with the delicious raita seasoning to relish the authentic Kolkata Biryani experience and elevate your home-cooking game.",
+   "ingredients": "Basmati Rice, Onion, Tomato, Curd, Burani Raita Seasoning, Aromatic Spices",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "330 kcal",
+    "Total Fat": "3.5 g",
+    "Saturated Fat": "0.5 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1200 mg",
+    "Total Carbohydrates": "68 g",
+    "Dietary Fiber": "2 g",
+    "Total Sugars": "0 g",
+    "Protein": "6 g"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lucknowi Biryani Kit",
@@ -1550,7 +2213,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253304-7_3-daawat-biryani-kit-lucknowi-mild-flavour-no-added-preservatives-colours.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the rich heritage of Lucknowi cuisine with the Daawat Lucknowi Biryani Kit. Crafted by master chefs, this kit captures the signature mild, delicate, and subtle flavours of authentic Lucknowi biryani. The secret lies in the careful selection and blend of the finest spices and ingredients, creating a delicious biryani experience. With the convenience of purchasing this kit online, you can savour the exquisite flavours of Lucknowi biryani from the comfort of your home. The ready-to-cook kit ensures a hassle-free cooking process in just 3 easy steps, without any preservatives or added colours. Pair the biryani with the delicious raita seasoning for a complete and authentic Lucknowi biryani experience.",
+   "ingredients": "Basmati Rice, Onion, Tomato, Curd, Burani Raita Seasoning, Aromatic Spices",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "360 kcal",
+    "Protein": "7.5 g",
+    "Total Fat": "3 g",
+    "Saturated Fat": "0.5 g",
+    "Carbohydrates": "72 g",
+    "Sugars": "0.5 g",
+    "Dietary Fiber": "2 g",
+    "Sodium": "5 mg"
+   },
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight and moisture",
+   "manufacturerName": "LT foods Ltd #43 milestone",
+   "fssaiLicense": "10014011002041",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Thai Green Curry Rice Kit",
@@ -1594,7 +2276,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347228-8_1-daawat-thai-green-curry-rice-kit.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Thai Rice Kit is a convenient, ready-to-cook meal solution that brings the authentic taste of Thai cuisine to your kitchen. This all-in-one kit includes aromatic rice and a specially crafted Thai curry paste, perfect for a quick, delicious, and wholesome meal. Ideal for working professionals, students, or anyone seeking an easy gourmet experience at home.",
+   "manufacturerName": "LT Foods Limited",
+   "fssaiLicense": "10014011002328",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dum Biryani Rice Saute Sauce",
@@ -1632,7 +2320,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40170946-6_1-daawat-saute-sauce-dum-biryani.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Create the authentic, savoury and mouthwatering Dum Biryani in 3 simple steps. Just add rice to the sauce, saute in a pan for 2 minutes and serve great tasting rice. Daawat Dum Biryani Saute Sauce is made from all-natural ingredients and doesn't contain MSG or any artificial colours or flavours. Serve an exciting and healthy rice meal to your children when they come back from school, as a healthy and tasty snack in the evening. This can become an exciting part of your daily meal or as a last-minute meal when unexpected guests come over",
+   "ingredients": "Tomato Paste (29%), Sugar, Iodised Salt, Spices Condiments. Does Not Contain Any Added Preservatives, Artificial Colour Or Flavours.",
+   "usageInstructions": "Just add cooked rice to the sauce. Saute in a pan for 3-4 minutes. Serve hot.",
+   "storageInstructions": "Store in a cool, dry and hygienic place.",
+   "manufacturerName": "LT Foods Ltd. Unit no. 134",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012063000042"
+  }
  },
  {
   "title": "Hot Garlic Rice Saute Sauce",
@@ -1670,7 +2367,16 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40170937-6_1-daawat-saute-sauce-hot-garlic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Create flavourful, spicy and sizzling Hot Garlic Rice in 3 simple steps. Just add rice to the sauce, saute in a pan for 2 minutes and serve great tasting rice. Daawat Hot Garlic Saute Sauce is made from all-natural ingredients and doesn't contain MSG or any artificial colours or flavours. Serve an exciting and healthy rice meal to your children when they come back from school, as a healthy and tasty snack in the evening. This can become an exciting part of your daily meal or as a last-minute meal when unexpected guests come over.",
+   "ingredients": "Tomato Paste, Water, Sugar",
+   "usageInstructions": "Just add cooked rice to the sauce. Saute in a pan for 3-4 minutes. Serve hot.",
+   "storageInstructions": "Store in a cool, dry and hygienic place.",
+   "manufacturerName": "LT Foods Ltd. Unit no. 134",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012063000042"
+  }
  },
  {
   "title": "Hyderabadi Biryani Masala Paste",
@@ -1708,6 +2414,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40363466-6_2-daawat-hyderabadi-biryani-masala-paste.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Daawat Hyderabadi Biryani Masala Paste brings the authentic taste of Hyderabad to your kitchen with a perfect blend of 14 aromatic spices. Free from added preservatives, this premium paste ensures a rich, flavorful biryani every time. The pack includes both the biryani paste and burani masala seasoning, making it easy to prepare the traditional, mouthwatering biryani with the perfect balance of heat and fragrance for a delightful experience.",
+   "ingredients": "Water, Curd, Sunflower Oil, Tomato Paste, Onion (Fresh And Dehydrated), Fresh Green Chilli, Ginger And Garlic Paste, Iodized Salt, Spice Mix Powder (Bayleaf, Black Cardamom, Black Pepper, Cinnamon, Clove, Coriander, Cumin, Fennel, Green Cardamom, Mace, Nutmeg), Fresh Coriander Leaves, Keora Water, Rose Water, Natural And Nature Identical Flavouring Substances, Flavour Enhancer (INS 635), Acidity Regulator (INS 330), Hydrolyzed Vegetable Protein (Soya) And Permitted Natural Colour (INS 160c).\nRaita Seasoning:\nMixed Spices (Garlic, Chilli Powder, Cumin, Dried Mango Powder, Coriander, Onion, Dried Ginger Powder), Maltodextrin, Sugar, Iodized Salt, Black Salt, Soy Sauce Powder, Spice Extract, Dehydrated Parsley Flakes, Anticaking Agent.\nAllergen Advice: Contains Milk Solids And Soy. May Contain Wheat, Barley, Oats, Mustard, Celery, And Sesame.",
+   "nutritionalInfo": {
+    "Energy": "182 kcal",
+    "Protein": "3.4 g",
+    "Carbohydrate": "22 g",
+    "Total Sugars": "7.0 g",
+    "Added Sugars": "2.2 g",
+    "Total Fat": "8.7 g",
+    "Saturated Fat": "1.3 g",
+    "Trans Fat": "<0.001 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "2551 mg"
+   },
+   "manufacturerName": "LT Foods Ltd. 43 KM Milestone",
+   "fssaiLicense": "10012064000073",
+   "countryOfOrigin": "India"
+  }
  }
 ]

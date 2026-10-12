@@ -1,9 +1,9 @@
 site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
-Refined Sunflower Oil,Gemini Refined Sunflower Oil,create,Grocery & Staples > Edible Oils > Sunflower Oil,800g ₹240 | 4.2kg ₹1235,800g ₹240 | 4.2kg ₹1235,8,
-Pureit Refined Sunflower Oil,Gemini Pureit Refined Sunflower Oil,create,Grocery & Staples > Edible Oils > Sunflower Oil,870g ₹135 | 4.35kg ₹700,870g ₹135 | 4.35kg ₹700,8,
-Refined Soyabean Oil,Gemini Refined Soyabean Oil,create,Grocery & Staples > Edible Oils > Soybean Oil,840g ₹210 | 4.2L ₹1065,840g ₹210 | 4.2L ₹1065,8,
-Filtered Groundnut Oil,Gemini Filtered Groundnut Oil,create,Grocery & Staples > Edible Oils > Groundnut Oil,870g ₹255 | 4.35kg ₹1310,870g ₹255 | 4.35kg ₹1310,8,
-Refined Groundnut Oil,Gemini Refined Groundnut Oil,create,Grocery & Staples > Edible Oils > Groundnut Oil,870g ₹265,870g ₹265,8,
-Smart Health Rice Bran Oil,Gemini Smart Health Rice Bran Oil,create,Grocery & Staples > Edible Oils > Rice Bran Oil,870g ₹230 | 4.35kg ₹950,870g ₹230 | 4.35kg ₹950,8,4.35kg: out of stock online
-Premium Kachi Ghani Mustard Oil,Gemini Premium Kachi Ghani Mustard Oil,create,Grocery & Staples > Edible Oils > Mustard Oil,840g ₹190,840g ₹190,8,
-Vanaspati,Gemini Vanaspati,create,Grocery & Staples > Edible Oils > Vanaspati & Dalda,420g ₹110 | 840g ₹168,420g ₹110 | 840g ₹168,8,
+Refined Sunflower Oil,Gemini Refined Sunflower Oil,update,Grocery & Staples > Edible Oils > Sunflower Oil,800g ₹240 | 4.2kg ₹1235,800g ₹240 | 4.2kg ₹1235,8,
+Pureit Refined Sunflower Oil,Gemini Pureit Refined Sunflower Oil,update,Grocery & Staples > Edible Oils > Sunflower Oil,870g ₹135 | 4.35kg ₹700,870g ₹135 | 4.35kg ₹700,8,
+Refined Soyabean Oil,Gemini Refined Soyabean Oil,update,Grocery & Staples > Edible Oils > Soybean Oil,840g ₹210 | 4.2L ₹1065,840g ₹210 | 4.2L ₹1065,8,
+Filtered Groundnut Oil,Gemini Filtered Groundnut Oil,update,Grocery & Staples > Edible Oils > Groundnut Oil,870g ₹255 | 4.35kg ₹1310,870g ₹255 | 4.35kg ₹1310,8,
+Refined Groundnut Oil,Gemini Refined Groundnut Oil,update,Grocery & Staples > Edible Oils > Groundnut Oil,870g ₹265,870g ₹265,8,
+Smart Health Rice Bran Oil,Gemini Smart Health Rice Bran Oil,update,Grocery & Staples > Edible Oils > Rice Bran Oil,870g ₹230 | 4.35kg ₹950,870g ₹230 | 4.35kg ₹950,8,4.35kg: out of stock online
+Premium Kachi Ghani Mustard Oil,Gemini Premium Kachi Ghani Mustard Oil,update,Grocery & Staples > Edible Oils > Mustard Oil,840g ₹190,840g ₹190,8,
+Vanaspati,Gemini Vanaspati,update,Grocery & Staples > Edible Oils > Vanaspati & Dalda,420g ₹110 | 840g ₹168,420g ₹110 | 840g ₹168,8,

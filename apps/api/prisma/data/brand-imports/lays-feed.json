@@ -86,7 +86,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202277-8_3-lays-potato-chips-american-style-cream-onion-flavour-best-quality-crunchy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Add some hearty flavour to your day with Lay's American Style Cream and Onion! These chips are seasoned to perfection with a rich blend of cream, onions, and fresh herbs. Savour this exciting mix and experience flavours that will surely make you come back for more! Made from only the highest quality farm-grown potatoes, Lay's Chips has always kept the highest standard of excellence, and with mouth-watering cream and onion flavours, the experience can only be accentuated. Lay's American Style Cream and Onion can be enjoyed anywhere and anytime for a well-needed kick of flavour. From the quick snack breaks at work to the impromptu get-togethers, this snack is perfect to binge on.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein, Sunflower Oil), Seasoning (Sugar, lodised Salt, Milk Solids, Spices & Condiments, Maltodextrin, Flavour (Natural & Nature Identical Flavouring Substances), Cheese Powder, Hydrolysed Vegetable Protein, Flavour Enhancers (627, 631), Edible Vegetable Oil (Palm, Coconut), Anticaking Agent (551))",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "537 kcal",
+    "Protein": "6.7 g",
+    "Carbohydrate": "53.0 g",
+    "Total Sugars": "3.4 g",
+    "Added Sugars": "2.0 g",
+    "Total Fat": "33.1 g",
+    "Saturated Fat": "14.8 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "643 mg"
+   },
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd. N1 PepsiCo India Holdings Pvt. Ltd. Village Channo Patiala Sangrur Road P.O. Bhawanigar",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Salted Potato Chips",
@@ -102,7 +122,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40202279_13-lays-potato-chips-classic-salted-best-quality-crunchy.jpg"
-    }
+    },
+    "barcode": "8901491001052"
    },
    {
     "title": "12g",
@@ -166,7 +187,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202279-8_2-lays-potato-chips-classic-salted-best-quality-crunchy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Indulge in the classic, irresistible taste of Lay's Classic Salted Potato Chips. Crafted with the highest quality farm-grown potatoes, these crunchy, perfectly seasoned chips are a timeless delight. Whether enjoyed on their own or paired with your favourite dips, Lay's Classic Salted Chips are the perfect companion for any occasion - from casual snacking to festive gatherings. Bursting with flavour and satisfying texture, these versatile chips are a reminder that the simple pleasures in life are often the most rewarding.\nSavour the signature Lay's taste, sprinkled with just the right amount of salt, and experience happiness in every bite. Lay's Classic Salted Chips are the ideal choice for satisfying your snack cravings, elevating your meals, and bringing people together around the chip bowl.",
+   "ingredients": "Potato, Edible Vegetable Oil (Sunflower, Palmolein Oil, lodised Salt), Antioxidant (307b, 319)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "553 kcal",
+    "Protein": "6.7 g",
+    "Carbohydrate": "52.6 g",
+    "Total Sugars": "0.6 g",
+    "Added Sugars": "0.0 g",
+    "Total Fat": "35.1 g",
+    "Saturated Fat": "6.2 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "510 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "MFD BY PepsiCo India Holdings Pvt. Ltd. N1 PepsiCo India Holdings Pvt. Ltd. Village channo",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "India's Magic Masala Potato Chips",
@@ -182,7 +224,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/102750_22-lays-potato-chips-indias-magic-masala.jpg"
-    }
+    },
+    "barcode": "8901491101844"
    },
    {
     "title": "12g",
@@ -246,7 +289,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/102750-8_2-lays-potato-chips-indias-magic-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Binge on these exquisite bites of pure Masala magic! With hints of cumin, coriander, chilli powder, onion, and garlic, Lay's India's Magic Masala is a one-way ticket to a world of exploding flavours. Experience this one-of-a-kind snack and indulge in the boldness of the Masala spice blend. They are perfect for any occasion and are 100% vegetarian. From the quick snack breaks at work to the impromptu get-togethers, this snack is perfect to binge on.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein, Sunflower Oil), Seasoning (Spices & Condiments, lodised Salt, Maltodextrin, Black Salt, Sugar, Tomato Powder, Acidity Regulators (330,296, 334), Flavour (Natural & Nature Identical Flavouring Substances), Anticaking Agent (551), Color (160c))",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "539 kcal",
+    "Protein": "6.9 g",
+    "Carbohydrate": "53.4 g",
+    "Total Sugars": "2.5 g",
+    "Added Sugars": "0.2 g",
+    "Total Fat": "33.1 g",
+    "Saturated Fat": "14.8 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "826 mg"
+   },
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Spanish Tomato Tango Potato Chips",
@@ -262,7 +325,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40202280_13-lays-potato-chips-spanish-tomato-tango-flavour-best-quality-crunchy.jpg"
-    }
+    },
+    "barcode": "8901491001045"
    },
    {
     "title": "12g",
@@ -317,7 +381,28 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202280-8_2-lays-potato-chips-spanish-tomato-tango-flavour-best-quality-crunchy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Embark on a tantalizing journey with Lay's Spanish Tomato Tango! Seasoned with a captivating blend of exquisite flavours and spices, these crisps will transport your taste buds to a world of vibrant, tangy delight. Savour the perfect balance of tomato and savoury notes, with a satisfying crunch that makes them the ideal companion for any occasion – from quick snack breaks to impromptu gatherings. Versatile and 100% vegetarian, these one-of-a-kind chips are sure to romance your palate and leave you craving more of their exciting, bursting flavours.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein), Seasoning (Sugar, Lodised Salt, Maltodextrin, Flavour (Natural & Nature Identical Flavouring Substances), Spices & Condiments, Tomato Powder (0.6%), Hydrolysed Vegetable Protein, Wheat Fibre, Dextrose, Anticaking Agent (551), Edible Vegetable Oil (Coconut Oil), Flavour Enhancers (627,631))",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Energy": "525 kcal",
+    "Protein": "6.4 g",
+    "Carbohydrate": "53.1 g",
+    "Total Sugars": "5.6 g",
+    "Added Sugars": "4.6 g",
+    "Total Fat": "31.9 g",
+    "Saturated Fat": "14.3 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "659 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "MFD BY PepsiCo India Holdings Pvt. Ltd. N1 PepsiCo India Holdings Pvt. Ltd. Village channo",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "West Indies Hot 'n' Sweet Chilli Potato Chips",
@@ -404,7 +489,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40003269_18-lays-potato-chips-naughty-limon-flavour.jpg"
-    }
+    },
+    "barcode": "8901491100328"
    }
   ],
   "images": [
@@ -432,7 +518,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003269-8_2-lays-potato-chips-naughty-limon-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "If you’re looking for a snack with character, look no further because Lay’s Chile Limon is the tangy kick of flavour that will brighten up your day! Seasoned with the spice of chillies and the zing of real lime, these bold chips are full of flavour and are lip-smacking good. Their powerful kick is as intense as it gets and is everything you never knew you needed. Lay's Chile Limon chips are versatile and perfect for any occasion. From the quick snack breaks at work to the impromptu get-togethers, this snack is perfect to binge on.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein, Sunflower Oil), Seasoning (Sugar, lodised Salt, Flavour (Natural & Nature Identical Flavouring Substances), Spices & Condiments, Maltodextrin, Lime Juice Powder, Anticaking Agent (551), Edible Vegetable Oil (Sunflower Seed Oil), Flavour Enhancers (627, 631), Corn Syrup Solids)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "532 kcal",
+    "Protein": "6.4 g",
+    "Carbohydrate": "52.0 g",
+    "Total Sugars": "3.3 g",
+    "Added Sugars": "2.6 g",
+    "Total Fat": "33.2 g",
+    "Saturated Fat": "14.8 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "977 mg"
+   },
+   "manufacturerName": "N1 PepsiCo India Holdings Pvt. Ltd. Village Channo",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sizzlin' Hot Potato Chips",
@@ -448,7 +553,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40247766_6-lays-sizzlin-hot-potato-chips-spicy-light-crispy-crunchy-snack.jpg"
-    }
+    },
+    "barcode": "8901491001809"
    }
   ],
   "images": [
@@ -476,7 +582,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247766-8_2-lays-sizzlin-hot-potato-chips-spicy-light-crispy-crunchy-snack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Lays Sizzlin Hot Potato Chips are the fiery kick you never knew you needed! These wavy chips were specially crafted for lovers of all things hot and spicy! Lays Sizzlin Hot Potato Chips are topped with a delicious blend of spicy goodness that will ignite your taste buds. Made from high-quality potatoes, these chips have an irresistible taste that will leave you wanting to crunch for more. Lays Sizzlin Hot Potato Chips are meant to be enjoyed whenever your day needs some spicing up. Have them on your own on a quick snack break at work or share them with your friends and family during gatherings… the options are endless!",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein Oil), Seasoning (Maltodextrin, Spices & Condiments, Sugar, lodised Salt, Acidity Regulator (330), Dehydrated Vegetable (Beetroot Powder)), Flavour (Natural Flavouring Substances), Butter Milk Powder, Anticaking Agent (551), Flavour Enhancers (627 & 631)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "538 kcal",
+    "Protein": "6.6g",
+    "Carbohydrate": "53.9g",
+    "Total Sugars": "2.3g",
+    "Added Sugars": "1.2g",
+    "Total Fat": "33.0g",
+    "Saturated Fat": "14.8g",
+    "Trans Fat": "0.1g",
+    "Sodium": "555 mg"
+   },
+   "manufacturerName": "PepsiCo Holdings Pvt. Ltd. Village Channo Patiala- Sangrur Road P.O. Bhwanigarh Distt. Sangrur- 148026 Punjab",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014064000435"
+  }
  },
  {
   "title": "Korean Chilli Potato Chips",
@@ -502,7 +628,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340564-2_1-lays-korean-chilli-flavour-potato-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Turn up the heat with Lay's Korean Chilli Flavour Potato Chips! Crispy, bold, and packed with the fiery kick of authentic Korean spices, these chips deliver a perfect balance of spice and savoury goodness. Ideal for those who love a crunchy snack with a punch, every bite is an explosion of flavour.",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "20g",
+    "Energy": "538 kcal",
+    "Protein": "6.4 g",
+    "Carbohydrate": "54.4 g",
+    "Total Sugars": "3.2 g",
+    "Added Sugars": "2.1 g",
+    "Total Fat": "32.8 g",
+    "Saturated Fat": "14.6 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "468 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crispz Herb & Onion",
@@ -518,7 +664,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40072318_1-lays-crispz-herb-onion.jpg"
-    }
+    },
+    "barcode": "8901491982351"
    }
   ],
   "images": [
@@ -537,7 +684,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40072318-5_1-lays-crispz-herb-onion.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Introducing Lays Crispz - a new range of potato snacks in exciting shapes that offer a fun and engaging experience. Crafted from the finest quality potatoes, these crisps are sliced and cooked to perfection, then blended with a delightful combination of herbs and onions. The result is a light, crunchy, and melt-in-your-mouth potato taste with a delectable twist of flavour. Indulge in the satisfying crunch and savour the delicious, crispy goodness of Lays Crispz.",
+   "ingredients": "Edible Vegetable Oil (Palmolein Oil), Refined Wheat Flour (Maida), Edible Starch, Dehydrated Vegetable (Potato Flakes ), Corn Flour, Rice Flour, Salt, Sugar, *Spices & Condiments, Onion Powder, Parsley Powder, Dextrose, Milk Solids, Calcium Chloride (509), Citric Acid (330), Carboxy Methyl Cellulose (466), Calcium Carbonate (170(i)), Lecithin (322)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "525 kcal",
+    "Protein": "4.3 g",
+    "Carbohydrate": "60.5 g",
+    "Sugars": "3.3 g",
+    "Total Fat": "29.5 g",
+    "Saturated Fat": "14.3 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "1074 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "VS Vaani Snacks pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gourmet Kettle Chips Lime & Cracked Pepper",
@@ -584,7 +749,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263757_1-lays-ignore-gourmet-potato-chips-lime-cracked-pepper-crunchy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rich crunch and flavourful bite with new Premium Potato Chips! Made from carefully selected, high quality potatoes, Lay's Gourmet chips are generously seasoned and made with unique combinations of the most exotic ingredients that delight the senses. Every crunchy bite of this thickly sliced golden-curled chip is filled with lip-smacking flavours and aromas that are perfect to celebrate a well-deserved moment of indulgence. In its truest essence, the chips are not cooked, but they are crafted. The chips are especially crafted for those who want to treat themselves with the finer snacking experiences. It's an excellent snack for your cocktail parties, special occasions, or an indulgent evening just by yourself or with friends.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein), *Seasoning (Maltodextrin, Iodised Salt, Sugar, `Spices & Condiments, Flavour (Natural & Nature Identical Flavouring Substances), Emulsifier (414), Anticaking Agent (551), Salt Substitute (Potassium Chloride), Flavour Enhancers (631, 627), Edible Vegetable Oil (Palm Oil),\n*As flavouring agent. `Contains Onion and Garlic",
+   "manufacturerName": "PepsiCo India Holding Pvt. Ltd.1st Floor (Office – 01)",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gourmet Kettle Chips Thai Sweet Chilli",
@@ -631,7 +803,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263753_1-lays-ignore-gourmet-potato-chips-thai-sweet-chilli-crispy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rich crunch and flavourful bite with new Premium Potato Chips! Made from carefully selected, high quality potatoes, Lay's Gourmet chips are generously seasoned and made with unique combinations of the most exotic ingredients that delight the senses. Every crunchy bite of this thickly sliced golden-curled chip is filled with lip-smacking flavours and aromas that are perfect to celebrate a well-deserved moment of indulgence. In its truest essence, the chips are not cooked, but they are crafted. The chips are especially crafted for those who want to treat themselves with the finer snacking experiences. It's an excellent snack for your cocktail parties, special occasions, or an indulgent evening just by yourself or with friends.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein Oil), *Seasoning (Sugar, Iodised Salt, `Spices & Condiments, Flavour (Nature Identical Flavouring Substances), Acidity Regulators (330,334), Anticaking Agent (551), Edible Vegetable Oil (Sunflower Oil), Flavour Enhancer (635)). *As Flavouring agent. `Contains Garlic",
+   "manufacturerName": "PepsiCo India Holding Pvt. Ltd.1st Floor (Office – 01)",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gourmet Kettle Chips Vintage Cheese & Paprika",
@@ -678,7 +857,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263755_1-lays-ignore-gourmet-potato-chips-vintage-cheese-paprika-crispy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Rich crunch and flavourful bite with new Premium Potato Chips! Made from carefully selected, high quality potatoes, Lay's Gourmet chips are generously seasoned and made with unique combinations of the most exotic ingredients that delight the senses. Every crunchy bite of this thickly sliced golden-curled chip is filled with lip-smacking flavours and aromas that are perfect to celebrate a well-deserved moment of indulgence. In its truest essence, the chips are not cooked, but they are crafted. The chips are especially crafted for those who want to treat themselves with the finer snacking experiences. It's an excellent snack for your cocktail parties, special occasions, or an indulgent evening just by yourself or with friends.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein Oil), *Seasoning (Sugar, Iodised Salt, `Spices & Condiments, Salt Substitute (Potassium Chloride), Milk Solids (Whey Powder, Cheese Powder, Skim Milk Powder), Acidity Regulators (330, 327, 325), Flavour (Natural & Nature Identical Flavouring Substances), Edible Vegetable Oil (Sunflower Oil), Anticaking Agent (551), Flavour Enhancer (627, 631), Colour (160c).\n*As flavouring agent. `Contains Garlic",
+   "manufacturerName": "PepsiCo India Holding Pvt. Ltd.1st Floor (Office – 01)",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maxx Macho Chilli Potato Chips",
@@ -740,7 +926,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40021141-8_1-lays-maxx-macho-chilli.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Get your snacking on with Lay’s Maxx Macho Chilli Flavour! The zig-zag deep ridges give Lay's Maxx maximum crunch & flavour. Enriched with macho chilli seasoning, every crunchy bite is guaranteed to transport you to a world of MAXX intensity. Grab a bag of Lay’s Maxx Macho Chilli chips and indulge in MAXX crunch and MAXX taste. Made from the highest quality farm-grown potatoes, every chip contains delectable flavours that will ignite your tastebuds. What are you waiting for? Grab a bag of Lay’s Maxx Macho Chilli to accompany you on your binge-watching sprees, build the mood for house parties, or satisfy your mid-morning hunger or late-night snack cravings!\nKey benefits:\nMacho Chilli flavour\nMAXX ridges, MAXX crunch and MAXX taste\nPerfect for binge-watching your favourite show or as a late-night snack\n100% vegetarian\nMade from the finest quality potatoes, spices, and vegetable oils",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein, Rice Bran Oil), *Seasoning (Sugar, ~Spices & Condiments, Iodised Salt, Flavour (Natural And Nature Identical Flavouring Substances), Acidity Regulators (303, 334), Tomato Powder, Flavour Enhancers (627, 631), Color (160c), Anticaking Agent (551)). *As Flavouring Agent. ~Contains Onion And Garlic",
+   "usageInstructions": "Lay's Maxx is perfect for any occasion. From the quick everyday snack to the impromptu get-togethers, it goes well in just any setting. Simply enjoy these crunchy bites on their own or pair them with your favourite dip.",
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd. N1 PepsiCo India Holdings Pvt. Ltd. Village channo",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maxx Sizzling Barbeque Potato Chips",
@@ -756,7 +949,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40202438_6-lays-maxx-potato-chips-sizzling-barbeque-crunchy.jpg"
-    }
+    },
+    "barcode": "8901491001144"
    },
    {
     "title": "15g",
@@ -793,7 +987,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40202438-8_3-lays-maxx-potato-chips-sizzling-barbeque-crunchy.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the bold taste of Lay’s Maxx Sizzling Barbeque! Exquisite barbeque seasoning on an extremely crunchy potato chip: this is what dreams are made of! Lay’s Maxx potato chips have a unique shape that enhance crunchiness and intensify flavour. Topped with sizzling barbeque flavour, this snack is a strong contender for 1st place on your favourite snacks list! Lay’s Maxx is made with specially selected potatoes of the highest quality. Every chip contains delectable flavours that keep you coming back for more. What are you waiting for? Grab a bag of the Lay's Maxx Sizzling Barbeque to share with your friends or to simply enjoy on your own.\nKey benefits:\nSizzling Barbeque flavour MAXX ridges, MAXX crunch and MAXX taste\nPerfect for binge-watching your favourite show or as late-night snack\n100% vegetarian\nMade with the finest quality of spices and vegetable oils",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein, Rice Bran Oil), Seasoning (Sugar, Iodised Salt, Dextrose, ~spices & Condiments, Maltodextrin, Hydrolysed Vegetable Protein, Flavour (Natural And Nature Identical Flavouring Substances), Anticaking Agent (551), Flavour Enhancers (627, 631), Edible Vegetable Oil (Sunflower)). As Flavouring Agent. ~contains Onion And Garlic",
+   "manufacturerName": "MFD BY PepsiCo India Holdings Pvt. Ltd. N1 PepsiCo India Holdings Pvt. Ltd. Village channo",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Maxx Peppery Cheddar Potato Chips",
@@ -831,7 +1032,21 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40227205-6_3-lays-maxx-potato-chips-peppery-cheddar.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made with the epic combination of maxx flavours, maxx ridges and maxx crunch, Lay’s Maxx is the perfect way to maxx any evening with your buddies!\nFrom the makers of India’s favourite potato chips, comes Lay’s Maxx! Right from the first bite till the last, Maxx gives your taste buds a power packed punch of flavours. Every chip is loaded with intense flavours, deep ridges and a macho crunch. So get ready for the most maxxed out chip in town!",
+   "ingredients": "Potato , Edible vegetable Oil ( palmolein oil , Rice Bran Oil), Sugar,Iodised Salt, *Spices & Condiments ( Onion , Garlic, Black pepper, Turmeric), Milk Solids , Cheese Powder, (0.1%), Emulsifier, (414), Flavour enhancers (627 & 631), Dextrose",
+   "nutritionalInfo": {
+    "Energy": "546 Kcal",
+    "Protein": "7.4 g",
+    "Carbohydrates": "52.5 g",
+    "Of Which Sugars": "2.3 g",
+    "Fat": "34 g"
+   },
+   "manufacturerName": "PepsiCo holdings pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014064000435"
+  }
  },
  {
   "title": "Wafer Chips Himalayan Pink Salt",
@@ -847,7 +1062,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40355960_1-lays-himalayan-pink-salt-wafer-chips.jpg"
-    }
+    },
+    "barcode": "8901491100113"
    }
   ],
   "images": [
@@ -866,7 +1082,20 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355960-5_1-lays-himalayan-pink-salt-wafer-chips.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Discover the perfect crunch with the all-new Lay’s Wafer Style Chips – Himalayan Pink Salt. Crafted for those who love their chips crispy, thin, and lightly seasoned, these wafer-style chips deliver a unique snacking experience like never before. Made from carefully selected potatoes and sprinkled with the delicate taste of Himalayan pink salt, every bite offers a satisfying crunch with a subtle, gourmet twist.",
+   "ingredients": "Potato,\nEdible Vegetable Oil (Palmolein, Rice Bran Oil), Himalayan Pink Salt (1.0%)",
+   "nutritionalInfo": {
+    "Energy": "553",
+    "Protein": "6.7",
+    "Fat": "13.2 g",
+    "Sodium": "493"
+   },
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd",
+   "fssaiLicense": "10012011000168",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wafer Chips Red Chilli",
@@ -928,7 +1157,25 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40236520-8_1-lays-ignore-wafer-style-potato-chips-sundried-chilli-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Presenting the new Lays Wafer Style Red Chilli Flavour Wafer Chips, offering a thin and crispy snacking experience. Made from selectively picked potatoes, these chips are thinly sliced and cooked to crunchy perfection. With a smooth texture and a bold red chilli flavour, they provide a delightful and spicy twist. Enjoy the irresistible crunch and unique taste of these expertly crafted potato chips, perfect for any occasion.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein, Sunflower Oil), Seasoning (Spices and Condiments, Maltodextrin, Iodised Salt, Flavours (Natural and Nature Identical Flavouring Substances), Refined Wheat Flour (Maida), Black Salt, Hydrolysed Vegetable Protein, Tomato Powder, Acidity Regulators (INS 330, INS 296), Yeast Extract, Salt Substitute (Potassium Chloride), Edible Starch, Flavour Enhancers (INS 627, INS 631)).\n*As flavouring agent. Contains Onion and Garlic.\nAllergen Advice: Contains Wheat, Soy and Sulphite.",
+   "nutritionalInfo": {
+    "Energy": "543 kcal",
+    "Protein": "6.9 g",
+    "Carbohydrate": "53.6 g",
+    "Total Sugars": "1.6 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "33.4 g",
+    "Saturated Fat": "14.9 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "475 mg"
+   },
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wafer Chips Salt with Pepper",
@@ -969,7 +1216,27 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/294273_16-lays-wafer-style-classic-salted.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy a light chip and balanced flavours with Lays Wafer Style Salt with Pepper! Indulge in thinly sliced wafer-style chips topped with vibrant Salt with Pepper seasoning for an unforgettable munching experience. These chips are delicious and are guaranteed to bring a smile to your face. Lays Wafer Style Salt with Pepper potato snack chips are your perfect companion in any setting. Enjoy them alone or with friends as a meal accompaniment or during your light-hearted conversations.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein, Sunflower Oil), Seasoning (Maltodextrin, lodised Salt, Spices & Condiments, Sugar, Flavour (Natural and Nature Identical Flavouring Substances), Anticaking Agent (551), Flavour Enhancers (627, 631), Edible Vegetable Oil (Palm))",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "539 kcal",
+    "Protein": "6.5g",
+    "Carbohydrate": "53.2g",
+    "Total Sugars": "1.3g",
+    "Added Sugars": "0.6g",
+    "Total Fat": "33.3g",
+    "Saturated Fat": "14.9g",
+    "Trans Fat": "0.1g",
+    "Sodium": "681 mg"
+   },
+   "manufacturerName": "Pepsico India Holdings Pvt. Ltd",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wafer Style Tangy Treat Masala",
@@ -1007,7 +1274,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40236521-6_3-lays-ignore-wafer-style-potato-chips-tangy-treat-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Enjoy a light chip and balanced flavours with Lay's Wafer Style Tangy Treat! Indulge in thinly sliced wafer style chips, topped with vibrant Tangy Treat seasoning for an unforgettable munching experience. These chips are just exquisite and are guaranteed to bring a smile to your face. Lay's Wafer Style Tangy Treat potato snack chips are your perfect companion in just any setting. Enjoy them alone or with friends, as a meal accompaniment, or during your light hearted conversations.\nKey Benefits:\nTangy Treat flavour\nHigh-quality, thinly sliced potatoes\nPerfect for watching movies and for snack breaks\nGrab and go snack",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein, Rice Bran Oil), Seasoning (Sugar, Iodized Salt, Spices & Condiments, Acidity Regulator (330, 334), Flavour (Natural And Nature Identical Flavouring Substances), Milk Solids, Anticaking Agent (551). As Flavouring Agent.",
+   "manufacturerName": "PepsiCo India Holdings Pvt. Ltd.N1 PepsiCo India Holdings Pvt. Ltd. Village channo",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014064000435"
+  }
  },
  {
   "title": "Wavy Cream & Onion Potato Chips",
@@ -1054,7 +1328,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314809_1-lays-wavy-potato-chips-cream-onion-flavour.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Taste the unbeatable blend of delectable Indian spices with the best quality potatoes. From the everyday snack to the impromptu get-togethers, Lay’s chips are the perfect addition to any occasion. Whether it’s party time or family time, everyone loves gathering around the chip bowl. About the brand: Lay’s, the world’s largest and favourite snack food brand, has steadily established itself as an indispensable part of India’s snacking culture since its launch in 1995. With its irresistible taste, and international and Indian flavours, Lay’s has established itself as a youth brand and continues to grow in the hearts and minds of its consumers. Lay’s is made with India’s best-quality fresh potatoes, simply sliced and cooked in edible vegetable oils, and then seasoned with delicious flavours.",
+   "ingredients": "Potato, Edible Vegetable Oil Palmolein Oil), 'Seasoning (Sugar, lodised Salt, Milk Solids, Spices and condiments, Maltodextrin, Flavour (Natural and natural identical Flavouring Substances), Cheese Powder, Hydrolysed Vegetable Protein, Flavour Enhancers (627, 631), Edible Vegetable Oil Palm, Coconut, Anticaking Agent (551)).*As flavouring agent. \"Contains Onion ALLERGEN ADVICE: Contains Soy and milk. May Contain Sulphite",
+   "nutritionalInfo": {
+    "Energy": "537 kcal",
+    "Protein": "6.7 g",
+    "Carbohydrate": "53 g",
+    "Total Sugars": "3.4 g",
+    "Added Sugar": "2.0 g",
+    "Total Fat": "33.1 g",
+    "Saturated Fat": "14.9 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "643 mg"
+   },
+   "manufacturerName": "PepsiCo India Holding PVT. LTD. PO Box 27",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Wavy Magic Masala Potato Chips",
@@ -1089,7 +1380,24 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40314807-5_1-lays-wavy-potato-chips-magic-masala.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Taste the unbeatable blend of delectable Indian spices with the best quality potatoes. From the everyday snack to the impromptu get-togethers, Lay’s chips are the perfect addition to any occasion. Whether it’s party time or family time, everyone loves gathering around the chip bowl. About the brand: Lay’s, the world’s largest and favourite snack food brand, has steadily established itself as an indispensable part of India’s snacking culture since its launch in 1995. With its irresistible taste, international and Indian flavours, Lay’s has established itself as a youth brand and continues to grow in the hearts and minds of its consumers. Lay’s is made with India’s best-quality fresh potatoes, simply sliced and cooked in edible vegetable oils, and then seasoned with delicious flavours.",
+   "ingredients": "Potato, Edible Vegetable Oil (Palmolein Oil), *Seasoning ( Spices & Condiments, lodised Salt, Maltodextrin, Black Salt, Sugar, Tomato Powder, Acidity Regulators (330, 296,334), Flavour (Natural and Nature Identical Flavouring Substances), Anticaking Agent (551), Color (160c)).*As flavouring agent. \"Contains Onion and Garlic",
+   "nutritionalInfo": {
+    "Energy": "539 kcal",
+    "Protein": "6.9 g",
+    "Carbohydrate": "53.4 g",
+    "Total Sugars": "2.5 g",
+    "Added Sugar": "0.2 g",
+    "Total Fat": "33.1 g",
+    "Saturated Fat": "14.9 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "826 mg"
+   },
+   "manufacturerName": "PepsiCo India Holding PVT. LTD. PO Box 27",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Shapez Heartiez Masala",
@@ -1121,7 +1429,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324277-4_2-lays-shapez-heartiez-masala-flavour-namkeen.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Presenting Lay’s Shapez Heartz Masala – Where irresistible flavors meet melt-in- mouth crunchiness to fill your heart with joy in every bite.\nGet ready to spice up your snack time with Lay's Shapez Heartiez Masala flavor. Each heart-shaped piece is packed with a burst of irresistible masala flavour and a delightful crunch that melts in your mouth. The rich blend of spices and condiments offers a unique taste sensation that makes every bite a joy-filled experience. Despite the complex mix of ingredients, the spotlight is on the enchanting masala flavour and the perfect crunch that it delivers. Lay's Shapez Heartiez Masala isn't just a snack, it's a fun and spicy twist to your regular snack time, filling your heart with joy in every bite.",
+   "ingredients": "Edible Vegetable Ol Palmolein), Refined Wheat Flour (Maida), Edible Starch, *Seasoning (Maltociextrin, ~Spices & Condiments, lodised Salt, Sugar, Natural and Nature Identical Flavouring Substances, Non-dairy Creamer, Milk Solids, Flavour Enhancer (635), Anticaking Agents (551, 341i), Edible Vegetable Oils (Palm, Sunflower), Acidity Regulator (330), Cheese Powder), Dehydrated Vegetable (Potato Flakes) (6.4%), Corn Flour, Rice Flour, lodised Salt, Emulsifiers (466, 322), Firming Agent (509), Anticaking Agent (1701), Acidity Regulator (330).",
+   "nutritionalInfo": {
+    "Energy": "529 kcal",
+    "Protein": "4.2 g",
+    "Carbohydrate": "61 g",
+    "Total Sugars": "6.5 g",
+    "Added Sugars": "1 g",
+    "Total Fat": "29.8 g",
+    "Saturated Fat": "13.4 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "839 mg"
+   },
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "PepsiCo India Pvt. Ltd. P.O. Box 27",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Shapez Heartiez Caramel",
@@ -1153,7 +1480,26 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324278-4_2-lays-shapez-heartiez-caramel-flavour-namkeen.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Presenting Lay’s Shapez Heartz caramel – Where irresistible flavors meet melt-in- mouth crunchiness to fill your heart with joy in every bite. Introducing Lay's Shapez Heartiez in a delightful caramel flavour, a perfect combination of tantalising taste and satisfying crunch. This snack is more than just a treat, it's an experience that fills your heart with joy with every bite. The irresistible caramel flavor is expertly blended into the heart-shaped namkeen, offering a unique taste sensation. Despite its intricate mix of ingredients, the focus remains on the incredible flavour and texture. Lay's Shapez Heartiez in caramel is not just a snack, it's a celebration of flavour that brings a delightful twist to your snacking moments.",
+   "ingredients": "Edible Vegetable Oil (Palmolein), Refined Wheat Flour (Maida), Edible Starch, *Caramel Seasoning (Sugar, Natural & Nature Identical Flavouring Substances, Fructose, Cocoa Powder, lodised Salt, Anticaking Agents (551, 341iii), Spice Extract, Yeast Extract), Dehydrated Vegetable (Potato Flakes) (6.4%), Corn Flour, Rice Flour, lodised Salt, Emulsifiers (466, 322), Firming Agent (509), Anticaking Agent (170i), Acidity Regulator (330).",
+   "nutritionalInfo": {
+    "Energy": "534 kcal",
+    "Protein": "3.9 g",
+    "Carbohydrate": "62.6 g",
+    "Total Sugars": "12.1 g",
+    "Added Sugars": "6.9 g",
+    "Total Fat": "29.8 g",
+    "Saturated Fat": "13.4 g",
+    "Trans Fat": "0.1 g",
+    "Sodium": "334 mg"
+   },
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "PepsiCo India Pvt. Ltd. P.O. Box 27",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Stax Original",
@@ -1188,7 +1534,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203196-5_1-lays-ignore-stax-original.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Nothing stacks up to the timeless taste of Lay's Stax original potato crisps. This crunchy potato crisp gives you the full flavor that you have been looking for. Your taste buds will thank you.\nFresh and crisp fried potatoes that are evenly cut and do not waste any space. The unique, mouthwatering flavour provides an experience that'd surely surpass any previous experience with eating potato chips. The packaging itself describes the flavour perfectly. The shape of the product is designed specifically in order to not waste any space. Which means that one can fit more potato chips into the container. Along with its easy accessibility and the fact that the design of this product prevents the potato chips from being damaged too easily. Any excess consumption provides extra deposits of triglycerides and lipids which provide natural insulation to cold to yourself.",
+   "ingredients": "Dried Potatoes, Vegetable Oil (cottonseed, Sunflower, And/or Corn Oil), Unmodified Potatoe Starch, Rice Flower, And Less Than 2 Percent Of The Following: Mono-and Diglycerides, Salt, Sugar, Dextrose And Soy Lecithin. Contains A Soy Ingredient.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Frito-Lay",
+   "fssaiLicense": "10014022003359",
+   "countryOfOrigin": "Mexico"
+  }
  },
  {
   "title": "Stax Cheddar",
@@ -1223,7 +1577,15 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203193-5_1-lays-ignore-stax-cheddar-flavoured.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Lay's Stax Cheddar flavored potato crisps are the ultimate way to unwind. They deliver a hearty crunch that will be sure to put a smile on your face. Go ahead and make your day.\nFresh and crisp fried potatoes that are evenly cut and do not waste any space. The unique, mouthwatering flavour provides an experience that completely surpasses any previous experience with eating potato chips. The packaging itself describes the flavour perfectly. The shape of the product is designed specifically in order to not waste any space. Which means that one can fit more potato chips into the container. Along with its easy accessibility and the fact that the design of this product prevents the potato chips from being damaged too easily. Any excess consumption provides extra deposits of triglycerides and lipids which provide natural insulation to cold to yourself.",
+   "ingredients": "Dried Potatoes, Vegetable Oil (cottonseed, Sunflower, And/or Corn Oil), Unmodified Potatoe Starch, Rice Flour, And Less Than 2 Percent Of The Following: Salt, Sugar, Maltodextrin (make From Corn), Cheddar Cheese (Milk, Cheese Cultures, Salt, Enzymes, Mono- And Diglycerides, Dextrose And Soy Lecithin, Whey Protein Concentrate, Whey, Monosodium Glutamate, Onion Powder, Corn Syrup Solids, Buttermilk, Citric Acid, Natural And Artificial Flavors, Artificial Color (Yellow 5 Lake, Yellow 6 Lake, Yellow 6, Yellow 5), Lactic Acid, Spice, Lactose, Sodium Caseinate, Skim Milk, Disodium Inosinate, And Disodium Guanylate. Contains Milk And Soy Ingredients.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Frito-Lay",
+   "fssaiLicense": "10014022003359",
+   "countryOfOrigin": "Mexico"
+  }
  },
  {
   "title": "Stax Sour Cream & Onion",
@@ -1258,6 +1620,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203194-5_1-lays-ignore-stax-sour-cream-and-onion.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Looking for a creamy, zesty delight? You've come to the right spot. Lays Stax Sour Cream & Onion naturally and artificially flavored potato crisps are the perfect snack when you want to take time out.\nFresh and crisp fried potatoes that are evenly cut and do not waste any space. The unique, mouthwatering flavour provides an experience that'd surely surpass any previous experience with eating potato chips. The packaging itself describes the flavour perfectly. The shape of the product is designed specifically in order to not waste any space. Which means that one can fit more potato chips into the container. Along with its easy accessibility and the fact that the design of this product prevents the potato chips from being damaged too easily. Any excess consumption provides extra deposits of triglycerides and lipids which provide natural insulation to cold to yourself.",
+   "ingredients": "Dried Potatoes, Vegetable Oil (Cottonseed, Sunflower, and/or Corn Oil), Unmodified Potato Starch, Rice Flour, and less than 2% of the following: Sugar, Salt, Mono-And Diglycerides, Dextrose, Skim Milk, Soy Lecithin, Onion Powder, Whey, Monosodium Glutamate, Corn Starch, Sour Cream (Cultured Cream, Skim Milk), Lactose, Maltodextrin (made from Corn), Natural and Artificial Flavor, Malic Acid, Citric Acid, Cheddar Cheese (Milk, Cheese Cultures, Salt, Enzymes), Corn Syrup Solids, Buttermilk, Artificial Color (Yellow 5 Lake, Blue 1, Red 40), Disodium Inosinate, and Disodium Guanylate. Contains Milk and Soy Ingredients.",
+   "usageInstructions": "Ready to eat.",
+   "manufacturerName": "Frito-Lay",
+   "fssaiLicense": "10014022003359",
+   "countryOfOrigin": "Mexico"
+  }
  }
 ]
