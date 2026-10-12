@@ -1,0 +1,2475 @@
+[
+ {
+  "title": "Fine Besan",
+  "handle": "fine-besan",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289_7-tata-sampann-100-chana-dal-fine-besan.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "36",
+    "compare_at_price": "36",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124987_6-tata-sampann-besan-fine.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005214_10-tata-sampann-100-chana-dalfine-besan.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289_7-tata-sampann-100-chana-dal-fine-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289-2_4-tata-sampann-100-chana-dal-fine-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289-3_4-tata-sampann-100-chana-dal-fine-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289-4_4-tata-sampann-100-chana-dal-fine-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289-5_4-tata-sampann-100-chana-dal-fine-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289-6_4-tata-sampann-100-chana-dal-fine-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289-7_3-tata-sampann-100-chana-dal-fine-besan.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002289-8_2-tata-sampann-100-chana-dal-fine-besan.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Toor Dal",
+  "handle": "unpolished-toor-dal",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291_16-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "118",
+    "compare_at_price": "118",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000292_11-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "398",
+    "compare_at_price": "398",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289045_7-tata-sampann-unpolished-toorarhar-dal-rich-in-protein-loaded-with-nutrients.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "995",
+    "compare_at_price": "995",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289046_6-tata-sampann-unpolished-toorarhar-dal-rich-in-protein-loaded-with-nutrients.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291_16-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291-2_18-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291-3_9-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291-4_9-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291-5_16-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291-6_8-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291-7_7-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000291-8_7-tata-sampann-unpolished-toor-dalarhar-dal.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Chana Dal",
+  "handle": "unpolished-chana-dal",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "161",
+    "compare_at_price": "161",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290_12-tata-sampann-unpolished-chana-dal.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "74",
+    "compare_at_price": "74",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005212_9-tata-sampann-unpolished-chana-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290_12-tata-sampann-unpolished-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290-2_14-tata-sampann-unpolished-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290-3_6-tata-sampann-unpolished-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290-4_6-tata-sampann-unpolished-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290-5_4-tata-sampann-unpolished-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290-6_4-tata-sampann-unpolished-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290-7_4-tata-sampann-unpolished-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000290-8_3-tata-sampann-unpolished-chana-dal.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Moong Dal",
+  "handle": "unpolished-moong-dal",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "212",
+    "compare_at_price": "212",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287_12-tata-sampann-unpolished-moong-dal.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "106",
+    "compare_at_price": "106",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007756_8-tata-sampann-unpolished-moong-dal-split.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287_12-tata-sampann-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287-2_2-tata-sampann-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287-3_1-tata-sampann-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287-4_1-tata-sampann-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287-5_1-tata-sampann-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287-6_1-tata-sampann-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287-7_1-tata-sampann-unpolished-moong-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002287-8_1-tata-sampann-unpolished-moong-dal.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Moong Dal Chilka",
+  "handle": "unpolished-moong-dal-chilka",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "97",
+    "compare_at_price": "97",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211_9-tata-sampann-unpolished-moong-dal-chilka.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211_9-tata-sampann-unpolished-moong-dal-chilka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211-2_2-tata-sampann-unpolished-moong-dal-chilka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211-3_1-tata-sampann-unpolished-moong-dal-chilka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211-4_1-tata-sampann-unpolished-moong-dal-chilka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211-5_1-tata-sampann-unpolished-moong-dal-chilka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211-6_1-tata-sampann-unpolished-moong-dal-chilka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211-7_1-tata-sampann-unpolished-moong-dal-chilka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005211-8_1-tata-sampann-unpolished-moong-dal-chilka.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Green Moong Whole",
+  "handle": "unpolished-green-moong-whole",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "93",
+    "compare_at_price": "93",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213_9-tata-sampann-moong-whole.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213_9-tata-sampann-moong-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213-2_6-tata-sampann-moong-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213-3_5-tata-sampann-moong-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213-4_5-tata-sampann-moong-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213-5_5-tata-sampann-moong-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213-6_4-tata-sampann-moong-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213-7_4-tata-sampann-moong-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005213-8_3-tata-sampann-moong-whole.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Masoor Dal",
+  "handle": "unpolished-masoor-dal",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "87",
+    "compare_at_price": "87",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755_7-tata-sampann-unpolished-masoor-dal-split.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755_7-tata-sampann-unpolished-masoor-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755-2_6-tata-sampann-unpolished-masoor-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755-3_5-tata-sampann-unpolished-masoor-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755-4_5-tata-sampann-unpolished-masoor-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755-5_5-tata-sampann-unpolished-masoor-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755-6_4-tata-sampann-unpolished-masoor-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755-7_4-tata-sampann-unpolished-masoor-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007755-8_3-tata-sampann-unpolished-masoor-dal-split.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Masoor Whole",
+  "handle": "unpolished-masoor-whole",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286_11-tata-sampann-unpolished-masoor-dal-whole.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "76",
+    "compare_at_price": "76",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195136_8-tata-sampann-unpolished-masoor-dal-whole.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286_11-tata-sampann-unpolished-masoor-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286-2_2-tata-sampann-unpolished-masoor-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286-3_1-tata-sampann-unpolished-masoor-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286-4_1-tata-sampann-unpolished-masoor-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286-5_1-tata-sampann-unpolished-masoor-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286-6_1-tata-sampann-unpolished-masoor-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286-7_1-tata-sampann-unpolished-masoor-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30002286-8_1-tata-sampann-unpolished-masoor-dal-whole.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Urad Dal",
+  "handle": "unpolished-urad-dal",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "237",
+    "compare_at_price": "237",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981_8-tata-sampann-unpolished-urad-dal-split.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195139_9-tata-sampann-unpolished-urad-dal-split.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981_8-tata-sampann-unpolished-urad-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981-2_2-tata-sampann-unpolished-urad-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981-3_1-tata-sampann-unpolished-urad-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981-4_1-tata-sampann-unpolished-urad-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981-5_1-tata-sampann-unpolished-urad-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981-6_1-tata-sampann-unpolished-urad-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981-7_1-tata-sampann-unpolished-urad-dal-split.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017981-8_1-tata-sampann-unpolished-urad-dal-split.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Urad Whole",
+  "handle": "unpolished-urad-whole",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "237",
+    "compare_at_price": "237",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976_8-tata-sampann-unpolished-urad-dal-whole.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40017980_9-tata-sampann-unpolished-urad-dal-whole.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976_8-tata-sampann-unpolished-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976-2_2-tata-sampann-unpolished-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976-3_1-tata-sampann-unpolished-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976-4_1-tata-sampann-unpolished-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976-5_1-tata-sampann-unpolished-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976-6_1-tata-sampann-unpolished-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976-7_1-tata-sampann-unpolished-urad-dal-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40017976-8_1-tata-sampann-unpolished-urad-dal-whole.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Kabuli Chana",
+  "handle": "kabuli-chana",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "207",
+    "compare_at_price": "207",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386_11-tata-sampann-unpolished-kabuli-chana.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "104",
+    "compare_at_price": "104",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004672_11-tata-sampann-unpolished-kabuli-chana.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386_11-tata-sampann-unpolished-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386-2_2-tata-sampann-unpolished-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386-3_1-tata-sampann-unpolished-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386-4_1-tata-sampann-unpolished-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386-5_1-tata-sampann-unpolished-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386-6_1-tata-sampann-unpolished-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386-7_1-tata-sampann-unpolished-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40125386-8_1-tata-sampann-unpolished-kabuli-chana.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Kabuli Chana Medium Size",
+  "handle": "unpolished-kabuli-chana-medium-size",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "176",
+    "compare_at_price": "176",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059_7-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40296060_8-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059_7-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059-2_3-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059-3_3-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059-4_3-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059-5_3-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059-6_3-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059-7_3-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296059-8_3-tata-sampann-kabuli-chana-unpolished-medium-size.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Rajma",
+  "handle": "unpolished-rajma",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/403792_18-tata-sampann-unpolished-rajma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403792_18-tata-sampann-unpolished-rajma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403792-2_19-tata-sampann-unpolished-rajma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403792-3_18-tata-sampann-unpolished-rajma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403792-4_18-tata-sampann-unpolished-rajma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403792-5_17-tata-sampann-unpolished-rajma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403792-6_8-tata-sampann-unpolished-rajma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403792-7_8-tata-sampann-unpolished-rajma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403792-8_7-tata-sampann-unpolished-rajma.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Kala Chana",
+  "handle": "unpolished-kala-chana",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "134",
+    "compare_at_price": "134",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/403793_8-tata-sampann-unpolished-kala-chana.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "79",
+    "compare_at_price": "79",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40317524_4-tata-sampann-unpolished-kala-chana.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403793_8-tata-sampann-unpolished-kala-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403793-2_7-tata-sampann-unpolished-kala-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403793-3_6-tata-sampann-unpolished-kala-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403793-4_4-tata-sampann-unpolished-kala-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403793-5_4-tata-sampann-unpolished-kala-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403793-6_4-tata-sampann-unpolished-kala-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403793-7_4-tata-sampann-unpolished-kala-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/403793-8_3-tata-sampann-unpolished-kala-chana.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Safed Matar",
+  "handle": "unpolished-safed-matar",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110_2-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110_2-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110-2_2-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110-3_2-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110-4_2-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110-5_2-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110-6_1-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110-7_1-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354110-8_1-tata-sampann-unpolished-safed-matarwhite-peas.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Unpolished Mix Dal",
+  "handle": "unpolished-mix-dal",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "103",
+    "compare_at_price": "103",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109_2-tata-sampann-unpolished-mix-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109_2-tata-sampann-unpolished-mix-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109-2_2-tata-sampann-unpolished-mix-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109-3_2-tata-sampann-unpolished-mix-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109-4_2-tata-sampann-unpolished-mix-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109-5_2-tata-sampann-unpolished-mix-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109-6_1-tata-sampann-unpolished-mix-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109-7_1-tata-sampann-unpolished-mix-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40354109-8_1-tata-sampann-unpolished-mix-dal.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Organic Toor Dal",
+  "handle": "organic-toor-dal",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "285",
+    "compare_at_price": "285",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309_12-tata-sampann-organic-toor-dal.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156312_11-tata-sampann-organic-toor-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309_12-tata-sampann-organic-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309-2_12-tata-sampann-organic-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309-3_11-tata-sampann-organic-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309-4_10-tata-sampann-organic-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309-5_3-tata-sampann-organic-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309-6_3-tata-sampann-organic-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309-7_3-tata-sampann-organic-toor-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156309-8_2-tata-sampann-organic-toor-dal.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Organic Unpolished Chana Dal",
+  "handle": "organic-unpolished-chana-dal",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "216",
+    "compare_at_price": "216",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310_10-tata-sampann-organic-chana-dal.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "113",
+    "compare_at_price": "113",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156315_10-tata-sampann-organic-chana-dal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310_10-tata-sampann-organic-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310-2_10-tata-sampann-organic-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310-3_10-tata-sampann-organic-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310-4_9-tata-sampann-organic-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310-5_2-tata-sampann-organic-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310-6_2-tata-sampann-organic-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310-7_2-tata-sampann-organic-chana-dal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156310-8_1-tata-sampann-organic-chana-dal.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Organic Unpolished Kabuli Chana",
+  "handle": "organic-unpolished-kabuli-chana",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320_12-tata-sampann-organic-kabuli-chana.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320_12-tata-sampann-organic-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320-2_12-tata-sampann-organic-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320-3_12-tata-sampann-organic-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320-4_9-tata-sampann-organic-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320-5_2-tata-sampann-organic-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320-6_2-tata-sampann-organic-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320-7_2-tata-sampann-organic-kabuli-chana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156320-8_1-tata-sampann-organic-kabuli-chana.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Organic Unpolished Urad Whole",
+  "handle": "organic-unpolished-urad-whole",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "143",
+    "compare_at_price": "143",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316_13-tata-sampann-organic-urad-whole.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316_13-tata-sampann-organic-urad-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316-2_13-tata-sampann-organic-urad-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316-3_13-tata-sampann-organic-urad-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316-4_10-tata-sampann-organic-urad-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316-5_3-tata-sampann-organic-urad-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316-6_3-tata-sampann-organic-urad-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316-7_3-tata-sampann-organic-urad-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156316-8_2-tata-sampann-organic-urad-whole.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Organic Rajma",
+  "handle": "organic-rajma",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "162",
+    "compare_at_price": "162",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321_13-tata-sampann-organic-rajma-red.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321_13-tata-sampann-organic-rajma-red.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321-2_13-tata-sampann-organic-rajma-red.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321-3_13-tata-sampann-organic-rajma-red.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321-4_10-tata-sampann-organic-rajma-red.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321-5_3-tata-sampann-organic-rajma-red.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321-6_3-tata-sampann-organic-rajma-red.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321-7_3-tata-sampann-organic-rajma-red.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156321-8_2-tata-sampann-organic-rajma-red.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Chilli Powder",
+  "handle": "chilli-powder",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768_10-tata-sampann-chilli-powder.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "116",
+    "compare_at_price": "116",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070771_10-tata-sampann-chilli-powder.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "278",
+    "compare_at_price": "278",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095121_12-tata-sampann-chilli-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768_10-tata-sampann-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768-2_11-tata-sampann-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768-3_11-tata-sampann-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768-4_9-tata-sampann-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768-5_8-tata-sampann-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768-6_8-tata-sampann-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768-7_8-tata-sampann-chilli-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070768-8_8-tata-sampann-chilli-powder.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Kashmiri Chilli Powder",
+  "handle": "kashmiri-chilli-powder",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120_11-tata-sampann-chilli-powder-with-natural-oils.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120_11-tata-sampann-chilli-powder-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120-2_9-tata-sampann-chilli-powder-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120-3_8-tata-sampann-chilli-powder-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120-4_9-tata-sampann-chilli-powder-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120-5_6-tata-sampann-chilli-powder-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120-6_6-tata-sampann-chilli-powder-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120-7_6-tata-sampann-chilli-powder-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40095120-8_6-tata-sampann-chilli-powder-with-natural-oils.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Coriander Powder",
+  "handle": "coriander-powder",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770_10-tata-sampann-coriander-powder.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "92",
+    "compare_at_price": "92",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070759_10-tata-sampann-coriander-powder.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095123_12-tata-sampann-coriander-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770_10-tata-sampann-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770-2_11-tata-sampann-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770-3_9-tata-sampann-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770-4_11-tata-sampann-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770-5_8-tata-sampann-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770-6_8-tata-sampann-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770-7_8-tata-sampann-coriander-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070770-8_8-tata-sampann-coriander-powder.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Turmeric Powder",
+  "handle": "turmeric-powder",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758_19-tata-sampann-turmeric-powder.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070769_16-tata-sampann-turmeric-powder.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095122_19-tata-sampann-turmeric-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758_19-tata-sampann-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758-2_18-tata-sampann-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758-3_17-tata-sampann-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758-4_15-tata-sampann-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758-5_13-tata-sampann-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758-6_13-tata-sampann-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758-7_13-tata-sampann-turmeric-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070758-8_13-tata-sampann-turmeric-powder.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Compounded Hing Powder",
+  "handle": "compounded-hing-powder",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327715_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714-2_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714-3_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714-4_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714-5_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714-6_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714-7_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327714-8_2-tata-sampann-south-hing-compounded-asafoetida-powder.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Garam Masala Powder",
+  "handle": "garam-masala-powder",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "84",
+    "compare_at_price": "84",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774_14-tata-sampann-garam-masala-with-natural-oils.jpg"
+    }
+   },
+   {
+    "title": "45g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40095111_8-tata-sampann-garam-masala.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774_14-tata-sampann-garam-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774-2_17-tata-sampann-garam-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774-3_16-tata-sampann-garam-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774-4_16-tata-sampann-garam-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774-5_16-tata-sampann-garam-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774-6_16-tata-sampann-garam-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774-7_7-tata-sampann-garam-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070774-8_7-tata-sampann-garam-masala-with-natural-oils.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Kitchen King Masala",
+  "handle": "kitchen-king-masala",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773_11-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+    }
+   },
+   {
+    "title": "14g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40300833_1-tata-sampann-tata-sampann-kitchen-king-masala-with-natural-oils-crafted-by-chef-sanjeev-kapoor-14g.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773_11-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773-2_14-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773-3_14-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773-4_14-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773-5_14-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773-6_14-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773-7_5-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40070773-8_5-tata-sampann-kitchen-king-masala-with-natural-oils.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cumin Seeds (Jeera)",
+  "handle": "cumin-seeds-jeera",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334089_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088-2_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088-3_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088-4_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088-5_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088-6_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088-7_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334088-8_3-tata-sampann-whole-spices-cumin-seeds.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Coriander Seeds Whole",
+  "handle": "coriander-seeds-whole",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334093_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092-2_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092-3_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092-4_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092-5_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092-6_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092-7_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334092-8_3-tata-sampann-whole-spices-coriander-seeds.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Fennel Seeds",
+  "handle": "fennel-seeds",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "152",
+    "compare_at_price": "152",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40334091_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090-2_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090-3_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090-4_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090-5_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090-6_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090-7_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40334090-8_3-tata-sampann-whole-spices-fennel-seeds.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Cardamom Whole",
+  "handle": "cardamom-whole",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771_1-tata-sampann-cardamom-whole.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771_1-tata-sampann-cardamom-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771-2_1-tata-sampann-cardamom-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771-3_1-tata-sampann-cardamom-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771-4_1-tata-sampann-cardamom-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771-5_1-tata-sampann-cardamom-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771-6_1-tata-sampann-cardamom-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771-7_1-tata-sampann-cardamom-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355771-8_1-tata-sampann-cardamom-whole.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Golden Saffron",
+  "handle": "golden-saffron",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "0.5g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533_1-tata-sampann-golden-saffron.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533_1-tata-sampann-golden-saffron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533-2_1-tata-sampann-golden-saffron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533-3_1-tata-sampann-golden-saffron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533-4_1-tata-sampann-golden-saffron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533-5_1-tata-sampann-golden-saffron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533-6_1-tata-sampann-golden-saffron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533-7_1-tata-sampann-golden-saffron.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40366533-8_1-tata-sampann-golden-saffron.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Thick Poha",
+  "handle": "thick-poha",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083_11-tata-sampann-thick-poha.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "113",
+    "compare_at_price": "113",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220133_7-tata-sampann-white-thick-poha-high-in-fibre.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083_11-tata-sampann-thick-poha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083-2_11-tata-sampann-thick-poha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083-3_10-tata-sampann-thick-poha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083-4_10-tata-sampann-thick-poha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083-5_10-tata-sampann-thick-poha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083-6_6-tata-sampann-thick-poha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083-7_6-tata-sampann-thick-poha.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178083-8_6-tata-sampann-thick-poha.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Thin White Poha",
+  "handle": "thin-white-poha",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853_6-tata-sampann-white-poha-thin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853_6-tata-sampann-white-poha-thin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853-2_2-tata-sampann-white-poha-thin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853-3_1-tata-sampann-white-poha-thin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853-4_1-tata-sampann-white-poha-thin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853-5_1-tata-sampann-white-poha-thin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853-6_1-tata-sampann-white-poha-thin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853-7_1-tata-sampann-white-poha-thin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203853-8_1-tata-sampann-white-poha-thin.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Red Rice Poha",
+  "handle": "red-rice-poha",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "64",
+    "compare_at_price": "64",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082_6-tata-sampann-red-rice-poha-thick.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082_6-tata-sampann-red-rice-poha-thick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082-2_1-tata-sampann-red-rice-poha-thick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082-3_1-tata-sampann-red-rice-poha-thick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082-4_1-tata-sampann-red-rice-poha-thick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082-5_1-tata-sampann-red-rice-poha-thick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082-6_1-tata-sampann-red-rice-poha-thick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082-7_1-tata-sampann-red-rice-poha-thick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40178082-8_1-tata-sampann-red-rice-poha-thick.jpg"
+   }
+  ]
+ },
+ {
+  "title": "California Almonds",
+  "handle": "california-almonds",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615_10-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "675",
+    "compare_at_price": "675",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232836_11-tata-sampann-100-pure-california-almonds-flavourful-deluxe-size.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "1399",
+    "compare_at_price": "1399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40274476_11-tata-sampann-100-pure-premium-california-almonds-whole-protein-rich.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615_10-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615-2_3-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615-3_2-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615-4_2-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615-5_2-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615-6_2-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615-7_2-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40309615-8_2-tata-sampann-100-pure-california-almonds-whole-premium-quality-badam-giri.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Whole Cashews",
+  "handle": "whole-cashews",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "245",
+    "compare_at_price": "245",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837_11-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "765",
+    "compare_at_price": "765",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232838_11-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "1170",
+    "compare_at_price": "1170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40274477_10-tata-sampann-100-pure-premium-cashews-whole-protein-rich.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837_11-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837-2_2-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837-3_2-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837-4_2-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837-5_2-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837-6_2-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837-7_2-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232837-8_2-tata-sampann-100-pure-premium-cashews-whole-flavourful-deluxe-size.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Roasted & Salted Pistachios",
+  "handle": "roasted-salted-pistachios",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835_15-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "1150",
+    "compare_at_price": "1150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900457766_3-tata-sampann-100-premium-pistachios.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835_15-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835-2_2-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835-3_2-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835-4_2-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835-5_2-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835-6_2-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835-7_2-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232835-8_2-tata-sampann-iranian-pistachios-premium-roasted-salted-flavourful-deluxe-size.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Walnut Kernels",
+  "handle": "walnut-kernels",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "565",
+    "compare_at_price": "565",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414_6-tata-sampann-100-pure-premium-walnuts.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414_6-tata-sampann-100-pure-premium-walnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414-2_5-tata-sampann-100-pure-premium-walnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414-3_5-tata-sampann-100-pure-premium-walnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414-4_5-tata-sampann-100-pure-premium-walnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414-5_4-tata-sampann-100-pure-premium-walnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414-6_4-tata-sampann-100-pure-premium-walnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414-7_4-tata-sampann-100-pure-premium-walnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312414-8_3-tata-sampann-100-pure-premium-walnuts.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Seedless Raisins",
+  "handle": "seedless-raisins",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "103",
+    "compare_at_price": "103",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839_11-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "439",
+    "compare_at_price": "439",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40274478_10-tata-sampann-100-pure-premium-raisins-seedless-long-potassium-rich.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839_11-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839-2_2-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839-3_2-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839-4_2-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839-5_2-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839-6_2-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839-7_2-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232839-8_2-tata-sampann-100-pure-premium-raisins-seedless-long-great-in-taste.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Afghani Black Raisins",
+  "handle": "afghani-black-raisins",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767_5-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767_5-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767-2_5-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767-3_5-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767-4_5-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767-5_5-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767-6_4-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767-7_4-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289767-8_4-tata-sampann-seedless-black-raisins-100-pure-deluxe-size.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Premium Anjeer",
+  "handle": "premium-anjeer",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "445",
+    "compare_at_price": "445",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776_3-tata-sampann-100-afghani-anjeer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776_3-tata-sampann-100-afghani-anjeer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776-2_3-tata-sampann-100-afghani-anjeer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776-3_3-tata-sampann-100-afghani-anjeer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776-4_3-tata-sampann-100-afghani-anjeer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776-5_2-tata-sampann-100-afghani-anjeer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776-6_2-tata-sampann-100-afghani-anjeer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776-7_2-tata-sampann-100-afghani-anjeer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327776-8_2-tata-sampann-100-afghani-anjeer.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Luxe Dry Fruit & Nut Mix",
+  "handle": "luxe-dry-fruit-nut-mix",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "285",
+    "compare_at_price": "285",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399_2-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399_2-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399-2_2-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399-3_2-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399-4_2-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399-5_2-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399-6_1-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399-7_1-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40320399-8_1-tata-sampann-luxe-100-premium-dry-fruit-nut-mix.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Protein 7-in-1 Seed & Nut Mix",
+  "handle": "protein-7-in-1-seed-nut-mix",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "253",
+    "compare_at_price": "253",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357_3-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357_3-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357-2_2-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357-3_2-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357-4_2-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357-5_2-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357-6_2-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357-7_2-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322357-8_2-tata-sampann-protein-7-in-1-seed-nut-mix.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Chia Seeds",
+  "handle": "chia-seeds",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "179",
+    "compare_at_price": "179",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410_7-tata-sampann-100-pure-premium-chia-seeds.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410_7-tata-sampann-100-pure-premium-chia-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410-2_6-tata-sampann-100-pure-premium-chia-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410-3_6-tata-sampann-100-pure-premium-chia-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410-4_6-tata-sampann-100-pure-premium-chia-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410-5_5-tata-sampann-100-pure-premium-chia-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410-6_5-tata-sampann-100-pure-premium-chia-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410-7_5-tata-sampann-100-pure-premium-chia-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312410-8_4-tata-sampann-100-pure-premium-chia-seeds.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Flax Seeds",
+  "handle": "flax-seeds",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411_6-tata-sampann-100-pure-premium-flax-seeds.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411_6-tata-sampann-100-pure-premium-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411-2_5-tata-sampann-100-pure-premium-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411-3_5-tata-sampann-100-pure-premium-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411-4_5-tata-sampann-100-pure-premium-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411-5_4-tata-sampann-100-pure-premium-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411-6_4-tata-sampann-100-pure-premium-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411-7_4-tata-sampann-100-pure-premium-flax-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312411-8_3-tata-sampann-100-pure-premium-flax-seeds.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Pumpkin Seeds",
+  "handle": "pumpkin-seeds",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413_6-tata-sampann-100-premium-pumpkin-seeds.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413_6-tata-sampann-100-premium-pumpkin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413-2_5-tata-sampann-100-premium-pumpkin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413-3_5-tata-sampann-100-premium-pumpkin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413-4_5-tata-sampann-100-premium-pumpkin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413-5_4-tata-sampann-100-premium-pumpkin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413-6_4-tata-sampann-100-premium-pumpkin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413-7_4-tata-sampann-100-premium-pumpkin-seeds.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40312413-8_3-tata-sampann-100-premium-pumpkin-seeds.jpg"
+   }
+  ]
+ },
+ {
+  "title": "High Protein Makhana",
+  "handle": "high-protein-makhana",
+  "vendor": "Tata Sampann",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313337_9-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "495",
+    "compare_at_price": "495",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313338_9-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313337_9-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313337-2_1-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313337-3_1-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313337-4_1-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313337-5_1-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313337-6_1-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313337-7_1-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313338_9-tata-sampann-natural-high-protein-makhana-premium-quality.jpg"
+   }
+  ]
+ }
+]
