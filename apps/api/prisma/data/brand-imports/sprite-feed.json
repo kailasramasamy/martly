@@ -115,7 +115,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/251006-8_3-sprite-soft-drink-lime-flavoured.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Still reading? Impressive. Most people would've already added Sprite to cart and moved on with their life. But since you're here — Sprite is a clear lemon-lime drink, made to quench thirst and refresh you! Its crisp lemon-lime taste feels like stepping out of a cold shower. No drama, just fizz that actually means it. Thand Rakh.",
+   "ingredients": "Sugar, Carbonated Water, Acidity Regulators (330, 331(iii)), Preservative (211), Flavours (Natural Flavoring Substances)",
+   "nutritionalInfo": {
+    "Energy": "49 kcal, 4.9% RDA per serve",
+    "Carbohydrate": "12.2 g",
+    "Total Sugars": "11.7 g",
+    "Added Sugars": "11.7 g",
+    "Total Fat": "0 g, 0% RDA",
+    "Protein": "0 g",
+    "Serving Size": "200 ml",
+    "Number of Servings in Pack": "6.3"
+   },
+   "manufacturerName": "HINDUSTAN COCA-COLA BEVERAGES PVT. LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Zero Sugar Soft Drink",
@@ -166,6 +182,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40052141_2-sprite-soft-drink-zero-sugar-with-natural-lemon-flavour.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sprite Zero brings the same lively, lemon-lime refreshment you love, now with zero sugar to keep you light. Every sip tingles with crisp bubbles and a sparkling, zesty taste — this one's without sugar but doesn't steal away the refreshment. Same Sprite. Zero sugar. Thand Rakh.",
+   "ingredients": "Carbonated Water, Acidity Regulators (330, 331(Iii)), Preservative (211), Sweeteners (960, 955), Flavours (Natural Flavouring Substances)",
+   "manufacturerName": "Hindustan Coca-cola Beverages Pvt. Ltd",
+   "fssaiLicense": "10012022000261",
+   "countryOfOrigin": "India"
+  }
  }
 ]
