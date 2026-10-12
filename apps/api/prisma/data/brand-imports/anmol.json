@@ -1,0 +1,166 @@
+{
+  "brand": "Anmol",
+  "manufacturer": "Anmol Industries Ltd",
+  "feed": "anmol-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/anmol/logo-b0d94299.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#F7B500",
+  "namePrefix": "Anmol ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bakersbix\\ Jeera\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Butter\\ Bake\\ Rich\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Choco\\ Chip\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Hit\\ \\&\\ Run\\ Choco\\ Chip\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Rich\\ \\&\\ Buttery\\ Shortbread\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Dreamlite\\ Salty\\ Butterly\\ Crunch\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Jadoo\\ Spicy\\ Masaledaar\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Snack\\ It\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Khari & Puff"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Maaza\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Romanzo\\ Choco\\ Filled\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Yummy\\ Chocolate\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Yummy\\ Orange\\ Sandwich\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cream Biscuits"
+      ]
+    },
+    {
+      "match": "^Marie\\ Plus\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
+      "match": "^Milk\\ Made\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    },
+    {
+      "match": "^Sugar\\ Free\\ Cream\\ Cracker\\ Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Tru\\ Choice\\ Zero\\ Sugar\\ Cream\\ Cracker$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Yummy\\ Orange\\ Bar\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    }
+  ]
+}
