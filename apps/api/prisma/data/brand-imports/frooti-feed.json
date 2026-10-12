@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/274035_9-frooti-drink-fresh-n-juicy-mango.jpg"
-    }
+    },
+    "barcode": "8902579001360"
    },
    {
     "title": "160ml",
@@ -123,6 +124,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/274035-8_4-frooti-drink-fresh-n-juicy-mango.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Frooti Mango Drink is a refreshing beverage renowned for its delicious mango flavour. Made from real mango pulp, it offers a taste that captures the essence of ripe, juicy mangoes. Perfect for quenching thirst on hot days or enjoying as a fruity treat, Frooti is loved for its natural sweetness and vibrant colour. Packed conveniently in bottles and tetra packs, it's ideal for picnics, lunches, or any time you crave a burst of tropical refreshment. Embrace the taste of summer with Frooti Mango Drink, where each sip brings the goodness of real mangoes straight to your palate. Enjoy all your childhood moments with this sweet mango drink. Each sip takes you on a delicious taste journey, making it memorable for you.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "125ml",
+    "ENERGY (kcal)": "62.9 kcal",
+    "PROTEIN (g)": "0.0 g",
+    "CARBOHYDRATE (g)": "15.7 g",
+    "TOTAL SUGARS (g)": "15.6 g",
+    "ADDED SUGARS (AS SUCROSE) (g)": "14.2 g",
+    "NATURAL FRUIT SUGARS (g)": "1.4 g",
+    "TOTAL FAT (g)": "0.0 g",
+    "SODIUM (mg)": "25.4 mg",
+    "RDA*": "*PERCENT RDA VALUES ARE BASED ON A 2000kcal ENERGY DIET."
+   },
+   "storageInstructions": "Store away from direct sunlight.",
+   "manufacturerName": "Parle Agro Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10018043002353"
+  }
  }
 ]
