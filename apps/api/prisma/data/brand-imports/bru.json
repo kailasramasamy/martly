@@ -1,0 +1,200 @@
+{
+  "brand": "Bru (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "bru-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bru/logo-b9f59bdf.png",
+  "themeColor": "#1E7B34",
+  "themeColorSecondary": "#C8102E",
+  "namePrefix": "Bru ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Bru Gold Green Label Filter Coffee": "Green Label Filter Coffee"
+  },
+  "rules": [
+    {
+      "match": "^Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Instant\\ Coffee\\ Jar$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Rich\\ Aroma\\ Instant\\ Coffee\\ Granules$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Super\\ Strong\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Gold\\ Pure\\ Coffee\\ Freeze\\ Dried$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Edition\\ Pure\\ Coffee\\ Pouch$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Edition\\ Freeze\\ Dried\\ Coffee\\ Assorted\\ Pack$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Freeze\\ Dried\\ Caramel\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Freeze\\ Dried\\ Vanilla\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Caramel\\ Instant\\ Coffee\\ Mix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Vanilla\\ Instant\\ Coffee\\ Mix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Gold\\ Hazelnut\\ Instant\\ Coffee\\ Mix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Southern\\ Trails\\ Instant\\ Coffee\\ Blend$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Green\\ Label\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Select\\ Filter\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Roast\\ \\&\\ Ground\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Instant\\ Coffee\\ Chicory\\ Decoction$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Chicory Blend"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Care\\ Spiced\\ Coffee\\ Mix$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Classic\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Classic\\ Cold\\ Coffee\\ Carton$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Caramel\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Cold\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Cold Coffee Premix"
+      ]
+    }
+  ]
+}
