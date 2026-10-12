@@ -1,0 +1,62 @@
+{
+  "brand": "Popular",
+  "manufacturer": "Popular Appalam",
+  "feed": "popular-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/popular/logo-016296ed.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1E5BA8",
+  "namePrefix": "Popular ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Appalam$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    },
+    {
+      "match": "^Dinner\\ Special\\ Appalam$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    },
+    {
+      "match": "^Mini\\ Special\\ Appalam$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    },
+    {
+      "match": "^Party\\ Special\\ Appalam$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    },
+    {
+      "match": "^Appalam\\ No\\ 1$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    },
+    {
+      "match": "^Super\\ Special\\ Appalam$",
+      "path": [
+        "Grocery & Staples",
+        "Papad & Fryums",
+        "Fryums & Appalam"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+[
+ {
+  "title": "Appalam",
+  "handle": "appalam",
+  "vendor": "Popular",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "145g",
+    "price": "104",
+    "compare_at_price": "104",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008440_1-popular-appalam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008440_1-popular-appalam.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dinner Special Appalam",
+  "handle": "dinner-special-appalam",
+  "vendor": "Popular",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80g",
+    "price": "66",
+    "compare_at_price": "66",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009450_3-popular-appalam-dinner-special.jpg"
+    }
+   },
+   {
+    "title": "220g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40009447_4-popular-appalam-dinner-special.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40009450_3-popular-appalam-dinner-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40009447_4-popular-appalam-dinner-special.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Mini Special Appalam",
+  "handle": "mini-special-appalam",
+  "vendor": "Popular",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "53",
+    "compare_at_price": "53",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000846_3-popular-appalam-mini-special.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000846_3-popular-appalam-mini-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000846-2_2-popular-appalam-mini-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000846-3_1-popular-appalam-mini-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000846-4_1-popular-appalam-mini-special.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Party Special Appalam",
+  "handle": "party-special-appalam",
+  "vendor": "Popular",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008441_3-popular-appalam-party-special.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008441_3-popular-appalam-party-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008441-2_2-popular-appalam-party-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008441-3_2-popular-appalam-party-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008441-4_2-popular-appalam-party-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008441-5_2-popular-appalam-party-special.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008441-6_1-popular-appalam-party-special.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Appalam No 1",
+  "handle": "appalam-no-1",
+  "vendor": "Popular",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80g",
+    "price": "67",
+    "compare_at_price": "67",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000847_2-popular-appalam-no-1.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000847_2-popular-appalam-no-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000847-2_1-popular-appalam-no-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000847-3_1-popular-appalam-no-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000847-4_1-popular-appalam-no-1.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000847-5_1-popular-appalam-no-1.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Super Special Appalam",
+  "handle": "super-special-appalam",
+  "vendor": "Popular",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "225g",
+    "price": "157",
+    "compare_at_price": "157",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40053964_3-popular-super-special-appalam.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053964_3-popular-super-special-appalam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053964-2_2-popular-super-special-appalam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053964-3_2-popular-super-special-appalam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053964-4_2-popular-super-special-appalam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40053964-5_1-popular-super-special-appalam.jpg"
+   }
+  ]
+ }
+]
