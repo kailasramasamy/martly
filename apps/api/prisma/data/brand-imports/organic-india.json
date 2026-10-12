@@ -1,0 +1,289 @@
+{
+  "brand": "Organic India",
+  "manufacturer": "Organic India Pvt Ltd",
+  "feed": "organic-india-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/organic-india/logo-2cc2d472.png",
+  "themeColor": "#129A47",
+  "themeColorSecondary": "#1F1F1F",
+  "namePrefix": "Organic India ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Organic India Toor Dal": "Arhar Dal",
+    "Organic India Tulsi Green Tea": "Tulsi Green Tea Classic"
+  },
+  "rules": [
+    {
+      "match": "^Tulsi\\ Original\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Ginger\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Ginger\\ Turmeric\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Honey\\ Chamomile\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Mulethi\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Moringa\\ Hibiscus\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Detox\\ Kahwa\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Simply\\ Chamomile\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Masala\\ Chai$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Masala Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Green\\ Tea\\ Classic$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Green\\ Tea\\ Lemon\\ \\&\\ Ginger$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Green\\ Tea\\ Pomegranate$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Tulsi\\ Green\\ Tea\\ Ashwagandha$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Araku\\ Instant\\ Coffee$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Chyawanprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Amla\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Moringa\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Wheat\\ Grass\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Sat\\ Isabgol\\ Psyllium\\ Husk$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Sat\\ Isabgol\\ Orange\\ Pre\\ \\&\\ Probiotic\\ Fibre$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Multi\\ Floral\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Ashwagandha\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Brahmi\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Saffron\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Organic Ghee"
+      ]
+    },
+    {
+      "match": "^Virgin\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Arhar\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Toor Dal (Arhar)"
+      ]
+    },
+    {
+      "match": "^Kabuli\\ Chana$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chole (Kabuli Chana)"
+      ]
+    },
+    {
+      "match": "^Brown\\ Chana$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Mixed Pulses"
+      ]
+    },
+    {
+      "match": "^Urad\\ Whole\\ Black$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Pink\\ Rock\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Stevia\\ Natural\\ Sweetener$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Sugar-Free & Diet Foods"
+      ]
+    },
+    {
+      "match": "^Apple\\ Cider\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    }
+  ]
+}
