@@ -7,14 +7,21 @@ import type { UnitType } from "../../generated/prisma/index.js";
 export interface ShopifyVariant {
   title: string; price: string; compare_at_price: string | null; available: boolean; estimated?: boolean;
   featured_image?: { src: string } | null;
+  barcode?: string; // EAN-13 from the product page, when it gives a real one
+}
+// Product-page facts (hand-built feeds take them from BigBasket's About / Ingredients / Nutrition / Other info tabs)
+export interface ProductDetails {
+  description?: string; ingredients?: string; nutritionalInfo?: Record<string, string>; storageInstructions?: string;
+  shelfLifeDays?: number; manufacturerName?: string; fssaiLicense?: string; countryOfOrigin?: string;
+  usageInstructions?: string; dangerWarnings?: string;
 }
 export interface ShopifyProduct {
   title: string; handle: string; vendor: string; product_type: string; body_html: string;
-  variants: ShopifyVariant[]; images: { src: string }[];
+  variants: ShopifyVariant[]; images: { src: string }[]; details?: ProductDetails;
 }
 
 export interface PackVariant {
-  name: string; unitType: UnitType; unitValue: number;
+  name: string; unitType: UnitType; unitValue: number; barcode?: string;
   mrp: number; onlinePrice: number; available: boolean; note?: string; image?: string;
   // A multipack's single-pack size: the multipack is dropped when that single pack is sold too
   single?: string;
@@ -54,7 +61,7 @@ export function toPackVariant(v: ShopifyVariant, titlePackOf: number, bogo = fal
   // No compare-at price means the item isn't discounted: it sells at MRP
   const base = {
     mrp: Number(v.compare_at_price ?? v.price) / bundle, onlinePrice: Number(v.price) / bundle,
-    available: v.available, image: v.featured_image?.src,
+    available: v.available, image: v.featured_image?.src, barcode: v.barcode,
   };
   if (multipack > 1 && bundle === 1) {
     return { ...base, name: `${multipack} x ${qty}${unit}`, unitType, unitValue: qty * multipack, single: `${qty}${unit}` };

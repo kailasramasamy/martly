@@ -22,7 +22,7 @@ import { PRODUCT_TYPE, isFoodPath, resolveSubcategory, slugify, type TaxonomyPat
 import { uploadImage, transparentLogoPng } from "./lib/media.js";
 import {
   fetchShopifyProducts, toPackVariant, titlePackOf, isBogoTitle, cleanTitle, plainDescription,
-  type ShopifyProduct, type PackVariant,
+  type ShopifyProduct, type PackVariant, type ProductDetails,
 } from "./lib/shopify.js";
 
 dotenv.config();
@@ -167,15 +167,37 @@ async function variantImage(v: PackVariant, current: string | null | undefined, 
   return uploadImage(`${keyBase}-${slugify(v.name)}`, webp);
 }
 
+// A size's barcode from the feed, only when the size has none and no other size already carries it (barcodes are unique)
+async function freeBarcode(feedBarcode: string | undefined, current: string | null | undefined): Promise<string | undefined> {
+  if (!feedBarcode || current) return undefined;
+  const taken = await prisma.productVariant.findUnique({ where: { barcode: feedBarcode }, select: { id: true } });
+  return taken ? undefined : feedBarcode;
+}
+
+const DETAIL_FIELDS = [
+  "description", "ingredients", "nutritionalInfo", "storageInstructions", "shelfLifeDays", "fssaiLicense",
+  "countryOfOrigin", "usageInstructions", "dangerWarnings",
+] as const;
+
+// Product-page details fill only fields the catalog hasn't set, so edits made in admin are never overwritten
+function detailUpdates(details: ProductDetails | undefined, current: Record<string, unknown> | null): Partial<ProductDetails> {
+  if (!details) return {};
+  const isEmpty = (v: unknown) => v == null || v === "" || (typeof v === "object" && Object.keys(v as object).length === 0);
+  return Object.fromEntries(DETAIL_FIELDS.filter((k) => details[k] != null && (!current || isEmpty(current[k]))).map((k) => [k, details[k]]));
+}
+
 // Adds/updates the site's pack sizes (with MRP and pack shot) and removes old sizes nothing references
 async function syncVariants(productId: string, variants: PackVariant[], imageKeyBase: string): Promise<string[]> {
   const existing = await prisma.productVariant.findMany({
     where: { productId },
-    select: { id: true, name: true, imageUrl: true, _count: { select: { storeProducts: true, orderItems: true } } },
+    select: { id: true, name: true, imageUrl: true, barcode: true, _count: { select: { storeProducts: true, orderItems: true } } },
   });
   for (const v of variants) {
     const match = existing.find((e) => e.name === v.name);
-    const data = { unitType: v.unitType, unitValue: v.unitValue, mrp: v.mrp, imageUrl: await variantImage(v, match?.imageUrl, imageKeyBase) };
+    const data = {
+      unitType: v.unitType, unitValue: v.unitValue, mrp: v.mrp, imageUrl: await variantImage(v, match?.imageUrl, imageKeyBase),
+      barcode: await freeBarcode(v.barcode, match?.barcode),
+    };
     if (match) await prisma.productVariant.update({ where: { id: match.id }, data });
     else await prisma.productVariant.create({ data: { ...data, name: v.name, productId } });
   }
@@ -194,8 +216,9 @@ async function applyPlan(plan: Plan, config: Config, brandId: string): Promise<"
   // A feed without a description (hand-built feeds often have none) keeps the catalog's own
   const description = plainDescription(plan.site.body_html) ?? undefined;
   const data = {
-    name: plan.name, subcategoryId: sub.id, manufacturerName: config.manufacturer,
+    name: plan.name, subcategoryId: sub.id, manufacturerName: plan.site.details?.manufacturerName ?? config.manufacturer,
     productType: PRODUCT_TYPE[plan.path![0]], foodType: isFoodPath(plan.path!) ? config.foodType : null, description,
+    ...detailUpdates(plan.site.details, existing && { ...existing, description: description ?? existing.description }),
   };
   const product = existing
     ? await prisma.product.update({ where: { id: existing.id }, data })
