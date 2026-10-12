@@ -1,0 +1,22 @@
+{
+  "brand": "Frooti (Parle Agro)",
+  "manufacturer": "Parle Agro Pvt. Ltd.",
+  "feed": "frooti-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/frooti/logo-6ca96c0d.png",
+  "themeColor": "#00A651",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Frooti ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Mango\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Mango Drinks (Frooti, Maaza)"
+      ]
+    }
+  ]
+}

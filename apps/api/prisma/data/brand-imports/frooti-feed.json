@@ -1,0 +1,128 @@
+[
+ {
+  "title": "Mango Drink",
+  "handle": "mango-drink",
+  "vendor": "Frooti (Parle Agro)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "9",
+    "compare_at_price": "9",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274035_9-frooti-drink-fresh-n-juicy-mango.jpg"
+    }
+   },
+   {
+    "title": "160ml",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185244_2-frooti-mango-drink.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265783_7-frooti-drink-fresh-n-juicy-mango.jpg"
+    }
+   },
+   {
+    "title": "330ml",
+    "price": "18",
+    "compare_at_price": "18",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265689_5-frooti-drink-fresh-n-juicy-mango.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265694_1-frooti-drink-fresh-n-juicy-mango.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129410_7-frooti-mango-drink-fresh-n-juicy.jpg"
+    }
+   },
+   {
+    "title": "1.2L",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265699_4-frooti-drink-fresh-n-juicy-mango.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364490_1-frooti-mango-drink.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "94",
+    "compare_at_price": "94",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40194542_5-frooti-mango-drink.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265708_5-frooti-mango-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274035_9-frooti-drink-fresh-n-juicy-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274035-2_8-frooti-drink-fresh-n-juicy-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274035-3_8-frooti-drink-fresh-n-juicy-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274035-4_8-frooti-drink-fresh-n-juicy-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274035-5_8-frooti-drink-fresh-n-juicy-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274035-6_7-frooti-drink-fresh-n-juicy-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274035-7_4-frooti-drink-fresh-n-juicy-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/274035-8_4-frooti-drink-fresh-n-juicy-mango.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
