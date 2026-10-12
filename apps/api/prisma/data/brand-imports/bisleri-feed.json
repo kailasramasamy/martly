@@ -14,7 +14,8 @@
     "estimated": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/197349_4-bisleri-mineral-water.jpg"
-    }
+    },
+    "barcode": "8906017290712"
    },
    {
     "title": "1L",
@@ -80,7 +81,17 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/174367_5-bisleri-mineral-water.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Bisleri Mineral Water is not just an ordinary bottle of water, Each drop of Bisleri water is a promise of goodness that goes through a rigorous 10 step quality process and 90 Quality Tests. It’s one of the select brands that adds minerals and in fact like a true leader has been doing so right since its inception in 1969.\nBe it for your Party, Picnic or Home, Bisleri has appropriate pack sizes for every occasion. It in fact offers the widest range - 250 ml, 300 ml, 500 ml, 1L, 2L, 5L, 10L and 20L. With consumer centricity at it’s core, Bisleri is the most trusted brand of mineral water in India.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Magnesium": "0.2mg",
+    "Potassium": "0.1mg"
+   },
+   "manufacturerName": "Bisleri International Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vedica Natural Mountain Water",
@@ -96,7 +107,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40013622_7-bisleri-natural-mountain-water-vedica.jpg"
-    }
+    },
+    "barcode": "8906017290941"
    },
    {
     "title": "1L",
@@ -128,7 +140,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40013621_10-bisleri-natural-mountain-water-vedica.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Born of a clear spring, that for centuries has traversed a labyrinth of mineral enriched bedrock, before gushing out to the surface, Vedica is natural Himalayan water. Its underground geological origin and natural silica fortification bestow on it the blessing of being uncontaminated and free from any kind of microbial activity. Rich in sulphates, which are natural detoxifying agents, Vedica carries with it the ancient secrets of nature to cleanse, restore and replenish. A lower calcium and magnesium content also ensures a distinct and sweet taste. Savour the taste of Vedica, and discover the goodness of the Himalayas in every sip. With a pH value higher than other mountain waters, Vedica is more alkaline and helps neutralise acids and remove toxins.",
+   "nutritionalInfo": {
+    "Ph": "7.3 To 7.9",
+    "Dissolved Solids At 180° C": "225 Ppm",
+    "Chlorides": "13 mg",
+    "Magnesium": "13 mg",
+    "Sulphates": "19 mg",
+    "Fluoride": "0.2 mg",
+    "Sodium": "14 mg",
+    "Bicarbonate": "201 mg",
+    "calcium": "47 mg"
+   },
+   "storageInstructions": "*Store in cool & dry place\n*Keep away from direct sunlight\n*Avoid exposure to extreme temperatures"
+  }
  },
  {
   "title": "Club Soda",
@@ -144,7 +171,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100126200_5-bisleri-soda-the-club.jpg"
-    }
+    },
+    "barcode": "8906017290187"
    }
   ],
   "images": [
@@ -164,7 +192,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/100126200-5_1-bisleri-soda-the-club.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Bisleri Extra Power Club Soda is a versatile and refreshing beverage that can be enjoyed on its own or used as a mixer in a variety of cocktails and mocktails. Crafted with purified water and carbon dioxide, this crisp and clean-tasting soda provides a rocking kick to any drink it's combined with. Its versatility makes it a must-have for any home bar or gathering, allowing you to create delicious and unique drink concoctions. Whether you're sipping it straight or incorporating it into your favourite mixed drinks, Bisleri Extra Power Club Soda is sure to delight your taste buds with its refreshing and invigorating flavour. Enjoy the convenience of ordering Bisleri Extra Power Club Soda online and having it delivered straight to your doorstep, making it easy to keep this versatile mixer on hand whenever the mood for a refreshing drink strikes.",
+   "ingredients": "Purified Water, Carbon Dioxide",
+   "nutritionalInfo": {
+    "Serving Size": "100ml",
+    "Energy": "0 Kcal",
+    "Carbohydrate": "0 g",
+    "Sugar": "0 g",
+    "Protein": "0 g",
+    "Fat": "0 g"
+   },
+   "storageInstructions": "*Store in cool and dry place away from direct sunlight",
+   "manufacturerName": "BISLERI INTERNATIONAL PVT LTD",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Club Soda Extra Power",
@@ -180,7 +223,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40241698_4-bisleri-club-soda-extra-power-refreshing-drink.jpg"
-    }
+    },
+    "barcode": "8906017290774"
    }
   ],
   "images": [
@@ -200,7 +244,22 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241698-5_3-bisleri-club-soda-extra-power-refreshing-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Bisleri Soda 750 ml is a perfect accompaniment to your drinks and is incredibly fizzy. It is undoubtedly one of the best in quality in the market today and buying it will surely not leave you disappointed. So if you are a cocktail or a whiskey enthusiast, this should be your choice.",
+   "usageInstructions": "1. It can be used to top off the drink.\n2. Essential ingredient in cocktails.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Energy": "0 Kcal",
+    "Carbohydrate": "0g",
+    "Sugar": "0g",
+    "Protein": "0g",
+    "Fat": "0g"
+   },
+   "manufacturerName": "Bisleri International Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013022001539"
+  }
  },
  {
   "title": "Spyci Masala Soda",
@@ -216,7 +275,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40240299_1-bisleri-spyci-masala-maar-ke-refreshing-ready-to-serve-spiced-cola.jpg"
-    }
+    },
+    "barcode": "8906017291610"
    },
    {
     "title": "600ml",
@@ -251,7 +311,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097835_2-bisleri-spyci-masala-maar-ke.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Bisleri POP Spyci is a cola with a twist. So, turn every moment into a crazy ride with Spyci, a blend of bold Indian flavours and frizzy madness. Take a swing, and start a riot in your tastebuds. As the whole world knows, we Indians take everything with a little more spice! Bisleri SPYCI bottles up our love for masalas with its Masaledaar flavour. It's a refreshing fizz layered with a rich blend of spices that is bound to give you an irresistible taste. And with real fruit juice, it works perfectly as an instant refresher and a delightful satisfier.",
+   "ingredients": "Water, Sugar, Apple Juice Concentrate 1.7% (Equivalent To 10.2% Apple Juice Reconstituted), Salt, Citric Acid (Ins 330), Carbon Dioxide (Ins 290), Sodium Benzoate (Ins 211), Sodium Citrate (Ins 331 (Iii)), Contains Permitted Natural Colour (Ins 150 D), Contains Added Flavours (Nature Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "160ml",
+    "Energy": "46kcal",
+    "Carbohydrate": "11.4g",
+    "Sugar": "11.9g",
+    "Protein": "0.0g",
+    "Fat": "0.0g",
+    "Sodium": "0.15g"
+   },
+   "storageInstructions": "*Store in cool and dry place\n*Keep the container away from direct sunlight",
+   "manufacturerName": "Bisleri International Pvt ltd",
+   "fssaiLicense": "10013022001539",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Fonzo Mango Fizz",
@@ -267,7 +345,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40240301_1-bisleri-fonzo-mango-with-fizz-refreshing-ready-to-serve-fruit-based-beverage.jpg"
-    }
+    },
+    "barcode": "8906017291252"
    },
    {
     "title": "250ml",
@@ -302,7 +381,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126212_13-bisleri-fonzo-mango-with-fizzz.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "What happens when a tingle of fizz fuses with a burst of Mango? A one-of-a-kind bubbly experience, an experience that would surpass the fizziest mango drinks ever made. Behold, Fonzo. It's all you need to fill yourself with fun, & the delight you deserve every day of the year. Fonzo is a Funzone, a carnival of taste for your tastebuds! Let your senses dance to its colourful flavour.",
+   "manufacturerName": "Bisleri International Pvt ltd",
+   "fssaiLicense": "10013022001539",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pop Orange Soft Drink",
@@ -318,7 +403,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40309650_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
-    }
+    },
+    "barcode": "8906017291368"
    },
    {
     "title": "600ml",
@@ -350,7 +436,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40309651_3-bisleri-pop-orange-flavoured-soft-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Quench your thirst with the exhilarating Bisleri POP Orange Flavour Soft Drink. Every sip bursts with vibrant orange flavour, awakening your taste buds and leaving you feeling invigorated. With its irresistibly fruity taste, Bisleri POP Orange is the perfect choice for a flavourful treat. Stay refreshed and savour the vibrant orange goodness that will brighten up your day. Bisleri Pop is a popular carbonated soft drink that offers a refreshing and fizzy experience, perfect for quenching your thirst on a hot day or adding excitement to any occasion. Available in a variety of fruit flavours, Bisleri Pop is known for its vibrant taste and effervescent bubbles that deliver a burst of refreshment with every sip. This sparkling drink is ideal for both kids and adults, making it a fun choice for parties, picnics or casual get-togethers. Whether you're looking to add some sparkle to your celebrations or just enjoy a cool, refreshing drink, Bisleri Pop is sure to satisfy with its refreshing orange flavour, perfect for gatherings and delightful taste experience.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators (330, 331 (iii)), Preservatives(211), Stabilizer (440), Colour (110), Flavour (Nature-Identical Flavouring Substance)",
+   "nutritionalInfo": {
+    "Serving Size": "200ml",
+    "Energy": "47 kcal",
+    "Carbohydrate": "11.8 g",
+    "Total Sugar": "11.5 g",
+    "Added Sugar": "11.5 g",
+    "Protein": "0.0 g",
+    "Total Fat": "0.0 g",
+    "Sodium": "3.9 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Bisleri International Pvt. Ltd. Plot No. 55 & 65",
+   "fssaiLicense": "10013022001539",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rev Cola Soft Drink",
@@ -398,6 +502,25 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40309653_1-bisleri-rev-soft-drink-the-cola-revolution.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and invigorating experience of Bisleri Rev Soft Drink. Crafted with perfection, this fizzy beverage combines the timeless flavour of cola with the purity of Bisleri water, creating a crisp and effervescent delight. Immerse your taste buds in the tantalising cola-infused goodness, enhanced by the invigorating bubbles that tantalise your senses. Stay refreshed and savour the effervescent bliss in every sip, as this perfect blend of cola flavour and pure Bisleri water delivers a refreshing twist on the classic cola experience.",
+   "ingredients": "Carbonated Water, Sugar, Acidity Regulators (338, 331(Iii)), Preservative(211), Caffeine(7.8Mg/100G), Colour (150D), Flavour (Nature-Identical Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "200ml",
+    "Energy": "46 kcal",
+    "Carbohydrate": "11.4 g",
+    "Total Sugar": "11.3g",
+    "Added Sugar": "11.3 g",
+    "Protein": "0.0g",
+    "Total Fat": "0.0g",
+    "Sodium": "9.0 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Bisleri International Pvt. Ltd. Plot No. 55 & 65",
+   "fssaiLicense": "10013022001539",
+   "countryOfOrigin": "India"
+  }
  }
 ]
