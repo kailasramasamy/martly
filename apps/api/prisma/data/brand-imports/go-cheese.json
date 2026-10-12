@@ -1,0 +1,88 @@
+{
+  "brand": "Go Cheese (Parag)",
+  "manufacturer": "Parag Milk Foods Ltd.",
+  "feed": "go-cheese-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/go-cheese/logo-e4bb2840.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1B3A5C",
+  "namePrefix": "Go Cheese ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Go Cheese Cheddar Slices": "Processed Cheese Slices"
+  },
+  "rules": [
+    {
+      "match": "^Processed\\ Cheese\\ Slices$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Mozzarella\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Diced\\ Mozzarella$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Mozzarella\\ \\&\\ Cheddar\\ Diced\\ Pizza\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Cheese\\ Block$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "match": "^Shredded\\ Four\\ Cheese$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Specialty Cheese"
+      ]
+    },
+    {
+      "match": "^Processed\\ Cheese\\ Cubes$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Processed\\ Angles\\ \\-\\ Plain$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Processed Cheese (Slices & Blocks)"
+      ]
+    },
+    {
+      "match": "^Plain\\ Spread$",
+      "path": [
+        "Dairy",
+        "Cheese",
+        "Cream Cheese & Spread"
+      ]
+    }
+  ]
+}

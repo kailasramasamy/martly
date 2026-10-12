@@ -1,0 +1,613 @@
+[
+ {
+  "title": "Processed Cheese Slices",
+  "handle": "processed-cheese-slices",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589_6-gowardhan-cheese-slices.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005949_4-go-cheese-slice-plain.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "489",
+    "compare_at_price": "489",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100369165_4-go-cheese-slices-plain.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589_6-gowardhan-cheese-slices.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589-2_6-gowardhan-cheese-slices.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589-3_5-gowardhan-cheese-slices.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589-4_5-gowardhan-cheese-slices.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589-5_4-gowardhan-cheese-slices.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589-6_3-gowardhan-cheese-slices.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589-7_1-gowardhan-cheese-slices.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100356589-8_1-gowardhan-cheese-slices.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Plain cheese slices are a convenient and versatile dairy product made from processed cheese. These slices are known for their mild, creamy flavour and smooth texture, making them a favourite for sandwiches, burgers, and quick snacks. Easy to use and store, plain cheese slices melt well, adding a delicious touch to various hot dishes. They are a staple in many households, offering a simple and tasty way to enjoy the classic taste of cheese.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "20g",
+    "Energy": "280kcal",
+    "Total Fat": "24g",
+    "Saturated Fat": "15g",
+    "Trans Fat": "1g",
+    "Cholesterol": "65mg",
+    "Carbohydrates": "2g",
+    "Dietary Fiber": "0g",
+    "Total Sugar (as sucrose)": "0g",
+    "Protein": "14g",
+    "Sodium": "600mg",
+    "Vitamin-A": "40mcg",
+    "Calcium": "100mg"
+   },
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10012044000176",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mozzarella Block",
+  "handle": "mozzarella-block",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30000890_6-go-mozzarella-cheese-block.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000890_6-go-mozzarella-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000890-2_4-go-mozzarella-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000890-3_4-go-mozzarella-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000890-4_4-go-mozzarella-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000890-5_4-go-mozzarella-cheese-block.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000890-6_2-go-mozzarella-cheese-block.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Originating from the heart of South Italy, Go Mozzarella is a premium quality cheese crafted using traditional Italian techniques. Boasting an excellent stretchability, this mozzarella block is the perfect companion for baked dishes, elevating your meals with its delightful richness and exceptional meltability. Derived from the finest milk, Go Mozzarella offers a fresh, creamy texture and a delicate, balanced flavour that makes it a versatile ingredient for a variety of culinary creations. Whether you're shredding it for a cheesy pizza topping, slicing it for a savoury appetiser, or incorporating it into your favourite pasta dishes and salads, this mozzarella block provides consistent quality and great taste. With its right balance of moisture and elasticity, Go Mozzarella melts beautifully, ensuring a smooth, indulgent experience for cheese lovers. Elevate your meals and snacking with the exceptional richness and exceptional meltability of Go Mozzarella, a true staple in every kitchen.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50g",
+    "Energy": "153 kcal",
+    "Energy from fat": "99 kcal",
+    "Total Fat": "11g",
+    "Saturated Fat": "7.0g",
+    "Trans Fat": "0.4g",
+    "Cholesterol": "45.0mg",
+    "Sodium": "500mg",
+    "Total Carbohydrates": "1g",
+    "Sugar (as sucross)": "0g",
+    "Protein": "11g",
+    "Vitamin-A": "100mcg",
+    "Calcium": "300mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place",
+   "manufacturerName": "Parag Milk Foods Ltd",
+   "fssaiLicense": "10012022001320",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Diced Mozzarella",
+  "handle": "diced-mozzarella",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "359",
+    "compare_at_price": "359",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198395_5-go-mozzarella-cheese-diced.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "604",
+    "compare_at_price": "604",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327064_1-go-mozzarella-cheese-shreddeddiced.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198395_5-go-mozzarella-cheese-diced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198395-2_5-go-mozzarella-cheese-diced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198395-3_5-go-mozzarella-cheese-diced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198395-4_5-go-mozzarella-cheese-diced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198395-5_5-go-mozzarella-cheese-diced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198395-6_2-go-mozzarella-cheese-diced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327064_1-go-mozzarella-cheese-shreddeddiced.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful creaminess of Go Mozzarella Dice, the perfect solution for quick and easy meal preparation. These pre-diced mozzarella cubes offer the same great taste and melting quality as whole mozzarella, making them an excellent topping for your favourite pizzas, whether you're enjoying a barbecued chicken or a simple tomato delight. The creamy melted white delight adds a burst of flavour, ensuring your dishes are more appetising than ever. Versatile and convenient, these diced cheese cubes can also be used in salads, appetisers, and a variety of other culinary creations. Crafted from fresh, high-quality milk, Go Mozzarella Dice are the perfect addition to your kitchen, delivering both taste and ease of use.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50g",
+    "Energy": "153 kcal",
+    "Energy from Fat": "99 kcal",
+    "Total Fat": "11g",
+    "Saturated Fat": "7.0g",
+    "Trans Fat": "0.4g",
+    "Cholesterol": "45.0mg",
+    "Sodium": "500mg",
+    "Total Carbohydrates": "1g",
+    "Sugar (as Sucrose)": "0g",
+    "Protein": "11g",
+    "Vitamin-A": "100mcg",
+    "Calcium": "300mg"
+   },
+   "storageInstructions": "*Store it at -18 degrees Celsius",
+   "manufacturerName": "Parag Milk Foods Ltd",
+   "fssaiLicense": "10012022001320",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mozzarella & Cheddar Diced Pizza Cheese",
+  "handle": "mozzarella-cheddar-diced-pizza-cheese",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198394_4-go-mozzarella-blend-dice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198394_4-go-mozzarella-blend-dice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198394-2_4-go-mozzarella-blend-dice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198394-3_3-go-mozzarella-blend-dice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198394-4_3-go-mozzarella-blend-dice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198394-5_3-go-mozzarella-blend-dice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198394-6_3-go-mozzarella-blend-dice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the perfect fusion of creamy and tangy notes with Go Cheese Mozzarella & Cheddar Diced Pizza Cheese. This exquisite combination delivers a rich, velvety texture, ideal for elevating your culinary creations. Enhance your dishes with this versatile cheese, bringing a delightful burst of flavour to your favourite recipes, from gourmet sandwiches to sophisticated pasta dishes. Experience the artistry of fine cheese with every bite.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50g",
+    "Energy": "160 kcal",
+    "Energy from fat": "112 kcal",
+    "Total Fat": "12.5g",
+    "Saturated Fat": "8.0g",
+    "Trans Fat": "0.5g",
+    "Cholesterol": "45.0mg",
+    "Sodium": "500mg",
+    "Carbohydrates": "1g",
+    "Sugar (as sucrose)": "0g",
+    "Protein": "11g",
+    "Vitamin-A": "112mcg",
+    "Calcium": "300mg"
+   },
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10012022001320",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pizza Cheese Block",
+  "handle": "pizza-cheese-block",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/262712_9-go-cheese-pizza.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40087555_2-go-pizza-cheese-mozzarella-cheddar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/262712_9-go-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/262712-2_5-go-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/262712-3_5-go-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/262712-4_5-go-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/262712-5_5-go-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/262712-6_4-go-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/262712-7_3-go-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/262712-8_3-go-cheese-pizza.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your pizza experience with Go Pizza Cheese, a delightful blend of mozzarella and cheddar that delivers the authentic flavours of an Italian-style pizza. This creamy, melty cheese adds a lip-smacking taste and irresistible texture to your favourite toppings, whether you're enjoying a barbecued chicken or a classic tomato pizza. The sharp cheddar perfectly complements the stringy mozzarella, creating a memorable bite with every melt or grate. Versatile and easy to use, Go Pizza Cheese allows you to customise your culinary creations, from melting it into the dish to sprinkling it as a topping. Indulge in the rich, aromatic flavours of this cheese and bring the authentic taste of Italy to your home.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50g",
+    "Energy": "153 kcal",
+    "Energy from fat": "108 kcal",
+    "Total Fat": "12g",
+    "Saturated Fat": "7.5g",
+    "Trans Fat": "0.48g",
+    "Cholesterol": "45mg",
+    "Sodium": "500mg",
+    "Total Carbohydrates": "1g",
+    "Sugar (as sucrose)": "0g",
+    "Protein": "9g",
+    "Vitamin-A": "100mcg",
+    "Calcium": "300mg"
+   },
+   "storageInstructions": "Keep refrigerated at 2–8 °C.\nStore in the original packaging or wrap tightly in cling film to prevent drying.\nOnce opened, consume within the time specified on the packaging.\nDo not freeze for extended periods as it may affect texture.",
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10012022001320",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Shredded Four Cheese",
+  "handle": "shredded-four-cheese",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392_5-go-four-cheese.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392_5-go-four-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392-2_5-go-four-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392-3_5-go-four-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392-4_5-go-four-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392-5_5-go-four-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392-6_3-go-four-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392-7_2-go-four-cheese.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40198392-8_2-go-four-cheese.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Go Cheese Four Cheese is the combination of Cheddar, Monterey Jack, Mozzarella, and Colby cheese types. Enjoy the taste of four types of cheese in one and satisfy multiple cheese cravings. Make your taco and other food tasty with four cheese.",
+   "nutritionalInfo": {
+    "Nutrition per": "50g",
+    "Serving Size": "50g",
+    "Energy": "182 kcal",
+    "Energy from Fat": "126 kcal",
+    "Total Fat": "14.0g",
+    "Saturated Fat": "9.0g",
+    "Trans Fat": "0g",
+    "Cholesterol": "45mg",
+    "Sodium": "500mg",
+    "Total Carbohydrates": "1g",
+    "Sugars (as sucrose)": "0g",
+    "Protein": "11.5g",
+    "Vitamin-A": "100mcg",
+    "Calcium": "300mg"
+   },
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10012022001320",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Processed Cheese Cubes",
+  "handle": "processed-cheese-cubes",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "169",
+    "compare_at_price": "169",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126628_5-go-processed-cheese-cubes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126628_5-go-processed-cheese-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126628-2_4-go-processed-cheese-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126628-3_4-go-processed-cheese-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126628-4_4-go-processed-cheese-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126628-5_4-go-processed-cheese-cubes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126628-6_2-go-processed-cheese-cubes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Go Processed Cheese Cubes are made from blends of Cheddar Cheese which have a high melting point, making them long-lasting and easy to grate. They can be used for preparing sandwiches, dressings of salads, and as a filling for wraps and rolls.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "25g",
+    "Energy": "430 kcal",
+    "Energy from fat": "17 kcal",
+    "Total Fat": "6.3g",
+    "Saturated fat": "4.0g",
+    "trans Fat": "3.2g",
+    "Cholesterol": "17mg",
+    "Sodium": "250mg",
+    "Total Carbohydrates": "2.5g",
+    "Sugars (as sucrose)": "0.0g",
+    "Protein": "3.7g",
+    "Vitamin A": "58 mcg",
+    "Calcium": "150mg"
+   },
+   "storageInstructions": "*Store in a freezer",
+   "manufacturerName": "Parag Milk Foods Ltd",
+   "fssaiLicense": "10012022001320",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Processed Angles - Plain",
+  "handle": "processed-angles-plain",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160g",
+    "price": "169",
+    "compare_at_price": "169",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204175_6-go-plain-cheese-processed-angles.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204175_6-go-plain-cheese-processed-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204175-2_6-go-plain-cheese-processed-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204175-3_6-go-plain-cheese-processed-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204175-4_6-go-plain-cheese-processed-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204175-5_6-go-plain-cheese-processed-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204175-6_6-go-plain-cheese-processed-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204175-7_2-go-plain-cheese-processed-angles.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Go Processed Angles Plain is crafted from pure cow's milk, offering rich flavour and smooth texture. Perfectly versatile, it can be melted, grated, or enjoyed as it is. A trusted choice for homes, hotels, restaurants, pizza chains, and even street food stalls, making it a favourite addition to everyday meals.",
+   "ingredients": "Cheddar Cheese (Made From Microbial Enzyme), Milk Solids, Emulsifier (Ins 331, Ins 339(I), Ins 452(I)), Iodized Salt, Preservative (Ins 200, Ins 234)",
+   "nutritionalInfo": {
+    "Nutrition Per": "16g",
+    "Serving Size": "16g",
+    "Energy": "46kcal",
+    "Energy From Fat": "36kcal",
+    "Total Fat": "4.0g",
+    "Saturated Fat": "2.6g",
+    "Trans Fat": "0.2g",
+    "Cholesterol": "10.8mg",
+    "Sodium": "160mg",
+    "Total Carbohydrates": "0.3g",
+    "Added Sugar (As Sucrose)": "0g",
+    "Protein": "2.4g",
+    "Vitamin-A": "36Mcg",
+    "calcium": "100mg"
+   },
+   "storageInstructions": "*Store under refrigeration below 4°C\n*Keep in hygienic conditions",
+   "manufacturerName": "Parag Milk Foods Ltd",
+   "fssaiLicense": "10012022001320",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Plain Spread",
+  "handle": "plain-spread",
+  "vendor": "Go Cheese (Parag)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005967_5-go-cheese-spread-plain-soft-creamy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005967_5-go-cheese-spread-plain-soft-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005967-2_4-go-cheese-spread-plain-soft-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005967-3_4-go-cheese-spread-plain-soft-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005967-4_4-go-cheese-spread-plain-soft-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005967-5_4-go-cheese-spread-plain-soft-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005967-6_2-go-cheese-spread-plain-soft-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005967-7_2-go-cheese-spread-plain-soft-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the smooth, creamy goodness of Go Cheese Spread - Plain. Crafted from the freshest milk, this soft and delectable spread is packed with protein and calcium, making it a wholesome and delicious addition to your meals. Spread it on toast, use it as a dip for your favourite snacks, or incorporate it into your cooking for a rich, mild flavour that elevates any dish. Whether you're an adult or a child, this versatile cheese spread is a convenient way to enjoy the creamy texture and flavourful taste of cheese. Elevate your breakfast, lunch, or snack time with the irresistible appeal of Go Cheese Spread - Plain.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Total Fat": "23.0g",
+    "Cholesterol": "0.9g",
+    "Sodium": "20.0g",
+    "Protein": "2.0g",
+    "Calcium": "200mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Refrigerate after opening",
+   "manufacturerName": "Parag Milk Foods Ltd",
+   "fssaiLicense": "10012022001320",
+   "countryOfOrigin": "India"
+  }
+ }
+]
