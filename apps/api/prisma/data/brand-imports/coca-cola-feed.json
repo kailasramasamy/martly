@@ -1,0 +1,283 @@
+[
+ {
+  "title": "Original Taste Soft Drink",
+  "handle": "original-taste-soft-drink",
+  "vendor": "Coca-Cola",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251023_12-coca-cola-soft-drink-original-taste.jpg"
+    }
+   },
+   {
+    "title": "1.25L",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265726_13-coca-cola-soft-drink-original-taste.jpg"
+    }
+   },
+   {
+    "title": "1.75L",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40032980_9-coca-cola-soft-drink-original-taste.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/251037_14-coca-cola-soft-drink-original-taste.jpg"
+    }
+   },
+   {
+    "title": "2.25L",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40222667_1-coca-cola-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "2.5L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346373_1-coca-cola-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362491_1-coca-cola-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100401160_13-coca-cola-soft-drink-original-taste.jpg"
+    }
+   },
+   {
+    "title": "330ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371506_1-coca-cola-original-taste-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251023_12-coca-cola-soft-drink-original-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251023-2_8-coca-cola-soft-drink-original-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251023-3_7-coca-cola-soft-drink-original-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251023-4_5-coca-cola-soft-drink-original-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251023-5_5-coca-cola-soft-drink-original-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251023-6_5-coca-cola-soft-drink-original-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251023-7_4-coca-cola-soft-drink-original-taste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/251023-8_4-coca-cola-soft-drink-original-taste.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the unmistakable taste of Coca-Cola—The Real Thing. With its iconic taste and refreshing fizz, Coca-Cola delivers an uplifting break anytime, anywhere. The perfect companion to meals, it pairs well with burgers, pizza, biryani, rolls, momos, sanwiches, samosas, and chaat, adding Real Magic to every shared feast, party and treat. Contains caffeine. Vegetarian (FSSAI). Best served chilled.",
+   "nutritionalInfo": {
+    "Serving Size": "200ml",
+    "Energy": "44 kcal",
+    "Carbohydrate": "10.9g",
+    "Total Sugars": "10.6g",
+    "Added Sugars": "10.6g",
+    "Total Fat": "0g",
+    "Protein": "0g",
+    "Sodium": "8.5 mg"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages PVT. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zero Sugar Soft Drink",
+  "handle": "zero-sugar-soft-drink",
+  "vendor": "Coca-Cola",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "750ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162_3-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40018072_28-coca-cola-coke-zero-soft-drink-no-sugar.jpg"
+    }
+   },
+   {
+    "title": "330ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371507_1-coca-cola-zero-sugar-soft-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162_3-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162-2_3-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162-3_2-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162-4_2-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162-5_2-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162-6_2-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162-7_3-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262162-8_2-coca-cola-soft-drink-zero-sugar-no-calories.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the authentic Coca-Cola taste you love with Zero Sugar and Zero Calories. Coca-Cola Zero Sugar delivers the iconic Coca-Cola flavour and refreshing, ice-cold fizz with zero compromise, ideal for calorie-conscious consumers. The perfect zero-sugar choice for meals, parties, and everyday refreshment. Contains caffeine. Vegetarian (FSSAI). Best served chilled.",
+   "ingredients": "Carbonated Water, High Fructose Corn Syrup, Caramel Colour, Phosphoric Acid, Natural Flavours, Caffeine",
+   "nutritionalInfo": {
+    "Serving Size": "200ml",
+    "Energy": "0 kcal",
+    "Carbohydrate": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "0 g",
+    "Protein": "0 g",
+    "Sodium": "7.5 mg"
+   },
+   "manufacturerName": "Hindustan Coca Cola Beverages Pvt. Ltd. Survey No. 284 P",
+   "fssaiLicense": "10012022000261",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Diet Coke Soft Drink",
+  "handle": "diet-coke-soft-drink",
+  "vendor": "Coca-Cola",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100401162_21-coca-cola-diet-coke-soft-drink.jpg"
+    }
+   },
+   {
+    "title": "330ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40371247_2-coca-cola-diet-coke.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100401162_21-coca-cola-diet-coke-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100401162-2_19-coca-cola-diet-coke-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100401162-3_16-coca-cola-diet-coke-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100401162-4_16-coca-cola-diet-coke-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100401162-5_14-coca-cola-diet-coke-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100401162-6_1-coca-cola-diet-coke-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100401162-7_1-coca-cola-diet-coke-soft-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40371247_2-coca-cola-diet-coke.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy Diet Coke - Distinctively crisp, light in taste, and stands out with iconic silver pack. With Zero Sugar and Zero Calories, it delivers refreshing fizz with a clean finish. Diet Coke is more than a drink, it’s a statement of personal taste - a modern choice for calorie conscious consumers. Contains caffeine. Vegetarian (FSSAI). Best served chilled.",
+   "ingredients": "Carbonated Water, Acidity Regulators (INS 338, INS 331(iii)), Sweeteners (INS 951, INS 950), Preservative (INS 211), Caffeine (10 mg/100 g), Colour (INS 150d), Natural Flavouring Substances.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "0",
+    "Carbohydrate (g)": "0",
+    "Total Sugars (g)": "0",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "0",
+    "Protein (g)": "0",
+    "Sodium (mg)": "8.3"
+   },
+   "manufacturerName": "Hindustan Coca-Cola Beverages Pvt. Ltd. Survey No. 284-P Post Kudus Taluka Wada District Palghar- 421 312 Maharashtra",
+   "countryOfOrigin": "India"
+  }
+ }
+]

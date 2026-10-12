@@ -1,0 +1,4 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+Original Taste Soft Drink,Coca-Cola Original Taste Soft Drink,update,Beverages > Soft Drinks & Carbonated > Cola,750ml ₹40 | 1.25L ₹70 | 1.75L ₹90 | 2L ₹99 | 2.25L ₹100 | 2.5L ₹110 | 200ml ₹30 | 300ml ₹40 | 330ml ₹50,750ml ₹40 | 1.25L ₹70 | 1.75L ₹90 | 2L ₹99 | 2.25L ₹100 | 2.5L ₹110 | 200ml ₹30 | 300ml ₹40 | 330ml ₹50,8,750ml MRP ₹40 < 330ml MRP ₹50
+Zero Sugar Soft Drink,Coca-Cola Zero Sugar Soft Drink,update,Beverages > Soft Drinks & Carbonated > Diet & Zero Sugar,750ml ₹40 | 300ml ₹40 | 330ml ₹50,750ml ₹40 | 300ml ₹40 | 330ml ₹50,8,750ml MRP ₹40 < 330ml MRP ₹50
+Diet Coke Soft Drink,Coca-Cola Diet Coke Soft Drink,create,Beverages > Soft Drinks & Carbonated > Diet & Zero Sugar,300ml ₹40 | 330ml ₹50,300ml ₹40 | 330ml ₹50,8,
