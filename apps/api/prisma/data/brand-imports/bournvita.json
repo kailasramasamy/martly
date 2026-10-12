@@ -1,0 +1,104 @@
+{
+  "brand": "Bournvita (Mondelez)",
+  "manufacturer": "Mondelez India Foods Pvt. Ltd.",
+  "feed": "bournvita-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bournvita/logo-9358d89f.png",
+  "themeColor": "#4B2C83",
+  "themeColorSecondary": "#F36F21",
+  "namePrefix": "Bournvita ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Cadbury Bournvita Health Drink": "Chocolate Health Drink Jar"
+  },
+  "rules": [
+    {
+      "match": "^Chocolate\\ Health\\ Drink\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Health\\ Drink\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Health\\ Drink\\ Sachets$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^5\\ Star\\ Magic\\ Jar$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^5\\ Star\\ Magic\\ Refill$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^50%\\ Less\\ Sugar\\ Health\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Zero\\ Added\\ Sugar\\ Health\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Women's\\ Health\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Lil\\ Champs$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Spread\\ with\\ Hazelnut$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^Biscuits$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Glucose & Marie"
+      ]
+    }
+  ]
+}

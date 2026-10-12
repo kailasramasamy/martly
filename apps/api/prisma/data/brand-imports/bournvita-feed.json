@@ -1,0 +1,842 @@
+[
+ {
+  "title": "Chocolate Health Drink Jar",
+  "handle": "chocolate-health-drink-jar",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267384_35-cadbury-chocolate-health-drink-bournvita.jpg"
+    },
+    "barcode": "7622202846939"
+   },
+   {
+    "title": "500g",
+    "price": "245",
+    "compare_at_price": "245",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/206980_43-cadbury-chocolate-health-drink-bournvita.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "450",
+    "compare_at_price": "450",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/102830_38-bournvita-chocolate-health-drink-bournvita.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267384_35-cadbury-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267384-2_3-cadbury-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267384-3_3-cadbury-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267384-4_3-cadbury-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267384-5_3-cadbury-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267384-6_3-cadbury-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267384-7_3-cadbury-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267384-8_3-cadbury-chocolate-health-drink-bournvita.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Trusted and loved for more than 75 years, Bournvita is a scientifically designed cereal-based beverage mix, crafted by nutritionists and food scientists.It contains ingredients like cereal extracts made from Barley & Wheat, Sugars, Cocoa Powder, Milk solids, and other ingredients, which provide nutrients like Protein, Carbohydrates, Dietary fibre etc. and also contains 14 essential micronutrients.",
+   "ingredients": "Cereal Extract 58%* (Barley, Millets, Wheat), Sugar, Cocoa Solids, Maltodextrin, Colour (150c), Wheat Gluten, Minerals, Liquid Glucose, Emulsifiers (322, 471), Vitamins, Raising Agent (500(ii)), Flavours (Natural, Nature Identical and Artificial (Vanilla) Flavouring Substances), Milk Solids, lodised Salt.\nAllergen Information: Contains Milk, Wheat, Barley, Sulphites, Soy.",
+   "nutritionalInfo": {
+    "Energy": "381 kcal",
+    "Protein": "7 g",
+    "Carbohydrate": "86 g",
+    "Total Sugars": "46 g",
+    "Added Sugars": "32.2 g",
+    "Dietary Fiber": "3.5 g",
+    "Total Fat": "1.8 g",
+    "Saturated Fat": "0.9 g",
+    "Cholesterol": "0.1 mg",
+    "Trans Fat": "0 g",
+    "Sodium": "175 mg",
+    "Vitamin D2": "18.8 mcg",
+    "Calcium": "500 mg",
+    "Manganese": "1.8 mg",
+    "Iodine": "113 mcg",
+    "Iron": "23 mg",
+    "Zinc": "7.4 mg",
+    "Vitamin A": "790 mcg",
+    "Vitamin C": "95 mg",
+    "Copper": "1.1 mg",
+    "Selenium": "19 mcg",
+    "Biotin": "15 mcg",
+    "Vitamin B12": "1.5 mcg",
+    "Vitamin B5": "2.5 mg",
+    "Vitamin B9": "75 mcg"
+   },
+   "manufacturerName": "Barmalt Malting (India) Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
+ },
+ {
+  "title": "Chocolate Health Drink Refill",
+  "handle": "chocolate-health-drink-refill",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "81g",
+    "price": "26",
+    "compare_at_price": "26",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/162275_28-bournvita-chocolate-health-drink-bournvita.jpg"
+    },
+    "barcode": "7622202846731"
+   },
+   {
+    "title": "500g",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/102833_36-cadbury-chocolate-health-drink-bournvita-refill-pack.jpg"
+    }
+   },
+   {
+    "title": "700g",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019371_39-bournvita-chocolate-health-drink-bournvita.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "432",
+    "compare_at_price": "432",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206344_21-cadbury-bournvita-chocolate-health-drink.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "903",
+    "compare_at_price": "903",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40133416_33-cadbury-chocolate-health-drink-bournvita.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/162275_28-bournvita-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/162275-2_27-bournvita-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/162275-3_27-bournvita-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/162275-4_25-bournvita-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/162275-5_24-bournvita-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/162275-6_18-bournvita-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/162275-7_1-bournvita-chocolate-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/162275-8_1-bournvita-chocolate-health-drink-bournvita.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Trusted and loved for more than 75 years, Bournvita is a scientifically designed cereal-based beverage mix, crafted by nutritionists and food scientists.It contains ingredients like cereal extracts made from Barley & Wheat, Sugars, Cocoa Powder, Milk solids, and other ingredients, which provide nutrients like Protein, Carbohydrates, Dietary fibre etc. and also contains 14 essential micronutrients.",
+   "ingredients": "Cereal Extract 58%* (Barley, Millets, Wheat), Sugar, Cocoa Solids, Maltodextrin, Colour (150c), Wheat Gluten, Minerals, Liquid Glucose, Emulsifiers (322, 471), Vitamins, Raising Agent (500(ii)), Flavours (Natural, Nature Identical and Artificial (Vanilla) Flavouring Substances), Milk Solids, lodised Salt.\nAllergen Information: Contains Milk, Wheat, Barley, Sulphites, Soy.",
+   "nutritionalInfo": {
+    "Energy": "381 kcal",
+    "Protein": "7 g",
+    "Carbohydrate": "86 g",
+    "Total Sugars": "46 g",
+    "Added Sugars": "32.2 g",
+    "Dietary Fiber": "3.5 g",
+    "Total Fat": "1.8 g",
+    "Saturated Fat": "0.9 g",
+    "Cholesterol": "0.1 mg",
+    "Trans Fat": "0 g",
+    "Sodium": "175 mg",
+    "Vitamin D2": "18.8 mcg",
+    "Calcium": "500 mg",
+    "Manganese": "1.8 mg",
+    "Iodine": "113 mcg",
+    "Iron": "23 mg",
+    "Zinc": "7.4 mg",
+    "Vitamin A": "790 mcg",
+    "Vitamin C": "95 mg",
+    "Copper": "1.1 mg",
+    "Selenium": "19 mcg",
+    "Biotin": "15 mcg",
+    "Vitamin B12": "1.5 mcg",
+    "Vitamin B5": "2.5 mg",
+    "Vitamin B9": "75 mcg"
+   },
+   "manufacturerName": "Barmalt Malting (India) Private Limited",
+   "fssaiLicense": "10013064000331",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Health Drink Sachets",
+  "handle": "chocolate-health-drink-sachets",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40374187_2-bournvita-chocolate-nutrition-drink.jpg"
+    },
+    "barcode": "7622202839269"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374187_2-bournvita-chocolate-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374187-2_2-bournvita-chocolate-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374187-3_2-bournvita-chocolate-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374187-4_2-bournvita-chocolate-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374187-5_2-bournvita-chocolate-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374187-6_2-bournvita-chocolate-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40374187-7_2-bournvita-chocolate-nutrition-drink.jpg"
+   }
+  ],
+  "details": {
+   "description": "Bournvita Chocolate Nutrition Drink is a scientifically designed formula, crafted by nutritionists with a bundle of nutrients that are known to support physical strength (calcium, Vitamin D and magnesium are known to maintain bone and muscle ), mental strength (iron, iodine and zinc which help in normal cognitive functions) and immune strength (Vitamin C, Vitamin D, zinc and iron to support the immune functions). Thus, supporting strength and providing high energy. 2 servings of Bournvita provide 50% RDA of Vitamin D (Recommended Dietary Allowance requirement for children (7-9 years), ICMR -NIN, 2020). Bournvita chocolate drink can be consumed as a part of a daily balanced diet and lifestyle.",
+   "ingredients": "Cereal Extract 58%* (Barley, Millets, Wheat), Sugar, Cocoa Solids, Maltodextrin, Colour (150c), Wheat Gluten, Minerals, Liquid Glucose, Emulsifiers (322, 471), Vitamins, Raising Agent (500(Ii)), Flavours (Natural, Nature Identical And Artificial (Vanilla) Flavouring Substances), Milk Solids, Lodised Salt. Allergen Information: Contains Milk, Wheat, Barley, Sulphites, Soy.",
+   "nutritionalInfo": {
+    "Energy": "381 kcal",
+    "Protein": "7 g",
+    "Carbohydrates": "86 g",
+    "Total Sugars": "46 g",
+    "Added Sugars": "32.2 g",
+    "Dietary Fibre": "3.5 g",
+    "Total Fat": "1.8 g",
+    "Saturated Fat": "0.9 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.1 mg",
+    "Sodium": "175 mg",
+    "Vitamin D2": "18.8 mcg",
+    "Calcium": "500 mg",
+    "Manganese": "1.8 mg",
+    "Iodine": "113 mcg",
+    "Iron": "23 mg",
+    "Zinc": "7.4 mg",
+    "Vitamin A": "790 mcg",
+    "Vitamin C": "95 mg",
+    "Copper": "1.1 mg",
+    "Selenium": "19 mcg",
+    "Biotin": "15 mcg",
+    "Vitamin B12": "1.5 mcg",
+    "Vitamin B5": "2.5 mg",
+    "Vitamin B9": "75 mcg"
+   },
+   "usageInstructions": "Mix with hot milk or water and stir well before drinking.",
+   "manufacturerName": "Shree Warana Sahakari Dudh Utpadak Prakriya Sangh Limited.& Marketed by",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "5 Star Magic Jar",
+  "handle": "5-star-magic-jar",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/206982_40-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+    },
+    "barcode": "7622202849183"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206982_40-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206982-2_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206982-3_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206982-4_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206982-5_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206982-6_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206982-7_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206982-8_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bournvita 5 Star Magic Nutrition Drink with caramel flavour is a scientifically designed formula, crafted by nutritionists with a bundle of nutrients that are known to support Physical strength (Calcium, Vitamin D and Magnesium are known to maintain Bone and Muscle nutrition); Mental Strength (Iron, Iodine and Zinc which help in normal cognitive functions); Immune strength (Vitamin C, Vitamin D, Zinc and Iron to support the immune functions). Thus, supporting strength and providing high energy.",
+   "ingredients": "Cereal Extract 63%* (Barley, Wheat), Sugar, Milk Solids, Colour (150c), Maltodextrin, Minerals, Emulsifiers (322,471), Flavours (Natural and Nature Identical Flavouring Substances), Cocoa Solids (0.5%*), Raising Agent (500(ii)), Wheat Gluten, Vitamins, Iodised Salt.\nAllergen Information: Contains Milk, Wheat, Barley, Soy.",
+   "nutritionalInfo": {
+    "Energy": "385 kcal",
+    "Protein": "7 g",
+    "Carbohydrate": "87 g",
+    "Total Sugars": "48 g",
+    "Added Sugars": "29.6 g",
+    "Total Fat": "0.7 g",
+    "Saturated Fat": "0.2 g",
+    "Cholesterol": "0.2 mg",
+    "Trans Fat": "0 g",
+    "Sodium": "341 mg",
+    "Vitamin D2": "18.8 mcg",
+    "Calcium": "500 mg",
+    "Manganese": "1.8 mg",
+    "Iodine": "113 mcg",
+    "Iron": "23 mg",
+    "Zinc": "7.4 mg",
+    "Vitamin A": "790 mcg",
+    "Vitamin C": "95 mg",
+    "Copper": "1.1 mg",
+    "Selenium": "19 mcg",
+    "Biotin": "15 mcg",
+    "Vitamin B12": "1.5 mcg",
+    "Vitamin B5": "2.5 mg",
+    "Vitamin B9": "75 mcg"
+   },
+   "manufacturerName": "Barmalt Malting (India) Private Limited",
+   "fssaiLicense": "10014022002711",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "5 Star Magic Refill",
+  "handle": "5-star-magic-refill",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/206981_35-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "440",
+    "compare_at_price": "440",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126617_18-bournvita-chocolate-health-drink-5-star-magic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206981_35-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206981-2_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206981-3_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206981-4_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206981-5_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206981-6_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206981-7_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206981-8_3-cadbury-chocolate-health-drink-bournvita-5-star-magic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bournvita 5 Star Magic Nutrition Drink with caramel flavour is a scientifically designed formula, crafted by nutritionists with a bundle of nutrients that are known to support Physical strength (Calcium, Vitamin D and Magnesium are known to maintain Bone and Muscle nutrition); Mental Strength (Iron, Iodine and Zinc which help in normal cognitive functions); Immune strength (Vitamin C, Vitamin D, Zinc and Iron to support the immune functions). Thus, supporting strength and providing high energy.",
+   "ingredients": "Cereal Extract 63%* (Barley, Wheat), Sugar, Milk Solids, Colour (150c), Maltodextrin, Minerals, Emulsifiers (322,471), Flavours (Natural and Nature Identical Flavouring Substances), Cocoa Solids (0.5%*), Raising Agent (500(ii)), Wheat Gluten, Vitamins, lodised Salt.\nAllergen Information: Contains Milk, Wheat, Barley, Soy.",
+   "nutritionalInfo": {
+    "Energy": "385 kcal",
+    "Protein": "7 g",
+    "Carbohydrate": "87 g",
+    "Total Sugars": "48 g",
+    "Added Sugars": "29.6 g",
+    "Total Fat": "0.7 g",
+    "Saturated Fat": "0.2 g",
+    "Cholesterol": "0.2 mg",
+    "Trans Fat": "0 g",
+    "Sodium": "341 mg",
+    "Vitamin D2": "18.8 mcg",
+    "Calcium": "500 mg",
+    "Manganese": "1.8 mg",
+    "Iodine": "113 mcg",
+    "Iron": "23 mg",
+    "Zinc": "7.4 mg",
+    "Vitamin A": "790 mcg",
+    "Vitamin C": "95 mg",
+    "Copper": "1.1 mg",
+    "Selenium": "19 mcg",
+    "Biotin": "15 mcg",
+    "Vitamin B12": "1.5 mcg",
+    "Vitamin B5": "2.5 mg",
+    "Vitamin B9": "75 mcg"
+   },
+   "manufacturerName": "Barmalt Malting (India) Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
+ },
+ {
+  "title": "50% Less Sugar Health Drink",
+  "handle": "50-less-sugar-health-drink",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "255",
+    "compare_at_price": "255",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245518_1-cadbury-bourn-vita-nutri-health-drink-with-50-less-sugar-for-strong-immunity-chocolate-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245518_1-cadbury-bourn-vita-nutri-health-drink-with-50-less-sugar-for-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245518-2_1-cadbury-bourn-vita-nutri-health-drink-with-50-less-sugar-for-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245518-3_1-cadbury-bourn-vita-nutri-health-drink-with-50-less-sugar-for-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245518-4_1-cadbury-bourn-vita-nutri-health-drink-with-50-less-sugar-for-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245518-5_1-cadbury-bourn-vita-nutri-health-drink-with-50-less-sugar-for-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245518-6_1-cadbury-bourn-vita-nutri-health-drink-with-50-less-sugar-for-strong-immunity-chocolate-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cadbury Bournvita is a nutrition brand with a 70 year legacy in India. Cadbury Bournvita is a food drink now with 50% less sugar with inner strength formula which has nutrients that support - Immune system (8 immunity nutrients), Strong bones (Vitamin D, Phosphorous) and Active Brain (Iron, Iodine, Vitamin B2, Vitamin B12) keeping the sugar levels as constraints for the -conscious people. Recommended 2 serves per day as part of a balanced diet and a lifestyle.",
+   "ingredients": "Cereal Extract 62%* (Barley, Wheat), Soluble Corn Fibre, Cocoa Solids, Sugar, Starch, Colour (150c), Maltodextrin, Wheat Gluten, Liquid Glucose, Emulsifiers (322, 471), Milk Solids, Vitamins, Minerals, Raising Agent (500(Ii)), Flavours (Natural, Nature Id",
+   "manufacturerName": "Mondelez India Foods Private limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
+ },
+ {
+  "title": "Zero Added Sugar Health Drink",
+  "handle": "zero-added-sugar-health-drink",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "128",
+    "compare_at_price": "128",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882_1-bournvita-nutrition-drink.jpg"
+    },
+    "barcode": "7622202895371"
+   },
+   {
+    "title": "500g",
+    "price": "307",
+    "compare_at_price": "307",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40354908_9-bournvita-zero-added-sugar-nutrition-drink.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882_1-bournvita-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882-2_1-bournvita-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882-3_1-bournvita-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882-4_1-bournvita-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882-5_1-bournvita-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882-6_1-bournvita-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882-7_1-bournvita-nutrition-drink.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40376882-8_1-bournvita-nutrition-drink.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Bournvita Zero Added Sugar is a delicious chocolate nutrition drink crafted with 19 essential nutrients to support everyday strength. Scientifically designed by nutritionists, it contains key nutrients such as Calcium, Vitamin D and Magnesium for physical strength, along with Iron, Iodine and Zinc for mental strength. Enriched with Vitamin C, D, Zinc and Iron, it supports overall nutrition. Made with no added sugar, preservatives or sweeteners, it contains only naturally occurring sugars.",
+   "ingredients": "Cereal Extract 73%* (Barley, Wheat, Millets), Soluble Fibre (Corn), Cocoa Solids, Colour (150c), Minerals, Emulsifiers (322, 471), Raising Agent (500(ii)), Vitamins, Milk Solids, Flavours (Natural, Nature Identical and Artificial (Vanilla) Flavouring Substances), Iodised Salt.\nAllergen Information: Contains Milk, Wheat, Barley, Soy.",
+   "nutritionalInfo": {
+    "Energy": "360 kcal",
+    "Protein": "7 g",
+    "Carbohydrates": "86 g",
+    "Total Sugars": "22 g",
+    "Added Sugars": "0 g",
+    "Dietary Fibre": "14 g",
+    "Total Fat": "1.8 g",
+    "Saturated Fat": "0.9 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0.1 mg",
+    "Sodium": "250 mg",
+    "Vitamin D2": "18.8 mcg",
+    "Calcium": "500 mg",
+    "Manganese": "1.8 mg",
+    "Iodine": "113 mcg",
+    "Iron": "23 mg",
+    "Zinc": "7.4 mg",
+    "Vitamin A": "790 mcg",
+    "Vitamin C": "95 mg",
+    "Copper": "1.1 mg",
+    "Selenium": "19 mcg",
+    "Biotin": "15 mcg",
+    "Vitamin B12": "1.5 mcg",
+    "Vitamin B5": "2.5 mg",
+    "Vitamin B9": "75 mcg"
+   },
+   "manufacturerName": "Barmalt Malting (India) Private Limited",
+   "fssaiLicense": "10013064000331",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Women's Health Drink",
+  "handle": "women-s-health-drink",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730_13-bournvita-womens-health-drink-bournvita.jpg"
+    },
+    "barcode": "7622201423438"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730_13-bournvita-womens-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730-2_13-bournvita-womens-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730-3_14-bournvita-womens-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730-4_13-bournvita-womens-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730-5_13-bournvita-womens-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730-6_7-bournvita-womens-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730-7_7-bournvita-womens-health-drink-bournvita.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40135730-8_2-bournvita-womens-health-drink-bournvita.jpg"
+   }
+  ],
+  "details": {
+   "description": "Cadbury Bournvita is a nutrition brand with a 70 year legacy in India. Cadbury Bournvita for Women is a food drink with Acti- Strength formula has 100 per cent RDA of Calcium, Vitamin D, Iron and Folic acid required for women. Recommended 2 serves per day as part of a balanced diet and a lifestyle.",
+   "ingredients": "Cereal Extract (51%*), Sugar, Cocoa Solids, Milk Solids, Caramel(150c), Protein Isolate, Maltodextrin, Liquid Glucose, Emulsifiers (322, 471), Raising Agent (500(ii)), Vitamins, Minerals, Salt . contains Permitted Natural Colour (150 C) And Added Flavour (Artificial (Vanilla) Flavouring Substances).",
+   "manufacturerName": "Mondelez India Food Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lil Champs",
+  "handle": "lil-champs",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185413_5-cadbury-bourn-vita-lil-champs-health-drink-boosts-immunity-physical-growth-for-2-5-years.jpg"
+    },
+    "barcode": "7622201679286"
+   },
+   {
+    "title": "500g",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/249250_27-bournvita-chocolate-health-drink-bournvitaa-lil-champs.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185413_5-cadbury-bourn-vita-lil-champs-health-drink-boosts-immunity-physical-growth-for-2-5-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185413-2_5-cadbury-bourn-vita-lil-champs-health-drink-boosts-immunity-physical-growth-for-2-5-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185413-3_7-cadbury-bourn-vita-lil-champs-health-drink-boosts-immunity-physical-growth-for-2-5-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185413-4_5-cadbury-bourn-vita-lil-champs-health-drink-boosts-immunity-physical-growth-for-2-5-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185413-5_5-cadbury-bourn-vita-lil-champs-health-drink-boosts-immunity-physical-growth-for-2-5-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185413-6_2-cadbury-bourn-vita-lil-champs-health-drink-boosts-immunity-physical-growth-for-2-5-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185413-7_2-cadbury-bourn-vita-lil-champs-health-drink-boosts-immunity-physical-growth-for-2-5-years.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/249250_27-bournvita-chocolate-health-drink-bournvitaa-lil-champs.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cadbury Bournvita Li'l Champs is a nutritional Nutrition Drink specially formulated for children between the ages of 2 to 5 years. By the age of 5, 90% of your child's brain growth is complete. Bournvita Lil Champs contains Nutri-smart DHA and nutrients that support Brain development, Physical growth and the Immune system.",
+   "ingredients": "Cereal Extract (51%*), Sugar, Cocoa Solids, Milk Solids, Caramel(150c), Protein Isolate, Maltodextrin, Liquid Glucose, Emulsifiers (322, 471), Raising Agent (500(Ii)), Vitamins, Minerals, Salt . Contains Permitted Natural Colour (150 C) And Added Flavour (Artificial (Vanilla) Flavouring Substances).",
+   "usageInstructions": "Add 2 teaspoons to a glass of milk. Stir well and drink.",
+   "manufacturerName": "Mondelez India Foods Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
+ },
+ {
+  "title": "Crunchy Spread with Hazelnut",
+  "handle": "crunchy-spread-with-hazelnut",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517-2_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517-3_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517-4_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517-5_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517-6_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517-7_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245517-8_4-cadbury-bourn-vita-crunchy-spread-with-hazelnut-creamy-provides-strong-immunity-chocolate-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The all-time favourite taste of Cadbury Bournvita in a crunchy spread with a hazelnut twist. It is a sweet chocolate-flavoured paste that is crunchy and does not solidify, even at room temperature. Spread it on anything and everything, like toasts, roti, sandwiches, cakes, ice cream, pancakes, muffins, pitas, etc. Delicious, crunchy, and creamy, this spread must be tried by all Cadbury bournvita fans.",
+   "ingredients": "Cereal Extract 62%* (Barley, Wheat), Soluble Corn Fibre, Cocoa Solids, Sugar, Starch, Colour (150c), Maltodextrin, Wheat Gluten, Liquid Glucose, Emulsifiers (322, 471), Milk Solids, Vitamins, Minerals, Raising Agent (500(Ii)), Flavours (Natural, Nature Identical And Artifiacial (Vanilla) Flavouring Substances), Lodised Salt.",
+   "manufacturerName": "Parsons Nutritionals Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002711"
+  }
+ },
+ {
+  "title": "Biscuits",
+  "handle": "biscuits",
+  "vendor": "Bournvita (Mondelez)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "41.85g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40074971_25-bournvita-biscuits-cookies-with-prohealth-vitamins.jpg"
+    },
+    "barcode": "7622202818837"
+   },
+   {
+    "title": "111.6g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40074972_25-bournvita-biscuits-cookies-with-prohealth-vitamins-super-value-pack.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40091017_11-cadbury-biscuits-tiffin-pack.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208740_10-cadbury-bournvita-biscuits-super-value-family-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40074971_25-bournvita-biscuits-cookies-with-prohealth-vitamins.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40074971-2_17-bournvita-biscuits-cookies-with-prohealth-vitamins.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40074971-3_17-bournvita-biscuits-cookies-with-prohealth-vitamins.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40074971-4_11-bournvita-biscuits-cookies-with-prohealth-vitamins.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40074971-5_11-bournvita-biscuits-cookies-with-prohealth-vitamins.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40074971-6_1-bournvita-biscuits-cookies-with-prohealth-vitamins.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40074972_25-bournvita-biscuits-cookies-with-prohealth-vitamins-super-value-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40091017_11-cadbury-biscuits-tiffin-pack.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful fusion of rich chocolate and wholesome nutrition with Cadbury Bournvita Biscuits. These crunchy, chocolatey cookies offer the comforting taste of Bournvita, combined with the perfect balance of flavour and energy. Whether you're enjoying them as a morning treat, a tasty tiffin, or part of a healthy breakfast, these biscuits provide the ideal combination of taste and goodness. Packed with the nourishing benefits of iron and calcium, each bite delivers the satisfying crunch and the wholesome goodness of the Bournvita blend. Treat yourself to the irresistible fusion of indulgence and nutrition with Cadbury Bournvita Biscuits.",
+   "ingredients": "Refined Wheat Flour (Maida), Sugar, Palmolein oil, Cereal Based Beverage Mix, Invert sugar, Cocoa solids, Minerals, Leavening Agents, lodised salt, Flavours, Milk solids, Emulsifier, colour, Vitamins",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g Serving_Size: 23g Energy: 456kcal Protein: 7.1g Carbohydrate: 72.8g Cholesterol: mg Total Sugars: 28.3g Added Sugars: 25.5g Total Fat: 15.3g Saturated Fat: 6.8g Trans Fat: .1g Vitamin B2 (Riboflavin): .24mg Folic acid: 15.mcg Vitamin D: 2.25mcg Calcium: 282mg Iron: 6.5mg Sodium: 357mg"
+   },
+   "manufacturerName": "Mrs. Bectors Food Specialities Limited",
+   "countryOfOrigin": "India"
+  }
+ }
+]
