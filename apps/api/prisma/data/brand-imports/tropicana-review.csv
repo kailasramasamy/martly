@@ -1,0 +1,17 @@
+site_title,product_name,action,category,pack_sizes_mrp,online_prices,images,flags
+100% Apple Juice,Tropicana 100% Apple Juice,create,Beverages > Juices & Fruit Drinks > Fruit Juice (100%),200ml ₹30 | 1L ₹145,200ml ₹30 | 1L ₹145,8,
+100% Orange Juice,Tropicana 100% Orange Juice,update,Beverages > Juices & Fruit Drinks > Fruit Juice (100%),200ml ₹30,200ml ₹30,7,
+100% Mixed Fruit Juice,Tropicana 100% Mixed Fruit Juice,create,Beverages > Juices & Fruit Drinks > Fruit Juice (100%),200ml ₹30 | 1L ₹145,200ml ₹30 | 1L ₹145,8,
+Premium Gold Orange Juice,Tropicana Premium Gold Orange Juice,create,Beverages > Juices & Fruit Drinks > Fruit Juice (100%),1L ₹150,1L ₹150,8,
+Apple Delight,Tropicana Apple Delight,create,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,1L ₹105,1L ₹105,5,
+Guava Delight,Tropicana Guava Delight,create,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,180ml ₹20 | 500ml ₹40 | 1L ₹110,180ml ₹20 | 500ml ₹40 | 1L ₹110,8,500ml: out of stock online
+Litchi Delight,Tropicana Litchi Delight,create,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,1L ₹115,1L ₹115,5,
+Mango Delight,Tropicana Mango Delight,update,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,180ml ₹20 | 1L ₹115,180ml ₹20 | 1L ₹115,8,
+Mixed Fruit Delight,Tropicana Mixed Fruit Delight,create,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,1L ₹120,1L ₹120,5,
+Orange Delight,Tropicana Orange Delight,create,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,180ml ₹19 | 1L ₹120,180ml ₹19 | 1L ₹120,8,
+Pineapple Delight,Tropicana Pineapple Delight,create,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,180ml ₹20 | 1L ₹130,180ml ₹20 | 1L ₹130,8,
+Cranberry Delight,Tropicana Cranberry Delight,create,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,1L ₹140,1L ₹140,6,
+Pomegranate Delight,Tropicana Pomegranate Delight,create,Beverages > Juices & Fruit Drinks > Fruit Nectar & Drinks,1L ₹120,1L ₹120,5,
+Frutz Appletini,Tropicana Frutz Appletini,create,Beverages > Juices & Fruit Drinks > Fruit Drinks,180ml ₹20,180ml ₹20,7,
+Frutz Mixed Fruit Magic,Tropicana Frutz Mixed Fruit Magic,create,Beverages > Juices & Fruit Drinks > Fruit Drinks,180ml ₹19 | 500ml ₹30 | 1L ₹160,180ml ₹19 | 500ml ₹30 | 1L ₹160,8,
+Frutz Litchi Love,Tropicana Frutz Litchi Love,create,Beverages > Juices & Fruit Drinks > Fruit Drinks,180ml ₹19,180ml ₹19,7,

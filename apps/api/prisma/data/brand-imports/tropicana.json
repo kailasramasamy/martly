@@ -1,0 +1,142 @@
+{
+  "brand": "Tropicana (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt. Ltd.",
+  "feed": "tropicana-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tropicana/logo-6456f7a1.png",
+  "themeColor": "#F47B20",
+  "themeColorSecondary": "#00843D",
+  "namePrefix": "Tropicana ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^100%\\ Apple\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^100%\\ Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^100%\\ Mixed\\ Fruit\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Gold\\ Orange\\ Juice$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Juice (100%)"
+      ]
+    },
+    {
+      "match": "^Apple\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Guava\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Litchi\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Mango\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Orange\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Cranberry\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Pomegranate\\ Delight$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Nectar & Drinks"
+      ]
+    },
+    {
+      "match": "^Frutz\\ Appletini$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Frutz\\ Mixed\\ Fruit\\ Magic$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Frutz\\ Litchi\\ Love$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    }
+  ]
+}

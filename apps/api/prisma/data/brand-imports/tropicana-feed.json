@@ -1,0 +1,752 @@
+[
+ {
+  "title": "100% Apple Juice",
+  "handle": "100-apple-juice",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265691_11-tropicana-100-apple-juice.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229785_13-tropicana-100-juice-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265691_11-tropicana-100-apple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265691-2_3-tropicana-100-apple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265691-3_3-tropicana-100-apple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265691-4_3-tropicana-100-apple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265691-5_3-tropicana-100-apple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265691-6_2-tropicana-100-apple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265691-7_2-tropicana-100-apple-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229785_13-tropicana-100-juice-apple.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "100% Orange Juice",
+  "handle": "100-orange-juice",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265700_11-tropicana-100-orange-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265700_11-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265700-2_3-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265700-3_3-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265700-4_3-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265700-5_3-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265700-6_2-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265700-7_2-tropicana-100-orange-juice.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "100% Mixed Fruit Juice",
+  "handle": "100-mixed-fruit-juice",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/292475_10-tropicana-100-mixed-fruit-juice.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265729_13-tropicana-100-juice-mixed-fruit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292475_10-tropicana-100-mixed-fruit-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292475-2_2-tropicana-100-mixed-fruit-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292475-3_2-tropicana-100-mixed-fruit-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292475-4_2-tropicana-100-mixed-fruit-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292475-5_2-tropicana-100-mixed-fruit-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292475-6_1-tropicana-100-mixed-fruit-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292475-7_1-tropicana-100-mixed-fruit-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/292475-8_1-tropicana-100-mixed-fruit-juice.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Premium Gold Orange Juice",
+  "handle": "premium-gold-orange-juice",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229787_23-tropicana-100-orange-juice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229787_23-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229787-2_14-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229787-3_15-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229787-4_14-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229787-5_13-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229787-6_12-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229787-7_12-tropicana-100-orange-juice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229787-8_1-tropicana-100-orange-juice.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Apple Delight",
+  "handle": "apple-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229791_20-tropicana-delight-fruit-juice-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229791_20-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229791-2_1-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229791-3_1-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229791-4_1-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229791-5_1-tropicana-delight-fruit-juice-apple.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Guava Delight",
+  "handle": "guava-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265693_16-tropicana-delight-fruit-juice-guava.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199585_2-tropicana-guava-delight.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229793_20-tropicana-fruit-juice-delight-guava.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265693_16-tropicana-delight-fruit-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265693-2_9-tropicana-delight-fruit-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265693-3_9-tropicana-delight-fruit-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265693-4_9-tropicana-delight-fruit-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265693-5_9-tropicana-delight-fruit-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265693-6_8-tropicana-delight-fruit-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265693-7_8-tropicana-delight-fruit-juice-guava.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265693-8_2-tropicana-delight-fruit-juice-guava.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Litchi Delight",
+  "handle": "litchi-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229790_19-tropicana-fruit-juice-delight-litchi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229790_19-tropicana-fruit-juice-delight-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229790-2_1-tropicana-fruit-juice-delight-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229790-3_1-tropicana-fruit-juice-delight-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229790-4_1-tropicana-fruit-juice-delight-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229790-5_1-tropicana-fruit-juice-delight-litchi.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mango Delight",
+  "handle": "mango-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265710_14-tropicana-delight-fruit-juice-mango.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229794_18-tropicana-fruit-juice-delight-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265710_14-tropicana-delight-fruit-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265710-2_9-tropicana-delight-fruit-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265710-3_9-tropicana-delight-fruit-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265710-4_9-tropicana-delight-fruit-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265710-5_9-tropicana-delight-fruit-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265710-6_8-tropicana-delight-fruit-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265710-7_8-tropicana-delight-fruit-juice-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265710-8_2-tropicana-delight-fruit-juice-mango.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Mixed Fruit Delight",
+  "handle": "mixed-fruit-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229789_16-tropicana-fruit-juice-delight-mixed-fruit.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229789_16-tropicana-fruit-juice-delight-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229789-2_1-tropicana-fruit-juice-delight-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229789-3_1-tropicana-fruit-juice-delight-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229789-4_1-tropicana-fruit-juice-delight-mixed-fruit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/229789-5_1-tropicana-fruit-juice-delight-mixed-fruit.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Orange Delight",
+  "handle": "orange-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265719_10-tropicana-delight-fruit-juice-orange.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229792_21-tropicana-fruit-juice-delight-orange.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265719_10-tropicana-delight-fruit-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265719-2_3-tropicana-delight-fruit-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265719-3_3-tropicana-delight-fruit-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265719-4_3-tropicana-delight-fruit-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265719-5_3-tropicana-delight-fruit-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265719-6_2-tropicana-delight-fruit-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265719-7_2-tropicana-delight-fruit-juice-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265719-8_2-tropicana-delight-fruit-juice-orange.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pineapple Delight",
+  "handle": "pineapple-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265701_10-tropicana-delight-fruit-juice-pineapple.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/229788_16-tropicana-delight-fruit-juice-pineapple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265701_10-tropicana-delight-fruit-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265701-2_3-tropicana-delight-fruit-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265701-3_3-tropicana-delight-fruit-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265701-4_3-tropicana-delight-fruit-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265701-5_3-tropicana-delight-fruit-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265701-6_2-tropicana-delight-fruit-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265701-7_2-tropicana-delight-fruit-juice-pineapple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265701-8_2-tropicana-delight-fruit-juice-pineapple.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cranberry Delight",
+  "handle": "cranberry-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30001744_19-tropicana-fruit-juice-delight-cranberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30001744_19-tropicana-fruit-juice-delight-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30001744-2_1-tropicana-fruit-juice-delight-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30001744-3_1-tropicana-fruit-juice-delight-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30001744-4_1-tropicana-fruit-juice-delight-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30001744-5_1-tropicana-fruit-juice-delight-cranberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30001744-6_1-tropicana-fruit-juice-delight-cranberry.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pomegranate Delight",
+  "handle": "pomegranate-delight",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/293396_21-tropicana-delight-fruit-juice-pomegranate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293396_21-tropicana-delight-fruit-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293396-2_1-tropicana-delight-fruit-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293396-3_1-tropicana-delight-fruit-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293396-4_1-tropicana-delight-fruit-juice-pomegranate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/293396-5_1-tropicana-delight-fruit-juice-pomegranate.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Frutz Appletini",
+  "handle": "frutz-appletini",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265770_11-tropicana-delight-fruit-juice-apple.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265770_11-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265770-2_4-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265770-3_4-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265770-4_4-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265770-5_4-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265770-6_3-tropicana-delight-fruit-juice-apple.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265770-7_3-tropicana-delight-fruit-juice-apple.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Frutz Mixed Fruit Magic",
+  "handle": "frutz-mixed-fruit-magic",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333260_1-tropicana-mixed-fruit-magic-tetra.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199584_3-tropicana-mixed-fruit-delight.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326796_1-tropicana-frutz-mixed-fruit-magic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333260_1-tropicana-mixed-fruit-magic-tetra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333260-2_1-tropicana-mixed-fruit-magic-tetra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333260-3_1-tropicana-mixed-fruit-magic-tetra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333260-4_1-tropicana-mixed-fruit-magic-tetra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333260-5_1-tropicana-mixed-fruit-magic-tetra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333260-6_1-tropicana-mixed-fruit-magic-tetra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333260-7_1-tropicana-mixed-fruit-magic-tetra.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199584_3-tropicana-mixed-fruit-delight.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Frutz Litchi Love",
+  "handle": "frutz-litchi-love",
+  "vendor": "Tropicana (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "19",
+    "compare_at_price": "19",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265688_10-tropicana-delight-fruit-juice-litchi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265688_10-tropicana-delight-fruit-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265688-2_4-tropicana-delight-fruit-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265688-3_4-tropicana-delight-fruit-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265688-4_4-tropicana-delight-fruit-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265688-5_4-tropicana-delight-fruit-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265688-6_3-tropicana-delight-fruit-juice-litchi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265688-7_3-tropicana-delight-fruit-juice-litchi.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]
