@@ -51,7 +51,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325702-8_1-raw-pressery-refreshers-aam-mango.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate sip of bliss with Raw Pressery Refreshers Aam Mango, a delightful and invigorating beverage that captures the essence of ripe, juicy Alphonso mangoes. Bursting with the natural sweetness and luscious texture of fresh mango pulp, this refreshing drink provides a burst of tropical flavour in every sip. Crafted with crisp, refreshing water, it's the perfect thirst-quenching companion for any occasion - whether you're looking to cool down on a hot summer's day or simply craving a refreshing taste experience. With its tangy and sweet notes, this beverage is not just a treat for your taste buds, but also a healthier choice for the health-conscious consumer. Indulge in the richness of summer and experience the true essence of the mango in every refreshing sip of Raw Pressery Refreshers Aam Mango.",
+   "ingredients": "Water, Mango Pulp (28%), Khandsari Sugar, Pectin, Acidity Regulator (Ins 330), Antioxidants [(Vitamin C- Ins 300), Ins 224], Stevia, Natural Flavouring Substances, Colour [Ins 160 A(Iii)]",
+   "nutritionalInfo": {
+    "Serving Size": "100ml",
+    "Energy Value": "5 kcal",
+    "Total Fat": "0 g",
+    "Sodium": "1 mg",
+    "Total Carbohydrates": "0 g",
+    "Total Sugars": "0 g",
+    "Added Sugars": "0 g",
+    "Protein": "0 g",
+    "Vitamin C": "0 mg",
+    "Calcium": "0 mg",
+    "Potassium": "0 mg"
+   },
+   "storageInstructions": "Store beverages in a cool, dry place, away from direct sunlight and strong odours. Keep containers tightly sealed to maintain freshness and always check the expiry date before use.",
+   "manufacturerName": "(VB) Vinayak Beverages Sy.No. 398/A",
+   "fssaiLicense": "10014047000299",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pineapple Refresher",
@@ -105,7 +126,27 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325700-8_1-raw-pressery-refreshers-pineapple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Raw Pressery Refreshers Pineapple is a refreshing drink that brings the taste of the tropics straight to your glass. With its sweet and tangy pineapple flavour, this vibrant beverage is a delight for the taste buds and a thirst-quencher like no other. Whether you're lounging by the pool, hosting a summer barbecue, or simply in need of a mid-day refreshment, Raw Pressery Refreshers Pineapple is the perfect choice. It's not just a beverage - it's an escape to a tropical paradise. Sit back, relax, and let the taste of Raw Pressery Refreshers Pineapple transport you to your very own island getaway.",
+   "ingredients": "Water, Pineapple Pulp (20%), Khandsari Sugar, Acidity Regulator (Ins 330), Pectin, Antioxidants [(Vitamin C- Ins 300), Ins 224], Natural Flavouring Substances, Colour [(Ins 160A(Iii))], Stevia",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml, 200ml",
+    "Serving Size": "1 glass (200ml)",
+    "Energy Value": "29.1kcal",
+    "Total Fat": "0g",
+    "Sodium": "6.7mg",
+    "Total Carbohydrates": "7.1g",
+    "Total Sugars": "6.5g",
+    "Added Sugars": "4.46g",
+    "Protein": "0.2g",
+    "Vitamin C": "13.9mg",
+    "calcium": "3.9mg",
+    "Potassium": "28.2mg",
+    "%RDA": "Recommended Dietary Allowance Of An Average Adult (2000kcal), As Per Fssai And Icmr RDA Table, 2020"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight"
+  }
  },
  {
   "title": "Pink Guava Chilli Refresher",
@@ -159,7 +200,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40325701-8_1-raw-pressery-refreshers-pink-guava-chilli.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a delightful fusion of flavours with the Raw Pressery Refreshers Pink Guava Chilli. This unique and refreshing beverage combines the succulent sweetness of pink guava pulp with a delightful kick of red chilli, creating a perfectly balanced taste experience. Bursting with tropical vibrancy and a zesty adventure in every sip, this drink is perfect for cooling off after a workout, providing a midday pick-me-up, or serving as a fun and invigorating choice at any gathering. Made from high-quality fruit pulp and rich in vitamin C, this delightful and refreshing beverage is best served chilled, offering a deliciously daring way to hydrate and satisfy your thirst.",
+   "ingredients": "Water, Pink Guava Pulp (20%), Khandsari Sugar, Pectin, Black Salt, Acidity Regulator (Ins 330), Red Chilli, Natural Flavouring Substances, Antioxidants [(Vitamin C- Ins 300), Ins 224], Stevia",
+   "nutritionalInfo": {
+    "Serving Size": "100ml",
+    "Energy Value": "55",
+    "Sodium": "28.26",
+    "Total Sugars": "22g",
+    "Added Sugars": "28.26",
+    "Protein": "0.30"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "(VB) Vinayak Beverages Sy.No. 398/A",
+   "fssaiLicense": "10014047000299",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cranberry Refresher",
@@ -204,7 +261,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341063-8_1-raw-pressery-cranberry-refreshers.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Sip on the bold and flavourful taste of Raw Pressery Cranberry Refreshers! Tart, sweet, and bursting with berry goodness, this delightful drink is a perfect pick-me-up for any time of the day. Refreshing and fruity, it's a delicious way to stay hydrated and energised. Experience the goodness of cranberries like never before.",
+   "ingredients": "Water, Khand¬sari Sugar, Cranberry Puree (3%), Cranberry Concentrate (1.63%), Acidity Regulator (INS 330), Salt, Pectin, Vitamin C (Antioxidant INS 300), Natural Flavouring Substances, Stevia.\nEquivalent To 18% Cranberry Juice.\nAllergen Advice: Manufactured In The Same Facility Which Processes Nut And Milk.",
+   "nutritionalInfo": {
+    "Energy": "27.2 kcal",
+    "Total Fat": "0 g",
+    "Sodium": "21.54 mg",
+    "Total Carbohydrates": "6.6 g",
+    "Dietary Fibre": "0.1 g",
+    "Total Sugars": "5.81 g",
+    "Added Sugars": "4.67 g",
+    "Protein": "0.2 g",
+    "Vitamin A": "10.09 µg",
+    "Vitamin C": "11.16 mg",
+    "Calcium": "4.71 mg",
+    "Iron": "0.49 mg",
+    "Potassium": "14.38 mg"
+   },
+   "storageInstructions": "Store away from direct sunlight\nKeep refrigerated once opened\nConsume within two days of opening",
+   "manufacturerName": "(VB) Vinayak Beverages Sy.No. 398/A",
+   "fssaiLicense": "10014047000299",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Aam Panna",
@@ -220,7 +300,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40312279_2-raw-pressery-raw-mango-juiceaam-panna.jpg"
-    }
+    },
+    "barcode": "8904258703268"
    },
    {
     "title": "750ml",
@@ -258,7 +339,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312279-8_1-raw-pressery-raw-mango-juiceaam-panna.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Rediscover the taste of childhood with Raw Pressery Aam Panna. This irresistibly tangy and sweet beverage will transport you back to nostalgic memories. Indulge in its refreshing flavours that not only quench your thirst but also provide a cool and revitalising experience. Savour the delightful blend of raw mango and aromatic spices, creating a truly satisfying drink. Let Raw Pressery Aam Panna be your go-to choice for a delicious and nostalgic refreshment that brings joy and a sense of cooling relief.",
+   "ingredients": "Water, Mango Pulp (10%), Fructose, Lemon Juice, Amchur Powder, Black Salt, Acidity Regulator (INS 330), Mixed Masala, Iodised Salt, Spirulina, Antioxidants [(Vitamin C - INS 300), INS 224], Citrus Fibre, Stevia",
+   "nutritionalInfo": {
+    "Serving Size": "200ml",
+    "Energy Value": "51.88kcal",
+    "Total Fat": "0.12g",
+    "Sodium": "160.44mg",
+    "Total Carbohydrates": "12.20g",
+    "Dietary Fiber": "0.76g",
+    "Total Sugars": "10.72g",
+    "Added Sugars": "10.28g",
+    "Protein": "0.5g",
+    "Vitamin C": "27.20mg",
+    "Iron": "1.80mg",
+    "Calcium": "7.60mg",
+    "Potassium": "68.54mg"
+   },
+   "storageInstructions": "*Store away from direct sunlight",
+   "manufacturerName": "Raw Pressery Pvt Ltd",
+   "fssaiLicense": "10016022005650",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Masala Shikanji",
@@ -312,7 +416,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40312280-8_1-raw-pressery-masala-lemonshikanji-juice.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the invigorating blend of tangy lemon and Indian spices with Raw Pressery Masala Lemon/Shikanji Juice. This delightful twist on traditional lemonade offers a burst of flavours that will awaken your taste buds. Indulge in the refreshing zing and savoury notes of our Masala Lemon/Shikanji Juice for a truly flavourful experience. Embrace this delicious and enticing beverage that promises to add a new level of enjoyment to your everyday routine. Give it a try and embark on a journey of taste and satisfaction.",
+   "ingredients": "Water, Lemon Juice (5%), Honey, Fructose, Rock Salt, Iodised Salt, Mixed Masala (0.26%), Acidity Regulator (INS 330), Antioxidants [(Vitamin C-INS 300), INS 224], Stevia",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (200ml)",
+    "Energy Value": "20.64kcal",
+    "Total Fat": "0g",
+    "Sodium": "314.96mg",
+    "Total Carbohydrates": "5.16g",
+    "Total Sugars": "4.7g",
+    "Added Sugars": "0.12g",
+    "Protein": "0g",
+    "Iron": "0.16mg",
+    "Calcium": "4.6mg",
+    "Potassium": "21mg"
+   },
+   "storageInstructions": "*Store away from direct sunlight",
+   "manufacturerName": "Raw Pressery Pvt Ltd",
+   "fssaiLicense": "10016022005650",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Nimbu Paani",
@@ -357,7 +482,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341064-8_1-raw-pressery-nimbu-paani.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the zesty refreshment of Raw Pressery Nimbu Pani, a delightful take on India's beloved lemon water. Crafted with real lemons, a pinch of salt, and zero artificial additives, this nostalgic drink offers a tangy, hydrating profile that's perfect for quenching your thirst on hot days or after a workout. Inspired by traditional lemon water, this clean-label beverage is made with honest, lemony goodness that you can enjoy guilt-free. Refreshing and naturally cooling, Raw Pressery Nimbu Pani is the ultimate summer thirst-quencher, keeping you cool and energised with its electrolyte-rich formula. Experience the authentic flavours and enjoy the perfect balance of lemony tang and aromatic spices in every sip.",
+   "ingredients": "Water, Khandsari Sugar, Lemon Concentrate (0.65%)#, Salt, Acidity Regulator (Ins 330), Antioxidants [Vitamin C - Ins 300, Ins 224], Natural Flavouring Substances, Stevia, Ginger Extract",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "200ml",
+    "Energy Value": "22.4kcal",
+    "Total Fat": "0.1g",
+    "Sodium": "127.2mg",
+    "Total Carbohydrates": "5.6g",
+    "Dietary Fibre": "0g",
+    "Total Sugars": "5.8g",
+    "Added Sugars": "5.5g",
+    "Protein": "0.1g",
+    "Vitamin C": "9.1mg",
+    "calcium": "0.87mg",
+    "Iron": "0mg",
+    "Potassium": "1.94mg"
+   },
+   "storageInstructions": "*Keep Refrigerated Once Opened\n*Consume Within Two Days of Opening",
+   "manufacturerName": "(CD) Chanakya Dairy Products Pvt. Ltd. (Unit-II) Plot No .- A-1B",
+   "fssaiLicense": "10013021000941",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Classic Lemon Juice with Aloe Vera",
@@ -396,7 +545,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40194154-6_3-raw-pressery-cold-extracted-juice-aloe-vera-lemonade.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Quench your thirst and feel refreshed with this delightful Allo Aloe! Lemon and aloe vera come together to create a non-carbonated, BPA-free beverage that's perfect for natural hydration. Packed with benefits, this cold-pressed juice can improve muscle strength, promote healthy skin, and flush out toxins, providing you with natural energy instead of artificial alternatives. Enjoy the refreshing flavour and experience the rejuvenating properties of this unique drink, crafted to leave you feeling hydrated and revitalised.",
+   "ingredients": "Water, Fructose (6.5%), Lemon Juice (5%), Aloe Vera Juice (1%), Ginger Juice, Salt, Antioxidant(INS 224), Stevia",
+   "nutritionalInfo": {
+    "Serving Size": "200ml",
+    "Energy Value": "94kcal",
+    "Total Fat": "0.1g",
+    "Sodium": "141.47mg",
+    "Total Carbohydrates": "22.26g",
+    "Dietary Fiber": "1.62g",
+    "Total Sugars": "13g",
+    "Added Sugars": "13g",
+    "Protein": "1g",
+    "Vitamin C": "7.72mg",
+    "Calcium": "14.95mg",
+    "Iron": "3.64mg",
+    "Potassium": "13.93mg"
+   },
+   "storageInstructions": "*Best served chilled\n*After opening, refrigerate & consume within 2 days",
+   "manufacturerName": "Drytech Processes(I) Pvt. Ltd. Nagpur Road",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11518004000176"
+  }
  },
  {
   "title": "Jal Jeera",
@@ -441,7 +613,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341065-8_1-raw-pressery-jal-jeera.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the timeless, refreshing taste of Raw Pressery Jal Jeera, a classic Indian beverage that delights the senses. Crafted with a harmonious blend of tangy tamarind, aromatic cumin, and a touch of mint, this drink offers an authentic, flavourful experience that feels both nostalgic and rejuvenating. Packed with bold flavours and hydrating goodness, it's the perfect companion for any time of the day - whether you need a cooling sip on a hot afternoon or a flavourful pairing with your meal. Naturally supporting digestive health with its cumin and tamarind content, this refreshing elixir also helps to naturally cool the body while keeping you hydrated and energised, making it an ideal choice for the summer months. Indulge in the timeless taste of this traditional Indian delight and experience the perfect balance of flavour and refreshment.",
+   "ingredients": "Water, Tamarind Paste (3%), Khandsari Sugar, Lemon Concentrate(0.65%), Black Salt, Tamarind Extract(0.1%), Acidity Regulator (Ins 330), Pectin, Cumin Extract (0.05%), Black Pepper Extract (0.02%), Antioxidants(Vitamin C - Ins 300), Preservative (Ins 202), Natural Flavouring Substances, Stevia, Ginger Extract",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "200ml",
+    "Energy Value": "17.7kcal",
+    "Total Fat": "0.1g",
+    "Sodium": "111.6mg",
+    "Total Carbohydrates": "4.4g",
+    "Dietary Fibre": "0.16g",
+    "Total Sugars": "3.5g",
+    "Added Sugars": "3.3g",
+    "Protein": "0.1g",
+    "Vitamin C": "11.4mg",
+    "calcium": "2.8mg",
+    "Iron": "0.1mg",
+    "Potassium": "15.6mg"
+   },
+   "storageInstructions": "*Store away from direct sunlight\n*Keep refrigerated once opened, consume within two days",
+   "manufacturerName": "(CD) Chanakya Dairy Products Pvt",
+   "fssaiLicense": "10013021000941",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dates Almond Milk",
@@ -480,7 +676,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40178288-6_4-raw-pressery-almond-milk-dates-dairy-free-lactose-free-vegan.jpg"
    }
   ],
-  "food_type": "VEGAN"
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Almond milk is milk derived from plants, which means no animals were harmed in the making of this milk. This is also why it has no cholesterol or saturated fat and is lower in calories than regular milk. It is packed with good-for-you fats and is known for vitamin D and calcium. This dairy substitute aids in the overall strengthening of bones and muscle tone.\nDates are a good source of dietary fibre and a common pre and post-workout snack. Along with being delicious, they also have calcium which can strengthen bones and fibre to aid with digestion.",
+   "ingredients": "Water, Almonds, Dates. Contains Allergen (Almonds)",
+   "usageInstructions": "Shake well before use. Keep refrigerated, once opened. Drink within 72 hours of opening.",
+   "manufacturerName": "Goodrich Carbohydrates Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015064000518"
+  }
  },
  {
   "title": "Mango Almond Milk",
@@ -531,7 +735,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40178289_2-raw-pressery-almond-milk-mango-lactose-free-dairy-free-vegan.jpg"
    }
   ],
-  "food_type": "VEGAN"
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Almond milk is milk derived from plants, which means no animals were harmed in the making of this milk. This is also why it has no cholesterol or saturated fat and is lower in calories than regular milk. It is packed with good-for-you fats and is known for vitamin D and calcium. This dairy substitute aids in the overall strengthening of bones and muscle tone.\nThe king of all fruits, Mangoes are loaded with Vitamin C and are great for your gut.",
+   "ingredients": "Water, Mango Pulp, Maple Syrup, Almonds.",
+   "storageInstructions": "Consume directly after pouring it in a glass. Refrigerate after opening.",
+   "manufacturerName": "GOODRICH CARBOHYDRATES LIMITED - Village Nagla",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015064000518"
+  }
  },
  {
   "title": "Cacao Almond Milk",
@@ -582,7 +794,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129623_8-raw-pressery-almond-milk-cacao-lactose-free-dairy-free-vegan.jpg"
    }
   ],
-  "food_type": "VEGAN"
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Here's a new way to have your daily dose of almonds. Introducing dairy-free almond milk cocoa. A perfectly delicious, creamy and chocolaty dairy alternative that you can add to your shakes or sip by itself.\nBenefitsGet energized with this refreshing cold-pressed beverage.",
+   "ingredients": "Water, Fructose, Almonds (4%), Chocolate Syrup (1.55%), Cacao Powder (1.45%), Acidity Regulator (INS 452(I), INS 339(Ii), INS341(Iii))Stabilizer (INS170(I), INS 418, INS 410), Emulsifier (Sunflower Lecithin), Stevia",
+   "storageInstructions": "Best served chilled.\nAfter opening, refrigerate & consume within 2 Days.",
+   "manufacturerName": "GOODRICH CARBOHYDRATES LIMITED - Village Nagla",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10015064000518"
+  }
  },
  {
   "title": "Unsweetened Almond Milk",
@@ -636,7 +856,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360417-8_2-raw-pressery-almond-milk-plain-unsweetened.jpg"
    }
   ],
-  "food_type": "VEGAN"
+  "food_type": "VEGAN",
+  "details": {
+   "description": "Want a dairy-alternative without sugar? We got you covered! Pour yourself a glass of this tasty, dairy-free, and completely unsweetened Almond Beverage (unsweetened). Voted the Best Vegan Drink of 2018 by PETA, this plant-based beverage can be enjoyed with your daily tea, coffee, shakes or just by itself!",
+   "ingredients": "INGREDIENTS: WATER, ALMOND (5%)\nEMULSIFIER (INS 322)\nACIDITY REGULATOR (INS 341(iii), INS 332(ii))\nSTABILIZER (INS 170(i), INS 418, INS 410)",
+   "manufacturerName": "Raw Pressery Pvt Ltd",
+   "fssaiLicense": "10012022000264",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lactose Free Skimmed Milk",
@@ -681,7 +908,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40268325-8_1-raw-pressery-lactose-free-skimmed-milk-with-calcium-protein.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "RAW Pressery Lactose Free Skimmed Milk is perfect for lactose-intolerant folks & dairy lovers. Easy to digest, packed with the goodness of calcium & protein, it has all the taste & nutrition minus the lactose. Raw Pressery is India's leading new age beverage brand offering juices, smoothies, protein milkshakes & almond milk.",
+   "ingredients": "Skimmed Milk, Enzyme (Beta Galactosidase)",
+   "nutritionalInfo": {
+    "Energy value": "31.48 kcal",
+    "Total fat": "0.1g",
+    "Cholesterol": "<1mg",
+    "Sodium": "38.63mg",
+    "Total Carbohydrates": "4.93g",
+    "Lactose": "<0.1g",
+    "Protein": "2.94g",
+    "Calcium": "114.39mg",
+    "Iron": "0.39mg",
+    "Potassium": "114.34mg"
+   },
+   "storageInstructions": "Ready to use\nStore it in a cool and dry place, away from direct sunlight.",
+   "manufacturerName": "E-94",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Alphonso Mango Juice",
@@ -697,7 +943,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40194524_4-raw-pressery-cold-extracted-juice-mango.jpg"
-    }
+    },
+    "barcode": "8904258703763"
    },
    {
     "title": "1L",
@@ -735,7 +982,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40194524-8_1-raw-pressery-cold-extracted-juice-mango.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the luscious, tropical flavour of Raw Pressery's Alphonso Mango Juice, a true taste of summer in a bottle. Made from the finest quality Mangoes, this refreshing, cold-pressed juice delivers a burst of juicy, pulpy goodness with every sip. Close your eyes and imagine biting into a ripe, juicy Mango as you quench your thirst and feel energised. Packed with beneficial nutrients, this Mango juice can improve muscle strength, support natural skin care, and flush out toxins, making it the perfect companion for a healthy, vibrant lifestyle. Whether you're at home, at work, or on the go, this convenient pack of two bottles ensures you always have your favourite Mango juice on hand to enjoy the taste of summer anytime, anywhere.",
+   "ingredients": "Mango Pulp (54%), Water, Sugarcane Juice, Lemon Juice, Antioxidants/Vitamin C (INS 300)",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (200ml)",
+    "Energy Value": "83.4kcal",
+    "Total Fat": "0.0g",
+    "Sodium": "2.1mg",
+    "Total Carbohydrates": "20.86g",
+    "Dietary Fiber": "1.82g",
+    "Total Sugars": "17.38g",
+    "Added Sugars": "6.82g",
+    "Protein": "0.9g",
+    "Vitamin C": "117.5mg",
+    "Calcium": "17.72mg",
+    "Potassium": "200.66mg"
+   },
+   "storageInstructions": "*Best served chilled\n*After opening, refrigerate & consume within 2 Days",
+   "manufacturerName": "Drytech Processes(I) Pvt. Ltd. Nagpur Road",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11518004000176"
+  }
  },
  {
   "title": "Grapefruit Juice",
@@ -789,7 +1058,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124700-8_1-raw-pressery-cold-extracted-juice-grapefruit.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Raw Pressery Cold Extracted Grapefruit Juice that is made with the finest grapefruit. It is made from using a cold pressed method that crushes and presses the fruits to extract the juice. It is loaded with antioxidants and vitamin C. Start your day with this delicious and freshly squeezed grapefruit juice. It has a perfect balance of sweet and tart flavour. It makes a perfect summer drink to keep you refreshed all through the day. This juice has excellent taste and appearance.",
+   "ingredients": "Grapefruit Juice (99.9%), Citrus Fibre",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Calories": "94kcal",
+    "Total Fat": "0.0g",
+    "Sodium": "0.78mg",
+    "Total Carbohydrates": "22.3g",
+    "Dietary Fiber": "1.4g",
+    "Natural Sugar": "16.9g",
+    "Added Sugar": "0g",
+    "Protein": "1.3g",
+    "Vitamin A": "0.00mcg",
+    "Vitamin C": "111.24mg",
+    "Calcium": "11.76mg",
+    "Iron": "0.00mg",
+    "Potassium": "257.9mg"
+   },
+   "storageInstructions": "*Best served chilled\n*After opening, refrigerate & consume within 2 Days",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385"
+  }
  },
  {
   "title": "Guava Blend Juice",
@@ -831,7 +1124,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40073724-7_2-raw-pressery-cold-extracted-juice-guava-blend.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Nostalgia from the guava slice with a hint of chilli and squeezed lemon is now bottled for your convenience. Close your eyes and get a mouthful of this delightful guava beverage. It improves muscle strength, your natural skincare, and flushes out toxins. Get energised with this refreshing cold-pressed drink.",
+   "ingredients": "Guava Pulp (46%), Water, Sugarcane Juice, Lemon Juice, Rock Salt, Chilli Powder",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Calories": "109.29kcal",
+    "Total Fat": "0.05g",
+    "Sodium": "164.48mg",
+    "Total Carbohydrates": "24.08g",
+    "Dietary Fiber": "1.68g",
+    "Natural Sugar": "19.38g",
+    "Protein": "3.13g",
+    "Vitamin A": "40mcg",
+    "Vitamin C": "75.5mg",
+    "Calcium": "12.07mg",
+    "Iron": "10.41mg",
+    "Potassium": "208.26mg"
+   },
+   "storageInstructions": "*Best served chilled\n*After opening, refrigerate and consume within 2 days",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385"
+  }
  },
  {
   "title": "Lean Cold Pressed Juice",
@@ -847,7 +1163,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30009255_7-raw-pressery-cold-extracted-juice-lean.jpg"
-    }
+    },
+    "barcode": "8904258700182"
    }
   ],
   "images": [
@@ -870,7 +1187,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009255-6_1-raw-pressery-cold-extracted-juice-lean.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "What do you get when you combine kiwi, Apple, Kale with a twist of superfood Spirulina? The greenest veggies & fruits blend that truly makes healthy. Tasty!\nBenefits\nIt improves muscle strength, your natural skincare, and flushes out toxins.\nGet energized with this refreshing cold-pressed beverage.",
+   "ingredients": "Apple Juice (32.75%),\nCucumber Juice, Kiwi Pulp (29%), Kale\nJuice (5%), Mint Juice, Spirulina, Lemon\nJuice",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385",
+   "storageInstructions": "Best served chilled.\nAfter opening, refrigerate & consume within 2 Days."
+  }
  },
  {
   "title": "Life Cold Pressed Juice",
@@ -909,7 +1234,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40073723-6_1-raw-pressery-cold-extracted-juice-life.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Raw Pressery Cold Extracted Life Juice that is made with the finest fruits. It is made using a cold pressed method that crushes and presses the fruits to extract the juice. It is loaded with vitamins and minerals. This juice is made with fruits like strawberry, Valencia oranges, sugarcane, banana, blueberry, and lemon. Start your day with this delicious and freshly squeezed fruits. It has a perfect balance of sweet and tangy taste. It makes a perfect summer drink to keep you refreshed all through the day. This juice has excellent taste and appearance.\nBenefits\nIt improves muscle strength, your natural skincare, and flushes out toxins.\nGet energized with this refreshing cold-pressed drink",
+   "ingredients": "Strawberry Puree (36%),\nValencia Orange Juice, Sugarcane\nJuice, Banana Puree (11%), Blueberry\n(9%), Lemon Juice",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385",
+   "storageInstructions": "Best served chilled.\nAfter opening, refrigerate & consume within 2 Days."
+  }
  },
  {
   "title": "Flush Cold Pressed Juice",
@@ -925,7 +1258,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/30004723_8-raw-pressery-cold-extracted-juice-flush.jpg"
-    }
+    },
+    "barcode": "8904258700120"
    }
   ],
   "images": [
@@ -948,7 +1282,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004723-6_4-raw-pressery-cold-extracted-juice-flush.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Our version of the ABC: Apple, Beetroot, Carrot that tastes as good as it feels. Luscious smoothie texture with the goodness of apple, carrot and superfood beetroot will have you asking for more!\nBenefits\nIt improves muscle strength, your natural skincare, and flushes out toxins.\nGet energized with this refreshing cold-pressed beverage",
+   "ingredients": "Apple Juice (47.4%), Beetroot Juice (23%), Carrot Juice, Lemon Juice (5.2%), Ginger Juice",
+   "storageInstructions": "Best served chilled.\nAfter opening, refrigerate & consume within 2 Days.",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385"
+  }
  },
  {
   "title": "Mixed Fruit Juice",
@@ -964,7 +1306,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40194525_3-raw-pressery-cold-extracted-juice-mixed-fruit.jpg"
-    }
+    },
+    "barcode": "8904258704296"
    },
    {
     "title": "1L",
@@ -1002,7 +1345,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40194525-8_1-raw-pressery-cold-extracted-juice-mixed-fruit.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a burst of refreshing, natural goodness with this delightful mixed fruit juice. Crafted with care, this beverage is a symphony of flavours that will tantalize your taste buds. Packed with the goodness of sugarcane to keep you naturally energised, guava for a boost of vitamin C, and a medley of hand-picked fruits including apples, oranges, pineapples, and more, this juice is a true delight. Enjoy a delicious fruit salad in a bottle, with no added sugar, artificial colours, or preservatives - just pure, natural refreshment as nature intended. Sip and savour the refreshing, revitalising experience, perfect for improving muscle strength, natural skincare, and flushing out toxins. This pack of two bottles doubles the delight, so you can share the refreshment or indulge in it all yourself.",
+   "ingredients": "Sugarcane Juice, Papaya Pulp, Guava Pulp, Carrot Juice, Mango Pulp, Lemon Juice, Pineapple Juice, Pomegranate Juice, Vitamin C - Antioxidant",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (200ml)",
+    "Calories": "104kcal",
+    "Total Fat": "0.3g",
+    "Sodium": "15.8mg",
+    "Total Carbohydrates": "23.7g",
+    "Dietary Fiber": "1.8g",
+    "Natural Sugar": "21.6g",
+    "Added Sugar": "0g",
+    "Protein": "1.5g",
+    "Vitamin A": "90mcg",
+    "Vitamin C": "11.8mg",
+    "Calcium": "28.5mg",
+    "Iron": "3.8mg",
+    "Potassium": "134.9mg"
+   },
+   "storageInstructions": "*After opening, refrigerate and consume within 2 days",
+   "manufacturerName": "Drytech Processes(I) Pvt. Ltd. Nagpur Road",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11518004000176"
+  }
  },
  {
   "title": "Natural Mango + Pineapple Juice",
@@ -1018,7 +1385,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40073725_4-raw-pressery-100-natural-cold-pressed-juice-mango-pineapple.jpg"
-    }
+    },
+    "barcode": "8904258701059"
    }
   ],
   "images": [
@@ -1044,7 +1412,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40073725-7_1-raw-pressery-100-natural-cold-pressed-juice-mango-pineapple.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Summer in a bottle? Our 100% natural cold-pressed mango juice ensures you get the same taste with all the nutrients, all year round. This bottle lowers blood pressure, maintains a healthy gut, boosts iron levels. Mango is considered to be the king of Indian fruits. Here we are with cold-pressed juice of Mango and Pineapple. It brings the best of both worlds - Mango and pineapple. Enjoy it to the brim.",
+   "ingredients": "Mango Pineapple",
+   "storageInstructions": "Juice does not contain preservatives.\nRequires continuous refrigeration.\nTo be consumed directly after opening.",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385"
+  }
  },
  {
   "title": "Pomegranate Juice",
@@ -1098,7 +1474,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40065042-8_1-raw-pressery-cold-extracted-juice-pomegranate.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and revitalising experience of Raw Pressery's Pomegranate Juice. Crafted using a cold extraction process, this vibrant, ruby-red beverage captures the natural essence and flavour of fresh pomegranates. Bursting with tangy sweetness, each sip offers a delightful treat for the senses. Enjoy the juice on its own or as a delightful addition to smoothies and cocktails, savouring its ability to invigorate and nourish. Rich in antioxidants, this juice supports heart health, boosts vitamin C intake, and helps to flush out toxins, all while improving muscle strength and natural skincare. With two bottles per pack, you'll have ample supply to experience the benefits of this nutritious and delicious beverage.",
+   "ingredients": "Pomegranate (99.8%), Citrus fibre, Antioxidants/Vitamin C (INS 300)",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Calories": "133kcal",
+    "Total Fat": "0.13g",
+    "Sodium": "14.69mg",
+    "Total Carbohydrates": "32.55g",
+    "Dietary Fiber": "0.45g",
+    "Natural Sugar": "28.70g",
+    "Added Sugar": "0g",
+    "Protein": "0.6g",
+    "Vitamin A": "3.69ug",
+    "Vitamin C": "5.95mg",
+    "Calcium": "19.18mg",
+    "Iron": "2.17mg",
+    "Potassium": "387.99mg"
+   },
+   "storageInstructions": "*Best served chilled\n*After opening, refrigerate & consume within 2 Days",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385"
+  }
  },
  {
   "title": "Valencia Orange Juice",
@@ -1152,7 +1552,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40065041-8_1-raw-pressery-cold-extracted-juice-valencia-orange.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Start your day with a refreshing burst of sunshine in a glass! Our expertly crafted Valencia orange juice is made from perfectly ripe, hand-picked oranges that deliver a delightfully sweet and tangy flavour. Packed with essential dietary fibres and an abundance of vitamin C, this cold-pressed beverage is not only delicious but also a powerhouse of nourishment for your body. Enjoy the rejuvenating properties of this juice, which can help improve muscle strength, support natural skin care, and flush out harmful toxins. Sip on this refreshing elixir and feel the energy and vitality coursing through you. With its irresistible taste and impressive nutritional profile, this Valencia orange juice is truly the best you'll ever have.",
+   "ingredients": "Valencia Orange Juice (91.8%), Orange Pulp, Citrus fibre, Vitamin C - Antioxidant (INS 300)",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Calories": "115kcal",
+    "Total Fat": "0.1g",
+    "Sodium": "10.50mg",
+    "Total Carbohydrates": "26.88g",
+    "Dietary Fiber": "0.35g",
+    "Natural Sugar": "21.9g",
+    "Added Sugar": "0g",
+    "Protein": "1.6g",
+    "Vitamin A": "8.11?g",
+    "Vitamin C": "86.75mg",
+    "Calcium": "36.73mg",
+    "Iron": "4.05mg",
+    "Potassium": "363.09mg"
+   },
+   "storageInstructions": "*Best served chilled\n*After opening, refrigerate & consume within 2 Days",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385"
+  }
  },
  {
   "title": "Sugarcane Juice",
@@ -1206,7 +1630,31 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40082896-8_1-raw-pressery-cold-extracted-juice-sugarcane.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the sweet, refreshing taste of pure sugarcane with Raw Pressery's 'Ganne ka Rass'. This bottled delight captures the essence of childhood, delivering the authentic flavour of freshly pressed sugarcane juice without the hassle. Infused with a tangy twist of lemon, this beverage strikes the perfect balance between sweetness and acidity, tantalizing your taste buds. Packed with a wealth of essential nutrients, including vitamins, minerals, and antioxidants, this sugarcane juice offers a host of health benefits. It helps boost immunity, promote skin health, and support overall well-being. Naturally hydrating and with detoxifying properties, this juice is the perfect companion for staying refreshed and energised throughout the day. Enjoy the nostalgic flavour of your childhood, now in a convenient, hygienic bottle.",
+   "ingredients": "Sugarcane Juice (94%), Lemon Juice",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Calories": "200kcal",
+    "Total Fat": "0.78g",
+    "Sodium": "55.39mg",
+    "Total Carbohydrates": "46.08g",
+    "Dietary Fiber": "0.85g",
+    "Natural Sugar": "44.3g",
+    "Added Sugar": "0.00g",
+    "Protein": "2.35g",
+    "Vitamin A": "52.5mcg",
+    "Vitamin C": "9.38mg",
+    "Calcium": "19.03mg",
+    "Iron": "2.19mg",
+    "Potassium": "158.97mg"
+   },
+   "storageInstructions": "*Best served chilled\n*After opening, refrigerate & consume within 2 Days",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385"
+  }
  },
  {
   "title": "Coconut Water",
@@ -1260,7 +1708,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40182988-8_1-raw-pressery-coconut-water-packed-with-electrolytes-boosts-hydration.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and hydrating experience of Raw Pressery's Coconut Water. Carefully sourced and extracted from handpicked coconuts, this natural elixir is packed with essential electrolytes and minerals to power up your workouts and quench your thirst on even the hottest days. Boasting a delightful flavour and a guilt-free, convenient formula, this coconut water is the ultimate choice for athletes and health-conscious individuals alike. Rehydrate, refresh, and replenish with every sip of this nature's sports drink, bursting with the goodness of coconut. Enjoy the ultimate in hydration and nourishment, responsibly sourced and crafted to perfection.",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (200ml)",
+    "Calories": "49.56kcal",
+    "Total Fat": "0.36g",
+    "Sodium": "23mg",
+    "Total Carbohydrates": "11.2g",
+    "Dietary Fiber": "1.7g",
+    "Natural Sugar": "8.8g",
+    "Protein": "0.38g",
+    "Vitamin A": "7mcg",
+    "Vitamin C": "2.98mg",
+    "Calcium": "54.3mg",
+    "Iron": "0.074mg",
+    "Potassium": "302.8mg"
+   },
+   "storageInstructions": "*Best served chilled\n*After opening, refrigerate & consume within 2 Days",
+   "manufacturerName": "VSA Foods and Beverages Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000410"
+  }
  },
  {
   "title": "Coconut Water with Aloe Vera & Lemon",
@@ -1305,7 +1775,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40182987-8_1-raw-pressery-coconut-water-aloe-vera-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your hydration experience with our refreshing cold-pressed beverage, now infused with the nourishing benefits of aloe vera and the invigorating flavour of coconut water. Boasting a vibrant, clear hue and a smooth, silky texture with a delightful hint of aloe vera pulp, this drink delivers a perfectly balanced taste of tangy lemon and tropical coconut. Packed with natural goodness, it's the ideal on-the-go hydration companion, whether you're at the gym, the office, or running errands. Indulge in this crisp and satisfying thirst-quencher that will leave you feeling energised and refreshed.",
+   "ingredients": "Coconut Water(98%), Aloe Vera(1%), Lemon (1%), Bio-Preservative( INS 234)",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (200ml)",
+    "Calories": "49.04kcal",
+    "Total Fat": "0.32g",
+    "Sodium": "12.2mg",
+    "Total Carbohydrates": "11.2g",
+    "Dietary Fiber": "1.6g",
+    "Natural Sugar": "9.12g",
+    "Protein": "0.34g",
+    "Vitamin A": "7mcg",
+    "Vitamin C": "2.9mg",
+    "Calcium": "58.5mg",
+    "Iron": "0.094mg",
+    "Potassium": "415.8mg"
+   },
+   "storageInstructions": "*After opening, refrigerate and consume within 2 days",
+   "manufacturerName": "VSA FOODS AND BEVERAGES PVT LTD/ S No.939/2",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000410"
+  }
  },
  {
   "title": "Berry Healthy Juice",
@@ -1350,7 +1843,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341062-8_1-raw-pressery-berry-healthy-fruit-beverage.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Boost your day with Raw Pressery Berry Healthy Fruit Beverage, a delightful blend of strawberries, blueberries, and cranberries. Rich in Vitamin C, antioxidants, and naturally anti-inflammatory compounds, this refreshing drink nourishes your body while tantalising your taste buds. Enjoy the pure goodness of berries and feel energised, revitalised, and truly berry healthy every day!",
+   "ingredients": "Water, Strawberry Pulp (20%), Apple Juice(20%), Blueberry Pulp(3%), Khandsari Sugar, Cranberry Juice Concentrate(0.8%), Acidity Regulator (Ins 330), Pectin, Natural Flavouring Substances, Antioxidants [Vitamin C (Ins 300), Ins 224], Natural Colour [Ins 163(Ii)], Stevia",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "250ml",
+    "Energy Value": "30.4kcal",
+    "Total Fat": "0.3g",
+    "Sodium": "1.3mg",
+    "Total Carbohydrates": "7.5g",
+    "Dietary Fibre": "0.1g",
+    "Total Sugars": "7.3g",
+    "Added Sugar": "2.5g",
+    "Protein": "0.1g",
+    "Vitamin A": "0.2Mcg",
+    "Vitamin C": "31.1mg",
+    "calcium": "5.1mg",
+    "Iron": "0.02mg",
+    "Potassium": "56.0mg"
+   },
+   "storageInstructions": "*Keep refrigerated once the bottle is opened\n*Consume within two days of opening"
+  }
  },
  {
   "title": "Drink A Salad Juice",
@@ -1392,7 +1907,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341061-7_1-raw-pressery-drink-a-salad.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Raw Pressery Drink A Salad is a wholesome blend of spinach, beetroot, and carrot, packed with fibre, vitamins, and antioxidants to support digestion and overall well-being. This gut-friendly drink makes it easy to enjoy the goodness of vegetables in every sip. Nourish your body the convenient way and stay inspired to be the healthiest version of yourself.",
+   "ingredients": "Water, Cucumber Juice (20%), Beetroot Juice(12.5%), Carrot Juice(12.5%), Tomato Paste(5%), Spinach Powder(2.5%), Lemon Juice(1%), Rock Salt, Acidity Regulator (Ins 330), Pectin, Antioxidants [Vitamin C - Ins 300), Ins 224]",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "250ml",
+    "Energy Value": "24.6kcal",
+    "Total Fat": "0.1g",
+    "Sodium": "142.5mg",
+    "Total Carbohydrates": "4.6g",
+    "Dietary Fibre": "1.0g",
+    "Total Sugars": "3.6g",
+    "Added Sugar": "0.0g",
+    "Protein": "1.3g",
+    "Vitamin A": "235.9Mcg",
+    "Vitamin C": "37.5mg",
+    "calcium": "83.3mg",
+    "Iron": "0.8mg",
+    "Potassium": "216.5mg"
+   },
+   "storageInstructions": "*Keep Refrigerated Once Opened\n*Consume Within Two Days of Opening"
+  }
  },
  {
   "title": "Good OL' ABC Juice",
@@ -1437,7 +1974,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341060-8_1-raw-pressery-good-ol-abc.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Raw Pressery Good Ol' ABC is a nourishing blend of apples, beetroots, and carrots, packed with essential vitamins and antioxidants. Infused with a touch of lemon for a natural boost of Vitamin C, this refreshing drink supports overall well-being. Enjoy the goodness of nature in every sip and stay inspired to be the best version of you.",
+   "ingredients": "Water, Beetroot Juice (12%), Carrot Juice (12%), Apple Juice (5%), Khandsari Sugar, Lemon Juice (2%), Acidity Regulator (INS 330), Pectin, Antioxidants [Vitamin C (INS 300), INS 224], Natural Flavouring Substances, Stevia, Ginger Extract",
+   "nutritionalInfo": {
+    "Serving Size": "250 ml",
+    "Energy Value": "21.3 kcal",
+    "Total Fat": "0.0 g",
+    "Sodium": "10.3 mg",
+    "Total Carbohydrates": "5.1 g",
+    "Dietary Fibre": "0.2 g",
+    "Total Sugars": "4.9 g",
+    "Added Sugar": "2.5 g",
+    "Protein": "0.2 g",
+    "Vitamin A": "114.8 mcg",
+    "Vitamin C": "21.2 mg",
+    "Calcium": "4.4 mg",
+    "Iron": "0.1 mg",
+    "Potassium": "49.7 mg"
+   },
+   "storageInstructions": "*Store away from direct sunlight\n*Keep refrigerated once bottle is opened\n*Consume within two days of opening"
+  }
  },
  {
   "title": "Turmeric Twist Juice",
@@ -1482,7 +2040,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341059-8_1-raw-pressery-turmeric-twist.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Raw Pressery Turmeric Twist is a refreshing fusion of turmeric and oranges, rich in Vitamin C and antioxidants to support healing and vitality. Inspired by ancient wellness traditions, this invigorating drink awakens your senses with every sip. Enjoy the natural goodness of turmeric and citrus, and stay energised as the best version of yourself!",
+   "ingredients": "Water, Apple Juice (11.5%), Orange Juice (6.5%), Khandsari Sugar, Turmeric Juice (2%), Acidity Regulator (Ins 330), Pectin, Natural Flavouring Substances, Antioxidants [Vitamin C - Ins 300), Ins 224], Stevia",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "250ml",
+    "Energy Value": "20.5kcal",
+    "Total Fat": "0.1g",
+    "Sodium": "0.7mg",
+    "Total Carbohydrates": "4.8g",
+    "Dietary Fibre": "0.1g",
+    "Total Sugars": "4.7g",
+    "Added Sugar": "2.5g",
+    "Protein": "0.1g",
+    "Vitamin A": "0.7Mcg",
+    "Vitamin C": "22.0mg",
+    "calcium": "2.5mg",
+    "Iron": "0.2mg",
+    "Potassium": "23.3mg",
+    "RDA": "*RDA Of An Average Adult (2000kcal), As Per Fssai And Icmr RDA Table,2020"
+   },
+   "storageInstructions": "*Keep Refrigerated Once Bottle Is Opened\n*Consume Within Two Days Of Opening"
+  }
  },
  {
   "title": "Vit-C Burst Juice",
@@ -1527,7 +2108,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341058-8_1-raw-pressery-vit-c-burst.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the vibrant, zesty goodness of Raw Pressery's Vit-C Burst, a refreshing citrus blend that's bursting with the natural flavours of oranges, pineapples, and lemons. Packed with a powerful dose of Vitamin C, this delightful drink helps support your immune system, leaving you feeling revitalised and energised. Sip on this light, hydrating elixir and enjoy the tangy, tantalising flavour that effortlessly uplifts your mood and provides a healthy boost of antioxidants. Convenient and delicious, Raw Pressery Vit-C Burst is the perfect way to incorporate wellness into your daily routine without the need for supplements. Embrace the natural goodness of fruits and power through your day as the best version of yourself.",
+   "ingredients": "Water, Pineapple Juice (20%), Orange Juice(10%), Khandsari Sugar, Lemon Juice(1.5%), Acidity Regulator(Ins 330), Natural Flavouring Substances, Pectin, Antioxidants [Vitamin C (Ins 300), Ins 224], Stevia",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "250ml",
+    "Energy Value": "22.8kcal",
+    "Total Fat": "0.1g",
+    "Sodium": "0.7mg",
+    "Total Carbohydrates": "5.4g",
+    "Dietary Fibre": "0.1g",
+    "Total Sugars": "5.4g",
+    "Added Sugar": "2.5g",
+    "Protein": "0.2g",
+    "Vitamin A": "1.0Mcg",
+    "Vitamin C": "77.0mg",
+    "calcium": "3.8mg",
+    "Iron": "0.1mg",
+    "Potassium": "45.6mg",
+    "RDA": "*RDA Of An Average Adult (2000kcal), As Per Fssai And Icmr RDA Table,2020"
+   },
+   "storageInstructions": "*Keep Refrigerated Once Opened\n*Consume Within Two Days of Opening"
+  }
  },
  {
   "title": "Jasmine Iced Green Tea",
@@ -1572,7 +2176,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40320123-8_1-raw-pressery-iced-green-tea-jasmine.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and nutrient-packed goodness of Raw Pressery's brand new Iced Green Tea Jasmine. Crafted with a raw, cold-pressed twist on the classic iced tea, this delightful beverage combines the floral notes of jasmine with the earthy flavours of green tea. Loaded with vitamins and minerals, it's the perfect healthy start to your day. Sip on this aromatic and absolutely tea-riffic delight, which is sure to tantalize your taste buds with its refreshing and rejuvenating properties. Enjoy the unique cold press method that preserves the natural goodness of the ingredients, delivering a truly satisfying and nourishing experience.",
+   "ingredients": "Water, Khandsari Sugar Desi, Green Tea Extract (0.18%), Lemon Juice (0.1%), Acidity Regulator (Ins 330), Antioxidants [(Vitamin C -Ins 300), Ins 224], Jasmine Extract (0.03%), Natural Flavour Nature-Identical Flavouring Substances, Stevia",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Energy Value": "52.8kcal",
+    "Total Fat": "0g",
+    "Sodium": "6.3mg",
+    "Total Carbohydrates": "13.2g",
+    "Total Sugars": "12.43g",
+    "Added Sugars": "12.43g",
+    "Protein": "0g",
+    "Potassium": "16.53mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Vinayak Beverages",
+   "fssaiLicense": "10016022005650",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Lemon Iced Green Tea",
@@ -1617,7 +2240,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40320122-8_1-raw-pressery-iced-green-tea-lemon.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and delightful flavours of Raw Pressery's Iced Green Tea range. Combining the zesty notes of lemon with the fragrant and nourishing properties of green tea, each sip promises a burst of revitalising goodness. Enriched with a nutritious blend of kale and spirulina, these beverages not only tantalise the taste buds but also promote skin health, boost strength, and flush out toxins. Treat yourself to this innovative and rejuvenating range of iced teas, perfect for quenching your thirst and elevating your wellbeing.",
+   "ingredients": "Water, Khandsari Sugar Desi, Lemon Juice (0.25%), Green Tea Extract (0.18%), Acidity Regulator (Ins 330), Antioxidants [(Vitamin C -Ins 300), Ins 224], Natural Flavour & Nature-Identical Flavouring Substances, Stevia",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Energy Value": "52.8kcal",
+    "Total Fat": "0g",
+    "Sodium": "6.3mg",
+    "Total Carbohydrates": "13.2g",
+    "Total Sugars": "12.43g",
+    "Added Sugars": "12.43g",
+    "Protein": "0g",
+    "Potassium": "16.53mg"
+   },
+   "storageInstructions": "*Store away from direct sunlight",
+   "manufacturerName": "Vinayak Beverages",
+   "fssaiLicense": "10016022005650",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mint Mojito Iced Green Tea",
@@ -1633,7 +2275,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40320124_2-raw-pressery-iced-green-tea-mint-mojito.jpg"
-    }
+    },
+    "barcode": "8904258703442"
    }
   ],
   "images": [
@@ -1662,7 +2305,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40320124-8_1-raw-pressery-iced-green-tea-mint-mojito.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Refresh yourself with Raw Pressery's brand new Iced Green Tea - Mint Mojito, a delightful fusion of zesty lemon, invigorating mint, and the nourishing essence of green tea. Packed with antioxidants, this refreshing beverage supports your overall health while keeping you hydrated and energised. Enjoy the tropical paradise in every sip, whether on-the-go or relaxing at home. With a perfect balance of taste and health benefits, this convenient, ready-to-drink iced tea is the ideal choice for a refreshing and rejuvenating experience.",
+   "ingredients": "Water, Khandsari Sugar Desi, Green Tea Extract (0.18%), Lemon Juice (0.1%), Acidity Regulator (Ins 330), Antioxidants [(Vitamin C -Ins 300), Ins 224], Mint Extract (0.03%), Nature-Identical Flavouring Substances, Stevia",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Energy Value": "52.8kcal",
+    "Total Fat": "0g",
+    "Sodium": "6.3mg",
+    "Total Carbohydrates": "13.2g",
+    "Total Sugars": "12.43g",
+    "Added Sugars": "12.43g",
+    "Protein": "0g",
+    "Potassium": "16.53mg"
+   },
+   "storageInstructions": "*Store away from direct sunlight",
+   "manufacturerName": "Vinayak Beverages",
+   "fssaiLicense": "10016022005650",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Peach Iced Green Tea",
@@ -1707,7 +2369,26 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40320121-8_1-raw-pressery-iced-green-tea-peach.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and delightful taste of Raw Pressery's Iced Green Tea with Peach. Blending the fragrant notes of premium green tea with the juicy flavour of ripe peaches, this beverage offers a unique and rejuvenating experience. Crafted with care, it packs a punch of refreshment in every sip, making it the perfect thirst-quencher anytime, anywhere. Infused with antioxidants and natural goodness, this iced tea is a healthy and energising choice for those seeking a delicious way to stay hydrated. Simply mix the concentrated formula with chilled water or sparkling water for a bubbly twist, and enjoy the tea-riffic and tea-licious taste. Elevate your daily routine with this delightful and convenient iced green tea from Raw Pressery.",
+   "ingredients": "Water, Khandsari Sugar Desi, Peach Powder, Green Tea Extract, Acidity Regulator, Antioxidants, Nature-Identical Flavouring Substances, Stevia",
+   "nutritionalInfo": {
+    "Serving Size": "1 GLASS (250ml)",
+    "Energy Value": "52.5kcal",
+    "Total Fat": "0g",
+    "Sodium": "6.3mg",
+    "Total Carbohydrates": "13g",
+    "Total Sugars": "12.23g",
+    "Added Sugars": "7.7g",
+    "Protein": "0g",
+    "Potassium": "16.53mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Vinayak Beverages",
+   "fssaiLicense": "10016022005650",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Beer Buzz Energy Drink",
@@ -1723,7 +2404,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40340068_2-raw-pressery-beer-buzz-energy-drink.jpg"
-    }
+    },
+    "barcode": "8904258703473"
    }
   ],
   "images": [
@@ -1752,7 +2434,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340068-8_1-raw-pressery-beer-buzz-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Raw Pressery Beer Buzz Energy Drink offers a refreshing, non-alcoholic brew with a bold, malty flavour and an energising twist. Crafted with natural ingredients, it delivers a satisfying taste with a boost of energy. Perfect for those seeking a unique, guilt-free indulgence, this invigorating drink is ideal for any occasion, keeping you refreshed and revitalised.",
+   "ingredients": "Carbonated Water, Khandsari Sugar, Acidity Regulators (INS 330, INS 331(iii)), Taurine, Caffeine, Colour (INS 150d), Nature-Identical flavouring Substances, Vitamins (B2, B3, B6, B12), Stevia",
+   "nutritionalInfo": {
+    "Energy": "33 kcal",
+    "Total Fat": "0 g",
+    "Sodium": "19.44 mg",
+    "Total Carbohydrates": "8.2 g",
+    "Total Sugars": "5.96 g",
+    "Added Sugars": "5.96 g",
+    "Protein": "0 g",
+    "Taurine": "400 mg",
+    "Caffeine": "30 mg",
+    "Vitamin B2": "0.1 mg",
+    "Vitamin B3": "3.17 mg",
+    "Vitamin B6": "0.18 mg",
+    "Vitamin B12": "0.29 mcg"
+   },
+   "storageInstructions": "*Store in cool and dry place away from direct sunlight",
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10013021000941",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Crazy Cola Energy Drink",
@@ -1797,7 +2502,32 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340066-8_1-raw-pressery-crazy-cola-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the bold and refreshing taste of Raw Power Crazy Cola Energy Drink. Infused with a natural energy boost from caffeine and essential vitamins, this drink helps enhance your focus and stamina for any challenge. Enjoy the classic cola flavour with a healthy twist, as it is crafted from natural ingredients without any artificial additives. Perfect for a quick recharge, this carbonated beverage will keep you alert and ready to tackle your day. Packed with nutrients to fuel your body, this energy drink offers a clean energy boost that is sure to satisfy your taste buds and provide the boost you need.",
+   "ingredients": "Carbonated Water, Khandsari Sugar, Acidity Regulators (Ins 330, Ins 331(Iii)), Taurine, Caffeine (300Ppm), Colour (Ins 150D), Nature-Identical Flavouring Substances, Vitamins (B2,B3,B6,B12), Stevia",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "250ml",
+    "Energy": "44 kcal",
+    "Total Fat": "0 g",
+    "Sodium": "36.08 mg",
+    "Total Carbohydrates": "10.98 g",
+    "Total Sugars": "8.9 g",
+    "Added Sugars": "8.9 g",
+    "Protein": "0 g",
+    "Taurine": "400 mg",
+    "Caffeine": "30 mg",
+    "Vitamin B2": "0.09 mg",
+    "Vitamin B3": "3.15 mg",
+    "Vitamin B6": "0.19 mg",
+    "Vitamin B12": "0.28 Mcg"
+   },
+   "storageInstructions": "*Store in cool and dry place away from direct sunlight\n*Crush the can after use",
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10013021000941",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Red Energy Drink",
@@ -1842,7 +2572,30 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340067-8_1-raw-pressery-red-energy-drink.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Raw Power Red Energy Drink (250 ml) delivers an instant energy boost with a bold, invigorating flavour. Packed with essential vitamins and caffeine, it helps enhance focus and endurance. Perfect for those needing a quick recharge, this refreshing drink keeps you energised and ready to take on the day. Enjoy the power-packed refreshment anytime, anywhere.",
+   "ingredients": "Carbonated Water, Khandsari Sugar, Acidity Regulators (INS 330, INS 500), Taurine, Caffeine, Colour (Black Carrot Extract), Nature-Identical flavouring Substances, Vitamins (B2, B3, B6, B12), Stevia",
+   "nutritionalInfo": {
+    "Energy": "42 kcal",
+    "Total Fat": "0 g",
+    "Sodium": "6.72 mg",
+    "Total Carbohydrates": "10.2 g",
+    "Total Sugars": "8.41 g",
+    "Added Sugars": "8.41 g",
+    "Protein": "0 g",
+    "Taurine": "400 mg",
+    "Caffeine": "75 mg",
+    "Vitamin B2": "0.09 mg",
+    "Vitamin B3": "3.07 mg",
+    "Vitamin B6": "0.15 mg",
+    "Vitamin B12": "0.29 mcg"
+   },
+   "storageInstructions": "*Store in cool and dry place\n*Away from direct sunlight",
+   "manufacturerName": "& Marketed by",
+   "fssaiLicense": "10013021000941",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Banana Honey Protein Milkshake",
@@ -1858,7 +2611,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369740_2-raw-pressery-raw-pressery-banana-honey-25g-protein-milkshake-250-ml.jpg"
-    }
+    },
+    "barcode": "8904258704364"
    }
   ],
   "images": [
@@ -1887,7 +2641,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369740-8_2-raw-pressery-raw-pressery-banana-honey-25g-protein-milkshake-250-ml.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "It's a dessert in a healthy protein shake! Combining the\nrich flavours of ripe bananas and sweet honey, this Banana + Honey Protein\nMilkshake checks off 30% of your daily required protein intake. Containing 18g\nof plant protein, this delicious and healthy beverage will give you your daily\nprotein fix.\nHere’s a lesser-known fact - bananas are large-sized herbs that are related to\norchids, palms and lilies. Loaded with carbohydrates, bananas are the most\npopular source of energy for athletes.\nContaining 18g plant protein and 60% calcium, this Banana Honey Protein Shake\nis a highly nutritional beverage. All of the ingredients, including skimmed\nmilk and honey are responsibly sourced. This milkshake satisfies 30% of your\ndaily protein intake requirement and is also lactose-free, which makes this the\nideal milkshake for lactose-intolerant people.\nFrom breakfast in bed to working the weights at your gym, this banana honey\nmilkshake will be a faithful beverage by your side. You can either drink it\nbefore or after your gym session, with your breakfast or even at random times\nof the day when you need a dose of protein.",
+   "ingredients": "Skimmed Milk (40%), Water, Milk Protein Concentrate, Fructo-Oligosaccharides, Banana Puree (2%), Honey (1%), Acidity Regulators [INS 452(i), 340(i) & (iii)], Natural Flavour, Nature-Identical Flavouring Substance, Citrus Fiber, Stevia.\nAllergen: Contains Milk",
+   "nutritionalInfo": {
+    "Energy Value": "83.37 kcal",
+    "Total Fat": "0.33 g",
+    "Saturated Fat": "0.17 g",
+    "Trans Fat": "0.01 g",
+    "Cholesterol": "<10 mg",
+    "Sodium": "35.51 mg",
+    "Total Carbohydrates": "10.08 g",
+    "Dietary Fiber": "4.09 g",
+    "Total Sugars": "5.99 g",
+    "Added Sugars": "0.89 g",
+    "Protein": "10.03 g",
+    "Calcium": "151.2 mg"
+   },
+   "manufacturerName": "DTA-005-008 & 009",
+   "fssaiLicense": "12216027000292",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Choco Mint Protein Milkshake",
@@ -1903,7 +2678,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40184798_6-raw-pressery-protein-milkshake-choco-mint.jpg"
-    }
+    },
+    "barcode": "8904258704371"
    }
   ],
   "images": [
@@ -1929,7 +2705,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184798-7_1-raw-pressery-protein-milkshake-choco-mint.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful fusion of rich chocolate and refreshing mint with our 25 g Choco Mint Milkshake. This protein-packed, lactose-free treat is the perfect pick-me-up for any occasion - whether you're fuelling your workout, powering through a busy day, or simply craving a nutritious and delectable snack. The smooth, creamy texture and irresistible flavour combination will tantalise your taste buds, leaving you energised and satisfied. Ordering this milkshake online has never been easier, so you can enjoy this delicious and convenient protein fix anytime, anywhere.",
+   "ingredients": "Water, Skimmed Milk (35%), Milk Protein Concentrate, Fructo-Oligosaccharides, Alkalised Cocoa Powder (0.63%), Natural Flavour, Acidity Regulators [INS 452(i), INS 340(ii & iii)], Coffee Powder (0.26%), Nature-Identical Flavouring Substances (Mint, Spearmint), Stevia and Citrus Fibre.\nAllergen Advice: Contains Milk. Manufactured in the same facility that processes Nuts and Cereals.",
+   "nutritionalInfo": {
+    "Energy": "77.45 kcal",
+    "Total Fat": "0.39 g",
+    "Saturated Fat": "0.23 g",
+    "Trans Fat": "0.01 g",
+    "Cholesterol": "<10 mg",
+    "Sodium": "33.49 mg",
+    "Total Carbohydrates": "8.47 g",
+    "Dietary Fibre": "4.45 g",
+    "Total Sugars": "4.7 g",
+    "Added Sugars": "0 g",
+    "Protein": "10.02 g",
+    "Calcium": "194 mg"
+   },
+   "storageInstructions": "Best served chilled. After opening, refrigerate and consume within 2 days.",
+   "manufacturerName": "DAIRY RICH FOODS LLP - Dairy rich Foods LLP",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11514042000014"
+  }
  },
  {
   "title": "Cold Coffee Protein Milkshake",
@@ -1945,7 +2743,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40184800_6-raw-pressery-protein-milkshake-cold-coffee.jpg"
-    }
+    },
+    "barcode": "8904258704388"
    }
   ],
   "images": [
@@ -1971,7 +2770,29 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184800-7_1-raw-pressery-protein-milkshake-cold-coffee.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the perfect protein-packed pick-me-up with Raw Pressery's Cold Coffee Protein Milkshake. This refreshing, cold-pressed beverage is the ideal healthy start to your day, offering a delicious and energising boost for coffee lovers. Crafted with care, this lactose-free treat combines the rich flavour of premium coffee with a nourishing protein punch, making it the perfect fuel to power you through your everyday. Sip and savour this delightful cold-pressed delight, a guilt-free indulgence that will leave you feeling revitalised and ready to take on the day.",
+   "ingredients": "Skimmed Milk (40%), Water, Milk Protein Concentrate, Fructo-Oligosaccharides, Natural Flavour, Coffee Powder (0.6%), Acidity Regulators [INS 452(i), INS 340(ii & iii)], Stevia and Citrus Fibre.\nAllergen Advice: Contains Milk. Manufactured in the same facility that processes Nuts and Cereals.",
+   "nutritionalInfo": {
+    "Energy": "82.88 kcal",
+    "Total Fat": "0.32 g",
+    "Saturated Fat": "0.22 g",
+    "Trans Fat": "0.01 g",
+    "Cholesterol": "<10 mg",
+    "Sodium": "35.36 mg",
+    "Total Carbohydrates": "9.98 g",
+    "Dietary Fibre": "4.75 g",
+    "Total Sugars": "5.23 g",
+    "Added Sugars": "0 g",
+    "Protein": "10.02 g",
+    "Calcium": "140.4 mg"
+   },
+   "storageInstructions": "After opening, refrigerate and consume within 2 days.",
+   "manufacturerName": "DAIRY RICH FOODS LLP - Dairy rich Foods LLP",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11514042000014"
+  }
  },
  {
   "title": "Strawberry Protein Milkshake",
@@ -1987,7 +2808,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40369741_2-raw-pressery-raw-pressery-strawberry-25g-protein-milkshake-250-ml.jpg"
-    }
+    },
+    "barcode": "8904258704395"
    }
   ],
   "images": [
@@ -2016,7 +2838,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369741-8_2-raw-pressery-raw-pressery-strawberry-25g-protein-milkshake-250-ml.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Strawberry 25 g\nProtein Milkshake is a delicious and nutritious high-protein beverage crafted\nto support an active lifestyle. Made with skimmed milk, milk protein\nconcentrate, and added dietary fibre, this ready-to-drink milkshake delivers\nprotein and essential nutrients in every sip. The refreshing strawberry\nflavour, enhanced with real strawberry powder and natural flavouring, offers a\nsatisfying taste without added sugar. With low fat content and a rich fibre\nprofile, it is designed as a convenient on-the-go drink for fitness enthusiasts\nand anyone seeking a balanced nutritional option.\n25 g high protein formulation\nRich in dietary fibre\nNo added sugar\nLow fat content\nMade with skimmed milk and milk protein concentrate\nContains calcium and protein to support daily nutrition\nRefreshing strawberry flavour",
+   "ingredients": "Skimmed Milk (40.3%), Water, Milk Protein Concentrate, Fructo-Oligosaccharides, Acidity Regulators [INS 452(i), 340(ii) & (iii)], Colour (Black Carrot Extract), Strawberry Powder (0.2%), Natural Flavour, Citrus Fiber, Stevia.\nALLERGEN: Contains Milk\nManufactured in the same facility which processes Nut, Cereals.",
+   "nutritionalInfo": {
+    "Energy Value": "83.68 kcal",
+    "Total Fat": "0.33 g",
+    "Saturated Fat": "0.19 g",
+    "Trans Fat": "0.01 g",
+    "Cholesterol": "<10 mg",
+    "Sodium": "35.67 mg",
+    "Total Carbohydrates": "10.11 g",
+    "Dietary Fiber": "4.85 g",
+    "Total Sugars": "5.25 g",
+    "Added Sugars": "0 g",
+    "Protein": "10.08 g",
+    "Calcium": "162 mg"
+   },
+   "manufacturerName": "DTA-005-008 & 009",
+   "fssaiLicense": "12216027000292",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Mixed Fruit Juice",
@@ -2058,7 +2901,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124701-7_1-raw-pressery-100-natural-cold-pressed-juice-mixed-fruit.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "We believe that more is merrier and so we thought of giving you just that. Refresh yourself with a delicious fruit salad in this bottle and taste a little bit of every fruit. Pomegranates to pack in the sweetness, Orange and Guava for a Citrus burst, Berries and Black Grapes to give you the perfect note of Tangy. Taste it to believe it!",
+   "ingredients": "Guava, Pineapple, Carrot, Mango, Sugarcane, Pomegranate",
+   "storageInstructions": "Keep Refrigerated At 0°C To 8°C.\nDrink Within 2 Days Of Opening.",
+   "manufacturerName": "Rakyan Beverages Pvt. Ltd/ B-12",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11515014000385"
+  }
  },
  {
   "title": "Banana Honey Protein Milkshake Classic",
@@ -2097,6 +2948,28 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184799-6_1-raw-pressery-protein-milkshake-banana-honey.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of our everyday protein-packed drink, bursting with the flavours of fresh banana and sweet honey. Packed with a generous 18g of protein, this lactose-free beverage is the perfect nutritious companion for your daily routine. Convenient and nourishing, it's the simple yet satisfying way to fuel your body with the goodness it craves. Treat your taste buds to this delectable and wholesome dairy delight.",
+   "ingredients": "Skimmed Milk (84.9%), Banana Pulp (4.8%), Milk Protein Isolate, Milk Protein Concentrate, Honey (1.7%), Sugar, Fructose, Acidity Regulator (INS 452(I), INS  340(Ii & Iii), Lactase, Citrus Fiber, Stevia",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "200ml",
+    "Calories": "152.28kcal",
+    "Total Fat": "1.32g",
+    "Saturated Fat": "0.85g",
+    "Total Carbohydrates": "17.10g",
+    "Dietary Fiber": "0g",
+    "Natural Sugar": "14.04g",
+    "Added Sugar": "4.22g",
+    "Protein": "18g",
+    "Calcium": "358.16mg",
+    "Lactose": "0g"
+   },
+   "storageInstructions": "*After opening, refrigerate & consume within 2 days",
+   "manufacturerName": "DAIRY RICH FOODS LLP - Dairy rich Foods LLP",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11514042000014"
+  }
  }
 ]
