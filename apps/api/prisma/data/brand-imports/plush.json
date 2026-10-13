@@ -1,0 +1,248 @@
+{
+  "brand": "Plush",
+  "manufacturer": "Plush (Arvind Kumar Pvt. Ltd.)",
+  "feed": "plush-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/plush/logo-1c49d2e5.png",
+  "themeColor": "#111111",
+  "themeColorSecondary": "#E8457A",
+  "namePrefix": "Plush ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Plush 100% Medical Grade Menstrual Cup - Large": "Menstrual Cup - Large"
+  },
+  "rules": [
+    {
+      "match": "^Ultra\\ Thin\\ Cotton\\ Sanitary\\ Pads\\ \\-\\ XL\\ \\&\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Cotton\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Cotton\\ Sanitary\\ Pads\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Cotton\\ Sanitary\\ Pads\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Teen\\ Cotton\\ Sanitary\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Maternity\\ Pads\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^High\\ Waist\\ Period\\ Panty\\ \\-\\ S/M$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^High\\ Waist\\ Period\\ Panty\\ \\-\\ M/L$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^High\\ Waist\\ Period\\ Panty\\ \\-\\ L/XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^High\\ Waist\\ Period\\ Panty\\ \\-\\ XL/XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Period\\ Panties\\ \\-\\ M/L$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Seamless\\ Hipster\\ Disposable\\ Period\\ Panties\\ \\-\\ L/XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Maternity\\ Panties\\ \\-\\ XL/XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Sanitary\\ Disposal\\ Pouches$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Daily\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Instant\\ Drying\\ Daily\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Menstrual\\ Cup\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Menstrual\\ Cup\\ \\-\\ Small$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Menstrual\\ Cup\\ \\-\\ Extra\\ Small$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Feminine\\ Hygiene\\ Wipes\\ with\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Cramp\\ Relief\\ Heating\\ Patch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Beat\\ The\\ Blues\\ Face\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Beat\\ The\\ Blues\\ Moisture\\ Surge\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Roll\\ With\\ It\\ Underarm\\ Roll\\ On\\ \\-\\ Aqua\\ Breeze$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Roll\\ With\\ It\\ Underarm\\ Roll\\ On\\ \\-\\ Fresh\\ Bloom$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^LoveGlove\\ 3\\ in\\ 1\\ Multi\\ Textured\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^LoveGlove\\ Extra\\ Super\\ Dotted\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^pHlic\\ Water\\ Based\\ Intimate\\ Gel\\ \\-\\ Unflavoured$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^pHlic\\ Water\\ Based\\ Intimate\\ Gel\\ \\-\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    }
+  ]
+}
