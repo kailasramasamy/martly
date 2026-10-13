@@ -1,0 +1,80 @@
+{
+  "brand": "Henko",
+  "manufacturer": "Jyothy Labs Ltd.",
+  "feed": "henko-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/henko/logo-585dd361.png",
+  "themeColor": "#E5157A",
+  "themeColorSecondary": "#0055A5",
+  "namePrefix": "Henko ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Henko Detergent Powder": "Stain Care Detergent Powder"
+  },
+  "rules": [
+    {
+      "match": "^Stain\\ Care\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Stain\\ Care\\ Detergent\\ Bar$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^Matic\\ Front\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Lintelligent\\ Top\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Lintelligent\\ Front\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Stain\\ Champion\\ Detergent\\ Powder\\ \\-\\ Front\\ \\&\\ Top\\ Load$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Front\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Top\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    }
+  ]
+}
