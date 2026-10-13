@@ -1,0 +1,2695 @@
+[
+ {
+  "title": "Vanilla Frozen Dessert",
+  "handle": "vanilla-frozen-dessert",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900ml",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323746_1-dairy-day-vanilla-flavoured-frozen-dessert.jpg"
+    },
+    "barcode": "8906010910273"
+   },
+   {
+    "title": "1.5L",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011556_2-dairy-day-ice-cream-bucket-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323746_1-dairy-day-vanilla-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323746-2_1-dairy-day-vanilla-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323746-3_1-dairy-day-vanilla-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323746-4_1-dairy-day-vanilla-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323746-5_1-dairy-day-vanilla-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323746-6_1-dairy-day-vanilla-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323746-7_1-dairy-day-vanilla-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011556_2-dairy-day-ice-cream-bucket-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Delight in the timeless elegance of Dairy Day's Vanilla Flavoured Frozen Dessert. This creamy confection offers a classic blend of rich vanilla flavour and luxurious texture. Perfect for any occasion, its smooth and indulgent taste is sure to satisfy your sweet cravings. Enjoy it on its own or as a delightful addition to your favourite desserts.",
+   "ingredients": "Water, Milk And Milk Solids, Sugar, Edible Vegetable Oil (Palm Kernel Oil), Emulsifiers And Stabilisers (Ins 471,412,433,407,401), Contains Added Flavour - Nature Identical And Artificial Vanilla Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml(53g)",
+    "Serving Size": "100ml(53g)",
+    "Energy(kcal)": "105.96 kcal",
+    "Protein(g)": "2.07 g",
+    "Carbohydrate(g)": "11.29 g",
+    "Added Sugar(g)": "7.95 g",
+    "Total Fat(g)": "5.83 g",
+    "Saturated Fat(g)": "4.78 g",
+    "Trans Fat(g)": "0.04 g",
+    "Cholesterol(mg)": "15.90 mg",
+    "Sodium(mg)": "18.55 mg",
+    "RDA": "% Contribution To RDA calculated On The Basis Of 2000 kcal Energy"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Butterscotch Frozen Dessert",
+  "handle": "butterscotch-frozen-dessert",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900ml",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323748_1-dairy-day-butterscotch-flavoured-frozen-dessert.jpg"
+    },
+    "barcode": "8906010910150"
+   },
+   {
+    "title": "1.5L",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011554_2-dairy-day-ice-cream-bucket-butterscotch.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323748_1-dairy-day-butterscotch-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323748-2_1-dairy-day-butterscotch-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323748-3_1-dairy-day-butterscotch-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323748-4_1-dairy-day-butterscotch-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323748-5_1-dairy-day-butterscotch-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323748-6_1-dairy-day-butterscotch-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323748-7_1-dairy-day-butterscotch-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011554_2-dairy-day-ice-cream-bucket-butterscotch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy decadence of Dairy Day's Butterscotch Flavoured Frozen Dessert. This delectable treat offers a perfect balance of rich caramel and buttery goodness, creating a heavenly sensation with every spoonful. Whether enjoyed on its own or as a delightful addition to your favourite desserts, it's sure to satisfy your sweet cravings and leave you wanting more.",
+   "ingredients": "Water, Milk And Milk Solids, Sugar, Edible Vegetable Oil (Palm Kernel Oil), Chikki (10%) (Sugar, Cashew Nuts, Dairy Butter), Emulsifiers And Stabilisers (Ins 471,412,433,407,401)",
+   "nutritionalInfo": {
+    "Serving Size": "100ml(55g)",
+    "Energy(kcal)": "124.37",
+    "Protein(g)": "2.05",
+    "Carbohydrate(g)": "15.08",
+    "Added Sugar(g)": "11.56",
+    "Total Fat(g)": "6.18",
+    "Saturated Fat(g)": "4.46",
+    "Trans Fat(g)": "0.03",
+    "Cholesterol(mg)": "14.85",
+    "Sodium(mg)": "17.32"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolatey Frozen Dessert",
+  "handle": "chocolatey-frozen-dessert",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900ml",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323747_1-dairy-day-chocolate-flavoured-frozen-dessert.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323747_1-dairy-day-chocolate-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323747-2_1-dairy-day-chocolate-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323747-3_1-dairy-day-chocolate-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323747-4_1-dairy-day-chocolate-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323747-5_1-dairy-day-chocolate-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323747-6_1-dairy-day-chocolate-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323747-7_1-dairy-day-chocolate-flavoured-frozen-dessert.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dive into the velvety bliss of Dairy Day's Chocolate Flavoured Frozen Dessert. This indulgent treat captivates your taste buds with its rich cocoa flavour and smooth texture. Whether enjoyed solo or as a delightful addition to your favourite desserts, it promises a satisfyingly sweet experience that will leave you craving more.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml(53g)",
+    "Energy(Kcal)": "109.08",
+    "Protein(g)": "2.24",
+    "Carbohydrate(g)": "12.25",
+    "Added Sugar(g)": "7.95",
+    "Total Fat(g)": "5.99",
+    "Saturated Fat(g)": "4.91",
+    "Trans Fat(g)": "0.04",
+    "Cholesterol(mg)": "15.90",
+    "Sodium(mg)": "18.55"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pista Frozen Dessert",
+  "handle": "pista-frozen-dessert",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900ml",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323749_1-dairy-day-pista-flavoured-frozen-dessert.jpg"
+    },
+    "barcode": "8906010910198"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323749_1-dairy-day-pista-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323749-2_1-dairy-day-pista-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323749-3_1-dairy-day-pista-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323749-4_1-dairy-day-pista-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323749-5_1-dairy-day-pista-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323749-6_1-dairy-day-pista-flavoured-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323749-7_1-dairy-day-pista-flavoured-frozen-dessert.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy delight of Dairy Day's Pista Flavoured Frozen Dessert. Bursting with the rich essence of pistachios, this frozen treat offers a delightful blend of sweetness and nuttiness. Perfect for any occasion or simply to satisfy your cravings, it promises a refreshing and satisfying experience with every spoonful.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml(53g)",
+    "Energy(Kcal)": "105.96",
+    "Protein(g)": "2.07",
+    "Carbohydrate(g)": "11.29",
+    "Added Sugar(g)": "7.95",
+    "Total Fat(g)": "5.83",
+    "Saturated Fat(g)": "4.78",
+    "Trans Fat(g)": "0.04",
+    "Cholesterol(mg)": "15.90",
+    "Sodium(mg)": "18.55"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Frozen Dessert Mega Tub",
+  "handle": "strawberry-frozen-dessert-mega-tub",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.5L",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011551_2-dairy-day-ice-cream-bucket-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011551_2-dairy-day-ice-cream-bucket-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011551-2_1-dairy-day-ice-cream-bucket-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011551-3_1-dairy-day-ice-cream-bucket-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011551-4_1-dairy-day-ice-cream-bucket-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Strawberry Ice Cream is a delightful frozen treat made with real milk solids, sugar, and natural strawberry flavouring. It has a smooth, creamy texture and a delicious strawberry taste that will delight your taste buds. Enjoy this ice cream on its own or pair it with your favourite toppings for a truly indulgent experience.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "53g",
+    "Energy (Kcal)": "105",
+    "Protein": "1.8g",
+    "Carbohydrate": "11g",
+    "Sugars": "7.95g",
+    "Fat": "5.83g"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Frozen Dessert Mega Tub",
+  "handle": "mango-frozen-dessert-mega-tub",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.5L",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011557_2-dairy-day-ice-cream-bucket-mango.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011557_2-dairy-day-ice-cream-bucket-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011557-2_1-dairy-day-ice-cream-bucket-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011557-3_1-dairy-day-ice-cream-bucket-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011557-4_1-dairy-day-ice-cream-bucket-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Mango Ice Cream is a delightful frozen treat made with real mango pulp. It offers a refreshing and creamy texture that is perfect for hot summer days. Enjoy the rich, fruity flavour of this ice cream, which is a blend of milk solids, sugar, and natural mango essence. It is a delicious indulgence that can be savoured on its own or paired with your favourite desserts.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "53g",
+    "Energy": "106 kcal",
+    "Protein": "1.97 g",
+    "Carbohydrates": "15.9 g",
+    "Sugars": "15.9 g",
+    "Fat": "3.81 g"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Chocochips Frozen Dessert Mega Tub",
+  "handle": "vanilla-chocochips-frozen-dessert-mega-tub",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.5L",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011558_2-dairy-day-ice-cream-bucket-vanilla-chocochips.jpg"
+    },
+    "barcode": "8906010911584"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011558_2-dairy-day-ice-cream-bucket-vanilla-chocochips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011558-2_1-dairy-day-ice-cream-bucket-vanilla-chocochips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011558-3_1-dairy-day-ice-cream-bucket-vanilla-chocochips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011558-4_1-dairy-day-ice-cream-bucket-vanilla-chocochips.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Vanilla Chocochips Ice Cream is a delightful treat that combines the rich, creamy texture of vanilla ice cream with the indulgent crunch of chocolate chips. Made with high-quality ingredients, this ice cream offers a delectable balance of sweetness and cocoa flavour. Enjoy this premium ice cream as a refreshing dessert or a satisfying snack on a warm day.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Calories": "352 kcal",
+    "Total Fat": "6 g",
+    "Trans Fat": "0.8 g"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "American Nuts Frozen Dessert Mega Tub",
+  "handle": "american-nuts-frozen-dessert-mega-tub",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.5L",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237796_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237796_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237796-2_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237796-3_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237796-4_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237796-5_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Mega Tub American Nuts is made with fine cream and nuts. It is a timeless and heavenly nuts ice cream. Enjoy the smooth nuts flavoured ice cream. It is a rich and creamy ice cream. It has the right amount of American nuts flavour.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "55g",
+    "Energy": "116 kcal",
+    "Fat": "6 g",
+    "Carbohydrates": "8 g",
+    "Protein": "2 g"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choco Almond Fudge Frozen Dessert Mega Tub",
+  "handle": "choco-almond-fudge-frozen-dessert-mega-tub",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.5L",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237795_1-dairy-day-ice-cream-choco-almond-fudge-rich-creamy.jpg"
+    },
+    "barcode": "8906010911881"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237795_1-dairy-day-ice-cream-choco-almond-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237795-2_1-dairy-day-ice-cream-choco-almond-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237795-3_1-dairy-day-ice-cream-choco-almond-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237795-4_1-dairy-day-ice-cream-choco-almond-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237795-5_1-dairy-day-ice-cream-choco-almond-fudge-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Mega Tub Choco Almond Fudge Ice Cream is a mix of delectable chocolate fudge and ice cream. It is a perfect blend of fudge ribbon and sprinkled with brownie pieces. Delectable chocolate fudge ice cream, married to a fudge confectionery and sprinkled with brownie pieces. It does not contain any added sugar, artificial sweetener or colour. It is an extremely delicious, lower-calorie ice cream. This ice cream is rich, creamy and full of flavour. Now eat as much ice cream you want while maintaining a healthy lifestyle.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Fat (g)": "4.57 g",
+    "Cholesterol (mg)": "13.68 mg",
+    "Sodium": "0 g"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sundae Chocolatey Frozen Dessert",
+  "handle": "sundae-chocolatey-frozen-dessert",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001159_2-dairy-day-ice-cream-chocolate-sundae.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001159_2-dairy-day-ice-cream-chocolate-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001159-2_1-dairy-day-ice-cream-chocolate-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001159-3_1-dairy-day-ice-cream-chocolate-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001159-4_1-dairy-day-ice-cream-chocolate-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001159-5_1-dairy-day-ice-cream-chocolate-sundae.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delectable Dairy Day Chocolate Sundae, a tempting treat that combines the rich creaminess of vanilla ice cream with a decadent chocolate centre. Prepare for a delightful experience as you bite into the chewy chocolate fudge ripple, creating a harmonious fusion of textures. This delicious ice cream is perfect for the entire family, offering a gourmet dessert option that will elevate your sweet cravings. Dive into layers of velvety chocolate ice cream infused with a luxurious chocolate sauce and topped with indulgent chocolate chips, for a blissful fusion of creamy textures and intense chocolate flavours. Whether you're seeking a moment of indulgence or a treat to share, Dairy Day Sundae Chocolatey Tub promises to deliver a delightful and satisfying dessert experience.",
+   "ingredients": "Water, Milk & Milk Solids, Sugar, Edible Vegetable Oil (Palm Kernel Oil), Chocolate Syrup (15 %) (Water, Milk Solids, Sugar, Cocoa Powder, Thickeners Ins 415), Choco Compound Chips (2%), Emulsifiers And Stabilisers (Ins 471, 412, 433, 407, 401), Contains Added Flavour Nature Identical And Artificial Vanilla Flavouring Substances",
+   "nutritionalInfo": {
+    "Serving Size": "100ml(58g)",
+    "Energy(kcal)": "119.89",
+    "Protein(g)": "2.22",
+    "Carbohydrate(g)": "12.61",
+    "Added Sugar(g)": "11.05",
+    "Total Fat(g)": "6.73",
+    "Saturated Fat(g)": "5.19",
+    "Trans Fat(g)": "0.03",
+    "Cholesterol(mg)": "14.14",
+    "Sodium(mg)": "16.50"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Classic Ice Cream",
+  "handle": "vanilla-classic-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/273373_5-dairy-day-ice-cream-vanilla-classic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273373_5-dairy-day-ice-cream-vanilla-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273373-2_3-dairy-day-ice-cream-vanilla-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273373-3_3-dairy-day-ice-cream-vanilla-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273373-4_3-dairy-day-ice-cream-vanilla-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273373-5_3-dairy-day-ice-cream-vanilla-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273373-6_2-dairy-day-ice-cream-vanilla-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273373-7_2-dairy-day-ice-cream-vanilla-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273373-8_2-dairy-day-ice-cream-vanilla-classic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and creamy delight of Dairy Day Vanilla Classic Ice Cream. Crafted with fresh milk and real vanilla extract, this ice cream delivers a smooth, velvety texture and a delightful vanilla flavour in every scoop. Enjoy it on its own as a delightful treat, or use it as a topping to elevate your favourite desserts. Whether you're celebrating a special occasion or simply satisfying a sweet craving, this timeless classic is sure to please. With its creamy consistency and indulgent vanilla notes, Dairy Day Vanilla Ice Cream is the perfect choice for sharing and savouring the moment.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml (53g)",
+    "Energy (Kcal)": "105.96",
+    "Protein (g)": "2.07",
+    "Carbohydrate (g)": "11.29",
+    "Added sugar (g)": "7.95",
+    "Total Fat (g)": "5.83",
+    "Saturated Fat (g)": "3.96",
+    "Trans fat (g)": "0.05",
+    "Cholesterol (mg)": "64.13",
+    "Sodium (mg)": "31.80"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Refrigerate after opening",
+   "manufacturerName": "DAIRY CLASSIC ICE CREAM(P) LTD"
+  }
+ },
+ {
+  "title": "Crunchy Butterscotch Ice Cream",
+  "handle": "crunchy-butterscotch-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/273382_3-dairy-day-ice-cream-crunchy-butterscotch.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273382_3-dairy-day-ice-cream-crunchy-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273382-2_1-dairy-day-ice-cream-crunchy-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273382-3_1-dairy-day-ice-cream-crunchy-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273382-4_1-dairy-day-ice-cream-crunchy-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273382-5_1-dairy-day-ice-cream-crunchy-butterscotch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Treat yourself to the rich and indulgent Dairy Day Crunchy Butterscotch Ice Cream. Dive into creamy butterscotch ice cream generously infused with crunchy, caramelised butterscotch pieces. Each spoonful offers a perfect balance of smoothness and delightful crunch, creating a luxurious dessert experience. Ideal for those seeking a nostalgic flavour with a gourmet twist, Dairy Day Crunchy Butterscotch Ice Cream is perfect for sharing or enjoying solo, promising to elevate any moment with its irresistible blend of flavours and textures.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml (55g)",
+    "Energy (Kcal)": "124.37",
+    "Protein (g)": "2.05",
+    "Carbohydrate (g)": "15.08",
+    "Added sugar (g)": "11.56",
+    "Total Fat (g)": "6.18",
+    "Saturated Fat (g)": "3.70",
+    "Trans fat (g)": "0.04",
+    "Cholesterol (mg)": "59.00",
+    "Sodium (mg)": "29.00"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight and heat",
+   "manufacturerName": "DAIRY CLASSIC ICE CREAM(P) LTD"
+  }
+ },
+ {
+  "title": "Strawberry Delight Ice Cream",
+  "handle": "strawberry-delight-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/273376_3-dairy-day-ice-cream-strawberry-delight.jpg"
+    },
+    "barcode": "8906010915148"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273376_3-dairy-day-ice-cream-strawberry-delight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273376-2_1-dairy-day-ice-cream-strawberry-delight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273376-3_1-dairy-day-ice-cream-strawberry-delight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273376-4_1-dairy-day-ice-cream-strawberry-delight.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273376-5_1-dairy-day-ice-cream-strawberry-delight.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Celebrate the moment",
+   "manufacturerName": "DAIRY CLASSIC ICE CREAM(P) LTD"
+  }
+ },
+ {
+  "title": "Pistachio Nut Ice Cream",
+  "handle": "pistachio-nut-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/273383_3-dairy-day-ice-cream-pistachio-nut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273383_3-dairy-day-ice-cream-pistachio-nut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273383-2_1-dairy-day-ice-cream-pistachio-nut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273383-3_1-dairy-day-ice-cream-pistachio-nut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273383-4_1-dairy-day-ice-cream-pistachio-nut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/273383-5_1-dairy-day-ice-cream-pistachio-nut.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Pistachio Nut Ice Cream is a delightful treat made with real milk. Indulge in the rich, creamy texture and the delectable flavour of premium quality pistachios. Enjoy this premium ice cream on its own or pair it with your favourite desserts for a truly indulgent experience.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml (55g)",
+    "Energy (Kcal)": "116.73",
+    "Protein (g)": "2.42",
+    "Carbohydrate (g)": "12.05",
+    "Added sugar (g)": "7.59",
+    "Total Fat (g)": "6.53",
+    "Saturated Fat (g)": "3.78",
+    "Trans fat (g)": "0.04",
+    "Cholesterol (mg)": "61.22",
+    "Sodium (mg)": "30.36"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight",
+   "manufacturerName": "DAIRY CLASSIC ICE CREAM(P) LTD"
+  }
+ },
+ {
+  "title": "Choco Latey Ice Cream",
+  "handle": "choco-latey-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001162_2-dairy-day-ice-cream-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001162_2-dairy-day-ice-cream-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001162-2_1-dairy-day-ice-cream-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001162-3_1-dairy-day-ice-cream-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001162-4_1-dairy-day-ice-cream-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001162-5_1-dairy-day-ice-cream-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Premium chocolate ice cream experience made with rich milk solids, perfect dessert for chocolate lovers, convenient tub packaging.",
+   "ingredients": "Milk And Milk Solids, Sugar, Cocoa Powder, Emulsifiers And Stabilisers (Ins 471,477,412,410), Contains Permitted Synthetic Food Colours (Ins 102,110,122,133,143), Added Flavour - Nature Identical And Artificial Chocolate Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "100ml(53g)",
+    "Energy (kcal)": "109.08 kcal",
+    "Protein (g)": "2.34 g",
+    "Carbohydrate (g)": "12.25 g",
+    "Added Sugar (g)": "7.95 g",
+    "Total Fat (g)": "5.99 g",
+    "Saturated Fat (g)": "4.07 g",
+    "Trans Fat (g)": "0.05 g",
+    "Cholesterol (mg)": "64.13 mg",
+    "Sodium (mg)": "31.80 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place"
+  }
+ },
+ {
+  "title": "Vanilla Ice Cream",
+  "handle": "vanilla-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700ml",
+    "price": "179",
+    "compare_at_price": "179",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910_1-dairy-day-vanilla-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910_1-dairy-day-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910-2_1-dairy-day-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910-3_1-dairy-day-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910-4_1-dairy-day-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910-5_1-dairy-day-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910-6_1-dairy-day-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910-7_1-dairy-day-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361910-8_1-dairy-day-vanilla-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Vanilla Ice Cream is a creamy, indulgent treat made with rich vanilla flavour, offering a smooth and velvety texture in every bite. Made with high-quality ingredients, it’s the perfect dessert for any occasion. Whether enjoyed on its own or paired with your favourite toppings, Dairy Day Vanilla Ice Cream brings a refreshing, delightful experience to your taste buds.",
+   "ingredients": "Medium Fat Ice Cream: Milk Solids, Water, Sugar, Emulsifier (Ins 471, 477), Stabilizer (Ins 412, 410, 1440), Nature Identical & Artificial Flavour (Vanilla).\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "165.94 kcal",
+    "Protein": "3.67 g",
+    "Carbohydrate": "20.94 g",
+    "Total Sugars": "20.94 g",
+    "Added Sugars": "15.00 g",
+    "Total Fat": "7.50 g",
+    "Saturated Fat": "6.15 g",
+    "Trans Fat": "0.08 g",
+    "Cholesterol": "30.00 mg",
+    "Sodium": "35.00 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Butterscotch Ice Cream",
+  "handle": "butterscotch-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700ml",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909_1-dairy-day-butterscotch-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909_1-dairy-day-butterscotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909-2_1-dairy-day-butterscotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909-3_1-dairy-day-butterscotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909-4_1-dairy-day-butterscotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909-5_1-dairy-day-butterscotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909-6_1-dairy-day-butterscotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909-7_1-dairy-day-butterscotch-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361909-8_1-dairy-day-butterscotch-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Butterscotch Ice Cream is a delightful indulgence, blending smooth, creamy ice cream with rich butterscotch flavor. Every bite delivers the perfect balance of sweetness and a hint of caramelized goodness, offering a heavenly texture that melts in your mouth. Ideal for any occasion, this indulgent treat will satisfy your sweet cravings with its irresistible taste and luxurious creaminess.",
+   "ingredients": "Medium Fat Ice Cream: Milk Solids, Water, Sugar, Chikki (10%) [Sugar, Cashew Nuts, Dairy Butter], Emulsifier (Ins 471, 477), Stabilizer (Ins 412, 410, 1440), Food Colour (Ins 102), Artificial Flavour (Butterscotch).\nAllergen Information: Contains Milk And Nut.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "192.18 kcal",
+    "Protein": "3.74 g",
+    "Carbohydrate": "27.43 g",
+    "Total Sugars": "21.02 g",
+    "Added Sugars": "15.00 g",
+    "Total Fat": "7.50 g",
+    "Saturated Fat": "6.15 g",
+    "Trans Fat": "0.05 g",
+    "Cholesterol": "36.75 mg",
+    "Sodium": "62.01 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chikoo Ice Cream with Fruit Chunks",
+  "handle": "chikoo-ice-cream-with-fruit-chunks",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908-2_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908-3_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908-4_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908-5_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908-6_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908-7_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361908-8_1-dairy-day-chikoo-ice-cream-with-fruit-chunks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Chikoo Ice Cream with Fruit Chunks offers a deliciously creamy treat, combining the rich, sweet flavour of chikoo with real fruit chunks for added texture. Every bite is a delightful mix of smooth, velvety ice cream and the natural goodness of fruit. Perfect for a refreshing snack or dessert, it brings a unique, indulgent twist to your ice cream experience.",
+   "ingredients": "Ice Cream: Milk Solids, Water, Sugar, Chikoo Fruit (15%), Chikoo Pulp (10%), Emulsifier (Ins 471, 477), Stabilizer (Ins 410, 412).\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "203.17 kcal",
+    "Protein": "3.85 g",
+    "Carbohydrate": "21.43 g",
+    "Total Sugars": "21.43 g",
+    "Added Sugars": "13.50 g",
+    "Total Fat": "11.36 g",
+    "Saturated Fat": "7.65 g",
+    "Trans Fat": "0.09 g",
+    "Cholesterol": "54.00 mg",
+    "Sodium": "62.10 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Jamun Ice Cream with Fruit Chunks",
+  "handle": "jamun-ice-cream-with-fruit-chunks",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907-2_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907-3_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907-4_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907-5_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907-6_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907-7_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361907-8_1-dairy-day-jamun-ice-cream-with-fruit-chunks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Jamun Ice Cream with Fruit Chunks offers a refreshing twist on your favourite dessert. Packed with real jamun fruit chunks, this creamy ice cream delivers a deliciously sweet and tangy flavour in every bite. Its smooth texture and fruity goodness make it the perfect treat to cool down and satisfy your sweet cravings any time of the day.",
+   "ingredients": "Ice Cream: Milk Solids, Water, Sugar, Jamun Preparation (8%) [Jamun Slices, Sugar, Water, Black Carrot Juice Concentrate, Black Salt, Spice Mix, Thickeners (E410, E440), Natural And Nature Identical Flavour], Emulsifier (INS 471, 477), Stabilizer (INS 410, 412), Nature Identical Flavour (Jamun).\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "203.17 kcal",
+    "Protein": "3.85 g",
+    "Carbohydrate": "21.43 g",
+    "Total Sugars": "21.43 g",
+    "Added Sugars": "13.50 g",
+    "Total Fat": "11.36 g",
+    "Saturated Fat": "7.65 g",
+    "Trans Fat": "0.09 g",
+    "Cholesterol": "54.00 mg",
+    "Sodium": "62.10 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Ice Cream with Fruit Chunks",
+  "handle": "mango-ice-cream-with-fruit-chunks",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906-2_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906-3_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906-4_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906-5_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906-6_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906-7_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361906-8_1-dairy-day-mango-ice-cream-with-fruit-chunks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Ice Cream with Fruit Chunks offers a delightful treat with creamy ice cream combined with juicy, real fruit chunks in every bite. Bursting with natural flavours, it provides a refreshing and indulgent experience. Perfect for those who crave a fruity twist in their dessert, this ice cream is the ideal balance of sweetness and texture, making it a favourite for all ages.",
+   "ingredients": "Ice Cream: Milk Solids, Water, Sugar, Mango Fruit (15%), Mango Pulp (10%), Emulsifier (Ins 477, 471), Stabilizer (Ins 410, 412), Artificial Flavour (Mango).\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "203.17 kcal",
+    "Protein": "3.85 g",
+    "Carbohydrate": "21.43 g",
+    "Total Sugars": "21.43 g",
+    "Added Sugars": "13.50 g",
+    "Total Fat": "11.36 g",
+    "Saturated Fat": "7.65 g",
+    "Trans Fat": "0.09 g",
+    "Cholesterol": "54.00 mg",
+    "Sodium": "62.10 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Ice Cream with Fruit Chunks",
+  "handle": "strawberry-ice-cream-with-fruit-chunks",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905-2_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905-3_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905-4_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905-5_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905-6_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905-7_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361905-8_1-dairy-day-strawberry-ice-cream-with-fruit-chunks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Ice Cream with Fruit Chunks offers a delightful treat with creamy ice cream combined with juicy, real fruit chunks in every bite. Bursting with natural flavours, it provides a refreshing and indulgent experience. Perfect for those who crave a fruity twist in their dessert, this ice cream is the ideal balance of sweetness and texture, making it a favourite for all ages.",
+   "ingredients": "Ice Cream: Milk Solids, Water, Sugar, Strawberry Fruit (15%), Emulsifier (Ins 471, 477), Stabilizer (Ins 410, 412), Nature Identical Flavour (Strawberry).\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "215.22 kcal",
+    "Protein": "4.08 g",
+    "Carbohydrate": "21.60 g",
+    "Total Sugars": "21.60 g",
+    "Added Sugars": "15.00 g",
+    "Total Fat": "12.50 g",
+    "Saturated Fat": "8.50 g",
+    "Trans Fat": "0.10 g",
+    "Cholesterol": "60.00 mg",
+    "Sodium": "69.00 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Double Sundae Vanilla & Blackcurrant Ice Cream",
+  "handle": "double-sundae-vanilla-blackcurrant-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904-2_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904-3_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904-4_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904-5_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904-6_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904-7_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361904-8_1-dairy-day-double-sundae-vanilla-blackcurrant-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Double Sundae Vanilla & Blackcurrant Ice Cream offers a delightful blend of creamy vanilla and tangy blackcurrant flavours. Perfectly swirled together, each bite delivers a smooth, indulgent treat with a balanced taste. This premium ice cream is the ideal dessert to satisfy your sweet cravings, providing a refreshing, rich experience in every scoop. Enjoy the delicious combination of classic and fruity flavours!",
+   "ingredients": "Medium Fat Ice Cream: Milk Solids, Water, Blackcurrant Syrup (17%) [Water, Sugar, Liquid Glucose, Thickeners (INS 415, 440), Acidity Regulator (INS 330), Food Colours (INS 133, 122), Nature Identical Flavour (Blackcurrant)], Sugar, Blackcurrant Fruit (2%), Emulsifier (INS 477, 471), Stabilizer (INS 410, 412), Food Colours (INS 133, 122), Nature Identical And Artificial Flavours (Vanilla And Blackcurrant).\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "205.07 kcal",
+    "Protein": "3.74 g",
+    "Carbohydrate": "28.10 g",
+    "Total Sugars": "27.95 g",
+    "Added Sugars": "22.80 g",
+    "Total Fat": "8.92 g",
+    "Saturated Fat": "6.07 g",
+    "Trans Fat": "0.08 g",
+    "Cholesterol": "48.67 mg",
+    "Sodium": "55.97 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Double Sundae Vanilla & Strawberry Ice Cream",
+  "handle": "double-sundae-vanilla-strawberry-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903-2_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903-3_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903-4_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903-5_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903-6_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903-7_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361903-8_1-dairy-day-double-sundae-vanilla-strawberry-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Double Sundae Vanilla & Strawberry Ice Cream is a delightful treat that combines the classic flavours of rich vanilla and sweet strawberry in one indulgent scoop. Made with high-quality ingredients, it offers a creamy texture and a refreshing taste that’s perfect for any occasion. Whether enjoyed on its own or as part of a dessert, it’s sure to satisfy your cravings for a sweet, cooling delight.",
+   "ingredients": "Medium Fat Ice Cream: Milk Solids, Water, Strawberry Syrup (17%) [Sugar, Water, Strawberry Crush, Acidity Regulator (INS 330), Thickener (INS 415, 440), Food Colours (INS 110, 122), Nature Identical Flavour (Strawberry)], Sugar, White Compound Chips (2%), Emulsifier (INS 477, 471), Stabilizer (INS 410, 412), Food Colour (INS 122), Nature Identical And Artificial Flavours (Vanilla And Strawberry).\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "212.93 kcal",
+    "Protein": "3.74 g",
+    "Carbohydrate": "28.80 g",
+    "Total Sugars": "28.70 g",
+    "Added Sugars": "23.46 g",
+    "Total Fat": "9.40 g",
+    "Saturated Fat": "6.51 g",
+    "Trans Fat": "0.08 g",
+    "Cholesterol": "48.67 mg",
+    "Sodium": "55.97 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "American Nuts Ice Cream",
+  "handle": "american-nuts-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237802_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237802_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237802-2_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237802-3_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237802-4_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237802-5_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237802-6_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237802-7_1-dairy-day-ice-cream-american-nuts-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the decadent Dairy Day American Nuts Ice Cream Tub, where creamy, smooth ice cream is generously studded with a variety of delectable nuts. Each luscious scoop offers a delightful combination of rich, creamy texture and satisfying crunchy nutty goodness, creating a truly indulgent dessert experience. Made with the finest ingredients, this ice cream tub promises to satisfy your cravings with its delicious blend of flavours and textures. Perfect for nut lovers and those seeking a creamy, indulgent treat, this timeless and heavenly ice cream will transport you to a moment of pure bliss.",
+   "ingredients": "Milk Solids, Water, Sugar, Pineapple Syrup (4%), Sugar Boiled Confectionery (4%), Almond (1.5%), Blackcurrant Fruit (1.5%), Cashew (1.5%), Choco Compound Chips (1.5%), Emulsifier And Stabiliser (Ins 471,477,412,410), Contains Added Flavour, Nature Identical And Artificial Rose And Pineapple Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml (55g)",
+    "Serving Size": "100ml (55g)",
+    "Energy (kcal)": "125.21",
+    "Protein (g)": "2.33",
+    "Carbohydrate (g)": "14.28",
+    "Added Sugar (g)": "10.01",
+    "Total Fat (g)": "6.53",
+    "Saturated Fat (g)": "3.91",
+    "Trans Fat (g)": "0.04",
+    "Cholesterol (mg)": "27.72",
+    "Sodium (mg)": "31.87",
+    "%RDA**/Serve": "6%",
+    "RDA": "% Contribution To RDA calculated On The Basis Of 2000 kcal Energy"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Blackcurrant Ice Cream",
+  "handle": "blackcurrant-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745_2-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745_2-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745-2_2-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745-3_2-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745-4_2-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745-5_2-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745-6_2-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745-7_2-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323745-8_1-dairy-day-blackcurrant-flavoured-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the luscious taste of Dairy Day's Blackcurrant Flavoured Ice Cream. This delectable treat combines the sweetness of ripe blackcurrants with creamy indulgence, creating a burst of flavour with every scoop. Perfect for satisfying your dessert cravings, it offers a refreshing and delightful experience that will leave you craving more.",
+   "ingredients": "Milk Solids, Water, Sugar, Blackcurrant Fruit (5%), Raisin (5%), Emulsifier And Stabiliser (Ins 471,477,412,410) Contains Permitted Synthetic Food Colours (Ins 122,133) And Added Flavour - Nature Identical And Natural Blackcurrant Flavouring Substances.\nAllergen Information: Contains Milk.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100ml(55g)",
+    "Energy (Kcal)": "207.4",
+    "Protein (g)": "3.74",
+    "Carbohydrate(g)": "23.81",
+    "Total Sugar (g)": "22.50",
+    "Added Sugar (g)": "13.50",
+    "Total Fat (g)": "10.80",
+    "Saturated Fat (g)": "7.34",
+    "Trans Fat (g)": "0.09",
+    "Cholesterol (mg)": "54.00",
+    "Sodium (mg)": "62.10"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy Classic Icecream PVT",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gajar Halwa Ice Cream",
+  "handle": "gajar-halwa-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237801_1-dairy-day-ice-cream-gajar-halwa-rich-creamy.jpg"
+    },
+    "barcode": "8906010912147"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237801_1-dairy-day-ice-cream-gajar-halwa-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237801-2_1-dairy-day-ice-cream-gajar-halwa-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237801-3_1-dairy-day-ice-cream-gajar-halwa-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237801-4_1-dairy-day-ice-cream-gajar-halwa-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237801-5_1-dairy-day-ice-cream-gajar-halwa-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237801-6_1-dairy-day-ice-cream-gajar-halwa-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237801-7_1-dairy-day-ice-cream-gajar-halwa-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Tub Gajar Halwa is made with fine cream and gajar halwa. It is a timeless and heavenly gajar halwa ice cream. Enjoy the smooth gajar halwa flavoured ice cream. It is a rich and creamy ice cream. It has the right amount of gajar halwa flavour.",
+   "ingredients": "Milk Solids, Water, Sugar, Gajar Halwa, Emulsifier And Stabiliser, Colour And Flavour",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml (55g)",
+    "Energy (Kcal)": "115.60",
+    "Protein (g)": "2.39",
+    "Carbohydrate (g)": "12.56",
+    "Added Sugar (g)": "8.89",
+    "Total Fat (g)": "6.20",
+    "Saturated Fat (g)": "4.03",
+    "Trans Fat (g)": "0.04",
+    "Cholesterol (mg)": "29.70",
+    "Sodium (mg)": "34.15"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Cookies 'N' Cream Ice Cream",
+  "handle": "cookies-n-cream-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237803_1-dairy-day-ice-cream-cookie-n-cream-rich-smooth-texture.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237803_1-dairy-day-ice-cream-cookie-n-cream-rich-smooth-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237803-2_1-dairy-day-ice-cream-cookie-n-cream-rich-smooth-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237803-3_1-dairy-day-ice-cream-cookie-n-cream-rich-smooth-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237803-4_1-dairy-day-ice-cream-cookie-n-cream-rich-smooth-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237803-5_1-dairy-day-ice-cream-cookie-n-cream-rich-smooth-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237803-6_1-dairy-day-ice-cream-cookie-n-cream-rich-smooth-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237803-7_1-dairy-day-ice-cream-cookie-n-cream-rich-smooth-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Cookies N Cream Ice Cream is made with fine cream and chocolate chip cookies. It is a perfect blend of chocolate chip cookies mixed with vanilla ice cream. It is rich and creamy with crunchy bits of cookies. This premium vanilla ice cream with chocolate cookies is flavourful.",
+   "ingredients": "Milk Solids, Water, Sugar, Cookies, Emulsifier And Stabiliser, Colour And Flavour",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "55g",
+    "Energy (kcal)": "130.78 kcal",
+    "Protein (g)": "2.43 g",
+    "Carbohydrate (g)": "14.56 g",
+    "Added Sugar (g)": "9.46 g",
+    "Total Fat (g)": "6.98 g",
+    "Saturated Fat (g)": "4.53 g",
+    "Trans Fat (g)": "0.04 g",
+    "Cholesterol (mg)": "29.70 mg",
+    "Sodium (mg)": "34.15 mg",
+    "%RDA**/Serve Energy (kcal)": "7%"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Choco Cake & Fudge Ice Cream",
+  "handle": "choco-cake-fudge-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237805_1-dairy-day-ice-cream-choco-cake-fudge-rich-creamy.jpg"
+    },
+    "barcode": "8906010912178"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237805_1-dairy-day-ice-cream-choco-cake-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237805-2_1-dairy-day-ice-cream-choco-cake-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237805-3_1-dairy-day-ice-cream-choco-cake-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237805-4_1-dairy-day-ice-cream-choco-cake-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237805-5_1-dairy-day-ice-cream-choco-cake-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237805-6_1-dairy-day-ice-cream-choco-cake-fudge-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237805-7_1-dairy-day-ice-cream-choco-cake-fudge-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in a guilt-free taste sensation with Dairy Day Tub Choco Cake and Fudge Ice Cream. This decadent fusion of rich chocolate cake and creamy fudge ice cream promises a luxurious dessert experience. Layers of velvety chocolate ice cream are swirled with ribbons of fudge and dotted with decadent chocolate cake pieces, offering a delightful combination of textures and flavours. Packed with fudge and brownie goodness, each spoonful is a delectable treat that will satisfy even the most intense chocolate cravings. Enjoy this lower-calorie, guilt-free indulgence while maintaining a healthy lifestyle. Dairy Day Tub Choco Cake and Fudge Ice Cream is a rich, creamy, and full-flavoured dessert that is sure to become your new favourite.",
+   "ingredients": "Milk Solids, Water, Sugar, Chocolate Syrup (10%) (Water, Milk Solids, Sugar, Cocoa Solids, Vanillin, Stabiliser (Ins 415)), Eggless Chocolate Cake (5%) (Wheat Flour, Water, Sugar, Cocoa Solids, Milk Solids, Edible Vegetable Oil, Raising Agent (Ins 341(Ii)), Corn Starch, Emulsifier And Stabiliser (Ins 415,433,471,475), Dextrose, Salt, Baking Powder), Chocolate Flakes (4%), Cocoa Powder, Emulsifier And Stabiliser (Ins 471,477,412,410)",
+   "nutritionalInfo": {
+    "Nutrition Per": "96ml (64g)",
+    "Serving Size": "96ml (64g)",
+    "Energy(kcal)": "153.37",
+    "Protein(g)": "3.34",
+    "Carbohydrate(g)": "16.17",
+    "Added Sugar(g)": "11.23",
+    "Total Fat(g)": "8.37",
+    "Saturated Fat(g)": "4.69",
+    "Trans Fat(g)": "0.05",
+    "Cholesterol(mg)": "30.72",
+    "Sodium(mg)": "35.32",
+    "%RDA": "8%"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Red Velvet Ice Cream",
+  "handle": "red-velvet-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "480ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237804_1-dairy-day-ice-cream-premium-red-velvet-rich-creamy.jpg"
+    },
+    "barcode": "8906010912161"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237804_1-dairy-day-ice-cream-premium-red-velvet-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237804-2_1-dairy-day-ice-cream-premium-red-velvet-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237804-3_1-dairy-day-ice-cream-premium-red-velvet-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237804-4_1-dairy-day-ice-cream-premium-red-velvet-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237804-5_1-dairy-day-ice-cream-premium-red-velvet-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237804-6_1-dairy-day-ice-cream-premium-red-velvet-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237804-7_1-dairy-day-ice-cream-premium-red-velvet-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Tub Redvelvet is made with fine cream and red velvet. It is a timeless and heavenly red velvet ice cream. Enjoy the smooth red velvet flavoured ice cream. It is a rich and creamy ice cream. It has the right amount of red velvet flavour.",
+   "ingredients": "Milk Solids, Water, Sugar, Eggless Red Velvet Cake, Cherry Fruit, Cheese Powder, Emulsifier And Stabiliser, And Colour",
+   "usageInstructions": "1. It is perfect for all occasions and celebrations.\n2. Enjoy it as dessert after lunch or dinner.\n3. It can also be eaten as a snack while watching a movie or relaxing.",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Exotica Arabian Delite Ice Cream Cup",
+  "handle": "exotica-arabian-delite-ice-cream-cup",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237790_1-dairy-day-excotia-ice-cream-arabian-delite-made-with-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237790_1-dairy-day-excotia-ice-cream-arabian-delite-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237790-2_1-dairy-day-excotia-ice-cream-arabian-delite-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237790-3_1-dairy-day-excotia-ice-cream-arabian-delite-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237790-4_1-dairy-day-excotia-ice-cream-arabian-delite-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237790-5_1-dairy-day-excotia-ice-cream-arabian-delite-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237790-6_1-dairy-day-excotia-ice-cream-arabian-delite-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237790-7_1-dairy-day-excotia-ice-cream-arabian-delite-made-with-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Oval cup Arabian Delight is the perfect time for innovation with dates. Celebrate every moment to taste the perfect blend in our series with a glorious taste of real ice cream. Arabian delight tastes magical with the yummiest dry fruits blended with ideal ice cream.",
+   "ingredients": "Milk And Milk Solids, Sugar, Dates (5%), Raisin (5%), Emulsiifer And Stabiliser (Ins 471,477,412,410), Contains Permitted Synthetic Food Colour (Ins 110) And Added Flavour - Nature Identical And Natural Milk Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "100ml(56g)",
+    "Energy(kcal)": "126.63 kcal",
+    "Protein (g)": "2.15 g",
+    "Carbohydrate(g)": "15.49 g",
+    "Added Sugar(g)": "7.77 g",
+    "Total Fat(g)": "6.22 g",
+    "Saturated Fat(g)": "4.21 g",
+    "Trans Fat(g)": "0.04 g",
+    "Cholesterol(mg)": "61.83 mg",
+    "Sodium(mg)": "30.38 mg",
+    "%RDA**/Serve": "6%"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Exotica Rajbhog Ice Cream Cup",
+  "handle": "exotica-rajbhog-ice-cream-cup",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237791_1-dairy-day-exotica-ice-cream-rajbhog-made-with-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237791_1-dairy-day-exotica-ice-cream-rajbhog-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237791-2_1-dairy-day-exotica-ice-cream-rajbhog-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237791-3_1-dairy-day-exotica-ice-cream-rajbhog-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237791-4_1-dairy-day-exotica-ice-cream-rajbhog-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237791-5_1-dairy-day-exotica-ice-cream-rajbhog-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237791-6_1-dairy-day-exotica-ice-cream-rajbhog-made-with-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237791-7_1-dairy-day-exotica-ice-cream-rajbhog-made-with-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day presents Ovalcup Rajbhog flavoured ice cream. It is a combination of innovation and traditional flavours. It has rasgulla and nuts like almonds and cashews embedded in it. Its aroma and texture give the real-time picture of traditional and its sweetness gives the reality of it being ice cream.",
+   "ingredients": "Milk And Milk Solids, Sugar, Raisin (3%), Almond (3%), Cashew (3%), Saffron (1%), Honey (1%), Emulsiifer And Stabiliser (Ins 471,477,412,410)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "100ml(56g)",
+    "Energy(kcal)": "130.42 kcal",
+    "Protein (g)": "2.75 g",
+    "Carbohydrate(g)": "12.08 g",
+    "Added Sugar(g)": "7.90 g",
+    "Total Fat(g)": "7.32 g",
+    "Saturated Fat(g)": "3.93 g",
+    "Trans Fat(g)": "0.04 g",
+    "Cholesterol(mg)": "63.77 mg",
+    "Sodium(mg)": "31.62 mg",
+    "%RDA**/Serve": "7%, 16%, 11%, 2%, 1%"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Junior Sundae Fruit Punch Frozen Dessert Cup",
+  "handle": "junior-sundae-fruit-punch-frozen-dessert-cup",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237809_1-dairy-day-junior-sundae-fruit-punch-rich-creamy.jpg"
+    },
+    "barcode": "8906010913120"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237809_1-dairy-day-junior-sundae-fruit-punch-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237809-2_1-dairy-day-junior-sundae-fruit-punch-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237809-3_1-dairy-day-junior-sundae-fruit-punch-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237809-4_1-dairy-day-junior-sundae-fruit-punch-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237809-5_1-dairy-day-junior-sundae-fruit-punch-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237809-6_1-dairy-day-junior-sundae-fruit-punch-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237809-7_1-dairy-day-junior-sundae-fruit-punch-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Jr. Sundae New Fruit punch gives you the experience of an ice cream parlour in a cup. It comes in a plastic cup that is strong enough to hold the content. That combination of warm, rich chocolate fudge mixing with frozen ice cream and melting it slightly is absolutely irresistible.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml(60g)",
+    "Energy(Kcal)": "127.31",
+    "Protein(g)": "2.16",
+    "Carbohydrate(g)": "14.39",
+    "Added Sugar(g)": "10.93",
+    "Total Fat(g)": "6.79",
+    "Saturated Fat(g)": "4.21",
+    "Trans Fat(g)": "0.03",
+    "Cholesterol(mg)": "14.74",
+    "Sodium(mg)": "17.20"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Matka Kulfi",
+  "handle": "matka-kulfi",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237788_2-dairy-day-matka-kulfi-made-with-milk-rich-creamy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237788_2-dairy-day-matka-kulfi-made-with-milk-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237788-2_2-dairy-day-matka-kulfi-made-with-milk-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237788-3_2-dairy-day-matka-kulfi-made-with-milk-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237788-4_2-dairy-day-matka-kulfi-made-with-milk-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237788-5_2-dairy-day-matka-kulfi-made-with-milk-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237788-6_2-dairy-day-matka-kulfi-made-with-milk-rich-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237788-7_2-dairy-day-matka-kulfi-made-with-milk-rich-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Matka Kulfi is a rich, creamy, and sweet ice cream made with fine-quality milk. It offers a traditional twist, combining the flavours of ice cream and sorbet. This matka kulfi is rich in dry fruits and is good for a healthy lifestyle.",
+   "ingredients": "Milk Solids, Water, Sugar, Almond (3%), Pista (3%), Emulsifier And Stabiliser (Ins 471,412,433,407,401). Contains Added Flavour - Nature Identical And Artificial Kulfi Flavouring Substances.\nAllergen Information: Contains Milk & Tree Nuts.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100ml (55g)",
+    "Energy(Kcal)": "245.57",
+    "Protein(g)": "5.31",
+    "Carbohydrate(g)": "22.76",
+    "Added Sugar(g)": "14.10",
+    "Total Fat(g)": "14.81",
+    "Saturated Fat(g)": "8.16",
+    "Trans Fat(g)": "0.09",
+    "Cholesterol(mg)": "56.40",
+    "Sodium(mg)": "64.86"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy Classic Icecream PVT",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Casatta Roll Ice Cream Cake",
+  "handle": "casatta-roll-ice-cream-cake",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "625ml",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793_2-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793_2-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793-2_2-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793-3_2-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793-4_2-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793-5_2-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793-6_2-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793-7_2-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237793-8_1-dairy-day-casatta-roll-ice-cream-eggless-cake-100-vegetarian.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Casatta Roll is made with fine cream, cashews, and pistachios. It is a timeless and heavenly cassata roll ice cream. Enjoy the smooth cassata roll-flavoured ice cream. It is a rich and creamy ice cream with the right amount of cashews and pistachios flavour.",
+   "ingredients": "Water, Milk Solids, Sugar, Edible Vegetable Oil, Eggless Cake, Cashew, Glazed Papaya Pieces, Strawberry Syrup, Emulsifier And Stabiliser, Colour And Flavour .",
+   "nutritionalInfo": {
+    "Energy": "265.50 kcal",
+    "Protein": "2.10 g",
+    "Carbohydrate": "27.80 g",
+    "Added Sugar": "12.12 g",
+    "Total Fat": "15.40 g",
+    "Saturated Fat": "13.88 g",
+    "Trans Fat": "0.10 g"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Black Forest Ice Cream Cake",
+  "handle": "black-forest-ice-cream-cake",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237794_1-dairy-day-ice-cream-cake-black-forest-yummy-eggless-100-vegetarian.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237794_1-dairy-day-ice-cream-cake-black-forest-yummy-eggless-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237794-2_1-dairy-day-ice-cream-cake-black-forest-yummy-eggless-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237794-3_1-dairy-day-ice-cream-cake-black-forest-yummy-eggless-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237794-4_1-dairy-day-ice-cream-cake-black-forest-yummy-eggless-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237794-5_1-dairy-day-ice-cream-cake-black-forest-yummy-eggless-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237794-6_1-dairy-day-ice-cream-cake-black-forest-yummy-eggless-100-vegetarian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237794-7_1-dairy-day-ice-cream-cake-black-forest-yummy-eggless-100-vegetarian.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the decadent flavours of Dairy Days' Black Forest Ice Cream Cake, a rich and creamy treat that will transport you to the heart of the Black Forest. Crafted with fine ice cream and a moist chocolate sponge cake, this timeless dessert offers a heavenly blend of smooth black forest-flavoured ice cream and the right amount of indulgence. Luxurious and decadent, this ice cream cake is a true delight for the senses, with a velvety texture and a captivating aroma that will leave you craving more. Enjoy this irresistible treat for a truly memorable experience.",
+   "ingredients": "Milk Solids, Water, Sugar, Eggless Chocolate Cake, Chocolate Syrup, Chocolate Flakes, Non-dairy Whip Cream, Emulsifier And Stabiliser, Flavour.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "125ml",
+    "Serving Size": "125 ml",
+    "Energy(Kcal)": "246.03",
+    "Protein(g)": "4.50",
+    "Carbohydrate(g)": "35.52",
+    "Added Sugar(g)": "17.10",
+    "Total Fat(g)": "9.55",
+    "Saturated Fat(g)": "7.24",
+    "Trans Fat(g)": "0.040",
+    "Cholesterol(mg)": "18.00",
+    "Sodium(mg)": "134.00"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ },
+ {
+  "title": "Premium Casatta Slice",
+  "handle": "premium-casatta-slice",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323744_4-dairy-day-premium-casatta-frozen-dessert.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323744_4-dairy-day-premium-casatta-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323744-2_4-dairy-day-premium-casatta-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323744-3_4-dairy-day-premium-casatta-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323744-4_4-dairy-day-premium-casatta-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323744-5_4-dairy-day-premium-casatta-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323744-6_4-dairy-day-premium-casatta-frozen-dessert.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323744-7_4-dairy-day-premium-casatta-frozen-dessert.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the luxurious delight of Dairy Day's Premium Casatta, a heavenly treat that promises a symphony of flavours. Featuring multiple layers of distinct ice cream flavours, including rich vanilla, luscious strawberry, and indulgent pista, this dessert offers a medley of taste and visual appeal. Complemented by a soft and moist sponge base, the Casatta adds an extra dimension of texture and taste to the ice cream experience. Perfect for celebrations, parties, and gatherings, this vibrant and nostalgic dessert is sure to delight family and friends alike. Treat yourself to this exquisite indulgence and embark on a journey of creamy goodness that will leave you craving more.",
+   "ingredients": "Water, Milk, Solids, Sugar, Edible Vegetable Oil(Palm Kernel Oil), Eggless Cake (10%)(Wheat Flour, Water, Sugar, Milk Solids, Edible Vegetable Oil, Raising Agent (Ins 341(Ii)), Corn Starch, Emulsifier And Stabiliser (Ins 415,433,471,475), Dextrose, Salt, Baking Powder, Contains Nature Identical And Artificial Vanilla Flavouring Substances), Cashew (8%), Glazed Papaya Pieces (4%), Strawberry Syrup (2.5%) Emulsifier And Stabiliser (Ins 471,412,433,407,401) Contains Permitted Synthetic Food Colours (Ins 102,122,133) And Added Flavours Nature Identical And Artificial Pista, Vanilla, Strawberry Flavouring Substances.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100ml (60g)",
+    "Energy(Kcal)": "265.80",
+    "Protein(g)": "5.25",
+    "Carbohydrate(g)": "27.90",
+    "Added Sugar(g)": "13.50",
+    "Total Fat(g)": "14.80",
+    "Saturated Fat(g)": "7.10",
+    "Trans Fat(g)": "0.06",
+    "Cholesterol(mg)": "22.50",
+    "Sodium(mg)": "26.25"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy Classic Icecream PVT",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Double Cone Blackcurrant Strawberry",
+  "handle": "double-cone-blackcurrant-strawberry",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361911_1-dairy-day-double-cone-blackcurrant-strawberry-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361911_1-dairy-day-double-cone-blackcurrant-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361911-2_1-dairy-day-double-cone-blackcurrant-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361911-3_1-dairy-day-double-cone-blackcurrant-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361911-4_1-dairy-day-double-cone-blackcurrant-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361911-5_1-dairy-day-double-cone-blackcurrant-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361911-6_1-dairy-day-double-cone-blackcurrant-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361911-7_1-dairy-day-double-cone-blackcurrant-strawberry-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Double Cone Ice Cream is a delightful treat that combines the rich, creamy texture of premium ice cream with a crunchy cone. Perfectly crafted, each bite offers a smooth, indulgent experience. With its dual cones, it's designed to satisfy your cravings while providing a refreshing, irresistible dessert that's perfect for every occasion. Enjoy a double dose of joy in every scoop!",
+   "ingredients": "Medium Fat Ice Cream: Milk Solids, Water, Wafer Biscuit Cone (16%) [Wheat Flour, Sugar, Coconut Oil, Emulsifier (Ins 322), Caramel, Salt], Sugar, Choco Compound Coating (14%) [Palm Kernel Oil, Palm Oil, Sugar, Cocoa Solids, Emulsifier (Ins 322), Nature Identical Flavour (Vanilla)], White Compound Chips (4%), Emulsifier (Ins 471, 433), Stabilizer (Ins 412, 407, 401, 1440), Food Colours (Ins 122, 133), Nature Identical Flavours (Strawberry & Blackcurrant).\nAllergen Information: Contains Milk & Wheat.",
+   "nutritionalInfo": {
+    "Energy": "292.49 kcal (11% RDA)",
+    "Protein": "3.81 g",
+    "Carbohydrate": "35.98 g",
+    "Total Sugars": "28.64 g",
+    "Added Sugars": "21.80 g (33% RDA)",
+    "Total Fat": "14.80 g (17% RDA)",
+    "Saturated Fat": "9.98 g (34% RDA)",
+    "Trans Fat": "0.05 g (2% RDA)",
+    "Cholesterol": "21.57 mg (2% RDA)",
+    "Sodium": "72.25 mg (3% RDA)"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Double Cone Mango Vanilla",
+  "handle": "double-cone-mango-vanilla",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361912_1-dairy-day-double-cone-mango-vanilla-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361912_1-dairy-day-double-cone-mango-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361912-2_1-dairy-day-double-cone-mango-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361912-3_1-dairy-day-double-cone-mango-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361912-4_1-dairy-day-double-cone-mango-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361912-5_1-dairy-day-double-cone-mango-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361912-6_1-dairy-day-double-cone-mango-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361912-7_1-dairy-day-double-cone-mango-vanilla-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Double Cone Ice Cream is a delightful treat that combines the rich, creamy texture of premium ice cream with a crunchy cone. Perfectly crafted, each bite offers a smooth, indulgent experience. With its dual cones, it's designed to satisfy your cravings while providing a refreshing, irresistible dessert that's perfect for every occasion. Enjoy a double dose of joy in every scoop!",
+   "ingredients": "Medium Fat Ice Cream: Milk Solids, Water, Wafer Biscuit Cone (16%) [Wheat Flour, Sugar, Coconut Oil, Emulsifier (Ins 322), Caramel, Salt], Sugar, Choco Compound Coating (14%) [Palm Kernel Oil, Palm Oil, Sugar, Cocoa Solids, Emulsifier (Ins 322), Nature Identical Flavour (Vanilla)], Mango Pulp (10%), White Compound Chips (4%), Emulsifier (Ins 471, 433), Stabilizer (Ins 412, 407, 401, 1440), Food Colours (Ins 102, 110), Nature Identical & Artificial Flavours (Vanilla & Mango).\nAllergen Information: Contains Milk & Wheat.",
+   "nutritionalInfo": {
+    "Energy": "292.49 kcal (11% RDA)",
+    "Protein": "3.81 g",
+    "Carbohydrates": "35.98 g",
+    "Total Sugars": "28.64 g",
+    "Added Sugars": "21.80 g (33% RDA)",
+    "Total Fat": "14.80 g (17% RDA)",
+    "Saturated Fat": "9.98 g (34% RDA)",
+    "Trans Fat": "0.05 g (2% RDA)",
+    "Cholesterol": "21.57 mg (2% RDA)",
+    "Sodium": "72.25 mg (3% RDA)"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Red Velvet Cone",
+  "handle": "red-velvet-cone",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341819_1-dairy-day-red-velvet-cone-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341819_1-dairy-day-red-velvet-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341819-2_1-dairy-day-red-velvet-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341819-3_1-dairy-day-red-velvet-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341819-4_1-dairy-day-red-velvet-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341819-5_1-dairy-day-red-velvet-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341819-6_1-dairy-day-red-velvet-cone-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the Dairy Day Red Velvet Cone Ice Cream, a treat like no other! Enjoy velvety red velvet-flavoured ice cream with a luscious cream cheese twist, crowned with crunchy red velvet crumbs. Encased in a crispy wafer biscuit cone coated with rich choco compound, every bite is a delightful mix of smooth, crunchy, and chocolaty goodness.",
+   "ingredients": "Milk Solids\nWater\nWafer Biscuit Cone (16%) [Wheat Flour, Sugar, Coconut Oil, Emulsifier (Ins 322), Caramel, Salt, Permitted Synthetic Food Colour (E127)]\nSugar\nChoco Compound Coating (14%) [Palm Kernel Oil, Palm Oil, Coconut Oil, Sugar, Cocoa Solids, Emulsifier (Ins 322), Added Nature Identical Vanilla Flavouring Substances]\nEdible Vegetable Oil (Palm Kernel Oil)\nRed Velvet Cake (3%)\nEmulsifier & Stabiliser (Ins 471, 412, 433, 407, 401)\nPermitted Synthetic Food Colour (Ins 110)\nAdded Flavour – Nature Identical And Artificial Red Velvet Flavouring Substances",
+   "nutritionalInfo": {
+    "Energy": "299.16 kcal",
+    "Protein": "4.17 g",
+    "Carbohydrate": "34.92 g",
+    "Added Sugar": "21.13 g",
+    "Total Fat": "15.81 g",
+    "Saturated Fat": "11.02 g",
+    "Trans Fat": "0.09 g",
+    "Cholesterol": "28.55 mg",
+    "Sodium": "58.38 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hazelnut Triple Bar",
+  "handle": "hazelnut-triple-bar",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70ml",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350787_1-dairy-day-hazelnut-triple-bar-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350787_1-dairy-day-hazelnut-triple-bar-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350787-2_1-dairy-day-hazelnut-triple-bar-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350787-3_1-dairy-day-hazelnut-triple-bar-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350787-4_1-dairy-day-hazelnut-triple-bar-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350787-5_1-dairy-day-hazelnut-triple-bar-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350787-6_1-dairy-day-hazelnut-triple-bar-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in Dairy Day Hazelnut Triple Bar Ice Cream - a delightful trio of creamy hazelnut-flavoured ice cream, crunchy chocolate coating, and a rich nutty centre. Each bite offers a smooth, satisfying taste with layers of texture and flavour. Perfect for a quick treat or a moment of indulgence anytime, anywhere. Pure pleasure in every bar!",
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Triple Bar Butterscotch & Choco Stick",
+  "handle": "triple-bar-butterscotch-choco-stick",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361914_1-dairy-day-triple-bar-butterscotch-choco-stick-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361914_1-dairy-day-triple-bar-butterscotch-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361914-2_1-dairy-day-triple-bar-butterscotch-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361914-3_1-dairy-day-triple-bar-butterscotch-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361914-4_1-dairy-day-triple-bar-butterscotch-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361914-5_1-dairy-day-triple-bar-butterscotch-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361914-6_1-dairy-day-triple-bar-butterscotch-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361914-7_1-dairy-day-triple-bar-butterscotch-choco-stick-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Triple Bar Butterscotch & Choco Stick Ice Cream offers the perfect indulgence with a delicious combination of creamy butterscotch and rich chocolate. Each bar is coated with a crunchy chocolate stick, making every bite a heavenly mix of smooth, caramelised flavour and decadent chocolate. Perfect for satisfying your sweet cravings, it’s an irresistible treat for any occasion.",
+   "ingredients": "Middle Layer (55%): Medium Fat Ice Cream - Milk Solids, Water, Sugar, Emulsifier (Ins 471, 433), Stabilizer (Ins 407, 401, 412, 1440), Food Colour (Ins 102), Artificial Flavour (Butterscotch).\nOuter Layer (25%): Choco Compound Coating - Sugar, Palm Kernel Oil, Cocoa Solids, Milk Solids, Emulsifier (Ins 322), Nature Identical Flavour (Vanilla), Brittle Brownie (3%).\nInner Layer (20%): Choco Compound - Sugar, Palm Kernel Oil, Cocoa Solids, Milk Solids, Emulsifier (Ins 322), Nature Identical Flavour (Vanilla). Allergen Information: Contains Milk, Wheat, Nut, And Soy.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "371.81",
+    "Protein": "3.74 g",
+    "Carbohydrate": "31.13 g",
+    "Total Sugars": "28.91 g",
+    "Added Sugars": "23.53 g",
+    "Total Fat": "25.81 g",
+    "Saturated Fat": "19.71 g",
+    "Trans Fat": "0.06 g",
+    "Cholesterol": "17.95 mg",
+    "Sodium": "32.75 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Triple Bar Coffee & Choco Stick",
+  "handle": "triple-bar-coffee-choco-stick",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40361913_1-dairy-day-triple-bar-coffee-choco-stick-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361913_1-dairy-day-triple-bar-coffee-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361913-2_1-dairy-day-triple-bar-coffee-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361913-3_1-dairy-day-triple-bar-coffee-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361913-4_1-dairy-day-triple-bar-coffee-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361913-5_1-dairy-day-triple-bar-coffee-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361913-6_1-dairy-day-triple-bar-coffee-choco-stick-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40361913-7_1-dairy-day-triple-bar-coffee-choco-stick-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Triple Bar Choco Stick Ice Cream offers a deliciously indulgent treat with layers of rich chocolate and creamy ice cream. Each bite delivers the perfect balance of smooth chocolate coating and a creamy, satisfying centre. Ideal for chocolate lovers, this frozen delight is perfect for any occasion, making every moment a little sweeter and more enjoyable.",
+   "ingredients": "Middle Layer (55%): Medium Fat Ice Cream - Milk Solids, Water, Sugar, Coffee Powder, Emulsifier (Ins 471, 433), Stabilizer (Ins 401, 407, 412, 1440), Nature Identical Flavour (Coffee).\nOuter Layer (25%): Choco Compound Coating - Sugar, Palm Kernel Oil, Cocoa Solids, Milk Solids, Emulsifier (Ins 322), Nature Identical Flavour (Vanilla), Brittle Brownie (3%).\nInner Layer (20%): Choco Compound - Sugar, Palm Kernel Oil, Cocoa Solids, Milk Solids, Emulsifier (Ins 322), Nature Identical Flavour (Vanilla).\nAllergen Information: Contains Milk, Wheat, Nut, And Soy.\nStorage Instructions: Store At -18°C Or Below.",
+   "nutritionalInfo": {
+    "Energy": "371.81 kcal",
+    "Protein": "3.74 g",
+    "Carbohydrate": "31.13 g",
+    "Total Sugars": "28.91 g",
+    "Added Sugars": "23.53 g",
+    "Total Fat": "25.81 g",
+    "Saturated Fat": "19.71 g",
+    "Trans Fat": "0.06 g",
+    "Cholesterol": "17.95 mg",
+    "Sodium": "32.75 mg"
+   },
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Nutty Bar Butterscotch Choco Stick",
+  "handle": "nutty-bar-butterscotch-choco-stick",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341820_2-dairy-day-nutty-bar-butterscotch-choco-stick.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341820_2-dairy-day-nutty-bar-butterscotch-choco-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341820-2_2-dairy-day-nutty-bar-butterscotch-choco-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341820-3_1-dairy-day-nutty-bar-butterscotch-choco-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341820-4_1-dairy-day-nutty-bar-butterscotch-choco-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341820-5_1-dairy-day-nutty-bar-butterscotch-choco-stick.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341820-6_1-dairy-day-nutty-bar-butterscotch-choco-stick.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible Dairy Day Nutty Bar Butterscotch Choco Stick. It is a delightful blend of creamy butterscotch ice cream coated in rich chocolate and sprinkled with crunchy nuts for the perfect bite. Every lick is a heavenly mix of smooth, crunchy, and chocolaty goodness, pure joy on a stick. Treat yourself to this delightful indulgence today.",
+   "ingredients": "Outer Layer – Choco Compound Coating (25%)\nSugar, Palm Kernel Oil, Coconut Oil, Cocoa Solids, Milk Solids, Emulsifier (Ins 322), Nature Identical Vanilla Flavouring Substances, Cashew (3%)\nInner Layer – Butterscotch Flavoured Frozen Dessert (75%)\nWater, Milk Solids, Sugar, Edible Vegetable Oil (Palm Kernel Oil, Coconut Oil), Emulsifier And Stabilisers (Ins 471, Ins 412, Ins 433, Ins 407, Ins 401), Synthetic Food Colours (Ins 102), Added Flavour – Nature Identical & Artificial Butterscotch Flavouring Substances",
+   "nutritionalInfo": {
+    "Energy": "175.65 kcal",
+    "Protein": "2.47 g",
+    "Carbohydrate": "15.32 g",
+    "Added Sugar": "10.60 g",
+    "Total Fat": "11.61 g",
+    "Saturated Fat": "9.21 g",
+    "Trans Fat": "0.03 g",
+    "Cholesterol": "12.00 mg",
+    "Sodium": "14.00 mg"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd",
+   "fssaiLicense": "10014043000791",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Paan Twist Ice Cream",
+  "handle": "paan-twist-ice-cream",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237798_2-dairy-day-ice-cream-paan-twist-rich-source-of-calcium-strong-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237798_2-dairy-day-ice-cream-paan-twist-rich-source-of-calcium-strong-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237798-2_2-dairy-day-ice-cream-paan-twist-rich-source-of-calcium-strong-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237798-3_2-dairy-day-ice-cream-paan-twist-rich-source-of-calcium-strong-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237798-4_2-dairy-day-ice-cream-paan-twist-rich-source-of-calcium-strong-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237798-5_2-dairy-day-ice-cream-paan-twist-rich-source-of-calcium-strong-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237798-6_2-dairy-day-ice-cream-paan-twist-rich-source-of-calcium-strong-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237798-7_2-dairy-day-ice-cream-paan-twist-rich-source-of-calcium-strong-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Paan Twist is made with fine cream and paan. It is a timeless and heavenly cookies ice cream. Enjoy the smooth paan flavoured ice cream. It is a rich and creamy ice cream. It has the right amount of paan flavour.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "75ml (60g)",
+    "Energy(Kcal)": "211.16",
+    "Protein(g)": "4.07",
+    "Carbohydrate(g)": "22.94",
+    "Total Sugar(g)": "22.94",
+    "Added Sugar(g)": "15.33",
+    "Total Fat(g)": "11.21",
+    "Saturated Fat(g)": "6.88",
+    "Trans Fat(g)": "0.09",
+    "Cholesterol(mg)": "54.00",
+    "Sodium(mg)": "62.10"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Dairy Classic Ice Creams (P) Ltd. (A) Plot No",
+   "fssaiLicense": "10012043000476",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Ice Cream Sandwich",
+  "handle": "vanilla-ice-cream-sandwich",
+  "vendor": "Dairy Day",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237811_1-dairy-day-ice-cream-sandwich-vanilla-rich-smooth-creamy.jpg"
+    },
+    "barcode": "8906010910303"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237811_1-dairy-day-ice-cream-sandwich-vanilla-rich-smooth-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237811-2_1-dairy-day-ice-cream-sandwich-vanilla-rich-smooth-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237811-3_1-dairy-day-ice-cream-sandwich-vanilla-rich-smooth-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237811-4_1-dairy-day-ice-cream-sandwich-vanilla-rich-smooth-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237811-5_1-dairy-day-ice-cream-sandwich-vanilla-rich-smooth-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237811-6_1-dairy-day-ice-cream-sandwich-vanilla-rich-smooth-creamy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237811-7_1-dairy-day-ice-cream-sandwich-vanilla-rich-smooth-creamy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dairy Day Vanilla Sandwich Ice Cream is made with real milk and is very flavourful. It has a very unique taste, flavour and smooth texture. This ice cream comes in between two biscuits that are made with wheat flour. The biscuit adds a crunch to it. It contains premium quality ingredients that adds a creamy texture to the ice cream. This ice cream sandwich gives you an unforgettable ice cream experience. It is delicious and great comforting food or during summers.",
+   "ingredients": "Milk Solids, Water, Sugar, Biscuit, Emulsifier And Stabiliser, And Flavour",
+   "usageInstructions": "1. Use it as a dessert after meals.\n2. It makes great comforting food.",
+   "manufacturerName": "Dairy classic Ice creams Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014043000791"
+  }
+ }
+]
