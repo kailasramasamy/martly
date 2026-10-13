@@ -1,0 +1,160 @@
+{
+  "brand": "Pringles (Kellogg's)",
+  "manufacturer": "Kellogg India Pvt. Ltd.",
+  "feed": "pringles-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pringles/logo-d50cacb3.png",
+  "themeColor": "#D2232A",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Pringles ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Pringles Original Potato Crisps": "Original Potato Chips"
+  },
+  "rules": [
+    {
+      "match": "^Original\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Sour\\ Cream\\ \\&\\ Onion\\ Flavour\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Desi\\ Masala\\ Tadka\\ Flavour\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Burst\\ Flavour\\ Potato\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Scorchin'\\ Red\\ Hot\\ Chilli\\ Flavour\\ Potato\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Flavour\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^South\\ African\\ Style\\ Peri\\ Peri\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Fusion\\ Chutney\\ Potato\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Tomato\\ Twist\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Original\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Sour\\ Cream\\ \\&\\ Onion\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Cheddar\\ Cheese\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Cheddar\\ \\&\\ Sour\\ Cream\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Ranch\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Salt\\ \\&\\ Vinegar\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^BBQ\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    },
+    {
+      "match": "^Honey\\ Mustard\\ Potato\\ Crisps\\ \\(Imported\\)$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Imported Chips & Crisps"
+      ]
+    }
+  ]
+}
