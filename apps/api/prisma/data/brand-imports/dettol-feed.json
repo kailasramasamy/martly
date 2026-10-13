@@ -568,6 +568,16 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40333736_1-dettol-liquid-hand-wash-sensitive.jpg"
     }
+   },
+   {
+    "title": "175ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130539_10-dettol-hand-wash-liquid-refill-sensitive.jpg"
+    }
    }
   ],
   "images": [
@@ -1007,6 +1017,25 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/100008548_29-dettol-original-bathing-soap-bar-with-76-tfm-protects-from-germs.jpg"
     }
+   },
+   {
+    "title": "42g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/407516_1-dettol-soap-bar-original.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "62",
+    "compare_at_price": "62",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322058_9-dettol-original-germ-protection-bathing-soap-bar.jpg"
+    }
    }
   ],
   "images": [
@@ -1141,6 +1170,16 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40325771_6-dettol-icy-cool-soap.jpg"
+    }
+   },
+   {
+    "title": "125g",
+    "price": "56",
+    "compare_at_price": "56",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40194528_17-dettol-intense-cool-bathing-soap-bar-with-menthol-provides-germ-protection.jpg"
     }
    }
   ],
@@ -1607,6 +1646,15 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40323094_8-dettol-icy-cool-shower-gel-with-menthol-eucalyptus-fragrance.jpg"
     }
+   },
+   {
+    "title": "450ml",
+    "price": "370",
+    "compare_at_price": "370",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323095_7-dettol-icy-cool-shower-gel-with-menthol-eucalyptus-fragrance.jpg"
+    }
    }
   ],
   "images": [
@@ -1664,6 +1712,15 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40323092_6-dettol-lime-fresh-shower-gel-with-yuzu-citrus-fragrance.jpg"
+    }
+   },
+   {
+    "title": "450ml",
+    "price": "370",
+    "compare_at_price": "370",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323093_6-dettol-lime-fresh-shower-gel-with-yuzu-citrus-fragrance.jpg"
     }
    }
   ],
@@ -1911,6 +1968,15 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40168558_11-dettol-disinfectant-liquid-floorsurface-cleaner-provides-protection-from-germs-lime-fresh.jpg"
     }
+   },
+   {
+    "title": "500ml",
+    "price": "212",
+    "compare_at_price": "212",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005082_18-dettol-disinfectant-liquid-floorsurface-cleaner-provides-protection-from-germs-lime-fresh.jpg"
+    }
    }
   ],
   "images": [
@@ -1942,7 +2008,7 @@
   "details": {
    "description": "Dettol Disinfectant Multipurpose Liquid cleaner provides protection to you and your family against illness causing germs. This disinfectant liquid sanitises your home leaving a fresh lime fragrance. It can be used in laundry, floor and surface cleaning, leaving everything clean and fresh. This multipurpose disinfenctant cleaner is recommended by Indian Medical Association.",
    "usageInstructions": "Laundry Disinfection: 15 ml to a litre of water in the last\nrinse\nFloor Disinfection: 15 ml to a litre of water\nKitchen & Bathroom Disinfection: 15ml to a litre of\nwater\nRefrigerator Disinfection: 15 ml to a litre of water",
-   "manufacturerName": "Reckitt Benckiser (India) Pvt. Ltd. 61",
+   "manufacturerName": "Reckitt Benckiser (India) Pvt. Ltd.",
    "countryOfOrigin": "India"
   }
  },
@@ -1970,6 +2036,15 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40237392_7-dettol-liquid-disinfectant-floor-cleaner-and-surface-cleaner-lavender-blossom.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "212",
+    "compare_at_price": "212",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237391_3-dettol-liquid-disinfectant-floor-cleaner-and-surface-cleaner-lavender-blossom.jpg"
     }
    }
   ],
@@ -2029,6 +2104,15 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40311429_5-dettol-disinfectant-liquid-menthol-cool.jpg"
     }
+   },
+   {
+    "title": "500ml",
+    "price": "212",
+    "compare_at_price": "212",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40114369_14-dettol-disinfectant-liquid-floorsurface-cleaner-provides-protection-from-germs-menthol-cool.jpg"
+    }
    }
   ],
   "images": [
@@ -2060,7 +2144,7 @@
   "details": {
    "description": "Dettol Disinfectant Multipurpose Liquid Cleaner provides protection to you and your family against illness-causing germs. This disinfectant liquid sanitises your home, leaving a fresh menthol cool fragrance. It can be used in laundry, floor and surface cleaning, leaving everything clean and fresh.  This multipurpose disinfectant cleaner is recommended by the Indian Medical Association.",
    "usageInstructions": "Laundry\nDisinfection: 15 ml to a litre of water in the last rinse\nFloor\nDisinfection: 15 ml to a litre of water\nKitchen\n& Bathroom Disinfection: 15 ml to a litre of water\nRefrigerator\nDisinfection: 15 ml to a litre of water",
-   "manufacturerName": "Reckitt Benckiser (India) Pvt. Ltd. 61 & 62",
+   "manufacturerName": "Reckitt Benckiser (India) Pvt. Ltd. 61 &",
    "countryOfOrigin": "India"
   }
  },
@@ -2345,7 +2429,7 @@
   "details": {
    "description": "Protect your family from 100 illness-causing germs, bacteria, and viruses with Dettol's powerful disinfectant spray. This alcohol-based surface cleaner sanitises your home, eliminating odour-causing bacteria and helping to kill cold and flu viruses, including the H1N1 virus. Versatile and multipurpose, this disinfectant can be used on a variety of surfaces, from toilet areas and kitchen sinks to sofas, curtains, and car seats, leaving everything clean, fresh, and protected for up to 24 hours. Recommended by the Indian Medical Association, this disinfectant offers germ-killing efficacy of 99.9% while delivering a pleasant pine fragrance. Suitable for both hard and soft surfaces, Dettol's disinfectant spray is the perfect solution for keeping your home and family safe and healthy.",
    "usageInstructions": "Shake Dettol Disinfectant Spray well.\nHold spray 15-20 cm from the pre-cleaned surface and spray the surface until covered with mist.\nAllow to air dry, no need to wipe.\nDo not use on polished wood, painted surface or acrylic plastics.\nFor external use only.",
-   "manufacturerName": "Accra Pac India Pvt. Plot no. 1105",
+   "manufacturerName": "Accra Pac India Pvt. Plot no.",
    "countryOfOrigin": "India"
   }
  },
@@ -2441,6 +2525,15 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40338065_3-dettol-lemon-fresh-kitchen-gel.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40368527_3-dettol-lemon-fresh-kitchen-dishwash-gel.jpg"
     }
    }
   ],
@@ -2546,6 +2639,15 @@
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40189413_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-spring-blossom.jpg"
     }
+   },
+   {
+    "title": "960ml",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189408_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-spring-blossom.jpg"
+    }
    }
   ],
   "images": [
@@ -2629,6 +2731,656 @@
    "usageInstructions": "1) Take the laundry pod out with dry hands. No need to cut open or pre-dissolve.\n2) Place the pod at the back or bottom of the machine drum, Do not place in the detergent box.\n3) Place clothes into the washing machine on top of the pod. Film is water soluble.\n4) If residue is left on cloth, rinse it with warm water. Make sure your wash cycle lasts at least 15 minutes.",
    "manufacturerName": "Reckitt Benckiser (India) Pvt. Ltd",
    "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Jasmine Bathing Soap (Co-Created with Moms)",
+  "handle": "jasmine-bathing-soap-co-created-with-moms",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534_2-dettol-moms-bathing-soap-jasmine.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534_2-dettol-moms-bathing-soap-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534-2_2-dettol-moms-bathing-soap-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534-3_2-dettol-moms-bathing-soap-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534-4_2-dettol-moms-bathing-soap-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534-5_2-dettol-moms-bathing-soap-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534-6_2-dettol-moms-bathing-soap-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534-7_2-dettol-moms-bathing-soap-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197534-8_1-dettol-moms-bathing-soap-jasmine.jpg"
+   }
+  ],
+  "details": {
+   "description": "Your trusted Dettol offers a new range of Dettol Co-Created with Moms beauty bathing soaps. It is made by ingredients approved by moms and with minimal chemicals. This new range is free from parabens, harsh chemical residues, artificial dyes, and talc; it has fragrance infused with 100% natural jasmine essence. It gives 10 times better protection than any ordinary soap and is gentle on skin. Reassuringly, Dettol protects from a wide range of illness-causing germs and bacteria to help you stay healthy.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "All In One Disinfectant Spray - Orchard Blossom",
+  "handle": "all-in-one-disinfectant-spray-orchard-blossom",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "719",
+    "compare_at_price": "719",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255587_1-dettol-all-in-one-disinfectant-spray-for-hard-surfaces-upholstery-orchard-blossom-kills-999-bacteria-viruses.jpg"
+    },
+    "barcode": "5011417577950"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255587_1-dettol-all-in-one-disinfectant-spray-for-hard-surfaces-upholstery-orchard-blossom-kills-999-bacteria-viruses.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255587-2_1-dettol-all-in-one-disinfectant-spray-for-hard-surfaces-upholstery-orchard-blossom-kills-999-bacteria-viruses.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255587-3_1-dettol-all-in-one-disinfectant-spray-for-hard-surfaces-upholstery-orchard-blossom-kills-999-bacteria-viruses.jpg"
+   }
+  ],
+  "details": {
+   "description": "Dettol disinfectant spray protects you and your family from 100 illnesses causing germs, bacteria, and viruses. This alcohol (denatured) surface disinfectant spray sanitizes your home and eliminates odour causing bacteria. It helps in killing cold and flu viruses, including h1n1 virus. Dettol disinfectant spray can be used in toilet area, dustbin, kitchen sink, shower bases, taps, sofas, curtains, carpets, car seats etc., Leaving everything clean and fresh. It safely kills germs on everyday items and leaves behind a pleasant pine fragrance. This multipurpose disinfectant cleaner for home is recommended by Indian medical association. Usage: Shake Dettol disinfectant spray well. Hold spray 15-20 cm from pre cleaned surface and spray surface until covered with mist. Allow the air to dry, no need to wipe. Do not use polished wood, painted surface or acrylic plastics.",
+   "usageInstructions": "Shake can well.\nHold can 15-20 cm from pre-cleaned surface and spray onto surface until covered with mist.\nDo not saturate fabric when using on soft surface.\nAllow the air to dry. No need to wipe.",
+   "manufacturerName": "Global Brands Private Ltd D.No",
+   "countryOfOrigin": "Great Britain"
+  }
+ },
+ {
+  "title": "All In One Disinfectant Spray - Crisp Linen",
+  "handle": "all-in-one-disinfectant-spray-crisp-linen",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400ml",
+    "price": "719",
+    "compare_at_price": "719",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128562_2-dettol-all-in-one-disinfectant-spray-crisp-linen-imported.jpg"
+    },
+    "barcode": "5208070000042"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128562_2-dettol-all-in-one-disinfectant-spray-crisp-linen-imported.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128562-2_2-dettol-all-in-one-disinfectant-spray-crisp-linen-imported.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128562-3_1-dettol-all-in-one-disinfectant-spray-crisp-linen-imported.jpg"
+   }
+  ],
+  "details": {
+   "description": "This amazingly versatile spray can be used on all hard surfaces (such as toilets, bins, and sinks), soft surfaces (such as sofas and mattresses), and leaves a fresh fragrance in the air. It helps protect your family from illness by kills 99.9% of bacteria around the home, including E. coli and Salmonella as well as cold & flu viruses.",
+   "usageInstructions": "Shake can well.\nHold can 15-20 cm from pre-cleaned surface and spray onto surface until covered with mist.\nDo not saturate fabric when using on soft surface.\nAllow the air to dry. No need to wipe.",
+   "manufacturerName": "Global Brands Private Ltd D.No",
+   "countryOfOrigin": "Great Britain"
+  }
+ },
+ {
+  "title": "Disinfectant Wet Wipes - Floral",
+  "handle": "disinfectant-wet-wipes-floral",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+    },
+    "barcode": "8901396388142"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554-2_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554-3_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554-4_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554-5_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554-6_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554-7_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40201554-8_4-dettol-disinfectant-sanitizer-wet-wipes-for-skin-surfaces-moisture-lock-floral.jpg"
+   }
+  ],
+  "details": {
+   "description": "Disinfectant Wipes: Protect from 99.9% Germs. Recommended by Indian Medical Association (IMA)\nResealable moisture-lock lid: Locks in more moisture for longer, for thicker, moisture-rich wipes\nWet wipes for skin: Sanitize and clean face, neck, hands, and other exposed parts of the body\nDisinfect surfaces: Disinfect kitchen and bathroom surfaces, and germ hotspots such as knobs and handles\nOn-the-go Protection: Easy to carry for use in commute, office and public spaces.",
+   "manufacturerName": "Ginni Filaments Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "No Touch Handwash Kit - Aloe Vera",
+  "handle": "no-touch-handwash-kit-aloe-vera",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237_3-dettol-dettol-no-touch-handwash-kit.jpg"
+    },
+    "barcode": "8901396388647"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237_3-dettol-dettol-no-touch-handwash-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237-2_3-dettol-dettol-no-touch-handwash-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237-3_3-dettol-dettol-no-touch-handwash-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237-4_3-dettol-dettol-no-touch-handwash-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237-5_3-dettol-dettol-no-touch-handwash-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237-6_3-dettol-dettol-no-touch-handwash-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237-7_3-dettol-dettol-no-touch-handwash-kit.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220237-8_3-dettol-dettol-no-touch-handwash-kit.jpg"
+   }
+  ],
+  "details": {
+   "description": "Be 100% sure to protect your skin from 100 illness-causing germs and bacteria. Dettol No-Touch handwash system automatically senses your hands and dispenses the right amount of soap. Dettol Handwash is dermatologically tested and helps to encourage good hand hygiene habits. The Dettol no-touch handwash refill aloe vera is enriched with added moisture to help care for your skin and is suitable for everyday use to help protect against germs. Use Dettol's Germ Protection Handwash Liquid Soap pH balanced formula every day and keep your hands hygienically clean and refreshed. This hand wash provides a soft and rich lather, leaving behind clean hands and a mild aloe fragrance. Safety Information: Keep out of reach of children unless under adult supervision. Avoid direct contact with eyes. For external use. In case of contact with eyes, rinse immediately with plenty of water. If persistent irritation occurs, seek medical attention.",
+   "manufacturerName": "(For Reckitt Benckiser India Pvt. Ltd) Device is Manufactured in China - Reckitt Benckiser Household products (China) Co",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Aloe Vera Liquid Handwash",
+  "handle": "aloe-vera-liquid-handwash",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541_13-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+    },
+    "barcode": "8901396330325"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541_13-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541-2_11-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541-3_12-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541-4_11-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541-5_10-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541-6_10-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541-7_10-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130541-8_5-dettol-hand-wash-liquid-refill-aloe-vera.jpg"
+   }
+  ],
+  "details": {
+   "description": "Your Trusted Dettol offers a new and improved Dettol liquid hand wash. It is specially formulated to protect you from 100 illness-causing germs. It gives 10 times better protection than any ordinary soap. Recommended by the Indian Medical Association, Dettol can help prevent diseases like cold and flu with proper hygiene. Protects against everyday germs, including those that can cause skin infections, respiratory infections (Influenza), gastroenteritis (such as Salmonella and Escherichia Coli). \nHand washing is one of the most important and simple hygiene steps to prevent the spread of infection. Using Dettol hand wash every day protects from these germs and helps keep your hands clean and refreshed. The incidence of germ transference is higher from hands to mouth, thereby causing illnesses like diarrhoea, swine flu, cold and cough, etc. Ensuring proper hand hygiene habits of your family can act as the first line of defence in protection from various illnesses.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Energize Body Wash - Satsuma & Orange",
+  "handle": "energize-body-wash-satsuma-orange",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907_5-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+    },
+    "barcode": "8901396368557"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907_5-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907-2_6-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907-3_6-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907-4_6-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907-5_6-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907-6_6-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907-7_6-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184907-8_2-dettol-body-wash-shower-gel-energize-provides-odour-protection-satsuma-orange.jpg"
+   }
+  ],
+  "details": {
+   "description": "1. Dettol energize body wash gives you 12 hours of complete odour protection. Ideal For Men & Women\n2. Citric acids. help in skin exfoliation. Satsuma helps keep skin soft and smooth\n3. Natural cleansers: Contains more than 80% naturally derived ingredients and plant-derived cleansers. Contains no TCC or Triclosan\n4. Dermatologically tested: pH balanced, soap-free formula for soft skin\n5. Refreshing: Gives zesty citrus freshness",
+   "usageInstructions": "For the best lather, place a small amount of body wash onto a shower puff or your palm, and massage onto the body then rinse with water.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Laundry Sanitizer - Fresh Linen",
+  "handle": "laundry-sanitizer-fresh-linen",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "960ml",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+    },
+    "barcode": "8901396350651"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409-2_5-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409-3_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409-4_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409-5_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409-6_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409-7_4-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189409-8_1-dettol-laundry-sanitizer-removes-germs-adds-freshness-for-all-fabrics-fresh-linen.jpg"
+   }
+  ],
+  "details": {
+   "description": "Removes Germs: Laundry Sanitizer removes germs that ordinary detergents may leave behind.\nAdds Freshness: Adds Freshness to clothes with a pleasant fresh linen fragrance.\nGentle on clothes: Suitable for all Fabrics. Does not contain bleach.\nIdeal to remove germs from clothes worn outside, and from baby clothes.\nThis can be used with any washing machine detergent or washing powder - Surf Excel Matic Top load, Surf Excel Matic Front-load, Ariel Matic Top load, Ariel Matic Front-load, Tide etc.",
+   "usageInstructions": "For soaking, add 1/2 capful to 4L of water and soak for 10 mins. \nFor handwash, add ½ capful to 4L of water post detergent wash, soak for 10 mins and dry.\nFor machine wash, add 2 capfuls to the ‘softener’ compartment at the same time you add detergent.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lemon Fresh Washing Machine Cleaner",
+  "handle": "lemon-fresh-washing-machine-cleaner",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883-2_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883-3_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883-4_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883-5_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883-6_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883-7_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356883-8_3-dettol-lemon-fresh-washing-machine-cleaner.jpg"
+   }
+  ],
+  "details": {
+   "description": "Dettol 5-in-1 Washing Machine Cleaner keeps your machine hygienically clean and fresh. It effectively removes hidden dirt, odours, and 99.9% of germs, ensuring a thorough clean. With a refreshing lemon fragrance, it not only leaves your machine smelling pleasant but also helps maintain optimal performance. Safe, easy to use, and essential for regular washing machine care.",
+   "usageInstructions": "To Clean the Inside of the Machine:\nPour the recommended quantity into the detergent drawer according to your machine type (do not use detergent). Run the washing machine without any laundry. For older machines that have never been cleaned before, a second treatment may be required.\nTo Clean the Detergent Drawer, Glass Door, and Seal:\nDilute 1 tablespoon (15 ml) in 200 ml of water. Use a sponge to wipe the surfaces clean. Wear gloves while cleaning.",
+   "manufacturerName": "Avalon Cosmetics Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Siti Shield Cambridge N95 Mask - Small, Black",
+  "handle": "siti-shield-cambridge-n95-mask-small-black",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203_4-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203_4-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203-2_5-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203-3_5-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203-4_4-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203-5_4-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203-6_4-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203-7_4-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146203-8_4-dettol-sitishield-cambridge-n95-mask-small-black.jpg"
+   }
+  ],
+  "details": {
+   "description": "This mask helps everyone get outside and enjoy life without having to worry about the air they breathe or the way they look. To complement the powerful PRO masks, the Basic range is created to allow even more people to gain access to clean air. It uses a unique lab-tested British Military Filtration Technology that filters almost 100% of pollution, gases, and bacteria and germs. It is ideal for people at risk of respiratory diseases. It gives protection against harmful gases, odours, all PM; PM2.5, PM0.3, pollen, smoke, allergens and pathogens. It is the most trusted reusable anti-pollution mask in the world now available with adjustable straps.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Siti Shield Cambridge N95 Mask - Medium, Black",
+  "handle": "siti-shield-cambridge-n95-mask-medium-black",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204_5-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204_5-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204-2_5-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204-3_5-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204-4_4-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204-5_4-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204-6_4-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204-7_4-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146204-8_4-dettol-sitishield-cambridge-n95-mask-medium-black.jpg"
+   }
+  ],
+  "details": {
+   "description": "This mask helps everyone get outside and enjoy life without having to worry about the air they breathe or the way they look. To complement the powerful PRO masks, the Basic range is created to allow even more people to gain access to clean air. It uses a unique lab-tested British Military Filtration Technology that filters almost 100% of pollution, gases, and bacteria and germs. It is ideal for people at risk of respiratory diseases. It gives protection against harmful gases, odours, all PM; PM2.5, PM0.3, pollen, smoke, allergens and pathogens. It is the most trusted reusable anti-pollution mask in the world now available with adjustable straps.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Siti Shield Cambridge N95 Mask - Large, Black",
+  "handle": "siti-shield-cambridge-n95-mask-large-black",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40146205_1-dettol-sitishield-cambridge-n95-mask-large-black.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146205_1-dettol-sitishield-cambridge-n95-mask-large-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146205-2_1-dettol-sitishield-cambridge-n95-mask-large-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146205-3_1-dettol-sitishield-cambridge-n95-mask-large-black.jpg"
+   }
+  ],
+  "details": {
+   "description": "This mask helps everyone get outside and enjoy life without having to worry about the air they breathe or the way they look. To complement the powerful PRO masks, the Basic range is created to allow even more people to gain access to clean air. It uses a unique lab-tested British Military Filtration Technology that filters almost 100% of pollution, gases, and bacteria and germs. It is ideal for people at risk of respiratory diseases. It gives protection against harmful gases, odours, all PM; PM2.5, PM0.3, pollen, smoke, allergens and pathogens. It is the most trusted reusable anti-pollution mask in the world now available with adjustable straps.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Siti Shield Cambridge N95 Mask - Small, Blue",
+  "handle": "siti-shield-cambridge-n95-mask-small-blue",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207_5-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207_5-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207-2_5-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207-3_5-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207-4_4-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207-5_4-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207-6_4-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207-7_4-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40146207-8_4-dettol-sitishield-cambridge-n95-mask-small-blue.jpg"
+   }
+  ],
+  "details": {
+   "description": "This mask helps everyone get outside and enjoy life without having to worry about the air they breathe or the way they look. To complement the powerful PRO masks, the Basic range is created to allow even more people to gain access to clean air. It uses a unique lab-tested British Military Filtration Technology that filters almost 100% of pollution, gases, and bacteria and germs. It is ideal for people at risk of respiratory diseases. It gives protection against harmful gases, odours, all PM; PM2.5, PM0.3, pollen, smoke, allergens and pathogens. It is the most trusted reusable anti-pollution mask in the world now available with adjustable straps.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Siti Shield D95 Mask - Small, Black",
+  "handle": "siti-shield-d95-mask-small-black",
+  "vendor": "Dettol (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208133_2-dettol-sitishield-d95-mask-small-black.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208133_2-dettol-sitishield-d95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208133-2_2-dettol-sitishield-d95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208133-3_1-dettol-sitishield-d95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208133-4_1-dettol-sitishield-d95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208133-5_1-dettol-sitishield-d95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208133-6_1-dettol-sitishield-d95-mask-small-black.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208133-7_1-dettol-sitishield-d95-mask-small-black.jpg"
+   }
+  ],
+  "details": {
+   "description": "Dettol D95 mask contains a 6 Layer Triple Particle Filtration System. It has a unique Splash Resistance feature which gives protection from contaminated fluids. The mask is designed to provide wider face coverage for maximum protection. It consists of an adjustable nose clip, soft & elastic earloops for extra comfort and also ensures there is minimal eyewear fogging on wearing.",
+   "manufacturerName": "Wildcraft India Pvt. Ltd. At 47/2",
+   "countryOfOrigin": "India"
   }
  }
 ]

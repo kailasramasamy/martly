@@ -356,6 +356,118 @@
         "Detergent",
         "Liquid Detergent"
       ]
+    },
+    {
+      "match": "^Jasmine\\ Bathing\\ Soap\\ \\(Co\\-Created\\ with\\ Moms\\)$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^All\\ In\\ One\\ Disinfectant\\ Spray\\ \\-\\ Orchard\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^All\\ In\\ One\\ Disinfectant\\ Spray\\ \\-\\ Crisp\\ Linen$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Wet\\ Wipes\\ \\-\\ Floral$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^No\\ Touch\\ Handwash\\ Kit\\ \\-\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Liquid\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Energize\\ Body\\ Wash\\ \\-\\ Satsuma\\ \\&\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Laundry\\ Sanitizer\\ \\-\\ Fresh\\ Linen$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Fresh\\ Washing\\ Machine\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Siti\\ Shield\\ Cambridge\\ N95\\ Mask\\ \\-\\ Small,\\ Black$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Siti\\ Shield\\ Cambridge\\ N95\\ Mask\\ \\-\\ Medium,\\ Black$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Siti\\ Shield\\ Cambridge\\ N95\\ Mask\\ \\-\\ Large,\\ Black$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Siti\\ Shield\\ Cambridge\\ N95\\ Mask\\ \\-\\ Small,\\ Blue$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Siti\\ Shield\\ D95\\ Mask\\ \\-\\ Small,\\ Black$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
     }
   ]
 }
