@@ -1,0 +1,200 @@
+{
+  "brand": "Manforce (Mankind)",
+  "manufacturer": "Mankind Pharma Ltd.",
+  "feed": "manforce-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/manforce/logo-b2c3cf38.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Manforce ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Manforce Extra Dotted Condoms": "Extra Dotted Condoms - Litchi"
+  },
+  "rules": [
+    {
+      "match": "^Extra\\ Dotted\\ Condoms\\ \\-\\ Litchi$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Dotted\\ Condoms\\ \\-\\ Hazelnut$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Dots\\ 1740\\ Condoms\\ \\-\\ Litchi$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Xotic\\ 1500\\ Dots\\ Condoms\\ \\-\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^3\\ In\\ 1\\ Ribbed,\\ Contour\\ \\&\\ Dotted\\ Condoms\\ \\-\\ Chocolate$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^3\\ In\\ 1\\ Ribbed,\\ Contour\\ \\&\\ Dotted\\ Condoms\\ \\-\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Xtasy\\ Condoms\\ \\-\\ Black\\ Grapes$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Game\\ Condoms\\ \\-\\ Exotic\\ Flavoured$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Cocktail\\ Dotted\\-Rings\\ Condoms\\ \\-\\ Hazelnut\\ \\&\\ Chocolate$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Cocktail\\ Dotted\\-Rings\\ Condoms\\ \\-\\ Strawberry\\ \\&\\ Vanilla$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Sunny\\ Edition\\ Ribbed\\ \\&\\ Dotted\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Ignite\\ Extra\\ Dotted\\ Condoms\\ \\-\\ Apple\\ Peach$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Feel\\ Super\\ Thin\\ Condoms\\ \\-\\ Bubblegum$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^King\\ Dots\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^King\\ Thin\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Xtra\\ Passion\\ Ultra\\ Thin\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Xtra\\ Pleasure\\ Long\\ Lasting\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Epic\\ Desire\\ Super\\ Thin\\ Condoms\\ \\-\\ Silk\\ Chocolate$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Epic\\ Hot\\ Dots\\ Condoms\\ \\-\\ Belgian\\ Chocolate$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Epic\\ Passion\\ Extra\\ Dotted\\ Condoms\\ \\-\\ Fruit\\ Punch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Epic\\ Pleasure\\ Long\\ Lasting\\ Condoms\\ \\-\\ Raspberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Epic\\ ThinX\\ 0\\.03mm\\ Ultra\\ Thin\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Epic\\ Strawberry\\ Lube\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    }
+  ]
+}
