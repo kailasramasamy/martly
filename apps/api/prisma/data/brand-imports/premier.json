@@ -1,0 +1,254 @@
+{
+  "brand": "Premier (Premier Tissues)",
+  "manufacturer": "Premier Tissues India Ltd.",
+  "feed": "premier-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/premier/logo-be65f881.png",
+  "themeColor": "#1D4FA3",
+  "themeColorSecondary": "#E30613",
+  "namePrefix": "Premier ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Royal\\ Soft\\ Face\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Royal\\ Cutie\\ Tissue\\ Napkins\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Royal\\ Tissue\\ Napkins\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Soft\\ Face\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Special\\ Facial\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Unbleached\\ Bamboo\\ Soft\\ Face\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Super\\ Soft\\ Napkins\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Funserve\\ Napkins\\ \\-\\ 2\\ Ply,\\ 27\\ x\\ 30\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Special\\ Soft\\ Napkins\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Napkins\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Serviettes\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Paper\\ Handkerchief\\ Pocket\\ Tissues$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Towel\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Royal\\ Silky\\ Kitchen\\ Paper\\ Towel\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Non\\-Woven\\ Kitchen\\ Wipes$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Wet\\ Wipes$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Rose\\ Wet\\ Wipes$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Royal\\ Toilet\\ Tissue\\ Roll\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Royal\\ Toilet\\ Tissue\\ Double\\ Roll\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Rolls\\ \\-\\ 2\\ Ply,\\ 160\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Tissue\\ Rolls\\ \\-\\ 2\\ Ply,\\ 180\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Tissue\\ Rolls\\ \\-\\ 2\\ Ply,\\ 320\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Tissue\\ Roll\\ \\-\\ 2\\ Ply,\\ 190\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Tissue\\ Roll\\ \\-\\ 2\\ Ply,\\ 330\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Rolls\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Toilet\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Aluminium\\ Foil\\ \\-\\ 9\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Cling\\ Film\\ \\-\\ 30\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Food\\ Wrapping\\ Paper\\ \\-\\ 20\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Round\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    }
+  ]
+}
