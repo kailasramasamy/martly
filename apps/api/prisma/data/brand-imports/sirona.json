@@ -1,0 +1,305 @@
+{
+  "brand": "Sirona",
+  "manufacturer": "Sirona Hygiene Pvt. Ltd.",
+  "feed": "sirona-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sirona/logo-ec083bc1.png",
+  "themeColor": "#E5194B",
+  "themeColorSecondary": "#6B3FA0",
+  "namePrefix": "Sirona ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Sirona FDA Approved Premium Tampons - Heavy Flow": "Tampons - Heavy Flow",
+    "Sirona Natural pH Balanced Intimate Wash": "Natural Intimate Wash"
+  },
+  "rules": [
+    {
+      "match": "^Rash\\ Free\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Rash\\ Free\\ Sanitary\\ Pads\\ \\-\\ XL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Period\\ Panties\\ \\-\\ S\\-M$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Period\\ Panties\\ \\-\\ M\\-L$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Period\\ Panties\\ \\-\\ L\\-XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Period\\ Panties\\ \\-\\ XL\\-XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Teens\\ Disposable\\ Period\\ Panties\\ \\-\\ S\\-M$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Postpartum\\ Maternity\\ Period\\ Panties\\ \\-\\ L\\-XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Tampons\\ \\-\\ Regular\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Tampons\\ \\-\\ Heavy\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Applicator\\ Tampons\\ \\-\\ Regular\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Applicator\\ Tampons\\ \\-\\ Heavy\\ Flow$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Small$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Menstrual\\ Cup\\ Kit\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Menstrual\\ Cup\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Natural\\ Intimate\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Refreshing\\ Intimate\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Intimate\\ Wet\\ Wipes$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Intimate\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Bleu\\ 3\\ in\\ 1\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Bleu\\ Dotted\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Bleu\\ Spiral\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Natural\\ Latex\\ Ultra\\-Thin\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Bleu\\ Bliss\\ Water\\ Based\\ Lubricant$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Natural\\ Lubricant\\ Gel\\ \\-\\ Blackcurrant$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Natural\\ Lubricant\\ Gel\\ \\-\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Feminine\\ Pain\\ Relief\\ Patch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Period\\ Pain\\ Relief\\ Heat\\ Patches$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Headache\\ Relief\\ Patches$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Charcoal\\ Nose\\ Strips$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Skin\\ Balancing\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Recover\\ \\&\\ Relax\\ 10%\\ Magnesium\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Post\\ Wax\\ \\&\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    }
+  ]
+}
