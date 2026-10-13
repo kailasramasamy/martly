@@ -1,0 +1,40 @@
+{
+  "brand": "Gas-O-Fast (Mankind)",
+  "manufacturer": "Mankind Pharma Ltd.",
+  "feed": "gas-o-fast-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/gas-o-fast/logo-a10db99f.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#4A2C1A",
+  "namePrefix": "Gas-O-Fast ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Gas-O-Fast Sachets - Active Jeera": "Active Jeera Sachets"
+  },
+  "rules": [
+    {
+      "match": "^Active\\ Jeera\\ Sachets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Active\\ Ajwain\\ Sachets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Plus\\ Antacid\\ Tablets\\ \\-\\ Orange,\\ Sugar\\ Free$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    }
+  ]
+}

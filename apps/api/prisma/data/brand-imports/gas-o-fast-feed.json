@@ -1,0 +1,114 @@
+[
+ {
+  "title": "Active Jeera Sachets",
+  "handle": "active-jeera-sachets",
+  "vendor": "Gas-O-Fast (Mankind)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200006351_3-gas-o-fast-jeera-active-sachet-helps-relieve-acidity.jpg"
+    }
+   },
+   {
+    "title": "30g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40204088_1-mankind-gas-o-fast-active-jeera.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200006351_3-gas-o-fast-jeera-active-sachet-helps-relieve-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200006351-2_2-gas-o-fast-jeera-active-sachet-helps-relieve-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40204088_1-mankind-gas-o-fast-active-jeera.jpg"
+   }
+  ],
+  "details": {
+   "description": "is a combination of ingredients that are useful in acidity, heartburn and gas formation. It helps in the digestion of starch, carbohydrates, fats and Proteins. It is used as a digestive aid in case of loss of appetite due to chronic illness, stomach fullness and indigestion.",
+   "manufacturerName": "Copmed Pharmaceuticals PVT LTD",
+   "countryOfOrigin": "Country of Origin"
+  }
+ },
+ {
+  "title": "Active Ajwain Sachets",
+  "handle": "active-ajwain-sachets",
+  "vendor": "Gas-O-Fast (Mankind)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005037_2-gas-o-fast-ajwain-active-sachet-helps-relieve-acidity.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005037_2-gas-o-fast-ajwain-active-sachet-helps-relieve-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005037-2_1-gas-o-fast-ajwain-active-sachet-helps-relieve-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200005037-3_1-gas-o-fast-ajwain-active-sachet-helps-relieve-acidity.jpg"
+   }
+  ],
+  "details": {
+   "description": "is a combination of ingredients that are useful in acidity, heartburn and gas formation. It helps in the digestion of starch, carbohydrates, fats and Proteins. It is used as a digestive aid in case of loss of appetite due to chronic illness, stomach fullness and indigestion.",
+   "manufacturerName": "Copmed Pharmaceuticals PVT LTD",
+   "countryOfOrigin": "Country of Origin"
+  }
+ },
+ {
+  "title": "Plus Antacid Tablets - Orange, Sugar Free",
+  "handle": "plus-antacid-tablets-orange-sugar-free",
+  "vendor": "Gas-O-Fast (Mankind)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2 pcs",
+    "price": "22",
+    "compare_at_price": "22",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200001236_3-gas-o-fast-plus-tablet-sugar-free-flavour-orange.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200001236_3-gas-o-fast-plus-tablet-sugar-free-flavour-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200001236-2_2-gas-o-fast-plus-tablet-sugar-free-flavour-orange.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200001236-3_2-gas-o-fast-plus-tablet-sugar-free-flavour-orange.jpg"
+   }
+  ],
+  "details": {
+   "description": "is an effervescent tablet used to provide relief from acidity and heartburn. The tablets contain a combination of papain, fungal diastase, and methionine, which are digestive enzymes that help to break down food and alleviate gastrointestinal discomfort. These tablets may provide instant relief from acidity and heartburn and come in a refreshing orange flavour.",
+   "manufacturerName": "Mankind Pharma Ltd",
+   "countryOfOrigin": "Country of Origin",
+   "ingredients": "Alpha-amylase\nPapain\nSimethicone"
+  }
+ }
+]
