@@ -1,0 +1,89 @@
+{
+  "brand": "Cif (HUL)",
+  "manufacturer": "Unilever",
+  "feed": "cif-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cif/logo-730859e0.png",
+  "themeColor": "#00633A",
+  "themeColorSecondary": "#E30613",
+  "namePrefix": "Cif ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Cif Kitchen Cleaner Spray": "Power & Shine Kitchen Cleaner Spray",
+    "Cif Bathroom Cleaner Spray": "Perfect Finish Mould Stain Cleaner Spray"
+  },
+  "rules": [
+    {
+      "match": "^Power\\ \\&\\ Shine\\ Kitchen\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Power\\ \\&\\ Shine\\ Antibacterial\\ Multipurpose\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Finish\\ Mould\\ Stain\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Finish\\ Oven\\ \\&\\ Grill\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Finish\\ Stainless\\ Steel\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Original\\ Cream\\ Multipurpose\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Cream\\ Multipurpose\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Pink\\ Flower\\ Cream\\ Multipurpose\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Wild\\ Orchid\\ Floor\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    }
+  ]
+}
