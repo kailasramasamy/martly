@@ -1,0 +1,992 @@
+{
+  "brand": "Dove (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "dove-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dove/logo-c17ba853.png",
+  "themeColor": "#003C82",
+  "themeColorSecondary": "#C9A84C",
+  "namePrefix": "Dove ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Dove Original Deodorant Roll-On for Women": "Original Women Deodorant Roll-On"
+  },
+  "rules": [
+    {
+      "match": "^10\\ In\\ 1\\ Deep\\ Repair\\ Treatment\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^10\\ In\\ 1\\ Shine\\ Revive\\ Treatment\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^4%\\ Retinol\\ Skin\\ Renewal\\ Serum\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^5%\\ Niacinamide\\ Even\\ Tone\\ Serum\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^6%\\ Hyaluronic\\ Acid\\ Hydration\\ Boost\\ Serum\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^5%\\ Niacinamide\\ Even\\ Tone\\ Serum\\ Beauty\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^6%\\ Hyaluronic\\ Acid\\ Hydration\\ Boost\\ Serum\\ Beauty\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Acne\\ Clear\\ Body\\ Wash\\ With\\ Salicylic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Sensitive\\ Care\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Regenerative\\ Repair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^All\\ Day\\ Nourish\\ \\+\\ UV\\ Protect\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Shine\\ \\+\\ UV\\ Protect\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Anti\\-Dandruff\\ Clean\\ \\&\\ Fresh\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Anti\\-Dandruff\\ Clean\\ \\&\\ Fresh\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Dandruff\\ Care\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Dandruff\\ Care\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Almond\\ Cream\\ Beauty\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cream\\ Beauty\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Care\\ \\&\\ Protect\\ Beauty\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Go\\ Fresh\\ Revive\\ Beauty\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Go\\ Fresh\\ Oil\\ Control\\ Clay\\ \\&\\ Rose\\ Water\\ Beauty\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Nutrient\\ Serum\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Hydrate\\ Serum\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Pink\\ Rosa\\ Beauty\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Pink\\ Radiance\\ Serum\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Sandalwood\\ Beauty\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Care\\ Pro\\-Ceramide\\ Serum\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Exfoliate\\ Away\\ Beauty\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Glow\\ Recharge\\ Beauty\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Beautiful\\ Curls\\ 10\\ In\\ 1\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Beautiful\\ Curls\\ Detangling\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Beautiful\\ Curls\\ Hydrating\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Beautiful\\ Curls\\ Nourishing\\ Leave\\ In\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Beauty\\ Moisture\\ Facial\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Body\\ Love\\ Supple\\ Bounce\\ Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Body\\ Love\\ Pro\\ Age\\ Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Body\\ Love\\ Pro\\ Age\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Body\\ Love\\ Silky\\ Pampering\\ Body\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Supple\\ Bounce\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Almond\\ Cream\\ \\&\\ Hibiscus\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Clean\\ Comfort\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Extra\\ Fresh\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Invisible\\ Dry\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Clean\\ Comfort\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Cool\\ Fresh\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Extra\\ Fresh\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Invisible\\ Dry\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Sport\\ Active\\ \\+\\ Fresh\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Hydration\\ Boost\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Hydration\\ Boost\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Oil\\ Control\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Anti\\ Dandruff\\ 2\\ In\\ 1\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Fresh\\ \\&\\ Clean\\ 2\\ In\\ 1\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Men\\+Care\\ Thick\\ \\&\\ Strong\\ 2\\ In\\ 1\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Crushed\\ Macadamia\\ \\&\\ Rice\\ Milk\\ Exfoliating\\ Body\\ Polish$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Pomegranate\\ Seeds\\ \\&\\ Shea\\ Butter\\ Exfoliating\\ Body\\ Polish$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Brown\\ Sugar\\ \\&\\ Coconut\\ Butter\\ Exfoliating\\ Body\\ Polish$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Oatmeal\\ \\&\\ Calendula\\ Oil\\ Exfoliating\\ Body\\ Polish$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Daily\\ Shine\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Daily\\ Shine\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Fall\\ Rescue\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Hair\\ Fall\\ Rescue\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Dryness\\ Care\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Dryness\\ Care\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Intense\\ Repair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Intense\\ Repair\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Oxygen\\ Moisture\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Oxygen\\ Moisture\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Glycolic\\+\\ Hydration\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Glycolic\\+\\ Hydration\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Glycolic\\+\\ Hydration\\ Serum\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hair\\ Therapy\\ Nourishing\\ Oil\\ Care\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Ritual\\ For\\ Strengthening\\ Hair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Ritual\\ For\\ Strengthening\\ Hair\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Ritual\\ For\\ Growing\\ Hair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Ritual\\ For\\ Growing\\ Hair\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Nutritive\\ Solutions\\ Environmental\\ Defence\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Nutritive\\ Solutions\\ Environmental\\ Defence\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Peptide\\ Bond\\ Strength\\ Bi\\-Phasic\\ Hair\\ Oil\\ \\+\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Peptide\\ Bond\\ Strength\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Peptide\\ Bond\\ Strength\\ Hair\\ Treatment\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Peptide\\ Bond\\ Strength\\ Leave\\ In\\ Creme\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Peptide\\ Bond\\ Strength\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Scalp\\ \\+\\ Hair\\ Therapy\\ Density\\ Boost\\ Scalp\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Deep\\ Moisturisation\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Eventone\\ Women\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Eventone\\ Women\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Original\\ Women\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Original\\ Women\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Go\\ Fresh\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Go\\ Fresh\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Invisible\\ Dry\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Invisible\\ Dry\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Deeply\\ Nourishing\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Dryness\\ Care\\ Body\\ Wash\\ With\\ Jojoba\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Energising\\ Body\\ Wash\\ With\\ Triple\\ Hydration\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Exfoliating\\ Body\\ Wash\\ With\\ Triple\\ Hydration\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Body\\ Wash\\ With\\ Triple\\ Hydration\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Refreshing\\ Body\\ Wash\\ With\\ Triple\\ Hydration\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Exfoliate\\ Away\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Glow\\ Recharge\\ Body\\ Wash\\ With\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Exfoliating\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Go\\ Fresh\\ Lavender\\ \\&\\ Chamomile\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Go\\ Fresh\\ Rose\\ \\&\\ Aloe\\ Vera\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Go\\ Fresh\\ Sakura\\ Blossom\\ \\&\\ Pink\\ Salt\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Relaxing\\ Care\\ Shea\\ Butter\\ \\&\\ Vanilla\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Renew\\ Raspberry\\ \\&\\ Lime\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Revitalising\\ Peach\\ \\&\\ Vitamin\\ C\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Skin\\ Nourishing\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Shower\\ Mousse\\ With\\ Argan\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Go\\ Fresh\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Cooling\\ Gel\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Nourished\\ Radiance\\ Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Nourished\\ Radiance\\ Rich\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Light\\ Hydration\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Secrets\\ Glowing\\ Ritual\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Secrets\\ Invigorating\\ Ritual\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Secrets\\ Restoring\\ Ritual\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Purely\\ Pampering\\ Almond\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Purely\\ Pampering\\ Shea\\ Butter\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Secrets\\ Hand\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Moisturising\\ Liquid\\ Hand\\ Wash\\ Refill$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    }
+  ]
+}
