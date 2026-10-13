@@ -1,0 +1,71 @@
+[
+ {
+  "title": "Chili Garlic Sauce",
+  "handle": "chili-garlic-sauce",
+  "vendor": "Huy Fong",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "510g",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313149_1-huy-fong-chili-garlic-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313149_1-huy-fong-chili-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313149-2_1-huy-fong-chili-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313149-3_1-huy-fong-chili-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313149-4_1-huy-fong-chili-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313149-5_1-huy-fong-chili-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313149-6_1-huy-fong-chili-garlic-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313149-7_1-huy-fong-chili-garlic-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the perfect blend of garlic and chili with Huy Fong Chili Garlic Sauce. This versatile sauce combines the bold heat of red chilis with the savoury richness of garlic, creating a flavourful and spicy addition to your favourite Asian dishes. Whether used as a topping or ingredient, its smooth and thick consistency coats your meals evenly, enhancing every bite with vibrant heat and flavour. Perfect for stir-fries, noodles, dumplings, or as a dipping sauce, this sauce brings a balanced and depth-filled kick to your culinary creations. Get ready to add some fiery excitement to your meals with this flavourful and versatile chili garlic sauce.",
+   "ingredients": "Chilli, Sugar, Salt, Garlic, Acetic Acid, Potassium Sorbate And Sodium Bisulfite As Preservatives, Xanthan Gum",
+   "nutritionalInfo": {
+    "Nutrition Per": "5g",
+    "Serving Size": "5g",
+    "Calories": "0",
+    "Total Fat": "0g",
+    "Saturated Fat": "0g",
+    "Trans Fat": "0g",
+    "Cholesterol": "0mg",
+    "Sodium": "75mg",
+    "Total Carbohydrates": "Less Than 1g",
+    "Dietary Fibre": "0g",
+    "Total Sugars": "0g",
+    "Includes Added Sugars": "0g",
+    "Protein": "0g",
+    "Vitamin D": "0Mcg",
+    "calcium": "1mg",
+    "Iron": "0mg",
+    "Potassium": "16mg"
+   },
+   "storageInstructions": "*Store in cool, dry place",
+   "manufacturerName": "Huy Fong Foods INC USA 4800 Azusa Canyon Road",
+   "fssaiLicense": "10020022011352",
+   "countryOfOrigin": "USA"
+  }
+ }
+]

@@ -1,0 +1,22 @@
+{
+  "brand": "Huy Fong",
+  "manufacturer": "Huy Fong Foods, Inc., USA",
+  "feed": "huy-fong-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/huy-fong/logo-5e02743c.png",
+  "themeColor": "#2E7D32",
+  "themeColorSecondary": "#C62828",
+  "namePrefix": "Huy Fong ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Chili\\ Garlic\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    }
+  ]
+}
