@@ -1,0 +1,38 @@
+{
+  "brand": "everteen",
+  "manufacturer": "Wet and Dry Personal Care Pvt. Ltd.",
+  "feed": "everteen-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/everteen/logo-7d4a2c26.png",
+  "themeColor": "#D81B78",
+  "themeColorSecondary": "#8DB83A",
+  "namePrefix": "everteen ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Natural\\ Intimate\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Intimate Wash"
+      ]
+    },
+    {
+      "match": "^Natural\\ Cotton\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Period\\ Care\\ XXL\\ Sanitary\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    }
+  ]
+}
