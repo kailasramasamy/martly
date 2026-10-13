@@ -1,0 +1,104 @@
+{
+  "brand": "Quaker (PepsiCo)",
+  "manufacturer": "PepsiCo India Holdings Pvt. Ltd.",
+  "feed": "quaker-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/quaker/logo-b4c4360a.png",
+  "themeColor": "#0B3C8C",
+  "themeColorSecondary": "#E4002B",
+  "namePrefix": "Quaker ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Quaker Oats - Rolled Oats": "Oats"
+  },
+  "rules": [
+    {
+      "match": "^Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Premium\\ Rolled\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^White\\ Oats\\ \\(Tin\\)$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Oats\\ \\-\\ Homestyle\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Oats\\ Flavour\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Instant\\ Oats\\ \\-\\ Herby\\ Cheese$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Instant\\ Oats\\ \\-\\ Masala\\ Magic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Instant\\ Oats\\ \\-\\ Mixed\\ Berries$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Oats\\ Muesli\\ \\-\\ Berries\\ \\&\\ Seeds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Oats\\ Muesli\\ \\-\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    }
+  ]
+}

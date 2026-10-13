@@ -1,0 +1,769 @@
+[
+ {
+  "title": "Oats",
+  "handle": "oats",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276_5-quaker-oats.jpg"
+    },
+    "barcode": "8901491103787"
+   },
+   {
+    "title": "400g",
+    "price": "79",
+    "compare_at_price": "79",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/266122_20-quaker-oats-breakfast-cereal-rich-in-protein-dietary-fibre-nutritious-easy-to-cook.jpg"
+    }
+   },
+   {
+    "title": "600g",
+    "price": "129",
+    "compare_at_price": "129",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003275_16-quaker-oats-breakfast-cereal-nutritious-rich-in-protein-dietary-fibre-easy-to-cook.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/208345_25-quaker-oats-breakfast-cereal-rich-in-protein-dietary-fibre-nutritious-easy-to-cook.jpg"
+    }
+   },
+   {
+    "title": "1.5kg",
+    "price": "312",
+    "compare_at_price": "312",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/284405_19-quaker-oats-breakfast-cereal-rich-in-protein-dietary-fibre-nutritious-easy-to-cook.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40091105_13-quaker-rolled-oats-rich-in-protein-nutritious-easy-to-cook.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276_5-quaker-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276-2_6-quaker-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276-3_6-quaker-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276-4_6-quaker-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276-5_6-quaker-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276-6_5-quaker-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276-7_1-quaker-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003276-8_1-quaker-oats.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Start your morning with a wholesome bowl of Quaker Oats- the perfect breakfast porridge for the whole family. Quaker oats are made from 100% whole grain oats, a natural carbohydrate, protein, and dietary fibre source. It helps reduce the risk of high blood pressure and cholesterol. It is easy to prepare in just 3 minutes and blends into almost any recipe, enhancing its nutritional value without compromising on taste. For over 135 years, Quaker has unlocked the power of oats to help people get the perfect start to each day.\nPreparation- Add 1 by 2 cups of Oats, 1 glass of skimmed milk and cook for 2 to 3 minutes on stove/microwave. Add sugar/honey as per your taste. Top it up with your favourite fruits and nuts to make it more delicious and nutritious.",
+   "manufacturerName": "Manufactured by",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Rolled Oats",
+  "handle": "premium-rolled-oats",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355962_1-quaker-rolled-oats.jpg"
+    },
+    "barcode": "8901491100243"
+   },
+   {
+    "title": "1kg",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355961_1-quaker-rolled-oats.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355962_1-quaker-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355962-2_1-quaker-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355962-3_1-quaker-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355962-4_1-quaker-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355962-5_1-quaker-rolled-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355961_1-quaker-rolled-oats.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Make your mornings nutritious and tasty with Quaker natural whole grain oats!\nStart the day right with a bowl of nutritious Quaker Oats! These Natural Wholegrain Oats have complex carbohydrates that break down slowly, providing lasting energy. Along with an active lifestyle, consuming 2 bowls of oats per day provides 3g of soluble fibre and Beta-glucan; this helps reduce cholesterol as part of a diet low in saturated fat and sodium. They are also a rich source of fibre and protein.\nQuaker Oats can either be eaten sweet or savoury. Enjoy the wholesome benefits of this whole grain in various meals or snacks at any time of the day. For a hearty breakfast meal, add milk topped with fruits and nuts; for a warming, sweet flavour, add honey, cinnamon, or brown sugar. You can also add them as a wholesome ingredient in your favourite dishes, such as Idli, Poha, Masala Oats, or Classic Oatmeal cookies.\nKey benefits:\n100% Natural Wholegrain\nHelps Reduce Cholesterol\n2X Protein & Fibre\nLasting Energy\nHelps Maintain Weight\n*Whole grain council.\n**Oats contain fibre & slowly absorbed carbohydrates that can increase satiety (providing lasting energy).\n***3g or more per day of soluble fibre from oats helps reduce blood total- and LDL-cholesterol levels\n**** Comparison with similar food: ‘Breakfast cereal (cornflakes)’. Atlas of Indian Food, 2015",
+   "ingredients": "Rolled Oats Flakes",
+   "nutritionalInfo": {
+    "Energy": "407",
+    "Protein": "11.8",
+    "PUFA": "4.0 g",
+    "MUFA": "3.6 g",
+    "Fat": "1.9 g",
+    "Trans Fat": "0",
+    "Fibre": "6.2 g",
+    "Iron": "2.9 mg",
+    "Sodium": "9.5",
+    "Zinc": "2 mg"
+   },
+   "manufacturerName": "PepsiCo India Pvt. Ltd. P.O. Box 27",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "White Oats (Tin)",
+  "handle": "white-oats-tin",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "395",
+    "compare_at_price": "395",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40079029_4-quaker-white-oats.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40079029_4-quaker-white-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40079029-2_2-quaker-white-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40079029-3_2-quaker-white-oats.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40079029-4_2-quaker-white-oats.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "World-famous Quaker White oats are natural rolled oats with no added preservatives.",
+   "ingredients": "White oats",
+   "nutritionalInfo": {
+    "Energy": "374 kcal",
+    "Total Fat": "8.0 g",
+    "Saturated Fat": "1.5 g",
+    "Total Carbohydrates": "60.0 g",
+    "Sugar": "1.1 g",
+    "Total Dietary Fibre": "9.0 g",
+    "Protein": "11.0 g",
+    "Salt": "traces"
+   },
+   "storageInstructions": "*Store in a cool dry place",
+   "countryOfOrigin": "UAE"
+  }
+ },
+ {
+  "title": "Multigrain Oats",
+  "handle": "multigrain-oats",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "72",
+    "compare_at_price": "72",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736_11-quaker-oats-plus-multigrain-advantage.jpg"
+    },
+    "barcode": "8901491702539"
+   },
+   {
+    "title": "600g",
+    "price": "192",
+    "compare_at_price": "192",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007739_20-quaker-oats-multigrain-breakfast-cereal-rich-source-of-energy-nutritious-easy-to-cook.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736_11-quaker-oats-plus-multigrain-advantage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736-2_6-quaker-oats-plus-multigrain-advantage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736-3_6-quaker-oats-plus-multigrain-advantage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736-4_6-quaker-oats-plus-multigrain-advantage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736-5_6-quaker-oats-plus-multigrain-advantage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736-6_5-quaker-oats-plus-multigrain-advantage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736-7_3-quaker-oats-plus-multigrain-advantage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007736-8_2-quaker-oats-plus-multigrain-advantage.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Unlock the power of wholesome, multigrain goodness with Quaker Oats Plus. This nutritious breakfast option combines the benefits of four different grains - oats, wheat, ragi, and barley - to provide you with sustained energy and a wealth of essential nutrients. Oats are renowned for their heart-healthy properties, while wheat offers a reliable source of carbohydrates to fuel your day. Barley's rich fibre content and ragi's calcium-rich profile further enhance the nutritional profile of this delightful porridge. Enjoy a satisfying bowl in just 3 minutes, with the option to customise it with your favourite toppings like fresh or dried fruits, nuts, and a sprinkle of cinnamon. Quaker's legacy of over 135 years in unlocking the power of oats ensures you start each day with a wholesome and nourishing breakfast. Embrace the multigrain advantage and let Quaker Oats Plus power your active lifestyle.",
+   "ingredients": "Wholegrain Whole Oat Flakes (60%), Wheat Flakes (18%), Barley Flakes (10%), Ragi Flakes (5%), Flax Seeds (5%), Sugar, Iodised Salt, Malt Extract, Flavour (Natural Flavouring Substances)",
+   "nutritionalInfo": {
+    "Nutrition Per": "Per Serve (45g)",
+    "Serving Size": "45g",
+    "Energy (kcal)": "183 kcal",
+    "Protein (g)": "5 g",
+    "Total Fat (g)": "4.1 g",
+    "Mufa (g)": "1.6 g",
+    "Pufa (g)": "1.6 g",
+    "Saturated Fat (g)": "0.8 g",
+    "Trans Fat (g)": "0 g",
+    "Carbohydrate (g)": "32 g",
+    "Total Sugars (g)": "1 g",
+    "Added Sugars (g)": "0.6 g",
+    "Total Dietary Fibre (g)": "5.4 g",
+    "Soluble Fibre (g)": "1.6 g",
+    "Insoluble Fibre (g)": "3.8 g",
+    "Sodium (mg)": "52.7 mg",
+    "Zinc (mg)": "1.2 mg",
+    "calcium (mg)": "21 mg",
+    "Magnesium (mg)": "50.9 mg",
+    "RDA": "Per Serve (45g) % RDA"
+   },
+   "storageInstructions": "*Store in a sealed container in a cool place away from moisture or strong odours\n*Do not use if the pack is open or leaking",
+   "manufacturerName": "Prathishta business Solutions Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Oats - Homestyle Masala",
+  "handle": "oats-homestyle-masala",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40040350_9-quaker-oats-homestyle-masala.jpg"
+    },
+    "barcode": "8901491702881"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40040350_9-quaker-oats-homestyle-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40040350-2_6-quaker-oats-homestyle-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40040350-3_6-quaker-oats-homestyle-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40040350-4_6-quaker-oats-homestyle-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40040350-5_5-quaker-oats-homestyle-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40040350-6_5-quaker-oats-homestyle-masala.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40040350-7_5-quaker-oats-homestyle-masala.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Quaker brings to you Quaker Homestyle Masala Oats, which is the perfect blend of taste and nutrition. Relish the goodness of oats, great taste of real vegetables with a twist of little masala for that perfect and healthy breakfast. Quaker Homestyle Masala Oats is made with 100% whole grain oats, a natural source of protein and dietary fibre and gives you the energy to keep going. For over 135 years, Quaker has unlocked the power of oats to help people get the perfect start to each day.",
+   "ingredients": "Oats (74%), Spices & Condiments (Onion flakes and powder, Coriander flakes and powder, Turmeric powder, Garlic powder, Black Pepper powder, Chilli powder, Fenugreek seed powder), Salt, Sugar, Dried Carrot flakes (3%), Tomato powder (0. 8%), Calcium carbonate, Edible starch, Citric acid.",
+   "nutritionalInfo": {
+    "Energy": "383 kcal,",
+    "Protein": "13. 1 g,",
+    "Total Fat": "8. 5 g,",
+    "Total Carbohydrates": "63. 7 g,",
+    "Dietary Fibre": "8. 7 g,",
+    "Sodium": "1876 mg"
+   },
+   "manufacturerName": "Mfd. by Prathishta business Solutions Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Oats Flavour Mix",
+  "handle": "oats-flavour-mix",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116_8-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116_8-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116-2_8-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116-3_9-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116-4_8-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116-5_8-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116-6_8-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116-7_8-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40208116-8_6-quaker-oats-breakfast-cereals-with-flavour-mix-nutritious-rich-source-of-energy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Get the perfect start to your day with the convenience of multiple flavours from just one pack of Oats. The multiple flavours are delicious. Moreover, with these delectable oats, your breakfast will be full of health benefits and provide energy throughout the day. It is the taste you will love for an ideal morning start.",
+   "ingredients": "Sugar, Iodised Salt, Spices & Condiments, Chilli Powder, Turmeric Powder, Coriander Powder, Pepper Powder, Cinnamon Powder, Ginger Powder, Onion Powder, Fenugreek Powder, Clove Powder, Hydrolyzed Vegetable Protein, Tomato Powder, Anticaking Agents, Edible Vegetable Oil",
+   "nutritionalInfo": {
+    "Energy": "394 kcal",
+    "Protein": "11.2 g",
+    "Total Fat": "7.6 g",
+    "Carbohydrate": "70.3 g",
+    "Of which Sugars": "6.8 g",
+    "Dietary Fibre": "8.5 g"
+   },
+   "manufacturerName": "Kayhem food industries Pvt. Ltd. Plot No. 2244-2247. Food Park",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Instant Oats - Herby Cheese",
+  "handle": "instant-oats-herby-cheese",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "32g",
+    "price": "17",
+    "compare_at_price": "17",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322188_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322187_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322188_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322188-2_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322188-3_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322188-4_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322188-5_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322188-6_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322187_1-quaker-instant-oats-herby-cheese-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the savory delight of Quaker Instant Oats - Herby Cheese Flavour. Bursting with rich, cheesy goodness and aromatic herbs, this quick and nutritious blend brings comfort to your mornings. With every spoonful, savour a perfect harmony of flavour and health. Elevate your breakfast routine with Quaker's delightful Herby Cheese infusion!",
+   "ingredients": "Rolled Oats (82%), *Seasoning (Iodised Salt, Sugar, Spices, Condiments & Herb, Milk Solids, Tomato Powder, Flavour (Natural Flavouring Substances, Cheese Powder (0.3%), Acidity Regulators (330,270), Flavour Enhancer (627,631)), 'Dehydrated Vegetable (Red Bell Pepper) (2%),*Dehydrated Parsley*As Flavouring Agent, \"Contains Onion & Garlic Allergen Advice: Contains Milk, Oats.May Contain Wheat, Soy, Celery, Mustard.",
+   "nutritionalInfo": {
+    "Energy (kcal)": "385",
+    "Protein (g)": "8.7",
+    "Total Fat (g)": "8.1",
+    "Saturated Fat (g)": "1.5",
+    "Trans Fat (g)": "0.0",
+    "Carbohydrate (g)": "69.4",
+    "Total Sugars (g)": "4.1",
+    "Added Sugars (g)": "4.1",
+    "Total Dietary Fibre (g)": "9.0",
+    "Soluble Fibre (g)": "6.4",
+    "Sodium (mg)": "1740"
+   },
+   "usageInstructions": "Empty the content of the pouch in a bowl, /pan. Pour 3/4th of a glass of water (210ml) into the bowl/pan. Cook for 3 minutes on the stove /microwave. Mix well and serve hot. Serving suggestion: Add vegetables for garnishing.",
+   "manufacturerName": "PepsiCo India Pvt. Ltd. P.O. Box 27",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Instant Oats - Masala Magic",
+  "handle": "instant-oats-masala-magic",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "17",
+    "compare_at_price": "17",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322186_1-quaker-instant-oats-masala-magic-flavour.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "189",
+    "compare_at_price": "189",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322185_1-quaker-instant-oats-masala-magic-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322186_1-quaker-instant-oats-masala-magic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322186-2_1-quaker-instant-oats-masala-magic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322186-3_1-quaker-instant-oats-masala-magic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322186-4_1-quaker-instant-oats-masala-magic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322186-5_1-quaker-instant-oats-masala-magic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322186-6_1-quaker-instant-oats-masala-magic-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322185_1-quaker-instant-oats-masala-magic-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the enticing Masala Magic flavour with Quaker Instant Oats, a perfect blend of wholesome goodness and a symphony of spices that makes breakfast a delightful experience. This healthy and convenient breakfast option is not only quick to prepare, ready in just 3 minutes, but is also packed with protein and fibre, courtesy of being made with whole grain oats. Experience the rich essence of masala and a burst of Indian flavours that will kickstart your day on a delicious note. With its unique blend of spices and nutritious ingredients, Quaker Instant Oats - Masala Magic is an ideal choice for those seeking a tasty and healthy breakfast solution.",
+   "ingredients": "Rolled Oats, Seasoning, Dehydrated Vegetables",
+   "nutritionalInfo": {
+    "Serving Size": "35 g",
+    "Energy (kcal)": "135",
+    "Protein (g)": "3.4",
+    "Total Fat (g)": "2.8",
+    "Saturated Fat (g)": "0.5",
+    "Trans Fat (g)": "0.0",
+    "Carbohydrate (g)": "23.9",
+    "Total Sugars (g)": "2.0",
+    "Added Sugars (g)": "1.2",
+    "Total Dietary Fibre (g)": "3.3",
+    "Soluble Fibre (g)": "2.1",
+    "Insoluble Fibre (g)": "1.1",
+    "Sodium (mg)": "662"
+   },
+   "storageInstructions": "*Store in a sealed container in a cool place away from moisture or strong odours",
+   "manufacturerName": "PepsiCo India Pvt. Ltd. P.O. Box 27",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Instant Oats - Mixed Berries",
+  "handle": "instant-oats-mixed-berries",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "32g",
+    "price": "17",
+    "compare_at_price": "17",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322190_1-quaker-instant-oats-mixed-berries.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322189_1-quaker-instant-oats-mixed-berries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322190_1-quaker-instant-oats-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322190-2_1-quaker-instant-oats-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322190-3_1-quaker-instant-oats-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322190-4_1-quaker-instant-oats-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322190-5_1-quaker-instant-oats-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322190-6_1-quaker-instant-oats-mixed-berries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322189_1-quaker-instant-oats-mixed-berries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the wholesome goodness of Quaker Instant Oats - Mixed Berries. Packed with the natural sweetness of mixed berries, our oats offer a nutritious and delicious start to your day. Quick and convenient, each spoonful delivers a delightful blend of flavours, making breakfast a delightful and healthy ritual. Elevate your mornings with Quaker!",
+   "ingredients": "Rolled Oats (75%), Sugar, Mixed Berries (Candied Cranberry (4%), Dried Blackcurrant (4%)), Flavour (Natural & Nature Identical Flavouring Substance), Beetroot Powder, Iodised Saltallergen Advice: Contains Oat.May Contain Wheat.",
+   "nutritionalInfo": {
+    "Energy": "400 kcal",
+    "Protein": "7.2g",
+    "Total Fat": "7.2g",
+    "Saturated Fat": "1.2g",
+    "Trans Fat": "0.0g",
+    "Carbohydrates": "76.5g",
+    "Total Sugars": "18.2g",
+    "Added Sugars": "16.4g",
+    "Total Dietary Fiber": "9g",
+    "Soluble Fiber": "7.3g",
+    "Insoluble Fiber": "1.7g",
+    "Sodium": "51mg"
+   },
+   "usageInstructions": "Empty the content of the pouch in a bowl, /pan. Pour 3/4th of a glass of water (210ml) into the bowl/pan. Cook for 3 minutes on the stove /microwave. Mix well and serve hot. Serving suggestion: Add vegetables for garnishing.",
+   "manufacturerName": "PepsiCo India Pvt. Ltd. P.O. Box 27",
+   "fssaiLicense": "10014064000435",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Oats Muesli - Berries & Seeds",
+  "handle": "oats-muesli-berries-seeds",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700g",
+    "price": "460",
+    "compare_at_price": "460",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422_2-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422_2-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422-2_2-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422-3_2-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422-4_2-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422-5_2-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422-6_2-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422-7_2-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270422-8_1-quaker-oats-muesli-breakfast-cereal-berries-seeds-high-in-protein-fibre.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Start your day on a healthy and delightful note with Quaker Oats Muesli Berries & Seeds. This nutritious breakfast cereal is packed with a delicious mix of whole grain oats, crunchy seeds, and juicy berries, providing a satisfying and energising way to fuel your morning. Bursting with 22% berries, fruit, and seeds like raisins, candied papaya, almonds, and pumpkin seeds, this multigrain delight is rich in fibre and protein to keep you feeling full and fuelled throughout the day.\nEnjoy it simply with milk, or top it with your favourite yogurt for a wholesome and convenient breakfast that will brighten up your mornings. Whether you're on-the-go or have time to sit and savour, this Quaker Oats muesli is the perfect way to start your day on a healthy and delicious note.",
+   "ingredients": "Multigrain (55%) (Rolled Oats 26%, Rice & Rice Flour 14%, Corngrit & Flour 7%, Rolled Barley 5%, Wheat 3%, Refined Wheat Flour (Maida) 1.4%), Berries & Seeds (22%) (Candied Cranberries 8%, Dried Blackcurrants 7%, Sunflower Seeds 4%, Pumpkin Seeds 3%), Sugar, Palmolein Oil, Maltodextrin, Invert Syrup, Stabiliser (1422, 170i, 322), Liquidglucose, Iodised Salt, Cereal Extracts, Flavour (Natural and Nature identical Flavouring Substances), Colour (150d), Antioxidant (307b)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "40g",
+    "Energy": "448 Kcal",
+    "Protein": "9g",
+    "Carbohydrate": "71g",
+    "Added Sugars": "10.6g",
+    "Total Sugars": "16g",
+    "Total Dietary Fiber": "6g",
+    "Total Fat": "14g",
+    "Saturated Fat": "4g",
+    "Trans Fat": "0g",
+    "Sodium": "242 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "Kayem Foods Industries Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014064000435"
+  }
+ },
+ {
+  "title": "Oats Muesli - Fruit & Nut",
+  "handle": "oats-muesli-fruit-nut",
+  "vendor": "Quaker (PepsiCo)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700g",
+    "price": "440",
+    "compare_at_price": "440",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421_2-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421_2-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421-2_2-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421-3_2-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421-4_2-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421-5_2-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421-6_2-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421-7_2-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40270421-8_1-quaker-oats-muesli-breakfast-cereal-fruit-nut-high-in-protein-fibre.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Brighten up your mornings with Quaker Oats Muesli, a nutritious and delicious breakfast cereal that's easy and convenient to enjoy. Packed with a delightful mix of fruits, nuts, and seeds, this multigrain goodness is the perfect fuel to start your day. Enjoy it as a cereal with milk, top it with your favourite yogurt, or simply snack on it as is for a nourishing on-the-go treat.\nWith 22% berries, fruit, and seeds, including raisins, candied papaya, almonds, and pumpkin seeds, this multigrain delight is a wholesome and satisfying breakfast option made with 5 grains. Whether you're looking for a hassle-free nutritious breakfast or a delicious and filling snack, Quaker Oats Muesli has you covered with its flavourful and nutritious blend.",
+   "ingredients": "Multigrain (55%) (Rolled Oat 26%, Rice & Rice Flour 14%, Corngrit & Flour 7%, Rolled Barley 5%, Wheat 3%, Refined Wheat Flour (Maida) 1.4%), Candied & Dry Fruit and Nut & Seed (22%) (Raisin 10%, Candied Papaya 5%, Almond 4%, Pumpkin Seed 3%), Sugar, Palmolein Oil, Maltodextrin, Invert Syrup, Stabiliser (1422, 170i, 322), Liquidglucose, Iodised Salt, Cereal Extract, Flavour (Natural and Nature Identical Flavouring Substances), Colour (150d), Antioxidant (307b)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "40g",
+    "Energy": "434 Kcal",
+    "Protein": "8g",
+    "Carbohydrate": "74g",
+    "Added Sugars": "10.9g",
+    "Total Sugars": "21g",
+    "Total Dietary Fiber": "6g",
+    "Total Fat": "12g",
+    "Saturated Fat": "3g",
+    "Trans Fat": "0g",
+    "Sodium": "236 mg"
+   },
+   "storageInstructions": "*Keep in a cool, dry place away from direct sunlight\n*Ensure the package is tightly sealed after each use",
+   "manufacturerName": "Kayem Foods Industries Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014064000435"
+  }
+ }
+]
