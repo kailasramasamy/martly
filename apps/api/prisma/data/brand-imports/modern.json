@@ -1,0 +1,388 @@
+{
+  "brand": "Modern",
+  "manufacturer": "Bimbo Bakeries India Pvt. Ltd.",
+  "feed": "modern-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/modern/logo-d1f56df2.png",
+  "themeColor": "#1D6FB8",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Modern ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Modern Chocolate Cake (Sliced)": "Choco Cheer Cake",
+    "Modern Pav (6 pcs)": "Wow Pav Bun",
+    "Modern Plain Rusk": "Sunbake Rusk",
+    "Modern Sweet Cream Bun (4 pcs)": "Classic Sweet Bun",
+    "Modern White Bread": "Sandwich Supreme Bread"
+  },
+  "rules": [
+    {
+      "match": "^Atta\\ Shakti\\ Zero\\ Maida\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Whole\\ Wheat\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Brown\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Butter\\ Crust\\ Milk\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ High\\ Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Zero\\ Preservatives\\ Multigrain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Zero\\ Preservatives\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Sandwich\\ Supreme\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Sandwich\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Family\\ Special\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Milk\\ Plus\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Plus\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Fruity\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Burger\\ Supreme\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Wow\\ Pav\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Classic\\ Sweet\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Fruity\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Sweet\\ Fill\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Delight\\ Choco\\ Hazelnut\\ Creme\\ Treat$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Kulcha$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Medium\\ Crust\\ Pizza\\ Base$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Chapati$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Milk\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Sunbake\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Brownie\\ with\\ Real\\ Walnuts$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Choco\\ Delight\\ Brownie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Crem\\ Bite\\ Choco\\ Layer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Choco\\ Cheer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fusion\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Wow\\ Vanilla\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Pop\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Banana\\ Pudding\\ Cheer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fruit\\ 'N'\\ Nut\\ Cheer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^English\\ Tea\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Tea\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Eggless\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Choco\\ Joy\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Delight\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fantasy\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Plum\\ Celebration\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Royal\\ Plum\\ Gold\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Royal\\ Plum\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^White\\ Plum\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    }
+  ]
+}
