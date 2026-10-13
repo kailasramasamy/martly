@@ -1,0 +1,273 @@
+[
+ {
+  "title": "Multi-Purpose Pain Balm",
+  "handle": "multi-purpose-pain-balm",
+  "vendor": "Iodex (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "3g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40058689_1-iodex-multi-purpose-pain-balm.jpg"
+    }
+   },
+   {
+    "title": "8g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005347_2-iodex-balm-fast-relief.jpg"
+    }
+   },
+   {
+    "title": "16g",
+    "price": "92",
+    "compare_at_price": "92",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263722_3-iodex-pain-balm-multi-purpose.jpg"
+    }
+   },
+   {
+    "title": "40g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263751_7-iodex-pain-balm-multi-purpose.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058689_1-iodex-multi-purpose-pain-balm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005347_2-iodex-balm-fast-relief.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263722_3-iodex-pain-balm-multi-purpose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263751_7-iodex-pain-balm-multi-purpose.jpg"
+   }
+  ],
+  "details": {
+   "description": "Iodex Multi Purpose Pain Balm is a topical pain relief ointment that provides fast relief from muscle aches, joint pains, sprains, and strains. Formulated with natural ingredients, it helps soothe and relax the affected area. The balm has a pleasant fragrance and is easy to apply, making it a convenient choice for everyday use."
+  }
+ },
+ {
+  "title": "UltraGel+ Pain Relief Gel",
+  "handle": "ultragel-pain-relief-gel",
+  "vendor": "Iodex (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564_2-iodex-ultra-gel.jpg"
+    },
+    "barcode": "8901571012794"
+   },
+   {
+    "title": "30g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318565_2-iodex-ultra-gel.jpg"
+    }
+   },
+   {
+    "title": "50g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318566_2-iodex-ultra-gel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564_2-iodex-ultra-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564-2_2-iodex-ultra-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564-3_2-iodex-ultra-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564-4_2-iodex-ultra-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564-5_2-iodex-ultra-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564-6_2-iodex-ultra-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564-7_2-iodex-ultra-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318564-8_2-iodex-ultra-gel.jpg"
+   }
+  ],
+  "details": {
+   "description": "Iodex UltraGel+ is a pain relief gel that provides All Day Relief from body pains. Iodex UltraGel+ penetrates deep into the skin, upto 3x greater depth, thus treating the root cause of pain and delivering a comprehensive, long-lasting relief. Iodex UltraGel+ has no smell and is non-greasy. It provides relief from multiple types of body pain like neck and shoulder pain, back pain, muscular pain, joint pain, sprains and osteoarthritis. Due to its gentle and non-irritating nature, it can be used daily without any concern for adverse effects, ensuring consistent relief from discomfort.",
+   "usageInstructions": "Apply 2 g - 4 g gently on the painful area 2 times a day. Wash your hands thoroughly after use. Do not use it for >7 days without consulting a doctor.",
+   "manufacturerName": "Makson Healthcare Private Limited. Plot No.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Power Gel Body Pain Expert",
+  "handle": "power-gel-body-pain-expert",
+  "vendor": "Iodex (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307074_1-iodex-power-gel-body-pain-expert-with-natural-ingredients.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307074_1-iodex-power-gel-body-pain-expert-with-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307074-2_1-iodex-power-gel-body-pain-expert-with-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307074-3_1-iodex-power-gel-body-pain-expert-with-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307074-4_1-iodex-power-gel-body-pain-expert-with-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307074-5_1-iodex-power-gel-body-pain-expert-with-natural-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307074-6_1-iodex-power-gel-body-pain-expert-with-natural-ingredients.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the power of Iodex Power Gel, a trusted solution for relieving a variety of body pains. Formulated with a unique blend of four potent ingredients, this Ayurvedic proprietary medicine penetrates deep into the skin to reduce inflammation and provide targeted relief from back pain, joint pain, neck pain, shoulder pain, strains, sprains, and spasms. Boasting analgesic and anti-inflammatory properties, the key ingredients of Gandhapura Tel, Kunduru Niryasa, Peppermint Satva, and Katuvira Extract work in synergy to soothe and comfort. Whether you're dealing with muscle aches or joint discomfort, Iodex Power Gel's advanced gel formula offers fast and effective relief, conveniently packaged in a tube for easy on-the-go application. Experience the power of nature-inspired ingredients and say goodbye to body pains with Iodex Power Gel.",
+   "usageInstructions": "1. Gently massage Iodex Power Gel over the affected area for targeted relief.\n2. Apply a thin layer of the product on the affected area 3-4 times per day.",
+   "manufacturerName": "Makson Healthcare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rapid Action Pain Relief Spray",
+  "handle": "rapid-action-pain-relief-spray",
+  "vendor": "Iodex (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232842_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+    },
+    "barcode": "8901571011315"
+   },
+   {
+    "title": "60g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232843_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232842_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232842-2_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232842-3_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232842-4_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232842-5_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232842-6_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232843_1-iodex-rapid-action-spray-inflammation-relief-5-active-ingredients.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the power of Iodex Rapid Action Pain Relief Spray, the ultimate solution for all your musculoskeletal pains. Backed by over 100 years of expertise, this innovative formula penetrates deep into the skin, reducing internal inflammation and providing targeted relief from a variety of aches and pains. Infused with a blend of 5 active ingredients, including Indian Wintergreen, Menthol, Clove Oil, Eucalyptus oil, and Turpentine Oil, this spray offers a dual sensation of cooling and long-lasting warming, delivering a soothing effect that helps alleviate back pain, joint pain, neck pain, shoulder pain, strains, sprains, and spasms. With its fast-acting formula that quickly targets the source of discomfort, Iodex Rapid Action Pain Relief Spray is the convenient and easy-to-use solution for restoring your mobility and comfort.",
+   "usageInstructions": "Shake well before use. For adults and children >=12 yrs, spray for 2-3 seconds from 5 cm distance, 3-4 times a days. For external use only.\nIt is an Ayurvedic Proprietary medicine that can be used by all, who are12 years and above.\nTo apply hold the container about 5 cm from the skin and spray the affected area for 2-3 seconds 3-4 times a day.\nDo not spray near your eyes or face. Store at ambient room temperature away from direct heat and sunlight.",
+   "manufacturerName": "Pontika Aerotech Ltd. Village Johron",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Active Muscle Care Soft Cream",
+  "handle": "active-muscle-care-soft-cream",
+  "vendor": "Iodex (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "16g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348258_1-iodex-active-muscle-care-soft-cream.jpg"
+    },
+    "barcode": "8901571013937"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348258_1-iodex-active-muscle-care-soft-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348258-2_1-iodex-active-muscle-care-soft-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348258-3_1-iodex-active-muscle-care-soft-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348258-4_1-iodex-active-muscle-care-soft-cream.jpg"
+   }
+  ],
+  "details": {
+   "description": "Introducing new Iodex active muscle care, now in a non-sticky cream form, for sore muscles caused by everyday tiredness. With the power of 4 actives, it provides a warming sensation, improves blood circulation and provides fast relief.",
+   "manufacturerName": "Makson Healthcare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

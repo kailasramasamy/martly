@@ -1,0 +1,56 @@
+{
+  "brand": "Iodex (Haleon)",
+  "manufacturer": "Haleon India Pvt. Ltd.",
+  "feed": "iodex-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/iodex/logo-fcb13cca.png",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#F47920",
+  "namePrefix": "Iodex ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Iodex Multi-Purpose Pain Relief Gel": "UltraGel+ Pain Relief Gel"
+  },
+  "rules": [
+    {
+      "match": "^Multi\\-Purpose\\ Pain\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^UltraGel\\+\\ Pain\\ Relief\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Power\\ Gel\\ Body\\ Pain\\ Expert$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Rapid\\ Action\\ Pain\\ Relief\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Active\\ Muscle\\ Care\\ Soft\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    }
+  ]
+}
