@@ -1,0 +1,579 @@
+{
+  "brand": "Dr. Oetker",
+  "manufacturer": "Dr. Oetker India Pvt. Ltd.",
+  "feed": "dr-oetker-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dr-oetker/logo-cfeb657d.png",
+  "themeColor": "#D2001E",
+  "themeColorSecondary": "#1A3D8F",
+  "namePrefix": "Dr. Oetker ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Dr. Oetker FunFoods Veg Mayonnaise": "FunFoods Original Veg Mayonnaise",
+    "Dr. Oetker FunFoods Salsa Dip": "FunFoods Salsa",
+    "Dr. Oetker FunFoods Chocolate Spread": "FunFoods Chocolate Milk Spread",
+    "Dr. Oetker FunFoods Yellow Mustard": "FunFoods American Mustard"
+  },
+  "rules": [
+    {
+      "match": "^FunFoods\\ Original\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ De'lite\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Garlic\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Burger\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Tandoori\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Olive\\ Oil\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Green\\ Mint\\ Veg\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Egg\\ Classic\\ Mayonnaise$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Stripes\\ Mayo\\ \\&\\ Ketchup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Stripes\\ Mayo\\ \\&\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Stripes\\ Mayo\\ \\&\\ BBQ$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Stripes\\ Mayo\\ \\&\\ Mint$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Stripes\\ Mayo\\ \\&\\ Imli$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Stripes\\ Mayo\\ \\&\\ Momo\\ Dip$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Cucumber\\ \\&\\ Carrot\\ Sandwich\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Thousand\\ Island\\ Sandwich\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Cheese\\ \\&\\ Chilli\\ Sandwich\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Garlic\\ \\&\\ Bell\\ Pepper\\ Sandwich\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Creamy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Crunchy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Chocolate\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Peanut\\ Butter\\ \\+\\ Organic\\ Jaggery\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Peanut\\ Butter\\ \\+\\ Organic\\ Jaggery\\ Smooth$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Peanut\\ Butter\\ \\+\\ Organic\\ Honey\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Peanut\\ Butter\\ \\+\\ Natural\\ Extra\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ High\\ Protein\\ Peanut\\ Butter\\ Dark\\ Chocolate\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ High\\ Protein\\ Peanut\\ Butter\\ Dark\\ Chocolate\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ High\\ Protein\\ Peanut\\ Butter\\ Banana\\ Smooth$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ High\\ Protein\\ Peanut\\ Butter\\ Banana\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Chocolate\\ Milk\\ Spread$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chocolate & Hazelnut Spread"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Pasta\\ \\&\\ Pizza\\ Red\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Pasta\\ \\&\\ Pizza\\ Pink\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Pasta\\ \\&\\ Pizza\\ White\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Pizza\\ Topping\\ All\\-In\\-One\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Pasta\\ Alfredo\\ With\\ Cheese$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Arrabbiata\\ Spicy\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Pesto\\ Italian\\ Basil\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Salsa$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Cheesy\\ Nacho\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Garlic\\ Chilli\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Creamy\\ Cheese\\ Garlic\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Creamy\\ Yoghurt\\ Mint\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Creamy\\ Herb\\ Lemon\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ American\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Traditional\\ English\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Smokey\\ Barbecue\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Schezwan\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Soya\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Soy Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Hot\\ \\&\\ Sweet\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Red\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Green\\ Chilli\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Eggless\\ Cake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Brownie\\ Eggless\\ Cake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Eggless\\ Bake\\ Mix\\ 11\\ Cakes$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^FunFoods\\ Choco\\ Lava\\ Eggless\\ Bake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Fruit\\ \\&\\ Nut\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Banana\\ Walnut\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Butter\\ Almond\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Marble\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Red\\ Velvet\\ Brownie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Dark\\ Choco\\ Chip\\ Brownie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Confetti\\ Brownie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Chocolate\\ Waffles$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Vanilla\\ Waffles$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Strawberry\\ Waffles$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Kuppies\\ Orange\\ Waffles$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Soft\\ Waffles\\ Frosted\\ Chocolate$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Soft\\ Waffles\\ Frosted\\ Vanilla$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Soft\\ Waffles\\ Cinnamon\\ Sugar$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Soft\\ Waffles\\ Tutti\\ Frutti$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    }
+  ]
+}
