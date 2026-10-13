@@ -1,0 +1,78 @@
+{
+  "brand": "Herbal Essences",
+  "manufacturer": "Procter & Gamble Home Products Pvt. Ltd.",
+  "feed": "herbal-essences-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/herbal-essences/logo-c291eb48.png",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#F4C300",
+  "namePrefix": "Herbal Essences ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bio:Renew\\ Argan\\ Oil\\ of\\ Morocco\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Bio:Renew\\ Argan\\ Oil\\ of\\ Morocco\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Bio:Renew\\ White\\ Strawberry\\ \\&\\ Sweet\\ Mint\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Bio:Renew\\ White\\ Strawberry\\ \\&\\ Sweet\\ Mint\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Bio:Renew\\ Coconut\\ Milk\\ Hydrate\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Bio:Renew\\ Coconut\\ Milk\\ Hydrate\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Bio:Renew\\ Rosemary\\ \\&\\ Herbs\\ Moisture\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Potent\\ Aloe\\ \\&\\ Eucalyptus\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    }
+  ]
+}
