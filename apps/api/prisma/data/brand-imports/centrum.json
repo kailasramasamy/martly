@@ -1,0 +1,112 @@
+{
+  "brand": "Centrum (Haleon)",
+  "manufacturer": "Haleon India Pvt. Ltd.",
+  "feed": "centrum-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/centrum/logo-fa98714c.png",
+  "themeColor": "#231F20",
+  "themeColorSecondary": "#7B2D8E",
+  "namePrefix": "Centrum ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Centrum Silver Multivitamin for Adults 50+": "Adults 50+ Multivitamin Tablets"
+  },
+  "rules": [
+    {
+      "match": "^Adults\\ 50\\+\\ Multivitamin\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Men\\ Multivitamin\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Women\\ Multivitamin\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Kids\\ Multivitamin\\ Gummies$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Hair\\ Biotin\\+\\ Gummies$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Omega\\-3\\ Fish\\ Oil\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^OstoCalcium\\ Total\\ Vitamin\\ D\\ \\&\\ Calcium\\ Chewable\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Kids\\ Multivitamin\\ \\&\\ Protein\\ Drink\\ Powder\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Men\\ Multivitamin\\ \\&\\ Protein\\ Drink\\ Powder\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Women\\ Multivitamin\\ \\&\\ Protein\\ Drink\\ Powder\\ \\-\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Recharge\\ Instant\\ Energy\\ Drink\\ Mix\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    },
+    {
+      "match": "^Kids\\ Recharge\\ Fizzy\\ Drink\\ Mix\\ \\-\\ Orange$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Glucose & Energy Drinks"
+      ]
+    }
+  ]
+}
