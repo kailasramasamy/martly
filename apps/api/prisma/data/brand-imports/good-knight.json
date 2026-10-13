@@ -1,0 +1,208 @@
+{
+  "brand": "Good Knight (Godrej)",
+  "manufacturer": "Godrej Consumer Products Ltd.",
+  "feed": "good-knight-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/good-knight/logo-0c0d042a.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFC20E",
+  "namePrefix": "Good Knight ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Good Knight Gold Flash Liquid Vaporiser": "Gold Flash Liquid Vaporiser Refill"
+  },
+  "rules": [
+    {
+      "match": "^Activ\\+\\ Low\\ Smoke\\ Mosquito\\ Coil$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Maha\\ Jumbo\\ Mosquito\\ Coil$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Anti\\-Mosquito\\ Agarbatti$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Anti\\-Mosquito\\ Agarbatti$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Neem\\ Anti\\-Mosquito\\ Agarbatti$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Gold\\ Flash\\ Liquid\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Gold\\ Flash\\ Liquid\\ Vaporiser\\ Refill\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Gold\\ Flash\\ Combi\\ Pack\\ \\(Machine\\ \\+\\ Refill\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Flash\\ Liquid\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Flash\\ Liquid\\ Vaporiser\\ \\(Machine\\ \\+\\ 2\\ Refills\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Flash\\ Liquid\\ Vaporiser\\ \\(Machine\\ \\+\\ 3\\ Refills\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Power\\ Activ\\+\\ Liquid\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Power\\ Activ\\+\\ Jumbo\\ Refill\\ \\(60\\ Nights\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Neem\\ Liquid\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Neem\\ Liquid\\ Vaporiser\\ \\(Machine\\ \\+\\ 2\\ Refills\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Smart\\ Spray\\ Multi\\-Insect\\ Killer$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Neem\\ Anti\\-Fly\\ Surface\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Neem\\ Anti\\-Mosquito\\ Room\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Roll\\-On\\ Mosquito\\ Repellent\\ \\-\\ Bubblegum$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Roll\\-On\\ Mosquito\\ Repellent\\ \\-\\ Mild\\ Bloom$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Roll\\-On\\ Mosquito\\ Repellent\\ \\-\\ Fruity$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Roll\\-On\\ Mosquito\\ Repellent\\ \\-\\ Citrus$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Mosquito\\ Repellent\\ Cream\\ with\\ Aloe$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Naturals\\ After\\ Bite\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    }
+  ]
+}
