@@ -1,0 +1,240 @@
+{
+  "brand": "Medimix",
+  "manufacturer": "Cholayil Pvt. Ltd.",
+  "feed": "medimix-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/medimix/logo-76a1a9ae.png",
+  "themeColor": "#1E7B34",
+  "themeColorSecondary": "#F2C230",
+  "namePrefix": "Medimix ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Medimix Classic Ayurvedic Soap": "Classic 18 Herbs Ayurvedic Soap"
+  },
+  "rules": [
+    {
+      "match": "^Classic\\ 18\\ Herbs\\ Ayurvedic\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Sandal\\ Soap\\ With\\ Eladi\\ Oils$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Glycerine\\ Moisturising\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Clear\\ Glycerine\\ Deep\\ Hydration\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Clear\\ Glycerine\\ Natural\\ Toning\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Clear\\ Glycerine\\ Oil\\ Balance\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Anti\\ Pimple\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Anti\\ Tan\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Anti\\-Dandruff\\ \\&\\ Scalp\\ Treatment\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Anti\\-Dandruff\\ \\&\\ Scalp\\ Treatment\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Colour\\ Protection\\ \\&\\ Moisturising\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Colour\\ Protection\\ \\&\\ Moisturising\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Deep\\ Cleansing\\ \\&\\ Hydrating\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Deep\\ Cleansing\\ \\&\\ Hydrating\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Revitalising\\ \\&\\ Repair\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Revitalising\\ \\&\\ Repair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Softening\\ \\&\\ Silkening\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Softening\\ \\&\\ Silkening\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Volumising\\ \\&\\ Bouncing\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Volumising\\ \\&\\ Bouncing\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Kumkumadi\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Lakshadi\\ Oil\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^18\\ Herbs\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Handwash\\ Refill$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Sandal\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Sandal\\ Handwash\\ Refill$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Nature\\ Fresh\\ Handwash\\ With\\ Lemon,\\ Tulsi\\ \\&\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    }
+  ]
+}
