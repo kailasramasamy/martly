@@ -1,0 +1,694 @@
+[
+ {
+  "title": "Antiseptic Cream",
+  "handle": "antiseptic-cream",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "19ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/315438_3-boroplus-cream-antiseptic.jpg"
+    }
+   },
+   {
+    "title": "80ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/315414_4-boroplus-ayurvedic-antiseptic-cream-for-soft-moisturised-nourished-skin-lips.jpg"
+    }
+   },
+   {
+    "title": "120ml",
+    "price": "206",
+    "compare_at_price": "206",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153851_9-boroplus-ayurvedic-antiseptic-cream-for-soft-moisturised-skin-lips.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315438_3-boroplus-cream-antiseptic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315414_4-boroplus-ayurvedic-antiseptic-cream-for-soft-moisturised-nourished-skin-lips.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153851_9-boroplus-ayurvedic-antiseptic-cream-for-soft-moisturised-skin-lips.jpg"
+   }
+  ],
+  "details": {
+   "description": "Boroplus Antiseptic Cream is an ointment which is applied on skin to decrease the chances or to take care of infection sepsis and minor wounds These creams are also recognized as antibiotic creams because they wipe out bacteria any other microorganisms These creams also treat scratches burns cuts and insect bites For Beauty tips tricks more visit",
+   "usageInstructions": "Apply the affected area. Apply the cream Heals cuts, scratches, minor burns,",
+   "manufacturerName": "Emami Ltd. Survey No.61/2p/1 - MASAT",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aloe Vera Gel with Vitamin E",
+  "handle": "aloe-vera-gel-with-vitamin-e",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200031623_2-boroplus-organic-aloe-vera-gel-with-niacinamide-vitamin-e.jpg"
+    }
+   },
+   {
+    "title": "150ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/414953_2-boroplus-aloe-vera-gel-100-organic-for-skin-hair-rich-in-vitamin-e-and-antiseptic-herbs-for-smooth-nourished-and-moisturised-skin-150ml.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200031623_2-boroplus-organic-aloe-vera-gel-with-niacinamide-vitamin-e.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200031623-2_1-boroplus-organic-aloe-vera-gel-with-niacinamide-vitamin-e.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200031623-3_1-boroplus-organic-aloe-vera-gel-with-niacinamide-vitamin-e.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/414953_2-boroplus-aloe-vera-gel-100-organic-for-skin-hair-rich-in-vitamin-e-and-antiseptic-herbs-for-smooth-nourished-and-moisturised-skin-150ml.jpg"
+   }
+  ],
+  "details": {
+   "description": "The ultra-light texture of this aloe vera gel can help keep your skin hydrated and soft with every use. It is a natural product without parabens, sulphates, or mineral oil. It can help reduce pimples, moisturise dry skin, soothe sunburns, and act as a natural sunscreen. It is enriched with vitamin E that helps nourish the skin from within and protects it from damage. The non-sticky texture makes this aloe vera gel suitable for everyday use. It can be used on the hair to reduce frizz, roughness, and dandruff. Green tea in this gel helps keep the skin healthy, smooth and hydrated.",
+   "manufacturerName": "Emami Ltd",
+   "countryOfOrigin": "Country of Origin",
+   "ingredients": "Aqua/?Water, Propylene Glycol, Niacinamide, PEG -12 Dimethicone, Carbomer, Aloe Barbadensis Leaf Extract, Ocimum Sanctum (Tulsi) Extract, Azadirachta Indica (Neem) Leaf Extract, Citrus Medica Limonum (Lemon Peel) Extract, Camellia Sinensis (Green Tea) Leaf Extract, (0.70%) Salicylic Acid, Tocopheryl Acetate, PEG-40 Hydrogenated Castor Oil, Disodium EDTA, DMDM Hydantoin, Phenoxyethanol, Sodium Benzotriazolyl Butylphenol Sulfonate, Buteth-3, Tributyl Citrate, Sodium Hydroxide, Perfume, Ci 42090, Ci 47005"
+  }
+ },
+ {
+  "title": "Haldi Chandan Kesar Aloe Vera Gel",
+  "handle": "haldi-chandan-kesar-aloe-vera-gel",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+    },
+    "barcode": "8901248154185"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527-2_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527-3_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527-4_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527-5_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527-6_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527-7_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243527-8_1-boroplus-aloe-vera-gel-with-haldi-chandan-kesar-provides-glowing-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "To the men & women exposed to environmental stressors and lifestyle aggressions, BoroPlus Aloe Vera gel with Haldi, Chandan, and Kesar is the purest, simplest, and most natural form of Gel for the Face and Body. This Antiseptic Gel has natural antioxidant and anti-aging properties and is good for skin problems like scars, dryness, acne, breakouts, and dark spots. Kesar rejuvenates dull skin, reduces dark spots and gives you a youthful glow. Chandan, with its antibacterial properties, helps cure pimples, exfoliate the skin, and soothes sunburn. Haldi, known for its healing properties, also helps nourish and heal skin damage. It is made from 100% organic Aloe Vera and is free from chemicals like parabens, sulphates, and mineral oils. This Antiseptic Gel is enriched with the goodness of Vitamin E along with Antiseptic Herbs like Neem and Lemon, which heals & nourishes the skin from within and shields it from external damage. With its non-sticky, ultra-light texture, it can be used daily, across all seasons.",
+   "usageInstructions": "Directions:\nApply liberally to dry areas that need soothing, including face, body, scalp, and hair.\nSpread evenly and massage until absorbed.",
+   "manufacturerName": "(For Emami Limited) EPP Complex Amingaon",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Organic Aloe Vera Gel with Green Tea",
+  "handle": "organic-aloe-vera-gel-with-green-tea",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253835_1-boroplus-100-organic-aloe-vera-gel-with-green-tea-non-sticky-moisturising-paraben-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253835_1-boroplus-100-organic-aloe-vera-gel-with-green-tea-non-sticky-moisturising-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253835-2_1-boroplus-100-organic-aloe-vera-gel-with-green-tea-non-sticky-moisturising-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253835-3_1-boroplus-100-organic-aloe-vera-gel-with-green-tea-non-sticky-moisturising-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253835-4_1-boroplus-100-organic-aloe-vera-gel-with-green-tea-non-sticky-moisturising-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253835-5_1-boroplus-100-organic-aloe-vera-gel-with-green-tea-non-sticky-moisturising-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253835-6_1-boroplus-100-organic-aloe-vera-gel-with-green-tea-non-sticky-moisturising-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253835-7_1-boroplus-100-organic-aloe-vera-gel-with-green-tea-non-sticky-moisturising-paraben-free.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the natural goodness of BoroPlus 100% Organic Aloe Vera Gel with Green Tea. This ultra-light, non-greasy formula is the perfect solution for your skin's needs, free from harsh chemicals like parabens, sulphates, and mineral oils. Enriched with the soothing properties of Aloe Vera and the antioxidant benefits of Green Tea, this versatile gel helps reduce the appearance of pimples, moisturise dry skin, and even acts as a natural sunscreen to protect against UV damage. Infused with nourishing Vitamin E, it works from within to shield your skin from external aggressors and keep it healthy, smooth, and hydrated all day long. With its non-sticky texture, this multi-purpose gel can be used daily, across all seasons, to address a variety of skin concerns, from pimples and dryness to dark spots and frizzy hair. Unlock the power of nature and treat your skin to the ultimate in hydration and protection with BoroPlus Aloe Vera Gel.",
+   "usageInstructions": "Apply it once or twice a day.",
+   "manufacturerName": "Emami Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Soft Light Moisturising Cream",
+  "handle": "soft-light-moisturising-cream",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371_16-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40278596_10-boroplus-soft-ayurvedic-antiseptic-moisturiser-cream-with-fruit-water-light-non-sticky.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371_16-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371-2_2-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371-3_2-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371-4_2-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371-5_2-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371-6_2-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371-7_2-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237371-8_2-boroplus-soft-ayurvedic-antiseptic-cream-non-sticky-super-herbs-fruit-water-light-for-face-body.jpg"
+   }
+  ],
+  "details": {
+   "description": "Boroplus Soft Light Moisturiser Cream is a luxurious Ayurvedic skincare solution that delivers long-lasting hydration and protection. Enriched with the goodness of fruit water, Vitamin E, and 10 super herbs, this light, non-sticky cream offers 24-hour moisturisation to leave your skin feeling soft, smooth, and nourished throughout the day. The fast-absorbing, non-greasy formula quickly sinks into the skin, making it perfect for everyday use and suitable for all skin types and seasons. With its healing and antiseptic properties, this cream helps to soothe dry, irritated, and sensitive skin, preventing infections and promoting skin healing on minor skin irritations like cuts, burns, and rashes. Boroplus Soft Light Moisturiser Cream is the ideal solution for achieving soft, fresh, and healthy-looking skin, delivering all-day comfort and relief.",
+   "usageInstructions": "1. Take out the cream on your fingers.\n2. Rub it evenly on your palms.\n3. Massage gently on the clean face in upward and circular motion.\n4. Massage cream on your hands and body to moisturise daily.",
+   "manufacturerName": "Emami Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vasocare Petroleum Jelly",
+  "handle": "vasocare-petroleum-jelly",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/315346_9-emami-petroleum-jelly.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315346_9-emami-petroleum-jelly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315346-2_1-emami-petroleum-jelly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315346-3_1-emami-petroleum-jelly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315346-4_1-emami-petroleum-jelly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315346-5_1-emami-petroleum-jelly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315346-6_1-emami-petroleum-jelly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315346-7_1-emami-petroleum-jelly.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/315346-8_1-emami-petroleum-jelly.jpg"
+   }
+  ],
+  "details": {
+   "description": "Vasocare Petroleum Jelly now offers the herbal power to heal defend and invigorate the skin from within to ensure 24 hour winter skincare It claims to be 5 times more efficient than other petroleum jellies It relieves defends heals moisturizes and nourishes It has multiple uses especially for dry skin feet elbows and hands For Beauty tips tricks more visit",
+   "usageInstructions": "Apply the jelly on dry skin, elbows, and hands.",
+   "manufacturerName": "Emami Ltd. Survey No.61/2p/1 - MASAT",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Doodh Badam Kesar Body Lotion",
+  "handle": "doodh-badam-kesar-body-lotion",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400ml",
+    "price": "413",
+    "compare_at_price": "413",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40243526_3-boroplus-doodh-kesar-body-lotion-with-vitamins-pure-kashmiri-kesar-milk-24-hour-moisturisation-soft-smooth-healthy-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243526_3-boroplus-doodh-kesar-body-lotion-with-vitamins-pure-kashmiri-kesar-milk-24-hour-moisturisation-soft-smooth-healthy-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243526-2_1-boroplus-doodh-kesar-body-lotion-with-vitamins-pure-kashmiri-kesar-milk-24-hour-moisturisation-soft-smooth-healthy-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243526-3_1-boroplus-doodh-kesar-body-lotion-with-vitamins-pure-kashmiri-kesar-milk-24-hour-moisturisation-soft-smooth-healthy-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40243526-4_1-boroplus-doodh-kesar-body-lotion-with-vitamins-pure-kashmiri-kesar-milk-24-hour-moisturisation-soft-smooth-healthy-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "Nourish your skin with the BoroPlus Doodh Kesar Body Lotion that penetrates the skin up to 20 layers to help heal dryness from deep within and keep it healthier for longer. This unique ayurvedic formula is filled with the goodness of natural ingredients to reveal soft and smooth skin. Doodh, loaded with vitamins including Vitamin E, nourishes and softens dry skin. Pure Kashmiri Kesar makes the skin radiant. BoroPlus Body Lotion is absorbed into the skin quickly, making it feel non-greasy, providing deep moisturisation making the skin healthy, glowing, soft, and smooth. Your skin protects you from germs, viruses, dust, and harsh weather conditions and in turn becomes dry, dull, itchy, flaky, and undernourished. BoroPlus Doodh Kesar Body Lotion helps protect your skin from environmental damage, owing to the Ayurvedic Ingredients with moisturising, and nourishing properties. The lotion can be used on all skin types and provides 24-hour moisturisation. It is suitable for all skin types and is recommended by Dermatologists. Use the BoroPlus Body Lotion every day, to unveil soft, supple skin.",
+   "usageInstructions": "Apply all over the body.\nFor best results, use after a shower, when skin is still moist.",
+   "manufacturerName": "Emami Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Icy Cool Prickly Heat Powder",
+  "handle": "icy-cool-prickly-heat-powder",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/222566_4-boroplus-powder-prickly-heat-icy-cool.jpg"
+    },
+    "barcode": "8901248103305"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/222566_4-boroplus-powder-prickly-heat-icy-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/222566-2_2-boroplus-powder-prickly-heat-icy-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/222566-3_2-boroplus-powder-prickly-heat-icy-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/222566-4_2-boroplus-powder-prickly-heat-icy-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/222566-5_2-boroplus-powder-prickly-heat-icy-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/222566-6_1-boroplus-powder-prickly-heat-icy-cool.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the natural relief and cooling comfort of Boro Plus Prickly Heat Powder Icy Coul. This completely herbal formulation is mild, gentle, and skin-friendly, providing a soothing solution to combat the discomfort caused by prickly heat and skin irritation. Infused with a unique blend of cooling ingredients like menthol and camphor, this powder offers instant relief from itching, burning, and redness associated with prickly heat. Whether you're spending long hours outdoors in the hot sun or simply looking for a refreshing way to stay cool and comfortable, this powder delivers quick relief, excellent sweat absorption, and a cooling sensation that prevents body odour. Embrace the natural goodness of herbs and experience the rejuvenating benefits of this summer skincare essential.",
+   "usageInstructions": "It is excellent in absorbing sweat & prevents body odour to keep you fresh, all day long.",
+   "manufacturerName": "Emami Ltd. Survey No.61/2p/1 - MASAT",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem & Shea Butter Soap",
+  "handle": "neem-shea-butter-soap",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+    },
+    "barcode": "8901248157452"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490-2_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490-3_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490-4_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490-5_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490-6_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490-7_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306490-8_2-boroplus-antiseptic-moisturising-neem-soap-with-shea-butter.jpg"
+   }
+  ],
+  "details": {
+   "description": "BoroPlus Antiseptic + Moisturising Neem Soap is made with natural, ayurvedic ingredients. It protects your entire family by killing 99.9% of germs and viruses & leaves skin germ-free, clean & moisturise. Its key ingredient Neem has Anti-Viral & Anti-Bacterial properties, Shea Butter soothes & softens the skin. BoroPlus is an Antiseptic & Moisturising Neem Soap that is recommended by Doctors.",
+   "usageInstructions": "First, wet your hands and then rub the BoroPlus Antiseptic + Moisturising Neem Soap gently between them until the soap lathers up.\nMassage the lather over your face & body before rinsing with water.",
+   "manufacturerName": "EMAMI LTD1. Khasra No.190",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sandal & Neem Soap",
+  "handle": "sandal-neem-soap",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "56",
+    "compare_at_price": "56",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491-2_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491-3_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491-4_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491-5_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491-6_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491-7_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306491-8_2-boroplus-antiseptic-moisturising-sandal-soap-with-neem.jpg"
+   }
+  ],
+  "details": {
+   "description": "BoroPlus Antiseptic + Moisturising Sandal Soap provides skin nourishment with the soothing fragrance of Sandals for an entire day. Its antiseptic power Neem gives healthy skin. BoroPlus Antiseptic & Moisturising Sandal Soap is recommended by Doctors & protects your entire family by killing 99.9% of germs and viruses.",
+   "usageInstructions": "First, wet your hands and then rub the BoroPlus Antiseptic + Moisturising Sandal Soap gently between them until the soap lathers up.\nMassage the lather over your face & body before rinsing with water.",
+   "manufacturerName": "EMAMI LTD1. Khasra No.190",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem, Tulsi & Aloe Vera Soap",
+  "handle": "neem-tulsi-aloe-vera-soap",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+    },
+    "barcode": "8901248157407"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245-2_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245-3_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245-4_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245-5_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245-6_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245-7_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293245-8_1-emami-boroplus-antiseptic-moisturising-soap-neem-tulsi-aloevera.jpg"
+   }
+  ],
+  "details": {
+   "description": "The BoroPlus Antiseptic and Moisturising Bathing Soap with Neem, Tulsi, and Aloe Vera offers the perfect gentle care for your skin. Its unique formulation contains neem, which helps eliminate 99.9% of germs and viruses with its antiviral, antibacterial, and antioxidant properties. Tulsi has antifungal and anti-inflammatory properties, while aloe vera is soothing and moisturising to keep your skin soft, hydrated, and healthy. And, free from chemicals like parabens and silicones, this soap is suitable for use by all family members. Moreover, bathing with this soap leaves you with long-lasting freshness.",
+   "usageInstructions": "First, get your hands wet and then rub the BoroPlus Antiseptic and Moisturising Soap gently until lather forms.\nSpread the lather over your face and body, and then rinse off with water.",
+   "manufacturerName": "1. Forever Body Care Industries 2. Alliance World Manufacturing Ltd. Unit-II1. Khasra No.190",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem, Eucalyptus & Honey Soap",
+  "handle": "neem-eucalyptus-honey-soap",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "43",
+    "compare_at_price": "43",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+    },
+    "barcode": "8901248157100"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246-2_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246-3_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246-4_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246-5_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246-6_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246-7_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40293246-8_1-emami-boroplus-antiseptic-moisturising-soap-neem-eucalyptus-honey.jpg"
+   }
+  ],
+  "details": {
+   "description": "The BoroPlus Antiseptic and Moisturising Soap with Honey, Neem, and Eucalyptus is an all-in-one solution for skin protection. Containing the goodness of honey, neem, and eucalyptus, it cleanses, moisturises, and can kill up to 99.99% of germs and viruses. This way, it can not only heal and soften but also completely cleanse the skin. Plus, free from parabens, silicones, and artificial colourants, this soap is suitable for all skin types.",
+   "usageInstructions": "First, get your hands wet and then rub the BoroPlus Antiseptic and Moisturising Soap gently until lather forms.\nSpread the lather over your face and body, and then rinse off with water.",
+   "manufacturerName": "1. Forever Body Care Industries 2. Alliance World Manufacturing Ltd. Unit-II1. Khasra No.190",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Olive & Aloe Vera Glycerine Soap",
+  "handle": "olive-aloe-vera-glycerine-soap",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313565_1-boroplus-glycerine-bathing-bar-with-olive-aloe-vera.jpg"
+    },
+    "barcode": "8901248165013"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313565_1-boroplus-glycerine-bathing-bar-with-olive-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313565-2_1-boroplus-glycerine-bathing-bar-with-olive-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313565-3_1-boroplus-glycerine-bathing-bar-with-olive-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313565-4_1-boroplus-glycerine-bathing-bar-with-olive-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313565-5_1-boroplus-glycerine-bathing-bar-with-olive-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313565-6_1-boroplus-glycerine-bathing-bar-with-olive-aloe-vera.jpg"
+   }
+  ],
+  "details": {
+   "description": "Unveil the secret to beautiful skin with Boroplus Glycerine Bathing Bar - With Olive & Aloe Vera. This pure and gentle glycerine bar works wonders, leaving your skin moisturized and glowing every day. Specially crafted for delicate skin, it's enriched with the goodness of Olive & Aloe Vera extracts, combined with herbal moisturizers, to provide deep nourishment and a soothing, relaxing experience. Elevate your bathing ritual and embrace the luxury of naturally radiant and revitalized skin with the Boroplus Glycerine Bathing Bar.",
+   "usageInstructions": "First, wet your hands and then rub the BoroPlus Glycerine Bathing Bar gently between them until the soap lathers up. Massage the lather over your face & body before rinsing with water.",
+   "manufacturerName": "EMAMI Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Swiss Apple & Almond Oil Glycerine Soap",
+  "handle": "swiss-apple-almond-oil-glycerine-soap",
+  "vendor": "BoroPlus (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313564_1-boroplus-glycerine-bathing-bar-with-swiss-apple-almond-oil.jpg"
+    },
+    "barcode": "8901248165006"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313564_1-boroplus-glycerine-bathing-bar-with-swiss-apple-almond-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313564-2_1-boroplus-glycerine-bathing-bar-with-swiss-apple-almond-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313564-3_1-boroplus-glycerine-bathing-bar-with-swiss-apple-almond-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313564-4_1-boroplus-glycerine-bathing-bar-with-swiss-apple-almond-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313564-5_1-boroplus-glycerine-bathing-bar-with-swiss-apple-almond-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313564-6_1-boroplus-glycerine-bathing-bar-with-swiss-apple-almond-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313564-7_1-boroplus-glycerine-bathing-bar-with-swiss-apple-almond-oil.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the ultimate bathing luxury with Boroplus Glycerine Bathing Bar - With Swiss Apple & Almond Oil. This pure and gentle glycerine bar is designed to keep your skin moisturized and radiant day after day. Perfectly suited for delicate skin, it boasts the enriching benefits of Swiss Apple Extract and Almond Oil, providing deep nourishment and relaxation for your skin. Elevate your bathing experience and indulge in the goodness of this unique formula, leaving you with naturally glowing and pampered skin that you'll love.",
+   "usageInstructions": "First, wet your hands and then rub the BoroPlus Glycerine Bathing Bar gently between them until the soap lathers up. Massage the lather over your face & body before rinsing with water.",
+   "manufacturerName": "EMAMI Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

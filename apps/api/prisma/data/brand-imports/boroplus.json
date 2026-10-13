@@ -1,0 +1,126 @@
+{
+  "brand": "BoroPlus (Emami)",
+  "manufacturer": "Emami Ltd.",
+  "feed": "boroplus-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/boroplus/logo-e9611342.png",
+  "themeColor": "#5B2C83",
+  "themeColorSecondary": "#2E9E4A",
+  "namePrefix": "BoroPlus ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Antiseptic\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Gel\\ with\\ Vitamin\\ E$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Haldi\\ Chandan\\ Kesar\\ Aloe\\ Vera\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Organic\\ Aloe\\ Vera\\ Gel\\ with\\ Green\\ Tea$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Soft\\ Light\\ Moisturising\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Vasocare\\ Petroleum\\ Jelly$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Doodh\\ Badam\\ Kesar\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Icy\\ Cool\\ Prickly\\ Heat\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Neem\\ \\&\\ Shea\\ Butter\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Sandal\\ \\&\\ Neem\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem,\\ Tulsi\\ \\&\\ Aloe\\ Vera\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem,\\ Eucalyptus\\ \\&\\ Honey\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Olive\\ \\&\\ Aloe\\ Vera\\ Glycerine\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Swiss\\ Apple\\ \\&\\ Almond\\ Oil\\ Glycerine\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    }
+  ]
+}
