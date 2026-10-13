@@ -1,0 +1,70 @@
+{
+  "brand": "Clensta",
+  "manufacturer": "Clensta International Pvt. Ltd.",
+  "feed": "clensta-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/clensta/logo-af7a12fa.png",
+  "themeColor": "#0057A8",
+  "themeColorSecondary": "#F5D33F",
+  "namePrefix": "Clensta ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Barcelona\\ Men's\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Madrid\\ Men's\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Milan\\ Men's\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Rome\\ Men's\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Red\\ Aloe\\ Vera\\ Skin\\ Glow\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ SPF\\ 50\\ Daily\\ Glow\\ Sunscreen\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Beetroot\\ Lip\\ Balm\\ SPF\\ 30$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    }
+  ]
+}
