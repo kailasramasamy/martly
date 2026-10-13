@@ -1,0 +1,142 @@
+{
+  "brand": "Glade (SC Johnson)",
+  "manufacturer": "S. C. Johnson Products Pvt. Ltd.",
+  "feed": "glade-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/glade/logo-e13fbe5b.png",
+  "themeColor": "#0F3A7D",
+  "themeColorSecondary": "#3FB4E5",
+  "namePrefix": "Glade ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Air\\ Freshener\\ Gel\\ \\-\\ Floral\\ Bouquet$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Gel\\ \\-\\ Jasmine\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Gel\\ \\-\\ Lavender\\ Bliss$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Gel\\ \\-\\ Lemon\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Spray\\ \\-\\ Floral\\ Perfection$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Spray\\ \\-\\ Wild\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Hang\\ It\\ Fresh\\ Air\\ Freshener\\ \\-\\ Fruity\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Hang\\ It\\ Fresh\\ Air\\ Freshener\\ \\-\\ Lavender\\ Bliss$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Hang\\ It\\ Fresh\\ Air\\ Freshener\\ \\-\\ Lemon\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Hang\\ It\\ Fresh\\ Air\\ Freshener\\ \\-\\ Floral\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Fresh\\ Air\\ Freshener\\ Refill\\ \\-\\ Floral\\ Perfection$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Fresh\\ Air\\ Freshener\\ Refill\\ \\-\\ Lemon\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Fresh\\ Air\\ Freshener\\ Refill\\ \\-\\ Wild\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Fresh\\ Air\\ Freshener\\ Holder\\ Kit\\ \\-\\ Floral\\ Perfection$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Fresh\\ Air\\ Freshener\\ Holder\\ Kit\\ \\-\\ Lemon\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Touch\\ \\&\\ Fresh\\ Air\\ Freshener\\ Holder\\ Kit\\ \\-\\ Wild\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    }
+  ]
+}
