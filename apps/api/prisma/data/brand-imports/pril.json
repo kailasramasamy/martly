@@ -1,0 +1,56 @@
+{
+  "brand": "Pril (Henkel)",
+  "manufacturer": "Jyothy Labs Ltd.",
+  "feed": "pril-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pril/logo-9778d217.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#0072BC",
+  "namePrefix": "Pril ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Pril Perfect Dishwash Liquid - Lime": "Dishwash Liquid Gel - Lime"
+  },
+  "rules": [
+    {
+      "match": "^Dishwash\\ Bar\\ \\-\\ Lime$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Dishwash\\ Bar\\ \\-\\ Lime\\ \\+\\ Vinegar$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Dishwash\\ Liquid\\ Gel\\ \\-\\ Lime$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Dishwash\\ Liquid\\ Gel\\ \\-\\ Kraft\\ Mint$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Tamarind\\ Shine\\ Specialist\\ Dishwash\\ Liquid\\ Gel$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    }
+  ]
+}

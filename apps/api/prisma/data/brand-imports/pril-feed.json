@@ -1,0 +1,381 @@
+[
+ {
+  "title": "Dishwash Bar - Lime",
+  "handle": "dishwash-bar-lime",
+  "vendor": "Pril (Henkel)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100004488_13-pril-dishwash-bar-lime-vinegar.jpg"
+    },
+    "barcode": "8902102163770"
+   },
+   {
+    "title": "200g",
+    "price": "23",
+    "compare_at_price": "23",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262927_1-pril-dishwash-bar-lime-power-of-active-boosters-insta-clean.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40096517_5-pril-bar-tub.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100004488_13-pril-dishwash-bar-lime-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100004488-2_3-pril-dishwash-bar-lime-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100004488-3_3-pril-dishwash-bar-lime-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100004488-4_3-pril-dishwash-bar-lime-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100004488-5_3-pril-dishwash-bar-lime-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100004488-6_1-pril-dishwash-bar-lime-vinegar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262927_1-pril-dishwash-bar-lime-power-of-active-boosters-insta-clean.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40096517_5-pril-bar-tub.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your dishwashing experience with the Pril Lime Dish Wash Bar, a powerful and versatile cleaning solution. Infused with the natural degreasing properties of lime and the odour-eliminating power of vinegar, this bar effortlessly tackles the toughest stains and burnt marks, leaving your utensils sparkling clean and fresh. Enriched with active boosters, it provides superior grease removal, while the long-lasting and economical formula ensures you get the most value from each use. Treat your kitchen to the refreshing lime scent and the satisfaction of a spotless, gleaming clean.",
+   "manufacturerName": "Pril",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dishwash Bar - Lime + Vinegar",
+  "handle": "dishwash-bar-lime-vinegar",
+  "vendor": "Pril (Henkel)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40063489_5-pril-dishwash-bar-perfect.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40063489_5-pril-dishwash-bar-perfect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40063489-2_3-pril-dishwash-bar-perfect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40063489-3_3-pril-dishwash-bar-perfect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40063489-4_3-pril-dishwash-bar-perfect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40063489-5_3-pril-dishwash-bar-perfect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40063489-6_1-pril-dishwash-bar-perfect.jpg"
+   }
+  ],
+  "details": {
+   "description": "Pril Dishwash Bar - Perfect 200 g",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dishwash Liquid Gel - Lime",
+  "handle": "dishwash-liquid-gel-lime",
+  "vendor": "Pril (Henkel)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425ml",
+    "price": "116",
+    "compare_at_price": "116",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40031952_8-pril-dishwash-liquid-active-2x-lime.jpg"
+    },
+    "barcode": "8902102163695"
+   },
+   {
+    "title": "140ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40096522_9-pril-dishwash-liquid.jpg"
+    }
+   },
+   {
+    "title": "225ml",
+    "price": "52",
+    "compare_at_price": "52",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40031951_11-pril-dishwash-liquid-active-2x-lime.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/269256_9-pril-dishwash-liquid-lime-green.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100134172_7-pril-dishwash-liquid-lime.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224285_3-pril-dishwashing-liquid-lime.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "465",
+    "compare_at_price": "465",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/200327_5-pril-dishwash-liquid-lime-2x-active.jpg"
+    }
+   },
+   {
+    "title": "3L",
+    "price": "779",
+    "compare_at_price": "779",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40224286_3-pril-dishwashing-liquid-lime.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031952_8-pril-dishwash-liquid-active-2x-lime.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031952-2_4-pril-dishwash-liquid-active-2x-lime.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031952-3_3-pril-dishwash-liquid-active-2x-lime.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031952-4_3-pril-dishwash-liquid-active-2x-lime.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031952-5_3-pril-dishwash-liquid-active-2x-lime.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031952-6_3-pril-dishwash-liquid-active-2x-lime.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40096522_9-pril-dishwash-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031951_11-pril-dishwash-liquid-active-2x-lime.jpg"
+   }
+  ],
+  "details": {
+   "description": "Pril Dishwash Liquid Gel offers a powerful, grease-cutting formula that efficiently removes even the toughest stains, grease, and food residue, leaving your dishes sparkling clean. Its advanced formula provides a pleasant, gentle dishwashing experience, while the concentrated gel formula ensures great value for money - just a single spoon is enough to clean a sink full of dirty utensils. Pril's pH-neutral formula is soft on hands and can safely be used on delicate items and expensive crockery, including non-stick cookware, without leaving any scratches. Enjoy the refreshing lemon fragrance as you tackle even the most stubborn malodours in your tiffin boxes. With Pril's 2x active molecules, you can trust that your dishes will come out spotless every time.",
+   "usageInstructions": "1. For tough grease, apply Pril Lime onto a wet scrub-sponge and use directly on the utensil.\n2. For regular cleaning, dilute a teaspoonful (4 ml approx) of Pril Lime in a bowl (40 ml approx) of water. Dip the scrub-sponge in the solution and use.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dishwash Liquid Gel - Kraft Mint",
+  "handle": "dishwash-liquid-gel-kraft-mint",
+  "vendor": "Pril (Henkel)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425ml",
+    "price": "119",
+    "compare_at_price": "119",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40096523_7-pril-dishwash-kraft-perfect-active-2x.jpg"
+    }
+   },
+   {
+    "title": "225ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100210056_7-pril-dishwash-liquid-kraft.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "209",
+    "compare_at_price": "209",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130636_6-pril-dishwash-kraft.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40096523_7-pril-dishwash-kraft-perfect-active-2x.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40096523-2_5-pril-dishwash-kraft-perfect-active-2x.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40096523-3_2-pril-dishwash-kraft-perfect-active-2x.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40096523-4_2-pril-dishwash-kraft-perfect-active-2x.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40096523-5_2-pril-dishwash-kraft-perfect-active-2x.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40096523-6_2-pril-dishwash-kraft-perfect-active-2x.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100210056_7-pril-dishwash-liquid-kraft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130636_6-pril-dishwash-kraft.jpg"
+   }
+  ],
+  "details": {
+   "description": "Pril Liquid has a unique formula making it non-messy and gentle to the skin, thus leaving both your dishes as well as your hands clean, smooth, and pleasant. It effectively cuts through tough stains with 2X active molecules and leaves a pleasant and fresh fragrance.",
+   "usageInstructions": "1. For tough grease, apply Pril Kraft Mint directly on the utensil and scrub with a wet sponge.\n2. For regular cleaning, dilute a teaspoonful of Pril Kraft Mint in a bowl of water, dip the scrub sponge in the solution, and use.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tamarind Shine Specialist Dishwash Liquid Gel",
+  "handle": "tamarind-shine-specialist-dishwash-liquid-gel",
+  "vendor": "Pril (Henkel)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425ml",
+    "price": "119",
+    "compare_at_price": "119",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40173029_3-pril-liquid-dishwasher-tamarind.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40187111_3-pril-tamarind-dishwash-liquid.jpg"
+    }
+   },
+   {
+    "title": "225ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40173028_2-pril-liquid-dishwasher-tamarind.jpg"
+    }
+   },
+   {
+    "title": "750ml",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40173030_4-pril-liquid-dishwasher-tamarind.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "559",
+    "compare_at_price": "559",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255927_1-pril-tamarind-insta-clean-dishwash-liquid-shine-specialist-removes-tough-grease.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173029_3-pril-liquid-dishwasher-tamarind.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173029-2_5-pril-liquid-dishwasher-tamarind.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173029-3_1-pril-liquid-dishwasher-tamarind.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173029-4_1-pril-liquid-dishwasher-tamarind.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173029-5_1-pril-liquid-dishwasher-tamarind.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173029-6_1-pril-liquid-dishwasher-tamarind.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40187111_3-pril-tamarind-dishwash-liquid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40173028_2-pril-liquid-dishwasher-tamarind.jpg"
+   }
+  ],
+  "details": {
+   "description": "Pril Tamarind is the ultimate shine specialist, delivering remarkable radiance to all your kitchen utensils, from stainless steel cookware to delicate crockery. Boasting a distinctive, vibrant gold colour and a 10X concentrated formula, this unique dishwash liquid is a true game-changer in the world of utensil cleaners. Its innovative formula features visible active power boosters that burst into action while scrubbing, providing gentle yet effective abrasion to tackle even the toughest grease and grime with ease. The carefully crafted blend ensures your utensils are left sparkling clean without any damage to the surface. Pril Tamarind not only removes stubborn residues and food odours but also kills germs and bacteria, leaving your kitchen essentials hygienically fresh. Experience the unparalleled shine and effortless cleaning power of Pril Tamarind, the ultimate Shine Specialist for all your utensil needs.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "usageInstructions": "1. For tough grease, apply Pril Tamarind onto a wet scrub-sponge and use directly on the utensil.\n2. For regular cleaning, dilute a teaspoonful (4 ml approx) of Pril Tamarind in a bowl (40 ml approx) of water. Dip the scrub-sponge in the solution and use.",
+   "countryOfOrigin": "India"
+  }
+ }
+]
