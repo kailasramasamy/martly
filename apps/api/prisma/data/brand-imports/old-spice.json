@@ -1,0 +1,160 @@
+{
+  "brand": "Old Spice (P&G)",
+  "manufacturer": "Procter & Gamble Home Products Pvt. Ltd.",
+  "feed": "old-spice-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/old-spice/logo-2b79e599.png",
+  "themeColor": "#B3121F",
+  "themeColorSecondary": "#1B3F94",
+  "namePrefix": "Old Spice ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Old Spice After Shave Lotion - Original": "Original After Shave Lotion"
+  },
+  "rules": [
+    {
+      "match": "^Original\\ After\\ Shave\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Original\\ After\\ Shave\\ Lotion\\ Atomizer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Musk\\ After\\ Shave\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Lime\\ After\\ Shave\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Lime\\ After\\ Shave\\ Lotion\\ Atomizer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Lionpride\\ After\\ Shave\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Lionpride\\ After\\ Shave\\ Lotion\\ Atomizer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Original\\ No\\ Gas\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Amber\\ No\\ Gas\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Krakengard\\ No\\ Gas\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Lionpride\\ No\\ Gas\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Nomad\\ No\\ Gas\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Timber\\ No\\ Gas\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Wolfthorn\\ No\\ Gas\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Musk\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Lime\\ Lather\\ Shaving\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Musk\\ Lather\\ Shaving\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Original\\ Pre\\ Shave\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    }
+  ]
+}
