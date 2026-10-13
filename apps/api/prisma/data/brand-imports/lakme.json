@@ -1,0 +1,558 @@
+{
+  "brand": "Lakmé (HUL)",
+  "manufacturer": "Hindustan Unilever Limited",
+  "feed": "lakme-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lakme/logo-9f9acee0.png",
+  "themeColor": "#000000",
+  "themeColorSecondary": "#C2185B",
+  "namePrefix": "Lakmé ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Peach\\ Milk\\ Creme\\ Moisturiser\\ With\\ 2%\\ Pro\\ Ceramide\\ \\&\\ Peptide$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Peach\\ Milk\\ Light\\ Moisturiser\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Peach\\ Milk\\ Intense\\ Moisturiser\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Peach\\ Milk\\ Ultra\\-Light\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Peach\\ Milk\\ Icy\\ Sorbet\\ Gel\\ Instant\\ Cooling\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Peach\\ Milk\\ SPF\\ 30\\ Sunscreen\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Peach\\ Milk\\ SPF\\ 50\\ Sunscreen\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Sun\\ Expert\\ Matte\\ Sunscreen\\ SPF\\ 50\\ PA\\+\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Sun\\ Expert\\ Gel\\ Sunscreen\\ SPF\\ 50\\ PA\\+\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Sun\\ Expert\\ Priming\\ Dry\\ Touch\\ Sunscreen\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Sun\\ Expert\\ Dry\\ Matte\\ Fluid\\ Sunscreen\\ SPF\\ 50\\ PA\\+\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sunscreen\\ Fluid\\ SPF\\ 50\\ PA\\+\\+\\+\\+\\ with\\ 1%\\ Niacinamide\\ \\&\\ Ceramide$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Expert\\ SPF\\ 50\\ Water\\ Light\\ Sunscreen\\ Gel\\ with\\ 5%\\ Niacinamide\\ \\&\\ Vit\\ C$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Expert\\ SPF\\ 50\\ Aqua\\ Sun\\ Gel\\ with\\ 5%\\ Hyaluronic\\ Complex$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Expert\\ Invisible\\ Sunstick\\ SPF\\ 50\\+\\ PA\\+\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Expert\\ Super\\ Matte\\ Sunscreen\\ Lotion\\ SPF\\ 25\\ PA\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Expert\\ Super\\ Matte\\ Sunscreen\\ Lotion\\ SPF\\ 30\\ PA\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Expert\\ Ultra\\ Matte\\ Lotion\\ SPF\\ 30\\ PA\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Expert\\ After\\ Sun\\ Cooling\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Sun\\ Expert\\ De\\ Tan\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Vitamin\\ C\\+\\ Day\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Vitamin\\ C\\+\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Vit\\ C\\+\\ Under\\ Eye\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Vit\\ C\\+\\ Overnight\\ Sleeping\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Vitamin\\ C\\+\\ Clay\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Matte\\ Moist\\ Mattifying\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Naturale\\ Aloe\\ Aqua\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Naturale\\ Day\\ Creme\\ SPF\\ 20$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Naturale\\ Night\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^9\\ To\\ 5\\ Naturale\\ Aloe\\ Cleansing\\ Wipes$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Vit\\ C\\ Brilliance\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Argan\\ Oil\\ Radiance\\ Oil\\-In\\-Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Argan\\ Oil\\ Radiance\\ Night\\ Revival\\ Eye\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Argan\\ Oil\\ Radiance\\ Overnight\\ Oil\\ In\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Fresh\\ Life\\ Day\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Fresh\\ Life\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Pore\\ Fix\\ Toner$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Youth\\ Infinity\\ Skin\\ Firming\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Retinol\\ Advanced\\ Renewal\\ Night\\ Gel\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Retinol\\ Advanced\\ Renewal\\ Day\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Radiance\\ Day\\ Gel\\ Creme\\ with\\ 10%\\ Niacinamide$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Radiance\\ Night\\ Creme\\ With\\ 5%\\ Niacinamide\\ Complex$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Radiance\\ Serum\\ With\\ 15%\\ Niacinamide$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Radiance\\ Brightening\\ Facewash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Dew\\ Drama\\ Facewash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Dew\\ Drama\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Dew\\ Drama\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Lumi\\ Smooth\\ 8%\\ AHA\\+\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Lumi\\-Smooth\\ AHA\\+\\ Facewash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Lumi\\-Smooth\\ AHA\\+\\ Gel\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Illuminate\\ Day\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Illuminate\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Illuminate\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Illuminate\\ Facewash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Hyaluronic\\ Dewy\\ Facewash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Hyaluronic\\ Dewy\\ Gel\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Hyaluronic\\ Dewy\\ Overnight\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Hyaluronic\\ Dewy\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Gentle\\ \\&\\ Soft\\ Deep\\ Pore\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Micellar\\ Pure\\ Facewash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Micellar\\ Pure\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Skin\\ Gloss\\ Winter\\ Intense\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Skin\\ Solutions\\ Brightening\\ Sheet\\ Mask\\ With\\ Niacinamide$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Skin\\ Solutions\\ Hydrating\\ Sheet\\ Mask\\ With\\ Hyaluronic\\ Acid$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Lip\\ Love\\ Care\\ Stick\\ SPF\\ 15$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Love\\ Gelato\\ Chapstick\\ Bubblegum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Love\\ Lip\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Love\\ Lip\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    }
+  ]
+}
