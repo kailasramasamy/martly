@@ -1,0 +1,22 @@
+{
+  "brand": "Band-Aid (J&J)",
+  "manufacturer": "Johnson & Johnson Pvt. Ltd.",
+  "feed": "band-aid-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/band-aid/logo-b2e42546.png",
+  "themeColor": "#E4002B",
+  "themeColorSecondary": "#2B3990",
+  "namePrefix": "Band-Aid ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Antiseptic\\ Washproof\\ Bandages$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    }
+  ]
+}

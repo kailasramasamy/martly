@@ -1,0 +1,40 @@
+[
+ {
+  "title": "Antiseptic Washproof Bandages",
+  "handle": "antiseptic-washproof-bandages",
+  "vendor": "Band-Aid (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004209_1-johnson-johnson-band-aid-washproof.jpg"
+    },
+    "barcode": "8901012121719"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004209_1-johnson-johnson-band-aid-washproof.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004209-2_1-johnson-johnson-band-aid-washproof.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004209-3_1-johnson-johnson-band-aid-washproof.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004209-4_1-johnson-johnson-band-aid-washproof.jpg"
+   }
+  ],
+  "details": {
+   "description": "Johnsons band aid is stretchable and comfortable fabric moves with you to fit better. it made up of extra tough durable fabric. it provides extra flexibility.",
+   "manufacturerName": "Johnson & Johnson Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]
