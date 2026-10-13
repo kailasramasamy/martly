@@ -1,0 +1,166 @@
+{
+  "brand": "Cupid",
+  "manufacturer": "Cupid Limited",
+  "feed": "cupid-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cupid/logo-cd405c03.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#D4A537",
+  "namePrefix": "Cupid ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Rizz\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Active\\ Rizz\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Pride\\ Rizz\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Angel\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Rizz\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Sensual\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Angel\\ Crush\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Dotted\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Dotted\\ Extra\\ Time\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Flavoured\\ Dotted\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Super\\ Dotted\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Angel\\ Female\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Face\\ Wash\\ With\\ AHA\\ \\&\\ BHA$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Face\\ Wash\\ With\\ Blueberry\\ Extract$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Face\\ Wash\\ With\\ Papaya\\ Extract$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Salicylic\\ Acid\\ Foaming\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Cupisafe\\ Reusable\\ Menstrual\\ Cup\\ Small$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Cupisafe\\ Reusable\\ Menstrual\\ Cup\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Cupisafe\\ Reusable\\ Menstrual\\ Cup\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    }
+  ]
+}
