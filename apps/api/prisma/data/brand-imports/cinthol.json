@@ -1,0 +1,174 @@
+{
+  "brand": "Cinthol (Godrej)",
+  "manufacturer": "Godrej Consumer Products Ltd.",
+  "feed": "cinthol-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cinthol/logo-f010a5cf.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#0B4EA2",
+  "namePrefix": "Cinthol ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Original\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lime\\ Refreshing\\ Deo\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cool\\ Menthol\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Health\\+\\ Intense\\ Deo\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Original\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Lime\\ Refreshing\\ Deo\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Cool\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Confidence\\+\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Insta\\ Deo\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Original\\ Foam\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Lime\\ Foam\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Cool\\ Foam\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Sandal\\ Foam\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Head\\ To\\ Toe\\ Wash\\ Active\\ Impact$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Head\\ To\\ Toe\\ Wash\\ Cool\\ Wave$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Head\\ To\\ Toe\\ Wash\\ Fresh\\ Burst$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Energy\\ Deostick\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Intense\\ Deostick\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Rush\\ Deostick\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Swirl\\ Deostick\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    }
+  ]
+}
