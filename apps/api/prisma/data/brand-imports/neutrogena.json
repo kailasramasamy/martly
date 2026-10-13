@@ -1,0 +1,254 @@
+{
+  "brand": "Neutrogena (J&J)",
+  "manufacturer": "Kenvue (Johnson & Johnson Consumer India)",
+  "feed": "neutrogena-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/neutrogena/logo-3796c31b.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#0072CE",
+  "namePrefix": "Neutrogena ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ultra\\ Sheer\\ Dry\\-Touch\\ Sunblock\\ SPF\\ 50\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sheer\\ Zinc\\ Dry\\ Touch\\ Sunscreen\\ SPF\\ 50\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Hydro\\ Boost\\ Water\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Hydro\\ Boost\\ Hyaluronic\\ Acid\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Hydro\\ Boost\\ Hyaluronic\\ Acid\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Hydro\\ Boost\\ 3D\\ Sleeping\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Hydro\\ Boost\\ Clear\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Hydro\\ Boost\\ Water\\ Gel\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Bright\\ Boost\\ Gel\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Bright\\ Boost\\ Illuminating\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Bright\\ Boost\\ Resurfacing\\ Polish$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Deep\\ Clean\\ Facial\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Deep\\ Clean\\ Foaming\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Deep\\ Clean\\ Purifying\\ Clay\\ Cleanser\\ \\&\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Deep\\ Clean\\ Blackhead\\ Eliminating\\ Daily\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Oil\\-Free\\ Acne\\ Wash\\ Facial\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Oil\\-Free\\ Acne\\ Wash\\ Pink\\ Grapefruit\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Oil\\-Free\\ Moisture\\ Combination\\ Skin$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Gentle\\ Creamy\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Gentle\\ Foaming\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Gentle\\ Daily\\ Moisturiser\\ SPF\\ 15$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Rapid\\ Wrinkle\\ Repair\\ Day\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Rapid\\ Wrinkle\\ Repair\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Visible\\ Repair\\ Eye\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Visible\\ Repair\\ Regenerating\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Visible\\ Repair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Norwegian\\ Formula\\ Body\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Norwegian\\ Formula\\ Hand\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Norwegian\\ Formula\\ Daily\\ Lip\\ Balm\\ SPF\\ 15$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Rainbath\\ Refreshing\\ Shower\\ \\&\\ Bath\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    }
+  ]
+}
