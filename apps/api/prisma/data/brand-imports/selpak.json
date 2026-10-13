@@ -1,0 +1,158 @@
+{
+  "brand": "Selpak (Eczacıbaşı)",
+  "manufacturer": "Eczacıbaşı Tüketim Ürünleri",
+  "feed": "selpak-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/selpak/logo-295be1ec.png",
+  "themeColor": "#1B2A8C",
+  "themeColorSecondary": "#E6007E",
+  "namePrefix": "Selpak ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Professional\\ 1/8\\ Fold\\ Paper\\ Napkins\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Professional\\ Premium\\ Luncheon\\ Napkins\\ \\-\\ 2\\ Ply,\\ 33\\ x\\ 33\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Professional\\ Mini\\ Napkins\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Super\\ Soft\\ Luncheon\\ Napkins\\ \\-\\ 33\\ x\\ 33\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Deluxe\\ Printed\\ Napkins$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Classic\\ Pocket\\ Tissues$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Floral\\ Fragrance\\ Pocket\\ Tissues$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Lotioned\\ Pocket\\ Tissues$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Menthol\\ Fragrance\\ Pocket\\ Tissues$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Facial\\ Box\\ Tissues$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Facial\\ Box\\ Tissues\\ \\-\\ Mini$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Facial\\ Box\\ Tissues\\ \\-\\ Boutique\\ Cube$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Deluxe\\ Bamboo\\ Enriched\\ Paper\\ Towel\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Extra\\ Paper\\ Towel\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Super\\ Absorbent\\ Paper\\ Towel\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Deluxe\\ Cotton\\ Enriched\\ Toilet\\ Paper\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Super\\ Soft\\ Toilet\\ Paper\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Perfumed\\ Toilet\\ Paper\\ \\-\\ 3\\ Ply,\\ Powder\\ Scented$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    }
+  ]
+}
