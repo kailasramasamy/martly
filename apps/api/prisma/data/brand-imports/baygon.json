@@ -1,0 +1,38 @@
+{
+  "brand": "Baygon (SC Johnson)",
+  "manufacturer": "S. C. Johnson Products Pvt. Ltd.",
+  "feed": "baygon-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/baygon/logo-5fb8d5c7.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#00964B",
+  "namePrefix": "Baygon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Max\\ Cockroach\\ Killer\\ Spray\\ \\-\\ Deep\\ Reach$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Max\\ Mosquito\\ \\&\\ Fly\\ Killer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Max\\ Mosquito\\ \\&\\ Fly\\ Killer\\ Spray\\ \\-\\ Lime$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    }
+  ]
+}
