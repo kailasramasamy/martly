@@ -1,0 +1,606 @@
+{
+  "brand": "L'Oreal Paris",
+  "manufacturer": "L'Oréal India Pvt. Ltd.",
+  "feed": "loreal-paris-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/loreal-paris/logo-eec69f30.png",
+  "themeColor": "#000000",
+  "themeColorSecondary": "#B8975A",
+  "namePrefix": "L'Oreal Paris ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^6\\ Oil\\ Nourish\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^6\\ Oil\\ Nourish\\ Rapid\\ Reviver\\ Deep\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Color\\ Protect\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Color\\ Protect\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Dream\\ Lengths\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Dream\\ Lengths\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Dream\\ Lengths\\ No\\ Haircut\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Extraordinary\\ Oil\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Extraordinary\\ Clay\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Extraordinary\\ Clay\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Extraordinary\\ Clay\\ Rapid\\ Reviver\\ Deep\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Extraordinary\\ Oil\\ Nourishing\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Extraordinary\\ Oil\\ Nourishing\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Fall\\ Resist\\ 3X\\ Anti\\-Hair\\ Fall\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Fall\\ Resist\\ 3X\\ Anti\\-Hair\\ Fall\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Fall\\ Resist\\ Anti\\-Hair\\ Fall\\ Serum\\ with\\ 1\\.5%\\ Aminexil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hyaluron\\ Moisture\\ 72H\\ Moisture\\ Filling\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hyaluron\\ Moisture\\ 72H\\ Moisture\\ Sealing\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Hyaluron\\ Moisture\\ 72H\\ Hydra\\ Filling\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hyaluron\\ Pure\\ 72H\\ Purifying\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hyaluron\\ Pure\\ 72H\\ Rehydrating\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Gloss\\ Extra\\ Gloss\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Gloss\\ Shine\\ Sealing\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Gloss\\ Extension\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Gloss\\ Ultra\\ Gloss\\ Acidifier$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Elnett\\ Strong\\ Hold\\ Hairspray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Smooth\\ Intense\\ Instant\\ Smoothing\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Total\\ Repair\\ 5\\ Repairing\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Total\\ Repair\\ 5\\ Restoring\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Total\\ Repair\\ 5\\ Rapid\\ Reviver\\ Deep\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Total\\ Repair\\ 5\\ Masque$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Total\\ Repair\\ 5\\ Instant\\ Smoothing\\ Oil\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Casting\\ Creme\\ Gloss\\ Hair\\ Colour\\ \\-\\ 530\\ Praline\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Casting\\ Creme\\ Gloss\\ Hair\\ Colour\\ \\-\\ 665\\ Raspberry$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Casting\\ Creme\\ Gloss\\ Hair\\ Colour\\ Small\\ Pack\\ \\-\\ 316\\ Burgundy$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Casting\\ Creme\\ Gloss\\ Hair\\ Colour\\ Small\\ Pack\\ \\-\\ 300\\ Darkest\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Creme\\ Hair\\ Colour\\ \\-\\ 3\\.16\\ Burgundy$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Excellence\\ Creme\\ Triple\\ Care\\ Hair\\ Colour\\ \\-\\ 6\\.34\\ Intense\\ Golden\\ Auburn$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Magic\\ Retouch\\ Root\\ Touch\\ Up\\ Spray\\ \\-\\ 2\\ Dark\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Bright\\ 8%\\ Face\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Bright\\ Dark\\ Circle\\ Eye\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Bright\\ Glowing\\ Day\\ Cream\\ SPF\\ 17$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Bright\\ Glowing\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Bright\\ Instant\\ Glowing\\ Serum\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Glycolic\\ Bright\\ Glowing\\ Daily\\ Foam\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Dermo\\ Expertise\\ Lip\\ \\&\\ Eye\\ Makeup\\ Remover$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Men\\ Expert\\ White\\ Activ\\ Charcoal\\ Foam\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ 1\\.5%\\ Hyaluronic\\ Acid\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Crystal\\ Fresh\\ Hydrating\\ Gel\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Crystal\\ Micro\\-Essence$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Crystal\\ Micro\\-Essence\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Crystal\\ Purifying\\ Micellar\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Hyaluronic\\ Acid\\ Fresh\\ Mix\\ Serum\\ Sheet\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Hyaluronic\\ Acid\\ Plumping\\ Day\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Hyaluronic\\ Acid\\ Eye\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Hyaluronic\\ Acid\\ Hydrating\\ Gel\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Hyaluronic\\ Acid\\ Oil\\ Control\\ Replumping\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Laser\\ X3\\ Power\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Laser\\ X3\\ Renewing\\ Anti\\-Ageing\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Moisturizing\\ Day\\ Cream\\ SPF\\ 35$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Moisturizing\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Revitalift\\ Triple\\ Action\\ Night\\ Cream\\-Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Skin\\ Perfect\\ 20\\+\\ Anti\\-Imperfections\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Skin\\ Perfect\\ 20\\+\\ Facial\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Skin\\ Perfect\\ 30\\+\\ Anti\\-Fine\\ Lines\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Skin\\ Perfect\\ 30\\+\\ Facial\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Skin\\ Perfect\\ 40\\+\\ Anti\\-Ageing\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^UV\\ Defender\\ Serum\\ Protector\\ SPF\\ 50\\ \\-\\ Bright\\ \\&\\ Clear$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^UV\\ Defender\\ Serum\\ Protector\\ SPF\\ 50\\ \\-\\ Correct\\ \\&\\ Protect$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^UV\\ Defender\\ Serum\\ Protector\\ SPF\\ 50\\ \\-\\ Matte\\ \\&\\ Fresh$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^UV\\ Defender\\ Serum\\ Protector\\ SPF\\ 50\\ \\-\\ Moist\\ \\&\\ Fresh$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^White\\ Perfect\\ Day\\ Cream\\ SPF\\ 17$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^White\\ Perfect\\ Clinical\\ Day\\ Cream\\ SPF\\ 19$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^White\\ Perfect\\ Milky\\ Foam\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    }
+  ]
+}

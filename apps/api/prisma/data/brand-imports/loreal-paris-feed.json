@@ -1,0 +1,4046 @@
+[
+ {
+  "title": "6 Oil Nourish Shampoo",
+  "handle": "6-oil-nourish-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75ml",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417_8-loreal-paris-6-oil-nourish-shampoo.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007418_12-loreal-paris-6-oil-nourish-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417_8-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417-2_11-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417-3_11-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417-4_11-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417-5_11-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417-6_4-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417-7_4-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007417-8_4-loreal-paris-6-oil-nourish-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Wet your hair and take sufficient amount of shampoo and mix it with water.\nPour it over your hair and keep it for at least 5 minutes.\nWash your hair thoroughly with water.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "6 Oil Nourish Rapid Reviver Deep Conditioner",
+  "handle": "6-oil-nourish-rapid-reviver-deep-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628_6-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+    },
+    "barcode": "8901526565818"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628_6-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628-2_6-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628-3_6-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628-4_6-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628-5_6-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628-6_2-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628-7_6-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184628-8_1-loreal-paris-rapid-reviver-6-oil-nourish-deep-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Wash your hair with shampoo and rinse out.\n2. Use conditioner on wet hair and focus on the lengths and ends of your hair.\n3. Leave the conditioner in your hair for 1-3 minutes.\n4. Rinse with room temperature or cold water till no residue is left in the hair.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Color Protect Shampoo",
+  "handle": "color-protect-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75ml",
+    "price": "89",
+    "compare_at_price": "89",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003908_9-loreal-paris-color-protect-shampoo.jpg"
+    },
+    "barcode": "8901526102518"
+   },
+   {
+    "title": "180ml",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/260642_14-loreal-paris-color-protect-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274350_11-loreal-paris-color-protect-shampoo.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "985",
+    "compare_at_price": "985",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40187204_6-loreal-paris-color-protect-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003908_9-loreal-paris-color-protect-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003908-2_9-loreal-paris-color-protect-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003908-3_9-loreal-paris-color-protect-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003908-4_9-loreal-paris-color-protect-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003908-5_9-loreal-paris-color-protect-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003908-6_1-loreal-paris-color-protect-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003908-7_1-loreal-paris-color-protect-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260642_14-loreal-paris-color-protect-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "description": "Colour Protect shampoo by L'Oreal Paris nourishes the hair and transforms its surface, keeping the hair protected and prolonging the colour radiance. The Colour Protect formula with UV filter- Light Reflecting System combines an active nourishing ingredient and filters for colour-treated hair. It nourishes the hair and transforms its surface so your hair feels silky to touch. Colour Protect Shampoo also helps protect the hair fibre from external aggressions and accentuates the colour’s radiance.\nL’Oréal Paris offers hair conditioners for every concern and hair type. Whether you’re looking to moisturise dry hair, want a conditioner for coloured hair, or want to help repair damaged hair with a deep conditioner, we have the hair conditioner - and shampoo - that best fits your needs!",
+   "usageInstructions": "Wet your hair and take sufficient amount of shampoo and mix it with water.\nPour it over your hair and keep it for at least 5 minutes.\nWash your hair thoroughly with water.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Color Protect Conditioner",
+  "handle": "color-protect-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "71.5ml",
+    "price": "109",
+    "compare_at_price": "109",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/260645_14-loreal-paris-color-protect-conditioner.jpg"
+    },
+    "barcode": "8901526101566"
+   },
+   {
+    "title": "180ml",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/260641_10-loreal-paris-color-protect-conditioner.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260645_14-loreal-paris-color-protect-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260645-2_10-loreal-paris-color-protect-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260645-3_10-loreal-paris-color-protect-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260645-4_10-loreal-paris-color-protect-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260645-5_10-loreal-paris-color-protect-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260645-6_2-loreal-paris-color-protect-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260645-7_1-loreal-paris-color-protect-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260641_10-loreal-paris-color-protect-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "description": "Colour Protect Conditioner by L'Oreal Paris nourishes the hair and transforms its surface, keeping the hair protected and prolonging the colour radiance. The Colour Protect formula with UV filter- Light Reflecting System combines an active nourishing ingredient and filters for colour treated hair. It nourishes the hair and transforms its surface so your hair feels silky to touch. Colour Protect Conditioner also helps protect the hair fibre from external aggressions and accentuates the colour's radiance. L'Oréal Paris offers hair conditioners for every concern and hair type. Whether you're looking to moisturise dry hair, want a conditioner for coloured hair, or want to help repair damaged hair with a deep conditioner, we have the hair conditioner - and shampoo - that best fits your needs.",
+   "usageInstructions": "1. Wash your hair with shampoo and rinse out.\n2. Use conditioner on wet hair and focus on the lengths and ends of your hair.\n3. Leave the conditioner in your hair for 1-3 minutes.\n4. Rinse with room temperature or cold water till no residue is left in the hair.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dream Lengths Shampoo",
+  "handle": "dream-lengths-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929_3-loreal-paris-dream-lengths-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211930_3-loreal-paris-dream-lengths-shampoo.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "879",
+    "compare_at_price": "879",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211931_3-loreal-paris-dream-lengths-shampoo.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1409",
+    "compare_at_price": "1409",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211928_3-loreal-paris-dream-lengths-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929_3-loreal-paris-dream-lengths-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929-2_3-loreal-paris-dream-lengths-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929-3_3-loreal-paris-dream-lengths-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929-4_3-loreal-paris-dream-lengths-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929-5_3-loreal-paris-dream-lengths-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929-6_3-loreal-paris-dream-lengths-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929-7_1-loreal-paris-dream-lengths-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211929-8_1-loreal-paris-dream-lengths-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Loreal India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dream Lengths Conditioner",
+  "handle": "dream-lengths-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "71.5ml",
+    "price": "109",
+    "compare_at_price": "109",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211926_3-loreal-paris-dream-lengths-conditioner.jpg"
+    },
+    "barcode": "8901526592449"
+   },
+   {
+    "title": "180ml",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211925_3-loreal-paris-dream-lengths-conditioner.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211926_3-loreal-paris-dream-lengths-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211926-2_3-loreal-paris-dream-lengths-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211926-3_3-loreal-paris-dream-lengths-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211926-4_3-loreal-paris-dream-lengths-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211926-5_3-loreal-paris-dream-lengths-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211926-6_3-loreal-paris-dream-lengths-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211926-7_1-loreal-paris-dream-lengths-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211925_3-loreal-paris-dream-lengths-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "description": "Loreal Paris - Save the last 3 cms of your hair and get the long hair of your dreams with the new L'Oreal Paris Dream Lengths Detangling Conditioner. A perfect conditioner for dry and damaged hair, the Dream Lengths Detangling Conditioner instantly detangles long hair for 5X smoother hair with 50% less breakage. Get rid of knots and tangles and achieve all your goals of soft, smooth, and shiny hair with this L'Oreal Conditioner. The vegetal keratin and vitamin B3 and B5 in this conditioner seals damaged tips while castor oil prevents hair breakage and promotes healthy growth for longer and stronger hair – a great conditioner for hair growth! Shake, twist, and tie your hair without any worry with the new L'Oreal Dream Lengths Detangling Conditioner. For best results reduced hair breakage, use after the L'Oreal Dream Lengths Restoring Shampoo and follow up with the L'Oreal Dream Lengths No Haircut Cream (Leave-In Cream).",
+   "usageInstructions": "Apply to wet hair from lengths to tips after shampooing. Leave the conditioner on for only 1 minute and rinse thoroughly.",
+   "manufacturerName": "Loreal India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dream Lengths No Haircut Cream",
+  "handle": "dream-lengths-no-haircut-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "549",
+    "compare_at_price": "549",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237099_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-nourishes-hair-sulfate-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447-2_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447-3_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447-4_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447-5_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447-6_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447-7_2-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240447-8_1-loreal-paris-dream-lengths-no-haircut-cream-leave-in-seals-split-ends-tips-paraben-free.jpg"
+   }
+  ],
+  "details": {
+   "description": "Get the long hair of your dreams with the new L’Oréal Paris Dream Lengths No Haircut Cream (Leave-In) seals your split ends, strengthens your hair lengths and saves your last 3 cm of hair. This sulphate and paraben-free hair cream not only gives you nourishment and tips but can be used as a heat protectant cream that protects your hair from heat damage up to 180 degrees.\nNo Haircut Cream infused with vegetal keratin and vitamin B3 and B5 seals damaged tips while castor oil prevents hair breakage and promotes healthy growth for longer and stronger hair – a perfect leave-in cream for split ends and damaged hair! The versatile L’Oréal Hair Cream will give you soft and smooth hair every time. Solve all your hair-cutting dilemmas and save yourself from trim with the new L’Oréal Dream Lengths No Haircut Cream.",
+   "usageInstructions": "Treat your hair with Dream Lengths No Haircut Cream.\nApply on damp hair from lengths to tips, leave-in, and style as usual.",
+   "manufacturerName": "Loreal Paris By Pt. Yasulor Indonesia",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Extraordinary Oil Serum",
+  "handle": "extraordinary-oil-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917_4-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+    },
+    "barcode": "6923700994957"
+   },
+   {
+    "title": "100ml",
+    "price": "729",
+    "compare_at_price": "729",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200529_7-loreal-paris-extraordinary-oil-serum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917_4-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917-2_4-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917-3_4-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917-4_4-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917-5_4-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917-6_4-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917-7_4-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211917-8_2-loreal-paris-elseve-extraordinary-oil-serum.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Use before or after shampoo.\n2. Use as a serum for hair straightening.\n3. Use to provide hair protection before hairstyling.\n4. Or use as an overnight hair treatment.",
+   "manufacturerName": "BEAUTYCOS",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Extraordinary Clay Shampoo",
+  "handle": "extraordinary-clay-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75ml",
+    "price": "79",
+    "compare_at_price": "79",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851_7-loreal-paris-extraordinary-clay-shampoo.jpg"
+    },
+    "barcode": "8901526513390"
+   },
+   {
+    "title": "180ml",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40118850_10-loreal-paris-extraordinary-clay-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "379",
+    "compare_at_price": "379",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40118849_9-loreal-paris-extraordinary-clay-shampoo.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "859",
+    "compare_at_price": "859",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40118848_9-loreal-paris-extraordinary-clay-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851_7-loreal-paris-extraordinary-clay-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851-2_10-loreal-paris-extraordinary-clay-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851-3_10-loreal-paris-extraordinary-clay-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851-4_10-loreal-paris-extraordinary-clay-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851-5_9-loreal-paris-extraordinary-clay-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851-6_9-loreal-paris-extraordinary-clay-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851-7_1-loreal-paris-extraordinary-clay-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40118851-8_1-loreal-paris-extraordinary-clay-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Wet your hair and take sufficient amount of shampoo and mix it with water.\nPour it over your hair and keep it for at least 5 minutes.\nWash your hair thoroughly with water.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Extraordinary Clay Conditioner",
+  "handle": "extraordinary-clay-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "71.5ml",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974_8-loreal-paris-extraordinary-clay-conditioner.jpg"
+    },
+    "barcode": "8901526513338"
+   },
+   {
+    "title": "180ml",
+    "price": "229",
+    "compare_at_price": "229",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40118852_9-loreal-paris-extraordinary-clay-conditioner.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974_8-loreal-paris-extraordinary-clay-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974-2_10-loreal-paris-extraordinary-clay-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974-3_10-loreal-paris-extraordinary-clay-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974-4_10-loreal-paris-extraordinary-clay-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974-5_10-loreal-paris-extraordinary-clay-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974-6_10-loreal-paris-extraordinary-clay-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974-7_2-loreal-paris-extraordinary-clay-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147974-8_1-loreal-paris-extraordinary-clay-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Wash your hair with shampoo and rinse out. Use conditioner on wet hair and focus on the lengths and ends of your hair.\nLeave the conditioner in your hair for 1-3 minutes.\nRinse with room temperature or cold water till no residue is left in the hair.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Extraordinary Clay Rapid Reviver Deep Conditioner",
+  "handle": "extraordinary-clay-rapid-reviver-deep-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627_6-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+    },
+    "barcode": "8901526565825"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627_6-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627-2_5-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627-3_5-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627-4_5-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627-5_5-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627-6_5-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627-7_5-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184627-8_1-loreal-paris-rapid-reviver-extraordinary-clay-deep-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Rapid Reviver range of Deep Conditioners help revive hair in just seconds! It is the 1st daily conditioner that provides 2X more hydration to your hair. L'Oreal Paris Rapid Reviver Extraordinary Clay is infused with the power of pure clay serum which helps hydrate oily hair/scalp with 2 times more visible results.",
+   "usageInstructions": "Wash your hair with shampoo and rinse out. Use conditioner on wet hair and focus on the lengths and ends of your hair.\nLeave the conditioner in your hair for 1-3 minutes.\nRinse with room temperature or cold water till no residue is left in the hair.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Extraordinary Oil Nourishing Shampoo",
+  "handle": "extraordinary-oil-nourishing-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007419_12-loreal-paris-6-oil-nourish-shampoo.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "879",
+    "compare_at_price": "879",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007420_13-loreal-paris-6-oil-nourish-shampoo.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1250",
+    "compare_at_price": "1250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200530_8-loreal-paris-6-oil-nourish-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007419_12-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007419-2_1-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007419-3_1-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007419-4_1-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007419-5_1-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007419-6_1-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007419-7_1-loreal-paris-6-oil-nourish-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007420_13-loreal-paris-6-oil-nourish-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Massage into wet hair\nLather and rinse thoroughly.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Extraordinary Oil Nourishing Conditioner",
+  "handle": "extraordinary-oil-nourishing-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "71.5ml",
+    "price": "109",
+    "compare_at_price": "109",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415_12-loreal-paris-6-oil-nourish-conditioner.jpg"
+    },
+    "barcode": "8901526103386"
+   },
+   {
+    "title": "175ml",
+    "price": "239",
+    "compare_at_price": "239",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007416_16-loreal-paris-6-oil-nourish-conditioner.jpg"
+    }
+   },
+   {
+    "title": "386ml",
+    "price": "569",
+    "compare_at_price": "569",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323436_3-loreal-paris-extraordinary-oil-nourishing-conditioner-for-dry-dull-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415_12-loreal-paris-6-oil-nourish-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415-2_13-loreal-paris-6-oil-nourish-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415-3_13-loreal-paris-6-oil-nourish-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415-4_13-loreal-paris-6-oil-nourish-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415-5_13-loreal-paris-6-oil-nourish-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415-6_6-loreal-paris-6-oil-nourish-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415-7_6-loreal-paris-6-oil-nourish-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007415-8_6-loreal-paris-6-oil-nourish-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oréal Paris Extraordinary Oil conditioner is enriched with an optimised combination of oils - Argan, Almond, Jojoba, Olive, Camelina, and Coconut - to transform dry,dull & lifeless hair into strong, thick, and soft hair; whilst leaving it smooth, shiny, and manageable.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fall Resist 3X Anti-Hair Fall Shampoo",
+  "handle": "fall-resist-3x-anti-hair-fall-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75ml",
+    "price": "79",
+    "compare_at_price": "79",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/295877_8-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40024104_13-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40024105_10-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "879",
+    "compare_at_price": "879",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003909_16-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/295877_8-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/295877-2_9-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/295877-3_9-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/295877-4_9-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/295877-5_9-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/295877-6_9-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/295877-7_1-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024104_13-loreal-paris-fall-resist-3x-anti-hairfall-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "description": "Fall Resist 3x Anti-Hair Fall shampoo delivers a triple anti-hair fall action. Your hair is more resistant to the roots and is stronger, looks healthier and more beautiful. The formula helps deliver a triple anti-hair fall action that instantly detangles and your hair is more resistant from root to tip. It nourishes the hair root, restructures hair fibre and gives you stronger hair from root to tip.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fall Resist 3X Anti-Hair Fall Conditioner",
+  "handle": "fall-resist-3x-anti-hair-fall-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "71.5ml",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40147975_10-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+    },
+    "barcode": "8901526103218"
+   },
+   {
+    "title": "180ml",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40147976_12-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147975_10-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147975-2_11-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147975-3_11-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147975-4_11-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147975-5_11-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147975-6_11-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147975-7_1-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40147976_12-loreal-paris-fall-resist-3x-anti-hairfall-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Fall Resist 3X Anti-Hairfall Conditioner delivers a triple anti-hair fall action. Your hair is more resistant to the roots and is stronger, looks healthier and more beautiful. The formula helps deliver a triple anti-hair fall action that instantly detangles and your hair is more resistant from root to tip.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fall Resist Anti-Hair Fall Serum with 1.5% Aminexil",
+  "handle": "fall-resist-anti-hair-fall-serum-with-1-5-aminexil",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "102ml",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331_3-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+    },
+    "barcode": "3600524079017"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331_3-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331-2_3-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331-3_4-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331-4_4-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331-5_4-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331-6_4-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331-7_4-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40347331-8_4-loreal-paris-elvive-fall-resist-anti-hair-fall-serum-with-15-aminexil.jpg"
+   }
+  ],
+  "details": {
+   "description": "Reduce hair fall with the new L'Oreal Paris Fall Resist Anti Hair Fall Serum with 1.5% Aminexil, for less visible scalp and hair fall. This anti hair-fall serum is formulated with 1.5% Aminexil, a patented molecule that is clinically proven to strengthen hair and minimise hair fall due to breakage. The formula is also boosted with Caffeine and Arginine. Scientifically designed and effective on hair with a tendency to fall due to breakage. For up to 2x less hair on your brush, complete the routine with L'Oréal Paris Fall Resist Shampoo and Conditioner.",
+   "manufacturerName": "L'Oreal LIBRAMONT",
+   "countryOfOrigin": "Belgium"
+  }
+ },
+ {
+  "title": "Hyaluron Moisture 72H Moisture Filling Shampoo",
+  "handle": "hyaluron-moisture-72h-moisture-filling-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "209",
+    "compare_at_price": "209",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+    },
+    "barcode": "8901526011995"
+   },
+   {
+    "title": "340ml",
+    "price": "419",
+    "compare_at_price": "419",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272709_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "929",
+    "compare_at_price": "929",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272710_7-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1315",
+    "compare_at_price": "1315",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272711_5-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708-2_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708-3_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708-4_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708-5_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708-6_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708-7_6-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272708-8_3-loreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-adds-shine-for-dry-dehydrated-hair.jpg"
+   }
+  ],
+  "details": {
+   "description": "Tired of dry, dull, and lifeless hair? It's time to hydrate your hair with intense moisture. Try the all-new L’Oreal Paris Hyaluron Moisture shampoo that provides long-lasting hydration and re-plumps hair with ease. This 72H Moisture filling Shampoo instantly fills hair with moisture, giving you shiny hair that’s full of life. Key Ingredient - Hyaluronic acid for hair, which retains 1000 times its weight in water and is an essential ingredient to maintain the natural moisture barrier of your scalp and strands. This potent hydrating active weightlessly coats the hair to keep it feeling hydrated for up to 72 hours and helps the hair look visibly plumped, bouncy, and shiny. Now make the science of skincare a part of your hair care routine with Hyaluronic Acid.",
+   "manufacturerName": "L'Oreal India Pvt Ltd Chakan Pune -",
+   "countryOfOrigin": "India",
+   "usageInstructions": "Apply on scalp and massage till lather forms. Rinse till completely clean. Follow this with Hyaluron Moisture 72H Moisture Sealing Conditioner and Hydra Filling Night Cream. |"
+  }
+ },
+ {
+  "title": "Hyaluron Moisture 72H Moisture Sealing Conditioner",
+  "handle": "hyaluron-moisture-72h-moisture-sealing-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "71.5ml",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712_5-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+    },
+    "barcode": "8901526603411"
+   },
+   {
+    "title": "175ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272713_8-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "615",
+    "compare_at_price": "615",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323435_5-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-for-dehydrated-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712_5-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712-2_5-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712-3_5-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712-4_5-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712-5_5-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712-6_5-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712-7_4-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272712-8_1-loreal-paris-hyaluron-moisture-72h-moisture-sealing-conditioner-adds-shine-for-dry-dehydrated-hair.jpg"
+   }
+  ],
+  "details": {
+   "description": "Tired of dry, dull, and lifeless hair? It’s time to hydrate your hair with intense moisture, Try the all-new L’Oreal Paris Hyaluron Moisture Conditioner that provides long-lasting hydration and re-plumps hair with ease. This 72H Moisture sealing conditioner instantly locks-in moisture giving you shiny hair that’s full of life. Key Ingredient - Hyaluronic acid for hair, which retains 1000 times its weight in water and is an essential ingredient to maintain the natural moisture barrier of your scalp and strands. This potent hydrating active weightlessly coats the hair to keep it feeling hydrated for up to 72 hours and helps hair look visibly plumped, bouncy and shiny. Now make the science of skincare a part of your hair care routine with Hyaluronic Acid.",
+   "usageInstructions": "Use the L’Oreal conditioner for women post shampoo, leave on for 2 mins and rinse.\nInstantly achieve detangled, re-hydrated and plump hair.",
+   "manufacturerName": "Pritam International Pvt. Ltd. K. No.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hyaluron Moisture 72H Hydra Filling Night Cream",
+  "handle": "hyaluron-moisture-72h-hydra-filling-night-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714_5-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714_5-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714-2_5-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714-3_5-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714-4_5-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714-5_5-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714-6_5-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714-7_5-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272714-8_2-loreal-paris-hyaluron-moisture-72h-hydra-filling-night-cream-leave-in-hair-cream-for-dehydrated-hair.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover an exclusive night ritual enriched with hyaluronic acid to instantly infuse hair with deep hydration and seal cuticles overnight without any weigh down. Wake up to hair that is soft, detangled, and frizz controlled. First-of-its-kind overnight technology created in the L'Oreal Laboratories gives you four times more moisture in just one night, keeping your hair hydrated, shiny, and bouncy.",
+   "usageInstructions": "1. Apply to hair lengths and tips and leave overnight.\n2. No need to rinse, no residue and no weigh down the next morning.\n3. Washing your hair is optional.",
+   "manufacturerName": "Pritam International Pvt. Ltd. K. No.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hyaluron Pure 72H Purifying Shampoo",
+  "handle": "hyaluron-pure-72h-purifying-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "440",
+    "compare_at_price": "440",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40336481_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+    }
+   },
+   {
+    "title": "800ml",
+    "price": "930",
+    "compare_at_price": "930",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40336482_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480-2_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480-3_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480-4_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480-5_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480-6_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480-7_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336480-8_2-loreal-paris-hyaluron-pure-72h-purifying-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oréal Paris Hyaluron Pure 72H Purifying Shampoo deeply cleanses oily scalp and hydrates dry, dehydrated hair. Enriched with salicylic and hyaluronic acid, this purifying shampoo effectively removes excess oil from the scalp while providing lasting hydration to dry, dehydrated lengths, leaving hair feeling refreshed and revitalised. It removes 99% of excess oil, deeply cleansing the scalp without irritating or damaging the hair fibre. From day one, visible results are noticeable as hair begins to look healthier, shinier, and full of movement.",
+   "usageInstructions": "1. Apply on wet hair.\n2. Massage your scalp.\n3. Rinse.",
+   "manufacturerName": "L’Oréal India Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hyaluron Pure 72H Rehydrating Conditioner",
+  "handle": "hyaluron-pure-72h-rehydrating-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40336484_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483-2_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483-3_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483-4_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483-5_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483-6_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483-7_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336483-8_2-loreal-paris-hyaluron-pure-72h-rehydrating-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "description": "New L'Oréal Paris Hyaluron Pure 72H Rehydrating Conditioner is the ultimate solution for achieving clean, fresh scalp and hydrated hair. Enriched with salicylic and hyaluronic acid, this rehydrating conditioner provides targeted care for dry, dehydrated hair while ensuring your hair remains light with no weigh down. This conditioner delivers 72 hours of intense hydration with its creamy, rinse-off formula, which not only detangles but also locks in moisture, leaving your hair feeling airy, soft, and tangle-free.",
+   "usageInstructions": "1. After shampoo, apply from lengths to tips of hair.\n2. Leave for one minute then rinse.\n3. In case of contact with eyes, rinse immediately.",
+   "manufacturerName": "L’Oréal India Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glycolic Gloss Extra Gloss Shampoo",
+  "handle": "glycolic-gloss-extra-gloss-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "519",
+    "compare_at_price": "519",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356476_1-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "1055",
+    "compare_at_price": "1055",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356477_1-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1315",
+    "compare_at_price": "1315",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356478_1-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475-2_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475-3_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475-4_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475-5_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475-6_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475-7_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356475-8_2-loreal-paris-glycolic-extra-gloss-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "description": "L’Oréal Paris is a truly global beauty brand that combines the latest in technology with the highest in quality for the ultimate in luxury beauty made accessible. Our signature phrase, “Because We’re Worth It”, is meant to inspire every woman to embrace her own unique beauty and reinforce her sense of self-worth.\nAs the biggest beauty brand in the world, L'Oréal Paris has an unparalleled commitment to technology, research, and innovation, providing ground-breaking, high-quality products for women of all ages and ethnicities. The L’Oréal Paris brand encompasses the four major beauty categories – hair colour, cosmetics, hair care, and skin care – and includes such well-known brands as Excellence Crème, Extraordinary Oil Serum, Revitalift Crystal Microessence, 1.5% Hyaluronic Acid Serum, Lash Paradise Mascara, Rouge Signature Liquid Lipstick, among many others. L'Oréal Paris truly believes that, whatever your age, gender, ethnicity or look - We’re all worth it!",
+   "usageInstructions": "Step 1: Apply L’Oréal Paris Glycolic Gloss Shampoo on wet hair. Massage your scalp, cleansing from roots to tips. This helps fight dullness and activates shine.\nStep 2: Follow with L’Oréal Paris Glycolic Gloss Conditioner on wet hair, focusing on lengths. Leave the product on to laminate the cuticle and seal the gloss. Do not rinse off the conditioner.\nStep 3: Divide the conditioned hair into 4 parts and spray the acidifier directly on the conditioned hair, covering from the lengths to the tips. Leave it on for 5 minutes and then rinse to achieve the glossiest hair of your life.\nStep 4: Finish the routine with L’Oréal Paris Glycolic Gloss Serum on towel-dried, damp hair. Apply a few drops thoroughly through the hair lengths to get 72H gloss & protection against aggressors",
+   "manufacturerName": "C) L’oreal India Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glycolic Gloss Shine Sealing Conditioner",
+  "handle": "glycolic-gloss-shine-sealing-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "345",
+    "compare_at_price": "345",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "599",
+    "compare_at_price": "599",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356480_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479-2_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479-3_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479-4_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479-5_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479-6_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479-7_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356479-8_1-loreal-paris-glycolic-gloss-shine-sealing-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "description": "L’Oréal Paris is a truly global beauty brand that combines the latest in technology with the highest in quality for the ultimate in luxury beauty made accessible. Our signature phrase, “Because We’re Worth It”, is meant to inspire every woman to embrace her own unique beauty and reinforce her sense of self-worth.\nAs the biggest beauty brand in the world, L'Oréal Paris has an unparalleled commitment to technology, research, and innovation, providing ground-breaking, high-quality products for women of all ages and ethnicities. The L’Oréal Paris brand encompasses the four major beauty categories – hair colour, cosmetics, hair care, and skin care – and includes such well-known brands as Excellence Crème, Extraordinary Oil Serum, Revitalift Crystal Microessence, 1.5% Hyaluronic Acid Serum, Lash Paradise Mascara, Rouge Signature Liquid Lipstick, among many others. L'Oréal Paris truly believes that, whatever your age, gender, ethnicity or look – We’re all worth it!",
+   "usageInstructions": "Step 1: Apply L’Oréal Paris Glycolic Gloss Shampoo on wet hair. Massage your scalp, cleansing from roots to tips. This helps fight dullness and activates shine.\nStep 2: Follow with L’Oréal Paris Glycolic Gloss Conditioner on wet hair, focusing on lengths. Leave the product on to laminate the cuticle and seal the gloss. Do not rinse off the conditioner.\nStep 3: Divide the conditioned hair into 4 parts and spray the acidifier directly on the conditioned hair, covering from the lengths to the tips. Leave it on for 5 minutes and then rinse to achieve the glossiest hair of your life.\nStep 4: Finish the routine with L’Oréal Paris Glycolic Gloss Serum on towel-dried, damp hair. Apply a few drops thoroughly through the hair lengths to get 72H gloss & protection against aggressors",
+   "manufacturerName": "C) L’oreal India Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glycolic Gloss Extension Serum",
+  "handle": "glycolic-gloss-extension-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40ml",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+    }
+   },
+   {
+    "title": "80ml",
+    "price": "419",
+    "compare_at_price": "419",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356482_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481-2_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481-3_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481-4_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481-5_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481-6_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481-7_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356481-8_1-loreal-paris-glycolic-gloss-extension-serum.jpg"
+   }
+  ],
+  "details": {
+   "description": "L’Oréal Paris is a truly global beauty brand that combines the latest in technology with the highest in quality for the ultimate in luxury beauty made accessible. Our signature phrase, “Because We’re Worth It”, is meant to inspire every woman to embrace her own unique beauty and reinforce her sense of self-worth.\nAs the biggest beauty brand in the world, L'Oréal Paris has an unparalleled commitment to technology, research, and innovation, providing ground-breaking, high-quality products for women of all ages and ethnicities. The L’Oréal Paris brand encompasses the four major beauty categories – hair colour, cosmetics, hair care, and skin care – and includes such well-known brands as Excellence Crème, Extraordinary Oil Serum, Revitalift Crystal Microessence, 1.5% Hyaluronic Acid Serum, Lash Paradise Mascara, Rouge Signature Liquid Lipstick, among many others. L'Oréal Paris truly believes that, whatever your age, gender, ethnicity or look – We’re all worth it!",
+   "usageInstructions": "Step 1: Apply L’Oréal Paris Glycolic Gloss Shampoo on wet hair. Massage your scalp, cleansing from roots to tips. This helps fight dullness and activates shine\nStep 2: Follow with L’Oréal Paris Glycolic Gloss Conditioner on wet hair, focusing on lengths. Leave the product on to laminate the cuticle and seal the gloss. Do not rinse off the conditioner\nStep 3: Divide the conditioned hair into 4 parts and spray the acidifier directly on the conditioned hair, covering from the lengths to the tips. Leave it on for 5 minutes and then rinse to achieve the glossiest hair of your life\nStep 4: Finish the routine with L’Oréal Paris Glycolic Gloss Serum on towel-dried, damp hair. Apply a few drops thoroughly through the hair lengths to get 72H gloss & protection against aggressors",
+   "manufacturerName": "C) L’oreal India Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glycolic Gloss Ultra Gloss Acidifier",
+  "handle": "glycolic-gloss-ultra-gloss-acidifier",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "649",
+    "compare_at_price": "649",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+    },
+    "barcode": "8901526671304"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483-2_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483-3_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483-4_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483-5_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483-6_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483-7_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356483-8_2-loreal-paris-glycolic-ultra-gloss-acidifier.jpg"
+   }
+  ],
+  "details": {
+   "description": "L’Oréal Paris is a truly global beauty brand that combines the latest in technology with the highest in quality for the ultimate in luxury beauty made accessible. Our signature phrase, “Because We’re Worth It”, is meant to inspire every woman to embrace her own unique beauty and reinforce her sense of self-worth.\nAs the biggest beauty brand in the world, L'Oréal Paris has an unparalleled commitment to technology, research, and innovation, providing ground-breaking, high-quality products for women of all ages and ethnicities. The L’Oréal Paris brand encompasses the four major beauty categories – hair colour, cosmetics, hair care, and skin care – and includes such well-known brands as Excellence Crème, Extraordinary Oil Serum, Revitalift Crystal Microessence, 1.5% Hyaluronic Acid Serum, Lash Paradise Mascara, Rouge Signature Liquid Lipstick, among many others. L'Oréal Paris truly believes that, whatever your age, gender, ethnicity or look – We’re all worth it!",
+   "usageInstructions": "Step 1: Apply L’Oréal Paris Glycolic Gloss Shampoo on wet hair. Massage your scalp, cleansing from roots to tips. This helps fight dullness and activates shine.\nStep 2: Follow with L’Oréal Paris Glycolic Gloss Conditioner on wet hair, focusing on lengths. Leave the product on to laminate the cuticle and seal the gloss. Do not rinse off the conditioner.\nStep 3: Divide the conditioned hair into 4 parts and spray the acidifier directly on the conditioned hair, covering from the lengths to the tips. Leave it on for 5 minutes and then rinse to achieve the glossiest hair of your life.\nStep 4: Finish the routine with L’Oréal Paris Glycolic Gloss Serum on towel-dried, damp hair. Apply a few drops thoroughly through the hair lengths to get 72H gloss & protection against aggressors",
+   "manufacturerName": "C) L’oreal India Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Elnett Strong Hold Hairspray",
+  "handle": "elnett-strong-hold-hairspray",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75ml",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937-2_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937-3_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937-4_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937-5_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937-6_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937-7_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359937-8_1-loreal-paris-elnett-strong-hold-micro-diffusion-hairspray.jpg"
+   }
+  ],
+  "details": {
+   "description": "Achieve your desired hairstyle with Elnett Strong Hold Hairspray. The iconic micro diffuser hairspray sets your everyday style easily and weightlessly for up to 48h of undetectable hold. Our new no weigh-down formula is enriched with Vitamin B5 to protect hair from frizz and external aggressions. This iconic hairspray enhances natural hair movement and shine, without leaving it feeling stiff or sticky, and disappears at the stroke of a brush.",
+   "usageInstructions": "Remove the security tab and shake can.\nSpray from about 30 cm away from the hair. In case of clogging, rinse the nozzle under warm water",
+   "manufacturerName": "SICOS et Cie Avenue Henri LefebvreSICOS et Cie Avenue Henri Lefebvre -",
+   "countryOfOrigin": "France"
+  }
+ },
+ {
+  "title": "Smooth Intense Instant Smoothing Serum",
+  "handle": "smooth-intense-instant-smoothing-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003910_8-loreal-paris-smooth-intense-serum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003910_8-loreal-paris-smooth-intense-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003910-2_8-loreal-paris-smooth-intense-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003910-3_8-loreal-paris-smooth-intense-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003910-4_8-loreal-paris-smooth-intense-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003910-5_1-loreal-paris-smooth-intense-serum.jpg"
+   }
+  ],
+  "details": {
+   "description": "Smooth Intense Instant Smoothing Serum by Loreal Paris provides immediate smoothing and deep nourishment. The texture and the shine of your hair are renewed. L’Oreal laboratories have succeeded in combining Argan Oil and Silk Protein, which is naturally rich in essential fatty nutrients that give your hair 48-hour protection. The crème formula nourishes and smoothes your hair from root to tip making it look more smooth & manageable. It shields your hair from the effect of humid or dry weather and makes it more manageable.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Total Repair 5 Repairing Shampoo",
+  "handle": "total-repair-5-repairing-shampoo",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "82.5ml",
+    "price": "79",
+    "compare_at_price": "79",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/260632_11-loreal-paris-total-repair-5-shampoo.jpg"
+    },
+    "barcode": "8901526102501"
+   },
+   {
+    "title": "180ml",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/260634_15-loreal-paris-total-repair-5-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "379",
+    "compare_at_price": "379",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/274353_15-loreal-paris-total-repair-5-shampoo.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "746",
+    "compare_at_price": "746",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003911_15-loreal-paris-total-repair-5-shampoo.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1250",
+    "compare_at_price": "1250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200531_8-loreal-paris-total-repair-5-advanced-repairing-shampoo-for-damaged-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260632_11-loreal-paris-total-repair-5-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260632-2_12-loreal-paris-total-repair-5-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260632-3_12-loreal-paris-total-repair-5-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260632-4_12-loreal-paris-total-repair-5-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260632-5_12-loreal-paris-total-repair-5-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260632-6_12-loreal-paris-total-repair-5-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260632-7_4-loreal-paris-total-repair-5-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260632-8_4-loreal-paris-total-repair-5-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "description": "5 Problems. 1 Solution. L'Oreal Paris Total Repair 5 Repairing Shampoo helps fight against the five visible signs of damaged hair - hair fall, dryness, roughness, dullness and split ends without weighing it down. Damaged hair can lack the natural cement which keeps the hair strong and resilient. To ensure cohesion and strength, the L’Oreal Laboratories have created Ceramide-Cement technology to replicate the hair’s natural cement, targetting the 5 problems. Explore our best hair products to revive and repair damaged hair.",
+   "usageInstructions": "Wet your hair and take sufficient amount of shampoo and mix it with water.\nPour it over your hair and keep it for at least 5 minutes.\nWash your hair thoroughly with water.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Total Repair 5 Restoring Conditioner",
+  "handle": "total-repair-5-restoring-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "71.5ml",
+    "price": "109",
+    "compare_at_price": "109",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/260649_13-loreal-paris-total-repair-5-conditioner.jpg"
+    },
+    "barcode": "8901526103225"
+   },
+   {
+    "title": "175ml",
+    "price": "229",
+    "compare_at_price": "229",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/260637_17-loreal-paris-total-repair-5-conditioner.jpg"
+    }
+   },
+   {
+    "title": "386ml",
+    "price": "569",
+    "compare_at_price": "569",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323434_4-loreal-paris-total-repair-5-restoring-conditioner-for-damaged-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260649_13-loreal-paris-total-repair-5-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260649-2_13-loreal-paris-total-repair-5-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260649-3_13-loreal-paris-total-repair-5-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260649-4_13-loreal-paris-total-repair-5-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260649-5_13-loreal-paris-total-repair-5-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260649-6_13-loreal-paris-total-repair-5-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260649-7_5-loreal-paris-total-repair-5-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/260649-8_5-loreal-paris-total-repair-5-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Wash your hair with shampoo and rinse out.\n2. Use conditioner on wet hair and focus on the lengths and ends of your hair.\n3. Leave the conditioner in your hair for 1-3 minutes.\n4. Rinse with room temperature or cold water till no residue is left in the hair.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Total Repair 5 Rapid Reviver Deep Conditioner",
+  "handle": "total-repair-5-rapid-reviver-deep-conditioner",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626_6-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626_6-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626-2_6-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626-3_6-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626-4_6-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626-5_6-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626-6_6-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626-7_6-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40184626-8_1-loreal-paris-rapid-reviver-total-repair-5-deep-conditioner.jpg"
+   }
+  ],
+  "details": {
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Total Repair 5 Masque",
+  "handle": "total-repair-5-masque",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40062490_4-loreal-paris-total-repair-5-masque.jpg"
+    },
+    "barcode": "8901526101559"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062490_4-loreal-paris-total-repair-5-masque.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062490-2_2-loreal-paris-total-repair-5-masque.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062490-3_2-loreal-paris-total-repair-5-masque.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40062490-4_1-loreal-paris-total-repair-5-masque.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Cleanse and condition your hair with the Total Repair 5 Shampoo and Conditioner\n2. Gently massage the L Oreal Paris Hair Masque into the lengths of washed hair\n3. Leave the hair mask on for five minutes for an intensive treatment\n4. Rinse with cold water and apply the Total Repair 5 Hair Serum to enjoy shiny, soft, and damage free locks",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Total Repair 5 Instant Smoothing Oil Serum",
+  "handle": "total-repair-5-instant-smoothing-oil-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40ml",
+    "price": "229",
+    "compare_at_price": "229",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912_14-loreal-paris-total-repair-5-serum.jpg"
+    },
+    "barcode": "8901526102150"
+   },
+   {
+    "title": "80ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003913_17-loreal-paris-loreal-paris-total-repair-5-serum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912_14-loreal-paris-total-repair-5-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912-2_12-loreal-paris-total-repair-5-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912-3_12-loreal-paris-total-repair-5-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912-4_12-loreal-paris-total-repair-5-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912-5_12-loreal-paris-total-repair-5-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912-6_12-loreal-paris-total-repair-5-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912-7_4-loreal-paris-total-repair-5-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003912-8_1-loreal-paris-total-repair-5-serum.jpg"
+   }
+  ],
+  "details": {
+   "description": "5 Problems. 1 Solution. L'Oreal Paris Total Repair 5 Repairing Serum helps fight against the five visible signs of damaged hair - hair fall, dryness, roughness, dullness and split ends without weighing it down. Damaged hair can lack the natural cement which keeps the hair strong and resilient. To ensure cohesion and strength, the L’Oreal Laboratories have created Ceramide-Cement technology to replicate the hair’s natural cement, targetting the 5 problems. When applied, it instantly attaches itself to damaged areas, repairs and unifies the hair‘s surface, creating a protective shield against further damage and split ends. Explore our best hair products to revive and repair damaged hair.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Casting Creme Gloss Hair Colour - 530 Praline Brown",
+  "handle": "casting-creme-gloss-hair-colour-530-praline-brown",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "679",
+    "compare_at_price": "679",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003916_18-loreal-paris-casting-creme-gloss-hair-colour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003916_18-loreal-paris-casting-creme-gloss-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003916-2_16-loreal-paris-casting-creme-gloss-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003916-3_16-loreal-paris-casting-creme-gloss-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003916-4_16-loreal-paris-casting-creme-gloss-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003916-5_16-loreal-paris-casting-creme-gloss-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003916-6_14-loreal-paris-casting-creme-gloss-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003916-7_6-loreal-paris-casting-creme-gloss-hair-colour.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Apply the Protective Pre-Serum on unwashed hair.\n2. Mix the colourant and developer.\n3. Apply on hair and leave on for 30 minutes before washing.\n4. Apply conditioning balm and leave on for 2 minutes.",
+   "manufacturerName": "L'Oreal India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Casting Creme Gloss Hair Colour - 665 Raspberry",
+  "handle": "casting-creme-gloss-hair-colour-665-raspberry",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "650",
+    "compare_at_price": "650",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722_5-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+    },
+    "barcode": "8901526597710"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722_5-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722-2_5-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722-3_5-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722-4_5-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722-5_5-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722-6_5-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722-7_5-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255722-8_2-loreal-paris-casting-creme-gloss-no-ammonia-ultra-visible-hair-colour-optimal-grey-coverage.jpg"
+   }
+  ],
+  "details": {
+   "description": ", Always use the Pre-Colour Protective Treatment, developed for fragile hair, before colouring.\n, Rinse your hair without using shampoo then apply the After-Colour Protective Conditioner.\n, Finally, rinse out the conditioner with cold water for extra shine.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Casting Creme Gloss Hair Colour Small Pack - 316 Burgundy",
+  "handle": "casting-creme-gloss-hair-colour-small-pack-316-burgundy",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "45g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103_5-loreal-paris-casting-creme-gloss-small-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103_5-loreal-paris-casting-creme-gloss-small-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103-2_4-loreal-paris-casting-creme-gloss-small-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103-3_4-loreal-paris-casting-creme-gloss-small-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103-4_4-loreal-paris-casting-creme-gloss-small-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103-5_4-loreal-paris-casting-creme-gloss-small-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103-6_4-loreal-paris-casting-creme-gloss-small-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103-7_3-loreal-paris-casting-creme-gloss-small-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40186103-8_3-loreal-paris-casting-creme-gloss-small-pack.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Casting Crème Gloss is an ammonia-free gentle hair colouring formula that lasts up to 28 shampoos with a glossy finish and optimal grey coverage for natural results. It contains a moisturising and caring conditioner enriched with royal jelly that makes hair satin soft and healthy with exceptional shine.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Casting Creme Gloss Hair Colour Small Pack - 300 Darkest Brown",
+  "handle": "casting-creme-gloss-hair-colour-small-pack-300-darkest-brown",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "45g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345_3-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345_3-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345-2_3-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345-3_3-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345-4_3-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345-5_3-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345-6_2-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345-7_2-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099345-8_2-loreal-paris-hair-colour-casting-creme-glosssmall-pack.jpg"
+   }
+  ],
+  "details": {
+   "description": "Casting Creme Gloss - now in a small pack at just Rs. 199! Casting Creme Gloss is a no ammonia hair colourant that gives your hair visible shimmering tones, glossy shine and covers greys. It gives natural-looking colour with visible shimmering tones and a glossy shine. Gives you the richness of natural colour that lasts up to 28 shampoos. Gentle, caring conditioner to provide nourished, satin soft, voluptuous hair. Easy, clean and pleasurable application with the non-drip crème formula in just 20 minutes, even for beginners. The delicate fragrance makes colouring a luxurious treat.",
+   "manufacturerName": "L'Oral India Pvt. Ltd. C36",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Excellence Creme Hair Colour - 3.16 Burgundy",
+  "handle": "excellence-creme-hair-colour-3-16-burgundy",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027753_6-loreal-paris-excellence-creme-hair-colour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027753_6-loreal-paris-excellence-creme-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027753-2_1-loreal-paris-excellence-creme-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027753-3_1-loreal-paris-excellence-creme-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027753-4_1-loreal-paris-excellence-creme-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027753-5_1-loreal-paris-excellence-creme-hair-colour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027753-6_1-loreal-paris-excellence-creme-hair-colour.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Apply the protective colouring creme to the hair.\n2. Use the new scalp comfort shampoo to delicately cleanse the scalp and unveil rich, natural colour.\n3. Apply the French rose oil nourishing masque for soft, smooth hair with lustrous shine.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Excellence Creme Triple Care Hair Colour - 6.34 Intense Golden Auburn",
+  "handle": "excellence-creme-triple-care-hair-colour-6-34-intense-golden-auburn",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "650",
+    "compare_at_price": "650",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041_3-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+    },
+    "barcode": "6955818265490"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041_3-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041-2_3-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041-3_2-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041-4_1-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041-5_1-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041-6_1-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041-7_1-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253041-8_1-loreal-paris-excellence-fashion-shade-634-intense-golden-auburn-visible-hair-colour-high-shine.jpg"
+   }
+  ],
+  "details": {
+   "description": "Casting Creme Gloss is a no ammonia hair colourant that gives your hair visible shimmering tones, glossy shine and covers greys. It gives natural-looking colour with visible shimmering tones and a glossy shine. It provides the richness of natural colour that lasts up to 28 shampoos. The product includes a gentle, caring conditioner to provide nourished, satin soft, voluptuous hair. The application is easy, clean and pleasurable with the non-drip crème formula in just 30 minutes, even for beginners. The delicate fragrance makes colouring a luxurious treat.",
+   "ingredients": "Aqua / Water, Cetearyl Alchohol, Propylene Glycol, Deceth-3, Laureth-12, Oleth-30, Lauric Acid, Polyquaternium-6, Glycol Distearate, 5-diamine, Hexadimethrine Chloride, Silica Dimethyl Silylate [nano] / Silica Dimethyl Silylate, Resorcinol, Ci 77491 / Iron Oxides, Ci 77891 / Titanium Dioxide, 2,4-diamino Phenoxyethanol Hcl, M-aminophenol, Ascorbic Acid, Mica, Sodium Metabisulfite, Thioglycerin, 2-methylresorcinol, Carbomer, Edta, Parfum / Fragrance",
+   "usageInstructions": "1. Put gloves on.\n2. Mix & shake the developer & crème colourant.\n3. Apply & leave for 20 minutes.\n4. Rinse & Apply Shine Masque.",
+   "manufacturerName": "L'Oreal India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Magic Retouch Root Touch Up Spray - 2 Dark Brown",
+  "handle": "magic-retouch-root-touch-up-spray-2-dark-brown",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111459_9-loreal-paris-magic-retouch-root-touch-up-temporary-hair-colour-spray-2-dark-brown.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111459_9-loreal-paris-magic-retouch-root-touch-up-temporary-hair-colour-spray-2-dark-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111459-2_1-loreal-paris-magic-retouch-root-touch-up-temporary-hair-colour-spray-2-dark-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111459-3_1-loreal-paris-magic-retouch-root-touch-up-temporary-hair-colour-spray-2-dark-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111459-4_1-loreal-paris-magic-retouch-root-touch-up-temporary-hair-colour-spray-2-dark-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111459-5_1-loreal-paris-magic-retouch-root-touch-up-temporary-hair-colour-spray-2-dark-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111459-6_1-loreal-paris-magic-retouch-root-touch-up-temporary-hair-colour-spray-2-dark-brown.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40111459-7_1-loreal-paris-magic-retouch-root-touch-up-temporary-hair-colour-spray-2-dark-brown.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Shake well before use.\n2. Spray directly onto roots as needed.",
+   "countryOfOrigin": "Belgium"
+  }
+ },
+ {
+  "title": "Glycolic Bright 8% Face Serum",
+  "handle": "glycolic-bright-8-face-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027_10-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+    },
+    "barcode": "8901526012213"
+   },
+   {
+    "title": "30ml",
+    "price": "749",
+    "compare_at_price": "749",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277028_10-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027_10-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027-2_10-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027-3_10-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027-4_10-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027-5_10-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027-6_10-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027-7_9-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277027-8_7-loreal-paris-glycolic-bright-serum-reduces-dark-spots-pigmentation-reveals-bright-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "Reveal a brighter, more radiant complexion with the L'Oreal Paris Glycolic Bright Skin Brightening Serum. Formulated with a powerful blend of 8% Melasyl, glycolic acid, and niacinamide, this serum visibly reduces 77% of dark spots in just 2 weeks. The glycolic acid gently exfoliates the skin, promoting cell turnover and reducing the appearance of hyperpigmentation, while the niacinamide helps to even out skin tone and improve overall texture. Clinically proven on all Indian skin types, this serum penetrates deeply into the skin, intensely hydrating and leaving you with a luminous, youthful glow. Suitable for daily use on all skin types, the gentle formula nourishes the skin, making it soft and smooth, and revealing brighter, more even-toned skin.",
+   "ingredients": "Aqua / Water, Caprylyl Methicone, Niacinamide, Alcohol Denat., Butylene Glycol, Glycerin, Hydroxyethylpiperazine Ethane Sulfonic Acid, Caffeine, Potassium Hydroxide, Linalool, Glycolic Acid, 2-Mercaptonicotinoyl Glycine, Sodium Thiosulfate, Sodium Hyaluronate, Phenoxyethanol, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Chlorphenesin, Tocopheryl Acetate, Poloxamer 338, Limonene, Tocopherol, Hydroxyacetophenone, Capryloyl Salicylic Acid, Citronellol, Trisodium Ethylenediamine Disuccinate, Biosaccharide Gum-1, Xanthan Gum, Menthoxypropanediol, Benzyl Alcohol, Benzyl Salicylate, Peg-12 Dimethicone/Ppg-20 Crosspolymer, Ci 17200 / Red 33, Ci 42090 / Blue 1, Parfum / Fragrance",
+   "manufacturerName": "L'Oréal India Pvt. Ltd",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Glycolic Bright Dark Circle Eye Serum",
+  "handle": "glycolic-bright-dark-circle-eye-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20ml",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+    },
+    "barcode": "8994993020591"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212-2_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212-3_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212-4_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212-5_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212-6_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212-7_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321212-8_1-loreal-paris-glycolic-bright-dark-circle-eye-serum-with-3-glycolic-vit-cg-niacinamide.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the newest innovation from L'Oreal Paris, the Glycolic Bright Dark Circle Eye Serum. The concentration of 3% Glycolic Acid paired with Vitamin CG and Niacinamide gives both immediate and long-term brightening results to the undereye. Scientifically formulated for eye contour, fragrance-free and ophthalmologically tested.",
+   "usageInstructions": "1. Apply under eyes and over the eye contour every morning and night.\n2. Massage until fully absorbed.",
+   "manufacturerName": "Pt. Yasulor IndonesiaPt. Yasulor Indonesia",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glycolic Bright Glowing Day Cream SPF 17",
+  "handle": "glycolic-bright-glowing-day-cream-spf-17",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15ml",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023_6-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+    },
+    "barcode": "8994993016518"
+   },
+   {
+    "title": "50ml",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277024_7-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023_6-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023-2_6-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023-3_6-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023-4_6-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023-5_6-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023-6_6-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023-7_4-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277023-8_4-loreal-paris-glycolic-bright-glowing-day-cream-spf-17-for-dark-spot-reduction-even-toned-skin.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Apply over the face and neck.\nLayers well below makeup.",
+   "manufacturerName": "YICHANG TIANMI INTERNATIONAL COSMETICS CO",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Glycolic Bright Glowing Night Cream",
+  "handle": "glycolic-bright-glowing-night-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025_8-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+    },
+    "barcode": "8994993016556"
+   },
+   {
+    "title": "50ml",
+    "price": "729",
+    "compare_at_price": "729",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277026_8-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025_8-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025-2_8-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025-3_8-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025-4_8-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025-5_8-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025-6_8-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025-7_5-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277025-8_5-loreal-paris-glycolic-bright-glowing-night-cream-for-dark-spot-removal-glowing-skin.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Apply over the face and neck every night.\nAvoid contact with eyes.",
+   "manufacturerName": "PT. YASULOR INDONESIA KAWASAN INDUSTRI JABABEKA",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Glycolic Bright Instant Glowing Serum Sheet Mask",
+  "handle": "glycolic-bright-instant-glowing-serum-sheet-mask",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "22g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+    },
+    "barcode": "6923700990478"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579-2_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579-3_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579-4_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579-5_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579-6_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579-7_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308579-8_1-loreal-paris-glycolic-bright-instant-glowing-serum-sheet-mask.jpg"
+   }
+  ],
+  "details": {
+   "description": "Pamper your skin with the love and care it needs with the all-new L’Oréal face mask for glowing skin. Enriched with glycolic acid, the L’Oréal sheet mask reduces dark spots and evens imperfections for glowing skin while giving it the boost of hydration it needs. Glycolic acid has the smallest molecular weight amongst all brightening AHAs and penetrates deep within the epidermis layer of the skin to help stimulate cellular activity. Using this sheet mask infused with glycolic acid for the skin will help to remove years of dark spots in just a few weeks, which makes it one of the best face masks for glowing skin. It is dermatologically tested, gentle yet effective, and suitable for all skin types, including people with sensitive and acne-prone skin. So, what are you waiting for? Add the L’Oréal glycolic acid sheet mask to your regular skincare routine right away to achieve nourished, luminous, radiant, and healthy skin with ease.",
+   "usageInstructions": "1. Apply over the face and neck\n2. Layers well below makeup",
+   "manufacturerName": "134",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Glycolic Bright Glowing Daily Foam Cleanser",
+  "handle": "glycolic-bright-glowing-daily-foam-cleanser",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029_6-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+    },
+    "barcode": "8994993016549"
+   },
+   {
+    "title": "100ml",
+    "price": "329",
+    "compare_at_price": "329",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277030_5-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029_6-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029-2_6-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029-3_6-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029-4_6-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029-5_6-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029-6_6-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029-7_3-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277029-8_2-loreal-paris-glycolic-bright-glowing-daily-foam-cleanser-exfoliates-removes-dullness.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Apply on wet face and rinse.\nAvoid eye contact.",
+   "manufacturerName": "PT. YASULOR INDONESIA KAWASAN INDUSTRI JABABEKA",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Dermo Expertise Lip & Eye Makeup Remover",
+  "handle": "dermo-expertise-lip-eye-makeup-remover",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003956_1-loreal-paris-dermo-expertise-lip-and-eye-makeup-remover.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003956_1-loreal-paris-dermo-expertise-lip-and-eye-makeup-remover.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003956-2_1-loreal-paris-dermo-expertise-lip-and-eye-makeup-remover.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003956-3_1-loreal-paris-dermo-expertise-lip-and-eye-makeup-remover.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003956-4_1-loreal-paris-dermo-expertise-lip-and-eye-makeup-remover.jpg"
+   }
+  ],
+  "details": {
+   "description": "Effortlessly remove even the most stubborn waterproof makeup with L'Oreal Paris' Dermo Expertise Gentle Lip and Eye Makeup Remover. Formulated with a nourishing, fragrance-free formula, this dual-phase makeup remover efficiently dissolves makeup from the delicate eye and lip areas without causing irritation or dryness. Enriched with soothing ingredients, it helps to hydrate and comfort the sensitive skin around the eyes and lips, leaving it feeling clean, refreshed and rejuvenated. Suitable for all skin types, this makeup remover ensures a thorough yet gentle cleansing, allowing you to achieve a flawless, radiant complexion with ease. Experience effortless beauty with this must-have addition to your daily skincare routine.",
+   "manufacturerName": "PT. Yasulor Indonesia",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Men Expert White Activ Charcoal Foam Face Wash",
+  "handle": "men-expert-white-activ-charcoal-foam-face-wash",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004962_4-loreal-paris-men-expert-white-activ-charcoal-brightening-foam-facewash.jpg"
+    },
+    "barcode": "8992304026270"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004962_4-loreal-paris-men-expert-white-activ-charcoal-brightening-foam-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004962-2_1-loreal-paris-men-expert-white-activ-charcoal-brightening-foam-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004962-3_1-loreal-paris-men-expert-white-activ-charcoal-brightening-foam-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004962-4_1-loreal-paris-men-expert-white-activ-charcoal-brightening-foam-facewash.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Lather it in your palms. \nApply on wet face and gently massage concentrating on forehead, nose, and chin.\nAvoid eyes contour areas. \nRinse thoroughly.",
+   "manufacturerName": "LOREAL INDIA PVT LTD",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Revitalift 1.5% Hyaluronic Acid Serum",
+  "handle": "revitalift-1-5-hyaluronic-acid-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15ml",
+    "price": "529",
+    "compare_at_price": "529",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211065_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+    }
+   },
+   {
+    "title": "30ml",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212693_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211065_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211065-2_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211065-3_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211065-4_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211065-5_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211065-6_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211065-7_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212693_2-loreal-paris-revitalift-15-hyaluronic-acid-serum.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Using dropper, put 3-4 drops all over your face\n2. Gently massage serum into skin to absorb it",
+   "manufacturerName": "BeautyCos International Co",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Revitalift Crystal Fresh Hydrating Gel Cream",
+  "handle": "revitalift-crystal-fresh-hydrating-gel-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+    },
+    "barcode": "8994993016709"
+   },
+   {
+    "title": "50ml",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240446_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445-2_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445-3_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445-4_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445-5_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445-6_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445-7_2-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240445-8_1-loreal-paris-revitalift-crystal-fresh-hydrating-gel-cream-oil-free-finish-for-clear-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "Get crystal-clear skin with the all-new l’oréal Paris Revitalift Crystal Gel Cream! The cream penetrates up to 10 skin layers to give you quick, visible results. It is powered with pure salicylic acid that helps refine pores and prevents sebum build-up. It prevents inflammation of the skin by controlling oil for 8 hours, preventing bacteria from being trapped due to excess oil on the skin. Experts have formulated the Revitalift Crystal Gel Cream with a water-based formulation that doesn’t contain oils (mineral or vegetal) or ingredients that trigger oil production, making it a non-comedogenic moisturiser.",
+   "usageInstructions": "Take a pea-sized amount of the Cream and dot it all over freshly cleansed face and neck.\nGently spread and massage the anti-ageing day cream in circular motions till the face cream gets completely absorbed into the skin.\nFor best results use daily after applying the Crystal Micro Essence to achieve oil-free, youthful and crystal-clear skin!",
+   "manufacturerName": "PT. YASULOR INDONESIA Kawasan Industri Jababeka",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Revitalift Crystal Micro-Essence",
+  "handle": "revitalift-crystal-micro-essence",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "22ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792_5-loreal-paris-revitalift-crystal-micro-essence.jpg"
+    },
+    "barcode": "6923700934472"
+   },
+   {
+    "title": "65ml",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192791_1-loreal-paris-revitalift-crystal-micro-essence.jpg"
+    }
+   },
+   {
+    "title": "130ml",
+    "price": "1400",
+    "compare_at_price": "1400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40192793_2-loreal-paris-revitalift-crystal-micro-essence.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792_5-loreal-paris-revitalift-crystal-micro-essence.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792-2_5-loreal-paris-revitalift-crystal-micro-essence.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792-3_4-loreal-paris-revitalift-crystal-micro-essence.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792-4_4-loreal-paris-revitalift-crystal-micro-essence.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792-5_3-loreal-paris-revitalift-crystal-micro-essence.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792-6_3-loreal-paris-revitalift-crystal-micro-essence.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792-7_3-loreal-paris-revitalift-crystal-micro-essence.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40192792-8_1-loreal-paris-revitalift-crystal-micro-essence.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris brings to you a revolution in skincare. Powered by micronized technology, Crystal Micro-essence penetrates up to 10 skin layers to give crystal clear brightness to the skin, boost skin moisture retention, plump & smoothen skin.\nIts breakthrough light & watery texture allows quick absorption yet still leaves skin highly moisturized.  It contains skin brightening actives. Salicylic acid mildly exfoliates and refines pores and skin texture.\nMild exfoliating help removes the dead skin cells and accelerates skin renewal. Legendary Centella Asiatica, known for its healing power to deeply repair, boost elasticity and smooth out lines & wrinkles.\nUse it to get an immediate effect. Skin feels hydrated, plump & refreshed. With its regular use, you will get smoother skin with crystal clear brightness. Don’t stop at just clear skin, go for crystal clear.",
+   "usageInstructions": "Cleanse your face. \nPour 3 to 4 drops. \nPat gently on forehead, cheek and chin until fully absorbed.\nUse once in day and night.\nPRO TIP: Do not rub excessively between palms & do not apply with cotton.",
+   "manufacturerName": "BEAUTYCOS INTERNATIONAL CO",
+   "countryOfOrigin": "China,India"
+  }
+ },
+ {
+  "title": "Revitalift Crystal Micro-Essence Sheet Mask",
+  "handle": "revitalift-crystal-micro-essence-sheet-mask",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537-2_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537-3_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537-4_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537-5_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537-6_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537-7_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200537-8_2-loreal-paris-revitalift-crystal-micro-essence-sheet-mask.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Revitalift Crystal Micro-Essence Sheet Mask contains an essence that penetrates up to 10 layers deep into the skin to give bright and crystal clear skin. Powered by advanced patent cushion tissue mask technology, this sheet mask acts as a sponge for higher essence carrying capacity. It has up to 30 times more absorption power than a normal face mask, which leads to less dripping and helps deliver more essence onto the skin for quick results. This sheet mask has a very thin, light, and breathable material that makes it better than a normal sheet mask. It makes the skin hydrated, smooth, radiant, and glowing. The face mask has brightening actives that help accelerate skin renewal, refine texture, and minimise pores, revealing brighter, smoother, and clearer skin. Suitable for all skin types, this sheet mask is suitable for oily, combination, dry, normal, and even sensitive and acne-prone skin. For best results, use it along with Crystal Micro-essence to get brighter and crystal clear skin. In the morning, apply four drops of Crystal Micro-essence all over the face, and in the evening, apply four drops of crystal micro-essence followed by a crystal sheet mask. Use the face mask three times a week.",
+   "usageInstructions": "1. Unfold mask and apply on clean face.\n2. Adjust the mask contours on your face and leave it on for 15 minutes.\n3. Remove mask and pat remaining essence into face for absorption.",
+   "storageInstructions": "*Refrigerate ice roller head before use",
+   "manufacturerName": "BeautyCos International Co",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Revitalift Crystal Purifying Micellar Water",
+  "handle": "revitalift-crystal-purifying-micellar-water",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400ml",
+    "price": "899",
+    "compare_at_price": "899",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269_2-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+    },
+    "barcode": "6923700981476"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269_2-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269-2_2-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269-3_2-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269-4_2-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269-5_2-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269-6_2-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269-7_2-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262269-8_1-loreal-paris-revitalift-crystal-purifying-micellar-water-with-oil-free-technology-cleanses-pores-removes-makeup.jpg"
+   }
+  ],
+  "details": {
+   "description": "Get pure, fresh, and clear skin with the new L’Oréal Paris Revitalift Crystal Purifying Micellar Water. A breakthrough oil free cleanser, the L’Oréal Micellar Water has deep pore cleansing power against 5 impurities: Pollutants, Sebum, Dust, Dead skin cells and Make-up. It gently draws out even the smallest of pore-clogging impurities like a cleansing magnet. This cleansing water also acts as a gentle makeup remover. Experience visible results in just 8 days with the L’Oréal Micellar Water – pores feel purified and clean, skin texture looks more refined, and pores are deeply cleaned. Tested by dermatologists, the cleanser is gentle on the skin and leaves the skin clean without any irritation, even sensitive skin.\nAdapt a daily cleansing routine and use twice in a day:\nPour 3-4 drops of Micellar Water onto the cotton pad\nPress gently & Swipe across your face for best results, use it with Crystal Micro-essence.\nStep 1: Cleanse with Crystal Micellar Water\nStep 2: Care with Crystal Micro-Essence Go oil-free for Crystal Clear Skin.",
+   "ingredients": "Encapsulating micelles attract up to 5 types of daily impurities which are lodged in your pores and removed, like a cleansing magnet. Perfect for oily skin, very gentle, it does not irritate the skin whilst deeply purifying pores for fresh and clear skin.",
+   "usageInstructions": "Soak a cotton pad with micellar water.\nGently cleanse and/or remove make-up from your face and eyes.\nRe-apply until the cotton pad becomes clean.",
+   "manufacturerName": "Beautycos International Co. Ltd 22 Zi Teng Street",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Revitalift Hyaluronic Acid Fresh Mix Serum Sheet Mask",
+  "handle": "revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "33g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+    },
+    "barcode": "6923700978148"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067-2_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067-3_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067-4_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067-5_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067-6_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067-7_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211067-8_2-loreal-paris-revitalift-hyaluronic-acid-fresh-mix-serum-sheet-mask.jpg"
+   }
+  ],
+  "details": {
+   "description": "The #1 sheet mask in china makes its way to India. Get plump & hydrated skin in just 15 minutes with this hyaluronic acid-infused sheet mask. This is a new generation of serum tissue mask – with serum and tissue mask in separate chambers, the hyaluronic acid serum mask preserves freshness until activated by mixing. Now give your skin a boost of hyaluronic acid with this intensely hydrating serum sheet mask. Validated by dermatologists, the face mask is a must-have in your skincare routine.",
+   "usageInstructions": "Fold the L’oréal sheet mask along the dotted line. Press the sachet until the seals break and release the hyaluronic acid serum into the tissue mask compartment.\nMix well and make sure the tissue becomes fully soaked. Open the pack and apply on skin for plump, radiant skin in 15 mins.",
+   "manufacturerName": "BeautyCos International Co",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Revitalift Hyaluronic Acid Plumping Day Cream",
+  "handle": "revitalift-hyaluronic-acid-plumping-day-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15ml",
+    "price": "529",
+    "compare_at_price": "529",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+    }
+   },
+   {
+    "title": "50ml",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240444_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443-2_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443-3_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443-4_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443-5_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443-6_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443-7_3-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240443-8_2-loreal-paris-revitalift-hyaluronic-acid-plumping-day-cream-for-hydrated-smooth-radiant-skin.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Take a pea-sized amount of the L’Oréal Paris Hyaluronic Acid Cream and dot it all over freshly cleansed face and neck.\nGently spread and massage the anti-ageing day cream in circular motions till the face cream gets completely absorbed into the skin.\nFor best results, combine usage with dermatologist validated L’Oréal Paris Revitalift 1.5% Hyaluronic Acid Serum.\nSuitable and safe day cream for dry skin, normal skin, combination skin & early ageing skin.",
+   "manufacturerName": "Beautycos International Co. Ltd",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Revitalift Hyaluronic Acid Eye Serum",
+  "handle": "revitalift-hyaluronic-acid-eye-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20ml",
+    "price": "899",
+    "compare_at_price": "899",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40296795_1-loreal-paris-revitalift-hyaluronic-acid-eye-serum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296795_1-loreal-paris-revitalift-hyaluronic-acid-eye-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296795-2_1-loreal-paris-revitalift-hyaluronic-acid-eye-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296795-3_1-loreal-paris-revitalift-hyaluronic-acid-eye-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296795-4_1-loreal-paris-revitalift-hyaluronic-acid-eye-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296795-5_1-loreal-paris-revitalift-hyaluronic-acid-eye-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296795-6_1-loreal-paris-revitalift-hyaluronic-acid-eye-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40296795-7_1-loreal-paris-revitalift-hyaluronic-acid-eye-serum.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Step 1: Apply on clear skin.\nStep 2: Massage in small circles under the eye 4x\nStep 3: Smooth over your eyelid\nStep 4: Gently tap in excess with fingers.",
+   "manufacturerName": "PT. YASULOR INDONESIA KAWASAN INDUSTRI JABABEKA",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Revitalift Hyaluronic Acid Hydrating Gel Face Wash",
+  "handle": "revitalift-hyaluronic-acid-hydrating-gel-face-wash",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "229",
+    "compare_at_price": "229",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+    },
+    "barcode": "8994993016020"
+   },
+   {
+    "title": "100ml",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40235154_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-face-wash-gentle-cleansing-for-women.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153-2_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153-3_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153-4_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153-5_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153-6_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153-7_4-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40235153-8_2-loreal-paris-revitalift-hyaluronic-acid-hydrating-gel-facewash-gentle-cleansing-for-women.jpg"
+   }
+  ],
+  "details": {
+   "description": "Loreal Paris Hyaluronic Acid Facewash – Gently cleanses & hydrates for plump skin. Enriched with powerful hyaluronic acid, plumps up skin with hydration. With creamy and ultra-fine foam that can penetrate pores, this gentle cleanser thoroughly clears impurities and make-up. Gentle gel technology cleanses without drying out the skin. Skin looks fresh and hydrated and over time; skin feels smooth, plumped and youthfully radiant* - making it one of the best face wash for women out there! Dermatologically tested. A suitable face wash for all skin types!",
+   "usageInstructions": "Gently apply the cleanser on a wet face and neck.\nMassage in circular motions and rinse off with water.\nAvoid the eye contour and follow this face wash for dry skin with 1.5% Hyaluronic Acid Serum and Hyaluronic Acid Plumping Gel Cream for best results! *As per self-assessment",
+   "manufacturerName": "For LOREAL INDIA PVT LTD",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Revitalift Hyaluronic Acid Oil Control Replumping Cleanser",
+  "handle": "revitalift-hyaluronic-acid-oil-control-replumping-cleanser",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000-2_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000-3_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000-4_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000-5_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000-6_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000-7_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40352000-8_1-loreal-paris-revitalift-hyaluronic-acid-oil-control-replumping-cleansing-gel.jpg"
+   }
+  ],
+  "details": {
+   "description": "Introducing L'Oréal Paris Revitalift Hyaluronic Acid Oil Control Replumping Cleansing Gel, our new cleanser enriched with clarifying Salicylic acid and Hyaluronic acid, helps reduce facial oiliness by -54%. The cleansing gel intensely hydrates the skin while controlling oiliness on the face. It deeply cleanses the skin, helping to reduce oiliness and unclog dilated, visible pores without causing dryness or dehydrating skin.",
+   "manufacturerName": "L'Oréal India Pvt Ltd.pt. Yasulor Indonesia",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Revitalift Laser X3 Power Water",
+  "handle": "revitalift-laser-x3-power-water",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "925",
+    "compare_at_price": "925",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019414_8-loreal-paris-revitalift-laser-x3-power-water.jpg"
+    },
+    "barcode": "6955818245652"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019414_8-loreal-paris-revitalift-laser-x3-power-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019414-2_8-loreal-paris-revitalift-laser-x3-power-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019414-3_8-loreal-paris-revitalift-laser-x3-power-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019414-4_8-loreal-paris-revitalift-laser-x3-power-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019414-5_8-loreal-paris-revitalift-laser-x3-power-water.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019414-6_1-loreal-paris-revitalift-laser-x3-power-water.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Revitalift Laser X3 New Skin Anti-Ageing Power Water is a unique breakthrough formulation that is enriched with powerful active ingredients to give an instant boost to your skin, leaving it smoother & more tender. \nInspired by dermatological procedures. 1st renewing anti-ageing power water created by L'Oreal Skincare Laboratories for a unique sensorial experience & visibly beautiful results. Dermatologically tested. Suited for oily, dry & all skin types.",
+   "usageInstructions": "Use daily on cleansed face before essences or moisturizers for a complete skincare solution.",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Revitalift Laser X3 Renewing Anti-Ageing Serum",
+  "handle": "revitalift-laser-x3-renewing-anti-ageing-serum",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30ml",
+    "price": "1585",
+    "compare_at_price": "1585",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003942_12-loreal-paris-revitalift-laser-x3-renewing-anti-ageing-serum.jpg"
+    },
+    "barcode": "9923240958621"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003942_12-loreal-paris-revitalift-laser-x3-renewing-anti-ageing-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003942-2_8-loreal-paris-revitalift-laser-x3-renewing-anti-ageing-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003942-3_8-loreal-paris-revitalift-laser-x3-renewing-anti-ageing-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003942-4_8-loreal-paris-revitalift-laser-x3-renewing-anti-ageing-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003942-5_8-loreal-paris-revitalift-laser-x3-renewing-anti-ageing-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003942-6_8-loreal-paris-revitalift-laser-x3-renewing-anti-ageing-serum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003942-7_1-loreal-paris-revitalift-laser-x3-renewing-anti-ageing-serum.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Revitalift Laser X3 Renewing Anti-Ageing Serum is enriched with highly concentrated actives to provide intense, fast benefits which reverse the signs of ageing. Inspired by dermatological procedures to give younger-looking skin. \n1st renewing anti-ageing serum created by L'Oreal Skincare Laboratories to dramatically reduce wrinkles, fine lines & ageing. Instantly refines skin texture to reduce wrinkles, boost elasticity and hydration for a smoother and radiant look. 3 % Pro-Xylane + Adenosine give the skin fast, intense result through triple action for visible skin transformation.\nDermatologically tested. Suited for oily, dry and all skin types.",
+   "usageInstructions": ", Apply day and night on the whole face before moisturizer.\n, During the day, recommend using with white perfect laser all-around protection whitening cream SPF 19/PA.\n, At night it is recommended to use with white perfect laser overnight treatment.",
+   "countryOfOrigin": "China"
+  }
+ },
+ {
+  "title": "Revitalift Moisturizing Day Cream SPF 35",
+  "handle": "revitalift-moisturizing-day-cream-spf-35",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "1049",
+    "compare_at_price": "1049",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003938_13-loreal-paris-revitalift-moisturizing-day-cream-spf-23-pa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003938_13-loreal-paris-revitalift-moisturizing-day-cream-spf-23-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003938-2_1-loreal-paris-revitalift-moisturizing-day-cream-spf-23-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003938-3_1-loreal-paris-revitalift-moisturizing-day-cream-spf-23-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003938-4_1-loreal-paris-revitalift-moisturizing-day-cream-spf-23-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003938-5_1-loreal-paris-revitalift-moisturizing-day-cream-spf-23-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003938-6_1-loreal-paris-revitalift-moisturizing-day-cream-spf-23-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003938-7_1-loreal-paris-revitalift-moisturizing-day-cream-spf-23-pa.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Revitalift Moisturizing Day Cream is enriched with anti-ageing elements that reduce fine lines and wrinkles, boost skin firmness, youthfulness, and radiance, and provide sunscreen/UV protection. A powerful anti-ageing day cream created by L'Oreal Skincare Laboratories for triple action that gives transformed skin. Instantly boosts the skin texture on 8 key zones for a smoother, fairer, and younger-looking look. Dermalift Technology, Pro-Retinol A, and Centella Asiatica re-firm, restore, and re-plump the skin. Use daily with Revitalift Essence, Night Cream, and Eye Cream for a complete anti-ageing solution.",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Revitalift Moisturizing Night Cream",
+  "handle": "revitalift-moisturizing-night-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003941_9-loreal-paris-revitalift-moisturizing-night-cream.jpg"
+    },
+    "barcode": "8992304017803"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003941_9-loreal-paris-revitalift-moisturizing-night-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003941-2_7-loreal-paris-revitalift-moisturizing-night-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003941-3_7-loreal-paris-revitalift-moisturizing-night-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003941-4_7-loreal-paris-revitalift-moisturizing-night-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003941-5_7-loreal-paris-revitalift-moisturizing-night-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003941-6_1-loreal-paris-revitalift-moisturizing-night-cream.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Revitalift Night Cream and face moisturizer is enriched with anti-ageing elements that reduce fine lines and wrinkles, boost skin firmness, youthfulness, radiance and enhance the skin regeneration process overnight. \nA powerful anti-ageing night cream created by L'Oreal Skincare Laboratories for overnight anti-ageing benefits for a younger look. Hydrates the skin and boosts regeneration for a fresh and radiant look overnight. Dermalift Technology, Pro-Retinol A and Centella Asiatica to re-firm, restore & revitalize the skin.\nDermatologically tested. Suited for oily, dry and all skin types.",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Revitalift Triple Action Night Cream-Mask",
+  "handle": "revitalift-triple-action-night-cream-mask",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "1679",
+    "compare_at_price": "1679",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153853_10-loreal-paris-revitalift-laser-x3-night-cream-mask.jpg"
+    },
+    "barcode": "8994993010431"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153853_10-loreal-paris-revitalift-laser-x3-night-cream-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153853-2_9-loreal-paris-revitalift-laser-x3-night-cream-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153853-3_9-loreal-paris-revitalift-laser-x3-night-cream-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153853-4_9-loreal-paris-revitalift-laser-x3-night-cream-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153853-5_9-loreal-paris-revitalift-laser-x3-night-cream-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153853-6_9-loreal-paris-revitalift-laser-x3-night-cream-mask.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153853-7_1-loreal-paris-revitalift-laser-x3-night-cream-mask.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Revitalift Triple Action Night Cream-Mask is a face moisturiser-cum-mask that provides an overnight solution to regenerate the skin texture, by reducing wrinkles and restoring skin firmness for a younger look. Inspired by dermatological procedures to give younger-looking skin, this is 1st regenerating overnight cream and face moisturiser with an ultra-thin, beautiful stretchable texture created by L'Oreal Skincare Laboratories. Instantly hydrates and refines the skin overnight, for a visibly smoother and wrinkle-free look. It has 3 % Pro-Xylene + LHA to stimulate the skin, refine skin texture and reduce pores. Use it every night on a cleansed face and neck for a bouncier, smoother skin transformation. Dermatologically tested and is suited for oily, dry & all skin types.",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Skin Perfect 20+ Anti-Imperfections Cream",
+  "handle": "skin-perfect-20-anti-imperfections-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "18g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019412_3-loreal-paris-skin-perfect-anti-imperfections-cream-age-20.jpg"
+    },
+    "barcode": "8901526104727"
+   },
+   {
+    "title": "50g",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019407_4-loreal-paris-skin-perfect-20-anti-imperfections-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019412_3-loreal-paris-skin-perfect-anti-imperfections-cream-age-20.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019412-2_2-loreal-paris-skin-perfect-anti-imperfections-cream-age-20.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019412-3_1-loreal-paris-skin-perfect-anti-imperfections-cream-age-20.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019407_4-loreal-paris-skin-perfect-20-anti-imperfections-cream.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal skin perfect anti-imperfections and whitening cream is Enriched with Purify. This formula helps reduce imperfections such as spots, hides blemishes and marks and controls oil for a shine-free look. Designed for women from 20 years old, the 1st skin care solution that acts on tone and texture at every age for a perfectly smooth, youthful and fairer skin. It is clinically proven the smoother the skin the fairer it looks.",
+   "usageInstructions": "Apply at least once a day on cleansed face and neck  \n Avoid eye contour",
+   "manufacturerName": "L'Oral India Pvt. Ltd. C36",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Skin Perfect 20+ Facial Foam",
+  "handle": "skin-perfect-20-facial-foam",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019406_3-loreal-paris-skin-perfect-20-facial-foam.jpg"
+    },
+    "barcode": "8901526104666"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019406_3-loreal-paris-skin-perfect-20-facial-foam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019406-2_1-loreal-paris-skin-perfect-20-facial-foam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019406-3_1-loreal-paris-skin-perfect-20-facial-foam.jpg"
+   }
+  ],
+  "details": {
+   "description": "LOreal Paris Age 20+ Skin Perfect Range comprises of a day cream along with cleansing foam. Combined with Perlite and Salicylic Acid it helps keep oiliness, pimples, and blemishes at bay through your twenties while giving you that perfect clear skin glow. Age 20+ skin perfect range comprises of a day cream along with cleansing foam.",
+   "usageInstructions": ", Use Age 20+ Skin Perfect Range day cream along with cleansing foam \n, Use twice a day for best results",
+   "manufacturerName": "Pritam International Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Skin Perfect 30+ Anti-Fine Lines Cream",
+  "handle": "skin-perfect-30-anti-fine-lines-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "18g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019409_4-loreal-paris-skin-perfect-30-anti-fine-lines-cream.jpg"
+    },
+    "barcode": "8901526104697"
+   },
+   {
+    "title": "50g",
+    "price": "449",
+    "compare_at_price": "449",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019408_3-loreal-paris-skin-perfect-30-anti-fine-lines-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019409_4-loreal-paris-skin-perfect-30-anti-fine-lines-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019409-2_3-loreal-paris-skin-perfect-30-anti-fine-lines-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019409-3_2-loreal-paris-skin-perfect-30-anti-fine-lines-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019409-4_1-loreal-paris-skin-perfect-30-anti-fine-lines-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019409-5_1-loreal-paris-skin-perfect-30-anti-fine-lines-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019408_3-loreal-paris-skin-perfect-30-anti-fine-lines-cream.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Age 30+ Skin Perfect Range comprises a moisturizing cream along with cleansing foam. Both contain pro collagen which is perfect for fighting those fine lines that begin to appear in your thirties, giving you younger, glowing skin.",
+   "usageInstructions": "Apply at least once a day on cleaned face and neck.\nAvoid eye contour",
+   "manufacturerName": "L'Oreal India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Skin Perfect 30+ Facial Foam",
+  "handle": "skin-perfect-30-facial-foam",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019411_3-loreal-paris-skin-perfect-30-facial-foam.jpg"
+    },
+    "barcode": "8901526104710"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019411_3-loreal-paris-skin-perfect-30-facial-foam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019411-2_1-loreal-paris-skin-perfect-30-facial-foam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019411-3_1-loreal-paris-skin-perfect-30-facial-foam.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oreal Paris Age 30+ Skin Perfect Range comprises a moisturizing cream along with cleansing foam. Both contain pro collagen which is perfect for fighting those fine lines that begin to appear in your thirties, giving you younger, glowing skin.",
+   "usageInstructions": ", Apply at least once a day on cleaned face and neck.\n, Avoid eye contour",
+   "manufacturerName": "Pritam International Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Skin Perfect 40+ Anti-Ageing Cream",
+  "handle": "skin-perfect-40-anti-ageing-cream",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "649",
+    "compare_at_price": "649",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019410_4-loreal-paris-skin-perfect-40-anti-aging-cream.jpg"
+    },
+    "barcode": "8901526104703"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019410_4-loreal-paris-skin-perfect-40-anti-aging-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019410-2_2-loreal-paris-skin-perfect-40-anti-aging-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019410-3_1-loreal-paris-skin-perfect-40-anti-aging-cream.jpg"
+   }
+  ],
+  "details": {
+   "description": "LOreal Paris Age 40+ Skin Perfect cream helps work on all those skin problems aging causes. Packed with Pro-Retinol A it helps get rid of wrinkles and revitalizes your skin. It helps you get that flawless looking skin even post 40. After all, age is just a number",
+   "usageInstructions": "Use twice a day for best results",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "UV Defender Serum Protector SPF 50 - Bright & Clear",
+  "handle": "uv-defender-serum-protector-spf-50-bright-clear",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+    },
+    "barcode": "8994993014668"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765-2_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765-3_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765-4_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765-5_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765-6_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765-7_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255765-8_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-bright-clear-non-sticky-sunscreen-with-niacinamide-uva-uvb-protection.jpg"
+   }
+  ],
+  "details": {
+   "description": "The L'Oréal Paris UV Defender Bright & Clear UV Serum Protector is a creamy, lightweight brightening sunscreen formula that comes with the skin brightening ingredient Niacinamide. With the use of this sunscreen with niacinamide, your skin immediately becomes instantly brighter and protected from UV rays. This L'Oréal sunscreen is best suited for dull skin.",
+   "ingredients": "Aqua, Water, Ethylhexyl Methoxycinnamate, Titanium Dioxide, Squalane, Glycerin, Drometrizole Trisiloxane, Terephthalylidene Dicamphor Sulfonic Acid, Propylene Glycol, Alcohol Denat., Triethanolamine, Dipropylene Glycol, Mica, Stearic Acid, Potassium Cetyl Phosphate, Tocopherol, Nylon-12, Ci 77891, Titanium Dioxide, Niacinamide, Sodium Cocoyl Sarcosinate, Sodium Chloride, Phenoxyethanol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Paeonia Suffruticosa Root Extract, Thermus Thermophillus Ferment, Peg-100 Stearate, Ethylhexyl Triazone, Trisodium Ethylenediamine Disuccinate, Palmitic Acid, Polysorbate 80, Limonene, Xanthan Gum, Linalool, Tromethamine, Isohexadecane, Caprylyl Glycol, Alpha-Isomethyl Ionone, Barium Sulfate, Carbomer, Acrylamide/Sodium Acryloyldimethyltaurate Copolymer, Myristic Acid, Sorbitan Oleate, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Cetyl Alcohol, Butylene Glycol, Bht, Butyrospermum Parkii Seed Cake Extract, Shea Seedcake Extract, Potassium Sorbate, Aluminum Hydroxide, Hexyl Cinnamal, Glyceryl Stearate, Parfum, Fragrance",
+   "manufacturerName": "For Loreal India Pvt Ltd PT. YASULOR INDONESIA Kawasan Industri Jababeka",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "UV Defender Serum Protector SPF 50 - Correct & Protect",
+  "handle": "uv-defender-serum-protector-spf-50-correct-protect",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "749",
+    "compare_at_price": "749",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+    },
+    "barcode": "8994993014682"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764-2_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764-3_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764-4_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764-5_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764-6_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764-7_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255764-8_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-correct-protect-non-greasy-anti-ageing-sunscreen-uva-uvb-protection.jpg"
+   }
+  ],
+  "details": {
+   "description": "Do you know that daily UV exposure without daily sunscreen protection contributes up to 75%* of skin aging? L’Oréal Paris UV Defender UV Serum Protector is a sun cream that prevents 5 years of aging in only 6 months of use! L’Oréal Paris UV Defender Serum Protector prevents fine lines, dark spots and dullness and has a matte sunscreen formula: With NO RESIDUE, NO SHINE and NON STICKY. The UV Defender Serum Protector comes with a powerful combination of SPF 50+ PA++++ broad-spectrum protection against UVA, UVB and Long Range UV. A tinted lightweight sunscreen formula, the L’Oréal Paris UV Defender Correct & Protect Tinted UV Serum Protector comes with antioxidant Vitamin CG. This is a powerful ingredient to protect your skin from free radicals. Enriched with apricot pigments, this SPF 50 sunscreen fuses perfectly with the skin, leaving it more even and radiant. L’Oréal UV Correct & Protect Tinted Serum Protector is best suited for people with uneven skin tone.",
+   "ingredients": "Aqua, Water, Ethylhexyl Methoxycinnamate, Titanium Dioxide, Squalane, Glycerin, Drometrizole Trisiloxane, Terephthalylidene Dicamphor Sulfonic Acid, Propylene Glycol, Alcohol Denat., Triethanolamine, Dipropylene Glycol, Mica, Stearic Acid, Potassium Cetyl Phosphate, Tocopherol, Nylon-12, Ci 77891, Titanium Dioxide, Niacinamide, Sodium Cocoyl Sarcosinate, Sodium Chloride, Phenoxyethanol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Paeonia Suffruticosa Root Extract, Thermus Thermophillus Ferment, Peg-100 Stearate, Ethylhexyl Triazone, Trisodium Ethylenediamine Disuccinate, Palmitic Acid, Polysorbate 80, Limonene, Xanthan Gum, Linalool, Tromethamine, Isohexadecane, Caprylyl Glycol, Alpha-Isomethyl Ionone, Barium Sulfate, Carbomer, Acrylamide/Sodium Acryloyldimethyltaurate Copolymer, Myristic Acid, Sorbitan Oleate, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Cetyl Alcohol, Butylene Glycol, Bht, Butyrospermum Parkii Seed Cake Extract, Shea Seedcake Extract, Potassium Sorbate, Aluminum Hydroxide, Hexyl Cinnamal, Glyceryl Stearate, Parfum, Fragrance",
+   "usageInstructions": "Use this sunscreen for women and men after your usual routine of cleanser, serum and cream every morning for visible results.\nUse a generous amount for maximum protection.",
+   "manufacturerName": "For Loreal India Pvt Ltd PT. YASULOR INDONESIA Kawasan Industri Jababeka",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "UV Defender Serum Protector SPF 50 - Matte & Fresh",
+  "handle": "uv-defender-serum-protector-spf-50-matte-fresh",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+    },
+    "barcode": "8994993014705"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763-2_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763-3_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763-4_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763-5_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763-6_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763-7_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255763-8_2-loreal-paris-uv-defender-serum-protector-spf-50-pa-matte-fresh-lightweight-for-oily-skin-uva-uvb-protection.jpg"
+   }
+  ],
+  "details": {
+   "description": "Did you know that daily UV exposure without daily sunscreen protection contributes up to 75%* of skin aging? The L’Oréal UV Defender Matte and Fresh is a sunblock cream that prevents 5 years of ageing in only 6 months of use! This sun cream is a matte sunscreen that prevents fine lines, dark spots and dullness. The L’Oréal Paris sunscreen for the face is a non-greasy formula with NO RESIDUE, NO SHINE and is NON-STICKY to the skin. The oil-free sunscreen comes with a powerful combination of SPF 50+ PA++++ broad-spectrum and protects against UVA, UVB and Long-Range UV. A creamy, lightweight mattifying dry touch sunscreen formula, the L’Oréal UV Defender Matte and Fresh are made with oil control ingredient Airlicium that absorbs 7x its weight in sebum to instantly reduce shine and pore visibility. Matte & Fresh UV Defender is best suited for oily skin users and those who require oil control or sebum control as it leaves a dry matte finish on the skin even in hot and humid climates. Tested up to 45 C and 80% relative humidity.",
+   "ingredients": "Aqua, Water, Ethylhexyl Methoxycinnamate, Titanium Dioxide, Squalane, Glycerin, Drometrizole Trisiloxane, Terephthalylidene Dicamphor Sulfonic Acid, Propylene Glycol, Alcohol Denat., Triethanolamine, Dipropylene Glycol, Mica, Stearic Acid, Potassium Cetyl Phosphate, Tocopherol, Nylon-12, Ci 77891, Titanium Dioxide, Niacinamide, Sodium Cocoyl Sarcosinate, Sodium Chloride, Phenoxyethanol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Paeonia Suffruticosa Root Extract, Thermus Thermophillus Ferment, Peg-100 Stearate, Ethylhexyl Triazone, Trisodium Ethylenediamine Disuccinate, Palmitic Acid, Polysorbate 80, Limonene, Xanthan Gum, Linalool, Tromethamine, Isohexadecane, Caprylyl Glycol, Alpha-Isomethyl Ionone, Barium Sulfate, Carbomer, Acrylamide/Sodium Acryloyldimethyltaurate Copolymer, Myristic Acid, Sorbitan Oleate, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Cetyl Alcohol, Butylene Glycol, Bht, Butyrospermum Parkii Seed Cake Extract, Shea Seedcake Extract, Potassium Sorbate, Aluminum Hydroxide, Hexyl Cinnamal, Glyceryl Stearate, Parfum, Fragrance",
+   "usageInstructions": "Use this sunscreen for women and men after your usual routine of cleanser, serum and cream every morning for visible results.\nUse a generous amount for maximum protection.",
+   "manufacturerName": "For Loreal India Pvt Ltd PT. YASULOR INDONESIA Kawasan Industri Jababeka",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "UV Defender Serum Protector SPF 50 - Moist & Fresh",
+  "handle": "uv-defender-serum-protector-spf-50-moist-fresh",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+    },
+    "barcode": "8994993014743"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762-2_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762-3_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762-4_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762-5_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762-6_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762-7_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255762-8_2-loreal-paris-uv-defender-serum-protector-sunscreen-spf-50-pa-moist-fresh-non-greasy-hydrating-sunscreen-with-hyaluronic-acid.jpg"
+   }
+  ],
+  "details": {
+   "description": "Did you know that daily UV exposure without daily sunscreen protection contributes up to 75% of skin aging? The L’Oréal UV Defender Moist and Fresh is a sunblock cream that prevents 5 years of aging in only 6 months of use! This sun cream is a hydrating sunscreen that prevents fine lines, dark spots and dullness. The L’Oréal Paris sunscreen for the face is made of a non-greasy formula with NO RESIDUE, NO SHINE and is NON-STICKY to the skin. The UV Defender Serum Protector comes with a powerful combination of SPF 50+ PA++++ broad-spectrum protection against UVA, UVB and Long-Range UV. A creamy, non-oily texture with hydrating effect sunscreen formula, L’Oréal Paris UV Defender Moist & Fresh UV Serum Protector comes with moisturizing HYALURONIC ACID, a top dermatologist-recommended ingredient to plump skin with moisture. This sunscreen with hyaluronic acid is best suited for dry skin users who require hydration and nourishment.",
+   "ingredients": "Aqua, Water, Ethylhexyl Methoxycinnamate, Titanium Dioxide, Squalane, Glycerin, Drometrizole Trisiloxane, Terephthalylidene Dicamphor Sulfonic Acid, Propylene Glycol, Alcohol Denat., Triethanolamine, Dipropylene Glycol, Mica, Stearic Acid, Potassium Cetyl Phosphate, Tocopherol, Nylon-12, Ci 77891, Titanium Dioxide, Niacinamide, Sodium Cocoyl Sarcosinate, Sodium Chloride, Phenoxyethanol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Paeonia Suffruticosa Root Extract, Thermus Thermophillus Ferment, Peg-100 Stearate, Ethylhexyl Triazone, Trisodium Ethylenediamine Disuccinate, Palmitic Acid, Polysorbate 80, Limonene, Xanthan Gum, Linalool, Tromethamine, Isohexadecane, Caprylyl Glycol, Alpha-Isomethyl Ionone, Barium Sulfate, Carbomer, Acrylamide/Sodium Acryloyldimethyltaurate Copolymer, Myristic Acid, Sorbitan Oleate, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Cetyl Alcohol, Butylene Glycol, Bht, Butyrospermum Parkii Seed Cake Extract, Shea Seedcake Extract, Potassium Sorbate, Aluminum Hydroxide, Hexyl Cinnamal, Glyceryl Stearate, Parfum, Fragrance",
+   "usageInstructions": "Use this sunscreen for women and men after your usual routine of cleanser, serum and cream every morning for visible results.\nUse a generous amount for maximum protection.",
+   "manufacturerName": "For Loreal India Pvt Ltd PT. YASULOR INDONESIA Kawasan Industri Jababeka",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "White Perfect Day Cream SPF 17",
+  "handle": "white-perfect-day-cream-spf-17",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "649",
+    "compare_at_price": "649",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947_9-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+    },
+    "barcode": "8994993016846"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947_9-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947-2_9-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947-3_9-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947-4_9-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947-5_9-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947-6_9-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947-7_1-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003947-8_1-loreal-paris-white-perfect-day-cream-spf-17-pa.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Use every morning on cleansed face and neck.",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "White Perfect Clinical Day Cream SPF 19",
+  "handle": "white-perfect-clinical-day-cream-spf-19",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "1299",
+    "compare_at_price": "1299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927_10-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927_10-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927-2_10-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927-3_10-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927-4_10-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927-5_10-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927-6_2-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927-7_1-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003927-8_1-loreal-paris-white-perfect-clinical-day-cream-spf19-pa.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Apply daily in the morning on your face and neck.",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "White Perfect Milky Foam Face Wash",
+  "handle": "white-perfect-milky-foam-face-wash",
+  "vendor": "L'Oreal Paris",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "229",
+    "compare_at_price": "229",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948_10-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30003949_10-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948_10-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948-2_8-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948-3_8-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948-4_8-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948-5_8-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948-6_8-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948-7_8-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30003948-8_1-loreal-paris-white-perfect-milky-foam-face-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "L'Oréal Paris White Perfect Milky Foam is a daily skin cleanser and face wash, enriched with powerful skin brightening benefits that boost the complexion by preparing your skin for complete whitening care. An intense & effective skin cleansing solution created by L'Oréal Skincare Laboratories, for clean and flawless skin. Instantly cleanses & brightens the skin thoroughly, eliminating skin impurities.Tourmaline Gemstone & Vitamin C, to remove excess sebum and dead skin cells and boost skin radiance.",
+   "usageInstructions": "Lather up and massage all over the wet face.\nRinse off with clean water.\nAvoid direct eye contact. \nUse in the morning and in the evening.",
+   "countryOfOrigin": "Indonesia"
+  }
+ }
+]
