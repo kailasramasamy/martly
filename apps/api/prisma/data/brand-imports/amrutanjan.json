@@ -1,0 +1,118 @@
+{
+  "brand": "Amrutanjan",
+  "manufacturer": "Amrutanjan Health Care Ltd.",
+  "feed": "amrutanjan-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/amrutanjan/logo-c826df29.png",
+  "themeColor": "#00A651",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Amrutanjan ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Pain\\ Balm\\ Extra\\ Power$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Strong\\ Pain\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Maha\\ Strong\\ Pain\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Back\\ Pain\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Headache\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Joint\\ Muscle\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Pain\\ Relief\\ Patch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Comfy\\ Period\\ Pain\\ Relief\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Relief\\ Cough\\ \\&\\ Cold\\ Rub$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Relief\\ Cough\\ \\&\\ Cold\\ Nasal\\ Inhaler$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Comfy\\ Snug\\ Fit\\ Sanitary\\ Pads\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Comfy\\ Snug\\ Fit\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Decorn\\ Corn\\ Caps$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    }
+  ]
+}
