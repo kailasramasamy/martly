@@ -1,0 +1,182 @@
+{
+  "brand": "Skippi",
+  "manufacturer": "Skippi Ice Pops Pvt. Ltd.",
+  "feed": "skippi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/skippi/logo-056dfdfd.png",
+  "themeColor": "#F7A21B",
+  "themeColorSecondary": "#2D3B45",
+  "namePrefix": "Skippi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ice\\ Pops\\ 6\\ Flavours\\ \\(12\\ x\\ 70ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Desi\\ Flavours\\ Ice\\ Pops\\ \\(12\\ x\\ 70ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Natural\\ Ice\\ Pops\\ Lychee,\\ Raspberry\\ \\&\\ Cola\\ \\(12\\ x\\ 32ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Natural\\ Ice\\ Pops\\ Pink\\ Guava,\\ Lemon\\ \\&\\ Pineapple\\ \\(12\\ x\\ 32ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Guava\\ Ice\\ Pops\\ \\(4\\ x\\ 80ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Cola\\ Ice\\ Pops\\ \\(4\\ x\\ 80ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Kala\\ Khatta\\ Ice\\ Pops\\ \\(4\\ x\\ 80ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Mango\\ Twist\\ Ice\\ Pops\\ \\(4\\ x\\ 80ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Orange\\ Ice\\ Pops\\ \\(4\\ x\\ 80ml\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Biscoff\\ Frozen\\ Ice\\ Pop$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Frozen\\ Ice\\ Pop$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Custard\\ Apple\\ Frozen\\ Ice\\ Pop$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Frozen\\ Ice\\ Pop$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Jamun\\ Frozen\\ Ice\\ Pop$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Fruitz\\ Apple\\ Real\\ Pulp\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruitz\\ Lychee\\ Real\\ Pulp\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruitz\\ Mango\\ Real\\ Pulp\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Fruitz\\ Pink\\ Guava\\ Real\\ Pulp\\ Drink$",
+      "path": [
+        "Beverages",
+        "Juices & Fruit Drinks",
+        "Fruit Drinks"
+      ]
+    },
+    {
+      "match": "^Corn\\ Sticks\\ \\(12\\ Sticks\\)$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Kurkure & Extruded Snacks"
+      ]
+    },
+    {
+      "match": "^Cream\\ Roll\\ \\(6\\ pcs\\)$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Eggless\\ Muffins\\ Assorted\\ \\(8\\ pcs\\)$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Muffins & Cupcakes"
+      ]
+    }
+  ]
+}
