@@ -1,0 +1,411 @@
+[
+ {
+  "title": "Soap",
+  "handle": "soap",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "38",
+    "compare_at_price": "38",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100003862_1-mysore-sandal-bathing-soap.jpg"
+    }
+   },
+   {
+    "title": "125g",
+    "price": "69",
+    "compare_at_price": "69",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100003902_1-mysore-sandal-bathing-soap.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100003949_1-mysore-sandal-bathing-soap.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003862_1-mysore-sandal-bathing-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003862-2_1-mysore-sandal-bathing-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003862-3_1-mysore-sandal-bathing-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003902_1-mysore-sandal-bathing-soap.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100003949_1-mysore-sandal-bathing-soap.jpg"
+   }
+  ],
+  "details": {
+   "description": "Mysore Sandal Pure Sandalwood Oil Soap features the timeless essence of sandalwood oil, nature's gift. Renowned for its lingering fragrance, this soap enhances your skin, leaving it glowing, soft, and blemish-free. Its luxurious formula ensures your skin remains youthful and beautiful, making it a cherished addition to your daily skincare routine. Indulge in the rich, aromatic experience of Mysore Sandal Soap and embrace the beauty benefits it brings to your skin.",
+   "usageInstructions": "Wet the soap bar and rub to generate a rich and cleansing lather.",
+   "manufacturerName": "Karnataka Soaps & Detergents Ltd #27 Industrial Suburb P.B No. 5531 Bangalore-Pune Highway Rajajinagar",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Soap",
+  "handle": "gold-soap",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005530_2-mysore-sandal-bathing-soap-gold.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30005530_2-mysore-sandal-bathing-soap-gold.jpg"
+   }
+  ],
+  "details": {
+   "description": "This Soap is made from vegetable oils contains natural Mysore Sandalwood Oil popularly known as Liquid Gold Sandalwood Oil is recommended in ancient Ayurvedic texts for soothing skin care and has been cherished for centuries for its exotic fragrance This Soap enriched with moisturizers conditioners nourishes rejuvenates and keep the skin wrinkle and blemish free bringing radiant glow For Beauty tips tricks more visit",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Centennial Soap",
+  "handle": "centennial-soap",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40063491_2-mysore-sandal-bathing-soap-centennial.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40063491_2-mysore-sandal-bathing-soap-centennial.jpg"
+   }
+  ],
+  "details": {
+   "description": "Unchanging and matchless with a fragrance that rejuvenates the mind, body and soul. It is a legacy created by you which celebrates 100 years of purity.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Baby Soap",
+  "handle": "baby-soap",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005825_1-mysore-sandal-bathing-soap-baby.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005825_1-mysore-sandal-bathing-soap-baby.jpg"
+   }
+  ],
+  "details": {
+   "description": "Enriched with sandalwood and almond oils.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Body Wash",
+  "handle": "body-wash",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40034578_5-mysore-sandal-body-wash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40034578_5-mysore-sandal-body-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Mysore Sandal Body Wash, a innovated luxury bathing product containing natural Sandal Wood Oil the nature's mantra for soft and gentle skin. Available in a soft squeeze tube pack of 200ml with a Loofah free for a luxury foaming bath. Pamper your skin for an exclusive glow with exquisite fragrance.",
+   "usageInstructions": "Rub on wet body surface while taking bath.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Herbal Hand Wash",
+  "handle": "herbal-hand-wash",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40084350_1-mysore-sandal-handwash-herbal.jpg"
+    },
+    "barcode": "8901287208894"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084350_1-mysore-sandal-handwash-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084350-2_1-mysore-sandal-handwash-herbal.jpg"
+   }
+  ],
+  "details": {
+   "description": "Mysore Sandal Herbal Hand Wash is enriched with 19 natural essential oils, and its natural Aloe Vera juice has a soothing effect, which smoothly lathers, cleanses, moisturises, and leaves hands fresh and smooth.",
+   "usageInstructions": "1. Moisten your hands.\n2. Press nozzle gently to get liquid hand wash.\n3. Work up a rich lather and rinse.",
+   "storageInstructions": "*Keep in a cool and dry place\n*Away from direct sunlight and children below 5 years",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rose Hand Wash",
+  "handle": "rose-hand-wash",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40084347_1-mysore-sandal-handwash-rose.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084347_1-mysore-sandal-handwash-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084347-2_1-mysore-sandal-handwash-rose.jpg"
+   }
+  ],
+  "details": {
+   "description": "Mysore Sandal Rose Hand Wash has a natural rose fragrance which smoothly lathers cleanses moisturises and leaves hands fresh and smooth For beauty tips tricks and more visit",
+   "usageInstructions": "Moisten your hands, press nozzle gently to get liquid hand wash, work up a rich lather and rinse.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Talc",
+  "handle": "talc",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "44",
+    "compare_at_price": "44",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/270185_1-mysore-sandal-talc.jpg"
+    },
+    "barcode": "8901287308211"
+   },
+   {
+    "title": "300g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/270184_1-mysore-sandal-talc.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/270185_1-mysore-sandal-talc.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/270184_1-mysore-sandal-talc.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the captivating fragrance of natural sandalwood with Mysore Sandal Talc, a luxurious talcum powder perfect for both men and women. Infused with the renowned medicinal properties of sandalwood, this talc offers a refreshing and long-lasting experience that keeps you feeling cool, fresh, and protected from unpleasant odours. Sprinkle this talc liberally after your bath to enjoy its addictive fragrance and the soothing, skin-nourishing benefits of this sacred ingredient. Crafted with the utmost care, Mysore Sandal Talc is a true celebration of the goodness of nature, delivering a sensorial delight that will leave you feeling rejuvenated and confident throughout the day.",
+   "usageInstructions": "Sprinkle Mysore Sandal Talc liberally after bath.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Agarbathies",
+  "handle": "premium-agarbathies",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20 pcs",
+    "price": "15",
+    "compare_at_price": "15",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40020184_1-mysore-sandal-premium-agarbathi.jpg"
+    },
+    "barcode": "8901287400106"
+   },
+   {
+    "title": "100 pcs",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005826_1-mysore-sandal-agarbathies-premium-100-sticks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020184_1-mysore-sandal-premium-agarbathi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005826_1-mysore-sandal-agarbathies-premium-100-sticks.jpg"
+   }
+  ],
+  "details": {
+   "description": "Mysore Sandal Premium Agarbathies offer a rich, traditional fragrance crafted from pure sandalwood. Hand-rolled using natural ingredients, they create a calming atmosphere ideal for meditation and relaxation. Each stick burns slowly, releasing a serene aroma that lingers delicately. Loved for their superior quality and authentic scent, Mysore Sandal Agarbathies are a cherished choice for spiritual practices and enhancing living spaces.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sir M V Agarbathies",
+  "handle": "sir-m-v-agarbathies",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100 pcs",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40020181_1-mysore-sandal-sir-m-v-agarbathies.jpg"
+    },
+    "barcode": "8901287400809"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020181_1-mysore-sandal-sir-m-v-agarbathies.jpg"
+   }
+  ],
+  "details": {
+   "description": "With this natural Sandalwood Oil the Unique Mysore Sandal Soap took its birth in the year 1918, Mysore Sandalwood Oil and Mysore Sandal Soap were accredited with Geographical Indication Resgistry on January 30, 2006. Today, Karnataka Soaps & Detergents Limited manufactures a wide range of natural Sandalwood Oil-based Soaps, Toiletries, Cosmetics, Agarbathies, and Detergents to suit the varied requirements of discerning consumers across the globe.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dhoop Cones",
+  "handle": "dhoop-cones",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20 pcs",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40020190_1-mysore-sandal-dhoop-cones.jpg"
+    },
+    "barcode": "8901287400991"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020190_1-mysore-sandal-dhoop-cones.jpg"
+   }
+  ],
+  "details": {
+   "description": "KS&DL the house of world famous Mysore Sandal soap brings to you the tradition of Offering Prayers with divine fragrance of natural Sandalwood, Lightup Mysore Sandal Dhoop for pleasant, Calm, Soothing, holistic experience of your Prayer.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kleenol Multipurpose Liquid Fresh Lime",
+  "handle": "kleenol-multipurpose-liquid-fresh-lime",
+  "vendor": "Mysore Sandal",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40020185_1-mysore-sandal-kleenol-multipurpose-liquid-fresh-lime-perfume.jpg"
+    },
+    "barcode": "8901287208498"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020185_1-mysore-sandal-kleenol-multipurpose-liquid-fresh-lime-perfume.jpg"
+   }
+  ],
+  "details": {
+   "description": "Kleenol Liquid detergent is scientifically formulated pH balanced with natural fresh lime fragrance. It is a concentrated cleaning liquid with fully bio-degradeable environment friendly. Surfactants added with auxiliary ingredients.",
+   "usageInstructions": "Dish Wash - Pour few drops of liquid into a bowl of water, dip sponge, cleanse & rinse the vessel.",
+   "manufacturerName": "Karnataka Soaps & Detergents LTD #27",
+   "countryOfOrigin": "India"
+  }
+ }
+]

@@ -1,0 +1,110 @@
+{
+  "brand": "Mysore Sandal",
+  "manufacturer": "Karnataka Soaps and Detergents Ltd.",
+  "feed": "mysore-sandal-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mysore-sandal/logo-7b237553.png",
+  "themeColor": "#B22222",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Mysore Sandal ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Gold\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Centennial\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Baby\\ Soap$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Rose\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Premium\\ Agarbathies$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Sir\\ M\\ V\\ Agarbathies$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Dhoop\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Kleenol\\ Multipurpose\\ Liquid\\ Fresh\\ Lime$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    }
+  ]
+}
