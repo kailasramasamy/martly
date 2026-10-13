@@ -1,0 +1,3502 @@
+[
+ {
+  "title": "Classic Vanilla Ice Cream",
+  "handle": "classic-vanilla-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126062_4-baskin-robbins-ice-cream-classic-vanilla.jpg"
+    }
+   },
+   {
+    "title": "700ml",
+    "price": "396",
+    "compare_at_price": "396",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40171117_6-baskin-robbins-classic-vanilla-ice-cream.jpg"
+    }
+   },
+   {
+    "title": "900ml",
+    "price": "475",
+    "compare_at_price": "475",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126051_3-baskin-robbins-ice-cream-classic-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126062_4-baskin-robbins-ice-cream-classic-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126062-2_5-baskin-robbins-ice-cream-classic-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126062-3_5-baskin-robbins-ice-cream-classic-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126062-4_3-baskin-robbins-ice-cream-classic-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126062-5_4-baskin-robbins-ice-cream-classic-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126062-6_4-baskin-robbins-ice-cream-classic-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126062-7_1-baskin-robbins-ice-cream-classic-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171117_6-baskin-robbins-classic-vanilla-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy, smooth goodness of Baskin Robbins' Classic Vanilla Ice Cream. Made with the finest vanilla beans, this timeless treat offers a rich, indulgent flavour that will leave you craving more. Relish the classic vanilla taste, perfect on its own or paired with your favourite desserts. Baskin Robbins is renowned for its commitment to quality and diverse flavour offerings, making this classic vanilla a popular choice among ice cream enthusiasts. Beat the heat with this delightfully creamy and delicious ice cream, sure to mesmerise your taste buds with every mouthful.",
+   "ingredients": "Water, Milk Solids, Sugar, Stabilizers (461, 412, 407), Emulsifier (471), Contains Permitted Synthetic Food Colours (102, 110) & Added Artificial Flavouring Substances (Vanilla)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (58 g)",
+    "Energy (Kcal)": "120.2",
+    "Fat (g)": "7.0",
+    "Sat. Fat (g)": "4.3",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "22.6",
+    "Sodium (mg)": "36.7",
+    "Carbohydrate (g)": "11.9",
+    "Dietary Fiber (g)": "0.0",
+    "Total Sugar (g)": "11.9",
+    "Added Sugar (g)": "8.2",
+    "Protein (g)": "2.4"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dutch Chocolate Ice Cream",
+  "handle": "dutch-chocolate-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212488_3-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+    },
+    "barcode": "8906006852495"
+   },
+   {
+    "title": "450ml",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126059_3-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+    }
+   },
+   {
+    "title": "700ml",
+    "price": "470",
+    "compare_at_price": "470",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212475_2-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212488_3-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212488-2_3-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212488-3_3-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212488-4_3-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212488-5_3-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212488-6_1-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126059_3-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212475_2-baskin-robbins-dutch-chocolate-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of Baskin Robbins Dutch Chocolate Ice Cream. Crafted with the finest cocoa, this decadent treat offers a deep, satisfying chocolate flavour that will delight your senses. Experience a velvety smooth texture and a silky mouthfeel with every spoonful. Satisfy your cravings and treat yourself guilt-free, as this ice cream not only tantalizes the taste buds but also helps to reduce stress levels and relax the nervous system. Perfect for enjoying on its own or as a complement to your favourite desserts, this Baskin Robbins Dutch Chocolate Ice Cream promises a luxurious experience that will leave you craving more.",
+   "ingredients": "Water, Milk Solids, Sugar, Cocoa Solids (5.5%), Stabilizers (461, 412, 407), Emulsifier (471)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100ml (58g)",
+    "ENERGY (kcal)": "130.5",
+    "PROTEIN (g)": "2.4",
+    "CARBOHYDRATE(g)": "14.5",
+    "TOTAL SUGAR(g)": "13.1",
+    "ADDED SUGAR(g)": "9.7",
+    "FAT(g)": "7.0",
+    "SAT. FAT(g)": "4.0",
+    "TRANS. FAT(g)": "0.0",
+    "CHOLESTEROL(mg)": "20.7",
+    "SODIUM(mg)": "34.9"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Ice Cream",
+  "handle": "chocolate-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900ml",
+    "price": "555",
+    "compare_at_price": "555",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126050_4-baskin-robbins-ice-cream-chocolate.jpg"
+    },
+    "barcode": "8906006850996"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126050_4-baskin-robbins-ice-cream-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126050-2_5-baskin-robbins-ice-cream-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126050-3_5-baskin-robbins-ice-cream-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126050-4_4-baskin-robbins-ice-cream-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126050-5_4-baskin-robbins-ice-cream-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the heat with some creamy and delicious ice cream by Baskin Robins, which is created using exotic and unique flavours that will leave you mesmerized with every mouthful. This classic and tempting Chocolate ice cream has a distinct hint of cocoa that is sure to leave you craving for more.",
+   "ingredients": "Water, Milk Solids, Sugar, Cocoa Solids, Stabilizers, (E461, E412, E407) & Emulsifier (E471)Contains 5% Cocoa Solids.",
+   "usageInstructions": "Order a tub and scoop it up and enjoy creamy ice cream at its best\nYou could also add some milk and blend it into a milkshake\nOr you could add some sauces & toppings like almonds and chocolate chips to convert you scoop into a delicious sundae",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cotton Candy Ice Cream",
+  "handle": "cotton-candy-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126060_3-baskin-robbins-ice-cream-cotton-candy.jpg"
+    }
+   },
+   {
+    "title": "700ml",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212480_1-baskin-robbins-cotton-candy-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126060_3-baskin-robbins-ice-cream-cotton-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126060-2_3-baskin-robbins-ice-cream-cotton-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126060-3_3-baskin-robbins-ice-cream-cotton-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126060-4_2-baskin-robbins-ice-cream-cotton-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126060-5_2-baskin-robbins-ice-cream-cotton-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126060-6_2-baskin-robbins-ice-cream-cotton-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126060-7_1-baskin-robbins-ice-cream-cotton-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212480_1-baskin-robbins-cotton-candy-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the heat with some creamy and delicious ice cream by Baskin Robbins, which is created using exotic and unique flavours that will leave you mesmerised with every mouthful. Cotton Candy is a perky pink and purple coloured ice cream that is sure to remind you of your favourite childhood picnic treat. We're happy to let you know that we have fulfilled every child's wish of cotton candy ice cream. Cotton Candy Ice Cream fulfils every kid's desire. About the brand: Baskin Robbins is one of the world's most recognizable brands of ice cream treats and the world's largest ice cream speciality chain!",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "100ml (58g)",
+    "Energy (Kcal)": "126.1 kcal",
+    "Fat (g)": "6.7 g",
+    "Sat. Fat (g)": "4.1 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "23.3 mg",
+    "Sodium (mg)": "32.5 mg",
+    "Carbohydrate (g)": "14.0 g",
+    "Dietary Fiber (g)": "0.0 g",
+    "Total Sugar (g)": "14.0 g",
+    "Added Sugar (g)": "11.0 g",
+    "Protein (g)": "2.5 g",
+    "%RDA": "6.3"
+   },
+   "usageInstructions": "Order a tub and scoop it up and enjoy creamy ice cream at its best. You could also add some milk and blend it into a milkshake. Or you could add some sauces & toppings like almonds and chocolate chips to convert your scoop into a delicious sundae.",
+   "manufacturerName": "Rich Graviss Products Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Very Berry Strawberry Ice Cream",
+  "handle": "very-berry-strawberry-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "69",
+    "compare_at_price": "69",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126066_4-baskin-robbins-very-berry-strawberry-ice-cream.jpg"
+    }
+   },
+   {
+    "title": "450ml",
+    "price": "325",
+    "compare_at_price": "325",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126055_2-baskin-robbins-ice-cream-very-berry-strawberry.jpg"
+    }
+   },
+   {
+    "title": "700ml",
+    "price": "410",
+    "compare_at_price": "410",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40171115_6-baskin-robbins-very-berry-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126066_4-baskin-robbins-very-berry-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126066-2_4-baskin-robbins-very-berry-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126066-3_4-baskin-robbins-very-berry-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126066-4_3-baskin-robbins-very-berry-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126066-5_3-baskin-robbins-very-berry-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126066-6_3-baskin-robbins-very-berry-strawberry-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126055_2-baskin-robbins-ice-cream-very-berry-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171115_6-baskin-robbins-very-berry-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins D'lites Very Berry Strawberry Ice Cream is made with the finest cream and strawberries. It does not have added sugar, very berry strawberry medium-fat ice cream with medium fat. It has a creamy texture and is rich.\nIt is made from the finest cream.\nIt is super rich and creamy with the right balance of sweetness.\nIt helps in reducing the levels of stress in the body.\nIt also helps in relaxing the nervous system.",
+   "ingredients": "Water, Milk Solids, Sugar, Strawberry Fruit Preparation (25%) {strawberry Fruit, Liquid Glucose, Sugar, Stabilizer (401), Acidity Regulator (330)}, Stabilizers (461,412,407), Emulsifier (471) Contains Permitted Synthetic Food Colours (127, 122, 124) And Natural Colour (150c) And Added Artificial Flavouring Substances (strawberry)",
+   "usageInstructions": "Ready to use.",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Alphonso Mango Ice Cream",
+  "handle": "alphonso-mango-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212490_1-baskin-robbins-alphonso-mango-ice-cream.jpg"
+    },
+    "barcode": "8906006852556"
+   },
+   {
+    "title": "700ml",
+    "price": "470",
+    "compare_at_price": "470",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40171114_7-baskin-robbins-alphanso-mango-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212490_1-baskin-robbins-alphonso-mango-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212490-2_1-baskin-robbins-alphonso-mango-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212490-3_1-baskin-robbins-alphonso-mango-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212490-4_1-baskin-robbins-alphonso-mango-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212490-5_1-baskin-robbins-alphonso-mango-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171114_7-baskin-robbins-alphanso-mango-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Alphonso Mango Ice Cream is made with delicious alphonso mango. It is a creamy and refreshing mango ice cream. It has the perfect fresh taste and flavour of Alphonso mangos. This ice cream is rich and creamy. Delicious alphonso mango ice cream made with real alphonso mango pulp & titbits. It is made from the finest cream and Alphonso mangoes. It is super-rich and creamy with the right balance of sweetness.",
+   "ingredients": "Water, Milk Solids, Sugar, Alphonso Mango Fruit Preparation (20%) {mango Fruit, Sugar, Liquid Glucose, Acidity Regulator (300), Stabilizer (410, 412), Contains Added Artificial Flavouring Substances (mango)}, Stabilizers (461,412,407), Emulsifier (471), Contains Permitted Synthetic Food Colour (102, 110) And Added Artificial Flavouring Substances (mango).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy value": "209.2 kcal",
+    "Protein": "4.4 g",
+    "Carbohydrates": "20.0 g",
+    "Sugar (as sucrose)": "14.5 g",
+    "Fat": "12.4 g"
+   },
+   "storageInstructions": "Store at –18°C or below\nDo not refreeze once thawed\nKeep container tightly sealed",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Black Currant Ice Cream",
+  "handle": "black-currant-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126053_4-baskin-robbins-ice-cream-black-currant.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126053_4-baskin-robbins-ice-cream-black-currant.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126053-2_4-baskin-robbins-ice-cream-black-currant.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126053-3_4-baskin-robbins-ice-cream-black-currant.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126053-4_3-baskin-robbins-ice-cream-black-currant.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126053-5_3-baskin-robbins-ice-cream-black-currant.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126053-6_3-baskin-robbins-ice-cream-black-currant.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126053-7_1-baskin-robbins-ice-cream-black-currant.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the heat with some creamy and delicious ice cream by Baskin Robins, which is created using exotic and unique flavours that will leave you mesmerized with every mouthful. The Black Currant ice cream comes with black current pieces and raisins to give you a heavenly black currant taste that will instantly become your new favourite. Black currant ice cream with black current pieces and raisins weight: 450ml vegetarian",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "100ml (60g)",
+    "Energy (Kcal)": "129.4 kcal",
+    "Fat (g)": "6.7 g",
+    "Sat. Fat (g)": "4.1 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "21.7 mg",
+    "Sodium (mg)": "35.3 mg",
+    "Carbohydrate (g)": "14.9 g",
+    "Dietary Fiber (g)": "0.0 g",
+    "Total Sugar (g)": "13.2 g",
+    "Added Sugar (g)": "9.6 g",
+    "Protein (g)": "2.3 g",
+    "%RDA": "6.5"
+   },
+   "usageInstructions": "Order a tub and scoop it up and enjoy creamy ice cream at its best\nYou could also add some milk and blend it into a milkshake\nOr you could add some sauces & toppings like almonds and chocolate chips to convert you scoop into a delicious sundae",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hop Scotch Butterscotch Ribbon Ice Cream",
+  "handle": "hop-scotch-butterscotch-ribbon-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212485_3-baskin-robbins-hop-scotch-butterscotch-ribbon-ice-cream.jpg"
+    }
+   },
+   {
+    "title": "700ml",
+    "price": "410",
+    "compare_at_price": "410",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212476_2-baskin-robbins-butterscotch-ribbon-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212485_3-baskin-robbins-hop-scotch-butterscotch-ribbon-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212485-2_3-baskin-robbins-hop-scotch-butterscotch-ribbon-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212485-3_3-baskin-robbins-hop-scotch-butterscotch-ribbon-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212485-4_3-baskin-robbins-hop-scotch-butterscotch-ribbon-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212485-5_3-baskin-robbins-hop-scotch-butterscotch-ribbon-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212485-6_1-baskin-robbins-hop-scotch-butterscotch-ribbon-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212485-7_1-baskin-robbins-hop-scotch-butterscotch-ribbon-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212476_2-baskin-robbins-butterscotch-ribbon-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Hop Scotch Butterscotch Ribbon Ice Cream is a smooth, butterscotch-flavoured ice cream made with the finest brown sugar and butter. It is sprinkled with a delightful cashew praline, creating a rich and creamy treat. This ice cream has a delectable caramel-like taste that helps to relax the nervous system and reduce stress levels.",
+   "ingredients": "Water, Milk Solids, Sugar, Butterscotch Confectionary (15%) {Milk Solids, Liquid Glucose, Sugar, Jaggery, Stabilizers (440), Emulsifier [331 (iii)], Salt, CONTAINS ADDED ARTIFICIAL flavourING SUBSTANCES (VANILLA, BUTTERSCOTCH)}, Cashew Crunch (8%) {Sugar, Cashew, Butter}, Stabilizers (461,412,407), Emulsifier (471), CONTAINS PERMITED SYNTHETIC FOOD COLOURS (102,110) AND ADDED ARTIFICIAL flavourING SUBSTANCES (BUTTERSCOTCH)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (66 g)",
+    "Energy (kcal)": "167.4",
+    "Fat (g)": "8.7",
+    "Sat. Fat (g)": "4.6",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "25.5",
+    "Sodium (mg)": "35.5",
+    "Carbohydrate (g)": "19.2",
+    "Dietary Fiber (g)": "0.1",
+    "Total Sugar (g)": "15.8",
+    "Added Sugar (g)": "12.5",
+    "Protein (g)": "3.1"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mississippi Mud Ice Cream",
+  "handle": "mississippi-mud-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126056_4-baskin-robbins-ice-cream-mississippi-mud.jpg"
+    }
+   },
+   {
+    "title": "700ml",
+    "price": "575",
+    "compare_at_price": "575",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212478_2-baskin-robbins-mississippi-mud-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126056_4-baskin-robbins-ice-cream-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126056-2_4-baskin-robbins-ice-cream-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126056-3_4-baskin-robbins-ice-cream-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126056-4_3-baskin-robbins-ice-cream-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126056-5_3-baskin-robbins-ice-cream-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126056-6_1-baskin-robbins-ice-cream-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126056-7_1-baskin-robbins-ice-cream-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212478_2-baskin-robbins-mississippi-mud-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and decadent flavours of Baskin Robbins' Mississippi Mud Ice Cream, a true chocolate lover's dream. This irresistible treat features a delectable combination of creamy chocolate ice cream, swirled with luscious chocolate fudge and sprinkled with indulgent brownie pieces. The velvety texture and the perfect balance of sweet and chocolatey notes create a symphony of flavours that will leave you craving more. Crafted with the finest ingredients, including fresh cow's milk, this ice cream is a true delight, offering the goodness of vitamins A, D, calcium, phosphorus, and riboflavin. Experience the magical melting moments and the unmatchable taste of this Baskin Robbins specialty, perfect for satisfying your chocolate cravings and elevating your dessert experience to new heights of indulgence.",
+   "ingredients": "Water, Milk Solids, Sugar, Chocolate Flavoured Confectionary, Cocoa Solids, Fudge Brownie Cake Pieces, Dark Chocolate, Stabilizers, Emulsifier",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (63 g)",
+    "Energy (kcal)": "152.6",
+    "Fat (g)": "8.2",
+    "Sat. Fat (g)": "4.4",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "24.1",
+    "Sodium (mg)": "25.6",
+    "Carbohydrate (g)": "17.0",
+    "Dietary Fiber (g)": "0.6",
+    "Total Sugar (g)": "14.9",
+    "Added Sugar (g)": "12.7",
+    "Protein (g)": "2.7"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat\n*Maintain the recommended storage temperature to preserve the quality and taste of the ice cream",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Bavarian Chocolate Ice Cream",
+  "handle": "bavarian-chocolate-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700ml",
+    "price": "575",
+    "compare_at_price": "575",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212477_3-baskin-robbins-bavarian-chocolate-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212477_3-baskin-robbins-bavarian-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212477-2_3-baskin-robbins-bavarian-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212477-3_3-baskin-robbins-bavarian-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212477-4_3-baskin-robbins-bavarian-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212477-5_3-baskin-robbins-bavarian-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212477-6_2-baskin-robbins-bavarian-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212477-7_1-baskin-robbins-bavarian-chocolate-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Bavarian Chocolate Ice Cream is made with the finest cocoa. It is a rich and creamy chocolate ice cream. It has the right amount of chocolate flavour. A tempting scoop of rich chocolate ice cream with a distinct hint of cocoa that gives you a silky mouthfeel. This ice cream comes with white chocolate pieces and cashew chikki. It is super rich and creamy with the right balance of chocolate.",
+   "ingredients": "Water, Milk Solids, Sugar, White Chocolate, Cashew Chikki, Cocoa Solids, Dark Chocolate, Stabilizers, Emulsifier",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (65 g)",
+    "Energy (Kcal)": "172.1",
+    "Fat (g)": "9.0",
+    "Saturated Fat (g)": "4.8",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "18.6",
+    "Sodium (mg)": "31.8",
+    "Carbohydrate (g)": "18.6",
+    "Dietary Fiber (g)": "0.4",
+    "Total Sugar (g)": "12.9",
+    "Added Sugar (g)": "9.9",
+    "Protein (g)": "3.0"
+   },
+   "storageInstructions": "*Store in a cool and dry place",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choco Caramel Nut Ice Cream",
+  "handle": "choco-caramel-nut-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212484_1-baskin-robbins-choco-caramel-nut-ice-cream.jpg"
+    },
+    "barcode": "8906006853720"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212484_1-baskin-robbins-choco-caramel-nut-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212484-2_1-baskin-robbins-choco-caramel-nut-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212484-3_1-baskin-robbins-choco-caramel-nut-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212484-4_1-baskin-robbins-choco-caramel-nut-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212484-5_1-baskin-robbins-choco-caramel-nut-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Choco Caramel Nut Ice Cream is made with the finest cocoa and nuts. It is a rich and creamy chocolate ice cream. It has the right amount of chocolate flavour. Milky chocolate ice cream adorned with caramelized cashew crunch. This rich chocolate ice cream with a distinct hint of crunchy caramel nuts gives you a silky mouthfeel.\nIt is made from the finest cocoa and nuts.\nIt is super rich and creamy with the right balance of chocolate.\nIt helps in reducing the levels of stress in the body.\nIt also helps in relaxing the nervous system.",
+   "ingredients": "Water, Milk Solids, Sugar, Cocoa Solids (3.9%), Cashew Crunch (12%) [sugar, Cashew, Milk Fat], Stabilizers (461, 412, 407), Emulsifier (471)",
+   "usageInstructions": "Ready to use.",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cookies N Cream Ice Cream",
+  "handle": "cookies-n-cream-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304138_3-baskin-robbins-cookies-n-cream-ice-cream.jpg"
+    },
+    "barcode": "8906006855038"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304138_3-baskin-robbins-cookies-n-cream-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304138-2_3-baskin-robbins-cookies-n-cream-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304138-3_3-baskin-robbins-cookies-n-cream-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304138-4_3-baskin-robbins-cookies-n-cream-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304138-5_3-baskin-robbins-cookies-n-cream-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304138-6_3-baskin-robbins-cookies-n-cream-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304138-7_3-baskin-robbins-cookies-n-cream-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Cookies N Cream is a flavour of ice cream that has long been a favourite among ice cream lovers. It is a classic delicacy that is adored for its opulent chocolate cookie pieces and rich, creamy base. India's favourite ice cream brand, Baskin Robbins, has solidified its position in the market. They work hard to uphold the highest standards of quality. Varied consumers' needs are met by the varieties and variations available. The significant amount of chocolate cookie bits in Baskin Robbins Cookies N Cream creates a pleasant juxtaposition of sensations. The smooth ice cream is given a fantastic crunch by the cookies, producing a symphony of textures that makes this flavour incredibly enjoyable. Explore Baskin-Robbins' extensive menu of mouthwatering ice cream flavours and desserts available and have a wonderful time there. Order now to enjoy your favourite frozen treats from the convenience of your home.",
+   "ingredients": "Water, Milk Solids, Sugar, Cookies (9%) {Sugar, Refined Wheat Flour, Edible Vegetable oil (Palm And/ Or Canola Oil), Cocoa (Processed With Alkali), High Fructose Corn Syrup, Leavening (Baking Soda and Calcium Phosphate), Salt, Soy Lecithin, CONTAINS ADDED ARTIFICIAL flavourING SUBSTANCES (Chocolate)}, Stabilizers (461, 412, 407), Emulsifier (471), CONTAINS PERMITTED SYNTHETIC FOOD COLOUR (102, 110) AND ADDED ARTIFICIAL flavourING SUBSTANCES (VANILLA AND CHOCOLATE)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (60 g)",
+    "Energy (kcal)": "144.2",
+    "Fat (g)": "7.8",
+    "Sat. Fat (g)": "4.7",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "22.6",
+    "Sodium (mg)": "64.4",
+    "Carbohydrate (g)": "15.8",
+    "Dietary Fiber (g)": "0.1",
+    "Total Sugar (g)": "13.5",
+    "Added Sugar (g)": "10.9",
+    "Protein (g)": "2.6"
+   },
+   "storageInstructions": "*When stored at 18°C or below",
+   "manufacturerName": "MIDC Phase II",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hazelnut Rocher Ice Cream",
+  "handle": "hazelnut-rocher-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304139_3-baskin-robbins-hazelnut-rocher-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304139_3-baskin-robbins-hazelnut-rocher-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304139-2_3-baskin-robbins-hazelnut-rocher-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304139-3_3-baskin-robbins-hazelnut-rocher-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304139-4_3-baskin-robbins-hazelnut-rocher-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304139-5_3-baskin-robbins-hazelnut-rocher-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304139-6_3-baskin-robbins-hazelnut-rocher-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304139-7_3-baskin-robbins-hazelnut-rocher-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Hazelnut Rocher is a delectable ice cream flavour that mixes the lusciousness of chocolate with the rich, nutty flavour of hazelnuts. Hazelnut flavouring is integrated into the ice cream to produce a rich, creamy base that is sure to please your palate.",
+   "ingredients": "Water, Milk Solids, Sugar, Hazelnut Paste, Cocoa Solids, Choco Coated Rice Crispies, Roasted Hazelnuts, Dark Chocolate, Stabilizers, Emulsifier",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (60 g)",
+    "Energy (Kcal)": "150.8",
+    "Fat (g)": "9.5",
+    "Sat. Fat (g)": "4.2",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "21.9",
+    "Sodium (mg)": "32.6",
+    "Carbohydrate (g)": "13.3",
+    "Dietary Fiber (g)": "0.1",
+    "Total Sugar (g)": "11.2",
+    "Added Sugar (g)": "8.1",
+    "Protein (g)": "2.9"
+   },
+   "storageInstructions": "Store at –18°C or below\nDo not refreeze once thawed\nKeep container tightly sealed",
+   "manufacturerName": "MIDC Phase II",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gold Medal Ribbon Ice Cream",
+  "handle": "gold-medal-ribbon-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126058_4-baskin-robbins-ice-cream-gold-medal-ribbon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126058_4-baskin-robbins-ice-cream-gold-medal-ribbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126058-2_4-baskin-robbins-ice-cream-gold-medal-ribbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126058-3_4-baskin-robbins-ice-cream-gold-medal-ribbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126058-4_3-baskin-robbins-ice-cream-gold-medal-ribbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126058-5_3-baskin-robbins-ice-cream-gold-medal-ribbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126058-6_2-baskin-robbins-ice-cream-gold-medal-ribbon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126058-7_1-baskin-robbins-ice-cream-gold-medal-ribbon.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the luxurious taste of Baskin Robbins' Gold Medal Ribbon Ice Cream, a heavenly medley of vanilla and chocolate ice cream embraced by a decadent caramel ribbon that will leave you craving more. This creamy and delicious ice cream is crafted using exotic and unique flavours that will mesmerise your taste buds with every mouthful. The rich flavours of vanilla and chocolate blend together in perfection, while the thick, deep caramel ribbon intertwines the two for a truly indulgent experience. Packed with the goodness of vitamins, minerals and made with fresh cow's milk, this vegetarian-friendly treat is the perfect way to beat the heat on a summer day. Whether you're looking to share this delightful dessert with friends and family or enjoy it all to yourself, Baskin Robbins' Gold Medal Ribbon Ice Cream is sure to become a staple in your freezer for years to come.",
+   "ingredients": "Water, Cocoa Solids, Cream Caramel Ribbon, Milk Solids, Sugar, Liquid Glucose, Stabilizers (440), Emulsifier (331), Salt, Stabilizers (461, 412, 407), Emulsifier (471), Contains Permitted Synthetic Food Colour (102, 110) And Added Artificial flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (64 g)",
+    "Energy (Kcal)": "144.9",
+    "Fat (g)": "7.0",
+    "Sat. Fat (g)": "4.2",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "21.6",
+    "Sodium (mg)": "38.2",
+    "Carbohydrate (g)": "18",
+    "Dietary Fiber (g)": "0.1",
+    "Total Sugar (g)": "17.4",
+    "Added Sugar (g)": "13.6",
+    "Protein (g)": "2.5"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Honey Nut Crunch Ice Cream",
+  "handle": "honey-nut-crunch-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126057_4-baskin-robbins-ice-cream-honey-nut-crunch.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126057_4-baskin-robbins-ice-cream-honey-nut-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126057-2_4-baskin-robbins-ice-cream-honey-nut-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126057-3_4-baskin-robbins-ice-cream-honey-nut-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126057-4_3-baskin-robbins-ice-cream-honey-nut-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126057-5_3-baskin-robbins-ice-cream-honey-nut-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126057-6_3-baskin-robbins-ice-cream-honey-nut-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126057-7_1-baskin-robbins-ice-cream-honey-nut-crunch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the creamy decadence of Baskin Robbins' Honey Nut Crunch Ice Cream, a tantalising treat that combines the rich, luxurious flavour of honey with the delightful crunch of praline-coated almonds. Crafted with care and precision, this exquisite ice cream is a true masterpiece that promises to elevate your dessert experience to new heights. Enjoy the perfect balance of sweetness from the honey and the satisfying texture of the crunchy nut pieces, creating a truly indulgent and memorable flavour sensation with every spoonful. Beat the heat and treat yourself to the creamy, delicious goodness of this Honey Nut Crunch Ice Cream, a delightful dessert that is sure to leave you craving more.",
+   "ingredients": "Water, Milk Solids, Sugar, Liquid Glucose, Jaggery, Almond Praline (Variable), (Almond, Sugar, Honey, Liquid Glucose, Salt), Stabilizers (412, 461, 407, 440), Emulsifiers (471, 331 Iii), Added Artificial Flavouring Substances (Vanilla)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (61 g)",
+    "Energy (Kcal)": "148.1",
+    "Fat (g)": "8.1",
+    "Sat. Fat (g)": "4.4",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "23.9",
+    "Sodium (mg)": "34.6",
+    "Carbohydrate (g)": "15.9",
+    "Dietary Fiber (g)": "0.0",
+    "Total Sugar (g)": "15.7",
+    "Added Sugar (g)": "12.5",
+    "Protein (g)": "3.0"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Roasted Californian Almond Ice Cream",
+  "handle": "roasted-californian-almond-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "365",
+    "compare_at_price": "365",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126054_3-baskin-robbins-ice-cream-roasted-californain-almond.jpg"
+    },
+    "barcode": "8906006853058"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126054_3-baskin-robbins-ice-cream-roasted-californain-almond.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126054-2_3-baskin-robbins-ice-cream-roasted-californain-almond.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126054-3_3-baskin-robbins-ice-cream-roasted-californain-almond.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126054-4_2-baskin-robbins-ice-cream-roasted-californain-almond.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126054-5_2-baskin-robbins-ice-cream-roasted-californain-almond.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126054-6_2-baskin-robbins-ice-cream-roasted-californain-almond.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126054-7_1-baskin-robbins-ice-cream-roasted-californain-almond.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins has created a rich vanilla ice cream with a caramel ribbon and almond praline bits that is sure to leave you craving for more. The Roasted Californian Almond flavour combines two classic flavours with a caramel ribbon stitching them together, proving that sometimes old is truly gold. This delicious and creamy ice cream is a perfect treat to beat the heat.",
+   "ingredients": "Water, Milk Solids (From cow milk), Sugar, Caramel Flavoured Confectionary, Honey, Almond Praline",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "100 ml (65 g)",
+    "Energy (kcal)": "163 kcal",
+    "Fat (g)": "8.5 g",
+    "Sat. Fat (g)": "4.7 g",
+    "Trans Fat (g)": "0 g",
+    "Cholesterol (mg)": "25.1 mg",
+    "Sodium (mg)": "37.7 mg",
+    "Carbohydrate (g)": "18.3 g",
+    "Dietary Fiber (g)": "0 g",
+    "Total Sugar (g)": "18.1 g",
+    "Added Sugar (g)": "14.5 g",
+    "Protein (g)": "3.2 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Three Cheers Chocolate Ice Cream",
+  "handle": "three-cheers-chocolate-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126061_4-baskin-robbins-ice-cream-three-cheers-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126061_4-baskin-robbins-ice-cream-three-cheers-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126061-2_4-baskin-robbins-ice-cream-three-cheers-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126061-3_4-baskin-robbins-ice-cream-three-cheers-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126061-4_3-baskin-robbins-ice-cream-three-cheers-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126061-5_3-baskin-robbins-ice-cream-three-cheers-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126061-6_2-baskin-robbins-ice-cream-three-cheers-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126061-7_1-baskin-robbins-ice-cream-three-cheers-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Beat the heat with some creamy and delicious ice cream by Baskin Robbins, which is created using exotic and unique flavours that will leave you mesmerised with every mouthful. Three Cheers Chocolate is a heavenly combination of chocolate and vanilla married together with chocolate chips and ribbon. A feisty ribbon twirling its way through this chocolate chip loaded chocolate and vanilla ice cream scoop. This ice cream is as enticing as they come.",
+   "nutritionalInfo": {
+    "Nutrition per": "100ml",
+    "Serving Size": "100ml (65g)",
+    "Energy (kcal)": "149.1 kcal",
+    "Fat (g)": "7.0 g",
+    "Sat. Fat (g)": "3.9 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "19.5 mg",
+    "Sodium (mg)": "32.3 mg",
+    "Carbohydrate (g)": "19.0 g",
+    "Dietary Fiber (g)": "0.3 g",
+    "Total Sugar (g)": "17.1 g",
+    "Added Sugar (g)": "13.9 g",
+    "Protein (g)": "2.4 g"
+   },
+   "usageInstructions": "Order a tub and scoop it up and enjoy creamy ice cream at its best. You could also add some milk and blend it into a milkshake. Or you could add some sauces & toppings like almonds and chocolate chips to convert your scoop into a delicious sundae.",
+   "manufacturerName": "Rich Graviss Products Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tender Coconut Ice Cream",
+  "handle": "tender-coconut-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700ml",
+    "price": "345",
+    "compare_at_price": "345",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40171113_4-baskin-robbins-tender-coconut-ice-cream.jpg"
+    },
+    "barcode": "8906006852716"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171113_4-baskin-robbins-tender-coconut-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171113-2_5-baskin-robbins-tender-coconut-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Coconut: We’ve got an enticing way for you to beat the heat this summer – try our all-new Fresh Tender Coconut ice cream! Laden with pieces of fresh, tender coconut and made from the richest milk, this ice cream makes for the most refreshing treat! We’ve got one desire - Asli ?????? khilaye Hindustan ko!\nFresh coconut ice cream with fresh tender coconut pieces. Our coconut Ice Cream is 100% vegetarian made with rich premium quality ingredients.\nBrand name: ?Baskin-Robbins\nweight: 700ml,\nMilk used: cow milk\nvegetarian",
+   "ingredients": "Water, Milk Solids, Sugar, Coconut, Stabilizers (461,412,407), Emulsifier (471)",
+   "usageInstructions": "Ready to serve when chilled.",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002929"
+  }
+ },
+ {
+  "title": "x The Brooklyn Creamery Alphonso Mango Ice Cream",
+  "handle": "x-the-brooklyn-creamery-alphonso-mango-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359978_1-baskin-robbins-x-the-brooklyn-creamery-alphonso-mango-medium-fat-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359978_1-baskin-robbins-x-the-brooklyn-creamery-alphonso-mango-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359978-2_1-baskin-robbins-x-the-brooklyn-creamery-alphonso-mango-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359978-3_1-baskin-robbins-x-the-brooklyn-creamery-alphonso-mango-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359978-4_1-baskin-robbins-x-the-brooklyn-creamery-alphonso-mango-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359978-5_1-baskin-robbins-x-the-brooklyn-creamery-alphonso-mango-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359978-6_1-baskin-robbins-x-the-brooklyn-creamery-alphonso-mango-medium-fat-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins x The Brooklyn Creamery Alphonso Mango Medium Fat Ice Cream brings together the expertise of two trusted ice cream makers. Crafted using real Alphonso mango pulp and flavourful mango titbits, it delivers a rich, fruity taste with a smooth, creamy texture. Made with no added sugar, this indulgent yet balanced dessert offers a refreshing mango experience, perfect for those who enjoy authentic flavour with mindful indulgence.",
+   "ingredients": "Water, Fruit Preparation (20%) {Mango Fruit, Sweetener (Maltitol), Stabilisers (440,410)}, Milk Solids, Sweetener (Maltitol), Oligofructose, Stabilisers (410,412), Emulsifiers (471,477) Artificial Flavouring Substances (Mango), Natural Colour (160a (ii)).\nIn Ingredients, Numbers in Bracket are as per the International Numbering System.\nAllergen: Contains milk. May contain cereal, nuts and soy.",
+   "nutritionalInfo": {
+    "Energy": "127.8 kcal",
+    "Total Fat": "3.6 g",
+    "Saturated Fat": "1.9 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "12.1 mg",
+    "Sodium": "51.1 mg",
+    "Carbohydrate": "32.6 g",
+    "Dietary Fibre": "3.9 g",
+    "Total Sugars": "7.0 g",
+    "Added Sugars": "0.0 g",
+    "Plant-Based Sweetener": "21.1 g",
+    "Protein": "3.6 g"
+   },
+   "manufacturerName": "Graviss Foods Pvt Ltd",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "x The Brooklyn Creamery Mississippi Mud Ice Cream",
+  "handle": "x-the-brooklyn-creamery-mississippi-mud-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40359977_1-baskin-robbins-x-the-brooklyn-creamery-mississippi-mud-medium-fat-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359977_1-baskin-robbins-x-the-brooklyn-creamery-mississippi-mud-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359977-2_1-baskin-robbins-x-the-brooklyn-creamery-mississippi-mud-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359977-3_1-baskin-robbins-x-the-brooklyn-creamery-mississippi-mud-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359977-4_1-baskin-robbins-x-the-brooklyn-creamery-mississippi-mud-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359977-5_1-baskin-robbins-x-the-brooklyn-creamery-mississippi-mud-medium-fat-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40359977-6_1-baskin-robbins-x-the-brooklyn-creamery-mississippi-mud-medium-fat-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins x The Brooklyn Creamery Mississippi Mud Medium Fat Ice Cream is crafted with the combined expertise of two renowned ice cream makers. This no added sugar dessert features rich chocolate fudge ice cream generously sprinkled with indulgent brownie pieces. Smooth, chocolatey, and deeply satisfying, it offers a balanced indulgence for those who enjoy classic dessert flavours with a mindful twist.",
+   "ingredients": "Water, Milk Solids, Sweetener (Maltitol), Confectionery (9%) {Fructose Oligosaccharide, Sweetener (Maltitol), Water, Cocoa Solids, Stabiliser (440), Artificial Flavouring Substances (Chocolate and Vanilla), lodised Salt}, Cocoa Solids (9%), Fructose Oligosaccharide, Brownie (4.5%) {Sweetener (Maltitol), Refined Wheat Flour, Milk, Butter, Cocoa Solids, Emulsifiers (322), Added Natural Colour (150c), Artificial Flavouring Substances (Vanilla)}, Stabilisers (410,412), Emulsifiers (471,477), Chocolate Substitute {Emulsifiers (322(i),476)}, Natural Flavouring Substance (Vanilla).\nIn Ingredients, Numbers in brackets are as per the International Numbering System.\nAllergen: Contains Milk, Cereal and Soy. May Contain Nuts.",
+   "nutritionalInfo": {
+    "Energy": "141.6 kcal",
+    "Total Fat": "4.1 g",
+    "Saturated Fat": "1.7 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "9.7 mg",
+    "Sodium": "57.9 mg",
+    "Carbohydrate": "34.1 g",
+    "Dietary Fibre": "8.2 g",
+    "Total Sugars": "4.9 g",
+    "Added Sugars": "0.0 g",
+    "Plant-Based Sweetener": "18.7 g",
+    "Protein": "5.1 g"
+   },
+   "manufacturerName": "Graviss Foods Pvt Ltd",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Almonds N Caramel Ice Cream Bar",
+  "handle": "almonds-n-caramel-ice-cream-bar",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126078_4-baskin-robbins-ice-cream-bar-almonds-n-caramel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126078_4-baskin-robbins-ice-cream-bar-almonds-n-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126078-2_4-baskin-robbins-ice-cream-bar-almonds-n-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126078-3_4-baskin-robbins-ice-cream-bar-almonds-n-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126078-4_3-baskin-robbins-ice-cream-bar-almonds-n-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126078-5_3-baskin-robbins-ice-cream-bar-almonds-n-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126078-6_1-baskin-robbins-ice-cream-bar-almonds-n-caramel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126078-7_1-baskin-robbins-ice-cream-bar-almonds-n-caramel.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Almonds n Caramel Bar is premium caramel ice cream on a stick with a decadent coating of rich milk chocolate enhanced with roasted almonds.",
+   "ingredients": "Water, Milk Solids (From Cow Milk), Sugar, Cream Caramel Confectionary (5%) {Milk Solids (From Cow Milk), Sugar, Liquid Glucose}, Stabilizers (410,412), Emulsifier (471,477), Contains Permitted Natural Food Colour (150c) And Added Artificial flavouring Substances (Caramel), Milk Choco Dip (Sugar, Cocoa Butter, Milk Solids (From Cow Milk), Cocoa Solids, Emulsifier (322), Contains Added Natural Flavouring Substances (Vanilla)), Roasted Almonds",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "65 ml",
+    "Energy (Kcal)": "196.4",
+    "Fat (g)": "13.8",
+    "Saturated Fat (g)": "7.2",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "15.4",
+    "Sodium (mg)": "22.1",
+    "Carbohydrate (g)": "14.7",
+    "Dietary Fiber (g)": "0.1",
+    "Total Sugar (g)": "12.9",
+    "Added Sugar (g)": "10.8",
+    "Protein (g)": "3.3"
+   },
+   "storageInstructions": "*Store in or below freezer temperature",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choco Fudge Doublet Stickless Bar",
+  "handle": "choco-fudge-doublet-stickless-bar",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333699_1-baskin-robbins-choco-fudge-doublet-bar-stickless-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333699_1-baskin-robbins-choco-fudge-doublet-bar-stickless-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333699-2_1-baskin-robbins-choco-fudge-doublet-bar-stickless-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333699-3_1-baskin-robbins-choco-fudge-doublet-bar-stickless-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333699-4_1-baskin-robbins-choco-fudge-doublet-bar-stickless-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333699-5_1-baskin-robbins-choco-fudge-doublet-bar-stickless-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Choco Fudge Doublet Bar Ice Cream is a decadent treat for chocolate lovers. Rich chocolate mousse ice cream is combined with indulgent brownie cake pieces and sweet caramel confectionery, all coated in a smooth milk chocolate dip. This stickless bar offers the perfect balance of creamy, fudgy, and crunchy textures in every bite. A must-try for anyone craving a luxurious chocolate experience!",
+   "ingredients": "Inner Layer (70%):\nWater, Milk Solids, Sugar, Cocoa Solids, Caramel Confectionary (Milk Solids, Sugar, Liquid Glucose, Stabilizers (Ins 440), Emulsifier (Ins 331(Iii)), Salt).\nFudge Brownie Pieces (17%):\nRefined Wheat Flour (Maida), Pharma Sugar, Butter, Cocoa Powder, Condensed Milk, Dark Chocolate, Chocolate (0.5%), Emulsifiers (Ins 466, Ins 477, Ins 471, Ins 472A), Stabilizers (Ins 466, Ins 412, Ins 407).\nOuter Layer (30%):\nEdible Vegetable Oil (Palm Oil, Palm Kernel Oil), Sugar, Cocoa Solids, Milk Solids, Emulsifiers (Ins 322(I), Ins 476), Added Artificial Flavouring Substances (Ethyl Vanillin).",
+   "nutritionalInfo": {
+    "Serving Size": "65 ml",
+    "Energy (kcal)": "227.9",
+    "Total Fat (g)": "14.8",
+    "Saturated Fat (g)": "9.2",
+    "Trans Fat (g)": "0.1",
+    "Cholesterol (mg)": "10.7",
+    "Sodium (mg)": "12.8",
+    "Carbohydrate (g)": "21.0",
+    "Dietary Fibre (g)": "0.2",
+    "Total Sugar (g)": "16.0",
+    "Added Sugar (g)": "14.7",
+    "Protein (g)": "2.7"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Raspberry Vanilla Doublet Stickless Bar",
+  "handle": "raspberry-vanilla-doublet-stickless-bar",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333700_1-baskin-robbins-raspberry-vanilla-doublet-bar-stickless-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333700_1-baskin-robbins-raspberry-vanilla-doublet-bar-stickless-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333700-2_1-baskin-robbins-raspberry-vanilla-doublet-bar-stickless-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333700-3_1-baskin-robbins-raspberry-vanilla-doublet-bar-stickless-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333700-4_1-baskin-robbins-raspberry-vanilla-doublet-bar-stickless-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333700-5_1-baskin-robbins-raspberry-vanilla-doublet-bar-stickless-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful fusion of flavours with Baskin Robbins' Raspberry Vanilla Doublet Bar Ice Cream. This creamy, medium-fat vanilla ice cream is perfectly paired with the tangy sweetness of raspberry, creating a balanced and refreshing treat. Coated in a smooth, indulgent chocolate layer, each bite delivers a satisfying contrast of flavours and textures. Ideal for a quick indulgence or a refreshing treat on a warm day, this stickless bar promises a delightful and satisfying experience for dessert lovers of all ages.",
+   "ingredients": "Inner Layer (56%): Water, Milk Solids (From Cow Milk), Sugar, Stabiliser (410,412), Emulsifier (471,477), Contains Permitted Synthetic Food Colour (102,110) And Added Artificial Flavouring Substances (Vanilla). Outer Layer (44%): Water, Sugar, Raspberry Puree (8%), Liquid Glucose, Stabiliser (461,412,410,466, 440,401), Acidity Regulator (330), Contains Permitted Synthetic Food Colour (122) And Added Artificial Flavouring Substances (Raspberry And Strawberry).",
+   "nutritionalInfo": {
+    "Serving Size": "65 ml",
+    "Energy (kcal)": "79.2",
+    "Total Fat (g)": "3.5",
+    "Saturated Fat (g)": "2.1",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "10.9",
+    "Sodium (mg)": "17.8",
+    "Carbohydrate (g)": "10.6",
+    "Dietary Fibre (g)": "0.1",
+    "Total Sugar (g)": "10.6",
+    "Added Sugar (g)": "8.7",
+    "Protein (g)": "1.2"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Mania Ice Cream Bar",
+  "handle": "mango-mania-ice-cream-bar",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126072_3-baskin-robbins-mango-ice-candy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126072_3-baskin-robbins-mango-ice-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126072-2_3-baskin-robbins-mango-ice-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126072-3_3-baskin-robbins-mango-ice-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126072-4_2-baskin-robbins-mango-ice-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126072-5_2-baskin-robbins-mango-ice-candy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126072-6_2-baskin-robbins-mango-ice-candy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the vibrant taste of ripe mangoes with Baskin Robbins Mango Mania Ice Candy. Made with premium mango ice and packed with juicy mango pulp, this refreshing treat offers an authentic and tangy flavour in every bite. Featuring a rich, creamy texture that melts in your mouth, it's the perfect way to cool off on a warm day and enjoy the tropical goodness of mangoes. Crafted with a luxurious, velvety consistency, this ice cream stick delivers a delightful dessert experience that captures the essence of perfectly ripened mangoes. Whether you're a mango lover or simply seeking a refreshing indulgence, Baskin Robbins Mango Mania Ice Candy is sure to satisfy your cravings with its vibrant flavour and satisfying texture.",
+   "ingredients": "Water, Mango Pulp (26%), Sugar, Liquid Glucose, Stabilisers (461,412,410,466, 440,401), Contains Permitted Synthetic Food Colours (102,110) And Added Artificial Flavouring Substances (Mango)",
+   "nutritionalInfo": {
+    "Serving Size": "65 ml",
+    "Energy": "68.7 kcal",
+    "Fat": "0.0 g",
+    "Saturated Fat": "0.0 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "0.0 mg",
+    "Sodium": "3.6 mg",
+    "Carbohydrates": "17.2 g",
+    "Dietary Fibre": "0.1 g",
+    "Total Sugars": "16.7 g",
+    "Added Sugars": "14.1 g",
+    "Protein": "0.0 g"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "The Original Triple Chocolate Ice Cream Bar",
+  "handle": "the-original-triple-chocolate-ice-cream-bar",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343738_1-baskin-robbins-the-original-triple-chocolate-ice-cream-bar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343738_1-baskin-robbins-the-original-triple-chocolate-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343738-2_1-baskin-robbins-the-original-triple-chocolate-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343738-3_1-baskin-robbins-the-original-triple-chocolate-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343738-4_1-baskin-robbins-the-original-triple-chocolate-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343738-5_1-baskin-robbins-the-original-triple-chocolate-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343738-6_1-baskin-robbins-the-original-triple-chocolate-ice-cream-bar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in Baskin Robbins' The Original Triple Chocolate Ice Cream Bar – a rich trio of milk and white chocolate mousse ice creams with a touch of dark chocolate confectionery. Coated in a smooth milk chocolate dip and finished with brownie cake crumbs, it’s a layered chocolate delight that offers a truly decadent experience in every bite.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla N Chocolate Ice Cream Bar",
+  "handle": "vanilla-n-chocolate-ice-cream-bar",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126075_4-baskin-robbins-vanilla-chocolate-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126075_4-baskin-robbins-vanilla-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126075-2_4-baskin-robbins-vanilla-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126075-3_4-baskin-robbins-vanilla-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126075-4_3-baskin-robbins-vanilla-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126075-5_3-baskin-robbins-vanilla-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126075-6_3-baskin-robbins-vanilla-chocolate-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126075-7_3-baskin-robbins-vanilla-chocolate-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy the delightful blend of vanilla and chocolate with Baskin Robbins Ice Cream Bar. Each bar features creamy vanilla ice cream coated in rich chocolate, offering a perfect balance of flavours and textures. Conveniently portioned for a quick treat, it’s an ideal choice for a satisfying, sweet escape anytime.",
+   "nutritionalInfo": {
+    "Nutrition per": "65ml",
+    "Serving Size": "65ml",
+    "Energy (kcal)": "182.9",
+    "Fat (g)": "12.6",
+    "Sat. Fat (g)": "7.3",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "13.9",
+    "Sodium (mg)": "22.7",
+    "Carbohydrate (g)": "14.8",
+    "Dietary Fiber (g)": "0.0",
+    "Total Sugar (g)": "13.2",
+    "Added Sugar (g)": "10.9",
+    "Protein (g)": "2.6"
+   },
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Very Blueberry Pop Ice Cream Bar",
+  "handle": "very-blueberry-pop-ice-cream-bar",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343740_1-baskin-robbins-very-blueberry-pop-ice-cream-bar.jpg"
+    },
+    "barcode": "8906006855687"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343740_1-baskin-robbins-very-blueberry-pop-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343740-2_1-baskin-robbins-very-blueberry-pop-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343740-3_1-baskin-robbins-very-blueberry-pop-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343740-4_1-baskin-robbins-very-blueberry-pop-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343740-5_1-baskin-robbins-very-blueberry-pop-ice-cream-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343740-6_1-baskin-robbins-very-blueberry-pop-ice-cream-bar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cool down with the Baskin Robbins Very Blueberry Pop Ice Cream Bar/Ice Candy – a refreshing blueberry sorbet with a hint of blackcurrant. Bursting with bold, fruity flavour, this icy treat offers the perfect balance of sweet and tangy. Ideal for hot days or anytime you fancy a cool indulgence, it’s a delicious pop of berry bliss in every bite.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cotton Candy Ice Cream Stick",
+  "handle": "cotton-candy-ice-cream-stick",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126074_3-baskin-robbins-ice-cream-cotton-candy-stick-raspberry-white-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126074_3-baskin-robbins-ice-cream-cotton-candy-stick-raspberry-white-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126074-2_3-baskin-robbins-ice-cream-cotton-candy-stick-raspberry-white-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126074-3_3-baskin-robbins-ice-cream-cotton-candy-stick-raspberry-white-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126074-4_2-baskin-robbins-ice-cream-cotton-candy-stick-raspberry-white-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126074-5_2-baskin-robbins-ice-cream-cotton-candy-stick-raspberry-white-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126074-6_1-baskin-robbins-ice-cream-cotton-candy-stick-raspberry-white-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126074-7_1-baskin-robbins-ice-cream-cotton-candy-stick-raspberry-white-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Cotton Candy Ice Cream is made with flavoured based cream. It has a sweet, caramelised, jammy, fruity and berry-like flavour combination. This gourmet ice cream is colourful, creamy and flavoured with the all-time favourite cotton candy. It is coated with premium rich cotton candy ice cream and raspberry flavoured white chocolate.",
+   "ingredients": "Water, Milk Solids (From Cow Milk), Sugar, Acidity Regulator (330,331), Stabilizers (410,412), Emulsifier (471,477), CONTAINS PERMITTED SYNTHETIC FOOD COLOURS (102,122,133) AND ADDED ARTIFICIAL flavourING SUBSTANCES (COTTON CANDY), Edible Vegetable Oil (Palm Oil, Palm Kernel Oil), Milk Solids (From Cow Milk), Emulsifier (322), CONTAINS PERMITTED SYNTHETIC FOOD COLOURS (124,127) AND ADDED ARTIFICIAL flavourING SUBSTANCES (RASPBERRY)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "65 ml",
+    "Energy (Kcal)": "177.5",
+    "Fat (g)": "11.7",
+    "Sat. Fat (g)": "8.4",
+    "Trans Fat (g)": "0.1",
+    "Cholesterol (mg)": "13.1",
+    "Sodium (mg)": "21.3",
+    "Carbohydrate (g)": "16.2",
+    "Dietary Fiber (g)": "0.0",
+    "Total Sugar (g)": "15.0",
+    "Added Sugar (g)": "12.9",
+    "Protein (g)": "1.9"
+   },
+   "storageInstructions": "*Store in a freezer at -18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hazelnut Ice Cream Stick",
+  "handle": "hazelnut-ice-cream-stick",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212500_2-baskin-robbins-hazelnut-rocher.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212500_2-baskin-robbins-hazelnut-rocher.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212500-2_2-baskin-robbins-hazelnut-rocher.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212500-3_2-baskin-robbins-hazelnut-rocher.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212500-4_2-baskin-robbins-hazelnut-rocher.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212500-5_2-baskin-robbins-hazelnut-rocher.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212500-6_2-baskin-robbins-hazelnut-rocher.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212500-7_1-baskin-robbins-hazelnut-rocher.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Hazelnut Ice cream is made with fine quality milk chocolate and hazelnuts. Milky Hazelnut Chocolate Ice Cream coated with milk chocolate confectionery & roasted hazelnut. It is a rich and creamy ice cream. It has the right amount of roasted hazelnuts. This rich ice cream with a distinct hint of crunchy hazelnut gives you a silky mouthfeel.",
+   "nutritionalInfo": {
+    "Nutrition per": "65 ml",
+    "Serving Size": "65 ml",
+    "Energy (kcal)": "191.6 kcal",
+    "Fat (g)": "13.2 g",
+    "Sat. Fat (g)": "6.8 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "12.2 mg",
+    "Sodium (mg)": "20.2 mg",
+    "Carbohydrate (g)": "15.4 g",
+    "Dietary Fiber (g)": "0.1 g",
+    "Total Sugar (g)": "12.6 g",
+    "Added Sugar (g)": "10.6 g",
+    "Protein (g)": "2.7 g"
+   },
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mississippi Mud Ice Cream Stick",
+  "handle": "mississippi-mud-ice-cream-stick",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "65ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126079_3-baskin-robbins-ice-cream-bar-mississippi-mud.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126079_3-baskin-robbins-ice-cream-bar-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126079-2_3-baskin-robbins-ice-cream-bar-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126079-3_3-baskin-robbins-ice-cream-bar-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126079-4_2-baskin-robbins-ice-cream-bar-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126079-5_2-baskin-robbins-ice-cream-bar-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126079-6_2-baskin-robbins-ice-cream-bar-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126079-7_2-baskin-robbins-ice-cream-bar-mississippi-mud.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the decadence of Mississippi Mud Stick - an indulgent creation featuring rich chocolate ice cream intertwined with a fudge ribbon, embraced by a luscious brownie coating dipped in milk chocolate. This triple-chocolate delight invites you into a world of exquisite flavours, where the velvety texture of chocolate fudge meets the creaminess of ice cream, and the crunch of brownie pieces adds an irresistible dimension. Immerse yourself in the opulence of this Mississippi Mud flavour, where every bite is a symphony of chocolate perfection, redefining your dessert experience.",
+   "ingredients": "Water, Milk Solids (From Cow Milk), Sugar, Cocoa Solids, Chocolate Confectionary (3%) {Liquid Glucose, Sugar, Cocoa Powder, Stabilizers (440), Modified Starch}, Fudge Brownie Cake Pieces (1%) {Sugar, Water, Wheat Flour, Milk Fat, Cocoa Solids, Liquid Glucose, Baking Powder}, Stabilizers (410,412), Emulsifier (471,477), Permitted Natural Colour (150c) and Added Artificial Flavouring Substances (Chocolate), Milk Choco-dip (Sugar, Cocoa Butter, Milk Solids (From Cow Milk), Cocoa Solids, Emulsifier (322)), Fudge Brownie Cake Pieces (1%) {Sugar, Water, Wheat Flour, Milk Fat, Cocoa Solids, Liquid Glucose, Baking Powder}",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "65 ml",
+    "Energy (KCAL)": "197.7",
+    "Fat (G)": "13.0",
+    "Sat. Fat (G)": "7.3",
+    "Trans Fat (G)": "0.0",
+    "Cholesterol (MG)": "14.0",
+    "Sodium (MG)": "14.9",
+    "Carbohydrate (G)": "17.5",
+    "Dietary Fiber (G)": "0.3",
+    "Total Sugar (G)": "14.7",
+    "Added Sugar (G)": "13.4",
+    "Protein (G)": "2.7"
+   },
+   "storageInstructions": "*Store in or below freezer temperature",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mini Ice Cream Sticks Mississippi Mud & Almond N Caramel (4 pcs)",
+  "handle": "mini-ice-cream-sticks-mississippi-mud-almond-n-caramel-4-pcs",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343742_1-baskin-robbins-mississippi-mud-almond-n-caramel-mini-ice-cream-sticks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343742_1-baskin-robbins-mississippi-mud-almond-n-caramel-mini-ice-cream-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343742-2_1-baskin-robbins-mississippi-mud-almond-n-caramel-mini-ice-cream-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343742-3_1-baskin-robbins-mississippi-mud-almond-n-caramel-mini-ice-cream-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343742-4_1-baskin-robbins-mississippi-mud-almond-n-caramel-mini-ice-cream-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343742-5_1-baskin-robbins-mississippi-mud-almond-n-caramel-mini-ice-cream-sticks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy double the indulgence with Baskin Robbins Mississippi Mud & Almond 'N Caramel Mini Ice Cream Sticks. Savour rich chocolate ice cream coated in milk choco-dip and brownie cake crumble, or delight in smooth caramel ice cream covered in choco-dip and crunchy roasted almonds. These bite-sized treats are perfect for when you crave a little something extra special.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Bavarian Chocolate Cone",
+  "handle": "bavarian-chocolate-cone",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226107_2-baskin-robbins-ice-cream-cone-bavarian-chocolate-with-cashew-pralines.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226107_2-baskin-robbins-ice-cream-cone-bavarian-chocolate-with-cashew-pralines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226107-2_2-baskin-robbins-ice-cream-cone-bavarian-chocolate-with-cashew-pralines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226107-3_2-baskin-robbins-ice-cream-cone-bavarian-chocolate-with-cashew-pralines.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and creamy delight of Baskin Robbins Bavarian Chocolate Ice Cream. Crafted with the finest cocoa, this ice cream offers a silky smooth texture and a delightful chocolate flavour that is just right. Infused with white chocolate pieces and the delectable crunch of cashew chikki, each scoop provides a luxurious experience that not only satisfies your sweet cravings but also helps to lower stress levels and promote relaxation of the nervous system. Treat yourself to this tempting and indulgent chocolate ice cream that is sure to transport you to a state of pure bliss with every bite.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cookies N Cream Cone",
+  "handle": "cookies-n-cream-cone",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226109_2-baskin-robbins-ice-cream-cone-cookies-n-cream-with-milk-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226109_2-baskin-robbins-ice-cream-cone-cookies-n-cream-with-milk-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226109-2_2-baskin-robbins-ice-cream-cone-cookies-n-cream-with-milk-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226109-3_2-baskin-robbins-ice-cream-cone-cookies-n-cream-with-milk-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful Baskin Robbins Cookies 'N Cream Ice Cream, a perfect blend of fine cream and chocolate chip cookies. This rich, creamy treat offers a delicious explosion of flavours in every bite, with crunchy bits of cookies complementing the smooth, premium vanilla ice cream. Enjoy the ultimate summer treat with the Baskin Robbins Cookies n Cream Cone, where the satisfying crunch of cookies is perfectly balanced with the velvety texture of the ice cream. Treat yourself to this classic cookies and cream flavour and savour a moment of pure indulgence with every lick.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cotton Candy Cone",
+  "handle": "cotton-candy-cone",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40226108_2-baskin-robbins-cotton-candy-ice-cream-cone-with-milk-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226108_2-baskin-robbins-cotton-candy-ice-cream-cone-with-milk-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226108-2_2-baskin-robbins-cotton-candy-ice-cream-cone-with-milk-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40226108-3_2-baskin-robbins-cotton-candy-ice-cream-cone-with-milk-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Cotton Candy Ice Cream is made with flavoured based cream. It has sweet, caramelised, jammy, fruity and berry-like flavours. It has a unique flavour combination. Gourmet ice cream flavoured with the all-time favourite cotton candy. This ice cream is colourful and creamy.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hazelnut Cone",
+  "handle": "hazelnut-cone",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323296_2-baskin-robbins-hazelnut-rocher-cone-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323296_2-baskin-robbins-hazelnut-rocher-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323296-2_2-baskin-robbins-hazelnut-rocher-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323296-3_2-baskin-robbins-hazelnut-rocher-cone-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the luscious Hazelnut Rocher Cone Ice Cream, a delightful dairy-based dessert featuring creamy hazelnut chocolate ice cream. Topped with a decadent milk chocolate dip, hazelnut pieces, and choco rice crispies, every bite is a symphony of rich flavours and satisfying textures. The velvety smoothness of hazelnut chocolate ice cream, complemented by the crunch of hazelnut pieces and choco rice crispies, creates a heavenly treat that is ideal for enjoying on the go or as a satisfying dessert. Savour the nutty richness of this Baskin Robbins Hazelnut Ice Cream Cone, where creamy hazelnut-flavoured ice cream Nestléd in a crispy cone is topped with a decadent chocolate coating and crunchy hazelnut pieces, offering a perfect balance of smooth texture and indulgent flavours for hazelnut enthusiasts.",
+   "ingredients": "Water, Milk Solids (From Cow Milk), Sugar, Hazelnut Paste, Cocoa Solids, Dark Chocolate, Stabilizers, Emulsifiers",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "110ml",
+    "ENERGY (kcal)": "235.3 kcal",
+    "TOTAL FAT (g)": "13.0 g",
+    "SAT. FAT (g)": "6.2 g",
+    "TRANS FAT (g)": "0.0 g",
+    "CHOLESTEROL (mg)": "18.8 mg",
+    "SODIUM (mg)": "48.6 mg",
+    "CARBOHYDRATE (g)": "25.7 g",
+    "DIETARY FIBER (g)": "0.5 g",
+    "TOTAL SUGAR (g)": "14.3 g",
+    "ADDED SUGAR (g)": "11.2 g",
+    "PROTEIN (g)": "4.0 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat\n*Consume within the best before date",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pistachio & Caramel Cone",
+  "handle": "pistachio-caramel-cone",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333697_1-baskin-robbins-pistachio-caramel-ice-cream-cone.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333697_1-baskin-robbins-pistachio-caramel-ice-cream-cone.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333697-2_1-baskin-robbins-pistachio-caramel-ice-cream-cone.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333697-3_1-baskin-robbins-pistachio-caramel-ice-cream-cone.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333697-4_1-baskin-robbins-pistachio-caramel-ice-cream-cone.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333697-5_1-baskin-robbins-pistachio-caramel-ice-cream-cone.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful fusion of flavours and textures with the Baskin Robbins Pistachio and Caramel Ice Cream Cone. This irresistible dessert combines creamy pistachio-flavoured ice cream with rich, indulgent caramel, all encased in a crispy cone and topped with a luscious milk chocolate dip and crunchy cashew bits. Each bite offers a perfect balance of nutty pistachio and sweet caramel, creating a luxurious treat that promises to satisfy your cravings. Relish the richness of the nuts and caramel, and enjoy the delightful blend of flavours that will leave you craving more. Whether you're enjoying it on the go or as a special dessert, the Baskin Robbins Pistachio and Caramel Ice Cream Cone is a delightful and satisfying treat that is sure to delight your taste buds.",
+   "ingredients": "Ice Cream Layer (67%):\nWater, Milk Solids, Sugar, Caramel Confectionary (Milk Solids, Water, Sugar), Liquid Glucose, Sugar, Jaggery, Stabilizers (Ins 440, Ins 500(Ii)), Salt, Added Artificial Flavouring Substances (Vanillin), Pistachio Paste (Pistachio, Hazelnut, Gluco-Oligosaccharide), Edible Vegetable Oils (Sunflower Oil, Palm Oil), Edible Common Salt, Synthetic Food Colour (Ins 141(I), Ins 100(I)), Added Natural Flavouring Substances (Pistachio), Emulsifiers (Ins 471, Ins 477), Stabilizers (Ins 410, Ins 412), Synthetic Food Colours (Ins 102, Ins 133, Ins 110, Ins 331(Iii)).\nCone Biscuit (13%):\nRefined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Refined Coconut Oil), Salt, Emulsifier (Ins 322), Added Artificial Flavouring Substances (Vanillin).\nTopping And Sprinkled Cashew Bits (20%):\nEdible Vegetable Oil (Palm Oil, Palm Kernel Oil), Sugar, Cocoa Solids, Milk Solids, Emulsifiers (Ins 322, Ins 476), Added Artificial Flavouring Substances (Ethyl Vanillin), Cashew Nuts.",
+   "nutritionalInfo": {
+    "Serving Size": "110ml",
+    "Energy": "228.9 kcal",
+    "Fat": "11.7 g",
+    "Saturated Fat": "6.2 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "19.0 mg",
+    "Sodium": "48.4 mg",
+    "Carbohydrate": "26.9 g",
+    "Dietary Fibre": "0.5 g",
+    "Total Sugar": "17.9 g",
+    "Added Sugar": "14.5 g",
+    "Protein": "3.9 g"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Keep the container tightly sealed to preserve freshness",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Top Notch Butterscotch Cone",
+  "handle": "top-notch-butterscotch-cone",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323297_2-baskin-robbins-top-notch-butterscotch-cone-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323297_2-baskin-robbins-top-notch-butterscotch-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323297-2_2-baskin-robbins-top-notch-butterscotch-cone-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323297-3_2-baskin-robbins-top-notch-butterscotch-cone-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the exquisite Top Notch Butterscotch Cone Ice Cream, a premium dairy-based dessert that elevates your sweet cravings. Immerse your taste buds in the rich butterscotch-flavoured ice cream, adorned with a decadent topping of milk chocolate and a delightful cashew crunch. The perfect balance of velvety sweetness and nutty textures creates a symphony of flavours in every cone. Treat yourself to the finest quality ingredients, harmoniously blended to deliver a top-notch dessert experience that combines creaminess, crunch, and the timeless allure of butterscotch. This item is eligible for a refund or replacement within 2 days of purchase, in the unlikely event of a damaged, defective, or incorrect item. Enjoy the delightful Baskin Robbins Top Notch Butterscotch Ice Cream Cone, with its creamy butterscotch-flavoured ice cream Nestléd in a crispy cone, topped with a rich butterscotch sauce and crunchy butterscotch pieces. Each bite offers a perfect balance of creamy texture and rich, caramelised flavours, creating a satisfying treat for butterscotch enthusiasts. Ideal for enjoying on-the-go or as a sweet dessert, this ice cream cone promises a deliciously memorable experience that blends premium ingredients with irresistible taste.",
+   "ingredients": "Water, Milk Solids, Sugar, Stabilizers, Emulsifiers, Permitted Synthetic Food Colours, Added Artificial Flavouring Substances (Butterscotch), Edible Vegetable Oil, Cashew, Cocoa Solids, Refined Wheat Flour, Refined Vegetable Oil, Salt, Emulsifier",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "110ml",
+    "ENERGY (kcal)": "185.4",
+    "FAT (g)": "10.0",
+    "SAT. FAT (g)": "5.1",
+    "TRANS FAT (g)": "0.0",
+    "CHOLESTEROL (mg)": "15.8",
+    "SODIUM (mg)": "38.9",
+    "CARBOHYDRATE (g)": "20.7",
+    "DIETARY FIBER (g)": "0.3",
+    "TOTAL SUGAR (g)": "11.0",
+    "ADDED SUGAR (g)": "8.4",
+    "PROTEIN (g)": "3.3"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Maintain at a temperature of -18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Super Strawberry Surprise Cone",
+  "handle": "super-strawberry-surprise-cone",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "110ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343737_2-baskin-robbins-super-strawberry-surprise-ice-cream-cone.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343737_2-baskin-robbins-super-strawberry-surprise-ice-cream-cone.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343737-2_2-baskin-robbins-super-strawberry-surprise-ice-cream-cone.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343737-3_2-baskin-robbins-super-strawberry-surprise-ice-cream-cone.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343737-4_2-baskin-robbins-super-strawberry-surprise-ice-cream-cone.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343737-5_1-baskin-robbins-super-strawberry-surprise-ice-cream-cone.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Delight in the fruity charm of Baskin Robbins Super Strawberry Surprise Ice Cream Cone. Creamy strawberry ice cream with real strawberry pieces is swirled with chocolate-flavoured confectionery and topped with milk choco chips, creating a sweet surprise in every bite. Served in a crisp cone, it’s the perfect treat for strawberry lovers who enjoy a chocolatey twist.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd",
+   "fssaiLicense": "10014027002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crunchy Butterscotch Cone",
+  "handle": "crunchy-butterscotch-cone",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212502_1-baskin-robbins-crunchy-butterscotch.jpg"
+    },
+    "barcode": "8906006852105"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212502_1-baskin-robbins-crunchy-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212502-2_1-baskin-robbins-crunchy-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212502-3_1-baskin-robbins-crunchy-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212502-4_1-baskin-robbins-crunchy-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212502-5_1-baskin-robbins-crunchy-butterscotch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Crunchy Butterscotch Ribbon Ice Cream is made using brown sugar and butter. Enjoy the smooth butterscotch flavoured ice cream. It tastes like caramel. This rich butterscotch flavoured ice cream is sprinkled with cashew praline.\nIt is made from the finest brown sugar and butter.\nIt is super-rich and creamy with the right balance of butterscotch.\nIt helps in reducing the levels of stress in the body.\nIt also helps in relaxing the nervous system.",
+   "ingredients": "Ice Cream Layer (69.5%): Water, Milk Solids, Sugar, Cashew Crunch (6.5%) {sugar, Cashew, Milk Fat}, Stabilizers (410, 412), Emulsifiers (471, 477), Contains Permitted Syntheticl Food Colours (102, 110) And Added Artificial Flavouring Substances (butterscotch) Topping And Spray Within Cone (16.5%): Edible Vegetable Oil (palm Oil, Palm Kernel Oil), Sugar, Cocoa Solids, Cashew Crunch (2%) {sugar, Cashew, Milk Fat}, Emulsifiers (322), Contains Added Artificial Flavouring Substances (ethyl Vanillin). Cone Biscuit (14%): Refined Wheat Flour, Sugar, Refined Vegetable Oil, Salt And Emulsifier (322), Contains Added Artificial Flavouring Substances (vanilla)",
+   "usageInstructions": "Ready to use.",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Funwich Butterscotch & Caramel Ice Cream Sandwich",
+  "handle": "funwich-butterscotch-caramel-ice-cream-sandwich",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90ml",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333698_1-baskin-robbins-butterscotch-caramel-funwich-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333698_1-baskin-robbins-butterscotch-caramel-funwich-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333698-2_1-baskin-robbins-butterscotch-caramel-funwich-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333698-3_1-baskin-robbins-butterscotch-caramel-funwich-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333698-4_1-baskin-robbins-butterscotch-caramel-funwich-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333698-5_1-baskin-robbins-butterscotch-caramel-funwich-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Butterscotch & Caramel Funwich Ice Cream is a delightful dessert crafted for pure indulgence. Creamy butterscotch ice cream is perfectly sandwiched between two crunchy Italian caramel cookies, creating a harmonious blend of smooth and crisp textures. Each bite delivers the rich sweetness of butterscotch complemented by the caramel's crunch, making it an irresistible treat for any occasion. Savour the fun and flavour in every delicious bite!",
+   "ingredients": "Ice Cream Layer (61%): Water, Milk Solids (From Cow Milk), Sugar, Stabilisers (461,412,407) Emulsifier (471), Contains Permitted Synthetic Food Colour (102,110) And Added Artificial Flavouring Substances (Butterscotch). Caramel Flavoured Biscuit Layer (39%): Refined Wheat Flour (Maida), Sugar, Edible Vegetable Oil (Coconut Oil), Caramelised Sugar, Liquid Glucose, Raising Agent(500(Ii)), Contains Added Natural Flavouring Substances (Caramel), Salt. In Ingredients, Numbers In Bracket Are As Per The International Numbering System. Allergen: Contains Milk And Cereal. May Contain Nut And Soy.",
+   "nutritionalInfo": {
+    "Serving Size": "90 ml",
+    "Energy (kcal)": "207.6",
+    "Fat (g)": "8.2",
+    "Saturated Fat (g)": "5.8",
+    "Trans Fat (g)": "0.3",
+    "Cholesterol (mg)": "56.2",
+    "Sodium (mg)": "26.8",
+    "Carbohydrate (g)": "29.8",
+    "Dietary Fibre (g)": "0.5",
+    "Total Sugar (g)": "16.4",
+    "Added Sugar (g)": "13.7",
+    "Protein (g)": "3.6"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct sunlight and moisture",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Funwich Dark Chocolate Cookie With Vanilla Ice Cream",
+  "handle": "funwich-dark-chocolate-cookie-with-vanilla-ice-cream",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90ml",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304136_3-baskin-robbins-funwich-dark-chocolate-cookie-with-vanilla-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304136_3-baskin-robbins-funwich-dark-chocolate-cookie-with-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304136-2_3-baskin-robbins-funwich-dark-chocolate-cookie-with-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304136-3_3-baskin-robbins-funwich-dark-chocolate-cookie-with-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304136-4_3-baskin-robbins-funwich-dark-chocolate-cookie-with-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304136-5_1-baskin-robbins-funwich-dark-chocolate-cookie-with-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304136-6_1-baskin-robbins-funwich-dark-chocolate-cookie-with-vanilla-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304136-7_1-baskin-robbins-funwich-dark-chocolate-cookie-with-vanilla-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful fusion of creamy ice cream and chewy, soft cookies with the Baskin Robbins Funwich. This handheld treat combines the finest quality ingredients to deliver a nostalgic and satisfying experience. Perfectly baked cookies encase a smooth, creamy ice cream filling, creating a delectable balance of textures and flavours. Whether you're craving a quick sweet treat on the go or a delightful dessert option, the Funwich offers pure bliss in every bite. Crafted with the renowned expertise of Baskin Robbins, this frozen delight is available in a variety of delectable ice cream flavours to cater to diverse preferences. Elevate your snacking experience and treat yourself to the convenience and decadence of the Baskin Robbins Funwich, a true indulgence for ice cream lovers.",
+   "ingredients": "Vanilla Ice Cream Layer (61%), Dark Chocolate Flavoured Biscuit Layer (39%)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "90 ml",
+    "Energy (kcal)": "206.8",
+    "Fat (g)": "9.2",
+    "Saturated Fat (g)": "6.6",
+    "Trans Fat (g)": "0.7",
+    "Cholesterol (mg)": "55.4",
+    "Sodium (mg)": "27.3",
+    "Carbohydrate (g)": "26.9",
+    "Dietary Fiber (g)": "0.9",
+    "Total Sugar (g)": "16.9",
+    "Added Sugar (g)": "14.2",
+    "Protein (g)": "4.1"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ice Cream Rocks Caramel Biscuit (16 pcs)",
+  "handle": "ice-cream-rocks-caramel-biscuit-16-pcs",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "192ml",
+    "price": "298",
+    "compare_at_price": "298",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333695_1-baskin-robbins-bite-sized-caramel-biscuit-ice-cream-rocks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333695_1-baskin-robbins-bite-sized-caramel-biscuit-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333695-2_1-baskin-robbins-bite-sized-caramel-biscuit-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333695-3_1-baskin-robbins-bite-sized-caramel-biscuit-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333695-4_1-baskin-robbins-bite-sized-caramel-biscuit-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333695-5_1-baskin-robbins-bite-sized-caramel-biscuit-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333695-6_1-baskin-robbins-bite-sized-caramel-biscuit-ice-cream-rocks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible Baskin Robbins Caramel Biscuit Ice Cream Rocks, a delightful bite-sized treat that combines creamy caramel ice cream with crunchy Biscoff cookie crumbs for an unbeatable flavour and texture experience. Each piece is coated in a luscious white chocolate dip, creating a premium dessert that's perfect for snacking or sharing. The caramel biscuit pieces add a rich, sweet and buttery flavour that pairs beautifully with the smooth, indulgent ice cream base, delivering a satisfying and blissful taste in every bite. Treat yourself or your loved ones to this irresistible confection, which promises to satisfy any dessert lover's cravings with its perfect balance of creamy, crunchy and chocolatey goodness.",
+   "ingredients": "Ice Cream Layer (62%): Water, Milk Solids (From Cow Milk), Sugar, Biscoff® Preparation {Refined Wheat Flour (Maida), Sugar, Vegetable Oils (Palm, Rapeseed), Candy Sugar Syrup, Raising Agent (500Ii), Soy Flour, Salt, Cinnamon, Emulsifier (322), Acidity Regulator (330)}, Stabilisers (410,412), Emulsifier (471,477). Outer Layer (38%): White Choco-Dip {Edible Vegetable Oil [Palm Oil, Palm Kernel Oil, Coconut Oil], Cocoa Butter, Sugar, Milk Solids(From Cow Milk), Emulsifier (322), And Added Artificial Flavouring Substances (Vanilla)}, Biscoff® Cookie Crumbs And Paste (11%) {Refined Wheat Flour (Maida), Sugar, Vegetable Oils (Palm, Rapeseed), Candy Sugar Syrup, Raising Agent (500Ii), Soy Flour, Salt, Cinnamon, Emulsifier (322), Acidity Regulator (330)}.",
+   "nutritionalInfo": {
+    "Serving Size": "12ml (10g)",
+    "Servings Per Container": "16",
+    "Energy (kcal)": "32.6",
+    "Fat (g)": "2.2",
+    "Sat. Fat (g)": "1.4",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "1.9",
+    "Sodium (mg)": "6.7",
+    "Carbohydrate (g)": "2.9",
+    "Dietary Fibre (g)": "0.0",
+    "Total Sugar (g)": "1.8",
+    "Added Sugar (g)": "1.5",
+    "Protein (g)": "0.4"
+   },
+   "storageInstructions": "*Store at 18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ice Cream Rocks Hazelnut (16 pcs)",
+  "handle": "ice-cream-rocks-hazelnut-16-pcs",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "192ml",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40333696_1-baskin-robbins-bite-sized-hazelnut-ice-cream-rocks.jpg"
+    },
+    "barcode": "8906006855274"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333696_1-baskin-robbins-bite-sized-hazelnut-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333696-2_1-baskin-robbins-bite-sized-hazelnut-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333696-3_1-baskin-robbins-bite-sized-hazelnut-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333696-4_1-baskin-robbins-bite-sized-hazelnut-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333696-5_1-baskin-robbins-bite-sized-hazelnut-ice-cream-rocks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40333696-6_1-baskin-robbins-bite-sized-hazelnut-ice-cream-rocks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Hazelnut Ice Cream Rock brings you bite-Sized indulgences like never before. Creamy vanilla ice cream is enveloped in a rich hazelnut-flavoured milk chocolate dip, topped with roasted hazelnuts and crispy wheat pieces for a delectable crunch. Perfectly portioned for snacking or sharing, these ice cream rocks are a luxurious treat that blends smooth, nutty flavours with delightful textures. Savour the ultimate hazelnut dessert experience in every bite!",
+   "ingredients": "Water, Milk Solids(From Cow Milk), Sugar, Stabilisers (410,412), Emulsifier (471,477), Contains Permitted Synthetic Food Colours (102,110) And Added Artificial Flavouring Substances (Vanilla), Sugar, Edible Vegetable Oil (Palm Kernel Oil, Coconut Oil), Cocoa Butter, Milk Solids(From Cow Milk), Cocoa Solids, Emulsifier (322), Contains Added Natural And Artificial Flavouring Substances (Hazelnut), Hazelnut Paste, Wheat Crispies, Hazelnut Pieces",
+   "nutritionalInfo": {
+    "Serving Size": "12ml",
+    "Servings Per Container": "16",
+    "Energy (kcal)": "36.6",
+    "Fat (g)": "2.7",
+    "Sat. Fat (g)": "1.6",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "2.3",
+    "Sodium (mg)": "4.2",
+    "Carbohydrate (g)": "2.6",
+    "Dietary Fibre (g)": "0.0",
+    "Total Sugar (g)": "2.0",
+    "Added Sugar (g)": "1.8",
+    "Protein (g)": "0.5"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd. Plot No. A-4",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ice Cream Rocks Cotton Candy (19 pcs)",
+  "handle": "ice-cream-rocks-cotton-candy-19-pcs",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "228ml",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+    },
+    "barcode": "8906006855311"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135-2_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135-3_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135-4_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135-5_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135-6_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135-7_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304135-8_2-baskin-robbins-ice-cream-rocks-cotton-candy-19-pcs.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Ice Cream Rocks Cotton Candy is a wonderful frozen dessert that perfectly replicates cotton candy's fanciful and sentimental flavours. Imbued with the peculiar flavour of cotton candy, it is a favourite fairground treat of both adults and children. India's favourite ice cream brand, Baskin Robbins, has solidified its position in the market. They work hard to uphold the highest standards of quality. Varied consumers' needs are met by the varieties and variations available. It's a perfect serving size for people who want to indulge in a special and tasty ice cream treat without going overboard or for those who want to control their dessert intake. A premium and delectable ice cream experience is ensured using premium dairy products in the vanilla ice cream base and premium flavourings in the candy floss flavour swirls. Thus, the swirls of candy floss flavour and the ice cream's vibrant look bring back happy, exciting memories of childhood.",
+   "ingredients": "Ice Cream Layer (59%): Water, Milk Solids, Sugar, Acidity Regulator (330,331), Stabilizers (410, 412), Emulsifier (471, 477). Contains Permitted Synthetic Food Colours (133) And Added Artificial flavouring Substances (Cotton Candy). Outer Layer (41%): White Choco-Dip {Edible Vegetable Oil [Palm Oil, Palm Kernel Oil, Coconut Oil], Sugar, Milk Solids, Emulsifier (322), Contains Permitted Synthetic Food Colours (124, 127) And Added Artificial Flavouring Substances (Raspberry)}",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "10g",
+    "Energy (kcal)": "38.0",
+    "Fat (g)": "2.6",
+    "Sat. Fat (g)": "2.0",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "2.1",
+    "Sodium (mg)": "3.4",
+    "Carbohydrate (g)": "3.2",
+    "Dietary Fiber (g)": "0.0",
+    "Total Sugar (g)": "2.9",
+    "Added Sugar (g)": "2.6",
+    "Protein (g)": "0.3"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "MIDC Phase II",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ice Cream Rocks Mississippi Mud (19 pcs)",
+  "handle": "ice-cream-rocks-mississippi-mud-19-pcs",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "228ml",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+    },
+    "barcode": "8906006855007"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134-2_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134-3_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134-4_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134-5_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134-6_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134-7_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304134-8_2-baskin-robbins-ice-cream-rocks-mississippi-mud.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, deep chocolate flavour of Baskin Robbins' Mississippi Mud Ice Cream Rocks. Crafted with premium dairy ingredients, this ice cream boasts a creamy, decadent texture that melts delightfully on the tongue. Each bite offers a perfect blend of luxurious chocolate and a satisfying crunch, creating a truly indulgent treat that's perfect for any occasion. Whether you're craving a moment of pure indulgence or a special dessert, this Baskin Robbins ice cream promises to satisfy your sweet tooth with its irresistible combination of flavour and texture.",
+   "ingredients": "Ice Cream Layer (52%): Water, Milk Solids, Sugar, Cocoa Solids (2%), Dark Chocolate (0.5%), Stabilizers (410, 412), Emulsifier (471, 477). Outer Layer (48%): Milk Choco-dip (Sugar, Edible Vegetable Oil (Palm Kernel Oil, Coconut Oil), Cocoa Butter, Milk Solids, Cocoa Solids, Emulsifier (322)), Fudge Brownie Cake Crumbs (10%) (Sugar, Water, Refined Wheat Flour, Milk Fat, Cocoa Solids, Liquid Glucose, Baking Powder)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "10g",
+    "Energy (kcal)": "41.2",
+    "Fat (g)": "2.9",
+    "Sat. Fat (g)": "1.7",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "2.4",
+    "Sodium (mg)": "2.5",
+    "Carbohydrate (g)": "3.3",
+    "Dietary Fiber (g)": "0.1",
+    "Total Sugar (g)": "2.7",
+    "Added Sugar (g)": "2.5",
+    "Protein (g)": "0.5"
+   },
+   "storageInstructions": "*Store at -18°C or below",
+   "manufacturerName": "MIDC Phase II",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Brownie Cupcake Ice Cream Sundae",
+  "handle": "brownie-cupcake-ice-cream-sundae",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40304137_4-baskin-robbins-brownie-sundae-ice-cream.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304137_4-baskin-robbins-brownie-sundae-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304137-2_1-baskin-robbins-brownie-sundae-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304137-3_1-baskin-robbins-brownie-sundae-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304137-4_1-baskin-robbins-brownie-sundae-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304137-5_1-baskin-robbins-brownie-sundae-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304137-6_2-baskin-robbins-brownie-sundae-ice-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40304137-7_1-baskin-robbins-brownie-sundae-ice-cream.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible fusion of rich, fudgy brownie chunks and creamy, velvety ice cream with the Baskin Robbins Brownie Sundae Ice Cream. This decadent treat combines the best of both worlds, satisfying your sweet tooth with a heavenly blend of textures and flavours. Generously swirled with a luscious caramel sauce, each spoonful delivers a symphony of chocolatey, gooey goodness that will leave you craving more. Perfect for savouring on your own or sharing with a loved one, this indulgent ice cream cup is a practical choice for any occasion, whether you're treating yourself after a long day or celebrating a special moment. Explore Baskin-Robbins' extensive menu of mouth-watering ice cream flavours and desserts, available exclusively on Big Basket, and discover a world of frozen delight at your fingertips.",
+   "ingredients": "Ice Cream Part (72%) Water, Milk Solids, Sugar, Emulsifiers(471), Stabilizers (410, 412), Contains Permitted Synthetic Food colour(102, 110), And Added Artificial flavouring Substances (Vanilla), Acidity Regulator(330), Preservative (202), Chocolate flavoured Confectioners(9%) {Liquid Glucose, Sugar, Cocoa Solids, Modified Starch, Humectant(422), Water, Stabilizer(440), Sucrose, Preservative (202), Salt, Contains Added Artificial flavouring Substances (Chocolate, Vanilla)}, Chocolate Coated Crispies (2.6%) (Emulsifier(322(), 476), Anticaking Agent (170()), Contains Added Nature Identical (Vanillin) Flavouring Substances}. Brownie Cake Part (28%) [Water, Sugar, Refined Wheat Flour, Milk Solids, Cocoa Solids(5%), Edible Vegetable Oil (Palm Oil), Raising Agent(500(I), 341(), Baking Powder, Emulsifier(471, 477), Stabilizers(415), Corn Starch, Iodised Salt, Maltodextrin, Contains Permitted Synthetic Food Colours (150c, 150d) And Added Artificial(Vanilla) And Nature Identical (Chocolate) Flavouring Substances, Sugar Syrup (Sugar, Water, Acidity Regulator(330), Preservative (202))",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "175 ml",
+    "Energy (Kcal)": "306.2 kcal",
+    "Fat (g)": "12.4 g",
+    "Sat. Fat (g)": "6.4 g",
+    "Trans Fat (g)": "0.01 g",
+    "Cholesterol (mg)": "27.4 mg",
+    "Sodium (mg)": "44.9 mg",
+    "Carbohydrate (g)": "44.3 g",
+    "Dietary Fiber (g)": "0.1 g",
+    "Total Sugar (g)": "36.8 g",
+    "Added Sugar (g)": "32.4 g",
+    "Protein (g)": "4.1 g"
+   },
+   "storageInstructions": "Store at –18°C or below",
+   "manufacturerName": "Graviss Foods Pvt. Ltd",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fudgy Caramel Mousse Ice Cream Sundae",
+  "handle": "fudgy-caramel-mousse-ice-cream-sundae",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343741_1-baskin-robbins-fudgy-caramel-mousse-ice-cream-sundae.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343741_1-baskin-robbins-fudgy-caramel-mousse-ice-cream-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343741-2_1-baskin-robbins-fudgy-caramel-mousse-ice-cream-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343741-3_1-baskin-robbins-fudgy-caramel-mousse-ice-cream-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343741-4_1-baskin-robbins-fudgy-caramel-mousse-ice-cream-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343741-5_1-baskin-robbins-fudgy-caramel-mousse-ice-cream-sundae.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343741-6_1-baskin-robbins-fudgy-caramel-mousse-ice-cream-sundae.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Dive into indulgence with Baskin Robbins Fudgy Caramel Mousse Ice Cream Sundae. A rich swirl of milk chocolate mousse and vanilla ice cream meets smooth cream caramel and decadent chocolate fudge. Topped with choco-chips and chunks of brownie cake, this sundae is a delightful mix of textures and flavours - perfect for those who love a sweet, satisfying treat.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mississippi Mud Ice Cream Sundae",
+  "handle": "mississippi-mud-ice-cream-sundae",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126070_3-baskin-robbins-ice-cream-sundae-mississippi-mud.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126070_3-baskin-robbins-ice-cream-sundae-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126070-2_3-baskin-robbins-ice-cream-sundae-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126070-3_3-baskin-robbins-ice-cream-sundae-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126070-4_2-baskin-robbins-ice-cream-sundae-mississippi-mud.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126070-5_2-baskin-robbins-ice-cream-sundae-mississippi-mud.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Savour the rich flavours of Baskin Robbins Ice Cream Sundae - Mississippi Mud. This decadent treat features velvety chocolate ice cream all drizzled with a luscious chocolate sauce. Perfect for a delightful dessert experience, it offers a harmonious blend of textures and flavours that will satisfy your sweet cravings.",
+   "ingredients": "Milk Solids (From Cow Milk), Water, Sugar, Chocolate\nFlavoured Confectionary (9%), {Liquid Glucose, Water, Sugar, Cocoa Solids,\nStarch, Humectant (422), Stabiliser (440), Contains Added Artificial Flavouring\nSubstances (Chocolate, Vanilla), Preservative (202)], Cocoa Solids (4.4%),\nLiquid Glucose, Fudge Brownie Cake Pieces (4.4%) {Preservative (202), Baking\nPowder, Contains Permitted Natural Colour (150c) And Added Artificial\nFlavouring Substances (Chocolate)], Cherry, Fat-Emulsion Whip Topping\n{Emulsifiers (491,435,472c,475), Stabilizers (461,415,464,412), Acidity\nRegulators (339(II)), Nature Identical & Natural Flavouring Substances\n(Vanilla)], Stabiliser (461,412,407,410), Emulsifier (471,477), Contains Less\nThan 1% Modified Starch.\nIn ingredients, numbers in bracket are as per the\ninternational numbering system.",
+   "nutritionalInfo": {
+    "Serving Size": "175 ml",
+    "Servings Per Container": "1",
+    "Energy": "238.6 kcal",
+    "Total Fat": "12.8 g",
+    "Saturated Fat": "6.9 g",
+    "Trans Fat": "0.0 g",
+    "Cholesterol": "33.9 mg",
+    "Sodium": "37.7 mg",
+    "Total Carbohydrates": "29.0 g",
+    "Dietary Fibre": "0.9 g",
+    "Total Sugars": "25.3 g",
+    "Added Sugars": "21.6 g",
+    "Protein": "3.9 g"
+   },
+   "manufacturerName": "Rich Graviss Products Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Overload Ice Cream Sundae",
+  "handle": "fruit-overload-ice-cream-sundae",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "165ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126069_3-baskin-robbins-ice-cream-sundae-fruit-overload.jpg"
+    },
+    "barcode": "8906006855519"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126069_3-baskin-robbins-ice-cream-sundae-fruit-overload.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126069-2_3-baskin-robbins-ice-cream-sundae-fruit-overload.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126069-3_3-baskin-robbins-ice-cream-sundae-fruit-overload.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126069-4_2-baskin-robbins-ice-cream-sundae-fruit-overload.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126069-5_2-baskin-robbins-ice-cream-sundae-fruit-overload.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126069-6_1-baskin-robbins-ice-cream-sundae-fruit-overload.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate summer treat with Fruit Overload Sundae, a delectable creation by the renowned Baskin Robbins. This sundae is a celebration of nature's bounty, featuring a generous scoop of creamy ice cream topped with a vibrant medley of ripe, juicy fruits. Succulent slices of mango, tangy pineapple, sweet strawberries, and zesty oranges come together to create a visually stunning and irresistibly delicious masterpiece. Complementing the fresh fruit is a layer of orange jelly, strawberry jelly, and a sprinkling of blueberries, cranberries, and crunchy cashews, adding a delightful contrast of textures and flavours. Crafted with the utmost care, this sundae is the perfect way to cool down and indulge in the flavours of summer. Treat yourself to this irresistible delight and let the burst of fruit flavours transport you to a tropical paradise.",
+   "ingredients": "Water, Milk Solids, Sugar, Mix Fruit Preparation (28%) {Strawberry, Black currant, Raisins, Blueberry, Cranberry, Sugar, Liquid Glucose, Stabilizer (401), Acidity Regulator (330), Antioxidant (300), Preservative (202), CONTAINS PERMITTED SYNTHETIC FOOD ColourS (110, 127) AND NATURAL Colour [150 (c)] AND ADDED ARTIFICIAL FlavourING SUBSTANCES (STRAWBERRY)}, Fat Emulsion (Whip Topping) (3%), Roasted cashew (2%), Stabilizers (410, 412), Emulsifiers (471, 477), CONTAINS ADDED ARTIFICIAL FlavourING SUBSTANCES (Mix Fruit).",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "165ml",
+    "Energy (kcal)": "291.9",
+    "Fat (g)": "12.9",
+    "Sat. Fat (g)": "7.1",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "32.2",
+    "Sodium (mg)": "57.2",
+    "Carbohydrate (g)": "39.8",
+    "Dietary Fiber (g)": "0.2",
+    "Total Sugar (g)": "34.8",
+    "Added Sugar (g)": "28.1",
+    "Protein (g)": "4.3"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fudge Ice Cream Sundae",
+  "handle": "fudge-ice-cream-sundae",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "165ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126071_2-baskin-robbins-ice-cream-sundae-fudge.jpg"
+    },
+    "barcode": "8906006850101"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126071_2-baskin-robbins-ice-cream-sundae-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126071-2_2-baskin-robbins-ice-cream-sundae-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126071-3_2-baskin-robbins-ice-cream-sundae-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126071-4_1-baskin-robbins-ice-cream-sundae-fudge.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Fudge Sundae is a premium Vanilla ice cream with caramel and chocolate confectionery, topped with roasted almonds that will instantly become your new favourite indulgence.",
+   "ingredients": "Ice Cream Layer : Water, Milk Solids, Sugar, Cream Caramel Confectionery { Milk Solids, Sugar, Liquid Glucose, Stablizer (440)Emulsifier (331Ii), Salt} Chocolate Confectionery [ Liquid Glucose, Sugar, Cocoa Powder, Stablizers (440) Modified Starch] Contain Permitted Synthetic Food Colours (102, 110) And Added Artiticial Flavouring Substances ( Vanila ) Topping : Roasted Almonds. This Ice Cream Contain Modifited Starch Less Than 1%",
+   "usageInstructions": "Order a sundae cup, loaded with nuts that can be eaten straight from the pack.",
+   "manufacturerName": "MFD BY",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kulfi Falooda Sundae",
+  "handle": "kulfi-falooda-sundae",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220775_2-baskin-robbins-sundae-ice-cream-kulfi-falooda-has-rich-creamy-texture.jpg"
+    },
+    "barcode": "8906006853751"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220775_2-baskin-robbins-sundae-ice-cream-kulfi-falooda-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220775-2_2-baskin-robbins-sundae-ice-cream-kulfi-falooda-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220775-3_2-baskin-robbins-sundae-ice-cream-kulfi-falooda-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220775-4_2-baskin-robbins-sundae-ice-cream-kulfi-falooda-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220775-5_2-baskin-robbins-sundae-ice-cream-kulfi-falooda-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220775-6_1-baskin-robbins-sundae-ice-cream-kulfi-falooda-has-rich-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins presents Kulfi Falooda Sundae Ice Cream in a premium cup size packing that will instantly become your new favourite indulgence. The ice cream is pure vegetarian and free from harmful chemicals and artificial colours and flavours. It is rich in texture and taste. Now enjoy the international flavours with the premium brand at doorsteps.",
+   "ingredients": "Ice Cream Layer (89%): Water, Milk Solids, Milk Chocolate Chips (9%) {Sugar, Cocoa Solids, Cocoa Butter, Emulsifiers [322(i), 476], Contains Added Artificial Flavouring Substances (Ethyl Vanillin)}, Sugar, Caramel Confectionery (6%) {Milk Solids, Sugar, Liquid Glucose, Stabilizers (440), Emulsifier [331(iii)], Salt}, Chocolate Flavoured Confectionery (6%) {Liquid Glucose, Sugar, Water, Cocoa Solids, Starch, Stabilizers (440), Preservative (202), Salt, Contains Added Artificial Flavouring Substances (Chocolate And Vanilla)}, Dextrose, Sweetener (Maltitol), Liquid Glucose, Humectant (Glycerin), Stabilizers (410, 412), Emulsifiers (471, 477), Contains Added Artificial Flavoring Substances (Vanilla). Topping Layer (11%): Edible Vegetable Oil (Palm Oil, Palm Kernel Oil), Sugar, Cocoa Solids, And Emulsifiers (322), Contains Added Artificial Flavouring Substances (Ethyl Vanillin).",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Banana Split Sundae",
+  "handle": "banana-split-sundae",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220774_1-baskin-robbins-sundae-ice-cream-banana-split-has-rich-creamy-texture.jpg"
+    },
+    "barcode": "8906006853768"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220774_1-baskin-robbins-sundae-ice-cream-banana-split-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220774-2_1-baskin-robbins-sundae-ice-cream-banana-split-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220774-3_1-baskin-robbins-sundae-ice-cream-banana-split-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220774-4_1-baskin-robbins-sundae-ice-cream-banana-split-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220774-5_1-baskin-robbins-sundae-ice-cream-banana-split-has-rich-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Banana Split Sundae Ice Cream is a mix of delectable ice cream and bananas. It is a perfect blend of smooth, rich ice cream with delicious and sweet bananas. It is a premium ice cream loaded with exotic flavours. This ice cream has the right balance of sweetness. It has a nice rich and creamy texture. A delicious classic, traditional treat that you will love.\nBenefits\n1. It is made from the finest milk and exotic flavours.\n2. It is super rich and creamy with the right balance of sweetness.\n3. It helps in reducing the levels of stress in the body.\n4. It also helps in relaxing the nervous system.",
+   "ingredients": "Water, Milk Solids, Chocolate Flavoured Confectionery (13%) {Liquid Glucose, Sugar, Water, Cocoa Solids, Starch, Stabilizers (440), Preservative (202), Salt, CONTAINS ADDED ARTIFICIAL FLAVOURING SUBSTANCES (CHOCOLATE AND VANILLA)}, Sugar, Banana Fruit Preparation (7%) {Banana Fruit, Sugar, Water, Stabilizer (401), Corn Starch, Acidity Regulator (330, 300), Antioxidant (224)}, Cashew, Stabilizers (410, 412), Emulsifiers (471, 477), CONTAINS PERMITTED SYNTHETIC FOOD COLORS (102, 110, 122) AND ADDED ARTIFICIAL FLAVOURING SUBSTANCES (BANANA AND STRAWBERRY) CONTAINS STARCH NOT MORE THAN 0.1 %",
+   "storageInstructions": "1. It is perfect for all occasions and celebrations.\n2. Enjoy it as dessert after lunch or dinner.\n3. It can also be eaten as a snack while watching a movie or relaxing.\n4. Store at 18c or below.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002929"
+  }
+ },
+ {
+  "title": "Softy Choco Break Sundae",
+  "handle": "softy-choco-break-sundae",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125ml",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40220777_2-baskin-robbins-sundae-ice-cream-softy-choco-break-with-vanilla-has-rich-creamy-texture.jpg"
+    },
+    "barcode": "8906006854468"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220777_2-baskin-robbins-sundae-ice-cream-softy-choco-break-with-vanilla-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220777-2_2-baskin-robbins-sundae-ice-cream-softy-choco-break-with-vanilla-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220777-3_1-baskin-robbins-sundae-ice-cream-softy-choco-break-with-vanilla-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220777-4_1-baskin-robbins-sundae-ice-cream-softy-choco-break-with-vanilla-has-rich-creamy-texture.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40220777-5_1-baskin-robbins-sundae-ice-cream-softy-choco-break-with-vanilla-has-rich-creamy-texture.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Choco Break Sundae Ice Cream is a mix of delectable chocolate and vanilla. It is a perfect blend of chocolate swirled with vanilla. Delectable ice cream, married to a peanut flavoured confectionery and sprinkled with peanuts. It has a nice rich and creamy texture. A delicious combination of chocolate and vanilla ice cream.",
+   "ingredients": "Ice Cream Layer (89%): Water, Milk Solids, Milk Chocolate Chips (9%) {Sugar, Cocoa Solids, Cocoa Butter, Emulsifiers [322(I), 476], CONTAINS ADDED ARTIFICIAL FLAVOURING SUBSTANCES (ETHYL VANILLIN)}, Sugar, Caramel Confectionery (6%) {Milk Solids, Sugar, Liquid Glucose, Stabilizers (440), Emulsifier [331(Iii)], Salt}, Chocolate Flavoured Confectionery (6%) {Liquid Glucose, Sugar, Water, Cocoa Solids, Starch, Stabilizers (440), Preservative (202), Salt, CONTAINS ADDED ARTIFICIAL FLAVOURING SUBSTANCES (CHOCOLATE AND VANILLA)}, Dextrose, Sweetener (Maltitol), Liquid Glucose, Humectant (Glycerin), Stabilizers (410, 412), Emulsifiers (471, 477), CONTAINS ADDED ARTIFICIAL FLAVORING SUBSTANCES (VANILLA). Topping Layer (11%): Edible Vegetable Oil (Palm Oil, Palm Kernel Oil), Sugar, Cocoa Solids, And Emulsifiers (322), CONTAINS ADDED ARTIFICIAL FLAVOURING SUBSTANCES (ETHYL VANILLIN)",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014022002929",
+   "storageInstructions": "1. It is perfect for all occasions and celebrations.\n2. Enjoy it as dessert after lunch or dinner.\n3. It can also be eaten as a snack while watching a movie or relaxing.\n4. Store at 18c or below."
+  }
+ },
+ {
+  "title": "Black Forest Ice Cream Cake",
+  "handle": "black-forest-ice-cream-cake",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "639",
+    "compare_at_price": "639",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212504_2-baskin-robbins-black-forest-ice-cream-cake.jpg"
+    },
+    "barcode": "8906006850439"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212504_2-baskin-robbins-black-forest-ice-cream-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212504-2_2-baskin-robbins-black-forest-ice-cream-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212504-3_2-baskin-robbins-black-forest-ice-cream-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212504-4_2-baskin-robbins-black-forest-ice-cream-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212504-5_1-baskin-robbins-black-forest-ice-cream-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212504-6_1-baskin-robbins-black-forest-ice-cream-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Black Forest is a black forest ice cream cake. It has delicious layers of cherry pie filling, chocolate cake, and fluffy whipped vanilla ice cream. Black Forest Ice Cream with Chocolate Sponge Cake, topped with dark chocolate confectionery & cherry fruits. It is a light and dense cake that is flavourful. It is perfect for any occasion or celebration.",
+   "ingredients": "Ice Cream Layer (63%): Water, Milk Solids, Sugar, Cherry Fruit Preparation (6%) {cherry Fruit, Sugar, Stabilizer (440, 401), Acidity Regulator (330), Contains Added Nature Identical Flavoring Substances (cehrry)}, Milk Chocolate Chips (3%), Stabilizer (461, 412, 407), Emulsifier (471), Contains Permitted Synthetic Food Colors (102, 110) And Added Artificial Flavouring Substances (vanilla) Chocolate Sponge Cake Layer (21%): Water, Sugar, Refined Wheat Flour (maida), Cocoa Solids (5.85%), Milk Solids, Edible Vegetable Oil (palm Oil), Sugar Syrup {water, Sugar, Acidity Regulator (330), Preservative (202)}, Raising Agents [500(ii), 341(i), 341(ii)], Baking Powder, Emulsifiers (477, 471), Stabilizers (415), Corn Starch, Iodized Salt, Maltodextrin, Contains Permitted Natural Colour [150(c), 150(d)] And Added Natural Identical Flavouring Substance (vanilla, Chocolate). Topping Layer (16%): Fat Emulsion- Whip Topping (7%) {water, Edible Vegetable Fat (hydrogenated Oils), Sugar, Liquid Glucose, Caseinate, Emulsifiers (475, 491, 435), Stabilizers (461, 415, 464, 412), Acidity Regulators [339(ii)], Salt, Contains Added Natural And Nature Identical Flavouring Substance (vanilla)}, Cherry Fruit (6%), Dark Compound (3%) Contain Less Than 1% Modified Starch. In Ingredients, Numbers In Bracket Are As Per International Numbering System.",
+   "usageInstructions": "Ready to use.",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Red Velvet Ice Cream Cake",
+  "handle": "red-velvet-ice-cream-cake",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "659",
+    "compare_at_price": "659",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40212503_1-baskin-robbins-red-velvet-cake.jpg"
+    },
+    "barcode": "8906006852327"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212503_1-baskin-robbins-red-velvet-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212503-2_1-baskin-robbins-red-velvet-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212503-3_1-baskin-robbins-red-velvet-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40212503-4_1-baskin-robbins-red-velvet-cake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Red Velvet Cake is a traditional red cake. It has a acidic taste and mild chocolate flavouring. The acidity is balanced out by the sweetness of the cake. The cream cheese frosting is rich and creamy. It is a light and dense cake that is flavourful. It is perfect for any occasion or celebration.",
+   "ingredients": "Ice Cream Layer (62%): Water, Milk Solids, Sugar, Stabilizers (461, 412, 407), Emulsifier (471), Oreo Cookies (4%), Contains Permitted Synthetic Food Color (102, 110) And Added Artificial Flavoring Substances (vanilla) Red Velvet Marble Sponge Cake Layer (19%): Refined Wheat Flour (maida), Sugar, Water, Milk Solids, Edible Vegetable Oil (palm Oil), Sugar Syrup {water, Sugar, Acidity Regulator (330), Preservative (202)}, Cocoa Powder, Baking Powder, Emulsifiers (477, 471), Stabilizers (415), Modified Starch, Dextrose, Iodized Salt, Raising Agents [341(ii)], Contains Permitted Food Color [natural (162) And Artificial (129)] Added Natural Identical And Artificial Flavouring Substance (vanilla). Topping Layer (19%): Oreo Cookies (8%) {refines Wheat Flour (maida), Sugar, Edible Vegetable Fat, Edible Vegetable Oil, Cocoa Solids (4.4%), Invert Syrup, Raising Agents [500(ii), 503(ii), Salt, Emulsifier (322), Contains Added Nature Identical Substances}, Fat Emulsion- Whip Topping (7%) {water, Edible Vegetable Fat (hydrogenated Oils), Sugar, Liquid Glucose, Caseinate, Emulsifiers (475, 491, 435), Stabilizers (461, 415, 464, 412), Acidity Regulators [339(ii)], Salt, Contains Added Natural And Nature Identical Flavouring Substance (vanilla)}, Red Velvet Cake Crumbles (4%) Contain Less Than 1% Modified Starch. In Ingredients, Numbers In Bracket Are As Per International Numbering System.",
+   "usageInstructions": "Ready to use.",
+   "manufacturerName": "Rich Graviss Products Ptv LTD-J-177",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Fudge Ice Cream Roll Cake Slice",
+  "handle": "classic-fudge-ice-cream-roll-cake-slice",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40233765_3-baskin-robbins-ice-cream-roll-cake-slice-classic-fudge.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233765_3-baskin-robbins-ice-cream-roll-cake-slice-classic-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233765-2_2-baskin-robbins-ice-cream-roll-cake-slice-classic-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233765-3_2-baskin-robbins-ice-cream-roll-cake-slice-classic-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233765-4_2-baskin-robbins-ice-cream-roll-cake-slice-classic-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233765-5_2-baskin-robbins-ice-cream-roll-cake-slice-classic-fudge.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233765-6_1-baskin-robbins-ice-cream-roll-cake-slice-classic-fudge.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Classic Fudge Ice cream Roll Cake Slice is a classic combination of vanilla ice cream wrapped in chocolate sponge & covered with chocolate fudge and almonds. It is soft and light in weight. The product is hygienically packed and is a great comforting food.",
+   "ingredients": "(Proprietary Food) Ice Cream Layer (63 %): Water, Milk Solids, Sugar. Stabilizers (461, 412. 407). Emulsifier (471). Contains Permitted Synthetic Food Colors (102.110) & Added Artificial Flavouring Substances (Vanilla). Chocolate Sponge Cake Layer (23 %): Water, Sugar, Maida (Refined Wheat Flour), Cocoa Solids, Milk Solids Edible Vegetable Oil (Refined Palmolein Oil), Raising Agents (500(Ii)), Emulsifier (475, 471) & Stabilizers (412, 415), Makodextrin, Preservative (202), Salt, Contains Added Artificial Flavouring Substances (Chocolate & Vanilla). Chocolate Confectionery Layer (14 %): Chocolate Truffle (Water, Sugar, Edible Vegetable Fat (Hydrogenated Vegetable Oil), Cocoa Solids, Milk Solids & Antioxidant (322), Emulsifiers [471, 435, 322, 477, 491, 481(I)], Caseinate, Acidity Regulators [331(4 339(Ii)], Stabilizers (464, 145o), Contains Added Artificial Flavouring Substances (Milk, Cream And Vanilla)), Almonds.",
+   "storageInstructions": "1. Use it as a dessert after meals.\n2. It makes a great comforting food.\n3.When stored at 18c or below .",
+   "manufacturerName": "Rich Graviss Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Red Velvet Ice Cream Roll Cake Slice",
+  "handle": "red-velvet-ice-cream-roll-cake-slice",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40233766_2-baskin-robbins-ice-cream-roll-cake-slice-red-velvet.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233766_2-baskin-robbins-ice-cream-roll-cake-slice-red-velvet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233766-2_2-baskin-robbins-ice-cream-roll-cake-slice-red-velvet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233766-3_2-baskin-robbins-ice-cream-roll-cake-slice-red-velvet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233766-4_2-baskin-robbins-ice-cream-roll-cake-slice-red-velvet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233766-5_2-baskin-robbins-ice-cream-roll-cake-slice-red-velvet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40233766-6_1-baskin-robbins-ice-cream-roll-cake-slice-red-velvet.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Baskin Robbins Red Velvet Ice cream Roll Cake Slice is a Red Velvet ice cream wrapped in red velvet marble cake & white chocolate truffle drizzled with red velvet and white chocolate confectionery. This white chocolate and red velvet ice cream roll cake will have you dreaming of Christmas. It is soft and light in weight. Now relish ice cream in a different way. 1. Hygienically packed. 2. Classic combination. 3. Soft and light in weight. 4. It is a great comforting food. 5. It is perfect for your summer.",
+   "ingredients": "(Proprietary Food) Lee Crean: Layer (61 %)r Water. Milk Solids. Sugar, Strawberry Fruit Preparation [strawberry Fruit (37 %). Liquid Glucose. Sugar, Stabilizer (401). Acidity Regulator (530)], Stabilizers (461, 412, 407), Emulsifier (471), Salt, Contains Permitted Synthetic Food Colours (110, 127) & Natural Colour (150c) And Added Artificial Flavouring Substances (Red Velvet Cake). Red Velvet Marble Cake Layer (23%)r Water, Sugar, Maida (Refined Wheat Flour), Milk Solids, Edible Vegetable Oil (Refined Palmolein Oil), Raising Agents [500(10], Emulsifiers (475, 471) & Stabilizers (412, 415), Maltodextrin, Preservative (202), Beet Root Juice Powder, Salt, Contains Permitted Synthetic Food Colour (129) And Added Artificial Flavouring Substances (Red Velvet Cake). Chocolate Confectionery Layer (16 %): White Chocolate Truffle {sugar, Edible Vegetable Fat (Hydrogenated Vegetable Oil), Water, Milk Solids. Beet Root Juice Powder & Caseinate, Antioxidant (322), Emulsifiers [475, 435, 322, 471, 491, 476, 451(0], Acidity Regulators [331(Iii), 339(0], Stabilizers (464, 1450), Contains Permitted Synthetic Foo Color (129) And Added Artificial Flavouring Substances (Milk, Cream And Van Illa)}, White Chocolate Shreds [sugar, Milk Solids, Cocoa Butter, Emulsifiers (322, 476), Contains Added Natural Flavouring Substances (Vanilla)].",
+   "storageInstructions": "1. Use it as a dessert after meals.\n2. It makes a great comforting food.\n3.When stored at 18c or below .",
+   "manufacturerName": "Rich Graviss Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Iranian Pistachio Kulfi Ice Cream Slice",
+  "handle": "iranian-pistachio-kulfi-ice-cream-slice",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343739_1-baskin-robbins-iranian-pistachio-kulfi-ice-cream-slice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343739_1-baskin-robbins-iranian-pistachio-kulfi-ice-cream-slice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343739-2_1-baskin-robbins-iranian-pistachio-kulfi-ice-cream-slice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343739-3_1-baskin-robbins-iranian-pistachio-kulfi-ice-cream-slice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343739-4_1-baskin-robbins-iranian-pistachio-kulfi-ice-cream-slice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343739-5_1-baskin-robbins-iranian-pistachio-kulfi-ice-cream-slice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343739-6_1-baskin-robbins-iranian-pistachio-kulfi-ice-cream-slice.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience a rich fusion of tradition and indulgence with Baskin Robbins Iranian Pistachio Kulfi Ice Cream Slice. A classic malai kulfi slice wrapped in smooth vanilla ice cream, it’s topped with premium Iranian pistachio slivers for a touch of elegance. Perfectly portioned and packed with flavour, it’s a delightful dessert that brings heritage and sweetness together in every bite.",
+   "manufacturerName": "Graviss Foods Pvt. Ltd",
+   "fssaiLicense": "10014022002929",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Real Belgian Dark Chocolate Milkshake",
+  "handle": "real-belgian-dark-chocolate-milkshake",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341862_1-baskin-robbins-real-belgian-dark-chocolate-milk-shake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341862_1-baskin-robbins-real-belgian-dark-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341862-2_1-baskin-robbins-real-belgian-dark-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341862-3_1-baskin-robbins-real-belgian-dark-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341862-4_1-baskin-robbins-real-belgian-dark-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341862-5_1-baskin-robbins-real-belgian-dark-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341862-6_1-baskin-robbins-real-belgian-dark-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341862-7_1-baskin-robbins-real-belgian-dark-chocolate-milk-shake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, intense flavour of the Baskin Robbins Real Belgian Dark Chocolate Milkshake. Crafted with premium Belgian chocolate, this milkshake offers a deep, bold taste and a creamy, luxurious texture that's perfect for chocolate lovers. Free from artificial additives, preservatives, and with 30% less added sugar, it's a healthier indulgence that delivers pure chocolatey delight. Shake well and serve chilled for the ultimate chocolate experience.",
+   "ingredients": "Double Toned Milk (85%), Sugar, Water, Cocoa Solids, Emulsifiers (460,471), Stabilizers (466,407), Acidity Regulator (340,452), Belgian Chocolate (0.1%) {Emulsifier (322)}, Contains Nature Identical Flavouring Substance (Vanillin), Contains Added Natural And Nature Identical Flavouring Substances (Vanilla)",
+   "nutritionalInfo": {
+    "Nutrition Per": "200ml",
+    "Serving Size": "200ml",
+    "Energy (kcal)": "150.5 kcal",
+    "Protein (g)": "6.5 g",
+    "Carbohydrate (g)": "23.8 g",
+    "Total Sugar (g)": "35.1 g",
+    "Added Sugar (g)": "14.1 g",
+    "Dietary Fibre (g)": "0.5 g",
+    "Fat (g)": "3.3 g",
+    "Sat. Fat (g)": "0.3 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "0.3 mg"
+   },
+   "storageInstructions": "* Store in a cool and dry place\n* Keep away from direct sunlight",
+   "manufacturerName": "Indapur Dairy and Milk Products Ltd At Po",
+   "fssaiLicense": "10012022000159",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Real Belgian Hazelnut Chocolate Milkshake",
+  "handle": "real-belgian-hazelnut-chocolate-milkshake",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341863_1-baskin-robbins-real-belgian-hazelnut-chocolate-milk-shake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341863_1-baskin-robbins-real-belgian-hazelnut-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341863-2_1-baskin-robbins-real-belgian-hazelnut-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341863-3_1-baskin-robbins-real-belgian-hazelnut-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341863-4_1-baskin-robbins-real-belgian-hazelnut-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341863-5_1-baskin-robbins-real-belgian-hazelnut-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341863-6_1-baskin-robbins-real-belgian-hazelnut-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341863-7_1-baskin-robbins-real-belgian-hazelnut-chocolate-milk-shake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich and smooth taste of the Baskin Robbins Real Belgian Hazelnut Chocolate Milkshake. This delightful 200ml flavoured milk offers a luxurious blend of Belgian chocolate and hazelnut, creating a truly unique and satisfying treat. Free from added preservatives, artificial flavours, and colours, it delivers an authentic and indulgent experience. Shake well and enjoy it chilled for the best taste. Experience the irresistible combination of creamy chocolate and nutty hazelnut, with a rich texture that is sure to satisfy your sweet cravings. This milkshake is made with real Belgian chocolate, offering a decadent and high-quality taste that will transport you to a world of pure indulgence.",
+   "ingredients": "Double Toned Milk (88%), Sugar, Water, Cocoa Solids, Hazelnut Paste, Emulsifiers (460,471), Stabilizers (466,407), Acidity Regulator (340,452), Belgian Chocolate (0.1%) (Emulsifier (322)), Flavouring Substance (Vanillin), Added Natural And Nature Identical Flavouring Substances (Vanilla And Hazelnut)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "200ml",
+    "Energy (kcal)": "157.9 kcal",
+    "Protein (g)": "6.4 g",
+    "Carbohydrate (g)": "23.9 g",
+    "Total Sugar (g)": "35.0 g",
+    "Added Sugar (g)": "14.1 g",
+    "Dietary Fibre (g)": "0.5 g",
+    "Fat (g)": "4.1 g",
+    "Sat. Fat (g)": "0.3 g",
+    "Trans Fat (g)": "0.0 g",
+    "Cholesterol (mg)": "0.0 mg",
+    "Sodium (mg)": "0.2 mg"
+   },
+   "storageInstructions": "* Store in cool and dry place\n* Keep away from direct sunlight",
+   "manufacturerName": "Indapur Dairy and Milk Products Ltd At Po",
+   "fssaiLicense": "10012022000159",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Real Belgian Milk Chocolate Milkshake",
+  "handle": "real-belgian-milk-chocolate-milkshake",
+  "vendor": "Baskin Robbins",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341864_1-baskin-robbins-real-belgian-milk-chocolate-milk-shake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341864_1-baskin-robbins-real-belgian-milk-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341864-2_1-baskin-robbins-real-belgian-milk-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341864-3_1-baskin-robbins-real-belgian-milk-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341864-4_1-baskin-robbins-real-belgian-milk-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341864-5_1-baskin-robbins-real-belgian-milk-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341864-6_1-baskin-robbins-real-belgian-milk-chocolate-milk-shake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341864-7_1-baskin-robbins-real-belgian-milk-chocolate-milk-shake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy flavour of the Baskin Robbins Real Belgian Milk Chocolate Milkshake. Made with premium Belgian milk chocolate and real chocolate ice cream, this delightful milkshake offers the perfect balance of smooth, chocolatey taste and a luxuriously creamy texture. Savour the pure indulgence in every sip, with no added preservatives, artificial flavours or colours. Shake well and enjoy it chilled for the ultimate chocolate experience that's perfect for cooling off or satisfying your sweet tooth. This 200ml flavoured milk is a must-try for true chocolate lovers, delivering a truly decadent treat.",
+   "ingredients": "Double Toned Milk (86%), Sugar, Water, Cocoa Solids, Emulsifiers (460,471), Stabilizers (466, 407), Acidity Regulator (340,452), Belgian Chocolate (0.1%) (Emulsifier (322)), Contains Nature Identical Flavouring Substance (Vanillin), Contains Added Natural And Nature Identical Flavouring Substances (Vanilla)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "200 ml",
+    "Energy (kcal)": "150.8",
+    "Protein (g)": "6.4",
+    "Carbohydrate (g)": "23.9",
+    "Total Sugar (g)": "35.1",
+    "Added Sugar (g)": "14.1",
+    "Dietary Fibre (g)": "0.6",
+    "Fat (g)": "3.3",
+    "Sat. Fat (g)": "0.3",
+    "Trans Fat (g)": "0.0",
+    "Cholesterol (mg)": "0.0",
+    "Sodium (mg)": "0.3"
+   },
+   "storageInstructions": "* Store in a cool and dry place\n* Keep away from direct sunlight",
+   "manufacturerName": "Indapur Dairy and Milk Products Ltd At Po",
+   "fssaiLicense": "10012022000159",
+   "countryOfOrigin": "India"
+  }
+ }
+]

@@ -1,0 +1,502 @@
+{
+  "brand": "Baskin Robbins",
+  "manufacturer": "Graviss Foods Pvt. Ltd.",
+  "feed": "baskin-robbins-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/baskin-robbins/logo-034207f9.png",
+  "themeColor": "#DA1884",
+  "themeColorSecondary": "#3B1F1A",
+  "namePrefix": "Baskin Robbins ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Classic\\ Vanilla\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Dutch\\ Chocolate\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Candy\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Very\\ Berry\\ Strawberry\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Alphonso\\ Mango\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Black\\ Currant\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Hop\\ Scotch\\ Butterscotch\\ Ribbon\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Mississippi\\ Mud\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Bavarian\\ Chocolate\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Choco\\ Caramel\\ Nut\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Cookies\\ N\\ Cream\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Rocher\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Gold\\ Medal\\ Ribbon\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Honey\\ Nut\\ Crunch\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Roasted\\ Californian\\ Almond\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Three\\ Cheers\\ Chocolate\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Tender\\ Coconut\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^x\\ The\\ Brooklyn\\ Creamery\\ Alphonso\\ Mango\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^x\\ The\\ Brooklyn\\ Creamery\\ Mississippi\\ Mud\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Almonds\\ N\\ Caramel\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Choco\\ Fudge\\ Doublet\\ Stickless\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Raspberry\\ Vanilla\\ Doublet\\ Stickless\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Mango\\ Mania\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^The\\ Original\\ Triple\\ Chocolate\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ N\\ Chocolate\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Very\\ Blueberry\\ Pop\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Candy\\ Ice\\ Cream\\ Stick$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Ice\\ Cream\\ Stick$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Mississippi\\ Mud\\ Ice\\ Cream\\ Stick$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Mini\\ Ice\\ Cream\\ Sticks\\ Mississippi\\ Mud\\ \\&\\ Almond\\ N\\ Caramel\\ \\(4\\ pcs\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Bavarian\\ Chocolate\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Cookies\\ N\\ Cream\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Candy\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Pistachio\\ \\&\\ Caramel\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Top\\ Notch\\ Butterscotch\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Super\\ Strawberry\\ Surprise\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Butterscotch\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Funwich\\ Butterscotch\\ \\&\\ Caramel\\ Ice\\ Cream\\ Sandwich$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Funwich\\ Dark\\ Chocolate\\ Cookie\\ With\\ Vanilla\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Ice\\ Cream\\ Rocks\\ Caramel\\ Biscuit\\ \\(16\\ pcs\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Ice\\ Cream\\ Rocks\\ Hazelnut\\ \\(16\\ pcs\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Ice\\ Cream\\ Rocks\\ Cotton\\ Candy\\ \\(19\\ pcs\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Ice\\ Cream\\ Rocks\\ Mississippi\\ Mud\\ \\(19\\ pcs\\)$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Brownie\\ Cupcake\\ Ice\\ Cream\\ Sundae$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Fudgy\\ Caramel\\ Mousse\\ Ice\\ Cream\\ Sundae$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Mississippi\\ Mud\\ Ice\\ Cream\\ Sundae$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Overload\\ Ice\\ Cream\\ Sundae$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Fudge\\ Ice\\ Cream\\ Sundae$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Kulfi\\ Falooda\\ Sundae$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Banana\\ Split\\ Sundae$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Softy\\ Choco\\ Break\\ Sundae$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Black\\ Forest\\ Ice\\ Cream\\ Cake$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Red\\ Velvet\\ Ice\\ Cream\\ Cake$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Classic\\ Fudge\\ Ice\\ Cream\\ Roll\\ Cake\\ Slice$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Red\\ Velvet\\ Ice\\ Cream\\ Roll\\ Cake\\ Slice$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Iranian\\ Pistachio\\ Kulfi\\ Ice\\ Cream\\ Slice$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Kulfi"
+      ]
+    },
+    {
+      "match": "^Real\\ Belgian\\ Dark\\ Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Real\\ Belgian\\ Hazelnut\\ Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    },
+    {
+      "match": "^Real\\ Belgian\\ Milk\\ Chocolate\\ Milkshake$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Milkshake"
+      ]
+    }
+  ]
+}
