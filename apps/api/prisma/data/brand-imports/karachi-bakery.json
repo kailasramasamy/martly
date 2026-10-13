@@ -1,0 +1,630 @@
+{
+  "brand": "Karachi Bakery",
+  "manufacturer": "Karachi Bakery",
+  "feed": "karachi-bakery-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/karachi-bakery/logo-471d8067.png",
+  "themeColor": "#E5197D",
+  "themeColorSecondary": "#5B2A86",
+  "namePrefix": "Karachi Bakery ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Osmania\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Cashew\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Chai\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Nankhatai\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Celebration\\ Assorted\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Chand\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Kaju\\ Badam\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Pista\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Salt\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Double\\ Delight\\ Chocolate,\\ Cashew\\ \\&\\ Fruit\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Double\\ Delight\\ Osmania\\ \\&\\ Fruit\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Double\\ Delight\\ Badam\\ Pista\\ \\&\\ Fruit\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Double\\ Delight\\ Cashew\\ \\&\\ Fruit\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Triple\\ Delight\\ Chocolate\\ Cashew,\\ Cashew\\ \\&\\ Fruit\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Triple\\ Delight\\ Fruit,\\ Cashew\\ \\&\\ Osmania\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Triple\\ Delight\\ Fruit,\\ White\\ Cashew\\ \\&\\ Pista\\ Almond\\ Biscuits$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Cookies (Bakery Fresh)"
+      ]
+    },
+    {
+      "match": "^Zeera\\ Khari\\ Puff$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Chai\\ Toast\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Milk\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    },
+    {
+      "match": "^Elaichi\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Elaichi Rusk"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Marble\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Double\\ Chocochip\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Rich\\ Plum\\ Cake\\ Eggless$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Rich\\ Plum\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Classic\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Orange\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Rose\\ Soan\\ Papdi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Kaju\\ Katli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Ajmeri\\ Milk\\ Cake$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Mango\\ Milk\\ Cake$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Milk\\ Cake$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Badam\\ Patisa$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Mysore\\ Pak$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Besan\\ Ladoo$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Motichoor\\ Ladoo$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Honey\\ Dry\\ Fruits\\ Laddu$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Besan\\ Gajak$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Kaju\\ Gajak$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Balushahi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Gujiya$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Sugar\\-Free\\ Dry\\ Fruits\\ Protein\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Packaged Mithai"
+      ]
+    },
+    {
+      "match": "^Halwa$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Halwa & Sheera"
+      ]
+    },
+    {
+      "match": "^Besan\\ Phalli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Masala\\ Phalli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Masala\\ Green\\ Peas$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Moong Dal & Chana"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Khatta\\ Meetha\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Navratan\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Khara\\ Boondi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Methi\\ Puri$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mathri & Shakkar Para"
+      ]
+    },
+    {
+      "match": "^Namak\\ Para$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mathri & Shakkar Para"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 35%\\ Milk\\ Chocolate\\ Almonds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 35%\\ Milk\\ Chocolate\\ Cashews$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 35%\\ Milk\\ Chocolate\\ Pistachio$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 38%\\ Milk\\ Mixed\\ Nuts\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 55%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 55%\\ Dark\\ Chocolate\\ with\\ Almond$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 66%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 66%\\ Dark\\ Chocolate\\ Orange$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ 78%\\ Dark\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Assorted\\ Chocolates\\ 12\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Assorted\\ Chocolates\\ 24\\ Bites$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Choco\\ Almond\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Kunefe\\ Filled\\ Pistachio\\ Dates$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Dark Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Dubai\\ Kunafa\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Dubai\\ Kunefe\\ Chocolate\\ Bar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Dubai\\ Kunefe\\ Chocolate\\ Gift\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Kunefe\\ Gift\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Dubai\\ Kunefe\\ Hazelnut\\ Milk\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Hazelnut\\ Snackers\\ Chocolate\\ Gift\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Snacky\\ Chocolate\\ Gift\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    },
+    {
+      "match": "^Cocoatini\\ Snacky\\ Assortments\\ Chocolate\\ Gift\\ Pack$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chocolates & Confectionery",
+        "Milk Chocolate"
+      ]
+    }
+  ]
+}
