@@ -1,0 +1,152 @@
+{
+  "brand": "Lizol (Reckitt)",
+  "manufacturer": "Reckitt Benckiser (India) Pvt. Ltd.",
+  "feed": "lizol-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lizol/logo-404131d3.png",
+  "themeColor": "#0057A8",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Lizol ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Lizol Disinfectant Floor Cleaner - Citrus": "Disinfectant Surface & Floor Cleaner - Citrus"
+  },
+  "rules": [
+    {
+      "match": "^Disinfectant\\ Surface\\ \\&\\ Floor\\ Cleaner\\ \\-\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Surface\\ \\&\\ Floor\\ Cleaner\\ \\-\\ Floral$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Surface\\ \\&\\ Floor\\ Cleaner\\ \\-\\ Pine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Surface\\ \\&\\ Floor\\ Cleaner\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Surface\\ \\&\\ Floor\\ Cleaner\\ \\-\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Surface\\ \\&\\ Floor\\ Cleaner\\ \\-\\ Neem$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Surface\\ \\&\\ Floor\\ Cleaner\\ \\-\\ Sandal$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Double\\ Concentrate\\ Disinfectant\\ Floor\\ Cleaner\\ \\-\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Shakti\\ Disinfectant\\ Floor\\ Cleaner\\ \\-\\ Aqua\\ Fresh\\ with\\ Pine\\ Oil$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Shakti\\ Disinfectant\\ Floor\\ Cleaner\\ \\-\\ Rose\\ Fresh\\ with\\ Pine\\ Oil$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Kitchen\\ Cleaner\\ \\-\\ Orange\\ Burst$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^All\\ In\\ 1\\ Disinfectant\\ Kitchen\\ Cleaner\\ \\-\\ Orange\\ Zest$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Power\\ Cleaner\\ \\-\\ Ocean\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Fresh\\ \\&\\ Clean\\ Bathroom\\ Cleaner\\ \\-\\ Floral$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Fresh\\ \\&\\ Clean\\ Bathroom\\ Cleaner\\ \\-\\ Pine\\ Forest$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Multi\\-Purpose\\ Power\\ Cleaner\\ Spray\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Multi\\-Surface\\ Wipes\\ \\-\\ Lemon\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    }
+  ]
+}
