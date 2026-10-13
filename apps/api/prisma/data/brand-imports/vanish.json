@@ -1,0 +1,72 @@
+{
+  "brand": "Vanish (Reckitt)",
+  "manufacturer": "Reckitt Benckiser (India) Pvt. Ltd.",
+  "feed": "vanish-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/vanish/logo-27ad69ff.png",
+  "themeColor": "#E4007C",
+  "themeColorSecondary": "#1E2A78",
+  "namePrefix": "Vanish ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Vanish Oxy Action Stain Remover": "Oxi Action All-in-One Powder Detergent Booster"
+  },
+  "rules": [
+    {
+      "match": "^Oxi\\ Action\\ Stain\\ Remover\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Oxi\\ Action\\ All\\-in\\-One\\ Powder\\ Detergent\\ Booster$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Oxi\\ Action\\ Stain\\ Remover\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Oxi\\ Action\\ Crystal\\ White\\ Fabric\\ Whitener\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Oxi\\ Action\\ Crystal\\ White\\ Detergent\\ Add\\-On\\ Sachets$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Oxi\\ Action\\ White\\ Fabric\\ Whitener\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Oxi\\ Action\\ Carpet\\ \\&\\ Upholstery\\ Stain\\ Remover$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    }
+  ]
+}
