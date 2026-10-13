@@ -1,0 +1,38 @@
+{
+  "brand": "Spontex",
+  "manufacturer": "Mapa Spontex",
+  "feed": "spontex-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/spontex/logo-58df3956.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#0055A4",
+  "namePrefix": "Spontex ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bleu\\ Essential\\ Non\\-Scratch\\ Sponge$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Flash\\ Sponge$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Egouttoir\\ Cellulose\\ Draining\\ Mat$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    }
+  ]
+}
