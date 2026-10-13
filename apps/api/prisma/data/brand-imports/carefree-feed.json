@@ -1,0 +1,91 @@
+[
+ {
+  "title": "Super Dry Panty Liners",
+  "handle": "super-dry-panty-liners",
+  "vendor": "Carefree (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "20 pcs",
+    "price": "99",
+    "compare_at_price": "99",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30008320_4-carefree-panty-liners-super-dry.jpg"
+    },
+    "barcode": "8901012166796"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008320_4-carefree-panty-liners-super-dry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008320-2_3-carefree-panty-liners-super-dry.jpg"
+   }
+  ],
+  "details": {
+   "description": "Introducing the Carefree Panty Liners Dry, the ultimate solution for staying clean and comfortable in between periods. These panty liners are specially designed with a body-contoured shape for a perfect fit, and a moisture-proof backing to prevent leaks. Dermatologically tested for safety, the soft cover is engineered for dryness and comfort, quickly absorbing wetness so you feel fresh and dry all day long. Imported from Thailand, these reliable panty liners are the perfect choice for those seeking a discreet, worry-free solution to manage light bladder leakage or spotting. Say goodbye to discomfort and odour with the Carefree Panty Liners Dry.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Johnson & Johnson Pvt. Ltd",
+   "countryOfOrigin": "Thailand"
+  }
+ },
+ {
+  "title": "Belted Sanitary Pads - Regular",
+  "handle": "belted-sanitary-pads-regular",
+  "vendor": "Carefree (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299673_9-carefree-sanitary-pads.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299673_9-carefree-sanitary-pads.jpg"
+   }
+  ],
+  "details": {
+   "description": "Carefree® sanitary pad is designed to provide protection during menstrual flow. It has a soft and sturdy covering that gives a comfortable feel throughout. Carefree® has been in India since 1968, since then we have been striving to build a healthy relationship between a young girl and her periods so that they can continue to pursue their dreams. We offer superior and comfortable protection experience to give peace of mind during their periods. We have always believed in providing the highest levels of quality and safety to our consumers. Enabling women to feel comfortable during periods — both physical and emotional so that they can focus on what matters to them. We are always pushing ourselves to improve — our products, our communities and our impact on the planet.",
+   "manufacturerName": "Johnson & Johnson Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Belted Sanitary Pads - XL",
+  "handle": "belted-sanitary-pads-xl",
+  "vendor": "Carefree (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299672_3-carefree-sanitary-pads-xls-protection.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299672_3-carefree-sanitary-pads-xls-protection.jpg"
+   }
+  ],
+  "details": {
+   "description": "Stayfree® has been in India since 1968. Since then, we have been striving to build a healthy relationship between a young girl and her periods so that they can continue to pursue their dreams. We offer superior and comfortable protection experience to give peace of mind during their periods. We have always believed in providing the highest levels of quality and safety to our consumers. Enabling women to feel comfortable during periods, both physical and emotional, so that they can focus on what matters to them. We are always pushing ourselves to improve our products, our communities and our impact on the planet.",
+   "manufacturerName": "Johnson & Johnson Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

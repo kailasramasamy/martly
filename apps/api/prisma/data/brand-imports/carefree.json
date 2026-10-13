@@ -1,0 +1,40 @@
+{
+  "brand": "Carefree (J&J)",
+  "manufacturer": "Kenvue India Pvt. Ltd.",
+  "feed": "carefree-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/carefree/logo-8a27241c.png",
+  "themeColor": "#E5177E",
+  "themeColorSecondary": "#1F2A6B",
+  "namePrefix": "Carefree ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Carefree Breathable Panty Liners": "Super Dry Panty Liners"
+  },
+  "rules": [
+    {
+      "match": "^Super\\ Dry\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Belted\\ Sanitary\\ Pads\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Belted\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    }
+  ]
+}
