@@ -1,0 +1,206 @@
+{
+  "brand": "Lifebuoy (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "lifebuoy-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lifebuoy/logo-cb2b5e5a.png",
+  "themeColor": "#E2001A",
+  "themeColorSecondary": "#FFD100",
+  "namePrefix": "Lifebuoy ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Total\\ 10\\ Germ\\ Protection\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Care\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Fresh\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ \\&\\ Aloe\\ Vera\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ \\&\\ Honey\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Ice\\ Bath\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Total\\ 10\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Total\\ 10\\ Antibacterial\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Fresh\\ Antibacterial\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Mild\\ Care\\ Antibacterial\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Nature\\ Pure\\ Antibacterial\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Germ\\ Expert\\+\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Lemon\\ \\&\\ Aloe\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Ice\\ Bath\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Total\\ 10\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Total\\ 10\\+\\ Hand\\ Wash\\ Refill$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Fresh\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Mild\\ Care\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Cool\\ Fresh\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Nature\\ Neem\\ Hand\\ Wash\\ Refill$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Total\\ 10\\ Hand\\ Sanitizer$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^Care\\ Hand\\ Sanitiser$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^Germ\\ Protect\\ Hand\\ Gel\\ Sanitizer$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^Germ\\ Protection\\ Spray\\ Total$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    }
+  ]
+}
