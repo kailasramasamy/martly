@@ -1,0 +1,297 @@
+{
+  "brand": "Odonil (Dabur)",
+  "manufacturer": "Dabur India Ltd.",
+  "feed": "odonil-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/odonil/logo-ca2bef85.png",
+  "themeColor": "#1E2A78",
+  "themeColorSecondary": "#2BA6DE",
+  "namePrefix": "Odonil ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Odonil Air Freshener Block - Jasmine": "Air Freshener Block - Jasmine Mist",
+    "Odonil Room Freshening Gel - Lavender": "Room Gelz - Lavender & Musk"
+  },
+  "rules": [
+    {
+      "match": "^Air\\ Freshener\\ Block\\ \\-\\ Orchid\\ Dew$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Block\\ \\-\\ Jasmine\\ Mist$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Block\\ \\-\\ Lavender\\ Meadows$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Block\\ \\-\\ Mystic\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Zipper\\ Bathroom\\ Air\\ Freshener\\ \\-\\ Scintillating\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Zipper\\ Bathroom\\ Air\\ Freshener\\ \\-\\ Blissful\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Zipper\\ Bathroom\\ Air\\ Freshener\\ \\-\\ Alluring\\ Daffodil$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Zipper\\ Bathroom\\ Air\\ Freshener\\ \\-\\ Joyful\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Zipper\\ Bathroom\\ Air\\ Freshener\\ \\-\\ Soulful\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Gel\\ Pocket\\ \\-\\ Citrus\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Gel\\ Pocket\\ \\-\\ Floral\\ Valley$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Gel\\ Pocket\\ \\-\\ Wild\\ Forest$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Room\\ Gelz\\ \\-\\ Citrus\\ Spice$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Room\\ Gelz\\ \\-\\ Flirty\\ Strawberry$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Room\\ Gelz\\ \\-\\ Jasmine\\ Fantasy$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Room\\ Gelz\\ \\-\\ Passion\\ Fruit$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Room\\ Gelz\\ \\-\\ Rose\\ Dreams$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Room\\ Gelz\\ \\-\\ Lavender\\ \\&\\ Musk$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Room\\ Spray\\ \\-\\ Citrus\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Spray\\ \\-\\ Jasmine\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Spray\\ \\-\\ Lavender\\ Mist$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Spray\\ \\-\\ Rose\\ Garden$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Spray\\ \\-\\ Sandal\\ Bouquet$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Spray\\ \\-\\ Floral\\ Bliss$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Spray\\ \\-\\ Ocean\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Destinations\\ Room\\ Mist\\ \\-\\ Caribbean\\ Dreams$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Destinations\\ Room\\ Mist\\ \\-\\ Tropical\\ Sunrise$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Automatic\\ Spray\\ Kit\\ \\-\\ Sensual\\ Dahlia$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Automatic\\ Spray\\ Kit\\ \\-\\ Floral\\ Bliss$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Automatic\\ Spray\\ Kit\\ \\-\\ Gold\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Automatic\\ Spray\\ Kit\\ \\-\\ Ocean\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Sensual\\ Dahlia$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Floral\\ Bliss$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Gold\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Exotic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Ocean\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    }
+  ]
+}
