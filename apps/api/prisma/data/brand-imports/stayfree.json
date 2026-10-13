@@ -1,0 +1,152 @@
+{
+  "brand": "Stayfree (J&J)",
+  "manufacturer": "Kenvue India Pvt. Ltd.",
+  "feed": "stayfree-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/stayfree/logo-7d46b18b.png",
+  "themeColor": "#1B5FC1",
+  "themeColorSecondary": "#E4007C",
+  "namePrefix": "Stayfree ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Stayfree Secure XL Ultra Thin Pads": "Secure XL Ultra-Thin Pads"
+  },
+  "rules": [
+    {
+      "match": "^Secure\\ XL\\ Ultra\\-Thin\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Secure\\ XL\\ Cottony\\ Soft\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Secure\\ Cottony\\ Soft\\ Pads\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Secure\\ Dry\\ XL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Secure\\ Nights\\ XXL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Secure\\ Xpert\\ XL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Dry\\-Max\\ Ultra\\-Dry\\ XL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Dry\\-Max\\ All\\ Nights\\ XXL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Ultra\\-Comfort\\ XL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Ultra\\ Soft\\ XXL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Advanced\\ All\\ Nights\\ Ultra\\ Soft\\ XXL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Advanced\\ All\\ Nights\\ Soft\\ Touch\\ XXXL\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^ProComfort\\ Period\\ Panty\\ \\-\\ M\\-L$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^ProComfort\\ Period\\ Panty\\ \\-\\ L\\-XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^ProComfort\\ Period\\ Panty\\ \\-\\ XL\\-XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Tampons\\ by\\ o\\.b\\.\\ \\-\\ Super$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    },
+    {
+      "match": "^Tampons\\ by\\ o\\.b\\.\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    }
+  ]
+}
