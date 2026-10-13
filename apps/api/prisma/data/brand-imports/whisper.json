@@ -1,0 +1,217 @@
+{
+  "brand": "Whisper (P&G)",
+  "manufacturer": "Procter & Gamble Hygiene and Health Care Ltd.",
+  "feed": "whisper-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/whisper/logo-5a47e7e6.png",
+  "themeColor": "#1E9E4A",
+  "themeColorSecondary": "#E6007E",
+  "namePrefix": "Whisper ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Whisper Ultra Clean Sanitary Pads - XL": "Ultra No Gap No Leaks Sanitary Pads - XL",
+    "Whisper Daily Liners - Clean & Fresh": "Clean & Fresh Daily Panty Liners"
+  },
+  "rules": [
+    {
+      "match": "^Ultra\\ No\\ Gap\\ No\\ Leaks\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ No\\ Gap\\ No\\ Leaks\\ Sanitary\\ Pads\\ \\-\\ XL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Clean\\ Sanitary\\ Pads\\ \\-\\ XL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Skin\\ Love\\ Soft\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Skin\\ Love\\ Soft\\ Sanitary\\ Pads\\ \\-\\ XL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Bindazzz\\ Nights\\ Sanitary\\ Pads\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Bindazzz\\ Nights\\ Sanitary\\ Pads\\ \\-\\ XXL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Thick\\ Bindazzz\\ Nights\\ Sanitary\\ Pads\\ \\-\\ XXXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Bindazzz\\ Nights\\ Koala\\ Soft\\ Sanitary\\ Pads\\ \\-\\ XXL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Bindazzz\\ Nights\\ Koala\\ Soft\\ Sanitary\\ Pads\\ \\-\\ XXXL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Nights\\ Sanitary\\ Pads\\ \\-\\ XL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Nights\\ Sanitary\\ Pads\\ \\-\\ XXL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Flexfoam\\ Sanitary\\ Pads\\ \\-\\ XL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Maxi\\ Fit\\ Sanitary\\ Pads\\ \\-\\ Large\\ Wings$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Maxi\\ Fit\\ Sanitary\\ Pads\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Maxi\\ Nights\\ Sanitary\\ Pads\\ \\-\\ XL\\ Wings$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Choice\\ Sanitary\\ Pads\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Choice\\ Regular\\ Pads\\ With\\ Cottony\\ Softness$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Choice\\ Long\\ Sanitary\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Choice\\ All\\ Day\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Choice\\ Ultra\\ Sanitary\\ Pads\\ \\-\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Choice\\ Nights\\ Sanitary\\ Pads\\ \\-\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Clean\\ \\&\\ Fresh\\ Daily\\ Panty\\ Liners$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Super\\ Absorbent\\ Period\\ Panty\\ \\-\\ M\\-L$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Super\\ Absorbent\\ Period\\ Panty\\ \\-\\ L\\-XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    }
+  ]
+}
