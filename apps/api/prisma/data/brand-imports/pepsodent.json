@@ -1,0 +1,174 @@
+{
+  "brand": "Pepsodent (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "pepsodent-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pepsodent/logo-efb99b09.png",
+  "themeColor": "#1B2F8C",
+  "themeColorSecondary": "#E4002B",
+  "namePrefix": "Pepsodent ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Germicheck\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^2\\ In\\ 1\\ Cavity\\ Protection\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Germ\\ Protection\\ Clove\\ \\&\\ Salt\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Whitening\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Expert\\ Protection\\ Complete\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Expert\\ Protection\\ Gum\\ Care\\+\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Expert\\ Protection\\ Whitening\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Care\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Cleanse\\ Toothbrush\\ With\\ Himalayan\\ Rock\\ Salt\\ \\-\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Gum\\ Care\\+\\ Toothbrush\\ With\\ Bamboo\\ Salt\\ \\-\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Silver\\ Charcoal\\ Anti\\ Bacterial\\ Toothbrush\\ \\-\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Sensisoft\\ Toothbrush\\ \\-\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Expert\\ Toothbrush\\ \\-\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Gum\\ Care\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Complete\\ Expert\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Germi\\ Check\\ Fighter\\ Toothbrush\\ \\-\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Germi\\ Check\\ Fighter\\ Toothbrush\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Germi\\ Check\\ Flexi\\ Action\\ Toothbrush\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Germi\\ Check\\ Triple\\ Clean\\ Toothbrush\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Germi\\ Check\\ Triple\\ Clean\\ Toothbrush\\ \\-\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    }
+  ]
+}
