@@ -1,0 +1,501 @@
+{
+  "brand": "Nutraj",
+  "manufacturer": "Nutraj (Raj Agro International)",
+  "feed": "nutraj-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nutraj/logo-dec06337.png",
+  "themeColor": "#D7262B",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Nutraj ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Nutraj Premium Dried Anjeer": "Dried Figs (Anjeer)",
+    "Nutraj Arabian Premium Dates (Khajoor)": "Arabian Premium Dates",
+    "Nutraj California Almonds": "California Almond Kernels",
+    "Nutraj Kashmir Walnut Kernels": "Kashmiri Walnut Kernels",
+    "Nutraj Iranian Roasted & Salted Pistachios": "Roasted & Salted Pistachios In Shell",
+    "Nutraj Special Round Raisins": "Special Kishmish"
+  },
+  "rules": [
+    {
+      "match": "^Saffron$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Coriander\\ Seeds\\ \\(Dhania\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Cinnamon\\ \\(Dalchini\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Black\\ Cumin\\ Seeds\\ \\(Kalonji\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Cloves\\ \\(Laung\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Nutmeg\\ \\(Jaiphal\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Bay\\ Leaves\\ \\(Tej\\ Patta\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ \\(Kali\\ Mirch\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Big\\ Black\\ Mustard\\ Seeds\\ \\(Moti\\ Rai\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Green\\ Cardamom\\ \\(Elaichi\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Cumin\\ Seeds\\ \\(Jeera\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^White\\ Sesame\\ Seeds\\ \\(Safed\\ Til\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Fennel\\ Seeds\\ \\(Badi\\ Saunf\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Barik\\ Saunf\\ \\(Fine\\ Fennel\\ Seeds\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Whole\\ Red\\ Chilli\\ \\(Lal\\ Mirch\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Copra\\ \\(Dried\\ Coconut\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Offerings",
+        "Coconut (Nariyal)"
+      ]
+    },
+    {
+      "match": "^Desiccated\\ Coconut\\ Powder$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Snack\\ Rite\\ Athletic\\ Mix$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Trail Mix"
+      ]
+    },
+    {
+      "match": "^Phool\\ Makhana$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Superfoods (Chia, Flax, Hemp)"
+      ]
+    },
+    {
+      "match": "^Dried\\ Figs\\ \\(Anjeer\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Figs (Anjeer)"
+      ]
+    },
+    {
+      "match": "^Arabian\\ Premium\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Classic\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Seedless\\ Premium\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Fard\\ Dates$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Kalmi\\ Dates\\ Safawi$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^Dry\\ Dates\\ Chuara\\ \\(Kharek\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    },
+    {
+      "match": "^California\\ Almond\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Snack\\ Rite\\ Roasted\\ \\&\\ Salted\\ Almonds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Almonds (Badam)"
+      ]
+    },
+    {
+      "match": "^Whole\\ Cashews\\ W320$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Special\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Nuts\\ W450\\ Super\\ Value\\ Pack$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Signature\\ Roasted\\ \\&\\ Salted\\ Cashews\\ W240$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Snack\\ Rite\\ Roasted\\ \\&\\ Salted\\ Cashews$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Cashews (Kaju)"
+      ]
+    },
+    {
+      "match": "^Kashmiri\\ Walnut\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Walnut\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Recipe\\ Ready\\ Walnut\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Signature\\ California\\ Walnut\\ Kernels$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^California\\ Walnuts\\ In\\ Shell$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Chilean\\ Walnuts\\ In\\ Shell$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Walnuts (Akhrot)"
+      ]
+    },
+    {
+      "match": "^Roasted\\ \\&\\ Salted\\ Pistachios\\ In\\ Shell$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Pistachios (Pista)"
+      ]
+    },
+    {
+      "match": "^Raisins\\ \\(Kishmish\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Special\\ Kishmish$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Black\\ Raisins$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Afghan\\ Dried\\ Munakka\\ \\(Abjosh\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Raisins (Kishmish)"
+      ]
+    },
+    {
+      "match": "^Panchmeva\\ Mix\\ Dried\\ Fruits$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Bactopure\\ Brazil\\ Nuts$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Mixed Dry Fruits"
+      ]
+    },
+    {
+      "match": "^Daily\\ Berry\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Signature\\ Dried\\ Kiwi$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Premium\\ Dried\\ Pitted\\ Turkish\\ Apricots$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dried Berries & Prunes"
+      ]
+    },
+    {
+      "match": "^Chia\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Pumpkin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Sunflower\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Flax\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Basil\\ Seeds\\ \\(Sabja\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Muskmelon\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Watermelon\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^For\\ Good\\ Nutty\\ Date\\ Bites$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^For\\ Good\\ Protein\\ Millet\\ Bars\\ \\-\\ Assorted$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    }
+  ]
+}
