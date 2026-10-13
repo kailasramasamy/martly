@@ -1,0 +1,328 @@
+[
+ {
+  "title": "Detergent Cake",
+  "handle": "detergent-cake",
+  "vendor": "Ghadi (RSPL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "5",
+    "compare_at_price": "5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40152201_3-ghadi-detergent-cake.jpg"
+    }
+   },
+   {
+    "title": "250g",
+    "price": "18",
+    "compare_at_price": "18",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40252702_4-ghadi-detergent-cake-removes-dirt-stains-dullness-perfect-for-whites-coloured-clothes.jpg"
+    }
+   },
+   {
+    "title": "300g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40080104_4-ghadi-detergent-cake.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40152201_3-ghadi-detergent-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40152201-2_2-ghadi-detergent-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40152201-3_2-ghadi-detergent-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40152201-4_2-ghadi-detergent-cake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252702_4-ghadi-detergent-cake-removes-dirt-stains-dullness-perfect-for-whites-coloured-clothes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080104_4-ghadi-detergent-cake.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your laundry routine with Ghadi Detergent Cake, a powerful yet gentle solution that keeps your whites whiter and colours brighter. Formulated with advanced cleaning agents, this detergent bar penetrates deep into fabric fibres to lift and eliminate even the toughest of stains, leaving your garments looking and feeling fresh. Gentle on both hands and fabrics, Ghadi Detergent Cake helps preserve the colour, texture, and softness of your clothes, ensuring they maintain their vibrant hues and soft, supple feel. With its pleasant fragrance and proven quality, this detergent bar is a trusted choice for effortless, hassle-free cleaning. Embrace the confidence of clean, vibrant fabrics with Ghadi Detergent Cake, the reliable solution for all your laundry needs.",
+   "manufacturerName": "RSPL Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Detergent Powder",
+  "handle": "detergent-powder",
+  "vendor": "Ghadi (RSPL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "36",
+    "compare_at_price": "36",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40080103_10-ghadi-detergent-powder.jpg"
+    },
+    "barcode": "8901331004489"
+   },
+   {
+    "title": "1kg",
+    "price": "81",
+    "compare_at_price": "81",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40080102_11-ghadi-detergent-powder.jpg"
+    }
+   },
+   {
+    "title": "3kg",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40080101_9-ghadi-detergent-powder.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346336_6-ghadi-detergent-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080103_10-ghadi-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080103-2_6-ghadi-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080103-3_6-ghadi-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080103-4_3-ghadi-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080103-5_3-ghadi-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080103-6_3-ghadi-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080103-7_3-ghadi-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080102_11-ghadi-detergent-powder.jpg"
+   }
+  ],
+  "details": {
+   "description": "Powerful Cleaning Performance:\nEngineered with advanced Dirt Blast Technology and power granules to tackle\neven the toughest stains.\nQuick-Dissolve Formula: Dissolves rapidly in water for effortless washing with\nzero residue.\nSuperior Stain Removal: Effectively removes everyday stains such as oil,\nketchup, chutney, milk tea, and mud.\nRefreshing Multi-Fragrance: A pleasant blend of jasmine, vanilla, and lemon\nkeeps clothes smelling fresh and vibrant after every wash.\nTrusted Indian Brand: Proudly made in India and trusted by millions of\nhouseholds for reliable laundry care.",
+   "manufacturerName": "Detergent Powder RSPL LIMITED 119",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Machine Wash Detergent Powder - Lavender",
+  "handle": "machine-wash-detergent-powder-lavender",
+  "vendor": "Ghadi (RSPL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "57",
+    "compare_at_price": "57",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541_4-ghadi-machine-wash.jpg"
+    },
+    "barcode": "8901331013092"
+   },
+   {
+    "title": "4kg",
+    "price": "440",
+    "compare_at_price": "440",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40252701_3-ghadi-machine-wash-detergent-powder-lavender-fragrance-compatible-with-all-washing-machines.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541_4-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541-2_4-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541-3_3-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541-4_3-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541-5_3-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541-6_3-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541-7_3-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171541-8_3-ghadi-machine-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your laundry experience with Ghadi Machine Wash, a premium detergent specially crafted to deliver outstanding cleaning results in your washing machine. Engineered with powerful cleaning agents, this advanced formula effectively removes tough stains and deep-seated dirt, ensuring thorough cleaning with every wash. Gentle on fabrics yet tough on grime, Ghadi Machine Wash helps preserve the colour, texture, and softness of your garments, leaving them as bright as new. Infused with a soothing lavender fragrance, this detergent powder provides a refreshing scent that lingers on your clothes, making you feel rejuvenated throughout the day. Suitable for both semi and fully automatic washing machines, Ghadi Machine Wash offers an effortless and superior cleaning experience, elevating your laundry routine to new heights.",
+   "usageInstructions": "Adjust doses according to the loads.",
+   "manufacturerName": "RSPL LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Smart Matic Top & Front Load Detergent Powder - Lavender",
+  "handle": "smart-matic-top-front-load-detergent-powder-lavender",
+  "vendor": "Ghadi (RSPL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40171540_8-ghadi-machine-wash.jpg"
+    }
+   },
+   {
+    "title": "3kg",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346338_3-ghadi-smart-matic-detergent-powder.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "625",
+    "compare_at_price": "625",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346337_4-ghadi-smart-matic-detergent-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171540_8-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171540-2_8-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171540-3_7-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171540-4_7-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171540-5_7-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171540-6_7-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40171540-7_7-ghadi-machine-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346338_3-ghadi-smart-matic-detergent-powder.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your laundry experience with Ghadi Machine Wash, a premium detergent specially crafted to deliver outstanding cleaning results in your washing machine. Engineered with powerful cleaning agents, this advanced formula effectively removes tough stains and deep-seated dirt, ensuring thorough cleaning with every wash. Gentle on fabrics yet tough on grime, Ghadi Machine Wash helps preserve the colour, texture, and softness of your garments, leaving them as bright as new. Infused with a soothing lavender fragrance, this detergent powder provides a refreshing scent that lingers on your clothes, making you feel rejuvenated throughout the day. Suitable for both semi and fully automatic washing machines, Ghadi Machine Wash offers an effortless and superior cleaning experience, elevating your laundry routine to new heights.",
+   "usageInstructions": "Sort your laundry by separating colours whites and delicate fabrics\nUse the right water temperature Ã¢â‚¬â€ cold for bright colours and warm for whites\nDon’t overload the machine to allow clothes enough space for a thorough clean\nPre-treat stains by applying a paste of detergent and water before washing",
+   "manufacturerName": "RSPL Limited 119",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Smart Matic Liquid Detergent - Lavender",
+  "handle": "smart-matic-liquid-detergent-lavender",
+  "vendor": "Ghadi (RSPL)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2L",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357783_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+    }
+   },
+   {
+    "title": "4.5L",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357784_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357783_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357783-2_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357783-3_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357783-4_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357783-5_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357783-6_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357783-7_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357784_2-ghadi-smart-lavender-fragrance-matic-liquid-detergent.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience the power of advanced cleaning with SPF Technology, featuring a Smart Protection Formula that effectively removes stains and preserves fabric colour while remaining gentle on clothes. Infused with a refreshing lavender fragrance, it leaves garments smelling fresh and clean after every wash. The powerful deep-cleaning formula tackles tough stains, dirt, and grease with ease, yet is mild enough for everyday use. Safe for all fabrics, including baby clothes, it helps maintain softness and fabric longevity.",
+   "usageInstructions": "Usage Instructions:\nPour\nPre-Treat\nDose\nDosage Instructions:\n40 ml for bucket wash\n60 ml for less soiled clothes\n80 ml for heavily soiled clothes",
+   "manufacturerName": "RSPL Limited",
+   "countryOfOrigin": "India"
+  }
+ }
+]

@@ -1,0 +1,56 @@
+{
+  "brand": "Ghadi (RSPL)",
+  "manufacturer": "RSPL Ltd.",
+  "feed": "ghadi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ghadi/logo-4fcf50a1.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD100",
+  "namePrefix": "Ghadi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Ghadi Detergent Bar": "Detergent Cake"
+  },
+  "rules": [
+    {
+      "match": "^Detergent\\ Cake$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Machine\\ Wash\\ Detergent\\ Powder\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Smart\\ Matic\\ Top\\ \\&\\ Front\\ Load\\ Detergent\\ Powder\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Smart\\ Matic\\ Liquid\\ Detergent\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    }
+  ]
+}
