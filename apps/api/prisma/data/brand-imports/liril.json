@@ -1,0 +1,62 @@
+{
+  "brand": "Liril (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "liril-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/liril/logo-7d36a0ae.png",
+  "themeColor": "#1E7B34",
+  "themeColorSecondary": "#7AC143",
+  "namePrefix": "Liril ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Lemon\\ \\&\\ Tea\\ Tree\\ Oil\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cooling\\ Mint\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lemon\\ \\&\\ Tea\\ Tree\\ Oil\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Cooling\\ Mint\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Berry\\ Blast\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Black\\ Orchid\\ \\&\\ Juniper\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    }
+  ]
+}
