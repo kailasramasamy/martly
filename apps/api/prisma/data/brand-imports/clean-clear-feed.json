@@ -1,0 +1,500 @@
+[
+ {
+  "title": "Foaming Face Wash",
+  "handle": "foaming-face-wash",
+  "vendor": "Clean & Clear (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192_6-clean-clear-foaming-face-wash.jpg"
+    },
+    "barcode": "8901012100998"
+   },
+   {
+    "title": "100ml",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004193_5-clean-clear-foaming-face-wash.jpg"
+    }
+   },
+   {
+    "title": "150ml",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004191_6-clean-clear-foaming-face-wash.jpg"
+    }
+   },
+   {
+    "title": "240ml",
+    "price": "539",
+    "compare_at_price": "539",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40208264_2-clean-clear-foaming-face-wash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192_6-clean-clear-foaming-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192-2_5-clean-clear-foaming-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192-3_4-clean-clear-foaming-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192-4_3-clean-clear-foaming-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192-5_2-clean-clear-foaming-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192-6_2-clean-clear-foaming-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192-7_1-clean-clear-foaming-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004192-8_1-clean-clear-foaming-face-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Clean & Clear Foaming face wash is specially designed to cleanse thoroughly and remove excess oil. It helps to remove oil & 99.8% pimple-causing germs, removes oil & dirt without causing dryness. It helps prevent pimples & blackheads. It is suitable for normal to oily skin. This face wash is suitable for both men and women.",
+   "usageInstructions": "1. Apply a small amount on wet palm and work into a rich lather.\n2. Gently massage onto face, avoiding the eye area.\n3. Rinse off thoroughly.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Johnson & Johnson Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Morning Energy Aqua Splash Face Wash",
+  "handle": "morning-energy-aqua-splash-face-wash",
+  "vendor": "Clean & Clear (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457_5-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40179458_5-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+    }
+   },
+   {
+    "title": "150ml",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40179459_4-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457_5-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457-2_1183-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457-3_2-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457-4_2-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457-5_2-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457-6_2-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457-7_1-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40179457-8_1-clean-clear-morning-energy-aqua-splash-face-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Clean & Clear morning energy aqua splash face wash is specially formulated with menthol, soft bursting beads and a refreshing fragrance. The special ingredients create a cool, tingling sensation on your skin that truly wakes you up and makes you feel energized, while thoroughly cleansing your skin and leaving it Clean & Clear. Recommended for normal to oily skin.",
+   "usageInstructions": "Apply a small amount on wet palm and work into a rich lather.\nGently massage onto face, avoiding the eye area and rinse off thoroughly.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Morning Energy Berry Blast Face Wash",
+  "handle": "morning-energy-berry-blast-face-wash",
+  "vendor": "Clean & Clear (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/307468_13-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+    },
+    "barcode": "8901012188057"
+   },
+   {
+    "title": "100ml",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/307469_7-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+    }
+   },
+   {
+    "title": "150ml",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40179460_6-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307468_13-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307468-2_11-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307468-3_9-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307468-4_9-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307468-5_3-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307468-6_2-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307468-7_1-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307468-8_1-clean-clear-morning-energy-berry-blast-face-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Clean & Clear Morning Energy Berry Face Wash is specially formulated with menthol, soft bursting beads and a refreshing fragrance. The special ingredients create a cool, tingling sensation on your skin that truly wakes you up and makes you feel energised, while thoroughly cleansing your skin and leaving it clean & clear",
+   "usageInstructions": "Apply a small amount on wet palm and work into rich lather, gently massage onto face, avoiding the eye area and rinse off thoroughly.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Morning Energy Lemon Fresh Face Wash",
+  "handle": "morning-energy-lemon-fresh-face-wash",
+  "vendor": "Clean & Clear (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/307460_6-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+    },
+    "barcode": "8901012189382"
+   },
+   {
+    "title": "100ml",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/307463_13-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+    }
+   },
+   {
+    "title": "150ml",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40179461_5-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307460_6-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307460-2_5-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307460-3_3-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307460-4_3-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307460-5_3-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307460-6_2-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307460-7_1-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/307460-8_1-clean-clear-morning-energy-lemon-fresh-face-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Clean & Clear Morning Energy Lemon Face wash is specially formulated with menthol, soft bursting beads and a refreshing fragrance. The special ingredients create a cool, tingling sensation on your skin that truly wakes you up and makes you feel energised, while thoroughly cleansing your skin and leaving it clean & clear",
+   "usageInstructions": "Apply a small amount on wet palm and work into rich lather, gently massage onto face, avoiding the eye area and rinse off thoroughly.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pimple Clearing Face Wash",
+  "handle": "pimple-clearing-face-wash",
+  "vendor": "Clean & Clear (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197_6-clean-clear-pimple-clearing-facewash.jpg"
+    }
+   },
+   {
+    "title": "80g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20004195_6-clean-clear-pimple-clearing-facewash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197_6-clean-clear-pimple-clearing-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197-2_4-clean-clear-pimple-clearing-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197-3_3-clean-clear-pimple-clearing-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197-4_3-clean-clear-pimple-clearing-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197-5_3-clean-clear-pimple-clearing-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197-6_1-clean-clear-pimple-clearing-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197-7_1-clean-clear-pimple-clearing-facewash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20004197-8_1-clean-clear-pimple-clearing-facewash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Clean & Clear Pimple Clearing Face Wash is that best friend that helps you get out of that unhealthy relationship you have with pimples! It is a gentle yet effective face wash that makes sure you and pimples never get back together. The neem-lemon formula helps fight pimples at the root, and within 7 days, will set you on the path to a far healthier relationship with clear skin! That’s where Clean & Clear Pimple Clearing Face Wash comes in as an effective way to easily and painlessly breakup with pimples.",
+   "usageInstructions": "Step 1: Start with clean hands\nStep 2: Use those clean hands to splash water on your face\nStep 3: Squeeze a small amount of the product onto your fingertips\nStep 4: Gently massage it all over your face\nStep 5: Be careful to avoid your eyes \nStep 6: Rinse thoroughly \nStep 7: Pat your face dry with a towel \nNote: Use it twice a day as you look into the mirror and smile",
+   "manufacturerName": "Johnson & Johnson Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aloe Vera Face Wash",
+  "handle": "aloe-vera-face-wash",
+  "vendor": "Clean & Clear (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332920_1-clean-clear-aloe-vera-face-wash.jpg"
+    },
+    "barcode": "8901012100981"
+   },
+   {
+    "title": "240ml",
+    "price": "470",
+    "compare_at_price": "470",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332921_1-clean-clear-aloe-vera-face-wash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332920_1-clean-clear-aloe-vera-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332920-2_1-clean-clear-aloe-vera-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332920-3_1-clean-clear-aloe-vera-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332920-4_1-clean-clear-aloe-vera-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332921_1-clean-clear-aloe-vera-face-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the gentle and refreshing power of Clean & Clear Aloe Vera Face Wash, designed to give you clean, soft and moisturised skin every day. Infused with the soothing and hydrating properties of aloe vera, this face wash effectively removes excess oil, dirt and impurities without stripping your skin of its natural moisture. Suitable for all skin types, especially sensitive skin, it provides a deep clean while leaving your complexion feeling fresh and nourished. The mild formulation makes it perfect for daily use, and the light, relaxing fragrance adds a touch of tranquility to your skincare routine. Whether you have oily, dry or combination skin, this face wash helps maintain a healthy, balanced complexion, reducing the appearance of pimples from the very first use. Elevate your cleansing experience with the gentle yet effective Clean & Clear Aloe Vera Face Wash.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "usageInstructions": "1. Apply small amount on wet palm and work into rich lather.\n2. Gently massage onto face, avoiding eye area.\n3. Rinse off thoroughly.\n4. Use twice daily for clean, clear and beautiful skin.",
+   "manufacturerName": "Manufactured by",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vitamin C Face Wash",
+  "handle": "vitamin-c-face-wash",
+  "vendor": "Clean & Clear (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332922_1-clean-clear-vitamin-c-face-wash.jpg"
+    }
+   },
+   {
+    "title": "240ml",
+    "price": "470",
+    "compare_at_price": "470",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40332923_1-clean-clear-vitamin-c-face-wash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332922_1-clean-clear-vitamin-c-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332922-2_1-clean-clear-vitamin-c-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332922-3_1-clean-clear-vitamin-c-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332922-4_1-clean-clear-vitamin-c-face-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40332923_1-clean-clear-vitamin-c-face-wash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Clean and Clear Vitamin C Face Wash is a refreshing face wash designed to cleanse and revitalise your skin. Packed with Vitamin C, it helps to brighten the skin and even out your complexion. The formula is gentle yet effective in removing dirt, oil and impurities from the skin, leaving it feeling fresh and rejuvenated. The vitamin-rich formula works to reduce dullness and reveal a healthy glow. Clean and Clear Vitamin C Face Wash is ideal for daily use and is suitable for all skin types, even sensitive skin. It cleanses the skin without over-drying, ensuring your skin feels clean, refreshed and smooth after every use. With its pleasant citrus fragrance, it adds an extra boost of freshness to your daily skincare routine.",
+   "storageInstructions": "*Store at room temperature, away from direct sunlight",
+   "usageInstructions": "1. Apply small amount on wet palm and work into rich lather.\n2. Gently massage onto face, avoiding eye area.\n3. Rinse off thoroughly.\n4. Use twice daily for clean, clear and beautiful skin.",
+   "manufacturerName": "Manufactured by",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Blackhead Clearing Daily Scrub",
+  "handle": "blackhead-clearing-daily-scrub",
+  "vendor": "Clean & Clear (J&J)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100396610_6-clean-clear-blackhead-scrub.jpg"
+    },
+    "barcode": "8901012186015"
+   },
+   {
+    "title": "80g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/280255_10-clean-clear-blackhead-scrub.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100396610_6-clean-clear-blackhead-scrub.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100396610-2_5-clean-clear-blackhead-scrub.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100396610-3_3-clean-clear-blackhead-scrub.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100396610-4_3-clean-clear-blackhead-scrub.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100396610-5_1-clean-clear-blackhead-scrub.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/280255_10-clean-clear-blackhead-scrub.jpg"
+   }
+  ],
+  "details": {
+   "description": "Clean & Clear Blackhead Clearing Daily Scrub is a fast and effective solution for skin that is prone to blackheads. It has effective micro-scrubbing beads that break down trapped oil, dirt, and dead skin. The natural apple extract formula penetrates deep into pores to help soften stubborn blackheads and prevents new ones from forming. Its gentle exfoliating action leaves your skin smooth and clean.",
+   "usageInstructions": "Start with clean hands\nUse those clean hands to splash water on your face\nSqueeze a small amount of our product onto your fingertips\nGently massage it all over your face",
+   "manufacturerName": "Johnson & Johnson Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

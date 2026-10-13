@@ -1,0 +1,78 @@
+{
+  "brand": "Clean & Clear (J&J)",
+  "manufacturer": "Kenvue (Johnson & Johnson Consumer India)",
+  "feed": "clean-clear-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/clean-clear/logo-7dad9c12.png",
+  "themeColor": "#2E3192",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Clean & Clear ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Foaming\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Morning\\ Energy\\ Aqua\\ Splash\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Morning\\ Energy\\ Berry\\ Blast\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Morning\\ Energy\\ Lemon\\ Fresh\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Pimple\\ Clearing\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Blackhead\\ Clearing\\ Daily\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    }
+  ]
+}
