@@ -1,0 +1,850 @@
+{
+  "brand": "Colgate",
+  "manufacturer": "Colgate-Palmolive (India) Ltd.",
+  "feed": "colgate-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/colgate/logo-07476cab.png",
+  "themeColor": "#D2010D",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Colgate ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Colgate MaxFresh Toothpaste - Spicy Fresh (Red Gel)": "MaxFresh Spicy Fresh Red Gel Toothpaste",
+    "Colgate Plax Fresh Mint Mouthwash": "Plax Peppermint Fresh Mouthwash",
+    "Colgate Strong Teeth Toothpaste": "Strong Teeth Anticavity Toothpaste"
+  },
+  "rules": [
+    {
+      "match": "^Active\\ Salt\\ Anticavity\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Active\\ Salt\\ Lemon\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Active\\ Salt\\ Neem\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Clean\\ Gel\\ Toothpaste\\ Bamboo\\ Charcoal\\ \\&\\ Mint$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Cibaca\\ Anticavity\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Gum\\ Expert\\ Ayurvedic\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Anticavity\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Toothpaste\\ for\\ Diabetics\\ Ayurvedic$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Vedshakti\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Vedshakti\\ Toothpaste\\ Neem,\\ Clove\\ \\&\\ Honey$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Spicy\\ Fresh\\ Red\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Peppermint\\ Ice\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Blue\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Berry\\ Magic\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Rainbow\\ Fresh\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Watermelon\\ Blast\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Charcoal\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Strong\\ Teeth\\ Anticavity\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Anticavity\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Everyday\\ Protection\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Plus\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^PerioGard\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Total\\ Advanced\\ Health\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Total\\ Anti\\-Tartar\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Total\\ Charcoal\\ Anticavity\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Total\\ Charcoal\\ Deep\\ Clean\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Total\\ Enamel\\ Strength\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Total\\ Plaque\\ Release\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Total\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Visible\\ White\\ Instant\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Visible\\ White\\ O2\\ Teeth\\ Whitening\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Visible\\ White\\ Purple\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Visible\\ White\\ Sparkling\\ Mint\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Visible\\ White\\ Purple\\ Teeth\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Calcium\\ Toothpowder$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Toothpaste\\ 0\\-2\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Toothpaste\\ 2\\-5\\ Years\\ Bubble\\ Fruit$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Toothpaste\\ 2\\-5\\ Years\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Natural\\ Toothpaste\\ 3\\-5\\ Years\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Natural\\ Toothpaste\\ 6\\-9\\ Years\\ Strawberry\\ Mint$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Barbie\\ Toothpaste\\ 6\\+\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Batman\\ Toothpaste\\ 6\\+\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Minions\\ Toothpaste\\ 6\\+\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Motu\\ Patlu\\ Toothpaste\\ 6\\+\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Harry\\ Potter\\ Toothpaste\\ 6\\+\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Cocomelon\\ Toothpaste\\ 2\\-5\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Bluey\\ Pump\\ Toothpaste\\ 2\\-5\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Strawberry\\ Smash\\ Liquid\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Kids\\ Watermelon\\ Liquid\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Plax\\ Peppermint\\ Fresh\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Plax\\ Fresh\\ Tea\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Plax\\ Complete\\ Care\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Plax\\ Gentle\\ Care\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^MaxFresh\\ Fresh\\ Tea\\ Mouthwash\\ Sachet$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Vedshakti\\ Mouth\\ Protect\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Pain\\ Out\\ Tooth\\ Pain\\ Relief\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^360\\ Visible\\ White\\ Toothbrush\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^360\\ Charcoal\\ Gold\\ Toothbrush\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^360\\ Flosstip\\ Toothbrush\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^360\\ Flosstip\\ Toothbrush\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^360\\ Whole\\ Mouth\\ Clean\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Enamel\\ Ultra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Gumcare\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Sensitive\\ Ultra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Sensitive\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Ultrafoam\\ Ultra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^PerioGard\\ Gum\\ Expert\\ Ultra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^RecyClean\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Neo\\ Ultra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Slim\\ Soft\\ Charcoal\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Slim\\ Soft\\ Turmeric\\ \\&\\ Himalayan\\ Salt\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Super\\ Shine\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Super\\ Shine\\ Medium\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Extra\\ Clean\\ Medium\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Cibaca\\ Supreme\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ZigZag\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ZigZag\\ Charcoal\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ZigZag\\ Charcoal\\ Medium\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ZigZag\\ Neem\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Total\\ Foaming\\ Clean\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Visible\\ White\\ O2\\ Ultra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Visible\\ White\\ Purple\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ 0\\-2\\ Years\\ Extra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ 2\\+\\ Years\\ Extra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Barbie\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Batman\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Minion\\ Toothbrush\\ 2\\+\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Minion\\ Toothbrush\\ 5\\+\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Wonder\\ Woman\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Fluffy\\ Paw\\ Ultra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Harry\\ Potter\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Baby\\ Toothbrush\\ \\+\\ Teether\\ 0\\-12\\ Months$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ProClinical\\ 150\\ Battery\\ Sonic\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^360\\ Sonic\\ Electric\\ Toothbrush\\ Floss\\ Tip$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Barbie\\ Battery\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Batman\\ Battery\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ProClinical\\ 250R\\ Rechargeable\\ Sonic\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ProClinical\\ 500R\\ Sensitive\\ Electric\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ProClinical\\ 500R\\ Whitening\\ Electric\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^ProClinical\\ Replacement\\ Brush\\ Heads$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Keep\\ Deep\\ Clean\\ Toothbrush\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Keep\\ Deep\\ Clean\\ Replacement\\ Heads$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    }
+  ]
+}
