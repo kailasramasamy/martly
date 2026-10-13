@@ -1,0 +1,104 @@
+{
+  "brand": "All Out (SC Johnson)",
+  "manufacturer": "S. C. Johnson Products Pvt. Ltd.",
+  "feed": "all-out-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/all-out/logo-ef5ebd08.png",
+  "themeColor": "#1B3C8C",
+  "themeColorSecondary": "#FFE600",
+  "namePrefix": "All Out ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "All Out Ultra Mosquito Repellent Liquid Refill": "Ultra Liquid Vaporiser Refill"
+  },
+  "rules": [
+    {
+      "match": "^All\\ Night\\ Mosquito\\ \\&\\ Fly\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Anti\\ Dengue\\ Mosquito\\ Coil$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Liquid\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Liquid\\ Vaporiser\\ Refill\\ \\-\\ Floral$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Sattva\\ Liquid\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Power\\+\\ Fan\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Power\\+\\ Fan\\ Starter\\ Pack\\ \\(Machine\\ \\+\\ Refill\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Starter\\ Pack\\ \\(Machine\\ \\+\\ Refill\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Starter\\ Pack\\ \\(Machine\\ \\+\\ 2\\ Refills\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Starter\\ Pack\\ \\(Machine\\ \\+\\ 3\\ Refills\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Floral\\ Starter\\ Pack\\ \\(Machine\\ \\+\\ 2\\ Refills\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    }
+  ]
+}
