@@ -1,0 +1,371 @@
+{
+  "brand": "Origami",
+  "manufacturer": "Origami Cellulo Pvt. Ltd.",
+  "feed": "origami-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/origami/logo-5a07d9c5.png",
+  "themeColor": "#E5007E",
+  "themeColorSecondary": "#00A3AD",
+  "namePrefix": "Origami ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Origami So Soft Facial Tissue Box": "Soft Facial Tissues - 2 Ply",
+    "Origami Kitchen Towel Roll": "Kitchen Towel Rolls - 2 Ply, Printed",
+    "Origami Kitchen Paper Towel Roll": "Kitchen Towels - 2 Ply, Quilted",
+    "Origami So Soft Toilet Paper (6 Rolls)": "So Soft Toilet Roll - 3 Ply, 160 Pulls"
+  },
+  "rules": [
+    {
+      "match": "^Cocktail\\ Tissue\\ Napkins\\ \\-\\ 1\\ Ply,\\ 22\\ x\\ 22\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Car\\ Tissue\\ Box\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Soft\\ Crepe\\ Tissues\\ \\-\\ 2\\ Ply,\\ 30\\ x\\ 30\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Soft\\ Crepe\\ Tissues\\ \\-\\ 1\\ Ply,\\ 32\\ x\\ 32\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^3D\\ Deco\\ Facial\\ Tissues\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Klassic\\ Premium\\ Tissues\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Luncheon\\ Tissue\\ Napkins\\ \\-\\ 32\\ x\\ 32\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Luncheon\\ Printed\\ Tissue\\ Napkins\\ \\-\\ 32\\ x\\ 32\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Luxuria\\ Party\\ Tissue\\ Napkins\\ \\-\\ 2\\ Ply,\\ 22\\ x\\ 22\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Luxuria\\ Printed\\ Napkins\\ \\-\\ 2\\ Ply,\\ 38\\ x\\ 38\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Luxuria\\ Pocket\\ Tissues\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Printed\\ Napkins\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Soft\\ Facial\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Wet\\ Wipes$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Cologne\\ Wet\\ Wipes$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Wet\\ Wipes$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Rose\\ Wet\\ Wipes$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Interfolded\\ Paper\\ Towels$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Towel\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Towel\\ Rolls\\ \\-\\ 2\\ Ply,\\ Printed$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Towels\\ \\-\\ 2\\ Ply,\\ Quilted$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Luxuria\\ Kitchen\\ Towel\\ Rolls\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Non\\-Woven\\ Kitchen\\ Towels$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^So\\ Soft\\ Toilet\\ Roll\\ \\-\\ 3\\ Ply,\\ 160\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^So\\ Soft\\ Toilet\\ Roll\\ \\-\\ 3\\ Ply,\\ 340\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Round\\ Pulp\\ Plates\\ \\-\\ 15\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Round\\ Pulp\\ Plates\\ \\-\\ 23\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Round\\ Pulp\\ Plates\\ \\-\\ 26\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Round\\ Pulp\\ Plates\\ \\-\\ 28\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ 3\\ Compartment\\ Pulp\\ Plates\\ \\-\\ 23\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ 3\\ Compartment\\ Pulp\\ Plates\\ \\-\\ 26\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ 4\\ Compartment\\ Pulp\\ Plates\\ \\-\\ 28\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Pulp\\ Bowls,\\ Small$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Pulp\\ Bowls,\\ Large$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^White\\ Paper\\ Cups$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Printed\\ Paper\\ Cups$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Paper\\ Plates\\ \\-\\ White,\\ 19\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Printed\\ Paper\\ Plates\\ \\-\\ 23\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Printed\\ Paper\\ Plates\\ \\-\\ Extra\\ Thick$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Thick\\ Paper\\ Plates\\ \\-\\ 23\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^White\\ Paper\\ Bowls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Party\\ Tableware\\ Set\\ \\-\\ Plates,\\ Cups,\\ Covers\\ \\&\\ Napkins$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Printed\\ Party\\ Combo\\ \\-\\ Plates\\ \\&\\ Napkins$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Wooden\\ Toothpicks$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    }
+  ]
+}
