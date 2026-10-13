@@ -1,0 +1,38 @@
+{
+  "brand": "Strepsils (Reckitt)",
+  "manufacturer": "Reckitt Benckiser Healthcare India Pvt. Ltd.",
+  "feed": "strepsils-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/strepsils/logo-650129b8.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#58595B",
+  "namePrefix": "Strepsils ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Honey\\ \\&\\ Lemon\\ Lozenges$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Warm\\ Ginger\\ \\&\\ Lemon\\ Lozenges$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Ginger,\\ Tulsi,\\ Honey\\ \\&\\ Cinnamon\\ Lozenges$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    }
+  ]
+}

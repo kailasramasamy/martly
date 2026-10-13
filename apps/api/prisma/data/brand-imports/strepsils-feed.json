@@ -1,0 +1,92 @@
+[
+ {
+  "title": "Honey & Lemon Lozenges",
+  "handle": "honey-lemon-lozenges",
+  "vendor": "Strepsils (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8 pcs",
+    "price": "16",
+    "compare_at_price": "16",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40020179_1-strepsils-2-lonzenges-soothing-honey-lemon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020179_1-strepsils-2-lonzenges-soothing-honey-lemon.jpg"
+   }
+  ],
+  "details": {
+   "description": "Strepsils 2 Lozenges - Soothing Honey & Lemon are a gentle, soothing throat lozenge that can help relieve sore, irritated throats. Formulated with natural honey and lemon flavours, these lozenges provide a comforting sensation to help soothe and calm the throat."
+  }
+ },
+ {
+  "title": "Warm Ginger & Lemon Lozenges",
+  "handle": "warm-ginger-lemon-lozenges",
+  "vendor": "Strepsils (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "8 pcs",
+    "price": "16",
+    "compare_at_price": "16",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40020178_1-strepsils-2-lonzenges-warm-ginger-lemon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40020178_1-strepsils-2-lonzenges-warm-ginger-lemon.jpg"
+   }
+  ],
+  "details": {
+   "description": "Strepsils 2 Lozenges - Warm Ginger & Lemon are a soothing, comforting throat lozenge that provides relief from sore, irritated throats. Formulated with natural ingredients like ginger and lemon, these lozenges help to soothe and calm the throat."
+  }
+ },
+ {
+  "title": "Ayurvedic Ginger, Tulsi, Honey & Cinnamon Lozenges",
+  "handle": "ayurvedic-ginger-tulsi-honey-cinnamon-lozenges",
+  "vendor": "Strepsils (Reckitt)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "55 pcs",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/268215_1-strepsils-ayurvedic.jpg"
+    }
+   },
+   {
+    "title": "110 pcs",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/268216_2-strepsils-ginger-tulsi-honey-cinnamon-throat-lozenges.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268215_1-strepsils-ayurvedic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268216_2-strepsils-ginger-tulsi-honey-cinnamon-throat-lozenges.jpg"
+   }
+  ],
+  "details": {
+   "description": "Strepsils Ayurvedic is a natural throat lozenge that provides relief from sore throat and throat irritation. It is made with a blend of Ayurvedic herbs and ingredients that help soothe the throat and provide a calming effect."
+  }
+ }
+]
