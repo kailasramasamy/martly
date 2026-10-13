@@ -1,0 +1,214 @@
+{
+  "brand": "Denver (Guardian)",
+  "manufacturer": "Vanesa Cosmetics Pvt. Ltd.",
+  "feed": "denver-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/denver/logo-a2e6f6b8.png",
+  "themeColor": "#C9A35A",
+  "themeColorSecondary": "#111111",
+  "namePrefix": "Denver ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Hamilton\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Caliber\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Honour\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Imperial\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Pride\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Prestige\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Black\\ Code\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Sporting\\ Club\\ Goal\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Sporting\\ Club\\ Rider\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Sporting\\ Club\\ Victor\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Black\\ Code\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Imperial\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Caliber\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Esteem\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Honour\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Hamilton\\ Pride\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Sporting\\ Club\\ Rider\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Polo\\ Club\\ League\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Black\\ Code\\ Cologne\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Detox\\ Body\\ Spa\\ Soap\\ with\\ Activated\\ Charcoal$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Detox\\ Body\\ Wash\\ with\\ Activated\\ Charcoal$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Acne\\ Clear\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Natural\\ Beard\\ Oil\\ with\\ Thyme\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Shine\\ Beer\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    }
+  ]
+}
