@@ -1,0 +1,185 @@
+{
+  "brand": "Pantene (P&G)",
+  "manufacturer": "Procter & Gamble Home Products Pvt. Ltd.",
+  "feed": "pantene-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pantene/logo-00d84733.png",
+  "themeColor": "#0A2D6E",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Pantene ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Pantene Advanced Hairfall Solution Shampoo": "Advanced Hairfall Control Shampoo",
+    "Pantene Advanced Hairfall Solution Conditioner": "Advanced Hairfall Control Conditioner"
+  },
+  "rules": [
+    {
+      "match": "^Advanced\\ Hairfall\\ Control\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Silky\\ Smooth\\ Care\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Lively\\ Clean\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Long\\ Black\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Total\\ Damage\\ Care\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Science\\ Deep\\ Repair\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Science\\ Healthy\\ Shine\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Science\\ Luscious\\ Thick\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^2\\ in\\ 1\\ Silky\\ Smooth\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Strong\\ \\&\\ Flexible\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Strong\\ \\&\\ Flexible\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Hairfall\\ Control\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Silky\\ Smooth\\ Care\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Total\\ Damage\\ Care\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Miracle\\ Rescue\\ Biotin\\ Strength\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Miracle\\ Rescue\\ Collagen\\ Repair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Miracle\\ Rescue\\ Bond\\ Repair\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Miracle\\ Rescue\\ Bond\\ Repair\\ Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Oil\\ Replacement$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^2\\ in\\ 1\\ Hairfall\\ Control\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    }
+  ]
+}
