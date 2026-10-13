@@ -1,0 +1,30 @@
+{
+  "brand": "French's",
+  "manufacturer": "McCormick & Company",
+  "feed": "frenchs-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/frenchs/logo-6f6017bd.png",
+  "themeColor": "#D52B1E",
+  "themeColorSecondary": "#FFC72C",
+  "namePrefix": "French's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Classic\\ Yellow\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Brown\\ Mustard$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    }
+  ]
+}

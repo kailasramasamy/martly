@@ -1,0 +1,124 @@
+[
+ {
+  "title": "Classic Yellow Mustard",
+  "handle": "classic-yellow-mustard",
+  "vendor": "French's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "226g",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979_5-frenchs-classic-yellow-mustard-sauce.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979_5-frenchs-classic-yellow-mustard-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979-2_4-frenchs-classic-yellow-mustard-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979-3_3-frenchs-classic-yellow-mustard-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979-4_3-frenchs-classic-yellow-mustard-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979-5_3-frenchs-classic-yellow-mustard-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979-6_1-frenchs-classic-yellow-mustard-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979-7_1-frenchs-classic-yellow-mustard-sauce.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40001979-8_1-frenchs-classic-yellow-mustard-sauce.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Classic Yellow Mustard is America's favourite, made from A1 grade mustard seeds for a smooth texture and tangy taste. With zero fat and calories, and no artificial flavours, it's a guilt-free addition to any meal. Perfect as a tangy dip for snacks or a condiment for sandwiches and burgers, its versatile flavour enhances everything from hot dogs to salad dressings. Enjoy the classic taste and quality of this mustard, bringing a tangy zest to your favourite dishes.",
+   "ingredients": "Distilled Vinegar, Number 1 Grade Mustard Seed, Water, Salt, Spices, Turmeric & Natural Flavours",
+   "manufacturerName": "The French's Food Company LLC",
+   "fssaiLicense": "10017022006870",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Spicy Brown Mustard",
+  "handle": "spicy-brown-mustard",
+  "vendor": "French's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340g",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788_3-frenchs-spicy-brown-mustard.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788_3-frenchs-spicy-brown-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788-2_2-frenchs-spicy-brown-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788-3_2-frenchs-spicy-brown-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788-4_2-frenchs-spicy-brown-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788-5_2-frenchs-spicy-brown-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788-6_2-frenchs-spicy-brown-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788-7_2-frenchs-spicy-brown-mustard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40326788-8_2-frenchs-spicy-brown-mustard.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "World's #1 mustard brand -- bold, coarse & sharp -- a robust mustard with a satisfying kick for deli sandwiches & sausages.\nSpicy Brown Mustard, America's best-loved mustard, boasts a smooth texture and a bold, spicy taste. Crafted without artificial flavours, this mustard is a versatile addition to your culinary repertoire. Use it as a dip to add a zesty kick to snacks, or incorporate it into stuffing for a flavourful twist. Its robust flavour enhances sandwiches, meats, and more, making it an essential condiment for those who appreciate quality and taste in every bite.",
+   "ingredients": "Distilled Vinegar, Number 1 Grade Mustard Seed, Water, Salt, Spices, Turmeric and Natural Flavours",
+   "nutritionalInfo": {
+    "Energy": "5 kcal",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "80 mg",
+    "Carbohydrate": "0 g",
+    "Dietary Fibre": "0 g",
+    "Total Sugar": "0 g",
+    "Added Sugar": "0 g",
+    "Protein": "0 g",
+    "Vitamin D": "0% DV",
+    "Calcium": "0% DV",
+    "Iron": "10% DV",
+    "Potassium": "0% DV"
+   },
+   "storageInstructions": "Store in a cool, dry place.",
+   "manufacturerName": "The French's Food Company LLC",
+   "fssaiLicense": "10017022006870",
+   "countryOfOrigin": "USA"
+  }
+ }
+]
