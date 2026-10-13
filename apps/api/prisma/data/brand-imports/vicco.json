@@ -1,0 +1,118 @@
+{
+  "brand": "Vicco",
+  "manufacturer": "Vicco Laboratories",
+  "feed": "vicco-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/vicco/logo-306bcc99.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#F2A900",
+  "namePrefix": "Vicco ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Vajradanti\\ Ayurvedic\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Vajradanti\\ Saunf\\ Ayurvedic\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Vajradanti\\ Sugar\\ Free\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Vajradanti\\ Ayurvedic\\ Tooth\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Ayurvedic\\ Skin\\ Cream\\ with\\ Sandalwood\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Aloe\\ Vera\\ Skin\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ WSO\\ Skin\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Antiseptic\\ Cream\\ in\\ Shaving\\ Cream\\ Base$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Face\\ Wash\\ for\\ Oily\\ Skin$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Face\\ Wash\\ for\\ Dry\\ Skin$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Sandal\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Glycerin\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    }
+  ]
+}
