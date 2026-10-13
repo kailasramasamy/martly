@@ -1,0 +1,182 @@
+{
+  "brand": "CamPure (Mangalam Organics)",
+  "manufacturer": "Mangalam Organics Ltd.",
+  "feed": "campure-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/campure/logo-00979f58.png",
+  "themeColor": "#0C7BC0",
+  "themeColorSecondary": "#8CC63F",
+  "namePrefix": "CamPure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Classic\\ Camphor\\ Cone\\ Air\\ Freshener\\ \\-\\ Original$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Classic\\ Camphor\\ Cone\\ Air\\ Freshener\\ \\-\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Classic\\ Camphor\\ Cone\\ Air\\ Freshener\\ \\-\\ Bhimseni$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Classic\\ Camphor\\ Cone\\ Air\\ Freshener\\ \\-\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Classic\\ Camphor\\ Cone\\ Air\\ Freshener\\ \\-\\ Sandalwood$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Classic\\ Camphor\\ Cone\\ Air\\ Freshener\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Cone\\ Air\\ Freshener\\ \\-\\ Mogra$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Giant\\ Camphor\\ Cone$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Insta\\ Camphor\\ Air\\ Freshener\\ \\-\\ Original$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Insta\\ Camphor\\ Air\\ Freshener\\ \\-\\ Bhimseni$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Sticks$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Sticks\\ Mini$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Air\\ Freshener\\ Spray\\ \\-\\ Original$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Air\\ Freshener\\ Spray\\ \\-\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Air\\ Freshener\\ Spray\\ \\-\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Air\\ Freshener\\ Spray\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Dash\\ Car\\ Freshener\\ \\-\\ Original\\ Camphor$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Dash\\ Car\\ Freshener\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Power\\ Mosquito\\ Repellent\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Original\\ Camphor\\ Surface\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    }
+  ]
+}
