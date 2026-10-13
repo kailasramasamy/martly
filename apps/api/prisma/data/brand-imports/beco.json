@@ -1,0 +1,374 @@
+{
+  "brand": "Beco",
+  "manufacturer": "Beco",
+  "feed": "beco-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/beco/logo-2fe18788.png",
+  "themeColor": "#39E52B",
+  "themeColorSecondary": "#0B0B0B",
+  "namePrefix": "Beco ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bamboo\\ Facial\\ Tissues\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Unbleached\\ Bamboo\\ Facial\\ Tissues\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Moisturising\\ Bamboo\\ Tissues\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Pocket\\ Tissues\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Serving\\ Napkins\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Unbleached\\ Cocktail\\ Napkins\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Kitchen\\ Tissue\\ Rolls\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Kitchen\\ Towel\\ Roll$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Toilet\\ Tissue\\ Rolls\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Toilet\\ Tissue\\ Rolls\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Biofriendly\\ Garbage\\ Bags\\ \\-\\ Small$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Biofriendly\\ Garbage\\ Bags\\ \\-\\ Medium$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Biofriendly\\ Garbage\\ Bags\\ \\-\\ Large$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Biofriendly\\ Garbage\\ Bags\\ \\-\\ XL$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Compostable\\ Garbage\\ Bags\\ \\-\\ Small$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Compostable\\ Garbage\\ Bags\\ \\-\\ Medium$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Compostable\\ Garbage\\ Bags\\ \\-\\ Large$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Compostable\\ Garbage\\ Bags\\ \\-\\ XL$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Baking\\ \\&\\ Food\\ Wrapping\\ Paper\\ \\-\\ 10\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Baking\\ \\&\\ Food\\ Wrapping\\ Paper\\ \\-\\ 20\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Natural\\ Dishwash\\ Gel$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Natural\\ Dishwash\\ Liquid\\ \\-\\ Orange$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Natural\\ Floor\\ Cleaner\\ \\-\\ Lemongrass\\ \\&\\ Basil$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Floor\\ Cleaner\\ \\-\\ Eucalyptus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Floor\\ Cleaner\\ Sheets$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Max\\ Glass\\ \\&\\ Multisurface\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Glass Cleaner"
+      ]
+    },
+    {
+      "match": "^Max\\ Kitchen\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Max\\ Multisurface\\ Magic\\ Cleaner\\ \\-\\ Charcoal\\ Power$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Max\\ Tap\\ \\&\\ Shower\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Mould\\ \\&\\ Fungus\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Natural\\ Front\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Natural\\ Top\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Front\\ Load\\ Natural\\ Laundry\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Top\\ Load\\ Natural\\ Laundry\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^PowerUp\\ Natural\\ Laundry\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Laundry\\ Detergent\\ Sheets$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Natural\\ Fabric\\ Conditioner\\ \\-\\ Tranquil\\ Forest$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Soften\\ Up\\ Natural\\ Fabric\\ Conditioner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Fabric\\ Softener\\ Dryer\\ Sheets$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Plant\\-Based\\ Colour\\ Catcher\\ Sheets$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Swipe\\ To\\ Wipe\\ Stain\\ Remover$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Natural\\ Foaming\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Moisturising\\ Liquid\\ Handwash\\ \\-\\ Mahogany\\ Teakwood$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Moisturising\\ Liquid\\ Handwash\\ \\-\\ Moringa$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    }
+  ]
+}
