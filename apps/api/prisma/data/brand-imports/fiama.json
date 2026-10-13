@@ -1,0 +1,280 @@
+{
+  "brand": "Fiama (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "fiama-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/fiama/logo-27e82abc.png",
+  "themeColor": "#0B4A2E",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "Fiama ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Fiama Shower Gel Peach & Avocado": "Peach & Avocado Shower Gel"
+  },
+  "rules": [
+    {
+      "match": "^Blackcurrant\\ \\&\\ Bearberry\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cooling\\ Menthol\\ \\&\\ Magnolia\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Golden\\ Sandalwood\\ Oil\\ \\&\\ Patchouli\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Japanese\\ Hokkaido\\ Milk\\ \\&\\ Acai\\ Berry\\ Moisturizing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Japanese\\ Hokkaido\\ Milk\\ \\&\\ Blueberry\\ Moisturizing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Japanese\\ Hokkaido\\ Milk\\ \\&\\ Goji\\ Berry\\ Moisturizing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lemongrass\\ \\&\\ Jojoba\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Patchouli\\ \\&\\ Macadamia\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Peach\\ \\&\\ Avocado\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Seaweed\\ \\&\\ Lemongrass\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Men\\ Refreshing\\ Pulse\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Men\\ Deep\\ Clean\\ Charcoal\\ \\&\\ Grapefruit\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Men\\ Energising\\ Sport\\ Gel\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Blackcurrant\\ \\&\\ Bearberry\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Blackcurrant\\ \\&\\ Bearberry\\ Radiant\\ Glow\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Cooling\\ Menthol\\ \\&\\ Magnolia\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Happy\\ Naturals\\ Plum\\ Blossom\\ \\&\\ Ylang\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Happy\\ Naturals\\ Yuzu\\ \\&\\ Bergamot\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Lemongrass\\ \\&\\ Jojoba\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Patchouli\\ \\&\\ Macadamia\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Peach\\ \\&\\ Avocado\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Scents\\ Juniper\\ \\&\\ Geranium\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Men\\ Cool\\ Burst\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Men\\ Refreshing\\ Pulse\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Men\\ Deep\\ Clean\\ Charcoal\\ \\&\\ Grapefruit\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Exfoliate\\ To\\ De\\-Tan\\ Niacinamide\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Papain\\ Body\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Peppermint\\ \\&\\ Green\\ Apple\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Happy\\ Grapefruit\\ \\&\\ Bergamot\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Relax\\ Lavender\\ \\&\\ Ylang\\ Ylang\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Happy\\ Naturals\\ Lavender\\ \\&\\ Tangerine\\ Perfume\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Happy\\ Naturals\\ Plum\\ Blossom\\ \\&\\ Ylang\\ Perfume\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Happy\\ Naturals\\ Yuzu\\ \\&\\ Bergamot\\ Perfume\\ Mist$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    }
+  ]
+}
