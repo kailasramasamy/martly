@@ -1,0 +1,182 @@
+{
+  "brand": "The Old Natural",
+  "manufacturer": "The Old Natural",
+  "feed": "the-old-natural-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/the-old-natural/logo-64899411.png",
+  "themeColor": "#2B2B2B",
+  "themeColorSecondary": "#7A9A3A",
+  "namePrefix": "The Old Natural ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Snif\\ Room\\ Freshener\\ Spray\\ \\-\\ Bloom\\ Burst$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Snif\\ Room\\ Freshener\\ Spray\\ \\-\\ Green\\ Pulse$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Snif\\ Hanging\\ Car\\ Freshener\\ \\-\\ Breezy\\ Blue$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Snif\\ Hanging\\ Car\\ Freshener\\ \\-\\ Citrus\\ Fantasy$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Snif\\ Hanging\\ Car\\ Freshener\\ \\-\\ Rose\\ Aura$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Snif\\ Hanging\\ Pod\\ Car\\ Perfume\\ \\-\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Snif\\ Hanging\\ Pod\\ Car\\ Perfume\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Snif\\ Hanging\\ Pod\\ Car\\ Perfume\\ \\-\\ Sandal$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Snif\\ Hanging\\ Pod\\ Car\\ Perfume\\ \\-\\ Lemongrass$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Snif\\ Car\\ Vent\\ Perfume\\ \\-\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Snif\\ Car\\ Vent\\ Perfume\\ \\-\\ Sandal$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Amla\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Henna\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Multani\\ Mitti\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Organic\\ Moringa\\ Leaf\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Gond\\ Katira$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Anti\\-Stress\\ Roll\\ On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Quick\\ Sleep\\ Roll\\ On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Happy\\ Tummy\\ Roll\\ On\\ for\\ Kids$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Migraway\\ Roll\\ On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Orthoil\\ Roll\\ On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    }
+  ]
+}
