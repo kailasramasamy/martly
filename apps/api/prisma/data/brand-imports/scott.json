@@ -1,0 +1,80 @@
+{
+  "brand": "Scott (Kimberly-Clark)",
+  "manufacturer": "Kimberly-Clark India Pvt. Ltd.",
+  "feed": "scott-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/scott/logo-0d7e58a8.png",
+  "themeColor": "#1F6FD1",
+  "themeColorSecondary": "#E4007C",
+  "namePrefix": "Scott ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Scott Kitchen Paper Towel Roll": "Kitchen Paper Towels - 2 Ply"
+  },
+  "rules": [
+    {
+      "match": "^Facial\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Paper\\ Napkins\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Pop\\ Up\\ Paper\\ Napkins\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Paper\\ Towels\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Essential\\ Bathroom\\ Tissue\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Tissue\\ Rolls\\ \\-\\ 3\\ Ply,\\ 160\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Tissue\\ Rolls\\ \\-\\ 3\\ Ply,\\ 300\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Multipurpose\\ Sponge\\ Wipes$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    }
+  ]
+}
