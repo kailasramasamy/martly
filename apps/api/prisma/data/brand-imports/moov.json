@@ -1,0 +1,72 @@
+{
+  "brand": "Moov (Reckitt)",
+  "manufacturer": "Reckitt Benckiser (India) Pvt. Ltd.",
+  "feed": "moov-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/moov/logo-fd569f77.png",
+  "themeColor": "#5B1F69",
+  "themeColorSecondary": "#E6007E",
+  "namePrefix": "Moov ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Moov Pain Relief Spray": "Pain Relief Spray"
+  },
+  "rules": [
+    {
+      "match": "^Pain\\ Relief\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Pain\\ Relief\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Strong\\ Pain\\ Relief\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Strong\\ Diclofenac\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Cool\\ Therapy\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Cool\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Ortho\\ Knee\\ \\&\\ Joint\\ Pain\\ Relief\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    }
+  ]
+}
