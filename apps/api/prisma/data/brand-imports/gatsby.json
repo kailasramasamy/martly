@@ -1,0 +1,30 @@
+{
+  "brand": "Gatsby (Mandom)",
+  "manufacturer": "Mandom Corporation (India) Pvt. Ltd.",
+  "feed": "gatsby-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/gatsby/logo-1fe9313c.png",
+  "themeColor": "#000000",
+  "themeColorSecondary": "#E60012",
+  "namePrefix": "Gatsby ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Set\\ \\&\\ Keep\\ Hair\\ Spray\\ Extreme\\ Hold$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Set\\ \\&\\ Keep\\ Hair\\ Spray\\ Ultra\\ Hard$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    }
+  ]
+}

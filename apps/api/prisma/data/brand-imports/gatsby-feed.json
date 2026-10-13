@@ -1,0 +1,84 @@
+[
+ {
+  "title": "Set & Keep Hair Spray Extreme Hold",
+  "handle": "set-keep-hair-spray-extreme-hold",
+  "vendor": "Gatsby (Mandom)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "66ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263555_1-gatsby-hair-spray-set-keep-extreme-hold.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100175401_2-gatsby-set-keep-hair-spray-extreme-hold.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40263555_1-gatsby-hair-spray-set-keep-extreme-hold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40263555-2_1-gatsby-hair-spray-set-keep-extreme-hold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40263555-3_1-gatsby-hair-spray-set-keep-extreme-hold.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100175401_2-gatsby-set-keep-hair-spray-extreme-hold.jpg"
+   }
+  ],
+  "details": {
+   "description": "Maximum setting power for an ultimate style? What other than a good hairspray could hold. Fine Mist for stylish and lasting hairstyle, Gatsby Hair Spray Set & Keep Extreme Hold is your perfect catch if you want a fine and long-lasting hairstyle. No visible residue is left on the hair, it is its ultimate property. Arriving grandly with its non-sticky shine effect, design your hair with a texture all according to the latest trend. Its natural and refreshing citrus scent will leave you spellbound.",
+   "usageInstructions": "Sculpt your desired hairstyle with Gatsby Styling Wax.\nShake the hairspray can well before use.\nHold the can at least 15-25 cms away from your hair.\nSpray liberally to hold that hairstyle in place, all day long.\nIt has a shelf life of 3 years. Storage Instructions: Best to be stored in a cool and dry space, away from moisture.",
+   "manufacturerName": "PT Mandom Indonesia Tbk",
+   "countryOfOrigin": "Indonesia"
+  }
+ },
+ {
+  "title": "Set & Keep Hair Spray Ultra Hard",
+  "handle": "set-keep-hair-spray-ultra-hard",
+  "vendor": "Gatsby (Mandom)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "66ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40263554_1-gatsby-hair-spray-set-keep-ultra-hard.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40263554_1-gatsby-hair-spray-set-keep-ultra-hard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40263554-2_1-gatsby-hair-spray-set-keep-ultra-hard.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40263554-3_1-gatsby-hair-spray-set-keep-ultra-hard.jpg"
+   }
+  ],
+  "details": {
+   "description": "Maximum setting power for an ultimate style? What other than a good hairspray could hold? Fine Mist for stylish and lasting hairstyle, Gatsby Hair Spray Set & Keep Ultra Hard is your perfect catch if you want a fine and long-lasting hairstyle. No visible residue is left on the hair, it is its ultimate property. Arriving grandly with its non-sticky shine effect, design your hair with a texture all according to the latest trend. Its natural and refreshing citrus scent will leave you spellbound.",
+   "usageInstructions": "Sculpt your desired hairstyle with Gatsby Styling Wax.\nShake the hairspray can well before use.\nHold the can at least 15-25 cms away from your hair.\nSpray liberally to hold that hairstyle in place, all day long.\n It has a shelf life of 3 years. Storage Instructions: Best to be stored in a cool and dry space, away from moisture.",
+   "manufacturerName": "PT Mandom Indonesia Tbk",
+   "countryOfOrigin": "Indonesia"
+  }
+ }
+]
