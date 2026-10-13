@@ -1,0 +1,166 @@
+{
+  "brand": "Banjara's",
+  "manufacturer": "Vishal Personal Care Pvt. Ltd.",
+  "feed": "banjaras-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/banjaras/logo-e7f43b7b.png",
+  "themeColor": "#1E5B3A",
+  "themeColorSecondary": "#E0218A",
+  "namePrefix": "Banjara's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aloe\\ Vera\\ Skin\\ Moisturising\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Amla\\ Hair\\ Care\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Bhringaraj\\ Hair\\ Care\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Hibiscus\\ Hair\\ Care\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Methi\\ Hair\\ Care\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Shikakai\\ Hair\\ Care\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Black\\ Henna\\ with\\ Aloe\\ Vera\\ Hair\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Natural\\ Henna\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Multani\\ Mitti\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Multani\\ Mitti\\ Face\\ Pack\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Multani\\ Mitti\\ \\&\\ Sandal\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Multani\\ Mitti\\ \\&\\ Sandal\\ Face\\ Pack\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Multani\\ Mitti\\ \\&\\ Orange\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Multani\\ Mitti\\ \\&\\ Papaya\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Orange\\ Peel\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Kasturi\\ Turmeric\\ Skin\\ Care\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Gold\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Papaya\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Premium\\ Rose\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    }
+  ]
+}
