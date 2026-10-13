@@ -1,0 +1,156 @@
+[
+ {
+  "title": "Black Garbage Bags - Small (17x19 in)",
+  "handle": "black-garbage-bags-small-17x19-in",
+  "vendor": "Clean India",
+  "product_type": "",
+  "body_html": "<p>Clean India black garbage bags, 17 x 19 in (43 x 48 cm), 30 bags per roll. Suitable for home, kitchen, toilet and office dustbins.</p>",
+  "variants": [
+   {
+    "title": "30 pcs",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/51QZwDvbxFL._SL1000_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/51QZwDvbxFL._SL1000_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/81caOC0GJ4L._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61cLfgnWsRL._SL1254_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/41i7CjBQdDL._SL1000_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/51GOhpfrb2L._SL1000_.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Navkar Packing",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Black Garbage Bags - Medium (19x21 in)",
+  "handle": "black-garbage-bags-medium-19x21-in",
+  "vendor": "Clean India",
+  "product_type": "",
+  "body_html": "<p>Clean India black garbage bags, 19 x 21 in (48 x 56 cm), 30 bags per roll. Suitable for home, kitchen, toilet and office dustbins.</p>",
+  "variants": [
+   {
+    "title": "30 pcs",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/51CBwxCXVML._SL1000_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/51CBwxCXVML._SL1000_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/81OZEpMc3kL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/41i7CjBQdDL._SL1000_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/51GOhpfrb2L._SL1000_.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Navkar Packing",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Black Garbage Bags - Large (24x32 in)",
+  "handle": "black-garbage-bags-large-24x32-in",
+  "vendor": "Clean India",
+  "product_type": "",
+  "body_html": "<p>Clean India black garbage bags, 24 x 32 in (60 x 81 cm), 15 bags per roll. Suitable for home, kitchen, toilet and office dustbins.</p>",
+  "variants": [
+   {
+    "title": "15 pcs",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/51R3q40D5mL._SL1000_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/51R3q40D5mL._SL1000_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71JXDKgzWsL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/41i7CjBQdDL._SL1000_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/51GOhpfrb2L._SL1000_.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Navkar Packing",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Black Garbage Bags - XL (30x37 in)",
+  "handle": "black-garbage-bags-xl-30x37-in",
+  "vendor": "Clean India",
+  "product_type": "",
+  "body_html": "<p>Clean India black garbage bags, 30 x 37 in (76 x 94 cm), 15 bags per roll. Suitable for home, kitchen, toilet and office dustbins.</p>",
+  "variants": [
+   {
+    "title": "15 pcs",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/61S+QKwo02L._SL1254_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/61S+QKwo02L._SL1254_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71Bf1PMO+vL._SL1254_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61vChlLbDGL._SL1254_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71xyZyfluaL._SL1254_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71LJ29XFcBL._SL1500_.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Navkar Packing",
+   "countryOfOrigin": "India"
+  }
+ }
+]

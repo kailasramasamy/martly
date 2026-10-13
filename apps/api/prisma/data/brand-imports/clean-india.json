@@ -1,0 +1,45 @@
+{
+  "brand": "Clean India",
+  "manufacturer": "Navkar Packing",
+  "feed": "clean-india-feed.json",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#F7C600",
+  "namePrefix": "Clean India ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Black\\ Garbage\\ Bags\\ \\-\\ Small\\ \\(17x19\\ in\\)$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Black\\ Garbage\\ Bags\\ \\-\\ Medium\\ \\(19x21\\ in\\)$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Black\\ Garbage\\ Bags\\ \\-\\ Large\\ \\(24x32\\ in\\)$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Black\\ Garbage\\ Bags\\ \\-\\ XL\\ \\(30x37\\ in\\)$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    }
+  ]
+}
