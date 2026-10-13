@@ -1,0 +1,70 @@
+{
+  "brand": "Clinic Plus (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "clinic-plus-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/clinic-plus/logo-048a958b.png",
+  "themeColor": "#E4007C",
+  "themeColorSecondary": "#1B3F94",
+  "namePrefix": "Clinic Plus ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Strong\\ \\&\\ Long\\ Health\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Strong\\ Scalp\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Naturally\\ Long\\ Shikakai\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naturally\\ Strong\\ Health\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Strength\\ \\&\\ Shine\\ Egg\\ Protein\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Strong\\ \\&\\ Extra\\ Thick\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Non\\-Sticky\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    }
+  ]
+}
