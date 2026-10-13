@@ -1,0 +1,176 @@
+{
+  "brand": "Dr. Beckmann",
+  "manufacturer": "Delta Pronatura (Dr. Beckmann)",
+  "feed": "dr-beckmann-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dr-beckmann/logo-d9b187b0.png",
+  "themeColor": "#1E4FA0",
+  "themeColorSecondary": "#00A99D",
+  "namePrefix": "Dr. Beckmann ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Dr. Beckmann Stain Devils - Grease & Cooking": "Expert Stain Remover - Fat & Sauces"
+  },
+  "rules": [
+    {
+      "match": "^Carpet\\ Stain\\ Remover$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Colour\\ \\&\\ Dirt\\ Collector\\ Sheets$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Expert\\ Stain\\ Remover\\ \\-\\ Fat\\ \\&\\ Sauces$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Fridge\\ \\&\\ Microwave\\ Hygiene\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Glowhite$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Glowhite\\ Ultra$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Granite\\ \\&\\ Marble\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Limescale\\ Remover$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Oven\\ Cleaner\\ Active\\ Gel$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Power\\ Grease\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Spray\\ Starch$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Stain\\ Devils\\ Pre\\-Wash\\ Stain\\ Remover$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Stain\\ Devils\\ \\-\\ Pen\\ \\&\\ Ink$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Stain\\ Pen$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Stain\\ Roller$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Stainless\\ Steel\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Upholstery\\ Stain\\ Remover$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Washing\\ Machine\\ Care\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Washing\\ Machine\\ Express\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Washing\\ Machine\\ Intensive\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    }
+  ]
+}
