@@ -1,0 +1,478 @@
+{
+  "brand": "Engage (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "engage-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/engage/logo-8b01c039.png",
+  "themeColor": "#1E5AA8",
+  "themeColorSecondary": "#000000",
+  "namePrefix": "Engage ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Amber\\ Fresh\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Blast\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Hydra\\ Soft\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Glow\\ Deodorant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Amber\\ Hues\\ Eau\\ De\\ Parfum\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Indigo\\ Skies\\ Eau\\ De\\ Parfum\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Fantasia\\ Eau\\ De\\ Parfum\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^One\\ Soul\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Verona\\ Eau\\ De\\ Parfum\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Mate\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Rush\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Urge\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Blush\\ Deodorant\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Spell\\ Deodorant\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Tease\\ Deodorant\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Intrigue\\ Deodorant\\ Spray\\ for\\ Her$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Intrigue\\ Deodorant\\ Spray\\ for\\ Him$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Spirit\\ Deodorant\\ Spray\\ for\\ Her$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Spirit\\ Deodorant\\ Spray\\ for\\ Him$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Nudge\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Bodylicious\\ Tickle\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Zest\\ Deodorant\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Spice\\ Mystique\\ Deodorant\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Floral\\ Zest\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Garden\\ Mystique\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Man\\ Frost\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Woman\\ Drizzle\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Brazilian\\ Maracuja\\ Cognac\\ Perfume\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Brazilian\\ Maracuja\\ Wine\\ Perfume\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Homme\\ Eau\\ De\\ Parfum\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Yin\\ Eau\\ De\\ Parfum\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Femme\\ Eau\\ De\\ Parfum\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Yang\\ Eau\\ De\\ Parfum\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^G1\\ Cologne\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^G2\\ Cologne\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^XX1\\ Cologne\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^XX2\\ Cologne\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^XX3\\ Cologne\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^L'Amante\\ Absolute\\ Eau\\ De\\ Parfum\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^L'Amante\\ Aqua\\ Eau\\ De\\ Parfum\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^L'Amante\\ Intensity\\ Eau\\ De\\ Parfum\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^L'Amante\\ Sunkissed\\ Eau\\ De\\ Parfum\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^M1\\ Perfume\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^M2\\ Perfume\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^M3\\ Perfume\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^M4\\ Perfume\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^W1\\ Perfume\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^W2\\ Perfume\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^W3\\ Perfume\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^W4\\ Perfume\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^W5\\ Perfume\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^W6\\ Perfume\\ Spray\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^ON\\ Classic\\ Woody\\ Pocket\\ Perfume\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^ON\\ Cool\\ Marine\\ Pocket\\ Perfume\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^ON\\ Cool\\ Aqua\\ Pocket\\ Perfume\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^ON\\ Floral\\ Fresh\\ Pocket\\ Perfume\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^ON\\+\\ Forest\\ Flip\\ Pocket\\ Perfume\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^ON\\ Sweet\\ Blossom\\ Pocket\\ Perfume\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    }
+  ]
+}
