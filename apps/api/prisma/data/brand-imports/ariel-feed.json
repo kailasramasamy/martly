@@ -1,0 +1,948 @@
+[
+ {
+  "title": "Complete Detergent Powder",
+  "handle": "complete-detergent-powder",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700g",
+    "price": "154",
+    "compare_at_price": "154",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267698_22-ariel-complete-detergent-washing-powder.jpg"
+    }
+   },
+   {
+    "title": "1.5kg",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/267710_27-ariel-complete-detergent-washing-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267698_22-ariel-complete-detergent-washing-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267698-2_16-ariel-complete-detergent-washing-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267698-3_16-ariel-complete-detergent-washing-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267698-4_16-ariel-complete-detergent-washing-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267698-5_16-ariel-complete-detergent-washing-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267698-6_12-ariel-complete-detergent-washing-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267698-7_8-ariel-complete-detergent-washing-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/267698-8_1-ariel-complete-detergent-washing-powder.jpg"
+   }
+  ],
+  "details": {
+   "description": "New & Improved Ariel Complete gives your tough stain\nremoval for a bright clean in just 1 wash. Ariel Complete is uniquely designed\nto deliver outstanding results when used in a semi-automatic machine as well as\nwhen used as a hand wash detergent. Ariel Colour Care has New Oxi-stain\nfighters for clothes to stay clean and stain-free wash after wash. It also\nprovides deep down cleaning and long-lasting freshness. Ariel Complete washing\npowder also provides deep down cleaning and long-lasting freshness. In just 1\nscoop for normal loads, and 1.5 scoops for heavy loads, it provides brilliant\nstain removal along with value. Ariel Completes cutting edge technology\nprovides impeccable cleaning for all your clothes, and removes tough stains\nlike juice, chocolate, tomato and butter/ghee along with maintaining the\nbrightness of the clothes. So now, say goodbye to stains and dullness!",
+   "manufacturerName": "Procter & Gamble. Katha",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Colour Care Detergent Powder",
+  "handle": "colour-care-detergent-powder",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700g",
+    "price": "154",
+    "compare_at_price": "154",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003864_6-ariel-detergent-powder-colour-style.jpg"
+    },
+    "barcode": "4987176044594"
+   },
+   {
+    "title": "1.5kg",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003862_10-ariel-colour-detergent-washing-powder.jpg"
+    }
+   },
+   {
+    "title": "3kg",
+    "price": "580",
+    "compare_at_price": "580",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20003863_12-ariel-detergent-powder-colour-style.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003864_6-ariel-detergent-powder-colour-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003864-2_2-ariel-detergent-powder-colour-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003864-3_2-ariel-detergent-powder-colour-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003864-4_2-ariel-detergent-powder-colour-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003864-5_2-ariel-detergent-powder-colour-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003864-6_1-ariel-detergent-powder-colour-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003864-7_1-ariel-detergent-powder-colour-style.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20003862_10-ariel-colour-detergent-washing-powder.jpg"
+   }
+  ],
+  "details": {
+   "description": "The new Ariel Colour Care Detergent Washing Powder gives you tough stain removal in just 1 wash, as well as prevents your coloured clothes from fading. Designed to work in semi-automatic washing machines, Ariel gives brilliant results in both semi-automatic washing machines and hand wash. Ariel dissolves in water completely to remove tough stains like juice, chocolate, tomato and butter/ghee. Ariel's special formulation also protects your coloured clothes by preventing fading. Perfect for all your clothes, Ariel washing powder helps to give you impeccable cleaning and keeps your clothes smelling fresh. Step out into the world with confidence knowing that you have Ariel as your partner in laundry.",
+   "manufacturerName": "Procter & Gamble. Katha",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Perfect Wash Detergent Powder",
+  "handle": "perfect-wash-detergent-powder",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "144",
+    "compare_at_price": "144",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726_3-ariel-perfect-wash-detergent-powder.jpg"
+    }
+   },
+   {
+    "title": "3kg",
+    "price": "415",
+    "compare_at_price": "415",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372119_1-ariel-perfectwash-detergent-powder-tough-stain-removal-in-1-wash.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40331235_3-ariel-perfect-wash-detergent-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726_3-ariel-perfect-wash-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726-2_3-ariel-perfect-wash-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726-3_2-ariel-perfect-wash-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726-4_2-ariel-perfect-wash-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726-5_2-ariel-perfect-wash-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726-6_2-ariel-perfect-wash-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726-7_2-ariel-perfect-wash-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355726-8_2-ariel-perfect-wash-detergent-powder.jpg"
+   }
+  ],
+  "details": {
+   "description": "Ariel Perfect Wash Detergent Powder is designed to tackle even the toughest stains, leaving your clothes fresh, clean, and vibrant. Its advanced formula penetrates deep into fabrics to remove dirt and grime effectively, while being gentle on your garments. Perfect for everyday laundry, it ensures a superior wash with long-lasting freshness and softness.",
+   "manufacturerName": "Procter & Gamble Home Products Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Matic Top Load Detergent Powder",
+  "handle": "matic-top-load-detergent-powder",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097086_10-ariel-washing-detergent-powder-matic-top-load.jpg"
+    },
+    "barcode": "4987176177476"
+   },
+   {
+    "title": "1kg",
+    "price": "309",
+    "compare_at_price": "309",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097082_16-ariel-matic-detergent-washing-powder-top-load.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "615",
+    "compare_at_price": "615",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097084_16-ariel-detergent-washing-powder-matic-top-load.jpg"
+    }
+   },
+   {
+    "title": "3kg",
+    "price": "670",
+    "compare_at_price": "670",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199098_1-ariel-detergent-combo-matic-top-load-washing-powder.jpg"
+    }
+   },
+   {
+    "title": "4kg",
+    "price": "855",
+    "compare_at_price": "855",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40125914_5-ariel-detergent-washing-powder-matic-top-load-with-rs130-off.jpg"
+    }
+   },
+   {
+    "title": "8kg",
+    "price": "1699",
+    "compare_at_price": "1699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244019_8-ariel-matic-top-load-detergent-powder-removes-tough-stains-provides-long-lasting-fragrance.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097086_10-ariel-washing-detergent-powder-matic-top-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097086-2_9-ariel-washing-detergent-powder-matic-top-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097086-3_3-ariel-washing-detergent-powder-matic-top-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097086-4_3-ariel-washing-detergent-powder-matic-top-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097086-5_3-ariel-washing-detergent-powder-matic-top-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097086-6_3-ariel-washing-detergent-powder-matic-top-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097086-7_3-ariel-washing-detergent-powder-matic-top-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097082_16-ariel-matic-detergent-washing-powder-top-load.jpg"
+   }
+  ],
+  "details": {
+   "description": "Ariel Matic Top Load Detergent Powder is specially designed for top-loading washing machines, offering unparalleled stain-fighting power and deep-down cleaning for full loads. Powered by advanced oxi-stain fighters, it penetrates deep into fabric fibres to tackle even the toughest stains like juice, chocolate, tomato, butter, and ghee. Formulated to provide long-lasting freshness, this detergent powder generates just the right amount of foam to clean effectively without causing damage. Whether you're washing normal or heavy loads, Ariel Matic requires only 1.5 scoops for regular use and 2 scoops for extra-tough stains, delivering exceptional performance and value.",
+   "manufacturerName": "Procter & Gamble. Katha",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Matic Front Load Detergent Powder",
+  "handle": "matic-front-load-detergent-powder",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097085_10-ariel-washing-detergent-powder-matic-front-load.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "315",
+    "compare_at_price": "315",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097081_17-ariel-matic-detergent-washing-powder-front-load.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "685",
+    "compare_at_price": "685",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40097083_15-ariel-detergent-washing-powder-matic-front-load.jpg"
+    }
+   },
+   {
+    "title": "4kg",
+    "price": "970",
+    "compare_at_price": "970",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40125913_6-ariel-detergent-washing-powder-matic-front-load-with-rs130-off.jpg"
+    }
+   },
+   {
+    "title": "8kg",
+    "price": "1899",
+    "compare_at_price": "1899",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40244018_7-ariel-matic-front-load-detergent-powder-removes-tough-stains-provides-long-lasting-fragrance.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097085_10-ariel-washing-detergent-powder-matic-front-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097085-2_8-ariel-washing-detergent-powder-matic-front-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097085-3_8-ariel-washing-detergent-powder-matic-front-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097085-4_3-ariel-washing-detergent-powder-matic-front-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097085-5_3-ariel-washing-detergent-powder-matic-front-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097085-6_3-ariel-washing-detergent-powder-matic-front-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097085-7_3-ariel-washing-detergent-powder-matic-front-load.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40097081_17-ariel-matic-detergent-washing-powder-front-load.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your laundry experience with Ariel Matic, the ultimate stain-fighting solution designed specifically for front-loading washing machines. Formulated with cutting-edge technology, this detergent delivers unparalleled cleaning power, removing even the toughest stains like coffee, ketchup, and gravy in just one wash. Boasting up to 2X more active ingredients compared to ordinary handwash detergents, Ariel Matic provides deep-down cleaning and long-lasting freshness for every load. Recommended by top washing machine brands, this machine-friendly formula ensures improved efficiency for your front-load appliances. Whether you're tackling a normal load or tough stains, simply scoop the appropriate amount and let Ariel Matic work its magic, leaving your clothes looking and feeling refreshed with a delightful fragrance that lingers. Experience the difference with Ariel Matic, the stain-removal champion that brings you India's best cleaning performance in a single wash.",
+   "manufacturerName": "Procter & Gamble. Katha",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Machine Expert Top Load Detergent Powder",
+  "handle": "machine-expert-top-load-detergent-powder",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "3kg",
+    "price": "595",
+    "compare_at_price": "595",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+    }
+   },
+   {
+    "title": "5.8kg",
+    "price": "1149",
+    "compare_at_price": "1149",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369845_2-ariel-machine-expert-top-load-detergent-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847-2_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847-3_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847-4_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847-5_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847-6_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847-7_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369847-8_1-ariel-machine-expert-top-load-detergent-powder.jpg"
+   }
+  ],
+  "details": {
+   "description": "Ariel Machine Expert Detergent Powder is best used suited for fully auto Matic Fully Automatic washing machines\nAriel Machine expert powder removes 100 tough stains in 1 wash inside washing machine\nNew Bright guard Technology in Ariel Machine Expert ensures that clothes remain bright even after multiple washes\nAriel is the no. 1 brand recommended by washing machine manufacturers like LG.\nAriel Machine Expert provides long lasting fragrance and deep-down cleaning to deliver an impeccable clean and laundry experience.",
+   "manufacturerName": "Procter & Gamble Home Products Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Machine Expert Front Load Detergent Powder",
+  "handle": "machine-expert-front-load-detergent-powder",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "3kg",
+    "price": "660",
+    "compare_at_price": "660",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+    }
+   },
+   {
+    "title": "5.8kg",
+    "price": "1249",
+    "compare_at_price": "1249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369846_2-ariel-machine-expert-front-load-detergent-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848-2_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848-3_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848-4_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848-5_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848-6_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848-7_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369848-8_1-ariel-machine-expert-front-load-detergent-powder.jpg"
+   }
+  ],
+  "details": {
+   "description": "Ariel Machine Expert Detergent Powder is best used suited for fully auto Matic Fully Automatic washing machines\nAriel Machine expert powder removes 100 tough stains in 1 wash inside washing machine\nNew Bright guard Technology in Ariel Machine Expert ensures that clothes remain bright even after multiple washes\nAriel is the no. 1 brand recommended by washing machine manufacturers like LG.\nAriel Machine Expert provides long lasting fragrance and deep-down cleaning to deliver an impeccable clean and laundry experience.",
+   "manufacturerName": "Procter & Gamble Home Products Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Matic Top & Front Load Liquid Detergent",
+  "handle": "matic-top-front-load-liquid-detergent",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189425_1-ariel-matic-liquid-detergent.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40151783_5-ariel-matic-liquid-detergent.jpg"
+    }
+   },
+   {
+    "title": "1.5L",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40189424_1-ariel-matic-liquid-detergent.jpg"
+    }
+   },
+   {
+    "title": "2L",
+    "price": "580",
+    "compare_at_price": "580",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211321_1-ariel-matic-front-load-liquid-detergent.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189425_1-ariel-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189425-2_1-ariel-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189425-3_1-ariel-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189425-4_1-ariel-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189425-5_1-ariel-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189425-6_1-ariel-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40189425-7_1-ariel-matic-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151783_5-ariel-matic-liquid-detergent.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Ariel Matic liquid detergent gives tough stain removal in just 1 wash, as well as prevent your coloured clothes from fading. As a liquid detergent, it dissolves easily in water. With Ariel's superior technology, it is hard on stains but soft in colours - giving your coloured clothes the perfect wash solution. Especially formulated for fully automatic washing machines, 1 litre of Ariel Matic liquid detergent washes as much as 1 kg powder, hence delivering excellent usage value.\nAriel cutting-edge technology provides brilliant stain removal for all your clothes, by tackling even tough stains like tea, coffee, chocolate, tomato, etc. The unique cap ensures 0% spillage, to give you a non-messy, truly delightful experience.\nAriel Matic Liquid washing detergent also has a refreshing, long-lasting fragrance that freshens up your loads. Step out into the world with confidence knowing that you have Ariel as your partner in the laundry.",
+   "manufacturerName": "Procter & Gamble Home Products Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Power Gel Top Load & Semi Auto Liquid Detergent",
+  "handle": "power-gel-top-load-semi-auto-liquid-detergent",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369108_1-ariel-power-gel-top-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195407_5-ariel-matic-liquid-top-load.jpg"
+    }
+   },
+   {
+    "title": "900g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324393_7-ariel-top-load-matic-liquid-detergent.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "365",
+    "compare_at_price": "365",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211318_14-ariel-matic-liquid-detergent-top-load.jpg"
+    }
+   },
+   {
+    "title": "3.2kg",
+    "price": "629",
+    "compare_at_price": "629",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40290254_15-ariel-matic-liquid-detergent-top-load.jpg"
+    }
+   },
+   {
+    "title": "4kg",
+    "price": "765",
+    "compare_at_price": "765",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323286_7-ariel-matic-top-load-liquid-detergent.jpg"
+    }
+   },
+   {
+    "title": "6kg",
+    "price": "1029",
+    "compare_at_price": "1029",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326741_15-ariel-matic-top-load-liquid-detergent.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369108_1-ariel-power-gel-top-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369108-2_1-ariel-power-gel-top-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369108-3_1-ariel-power-gel-top-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369108-4_1-ariel-power-gel-top-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369108-5_1-ariel-power-gel-top-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369108-6_1-ariel-power-gel-top-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369108-7_1-ariel-power-gel-top-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195407_5-ariel-matic-liquid-top-load.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience the perfect blend of powerful cleaning and delightful fragrance with Ariel Power Gel Liquid Detergent is specially designed for top load and semi-automatic washing machines. It delivers a powerful clean in just one wash, removes 100 dried stains, and leaves your laundry smelling irresistibly fresh. With a fast-dissolving, residue-free formula and color-protect technology, your clothes come out not just clean — but vibrant and fragrant.",
+   "manufacturerName": "Procter & Gamble Home Products Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Power Gel Front Load Liquid Detergent",
+  "handle": "power-gel-front-load-liquid-detergent",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369107_1-ariel-power-gel-front-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40195408_4-ariel-matic-liquid-front-load.jpg"
+    }
+   },
+   {
+    "title": "900g",
+    "price": "179",
+    "compare_at_price": "179",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324392_2-ariel-front-load-matic-liquid-detergent.jpg"
+    }
+   },
+   {
+    "title": "2kg",
+    "price": "429",
+    "compare_at_price": "429",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211319_14-ariel-matic-liquid-detergent-front-load.jpg"
+    }
+   },
+   {
+    "title": "3.2kg",
+    "price": "685",
+    "compare_at_price": "685",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40290255_16-ariel-matic-liquid-detergent-front-load.jpg"
+    }
+   },
+   {
+    "title": "4kg",
+    "price": "800",
+    "compare_at_price": "800",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323287_7-ariel-matic-front-load-liquid-detergent.jpg"
+    }
+   },
+   {
+    "title": "6kg",
+    "price": "1135",
+    "compare_at_price": "1135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40326742_13-ariel-matic-front-load-liquid-detergent.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369107_1-ariel-power-gel-front-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369107-2_1-ariel-power-gel-front-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369107-3_1-ariel-power-gel-front-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369107-4_1-ariel-power-gel-front-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369107-5_1-ariel-power-gel-front-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369107-6_1-ariel-power-gel-front-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369107-7_1-ariel-power-gel-front-load-liquid-detergent-removes-100-stains-in-1-wash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40195408_4-ariel-matic-liquid-front-load.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience the perfect blend of powerful cleaning and delightful fragrance with Ariel Power Gel Liquid Detergent is specially designed for front load washing machines. It delivers a powerful clean in just one wash, removes 100 dried stains, and leaves your laundry smelling irresistibly fresh. With a fast-dissolving, residue-free formula and color-protect technology, your clothes come out not just clean — but vibrant and fragrant.",
+   "manufacturerName": "Procter & Gamble Home Products Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Power Gel Top Load & Semi Auto Liquid Detergent - Lavender Freshness",
+  "handle": "power-gel-top-load-semi-auto-liquid-detergent-lavender-freshness",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900g",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988_7-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+    }
+   },
+   {
+    "title": "3.6kg",
+    "price": "765",
+    "compare_at_price": "765",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344990_5-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988_7-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988-2_1-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988-3_1-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988-4_1-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988-5_1-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988-6_1-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988-7_1-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344988-8_1-ariel-liquid-detergent-top-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   }
+  ],
+  "details": {
+   "description": "Ariel Power Gel Liquid Detergent is formulated for use in top-load and semi-automatic washing machines. It combines effective cleaning with a pleasant fragrance, helping to remove dried stains and leaving laundry fresh. The fast-dissolving, residue-free formula works with colour-protect technology, ensuring clothes are thoroughly cleaned while maintaining their vibrancy and scent.",
+   "manufacturerName": "Procter & Gamble Home Products Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Power Gel Front Load Liquid Detergent - Lavender Freshness",
+  "handle": "power-gel-front-load-liquid-detergent-lavender-freshness",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989_7-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+    },
+    "barcode": "4987176371829"
+   },
+   {
+    "title": "3.6kg",
+    "price": "855",
+    "compare_at_price": "855",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40344991_6-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989_7-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989-2_1-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989-3_1-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989-4_1-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989-5_1-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989-6_1-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989-7_1-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40344989-8_1-ariel-liquid-detergent-front-load-with-lavender-freshness-fragnance-removes-7-day-dried-in-stains-in-1-wash-inside-washing-machine-protects-colours-dissolves-faster.jpg"
+   }
+  ],
+  "details": {
+   "description": "Revolutionise your laundry routine with Ariel Matic Front Load Liquid Detergent in Lavender Freshness, specially crafted for front load washing machines. Ariel liquid detergent provides tough stain removal in just one wash while infusing your laundry with a soothing lavender scent. Experience the perfect blend of powerful cleaning and refreshing fragrance, making laundry day simple and enjoyable. Ariel Matic Liquid Detergent in Lavender Freshness is your go-to solution for clean, vibrant, and fragrant clothes. Add to cart now to enhance your laundry experience.",
+   "manufacturerName": "Procter & Gamble",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Matic 4 in 1 Pods Laundry Detergent Capsules",
+  "handle": "matic-4-in-1-pods-laundry-detergent-capsules",
+  "vendor": "Ariel (P&G)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "18 pcs",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301_9-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+    }
+   },
+   {
+    "title": "32 pcs",
+    "price": "704",
+    "compare_at_price": "704",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40203302_7-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301_9-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301-2_8-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301-3_8-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301-4_8-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301-5_8-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301-6_8-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301-7_8-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40203301-8_3-ariel-matic-3-in1-pods-liquid-detergent-for-both-front-top-load-washing-machines.jpg"
+   }
+  ],
+  "details": {
+   "description": "Ariel one-dose detergent capsules specially designed for your washing machines.\nAriel PODs ® 4-in-1 Matic Detergent has 4 unique chambers that work to remove stains, freshen clothes, brighten colours and soften fabrics.\nAriel PODs® are specially designed to be used in any fully automatic machine. To use, place the Ariel POD® in the empty drum of the machine. Load the clothes and wash away those tough stains.\nFor a normal load, use 1 Ariel POD®; for a heavy/large load, please use 2 Ariel PODs®.\nAriel PODs® will dissolve on their own in the wash. Please don't cut/ peel for use.\nPODS is a registered trademark of The Procter & Gamble Company.",
+   "manufacturerName": "Procter & Gamble Home Products Private Ltd. at",
+   "countryOfOrigin": "Japan"
+  }
+ }
+]

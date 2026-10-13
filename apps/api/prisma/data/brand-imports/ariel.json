@@ -1,0 +1,120 @@
+{
+  "brand": "Ariel (P&G)",
+  "manufacturer": "Procter & Gamble Home Products Pvt. Ltd.",
+  "feed": "ariel-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ariel/logo-2ae74c5a.png",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#E4002B",
+  "namePrefix": "Ariel ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Ariel Matic Liquid Detergent": "Matic Top & Front Load Liquid Detergent"
+  },
+  "rules": [
+    {
+      "match": "^Complete\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Colour\\ Care\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Wash\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Top\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Front\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Machine\\ Expert\\ Top\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Machine\\ Expert\\ Front\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Top\\ \\&\\ Front\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Power\\ Gel\\ Top\\ Load\\ \\&\\ Semi\\ Auto\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Power\\ Gel\\ Front\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Power\\ Gel\\ Top\\ Load\\ \\&\\ Semi\\ Auto\\ Liquid\\ Detergent\\ \\-\\ Lavender\\ Freshness$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Power\\ Gel\\ Front\\ Load\\ Liquid\\ Detergent\\ \\-\\ Lavender\\ Freshness$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ 4\\ in\\ 1\\ Pods\\ Laundry\\ Detergent\\ Capsules$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    }
+  ]
+}
