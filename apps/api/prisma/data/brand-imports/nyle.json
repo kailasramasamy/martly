@@ -1,0 +1,182 @@
+{
+  "brand": "Nyle",
+  "manufacturer": "CavinKare Pvt. Ltd.",
+  "feed": "nyle-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nyle/logo-ae0ed1d4.png",
+  "themeColor": "#0F8A3C",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Nyle ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Naturals\\ Anti\\ Hairfall\\ Shampoo\\ Coconut\\ \\&\\ Almonds$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Strong\\ \\&\\ Healthy\\ Anti\\ Hairfall\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Anti\\-Dandruff\\ Shampoo\\ Curd\\ \\&\\ Lemon$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Damage\\ Repair\\ Shampoo\\ Papaya\\ \\&\\ Hibiscus$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Dryness\\ Hydration\\ Shampoo\\ Tulsi\\ \\&\\ Amla$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Onion\\ Anti\\-Dandruff\\ Shampoo\\ Methi$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Soft\\ \\&\\ Shiny\\ Shampoo\\ Apple\\ Cider\\ Vinegar\\ \\&\\ Argan\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Volume\\ Enhance\\ Shampoo\\ Reetha\\ \\&\\ Blackberry$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^\\+\\+\\ Chia\\ Seed\\ Gel\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^\\+\\+\\ Serum\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Natural\\ \\&\\ Pure\\ Argan\\ \\&\\ Avocado\\ Oil\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Natural\\ \\&\\ Pure\\ Murumuru\\ Butter\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Natural\\ \\&\\ Pure\\ Tea\\ Tree\\ Anti\\ Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Natural\\ \\&\\ Pure\\ Argan\\ \\&\\ Avocado\\ Oil\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Natural\\ \\&\\ Pure\\ Murumuru\\ Butter\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Natural\\ \\&\\ Pure\\ 1\\ Step\\ Express\\ Hair\\ Spa$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Hydrate\\ \\&\\ Smooth\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Nourish\\ \\&\\ Smooth\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Triple\\ Butter\\ Body\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Triple\\ Exotic\\ Oil\\ Body\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Triple\\ Floral\\ Body\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    }
+  ]
+}
