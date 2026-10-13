@@ -1,0 +1,46 @@
+{
+  "brand": "Mr. White",
+  "manufacturer": "Jyothy Labs Ltd.",
+  "feed": "mr-white-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mr-white/logo-a0522c6d.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#6A1B9A",
+  "namePrefix": "Mr. White ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Detergent\\ Powder\\ 2x\\ Active\\ Power$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Ultimate\\ Whiteness\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    }
+  ]
+}

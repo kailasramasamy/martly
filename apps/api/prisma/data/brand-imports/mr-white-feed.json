@@ -1,0 +1,180 @@
+[
+ {
+  "title": "Detergent Powder",
+  "handle": "detergent-powder",
+  "vendor": "Mr. White",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "48",
+    "compare_at_price": "48",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40031949_4-mr-white-detergent-powder.jpg"
+    },
+    "barcode": "8902102126775"
+   },
+   {
+    "title": "1kg",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/286393_6-mr-white-detergent-powder.jpg"
+    }
+   },
+   {
+    "title": "4kg",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/189221_10-mr-white-detergent-powder-2x-active-power.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "485",
+    "compare_at_price": "485",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/198934_6-mr-white-detergent-powder.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031949_4-mr-white-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031949-2_2-mr-white-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031949-3_1-mr-white-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031949-4_1-mr-white-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031949-5_1-mr-white-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286393_6-mr-white-detergent-powder.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/189221_10-mr-white-detergent-powder-2x-active-power.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/198934_6-mr-white-detergent-powder.jpg"
+   }
+  ],
+  "details": {
+   "description": "Usage: 1 Scoop fro bucket wash. 2 Scoops for machine wash. Suitable for top loading machines. Soad for 30 minutes before washing. For superior results wash in warm water",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Detergent Powder 2x Active Power",
+  "handle": "detergent-powder-2x-active-power",
+  "vendor": "Mr. White",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "7kg",
+    "price": "680",
+    "compare_at_price": "680",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40153275_7-mr-white-detergent-powder-2x-active-power.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40153275_7-mr-white-detergent-powder-2x-active-power.jpg"
+   }
+  ],
+  "details": {
+   "description": "Mr White, with its granulated detergent powder, brings a perfect solution for the greying of clothes. Mr White detergent has whiteness boosters which keep the new look of your clothes intact. Use this detergent to lend a whole new shine to your old boring garments and watch them become as good as new.Remove tough stains easily with and leaves them with a long lasting freshness.",
+   "manufacturerName": "Jyothy labs limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ultimate Whiteness Detergent Powder",
+  "handle": "ultimate-whiteness-detergent-powder",
+  "vendor": "Mr. White",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10kg",
+    "price": "960",
+    "compare_at_price": "960",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262618_3-mr-white-detergent-powder-no-bleach-formula-long-lasting-fragrance-removes-stains-odours.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262618_3-mr-white-detergent-powder-no-bleach-formula-long-lasting-fragrance-removes-stains-odours.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262618-2_1-mr-white-detergent-powder-no-bleach-formula-long-lasting-fragrance-removes-stains-odours.jpg"
+   }
+  ],
+  "details": {
+   "description": "Mr. White Detergent Powder is convenient as it is soluble in water. It helps you clean your clothes easily while giving them a pleasant fragrance. It removes tough stains easily and protects colours. This powder detergent is designed especially for automatic washing. Being a powder detergent, it dissolves quickly in high water level environments of washing machines. This detergent is safe on all fabrics such as wool, cotton, silk blends, etc.",
+   "usageInstructions": "Add 2 scoops of powder for machine wash. Add 1 scoop of powder for hand wash. Soak for 30 minutes. |",
+   "manufacturerName": "Jyothy Labs Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Liquid Detergent",
+  "handle": "liquid-detergent",
+  "vendor": "Mr. White",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2L",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40336853_2-mr-white-liquid-detergent.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336853_2-mr-white-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336853-2_2-mr-white-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336853-3_1-mr-white-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336853-4_1-mr-white-liquid-detergent.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40336853-5_1-mr-white-liquid-detergent.jpg"
+   }
+  ],
+  "details": {
+   "description": "Mr. White Liquid Detergent is formulated with Whiteness Boosters to deliver ultimate whiteness and superior cleaning. Its powerful formula effectively removes dirt, while the refreshing fragrance keeps your clothes fresh for longer. Suitable for both machine wash and hand wash, it's the perfect choice for a brighter, cleaner laundry experience every time.",
+   "usageInstructions": "1. For 1 bucket of clothes, use 1 cap (40 ml).\n2. For 1 full load of clothes, use 2 caps (80 ml).\n3. For 1 full load of clothes, use 1.5 caps (60 ml).",
+   "storageInstructions": "*Keep away from children",
+   "manufacturerName": "JL-Jyothy Labs Limited",
+   "countryOfOrigin": "India"
+  }
+ }
+]
