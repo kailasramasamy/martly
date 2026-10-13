@@ -1,0 +1,38 @@
+{
+  "brand": "Parodontax",
+  "manufacturer": "Haleon India Pvt. Ltd.",
+  "feed": "parodontax-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/parodontax/logo-40da9107.png",
+  "themeColor": "#0B2D6B",
+  "themeColorSecondary": "#E4002B",
+  "namePrefix": "Parodontax ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Advanced\\ Ultra\\ Clean\\ Gum\\ Care\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Daily\\ Fluoride\\ Gum\\ Care\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Expert\\ Gum\\ Care\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    }
+  ]
+}
