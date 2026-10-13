@@ -1,0 +1,102 @@
+{
+  "brand": "Sofy (Unicharm)",
+  "manufacturer": "Unicharm India Pvt. Ltd.",
+  "feed": "sofy-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sofy/logo-ab884a51.png",
+  "themeColor": "#E4007F",
+  "themeColorSecondary": "#1E5BB8",
+  "namePrefix": "Sofy ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Anti\\-Bacteria\\ Sanitary\\ Pads\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacteria\\ Super\\ XL\\+\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Cool\\ Super\\ XL\\+\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacteria\\ Overnight\\ Pads\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacteria\\ Nights\\ Pads\\ Longest\\ XXL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacteria\\ Hygiene\\ \\&\\ Herbs\\ Ultra\\ Slim\\ Pads$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Bodyfit\\ Sanitary\\ Napkins\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Bodyfit\\ Pro\\ Sanitary\\ Napkins\\ XL$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Bodyfit\\ Overnight\\ Pads\\ XXXL\\+$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Sanitary Pads"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacteria\\ Pantyliner$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Panty Liners"
+      ]
+    },
+    {
+      "match": "^Soft\\ Tampons\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Tampons"
+      ]
+    }
+  ]
+}
