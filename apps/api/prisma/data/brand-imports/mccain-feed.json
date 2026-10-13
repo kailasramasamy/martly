@@ -1,0 +1,1907 @@
+[
+ {
+  "title": "French Fries",
+  "handle": "french-fries",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369_11-mccain-french-fries.jpg"
+    }
+   },
+   {
+    "title": "420g",
+    "price": "129",
+    "compare_at_price": "129",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016985_11-mccain-french-fries.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016986_12-mccain-french-fries.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355765_7-mccain-french-fries.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "296",
+    "compare_at_price": "296",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016990_4-mccain-french-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369_11-mccain-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369-2_12-mccain-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369-3_11-mccain-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369-4_11-mccain-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369-5_11-mccain-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369-6_9-mccain-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369-7_9-mccain-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30000369-8_5-mccain-french-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain French Fries 200 g",
+   "ingredients": "Potato (92%), Palmolein Oil, May contain Wheat, Milk and Soy",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "141.9",
+    "Protein (g)": "3.06",
+    "Carbohydrate (g)": "24.45",
+    "Total Sugars (g)": "< 0.5",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "3.54",
+    "Saturated Fat (g)": "Not more than 1.72",
+    "Trans Fat (g)": "Not more than < 0.1",
+    "Sodium (mg)": "2948"
+   },
+   "manufacturerName": "McCain Foods India PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Air Fryer French Fries",
+  "handle": "air-fryer-french-fries",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "420g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044_3-mccain-air-fryer-french-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044_3-mccain-air-fryer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044-2_3-mccain-air-fryer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044-3_3-mccain-air-fryer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044-4_3-mccain-air-fryer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044-5_3-mccain-air-fryer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044-6_3-mccain-air-fryer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044-7_2-mccain-air-fryer-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40341044-8_2-mccain-air-fryer-french-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy crispy and delicious French fries with McCain Air Fryer French fries, specially designed for air frying using McCain's trademark technology. Made to deliver the perfect golden crunch with minimal oil, these fries are light, tasty, and guilt-free. Easy to prepare and perfect for any occasion, indulge in a crispy snack every time.",
+   "ingredients": "Potato, Batter (Thickener [INS 1412], Rice Flour, Firming Agent [Dextrin], Pea Fibre, Raising Agent [INS 450(i), INS 500 (ii)], Stabiliser [INS 415], Pea Protein), Palmolein Oil, Iodised Salt",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy (kcal)": "149",
+    "Protein (g)": "2.66",
+    "Carbohydrate (g)": "24.87",
+    "Total Sugars (g)": "<0.5",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "4.33",
+    "Saturated Fat (g)": "Not more than 2.03",
+    "Trans Fat (g)": "Not more than 0.1",
+    "Sodium (mg)": "202.44"
+   },
+   "storageInstructions": "*Keep frozen at -18°c or below",
+   "manufacturerName": "McCain Foods Pvt. Ltd",
+   "fssaiLicense": "10013011001570"
+  }
+ },
+ {
+  "title": "Masala Fries - Hot & Spicy",
+  "handle": "masala-fries-hot-spicy",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "420g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988_12-mccain-masala-fries.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "318",
+    "compare_at_price": "318",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362673_3-mccain-masala-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988_12-mccain-masala-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988-2_12-mccain-masala-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988-3_11-mccain-masala-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988-4_11-mccain-masala-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988-5_11-mccain-masala-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988-6_6-mccain-masala-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988-7_6-mccain-masala-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016988-8_6-mccain-masala-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Masala Fries are made with a combination of six authentic Indian spices, with a twist of a hot and spicy seasoning, ensuring that you cannot say no to this wonderful snack!\nFry or Bake\nStore in Freezer\nCook without thawing\nNo added preservatives",
+   "ingredients": "Potato (88%), Batter [Refined Wheat Flour (Maida), Spices & Condiments (1.2%) (Garlic Powder, Red Chilli (0.8%), Onion Powder, White Pepper, Black Pepper, Fenugreek)], Maize Starch, Iodized Salt, Thickener (INS 1422, INS 412), Parsley, Natural Flavours & Nature Identical Flavouring Substances, Palmolein Oil, Contains Wheat, May Contain Milk & Soy",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy (kcal)": "149",
+    "Protein (g)": "2.95",
+    "Carbohydrate (g)": "22.09",
+    "Total Sugars (g)": "< 0.5",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "5.44",
+    "Saturated Fat (g)": "Not more than 2.57",
+    "Trans Fat (g)": "Not more than < 0.1*",
+    "Sodium (mg)": "379"
+   },
+   "manufacturerName": "McCain Foods India PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Masala Fries - Pepper Crunch",
+  "handle": "masala-fries-pepper-crunch",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "420g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442_5-mccain-french-fries-pepper-crunch.jpg"
+    },
+    "barcode": "8906000612262"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442_5-mccain-french-fries-pepper-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442-2_5-mccain-french-fries-pepper-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442-3_5-mccain-french-fries-pepper-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442-4_5-mccain-french-fries-pepper-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442-5_5-mccain-french-fries-pepper-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442-6_5-mccain-french-fries-pepper-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442-7_4-mccain-french-fries-pepper-crunch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40297442-8_4-mccain-french-fries-pepper-crunch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate snacking experience with McCain French Fries Pepper Crunch. These restaurant-style fries are crafted to perfection, offering a delightful balance of crispy texture and fluffy interior. Seasoned with a unique and mild spice blend, these fries deliver a mouthwatering flavour that will satisfy your cravings. Enjoy the convenience of making crispy, yummy fries at home in no time.\nWith their thinner cut, these fries offer an even crunchier bite, thanks to the increased batter pick-up. Whether as a side dish or a standalone snack, McCain French Fries Pepper Crunch are sure to elevate your dining experience with their spicy, flavourful goodness.",
+   "ingredients": "Potato (85%), Batter (Refined Wheat flour (Maida), Iodised Salt, Maize Starch, Spices and Condiments, Palmolein Oil, Thickeners [INS 1422, INS 412], Natural Flavouring Substance)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "90g",
+    "Energy (kcal)": "168.23",
+    "Protein (g)": "3.1",
+    "Carbohydrate (g)": "27.64",
+    "Total Sugars (g)": "<0.5",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "5.03",
+    "Saturated Fat (g)": "Not more than 9.5",
+    "Trans Fat (g)": "Not more than 0.1",
+    "Sodium (mg)": "444.33"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight and heat\n*Keep the package sealed when not in use",
+   "manufacturerName": "McCain Foods India Pvt Ltd",
+   "fssaiLicense": "10013011001570",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "American Style Zig Zag Fries - Herb & Garlic",
+  "handle": "american-style-zig-zag-fries-herb-garlic",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420_6-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420_6-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420-2_8-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420-3_8-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420-4_8-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420-5_7-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420-6_7-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420-7_7-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128420-8_3-mccain-crazy-fries-masala-mix-herb-n-garlic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your snacking experience with McCain Herb and Garlic Crazy Fries Masala Mix. This delightful product transforms your regular fries into a flavourful delight, thanks to the unique masala mix infused with the perfect blend of herbs and garlic. Whether you're hosting a casual get-together or simply craving a tasty snack, this masala mix adds an extra kick to your fries, making every bite a culinary adventure.\nStored in the freezer and cooked without thawing, these fries are a convenient and easy-to-make option. Sprinkle the lip-smacking masala mix over the deep-fried fries to enjoy a burst of flavour that will leave you craving more. Indulge in this flavourful snack and elevate your taste buds with McCain Crazy Fries with Herb 'n' Garlic Masala Mix.",
+   "ingredients": "Zig Zag Fries : Potato (92%), Palmolein Oil, May Contain Wheat, Milk & Soy, Herb & Garlic Flavour Maker : Iodized Salt, Sugar, Dehydrated Garlic (15%), Milk Solids, Onion Powder (8%), Mixed Spices (Chilli (3%), Black Pepper (1.5%), Bell Pepper, Cheese Powder, Mixed Herbs (3%) (Oregano, Thyme, Parsley, Basil), Acidity Regulator (INS 330), Natural & Nature Identical Flavoring Substances, Anticaking Agent (INS 551), Contains Milk, May Contain Wheat, Oats, Nut & Soy",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "90 g",
+    "Energy (kcal)": "154.46",
+    "Protein (g)": "5.82",
+    "Carbohydrate (g)": "21.89",
+    "Total Sugars (g)": "1.52",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "4.36",
+    "Saturated Fat (g)": "Not more than 2.03",
+    "Trans Fat (g)": "Not more than 0.1**",
+    "Sodium (mg)": "436.42",
+    "RDA": "Per Serve % contribution to RDA^"
+   },
+   "storageInstructions": "Keep Frozen at -18°C or below.",
+   "manufacturerName": "McCain foods (india) pvt ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mexican Style Zig Zag Fries - Hot & Tangy",
+  "handle": "mexican-style-zig-zag-fries-hot-tangy",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421_8-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+    },
+    "barcode": "8906000610176"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421_8-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421-2_9-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421-3_9-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421-4_9-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421-5_8-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421-6_8-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421-7_8-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40128421-8_4-mccain-crazy-fries-masala-mix-hot-n-tangy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your snacking experience with McCain Crazy Fries with Hot 'n' Tangy Masala Mix. This delectable offering transforms your regular fries into a flavourful delight, thanks to the unique masala mix infused with the perfect blend of herbs and garlic. Whether you're hosting a casual get-together or simply craving a tasty treat, this masala mix adds an extra kick to your fries, making every bite a culinary adventure.\nThe fries can be stored in the freezer and cooked without thawing, making them a convenient and easy-to-prepare snack. Indulge in the lip-smacking flavours and enjoy the perfect balance of spice and tanginess that will leave you craving more.",
+   "ingredients": "Zig Zag Fries : Potato (92%), Palmolein Oil, May Contain Wheat, Milk & Soy, Hot ‘N’ Tangy Flavour Maker : Dehydrated Vegetable Powder (Garlic (15%), Tamarind (9%), Onion (5%), Tomato (4%)), Iodized Salt, Mixed Spices and Herbs (Chilli (19%), Black Pepper (4%), Oregano (2%)), Sugar, Acidity Regulator (INS 330), Natural & Nature Identical Flavoring Substances, Anticaking Agent (INS 551), May Contain Wheat, Oats, Milk, Nut & Soy.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "160.26",
+    "Protein (g)": "5.44",
+    "Carbohydrate (g)": "22.81",
+    "Total Sugars (g)": "0.85",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "4.60",
+    "Saturated Fat (g)": "Not more than 2.13",
+    "Trans Fat (g)": "Not more than 0.1**",
+    "Sodium (mg)": "455.15"
+   },
+   "storageInstructions": "Keep frozen at -18°C or below.",
+   "manufacturerName": "McCain foods (india) pvt ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Italian Style Zig Zag Fries - Chilli Cheese",
+  "handle": "italian-style-zig-zag-fries-chilli-cheese",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "325g",
+    "price": "129",
+    "compare_at_price": "129",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646_5-mccain-italian-style-zig-zag-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646_5-mccain-italian-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646-2_5-mccain-italian-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646-3_5-mccain-italian-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646-4_5-mccain-italian-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646-5_5-mccain-italian-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646-6_5-mccain-italian-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646-7_5-mccain-italian-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357646-8_5-mccain-italian-style-zig-zag-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Enjoy a fusion of flavours with our Italian Fries – Classic Italian-style cheese paired with a spicy twist. Each fry is perfectly seasoned and topped with rich, cheesy goodness for an irresistible taste. The 325g pack offers just the right amount for sharing or indulging on your own. Savour the perfect blend of creamy cheese and zesty spice in every bite, inspired by authentic Italian flavours with a bold, modern edge.",
+   "ingredients": "Zig Zag Fries: Potato (92%), Palmolein Oil May Contain Wheat, Milk & Soy Chilli Cheese Flavour Maker: Corn Maltodextrin, Iodized Salt, Sugar, Milk Solids (Cheddar Cheese Powder (3%)), Garlic Powder (3%), Chilli Powder (2%), Onion Powder (1%), Hydrolyzed Soy Protein, Anticaking Agent (INS 551), Dried Tomato Paste, Flavour Enhancers (INS 627, INS 631), Natural Flavouring Substances, Flavouring Preparations, Edible Vegetable Oil (Palm Oil, Coconut Oil), Nature Identical Flavouring Substances, Acidity Regulator (INS 330), Emulsifiers (INS 414, INS 470(i)).Contains Soy and Milk, May Contain Wheat",
+   "nutritionalInfo": {
+    "Energy (kcal)": "158.4",
+    "Protein (g)": "3.31",
+    "Carbohydrate (g)": "24.86",
+    "Total Sugars (g)": "0.78",
+    "Added Sugar (g)": "0.6",
+    "Total Fat (g)": "4.48",
+    "Saturated Fat (g)": "Not more than 2.12",
+    "Trans Fat (g)": "Not more than 0.1",
+    "Sodium (mg)": "293.31",
+    "Cholesterol (mg)": "Not more than 1"
+   },
+   "usageInstructions": "Deep Fry:\nPreheat the oil in kadhai/wok (max. temp. upto 175°C). and fry for 3 minutes.\nOven Bake:\nPreheat oven to 220°C. Arrange frozen French Fries in a single layer on a baking tray and bake for 18 minutes until light golden brown.\nAirfryer: Preheat Airfryer (1230 W) to 200°C. Bake for 18-20 minutes until light golden brown. Shake couple of times in between.\nMix Flavour: Add 'Flavour. Maker' sachet to cooked Zig Zag fries and mix well.",
+   "manufacturerName": "McCain Foods (India) Private Limited",
+   "fssaiLicense": "10013011001570",
+   "countryOfOrigin": "Spain"
+  }
+ },
+ {
+  "title": "Korean Style Zig Zag Fries - K-Spicy",
+  "handle": "korean-style-zig-zag-fries-k-spicy",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "325g",
+    "price": "129",
+    "compare_at_price": "129",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645_5-mccain-korean-style-zig-zag-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645_5-mccain-korean-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645-2_5-mccain-korean-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645-3_5-mccain-korean-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645-4_5-mccain-korean-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645-5_5-mccain-korean-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645-6_5-mccain-korean-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645-7_5-mccain-korean-style-zig-zag-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357645-8_5-mccain-korean-style-zig-zag-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the bold flavours of Korean street food with our Korean Style Zig Zag Fries. These crispy, zigzag-cut fries are coated with a fiery hot and spicy seasoning that delivers a perfect balance of flavour and crunch in every bite. Ideal for those who enjoy a punch of heat, they make a tasty snack or a fun side to your favourite meal. Serve them hot and enjoy the trending Korean-style snacking experience at home.",
+   "ingredients": "Zig Zag Fries : Potato (92%), Palmolein Oil May Contain Wheat, Milk & Soy K-Spicy# Flavour Maker: Sugar, lodized Salt, Corn Maltodextrin, Chilli Powder (6%), Hydrolyzed Soy Protein, Onion Powder (1%), Nature Identical Flavouring Substances, Stabilizer (INS 508), Garlic Powder (1%), Anticaking Agents (INS 551, INS 341), Refined Sunflower Oil, Emulsifiers (INS 470(i), INS 414, INS 415), Acidity Regulator (INS 330), Flavouring Preparations, Flavour Enhancers (INS 627, INS 631), Natural Flavouring Substances\nContains Soy. May Contain Wheat",
+   "nutritionalInfo": {
+    "Energy (kcal)": "166.07",
+    "Protein (g)": "3.38",
+    "Carbohydrate (g)": "25.5",
+    "Total Sugars (g)": "1.19",
+    "Added Sugar (g)": "1.12",
+    "Total Fat (g)": "4.61",
+    "Saturated Fat (g)": "Not more than 2.17",
+    "Trans Fat (g)": "Not more than 0.1",
+    "Sodium (mg)": "352.35"
+   },
+   "usageInstructions": "Deep Fry:\nPreheat the oil in kadhai/wok (max. temp. upto 175°C). and fry for 3 minutes.\nOven Bake:\nPreheat oven to 220°C. Arrange frozen French Fries in a single layer on a baking tray and bake for 18 minutes until light golden brown.\nAirfryer:\nPreheat Airfryer (1230 W) to 200°C. Bake for 18-20 minttes until light golden brown. Shake couple of times in between.\nMix Flavour: Add 'Flavour. Maker' sachet to cooked Zig Zag fries and mix well.",
+   "manufacturerName": "McCain Foods (India) Private Limited",
+   "fssaiLicense": "10013011001570",
+   "countryOfOrigin": "Spain"
+  }
+ },
+ {
+  "title": "Popcorn Fries",
+  "handle": "popcorn-fries",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40317483_2-mccain-popcorn-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317483_2-mccain-popcorn-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317483-2_2-mccain-popcorn-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317483-3_2-mccain-popcorn-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317483-4_2-mccain-popcorn-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317483-5_2-mccain-popcorn-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317483-6_2-mccain-popcorn-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your snacking experience with McCain Popcorn Fries, a delightful fusion of crispy popcorn and beloved French fry flavour. Crafted from premium-quality potatoes, these bite-sized wonders offer a satisfying crunch in every bite. Perfect as a snack, appetiser or side dish, these quick and easy-to-prepare fries are ideal for sharing with friends and family. Whether you're hosting a movie night or a casual gathering, McCain Popcorn Fries are sure to be a crowd-pleasing addition, adding fun and flavour to any occasion. Indulge in the crispy, golden delight that combines the best of both worlds for an ultimate snacking experience.",
+   "ingredients": "Potato(85%), Palmolein Oil, Batter (Thickeners [INS 1412, INS 464], Rice Flour, Dextrin, Natural Flavouring Substances), Iodised Salt. May Contain Wheat, Milk and Soy.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100 g",
+    "Energy (kcal)": "184.9",
+    "Protein (g)": "3.3",
+    "Carbohydrate (g)": "28.2",
+    "Total Sugars (g)": "< 0.5",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "6.6",
+    "Saturated Fat (g)": "Not more than 3.12",
+    "Trans Fat (g)": "Not more than 0.1",
+    "Sodium (mg)": "198.76"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Freeze the remaining product in the freezer",
+   "manufacturerName": "Mccain foods India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Super Wedges",
+  "handle": "super-wedges",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "179",
+    "compare_at_price": "179",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/206429_8-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206429_8-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206429-2_9-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206429-3_9-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206429-4_9-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206429-5_7-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206429-6_3-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206429-7_3-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/206429-8_3-mccain-crispy-herb-coated-potatoes-super-wedges.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Super Wedges are crispy-coated potatoes, shaped into wedges, and tossed in a special blend of seasoning and herbs. They are ready in minutes and perfect as snacks.\nFry or Bake\nStore in Freezer\nCook without thawing\nNo added preservatives",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "100g",
+    "Energy (kcal)": "136 kcal",
+    "Protein (g)": "2.9 g",
+    "Carbohydrate (g)": "22.9 g",
+    "Total Sugars (g)": "<0.5 g",
+    "Added Sugars (g)": "0 g",
+    "Total Fat (g)": "3.67 g",
+    "Saturated Fat (g)": "1.72 g",
+    "Trans Fat (g)": "<0.1 g",
+    "Sodium (mg)": "249 mg"
+   },
+   "manufacturerName": "McCain Foods India Pvt Ltd SH - 41 P.O.Baliasan Mehsana - 382732 Gujarat India",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Smiles Crispy Happy Potatoes",
+  "handle": "smiles-crispy-happy-potatoes",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/282598_6-mccain-smiles-crispy-happy-potato.jpg"
+    }
+   },
+   {
+    "title": "415g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/101489_10-mccain-smiles-crispy-happy-potatoes.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016983_3-mccain-smiles-crispy-happy-potatoes.jpg"
+    }
+   },
+   {
+    "title": "1.25kg",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016991_8-mccain-smiles-crispy-happy-potatoes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282598_6-mccain-smiles-crispy-happy-potato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282598-2_8-mccain-smiles-crispy-happy-potato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282598-3_8-mccain-smiles-crispy-happy-potato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282598-4_8-mccain-smiles-crispy-happy-potato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282598-5_8-mccain-smiles-crispy-happy-potato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282598-6_8-mccain-smiles-crispy-happy-potato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282598-7_6-mccain-smiles-crispy-happy-potato.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282598-8_2-mccain-smiles-crispy-happy-potato.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Smiles - Pudina Chatka",
+  "handle": "smiles-pudina-chatka",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "375g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40099226_4-mccain-smiles-pudina-chatka.jpg"
+    },
+    "barcode": "8906000611227"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099226_4-mccain-smiles-pudina-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099226-2_5-mccain-smiles-pudina-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099226-3_5-mccain-smiles-pudina-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099226-4_5-mccain-smiles-pudina-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099226-5_5-mccain-smiles-pudina-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099226-6_4-mccain-smiles-pudina-chatka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099226-7_4-mccain-smiles-pudina-chatka.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Pudina flavoured Smiles are the perfect snack or an accompaniment to your meals. They are mint flavoured and are the perfect addition to your diet with elements of both health and taste. \nThe only desire that we at McCain have is to make sure that you get the best tasting snacks to fill your heart and your tummy! We love to put our heads and hearts together to ensure that you get delicious and delectable food in every mouthful that you have.\nMcCain Foods Ltd. is one of the world's largest producers of French Fries and Potato Specialities. Located in Florenceville, New Brunswick, Canada, McCain has grown to become a global leader in the frozen food industry. From Canada, across the world to Japan, from the tip of Argentina to suburbs in Australia, our tasty and convenient food products are served in restaurants and sold in retail stores; adding nutrition and flavour to family meals time after time.",
+   "ingredients": "Potato, Potato Flakes, Mint Leaf Powder",
+   "usageInstructions": "To be cooked in hot oil without thawing.",
+   "manufacturerName": "McCain Foods India PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Emotibites",
+  "handle": "emotibites",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "415g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317_3-mccain-emotibites-crispy-happy-potato-snack.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40210318_2-mccain-emotibites-crispy-happy-potato-snack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317_3-mccain-emotibites-crispy-happy-potato-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317-2_3-mccain-emotibites-crispy-happy-potato-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317-3_2-mccain-emotibites-crispy-happy-potato-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317-4_2-mccain-emotibites-crispy-happy-potato-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317-5_2-mccain-emotibites-crispy-happy-potato-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317-6_1-mccain-emotibites-crispy-happy-potato-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317-7_1-mccain-emotibites-crispy-happy-potato-snack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40210317-8_1-mccain-emotibites-crispy-happy-potato-snack.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the all-new McCain EmotiBites - your favourite snacks with a fun, expressive twist! These delightful bites are inspired by the chat icons you love, allowing you to snack a little, chat a little, and express your mood, whether happy, surprised or playful. With just a 3-minute prep time, these versatile snacks can be enjoyed by frying or baking, making them a convenient and customisable treat.\nBursting with flavour and texture, McCain EmotiBites are sure to elevate your snacking experience and bring a touch of playfulness to your day. Indulge in this unique and engaging snack that combines the best of taste and expression.",
+   "ingredients": "Potato (63%), Potato Flakes (13%), Palmolein Oil, Maize Starch, Iodized Salt, May Contain Wheat, Barley, Milk, Soy",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "72 g",
+    "Energy (kcal)": "197",
+    "Protein (g)": "3.5",
+    "Carbohydrate (g)": "30",
+    "Total Sugars (g)": "<0.5",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "7",
+    "Saturated Fat (g)": "3.44",
+    "Trans Fat (g)": "<0.1",
+    "Sodium (mg)": "387.5",
+    "RDA": "Serving Size 72 g (4 Pieces)"
+   },
+   "storageInstructions": "*Keep Frozen At -18°C Or Below",
+   "manufacturerName": "McCain Foods India Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013011001570"
+  }
+ },
+ {
+  "title": "Chilli Garlic Potato Bites",
+  "handle": "chilli-garlic-potato-bites",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515_7-mccain-potato-bites-chilli-garlic.jpg"
+    }
+   },
+   {
+    "title": "420g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/206433_17-mccain-potato-bites-chilli-garlic.jpg"
+    }
+   },
+   {
+    "title": "700g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016982_15-mccain-crunchy-potato-nuggets-chilli-garlic-potato-bites.jpg"
+    }
+   },
+   {
+    "title": "1.24kg",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206813_10-mccain-chili-garlic-potato-bites.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515_7-mccain-potato-bites-chilli-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515-2_7-mccain-potato-bites-chilli-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515-3_7-mccain-potato-bites-chilli-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515-4_7-mccain-potato-bites-chilli-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515-5_7-mccain-potato-bites-chilli-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515-6_1-mccain-potato-bites-chilli-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515-7_1-mccain-potato-bites-chilli-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000515-8_1-mccain-potato-bites-chilli-garlic.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Chilli Garlic Potato Bites are the most excellent enjoyable stuffs to delight you with the spicy mixture of Chilli, Potatoes and Garlic. Indulge yourself within the new and real flavor of potato bites engrossing with spicy, sweet and sour ingredients. The wholesome and yummy bites will raise your flavor buds.",
+   "ingredients": "Potato, Corn Flour, Green Chilli, Water, Salt, Ginger Paste, Garlic Paste, Onion Powder, Red Chilli Flakes",
+   "usageInstructions": "Preheat oil (recommended maximum temperature: 175 Degree C). Deep fry McCain Chilli Garlic Potato Bites for about 3 minutes to a light golden colour.",
+   "manufacturerName": "McCain Foods India PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Potato Cheese Shotz",
+  "handle": "potato-cheese-shotz",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614_16-mccain-potato-cheese-shotz.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "272",
+    "compare_at_price": "272",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016984_16-mccain-potato-cheese-shotz-crunchy-nuggets-of-potateos-cheese.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614_16-mccain-potato-cheese-shotz.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614-2_13-mccain-potato-cheese-shotz.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614-3_13-mccain-potato-cheese-shotz.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614-4_13-mccain-potato-cheese-shotz.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614-5_13-mccain-potato-cheese-shotz.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614-6_9-mccain-potato-cheese-shotz.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614-7_9-mccain-potato-cheese-shotz.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40049614-8_5-mccain-potato-cheese-shotz.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Potato Cheese Shotz are a union of potatoes and herbs that are stuffed with the gooiest cheese that you can come across. This snack, coated in crunchy golden breadcrumbs, delivers flavour and texture with every bite!\nStore in Freezer\nCook without thawing",
+   "ingredients": "Potato (44%), Processed Cheese (33%) (Cheddar Cheese, Milk Solids, Water, Emulsifier [INS 331 (iii)]), Iodized Salt, Anti Caking Agent [INS 460], Bread Crumb (Refined Wheat Flour (Maida), Yeast, Iodized Salt, Antioxidant [INS 300]), Palmolein Oil, Batter (Refined Wheat Flour (Maida), Maize Starch, Iodized Salt, Thickener [INS 466]), Seasoning (Flavouring Substances (Natural, Nature Identical), Flavour Enhancers [INS 627, INS 631], Acidity Regulators [INS 330, INS 270], Anticaking Agent [INS 551]), Maize Starch, Onion Powder, Red Chilli Flakes, Iodized Salt, Parsley, Contains Wheat, Milk and Soy",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "234",
+    "Protein (g)": "6.2",
+    "Carbohydrate (g)": "26.9",
+    "Total Sugars (g)": "1.6",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "11.34",
+    "Saturated Fat (g)": "Not more than 6.95",
+    "Trans Fat (g)": "Not more than 0.1*",
+    "Cholesterol (mg)": "<5",
+    "Sodium (mg)": "574.61"
+   },
+   "manufacturerName": "McCain Foods India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Variety Pack - Chilli Garlic Potato Bites, Smiles & Masala Fries",
+  "handle": "variety-pack-chilli-garlic-potato-bites-smiles-masala-fries",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "550g",
+    "price": "193",
+    "compare_at_price": "193",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/70708_12-mccain-variety-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70708_12-mccain-variety-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70708-2_13-mccain-variety-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70708-3_12-mccain-variety-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70708-4_12-mccain-variety-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70708-5_12-mccain-variety-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70708-6_4-mccain-variety-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/70708-7_4-mccain-variety-pack.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The McCain Variety Pack is your gateway to a world of irresistible snacks, featuring the bold flavours of Chili Garlic Potato Bites, the playful charm of McCain Smiles, and the spicy kick of Masala Fries. Whether you're craving something zesty, fun, or flavour-packed, this selection has it all. Each bite offers a crispy, satisfying experience that promises to elevate your snacking game. Indulge in the ultimate snack adventure with McCain – your go-to companion for any craving.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "72g",
+    "Energy (kcal)": "197 kcal",
+    "Protein (g)": "3.5 g",
+    "Carbohydrate (g)": "30 g",
+    "Total Sugars (g)": "<0.5 g",
+    "Added Sugars (g)": "0 g",
+    "Total Fat (g)": "7 g",
+    "Saturated Fat (g)": "Not more than 3.44 g",
+    "Trans Fat (g)": "Not more than 0.1 g",
+    "Sodium (mg)": "387.5 mg"
+   },
+   "manufacturerName": "McCain Foods (India) Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013011001570"
+  }
+ },
+ {
+  "title": "Air Fryer Cheese Nacho Angles",
+  "handle": "air-fryer-cheese-nacho-angles",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40375051_1-mccain-air-fryer-cheese-nacho-angles.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375051_1-mccain-air-fryer-cheese-nacho-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375051-2_1-mccain-air-fryer-cheese-nacho-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375051-3_1-mccain-air-fryer-cheese-nacho-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375051-4_1-mccain-air-fryer-cheese-nacho-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375051-5_1-mccain-air-fryer-cheese-nacho-angles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375051-6_1-mccain-air-fryer-cheese-nacho-angles.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Air Fryer Cheese Nacho Angles are specially designed for air frying, offering a deliciously crisp and crunchy snack with the irresistible taste of cheese. Made with no added preservatives, these nacho angles are easy to prepare and perfect for enjoying as a quick snack, appetiser or sharing treat. With the goodness of cheese in every bite, they make snacking more enjoyable.",
+   "ingredients": "INGREDIENTS: Cheese (23.6%) [Processed Cheese (88.9%) (Cheese, Water, Milk Solids, Emulsifiers (INS 339(ii), INS 339(iii)), Iodised Salt, Acidity Regulator (INS 270), Mozzarella Cheese (11%) (Milk, Iodised Salt, Active Culture, Microbial Enzyme, Anticaking Agent (INS 460(iii))], Bread Crumbs [Refined Wheat Flour (Maida), Dextrose, Iodised Salt, Yeast, Spices and Condiments (Paprika Extract, Turmeric Extract)], Potato (14%), Edible Vegetable Oil (Refined Palm Oil), Batter [Refined Wheat Flour (Maida), Stabilizer (INS 461), Maize Starch (1%), Iodised Salt, Sugar, Thickener (INS 412)], Green Capsicum (5%), Cheese Sauce (3%) (Water, Edible Vegetable Oil (Refined Palm Oil), Processed Cheese (18%) [Cheese, Water, Milk Solids, Emulsifiers (INS 339(ii), INS 339(iii)), Iodised Salt, Acidity Regulator (INS 270)], Thickeners (INS 1442, INS 415), Sugar, Colour (INS 160b), Flavours (Nature-Identical Flavouring Substances), Potato Flakes (Potato, Emulsifier (INS 471), Antioxidant (INS 304), Stabilizer (INS 450)), Water, Seasoning (Spices and Condiments (Chilli, Garlic, Onion, Cumin), Iodised Salt, Tomato Powder (7%), Starch, Tomato Bits (5%), Acidity Regulator (INS 330), Flavour Enhancers (INS 627, INS 631), Anticaking Agent (INS 551), Flavours (Natural Flavouring Substances)), Red Chilli Flakes (0.1%), Flavours (Natural Flavouring Substances).\nAllergen Information: Contains Wheat and Milk. May Contain Nut and Soy.",
+   "nutritionalInfo": {
+    "Serving Size": "40 g (2 pieces approx.)",
+    "Pack Size": "200 g (about 5 servings)"
+   },
+   "usageInstructions": "Preheat Air Fryer (1400 W) to 200°C.\nTake 200 g (10 pieces) of Air Fryer Cheese Nacho Angles and place them in the air fryer.\nCook for 6 minutes until light golden brown.\nShake the basket halfway through cooking.",
+   "manufacturerName": "McCain Foods (India) Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013011001570"
+  }
+ },
+ {
+  "title": "Aloo Tikki",
+  "handle": "aloo-tikki",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/233753_15-mccain-aloo-tikki.jpg"
+    },
+    "barcode": "8906000612842"
+   },
+   {
+    "title": "760g",
+    "price": "245",
+    "compare_at_price": "245",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016987_15-mccain-aloo-tikki.jpg"
+    }
+   },
+   {
+    "title": "1.24kg",
+    "price": "323",
+    "compare_at_price": "323",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206812_10-mccain-aloo-tikki.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/233753_15-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/233753-2_14-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/233753-3_14-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/233753-4_12-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/233753-5_12-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/233753-6_7-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/233753-7_7-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/233753-8_3-mccain-aloo-tikki.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Aloo Tikki recreates the magic of the blend of mashed potatoes and traditional Indian spices. This is a perfect pick for an instant indulgence!\nFry or Bake\nStore in Freezer\nCook without thawing",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "164.5",
+    "Protein (g)": "2.7",
+    "Carbohydrate (g)": "23.8",
+    "Total Sugars (g)": "< 0.5",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "6.5",
+    "Saturated Fat (g)": "Not more than 3.1",
+    "Trans Fat (g)": "Not more than < 0.1\"",
+    "Sodium (mg)": "482"
+   },
+   "usageInstructions": "You need to preheat the oil before frying the tikkis; the tikkis can be simply taken out of the freezer and put in the oil directly. They do not need time to thaw. If you are cooking smaller amounts, reduce the cooking time. It is best to take them out of the oven when you see a hint of light golden colour on the outside, which should happen within 3 minutes of cooking. Overcooking the tikkis will spoil their taste.",
+   "manufacturerName": "McCain Foods India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aloo Tikki - Mazedaar Masala",
+  "handle": "aloo-tikki-mazedaar-masala",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000514_3-mccain-aloo-tikki.jpg"
+    },
+    "barcode": "8906000610640"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000514_3-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000514-2_3-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000514-3_3-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000514-4_3-mccain-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000514-5_3-mccain-aloo-tikki.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Aloo Tikki is a typical mixture of mashed potatoes and fixed Indian spices. It is cholesterol-free and has enhanced nutrition as it is precooked in pure vegetable oil and frozen using superior technology that locks cleanness and nutrition.",
+   "ingredients": "Potato, Corn Flakes, Green Chilli, Corn Starch, Rice Flakes, Water, Salt, Ginger Paste, Garlic Paste",
+   "usageInstructions": "Preheat little amount of oil. Shallow fry McCain Aloo Tikki on medium flame for about 6-8 min, turning occasionally.",
+   "manufacturerName": "McCain Foods India PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Cheesy Nuggets",
+  "handle": "chilli-cheesy-nuggets",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220_10-mccain-chilli-cheesy-nuggets.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40191221_10-mccain-chilli-cheesy-nuggets.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220_10-mccain-chilli-cheesy-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220-2_10-mccain-chilli-cheesy-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220-3_10-mccain-chilli-cheesy-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220-4_10-mccain-chilli-cheesy-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220-5_10-mccain-chilli-cheesy-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220-6_9-mccain-chilli-cheesy-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220-7_9-mccain-chilli-cheesy-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40191220-8_5-mccain-chilli-cheesy-nuggets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Chilli Cheesy Nuggets are delicious snacks that are hot and crispy on the outside yet have a soft, melting cheese filling with a flavorful hit of red chilli flakes. Chilli Cheesy Nuggets are the only product that contains Natural Cheddar Cheese, which is a good source of protein, with 28% of it.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "241",
+    "Protein (g)": "6.8",
+    "Carbohydrate (g)": "25",
+    "Total Sugars (g)": "<0.5",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "12.62",
+    "Saturated Fat (g)": "Not more than 7.66",
+    "Trans Fat (g)": "Not more than 0.1*",
+    "Cholesterol (mg)": "22.49",
+    "Sodium (mg)": "596"
+   },
+   "usageInstructions": "Preheat the oil in Kadhai/Wok (maximum temperature up to 175 degrees C).\nTake the product from the freezer and fry it directly. Do not thaw.\nPut the desired quantity gently in hot oil and deep fry for 3 minutes. Seal & keep the remaining product in the freezer.",
+   "manufacturerName": "McCain Foods India Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013011001570"
+  }
+ },
+ {
+  "title": "Cheesy Pizza Fingers",
+  "handle": "cheesy-pizza-fingers",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121_6-mccain-cheesy-pizza-fingers.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121_6-mccain-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121-2_6-mccain-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121-3_6-mccain-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121-4_6-mccain-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121-5_6-mccain-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121-6_6-mccain-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121-7_5-mccain-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40317121-8_5-mccain-cheesy-pizza-fingers.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the ultimate cheesy snack with McCain's Cheesy Pizza Fingers! These crunchy, finger-shaped delights are packed with the rich, mouthwatering flavour of restaurant-quality cheese pizza. Made with real mozzarella cheese and Italian-style herbs, these pizza fingers satisfy the cravings of the whole family in just 3 minutes. Enjoy the burst of melted cheese and the satisfying, filling experience as you bite into these irresistible snacks.\nPerfect for quick and easy indulgence, these pizza fingers offer a unique and delightful eating experience that will leave you craving more. Elevate your snacking game with the convenience and flavour of McCain's Cheesy Pizza Fingers.",
+   "ingredients": "Mozzarella Cheese, Water, Bread Crumb, Refined Palm Oil, Batter, Maize Starch, Iodised Salt, Oregano, Parsley",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50 g (2 Pieces)",
+    "Energy (kcal)": "317",
+    "Protein (g)": "12.47",
+    "Carbohydrate (g)": "26.69",
+    "Total Sugars (g)": "1",
+    "Added Sugars (g)": "0",
+    "Total Fat (g)": "17.41",
+    "Saturated Fat (g)": "Not more than 9.90",
+    "Trans Fat (g)": "Not more than 0.1",
+    "Sodium (mg)": "419.77",
+    "Cholesterol (mg)": "10.1"
+   },
+   "storageInstructions": "*Store at or below -18°C",
+   "manufacturerName": "Mccain foods India Pvt Ltd",
+   "fssaiLicense": "10013011001570",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veggie Fingers",
+  "handle": "veggie-fingers",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "175g",
+    "price": "49",
+    "compare_at_price": "49",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016995_6-mccain-veggie-fingers.jpg"
+    },
+    "barcode": "8906000610930"
+   },
+   {
+    "title": "400g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016992_12-mccain-veggie-fingers-veggie-delight-with-corn-carrot-peas.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016995_6-mccain-veggie-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016995-2_7-mccain-veggie-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016995-3_7-mccain-veggie-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016995-4_7-mccain-veggie-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016995-5_7-mccain-veggie-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016992_12-mccain-veggie-fingers-veggie-delight-with-corn-carrot-peas.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Veggie - Fingers are sure to get the ball rolling on the dining table or wherever you are. Perfect for a time with family and friends. It is delicious and tasty. \nMcCain Foods Ltd. is one of the world's largest producers of French Fries and Potato Specialities. Located in Florenceville, New Brunswick, Canada, McCain has grown to become a global leader in the frozen food industry. From Canada, across the world to Japan, from the tip of Argentina to suburbs in Australia, our tasty and convenient food products are served in restaurants and sold in retail stores; adding nutrition and flavour to family meals time after time.",
+   "ingredients": "Potato (47%), Vegetable (19%) [Carrot, Green Peas, Sweet Corns], Bread Crumb (Wheat Flour, Yeast, Edible Common Salt, Permitted Class Ii Preservatives [Ins 282], Antioxidants [Ins 300], Batter (Wheat Flour, Corn Strach, Corn Flour, Edible Common Salt, Thickener [Ins 466]), Rice Flakes, Corn Flour, Edible Common Salt, Spices And Condiments Parsley.",
+   "manufacturerName": "McCain Foods India PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veggie Nuggets",
+  "handle": "veggie-nuggets",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "325g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989_11-mccain-veggie-nuggets.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989_11-mccain-veggie-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989-2_13-mccain-veggie-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989-3_12-mccain-veggie-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989-4_12-mccain-veggie-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989-5_12-mccain-veggie-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989-6_5-mccain-veggie-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989-7_5-mccain-veggie-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40016989-8_5-mccain-veggie-nuggets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of McCain Veggie Nuggets, a delectable treat that will captivate both kids and adults alike. Serve these versatile nuggets at your next party or family gathering, and watch as they delight your guests with their irresistible flavour and texture. Crafted by the renowned McCain Foods, a global leader in potato specialities, these nuggets are a convenient and nutritious addition to any meal. Enjoy the convenience of these tasty bites, perfect for satisfying cravings and adding a touch of flavour to your family's favourite dishes.",
+   "ingredients": "Potatoes, Vegetables (Carrot, Green Capsicum), Bread Crumbs (Wheat Flour, Yeast, Salt, Dextrose, Ascorbic Acid [E3]), Edible Vegetable Oil (Palmolein), Batter (Wheat Flour, Corn Starch, Corn Flour, Salt, CMC [E466], Rice Flakes), Seasoning (Spices & Condiments, Salt, Milk Solids, Maltodextrin, Sugar, Anti Caking Agent Powder, Red Chilli, Lemon Powder)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy (kcal)": "170",
+    "Protein (g)": "3",
+    "Carbohydrate (g)": "25.9",
+    "Total Sugars (g)": "1.1",
+    "Total Fat (g)": "6.05",
+    "Saturated Fat (g)": "Not more than 2.84",
+    "Trans Fat (g)": "Not more than 0.1",
+    "Sodium (mg)": "521"
+   },
+   "storageInstructions": "*Keep frozen at -18°C or below",
+   "manufacturerName": "McCain Foods India PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Onion Rings",
+  "handle": "crispy-onion-rings",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488_6-mccain-crispy-onion-rings.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488_6-mccain-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488-2_6-mccain-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488-3_6-mccain-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488-4_6-mccain-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488-5_6-mccain-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488-6_6-mccain-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488-7_5-mccain-crispy-onion-rings.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40327488-8_5-mccain-crispy-onion-rings.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "McCain Crispy Onion Rings are a delightful, easy-to-make snack perfect for sharing. Made with fresh onions and a unique blend of spices, these rings are coated in a perfectly crisp layer, delivering a restaurant-quality starter right at home. Ideal for unforgettable get-togethers, they are a go-to snack that everyone will love. Conveniently, you can choose to fry or bake them directly from the freezer, without needing to thaw. Whether you're hosting a party or enjoying a casual evening, McCain Crispy Onion Rings are sure to please with their delicious taste and satisfying crunch.",
+   "ingredients": "Onion (39.5%), Water, Bread Crumb (Refined Wheat Flour (Maida), Dextrose, Iodised Salt, Yeast, Spices & Condiments (Paprika, Turmeric)), Refined Palm Oil, Dehydrated Onion (5%), Batter (Refined Wheat Flour (Maida), Maise Starch, Iodised Salt, Thickener [INS 412], Sugar), Maise Starch, Potato Flakes, Wheat Fibre, Seasoning, Iodised Salt, Yeast Extract, Refined Wheat Flour (Maida), Natural and Nature Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "50 g (2 Pieces)",
+    "Energy (kcal)": "263",
+    "Protein (g)": "4.13",
+    "Carbohydrate (g)": "28.18",
+    "Total Sugars (g)": "3.67",
+    "Added Sugars (g)": "0.02",
+    "Total Fat (g)": "14.43",
+    "Saturated Fat (g)": "Not more than 7.32",
+    "Trans Fat (g)": "Not more than 0.1",
+    "Sodium (mg)": "479"
+   },
+   "storageInstructions": "*Store in freezer",
+   "manufacturerName": "Mccain foods India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veggie Burger Patty",
+  "handle": "veggie-burger-patty",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "360g",
+    "price": "151",
+    "compare_at_price": "151",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/258181_12-mccain-veggie-burger-patty.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258181_12-mccain-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258181-2_11-mccain-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258181-3_10-mccain-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258181-4_10-mccain-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258181-5_10-mccain-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258181-6_3-mccain-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258181-7_3-mccain-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/258181-8_3-mccain-veggie-burger-patty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The McCain Veggie Burger Patty offers a delightful blend of fresh vegetables and creamy mashed potatoes, creating a mouthwatering treat for any burger lover. Each patty is seasoned with a blend of delicious spices and coated with crispy breadcrumbs, delivering a perfect balance of flavours and textures. Whether you're crafting a hearty meal or serving up a quick snack, these patties promise a delectable taste with every bite. Ideal for both vegetarians and those seeking a tasty alternative, McCain Veggie Burger Patties provide a satisfying, crispy experience that elevates any burger to new heights of enjoyment.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "60g",
+    "Energy (kcal)": "207.33 kcal",
+    "Protein (g)": "3.31 g",
+    "Carbohydrate (g)": "29.96 g",
+    "Total Sugars (g)": "0.85 g",
+    "Total Fat (g)": "8.25 g",
+    "Saturated Fat (g)": "3.97 g",
+    "Trans Fat (g)": "<0.1 g",
+    "Sodium (mg)": "594.4 mg"
+   },
+   "manufacturerName": "McCain Foods India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Aloo Burger Patty",
+  "handle": "crispy-aloo-burger-patty",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "330g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40375052_1-mccain-crispy-aloo-burger-patty.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375052_1-mccain-crispy-aloo-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375052-2_1-mccain-crispy-aloo-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375052-3_1-mccain-crispy-aloo-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375052-4_1-mccain-crispy-aloo-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375052-5_1-mccain-crispy-aloo-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375052-6_1-mccain-crispy-aloo-burger-patty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crispy Aloo Burger Patty is a delicious frozen potato patty made with seasoned potato, chilli flakes, onion and parsley. Coated for a crisp, golden finish, it offers a crunchy texture on the outside and a soft, flavourful centre. Easy to prepare by air frying, baking, deep frying or shallow frying, it is perfect for making tasty burgers, wraps or quick snacks.",
+   "ingredients": "Ingredients: Potato (85.60%), Edible Vegetable Oil (Refined Palmolein Oil), Maize Starch, Iodised Salt, Red Chilli Flakes (0.64%), Onion Powder, Parsley (0.23%).\nAllergen Information: May Contain Wheat, Milk and Soy.",
+   "nutritionalInfo": {
+    "Energy": "173 kcal",
+    "Protein": "2.5 g",
+    "Carbohydrate": "22 g",
+    "Total Sugars": "Not more than 0.5 g",
+    "Added Sugars": "0 g",
+    "Total Fat": "8.3 g",
+    "Saturated Fat": "3.9 g",
+    "Trans Fat": "Not more than 0.1 g",
+    "Sodium": "409.4 mg"
+   },
+   "usageInstructions": "Deep Fry: Preheat the oil in a kadhai/wok (maximum temperature up to 175°C) and fry for 3 minutes.\nOven Bake: Preheat the oven to 220°C. Arrange frozen patties in a single layer on a baking tray and bake for 16 minutes until light golden brown.\nAir Fryer: Preheat the air fryer (1400 W) to 200°C. Bake approximately 4 pieces for 11–12 minutes until golden brown. Flip in between.\nShallow Fry: Preheat a little amount of oil. Shallow fry on medium flame for about 4–6 minutes, turning occasionally.",
+   "manufacturerName": "McCain Foods (India) Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013011001570"
+  }
+ },
+ {
+  "title": "Royal Paneer Burger Patty",
+  "handle": "royal-paneer-burger-patty",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "320g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40375053_1-mccain-royal-paneer-burger-patty.jpg"
+    },
+    "barcode": "8906000613115"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375053_1-mccain-royal-paneer-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375053-2_1-mccain-royal-paneer-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375053-3_1-mccain-royal-paneer-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375053-4_1-mccain-royal-paneer-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375053-5_1-mccain-royal-paneer-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40375053-6_1-mccain-royal-paneer-burger-patty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Royal Paneer Burger Patty is a delicious frozen patty made with flavourful paneer and carefully selected ingredients, offering a crisp, golden exterior and a soft, savoury centre. Easy to prepare by air frying, baking, deep frying or shallow frying, it is perfect for creating indulgent burgers, wraps and quick snack options.",
+   "ingredients": "Ingredients: Paneer (47.81%) [Milk, Acidity Regulator (INS 330)], Water, Bread Crumb [Refined Wheat Flour (Maida), Dextrose, Dried Yeast, Iodised Salt], Edible Vegetable Oil (Cottonseed Oil), Batter [Refined Wheat Flour (Maida), Maize Starch, Iodised Salt, Red Chilli Powder (0.15%), Green Chilli Powder (0.15%), Seasoning [Flavour Enhancers (INS 627, INS 631), Anticaking Agent (INS 551), Garlic Powder, Ginger Powder], Potato Flakes, Wheat Fibre (Insoluble), Maize Starch, Thickener (INS 451), Iodised Salt, Seasoning [Iodised Salt, Sugar, Maize Starch, Flavour Enhancers (INS 627, INS 631), Flavours (Natural Flavouring Substances), Dehydrated Vegetables (Onion, Garlic), Maltodextrin, Edible Vegetable Oil (Soybean Oil), Spices and Condiments (0.01%) (Celery, Cumin, Coriander), Anticaking Agent (INS 551)]].\nAllergen Information: Contains Wheat, Milk and Celery.",
+   "nutritionalInfo": {
+    "Energy": "319.2 kcal",
+    "Protein": "9.5 g",
+    "Carbohydrate": "25.8 g",
+    "Total Sugars": "0.3 g",
+    "Added Sugars": "Not more than 0.5 g",
+    "Total Fat": "19.8 g",
+    "Saturated Fat": "11.6 g",
+    "Trans Fat": "Not more than 0.1 g",
+    "Cholesterol": "65 mg",
+    "Sodium": "336.3 mg"
+   },
+   "usageInstructions": "Deep Fry: Preheat the oil in a kadhai/wok (maximum temperature up to 175°C) and fry for 3 minutes 30 seconds.\nShallow Fry: Take a little oil in a pan and place over medium flame until the oil is hot. Carefully place the product in the pan and cook for 5 minutes, turning occasionally.",
+   "manufacturerName": "McCain Foods (India) Private Limited",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10013011001570"
+  }
+ },
+ {
+  "title": "Mini Samosa - Cheese Corn",
+  "handle": "mini-samosa-cheese-corn",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "240g",
+    "price": "157",
+    "compare_at_price": "157",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223_15-mccain-mini-samosa-cheese-corn.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223_15-mccain-mini-samosa-cheese-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223-2_15-mccain-mini-samosa-cheese-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223-3_15-mccain-mini-samosa-cheese-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223-4_15-mccain-mini-samosa-cheese-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223-5_15-mccain-mini-samosa-cheese-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223-6_9-mccain-mini-samosa-cheese-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223-7_9-mccain-mini-samosa-cheese-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099223-8_5-mccain-mini-samosa-cheese-corn.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of McCain's Cheese Corn Mini Samosas, a delectable snack that will elevate your every bite. Crafted with care, these mini frozen samosas boast a delicious filling of cheesy corn, encased in a crispy outer layer. Whether you're craving a quick and satisfying snack during work hours or seeking a tasty treat to enjoy at home, these samosas are the perfect choice.\nPacked with the goodness of high-quality ingredients and the love of the McCain team, these samosas promise to fill your heart and tummy with every mouthful. Treat yourself to the burst of flavours and the satisfying texture of these mini samosas, now available for convenient online ordering and delivery straight to your doorstep.",
+   "ingredients": "Refined Wheat Flour (Maida), Cheese (18.4%) (Cheddar Cheese, Milk Solids, Water, Emulsifier [INS 331(iii)], Iodized Salt, Anticaking Agent [INS 460]), Water, Cotton Seed Oil, Corn (10.6%), Potato, Onion, Green Chilli (0.7%), Iodized Salt, Black Pepper, Contains Wheat and Milk, May contain Soy, Mustard, Sesame and Nuts",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "294",
+    "Protein (g)": "7",
+    "Carbohydrate (g)": "33.2",
+    "Total Sugars (g)": "5.13",
+    "Added Sugar (g)": "0",
+    "Total Fat (g)": "14.8",
+    "Saturated Fat (g)": "Not more than 7.3",
+    "Trans Fat (g)": "Not more than 0.7",
+    "Cholesterol (mg)": "26.54",
+    "Sodium (mg)": "358"
+   },
+   "storageInstructions": "*Keep frozen at -18°C or below\n*Do not microwave",
+   "manufacturerName": "McCain Foods India PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mini Samosa - Cheese Pizza",
+  "handle": "mini-samosa-cheese-pizza",
+  "vendor": "McCain",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "240g",
+    "price": "157",
+    "compare_at_price": "157",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224_16-mccain-mini-samosa-cheese-pizza.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224_16-mccain-mini-samosa-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224-2_16-mccain-mini-samosa-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224-3_15-mccain-mini-samosa-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224-4_15-mccain-mini-samosa-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224-5_15-mccain-mini-samosa-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224-6_9-mccain-mini-samosa-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224-7_9-mccain-mini-samosa-cheese-pizza.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40099224-8_5-mccain-mini-samosa-cheese-pizza.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Our McCain “Cheese Pizza Style Filling” Mini Samosa combines the delicious flavours of cheese and pizza in a bite-sized snack. Crispy and crunchy on the outside, with a rich, gooey filling on the inside, it delivers a satisfying taste experience in every bite. Perfect for tea-time snacking, parties, or anytime cravings, this mini samosa is an excellent snack option for any time of the day.",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy (kcal)": "300",
+    "Protein (g)": "7",
+    "Carbohydrate (g)": "33.48",
+    "Total Sugars (g)": "5.19",
+    "Added Sugar (g)": "0.16",
+    "Total Fat (g)": "15.37",
+    "Saturated Fat (g)": "Not more than 7.6",
+    "Trans Fat (g)": "Not more than 0.09",
+    "Cholesterol (mg)": "30.47",
+    "Sodium (mg)": "366"
+   },
+   "usageInstructions": "To be cooked in hot oil without thawing.",
+   "manufacturerName": "McCain Foods India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

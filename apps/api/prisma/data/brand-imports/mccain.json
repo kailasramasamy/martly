@@ -1,0 +1,249 @@
+{
+  "brand": "McCain",
+  "manufacturer": "McCain Foods (India) Pvt. Ltd.",
+  "feed": "mccain-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mccain/logo-63c1223f.png",
+  "themeColor": "#E31B23",
+  "themeColorSecondary": "#FFC20E",
+  "namePrefix": "McCain ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "McCain French Fries - Crispy": "French Fries",
+    "McCain Smiles - Crispy Happy Potatoes": "Smiles Crispy Happy Potatoes"
+  },
+  "rules": [
+    {
+      "match": "^French\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Air\\ Fryer\\ French\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Masala\\ Fries\\ \\-\\ Hot\\ \\&\\ Spicy$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Masala\\ Fries\\ \\-\\ Pepper\\ Crunch$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^American\\ Style\\ Zig\\ Zag\\ Fries\\ \\-\\ Herb\\ \\&\\ Garlic$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Mexican\\ Style\\ Zig\\ Zag\\ Fries\\ \\-\\ Hot\\ \\&\\ Tangy$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Italian\\ Style\\ Zig\\ Zag\\ Fries\\ \\-\\ Chilli\\ Cheese$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Korean\\ Style\\ Zig\\ Zag\\ Fries\\ \\-\\ K\\-Spicy$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Popcorn\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Super\\ Wedges$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Smiles\\ Crispy\\ Happy\\ Potatoes$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Smiles\\ \\-\\ Pudina\\ Chatka$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Emotibites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Garlic\\ Potato\\ Bites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Potato\\ Cheese\\ Shotz$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Variety\\ Pack\\ \\-\\ Chilli\\ Garlic\\ Potato\\ Bites,\\ Smiles\\ \\&\\ Masala\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Air\\ Fryer\\ Cheese\\ Nacho\\ Angles$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Aloo\\ Tikki$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Aloo\\ Tikki\\ \\-\\ Mazedaar\\ Masala$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Cheesy\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Cheesy\\ Pizza\\ Fingers$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veggie\\ Fingers$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veggie\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Onion\\ Rings$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veggie\\ Burger\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Aloo\\ Burger\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Royal\\ Paneer\\ Burger\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Mini\\ Samosa\\ \\-\\ Cheese\\ Corn$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Samosa & Spring Roll"
+      ]
+    },
+    {
+      "match": "^Mini\\ Samosa\\ \\-\\ Cheese\\ Pizza$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Samosa & Spring Roll"
+      ]
+    }
+  ]
+}
