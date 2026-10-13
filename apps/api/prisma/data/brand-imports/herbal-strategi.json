@@ -1,0 +1,262 @@
+{
+  "brand": "Herbal Strategi",
+  "manufacturer": "Herbal Strategi",
+  "feed": "herbal-strategi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/herbal-strategi/logo-8afae2ec.png",
+  "themeColor": "#1B7A3A",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Herbal Strategi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ant\\ Repellent$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Cockroach\\ Repellent$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Lizard\\ Repellent$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Termite\\ Repellent$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Bugspray\\ Herbal\\ Bed\\ Bug\\ Repellent\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Shuu\\ Bedbug\\ Repellent\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Just\\ Spray\\ Mosquito\\ Repellent\\ Room\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Mostick\\ Mosquito\\ Repellent\\ Agarbatti$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Moscup\\ Instant\\ Sambrani\\ Cups$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^Mos\\ Relief\\ Mosquito\\ Repellent\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Shuu\\ Herbal\\ Mosquito\\ Vaporiser$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Yespray\\ Mosquito\\ Repellent\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Nature\\ Spray\\ Room\\ Disinfectant\\ \\&\\ Freshener\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Nature\\ Spray\\ Room\\ Disinfectant\\ \\&\\ Freshener\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Nature\\ Spray\\ Room\\ Disinfectant\\ \\&\\ Freshener\\ \\-\\ Sandal$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Nature\\ Spray\\ Room\\ Disinfectant\\ \\&\\ Freshener\\ \\-\\ White\\ Lily$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Nature\\ Spray\\ Room\\ Disinfectant\\ \\&\\ Freshener\\ \\-\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Just\\ Mop\\ Floor\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Just\\ Mop\\ Toilet\\ \\&\\ Bathroom\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Glass\\ Cleaner,\\ Disinfectant\\ \\&\\ Insect\\ Repellent$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Glass Cleaner"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Cleaner,\\ Disinfectant\\ \\&\\ Insect\\ Repellent$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Fruit\\ \\&\\ Vegetable\\ Wash$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Naturedrop\\ Herbal\\ Liquid\\ Dish\\ Wash$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Natural\\ Dishwasher\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Natural\\ Fabric\\ Wash$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Natural\\ Laundry\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Natureclean\\ Herbal\\ Hand\\ Sanitiser$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^Naturerinse\\ Herbal\\ Foam\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Pet\\ Shampoo\\ \\&\\ Conditioner$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Pet Shampoo"
+      ]
+    }
+  ]
+}
