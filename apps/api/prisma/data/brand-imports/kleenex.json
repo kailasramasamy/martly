@@ -1,0 +1,65 @@
+{
+  "brand": "Kleenex (Kimberly-Clark)",
+  "manufacturer": "Kimberly-Clark India Pvt. Ltd.",
+  "feed": "kleenex-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kleenex/logo-c2d3dbac.png",
+  "themeColor": "#1E3E9C",
+  "themeColorSecondary": "#64B5E8",
+  "namePrefix": "Kleenex ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Kleenex Ultra Soft Facial Tissues": "Facial Tissues - 2 Ply",
+    "Kleenex Ultra Soft Toilet Paper (4 Rolls)": "Ultra Soft Bathroom Rolls - 3 Ply"
+  },
+  "rules": [
+    {
+      "match": "^Facial\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Facial\\ Tissue\\ Cube\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Paper\\ Hand\\ Towels\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Tissue\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Tissue\\ Rolls\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Soft\\ Bathroom\\ Rolls\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    }
+  ]
+}
