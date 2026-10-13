@@ -1,0 +1,38 @@
+{
+  "brand": "Hamam",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "hamam-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/hamam/logo-7883a768.png",
+  "themeColor": "#1E6B3A",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "Hamam ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Neem\\ Tulsi\\ \\&\\ Aloe\\ Vera\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Flower\\ \\&\\ Mint\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ Tulsi\\ \\&\\ Aloe\\ Vera\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    }
+  ]
+}
