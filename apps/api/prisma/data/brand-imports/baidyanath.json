@@ -1,0 +1,590 @@
+{
+  "brand": "Baidyanath",
+  "manufacturer": "Shree Baidyanath Ayurved Bhawan Pvt. Ltd.",
+  "feed": "baidyanath-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/baidyanath/logo-b19be0d1.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1E8F4E",
+  "namePrefix": "Baidyanath ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Gulkand$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Murabba"
+      ]
+    },
+    {
+      "match": "^Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Premium\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Chyawanprash\\ Special$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Kesari\\ Kalp\\ Royal\\ Chyawanprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Chyawan\\ Fit\\ Sugarfree\\ Chyawanprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Amla\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Juice\\ with\\ Pulp$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Juice\\ Ready\\ to\\ Drink$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Triphala\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Shankhapushpi\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Shilajeet\\ Capsule$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Shilajeet\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Musli\\ Pak$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Isabgol\\ Psyllium\\ Husk$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Isabbael\\ \\(H\\)\\ Granules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Bilwadi\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Hingwashtak\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Panchasakar\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Agnimukh\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Triphala\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Gaisantak\\ Bati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Chitrakadi\\ Bati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Supari\\ Pak$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Kasamrit\\ Herbal\\ Cough\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Mahanarayan\\ Taila$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Maha\\ Bhringraj\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Thanda\\ Kalyan\\ Tel$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Janmghunti$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Balarishta$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Lohasav$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Amritarishta$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Draksharishta$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Ashwagandharishta$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Abhayarishta$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Bhringrajasava$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Chandanasava$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Khadirarishta$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Mahamanjisthadi\\ Kadha$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Arjunchall\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Dhatu\\ Paushtik\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Haridrakhand\\ Brihat$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Akik\\ Pishti$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Abhrak\\ Bhasma$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Singhnad\\ Guggulu$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Gokshuradi\\ Guggulu$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Yogaraj\\ Guggulu$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kanchnar\\ Guggulu$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kaishore\\ Guggulu$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Chandraprabha\\ Bati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Arshakuthar\\ Ras$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Garbhpal\\ Ras$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Chandransu\\ Ras$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Tribhuwan\\ Keerti\\ Ras$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Basant\\ Kusumakar\\ Ras$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kamini\\ Vidrawan\\ Ras$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Medohar\\ Vidangadi\\ Lauh$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Punarnavadi\\ Mandoor$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Vridhivadhika\\ Bati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Brahmi\\ Bati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Sarpgandha\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Madhumehari\\ Yog\\ with\\ Gold$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Rumartho$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Rumartho\\ Gold\\ Plus$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pathrina\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Liverol\\ Strong$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pirrhoids\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Prostaid\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Vita\\-Ex\\ Gold\\ Plus\\ Capsule$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Vita\\-Ex\\ Gold\\ Women$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Vita\\-Ex\\ Massage\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Bilwa\\ Tel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    }
+  ]
+}
