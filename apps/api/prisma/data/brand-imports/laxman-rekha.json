@@ -1,0 +1,22 @@
+{
+  "brand": "Laxman Rekha",
+  "manufacturer": "Midas Hygiene Industries Pvt. Ltd.",
+  "feed": "laxman-rekha-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/laxman-rekha/logo-1e8ac0da.png",
+  "themeColor": "#EC3235",
+  "themeColorSecondary": "#FFE500",
+  "namePrefix": "Laxman Rekha ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Insect\\ Killer\\ Chalk$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    }
+  ]
+}
