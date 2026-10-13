@@ -1,0 +1,582 @@
+{
+  "brand": "Bombay Shaving Company",
+  "manufacturer": "Bombay Shaving Company Pvt. Ltd.",
+  "feed": "bombay-shaving-company-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/bombay-shaving-company/logo-0142ef78.png",
+  "themeColor": "#00B8D4",
+  "themeColorSecondary": "#0A0A0A",
+  "namePrefix": "Bombay Shaving Company ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^11\\-in\\-1\\ Power\\ Groomer\\ Beard\\ \\&\\ Body\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Legend\\ 365\\ 12\\-in\\-1\\ Multi\\ Groomer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Blo\\ Balls\\ \\&\\ Body\\ Groomer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Electric\\ Beard\\ Trimmer\\ \\-\\ Blue$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Electric\\ Beard\\ Trimmer\\ \\-\\ Classic\\ Black$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Full\\ Body\\ Trimmer\\ Limited\\ Edition$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Power\\ Play\\ NXT\\ Beard\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Power\\ Play\\ NXT\\ Type\\ C\\ Beard\\ Trimmer\\ \\-\\ Green$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Power\\ Play\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Premium\\ Multigroomer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Pro\\ Beard\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Power\\ Styler\\ Type\\ C\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Portable\\ Beard\\ Straightener$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^U\\-Shaped\\ Beard\\ Comb$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Beard\\ Shaper\\ Tool$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Shaving\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Sensi\\ Flo\\ 6\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Sensi\\ Flo\\ 6\\ Razor\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Sensi\\ Go\\ 5\\-Blade\\ Disposable\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Sensi\\ Smart3\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Sensi\\ Smart3\\ Razor\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Sensi\\ Stud\\ Aloe\\ Vera\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Dexter\\ V6\\ Sensitive\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Feather\\ Platinum\\ Coated\\ Razor\\ Blades$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Feather\\ Stainless\\ Steel\\ Blades$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Black\\ Precision\\ Safety\\ Razor\\ with\\ 5\\ Blades$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Shaving\\ Brush\\ \\-\\ Polished\\ Black\\ Handle$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Wooden\\ Shaving\\ Brush$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Shaving\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Shaving\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Tea\\ Tree\\ Shaving\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Shaving\\ Alum\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Post\\-Shave\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ \\&\\ Sandalwood\\ After\\ Shave\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Beard\\ Growth\\ Oil\\ with\\ Vetiver$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Beard\\ Growth\\ Onion\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Cedarwood\\ Beard\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Wood\\ Scented\\ Beard\\ Shampoo\\ \\&\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Wood\\ Scented\\ Moustache\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Brown\\ Black\\ Beard\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Natural\\ Black\\ Beard\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Coffee\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Anti\\ Acne\\ Salicylic\\ Acid\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Peel\\-Off\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Shea\\ Butter\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Sun\\ Protect\\ Gel\\ SPF\\ 50\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sun\\ Protect\\ Spray\\ SPF\\ 65\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Activated\\ Charcoal\\ Face\\ \\&\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Refreshing\\ Menthol\\ Face\\ \\&\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Bath\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Tea\\ Tree\\ \\&\\ Oatmeal\\ Oil\\ Control\\ Bath\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Shea\\ Butter\\ Coconut\\ Husk\\ \\&\\ Honey\\ Bath\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Shea\\ Butter\\ Coconut\\ Oil\\ Bath\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Refreshing\\ Menthol\\ Bath\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Fenugreek\\ \\&\\ Flaxseed\\ Hair\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Onion\\ \\&\\ Bhringraj\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Anti\\ Greying\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Desire\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Noir\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Red\\ Spice\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^No\\ Sweat\\ Roll\\-On\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Mexico\\ Eau\\ De\\ Toilette$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Black\\ Vibe\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    }
+  ]
+}
