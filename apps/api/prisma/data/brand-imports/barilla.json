@@ -1,0 +1,152 @@
+{
+  "brand": "Barilla",
+  "manufacturer": "Barilla G. e R. Fratelli S.p.A., Italy",
+  "feed": "barilla-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/barilla/logo-1d11c02d.png",
+  "themeColor": "#C3203B",
+  "themeColorSecondary": "#1C3A6E",
+  "namePrefix": "Barilla ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Barilla Arrabbiata Pasta Sauce": "Arrabbiata Pasta & Pizza Sauce"
+  },
+  "rules": [
+    {
+      "match": "^Spaghetti\\ n\\.5\\ Durum\\ Wheat\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Penne\\ Rigate\\ Durum\\ Wheat\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Fusilli\\ Durum\\ Wheat\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Farfalle\\ Durum\\ Wheat\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Maccheroni\\ Durum\\ Wheat\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Rigatoni\\ Durum\\ Wheat\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Linguine\\ n\\.13\\ Durum\\ Wheat\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Angel\\ Hair\\ n\\.1\\ Durum\\ Wheat\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Collezione\\ Fettuccine$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Collezione\\ Lasagne$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Integrale\\ Whole\\ Wheat\\ Spaghetti\\ n\\.5$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Integrale\\ Whole\\ Wheat\\ Pennette\\ Rigate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Arrabbiata\\ Pasta\\ \\&\\ Pizza\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Basilico\\ Pasta\\ \\&\\ Pizza\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Napoletana\\ Pasta\\ \\&\\ Pizza\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Olive\\ Pasta\\ \\&\\ Pizza\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Pesto\\ Genovese$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    }
+  ]
+}
