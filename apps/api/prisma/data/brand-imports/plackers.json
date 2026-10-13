@@ -1,0 +1,46 @@
+{
+  "brand": "Plackers",
+  "manufacturer": "Ranir LLC",
+  "feed": "plackers-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/plackers/logo-2f24bc96.png",
+  "themeColor": "#F26B4F",
+  "themeColorSecondary": "#1B3A6B",
+  "namePrefix": "Plackers ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Micro\\ Mint\\ Dental\\ Flossers$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Dental Floss"
+      ]
+    },
+    {
+      "match": "^Twin\\-Line\\ Whitening\\ Dental\\ Flossers$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Dental Floss"
+      ]
+    },
+    {
+      "match": "^Kids\\ Dental\\ Flossers$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Dental Floss"
+      ]
+    },
+    {
+      "match": "^Micro\\ Mint\\ Flossers\\ with\\ Travel\\ Case$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Dental Floss"
+      ]
+    }
+  ]
+}
