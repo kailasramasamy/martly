@@ -1,0 +1,86 @@
+{
+  "brand": "Listerine (J&J)",
+  "manufacturer": "Johnson & Johnson Pvt. Ltd.",
+  "feed": "listerine-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/listerine/logo-ce062073.png",
+  "themeColor": "#00857C",
+  "themeColorSecondary": "#1D1D1B",
+  "namePrefix": "Listerine ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cool\\ Mint\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Cool\\ Mint\\ Mild\\ Taste\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Original\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Freshburst\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Total\\ Care\\ Cavity\\ Fighter\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Total\\ Care\\ Mild\\ Taste\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Cool\\ Mint\\ Pocketmist\\ Oral\\ Care\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Freshburst\\ Pocketmist\\ Oral\\ Care\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Cool\\ Mint\\ Pocketpaks\\ Breath\\ Strips$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    }
+  ]
+}
