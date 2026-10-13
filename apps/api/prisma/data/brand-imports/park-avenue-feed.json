@@ -1,0 +1,2672 @@
+[
+ {
+  "title": "Good Morning After Shave Lotion",
+  "handle": "good-morning-after-shave-lotion",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/79617_2-park-avenue-good-morning-after-shave-lotion.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127472_3-park-avenue-after-shave-lotion-good-morning.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/79617_2-park-avenue-good-morning-after-shave-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/79617-2_2-park-avenue-good-morning-after-shave-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/79617-3_1-park-avenue-good-morning-after-shave-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127472_3-park-avenue-after-shave-lotion-good-morning.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Good Morning Lather Shaving Cream",
+  "handle": "good-morning-lather-shaving-cream",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "84g",
+    "price": "75",
+    "compare_at_price": "75",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290507_4-park-avenue-lather-shaving-cream-good-morning.jpg"
+    },
+    "barcode": "8901277012449"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290507_4-park-avenue-lather-shaving-cream-good-morning.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in a luxurious shaving experience with Park Avenue's Shave Foam Good Morning. Crafted to perfection, this shaving cream embodies the essence of a crisp morning breeze, awakening your senses and preparing you for the day ahead. Formulated with allantoin, an active skin protector, the rich, foamy lather cushions your skin, allowing your razor to glide effortlessly for a smooth and comfortable shave. Its moisturising properties leave your skin feeling soft and hydrated, while the fragrance from the same family as Good Morning deodorants adds a refreshing touch to your grooming routine. Elevate your daily shave with this expertly crafted shaving cream that delivers a truly indulgent and soothing experience.",
+   "usageInstructions": "Soak the shaving brush, apply shaving cream onto brush, Apply it on shaving area.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cool Blue Lather Shaving Cream",
+  "handle": "cool-blue-lather-shaving-cream",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "84g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290492_5-park-avenue-lather-shaving-cream-cool-blue.jpg"
+    },
+    "barcode": "8901277012425"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290492_5-park-avenue-lather-shaving-cream-cool-blue.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue lather shaving cream that contains skin-protecting allantoin with menthol and perfume. It keeps your skin cool and fresh.",
+   "usageInstructions": "Soak the shaving brush, apply shaving cream onto the brush. Apply it on shaving area.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Lather Shaving Cream",
+  "handle": "classic-lather-shaving-cream",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "84g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290485_6-park-avenue-lather-shaving-cream-classic.jpg"
+    },
+    "barcode": "8901277012401"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290485_6-park-avenue-lather-shaving-cream-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290485-2_1-park-avenue-lather-shaving-cream-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290485-3_1-park-avenue-lather-shaving-cream-classic.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue classic shaving cream is a good value cream. It makes fine lather and contains a fresh cologne scent. It has allantoin to heal and avoid razor burn. This shaving cream not only makes your facial hair softer, but also wets your skin so that you can obtain a spongy and silky skin after shaving.",
+   "usageInstructions": "Soak the shaving brush, apply shaving cream onto brush, Apply it on shaving area.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Shaving Brush",
+  "handle": "shaving-brush",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004598_3-park-avenue-shaving-brush-blister-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004598_3-park-avenue-shaving-brush-blister-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004598-2_1-park-avenue-shaving-brush-blister-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004598-3_1-park-avenue-shaving-brush-blister-pack.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Shaving Brush Blister Pack are exclusive shaving brushes that are made from synthetic imitation badger filaments These have the look and feel of natural badger hair and also gives same pleasure The brush hair are soft to skin and generates good foam with less water and in less time Suitable for all skin types they are available in wooden handles and natural black buffalo horn handles For Beauty tips tricks more visit",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cool Blue Premium Men's Soap",
+  "handle": "cool-blue-premium-men-s-soap",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290490_6-park-avenue-bathing-soap-cool-blue.jpg"
+    },
+    "barcode": "8901277012647"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290490_6-park-avenue-bathing-soap-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290490-2_2-park-avenue-bathing-soap-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290490-3_1-park-avenue-bathing-soap-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290490-4_1-park-avenue-bathing-soap-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290490-5_1-park-avenue-bathing-soap-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290490-6_1-park-avenue-bathing-soap-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290490-7_1-park-avenue-bathing-soap-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290490-8_1-park-avenue-bathing-soap-cool-blue.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Cool blue soap is infused with a multi-mineral energiser that spreads freshness throughout your body. The soap is formulated with a blend of sodium palmate, sodium palm kernelate, perfume, aqua, glycerin, and other ingredients to provide a refreshing bathing experience.",
+   "usageInstructions": "Park Avenue soap comes with standard packaging so remove the wrapper, apply the wet soap on your body. Rinse. Dry off.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pure Luxury Premium Men's Soap",
+  "handle": "pure-luxury-premium-men-s-soap",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610_6-park-avenue-bathing-soap-luxury.jpg"
+    },
+    "barcode": "8901277012661"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610_6-park-avenue-bathing-soap-luxury.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610-2_2-park-avenue-bathing-soap-luxury.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610-3_1-park-avenue-bathing-soap-luxury.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610-4_1-park-avenue-bathing-soap-luxury.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610-5_1-park-avenue-bathing-soap-luxury.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610-6_1-park-avenue-bathing-soap-luxury.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610-7_1-park-avenue-bathing-soap-luxury.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004610-8_1-park-avenue-bathing-soap-luxury.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lemon Storm Premium Men's Soap",
+  "handle": "lemon-storm-premium-men-s-soap",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612_6-park-avenue-bathing-soap-storm.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612_6-park-avenue-bathing-soap-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612-2_2-park-avenue-bathing-soap-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612-3_1-park-avenue-bathing-soap-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612-4_1-park-avenue-bathing-soap-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612-5_1-park-avenue-bathing-soap-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612-6_1-park-avenue-bathing-soap-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612-7_1-park-avenue-bathing-soap-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004612-8_1-park-avenue-bathing-soap-storm.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Storm soap is laden with a unique masculine scent which is strong and powerful It is enriched with the goodness of clove oil which spreads aroma and leaves you recharged For Beauty tips tricks more visit",
+   "usageInstructions": "Park Avenue soap comes with standard packaging so remove the wrapper, apply the wet soap on your body. Rinse. Dry off.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Good Morning Premium Men's Soap",
+  "handle": "good-morning-premium-men-s-soap",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608_6-park-avenue-bathing-soap-good-morning.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608_6-park-avenue-bathing-soap-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608-2_2-park-avenue-bathing-soap-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608-3_1-park-avenue-bathing-soap-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608-4_1-park-avenue-bathing-soap-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608-5_1-park-avenue-bathing-soap-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608-6_1-park-avenue-bathing-soap-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608-7_1-park-avenue-bathing-soap-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30004608-8_1-park-avenue-bathing-soap-good-morning.jpg"
+   }
+  ],
+  "details": {
+   "description": "Start your day with a refreshing and invigorating bathing experience using the Park Avenue Premium Men's Bath Soap - Good Morning. Crafted from natural ingredients, this luxurious soap leaves you feeling clean, fresh, and ready to take on the day. Enriched with tea tree oil and shea butter, it's suitable for all skin types and provides a long-lasting, pleasant fragrance. The premium composition of ingredients in this Park Avenue soap ensures a thorough cleanse that leaves you feeling rejuvenated and energised. Enjoy the benefits of natural ingredients and a revitalising scent as you begin your day with this exceptional men's bath soap.",
+   "usageInstructions": "Park Avenue soap comes with standard packaging so remove the wrapper, apply the wet soap on your body. Rinse. Dry off.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Germ Protect Premium Men's Soap",
+  "handle": "germ-protect-premium-men-s-soap",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "125g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40298382_1-park-avenue-premium-mens-soap-enriched-with-aloe-vera-kills-999-germs.jpg"
+    },
+    "barcode": "8901277018410"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298382_1-park-avenue-premium-mens-soap-enriched-with-aloe-vera-kills-999-germs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298382-2_1-park-avenue-premium-mens-soap-enriched-with-aloe-vera-kills-999-germs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298382-3_1-park-avenue-premium-mens-soap-enriched-with-aloe-vera-kills-999-germs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298382-4_1-park-avenue-premium-mens-soap-enriched-with-aloe-vera-kills-999-germs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298382-5_1-park-avenue-premium-mens-soap-enriched-with-aloe-vera-kills-999-germs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298382-6_1-park-avenue-premium-mens-soap-enriched-with-aloe-vera-kills-999-germs.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40298382-7_1-park-avenue-premium-mens-soap-enriched-with-aloe-vera-kills-999-germs.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Premium Men's Soap combines gentle skin care with 99.9% germ protection. It is enriched with Aloe vera which has refreshing, cooling and hydration properties. Soap is now fortified with a rich skin conditioner that moisturises your skin and shea butter to hydrate your skin instantly.",
+   "usageInstructions": "Lather the wet bar, massage on wet face and body and rinse thoroughly.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Beer Anti Dandruff Shampoo",
+  "handle": "beer-anti-dandruff-shampoo",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034_8-park-avenue-beer-shampoo-anti-dandruff.jpg"
+    }
+   },
+   {
+    "title": "350ml",
+    "price": "285",
+    "compare_at_price": "285",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127492_4-park-avenue-beer-shampoo-anti-dandruff.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034_8-park-avenue-beer-shampoo-anti-dandruff.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034-2_5-park-avenue-beer-shampoo-anti-dandruff.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034-3_4-park-avenue-beer-shampoo-anti-dandruff.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034-4_2-park-avenue-beer-shampoo-anti-dandruff.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034-5_2-park-avenue-beer-shampoo-anti-dandruff.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034-6_2-park-avenue-beer-shampoo-anti-dandruff.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034-7_1-park-avenue-beer-shampoo-anti-dandruff.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007034-8_1-park-avenue-beer-shampoo-anti-dandruff.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park avenue beer shampoo is a unisex shampoo The shampoo adds bounce to your strands and a natural sheen so you flaunt silky and bouncy hair always Made of barley and hops For Beauty tips tricks more visit",
+   "usageInstructions": "This is for external Use only. Not for internal consumption.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Beer Damage Free Shampoo",
+  "handle": "beer-damage-free-shampoo",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136_9-park-avenue-beer-shampoo-damage-free.jpg"
+    }
+   },
+   {
+    "title": "350ml",
+    "price": "285",
+    "compare_at_price": "285",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007035_10-park-avenue-beer-shampoo-damage-free.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206039_3-park-avenue-beer-shampoo-damage-free.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136_9-park-avenue-beer-shampoo-damage-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136-2_4-park-avenue-beer-shampoo-damage-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136-3_3-park-avenue-beer-shampoo-damage-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136-4_2-park-avenue-beer-shampoo-damage-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136-5_2-park-avenue-beer-shampoo-damage-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136-6_2-park-avenue-beer-shampoo-damage-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136-7_1-park-avenue-beer-shampoo-damage-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40075136-8_1-park-avenue-beer-shampoo-damage-free.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "1. Wet hair thoroughly with water.\n2. Apply a small amount of Park Avenue Beer Shampoo to the scalp and hair.\n3. Gently massage the shampoo into the hair and scalp.\n4. Rinse thoroughly with water.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Beer Shiny & Bouncy Shampoo",
+  "handle": "beer-shiny-bouncy-shampoo",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033_8-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+    },
+    "barcode": "8901277013040"
+   },
+   {
+    "title": "350ml",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127496_6-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "750",
+    "compare_at_price": "750",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206040_3-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033_8-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033-2_6-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033-3_5-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033-4_2-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033-5_2-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033-6_2-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033-7_1-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007033-8_1-park-avenue-beer-shampoo-shiny-bouncy.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Godrej Consumer Products Ltd"
+  }
+ },
+ {
+  "title": "Cool Blue Fragrance Body Spray",
+  "handle": "cool-blue-fragrance-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290501_8-park-avenue-fragrance-body-spray-cool-blue.jpg"
+    }
+   },
+   {
+    "title": "220ml",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007022_8-park-avenue-fragrance-body-spray-cool-blue.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290501_8-park-avenue-fragrance-body-spray-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290501-2_5-park-avenue-fragrance-body-spray-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290501-3_2-park-avenue-fragrance-body-spray-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290501-4_2-park-avenue-fragrance-body-spray-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290501-5_2-park-avenue-fragrance-body-spray-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290501-6_2-park-avenue-fragrance-body-spray-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290501-7_2-park-avenue-fragrance-body-spray-cool-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290501-8_2-park-avenue-fragrance-body-spray-cool-blue.jpg"
+   }
+  ],
+  "details": {
+   "description": "Cool Blue opens with oceanic cool fresh notes that shall remind you of a beach vacation powered by a combination of spicy clove with citrusy lemon Nice fruity heart blended with the heavy woody character helps to hold the fragrance for a long time on the body For Beauty tips tricks more visit",
+   "usageInstructions": "Shake well and hold can 15cm from under arm & spray. Caution- Pressurised container. Protect from Sunlight. Do not expose to temperature exceeding 15 degree C. Do not pierce or burn even after use.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Good Morning Fragrance Body Spray",
+  "handle": "good-morning-fragrance-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290503_8-park-avenue-fragrance-body-spray-good-morning.jpg"
+    },
+    "barcode": "8901277007087"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290503_8-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290503-2_4-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290503-3_2-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290503-4_2-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290503-5_2-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290503-6_2-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290503-7_2-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290503-8_2-park-avenue-fragrance-body-spray-good-morning.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Good Morning Premium Body Spray",
+  "handle": "good-morning-premium-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "190ml",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023_14-park-avenue-fragrance-body-spray-good-morning.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023_14-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023-2_7-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023-3_3-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023-4_3-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023-5_3-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023-6_3-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023-7_3-park-avenue-fragrance-body-spray-good-morning.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40007023-8_3-park-avenue-fragrance-body-spray-good-morning.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Shake well before use.\nHold the can upright and spray from approximately 15 cm away onto the underarms and body.\nAvoid direct inhalation. Keep out of reach of children.",
+   "manufacturerName": "(refer to the address code after the Batch No.)",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Good Morning Intense Perfume Body Spray",
+  "handle": "good-morning-intense-perfume-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "130ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494_4-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+    },
+    "barcode": "8901277016348"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494_4-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494-2_4-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494-3_2-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494-4_2-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494-5_2-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494-6_2-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494-7_2-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127494-8_1-park-avenue-perfume-body-spray-good-morning-intense.jpg"
+   }
+  ],
+  "details": {
+   "description": "Crafted with the unique fragrances of Patchouli and Mandarin, this perfume spray will help you start your day on a refreshing note. It is travel friendly and can be used whenever needed.",
+   "usageInstructions": "Shake well and hold the can 15 cm from the underarms and spray.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Storm Deodorant",
+  "handle": "storm-deodorant",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290495_8-park-avenue-deodorant-storm.jpg"
+    }
+   },
+   {
+    "title": "220ml",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40007024_9-park-avenue-perfume-body-spray-storm.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290495_8-park-avenue-deodorant-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290495-2_5-park-avenue-deodorant-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290495-3_2-park-avenue-deodorant-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290495-4_2-park-avenue-deodorant-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290495-5_2-park-avenue-deodorant-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290495-6_2-park-avenue-deodorant-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290495-7_2-park-avenue-deodorant-storm.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290495-8_2-park-avenue-deodorant-storm.jpg"
+   }
+  ],
+  "details": {
+   "description": "Storm is a pure blend of refreshing floral ylang notes with a touch of exiting refreshing clove spicy notes Its residual Musky note will be with you and gives the day long fresh and clean feel For Beauty tips tricks more visit",
+   "usageInstructions": "Shake well and hold can 15cm from under arm & spray. Caution- Pressurised container. Protect from Sunlight. Do not expose to temperature exceeding 15 degree C. Do not pierce or burn even after use.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Voyage Body Spray",
+  "handle": "voyage-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290497_8-park-avenue-body-spray-voyage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290497_8-park-avenue-body-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290497-2_5-park-avenue-body-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290497-3_2-park-avenue-body-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290497-4_2-park-avenue-body-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290497-5_2-park-avenue-body-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290497-6_2-park-avenue-body-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290497-7_2-park-avenue-body-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290497-8_2-park-avenue-body-spray-voyage.jpg"
+   }
+  ],
+  "details": {
+   "description": "Voyage Opens with a fresh Citrus Mandarin note followed by a sweet spicy like a nutmeg cinnamon The residual bottom note is fresh Vetiver with heavy stable notes like sandal patchouli and musk For Beauty tips tricks more visit",
+   "usageInstructions": "Shake well and hold can 15cm from underarm & spray. Caution- Pressurised container. Protect from Sunlight. Do not expose to temperature exceeding 15 degrees C. Do not pierce or burn even after use.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Voyage Premium Body Spray",
+  "handle": "voyage-premium-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "190ml",
+    "price": "350",
+    "compare_at_price": "350",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927_13-park-avenue-perfume-spray-voyage.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927_13-park-avenue-perfume-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927-2_4-park-avenue-perfume-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927-3_4-park-avenue-perfume-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927-4_4-park-avenue-perfume-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927-5_4-park-avenue-perfume-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927-6_4-park-avenue-perfume-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927-7_4-park-avenue-perfume-spray-voyage.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40056927-8_3-park-avenue-perfume-spray-voyage.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your presence with Park Avenue Signature Collection Voyage Premium Body Spray. This refined fragrance blends invigorating notes for a captivating scent that lasts all day. Perfect for those who seek a touch of sophistication, its unique formula offers a refreshing and long-lasting fragrance, ensuring you stay confidently aromatic from morning to night.",
+   "manufacturerName": "(A) Primacy Industries Pvt. Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neo Premium Body Spray",
+  "handle": "neo-premium-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "190ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484_10-park-avenue-perfume-spray-neo-change-the-game.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484_10-park-avenue-perfume-spray-neo-change-the-game.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484-2_4-park-avenue-perfume-spray-neo-change-the-game.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484-3_4-park-avenue-perfume-spray-neo-change-the-game.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484-4_4-park-avenue-perfume-spray-neo-change-the-game.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484-5_4-park-avenue-perfume-spray-neo-change-the-game.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484-6_4-park-avenue-perfume-spray-neo-change-the-game.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484-7_4-park-avenue-perfume-spray-neo-change-the-game.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127484-8_3-park-avenue-perfume-spray-neo-change-the-game.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Shake well and hold the can 15 cm from the underarms and spray.",
+   "manufacturerName": "(A) Primacy Industries Pvt. Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Alexander Body Spray",
+  "handle": "alexander-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113688_6-park-avenue-body-fragrance-alexander.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113688_6-park-avenue-body-fragrance-alexander.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113688-2_6-park-avenue-body-fragrance-alexander.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113688-3_3-park-avenue-body-fragrance-alexander.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113688-4_3-park-avenue-body-fragrance-alexander.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113688-5_3-park-avenue-body-fragrance-alexander.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113688-6_1-park-avenue-body-fragrance-alexander.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113688-7_1-park-avenue-body-fragrance-alexander.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Alexander Truly for the masculine spirit which is high in optimism The top note opens up with bergamot and settles down with musk and amber It has floral notes at the heart which will ensure spirits are always high For Beauty tips tricks more visit Acirc",
+   "usageInstructions": "After the shower, take the Park Avenue Perfume Spray and shake it well. Hold the can 15cm from underarm and spray. Enjoy the fragrance and the feeling of freshness all day long.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Epic Body Spray",
+  "handle": "epic-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687_6-park-avenue-body-fragrance-epic.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687_6-park-avenue-body-fragrance-epic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687-2_6-park-avenue-body-fragrance-epic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687-3_3-park-avenue-body-fragrance-epic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687-4_3-park-avenue-body-fragrance-epic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687-5_3-park-avenue-body-fragrance-epic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687-6_1-park-avenue-body-fragrance-epic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687-7_1-park-avenue-body-fragrance-epic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113687-8_1-park-avenue-body-fragrance-epic.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Epic For the Men whose style and class are simply Epic The fragrance has got the vibrant aroma of aqua and citrus amalgamation laden with ylang accords It settles with fine musky and woody undertones to make it best in class For Beauty tips tricks more visit",
+   "usageInstructions": "After the shower, take the Park Avenue Perfume Spray and shake it well. Hold the can 15cm from underarm and spray. Enjoy the fragrance and the feeling of freshness all day long.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Marcus Body Spray",
+  "handle": "marcus-body-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689_6-park-avenue-body-fragrance-marcus.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689_6-park-avenue-body-fragrance-marcus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689-2_6-park-avenue-body-fragrance-marcus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689-3_3-park-avenue-body-fragrance-marcus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689-4_3-park-avenue-body-fragrance-marcus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689-5_3-park-avenue-body-fragrance-marcus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689-6_1-park-avenue-body-fragrance-marcus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689-7_1-park-avenue-body-fragrance-marcus.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40113689-8_1-park-avenue-body-fragrance-marcus.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Marcus Fragrance that will stamp your glorious class It revolves around fresh citrus aromatic oriental notes is reinforced by the sweet vanillic gourmand notes that will surely create a classy lingering effect For Beauty tips tricks more visit",
+   "usageInstructions": "After the shower, take the Park Avenue Perfume Spray and shake it well. Hold the can 15cm from the underarm and spray. Enjoy the fragrance and the feeling of freshness all day long.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Naturel Spice Trail Deodorant",
+  "handle": "naturel-spice-trail-deodorant",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544-2_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544-3_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544-4_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544-5_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544-6_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544-7_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288544-8_1-park-avenue-deodorant-naturel-collection-spice-trail-for-men-longlasting-fragrance.jpg"
+   }
+  ],
+  "details": {
+   "description": "Intense & appealing, Park Avenue's Misty Trail is for men who are in supercharged mode. Its blend of sweet intense cardamom spice with a combination of French Lavender makes this fragrance unique and long lasting.",
+   "usageInstructions": "Shake well before use.\nHold the can 15cm away from the underarm and spray.\nDo not apply to broken or irritated skin.\nAllow skin to dry completely before dressing.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sportz Power Aqua Punch Deodorant",
+  "handle": "sportz-power-aqua-punch-deodorant",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542-2_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542-3_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542-4_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542-5_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542-6_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542-7_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272542-8_1-park-avenue-sportz-power-deodorant-aqua-punch-odor-netraliser-effect.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Sportz Power Deodorant lasts through your gym time. The Park Avenue Sportz Power Deodorant has a strong long-lasting formula. Whether you need to hit the gym or go play sports, the Park Avenue Power Deodorant is your perfect partner. The essence of the Power deodorant will make you feel fresh through the day, it has a cooling effect on your body, and doesn't disappear when you sweat. The perfect carry-on deodorant, the Park Avenue Sportz Power Deodorant is a must-have. Explore the wide range of Park Avenue Sportz Deodorants including Force, Style and more available on Big Basket.",
+   "usageInstructions": "Shake well before use. Hold can 15cm away from underarm and spray. Do not apply it to broken or irritated skin. Allow skin to dry completely before dressing.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Impact Icon Perfumed Deodorant",
+  "handle": "impact-icon-perfumed-deodorant",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "130ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458_7-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+    },
+    "barcode": "8901277013705"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458_7-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458-2_6-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458-3_4-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458-4_4-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458-5_4-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458-6_4-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458-7_4-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019458-8_4-park-avenue-perfumed-deodoramt-impact-icon.jpg"
+   }
+  ],
+  "details": {
+   "description": "Begin every new day with the sparkling mist of citruses intertwining the essence of floriental and woody undertones that will soothe your senses and elevate your dreams.",
+   "usageInstructions": "Shake well and hold can 15cm from under arm and spray liberally. Do not spray near eyes or on broken skin. Caution- Pressurised container. Protect from Sunlight. Do not expose to temprature exceeding 15 degree C. Do not pierce or burn even after use.",
+   "manufacturerName": "Godrej Consumer Products Ltd"
+  }
+ },
+ {
+  "title": "Elevate Perfume Spray",
+  "handle": "elevate-perfume-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019461_3-park-avenue-perfume-spray-elevate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019461_3-park-avenue-perfume-spray-elevate.jpg"
+   }
+  ],
+  "details": {
+   "description": "The sensual yet masculine fragrance in Elevate perfume spray combined with emollient acts as an anti irritant and gives you a relaxed day ahead For Beauty tips tricks more visit",
+   "usageInstructions": "Shake well and hold can 15cm from underarm & spray. Caution- Pressurised container. Protect from Sunlight. Do not expose to temperature exceeding 15 degrees C. Do not pierce or burn even after use.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Alter Ego Perfume Spray",
+  "handle": "alter-ego-perfume-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/290496_8-park-avenue-perfume-spray-alter-ego.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290496_8-park-avenue-perfume-spray-alter-ego.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290496-2_3-park-avenue-perfume-spray-alter-ego.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290496-3_2-park-avenue-perfume-spray-alter-ego.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290496-4_2-park-avenue-perfume-spray-alter-ego.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290496-5_2-park-avenue-perfume-spray-alter-ego.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290496-6_2-park-avenue-perfume-spray-alter-ego.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290496-7_2-park-avenue-perfume-spray-alter-ego.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/290496-8_2-park-avenue-perfume-spray-alter-ego.jpg"
+   }
+  ],
+  "details": {
+   "description": "Alter EGO Refreshing green nutmeg spicy top note with a strong ambery musky base This perfume spray is combined with emollients which acts as an anti irritant and keeps you relaxed all day long For Beauty tips tricks more visit",
+   "usageInstructions": "Shake well and hold can 15cm from underarm & spray. Caution- Pressurised container. Protect from Sunlight. Do not expose to temperature exceeding 15 degrees C. Do not pierce or burn even after use.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neo Perfume Spray",
+  "handle": "neo-perfume-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442_7-park-avenue-perfume-spray-neo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442_7-park-avenue-perfume-spray-neo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442-2_4-park-avenue-perfume-spray-neo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442-3_2-park-avenue-perfume-spray-neo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442-4_2-park-avenue-perfume-spray-neo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442-5_2-park-avenue-perfume-spray-neo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442-6_2-park-avenue-perfume-spray-neo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442-7_2-park-avenue-perfume-spray-neo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40061442-8_2-park-avenue-perfume-spray-neo.jpg"
+   }
+  ],
+  "details": {
+   "description": "Neo It has a blend of Gourmand notes like Mango orange peach with a touch of Jasmine and settles down with Amber Patchouli notes For Beauty tips tricks more visit",
+   "usageInstructions": "Shake well and hold can 15cm from underarm & spray. Caution- Pressurised container. Protect from Sunlight. Do not expose to temperature exceeding 15 degrees C. Do not pierce or burn even after use.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Trance Perfume Spray",
+  "handle": "trance-perfume-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "135ml",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075_7-park-avenue-perfume-spray-trance.jpg"
+    },
+    "barcode": "8901277014863"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075_7-park-avenue-perfume-spray-trance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075-2_5-park-avenue-perfume-spray-trance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075-3_3-park-avenue-perfume-spray-trance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075-4_1-park-avenue-perfume-spray-trance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075-5_1-park-avenue-perfume-spray-trance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075-6_1-park-avenue-perfume-spray-trance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075-7_1-park-avenue-perfume-spray-trance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106075-8_1-park-avenue-perfume-spray-trance.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Good Morning Ultimate Perfume",
+  "handle": "good-morning-ultimate-perfume",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495_5-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+    },
+    "barcode": "8901277016362"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495_5-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495-2_5-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495-3_3-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495-4_3-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495-5_3-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495-6_3-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495-7_3-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127495-8_3-park-avenue-perfume-liquid-good-morning-ultimate.jpg"
+   }
+  ],
+  "details": {
+   "description": "Crafted with the unique fragrances of Patchouli and Mandarin, this perfume liquid will help you start your day on a refreshing note. It is travel-friendly and can be used whenever needed.",
+   "usageInstructions": "Shake well and hold the can 15 cm from the underarms and spray.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Icon Premium Perfume",
+  "handle": "icon-premium-perfume",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150ml",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40106076_4-park-avenue-premium-perfume-icon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106076_4-park-avenue-premium-perfume-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106076-2_4-park-avenue-premium-perfume-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106076-3_2-park-avenue-premium-perfume-icon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106076-4_1-park-avenue-premium-perfume-icon.jpg"
+   }
+  ],
+  "details": {
+   "description": "For the man other men aspire to be For the man who is an icon Begin every day on a citrusy note with floral woody undertones that both soothe and elevate your senses Park Avenue Premium Perfume is 100 perfume liquid with 0 gas It has 4 times more perfume concentration and is enriched with natural aromatic oils which ensures that through just one application you smell amazing up to 12 hours For Beauty tips tricks more visit Acirc",
+   "usageInstructions": "After a shower, take the Park Avenue Premium Perfume and shake it well. Hold the can 15cm from underarm and spray. Enjoy the fragrance and the feeling of freshness all day long.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Magnifico Premium Perfume",
+  "handle": "magnifico-premium-perfume",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "130ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078_9-park-avenue-premium-perfume-magnifico.jpg"
+    },
+    "barcode": "8901277014146"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078_9-park-avenue-premium-perfume-magnifico.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078-2_9-park-avenue-premium-perfume-magnifico.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078-3_3-park-avenue-premium-perfume-magnifico.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078-4_1-park-avenue-premium-perfume-magnifico.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078-5_1-park-avenue-premium-perfume-magnifico.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078-6_1-park-avenue-premium-perfume-magnifico.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078-7_1-park-avenue-premium-perfume-magnifico.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106078-8_1-park-avenue-premium-perfume-magnifico.jpg"
+   }
+  ],
+  "details": {
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Regal Premium Perfume",
+  "handle": "regal-premium-perfume",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "130ml",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077_9-park-avenue-premium-perfume-regal.jpg"
+    },
+    "barcode": "8901277013729"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077_9-park-avenue-premium-perfume-regal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077-2_9-park-avenue-premium-perfume-regal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077-3_6-park-avenue-premium-perfume-regal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077-4_2-park-avenue-premium-perfume-regal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077-5_2-park-avenue-premium-perfume-regal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077-6_2-park-avenue-premium-perfume-regal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077-7_2-park-avenue-premium-perfume-regal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106077-8_2-park-avenue-premium-perfume-regal.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your fragrance experience with Park Avenue Premium Perfume, a sophisticated and refined scent that exudes regal elegance. Crafted by international experts, this long-lasting perfume combines the captivating notes of citrus and Oudh, reinforced with alluring musky undertones. Enriched with natural aromatic oils, it ensures a mesmerising fragrance that lasts up to 12 hours, making it the perfect companion for both formal and everyday occasions. Indulge in a premium fragrance experience that will dominate your world and leave a lasting impression.",
+   "usageInstructions": "Step 1\nAfter a shower, take the Park Avenue Premium Perfume and shake it well.\nStep 2\nHold the can 15cm from underarm and spray\nStep 3\nEnjoy the fragrance and the feeling of freshness all day long.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Voyage Corsica Cool Premium Perfume",
+  "handle": "voyage-corsica-cool-premium-perfume",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120ml",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+    },
+    "barcode": "8901277019691"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756-2_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756-3_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756-4_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756-5_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756-6_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756-7_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319756-8_1-park-avenue-signature-collection-voyage-premium-perfume-corsica-cool.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Voyage Corsica Cool is for the man who never stops exploring. Crafted by Brazilian perfumers, its three-layered notes are intended to unravel with time. While the fresh oceanic notes transport you to the azure beaches of Corsica to rejuvenate you, the playful combination of melon and citrus adds a refreshing twist.\nKickstart your Voyage, today!",
+   "usageInstructions": "Spray on pulse points: behind the ears and on your wrists.",
+   "manufacturerName": "A.] Suhan Aerosol",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Voyage Savanna Fresh Premium Perfume",
+  "handle": "voyage-savanna-fresh-premium-perfume",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120ml",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+    },
+    "barcode": "8901277019707"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757-2_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757-3_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757-4_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757-5_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757-6_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757-7_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319757-8_1-park-avenue-signature-collection-voyage-premium-perfume-savanna-fresh.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Vovage Savanna Fresh is for the man who never stops exploring. Inspired by the grasslands of the Savanna, its exotic three-layered notes of patchouli from Indonesia give it a deep woody base. At the same time, the aromatic lavender, complemented by a hint of turmeric leaf, makes it energizing and refreshing.",
+   "usageInstructions": "Spray on pulse points: behind the ears and on your wrists.",
+   "manufacturerName": "A.] Suhan Aerosol",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Voyage Amazon Woods Perfume Spray",
+  "handle": "voyage-amazon-woods-perfume-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120ml",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272547_4-park-avenue-voyage-amazon-woods-perfume-spray-premium-zero-gas.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272547_4-park-avenue-voyage-amazon-woods-perfume-spray-premium-zero-gas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272547-2_4-park-avenue-voyage-amazon-woods-perfume-spray-premium-zero-gas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272547-3_3-park-avenue-voyage-amazon-woods-perfume-spray-premium-zero-gas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272547-4_3-park-avenue-voyage-amazon-woods-perfume-spray-premium-zero-gas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272547-5_3-park-avenue-voyage-amazon-woods-perfume-spray-premium-zero-gas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272547-6_3-park-avenue-voyage-amazon-woods-perfume-spray-premium-zero-gas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272547-7_1-park-avenue-voyage-amazon-woods-perfume-spray-premium-zero-gas.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience the perfect balance of sensuality and masculinity with our elevating Park Avenue Voyage Amazon Woods Perfume Spray. This long-lasting, skin-friendly deodorant spray keeps you calm, confident and energetic all day long. Crafted with a fresh, woody scent, it's the ideal choice for daily use, whether you're heading to the office, a party or college. The Zero-gas formula ensures you stay refreshed and smell great, with your magnetic presence felt wherever you go. Suitable for all skin types, this perfume spray lingers around you for a long duration while keeping your skin free from damage and irritation. Explore a wide range of mesmerising and zesty perfume sprays from Park Avenue only on Big Basket.",
+   "usageInstructions": "Shake well before use. Hold can 15cm away from underarm and spray. Do not apply it to broken or irritated skin. Allow skin to dry completely before dressing.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Zest No Gas Perfume Spray",
+  "handle": "zest-no-gas-perfume-spray",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272550_1-park-avenue-zest-no-gas-perfume-spray-for-men-signature-collection-long-lasting-fragrance.jpg"
+    },
+    "barcode": "8901277019226"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272550_1-park-avenue-zest-no-gas-perfume-spray-for-men-signature-collection-long-lasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272550-2_1-park-avenue-zest-no-gas-perfume-spray-for-men-signature-collection-long-lasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272550-3_1-park-avenue-zest-no-gas-perfume-spray-for-men-signature-collection-long-lasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272550-4_1-park-avenue-zest-no-gas-perfume-spray-for-men-signature-collection-long-lasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272550-5_1-park-avenue-zest-no-gas-perfume-spray-for-men-signature-collection-long-lasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272550-6_1-park-avenue-zest-no-gas-perfume-spray-for-men-signature-collection-long-lasting-fragrance.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Zest No Gas Perfume Spray for Men is the best option as you head out to a party. This Park Avenue Zest No Gas Perfume Spray for Men is ideal for daily use and makes for a refreshing deodorant for guys. It has zero gas and a fresh, woody aroma. Use it if you're going to the office, a party, or even just college. This spray makes sure you smell amazing all day long and lasts for a long time. Explore a wide range of mesmerising and zesty perfume sprays from Park Avenue only on Big Basket.",
+   "usageInstructions": "Spray for instant freshness and tempting fragrance all day long.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Conquer Eau De Parfum",
+  "handle": "conquer-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617_4-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "749",
+    "compare_at_price": "749",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40252620_7-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617_4-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617-2_4-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617-3_3-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617-4_3-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617-5_3-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617-6_3-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617-7_2-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252617-8_1-park-avenue-eau-de-perfume-conquer-mix-of-citrus-exotic-spices-woody-vanilla.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Spray on pulse points: behind the ears and on your wrists.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Euphoria Eau De Parfum",
+  "handle": "euphoria-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618_5-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40252621_7-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618_5-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618-2_5-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618-3_4-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618-4_4-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618-5_4-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618-6_3-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618-7_3-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252618-8_2-park-avenue-eau-de-perfume-euphoria-mix-of-orange-amber-musk.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your grooming routine with the captivating Park Avenue Euphoria fragrance. This premium scent blends the pulsating energy of feisty orange flowers and fruity top notes with an aromatic base of amber and musk, creating a sophisticated and long-lasting fragrance. Designed to help you rule the room with confidence, the unique and intense formula of this perfume will leave a magnetic presence that is sure to be felt. Suitable for daily wear and special occasions alike, this premium fragrance offers a contrasting yet harmonious experience that celebrates the belief that life is a party. Developed using international standard fragrances and elevated research, Park Avenue products are crafted to stand the test of quality and consistency, ensuring you can stay energetic and groomed all day long.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Harmony Eau De Parfum",
+  "handle": "harmony-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "449",
+    "compare_at_price": "449",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619_4-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "749",
+    "compare_at_price": "749",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40252622_9-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619_4-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619-2_4-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619-3_3-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619-4_3-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619-5_3-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619-6_2-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619-7_2-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40252619-8_1-park-avenue-eau-de-perfume-harmony-with-patchouli-musk-vetiver.jpg"
+   }
+  ],
+  "details": {
+   "description": "Just wake you up with tangy fresh top notes. Followed by the calm of patchouli heart notes, rounded off by deep base notes of musk and vetivre in a symphony of refreshing perfection.\nThe Park Avenue range includes Fragrances, Body Care Solutions, Shaving Systems and Hair Care Solutions for the grooming needs of today’s man. Park Avenue products are developed using international standard fragrances and a high level of research to ensure that the products stand the test of quality and consistency.",
+   "usageInstructions": "Spray on pulse points: behind the ears and on your wrists.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Good Morning Eternity Eau De Parfum",
+  "handle": "good-morning-eternity-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272540_1-park-avenue-eau-de-perfume-good-morning-eternity-signature-collection-for-men.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272540_1-park-avenue-eau-de-perfume-good-morning-eternity-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272540-2_1-park-avenue-eau-de-perfume-good-morning-eternity-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272540-3_1-park-avenue-eau-de-perfume-good-morning-eternity-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272540-4_1-park-avenue-eau-de-perfume-good-morning-eternity-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272540-5_1-park-avenue-eau-de-perfume-good-morning-eternity-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272540-6_1-park-avenue-eau-de-perfume-good-morning-eternity-signature-collection-for-men.jpg"
+   }
+  ],
+  "details": {
+   "description": "Start your day right with the Park Avenue Eau De Perfume Good Morning Eternity. This sophisticated, long-lasting fragrance provides a refreshing and masculine scent that will linger throughout your day, no matter what activities you have planned. Crafted with natural ingredients, this perfume will not dry out your skin or leave any stains behind. Explore the wide range of Park Avenue Eau De Parfum, including the captivating Voyage Obsession, and let your magnetic presence be felt wherever you go. Stay energetic and fresh all day long with this body spray that is suitable for all skin types. Reimagine your fragrance experience and be the man who makes a difference, at work, at home, and everywhere in between.",
+   "usageInstructions": "Spray on pulse points: behind the ears and on your wrists.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Voyage Obsession Eau De Parfum",
+  "handle": "voyage-obsession-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50ml",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40272541_1-park-avenue-eau-de-perfume-voyage-obsession-signature-collection-for-men.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272541_1-park-avenue-eau-de-perfume-voyage-obsession-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272541-2_1-park-avenue-eau-de-perfume-voyage-obsession-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272541-3_1-park-avenue-eau-de-perfume-voyage-obsession-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272541-4_1-park-avenue-eau-de-perfume-voyage-obsession-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272541-5_1-park-avenue-eau-de-perfume-voyage-obsession-signature-collection-for-men.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40272541-6_1-park-avenue-eau-de-perfume-voyage-obsession-signature-collection-for-men.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your style with the captivating Park Avenue Voyage Obsession Eau De Parfum. This sophisticated fragrance offers a powerful and masculine blend of scents that leave a lasting impression. Crafted with a rich and invigorating combination of amber, mandarin, woody, and musky notes, the fragrance opens with a fresh citrus and mandarin aroma, followed by a sweet, spicy undertone of nutmeg and cinnamon. The three-layered notes unfold over time, creating a fragrance that is the perfect companion for the modern man seeking new adventures. Designed to complement your personality with elegance, this long-lasting parfum will have everyone around you wanting to experience its captivating allure. Bring home Voyage Obsession today and redefine your fragrance collection with timeless appeal.",
+   "usageInstructions": "Spray on pulse points: behind the ears and on your wrists.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Knight Eau De Parfum",
+  "handle": "knight-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688_1-park-avenue-knight-eau-de-parfum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688_1-park-avenue-knight-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688-2_1-park-avenue-knight-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688-3_1-park-avenue-knight-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688-4_1-park-avenue-knight-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688-5_1-park-avenue-knight-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688-6_1-park-avenue-knight-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688-7_1-park-avenue-knight-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343688-8_1-park-avenue-knight-eau-de-parfum.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Knight is a fragrance designed for men, offering a blend of aromatic and woody notes to create a sophisticated and charismatic scent profile. Park Avenue Knight is designed to evoke a sense of confidence, elegance, and sophistication. It's a fragrance that exudes charisma and charm, making it suitable for formal occasions, evening wear, or anytime a touch of refinement is desired. With its balanced blend of citrus, herbs, woods, and musk, Park Avenue Knight offers a timeless and versatile scent that leaves a memorable impression.",
+   "manufacturerName": "Godrej Consumer Products Limited 4th Floor",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Samurai Eau De Parfum",
+  "handle": "samurai-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689_1-park-avenue-samurai-eau-de-parfum.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689_1-park-avenue-samurai-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689-2_1-park-avenue-samurai-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689-3_1-park-avenue-samurai-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689-4_1-park-avenue-samurai-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689-5_1-park-avenue-samurai-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689-6_1-park-avenue-samurai-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689-7_1-park-avenue-samurai-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40343689-8_1-park-avenue-samurai-eau-de-parfum.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Samurai belongs to the woody aromatic fragrance family, characterised by a blend of fresh and spicy notes with woody undertones. Park Avenue Samurai is designed for the modern man who exudes strength, confidence, and sophistication. Its versatile composition makes it suitable for various occasions, whether it's a day at the office or a night out on the town. With its harmonious blend of fresh, spicy, and woody notes, this fragrance leaves a lasting impression, making it a staple in any discerning gentleman's collection.",
+   "manufacturerName": "Godrej Consumer Products Limited 4th Floor",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Oud Eau De Parfum",
+  "handle": "oud-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+    },
+    "barcode": "8901277020192"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060-2_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060-3_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060-4_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060-5_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060-6_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060-7_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338060-8_2-park-avenue-park-avenue-oud-eau-de-parfum.jpg"
+   }
+  ],
+  "details": {
+   "description": "Park Avenue Oud Eau De Parfum is a luxurious fragrance that exudes royalty and richness. With a captivating blend of citrusy and musky notes, it offers a sophisticated scent perfect for office wear and casual outings. The bold oud essence adds depth, while fresh citrus tones create a refined balance. Designed for those who appreciate elegance, this long-lasting EDP ensures you leave a lasting impression. Whether for daily wear or special occasions, Park Avenue Oud elevates your presence with its unique and distinguished aroma. Experience a fragrance that defines sophistication and charm in every spray.",
+   "manufacturerName": "Helios Packaging",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Discoverer Eau De Parfum",
+  "handle": "discoverer-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "1200",
+    "compare_at_price": "1200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288541_1-park-avenue-eau-de-perfume-discoverer-premium-for-men-for-men-longlasting-fragrance.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288541_1-park-avenue-eau-de-perfume-discoverer-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288541-2_1-park-avenue-eau-de-perfume-discoverer-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288541-3_1-park-avenue-eau-de-perfume-discoverer-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288541-4_1-park-avenue-eau-de-perfume-discoverer-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288541-5_1-park-avenue-eau-de-perfume-discoverer-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288541-6_1-park-avenue-eau-de-perfume-discoverer-premium-for-men-for-men-longlasting-fragrance.jpg"
+   }
+  ],
+  "details": {
+   "description": "Unleash your inner adventurer with Discoverer, a daring and long-lasting fragrance that blends aromatic Fougere notes with a hint of captivating aquatic accords. Crafted for the risk-taker with a dashing persona, this unique scent complements your unending curiosity and craving for exceptional experiences. Discover a fragrance that embodies your spirit of exploration, with a blend that lingers and captivates. Embrace your adventurous side and let Discoverer be your signature scent, elevating your unique and daring persona.",
+   "usageInstructions": "Spray on pulse points: Behind the ears and on your wrists.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Dynamo Eau De Parfum",
+  "handle": "dynamo-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "1200",
+    "compare_at_price": "1200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288539_1-park-avenue-eau-de-perfume-dynamo-premium-for-men-for-men-longlasting-fragrance.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288539_1-park-avenue-eau-de-perfume-dynamo-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288539-2_1-park-avenue-eau-de-perfume-dynamo-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288539-3_1-park-avenue-eau-de-perfume-dynamo-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288539-4_1-park-avenue-eau-de-perfume-dynamo-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288539-5_1-park-avenue-eau-de-perfume-dynamo-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288539-6_1-park-avenue-eau-de-perfume-dynamo-premium-for-men-for-men-longlasting-fragrance.jpg"
+   }
+  ],
+  "details": {
+   "description": "You're innovative, full of energy and unconventional. You're the man who wants to make an impact. Dynamo, a long-lasting perfume with a blend of oriental woody fragrances and a dash of lavender, keeps you refreshed and helps you form a lasting impression.",
+   "usageInstructions": "Spray on pulse points: Behind the ears and on your wrists.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Founder Eau De Parfum",
+  "handle": "founder-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "1200",
+    "compare_at_price": "1200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288542_1-park-avenue-eau-de-perfume-founder-premium-for-men-for-men-longlasting-fragrance.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288542_1-park-avenue-eau-de-perfume-founder-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288542-2_1-park-avenue-eau-de-perfume-founder-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288542-3_1-park-avenue-eau-de-perfume-founder-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288542-4_1-park-avenue-eau-de-perfume-founder-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288542-5_1-park-avenue-eau-de-perfume-founder-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288542-6_1-park-avenue-eau-de-perfume-founder-premium-for-men-for-men-longlasting-fragrance.jpg"
+   }
+  ],
+  "details": {
+   "description": "Founder, a long-lasting perfume with a blend of woody spicy fragrances and a hint of patchouli, compliments your charismatic and captivating persona.",
+   "usageInstructions": "Spray on pulse points: Behind the ears and on your wrists.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Livewire Eau De Parfum",
+  "handle": "livewire-eau-de-parfum",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "1200",
+    "compare_at_price": "1200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40288540_1-park-avenue-eau-de-perfume-livewire-premium-for-men-for-men-longlasting-fragrance.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288540_1-park-avenue-eau-de-perfume-livewire-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288540-2_1-park-avenue-eau-de-perfume-livewire-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288540-3_1-park-avenue-eau-de-perfume-livewire-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288540-4_1-park-avenue-eau-de-perfume-livewire-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288540-5_1-park-avenue-eau-de-perfume-livewire-premium-for-men-for-men-longlasting-fragrance.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40288540-6_1-park-avenue-eau-de-perfume-livewire-premium-for-men-for-men-longlasting-fragrance.jpg"
+   }
+  ],
+  "details": {
+   "description": "You’re trendy and magnetic. You are the life of every party. Livewire, a long-lasting perfume with a blend of woody aromatic fragrances and a hint of cedar wood, lets you be stylish for every occasion.",
+   "usageInstructions": "Spray on pulse points: Behind the ears and on your wrists.",
+   "manufacturerName": "Godrej Consumer Products Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Allure Eau De Parfum for Her",
+  "handle": "allure-eau-de-parfum-for-her",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017_2-park-avenue-allure-eau-de-parfum-for-her.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017_2-park-avenue-allure-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017-2_2-park-avenue-allure-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017-3_2-park-avenue-allure-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017-4_2-park-avenue-allure-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017-5_2-park-avenue-allure-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017-6_2-park-avenue-allure-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017-7_2-park-avenue-allure-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356017-8_1-park-avenue-allure-eau-de-parfum-for-her.jpg"
+   }
+  ],
+  "details": {
+   "description": "Indulge in the charm of Park Avenue Allure. Zesty lemon and cassis meet delicate peony and violet, fading into a soft musk and earthy patchouli for a long and lasting aroma.",
+   "manufacturerName": "A) Primacy Industries Pvt. Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Grace Eau De Parfum for Her",
+  "handle": "grace-eau-de-parfum-for-her",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+    },
+    "barcode": "8901277020338"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015-2_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015-3_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015-4_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015-5_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015-6_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015-7_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356015-8_2-park-avenue-grace-eau-de-parfum-for-her.jpg"
+   }
+  ],
+  "details": {
+   "description": "Feel elegant all day with Park Avenue Grace. Refreshing mandarin and pear combine with soft florals, finishing on a warm, musky amber base for a smooth, feminine fragrance.",
+   "manufacturerName": "A) Primacy Industries Pvt. Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Poise Eau De Parfum for Her",
+  "handle": "poise-eau-de-parfum-for-her",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014_2-park-avenue-poise-eau-de-parfum-for-her.jpg"
+    },
+    "barcode": "8901277020321"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014_2-park-avenue-poise-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014-2_2-park-avenue-poise-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014-3_2-park-avenue-poise-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014-4_2-park-avenue-poise-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014-5_2-park-avenue-poise-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014-6_2-park-avenue-poise-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014-7_2-park-avenue-poise-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356014-8_1-park-avenue-poise-eau-de-parfum-for-her.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience a bold and confident scent with Park Avenue Poise. Bright peppered mandarin blends with floral spices and deepens into rich leather and warm amber for a lasting impression.",
+   "manufacturerName": "A) Primacy Industries Pvt. Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Verve Eau De Parfum for Her",
+  "handle": "verve-eau-de-parfum-for-her",
+  "vendor": "Park Avenue (Raymond)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016_2-park-avenue-verve-eau-de-parfum-for-her.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016_2-park-avenue-verve-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016-2_2-park-avenue-verve-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016-3_2-park-avenue-verve-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016-4_2-park-avenue-verve-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016-5_2-park-avenue-verve-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016-6_2-park-avenue-verve-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016-7_2-park-avenue-verve-eau-de-parfum-for-her.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356016-8_1-park-avenue-verve-eau-de-parfum-for-her.jpg"
+   }
+  ],
+  "details": {
+   "description": "Stay fresh and vibrant with Park Avenue Verve. Crisp mandarin and lavandin lead to blooming ylang-ylang, settling into a soft vetiver and musk base for a lively yet comforting scent.",
+   "manufacturerName": "A) Primacy Industries Pvt. Limited",
+   "countryOfOrigin": "India"
+  }
+ }
+]
