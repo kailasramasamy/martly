@@ -1,0 +1,245 @@
+[
+ {
+  "title": "Beeswax Lip Balm",
+  "handle": "beeswax-lip-balm",
+  "vendor": "Burt's Bees",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.25g",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/71fGILTal4L._SL1500_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/71fGILTal4L._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/91jitljAfjL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/91WAYJnJE3L._SL1500_.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Flavorful Lip Balm: One 0.15 Oz. Lip Balm Tube Of Burt’S Bees Beeswax Lip Balm To Moisturize And Soften Your Lips Each balm is infused with responsibly sourced beeswax, vitamin E and nourishing oils for a conditioning lip treatment that keeps your lips happy, healthy and juicy A hint of peppermint oil gives a one-of-a-kind refreshing tingle that will encourage you to apply this flavored lip balm over and over again The tint-free tube of moisturizing lip balm glides on your lips smoothly to nourish them, keeping lips happy, healthy and hydrated",
+   "manufacturerName": "Burt's Bees Inc.",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Vanilla Bean Lip Balm",
+  "handle": "vanilla-bean-lip-balm",
+  "vendor": "Burt's Bees",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.25g",
+    "price": "459",
+    "compare_at_price": "459",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/71nC9JJEPYL._SL1500_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/71nC9JJEPYL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71jcJbIhqyL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71-8ZZilFqL._SL1500_.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Lip care: bursting with sweet vanilla flavor, refresh and nourish your lips with vanilla bean Burt's Bees Moisturizing Lip Balm Total hydration: hydrate and soften dry lips with beeswax and fruit extracts packed into every tube of Burt's Bees Lip care Moisturizing: just one swipe of this conditioning lip moisturizer leaves your lips smooth and refreshed All Natural: enriched with 100% natural ingredients, this natural lip Balm is formulated without parabens, phthalates, petrolatum or SLS",
+   "manufacturerName": "Burt's Bees Inc.",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Cucumber Mint Lip Balm",
+  "handle": "cucumber-mint-lip-balm",
+  "vendor": "Burt's Bees",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.25g",
+    "price": "399",
+    "compare_at_price": "399",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/819iJGhlnlL._SL1500_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/819iJGhlnlL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61Xsv+scSIL._SL1300_.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Refreshing Flavor: Cool cucumber paired with a hint of crisp mint provides a pleasant, invigorating scent and taste that encourages frequent use. Hydrating Formula: Infused with cucumber fruit extract, responsibly sourced beeswax, nourishing oils and natural butters, this balm helps moisturize dry lips and prevent chapping. Natural Ingredients: Formulated without parabens, phthalates, petrolatum or sulfates (SLS) and made with ingredients of natural origin for gentle everyday care. Smooth Application: The tint-free balm glides on easily, leaving a matte finish while locking in moisture.",
+   "manufacturerName": "Burt's Bees Inc.",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Ultra Conditioning Lip Balm",
+  "handle": "ultra-conditioning-lip-balm",
+  "vendor": "Burt's Bees",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.25g",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/71wHHxz7X4L._SL1500_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/71wHHxz7X4L._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71wxYBd37OL._SL1500_.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Ultra Conditioning lip balm melts onto lips to replenish skin. Conditions and hydrates with rich butters and oils including kokum, shea and cocoa butter. 100% natural origin, formulated without parabens, phthalates, petrolatum or SLS.",
+   "manufacturerName": "Burt's Bees Inc.",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Mango Butter Lip Balm",
+  "handle": "mango-butter-lip-balm",
+  "vendor": "Burt's Bees",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.25g",
+    "price": "495",
+    "compare_at_price": "495",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/71dY3Tx64qL._SL1280_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/71dY3Tx64qL._SL1280_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71dM1a+UmuL._SL1280_.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "A luxurious, hydrating lip balm with mango butter, known to naturally nourish, leaving lips feeling soft and hydrated. 100% natural.",
+   "manufacturerName": "Burt's Bees Inc.",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Pomegranate Lip Balm",
+  "handle": "pomegranate-lip-balm",
+  "vendor": "Burt's Bees",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.25g",
+    "price": "725",
+    "compare_at_price": "725",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/81RvV231wqL._SL1500_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/81RvV231wqL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/61iFHbnQ3AL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/81XdK-PDQfL._SL1500_.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Nourishing and hydrating lip balm with the goodness of pomegranate oil. 100% natural.",
+   "manufacturerName": "Burt's Bees Inc.",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Tinted Lip Balm - Red Dahlia",
+  "handle": "tinted-lip-balm-red-dahlia",
+  "vendor": "Burt's Bees",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "4.25g",
+    "price": "799",
+    "compare_at_price": "799",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://m.media-amazon.com/images/I/71H+cuHOyDL._SL1500_.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://m.media-amazon.com/images/I/71H+cuHOyDL._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/71dn66ajJ5L._SL1500_.jpg"
+   },
+   {
+    "src": "https://m.media-amazon.com/images/I/811wLBpFdlL._SL1500_.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sheer colour tinted lip balm with up to 8 hours of moisture. Easy to apply, no mirror needed. Hydrates and soothes dry lips with moisturising shea butter and botanical waxes, enriched with 100% natural origin ingredients.",
+   "manufacturerName": "Burt's Bees Inc.",
+   "countryOfOrigin": "USA"
+  }
+ }
+]

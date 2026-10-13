@@ -1,0 +1,70 @@
+{
+  "brand": "Burt's Bees",
+  "manufacturer": "Burt's Bees Inc.",
+  "feed": "burts-bees-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/burts-bees/logo-17c151b0.png",
+  "themeColor": "#E31837",
+  "themeColorSecondary": "#F7B500",
+  "namePrefix": "Burt's Bees ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Beeswax\\ Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Vanilla\\ Bean\\ Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Cucumber\\ Mint\\ Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Conditioning\\ Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Mango\\ Butter\\ Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Pomegranate\\ Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Tinted\\ Lip\\ Balm\\ \\-\\ Red\\ Dahlia$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    }
+  ]
+}
