@@ -1,0 +1,230 @@
+{
+  "brand": "Lux (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "lux-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lux/logo-18a48097.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#D4AF37",
+  "namePrefix": "Lux ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Advanced\\ Clear\\ Glow\\ Sandalwood\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Scarlet\\ Blossom\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Magical\\ Orchid\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Botanicals\\ Bright\\ Skin\\ Sunflower\\ \\&\\ Aloe\\ Vera\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Botanicals\\ Glowing\\ Skin\\ Gardenia\\ \\&\\ Honey\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Botanicals\\ Skin\\ Renewal\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Botanicals\\ Skin\\ Detox\\ Freesia\\ \\&\\ Tea\\ Tree\\ Oil\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Body\\ Wash\\ \\-\\ Rose\\ \\&\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Illuminating\\ Body\\ Wash\\ \\-\\ Lavender\\ \\&\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Exfoliating\\ Soap\\ Bar\\ \\-\\ Lavender\\ \\&\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Exfoliating\\ Soap\\ Bar\\ \\-\\ Rose\\ \\&\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Glow\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Splash\\ Water\\ Lily\\ \\&\\ Cooling\\ Mint\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Gel\\ Body\\ Scrub\\ \\-\\ Lavender\\ \\&\\ Vitamin\\ C$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Gel\\ Body\\ Scrub\\ \\-\\ Rose\\ \\&\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Glow\\ Jasmine\\ Bloom\\ Soap\\ With\\ Vitamin\\ C\\ \\&\\ E$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Glow\\ Lush\\ Rose\\ Soap\\ With\\ Vitamin\\ C\\ \\&\\ E$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Hypnotic\\ Rose\\ Perfumed\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^International\\ Smooth\\ \\&\\ Radiant\\ Soap\\ With\\ Glutathione$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Magnolia\\ Magic\\ Radiant\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Orchid\\ Obsession\\ Radiant\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Sandal\\ Spell\\ Radiant\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Freesia\\ \\&\\ Aloe\\ Vera\\ Shower\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Glow\\ Rose\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Saffron\\ Flower\\ \\&\\ White\\ Cream\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Soft\\ Glow\\ Rose\\ Soap\\ With\\ Vitamin\\ C\\ \\&\\ E$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Velvet\\ Touch\\ Jasmine\\ \\&\\ Almond\\ Oil\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    }
+  ]
+}
