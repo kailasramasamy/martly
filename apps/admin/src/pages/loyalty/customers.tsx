@@ -3,6 +3,7 @@ import { Table, Card, Input, Tag, Button, Space, Modal, Form, InputNumber, messa
 import { StarOutlined, SearchOutlined, EditOutlined } from "@ant-design/icons";
 import { axiosInstance } from "../../providers/data-provider";
 import { LOYALTY_TRANSACTION_TYPE_CONFIG } from "../../constants/tag-colors";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const { Text } = Typography;
 
@@ -104,13 +105,11 @@ export const LoyaltyCustomers = () => {
 
       <Card size="small">
         <div style={{ marginBottom: 16 }}>
-          <Input
+          <DebouncedSearch
             placeholder="Search by name or email..."
             prefix={<SearchOutlined style={{ color: "#94a3b8" }} />}
-            value={search}
-            onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+            onSearch={(v) => { setSearch(v); setPage(1); }}
             style={{ maxWidth: 320 }}
-            allowClear
           />
         </div>
 

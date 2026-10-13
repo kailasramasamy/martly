@@ -1,11 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
-import { Table, Tag, Input, Select, Space, Card, Statistic, Row, Col, Typography } from "antd";
+import { Table, Tag, Select, Space, Card, Statistic, Row, Col, Typography } from "antd";
 import { UsergroupAddOutlined, CheckCircleOutlined, ClockCircleOutlined, DollarOutlined, PercentageOutlined } from "@ant-design/icons";
 import { axiosInstance } from "../../providers/data-provider";
 import { REFERRAL_STATUS_CONFIG } from "../../constants/tag-colors";
 import dayjs from "dayjs";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
-const { Search } = Input;
 const { Text } = Typography;
 
 interface ReferralItem {
@@ -171,9 +171,8 @@ export const ReferralList = () => {
       )}
 
       <Space style={{ marginBottom: 16 }} wrap>
-        <Search
+        <DebouncedSearch
           placeholder="Search by name or email..."
-          allowClear
           onSearch={(v) => { setSearch(v); setPage(1); }}
           style={{ width: 280 }}
         />

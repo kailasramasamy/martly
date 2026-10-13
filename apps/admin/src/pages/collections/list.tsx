@@ -1,10 +1,11 @@
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Space, Input, Tag, Switch } from "antd";
+import { Table, Space, Tag, Switch } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import { useUpdate } from "@refinedev/core";
 import dayjs from "dayjs";
 import { CollectionKindLabels, type CollectionKind } from "@martly/shared/constants";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 interface CollectionRecord {
   id: string;
@@ -45,14 +46,10 @@ export const CollectionList = () => {
   return (
     <List>
       <div style={{ marginBottom: 16 }}>
-        <Input.Search
+        <DebouncedSearch
           placeholder="Search collections..."
-          allowClear
           prefix={<SearchOutlined />}
-          onSearch={(value) => searchFormProps.onFinish?.({ q: value })}
-          onChange={(e) => {
-            if (!e.target.value) searchFormProps.onFinish?.({ q: "" });
-          }}
+          onSearch={(q) => searchFormProps.onFinish?.({ q })}
           style={{ maxWidth: 360 }}
         />
       </div>

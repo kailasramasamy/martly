@@ -1,10 +1,10 @@
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Tag, Space, Image, Switch, Input } from "antd";
+import { Table, Tag, Space, Image, Switch } from "antd";
 import { BANNER_PLACEMENT_CONFIG, BANNER_ACTION_TYPE_CONFIG } from "../../constants/tag-colors";
 import { axiosInstance } from "../../providers/data-provider";
 import dayjs from "dayjs";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
-const { Search } = Input;
 
 export const BannerList = () => {
   const { tableProps, setFilters, filters } = useTable({
@@ -22,9 +22,8 @@ export const BannerList = () => {
   return (
     <List>
       <Space style={{ marginBottom: 16 }}>
-        <Search
+        <DebouncedSearch
           placeholder="Search banners..."
-          allowClear
           defaultValue={currentSearch}
           onSearch={(value) =>
             setFilters([{ field: "q", operator: "eq", value: value || undefined }])

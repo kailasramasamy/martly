@@ -1,7 +1,8 @@
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
 import { useGetIdentity } from "@refinedev/core";
-import { Table, Tag, Form, Input, Select, Space, Typography } from "antd";
+import { Table, Tag, Form, Select, Space, Typography } from "antd";
 import type { HttpError } from "@refinedev/core";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const { Text } = Typography;
 
@@ -89,7 +90,7 @@ export const UserList = () => {
     <List>
       <Form {...searchFormProps} layout="inline" style={{ marginBottom: 16, gap: 8 }}>
         <Form.Item name="q" noStyle>
-          <Input.Search placeholder="Search users..." allowClear onSearch={searchFormProps.form?.submit} style={{ width: 300 }} />
+          <DebouncedSearch placeholder="Search users..." onSearch={() => searchFormProps.form?.submit()} style={{ width: 300 }} />
         </Form.Item>
         <Form.Item name="role" noStyle>
           <Select

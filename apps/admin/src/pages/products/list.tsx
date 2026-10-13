@@ -14,6 +14,7 @@ import {
   DISCOUNT_TYPE_CONFIG,
   ACTIVE_STATUS_CONFIG,
 } from "../../constants/tag-colors";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const { Text } = Typography;
 
@@ -445,7 +446,7 @@ const ProductsTableTab = ({
       {/* Search + filters row */}
       <Form {...searchFormProps} layout="inline" style={{ marginBottom: 12, gap: 8, display: "flex", flexWrap: "wrap" }}>
         <Form.Item name="q" noStyle>
-          <Input.Search placeholder="Search products..." allowClear onSearch={searchFormProps.form?.submit} style={{ width: 280 }} />
+          <DebouncedSearch placeholder="Search products..." onSearch={() => searchFormProps.form?.submit()} style={{ width: 280 }} />
         </Form.Item>
         <Form.Item name="categoryPath" noStyle hidden>
           <Input />

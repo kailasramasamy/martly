@@ -14,12 +14,12 @@ import {
   Row,
   Col,
   Card,
-  Input,
 } from "antd";
 import { StarOutlined, PlusOutlined } from "@ant-design/icons";
 import type { CrudFilter } from "@refinedev/core";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle, BRAND } from "../../theme";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const { Text, Title } = Typography;
 
@@ -356,11 +356,9 @@ function AddFeaturedModal({
           />
         </Col>
         <Col xs={24} sm={isSuperAdmin ? 8 : 12}>
-          <Input.Search
+          <DebouncedSearch
             placeholder="Search products..."
-            allowClear
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onSearch={setSearch}
           />
         </Col>
       </Row>

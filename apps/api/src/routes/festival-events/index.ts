@@ -1,43 +1,50 @@
-import type { FastifyInstance } from "fastify";
+import type { FastifyInstance, FastifyRequest } from "fastify";
 import { createFestivalEventSchema, updateFestivalEventSchema } from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { matchesRegions } from "../../services/seasonal/due-events.js";
+import { calendarSummary, calendarWhere, sortCalendar } from "../../services/seasonal/calendar-list.js";
 import { curateEvent, isCurationConfigured, type CurationResult } from "../../services/seasonal/index.js";
 
 export async function festivalEventRoutes(app: FastifyInstance) {
   const adminOnly = { preHandler: [authenticate, requireRole("SUPER_ADMIN")] };
 
-  app.get("/", { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] }, async (request) => {
-    const { page = 1, pageSize = 50 } = request.query as { page?: number; pageSize?: number };
+  const adminRoles = { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] };
+
+  // The calendar is small (~100 rows a year), so it's filtered in the database and ordered by phase in memory
+  async function calendarRows(request: FastifyRequest, q?: string) {
     const user = getOrgUser(request);
     const org = user.role === "ORG_ADMIN"
       ? await app.prisma.organization.findUnique({ where: { id: user.organizationId! }, select: { festivalRegions: true } })
       : null;
-    // ORG_ADMIN only sees the calendar for the regions their org follows
-    const where = org ? { OR: [{ regions: { has: "ALL" } }, { regions: { hasSome: org.festivalRegions } }] } : {};
-    const [events, total] = await Promise.all([
-      app.prisma.festivalEvent.findMany({
-        where,
-        skip: (Number(page) - 1) * Number(pageSize),
-        take: Number(pageSize),
-        orderBy: { startsAt: "asc" },
-        include: {
-          collections: {
-            where: org ? { organizationId: user.organizationId } : {},
-            select: { id: true, title: true, isActive: true, source: true, organizationId: true },
-          },
+    return app.prisma.festivalEvent.findMany({
+      where: calendarWhere(q, org?.festivalRegions ?? null),
+      include: {
+        collections: {
+          where: org ? { organizationId: user.organizationId } : {},
+          select: { id: true, title: true, isActive: true, source: true, organizationId: true },
         },
-      }),
-      app.prisma.festivalEvent.count({ where }),
-    ]);
-    const response: PaginatedResponse<(typeof events)[0]> = {
+      },
+    });
+  }
+
+  app.get("/", adminRoles, async (request) => {
+    const { page = 1, pageSize = 50, q } = request.query as { page?: number; pageSize?: number; q?: string };
+    const rows = sortCalendar(await calendarRows(request, q), new Date());
+    const skip = (Number(page) - 1) * Number(pageSize);
+    const response: PaginatedResponse<(typeof rows)[0]> = {
       success: true,
-      data: events,
-      meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
+      data: rows.slice(skip, skip + Number(pageSize)),
+      meta: { total: rows.length, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(rows.length / Number(pageSize)) },
     };
+    return response;
+  });
+
+  app.get("/summary", adminRoles, async (request) => {
+    const summary = calendarSummary(await calendarRows(request), new Date());
+    const response: ApiResponse<typeof summary> = { success: true, data: summary };
     return response;
   });
 

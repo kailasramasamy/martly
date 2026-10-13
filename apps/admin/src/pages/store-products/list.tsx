@@ -1,8 +1,9 @@
 import { List, useTable, EditButton, DeleteButton, useSelect } from "@refinedev/antd";
-import { Table, Tag, Form, Input, Space, Typography, Tooltip, Select, Badge } from "antd";
+import { Table, Tag, Form, Space, Typography, Tooltip, Select, Badge } from "antd";
 import type { HttpError } from "@refinedev/core";
 
 import { ACTIVE_STATUS_CONFIG } from "../../constants/tag-colors";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const { Text } = Typography;
 
@@ -61,7 +62,7 @@ export const StoreProductList = () => {
     <List>
       <Form {...searchFormProps} layout="inline" style={{ marginBottom: 16, gap: 8, display: "flex", flexWrap: "wrap" }}>
         <Form.Item name="q" noStyle>
-          <Input.Search placeholder="Search store products..." allowClear onSearch={searchFormProps.form?.submit} style={{ width: 280 }} />
+          <DebouncedSearch placeholder="Search store products..." onSearch={() => searchFormProps.form?.submit()} style={{ width: 280 }} />
         </Form.Item>
         <Form.Item name="storeId" noStyle>
           <Select

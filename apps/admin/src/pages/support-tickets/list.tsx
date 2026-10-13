@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
-import { Card, Table, Tag, Space, Input, Select, Typography, Spin, Row, Col, Statistic } from "antd";
+import { Card, Table, Tag, Space, Select, Typography, Spin, Row, Col, Statistic } from "antd";
 import { EyeOutlined, MessageOutlined, ClockCircleOutlined, CheckCircleOutlined, InboxOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 import { axiosInstance } from "../../providers/data-provider";
 import { TICKET_STATUS_CONFIG, TICKET_PRIORITY_CONFIG } from "../../constants/tag-colors";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const { Title } = Typography;
 
@@ -177,9 +178,8 @@ export const SupportTicketList = () => {
 
       <Card size="small" style={{ marginBottom: 16 }}>
         <Space wrap>
-          <Input.Search
+          <DebouncedSearch
             placeholder="Search by subject, customer..."
-            allowClear
             onSearch={(val) => { setSearch(val); setPage(1); }}
             style={{ width: 280 }}
           />

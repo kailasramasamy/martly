@@ -32,7 +32,9 @@ on its left third. Describe a warm, appetising still life of the festival's own 
 the right two thirds, lit naturally, with the left third falling into a calmer, darker area. Describe the scene
 only: no text, letters, logos, brand packaging, or people's faces.
 
-Keep the title to 2-4 words and the subtitle under 45 characters so both read clearly on the banner.`;
+Keep the title to 2-4 words and the subtitle under 45 characters so both read clearly on the banner.
+Write the Tamil copy in everyday native Tamil words rather than English words spelled in Tamil script
+(உலர் பழங்கள், not டிரைஃப்ரூட்): the banner artwork renders familiar Tamil spellings far more reliably.`;
 
 export class CurationRefusedError extends Error {}
 

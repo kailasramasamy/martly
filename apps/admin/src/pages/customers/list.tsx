@@ -1,9 +1,10 @@
 import { List, useTable, ShowButton } from "@refinedev/antd";
-import { Table, Input, Avatar, Space, Typography, Card, Row, Col, Statistic, Tag } from "antd";
+import { Table, Avatar, Space, Typography, Card, Row, Col, Statistic, Tag } from "antd";
 import { UserOutlined, SearchOutlined, ShoppingCartOutlined, TeamOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import dayjs from "dayjs";
 import { BRAND } from "../../theme";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const { Text } = Typography;
 
@@ -70,15 +71,11 @@ export const CustomerList = () => {
       </Row>
 
       <Card size="small" style={{ marginBottom: 16 }}>
-        <Input
+        <DebouncedSearch
           placeholder="Search by name or email..."
           prefix={<SearchOutlined style={{ color: "#94a3b8" }} />}
-          allowClear
-          onChange={(e) => {
-            const form = searchFormProps.form;
-            form?.setFieldsValue({ q: e.target.value });
-            form?.submit();
-          }}
+          onChange={(e) => searchFormProps.form?.setFieldsValue({ q: e.target.value })}
+          onSearch={() => searchFormProps.form?.submit()}
           style={{ maxWidth: 400 }}
         />
       </Card>

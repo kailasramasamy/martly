@@ -1,8 +1,9 @@
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Space, Input, Tag, Switch } from "antd";
+import { Table, Space, Tag, Switch } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import { useUpdate } from "@refinedev/core";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const DIFFICULTY_COLORS: Record<string, string> = {
   EASY: "green",
@@ -45,14 +46,10 @@ export const RecipeList = () => {
   return (
     <List>
       <div style={{ marginBottom: 16 }}>
-        <Input.Search
+        <DebouncedSearch
           placeholder="Search recipes..."
-          allowClear
           prefix={<SearchOutlined />}
-          onSearch={(value) => searchFormProps.onFinish?.({ q: value })}
-          onChange={(e) => {
-            if (!e.target.value) searchFormProps.onFinish?.({ q: "" });
-          }}
+          onSearch={(q) => searchFormProps.onFinish?.({ q })}
           style={{ maxWidth: 360 }}
         />
       </div>

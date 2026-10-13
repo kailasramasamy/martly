@@ -1,8 +1,9 @@
 import { List, useTable, EditButton, ShowButton } from "@refinedev/antd";
-import { Table, Tag, Form, Input, Select, Space } from "antd";
+import { Table, Tag, Form, Select, Space } from "antd";
 import type { HttpError } from "@refinedev/core";
 
 import { STORE_STATUS_CONFIG } from "../../constants/tag-colors";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const STATUS_OPTIONS = [
   { label: "All Statuses", value: "" },
@@ -29,7 +30,7 @@ export const StoreList = () => {
     <List>
       <Form {...searchFormProps} layout="inline" style={{ marginBottom: 16, gap: 8 }}>
         <Form.Item name="q" noStyle>
-          <Input.Search placeholder="Search stores..." allowClear onSearch={searchFormProps.form?.submit} style={{ width: 300 }} />
+          <DebouncedSearch placeholder="Search stores..." onSearch={() => searchFormProps.form?.submit()} style={{ width: 300 }} />
         </Form.Item>
         <Form.Item name="status" noStyle>
           <Select

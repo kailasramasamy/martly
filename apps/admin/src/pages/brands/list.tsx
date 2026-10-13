@@ -1,9 +1,10 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Space, Input, Avatar, Typography } from "antd";
+import { Table, Space, Avatar, Typography } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import { BrandDrawer, type BrandRecord } from "./brand-drawer";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 export const BrandList = () => {
   const { tableProps, searchFormProps } = useTable<BrandRecord, HttpError, { q: string }>({
@@ -21,22 +22,14 @@ export const BrandList = () => {
     setSelected(brand);
     setDrawerOpen(true);
   };
-  const debounceRef = useRef<ReturnType<typeof setTimeout>>(undefined);
-
-  const search = (q: string, delay = 0) => {
-    clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(() => searchFormProps.onFinish?.({ q }), delay);
-  };
 
   return (
     <List>
       <div style={{ marginBottom: 16 }}>
-        <Input.Search
+        <DebouncedSearch
           placeholder="Search brands..."
-          allowClear
           prefix={<SearchOutlined />}
-          onSearch={(value) => search(value)}
-          onChange={(e) => search(e.target.value, 300)}
+          onSearch={(q) => searchFormProps.onFinish?.({ q })}
           style={{ maxWidth: 360 }}
         />
       </div>

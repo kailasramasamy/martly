@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Space, Tag, Button, App } from "antd";
+import { Table, Space, Tag, Button, App, Typography } from "antd";
 import { ThunderboltOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
 import { Link, useNavigate } from "react-router";
@@ -8,6 +8,8 @@ import dayjs from "dayjs";
 import { isAxiosError } from "axios";
 import { CollectionKindLabels, FESTIVAL_REGIONS, type CollectionKind } from "@martly/shared/constants";
 import { axiosInstance } from "../../providers/data-provider";
+import { FestivalKpiCards, type FestivalSummary } from "./kpi-cards";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 interface FestivalCollection {
   id: string;
@@ -25,6 +27,8 @@ interface FestivalRecord {
   endsAt: string;
   regions: string[];
   collections: FestivalCollection[];
+  phase: "LIVE" | "UPCOMING" | "ENDED";
+  liveFrom: string;
 }
 
 interface CurateResult {
@@ -50,6 +54,19 @@ const findCollectionId = (results: CurateResult[], record: FestivalRecord) =>
         ?.id
     : undefined);
 
+const PhaseStatus = ({ record }: { record: FestivalRecord }) => {
+  if (record.phase === "LIVE") return <Tag color="green">Live now</Tag>;
+  if (record.phase === "ENDED") return <Tag>Ended</Tag>;
+  return (
+    <Space direction="vertical" size={0}>
+      <Tag color="blue">Upcoming</Tag>
+      <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+        from {dayjs(record.liveFrom).format("DD MMM")}
+      </Typography.Text>
+    </Space>
+  );
+};
+
 const CuratedStatus = ({ collections }: { collections: FestivalCollection[] }) => {
   if (collections.length === 0) return <Tag>Not curated</Tag>;
   return (
@@ -67,13 +84,25 @@ const CuratedStatus = ({ collections }: { collections: FestivalCollection[] }) =
 };
 
 export const FestivalList = () => {
-  const { tableProps, tableQueryResult } = useTable<FestivalRecord, HttpError>({
+  const { tableProps, tableQueryResult, setFilters } = useTable<FestivalRecord, HttpError>({
     resource: "festival-events",
-    sorters: { initial: [{ field: "startsAt", order: "asc" }] },
   });
   const { message } = App.useApp();
   const navigate = useNavigate();
   const [curatingId, setCuratingId] = useState<string | null>(null);
+  const [summary, setSummary] = useState<FestivalSummary | null>(null);
+
+  const refreshSummary = useCallback(() => {
+    axiosInstance.get("/festival-events/summary")
+      .then(({ data }) => setSummary(data.data))
+      .catch((err) => {
+        if (!isAxiosError(err)) throw err;
+        message.error("Failed to load festival summary");
+      });
+  }, [message]);
+
+  useEffect(refreshSummary, [refreshSummary]);
+
 
   const curate = async (record: FestivalRecord) => {
     setCuratingId(record.id);
@@ -85,6 +114,7 @@ export const FestivalList = () => {
       const collectionId = findCollectionId(results, record);
       if (!collectionId) {
         message.warning(`${record.name}: ${summarize(results)}`);
+        refreshSummary();
         await tableQueryResult.refetch();
         return;
       }
@@ -100,7 +130,14 @@ export const FestivalList = () => {
 
   return (
     <List>
+      <FestivalKpiCards summary={summary} />
+      <DebouncedSearch
+        placeholder="Search festival or region (e.g. Onam, Tamil, WB)"
+        onSearch={(value) => setFilters([{ field: "q", operator: "eq", value: value || undefined }], "merge")}
+        style={{ maxWidth: 420, marginBottom: 16 }}
+      />
       <Table {...tableProps} rowKey="id">
+        <Table.Column title="Status" render={(_: unknown, r: FestivalRecord) => <PhaseStatus record={r} />} />
         <Table.Column dataIndex="name" title="Name" />
         <Table.Column
           dataIndex="kind"

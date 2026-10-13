@@ -1,14 +1,13 @@
-import { useState } from "react";
 import { List, useTable, ShowButton } from "@refinedev/antd";
-import { Table, Tag, Input, Select, Card, Row, Col, Space } from "antd";
+import { Table, Tag, Select, Card, Row, Col, Space } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 
 import { RETURN_REQUEST_STATUS_CONFIG } from "../../constants/tag-colors";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const statusOptions = Object.entries(RETURN_REQUEST_STATUS_CONFIG).map(([value, { label }]) => ({ label, value }));
 
 export const ReturnRequestList = () => {
-  const [search, setSearch] = useState("");
 
   const { tableProps, setFilters, filters } = useTable({
     resource: "return-requests",
@@ -22,7 +21,6 @@ export const ReturnRequestList = () => {
   };
 
   const handleSearch = (value: string) => {
-    setSearch(value);
     setFilters([
       { field: "search", operator: "eq", value: value || undefined },
     ], "merge");
@@ -39,12 +37,10 @@ export const ReturnRequestList = () => {
       <Card size="small" style={{ marginBottom: 16 }}>
         <Row gutter={[12, 12]}>
           <Col xs={24} md={10}>
-            <Input
+            <DebouncedSearch
               placeholder="Search by order ID, customer name or email..."
               prefix={<SearchOutlined style={{ color: "#94a3b8" }} />}
-              value={search}
-              onChange={(e) => handleSearch(e.target.value)}
-              allowClear
+              onSearch={handleSearch}
             />
           </Col>
           <Col xs={12} md={4}>

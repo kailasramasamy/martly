@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Card, Table, Tag, Space, Input, Select, DatePicker, Button, Typography, Spin } from "antd";
+import { Card, Table, Tag, Space, Select, DatePicker, Button, Typography, Spin } from "antd";
 import { EyeOutlined, SearchOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 import dayjs from "dayjs";
@@ -11,6 +11,7 @@ import {
   CAMPAIGN_STATUS_CONFIG,
   AUDIENCE_TYPE_CONFIG,
 } from "../../../constants/tag-colors";
+import { DebouncedSearch } from "../../../components/DebouncedSearch";
 
 const { Title } = Typography;
 const { RangePicker } = DatePicker;
@@ -75,12 +76,10 @@ export const CampaignList = () => {
 
       <Card style={{ marginBottom: 16 }} styles={{ body: { padding: "12px 16px" } }}>
         <Space wrap>
-          <Input
+          <DebouncedSearch
             placeholder="Search campaigns..."
             prefix={<SearchOutlined style={{ color: "#94a3b8" }} />}
-            allowClear
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onSearch={setSearch}
             style={{ width: 260 }}
           />
           <Select

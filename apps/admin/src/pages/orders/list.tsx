@@ -1,11 +1,12 @@
 import { List, useTable, ShowButton } from "@refinedev/antd";
 import { useInvalidate } from "@refinedev/core";
-import { Table, Tag, Input, Select, DatePicker, Row, Col, Card, Space } from "antd";
+import { Table, Tag, Select, DatePicker, Row, Col, Card, Space } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import { useState, useCallback } from "react";
+import { useCallback } from "react";
 import { useOrderWebSocket } from "../../hooks/useOrderWebSocket";
 
 import { ORDER_STATUS_CONFIG, PAYMENT_STATUS_CONFIG, FULFILLMENT_TYPE_CONFIG, FULFILLMENT_TYPE_OPTIONS } from "../../constants/tag-colors";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const statusOptions = Object.entries(ORDER_STATUS_CONFIG).map(([value, { label }]) => ({ label, value }));
 const paymentStatusOptions = Object.entries(PAYMENT_STATUS_CONFIG).map(([value, { label }]) => ({ label, value }));
@@ -15,7 +16,6 @@ const paymentMethodOptions = [
 ];
 
 export const OrderList = () => {
-  const [search, setSearch] = useState("");
 
   const invalidate = useInvalidate();
 
@@ -38,7 +38,6 @@ export const OrderList = () => {
   };
 
   const handleSearch = (value: string) => {
-    setSearch(value);
     setFilters([
       { field: "q", operator: "eq", value: value || undefined },
     ], "merge");
@@ -62,12 +61,10 @@ export const OrderList = () => {
       <Card size="small" style={{ marginBottom: 16 }}>
         <Row gutter={[12, 12]}>
           <Col xs={24} md={8}>
-            <Input
+            <DebouncedSearch
               placeholder="Search by order ID, customer name or email..."
               prefix={<SearchOutlined style={{ color: "#94a3b8" }} />}
-              value={search}
-              onChange={(e) => handleSearch(e.target.value)}
-              allowClear
+              onSearch={handleSearch}
             />
           </Col>
           <Col xs={12} md={4}>

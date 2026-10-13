@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
-import { Card, Table, Tag, Space, Input, Button, Typography, Popconfirm, message } from "antd";
+import { Card, Table, Tag, Space, Button, Typography, Popconfirm, message } from "antd";
 import { EditOutlined, DeleteOutlined, PlusOutlined, SearchOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 import dayjs from "dayjs";
 
 import { axiosInstance } from "../../../providers/data-provider";
 import { NOTIFICATION_TYPE_CONFIG } from "../../../constants/tag-colors";
+import { DebouncedSearch } from "../../../components/DebouncedSearch";
 
 const { Title } = Typography;
 
@@ -76,12 +77,10 @@ export const TemplateList = () => {
       </div>
 
       <Card style={{ marginBottom: 16 }} styles={{ body: { padding: "12px 16px" } }}>
-        <Input
+        <DebouncedSearch
           placeholder="Search templates..."
           prefix={<SearchOutlined style={{ color: "#94a3b8" }} />}
-          allowClear
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          onSearch={setSearch}
           style={{ width: 300 }}
         />
       </Card>

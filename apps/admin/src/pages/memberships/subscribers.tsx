@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
-import { App, Card, Table, Tag, Space, Input, Spin, Typography } from "antd";
+import { App, Card, Table, Tag, Space, Spin, Typography } from "antd";
 import { TeamOutlined } from "@ant-design/icons";
 import { axiosInstance } from "../../providers/data-provider";
 import { MEMBERSHIP_STATUS_CONFIG, MEMBERSHIP_DURATION_CONFIG } from "../../constants/tag-colors";
 import dayjs from "dayjs";
+import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 const { Text } = Typography;
-const { Search } = Input;
 
 interface Subscriber {
   id: string;
@@ -46,9 +46,8 @@ export const MembershipSubscribers = () => {
   return (
     <Card title={<Space><TeamOutlined style={{ color: "#7c3aed" }} /><Text strong>Membership Subscribers</Text></Space>}>
       <Space direction="vertical" style={{ width: "100%", marginBottom: 16 }}>
-        <Search
+        <DebouncedSearch
           placeholder="Search by name or email"
-          allowClear
           onSearch={(v) => { setSearch(v); setPage(1); }}
           style={{ maxWidth: 360 }}
         />
