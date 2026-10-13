@@ -1,0 +1,113 @@
+{
+  "brand": "Exo (Jyothy Labs)",
+  "manufacturer": "Jyothy Labs Ltd.",
+  "feed": "exo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/exo/logo-b2d37e79.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#00843D",
+  "namePrefix": "Exo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Exo Dishwash Bar - Anti-Bacterial": "Anti-Bacterial Dishwash Bar - Ginger",
+    "Exo Dishwash Liquid Gel - Anti-Bacterial": "Ginger & Lemon Anti-Bacterial Dishwash Liquid"
+  },
+  "rules": [
+    {
+      "match": "^Anti\\-Bacterial\\ Dishwash\\ Bar\\ \\-\\ Ginger$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacterial\\ Dishwash\\ Bar\\ \\-\\ Yuzu\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacterial\\ Dishwash\\ Bar\\ \\-\\ Baking\\ Soda$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Ginger\\ \\&\\ Lemon\\ Anti\\-Bacterial\\ Dishwash\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Ginger\\ \\&\\ Lemon\\ Anti\\-Bacterial\\ Dishwash\\ Liquid\\ Refill\\ Pouch$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Neem\\ \\&\\ Lime\\ Anti\\-Bacterial\\ Dishwash\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Neem\\ \\&\\ Lime\\ Anti\\-Bacterial\\ Dishwash\\ Liquid\\ Refill\\ Pouch$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Super\\ Gel\\ \\-\\ Ginger$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacterial\\ Bacto\\ Scrub$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Anti\\-Bacterial\\ 2\\-in\\-1\\ Scrubber$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Safai\\ Steel\\ Scrubber$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Safai\\ Premium\\ Stainless\\ Steel\\ Scrubber$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    }
+  ]
+}
