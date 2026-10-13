@@ -1,0 +1,46 @@
+{
+  "brand": "Wheel (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "wheel-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/wheel/logo-7d10415a.png",
+  "themeColor": "#E2231A",
+  "themeColorSecondary": "#009B48",
+  "namePrefix": "Wheel ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Active\\ 2\\ in\\ 1\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Active\\ 2\\ in\\ 1\\ Lemon\\ \\&\\ Jasmine\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Active\\ 2\\ in\\ 1\\ Detergent\\ Bar$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^Active\\ Blue\\ Detergent\\ Bar$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    }
+  ]
+}
