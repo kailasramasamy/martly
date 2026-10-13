@@ -1,0 +1,300 @@
+[
+ {
+  "title": "Cool Hair Oil",
+  "handle": "cool-hair-oil",
+  "vendor": "Navratna (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "45ml",
+    "price": "41",
+    "compare_at_price": "41",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/286522_5-navratna-hair-oil-ayurvedic-cool.jpg"
+    }
+   },
+   {
+    "title": "100ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264024_6-navratna-navratna-ayurvedic-hair-oil-cool-enriched-with-bhringraj-amla-bhrami-for-head-body-ache-fatigue.jpg"
+    }
+   },
+   {
+    "title": "200ml",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263910_6-navratna-ayurvedic-hair-oil-cool-enriched-with-bhringraj-amla-bhrami-for-head-body-ache-fatigue.jpg"
+    }
+   },
+   {
+    "title": "300ml",
+    "price": "205",
+    "compare_at_price": "205",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265360_5-navratna-ayurvedic-hair-oil-cool-enriched-with-bhringraj-amla-bhrami-for-head-body-ache-fatigue.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/299410_7-navratna-ayurvedic-hair-oil-cool-enriched-with-bhringraj-amla-bhrami-for-head-body-ache-fatigue.jpg"
+    }
+   },
+   {
+    "title": "600ml",
+    "price": "490",
+    "compare_at_price": "490",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40253837_5-navratna-ayurvedic-hair-oil-cool-with-9-active-herbal-ingredients-relieves-relaxes-rejuvenates.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286522_5-navratna-hair-oil-ayurvedic-cool.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264024_6-navratna-navratna-ayurvedic-hair-oil-cool-enriched-with-bhringraj-amla-bhrami-for-head-body-ache-fatigue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263910_6-navratna-ayurvedic-hair-oil-cool-enriched-with-bhringraj-amla-bhrami-for-head-body-ache-fatigue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265360_5-navratna-ayurvedic-hair-oil-cool-enriched-with-bhringraj-amla-bhrami-for-head-body-ache-fatigue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/299410_7-navratna-ayurvedic-hair-oil-cool-enriched-with-bhringraj-amla-bhrami-for-head-body-ache-fatigue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40253837_5-navratna-ayurvedic-hair-oil-cool-with-9-active-herbal-ingredients-relieves-relaxes-rejuvenates.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Gold Ayurvedic Cool Hair Oil",
+  "handle": "gold-ayurvedic-cool-hair-oil",
+  "vendor": "Navratna (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40237368_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369-2_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369-3_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369-4_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369-5_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369-6_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369-7_3-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40237369-8_2-navratna-gold-ayurvedic-cool-hair-oil-mild-fragrance-non-sticky-for-rejuvenating-relaxing.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the soothing and rejuvenating power of Navratna Gold, a marvel of Ayurvedic expertise. This non-sticky hair oil is a premium blend of cooling herbs and exotic flowers, designed to provide a blissful, calming experience. Infused with the refreshing scent of the mountains and the alluring fragrance of exotic blooms, this oil helps relieve headaches and stress, leaving you feeling revitalised and refreshed. Enriched with the goodness of almond, it nourishes and strengthens your hair, promoting a healthy scalp and reducing hair fall. Ideal for daily use, this luxurious oil offers a truly indulgent and relaxing experience, perfect for those seeking natural relief from tension and a renewed sense of well-being.",
+   "usageInstructions": "Apply liberally on the affected or desired area and massage gently till symptoms persist for a cooling, relaxing and refreshing effect.\nFor good results, use twice a day or as directed by the physician.",
+   "storageInstructions": "* Store in a cool and dry place, away from direct heat and sunlight",
+   "manufacturerName": "Emami Limited At A) “EPIP Complex”",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Active Deo Cool Talc",
+  "handle": "active-deo-cool-talc",
+  "vendor": "Navratna (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265643_4-navratna-cool-talc-active-deo.jpg"
+    },
+    "barcode": "8901248121613"
+   },
+   {
+    "title": "200g",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40172269_6-navratna-cool-active-deo.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "270",
+    "compare_at_price": "270",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/222571_7-navratna-cool-talc-active-deo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265643_4-navratna-cool-talc-active-deo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265643-2_2-navratna-cool-talc-active-deo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265643-3_1-navratna-cool-talc-active-deo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40172269_6-navratna-cool-active-deo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/222571_7-navratna-cool-talc-active-deo.jpg"
+   }
+  ],
+  "details": {
+   "description": "Navratna Cool Talc with icy cool formula gives you instant cooling relief. It is enriched with the goodness of ingredients like menthol which gives a long-lasting cooling effect. Its refreshing fragrance revitalises your senses and gives you long-lasting freshness.\nIts sweat absorption property has a quick-drying effect on your skin and soothes itching.",
+   "usageInstructions": "Sprinkle Navratna Cool Talc over your body for a refreshing and long-lasting cooling sensation.\nDo not apply on cuts and wounds.\nNot suitable for age below 3 years.",
+   "manufacturerName": "Emami Ltd. Survey No.61/2p/1 - MASAT",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mint Fresh Cool Talc",
+  "handle": "mint-fresh-cool-talc",
+  "vendor": "Navratna (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "263",
+    "compare_at_price": "263",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103158_7-navratna-cool-talc-mint-fresh.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103158_7-navratna-cool-talc-mint-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103158-2_1-navratna-cool-talc-mint-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103158-3_1-navratna-cool-talc-mint-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103158-4_1-navratna-cool-talc-mint-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103158-5_1-navratna-cool-talc-mint-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103158-6_1-navratna-cool-talc-mint-fresh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103158-7_1-navratna-cool-talc-mint-fresh.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience the invigorating freshness of Navratna Cool Talc, infused with the soothing power of menthol. This talcum powder provides instant cooling relief, leaving you feeling refreshed and energised all day long. Its unique formulation combats sweat and odour, making it the perfect companion for active lifestyles in hot, humid conditions. The refreshing fragrance revitalises your senses, while the quick-drying, sweat-absorbing properties soothe any itching or discomfort. Enriched with the goodness of natural ingredients, this talc delivers long-lasting freshness and a sense of confidence, ensuring you feel your best no matter the weather.",
+   "usageInstructions": "Apply Navratna Cool Talc over your body for a refreshing and long-lasting cooling sensation.\nDo not apply on cuts and wounds.\nNot suitable for age below 3 years.",
+   "manufacturerName": "Emami Ltd. Survey No.61/2p/1 - MASAT",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Maxx Cool Talc",
+  "handle": "maxx-cool-talc",
+  "vendor": "Navratna (Emami)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "302",
+    "compare_at_price": "302",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40102033_9-navratna-maxx-cool-talc.jpg"
+    },
+    "barcode": "8901248121507"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102033_9-navratna-maxx-cool-talc.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102033-2_2-navratna-maxx-cool-talc.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102033-3_2-navratna-maxx-cool-talc.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102033-4_1-navratna-maxx-cool-talc.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102033-5_1-navratna-maxx-cool-talc.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102033-6_1-navratna-maxx-cool-talc.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102033-7_1-navratna-maxx-cool-talc.jpg"
+   }
+  ],
+  "details": {
+   "description": "Experience the ultimate in cooling comfort with Navratna Maxx Cool Talc. Infused with a unique sweat-activated technology, this talcum powder provides long-lasting, soothing coolness that is unmatched by ordinary talcs. As you perspire, the cooling action is released, keeping you feeling fresh and invigorated all day long. Enriched with natural ingredients, Navratna Maxx Cool Talc is suitable for the entire family, offering a gentle, skin-nourishing formula that leaves you feeling soft, smooth and completely refreshed. Embrace the power of cutting-edge cooling technology and beat the heat with Navratna Maxx Cool Talc - the only choice for lasting comfort and confidence.",
+   "usageInstructions": "Apply Navratna Maxx Cool Talc over your body for a refreshing and long-lasting cooling sensation.\nDo not apply on cuts and wounds.\nNot suitable for age below 3 years.",
+   "manufacturerName": "Emami Ltd. Survey No.61/2p/1 - MASAT",
+   "countryOfOrigin": "India"
+  }
+ }
+]

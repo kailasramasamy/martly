@@ -1,0 +1,54 @@
+{
+  "brand": "Navratna (Emami)",
+  "manufacturer": "Emami Ltd.",
+  "feed": "navratna-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/navratna/logo-6882a56a.png",
+  "themeColor": "#B5161E",
+  "themeColorSecondary": "#00843D",
+  "namePrefix": "Navratna ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cool\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Gold\\ Ayurvedic\\ Cool\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Active\\ Deo\\ Cool\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Mint\\ Fresh\\ Cool\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Maxx\\ Cool\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    }
+  ]
+}
