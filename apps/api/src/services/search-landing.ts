@@ -70,8 +70,9 @@ async function occasionCollections(prisma: PrismaClient, storeId: string, organi
       OR: [{ organizationId }, { organizationId: null }],
       AND: liveWindow(new Date()),
     },
-    // OCCASION sorts before SEASON in the enum, so festivals lead
-    orderBy: [{ kind: "asc" }, { sortOrder: "asc" }],
+    // OCCASION sorts before SEASON in the enum, so festivals lead; among overlapping festivals the one
+    // ending soonest is the most urgent (Navratri before the Diwali run-up)
+    orderBy: [{ kind: "asc" }, { endsAt: { sort: "asc", nulls: "last" } }, { sortOrder: "asc" }],
     include: {
       items: {
         where: { product: inStore(storeId) },

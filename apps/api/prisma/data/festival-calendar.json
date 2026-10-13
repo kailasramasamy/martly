@@ -1,0 +1,1092 @@
+[
+ {
+  "slug": "bathukamma-2026",
+  "name": "Bathukamma",
+  "kind": "OCCASION",
+  "startsAt": "2026-10-10",
+  "endsAt": "2026-10-18",
+  "leadDays": 0,
+  "regions": [
+   "TS"
+  ],
+  "guidance": "Telangana floral festival over nine days ending with Saddula Bathukamma. Daily naivedyam: sesame, sattu (roasted gram flour) laddu, jaggery, peanuts, tamarind rice, curd rice, pulihora, coconut, flowers. Mostly vegetarian offerings.",
+  "source": "officeholidays.com India 2026 (Saddula Bathukamma Oct 18); Engili Pula start inferred",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "navratri-2026",
+  "name": "Navratri",
+  "kind": "OCCASION",
+  "startsAt": "2026-10-11",
+  "endsAt": "2026-10-19",
+  "leadDays": 7,
+  "regions": [
+   "GJ",
+   "DL",
+   "UP",
+   "PB",
+   "MH",
+   "TN",
+   "KA"
+  ],
+  "guidance": "Nine nights of fasting and worship; Garba in Gujarat, Golu displays in TN, Dasara in Karnataka. Vrat staples: kuttu/singhara flour, sabudana, sama rice, potatoes, fruits, makhana, rock salt, ghee, milk, paneer. Observed vegetarian by most households: no meat, fish or eggs. Many avoid onion and garlic. TN: sundal ingredients (chickpeas, black gram), coconut, jaggery, betel leaves.",
+  "source": "drikpanchang.com calendars 2026; officeholidays.com",
+  "confidence": "verified"
+ },
+ {
+  "slug": "durga-puja-2026",
+  "name": "Durga Puja",
+  "kind": "OCCASION",
+  "startsAt": "2026-10-17",
+  "endsAt": "2026-10-21",
+  "leadDays": 5,
+  "regions": [
+   "WB"
+  ],
+  "guidance": "Shashthi to Bijoya Dashami. Households buy sweets (sandesh, rasgulla, mishti doi), luchi/puri with aloo dum, khichuri bhog ingredients, gifts and ghee. Fish and meat are commonly eaten in Bengal except on specific fasting days; Dashami is celebrated with sweets and savoury snacks.",
+  "source": "hindutone/TourMyIndia citing Drik Panchang (Kolkata); some listings show Shashthi Oct 16",
+  "confidence": "verified"
+ },
+ {
+  "slug": "ayudha-pooja-2026",
+  "name": "Ayudha Pooja / Saraswati Pooja",
+  "kind": "OCCASION",
+  "startsAt": "2026-10-19",
+  "endsAt": "2026-10-20",
+  "leadDays": 5,
+  "regions": [
+   "TN",
+   "KA",
+   "KL"
+  ],
+  "guidance": "Worship of tools, books and vehicles. Buy flowers, fruits, banana, coconut, camphor, incense, sundal ingredients (chickpeas, black gram), pori, sweet pongal items, jaggery and rice. Vegetarian offerings; many households avoid meat on the day.",
+  "source": "officeholidays.com (TN Oct 19, KA Oct 20); Drik Panchang Navami Oct 19",
+  "confidence": "verified"
+ },
+ {
+  "slug": "dussehra-2026",
+  "name": "Dussehra (Vijayadashami)",
+  "kind": "OCCASION",
+  "startsAt": "2026-10-20",
+  "endsAt": "2026-10-20",
+  "leadDays": 5,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Celebrated with sweets (jalebi, laddu, kheer), fafda-jalebi in Gujarat, gifts and puja items, fruits and flowers. Vegetarian on the day for most households (Bengal celebrates Bijoya Dashami Oct 21 with sweets).",
+  "source": "drikpanchang.com Indian calendar 2026; officeholidays.com",
+  "confidence": "verified"
+ },
+ {
+  "slug": "northeast-monsoon-2026",
+  "name": "Northeast monsoon",
+  "kind": "SEASON",
+  "startsAt": "2026-10-20",
+  "endsAt": "2026-12-31",
+  "leadDays": 0,
+  "regions": [
+   "TN",
+   "AP"
+  ],
+  "guidance": "Rainy-season stocking for Tamil Nadu and coastal Andhra: instant noodles, biscuits, tea/coffee, bread, milk, candles, batteries, ready-to-cook and pantry staples, hot snacks, ginger and pepper for colds.",
+  "source": "IMD (onset typically mid to late October)",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "karva-chauth-2026",
+  "name": "Karva Chauth",
+  "kind": "OCCASION",
+  "startsAt": "2026-10-29",
+  "endsAt": "2026-10-29",
+  "leadDays": 7,
+  "regions": [
+   "DL",
+   "UP",
+   "PB"
+  ],
+  "guidance": "Married women fast from sunrise to moonrise. Buy sargi ingredients (dry fruits, mathri, fenian/vermicelli, fruit, sweets), mehendi, puja thali items, sieve, sweets and gifts for the wife. Vegetarian; satvik food for the fast-breaking meal.",
+  "source": "drikpanchang.com Indian calendar 2026",
+  "confidence": "verified"
+ },
+ {
+  "slug": "dhanteras-2026",
+  "name": "Dhanteras",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-06",
+  "endsAt": "2026-11-06",
+  "leadDays": 14,
+  "regions": [
+   "DL",
+   "UP",
+   "GJ",
+   "MH",
+   "PB"
+  ],
+  "guidance": "Auspicious day to buy gold, silver, utensils, brass and steel kitchenware, plus coriander seeds and jaggery for puja. Also sweets, dry fruits, diyas, rangoli colours and puja items. Vegetarian festive day.",
+  "source": "hindutone/shubhpanchang (Trayodashi Nov 6); Drik Panchang puja page",
+  "confidence": "verified"
+ },
+ {
+  "slug": "diwali-2026",
+  "name": "Diwali (Deepavali)",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-07",
+  "endsAt": "2026-11-08",
+  "leadDays": 21,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Biggest gifting and sweets moment: dry fruit boxes, mithai (laddu, barfi, kaju katli), snacks (chakli, murukku, mixture), ghee, oils, flour, sugar, jaggery, diyas, candles, rangoli, decor, puja items. TN and parts of the south celebrate Deepavali on Naraka Chaturdashi morning (Nov 8) with oil bath, legiyam, sweets and savouries. Festive meals are largely vegetarian; non-veg is common in some southern homes on the day.",
+  "source": "drikpanchang.com Indian calendar 2026 (Diwali, Lakshmi Puja and Narak Chaturdashi Nov 8); Choti Diwali listed Nov 7 elsewhere",
+  "confidence": "verified"
+ },
+ {
+  "slug": "kali-puja-2026",
+  "name": "Kali Puja",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-08",
+  "endsAt": "2026-11-08",
+  "leadDays": 7,
+  "regions": [
+   "WB"
+  ],
+  "guidance": "Night-time Kali worship and Diwali lighting in Bengal. Households buy sweets, fruits, flowers, hibiscus, diyas, candles and festive foods; bhoger khichuri and labra for some pujas. Meat and fish offerings are traditional in Bengali Kali worship, but this is not universal.",
+  "source": "officeholidays.com West Bengal / India 2026 (Nov 8)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "bestu-varas-2026",
+  "name": "Gujarati New Year (Bestu Varas) / Diwali Padwa",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-10",
+  "endsAt": "2026-11-10",
+  "leadDays": 5,
+  "regions": [
+   "GJ",
+   "MH"
+  ],
+  "guidance": "New Year gifting with sweets, dry fruits, farsan, ghee, chopda pujan items and visits to relatives. Vegetarian festive meals; Maharashtra celebrates Padwa with shrikhand/puran-style sweets.",
+  "source": "officeholidays.com India 2026 (Nov 10 Vikram Samvat, Maharashtra Bali Pratipada)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "govardhan-puja-2026",
+  "name": "Govardhan Puja (Annakut)",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-10",
+  "endsAt": "2026-11-10",
+  "leadDays": 5,
+  "regions": [
+   "DL",
+   "UP"
+  ],
+  "guidance": "Annakut: a mountain of vegetarian dishes offered to Krishna - kadhi, puri, sabzi, rice, sweets, kheer, milk and ghee. Buy cow dung/clay figures, flours, vegetables, dairy and sweets. Observed vegetarian by most households: no meat, fish or eggs.",
+  "source": "drikpanchang.com Indian calendar 2026 (Nov 10); officeholidays.com lists Nov 9 for UP - Drik chosen",
+  "confidence": "verified"
+ },
+ {
+  "slug": "bhai-dooj-2026",
+  "name": "Bhai Dooj",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-11",
+  "endsAt": "2026-11-11",
+  "leadDays": 5,
+  "regions": [
+   "DL",
+   "UP",
+   "GJ",
+   "MH",
+   "WB"
+  ],
+  "guidance": "Sisters host brothers: sweets, dry fruits, coconut, tilak thali items, rice, gifts, chocolates and a festive vegetarian meal. Bhai Phota in Bengal features sweets and a rich meal.",
+  "source": "drikpanchang.com Indian calendar 2026 (Nov 11)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "chhath-puja-2026",
+  "name": "Chhath Puja",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-13",
+  "endsAt": "2026-11-16",
+  "leadDays": 7,
+  "regions": [
+   "DL",
+   "UP"
+  ],
+  "guidance": "Four-day sun worship by the Purvanchali community: thekua (wheat flour, jaggery, ghee), fruits, sugarcane, coconut, bananas, soop/daura baskets, rice and jaggery kheer. Strictly satvik; no onion, garlic, meat, fish or eggs.",
+  "source": "drikpanchang.com (main day Nov 15); officeholidays.com (Nov 15/16)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "winter-2026-27",
+  "name": "Winter",
+  "kind": "SEASON",
+  "startsAt": "2026-11-15",
+  "endsAt": "2027-02-14",
+  "leadDays": 0,
+  "regions": [
+   "DL",
+   "UP",
+   "PB",
+   "GJ",
+   "MH",
+   "WB"
+  ],
+  "guidance": "Cold-weather buying: ghee, jaggery, sesame (til), dry fruits, gond/methi laddu ingredients, hot beverages (tea, coffee, cocoa), soups, millets, root vegetables, winter greens (sarson, bathua, methi), oats and warming spices.",
+  "source": "IMD seasonal convention",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "wedding-season-nov-2026",
+  "name": "Wedding season (North India)",
+  "kind": "SEASON",
+  "startsAt": "2026-11-20",
+  "endsAt": "2026-12-14",
+  "leadDays": 0,
+  "regions": [
+   "DL",
+   "UP",
+   "PB",
+   "GJ",
+   "MH"
+  ],
+  "guidance": "Weddings resume after Dev Uthani Ekadashi. Bulk buying: dry fruits, ghee, oil, sugar, flour, rice, tea, sweets, packaged snacks, soft drinks, mineral water and disposables.",
+  "source": "smartpuja/dekhopanchang (Dev Uthani Nov 19-21; sources differ)",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "guru-nanak-jayanti-2026",
+  "name": "Guru Nanak Jayanti",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-24",
+  "endsAt": "2026-11-24",
+  "leadDays": 5,
+  "regions": [
+   "PB",
+   "DL",
+   "UP"
+  ],
+  "guidance": "Gurpurab with langar and sweets: karah prasad (atta, ghee, sugar), kheer, dry fruits, milk, pinni and sweets for distribution. Gurdwara langar is strictly vegetarian.",
+  "source": "officeholidays.com India 2026 (Nov 24)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "karthigai-deepam-2026",
+  "name": "Karthigai Deepam",
+  "kind": "OCCASION",
+  "startsAt": "2026-11-24",
+  "endsAt": "2026-11-24",
+  "leadDays": 7,
+  "regions": [
+   "TN",
+   "AP",
+   "TS"
+  ],
+  "guidance": "Festival of lamps: clay agal vilakku, ghee, sesame/gingelly oil, cotton wicks, camphor, and sweets such as appam, adai, nel pori (puffed rice) urundai, aval, and pori. Vegetarian offerings; many avoid non-veg on the day.",
+  "source": "drikpanchang.com Karthigai Deepam page (Nov 24, 2026); hindutone Nov 22 outlier",
+  "confidence": "verified"
+ },
+ {
+  "slug": "vaikunta-ekadasi-2026",
+  "name": "Vaikunta Ekadasi",
+  "kind": "OCCASION",
+  "startsAt": "2026-12-20",
+  "endsAt": "2026-12-20",
+  "leadDays": 5,
+  "regions": [
+   "TN",
+   "AP",
+   "TS"
+  ],
+  "guidance": "Fasting day with temple visits (Srirangam, Tirupati). Buy fruits, milk, sabudana, tulsi, coconut and light fasting foods; many break the fast next day with an early meal including agathi keerai and sundakkai. Observed vegetarian by most households: no meat, fish or eggs.",
+  "source": "hindutone.com (Dec 20, 2026; calculated). Not cross-checked on Drik",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "christmas-2026",
+  "name": "Christmas",
+  "kind": "OCCASION",
+  "startsAt": "2026-12-25",
+  "endsAt": "2026-12-25",
+  "leadDays": 14,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Plum cake and fruit cake ingredients (dry fruits, flour, butter, eggs, sugar), cookies, chocolates, gifting hampers, dessert mixes, tree and decor items, roast chicken and meat for feasts. Non-vegetarian is normal. Strong in KL, MH, WB, KA, TN.",
+  "source": "officeholidays.com India 2026; calendarific",
+  "confidence": "verified"
+ },
+ {
+  "slug": "new-years-eve-2026",
+  "name": "New Year's Eve",
+  "kind": "OCCASION",
+  "startsAt": "2026-12-31",
+  "endsAt": "2026-12-31",
+  "leadDays": 5,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Party snacks, chips, dips, soft drinks, juices and mocktail mixers, chocolates, cakes, dessert and ready-to-eat items. Non-vegetarian is normal. No alcohol suggestions.",
+  "source": "officeholidays.com India 2026",
+  "confidence": "verified"
+ },
+ {
+  "slug": "lohri-2027",
+  "name": "Lohri",
+  "kind": "OCCASION",
+  "startsAt": "2027-01-14",
+  "endsAt": "2027-01-14",
+  "leadDays": 5,
+  "regions": [
+   "PB",
+   "DL"
+  ],
+  "guidance": "Bonfire festival: peanuts, rewri, gajak, popcorn, til laddu, jaggery, makki di roti, sarson da saag ingredients, sugarcane juice rab/kheer. Vegetarian festive foods; many households also enjoy non-veg dishes at celebrations.",
+  "source": "drikpanchang.com January 2027 (Lohri Jan 14)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "pongal-2027",
+  "name": "Pongal (Bhogi, Thai Pongal, Mattu Pongal, Kaanum)",
+  "kind": "OCCASION",
+  "startsAt": "2027-01-14",
+  "endsAt": "2027-01-17",
+  "leadDays": 14,
+  "regions": [
+   "TN"
+  ],
+  "guidance": "Thai Pongal on Jan 15: new rice, moong dal, jaggery, ghee, cashews, raisins, cardamom, milk, sugarcane, turmeric plants, banana, coconut, pots and kolam powder. Mattu Pongal Jan 16 honours cattle; Kaanum Pongal Jan 17 is for family outings. Thai Pongal day is vegetarian; non-veg is common on Mattu/Kaanum Pongal in many homes.",
+  "source": "drikpanchang.com January 2027 (Bhogi Jan 14, Pongal Jan 15, Mattu Pongal Jan 16); officeholidays TN",
+  "confidence": "verified"
+ },
+ {
+  "slug": "sankranti-ap-ts-2027",
+  "name": "Makar Sankranti (Bhogi, Sankranti, Kanuma)",
+  "kind": "OCCASION",
+  "startsAt": "2027-01-14",
+  "endsAt": "2027-01-16",
+  "leadDays": 14,
+  "regions": [
+   "AP",
+   "TS"
+  ],
+  "guidance": "Pindi vantalu: sakinalu, arisalu, ariselu, murukku, chakkilalu, sweets from jaggery, sesame, peanuts, rice flour, ghee, plus pongal and sugarcane. Bhogi mantalu, rangoli colours and kites. Kanuma day often features non-vegetarian dishes; Sankranti day is largely vegetarian.",
+  "source": "drikpanchang.com January 2027 (Sankranti Jan 15; Bhogi Jan 14; Kanuma inferred as Jan 16)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "uttarayan-2027",
+  "name": "Uttarayan (Makar Sankranti)",
+  "kind": "OCCASION",
+  "startsAt": "2027-01-14",
+  "endsAt": "2027-01-15",
+  "leadDays": 10,
+  "regions": [
+   "GJ"
+  ],
+  "guidance": "Kite flying: undhiyu vegetables (surti papdi, yam, raw banana), jalebi, chikki (sing/til), sugarcane, bor, kites, manja. Strictly vegetarian festive food.",
+  "source": "drikpanchang.com January 2027 (Uttarayana Jan 15); Jan 14 start per common practice (Vasi Uttarayan Jan 15)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "makar-sankranti-north-2027",
+  "name": "Makar Sankranti",
+  "kind": "OCCASION",
+  "startsAt": "2027-01-15",
+  "endsAt": "2027-01-15",
+  "leadDays": 7,
+  "regions": [
+   "DL",
+   "UP",
+   "MH"
+  ],
+  "guidance": "Khichdi with dal/urad, til-gud laddu, tilgul (Maharashtra: 'til gul ghya'), gajak, rewri, peanut chikki, jaggery, ghee and kites. Vegetarian festive food.",
+  "source": "drikpanchang.com January 2027",
+  "confidence": "verified"
+ },
+ {
+  "slug": "sankranti-ka-2027",
+  "name": "Makara Sankranti (Suggi)",
+  "kind": "OCCASION",
+  "startsAt": "2027-01-15",
+  "endsAt": "2027-01-15",
+  "leadDays": 7,
+  "regions": [
+   "KA"
+  ],
+  "guidance": "Ellu-bella (sesame-jaggery mix with peanuts, dried coconut, fried gram), sugarcane, sakkare achchu sweets, pongal, kichdi, bananas and fresh harvest produce. Mostly vegetarian.",
+  "source": "drikpanchang.com January 2027",
+  "confidence": "verified"
+ },
+ {
+  "slug": "wedding-season-2027",
+  "name": "Wedding season (North India)",
+  "kind": "SEASON",
+  "startsAt": "2027-01-15",
+  "endsAt": "2027-02-28",
+  "leadDays": 0,
+  "regions": [
+   "DL",
+   "UP",
+   "PB",
+   "GJ",
+   "MH"
+  ],
+  "guidance": "Weddings resume after Kharmas (ends Jan 14): bulk dry fruits, ghee, oil, rice, flour, sugar, tea, packaged sweets and snacks, mineral water and disposables.",
+  "source": "smartpuja Kharmas note; muhurat lists vary",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "thaipusam-2027",
+  "name": "Thaipusam",
+  "kind": "OCCASION",
+  "startsAt": "2027-01-22",
+  "endsAt": "2027-01-22",
+  "leadDays": 5,
+  "regions": [
+   "TN"
+  ],
+  "guidance": "Murugan festival: fruits, milk (paal kudam), panchamritham ingredients (banana, jaggery, dates, honey, ghee), coconut, flowers and sweets. Observed vegetarian by most households.",
+  "source": "drikpanchang.com January 2027; officeholidays TN",
+  "confidence": "verified"
+ },
+ {
+  "slug": "republic-day-2027",
+  "name": "Republic Day",
+  "kind": "OCCASION",
+  "startsAt": "2027-01-26",
+  "endsAt": "2027-01-26",
+  "leadDays": 3,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "National holiday; tricolour-themed treats, sweets, snacks, flags and decor, family lunches and picnics. No dietary rules.",
+  "source": "gazetted national holiday",
+  "confidence": "verified"
+ },
+ {
+  "slug": "ramzan-2027",
+  "name": "Ramzan (Ramadan) month",
+  "kind": "OCCASION",
+  "startsAt": "2027-02-09",
+  "endsAt": "2027-03-09",
+  "leadDays": 7,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Iftar and sehri shopping: dates, fruits, dry fruits, sherbets (rooh afza), milk, vermicelli (sewai), samosa/pakora ingredients, besan, chicken/mutton for haleem, rice, ghee, sugar and flour. Non-vegetarian is normal for iftar and dinner. No alcohol.",
+  "source": "timeanddate/wego estimates (Feb 9 provisional; moon sighting Feb 7-8)",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "vasant-panchami-2027",
+  "name": "Vasant Panchami / Saraswati Puja",
+  "kind": "OCCASION",
+  "startsAt": "2027-02-11",
+  "endsAt": "2027-02-11",
+  "leadDays": 5,
+  "regions": [
+   "WB",
+   "DL",
+   "UP",
+   "PB"
+  ],
+  "guidance": "Yellow-themed food: kesari rice, yellow sweets, boondi, fruits (kul/ber, banana), flowers, books and pens. Bengal Saraswati Puja bhog features khichuri, labra and chutney. Largely vegetarian; Bengali households avoid fish until after puja.",
+  "source": "drikpanchang.com 2027 (Feb 11); officeholidays West Bengal",
+  "confidence": "verified"
+ },
+ {
+  "slug": "exam-season-2027",
+  "name": "Exam season",
+  "kind": "SEASON",
+  "startsAt": "2027-02-15",
+  "endsAt": "2027-03-31",
+  "leadDays": 0,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Board and school exams: students need energy snacks, nuts, chocolates, bananas, fruits, coffee/tea, energy drinks (non-alcoholic), instant breakfast, stationery, and easy-to-prepare meals.",
+  "source": "CBSE/State board convention",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "maha-shivaratri-2027",
+  "name": "Maha Shivaratri",
+  "kind": "OCCASION",
+  "startsAt": "2027-03-06",
+  "endsAt": "2027-03-06",
+  "leadDays": 5,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Night-long fast and worship: fruits, milk, sabudana, kuttu/singhara, potatoes, makhana, bael leaves, bhang-free thandai ingredients (milk, nuts, saffron, fennel), flowers. Observed vegetarian by most households: no meat, fish or eggs.",
+  "source": "drikpanchang.com 2027; officeholidays",
+  "confidence": "verified"
+ },
+ {
+  "slug": "eid-ul-fitr-2027",
+  "name": "Eid ul-Fitr",
+  "kind": "OCCASION",
+  "startsAt": "2027-03-10",
+  "endsAt": "2027-03-10",
+  "leadDays": 10,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Sewai/sheer khurma ingredients (vermicelli, milk, dry fruits, dates, saffron), biryani (rice, mutton/chicken, spices, ghee), sweets, attar, new-clothes gifting. Non-vegetarian is normal. Date depends on moon sighting (Mar 9 in some states).",
+  "source": "DoPT gazetted list 2027 (Mar 10); state lists show Mar 9 - tentative",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "summer-2027",
+  "name": "Summer",
+  "kind": "SEASON",
+  "startsAt": "2027-03-15",
+  "endsAt": "2027-06-10",
+  "leadDays": 0,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Cooling and hydration: cold drinks, juices, coconut water, lassi/buttermilk, ice cream, curd, watermelon, mango and seasonal fruits, ORS, glucose, sherbet mixes, mint, cucumber, ice cubes and salads.",
+  "source": "IMD seasonal convention",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "holi-2027",
+  "name": "Holi",
+  "kind": "OCCASION",
+  "startsAt": "2027-03-21",
+  "endsAt": "2027-03-22",
+  "leadDays": 10,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Holika Dahan Mar 21, Holi Mar 22: gujiya (khoya, maida, dry fruits), thandai ingredients (milk, almonds, fennel, saffron; no intoxicants), malpua, dahi bhalla, chaat, snacks, gulal colours and water guns. Mostly vegetarian festive foods. Doljatra in WB.",
+  "source": "drikpanchang.com 2027; officeholidays",
+  "confidence": "verified"
+ },
+ {
+  "slug": "holy-week-easter-2027",
+  "name": "Good Friday and Easter",
+  "kind": "OCCASION",
+  "startsAt": "2027-03-26",
+  "endsAt": "2027-03-28",
+  "leadDays": 7,
+  "regions": [
+   "KL",
+   "TN",
+   "MH",
+   "WB"
+  ],
+  "guidance": "Easter feasts: eggs, chocolates, hot cross buns, cakes, roast chicken/mutton, appam and stew ingredients, fish on Good Friday. Many Christians avoid meat on Good Friday; Easter Sunday feast is non-vegetarian.",
+  "source": "officeholidays.com (Good Friday Mar 26, Easter Mar 28)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "gudi-padwa-2027",
+  "name": "Gudi Padwa",
+  "kind": "OCCASION",
+  "startsAt": "2027-04-07",
+  "endsAt": "2027-04-07",
+  "leadDays": 7,
+  "regions": [
+   "MH"
+  ],
+  "guidance": "Maharashtrian New Year: shrikhand, puran poli (chana dal, jaggery), neem leaves with jaggery, sugar crystal garlands (gaathi), banana, flowers and gudi cloth. Festive meal is largely vegetarian.",
+  "source": "drikpanchang.com 2027",
+  "confidence": "verified"
+ },
+ {
+  "slug": "ugadi-2027",
+  "name": "Ugadi",
+  "kind": "OCCASION",
+  "startsAt": "2027-04-07",
+  "endsAt": "2027-04-07",
+  "leadDays": 7,
+  "regions": [
+   "KA",
+   "AP",
+   "TS"
+  ],
+  "guidance": "Ugadi pachadi (raw mango, neem flowers, jaggery, tamarind, pepper, salt), obbattu/bobbatlu (chana dal, jaggery, maida), mango, banana, new clothes and puja items. Vegetarian festive meal.",
+  "source": "drikpanchang.com 2027; officeholidays",
+  "confidence": "verified"
+ },
+ {
+  "slug": "baisakhi-2027",
+  "name": "Baisakhi (Vaisakhi)",
+  "kind": "OCCASION",
+  "startsAt": "2027-04-14",
+  "endsAt": "2027-04-14",
+  "leadDays": 7,
+  "regions": [
+   "PB",
+   "DL"
+  ],
+  "guidance": "Harvest festival: karah prasad, kheer, lassi, sweets, makki/atta, sarson saag, chole bhature, langar items and new-season wheat flour. Gurdwara food is vegetarian; many families also enjoy non-veg at celebrations.",
+  "source": "drikpanchang.com 2027 (Apr 14)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "poila-boishakh-2027",
+  "name": "Poila Boishakh (Bengali New Year)",
+  "kind": "OCCASION",
+  "startsAt": "2027-04-14",
+  "endsAt": "2027-04-14",
+  "leadDays": 7,
+  "regions": [
+   "WB"
+  ],
+  "guidance": "Sweets (sandesh, rasgulla, mishti doi), fish and mutton preparations, luchi, panta bhat and ilish for many families, new accounts books (halkhata) and gifts. Fish and meat are traditional.",
+  "source": "officeholidays West Bengal 2027 (Apr 14); some Bengali panjikas show Apr 15",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "puthandu-2027",
+  "name": "Tamil New Year (Puthandu)",
+  "kind": "OCCASION",
+  "startsAt": "2027-04-14",
+  "endsAt": "2027-04-14",
+  "leadDays": 7,
+  "regions": [
+   "TN"
+  ],
+  "guidance": "Mango pachadi (raw mango, neem flower, jaggery), vadai, payasam, fruits (mango, banana, jackfruit), flowers, new clothes and kolam powder. Vegetarian feast.",
+  "source": "officeholidays TN 2027; drikpanchang.com Mesha Sankranti Apr 14",
+  "confidence": "verified"
+ },
+ {
+  "slug": "rama-navami-2027",
+  "name": "Rama Navami",
+  "kind": "OCCASION",
+  "startsAt": "2027-04-15",
+  "endsAt": "2027-04-15",
+  "leadDays": 5,
+  "regions": [
+   "AP",
+   "TS",
+   "UP",
+   "DL"
+  ],
+  "guidance": "Panakam (jaggery, ginger, cardamom drink), vadapappu (soaked moong dal), buttermilk, fruits, sweets, flowers and puja items. Observed vegetarian by most households.",
+  "source": "drikpanchang.com 2027; officeholidays",
+  "confidence": "verified"
+ },
+ {
+  "slug": "vishu-2027",
+  "name": "Vishu",
+  "kind": "OCCASION",
+  "startsAt": "2027-04-15",
+  "endsAt": "2027-04-15",
+  "leadDays": 7,
+  "regions": [
+   "KL"
+  ],
+  "guidance": "Vishukkani items (kani konna flowers, golden cucumber/vellarikka, jackfruit, mango, coconut, rice, lemon, gold/coins, mirror), Vishu sadya (veppampoo rasam, mango curry, payasam), fireworks. Sadya is vegetarian; non-veg is common in the evening for some.",
+  "source": "officeholidays Kerala 2027 (Apr 15)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "wedding-season-spring-2027",
+  "name": "Wedding season (spring, North India)",
+  "kind": "SEASON",
+  "startsAt": "2027-04-15",
+  "endsAt": "2027-05-31",
+  "leadDays": 0,
+  "regions": [
+   "DL",
+   "UP",
+   "PB",
+   "GJ",
+   "MH"
+  ],
+  "guidance": "Another peak wedding window: bulk staples, dry fruits, ghee, cold drinks, juices, ice cream, mineral water and catering supplies.",
+  "source": "Seasonal convention; muhurats vary",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "bakrid-2027",
+  "name": "Eid al-Adha (Bakrid)",
+  "kind": "OCCASION",
+  "startsAt": "2027-05-17",
+  "endsAt": "2027-05-17",
+  "leadDays": 10,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Mutton/goat meat for qurbani, biryani and korma ingredients (rice, ghee, spices, yogurt, onions), sheer khurma/sewai, dry fruits, sweets and attar. Non-vegetarian is normal. Date depends on moon sighting.",
+  "source": "DoPT gazetted list 2027 (May 17); officeholidays",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "back-to-school-2027",
+  "name": "Back to school",
+  "kind": "SEASON",
+  "startsAt": "2027-06-01",
+  "endsAt": "2027-06-30",
+  "leadDays": 0,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Lunchbox items: bread, jam, cheese, butter, biscuits, juice boxes, instant noodles, cereals, dry fruits, chocolates, snack packs, tiffin ingredients and health drinks.",
+  "source": "School reopening calendars (most states early June)",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "southwest-monsoon-2027",
+  "name": "Southwest monsoon",
+  "kind": "SEASON",
+  "startsAt": "2027-06-01",
+  "endsAt": "2027-09-30",
+  "leadDays": 0,
+  "regions": [
+   "KL",
+   "KA",
+   "MH",
+   "GJ",
+   "WB",
+   "UP",
+   "DL",
+   "TS",
+   "AP",
+   "PB"
+  ],
+  "guidance": "Rainy-day stocking: tea, coffee, instant noodles, biscuits, pakora/bhajiya mixes, hot snacks, ginger, tulsi, soup mixes, bread, candles, batteries, mosquito repellents and immunity products.",
+  "source": "IMD (Kerala onset around Jun 1)",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "aadi-month-2027",
+  "name": "Aadi month",
+  "kind": "SEASON",
+  "startsAt": "2027-07-17",
+  "endsAt": "2027-08-16",
+  "leadDays": 5,
+  "regions": [
+   "TN"
+  ],
+  "guidance": "Auspicious month for Amman worship: koozh (ragi/rice), koozh vegetables, neem leaves, turmeric, kumkum, pori, vegetarian offerings. Many avoid weddings and new ventures; non-veg is common on some days but avoided on Fridays/festival days by devout families.",
+  "source": "drikpanchang.com (Aadi Perukku Aug 3 = Aadi 18, implying month start about Jul 16-17)",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "aadi-perukku-2027",
+  "name": "Aadi Perukku",
+  "kind": "OCCASION",
+  "startsAt": "2027-08-03",
+  "endsAt": "2027-08-03",
+  "leadDays": 5,
+  "regions": [
+   "TN"
+  ],
+  "guidance": "River/water worship with mixed rice varieties (coconut, tamarind, lemon, curd, sweet pongal), jaggery, raw rice, coconut, banana, flowers and thali items. Largely vegetarian offerings; Aadi Amavasai (Aug 2) is for ancestors.",
+  "source": "drikpanchang.com August 2027 (Aug 3); bhaktibharat",
+  "confidence": "verified"
+ },
+ {
+  "slug": "hariyali-teej-2027",
+  "name": "Hariyali Teej",
+  "kind": "OCCASION",
+  "startsAt": "2027-08-04",
+  "endsAt": "2027-08-04",
+  "leadDays": 5,
+  "regions": [
+   "DL",
+   "UP"
+  ],
+  "guidance": "Women's festival: ghewar, malpua, mehendi, green bangles, fruit, sweets and fasting items. Many fast; sattvic vegetarian food.",
+  "source": "drikpanchang.com August 2027 (Aug 4); astrosight outlier Aug 14",
+  "confidence": "verified"
+ },
+ {
+  "slug": "varalakshmi-vratham-2027",
+  "name": "Varamahalakshmi / Varalakshmi Vratham",
+  "kind": "OCCASION",
+  "startsAt": "2027-08-13",
+  "endsAt": "2027-08-13",
+  "leadDays": 7,
+  "regions": [
+   "KA",
+   "AP",
+   "TS",
+   "TN"
+  ],
+  "guidance": "Lakshmi puja: kalasam with coconut, mango leaves, rice, turmeric, kumkum, bananas, flowers, jaggery, sweets (kadubu, holige/obbattu, payasam), bangles and blouse pieces. Vegetarian puja and prasad.",
+  "source": "drikpanchang.com August 2027 (Aug 13)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "independence-day-2027",
+  "name": "Independence Day",
+  "kind": "OCCASION",
+  "startsAt": "2027-08-15",
+  "endsAt": "2027-08-15",
+  "leadDays": 3,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "National holiday; tricolour-themed sweets, snacks, family meals, flags and decor. No dietary rules.",
+  "source": "gazetted national holiday",
+  "confidence": "verified"
+ },
+ {
+  "slug": "raksha-bandhan-2027",
+  "name": "Raksha Bandhan",
+  "kind": "OCCASION",
+  "startsAt": "2027-08-17",
+  "endsAt": "2027-08-17",
+  "leadDays": 10,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Rakhi, sweets (kaju katli, laddu, barfi, rasgulla), chocolates, dry fruit boxes, gift hampers, and festive vegetarian lunch ingredients (kheer, puri, sabzi).",
+  "source": "drikpanchang.com August 2027 (Aug 17)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "janmashtami-2027",
+  "name": "Krishna Janmashtami (Gokulashtami)",
+  "kind": "OCCASION",
+  "startsAt": "2027-08-25",
+  "endsAt": "2027-08-26",
+  "leadDays": 10,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Makhan/butter, curd, milk, panjiri, kheer, sweets, fruit and flowers; TN Gokulashtami: seedai, murukku, thattai, avul (poha), jaggery; Dahi Handi Aug 26 in MH. Vegetarian festival; many fast until midnight.",
+  "source": "drikpanchang.com August 2027 (Aug 25; Dahi Handi Aug 26); officeholidays",
+  "confidence": "verified"
+ },
+ {
+  "slug": "onam-2027",
+  "name": "Onam (Atham to Thiruvonam)",
+  "kind": "OCCASION",
+  "startsAt": "2027-09-03",
+  "endsAt": "2027-09-14",
+  "leadDays": 21,
+  "regions": [
+   "KL"
+  ],
+  "guidance": "Onam sadya: rice, banana chips, sarkara upperi, parippu, sambar, avial, pachadi, payasam, banana, jaggery, coconut oil, pappadam, coconut, vegetables; pookalam flowers, onakodi gifts. Thiruvonam Sep 12 (Sep 13 in some panchangs). Sadya is vegetarian.",
+  "source": "drikpanchang.com Onam Sep 12, 2027; officeholidays Kerala (Onam days Sep 11-14); Atham Sep 3 inferred",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "ganesh-chaturthi-2027",
+  "name": "Ganesh / Vinayaka Chaturthi",
+  "kind": "OCCASION",
+  "startsAt": "2027-09-04",
+  "endsAt": "2027-09-04",
+  "leadDays": 10,
+  "regions": [
+   "KA",
+   "TN",
+   "AP",
+   "TS"
+  ],
+  "guidance": "Modak/kozhukattai (rice flour, jaggery, coconut), sundal, laddu, durva grass, flowers, coconut, banana, clay idols, incense. KA: Gowri Habba Sep 3. Vegetarian; many households avoid non-veg for the day.",
+  "source": "drikpanchang.com September 2027 (Sep 4)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "ganeshotsav-2027",
+  "name": "Ganeshotsav",
+  "kind": "OCCASION",
+  "startsAt": "2027-09-04",
+  "endsAt": "2027-09-14",
+  "leadDays": 14,
+  "regions": [
+   "MH"
+  ],
+  "guidance": "Ten-day public and home festival: modak (rice flour, jaggery, coconut), puran poli, laddu, sweets, durva, flowers, coconut, banana, fruits, decor and idols. Immersion on Anant Chaturdashi (Sep 14). Mostly vegetarian during the festival.",
+  "source": "drikpanchang.com September 2027 (Chaturthi Sep 4, Anant Chaturdashi Sep 14)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "purattasi-2027",
+  "name": "Purattasi month",
+  "kind": "SEASON",
+  "startsAt": "2027-09-17",
+  "endsAt": "2027-10-17",
+  "leadDays": 5,
+  "regions": [
+   "TN"
+  ],
+  "guidance": "Month sacred to Perumal; devout households avoid non-vegetarian food, especially on Saturdays. Buy vegetables, rice, dals, coconut, banana, thulasi, sesame, rice flour, jaggery, curd and temple offerings (maavilakku). Observed vegetarian by most households: no meat, fish or eggs.",
+  "source": "drikpanchang.com (Kanya Sankranti Sep 17, 2027); start tentative",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "bathukamma-2027",
+  "name": "Bathukamma",
+  "kind": "OCCASION",
+  "startsAt": "2027-09-29",
+  "endsAt": "2027-10-07",
+  "leadDays": 7,
+  "regions": [
+   "TS"
+  ],
+  "guidance": "Nine-day floral festival (Engili Pula to Saddula Bathukamma): daily naivedyam of sesame, sattu laddu, jaggery, peanuts, tamarind rice, curd rice, pulihora, coconut and flowers.",
+  "source": "Inferred from Mahalaya Amavasya Sep 29 and Ashtami Oct 7, 2027",
+  "confidence": "tentative"
+ },
+ {
+  "slug": "navratri-2027",
+  "name": "Navratri",
+  "kind": "OCCASION",
+  "startsAt": "2027-09-30",
+  "endsAt": "2027-10-08",
+  "leadDays": 7,
+  "regions": [
+   "GJ",
+   "DL",
+   "UP",
+   "PB",
+   "MH",
+   "TN",
+   "KA"
+  ],
+  "guidance": "Nine nights of fasting and worship; Garba in Gujarat, Golu in TN, Dasara in Karnataka. Vrat staples: kuttu/singhara flour, sabudana, sama rice, potatoes, fruits, makhana, rock salt, ghee, paneer. Observed vegetarian by most households: no meat, fish or eggs. Many avoid onion and garlic.",
+  "source": "drikpanchang.com September 2027 (Navratri begins Sep 30)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "durga-puja-2027",
+  "name": "Durga Puja",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-05",
+  "endsAt": "2027-10-09",
+  "leadDays": 5,
+  "regions": [
+   "WB"
+  ],
+  "guidance": "Shashthi to Bijoya Dashami. Sweets (sandesh, rasgulla, mishti doi), luchi/puri, aloo dum, khichuri bhog, ghee and gifts. Fish and meat are commonly eaten in Bengal except on specific fasting days.",
+  "source": "officeholidays.com West Bengal 2027 (Shashthi Oct 5, Dashami Oct 9)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "ayudha-pooja-2027",
+  "name": "Ayudha Pooja / Saraswati Pooja",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-08",
+  "endsAt": "2027-10-09",
+  "leadDays": 5,
+  "regions": [
+   "TN",
+   "KA",
+   "KL"
+  ],
+  "guidance": "Worship of tools, books and vehicles: flowers, fruits, coconut, banana, camphor, incense, sundal ingredients (chickpeas), pori, jaggery, rice and sweets. Vegetarian offerings.",
+  "source": "drikpanchang.com October 2027 (Ayudha Puja Oct 9; Navami Oct 8)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "dussehra-2027",
+  "name": "Dussehra (Vijayadashami)",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-09",
+  "endsAt": "2027-10-09",
+  "leadDays": 5,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Sweets (jalebi, laddu, kheer), fafda-jalebi in Gujarat, gifts, puja items, fruits and flowers. Vegetarian on the day for most households.",
+  "source": "DoPT gazetted list 2027 (Oct 9); drikpanchang.com",
+  "confidence": "verified"
+ },
+ {
+  "slug": "karva-chauth-2027",
+  "name": "Karva Chauth",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-18",
+  "endsAt": "2027-10-18",
+  "leadDays": 7,
+  "regions": [
+   "DL",
+   "UP",
+   "PB"
+  ],
+  "guidance": "Fast from sunrise to moonrise. Sargi items (dry fruits, mathri, fenian, fruit, sweets), mehendi, puja thali, sieve, sweets and gifts. Vegetarian; satvik meal to break the fast.",
+  "source": "drikpanchang.com October 2027 (Oct 18)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "dhanteras-2027",
+  "name": "Dhanteras",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-27",
+  "endsAt": "2027-10-27",
+  "leadDays": 14,
+  "regions": [
+   "DL",
+   "UP",
+   "GJ",
+   "MH",
+   "PB"
+  ],
+  "guidance": "Buy gold, silver, utensils, brass and steel kitchenware, coriander seeds and jaggery for puja, plus sweets, dry fruits, diyas and rangoli colours. Vegetarian festive day.",
+  "source": "drikpanchang.com October 2027 (Oct 27)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "diwali-2027",
+  "name": "Diwali (Deepavali)",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-28",
+  "endsAt": "2027-10-29",
+  "leadDays": 21,
+  "regions": [
+   "ALL"
+  ],
+  "guidance": "Peak gifting and sweets moment: dry fruit boxes, mithai, snacks (chakli, murukku, mixture), ghee, oils, flour, sugar, jaggery, diyas, candles, rangoli, decor and puja items. TN and parts of the south celebrate on Naraka Chaturdashi morning (Oct 28) with oil bath, legiyam, sweets and savouries. Festive meals largely vegetarian; non-veg is common in some southern homes on Deepavali morning.",
+  "source": "DoPT gazetted list (Oct 29); drikpanchang.com (Lakshmi Puja Oct 29; Naraka Chaturdashi Oct 28)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "kali-puja-2027",
+  "name": "Kali Puja",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-28",
+  "endsAt": "2027-10-28",
+  "leadDays": 7,
+  "regions": [
+   "WB"
+  ],
+  "guidance": "Night-time Kali worship and Diwali lighting. Sweets, fruits, hibiscus, diyas, candles, bhoger khichuri. Meat and fish offerings are traditional for some Bengali households.",
+  "source": "officeholidays West Bengal 2027 (Oct 28); drikpanchang.com October 2027",
+  "confidence": "verified"
+ },
+ {
+  "slug": "govardhan-puja-2027",
+  "name": "Govardhan Puja (Annakut)",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-30",
+  "endsAt": "2027-10-30",
+  "leadDays": 5,
+  "regions": [
+   "DL",
+   "UP"
+  ],
+  "guidance": "Annakut: a mountain of vegetarian dishes - kadhi, puri, sabzi, rice, sweets, kheer, milk and ghee. Observed vegetarian by most households: no meat, fish or eggs.",
+  "source": "drikpanchang.com October 2027 (Oct 30)",
+  "confidence": "verified"
+ },
+ {
+  "slug": "bhai-dooj-2027",
+  "name": "Bhai Dooj",
+  "kind": "OCCASION",
+  "startsAt": "2027-10-31",
+  "endsAt": "2027-10-31",
+  "leadDays": 5,
+  "regions": [
+   "DL",
+   "UP",
+   "GJ",
+   "MH",
+   "WB"
+  ],
+  "guidance": "Sweets, dry fruits, coconut, tilak thali items, rice, chocolates, gifts and a festive vegetarian meal; Bhai Phota in Bengal features sweets and a rich meal.",
+  "source": "drikpanchang.com October 2027 (Oct 31); officeholidays",
+  "confidence": "verified"
+ }
+]
