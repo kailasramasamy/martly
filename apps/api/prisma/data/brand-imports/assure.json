@@ -1,0 +1,86 @@
+{
+  "brand": "Assure",
+  "manufacturer": "Nanz Med Science Pharma Pvt. Ltd.",
+  "feed": "assure-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/assure/logo-57f4c92b.png",
+  "themeColor": "#1BA7A6",
+  "themeColorSecondary": "#2E3A87",
+  "namePrefix": "Assure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Antibacterial\\ Active\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Heal\\ Tooth\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Antiseptic\\ Liquid$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Balls$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Cotton\\ Buds$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Heal\\ Pain\\ Gel\\ for\\ Joints\\ \\&\\ Muscles$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Heal\\ Pain\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Hand\\ Wash\\ Gel\\ Aloe\\ Vera\\ \\&\\ Vitamin\\ E$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Wet\\ Wipes$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    }
+  ]
+}
