@@ -1,0 +1,70 @@
+{
+  "brand": "Electrorush",
+  "manufacturer": "Halewood Laboratories Pvt. Ltd.",
+  "feed": "electrorush-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/electrorush/logo-108fb141.png",
+  "themeColor": "#F26522",
+  "themeColorSecondary": "#00A651",
+  "namePrefix": "Electrorush ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Apple\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Cola\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Orange\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Nimbu\\ Pani\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Plus\\ Apple\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Plus\\ Orange\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    }
+  ]
+}
