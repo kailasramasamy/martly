@@ -1,0 +1,110 @@
+{
+  "brand": "Meera",
+  "manufacturer": "CavinKare Pvt. Ltd.",
+  "feed": "meera-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/meera/logo-13b134b6.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#F2A900",
+  "namePrefix": "Meera ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Anti\\ Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Fall\\ Care\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Strong\\ \\&\\ Healthy\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Smooth\\ \\&\\ Shine\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Enrich\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Enrich\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Hairwash\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Pure\\ Coconut\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Neem\\ \\&\\ Vetiver\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Red\\ Sandalwood\\ \\&\\ Manjistha\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^White\\ \\&\\ Wild\\ Turmeric\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    }
+  ]
+}

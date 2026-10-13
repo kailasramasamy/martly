@@ -1,0 +1,679 @@
+[
+ {
+  "title": "Anti Dandruff Shampoo",
+  "handle": "anti-dandruff-shampoo",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80ml",
+    "price": "74",
+    "compare_at_price": "74",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160474_3-meera-anti-dandruff-shampoo.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160475_6-meera-anti-dandruff-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "319",
+    "compare_at_price": "319",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211572_4-meera-anti-dandruff-shampoo.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "780",
+    "compare_at_price": "780",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211571_4-meera-anti-dandruff-shampoo.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1200",
+    "compare_at_price": "1200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211570_4-meera-anti-dandruff-shampoo.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160474_3-meera-anti-dandruff-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160474-2_2-meera-anti-dandruff-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160474-3_2-meera-anti-dandruff-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160475_6-meera-anti-dandruff-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211572_4-meera-anti-dandruff-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211571_4-meera-anti-dandruff-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211570_4-meera-anti-dandruff-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "description": "Reimagine your scalp health with Meera Anti-Dandruff Shampoo, a transformative formula infused with the finest natural ingredients. Packed with the goodness of small onions and fenugreek, this shampoo tackles the four key problems of dandruff - white flakes, itchiness, dry scalp, and hair fall. The small onion extract works to combat dandruff, controlling unsightly white flakes and soothing irritation, while the nourishing fenugreek strengthens and conditions your hair for a healthy, vibrant look. Gentle enough for daily use, this herbal shampoo cleanses deeply while restoring the natural balance of your scalp, leaving your hair feeling fresh, fragrant, and revitalised. Experience the power of nature's remedies and say goodbye to dandruff worries with Meera Anti-Dandruff Shampoo.",
+   "usageInstructions": "Wet your hair and take sufficient amount of shampoo and mix it with water.\nPour it over your hair and keep it for at least 5 minutes.\nWash your hair thoroughly with water.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hair Fall Care Shampoo",
+  "handle": "hair-fall-care-shampoo",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/279687_3-meera-shampoo-shikakai-badam.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160478_6-meera-hairfall-care-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "345",
+    "compare_at_price": "345",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40246845_4-meera-hair-fall-care-shampoo-with-shikakai-badam-reduces-split-ends-cleanses-scalp.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "570",
+    "compare_at_price": "570",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40106418_6-meera-hair-fall-care-shampoo.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1254",
+    "compare_at_price": "1254",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40246844_4-meera-hair-fall-care-shampoo-with-shikakai-badam-reduces-split-ends-cleanses-scalp.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/279687_3-meera-shampoo-shikakai-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/279687-2_2-meera-shampoo-shikakai-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160478_6-meera-hairfall-care-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246845_4-meera-hair-fall-care-shampoo-with-shikakai-badam-reduces-split-ends-cleanses-scalp.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106418_6-meera-hair-fall-care-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246844_4-meera-hair-fall-care-shampoo-with-shikakai-badam-reduces-split-ends-cleanses-scalp.jpg"
+   }
+  ],
+  "details": {
+   "description": "Revitalise your hair with the Meera Hair Fall Care Shampoo, a nourishing and rejuvenating formula designed to combat hair fall and promote healthy, lustrous locks. Infused with the natural benefits of Shikakai, Badam, Tulsi, and Hibiscus, this gentle shampoo cleanses your hair while providing essential nutrients to strengthen and revitalise your strands. Shikakai serves as a natural, purifying cleanser that cleanses the scalp, while Badam and Vitamin E-enriched Almond nourish your hair from root to tip, significantly reducing hair fall by up to 97% and leaving your tresses looking voluminous, smooth, and soft. Formulated by haircare experts, this daily-use shampoo ensures your hair remains extra strong and manageable, bidding farewell to dull, lifeless hair and welcoming smooth, healthy-looking tresses.",
+   "usageInstructions": "1. Wet your hair and take sufficient amount of shampoo and mix it with water.\n2. Pour it over your hair and keep it for at least 5 minutes.\n3. Wash your hair thoroughly with water.",
+   "manufacturerName": "NIKITA CONTAINERS PRIVATE LIMITED F-7",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strong & Healthy Shampoo",
+  "handle": "strong-healthy-shampoo",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "80ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265251_2-meera-shampoo-kunkudukai-badam.jpg"
+    }
+   },
+   {
+    "title": "180ml",
+    "price": "137",
+    "compare_at_price": "137",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008461_6-meera-strong-healthy-shampoo.jpg"
+    }
+   },
+   {
+    "title": "340ml",
+    "price": "268",
+    "compare_at_price": "268",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40246846_3-meera-strong-healthy-shampoo-with-kunkudukai-badam-reduces-hair-fall-cleanses-scalp.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "699",
+    "compare_at_price": "699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40106417_6-meera-strong-healthy-shampoo.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "1254",
+    "compare_at_price": "1254",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40246843_3-meera-strong-healthy-shampoo-with-kunkudukai-badam-reduces-hair-fall-cleanses-scalp.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265251_2-meera-shampoo-kunkudukai-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265251-2_2-meera-shampoo-kunkudukai-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265251-3_2-meera-shampoo-kunkudukai-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265251-4_2-meera-shampoo-kunkudukai-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265251-5_1-meera-shampoo-kunkudukai-badam.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008461_6-meera-strong-healthy-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40246846_3-meera-strong-healthy-shampoo-with-kunkudukai-badam-reduces-hair-fall-cleanses-scalp.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40106417_6-meera-strong-healthy-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "description": "Unlock the power of nature with Meera's Strong & Healthy Shampoo, a true testament to centuries of Ayurvedic wisdom. Crafted with the finest natural ingredients, this shampoo is designed to nourish and strengthen your hair from root to tip. Enriched with the goodness of kunkudukai, known for its gentle cleansing properties, and vitamin E-infused almond, this shampoo revitalizes your locks, leaving them feeling fresh, strong, and vibrant. Experience the natural shine and luster that kunkudukai imparts, giving your hair a beautiful glossy finish. Formulated to address common hair concerns like breakage and dullness, this paraben-free formula promotes stronger and healthier hair, making it visibly smoother and more manageable with every use. Embrace the essence of nature and treat your tresses to the care they deserve with Meera's Strong & Healthy Shampoo.",
+   "usageInstructions": "Wet your hair and take sufficient amount of shampoo and mix it with water.\nPour it over your hair and keep it for at least 5 minutes.\nWash your hair thoroughly with water.",
+   "manufacturerName": "NIKITA CONTAINERS PRIVATE LIMITED F-7",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Smooth & Shine Shampoo",
+  "handle": "smooth-shine-shampoo",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "216",
+    "compare_at_price": "216",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+    }
+   },
+   {
+    "title": "650ml",
+    "price": "980",
+    "compare_at_price": "980",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40355385_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384-2_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384-3_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384-4_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384-5_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384-6_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384-7_2-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40355384-8_1-meera-smooth-shine-shampoo-with-rice-kanji-aloe-vera.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the goodness of tradition with Meera Smooth & Shine Shampoo, enriched with the natural benefits of Rice Kanji and Aloe Vera. This unique formula helps nourish your hair, making it smoother, shinier, and healthier-looking for up to 72 hours. Rice Kanji, known for its strengthening properties, and Aloe Vera, a natural moisturizer, work together to tame frizz and add lustrous shine. Ideal for daily use, this shampoo gently cleanses while leaving your hair irresistibly soft and manageable.",
+   "manufacturerName": "Cavinkare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Enrich Shampoo",
+  "handle": "enrich-shampoo",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300ml",
+    "price": "379",
+    "compare_at_price": "379",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276264_2-meera-enrich-shampoo-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+    },
+    "barcode": "8902979005975"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276264_2-meera-enrich-shampoo-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276264-2_2-meera-enrich-shampoo-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276264-3_1-meera-enrich-shampoo-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276264-4_1-meera-enrich-shampoo-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276264-5_1-meera-enrich-shampoo-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276264-6_1-meera-enrich-shampoo-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276264-7_1-meera-enrich-shampoo-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   }
+  ],
+  "details": {
+   "description": "Flaunt your hair with Meera Enrich infused with the natural goodness of coconut milk which nourishes your hair and makes it stronger. Coconut Milk Shampoo helps in the cleansing the scalp & nourish hair by reducing hair breakage. Its precious coconut milk is extracted from the locale of Kerala to restore the tradition of hydrating hair and fortifying strands through the coconut milk. The shampoo has no parabens, no silicones, no sulphates and is suitable for all hair types and is gentle enough for everyday use. It is ideal for men & women. For the best result, complete the hair care ritual by using conditioner.",
+   "usageInstructions": "Apply adequate amount on wet scalp/hair, lather and rinse with water.\nFor best results, use it with Meera Enrich Coconut Milk Conditioner.",
+   "manufacturerName": "Cavinkare Pvt. Ltd",
+   "countryOfOrigin": "INDIA"
+  }
+ },
+ {
+  "title": "Enrich Conditioner",
+  "handle": "enrich-conditioner",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "389",
+    "compare_at_price": "389",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40276266_2-meera-enrich-conditioner-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+    },
+    "barcode": "8902979006002"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276266_2-meera-enrich-conditioner-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276266-2_2-meera-enrich-conditioner-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276266-3_1-meera-enrich-conditioner-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276266-4_1-meera-enrich-conditioner-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276266-5_1-meera-enrich-conditioner-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276266-6_1-meera-enrich-conditioner-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40276266-7_1-meera-enrich-conditioner-with-keralas-coconut-milk-for-strong-nourish-hair-paraben-sulphate-free.jpg"
+   }
+  ],
+  "details": {
+   "description": "Flaunt your hair with Meera Enrich infused with the natural goodness of coconut milk which nourishes your hair and makes it stronger. Coconut Milk Conditioner helps cleanse the scalp & nourish hair by reducing hair breakage. Its precious coconut milk is extracted from the locale of Kerala to restore the tradition of hydrating hair and fortifying strands through the coconut milk. The conditioner has no parabens, no silicones, no sulphates and is suitable for all hair types and is gentle enough for everyday use. It is ideal for men & women. For the best result, complete the hair care ritual by using shampoo.",
+   "usageInstructions": "After Shampoo, spread the conditioner evenly over wet hair. Leave on for 2 min and rinse thoroughly.\nFor best results, use it with Meera Enrich Coconut Milk Shampoo.",
+   "manufacturerName": "Cavinkare Pvt Ltd",
+   "countryOfOrigin": "INDIA"
+  }
+ },
+ {
+  "title": "Herbal Hairwash Powder",
+  "handle": "herbal-hairwash-powder",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265238_6-meera-hairwash-powder-herbal.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008459_4-meera-hairwash-powder-herbal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265238_6-meera-hairwash-powder-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265238-2_1-meera-hairwash-powder-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265238-3_1-meera-hairwash-powder-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265238-4_1-meera-hairwash-powder-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265238-5_1-meera-hairwash-powder-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265238-6_1-meera-hairwash-powder-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008459_4-meera-hairwash-powder-herbal.jpg"
+   }
+  ],
+  "details": {
+   "description": "One of the flagship brands of CavinKare, Meera boasts of a portfolio of products stressing on wholesome health for hair. The brand derives its strengths from deep understanding of traditional Indian practices and giving it to consumers in easy-to-use contemporary formats. The brand 'MEERA' evokes immense respect from both consumers & retailers which only a few other brands can claim and is one of the household brands of South India. According to Ayurvedic literature, one of the causes of hair problems could be excess body heat. Cool your body with a weekly routine of oiling your hair before you take a bath with Meera Herbal Hairwash Powder. It is an aromatic blend of roots, flowers, and leaves from 11 natural herbs. It contains Shikakai, Green gram, Tulsi, Vetiver and Reetha that cleanses your hair and leaves it fresh and shiny, whilst hibiscus and fenugreek act as deep conditioners, strengthening each strand of hair from root to the tip. Meera takes its inspiration from tradition and brings the goodness of time-tested practices in a convenient form. The traditional routine of oil bath with Meera Herbal Hairwash Powder cools your body, strengthens and nourishes your hair from root to tip, giving you healthy and problem-free hair, naturally.",
+   "usageInstructions": "1. Cut open the pack and take required quantity of this powder into a bowl.\n2. Mix it with water and make it into a paste.\n3. Apply oil on head.\n4. Leave it for few minutes.\n5. Wet head, apply the paste on your head, massage for few minutes and rinse.",
+   "manufacturerName": "ROHIT INDIA RS NO 153/7 Pondicherry",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hair Mask",
+  "handle": "hair-mask",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "120g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40211580_1-meera-hair-mask-with-aloe-veera-fenugreek-bhringaraj.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211580_1-meera-hair-mask-with-aloe-veera-fenugreek-bhringaraj.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211580-2_1-meera-hair-mask-with-aloe-veera-fenugreek-bhringaraj.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211580-3_1-meera-hair-mask-with-aloe-veera-fenugreek-bhringaraj.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211580-4_1-meera-hair-mask-with-aloe-veera-fenugreek-bhringaraj.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211580-5_1-meera-hair-mask-with-aloe-veera-fenugreek-bhringaraj.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40211580-6_1-meera-hair-mask-with-aloe-veera-fenugreek-bhringaraj.jpg"
+   }
+  ],
+  "details": {
+   "description": "Meera intense conditioning & strength mask containing the goodness of 5 natural herbs and sooryamukhi oil remarkably conditions hair and gives voluminous looking hair. It repairs damaged hair & further strengthens it against hair fall. It leaves hair feeling incredibly smooth and amazingly refreshed with a pleasing touch. Enjoy fabulous-looking hair and whiffs of herbal goodness with Meera Hair Mask!",
+   "usageInstructions": "Apply 1 entire sachet of Hair Mask such that it covers your hair like a pack.\nMassage it gently on your hair & leave it on for 5 minutes.\nRinse off with water. Repeat it necessary.",
+   "manufacturerName": "(A) CavinKare Provate Limited Industrial Growth Centre Opp to Sainik School Mornai Village Matia Goalpara Post Assam - 7",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pure Coconut Oil",
+  "handle": "pure-coconut-oil",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250ml",
+    "price": "88",
+    "compare_at_price": "88",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/265257_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+    },
+    "barcode": "8902979024433"
+   },
+   {
+    "title": "500ml",
+    "price": "172",
+    "compare_at_price": "172",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/306436_5-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "415",
+    "compare_at_price": "415",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40246841_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered-nourishes-hair.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265257_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265257-2_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265257-3_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265257-4_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265257-5_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265257-6_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265257-7_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/265257-8_1-meera-pure-coconut-oil-made-from-dala-copra-triple-filtered.jpg"
+   }
+  ],
+  "details": {
+   "description": "Natural products are more beneficial and relevant even in today's modern times. The best of ingredients and latest technology are combined to achieve goodness and purity. A whiff of Meera Pure Coconut Oil will reveal the quality delivered through the product. The aroma of the oil makes all the difference. This age-old essence is hygienically prepared and well presented to consumers in a convenient to use format.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem & Vetiver Face Wash",
+  "handle": "neem-vetiver-face-wash",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282756_1-meera-neem-vetiver-face-wash-for-clear-moisturised-skin-oily-skin.jpg"
+    },
+    "barcode": "8902979004121"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282756_1-meera-neem-vetiver-face-wash-for-clear-moisturised-skin-oily-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282756-2_1-meera-neem-vetiver-face-wash-for-clear-moisturised-skin-oily-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282756-3_1-meera-neem-vetiver-face-wash-for-clear-moisturised-skin-oily-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "You will love the gently refreshing experience of Meera Neem & Vetiver Face Wash. This is a Ayurvedic Proprietary Medicine for Clear & Moisturized Skin. The antibacterial properties of neem fight acne-causing bacteria, which helps in the treatment and prevention of acne. Vetiver is an all-natural remedy to treat acne, rashes, and blisters. Meera Neem & Vetiver Face Wash intensely helping your skin look and feel healthier day by day.",
+   "usageInstructions": "Wet your face and neck; apply a small amount of Meera Face Wash on your face and massage gently with your fingers in a circular motion.\nWash off with plenty of water.\nDab the skin with soft towel.\nUse twice daily.",
+   "manufacturerName": "Cavinkare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Red Sandalwood & Manjistha Face Wash",
+  "handle": "red-sandalwood-manjistha-face-wash",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282760_2-meera-red-sandalwood-manjistha-face-wash-for-natural-glow-instant-freshness-all-skin-types.jpg"
+    },
+    "barcode": "8902979004176"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282760_2-meera-red-sandalwood-manjistha-face-wash-for-natural-glow-instant-freshness-all-skin-types.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282760-2_2-meera-red-sandalwood-manjistha-face-wash-for-natural-glow-instant-freshness-all-skin-types.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282760-3_2-meera-red-sandalwood-manjistha-face-wash-for-natural-glow-instant-freshness-all-skin-types.jpg"
+   }
+  ],
+  "details": {
+   "description": "You will love the gently refreshing experience of Meera Red Sandalwood & Manjistha Face Wash. This is a Ayurvedic Proprietary Medicine for Natural Glow & Instant Freshness. Red Sandalwood is highly effective in treating blemishes, rashes, and acne. Manjistha helps manage acne and pimples by inhibiting the growth of acne-causing bacteria due to its antioxidant property.",
+   "usageInstructions": "Wet your face and neck; apply a small amount of Meera Face Wash on your face and massage gently with your fingers in a circular motion.\nWash off with plenty of water.\nDab the skin with soft towel.\nUse twice daily.",
+   "manufacturerName": "Cavinkare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "White & Wild Turmeric Face Wash",
+  "handle": "white-wild-turmeric-face-wash",
+  "vendor": "Meera",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40282755_1-meera-white-wild-turmeric-face-wash-fights-999-pimple-causing-bacteria-dry-to-normal-skin.jpg"
+    },
+    "barcode": "8902979004152"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282755_1-meera-white-wild-turmeric-face-wash-fights-999-pimple-causing-bacteria-dry-to-normal-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282755-2_1-meera-white-wild-turmeric-face-wash-fights-999-pimple-causing-bacteria-dry-to-normal-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40282755-3_1-meera-white-wild-turmeric-face-wash-fights-999-pimple-causing-bacteria-dry-to-normal-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "You will love the gently refreshing experience of Meera White & Wild Turmeric Face Wash. This is a Ayurvedic Proprietary Medicine Fights 99.9% Pimple Causing Bacteria. White turmeric has anti-allergic properties & lessens inflammation quickly. Meera White & Wild Turmeric Face Wash intensely helping your skin look and feel healthier day by day.",
+   "usageInstructions": "Wet your face and neck; apply a small amount of Meera Face Wash on your face and massage gently with your fingers in a circular motion.\nWash off with plenty of water.\nDab the skin with soft towel.\nUse twice daily.",
+   "manufacturerName": "Cavinkare Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]
