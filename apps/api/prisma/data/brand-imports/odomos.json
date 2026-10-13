@@ -1,0 +1,80 @@
+{
+  "brand": "Odomos (Dabur)",
+  "manufacturer": "Dabur India Ltd.",
+  "feed": "odomos-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/odomos/logo-c0d98e21.png",
+  "themeColor": "#1E5BB8",
+  "themeColorSecondary": "#6DBE45",
+  "namePrefix": "Odomos ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Odomos Non-Sticky Mosquito Repellent Cream": "Naturals Non-Sticky Mosquito Repellent Cream"
+  },
+  "rules": [
+    {
+      "match": "^Naturals\\ Non\\-Sticky\\ Mosquito\\ Repellent\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Non\\-Sticky\\ Mosquito\\ Repellent\\ Cream\\ \\-\\ Vitamin\\ E\\ \\&\\ Almond$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Mosquito\\ Repellent\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Mosquito\\ Repellent\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Mosquito\\ Repellent\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Mosquito\\ Repellent\\ Fabric\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Mosquito\\ \\&\\ Flies\\ Killer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Protect\\ Mosquito\\ Repellent\\ Liquid\\ Vaporiser\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    }
+  ]
+}
