@@ -1,0 +1,544 @@
+{
+  "brand": "Zandu (Emami)",
+  "manufacturer": "Emami Ltd.",
+  "feed": "zandu-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/zandu/logo-28984e93.png",
+  "themeColor": "#00843D",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Zandu ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Zandu Balm Ultra Power": "Ultra Power Balm"
+  },
+  "rules": [
+    {
+      "match": "^Balm$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Power\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Fast\\ Relief\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Fast\\ Pain\\ Relief\\ Ultra\\ Strong\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Quick\\ Relief\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Ortho\\ Vedic\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Knee\\ Pain\\ Relief\\ Patch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Pain\\ Relief\\ Patch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Feminine\\ Pain\\ Relief\\ Patch$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Seniorz\\ Complete\\ Joint\\ Expert\\ Lepa$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Seniorz\\ Complete\\ Joint\\ Expert\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Seniorz\\ Bone\\ Strength\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Cough\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Khadiradi\\ Gutika$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Chyavanprash\\ Avaleha$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Chyavanprash\\ Avaleha\\ With\\ Jaggery$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Chyavanprashad\\ Sugar\\ Free$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Kesari\\ Jivan\\ Chyawanprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Kesari\\ Jivan\\ Fit\\ For\\ Diabetics$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Kesari\\ Jivan\\ With\\ Dry\\ Fruits$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Dirghayuprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Shilajitprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Sona\\ Chandi\\ Chyawanplus$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Pure\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Health\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Amla\\ Health\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Amla\\ \\+\\ 5\\ Herbs\\ Juice\\ With\\ Giloy$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Giloy\\ Tulsi\\ Health\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Karela\\ Jamun\\ Health\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^DiaBTS\\ Care\\ Juice\\ With\\ Karela\\ \\&\\ Jamun$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Digestive\\ Care\\ Juice\\ With\\ Papaya,\\ Bael\\ \\&\\ Triphala$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Detox\\ Juice\\ With\\ Wheatgrass\\ \\&\\ Amla$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Heart\\ Care\\ Juice\\ With\\ Lauki\\ \\&\\ Amla$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Lean\\ \\&\\ Slim\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Organic\\ Apple\\ Cider\\ Vinegar\\ With\\ Mother$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Apple\\ Cider\\ Vinegar$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Vinegar"
+      ]
+    },
+    {
+      "match": "^Desi\\ Detox\\ Kahwa\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Ashwagandha\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Ashwagandha\\ Gold\\ Plus\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Karela\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Methi\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Tulasi\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Arjuna\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Punarnava\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Giloy\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Shilajit\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Triphala\\ Bowel\\ Wellness\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Vigorex\\ Gold\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Vigorex\\ Max\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Vigorex\\ Shilajit\\ Ashwagandha\\ Capsules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^StriVeda\\ Satavari\\ Lactation\\ Supplement$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Satavarex\\ Granules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Brento\\ Forte\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Livital\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Chandraprabha\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Sudarshan\\ Ghan\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Zandopa\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Raughan\\-E\\-Badam\\ Shireen\\ Almond\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pancharishta\\ Ayurvedic\\ Digestive\\ Tonic$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Pancharishta\\ Digestive\\ Tonic\\ For\\ Diabetics$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Nityam\\ Ayurvedic\\ Laxative\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Nityam\\ Laxative\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Triphala\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Haritaki\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Zanacid\\ Duo\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Tamra\\ Pure\\ Copper\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    }
+  ]
+}
