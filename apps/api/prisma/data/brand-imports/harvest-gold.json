@@ -1,0 +1,315 @@
+{
+  "brand": "Harvest Gold",
+  "manufacturer": "Harvest Gold Foods (India) Pvt. Ltd.",
+  "feed": "harvest-gold-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/harvest-gold/logo-17e1fa0e.png",
+  "themeColor": "#D7262E",
+  "themeColorSecondary": "#F6B21A",
+  "namePrefix": "Harvest Gold ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Harvest Gold 100% Whole Wheat Bread": "Whole Wheat Bread",
+    "Harvest Gold Burger Buns (4 pcs)": "Burger Buns",
+    "Harvest Gold Pav (Ladi Pav)": "Bombay Pav",
+    "Harvest Gold Seeds & Grains Multigrain Bread": "Multigrain Bread"
+  },
+  "rules": [
+    {
+      "match": "^Zero\\ Maida\\ Atta\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Atta\\ Burger\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Atta\\ Kulcha\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Atta\\ Pav$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ 21\\ Grains\\ Bread\\ with\\ Sourdough$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ High\\ Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Oatmeal\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Footlong\\ Parmesan\\ \\&\\ Oregano$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Hot\\ Dog\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Zero\\ Maida\\ Burger\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Sesame\\ Soup\\ Sticks$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Khari & Puff Pastry"
+      ]
+    },
+    {
+      "match": "^Baker's\\ Loaf\\ Sandwich\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Bombay\\ Pav$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Brown\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Good\\ Zero\\ Atta\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Premium\\ Sharbati\\ Atta\\ Wheat\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Protein\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Milk\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Burger\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Buns$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Kulcha\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Halka\\ Phulka\\ Whole\\ Wheat\\ Roti$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Base$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Brownie\\ with\\ Real\\ Walnuts$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Choco\\ Delight\\ Brownie$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Pastries"
+      ]
+    },
+    {
+      "match": "^Choco\\ Cheer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Fusion\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Crem\\ Bite\\ Choco\\ Layer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Crem\\ Bite\\ Mixed\\ Fruit\\ Layer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Crem\\ Bite\\ Vanilla\\ Layer\\ Cake$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Delights\\ Layer\\ Cake\\ Festive\\ Pack$",
+      "path": [
+        "Bakery",
+        "Cakes & Pastries",
+        "Sliced Cake"
+      ]
+    },
+    {
+      "match": "^Snackiez\\ Cheese\\ \\&\\ Herb\\ Crem\\ Treat$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Snackiez\\ Peri\\ Peri\\ Crem\\ Treat$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Suji\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Suji Rusk"
+      ]
+    }
+  ]
+}
