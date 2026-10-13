@@ -1,0 +1,166 @@
+{
+  "brand": "Hocco",
+  "manufacturer": "Hocco Foods Pvt. Ltd.",
+  "feed": "hocco-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/hocco/logo-ce27f76c.png",
+  "themeColor": "#EE1E4E",
+  "themeColorSecondary": "#2E2A86",
+  "namePrefix": "Hocco ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Belgian\\ Choconut\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Cheesecake\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Lychee\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Choco\\ Brownie\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Mudslide\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Scooperstars\\ Golden\\ Chocolate\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Tubs"
+      ]
+    },
+    {
+      "match": "^Aamchi\\ Mango\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Bix\\ Chocolate\\ Chips\\ Ice\\ Cream\\ Cake\\ Sandwich$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Bix\\ Cookies\\ \\&\\ Cream\\ Ice\\ Cream\\ Cake\\ Sandwich$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Chocaboom!\\ Ice\\ Cream\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Death\\ By\\ Chocolate\\ Boss\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Tiramisu\\ Boss\\ Bar$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Cookies\\ \\&\\ Cream\\ Ice\\ Cream\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Hazelnut\\ Mudslide\\ Ice\\ Cream\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Matka\\ Kulfi$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Kulfi"
+      ]
+    },
+    {
+      "match": "^Kaju\\ Anjeer\\ Matka\\ Kulfi$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Kulfi"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Pistachio\\ Matka\\ Kulfi$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Kulfi"
+      ]
+    },
+    {
+      "match": "^Milk\\ Cake\\ Barfi\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Orange\\ Barfi\\ Ice\\ Cream$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    }
+  ]
+}
