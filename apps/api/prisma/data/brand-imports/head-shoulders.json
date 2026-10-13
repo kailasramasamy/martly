@@ -1,0 +1,142 @@
+{
+  "brand": "Head & Shoulders (P&G)",
+  "manufacturer": "Procter & Gamble Home Products Pvt. Ltd.",
+  "feed": "head-shoulders-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/head-shoulders/logo-f74f3f04.png",
+  "themeColor": "#0057B8",
+  "themeColorSecondary": "#00A3E0",
+  "namePrefix": "Head & Shoulders ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Anti\\-Dandruff\\ Cool\\ Menthol\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Smooth\\ \\&\\ Silky\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Anti\\-Dandruff\\ Lemon\\ Fresh\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Anti\\-Dandruff\\ Silky\\ Black\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Anti\\-Hairfall\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Neem\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^7\\ in\\ 1\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Deep\\ Cleanse\\ Anti\\-Dandruff\\ Shampoo\\ with\\ Charcoal$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Bare\\ Pure\\ Clean\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Bare\\ Soothing\\ Hydration\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Anti\\-Hairfall\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Smooth\\ \\&\\ Silky\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Cool\\ Menthol\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Active\\ Protect\\ 2\\-in\\-1\\ Shampoo\\ \\+\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Smooth\\ \\&\\ Silky\\ Anti\\-Dandruff\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Anti\\-Hairfall\\ Anti\\-Dandruff\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    }
+  ]
+}
