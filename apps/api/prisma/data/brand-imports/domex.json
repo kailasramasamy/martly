@@ -1,0 +1,105 @@
+{
+  "brand": "Domex (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "domex-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/domex/logo-57ebbf36.png",
+  "themeColor": "#0D4EA6",
+  "themeColorSecondary": "#E30613",
+  "namePrefix": "Domex ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Domex Fresh Guard Disinfectant Toilet Cleaner": "Sparkling Fresh Disinfectant Toilet Cleaner",
+    "Domex Fresh Guard Toilet Cleaner": "Ocean Fresh Disinfectant Toilet Cleaner"
+  },
+  "rules": [
+    {
+      "match": "^Sparkling\\ Fresh\\ Disinfectant\\ Toilet\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Fresh\\ Disinfectant\\ Toilet\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Fresh\\ Disinfectant\\ Toilet\\ Cleaner\\ Refill\\ Pouch$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Lime\\ Fresh\\ Disinfectant\\ Toilet\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Guard\\ Ocean\\ Fresh\\ Disinfectant\\ Toilet\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Toilet\\ Cleaner\\ For\\ Indian\\ Toilets$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Floral\\ Blast\\ Instant\\ Power\\ Foam\\ Toilet\\ \\&\\ Bathroom\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Thunder\\ Fresh\\ Instant\\ Power\\ Foam\\ Toilet\\ \\&\\ Bathroom\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Surface\\ \\&\\ Floor\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^2\\ in\\ 1\\ Floor\\ Phenolic\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Germ\\ Kill\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    }
+  ]
+}
