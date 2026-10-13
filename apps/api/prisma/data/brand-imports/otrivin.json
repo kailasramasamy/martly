@@ -1,0 +1,78 @@
+{
+  "brand": "Otrivin (Haleon)",
+  "manufacturer": "Haleon India Pvt. Ltd.",
+  "feed": "otrivin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/otrivin/logo-e74fcd3a.png",
+  "themeColor": "#1E5AA8",
+  "themeColorSecondary": "#E4202A",
+  "namePrefix": "Otrivin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Oxy\\ Fast\\ Relief\\ Adult\\ Nasal\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Advance\\ Adult\\ Nasal\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Paediatric\\ Oxy\\ Nasal\\ Drops$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Paediatric\\ Nasal\\ Drops$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Moist\\ Paediatric\\ Nasal\\ Drops$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Saline\\ Nasal\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Baby\\ Saline\\ Nasal\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Breathe\\ Clean\\ Daily\\ Nasal\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    }
+  ]
+}
