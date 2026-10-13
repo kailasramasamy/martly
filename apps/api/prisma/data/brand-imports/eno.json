@@ -1,0 +1,94 @@
+{
+  "brand": "Eno (Haleon)",
+  "manufacturer": "Haleon India Pvt. Ltd.",
+  "feed": "eno-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/eno/logo-eaa4b211.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#0055A5",
+  "namePrefix": "Eno ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Fruit\\ Salt\\ \\-\\ Lemon$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Salt\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Salt\\ \\-\\ Regular$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Salt\\ \\-\\ Jaljeera$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Salt\\ \\-\\ Nimbu\\ Masala$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^3\\ In\\ 1\\ Fruit\\ Salt\\ \\-\\ Jeera,\\ Ajwain\\ \\&\\ Kala\\ Namak$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Cooling\\ Fruit\\ Salt\\ \\-\\ Lemon$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Cooling\\ Fruit\\ Salt\\ \\-\\ Mint$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Chewy\\ Bites\\ Antacid\\ Tablets\\ \\-\\ Tangy\\ Lemon$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Chewy\\ Bites\\ Antacid\\ Tablets\\ \\-\\ Zesty\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+[
+ {
+  "title": "Fruit Salt - Lemon",
+  "handle": "fruit-salt-lemon",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000297_3-eno-powder-provides-fast-relief-from-acidity-flavour-lemon.jpg"
+    }
+   },
+   {
+    "title": "30g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/100014938_2-eno-fruit-salt-lemon.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263907_11-eno-fruit-salt-lemon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000297_3-eno-powder-provides-fast-relief-from-acidity-flavour-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000297-2_2-eno-powder-provides-fast-relief-from-acidity-flavour-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000297-3_2-eno-powder-provides-fast-relief-from-acidity-flavour-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000297-4_2-eno-powder-provides-fast-relief-from-acidity-flavour-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000297-5_2-eno-powder-provides-fast-relief-from-acidity-flavour-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/1200000297-6_2-eno-powder-provides-fast-relief-from-acidity-flavour-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/100014938_2-eno-fruit-salt-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263907_11-eno-fruit-salt-lemon.jpg"
+   }
+  ],
+  "details": {
+   "description": "provides quick relief from acidity. It works on all the symptoms of acidity, including a sour taste in the mouth, burning in the throat, burning in the chest, stomach discomfort,  heaviness and burning in the stomach. Eno powder gets to work on acidity in just 6 seconds.",
+   "manufacturerName": "Glaxosmithkline Asia Pvt Ltd",
+   "countryOfOrigin": "Country of Origin",
+   "ingredients": "Svarjiksara & Nimbukamlam\nSweetener: sodium saccharin\nFlavours and dyes: Brilliant Blue and Tartrazine"
+  }
+ },
+ {
+  "title": "Fruit Salt - Orange",
+  "handle": "fruit-salt-orange",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348260_1-eno-orange-flavour-fruit-salt.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "173",
+    "compare_at_price": "173",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068331_11-eno-fruit-salt-orange.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348260_1-eno-orange-flavour-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348260-2_1-eno-orange-flavour-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348260-3_1-eno-orange-flavour-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348260-4_1-eno-orange-flavour-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348260-5_1-eno-orange-flavour-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068331_11-eno-fruit-salt-orange.jpg"
+   }
+  ],
+  "details": {
+   "description": "Eno Orange Flavour Fruit Salt offers fast and effective relief from acidity and indigestion. With its zesty orange taste, it refreshes as it works within seconds to neutralise excess stomach acid. Ideal after meals or heavy foods, it provides quick comfort and ease. A trusted choice for instant relief, anytime you need it.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Salt - Regular",
+  "handle": "fruit-salt-regular",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348259_1-eno-regular-fruit-salt.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/263909_8-eno-fruit-salt-regular.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348259_1-eno-regular-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348259-2_1-eno-regular-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348259-3_1-eno-regular-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348259-4_1-eno-regular-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348259-5_1-eno-regular-fruit-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/263909_8-eno-fruit-salt-regular.jpg"
+   }
+  ],
+  "details": {
+   "description": "Eno Gives Fast Relief From Acidity and Gets To Eno Regular Fruit Salt offers fast and effective relief from acidity and indigestion. With its taste, it refreshes as it works within seconds to neutralise excess stomach acid. Ideal after meals or heavy foods, it provides quick comfort and ease. A trusted choice for instant relief, anytime you need it.",
+   "manufacturerName": "Southern Drugs & Pharmaceuticals-Door No.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Salt - Jaljeera",
+  "handle": "fruit-salt-jaljeera",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5g",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269264_1-eno-digestive-anatacid-jaljeera-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269264_1-eno-digestive-anatacid-jaljeera-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269264-2_1-eno-digestive-anatacid-jaljeera-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269264-3_1-eno-digestive-anatacid-jaljeera-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269264-4_1-eno-digestive-anatacid-jaljeera-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269264-5_1-eno-digestive-anatacid-jaljeera-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269264-6_1-eno-digestive-anatacid-jaljeera-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269264-7_1-eno-digestive-anatacid-jaljeera-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the power of Eno, India's No. 1 antacid brand, to provide fast and effective relief from acidity and heartburn. Clinically proven to neutralize excess stomach acid within moments, Eno's unique blend of natural ingredients works synergistically to promote digestive health and restore balance in the stomach. Crafted with the goodness of Svarjikisara and Nimbukamlam, this proprietary Ayurvedic formula specifically targets the symptoms associated with acidity, such as a sour taste in the mouth, burning sensations in the throat and chest, stomach discomfort, and feelings of heaviness. Eno's fast-acting formula ensures you can comfortably fall asleep without the discomfort of heartburn. Available in a variety of delightful flavours like Regular, Orange, and Lemon, Eno offers a convenient and enjoyable way to fight acidity fast and get back to living life nonstop.",
+   "usageInstructions": "1. One level teaspoonful (5 g) in a glass (~150 ml) of water.\n2. Repeat after 2-3 hours, if necessary.",
+   "manufacturerName": "Legacy Foods Pvt Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Fruit Salt - Nimbu Masala",
+  "handle": "fruit-salt-nimbu-masala",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5g",
+    "price": "9",
+    "compare_at_price": "9",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40269265_1-eno-digestive-anatacid-nimbu-masala-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269265_1-eno-digestive-anatacid-nimbu-masala-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269265-2_1-eno-digestive-anatacid-nimbu-masala-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269265-3_1-eno-digestive-anatacid-nimbu-masala-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269265-4_1-eno-digestive-anatacid-nimbu-masala-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269265-5_1-eno-digestive-anatacid-nimbu-masala-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269265-6_1-eno-digestive-anatacid-nimbu-masala-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40269265-7_1-eno-digestive-anatacid-nimbu-masala-flavour-fruit-salt-fast-relief-from-acidity.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the fast-acting relief you've been searching for with Eno, India's No. 1 Antacid Brand. Formulated to neutralize excess stomach acid in just 6 seconds, Eno provides clinically proven instant action against a range of acidity-related issues, including stomach discomfort, bloating, pain, acid reflux, and heartburn. Eno works on 6 key symptoms of acidity and heartburn, including burning sensations in the chest, stomach, and throat, as well as sour and bitter tastes in the mouth. Available in convenient 100g bottles and 5g sachets, Eno comes in a variety of delightful flavours, including regular, orange, and lemon, so you can bid farewell to acidity and enjoy life to the fullest. Jiyo life nonstop with the fast and effective relief of Eno.",
+   "usageInstructions": "1. For use in adults and children aged 12 years and over.\n2. One level teaspoonful (5 g) in a glass (~150 ml) of water.\n3. Repeat after 2-3 hours, if necessary.",
+   "manufacturerName": "Southern Drugs & Pharmaceuticals",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "3 In 1 Fruit Salt - Jeera, Ajwain & Kala Namak",
+  "handle": "3-in-1-fruit-salt-jeera-ajwain-kala-namak",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328220_1-eno-3-in-1-with-real-jeera-ajwain-kala-namak-for-fast-effective-relief-from-acidity-gas-indigestion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328220_1-eno-3-in-1-with-real-jeera-ajwain-kala-namak-for-fast-effective-relief-from-acidity-gas-indigestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328220-2_1-eno-3-in-1-with-real-jeera-ajwain-kala-namak-for-fast-effective-relief-from-acidity-gas-indigestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328220-3_1-eno-3-in-1-with-real-jeera-ajwain-kala-namak-for-fast-effective-relief-from-acidity-gas-indigestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328220-4_1-eno-3-in-1-with-real-jeera-ajwain-kala-namak-for-fast-effective-relief-from-acidity-gas-indigestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328220-5_1-eno-3-in-1-with-real-jeera-ajwain-kala-namak-for-fast-effective-relief-from-acidity-gas-indigestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328220-6_1-eno-3-in-1-with-real-jeera-ajwain-kala-namak-for-fast-effective-relief-from-acidity-gas-indigestion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328220-7_1-eno-3-in-1-with-real-jeera-ajwain-kala-namak-for-fast-effective-relief-from-acidity-gas-indigestion.jpg"
+   }
+  ],
+  "details": {
+   "description": "Introducing the new ENO 3-in-1, a tasty antacid that combines the power of ENO with the natural goodness of real jeera, ajwain, and kala namak. This fast-acting formula provides quick and effective relief from acidity, gas, and other stomach discomforts. Simply dissolve a sachet in approximately 150ml of water and enjoy the refreshing, natural taste for fast relief. Formulated with trusted ingredients, ENO 3-in-1 helps to neutralize stomach acid and aid in better digestion, making it the perfect solution for on-the-go relief from unpleasant stomach issues.",
+   "usageInstructions": "1. Pour one sachet of ENO 3-in-1 in approximately 150 ml of water.\n2. Let it fizz and enjoy the tasty solution for fast relief.",
+   "manufacturerName": "Reckitt Benckiser (India) Pvt. Ltd.. Warehouse at",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cooling Fruit Salt - Lemon",
+  "handle": "cooling-fruit-salt-lemon",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "54",
+    "compare_at_price": "54",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40142477_2-eno-cooling-lemon.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142477_2-eno-cooling-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142477-2_2-eno-cooling-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142477-3_1-eno-cooling-lemon.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Eno Cooling gets to work in 6 seconds and provides instant cooling sensation. Eno is the leading antacid, providing instant relief from acidity, gastric discomfort and heartburn. It will ease discomfort, decrease bloating and cure stomach upset.",
+   "ingredients": "Each 5 gm sachet contains Svarjiksara(Shudh) 2. 3 gm, Nimbukamlam(Shushkam) 2. 15 gm, Permitted Sweetener, Sodium Saccharin 5 mg and Permitted Colours, Brilliant Blue FCF & Tartrazine. Permitted Flavours Added q. s. Contains No Fruit Pulp or Fruit Extracts.",
+   "usageInstructions": "For use in adults and children aged 12 years and over. One Sachet in a glass (150 ml) of water. Repeat after 2-3 hours, if necessary. Do not take more than 2 doses in 24 hours. Do not take this medicine for more than 14 days. If symptoms persist or worsen, consult your doctor. Do not use if you have any liver, kidney, heart ailment or high blood pressure. Consult a doctor before use if pregnant or lactating.",
+   "manufacturerName": "GlaxoSmithKline Asia Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012063000134"
+  }
+ },
+ {
+  "title": "Cooling Fruit Salt - Mint",
+  "handle": "cooling-fruit-salt-mint",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "54",
+    "compare_at_price": "54",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40142478_2-eno-cooling-mint.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142478_2-eno-cooling-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142478-2_2-eno-cooling-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142478-3_1-eno-cooling-mint.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Eno Cooling gets to work in 6 seconds and provides instant cooling sensation. Eno is the leading antacid, providing instant relief from acidity, gastric discomfort and heartburn. It will ease discomfort, decrease bloating and cure stomach upset.",
+   "ingredients": "Each 5 gm sachet contains Svarjiksara(Shudh) 2. 3 gm, Nimbukamlam(Shushkam) 2. 15 gm, Permitted Sweetener, Sodium Saccharin 5 mg and Permitted Colours, Brilliant Blue FCF & Tartrazine. Permitted Flavours Added q. s. Contains No Fruit Pulp or Fruit Extracts.",
+   "usageInstructions": "For use in adults and children aged 12 years and over. One Sachet in a glass (150 ml) of water. Repeat after 2-3 hours, if necessary. Do not take more than 2 doses in 24 hours. Do not take this medicine for more than 14 days. If symptoms persist or worsen, consult your doctor. Do not use if you have any liver, kidney, heart ailment or high blood pressure. Consult a doctor before use if pregnant or lactating.",
+   "manufacturerName": "GlaxoSmithKline Asia Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012063000134"
+  }
+ },
+ {
+  "title": "Chewy Bites Antacid Tablets - Tangy Lemon",
+  "handle": "chewy-bites-antacid-tablets-tangy-lemon",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307421_4-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+    }
+   },
+   {
+    "title": "30 pcs",
+    "price": "169",
+    "compare_at_price": "169",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307419_3-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307421_4-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307421-2_4-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307421-3_4-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307421-4_4-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307421-5_4-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307421-6_4-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307421-7_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307419_3-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-tangy-lemon-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the ultimate solution to your acidity woes with ENO Chewy Bites, the fast-acting, tasty, and convenient antacid tablets. Derived from natural sources, these chewable tablets provide gentle yet effective relief from a variety of symptoms, including heartburn, acid indigestion, sour burps, and stomach burn. Infused with delightful Tangy Lemon and Zesty Orange flavours, ENO Chewy Bites go directly to the source of your discomfort, neutralising acid on contact and delivering relief in seconds. Portable and suitable for ages 12 and up, these stomach-friendly tablets are the perfect companion for on-the-go relief, allowing you to bid farewell to acidity anytime, anywhere. Embrace the power of nature and experience the difference with ENO Chewy Bites, the ultimate acidity-fighting solution.",
+   "ingredients": "Khatika Churna (Calcium Carbonate) – 1000mg",
+   "manufacturerName": "Plot No",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chewy Bites Antacid Tablets - Zesty Orange",
+  "handle": "chewy-bites-antacid-tablets-zesty-orange",
+  "vendor": "Eno (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307422_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+    }
+   },
+   {
+    "title": "30 pcs",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40307420_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307422_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307422-2_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307422-3_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307422-4_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307422-5_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307422-6_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307422-7_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40307420_1-eno-chewy-bites-gentle-effective-chewable-antacid-tablet-zesty-orange-flavour.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Discover the delightful relief of ENO Chewy Bites, a trusted antacid solution that goes directly to the source of your discomfort. These tasty chewable tablets provide fast-acting, gentle relief from heartburn, acid indigestion, sour burps, and stomach burn. Crafted with a convenient on-the-go format, ENO Chewy Bites come in two delicious flavours - Tangy Lemon and Zesty Orange - to soothe your symptoms with ease. Trusted for its effective formula, this chewable antacid gets to work in seconds to neutralise acid on contact, offering relief whenever you need it. Gentle on the stomach and available in a pack of 30 tablets, ENO Chewy Bites are the perfect companion for your busy lifestyle, providing a convenient and reliable solution to multiple symptoms of acidity.",
+   "ingredients": "Khatika Churna (Calcium Carbonate) – 1000mg",
+   "manufacturerName": "Plot No",
+   "countryOfOrigin": "India"
+  }
+ }
+]
