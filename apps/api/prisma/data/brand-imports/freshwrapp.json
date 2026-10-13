@@ -1,0 +1,46 @@
+{
+  "brand": "Freshwrapp (Hindalco)",
+  "manufacturer": "Hindalco Industries Ltd.",
+  "feed": "freshwrapp-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/freshwrapp/logo-005210de.png",
+  "themeColor": "#2E3192",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Freshwrapp ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Aluminium\\ Foil\\ Roll$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Aluminium\\ Foil\\ \\-\\ 9m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Aluminium\\ Foil\\ \\-\\ 72m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Institutional\\ Aluminium\\ Foil\\ \\-\\ 18m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    }
+  ]
+}
