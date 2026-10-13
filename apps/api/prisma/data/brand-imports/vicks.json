@@ -1,0 +1,160 @@
+{
+  "brand": "Vicks (P&G)",
+  "manufacturer": "Procter & Gamble Hygiene and Health Care Ltd.",
+  "feed": "vicks-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/vicks/logo-188df0b8.png",
+  "themeColor": "#00684F",
+  "themeColorSecondary": "#1D4F9C",
+  "namePrefix": "Vicks ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Vicks VapoRub Topical Ointment": "VapoRub - Menthol, Camphor & Eucalyptus Oil"
+  },
+  "rules": [
+    {
+      "match": "^VapoRub\\ \\-\\ Menthol,\\ Camphor\\ \\&\\ Eucalyptus\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^VapoRub\\ Extra\\ Strong\\ \\-\\ For\\ Cough,\\ Cold\\ \\&\\ Headache$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^BabyRub\\ \\-\\ Soothing\\ Vapour\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^VapoRub\\ Steam\\ Pods\\ \\-\\ For\\ Steam\\ Inhalation$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Inhaler\\ \\-\\ Blocked\\ Nose\\ Relief$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Roll\\-On\\ For\\ Headaches$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Roll\\-On\\ For\\ Headaches\\ \\-\\ With\\ Keychain$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Cough\\ Drops\\ \\-\\ Ginger$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Cough\\ Drops\\ \\-\\ Menthol$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Cough\\ Drops\\ Jar\\ \\-\\ Menthol,\\ Ginger\\ \\&\\ Honey$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Cough\\ Drops\\ Double\\ Power\\ \\-\\ Cooling\\ Menthol$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Cough\\ Drops\\ Double\\ Power\\ \\-\\ Warming\\ Ginger$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^3\\ In\\ 1\\ Throat\\ Lozenges\\ \\-\\ Orange\\ Menthol$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Medicated\\ Throat\\ Lozenges$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Dry\\ \\+\\ Wet\\ Cough\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^ImmunoCold\\ Daily\\ Multivitamin\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^ZzzQuil\\ Natura\\ Sleep\\ Aid\\ Gummies\\ \\-\\ Melatonin$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^ZzzQuil\\ Natura\\ Sleep\\ Aid\\ Gummies\\ \\-\\ Melatonin\\ \\&\\ Ashwagandha$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    }
+  ]
+}
