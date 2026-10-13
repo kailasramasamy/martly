@@ -1,0 +1,606 @@
+{
+  "brand": "Gala (Freudenberg)",
+  "manufacturer": "Freudenberg Gala Household Products Pvt. Ltd.",
+  "feed": "gala-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/gala/logo-ef2dab79.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Gala ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ceiling\\ V\\-Broom$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Chandra\\ Kharata\\ Broom$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Chandra\\ Kitchen\\ Moppy$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Clip\\ \\&\\ Fit\\ Mop\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Diamond\\ Loop\\ Cotton\\ Floor\\ Cleaning\\ Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Diamond\\ Loop\\ Mop\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Double\\ Lip\\ Floor\\ \\&\\ Bathroom\\ Wiper$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Dust\\ Control\\ Cotton\\ Floor\\ Mop\\ \\-\\ 5\\ ft$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Dustgo\\ Dustpan\\ \\&\\ Brush\\ Set$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Dustpan & Brush"
+      ]
+    },
+    {
+      "match": "^Dustpan$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Dustpan & Brush"
+      ]
+    },
+    {
+      "match": "^Easy\\ Clip\\ \\&\\ Fit\\ Cotton\\ Floor\\ Cleaning\\ Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Easy\\ Clip\\ \\&\\ Fit\\ Mop\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Ezee\\ Squeegee\\ Wiper$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Floor\\ Cleaning\\ T\\-Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^T\\-Mop\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Hardy\\ Long\\ Scrubber\\ Broom$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Jet\\ Spin\\ Mop\\ with\\ Steel\\ Wringer$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^King\\ Kong\\ Grass\\ Floor\\ Broom$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Laxmi\\ Grass\\ Broom$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Leader\\ Plus\\ Wide\\ Wiper$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Microfiber\\ Easy\\ Twist\\ Floor\\ Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Mopking\\ Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Mopking\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Mr\\.\\ Tall\\ Broom$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^No\\ Dust\\ Broom\\ with\\ Extendable\\ Handle$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^No\\ Dust\\ Floor\\ Broom$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^No\\ Dust\\ Long\\ Handle\\ Floor\\ Broom\\ \\-\\ XL$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Orbit\\ Deck\\ Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^PVA\\ Sponge\\ Floor\\ Cleaning\\ Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^PVA\\ Mop\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Plastic\\ Broom\\ Kharata$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Plastic\\ Floor\\ Wiper$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Power\\ Microfiber\\ Flat\\ Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spin\\ Mop\\ Handle\\ with\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spin\\ Mop\\ Microfiber\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spin\\ Mop\\ Spare\\ Rod$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spin\\ Mop\\ with\\ Twin\\ Bucket\\ \\-\\ 5\\ ft$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Twin\\ Bucket\\ Spin\\ Mop\\ \\-\\ 3\\.8\\ ft$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Turbo\\ Spin\\ Mop\\ with\\ Wheel\\ Bucket$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Floor\\ Microfiber\\ Cloth\\ /\\ Pocha$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Microfiber\\ Magic\\ Cloth$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Active\\ Cloth$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Microfiber\\ Cleaning\\ Cloth$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Microfiber\\ Dust\\ Cloth$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Microfiber\\ Multipurpose\\ Cloth$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Multipurpose\\ Microfiber\\ Duster$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Sponge\\ Wipe$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Bottle\\ \\&\\ Jar\\ Cleaning\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Brushtile\\ Hard\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Brushtile\\ Soft\\ Cloth\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Small\\ Cloth\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Chandra\\ Gold\\ Cloth\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Super\\ Hockey\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Plastic\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Long\\ Handle\\ Floor\\ \\&\\ Tile\\ Scrubber$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Shergrip\\ Sink\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Stylo\\ Sink\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Double\\ Hockey\\ Toilet\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Double\\ Hockey\\ Antibac\\ Toilet\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Toilean\\ Toilet\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Toilean\\ Toilet\\ Brush\\ with\\ Container$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Toilex\\ Toilet\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Toilex\\ Toilet\\ Brush\\ with\\ Round\\ Container$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Toilex\\ Toilet\\ Brush\\ with\\ Square\\ Container$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Scrubber\\ \\-\\ Green$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Iron\\ Bull\\ Scrub\\ Pad$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Non\\ Stick\\ Care\\ Scrubber$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Scrub\\ Pad$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Stainless\\ Steel\\ Scrubber$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Sponge\\ Scrub$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Super\\ Scrub$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Super\\ Scrub\\ \\-\\ Soft$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Scented\\ Garbage\\ Bags\\ \\-\\ Medium$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Kitchen\\ Towel\\ Roll$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    }
+  ]
+}
