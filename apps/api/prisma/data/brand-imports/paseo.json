@@ -1,0 +1,150 @@
+{
+  "brand": "Paseo (Asia Pulp & Paper)",
+  "manufacturer": "Sinar Indah Pulp And Paper Pvt. Ltd.",
+  "feed": "paseo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/paseo/logo-7fe480e6.png",
+  "themeColor": "#1B3C8F",
+  "themeColorSecondary": "#2EA043",
+  "namePrefix": "Paseo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Multipurpose\\ Pull\\ Tissues\\ \\-\\ 4\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Facial\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Premium\\ Facial\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Premium\\ Cocktail\\ Napkins\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Paper\\ Napkins\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Smart\\ Facial\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Smart\\ Serviettes\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Kitchen\\ Towel\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Printed\\ Kitchen\\ Towel\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Slim\\ \\&\\ Healthy\\ Kitchen\\ Towel\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Luxurious\\ Bathroom\\ Rolls\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Butterfly\\ Series\\ Tissue\\ Rolls\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Dolphin\\ Bathroom\\ Rolls\\ \\-\\ 4\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Bathroom\\ Tissue\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Toilet\\ Tissue\\ Roll\\ \\-\\ 2\\ Ply,\\ 300\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Elegant\\ Toilet\\ Rolls\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Smart\\ Toilet\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    }
+  ]
+}
