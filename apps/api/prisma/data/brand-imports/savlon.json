@@ -1,0 +1,150 @@
+{
+  "brand": "Savlon (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "savlon-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/savlon/logo-3f79ce22.png",
+  "themeColor": "#F26522",
+  "themeColorSecondary": "#2E2D7F",
+  "namePrefix": "Savlon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Antiseptic\\ Liquid$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Surface\\ Disinfectant\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Spray\\ \\&\\ Wipe\\ Multipurpose\\ Disinfectant\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Multipurpose\\ Disinfectant\\ Cleaner\\ Liquid$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Germ\\ Protection\\ Handwash\\ \\-\\ Moisture\\ Shield$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Sensitive\\ Liquid\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Deep\\ Clean\\ Germ\\ Protection\\ Liquid\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Glycerin\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cool\\ Hexa\\ Bathing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Cool\\ Menthol\\ \\&\\ Glycerin\\ Bathing\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Hexa\\ Advanced\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Hexa\\ Advanced\\ Body\\ Wash\\ \\-\\ Milk\\ Protein$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Hand\\ Sanitizer\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^Moisturizing\\ Sanitizer$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^Germ\\ Protection\\ Wet\\ Wipes$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Sanitiser"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Blossom\\ Fabric\\ Conditioner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Clothes\\ Disinfectant\\ \\&\\ Refreshing\\ Spray\\ \\-\\ Fresh\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    }
+  ]
+}
