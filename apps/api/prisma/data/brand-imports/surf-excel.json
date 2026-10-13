@@ -1,0 +1,136 @@
+{
+  "brand": "Surf Excel (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "surf-excel-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/surf-excel/logo-3ccd3b64.png",
+  "themeColor": "#1E3F95",
+  "themeColorSecondary": "#E5007E",
+  "namePrefix": "Surf Excel ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Surf Excel Stain Remover Detergent Bar": "Stain Eraser Detergent Bar"
+  },
+  "rules": [
+    {
+      "match": "^Easy\\ Wash\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Easy\\ Wash\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Expert\\ White\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Express\\ Clean\\ \\&\\ Care\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Express\\ Pro\\-S\\ Tech\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Front\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Front\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Top\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Top\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Power\\ Concentrate\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ Smart\\ Shots\\ Detergent\\ Capsules$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Quick\\ Wash\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Quick\\ Wash\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Smart\\ Spray\\ Stain\\ Remover$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Stain\\ Eraser\\ Detergent\\ Bar$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    }
+  ]
+}
