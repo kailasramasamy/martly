@@ -1,0 +1,334 @@
+{
+  "brand": "Streax",
+  "manufacturer": "Hygienic Research Institute Pvt. Ltd.",
+  "feed": "streax-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/streax/logo-0dc3af28.png",
+  "themeColor": "#C9A44C",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Streax ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Gel\\ Hair\\ Colour\\ 1\\ Natural\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Gel\\ Hair\\ Colour\\ 3\\ Dark\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Gel\\ Hair\\ Colour\\ 3\\.16\\ Burgundy$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Gel\\ Hair\\ Colour\\ 4\\ Natural\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Gel\\ Hair\\ Colour\\ For\\ Women$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Insta\\ Shampoo\\ Hair\\ Colour\\ 1\\ Natural\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Insta\\ Shampoo\\ Hair\\ Colour\\ 3\\ Dark\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Shampoo\\ Hair\\ Colour\\ Natural\\ Black$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Cream\\ Hair\\ Colour\\ Dark\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Cream\\ Hair\\ Colour\\ Golden\\ Blonde$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Cream\\ Hair\\ Colour\\ Burgundy$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Ultralights\\ Highlighting\\ Kit\\ Mocha\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Ultralights\\ Highlighting\\ Kit\\ Cappuccino\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Ultralights\\ Highlighting\\ Kit\\ Violet\\ Topaz$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Ultralights\\ Highlighting\\ Kit\\ Blue\\ Sapphire$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Ultralights\\ Highlighting\\ Kit\\ Green\\ Emerald$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Hair\\ Highlighting\\ Kit\\ Crimson\\ Red$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Hair\\ Highlighting\\ Kit\\ Plum\\ Purple$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Hair\\ Highlighting\\ Kit\\ Mocha\\ Brown$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Hair\\ Serum\\ Walnut\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Frizz\\ Control\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Heat\\ Protect\\ Hair\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Professional\\ Vitariche\\ Gloss\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Professional\\ Vitariche\\ Care\\ Repair\\ Max\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Professional\\ Canvoline\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Serum\\ Shine\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Professional\\ Argan\\ Secrets\\ Moisturising\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Professional\\ Canvo\\ Line\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Professional\\ Vitariche\\ Care\\ Repair\\ Max\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Professional\\ Vitariche\\ Care\\ Smooth\\ \\&\\ Shine\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Professional\\ Argan\\ Secrets\\ Moisturising\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Professional\\ Canvo\\ Line\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Professional\\ Vitariche\\ Care\\ Smooth\\ \\&\\ Shine\\ Leave\\-In\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Serum\\ Shine\\ Hair\\ Masque$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Professional\\ Vitariche\\ Care\\ Repair\\ Max\\ Masque$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Professional\\ Vitariche\\ Care\\ Smooth\\ \\&\\ Shine\\ Masque$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Bright\\ \\&\\ Shine\\ Face\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Bright\\ \\&\\ Shine\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Invisible\\ Matte\\ Sunscreen\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Sunscreen\\ Gel\\ Creme\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    }
+  ]
+}
