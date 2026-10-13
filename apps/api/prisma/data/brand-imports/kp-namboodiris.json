@@ -1,0 +1,126 @@
+{
+  "brand": "K.P. Namboodiri's",
+  "manufacturer": "K.P. Namboodiri's Ayurvedics",
+  "feed": "kp-namboodiris-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kp-namboodiris/logo-2ed35e61.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "K.P. Namboodiri's ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Herbal\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Herbal\\ White\\ Natural\\ Salt\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Tooth\\ Powder\\ \\-\\ Strong$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Aeda\\ Glycerine\\ Transparent\\ Bathing\\ Bar\\ \\-\\ Clear\\ \\&\\ Soft$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Aeda\\ Glycerine\\ Transparent\\ Bathing\\ Bar\\ \\-\\ Natural\\ Green$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Aeda\\ Sandal\\ Herbal\\ Skin\\ Care\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Aeda\\ Turmeric\\ Herbal\\ Skin\\ Care\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Vetiver\\ Herbal\\ Soap\\ With\\ Aloe\\ Vera$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Anti\\ Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Care\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hibiscus\\ Gentle\\ Daily\\ Hair\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Hair\\ Care\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Fairness\\ Face\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    }
+  ]
+}

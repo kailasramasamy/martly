@@ -1,0 +1,552 @@
+[
+ {
+  "title": "Herbal Toothpaste",
+  "handle": "herbal-toothpaste",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076901_3-kp-namboodiris-tooth-paste-herbal.jpg"
+    },
+    "barcode": "8906007750981"
+   },
+   {
+    "title": "100g",
+    "price": "66",
+    "compare_at_price": "66",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076902_1-kp-namboodiris-herbal-tooth-paste.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076903_1-kp-namboodiris-herbal-tooth-paste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076901_3-kp-namboodiris-tooth-paste-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076901-2_3-kp-namboodiris-tooth-paste-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076901-3_2-kp-namboodiris-tooth-paste-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076901-4_2-kp-namboodiris-tooth-paste-herbal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076902_1-kp-namboodiris-herbal-tooth-paste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076903_1-kp-namboodiris-herbal-tooth-paste.jpg"
+   }
+  ],
+  "details": {
+   "description": "Genuine Herbal Tooth Paste made from natual herbs to take care of common dental problems",
+   "usageInstructions": "Brush thoroughly atleast twice a day - or as directed by Dentist or Physician.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Herbal Gel Toothpaste",
+  "handle": "herbal-gel-toothpaste",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076907_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+    }
+   },
+   {
+    "title": "80g",
+    "price": "54",
+    "compare_at_price": "54",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076908_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "95",
+    "compare_at_price": "95",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076909_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076907_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076907-2_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076907-3_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076907-4_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076908_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076909_1-kp-namboodiris-tooth-paste-herbal-gel.jpg"
+   }
+  ],
+  "details": {
+   "description": "With the invigorating taste of lively mint and herbs, mouth feels completely refreshed. Made with a time-tested formulation that uses the most superior and genuine ayurvedic & herbal ingredients, K P Namboodiri's Herbal gel provides complete dental care by preventing common tooth problems and helping keep teeth healthy in a natural way.",
+   "usageInstructions": "Brush thoroughly, at least twice a day, or as directed by a dentist or physician. Children under 6 years of age should have adult supervision and use only a pea-size amount. Do not swallow.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Herbal White Natural Salt Toothpaste",
+  "handle": "herbal-white-natural-salt-toothpaste",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076904_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076905_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "68",
+    "compare_at_price": "68",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076906_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076904_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076904-2_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076904-3_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076904-4_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076905_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076906_1-kp-namboodiris-tooth-paste-herbal-white-natural-salt.jpg"
+   }
+  ],
+  "details": {
+   "description": "Fights Germs, improves Gum Health, protects Enamel, effective cleaning of teeth, prevents formation of plaque and gives long lasting fresh breath. The unique blend of Natural Salt (Rock Salt / Induppu) and Herbal Actives (Clove, Ginger, Nutmeg, Tea Tree Oil, Cardamom) fights germs, improves gum health, protects enamel, effective cleaning of teeth, prevents formation of plaque and gives long lasting fresh breath.",
+   "usageInstructions": "Brush thoroughly, at least twice a day, or as directed by a dentist or physicians. Children under 6 years of age should have adult supervision and use only a pea-size amount. Do not swallow.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ayurvedic Tooth Powder - Strong",
+  "handle": "ayurvedic-tooth-powder-strong",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "32",
+    "compare_at_price": "32",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076910_1-kp-namboodiris-ayurvedic-tooth-powder-strong.jpg"
+    }
+   },
+   {
+    "title": "80g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076911_1-kp-namboodiris-ayurvedic-tooth-powder-strong.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076910_1-kp-namboodiris-ayurvedic-tooth-powder-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076910-2_1-kp-namboodiris-ayurvedic-tooth-powder-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076910-3_1-kp-namboodiris-ayurvedic-tooth-powder-strong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076911_1-kp-namboodiris-ayurvedic-tooth-powder-strong.jpg"
+   }
+  ],
+  "details": {
+   "description": "K.P. Namboodiri's Ayurvedic Tooth Powder - Strong is an Ayurvedic medicine that fights dental diseases, fortifies immunity, strengthens gums, adds freshness to breath, and gives a pearly white lustre to teeth. This product prevents and cures common dental problems, keeps gums healthy, teeth white, and breath fresh. It is available in two variants - Regular and Strong.",
+   "usageInstructions": "Brush thoroughly, at least twice a day, or as directed by a dentist or physician. Children under 6 years of age should have adult supervision and use only a pea-size amount. Do not swallow.",
+   "countryOfOrigin": "India Manufacturer Name: ARIUS FORMULATION PVT LTD"
+  }
+ },
+ {
+  "title": "Aeda Glycerine Transparent Bathing Bar - Clear & Soft",
+  "handle": "aeda-glycerine-transparent-bathing-bar-clear-soft",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076919_1-kp-namboodiris-aeda-glycerine-bathing-bar-clear-soft.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076919_1-kp-namboodiris-aeda-glycerine-bathing-bar-clear-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076919-2_1-kp-namboodiris-aeda-glycerine-bathing-bar-clear-soft.jpg"
+   }
+  ],
+  "details": {
+   "description": "Provides calming effect and natural skin enhancer benefits in wrinkle reduction and provides natural glow to skin For Beauty tips tricks more visit",
+   "countryOfOrigin": "India Manufacturer Name: ARIUS FORMULATION PVT LTD"
+  }
+ },
+ {
+  "title": "Aeda Glycerine Transparent Bathing Bar - Natural Green",
+  "handle": "aeda-glycerine-transparent-bathing-bar-natural-green",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076920_1-kp-namboodiris-aeda-glycerine-bathing-bar-natural-green.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076920_1-kp-namboodiris-aeda-glycerine-bathing-bar-natural-green.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076920-2_1-kp-namboodiris-aeda-glycerine-bathing-bar-natural-green.jpg"
+   }
+  ],
+  "details": {
+   "description": "Protect the skin from environmental damages and act as anti ageing agent For Beauty tips tricks more visit",
+   "countryOfOrigin": "India Manufacturer Name: ARIUS FORMULATION PVT LTD"
+  }
+ },
+ {
+  "title": "Aeda Sandal Herbal Skin Care Soap",
+  "handle": "aeda-sandal-herbal-skin-care-soap",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076916_1-kp-namboodiris-aeda-soap-sandal.jpg"
+    },
+    "barcode": "8906007750226"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076916_1-kp-namboodiris-aeda-soap-sandal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076916-2_1-kp-namboodiris-aeda-soap-sandal.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076916-3_1-kp-namboodiris-aeda-soap-sandal.jpg"
+   }
+  ],
+  "details": {
+   "description": "Preserves youth & provides flawless complexion, keep the body refershed whole day long.",
+   "countryOfOrigin": "India Manufacturer Name: ARIUS FORMULATION PVT LTD"
+  }
+ },
+ {
+  "title": "Aeda Turmeric Herbal Skin Care Soap",
+  "handle": "aeda-turmeric-herbal-skin-care-soap",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "28",
+    "compare_at_price": "28",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076917_1-kp-namboodiris-aeda-soap-turmeric.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076917_1-kp-namboodiris-aeda-soap-turmeric.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076917-2_1-kp-namboodiris-aeda-soap-turmeric.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076917-3_1-kp-namboodiris-aeda-soap-turmeric.jpg"
+   }
+  ],
+  "details": {
+   "description": "Keeps skin soft smooth and glowing Antioxident in Turmeric binds free radicals and slow doen cell damage For Beauty tips tricks more visit",
+   "countryOfOrigin": "India Manufacturer Name: ARIUS FORMULATION PVT LTD"
+  }
+ },
+ {
+  "title": "Vetiver Herbal Soap With Aloe Vera",
+  "handle": "vetiver-herbal-soap-with-aloe-vera",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076918_3-kp-namboodiris-aeda-soap-ramacham.jpg"
+    },
+    "barcode": "8906007750240"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076918_3-kp-namboodiris-aeda-soap-ramacham.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076918-2_3-kp-namboodiris-aeda-soap-ramacham.jpg"
+   }
+  ],
+  "details": {
+   "countryOfOrigin": "India Manufacturer Name: ARIUS FORMULATION PVT LTD"
+  }
+ },
+ {
+  "title": "Anti Dandruff Shampoo",
+  "handle": "anti-dandruff-shampoo",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076913_1-kp-namboodiris-ayurvedic-shampoo-anti-dandruff.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076913_1-kp-namboodiris-ayurvedic-shampoo-anti-dandruff.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076913-2_1-kp-namboodiris-ayurvedic-shampoo-anti-dandruff.jpg"
+   }
+  ],
+  "details": {
+   "description": "Gently removes dandruff prevent recurrence without causing any damage to hairs For Beauty tips tricks more visit",
+   "usageInstructions": "Take 2-4ml and mix with enough Water. Apply to wet hair & scalp, massage gently, & rinse.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hair Care Shampoo",
+  "handle": "hair-care-shampoo",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076912_1-kp-namboodiris-ayurvedic-shampoo-hair-care.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076912_1-kp-namboodiris-ayurvedic-shampoo-hair-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076912-2_1-kp-namboodiris-ayurvedic-shampoo-hair-care.jpg"
+   }
+  ],
+  "details": {
+   "description": "Natural Shampoo that conditions from deep within gently cleansing nourishing the hairs to keep hair strong soft and shining For Beauty tips tricks more visit",
+   "usageInstructions": "Take 2-4ml and mix with enough Water. Apply to wet hair & scalp, massage gently, & rinse.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Hibiscus Gentle Daily Hair Cleanser",
+  "handle": "hibiscus-gentle-daily-hair-cleanser",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076914_1-kp-namboodiris-hair-cleanser-hibiscus-gentle-daily.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076914_1-kp-namboodiris-hair-cleanser-hibiscus-gentle-daily.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076914-2_1-kp-namboodiris-hair-cleanser-hibiscus-gentle-daily.jpg"
+   }
+  ],
+  "details": {
+   "description": "Prevents Hair Loss Enhances growth of hair Discourage split ends Thickens hair prevents premature greying of hair For Beauty tips tricks more visit",
+   "usageInstructions": "Take 2-4ml and mix with enough Water. Apply to wet hair & scalp, massage gently, & rinse.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ayurvedic Hair Care Oil",
+  "handle": "ayurvedic-hair-care-oil",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076915_1-kp-namboodiris-hair-oil-ayurvedic-care.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076915_1-kp-namboodiris-hair-oil-ayurvedic-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076915-2_1-kp-namboodiris-hair-oil-ayurvedic-care.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076915-3_1-kp-namboodiris-hair-oil-ayurvedic-care.jpg"
+   }
+  ],
+  "details": {
+   "description": "Improves hair growth prevents hair loss prevent premature greying of hair and fight against dandruff For Beauty tips tricks more visit",
+   "usageInstructions": "Apply Oil lightly on scalp & hair and gently massage.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Turmeric Fairness Face Cream",
+  "handle": "turmeric-fairness-face-cream",
+  "vendor": "K.P. Namboodiri's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "25g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40076921_1-kp-namboodiris-face-cream-turmeric-fairness.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076921_1-kp-namboodiris-face-cream-turmeric-fairness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076921-2_1-kp-namboodiris-face-cream-turmeric-fairness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076921-3_1-kp-namboodiris-face-cream-turmeric-fairness.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40076921-4_1-kp-namboodiris-face-cream-turmeric-fairness.jpg"
+   }
+  ],
+  "details": {
+   "description": "Natural anti oxidant sun protective acvitity and natural source of Vitamin E and imparts skin glow nourising and moisturizing For Beauty tips tricks more visit",
+   "usageInstructions": "How to Use\nApply sufficient quantity on face and neck twice daily"
+  }
+ }
+]
