@@ -1,0 +1,502 @@
+{
+  "brand": "Godrej aer (Godrej)",
+  "manufacturer": "Godrej Consumer Products Ltd.",
+  "feed": "godrej-aer-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/godrej-aer/logo-899bcf35.png",
+  "themeColor": "#6D6E71",
+  "themeColorSecondary": "#E4007C",
+  "namePrefix": "Godrej aer ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Room\\ Freshener\\ Spray\\ \\-\\ Citrus\\ Blast$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Freshener\\ Spray\\ \\-\\ Cool\\ Aqua$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Freshener\\ Spray\\ \\-\\ Forest\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Freshener\\ Spray\\ \\-\\ Jasmine\\ Delight$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Freshener\\ Spray\\ \\-\\ Lavender\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Freshener\\ Spray\\ \\-\\ Mystic\\ Musk$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Freshener\\ Spray\\ \\-\\ Rose\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ Freshener\\ Spray\\ \\-\\ Sandal\\ Bliss$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Premium\\ Air\\ Freshener\\ Spray\\ \\-\\ Alive$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Premium\\ Air\\ Freshener\\ Spray\\ \\-\\ Passion$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Premium\\ Air\\ Freshener\\ Spray\\ \\-\\ Relax$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Air\\ Freshener\\ Kit\\ \\-\\ Cool\\ Surf\\ Blue$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Air\\ Freshener\\ Kit\\ \\-\\ Petal\\ Crush\\ Pink$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Air\\ Freshener\\ Kit\\ \\-\\ Royal\\ Vanilla\\ Essence$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Air\\ Freshener\\ Kit\\ \\-\\ Violet\\ Valley\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Cool\\ Surf\\ Blue$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Petal\\ Crush\\ Pink$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Royal\\ Vanilla\\ Essence$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Violet\\ Valley\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Fresh\\ Lush\\ Green$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Alive$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Matic\\ Automatic\\ Spray\\ Refill\\ \\-\\ Passion$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Smart\\ Matic\\ Bluetooth\\ Automatic\\ Air\\ Freshener\\ Kit\\ \\-\\ Alive$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Smart\\ Matic\\ Bluetooth\\ Automatic\\ Air\\ Freshener\\ Kit\\ \\-\\ Passion$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Plug\\ Electric\\ Air\\ Freshener\\ Kit\\ \\-\\ Fresh\\ Wind$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Plug\\ Electric\\ Air\\ Freshener\\ Kit\\ \\-\\ Garden\\ Woods$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Plug\\ Electric\\ Air\\ Freshener\\ Kit\\ \\-\\ Rose\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Plug\\ Electric\\ Air\\ Freshener\\ Kit\\ \\-\\ Violet\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Plug\\ Electric\\ Air\\ Freshener\\ Refill\\ \\-\\ Fresh\\ Wind$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Plug\\ Electric\\ Air\\ Freshener\\ Refill\\ \\-\\ Garden\\ Woods$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Plug\\ Electric\\ Air\\ Freshener\\ Refill\\ \\-\\ Rose\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Plug\\ Electric\\ Air\\ Freshener\\ Refill\\ \\-\\ Violet\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Power\\ Pocket\\ Bathroom\\ Fragrance\\ \\-\\ Berry\\ Rush$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Power\\ Pocket\\ Bathroom\\ Fragrance\\ \\-\\ Jasmine\\ Floral\\ Delight$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Power\\ Pocket\\ Bathroom\\ Fragrance\\ \\-\\ Rose\\ Fresh\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Power\\ Pocket\\ Bathroom\\ Fragrance\\ \\-\\ Tangy\\ Delight$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Power\\ Pocket\\ Bathroom\\ Fragrance\\ \\-\\ Lavender\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Power\\ Pocket\\ Bathroom\\ Fragrance\\ \\-\\ Sea\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Twist\\ Gel\\ Car\\ Air\\ Freshener\\ \\-\\ Bright\\ Tangy\\ Delight$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Twist\\ Gel\\ Car\\ Air\\ Freshener\\ \\-\\ Musk\\ After\\ Smoke$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Twist\\ Gel\\ Car\\ Air\\ Freshener\\ \\-\\ Fresh\\ Forest\\ Drizzle$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Twist\\ Gel\\ Car\\ Air\\ Freshener\\ \\-\\ Sunny\\ Citrus\\ Blast$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Twist\\ Gel\\ Car\\ Air\\ Freshener\\ \\-\\ Rich\\ Irish\\ Cocktail$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Twist\\ Gel\\ Car\\ Air\\ Freshener\\ \\-\\ Cool\\ Surf\\ Blue$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Twist\\ Gel\\ Car\\ Air\\ Freshener\\ \\-\\ Fresh\\ Lush\\ Green$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Twist\\ Gel\\ Car\\ Air\\ Freshener\\ \\-\\ Petal\\ Crush\\ Pink$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Car\\ Vent\\ Air\\ Freshener\\ Kit\\ \\-\\ Musk\\ After\\ Smoke$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Car\\ Vent\\ Air\\ Freshener\\ Kit\\ \\-\\ Bright\\ Tangy\\ Delight$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Car\\ Vent\\ Air\\ Freshener\\ Kit\\ \\-\\ Cool\\ Surf\\ Blue$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Car\\ Vent\\ Air\\ Freshener\\ Kit\\ \\-\\ Fresh\\ Lush\\ Green$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Car\\ Vent\\ Air\\ Freshener\\ Kit\\ \\-\\ Petal\\ Crush\\ Pink$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Car\\ Vent\\ Air\\ Freshener\\ Kit\\ \\-\\ Rich\\ Irish\\ Cocktail$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Car\\ Vent\\ Air\\ Freshener\\ Refill\\ \\-\\ Bright\\ Tangy\\ Delight$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Click\\ Gel\\ Car\\ Vent\\ Air\\ Freshener\\ Refill\\ \\-\\ Petal\\ Crush\\ Pink$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^O\\ Hanging\\ Car\\ Fragrance\\ \\-\\ Caramel\\ Latte$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^O\\ Hanging\\ Car\\ Fragrance\\ \\-\\ Orange\\ Punch$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^O\\ Hanging\\ Car\\ Fragrance\\ \\-\\ Cool\\ Aqua$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^O\\ Hanging\\ Car\\ Fragrance\\ \\-\\ Musk\\ After\\ Smoke$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^O\\ Hanging\\ Car\\ Fragrance\\ \\-\\ Rose\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Air\\ \\&\\ Surface\\ Sanitizer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Sanitizer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    }
+  ]
+}
