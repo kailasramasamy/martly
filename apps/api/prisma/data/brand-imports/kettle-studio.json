@@ -1,0 +1,198 @@
+{
+  "brand": "Kettle Studio",
+  "manufacturer": "ITC Limited",
+  "feed": "kettle-studio-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kettle-studio/logo-ba7d3615.png",
+  "themeColor": "#B5121B",
+  "themeColorSecondary": "#F2C14E",
+  "namePrefix": "Kettle Studio ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Himalayan\\ Pink\\ Salt\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Crushed\\ Paprika\\ With\\ Exotic\\ Spices\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Mature\\ Cheddar\\ \\&\\ Red\\ Onions\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Rock\\ Sea\\ Salt\\ \\&\\ English\\ Vinegar\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Sharp\\ Jalapenos\\ \\&\\ Cream\\ Cheese\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Chilli\\ With\\ Lime\\ \\&\\ Basil\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Tabasco\\ Sauce\\ Flavour\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Homestyle\\ Lime\\ \\&\\ Chilli\\ Potato\\ Crisps$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Lightly\\ Salted\\ Potato\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Lime\\ \\&\\ Chilli\\ Potato\\ Wafers$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Lime\\ \\&\\ Chilli\\ Air\\ Fried\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Dill\\ Pickle\\ Air\\ Fried\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Sweet\\ \\&\\ Smoky\\ BBQ\\ Air\\ Fried\\ Potato\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Potato Chips"
+      ]
+    },
+    {
+      "match": "^Pepper\\ \\&\\ Vinegar\\ Banana\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Banana Chips"
+      ]
+    },
+    {
+      "match": "^Lime\\ \\&\\ Chilli\\ Banana\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Banana Chips"
+      ]
+    },
+    {
+      "match": "^Kettle\\ Corn\\ Salted\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Kettle\\ Corn\\ Tiramisu\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Kettle\\ Corn\\ Butterscotch\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Kettle\\ Corn\\ Chocolate\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Kettle\\ Corn\\ Coffee\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Kettle\\ Corn\\ Truffle\\ Caramel\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Kettle\\ Corn\\ Blueberry\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Kettle\\ Corn\\ Strawberry\\ Popcorn$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    }
+  ]
+}
