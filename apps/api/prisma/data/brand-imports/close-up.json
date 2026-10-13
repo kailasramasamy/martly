@@ -1,0 +1,137 @@
+{
+  "brand": "Close Up (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "close-up-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/close-up/logo-941638e1.png",
+  "themeColor": "#E2001A",
+  "themeColorSecondary": "#1E40AF",
+  "namePrefix": "Close Up ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Close Up Red Hot Gel Toothpaste": "Everfresh+ Red Hot Gel Toothpaste",
+    "Close Up Red Hot Anti-Germ Mouthwash": "Red Hot Anti-Germ Mouthwash"
+  },
+  "rules": [
+    {
+      "match": "^Everfresh\\+\\ Red\\ Hot\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Everfresh\\ Cool\\ Breeze\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Intense\\ Cool\\ Blue\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Complete\\ Fresh\\ Protection\\ Multivitamin\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Deep\\ Action\\ Lemon\\ Mint\\ Anti\\-Germ\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Fire\\ Freeze\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Attraction\\ Nature\\ Boost\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Attraction\\ Nature\\ Rush\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Clove\\ \\&\\ Orange\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ \\&\\ Clay\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Lemon\\ \\&\\ Sea\\ Salt\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^White\\ Now\\ Purple\\ Colour\\ Corrector\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^White\\ Now\\ Stain\\ Eraser\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Nature\\ Boost\\ Anti\\-Germ\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Red\\ Hot\\ Anti\\-Germ\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    }
+  ]
+}
