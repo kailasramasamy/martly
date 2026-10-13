@@ -9,6 +9,7 @@ export const BrandList = () => {
   const { tableProps, searchFormProps } = useTable<BrandRecord, HttpError, { q: string }>({
     resource: "brands",
     sorters: { initial: [{ field: "name", order: "asc" }] },
+    pagination: { pageSize: 25 },
     onSearch: (values) => [
       { field: "q", operator: "eq", value: values.q },
     ],
