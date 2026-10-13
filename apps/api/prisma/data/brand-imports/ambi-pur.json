@@ -1,0 +1,185 @@
+{
+  "brand": "Ambi Pur (P&G)",
+  "manufacturer": "Procter & Gamble Home Products Pvt. Ltd.",
+  "feed": "ambi-pur-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ambi-pur/logo-052bd5da.png",
+  "themeColor": "#0072CE",
+  "themeColorSecondary": "#7FC31C",
+  "namePrefix": "Ambi Pur ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Ambi Pur Air Freshener Spray - Lavender Spa": "Air Effects Air Freshener Spray - Lavender Bouquet",
+    "Ambi Pur Air Freshener Gel - Lavender": "Car Freshener Gel - Lavender"
+  },
+  "rules": [
+    {
+      "match": "^Air\\ Effects\\ Air\\ Freshener\\ Spray\\ \\-\\ Rose\\ \\&\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Effects\\ Air\\ Freshener\\ Spray\\ \\-\\ Sandalwood$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Effects\\ Air\\ Freshener\\ Spray\\ \\-\\ Sweet\\ Berries$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Effects\\ Air\\ Freshener\\ Spray\\ \\-\\ Floral\\ Escape$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Effects\\ Air\\ Freshener\\ Spray\\ \\-\\ Exotic\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Effects\\ Air\\ Freshener\\ Spray\\ \\-\\ Lavender\\ Bouquet$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Starter\\ Kit\\ \\-\\ Lavender\\ Spa$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Starter\\ Kit\\ \\-\\ Vanilla\\ Bouquet$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Starter\\ Kit\\ \\-\\ Exotic\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Starter\\ Kit\\ \\-\\ Sweet\\ Citrus\\ \\&\\ Zest$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Starter\\ Kit\\ \\-\\ Aqua$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Refill\\ \\-\\ Lavender\\ Spa$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Refill\\ \\-\\ Vanilla\\ Bouquet$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Refill\\ \\-\\ Exotic\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Refill\\ \\-\\ Sweet\\ Citrus\\ \\&\\ Zest$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Air\\ Freshener\\ Refill\\ \\-\\ Aqua$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Freshener\\ Gel\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Freshener\\ Gel\\ \\-\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Car\\ Freshener\\ Gel\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Moodtherapy\\ Room\\ Fresh\\ Gel\\ \\-\\ Love's\\ Bouquet$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Moodtherapy\\ Room\\ Fresh\\ Gel\\ \\-\\ Relax\\ \\&\\ Unwind$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    }
+  ]
+}
