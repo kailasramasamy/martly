@@ -1,0 +1,46 @@
+{
+  "brand": "Air Karpure (Cycle)",
+  "manufacturer": "N. Ranga Rao & Sons Pvt. Ltd.",
+  "feed": "air-karpure-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/air-karpure/logo-effb32e2.png",
+  "themeColor": "#6B2C70",
+  "themeColorSecondary": "#C9A9D6",
+  "namePrefix": "Air Karpure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Camphor\\ Pouch\\ Car\\ \\&\\ Home\\ Freshener\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Pouch\\ Car\\ \\&\\ Home\\ Freshener\\ \\-\\ Oudh$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Sachet\\ Car\\ \\&\\ Room\\ Freshener\\ \\-\\ Floral\\ Musk$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Sachet\\ Car\\ \\&\\ Room\\ Freshener\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    }
+  ]
+}
