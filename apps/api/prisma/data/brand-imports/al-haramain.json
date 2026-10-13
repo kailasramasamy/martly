@@ -1,0 +1,134 @@
+{
+  "brand": "Al Haramain",
+  "manufacturer": "Al Haramain Perfumes",
+  "feed": "al-haramain-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/al-haramain/logo-60d97f40.png",
+  "themeColor": "#9B1B30",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Al Haramain ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Madinah\\ Attar$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Badar\\ Attar$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^White\\ Oudh\\ Attar$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Million\\ Attar$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Hajar\\ Attar$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Firdous\\ Attar$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Musk\\ Attar$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Makkah\\ Attar$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Vintage\\ Classic\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Entourage\\ Bleu\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Entourage\\ Rouge\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Shefon\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Noora\\ Deodorant\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Deodorant\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Blue\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    }
+  ]
+}
