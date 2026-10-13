@@ -1,0 +1,144 @@
+{
+  "brand": "Livon (Marico)",
+  "manufacturer": "Marico Ltd.",
+  "feed": "livon-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/livon/logo-efe1a55e.png",
+  "themeColor": "#E4007C",
+  "themeColorSecondary": "#6A2C91",
+  "namePrefix": "Livon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Livon Hair Serum for Women": "Anti-Frizz Serum for All Hair Types"
+  },
+  "rules": [
+    {
+      "match": "^Anti\\-Frizz\\ Serum\\ for\\ All\\ Hair\\ Types$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Anti\\-Frizz\\ Serum\\ for\\ Rough\\ \\&\\ Dry\\ Hair$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Anti\\-Frizz\\ Serum\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hair\\ Straightening\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Heat\\ Protect\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Keratin\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Professional\\ Keratin\\ \\&\\ Hyaluronic\\ Hydrating\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ Serum\\ K\\+H\\ Keratin\\ \\&\\ Hyaluronic$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Serum\\ A\\+S\\ Argan\\ \\&\\ Shea$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Smoothening\\ Serum\\ Vitamin\\ E\\ with\\ Avocado\\ \\&\\ Almond\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hyaluron\\ Intense\\ Hydration\\ Protein\\ Smooth\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Keratin\\ Damage\\ Repair\\ Protein\\ Smooth\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Style\\ Pro\\ Keratin\\ Serum\\ with\\ Biotin$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Style\\ Pro\\ Clay\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Style\\ Pro\\ Curl\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Style\\ Pro\\ Styling\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    }
+  ]
+}
