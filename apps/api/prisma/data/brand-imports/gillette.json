@@ -1,0 +1,608 @@
+{
+  "brand": "Gillette (P&G)",
+  "manufacturer": "Procter & Gamble Home Products Pvt. Ltd.",
+  "feed": "gillette-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/gillette/logo-ed9541f3.png",
+  "themeColor": "#1B3A8C",
+  "themeColorSecondary": "#A7A9AC",
+  "namePrefix": "Gillette ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Gillette Guard Razor with Extra Smooth Gel": "Guard Razor"
+  },
+  "rules": [
+    {
+      "match": "^7\\ O'Clock\\ PII\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^7\\ O'Clock\\ PII\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^7\\ O'Clock\\ Permasharp\\ Stainless\\ Blade$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^7\\ O'Clock\\ Super\\ Platinum\\ Razor\\ \\&\\ Blades$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^7\\ O'Clock\\ Ready\\ II\\ Disposable\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^7\\ O'Clock\\ Sterling\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Refreshing\\ Breeze\\ After\\ Shave\\ Splash$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Pro\\ Icy\\ Cool\\ After\\ Shave\\ Splash$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Series\\ Cool\\ Wave\\ After\\ Shave\\ Splash$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Classic\\ Sensitive\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Classic\\ Regular\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Classic\\ Lemon\\ Lime\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Classic\\ Menthol\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Neem\\ Shaving\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Comfortable\\ Glide\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Pro\\ Aqua\\ Hydrating\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Pro\\ Icy\\ Cool\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Refreshing\\ Breeze\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Deep\\ Comfort\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Skin\\ Soothing\\ Aloe\\ Vera\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Fusion\\ Hydra\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Series\\ Pure\\ \\&\\ Sensitive\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Series\\ Sensitive\\ Shave\\ Gel\\ with\\ Aloe$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Series\\ Sensitive\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Moisturiser\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Comfort\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Shave\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Lime\\ Shaving\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Regular\\ Shaving\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Shave\\ Brush$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Fusion5\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Fusion5\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Fusion5\\ Power\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Fusion5\\ Power\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Fusion5\\ ProGlide\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Fusion5\\ ProGlide\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Fusion\\ ProGlide\\ 4\\-in\\-1\\ Styler$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Fusion5\\ Sport\\ Razor\\ with\\ 2\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Fusion5\\ Sport\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Labs\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Labs\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Bold\\ Razor\\ with\\ Magnetic\\ Dock$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Start\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Start\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Charcoal\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Charcoal\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Sensitive\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Turbo\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Turbo\\ Flexiball\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Mach3\\ Turbo\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ Razor\\ with\\ 8\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ Razor\\ with\\ 12\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ Shaving\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ 3\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ 3\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ 3\\ Razor\\ with\\ 2\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ 3\\ Razor\\ with\\ 8\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ 3\\-in\\-1\\ Razor\\ with\\ 2\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Guard\\ 3\\-in\\-1\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Presto\\ Disposable\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Skinguard\\ Sensitive\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Skinguard\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Vector\\ Plus\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Vector\\ Plus\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Vector3\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Vector3\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^King\\ C\\.\\ Neck\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^King\\ C\\.\\ Neck\\ Razor\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    }
+  ]
+}
