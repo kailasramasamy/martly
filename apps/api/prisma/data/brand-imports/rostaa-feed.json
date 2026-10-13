@@ -1,0 +1,1908 @@
+[
+ {
+  "title": "Classic Almonds",
+  "handle": "classic-almonds",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129744_2-rostaa-almonds-classic.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "1380",
+    "compare_at_price": "1380",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023040_7-rostaa-almonds-californian.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129744_2-rostaa-almonds-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129744-2_3-rostaa-almonds-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129744-3_3-rostaa-almonds-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129744-4_3-rostaa-almonds-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129744-5_2-rostaa-almonds-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129744-6_2-rostaa-almonds-classic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023040_7-rostaa-almonds-californian.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nThese almonds are roasted to perfection making them an instant hit with everyone. Almonds are closest to being the most perfect nut. These are harvested at the right time. A handful of Rostaa Almonds must be included in your daily regimen.\nRich in vitamin E.\nWeight: 35 g",
+   "ingredients": "Almonds",
+   "usageInstructions": "Ready to eat healthy snack.\nAlmond milk can be used by vegans as a milk substitute.\nCan be used for cakes, cookies, etc and for making Indian desserts.\nStore in cool and dry place.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd - 10",
+   "countryOfOrigin": "India, USA"
+  }
+ },
+ {
+  "title": "Roasted & Salted Almonds",
+  "handle": "roasted-salted-almonds",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023033_3-rostaa-almonds-roasted-salted.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "1680",
+    "compare_at_price": "1680",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126270_6-rostaa-almonds-salted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023033_3-rostaa-almonds-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023033-2_4-rostaa-almonds-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023033-3_3-rostaa-almonds-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023033-4_3-rostaa-almonds-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023033-5_3-rostaa-almonds-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023033-6_3-rostaa-almonds-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126270_6-rostaa-almonds-salted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nRostaa Gourmet almonds are nutritious nuts that are fantastic source of antioxidants. They are rich in vitamins, proteins, fibre and minerals.\nOne of the finest sources of proteins and other nutrients, these Almonds are roasted to perfection with the fine balance of low sodium salt bringing the best flavor of the nut. Perfectly roasted for a healthy dose of nutrients.\nWeight: 35 g",
+   "ingredients": "Roasted Almonds and Low Sodium Salt.",
+   "usageInstructions": "Ready to eat.\nStore in a cool and dry place.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gourmet Pistachios",
+  "handle": "gourmet-pistachios",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023034_5-rostaa-pistachio-roasted-salted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023034_5-rostaa-pistachio-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023034-2_5-rostaa-pistachio-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023034-3_4-rostaa-pistachio-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023034-4_4-rostaa-pistachio-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023034-5_3-rostaa-pistachio-roasted-salted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023034-6_3-rostaa-pistachio-roasted-salted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nRostaa Gourmet Pistachios are nutritious nuts that are fantastic source of antioxidants and vitamin E.\nFeatures: The product was harvested at its best. Low Sodium salt used.\nWeight: 35 g",
+   "ingredients": "Roasted Pistachios and salt.",
+   "usageInstructions": "Ready to eat healthy snack.\nStore in cool and dry place, away from sunlight.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Roasted & Salted Pistachios",
+  "handle": "roasted-salted-pistachios",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258_6-rostaa-pistachio.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258_6-rostaa-pistachio.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258-2_7-rostaa-pistachio.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258-3_6-rostaa-pistachio.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258-4_6-rostaa-pistachio.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258-5_5-rostaa-pistachio.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258-6_3-rostaa-pistachio.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258-7_1-rostaa-pistachio.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126258-8_1-rostaa-pistachio.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Roasted & Salted Pistachios are premium quality nuts with a crunchy texture and delicious roasted flavour. Lightly salted for a satisfying taste, these pistachios are perfect for everyday snacking, festive occasions, or serving at gatherings. Carefully selected and packed for freshness, they offer a flavourful and enjoyable snacking experience straight from the pack.",
+   "ingredients": "Roasted & Salted Pistachios\nCaution: These Pistachios were mechanically processed and may contain an occasional shell fragment or pit.",
+   "nutritionalInfo": {
+    "Energy": "635.63 Kcal",
+    "Total Fat": "51.11 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "360.38 mg",
+    "Protein": "22.28 g",
+    "Total Carbohydrate": "21.63 g",
+    "Total Sugar": "6.54 g",
+    "Added Sugar": "0 g"
+   },
+   "storageInstructions": "For best results, store in a cool and dry place.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Gourmet Walnuts",
+  "handle": "gourmet-walnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "1480",
+    "compare_at_price": "1480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023041_5-rostaa-walnuts-californian.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023041_5-rostaa-walnuts-californian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023041-2_6-rostaa-walnuts-californian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023041-3_5-rostaa-walnuts-californian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023041-4_4-rostaa-walnuts-californian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023041-5_4-rostaa-walnuts-californian.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023041-6_2-rostaa-walnuts-californian.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nRostaa Gourmet Walnuts are crunchy and delightfully nutritious. Walnuts are known to be one of the most nutritious nuts and should be included in your daily diet. This pack is packed with goodness of Nature, harvested at its best.\nFinest Quality Walnuts. Rich source of fibre and improves digestive health. Premium hand-picked quality. Hygienically packed in facility meeting food safety standards.\nWeight: 500 g",
+   "ingredients": "Walnuts",
+   "usageInstructions": "Great for snacking and baking.\nStore in cool, dry place.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gourmet Hazelnuts",
+  "handle": "gourmet-hazelnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "520",
+    "compare_at_price": "520",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126261_4-rostaa-hazelnut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126261_4-rostaa-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126261-2_4-rostaa-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126261-3_3-rostaa-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126261-4_3-rostaa-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126261-5_2-rostaa-hazelnut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126261-6_2-rostaa-hazelnut.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nHazelnuts, also known as filberts, are sweet-flavoured nuts that contain a significant amount of antioxidants and phytonutrients that help protect against heart diseases, cancer and neutralise harmful free radicals. Rich in vitamins, minerals, protein, fibre and healthy fats.\nRostaa Hazelnuts are sourced from Turkey. It is packed with goodness of nature in a resealable pack so that you can store them fresh for a longer period of time.\nWeight: 200 g",
+   "ingredients": "Hazelnuts",
+   "usageInstructions": "Rostaa Hazelnuts can be enjoyed as snacks, in baked recipes or even in your meals.\nAdds a rich flavour to your ice-creams and other desserts.\nHazelnut goes well with chocolates creating a magical taste.\nStore in cool and dry place.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd - 10",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gourmet Healthy Mix",
+  "handle": "gourmet-healthy-mix",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023032_3-rostaa-mixed-dry-fruits-healthy-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023032_3-rostaa-mixed-dry-fruits-healthy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023032-2_4-rostaa-mixed-dry-fruits-healthy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023032-3_3-rostaa-mixed-dry-fruits-healthy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023032-4_3-rostaa-mixed-dry-fruits-healthy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023032-5_3-rostaa-mixed-dry-fruits-healthy-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023032-6_2-rostaa-mixed-dry-fruits-healthy-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nThe healthy mix is hands down the best quality mixed dry fruits you will find anywhere. To ensure the highest standards, we source each ingredient directly from farms globally and sort the best grade jumbo Almonds, Cashews, Pistachios, Walnut, Figs, Apricot, Cranberries and Raisins.\n100% Natural. The right mix of roasted nuts and luscious berries that creates a balanced taste. Healthy Mix is a great energy booster anytime of the day.\nWeight: 35 g",
+   "ingredients": "Almonds, Cashew, Pistachios, Figs, Raisins, Walnuts, Dried Cranberries & Apricots.",
+   "usageInstructions": "Ready to eat snack.\nStore in a cool and dry place. Refrigeration is recommended for longer storage life.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gourmet Salted Dry Fruits Mix",
+  "handle": "gourmet-salted-dry-fruits-mix",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023035_5-rostaa-mixed-dry-fruits-salted-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023035_5-rostaa-mixed-dry-fruits-salted-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023035-2_5-rostaa-mixed-dry-fruits-salted-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023035-3_4-rostaa-mixed-dry-fruits-salted-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023035-4_4-rostaa-mixed-dry-fruits-salted-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023035-5_4-rostaa-mixed-dry-fruits-salted-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023035-6_2-rostaa-mixed-dry-fruits-salted-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nA perfect mix of roasted almonds, cashews and pistachios with low sodium salt, the salted mix is simply irresistible.\nThese salted nuts were mechanically pitted and may contain an occasional pit.\nWeight: 35 g",
+   "ingredients": "Salted Cashew, Almond & Pistachios",
+   "usageInstructions": "Ready to eat healthy snack.\nStore in cool and dry place, away from sunlight.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gourmet Cranberries",
+  "handle": "gourmet-cranberries",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126262_6-rostaa-cranberry-dried-sliced.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "1480",
+    "compare_at_price": "1480",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126273_6-rostaa-cranberry-dried-sliced.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126262_6-rostaa-cranberry-dried-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126262-2_6-rostaa-cranberry-dried-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126262-3_5-rostaa-cranberry-dried-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126262-4_5-rostaa-cranberry-dried-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126262-5_4-rostaa-cranberry-dried-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126262-6_2-rostaa-cranberry-dried-sliced.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126273_6-rostaa-cranberry-dried-sliced.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Sliced, Dried Cranberries: 200 g\nRostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nThese sweet and tart sliced cranberries with nutrient and antioxidant qualities are drier than their whole counterparts, but are great snacking options or dessert toppings.\nNatural and delightful. Harvested at its best. Hygienically packed in facility meeting food safety standards. Rich in vitamin C and antioxidants.",
+   "ingredients": "Dried Cranberries (Sliced)",
+   "usageInstructions": "A great snacking option.\nCan be added to salads, cookies, muffins and breads.\nStore in cool and dry place, away from sunlight. Preferably refrigerate after opening.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd - 10",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sliced Cranberries",
+  "handle": "sliced-cranberries",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471_1-rostaa-sliced-cranberries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471_1-rostaa-sliced-cranberries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471-2_1-rostaa-sliced-cranberries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471-3_1-rostaa-sliced-cranberries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471-4_1-rostaa-sliced-cranberries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471-5_1-rostaa-sliced-cranberries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471-6_1-rostaa-sliced-cranberries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471-7_1-rostaa-sliced-cranberries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369471-8_1-rostaa-sliced-cranberries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Sliced Cranberry Dried Fruit features thinly sliced cranberries with a sweet and slightly tangy taste. These dried cranberries are suitable for adding texture and flavour to cereals, salads, desserts, baked goods, and snack mixes. Their vibrant colour and chewy texture make them a versatile pantry ingredient for everyday recipes, festive preparations, and convenient snacking at home, work, or while travelling.",
+   "ingredients": "Dried Cranberries - Sliced (Sugar, Sunflower Oil)",
+   "nutritionalInfo": {
+    "Energy": "366.72 kcal",
+    "Total Fat": "0.76 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "12.09 mg",
+    "Protein": "0.46 g",
+    "Total Carbohydrate": "89.51 g",
+    "Total Sugar": "56.67 g",
+    "Added Sugar": "0 g"
+   },
+   "storageInstructions": "Store in a cool, dry, and hygienic place. Keep away from direct sunlight and heat. Keep the jar closed to preserve freshness.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Whole Cranberries",
+  "handle": "whole-cranberries",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "349",
+    "compare_at_price": "349",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030_4-rostaa-cranberries-whole.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030_4-rostaa-cranberries-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030-2_7-rostaa-cranberries-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030-3_6-rostaa-cranberries-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030-4_6-rostaa-cranberries-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030-5_5-rostaa-cranberries-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030-6_5-rostaa-cranberries-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030-7_1-rostaa-cranberries-whole.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023030-8_1-rostaa-cranberries-whole.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Whole Cranberries are naturally tart-sweet dried berries with a vibrant flavour and chewy texture. These versatile berries can be enjoyed as a snack or added to muffins, breads, cereals, and desserts for a fruity twist. Carefully selected and packed for quality, this pack is loaded with the goodness of nature, harvested at its best.",
+   "ingredients": "Dried Cranberries - Whole\nCaution: These Cranberries were mechanically pitted & may contain an occasional pit.",
+   "nutritionalInfo": {
+    "Energy": "376.86 Kcal",
+    "Total Fat": "1.46 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "10.24 mg",
+    "Protein": "1.03 g",
+    "Total Carbohydrate": "89.90 g",
+    "Total Sugar": "70.18 g",
+    "Added Sugar": "0 g"
+   },
+   "storageInstructions": "For best results, store in a cool and dry place.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Blueberries",
+  "handle": "blueberries",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031_8-rostaa-berries-blue.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031_8-rostaa-berries-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031-2_9-rostaa-berries-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031-3_8-rostaa-berries-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031-4_8-rostaa-berries-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031-5_6-rostaa-berries-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031-6_3-rostaa-berries-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031-7_1-rostaa-berries-blue.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023031-8_1-rostaa-berries-blue.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Blueberries are naturally sweet dried berries with a soft and chewy texture. Carefully packed to maintain their flavour and quality, they are suitable for snacking and can be added to cereals, smoothies, desserts, baked goods, and trail mixes. Their rich taste and vibrant appearance make them a versatile ingredient for everyday recipes and convenient snacking.",
+   "ingredients": "Dried Blueberries\nThese Blueberries were mechanically pitted & may contain an occasional pit.",
+   "nutritionalInfo": {
+    "Energy": "384.58 kcal",
+    "Total Fat": "1.74 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "7.29 mg",
+    "Protein": "1.28 g",
+    "Total Carbohydrate": "90.95 g",
+    "Total Sugar": "77.26 g",
+    "Added Sugar": "0 g"
+   },
+   "storageInstructions": "For best result, store in a cool and dry place.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Cherries",
+  "handle": "cherries",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126281_3-rostaa-cherries-dried.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126281_3-rostaa-cherries-dried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126281-2_4-rostaa-cherries-dried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126281-3_3-rostaa-cherries-dried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126281-4_3-rostaa-cherries-dried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126281-5_2-rostaa-cherries-dried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126281-6_2-rostaa-cherries-dried.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Dried Cherries are sweet and flavourful, and are perfect for when you wish to binge on something sugary. Rich in potassium, vitamin C and B complex, dried cherries are known to prevent heart diseases, regulate your sleeping pattern and relieve pain among other things.\nSoft, sweet and oh so red, Rostaa Cherries are flavourful treats that will keep you wanting more. They surely are a fruit lover’s delight packed with a multitude of antioxidants.\nweight: 200g,\nvegetarian",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd - 10",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cranberry Blueberry Fusion",
+  "handle": "cranberry-blueberry-fusion",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "380",
+    "compare_at_price": "380",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126279_7-rostaa-cranberry-blueberry-fusion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126279_7-rostaa-cranberry-blueberry-fusion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126279-2_7-rostaa-cranberry-blueberry-fusion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126279-3_6-rostaa-cranberry-blueberry-fusion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126279-4_6-rostaa-cranberry-blueberry-fusion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126279-5_5-rostaa-cranberry-blueberry-fusion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126279-6_2-rostaa-cranberry-blueberry-fusion.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "When two of our amazing berries unite, one can only expect something wonderful to be born out of this union. The Rostaa Cranberry Blueberry Fusion promises health and taste with every bite. Rich in nutrition, these berries are a delightful mix and can be eaten as it is, used in desserts and so on.\nWhen two of our amazing berries unite, one can only expect something wonderful to be born out of this union. The Rostaa Cranberry Blueberry Fusion promises health & taste with every bite.\nweight: 200g,\nvegetarian",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd - 10",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mix Berries Berrylicious",
+  "handle": "mix-berries-berrylicious",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "395",
+    "compare_at_price": "395",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023027_7-rostaa-berries-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023027_7-rostaa-berries-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023027-2_8-rostaa-berries-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023027-3_7-rostaa-berries-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023027-4_7-rostaa-berries-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023027-5_5-rostaa-berries-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023027-6_3-rostaa-berries-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023027-7_1-rostaa-berries-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Gourmet Mix Berries Berrylicious is a flavourful blend of carefully selected dried berries with a naturally sweet and tangy taste. Perfect for everyday snacking, these berries can also be added to cereals, smoothies, desserts, and baked recipes for a fruity twist. Packed for freshness and quality, this mix offers a delicious burst of berry flavour in every bite.",
+   "ingredients": "Dried - Blackberry, Blueberry, Cranberry & Strawberry.\nCaution: These assorted berries were mechanically pitted & may contain an ocassional pit.",
+   "nutritionalInfo": {
+    "Energy": "370.05 Kcal",
+    "Total Fat": "1.61 g",
+    "Trans Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "1.15 mg",
+    "Total Carbohydrate": "87.52 g",
+    "Total Sugar": "50.46 g",
+    "Added Sugar": "0 g",
+    "Protein": "1.37 g"
+   },
+   "storageInstructions": "For best results, store in a cool and dry place.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Apricots",
+  "handle": "apricots",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "330",
+    "compare_at_price": "330",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023026_7-rostaa-apricots.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023026_7-rostaa-apricots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023026-2_6-rostaa-apricots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023026-3_5-rostaa-apricots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023026-4_5-rostaa-apricots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023026-5_3-rostaa-apricots.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023026-6_3-rostaa-apricots.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa take pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nRostaa Gourmet Apricopts are flavourful, moist and chewy. These Mediterranean Apricots are your perfect healthy snack, any time of the day.\nRostaa Apricots are sourced from Turkey. Apricots are generally rich in anti-oxidants, Potassium and Vitamin A. Apricots can be a great companion to maintain a healthy lifestyle.\nApricots are rich in fiber and also has less calorie counts, and if consumed daily can give you a healthy skin and hair.\nRostaa Apricots comes in a resealable pack which helps you to store them for a longer period of time retaining their freshness.\nGolden Dried Apricots 200 Gm, Rich In Vitamin A, Potassium, Iron. High on antioxidants. Necessary For Beautiful Skin, Hair And Blood Building.\nStore in cool and dry place. Refrigerate after opening.",
+   "ingredients": "Apricot,Sulphur dioxide.",
+   "usageInstructions": "Carry the pack of apricots to your gym or to office for a quick snack.\nToss apricots with your daily salad.\nAdd apricots to your breakfast cereals.\nBlend few apricots with yogurt for a dip.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Prunes",
+  "handle": "prunes",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "227g",
+    "price": "279",
+    "compare_at_price": "279",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858_8-rostaa-prunes.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858_8-rostaa-prunes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858-2_9-rostaa-prunes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858-3_7-rostaa-prunes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858-4_7-rostaa-prunes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858-5_5-rostaa-prunes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858-6_3-rostaa-prunes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858-7_1-rostaa-prunes.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40036858-8_1-rostaa-prunes.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Prunes are juicy, naturally sweet dried plums with a rich flavour and soft texture. Carefully selected and packed for freshness, these prunes make a delicious snack for any time of the day. They can also be added to cereals, desserts, smoothies, or baked recipes for a fruity twist. This pack is loaded with the goodness of nature, harvested at its best..",
+   "ingredients": "Prunes prepared with Postassium Sorbate added as a preservative.\nCaution: These Prunes were mechanically pitted & may contain an occasional pit.",
+   "nutritionalInfo": {
+    "Energy": "307.70 Kcal",
+    "Total Fat": "3.50 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "4.97 mg",
+    "Protein": "2.57 g",
+    "Total Carbohydrate": "66.48 g",
+    "Total Sugar": "29.52 g",
+    "Added Sugar": "0 g"
+   },
+   "storageInstructions": "For best results, store in a cool and dry place.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "Chile"
+  }
+ },
+ {
+  "title": "Kalmi Dates",
+  "handle": "kalmi-dates",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "680g",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267_5-rostaa-dates-kalmi.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267_5-rostaa-dates-kalmi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267-2_6-rostaa-dates-kalmi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267-3_5-rostaa-dates-kalmi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267-4_5-rostaa-dates-kalmi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267-5_5-rostaa-dates-kalmi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267-6_3-rostaa-dates-kalmi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267-7_1-rostaa-dates-kalmi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126267-8_1-rostaa-dates-kalmi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Gourmet Kalmi Dates are naturally sweet with a soft texture and rich taste. Carefully packed to retain their freshness and quality, these dates are suitable for everyday snacking, festive servings, and recipe preparations. They can be enjoyed on their own or added to desserts, smoothies, breakfast bowls, and traditional dishes for a naturally sweet flavour.",
+   "ingredients": "Kalmi Dates\nCaution: These Dates are naturally dried and contain seeds.",
+   "nutritionalInfo": {
+    "Energy": "378.99 kcal",
+    "Total Fat": "1.91 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "14.63 mg",
+    "Protein": "2.16 g",
+    "Total Carbohydrate": "88.29 g",
+    "Total Sugar": "76.45 g",
+    "Added Sugar": "0 g"
+   },
+   "storageInstructions": "Store in a cool & dry place & consume in one month from opening the pack.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Omani Dates",
+  "handle": "omani-dates",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "680g",
+    "price": "440",
+    "compare_at_price": "440",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266_5-rostaa-dates-omani.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266_5-rostaa-dates-omani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266-2_7-rostaa-dates-omani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266-3_6-rostaa-dates-omani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266-4_6-rostaa-dates-omani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266-5_5-rostaa-dates-omani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266-6_3-rostaa-dates-omani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266-7_1-rostaa-dates-omani.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126266-8_1-rostaa-dates-omani.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Gourmet Omani Dates feature a naturally sweet taste with a soft and rich texture. Carefully packed to maintain their freshness and quality, these dates are suitable for everyday snacking, festive occasions, and a variety of recipes. They can be enjoyed on their own or added to desserts, smoothies, breakfast dishes, and traditional preparations for natural sweetness and flavour.",
+   "ingredients": "Omani Dates\nCaution: These Dates are naturally dried and contain seeds.",
+   "nutritionalInfo": {
+    "Energy": "347 kcal",
+    "Total Fat": "0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "11.85 mg",
+    "Protein": "2.31 g",
+    "Total Carbohydrate": "84.44 g",
+    "Total Sugar": "69.25 g",
+    "Added Sugar": "0 g"
+   },
+   "storageInstructions": "Store in a cool & dry place & consume in one month from opening the pack.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Sunflower Seeds",
+  "handle": "sunflower-seeds",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126274_6-rostaa-seeds-sunflower-kernel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126274_6-rostaa-seeds-sunflower-kernel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126274-2_6-rostaa-seeds-sunflower-kernel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126274-3_5-rostaa-seeds-sunflower-kernel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126274-4_5-rostaa-seeds-sunflower-kernel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126274-5_3-rostaa-seeds-sunflower-kernel.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Rostaa Sunflower Seeds (kernels) are a nutritious snack rich in natural minerals and can be an alternative to unhealthy fried food and chips. Roasted to perfection and salted lightly, this versatile superfood can be consumed any time of the day. It is rich in vitamins, magnesium and copper and is good for heart health, balancing hormones and supporting a healthy mood. You can also add the seeds to your bread, bakes and salads. Explore the wide range of Rostaa superfoods ranging from berries to nuts and many more only on Big Basket.",
+   "usageInstructions": "Can be used in Bread and Salads or for munching as a snack.",
+   "manufacturerName": "Royal Dry Fruits Pvt. Ltd. S No 79/1",
+   "fssaiLicense": "10015022003677",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Pumpkin Seeds",
+  "handle": "pumpkin-seeds",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40126260_5-rostaa-seeds-pumpkin-without-shell.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126260_5-rostaa-seeds-pumpkin-without-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126260-2_6-rostaa-seeds-pumpkin-without-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126260-3_5-rostaa-seeds-pumpkin-without-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126260-4_5-rostaa-seeds-pumpkin-without-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126260-5_4-rostaa-seeds-pumpkin-without-shell.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40126260-6_2-rostaa-seeds-pumpkin-without-shell.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Pumpkin Seeds boast of rich nutrients such as magnesium, manganese, copper, protein and zinc. They may be small in size, but have large benefits and taste associated with them. Their crunchy texture makes them perfect snacking options.",
+   "ingredients": "Roasted Salted Pumpkin Seeds without Shell",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd - 10",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Trail Mix",
+  "handle": "trail-mix",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "35g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40102673_4-rostaa-mixed-dry-fruits-trail-mix.jpg"
+    }
+   },
+   {
+    "title": "340g",
+    "price": "550",
+    "compare_at_price": "550",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023022_4-rostaa-mixed-dry-fruits-trail-mix.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102673_4-rostaa-mixed-dry-fruits-trail-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102673-2_4-rostaa-mixed-dry-fruits-trail-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102673-3_3-rostaa-mixed-dry-fruits-trail-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102673-4_3-rostaa-mixed-dry-fruits-trail-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102673-5_3-rostaa-mixed-dry-fruits-trail-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40102673-6_3-rostaa-mixed-dry-fruits-trail-mix.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023022_4-rostaa-mixed-dry-fruits-trail-mix.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa takes pride in their wide range of nuts, dry fruits and berries that are sourced from different countries across the globe. Rostaa products are packed in airtight resealable packs to help maintain its freshness. Beleiving in farm to fork concept, the products are grown without using harmful chemical fertilizers or chemicals.\nImported nuts with dry fruits of almonds, cashews, smarties, dried cranberries, dried diced guava & black pepper. The nutrients & minerals makes a perfect appetizer to snack on at any time of the day.\nEnriched with essential minerals and antioxidants. Hygienically packed in facility meeting food safety standards.\nWeight: 35 g",
+   "ingredients": "Almonds, Cashews, Dried Cranberries, Smarties, Dried Diced Guava, Pineapple Chunks & Black Raisins.",
+   "usageInstructions": "Ready to eat snack.\nStore in a cool and dry place. Refrigeration is recommended for longer storage life.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Being Healthy Nuts & Dried Fruits",
+  "handle": "being-healthy-nuts-dried-fruits",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340g",
+    "price": "680",
+    "compare_at_price": "680",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023_7-rostaa-mixed-dry-fruits-being-healthy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023_7-rostaa-mixed-dry-fruits-being-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023-2_8-rostaa-mixed-dry-fruits-being-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023-3_7-rostaa-mixed-dry-fruits-being-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023-4_7-rostaa-mixed-dry-fruits-being-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023-5_5-rostaa-mixed-dry-fruits-being-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023-6_5-rostaa-mixed-dry-fruits-being-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023-7_1-rostaa-mixed-dry-fruits-being-healthy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023023-8_1-rostaa-mixed-dry-fruits-being-healthy.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Gourmet Being Healthy is a flavourful mix of nuts and berries offering a balance of crunchy and chewy textures. Carefully prepared for convenient snacking, this blend is suitable for enjoying at home, at work, or while travelling. It can also be added to breakfast bowls, desserts, and snack platters for extra variety, texture, and flavour.",
+   "ingredients": "Roasted Almonds, Cashews, Dried Cranberries, Raisins, Dried Apricots, Pistachios, Dried Figs\nCaution: These dried fruits were mechanically pitted and may contain an occasional pit.",
+   "nutritionalInfo": {
+    "Energy": "140 kcal",
+    "Total Fat": "1.03 g",
+    "Saturated Fat": "0.13 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "0 mg",
+    "Protein": "6.38 g",
+    "Total Carbohydrate": "1.09 g",
+    "Vitamins": "0 mg",
+    "Dietary Fibre": "0.19 g"
+   },
+   "storageInstructions": "For best results, store in a cool and dry place.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Morning Berries",
+  "handle": "morning-berries",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170g",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245321_1-rostaa-morning-berries-vegan-no-cholesterol.jpg"
+    }
+   },
+   {
+    "title": "340g",
+    "price": "640",
+    "compare_at_price": "640",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023029_7-rostaa-berries-morning.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245321_1-rostaa-morning-berries-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245321-2_1-rostaa-morning-berries-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245321-3_1-rostaa-morning-berries-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245321-4_1-rostaa-morning-berries-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245321-5_1-rostaa-morning-berries-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023029_7-rostaa-berries-morning.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Rostaa Morning Berries are a premium blend of Roasted Cashews, Almonds, Pistachios, Raisins, Blackberries, Blueberries, Strawberries, Whole & Sliced Cranberries and are ready to savour on the go. A delicious combination of 8 power-packed Nuts and Berries, the Morning Berries pack is the healthiest way to power through your day. It has just the right mix of nuts and berries to create a balanced taste and even better after-taste. Explore the wide range of Rostaa superfoods ranging from berries to nuts and many more only on Big Basket.",
+   "usageInstructions": "Can be used in baking, desserts and toppings or even in your Breakfast bowl.",
+   "manufacturerName": "Royal Dry Fruits Pvt. Ltd. S No 79/1",
+   "fssaiLicense": "10015022003677",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Turkish Delight",
+  "handle": "turkish-delight",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170g",
+    "price": "340",
+    "compare_at_price": "340",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40245325_1-rostaa-turkish-delight-vegan-no-cholesterol.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245325_1-rostaa-turkish-delight-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245325-2_1-rostaa-turkish-delight-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245325-3_1-rostaa-turkish-delight-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245325-4_1-rostaa-turkish-delight-vegan-no-cholesterol.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40245325-5_1-rostaa-turkish-delight-vegan-no-cholesterol.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "The Rostaa Turkish Delight is a premium mix of Turkish almonds, apricot bites, fig bites, hazelnuts, cranberry slices and brown raisins and is the best gourmet snack you could have asked for.\nConsisting of a combination of 6 power-packed Nuts, Berries and Dried Fruits, it is a great energy booster and tastes equally good. Use it to power up your day or when you're feeling drained out and low. Alternately, mix the contents in your salad, dessert or breakfast bowl and enjoy!\nExplore the wide range of Rostaa superfoods ranging from berries to nuts and many more only on Big Basket.",
+   "usageInstructions": "Can be used for snacking, or in desserts and jams. Can also be used in salads and smoothies.",
+   "manufacturerName": "Royal Dry Fruits Pvt. Ltd. S No 79/1",
+   "fssaiLicense": "10015022003677",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheesy Peesy Foxnuts",
+  "handle": "cheesy-peesy-foxnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369467_1-rostaa-cheesy-peesy-foxnuts.jpg"
+    },
+    "barcode": "8906214250021"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369467_1-rostaa-cheesy-peesy-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369467-2_1-rostaa-cheesy-peesy-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369467-3_1-rostaa-cheesy-peesy-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369467-4_1-rostaa-cheesy-peesy-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369467-5_1-rostaa-cheesy-peesy-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369467-6_1-rostaa-cheesy-peesy-foxnuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Cheesy Peesy Fox Nuts are coated with a rich and creamy cheese seasoning for a smooth and indulgent taste. Carefully roasted to deliver a satisfying crunch in every bite, this flavourful snack is perfect for cheese lovers. Ideal for tea-time munching, movie nights, or sharing with friends and family, these fox nuts offer a deliciously savoury snacking experience.",
+   "ingredients": "Makhana (Fox Nuts) 80%, Olive Oil 12%, and Seasoning 8% [Sugar, Edible Common Salt, Oregano Leaves, Dried Onion, Dried Garlic, Red Chilli, Wheat Flour, Cheese Concentrate, Acidity Regulator (INS 296), Colour (INS 160c), Natural and Nature-Identical Flavouring Substances, Anti-Caking Agent (INS 551)].\nAllergen Caution: Contains milk and wheat. Contains tree nuts. This product has been packed in an integrated nuts and dried fruits processing unit and may contain an occasional trace of other nuts or dried fruits.",
+   "nutritionalInfo": {
+    "Energy": "448 Kcal",
+    "Total Fat": "14 g",
+    "Saturated Fat": "3.2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "720 mg",
+    "Protein": "16 g",
+    "Total Carbohydrate": "62 g",
+    "Total Sugar": "3.2 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "9.6 g",
+    "Calcium": "192 mg",
+    "Iron": "4.8 mg",
+    "Magnesium": "152 mg",
+    "Potassium": "560 mg"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place. Keep away from direct sunlight and heat. Keep the JAR closed to preserve freshness.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Lemon Foxnuts",
+  "handle": "chilli-lemon-foxnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369466_1-rostaa-chilli-lemon-foxnuts.jpg"
+    },
+    "barcode": "8906214250069"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369466_1-rostaa-chilli-lemon-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369466-2_1-rostaa-chilli-lemon-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369466-3_1-rostaa-chilli-lemon-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369466-4_1-rostaa-chilli-lemon-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369466-5_1-rostaa-chilli-lemon-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369466-6_1-rostaa-chilli-lemon-foxnuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Chilli Lemon Fox Nuts are a light and crunchy snack with a zesty blend of tangy lemon and spicy chilli seasoning. Carefully roasted for a crisp texture, these fox nuts offer a bold flavour in every bite. Ideal for tea-time snacking, travel, or sharing with friends and family, they bring together savoury taste and satisfying crunch in a convenient pack.",
+   "ingredients": "Makhana (Fox Nuts) 80%, Olive Oil 12%, and Chilli Lemon Seasoning 8% [Spices & Condiments (Dried Onion, Dried Garlic, Red Chilli Powder 12%, Lemon Powder 7%, Cumin, Black Pepper), Salt, Maltodextrin, Sugar, Nausadar (INS 510), Acidity Regulator (INS 330), Natural and Nature-Identical Flavouring Substances (Lemon), Flavour Enhancers (INS 627, INS 631), Anti-Caking Agent (INS 551), Colour (INS 160c)].\nAllergen Caution: Contains tree nuts. This product has been packed in an integrated nuts and dried fruits processing unit and may contain an occasional trace of other nuts or dried fruits.",
+   "nutritionalInfo": {
+    "Energy": "480 Kcal",
+    "Total Fat": "15.6 g",
+    "Saturated Fat": "2.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "380 mg",
+    "Protein": "9.6 g",
+    "Total Carbohydrate": "71.2 g",
+    "Total Sugar": "5.2 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "8 g",
+    "Calcium": "35 mg",
+    "Iron": "16 mg",
+    "Magnesium": "140 mg",
+    "Potassium": "340 mg"
+   },
+   "storageInstructions": "For best results, store in a cool and dry place.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Classic Pepper Foxnuts",
+  "handle": "classic-pepper-foxnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369470_1-rostaa-classic-pepper-foxnuts.jpg"
+    },
+    "barcode": "8906214250038"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369470_1-rostaa-classic-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369470-2_1-rostaa-classic-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369470-3_1-rostaa-classic-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369470-4_1-rostaa-classic-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369470-5_1-rostaa-classic-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369470-6_1-rostaa-classic-pepper-foxnuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Classic Pepper Foxnuts combine crunchy roasted makhana with a bold pepper seasoning for a simple yet flavourful snack. Lightly seasoned with classic pepper notes, these foxnuts offer a balanced taste and crisp texture suitable for everyday snacking. They can be enjoyed at home, at work, or while travelling as a convenient savoury snack option.",
+   "ingredients": "Makhana (Fox Nuts) 80%, Olive Oil 12%, and Black Pepper Seasoning 8% [Black Pepper, Pink Salt, Hydrolysed Vegetable Protein (Peanut), Edible Gum (INS 414), Nature-Identical Flavouring Substance (Black Pepper), Flavour Enhancers (INS 627, INS 631), Milk Solids, Maltodextrin].\nAllergen Caution: Contains Peanut and Milk Solids. Contains tree nuts. This product has been packed in an integrated nuts and dried fruits processing unit and may contain occasional traces of other nuts or dried fruits.",
+   "nutritionalInfo": {
+    "Energy": "424 kcal",
+    "Total Fat": "10.4 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "560 mg",
+    "Protein": "14 g",
+    "Total Carbohydrate": "66.40 g",
+    "Total Sugar": "2.40 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "8 g",
+    "Calcium": "156 mg",
+    "Iron": "3.2 mg",
+    "Magnesium": "132 mg",
+    "Potassium": "472 mg"
+   },
+   "storageInstructions": "Store in a cool, dry, and hygienic place. Keep away from direct sunlight and heat. Keep the jar closed to preserve freshness.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "USA"
+  }
+ },
+ {
+  "title": "Himalayan Pink Salt & Pepper Foxnuts",
+  "handle": "himalayan-pink-salt-pepper-foxnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369469_1-rostaa-himalayan-pink-salt-pepper-foxnuts.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369469_1-rostaa-himalayan-pink-salt-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369469-2_1-rostaa-himalayan-pink-salt-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369469-3_1-rostaa-himalayan-pink-salt-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369469-4_1-rostaa-himalayan-pink-salt-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369469-5_1-rostaa-himalayan-pink-salt-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369469-6_1-rostaa-himalayan-pink-salt-pepper-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369469-7_1-rostaa-himalayan-pink-salt-pepper-foxnuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Himalayan Pink Salt & Pepper Foxnuts combine crunchy roasted makhana with the balanced taste of Himalayan pink salt and pepper seasoning. These foxnuts offer a crisp texture with mild savoury notes, making them suitable for everyday snacking. They can be enjoyed at home, at work, or while travelling as a convenient and flavourful snack option.",
+   "ingredients": "Makhana (80%), Olive Oil (12%), Himalayan Pink Salt (8%).\nAllergen Caution: Contains tree nuts. This product has been packed in an integrated nuts and dried fruits processing unit and may contain occasional traces of other nuts or dried fruits.",
+   "nutritionalInfo": {
+    "Serving Size": "20 g",
+    "Energy": "416 kcal",
+    "Total Fat": "9.6 g",
+    "Saturated Fat": "1.6 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "520 mg",
+    "Protein": "13.2 g",
+    "Total Carbohydrate": "70 g",
+    "Total Sugar": "1.2 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "7.6 g",
+    "Calcium": "152 mg",
+    "Iron": "2.8 mg",
+    "Magnesium": "124 mg",
+    "Potassium": "460 mg"
+   },
+   "storageInstructions": "Store in a cool, dry, and hygienic place. Keep away from direct sunlight and heat. Keep the jar closed to preserve freshness.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Masala Magic Foxnuts",
+  "handle": "masala-magic-foxnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369465_1-rostaa-masala-magic-foxnuts.jpg"
+    },
+    "barcode": "8906214250007"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369465_1-rostaa-masala-magic-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369465-2_1-rostaa-masala-magic-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369465-3_1-rostaa-masala-magic-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369465-4_1-rostaa-masala-magic-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369465-5_1-rostaa-masala-magic-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369465-6_1-rostaa-masala-magic-foxnuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Masala Magic Fox Nuts bring together the richness of traditional Indian spices with crunchy roasted makhana. This flavourful snack offers a delightful blend of aromatic and savoury notes in every bite. Carefully roasted for a crisp texture, these fox nuts are perfect for tea-time snacking, travel, or sharing with friends and family while satisfying everyday snack cravings.",
+   "ingredients": "Makhana (Fox Nuts) 80%, Olive Oil 12%, and Masala Seasoning 8% [Edible Common Salt, Dried Mango Powder, Cumin, Dried Ginger, Black Pepper, Coriander Seeds, Red Chilli, Bishop's Weed, Clove, Nutmeg, Cardamom, Asafoetida].\nAllergen Caution: Contains tree nuts. This product has been packed in an integrated nuts and dried fruits processing unit and may contain an occasional trace of other nuts or dried fruits.",
+   "nutritionalInfo": {
+    "Energy": "428 Kcal",
+    "Total Fat": "10.8 g",
+    "Saturated Fat": "2.4 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "680 mg",
+    "Protein": "13.6 g",
+    "Total Carbohydrate": "68.8 g",
+    "Total Sugar": "1.6 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "9.2 g",
+    "Calcium": "164 mg",
+    "Iron": "3.6 mg",
+    "Magnesium": "140 mg",
+    "Potassium": "512 mg"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place. Keep away from direct sunlight and heat. Keep the jar closed to preserve freshness.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Minty Twist Foxnuts",
+  "handle": "minty-twist-foxnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369468_1-rostaa-minty-twist-foxnuts.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369468_1-rostaa-minty-twist-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369468-2_1-rostaa-minty-twist-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369468-3_1-rostaa-minty-twist-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369468-4_1-rostaa-minty-twist-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369468-5_1-rostaa-minty-twist-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369468-6_1-rostaa-minty-twist-foxnuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Minty Twist Fox Nuts are infused with a refreshing mint flavour that leaves a cool and pleasant aftertaste. Light and crunchy in texture, this flavourful snack is perfect for enjoying during a quick break, while travelling, or sharing with friends and family. Carefully roasted for a crisp bite, these fox nuts offer a refreshing twist in every mouthful.",
+   "ingredients": "Makhana (Fox Nuts) 80%, Olive Oil 12%, and Spice Blend Seasoning 8% [Spices & Condiments (Dried Garlic, Dried Ginger, Dried Mango Leaves, Dried Onion, Green Chilli, Coriander, Turmeric, Cumin, Black Pepper, Nutmeg, Mace), Salt, Sugar, Maltodextrin, Acidity Regulators (INS 330, INS 296), Natural and Nature-Identical Flavouring Substances, Flavour Enhancers (INS 627, INS 631)].\nAllergen Caution: Contains peanut and tree nuts. This product has been packed in an integrated nuts and dried fruits processing unit and may contain an occasional trace of other nuts or dried fruits.",
+   "nutritionalInfo": {
+    "Energy": "420 Kcal",
+    "Total Fat": "10 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "600 mg",
+    "Protein": "14 g",
+    "Total Carbohydrate": "68 g",
+    "Total Sugar": "2 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "8 g",
+    "Calcium": "160 mg",
+    "Iron": "3.2 mg",
+    "Magnesium": "128 mg",
+    "Potassium": "480 mg"
+   },
+   "storageInstructions": "For best results, store in a cool and dry place.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Peri Peri Foxnuts",
+  "handle": "peri-peri-foxnuts",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "249",
+    "compare_at_price": "249",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40369464_1-rostaa-peri-peri-foxnuts.jpg"
+    },
+    "barcode": "8906214250014"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369464_1-rostaa-peri-peri-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369464-2_1-rostaa-peri-peri-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369464-3_1-rostaa-peri-peri-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369464-4_1-rostaa-peri-peri-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369464-5_1-rostaa-peri-peri-foxnuts.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40369464-6_1-rostaa-peri-peri-foxnuts.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa Peri Peri Fox Nuts are premium roasted makhana coated with a bold and spicy peri peri seasoning. Crafted for those who enjoy a fiery kick, this crunchy snack delivers the perfect balance of heat and flavour in every bite. Ideal for tea-time snacking, movie nights, or on-the-go munching, these fox nuts offer a deliciously savoury experience any time of the day.",
+   "ingredients": "Makhana (Fox Nuts) 80%, Olive Oil 12%, and Peri Peri Seasoning 8% [Salt, Sugar, Spices and Spice Extracts (Chilli, Turmeric), Maltodextrin, Dehydrated Vegetable Powders (Garlic, Onion), Oregano, Anti-Caking Agents (INS 341(iii), INS 551), Flavour Enhancers (INS 627, INS 631)].\nAllergen Caution: Contains tree nuts. This product has been packed in an integrated nuts and dried fruits processing unit and may contain an occasional trace of other nuts or dried fruits.",
+   "nutritionalInfo": {
+    "Energy": "440 Kcal",
+    "Total Fat": "12 g",
+    "Saturated Fat": "2.8 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "640 mg",
+    "Protein": "14 g",
+    "Total Carbohydrate": "67.2 g",
+    "Total Sugar": "2.4 g",
+    "Added Sugar": "0 g",
+    "Dietary Fibre": "8.4 g",
+    "Calcium": "180 mg",
+    "Iron": "4 mg",
+    "Magnesium": "144 mg",
+    "Potassium": "520 mg"
+   },
+   "storageInstructions": "Store in a cool, dry and hygienic place. Keep away from direct sunlight and heat. Keep the Jar closed to preserve freshness.",
+   "manufacturerName": "Eliite Delights Private Limited",
+   "fssaiLicense": "11525998000383",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crunchy Peanut Butter",
+  "handle": "crunchy-peanut-butter",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40023018_3-rostaa-peanut-butter-crunchy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023018_3-rostaa-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023018-2_4-rostaa-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023018-3_4-rostaa-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023018-4_2-rostaa-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023018-5_2-rostaa-peanut-butter-crunchy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40023018-6_2-rostaa-peanut-butter-crunchy.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "White Quinoa",
+  "handle": "white-quinoa",
+  "vendor": "Rostaa",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "480",
+    "compare_at_price": "480",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40084390_5-rostaa-quinoa-finest-whole-grain-white.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084390_5-rostaa-quinoa-finest-whole-grain-white.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084390-2_6-rostaa-quinoa-finest-whole-grain-white.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084390-3_5-rostaa-quinoa-finest-whole-grain-white.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084390-4_5-rostaa-quinoa-finest-whole-grain-white.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084390-5_4-rostaa-quinoa-finest-whole-grain-white.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40084390-6_2-rostaa-quinoa-finest-whole-grain-white.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Rostaa white quinoa is a finest whole grain food produced in Peru, South America. Quinoa has numerous health benefits and is gaining popularity as super grain, being more nutritious than most other grains.\nIt is fluffy and crunchy with a nutty flavour.\nThis power packed gluten free grain is protein rich and high in iron and antioxidants.\nIt is vegan, low in calories, high in protein, fiber and 100% natural.\nWeight : 500 g\nStore in a cool dry place.",
+   "ingredients": "Whole grain white quinoa",
+   "usageInstructions": "You can use Quinoa as a healthy replacement to Rice and even in Salads, Soups, Khichdi etc.",
+   "manufacturerName": "Royal Dry Fruits Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]
