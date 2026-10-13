@@ -1,0 +1,158 @@
+{
+  "brand": "Sunsilk (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "sunsilk-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sunsilk/logo-6fc2c3bc.png",
+  "themeColor": "#A0004E",
+  "themeColorSecondary": "#E6007E",
+  "namePrefix": "Sunsilk ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Almond\\ \\&\\ Honey\\ Smoothness\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Almond\\ \\&\\ Honey\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Water\\ \\&\\ Aloe\\ Vera\\ Volume\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Water\\ \\&\\ Aloe\\ Vera\\ Volume\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Flowy\\ Silk\\ Smooth\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Flowy\\ Silk\\ Smooth\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Green\\ Tea\\ \\&\\ White\\ Lily\\ Freshness\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Biotin\\ Long\\ \\&\\ Healthy\\ Growth\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Biotin\\ Long\\ \\&\\ Healthy\\ Growth\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Hairfall\\ Solution\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Luscious\\ Thick\\ \\&\\ Long\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Luscious\\ Thick\\ \\&\\ Long\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Onion\\ \\&\\ Jojoba\\ Oil\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Straight\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Perfect\\ Straight\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Black\\ Shine\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Black\\ Shine\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Super\\ Shine\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    }
+  ]
+}
