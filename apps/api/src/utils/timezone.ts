@@ -64,3 +64,11 @@ export function currentISTTime(): string {
 export function currentISTHour(): number {
   return getISTComponents().hours;
 }
+
+/** Milliseconds from now until the next occurrence of hour:00 IST (always in the future). */
+export function msUntilISTHour(hour: number, now: Date = new Date()): number {
+  const { year, month, date } = getISTComponents(now);
+  let next = Date.UTC(year, month, date, hour) - IST_OFFSET_MS;
+  if (next <= now.getTime()) next += 24 * 60 * 60_000;
+  return next - now.getTime();
+}

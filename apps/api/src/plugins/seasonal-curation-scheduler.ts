@@ -2,8 +2,12 @@ import fp from "fastify-plugin";
 import type { FastifyInstance } from "fastify";
 import { findDueCurations } from "../services/seasonal/due-events.js";
 import { curateEvent, isCurationConfigured } from "../services/seasonal/index.js";
+import { msUntilISTHour } from "../utils/timezone.js";
 
-const INTERVAL_MS = 6 * 60 * 60_000;
+// Daily at a fixed IST time so deploys never shift or skip it; festivals are curated a week ahead
+const RUN_HOUR_IST = 6;
+// Production also catches up shortly after a restart; dev stays manual so restarts never call the AI APIs
+const STARTUP_DELAY_MS = 5 * 60_000;
 
 async function seasonalCurationSchedulerPlugin(app: FastifyInstance) {
   if (!isCurationConfigured()) {
@@ -37,15 +41,23 @@ async function seasonalCurationSchedulerPlugin(app: FastifyInstance) {
     }
   }
 
-  let intervalId: ReturnType<typeof setInterval>;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+
+  function scheduleDaily() {
+    timer = setTimeout(async () => {
+      await processDueCurations();
+      scheduleDaily();
+    }, msUntilISTHour(RUN_HOUR_IST));
+  }
 
   app.addHook("onReady", () => {
-    intervalId = setInterval(processDueCurations, INTERVAL_MS);
-    app.log.info("Seasonal curation scheduler started (6h interval)");
+    scheduleDaily();
+    if (process.env.NODE_ENV === "production") setTimeout(processDueCurations, STARTUP_DELAY_MS).unref();
+    app.log.info(`Seasonal curation scheduler started (daily at ${RUN_HOUR_IST}:00 IST)`);
   });
 
   app.addHook("onClose", () => {
-    if (intervalId) clearInterval(intervalId);
+    if (timer) clearTimeout(timer);
   });
 }
 

@@ -11,7 +11,7 @@ Builds festival and season collections, plus their hero banners, for each organi
    - regions: `ALL` or state codes
    - `guidance`: hints for the curator, such as "vegetarian"
 2. **Org regions** (`organizations.festival_regions`, set on the admin organization edit page) decide which events apply. An event applies when its regions include `ALL` or overlap the org's regions.
-3. **Scheduler** (`plugins/seasonal-curation-scheduler.ts`, every 6 h) finds (org, event) pairs whose go-live date (`startsAt − leadDays`) is within `REVIEW_DAYS` (7) and that have no collection yet. It runs only when both `ANTHROPIC_API_KEY` and `OPENAI_API_KEY` are set.
+3. **Scheduler** (`plugins/seasonal-curation-scheduler.ts`, daily at 06:00 IST, plus once 5 minutes after startup in production) finds (org, event) pairs whose go-live date (`startsAt − leadDays`) is within `REVIEW_DAYS` (7) and that have no collection yet. It runs only when both `ANTHROPIC_API_KEY` and `OPENAI_API_KEY` are set.
 4. **Curation** (`services/seasonal/`):
    - `candidates.ts`: lists the subcategories in stock at any active store of the org.
    - `curator.ts`: Claude Sonnet 5.5 (`claude-sonnet-5-5`, structured output, server-side refusal fallback) picks 4–12 subcategories and writes the English and Tamil title and subtitle plus an art-direction prompt. It may skip the event if the catalog can't support it. IDs are checked against the candidate list.
