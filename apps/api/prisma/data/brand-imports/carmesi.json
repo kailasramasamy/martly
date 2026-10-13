@@ -1,0 +1,40 @@
+{
+  "brand": "Carmesi",
+  "manufacturer": "Redcliffe Hygiene Pvt. Ltd.",
+  "feed": "carmesi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/carmesi/logo-6236faf5.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#8B1A2B",
+  "namePrefix": "Carmesi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Carmesi Menstrual Cup - Small": "Reusable Menstrual Cup - Small"
+  },
+  "rules": [
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Small$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Medium$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Menstrual\\ Cup\\ \\-\\ Large$",
+      "path": [
+        "Personal Care",
+        "Feminine Hygiene",
+        "Menstrual Cups"
+      ]
+    }
+  ]
+}
