@@ -1,0 +1,238 @@
+{
+  "brand": "Philips",
+  "manufacturer": "Philips Domestic Appliances India Ltd.",
+  "feed": "philips-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/philips/logo-20381dc1.png",
+  "themeColor": "#0B5ED7",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Philips ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^BT1232\\ SkinProtect\\ Beard\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^BT1234\\ Beard\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^BT1230\\ Beard\\ Trimmer\\ \\-\\ Virat\\ Kohli\\ Edition$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^BT1246\\ Beard\\ Trimmer\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Series\\ 1000\\ Dry\\ Beard\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Series\\ 1000\\ Wet\\ \\&\\ Dry\\ Beard\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Series\\ 3000\\ Wet\\ \\&\\ Dry\\ Beard\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^BT3302\\ Beard\\ \\&\\ Body\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^BT3431\\ Pro\\ Beard\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^BG1025\\ Showerproof\\ Body\\ Groomer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Body\\ \\&\\ Balls\\ Intimate\\ Groomer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^NT3650\\ Nose,\\ Ear\\ \\&\\ Eyebrow\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^MG3710\\ 9\\-in\\-1\\ Multi\\ Grooming\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^MG3721\\ Multi\\ Groomer\\ Set$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^MG3917\\ 8\\-in\\-1\\ All\\-in\\-One\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^MG3941\\ 10\\-in\\-1\\ Trimmer\\ Set$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^MG7920\\ 13\\-in\\-1\\ Grooming\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^MG7922\\ 13\\-in\\-1\\ Trimmer\\ Set$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Series\\ 7000\\ 12\\-in\\-1\\ Grooming\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Series\\ 9000\\ 15\\-in\\-1\\ Grooming\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^OneBlade\\ Hybrid\\ Trimmer\\ \\&\\ Shaver$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^OneBlade\\ QP1425\\ 5\\-in\\-1\\ Hybrid\\ Razor\\ \\&\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^OneBlade\\ QP2724\\ Trimmer\\ Set$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^OneBlade\\ Face\\ \\&\\ Body\\ Grooming\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^OneBlade\\ Intimate\\ Trimmer\\ \\&\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^OneBlade\\ Replacement\\ Blade$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^S1121\\ Cordless\\ Electric\\ Shaver$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Wet\\ \\&\\ Dry\\ Electric\\ Shaver$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    }
+  ]
+}
