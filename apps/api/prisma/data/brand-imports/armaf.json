@@ -1,0 +1,70 @@
+{
+  "brand": "Armaf",
+  "manufacturer": "Sterling Perfumes Industries LLC",
+  "feed": "armaf-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/armaf/logo-c56f330e.png",
+  "themeColor": "#111111",
+  "themeColorSecondary": "#B8975A",
+  "namePrefix": "Armaf ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Club\\ De\\ Nuit\\ Man\\ Perfume\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Club\\ De\\ Nuit\\ Woman\\ Perfume\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Club\\ De\\ Nuit\\ Man\\ Eau\\ De\\ Toilette$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Club\\ De\\ Nuit\\ Intense\\ Man\\ Eau\\ De\\ Toilette$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Club\\ De\\ Nuit\\ Intense\\ Man\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Hunter\\ Intense\\ Eau\\ De\\ Toilette\\ For\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Ventana\\ Eau\\ De\\ Parfum\\ For\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    }
+  ]
+}
