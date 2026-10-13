@@ -124,6 +124,15 @@ export interface BrandDirectory {
   brandCount: number;
 }
 
+// Admin brand list KPIs
+export interface BrandSummary {
+  total: number;
+  brandStores: number;
+  withoutLogo: number;
+  withoutProducts: number;
+  addedLast30d: number;
+}
+
 // Category browse: how many products a store lists in each subcategory under a node, and its top brands there
 export interface CategoryFacets {
   subcategoryCounts: Record<string, number>;

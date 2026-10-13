@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Space, Avatar, Typography } from "antd";
+import { Table, Space, Typography, App } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import type { HttpError } from "@refinedev/core";
-import { BrandDrawer, type BrandRecord } from "./brand-drawer";
+import { isAxiosError } from "axios";
+import type { BrandSummary } from "@martly/shared/types";
+import { BrandDrawer, BrandLogo, type BrandRecord } from "./brand-drawer";
 import { DebouncedSearch } from "../../components/DebouncedSearch";
+import { axiosInstance } from "../../providers/data-provider";
+import { BrandKpiCards } from "./kpi-cards";
 
 export const BrandList = () => {
   const { tableProps, searchFormProps } = useTable<BrandRecord, HttpError, { q: string }>({
@@ -17,6 +21,19 @@ export const BrandList = () => {
   });
   const [selected, setSelected] = useState<BrandRecord | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [summary, setSummary] = useState<BrandSummary | null>(null);
+  const { message } = App.useApp();
+
+  const refreshSummary = useCallback(() => {
+    axiosInstance.get("/brands/summary")
+      .then(({ data }) => setSummary(data.data))
+      .catch((err) => {
+        if (!isAxiosError(err)) throw err;
+        message.error("Failed to load brand summary");
+      });
+  }, [message]);
+
+  useEffect(refreshSummary, [refreshSummary]);
 
   const openBrand = (brand: BrandRecord) => {
     setSelected(brand);
@@ -25,6 +42,7 @@ export const BrandList = () => {
 
   return (
     <List>
+      <BrandKpiCards summary={summary} />
       <div style={{ marginBottom: 16 }}>
         <DebouncedSearch
           placeholder="Search brands..."
@@ -39,7 +57,7 @@ export const BrandList = () => {
           title="Name"
           render={(name: string, record: BrandRecord) => (
             <Space style={{ cursor: "pointer" }} onClick={() => openBrand(record)}>
-              <Avatar shape="square" src={record.imageUrl} size={32}>{name[0]}</Avatar>
+              <BrandLogo brand={record} height={32} />
               <Typography.Link>{name}</Typography.Link>
             </Space>
           )}
@@ -51,7 +69,7 @@ export const BrandList = () => {
           render={(_, record: BrandRecord) => (
             <Space>
               <EditButton hideText size="small" recordItemId={record.id} />
-              <DeleteButton hideText size="small" recordItemId={record.id} />
+              <DeleteButton hideText size="small" recordItemId={record.id} onSuccess={refreshSummary} />
             </Space>
           )}
         />

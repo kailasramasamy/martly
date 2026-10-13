@@ -76,9 +76,21 @@ const ProductItem = ({ product }: { product: BrandProduct }) => {
   );
 };
 
+// Logos vary from square marks to wide wordmarks: fit them uncropped in a 2:1 box
+export const BrandLogo = ({ brand, height }: { brand: Pick<BrandRecord, "name" | "imageUrl">; height: number }) =>
+  brand.imageUrl ? (
+    <img
+      src={brand.imageUrl}
+      alt={brand.name}
+      style={{ width: height * 2, height, objectFit: "contain", flexShrink: 0 }}
+    />
+  ) : (
+    <Avatar shape="square" size={height} style={{ width: height * 2, flexShrink: 0 }}>{brand.name[0]}</Avatar>
+  );
+
 const BrandHeader = ({ brand }: { brand: BrandRecord }) => (
   <Flex gap={16} align="center">
-    <Avatar shape="square" size={64} src={brand.imageUrl}>{brand.name[0]}</Avatar>
+    <BrandLogo brand={brand} height={64} />
     <div style={{ flex: 1 }}>
       <Title level={4} style={{ margin: 0 }}>{brand.name}</Title>
       <Text type="secondary">{brand.slug} · {brand._count.products} products</Text>

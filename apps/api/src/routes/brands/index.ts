@@ -1,6 +1,6 @@
 import type { FastifyInstance } from "fastify";
 import { createBrandSchema, updateBrandSchema } from "@martly/shared/schemas";
-import type { ApiResponse, BrandDirectory, DirectoryBrand, DirectoryDepartment, PaginatedResponse } from "@martly/shared/types";
+import type { ApiResponse, BrandDirectory, BrandSummary, DirectoryBrand, DirectoryDepartment, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 
@@ -63,6 +63,23 @@ export async function brandRoutes(app: FastifyInstance) {
       success: true,
       data: brands,
       meta: { total, page: Number(page), pageSize: Number(pageSize), totalPages: Math.ceil(total / Number(pageSize)) },
+    };
+    return response;
+  });
+
+  // KPI counts for the admin brand list
+  app.get("/summary", { preHandler: [authenticate] }, async () => {
+    const since = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+    const [total, brandStores, withoutLogo, withoutProducts, addedLast30d] = await Promise.all([
+      app.prisma.brand.count(),
+      app.prisma.brand.count({ where: { themeColor: { not: null } } }),
+      app.prisma.brand.count({ where: { imageUrl: null } }),
+      app.prisma.brand.count({ where: { products: { none: {} } } }),
+      app.prisma.brand.count({ where: { createdAt: { gte: since } } }),
+    ]);
+    const response: ApiResponse<BrandSummary> = {
+      success: true,
+      data: { total, brandStores, withoutLogo, withoutProducts, addedLast30d },
     };
     return response;
   });
