@@ -1,0 +1,101 @@
+{
+  "brand": "Soft Touch",
+  "manufacturer": "Soft Touchline Products Pvt. Ltd.",
+  "feed": "soft-touch-feed.json",
+  "themeColor": "#7B2D8E",
+  "themeColorSecondary": "#2E9E4F",
+  "namePrefix": "Soft Touch ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Facial\\ Tissue\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Informal\\ Facial\\ Napkin\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Pop\\-Up\\ Napkin\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Eco\\ Soft\\ Napkin\\ Tissue\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Soft\\ Napkin\\ Tissue\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Towel\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Non\\-Woven\\ Kitchen\\ Towel\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Easy\\ Flush\\ Toilet\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Tissue\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Tissue\\ Roll\\ \\-\\ 2\\ Ply,\\ 500\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Tissue\\ Rolls\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    }
+  ]
+}
