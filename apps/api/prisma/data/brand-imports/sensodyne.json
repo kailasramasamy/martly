@@ -1,0 +1,193 @@
+{
+  "brand": "Sensodyne (Haleon)",
+  "manufacturer": "Haleon India Pvt. Ltd.",
+  "feed": "sensodyne-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sensodyne/logo-8704ab67.png",
+  "themeColor": "#0072CE",
+  "themeColorSecondary": "#1E3A8A",
+  "namePrefix": "Sensodyne ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Sensodyne Fresh Mint Toothpaste": "Fresh Mint Sensitive Toothpaste",
+    "Sensodyne Deep Clean Soft Toothbrush": "Deep Clean Extra Soft Toothbrush"
+  },
+  "rules": [
+    {
+      "match": "^Fresh\\ Mint\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Gel\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Rapid\\ Relief\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Repair\\ \\&\\ Protect\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Complete\\ Protection\\+\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Deep\\ Clean\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Expert\\ White\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Whitening\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Multi\\ Care\\ Sensitive\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sensitivity\\ \\&\\ Gum\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Pronamel\\ Daily\\ Protection\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Pronamel\\ Fresh\\ Breath\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Pronamel\\ Kids\\ Toothpaste\\ \\-\\ Bubble\\ Mint$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Pronamel\\ Kids\\ Toothpaste\\ \\-\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Complete\\ Protection\\+\\ Alcohol\\ Free\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Complete\\ Protection\\+\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Deep\\ Clean\\ Extra\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Expert\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Care\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Multi\\ Care\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Sensitivity\\ \\&\\ Gum\\ Soft\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    }
+  ]
+}

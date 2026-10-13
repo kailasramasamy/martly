@@ -1,0 +1,1155 @@
+[
+ {
+  "title": "Fresh Mint Sensitive Toothpaste",
+  "handle": "fresh-mint-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/311093_4-sensodyne-fresh-mint-toothpaste-for-sensitive-teeth.jpg"
+    }
+   },
+   {
+    "title": "75g",
+    "price": "124",
+    "compare_at_price": "124",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/264321_13-sensodyne-fresh-mint-sensitive-fluoride-toothpaste.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005346_19-sensodyne-fresh-mint-sensitive-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/311093_4-sensodyne-fresh-mint-toothpaste-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/264321_13-sensodyne-fresh-mint-sensitive-fluoride-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005346_19-sensodyne-fresh-mint-sensitive-toothpaste.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Fresh Gel Sensitive Toothpaste",
+  "handle": "fresh-gel-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "84",
+    "compare_at_price": "84",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/310462_4-sensodyne-toothpaste-fresh-gel-for-sensitive-teeth.jpg"
+    }
+   },
+   {
+    "title": "75g",
+    "price": "124",
+    "compare_at_price": "124",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/286939_14-sensodyne-fresh-gel-sensitive-toothpaste.jpg"
+    }
+   },
+   {
+    "title": "150g",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/318865_21-sensodyne-fresh-gel-sensitive-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/310462_4-sensodyne-toothpaste-fresh-gel-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/286939_14-sensodyne-fresh-gel-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/318865_21-sensodyne-fresh-gel-sensitive-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the ultimate solution for sensitive teeth with Sensodyne Fresh Gel Toothpaste. Clinically proven to provide relief and daily protection, this toothpaste works by building a protective barrier that blocks the sensitivity caused by hot, cold, sweet and other contact triggers. Enriched with fluoride, it prevents cavities, allowing you to use it every day with confidence. The cool, refreshing gel texture smoothly covers your teeth and gums, leaving your mouth feeling clean, renewed and with a lingering minty freshness. Whether you're battling sensitive teeth or simply want to maintain excellent oral hygiene, Sensodyne Fresh Gel Toothpaste is the ideal choice. Its convenient packaging makes it easy to incorporate into your daily routine, and the small tube size means you can take it with you wherever you go. Experience the relief and confidence of a healthy, sensitive-free smile with Sensodyne Fresh Gel Toothpaste.",
+   "usageInstructions": "Brush Twice a day",
+   "manufacturerName": "GSK CH India",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rapid Relief Sensitive Toothpaste",
+  "handle": "rapid-relief-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "40g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/282881_3-sensodyne-toothpaste-rapid-relief.jpg"
+    }
+   },
+   {
+    "title": "80g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/282880_10-sensodyne-rapid-relief-sensitive-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282881_3-sensodyne-toothpaste-rapid-relief.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/282880_10-sensodyne-rapid-relief-sensitive-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "Clinically proven relief and daily protection for sensitive teeth. Sensodyne Rapid Relief Works in 60 seconds to relieve tooth sensitivity when directly applied with a fingertip for one minute. Formulated to create a physical seal against sensitivity triggers Contains fluoride to prevent cavities so that you can use it every day.",
+   "countryOfOrigin": "India Manufacturer Name: GLAXOSMITHKLINE CONSUMER HEALTHCARE LTD"
+  }
+ },
+ {
+  "title": "Repair & Protect Sensitive Toothpaste",
+  "handle": "repair-protect-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343_5-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+    },
+    "barcode": "8901571010837"
+   },
+   {
+    "title": "100g",
+    "price": "255",
+    "compare_at_price": "255",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071215_13-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+    }
+   },
+   {
+    "title": "140g",
+    "price": "382",
+    "compare_at_price": "382",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228313_4-sensodyne-repair-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343_5-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343-2_4-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343-3_4-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343-4_4-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343-5_3-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343-6_2-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343-7_1-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20005343-8_1-sensodyne-repair-protect-sensitive-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "When the protective layer of the teeth (enamel) wears away or the gums recede, the dentine underneath becomes exposed. When this exposed dentine comes into contact with hot, cold, sweet or sour food and drinks, it can trigger a sharp, short sensation known as tooth sensitivity.\nSensodyne Repair & Protect is a daily fluoride toothpaste that helps repair and protect the sensitive areas of the teeth, while still providing the benefits of a regular toothpaste, such as strong teeth and healthy gums. It is powered by NovaMin, a unique calcium formulation that helps repair sensitive areas using the natural building blocks of teeth. With every brush, the formulation builds ongoing protection, allowing you to enjoy your favourite foods and drinks without worrying about sensitivity.\nSensodyne Repair & Protect Deep Repair toothpaste is available in three pack sizes: 70 g, 100 g and a 140 g (70 g x 2) combo pack. Brushing twice daily helps protect against tooth sensitivity.\nAlways follow the instructions and guidance provided on the pack before use.",
+   "usageInstructions": "Use as your regular toothpaste.\nApply at least a 1-inch strip of the toothpaste onto a soft bristle toothbrush.\nBrush teeth thoroughly for at least 2 minutes twice a day (morning and evening) and not more than 3 times a day or as recommended by the dentist.\nMake sure to brush all the sensitive areas of the teeth.\nMinimise swallowing, spit out after brushing.",
+   "manufacturerName": "Global Health Care Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Complete Protection+ Sensitive Toothpaste",
+  "handle": "complete-protection-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "191",
+    "compare_at_price": "191",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071-2_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071-3_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071-4_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071-5_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071-6_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071-7_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40289071-8_1-sensodyne-toothpaste-complete-protection-all-in-one-daily-oral-care-for-sensitive-teeth.jpg"
+   }
+  ],
+  "details": {
+   "description": "Unlock the power of complete oral care with Sensodyne Rapid Relief and Sensodyne Complete Protection Toothpaste. This innovative formula combines the rapid relief of Sensodyne Rapid Relief with the comprehensive protection of Sensodyne Complete Protection, providing a one-stop solution for sensitive teeth and healthy gums. Formulated with a mineral-like layer that acts rapidly to block exposed dentine and ongoing protection with every brush, this toothpaste helps you enjoy your favourite foods and drinks without the worry of sensitivity. Enriched with fluoride, it also strengthens teeth and prevents cavities, tartar, and plaque buildup for a radiant, confident smile. Embrace the ultimate in oral care and say goodbye to sensitivity, hello to complete protection.",
+   "manufacturerName": "Global Healthcare Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Deep Clean Sensitive Toothpaste",
+  "handle": "deep-clean-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549_6-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549_6-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549-2_4-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549-3_3-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549-4_2-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549-5_2-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549-6_2-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549-7_2-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40107549-8_2-sensodyne-deep-clean-sensitive-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "When the protective layer of teeth (enamel) wears away or the gums recede, the dentine underneath becomes exposed. When exposed dentine comes into contact with hot, cold, sweet, or sour food and drinks, it can trigger a sharp, short sensation known as tooth sensitivity.\nSensodyne Deep Clean is a daily fluoride toothpaste that helps protect against tooth sensitivity while still providing the benefits of a regular toothpaste, such as strong teeth and healthy gums. Powered by foam-boost technology, this toothpaste not only leaves you with a long-lasting cooling sensation but also gives your teeth the deep clean they deserve. With twice-daily brushing, you can enjoy your favourite foods and drinks without worrying about sensitivity. Sensodyne Deep Clean toothpaste is available in a 70 g pack. Always follow the instructions and guidance provided on the pack before use.",
+   "usageInstructions": "Brush thoroughly at least twice a day, or as directed by the dentist or physician.\nChildren under 6 years of age should have adult supervision and only a pea-sized amount.\nDo not swallow.",
+   "manufacturerName": "Global Health Care Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Expert White Sensitive Toothpaste",
+  "handle": "expert-white-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "250",
+    "compare_at_price": "250",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303_1-sensodyne-expert-white-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303_1-sensodyne-expert-white-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303-2_1-sensodyne-expert-white-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303-3_1-sensodyne-expert-white-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303-4_1-sensodyne-expert-white-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303-5_1-sensodyne-expert-white-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303-6_1-sensodyne-expert-white-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303-7_1-sensodyne-expert-white-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40367303-8_1-sensodyne-expert-white-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "Sensodyne Expert White toothpaste provides scientifically proven whitening, specially designed for sensitive teeth. Delivering 2 shades whiter teeth and 24/7 sensitivity protection, Sensodyne Expert White is also enamel safe. The proven whitening ingredients polish teeth, lift stains, and help to prevent surface stains such as coffee, tea, and tobacco. Sensodyne Expert White provides all the bene ts of a daily anticavity uoride toothpaste, is great tasting and leaves you with minty fresh breath. Get visibly whiter, 2x shinier, brighter teeth without the pain of tooth sensitivity with Sensodyne Expert White, from Sensodyne the #1 dentist recommended brand for sensitive teeth.",
+   "usageInstructions": "Apply a pea-sized amount to a toothbrush, brush for two minutes, and rinse thoroughly.",
+   "manufacturerName": "GLAXOSMITHKLINE CONSUMER HEALTHCARE LTDPatiala Road",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Whitening Sensitive Toothpaste",
+  "handle": "whitening-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515_6-sensodyne-whitening-sensitive-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515_6-sensodyne-whitening-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515-2_4-sensodyne-whitening-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515-3_4-sensodyne-whitening-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515-4_4-sensodyne-whitening-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515-5_3-sensodyne-whitening-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515-6_3-sensodyne-whitening-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515-7_3-sensodyne-whitening-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40071515-8_3-sensodyne-whitening-sensitive-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "When the protective layer of the teeth (enamel) is worn away or the gums recede, the dentine underneath becomes exposed. When this exposed dentine comes into contact with hot, cold, sweet or sour food and drinks, it can trigger a sharp, short sensation known as tooth sensitivity.\nSensodyne Whitening is a daily fluoride toothpaste that helps protect against tooth sensitivity, while still providing the benefits of a regular toothpaste, such as strong teeth and healthy gums. It also helps restore the natural whiteness of your teeth by removing stains, leaving you with a brighter, cleaner smile. With twice-daily brushing, you can enjoy your favourite foods and drinks without worrying about sensitivity. Sensodyne Whitening toothpaste is available in a 70 g pack.\nAlways follow the instructions and guidance provided on the pack before use.",
+   "usageInstructions": "For best results, brush for two minutes, twice daily.\nNot recommended for children.",
+   "manufacturerName": "Global Health Care Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Herbal Multi Care Sensitive Toothpaste",
+  "handle": "herbal-multi-care-sensitive-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40160598_3-sensodyne-herbal-multi-care-sensitive-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160598_3-sensodyne-herbal-multi-care-sensitive-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40160598-2_2-sensodyne-herbal-multi-care-sensitive-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "Sensodyne toothpaste is the dentist-recommended toothpaste brand for sensitive teeth. For nearly 60 years, Sensodyne has created unique formulations to help people overcome tooth sensitivity while still providing the benefits of fluoride, cavity protection, fresh breath and whitening to maintain healthy teeth. Sensodyne Herbal Multi Care toothpaste is specially formulated with Eucalyptus and Fennel extracts to provide relief from tooth sensitivity, fight tooth decay, keep gums healthy and help freshen breath. While Eucalyptus is traditionally known for its cleansing and purifying properties, Fennel is known as a natural breath freshener. This toothpaste also contains potassium nitrate, which builds ongoing protection against sensitivity, and fluoride that strengthens enamel and fights tooth decay. For best results, brush for two minutes, twice daily.",
+   "usageInstructions": "Use as your regular toothpaste. Apply at least a 1-inch strip of the toothpaste onto a soft bristle toothbrush.\nBrush teeth thoroughly for at least 2 minutes twice a day (morning and evening) and not more than 3 times a day or as recommended by the dentist.\nMake sure to brush all the sensitive areas of the teeth.\nMinimise swallowing, spit out after brushing.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sensitivity & Gum Toothpaste",
+  "handle": "sensitivity-gum-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315_5-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315_5-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315-2_4-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315-3_4-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315-4_4-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315-5_4-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315-6_4-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315-7_4-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228315-8_4-sensodyne-sensitivity-gum-protection-toothpaste-for-strong-teeth-improves-oral-health.jpg"
+   }
+  ],
+  "details": {
+   "description": "Sensodyne Sensitivity & Gum Toothpaste is your solution for achieving a healthier, happier mouth. Specially formulated to target both tooth sensitivity and gum health, this dual-action toothpaste provides comprehensive oral care. Its low-abrasion formula helps protect against sharp, short sensations triggered by hot, cold, sweet, or sour food and drinks, while also helping to target and remove plaque bacteria for improved gum health.\nWith regular twice-daily brushing, it can gradually reduce sensitivity and support healthier gums, allowing you to enjoy your favourite foods and beverages without discomfort. Enriched with fluoride, this trusted toothpaste strengthens teeth and helps prevent decay, offering complete oral well-being in one tube.\nExperience the difference of a healthier, more confident smile with Sensodyne Sensitivity & Gum.",
+   "manufacturerName": "Global Health Care Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pronamel Daily Protection Toothpaste",
+  "handle": "pronamel-daily-protection-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225_4-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225_4-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225-2_1-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225-3_1-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225-4_1-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225-5_1-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225-6_1-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225-7_1-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357225-8_1-sensodyne-pronamel-daily-protection-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Sensodyne Pronamel, dentist recommended toothpaste for advanced enamel protection from everyday acid erosion.\nPronamel is Clinically Proven to help rebuild & strengthen dental enamel as its unique formulation helps minerals penetrate deep into the enamel surface, actively reharden and strengthen weakened enamel.\nEnamel is the most important part of the tooth and essential for maintaining dental Health, loss of enamel leads to long term tooth problems like Yellowing, Cavity and Sensitivity.\nSo, whether you enjoy your daily tea, coffee, citrus fruits, or fizzy drinks, Sensodyne Pronamel helps keep your teeth strong, healthy, and protected – every day.",
+   "manufacturerName": "Global Healthcare Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pronamel Fresh Breath Toothpaste",
+  "handle": "pronamel-fresh-breath-toothpaste",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224_5-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224_5-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224-2_1-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224-3_1-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224-4_1-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224-5_1-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224-6_1-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224-7_1-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357224-8_1-sensodyne-pronamel-fresh-breath-toothpaste.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Sensodyne Pronamel, dentist recommended toothpaste for advanced enamel protect from everyday acid erosion.\nPronamel is Clinically Proven to help rebuild & strengthen dental enamel as its unique formulation helps minerals penetrate deep into the enamel surface, actively reharden and strengthen weakened enamel.\nEnamel is the most important part of the tooth and essential for maintaining dental Health, loss of enamel leads to long term tooth problems like Yellowing, Cavity and Sensitivity.\nSo, whether you enjoy your daily tea, coffee, citrus fruits, or fizzy drinks, Sensodyne Pronamel helps keep your teeth strong, healthy, and protected – every day.",
+   "manufacturerName": "Global Healthcare Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pronamel Kids Toothpaste - Bubble Mint",
+  "handle": "pronamel-kids-toothpaste-bubble-mint",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539-2_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539-3_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539-4_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539-5_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539-6_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539-7_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370539-8_1-sensodyne-pronamel-kids-bubble-mint.jpg"
+   }
+  ],
+  "details": {
+   "description": "Did you know that kids are at a higher risk of cavities because their tooth enamel is 50% thinner than an adults ? Strong enamel helps protect from cavities. Sensodyne Pronamel Kids is a specially formulated for kids aged 2+. It provides 24 hr cavity protection by strengthening the enamel.",
+   "usageInstructions": "Children aged 2 years: Brush twice daily using a smear of\ntoothpaste.\nChildren aged 3 to 6 years: Use a pea-sized amount under\nadult supervision.\nChildren aged 7 years and above: Brush twice daily.\nMinimise swallowing and spit out after brushing.\nIf irritation occurs, discontinue use and consult a\ndentist or doctor.\nFor best results, brush for at least 2 minutes.\nUse only as directed on the label.",
+   "manufacturerName": "Global Health Care Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pronamel Kids Toothpaste - Strawberry",
+  "handle": "pronamel-kids-toothpaste-strawberry",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540_1-sensodyne-pronamel-kids-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540_1-sensodyne-pronamel-kids-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540-2_1-sensodyne-pronamel-kids-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540-3_1-sensodyne-pronamel-kids-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540-4_1-sensodyne-pronamel-kids-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540-5_1-sensodyne-pronamel-kids-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540-6_1-sensodyne-pronamel-kids-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540-7_1-sensodyne-pronamel-kids-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40370540-8_1-sensodyne-pronamel-kids-strawberry.jpg"
+   }
+  ],
+  "details": {
+   "description": "Did you know that kids are at a higher risk of cavities because their tooth enamel is 50% thinner than an adults ? Strong enamel helps protect from cavities. Sensodyne Pronamel Kids is a specially formulated for kids aged 2+. It provides 24 hr cavity protection by strengthening the enamel.",
+   "usageInstructions": "Children aged 2 years: Brush twice daily using a smear of\ntoothpaste.\nChildren aged 3 to 6 years: Use a pea-sized amount under\nadult supervision.\nChildren aged 7 years and above: Brush twice daily.\nMinimise swallowing and spit out after brushing.\nIf irritation occurs, discontinue use and consult a\ndentist or doctor.\nFor best results, brush for at least 2 minutes.\nUse only as directed on the label.",
+   "manufacturerName": "Global Health Care Products",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Complete Protection+ Alcohol Free Mouthwash",
+  "handle": "complete-protection-alcohol-free-mouthwash",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331_2-sensodyne-complete-protection-mouthwash.jpg"
+    }
+   },
+   {
+    "title": "250ml",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40321330_2-sensodyne-complete-protection-mouthwash.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331_2-sensodyne-complete-protection-mouthwash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331-2_2-sensodyne-complete-protection-mouthwash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331-3_2-sensodyne-complete-protection-mouthwash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331-4_2-sensodyne-complete-protection-mouthwash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331-5_2-sensodyne-complete-protection-mouthwash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331-6_2-sensodyne-complete-protection-mouthwash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331-7_2-sensodyne-complete-protection-mouthwash.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40321331-8_2-sensodyne-complete-protection-mouthwash.jpg"
+   }
+  ],
+  "details": {
+   "description": "Unlock the secrets to optimal oral care with Sensodyne's Fluoridated Mouthwash. This comprehensive solution offers a holistic approach to mouth care, providing lasting sensitivity protection, enduring freshness, and effective cavity prevention. Formulated without alcohol, this specialised formula delivers targeted benefits to strengthen enamel and promote overall dental health. Enjoy the confidence of a bright, healthy smile through the amalgamation of sensitivity relief, long-lasting freshness, and fortified enamel strength. Whether you're seeking relief from tooth sensitivity or simply aiming for a comprehensive oral hygiene routine, this alcohol-free mouthwash is the ideal choice, available in convenient 100ml and 250ml sizes to suit your needs.",
+   "usageInstructions": "Use twice daily after brushing\nMeasure 10ml and rinse for 1 minute before spitting\nDo not rinse with water\nDo not swallow or drink from the bottle\nNot for use under 12 years of age except when prescribed by the dentist",
+   "manufacturerName": "Pontika Aerotech Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Complete Protection+ Soft Toothbrush",
+  "handle": "complete-protection-soft-toothbrush",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+    }
+   },
+   {
+    "title": "3 pcs",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308445_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444-2_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444-3_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444-4_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444-5_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444-6_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444-7_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308444-8_1-sensodyne-complete-protection-toothbrush-with-soft-bristles.jpg"
+   }
+  ],
+  "details": {
+   "description": "Everyone wants a toothbrush which helps effectively clean their teeth. It is important for people, especially with sensitive teeth. Effective cleaning helps prevent plaque build-up and soft bristles minimise further wear and tear that can be caused by excessive brushing. The newest Sensodyne toothbrush - Complete Protection+ has all the features for gentle and effective cleaning of teeth. It has soft bristles that are end-rounded to be gentle on teeth. The outer bristles of the Sensodyne Complete Protection+ toothbrush are tapered filaments for superior interdental and gum line cleaning - offering 48% better cleaning. It is designed with a small compact head size and duo-flex neck. The small head size helps deliver better access to harder-to-reach areas within the oral cavity. The duo-flex neck allows for better access and protects tooth enamel against overbrushing by applying less pressure. In order to be environmentally friendly, the packaging material used is plastic free - made of cardboard or cellulose film and is recyclable.",
+   "usageInstructions": "Brush your teeth gently twice a day to avoid plaque build-up.\nPlease note, excessive bending may break the neck of the toothbrush. It is recommended to change your toothbrush every three months.\nFor optimal care of tooth sensitivity, we recommend brushing in combination with Sensodyne toothpaste twice a day.",
+   "manufacturerName": "L-27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Deep Clean Extra Soft Toothbrush",
+  "handle": "deep-clean-extra-soft-toothbrush",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40175122_4-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+    }
+   },
+   {
+    "title": "3 pcs",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40197215_5-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175122_4-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175122-2_4-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175122-3_3-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175122-4_3-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175122-5_3-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40175122-6_2-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40197215_5-sensodyne-deep-clean-toothbrush-with-extra-soft-bristles.jpg"
+   }
+  ],
+  "details": {
+   "description": "The Sensodyne Deep Clean toothbrush is specially designed for gentle yet thorough cleaning of teeth. It has extra-soft, silky bristles that provide effective cleaning of teeth while being gentle on teeth and gums. The dense bristle base of the brush helps remove plaque effectively, while the micro-fine tapered filaments provide deep cleaning between the teeth (up to 38% better reach between the teeth) and along the gumline (up to 4 times better reach along the gumline) compared to a flat trim manual toothbrush.",
+   "usageInstructions": "1. Brush your teeth gently twice a day to avoid plaque build-up.\n2. Do not brush too hard as applying too much pressure can lead to overbrushing.\n3. It is recommended that toothbrushes be replaced every 3 months.",
+   "manufacturerName": "Schiffer & Menezes India Pvt Ltd. Plot L-26/27",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Expert Soft Toothbrush",
+  "handle": "expert-soft-toothbrush",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40051814_5-sensodyne-expert-toothbrush-with-20x-slimmer-soft-bristles.jpg"
+    },
+    "barcode": "8901571011025"
+   },
+   {
+    "title": "3 pcs",
+    "price": "230",
+    "compare_at_price": "230",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40108464_5-sensodyne-sensitive-toothbrush-with-soft-rounded-bristles.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40051814_5-sensodyne-expert-toothbrush-with-20x-slimmer-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40051814-2_5-sensodyne-expert-toothbrush-with-20x-slimmer-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40051814-3_4-sensodyne-expert-toothbrush-with-20x-slimmer-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40051814-4_4-sensodyne-expert-toothbrush-with-20x-slimmer-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40051814-5_4-sensodyne-expert-toothbrush-with-20x-slimmer-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40051814-6_2-sensodyne-expert-toothbrush-with-20x-slimmer-soft-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40108464_5-sensodyne-sensitive-toothbrush-with-soft-rounded-bristles.jpg"
+   }
+  ],
+  "details": {
+   "description": "Sensodyne has designed and formulated an entire range of toothbrushes as well as toothpastes to accommodate different needs. Cleaning effectively is important for people, especially with sensitive teeth, to help prevent plaque build-up, while minimising further wear and tear that can be caused by excessive brushing. Sensodyne Expert toothbrush is specially designed with experts for gentle, yet thorough cleaning of teeth. It is scientifically crafted with cross-active and soft bristles that provide effective cleaning of teeth, while being gentle on teeth and gums. This toothbrush has 20X slimmer bristle tips compared to a regular flat trim manual toothbrush for cleaning hard-to-reach areas. This brush also comes with an advanced tongue cleaner and a non-slip ergonomic handle to ensure a comfortable grip and good control while brushing. Sensodyne Expert tooth brush is available in two packs - Single (1 piece) and Triple pack (3 pieces - Buy 2, Get 1 free). Brush your teeth gently twice a day to avoid plaque build-up. Do not brush too hard, as applying too much pressure can lead to overbrushing. It is recommended to change your toothbrush every three months. For optimal care of tooth sensitivity, we recommend brushing in combination with Sensodyne toothpaste twice a day.",
+   "usageInstructions": "1. Brush your teeth gently twice a day to avoid plaque build-up.\n2. Do not brush too hard, as applying too much pressure can lead to overbrushing.\n3. It is recommended that toothbrushes be replaced every 3 months.",
+   "storageInstructions": "*Keep in cool and dry place\n*Keep away from direct sunlight",
+   "manufacturerName": "(S) Schiffer & Menezes India Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gentle Care Soft Toothbrush",
+  "handle": "gentle-care-soft-toothbrush",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2 pcs",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422-2_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422-3_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422-4_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422-5_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422-6_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422-7_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319422-8_1-sensodyne-gentle-care-toothbrush-soft-effective-cleaning-for-people-with-sensitive-teeth.jpg"
+   }
+  ],
+  "details": {
+   "description": "Sensodyne has designed and formulated an entire range of toothbrushes as well as toothpastes to accommodate different needs. The Sensodyne Gentle Care Toothbrush is meticulously designed to cater to the specific needs of individuals with sensitive teeth. Its soft silky bristles ensure a gentle yet highly effective cleaning experience, safeguarding sensitive gums and enamel. The toothbrush features a compact head, enabling easy access to hard-to-reach areas in the mouth, ensuring comprehensive cleanliness. Its dome-shaped head, coupled with non-slip handles, guarantees a firm grip and gentle, efficient cleaning. Crafted with precision, this toothbrush offers an all-around effective clean, making oral hygiene a comfortable and efficient experience for those with sensitive teeth. Sensodyne's commitment to gentle care shines through in every aspect of this toothbrush's design.",
+   "usageInstructions": "Brush your teeth gently twice a day to avoid plaque build-up.\nDo not brush too hard, as applying too much pressure can lead to overbrushing.\nIt is recommended that toothbrushes are replaced every 3 months.",
+   "manufacturerName": "Schiffer & Menezes India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Multi Care Soft Toothbrush",
+  "handle": "multi-care-soft-toothbrush",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40319423_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+    }
+   },
+   {
+    "title": "3 pcs",
+    "price": "142",
+    "compare_at_price": "142",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40319424_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319423_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319423-2_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319423-3_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319423-4_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319423-5_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319423-6_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319423-7_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40319424_1-sensodyne-multi-care-soft-bristles-toothbrush-for-people-with-sensitive-teeth.jpg"
+   }
+  ],
+  "details": {
+   "description": "Sensodyne has designed and formulated an entire range of toothbrushes as well as toothpastes to accommodate different needs. The Sensodyne Multi Care Soft Bristles Toothbrush is an innovative solution tailored for individuals with sensitive teeth. Its round-ended bristles and soft texture ensure a gentle yet highly effective cleaning experience, making it ideal for those with dental sensitivity. The toothbrush is designed with more flex, enabling superior cleaning with minimal pressure, reducing discomfort while brushing. Additionally, the Duoflex neck feature absorbs extra pressure, ensuring a delicate touch on sensitive gums. With a perfect blend of effectiveness and gentleness, this toothbrush guarantees thorough cleaning without causing irritation, providing a comforting oral care routine for individuals with sensitive teeth. Sensodyne's commitment to oral health shines through in this thoughtful design.",
+   "usageInstructions": "Brush your teeth gently twice a day to avoid plaque build-up.\nDo not brush too hard, as applying too much pressure can lead to overbrushing.\nIt is recommended that toothbrushes are replaced every 3 months.",
+   "manufacturerName": "Schiffer & Menezes India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sensitive Soft Toothbrush",
+  "handle": "sensitive-soft-toothbrush",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40058690_5-sensodyne-toothbrush-sensitive-buy.jpg"
+    }
+   },
+   {
+    "title": "3 pcs",
+    "price": "130",
+    "compare_at_price": "130",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40051815_5-sensodyne-sensitive-toothbrush-with-soft-rounded-bristles.jpg"
+    }
+   },
+   {
+    "title": "4 pcs",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40161042_5-sensodyne-sensitive-toothbrush-with-soft-rounded-bristles.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058690_5-sensodyne-toothbrush-sensitive-buy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058690-2_4-sensodyne-toothbrush-sensitive-buy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058690-3_4-sensodyne-toothbrush-sensitive-buy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058690-4_4-sensodyne-toothbrush-sensitive-buy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058690-5_4-sensodyne-toothbrush-sensitive-buy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058690-6_2-sensodyne-toothbrush-sensitive-buy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40051815_5-sensodyne-sensitive-toothbrush-with-soft-rounded-bristles.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40161042_5-sensodyne-sensitive-toothbrush-with-soft-rounded-bristles.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the ultimate in gentle yet effective oral care with the Sensodyne Sensitive Toothbrush. Designed to accommodate the needs of those with sensitive teeth and gums, this toothbrush features soft, rounded bristles that flex on contact to provide a soothing cleaning experience. The ergonomic handle ensures a comfortable grip, while the oval head and slim neck allow you to reach even the most hard-to-access areas, ensuring a thorough and effective clean. Recommended by dentists, the Sensodyne Sensitive Toothbrush is the perfect addition to your oral care routine, helping to prevent plaque build-up and minimise further wear and tear caused by excessive brushing. Brush gently twice a day and change your toothbrush every three months for optimal results. Take the first step towards healthier, more comfortable teeth with the Sensodyne Sensitive Toothbrush.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Sensitivity & Gum Soft Toothbrush",
+  "handle": "sensitivity-gum-soft-toothbrush",
+  "vendor": "Sensodyne (Haleon)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "98",
+    "compare_at_price": "98",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228310_1-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+    }
+   },
+   {
+    "title": "3 pcs",
+    "price": "214",
+    "compare_at_price": "214",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40228311_2-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228310_1-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228310-2_1-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228310-3_1-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228310-4_1-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228310-5_1-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228310-6_1-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228310-7_1-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40228311_2-sensodyne-sensitivity-gum-protection-toothbrush-for-better-cleaning-improves-oral-health-soft.jpg"
+   }
+  ],
+  "details": {
+   "description": "Sensodyne Sensitivity & Gum toothbrush has been specially designed for gentle and thorough cleaning of teeth & gums, without the need for excess pressure. This toothbrush comes with a duo flex neck which bends when extra pressure is applied during brushing & thereby protects against overbrushing. Finely tapered bristles of this brush allow 3x better reach along the gumline (compared to a standard neck manual toothbrush), while soft silky bristles provide gentle interdental cleaning. The carton and window used in the packaging of this brush are 100% plastic-free and therefore recyclable. Sensodyne Sensitivity & Gum toothbrush is available in two packs - Single (1 piece) and Triple pack (3 pieces - Buy 2, Get 1 free). Brush your teeth gently twice a day to avoid plaque build-up. It is recommended to change your toothbrush every three months. For optimal care of tooth sensitivity, we recommend brushing in combination with Sensodyne toothpaste twice a day.",
+   "usageInstructions": "Brush your teeth gently twice a day to avoid plaque build-up.\nPlease note, excessive bending may break the neck of the toothbrush.\nIt is recommended that toothbrushes are replaced every 3 months.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Schiffer & Menezes India Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]
