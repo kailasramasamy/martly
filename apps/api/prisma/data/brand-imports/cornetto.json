@@ -1,0 +1,78 @@
+{
+  "brand": "Cornetto (HUL)",
+  "manufacturer": "Hindustan Unilever Limited",
+  "feed": "cornetto-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cornetto/logo-6b07321f.png",
+  "themeColor": "#5B2C1A",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Cornetto ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Chocolate\\ \\&\\ Vanilla\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Almond\\ Crunch\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Butterscotch\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Double\\ Chocolate\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Vanilla\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Disc\\ Choco\\ Brownie\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Disc\\ Oreo\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    },
+    {
+      "match": "^Disc\\ Black\\ Forest\\ Cone$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Ice Cream Cones & Bars"
+      ]
+    }
+  ]
+}
