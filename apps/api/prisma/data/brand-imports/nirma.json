@@ -1,0 +1,94 @@
+{
+  "brand": "Nirma",
+  "manufacturer": "Nirma Ltd.",
+  "feed": "nirma-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nirma/logo-52e705e1.png",
+  "themeColor": "#E3141B",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Nirma ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Washing\\ Powder\\ \\-\\ Yellow$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Active\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Blue\\ Detergent\\ Powder\\ \\-\\ Top\\ Load$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Detergent\\ Cake\\ \\-\\ Yellow$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^Super\\ Detergent\\ Cake\\ \\-\\ Blue$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^Shakti\\ Detergent\\ Cake\\ \\-\\ White\\ Xtra\\ Power$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^Beauty\\ Soap\\ \\-\\ White$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Lime\\ Fresh\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Shudh\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    }
+  ]
+}
