@@ -1,0 +1,414 @@
+{
+  "brand": "Axe (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "axe-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/axe/logo-e8e59b80.png",
+  "themeColor": "#000000",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Axe ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Dark\\ Temptation\\ After\\ Shave\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Denim\\ After\\ Shave\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Pulse\\ After\\ Shave\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Denim\\ Lather\\ Shaving\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Denim\\ Cologne\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Pulse\\ Cologne\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Dark\\ Temptation\\ Cologne\\ Talc$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Talcum Powder"
+      ]
+    },
+    {
+      "match": "^Africa\\ 3\\ In\\ 1\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Apollo\\ 3\\ In\\ 1\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Black\\ 3\\ In\\ 1\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Dark\\ Temptation\\ 3\\ In\\ 1\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Sports\\ Blast\\ 3\\ In\\ 1\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Excite\\ 3\\ In\\ 1\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Apollo\\ Antiperspirant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Black\\ Antiperspirant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Dark\\ Temptation\\ Antiperspirant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Gold\\ Temptation\\ Antiperspirant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Ice\\ Chill\\ Antiperspirant\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Apollo\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Black\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Excite\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Musk\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Adrenaline\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Intense\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Dark\\ Temptation\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Gold\\ Temptation\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Provoke\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Pulse\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Recharge\\ Midnight\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Recharge\\ 24x7\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Recharge\\ Game\\ Face\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Recharge\\ Marine\\ Splash\\ Deodorant\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Maverick\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Suave\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Adrenaline\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Rogue\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Mysterious\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Corporate\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Intense\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Champion\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Dark\\ Temptation\\ No\\ Gas\\ Body\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Signature\\ Gold\\ Black\\ Musk\\ \\&\\ Cedar\\ Wood\\ Body\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Signature\\ Gold\\ Dark\\ Vanilla\\ \\&\\ Oud\\ Wood\\ Body\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Signature\\ Gold\\ Iced\\ Vetiver\\ \\&\\ Fresh\\ Lavender\\ Body\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Signature\\ Gold\\ Italian\\ Bergamot\\ \\&\\ Amber\\ Wood\\ Body\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Bergamot\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Black\\ Cherry\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Blue\\ Lavender\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Cocoa\\ Gold\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Midnight\\ Oak\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    }
+  ]
+}
