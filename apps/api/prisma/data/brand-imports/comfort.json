@@ -1,0 +1,160 @@
+{
+  "brand": "Comfort (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "comfort-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/comfort/logo-3c50af0a.png",
+  "themeColor": "#2E2A80",
+  "themeColorSecondary": "#E4007C",
+  "namePrefix": "Comfort ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Comfort Fabric Softener - Lily Fresh": "After Wash Fabric Conditioner - Lily Fresh"
+  },
+  "rules": [
+    {
+      "match": "^After\\ Wash\\ Fabric\\ Conditioner\\ \\-\\ Morning\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^After\\ Wash\\ Fabric\\ Conditioner\\ \\-\\ Lily\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^After\\ Wash\\ Fabric\\ Conditioner\\ \\-\\ Garden\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Conditioner\\ \\-\\ For\\ Baby,\\ Pure$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Perfume\\ Deluxe\\ Fabric\\ Conditioner\\ \\-\\ Desire$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Perfume\\ Deluxe\\ Fabric\\ Conditioner\\ \\-\\ Royale$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Perfume\\ Deluxe\\ Fabric\\ Conditioner\\ \\-\\ Glamour$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Perfume\\ Deluxe\\ Fabric\\ Conditioner\\ \\-\\ Elixir$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Perfume\\ Deluxe\\ Fabric\\ Conditioner\\ \\-\\ Mystique$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Perfume\\ Deluxe\\ Fabric\\ Conditioner\\ \\-\\ Passion$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Royale\\ French\\ Lavender\\ \\&\\ Velvety\\ Vanilla\\ Fabric\\ Conditioner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Intense\\ Fabric\\ Conditioner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Delicates\\ Fabric\\ Conditioner\\ \\-\\ Anti\\-Bacterial$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Dreams\\ Fabric\\ Conditioner\\ for\\ Bed\\ Linen\\ \\-\\ Lavender\\ \\&\\ Rosemary$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Softener\\ \\-\\ Rose\\ Fresh\\ \\(Imported\\)$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Softener\\ \\-\\ Jasmine\\ Fresh\\ \\(Imported\\)$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Softener\\ \\-\\ Lilac\\ Fresh\\ \\(Imported\\)$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Softener\\ \\-\\ Pure\\ \\(Imported\\)$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    }
+  ]
+}
