@@ -1,0 +1,62 @@
+{
+  "brand": "Baby Dove",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "baby-dove-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/baby-dove/logo-49219753.png",
+  "themeColor": "#1B2F6E",
+  "themeColorSecondary": "#3DB5E6",
+  "namePrefix": "Baby Dove ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Rich\\ Moisture\\ Bar$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Rich\\ Moisture\\ Hair\\ To\\ Toe\\ Baby\\ Wash$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Derma\\ Protect\\ Moisturising\\ Wash$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Rich\\ Moisture\\ Baby\\ Shampoo$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Shampoo"
+      ]
+    },
+    {
+      "match": "^Rich\\ Moisture\\ Baby\\ Lotion$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Lotion & Cream"
+      ]
+    },
+    {
+      "match": "^Rich\\ Moisture\\ Baby\\ Wipes$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Wipes"
+      ]
+    }
+  ]
+}
