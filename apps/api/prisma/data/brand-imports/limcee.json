@@ -1,0 +1,24 @@
+{
+  "brand": "Limcee (Abbott)",
+  "manufacturer": "Abbott India Ltd.",
+  "feed": "limcee-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/limcee/logo-b35ff46a.png",
+  "themeColor": "#F26522",
+  "themeColorSecondary": "#FDB913",
+  "namePrefix": "Limcee ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Limcee Vitamin C Chewable Tablets (500mg)": "Vitamin C 500mg Chewable Tablets - Orange"
+  },
+  "rules": [
+    {
+      "match": "^Vitamin\\ C\\ 500mg\\ Chewable\\ Tablets\\ \\-\\ Orange$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    }
+  ]
+}

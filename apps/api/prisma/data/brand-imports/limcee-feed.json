@@ -1,0 +1,32 @@
+[
+ {
+  "title": "Vitamin C 500mg Chewable Tablets - Orange",
+  "handle": "vitamin-c-500mg-chewable-tablets-orange",
+  "vendor": "Limcee (Abbott)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "15 pcs",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323622_1-limcee-vitamin-c-chewable-tablet-500-mg-orange-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323622_1-limcee-vitamin-c-chewable-tablet-500-mg-orange-flavour.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the delightful Limcee Vitamin C Chewable Tablet 500 mg, a health supplement that combines the goodness of vitamin C with a tantalising orange flavour. Formulated to help prevent vitamin C deficiency, this chewable tablet plays a vital role in boosting your immune system and promoting healthy skin, hair, and nails. The convenient chewable format makes it easy to consume on-the-go, while the refreshing orange taste ensures a truly enjoyable experience. Packed with antioxidant properties, Limcee aids in the absorption of iron, making it an essential supplement for those seeking to maintain their overall well-being. Embrace the power of vitamin C and indulge in the delightful Limcee chewable tablets for a healthier, happier you.",
+   "ingredients": "Sodium Ascorbate, Ascorbic Acid,",
+   "manufacturerName": "Abbott India Limited- Village Bhatuli Khurd",
+   "countryOfOrigin": "India"
+  }
+ }
+]
