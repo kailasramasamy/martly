@@ -1,0 +1,200 @@
+{
+  "brand": "Pears (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "pears-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pears/logo-2fdbcf8c.png",
+  "themeColor": "#B5651D",
+  "themeColorSecondary": "#F2C14E",
+  "namePrefix": "Pears ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Pears Pure & Gentle Glycerin Soap": "Pure & Gentle Glycerin Soap"
+  },
+  "rules": [
+    {
+      "match": "^Pure\\ \\&\\ Gentle\\ Glycerin\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Soft\\ \\&\\ Fresh\\ Glycerin\\ \\&\\ Mint\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Oil\\-Clear\\ Glow\\ Lemon\\ Flower\\ Glycerin\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Naturale\\ Coconut\\ Water\\ Nourishing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Naturale\\ Vitamin\\ C\\ Refreshing\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Detoxed\\ Glow\\ Aloe\\ Vera\\ Glycerin\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Revitalized\\ Glow\\ Pomegranate\\ Glycerin\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Gentle\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Est\\.\\ 1807\\ Original\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Gentle\\ Body\\ Wash\\ Refill\\ Pouch$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Est\\.\\ 1807\\ Body\\ Wash\\ with\\ Mint\\ Extract$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Soft\\ \\&\\ Fresh\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Oil\\ Clear\\ \\&\\ Glow\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Bright\\ Glow\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Detoxed\\ Glow\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Revitalized\\ Glow\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naturale\\ Aloe\\ Vera\\ Detoxifying\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naturale\\ Coconut\\ Water\\ Nourishing\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Naturale\\ Pomegranate\\ Brightening\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Gentle\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Oil\\ Clear\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Renewal\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Pure\\ \\&\\ Gentle\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    }
+  ]
+}
