@@ -58,6 +58,10 @@ export interface Translations {
   [lang: string]: { name?: string; description?: string };
 }
 
+export interface CollectionTranslations {
+  [lang: string]: { title?: string; subtitle?: string };
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -80,6 +84,8 @@ export interface Product {
   manufacturer?: string | null;
   countryOfOrigin?: string | null;
   averageRating?: number;
+  // Top seller at this store over the last 30 days (search and listing responses)
+  isBestseller?: boolean;
   reviewCount?: number;
   translations?: Translations | null;
 }
@@ -141,6 +147,8 @@ export interface CollectionSection {
   subtitle: string | null;
   slug: string;
   imageUrl: string | null;
+  kind: CollectionKind;
+  translations: CollectionTranslations | null;
   products: StoreProduct[];
 }
 
@@ -461,7 +469,8 @@ export interface TomorrowsBasket {
 
 export interface SearchFacets {
   tags: { tag: string; count: number; imageUrl: string | null }[];
-  subcategories: { id: string; name: string; count: number; imageUrl: string | null }[];
+  // label is the name minus the searched words ("Detergent Powder" → "Powder") for the tab row
+  subcategories: { id: string; name: string; label: string; count: number; imageUrl: string | null }[];
   brands: { id: string; name: string; count: number; imageUrl: string | null }[];
   sizes: { label: string; count: number }[];
   offerCount: number;
@@ -471,4 +480,39 @@ export interface SearchMeta {
   strategy: string;
   correctedQuery?: string;
   expandedTerms?: string[];
+}
+
+export type CollectionKind = "STANDARD" | "OCCASION" | "SEASON";
+
+export interface LandingCollection {
+  id: string;
+  title: string;
+  subtitle: string | null;
+  slug: string;
+  imageUrl: string | null;
+  kind: CollectionKind;
+  translations: CollectionTranslations | null;
+  imageUrls: Record<string, string> | null;
+  textInImage: boolean;
+  subcategories: { id: string; name: string; translations: Translations | null }[];
+  products: StoreProduct[];
+}
+
+export interface SearchLanding {
+  trending: string[];
+  categories: { id: string; name: string; imageUrl: string | null; translations?: Record<string, { name?: string; description?: string }> | null }[];
+  occasions: LandingCollection[];
+  timePicks: { period: "morning" | "afternoon" | "evening" | "night"; title: string; products: StoreProduct[] };
+  reorder: { dueCount: number; products: StoreProduct[] };
+}
+
+export interface SearchSuggestion {
+  text: string;
+  kind: "query" | "category" | "brand";
+  imageUrl: string | null;
+}
+
+export interface SearchSuggestions {
+  suggestions: SearchSuggestion[];
+  correctedQuery?: string;
 }

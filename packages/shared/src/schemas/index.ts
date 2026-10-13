@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, BannerActionType, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SUPPORTED_LANGUAGES } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, CollectionKind, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SUPPORTED_LANGUAGES } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -78,9 +78,12 @@ export const createOrganizationSchema = z.object({
 });
 export type CreateOrganizationInput = z.infer<typeof createOrganizationSchema>;
 
+const festivalRegionsSchema = z.array(z.enum(Object.keys(FESTIVAL_REGIONS) as [keyof typeof FESTIVAL_REGIONS])).min(1);
+
 export const updateOrganizationSchema = z.object({
   name: z.string().min(1).optional(),
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
+  festivalRegions: festivalRegionsSchema.optional(),
 });
 export type UpdateOrganizationInput = z.infer<typeof updateOrganizationSchema>;
 
@@ -537,6 +540,9 @@ export const bulkUpdateOrderStatusSchema = z.object({
 export type BulkUpdateOrderStatusInput = z.infer<typeof bulkUpdateOrderStatusSchema>;
 
 // ── Collection ──────────────────────────────────────
+const collectionWindowValid = (v: { startsAt?: Date | null; endsAt?: Date | null }) =>
+  !v.startsAt || !v.endsAt || v.endsAt > v.startsAt;
+
 export const createCollectionSchema = z.object({
   title: z.string().min(1),
   subtitle: z.string().optional(),
@@ -546,7 +552,10 @@ export const createCollectionSchema = z.object({
   sortOrder: z.number().int().min(0).optional(),
   isActive: z.boolean().optional(),
   productIds: z.array(z.string().uuid()).optional(),
-});
+  kind: z.nativeEnum(CollectionKind).default("STANDARD"),
+  startsAt: z.coerce.date().nullish(),
+  endsAt: z.coerce.date().nullish(),
+}).refine(collectionWindowValid, { message: "endsAt must be after startsAt", path: ["endsAt"] });
 export type CreateCollectionInput = z.infer<typeof createCollectionSchema>;
 
 export const updateCollectionSchema = z.object({
@@ -557,8 +566,39 @@ export const updateCollectionSchema = z.object({
   sortOrder: z.number().int().min(0).optional(),
   isActive: z.boolean().optional(),
   productIds: z.array(z.string().uuid()).optional(),
-});
+  kind: z.nativeEnum(CollectionKind).optional(),
+  startsAt: z.coerce.date().nullish(),
+  endsAt: z.coerce.date().nullish(),
+}).refine(collectionWindowValid, { message: "endsAt must be after startsAt", path: ["endsAt"] });
 export type UpdateCollectionInput = z.infer<typeof updateCollectionSchema>;
+
+// ── Festival Calendar ───────────────────────────────
+const festivalEventFields = {
+  name: z.string().min(1),
+  slug: z.string().min(1).regex(/^[a-z0-9-]+$/),
+  kind: z.enum(["OCCASION", "SEASON"]),
+  startsAt: z.coerce.date(),
+  endsAt: z.coerce.date(),
+  leadDays: z.number().int().min(0).max(60),
+  regions: festivalRegionsSchema,
+  guidance: z.string().max(1000).nullish(),
+  isActive: z.boolean(),
+};
+const festivalWindowValid = (v: { startsAt?: Date; endsAt?: Date }) =>
+  !v.startsAt || !v.endsAt || v.endsAt >= v.startsAt;
+
+export const createFestivalEventSchema = z.object({
+  ...festivalEventFields,
+  kind: festivalEventFields.kind.default("OCCASION"),
+  leadDays: festivalEventFields.leadDays.default(7),
+  regions: festivalEventFields.regions.default(["ALL"]),
+  isActive: festivalEventFields.isActive.default(true),
+}).refine(festivalWindowValid, { message: "endsAt must not be before startsAt", path: ["endsAt"] });
+export type CreateFestivalEventInput = z.infer<typeof createFestivalEventSchema>;
+
+export const updateFestivalEventSchema = z.object(festivalEventFields).partial()
+  .refine(festivalWindowValid, { message: "endsAt must not be before startsAt", path: ["endsAt"] });
+export type UpdateFestivalEventInput = z.infer<typeof updateFestivalEventSchema>;
 
 // ── Coupon ──────────────────────────────────────────
 export const createCouponSchema = z.object({
@@ -1118,4 +1158,22 @@ export const storeProductSearchQuerySchema = z.object({
   foodType: z.nativeEnum(FoodType).optional(),
   hasDiscount: z.enum(["true", "false"]).optional().transform((v) => v === "true"),
   sortBy: z.nativeEnum(SearchSortBy).default(SearchSortBy.RELEVANCE),
+  // "Search instead for <typed>": skip spelling correction and fuzzy fallbacks
+  exact: z.enum(["true", "false"]).optional().transform((v) => v === "true"),
+});
+
+export const searchLandingQuerySchema = z.object({
+  storeId: z.string().uuid(),
+});
+
+// Logged only when a search is committed (submit, result tap), so the query is what the customer meant
+export const searchLogSchema = z.object({
+  storeId: z.string().uuid(),
+  query: z.string().trim().toLowerCase().min(2).max(100),
+  resultCount: z.number().int().min(0),
+});
+
+export const searchSuggestQuerySchema = z.object({
+  storeId: z.string().uuid(),
+  q: z.string().trim().min(1).max(100),
 });

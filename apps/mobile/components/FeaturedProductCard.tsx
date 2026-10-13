@@ -6,6 +6,7 @@ import { colors, fonts, spacing } from "../constants/theme";
 import type { StoreProduct } from "../lib/types";
 import { useLanguage } from "../lib/language-context";
 import { FoodTypeMark } from "./FoodTypeMark";
+import { BestsellerBadge, UnitPrice } from "./ProductBadges";
 import { CompactProductCard } from "./CompactProductCard";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import { SizeChips, SizePager, maxChips, sizeImage } from "./PackSizes";
@@ -65,6 +66,7 @@ function CardImage({ item, primaryId, size, isOutOfStock, isWishlisted, onHeart,
         <Text style={styles.noImageLetter}>{item.product.name.charAt(0)}</Text>
       ))}
       {item.product.foodType && <FoodTypeMark foodType={item.product.foodType} />}
+      {item.product.isBestseller && <BestsellerBadge />}
       {isOutOfStock && (
         <View style={styles.oosOverlay}>
           <Text style={styles.oosLabel}>Out of stock</Text>
@@ -95,6 +97,7 @@ function PriceBlock({ item, isMember, saving }: { item: StoreProduct; isMember?:
         <Text style={styles.price} numberOfLines={1}>{"\u20B9"}{shown.toFixed(0)}</Text>
         {struck != null && <Text style={styles.mrp}>{"\u20B9"}{struck.toFixed(0)}</Text>}
       </View>
+      <UnitPrice price={shown} variant={item.variant} />
       {discountLabel && <Text style={styles.discount}>{discountLabel}</Text>}
       {saving && <Text style={styles.saving}>{saving}</Text>}
       {!isMember && memberCheaper && (

@@ -1,5 +1,7 @@
 import { Create, useForm, useSelect } from "@refinedev/antd";
-import { Form, Input, InputNumber, Select, Switch, Card, Row, Col } from "antd";
+import { Form, Input, InputNumber, Select, Switch, Card, Row, Col, DatePicker } from "antd";
+import { CollectionKindLabels } from "@martly/shared/constants";
+import { toSchedulePayload } from "./schedule";
 import { AppstoreOutlined } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
@@ -23,7 +25,12 @@ export const CollectionCreate = () => {
 
   return (
     <Create saveButtonProps={saveButtonProps}>
-      <Form {...formProps} layout="vertical" initialValues={{ isActive: true, sortOrder: 0 }}>
+      <Form
+        {...formProps}
+        layout="vertical"
+        initialValues={{ isActive: true, sortOrder: 0, kind: "STANDARD" }}
+        onFinish={(values) => formProps.onFinish?.(toSchedulePayload(values))}
+      >
         <Row gutter={[16, 16]}>
           <Col xs={24} lg={12}>
             <Card title={sectionTitle(<AppstoreOutlined />, "Collection Details")} size="small">
@@ -35,6 +42,14 @@ export const CollectionCreate = () => {
               </Form.Item>
               <Form.Item label="Subtitle" name="subtitle">
                 <Input />
+              </Form.Item>
+              <Form.Item label="Kind" name="kind">
+                <Select
+                  options={Object.entries(CollectionKindLabels).map(([value, label]) => ({ value, label }))}
+                />
+              </Form.Item>
+              <Form.Item label="Schedule" name="schedule">
+                <DatePicker.RangePicker showTime allowEmpty={[true, true]} style={{ width: "100%" }} />
               </Form.Item>
               <Row gutter={16}>
                 <Col span={12}>

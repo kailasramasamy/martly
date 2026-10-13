@@ -77,6 +77,12 @@ export const accessControlProvider: AccessControlProvider = {
       return { can: false };
     }
 
+    // Festival calendar: SUPER_ADMIN manages, ORG_ADMIN can list and curate
+    if (resource === "festival-events") {
+      if (role === "ORG_ADMIN" && action === "list") return { can: true };
+      return { can: false, reason: "Only Super Admin can manage the festival calendar" };
+    }
+
     // Recipes: ORG_ADMIN full access, others read-only
     if (resource === "recipes") {
       if (role === "ORG_ADMIN") return { can: true };

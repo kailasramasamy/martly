@@ -4,7 +4,7 @@ import { FilterSheet } from "./FilterSheet";
 import type { SearchFilters } from "../../lib/use-product-search";
 import type { SearchFacets } from "../../lib/types";
 
-export type SheetName = "filters" | "sort" | "quantity";
+export type SheetName = "filters" | "brand" | "sort" | "quantity";
 
 interface SearchSheetsProps {
   sheet: SheetName | null;
@@ -18,7 +18,8 @@ export function SearchSheets({ sheet, onClose, facets, filters, onChange }: Sear
   return (
     <>
       <FilterSheet
-        visible={sheet === "filters"}
+        visible={sheet === "filters" || sheet === "brand"}
+        brandsOnly={sheet === "brand"}
         brands={facets?.brands ?? []}
         value={{ brandIds: filters.brandIds, foodType: filters.foodType }}
         onApply={onChange}

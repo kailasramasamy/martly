@@ -45,10 +45,11 @@ export function hasActiveFilters(f: SearchFilters): boolean {
   return !!(f.tab || f.brandIds.length || f.size || f.foodType || f.offers);
 }
 
-function buildPath(storeId: string | undefined, q: string, textMode: boolean, filters: SearchFilters, browse: BrowseParams, page: number): string {
+function buildPath(storeId: string | undefined, q: string, textMode: boolean, filters: SearchFilters, browse: BrowseParams, page: number, exact: boolean): string {
   const params = new URLSearchParams();
   if (q) params.set("q", q);
   if (textMode) {
+    if (exact) params.set("exact", "true");
     if (filters.tab) params.set(filters.tab.kind === "tag" ? "tag" : "subcategoryId", filters.tab.key);
     if (filters.brandIds.length) params.set("brandIds", filters.brandIds.join(","));
     if (filters.size) params.set("size", filters.size);
@@ -66,7 +67,7 @@ function buildPath(storeId: string | undefined, q: string, textMode: boolean, fi
   return `${base}?${params.toString()}`;
 }
 
-function useSearchResults(storeId: string | undefined, q: string, textMode: boolean, filters: SearchFilters, browse: BrowseParams, enabled: boolean) {
+function useSearchResults(storeId: string | undefined, q: string, textMode: boolean, filters: SearchFilters, browse: BrowseParams, enabled: boolean, exact: boolean) {
   const [results, setResults] = useState<StoreProduct[]>([]);
   const [facets, setFacets] = useState<SearchFacets | null>(null);
   const [searchMeta, setSearchMeta] = useState<SearchMeta | null>(null);
@@ -79,7 +80,7 @@ function useSearchResults(storeId: string | undefined, q: string, textMode: bool
     const id = ++requestId.current;
     setLoading(true);
     api
-      .getList<StoreProduct>(buildPath(storeId, q, textMode, filters, browse, pageNum))
+      .getList<StoreProduct>(buildPath(storeId, q, textMode, filters, browse, pageNum, exact))
       .then((res) => {
         if (id !== requestId.current) return;
         const extra = res as typeof res & SearchResponse;
@@ -98,7 +99,7 @@ function useSearchResults(storeId: string | undefined, q: string, textMode: bool
       .finally(() => {
         if (id === requestId.current) setLoading(false);
       });
-  }, [storeId, q, textMode, filters, browse.categoryId, browse.hasDiscount, browse.sortBy]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [storeId, q, textMode, filters, exact, browse.categoryId, browse.hasDiscount, browse.sortBy]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     setPage(1);
@@ -132,15 +133,18 @@ export function useProductSearch(storeId: string | undefined, browse: BrowsePara
   const [query, setQuery] = useState(initialQuery);
   const [debouncedQuery, setDebouncedQuery] = useState(initialQuery.trim());
   const [filters, setFilters] = useState<SearchFilters>(EMPTY_FILTERS);
+  // Set by "Search instead for …": run the words as typed, without spelling correction
+  const [exact, setExact] = useState(false);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const textMode = !!debouncedQuery && !!storeId && !isDeepLink;
   // Nothing to show until the user types or arrives via a deep link
-  const fetched = useSearchResults(storeId, debouncedQuery, textMode, filters, browse, !!debouncedQuery || isDeepLink);
+  const fetched = useSearchResults(storeId, debouncedQuery, textMode, filters, browse, !!debouncedQuery || isDeepLink, exact);
 
   useEffect(() => () => clearTimeout(debounceRef.current), []);
 
   const changeQuery = (text: string) => {
     setQuery(text);
+    setExact(false);
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
       const next = text.trim();
@@ -150,9 +154,18 @@ export function useProductSearch(storeId: string | undefined, browse: BrowsePara
     }, DEBOUNCE_MS);
   };
 
+  // Chips (recent, trending) run immediately instead of waiting out the typing debounce
+  const runQuery = (text: string, opts: { exact?: boolean } = {}) => {
+    clearTimeout(debounceRef.current);
+    setQuery(text);
+    setExact(!!opts.exact);
+    setFilters((f) => ({ ...EMPTY_FILTERS, sortBy: f.sortBy }));
+    setDebouncedQuery(text.trim());
+  };
+
   const patchFilters = (patch: Partial<SearchFilters>) => setFilters((f) => ({ ...f, ...patch }));
   const selectTab = (tab: SearchTab | null) => patchFilters({ tab, brandIds: [], size: null });
   const clearFilters = () => setFilters((f) => ({ ...EMPTY_FILTERS, sortBy: f.sortBy }));
 
-  return { query, changeQuery, textMode, filters, patchFilters, selectTab, clearFilters, ...fetched };
+  return { query, activeQuery: debouncedQuery, changeQuery, runQuery, textMode, filters, patchFilters, selectTab, clearFilters, ...fetched };
 }

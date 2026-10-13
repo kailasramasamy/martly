@@ -125,6 +125,17 @@ enum TripStatus {
   CANCELLED
 }
 
+enum CollectionKind {
+  STANDARD
+  OCCASION
+  SEASON
+}
+
+enum CurationSource {
+  MANUAL
+  AGENT
+}
+
 enum BannerPlacement {
   HERO_CAROUSEL
   CATEGORY_STRIP
@@ -248,6 +259,7 @@ model Organization {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   subscriptionEnabled Boolean @default(false) @map("subscription_enabled")
+  festivalRegions     String[] @default(["ALL"]) @map("festival_regions")
 
   stores              Store[]
   products            Product[]
@@ -313,6 +325,7 @@ model Store {
   returnRequests        ReturnRequest[]
   subscriptions         Subscription[]
   basketAddOns          BasketAddOn[]
+  searchLogs            SearchLog[]
 
   @@map("stores")
 }
@@ -357,6 +370,7 @@ model User {
   memberships          UserMembership[]
   subscriptions        Subscription[]
   basketAddOns         BasketAddOn[]
+  searchLogs           SearchLog[]
 
   @@map("users")
 }
@@ -676,15 +690,46 @@ model Collection {
   imageUrl       String?  @map("image_url")
   sortOrder      Int      @default(0) @map("sort_order")
   isActive       Boolean  @default(true) @map("is_active")
+  kind           CollectionKind @default(STANDARD)
+  startsAt       DateTime? @map("starts_at")
+  endsAt         DateTime? @map("ends_at")
+  translations   Json?
+  imageUrls      Json?    @map("image_urls")
+  textInImage    Boolean  @default(false) @map("text_in_image")
+  artDirection   String?  @map("art_direction")
+  source         CurationSource @default(MANUAL)
+  festivalEventId String?  @map("festival_event_id")
   createdAt      DateTime @default(now()) @map("created_at")
   updatedAt      DateTime @updatedAt @map("updated_at")
 
-  organization Organization? @relation(fields: [organizationId], references: [id])
-  items        CollectionItem[]
+  organization  Organization?  @relation(fields: [organizationId], references: [id])
+  festivalEvent FestivalEvent? @relation(fields: [festivalEventId], references: [id], onDelete: SetNull)
+  items         CollectionItem[]
 
+  @@unique([organizationId, festivalEventId])
   @@index([organizationId])
   @@index([isActive, sortOrder])
   @@map("collections")
+}
+
+model FestivalEvent {
+  id        String         @id @default(uuid())
+  name      String
+  slug      String         @unique
+  kind      CollectionKind @default(OCCASION)
+  startsAt  DateTime       @map("starts_at")
+  endsAt    DateTime       @map("ends_at")
+  leadDays  Int            @default(7) @map("lead_days")
+  regions   String[]       @default(["ALL"])
+  guidance  String?
+  isActive  Boolean        @default(true) @map("is_active")
+  createdAt DateTime       @default(now()) @map("created_at")
+  updatedAt DateTime       @updatedAt @map("updated_at")
+
+  collections Collection[]
+
+  @@index([isActive, startsAt])
+  @@map("festival_events")
 }
 
 model CollectionItem {
@@ -1026,6 +1071,8 @@ model Banner {
   title          String
   subtitle       String?
   imageUrl       String           @map("image_url")
+  imageUrls      Json?            @map("image_urls")
+  textInImage    Boolean          @default(false) @map("text_in_image")
   placement      BannerPlacement
   actionType     BannerActionType @default(NONE) @map("action_type")
   actionTarget   String?          @map("action_target")
@@ -1428,4 +1475,20 @@ model OtpCode {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("otp_codes")
+}
+
+// Committed customer searches (not keystrokes); feeds "Trending near you" on the search landing
+model SearchLog {
+  id          String   @id @default(uuid())
+  storeId     String   @map("store_id")
+  userId      String?  @map("user_id")
+  query       String
+  resultCount Int      @map("result_count")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  store Store @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  user  User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([storeId, createdAt])
+  @@map("search_logs")
 }

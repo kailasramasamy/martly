@@ -1,0 +1,135 @@
+import { Prisma, type PrismaClient } from "../../generated/prisma/client.js";
+import { normalizeQuery } from "./search.js";
+import { completeQuery, correctQuery } from "./spell.js";
+
+export type SuggestionKind = "query" | "category" | "brand";
+
+export interface Suggestion {
+  text: string;
+  kind: SuggestionKind;
+  imageUrl: string | null;
+}
+
+const MAX_SUGGESTIONS = 8;
+const POPULAR_LIMIT = 3;
+const CATEGORY_LIMIT = 4;
+const BRAND_LIMIT = 3;
+// Display name without the maker in brackets: "Surf Excel (HUL)" → "Surf Excel"
+const MAKER_SUFFIX = "\\s*\\([^)]*\\)";
+
+const escapeRx = (t: string) => t.replace(/[^a-z0-9]/g, (c) => `\\${c}`);
+const escapeLike = (t: string) => t.replace(/[%_\\]/g, "\\$&");
+
+// Every word of the term must start a word in `text` — "amul gh…" matches "Amul Pure Ghee"
+function allWords(text: Prisma.Sql, tokens: string[], wholeWord = false) {
+  return Prisma.join(tokens.map((t) => Prisma.sql`${text} ~* ${`\\m${escapeRx(t)}${wholeWord ? "\\M" : ""}`}`), " AND ");
+}
+
+const productText = Prisma.sql`(p.name || ' ' || COALESCE(b.name, ''))`;
+const stocked = (storeId: string) => Prisma.sql`EXISTS (
+  SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true AND sp.stock > 0
+)`;
+
+// Photo for a query row: prefer a product whose subcategory is about the term ("milk" → a milk pack, not milk bread)
+async function productImage(prisma: PrismaClient, storeId: string, tokens: string[]) {
+  const rows = await prisma.$queryRaw<{ imageUrl: string | null }[]>`
+    SELECT p.image_url AS "imageUrl" FROM products p
+    LEFT JOIN brands b ON b.id = p.brand_id
+    LEFT JOIN subcategories s ON s.id = p.subcategory_id
+    WHERE p.is_active AND p.image_url IS NOT NULL AND ${allWords(productText, tokens)} AND ${stocked(storeId)}
+    ORDER BY (s.name IS NOT NULL AND ${allWords(Prisma.sql`s.name`, tokens, true)}) DESC, length(p.name) LIMIT 1`;
+  return rows[0]?.imageUrl ?? null;
+}
+
+// What other customers at this store searched that starts with the term
+async function popularQueries(prisma: PrismaClient, storeId: string, term: string) {
+  return prisma.$queryRaw<{ text: string }[]>`
+    SELECT query AS text FROM search_logs
+    WHERE store_id = ${storeId} AND result_count > 0 AND created_at > now() - interval '30 days'
+      AND query LIKE ${`${escapeLike(term)}%`} AND query <> ${term}
+    GROUP BY query ORDER BY COUNT(*) DESC LIMIT ${POPULAR_LIMIT}`;
+}
+
+// Subcategories named like the term ("Liquid Detergent", "Detergent Bar"), with a stocked product's photo
+async function categoryMatches(prisma: PrismaClient, storeId: string, tokens: string[]) {
+  return prisma.$queryRaw<{ text: string; imageUrl: string | null }[]>`
+    SELECT s.name AS text, img.image_url AS "imageUrl"
+    FROM subcategories s
+    CROSS JOIN LATERAL (
+      SELECT p.image_url FROM products p
+      WHERE p.subcategory_id = s.id AND p.is_active AND p.image_url IS NOT NULL AND ${stocked(storeId)} LIMIT 1
+    ) img
+    WHERE ${allWords(Prisma.sql`s.name`, tokens)}
+    ORDER BY (lower(s.name) LIKE ${`${escapeLike(tokens[0])}%`}) DESC, length(s.name)
+    LIMIT ${CATEGORY_LIMIT}`;
+}
+
+interface BrandRow { brand: string; imageUrl: string | null; subcategories: string[] }
+
+// Brands with the most products matching every word, plus each brand's subcategories for those products
+async function brandRows(prisma: PrismaClient, storeId: string, tokens: string[]) {
+  return prisma.$queryRaw<BrandRow[]>`
+    SELECT regexp_replace(b.name, ${MAKER_SUFFIX}, '', 'g') AS brand,
+      (ARRAY_AGG(p.image_url ORDER BY length(p.name)) FILTER (WHERE p.image_url IS NOT NULL))[1] AS "imageUrl",
+      (ARRAY_AGG(DISTINCT s.name) FILTER (WHERE s.name IS NOT NULL))[1:3] AS subcategories
+    FROM products p
+    JOIN brands b ON b.id = p.brand_id
+    LEFT JOIN subcategories s ON s.id = p.subcategory_id
+    WHERE p.is_active AND ${allWords(productText, tokens, true)} AND ${stocked(storeId)}
+    GROUP BY b.name
+    ORDER BY COUNT(*) DESC
+    LIMIT ${BRAND_LIMIT}`;
+}
+
+// "Surf Excel detergent" for a product word; for a brand query, the brand's own ranges ("Surf Excel Liquid Detergent")
+function brandSuggestions(rows: BrandRow[], tokens: string[]): Suggestion[] {
+  return rows.flatMap((r) => {
+    const brandWords = r.brand.toLowerCase().split(/\s+/);
+    const rest = tokens.filter((t) => !brandWords.some((w) => w.startsWith(t)));
+    if (rest.length > 0) return [{ text: `${r.brand} ${rest.join(" ")}`, kind: "brand" as const, imageUrl: r.imageUrl }];
+    return [
+      { text: r.brand, kind: "brand" as const, imageUrl: r.imageUrl },
+      ...r.subcategories.map((s) => ({ text: `${r.brand} ${s}`, kind: "category" as const, imageUrl: r.imageUrl })),
+    ];
+  });
+}
+
+function dedupe(candidates: Suggestion[]) {
+  const seen = new Set<string>();
+  return candidates.filter((s) => {
+    const key = s.text.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, MAX_SUGGESTIONS);
+}
+
+/**
+ * Typeahead for one store: the (spell-corrected, completed) term, popular searches, matching subcategories
+ * and brand suggestions — only things the store has in stock, so no suggestion leads to an empty page.
+ */
+export async function suggestSearches(prisma: PrismaClient, storeId: string, rawQuery: string) {
+  const q = normalizeQuery(rawQuery);
+  const completed = await completeQuery(prisma, storeId, q);
+  const termImage = await productImage(prisma, storeId, completed.split(" "));
+  const correctedQuery = termImage ? undefined : await correctQuery(prisma, storeId, q);
+  const term = correctedQuery ?? completed;
+  const tokens = term.split(" ");
+  const [image, popular, categories, brands] = await Promise.all([
+    correctedQuery ? productImage(prisma, storeId, tokens) : Promise.resolve(termImage),
+    popularQueries(prisma, storeId, term),
+    categoryMatches(prisma, storeId, tokens),
+    brandRows(prisma, storeId, tokens),
+  ]);
+  const popularRows = await Promise.all(popular.map(async (p) => ({
+    text: p.text, kind: "query" as const, imageUrl: await productImage(prisma, storeId, p.text.split(" ")),
+  })));
+  const suggestions = dedupe([
+    // The term itself only earns a row when something in the store matches it
+    ...(image ? [{ text: term, kind: "query" as const, imageUrl: image }] : []),
+    ...popularRows,
+    ...categories.map((c) => ({ text: c.text, kind: "category" as const, imageUrl: c.imageUrl })),
+    ...brandSuggestions(brands, tokens),
+  ]);
+  return { suggestions, correctedQuery };
+}

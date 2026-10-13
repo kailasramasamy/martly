@@ -20,6 +20,7 @@ import { userRoutes } from "./routes/users/index.js";
 import { stockRoutes } from "./routes/stock/index.js";
 import { addressRoutes } from "./routes/addresses/index.js";
 import { collectionRoutes } from "./routes/collections/index.js";
+import { festivalEventRoutes } from "./routes/festival-events/index.js";
 import { homeRoutes } from "./routes/home/index.js";
 import { wishlistRoutes } from "./routes/wishlist/index.js";
 import { reviewRoutes } from "./routes/reviews/index.js";
@@ -48,10 +49,12 @@ import { riderLocationRoutes } from "./routes/rider-location/index.js";
 import { membershipRoutes } from "./routes/memberships/index.js";
 import { subscriptionRoutes } from "./routes/subscriptions/index.js";
 import { recipeRoutes } from "./routes/recipes/index.js";
+import { searchRoutes } from "./routes/search/index.js";
 import { websocketPlugin } from "./plugins/websocket.js";
 import notificationSchedulerPlugin from "./plugins/notification-scheduler.js";
 import reorderNudgeSchedulerPlugin from "./plugins/reorder-nudge-scheduler.js";
 import subscriptionSchedulerPlugin from "./plugins/subscription-scheduler.js";
+import seasonalCurationSchedulerPlugin from "./plugins/seasonal-curation-scheduler.js";
 
 export async function buildApp() {
   const app = Fastify({
@@ -79,6 +82,7 @@ export async function buildApp() {
   await app.register(notificationSchedulerPlugin);
   await app.register(reorderNudgeSchedulerPlugin);
   await app.register(subscriptionSchedulerPlugin);
+  await app.register(seasonalCurationSchedulerPlugin);
 
   // ── Error Handler ────────────────────────────────
   app.setErrorHandler((error, _request, reply) => {
@@ -123,6 +127,7 @@ export async function buildApp() {
       await api.register(stockRoutes, { prefix: "/stock" });
       await api.register(addressRoutes, { prefix: "/addresses" });
       await api.register(collectionRoutes, { prefix: "/collections" });
+      await api.register(festivalEventRoutes, { prefix: "/festival-events" });
       await api.register(homeRoutes, { prefix: "/home" });
       await api.register(wishlistRoutes, { prefix: "/wishlist" });
       await api.register(reviewRoutes, { prefix: "/reviews" });
@@ -151,6 +156,7 @@ export async function buildApp() {
       await api.register(membershipRoutes, { prefix: "/memberships" });
       await api.register(subscriptionRoutes, { prefix: "/subscriptions" });
       await api.register(recipeRoutes, { prefix: "/recipes" });
+      await api.register(searchRoutes, { prefix: "/search" });
     },
     { prefix: "/api/v1" },
   );

@@ -205,6 +205,42 @@ export const BannerPlacement = {
 } as const;
 export type BannerPlacement = (typeof BannerPlacement)[keyof typeof BannerPlacement];
 
+export const CollectionKind = {
+  STANDARD: "STANDARD",
+  OCCASION: "OCCASION",
+  SEASON: "SEASON",
+} as const;
+export type CollectionKind = (typeof CollectionKind)[keyof typeof CollectionKind];
+
+export const CollectionKindLabels: Record<CollectionKind, string> = {
+  STANDARD: "Standard",
+  OCCASION: "Occasion / Festival",
+  SEASON: "Season",
+};
+
+export const CurationSource = {
+  MANUAL: "MANUAL",
+  AGENT: "AGENT",
+} as const;
+export type CurationSource = (typeof CurationSource)[keyof typeof CurationSource];
+
+// Festival calendar regions: "ALL" is pan-India, the rest are state codes
+export const FESTIVAL_REGIONS = {
+  ALL: "All India",
+  TN: "Tamil Nadu",
+  KA: "Karnataka",
+  KL: "Kerala",
+  AP: "Andhra Pradesh",
+  TS: "Telangana",
+  MH: "Maharashtra",
+  GJ: "Gujarat",
+  WB: "West Bengal",
+  PB: "Punjab",
+  DL: "Delhi",
+  UP: "Uttar Pradesh",
+} as const;
+export type FestivalRegion = keyof typeof FESTIVAL_REGIONS;
+
 export const BannerPlacementLabels: Record<BannerPlacement, string> = {
   HERO_CAROUSEL: "Hero Carousel",
   CATEGORY_STRIP: "Category Strip",

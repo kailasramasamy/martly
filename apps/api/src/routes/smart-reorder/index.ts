@@ -4,8 +4,7 @@ import { authenticate } from "../../middleware/auth.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { calculateEffectivePrice } from "../../services/pricing.js";
 import { formatVariantUnit } from "../../services/units.js";
-
-type PredictionStatus = "overdue" | "due_soon" | "not_yet";
+import { predictReorders } from "../../services/reorder.js";
 
 export async function smartReorderRoutes(app: FastifyInstance) {
   app.get<{ Querystring: { storeId?: string } }>(
@@ -26,26 +25,8 @@ export async function smartReorderRoutes(app: FastifyInstance) {
       });
       if (!store) return reply.notFound("Store not found");
 
-      // 1. Query all order items for this user+store from delivered/confirmed orders
-      const orderItems = await app.prisma.orderItem.findMany({
-        where: {
-          order: {
-            userId: user.sub,
-            storeId,
-            status: { in: ["DELIVERED", "CONFIRMED"] },
-          },
-        },
-        select: {
-          productId: true,
-          variantId: true,
-          storeProductId: true,
-          quantity: true,
-          order: { select: { createdAt: true } },
-        },
-        orderBy: { order: { createdAt: "asc" } },
-      });
-
-      if (orderItems.length === 0) {
+      const predictions = await predictReorders(app.prisma, user.sub, storeId);
+      if (predictions.length === 0) {
         return {
           success: true,
           data: {
@@ -54,102 +35,6 @@ export async function smartReorderRoutes(app: FastifyInstance) {
           },
         } satisfies ApiResponse<any>;
       }
-
-      // 2. Group by productId:variantId — compute prediction metrics
-      const groupMap = new Map<
-        string,
-        {
-          productId: string;
-          variantId: string;
-          storeProductId: string;
-          orderCount: number;
-          totalQty: number;
-          firstOrdered: Date;
-          lastOrdered: Date;
-        }
-      >();
-
-      for (const item of orderItems) {
-        const key = `${item.productId}:${item.variantId}`;
-        const existing = groupMap.get(key);
-        const orderDate = item.order.createdAt;
-
-        if (existing) {
-          existing.orderCount += 1;
-          existing.totalQty += item.quantity;
-          if (orderDate < existing.firstOrdered) existing.firstOrdered = orderDate;
-          if (orderDate > existing.lastOrdered) existing.lastOrdered = orderDate;
-        } else {
-          groupMap.set(key, {
-            productId: item.productId,
-            variantId: item.variantId,
-            storeProductId: item.storeProductId,
-            orderCount: 1,
-            totalQty: item.quantity,
-            firstOrdered: orderDate,
-            lastOrdered: orderDate,
-          });
-        }
-      }
-
-      const now = new Date();
-      const predictions: Array<{
-        storeProductId: string;
-        productId: string;
-        variantId: string;
-        orderCount: number;
-        avgQuantity: number;
-        avgIntervalDays: number | null;
-        daysSinceLast: number;
-        predictedNeed: number;
-        status: PredictionStatus;
-        suggestedQuantity: number;
-      }> = [];
-
-      for (const g of groupMap.values()) {
-        const avgQuantity = Math.round(g.totalQty / g.orderCount);
-        const daysSinceLast = Math.round(
-          (now.getTime() - g.lastOrdered.getTime()) / (1000 * 60 * 60 * 24),
-        );
-
-        let avgIntervalDays: number | null = null;
-        let predictedNeed: number;
-
-        if (g.orderCount >= 2) {
-          const spanDays =
-            (g.lastOrdered.getTime() - g.firstOrdered.getTime()) / (1000 * 60 * 60 * 24);
-          avgIntervalDays = Math.round(spanDays / (g.orderCount - 1));
-          predictedNeed = avgIntervalDays > 0 ? daysSinceLast / avgIntervalDays : 0.3;
-        } else {
-          // Single-purchase products get low priority
-          predictedNeed = 0.3;
-        }
-
-        let status: PredictionStatus;
-        if (predictedNeed >= 1.0) {
-          status = "overdue";
-        } else if (predictedNeed >= 0.7) {
-          status = "due_soon";
-        } else {
-          status = "not_yet";
-        }
-
-        predictions.push({
-          storeProductId: g.storeProductId,
-          productId: g.productId,
-          variantId: g.variantId,
-          orderCount: g.orderCount,
-          avgQuantity,
-          avgIntervalDays,
-          daysSinceLast,
-          predictedNeed,
-          status,
-          suggestedQuantity: avgQuantity,
-        });
-      }
-
-      // Sort by predictedNeed descending
-      predictions.sort((a, b) => b.predictedNeed - a.predictedNeed);
 
       // 3. Fetch current StoreProduct data for all predicted items
       const spIds = predictions.map((p) => p.storeProductId);

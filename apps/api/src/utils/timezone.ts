@@ -59,3 +59,8 @@ export function currentISTTime(): string {
   const { hours, minutes } = getISTComponents();
   return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}`;
 }
+
+/** Current hour (0-23) in IST. */
+export function currentISTHour(): number {
+  return getISTComponents().hours;
+}

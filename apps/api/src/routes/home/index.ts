@@ -2,34 +2,10 @@ import type { FastifyInstance } from "fastify";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticateOptional } from "../../middleware/auth.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
-import { calculateEffectivePrice } from "../../services/pricing.js";
-import { formatVariantUnit } from "../../services/units.js";
-
-type TimePeriod = "morning" | "afternoon" | "evening" | "night";
-
-const TIME_CATEGORY_MAP: Record<TimePeriod, string[]> = {
-  morning: ["Fresh Curd (Dahi)", "Full Cream Milk", "Brown & Whole Wheat Bread", "Sandwich Bread", "Brown Eggs", "White Eggs", "Salted Butter", "Instant Coffee", "Tea Bags"],
-  afternoon: ["Potato Chips", "Instant Noodles", "Cream Biscuits", "Fruit Juice (100%)", "Flavoured Milk", "Cup Noodles", "Kurkure & Extruded Snacks"],
-  evening: ["Tomato", "Onion & Garlic", "Potato", "Ground Spices", "Sunflower Oil", "Chicken Curry Cut", "Basmati Rice", "Wheat Atta"],
-  night: ["Frozen Pizza & Burger Patty", "Ice Cream Tubs", "Chocolate Bars & Countlines", "Frozen Samosa & Spring Roll", "Bhujia & Sev", "Mixture & Chivda"],
-};
-
-function getTimePeriod(hour: number): TimePeriod {
-  if (hour >= 6 && hour < 12) return "morning";
-  if (hour >= 12 && hour < 17) return "afternoon";
-  if (hour >= 17 && hour < 21) return "evening";
-  return "night";
-}
-
-function enrichStoreProduct(sp: any) {
-  const pricing = calculateEffectivePrice(
-    sp.price as unknown as number,
-    sp.variant as Parameters<typeof calculateEffectivePrice>[1],
-    sp as unknown as Parameters<typeof calculateEffectivePrice>[2],
-  );
-  const variant = formatVariantUnit(sp.variant);
-  return { ...sp, variant, pricing, availableStock: sp.stock - sp.reservedStock };
-}
+import { getTimePeriod, TIME_CATEGORY_MAP, type TimePeriod } from "../../services/time-picks.js";
+import {
+  buildProductData, enrichStoreProduct, liveWindow, reviewSummaries, STORE_PRODUCT_INCLUDE, withAllSizes, withReviews,
+} from "../../services/store-feed.js";
 
 export async function homeRoutes(app: FastifyInstance) {
   app.get<{ Params: { storeId: string } }>(
@@ -46,14 +22,8 @@ export async function homeRoutes(app: FastifyInstance) {
       if (!store) return reply.notFound("Store not found");
 
       const user = getOrgUser(request);
-      const hour = new Date().getHours();
-      const timePeriod = getTimePeriod(hour);
+      const timePeriod = getTimePeriod();
       const timeCategoryNames = TIME_CATEGORY_MAP[timePeriod];
-
-      const storeProductInclude = {
-        product: { include: { subcategory: true, brand: true, variants: true } },
-        variant: true,
-      };
 
       const now = new Date();
 
@@ -67,6 +37,7 @@ export async function homeRoutes(app: FastifyInstance) {
               { organizationId: store.organizationId },
               { organizationId: null },
             ],
+            AND: liveWindow(now),
           },
           orderBy: { sortOrder: "asc" },
           include: {
@@ -136,7 +107,7 @@ export async function homeRoutes(app: FastifyInstance) {
               ],
             },
             take: 10,
-            include: storeProductInclude,
+            include: STORE_PRODUCT_INCLUDE,
           });
         })(),
 
@@ -155,7 +126,7 @@ export async function homeRoutes(app: FastifyInstance) {
               take: 10,
               include: {
                 storeProduct: {
-                  include: storeProductInclude,
+                  include: STORE_PRODUCT_INCLUDE,
                 },
               },
             })
@@ -218,30 +189,6 @@ export async function homeRoutes(app: FastifyInstance) {
         }),
       ]);
 
-      // Helper to build product data object
-      function buildProductData(p: any) {
-        return {
-          id: p.id, name: p.name, description: p.description, imageUrl: p.imageUrl,
-          brand: p.brand, foodType: p.foodType, productType: p.productType,
-          regulatoryMarks: p.regulatoryMarks, certifications: p.certifications,
-          dangerWarnings: p.dangerWarnings, subcategory: p.subcategory, variants: p.variants,
-          translations: p.translations,
-        };
-      }
-
-      // The app groups rows by product and offers a size picker, so every section sends all active sizes
-      async function withAllSizes(rows: any[]) {
-        const productIds = [...new Set(rows.map((r) => r.productId as string))];
-        if (productIds.length === 0) return [];
-        const all = await app.prisma.storeProduct.findMany({
-          where: { storeId, isActive: true, productId: { in: productIds } },
-          include: storeProductInclude,
-        });
-        const byProduct = new Map<string, any[]>();
-        for (const sp of all) byProduct.set(sp.productId, [...(byProduct.get(sp.productId) ?? []), sp]);
-        return productIds.flatMap((id) => (byProduct.get(id) ?? []).map(enrichStoreProduct));
-      }
-
       // Transform collections: flatten to products with store data, filter empty
       const transformedCollections = collections
         .map((col) => {
@@ -251,7 +198,7 @@ export async function homeRoutes(app: FastifyInstance) {
 
           return {
             id: col.id, title: col.title, subtitle: col.subtitle,
-            slug: col.slug, imageUrl: col.imageUrl, products,
+            slug: col.slug, imageUrl: col.imageUrl, kind: col.kind, translations: col.translations, products,
           };
         })
         .filter((col) => col.products.length > 0);
@@ -269,7 +216,7 @@ export async function homeRoutes(app: FastifyInstance) {
           ),
         }));
 
-      const deals = await withAllSizes(dealsRaw);
+      const deals = await withAllSizes(app.prisma, storeId, dealsRaw);
 
       // Buy again: previously ordered rows, topped up with related products below
       const buyAgainRows: any[] = buyAgainRaw
@@ -297,7 +244,7 @@ export async function homeRoutes(app: FastifyInstance) {
             },
             take: BUY_AGAIN_MIN - buyAgainRows.length,
             orderBy: { stock: "desc" },
-            include: storeProductInclude,
+            include: STORE_PRODUCT_INCLUDE,
           });
         }
 
@@ -320,7 +267,7 @@ export async function homeRoutes(app: FastifyInstance) {
             },
             take: stillNeeded,
             orderBy: [{ isFeatured: "desc" }, { stock: "desc" }],
-            include: storeProductInclude,
+            include: STORE_PRODUCT_INCLUDE,
           });
           supplementRaw = [...supplementRaw, ...popularRaw];
         }
@@ -328,7 +275,7 @@ export async function homeRoutes(app: FastifyInstance) {
 
       }
 
-      const buyAgain = await withAllSizes(buyAgainRows);
+      const buyAgain = await withAllSizes(app.prisma, storeId, buyAgainRows);
 
       // Batch-fetch review aggregates for all products in the feed
       const allProductIds = [
@@ -337,22 +284,8 @@ export async function homeRoutes(app: FastifyInstance) {
         ...deals.map((d: any) => d.productId as string),
         ...buyAgain.map((b: any) => b.productId as string),
       ];
-      const uniqueProductIds = [...new Set(allProductIds)];
-      const reviewAggs = uniqueProductIds.length > 0
-        ? await app.prisma.review.groupBy({
-            by: ["productId"],
-            where: { productId: { in: uniqueProductIds }, status: "APPROVED" },
-            _avg: { rating: true },
-            _count: { rating: true },
-          })
-        : [];
-      const reviewMap = new Map(reviewAggs.map((r) => [r.productId, { averageRating: Math.round((r._avg.rating ?? 0) * 10) / 10, reviewCount: r._count.rating }]));
-
-      // Merge review data into products
-      const addReviews = (items: any[]) => items.map((item) => {
-        const rev = reviewMap.get(item.productId);
-        return rev ? { ...item, product: { ...item.product, averageRating: rev.averageRating, reviewCount: rev.reviewCount } } : item;
-      });
+      const reviewMap = await reviewSummaries(app.prisma, allProductIds);
+      const addReviews = (items: any[]) => withReviews(items, reviewMap);
 
       for (const col of transformedCollections) col.products = addReviews(col.products) as any;
       for (const tc of transformedTimeCategories) tc.products = addReviews(tc.products) as any;

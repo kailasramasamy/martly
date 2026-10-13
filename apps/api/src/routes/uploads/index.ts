@@ -1,27 +1,11 @@
 import type { FastifyInstance } from "fastify";
 import multipart from "@fastify/multipart";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { randomUUID } from "crypto";
 import path from "path";
 import type { ApiResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
-
-const s3 = new S3Client({
-  region: process.env.AWS_REGION ?? "ap-south-1",
-  credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
-  },
-});
-
-const BUCKET = process.env.S3_BUCKET ?? "martly-media";
-// Empty prefix means objects live at the bucket root; strip stray slashes so
-// the key never starts with "/" (which S3 treats as an unnamed folder).
-const KEY_PREFIX = (process.env.S3_KEY_PREFIX ?? "").replace(/^\/+|\/+$/g, "");
-const BASE_URL =
-  process.env.MEDIA_PUBLIC_BASE_URL ??
-  `https://${BUCKET}.s3.${process.env.AWS_REGION ?? "ap-south-1"}.amazonaws.com${KEY_PREFIX ? `/${KEY_PREFIX}` : ""}`;
+import { putObject } from "../../services/media.js";
 
 export async function uploadRoutes(app: FastifyInstance) {
   await app.register(multipart, { limits: { fileSize: 5 * 1024 * 1024 } });
@@ -34,23 +18,11 @@ export async function uploadRoutes(app: FastifyInstance) {
 
       const buffer = await file.toBuffer();
       const ext = path.extname(file.filename) || ".jpg";
-      const filename = `${randomUUID()}${ext}`;
-      const key = KEY_PREFIX ? `${KEY_PREFIX}/${filename}` : filename;
-
-      await s3.send(
-        new PutObjectCommand({
-          Bucket: BUCKET,
-          Key: key,
-          Body: buffer,
-          ContentType: file.mimetype,
-        }),
-      );
-
-      const url = `${BASE_URL}/${filename}`;
+      const uploaded = await putObject(`${randomUUID()}${ext}`, buffer, file.mimetype);
 
       const response: ApiResponse<{ url: string; key: string }> = {
         success: true,
-        data: { url, key },
+        data: uploaded,
       };
       return response;
     },

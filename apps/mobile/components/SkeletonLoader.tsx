@@ -3,6 +3,9 @@ import { View, Animated, StyleSheet } from "react-native";
 import { colors, spacing } from "../constants/theme";
 import { GRID_CARD_WIDTH, GRID_GAP, GRID_H_PADDING, imageTileSize } from "./FeaturedProductCard";
 import { FEATURED_CARD_WIDTH } from "./FeaturedProductCard";
+import { COMPACT_CARD_WIDTH, COMPACT_GAP } from "./CompactProductCard";
+
+const COMPACT_TILE = COMPACT_CARD_WIDTH - 14;
 
 interface SkeletonBoxProps {
   width: number | string;
@@ -88,6 +91,35 @@ export function ProductGridCardSkeleton() {
           <SkeletonBox width={50} height={24} borderRadius={6} />
         </View>
       </View>
+    </View>
+  );
+}
+
+// Mirrors CompactProductCard: photo tile, ADD straddling its bottom edge, then size, price, name
+function CompactProductCardSkeleton() {
+  return (
+    <View style={sk.compactCard}>
+      <SkeletonBox width={COMPACT_TILE} height={COMPACT_TILE} borderRadius={10} style={sk.compactTile} />
+      <SkeletonBox width={56} height={30} borderRadius={8} style={sk.compactAdd} />
+      <View style={sk.compactContent}>
+        <SkeletonBox width="40%" height={10} />
+        <SkeletonBox width="50%" height={14} style={{ marginTop: 10 }} />
+        <SkeletonBox width="90%" height={11} style={{ marginTop: 8 }} />
+        <SkeletonBox width="70%" height={11} style={{ marginTop: 4 }} />
+      </View>
+    </View>
+  );
+}
+
+export function ProductGridSkeleton({ columns, rows = 3 }: { columns: 2 | 3; rows?: number }) {
+  const Card = columns === 3 ? CompactProductCardSkeleton : ProductGridCardSkeleton;
+  return (
+    <View>
+      {Array.from({ length: rows }, (_, r) => (
+        <View key={r} style={[sk.skeletonRow, { gap: columns === 3 ? COMPACT_GAP : GRID_GAP }]}>
+          {Array.from({ length: columns }, (_, c) => <Card key={c} />)}
+        </View>
+      ))}
     </View>
   );
 }
@@ -229,6 +261,14 @@ const sk = StyleSheet.create({
     marginBottom: 12,
   },
   gridRow: { flexDirection: "row", justifyContent: "space-between" },
+  skeletonRow: { flexDirection: "row" },
+  compactCard: {
+    width: COMPACT_CARD_WIDTH, marginBottom: COMPACT_GAP + 4, backgroundColor: "#fff",
+    borderRadius: 12, borderWidth: 1, borderColor: "#eef2f6", overflow: "hidden",
+  },
+  compactTile: { margin: 6 },
+  compactAdd: { position: "absolute", right: 6, top: 6 + COMPACT_TILE - 15 },
+  compactContent: { paddingHorizontal: 8, paddingTop: 17, paddingBottom: 8 },
   gridCard: {
     width: GRID_CARD_WIDTH,
     backgroundColor: "#fff",

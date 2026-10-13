@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, Keyboard, StyleSheet } from "react-native";
+import { Animated, View, Text, TextInput, TouchableOpacity, Keyboard, StyleSheet } from "react-native";
 import { useLocalSearchParams, useNavigation, router } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { api } from "../lib/api";
@@ -10,15 +10,24 @@ import { useVoiceInput } from "../lib/use-voice-input";
 import { colors, spacing, fontSize } from "../constants/theme";
 import { GRID_H_PADDING } from "../components/FeaturedProductCard";
 import { ProductList } from "../components/ProductList";
-import { ShopByBrands } from "../components/ShopByBrands";
 import { ProductActionsProvider } from "../lib/product-actions";
 import { FloatingCart } from "../components/FloatingCart";
-import { ProductCardSkeleton } from "../components/SkeletonLoader";
-import { SearchTabs } from "../components/search/SearchTabs";
+import { ProductGridSkeleton } from "../components/SkeletonLoader";
+import { SearchTabs, tabLabel } from "../components/search/SearchTabs";
+import { SearchLoadingOverlay } from "../components/search/SearchTabStatus";
+import { CollapsingHeader, useCollapsingHeader } from "../components/search/CollapsingHeader";
 import { SearchControlBar } from "../components/search/SearchControlBar";
 import { SearchEmptyState } from "../components/search/SearchEmptyState";
 import { SearchSheets, type SheetName } from "../components/search/SearchSheets";
-import type { DepartmentNode, SearchFacets, SearchMeta } from "../lib/types";
+import { SearchLanding } from "../components/search/landing/SearchLanding";
+import { SearchMetaBanner } from "../components/search/SearchMetaBanner";
+import { BrandFilterRow } from "../components/search/BrandFilterRow";
+import { SuggestionPanel, suggestionRows } from "../components/search/SuggestionPanel";
+import { useSearchSuggestions } from "../lib/use-search-suggestions";
+import { useRecentSearches } from "../lib/recent-searches";
+import { useSearchLanding } from "../lib/use-search-landing";
+import { useSearchCommit } from "../lib/use-search-commit";
+import type { DepartmentNode, SearchFacets } from "../lib/types";
 
 interface TreeNode {
   id: string;
@@ -71,37 +80,30 @@ function useScreenTitle(categoryId: string | undefined, hasDiscount: string | un
   }, [categoryId, tree, navigation, hasDiscount, sortBy]); // eslint-disable-line react-hooks/exhaustive-deps
 }
 
-function SearchMetaBanner({ meta }: { meta: SearchMeta }) {
-  return (
-    <View style={styles.searchMetaBanner}>
-      <Ionicons name="sparkles-outline" size={14} color={colors.primary} />
-      <Text style={styles.searchMetaText}>
-        Showing results for{" "}
-        <Text style={styles.searchMetaBold}>
-          {meta.correctedQuery ?? meta.expandedTerms?.join(", ") ?? "similar products"}
-        </Text>
-      </Text>
-    </View>
-  );
-}
+// Animated wrapper so the header can follow scroll on the native thread
+const AnimatedProductList = Animated.createAnimatedComponent(ProductList);
 
-function SearchFacetControls({ facets, filters, search, onOpenSheet }: {
+function SearchFacetControls({ facets, filters, search, onOpenSheet, hidden }: {
   facets: SearchFacets;
+  hidden: boolean;
   filters: SearchFilters;
   search: ReturnType<typeof useProductSearch>;
   onOpenSheet: (sheet: SheetName) => void;
 }) {
   return (
     <>
-      <SearchTabs facets={facets} active={filters.tab} onSelect={search.selectTab} />
+      <SearchTabs facets={facets} active={filters.tab} onSelect={search.selectTab} hidden={hidden} />
       <SearchControlBar
         filterCount={filters.brandIds.length + (filters.foodType ? 1 : 0)}
+        brandCount={filters.brandIds.length}
+        hasBrands={facets.brands.length > 1 || filters.brandIds.length > 0}
         sortBy={filters.sortBy}
         size={filters.size}
         offers={filters.offers}
         offerCount={facets.offerCount}
         hasSizes={facets.sizes.length > 0 || filters.size != null}
         onOpenFilters={() => onOpenSheet("filters")}
+        onOpenBrand={() => onOpenSheet("brand")}
         onOpenSort={() => onOpenSheet("sort")}
         onOpenQuantity={() => onOpenSheet("quantity")}
         onToggleOffers={() => search.patchFilters({ offers: !filters.offers })}
@@ -110,9 +112,12 @@ function SearchFacetControls({ facets, filters, search, onOpenSheet }: {
   );
 }
 
-function SearchInput({ value, onChangeText, autoVoice }: { value: string; onChangeText: (text: string) => void; autoVoice: boolean }) {
+function SearchInput({ value, onChangeText, onSubmit, autoVoice }: {
+  value: string; onChangeText: (text: string) => void; onSubmit: () => void; autoVoice: boolean;
+}) {
   const ref = useRef<TextInput>(null);
   const [partial, setPartial] = useState("");
+  const [focused, setFocused] = useState(false);
   const voice = useVoiceInput(setPartial, (text) => {
     setPartial("");
     onChangeText(text);
@@ -148,7 +153,20 @@ function SearchInput({ value, onChangeText, autoVoice }: { value: string; onChan
           autoCapitalize="none"
           autoCorrect={false}
           returnKeyType="search"
+          onSubmitEditing={onSubmit}
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
         />
+        {focused && !voice.listening && value.length > 0 && (
+          <TouchableOpacity
+            style={styles.clearButton}
+            onPress={() => onChangeText("")}
+            accessibilityRole="button"
+            accessibilityLabel="Clear search"
+          >
+            <Ionicons name="close-circle" size={18} color={colors.textSecondary} />
+          </TouchableOpacity>
+        )}
         {voice.available && (
           <TouchableOpacity
             style={[styles.micButton, voice.listening && styles.micButtonActive]}
@@ -164,56 +182,162 @@ function SearchInput({ value, onChangeText, autoVoice }: { value: string; onChan
   );
 }
 
+function ResultsHeader({ header, search, selectTab, onOpenSheet, showMeta }: {
+  header: ReturnType<typeof useCollapsingHeader>;
+  search: ReturnType<typeof useProductSearch>;
+  selectTab: ReturnType<typeof useProductSearch>["selectTab"];
+  onOpenSheet: (sheet: SheetName) => void;
+  showMeta: boolean;
+}) {
+  const { facets, filters, textMode, searchMeta } = search;
+  const showFacets = textMode && !!facets;
+  return (
+    <CollapsingHeader
+      header={header}
+      full={(hidden) => (
+        <>
+          {showFacets && facets && <SearchFacetControls facets={facets} filters={filters} search={{ ...search, selectTab }} onOpenSheet={onOpenSheet} hidden={hidden} />}
+          {showFacets && facets && (
+            <BrandFilterRow brands={facets.brands} selectedIds={filters.brandIds} onChange={(brandIds) => search.patchFilters({ brandIds })} />
+          )}
+          {showMeta && searchMeta && (
+            <SearchMetaBanner meta={searchMeta} typed={search.activeQuery} onSearchInstead={() => search.runQuery(search.activeQuery, { exact: true })} />
+          )}
+        </>
+      )}
+      compact={(hidden) => (showFacets && facets ? <SearchTabs facets={facets} active={filters.tab} onSelect={selectTab} compact hidden={hidden} /> : null)}
+    />
+  );
+}
+
+function SearchResults({ search, categoryId, commit, onOpenSheet }: {
+  search: ReturnType<typeof useProductSearch>;
+  categoryId?: string;
+  commit: () => void;
+  onOpenSheet: (sheet: SheetName) => void;
+}) {
+  const { filters, facets, textMode, results, loading } = search;
+  const header = useCollapsingHeader();
+  const selectTab: typeof search.selectTab = (tab) => {
+    commit();
+    search.selectTab(tab);
+  };
+
+
+  const showMeta = search.searchMeta && search.searchMeta.strategy !== "keyword" && results.length > 0;
+  const activeTab = textMode && facets && filters.tab ? tabLabel(facets, filters.tab) : null;
+  const showFacets = textMode && !!facets;
+  const headerHeight = showFacets || showMeta ? header.fullHeight : 0;
+
+  return (
+    <View style={styles.results}>
+      <AnimatedProductList
+        products={results}
+        layout="grid"
+        numColumns={textMode ? 3 : 2}
+        key={textMode ? "compact" : "regular"}
+        keyboardDismissMode="on-drag"
+        contentContainerStyle={[styles.grid, { paddingTop: headerHeight + spacing.xs }]}
+        scrollIndicatorInsets={{ top: headerHeight }}
+        onEndReached={textMode ? undefined : search.loadMore}
+        onEndReachedThreshold={0.3}
+        onScrollBeginDrag={() => {
+          Keyboard.dismiss();
+          commit();
+        }}
+        onScroll={header.onScroll}
+        scrollEventThrottle={16}
+        keyboardShouldPersistTaps="handled"
+        ListEmptyComponent={
+          loading ? (
+            <ProductGridSkeleton columns={textMode ? 3 : 2} rows={textMode ? 4 : 3} />
+          ) : (
+            <SearchEmptyState filtered={textMode && hasActiveFilters(filters)} hasQuery={!!search.query || !!categoryId} onClearFilters={search.clearFilters} />
+          )
+        }
+        ListFooterComponent={loading && results.length > 0 && !textMode ? <ProductGridSkeleton columns={2} rows={1} /> : null}
+      />
+      {textMode && loading && results.length > 0 && <SearchLoadingOverlay label={activeTab} top={headerHeight} />}
+      {(showFacets || showMeta) && (
+        <ResultsHeader header={header} search={search} selectTab={selectTab} onOpenSheet={onOpenSheet} showMeta={!!showMeta} />
+      )}
+    </View>
+  );
+}
+
+// Typeahead overlay: opens while typing, closes on pick, submit, scroll or when the keyboard goes away
+function useSuggestionPanel(storeId: string | undefined, search: ReturnType<typeof useProductSearch>, recent: string[]) {
+  const [open, setOpen] = useState(false);
+  const { suggestions } = useSearchSuggestions(storeId, open ? search.query : "");
+  useEffect(() => {
+    const sub = Keyboard.addListener("keyboardDidHide", () => setOpen(false));
+    return () => sub.remove();
+  }, []);
+  const rows = open ? suggestionRows(search.query, suggestions, recent) : [];
+  return {
+    visible: rows.length > 0,
+    suggestions,
+    close: () => setOpen(false),
+    onChangeText: (text: string) => {
+      search.changeQuery(text);
+      setOpen(text.trim().length > 0);
+    },
+    select: (text: string) => {
+      setOpen(false);
+      Keyboard.dismiss();
+      search.runQuery(text);
+    },
+    // ↖ puts the suggestion in the box to keep refining, like Instamart
+    fill: (text: string) => search.changeQuery(`${text} `),
+  };
+}
+
 export default function SearchScreen() {
   const { categoryId, hasDiscount, sortBy, q, voice } = useLocalSearchParams<{
     categoryId?: string; hasDiscount?: string; sortBy?: string; q?: string; voice?: string;
   }>();
   const { selectedStore } = useStore();
   const search = useProductSearch(selectedStore?.id, { categoryId, hasDiscount, sortBy }, q ?? "");
-  const { filters, facets, textMode, results, loading } = search;
+  const { filters, facets, results, loading } = search;
   const [sheet, setSheet] = useState<SheetName | null>(null);
   useScreenTitle(categoryId, hasDiscount, sortBy);
+  const isDeepLink = !!(categoryId || hasDiscount || sortBy);
+  const showLanding = !isDeepLink && !search.query.trim();
+  const landing = useSearchLanding(selectedStore?.id, !isDeepLink);
+  const recents = useRecentSearches();
+  const commit = useSearchCommit(selectedStore?.id, search.activeQuery, results.length, loading, recents.add);
 
-  const brandStrip = textMode && facets ? (
-    <ShopByBrands
-      brands={facets.brands.slice(0, 10)}
-      selectedId={filters.brandIds.length === 1 ? filters.brandIds[0] : null}
-      onSelect={(id) => search.patchFilters({ brandIds: id ? [id] : [] })}
-      onVisit={(b) => router.push(`/brand/${b.id}`)}
-    />
-  ) : null;
-
-  const showMeta = search.searchMeta && search.searchMeta.strategy !== "keyword" && results.length > 0;
-
+  const panel = useSuggestionPanel(selectedStore?.id, search, recents.recent);
+  const runChip = (query: string) => {
+    Keyboard.dismiss();
+    search.runQuery(query);
+  };
+  const submit = () => {
+    panel.close();
+    commit();
+  };
   return (
     <ProductActionsProvider store={selectedStore ?? null}>
       <View style={styles.container}>
-        <SearchInput value={search.query} onChangeText={search.changeQuery} autoVoice={voice === "1"} />
-        {textMode && facets && (
-          <SearchFacetControls facets={facets} filters={filters} search={search} onOpenSheet={setSheet} />
-        )}
-        {showMeta && search.searchMeta && <SearchMetaBanner meta={search.searchMeta} />}
-        <ProductList
-          products={results}
-          layout="grid"
-          numColumns={textMode ? 3 : 2}
-          key={textMode ? "compact" : "regular"}
-          midSlot={{ afterRows: 2, element: brandStrip }}
-          keyboardDismissMode="on-drag"
-          contentContainerStyle={styles.grid}
-          onEndReached={textMode ? undefined : search.loadMore}
-          onEndReachedThreshold={0.3}
-          onScrollBeginDrag={() => Keyboard.dismiss()}
-          keyboardShouldPersistTaps="handled"
-          ListEmptyComponent={
-            loading ? (
-              <View>{[1, 2, 3].map((i) => <ProductCardSkeleton key={i} />)}</View>
-            ) : (
-              <SearchEmptyState filtered={textMode && hasActiveFilters(filters)} hasQuery={!!search.query || !!categoryId} onClearFilters={search.clearFilters} />
-            )
-          }
-          ListFooterComponent={loading && results.length > 0 && !textMode ? <ProductCardSkeleton /> : null}
-        />
+        <SearchInput value={search.query} onChangeText={panel.onChangeText} onSubmit={submit} autoVoice={voice === "1"} />
+        <View style={styles.body}>
+          {showLanding ? (
+            <SearchLanding
+              data={landing.data}
+              loading={landing.loading}
+              recent={recents.recent}
+              onSearch={runChip}
+              onRemoveRecent={recents.remove}
+              onClearRecent={recents.clear}
+              onCategory={(id) => router.push({ pathname: "/search", params: { categoryId: id } })}
+            />
+          ) : (
+            <SearchResults search={search} categoryId={categoryId} commit={commit} onOpenSheet={setSheet} />
+          )}
+          {panel.visible && (
+            <SuggestionPanel query={search.query} suggestions={panel.suggestions} recent={recents.recent} onSelect={panel.select} onFill={panel.fill} />
+          )}
+        </View>
         <SearchSheets sheet={sheet} onClose={() => setSheet(null)} facets={facets} filters={filters} onChange={search.patchFilters} />
         <FloatingCart />
       </View>
@@ -241,22 +365,10 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     color: colors.text,
   },
+  clearButton: { width: 44, height: 44, alignItems: "center", justifyContent: "center" },
   micButton: { width: 44, height: 44, alignItems: "center", justifyContent: "center", borderRadius: 22 },
   micButtonActive: { backgroundColor: colors.error, transform: [{ scale: 0.8 }] },
-  grid: { paddingHorizontal: GRID_H_PADDING, paddingTop: spacing.xs, paddingBottom: spacing.xl },
-  searchMetaBanner: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    marginHorizontal: spacing.md,
-    marginBottom: spacing.xs,
-    paddingHorizontal: spacing.sm,
-    paddingVertical: 6,
-    backgroundColor: "#f0fdfa",
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: "#ccfbf1",
-  },
-  searchMetaText: { fontSize: fontSize.sm, color: colors.textSecondary, flex: 1 },
-  searchMetaBold: { fontWeight: "600", color: colors.text },
+  body: { flex: 1 },
+  results: { flex: 1, overflow: "hidden" },
+  grid: { paddingHorizontal: GRID_H_PADDING, paddingBottom: spacing.xl },
 });

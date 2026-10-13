@@ -1,5 +1,6 @@
 import { Prisma, type PrismaClient } from "../../generated/prisma/index.js";
 import Anthropic from "@anthropic-ai/sdk";
+import { correctQuery } from "./spell.js";
 
 export type SearchStrategy = "keyword" | "fuzzy" | "fulltext" | "semantic";
 
@@ -23,14 +24,16 @@ const inStore = (storeId: string) => Prisma.sql`EXISTS (
   SELECT 1 FROM store_products sp WHERE sp.product_id = p.id AND sp.store_id = ${storeId} AND sp.is_active = true
 )`;
 
-function normalizeQuery(q: string): string {
+export function normalizeQuery(q: string): string {
   return q.toLowerCase().trim().replace(/\s+/g, " ");
 }
 
 /**
  * Multi-strategy product search over the products a store stocks:
  * 1. Keyword match (contains) — if ≥3 results, return
- * 2. Trigram fuzzy match (pg_trgm) — catches typos
+ *    `exact` stops here: the customer chose "Search instead for <what I typed>"
+ * 2. Spell-corrected keyword match ("deterget" → "detergent") — reported as correctedQuery
+ *    then trigram fuzzy match (pg_trgm) over whole names
  * 3. Full-text search (tsvector) — stemming, ranking
  * 4. Semantic expansion via Claude Haiku — only if steps 1-3 return <3 results
  */
@@ -38,26 +41,29 @@ export async function searchProducts(
   prisma: PrismaClient,
   storeId: string,
   query: string,
-  minResults = 3,
+  { minResults = 3, exact = false }: { minResults?: number; exact?: boolean } = {},
 ): Promise<SearchResult> {
   const q = normalizeQuery(query);
   if (!q) return { productIds: [], meta: { strategy: "keyword" } };
 
   // Step 1: Keyword match
   const keywordIds = await keywordSearch(prisma, q, storeId);
-  if (keywordIds.length >= minResults) {
+  if (keywordIds.length >= minResults || exact) {
     return { productIds: keywordIds, meta: { strategy: "keyword" } };
   }
 
-  // Step 2: Trigram fuzzy match (catches typos via search_text and aliases)
+  // Step 2: Spelling correction, then trigram fuzzy match (catches typos via search_text and aliases)
+  const corrected = await correctQuery(prisma, storeId, q);
+  if (corrected) {
+    const correctedIds = await keywordSearch(prisma, corrected, storeId);
+    if (correctedIds.length > keywordIds.length) {
+      return { productIds: dedup([...correctedIds, ...keywordIds]), meta: { strategy: "fuzzy", correctedQuery: corrected } };
+    }
+  }
   const fuzzyIds = await trigramSearch(prisma, q, storeId);
   const mergedAfterFuzzy = dedup([...keywordIds, ...fuzzyIds]);
   if (mergedAfterFuzzy.length >= minResults) {
-    const corrected = fuzzyIds.length > 0 ? await getCorrectedName(prisma, fuzzyIds[0]) : undefined;
-    return {
-      productIds: mergedAfterFuzzy,
-      meta: { strategy: "fuzzy", correctedQuery: corrected },
-    };
+    return { productIds: mergedAfterFuzzy, meta: { strategy: "fuzzy" } };
   }
 
   // Step 3: Full-text search (stemming, ranking)
@@ -69,12 +75,8 @@ export async function searchProducts(
 
   // If we found something (1-2 results) via fuzzy/FTS, return it — no need for LLM
   if (mergedAfterFts.length > 0) {
-    const corrected = fuzzyIds.length > 0 ? await getCorrectedName(prisma, fuzzyIds[0]) : undefined;
     const strategy: SearchStrategy = fuzzyIds.length > 0 ? "fuzzy" : "fulltext";
-    return {
-      productIds: mergedAfterFts,
-      meta: { strategy, correctedQuery: corrected },
-    };
+    return { productIds: mergedAfterFts, meta: { strategy } };
   }
 
   // Step 4: Semantic expansion via LLM (only when 0 results from all DB strategies)
@@ -182,14 +184,6 @@ async function fullTextSearch(prisma: PrismaClient, q: string, storeId: string):
     LIMIT 50
   `;
   return rows.map((r) => r.id);
-}
-
-async function getCorrectedName(prisma: PrismaClient, productId: string): Promise<string | undefined> {
-  const product = await prisma.product.findUnique({
-    where: { id: productId },
-    select: { name: true },
-  });
-  return product?.name;
 }
 
 async function semanticExpand(prisma: PrismaClient, query: string): Promise<string[] | null> {

@@ -4,6 +4,7 @@ import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
+import { isCurationConfigured, regenerateBanner } from "../../services/seasonal/index.js";
 
 export async function collectionRoutes(app: FastifyInstance) {
   // List collections
@@ -149,7 +150,36 @@ export async function collectionRoutes(app: FastifyInstance) {
         },
       });
 
+      // Agent collections own a hero banner; keep it in step so deactivating the collection vetoes both
+      if (existing.source === "AGENT") {
+        const { isActive, startsAt, endsAt } = body;
+        await app.prisma.banner.updateMany({
+          where: { actionType: "COLLECTION", actionTarget: existing.id },
+          data: { isActive, startsAt, endsAt },
+        });
+      }
+
       const response: ApiResponse<typeof collection> = { success: true, data: collection };
+      return response;
+    },
+  );
+
+  // Redraw the AI banner from the collection's current title and subtitle
+  app.post<{ Params: { id: string } }>(
+    "/:id/regenerate-banner",
+    { preHandler: [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")] },
+    async (request, reply) => {
+      if (!isCurationConfigured()) return reply.serviceUnavailable("Banner generation needs ANTHROPIC_API_KEY and OPENAI_API_KEY");
+      const existing = await app.prisma.collection.findUnique({ where: { id: request.params.id } });
+      if (!existing) return reply.notFound("Collection not found");
+      const user = getOrgUser(request);
+      if (user.role === "ORG_ADMIN" && existing.organizationId !== user.organizationId) {
+        return reply.forbidden("Access denied");
+      }
+      if (!existing.artDirection) return reply.badRequest("Only AI-curated collections can regenerate their banner");
+
+      const art = await regenerateBanner(app.prisma, { ...existing, artDirection: existing.artDirection }, (msg) => request.log.warn(`${existing.slug}: ${msg}`));
+      const response: ApiResponse<typeof art> = { success: true, data: art };
       return response;
     },
   );
@@ -167,7 +197,10 @@ export async function collectionRoutes(app: FastifyInstance) {
         return reply.forbidden("Access denied");
       }
 
-      await app.prisma.collection.delete({ where: { id: request.params.id } });
+      await app.prisma.$transaction([
+        app.prisma.banner.deleteMany({ where: { actionType: "COLLECTION", actionTarget: existing.id } }),
+        app.prisma.collection.delete({ where: { id: existing.id } }),
+      ]);
 
       const response: ApiResponse<null> = { success: true, data: null };
       return response;

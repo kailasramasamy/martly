@@ -1,0 +1,45 @@
+import { renderBanner, uploadBanner, type BannerCopy } from "./banner-art.js";
+import { bannerTextMatches } from "./verify-text.js";
+
+const ATTEMPTS = 2;
+const CTA: Record<string, string> = { en: "Shop now", ta: "இப்போது வாங்கு" };
+
+export interface BannerSet {
+  imageUrl: string;
+  imageUrls: Record<string, string> | null;
+  textInImage: boolean;
+}
+
+export type BannerLog = (message: string) => void;
+
+async function proofedBanner(scene: string, copy: BannerCopy, lang: string, log: BannerLog) {
+  for (let attempt = 1; attempt <= ATTEMPTS; attempt++) {
+    const image = await renderBanner(scene, copy);
+    const check = await bannerTextMatches(image, copy);
+    if (check.ok) return image;
+    log(`${lang} banner attempt ${attempt} failed proofreading: ${check.issues}`);
+  }
+  return null;
+}
+
+/**
+ * One banner per language with the copy set into the artwork. English is required; a language that keeps
+ * failing proofreading falls back to the English banner on the client. If English itself can't be rendered
+ * cleanly, the set falls back to text-free art with the copy drawn by the app instead.
+ */
+export async function buildBannerSet(
+  scene: string,
+  copies: Record<string, Omit<BannerCopy, "cta">>,
+  slug: string,
+  log: BannerLog,
+): Promise<BannerSet> {
+  const langs = Object.keys(copies);
+  const images = await Promise.all(langs.map((lang) => proofedBanner(scene, { ...copies[lang], cta: CTA[lang] ?? CTA.en }, lang, log)));
+  const passed = langs.flatMap((lang, i) => (images[i] ? [[lang, images[i]] as const] : []));
+  if (!passed.some(([lang]) => lang === "en")) {
+    log("English banner failed proofreading; using text-free art");
+    return { imageUrl: await uploadBanner(await renderBanner(scene), slug, "art"), imageUrls: null, textInImage: false };
+  }
+  const urls = Object.fromEntries(await Promise.all(passed.map(async ([lang, image]) => [lang, await uploadBanner(image, slug, lang)])));
+  return { imageUrl: urls.en, imageUrls: urls, textInImage: true };
+}

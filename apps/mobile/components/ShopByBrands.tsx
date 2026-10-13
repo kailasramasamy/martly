@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts } from "../constants/theme";
@@ -13,11 +14,34 @@ interface ShopByBrandsProps {
   onSeeAll?: () => void;
 }
 
-function BrandPill({ brand, selected, onPress }: { brand: BrandTile; selected: boolean; onPress: () => void }) {
+const LOGO_HEIGHT = 36;
+const MIN_LOGO_WIDTH = LOGO_HEIGHT;
+const MAX_LOGO_WIDTH = 110;
+const DEFAULT_LOGO_WIDTH = 88;
+// Measured logo widths, kept across renders so pills don't jump when a list re-mounts
+const logoWidths = new Map<string, number>();
+
+// Each pill hugs its logo: round marks stay compact, wide wordmarks get room
+function useLogoWidth(uri: string | null | undefined) {
+  const [width, setWidth] = useState(() => (uri && logoWidths.get(uri)) || DEFAULT_LOGO_WIDTH);
+  useEffect(() => {
+    if (!uri || logoWidths.has(uri)) return;
+    Image.getSize(uri, (w, h) => {
+      const fitted = Math.min(MAX_LOGO_WIDTH, Math.max(MIN_LOGO_WIDTH, Math.round((LOGO_HEIGHT * w) / h)));
+      logoWidths.set(uri, fitted);
+      setWidth(fitted);
+    }, () => logoWidths.set(uri, DEFAULT_LOGO_WIDTH));
+  }, [uri]);
+  return width;
+}
+
+// outlined: on a plain white background (the search filter row) the pill needs a visible edge
+export function BrandPill({ brand, selected, onPress, outlined = false }: { brand: BrandTile; selected: boolean; onPress: () => void; outlined?: boolean }) {
   const [background, ink] = wordmarkColors(brand.name);
+  const logoWidth = useLogoWidth(brand.imageUrl);
   return (
     <TouchableOpacity
-      style={[styles.pill, brand.imageUrl ? styles.logoPill : { backgroundColor: background }, selected && styles.pillSelected]}
+      style={[styles.pill, brand.imageUrl ? styles.logoPill : { backgroundColor: background }, outlined && styles.pillOutlined, selected && styles.pillSelected]}
       onPress={onPress}
       activeOpacity={0.7}
       accessibilityRole="button"
@@ -25,7 +49,7 @@ function BrandPill({ brand, selected, onPress }: { brand: BrandTile; selected: b
       accessibilityLabel={brand.name}
     >
       {brand.imageUrl ? (
-        <Image source={{ uri: brand.imageUrl }} style={styles.logo} resizeMode="contain" />
+        <Image source={{ uri: brand.imageUrl }} style={[styles.logo, { width: logoWidth }]} resizeMode="contain" />
       ) : (
         <Text style={[styles.wordmark, { color: ink }]} numberOfLines={1}>{brandDisplayName(brand.name)}</Text>
       )}
@@ -79,10 +103,12 @@ const styles = StyleSheet.create({
     height: 44, paddingHorizontal: 18, borderRadius: 22, justifyContent: "center",
     borderWidth: 2, borderColor: "transparent",
   },
-  logoPill: { backgroundColor: "#fff", paddingHorizontal: 10 },
-  pillSelected: { borderColor: colors.primary },
+  // Clip so logos with their own background (Keventers, RAW) stay inside the rounded pill
+  logoPill: { backgroundColor: "#fff", paddingHorizontal: 10, overflow: "hidden" },
+  pillOutlined: { borderWidth: 1, borderColor: colors.border },
+  pillSelected: { borderWidth: 2, borderColor: colors.primary },
   wordmark: { fontFamily: fonts.extrabold, fontSize: 15, letterSpacing: -0.2 },
-  logo: { width: 88, height: 36 },
+  logo: { height: LOGO_HEIGHT },
   visit: { flexDirection: "row", alignItems: "center", gap: 4, alignSelf: "flex-start", marginTop: 12, marginLeft: 16, minHeight: 32 },
   visitText: { fontFamily: fonts.bold, fontSize: 13, color: colors.primary },
 });

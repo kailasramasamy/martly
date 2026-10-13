@@ -1,6 +1,7 @@
 import { Edit, useForm } from "@refinedev/antd";
-import { Form, Input, Card, Row, Col } from "antd";
+import { Form, Input, Select, Card, Row, Col } from "antd";
 import { BankOutlined } from "@ant-design/icons";
+import { FESTIVAL_REGIONS } from "@martly/shared/constants";
 
 import { sectionTitle } from "../../theme";
 
@@ -18,6 +19,12 @@ export const OrganizationEdit = () => {
               </Form.Item>
               <Form.Item label="Slug" name="slug" rules={[{ required: true, pattern: /^[a-z0-9-]+$/, message: "Lowercase letters, numbers, and hyphens only" }]}>
                 <Input />
+              </Form.Item>
+              <Form.Item label="Festival calendar regions" name="festivalRegions">
+                <Select
+                  mode="multiple"
+                  options={Object.entries(FESTIVAL_REGIONS).map(([value, label]) => ({ value, label }))}
+                />
               </Form.Item>
             </Card>
           </Col>

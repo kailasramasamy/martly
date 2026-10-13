@@ -85,6 +85,9 @@ import { CustomerShow } from "./pages/customers/show";
 import { CollectionList } from "./pages/collections/list";
 import { CollectionCreate } from "./pages/collections/create";
 import { CollectionEdit } from "./pages/collections/edit";
+import { FestivalList } from "./pages/festival-calendar/list";
+import { FestivalCreate } from "./pages/festival-calendar/create";
+import { FestivalEdit } from "./pages/festival-calendar/edit";
 import { CouponList } from "./pages/coupons/list";
 import { CouponCreate } from "./pages/coupons/create";
 import { CouponEdit } from "./pages/coupons/edit";
@@ -282,6 +285,13 @@ export default function App() {
                 create: "/collections/create",
                 edit: "/collections/edit/:id",
                 meta: { label: "Collections", icon: <AppstoreOutlined />, parent: "marketing" },
+              },
+              {
+                name: "festival-events",
+                list: "/festival-calendar",
+                create: "/festival-calendar/create",
+                edit: "/festival-calendar/edit/:id",
+                meta: { label: "Festival Calendar", icon: <CalendarOutlined />, parent: "marketing" },
               },
               {
                 name: "coupons",
@@ -543,6 +553,11 @@ export default function App() {
                   <Route index element={<CollectionList />} />
                   <Route path="create" element={<CollectionCreate />} />
                   <Route path="edit/:id" element={<CollectionEdit />} />
+                </Route>
+                <Route path="/festival-calendar">
+                  <Route index element={<FestivalList />} />
+                  <Route path="create" element={<FestivalCreate />} />
+                  <Route path="edit/:id" element={<FestivalEdit />} />
                 </Route>
                 <Route path="/coupons">
                   <Route index element={<CouponList />} />

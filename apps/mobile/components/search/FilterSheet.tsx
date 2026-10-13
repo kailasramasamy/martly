@@ -19,6 +19,8 @@ export interface FilterSelection {
 
 interface FilterSheetProps {
   visible: boolean;
+  // The Brand pill opens the same sheet narrowed to brands
+  brandsOnly?: boolean;
   brands: SearchFacets["brands"];
   value: FilterSelection;
   onApply: (value: FilterSelection) => void;
@@ -48,7 +50,7 @@ function FoodTypeChips({ selected, onChange }: { selected: string | null; onChan
   );
 }
 
-export function FilterSheet({ visible, brands, value, onApply, onClose }: FilterSheetProps) {
+export function FilterSheet({ visible, brandsOnly = false, brands, value, onApply, onClose }: FilterSheetProps) {
   const [draft, setDraft] = useState(value);
   useEffect(() => { if (visible) setDraft(value); }, [visible]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -57,7 +59,7 @@ export function FilterSheet({ visible, brands, value, onApply, onClose }: Filter
 
   const footer = (
     <View style={styles.footer}>
-      <TouchableOpacity style={styles.clearBtn} onPress={() => setDraft({ brandIds: [], foodType: null })}>
+      <TouchableOpacity style={styles.clearBtn} onPress={() => setDraft((d) => ({ brandIds: [], foodType: brandsOnly ? d.foodType : null }))}>
         <Text style={styles.clearText}>Clear all</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.applyBtn} onPress={() => { onApply(draft); onClose(); }}>
@@ -67,12 +69,12 @@ export function FilterSheet({ visible, brands, value, onApply, onClose }: Filter
   );
 
   return (
-    <BottomSheet visible={visible} title="Filters" onClose={onClose} footer={footer}>
+    <BottomSheet visible={visible} title={brandsOnly ? "Brand" : "Filters"} onClose={onClose} footer={footer}>
       <FlatList
         data={brands}
         keyExtractor={(b) => b.id}
-        ListHeaderComponent={brands.length > 0 ? <Text style={styles.section}>Brands</Text> : null}
-        ListFooterComponent={<FoodTypeChips selected={draft.foodType} onChange={(foodType) => setDraft((d) => ({ ...d, foodType }))} />}
+        ListHeaderComponent={brands.length > 0 && !brandsOnly ? <Text style={styles.section}>Brands</Text> : null}
+        ListFooterComponent={brandsOnly ? null : <FoodTypeChips selected={draft.foodType} onChange={(foodType) => setDraft((d) => ({ ...d, foodType }))} />}
         renderItem={({ item }) => {
           const active = draft.brandIds.includes(item.id);
           return (

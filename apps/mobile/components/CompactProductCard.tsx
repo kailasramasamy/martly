@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colors, fonts, spacing } from "../constants/theme";
 import { useLanguage } from "../lib/language-context";
 import { FoodTypeMark } from "./FoodTypeMark";
+import { BestsellerBadge, UnitPrice } from "./ProductBadges";
 import { SizeChips, SizePager, maxChips, sizeImage } from "./PackSizes";
 import { bySize, packSaving } from "../lib/pack-sizes";
 import type { StoreProduct } from "../lib/types";
@@ -92,6 +93,7 @@ function CompactImage({ item, primaryId, outOfStock, wished, onHeart, pager }: {
         <Text style={styles.noImageLetter}>{item.product.name.charAt(0)}</Text>
       ))}
       {item.product.foodType && <FoodTypeMark foodType={item.product.foodType} />}
+      {item.product.isBestseller && <BestsellerBadge />}
       {outOfStock && (
         <View style={styles.oos}><Text style={styles.oosLabel}>Out of stock</Text></View>
       )}
@@ -127,6 +129,7 @@ function CompactDetails({ item, sizes, onSelectSize, onMoreSizes, isMember }: {
         <Text style={styles.price} numberOfLines={1}>{"₹"}{shown.toFixed(0)}</Text>
         {struck != null && <Text style={styles.mrp}>{"₹"}{struck.toFixed(0)}</Text>}
       </View>
+      <UnitPrice price={shown} variant={item.variant} />
       {discount && <Text style={styles.discount}>{discount}</Text>}
       {saving && <Text style={styles.saving}>{saving}</Text>}
       <Text style={styles.name} numberOfLines={3}>{getLocalizedName(item.product)}</Text>

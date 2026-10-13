@@ -17,12 +17,15 @@ interface Pill {
 
 interface SearchControlBarProps {
   filterCount: number;
+  brandCount: number;
+  hasBrands: boolean;
   sortBy: SearchSortBy;
   size: string | null;
   offers: boolean;
   offerCount: number;
   hasSizes: boolean;
   onOpenFilters: () => void;
+  onOpenBrand: () => void;
   onOpenSort: () => void;
   onOpenQuantity: () => void;
   onToggleOffers: () => void;
@@ -40,6 +43,10 @@ function buildPills(p: SearchControlBarProps): Pill[] {
       onPress: p.onOpenSort,
     },
   ];
+  // Zepto-style shortcut straight to brands; Filters still holds brands + food type together
+  if (p.hasBrands) {
+    pills.splice(1, 0, { key: "brand", label: "Brand", chevron: true, badge: p.brandCount, active: p.brandCount > 0, onPress: p.onOpenBrand });
+  }
   if (p.hasSizes) {
     pills.push({ key: "quantity", label: p.size ?? "Quantity", chevron: true, active: p.size != null, onPress: p.onOpenQuantity });
   }
