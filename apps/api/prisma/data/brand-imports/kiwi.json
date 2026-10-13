@@ -1,0 +1,94 @@
+{
+  "brand": "Kiwi (SC Johnson)",
+  "manufacturer": "S. C. Johnson Products Pvt. Ltd.",
+  "feed": "kiwi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kiwi/logo-27ef9da1.png",
+  "themeColor": "#E31B23",
+  "themeColorSecondary": "#C8A45C",
+  "namePrefix": "Kiwi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Wax\\ Shoe\\ Polish\\ \\-\\ Black$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Wax\\ Shoe\\ Polish\\ \\-\\ Dark\\ Tan$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Instant\\ Liquid\\ Shoe\\ Polish\\ \\-\\ Black$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Instant\\ Liquid\\ Shoe\\ Polish\\ \\-\\ Brown$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Instant\\ Liquid\\ Shoe\\ Polish\\ \\-\\ Neutral$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Express\\ Shine\\ Sponge\\ \\-\\ Black$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Express\\ Shine\\ Sponge\\ \\-\\ All\\ Colours$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^2\\ in\\ 1\\ Shoe\\ Brush$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Shoe\\ Shine\\ Brush$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Dranex\\ Drain\\ Cleaner\\ Powder$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    }
+  ]
+}
