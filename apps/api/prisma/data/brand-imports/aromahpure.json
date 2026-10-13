@@ -1,0 +1,158 @@
+{
+  "brand": "Aromahpure (Sai Corporation)",
+  "manufacturer": "Sai Corporation",
+  "feed": "aromahpure-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/aromahpure/logo-9ab6d303.png",
+  "themeColor": "#1C75BC",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "Aromahpure ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Air\\ Freshener\\ Spray\\ \\-\\ Beautiful\\ Day\\ Blooming\\ Orchards$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Air\\ Freshener\\ Spray\\ \\-\\ Cabana\\ Blue\\ Coastal\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ \\&\\ Linen\\ Spray\\ \\-\\ Clean\\ Cotton$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Room\\ \\&\\ Linen\\ Spray\\ \\-\\ Garden\\ Bouquet$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Cube\\ \\-\\ Charming\\ Rose$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Cube\\ \\-\\ Refreshing\\ Lemongrass$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Cube\\ \\-\\ White\\ Sandalwood$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Cube\\ \\-\\ Joyous\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Cube\\ \\-\\ Sparkling\\ Cocktail$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Air Freshener Gel & Block"
+      ]
+    },
+    {
+      "match": "^Gel\\ Wink\\ Hanging\\ Car\\ Perfume\\ \\-\\ Berry\\ Blossom$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Gel\\ Wink\\ Hanging\\ Car\\ Perfume\\ \\-\\ Lavender\\ Dream$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Gel\\ Wink\\ Hanging\\ Car\\ Perfume\\ \\-\\ Lemon\\ Zest$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Gel\\ Wink\\ Hanging\\ Car\\ Perfume\\ \\-\\ Musk\\ Essence$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Gel\\ Wink\\ Hanging\\ Car\\ Perfume\\ \\-\\ Ocean\\ Mist$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Gel\\ Wink\\ Hanging\\ Car\\ Perfume\\ \\-\\ Sandalwood\\ Spice$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Hanging\\ Pod\\ Car\\ Perfume\\ \\-\\ Lavender\\ Love$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Hanging\\ Pod\\ Car\\ Perfume\\ \\-\\ Musk\\ Classic$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    },
+    {
+      "match": "^Premium\\ Car\\ Perfume\\ Fragrance\\ Flakes\\ with\\ Activated\\ Charcoal$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Car Freshener"
+      ]
+    }
+  ]
+}
