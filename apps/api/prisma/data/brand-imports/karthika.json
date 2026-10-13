@@ -1,0 +1,46 @@
+{
+  "brand": "Karthika",
+  "manufacturer": "CavinKare Pvt. Ltd.",
+  "feed": "karthika-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/karthika/logo-27d9f541.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#1E8C3A",
+  "namePrefix": "Karthika ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Damage\\ Shield\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Dryness\\ Shield\\ Shampoo\\ With\\ Henna$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Fall\\ Shield\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Shikakai\\ Hair\\ Wash\\ Powder$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    }
+  ]
+}
