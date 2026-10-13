@@ -1,0 +1,776 @@
+{
+  "brand": "Wingreens Farms",
+  "manufacturer": "Wingreens Farms Pvt. Ltd.",
+  "feed": "wingreens-farms-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/wingreens-farms/logo-23e26239.png",
+  "themeColor": "#2E7D32",
+  "themeColorSecondary": "#8DC63F",
+  "namePrefix": "Wingreens Farms ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Wingreens Farms Classic Hummus": "Classic Hummus"
+  },
+  "rules": [
+    {
+      "match": "^Classic\\ Hummus$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hummus"
+      ]
+    },
+    {
+      "match": "^Basil\\ Hummus$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hummus"
+      ]
+    },
+    {
+      "match": "^Black\\ Chickpea\\ Hummus\\ with\\ Jalapenos$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hummus"
+      ]
+    },
+    {
+      "match": "^Original\\ Olive\\ Hummus$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hummus"
+      ]
+    },
+    {
+      "match": "^Peri\\-Peri\\ Hummus$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hummus"
+      ]
+    },
+    {
+      "match": "^Rosemary\\ Hummus$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hummus"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Hummus$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hummus"
+      ]
+    },
+    {
+      "match": "^Dill\\ Tzatziki$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Peri\\-Peri\\ Garlic\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Greek\\ Goddess\\ Mint\\ Cucumber\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ Cheese\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Peri\\-Peri\\ Salsa$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Chipotle\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Herb\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Fiery\\ Desert\\ Mustard\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Makhani\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Mexican\\ Salsa\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Cheese\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Classic\\ Nacho\\ Cheese\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Truffle\\ Cheese\\ Dip$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Mexican\\ Salsa$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Cheesy\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Cheesy\\ Chipotle\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Cheesy\\ Jalapeno\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salsa & Dips"
+      ]
+    },
+    {
+      "match": "^Basil\\ Pesto$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Pizza\\ \\&\\ Pasta\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Pizza\\ \\&\\ Pasta\\ Sauce\\ Pouch$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Pasta Sauce"
+      ]
+    },
+    {
+      "match": "^Achaari\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Chinese\\ Secret\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Chowmein\\ \\&\\ Stir\\ Fry\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Cooking Sauces"
+      ]
+    },
+    {
+      "match": "^Bhut\\ Sriracha\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Thousand\\ Island\\ Dressing$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^Thousand\\ Island\\ Dressing\\ Pouch$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Salad Dressings"
+      ]
+    },
+    {
+      "match": "^Premium\\ Veg\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Veg\\ Mayo\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Burger\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Barbeque\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Chipotle\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Chipotle\\ Mayo\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Mayo\\ Aioli$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Italian\\ Herb\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Mint\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Sriracha\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Mayo\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Wasabi\\ Mayo$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mayonnaise"
+      ]
+    },
+    {
+      "match": "^Honey\\ Mustard\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^Fiery\\ Mustard\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Mustard Sauce"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Ketchup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Peri\\-Peri\\ Ketchup$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Peri\\-Peri\\ Ketchup\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Tomato Ketchup"
+      ]
+    },
+    {
+      "match": "^Schezwan\\ Chilli\\ Garlic\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Schezwan\\ Chilli\\ Garlic\\ Sauce\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Chilli\\ Garlic\\ Sauce$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Sweet\\ Chilli\\ Garlic\\ Sauce\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Chilli Sauce"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Spicy\\ Peanut\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Baked\\ Pita\\ Bread\\ Crisps\\ \\-\\ Chilli\\ \\&\\ Garlic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Baked\\ Multigrain\\ Flat\\ Bread\\ with\\ Flax\\ Seeds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Crackers"
+      ]
+    },
+    {
+      "match": "^Naan\\ Chips\\ \\-\\ Butter\\ Garlic$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Naan\\ Chips\\ \\-\\ Chatpata\\ Pudina$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Naan\\ Chips\\ \\-\\ Tez\\ Tandoori$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Butter\\ Garlic\\ Naan\\ Chips\\ \\&\\ Makhani\\ Dip$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Chatpata\\ Pudina\\ Naan\\ Chips\\ \\&\\ Tandoori\\ Dip$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Tez\\ Tandoori\\ Naan\\ Chips\\ \\&\\ Pudina\\ Dip$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Jalapeno\\ Pita\\ Chips\\ \\&\\ Sweet\\ Chilli\\ Garlic\\ Dip$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Cheese\\ Pita\\ Chips\\ \\&\\ Mexican\\ Salsa\\ Dip$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Durum\\ Wheat\\ Pasta\\ \\-\\ Elbow\\ Macaroni$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Durum\\ Wheat\\ Pasta\\ \\-\\ Fusilli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Durum\\ Wheat\\ Pasta\\ \\-\\ Penne$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Peppermint\\ Leaves\\ with\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Rose\\ Petals\\ with\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Hibiscus\\ Flowers\\ with\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Lemongrass\\ with\\ Green\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Green Tea"
+      ]
+    },
+    {
+      "match": "^Impatient\\ Baker\\ Eggless\\ Pancake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Spice\\ Rack\\ All\\-In\\-One\\ White\\ Sauce\\ Premix$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Spice\\ Rack\\ Smoked\\ Tandoori\\ Spice\\ Mix$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Spice\\ Rack\\ Dried\\ Basil\\ Leaves$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Spice\\ Rack\\ Pizza\\ \\&\\ Pasta\\ Seasoning$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Choco\\ Chip\\ Oat\\ Clusters\\ \\&\\ Ragi\\ Flakes\\ with\\ Banana$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Cinnamon\\ Oat\\ Clusters\\ \\&\\ Multigrain\\ Flakes\\ with\\ Apple$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Oat\\ Clusters\\ \\&\\ Multigrain\\ Flakes\\ with\\ Mango$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Oat\\ Clusters\\ \\&\\ Ragi\\ Flakes\\ with\\ Strawberry$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Crunchy\\ Muesli\\ \\-\\ Cranberry\\ Chocolate$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Crunchy\\ Muesli\\ \\-\\ Fruits,\\ Nuts\\ \\&\\ Seeds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Toasted\\ Millet\\ Muesli\\ \\-\\ Cranberry\\ \\&\\ Almond$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Toasted\\ Millet\\ Muesli\\ \\-\\ Dark\\ Chocolate\\ \\&\\ Orange\\ Peel$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Toasted\\ Millet\\ Muesli\\ \\-\\ Fig\\ \\&\\ Honey\\ with\\ Salted\\ Pistachios$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Toasted\\ Millet\\ Muesli\\ \\-\\ Roasted\\ Cacao\\ Bean\\ \\&\\ Raisin$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Gluten\\ Free\\ Rolled\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Crunchy\\ Millet\\ Granola\\ Bar\\ \\-\\ Cranberry\\ Orange$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Crunchy\\ Millet\\ Granola\\ Bar\\ \\-\\ Espresso\\ with\\ Dark\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Nuts\\ \\&\\ Seeds\\ Bar\\ \\-\\ Cranberry\\ Almond$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Harvest\\ Nuts\\ \\&\\ Seeds\\ Bar\\ \\-\\ Dark\\ Chocolate\\ \\&\\ Sea\\ Salt$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    }
+  ]
+}
