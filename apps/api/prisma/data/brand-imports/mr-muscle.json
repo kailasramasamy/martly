@@ -1,0 +1,154 @@
+{
+  "brand": "Mr Muscle (SC Johnson)",
+  "manufacturer": "S. C. Johnson Products Pvt. Ltd.",
+  "feed": "mr-muscle-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mr-muscle/logo-df13b205.png",
+  "themeColor": "#F37021",
+  "themeColorSecondary": "#1B3C8C",
+  "namePrefix": "Mr Muscle ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Mr Muscle Advanced Power Kitchen Cleaner": "Kitchen Cleaner - Advanced Power",
+    "Mr Muscle Bathroom Cleaner 5-in-1": "Bathroom Cleaner - Advanced Power",
+    "Mr Muscle Glass Cleaner Spray": "Glass & Surface Cleaner Spray"
+  },
+  "rules": [
+    {
+      "match": "^Kitchen\\ Cleaner\\ Spray\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Cleaner\\ Refill\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Cleaner\\ \\-\\ Advanced\\ Power$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Oven\\ Cleaner\\ \\(Imported\\)$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Cleaner\\ \\-\\ Advanced\\ Power$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Glass\\ \\&\\ Surface\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Glass Cleaner"
+      ]
+    },
+    {
+      "match": "^Floor\\ Cleaner\\ \\-\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Floor\\ Cleaner\\ \\-\\ Floral\\ Perfection$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Floor\\ Cleaner\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Floor\\ Cleaner\\ \\-\\ Floral\\ Perfection$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Floor\\ Cleaner\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Sparkling\\ Clean\\ Floor\\ Cleaner\\ \\-\\ Floral$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Sparkling\\ Clean\\ Floor\\ Cleaner\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Sparkling\\ Clean\\ Floor\\ Cleaner\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Cleaner\\ \\-\\ Stretch\\ Neck$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Toilet\\ \\&\\ Bathroom\\ Cleaner\\ \\-\\ Herbal$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    }
+  ]
+}
