@@ -1,0 +1,760 @@
+{
+  "brand": "Lotus Herbals",
+  "manufacturer": "Lotus Herbals Pvt. Ltd.",
+  "feed": "lotus-herbals-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/lotus-herbals/logo-1e0e6762.png",
+  "themeColor": "#8B1E5B",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Lotus Herbals ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Lotus Herbals Safe Sun UV Screen Matte Gel SPF 50": "Safe Sun UV Screen Matte Gel SPF 50 PA+++"
+  },
+  "rules": [
+    {
+      "match": "^Safe\\ Sun\\ UV\\ Screen\\ Matte\\ Gel\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ 3\\-In\\-1\\ Matte\\ Look\\ Daily\\ Sunscreen\\ SPF\\ 40$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Daily\\ Multi\\-Function\\ Sun\\ Block\\ SPF\\ 70$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Dry\\-Touch\\ Whitening\\ Sunblock\\ SPF\\ 40$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Kids\\ Sun\\ Block\\ Cream\\ SPF\\ 25$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Sun\\ Block\\ Cream\\ SPF\\ 30$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Sun\\ Block\\ Cream\\ SPF\\ 20$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Silk\\ Touch\\ Mattifying\\ UV\\ Creme\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Skin\\ Lightening\\ Anti\\-Tan\\ Sunscreen\\ SPF\\ 30$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Sports\\ Daily\\-Defence\\ UV\\ Block\\ SPF\\ 50\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ UV\\ Shield\\ Whitening\\ Gel\\ Creme\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Vitamin\\ C\\ Matte\\ Gel\\ Daily\\ Sunscreen\\ SPF\\ 50\\ PA\\+\\+\\+$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Anti\\-Tan\\ Body\\ Lotion\\ SPF\\ 25$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ UV\\ Protect\\ Body\\ Lotion\\ SPF\\ 25$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Detan\\ After\\-Sun\\ Cooling\\ Matte\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Detan\\ After\\-Sun\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Detan\\ After\\-Sun\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Detan\\ After\\-Sun\\ Face\\ Wash\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Safe\\ Sun\\ Anti\\-Tan\\ Whitening\\ \\&\\ Glow\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Apriscrub\\ Fresh\\ Apricot\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Berryscrub\\ Strawberry\\ \\&\\ Aloe\\ Vera\\ Exfoliating\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Claywhite\\ Black\\ Clay\\ Skin\\ Whitening\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Frujuvenate\\ Skin\\ Perfecting\\ \\&\\ Rejuvenating\\ Fruit\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Teatreeclear\\ Tea\\ Tree\\ Clarifying\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Jojobawash\\ Active\\ Milli\\ Capsules\\ Nourishing\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Neemwash\\ Neem\\ \\&\\ Clove\\ Ultra\\-Purifying\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Teatreewash\\ Tea\\ Tree\\ \\&\\ Cinnamon\\ Anti\\-Acne\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Licoricewhite\\ Skin\\ Whitening\\ Cleanser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Lemonpure\\ Turmeric\\ \\&\\ Lemon\\ Cleansing\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Basiltone\\ Cucumber\\ \\&\\ Basil\\ Clarifying\\ \\&\\ Balancing\\ Toner$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Rosetone\\ Rose\\ Petals\\ Facial\\ Skin\\ Toner$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Alphamoist\\ Alpha\\ Hydroxy\\ Skin\\ Renewal\\ Oil\\ Free\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Cocomoist\\ Cocoa\\ Butter\\ Moisturising\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Sheamoist\\ Shea\\ Butter\\ \\&\\ Strawberry\\ 24\\ Hrs\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^AlmondNourish\\ SPF\\ 20\\ Daily\\ Nourishing\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Cocoacaress\\ SPF\\ 20\\ Daily\\ Hand\\ \\&\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Almondyouth\\ Almond\\ Anti\\-Wrinkle\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Nutramoist\\ Skin\\ Renewal\\ Daily\\ Moisturising\\ Creme\\ SPF\\ 25$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Nutranite\\ Skin\\ Renewal\\ Nutritive\\ Night\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Papayablem\\ Papaya\\-N\\-Saffron\\ Anti\\-Blemish\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Quincenourish\\ Quince\\ Seed\\ Massage\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Wheatnourish\\ Wheatgerm\\ Oil\\ \\&\\ Honey\\ Massage\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Nutraeye\\ Rejuvenating\\ \\&\\ Correcting\\ Eye\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Radiance\\ Boost\\ Ubtan\\ Face\\ Creme\\ SPF\\ 20$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Radiance\\ Boost\\ Ubtan\\ Face\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiance\\ Boost\\ Ubtan\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiance\\ Boost\\ Ubtan\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ 3\\ In\\ 1\\ Deep\\ Cleansing\\ Facial\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Active\\ Skin\\ Whitening\\ \\+\\ Oil\\ Control\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Oatmeal\\ \\&\\ Yogurt\\ Skin\\ Brightening\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Yogurt\\ Skin\\ Whitening\\ \\&\\ Brightening\\ Masque$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Skin\\ Whitening\\ \\&\\ Brightening\\ Cleansing\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Skin\\ Whitening\\ \\&\\ Brightening\\ Gel\\ Creme\\ SPF\\ 25$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Deep\\ Moisturizing\\ Creme\\ SPF\\ 20$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Skin\\ Whitening\\ \\&\\ Brightening\\ Nourishing\\ Night\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Skin\\ Whitening\\ \\&\\ Brightening\\ Massage\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Vitamin\\ C\\ \\+\\ Gold\\ Radiance\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Intensive\\ Skin\\ Whitening\\ \\&\\ Brightening\\ Serum\\ \\+\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ SPF\\ 25\\ Skin\\ Whitening\\ \\&\\ Brightening\\ Hand\\ \\&\\ Body\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Insta\\ Glow\\ Fairness\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^WhiteGlow\\ Insta\\ Glow\\ Fairness\\ Single\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ Anti\\-Ageing\\ Transforming\\ Creme\\ SPF\\ 25$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ Anti\\-Ageing\\ Transforming\\ Gel\\ Creme\\ SPF\\ 20$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ Anti\\-Ageing\\ Nourishing\\ Night\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ Activating\\ Serum\\ \\+\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Serum"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ Active\\ Anti\\-Ageing\\ Foaming\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ Active\\ Anti\\-Ageing\\ Exfoliator$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ Anti\\-Ageing\\ Eye\\ Contour\\ Creme$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ Anti\\-Ageing\\ Firming\\ Face\\ Masque$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^YouthRx\\ pH\\ Balancing\\ Multi\\ Active\\ Toner$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Natural\\ Glow\\ Skin\\ Radiance\\ Single\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Diamond\\ Cellular\\ Radiance\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Diamond\\ Cellular\\ Radiance\\ Single\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Diamond\\ Cellular\\ Radiance\\ 4\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Gold\\ Cellular\\ Glow\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Gold\\ Cellular\\ Glow\\ Single\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Gold\\ Cellular\\ Glow\\ 4\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Pearl\\ Cellular\\ Lightening\\ Single\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Pearl\\ Cellular\\ Lightening\\ 4\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Radiant\\ Platinum\\ Cellular\\ Anti\\-Ageing\\ Facial\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Lip\\ Balm\\ Fruity\\ Fusion$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Balm\\ Raspberry$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Balm\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Lush\\ Pink\\ Guava\\ Rush\\ SPF\\ 20$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Lush\\ Rosy\\ Rose\\ Blush\\ SPF\\ 20$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Lush\\ Strawberry\\ Crush\\ SPF\\ 20$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Therapy\\ Cherry$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Therapy\\ Velvety\\ Rose$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Kera\\-Veda\\ Amlapura\\ Herbal\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Kera\\-Veda\\ Hennapura\\ Shampoo\\ with\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Kera\\-Veda\\ Neemactiv\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Kera\\-Veda\\ Soyashine\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Kera\\-Veda\\ Soyasmooth\\ Creme\\ Deep\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    }
+  ]
+}
