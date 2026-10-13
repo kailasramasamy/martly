@@ -1,0 +1,3275 @@
+[
+ {
+  "title": "Chicken Nuggets",
+  "handle": "chicken-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348349_2-godrej-yummiez-chicken-nuggets.jpg"
+    }
+   },
+   {
+    "title": "450g",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/268193_9-yummiez-nuggets-chicken.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005418_5-yummiez-nuggets-chicken.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348349_2-godrej-yummiez-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348349-2_1-godrej-yummiez-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348349-3_1-godrej-yummiez-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348349-4_1-godrej-yummiez-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348349-5_1-godrej-yummiez-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348349-6_1-godrej-yummiez-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268193_9-yummiez-nuggets-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005418_5-yummiez-nuggets-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Crispy golden chicken nuggets made with juicy chicken and flavorful seasonings. Perfect as a quick snack, party starter, or meal accompaniment.",
+   "manufacturerName": "P1 Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Masala Nuggets",
+  "handle": "chicken-masala-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/268205_11-yummiez-chicken-masala-nuggets.jpg"
+    },
+    "barcode": "8902756350014"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268205_11-yummiez-chicken-masala-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268205-2_5-yummiez-chicken-masala-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268205-3_4-yummiez-chicken-masala-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268205-4_4-yummiez-chicken-masala-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268205-5_4-yummiez-chicken-masala-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268205-6_1-yummiez-chicken-masala-nuggets.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Meat made crispy and tasty, Godrej Yummiez Chicken Masala Nuggets. Made with top-of-the-line chicken meat and other ingredients, these chicken fingers will have you licking your fingers after you're done with them. Super crispy and tasty, they are perfect to fry up and feast on any time, and go along great with a side of mashed potatoes and beans. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Chicken Meat (53%), Breadcrumbs [Maida, Yeast, Salt, Permitted Bread Improvers, Preservatives (INS 282), Acidity Regulator (INS 260)], Water, Edible Vegetable Oil (Refined Palmolein Oil), Batter (Maida, Corn Flour, Corn Starch, Salt, Emulsifier (INS 466), Soy Protein, Spices & Condiments, lodised Salt And Texturiser (INS 451(i)))",
+   "nutritionalInfo": {
+    "Serving Size": "100 g",
+    "Energy": "291.52 kcal",
+    "Total Carbohydrates": "21.80 g",
+    "Of Which Sugar": "<0.5 g",
+    "Protein": "13.31 g",
+    "Total Fat": "6.85 g",
+    "Total Saturated Fat": "3.02 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "*Always store in deep freezer at minus 18°c",
+   "manufacturerName": "Godrej Tyson Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tandoori Chicken Nuggets",
+  "handle": "tandoori-chicken-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40229650_1-yummiez-tandoori-chicken-nuggets-ready-to-eat-crispy-fried.jpg"
+    },
+    "barcode": "8902756350083"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40229650_1-yummiez-tandoori-chicken-nuggets-ready-to-eat-crispy-fried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40229650-2_1-yummiez-tandoori-chicken-nuggets-ready-to-eat-crispy-fried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40229650-3_1-yummiez-tandoori-chicken-nuggets-ready-to-eat-crispy-fried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40229650-4_1-yummiez-tandoori-chicken-nuggets-ready-to-eat-crispy-fried.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40229650-5_1-yummiez-tandoori-chicken-nuggets-ready-to-eat-crispy-fried.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the delectable flavours of Godrej Yummiez Tandoori Chicken Nuggets, a perfect blend of quality, taste, and convenience. Crafted by the trusted Godrej brand, these bite-sized nuggets are made from premium quality chicken meat, ensuring a tender and succulent texture that will delight even the most discerning palates. Coated in a crispy and flavourful breading, each nugget delivers a satisfying crunch with every bite, making them an irresistible snack or meal option for both kids and adults alike. Marinated to perfection, these nuggets offer a burst of tandoori-inspired flavours that will tantalize your taste buds. Preparing these nuggets is a breeze, thanks to their convenient frozen format - simply heat them in the oven, air fryer, or microwave for a few minutes, and you'll have crispy and golden nuggets ready to enjoy. With their hassle-free preparation, you can spend less time in the kitchen and more time savouring the delicious flavours. Indulge in the perfect balance of quality, flavour, and convenience with Godrej Yummiez Tandoori Chicken Nuggets.",
+   "ingredients": "Chicken Meat, Water, Refined Palmolein oil, Bread crumb (Refined Wheat flour, Dextrose, Dried Yeast, Salt), Batter, Spices and Condiments, Soy protein, Garlic, Ginger, Green chilli, Salt, Texturiser",
+   "nutritionalInfo": {
+    "Per 100g Serving Size": "102 g (6 Pieces)",
+    "Energy (Kcal)": "266.59",
+    "Protein (g)": "13.37",
+    "Total Carbohydrates (g)": "16.1",
+    "Total Sugar (g)": "1.94",
+    "Added Sugar (g)": "0.5",
+    ";Total Fat (g)": "15.64",
+    "Saturated Fatty Acids (g)": "5.89",
+    "Trans Fatty Acids (g)": "0.1",
+    "Cholesterol (mg)": "49.91",
+    "Sodium (mg)": "702.97"
+   },
+   "storageInstructions": "Store in deep freezer at -18°C or below.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Chicken Nuggets",
+  "handle": "chilli-chicken-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "195g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+    },
+    "barcode": "8902756350229"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109-2_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109-3_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109-4_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109-5_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109-6_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109-7_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365109-8_1-godrej-yummiez-chilli-chicken-nuggets.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Crispy chicken nuggets seasoned with a bold chilli kick for spice lovers. Perfect for adding excitement to snack time.",
+   "ingredients": "Chicken Meat (42%), Breadcrumb {refined Wheat Flour (Maida), Dried Yeast, Lodized Salt, Spices & Condiments (Paprika, Turmeric)}, Refined Palmolein Oil, Soy Protein Products, Water, Batter {refined Wheat Flour (Maida), Starch, Maize Flour, Iodized Salt, Stabilizer (Ins 466)}, Soy Sauce, Green Chilli (4%), Garlic, Onion, Capsicum, Corn Starch, Tomato Puree, Ginger, Lodized Salt, Sugar, Spices, Texturizer (Ins 451(I)) Allergen Advice: Contains Soy And Wheat",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "244.44",
+    "Protein (g)": "11.07",
+    "Total Carbohydrates (g)": "21.87",
+    "Total Sugar (g)": "2.85",
+    "Added Sugar (g)": "0.87",
+    "Total Fat (g)": "12.30",
+    "Saturated Fatty Acids (g)": "4.76",
+    "Trans Fatty Acids (g)": "0.03",
+    "Cholesterol (mg)": "22.14",
+    "Sodium (mg)": "522.29"
+   },
+   "manufacturerName": "Godrej Foods Limited",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken & Cheese Nuggets",
+  "handle": "chicken-cheese-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "325g",
+    "price": "275",
+    "compare_at_price": "275",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185857_4-yummiez-chicken-cheese-nuggets.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185857_4-yummiez-chicken-cheese-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185857-2_2-yummiez-chicken-cheese-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185857-3_2-yummiez-chicken-cheese-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185857-4_2-yummiez-chicken-cheese-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185857-5_2-yummiez-chicken-cheese-nuggets.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Tender chicken nuggets with a delicious cheesy center, coated in a crunchy crumb. A tasty treat loved by both kids and adults.",
+   "ingredients": "Chicken Meat (33%), Breadcrumb {Maida Flour, Yeast, Salt, Dextrose, Preservative (INS 282) & Acidity Regulator (INS 260)}, Cheese (13.7%) (Processed Cheese, Cheese Powder) {Cheese, Milk Solids, Maltodextrin, Salt & Anti-Caking Agent (INS 551)}, Water, Batter {Maida Flour, Corn Starch, Salt, Stabilizer (INS 466) & Raising Agent (INS 500)}, Edible Vegetable Oil (Refined Palmolein Oil), Spices & Condiments {Paprika, Onion, Garlic, Salt, Spice Mix {(Sugar, Salt, Corn Starch, Maltodextrin, Chilli, Acidity Regulator (INS 330, INS 334), Herbs, Palm Oil, Anti-Caking Agent (INS 551), Flavour Enhancer, (INS 627, 631), Stabilizer (INS 340), Spice Extract (INS 160c)}, Soya Protein And Texturizer (INS 451 (i))",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "215.58 kcal",
+    "Total Carbohydrates": "19.55 g",
+    "of Which Sugar": "<1.0 g",
+    "Protein": "11.53 g",
+    "Total Fat": "10.14 g",
+    "Total Saturated Fat": "5.05 g",
+    "Total Trans Fat": "<0.00 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Popcorn",
+  "handle": "chicken-popcorn",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002835_6-yummiez-popcorn-chicken-halal-cut.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002835_6-yummiez-popcorn-chicken-halal-cut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002835-2_4-yummiez-popcorn-chicken-halal-cut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002835-3_4-yummiez-popcorn-chicken-halal-cut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002835-4_4-yummiez-popcorn-chicken-halal-cut.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002835-5_4-yummiez-popcorn-chicken-halal-cut.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Bite-sized chicken popcorn with a crispy coating and juicy texture inside. A convenient anytime snack that's easy to share.",
+   "ingredients": "Chicken Meat, Breadcrumbs, Batter, Edible Vegetable Oil, Soy Protein, Texturized Soy Protein, Iodised Salt, Dextrose, Garlic, White Pepper, Black Pepper, Lemon Juice",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "234.4 kcal",
+    "Total Carbohydrates": "16.4 g",
+    "Sugar": "1.9 g",
+    "Protein": "15.15 g",
+    "Total Fat": "13.80 g",
+    "Total Saturated Fat": "6.20 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Bites",
+  "handle": "chicken-bites",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "225g",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351_2-godrej-yummiez-chicken-bites.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351_2-godrej-yummiez-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351-2_1-godrej-yummiez-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351-3_1-godrej-yummiez-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351-4_1-godrej-yummiez-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351-5_1-godrej-yummiez-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351-6_1-godrej-yummiez-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351-7_1-godrej-yummiez-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348351-8_1-godrej-yummiez-chicken-bites.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Experience the irresistible crunch of Godrej Yummiez Hot & Crispy Chicken Bites. Made from premium boneless chicken, these bite-sized delights are coated in a bold blend of flavourful spices. Perfectly crispy on the outside and juicy within, they make for a quick, satisfying snack or a crowd-pleasing appetiser that's ready in minutes.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Chicken Bites",
+  "handle": "crispy-chicken-bites",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "360g",
+    "price": "360",
+    "compare_at_price": "360",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318814_2-godrej-yummiez-crispy-chicken-bites.jpg"
+    },
+    "barcode": "8902756800144"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318814_2-godrej-yummiez-crispy-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318814-2_2-godrej-yummiez-crispy-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318814-3_2-godrej-yummiez-crispy-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318814-4_2-godrej-yummiez-crispy-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318814-5_2-godrej-yummiez-crispy-chicken-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318814-6_1-godrej-yummiez-crispy-chicken-bites.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the delightful taste of Godrej Yummiez Crispy Chicken Bites, a culinary masterpiece crafted for chicken lovers. Made from premium boneless chicken and expertly seasoned with a blend of natural ingredients, these bite-sized munchies offer a perfect balance of crunch and succulence. Whether enjoyed on their own or with your favourite dip, these crispy delights are perfect for any occasion, from casual gatherings to satisfying snack cravings throughout the day. With a crunchy exterior and a juicy interior, each bite promises a delicious adventure, making Godrej Yummiez Crispy Chicken Bites a must-try for all chicken enthusiasts.",
+   "ingredients": "Chicken Meat (60%), Water, Refined Palmolein Oil, Pre-dust {Refined Wheat Flour, Starch, Wheat Gluten, Egg Powder, lodised Salt, Baking Powder (INS 450 (i), INS 500 (i), Edible Vegetable Oil (Palm), Antioxidant (INS 300), Stabiliser (INS 461)}, Breader {Refined Wheat Flour, Starch, lodised Salt, Stabilisers (INS 1404, INS 450(i), INS 412), Spices And Condiments, Raising Agent (INS 500(i1)), Edible Vegetable Oil (Palm)}, Batter {Stabilisers (INS 1404, INS 415), Raising Agents (INS 450(i), INS 500(i), Natural Flavour}, Marinade {Natural And Nature Identical Flavourings, Acidity Regulator (INS 330), Stabilisers (INS 461, INS 415)}, Texturiser (INS 451(i)).\nAllergen Advice: Contains Egg, Milk, Soy & Wheat.\nMay contain Nuts.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g per serve",
+    "Energy (Kcal)": "195.86",
+    "Protein (g)": "18.27",
+    "Total Carbohydrates (g)": "14.72",
+    "Total Sugar (g)": "2.16",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "7.10",
+    "Saturated Fatty Acids (g)": "3.11",
+    "Trans Fatty Acids (g)": "0.00",
+    "Cholesterol (mg)": "30.26",
+    "Sodium (mg)": "773.11"
+   },
+   "storageInstructions": "Keep in a cool, dry place away from direct sunlight and heat. Consume within the best before date.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Fried Chicken",
+  "handle": "crispy-fried-chicken",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425g",
+    "price": "390",
+    "compare_at_price": "390",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318813_2-godrej-yummiez-crispy-fried-chicken.jpg"
+    },
+    "barcode": "8902756800120"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318813_2-godrej-yummiez-crispy-fried-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318813-2_2-godrej-yummiez-crispy-fried-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318813-3_2-godrej-yummiez-crispy-fried-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318813-4_2-godrej-yummiez-crispy-fried-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318813-5_2-godrej-yummiez-crispy-fried-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318813-6_1-godrej-yummiez-crispy-fried-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the delectable crunch of Godrej Yummiez Crispy Fried Chicken, made with 60% premium chicken and a blend of high-quality ingredients. Expertly seasoned and coated, these juicy chicken pieces are fried to perfection, offering a burst of flavour and satisfying texture in every bite. Crafted with natural spices, refined wheat flour, and carefully selected components, this crispy fried chicken is a true delight, free from any artificial chemicals or preservatives. Whether enjoyed as a snack or as part of a meal, these crispy fried chicken pieces are sure to satisfy your cravings for something truly delicious and satisfying.",
+   "ingredients": "Chicken Meat (60%), Water, Refined Palmolein Oil, Pre-dust\n{Refined Wheat Flour, Starch, Wheat Gluten, Egg Powder, lodised Salt, Baking\nPowder (INS 450(), INS 500(ii), Edible Vegetable Oil (Palm), Antioxidant (INS\n300), Stabiliser (INS 461)}, Breader {Refined Wheat Flour, Starch, lodised\nSalt, Stabilisers (INS 1404, INS 450i, INS 412), Spices And Condiments, Raising\nAgent (INS 500(ii)), Edible Vegetable Oil (Palm)}, Batter {Stabilizers (INS\n1404, INS 415), Raising Agents (INS 450(i), INS 500(i1), Natural Flavour},\nMarinade {Natural And Nature Identical Flavourings, Acidity Regulator (INS\n330), Stabilisers (INS 461, INS 415)}, Texturiser (INS 451(i))",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100 g",
+    "Serving Size": "150 g per serve",
+    "Energy (Kcal)": "242.32",
+    "Protein (g)": "12.79",
+    "Total Carbohydrates (g)": "20.70",
+    "Total Sugar (g)": "4.02",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "12.04",
+    "Saturated Fatty Acids (g)": "4.70",
+    "Trans Fatty Acids (g)": "0.00",
+    "Cholesterol (mg)": "35.20",
+    "Sodium (mg)": "664.12"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Refrigerate after opening",
+   "manufacturerName": "Godrej Tyson Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Garlic Fingers",
+  "handle": "chicken-garlic-fingers",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "257",
+    "compare_at_price": "257",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005422_5-yummiez-chicken-fingers-garlic.jpg"
+    },
+    "barcode": "8902756421929"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005422_5-yummiez-chicken-fingers-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005422-2_3-yummiez-chicken-fingers-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005422-3_3-yummiez-chicken-fingers-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005422-4_3-yummiez-chicken-fingers-garlic.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005422-5_3-yummiez-chicken-fingers-garlic.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Succulent chicken finger bites infused with rich garlic flavor and coated for extra crunch. Ideal for snacking or serving with dips.",
+   "ingredients": "Chicken Meat (52.7%), Water, Breadcrumbs {Wheat Flour, Yeast, Salt, Permitted Bread Improvers, Preservative (INS 282) And Acidity Regulator (INS 260)}, Edible Vegetable Oil (Refined Palmolein Oil), Batter {Wheat Flour, Corn Flour, Corn Starch, Salt And Emulsifier (INS 466)}, Seasoning [Garlic (1.9%), Onion, Salt, Spices, Herbs & Spice Extracts], Soy Protein, Iodized Salt, White Pepper And Texturizer (INS 451(i))",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "236.0 kcal",
+    "Total Carbohydrates": "14.97 g",
+    "of Which Sugar": "<0.1 g",
+    "Protein": "14.12 g",
+    "Total Fat": "14.15 g",
+    "Total Saturated Fat": "5.22 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Magic Balls",
+  "handle": "chicken-magic-balls",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "290",
+    "compare_at_price": "290",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185859_2-yummiez-chicken-magic-ball.jpg"
+    },
+    "barcode": "8902756490260"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185859_2-yummiez-chicken-magic-ball.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185859-2_1-yummiez-chicken-magic-ball.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185859-3_1-yummiez-chicken-magic-ball.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185859-4_1-yummiez-chicken-magic-ball.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185859-5_1-yummiez-chicken-magic-ball.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Enjoy a burst of flavours in every bite with the Godrej Yummiez Chicken Magic Ball. Chicken starters are delicious all by themselves, and Godrej Yummiez brings you a divine choice with the Chicken Magic Ball. Enjoy the added cheese and flavour to your chicken starter, pair them with some scrambled eggs, bread or dips, and your meal is nearly ready. Easy to cook, these Magic Balls are a delight to have in a meal or as a snack. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Chicken Meat (56.16%), Soya (10%), Water, Edible Vegetable Oil (Refined Palmolein Oil), Batter {Wheat Flour, Corn Flour, Corn Starch, Salt, Emulsifier Sodium Carboxymethyl Cellulose (INS 466)}, Chilli, Onion, Garlic, Ginger, Coriander, Iodised Salt, Spices & Condiments And Sodium Nitrite (INS 250)",
+   "nutritionalInfo": {
+    "Energy": "204.70 kcal",
+    "Total Carbohydrates": "11.22 g",
+    "Of Which Sugar": "<0.50 g",
+    "Protein": "14.22 g",
+    "Total Fat": "9.45 g",
+    "Total Saturated Fat": "3.9 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "*Store in deep freezer at -18°c",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Party Pack",
+  "handle": "chicken-party-pack",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600g",
+    "price": "375",
+    "compare_at_price": "375",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/268702_5-yummiez-chicken-nuggets-nonveg-party-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268702_5-yummiez-chicken-nuggets-nonveg-party-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268702-2_3-yummiez-chicken-nuggets-nonveg-party-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268702-3_3-yummiez-chicken-nuggets-nonveg-party-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268702-4_3-yummiez-chicken-nuggets-nonveg-party-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268702-5_3-yummiez-chicken-nuggets-nonveg-party-pack.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Elevate your dinner party with the Godrej Yummiez Party Pack, a delightful selection of restaurant-style chicken appetisers. Crafted with hand-picked, high-quality ingredients, these crispy snacks offer a burst of flavour and texture that will delight your taste buds. Indulge in a variety of options, including Chicken Nuggets, Chicken Garlic Fingers, and Chicken Popcorn, all rich in protein to provide nourishment and energy while aligning with your dietary goals. Effortlessly satisfy your cravings on busy evenings or when entertaining guests, as this convenient pack is the perfect solution for quick and easy meal preparation. Savour the multiple layers of flavour and experience the restaurant-quality taste in the comfort of your own home.",
+   "ingredients": "Chicken Meat (52%), Water, Breadcrumbs {Wheat Flour, Yeast, Salt, Permitted Bread Improvers, Preservative (INS 282) And Acidity Regulator (INS260)}, Edible Vegetable Oil (RBD Palmolein), Batter (Wheat Flour, Corn Flour, Corn Starch, Salt And Emulsifier (INS 466)), Soy, Isolated Soy Protein, Iodized Salt, Spices & Condiments And Texturizer (INS 451(i))., Chicken Meat (52.7%), Water, Breadcrumbs {Wheat Flour, Yeast, Salt, Permitted Bread Improvers, Preservative (INS 282) And Acidity Regulator (INS 260)}, Edible Vegetable Oil (Refined Palmolein Oil), Batter (Wheat Flour, Corn Flour, Corn Starch, Salt And Emulsifier (INS 466)), Seasoning (Garlic (1.9%), Onion, Salt, Spices, Herbs & Spice Extracts), Soy Protein, Iodized Salt, White Pepper And Texturizer (INS 451(i))., Chicken Meat (58%), Water, Breadcrumbs {Wheat Flour, Yeast, Salt, Permitted Bread Improvers, Preservative (INS 282) And Acidity Regulator (INS 260)}, Batter {Wheat Flour, Corn Flour, Corn Starch, Salt And Emulsifier (INS 466)}, Edible Vegetable Oil (Refined Palmolein Oil), Soy Protein, Texturized Soy Protein, Iodized Salt, Dextrose, Garlic, White Pepper, Black Pepper And Lemon Juice.",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "187.8 kcal",
+    "Total Carbohydrates": "3.13 g",
+    "of Which Sugar": "<1.0 g",
+    "Protein": "16.01 g",
+    "Total Fat": "12.36 g",
+    "Total Saturated Fat": "10.25 g",
+    "Total Trans Fat": "0.00 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Seekh Kabab",
+  "handle": "chicken-seekh-kabab",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "360g",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005421_8-yummiez-chicken-seekh-kabab.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005421_8-yummiez-chicken-seekh-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005421-2_6-yummiez-chicken-seekh-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005421-3_6-yummiez-chicken-seekh-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005421-4_6-yummiez-chicken-seekh-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005421-5_6-yummiez-chicken-seekh-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005421-6_2-yummiez-chicken-seekh-kabab.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Succulent chicken seekh kebabs seasoned with authentic Indian spices. A convenient appetizer or meal accompaniment with restaurant-style taste.",
+   "ingredients": "Chicken Meat (59%), Water, Bread Crumb (Maida, Yeast, Salt, Dextrose, Preservative (INS 282) & Acidity Regulator (INS 260)), Fresh Vegetables (Green Chilli, Ginger, Garlic, Coriander Leaves, Onion, Lemon), Soya, Iodized Salt, Spices & Condiments (Seasoning Mix), Texturizer (INS 451(i))",
+   "nutritionalInfo": {
+    "Energy": "157.25 kcal",
+    "Total Carbohydrates": "10.02 g",
+    "of Which Sugar": "0.0 g",
+    "Protein": "14.06 g",
+    "Total Fat": "6.77 g",
+    "Total Saturated Fat": "3.08 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Lucknowi Seekh Kabab",
+  "handle": "chicken-lucknowi-seekh-kabab",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/294238_7-yummiez-chicken-kabab-lucknow-seekh.jpg"
+    },
+    "barcode": "8902756780019"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294238_7-yummiez-chicken-kabab-lucknow-seekh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294238-2_3-yummiez-chicken-kabab-lucknow-seekh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294238-3_3-yummiez-chicken-kabab-lucknow-seekh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294238-4_3-yummiez-chicken-kabab-lucknow-seekh.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294238-5_3-yummiez-chicken-kabab-lucknow-seekh.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Chicken Lucknowi Seekh Kabab, four words described in one - FEAST! An Indian favourite starter made to perfection with the juiciest chicken, garden fresh vegetables and secret blend of spices. Its time for a family get together!\nSavour the exquisite taste of Godrej Yummiez Chicken Lucknowi Seekh Kabab, a delightful blend of succulent chicken and authentic spices. Each kabab captures the rich culinary heritage of Lucknow, offering a gourmet experience in every bite. Perfect for any occasion, these kababs promise a burst of flavour and tradition.",
+   "ingredients": "Chicken Meat (64%), Water, Breadcrumbs {Wheat Flour, Yeast, Salt, Permitted Bread Improvers, Preservatives (INS 282), Acidity Regulator (INS260)}, Spices & Condiments, Onion, Soy Protein, Iodized Salt, Texturizer {INS 451(i)}, Lemon Juice",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "171.00 kcal",
+    "Total Carbohydrates": "9.66 g",
+    "of Which Sugar": "<0.50 g",
+    "Protein": "15.69 g",
+    "Total Fat": "7.50 g",
+    "Total Saturated Fat": "2.33 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Galouti Kabab",
+  "handle": "chicken-galouti-kabab",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "240g",
+    "price": "215",
+    "compare_at_price": "215",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40247798_1-yummiez-chicken-galouti-kabab-spice-mix-ready-to-cook-no-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40247798_1-yummiez-chicken-galouti-kabab-spice-mix-ready-to-cook-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40247798-2_1-yummiez-chicken-galouti-kabab-spice-mix-ready-to-cook-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40247798-3_1-yummiez-chicken-galouti-kabab-spice-mix-ready-to-cook-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40247798-4_1-yummiez-chicken-galouti-kabab-spice-mix-ready-to-cook-no-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40247798-5_1-yummiez-chicken-galouti-kabab-spice-mix-ready-to-cook-no-preservatives.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Godrej Yummiez Chicken Galouti Kabab can be a perfect starter and can go with any main dish.\nChicken Galouti Kabab is also known as the King of Kebabs. The recipe is a very simple one but the richness of spices makes it very special and royal. Yummiez Chicken Galouti kabab is made with tender and soft chicken which is seasoned with fried onion, ginger, and garlic. Made to perfection, this kabab is sure to make you get lost in a different era altogether. Enjoy the royalty in each and every strand of chicken.",
+   "ingredients": "Chicken Meat, Water, Gram Flour, Seasoning, Salt, Fried Onion, Ginger, Chilli, Garlic, Spices, Tenderizer, Added Flavours",
+   "usageInstructions": "The perfect choice for your appetizer plates, a great addition to your evening snacking menu. Super easy to make.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Hariyali Kabab",
+  "handle": "chicken-hariyali-kabab",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "305",
+    "compare_at_price": "305",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185858_3-yummiez-chicken-hariyali-kabab.jpg"
+    },
+    "barcode": "8902756780200"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185858_3-yummiez-chicken-hariyali-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185858-2_2-yummiez-chicken-hariyali-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185858-3_2-yummiez-chicken-hariyali-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185858-4_2-yummiez-chicken-hariyali-kabab.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185858-5_2-yummiez-chicken-hariyali-kabab.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Godrej Yummiez Chicken Hariyali Kabab is the perfect starter to serve at your next house party!\nThese Godrej Yummiez Chicken Hariyali Kababs are ultra-delicious, soft, juicy and tender. This ready-to-cook marinated meat dish is 100% premium flavours, with no artificial colours. This Godrej Yummiez Chicken Hariyali Kabab can be prepared in minutes by just cooking it in a preheated oven for about 10 minutes. Serve this dish with a side of green mint chutney or even a crunchy salad. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.\nExplore a delicious, premium quality range of ready-to-cook frozen meals and snacks from Godrej Yummiez only on Big Basket.",
+   "ingredients": "Chicken Meat (59%), Water, Green Vegetable (5%) {Mint & Coriander}, Edible Vegetable Oil (Refined Palmolein Oil), Soya Protein, Ginger, Garlic, Green Chilli, Breadcrumb {Maida Flour, Yeast, Salt, Dextrose, Preservative (INS 282) & Acidity Regulator (INS 260)}, Maida, Salt, Onion, Lemon, Texturizer (INS 451 (1)).",
+   "usageInstructions": "The perfect choice for your appetizer plates, a great addition to your evening snacking menu. Super easy to make.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Punjabi Tikka",
+  "handle": "chicken-punjabi-tikka",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "360g",
+    "price": "304",
+    "compare_at_price": "304",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/294237_7-yummiez-punjabi-tikka-chicken.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294237_7-yummiez-punjabi-tikka-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294237-2_4-yummiez-punjabi-tikka-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294237-3_4-yummiez-punjabi-tikka-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294237-4_4-yummiez-punjabi-tikka-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/294237-5_4-yummiez-punjabi-tikka-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the tantalizing flavours of Godrej Yummiez Punjabi Tikka - Chicken, a classic appetiser that's perfect for any occasion. Crafted with the finest, hand-picked ingredients, this ready-to-cook frozen meal offers an authentic taste experience, combining succulent chicken with rich Punjabi spices. Enjoy the convenience of a delicious, aromatic dish in just minutes, without compromising on quality or flavour. Whether you're hosting a dinner party or looking for a quick and satisfying meal, this Yummiez range is the ideal choice for busy days or when you have guests over. Treat your taste buds to the exceptional taste and texture of this premium quality offering from Godrej Yummiez, available exclusively on Big Basket.",
+   "ingredients": "Chicken Meat (65%), Water, Spices And Condiments (Chilli, Cumin, Coriander, Ginger, Cardamom, Black Pepper, Cinnamon, Bay Leaves, Clove, Parsley, Kasuri Methi), Salt, Dehydrated Garlic Powder, Acidity Regulators (Ins 451(I) & Ins330), Spice Extracts (Paprika Oleoresin), Milk Solids, Tomato Powder, Thickener (Ins 415), Curd, Starch (Ins 1410), Edible Vegetable Oil And Green Chilli, Contains Added Flavour- Natural And Nature Identical Flavouring Substances",
+   "nutritionalInfo": {
+    "Per": "100g Serving_Size: 100g",
+    "Energy": "225.77 kcal",
+    "Total Carbohydrates": "20.97 g",
+    "Of Which Sugar": "0.0 g",
+    "Protein": "19.25 g",
+    "Total Fat": "3.71 g",
+    "Total Saturated Fat": "3.40 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "storageInstructions": "Store in deep freezer at -18°C *Do not refreeze once thawed.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Amritsari Chicken Tikka",
+  "handle": "amritsari-chicken-tikka",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "290g",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40214085_1-yummiez-amritsari-chicken-tikka.jpg"
+    },
+    "barcode": "8902756280175"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214085_1-yummiez-amritsari-chicken-tikka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214085-2_1-yummiez-amritsari-chicken-tikka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214085-3_1-yummiez-amritsari-chicken-tikka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214085-4_1-yummiez-amritsari-chicken-tikka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214085-5_1-yummiez-amritsari-chicken-tikka.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Godrej Yummiez Amritsari Chicken Tikka can be used as a perfect side to Rotis or parathas or kulchas.\nGodrej Yummiez Amritsari Chicken Tikka has been made from tender and juicy chicken so that you can enjoy the taste of Amritsar right at home. Made with the chef's secret recipe including curd and the signature ajwain seeds along with other spices, you can relish this truly Punjabi delicacy along with rotis, parathas or as a side to complement any main course. Serve this dish to your guests to win their hearts!",
+   "ingredients": "Chicken Meat, Curd, Mixed Spices, Chiili, Ajwain, Fennel, Edible oil, and refined sunflower oil, Ginger, Acetic acid, Benzoates, Garlic, Gram Flour",
+   "usageInstructions": "The perfect choice for your appetizer plates, a great addition to your evening snacking menu. Super easy to make.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Murgh Malai Chicken Tikka",
+  "handle": "murgh-malai-chicken-tikka",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "290g",
+    "price": "279",
+    "compare_at_price": "279",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40214084_1-yummiez-murgh-malai-chicken-tikka.jpg"
+    },
+    "barcode": "8902756280168"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214084_1-yummiez-murgh-malai-chicken-tikka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214084-2_1-yummiez-murgh-malai-chicken-tikka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214084-3_1-yummiez-murgh-malai-chicken-tikka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214084-4_1-yummiez-murgh-malai-chicken-tikka.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40214084-5_1-yummiez-murgh-malai-chicken-tikka.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Godrej Yummiez Murgh Malai Chicken Tikka is a seamless way to impress your guests when they come over for dinner.\nThe Godrej Yummiez Murgh Malai Chicken Tikka is made with only the best quality ingredients. The chicken pieces are soft, juicy and full of flavour. The unique and delicious blend of cream and spices gives you a refreshing and satisfying feel that ensures a wholesome meal experience. This gourmet chicken dish is safe for you and nutritious as well. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.\nExplore a delicious, premium quality range of ready-to-cook frozen meals and snacks from Godrej Yummiez only on Big Basket.",
+   "ingredients": "Chicken Meat (71.84%), Milk Cream (7.74%), Curd, Cheese {Emulsifiers (E331 (ii), E 452(i), E 340(i) And E 339 (i), Preservatives (E200)}, Water, Gram Flour, Edible Vegetable Oil (Sunflower Oil), Garlic Paste (1.26%) {Acetic Acid (E 260), Benzoates (E 211)}, Salt, Ginger Paste (0.97%) {Acetic Acid (E 260), Benzoates (E 211)}, Black Pepper (0.39%), White Pepper, Green Cardamom (0.10%).",
+   "usageInstructions": "The perfect choice for your appetizer plates, a great addition to your evening snacking menu. Super easy to make.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Lasooni Tikka",
+  "handle": "chicken-lasooni-tikka",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "275g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005420_5-yummiez-lasooni-tikka-chicken.jpg"
+    },
+    "barcode": "8902756280106"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005420_5-yummiez-lasooni-tikka-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005420-2_4-yummiez-lasooni-tikka-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005420-3_4-yummiez-lasooni-tikka-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005420-4_4-yummiez-lasooni-tikka-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005420-5_4-yummiez-lasooni-tikka-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Godrej Yummiez Lasooni Tikka - Chicken is a delicious and rich dish to go with your favourite roti or rice. Made with the best quality Chicken, this ready-to-cook delicious chicken tikka makes your work in the kitchen super easy. This Godrej Yummiez Lasooni Tikka - Chicken is rich in flavour, and savoury and tastes amazing with a salad or some Indian bread. You can prepare this curry for lunch or dinner or even for when you have guests at home.\nThis Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Chicken Meat (68.75%), Water, Spices And Condiments (7%), [Garlic (4.5%), Red Pepper, Ginger, Red Chilli, Black Pepper], Milk Solids, Edible Vegetable Oil (Sunflower), Iodised Salt, Soya Protein, Texturizer (INS 451(i)), Gelling Agent (INS 47), Garlic Oleoresin, Soy, Wheat Flour, Starch, Emulsifier (INS 471, INS 472e & INS 481(i)), Antioxidant (INS 3) & Flour Treatment Agent (INS 11)",
+   "nutritionalInfo": {
+    "Energy": "228.9 kcal",
+    "Protein": "20.17 g",
+    "Carbohydrate": "1.47 g",
+    "Added Sugar": "— g (label provides only “of which sugar <0.5 g”)",
+    "Total Fat": "5.52 g",
+    "Saturated Fat": "1.89 g",
+    "Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "*Always store in deep freezer at minus 18°C",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Burger Patty",
+  "handle": "chicken-burger-patty",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40000517_6-yummiez-chicken-burger-patty-ready-to-cook.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40275702_1-yummiez-chicken-burger-patty-no-added-preservatives-freshness-locked-yummy-treat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000517_6-yummiez-chicken-burger-patty-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000517-2_3-yummiez-chicken-burger-patty-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000517-3_3-yummiez-chicken-burger-patty-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000517-4_3-yummiez-chicken-burger-patty-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40000517-5_3-yummiez-chicken-burger-patty-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40275702_1-yummiez-chicken-burger-patty-no-added-preservatives-freshness-locked-yummy-treat.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Savour the succulence of Godrej Yummiez Chicken Burger Patty, a culinary masterpiece crafted for connoisseurs of taste. Impeccably seasoned and effortlessly versatile, each bite promises a symphony of flavour. Perfectly grill or fry to golden perfection, elevating every meal with tender, juicy goodness that defines the essence of gourmet dining.",
+   "ingredients": "Chicken Meat (53%), Breadcrumbs [Wheat Flour, Yeast, Salt, Permitted Bread Improvers, Preservative (INS 282) And Acidity Regulator (INS 260)], Water, Edible Vegetable Oil (Refined Palmolein Oil), Batter [Wheat Flour, Corn Flour, Corn Starch, Salt and Emulsifier (INS 466)], Soy Protein, Spices & Condiments, Iodized Salt, Texturizer (INS 451(i))",
+   "nutritionalInfo": {
+    "Energy": "291.52 kcal",
+    "Total Carbohydrates": "22.84 g",
+    "of which Sugar": "2.80 g",
+    "Protein": "12.94 g",
+    "Total Fat": "11.40 g",
+    "Total Saturated Fat": "4.53 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Momos",
+  "handle": "chicken-momos",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "420g",
+    "price": "184",
+    "compare_at_price": "184",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347_3-godrej-yummiez-chicken-momos.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347_3-godrej-yummiez-chicken-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347-2_2-godrej-yummiez-chicken-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347-3_2-godrej-yummiez-chicken-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347-4_2-godrej-yummiez-chicken-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347-5_2-godrej-yummiez-chicken-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347-6_2-godrej-yummiez-chicken-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347-7_2-godrej-yummiez-chicken-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348347-8_2-godrej-yummiez-chicken-momos.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Soft on the outside and bursting with juicy chicken inside, Godrej Yummiez Chicken Momos are a flavour-packed delight. Made with quality ingredients and authentic spices, they offer the perfect bite every time. Easy to steam or fry, these momos make for a quick, satisfying snack or appetiser that's sure to please every momo lover at home.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Cheese Momos",
+  "handle": "chicken-cheese-momos",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "185",
+    "compare_at_price": "185",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348_2-godrej-yummiez-chicken-cheese-momos.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348_2-godrej-yummiez-chicken-cheese-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348-2_1-godrej-yummiez-chicken-cheese-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348-3_1-godrej-yummiez-chicken-cheese-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348-4_1-godrej-yummiez-chicken-cheese-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348-5_1-godrej-yummiez-chicken-cheese-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348-6_1-godrej-yummiez-chicken-cheese-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348-7_1-godrej-yummiez-chicken-cheese-momos.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348348-8_1-godrej-yummiez-chicken-cheese-momos.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Godrej Yummiez Chicken Cheese Momos are a delicious fusion of juicy chicken and creamy cheese wrapped in a soft, thin momo shell. Ready in minutes, these frozen delights are perfect for quick snacks or party appetisers. Just steam, fry, or microwave for a mouth-watering experience that's sure to satisfy your cravings.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Breakfast Sausages",
+  "handle": "chicken-breakfast-sausages",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "145",
+    "compare_at_price": "145",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002833_6-yummiez-breakfast-sausages.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185860_3-yummiez-chicken-breakfast-sausages.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002833_6-yummiez-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002833-2_3-yummiez-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002833-3_3-yummiez-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002833-4_3-yummiez-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002833-5_3-yummiez-breakfast-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185860_3-yummiez-chicken-breakfast-sausages.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Lightly seasoned chicken sausages crafted for a hearty breakfast. Enjoy grilled, pan-fried, or paired with eggs and toast.",
+   "ingredients": "Chicken Meat (62%), Water, Starch, Soy Protein, Iodized Salt, Texturizer (INS 451(i)), Maltodextrin Powder And Anticaking Agent (INS 551)",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "145.24 kcal",
+    "Total Carbohydrates": "7.87 g",
+    "of Which Sugar": "0.00 g",
+    "Protein": "11.04 g",
+    "Total Fat": "7.02 g",
+    "Total Saturated Fat": "2.59 g",
+    "Total Trans Fat": "0.00 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Pepper & Herb Sausages",
+  "handle": "chicken-pepper-herb-sausages",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002836_6-yummiez-pepper-herb-chicken-sausages.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "335",
+    "compare_at_price": "335",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308312_2-godrej-yummiez-chicken-pepper-herb-sausages.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002836_6-yummiez-pepper-herb-chicken-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002836-2_4-yummiez-pepper-herb-chicken-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002836-3_4-yummiez-pepper-herb-chicken-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002836-4_4-yummiez-pepper-herb-chicken-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002836-5_4-yummiez-pepper-herb-chicken-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308312_2-godrej-yummiez-chicken-pepper-herb-sausages.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Flavourful chicken sausages infused with aromatic herbs and black pepper. A versatile option for breakfast, sandwiches, and snacks.",
+   "ingredients": "Chicken Meat (68.5%), Water, Pepper And Herb Sausages Seasoning (7%), Salt, Spices & Condiments {Pepper (15.09%), Herb (0.03%)}, Starch, Wheat Flour, Maltodextrin, Stabilizer {INS 451 (i)}, Flavouring {Yeast Extract, Garlic Flavour (Nature Identical)}, Anticaking Agent (INS 551), Acidity Regulator (INS 330), Antioxidant (INS 301), Sodium Nitrite (INS 250), Soya Protein",
+   "nutritionalInfo": {
+    "Energy": "139.5 kcal",
+    "Total Carbohydrates": "7.85 g",
+    "of Which Sugar": "<0.50 g",
+    "Protein": "11.8 g",
+    "Total Fat": "13.6 g",
+    "Total Saturated Fat": "4.64 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Cheese & Onion Sausages",
+  "handle": "chicken-cheese-onion-sausages",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005412_5-yummiez-chicken-sausages-cheese-onion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005412_5-yummiez-chicken-sausages-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005412-2_3-yummiez-chicken-sausages-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005412-3_3-yummiez-chicken-sausages-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005412-4_3-yummiez-chicken-sausages-cheese-onion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005412-5_3-yummiez-chicken-sausages-cheese-onion.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Godrej Yummiez Chicken Sausages - Cheese & Onion are a superb addition to your salads. They are expertly seasoned with spicy onions and savoury cheese flavours. This cheese and onion flavouring blends perfectly with fresh succulent and delicious chicken sausages to provide you with the perfect snack for your kids' lunch box. These sausages are super simple to prepare and save you a lot of time and effort.\nThe Godrej Yummiez range is made from the best quality hand-picked ingredients for exceptional taste and flavour. They are super easy to make and the ideal hunger fix for evenings after work or school. This pack is a seamless choice for busy days or when you have guests over. Explore a delicious premium quality range of ready-to-cook frozen meals and snacks from Godrej Yummiez only on Big Basket.",
+   "ingredients": "Chicken Meat (55%), Water, Cheese (9%), [Cheddar Cheese, Milk Solids, Emulsifiers (INS 452(i), INS 340(i), INS 339(i) & INS 331), Common Salt, Preservatives (INS 234 & INS 200), Acidity Regulatory (INS 270)], Wheat Flour, Isolated Soy Protein, Starch, Dehydrated Onion, Iodized Salt, Cheese Powder (1.5%), Spices & Condiments, Texturizer (INS 451(i)), Sugar And Preservatives (INS 250)",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "164.0 kcal",
+    "Total Carbohydrates": "8.91 g",
+    "of Which Sugar": "<0.5 g",
+    "Protein": "14.51 g",
+    "Total Fat": "9.08 g",
+    "Total Saturated Fat": "4.25 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Chilli Sausages",
+  "handle": "chicken-chilli-sausages",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/268192_3-yummiez-chicken-chilli-sausages.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268192_3-yummiez-chicken-chilli-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268192-2_2-yummiez-chicken-chilli-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268192-3_2-yummiez-chicken-chilli-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268192-4_2-yummiez-chicken-chilli-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268192-5_2-yummiez-chicken-chilli-sausages.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268192-6_1-yummiez-chicken-chilli-sausages.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Juicy chicken sausages seasoned with a spicy chilli blend for a bold taste. Great for grilling, stir-fries, or breakfast meals.",
+   "ingredients": "Chicken Meat (56%), Water, Refined Wheat Flour, Soy Protein Products, Wheat Fibre, Onion, Mixed Spices And Condiments, Salt, Modified Starch (INS 1420), Chilli (0.35%), Texturizer(INS 451(i)), Colour Fixative (INS 250)",
+   "nutritionalInfo": {
+    "Per": "100g Serving_Size: 56g per serve",
+    "Energy (Kcal)": "155.26",
+    "Protein (g)": "11.44",
+    "Total Carbohydrates (g)": "9.25",
+    "Total Sugar (g)": "<0.50",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "7.90",
+    "Saturated Fatty Acids (g)": "2.32",
+    "Trans Fatty Acids (g)": "<0.10",
+    "Cholesterol (mg)": "40.02",
+    "Sodium (mg)": "310.68"
+   },
+   "storageInstructions": "Store in a deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Italian Sausages",
+  "handle": "chicken-italian-sausages",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40019624_4-yummiez-italian-sausages-chicken.jpg"
+    },
+    "barcode": "8902756170254"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019624_4-yummiez-italian-sausages-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019624-2_3-yummiez-italian-sausages-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019624-3_3-yummiez-italian-sausages-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019624-4_3-yummiez-italian-sausages-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40019624-5_3-yummiez-italian-sausages-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Godrej Yummiez Italian - Sausages Chicken brings you quick sausages for your meal. The Godrej Yummiez Italian - Sausages Chicken serves as a meal for one person. The ingredients used contain no added colour or preservatives. It can be prepared very quickly. Open the pack and fry or grill the sausages with some oil on a pan. Enjoy true Italian flavours like never before. Use this when you need a quick meal or make this part of your pasta, bread dishes or noodles. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Chicken Meat (62%), Water, Italian Herbs Premix {Starch, Soy Protein, lodised Salt, Dehydrated Onion, Maltodextrin Powder, Texturiser (INS 451(i)), Basil, Yeast Extract, Marjoram, Oregano, Rosemary, Dehydrated Garlic, Dextrose, Spices & Condiments}",
+   "nutritionalInfo": {
+    "Energy": "129.2 kcal",
+    "Total Carbohydrates": "5.34 g",
+    "Of Which Sugar": "<0.5 g",
+    "Protein": "12.25 g",
+    "Total Fat": "9.72 g",
+    "Total Saturated Fat": "3.27 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "*Always store in deep freezer at minus 18°c",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Breakfast Salami",
+  "handle": "chicken-breakfast-salami",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002831_6-yummiez-chicken-breakfast-salami.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002831_6-yummiez-chicken-breakfast-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002831-2_4-yummiez-chicken-breakfast-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002831-3_4-yummiez-chicken-breakfast-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002831-4_4-yummiez-chicken-breakfast-salami.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002831-5_4-yummiez-chicken-breakfast-salami.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Delicious sliced chicken salami with a mild, savoury flavour profile. Perfect for sandwiches, wraps, pizzas, and quick meals.",
+   "ingredients": "Chicken Meat (62%), Water, Starch, Soy Protein, Iodized Salt, Texturizer (INS 451 (i)), Maltodextrin Powder And Anticaking Agent (INS 551)",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "145.24 kcal",
+    "Total Carbohydrates": "7.87 g",
+    "of Which Sugar": "0.0 g",
+    "Protein": "11.04 g",
+    "Total Fat": "7.43 g",
+    "Total Saturated Fat": "3.55 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Chilli Salami",
+  "handle": "chicken-chilli-salami",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "170",
+    "compare_at_price": "170",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/268211_2-yummiez-salami-chicken-chilli.jpg"
+    },
+    "barcode": "8902756270091"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268211_2-yummiez-salami-chicken-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268211-2_2-yummiez-salami-chicken-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268211-3_2-yummiez-salami-chicken-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268211-4_2-yummiez-salami-chicken-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268211-5_2-yummiez-salami-chicken-chilli.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/268211-6_1-yummiez-salami-chicken-chilli.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge in the delectable flavours of this Godrej Yummiez Chicken Salami, crafted with the finest quality meat and expertly seasoned to perfection. Sliced thin for easy application, this versatile salami is the perfect addition to your favourite burgers, subs, salads and sandwiches. Delicately blended with the finest red and green chilli flakes, this salami will liven up any dish, delivering a mouthwatering taste experience. Savour the juicy texture and robust flavour, perfect for busy days or when entertaining guests.\nPacked with protein and nutrients, this halal-certified salami is freshness-locked at -18 degrees Celsius using individual quick freezing technology, ensuring maximum freshness and flavour. Enjoy the chef's tip and roll the hot sausages in chapati bread with a vibrant vegetable salad, cheese slice and dressing for a delightful meal.",
+   "ingredients": "Chicken Meat (56%), Water, Refined Wheat flour, Soy Protein Products, Wheat Fibre, Onion, Mixed Spices And Condiments, Salt, Modified Starch(INS 1420), Chilli (0.35%), Texturizer(INS 451(i)), Colour Fixative (INS 250)",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Serving Size": "50g per serve",
+    "Energy (Kcal)": "160.72",
+    "Protein (g)": "12.33",
+    "Total Carbohydrates (g)": "9.70",
+    "Total Sugar (g)": "<0.50",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "7.80",
+    "Saturated Fatty Acids (g)": "2.38",
+    "Trans Fatty Acids (g)": "<0.10",
+    "Cholesterol (mg)": "37.59",
+    "Sodium (mg)": "477.32",
+    "RDA": "RDA calculated as per FSSAI Labelling & Display Regulation 2020."
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Godrej Tyson Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Pepper & Herb Salami",
+  "handle": "chicken-pepper-herb-salami",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002832_5-yummiez-pepper-herb-salami-chicken.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002832_5-yummiez-pepper-herb-salami-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002832-2_3-yummiez-pepper-herb-salami-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002832-3_3-yummiez-pepper-herb-salami-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002832-4_3-yummiez-pepper-herb-salami-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002832-5_3-yummiez-pepper-herb-salami-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Savour the exquisite blend of Godrej Yummiez Chicken Pepper & Herb Salami, a culinary masterpiece crafted for discerning palates. Delight in tender chicken infused with aromatic herbs and zesty pepper, delivering a symphony of flavour in every bite. Elevate your dining experience with this premium addition to gourmet delicacies.",
+   "ingredients": "Chicken Meat (68.5%), Water, Pepper & Herb Sausages Seasoning (7%), Salt, Spices & Condiments {Pepper (15.09%), Herb (0.03%)}, Starch, Wheat Flour, Maltodextrin, Stabilizer {INS 451 (i)}, Flavouring {Yeast Extract, Garlic Flavour (Nature Identical)}, Anticaking Agent (INS 551), Acidity Regulator (INS 330), Antioxidant (INS 301), Preservative (INS 250), Soya Protein",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "139.5 kcal",
+    "Total Carbohydrates": "7.85 g",
+    "of Which Sugar": "<0.50 g",
+    "Protein": "11.8 g",
+    "Total Fat": "13.6 g",
+    "Total Saturated Fat": "4.64 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Jumbo Prawns",
+  "handle": "jumbo-prawns",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "310",
+    "compare_at_price": "310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318817_1-godrej-yummiez-jumbo-prawns.jpg"
+    },
+    "barcode": "8902756410046"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318817_1-godrej-yummiez-jumbo-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318817-2_1-godrej-yummiez-jumbo-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318817-3_1-godrej-yummiez-jumbo-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318817-4_1-godrej-yummiez-jumbo-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318817-5_1-godrej-yummiez-jumbo-prawns.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Discover the exquisite taste of Godrej Yummiez Prawns, meticulously prepared for your convenience. These prawns are peeled, deveined, and freshly frozen to lock in their natural freshness. The simple yet flavourful combination of shrimp, water, iodised salt, ensures a delectable culinary experience. Perfect for seafood enthusiasts, these prawns are easy to prepare and cook. Please note the allergen advice: contains shrimps. Indulge in the succulent taste of these high-quality prawns, brought to you by Godrej Yummiez, and elevate your culinary creations to new heights. Enjoy the convenience of restaurant-quality prawns in the comfort of your home.",
+   "ingredients": "Shrimp, Water, Lodised Salt, Acidity Regulator (E330), Antioxidant (E331)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "200g",
+    "Energy (kcal)": "79.11 kcal",
+    "Protein (g)": "17.60 g",
+    "Total Carbohydrates (g)": "0.13 g",
+    "Total Sugar (g)": "0.00 g",
+    "Added Sugar (g)": "0.00 g",
+    "Total Fat (g)": "0.91 g",
+    "Saturated Fatty Acids (g)": "0.00 g",
+    "Trans Fatty Acids (g)": "0.00 g",
+    "Cholesterol (mg)": "96.38 mg",
+    "Sodium (mg)": "113.42 mg"
+   },
+   "storageInstructions": "*Always store in deep freezer at minus 18°C",
+   "manufacturerName": "Godrej Tyson Foods LTD",
+   "fssaiLicense": "10012043000037",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Prawns - Large",
+  "handle": "prawns-large",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "280",
+    "compare_at_price": "280",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318816_1-godrej-yummiez-large-prawns.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318816_1-godrej-yummiez-large-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318816-2_1-godrej-yummiez-large-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318816-3_1-godrej-yummiez-large-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318816-4_1-godrej-yummiez-large-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318816-5_1-godrej-yummiez-large-prawns.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Discover the exquisite taste of Godrej Yummiez Prawns, meticulously prepared for your convenience. These premium quality prawns are peeled, deveined, and freshly frozen to lock in their natural freshness and succulent flavour. Unlock the ultimate seafood experience with these large, high-quality prawns that are perfect for a variety of delectable dishes. Whether you're planning to make a flavourful prawn curry, a sizzling stir-fry, or a delightful grilled seafood platter, Godrej Yummiez Frozen Prawns are a convenient and delicious option. Indulge in the convenience of restaurant-quality prawns in the comfort of your home and elevate your culinary creations to new heights with the simple yet flavourful combination of shrimp, water, and iodised salt.",
+   "ingredients": "Shrimp, Water, Lodised Salt, Acidity Regulator (E330), Antioxidant (E331)",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy (kcal)": "79.11",
+    "Protein (g)": "17.60",
+    "Total Carbohydrates (g)": "0.13",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "0.91",
+    "Saturated Fatty Acids (g)": "0.00",
+    "Trans Fatty Acids (g)": "0.00",
+    "Cholesterol (mg)": "96.38",
+    "Sodium (mg)": "113.42"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Prawns - Medium",
+  "handle": "prawns-medium",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "265",
+    "compare_at_price": "265",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318815_1-godrej-yummiez-medium-prawns.jpg"
+    },
+    "barcode": "8902756410022"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318815_1-godrej-yummiez-medium-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318815-2_1-godrej-yummiez-medium-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318815-3_1-godrej-yummiez-medium-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318815-4_1-godrej-yummiez-medium-prawns.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318815-5_1-godrej-yummiez-medium-prawns.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Discover the exquisite taste of Godrej Yummiez Prawns, meticulously prepared for your convenience. These high-quality frozen medium prawns are perfect for seafood enthusiasts, offering a delectable culinary experience. Peeled, deveined, and freshly frozen to lock in their natural freshness, these prawns are easy to prepare and cook, making them a convenient choice for a variety of seafood dishes. Indulge in the succulent taste of these restaurant-quality prawns, whether you're planning to make a prawn curry, stir-fry, or grill. Elevate your culinary creations to new heights with the flavourful combination of shrimp, water, and iodised salt, brought to you by the trusted Godrej Yummiez brand.",
+   "ingredients": "Shrimp, Water, Lodised Salt, Acidity Regulator (E330), Antioxidant (E331)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100g",
+    "Serving Size": "200g",
+    "Energy (kcal)": "79.11",
+    "Protein (g)": "17.60",
+    "Total Carbohydrates (g)": "0.13",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "0.91",
+    "Saturated Fatty Acids (g)": "0.00",
+    "Trans Fatty Acids (g)": "0.00",
+    "Cholesterol (mg)": "96.38",
+    "Sodium (mg)": "113.42"
+   },
+   "storageInstructions": "*Always store in deep freezer at minus 18°C",
+   "manufacturerName": "Godrej Tyson Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Aloo Tikki",
+  "handle": "aloo-tikki",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "121",
+    "compare_at_price": "121",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40055097_1-godrej-yummiez-aloo-tikki.jpg"
+    },
+    "barcode": "8902756340114"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40055097_1-godrej-yummiez-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40055097-2_1-godrej-yummiez-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40055097-3_1-godrej-yummiez-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40055097-4_1-godrej-yummiez-aloo-tikki.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40055097-5_1-godrej-yummiez-aloo-tikki.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Aloo Tikki is an Indian subcontinent snack made of boiled potatoes, onions and various spices. Aloo means potato, and the word Tikki means a small cutlet or croquette. It is served hot along with sound, tamarind and coriander-mint sauce, and sometimes yoghurt or chickpeas.",
+   "ingredients": "Frozen Diced Potato, Water, Dehydrated Potato, Vegetable Oil (Rbd Palmoline Oil & Sunflower Oil), Spices And Salt, Cumin",
+   "nutritionalInfo": {
+    "Serving Size": "100g",
+    "Energy": "170.44 kcal",
+    "Protein": "21.63 g",
+    "Total Fat": "1.70 g",
+    "Total Saturated Fat": "8.68 g",
+    "Total Trans Fat": "0.00 g",
+    "Total Carbohydrates": "0.00 g",
+    "Sugars": "0.00 g"
+   },
+   "storageInstructions": "Store in deep freezer at -18°C.",
+   "manufacturerName": "Vista Processed Foods Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veg Cutlet",
+  "handle": "veg-cutlet",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206343_1-yummiez-veg-cutlet.jpg"
+    },
+    "barcode": "8902756380028"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206343_1-yummiez-veg-cutlet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206343-2_1-yummiez-veg-cutlet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206343-3_1-yummiez-veg-cutlet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206343-4_1-yummiez-veg-cutlet.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206343-5_1-yummiez-veg-cutlet.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Veg Cutlet is a quick and delicious way to end your tiring day at work or college. Tired from a day of nonstop working? Well, the Godrej Yummiez Veg Cutlet is the ideal snack to satiate your hunger. Deep fry or air fry these cutlets for a few minutes and you have deliciously amazing appetisers without spending too much money or even your time!\nBest served with any sauce of your choice but we recommend a mix of mayonnaise or ketchup. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Frozen Diced Vegetables (Potato, Carrot, Peas, Coriander) (53%), Water, Bread Crumb {Maida, Yeast, Salt, Dextrose, Preservative (INS 282) & Acidity Regulator (INS 260)}, Batter {Maida, Corn Starch, Salt, Stabilizer (INS 466) & Raising Agent (INS 500)}, Dehydrated Potato, Edible Vegetable Oil (RBD Palmoline Oil & Sunflower Oil), Ginger Paste, Garlic Paste, Iodized Salt, Spices & Condiments (Seasoning Mix, Cumin Seeds, Turmeric)",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy": "176.30 kCal",
+    "Total Carbohydrates": "25.23 g",
+    "of Which Sugar": "<1 g",
+    "Protein": "3.77 g",
+    "Total Fat": "6.70 g",
+    "Total Saturated Fat": "4.71 g",
+    "Total Trans Fat": "0.00 g"
+   },
+   "storageInstructions": "*Store in deep freezer at minus 18°C",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheese Corn Nuggets",
+  "handle": "cheese-corn-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "235g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "240",
+    "compare_at_price": "240",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002838_5-yummiez-cheese-corn-nuggets.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921-2_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921-3_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921-4_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921-5_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921-6_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921-7_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350921-8_1-godrej-yummiez-cheese-corn-nuggets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Cheese Corn Nuggets are a delightful snack filled with creamy cheese and sweet corn, coated in a crispy golden layer. Perfect for quick bites, party snacks, or evening treats, they can be easily prepared by frying or baking. Serve hot with your favourite dip for a flavourful and satisfying experience.",
+   "manufacturerName": "Godrej Foods Limited",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veg Masala Nuggets",
+  "handle": "veg-masala-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002840_4-yummiez-masala-nuggets-veg-ready-to-cook.jpg"
+    },
+    "barcode": "8906027140373"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002840_4-yummiez-masala-nuggets-veg-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002840-2_3-yummiez-masala-nuggets-veg-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002840-3_3-yummiez-masala-nuggets-veg-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002840-4_3-yummiez-masala-nuggets-veg-ready-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002840-5_3-yummiez-masala-nuggets-veg-ready-to-cook.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Masala Nuggets (Veg) is the perfect pack when you host a party. Godrej Yummiez Masala Nuggets (Veg) are the perfect snack for your evenings. The Masala Nuggets (Veg) are filled with potatoes, veggies and are mixed with spices. These nuggets are easy to cook and they melt-in-your-mouth momo with a perfectly crispy outer layer. Serve with a variety of sauces, such as soy sauce, chilli sauce or even sriracha. A ready-made product that is easy to make and even easier to eat. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Vegetable Mix (53.3%) [Potato, Green Peas, Carrot], Breadcrumbs (Wheat Flour, Dextrose, lodised Salt, Yeast), Water, Edible Vegetable Oil (Refined Palm Oil), Potato Flakes, Batter [Stabiliser (INS 466)], Spices And Condiments {Culinary Paste, Spice Mix}, lodised Salt",
+   "nutritionalInfo": {
+    "Energy": "207 kcal",
+    "Total Carbohydrates": "24.53 g",
+    "Of Which Sugar": "2.9 g",
+    "Protein": "3.81 g",
+    "Total Fat": "10.9 g",
+    "Total Saturated Fat": "5.58 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "*Always store in deep freezer at minus 18°c",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Kadhai Paneer Nuggets",
+  "handle": "crispy-kadhai-paneer-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185861_2-yummiez-crispy-kadhai-paneer-nuggets.jpg"
+    },
+    "barcode": "8902756390065"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185861_2-yummiez-crispy-kadhai-paneer-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185861-2_2-yummiez-crispy-kadhai-paneer-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185861-3_2-yummiez-crispy-kadhai-paneer-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185861-4_2-yummiez-crispy-kadhai-paneer-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185861-5_2-yummiez-crispy-kadhai-paneer-nuggets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Crispy Kadhai Paneer Nuggets are the perfect evening snack for kids.\nThese Godrej Yummiez Crispy Kadhai Paneer Nuggets are crunchy and delicious with a unique desi twist for any and all occasions. These are ready to cook and simply need to be fried. Serve these desi-flavoured Nuggets as a side with your desi dinner spread, or even with dips like mayo or ketchup. Serve these Nuggets at birthday parties, and cocktail parties or even serve them to your kids after school. They have zero trans fats and are safe for your family. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.\nExplore a delicious, premium-quality range of ready-to-cook frozen meals and snacks from Godrej Yummiez only on Big Basket.",
+   "ingredients": "Paneer (17%), Water, Bread Crumb {Maida, Stabilizer (E1420), Salt, Wheat Gluten, Dextrose, Yeast, Edible, Spices And Condiments)}, Frozen Potato (7.50%), Diced Capsicum (6.50%), Potato Flakes, Edible Vegetable Oil (RBD Palmolive Oil), Batter (Maida, Starch, Maize Flour, Salt, E466, Permitted Stabilizer), Spice And Condiments, Fresh Coriander, Corn Flour, Green Chilli, Salt, Lemon.",
+   "usageInstructions": "The perfect choice for your appetizer plates, a great addition to your evening snacking menu. Super easy to make.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Tandoori Paneer Nuggets",
+  "handle": "tandoori-paneer-nuggets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "300g",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185862_2-yummiez-tandoori-paneer-nuggets.jpg"
+    },
+    "barcode": "8902756390034"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185862_2-yummiez-tandoori-paneer-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185862-2_2-yummiez-tandoori-paneer-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185862-3_2-yummiez-tandoori-paneer-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185862-4_2-yummiez-tandoori-paneer-nuggets.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185862-5_2-yummiez-tandoori-paneer-nuggets.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Tandoori Paneer Nuggets are the perfect treat for your kid's birthday bash. These crispy on the outside and tender on the inside Tandoori Paneer Nuggets are simply the best for all occasions. Serve these Tandoori Paneer Nuggets as a side with pasta, noodles, or even with dips like mayonnaise or ketchup. Serve these Nuggets at birthday parties, cocktail parties or even serve them to your kids after school.\nThey have zero trans fats and are safe for your family. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Paneer (27.78%), Water, Bread Crumb (Maida, Stabilizer (E1420), Salt, Wheat Gluten, Dextrose, Yeast, Edible, Spices And Condiment), Potato Flakes, Edible Vegetable Oil (RBD Palmolein Oil), Batter 4.16% (Maida, Starch, Maize Flour, Salt, E466, Permitted Stabilizer), Spice Mix, Fresh Coriander, Corn Flour, Green Chili, Salt, Lemon",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy": "264.84 kCal",
+    "Total Carbohydrates": "34.58 g",
+    "of Which Sugar": "0.00 g",
+    "Protein": "6.70 g",
+    "Total Fat": "11.08 g",
+    "Total Saturated Fat": "1.63 g",
+    "Total Trans Fat": "0.00 g"
+   },
+   "storageInstructions": "*Always store in deep freezer at minus 18°C",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Paneer Pops",
+  "handle": "paneer-pops",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350_2-godrej-yummiez-paneer-pops.jpg"
+    }
+   },
+   {
+    "title": "360g",
+    "price": "295",
+    "compare_at_price": "295",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262355_2-yummiez-paneer-pops.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350_2-godrej-yummiez-paneer-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350-2_1-godrej-yummiez-paneer-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350-3_1-godrej-yummiez-paneer-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350-4_1-godrej-yummiez-paneer-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350-5_1-godrej-yummiez-paneer-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350-6_1-godrej-yummiez-paneer-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350-7_1-godrej-yummiez-paneer-pops.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348350-8_1-godrej-yummiez-paneer-pops.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "How much paneer is too much paneer? In Yummiez Paneer Pops, you will never be short of one. Our chefs have wrapped up these paneer cubes in the tastiest mix of spices, which you will want to continue munching on. Ready to pop up your snack time?",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veg Cheese Fingers",
+  "handle": "veg-cheese-fingers",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "234",
+    "compare_at_price": "234",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/269759_5-yummiez-cheese-finger-veg.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/269759_5-yummiez-cheese-finger-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/269759-2_3-yummiez-cheese-finger-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/269759-3_3-yummiez-cheese-finger-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/269759-4_3-yummiez-cheese-finger-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/269759-5_3-yummiez-cheese-finger-veg.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Elevate your dinner party with the Godrej Yummiez Party Pack, a delightful selection of restaurant-style chicken appetisers. Crafted with hand-picked, high-quality ingredients, these crispy snacks offer a burst of flavour and texture that will delight your taste buds. Indulge in a variety of options, including Chicken Nuggets, Chicken Garlic Fingers, and Chicken Popcorn, all rich in protein to provide nourishment and energy while aligning with your dietary goals. Effortlessly satisfy your cravings on busy evenings or when entertaining guests, as this convenient pack is the perfect solution for quick and easy meal preparation. Savour the multiple layers of flavour and experience the restaurant-quality taste in the comfort of your own home.",
+   "ingredients": "Vegetable Mix (30.6%) [Potato, Carrot, Green Peas], Water, Cheese (16.6%) [Cheese, Water, Milk Solids, Emulsifiers (INS 331, INS 340, INS 452, INS 339), Iodized Salt, Preservative (INS 200)], Breadcrumbs (Wheat Flour, Dextrose, Iodized Salt, Yeast), Edible Vegetable Oil (Refined Palm Oil), Potato Flakes, Batter [Stabilizer (INS 466)], Thickener (INS 1422), Iodized Salt",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "235.9 kcal",
+    "Total Carbohydrates": "23.58 g",
+    "of Which Sugar": "1.3 g",
+    "Protein": "6.03 g",
+    "Total Fat": "10.50 g",
+    "Total Saturated Fat": "5.84 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cheesy Pizza Fingers",
+  "handle": "cheesy-pizza-fingers",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "250g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923-2_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923-3_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923-4_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923-5_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923-6_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923-7_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350923-8_1-godrej-yummiez-cheesy-pizza-fingers.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Cheesy Pizza Fingers combine the flavours of cheese and classic pizza seasoning in a crispy finger-shaped snack. Easy to prepare by frying or baking, they're perfect for parties, evening bites, or casual get-togethers. Serve them hot with ketchup or your favourite dip for a tasty and convenient treat.",
+   "manufacturerName": "Godrej Foods Limited",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veg Sticks",
+  "handle": "veg-sticks",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "320g",
+    "price": "131",
+    "compare_at_price": "131",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185863_2-yummiez-veg-sticks.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185863_2-yummiez-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185863-2_2-yummiez-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185863-3_2-yummiez-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185863-4_2-yummiez-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185863-5_2-yummiez-veg-sticks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Veg Sticks are here to be the highlight of your day. If you've been trying to perfect the crunchy recipes for starters, then here's a simple and quick way to make delicious options for your kids after school. Now, indulge in the Godrej Yummiez Veg Sticks and pair them with mayo, mustard, or ketchup. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Mixed Vegetables (30.23%) (Potato, Corn, Peas, Carrot, Coriander), Water, Bread Crumb {Maida, Stabiliser (E1420), Salt, Wheat Gluten, Dextrose, Yeast, Edible, Spices And Condiments)}, Batter {Maida Flour, Corn Starch, Salt, Stabiliser (INS 466) & Raising Agent (INS 500)}, Edible Vegetable Oil (Refined Palmolein Oil), Garlic, Starch (INS 1420), Wheat Fibre, lodised Salt",
+   "nutritionalInfo": {
+    "Energy": "235.77 kcal",
+    "Total Carbohydrates": "32.7 g",
+    "Of Which Sugar": "0.0 g",
+    "Protein": "3.81 g",
+    "Total Fat": "9.97 g",
+    "Total Saturated Fat": "4.55 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°c.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Veg Sticks",
+  "handle": "crispy-veg-sticks",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "270g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919_1-godrej-yummiez-crispy-veg-sticks.jpg"
+    },
+    "barcode": "8902756330047"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919_1-godrej-yummiez-crispy-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919-2_1-godrej-yummiez-crispy-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919-3_1-godrej-yummiez-crispy-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919-4_1-godrej-yummiez-crispy-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919-5_1-godrej-yummiez-crispy-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919-6_1-godrej-yummiez-crispy-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919-7_1-godrej-yummiez-crispy-veg-sticks.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350919-8_1-godrej-yummiez-crispy-veg-sticks.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Crispy Veg Sticks are deliciously seasoned snacks made with a mix of vegetables and coated in a crunchy outer layer. Perfect for quick bites or party platters, they are easy to prepare by frying or baking. Enjoy them with your favourite dips or sauces for a tasty addition to any mealtime or gathering.",
+   "manufacturerName": "Godrej Foods Limited",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veg Party Pack",
+  "handle": "veg-party-pack",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "600g",
+    "price": "305",
+    "compare_at_price": "305",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002834_4-yummiez-party-pack.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002834_4-yummiez-party-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002834-2_3-yummiez-party-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002834-3_3-yummiez-party-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002834-4_3-yummiez-party-pack.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002834-5_3-yummiez-party-pack.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Party Pack is the only thing you need for your dinner party. Who doesn't love crunchy snacks as starters before their dinner? With the Godrej Yummiez Chicken Nuggets - Nonveg Party Pack, which has all the perfect options like Cheese Corn Nuggets, Veg. Masala Nuggets and Veg. Cheese Fingers - be party-ready always. These crispy snacks are made just for you, enjoy the multiple layers of flavour and texture with a few cold drinks or beverages. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Cheese Corn Nuggets Sweet Corns (25%), Cheese (16.45%) [Cheese, Water, Milk Solids, Emulsifiers (INS 331, INS 452, INS 339), Iodised Salt, Preservative (INS 200)], Breadcrumbs (Wheat Flour, Dextrose, Iodised Salt, Yeast), Water, Edible Vegetable Oil (Refined Palm Oil), Potato, Batter [Stabilizer (INS 464), Potato Flakes, Thickener (INS 1422), Iodised Salt]. Contains added flavour: Nature Identical Flavouring Substances (Cheese). Allergy Advice: Contains Wheat and Milk Products. Ingredients – Veg. Masala Nuggets Vegetable Mix (53.3%) [Potato, Green Peas, Carrot], Breadcrumbs (Wheat Flour, Dextrose, Iodised Salt, Yeast), Water, Edible Vegetable Oil (Refined Palm Oil), Potato Flakes, Butter [Stabilizer (INS 464)], Spice and Condiments (Culinary Paste, Spice Mix), Iodised Salt. Allergy Advice: Contains Wheat Products. Ingredients – Veg. Cheese Fingers Vegetable Mix (30.6%) [Potato, Carrot, Green Peas], Water, Cheese (16.6%) [Cheese, Water, Milk Solids, Emulsifiers (INS 331, INS 340, INS 452, INS 339), Iodised Salt, Preservative (INS 200)], Breadcrumbs (Wheat Flour, Dextrose, Iodised Salt, Yeast), Edible Vegetable Oil (Refined Palm Oil), Potato Flakes, Butter [Stabilizer (INS 464)], Thickener (INS 1422), Iodised Salt. Contains added flavour: Nature Identical Flavouring Substances (Cheese). Allergy Advice: Contains Wheat and Milk Products.",
+   "nutritionalInfo": {
+    "Per 100 g": "Cheese Corn Nuggets",
+    "Energy": "235.9 kcal",
+    "Total Carbohydrates": "23.58 g",
+    "of Which Sugar": "1.3 g",
+    "Protein": "6.03 g",
+    "Total Fat": "10.50 g",
+    "Total Saturated Fat": "5.84 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "storageInstructions": "Store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veg Burger Patty",
+  "handle": "veg-burger-patty",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "290g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920_1-godrej-yummiez-veg-burger-patty.jpg"
+    },
+    "barcode": "8902756340466"
+   },
+   {
+    "title": "340g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002830_6-yummiez-veg-burger-patty.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920_1-godrej-yummiez-veg-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920-2_1-godrej-yummiez-veg-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920-3_1-godrej-yummiez-veg-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920-4_1-godrej-yummiez-veg-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920-5_1-godrej-yummiez-veg-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920-6_1-godrej-yummiez-veg-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920-7_1-godrej-yummiez-veg-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350920-8_1-godrej-yummiez-veg-burger-patty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Veg Burger Patty offers a tasty and convenient option for homemade burgers. Made with a blend of vegetables and coated in a crisp layer, these patties are ideal for quick meals or snacks. Simply cook them as desired and serve in a bun with your choice of toppings and sauces for a satisfying bite.",
+   "manufacturerName": "Godrej Foods Limited",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Masala Burger Patty",
+  "handle": "crispy-masala-burger-patty",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185866_5-yummiez-crispy-masala-burger-patty.jpg"
+    },
+    "barcode": "8902756340176"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185866_5-yummiez-crispy-masala-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185866-2_5-yummiez-crispy-masala-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185866-3_5-yummiez-crispy-masala-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185866-4_5-yummiez-crispy-masala-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185866-5_5-yummiez-crispy-masala-burger-patty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "For some delectably filling evenings, enjoy the Godrej Yummiez Crispy Masala Burger Patty. Make your own delicious burgers at home, with the Godrej Yummiez Crispy Masala Burger Patty. The perfected patty comes with extensive ingredients and flavours all mixed and processed for you. All you need is a couple of burger buns, and you're ready to enjoy some riveting burgers made at home. Cook the patty in the pan, or grill it as per your preference, and end up enjoying a nice evening with family and friends, with homemade burgers, that taste just as good as the restaurant.\nThis Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Mixed Vegetables (35% (Potato, Peas, Carrot, Corn, Coriander)), Bread Crumb {Maida Flour, Yeast, Salt, Dextrose, Preservative (INS 282) & Acidity Regulator (INS 26)}, Water, Batter {Maida Flour, Corn Starch, Salt, Stabilizer (INS 466) & Raising Agent (INS 5)}, Edible Vegetable Oil (Refined Palmolein Oil), Ginger, Garlic, Seasoning Mix, Iodised Salt, Chilli Flakes, Starch (INS 14), Wheat Fibre, Turmeric",
+   "storageInstructions": "*Always store in deep freezer at minus 18°C",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Veggie Burger Patty",
+  "handle": "crispy-veggie-burger-patty",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "159",
+    "compare_at_price": "159",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185865_5-yummiez-crispy-veggie-burger-patty.jpg"
+    },
+    "barcode": "8902756340183"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185865_5-yummiez-crispy-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185865-2_4-yummiez-crispy-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185865-3_4-yummiez-crispy-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185865-4_4-yummiez-crispy-veggie-burger-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40185865-5_4-yummiez-crispy-veggie-burger-patty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Crispy Veggie Burger Patty is a wonderful choice for your burgers or even with salads. It is easy to make as it is ready to cook. It is delicious and conveniently bite-sized. This Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Mixed Vegetables (40%) (Corn, Carrot, Peas, Potato, Coriander), Bread Crumb {Maida, Yeast, Salt, Dextrose, Preservative (INS 282) & Acidity Regulator (INS 260)}, Water, Batter {Maida, Corn Starch, Salt, Stabilizer (INS 466) & Raising Agent (INS 500)}, Edible Vegetable Oil (Refined Palmolein Oil), Spices And Condiments, Texturizer (INS451(i), Anticaking Agent (INS551), Starch (INS 1420))",
+   "nutritionalInfo": {
+    "Nutrition per": "100 g",
+    "Energy": "202.84 kCal",
+    "Total Carbohydrates": "21.09 g",
+    "of Which Sugar": "0.00 g",
+    "Protein": "9.73 g",
+    "Total Fat": "8.84 g",
+    "Total Saturated Fat": "4.10 g",
+    "Total Trans Fat": "0.00 g"
+   },
+   "storageInstructions": "*Store in deep freezer at minus 18°C\n*Always store in deep freezer at minus 18°C",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Millet Patty",
+  "handle": "millet-patty",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "370g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40308311_1-godrej-yummiez-millet-patty.jpg"
+    },
+    "barcode": "8902756650053"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308311_1-godrej-yummiez-millet-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308311-2_1-godrej-yummiez-millet-patty.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40308311-3_1-godrej-yummiez-millet-patty.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful fusion of taste and nutrition with Yummiez Millet Patty. Crafted with the goodness of jowar and bajra, this crispy and flavourful patty is the perfect power-packed companion for your mornings and snacking needs. Packed with the essence of luxury and indulgence, this exceptional 370-gram product from Goorej elevates your everyday routine with its exceptional quality. Experience the perfect blend of taste and health, as the nutritious millet patty delivers a delicious and satisfying snack or meal option. Treat your senses to the essence of this exceptional product and elevate your culinary journey.",
+   "ingredients": "Water, Millets, Chickpea, Broken Wheat Kernel, Frozen Vegetables, Refined Palmolein Oil, Onion, Potato Flakes, Corn Starch, Chickpea Flour, Chilli, Ginger, Fresh Coriander, Refined Wheat Flour, Salt, Mixed Spices",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight\n*Maintain at recommended temperature of -18°C",
+   "manufacturerName": "Godrej Tyson Foods Limited",
+   "fssaiLicense": "10012043000037",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Veg Pizza Pockets",
+  "handle": "veg-pizza-pockets",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "340g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005425_4-yummiez-pizza-pockets-veg.jpg"
+    },
+    "barcode": "8902756480049"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005425_4-yummiez-pizza-pockets-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005425-2_3-yummiez-pizza-pockets-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005425-3_3-yummiez-pizza-pockets-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005425-4_3-yummiez-pizza-pockets-veg.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005425-5_3-yummiez-pizza-pockets-veg.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Pizza Pockets - Veg will let you savour the flavours of a freshly baked pizza at home! The Godrej Yummiez Pizza Pockets - Veg is made with fresh and hand-picked vegetables to deliver you the taste and goodness in the right balance. The added spices are just the cherry on top. This one is perfect for that vegetarian friend. This pizza pocket is ready to cook and has no artificial colours added to it.\nThis Godrej Yummiez range is made from the best quality, hand-picked ingredients for exceptional taste and flavour. Super easy to make and the ideal hunger fix for evenings after work or school, this pack is a seamless choice for busy days or when you have guests over.",
+   "ingredients": "Wheat Flour, Pizza Gravy (22%) [Tomato, Onion, Water, Edible Vegetable Oil (Sunflower Oil), Thickening Agent (INS 1422), Iodized Salt, Sugar, Spices & Condiments, Herbs, Acidity Regulator (INS 330), Preservative (INS 211)], Vegetables (21%) [Sweet Corn, Green Capsicum, Carrot, Onion, French Beans], Water, Mozzarella Cheese (11%), Edible Vegetable Fat (Palm Oil), Bakery Improver [INS 500 (ii), INS 450 (i), INS 223], Sugar, Iodized Salt",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "189 kcal",
+    "Total Carbohydrates": "25.8 g",
+    "of Which Sugar": "4.0 g",
+    "Protein": "7.2 g",
+    "Total Fat": "6.4 g",
+    "Total Saturated Fat": "3.3 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "storageInstructions": "*Store in deep freezer at minus 18°C",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "French Fries",
+  "handle": "french-fries",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425g",
+    "price": "117",
+    "compare_at_price": "117",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40015920_5-yummiez-french-fries.jpg"
+    }
+   },
+   {
+    "title": "750g",
+    "price": "190",
+    "compare_at_price": "190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318819_1-godrej-yummiez-french-fries.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "234",
+    "compare_at_price": "234",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318818_1-godrej-yummiez-french-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40015920_5-yummiez-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40015920-2_4-yummiez-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40015920-3_4-yummiez-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40015920-4_4-yummiez-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40015920-5_4-yummiez-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318819_1-godrej-yummiez-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318818_1-godrej-yummiez-french-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible crunch and flavour of Godrej Yummiez French Fries, the perfect comfort food for any occasion. Crafted from the finest quality potatoes, these fries are deliciously crispy on the outside and fluffy on the inside, offering a truly satisfying snacking experience. Versatile and convenient, they can be enjoyed as a side dish or incorporated into your favourite recipes for an added burst of flavour and texture. Lightly seasoned to perfection, these fries are sure to delight both young and old, making them the ideal choice for family gatherings, movie nights, or a quick and satisfying hunger fix. With their exceptional taste and quality, Godrej Yummiez French Fries are the ultimate go-to snack that will have you coming back for more.",
+   "ingredients": "Potatoes (92%), Edible Vegetable Oil (Refined Palmolein Oil), Processed in a plant manufacturing wheat, mustard, soya and milk-based products",
+   "nutritionalInfo": {
+    "Per": "100g",
+    "Energy": "143.69 kcal",
+    "Total Carbohydrates": "21.06 g",
+    "of Which Sugar": "0.31 g",
+    "Protein": "2.69 g",
+    "Total Fat": "5.41 g",
+    "Total Saturated Fat": "2.49 g",
+    "Total Trans Fat": "0.0 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Peri Peri French Fries",
+  "handle": "peri-peri-french-fries",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "126",
+    "compare_at_price": "126",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40348352_2-godrej-yummiez-peri-peri-french-fries.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348352_2-godrej-yummiez-peri-peri-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348352-2_2-godrej-yummiez-peri-peri-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348352-3_2-godrej-yummiez-peri-peri-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348352-4_2-godrej-yummiez-peri-peri-french-fries.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40348352-5_1-godrej-yummiez-peri-peri-french-fries.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Peri Peri French Fries bring you the perfect mix of crispy texture and bold, spicy flavour. Coated with zesty peri peri seasoning, these fries are ready to cook and ideal for quick snacks or party platters. Enjoy them deep-fried or air-fried for a deliciously fiery bite every time convenient, tasty, and irresistibly crunchy.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Crispy Potato Starz",
+  "handle": "crispy-potato-starz",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277407_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+    },
+    "barcode": "8902756630017"
+   },
+   {
+    "title": "750g",
+    "price": "225",
+    "compare_at_price": "225",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40277408_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277407_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277407-2_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277407-3_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277407-4_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277407-5_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277407-6_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40277408_1-yummiez-crispy-potato-starz-ready-to-cook-no-added-preservatives.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Water, Potato Flakes (32%), Refined Palmolein Oil, Corn Flour, Salt.",
+   "nutritionalInfo": {
+    "Serving Size": "60g",
+    "Energy": "229.13 kcal",
+    "Protein": "4.17 g",
+    "Total Carbohydrates": "30.56 g",
+    "Total Sugar": "<0.50 g",
+    "Added Sugar": "0.00 g",
+    "Total Fat": "9.69 g",
+    "Saturated Fatty Acids": "4.53 g",
+    "Trans Fatty Acids": "0.00 g",
+    "Cholesterol": "0.00 mg",
+    "Sodium": "444.25 mg"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Potato Cheese Bites",
+  "handle": "potato-cheese-bites",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "235g",
+    "price": "155",
+    "compare_at_price": "155",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922_1-godrej-yummiez-potato-cheese-bites.jpg"
+    }
+   },
+   {
+    "title": "400g",
+    "price": "229",
+    "compare_at_price": "229",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40185864_2-yummiez-potato-cheese-bites.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922_1-godrej-yummiez-potato-cheese-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922-2_1-godrej-yummiez-potato-cheese-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922-3_1-godrej-yummiez-potato-cheese-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922-4_1-godrej-yummiez-potato-cheese-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922-5_1-godrej-yummiez-potato-cheese-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922-6_1-godrej-yummiez-potato-cheese-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922-7_1-godrej-yummiez-potato-cheese-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40350922-8_1-godrej-yummiez-potato-cheese-bites.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Potato Cheese Bites are bite-sized snacks made with a smooth blend of mashed potatoes and melted cheese, coated in a crisp outer layer. Ideal for quick snacks or party platters, they can be fried or baked with ease. Serve hot with sauces or chutneys for a delicious and convenient treat.",
+   "manufacturerName": "Godrej Foods Limited",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chilli Garlic Potato Bites",
+  "handle": "chilli-garlic-potato-bites",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "420g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+    },
+    "barcode": "8902756650084"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110-2_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110-3_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110-4_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110-5_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110-6_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110-7_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40365110-8_1-godrej-yummiez-chilli-garlic-potato-bites.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Crispy potato bites blended with spicy chilli and garlic flavours. A flavourful snack that's crunchy outside and soft inside.",
+   "ingredients": "Potato (81.7%), Potato Flakes (2.7%), Garlic Paste (2%), Refined Vegetable Oil (Palmolein), Corn Flour, lodized Salt, Dehydrated White Onion Powder, Red Chilli Flakes. Allergen Advice: May Contain Wheat, Milk, Soy, Mustard.",
+   "nutritionalInfo": {
+    "Energy (Kcal)": "193.03",
+    "Protein (g)": "3.11",
+    "Total Carbohydrates (g)": "28.76",
+    "Total Sugar (g)": "0.00",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "6.97",
+    "Saturated Fatty Acids (g)": "3.25",
+    "Trans Fatty Acids (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "472.68"
+   },
+   "manufacturerName": "Godrej Foods Limited",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Green Peas",
+  "handle": "green-peas",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40005419_4-yummiez-green-peas.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40002829_5-yummiez-green-peas.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "260",
+    "compare_at_price": "260",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003827_4-yummiez-green-peas.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005419_4-yummiez-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005419-2_3-yummiez-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005419-3_3-yummiez-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005419-4_3-yummiez-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40005419-5_3-yummiez-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40002829_5-yummiez-green-peas.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003827_4-yummiez-green-peas.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Frozen green peas carefully selected and quick frozen to retain freshness. Ideal for curries, pulao, soups, and everyday cooking.",
+   "nutritionalInfo": {
+    "Energy": "65.3 kcal",
+    "Total Carbohydrates": "15.38 g",
+    "of Which Sugar": "<0.50 g",
+    "Protein": "7.08 g",
+    "Total Fat": "0.25 g",
+    "Total Saturated Fat": "<0.1 g",
+    "Total Trans Fat": "<0.1 g"
+   },
+   "manufacturerName": "Godrej Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "American Sweet Corn",
+  "handle": "american-sweet-corn",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40003821_6-yummiez-american-sweet-corn.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003821_6-yummiez-american-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003821-2_3-yummiez-american-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003821-3_3-yummiez-american-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003821-4_3-yummiez-american-sweet-corn.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40003821-5_3-yummiez-american-sweet-corn.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Sweet and juicy corn kernels frozen to preserve natural flavor and texture. Perfect for salads, soups, snacks, and side dishes.",
+   "ingredients": "Chicken Meat (59%), Water, Bread Crumb {Maida, Yeast, Salt, Dextrose, Preservative (INS 282) & Acidity Regulator (INS 26)}, Fresh Vegetables (Green Chilli, Ginger, Garlic, Coriander Leaves, Onion, Lemon), Soya, Iodised Salt, Spices & Condiments (Seasoning Mix) And Texturizer (INS 451(i)).",
+   "nutritionalInfo": {
+    "Energy": "95 kcal",
+    "Total Carbohydrates": "16.89 g",
+    "of Which Sugar": "5.44 g",
+    "Protein": "3.81 g",
+    "Total Fat": "1.34 g",
+    "Total Saturated Fat": "0.41 g",
+    "Total Trans Fat": "0.00 g"
+   },
+   "storageInstructions": "Always store in deep freezer at minus 18°C.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mixed Vegetables",
+  "handle": "mixed-vegetables",
+  "vendor": "Godrej Yummiez",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40262356_1-yummiez-mixed-vegetables-easy-to-cook.jpg"
+    },
+    "barcode": "8902756810020"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262356_1-yummiez-mixed-vegetables-easy-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262356-2_1-yummiez-mixed-vegetables-easy-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262356-3_1-yummiez-mixed-vegetables-easy-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262356-4_1-yummiez-mixed-vegetables-easy-to-cook.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40262356-5_1-yummiez-mixed-vegetables-easy-to-cook.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Godrej Yummiez Mixed Vegetables can be used to make curries or soups. Imagine all the time that goes into dicing the vegetables into perfect shape and size. That was a lot, right? How many times you had wished that someone cut the vegetables for you and you just had to cook? Well, Godrej Yummiez heard you and here it brings the best-mixed vegetables that you can use quickly to make a batch of vegetable soup or curry or a mixed vegetable masala. Cook them nicely and relish them with hot rotis or rice or drink the soup away.",
+   "ingredients": "Carrot, Cauliflower, French Beans, Green Peas",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "100g per serve",
+    "Energy (Kcal)": "46.52",
+    "Protein (g)": "3.12",
+    "Total Carbohydrates (g)": "5.52",
+    "Total Sugar (g)": "1.42",
+    "Added Sugar (g)": "0.00",
+    "Total Fat (g)": "0.31",
+    "Saturated Fatty Acids (g)": "0.00",
+    "Trans Fatty Acids (g)": "0.00",
+    "Cholesterol (mg)": "0.00",
+    "Sodium (mg)": "23.97"
+   },
+   "storageInstructions": "*Always store in deep freezer at -18°C or below",
+   "manufacturerName": "Godrej Tyson Foods Ltd",
+   "fssaiLicense": "10014022002788",
+   "countryOfOrigin": "India"
+  }
+ }
+]

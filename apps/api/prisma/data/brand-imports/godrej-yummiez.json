@@ -1,0 +1,489 @@
+{
+  "brand": "Godrej Yummiez",
+  "manufacturer": "Godrej Tyson Foods Ltd.",
+  "feed": "godrej-yummiez-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/godrej-yummiez/logo-fe933507.png",
+  "themeColor": "#E4202E",
+  "themeColorSecondary": "#1E4FA0",
+  "namePrefix": "Godrej Yummiez ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Godrej Yummiez Chicken Seekh Kebab": "Chicken Seekh Kabab",
+    "Godrej Yummiez Classic Chicken Sausage": "Chicken Breakfast Sausages"
+  },
+  "rules": [
+    {
+      "match": "^Chicken\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Masala\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Chicken\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Chicken\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ \\&\\ Cheese\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Popcorn$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Bites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Chicken\\ Bites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Fried\\ Chicken$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Garlic\\ Fingers$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Magic\\ Balls$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Party\\ Pack$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Chicken"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Seekh\\ Kabab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Lucknowi\\ Seekh\\ Kabab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Galouti\\ Kabab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Hariyali\\ Kabab$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Punjabi\\ Tikka$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Amritsari\\ Chicken\\ Tikka$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Murgh\\ Malai\\ Chicken\\ Tikka$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Lasooni\\ Tikka$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Burger\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Momos$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Cheese\\ Momos$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Momos & Dumplings"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Breakfast\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Pepper\\ \\&\\ Herb\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Cheese\\ \\&\\ Onion\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Chilli\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Italian\\ Sausages$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Chicken Sausage"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Breakfast\\ Salami$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Salami"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Chilli\\ Salami$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Salami"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Pepper\\ \\&\\ Herb\\ Salami$",
+      "path": [
+        "Meat, Fish & Eggs",
+        "Sausages & Cold Cuts",
+        "Salami"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Prawns$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Prawns\\ \\-\\ Large$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Prawns\\ \\-\\ Medium$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Meat & Seafood",
+        "Frozen Fish & Prawns"
+      ]
+    },
+    {
+      "match": "^Aloo\\ Tikki$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veg\\ Cutlet$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Cheese\\ Corn\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veg\\ Masala\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Kadhai\\ Paneer\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Tandoori\\ Paneer\\ Nuggets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Paneer\\ Pops$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veg\\ Cheese\\ Fingers$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Cheesy\\ Pizza\\ Fingers$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veg\\ Sticks$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Veg\\ Sticks$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veg\\ Party\\ Pack$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Tikki & Kebab"
+      ]
+    },
+    {
+      "match": "^Veg\\ Burger\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Masala\\ Burger\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Veggie\\ Burger\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Millet\\ Patty$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^Veg\\ Pizza\\ Pockets$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Pizza & Burger Patty"
+      ]
+    },
+    {
+      "match": "^French\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Peri\\ Peri\\ French\\ Fries$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Crispy\\ Potato\\ Starz$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Potato\\ Cheese\\ Bites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Garlic\\ Potato\\ Bites$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Fries & Wedges"
+      ]
+    },
+    {
+      "match": "^Green\\ Peas$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Peas"
+      ]
+    },
+    {
+      "match": "^American\\ Sweet\\ Corn$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Sweet Corn"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Vegetables$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Vegetables",
+        "Frozen Mixed Vegetables"
+      ]
+    }
+  ]
+}
