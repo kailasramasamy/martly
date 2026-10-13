@@ -1,0 +1,238 @@
+{
+  "brand": "Vim (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "vim-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/vim/logo-29e20873.png",
+  "themeColor": "#1C3F94",
+  "themeColorSecondary": "#E30613",
+  "namePrefix": "Vim ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Dishwash\\ Bar\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Extra\\ Anti\\ Smell\\ Dishwash\\ Bar\\ \\-\\ Pudina$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Dishwash\\ Bar\\ \\-\\ Neem$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Bar"
+      ]
+    },
+    {
+      "match": "^Dishwash\\ Liquid\\ Gel\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Dishwash\\ Liquid\\ Gel\\ Refill\\ Pouch\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Dishwash\\ Liquid\\ \\-\\ Power\\ of\\ Lemons$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Concentrated\\ Dishwash\\ Gel\\ \\-\\ Power\\ of\\ 100\\ Lemons$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Anti\\ Bac\\ Dishwash\\ Liquid\\ \\-\\ Neem$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Extra\\ Anti\\ Smell\\ Dishwash\\ Gel\\ \\-\\ Pudina$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^ProClean\\ Dishwash\\ Gel\\ \\-\\ Mint$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^ProClean\\ Dishwash\\ Gel\\ Refill\\ \\-\\ Mint$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^ProClean\\ Dishwash\\ Gel\\ \\-\\ Neem$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^ProClean\\ Dishwash\\ Gel\\ \\-\\ Tangerine$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Pure\\ Lemongrass\\ Dishwash\\ Gel$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Matic\\ Rinse\\ Aid$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Matic\\ Dishwasher\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ All\\-In\\-1\\ Dishwasher\\ Tablets$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Powder"
+      ]
+    },
+    {
+      "match": "^Power\\ Scrub$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Scrub\\ Easy$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Scrub\\ Magic\\ Nonwoven\\ \\&\\ Steel\\ Scrub\\ Pads$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Burnt\\ Stain\\ Remover\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^Shudhham\\ Metal\\ Shine\\ Gel\\ \\-\\ Lemon\\ \\&\\ Tamarind$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Kitchen Cleaner"
+      ]
+    },
+    {
+      "match": "^UltraPro\\ Floor\\ Cleaner\\ \\-\\ French\\ Lavender\\ \\&\\ Sage$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^UltraPro\\ Floor\\ Cleaner\\ Refill\\ Pouch\\ \\-\\ French\\ Lavender\\ \\&\\ Sage$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^UltraPro\\ Floor\\ Cleaner\\ \\-\\ Lemongrass\\ \\&\\ Salt$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^UltraPro\\ Floor\\ Cleaner\\ Refill\\ Pouch\\ \\-\\ Lemongrass\\ \\&\\ Salt$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^UltraPro\\ Floor\\ Cleaner\\ \\-\\ Sparkling\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^UltraPro\\ Floor\\ Cleaner\\ Refill\\ Pouch\\ \\-\\ Sparkling\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    }
+  ]
+}
