@@ -1,0 +1,134 @@
+{
+  "brand": "Rexona (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "rexona-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/rexona/logo-87195a8b.png",
+  "themeColor": "#232C5A",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Rexona ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Coconut\\ \\&\\ Olive\\ Oil\\ Soap\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Roll\\-On\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Powder\\ Dry\\ Roll\\-On\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Shower\\ Fresh\\ Roll\\-On\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Lily\\ Even\\ Skin\\ Tone\\ Roll\\-On\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Rose\\ Even\\ Skin\\ Tone\\ Roll\\-On\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Lotus\\ Flower\\ \\&\\ Shea\\ Butter\\ Roll\\-On\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Matcha\\ Tea\\ \\&\\ Vanilla\\ Roll\\-On\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Sandalwood\\ \\&\\ Jojoba\\ Oil\\ Roll\\-On\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Men\\ Active\\ Protect\\ Roll\\-On\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Men\\ Sport\\ Defence\\ Roll\\-On\\ Deodorant$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Bamboo\\ \\&\\ Aloe\\ Vera\\ Anti\\-Perspirant\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Invisible\\ Anti\\-Perspirant\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Powder\\ Dry\\ Anti\\-Perspirant\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Shower\\ Fresh\\ Anti\\-Perspirant\\ Deodorant\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    }
+  ]
+}
