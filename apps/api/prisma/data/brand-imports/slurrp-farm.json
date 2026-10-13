@@ -1,0 +1,470 @@
+{
+  "brand": "Slurrp Farm",
+  "manufacturer": "Wholsum Foods Pvt. Ltd.",
+  "feed": "slurrp-farm-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/slurrp-farm/logo-2d719a13.png",
+  "themeColor": "#C8202F",
+  "themeColorSecondary": "#F7B500",
+  "namePrefix": "Slurrp Farm ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Banana\\ Choco\\-Chip\\ Millet\\ Pancake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Millet\\ Pancake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Blueberry\\ Millet\\ Pancake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Classic\\ Millet\\ Pancake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Millet\\ Velvety\\ Vanilla\\ Cake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Millet\\ Double\\ Chocolate\\ Cake\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Millet\\ Fudgy\\ Chocolate\\ Brownie\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Choco\\ Mug\\ Cake\\ Mix\\ With\\ Jowar\\ \\&\\ Oat$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Millet\\ Spinach\\ Dosa\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Beetroot\\ Millet\\ Dosa\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Instant\\ Millet\\ Upma\\ Ghee\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Instant\\ Millet\\ Upma\\ Tomato\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Instant Upma & Poha"
+      ]
+    },
+    {
+      "match": "^Magic\\ Masala\\ Instant\\ Millet\\ Noodles$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Instant\\ Millet\\ Noodles\\ Mild\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Millet\\ Hakka\\ Noodles\\ Mild\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Instant\\ Millet\\ Noodles\\ Yummy\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Millet\\ Hakka\\ Noodles\\ Classic\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Instant Noodles"
+      ]
+    },
+    {
+      "match": "^Curry\\ Masala\\ Millet\\ Hakka\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Foxtail\\ Millet\\ Hakka\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Little\\ Millet\\ Hakka\\ Noodles$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Noodles & Rice (Asian)"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Macaroni\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Fusilli\\ Pasta$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Pasta"
+      ]
+    },
+    {
+      "match": "^Foxtail\\ Millet\\ Vermicelli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Little\\ Millet\\ Vermicelli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Instant Noodles & Pasta",
+        "Vermicelli (Sevai)"
+      ]
+    },
+    {
+      "match": "^Milky\\ Choco\\ Chip\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Banana\\ Oat\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Choco\\ Ragi\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Mighty\\ Puff\\ Choco\\ Ragi$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Mighty\\ Munch\\ Cheese\\ \\&\\ Herbs$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Mighty\\ Munch\\ Tangy\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Mighty\\ Puffs\\ Cheddar\\ Cheese$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Mighty\\ Puffs\\ Khatta\\ Meetha$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Mighty\\ Puffs\\ Mild\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Puffs & Rings"
+      ]
+    },
+    {
+      "match": "^Choco\\ Crunch\\ Ragi\\ Stars\\ \\&\\ Moons\\ Cereal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Berry\\ Crunch\\ Ragi\\ Stars\\ \\&\\ Moons\\ Cereal$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Chocos & Kids Cereal"
+      ]
+    },
+    {
+      "match": "^Millet\\ \\&\\ Oats\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ \\&\\ Rice\\ Crispies\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Mango\\ Instant\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Ragi\\ \\&\\ Rice\\ With\\ Milk\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Banana\\ Ragi\\ \\&\\ Rice\\ With\\ Milk\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Almond\\ \\&\\ Banana\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Sathu\\ Maavu\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Moong\\ Dal\\ Khichdi\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Wheat\\ Apple\\ \\&\\ Date\\ With\\ Milk\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Wheat\\ Apple\\ \\&\\ Banana\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Apple\\ \\&\\ Banana\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^First\\ Bites\\ Strawberry\\ Sprouted\\ Ragi\\ \\&\\ Rice\\ With\\ Milk\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Natural\\ Nut\\ Powder$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Purees & Snacks"
+      ]
+    },
+    {
+      "match": "^Chocolate\\ Milk\\ Mix$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Berry\\ Milk\\ Mix$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Magic\\ Milk\\ Mix\\ Millet\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Sprouted\\ Ragi\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Rolled\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^Organic\\ Chia\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Natural\\ Jaggery\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery Powder"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Dates\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Dates (Khajoor)"
+      ]
+    }
+  ]
+}
