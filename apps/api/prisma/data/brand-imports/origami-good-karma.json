@@ -1,0 +1,93 @@
+{
+  "brand": "Origami Good Karma",
+  "manufacturer": "Origami Cellulo Pvt. Ltd.",
+  "feed": "origami-good-karma-feed.json",
+  "themeColor": "#8B5A2B",
+  "themeColorSecondary": "#2E7D32",
+  "namePrefix": "Origami Good Karma ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Facial\\ Tissue\\ Box\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Facial\\ Tissue\\ Soft\\ Pack\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Paper\\ Serviettes\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Paper\\ Serviettes\\ \\-\\ 1\\ Ply,\\ 30\\ x\\ 30\\ cm$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Pocket\\ Paper\\ Hanky\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Towel\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Tissue\\ Roll\\ \\-\\ 3\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Tissue\\ Roll,\\ 100\\ Pulls$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Compostable\\ Garbage\\ Bags\\ \\-\\ Medium$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Neem\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    }
+  ]
+}
