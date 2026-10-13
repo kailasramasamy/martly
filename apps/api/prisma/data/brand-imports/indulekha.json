@@ -1,0 +1,78 @@
+{
+  "brand": "Indulekha (HUL)",
+  "manufacturer": "Hindustan Unilever Ltd.",
+  "feed": "indulekha-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/indulekha/logo-9e7b1d39.png",
+  "themeColor": "#4A2511",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Indulekha ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bringha\\ Ayurvedic\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Bringha\\ Hair\\ Fall\\ Control\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Bringha\\ Scalp\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Jatamansi\\ Premature\\ Greying\\ Scalp\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Svetakutaja\\ Dandruff\\ Treatment\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Svetakutaja\\ Anti\\-Dandruff\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Svetakutaja\\ Scalp\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Ayurvedic\\ Soap\\ for\\ Dark\\ Spots\\ \\&\\ Marks$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    }
+  ]
+}
