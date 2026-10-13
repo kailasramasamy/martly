@@ -1,0 +1,297 @@
+{
+  "brand": "Harpic (Reckitt)",
+  "manufacturer": "Reckitt Benckiser (India) Pvt. Ltd.",
+  "feed": "harpic-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/harpic/logo-e362f01c.png",
+  "themeColor": "#E4202C",
+  "themeColorSecondary": "#0055A5",
+  "namePrefix": "Harpic ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Harpic Bathroom Cleaner - Lemon": "Disinfectant Bathroom Cleaner - Lemon",
+    "Harpic Power Plus Disinfectant Toilet Cleaner": "Power Plus Disinfectant Toilet Cleaner - Original"
+  },
+  "rules": [
+    {
+      "match": "^Power\\ Plus\\ Disinfectant\\ Toilet\\ Cleaner\\ \\-\\ Original$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Power\\ Plus\\ Disinfectant\\ Toilet\\ Cleaner\\ \\-\\ Joyful\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Toilet\\ Cleaner\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Toilet\\ Cleaner\\ \\-\\ Refreshing\\ Marine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Power\\ Plus\\ Original\\ \\-\\ 10x\\ Better\\ Than\\ Bleach$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^White\\ \\&\\ Shine\\ Bleach\\ Toilet\\ Cleaner\\ \\-\\ Floral\\ Rush$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^White\\ \\&\\ Shine\\ Bleach\\ Toilet\\ Cleaner\\ \\-\\ Refreshing\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^White\\ \\&\\ Shine\\ Bleach\\ Toilet\\ Cleaner\\ \\-\\ Original\\ Baking\\ Soda$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Active\\ Fresh\\ Toilet\\ Cleaner\\ \\-\\ Mountain\\ Pine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Germ\\ \\&\\ Stain\\ Blaster\\ Toilet\\ Cleaner\\ \\-\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Germ\\ \\&\\ Stain\\ Blaster\\ Toilet\\ Cleaner\\ \\-\\ Floral$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Organic\\ Active\\ Toilet\\ Cleaner\\ \\-\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Organic\\ Active\\ Toilet\\ Cleaner\\ \\-\\ Floral$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Platinum\\ Active\\-Shield\\ Toilet\\ Cleaner\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Platinum\\ Active\\-Shield\\ Toilet\\ Cleaner\\ \\-\\ Marine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Hygienic\\ Rim\\ Block\\ \\-\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Hygienic\\ Rim\\ Block\\ \\-\\ Jasmine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Hygienic\\ Rim\\ Block\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Power\\ Fresh\\ 6\\ Rim\\ Block\\ \\-\\ Floral\\ Delight$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Power\\ Fresh\\ 6\\ Rim\\ Block\\ \\-\\ Marine\\ Splash$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Power\\ Fresh\\ 6\\ Rim\\ Block\\ \\-\\ Atlantic\\ Burst$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Power\\ Fresh\\ 6\\ Rim\\ Block\\ \\-\\ Marine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Flushmatic\\ In\\-Cistern\\ Toilet\\ Cleaner\\ Block\\ \\-\\ Marine$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Flushmatic\\ In\\-Cistern\\ Toilet\\ Cleaner\\ Block\\ \\-\\ Citrus$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Flushmatic\\ In\\-Cistern\\ Toilet\\ Cleaner\\ Block\\ \\-\\ Lavender$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Flushmatic\\ In\\-Cistern\\ Toilet\\ Cleaner\\ Block\\ \\-\\ Meadow\\ Mist$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Flushmatic\\ In\\-Cistern\\ Toilet\\ Cleaner\\ Block\\ \\-\\ Rose\\ Rush$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Bathroom\\ Cleaner\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Disinfectant\\ Bathroom\\ Cleaner\\ \\-\\ Floral\\ Bloom$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Ultra\\ 10X\\ Tough\\ Stain\\ Remover\\ \\-\\ Citrus\\ Splash$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Ultra\\ 10X\\ Tough\\ Stain\\ Remover\\ \\-\\ Petal\\ Breeze$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Bathroom\\ Multi\\ Surface\\ \\&\\ Shower\\ Cleaning\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Toilet\\ \\&\\ Bathroom\\ Sanitizer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Lime\\ Scale\\ Remover$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    },
+    {
+      "match": "^Drain\\ Xpert\\ Cleaning\\ Powder$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Bathroom Cleaner"
+      ]
+    }
+  ]
+}
