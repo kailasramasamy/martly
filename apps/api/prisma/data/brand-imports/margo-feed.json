@@ -1,0 +1,298 @@
+[
+ {
+  "title": "Original Neem Soap",
+  "handle": "original-neem-soap",
+  "vendor": "Margo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40031948_10-margo-bathing-soap-original-neem.jpg"
+    }
+   },
+   {
+    "title": "100g",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/20006243_13-margo-bathing-soap-original-neem.jpg"
+    }
+   },
+   {
+    "title": "125g",
+    "price": "47",
+    "compare_at_price": "47",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40255714_3-margo-original-neem-soap-loaded-with-vitamin-c-moisturise-skin-deeply.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031948_10-margo-bathing-soap-original-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031948-2_8-margo-bathing-soap-original-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031948-3_4-margo-bathing-soap-original-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031948-4_4-margo-bathing-soap-original-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40031948-5_3-margo-bathing-soap-original-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/20006243_13-margo-bathing-soap-original-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40255714_3-margo-original-neem-soap-loaded-with-vitamin-c-moisturise-skin-deeply.jpg"
+   }
+  ],
+  "details": {
+   "description": "Margo is an established neem soap launched in the year 1920. Over the years, the brand has delivered on its promise of giving a clear, problem-free beautiful skin. Margo is a household name in India and represents a heritage that has been passed from generation to generation. It is regarded as the ultimate neem soap and is often used as a synonym to neem soaps by consumers across India. Neem, a natural source of therapeutic benefits, has been scientifically proven to be amazingly effective for skin care. Margo Original Neem is made from 100% original neem through a unique procedure ensuring the therapeutic benefits of neem are retained. It is infused with Vitamin E for added moisturising. Its anti-bacterial action deep cleanses and protects your skin, giving it the care it deserves. With a combination of medicinal and beauty benefits along with the goodness of 1000 neem leaves, Margo Original Neem is a healer and cosmetician, with moisturising properties, without any side effects.",
+   "manufacturerName": "Jyothy labs limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem Naturals Almond Oil & Rose Soap",
+  "handle": "neem-naturals-almond-oil-rose-soap",
+  "vendor": "Margo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "42",
+    "compare_at_price": "42",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40306737_5-margo-neem-naturals-almond-oil-rose.jpg"
+    },
+    "barcode": "8902102231349"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306737_5-margo-neem-naturals-almond-oil-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306737-2_5-margo-neem-naturals-almond-oil-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306737-3_5-margo-neem-naturals-almond-oil-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306737-4_3-margo-neem-naturals-almond-oil-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306737-5_3-margo-neem-naturals-almond-oil-rose.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306737-6_3-margo-neem-naturals-almond-oil-rose.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Margo Neem Naturals brings you the goodness of 100% original Neem with rose water and almond oil. While Neem deep cleanses, almond oil nourishes your skin from within and rose provides essential hydration.",
+   "manufacturerName": "Ujala House",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem Naturals Aloe Vera & Jasmine Soap",
+  "handle": "neem-naturals-aloe-vera-jasmine-soap",
+  "vendor": "Margo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "42",
+    "compare_at_price": "42",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40306739_4-margo-neem-naturals-aloe-vera-jasmine.jpg"
+    },
+    "barcode": "8902102231257"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306739_4-margo-neem-naturals-aloe-vera-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306739-2_4-margo-neem-naturals-aloe-vera-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306739-3_4-margo-neem-naturals-aloe-vera-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306739-4_1-margo-neem-naturals-aloe-vera-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306739-5_1-margo-neem-naturals-aloe-vera-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306739-6_1-margo-neem-naturals-aloe-vera-jasmine.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Margo Neem Naturals brings you the goodness of original neem with pure extract of aloe vera and jasmine. While neem deep cleanses your skin, aloe vera gives intense moisturisation and jasmine soothes your senses.",
+   "manufacturerName": "Ujala House",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem Naturals Honey & Lemon Soap",
+  "handle": "neem-naturals-honey-lemon-soap",
+  "vendor": "Margo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "42",
+    "compare_at_price": "42",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40306738_4-margo-neem-naturals-honey-lemon.jpg"
+    },
+    "barcode": "8902102231271"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306738_4-margo-neem-naturals-honey-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306738-2_4-margo-neem-naturals-honey-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306738-3_4-margo-neem-naturals-honey-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306738-4_2-margo-neem-naturals-honey-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306738-5_2-margo-neem-naturals-honey-lemon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40306738-6_2-margo-neem-naturals-honey-lemon.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Margo Neem Naturals brings you the goodness of 100% original Neem with pure Honey and Lemon. While Neem deep cleanses, Honey lends a healthy glow to your skin and Lemon leaves you refreshed.",
+   "manufacturerName": "Ujala House",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem Naturals Sandalwood & Turmeric Soap",
+  "handle": "neem-naturals-sandalwood-turmeric-soap",
+  "vendor": "Margo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "42",
+    "compare_at_price": "42",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338359_2-margo-neem-naturals-soap-with-sandalwood-turmeric.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338359_2-margo-neem-naturals-soap-with-sandalwood-turmeric.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338359-2_2-margo-neem-naturals-soap-with-sandalwood-turmeric.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338359-3_2-margo-neem-naturals-soap-with-sandalwood-turmeric.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338359-4_2-margo-neem-naturals-soap-with-sandalwood-turmeric.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338359-5_2-margo-neem-naturals-soap-with-sandalwood-turmeric.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338359-6_2-margo-neem-naturals-soap-with-sandalwood-turmeric.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40338359-7_2-margo-neem-naturals-soap-with-sandalwood-turmeric.jpg"
+   }
+  ],
+  "details": {
+   "description": "New Margo Neem Naturals brings you the goodness of 100% original Neem with pure Sandalwood and Turmeric. While Neem deep cleanses, Sandalwood lends a healthy glow to your skin and Turmeric leaves you refreshed. It is endorsed by WNO (World Neem Organisation). Margo Neem Naturals Soap is enriched with Sandalwood and Turmeric, giving you refreshed and glowing skin.",
+   "storageInstructions": "*Store in a cool and dry place\n*Avoid direct contact with eyes",
+   "manufacturerName": "Jyothy Labs Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Neem Anti-Bacterial Hand Wash",
+  "handle": "neem-anti-bacterial-hand-wash",
+  "vendor": "Margo",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "700ml",
+    "price": "164",
+    "compare_at_price": "164",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454_3-margo-natural-anti-bacterial-handwash-neem.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454_3-margo-natural-anti-bacterial-handwash-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454-2_3-margo-natural-anti-bacterial-handwash-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454-3_2-margo-natural-anti-bacterial-handwash-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454-4_2-margo-natural-anti-bacterial-handwash-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454-5_2-margo-natural-anti-bacterial-handwash-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454-6_2-margo-natural-anti-bacterial-handwash-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454-7_1-margo-natural-anti-bacterial-handwash-neem.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40206454-8_1-margo-natural-anti-bacterial-handwash-neem.jpg"
+   }
+  ],
+  "details": {
+   "description": "Natural antibacterial Margo hand wash comes with the goodness of 1000 neem leaves. It deeply cleanses hands without losing their natural moisture. It comes with a unique neem formula that provides a long-lasting effect on the hands.",
+   "storageInstructions": "*Store in a cool and dry place",
+   "usageInstructions": "1. Open spout cap.\n2. Pour into the empty Margo Handwash bottle.\n3. Use daily for protection from germs and soft, moisturised hands.",
+   "manufacturerName": "Jyothy Labs Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]

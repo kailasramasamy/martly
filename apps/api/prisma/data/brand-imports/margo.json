@@ -1,0 +1,62 @@
+{
+  "brand": "Margo",
+  "manufacturer": "Jyothy Labs Ltd.",
+  "feed": "margo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/margo/logo-39b7aa61.png",
+  "themeColor": "#1F4E3D",
+  "themeColorSecondary": "#7CB342",
+  "namePrefix": "Margo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Original\\ Neem\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ Naturals\\ Almond\\ Oil\\ \\&\\ Rose\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ Naturals\\ Aloe\\ Vera\\ \\&\\ Jasmine\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ Naturals\\ Honey\\ \\&\\ Lemon\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ Naturals\\ Sandalwood\\ \\&\\ Turmeric\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Neem\\ Anti\\-Bacterial\\ Hand\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    }
+  ]
+}
