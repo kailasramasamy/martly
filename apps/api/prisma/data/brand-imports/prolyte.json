@@ -1,0 +1,94 @@
+{
+  "brand": "Prolyte (Cipla)",
+  "manufacturer": "Cipla Health Ltd.",
+  "feed": "prolyte-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/prolyte/logo-bc5f953f.png",
+  "themeColor": "#E4202A",
+  "themeColorSecondary": "#00A0DF",
+  "namePrefix": "Prolyte ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Apple\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Nimbu\\ Paani\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Orange\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Fruit\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Aam\\ Panna\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Flavour\\ ORS\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^ElectroShot\\ Mango\\ Mania\\ Electrolyte\\ Drink$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Nimbu\\ Paani\\ Flavour\\ ORS\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    },
+    {
+      "match": "^Tangy\\ Orange\\ Flavour\\ ORS\\ Powder$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Electrolyte & ORS"
+      ]
+    }
+  ]
+}
