@@ -1,0 +1,104 @@
+{
+  "brand": "HIT (Godrej)",
+  "manufacturer": "Godrej Consumer Products Ltd.",
+  "feed": "hit-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/hit/logo-99421444.png",
+  "themeColor": "#FFD400",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "HIT ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "HIT Black Mosquito & Fly Killer Spray": "Mosquito & Fly Killer Spray"
+  },
+  "rules": [
+    {
+      "match": "^Mosquito\\ \\&\\ Fly\\ Killer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Mosquito\\ \\&\\ Fly\\ Killer\\ Spray\\ \\-\\ Lime$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Cockroach\\ Killer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Spray\\ Matic\\ Mosquito\\ Repellent\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Spray\\ Matic\\ Mosquito\\ Repellent\\ Dispenser\\ \\+\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Anti\\-Roach\\ Gel$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Chalk\\ Cockroach\\ Killer$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Rat\\ Killer\\ Cubes$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Rat Killer"
+      ]
+    },
+    {
+      "match": "^Rat\\ Repellent\\ Spray\\ \\-\\ Peppermint$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Rat Killer"
+      ]
+    },
+    {
+      "match": "^Rat\\ \\&\\ Mouse\\ Glue\\ Pad$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Rat Killer"
+      ]
+    },
+    {
+      "match": "^Rat\\ \\&\\ Mouse\\ Glue\\ Pad\\ \\-\\ Jumbo$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Rat Killer"
+      ]
+    }
+  ]
+}
