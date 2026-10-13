@@ -1,0 +1,342 @@
+{
+  "brand": "Pintola",
+  "manufacturer": "Das Foodtech Pvt. Ltd.",
+  "feed": "pintola-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pintola/logo-6ed9702b.png",
+  "themeColor": "#F26A21",
+  "themeColorSecondary": "#8A8A8A",
+  "namePrefix": "Pintola ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^All\\ Natural\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^All\\ Natural\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^All\\ Natural\\ Peanut\\ Butter\\ \\-\\ Extra\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Classic\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Classic\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Honey\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Performance\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Performance\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Performance\\ Coconut\\ Jaggery\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Performance\\ Coconut\\ Jaggery\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Performance\\ Dark\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Performance\\ Dark\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Peanut\\ Butter\\ \\-\\ Creamy,\\ Unsweetened$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Peanut\\ Butter\\ \\-\\ Crunchy,\\ Unsweetened$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Organic\\ Jaggery\\ Peanut\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Organic\\ Jaggery\\ Peanut\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Dark\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Creamy,\\ Whey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Dark\\ Chocolate\\ Peanut\\ Butter\\ \\-\\ Crunchy,\\ Whey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Almond\\ Butter\\ \\-\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Almond\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Dark\\ Chocolate\\ Almond\\ Butter\\ \\-\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Triyogam\\ Butter$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Dark\\ Chocolate\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Choco\\ Berry\\ Crunch\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Whole\\ Grain\\ \\&\\ Seeds\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Fruit\\ \\&\\ Nut\\ Muesli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Chocolate\\ Oats$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Oats"
+      ]
+    },
+    {
+      "match": "^9\\ In\\ 1\\ Ultimate\\ Mix\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Flax\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Chia\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Chikki$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Sesame\\ Chikki$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Dry\\ Fruit\\ Chikki$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Sweets & Mithai",
+        "Dry Sweet (Ladoo, Barfi, Peda)"
+      ]
+    },
+    {
+      "match": "^Brown\\ Rice\\ Cakes\\ \\-\\ Unsalted$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^Brown\\ Rice\\ Cakes\\ \\-\\ Lightly\\ Salted$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    },
+    {
+      "match": "^Brown\\ Rice\\ Cakes\\ \\-\\ Multigrain$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Gluten-Free Products"
+      ]
+    }
+  ]
+}
