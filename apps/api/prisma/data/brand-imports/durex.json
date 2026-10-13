@@ -1,0 +1,238 @@
+{
+  "brand": "Durex (Reckitt)",
+  "manufacturer": "Reckitt Benckiser (India) Pvt. Ltd.",
+  "feed": "durex-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/durex/logo-eb2d255b.png",
+  "themeColor": "#0057B8",
+  "themeColorSecondary": "#E4007C",
+  "namePrefix": "Durex ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Extra\\ Thin\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Dots\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Ribbed\\ \\&\\ Dotted\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Time\\ Longer\\ Lasting\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Time\\ Ultra\\ Thin\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Air\\ Ultra\\ Thin\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Invisible\\ Ultra\\ Thin\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Invisible\\ 003\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Close\\ Fit\\ Invisible\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Real\\ Feel\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Mutual\\ Climax\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Smooth\\ Glide\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Intense\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Intense\\ Stimulating\\ Condoms\\ With\\ Desirex\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Pleasure\\ Mix\\ 5\\ In\\ 1\\ Assorted\\ Condoms$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Thin\\ Flavoured\\ Condoms\\ \\-\\ Bubblegum$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Thin\\ Flavoured\\ Condoms\\ \\-\\ Intense\\ Chocolate$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Thin\\ Flavoured\\ Condoms\\ \\-\\ Wild\\ Strawberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Thin\\ Flavoured\\ Condoms\\ \\-\\ Vanilla\\ Popsicle$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Thin\\ Flavoured\\ Condoms\\ \\-\\ Wildberry$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Intense\\ Stimulating\\ Lubricant\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Real\\ Feel\\ Lubricant\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Play\\ Cherry\\ Lubricant$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Play\\ Strawberry\\ Lubricant$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Intimate\\ Lubricant\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Massage\\ Lube\\ 2\\ In\\ 1\\ \\-\\ Guarana$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Massage\\ Lube\\ 2\\ In\\ 1\\ \\-\\ Ylang\\ Ylang$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Time\\ Delay\\ Spray\\ For\\ Men$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Condoms & Lubricants"
+      ]
+    }
+  ]
+}
