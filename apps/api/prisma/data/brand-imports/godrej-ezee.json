@@ -1,0 +1,54 @@
+{
+  "brand": "Godrej Ezee",
+  "manufacturer": "Godrej Consumer Products Ltd.",
+  "feed": "godrej-ezee-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/godrej-ezee/logo-8b339b1b.png",
+  "themeColor": "#C8175D",
+  "themeColorSecondary": "#2BB5D8",
+  "namePrefix": "Godrej Ezee ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Liquid\\ Detergent\\ for\\ Winterwear$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Liquid\\ Detergent\\ for\\ Silk\\ \\&\\ Chiffon\\ \\-\\ Front\\ Load$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Liquid\\ Detergent\\ \\+\\ Fabric\\ Conditioner$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Liquid\\ Detergent\\ \\+\\ Fabric\\ Sanitizer$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Detergent\\ Pods$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    }
+  ]
+}
