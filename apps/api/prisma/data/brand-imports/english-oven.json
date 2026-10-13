@@ -1,0 +1,251 @@
+{
+  "brand": "English Oven",
+  "manufacturer": "Mrs. Bectors Food Specialities Ltd.",
+  "feed": "english-oven-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/english-oven/logo-f59c832a.png",
+  "themeColor": "#7A1F2B",
+  "themeColorSecondary": "#E9A23B",
+  "namePrefix": "English Oven ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "English Oven Cheesy Garlic Bread": "Garlic Bread",
+    "English Oven Multigrain Bread": "Zero Maida Multigrain Bread",
+    "English Oven Sandwich Bread - White": "Sandwich Bread",
+    "English Oven Whole Wheat Bread": "Zero Maida Whole Wheat Bread"
+  },
+  "rules": [
+    {
+      "match": "^Atta\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Atta\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Whole\\ Wheat\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Zero\\ Maida\\ Multigrain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Brown\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Premium\\ White\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "White Bread"
+      ]
+    },
+    {
+      "match": "^Sandwich\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Milk\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Sandwich Bread"
+      ]
+    },
+    {
+      "match": "^Herbs\\ \\&\\ Garlic\\ Sourdough\\ Stone\\ Baked\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Multigrain Bread"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Sourdough\\ Stone\\ Baked\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Brown & Whole Wheat Bread"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Garlic Bread"
+      ]
+    },
+    {
+      "match": "^Burger\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Atta\\ Burger\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Soft\\ Pav\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Pav & Bun"
+      ]
+    },
+    {
+      "match": "^Fruit\\ Bun$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Bunfills\\ Chocolate$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Sub\\ Footlong\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Sub\\ Footlong\\ Roasted\\ Garlic\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Sub\\ Footlong\\ Italian\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Sub\\ Multigrain\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Sub\\ Olive\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Buns & Rolls"
+      ]
+    },
+    {
+      "match": "^Butter\\ Croissant$",
+      "path": [
+        "Bakery",
+        "Bakery Snacks",
+        "Croissant"
+      ]
+    },
+    {
+      "match": "^Kulcha\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Atta\\ Kulcha\\ Bread$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Pizza\\ Base$",
+      "path": [
+        "Bakery",
+        "Bread",
+        "Kulcha, Roti & Pizza Base"
+      ]
+    },
+    {
+      "match": "^Premium\\ Rusk$",
+      "path": [
+        "Bakery",
+        "Rusk",
+        "Plain Rusk"
+      ]
+    }
+  ]
+}
