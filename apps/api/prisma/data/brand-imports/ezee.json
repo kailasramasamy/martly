@@ -1,0 +1,257 @@
+{
+  "brand": "Ezee",
+  "manufacturer": "Alka Lifestyle Pvt. Ltd.",
+  "feed": "ezee-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ezee/logo-7043adc1.png",
+  "themeColor": "#D7262E",
+  "themeColorSecondary": "#2B3990",
+  "namePrefix": "Ezee ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Ezee Garbage Bags - Medium (19x21 inches)": "Garbage Bags - Black, Medium",
+    "Ezee Tissue Paper Napkins": "Velwet Tissue Napkins - 2 Ply"
+  },
+  "rules": [
+    {
+      "match": "^Garbage\\ Bags\\ \\-\\ Black,\\ Small$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Garbage\\ Bags\\ \\-\\ Black,\\ Medium$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Garbage\\ Bags\\ \\-\\ Black,\\ XL$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Garbage\\ Bags\\ \\-\\ Black,\\ Jumbo$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Garbage\\ Bags\\ \\-\\ Medium$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Biodegradable\\ Garbage\\ Bags\\ \\-\\ XL$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Premium\\ Garbage\\ Bags\\ \\-\\ Medium$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Premium\\ Garbage\\ Bags\\ \\-\\ Large$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Garbage Bags"
+      ]
+    },
+    {
+      "match": "^Food\\ Grade\\ Aluminium\\ Foil\\ \\-\\ 9m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Aluminium\\ Foil\\ 11\\ Micron\\ \\-\\ 18m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Heavy\\ Duty\\ Aluminium\\ Foil\\ \\-\\ 72m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Bio\\ Cling\\ Film\\ \\-\\ 30m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Bio\\ Cling\\ Film\\ \\-\\ 100m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Printed\\ Bake\\ \\&\\ Wrap\\ Paper\\ \\-\\ 25m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Air\\ Fryer\\ Sheets\\ \\-\\ 20\\.32\\ cm$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Ziplock\\ Pouch\\ \\-\\ Large$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Ziplock\\ Pouch\\ \\-\\ XL$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Facial\\ Tissue$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Super\\ Soft\\ Facial\\ Tissues\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Cocktail\\ Napkins\\ \\-\\ 1\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Velwet\\ Tissue\\ Napkins\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^M\\ Fold\\ Tissue\\ Napkins$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Tissue Paper & Napkins"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Towel\\ \\-\\ Regular$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Reusable\\ Kitchen\\ Towel\\ \\-\\ Blue$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Paper Towels / Kitchen Roll"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Toilet\\ Paper\\ Roll\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Toilet\\ Rolls\\ \\-\\ 2\\ Ply$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Toilet Paper"
+      ]
+    },
+    {
+      "match": "^Bagasse\\ Plates\\ \\-\\ 9\\ inch,\\ 3\\ Compartment$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Bagasse\\ Round\\ Bowls\\ \\(180ml\\)$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Wooden\\ Disposable\\ Forks$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    },
+    {
+      "match": "^Wooden\\ Disposable\\ Spoons$",
+      "path": [
+        "Home Care",
+        "Paper & Disposables",
+        "Disposable Plates & Cups"
+      ]
+    }
+  ]
+}
