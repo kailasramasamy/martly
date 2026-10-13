@@ -1,0 +1,718 @@
+{
+  "brand": "Beardo",
+  "manufacturer": "Zed Lifestyle Pvt. Ltd.",
+  "feed": "beardo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/beardo/logo-a9df7114.png",
+  "themeColor": "#000000",
+  "themeColorSecondary": "#D71920",
+  "namePrefix": "Beardo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Godfather\\ Beard\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Daily\\ Repair\\ Hemp\\ Beard\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Beard\\ \\&\\ Hair\\ Growth\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Daily\\ Shine\\ Beard\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Heavy\\ Duty\\ Beard\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Beard\\ Softener$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Godfather\\ Beard\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Beard\\ Shaping\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Mustache\\ \\&\\ Beard\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Beard Oil & Balm"
+      ]
+    },
+    {
+      "match": "^Hair\\ Removal\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Black\\ Musk\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Godfather\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Whisky\\ Smoke\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Whisky\\ Smoke\\ Bourbon\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Whisky\\ Smoke\\ Single\\ Malt\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Mariner\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Tsunami\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Legend\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Mafia\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Dark\\ Side\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^LSD\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Origin\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Don\\ Eau\\ De\\ Parfum$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Freed\\ Queen\\ Energy\\ Eau\\ De\\ Parfum\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Freed\\ Smokin'\\ Hot\\ Eau\\ De\\ Parfum\\ for\\ Women$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Godfather\\ Solid\\ Perfume\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Whisky\\ Smoke\\ Solid\\ Perfume\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Bandit\\ No\\ Gas\\ Perfume\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Don\\ No\\ Gas\\ Perfume\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Mafia\\ No\\ Gas\\ Perfume\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Spy\\ Perfume\\ Body\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Perfume & Body Mist"
+      ]
+    },
+    {
+      "match": "^Falcon\\ Perfume\\ Deo\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Legacy\\ Perfume\\ Deo\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Mafia\\ Perfume\\ Deo\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Whisky\\ Smoke\\ Perfume\\ Deo\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Wolf\\ Perfume\\ Deo\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Ball\\ Sack\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Ice\\ Blast\\ Perfume\\ Roll\\ On$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Roll-On"
+      ]
+    },
+    {
+      "match": "^Acne\\ Clear\\ 3\\-in\\-1\\ Foam\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Activated\\ Charcoal\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Activated\\ Charcoal\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Activated\\ Charcoal\\ Peel\\ Off\\ Mask$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^De\\-Tan\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^De\\-Tan\\ Coffee\\ Detox\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^De\\-Tan\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^De\\-Tan\\ Face\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^De\\-Tan\\ 2\\-in\\-1\\ Toning\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Vitamin\\ C\\ 2\\-in\\-1\\ Toning\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Neem\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Glow\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Ultraglow\\ SPF\\ 30\\ Face\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Under\\ Eye\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Max\\ Sunscreen\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Bubblegum\\ Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Mocha\\ Shot\\ Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Lip\\ Lightener$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Tattoo\\ Shiner\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Activated\\ Charcoal\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^B\\-Acne\\ Clear\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^De\\-Tan\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Godfather\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Glow\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Ball\\ Sack\\ Intimate\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Activated\\ Charcoal\\ Brick\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Musk\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Jamaican\\ Rum\\ Perfumed\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Whisky\\ Smoke\\ Perfumed\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Dandruff\\ Control\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hair\\ Growth\\ Vitalizer\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Thin\\ Hair\\ Thickening\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Hair\\ Growth\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Anti\\-Grey\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Argan\\ Oil\\ Hair\\ Serum$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hair\\ Growth\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Serum"
+      ]
+    },
+    {
+      "match": "^Hair\\ Growth\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Onion\\ Oil\\ Concentrate$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Creme\\ Power\\ Styling\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Hair\\ Clay\\ Matte\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Strong\\ Hold\\ Crystal\\ Hair\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Ice\\ Blast\\ Hair\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Insane\\ Hold\\ Hair\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Quick\\ Fix\\ Strong\\ Hold\\ Hair\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Sea\\ Salt\\ Volumizing\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Max\\ Volume\\ Powder\\ Wax$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Man\\ Curls\\ Curly\\ Hair\\ Styler$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Gel & Wax"
+      ]
+    },
+    {
+      "match": "^Blackout\\ Powder\\ Hair\\ Cover\\ Up$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Dark\\ Brown\\ Beard\\ Colour$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}
