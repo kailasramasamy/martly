@@ -1,0 +1,22 @@
+{
+  "brand": "Selsun (Chattem)",
+  "manufacturer": "Abbott India Ltd.",
+  "feed": "selsun-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/selsun/logo-7c22bffd.png",
+  "themeColor": "#0B6B3A",
+  "themeColorSecondary": "#0072BC",
+  "namePrefix": "Selsun ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Suspension\\ Anti\\-Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    }
+  ]
+}
