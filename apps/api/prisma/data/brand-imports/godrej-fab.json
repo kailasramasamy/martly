@@ -1,0 +1,30 @@
+{
+  "brand": "Godrej Fab",
+  "manufacturer": "Godrej Consumer Products Ltd.",
+  "feed": "godrej-fab-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/godrej-fab/logo-bb1e7a20.png",
+  "themeColor": "#003DA5",
+  "themeColorSecondary": "#FFD100",
+  "namePrefix": "Godrej Fab ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Liquid\\ Detergent\\ for\\ Machine\\ \\&\\ Bucket\\ Wash$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Front\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    }
+  ]
+}
