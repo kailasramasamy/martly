@@ -1,0 +1,166 @@
+{
+  "brand": "LetsShave",
+  "manufacturer": "Pure Shave Pvt. Ltd. (LetsShave)",
+  "feed": "letsshave-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/letsshave/logo-2616d186.png",
+  "themeColor": "#1565C0",
+  "themeColorSecondary": "#111111",
+  "namePrefix": "LetsShave ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Alum\\ Stone\\ Bar$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "After Shave"
+      ]
+    },
+    {
+      "match": "^Balls\\ Mist\\ Intimate\\ Spray\\ for\\ Men$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Deodorant Spray"
+      ]
+    },
+    {
+      "match": "^Beard\\ Trimmer\\ Plus\\ 9\\-in\\-1$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Beard,\\ Body\\ \\&\\ Head\\ Trimmer$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Trimmer Accessories"
+      ]
+    },
+    {
+      "match": "^Brightening\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Coconut\\ \\&\\ Menthol\\ Shave\\ Foam$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Shaving Cream & Gel"
+      ]
+    },
+    {
+      "match": "^Premium\\ Double\\ Edge\\ Blades$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 2\\ Plus\\ Disposable\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 3\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 3\\ Advance\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 4\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 6\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 6\\ Advance\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 6\\ Plus\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 6\\ Plus\\ Cartridges$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ 7\\ Max\\ Razor\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ Portable\\ 6\\ Blade\\ Disposable\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ Signature\\ Safety\\ Razor\\ Kit$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    },
+    {
+      "match": "^Pro\\ Styler\\ Beard\\ Shaping\\ Razor$",
+      "path": [
+        "Personal Care",
+        "Men's Grooming",
+        "Razor & Blades"
+      ]
+    }
+  ]
+}
