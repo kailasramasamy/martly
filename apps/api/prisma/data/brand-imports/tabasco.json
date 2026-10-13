@@ -1,0 +1,56 @@
+{
+  "brand": "Tabasco (McIlhenny)",
+  "manufacturer": "McIlhenny Company, USA",
+  "feed": "tabasco-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tabasco/logo-669f6ea4.png",
+  "themeColor": "#C8102E",
+  "themeColorSecondary": "#1E5B3A",
+  "namePrefix": "Tabasco ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Tabasco Original Red Pepper Sauce": "Original Red Pepper Sauce"
+  },
+  "rules": [
+    {
+      "match": "^Original\\ Red\\ Pepper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Green\\ Pepper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Garlic\\ Pepper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Habanero\\ Pepper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    },
+    {
+      "match": "^Chipotle\\ Pepper\\ Sauce$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Sauces & Spreads",
+        "Hot Sauce & Sriracha"
+      ]
+    }
+  ]
+}
