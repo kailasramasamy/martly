@@ -1,0 +1,512 @@
+{
+  "brand": "RiteBite",
+  "manufacturer": "Naturell (India) Pvt. Ltd.",
+  "feed": "ritebite-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ritebite/logo-4abe7207.png",
+  "themeColor": "#5C1F2B",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "RiteBite ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "RiteBite Max Protein Daily Choco Almond Bar": "Max Protein Daily 10g Bar - Choco Almond"
+  },
+  "rules": [
+    {
+      "match": "^Max\\ Protein\\ Daily\\ 10g\\ Bar\\ \\-\\ Choco\\ Almond$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Daily\\ 10g\\ Bar\\ \\-\\ Choco\\ Berry$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Daily\\ 10g\\ Bar\\ \\-\\ Choco\\ Classic$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Daily\\ 10g\\ Bar\\ \\-\\ Fruit\\ \\&\\ Nut$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Daily\\ 10g\\ Bar\\ \\-\\ Salt\\ \\&\\ Caramel$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Daily\\ Bar\\ \\-\\ Date\\ \\&\\ Almond$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Daily\\ Bar\\ \\-\\ Fig\\ \\&\\ Date$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Roots\\ Ghee\\ Jaggery\\ Bar\\ \\-\\ Cocoa\\ Brownie$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Roots\\ Ghee\\ Jaggery\\ Bar\\ \\-\\ Coffee\\ Mocha$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Roots\\ Ghee\\ Jaggery\\ Bar\\ \\-\\ Orange\\ Burst$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Ultimate\\ 30g\\ Bar\\ \\-\\ Choco\\ Almond$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Ultimate\\ 30g\\ Bar\\ \\-\\ Choco\\ Berry$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Active\\ 20g\\ Bar\\ \\-\\ Choco\\ Fudge$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Active\\ 20g\\ Bar\\ \\-\\ Choco\\ Slim$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Active\\ 20g\\ Bar\\ \\-\\ Green\\ Coffee$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Active\\ 20g\\ Bar\\ \\-\\ Date\\ \\&\\ Almond$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Active\\ 20g\\ Bar\\ \\-\\ Fig\\ \\&\\ Date$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Millet\\ Wafer\\ Bar\\ \\-\\ Choco\\ Temptation$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Millet\\ Wafer\\ Bar\\ \\-\\ Coffee\\ Mousse$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Millet\\ Wafer\\ Bar\\ \\-\\ Strawberry\\ Truffle$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Bytes\\ \\-\\ Choco\\ Almond$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Bytes\\ \\-\\ Choco\\ Berry$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Bytes\\ \\-\\ Date\\ \\&\\ Almond$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Wellness\\ Fibre\\ Bar\\ \\-\\ Melting\\ Chocolate$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Wellness\\ Fibre\\ Bar\\ \\-\\ Berry\\ Delite$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Wellness\\ Fibre\\ Bar\\ \\-\\ Blueberry\\ Blast$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Wellness\\ Fibre\\ Bar\\ \\-\\ Figs\\ \\&\\ Dates$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Energy\\ Bar\\ \\-\\ Choco\\ Delite$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Energy\\ Bar\\ \\-\\ Peanut\\ Butter$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Energy\\ Bar\\ \\-\\ Sports$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Energy\\ Bar\\ \\-\\ Yogurt\\ Berry$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Energy\\ Bar\\ \\-\\ Fruits\\ \\&\\ Seeds$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Energy\\ Bar\\ \\-\\ Nuts\\ \\&\\ Seeds$",
+      "path": [
+        "Gourmet & World Foods",
+        "International Snacks",
+        "Granola Bars & Protein Bars"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Breakfast\\ Cookie\\ \\-\\ Choco\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Breakfast\\ Cookie\\ \\-\\ Nuts\\ \\&\\ Seeds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Breakfast\\ Cookie\\ \\-\\ Oats\\ \\&\\ Raisins$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Breakfast\\ Cookie\\ \\-\\ Trail\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Breakfast\\ Cookie\\ \\-\\ Choco\\ Almond$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Crunchy\\ Cookies\\ \\-\\ Berry\\ Bliss$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Crunchy\\ Cookies\\ \\-\\ Choco\\ Chips\\ Bliss$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Chips\\ \\-\\ Cheese\\ \\&\\ Jalapeno$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Chips\\ \\-\\ Chinese\\ Manchurian$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Chips\\ \\-\\ Cream\\ \\&\\ Onion$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Chips\\ \\-\\ Desi\\ Masala$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Chips\\ \\-\\ Peri\\ Peri$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Chips\\ \\-\\ Spanish\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ 7\\ Grain\\ Snack\\ \\-\\ Cream\\ \\&\\ Onion$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ 7\\ Grain\\ Snack\\ \\-\\ Cheese\\ \\&\\ Jalapeno$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ 7\\ Grain\\ Snack\\ \\-\\ Peri\\ Peri$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ 7\\ Grain\\ Snack\\ \\-\\ Spanish\\ Tomato$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Korean\\ Chips\\ \\-\\ Barbeque$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Korean\\ Chips\\ \\-\\ Gochujang$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Korean\\ Chips\\ \\-\\ Hot\\ Chilli$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Chips & Crisps",
+        "Tortilla & Nachos"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Granola\\ \\-\\ Choco\\ Crunchy$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Granola\\ \\-\\ Fruits\\ \\&\\ Nuts$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Granola\\ \\-\\ Nuts\\ \\&\\ Seeds$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Breakfast Cereals & Muesli",
+        "Muesli & Granola"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Peanut\\ Butter\\ \\-\\ Dark\\ Choco\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Peanut\\ Spread\\ \\-\\ Choco\\ Creamy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ Peanut\\ Butter\\ \\-\\ Classic\\ Crunchy$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Peanut Butter"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ 26g\\ Protein\\ Shake\\ \\-\\ Berry\\ Blush$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ 26g\\ Protein\\ Shake\\ \\-\\ Choco\\ Burst$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    },
+    {
+      "match": "^Max\\ Protein\\ 26g\\ Protein\\ Shake\\ \\-\\ Coffee\\ Crush$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Protein Drinks"
+      ]
+    }
+  ]
+}
