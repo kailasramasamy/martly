@@ -1,0 +1,46 @@
+{
+  "brand": "Colin (Reckitt)",
+  "manufacturer": "Reckitt Benckiser (India) Pvt. Ltd.",
+  "feed": "colin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/colin/logo-1d52ac38.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#0072CE",
+  "namePrefix": "Colin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Glass\\ \\&\\ Surface\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Glass Cleaner"
+      ]
+    },
+    {
+      "match": "^Glass\\ \\&\\ Surface\\ Cleaner\\ Spray\\ \\-\\ Lemon\\ Burst$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Glass Cleaner"
+      ]
+    },
+    {
+      "match": "^TV\\ \\&\\ Gadget\\ Cleaner\\ Spray$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Multi-Surface Spray"
+      ]
+    },
+    {
+      "match": "^Power\\ Cleaner\\ Glass\\ Cleaner\\ Refill$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Glass Cleaner"
+      ]
+    }
+  ]
+}
