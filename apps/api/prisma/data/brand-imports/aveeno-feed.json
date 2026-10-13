@@ -1,0 +1,426 @@
+[
+ {
+  "title": "Daily Moisturising Lotion",
+  "handle": "daily-moisturising-lotion",
+  "vendor": "Aveeno",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322916_1-aveeno-daily-moisturising-lotion-nourish-normal-dry-sensitive-skin.jpg"
+    }
+   },
+   {
+    "title": "71ml",
+    "price": "285",
+    "compare_at_price": "285",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40141651_8-aveeno-daily-moisturising-lotion.jpg"
+    }
+   },
+   {
+    "title": "354ml",
+    "price": "1190",
+    "compare_at_price": "1190",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120867_8-aveeno-daily-moisturising-lotion-for-normal-dry-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322916_1-aveeno-daily-moisturising-lotion-nourish-normal-dry-sensitive-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322916-2_1-aveeno-daily-moisturising-lotion-nourish-normal-dry-sensitive-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322916-3_1-aveeno-daily-moisturising-lotion-nourish-normal-dry-sensitive-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141651_8-aveeno-daily-moisturising-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120867_8-aveeno-daily-moisturising-lotion-for-normal-dry-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "Aveeno Daily Moisturising Lotion instantly hydrates to soothe dry skin and prevent skin dryness. It is formulated for sensitive skin and clinically proven to give you long-lasting hydration for 48 hours after 4 weeks of continuous use. Made with prebiotic colloidal oat formula, the gentle daily lotion nourishes and helps replenish the skin's natural moisture barrier."
+  }
+ },
+ {
+  "title": "Skin Relief Moisturising Lotion",
+  "handle": "skin-relief-moisturising-lotion",
+  "vendor": "Aveeno",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "30g",
+    "price": "235",
+    "compare_at_price": "235",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322917_1-aveeno-skin-relief-moisturising-lotion-instantly-relieves-dry-sensitive-skin.jpg"
+    }
+   },
+   {
+    "title": "71ml",
+    "price": "405",
+    "compare_at_price": "405",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40322918_1-aveeno-skin-relief-moisturising-lotion-soothes-sensitive-very-dry-skin.jpg"
+    }
+   },
+   {
+    "title": "354ml",
+    "price": "1310",
+    "compare_at_price": "1310",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40120868_7-aveeno-skin-relief-lotion-for-sensitive-skin.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322917_1-aveeno-skin-relief-moisturising-lotion-instantly-relieves-dry-sensitive-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322917-2_1-aveeno-skin-relief-moisturising-lotion-instantly-relieves-dry-sensitive-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322917-3_1-aveeno-skin-relief-moisturising-lotion-instantly-relieves-dry-sensitive-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40322918_1-aveeno-skin-relief-moisturising-lotion-soothes-sensitive-very-dry-skin.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40120868_7-aveeno-skin-relief-lotion-for-sensitive-skin.jpg"
+   }
+  ],
+  "details": {
+   "description": "Moisturise extra dry skin with AVEENO Skin Relief Moisturising Lotion with a triple oat & shea butter formula. This fragrance-free lotion provides clinically proven long-lasting intense hydration for 72 hours*, relief dry, itchy skin in 20 seconds. Strengthen protective barrier and support skin's natural ceramide production. Fragrance-free lotion for extra-dry, itchy skin. Soothing Prebiotic Triple Oat & Shea Butter Formula with oat flour, oat extract, and oat oil. Clinically proven to be suitable for sensitive skin. Hypoallergenic. Non-greasy. Fast-absorbing. Non-comedogenic. Formulated without parabens, drying alcohol and dyes."
+  }
+ },
+ {
+  "title": "Dermexa Emollient Cream",
+  "handle": "dermexa-emollient-cream",
+  "vendor": "Aveeno",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "1500",
+    "compare_at_price": "1500",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40141652_7-aveeno-dermexa-emollient-cream.jpg"
+    },
+    "barcode": "3574661411545"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141652_7-aveeno-dermexa-emollient-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141652-2_2-aveeno-dermexa-emollient-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141652-3_1-aveeno-dermexa-emollient-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141652-4_1-aveeno-dermexa-emollient-cream.jpg"
+   }
+  ],
+  "details": {
+   "description": "Formulated with triple oat complex, Aveeno Dermexa emollient cream intensely moisturizes extra-dry and irritated skin to strengthen the skins natural barrier. This soothing cream is clinically proven to provide relief against 5 signs of very dry skin (roughness, redness, the sensation of itch, tightness & scaling). Developed with dermatologists, it is formulated to minimize the risk of allergies and leaves skin feeling significantly more comfortable after 4 weeks. Combines Colloidal Oatmeal, Avenanthramides, and Ceramides.",
+   "usageInstructions": "Apply daily before or after bath all over your body",
+   "manufacturerName": "Johnson & Johnson Private Limited"
+  }
+ },
+ {
+  "title": "Baby Daily Moisture Lotion",
+  "handle": "baby-daily-moisture-lotion",
+  "vendor": "Aveeno",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "550",
+    "compare_at_price": "550",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051_1-aveeno-baby-daily-moisture-lotion.jpg"
+    }
+   },
+   {
+    "title": "227g",
+    "price": "1050",
+    "compare_at_price": "1050",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112175_5-aveeno-daily-moisturising-baby-lotion.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051_1-aveeno-baby-daily-moisture-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051-2_1-aveeno-baby-daily-moisture-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051-3_1-aveeno-baby-daily-moisture-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051-4_1-aveeno-baby-daily-moisture-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051-5_1-aveeno-baby-daily-moisture-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051-6_1-aveeno-baby-daily-moisture-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051-7_1-aveeno-baby-daily-moisture-lotion.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360051-8_1-aveeno-baby-daily-moisture-lotion.jpg"
+   }
+  ],
+  "details": {
+   "description": "This gently nourishing lotion is thoughtfully formulated with oat flour, glycerin and dimethicone to care for your baby’s delicate skin. Each application provides a soft, soothing touch that helps comfort the skin while supporting its natural protective barrier, keeping it feeling calm and well cared for throughout the day.\nPowered by the natural goodness of oats, the lotion is designed to suit sensitive skin. Oat flour is known for its calming properties, helping to ease discomfort and dryness, while glycerin helps retain moisture and dimethicone forms a light protective layer. The fragrance-free formula is trusted by dermatologists and paediatricians in the US and is made without parabens, phthalates or phenoxyethanol.\nLightweight and fast absorbing, the non-greasy texture offers quick relief for chafed or dry areas without feeling heavy. Application is simple and fuss-free—twist open the cap, dispense a small amount and gently massage onto your baby’s face or body as needed, helping protect their skin from everyday dryness and changing weather conditions.",
+   "manufacturerName": "Johnson & Johnson Korea Ltd",
+   "countryOfOrigin": "Republic of Korea"
+  }
+ },
+ {
+  "title": "Baby Soothing Relief Moisture Cream",
+  "handle": "baby-soothing-relief-moisture-cream",
+  "vendor": "Aveeno",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "140g",
+    "price": "600",
+    "compare_at_price": "600",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+    },
+    "barcode": "8901012101063"
+   },
+   {
+    "title": "227g",
+    "price": "1259",
+    "compare_at_price": "1259",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40112176_5-aveeno-baby-moisture-cream-soothing-relief.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053-2_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053-3_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053-4_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053-5_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053-6_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053-7_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40360053-8_1-aveeno-baby-soothing-relief-moisture-cream.jpg"
+   }
+  ],
+  "details": {
+   "description": "Aveeno Baby Soothing Relief Moisture Cream provides gentle, long-lasting hydration for delicate baby skin, helping to keep it moisturised for up to 24 hours with natural colloidal oatmeal. Free from fragrances and parabens, the hypoallergenic formula is suitable for sensitive skin, offering everyday nourishment without causing irritation.\nEnriched with Avena Sativa (oat) kernel flour, glycerin and beeswax, the cream helps lock in moisture while supporting the skin’s natural barrier. Its light, smooth texture absorbs quickly without leaving a greasy feel, making application easy. Trusted by parents and recommended by paediatricians, it is ideal for daily use.",
+   "countryOfOrigin": "Korea"
+  }
+ },
+ {
+  "title": "Baby Daily Moisture Hydrating Facial Gel",
+  "handle": "baby-daily-moisture-hydrating-facial-gel",
+  "vendor": "Aveeno",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "60g",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383-2_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383-3_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383-4_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383-5_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383-6_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383-7_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40346383-8_2-aveeno-baby-daily-moisture-hydrating-facial-gel.jpg"
+   }
+  ],
+  "details": {
+   "description": "Aveeno Baby Daily Moisture Hydrating Facial Gel (Cream)\ncontains Oat extract that cares for baby's sensitive skin. It is light, non-sticky,\nfragrance free and non-irritating making it suitable for newborns.\nKey benefits:\nNon-sticky, non-irritating formula that provides 24-hour\nhydration to help make baby skin healthy-looking and smooth\nUltra-light texture like ice cream with easy absorption,\nsuitable for baby’s delicate skin\nThe power of oat for baby’s sensitive skin – helps soothe\nand moisturize baby’s gentle skin\nFragrance free, hypoallergenic formulation – suitable for\nnewborns",
+   "manufacturerName": "Johnson & Johnson India Pvt Ltdjohnson",
+   "countryOfOrigin": "South Korea"
+  }
+ },
+ {
+  "title": "Baby Daily Moisture Cleansing Bar",
+  "handle": "baby-daily-moisture-cleansing-bar",
+  "vendor": "Aveeno",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+    },
+    "barcode": "8901012101926"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843-2_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843-3_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843-4_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843-5_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843-6_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843-7_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362843-8_2-aveeno-baby-daily-moisture-cleansing-bar.jpg"
+   }
+  ],
+  "details": {
+   "description": "Specially designed for delicate newborn skin, this gentle formula is co-created with Paediatricians and Dermatologists. Enriched with natural oatmeal, moisturising glycerin and nourishing shea butter, it helps soothe, protect and maintain the skin’s natural moisture barrier. The pH-balanced composition ensures mild cleansing without dryness. Carefully formulated without soap, parabens, sulphates or phthalates, it provides safe, everyday care your baby’s sensitive skin can trust.",
+   "manufacturerName": "VVF (India) Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Baby Wash & Shampoo",
+  "handle": "baby-wash-shampoo",
+  "vendor": "Aveeno",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100ml",
+    "price": "338",
+    "compare_at_price": "338",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551_2-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+    },
+    "barcode": "8801108001003"
+   },
+   {
+    "title": "354ml",
+    "price": "950",
+    "compare_at_price": "950",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40111053_7-aveeno-baby-bath-daily-moisturising.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551_2-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551-2_2-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551-3_2-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551-4_1-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551-5_1-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551-6_1-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551-7_1-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40318551-8_1-aveeno-baby-daily-moisture-wash-shampoo.jpg"
+   }
+  ],
+  "details": {
+   "description": "1. Aveeno Baby Daily Moisture Wash & Shampoo gently cleanses & helps nourish baby's hair and sensitive skin.\n2. Made for babies with sensitive skin. Enriched with natural oat extract that cleanses without drying.\n3. Unique 2-in-1 formula leaves baby's hair soft, smooth and easy to manage\n4. Recommended by US Pediatricians and dermatologists\n5. Hypoallergenic formula is gentle and safe enough for baby eyes, suitable for daily use.",
+   "manufacturerName": "JNTL",
+   "countryOfOrigin": "Korea"
+  }
+ }
+]
