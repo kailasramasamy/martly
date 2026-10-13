@@ -1,0 +1,38 @@
+{
+  "brand": "Kayam (Sheth Brothers)",
+  "manufacturer": "Sheth Brothers",
+  "feed": "kayam-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/kayam/logo-cf95b90c.png",
+  "themeColor": "#C4161C",
+  "themeColorSecondary": "#F7941D",
+  "namePrefix": "Kayam ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Ayurvedic\\ Tablets$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Churna\\ Advance\\ Granules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    }
+  ]
+}
