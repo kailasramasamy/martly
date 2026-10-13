@@ -1,0 +1,449 @@
+{
+  "brand": "Milton",
+  "manufacturer": "Hamilton Housewares Pvt. Ltd.",
+  "feed": "milton-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/milton/logo-acf851dd.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1B3F8B",
+  "namePrefix": "Milton ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Milton Thermosteel Flip Lid Water Bottle": "Thermosteel Flip Lid Flask",
+    "Milton Thermosteel Water Bottle (500ml)": "Thermosteel Duo Deluxe Water Bottle"
+  },
+  "rules": [
+    {
+      "match": "^Thermosteel\\ Flip\\ Lid\\ Flask$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Thermosteel\\ Duo\\ Deluxe\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Thermosteel\\ Elfin\\ Flask$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Thermosteel\\ Plain\\ Lid\\ Flask$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Thermosteel\\ Optima\\ Flask$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Thermosteel\\ Carafe$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Glassy\\ Vacuum\\ Flask$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Stark\\ 900\\ Thermosteel\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Aqua\\ Stainless\\ Steel\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Alive\\ Stainless\\ Steel\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Super\\ Single\\ Wall\\ Stainless\\ Steel\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Sipstar\\ Stainless\\ Steel\\ Sipper\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Handy\\ Stainless\\ Steel\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Copper\\ Delight\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Prime\\ Single\\ Wall\\ Plastic\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Helix\\ PET\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Pacific\\ PET\\ Fridge\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Oscar\\ PET\\ Fridge\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Kip\\ Sip\\ PET\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Hector\\ PET\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Kool\\ Hexone\\ Insulated\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Kool\\ Trendy\\ Kids\\ Insulated\\ Bottle\\ with\\ Straw$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Kool\\ Active\\ Kids\\ Insulated\\ Bottle\\ with\\ Straw$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Sage\\ Kids\\ Sipper\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Kool\\ Seal\\ Insulated\\ Water\\ Jug$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Executive\\ Stainless\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Stainless\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Corporate\\ Stainless\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Flexi\\ Insulated\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Econa\\ Thermoware\\ Insulated\\ Tiffin$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^New\\ Bon\\ Bon\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^New\\ Mini\\ Insulated\\ Tiffin$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Double\\ Decker\\ Plastic\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^New\\ Steel\\ Combi\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Snack\\ Box\\ Inner\\ Steel\\ Lunch\\ Box$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Lock\\ Lunch\\ Insulated\\ Tiffin\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Delicious\\ Combo\\ Insulated\\ Tiffin$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Lunch Boxes"
+      ]
+    },
+    {
+      "match": "^Vintage\\ PET\\ Storage\\ Jar$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Storex\\ Storage\\ Container\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Storage Containers"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Spin\\ Mop\\ with\\ Bucket$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Spin\\ Mop\\ \\&\\ Bucket\\ with\\ Wheels$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Microfibre\\ Mop\\ Head\\ Refill$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Deck\\ Mop$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Rotatable\\ Wiper$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Netted\\ Sponge\\ Wiper$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Zero\\ Dust\\ Broom$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Kharata$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Dustpan\\ \\&\\ Brush\\ Set$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Dustpan & Brush"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Round\\ Toilet\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Caddy\\ Round\\ Toilet\\ Brush$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Multipurpose\\ Plunger$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Brushes"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Cleaning\\ Cloth$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cleaning Cloths & Wipes"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Heavy\\ Duty\\ Scrub$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    },
+    {
+      "match": "^Spotzero\\ Utensil\\ Scrubber$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Scrub Pad & Sponge"
+      ]
+    }
+  ]
+}
