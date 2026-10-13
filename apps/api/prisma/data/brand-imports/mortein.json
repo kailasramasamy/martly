@@ -1,0 +1,155 @@
+{
+  "brand": "Mortein (Reckitt)",
+  "manufacturer": "Reckitt Benckiser (India) Pvt. Ltd.",
+  "feed": "mortein-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mortein/logo-96ec045f.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Mortein ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Mortein 2-in-1 Mosquito Repellent Spray": "2-in-1 Mosquito & Cockroach Killer Spray",
+    "Mortein Liquid Vaporiser Refill - Insta5": "Insta Mosquito Repellent Liquid Refill",
+    "Mortein Power Gard Mosquito Coil": "PowerGard Mosquito Coil - 10 Hrs",
+    "Mortein Rat Kill Cake": "PowerGard Rat Kill Cake"
+  },
+  "rules": [
+    {
+      "match": "^2\\-in\\-1\\ Mosquito\\ \\&\\ Cockroach\\ Killer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Mosquito\\ \\&\\ Cockroach\\ Killer\\ Spray\\ \\-\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Cockroach\\ Killer\\ Spray\\ with\\ Target\\ Nozzle$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Mosquito\\ \\&\\ Fly\\ Killer\\ Spray\\ \\-\\ Fresh\\ Fragrance$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Odourless\\ Mosquito\\ Killer\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Insta\\ Mosquito\\ Repellent\\ Liquid\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^InstaTulsi\\ Mosquito\\ Repellent\\ Liquid\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Smart\\ Mosquito\\ Repellent\\ Liquid\\ Refill$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Insta\\ Mosquito\\ Killer\\ Machine\\ \\+\\ Refill\\ Combo$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Insta5\\ Mosquito\\ Repellent\\ Machine\\ \\+\\ 3\\ Refills\\ Combo$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Smart\\ Mosquito\\ Repellent\\ Machine\\ \\+\\ 1\\ Refill\\ Combo$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Smart\\ Mosquito\\ Repellent\\ Machine\\ \\+\\ 4\\ Refills\\ Combo$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Power\\ Booster\\ Mosquito\\ Coil$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^PowerGard\\ Mosquito\\ Coil\\ \\-\\ 10\\ Hrs$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^PowerGard\\ Mosquito\\ Coil\\ \\-\\ 8\\ Hrs$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    },
+    {
+      "match": "^PowerGard\\ Rat\\ Kill\\ Cake$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Rat Killer"
+      ]
+    },
+    {
+      "match": "^PowerGard\\ Rat\\ Kill\\ Cake\\ \\(Carton\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Rat Killer"
+      ]
+    }
+  ]
+}
