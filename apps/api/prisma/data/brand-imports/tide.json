@@ -1,0 +1,160 @@
+{
+  "brand": "Tide (P&G)",
+  "manufacturer": "Procter & Gamble Home Products Pvt. Ltd.",
+  "feed": "tide-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tide/logo-653cf6b7.png",
+  "themeColor": "#F26522",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Tide ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Tide Plus Extra Power Jasmine & Rose Detergent": "Plus Double Power Detergent Washing Powder - Jasmine & Rose"
+  },
+  "rules": [
+    {
+      "match": "^Plus\\ Double\\ Power\\ Detergent\\ Washing\\ Powder\\ \\-\\ Jasmine\\ \\&\\ Rose$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Plus\\ Double\\ Power\\ Detergent\\ Washing\\ Powder\\ \\-\\ Lemon\\ \\&\\ Mint$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Plus\\ Double\\ Power\\ Detergent\\ Washing\\ Powder\\ \\-\\ Lavender\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Naturals\\ Lemon\\ \\&\\ Chandan\\ Detergent\\ Washing\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Ultra\\ 3\\-in\\-1\\ Clean\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Anti\\-Germ\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Matic\\ Fully\\ Automatic\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Semi\\-Auto\\ Machine\\ \\&\\ Hand\\ Wash\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Top\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Matic\\ Front\\ Load\\ Detergent\\ Powder$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Detergent\\ Bar$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^Blue\\ Detergent\\ Bar$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^White\\ Detergent\\ Bar$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Bar"
+      ]
+    },
+    {
+      "match": "^Matic\\ Front\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Power\\ Gel\\ Freshness\\ Boost\\ Liquid\\ Detergent\\ \\-\\ Machine\\ \\&\\ Hand\\ Wash$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Power\\ Gel\\ Freshness\\ Boost\\ Top\\ \\&\\ Front\\ Load\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Matic\\ 4\\ in\\ 1\\ Pods\\ Laundry\\ Detergent\\ Capsules$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^To\\ Go\\ Instant\\ Stain\\ Remover\\ Pen$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    }
+  ]
+}
