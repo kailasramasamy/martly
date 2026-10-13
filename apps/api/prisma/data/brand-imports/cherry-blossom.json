@@ -1,0 +1,96 @@
+{
+  "brand": "Cherry Blossom (Sara Lee)",
+  "manufacturer": "S. C. Johnson Products Pvt. Ltd.",
+  "feed": "cherry-blossom-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cherry-blossom/logo-50d6736e.png",
+  "themeColor": "#8B1A2B",
+  "themeColorSecondary": "#C9A227",
+  "namePrefix": "Cherry Blossom ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Cherry Blossom Shoe Polish - Black": "Black Wax Shoe Polish"
+  },
+  "rules": [
+    {
+      "match": "^Black\\ Wax\\ Shoe\\ Polish$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Dark\\ Tan\\ Wax\\ Shoe\\ Polish$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Black\\ Liquid\\ Shoe\\ Polish$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Dark\\ Tan\\ Liquid\\ Shoe\\ Polish$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^White\\ Liquid\\ Shoe\\ Polish$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Shoe\\ Cream\\ with\\ Foam\\ Applicator\\ \\-\\ Black$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Handy\\ Shine\\ Shoe\\ Shiner\\ Sponge\\ \\-\\ Black$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Handy\\ Shine\\ Shoe\\ Shiner\\ Sponge\\ \\-\\ Neutral$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Shoe\\ Shine\\ Sponge\\ \\-\\ All\\ Colours$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Polish"
+      ]
+    },
+    {
+      "match": "^Sneaker\\ \\&\\ Sports\\ Shoe\\ Cleaner$",
+      "path": [
+        "Home Care",
+        "Shoe Care",
+        "Shoe Cleaner"
+      ]
+    }
+  ]
+}
