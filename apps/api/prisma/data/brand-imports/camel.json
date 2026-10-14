@@ -1,0 +1,46 @@
+{
+  "brand": "Camel",
+  "manufacturer": "Kokuyo Camlin Ltd.",
+  "feed": "camel-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/camel/logo-2eaee505.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#1D4E9E",
+  "namePrefix": "Camel ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Brush\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Sketch\\ Pens$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Washable\\ Colour\\ Markers\\ for\\ Kids$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Sketch\\ Book\\ \\-\\ 140\\ GSM,\\ A4$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
