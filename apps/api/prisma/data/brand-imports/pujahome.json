@@ -1,0 +1,302 @@
+{
+  "brand": "Pujahome",
+  "manufacturer": "Shubhsanskar Spiritual Solutions Pvt. Ltd.",
+  "feed": "pujahome-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pujahome/logo-473d9a3c.png",
+  "themeColor": "#F37021",
+  "themeColorSecondary": "#C9A15B",
+  "namePrefix": "Pujahome ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Camphor\\ Tablets$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Bhimseni\\ Camphor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Long\\ Cotton\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Round\\ Cotton\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Tip\\ Round\\ Cotton\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Tip\\ Round\\ Cotton\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Pure\\ Cow\\ Ghee\\ Diya\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Vegan\\ Diya\\ Wicks\\ \\-\\ White$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Twisted\\ Akhand\\ Jyot\\ Batti\\ \\-\\ White$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Cork\\ Floating\\ Oil\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Vedamrit\\ Puja\\ Ghee$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Hanuman\\ Ji\\ Orange\\ Sindoor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Red\\ Sindoor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Roli\\ Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Haldi\\ Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Haldi\\ Powder\\ for\\ Puja$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Gulal\\ Powder\\ for\\ Puja$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Ashtagandha\\ Chandan\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Ashtagandha\\ Kesar\\ Chandan\\ Tika\\ Danedar$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Lal\\ Chandan\\ Tika\\ Danedar$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^White\\ Chandan\\ Tika\\ Danedar$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Yellow\\ Saffron\\ Chandan\\ Tika\\ Danedar$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Kalawa\\ Moli\\ Dhaga$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Dhoop\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Rose\\ Dhoop\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Loban\\ Benzoin\\ Resin$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Natural\\ Guggal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Whole\\ Puja\\ Supari$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Offerings",
+        "Betel Leaves & Areca"
+      ]
+    },
+    {
+      "match": "^Pure\\ Gangajal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Offerings",
+        "Panchamrit Ingredients"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Pooja\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Rose\\ Pooja\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Mogra\\ Pooja\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Chameli\\ Pooja\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Rajnigandha\\ Pooja\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Phoolwari\\ Pooja\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    },
+    {
+      "match": "^Banke\\ Bihari\\ Pooja\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Room Freshener Spray"
+      ]
+    }
+  ]
+}
