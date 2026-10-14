@@ -1,0 +1,238 @@
+{
+  "brand": "Moksh",
+  "manufacturer": "Moksh Agarbatti",
+  "feed": "moksh-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/moksh/logo-84c8cfc1.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#4CAF50",
+  "namePrefix": "Moksh ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^3\\ In\\ 1\\ Assorted\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Centbox\\ Glamour\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Akash\\ Phool\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Akash\\ Phool\\ Agarbatti\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Gold\\ Sandal\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Holy\\ Prayer\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Pineapple\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Rose\\ Premium\\ Incense\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Salvation\\ Premium\\ Incense\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Sandalwood\\ Premium\\ Incense\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Divya\\ Sugandh\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Rajani\\ Gandha\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Champa\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Champa\\ Agarbatti\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Chandan\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Chandan\\ Agarbatti\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Gulab\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Gulab\\ Agarbatti\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Kewda\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Lavender\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Lavender\\ Agarbatti\\ Pouch$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Mallika\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Mogra\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^The\\ Celebration\\ Box\\ Assorted\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Prachin\\ Masala\\ Cup\\ Sambrani$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Champa\\ Wet\\ Dhoop$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Gulab\\ Wet\\ Dhoop$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Loban\\ Wet\\ Dhoop$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    }
+  ]
+}
