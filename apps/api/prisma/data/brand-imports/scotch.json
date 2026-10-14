@@ -1,0 +1,158 @@
+{
+  "brand": "Scotch (3M)",
+  "manufacturer": "3M India Ltd.",
+  "feed": "scotch-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/scotch/logo-66e1bf83.png",
+  "themeColor": "#231F20",
+  "themeColorSecondary": "#FFC20E",
+  "namePrefix": "Scotch ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^BOPP\\ Packaging\\ Tape\\ \\-\\ Tan,\\ 5cm\\ x\\ 50m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^BOPP\\ Packaging\\ Tape\\ \\-\\ Clear,\\ 5cm\\ x\\ 50m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Craft\\ Tape\\ \\-\\ 0\\.75in\\ x\\ 3m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Foam\\ Tape\\ \\-\\ 1in\\ x\\ 0\\.75m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Extreme\\ Double\\ Sided\\ Mounting\\ Tape\\ \\-\\ Outdoor,\\ 1\\.9cm\\ x\\ 1\\.5m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Strong\\ Double\\ Sided\\ Mounting\\ Tape\\ \\-\\ Clear,\\ 1\\.9cm\\ x\\ 1\\.5m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Strong\\ Double\\ Sided\\ Mounting\\ Tape\\ \\-\\ Indoor,\\ 1in\\ x\\ 3m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Strong\\ Double\\ Sided\\ Gel\\ Tape\\ \\-\\ 3cm\\ x\\ 1\\.5m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Magic\\ Tape\\ Refill\\ Roll\\ 810\\ \\-\\ 19mm\\ x\\ 32\\.9m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Magic\\ Tape\\ Dispenser\\ \\&\\ Roll\\ 810D\\ \\-\\ 19mm\\ x\\ 32\\.9m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Magic\\ Tape\\ Combi\\ Pack\\ 810D\\ \\-\\ Dispenser\\ \\+\\ Refill$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Wall\\-Safe\\ Tape\\ with\\ Dispenser\\ \\-\\ 2cm\\ x\\ 16\\.5m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Easy\\ Tear\\ Transparent\\ Tape\\ \\-\\ 24mm\\ x\\ 25m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Permanent\\ Glue\\ Stick\\ \\-\\ White$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Permanent\\ Glue\\ Stick\\ \\-\\ Purple$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Kids\\ Scissors\\ \\-\\ Soft\\ Grip,\\ Blunt\\ Tip$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Multi\\-Purpose\\ Scissors\\ \\-\\ Stainless\\ Steel,\\ 6in$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Precision\\ Titanium\\ Scissors\\ \\-\\ Non\\-Stick,\\ 8in$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    }
+  ]
+}
