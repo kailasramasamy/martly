@@ -1,0 +1,62 @@
+{
+  "brand": "Maxo (Jyothy Labs)",
+  "manufacturer": "Jyothy Labs Ltd.",
+  "feed": "maxo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/maxo/logo-820bf3db.png",
+  "themeColor": "#5B2A86",
+  "themeColorSecondary": "#F26522",
+  "namePrefix": "Maxo ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Genius\\ Liquid\\ Vaporiser\\ Refill\\ \\-\\ Calming\\ Aroma$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Genius\\ Automatic\\ Liquid\\ Vaporiser\\ \\(Machine\\ \\+\\ Refill\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^A\\ Grade\\ Combi\\ Liquid\\ Vaporiser\\ \\(Machine\\ \\+\\ Refill\\)$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Liquid Vaporiser"
+      ]
+    },
+    {
+      "match": "^Instant\\ Mosquito\\ \\&\\ Fly\\ Kill\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Insect Killer Spray"
+      ]
+    },
+    {
+      "match": "^Instant\\ Cockroach\\ Kill\\ Spray$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Cockroach & Ant Killer"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ Anti\\-Mosquito\\ Racquet$",
+      "path": [
+        "Home Care",
+        "Air Fresheners & Repellents",
+        "Mosquito Coil & Mat"
+      ]
+    }
+  ]
+}
