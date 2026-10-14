@@ -1,0 +1,102 @@
+{
+  "brand": "Purrfeto",
+  "manufacturer": "Allana Consumer Products Pvt Ltd",
+  "feed": "purrfeto-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/purrfeto/logo-e2442019.png",
+  "themeColor": "#3B1250",
+  "themeColorSecondary": "#F2C94C",
+  "namePrefix": "Purrfeto ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Rice$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Rice$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Salmon$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Sardine$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Mackerel\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Ocean\\ Platter\\ in\\ Jelly$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Ocean\\ Platter\\ in\\ Jelly$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ Platter\\ in\\ Jelly$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    }
+  ]
+}
