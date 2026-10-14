@@ -1,0 +1,284 @@
+[
+ {
+  "title": "Agarbatti - Jasmine",
+  "handle": "agarbatti-jasmine",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008393_2-amrutha-agarbatti-jasmine.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008393_2-amrutha-agarbatti-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008393-2_1-amrutha-agarbatti-jasmine.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008393-3_1-amrutha-agarbatti-jasmine.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Agarbatti - Lavender",
+  "handle": "agarbatti-lavender",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "84g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008392_3-amrutha-agarbatti-lavender.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008392_3-amrutha-agarbatti-lavender.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Agarbatti - Sandal",
+  "handle": "agarbatti-sandal",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008394_1-amrutha-agarbatti-sandal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008394_1-amrutha-agarbatti-sandal.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Agarbatti - Shahi Gulab",
+  "handle": "agarbatti-shahi-gulab",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "84g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008395_2-amrutha-agarbatti-shahi-gulab.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008395_2-amrutha-agarbatti-shahi-gulab.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Sugandh Agarbatti",
+  "handle": "sugandh-agarbatti",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "90g",
+    "price": "55",
+    "compare_at_price": "55",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008396_2-amrutha-agarbatti-sugandh.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40008396_2-amrutha-agarbatti-sugandh.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Incense Sticks - Golden",
+  "handle": "incense-sticks-golden",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "135g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048676_2-amrutha-incense-sticks-golden.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40048676_2-amrutha-incense-sticks-golden.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Incense Sticks - Lavender",
+  "handle": "incense-sticks-lavender",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "135g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40081213_1-amrutha-incense-sticks-lavender-scented.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40081213_1-amrutha-incense-sticks-lavender-scented.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Incense Sticks - Sandal",
+  "handle": "incense-sticks-sandal",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "135g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40081214_1-amrutha-incense-sticks-sandal-scented.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40081214_1-amrutha-incense-sticks-sandal-scented.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Incense Sticks - Panchamrutha",
+  "handle": "incense-sticks-panchamrutha",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048677_2-amrutha-incense-sticks-panchamrutha.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40048677_2-amrutha-incense-sticks-panchamrutha.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dhoop Sticks - Shahi Gulab",
+  "handle": "dhoop-sticks-shahi-gulab",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050943_4-amrutha-dhoop-sticks-shahi-gulab-premium.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40050943_4-amrutha-dhoop-sticks-shahi-gulab-premium.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Dhoop Sticks - Shahi Sandal",
+  "handle": "dhoop-sticks-shahi-sandal",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "135",
+    "compare_at_price": "135",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050944_4-amrutha-dhoop-sticks-shahi-sandal.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40050944_4-amrutha-dhoop-sticks-shahi-sandal.jpg"
+   }
+  ]
+ },
+ {
+  "title": "Incense Cones - Lavender",
+  "handle": "incense-cones-lavender",
+  "vendor": "Amrutha",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "150g",
+    "price": "105",
+    "compare_at_price": "105",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40081209_1-amrutha-incense-cones-lavender-scented.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40081209_1-amrutha-incense-cones-lavender-scented.jpg"
+   }
+  ]
+ }
+]

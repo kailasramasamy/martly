@@ -1,0 +1,110 @@
+{
+  "brand": "Amrutha",
+  "manufacturer": "Amrutha Aromatics",
+  "feed": "amrutha-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/amrutha/logo-55fb1bfc.png",
+  "themeColor": "#1E2A6E",
+  "themeColorSecondary": "#F7C600",
+  "namePrefix": "Amrutha ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Agarbatti\\ \\-\\ Jasmine$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Agarbatti\\ \\-\\ Lavender$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Agarbatti\\ \\-\\ Sandal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Agarbatti\\ \\-\\ Shahi\\ Gulab$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Sugandh\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Incense\\ Sticks\\ \\-\\ Golden$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Incense\\ Sticks\\ \\-\\ Lavender$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Incense\\ Sticks\\ \\-\\ Sandal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Incense\\ Sticks\\ \\-\\ Panchamrutha$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Dhoop\\ Sticks\\ \\-\\ Shahi\\ Gulab$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Dhoop\\ Sticks\\ \\-\\ Shahi\\ Sandal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Incense\\ Cones\\ \\-\\ Lavender$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    }
+  ]
+}
