@@ -51,7 +51,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40258921-8_1-tummyfriendly-foods-organic-health-mix-rich-in-iron-fibre-protein-no-sugar-for-kids-adults.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "USDA-organic, India-Organic certified. It does not contain any milk, sugar, salt, chemicals, pesticides or GMOs. It is made of oats, sprouted green moong and sprouted ragi. It is rich in protein, iron, zinc and dietary fibre. Bio-available nutrition.",
+   "ingredients": "59% Cereals, Millets (Oats, Sprouted Ragi, Wheat, Bajra, Brown Rice, Jowar, Foxtail Millet, Quinoa), 28% Pulses (Sprouted Green Moong, Brown Chana, Urad Black), 8% Nuts (Peanuts, Almond, Cashew), 5% Seeds (Pumpkin Seeds, Sun Flower Seeds, Watermelon Seeds) And Cardamom. Certified Organic Ingredient. No Pesticides, No Chemicals.",
+   "usageInstructions": "Base Recipe:\nTake 3 tbsp (approx. 30g) of this Nutrition Mix powder and add 300ml of water little by little and mix well.\nCook the mixture on a medium flame for 5 minutes.\nKeep stirring continuously to avoid lumps.\nAdjust the consistency by adding more water if required.\nVariations\n1. Fruit Punch:\nCut a banana into thin slices.\nBlend the above base drink with the Banana slices to make a yummy Banana shake.\nAdd a little cow milk or coconut milk if required. Kindly avoid Sugar.\nNote: Replace Banana with Apple, Raisins or Dates (Soaked in hot water), etc for other yummy flavours.\n2. Lemon Blast:\nAdd a little Lemon juice to the base drink.\nOptionally, you can add either Salt or Honey as desired.",
+   "manufacturerName": "TummyFriendly Foods M3",
+   "fssaiLicense": "11221333000413",
+   "countryOfOrigin": "INDIA"
+  }
  },
  {
   "title": "Organic Oats Porridge Mix",
@@ -93,7 +101,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213118-7_1-tummyfriendly-foods-100-organic-oats-porridge-mix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Oats Porridge Mix. It is made with oats. It is rich in protein and healthy fat that helps the baby to gain weight. It has high levels of Manganese and essential mineral for bone health and nutrient metabolism. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for babies of 6 months. This mix is easy to prepare and cook.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "Wash your hands and make sure all utensils are clean.\nAdd 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\nCook the mixture on a medium flame for 5 minutes.\nKeep stirring continuously to avoid lumps.\nAdjust the porridge consistency as desired.\nAdd a little Ghee and serve lukewarm.",
+   "manufacturerName": "TummyFriendly Foods #283",
+   "fssaiLicense": "21220190000029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Oats & Beetroot Porridge Mix",
@@ -109,7 +124,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40213128_1-tummyfriendly-foods-100-organic-oats-beetroot-porridge-mix.jpg"
-    }
+    },
+    "barcode": "8908014880019"
    },
    {
     "title": "200g",
@@ -147,7 +163,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213117_1-tummyfriendly-foods-100-organic-oats-beetroot-porridge-mix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Oats, Beetroot Porridge Mix. It is made with oats and beetroots. It is rich in protein and healthy fat that helps the baby to gain weight. It has high levels of Manganese and essential mineral for bone health and nutrient metabolism. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for a baby of 6 months. This mix is easy to prepare and cook.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "Wash your hands and make sure all utensils are clean.\nAdd 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\nCook the mixture on a medium flame for 5 minutes.\nKeep stirring continuously to avoid lumps.\nAdjust the porridge consistency as desired.\nAdd a little Ghee and serve lukewarm.",
+   "manufacturerName": "Tummy Friendly Foods (OPC) Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "21220190000029"
+  }
  },
  {
   "title": "Organic Sprouted Brown Rice Porridge Mix",
@@ -189,7 +212,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213132-7_1-tummyfriendly-foods-100-organic-sprouted-brown-rice-porridge-mix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Sprouted Brown Rice Porridge Mix. It is made with sprouted whole grain brown rice. It is rich in protein and healthy fat that helps the baby to gain weight. It has high levels of Manganese and essential mineral for bone health. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for a baby of 6 months. This mix is easy to prepare and cook.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "Wash your hands and make sure all utensils are clean.\nAdd 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\nCook the mixture on a medium flame for 5 minutes.\nKeep stirring continuously to avoid lumps.\nAdjust the porridge consistency as desired.\nAdd a little Ghee and serve lukewarm.",
+   "manufacturerName": "Tummy Friendly Foods (OPC) Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "21220190000029"
+  }
  },
  {
   "title": "Organic Sprouted Brown Rice & Moong Dal Porridge Mix",
@@ -243,7 +273,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213120_1-tummyfriendly-foods-100-organic-sprouted-brown-rice-moong-dal-porridge-mix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Sprouted Brown Rice, Moong Dal Porridge Mix. It is made with sprouted whole grain brown rice. It is rich in protein and healthy fat that helps the baby to gain weight. It has high levels of Manganese and essential mineral for bone health. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for a baby of 6 months. This mix is easy to prepare and cook.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "Wash your hands and make sure all utensils are clean.\nAdd 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\nCook the mixture on a medium flame for 5 minutes.\nKeep stirring continuously to avoid lumps.\nAdjust the porridge consistency as desired.\nAdd a little Ghee and serve lukewarm.",
+   "manufacturerName": "Tummy Friendly Foods (OPC) Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "21220190000029"
+  }
  },
  {
   "title": "Organic Sprouted Brown Rice, Red Lentil, Spinach & Green Peas Porridge Mix",
@@ -259,7 +296,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40213126_1-tummyfriendly-foods-organic-sprouted-brown-rice-red-lentil-spinach-green-peas-porridge-mix.jpg"
-    }
+    },
+    "barcode": "8908014880125"
    }
   ],
   "images": [
@@ -285,7 +323,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213126-7_1-tummyfriendly-foods-organic-sprouted-brown-rice-red-lentil-spinach-green-peas-porridge-mix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Sprouted Brown Rice, Red Lentil, Spinach, Green Peas Porridge Mix. It is made with sprouted brown rice. It is rich in protein and healthy fat that helps the baby to gain weight. It contains high levels of Manganese. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for a baby of 8 months. This mix is easy to prepare and cook.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "1. Wash your hands and make sure all utensils are clean.\n2. Add 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\n3. Cook the mixture on a medium flame for 5 minutes.\n4. Keep stirring continuously to avoid lumps.\n5. Adjust the porridge consistency as desired.\n6. Add a little Ghee and serve lukewarm.",
+   "manufacturerName": "Tummy Friendly Foods (OPC) Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "21220190000029"
+  }
  },
  {
   "title": "Organic Sprouted Ragi Porridge Mix",
@@ -339,7 +384,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213113_1-tummyfriendly-foods-organic-sprouted-ragi-porridge-mix-usda-organic-certified.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Sprouted Ragi Porridge Mix. It is made with sprouted whole grain ragi. It is rich in protein and healthy fat that helps the baby to gain weight. It is rich in calcium and iron. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for a baby of 6 months. This mix is easy to prepare and cook. It is also easy to digest.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "Wash your hands and make sure all utensils are clean.\nAdd 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\nCook the mixture on a medium flame for 5 minutes.\nKeep stirring continuously to avoid lumps.  \nAdjust the porridge consistency as desired.\nAdd a little Ghee and serve lukewarm.",
+   "manufacturerName": "TummyFriendly Foods #283",
+   "fssaiLicense": "21220190000029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Organic Sprouted Ragi, Moong Dal & Beetroot Porridge Mix",
@@ -355,7 +407,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40213130_1-tummyfriendly-foods-100-organic-sprouted-ragi-moong-dal-beetroot-porridge-mix.jpg"
-    }
+    },
+    "barcode": "8908014880118"
    },
    {
     "title": "200g",
@@ -393,7 +446,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213119_1-tummyfriendly-foods-100-organic-sprouted-ragi-moong-dal-beetroot-porridge-mix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Sprouted Ragi, Moong Dal, Beetroot Porridge Mix. It is made with sprouted whole grain ragi. It is rich in protein and healthy fat that helps the baby to gain weight. It contains macro and micronutrients. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for a baby of 6 months. This mix is easy to prepare and cook.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "1. Wash your hands and make sure all utensils are clean.\n2. Add 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\n3. Cook the mixture on a medium flame for 5 minutes.\n4. Keep stirring continuously to avoid lumps.\n5. Adjust the porridge consistency as desired.\n6. Add a little Ghee and serve lukewarm.",
+   "manufacturerName": "Tummy Friendly Foods (OPC) Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "21220190000029"
+  }
  },
  {
   "title": "Organic Sprouted Ragi, Oats, Red Lentil & Banana Porridge Mix",
@@ -409,7 +469,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40213112_1-tummyfriendly-foods-100-organic-sprouted-ragi-oats-red-lentil-banana-porridge-mix.jpg"
-    }
+    },
+    "barcode": "8908014880200"
    }
   ],
   "images": [
@@ -435,7 +496,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213112-7_1-tummyfriendly-foods-100-organic-sprouted-ragi-oats-red-lentil-banana-porridge-mix.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Sprouted Ragi, Oats, Red Lentil, Banana Porridge Mix. It is made with sprouted whole grain ragi and oats. It is rich in protein and healthy fat that helps the baby to gain weight. It is rich in calcium and iron. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for babies of 8 months. This mix is easy to prepare and cook.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "Wash your hands and make sure all utensils are clean.\nAdd 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\nCook the mixture on a medium flame for 5 minutes.\nKeep stirring continuously to avoid lumps.\nAdjust the porridge consistency as desired.\nAdd a little Ghee and serve lukewarm.",
+   "manufacturerName": "Tummy Friendly Foods (OPC) Pvt Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "21220190000029"
+  }
  },
  {
   "title": "Organic Sprouted Ragi, Almond, Oats & Sweet Potato Porridge Mix",
@@ -480,7 +548,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40251648-8_1-tummyfriendly-foods-porridge-mix-organic-sprouted-ragi-almond-oats-sweet-potato-no-chemicals.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "USDA-organic & India-organic certified? No chemical fortification? No sugar, no salt, no milk, no pesticides & no GMO? TummyFriendly Foods Porridge Mix has it all. Ragi is rich in calcium and iron, which promote bone growth and overall development? Almonds are an excellent source of healthy fat? Oats are famous for Beta-Glucan, a soluble fibre that promotes health hear and gut. Sweet potato, an excellent source of beta-carotene promotes the healthy development of the eyes.",
+   "usageInstructions": "Wash your hands and make sure all utensils are clean.\nAdd 80ml of water to 2 scoops of this porridge powder little by little and mix well.\nCook the mixture on a medium flame for 5 minutes.\nKeep stirring continuously to avoid lumps.\nAdd a little Ghee and Jaggery. Serve lukewarm.",
+   "manufacturerName": "TummyFriendly Foods",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "11221333000413"
+  }
  },
  {
   "title": "Stage 2 Porridge Mix Trial Pack",
@@ -525,7 +600,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213134-8_2-tummyfriendly-foods-organic-stage-2-sprouted-porridge-mixes-cereal-trial-packs-6-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "TummyFriendly Foods brings to you Organic Stage2 Sprouted Porridge Mixes Trial Packs. It contains Sprouted Ragi, Sprouted Brown Rice, Oats, Dal and Vegetable. It is rich in protein and healthy fat that helps the baby to gain weight. It helps in the easy absorption of nutrients and digestive enzymes. This mix is rich in vitamins, minerals, dietary fibre and healthy fat. It is USDA-Organic and India-Organic Certified. This does not contain milk, sugar, salt, chemicals, pesticides and GMO. It is suitable for a baby of 6 months. This mix is easy to prepare and cook. It contains 3 pack bowls of cereal of 50 gram each.\nBenefits:\nIt is rich in vitamins, minerals, dietary fibre and healthy fat.\nIt does not contain milk, sugar, salt, chemicals, pesticides and GMO.\nThis mix is safe and organic.\nIt is easy to prepare and cook.",
+   "usageInstructions": "1. Wash your hands and make sure all utensils are clean.\n2. Add 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\n3. Cook the mixture on a medium flame for 5 minutes.\n4. Keep stirring continuously to avoid lumps.\n5. Adjust the porridge consistency as desired.\n6. Add a little Ghee and serve lukewarm.",
+   "manufacturerName": "TummyFriendly Foods #283",
+   "fssaiLicense": "21220190000029",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Stage 3 Porridge Mix Trial Pack",
@@ -570,6 +652,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40213133-8_1-tummyfriendly-foods-organic-stage3-sprouted-porridge-mixes-8-months-assorted-flavours.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "This Organic Stage3 Sprouted Porridge Mixes Trial pack contains assorted flavours such as Sprouted Ragi, Brown Rice, Oats, Sathu Maavu, Pulses, Vegetables & Fruit, 8+ Months. USDA-Organic & India-Organic Certified. No milk, no sugar, no salt, no chemicals, no pesticides & no GMO. Sprouted grains & pulses. Bio-available nutrition.",
+   "usageInstructions": "1. Wash your hands and make sure all utensils are clean.\n2. Add 100ml of water to 2 tbsp of this porridge powder little by little and mix well.\n3. Cook the mixture on a medium flame for 5 minutes.\n4. Keep stirring continuously to avoid lumps.\n5. Adjust the porridge consistency as desired.\n6. Add a little ghee and serve lukewarm.",
+   "manufacturerName": "TummyFriendly Foods #283",
+   "fssaiLicense": "11221333000413",
+   "countryOfOrigin": "India"
+  }
  }
 ]
