@@ -1,0 +1,174 @@
+{
+  "brand": "Farmina",
+  "manufacturer": "Russo Mangimi S.p.A. (Farmina Pet Foods)",
+  "feed": "farmina-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/farmina/logo-b7b6b2b1.png",
+  "themeColor": "#1F6FB5",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Farmina ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Matisse\\ Adult\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Rice$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Ancestral\\ Grain\\ Adult\\ Mini\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Pomegranate$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Ancestral\\ Grain\\ Puppy\\ Mini\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Pomegranate$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Ancestral\\ Grain\\ Puppy\\ Medium\\ \\&\\ Maxi\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Pomegranate$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Ancestral\\ Grain\\ Starter\\ Puppy\\ Food\\ \\-\\ Chicken\\ \\&\\ Pomegranate$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Pumpkin\\ Adult\\ Mini\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Pomegranate$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Pumpkin\\ Adult\\ Mini\\ Dog\\ Food\\ \\-\\ Lamb\\ \\&\\ Blueberry$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Pumpkin\\ Puppy\\ Medium\\ \\&\\ Maxi\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Pomegranate$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Pumpkin\\ Starter\\ Puppy\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Ocean\\ Adult\\ Mini\\ Dog\\ Food\\ \\-\\ Codfish,\\ Pumpkin\\ \\&\\ Orange$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Ocean\\ Puppy\\ Mini\\ Dog\\ Food\\ \\-\\ Codfish,\\ Pumpkin\\ \\&\\ Melon$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Quinoa\\ Adult\\ Dog\\ Food\\ \\-\\ Digestion,\\ Lamb$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Quinoa\\ Adult\\ Dog\\ Food\\ \\-\\ Weight\\ Management,\\ Lamb$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Ocean\\ Adult\\ Cat\\ Food\\ \\-\\ Herring\\ \\&\\ Orange$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Prime\\ Neutered\\ Adult\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Pomegranate$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Prime\\ Kitten\\ Food\\ \\-\\ Chicken\\ \\&\\ Pomegranate$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Prime\\ Adult\\ Cat\\ Food\\ \\-\\ Lamb\\ \\&\\ Blueberry$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Quinoa\\ Adult\\ Cat\\ Food\\ \\-\\ Digestion,\\ Lamb$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Quinoa\\ Adult\\ Cat\\ Food\\ \\-\\ Skin\\ \\&\\ Coat,\\ Quail$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^N\\&D\\ Quinoa\\ Adult\\ Cat\\ Food\\ \\-\\ Urinary,\\ Duck$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    }
+  ]
+}
