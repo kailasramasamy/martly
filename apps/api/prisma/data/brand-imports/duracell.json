@@ -1,0 +1,129 @@
+{
+  "brand": "Duracell",
+  "manufacturer": "Duracell India Pvt. Ltd.",
+  "feed": "duracell-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/duracell/logo-e65f095b.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#C87533",
+  "namePrefix": "Duracell ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Duracell AAA Alkaline Batteries (Pack of 4)": "Alkaline AAA Batteries",
+    "Duracell Rechargeable AA Batteries (Pack of 2)": "Rechargeable AA Batteries 1300mAh"
+  },
+  "rules": [
+    {
+      "match": "^Ultra\\ Alkaline\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Alkaline\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Alkaline\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Alkaline\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Alkaline\\ 9V\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Alkaline\\ C\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Alkaline\\ D\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^CR2025\\ Lithium\\ Coin\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^CR2032\\ Lithium\\ Coin\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^CR2016\\ Lithium\\ Coin\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ AA\\ Batteries\\ 1300mAh$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ AA\\ Batteries\\ 2500mAh$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ AAA\\ Batteries\\ 750mAh$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ AAA\\ Batteries\\ 900mAh$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    }
+  ]
+}
