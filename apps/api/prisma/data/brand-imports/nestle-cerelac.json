@@ -1,0 +1,27 @@
+{
+  "brand": "Nestle",
+  "manufacturer": "Nestle India Ltd.",
+  "feed": "nestle-cerelac-feed.json",
+  "namePrefix": "Nestle ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Cerelac\\ Wheat\\ Apple\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Cerelac\\ Wheat\\ Apple\\ Cherry\\ Baby\\ Cereal$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    }
+  ]
+}
