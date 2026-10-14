@@ -1,0 +1,190 @@
+{
+  "brand": "Oddy",
+  "manufacturer": "Oddy Uniwraps Pvt. Ltd.",
+  "feed": "oddy-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/oddy/logo-90faf759.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Oddy ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^A5\\ 5\\ Subject\\ Wiro\\ Notebook\\ \\-\\ Ruled,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ 5\\ Section\\ Spiral\\ Notebook\\ \\-\\ Ruled,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A7\\ Wiro\\ Pocketbooks\\ \\-\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A3\\ Drawing\\ Book\\ \\-\\ 40\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A4\\ Drawing\\ Book\\ \\-\\ 36\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A4\\ Graph\\ Paper\\ Booklet\\ \\-\\ 25\\ Sheets$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Scribbling\\ Pad\\ \\-\\ 240\\ Sheets$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Post\\ It\\ Notes\\ \\-\\ 4\\ x\\ 5\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Post\\ It\\ Notes\\ \\-\\ 5\\ x\\ 8\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Post\\ It\\ Notes\\ \\-\\ 8\\ x\\ 10\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Prompt\\ Sticky\\ Notes\\ \\-\\ 3\\ x\\ 8\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Prompt\\ Sticky\\ Notes\\ \\-\\ 3\\ x\\ 13\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Prompt\\ Paper\\ Flags\\ \\-\\ 4\\ Colours$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Re\\-Stick\\ Notes\\ \\-\\ 8\\ x\\ 8\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Re\\-Stick\\ Notes\\ \\-\\ Yellow,\\ 12\\.5\\ x\\ 7\\.5\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Multipurpose\\ Cutter\\ Knife\\ \\-\\ 9\\ mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Eco\\ Bake\\ Baking\\ \\&\\ Cooking\\ Paper\\ \\-\\ 15\\ in\\ x\\ 20\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Uniwraps\\ Baking\\ \\&\\ Cooking\\ Paper\\ \\-\\ 10\\ in\\ x\\ 16\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Uniwraps\\ Paper\\ Foil\\ \\-\\ 100\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Uniwraps\\ Paper\\ Foil\\ \\-\\ 8\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Uniwraps\\ Paper\\ Foil\\ \\-\\ 16\\ m$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Cling Wrap & Aluminium Foil"
+      ]
+    },
+    {
+      "match": "^Colour\\ Catcher\\ Sheets$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    }
+  ]
+}
