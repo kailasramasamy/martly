@@ -1,0 +1,34 @@
+[
+ {
+  "title": "Matchbox",
+  "handle": "matchbox",
+  "vendor": "Homelites (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1 pcs",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40027412_1-home-lite-matchbox-big.jpg"
+    },
+    "barcode": "8906016579993"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027412_1-home-lite-matchbox-big.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40027412-2_1-home-lite-matchbox-big.jpg"
+   }
+  ],
+  "details": {
+   "description": "Home lites Matchbox Big is specialized in providing safety wax match box that are of greater quality. The sticks of this match box burns with one strike with no any sparkle. It is one of the most main things in the family. Counting the number of times matches are used would be a waste of breath. This are additional long match sticks lasts longer that allow less loss of match sticks as they last longer.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
+ }
+]

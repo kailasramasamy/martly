@@ -1,0 +1,22 @@
+{
+  "brand": "Homelites (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "homelites-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/homelites/logo-61ca9e09.png",
+  "themeColor": "#6B1414",
+  "themeColorSecondary": "#F7D117",
+  "namePrefix": "Homelites ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Matchbox$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    }
+  ]
+}
