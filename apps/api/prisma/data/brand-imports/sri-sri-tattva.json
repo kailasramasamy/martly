@@ -1,0 +1,2078 @@
+{
+  "brand": "Sri Sri Tattva",
+  "manufacturer": "Sriveda Sattva Pvt. Ltd.",
+  "feed": "sri-sri-tattva-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/sri-sri-tattva/logo-2d521b23.png",
+  "themeColor": "#1B6B3A",
+  "themeColorSecondary": "#F28C28",
+  "namePrefix": "Sri Sri Tattva ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^A2\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cow's\\ Premium\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cow's\\ Pure\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Desi\\ Ghee\\ Pure\\ \\&\\ Granular$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Premium\\ Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Kachi\\ Ghani\\ Mustard\\ Oil\\ Cold\\ Pressed$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Fortified\\ Kachi\\ Ghani\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Mustard Oil"
+      ]
+    },
+    {
+      "match": "^Organic\\ Virgin\\ Coconut\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Edible Oils",
+        "Coconut Oil"
+      ]
+    },
+    {
+      "match": "^Achar\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Biryani\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chaat\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chhole\\ Chana\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Garam\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ King\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Pav\\ Bhaji\\ Masala$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Rasam\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Sambhar\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Blended Masala"
+      ]
+    },
+    {
+      "match": "^Chutney\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Coriander\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Red\\ Chilli\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Curry\\ Leaves\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Compound\\ Asafoetida\\ Hing$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    },
+    {
+      "match": "^Kasuri\\ Methi$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Herbs & Seasonings"
+      ]
+    },
+    {
+      "match": "^Ajwain\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Big\\ Fennel\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Black\\ Mustard\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Black\\ Pepper\\ Whole$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Cumin\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Fenugreek\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^White\\ Sesame\\ Seeds$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Whole Spices"
+      ]
+    },
+    {
+      "match": "^Flaxseed\\ Roasted$",
+      "path": [
+        "Grocery & Staples",
+        "Dry Fruits & Nuts",
+        "Seeds (Chia, Flax, Pumpkin, Sunflower)"
+      ]
+    },
+    {
+      "match": "^Daily\\ Choice\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Superior\\ Choice\\ Basmati\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Lashkari\\ Kolam\\ Premium\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Sona\\ Masuri\\ Gold\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Sona\\ Masuri\\ Steam\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Non-Basmati Rice"
+      ]
+    },
+    {
+      "match": "^Superior\\ Healthy\\ Black\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    },
+    {
+      "match": "^Superior\\ Healthy\\ Brown\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    },
+    {
+      "match": "^Red\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Brown Rice"
+      ]
+    },
+    {
+      "match": "^Chana\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chana Dal"
+      ]
+    },
+    {
+      "match": "^Masoor\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Masoor Dal"
+      ]
+    },
+    {
+      "match": "^Moong\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Toor\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Toor Dal (Arhar)"
+      ]
+    },
+    {
+      "match": "^Urad\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Atta$",
+      "path": [
+        "Grocery & Staples",
+        "Atta & Flours",
+        "Wheat Atta"
+      ]
+    },
+    {
+      "match": "^Organic\\ Brown\\ Sugar$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Brown Sugar"
+      ]
+    },
+    {
+      "match": "^Organic\\ Jaggery$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Jaggery (Gur)"
+      ]
+    },
+    {
+      "match": "^Pink\\ Salt\\ with\\ Iodine$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Rock\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Rock\\ Salt\\ Pouch$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Rock Salt (Sendha Namak)"
+      ]
+    },
+    {
+      "match": "^Organic\\ Quinoa$",
+      "path": [
+        "Gourmet & World Foods",
+        "Cooking Ingredients",
+        "Quinoa & Couscous"
+      ]
+    },
+    {
+      "match": "^Lemon\\ Pickle\\ in\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Lime Pickle"
+      ]
+    },
+    {
+      "match": "^Mango\\ Pickle\\ in\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mango Pickle"
+      ]
+    },
+    {
+      "match": "^Mixed\\ Pickle\\ in\\ Mustard\\ Oil$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Mixed Pickle"
+      ]
+    },
+    {
+      "match": "^Natural\\ Honey$",
+      "path": [
+        "Grocery & Staples",
+        "Sauces & Condiments",
+        "Honey"
+      ]
+    },
+    {
+      "match": "^Cashew\\ Nut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Choco\\ Hazelnut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Digestive\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Badam\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Milk\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Orange\\ Milk\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Digestive & Health"
+      ]
+    },
+    {
+      "match": "^Doodh\\ Elaichi\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Fruit\\ \\&\\ Nut\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Jeera\\ Butter\\ Cookies$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Biscuits & Cookies",
+        "Cashew & Butter Cookies"
+      ]
+    },
+    {
+      "match": "^Madhukari\\ Herbal\\ Tea$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Hibiscus\\ Infusion\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Serenity\\ Infusion\\ Tea\\ Bags$",
+      "path": [
+        "Beverages",
+        "Tea",
+        "Herbal & Flavoured Tea"
+      ]
+    },
+    {
+      "match": "^Ojasvita\\ Chocolate$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Ojasvita\\ ChocoMalt$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Ojasvita\\ Strawberry$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Ojasvita\\ Malt$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Ojasvita\\ Vanilla$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Ojasvita\\ Golden\\ Spiced\\ Latte$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Ojasvita\\ Luscious\\ Mango$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Ojasvita\\ Ragi$",
+      "path": [
+        "Beverages",
+        "Health & Energy Drinks",
+        "Malted Beverages (Bournvita, Horlicks)"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Triphala\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Amla\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Apple\\ Cider\\ Vinegar\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Artho\\ Fix\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Giloy\\ Tulasi\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^His\\ Vitality\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Karela\\ Jamun\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Moringa\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Raw\\ Noni\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Shape\\ Up\\ Slimming\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Wheat\\ Grass\\ Juice$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Chyawanprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Dateprash\\ with\\ Walnuts$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Fig\\ Honeyprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Swarna\\ Kesariprash$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Amla\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Amruth\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Ayush\\ Kwath\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Kabasura\\ Kudineer\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^NAOQ19\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Plus\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Shakti\\ Drops$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Organic\\ Tulasi\\ Arka$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Immunity & Supplements"
+      ]
+    },
+    {
+      "match": "^Avipattikara\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Hingvastaka\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Pavanahara\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Pavanahara\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Pachani\\ Rasayana$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Go\\ Amruth\\ Arka$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Amla\\ Candy$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Amla\\ Candy\\ Mango$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Amla\\ Candy\\ Paan$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Digestive Care (Hajmola, ENO)"
+      ]
+    },
+    {
+      "match": "^Kasahari\\ Cough\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Sitophaladi\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Talisadi\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Tulasi\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Anu\\ Taila\\ Nasal\\ Drops$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Nasya\\ Nasal\\ Inhaler$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cough & Cold Relief"
+      ]
+    },
+    {
+      "match": "^Vedanantaka\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Vedanantaka\\ Liniment$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Pain Relief (Balm, Spray)"
+      ]
+    },
+    {
+      "match": "^Amlapittari\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Amrutadi\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Ancho\\ Lean\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Arjuna\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Ashwagandha\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Ashwagandhadi\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Atisarahara\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Brahma\\ Rasayana$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Brahmi\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Chandraprabha\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Chitrakadi\\ Gutika$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Chitrakaharitaki\\ Lehya$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Deva\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Dhatri\\ Lauha$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Gokshuradi\\ Guggulu$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Gulmahara\\ Arka$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Haridra\\ Khanda\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Haritaki\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Jantughna\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kalamegh\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kamadudha\\ Rasa\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kanchanara\\ Guggulu\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kapikacchu\\ Granules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kshirabala\\ Taila$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Kushmandaka\\ Rasayana$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Liv\\-On\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Mamatva\\ Granules$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Medhya\\ Rasayana\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Mehantaka\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Narayana\\ Kalpa\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Narayana\\ Taila$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Navahridaya\\ Kalpa\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Navayasa\\ Lauha\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Neem\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Nishamalaki\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^OSPO\\-C\\ Bone\\ Care\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Oorja\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Oorja\\ Forte\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pinda\\ Taila$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pradarashamaka\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pradarashamaka\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pranda\\ Gutika\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pylmukti\\ Ointment$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Pylmukti\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Quick\\ Heal\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Raktashodhini\\ Arishta$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Raktashodhini\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Raktavardhini\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Sandhimitra\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Sapthamruth\\ Lauha$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Sariva\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Shankapushpi\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Shatavari\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Shilajitvadi\\ Lauha\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Sukesha\\ Kalpa\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Trayodashanga\\ Guggulu$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Triphala\\ Churna$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Triphala\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Triphala\\ Guggulu$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Twaqure\\ Ointment$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Ushira\\ Syrup$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Vedanantaka\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Virechana\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Vitilwel\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Vrikka\\ Sanjivini\\ Vati$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Yashtimadhu\\ Tablet$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Srinetra\\ Eye\\ Drops$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Sudanta\\ Tooth\\ Drops$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Ayurvedic Medicines"
+      ]
+    },
+    {
+      "match": "^Almond\\ Honey\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Malai\\ Cream\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Orange\\ \\&\\ Tulsi\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Sandal\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Glycerine\\ Soap$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Bathing Soap (Bar)"
+      ]
+    },
+    {
+      "match": "^Orange\\ Body\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Wash & Shower Gel"
+      ]
+    },
+    {
+      "match": "^Body\\ Butter$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Body Lotion"
+      ]
+    },
+    {
+      "match": "^Body\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Massage & Essential Oils"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Neem\\ \\&\\ Orange\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Neem\\ \\&\\ Lemon\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Neem\\ \\&\\ Tulasi\\ Handwash$",
+      "path": [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Wash"
+      ]
+    },
+    {
+      "match": "^Anti\\ Acne\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Cucumber\\ Lemon\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Kumari\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Rose\\ Face\\ Wash$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Cleansing\\ Milk$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Wash & Cleanser"
+      ]
+    },
+    {
+      "match": "^Anti\\ Acne\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Dawn\\ to\\ Dusk\\ Fortifying\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Rejuvenating\\ Night\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Cream (Fairness & Anti-Ageing)"
+      ]
+    },
+    {
+      "match": "^Aloe\\ Vera\\ Vit\\-E\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Extra\\ Nourishing\\ Moisturiser$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Moisturising\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Crack\\ Free\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Replenishing\\ Foot\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Gulab\\ Jal\\ Rose\\ Water$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Moisturiser & Lotion"
+      ]
+    },
+    {
+      "match": "^Walnut\\ Orange\\ Face\\ Scrub$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Neem\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Turmeric\\ Face\\ Pack$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Face Scrub & Mask"
+      ]
+    },
+    {
+      "match": "^Protecting\\ Sunscreen$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Lip\\ Balm$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Lip Balm"
+      ]
+    },
+    {
+      "match": "^Shishu\\ Taila$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Oil"
+      ]
+    },
+    {
+      "match": "^Anti\\ Dandruff\\ Lotion$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Anti-Dandruff Treatment"
+      ]
+    },
+    {
+      "match": "^Anti\\ Dandruff\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Henna\\ Shikakai\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Prakesha\\ Gold\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Protein\\ Shampoo$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Shampoo"
+      ]
+    },
+    {
+      "match": "^Hydrating\\ Conditioner$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Conditioner"
+      ]
+    },
+    {
+      "match": "^Sukesha\\ Hair\\ Vitaliser\\ Cream$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Mask"
+      ]
+    },
+    {
+      "match": "^Bhringamalakadi\\ Taila$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Brahmi\\ Bhringaraj\\ Taila$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Prakesha\\ Gold\\ Hair\\ Oil$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Sukesha\\ Taila$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Oil"
+      ]
+    },
+    {
+      "match": "^Sudanta\\ Herbal\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sudanta\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sudanta\\ Minty\\ Saunf\\ Gel\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sudanta\\ Red\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sudanta\\ Whitening\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Sudanta\\ Miswak\\ Fresh\\ Mouthwash$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Mouth\\ Freshener\\ Spray$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Mouthwash"
+      ]
+    },
+    {
+      "match": "^Blossom\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Delight\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Divine\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Himalayan\\ Rose\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Chandan\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Kasturi\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Rose\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Sandal\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Shakti\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Shiva\\ Roll\\-On\\ Perfume$",
+      "path": [
+        "Personal Care",
+        "Deodorants & Fragrances",
+        "Attar"
+      ]
+    },
+    {
+      "match": "^Premium\\ Champa\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Kewda\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Lavender\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Mogra\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Rose\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Premium\\ Sandal\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Ujjiyara\\ Floor\\ Cleaner\\ Citric\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Ujjiyara\\ Floor\\ Cleaner\\ Lavender\\ Fresh$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Floor Cleaner (Phenyl & Disinfectant)"
+      ]
+    },
+    {
+      "match": "^Ujjiyara\\ Toilet\\ Cleaner\\ Winter\\ Green$",
+      "path": [
+        "Home Care",
+        "Floor & Surface Cleaners",
+        "Toilet Cleaner"
+      ]
+    },
+    {
+      "match": "^Ujjiyara\\ Liquid\\ Dishwash\\ Lemon$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    },
+    {
+      "match": "^Ujjiyara\\ Liquid\\ Dishwash\\ Lime\\ Green$",
+      "path": [
+        "Home Care",
+        "Dishwash",
+        "Dishwash Gel / Liquid"
+      ]
+    }
+  ]
+}
