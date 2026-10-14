@@ -1,0 +1,22 @@
+{
+  "brand": "Aim (ITC)",
+  "manufacturer": "ITC Limited",
+  "feed": "aim-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/aim/logo-ebf65ab8.png",
+  "themeColor": "#F5E50A",
+  "themeColorSecondary": "#D7262E",
+  "namePrefix": "Aim ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Safety\\ Matches$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Matches"
+      ]
+    }
+  ]
+}

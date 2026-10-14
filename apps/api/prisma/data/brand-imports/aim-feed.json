@@ -1,0 +1,35 @@
+[
+ {
+  "title": "Safety Matches",
+  "handle": "safety-matches",
+  "vendor": "Aim (ITC)",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "10 pcs",
+    "price": "10",
+    "compare_at_price": "10",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30009877_2-aim-matches-box.jpg"
+    },
+    "barcode": "8901725097257"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30009877_2-aim-matches-box.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30009877-2_1-aim-matches-box.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "AIM Safety Matches are a reliable and convenient choice for everyday lighting needs. These matches are designed to provide a safe and efficient way to ignite fires, candles, or other flame-based applications. Crafted with care, the AIM Safety Matches offer a consistent and dependable performance, ensuring a hassle-free experience for users.",
+   "manufacturerName": "ITC Limited",
+   "countryOfOrigin": "India"
+  }
+ }
+]
