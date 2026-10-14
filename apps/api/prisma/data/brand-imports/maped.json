@@ -1,0 +1,302 @@
+{
+  "brand": "Maped",
+  "manufacturer": "Maped India Pvt. Ltd.",
+  "feed": "maped-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/maped/logo-b887283d.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Maped ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Black\\ Peps\\ Mechanical\\ Pencil\\ \\-\\ 0\\.7\\ mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Soft\\ Touch\\ Black\\ Peps\\ Mechanical\\ Pencil\\ \\-\\ 0\\.5\\ mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Connect\\ Highlighters$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Architect\\ Dust\\ Free\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Croc\\ Croc\\ Puzzle\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Croc\\ Croc\\ Puzzle\\ Frog\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Zenoa\\ \\+\\ Gomma\\ Erasers\\ with\\ Cover$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Technic\\ Duo\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Universal\\ Gom\\ Stick\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Zenoa\\ Collector\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Bulbo\\ Pencil\\ Sharpener\\ \\-\\ 1\\ Hole$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Classic\\ Metal\\ Pencil\\ Sharpener\\ \\-\\ 2\\ Holes$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Classic\\ Shaker\\ Pencil\\ Sharpener\\ \\-\\ 1\\ Hole$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Metal\\ Body\\ Pencil\\ Sharpener\\ \\-\\ 1\\ Hole$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Croc\\ Croc\\ Pencil\\ Sharpener\\ \\-\\ 1\\ Hole$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Croc\\ Croc\\ Pencil\\ Sharpener\\ \\-\\ 2\\ Holes$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Croc\\ Croc\\ Universal\\ Pencil\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Croc\\ Croc\\ Innovation\\ Pencil\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Croc\\ Croc\\ Signal\\ Pencil\\ Sharpener$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Tatoo\\ Can\\ Pencil\\ Sharpener\\ \\-\\ 2\\ Holes$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Mini\\ Tatoo\\ Can\\ Pencil\\ Sharpener\\ \\-\\ 1\\ Hole$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Loopy\\ Pencil\\ Sharpener\\ \\-\\ Basic$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Loopy\\ Pencil\\ Sharpener\\ \\-\\ Lead$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Loopy\\ Pencil\\ Sharpener\\ \\-\\ Premium$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Connect\\ Sharpener\\ with\\ Eraser\\ \\-\\ 2\\ Holes$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Glue\\ Stick$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Office\\ Scissors\\ \\-\\ 21\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Advanced\\ Scissors\\ \\-\\ 17\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Advanced\\ School\\ Scissors\\ \\-\\ 13\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Essentials\\ Multipurpose\\ Scissors\\ \\-\\ 17\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Office\\ Essentials\\ Green\\ Scissors\\ \\-\\ 21\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Office\\ Essentials\\ Soft\\ Scissors\\ \\-\\ 21\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Universal\\ Scissors\\ \\-\\ Black,\\ 13\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Kidicut\\ Kids\\ Scissors$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Creacut\\ Craft\\ Scissors$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Universal\\ Cutter\\ \\-\\ 9\\ mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    }
+  ]
+}
