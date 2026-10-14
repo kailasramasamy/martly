@@ -1,0 +1,72 @@
+{
+  "brand": "Temptations (Mars)",
+  "manufacturer": "Mars International India Pvt. Ltd.",
+  "feed": "temptations-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/temptations/logo-0393929d.png",
+  "themeColor": "#5B2D86",
+  "themeColorSecondary": "#F5A800",
+  "namePrefix": "Temptations ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Temptations Cat Treats - Salmon": "Crunchy Cat Treats - Savoury Salmon"
+  },
+  "rules": [
+    {
+      "match": "^Crunchy\\ Cat\\ Treats\\ \\-\\ Savoury\\ Salmon$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Cat\\ Treats\\ \\-\\ Seafood\\ Medley$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Cat\\ Treats\\ \\-\\ Tasty\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Crunchy\\ Cat\\ Treats\\ \\-\\ Tempting\\ Tuna$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Purr\\-ee\\ Lickable\\ Cat\\ Treats\\ \\-\\ Chicken\\ \\&\\ Tuna$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Purr\\-ee\\ Lickable\\ Cat\\ Treats\\ \\-\\ Maguro\\ \\&\\ Scallop$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Purr\\-ee\\ Lickable\\ Cat\\ Treats\\ \\-\\ Salmon\\ \\&\\ Cheese$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    }
+  ]
+}
