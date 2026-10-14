@@ -1,0 +1,110 @@
+{
+  "brand": "Fevicol (Pidilite)",
+  "manufacturer": "Pidilite Industries Ltd.",
+  "feed": "fevicol-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/fevicol/logo-46fa44dc.png",
+  "themeColor": "#1D3E95",
+  "themeColorSecondary": "#F7A823",
+  "namePrefix": "Fevicol ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^MR\\ White\\ Adhesive$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^MR\\ Glue\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^A\\+\\ Craft\\ Glue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Allfix\\ All\\ Purpose\\ Adhesive$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Fabric\\ Fix\\ Glue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Green\\ Clear\\ Adhesive$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Glue\\ Drops\\ Peel\\ Apply\\ \\&\\ Stick$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Glue\\ Drops\\ Party\\ Pack$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Multipurpose\\ Glue\\ Drops\\ 24\\ Dots$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Glue\\ Tac\\ Reusable\\ Adhesive\\ 90\\ pcs$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Shoefix\\ Shoe\\ Repair\\ Adhesive$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Shoefix\\ High\\-Strength\\ Shoe\\ Repair\\ Adhesive$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
