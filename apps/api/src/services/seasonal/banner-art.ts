@@ -4,9 +4,9 @@ import { randomUUID } from "crypto";
 import { putObject } from "../media.js";
 
 const IMAGE_MODEL = process.env.OPENAI_IMAGE_MODEL ?? "gpt-image-2.5-flare";
-// The model's widest canvas is 3:2; banners are shown at 2:1, so only the centre band is kept
+// Banners keep the model's full 3:2 canvas for the home carousel; the search spotlight shows the centre 2:1 band
 const OUT_WIDTH = 1536;
-const OUT_HEIGHT = 768;
+const OUT_HEIGHT = 1024;
 
 export interface BannerCopy {
   title: string;
@@ -29,12 +29,12 @@ function prompt(scene: string, copy?: BannerCopy) {
     "A premium promotional banner for an Indian grocery delivery app, wide landscape format.",
     `Scene: ${scene}`,
     copy ? typography(copy) : "Keep the left third calm and uncluttered. No text anywhere.",
-    "The top and bottom eighths will be cropped away: keep every word and key subject inside the middle three quarters of the height.",
+    "The top and bottom eighths may be cropped on some screens: keep every word and key subject inside the middle three quarters of the height.",
     "No logos, no brand packaging, no people's faces.",
   ].join("\n\n");
 }
 
-/** Renders a banner (with the copy set into it when given), cropped to a 2:1 WebP small enough for phones. */
+/** Renders a banner (with the copy set into it when given), as a 3:2 WebP small enough for phones. */
 export async function renderBanner(scene: string, copy?: BannerCopy): Promise<Buffer> {
   const response = await new OpenAI().images.generate({
     model: IMAGE_MODEL,
@@ -48,7 +48,7 @@ export async function renderBanner(scene: string, copy?: BannerCopy): Promise<Bu
   return prepareBanner(Buffer.from(b64, "base64"));
 }
 
-/** Any banner image, generated or uploaded, cropped to the 2:1 WebP the app expects. */
+/** Any banner image, generated or uploaded, cropped to the 3:2 WebP the app expects. */
 export function prepareBanner(image: Buffer) {
   return sharp(image).resize(OUT_WIDTH, OUT_HEIGHT, { fit: "cover", position: "centre" }).webp({ quality: 80 }).toBuffer();
 }

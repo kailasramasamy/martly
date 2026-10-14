@@ -1,5 +1,5 @@
 import { Edit, useForm } from "@refinedev/antd";
-import { Form, Input, Select, Card, Row, Col } from "antd";
+import { Form, Input, InputNumber, Select, Card, Row, Col } from "antd";
 import { BankOutlined } from "@ant-design/icons";
 import { FESTIVAL_REGIONS } from "@martly/shared/constants";
 
@@ -25,6 +25,9 @@ export const OrganizationEdit = () => {
                   mode="multiple"
                   options={Object.entries(FESTIVAL_REGIONS).map(([value, label]) => ({ value, label }))}
                 />
+              </Form.Item>
+              <Form.Item label="Promo discount cap (%)" name="promoDiscountCap" help="The promo agent never sets a discount above this.">
+                <InputNumber min={1} max={90} style={{ width: "100%" }} />
               </Form.Item>
             </Card>
           </Col>

@@ -138,3 +138,55 @@ export interface CategoryFacets {
   subcategoryCounts: Record<string, number>;
   brands: { id: string; name: string; imageUrl: string | null; count: number }[];
 }
+
+// ── Promo agent ──
+export interface PromoCopy {
+  title: string;
+  subtitle: string;
+}
+
+export interface PromoSummary {
+  id: string;
+  brief: string;
+  status: "DRAFTING" | "READY" | "LIVE" | "ENDED" | "FAILED" | "DISCARDED";
+  autoLaunch: boolean;
+  notify: boolean;
+  title: string | null;
+  /** The English banner (or the text-free art), once drawn */
+  imageUrl: string | null;
+  discountType: "FLAT" | "PERCENTAGE" | null;
+  discountValue: number | null;
+  productCount: number;
+  startsAt: string | null;
+  endsAt: string | null;
+  failureReason: string | null;
+  createdAt: string;
+}
+
+export interface PromoProduct {
+  productId: string;
+  name: string;
+  brand: string | null;
+  imageUrl: string | null;
+  subcategory: string | null;
+  priceMin: number;
+  priceMax: number;
+  /** Prices after the promo's discount; null when the promo has no discount */
+  promoPriceMin: number | null;
+  promoPriceMax: number | null;
+}
+
+export interface PromoDetail extends PromoSummary {
+  collectionId: string | null;
+  assumptions: string[];
+  log: { at: string; message: string }[];
+  copy: Record<string, PromoCopy> | null;
+  push: { title: string; body: string } | null;
+  /** Banner per language ("en", "ta"), or { art } when the copy couldn't be set into the artwork */
+  images: Record<string, string> | null;
+  textInImage: boolean;
+  products: PromoProduct[];
+  /** What launch changes (READY) or changed (LIVE/ENDED) */
+  priceChanges: { listings: number; stores: number; keptExisting: number } | null;
+  pushSent: { recipients: number; at: string } | null;
+}

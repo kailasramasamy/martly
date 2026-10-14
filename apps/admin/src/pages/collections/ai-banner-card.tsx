@@ -61,8 +61,8 @@ export const AiBannerCard = ({ record, onRegenerated }: { record: AiBannerRecord
                 <ReplaceImageButton
                   path={`/collections/${record.id}/banner-image/${lang}`}
                   hint={lang === "art"
-                    ? "Cropped to a wide 2:1 banner. Keep it free of text; the app draws the title on top."
-                    : "Cropped to a wide 2:1 banner. Include the title in the image; the app won't draw it on top."}
+                    ? "Cropped to a 3:2 banner. Keep it free of text; the app shows the title below it."
+                    : "Cropped to a 3:2 banner. Include the title in the image; the app adds no text."}
                   onReplaced={onRegenerated}
                 />{" "}
                 <Tag>{LANG_LABELS[lang] ?? lang}</Tag>

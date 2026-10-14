@@ -182,7 +182,7 @@ export default function CategoryScreen() {
         if (banner.actionTarget) router.push({ pathname: "/product/[id]", params: { id: banner.actionTarget } });
         break;
       case "COLLECTION":
-        if (banner.actionTarget) router.push({ pathname: "/search", params: { collectionId: banner.actionTarget } } as any);
+        if (banner.actionTarget) router.push({ pathname: "/collection/[id]", params: { id: banner.actionTarget } });
         break;
       case "SEARCH":
         if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);

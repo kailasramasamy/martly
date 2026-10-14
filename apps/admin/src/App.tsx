@@ -25,6 +25,7 @@ import {
   CommentOutlined,
   EnvironmentOutlined,
   ThunderboltOutlined,
+  RocketOutlined,
   CarOutlined,
   PictureOutlined,
   NotificationOutlined,
@@ -104,6 +105,8 @@ import { LoyaltyCustomers } from "./pages/loyalty/customers";
 import { ExpressDeliveryConfig } from "./pages/express-delivery/config";
 import { DeliveryBoard } from "./pages/delivery-board";
 import { RidersList } from "./pages/riders/list";
+import { PromoList } from "./pages/promos/list";
+import { PromoShow } from "./pages/promos/show";
 import { BannerList } from "./pages/banners/list";
 import { BannerCreate } from "./pages/banners/create";
 import { BannerEdit } from "./pages/banners/edit";
@@ -285,6 +288,12 @@ export default function App() {
                 create: "/collections/create",
                 edit: "/collections/edit/:id",
                 meta: { label: "Collections", icon: <AppstoreOutlined />, parent: "marketing" },
+              },
+              {
+                name: "promos",
+                list: "/promos",
+                show: "/promos/show/:id",
+                meta: { label: "Promos", icon: <RocketOutlined />, parent: "marketing" },
               },
               {
                 name: "festival-events",
@@ -548,6 +557,10 @@ export default function App() {
                   <Route index element={<BannerList />} />
                   <Route path="create" element={<BannerCreate />} />
                   <Route path="edit/:id" element={<BannerEdit />} />
+                </Route>
+                <Route path="/promos">
+                  <Route index element={<PromoList />} />
+                  <Route path="show/:id" element={<PromoShow />} />
                 </Route>
                 <Route path="/collections">
                   <Route index element={<CollectionList />} />

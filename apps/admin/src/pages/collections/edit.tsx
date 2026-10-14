@@ -1,6 +1,6 @@
 import { Edit, useForm, useSelect } from "@refinedev/antd";
 import { Form, Input, InputNumber, Select, Switch, Card, Row, Col, DatePicker } from "antd";
-import { CollectionKindLabels } from "@martly/shared/constants";
+import { CollectionKindLabels, EDITABLE_COLLECTION_KINDS } from "@martly/shared/constants";
 import { toSchedulePayload, toScheduleValue } from "./schedule";
 import { AppstoreOutlined } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
@@ -56,7 +56,7 @@ export const CollectionEdit = () => {
               </Form.Item>
               <Form.Item label="Kind" name="kind">
                 <Select
-                  options={Object.entries(CollectionKindLabels).map(([value, label]) => ({ value, label }))}
+                  options={EDITABLE_COLLECTION_KINDS.map((value) => ({ value, label: CollectionKindLabels[value] }))}
                 />
               </Form.Item>
               <Form.Item label="Schedule" name="schedule">

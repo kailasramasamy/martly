@@ -1,3 +1,5 @@
+import type { PaginatedResponse } from "@martly/shared/types";
+
 export interface Store {
   id: string;
   name: string;
@@ -164,6 +166,8 @@ export interface Banner {
   title: string;
   subtitle: string | null;
   imageUrl: string;
+  imageUrls: Record<string, string> | null;
+  textInImage: boolean;
   placement: "HERO_CAROUSEL" | "CATEGORY_STRIP" | "MID_PAGE" | "CATEGORY_TOP" | "CART_UPSELL" | "POPUP";
   actionType: "CATEGORY" | "PRODUCT" | "COLLECTION" | "SEARCH" | "URL" | "NONE";
   actionTarget: string | null;
@@ -534,4 +538,18 @@ export interface SearchSuggestion {
 export interface SearchSuggestions {
   suggestions: SearchSuggestion[];
   correctedQuery?: string;
+}
+
+export interface CollectionHeader {
+  id: string;
+  title: string;
+  subtitle: string | null;
+  imageUrl: string | null;
+  imageUrls: Record<string, string> | null;
+  textInImage: boolean;
+  translations: CollectionTranslations | null;
+}
+
+export interface CollectionProductsResponse extends PaginatedResponse<StoreProduct> {
+  collection: CollectionHeader;
 }

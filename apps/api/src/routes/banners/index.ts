@@ -40,6 +40,8 @@ export async function bannerRoutes(app: FastifyInstance) {
         title: true,
         subtitle: true,
         imageUrl: true,
+        imageUrls: true,
+        textInImage: true,
         placement: true,
         actionType: true,
         actionTarget: true,

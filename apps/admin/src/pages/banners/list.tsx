@@ -1,5 +1,7 @@
 import { List, useTable, EditButton, DeleteButton } from "@refinedev/antd";
-import { Table, Tag, Space, Image, Switch } from "antd";
+import { useState } from "react";
+import { App, Table, Tag, Space, Image, Switch } from "antd";
+import { isAxiosError } from "axios";
 import { BANNER_PLACEMENT_CONFIG, BANNER_ACTION_TYPE_CONFIG } from "../../constants/tag-colors";
 import { axiosInstance } from "../../providers/data-provider";
 import dayjs from "dayjs";
@@ -7,14 +9,24 @@ import { DebouncedSearch } from "../../components/DebouncedSearch";
 
 
 export const BannerList = () => {
-  const { tableProps, setFilters, filters } = useTable({
+  const { tableProps, tableQuery, filters, setFilters } = useTable({
     resource: "banners",
     syncWithLocation: true,
   });
+  const { message } = App.useApp();
+  const [togglingId, setTogglingId] = useState<string | null>(null);
 
   const handleToggleActive = async (id: string, checked: boolean) => {
-    await axiosInstance.put(`/banners/${id}`, { isActive: checked });
-    setFilters([], "replace");
+    setTogglingId(id);
+    try {
+      await axiosInstance.put(`/banners/${id}`, { isActive: checked });
+      await tableQuery.refetch();
+    } catch (err) {
+      if (!isAxiosError(err)) throw err;
+      message.error(err.response?.data?.message ?? "Could not update the banner");
+    } finally {
+      setTogglingId(null);
+    }
   };
 
   const currentSearch = (filters as any[])?.find((f: any) => f.field === "q")?.value || "";
@@ -81,7 +93,7 @@ export const BannerList = () => {
           title="Active"
           width={70}
           render={(v: boolean, rec: any) => (
-            <Switch size="small" checked={v} onChange={(c) => handleToggleActive(rec.id, c)} />
+            <Switch size="small" checked={v} loading={togglingId === rec.id} onChange={(c) => handleToggleActive(rec.id, c)} />
           )}
         />
         <Table.Column

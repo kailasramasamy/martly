@@ -129,6 +129,16 @@ enum CollectionKind {
   STANDARD
   OCCASION
   SEASON
+  PROMO
+}
+
+enum PromoStatus {
+  DRAFTING
+  READY
+  LIVE
+  ENDED
+  FAILED
+  DISCARDED
 }
 
 enum CurationSource {
@@ -260,6 +270,7 @@ model Organization {
 
   subscriptionEnabled Boolean  @default(false) @map("subscription_enabled")
   festivalRegions     String[] @default(["ALL"]) @map("festival_regions")
+  promoDiscountCap    Int      @default(20) @map("promo_discount_cap")
 
   stores                Store[]
   products              Product[]
@@ -273,6 +284,7 @@ model Organization {
   banners               Banner[]
   notificationCampaigns NotificationCampaign[]
   notificationTemplates NotificationTemplate[]
+  promos                Promo[]
   referralConfig        ReferralConfig?
   referrals             Referral[]
   supportTickets        SupportTicket[]
@@ -371,6 +383,7 @@ model User {
   subscriptions       Subscription[]
   basketAddOns        BasketAddOn[]
   searchLogs          SearchLog[]
+  promosCreated       Promo[]
 
   @@map("users")
 }
@@ -590,6 +603,7 @@ model StoreProduct {
   subscriptionItems     SubscriptionItem[]
   basketAddOns          BasketAddOn[]
   subscriptionOverrides SubscriptionItemOverride[]
+  promoPriceChanges     PromoPriceChange[]
 
   @@unique([storeId, variantId])
   @@map("store_products")
@@ -715,6 +729,7 @@ model Collection {
   festivalEvent FestivalEvent?   @relation(fields: [festivalEventId], references: [id], onDelete: SetNull)
   items         CollectionItem[]
   tiles         CollectionTile[]
+  promo         Promo?
 
   @@unique([organizationId, festivalEventId])
   @@index([organizationId])
@@ -1120,6 +1135,7 @@ model Banner {
   department   Department?   @relation(fields: [departmentId], references: [id])
   category     Category?     @relation(fields: [categoryId], references: [id])
   subcategory  Subcategory?  @relation(fields: [subcategoryId], references: [id])
+  promo        Promo?
 
   @@index([placement, isActive])
   @@index([organizationId])
@@ -1148,6 +1164,7 @@ model NotificationCampaign {
   organization  Organization   @relation(fields: [organizationId], references: [id])
   sentByUser    User           @relation("CampaignsSent", fields: [sentBy], references: [id])
   notifications Notification[]
+  promo         Promo?
 
   @@index([organizationId, createdAt])
   @@index([status, scheduledAt])
@@ -1541,4 +1558,61 @@ model SearchEvent {
   @@unique([searchLogId, productId, type])
   @@index([productId])
   @@map("search_events")
+}
+
+// A promo drafted by the promo agent from an admin's one-line brief: banner + collection + optional discount
+model Promo {
+  id             String        @id @default(uuid())
+  organizationId String        @map("organization_id")
+  createdById    String        @map("created_by_id")
+  brief          String
+  status         PromoStatus   @default(DRAFTING)
+  autoLaunch     Boolean       @default(false) @map("auto_launch")
+  notify         Boolean       @default(true)
+  failureReason  String?       @map("failure_reason")
+  assumptions    String[]      @default([])
+  agentLog       Json          @default("[]") @map("agent_log")
+  copy           Json?
+  push           Json?
+  discountType   DiscountType? @map("discount_type")
+  discountValue  Decimal?      @map("discount_value") @db.Decimal(10, 2)
+  durationDays   Int           @default(7) @map("duration_days")
+  startsAt       DateTime?     @map("starts_at")
+  endsAt         DateTime?     @map("ends_at")
+  collectionId   String?       @unique @map("collection_id")
+  bannerId       String?       @unique @map("banner_id")
+  campaignId     String?       @unique @map("campaign_id")
+  createdAt      DateTime      @default(now()) @map("created_at")
+  updatedAt      DateTime      @updatedAt @map("updated_at")
+
+  organization Organization          @relation(fields: [organizationId], references: [id])
+  createdBy    User                  @relation(fields: [createdById], references: [id])
+  collection   Collection?           @relation(fields: [collectionId], references: [id], onDelete: SetNull)
+  banner       Banner?               @relation(fields: [bannerId], references: [id], onDelete: SetNull)
+  campaign     NotificationCampaign? @relation(fields: [campaignId], references: [id], onDelete: SetNull)
+  priceChanges PromoPriceChange[]
+
+  @@index([organizationId, status])
+  @@index([status, endsAt])
+  @@map("promos")
+}
+
+// A store listing whose discount a promo overwrote, with the discount it had before, for end/undo to restore
+model PromoPriceChange {
+  id                String        @id @default(uuid())
+  promoId           String        @map("promo_id")
+  storeProductId    String        @map("store_product_id")
+  prevDiscountType  DiscountType? @map("prev_discount_type")
+  prevDiscountValue Decimal?      @map("prev_discount_value") @db.Decimal(10, 2)
+  prevDiscountStart DateTime?     @map("prev_discount_start")
+  prevDiscountEnd   DateTime?     @map("prev_discount_end")
+  restoredAt        DateTime?     @map("restored_at")
+  createdAt         DateTime      @default(now()) @map("created_at")
+
+  promo        Promo        @relation(fields: [promoId], references: [id], onDelete: Cascade)
+  storeProduct StoreProduct @relation(fields: [storeProductId], references: [id], onDelete: Cascade)
+
+  @@unique([promoId, storeProductId])
+  @@index([storeProductId])
+  @@map("promo_price_changes")
 }

@@ -1,7 +1,7 @@
 # Festive home hero
 
-While a festival or season is live, the top of the mobile home screen becomes a festive hero in place of the
-banner carousel: AI artwork hanging off a header tinted to match, a celebratory headline, and a 3-column grid of
+While a festival or season is live, the top of the mobile home screen becomes a festive hero, and the banner
+carousel moves below "Shop by Category": AI artwork hanging off a header tinted to match, a celebratory headline, and a 3-column grid of
 themed tiles ("Pooja Needs", "Sweets & Dry Fruits"…). Tapping a tile opens a festival screen with every theme as a
 chip and the tile's products below.
 
@@ -26,7 +26,8 @@ chip and the tile's products below.
      in `CollectionTile` rows. The cost is about 7 images (up to ~14 if self-checks repaint) and 1 Claude call per org per festival, taking ~45s.
 2. **Home feed**: `GET /home/:storeId` returns `festiveHero`. It picks the live OCCASION/SEASON collection that has a
    hero, festivals before seasons and soonest-ending first. Tiles whose aisles have nothing in stock at that store are
-   hidden, still keeping whole rows. When no hero qualifies, it returns `null` and the app shows the banner carousel.
+   hidden, still keeping whole rows. When no hero qualifies, it returns `null` and the banner carousel takes the top of the screen. While a hero is
+   live, the carousel drops that festival's own banner, so the two don't repeat each other.
 3. **Festival screen**:
    - `GET /festive/:collectionId?storeId=` returns the hero and its tiles.
    - `GET /festive/:collectionId/tiles/:tileId/products?storeId=&page=&pageSize=` returns in-stock products from the
@@ -41,7 +42,7 @@ chip and the tile's products below.
      (`PUT /collections/:id/banner-image/:lang`, where `lang` is `en`/`ta`, or `art` for a text-free banner).
      Uploads go through the same preparation as generated art: the background is cropped to 2:3 from the top and
      re-measured (ornament depth capped at 40%, fade colour, headline contrast); tiles are trimmed to fill the card;
-     banners are cropped to 2:1 and kept in step with any legacy banner rows;
+     banners are cropped to 3:2 and kept in step with any legacy banner rows;
    - Remove (`DELETE /collections/:id/hero`).
 5. **Backfill**: `npx tsx prisma/backfill-festive-heroes.ts` paints heroes for live and upcoming festival collections
    that don't have one. To target prod, prefix it with `DATABASE_URL=...`.
@@ -78,4 +79,4 @@ chip and the tile's products below.
 - A store where some tiles have no stock, to confirm rows drop cleanly.
 - The admin Home hero card in a browser: preview, tile edits, Regenerate and Remove.
 - Android: the tinted header under the status bar (`app/_layout.tsx` sets a white, non-translucent bar).
-- The fallback to the banner carousel once no festival hero is live.
+- The banner carousel at the top once no festival hero is live, and below "Shop by Category" while one is.

@@ -17,6 +17,12 @@ export const accessControlProvider: AccessControlProvider = {
     // SUPER_ADMIN can do everything
     if (role === "SUPER_ADMIN") return { can: true };
 
+    // Promos: ORG_ADMIN only
+    if (resource === "promos") {
+      if (role === "ORG_ADMIN") return { can: true };
+      return { can: false, reason: "Only Super Admin or Org Admin can manage promos" };
+    }
+
     // Organizations: SUPER_ADMIN only
     if (resource === "organizations") {
       return { can: false, reason: "Only Super Admin can manage organizations" };

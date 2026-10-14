@@ -105,6 +105,14 @@ export const BannerEdit = () => {
               >
                 <ImageUpload />
               </Form.Item>
+              <Form.Item
+                name="textInImage"
+                label="Title is in the image"
+                valuePropName="checked"
+                extra="Upload a 3:2 image. When the title is part of the artwork the app adds no text; otherwise it shows the title below the image."
+              >
+                <Switch />
+              </Form.Item>
             </Card>
 
             <Card title="Targeting" size="small" style={{ marginBottom: 16 }}>

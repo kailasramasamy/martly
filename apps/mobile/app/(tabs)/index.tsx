@@ -35,6 +35,7 @@ import { CategoryTile } from "../../components/CategoryTile";
 import { TimeSpotlight } from "../../components/TimeSpotlight";
 import { HomeHeader } from "../../components/home/HomeHeader";
 import { FestiveHero } from "../../components/home/FestiveHero";
+import { BannerCarousel } from "../../components/home/BannerCarousel";
 import { PlusPromoStrip } from "../../components/PlusPromoStrip";
 import type { Store, StoreProduct, HomeFeed, Banner, FestiveTile } from "../../lib/types";
 
@@ -112,11 +113,13 @@ export default function HomeScreen() {
   }, [stores, storeSearch]);
 
   // ── Banner data by placement ──
-  // A live festival's hero takes the top of the screen in place of the banner carousel
+  // A live festival's hero takes the top of the screen; the banner carousel moves below the categories
   const festiveHero = homeFeed?.festiveHero ?? null;
   const headerTint = festiveHero && !festiveHero.theme.dark ? festiveHero.theme.background : null;
   const heroBanners = useMemo(
-    () => (festiveHero ? [] : (homeFeed?.banners ?? []).filter((b) => b.placement === "HERO_CAROUSEL")),
+    () => (homeFeed?.banners ?? []).filter(
+      (b) => b.placement === "HERO_CAROUSEL" && !(b.actionType === "COLLECTION" && b.actionTarget === festiveHero?.id),
+    ),
     [festiveHero, homeFeed?.banners],
   );
   const midPageBanners = useMemo(
@@ -138,25 +141,6 @@ export default function HomeScreen() {
     }
   }, [homeFeed, popupBanners.length]);
 
-  const [heroIndex, setHeroIndex] = useState(0);
-  const heroRef = useRef<FlatList<Banner>>(null);
-  const heroTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  // Auto-rotate hero carousel
-  useEffect(() => {
-    if (heroBanners.length <= 1) return;
-    heroTimerRef.current = setInterval(() => {
-      setHeroIndex((prev) => {
-        const next = (prev + 1) % heroBanners.length;
-        heroRef.current?.scrollToIndex({ index: next, animated: true });
-        return next;
-      });
-    }, 4000);
-    return () => {
-      if (heroTimerRef.current) clearInterval(heroTimerRef.current);
-    };
-  }, [heroBanners.length]);
-
   const handleFestiveTile = useCallback((tile: FestiveTile) => {
     if (festiveHero) router.push({ pathname: "/festival/[id]", params: { id: festiveHero.id, tile: tile.id } });
   }, [festiveHero]);
@@ -170,8 +154,7 @@ export default function HomeScreen() {
         if (banner.actionTarget) router.push({ pathname: "/product/[id]", params: { id: banner.actionTarget } });
         break;
       case "COLLECTION":
-        // Navigate to search filtered by collection
-        if (banner.actionTarget) router.push({ pathname: "/search", params: { collectionId: banner.actionTarget } } as any);
+        if (banner.actionTarget) router.push({ pathname: "/collection/[id]", params: { id: banner.actionTarget } });
         break;
       case "SEARCH":
         if (banner.actionTarget) router.push({ pathname: "/search", params: { q: banner.actionTarget } } as any);
@@ -289,33 +272,7 @@ export default function HomeScreen() {
             </ScrollView>
           )}
 
-          {/* ── Hero Carousel ── */}
-          {heroBanners.length > 0 && (
-            <View style={styles.bannerSection}>
-              <FlatList
-                ref={heroRef}
-                horizontal
-                pagingEnabled
-                data={heroBanners}
-                keyExtractor={(item) => item.id}
-                showsHorizontalScrollIndicator={false}
-                onMomentumScrollEnd={(e) => {
-                  const idx = Math.round(e.nativeEvent.contentOffset.x / (SCREEN_WIDTH - H_PADDING * 2));
-                  setHeroIndex(idx);
-                }}
-                renderItem={({ item }) => (
-                  <HeroBannerSlide banner={item} width={SCREEN_WIDTH - H_PADDING * 2} onPress={handleBannerPress} />
-                )}
-              />
-              {heroBanners.length > 1 && (
-                <View style={styles.heroDots}>
-                  {heroBanners.map((_, i) => (
-                    <View key={i} style={[styles.heroDot, heroIndex === i && styles.heroDotActive]} />
-                  ))}
-                </View>
-              )}
-            </View>
-          )}
+          {!festiveHero && heroBanners.length > 0 && <BannerCarousel banners={heroBanners} onPress={handleBannerPress} />}
 
           {/* ── Buy Again (top priority for returning customers) ── */}
           {homeFeed && homeFeed.buyAgain.length > 0 && (
@@ -367,6 +324,8 @@ export default function HomeScreen() {
             </View>
           )}
 
+          {festiveHero && heroBanners.length > 0 && <BannerCarousel banners={heroBanners} onPress={handleBannerPress} />}
+
           {selectedStore && <HomeBrandRail storeId={selectedStore.id} />}
 
           {memberStatus && !memberStatus.isMember && <PlusPromoStrip />}
@@ -394,7 +353,6 @@ export default function HomeScreen() {
                   key={banner.id}
                   banner={banner}
                   width={SCREEN_WIDTH - H_PADDING * 2}
-                  height={152}
                   onPress={handleBannerPress}
                 />
               ))}
@@ -656,30 +614,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "600",
     color: colors.primary,
-  },
-
-  // ── Hero Carousel ──
-  bannerSection: {
-    paddingHorizontal: H_PADDING,
-    paddingTop: 16,
-  },
-  heroDots: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: 10,
-    gap: 6,
-  },
-  heroDot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: "#cbd5e1",
-  },
-  heroDotActive: {
-    width: 18,
-    borderRadius: 4,
-    backgroundColor: colors.primary,
   },
 
   // ── Category Strip ──

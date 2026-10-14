@@ -11,9 +11,11 @@ import { isCurationConfigured, regenerateBanner, regenerateHero } from "../../se
 import { saveHero, withHeroTranslation } from "../../services/seasonal/hero.js";
 import { ADMINS, ownCollection } from "./access.js";
 import { collectionImageRoutes } from "./images.js";
+import { collectionStorefrontRoutes } from "./storefront.js";
 
 export async function collectionRoutes(app: FastifyInstance) {
   await app.register(collectionImageRoutes);
+  await app.register(collectionStorefrontRoutes);
 
   // List collections
   app.get("/", { preHandler: [authenticate] }, async (request) => {
@@ -23,7 +25,8 @@ export async function collectionRoutes(app: FastifyInstance) {
     const skip = (Number(page) - 1) * Number(pageSize);
     const user = getOrgUser(request);
 
-    const where: Record<string, unknown> = {};
+    // Promo collections are managed from the Promos page
+    const where: Record<string, unknown> = { kind: { not: "PROMO" } };
 
     // Org-scoped: non-SUPER_ADMIN sees own org + global
     if (user.role !== "SUPER_ADMIN") {

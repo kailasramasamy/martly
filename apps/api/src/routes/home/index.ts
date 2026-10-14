@@ -34,6 +34,8 @@ export async function homeRoutes(app: FastifyInstance) {
         app.prisma.collection.findMany({
           where: {
             isActive: true,
+            // A promo's products open from its banner, not as a home rail
+            kind: { not: "PROMO" },
             OR: [
               { organizationId: store.organizationId },
               { organizationId: null },
@@ -148,12 +150,15 @@ export async function homeRoutes(app: FastifyInstance) {
               { OR: [{ endsAt: null }, { endsAt: { gte: now } }] },
             ],
           },
-          orderBy: { sortOrder: "asc" },
+          // Newest first among equals, so a just-launched promo leads the carousel
+          orderBy: [{ sortOrder: "asc" }, { createdAt: "desc" }],
           select: {
             id: true,
             title: true,
             subtitle: true,
             imageUrl: true,
+            imageUrls: true,
+            textInImage: true,
             placement: true,
             actionType: true,
             actionTarget: true,

@@ -15,6 +15,8 @@ export function resolveNotificationDeepLink(
     return `/order/${data.orderId}` as Href;
   }
 
+  if (data.collectionId) return `/collection/${data.collectionId}` as Href;
+
   // 2. Product detail
   if (data.productId) {
     return `/product/${data.productId}` as Href;

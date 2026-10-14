@@ -201,3 +201,12 @@ export const SUBSCRIPTION_FREQUENCY_CONFIG: Record<string, { color: string; labe
   BIWEEKLY: { color: "orange", label: "Every 2 Weeks" },
   MONTHLY: { color: "magenta", label: "Monthly" },
 };
+
+export const PROMO_STATUS_CONFIG: Record<string, { color: string; label: string }> = {
+  DRAFTING: { color: "processing", label: "Drafting" },
+  READY: { color: "gold", label: "Ready" },
+  LIVE: { color: "green", label: "Live" },
+  ENDED: { color: "default", label: "Ended" },
+  FAILED: { color: "red", label: "Failed" },
+  DISCARDED: { color: "default", label: "Discarded" },
+};

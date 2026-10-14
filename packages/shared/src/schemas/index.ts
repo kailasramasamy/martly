@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, CollectionKind, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES } from "../constants/index.js";
+import { UserRole, StoreStatus, OrderStatus, PaymentStatus, UnitType, FoodType, ProductType, StorageType, DiscountType, ReviewStatus, BannerPlacement, EDITABLE_COLLECTION_KINDS, BannerActionType, FESTIVAL_REGIONS, MembershipDuration, SubscriptionFrequency, SubscriptionDeliveryMode, Difficulty, SearchSortBy, SearchEventType, SUPPORTED_LANGUAGES } from "../constants/index.js";
 
 // ── Translations ─────────────────────────────────────
 const languageCodes = Object.keys(SUPPORTED_LANGUAGES) as [string, ...string[]];
@@ -84,6 +84,7 @@ export const updateOrganizationSchema = z.object({
   name: z.string().min(1).optional(),
   slug: z.string().min(1).regex(/^[a-z0-9-]+$/).optional(),
   festivalRegions: festivalRegionsSchema.optional(),
+  promoDiscountCap: z.number().int().min(1).max(90).optional(),
 });
 export type UpdateOrganizationInput = z.infer<typeof updateOrganizationSchema>;
 
@@ -559,7 +560,7 @@ export const createCollectionSchema = z.object({
   sortOrder: z.number().int().min(0).optional(),
   isActive: z.boolean().optional(),
   productIds: z.array(z.string().uuid()).optional(),
-  kind: z.nativeEnum(CollectionKind).default("STANDARD"),
+  kind: z.enum(EDITABLE_COLLECTION_KINDS).default("STANDARD"),
   startsAt: z.coerce.date().nullish(),
   endsAt: z.coerce.date().nullish(),
 }).refine(collectionWindowValid, { message: "endsAt must be after startsAt", path: ["endsAt"] });
@@ -573,7 +574,7 @@ export const updateCollectionSchema = z.object({
   sortOrder: z.number().int().min(0).optional(),
   isActive: z.boolean().optional(),
   productIds: z.array(z.string().uuid()).optional(),
-  kind: z.nativeEnum(CollectionKind).optional(),
+  kind: z.enum(EDITABLE_COLLECTION_KINDS).optional(),
   startsAt: z.coerce.date().nullish(),
   endsAt: z.coerce.date().nullish(),
 }).refine(collectionWindowValid, { message: "endsAt must be after startsAt", path: ["endsAt"] });
@@ -839,6 +840,7 @@ export const createBannerSchema = z.object({
   title: z.string().min(1),
   subtitle: z.string().optional(),
   imageUrl: z.string().url(),
+  textInImage: z.boolean().default(false),
   placement: z.nativeEnum(BannerPlacement),
   actionType: z.nativeEnum(BannerActionType).default("NONE"),
   actionTarget: z.string().optional(),
@@ -858,6 +860,7 @@ export const updateBannerSchema = z.object({
   title: z.string().min(1).optional(),
   subtitle: z.string().nullish(),
   imageUrl: z.string().url().optional(),
+  textInImage: z.boolean().optional(),
   placement: z.nativeEnum(BannerPlacement).optional(),
   actionType: z.nativeEnum(BannerActionType).optional(),
   actionTarget: z.string().nullish(),
@@ -1209,4 +1212,28 @@ export const searchEventSchema = z.object({
 export const searchSuggestQuerySchema = z.object({
   storeId: z.string().uuid(),
   q: z.string().trim().min(1).max(100),
+});
+
+// ── Promo agent ──────────────────────────────────────
+export const createPromoSchema = z.object({
+  brief: z.string().trim().min(3).max(200),
+  autoLaunch: z.boolean().default(false),
+  notify: z.boolean().default(true),
+  organizationId: z.string().uuid().optional(),
+});
+export type CreatePromoInput = z.infer<typeof createPromoSchema>;
+
+export const updatePromoItemsSchema = z.object({
+  productIds: z.array(z.string().uuid()).min(1),
+});
+
+export const promoListQuerySchema = z.object({
+  page: z.coerce.number().int().min(1).default(1),
+  pageSize: z.coerce.number().int().min(1).max(100).default(20),
+});
+
+export const collectionProductsQuerySchema = z.object({
+  storeId: z.string().uuid(),
+  page: z.coerce.number().int().min(1).default(1),
+  pageSize: z.coerce.number().int().min(1).max(50).default(20),
 });
