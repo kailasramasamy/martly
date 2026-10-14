@@ -38,7 +38,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156958-7_2-mee-mee-eazy-flo-premium-baby-feeding-bottle-blue.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A well-fed baby is a happy baby. Mee Mee's baby feeding bottle provides the most comfortable feeding experience with the right intake of feed and reduced air intake through its specially designed anti-colic nipple. Made from non-toxic, international quality polypropylene plastic for safety and durability, the soft, BPA-free silicone teat is odourless and tasteless so your baby tastes nothing but the feed. The perfectly fitted dome shields the teat from dust, humidity, and other harmful external conditions.",
+   "usageInstructions": "Hold the handle and gently rotate to clean all the germ build-up from hard-to-reach places from inside the bottle.\nUse Mee Mee liquid cleanser and water to create foam and remove all the germs easily.\nThe cleanser can be used to wash the brush after use as well.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Me N Moms Pvt Ltd",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "Premium Glass Feeding Bottle",
@@ -79,7 +86,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40110551-7_2-mee-mee-baby-premium-feeding-bottle-glass-green-mm-gp-8a.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A Well-fed baby is a happy baby. Mee Mee's Premium Glass Feeding Bottle gives your baby the most comfortable feeding experience with the right intake of feed and reduced air intake through its specially designed anti-colic nipple.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Me'N'Moms Pvt Ltd. Amar Aprt. Khar (W)",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "Baby Feeding Steel Bottle",
@@ -123,7 +136,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360741-8_1-mee-mee-baby-feeding-steel-bottle.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mee Mee Stainless Steel Feeding Bottle is crafted from premium, non-toxic SS 304 food-grade stainless steel, ensuring maximum safety and long-lasting durability. It features a 100% soft, BPA-free silicone teat that is odourless and tasteless, allowing your baby to enjoy only the natural taste of the feed.\nDesigned for everyday convenience, the bottle is suitable for milk, water, formula, or juice and complies with international safety and hygiene standards. The perfectly fitted dome protects the teat from dust and humidity, while the advanced air-ventilation system helps reduce air intake to minimise colic, gas, and spit-ups—making feeding safer and more comfortable for your baby.",
+   "manufacturerName": "Me N Moms Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Anti-Colic Easy Flo Silicone Teat - Large",
@@ -155,7 +173,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40157066-4_1-mee-mee-anti-colic-easy-flo-silicone-teat-large.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "All Mee Mee silicon feeding nipples are carefully made to the highest safety standards. It has a unique anti-colic valve designed to help reduce colic symptoms. The anti-colic valve permits only the right amount of air to enter the feeding bottle.",
+   "ingredients": "Silicone",
+   "usageInstructions": "Sterilise the nipple shield and wash your hands thoroughly before you breastfeed. Turn the shield inside out about half way and place it on your nipple. Then place the back of the nipple shield over the areola with the tip of the shield drawn out.",
+   "manufacturerName": "Me N Moms Pvt Ltd",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "2-in-1 Spout & Straw Sipper Cup",
@@ -171,7 +196,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40110494_4-mee-mee-baby-2-in-1-spout-straw-sipper-cup-green.jpg"
-    }
+    },
+    "barcode": "8907233174299"
    }
   ],
   "images": [
@@ -199,7 +225,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40110494-8_1-mee-mee-baby-2-in-1-spout-straw-sipper-cup-green.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mee Mee's 2 in 1 silicone training cup is designed to help your child gradually transit from feeding bottle to drinking thick liquids from spout cups to straw sippers and enjoy all kinds of liquids with more ease.",
+   "usageInstructions": "Non spill cup makes drinking easy and hassle-free for baby.",
+   "manufacturerName": "Me'N'Moms Pvt Ltd. Amar Aprt. Khar (W)",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "Easy Grip 360 Degree Trainer Sipper Cup",
@@ -243,7 +275,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40157118-8_1-mee-mee-easy-grip-360-degree-trainer-sipper-cup-green.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Your growing baby will find the transition from bottle to cup easier than ever. Mee mee 360 trainer sipper cup makes this stage a joy for both, your baby and you to enjoy. Equipped with a 360 degree soft silicone rim, it allows liquids to pass through easily wherever your child sips from.",
+   "ingredients": "Polypropylene Plastic",
+   "usageInstructions": "Hold the handle and gently rotate to clean all the germ build-up from hard-to-reach places from inside the bottle. Use Mee Mee liquid cleanser and water to create foam and remove all the germs easily. The cleanser can be used to wash the brush after use as well.",
+   "manufacturerName": "Me N Moms Pvt Ltd",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "Baby Silicone Pacifier",
@@ -259,7 +298,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40360742_1-mee-mee-baby-silicone-pacifier.jpg"
-    }
+    },
+    "barcode": "8907233281676"
    }
   ],
   "images": [
@@ -278,7 +318,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360742-5_1-mee-mee-baby-silicone-pacifier.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mee Mee Baby Pacifier is made from hygienic, food-grade silicone to ensure complete safety for your little one. Crafted from ultra-soft liquid silicone, it provides maximum comfort and a soothing sucking experience. The gentle silicone nipple supports natural oral development and fits comfortably in your baby’s mouth.\nThe curved shield offers a snug fit between the nose and chin, while large airflow holes help prevent moisture build-up and skin irritation. Designed with anti-static, dust-resistant properties, the pacifier stays cleaner for longer. Its one-piece, dishwasher-safe construction ensures easy cleaning and optimal hygiene.",
+   "manufacturerName": "Me N Moms Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Baby Fruit & Food Nibbler",
@@ -322,7 +367,13 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40110522-8_1-mee-mee-baby-fruit-food-nibbler-fp-8c-blue.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Made from safe and non-toxic, BPA-free food grade polypropylene plastic. Conforms to FDA and international safety standards for absolutely harmless consumption. Consists of soft silicone sack which can be quickly and easily filled with fruit or whole Food. Easy for baby to suck and chew tiny and safe food particles from the meshComes with cover to keep food clean, Easy to clean and sterilize.",
+   "usageInstructions": "Easy for baby to suck and chew tiny and safe food particles from the mesh.",
+   "manufacturerName": "Me'N'Moms Pvt Ltd. Amar Aprt. Khar (W)",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "Washable Cotton Maternity Breast Pads",
@@ -360,7 +411,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40157026-6_1-mee-mee-washable-cotton-maternity-breast-pads-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Just like your baby, you need special care too. With Mee Mee Washable Cotton Maternity Breast Pads, you can keep clean, dry, and fresh all day long. Comfortable and economical, the nursing pads contain super-absorbent padding, which draws moisture away from the skin, prevents leakage, and also helps in preventing milk stains on the clothes.",
+   "ingredients": "Cotton",
+   "usageInstructions": "Open the pack of the disposable breast pad and peel off the tapes from both sides. Place the sticking side to the inside of the cup of the brassiere. The smooth, absorbent side will cover the breast.",
+   "manufacturerName": "Me N Moms Pvt Ltd",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "Fresh Feel Baby Powder",
@@ -422,7 +480,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40157149-8_1-mee-mee-fresh-feel-baby-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mee Mee velvety soft Baby Powder is extremely light and keeps your baby's skin fresh and dry. Safe to use from birth and microbiologically tested, it can be used after bath, after a nappy change or just to freshen up during the day.",
+   "usageInstructions": "Shake the baby powder in your hand and then dab in firm, circular motion.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Me'N'Moms Pvt Ltd. Amar Aprt. Khar (W)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Mild Baby Shampoo",
@@ -475,7 +540,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022133_9-mee-mee-mild-baby-shampoo.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Fearlessly lather your baby's hair right from birth with Mee Mee's mild baby shampoo, which is tear-free and infused with natural extracts to help lock in the natural oils. This gentle and nourishing formula is microbiologically tested to ensure a safe and happy bath time for your little one. Crafted with tender love and care, Mee Mee Baby Shampoo is specially designed to take care of your baby's delicate hair and scalp, leaving it soft, silky, and healthy. Its pH-balanced and hypoallergenic formula is enriched with natural ingredients and fruit extracts that help replenish lost moisture and nourish the scalp, providing a gentle cleansing experience from birth. With its mild fragrance, this tear-free shampoo will leave your baby refreshed and ready to take on the day.",
+   "usageInstructions": "Take a coin size dollop in your palm and gently massage it in your baby's hair. Rinse liberally with warm water and towel dry for soft and tangle-free hair.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Me N Moms Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Natural Nourishing Baby Soap - Chamomile & Olive",
@@ -492,7 +564,8 @@
     "estimated": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40296561_2-mee-mee-natural-nourishing-baby-soap-with-100-chamomile-olive-dermatologically-tested.jpg"
-    }
+    },
+    "barcode": "8907233396752"
    }
   ],
   "images": [
@@ -520,7 +593,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40296561-8_1-mee-mee-natural-nourishing-baby-soap-with-100-chamomile-olive-dermatologically-tested.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Nourish and soothe your baby's delicate skin with Mee Mee Nourishing Baby Soap. Enriched with Chamomile & Olive, which are rich in vitamins, it nourishes, moisturises and helps to keep the skin soft and healthy. Special natural formulation has been created so that no chemicals touch your delicate baby skin. It has been clinically tested to ensure safe and happy bath times.",
+   "usageInstructions": "Lather the soap on your hand and gently apply it to your baby's skin.\nRinse off. Dry and snuggle.",
+   "storageInstructions": "*Keep out of reach of children",
+   "manufacturerName": "Me N Moms Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Nourishing Baby Soap - Almond & Milk",
@@ -536,7 +616,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40157159_5-mee-mee-nourishing-baby-wellness-soap.jpg"
-    }
+    },
+    "barcode": "8907233182782"
    }
   ],
   "images": [
@@ -564,7 +645,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40157159-8_2-mee-mee-nourishing-baby-wellness-soap.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Ensure your little one's delicate skin is cared for from birth with the Nourishing Baby Wellness Soap from Mee Mee. Scientifically tested and formulated with a gentle blend of aloe, almond oil, and milk extracts, this soap gently cleanses and nourishes your baby's skin, keeping it radiant, firm, and well-moisturised. Dermatologically tested for safety, the pH-balanced, paraben-free, and tear-free formula provides a soothing and gentle cleansing experience, perfect for your baby's sensitive skin.",
+   "usageInstructions": "Baby Soap bar cleanses gently, so you can use it anytime you bathe your baby.\nLather the soap on your hand and gently apply it to your baby's skin.\nRinse off. Dry and snuggle.",
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Me N Moms Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Gentle Baby Bubble Bath",
@@ -580,7 +668,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40157076_3-mee-mee-gentle-baby-bubble-bath-white.jpg"
-    }
+    },
+    "barcode": "8907233194655"
    }
   ],
   "images": [
@@ -608,7 +697,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40157076-8_1-mee-mee-gentle-baby-bubble-bath-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "All mee mee products are carefully made to the highest safety standards. The gentle and mild formulation cleanses the skin without drying, leaving it soft and beautiful. Specially made for your baby skin it comes with a pure and gentle cleanser.",
+   "usageInstructions": "Add a walnut-size amount in your baby's tub of water and mix evenly to produce gentle bubbles.",
+   "storageInstructions": "*Keep out of reach of children",
+   "manufacturerName": "Me N Moms Pvt Ltd",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "Baby Wet Wipes - Aloe Vera & Lemon",
@@ -625,7 +721,8 @@
     "estimated": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40022149_12-mee-mee-baby-wet-wipes-lemon-fragrance.jpg"
-    }
+    },
+    "barcode": "8907233278096"
    }
   ],
   "images": [
@@ -647,7 +744,14 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40022149-6_1-mee-mee-baby-wet-wipes-lemon-fragrance.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Mee Mee Baby Wet Wipes with Aloe Vera, Lemon, and Vitamin E are specially designed to gently cleanse and refresh your baby's delicate skin. The soft, skin-friendly wipes help remove dirt and impurities while keeping skin feeling clean, soft, and moisturised. Ideal for diaper changes, mealtime clean-ups, or everyday use, they offer quick and convenient hygiene at home or on the go. The compact pack fits easily into diaper bags, making it an essential baby care companion for parents.",
+   "usageInstructions": "Open the resealable sticker\nPull out a wipe\nClose the resealable sticker",
+   "storageInstructions": "Store in a cool, dry place.",
+   "manufacturerName": "Me'N'Moms Pvt Ltd. Amar Aprt. Khar (W)",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Breathable Premium Baby Diaper Pants - XL",
@@ -663,7 +767,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40205721_4-mee-mee-breathable-premium-baby-diaper-pants-with-wetness-indicator-extra-large.jpg"
-    }
+    },
+    "barcode": "8907233349178"
    }
   ],
   "images": [
@@ -685,6 +790,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40205721-6_1-mee-mee-breathable-premium-baby-diaper-pants-with-wetness-indicator-extra-large.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "We know that nothing is more powerful than a mother's touch. No one can give your baby the kind of softness and protection you can. Inspired by mothers, Mee Mee Premium Diaper Pants use super absorbent polymers technology to make premium quality, breathable product that is exceptionally soft and cloth-like. Equipped with a unique Wetness Indicator, it helps you to know that it is time for a diaper change by simply turning green.",
+   "usageInstructions": "Wipe your baby's things and the bottom area thoroughly from front to back with Mee Mee Wipes.\nOpen and place a Mee Mee Breathable Diaper under the baby's bottom keeping the waistband below the navel.\nFasten the diaper properly around the waist using the hook and loop tabs\nAdjust the tabs on both sides for the best fit.",
+   "manufacturerName": "Me N Moms Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
  }
 ]
