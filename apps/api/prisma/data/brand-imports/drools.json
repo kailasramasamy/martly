@@ -1,0 +1,566 @@
+{
+  "brand": "Drools",
+  "manufacturer": "Drools Pet Food Pvt. Ltd.",
+  "feed": "drools-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/drools/logo-431d98d1.png",
+  "themeColor": "#1E4FA0",
+  "themeColorSecondary": "#E4007C",
+  "namePrefix": "Drools ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Chicken\\ \\&\\ Egg\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Chicken\\ \\&\\ Egg\\ Puppy\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^All\\ Life\\ Stages\\ Dry\\ Dog\\ Food\\ \\-\\ 100%\\ Vegetarian$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Focus\\ Super\\ Premium\\ Puppy\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Focus\\ Super\\ Premium\\ Starter\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Fish\\ \\&\\ Rice\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Lamb\\ \\&\\ Rice\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Meat\\ \\&\\ Milk\\ Puppy\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Turkey\\ \\&\\ Pumpkin\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Maintenance\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Optimum\\ Performance\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Ultium\\ Performance\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Ultium\\ Performance\\ Puppy\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Wet\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Liver$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Wet\\ Food\\ \\-\\ Real\\ Chicken\\ \\&\\ Liver\\ Chunks\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Veg\\ Chunks\\ in\\ Gravy\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Veg\\ Chunks\\ in\\ Gravy\\ Puppy\\ Wet\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ \\&\\ Pumpkin\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ \\&\\ Turkey\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ \\&\\ Veggies\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Biryani\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Calcium\\ Bone\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Calcium\\ Milk\\ Bone\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Calcium\\ Milk\\ Bone\\ \\-\\ Small\\ Breed$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Milk\\ Bone\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Dog\\ Treats\\ \\-\\ Chicken\\ \\&\\ Carrot$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Dog\\ Treats\\ \\-\\ Chicken\\ \\&\\ Pumpkin$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Dog\\ Treats\\ \\-\\ Chicken\\ \\&\\ Spinach$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Dog\\ Treats\\ \\-\\ Strawberry$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Liver\\ Sticks\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Sticks\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Sticks\\ Dog\\ Treats\\ \\-\\ Blueberry$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Sticks\\ Dog\\ Treats\\ \\-\\ Carrot$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Sticks\\ Dog\\ Treats\\ \\-\\ Milk$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Sticks\\ Dog\\ Treats\\ \\-\\ Strawberry$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Sticks\\ Dog\\ Treats\\ \\-\\ Value\\ Pack$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Chips\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Cod\\ Fish\\ Sandwich\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Cod\\ Roll\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Diced\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Roast\\ Strips\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Sweet\\ Potato\\ Twined\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Tender\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Sausage\\ Dog\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Fish\\ Adult\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Fish\\ Kitten\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Mackerel\\ Adult\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Mackerel\\ Kitten\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Adult\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Kitten\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Tuna\\ \\&\\ Salmon\\ Adult\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Mousse\\ Adult\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Ocean\\ Fish\\ Mousse\\ Adult\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Salmon\\ Mousse\\ Adult\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Tuna\\ Mousse\\ Adult\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Junior\\ Chicken\\ Mousse\\ Kitten\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Junior\\ Ocean\\ Fish\\ Mousse\\ Kitten\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Junior\\ Salmon\\ Mousse\\ Kitten\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Junior\\ Tuna\\ Mousse\\ Kitten\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Cat\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Cod\\ Sandwich\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Liver\\ Dice\\ Real\\ Chicken\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Tuna\\ Mini\\ Stick\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Cat\\ Treat\\ \\-\\ Real\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Cat\\ Treat\\ \\-\\ Tuna\\ \\&\\ Bonito$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Cat\\ Treat\\ \\-\\ Crab\\ \\&\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Cat\\ Treat\\ \\-\\ Salmon\\ \\&\\ Skipjack$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Lickable\\ Cat\\ Treat\\ \\-\\ Seafood\\ Medley$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Clumping\\ Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    }
+  ]
+}
