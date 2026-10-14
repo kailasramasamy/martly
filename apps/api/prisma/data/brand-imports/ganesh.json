@@ -1,0 +1,118 @@
+{
+  "brand": "Ganesh",
+  "manufacturer": "Ganesh Kitchenware",
+  "feed": "ganesh-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ganesh/logo-68a04106.png",
+  "themeColor": "#4A4A4A",
+  "themeColorSecondary": "#8BC34A",
+  "namePrefix": "Ganesh ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Quick\\ Vegetable\\ Chopper$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Vegetable\\ \\&\\ Fruit\\ Chopper$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^14\\-in\\-1\\ Multipurpose\\ Chopper$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Classic\\ Stainless\\ Steel\\ Peeler$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Handy\\ Plus\\ Stainless\\ Steel\\ Peeler$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Dori\\ Handy\\ Chopper$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Master\\ Chopper\\ \\-\\ 5\\ Blades$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Gas\\ Lighter\\ with\\ Knife\\ \\&\\ Peeler$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Stainless\\ Steel\\ Cheese\\ Grater$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Vegetable\\ Slicer\\ \\&\\ Dry\\ Fruit\\ Cutter$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^French\\ Fries\\ Cutter$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Stainless\\ Steel\\ Potato\\ Masher$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^7\\-in\\-1\\ Vegetable\\ Dicer$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    }
+  ]
+}
