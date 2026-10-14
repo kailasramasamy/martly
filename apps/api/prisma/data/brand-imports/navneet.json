@@ -1,0 +1,118 @@
+{
+  "brand": "Navneet",
+  "manufacturer": "Navneet Education Ltd.",
+  "feed": "navneet-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/navneet/logo-619d8ad9.png",
+  "themeColor": "#1E4FA8",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Navneet ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^HQ\\ 4\\ Subject\\ A5\\ Notebook\\ 250\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ A5\\ Spiral\\ Notebook\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Wiro\\ Bound\\ A5\\ Notebook\\ Single\\ Line\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Wiro\\ Bound\\ Single\\ Subject\\ Notebook\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Wiro\\ Bound\\ B5\\ Notebook\\ Single\\ Line\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Wiro\\ Bound\\ A5\\ Notebook\\ Single\\ Line\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Wiro\\ Bound\\ B5\\ Notebook\\ Single\\ Line\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Wiro\\ Bound\\ Ganesha\\ Notebook$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Five\\ Subject\\ A4\\ Notebook\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Ezee\\ Disc\\ Notebook\\ A5\\ 120\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^HQ\\ Ezee\\ Disc\\ Notebook\\ B5\\ 120\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Laxmi\\ Hard\\ Bound\\ Khata\\ Book\\ 192\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Laxmi\\ Long\\ Register$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
