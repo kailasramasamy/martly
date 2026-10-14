@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40372146_1-philips-avent-by-1mg-anti-colic-plastic-baby-feeding-bottle.jpg"
-    }
+    },
+    "barcode": "8720689009683"
    },
    {
     "title": "260ml",
@@ -50,7 +51,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372146-8_1-philips-avent-by-1mg-anti-colic-plastic-baby-feeding-bottle.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Anti-Colic Baby Bottle is specially designed to provide a more comfortable feeding experience by helping to reduce colic, discomfort, and fussiness. Its clinically proven anti-colic valve minimises air intake during feeding, while the ribbed silicone teat resists collapsing to ensure a smooth, uninterrupted feed. Made from durable, BPA-free materials, the bottle features a soft silicone teat that is gentle on your baby's mouth. Easy to assemble, clean, and use, it offers a practical and reliable feeding solution for both babies and parents.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Natural Response Feeding Bottle",
@@ -103,7 +109,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364083-8_2-philips-avent-by-1mg-scy90001-natural-response-feeding-bottle-0-3-months-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This baby bottle features Natural Response technology where the nipple releases milk only when your baby actively drinks, helping them feed at their own pace and making it easier to switch between breastfeeding and bottle feeding. Its wide, soft nipple promotes natural latch on and the ergonomic shape makes it easy to hold and clean. The anti-colic design helps reduce discomfort by keeping air away from the baby's tummy.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Natural Response Nipple - Slow (0m+)",
@@ -119,7 +130,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40364090_3-philips-avent-by-1mg-scy96202-natural-response-teat-slow-0-month-white.jpg"
-    }
+    },
+    "barcode": "8720689023979"
    }
   ],
   "images": [
@@ -147,7 +159,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364090-8_2-philips-avent-by-1mg-scy96202-natural-response-teat-slow-0-month-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Natural Response Teat SCY962/02 is designed for newborns, offering a feeding experience that closely mimics breastfeeding. Milk flows only when the baby actively sucks, allowing a natural rhythm of drinking, swallowing, and breathing. Its soft, BPA-free silicone nipple promotes easy latch-on, while the integrated anti-colic valve reduces discomfort by keeping air out. The no-drip design prevents spills, ensuring cleaner, more controlled feeding. Pack includes two teats for convenient use.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Natural Response Nipple - Medium (1m+)",
@@ -163,7 +180,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40364091_3-philips-avent-by-1mg-scy96302-natural-response-teat-medium-1-month-babies-white.jpg"
-    }
+    },
+    "barcode": "8720689024075"
    }
   ],
   "images": [
@@ -191,7 +209,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364091-8_2-philips-avent-by-1mg-scy96302-natural-response-teat-medium-1-month-babies-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Natural Response Teat SCY963/02 is designed for babies aged 1 month and above, offering a natural, breast like feeding experience. Its unique opening releases milk only when the baby actively drinks, supporting an instinctive rhythm of suck, swallow, breathe. The anti-colic valve reduces air intake, helping minimise discomfort and fussiness. Made from BPA-free silicone, the soft, flexible teat encourages a natural latch. This twin-pack ensures convenient, hygienic rotation for daily feeding.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Natural Response Nipple - Fast (3m+)",
@@ -235,7 +258,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364088-8_2-philips-avent-by-1mg-scy96402-natural-response-teats-fast-3-month-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "These are replacement Ultra Air silicone pacifiers designed with large ventilation holes to allow more air circulation around your baby's skin, helping reduce irritation and keep skin dry. The orthodontic and symmetrical shape supports natural oral development and provides soothing comfort for babies. The soft silicone teat feels gentle on gums, making these ideal for everyday soothing and calmness.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Natural Response Nipple - Extra Fast (6m+)",
@@ -279,7 +307,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364082-8_2-philips-avent-by-1mg-scy96502-natural-response-bottle-teat-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "These are replacement Natural Response bottle nipples designed to mimic a baby's natural feeding rhythm. Flow 5 suitable for babies - 6 months+ compatible with Philips Avent Natural Response bottles. Milk is released only when the baby actively sucks, making it easier to combine breast and bottle feeding. The anti-colic valve helps keep air away from the baby's tummy to reduce discomfort, and the no-drip design prevents messes during feeds.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Sterilise & Store Bottle Steriliser",
@@ -295,7 +328,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40364080_3-philips-avent-by-1mg-scf29100-bottle-sterilise-store-white.jpg"
-    }
+    },
+    "barcode": "8710103947936"
    }
   ],
   "images": [
@@ -323,7 +357,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364080-8_2-philips-avent-by-1mg-scf29100-bottle-sterilise-store-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Electric Steam Steriliser uses natural steam to eliminate 99.9% of harmful germs without chemicals. It sterilises baby bottles, nipples, breast pump parts, and accessories in around 10 minutes, making daily feeding prep quick and hygienic. Its 3-in-1 modular design lets you adjust the size based on what you're sterilising, saving space on the counter. Contents remain sterile for up to 24 hours when the lid is kept closed. Made from BPA-free materials, it's a safe, reliable, and essential solution for newborn and infant care.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Microwave Steriliser Bags",
@@ -339,7 +378,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40364092_3-philips-avent-by-1mg-microwave-sterilizer-bags-clear.jpg"
-    }
+    },
+    "barcode": "8720689004381"
    }
   ],
   "images": [
@@ -352,7 +392,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364092-3_2-philips-avent-by-1mg-microwave-sterilizer-bags-clear.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Microwave Sterilizing Bags offer a fast, convenient, and chemical free way to sterilize baby bottles, breast pumps, and feeding accessories. Using natural steam, each bag kills 99.9% of germs in as little as 90 seconds, making them ideal for home or travel. Each bag is reusable up to 20 times, featuring a safe?handling zone and a checklist to track usage. Compact and easy to store, they ensure hygiene anytime, anywhere.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "China"
+  }
  },
  {
   "title": "Classic Soft Spout Cup",
@@ -381,7 +426,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129277-3_1-avent-classic-soft-spout-cup-greenblue.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Avent Spout Cup is a sturdy and durable cup that is also easy to carry and will help in keeping your infant hydrated at all times. It is easy to handle and is an innovative way for children to learn how to drink on their own.",
+   "manufacturerName": "Universal Corporation Limited",
+   "countryOfOrigin": "China, Indonesia"
+  }
  },
  {
   "title": "Straw Cup",
@@ -397,7 +447,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40118916_2-avent-straw-cup-single-scf-79600.jpg"
-    }
+    },
+    "barcode": "8710103791157"
    }
   ],
   "images": [
@@ -413,7 +464,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40118916-4_2-avent-straw-cup-single-scf-79600.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Bendy straw cup has ergonomically designed handles which are ideal to practice drinking the first few sips from a straw, while facilitating a healthy oral development. These cups are developed by experts to be the best straw cup possible, and they are compatible with both the Philips Avent Natural and Classic+ bottle and cup range. Our complete range is designed to support your child and you in every step of the journey towards independent drinking.",
+   "usageInstructions": "Do not sterilize any part of the straw cup in the microwave without using a microwave sterilizer. Do not put the straw cup in the freezer compartment. To prevent scalding, let hot liquid cool down before you fill the straw cup.",
+   "countryOfOrigin": "China, England"
+  }
  },
  {
   "title": "Ultra Air Soother (0-6m)",
@@ -429,7 +485,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40364089_4-philips-avent-by-1mg-scf08559-ultra-air-soother-with-steriliser-case-aged-0-6-months-white.jpg"
-    }
+    },
+    "barcode": "8720689018203"
    }
   ],
   "images": [
@@ -457,7 +514,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364089-8_2-philips-avent-by-1mg-scf08559-ultra-air-soother-with-steriliser-case-aged-0-6-months-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Ultra Air Pacifier SCF085 is designed to provide a soothing, comfortable experience for babies aged 0-6 months. Built with extra large air holes on its shield, it ensures excellent ventilation, helping keep your baby's skin dry and irritation free. The pacifier is extremely lightweight, making it gentle on the baby's mouth and easy for infants to keep in place. It features a BPA free construction, ensuring safety and peace of mind for parents. The nipple is designed to support natural oral development, offering optimal comfort and acceptanceÃ¢â‚¬â€even reported to have a high acceptance rate among babies.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Ultra Air Soother (6-18m)",
@@ -473,7 +535,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40372147_1-philips-avent-by-1mg-avent-philips-pacifier-ultra-air.jpg"
-    }
+    },
+    "barcode": "8720689018029"
    }
   ],
   "images": [
@@ -501,7 +564,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372147-8_1-philips-avent-by-1mg-avent-philips-pacifier-ultra-air.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Ultra Air Soother is designed to keep your little one calm and comfortable while allowing their delicate skin to breathe. Its extra-large air holes help keep the skin dry and reduce irritation, while the lightweight shield ensures a comfortable fit. The soft, orthodontic BPA-free silicone teat supports natural oral development and provides a gentle, soothing experience. Ideal for everyday use, it combines comfort, hygiene, and practicality for both babies and parents.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  },
  {
   "title": "Single Electric Breast Pump",
@@ -517,7 +585,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40364081_4-philips-avent-by-1mg-scf32311-single-electric-breast-pump-silicon-cushion-white.jpg"
-    }
+    },
+    "barcode": "8710103998037"
    }
   ],
   "images": [
@@ -542,7 +611,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364081-7_3-philips-avent-by-1mg-scf32311-single-electric-breast-pump-silicon-cushion-white.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Philips Avent Single Electric Breast Pump is designed for comfort and efficient milk expression with a closed expression system that keeps milk out of the tubing for easier cleaning. It offers 4 stimulation and 4 expression settings to personalise your pumping sessions and includes a memory function that recalls your last used settings. The soft silicone cushion adapts to most nipple sizes for a comfortable fit, and the compact design makes it easy to use at home or on the go.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Vietnam"
+  }
  },
  {
   "title": "Essential Manual Breast Pump",
@@ -586,6 +660,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40364085-8_2-philips-avent-by-1mg-scf41711-essential-manual-breast-pump-silicone-cushion.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "This manual breast pump is designed to gently express breast milk using a soft silicone massage cushion that stimulates milk flow and an ergonomic handle for comfortable pumping at your own pace. Its lightweight and compact design makes it easy to use anywhere and clean with minimal parts. It's compatible with Avent feeding bottles so you can pump directly into them.",
+   "manufacturerName": "Philips India Limited",
+   "countryOfOrigin": "Indonesia"
+  }
  }
 ]
