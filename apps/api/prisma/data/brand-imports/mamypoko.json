@@ -1,0 +1,206 @@
+{
+  "brand": "MamyPoko (Unicharm)",
+  "manufacturer": "Unicharm India Pvt. Ltd.",
+  "feed": "mamypoko-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mamypoko/logo-4ea26ae6.png",
+  "themeColor": "#1D3F8F",
+  "themeColorSecondary": "#F39800",
+  "namePrefix": "MamyPoko ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Pants\\ Extra\\ Absorb\\ \\-\\ New\\ Born$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Extra\\ Absorb\\ \\-\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Extra\\ Absorb\\ \\-\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Extra\\ Absorb\\ \\-\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Extra\\ Absorb\\ \\-\\ XL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Extra\\ Absorb\\ \\-\\ XXL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Extra\\ Absorb\\ \\-\\ XXXL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Standard\\ \\-\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Standard\\ \\-\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Standard\\ \\-\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ Standard\\ \\-\\ XL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ All\\ Night\\ Absorb\\ \\-\\ New\\ Born$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ All\\ Night\\ Absorb\\ \\-\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ All\\ Night\\ Absorb\\ \\-\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ All\\ Night\\ Absorb\\ \\-\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ All\\ Night\\ Absorb\\ \\-\\ XL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Pants\\ All\\ Night\\ Absorb\\ \\-\\ XXL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ All\\ Night\\ Pants\\ with\\ Coco\\ Care\\ \\-\\ New\\ Born$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ All\\ Night\\ Pants\\ with\\ Coco\\ Care\\ \\-\\ Small$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ All\\ Night\\ Pants\\ with\\ Coco\\ Care\\ \\-\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ All\\ Night\\ Pants\\ with\\ Coco\\ Care\\ \\-\\ Large$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ All\\ Night\\ Pants\\ with\\ Coco\\ Care\\ \\-\\ XL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Premium\\ All\\ Night\\ Pants\\ with\\ Coco\\ Care\\ \\-\\ XXL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Extra\\ Clean\\ Wipes$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Wipes"
+      ]
+    }
+  ]
+}
