@@ -1,0 +1,528 @@
+{
+  "brand": "Tota",
+  "manufacturer": "Tota Brand (Shri Bhagwati Enterprises)",
+  "feed": "tota-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tota/logo-65ee5321.png",
+  "themeColor": "#E8501A",
+  "themeColorSecondary": "#2E9E3E",
+  "namePrefix": "Tota ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Tota Herbal Gulal (Pack of 5 colours)": "Premium Herbal Gulal"
+  },
+  "rules": [
+    {
+      "match": "^Premium\\ Herbal\\ Gulal$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Passion\\ Herbal\\ Gulal\\ Neon\\ Blue$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Passion\\ Herbal\\ Gulal\\ Neon\\ Orange$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Passion\\ Herbal\\ Gulal\\ Neon\\ Pink$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Passion\\ Herbal\\ Gulal\\ Neon\\ Yellow$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Blue\\ Gulal\\ Bomb$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Orange\\ Gulal\\ Bomb$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Glitter\\ Gulal\\ Red\\ \\&\\ Purple$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Glitter\\ Gulal\\ Yellow\\ \\&\\ Pink$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Glitter\\ Gulal\\ Yellow\\ \\&\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Gulal\\ Powders\\ Assorted\\ Colours$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Holi\\ Colour\\ Gulal\\ Lite\\ Gift\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Shiny\\ Gulal\\ Assorted\\ Colours$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Raw\\ Organic\\ Gulal$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Gulal\\ Luxury\\ Assorted\\ Colours$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^VIP\\ Herbal\\ Water\\ Colour\\ Pink$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Mini\\ Colour\\ Thunder\\ Herbal\\ Pink\\ Gulal\\ Spray$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Mini\\ Colour\\ Thunder\\ Herbal\\ Red\\ Gulal\\ Spray$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Mini\\ Colour\\ Thunder\\ Herbal\\ Yellow\\ Gulal\\ Spray$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Thunder\\ Pink\\ Big\\ Gulal\\ Spray$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Thunder\\ Red\\ Big\\ Gulal\\ Spray$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Gulal\\ Popper\\ Assorted\\ Colours$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Rafel\\ Tricolour\\ Colour\\ Popper\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Colour\\ for\\ Floor\\ Decoration$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Colours\\ Pouches$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Fancy\\ Box$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Squeeze\\ Mix$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Colours\\ Assorted\\ Smooth\\ \\&\\ Fine$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Colour\\ Pack\\ of\\ 5$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Colours\\ Pack\\ of\\ 10$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Art\\ Colour\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Rang\\ Colour\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Powder\\ Assorted\\ Colours$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Easy\\ Draw\\ Rangoli$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Tricolour\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Glitter\\ Rangoli$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Silver\\ \\&\\ Golden\\ Rangoli$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^White\\ Rangoli\\ Outliner$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Diwali\\ Rangoli\\ Blue$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Diwali\\ Rangoli\\ White$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Rangoli\\ Colour\\ Powder\\ with\\ Maker\\ \\&\\ Stencil$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Rangoli Colours"
+      ]
+    },
+    {
+      "match": "^Allure\\ Decorative\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Allure\\ Decorative\\ Diya\\ Blue\\ \\&\\ Pink$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Allure\\ Decorative\\ Diya\\ Multicolour$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Colour\\ Diya\\ Small$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Colour\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Colour\\ Diya\\ Design\\ 1$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Colour\\ Diya\\ Design\\ 2$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Colour\\ Diya\\ Premium$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Colour\\ Diya\\ Model\\ 1$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Colour\\ Diya\\ Model\\ 2$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Pure\\ Cow\\ Ghee\\ Diyas$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee\\ Akhand\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Pure\\ Cow\\ Ghee\\ Batti\\ Cotton\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Dhoop\\ Cones$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Hawan\\ Samagri$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Sambrani\\ Cup$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Afgani\\ Guggal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Dark\\ Kumkum\\ Roli$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Pooja\\ Sindoor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Tika\\ Paste$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Kalawa\\ Moli$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Maha\\ Laxmi\\ Puja\\ Kit$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    },
+    {
+      "match": "^Maa\\ Durga\\ Puja\\ Kit$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Gift Packs & Hampers"
+      ]
+    }
+  ]
+}
