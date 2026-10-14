@@ -36,6 +36,12 @@ chip and the tile's products below.
    - editing the headline (EN/TA);
    - editing each tile's labels and subcategories;
    - Regenerate (`POST /collections/:id/regenerate-hero`);
+   - Replace any single image with an upload (multipart `file`, max 10 MB): the hero background
+     (`PUT /collections/:id/hero/image`), a tile (`PUT /collections/:id/tiles/:tileId/image`), or a search banner
+     (`PUT /collections/:id/banner-image/:lang`, where `lang` is `en`/`ta`, or `art` for a text-free banner).
+     Uploads go through the same preparation as generated art: the background is cropped to 2:3 from the top and
+     re-measured (ornament depth capped at 40%, fade colour, headline contrast); tiles are trimmed to fill the card;
+     banners are cropped to 2:1 and kept in step with any legacy banner rows;
    - Remove (`DELETE /collections/:id/hero`).
 5. **Backfill**: `npx tsx prisma/backfill-festive-heroes.ts` paints heroes for live and upcoming festival collections
    that don't have one. To target prod, prefix it with `DATABASE_URL=...`.

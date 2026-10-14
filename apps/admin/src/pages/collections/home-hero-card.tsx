@@ -4,6 +4,7 @@ import { DeleteOutlined, HomeOutlined, ReloadOutlined, SaveOutlined } from "@ant
 import { isAxiosError } from "axios";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
+import { ReplaceImageButton } from "./replace-image-button";
 
 interface HeroTile {
   id: string;
@@ -18,7 +19,7 @@ interface HomeHeroRecord {
   id: string;
   heroTitle: string | null;
   heroImageUrl: string | null;
-  heroTheme: { background: string; title: string; dark: boolean } | null;
+  heroTheme: { background: string; title: string; dark: boolean; ornamentDepth: number } | null;
   translations: { ta?: { heroTitle?: string } } | null;
   tiles: HeroTile[];
 }
@@ -33,6 +34,8 @@ interface SubcategoryGroup {
 }
 
 const PREVIEW_WIDTH = 300;
+const PREVIEW_HEIGHT = PREVIEW_WIDTH * 1.5;
+const TILE_THUMB = 44;
 
 function buildSubcategoryGroups(departments: TreeDepartment[]): SubcategoryGroup[] {
   return departments
@@ -52,39 +55,39 @@ function useSubcategoryGroups() {
   return groups;
 }
 
+// Mirrors the app: headline tucked under the measured ornament, tiles as gradients of the festival's wash
 function HeroPreview({ record }: { record: HomeHeroRecord }) {
-  const titleColor = record.heroTheme?.title ?? "#ffffff";
+  const theme = record.heroTheme;
+  const wash = theme?.background ?? "#f8fafc";
   return (
     <div
       style={{
-        position: "relative",
         width: PREVIEW_WIDTH,
-        aspectRatio: "2 / 3",
+        height: PREVIEW_HEIGHT,
         flexShrink: 0,
         borderRadius: 16,
         overflow: "hidden",
-        background: `${record.heroTheme?.background ?? "#0f766e"} url(${record.heroImageUrl}) top / cover no-repeat`,
+        paddingTop: Math.max(8, (theme?.ornamentDepth ?? 0.25) * PREVIEW_HEIGHT),
+        background: `${wash} url(${record.heroImageUrl}) top / cover no-repeat`,
       }}
     >
       <div
         style={{
-          position: "absolute", top: "36%", left: 0, right: 0, transform: "translateY(-50%)",
-          textAlign: "center", padding: "0 16px", color: titleColor,
-          fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 26, fontWeight: 700, lineHeight: 1.15,
+          textAlign: "center", padding: "0 16px 8px", color: theme?.title, fontVariant: "small-caps",
+          fontFamily: "Georgia, 'Times New Roman', serif", fontSize: 20, fontWeight: 700, lineHeight: 1.2,
         }}
       >
         {record.heroTitle}
       </div>
-      <div
-        style={{
-          position: "absolute", left: 10, right: 10, bottom: 10,
-          display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 6,
-        }}
-      >
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 6, padding: "0 10px" }}>
         {record.tiles.map((tile) => (
           <div
             key={tile.id}
-            style={{ background: "rgba(255,255,255,0.62)", borderRadius: 10, padding: 6, textAlign: "center" }}
+            style={{
+              borderRadius: 10, padding: 6, textAlign: "center",
+              border: `1px solid color-mix(in srgb, ${wash}, black 16%)`,
+              background: `linear-gradient(color-mix(in srgb, ${wash}, white 70%), ${wash}, color-mix(in srgb, ${wash}, black 10%))`,
+            }}
           >
             <div style={{ fontSize: 11, fontWeight: 600, color: "#0f172a", lineHeight: 1.2 }}>{tile.title}</div>
             {tile.imageUrl && (
@@ -140,12 +143,13 @@ function TitleEditor({ record, run, busy }: { record: HomeHeroRecord; run: Retur
   );
 }
 
-function TileRow({ collectionId, tile, groups, run, busy }: {
+function TileRow({ collectionId, tile, groups, run, busy, onChanged }: {
   collectionId: string;
   tile: HeroTile;
   groups: SubcategoryGroup[];
   run: ReturnType<typeof useAction>["run"];
   busy: string | null;
+  onChanged: () => void;
 }) {
   const [title, setTitle] = useState(tile.title);
   const [titleTa, setTitleTa] = useState(tile.translations?.ta?.title ?? "");
@@ -166,6 +170,12 @@ function TileRow({ collectionId, tile, groups, run, busy }: {
 
   return (
     <Space align="start" wrap style={{ width: "100%" }}>
+      {tile.imageUrl && <img src={tile.imageUrl} alt="" style={{ width: TILE_THUMB, height: TILE_THUMB, objectFit: "contain" }} />}
+      <ReplaceImageButton
+        path={`/collections/${collectionId}/tiles/${tile.id}/image`}
+        hint="A PNG or WebP with a transparent background works best; empty margins are trimmed automatically."
+        onReplaced={onChanged}
+      />
       <Input style={{ width: 150 }} placeholder="Title" value={title} maxLength={30} onChange={(e) => setTitle(e.target.value)} />
       <Input style={{ width: 150 }} placeholder="Tamil title" value={titleTa} maxLength={30} onChange={(e) => setTitleTa(e.target.value)} />
       <Select
@@ -234,12 +244,19 @@ export const HomeHeroCard = ({ record, onChanged }: { record: HomeHeroRecord; on
   return (
     <Card title={sectionTitle(<HomeOutlined />, "Home Hero")} size="small" extra={<HeroActions busy={busy} onRegenerate={regenerate} onRemove={remove} />} style={{ marginTop: 16 }}>
       <Space size={24} align="start" wrap>
-        <HeroPreview record={record} />
+        <Space direction="vertical" size={8}>
+          <HeroPreview record={record} />
+          <ReplaceImageButton
+            path={`/collections/${record.id}/hero/image`}
+            hint="A tall 2:3 image with decoration at the top and a plain colour below. The headline position, fade colour and headline contrast are re-measured from it."
+            onReplaced={onChanged}
+          />
+        </Space>
         <Space direction="vertical" size={16} style={{ minWidth: 320 }}>
           <TitleEditor key={`${record.heroTitle}|${record.translations?.ta?.heroTitle}`} record={record} run={run} busy={busy} />
           <Typography.Text strong>Tiles</Typography.Text>
           {record.tiles.map((tile) => (
-            <TileRow key={tile.id} collectionId={record.id} tile={tile} groups={groups} run={run} busy={busy} />
+            <TileRow key={tile.id} collectionId={record.id} tile={tile} groups={groups} run={run} busy={busy} onChanged={onChanged} />
           ))}
         </Space>
       </Space>

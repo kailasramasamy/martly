@@ -19,7 +19,7 @@ const SAMPLE_WIDTH = 96;
 const ORNAMENT_DISTANCE = 48;
 // Self-checks so festivals go live without anyone eyeballing the art: deeper ornament would push the tiles
 // below the fold, a mostly opaque tile means the model ignored the transparent background
-const MAX_ORNAMENT_DEPTH = 0.4;
+export const MAX_ORNAMENT_DEPTH = 0.4;
 const MIN_TRANSPARENT_SHARE = 0.15;
 const ATTEMPTS = 2;
 const MIN_CONTRAST = 4.5;
@@ -55,7 +55,17 @@ async function renderHeroBackground(scene: string, washColor: string) {
     `everything below fades into a smooth, plain, even wash of ${washColor} that reaches the bottom edge untouched,`,
     "because headline text and shopping tiles sit on it. No text, letters, numbers, logos or people anywhere.",
   ].join("\n"), "1024x1536", false);
-  return sharp(image).resize(BACKGROUND_WIDTH, BACKGROUND_HEIGHT, { fit: "cover" }).webp({ quality: 80 }).toBuffer();
+  return prepareHeroBackground(image);
+}
+
+/** Any hero background, generated or uploaded, cropped to the 2:3 WebP the app lays out against. */
+export function prepareHeroBackground(image: Buffer) {
+  return sharp(image).resize(BACKGROUND_WIDTH, BACKGROUND_HEIGHT, { fit: "cover", position: "top" }).webp({ quality: 80 }).toBuffer();
+}
+
+/** Any tile illustration, generated or uploaded, trimmed of empty margins so it fills its card. */
+export function prepareTileArt(image: Buffer) {
+  return sharp(image).trim().resize(TILE_SIZE, TILE_SIZE, { fit: "inside" }).webp({ quality: 82, alphaQuality: 90 }).toBuffer();
 }
 
 async function renderTileArt(items: string) {
@@ -80,7 +90,7 @@ export async function paintTile(items: string) {
   for (let attempt = 1; attempt < ATTEMPTS && (await transparentShare(image)) < MIN_TRANSPARENT_SHARE; attempt++) {
     image = await renderTileArt(items);
   }
-  return sharp(image).trim().resize(TILE_SIZE, TILE_SIZE, { fit: "inside" }).webp({ quality: 82, alphaQuality: 90 }).toBuffer();
+  return prepareTileArt(image);
 }
 
 /** The hero background and its theme, repainted once if the ornament hangs so deep the tiles would sink. */
@@ -148,7 +158,7 @@ async function ornamentDepth(background: Buffer) {
 }
 
 /** Samples the fade colour, a legible headline colour, and how far down the headline can start. */
-async function heroTheme(background: Buffer, titleColor: string): Promise<HeroTheme> {
+export async function heroTheme(background: Buffer, titleColor: string): Promise<HeroTheme> {
   const band = Math.round(BACKGROUND_HEIGHT * EDGE_BAND);
   const { channels } = await sharp(background)
     .extract({ left: 0, top: BACKGROUND_HEIGHT - band, width: BACKGROUND_WIDTH, height: band })

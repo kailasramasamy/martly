@@ -1,4 +1,4 @@
-import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
+import type { FastifyInstance } from "fastify";
 import { Prisma } from "../../../generated/prisma/client.js";
 import {
   createCollectionSchema, updateCollectionHeroSchema, updateCollectionSchema, updateCollectionTileSchema,
@@ -9,22 +9,12 @@ import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
 import { isCurationConfigured, regenerateBanner, regenerateHero } from "../../services/seasonal/index.js";
 import { saveHero, withHeroTranslation } from "../../services/seasonal/hero.js";
-
-const ADMINS = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")];
-
-// ORG_ADMIN may only touch its own org's collections; sends the error reply and returns undefined otherwise
-async function ownCollection(app: FastifyInstance, request: FastifyRequest<{ Params: { id: string } }>, reply: FastifyReply) {
-  const collection = await app.prisma.collection.findUnique({
-    where: { id: request.params.id },
-    include: { festivalEvent: { select: { name: true, guidance: true } } },
-  });
-  if (!collection) return void reply.notFound("Collection not found");
-  const user = getOrgUser(request);
-  if (user.role === "ORG_ADMIN" && collection.organizationId !== user.organizationId) return void reply.forbidden("Access denied");
-  return collection;
-}
+import { ADMINS, ownCollection } from "./access.js";
+import { collectionImageRoutes } from "./images.js";
 
 export async function collectionRoutes(app: FastifyInstance) {
+  await app.register(collectionImageRoutes);
+
   // List collections
   app.get("/", { preHandler: [authenticate] }, async (request) => {
     const { page = 1, pageSize = 50, q } = request.query as {

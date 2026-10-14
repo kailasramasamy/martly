@@ -45,10 +45,12 @@ export async function renderBanner(scene: string, copy?: BannerCopy): Promise<Bu
   });
   const b64 = response.data?.[0]?.b64_json;
   if (!b64) throw new BannerArtError(`Image model ${IMAGE_MODEL} returned no image`);
-  return sharp(Buffer.from(b64, "base64"))
-    .resize(OUT_WIDTH, OUT_HEIGHT, { fit: "cover", position: "centre" })
-    .webp({ quality: 80 })
-    .toBuffer();
+  return prepareBanner(Buffer.from(b64, "base64"));
+}
+
+/** Any banner image, generated or uploaded, cropped to the 2:1 WebP the app expects. */
+export function prepareBanner(image: Buffer) {
+  return sharp(image).resize(OUT_WIDTH, OUT_HEIGHT, { fit: "cover", position: "centre" }).webp({ quality: 80 }).toBuffer();
 }
 
 export async function uploadBanner(image: Buffer, slug: string, lang: string) {

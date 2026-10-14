@@ -4,6 +4,7 @@ import { PictureOutlined, ReloadOutlined } from "@ant-design/icons";
 import { isAxiosError } from "axios";
 import { axiosInstance } from "../../providers/data-provider";
 import { sectionTitle } from "../../theme";
+import { ReplaceImageButton } from "./replace-image-button";
 
 interface AiBannerRecord {
   id: string;
@@ -57,6 +58,13 @@ export const AiBannerCard = ({ record, onRegenerated }: { record: AiBannerRecord
             <div key={lang} style={{ width: THUMB_WIDTH }}>
               <Image src={url} width={THUMB_WIDTH} style={{ borderRadius: 8 }} />
               <div style={{ marginTop: 6 }}>
+                <ReplaceImageButton
+                  path={`/collections/${record.id}/banner-image/${lang}`}
+                  hint={lang === "art"
+                    ? "Cropped to a wide 2:1 banner. Keep it free of text; the app draws the title on top."
+                    : "Cropped to a wide 2:1 banner. Include the title in the image; the app won't draw it on top."}
+                  onReplaced={onRegenerated}
+                />{" "}
                 <Tag>{LANG_LABELS[lang] ?? lang}</Tag>
                 {copy?.title && <Typography.Text strong>{copy.title}</Typography.Text>}
               </div>
