@@ -1,0 +1,174 @@
+{
+  "brand": "Camlin",
+  "manufacturer": "Kokuyo Camlin Ltd.",
+  "feed": "camlin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/camlin/logo-3944a3c8.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Camlin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Supreme\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Supreme\\ HD\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Drawing\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Spin\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Highlighters$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Cover\\ It\\ Correction\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Permanent\\ Marker\\ \\-\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Permanent\\ Marker\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Permanent\\ Marker\\ \\-\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Permanent\\ Marker\\ \\-\\ Green$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Fine\\ Tip\\ OHP\\ Marker\\ \\-\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^OHP\\ Marker\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^OHP\\ Marker\\ \\-\\ Green$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Whiteboard\\ Marker\\ \\-\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Whiteboard\\ Marker\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Whiteboard\\ Markers\\ \\-\\ Black\\ \\&\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Whiteboard\\ Marker\\ Box\\ \\-\\ Refillable$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Whiteboard\\ Marker\\ Ink\\ \\-\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Whiteboard\\ Marker\\ Ink\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^White\\ Glue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
