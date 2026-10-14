@@ -1,0 +1,438 @@
+{
+  "brand": "iD Fresh",
+  "manufacturer": "iD Fresh Food (India) Pvt. Ltd.",
+  "feed": "id-fresh-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/id-fresh/logo-e87d37f3.png",
+  "themeColor": "#12A08C",
+  "themeColorSecondary": "#0B5D52",
+  "namePrefix": "iD ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Idly\\ \\&\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Protein\\ Idly\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Organic\\ Idly\\ \\&\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Multigrain\\ Idly\\ \\&\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Millet\\ Idly\\ \\&\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Mallige\\ Idly\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Superr\\ Idli\\ Dosa\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Appam\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Moong\\ Dal\\ Chilla\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Idly\\ Ready\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Protein\\ Idly\\ Ready\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Dosa\\ Ready\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Rava\\ Dosa\\ Ready\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Rava\\ Idly\\ Ready\\ Mix$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Idli & Dosa Batter"
+      ]
+    },
+    {
+      "match": "^Classic\\ Pancake\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Choco\\ Pancake\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Eggless\\ Brownie\\ Batter$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Baking & Dessert Mixes"
+      ]
+    },
+    {
+      "match": "^Malabar\\ Parota$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Wheat\\ Lachha\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Whole\\ Wheat\\ Chapati$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Homestyle\\ Whole\\ Wheat\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Chilli\\ Parota$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Peri\\-Peri\\ Parota$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Nool\\ Parota$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Protein\\-Rich\\ Parota$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Protein\\-Rich\\ Chapati$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Ragi\\ Millet\\ Roti$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Thepla$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Puran\\ Poli\\ \\-\\ Chana\\ Dal$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Puran\\ Poli\\ \\-\\ Toor\\ Dal$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Aloo\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Onion\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Paneer\\ Paratha$",
+      "path": [
+        "Frozen Foods",
+        "Frozen Snacks",
+        "Frozen Paratha & Roti"
+      ]
+    },
+    {
+      "match": "^Coconut\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Coriander\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Peanut\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Tomato\\ Chutney$",
+      "path": [
+        "Grocery & Staples",
+        "Pickles & Chutney",
+        "Chutney"
+      ]
+    },
+    {
+      "match": "^Sambar$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Ready to Eat & Cook",
+        "Ready to Eat Meals"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Thick\\ Curd\\ \\-\\ Pouch$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Thick\\ Curd\\ \\-\\ Cup$",
+      "path": [
+        "Dairy",
+        "Curd & Yogurt",
+        "Fresh Curd (Dahi)"
+      ]
+    },
+    {
+      "match": "^Soft\\ \\&\\ Creamy\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^High\\ Protein\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Freshly\\ Frozen\\ Mango\\ Pulp$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Freshly\\ Frozen\\ Tender\\ Coconut\\ Pulp$",
+      "path": [
+        "Frozen Foods",
+        "Ice Cream & Desserts",
+        "Frozen Desserts"
+      ]
+    },
+    {
+      "match": "^Instant\\ Coffee\\ \\-\\ Chicory\\ Mixture$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Instant Coffee"
+      ]
+    },
+    {
+      "match": "^Instant\\ Filter\\ Coffee\\ Liquid\\ \\-\\ Bold$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Instant\\ Filter\\ Coffee\\ Liquid\\ \\-\\ Strong$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^Traditional\\ Filter\\ Coffee\\ Decoction$",
+      "path": [
+        "Beverages",
+        "Coffee",
+        "Filter Coffee Powder"
+      ]
+    },
+    {
+      "match": "^All\\ In\\ One\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Corn\\ Flakes\\ Mixture$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Mixture & Chivda"
+      ]
+    },
+    {
+      "match": "^Butter\\ Murukku$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Murukku & Thattai"
+      ]
+    },
+    {
+      "match": "^Masala\\ Oats\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Papad Chips"
+      ]
+    },
+    {
+      "match": "^Masala\\ Ragi\\ Chips$",
+      "path": [
+        "Snacks & Packaged Foods",
+        "Namkeen & Savoury Snacks",
+        "Papad Chips"
+      ]
+    }
+  ]
+}
