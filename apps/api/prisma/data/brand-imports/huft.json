@@ -1,0 +1,150 @@
+{
+  "brand": "HUFT",
+  "manufacturer": "Heads Up For Tails (Pet Lifestyle & Retail Pvt. Ltd.)",
+  "feed": "huft-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/huft/logo-c97b29eb.png",
+  "themeColor": "#E5633F",
+  "themeColorSecondary": "#1E1E1E",
+  "namePrefix": "HUFT ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Bubble\\ Up\\ Long\\ \\&\\ Lush\\ Dog\\ Shampoo\\ \\-\\ Pomegranate\\ \\&\\ Aloe\\ Vera$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Pet Shampoo"
+      ]
+    },
+    {
+      "match": "^Flea\\ \\&\\ Tick\\ Relief\\ Natural\\ Dog\\ Shampoo\\ \\-\\ Lavender\\ \\&\\ Rosemary$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Pet Shampoo"
+      ]
+    },
+    {
+      "match": "^Chewbarks\\ Roasted\\ Lamb\\ Soft\\ Chew\\ Strips\\ Dog\\ Treat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Natural\\ Chews\\ Dehydrated\\ Chicken\\ Feet\\ Dog\\ Treat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Natural\\ Chews\\ Dehydrated\\ Chicken\\ Necks\\ Dog\\ Treat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Sara's\\ Chicken\\ Jerky\\ Dog\\ Treat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Yakies\\ Chew\\ Bone\\ Dog\\ Treat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Yummy\\ In\\ My\\ Tummy\\ Chicken\\ \\&\\ Cheese\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Yummy\\ In\\ My\\ Tummy\\ Chicken\\ Liver\\ Dog\\ Cookies$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Yummy\\ In\\ My\\ Tummy\\ Pumpkin\\ \\&\\ Carrot\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Crunchies\\ Cat\\ Treat$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Sara's\\ Wholesome\\ Grain\\ Free\\ Chicken\\ \\&\\ Turkey\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Sara's\\ Wholesome\\ Grain\\ Free\\ Lamb\\ \\&\\ Apple\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Sara's\\ Wholesome\\ Classic\\ Chicken\\ \\&\\ Brown\\ Rice\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Sara's\\ Wholesome\\ Classic\\ Paneer\\ \\&\\ Veggies\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Sara's\\ Wholesome\\ Chicken\\ Biryani\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Sara's\\ Wholesome\\ Mutton\\ Biryani\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    }
+  ]
+}
