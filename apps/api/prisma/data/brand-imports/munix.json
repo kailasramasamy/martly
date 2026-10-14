@@ -1,0 +1,86 @@
+{
+  "brand": "Munix",
+  "manufacturer": "Munix Industries",
+  "feed": "munix-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/munix/logo-84ee890a.png",
+  "themeColor": "#F26522",
+  "themeColorSecondary": "#1F3A93",
+  "namePrefix": "Munix ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^AS\\-5143P\\ Scissors\\ \\-\\ 10\\.9\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^AS\\-5170P\\ Scissors\\ \\-\\ 17\\.8\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^AS\\-5250P\\ Scissors$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^GS\\-4236\\ Scissors\\ \\-\\ 91\\ mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^KR\\-9150\\ Scissors\\ \\-\\ 126\\ mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^KR\\-9153\\ Scissors\\ \\-\\ 13\\.8\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^SL\\-1160\\ All\\-Purpose\\ Office\\ Scissors$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^SL\\-1143\\ Stainless\\ Steel\\ Scissors\\ \\-\\ Small$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^SL\\-1150C\\ Scissors\\ \\-\\ 12\\.5\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    }
+  ]
+}
