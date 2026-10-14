@@ -1,0 +1,384 @@
+{
+  "brand": "Pedigree (Mars)",
+  "manufacturer": "Mars International India Pvt. Ltd.",
+  "feed": "pedigree-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pedigree/logo-270e35c5.png",
+  "themeColor": "#FFD100",
+  "themeColorSecondary": "#005EB8",
+  "namePrefix": "Pedigree ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Pedigree DentaStix - Medium Dogs": "DentaStix - Medium Breed"
+  },
+  "rules": [
+    {
+      "match": "^Adult\\ Dry\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Vegetables$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Dry\\ Food\\ \\-\\ Chicken\\ \\&\\ Milk$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Dog\\ Food\\ \\-\\ Vegetarian$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Dog\\ Food\\ \\-\\ Meat\\ \\&\\ Rice$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Dog\\ Food\\ \\-\\ Chicken,\\ Egg\\ \\&\\ Rice$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Dog\\ Food\\ \\-\\ Chicken\\ Biryani\\ Flavour$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Healthy\\ Belly\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Small\\ Breed\\ Dry\\ Dog\\ Food\\ \\-\\ Lamb\\ \\&\\ Vegetables$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Senior\\ Dry\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Rice$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Dry\\ Food\\ \\-\\ Meat\\ \\&\\ Milk$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Small\\ Breed\\ Dry\\ Food\\ \\-\\ Lamb\\ \\&\\ Milk$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^PRO\\ Adult\\ Large\\ Breed\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^PRO\\ Adult\\ Small\\ Breed\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^PRO\\ Mother\\ \\&\\ Pup\\ Starter\\ \\-\\ Large\\ Breed$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^PRO\\ Mother\\ \\&\\ Pup\\ Starter\\ \\-\\ Small\\ Breed$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^PRO\\ Puppy\\ Large\\ Breed\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^PRO\\ Puppy\\ Small\\ Breed\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Liver\\ Chunks\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Dog\\ Food\\ \\-\\ Grilled\\ Liver\\ Chunks\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Dog\\ Food\\ \\-\\ Roasted\\ Lamb\\ Chunks\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Wet\\ Dog\\ Food\\ \\-\\ Chicken\\ Chunks\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Wet\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Liver\\ Chunks\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Wet\\ Dog\\ Food\\ \\-\\ Lamb\\ Chunks\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Wet\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Liver\\ Loaf\\ with\\ Vegetables$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Biscrok\\ Biscuits\\ \\-\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Biscrok\\ Biscuits\\ \\-\\ Lamb$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Biscrok\\ Biscuits\\ \\-\\ Milk\\ \\&\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^DentaStix\\ \\-\\ Small\\ Breed$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^DentaStix\\ \\-\\ Medium\\ Breed$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^DentaStix\\ \\-\\ Large\\ Breed$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Jumbone\\ Mini\\ \\-\\ Chicken\\ \\&\\ Lamb$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Meat\\ Jerky\\ Stix\\ \\-\\ Grilled\\ Liver$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Ranchos\\ Super\\ Bones\\ \\-\\ Chicken\\ \\&\\ Milk$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Ranchos\\ Spiral\\ Wrap$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Rodeo\\ Dog\\ Treat\\ \\-\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Rodeo\\ Duos\\ Dog\\ Treat\\ \\-\\ Chicken\\ \\&\\ Bacon$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Schmackos\\ Stix\\ \\-\\ Grilled\\ Liver$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Schmackos\\ Stix\\ Puppy\\ \\-\\ Milk\\ \\&\\ Egg$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Bites\\ Puppy\\ Treat\\ \\-\\ Chicken\\ \\&\\ Veggies$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Jerky\\ \\-\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Jerky\\ \\-\\ Grilled\\ Liver$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Jerky\\ \\-\\ Roasted\\ Lamb$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Jerky\\ \\-\\ Carrot\\ \\&\\ Herb$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Jerky\\ \\-\\ Cheese\\ \\&\\ Spinach$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Jerky\\ \\-\\ Goat\\ Milk$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Minis\\ Cubes\\ \\-\\ Chicken\\ \\&\\ Duck$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    }
+  ]
+}
