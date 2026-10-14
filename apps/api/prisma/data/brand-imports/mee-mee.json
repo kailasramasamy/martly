@@ -1,0 +1,144 @@
+{
+  "brand": "Mee Mee",
+  "manufacturer": "Me N Moms Pvt. Ltd.",
+  "feed": "mee-mee-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mee-mee/logo-13c24fed.png",
+  "themeColor": "#00669A",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Mee Mee ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Mee Mee Premium Glass Feeding Bottle": "Premium Glass Feeding Bottle"
+  },
+  "rules": [
+    {
+      "match": "^Eazy\\ Flo\\ Premium\\ Baby\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Premium\\ Glass\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Baby\\ Feeding\\ Steel\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Anti\\-Colic\\ Easy\\ Flo\\ Silicone\\ Teat\\ \\-\\ Large$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Spout\\ \\&\\ Straw\\ Sipper\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Easy\\ Grip\\ 360\\ Degree\\ Trainer\\ Sipper\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Baby\\ Silicone\\ Pacifier$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Baby\\ Fruit\\ \\&\\ Food\\ Nibbler$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Washable\\ Cotton\\ Maternity\\ Breast\\ Pads$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Fresh\\ Feel\\ Baby\\ Powder$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Powder"
+      ]
+    },
+    {
+      "match": "^Mild\\ Baby\\ Shampoo$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Shampoo"
+      ]
+    },
+    {
+      "match": "^Natural\\ Nourishing\\ Baby\\ Soap\\ \\-\\ Chamomile\\ \\&\\ Olive$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Nourishing\\ Baby\\ Soap\\ \\-\\ Almond\\ \\&\\ Milk$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Gentle\\ Baby\\ Bubble\\ Bath$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Baby\\ Wet\\ Wipes\\ \\-\\ Aloe\\ Vera\\ \\&\\ Lemon$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Wipes"
+      ]
+    },
+    {
+      "match": "^Breathable\\ Premium\\ Baby\\ Diaper\\ Pants\\ \\-\\ XL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    }
+  ]
+}
