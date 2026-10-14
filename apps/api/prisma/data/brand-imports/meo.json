@@ -1,0 +1,30 @@
+{
+  "brand": "Me-O",
+  "manufacturer": "Perfect Companion Group Co. Ltd.",
+  "feed": "meo-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/meo/logo-08a81a1a.png",
+  "themeColor": "#E30613",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Me-O ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Vegetable$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Tuna$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    }
+  ]
+}

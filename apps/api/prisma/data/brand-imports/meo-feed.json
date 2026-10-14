@@ -1,0 +1,67 @@
+[
+ {
+  "title": "Adult Dry Cat Food - Chicken & Vegetable",
+  "handle": "adult-dry-cat-food-chicken-vegetable",
+  "vendor": "Me-O",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40131919_1-meo-pet-food-chicken-vegetable.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40131919_1-meo-pet-food-chicken-vegetable.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "This pet food by Me-o is made of whole grain cereal, chicken meat, vegetable protein, and fish meal. It contains taurine which is essential for the proper functioning of the eyes. It also contains omega 3 and 6 which helps to nourish coat and skin and the low sodium formula helps to decrease the risk of high blood pressure, prevents kidney and heart diseases. High in vitamin C, D, and phosphorus, this food will help boost the immunity system, strengthen the teeth and bone",
+   "ingredients": "Wholegrain Cereals, poultry, meal, vegetable protien,iodized salt,vitamins and minerals, antioxidants,food coloruing",
+   "usageInstructions": "To avoid indigestion associated with abrupt changes, slowly replace increasing quantities of old food with Me-O Cat food untill all the old food has been completely replaced in one week",
+   "manufacturerName": "Perfect Companion Group co. LTD",
+   "countryOfOrigin": "Thailand"
+  }
+ },
+ {
+  "title": "Adult Dry Cat Food - Tuna",
+  "handle": "adult-dry-cat-food-tuna",
+  "vendor": "Me-O",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "estimated": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40131922_1-meo-pet-food-tuna.jpg"
+    },
+    "barcode": "8850477002074"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40131922_1-meo-pet-food-tuna.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Me-o pet food is a nutritionally balanced and complete food for your pet and they will simply love it. Kibble is added in this food with Tuna fish. Kibble is rich in all the nutrients that your pet needs to be healthy.",
+   "ingredients": "Wholegrain Cereals, poultry, meal, vegetable protien,iodized salt,vitamins and minerals, antioxidants,food coloruing",
+   "usageInstructions": "To avoid indigestion associated with abrupt changes, slowly replace increasing quantities of old food with Me-O Cat food untill all the old food has been completely replaced in one week",
+   "manufacturerName": "Perfect Companion Group co. LTD",
+   "countryOfOrigin": "Thailand"
+  }
+ }
+]
