@@ -1,0 +1,110 @@
+{
+  "brand": "TummyFriendly Foods",
+  "manufacturer": "TummyFriendly Foods Pvt. Ltd.",
+  "feed": "tummyfriendly-foods-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/tummyfriendly-foods/logo-2caf087a.png",
+  "themeColor": "#1E7B3A",
+  "themeColorSecondary": "#1B3A5C",
+  "namePrefix": "TummyFriendly Foods ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Organic\\ Health\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Oats\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Oats\\ \\&\\ Beetroot\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sprouted\\ Brown\\ Rice\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sprouted\\ Brown\\ Rice\\ \\&\\ Moong\\ Dal\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sprouted\\ Brown\\ Rice,\\ Red\\ Lentil,\\ Spinach\\ \\&\\ Green\\ Peas\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sprouted\\ Ragi\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sprouted\\ Ragi,\\ Moong\\ Dal\\ \\&\\ Beetroot\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sprouted\\ Ragi,\\ Oats,\\ Red\\ Lentil\\ \\&\\ Banana\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Organic\\ Sprouted\\ Ragi,\\ Almond,\\ Oats\\ \\&\\ Sweet\\ Potato\\ Porridge\\ Mix$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Stage\\ 2\\ Porridge\\ Mix\\ Trial\\ Pack$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    },
+    {
+      "match": "^Stage\\ 3\\ Porridge\\ Mix\\ Trial\\ Pack$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Baby Cereal"
+      ]
+    }
+  ]
+}
