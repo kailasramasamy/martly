@@ -1,0 +1,134 @@
+{
+  "brand": "Active",
+  "manufacturer": "Drools Pet Food Pvt. Ltd.",
+  "feed": "active-pet-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/active-pet/logo-9f905a0e.png",
+  "themeColor": "#E1141E",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Active ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Dog\\ Biscuits\\ \\-\\ Chicken\\ \\&\\ Vegetables$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ \\&\\ Pumpkin\\ Fresh\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Chicken\\ \\&\\ Vegetables\\ Fresh\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Biryani\\ Fresh\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Mutton\\ Biryani\\ Fresh\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Vegetables$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Dry\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Vegetables$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Dry\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Chicken\\ Liver\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Chicken\\ Liver\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Salmon\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    }
+  ]
+}
