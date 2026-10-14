@@ -1,0 +1,38 @@
+{
+  "brand": "Enfamil (Mead Johnson)",
+  "manufacturer": "Mead Johnson Nutrition (India) Pvt. Ltd.",
+  "feed": "enfamil-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/enfamil/logo-17bff4b9.png",
+  "themeColor": "#1E2C8C",
+  "themeColorSecondary": "#C9A45C",
+  "namePrefix": "Enfamil ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^A\\+\\ Stage\\ 1\\ Infant\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^A\\+\\ Stage\\ 2\\ Follow\\-up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    },
+    {
+      "match": "^A\\+\\ Stage\\ 3\\ Follow\\-up\\ Formula$",
+      "path": [
+        "Baby Care",
+        "Baby Food & Formula",
+        "Infant Formula"
+      ]
+    }
+  ]
+}
