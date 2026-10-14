@@ -1,0 +1,96 @@
+{
+  "brand": "Havells",
+  "manufacturer": "Havells India Ltd.",
+  "feed": "havells-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/havells/logo-8c2ef621.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Havells ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Havells 4-Way Extension Board with Surge Protector": "4 Way Extension Board 6A"
+  },
+  "rules": [
+    {
+      "match": "^Adore\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^NU\\ Bulb\\ Plus\\ T\\ Shape\\ LED\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^NU\\ Bulb\\ Plus\\ T\\ Shape\\ LED\\ 12W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ Emergency\\ Inverter\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ Emergency\\ Inverter\\ LED\\ Bulb\\ 12W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Glamax\\ Smart\\ Bulb\\ 9W\\ RGB$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Glamax\\ Smart\\ Bulb\\ 9W\\ TW\\+\\ Colours$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Cosmo\\ Reel\\ Flexbox\\ 3\\ Socket\\ 5m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^4\\+1\\ Spike\\ Guard$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^4\\ Way\\ Extension\\ Board\\ 6A$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    }
+  ]
+}
