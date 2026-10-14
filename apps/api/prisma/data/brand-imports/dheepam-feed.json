@@ -1,0 +1,104 @@
+[
+ {
+  "title": "Lamp Oil",
+  "handle": "lamp-oil",
+  "vendor": "Dheepam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425ml",
+    "price": "115",
+    "compare_at_price": "115",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/271384_4-dheepam-oil-lamp.jpg"
+    }
+   },
+   {
+    "title": "850ml",
+    "price": "191",
+    "compare_at_price": "191",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40068187_8-dheepam-lamp-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/271384_4-dheepam-oil-lamp.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/271384-2_1-dheepam-oil-lamp.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/271384-3_1-dheepam-oil-lamp.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/271384-4_1-dheepam-oil-lamp.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40068187_8-dheepam-lamp-oil.jpg"
+   }
+  ],
+  "details": {
+   "description": "Elevate your deeparadhana (lamp worship) experience with Dheepam, a unique blend of five carefully selected essential oils. Crafted with utmost care and reverence, this oil is designed to invoke blessings and positive energies into your sacred space. Infused with the harmonious relationship of refined castor oil, the protective power of sesame oil, the concentration and peace of mind offered by coconut oil, the prosperity-enhancing properties of mohua (illupai), and the simplest offering to Goddess Annalakshmi in the form of rice bran oil, Dheepam is a truly remarkable lamp oil. Indulge in its wonderful aroma and let the gentle flickering of the flame transport you to a realm of tranquility and spiritual connection.",
+   "storageInstructions": "Store in a cool, dry place away from direct sunlight.",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Temple Lamp Oil",
+  "handle": "temple-lamp-oil",
+  "vendor": "Dheepam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "425ml",
+    "price": "103",
+    "compare_at_price": "103",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342525_2-dheepam-dheepam-temple-lamp-oil.jpg"
+    }
+   },
+   {
+    "title": "850ml",
+    "price": "195",
+    "compare_at_price": "195",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40342524_2-dheepam-dheepam-temple-lamp-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342525_2-dheepam-dheepam-temple-lamp-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342525-2_2-dheepam-dheepam-temple-lamp-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342525-3_1-dheepam-dheepam-temple-lamp-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342525-4_1-dheepam-dheepam-temple-lamp-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342525-5_1-dheepam-dheepam-temple-lamp-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40342524_2-dheepam-dheepam-temple-lamp-oil.jpg"
+   }
+  ],
+  "details": {
+   "description": "Light up your spiritual journey with Dheepam Lamp Oil, now available in a practical pack of two 1 L bottles. Crafted to meet the highest standards, this lamp oil is perfect for all your religious and spiritual rituals, creating an atmosphere of peace and divinity in your home. Made from premium ingredients, Dheepam Lamp Oil burns cleanly and consistently, ensuring a pure, bright flame that lasts through your prayers and ceremonies. Each bottle is infused with a gentle, soothing fragrance that enhances the spiritual ambiance, bringing a sense of calm and devotion to your sacred spaces. Designed to provide a steady, soot-free flame, this lamp oil is ideal for daily use in temples, altars, and pooja rooms, ensuring a serene environment for worship. Elevate your devotional practices with Dheepam Lamp Oil. Experience the blend of purity and tranquility that enhances every spiritual moment. Choose Dheepam for a truly divine worship experience.",
+   "manufacturerName": "Kaleesuwari Refinery Private Limited Survey No.",
+   "fssaiLicense": "10012042000099",
+   "countryOfOrigin": "India"
+  }
+ }
+]

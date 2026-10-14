@@ -1,0 +1,30 @@
+{
+  "brand": "Dheepam",
+  "manufacturer": "Kaleesuwari Refinery Pvt. Ltd.",
+  "feed": "dheepam-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dheepam/logo-55fdc356.png",
+  "themeColor": "#9E1B1E",
+  "themeColorSecondary": "#F2C230",
+  "namePrefix": "Dheepam ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Lamp\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Temple\\ Lamp\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    }
+  ]
+}
