@@ -1,0 +1,264 @@
+{
+  "brand": "Apsara (Faber-Castell)",
+  "manufacturer": "Hindustan Pencils Pvt. Ltd.",
+  "feed": "apsara-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/apsara/logo-6beeda82.png",
+  "themeColor": "#1A9DA4",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Apsara ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Apsara Platinum Extra Dark HB Pencils (Pack of 10)": "Platinum Extra Dark Pencils"
+  },
+  "rules": [
+    {
+      "match": "^Platinum\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Absolute\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Gold\\ HB\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Beauty\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Matt\\ Magic\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Popstar\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ez\\ Grip\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Assorted\\ Drawing\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Charcoal\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Zesta\\ Scented\\ Writing\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Marvel\\ Avengers\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Marvel\\ Spider\\-Man\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Disney\\ Princess\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Disney\\ Frozen\\ 2\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Disney\\ Mickey\\ Mouse\\ \\&\\ Friends\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Lit\\ Gel\\ Pens\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^King\\ Size\\ Notebook\\ 172\\ Pages\\ Red\\ \\&\\ Blue\\ Lines\\ with\\ Gap$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^King\\ Size\\ Notebook\\ 172\\ Pages\\ Single\\ Line$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^King\\ Size\\ Notebook\\ 172\\ Pages\\ Double\\ Line$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^King\\ Size\\ Notebook\\ 172\\ Pages\\ Four\\ Line$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^King\\ Size\\ Notebook\\ 172\\ Pages\\ Medium\\ Square$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A4\\ Exercise\\ Notebook\\ Single\\ Line\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A4\\ Long\\ Notebook\\ Single\\ Line\\ 240\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ Single\\ Line\\ 140\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ Single\\ Line\\ 180\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ Single\\ Line\\ 252\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ Single\\ Line\\ 302\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ Single\\ Line\\ 400\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Notebook\\ Single\\ Line\\ 506\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A4\\ Drawing\\ Book\\ 36\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Big\\ Size\\ Drawing\\ Book\\ 40\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
