@@ -1,0 +1,40 @@
+{
+  "brand": "Catsan (Mars)",
+  "manufacturer": "Mars International India Pvt. Ltd.",
+  "feed": "catsan-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/catsan/logo-7a40a42b.png",
+  "themeColor": "#00A0DF",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Catsan ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Catsan Natural Biodegradable Cat Litter": "Natural Clumping Cat Litter"
+  },
+  "rules": [
+    {
+      "match": "^Hygiene\\ Plus\\ Non\\-Clumping\\ Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    },
+    {
+      "match": "^Natural\\ Clumping\\ Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Odour\\ Control\\ Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    }
+  ]
+}
