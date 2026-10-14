@@ -1,0 +1,428 @@
+[
+ {
+  "title": "Agmark Cow Ghee",
+  "handle": "agmark-cow-ghee",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "175",
+    "compare_at_price": "175",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40058587_4-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "400",
+    "compare_at_price": "400",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40058588_4-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "850",
+    "compare_at_price": "850",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40058591_3-dodla-pure-cow-ghee-rich-natural-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058587_4-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058587-2_3-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058587-3_3-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058587-4_2-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058587-5_2-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058587-6_1-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058588_4-dodla-pure-cow-ghee-agmark-special-grade-rich-in-omega-3.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058591_3-dodla-pure-cow-ghee-rich-natural-aroma.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Pure Cow Ghee (Pouch)",
+  "handle": "pure-cow-ghee-pouch",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1L",
+    "price": "630",
+    "compare_at_price": "630",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40058589_6-dodla-pure-cow-ghee-rich-natural-aroma.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058589_6-dodla-pure-cow-ghee-rich-natural-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058589-2_6-dodla-pure-cow-ghee-rich-natural-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058589-3_6-dodla-pure-cow-ghee-rich-natural-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058589-4_6-dodla-pure-cow-ghee-rich-natural-aroma.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058589-5_5-dodla-pure-cow-ghee-rich-natural-aroma.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cow Milk Cooking Butter",
+  "handle": "cow-milk-cooking-butter",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "356",
+    "compare_at_price": "356",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221075_1-dodla-cooking-butter-pasteurised-made-from-cows-milk-100-natural.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221075_1-dodla-cooking-butter-pasteurised-made-from-cows-milk-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221075-2_1-dodla-cooking-butter-pasteurised-made-from-cows-milk-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221075-3_1-dodla-cooking-butter-pasteurised-made-from-cows-milk-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221075-4_1-dodla-cooking-butter-pasteurised-made-from-cows-milk-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221075-5_1-dodla-cooking-butter-pasteurised-made-from-cows-milk-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221075-6_1-dodla-cooking-butter-pasteurised-made-from-cows-milk-100-natural.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Cooking Butter",
+  "handle": "cooking-butter",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "285",
+    "compare_at_price": "285",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221076_1-dodla-cooking-butter-pasteurised-100-natural.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221076_1-dodla-cooking-butter-pasteurised-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221076-2_1-dodla-cooking-butter-pasteurised-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221076-3_1-dodla-cooking-butter-pasteurised-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221076-4_1-dodla-cooking-butter-pasteurised-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221076-5_1-dodla-cooking-butter-pasteurised-100-natural.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221076-6_1-dodla-cooking-butter-pasteurised-100-natural.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Badam Flavoured Milk",
+  "handle": "badam-flavoured-milk",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221063_2-dodla-flavoured-milk-badam-pasteurised-double-toned.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221063_2-dodla-flavoured-milk-badam-pasteurised-double-toned.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221063-2_2-dodla-flavoured-milk-badam-pasteurised-double-toned.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221063-3_2-dodla-flavoured-milk-badam-pasteurised-double-toned.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221063-4_2-dodla-flavoured-milk-badam-pasteurised-double-toned.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221063-5_2-dodla-flavoured-milk-badam-pasteurised-double-toned.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221063-6_2-dodla-flavoured-milk-badam-pasteurised-double-toned.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221063-7_1-dodla-flavoured-milk-badam-pasteurised-double-toned.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Long Life UHT Toned Milk",
+  "handle": "long-life-uht-toned-milk",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "34",
+    "compare_at_price": "34",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40058585_4-dodla-toned-milk-uht-treated-rich-in-vitamin-a-d.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058585_4-dodla-toned-milk-uht-treated-rich-in-vitamin-a-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058585-2_4-dodla-toned-milk-uht-treated-rich-in-vitamin-a-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058585-3_3-dodla-toned-milk-uht-treated-rich-in-vitamin-a-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058585-4_3-dodla-toned-milk-uht-treated-rich-in-vitamin-a-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058585-5_3-dodla-toned-milk-uht-treated-rich-in-vitamin-a-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058585-6_2-dodla-toned-milk-uht-treated-rich-in-vitamin-a-d.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40058585-7_1-dodla-toned-milk-uht-treated-rich-in-vitamin-a-d.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Toned Milk",
+  "handle": "toned-milk",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40149826_3-dodla-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40149826_3-dodla-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40149826-2_2-dodla-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40149826-3_2-dodla-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40149826-4_2-dodla-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40149826-5_2-dodla-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40149826-6_1-dodla-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Standardised Milk",
+  "handle": "standardised-milk",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "37",
+    "compare_at_price": "37",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40151386_3-dodla-standardised-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151386_3-dodla-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151386-2_2-dodla-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151386-3_2-dodla-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151386-4_2-dodla-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151386-5_2-dodla-standardised-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40151386-6_2-dodla-standardised-milk.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Paneer",
+  "handle": "paneer",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221064_1-dodla-paneer-rich-in-protein.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "269",
+    "compare_at_price": "269",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40221065_1-dodla-paneer-rich-in-protein.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221064_1-dodla-paneer-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221064-2_1-dodla-paneer-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221064-3_1-dodla-paneer-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221064-4_1-dodla-paneer-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221064-5_1-dodla-paneer-rich-in-protein.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40221065_1-dodla-paneer-rich-in-protein.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ },
+ {
+  "title": "Masala Paneer",
+  "handle": "masala-paneer",
+  "vendor": "Dodla",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "140",
+    "compare_at_price": "140",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40358091_1-dodla-masala-paneer.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358091_1-dodla-masala-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358091-2_1-dodla-masala-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358091-3_1-dodla-masala-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358091-4_1-dodla-masala-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358091-5_1-dodla-masala-paneer.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40358091-6_1-dodla-masala-paneer.jpg"
+   }
+  ],
+  "food_type": "VEG"
+ }
+]

@@ -1,0 +1,96 @@
+{
+  "brand": "Dodla",
+  "manufacturer": "Dodla Dairy Ltd.",
+  "feed": "dodla-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/dodla/logo-4f586388.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Dodla ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Dodla Ghee": "Agmark Cow Ghee"
+  },
+  "rules": [
+    {
+      "match": "^Agmark\\ Cow\\ Ghee$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Pure\\ Cow\\ Ghee\\ \\(Pouch\\)$",
+      "path": [
+        "Grocery & Staples",
+        "Ghee",
+        "Cow Ghee"
+      ]
+    },
+    {
+      "match": "^Cow\\ Milk\\ Cooking\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Cooking\\ Butter$",
+      "path": [
+        "Dairy",
+        "Butter",
+        "Cooking Butter"
+      ]
+    },
+    {
+      "match": "^Badam\\ Flavoured\\ Milk$",
+      "path": [
+        "Beverages",
+        "Milk Drinks",
+        "Flavoured Milk"
+      ]
+    },
+    {
+      "match": "^Long\\ Life\\ UHT\\ Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "UHT / Long Life Milk"
+      ]
+    },
+    {
+      "match": "^Toned\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Toned Milk"
+      ]
+    },
+    {
+      "match": "^Standardised\\ Milk$",
+      "path": [
+        "Dairy",
+        "Milk",
+        "Full Cream Milk"
+      ]
+    },
+    {
+      "match": "^Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    },
+    {
+      "match": "^Masala\\ Paneer$",
+      "path": [
+        "Dairy",
+        "Paneer & Tofu",
+        "Fresh Paneer"
+      ]
+    }
+  ]
+}
