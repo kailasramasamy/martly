@@ -1,0 +1,366 @@
+{
+  "brand": "Cubic",
+  "manufacturer": "Cubic Stationery",
+  "feed": "cubic-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/cubic/logo-47f01673.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#3FA9F5",
+  "namePrefix": "Cubic ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^A5\\ 1\\ Subject\\ Wiro\\ Notebook\\ \\-\\ Black,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ 5\\ Subject\\ Wiro\\ Notebook\\ \\-\\ Black,\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Eco\\ A5\\ 1\\ Subject\\ Wiro\\ Notebook\\ \\-\\ Khaki,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Eco\\ A5\\ 5\\ Subject\\ Wiro\\ Notebook\\ \\-\\ Khaki,\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^B5\\ Wiro\\ Notebook\\ \\-\\ Black,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Eco\\ B5\\ Wiro\\ Notebook\\ \\-\\ Black,\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A7\\ Wiro\\ Pocket\\ Notebooks\\ \\-\\ 45\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Palm\\ Notebook\\ \\-\\ Ruled$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Premium\\ Flower\\ Print\\ Cork\\ Notebook$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Pad\\ Notebooks\\ \\-\\ 1/8\\ Size,\\ 80\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Pad\\ Notebooks\\ \\-\\ 1/6\\ Size,\\ 80\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Spiral\\ Pad\\ Notebooks\\ \\-\\ 1/4\\ Size,\\ 80\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Scribbling\\ Pads\\ \\-\\ 1/8\\ Size,\\ 80\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Scribbling\\ Pads\\ \\-\\ 1/6\\ Size,\\ 80\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Scribbling\\ Pads\\ \\-\\ 1/4\\ Size,\\ 80\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Blue\\ Book\\ Exam\\ Book\\ \\-\\ 20\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Blue\\ Book\\ Exam\\ Book\\ \\-\\ 40\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Diary\\ \\-\\ Aqua\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Diary\\ \\-\\ Orange$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Diary\\ \\-\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Diary\\ \\-\\ Yellow$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Diary\\ \\-\\ Wine\\ Cork\\ Cover$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Diary\\ with\\ Pen\\ Holder\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Diary\\ with\\ Pen\\ Holder\\ \\-\\ Brown$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Diary\\ with\\ Pen\\ Holder\\ \\-\\ Green$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Undated\\ Soft\\ Bound\\ Diary\\ \\-\\ Grey$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Dated\\ 2026\\ Diary\\ \\-\\ PU\\ Cover$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A5\\ Dated\\ 2026\\ Diary\\ \\-\\ Brown\\ PU\\ Cover$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^A4\\ Copier\\ Sheets\\ \\-\\ 80\\ GSM$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Ruled\\ Sticky\\ Note\\ Pad\\ \\-\\ Yellow,\\ 8\\ x\\ 6\\ cm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Transparent\\ Sticky\\ Notes\\ \\-\\ White$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Paper\\ Flag\\ Sticky\\ Notes$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Transparent\\ Tape\\ \\-\\ 2\\.5\\ cm\\ x\\ 60\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Transparent\\ Tape\\ \\-\\ 5\\ cm\\ x\\ 60\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Transparent\\ Tape\\ \\-\\ 7\\ cm\\ x\\ 60\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Brown\\ Tape\\ \\-\\ 2\\.5\\ cm\\ x\\ 60\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Brown\\ Tape\\ \\-\\ 5\\ cm\\ x\\ 60\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Brown\\ Tape\\ \\-\\ 7\\ cm\\ x\\ 60\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Double\\ Side\\ Tape\\ \\-\\ 2\\ cm\\ x\\ 1\\.5\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Wonder\\ Double\\ Side\\ Tape\\ \\-\\ 4\\ cm\\ x\\ 1\\.5\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Tape\\ \\-\\ 25\\ mm\\ x\\ 2\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Masking\\ Tape\\ \\-\\ 2\\.5\\ cm\\ x\\ 15\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Masking\\ Tape\\ \\-\\ 5\\ cm\\ x\\ 15\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Transparent\\ Tape\\ \\-\\ 2\\.5\\ cm,\\ Small$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
