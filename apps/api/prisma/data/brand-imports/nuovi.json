@@ -1,0 +1,110 @@
+{
+  "brand": "Nuovi",
+  "manufacturer": "Nuovi",
+  "feed": "nuovi-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/nuovi/logo-02d9f50c.png",
+  "themeColor": "#00A36C",
+  "themeColorSecondary": "#E31E24",
+  "namePrefix": "Nuovi ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^BOPP\\ Tape\\ \\-\\ Transparent,\\ 12\\ mm\\ x\\ 65\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^BOPP\\ Tape\\ \\-\\ Transparent,\\ 24\\ mm\\ x\\ 60\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^BOPP\\ Tape\\ \\-\\ Transparent,\\ 48\\ mm\\ x\\ 65\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Brown\\ Tape\\ \\-\\ 48\\ mm\\ x\\ 65\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Butyl\\ Tape\\ \\-\\ Grey,\\ 50\\ mm\\ x\\ 50\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Double\\ Sided\\ Foam\\ Tape\\ \\-\\ 24\\ mm\\ x\\ 10\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Duct\\ Tape\\ \\-\\ Grey,\\ 48\\ mm\\ x\\ 20\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Invisible\\ Tape\\ \\-\\ 18\\ mm\\ x\\ 33\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Masking\\ Tape\\ \\-\\ 24\\ mm\\ x\\ 20\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Nano\\ Tape\\ \\-\\ Transparent,\\ 24\\ mm\\ x\\ 3\\ m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Heavy\\ Duty\\ Cutter\\ \\-\\ 18\\ mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Sticky\\ Notes\\ \\-\\ Yellow,\\ 100\\ Sheets$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
