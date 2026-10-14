@@ -1,0 +1,142 @@
+{
+  "brand": "Luxor",
+  "manufacturer": "Luxor Writing Instruments Pvt. Ltd.",
+  "feed": "luxor-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/luxor/logo-a76e2ba6.png",
+  "themeColor": "#E4202A",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Luxor ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Gel\\ One\\ Gel\\ Pen\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Liquiwrite\\ Ball\\ Pen\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Liquiwrite\\ Antimicrobial\\ Ball\\ Pen\\ Jar\\ \\-\\ Blue\\ \\&\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Uniflo\\ Ball\\ Pen\\ \\-\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Finewriter\\ 05\\ Pens\\ \\-\\ Assorted$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^1852\\ Fluorescent\\ Highlighters$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^White\\ Board\\ Markers\\ \\-\\ Assorted,\\ Refillable$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Whiteboard\\ XP\\ Marker\\ \\-\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Converge\\ Premium\\ Notebook\\ A4\\ \\-\\ Ruled,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Converge\\ Premium\\ 5\\ Subject\\ Notebook\\ A4\\ \\-\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Converge\\ Premium\\ 5\\ Subject\\ Notebook\\ A5\\ \\-\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Converge\\ Premium\\ 4\\ Subject\\ Notebook\\ A6\\ \\-\\ 240\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Converge\\ Premium\\ Notebook\\ A5\\ \\-\\ Ruled,\\ 160\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Premium\\ 6\\ Subject\\ Exercise\\ Book\\ \\-\\ 300\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Premium\\ 5\\ Subject\\ Exercise\\ Book\\ \\-\\ 250\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Premium\\ 1\\ Subject\\ Spiral\\ Notebook$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
