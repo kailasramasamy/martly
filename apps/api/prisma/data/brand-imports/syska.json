@@ -1,0 +1,54 @@
+{
+  "brand": "Syska",
+  "manufacturer": "SSK Group",
+  "feed": "syska-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/syska/logo-7fe768c2.png",
+  "themeColor": "#00AEEF",
+  "themeColorSecondary": "#1E7B3C",
+  "namePrefix": "Syska ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^SSK\\-SRL\\-9W\\ LED\\ Bulb$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Lumispread\\ LED\\ T\\-Bulb\\ 10W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Rechargeable\\ Emergency\\ Inverter\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Smart\\ WiFi\\ LED\\ Bulb\\ 7W\\ Multicolour$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Smart\\ WiFi\\ LED\\ Bulb\\ 9W\\ Multicolour$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    }
+  ]
+}
