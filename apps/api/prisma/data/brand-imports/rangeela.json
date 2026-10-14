@@ -1,0 +1,62 @@
+{
+  "brand": "Rangeela",
+  "manufacturer": "Pidilite Industries Ltd.",
+  "feed": "rangeela-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/rangeela/logo-5458bb38.png",
+  "themeColor": "#E6007E",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Rangeela ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Holi\\ Ke\\ Rang\\ \\-\\ Electric\\ Green\\ Gulal$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Holi\\ Ke\\ Rang\\ \\-\\ Lavender\\ Magic\\ Gulal$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Holi\\ Ke\\ Rang\\ \\-\\ Luminous\\ Yellow\\ Gulal$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Holi\\ Ke\\ Rang\\ \\-\\ Radiant\\ Pink\\ Gulal$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Holi\\ Ke\\ Rang\\ \\-\\ Rosy\\ Gulal$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Holi\\ Ke\\ Rang\\ \\-\\ 4\\ Fluorescent\\ Shades$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    }
+  ]
+}
