@@ -42,7 +42,66 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005161-8_5-enfamil-a-infant-formula-baby-food-powder-stage-1.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enfamil A+ Stage 1 Infant Formula is the perfect choice to start your baby off with the best nutrition for a healthy start in life. Designed for infants up to 6 months old, this formula is packed with essential nutrients and prebiotics to support your little one's growth and development. Enriched with DHA, ARA, MFGM, and GOS prebiotics, it provides complete nutrition as a complementary diet to breast milk. Consult your baby's doctor to ensure this formula is appropriate, and be sure to follow proper hygiene, preparation, and storage guidelines for optimal results. With Enfamil A+ Stage 1, you can give your baby the nourishment they need for a strong foundation.",
+   "nutritionalInfo": {
+    "Lactose, skim milk powder, milkfat, blend of vegetable oils, galactooligosaccharides, whey protein concentrate, emulsifier (soy lecithin), minerals, single cell oils, vitamins, corn syrup solids, inositol, taurine, L-carnitine, nucleotides, antioxidantNutrition per gram/ml": "100g",
+    "Energy": "500 kcal",
+    "Protein": "11.5 g",
+    "Fat": "25 g",
+    "Milk Fat": "12.5 g",
+    "Monounsaturated Fatty Acids": "5.5 g",
+    "Polyunsaturated Fatty Acids": "3.1 g",
+    "Alpha Linolenic Acid": "380 mg",
+    "Docosahexaenoic Acid": "85 mg",
+    "Arachidonic Acid": "170 mg",
+    "Linoleic Acid": "2300 mg",
+    "Cholesterol": "44 mg",
+    "Carbohydrate": "58.8 g",
+    "Total Sugars": "52 g",
+    "Of which Lactose": "50.4 g",
+    "Of which Sucrose (sugar)": "0 g",
+    "Added Sugars": "40.8 g",
+    "Dietary Fiber (Probiotics)": "3 g",
+    "Galacto-Oligosaccharides": "3 g",
+    "Vitamin A": "400 mcg RE",
+    "Thiamin": "320 mcg",
+    "Riboflavin": "1000 mcg",
+    "Niacin": "4700 mcg",
+    "Pantothenic Acid": "3700 mcg",
+    "Vitamin B6": "240 mcg",
+    "Biotin": "13.5 mcg",
+    "Folic Acid": "34 mcg DFE",
+    "Vitamin B12": "1.5 mcg",
+    "Vitamin C": "50 mg",
+    "Vitamin D2": "6.5 mcg",
+    "Vitamin E": "3.65 mg a-TE",
+    "Vitamin K": "11.5 mcg",
+    "Calcium": "310 mg",
+    "Chloride": "300 mg",
+    "Copper": "250 mcg",
+    "Iodine": "120 mcg",
+    "Iron": "3.9 mg",
+    "Magnesium": "36 mg",
+    "Manganese": "55 mcg",
+    "Phosphorus": "210 mg",
+    "Potassium": "440 mg",
+    "Selenium": "7.3 mcg",
+    "Sodium": "107 mg",
+    "Zinc": "3.1 mg",
+    "L-Carnitine": "10.5 mg",
+    "Choline": "122 mg",
+    "Inositol": "50 mg",
+    "Taurine": "30 mg",
+    "Total Nucleotides": "15 mg",
+    "Phospholipids": "500 mg",
+    "Sphingomyelin": "99 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight1. Add 1 level scoop of Enfamil A+ Stage 1 powder to 30 ml of cooled, boiled water.\n2. For detailed feeding instructions, please refer to the package label.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "A+ Stage 2 Follow-up Formula",
@@ -87,7 +146,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005162-8_5-enfamil-a-infant-formula-baby-food-powder-stage-2.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enfamil A+ Stage 2 follow up formula is intended for infants from 6 months up to 12 months old. It contains DHA, ARA, MFGM and GOS prebiotics. For detailed information about the product please refer to the pack label. Note: For any queries related to health & wellness of your baby consult your baby's doctor. Ask your baby's doctor which formula is appropriate for your baby. Feeding instructions: This is a powdered formula to be fed after reconstitution with cooled, boiled water. For detailed feeding instructions, please refer to the pack label. Proper hygiene, preparation, dilution, use and storage are important when preparing formula. Important Notice: Mothers milk is best for your baby.",
+   "usageInstructions": "This is a powdered formula to be fed after reconstitution with cooled, boiled water.\nAdd 1 level scoop of Enfamil A+ Stage 2 powder to 30 ml of water.\nFor detailed feeding instructions, please refer to the package label. Proper hygiene, preparation, dilution, use and storage are important when preparing formula.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "A+ Stage 3 Follow-up Formula",
@@ -132,6 +197,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/30005163-8_5-enfamil-a-infant-formula-baby-food-powder-stage-3.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Enfamil A+ Stage 3 follow-up formula for older infants is intended for infants from 12 months up to 24 months old. Contains DHA, ARA, MFGM, and GOS prebiotics. For detailed information about the product please refer to the pack label. Ask your baby's doctor which formula is appropriate for your baby. Feeding instructions: This is a powdered formula to be fed after reconstitution with cooled, boiled water. For detailed feeding instructions, please refer to the pack label.\nImportant Notice: Mother milk is best for your baby.",
+   "usageInstructions": "This is a powdered formula to be fed after reconstitution with cooled, boiled water. \nAdd 1 level scoop of Enfamil A+ Stage 3 powder to 30 ml of water.\nFor detailed feeding instructions, please refer to the package label. Proper hygiene, preparation, dilution, use, and storage are important when preparing formula.",
+   "manufacturerName": "Reckitt Benckiser",
+   "countryOfOrigin": "India"
+  }
  }
 ]
