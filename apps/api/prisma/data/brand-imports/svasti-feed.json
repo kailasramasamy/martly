@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40335623_3-svasti-365-cotton-batti.jpg"
-    }
+    },
+    "barcode": "8906183011388"
    }
   ],
   "images": [
@@ -32,7 +33,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335623-5_3-svasti-365-cotton-batti.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Cotton Bathi is an essential item for lighting diyas or lamps during daily prayers, festivals, and special rituals. Made from high-quality cotton, these ready-to-use wicks ensure a steady and consistent flame, symbolising purity and positivity. Perfectly designed for easy handling, Lamp Bathi allows hassle-free preparation of traditional oil lamps, enhancing the spiritual ambience of your space. Ideal for use with ghee or oil, these wicks ensure a clean and bright burn. Whether for religious ceremonies or creating a serene environment, Lamp Bathi is a reliable choice to illuminate your home and invite divine blessings with every diya you light.",
+   "manufacturerName": "Svasti",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Cow Ghee Diya Batti",
@@ -67,7 +73,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341790-5_1-svasti-cow-ghee-diya-pack-of-30pcs.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A Ghee Diya is a traditional oil lamp used in various Hindu and Indian spiritual practices. It is fuelled by ghee (clarified butter) and is considered to be a pure and auspicious offering during prayers, rituals, and festivals.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Rudraksh Sapta Deepam Oil",
@@ -121,7 +132,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335621-8_2-svasti-rudraksh-sapta-deepam-oil.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Svasti Rudraksh Sapta Deepam Oil is a divine blend of seven sacred oils infused with the power of 5-Face Nepali Rudraksh, specially crafted for pooja purposes. This unique formulation enhances spiritual vibrations, ensuring a pure and serene atmosphere during rituals. The harmonious mix of oils provides a bright, long-lasting flame, symbolising divine energy and positivity. The presence of authentic Nepali Rudraksh further amplifies its sanctity, making it ideal for daily prayers, havans, and temple rituals. Svasti Rudraksh Sapta Deepam Oil is a perfect choice for invoking blessings, fostering devotion, and illuminating sacred spaces with divine radiance.",
+   "storageInstructions": "*Keep away from children and pets\n*Store in dry place, away from direct sunlight",
+   "manufacturerName": "SKPOM",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Glass Akhand Diya",
@@ -137,7 +154,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40375466_3-svasti-svasti-glass-modak-diya.jpg"
-    }
+    },
+    "barcode": "8906183017922"
    }
   ],
   "images": [
@@ -156,7 +174,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40375466-5_3-svasti-svasti-glass-modak-diya.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A Glass Modak Diya is a beautiful decorative oil lamp inspired by the traditional modak shape, often associated with Lord Ganesha and Indian festive celebrations. Made from glass, it adds an elegant and traditional touch to Diwali, Ganesh Chaturthi, pooja ceremonies, weddings, and home decor.",
+   "manufacturerName": "139",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Hanuman Sindoor",
@@ -188,7 +211,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345877-4_3-svasti-hanuman-sindoor.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Svasti Hanuman Sindoor is specially prepared for devotional use in pooja and religious rituals. Made with care using traditional methods, it is ideal for offering to Lord Hanuman. Its vibrant colour and purity enhance the spiritual atmosphere, making it a sacred addition to your daily prayers and temple offerings.",
+   "manufacturerName": "Sri Nanjundeshwara and Co",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kumkum Paste - Scented",
@@ -223,7 +251,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340648-5_1-svasti-kumkum-paste-scented.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Scented Kumkum Paste is a rich, vibrant paste made with saffron or other colourants, blended with rosewater, herbs, or oils. It is used in Hindu rituals, poojas, and festive occasions, symbolising auspiciousness and devotion. Its smooth texture and pleasant fragrance make it ideal for applying on foreheads, idols, and sacred offerings in religious ceremonies.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sindoor Paste - Scented",
@@ -252,7 +285,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340647-3_1-svasti-sindoor-paste-scented.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Scented Sindoor Paste is a traditional vermilion paste made with cinnabar, turmeric or saffron, and natural dyes. It is used in Hindu rituals and marital traditions, symbolising devotion and auspiciousness. Its smooth texture and fragrant blend make it ideal for application on the forehead or during religious ceremonies, enhancing cultural and spiritual significance.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Chandan Paste - Scented",
@@ -284,7 +322,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340649-4_2-svasti-chandan-paste-scented.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Chandan Paste Scented is a fragrant sandalwood paste used in Hindu rituals, poojas, and religious ceremonies. It is known for its soothing aroma and is applied to deities, foreheads, and sacred idols as a mark of devotion. The paste is easy to use and ready-made, adding a traditional touch to spiritual practices and auspicious occasions.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kumkum & Turmeric Combo Pack",
@@ -316,7 +359,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340652-4_1-svasti-kumkum-turmeric-combo-pack.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Kumkum and Turmeric Combo Pack is an essential set for Hindu rituals, poojas, and festive ceremonies. Kumkum symbolises auspiciousness, while turmeric represents purity and prosperity. Perfect for home temples and religious offerings, this pack is ideal for traditional practices, cultural celebrations, and devotional use, ensuring authenticity and significance in every ritual.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Ashtagandha Chandan Powder",
@@ -357,7 +405,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340653-7_2-svasti-astagandha-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Astagandha Chandan Powder is a sacred blend of sandalwood powder, turmeric, saffron, and other natural ingredients. Traditionally used in Hindu rituals, poojas, and ceremonies, it carries a rich cultural significance. This aromatic powder is applied during worship and religious markings, symbolising purity and devotion. It is ideal for home temples and spiritual practices.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Red Sandal Powder",
@@ -392,7 +445,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340646-5_1-svasti-red-sandal-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Red Sandalwood Powder is a finely ground, aromatic powder used in Hindu rituals, poojas, and traditional ceremonies. Known for its deep red hue, it is applied to deities, sacred idols, and foreheads as a mark of devotion. Often used in religious offerings and spiritual practices, it holds cultural and ritualistic significance.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Vibhuti",
@@ -427,7 +485,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40360894-5_3-svasti-viboothi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Viboothi Powder, also spelled Vibhuti or Vibhooti, is a sacred ash used mainly in the worship of Lord Shiva. It holds deep spiritual meaning and is an essential part of daily pooja, temple rituals, and religious ceremonies.",
+   "manufacturerName": "Sri Nanjundeshwara And Co",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Pure Cow Dung Vibhuti",
@@ -443,7 +506,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40335617_1-svasti-pure-cow-dung-vibuthi.jpg"
-    }
+    },
+    "barcode": "8906183010527"
    }
   ],
   "images": [
@@ -459,7 +523,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335617-4_1-svasti-pure-cow-dung-vibuthi.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Svasti Pure Cow Dung Vibuthi is a traditional sacred ash made from the pure, dried dung of Indian cows. It is known for its spiritual significance and is prepared using authentic methods to ensure purity and sanctity. Vibuthi is often used in religious rituals and is applied to the forehead as a symbol of devotion and protection. It is believed to have calming and purifying properties, enhancing focus during prayers and meditation. Svasti ensures that their Vibuthi is of the highest quality, providing a product that upholds spiritual traditions while respecting nature. It is ideal for daily worship, festivals, and special rituals.",
+   "manufacturerName": "Svasti",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kalawa Mouli Thread",
@@ -491,7 +560,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341787-4_1-svasti-moli-kalawa-pack-of-2.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "In many Indian religious and cultural practices, Kalawa refers to a sacred red or yellow thread that is tied around the wrist, especially during religious ceremonies, poojas, or auspicious occasions. Kalawa is believed to offer protection, blessings, and a connection to divine energy.",
+   "manufacturerName": "Svasti",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Janeu Thread",
@@ -532,7 +606,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340651-7_1-svasti-janivara-janeu-pack-of-5pcs.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Janvara/Janeu Thread is a sacred cotton thread worn after the Upanayan ceremony in Hindu tradition. Made from multiple intertwined strands, it represents purity, duty, and knowledge. Used in religious rituals and ceremonies, it holds deep cultural and spiritual significance.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Janeu White Cotton Thread Roll",
@@ -564,7 +643,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340642-4_2-svasti-finest-cotton-white-thread-3ply-roll.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "The Janeu Thread 3 Ply Roll is a sacred cotton thread used in Hindu rituals and ceremonies. Made from three intertwined strands, it represents purity, duty, and knowledge. This roll offers convenience for religious use and ritual preparations.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Kala Dhaga - Black Silk Thread",
@@ -605,7 +689,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40351866-7_2-svasti-black-silk-thread.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Black silk thread\nis a smooth, glossy, and durable thread made from silk fibres, dyed in black\ncolour. It is used in a wide range of cultural, religious, and decorative\napplications, especially in India and Southeast Asia. Its utility spans\njewellery making, sacred rituals, traditional crafts, and even protective\nsymbolism.",
+   "manufacturerName": "Sri Nanjundeshwara And",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Guggal",
@@ -640,7 +729,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40341780-5_3-svasti-guggal-50gm.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "In Hinduism and other spiritual traditions, Guggul is often burned as incense during rituals or prayers. The aroma is believed to purify the environment and bring a sense of calm and peace. It's sometimes used in the form of guggul resin or guggul-based incense.",
+   "manufacturerName": "SNC VENTURES ENTERPRISE",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sambrani Powder",
@@ -675,7 +769,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40340645-5_3-svasti-sambrani-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Sambrani Powder is a traditional aromatic resin powder used for incense burning in Hindu rituals, poojas, and spiritual ceremonies. When heated on charcoal or a burner, it releases a rich, soothing fragrance, creating a serene atmosphere. Commonly used in homes and temples, it enhances devotional practices and adds a sacred touch to religious rituals.",
+   "manufacturerName": "SNC Ventures Enterprise",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dasangam Powder",
@@ -707,7 +806,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40345876-4_2-svasti-dasangam-powder.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Svasti Dasangam Powder is a traditional blend of aromatic herbs and natural ingredients, crafted for use in pooja and religious rituals. When burned, it releases a divine fragrance that purifies the surroundings and uplifts the spiritual ambience, making it ideal for daily worship, temple offerings, and festive ceremonies.",
+   "manufacturerName": "Sri Nanjundeshwara and Co",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Betel Nut Half",
@@ -723,7 +827,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40335618_2-svasti-betel-nut-half.jpg"
-    }
+    },
+    "barcode": "8906183011548"
    }
   ],
   "images": [
@@ -740,6 +845,11 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40335618-4_2-svasti-betel-nut-half.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Svasti Betel Nut Half offers premium-quality, naturally sourced betel nuts that are carefully cut into convenient halves. Known for their significance in Indian rituals and traditions, these betel nuts are perfect for religious ceremonies, pujas, and offerings. Svasti ensures the nuts are processed hygienically to maintain their purity and freshness. Betel nuts are also widely used in cultural practices and as a key ingredient in traditional paan preparations. The thoughtfully halved pieces save time and effort, making them easy to use. Svasti Betel Nut Half is a reliable choice for those seeking high-quality betel nuts for spiritual or cultural needs.",
+   "manufacturerName": "Svasti",
+   "countryOfOrigin": "India"
+  }
  }
 ]
