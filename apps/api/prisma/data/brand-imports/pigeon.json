@@ -1,0 +1,254 @@
+{
+  "brand": "Pigeon",
+  "manufacturer": "Pigeon India Pvt. Ltd.",
+  "feed": "pigeon-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/pigeon/logo-5af03dce.png",
+  "themeColor": "#E8473F",
+  "themeColorSecondary": "#333333",
+  "namePrefix": "Pigeon ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Peristaltic\\ Nursing\\ Bottle\\ \\-\\ Red$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Peristaltic\\ Clear\\ Nursing\\ Bottle\\ \\-\\ Blue$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Peristaltic\\ Clear\\ Nursing\\ Bottle\\ \\-\\ Pink$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Peristaltic\\ Nursing\\ Bottle\\ Twin\\ Pack$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Glass\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Wide\\ Neck\\ Glass\\ Nursing\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Wide\\ Neck\\ Nursing\\ Bottle\\ With\\ Plus\\ Type\\ Nipple$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Flexible\\ Stainless\\ Steel\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Paladai\\ Newborn\\ Baby\\ Feeder$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Weaning\\ Food\\ Feeder\\ With\\ Spoon$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^SofTouch\\ Peristaltic\\ Plus\\ Nipple\\ \\-\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^SofTouch\\ Peristaltic\\ Plus\\ Nipple\\ \\-\\ SS$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Bottle\\ Cleaning\\ Brush\\ For\\ Silicone\\ Nipple$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Steam\\ Steriliser\\ With\\ Tongs$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Compact\\ Steam\\ Steriliser$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Bottle\\ \\&\\ Food\\ Warmer$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Mag\\ Mag\\ Spout\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Mag\\ Mag\\ Straw\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^MagMag\\ Sipper\\ Cup\\ Elephant$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^MiniLight\\ Soother\\ \\-\\ Small$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^MiniLight\\ Soother\\ \\-\\ Medium$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Manual\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Manual\\ Breast\\ Pump\\ With\\ Feeding\\ Set$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Milk\\ Saver\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Portable\\ 2\\ Phase\\ Electric\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Comfy\\ Feel\\ Breast\\ Pads$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Natural\\ Feel\\ Nipple\\ Shield$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Nipple\\ Puller\\ With\\ Case$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Baby\\ Cotton\\ Balls$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    },
+    {
+      "match": "^Baby\\ Cotton\\ Swabs$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Cotton & Bandages"
+      ]
+    }
+  ]
+}
