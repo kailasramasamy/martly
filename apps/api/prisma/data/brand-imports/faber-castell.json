@@ -1,0 +1,160 @@
+{
+  "brand": "Faber-Castell",
+  "manufacturer": "Faber-Castell India Pvt. Ltd.",
+  "feed": "faber-castell-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/faber-castell/logo-5ed35955.png",
+  "themeColor": "#0B3D2C",
+  "themeColorSecondary": "#E30613",
+  "namePrefix": "Faber-Castell ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Faber-Castell Student Scissors": "Child Safe Scissors"
+  },
+  "rules": [
+    {
+      "match": "^Aqua\\ Ultra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Astro\\ Super\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Dino\\ Extra\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Matt\\ Super\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Ole\\ Super\\ Dark\\ Triangular\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Trenz\\ Super\\ Dark\\ Pencils$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Trenz\\ Pencils\\ Jar$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Luminos\\ Pencils\\ Jar$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Graded\\ Drawing\\ Pencils\\ 2B\\-8B$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Textliner\\ Super\\ Fluorescent\\ Highlighters$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Mini\\ Neon\\ Textliner$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Multi\\ Marker\\ Fine\\ Tip\\ with\\ Eraser$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Whiteboard\\ Marker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Child\\ Safe\\ Scissors$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Scissors & Cutters"
+      ]
+    },
+    {
+      "match": "^Tack\\ It\\ Reusable\\ Adhesive$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Long\\ Notebook\\ Single\\ Line\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Long\\ Notebook\\ Unruled\\ 172\\ Pages$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    },
+    {
+      "match": "^Drawing\\ Book\\ 36\\ Pages\\ with\\ DIY\\ Postcards$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Notebooks & Registers"
+      ]
+    }
+  ]
+}
