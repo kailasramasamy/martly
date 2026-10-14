@@ -13,7 +13,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40075445_6-dexolac-infant-formula-powder-stage-1.jpg"
-    }
+    },
+    "barcode": "8906048501351"
    }
   ],
   "images": [
@@ -42,7 +43,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075445-8_3-dexolac-infant-formula-powder-stage-1.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dexolac Stage 1 is an infant formula containing Iron Biotics, DHA and ARA, a prebiotic fibre blend and other nutrients.",
+   "ingredients": "Ingredients: Milk Solids, Demineralised Whey and Whey\nSolids, Edible Vegetable Oils (Corn Oil & Canola Oil),\nFructo-Oligosaccharides, Minerals#, Docosahexaenoic Acid Powder (Schizochytrium\nsp. Oil), Emulsifier (Soy Lecithin), Arachidonic Acid Powder (Mortierella alpina\nOil), Choline Chloride, Vitamins*, Acidity Regulator (Sodium Hydroxide),\nTaurine, Antioxidant (Mixed Tocopherols), L-Carnitine.\nNutritional Information\nApproximate Composition per 100 g\nEnergy: 487 kcal (2038 kJ)\nTotal Fat: 23.5 g, including Milk Fat: 12.5 g\nSaturated Fatty Acids: 14.6 g\nMonounsaturated Fatty Acids: 7.3 g\nPolyunsaturated Fatty Acids: 4.4 g\nTrans Fatty Acids: 0.7 g\nCholesterol: 32 mg\n?-Linolenic Acid: 350 mg\nLinoleic Acid: 3500 mg\nDHA: 49.4 mg\nARA: 49.4 mg\nProtein: 10.5 g, with Whey ratio 60:40\nCarbohydrate: 60.5 g, including Total Sugars: 50.5 g\nAdded Sugar: 19.5 g\nSugar (Sucrose): 0 g\nFructo-Oligosaccharides (FOS)^: 4.5 g\nL-Carnitine: 11 mg\nVitamin A: 480 mcg RE\nVitamin D: 7 mcg\nVitamin E: 2.7 mg TE\nVitamin K: 8 mcg\nVitamin C: 40 mg\nVitamin B1 (Thiamine): 300 mcg\nVitamin B2 (Riboflavin): 700 mcg\nVitamin B3 (Niacin): 4.9 mg\nVitamin B5 (Pantothenic Acid): 2.7 mg\nVitamin B6 (Pyridoxine): 200 mcg\nVitamin B7 (Biotin): 26 mcg\nVitamin B9 (Folic Acid): 10 mcg\nVitamin B12 (Cyanocobalamin): 0.5 mcg\nCholine: 40 mg\nCalcium: 300 mg\nPhosphorus: 150 mg\nMagnesium: 40 mg\nSodium: 100 mg\nPotassium: 400 mg\nChloride: 255 mg\nIron: 4.25 mg\nZinc: 3.1 mg\nCopper: 180 mcg\nIodine: 100 mcg\nManganese: 45 mcg\nSelenium: 7 mcg\nTaurine: 10 mg",
+   "storageInstructions": "Storage\nStore in a cool, dry place.\nKeep container tightly closed after every use.\nHow to Use\nWash your hands thoroughly before opening the feed.\nSterilise the feeding bowl and feeding spoon by boiling\nin water for 10 minutes.\nBoil drinking water for 5 minutes and leave it until\nlukewarm.\nPour the correct amount of lukewarm water as per the\nfeeding table.\nConsult the feeding table and add into the bowl the exact\nnumber of scoops, levelled off according to the age of the infant.\nUse only the scoop provided with the pack.\nStir well until the powder dissolves.",
+   "manufacturerName": "Nutricia International Private Limited. Chandigarh Ambala Highway",
+   "fssaiLicense": "10015022004574",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Stage 1 Infant Formula Tin",
@@ -87,7 +96,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075450-8_2-dexolac-premium-1-infant-formula.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dexolac Stage 1 is an infant formula containing Iron Biotics, DHA and ARA, a prebiotic fibre blend and other nutrients.",
+   "ingredients": "Ingredients\nMilk Solids, Vegetable Oils, Lactose, Maltodextrin, Minerals, Vitamins.\nNutritional Information per 100 g\nEnergy: 147 kcal\nProtein: 3.1 g\nFat: 7.4 g\nCarbohydrate: 14.7 g\nCalcium: 61 mg\nPhosphorus: 41 mg\nMagnesium: 5 mg\nIron: 1.1 mg\nZinc: 0.5 mg\nIodine: 14 mcg\nVitamin A: 61 mcg\nVitamin D: 1.7 mcg\nVitamin E: 0.9 mg\nVitamin C: 10 mg\nThiamin: 0.05 mg\nRiboflavin: 0.14 mg\nNiacin: 0.4 mg\nVitamin B6: 0.05 mg\nFolate: 8 mcg\nVitamin B12: 0.17 mcg\nBiotin: 1.5 mcg\nPantothenic Acid: 0.3 mg\nCholine: 14 mg\nTaurine: 5.8 mg\nNucleotides: 3.4 mg",
+   "countryOfOrigin": "Netherlands"
+  }
  },
  {
   "title": "Stage 2 Follow-Up Formula",
@@ -103,7 +117,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40075447_6-dexolac-follow-up-formula-infant-powder-stage-2.jpg"
-    }
+    },
+    "barcode": "8906048501368"
    }
   ],
   "images": [
@@ -132,7 +147,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075447-8_3-dexolac-follow-up-formula-infant-powder-stage-2.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dexolac Stage 2 is a follow-up formula with iron and vitamin C. It also contains protein, zinc and other nutrients.",
+   "ingredients": "Ingredients: Milk Solids, Edible Vegetable Oils (Coconut\nOil, Corn Oil & Canola Oil), Minerals, Emulsifier (Soya Lecithin),\nVitamins*, Acidity Regulator (Sodium Hydroxide, Potassium Hydroxide), Choline,\nAntioxidant (Mixed Tocopherols), Inositol.\nNutritional Information\nApproximate Composition per 100 g\nEnergy: 490 kcal (2052 kJ)\nTotal Fat: 23 g\nSaturated Fatty Acids: 15.4 g\nMonounsaturated Fatty Acids: 5.4 g\nPolyunsaturated Fatty Acids: 4.5 g\nTrans Fatty Acids: 0.17 g\nCholesterol: 6 mg\n?-Linolenic Acid: 420 mg\nLinoleic Acid: 4000 mg\nMilk Protein: 15.5 g\nCarbohydrate: 55.3 g, including Total Sugars: 52 g\nAdded Sugar: 32.5 g\nSugar (Sucrose): 0 g\nInositol: 24.3 mg\nEssential Amino Acids: 9315 mg\nVitamin A: 400 mcg RE\nVitamin D: 6 mcg\nVitamin E: 2.7 mg TE\nVitamin K: 8 mcg\nVitamin C: 30 mg\nVitamin B1 (Thiamine): 250 mcg\nVitamin B2 (Riboflavin): 500 mcg\nVitamin B3 (Niacin): 4.5 mg\nVitamin B5 (Pantothenic Acid): 2.2 mg\nVitamin B6 (Pyridoxine): 180 mcg\nVitamin B7 (Biotin): 10 mcg\nVitamin B9 (Folic Acid): 10 mcg\nVitamin B12 (Cyanocobalamin): 0.5 mcg\nCholine: 50 mg\nCalcium: 500 mg\nPhosphorus: 270 mg\nMagnesium: 37 mg\nSodium: 160 mg\nPotassium: 450 mg\nChloride: 300 mg\nIron: 4.5 mg\nZinc: 3.5 mg\nCopper: 200 mcg\nIodine: 100 mcg\nManganese: 15 mcg\nSelenium: 7 mcg\nTaurine: 3 mg",
+   "storageInstructions": "Storage\nStore in a cool, dry place.\nKeep away from direct sunlight.\nHow to Use\nWash your hands thoroughly before opening the feed.\nSterilise the feeding bowl and feeding spoon by boiling\nin water for 10 minutes.\nBoil drinking water for 5 minutes and leave it until\nlukewarm.\nPour the correct amount of lukewarm water as per the\nfeeding table.\nConsult the feeding table and add into the bowl the exact\nnumber of scoops, levelled off according to the age of the infant.\nUse only the scoop provided with the pack.\nStir well until the powder dissolves.",
+   "manufacturerName": "Nutricia International Private Limited. Chandigarh Ambala Highway",
+   "fssaiLicense": "10015022004574",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Stage 3 Follow-Up Formula",
@@ -148,7 +171,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40075448_7-dexolac-follow-up-formula-infant-powder-stage-3.jpg"
-    }
+    },
+    "barcode": "8906048501375"
    }
   ],
   "images": [
@@ -177,7 +201,15 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075448-8_3-dexolac-follow-up-formula-infant-powder-stage-3.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dexolac Stage 3 is a follow-up formula with iron and vitamin C. It also contains protein, zinc and other nutrients.",
+   "ingredients": "Ingredients: Milk Solids, Edible Vegetable Oils (Corn\nOil, Canola Oil & Coconut Oil), Minerals#, Emulsifier (Soy Lecithin),\nVitamins*, Acidity Regulator (Sodium Hydroxide, Potassium Hydroxide), Choline,\nAntioxidant (Mixed Tocopherols), Inositol.\nNutritional Information\nApproximate Composition per 100 g\nEnergy: 490 kcal (2052 kJ)\nTotal Fat: 23 g\nSaturated Fatty Acids: 15.4 g\nMonounsaturated Fatty Acids: 5.4 g\nPolyunsaturated Fatty Acids: 4.5 g\nTrans Fatty Acids: 0.17 g\nCholesterol: 6 mg\n?-Linolenic Acid: 420 mg\nLinoleic Acid: 4000 mg\nMilk Protein: 15.5 g\nCarbohydrate: 55.3 g, including Total Sugars: 52 g\nAdded Sugar: 32.5 g\nSugar (Sucrose): 0 g\nInositol: 24.3 mg\nEssential Amino Acids: 9315 mg\nVitamin A: 400 mcg RE\nVitamin D: 6 mcg\nVitamin E: 2.7 mg TE\nVitamin K: 8 mcg\nVitamin C: 30 mg\nVitamin B1 (Thiamine): 260 mcg\nVitamin B2 (Riboflavin): 510 mcg\nVitamin B3 (Niacin): 5 mg\nVitamin B5 (Pantothenic Acid): 2.2 mg\nVitamin B6 (Pyridoxine): 180 mcg\nVitamin B7 (Biotin): 10 mcg\nVitamin B9 (Folic Acid): 10 mcg\nVitamin B12 (Cyanocobalamin): 0.5 mcg\nCholine: 55 mg\nCalcium: 500 mg\nPhosphorus: 285 mg\nMagnesium: 37 mg\nSodium: 160 mg\nPotassium: 460 mg\nChloride: 300 mg\nIron: 4.5 mg\nZinc: 3 mg\nCopper: 200 mcg\nIodine: 100 mcg\nManganese: 15 mcg\nSelenium: 7 mcg\nTaurine: 3 mg",
+   "storageInstructions": "Storage\nStore in a cool, dry place\nAfter opening, consume the contents within three weeks\nHow to Use\nWash your hands thoroughly before opening the feed\nSterilise the feeding bowl and feeding spoon by boiling in water for 10 minutes\nBoil drinking water for 5 minutes and leave it until lukewarm\nPour the correct amount of lukewarm water as per the feeding table\nConsult the feeding table and add into the bowl the exact number of scoops, levelled off according to the age of the infant\nUse only the scoop provided with the pack\nStir well until the powder dissolves",
+   "manufacturerName": "Nutricia International Private Limited. Chandigarh Ambala Highway",
+   "fssaiLicense": "10015022004574",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Stage 4 Follow-Up Formula",
@@ -193,7 +225,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40075449_3-dexolac-supplement-4-follow-up-formula-after-18-to-24-months.jpg"
-    }
+    },
+    "barcode": "8906048501610"
    }
   ],
   "images": [
@@ -222,7 +255,14 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075449-8_1-dexolac-supplement-4-follow-up-formula-after-18-to-24-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dexolac Stage 4 is a follow-up formula with iron and vitamin C. It also contains protein, zinc and other nutrients.",
+   "ingredients": "Ingredients: Milk Solids, Edible Vegetable Oils (Corn\nOil, Canola Oil & Coconut Oil), Minerals, Emulsifier (Soy Lecithin),\nVitamins*, Acidity Regulator (Sodium Hydroxide, Potassium Hydroxide), Choline,\nAntioxidant (Mixed Tocopherols), Inositol.\nNutritional Information:\nApproximate Composition per 100 g\nEnergy: 490 kcal (2052 kJ)\nTotal Fat: 23 g\nSaturated Fatty Acids: 15.4 g\nMonounsaturated Fatty Acids: 5.4 g\nPolyunsaturated Fatty Acids: 4.5 g\nTrans Fatty Acids: 0.17 g\nCholesterol: 6 mg\n?-Linolenic Acid: 420 mg\nLinoleic Acid: 4000 mg\nMilk Protein: 15.5 g\nCarbohydrate: 55.3 g, including Total Sugars: 52 g\nAdded Sugar: 32.5 g\nSugar (Sucrose): 0 g\nInositol: 24.3 mg\nEssential Amino Acids: 9315 mg\nVitamin A: 400 mcg RE\nVitamin D: 6 mcg\nVitamin E: 2.7 mg TE\nVitamin K: 8 mcg\nVitamin C: 30 mg\nVitamin B1 (Thiamine): 260 mcg\nVitamin B2 (Riboflavin): 510 mcg\nVitamin B3 (Niacin): 5 mg\nVitamin B5 (Pantothenic Acid): 2.2 mg\nVitamin B6 (Pyridoxine): 180 mcg\nVitamin B7 (Biotin): 10 mcg\nVitamin B9 (Folic Acid): 10 mcg\nVitamin B12 (Cyanocobalamin): 0.5 mcg\nCholine: 55 mg\nCalcium: 500 mg\nPhosphorus: 285 mg\nMagnesium: 37 mg\nSodium: 160 mg\nPotassium: 460 mg\nChloride: 300 mg\nIron: 4.5 mg\nZinc: 3 mg\nCopper: 200 mcg\nIodine: 100 mcg\nManganese: 15 mcg\nSelenium: 7 mcg",
+   "usageInstructions": "Wash hands thoroughly before preparing the feed\nBoil water and allow it to cool to lukewarm temperature\nAdd the required amount of formula powder to the water and stir well until dissolved\nFeed the baby immediately",
+   "manufacturerName": "Nutricia International Private Limited",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Premium Stage 2 Follow-Up Formula",
@@ -238,7 +278,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40075451_5-dexolac-premium-2-follow-up-formula.jpg"
-    }
+    },
+    "barcode": "8906048501832"
    }
   ],
   "images": [
@@ -267,7 +308,23 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075451-8_1-dexolac-premium-2-follow-up-formula.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dexolac Premium Stage 2 Follow Up Formula is a powdered milk substitute for babies after 6 months of age. It is specially designed for the baby's overall growth and brain development. Dexolac Premium contains neuronutrients like Omega 3 & 6 fatty acids (precursors of DHA & ARA), Taurine, Choline, Iron and Iodine to help in overall brain development. It contains nutrients like Nucleotides, Selenium, Zinc, and Vitamins A, C, E that support immune function. Dexolac Premium improves digestive health with easy to digest Whey proteins, Lactose, and Nucleotides to support the growth of useful bacteria. It is formulated with Calcium, Phosphorus, Magnesium, and Vitamin D to help strengthen bones. Dexolac Premium contains optimal levels of Neuronutrients to facilitate the normal brain development of a baby.",
+   "nutritionalInfo": {
+    "Milk Solids, Vegetable Oils, Maltodextrin, Lactose, Minerals, Vitamins, Taurine, CholineNutrition per gram/ml": "100g",
+    "Energy": "179 kcal",
+    "Protein": "10.7 g",
+    "Fat": "5.7 g",
+    "Carbohydrate": "22.8 g",
+    "Calcium": "147 mg",
+    "Phosphorus": "92 mg",
+    "Magnesium": "14 mg",
+    "Vitamin D": "2.8 ?g"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight1. Wash your hands thoroughly before preparing the feed.\n2. Sterilise the feeding bowl and spoon by boiling in water for 10 minutes.\n3. Boil drinking water for 5 minutes and leave it till lukewarm.\n4. Pour the correct amount of the lukewarm water as per the feeding table.\n5. Consult feeding table and add into the feeding bowl the exact number of scoops, levelled off, according to the age of the infant.\n6. Use only the scoop from this tin. Stir well till the powder dissolves.",
+   "countryOfOrigin": "France"
+  }
  },
  {
   "title": "Premium Stage 3 Follow-Up Formula",
@@ -283,7 +340,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40075452_3-dexolac-premium-3-follow-up-formula.jpg"
-    }
+    },
+    "barcode": "8906048501849"
    }
   ],
   "images": [
@@ -312,7 +370,12 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075452-8_1-dexolac-premium-3-follow-up-formula.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Dexolac Premium Stage 3 Follow Up Formula is a powdered milk substitute for babies after 12 months up to 24 months of age. It is specially designed for the baby’s overall growth & brain development. Dexolac Premium contains Neuronutrients like Omega 3 & 6 Fatty acids (precursors of DHA & ARA), Taurine, Choline, Iron & Iodine to help in overall brain development. Contains nutrients like Nucleotides, Selenium, Zinc, and Vitamins A, C, E that support immune function. Improves digestive health with easy to digest Whey proteins, Lactose, and Nucleotides to support the growth of useful bacteria. Formulated with Calcium, Phosphorus, Magnesium, and Vitamin D to help strengthen bones. Dexolac Premium contains optimal levels of Neuronutrients to facilitate the normal brain development of a baby.\nUnboiled water, unsterilized bowl and spoon or incorrect dilution may endanger the infant’s health. Prepare only one feed at a time. Use prepared feed immediately (within half an hour), otherwise, microbial deterioration may set in. Discard unused feed. Infant milk substitute should be used only on the advice of a health worker as to the need for its use and the proper method of its use. Careful and hygienic preparation of infant milk substitute is most essential for health. Do not use more scoops than directed, since concentrated feed will not provide the water needed by your infant. Do not use fewer scoops than directed, since diluted feeds will not provide adequate nutrients needed by your infants.",
+   "usageInstructions": "Preparation Of Feeds: \nWash your hands thoroughly before preparing the feed. Sterilize the feeding bottle, bowl and spoon by boiling in water for 10 minutes.\nBoil drinking water for 5 minutes and leave it till lukewarm.\nPour the correct amount of the lukewarm water as per the feeding table.\nConsult feeding table and add into the feeding bowl the exact number of scoops, levelled off, according to the age of the infant.\nUse only the scoop from this tin. Stir well till the powder dissolves.",
+   "countryOfOrigin": "Netherlands"
+  }
  },
  {
   "title": "Special Care Infant Formula",
@@ -357,7 +420,68 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40075453-8_1-dexolac-high-protein-nutritional-supplement-special-care-infant-formula-for-premature-low-birth-weight-baby.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Specially designed for premature babies (born before 37 weeks) and low birth weight babies (less than 2.5 kg). Provides energy levels of 79 kcal/100 ml for catch-up growth. Contains nucleotides and easy to digest whey proteins & nutrients that support immunity and help develop strong bones.",
+   "nutritionalInfo": {
+    "Water, Partially Skimmed Milk, Whey & Whey Solids, Lactose, Edible Vegetable Oil, Minerals, Vitamins, Emulsifier, Nucleotides Premix, Taurine, L-Carnitine, Beta CaroteneNutrition per gram/ml": "100g",
+    "Energy": "792 kcal",
+    "Protein": "16.5 g",
+    "Whey Protein": "9.9 g",
+    "Casein": "6.6 g",
+    "Carbohydrate": "54.8 g",
+    "Total Sugars": "53.5 g",
+    "Added Sugars": "4 g",
+    "Fat": "23 g",
+    "Saturated Fatty Acids, Max": "20.2 g",
+    "Mono-unsaturated Fatty Acids": "7.1 g",
+    "Poly-unsaturated Fatty Acids": "3.1 g",
+    "Trans Fatty Acids, Max": "0.7 g",
+    "Medium Chain Triglycerides": "7.3 g",
+    "Cholesterol": "36 mg",
+    "Linoleic Acid (?6)": "300 mg",
+    "?-Linolenic Acid (?3)": "30 mg",
+    "Docosahexaenoic Acid (DHA)": "8 mg",
+    "Arachidonic Acid (ARA)": "27 mg",
+    "Nucleotides": "22 mg",
+    "Carnitine": "101 mg",
+    "Choline": "812 mg",
+    "Inositol": "25 mg",
+    "Vitamin A": "2134 ?g RE",
+    "Vitamin D": "15 ?g",
+    "Vitamin E": "158 mg TE",
+    "Vitamin K": "67 ?g",
+    "Thiamin": "740 ?g",
+    "Riboflavin": "1024 ?g",
+    "Niacin": "125 mg",
+    "Vitamin B6": "660 ?g",
+    "Folic Acid": "225 ?g",
+    "Pantothenic Acid": "4.5 mg",
+    "Biotin": "8 ?g",
+    "Vitamin B12": "1.4 ?g",
+    "Vitamin C": "100 mg",
+    "Calcium": "810 mg",
+    "Phosphorus": "315 mg",
+    "Magnesium": "40 mg",
+    "Sodium": "360 mg",
+    "Potassium": "400 mg",
+    "Chloride": "540 mg",
+    "Iron": "10 mg",
+    "Zinc": "7.2 mg",
+    "Copper": "519 ?g",
+    "Iodine": "126 ?g",
+    "Manganese": "40 ?g",
+    "Selenium": "27 ?g",
+    "Chromium": "15 ?g",
+    "Molybdenum": "10 ?g",
+    "Cystine": "312 mg",
+    "Tyrosine": "600 mg",
+    "Histidine": "360 mg",
+    "Taurine": "41 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place\n*Keep away from direct sunlight1. Wash your hands thoroughly before preparing the feed.\n2. Sterilise the feeding bowl and spoon by boiling in water for 10 minutes.\n3. Boil drinking water for 5 minutes and leave to cool.\n4. Pour the correct amount of the boiled water as per the feeding table.\n5. Consult the feeding table and add the exact number of scoops, leveled off according to the weight of the infant. Use only the scoop provided.\n6. Stir well until the powder dissolves.",
+   "countryOfOrigin": "France"
+  }
  },
  {
   "title": "Nusobee Casein Infant Milk Substitute",
@@ -373,7 +497,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40156080_3-dexolac-infant-formula-nusobee-casein-stage-1-till-6-months.jpg"
-    }
+    },
+    "barcode": "8906048501863"
    }
   ],
   "images": [
@@ -393,6 +518,13 @@
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156080-5_1-dexolac-infant-formula-nusobee-casein-stage-1-till-6-months.jpg"
    }
   ],
-  "food_type": "VEG"
+  "food_type": "VEG",
+  "details": {
+   "description": "Nusobee Casein 1 Lactose and Sucrose Free Infant Milk Substitute is specially designed for infants with lactose intolerance and diarrhoea. It has maltodextrins and MCTs for easy digestion. It is free of lactose for better tolerance during diarrhoea. It provides electrolyte replenishment with sodium, potassium and chloride. It improves immune function with Vitamin A, C, E, selenium and zinc. It contains nucleotides known to support immune function. It promotes growth with energy levels of 66 kcal/100 ml and by providing protein of 2.3g/100 ml. It promotes the strength of bones with calcium, phosphorus, magnesium and Vitamin D. It promotes brain development with omega 3 and 6 fatty acids (precursors of DHA and ARA), taurine, choline, iron and iodine. The infant food is made keeping in mind the specific nutritional needs of the infants for optimal growth and development. It is designed to provide the best nutrition at an early stage of life. The product is suitable for Indian infants. The nutrition that it provides has a profound impact on their health.",
+   "usageInstructions": "The quantity of feed and the dilution should be determined by a clinician or a dietician only and is dependent on body weight and medical condition of the patient.",
+   "manufacturerName": "Nutricia International Private Limited. Chandigarh Ambala Highway",
+   "fssaiLicense": "10012063000210",
+   "countryOfOrigin": "Netherlands Best before 27-05-2027"
+  }
  }
 ]
