@@ -38,7 +38,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338625-7_1-rangeela-holi-ke-rang-colours-non-toxic-easily-washable-safe-on-skin-electric-green.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tota Gulal colours bring a burst of brightness and joy to every moment. Soft to touch and gentle on skin, they blend seamlessly into the air, creating an atmosphere filled with vibrancy. Each shade speaks of celebration, energy, and happiness, turning simple gatherings into lively memories. A true expression of colour, fun, and togetherness.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Holi Ke Rang - Lavender Magic Gulal",
@@ -79,7 +83,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338372-7_1-rangeela-holi-ke-rang-colours-non-toxic-easily-washable-safe-on-skin-lavender-magic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tota Gulal colours bring a burst of brightness and joy to every moment. Soft to touch and gentle on skin, they blend seamlessly into the air, creating an atmosphere filled with vibrancy. Each shade speaks of celebration, energy, and happiness, turning simple gatherings into lively memories. A true expression of colour, fun, and togetherness.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Holi Ke Rang - Luminous Yellow Gulal",
@@ -120,7 +128,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338626-7_1-rangeela-holi-ke-rang-colours-non-toxic-easily-washable-safe-on-skin-luminous-yellow.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tota Gulal colours bring a burst of brightness and joy to every moment. Soft to touch and gentle on skin, they blend seamlessly into the air, creating an atmosphere filled with vibrancy. Each shade speaks of celebration, energy, and happiness, turning simple gatherings into lively memories. A true expression of colour, fun, and togetherness.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Holi Ke Rang - Radiant Pink Gulal",
@@ -161,7 +173,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338627-7_1-rangeela-holi-ke-rang-colours-non-toxic-easily-washable-safe-on-skin-radiant-pink.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tota Gulal colours bring a burst of brightness and joy to every moment. Soft to touch and gentle on skin, they blend seamlessly into the air, creating an atmosphere filled with vibrancy. Each shade speaks of celebration, energy, and happiness, turning simple gatherings into lively memories. A true expression of colour, fun, and togetherness.",
+   "manufacturerName": "Venus Enterprises",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Holi Ke Rang - Rosy Gulal",
@@ -202,7 +219,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40338373-7_1-rangeela-holi-ke-rang-colours-non-toxic-easily-washable-safe-on-skin-rosy-gulal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Tota Gulal colours bring joy and vibrance to every celebration, crafted with fine, skin-friendly powders that burst with brightness. Their rich hues spread effortlessly, making festivals like Holi unforgettable. Gentle yet striking, Tota Gulal captures the spirit of tradition and fun, adding a touch of magic to every moment of togetherness, laughter, and festive cheer.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Holi Ke Rang - 4 Fluorescent Shades",
@@ -218,7 +239,8 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40008103_2-rangeela-holi-ke-rang-non-toxic.jpg"
-    }
+    },
+    "barcode": "8901860610922"
    }
   ],
   "images": [
@@ -237,6 +259,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008103-5_1-rangeela-holi-ke-rang-non-toxic.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Trusted Brand for 20 Years Plus – Rangeela Holi ke Rang is a trusted brand that has pioneered Holi colors for 20 years. These colours are bright, safe, non-toxic and washable, making your celebrations even more lively. The colour complies with the highest safety standard of EN71Complaince.\nSafe for Children- This specially formulated non-toxic colors are safe for children over ages of 3 years.\nPleasant Fragrance – Rangeela Holi ke Rang has a pleasant fragrance. (Floro Pink, Floro Yellow, Floro Orange, Floro Green), Non-Toxic Colours, Soft and Smooth on skin, Washable, Easy to Remove\nIt contains 4 Different packs of 4 colours, each weighing 60 grams:  Floro Pink, Floro Yellow, Floro Orange & Floro Green= 240 g",
+   "manufacturerName": "Venus Enterprises Shed no. C1/B-16",
+   "countryOfOrigin": "India"
+  }
  }
 ]
