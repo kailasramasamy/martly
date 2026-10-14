@@ -1,0 +1,182 @@
+{
+  "brand": "Svasti",
+  "manufacturer": "Svasti",
+  "feed": "svasti-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/svasti/logo-1b92f1ff.png",
+  "themeColor": "#F26522",
+  "themeColorSecondary": "#F7A600",
+  "namePrefix": "Svasti ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^365\\ Cotton\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Cow\\ Ghee\\ Diya\\ Batti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Rudraksh\\ Sapta\\ Deepam\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Glass\\ Akhand\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Hanuman\\ Sindoor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Kumkum\\ Paste\\ \\-\\ Scented$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Sindoor\\ Paste\\ \\-\\ Scented$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Paste\\ \\-\\ Scented$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Kumkum\\ \\&\\ Turmeric\\ Combo\\ Pack$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Ashtagandha\\ Chandan\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Red\\ Sandal\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Vibhuti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Pure\\ Cow\\ Dung\\ Vibhuti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Kalawa\\ Mouli\\ Thread$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Janeu\\ Thread$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Janeu\\ White\\ Cotton\\ Thread\\ Roll$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Kala\\ Dhaga\\ \\-\\ Black\\ Silk\\ Thread$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Guggal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Sambrani\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Dasangam\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Betel\\ Nut\\ Half$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Offerings",
+        "Betel Leaves & Areca"
+      ]
+    }
+  ]
+}
