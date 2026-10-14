@@ -1,0 +1,1715 @@
+[
+ {
+  "title": "Badam Flavoured Milk",
+  "handle": "badam-flavoured-milk",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900456992_1-cavins-badam-flavoured-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456992_1-cavins-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456992-2_1-cavins-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456992-3_1-cavins-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456992-4_1-cavins-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456992-5_1-cavins-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456992-6_1-cavins-badam-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456992-7_1-cavins-badam-flavoured-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Flavoured Milk is a range of refreshing beverages, enriched with essential milk based vitamins & minerals, available in 3 exciting flavours, most loved by the Indian palate i.e. Badam, Rose & Kesar. So go ahead & enjoy the irresistable flavours!!",
+   "ingredients": "Double Toned Milk, Sugar, Almond Bits (0.4%), Flavour (Artificial (Badam) Flavouring Substance), Sequestrant (Ins 339(I)), Stabilizer (Ins 407), Synthetic Food Colour (Ins 102, Ins 110)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "85ml",
+    "Energy, kcal": "85.1 kcal",
+    "Protein, g": "3.2 g",
+    "Carbohydrate, g": "14.7 g",
+    "Total Sugars, g": "14.6 g",
+    "Added Sugar, g": "9.4 g",
+    "Total Fat, g": "1.5 g",
+    "Saturated Fat, g": "1.0 g",
+    "Trans Fat, g": "<0.1 g",
+    "Cholesterol, mg": "5.0 mg",
+    "Sodium, mg": "58 mg",
+    "calcium, mg": "115 mg"
+   },
+   "storageInstructions": "* Store in a cool & dry place, away from direct sunlight\n* Needs no refrigeration till opened",
+   "fssaiLicense": "11518018000519",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rose Flavoured Milk",
+  "handle": "rose-flavoured-milk",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/900456991_1-cavins-rose-flavoured-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456991_1-cavins-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456991-2_1-cavins-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456991-3_1-cavins-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456991-4_1-cavins-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456991-5_1-cavins-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456991-6_1-cavins-rose-flavoured-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/900456991-7_1-cavins-rose-flavoured-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Flavoured Milk is a range of refreshing beverages, enriched with essential milk based vitamins & minerals, available in 3 exciting flavours, most loved by the Indian palate i.e. Badam, Rose & Kesar. So go ahead & enjoy the irresistable flavours!!",
+   "ingredients": "Double Toned Milk, Sugar, Flavour (Nature Identical (Rose) Flavouring Substance), Sequestrant (Ins 339(Ii)), Stabilizer (Ins 407), Synthetic Food Colour (Ins 127)",
+   "nutritionalInfo": {
+    "Nutrition Per": "100ml",
+    "Serving Size": "85ml",
+    "Energy": "85.1 kcal",
+    "Protein": "3.2 g",
+    "Carbohydrate": "14.7 g",
+    "Total Sugars": "14.6 g",
+    "Added Sugar": "9.4 g",
+    "Total Fat": "1.5 g",
+    "Saturated Fat": "1.0 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "5.0 mg",
+    "Sodium": "58 mg",
+    "calcium": "116 mg"
+   },
+   "storageInstructions": "*Store in a cool & dry place, away from direct sunlight\n*Needs no refrigeration till opened\n*Shake Well Before Use",
+   "fssaiLicense": "11518018000519",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chocolate Milkshake",
+  "handle": "chocolate-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714_14-cavins-milkshake-chocolate.jpg"
+    },
+    "barcode": "8902979052399"
+   },
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103749_8-cavins-milkshake-chocolate.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714_14-cavins-milkshake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714-2_15-cavins-milkshake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714-3_15-cavins-milkshake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714-4_15-cavins-milkshake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714-5_15-cavins-milkshake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714-6_15-cavins-milkshake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714-7_4-cavins-milkshake-chocolate.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007714-8_3-cavins-milkshake-chocolate.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the rich, creamy goodness of Cavin's Chocolate Milkshakes, a delightful mid-meal snack that provides an instant source of energy for your children. Fortified with the goodness of milk and exotic chocolate, these thick and flavourful shakes are now enhanced with the immune-boosting power of Zinc. Packed with essential nutrients like Calcium, Vitamin A, and Vitamin D, Cavin's Chocolate Milkshakes support strong bones and teeth, while the high-quality milk proteins aid in building and maintaining muscle strength. Whether enjoyed as a refreshing on-the-go treat or a satisfying mid-day pick-me-up, these irresistible shakes offer the perfect balance of taste and health in a convenient tetra pack.",
+   "ingredients": "Toned Milk (84%), Sugar, Cocoa Solids (1.4%), Flavour (Nature Identical Flavouring Substances), Stabilisers (INS 415, INS 412, INS 407), Sequestrant (INS 451(i)), lodized salt\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "101.2 kcal",
+    "Protein": "2.6 g",
+    "Carbohydrate": "16.4 g",
+    "Total Sugars": "16.2 g",
+    "Added Sugar": "12.0 g",
+    "Total Fat": "2.8 g",
+    "Saturated Fat": "1.8 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "8 mg",
+    "Sodium": "93.0 mg",
+    "Calcium": "101 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight\nNeeds no refrigeration till opened",
+   "manufacturerName": "CavinKare Private Ltd",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Milkshake",
+  "handle": "strawberry-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713_13-cavins-milkshake-strawberry.jpg"
+    },
+    "barcode": "8902979007665"
+   },
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103750_8-cavins-milkshake-strawberry.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713_13-cavins-milkshake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713-2_15-cavins-milkshake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713-3_15-cavins-milkshake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713-4_15-cavins-milkshake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713-5_15-cavins-milkshake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713-6_15-cavins-milkshake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713-7_3-cavins-milkshake-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007713-8_3-cavins-milkshake-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the velvety, creamy goodness of Cavin's Strawberry Milkshakes. Fortified with essential nutrients like zinc for immune support, calcium, vitamin A, and vitamin D for strong bones and teeth, these delightful shakes provide a healthy and tasty mid-meal snack that will energise your children. Bursting with the fresh, delicious flavour of strawberries, each sip of these thick and creamy milkshakes is an irresistible treat. Whether you're starting your day or looking for a nutritious alternative to carbonated drinks, Cavin's Strawberry Milkshakes offer the perfect balance of taste and health in a convenient tetra pack.",
+   "ingredients": "Toned Milk (89%), Sugar, Stabilizers (INS 415, INS 412, INS 407), Flavour (Nature Identical and Artificial (Strawberry) Flavouring Substances), Sequestrant (INS 339 (ii)), Emulsifier (INS 471), lodized Salt, Strawberry Solids (0.005%) and Synthetic food colour (INS 127)\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "111.7 kcal",
+    "Protein": "3.0 g",
+    "Carbohydrate": "15.7 g",
+    "Total Sugars": "15.5 g",
+    "Added Sugar": "11.0 g",
+    "Total Fat": "4.1 g",
+    "Saturated Fat": "2.70 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "13 mg",
+    "Sodium": "80.0 mg",
+    "Calcium": "107 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight\nNo refrigeration required till opened",
+   "manufacturerName": "VVD and Sons Private Limited",
+   "fssaiLicense": "10019042005345",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vanilla Milkshake",
+  "handle": "vanilla-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715_14-cavins-milkshake-vanilla.jpg"
+    },
+    "barcode": "8902979050883"
+   },
+   {
+    "title": "1L",
+    "price": "160",
+    "compare_at_price": "160",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103748_8-cavins-milkshake-vanilla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715_14-cavins-milkshake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715-2_14-cavins-milkshake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715-3_14-cavins-milkshake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715-4_14-cavins-milkshake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715-5_14-cavins-milkshake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715-6_14-cavins-milkshake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715-7_3-cavins-milkshake-vanilla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30007715-8_3-cavins-milkshake-vanilla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful and creamy goodness of Cavin's Vanilla Milkshakes, a healthy mid-meal snack that will provide your children with an instant source of energy. Fortified with the essential nutrients of Zinc for immune support, as well as Calcium, Vitamin A, and Vitamin D for strong bones and teeth, these milkshakes offer both taste and health in a single tetra pack. Crafted with the finest ingredients, these thick and creamy shakes are a flavourful treat that will leave you and your little ones craving more. Whether you're looking for a nutritious on-the-go option or a delightful treat, Cavin's Vanilla Milkshakes are the perfect choice, available in a variety of delectable flavours including Strawberry, Banana, Vanilla, and Chocolate.",
+   "ingredients": "Toned Milk (89%), Sugar, Stabilizers (INS 415, INS 412, INS 407), Flavor (Nature Identical and Artificial (Vanilla) Flavoring Substances), Sequestrant (INS 339 (ii)), Emulsifier (INS 471), lodized Salt.\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "111.7 kcal",
+    "Protein": "3.0 g",
+    "Carbohydrate": "15.7 g",
+    "Total Sugars": "15.5 g",
+    "Added Sugar": "11.0 g",
+    "Total Fat": "4.1 g",
+    "Saturated Fat": "2.70 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "13 mg",
+    "Sodium": "80.0 mg",
+    "Calcium": "107 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight\nNo refrigeration required till opened",
+   "manufacturerName": "VVD and Sons Private Limited",
+   "fssaiLicense": "10019042005345",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kaju Butterscotch Milkshake",
+  "handle": "kaju-butterscotch-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756_14-cavins-milkshake-kaju-butterscotch.jpg"
+    }
+   },
+   {
+    "title": "500ml",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40164813_3-cavins-kaju-butterscotch-milkshake.jpg"
+    }
+   },
+   {
+    "title": "1L",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103751_7-cavins-milkshake-kaju-butterscotch.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756_14-cavins-milkshake-kaju-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756-2_15-cavins-milkshake-kaju-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756-3_15-cavins-milkshake-kaju-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756-4_15-cavins-milkshake-kaju-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756-5_15-cavins-milkshake-kaju-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756-6_12-cavins-milkshake-kaju-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756-7_3-cavins-milkshake-kaju-butterscotch.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/30008756-8_3-cavins-milkshake-kaju-butterscotch.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful and nutritious experience of Cavin's Kaju Butterscotch Milkshakes. Crafted with the finest ingredients, these thick and creamy shakes are a delectable blend of milk, cashews, and the irresistible flavour of butterscotch. Fortified with the goodness of Zinc, Calcium, Vitamin A, and Vitamin D, these milkshakes not only satisfy your taste buds but also provide a healthy mid-meal snack for your children. Boasting a divine combination of taste and health, these shakes are the perfect choice to boost immunity, strengthen bones and muscles, and nourish the skin. Enjoy the rich, creamy texture and the comforting flavour of this irresistible treat, and experience the perfect balance of indulgence and nutrition in every sip.",
+   "ingredients": "Toned Milk (89%), Sugar, Flavour (Nature Identical and Artificial (Kaju Katri) Flavouring Substances), Stabilizers (INS 415, INS 412, INS 407), Sequestrant (INS 339 (ii)), Cashew Powder (0.05%), lodized Salt, Emulsifier (INS 471), and Synthetic Food Colour (INS 110).\nAllergen Advice: Contains Milk & Nut",
+   "nutritionalInfo": {
+    "Energy": "111.7 kcal",
+    "Protein": "3.0 g",
+    "Carbohydrate": "15.7 g",
+    "Total Sugars": "15.5 g",
+    "Added Sugar": "11.0 g",
+    "Total Fat": "4.1 g",
+    "Saturated Fat": "2.70 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "13 mg",
+    "Sodium": "80.0 mg",
+    "Calcium": "107 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place away from direct sunlight",
+   "manufacturerName": "VVD and Sons Private Limited",
+   "fssaiLicense": "10019042005345",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Banana Milkshake",
+  "handle": "banana-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "35",
+    "compare_at_price": "35",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123021_7-cavins-milkshake-banana.jpg"
+    },
+    "barcode": "8902979052443"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123021_7-cavins-milkshake-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123021-2_6-cavins-milkshake-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123021-3_5-cavins-milkshake-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123021-4_5-cavins-milkshake-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123021-5_6-cavins-milkshake-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123021-6_5-cavins-milkshake-banana.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123021-7_3-cavins-milkshake-banana.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Banana Milkshakes are thick and creamy flavoured shakes fortified with the goodness of milk and banana to make every sip irresistibly delightful. It is enriched with fruit pulp to make it even more delicious. It is a healthy mid-meal snack that will provide your children with an instant source of energy. It is now fortified with Zinc for immune support and is a good source of Calcium, Vitamin A, and Vitamin D for strong bones and teeth. So, why wait when you can have both taste and health in a single tetra pack?",
+   "ingredients": "Double Toned Milk(70%), Sugar, Banana Pulp (10%), Water, Honey (1.25%), Flavour (Artificial (Banana) Flavouring Substances), Sequestrant (INS 452(i)), lodized Salt, Stabilizers (INS 407, INS 418), Emulsifier (INS 436) & Synthetic Food Colours (INS 102, INS 110).",
+   "usageInstructions": "Tastes well when served chill.",
+   "manufacturerName": "Cavinkare Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Milkshake",
+  "handle": "mango-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123020_6-cavins-milkshake-mango.jpg"
+    },
+    "barcode": "8902979052436"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123020_6-cavins-milkshake-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123020-2_6-cavins-milkshake-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123020-3_5-cavins-milkshake-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123020-4_5-cavins-milkshake-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123020-5_5-cavins-milkshake-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123020-6_5-cavins-milkshake-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123020-7_3-cavins-milkshake-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Mango Milkshakes are thick and creamy flavoured shakes fortified with the goodness of milk and mango to make every sip irresistibly delightful. It is enriched with fruit pulp to make it even more delicious. It is a healthy mid-meal snack that will provide your children with an instant source of energy. It is now fortified with Zinc for immune support and is a good source of Calcium, Vitamin A, and Vitamin D for strong bones and teeth. So, why wait when you can have both taste and health in a single tetra pack?",
+   "ingredients": "Double Toned Milk(70%), Sugar, Mango Pulp (12%), Water, Honey (1.25%), Flavour (Nature Identical (Mango) Flavoring Substances), Sequestrant (INS 452(i)), lodized Salt, Stabilizers (INS 407, INS 418), Emulsifier (INS 436) & Synthetic Food Colors (INS 102, INS 110).",
+   "usageInstructions": "Tastes well when served chill.",
+   "manufacturerName": "Cavinkare Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Belgian Chocolate Milkshake",
+  "handle": "belgian-chocolate-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433_6-cavins-belgian-chocolate-milkshake.jpg"
+    },
+    "barcode": "8902979015301"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433_6-cavins-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433-2_6-cavins-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433-3_6-cavins-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433-4_6-cavins-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433-5_6-cavins-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433-6_6-cavins-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433-7_5-cavins-belgian-chocolate-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40313433-8_5-cavins-belgian-chocolate-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Belgian Chocolate Milkshake is a heavenly concoction of real Belgian chocolate with the goodness of milk. A power-packed combination of nourishment and indulgence in every sip. This thick and creamy shake is the perfect answer to your post-meal or midnight dessert cravings. So go ahead and indulge yourself — your taste buds will thank you for it!",
+   "ingredients": "Double-toned milk, Sugar, Cocoa solids (1.5%),\nFlavour (Artificial (Belgian chocolate) Flavouring substances),\nStabilizer (INS 412, INS 415, INS 407), Sequestrants (INS 451(i)),\nBelgian chocolate (0.05%) (Emulsifier (INS 322(i)), Flavour\n(Natural flavouring substance)), Emulsifier (INS 471).",
+   "nutritionalInfo": {
+    "Energy": "102 kcal",
+    "Protein": "3.2 g",
+    "Carbohydrate": "16 g",
+    "Total Sugars": "14.8 g",
+    "Added Sugar": "9.5 g",
+    "Total Fat": "2.8 g",
+    "Saturated Fat": "1.9 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "8 mg",
+    "Sodium": "95 mg",
+    "Calcium": "127 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place away from direct sunlight",
+   "manufacturerName": "CavinKare Private Ltd. SF. No",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Badam Milkshake",
+  "handle": "badam-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929_9-cavins-badam-milkshake.jpg"
+    },
+    "barcode": "8902979005616"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929_9-cavins-badam-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929-2_6-cavins-badam-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929-3_6-cavins-badam-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929-4_6-cavins-badam-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929-5_6-cavins-badam-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929-6_2-cavins-badam-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929-7_2-cavins-badam-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167929-8_2-cavins-badam-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Badam Milkshake is a rich and creamy ready-to-drink milk beverage blended with the delicious flavour of almonds for a smooth, nutty, and refreshing taste. Made with quality milk solids, this thick milkshake delivers a satisfying and indulgent drinking experience in every sip.\nIts creamy texture and pleasant almond flavour make it a perfect beverage for quick refreshment, travel, snack time, or anytime enjoyment. Best served chilled for a rich and delicious experience.",
+   "ingredients": "Toned Milk, Sugar, Almond Bits (0.6%), Stabiliser (INS 407), Cardamom Powder (0.1%), Sequestrant (INS 340(ii), INS 339(iii)), Emulsifier (INS 471), Iodised Salt, Flavouring (Artificial (Condensed Milk) Flavouring Substance).",
+   "nutritionalInfo": {
+    "Energy": "113.5 kcal",
+    "Protein": "3.1 g",
+    "Carbohydrate": "15.6 g",
+    "Total Sugars": "15.4 g",
+    "Added Sugar": "10.4 g",
+    "Total Fat": "4.3 g",
+    "Saturated Fat": "2.8 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "13.7 mg",
+    "Sodium": "63 mg",
+    "Calcium": "110 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "CavinKare Private Ltd",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Gulkand Milkshake",
+  "handle": "gulkand-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931_5-cavins-gulkand-milkshake.jpg"
+    },
+    "barcode": "8902979005647"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931_5-cavins-gulkand-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931-2_5-cavins-gulkand-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931-3_5-cavins-gulkand-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931-4_5-cavins-gulkand-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931-5_5-cavins-gulkand-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931-6_4-cavins-gulkand-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931-7_3-cavins-gulkand-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167931-8_3-cavins-gulkand-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Gulkand Milkshake is a delicious and creamy ready-to-drink milk beverage infused with the traditional flavour of rose petals and gulkand for a rich, refreshing, and aromatic taste. Made with quality milk solids, this thick milkshake combines sweetness and creaminess to deliver a delightful drinking experience.\nIts refreshing flavour and smooth texture make it a perfect beverage for summer refreshment, dessert cravings, and anytime enjoyment. Best served chilled.",
+   "ingredients": "Standardised Milk, Milk solids, Sugar, Water, Synthetic syrup (1.1%) (Thickener (INS 440), Acidity Regulator (INS 330), Colour (INS 122), Preservative (INS 223)), Gulkand extract (1 %), Stabilizer (INS 407), Sequestrant (INS 340(ii), INS 339(iii)), Emulsifier (INS 471),  Flavor (Natural, Nature Identical and Artificial (Rose, Gulkand & Condensed milk) flavoring substance), Iodized salt, and Synthetic food Colour (INS 127).\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "130.7 kcal",
+    "Protein": "3.8 g",
+    "Carbohydrate": "16.5 g",
+    "Total Sugars": "16.4 g",
+    "Added Sugar": "10.5 g",
+    "Total Fat": "5.5 g",
+    "Saturated Fat": "3.7 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "19 mg",
+    "Sodium": "87 mg",
+    "Calcium": "140 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place\nConsume immediately after opening",
+   "manufacturerName": "CavinKare Private Ltd",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rabdi Milkshake",
+  "handle": "rabdi-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930_8-cavins-rabdi-milkshake.jpg"
+    },
+    "barcode": "8902979005623"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930_8-cavins-rabdi-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930-2_6-cavins-rabdi-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930-3_6-cavins-rabdi-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930-4_6-cavins-rabdi-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930-5_1-cavins-rabdi-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930-6_1-cavins-rabdi-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930-7_1-cavins-rabdi-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167930-8_1-cavins-rabdi-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Rabdi Milkshake is a rich and creamy ready-to-drink beverage inspired by the traditional Indian rabdi dessert. Crafted with quality milk solids and authentic rabdi flavour, this delicious milkshake offers a thick texture and a sweet, indulgent taste in every sip.\nIts smooth consistency and traditional dessert-like flavour make it an ideal refreshment for festive occasions, sweet cravings, and everyday enjoyment. Best served chilled.",
+   "ingredients": "Toned Milk, Sugar, Stabiliser (INS 407), Sequestrant (INS 340(i), INS 339(iii)), Emulsifier (INS 471), Flavouring (Artificial (Rabdi And Condensed Milk) Flavouring Substance), And Iodised Salt.\nAllergen Advice: Contains Milk.",
+   "nutritionalInfo": {
+    "Energy": "111.8 kcal",
+    "Protein": "3 g",
+    "Carbohydrate": "15.5 g",
+    "Total Sugars": "15.4 g",
+    "Added Sugar": "10.4 g",
+    "Total Fat": "4.2 g",
+    "Saturated Fat": "2.8 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "14 mg",
+    "Sodium": "63 mg",
+    "Calcium": "111 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "CavinKare Private Ltd",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rajbhog Milkshake",
+  "handle": "rajbhog-milkshake",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40167932_6-cavins-rajbhog-milkshake.jpg"
+    },
+    "barcode": "8902979005630"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167932_6-cavins-rajbhog-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167932-2_4-cavins-rajbhog-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167932-3_4-cavins-rajbhog-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167932-4_4-cavins-rajbhog-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167932-5_4-cavins-rajbhog-milkshake.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40167932-6_3-cavins-rajbhog-milkshake.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Rajbhog Milkshake is a rich and creamy ready-to-drink beverage inspired by the royal taste of traditional Indian sweets. Blended with delicious Rajbhog flavour and quality milk solids, this thick milkshake offers a smooth, indulgent, and satisfying taste experience.\nIts dessert-like richness and creamy texture make it a perfect choice for refreshment, celebrations, and sweet cravings. Best served chilled for maximum enjoyment.",
+   "ingredients": "Standardized Milk, Sugar, Flavouring (Nature-Identical And Artificial (Rajbhog & Condensed Milk) Flavouring Substance), Stabiliser (INS 407), Emulsifier (INS 471), Sequestrant (INS 340(i), INS 339(ii)), Iodised Salt.\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Per Serving": "170 ml",
+    "Energy": "206.3 kcal",
+    "Protein": "5.2 g",
+    "Carbohydrate": "26.8 g",
+    "Total Sugars": "26.6 g",
+    "Added Sugar": "13.1 g",
+    "Total Fat": "8.7 g",
+    "Saturated Fat": "5.9 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "27.4 mg",
+    "Sodium": "108 mg",
+    "Calcium": "188 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Cavinkare Pvt. Ltd",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Choco Mocha Cold Coffee",
+  "handle": "choco-mocha-cold-coffee",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356031_2-cavins-choco-mocha-cold-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356031_2-cavins-choco-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356031-2_2-cavins-choco-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356031-3_2-cavins-choco-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356031-4_2-cavins-choco-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356031-5_2-cavins-choco-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356031-6_2-cavins-choco-mocha-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356031-7_2-cavins-choco-mocha-cold-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Choco Mocha Cold Coffee is a delightful fusion of rich coffee and indulgent chocolate, blended smoothly with creamy milk. Refreshing and flavourful, it delivers the perfect balance of sweetness and energy in every sip. Conveniently packed for on-the-go enjoyment, this cafe-style beverage is an ideal treat to uplift your mood any time of the day.",
+   "ingredients": "Double Toned Milk, Water, Sugar, Coffee Powder (0.65%),\nCocoa solids (0.5%), Sequestrants [INS 340 (iii), INS 340 (ii), INS 452 (), INS\n331 (iit), INS 339 (iii)], Flavour (Artificial (Mocha) flavouring substances), Emulsifier\n(INS 471) and Stabilizer (INS 407).\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "80.8 kcal",
+    "Protein": "3.2 g",
+    "Carbohydrate": "13.4 g",
+    "Total Sugars": "12.9 g",
+    "Added Sugar": "7.4 g",
+    "Total Fat": "1.6 g",
+    "Saturated Fat": "1.0 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "5 mg",
+    "Sodium": "70 mg",
+    "Calcium": "127 mg"
+   },
+   "manufacturerName": "CavinKare Private Limited",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Creamy Latte Cold Coffee",
+  "handle": "creamy-latte-cold-coffee",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "60",
+    "compare_at_price": "60",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40356030_2-cavins-creamy-latte-cold-coffee.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356030_2-cavins-creamy-latte-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356030-2_2-cavins-creamy-latte-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356030-3_2-cavins-creamy-latte-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356030-4_2-cavins-creamy-latte-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356030-5_2-cavins-creamy-latte-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356030-6_2-cavins-creamy-latte-cold-coffee.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40356030-7_2-cavins-creamy-latte-cold-coffee.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Creamy Latte Cold Coffee is a smooth and refreshing beverage crafted for coffee lovers who enjoy a rich yet balanced taste. Blending premium coffee with creamy milk, it offers a delightful pick-me-up any time of the day. Conveniently packed, it is perfect for on-the-go indulgence, giving you cafe-style flavour in every sip.",
+   "ingredients": "Toned Milk, Sugar, Water, Coffee Powder (0.6%), Flavour\n(Nature Identical and Artificial (Coffee) Flavouring Substances), Sequestrants\n(INS 340(i), INS 340(i), INS 452, INS 331 (iii), INS 339(iii)), Emulsifier (NS\n471), Stabilizer (INS 407)\nAllergen Advice: Contains Milk",
+   "nutritionalInfo": {
+    "Energy": "89.8 kcal",
+    "Protein": "3.0 g",
+    "Carbohydrate": "12.7 g",
+    "Total Sugars": "12.5 g",
+    "Added Sugar": "7.3 g",
+    "Total Fat": "3.0 g",
+    "Saturated Fat": "2.0 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "10 mg",
+    "Sodium": "67 mg",
+    "Calcium": "120 mg"
+   },
+   "manufacturerName": "CavinKare Private Limited",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Cold Coffee - Chilled Latte",
+  "handle": "cold-coffee-chilled-latte",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598_4-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+    },
+    "barcode": "8902979005326"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598_4-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598-2_4-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598-3_4-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598-4_4-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598-5_4-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598-6_3-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598-7_3-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40227598-8_3-cavins-cold-coffee-immunity-booster-chilled-latte.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the delightful taste and health benefits of Cavin's Cold Coffee Chilled Latte. This thick, creamy beverage is made with the finest milk and exotic coffee, creating a delicious and relaxing experience. Fortified with Zinc for immune support and a good source of Vitamin A and Vitamin D, this chilled latte is not only a treat for the taste buds but also a nourishing choice. Enjoy the perfect blend of taste and health in a convenient tetra pack, perfect for a refreshing pick-me-up on a hot day. In the unlikely event of a damaged, defective, or incorrect item, you can easily request a refund or replacement within 4 days of purchase. Cavin's Cold Coffee - Immunity Booster, Chilled Latte is a coffee-flavoured milkshake made with the finest ingredients and hygienically packed, ensuring a delightful and relaxing experience with every sip.",
+   "ingredients": "Double Toned Milk, Sugar, Coffee Powder Stabiliser, Flavour (Nature Identical & Artificial (Coffee) Flavouring Substances), Acidity Regulator & Emulsifier.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100ml",
+    "Serving Size": "180 ml",
+    "Energy, Kcal": "167.9",
+    "Protein, g": "5.8",
+    "Carbohydrate, g": "24.7",
+    "Total Sugars, g": "24.4",
+    "Added Sugar, g": "14.8",
+    "Total Fat, g": "5.1",
+    "Saturated Fat, g": "3.4",
+    "Trans Fat, g": "<0.1",
+    "Cholesterol, mg": "16",
+    "Sodium, mg": "172",
+    "Calcium, mg": "130"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Refrigerate after opening",
+   "manufacturerName": "CavinKare Private Ltd",
+   "fssaiLicense": "11519004000257",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mango Lassi",
+  "handle": "mango-lassi",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200ml",
+    "price": "23.5",
+    "compare_at_price": "23.5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123022_6-cavins-lassi-mango.jpg"
+    },
+    "barcode": "8902979051903"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123022_6-cavins-lassi-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123022-2_7-cavins-lassi-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123022-3_6-cavins-lassi-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123022-4_6-cavins-lassi-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123022-5_6-cavins-lassi-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123022-6_3-cavins-lassi-mango.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123022-7_2-cavins-lassi-mango.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Mango Lassi is thick and creamy, made using the goodness of delicious curd that will refresh you. A soothing and refreshing beverage helps you beat the heat and aids digestion after a heavy meal. It is now fortified with Zinc for immune support and is a good source of Calcium, Vitamin A, and Vitamin D for strong bones and teeth. So, why wait when you can have both taste and health in a single tetra pack? Grab a pack today and feel relaxed!\nFeatures\nCavin's Mango Lassi is thick and creamy made using the goodness of delicious curd that will refresh you.\nA soothing and refreshing beverage that not only helps you beat the heat but also aids digestion after a heavy meal.\nFortified with Zinc for immunity support & Rich source of Calcium to support healthy bones.\nThick and creamy with the goodness of curd and mango.\nQuenches your thirst on a summer day and helps you beat the heat. Gives you instant energy and satisfies your Mango cravings.\nEvery sip will delight your taste bud.",
+   "ingredients": "Double Toned Milk Curd, Water, Sugar, Mango Pulp (6.5%), Emulsifier (INS 460(i) And INS 466), Flavour (Nature Identical (Mango) Flavouring Substances), Mineral And Vitamin Premix (Zinc, Vitamin A & D), Synthetic Food Colours (INS 102 & INS 110).",
+   "usageInstructions": "Tastes well when served chill.",
+   "manufacturerName": "Cavinkare Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Strawberry Lassi",
+  "handle": "strawberry-lassi",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "23.5",
+    "compare_at_price": "23.5",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123023_8-cavins-lassi-strawberry.jpg"
+    },
+    "barcode": "8902979051910"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123023_8-cavins-lassi-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123023-2_6-cavins-lassi-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123023-3_5-cavins-lassi-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123023-4_5-cavins-lassi-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123023-5_5-cavins-lassi-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123023-6_5-cavins-lassi-strawberry.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123023-7_4-cavins-lassi-strawberry.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Strawberry Lassi is thick and creamy, made using the goodness of delicious curd that will refresh you. A soothing and refreshing beverage helps you beat the heat and aids digestion after a heavy meal. It is now fortified with Zinc for immune support and is a good source of Calcium, Vitamin A, and Vitamin D for strong bones and teeth. So, why wait when you can have both taste and health in a single tetra pack? Grab a pack today and feel relaxed!\nFeatures\nCavin's Strawberry Lassi is thick and creamy made using the goodness of delicious curd that will refresh you.\nA soothing and refreshing beverage that not only helps you beat the heat but also aids digestion after a heavy meal.\nFortified with Zinc for immunity support & Rich source of Calcium to support healthy bones.\nThick and creamy with the goodness of curd and strawberry.\nQuenches your thirst on a summer day and helps you beat the heat. Gives you instant energy and satisfies your strawberry cravings.\nEvery sip will delight your taste bud.",
+   "ingredients": "Double Toned Milk Curd, Water, Sugar, Strawberry Crush (4.5%) (Strawberry Pieces (25%), Stabilizer (INS 440), Acidity Regulator (INS 330), Preservative (INS 202)), Emulsifier (INS 460 (i) And INS 466). Flavours (Nature Identical And Artificial (Strawberry) Flavouring Substances), Colours (INS 124, INS 110, INS 150d) & Mineral & Vitamin Premix (Zinc, Vitamin A&D).",
+   "usageInstructions": "Tastes well when served chill.",
+   "manufacturerName": "Cavinkare Pvt Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Rose Lassi",
+  "handle": "rose-lassi",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "180ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40127644_6-cavins-rose-lassi.jpg"
+    },
+    "barcode": "8902979007658"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127644_6-cavins-rose-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127644-2_5-cavins-rose-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127644-3_5-cavins-rose-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127644-4_5-cavins-rose-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127644-5_5-cavins-rose-lassi.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40127644-6_3-cavins-rose-lassi.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Rose Lassi is a rich and refreshing yoghurt-based drink blended with the delightful flavour of rose for a smooth, creamy, and aromatic taste. Made from quality milk solids and curd, this traditional Indian beverage offers a perfect balance of sweetness and freshness in every sip.\nIts thick texture and cooling flavour make it an ideal drink for hot summer days, festive occasions, and anytime refreshment. Packed in a convenient ready-to-drink tetra pack, Cavin’s Rose Lassi delivers the authentic taste of traditional lassi with a pleasant rose twist. Best served chilled for a refreshing experience.",
+   "ingredients": "Standardised Milk Curd, Water, Sugar, Emulsifier (INS 460(i) & INS 466), Flavour (Nature Identical Flavouring Substance), Mineral & vitamin Premix(Zinc, Vitamin A & D)\nAllergen Advice: Contains milk",
+   "nutritionalInfo": {
+    "Per Serving": "180 ml",
+    "Energy": "178 kcal",
+    "Protein": "3.7 g",
+    "Carbohydrate": "32.6 g",
+    "Total Sugars": "31.1 g",
+    "Added Sugar": "25.2 g",
+    "Total Fat": "3.7 g",
+    "Saturated Fat": "2.5 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "18 mg",
+    "Sodium": "51 mg",
+    "Calcium": "130 mg",
+    "Zinc": "2.2 mg",
+    "Vitamin A (RE)": "81 µg",
+    "Vitamin D": "1.4 µg"
+   },
+   "storageInstructions": "Store in a cool & dry place away from direct sunlight\nNeeds no refrigeration till opened",
+   "manufacturerName": "CavinKare Private Ltd",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Masala Chaas",
+  "handle": "masala-chaas",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "170ml",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40123024_6-cavins-masala-chaasa.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123024_6-cavins-masala-chaasa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123024-2_6-cavins-masala-chaasa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123024-3_6-cavins-masala-chaasa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123024-4_6-cavins-masala-chaasa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123024-5_6-cavins-masala-chaasa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123024-6_6-cavins-masala-chaasa.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40123024-7_3-cavins-masala-chaasa.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the refreshing and soothing delight of Cavin's Masala Chaasa, a curd-based beverage that combines delicious flavours with nourishing benefits. Blended with a carefully selected blend of spices, condiments, and natural ingredients, this fortified drink offers a delightful respite from the heat while aiding digestion after a hearty meal. Enriched with Zinc for immune support and a good source of Calcium, Vitamin A, and Vitamin D, Cavin's Masala Chaasa is the perfect balance of taste and health, providing a truly satisfying and relaxing experience. Enjoy the natural refreshment and savour the creamy, flavourful goodness in every sip.",
+   "ingredients": "Water, Milk Solids, lodized salt, Spices and Condiments (0.6%)(Cumin, Ginger, Chilly and Asafoetida), Emulsifier (INS 460(i)), Stabiliser (INS 466).\nAllergen Advice: Contains Milk and Wheat",
+   "nutritionalInfo": {
+    "Energy": "21.4 kcal",
+    "Protein": "0.7 g",
+    "Carbohydrate": "1.5 g",
+    "Total Sugars": "1.2 g",
+    "Added Sugar": "0 g",
+    "Total Fat": "1.4 g",
+    "Saturated Fat": "0.9 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "4.6 mg",
+    "Sodium": "283 mg",
+    "Calcium": "26.8 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place away from direct sunlight",
+   "manufacturerName": "CavinKare Private Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Toned Milk",
+  "handle": "toned-milk",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500ml",
+    "price": "29",
+    "compare_at_price": "29",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188_4-cavins-toned-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188_4-cavins-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188-2_4-cavins-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188-3_4-cavins-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188-4_2-cavins-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188-5_2-cavins-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188-6_2-cavins-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188-7_2-cavins-toned-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40156188-8_2-cavins-toned-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavins Toned Milk has the power of proteins and calcium. It contains no added preservatives. Milk is an excellent source of healthy fats, potassium and phosphorous. It helps in strengthening your bones and teeth.",
+   "ingredients": "Toned Milk",
+   "manufacturerName": "Cavinkare Pvt. Ltd.",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10012042000121"
+  }
+ },
+ {
+  "title": "Cow Milk",
+  "handle": "cow-milk",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "475ml",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40323083_2-cavins-cow-milk.jpg"
+    },
+    "barcode": "8902979003780"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323083_2-cavins-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323083-2_2-cavins-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323083-3_2-cavins-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323083-4_2-cavins-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323083-5_2-cavins-cow-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40323083-6_1-cavins-cow-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavins Pasteurised Homogenised Cow Milk is a premium choice for wholesome nutrition. Sourced from carefully selected cows, this milk undergoes pasteurisation and homogenisation, ensuring optimal safety and consistency. Packed with essential nutrients, it's perfect for a healthy lifestyle. With a rich, creamy taste, Cavins milk adds a delightful touch to your daily routine. Trust in the quality of Cavins for a refreshing and nourishing dairy experience.",
+   "ingredients": "Cow Milk",
+   "usageInstructions": "Store hygienically and continously under refrigeration below 4 degree Celcius.",
+   "manufacturerName": "Cavins MILK PRODUCTS PRIVATE LIMITED",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014042001362",
+   "shelfLifeDays": 2
+  }
+ },
+ {
+  "title": "H-Milk Cow Milk",
+  "handle": "h-milk-cow-milk",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199543_4-cavins-h-milk-cow-milk-pet-bottle.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199543_4-cavins-h-milk-cow-milk-pet-bottle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199543-2_4-cavins-h-milk-cow-milk-pet-bottle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199543-3_4-cavins-h-milk-cow-milk-pet-bottle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199543-4_4-cavins-h-milk-cow-milk-pet-bottle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199543-5_4-cavins-h-milk-cow-milk-pet-bottle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199543-6_4-cavins-h-milk-cow-milk-pet-bottle.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199543-7_1-cavins-h-milk-cow-milk-pet-bottle.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cow Milk synonymous to fresh milk with the following benefits:\n1) No Fat Removed\n2) No Milk Powder Added\n3) Milk from our Village\n4) Same price as Regular Packet Milk\n5) Hygienic Packaging\n6) Convenient Bottle - Use & Throw bottle",
+   "ingredients": "Cow Milk",
+   "usageInstructions": "Store Hygienically and continuously under refreigeration below 4 Degree Celcius until use by date",
+   "manufacturerName": "Cavinkare Private Limited",
+   "fssaiLicense": "10014042001362",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Standardised Milk",
+  "handle": "standardised-milk",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "475ml",
+    "price": "33",
+    "compare_at_price": "33",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392_6-cavins-standardized-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392_6-cavins-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392-2_6-cavins-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392-3_6-cavins-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392-4_6-cavins-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392-5_2-cavins-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392-6_2-cavins-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392-7_2-cavins-standardized-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177392-8_2-cavins-standardized-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Standardized Milk is pasteurised and homogenised under extreme hygiene conditions. Milk is one of the richest sources of Calcium. It has a powerful combination of nutrients that helps in strengthening your bones, muscles and teeth.",
+   "ingredients": "Standardized Milk (Milk Fat Min. 6%, Milk SNF Min. 9%).",
+   "usageInstructions": "Cut it open and use.",
+   "manufacturerName": "Cavinkare Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014042001362"
+  }
+ },
+ {
+  "title": "Full Cream Milk",
+  "handle": "full-cream-milk",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "475ml",
+    "price": "36",
+    "compare_at_price": "36",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390_7-cavins-full-cream-milk.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390_7-cavins-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390-2_7-cavins-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390-3_7-cavins-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390-4_7-cavins-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390-5_3-cavins-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390-6_2-cavins-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390-7_2-cavins-full-cream-milk.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40177390-8_2-cavins-full-cream-milk.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavin's Full Cream Milk is pasteurised and homogenised under extreme hygiene conditions. Milk is one of the richest sources of Calcium. It has a powerful combination of nutrients that helps in strengthening your bones, muscles and teeth.",
+   "ingredients": "Full Cream Milk (Milk Fat Min. 6%, Milk SNF Min. 9%).",
+   "usageInstructions": "Cut it open and use.",
+   "manufacturerName": "Cavinkare Pvt. Ltd",
+   "countryOfOrigin": "India",
+   "fssaiLicense": "10014042001362",
+   "shelfLifeDays": 2
+  }
+ },
+ {
+  "title": "Curd",
+  "handle": "curd",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450g",
+    "price": "40",
+    "compare_at_price": "40",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011794_6-cavins-curd.jpg"
+    },
+    "barcode": "8902979050463"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011794_6-cavins-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011794-2_5-cavins-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011794-3_5-cavins-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011794-4_5-cavins-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011794-5_3-cavins-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011794-6_1-cavins-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "It's being prepared by using premium milk and special culture. Naturally rich in calcium and proteins. No preservatives added.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Serving Size": "1 cup (100 g)",
+    "Energy": "62.2 Kcal",
+    "Protein": "3.4 g",
+    "Carbohydrate": "5.4 g",
+    "Total Sugar": "5.4 g",
+    "Added Sugar": "0 g",
+    "Total Fat": "3 g",
+    "Saturated Fat": "2 g",
+    "Trans Fat": "<0.1 g",
+    "Cholesterol": "10 mg",
+    "Sodium": "48 mg",
+    "Calcium": "123 mg"
+   },
+   "storageInstructions": "*Store in a cool, dry place away from direct sunlight",
+   "manufacturerName": "Cavinkare Private Limited",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 6
+  }
+ },
+ {
+  "title": "Premium Curd Bucket",
+  "handle": "premium-curd-bucket",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "100",
+    "compare_at_price": "100",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011790_2-cavins-bucket-curd.jpg"
+    },
+    "barcode": "8902979051439"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011790_2-cavins-bucket-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011790-2_1-cavins-bucket-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011790-3_1-cavins-bucket-curd.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011790-4_1-cavins-bucket-curd.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "It's being prepared by using Premium Milk and Special Culture. Naturally rich in calcium and proteins. No preservatives added",
+   "ingredients": "Pasteurised Toned Milk, Minerals, Vitamins and Active Culture",
+   "manufacturerName": "Cavinkare Private Limited",
+   "countryOfOrigin": "India",
+   "shelfLifeDays": 8
+  }
+ },
+ {
+  "title": "Soft Paneer",
+  "handle": "soft-paneer",
+  "vendor": "Cavin's",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40110092_3-cavins-paneer-soft.jpg"
+    }
+   },
+   {
+    "title": "200g",
+    "price": "125",
+    "compare_at_price": "125",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40011786_4-cavins-paneer-soft.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40110092_3-cavins-paneer-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40110092-2_2-cavins-paneer-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40110092-3_1-cavins-paneer-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40110092-4_1-cavins-paneer-soft.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40011786_4-cavins-paneer-soft.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Cavins Paneer - Soft 100 g Pouch is made with the goodness of pure Cavins Milk. It is a soft and tender paneer that is rich and delicious in protein. The product contains no added preservatives.",
+   "ingredients": "Energy 286 Kcal,FAT 2.4g,Carbohydrates 2.5g,Vitamin A 272mcg",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Energy": "57 kcal",
+    "Fat": "3.0 g",
+    "Carbohydrates": "3.63 g",
+    "Added Sugar": "0.0g",
+    "Protein": "3.75 g",
+    "Calcium": "180 mg",
+    "Phosphorus": "112 mg"
+   },
+   "storageInstructions": "*Keep under refrigeration, Do not freeze\n*Once opened, keep it back in the fridge after folding the pack and use within 2 days",
+   "manufacturerName": "Cavinkare Private Limited",
+   "countryOfOrigin": "India"
+  }
+ }
+]
