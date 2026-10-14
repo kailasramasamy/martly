@@ -1,0 +1,40 @@
+{
+  "brand": "Belkin",
+  "manufacturer": "Belkin International Inc.",
+  "feed": "belkin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/belkin/logo-54b52e30.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#00A9CE",
+  "namePrefix": "Belkin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Belkin 6-Way Surge Protector Power Strip": "Economy Series 6 Socket Surge Protector 2m"
+  },
+  "rules": [
+    {
+      "match": "^3\\ Socket\\ Surge\\ Protector\\ with\\ Individual\\ Switch\\ 1\\.5m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Economy\\ Series\\ 4\\ Socket\\ Surge\\ Protector\\ 1\\.5m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    },
+    {
+      "match": "^Economy\\ Series\\ 6\\ Socket\\ Surge\\ Protector\\ 2m$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Extension Cords"
+      ]
+    }
+  ]
+}
