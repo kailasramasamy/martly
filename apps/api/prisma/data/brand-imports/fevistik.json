@@ -1,0 +1,38 @@
+{
+  "brand": "Fevistik",
+  "manufacturer": "Pidilite Industries Ltd.",
+  "feed": "fevistik-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/fevistik/logo-08bc5932.png",
+  "themeColor": "#1F3A93",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Fevistik ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Super\\ Glue\\ Stick$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Power\\ Glue\\ Stick$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    },
+    {
+      "match": "^Rockin'\\ Adhesive\\ Roller$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
