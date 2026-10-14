@@ -1,0 +1,222 @@
+{
+  "brand": "Purepet",
+  "manufacturer": "Drools Pet Food Pvt. Ltd.",
+  "feed": "purepet-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/purepet/logo-41f6f82a.png",
+  "themeColor": "#2E3488",
+  "themeColorSecondary": "#2BB3E3",
+  "namePrefix": "Purepet ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Vegetarian\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Mutton\\ Flavour\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Flavour\\ Dog\\ Biscuits$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chew\\ Bones\\ for\\ Dogs$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Pressed\\ Chew\\ Bones\\ for\\ Dogs$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Munchy\\ Sticks\\ for\\ Dogs$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Mutton\\ Munchy\\ Sticks\\ for\\ Dogs$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dog Treats & Biscuits"
+      ]
+    },
+    {
+      "match": "^Chicken\\ \\&\\ Pumpkin\\ Dog\\ Food\\ \\-\\ Ready\\ to\\ Eat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Chicken\\ \\&\\ Vegetable\\ Dog\\ Food\\ \\-\\ Ready\\ to\\ Eat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Chicken\\ Biryani\\ Dog\\ Food\\ \\-\\ Ready\\ to\\ Eat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Mutton\\ Biryani\\ Dog\\ Food\\ \\-\\ Ready\\ to\\ Eat$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Chicken\\ \\&\\ Vegetable\\ Chunks\\ in\\ Gravy\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Vegetable$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Dog\\ Food\\ \\-\\ Meat\\ \\&\\ Rice$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Puppy\\ Dry\\ Dog\\ Food\\ \\-\\ Chicken\\ \\&\\ Vegetable$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Mackerel$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Tuna\\ \\&\\ Salmon$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Dry\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Crab\\ \\&\\ Chicken\\ Lickable\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Real\\ Chicken\\ Lickable\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Creamy\\ Tuna\\ \\&\\ Bonito\\ Lickable\\ Cat\\ Treats$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Cat Treats"
+      ]
+    },
+    {
+      "match": "^Real\\ Chicken\\ \\&\\ Liver\\ in\\ Gravy\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Real\\ Tuna\\ \\&\\ Chicken\\ Liver\\ in\\ Gravy\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Cat\\ Litter$",
+      "path": [
+        "Pet Care",
+        "Pet Accessories",
+        "Litter & Litter Tray"
+      ]
+    }
+  ]
+}

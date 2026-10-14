@@ -1,0 +1,1552 @@
+[
+ {
+  "title": "Vegetarian Dog Biscuits",
+  "handle": "vegetarian-dog-biscuits",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "800g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542_8-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542_8-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542-2_8-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542-3_9-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542-4_5-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542-5_3-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542-6_3-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542-7_1-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124542-8_1-purepet-100-vegeterian-biscuit-dog-treats-jar.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "ingredients": "Rice flour, wheat flour, vegetables, permitted emulsifiers, antioxidants, soya oil, minerals and vitamins",
+   "nutritionalInfo": {
+    "Protein (min)": "12%",
+    "Fat (min)": "8%",
+    "Fibre (max)": "5%",
+    "Moisture (max)": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mutton Flavour Dog Biscuits",
+  "handle": "mutton-flavour-dog-biscuits",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "800g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583-2_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583-3_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583-4_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583-5_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583-6_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583-7_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40232583-8_3-purepet-biscuits-dog-treats-with-real-chicken-flavour-for-lustrous-healthy-coat.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Real Chicken, Rice Flour, Wheat Flour, Permitted Emulsifiers, Antioxidants, Minerals And Vitamins",
+   "nutritionalInfo": {
+    "Protein (Min)": "12%",
+    "Fat (Max)": "5%",
+    "Moisture (Max)": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Real Chicken Dog Biscuits",
+  "handle": "real-chicken-dog-biscuits",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "455g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447_6-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+    }
+   },
+   {
+    "title": "800g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124547_9-purepet-milk-flavour-real-chicken-biscuit-dog-treats.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447_6-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447-2_7-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447-3_7-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447-4_7-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447-5_4-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447-6_4-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447-7_4-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40142447-8_4-purepet-dog-treats-real-chicken-biscuit-milk-flavour.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Real Chicken, Rice Flour, Wheat Flour, Permitted Emulsifiers, Antioxidants, Minerals And Vitamins",
+   "nutritionalInfo": {
+    "Protein (Min)": "12%",
+    "Fat (Min)": "2%",
+    "Fibre (Max)": "5%",
+    "Moisture (Max)": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Flavour Dog Biscuits",
+  "handle": "chicken-flavour-dog-biscuits",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "455g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806_7-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+    }
+   },
+   {
+    "title": "800g",
+    "price": "300",
+    "compare_at_price": "300",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124564_6-purepet-chicken-flavour-real-chicken-biscuitdog-treats.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806_7-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806-2_5-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806-3_5-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806-4_5-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806-5_5-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806-6_5-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806-7_5-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40103806-8_5-purepet-dog-treats-real-chicken-biscuit-chicken-flavour.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Real Chicken, Rice Flour, Wheat Flour, Permitted Emulsifiers, Antioxidants, Minerals And Vitamins",
+   "nutritionalInfo": {
+    "Protein (Min)": "12%",
+    "Fat (Min)": "2%",
+    "Fibre (Max)": "5%",
+    "Moisture (Max)": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chew Bones for Dogs",
+  "handle": "chew-bones-for-dogs",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "160g",
+    "price": "165",
+    "compare_at_price": "165",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+    },
+    "barcode": "8906125480227"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988-2_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988-3_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988-4_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988-5_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988-6_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988-7_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217988-8_2-purepet-dog-treats-pressed-chew-bones-treats-4-inches.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Indulge your canine companion with Purepet Chew Bones, the ultimate treat that combines dental health and natural chewing satisfaction. Specially designed to keep your dog's teeth clean and control tartar buildup, these high-quality chew bones are made with carefully selected ingredients to bring joy and fulfil their innate urge to chew. Offering an innovative and easy-to-enjoy experience, these chew bones promote strong, healthy teeth while satisfying your pup's natural instincts. Crafted with your dog's wellbeing in mind, Purepet Chew Bones are a delightful and practical addition to your pet's routine, ensuring their dental hygiene and chewing needs are met in a flavourful and engaging way.",
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pressed Chew Bones for Dogs",
+  "handle": "pressed-chew-bones-for-dogs",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "260g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635_2-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635_2-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635-2_2-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635-3_2-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635-4_2-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635-5_2-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635-6_2-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635-7_1-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40241635-8_1-purepet-chew-bones-dog-treats-reduces-boredom-ideal-for-training-5-inches.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Rawhide",
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Munchy Sticks for Dogs",
+  "handle": "chicken-munchy-sticks-for-dogs",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199947_1-purepet-munchy-stick-chicken-flavour.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199947_1-purepet-munchy-stick-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199947-2_1-purepet-munchy-stick-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199947-3_1-purepet-munchy-stick-chicken-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199947-4_1-purepet-munchy-stick-chicken-flavour.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Purepet Munchy sticks are quality, nutritious chicken-flavoured dog treats which dogs cannot resist. It is a healthy treat that satisfies a dog's natural urge to chew and keeps him busy for a long time. It also improves the oral health of your pet.",
+   "ingredients": "Rawhide, Cereals, Permitted EC Colourants, And Permitted EC Preservatives",
+   "nutritionalInfo": {
+    "Protein (Min.)": "50%",
+    "Fat (Min.)": "1.81%",
+    "Fibre (Max.)": "0.20%",
+    "Moisture (Max.)": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mutton Munchy Sticks for Dogs",
+  "handle": "mutton-munchy-sticks-for-dogs",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "180",
+    "compare_at_price": "180",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+    },
+    "barcode": "8906125481057"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990-2_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990-3_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990-4_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990-5_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990-6_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990-7_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217990-8_1-purepet-dog-treats-munchy-sticks-mutton-flavour.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Treat your pup to the delightful Purepet Munchy Sticks, a high-quality, nutritious dog treat that satisfies their natural urge to chew. Infused with the irresistible flavour of mutton, these sticks are not only a tasty indulgence, but also promote healthy chewing habits and improve the oral health of your beloved canine companion. Crafted with care and packed with essential nutrients, Purepet Munchy Sticks offer a perfect blend of flavour and health, ensuring your furry friend enjoys a happy, healthy chewing experience.",
+   "ingredients": "Rawhides, Cereals, Permitted EC Colourants & Permitted EC Preservative",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Protein [min]": "50%",
+    "Fat [min]": "1.81%",
+    "Fibre (max)": "0.20%",
+    "Moisture (max]": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken & Pumpkin Dog Food - Ready to Eat",
+  "handle": "chicken-pumpkin-dog-food-ready-to-eat",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441_3-purepet-chicken-pumpkin-dog-food.jpg"
+    },
+    "barcode": "8906125488094"
+   },
+   {
+    "title": "300g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40351523_3-purepet-chicken-pumpkin-dog-food.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441_3-purepet-chicken-pumpkin-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441-2_3-purepet-chicken-pumpkin-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441-3_3-purepet-chicken-pumpkin-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441-4_3-purepet-chicken-pumpkin-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441-5_3-purepet-chicken-pumpkin-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441-6_3-purepet-chicken-pumpkin-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441-7_1-purepet-chicken-pumpkin-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357441-8_1-purepet-chicken-pumpkin-dog-food.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Ingredients:\nReal Chicken, Eggs, Hydrolysed Chicken Liver, Long Grain Basmati Rice, Carrots, Pumpkins, Peas, Spinach, Apples, Coconut Oil, Ashwagandha, Basil, Moringa, Amla, Turmeric, Ginger, Milk Thistle, Giloy, Organic Minerals & Vitamins (Vit E, Vit A, Vit C, Vit D3, Vit B1, Vit B2, Vit B6, Choline, Folic Acid)\nNutritional Facts\nPer 100 g:\nEnergy: 164.27 kcal\nCrude Protein: 19.67 g\nTotal Carbohydrates: 8.33 g\nCrude Fibre: 2.10 g\nCrude Fat: 7.05 g\nAsh: 1.22 g\nMoisture: 68.74 g",
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken & Vegetable Dog Food - Ready to Eat",
+  "handle": "chicken-vegetable-dog-food-ready-to-eat",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440_3-purepet-chicken-vegetable-dog-food.jpg"
+    },
+    "barcode": "8906125488087"
+   },
+   {
+    "title": "300g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40351522_3-purepet-chicken-vegetables-dog-food.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440_3-purepet-chicken-vegetable-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440-2_3-purepet-chicken-vegetable-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440-3_3-purepet-chicken-vegetable-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440-4_3-purepet-chicken-vegetable-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440-5_3-purepet-chicken-vegetable-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440-6_3-purepet-chicken-vegetable-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440-7_1-purepet-chicken-vegetable-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357440-8_1-purepet-chicken-vegetable-dog-food.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Ingredients\nReal Chicken, Eggs, Hydrolysed Chicken Liver, Long Grain Basmati Rice, Carrots, Pumpkins, Peas, Spinach, Apples, Coconut Oil, Ashwagandha, Basil, Moringa, Amla, Turmeric, Ginger, Milk Thistle, Giloy, Organic Minerals & Vitamins (Vit E, Vit A, Vit C, Vit D3, Vit B1, Vit B2, Vit B6, Choline, Folic Acid)\nNutritional Facts\nPer 100 g:\nEnergy: 164.27 kcal\nCrude Protein: 19.67 g\nTotal Carbohydrates: 8.33 g\nCrude Fibre: 2.10 g\nCrude Fat: 7.05 g\nAsh: 1.22 g\nMoisture: 68.74 g",
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken Biryani Dog Food - Ready to Eat",
+  "handle": "chicken-biryani-dog-food-ready-to-eat",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438_3-purepet-chicken-biryani-dog-food.jpg"
+    },
+    "barcode": "8906125488100"
+   },
+   {
+    "title": "300g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40351520_3-purepet-chicken-biryani-dog-food.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438_3-purepet-chicken-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438-2_3-purepet-chicken-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438-3_3-purepet-chicken-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438-4_3-purepet-chicken-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438-5_3-purepet-chicken-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438-6_3-purepet-chicken-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438-7_1-purepet-chicken-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357438-8_1-purepet-chicken-biryani-dog-food.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Ingredients\nReal Chicken, Hydrolysed Chicken Liver, Long Grain Basmati Rice, Eggs, Beans, Carrots, Peas, Pumpkins, Sweet Potatoes, Ginger, Spinach, Coriander, Mint, Ghee, Cinnamon, Cardamom, Fennel Seeds, Turmeric, Black Pepper, Moringa, Amla, Giloy, Ashwagandha, Basil, Milk Thistle, Saffron Extract, Rose water, Organic Minerals & Vitamins (Vit E, Vit A, Vit C, Vit D3, Vit B1, Vit B2, Vit B6, Choline, Folic Acid)\nNutritional Facts\nPer 100 g:\nEnergy: 107.50 kcal\nCarbohydrates: 13.37 g\nProtein: 9.84 g\nMoisture: 78.91 g\nAsh: 1.24 g\nTotal Fat: 2.67 g",
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Mutton Biryani Dog Food - Ready to Eat",
+  "handle": "mutton-biryani-dog-food-ready-to-eat",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "100g",
+    "price": "59",
+    "compare_at_price": "59",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439_3-purepet-mutton-biryani-dog-food.jpg"
+    },
+    "barcode": "8906125488117"
+   },
+   {
+    "title": "300g",
+    "price": "150",
+    "compare_at_price": "150",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40351521_3-purepet-mutton-biryani-dog-food.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439_3-purepet-mutton-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439-2_3-purepet-mutton-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439-3_3-purepet-mutton-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439-4_3-purepet-mutton-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439-5_3-purepet-mutton-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439-6_3-purepet-mutton-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439-7_1-purepet-mutton-biryani-dog-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40357439-8_1-purepet-mutton-biryani-dog-food.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Ingredients\nLamb, Lamb Organ Meat, Long Grain Basmati Rice, Eggs, Ghee, Beans, Carrot, Peas, Pumpkin, Sweet Potato, Ginger, Spinach, Coriander, Mint, Hydrolysed Fish, Cinnamon, Cardamom, Fennel Seeds, Turmeric, Black Pepper, Moringa, Amla, Giloy, Ashwagandha, Basil, Milk Thistle, Saffron Extract, Rosewater, Organic Minerals & Vitamins (Vit E, Vit A, Vit C, Vit D3, Vit B1, Vit B2, Vit B6, Choline, Folic Acid)\nNutritional Facts\nPer 100 g:\nEnergy: 120.27 kcal\nCarbohydrates: 9.94 g\nProtein: 11.57 g\nMoisture: 78.32 g\nAsh: 1.37 g\nTotal Fat: 3.80 g\nSaturated Fat: 0.93 g",
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chicken & Vegetable Chunks in Gravy Wet Dog Food",
+  "handle": "chicken-vegetable-chunks-in-gravy-wet-dog-food",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "70g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852_5-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+    },
+    "barcode": "8906125486380"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852_5-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852-2_5-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852-3_5-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852-4_5-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852-5_4-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852-6_4-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852-7_3-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200852-8_3-purepet-wet-dog-food-chicken-vegetable-chunks-in-gravy.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Purepet Gravy Food provides complete nutrition for your adult dog. A complete and balanced dog food which is designed to take care of dog's daily nutritional requirements and provide it with all the required vitamins and minerals along with moisture and nourishment for a healthy and happy life. It helps maintain digestion, skin & coat, bones & joints and overall immunity.",
+   "ingredients": "Real Chicken, Chicken Liver, Meat, Eggs, Rice, Vegetables, Gravy, Gelling Agents, Natural Flavours, DHA, Organic Minerals & Vitamins (Vit E, Vit A, Vit C, Vit D3, Vit B1, Vit B2, Vit B6, Choline, Folic Acid)",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Protein (min)": "8.5%",
+    "Fat (min)": "6.0%",
+    "Crude Fibre (min)": "2.0%",
+    "Moisture (max)": "82.5%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Adult Dry Dog Food - Chicken & Vegetable",
+  "handle": "adult-dry-dog-food-chicken-vegetable",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469_8-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+    }
+   },
+   {
+    "title": "9kg",
+    "price": "1199",
+    "compare_at_price": "1199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124533_10-purepet-dog-food-chicken-veg-adult.jpg"
+    }
+   },
+   {
+    "title": "20kg",
+    "price": "2699",
+    "compare_at_price": "2699",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40171053_9-purepet-chicken-vegetable-adult-dog-food.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469_8-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469-2_5-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469-3_3-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469-4_3-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469-5_3-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469-6_3-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469-7_3-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129469-8_2-purepet-pet-food-for-adult-dog-chicken-vegetables.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Chicken & Chicken By-Products, Cereals And Cereal By-Products, Vegetables & Vegetable By-Products, Vegetable Oils, Salt, Essential Vitamins, Minerals And Anti-Oxidants",
+   "nutritionalInfo": {
+    "Protein (min)": "18%",
+    "Fat (min)": "6%",
+    "Crude Fibre (max)": "3.5%",
+    "Moisture (max)": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Adult Dry Dog Food - Meat & Rice",
+  "handle": "adult-dry-dog-food-meat-rice",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "2.8kg",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316143_1-purepet-adult-dog-dry-food-meat-rice.jpg"
+    },
+    "barcode": "8906125483556"
+   },
+   {
+    "title": "10kg",
+    "price": "1299",
+    "compare_at_price": "1299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199943_3-purepet-adult-dry-dog-food-meat-rice.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316143_1-purepet-adult-dog-dry-food-meat-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316143-2_1-purepet-adult-dog-dry-food-meat-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316143-3_1-purepet-adult-dog-dry-food-meat-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316143-4_1-purepet-adult-dog-dry-food-meat-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316143-5_1-purepet-adult-dog-dry-food-meat-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316143-6_1-purepet-adult-dog-dry-food-meat-rice.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199943_3-purepet-adult-dry-dog-food-meat-rice.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Purepet Meat and Rice Adult Dog Food is a complete and balanced diet which stimulates your pet's regular activities, keeping them happy and active. It is blended with essential nutrients that help maintain an ideal weight, providing all the health benefits. Purepet is a high-quality food approved by veterinarians, suitable for all breeds.",
+   "ingredients": "Meat And Meat By Products, Cereals And Cereal By Products, Vegetables & Vegetable By Products, Vegetable Oils, Iodised Salt, Flavours, Essential Vitamins, Minerals And Antioxidants",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Protein": "18%",
+    "Fat": "11%",
+    "Crude Fibre (max)": "1.5%",
+    "Moisture (max)": "10%"
+   },
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Puppy Dry Dog Food - Chicken & Vegetable",
+  "handle": "puppy-dry-dog-food-chicken-vegetable",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468_7-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+    }
+   },
+   {
+    "title": "2.8kg",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124569_10-purepet-dog-food-chicken-vegetables-adult.jpg"
+    }
+   },
+   {
+    "title": "10kg",
+    "price": "1399",
+    "compare_at_price": "1399",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124552_3-purepet-dog-food-chicken-veg-puppy.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468_7-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468-2_4-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468-3_2-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468-4_2-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468-5_2-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468-6_2-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468-7_2-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40129468-8_1-purepet-pet-food-for-puppy-chicken-vegetables.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Chicken & chicken by-products, cereals and cereal by-products, vegetables & vegetable by-products, vegetable oils, salt, essential vitamins, minerals and antioxidants",
+   "nutritionalInfo": {
+    "Protein": "22%",
+    "Fat": "10%",
+    "Crude Fibre": "3.0%",
+    "Moisture": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Adult Dry Cat Food - Ocean Fish",
+  "handle": "adult-dry-cat-food-ocean-fish",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944_8-purepet-adult-dry-cat-food-ocean-fish.jpg"
+    }
+   },
+   {
+    "title": "2.8kg",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199953_9-purepet-adult-dry-cat-food-1-year-ocean-fish.jpg"
+    }
+   },
+   {
+    "title": "6kg",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316148_4-purepet-adult-cat-dry-food-ocean-fish.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944_8-purepet-adult-dry-cat-food-ocean-fish.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944-2_8-purepet-adult-dry-cat-food-ocean-fish.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944-3_7-purepet-adult-dry-cat-food-ocean-fish.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944-4_7-purepet-adult-dry-cat-food-ocean-fish.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944-5_6-purepet-adult-dry-cat-food-ocean-fish.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944-6_6-purepet-adult-dry-cat-food-ocean-fish.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944-7_4-purepet-adult-dry-cat-food-ocean-fish.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199944-8_4-purepet-adult-dry-cat-food-ocean-fish.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Sardine, Mackerel, Eggs, Hydrolyzed Chicken Liver, Corn Gluten Meal, Whole Grain Cereals, Soya Refined Oil, Fish Oil, Wheat Flour, Taurine, Iodised Salt, Natural flavours, Vitamins, Organic Minerals, Antioxidants, Prebiotics & Probiotics",
+   "nutritionalInfo": {
+    "Protein (min)": "22%",
+    "Fat (min)": "12%",
+    "Crude Fibre (max)": "2.5%",
+    "Moisture (max)": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Adult Dry Cat Food - Mackerel",
+  "handle": "adult-dry-cat-food-mackerel",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942_9-purepet-adult-dry-cat-food-mackerel.jpg"
+    }
+   },
+   {
+    "title": "6kg",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316149_5-purepet-adult-cat-dry-food-mackerel.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942_9-purepet-adult-dry-cat-food-mackerel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942-2_6-purepet-adult-dry-cat-food-mackerel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942-3_6-purepet-adult-dry-cat-food-mackerel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942-4_6-purepet-adult-dry-cat-food-mackerel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942-5_5-purepet-adult-dry-cat-food-mackerel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942-6_5-purepet-adult-dry-cat-food-mackerel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942-7_4-purepet-adult-dry-cat-food-mackerel.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40199942-8_3-purepet-adult-dry-cat-food-mackerel.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Sardine, Mackerel, Eggs, Hydrolysed Chicken Liver, Corn Gluten Meal, Whole Grain Cereals, Soya Refined Oil, Fish Oil, Wheat Flour, Taurine, lodised Salt, Natural Flavours, Vitamins (Vit A, Vit E, Vit B1, Vit B6, Vit B2, Vit B12, Choline, Niacin, Folic Acid), Organic Minerals (Zinc, Iron, Copper, Selenium, Manganese) Antioxidants, Prebiotics & Probiotics.",
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd NH-6 Indamara Rajnandgaon Chhattisgarh",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Adult Dry Cat Food - Tuna & Salmon",
+  "handle": "adult-dry-cat-food-tuna-salmon",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "199",
+    "compare_at_price": "199",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145_5-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+    }
+   },
+   {
+    "title": "2.8kg",
+    "price": "499",
+    "compare_at_price": "499",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372132_1-purepet-tuna-salmon-adult-dry-cat-food.jpg"
+    }
+   },
+   {
+    "title": "6kg",
+    "price": "999",
+    "compare_at_price": "999",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40372131_1-purepet-tuna-salmon-adult-dry-cat-food.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145_5-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145-2_5-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145-3_3-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145-4_3-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145-5_3-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145-6_3-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145-7_3-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40316145-8_3-purepet-adult-cat-dry-food-tuna-salmon.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Tuna, Salmon, Eggs, Hydrolyzed Chicken Liver, Corn Gluten Meal, Whole Grain Cereals, Saya Refined Oil, Fish Oil, Wheat Flour, Taurine, Natural Flavours, lodised Salt, Vitamins, Organic Minerals, Antioxidants, Prebiotics & Probiotics",
+   "nutritionalInfo": {
+    "Protein (min.)": "22%",
+    "Fat (min.)": "12%",
+    "Crude Fibre (max.)": "2.5%",
+    "Moisture (max.)": "10%"
+   },
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Kitten Dry Cat Food - Ocean Fish",
+  "handle": "kitten-dry-cat-food-ocean-fish",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1.2kg",
+    "price": "299",
+    "compare_at_price": "299",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537_6-purepet-cat-food-ocean-fish-kitten.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537_6-purepet-cat-food-ocean-fish-kitten.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537-2_6-purepet-cat-food-ocean-fish-kitten.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537-3_6-purepet-cat-food-ocean-fish-kitten.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537-4_5-purepet-cat-food-ocean-fish-kitten.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537-5_3-purepet-cat-food-ocean-fish-kitten.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537-6_3-purepet-cat-food-ocean-fish-kitten.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537-7_3-purepet-cat-food-ocean-fish-kitten.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40124537-8_3-purepet-cat-food-ocean-fish-kitten.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Real Sardine, Real Mackerel, Eggs, Corn Gluten Meal, Whole Grain Cereals, Soya Refined Oil, Wheat Flour, Taurine, Vitamins (Vit A, Vit E, Vit B,, Vit B .. Vit B2, Vit B,2. Choline, Niacin, Folic Acid), Organic Minerals (Zinc, Iron, Copper, Selenium, Manganese), Prebiotics & Probiotics.",
+   "nutritionalInfo": {
+    "Protein (min)": "34%",
+    "Fat (min)": "14%",
+    "Crude Fibre (max)": "2.5%",
+    "Moisture (max)": "10%"
+   },
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Creamy Crab & Chicken Lickable Cat Treats",
+  "handle": "creamy-crab-chicken-lickable-cat-treats",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720_3-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720_3-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720-2_3-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720-3_3-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720-4_3-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720-5_3-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720-6_3-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720-7_3-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328720-8_2-purepet-creamy-cat-lickable-treats-crab-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Chicken, Hydrolysed Chicken Liver, Crab Powder",
+   "nutritionalInfo": {
+    "Crude Protein (min.)": "15%",
+    "Crude Fat (min.)": "2%",
+    "Crude Fibre (max.)": "2%",
+    "Moisture (max.)": "85%"
+   },
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Creamy Real Chicken Lickable Cat Treats",
+  "handle": "creamy-real-chicken-lickable-cat-treats",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522_3-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522_3-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522-2_3-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522-3_3-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522-4_3-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522-5_3-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522-6_3-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522-7_3-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40324522-8_2-purepet-creamy-lickable-treats-for-cats-real-chicken.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Chicken meat, Chicken liver, Hydrolyzed chicken liver, Flavouring agents, Chicken oil, Modified starch, Gelling agent, Vitamins, Minerals, DL-methionine, Taurine, Green tea extract",
+   "nutritionalInfo": {
+    "Crude Protein (min.)": "15%",
+    "Crude Fat (min.)": "12%",
+    "Crude Fibre (max.)": "2%",
+    "Moisture (max.)": "85%"
+   },
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Creamy Tuna & Bonito Lickable Cat Treats",
+  "handle": "creamy-tuna-bonito-lickable-cat-treats",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "75g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719_3-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719_3-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719-2_3-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719-3_3-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719-4_3-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719-5_3-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719-6_3-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719-7_3-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40328719-8_2-purepet-creamy-cat-lickable-treats-tuna-bonito.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "ingredients": "Chicken Meat, Liver, Hydrolysed Chicken Liver, Tuna & Bonito Powder",
+   "nutritionalInfo": {
+    "Crude Protein (min.)": "15%",
+    "Crude Fat (min.)": "2%",
+    "Crude Fibre (max.)": "2%",
+    "Moisture (max.)": "85%"
+   },
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Real Chicken & Liver in Gravy Wet Cat Food",
+  "handle": "real-chicken-liver-in-gravy-wet-cat-food",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853_5-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+    },
+    "barcode": "8906125482702"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853_5-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853-2_5-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853-3_5-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853-4_5-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853-5_4-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853-6_4-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853-7_4-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40200853-8_4-purepet-wet-cat-food-real-chicken-chicken-liver-in-gravy.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Purepet Gravy Food is a complete and balanced meal for adult cats, carefully formulated to meet their daily nutritional needs. Enriched with essential vitamins and minerals, it provides moisture and nourishment for a healthy and happy life. This wholesome food supports your cat's fur, heart health, weight management, skin, teeth, muscles, bones, and overall immunity.",
+   "ingredients": "Ingredients:\nReal Chicken, Chicken Liver, Gravy, Gelling Agent, Natural Flavours, Organic Minerals & Vitamins (Vit. E, Vit. A, Vit. C, Vit. D3, Vit. B1, Vit. B2, Vit. B6, Choline, Folic Acid).\nNutritional Facts:\nProtein (min) 8.0%\nFat (min) 6.0%\nCrude Fibre (max) 2.0%\nMoisture (max) 82.5%\nTaurine (min) 0.05%",
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Real Tuna & Chicken Liver in Gravy Wet Cat Food",
+  "handle": "real-tuna-chicken-liver-in-gravy-wet-cat-food",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "30",
+    "compare_at_price": "30",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821_2-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821_2-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821-2_2-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821-3_2-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821-4_2-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821-5_2-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821-6_2-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821-7_2-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40362821-8_1-purepet-purepet-real-tuna-chicken-liver-in-gravy-wet-cat-food.jpg"
+   }
+  ],
+  "food_type": "NON_VEG",
+  "details": {
+   "description": "Purepet Gravy provides complete nutrition to your adult cat. It is complete and balanced cat food, designed to take care of your cat's daily nutritional requirements. It provides all the essential vitamins and minerals, has high moisture content and provides nourishment for a healthy and happy life. It helps maintain healthy fur and heart, maintains weight, skin, teeth, muscles, bones and overall immunity.",
+   "ingredients": "Real Tuna, Real Salmon, Real Chicken, Chicken Liver, Gravy, Gelling Agent, Natural Flavours, Organic Minerals & Vitamins (Vit. E, Vit. A, Vit. C, Vit. D3, Vit. B1, Vit.B2, Vit B6, Choline, Folic Acid).\nNutritional Facts:\nProtein: min 8%\nFat: min 6%\nCrude Fibre: max 2%\nMoisture: max 82.5%\nTaurine: min 0.05%",
+   "manufacturerName": "Drools Pet Food Private Limited",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Lavender Cat Litter",
+  "handle": "lavender-cat-litter",
+  "vendor": "Purepet",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "5kg",
+    "price": "320",
+    "compare_at_price": "320",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+    }
+   },
+   {
+    "title": "10kg",
+    "price": "570",
+    "compare_at_price": "570",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40217991_2-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992-2_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992-3_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992-4_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992-5_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992-6_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992-7_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40217992-8_3-purepet-cat-litter-super-absorbent-clumping-formula-for-multiple-cats-lavender.jpg"
+   }
+  ],
+  "details": {
+   "usageInstructions": "Clean the litter box and fill it with Purepet Cat Litter to a depth of 2-3 inches.\nPlace the litter box in a quiet, secure spot where your cat feels comfortable and is likely to return.\nWhen the litter comes into contact with liquid or solid waste, it forms small clumps.\nRemove these clumps using a scoop. If a scoop is not available, use a small recyclable bag to pick up and wrap the waste.\nDo not discard the remaining litter. Simply top up the box with fresh Purepet Cat Litter to maintain the recommended depth.",
+   "manufacturerName": "Abis Exports (I) Pvt. Ltd",
+   "countryOfOrigin": "India"
+  }
+ }
+]
