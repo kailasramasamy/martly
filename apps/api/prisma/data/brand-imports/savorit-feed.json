@@ -1,0 +1,301 @@
+[
+ {
+  "title": "Long Cut Vermicelli",
+  "handle": "long-cut-vermicelli",
+  "vendor": "Savorit",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "14",
+    "compare_at_price": "14",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000317_9-savorit-semiya-long.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000318_7-savorit-semiya-long.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000317_9-savorit-semiya-long.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000317-2_12-savorit-semiya-long.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000317-3_12-savorit-semiya-long.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000317-4_12-savorit-semiya-long.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000317-5_12-savorit-semiya-long.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000318_7-savorit-semiya-long.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Manufactured with the latest swiss technology in absolutely hygienic conditions, untouched by hand. It is good for upma, sevai, kheer etc.\nSavorit is the modern day’s answer for the need of authentic, tasty, healthy & wholesome foods and offers the real Indian gourmet experience.",
+   "ingredients": "Hard Wheat Semolina",
+   "nutritionalInfo": {
+    "Energy": "360kcal",
+    "Carbohydrate": "80g",
+    "Natural sugar": "0. 56g",
+    "Protien": "10g"
+   },
+   "usageInstructions": "Ready to cook. Used in preparing both savoury and sweet dishes.\nThis Vermicelli can be used to make a variety of dishes like upma, kheer, etc",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Roasted Vermicelli",
+  "handle": "roasted-vermicelli",
+  "vendor": "Savorit",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "25",
+    "compare_at_price": "25",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000319_9-savorit-vermicelli-toasted.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000320_7-savorit-vermicelli-toasted.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000321_8-savorit-vermicelli-toasted.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000319_9-savorit-vermicelli-toasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000319-2_9-savorit-vermicelli-toasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000319-3_9-savorit-vermicelli-toasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000319-4_9-savorit-vermicelli-toasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000319-5_9-savorit-vermicelli-toasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000319-6_1-savorit-vermicelli-toasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000320_7-savorit-vermicelli-toasted.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000321_8-savorit-vermicelli-toasted.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Manufactured with the latest Swiss technology in absolutely hygienic conditions, untouched by hand. It is good for upma, sevai, kheer, etc. Savourit is the modern day's answer to the need for authentic, tasty, healthy & wholesome foods and offers the real Indian gourmet experience.",
+   "ingredients": "Durum Wheat Semolina",
+   "nutritionalInfo": {
+    "Serving Size": "1 cup (100g)",
+    "Calories": "370",
+    "Total Fat": "1.0 g",
+    "Saturated Fat": "0 g",
+    "Trans Fat": "0 g",
+    "Cholesterol": "0 mg",
+    "Sodium": "4 mg",
+    "Total Carbohydrate": "79 g",
+    "Dietary Fibre": "3 g",
+    "Total Sugars": "0 g",
+    "Protein": "11 g",
+    "Calcium": "18 mg",
+    "Iron": "3 mg",
+    "Potassium": "165 mg"
+   },
+   "storageInstructions": "*Store in a cool and dry place\n*Transfer to an airtight container after opening",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Vermicelli",
+  "handle": "vermicelli",
+  "vendor": "Savorit",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "200g",
+    "price": "20",
+    "compare_at_price": "20",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000314_8-savorit-vermicelli-short.jpg"
+    }
+   },
+   {
+    "title": "500g",
+    "price": "50",
+    "compare_at_price": "50",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000315_7-savorit-vermicelli-short.jpg"
+    }
+   },
+   {
+    "title": "800g",
+    "price": "85",
+    "compare_at_price": "85",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000316_8-savorit-vermicelli-short.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000314_8-savorit-vermicelli-short.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000314-2_12-savorit-vermicelli-short.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000314-3_12-savorit-vermicelli-short.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000314-4_12-savorit-vermicelli-short.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000314-5_12-savorit-vermicelli-short.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000315_7-savorit-vermicelli-short.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000316_8-savorit-vermicelli-short.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Manufactured with the latest swiss technology in absolutely hygienic conditions, untouched by hand. It is good for upma, sevai, kheer etc. Savorit is the modern day’s answer for the need for authentic, tasty, healthy & wholesome foods and offers the real Indian gourmet experience.",
+   "ingredients": "Hard Wheat Semolina",
+   "nutritionalInfo": {
+    "Energy": "360 kcal",
+    "Carbohydrate": "80 g",
+    "Natural sugar": "0. 56 g",
+    "Protien": "10 g"
+   },
+   "usageInstructions": "Ready to cook. Used in preparing both savoury and sweet dishes.\nThis Vermicilli can be used to make a variety of dishes like upma, kheer, etc",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Premium Macaroni Pasta - Elbow",
+  "handle": "premium-macaroni-pasta-elbow",
+  "vendor": "Savorit",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "149",
+    "compare_at_price": "149",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40024661_6-savorit-premium-macaroni-pasta-elbow.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024661_6-savorit-premium-macaroni-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024661-2_10-savorit-premium-macaroni-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024661-3_10-savorit-premium-macaroni-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024661-4_10-savorit-premium-macaroni-pasta-elbow.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024661-5_10-savorit-premium-macaroni-pasta-elbow.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Macaroni is normally meant to gratify the vegetarians. It is prepared from 100% suji, for a tasty delicate and lighter taste to your pasta preparations. Grab the tasty pasta and create your work easier with a fun filling and a heart winning flavor. Macaroni is one of their prepared to eat food that pleases you with spongy and delicate flavor.",
+   "ingredients": "Urad dal Flour,Pepper,asafotida,salt,papad khar",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Ying Yaang Veg Hakka Sooji Noodles",
+  "handle": "ying-yaang-veg-hakka-sooji-noodles",
+  "vendor": "Savorit",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "400g",
+    "price": "45",
+    "compare_at_price": "45",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40024662_7-savorit-noodles-ying-yang.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024662_7-savorit-noodles-ying-yang.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024662-2_10-savorit-noodles-ying-yang.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024662-3_10-savorit-noodles-ying-yang.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024662-4_10-savorit-noodles-ying-yang.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40024662-5_9-savorit-noodles-ying-yang.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Noodles are prepared from premium durum wheat flour, these noodles have been great by Savorit. Delicious and strong noodles are a genuine pleasure in authentic Chinese flavours and the blend of noodles and veggies is an unbeatable recipe. Noodles being high in protein and low in sugars also help preserve fat and are simple to cook.",
+   "ingredients": "Hard Wheat Flour/ Semolina",
+   "countryOfOrigin": "India"
+  }
+ }
+]
