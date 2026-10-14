@@ -1,0 +1,30 @@
+{
+  "brand": "Anandam",
+  "manufacturer": "Sri Kanyaka Parameshwari Oil Mills",
+  "feed": "anandam-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/anandam/logo-90079a8f.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFD200",
+  "namePrefix": "Anandam ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Deepam\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Pancha\\ Thyla\\ Pooja\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    }
+  ]
+}

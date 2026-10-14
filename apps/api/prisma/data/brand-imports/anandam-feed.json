@@ -1,0 +1,107 @@
+[
+ {
+  "title": "Deepam Oil",
+  "handle": "deepam-oil",
+  "vendor": "Anandam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "420g",
+    "price": "90",
+    "compare_at_price": "90",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40141966_7-anandam-pooja-oil.jpg"
+    },
+    "barcode": "8908005382010"
+   },
+   {
+    "title": "850g",
+    "price": "200",
+    "compare_at_price": "200",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40141965_9-anandam-pooja-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141966_7-anandam-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141966-2_8-anandam-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141966-3_5-anandam-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141966-4_3-anandam-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141966-5_1-anandam-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141965_9-anandam-pooja-oil.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Experience the essence of tranquillity with Anandam Deepam Oil, a unique blend of natural ingredients that illuminates your space with a serene glow, perfect for meditation and relaxation. This exquisite oil, featuring a soothing fragrance that envelops your senses, is a blend of five oils, including Sesame Oil, fostering inner peace and spiritual harmony. Elevate your rituals and create a peaceful ambiance, as the calming essence of this product elevates your wellbeing and invites a sense of serenity into your home.",
+   "storageInstructions": "*Store in a dry place",
+   "manufacturerName": "Sri Kanyakaparameshwari Oil Mills",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Pancha Thyla Pooja Oil",
+  "handle": "pancha-thyla-pooja-oil",
+  "vendor": "Anandam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "900ml",
+    "price": "220",
+    "compare_at_price": "220",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969_5-anandam-pooja-oil-pancha-thyla.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969_5-anandam-pooja-oil-pancha-thyla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969-2_5-anandam-pooja-oil-pancha-thyla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969-3_2-anandam-pooja-oil-pancha-thyla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969-4_1-anandam-pooja-oil-pancha-thyla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969-5_1-anandam-pooja-oil-pancha-thyla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969-6_1-anandam-pooja-oil-pancha-thyla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969-7_1-anandam-pooja-oil-pancha-thyla.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40141969-8_1-anandam-pooja-oil-pancha-thyla.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Immerse yourself in the sacred blend of five potent oils with Anandam Pancha Thyla Pooja Oil. Crafted for divine rituals, it elevates your spiritual practices with its pure and aromatic essence, ensuring a serene and blessed atmosphere. Elevate your devotion with this exquisite, time-honoured elixir.",
+   "manufacturerName": "SRIKANYAKAPARAMESHWARI OIL MILLS",
+   "countryOfOrigin": "India"
+  }
+ }
+]
