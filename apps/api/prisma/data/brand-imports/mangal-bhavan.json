@@ -1,0 +1,566 @@
+{
+  "brand": "Mangal Bhavan",
+  "manufacturer": "Mangal Bhavan",
+  "feed": "mangal-bhavan-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mangal-bhavan/logo-ca1525a5.png",
+  "themeColor": "#E35A24",
+  "themeColorSecondary": "#B71C1C",
+  "namePrefix": "Mangal Bhavan ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Sandalwood\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Chandan\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Rose\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Dhoop\\ Cones\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Guggal\\ Dhoop\\ Cones\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Dhoop\\ Cones\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Mogra\\ Dhoop\\ Cones\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Shahi\\ Rose\\ Dhoop\\ Cones\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Herbal\\ Dhoop\\ Sticks\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Guggal\\ Herbal\\ Dhoop\\ Sticks\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Loban\\ Dhoop\\ Sticks\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Rose\\ Dhoop\\ Sticks\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Cow\\ Dung\\ Dhoop\\ Sticks\\ with\\ Stand$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Gaumay\\ Dhoop\\ Sticks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Sambrani\\ Cup$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Guggal\\ Sambrani\\ Cup$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Jasmine\\ Sambrani\\ Cup$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Lavender\\ Sambrani\\ Cup$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Loban\\ Sambrani\\ Cup$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Rose\\ Sambrani\\ Cup$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Havan\\ Samagri$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Havan\\ Samidha\\ Mango\\ Wood$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Cow\\ Dung\\ Cake$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Dhoop & Cones"
+      ]
+    },
+    {
+      "match": "^Camphor\\ Tablets$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Deepam\\ Ghee$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Puja\\ Deepam\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Kesar\\ Cotton\\ Wicks\\ \\-\\ Large$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Rui\\ Batti\\ \\-\\ Long$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Rui\\ Batti\\ \\-\\ Round$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Brass\\ Akhand\\ Jyot\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Regular\\ Clay\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Sadda\\ Mitti\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Large\\ Traditional\\ Clay\\ Diyas$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Mud\\ Chaumukhi\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Designer\\ Clay\\ Diyas\\ \\-\\ Multicolour$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Designer\\ Diya\\ \\-\\ Assorted\\ Colours$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Designer\\ Decorative\\ Diya\\ \\-\\ Assorted\\ Colours$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Designer\\ Diya\\ \\-\\ Blue$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Designer\\ Diya\\ \\-\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Eco\\-Friendly\\ Designer\\ Diya\\ Set$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Eco\\-Friendly\\ Designer\\ Diya\\ Set\\ \\-\\ Big$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Eco\\-Friendly\\ Designer\\ Diya\\ Set\\ \\-\\ Assorted$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Eco\\-Friendly\\ Designer\\ Clay\\ Diyas$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Eco\\-Friendly\\ Designer\\ Mitti\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Eco\\-Friendly\\ Om\\ Designer\\ Clay\\ Diyas$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Handcrafted\\ Decorative\\ Diya\\ \\-\\ Assorted$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Handcrafted\\ Decorative\\ Diya\\ \\-\\ Maroon\\ \\&\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Ganesha\\ Traditional\\ Diya\\ Set$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Swastik\\ Traditional\\ Diya\\ Set$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Panchgavya\\ Floating\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Panchgavya\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Lace\\ Matki\\ with\\ Candle$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Shagun\\ Matki\\ Wax\\ Candle$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Floating\\ Candles$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Diyas & Decorative Candles"
+      ]
+    },
+    {
+      "match": "^Kumkum$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Sindoor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Chandan\\ Tika\\ Powder$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Shiv\\ Bhasm$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Kalawa\\ Sacred\\ Thread$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Janeu\\ Sacred\\ Thread$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Kalawa\\ with\\ Roli\\ \\&\\ Akshat\\ Tika$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sacred Thread (Mauli / Kalava)"
+      ]
+    },
+    {
+      "match": "^Puja\\ Supari\\ \\(Betel\\ Nut\\)$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Offerings",
+        "Betel Leaves & Areca"
+      ]
+    },
+    {
+      "match": "^Ganga\\ Jal$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Offerings",
+        "Panchamrit Ingredients"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Gulal\\ \\-\\ Orange$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Gulal\\ \\-\\ Pink$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Gulal\\ \\-\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    },
+    {
+      "match": "^Herbal\\ Gulal\\ \\-\\ Yellow$",
+      "path": [
+        "Pooja & Festivals",
+        "Festival Items",
+        "Holi Colours (Gulal)"
+      ]
+    }
+  ]
+}
