@@ -6,6 +6,7 @@ import { getTimePeriod, TIME_CATEGORY_MAP, type TimePeriod } from "../../service
 import {
   buildProductData, enrichStoreProduct, liveWindow, reviewSummaries, STORE_PRODUCT_INCLUDE, withAllSizes, withReviews,
 } from "../../services/store-feed.js";
+import { liveFestiveHero } from "../../services/festive-hero.js";
 
 export async function homeRoutes(app: FastifyInstance) {
   app.get<{ Params: { storeId: string } }>(
@@ -27,8 +28,8 @@ export async function homeRoutes(app: FastifyInstance) {
 
       const now = new Date();
 
-      // Run 7 parallel queries
-      const [collections, departments, timeCategories, dealsRaw, buyAgainRaw, bannersRaw, recipesRaw] = await Promise.all([
+      // Run 8 parallel queries
+      const [collections, departments, timeCategories, dealsRaw, buyAgainRaw, bannersRaw, recipesRaw, festiveHero] = await Promise.all([
         // 1. Collections with products mapped to this store
         app.prisma.collection.findMany({
           where: {
@@ -187,6 +188,9 @@ export async function homeRoutes(app: FastifyInstance) {
             },
           },
         }),
+
+        // 8. Festive hero — replaces the hero carousel while a festival is live
+        liveFestiveHero(app.prisma, store),
       ]);
 
       // Transform collections: flatten to products with store data, filter empty
@@ -330,6 +334,7 @@ export async function homeRoutes(app: FastifyInstance) {
         buyAgain: typeof buyAgain;
         banners: typeof bannersRaw;
         recipes: typeof recipes;
+        festiveHero: typeof festiveHero;
       }> = {
         success: true,
         data: {
@@ -341,6 +346,7 @@ export async function homeRoutes(app: FastifyInstance) {
           buyAgain: enrichedBuyAgain,
           banners: bannersRaw,
           recipes,
+          festiveHero,
         },
       };
       return response;

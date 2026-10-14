@@ -12,6 +12,7 @@ import {
   Manrope_700Bold,
   Manrope_800ExtraBold,
 } from "@expo-google-fonts/manrope";
+import { Cinzel_700Bold } from "@expo-google-fonts/cinzel";
 
 // Force light mode globally regardless of system setting
 try { Appearance.setColorScheme("light"); } catch {}
@@ -179,6 +180,7 @@ function RootLayoutNav() {
         <Stack.Screen name="language-settings" options={{ headerShown: true, title: "Language" }} />
         <Stack.Screen name="recipes" options={{ headerShown: true, title: "Recipes" }} />
         <Stack.Screen name="recipe/[id]" options={{ headerShown: true, title: "Recipe" }} />
+        <Stack.Screen name="festival/[id]" options={{ headerShown: true, title: "Festive picks" }} />
       </Stack>
       {!splashDone && <SplashScreen onBeforeFadeOut={handleBeforeFadeOut} onFinish={handleSplashFinish} />}
     </>
@@ -192,6 +194,7 @@ export default function RootLayout() {
     "Manrope-SemiBold": Manrope_600SemiBold,
     "Manrope-Bold": Manrope_700Bold,
     "Manrope-ExtraBold": Manrope_800ExtraBold,
+    "Cinzel-Bold": Cinzel_700Bold,
   });
 
   if (!fontsLoaded) return null;

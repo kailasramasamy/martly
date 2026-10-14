@@ -705,12 +705,16 @@ model Collection {
   artDirection    String?        @map("art_direction")
   source          CurationSource @default(MANUAL)
   festivalEventId String?        @map("festival_event_id")
+  heroTitle       String?        @map("hero_title")
+  heroImageUrl    String?        @map("hero_image_url")
+  heroTheme       Json?          @map("hero_theme")
   createdAt       DateTime       @default(now()) @map("created_at")
   updatedAt       DateTime       @updatedAt @map("updated_at")
 
   organization  Organization?    @relation(fields: [organizationId], references: [id])
   festivalEvent FestivalEvent?   @relation(fields: [festivalEventId], references: [id], onDelete: SetNull)
   items         CollectionItem[]
+  tiles         CollectionTile[]
 
   @@unique([organizationId, festivalEventId])
   @@index([organizationId])
@@ -736,6 +740,23 @@ model FestivalEvent {
 
   @@index([isActive, startsAt])
   @@map("festival_events")
+}
+
+model CollectionTile {
+  id             String   @id @default(uuid())
+  collectionId   String   @map("collection_id")
+  title          String
+  translations   Json?
+  imageUrl       String   @map("image_url")
+  subcategoryIds String[] @map("subcategory_ids")
+  sortOrder      Int      @default(0) @map("sort_order")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  collection Collection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
+
+  @@index([collectionId])
+  @@map("collection_tiles")
 }
 
 model CollectionItem {

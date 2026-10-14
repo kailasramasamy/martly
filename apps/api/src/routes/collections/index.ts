@@ -1,10 +1,28 @@
-import type { FastifyInstance } from "fastify";
-import { createCollectionSchema, updateCollectionSchema } from "@martly/shared/schemas";
+import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
+import { Prisma } from "../../../generated/prisma/client.js";
+import {
+  createCollectionSchema, updateCollectionHeroSchema, updateCollectionSchema, updateCollectionTileSchema,
+} from "@martly/shared/schemas";
 import type { ApiResponse, PaginatedResponse } from "@martly/shared/types";
 import { authenticate } from "../../middleware/auth.js";
 import { requireRole } from "../../middleware/authorize.js";
 import { getOrgUser } from "../../middleware/org-scope.js";
-import { isCurationConfigured, regenerateBanner } from "../../services/seasonal/index.js";
+import { isCurationConfigured, regenerateBanner, regenerateHero } from "../../services/seasonal/index.js";
+import { saveHero, withHeroTranslation } from "../../services/seasonal/hero.js";
+
+const ADMINS = [authenticate, requireRole("SUPER_ADMIN", "ORG_ADMIN")];
+
+// ORG_ADMIN may only touch its own org's collections; sends the error reply and returns undefined otherwise
+async function ownCollection(app: FastifyInstance, request: FastifyRequest<{ Params: { id: string } }>, reply: FastifyReply) {
+  const collection = await app.prisma.collection.findUnique({
+    where: { id: request.params.id },
+    include: { festivalEvent: { select: { name: true, guidance: true } } },
+  });
+  if (!collection) return void reply.notFound("Collection not found");
+  const user = getOrgUser(request);
+  if (user.role === "ORG_ADMIN" && collection.organizationId !== user.organizationId) return void reply.forbidden("Access denied");
+  return collection;
+}
 
 export async function collectionRoutes(app: FastifyInstance) {
   // List collections
@@ -63,6 +81,7 @@ export async function collectionRoutes(app: FastifyInstance) {
           },
         },
         organization: { select: { id: true, name: true } },
+        tiles: { orderBy: { sortOrder: "asc" } },
       },
     });
     if (!collection) return reply.notFound("Collection not found");
@@ -183,6 +202,52 @@ export async function collectionRoutes(app: FastifyInstance) {
       return response;
     },
   );
+
+  // Design and paint the festive home hero (background and tiles) from scratch
+  app.post<{ Params: { id: string } }>("/:id/regenerate-hero", { preHandler: ADMINS }, async (request, reply) => {
+    if (!isCurationConfigured()) return reply.serviceUnavailable("Hero generation needs ANTHROPIC_API_KEY and OPENAI_API_KEY");
+    const collection = await ownCollection(app, request, reply);
+    if (!collection) return;
+    if (!collection.organizationId) return reply.badRequest("Only organization collections can have a festive hero");
+    const hero = await regenerateHero(app.prisma, { ...collection, organizationId: collection.organizationId });
+    if (!hero) return reply.unprocessableEntity("The catalog can't fill a row of festive tiles for this collection");
+    return { success: true, data: hero } satisfies ApiResponse<typeof hero>;
+  });
+
+  app.put<{ Params: { id: string } }>("/:id/hero", { preHandler: ADMINS }, async (request, reply) => {
+    const { heroTitle, heroTitleTa } = updateCollectionHeroSchema.parse(request.body);
+    const collection = await ownCollection(app, request, reply);
+    if (!collection) return;
+    if (!collection.heroImageUrl) return reply.badRequest("This collection has no festive hero");
+    const updated = await app.prisma.collection.update({
+      where: { id: collection.id },
+      data: { heroTitle, translations: withHeroTranslation(collection.translations, heroTitleTa ?? null) },
+      select: { id: true, heroTitle: true, translations: true },
+    });
+    return { success: true, data: updated } satisfies ApiResponse<typeof updated>;
+  });
+
+  // Removes the hero so the home screen falls back to its banner carousel
+  app.delete<{ Params: { id: string } }>("/:id/hero", { preHandler: ADMINS }, async (request, reply) => {
+    const collection = await ownCollection(app, request, reply);
+    if (!collection) return;
+    await saveHero(app.prisma, collection, null);
+    return { success: true, data: null } satisfies ApiResponse<null>;
+  });
+
+  app.put<{ Params: { id: string; tileId: string } }>("/:id/tiles/:tileId", { preHandler: ADMINS }, async (request, reply) => {
+    const { title, titleTa, subcategoryIds } = updateCollectionTileSchema.parse(request.body);
+    const collection = await ownCollection(app, request, reply);
+    if (!collection) return;
+    const tile = await app.prisma.collectionTile.findFirst({ where: { id: request.params.tileId, collectionId: collection.id } });
+    if (!tile) return reply.notFound("Tile not found");
+    if (subcategoryIds && (await app.prisma.subcategory.count({ where: { id: { in: subcategoryIds } } })) !== subcategoryIds.length) {
+      return reply.badRequest("Unknown subcategory");
+    }
+    const translations = titleTa === undefined ? undefined : titleTa ? { ta: { title: titleTa } } : Prisma.DbNull;
+    const updated = await app.prisma.collectionTile.update({ where: { id: tile.id }, data: { title, subcategoryIds, translations } });
+    return { success: true, data: updated } satisfies ApiResponse<typeof updated>;
+  });
 
   // Delete collection
   app.delete<{ Params: { id: string } }>(

@@ -579,6 +579,19 @@ export const updateCollectionSchema = z.object({
 }).refine(collectionWindowValid, { message: "endsAt must be after startsAt", path: ["endsAt"] });
 export type UpdateCollectionInput = z.infer<typeof updateCollectionSchema>;
 
+export const updateCollectionHeroSchema = z.object({
+  heroTitle: z.string().min(1).max(40),
+  heroTitleTa: z.string().max(60).nullish(),
+});
+export type UpdateCollectionHeroInput = z.infer<typeof updateCollectionHeroSchema>;
+
+export const updateCollectionTileSchema = z.object({
+  title: z.string().min(1).max(30).optional(),
+  titleTa: z.string().max(45).nullish(),
+  subcategoryIds: z.array(z.string().uuid()).min(1).max(4).optional(),
+});
+export type UpdateCollectionTileInput = z.infer<typeof updateCollectionTileSchema>;
+
 // ── Festival Calendar ───────────────────────────────
 const festivalEventFields = {
   name: z.string().min(1),
@@ -1171,6 +1184,12 @@ export const storeProductSearchQuerySchema = z.object({
 
 export const searchLandingQuerySchema = z.object({
   storeId: z.string().uuid(),
+});
+
+export const festiveTileProductsQuerySchema = z.object({
+  storeId: z.string().uuid(),
+  page: z.coerce.number().int().min(1).default(1),
+  pageSize: z.coerce.number().int().min(1).max(50).default(20),
 });
 
 // Logged only when a search is committed (submit, result tap), so the query is what the customer meant

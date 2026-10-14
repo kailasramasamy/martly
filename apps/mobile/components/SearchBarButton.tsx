@@ -7,7 +7,8 @@ import { colors, fonts } from "../constants/theme";
 const SUGGESTIONS = ["milk", "atta", "onion", "eggs", "bread", "paneer", "chips", "detergent"];
 const ROTATE_MS = 2600;
 
-export function SearchBarButton() {
+/** onTint: the bar sits on a coloured festive header, so it turns white to stay distinct */
+export function SearchBarButton({ onTint = false }: { onTint?: boolean }) {
   const [index, setIndex] = useState(0);
   const fade = useRef(new Animated.Value(1)).current;
 
@@ -22,7 +23,7 @@ export function SearchBarButton() {
   }, [fade]);
 
   return (
-    <View style={styles.bar}>
+    <View style={[styles.bar, onTint && styles.barOnTint]}>
       <Pressable
         style={styles.searchArea}
         onPress={() => router.push("/search")}
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
     flexDirection: "row", alignItems: "center", height: 46,
     backgroundColor: "#f1f5f9", borderRadius: 12, paddingLeft: 14,
   },
+  barOnTint: { backgroundColor: "#fff", shadowColor: "#78350f", shadowOpacity: 0.08, shadowRadius: 8, shadowOffset: { width: 0, height: 2 }, elevation: 2 },
   searchArea: { flex: 1, flexDirection: "row", alignItems: "center", gap: 10, height: "100%" },
   placeholder: { flex: 1, fontFamily: fonts.medium, fontSize: 14, color: "#94a3b8" },
   suggestion: { fontFamily: fonts.semibold, color: colors.textSecondary },

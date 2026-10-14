@@ -6,6 +6,7 @@ import { AppstoreOutlined } from "@ant-design/icons";
 import { ImageUpload } from "../../components/ImageUpload";
 import { sectionTitle } from "../../theme";
 import { AiBannerCard } from "./ai-banner-card";
+import { HomeHeroCard } from "./home-hero-card";
 import { CuratedItemsCard } from "./curated-items-card";
 
 export const CollectionEdit = () => {
@@ -38,6 +39,9 @@ export const CollectionEdit = () => {
         onFinish={(values) => formProps.onFinish?.(toSchedulePayload(values))}
       >
         {isCurated && record && <AiBannerCard record={record} onRegenerated={() => queryResult?.refetch()} />}
+        {(record?.kind === "OCCASION" || record?.kind === "SEASON") && (
+          <HomeHeroCard record={record} onChanged={() => queryResult?.refetch()} />
+        )}
         <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
           <Col xs={24} lg={12}>
             <Card title={sectionTitle(<AppstoreOutlined />, "Collection Details")} size="small">

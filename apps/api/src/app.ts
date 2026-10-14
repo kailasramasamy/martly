@@ -22,6 +22,7 @@ import { addressRoutes } from "./routes/addresses/index.js";
 import { collectionRoutes } from "./routes/collections/index.js";
 import { festivalEventRoutes } from "./routes/festival-events/index.js";
 import { homeRoutes } from "./routes/home/index.js";
+import { festiveRoutes } from "./routes/festive/index.js";
 import { wishlistRoutes } from "./routes/wishlist/index.js";
 import { reviewRoutes } from "./routes/reviews/index.js";
 import { couponRoutes } from "./routes/coupons/index.js";
@@ -129,6 +130,7 @@ export async function buildApp() {
       await api.register(collectionRoutes, { prefix: "/collections" });
       await api.register(festivalEventRoutes, { prefix: "/festival-events" });
       await api.register(homeRoutes, { prefix: "/home" });
+      await api.register(festiveRoutes, { prefix: "/festive" });
       await api.register(wishlistRoutes, { prefix: "/wishlist" });
       await api.register(reviewRoutes, { prefix: "/reviews" });
       await api.register(couponRoutes, { prefix: "/coupons" });

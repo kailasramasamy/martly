@@ -37,4 +37,6 @@ export const fonts = {
   semibold: "Manrope-SemiBold",
   bold: "Manrope-Bold",
   extrabold: "Manrope-ExtraBold",
+  /** Festive headlines only */
+  display: "Cinzel-Bold",
 } as const;

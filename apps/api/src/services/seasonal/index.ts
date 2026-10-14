@@ -1,13 +1,14 @@
 import { Prisma, type FestivalEvent, type PrismaClient } from "../../../generated/prisma/client.js";
 import { orgSubcategoryCandidates, pickProducts } from "./candidates.js";
-import { curateWithClaude } from "./curator.js";
+import { curateWithClaude, describeEvent } from "./curator.js";
 import { buildBannerSet, type BannerLog, type BannerSet } from "./banner-set.js";
 import { liveFrom, type CurationOrg } from "./due-events.js";
+import { buildHero, heroFields, withHeroTranslation } from "./hero.js";
 
 const MIN_PRODUCTS = 6;
 
 export type CurationResult =
-  | { status: "created"; collectionId: string; bannerId: string }
+  | { status: "created"; collectionId: string; tiles: number }
   | { status: "exists"; collectionId?: string }
   | { status: "skipped"; reason: string };
 
@@ -21,8 +22,8 @@ export function isCurationConfigured() {
 }
 
 /**
- * Builds an AGENT collection plus a hero banner for one org and event. Both are scheduled to go live at
- * the event's lead date, so admins get a review window where deactivating the collection is the veto.
+ * Builds an AGENT collection with its search banner and festive home hero for one org and event. It is
+ * scheduled to go live at the event's lead date, so admins get a review window where deactivating it is the veto.
  */
 export async function curateEvent(prisma: PrismaClient, org: CurationOrg, event: FestivalEvent, log: BannerLog): Promise<CurationResult> {
   const existing = await prisma.collection.findFirst({ where: { organizationId: org.id, festivalEventId: event.id }, select: { id: true } });
@@ -36,29 +37,27 @@ export async function curateEvent(prisma: PrismaClient, org: CurationOrg, event:
   if (productIds.length < MIN_PRODUCTS) return { status: "skipped", reason: `Only ${productIds.length} in-stock products matched` };
 
   const slug = `${event.slug}-${org.slug}`;
-  const art = bannerFields(await buildBannerSet(curation.imagePrompt, {
-    en: { title: curation.title, subtitle: curation.subtitle },
-    ta: { title: curation.titleTa, subtitle: curation.subtitleTa },
-  }, slug, log));
-  const window = { startsAt: liveFrom(event), endsAt: event.endsAt };
+  const [banner, hero] = await Promise.all([
+    buildBannerSet(curation.imagePrompt, {
+      en: { title: curation.title, subtitle: curation.subtitle },
+      ta: { title: curation.titleTa, subtitle: curation.subtitleTa },
+    }, slug, log),
+    buildHero(prisma, org.id, describeEvent(event), slug),
+  ]);
+  if (!hero) log("Hero designer found no tile themes; the home screen keeps its banners");
+  const translations = { ta: { title: curation.titleTa, subtitle: curation.subtitleTa } };
   try {
-    return await prisma.$transaction(async (tx) => {
-      const collection = await tx.collection.create({
-        data: {
-          organizationId: org.id, festivalEventId: event.id, source: "AGENT", kind: event.kind, slug, ...art,
-          artDirection: curation.imagePrompt, title: curation.title, subtitle: curation.subtitle, ...window,
-          translations: { ta: { title: curation.titleTa, subtitle: curation.subtitleTa } },
-          items: { create: productIds.map((productId, sortOrder) => ({ productId, sortOrder })) },
-        },
-      });
-      const banner = await tx.banner.create({
-        data: {
-          organizationId: org.id, title: curation.title, subtitle: curation.subtitle, ...art, ...window,
-          placement: "HERO_CAROUSEL", actionType: "COLLECTION", actionTarget: collection.id,
-        },
-      });
-      return { status: "created" as const, collectionId: collection.id, bannerId: banner.id };
+    const collection = await prisma.collection.create({
+      data: {
+        organizationId: org.id, festivalEventId: event.id, source: "AGENT", kind: event.kind, slug, ...bannerFields(banner),
+        artDirection: curation.imagePrompt, title: curation.title, subtitle: curation.subtitle,
+        startsAt: liveFrom(event), endsAt: event.endsAt, ...heroFields(hero),
+        translations: withHeroTranslation(translations, hero?.heroTitleTa ?? null),
+        items: { create: productIds.map((productId, sortOrder) => ({ productId, sortOrder })) },
+        tiles: { create: hero?.tiles ?? [] },
+      },
     });
+    return { status: "created", collectionId: collection.id, tiles: hero?.tiles.length ?? 0 };
   } catch (err) {
     // A concurrent run (another instance or a manual "Curate now") got there first
     if (err instanceof Prisma.PrismaClientKnownRequestError && err.code === "P2002") return { status: "exists" };
@@ -84,3 +83,4 @@ export async function regenerateBanner(prisma: PrismaClient, collection: BannerS
   return art;
 }
 
+export { regenerateHero } from "./hero.js";

@@ -1,0 +1,87 @@
+import { useEffect, useState } from "react";
+import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
+import { useLocalSearchParams, useNavigation } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import { colors, fonts } from "../../constants/theme";
+import { useStore } from "../../lib/store-context";
+import { useLanguage } from "../../lib/language-context";
+import { ProductActionsProvider } from "../../lib/product-actions";
+import { useFestiveHero, useTileProducts } from "../../lib/use-festive";
+import { ProductList } from "../../components/ProductList";
+import { FloatingCart } from "../../components/FloatingCart";
+import { TileChips } from "../../components/festival/TileChips";
+
+function Message({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: string }) {
+  return (
+    <View style={styles.message}>
+      <Ionicons name={icon} size={28} color={colors.textSecondary} />
+      <Text style={styles.messageText}>{text}</Text>
+    </View>
+  );
+}
+
+function TileShelf({ collectionId, tileId, storeId }: { collectionId: string; tileId: string; storeId: string }) {
+  const { products, loading, loadingMore, failed, loadMore } = useTileProducts(collectionId, tileId, storeId);
+  if (loading) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (failed) return <Message icon="cloud-offline-outline" text="Couldn't load these products right now." />;
+  if (products.length === 0) return <Message icon="basket-outline" text="Nothing in stock here right now." />;
+  return (
+    <ProductList
+      products={products}
+      layout="grid"
+      contentContainerStyle={styles.grid}
+      onEndReached={loadMore}
+      onEndReachedThreshold={0.6}
+      ListFooterComponent={loadingMore ? <ActivityIndicator style={styles.more} color={colors.primary} /> : null}
+    />
+  );
+}
+
+export default function FestivalScreen() {
+  const { id, tile } = useLocalSearchParams<{ id: string; tile?: string }>();
+  const navigation = useNavigation();
+  const { selectedStore } = useStore();
+  const { language } = useLanguage();
+  const storeId = selectedStore?.id;
+  const { hero, loading } = useFestiveHero(id, storeId);
+  const [tileId, setTileId] = useState<string | null>(tile ?? null);
+
+  const selected = hero?.tiles.find((t) => t.id === tileId) ?? hero?.tiles[0] ?? null;
+
+  useEffect(() => {
+    if (!hero) return;
+    const { background, title } = hero.theme;
+    navigation.setOptions({
+      title: (language && hero.translations?.[language]?.title) || hero.title,
+      headerStyle: { backgroundColor: background },
+      headerTintColor: title,
+      headerTitleStyle: { fontFamily: fonts.display, fontSize: 20, color: title },
+      headerShadowVisible: false,
+    });
+  }, [hero, language, navigation]);
+
+  if (loading) return <ActivityIndicator style={styles.spinner} color={colors.primary} />;
+  if (!hero || !selected || !storeId) return <Message icon="sparkles-outline" text="This festival's picks have ended." />;
+
+  return (
+    <ProductActionsProvider store={selectedStore ?? null}>
+      <View style={styles.container}>
+        <View style={[styles.chips, { backgroundColor: hero.theme.background }]}>
+          <TileChips tiles={hero.tiles} selectedId={selected.id} ink={hero.theme.title} onSelect={setTileId} />
+        </View>
+        <TileShelf key={selected.id} collectionId={hero.id} tileId={selected.id} storeId={storeId} />
+        <FloatingCart />
+      </View>
+    </ProductActionsProvider>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: colors.background },
+  chips: { borderBottomLeftRadius: 20, borderBottomRightRadius: 20 },
+  grid: { paddingTop: 12, paddingBottom: 120 },
+  spinner: { marginTop: 48 },
+  more: { marginVertical: 16 },
+  message: { alignItems: "center", paddingTop: 64, paddingHorizontal: 32, gap: 10 },
+  messageText: { fontFamily: fonts.medium, fontSize: 14, color: colors.textSecondary, textAlign: "center" },
+});

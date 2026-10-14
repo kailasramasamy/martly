@@ -38,7 +38,7 @@ Write the Tamil copy in everyday native Tamil words rather than English words sp
 
 export class CurationRefusedError extends Error {}
 
-function describeEvent(event: FestivalEvent) {
+export function describeEvent(event: FestivalEvent) {
   const day = (d: Date) => d.toISOString().slice(0, 10);
   return [
     `Event: ${event.name} (${event.kind === "SEASON" ? "season" : "festival/occasion"})`,

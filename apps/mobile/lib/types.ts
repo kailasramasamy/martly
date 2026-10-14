@@ -217,6 +217,24 @@ export interface RecipeDetail {
   items: RecipeIngredient[];
 }
 
+export interface FestiveTile {
+  id: string;
+  title: string;
+  translations: CollectionTranslations | null;
+  imageUrl: string;
+}
+
+export interface FestiveHero {
+  id: string;
+  title: string;
+  translations: CollectionTranslations | null;
+  imageUrl: string;
+  /** background is the artwork's bottom-edge colour; dark means the wash needs light text;
+   *  ornamentDepth is the fraction of the artwork's height the ornament hangs over the headline */
+  theme: { background: string; title: string; dark: boolean; ornamentDepth: number };
+  tiles: FestiveTile[];
+}
+
 export interface HomeFeed {
   collections: CollectionSection[];
   departments: DepartmentNode[];
@@ -226,6 +244,7 @@ export interface HomeFeed {
   buyAgain: StoreProduct[];
   banners: Banner[];
   recipes: RecipeSummary[];
+  festiveHero: FestiveHero | null;
 }
 
 export interface ReviewImage {

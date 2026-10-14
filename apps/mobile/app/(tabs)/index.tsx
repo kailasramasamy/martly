@@ -13,7 +13,6 @@ import {
   Image,
 } from "react-native";
 import { router } from "expo-router";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { RecipeCard } from "../../components/RecipeCard";
@@ -21,7 +20,6 @@ import { api } from "../../lib/api";
 import { HomeBrandRail } from "../../components/HomeBrandRail";
 import { useStore } from "../../lib/store-context";
 import { useMembership } from "../../lib/membership-context";
-import { useNotifications } from "../../lib/notification-context";
 import { useBasketMode } from "../../lib/basket-mode-context";
 import { useLanguage } from "../../lib/language-context";
 import { colors, spacing } from "../../constants/theme";
@@ -35,10 +33,10 @@ import StoreDiscovery from "../../components/store-discovery/StoreDiscovery";
 import { HeroBannerSlide } from "../../components/HeroBannerSlide";
 import { CategoryTile } from "../../components/CategoryTile";
 import { TimeSpotlight } from "../../components/TimeSpotlight";
-import { HomeHeaderLocation } from "../../components/HomeHeaderLocation";
-import { SearchBarButton } from "../../components/SearchBarButton";
+import { HomeHeader } from "../../components/home/HomeHeader";
+import { FestiveHero } from "../../components/home/FestiveHero";
 import { PlusPromoStrip } from "../../components/PlusPromoStrip";
-import type { Store, StoreProduct, HomeFeed, Banner } from "../../lib/types";
+import type { Store, StoreProduct, HomeFeed, Banner, FestiveTile } from "../../lib/types";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const H_PADDING = 16;
@@ -47,7 +45,6 @@ const H_PADDING = 16;
 const CATEGORY_TILE_SIZE = Math.floor((SCREEN_WIDTH - H_PADDING * 2 - 32 - 12 * 3) / 4);
 
 export default function HomeScreen() {
-  const insets = useSafeAreaInsets();
   const { stores, selectedStore, setSelectedStore, loading: storesLoading, userArea, refreshStores } = useStore();
   const { isMember } = useMembership();
   const { isBasketMode } = useBasketMode();
@@ -60,7 +57,6 @@ export default function HomeScreen() {
   const [refreshing, setRefreshing] = useState(false);
   const [memberStatus, setMemberStatus] = useState<{ isMember: boolean; membership: { planName: string; endDate: string; daysLeft: number } | null } | null>(null);
   const [hasSubscriptions, setHasSubscriptions] = useState(false);
-  const { unreadCount } = useNotifications();
 
   const fetchHomeFeed = useCallback(() => {
     if (!selectedStore) {
@@ -116,9 +112,12 @@ export default function HomeScreen() {
   }, [stores, storeSearch]);
 
   // ── Banner data by placement ──
+  // A live festival's hero takes the top of the screen in place of the banner carousel
+  const festiveHero = homeFeed?.festiveHero ?? null;
+  const headerTint = festiveHero && !festiveHero.theme.dark ? festiveHero.theme.background : null;
   const heroBanners = useMemo(
-    () => (homeFeed?.banners ?? []).filter((b) => b.placement === "HERO_CAROUSEL"),
-    [homeFeed?.banners],
+    () => (festiveHero ? [] : (homeFeed?.banners ?? []).filter((b) => b.placement === "HERO_CAROUSEL")),
+    [festiveHero, homeFeed?.banners],
   );
   const midPageBanners = useMemo(
     () => (homeFeed?.banners ?? []).filter((b) => b.placement === "MID_PAGE"),
@@ -157,6 +156,10 @@ export default function HomeScreen() {
       if (heroTimerRef.current) clearInterval(heroTimerRef.current);
     };
   }, [heroBanners.length]);
+
+  const handleFestiveTile = useCallback((tile: FestiveTile) => {
+    if (festiveHero) router.push({ pathname: "/festival/[id]", params: { id: festiveHero.id, tile: tile.id } });
+  }, [festiveHero]);
 
   const handleBannerPress = useCallback((banner: Banner) => {
     switch (banner.actionType) {
@@ -211,23 +214,7 @@ export default function HomeScreen() {
     <ProductActionsProvider store={selectedStore ?? null}>
       <View style={styles.container}>
         {/* ── Fixed Header ── */}
-        <View style={[styles.header, { paddingTop: insets.top + 8 }]}>
-          <View style={styles.headerRow}>
-            <HomeHeaderLocation store={selectedStore} userArea={userArea} onPress={() => setShowStorePicker(true)} />
-            <View style={styles.headerActions}>
-              <TouchableOpacity style={styles.iconBtn} onPress={() => router.push("/notifications")}>
-                <Ionicons name="notifications-outline" size={20} color={colors.text} />
-                {unreadCount > 0 && (
-                  <View style={styles.bellBadge}>
-                    <Text style={styles.bellBadgeText}>{unreadCount > 99 ? "99+" : unreadCount}</Text>
-                  </View>
-                )}
-              </TouchableOpacity>
-            </View>
-          </View>
-
-          <SearchBarButton />
-        </View>
+        <HomeHeader store={selectedStore} userArea={userArea} onPickStore={() => setShowStorePicker(true)} tint={headerTint} />
 
         <ScrollView
           showsVerticalScrollIndicator={false}
@@ -241,6 +228,8 @@ export default function HomeScreen() {
             />
           }
         >
+
+          {festiveHero && <FestiveHero hero={festiveHero} onTile={handleFestiveTile} />}
 
           {/* ── Quick Access Chips (Mart Plus + Tomorrow's Basket) ── */}
           {selectedStore && (memberStatus?.isMember || hasSubscriptions) && (
@@ -619,52 +608,6 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.surface },
-
-  // ── Header ──
-  header: {
-    backgroundColor: "#fff",
-    paddingHorizontal: H_PADDING,
-    paddingBottom: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: "#f1f5f9",
-  },
-  headerRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginBottom: 12,
-  },
-  headerActions: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-  },
-  iconBtn: {
-    width: 40,
-    height: 40,
-    borderRadius: 12,
-    backgroundColor: "#f1f5f9",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  bellBadge: {
-    position: "absolute",
-    top: 4,
-    right: 4,
-    minWidth: 16,
-    height: 16,
-    borderRadius: 8,
-    backgroundColor: "#ef4444",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 3,
-  },
-  bellBadgeText: {
-    fontSize: 9,
-    fontWeight: "700",
-    color: "#fff",
-  },
-
 
   // ── Scroll Content ──
   scrollContent: { paddingBottom: 8 },

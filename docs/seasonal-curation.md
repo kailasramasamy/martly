@@ -17,9 +17,8 @@ Builds festival and season collections, plus their hero banners, for each organi
    - `curator.ts`: Claude Sonnet 5.5 (`claude-sonnet-5-5`, structured output, server-side refusal fallback) picks 4–12 subcategories and writes the English and Tamil title and subtitle plus an art-direction prompt. It may skip the event if the catalog can't support it. IDs are checked against the candidate list.
    - `pickProducts`: takes the top 3 per subcategory, ranked by 30-day org sales then stock, interleaved, up to 16 products.
    - `banner-art.ts`: generates the image with OpenAI `gpt-image-2.5-flare` (override with `OPENAI_IMAGE_MODEL`) at medium quality, 1536×1024, as WebP at compression 80 (about 180 KB). It's uploaded to S3 at `banners/seasonal/`, using the shared `services/media.ts` helper.
-   - `index.ts`: in one transaction, creates
-     - a `Collection` with `source=AGENT`, `festivalEventId`, `translations.ta`, and window `[startsAt − leadDays, endsAt]`;
-     - a `HERO_CAROUSEL` `Banner` linked to the collection with the same window.
+   - `hero.ts`: designs and paints the festive home hero alongside the banner (see [festive-home-hero.md](festive-home-hero.md)).
+   - `index.ts`: creates a `Collection` with `source=AGENT`, `festivalEventId`, `translations.ta`, window `[startsAt − leadDays, endsAt]`, and its hero tiles. Since 2026-10-14 it no longer creates a `HERO_CAROUSEL` `Banner`; the hero replaces the carousel while the festival is live.
 5. **Review window:** drafts show as "Scheduled" in Collections, with an "AI-curated" tag, for about 7 days before they go live.
    - **Veto:** turn the collection off. Its banner turns off with it (`PUT /collections/:id` keeps the banner in sync). The unique `(organizationId, festivalEventId)` constraint stops the agent from recreating it.
    - **Regenerate:** delete the collection. Its banner is deleted too, and the next run (or **Curate now**) builds a fresh one.
