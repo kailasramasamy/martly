@@ -26,7 +26,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008393-3_1-amrutha-agarbatti-jasmine.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amrutha Jasmine Agarbatti made by using natural herbs and jasmine flowers along with highest quality chemicals guarantees a flawless range of the Jasmine Incense Sticks. It is known for their enticing fragrance and used in households, temples as well as office.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Agarbatti - Lavender",
@@ -49,7 +53,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008392_3-amrutha-agarbatti-lavender.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the mesmerising smell of Amrutha Lavender Agarbatti, made out of finest material. The distinctive aroma of lavender assists to attain a peaceful environment, with the temple-like feel.",
+   "manufacturerName": "Amrutha Aromatics",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Agarbatti - Sandal",
@@ -65,14 +74,19 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40008394_1-amrutha-agarbatti-sandal.jpg"
-    }
+    },
+    "barcode": "8906037840102"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008394_1-amrutha-agarbatti-sandal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amrutha Sandal Agarbatti is made by using good-grade materials, while its stick is of high quality wood. It presents long-lasting fragrance and is less prone to dampness. It is widely used in offices, homes, shops, mosques, and temples to ensure a pleasing and fragrant environment.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Agarbatti - Shahi Gulab",
@@ -95,7 +109,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008395_2-amrutha-agarbatti-shahi-gulab.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amrutha Shahi Gulab Agarbatti made by using the highest quality ingredients that are organic in nature. We use naturally grown rose petals for making Rose Incense Sticks, which improves their fragrance.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Sugandh Agarbatti",
@@ -118,7 +136,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40008396_2-amrutha-agarbatti-sugandh.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Amrutha Sugandh Agarbatti is a high-quality incense stick, utilising quality ingredients amalgamated by our culture, heritage, and lots of dedication. Its distinctive fragrance invokes a sense of the divine, and this agarbatti is specially made to be used in traditional Indian prayers and rituals. Its delightful fragrance makes the entire surroundings soothing and relaxing.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Incense Sticks - Golden",
@@ -141,7 +163,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048676_2-amrutha-incense-sticks-golden.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A delicate blend based on the notes of rare Himalayan flowers.",
+   "countryOfOrigin": "India Manufacture Name: AMRUTHA AROMATICS"
+  }
  },
  {
   "title": "Incense Sticks - Lavender",
@@ -157,14 +183,20 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40081213_1-amrutha-incense-sticks-lavender-scented.jpg"
-    }
+    },
+    "barcode": "8906037842304"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40081213_1-amrutha-incense-sticks-lavender-scented.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the calm soothing and mind refreshing effects associated with natural lavender flowers.",
+   "usageInstructions": "Light the coated end and allow flame to catch. After a few seconds blow the flame and place it on a stand away from flammable materials.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Incense Sticks - Sandal",
@@ -187,7 +219,12 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40081214_1-amrutha-incense-sticks-sandal-scented.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Commonly known as Chandan, it evokes a world of ancient mystery, sanctity and devotion. It truly calls up deep, amazing, unexplainable feelings about India and her sacred heritage.",
+   "usageInstructions": "Light the coated end and allow flame to catch. After a few seconds blow the flame and place it on a stand away from flammable materials.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Incense Sticks - Panchamrutha",
@@ -210,7 +247,11 @@
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40048677_2-amrutha-incense-sticks-panchamrutha.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A collection of five beautiful fragrances inspired by nature, an ideal offering to the gods.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dhoop Sticks - Shahi Gulab",
@@ -226,14 +267,19 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050943_4-amrutha-dhoop-sticks-shahi-gulab-premium.jpg"
-    }
+    },
+    "barcode": "8906037840867"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050943_4-amrutha-dhoop-sticks-shahi-gulab-premium.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A collection of five beautiful fragrances inspired by nature, an ideal offering to the gods.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Dhoop Sticks - Shahi Sandal",
@@ -249,14 +295,19 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40050944_4-amrutha-dhoop-sticks-shahi-sandal.jpg"
-    }
+    },
+    "barcode": "8906037840850"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40050944_4-amrutha-dhoop-sticks-shahi-sandal.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "A collection of five beautiful fragrances inspired by nature, an ideal offering to the gods.",
+   "countryOfOrigin": "India"
+  }
  },
  {
   "title": "Incense Cones - Lavender",
@@ -272,13 +323,19 @@
     "available": true,
     "featured_image": {
      "src": "https://www.bbassets.com/media/uploads/p/xxl/40081209_1-amrutha-incense-cones-lavender-scented.jpg"
-    }
+    },
+    "barcode": "8906037841543"
    }
   ],
   "images": [
    {
     "src": "https://www.bbassets.com/media/uploads/p/xxl/40081209_1-amrutha-incense-cones-lavender-scented.jpg"
    }
-  ]
+  ],
+  "details": {
+   "description": "Experience the calm soothing and mind refreshing effects associated with natural lavender flowers.",
+   "usageInstructions": "Light the coated end and allow flame to catch. After a few seconds blow the flame and place it on a stand away from flammable materials.",
+   "countryOfOrigin": "India"
+  }
  }
 ]
