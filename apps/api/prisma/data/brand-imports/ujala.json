@@ -1,0 +1,80 @@
+{
+  "brand": "Ujala",
+  "manufacturer": "Jyothy Labs Ltd.",
+  "feed": "ujala-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/ujala/logo-feec6492.png",
+  "themeColor": "#0072BC",
+  "themeColorSecondary": "#C2185B",
+  "namePrefix": "Ujala ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Ujala Supreme Fabric Whitener": "Supreme Fabric Whitener"
+  },
+  "rules": [
+    {
+      "match": "^Supreme\\ Fabric\\ Whitener$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Stain Remover"
+      ]
+    },
+    {
+      "match": "^Detergent\\ Powder\\ with\\ Instant\\ Dirt\\ Dissolvers$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Detergent Powder"
+      ]
+    },
+    {
+      "match": "^Liquid\\ Detergent\\ \\-\\ Top\\ Load\\ \\&\\ Bucket\\ Wash$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Liquid\\ Detergent\\ \\-\\ Front\\ Load$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Crisp\\ \\&\\ Shine\\ After\\-Wash\\ Fabric\\ Enhancer\\ \\-\\ Floral\\ Fusion$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Intense\\ Crisp\\ \\&\\ Shine\\ Fabric\\ Enhancer$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Laundry Additives"
+      ]
+    },
+    {
+      "match": "^Young\\ \\&\\ Fresh\\ Fabric\\ Conditioner\\ \\-\\ Aura$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Young\\ \\&\\ Fresh\\ Fabric\\ Conditioner\\ \\-\\ Bliss$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    }
+  ]
+}
