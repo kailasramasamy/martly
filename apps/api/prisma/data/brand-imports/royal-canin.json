@@ -1,0 +1,110 @@
+{
+  "brand": "Royal Canin (Mars)",
+  "manufacturer": "Royal Canin India Pvt. Ltd.",
+  "feed": "royal-canin-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/royal-canin/logo-46c80430.png",
+  "themeColor": "#E2001A",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Royal Canin ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Golden\\ Retriever\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Labrador\\ Retriever\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Maxi\\ Adult\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Maxi\\ Puppy\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Mini\\ Adult\\ Dry\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Dry Dog Food"
+      ]
+    },
+    {
+      "match": "^Maxi\\ Adult\\ Wet\\ Dog\\ Food\\ \\-\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Mini\\ Adult\\ Wet\\ Dog\\ Food\\ \\-\\ Morsels\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Wet Dog Food"
+      ]
+    },
+    {
+      "match": "^Mini\\ Puppy\\ Wet\\ Dog\\ Food$",
+      "path": [
+        "Pet Care",
+        "Dog Food & Treats",
+        "Puppy Food"
+      ]
+    },
+    {
+      "match": "^Indoor\\ Adult\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Persian\\ Adult\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Regular\\ Fit\\ 32\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Instinctive\\ Jelly\\ Wet\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    }
+  ]
+}
