@@ -1,0 +1,86 @@
+{
+  "brand": "Indica (CavinKare)",
+  "manufacturer": "CavinKare Pvt. Ltd.",
+  "feed": "indica-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/indica/logo-3950aa8c.png",
+  "themeColor": "#1A1A1A",
+  "themeColorSecondary": "#6CB33F",
+  "namePrefix": "Indica ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Easy\\ Shampoo\\ Hair\\ Colour\\ \\-\\ Natural\\ Black\\ 1$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Easy\\ Shampoo\\ Hair\\ Colour\\ \\-\\ Dark\\ Brown\\ 3$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Easy\\ Shampoo\\ Hair\\ Colour\\ \\-\\ Natural\\ Brown\\ 4$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Easy\\ Shampoo\\ Hair\\ Colour\\ Pump\\ Bottle\\ \\-\\ Natural\\ Black\\ 1$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Creme\\ Hair\\ Colour\\ \\-\\ Natural\\ Black\\ 1$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Creme\\ Hair\\ Colour\\ \\-\\ Darkest\\ Brown\\ 3$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Creme\\ Hair\\ Colour\\ \\-\\ Natural\\ Brown\\ 4$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Xpress\\ Creme\\ Hair\\ Colour\\ \\-\\ Natural\\ Black\\ 1$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    },
+    {
+      "match": "^Xpress\\ Creme\\ Hair\\ Colour\\ \\-\\ Dark\\ Brown\\ 3$",
+      "path": [
+        "Personal Care",
+        "Hair Care",
+        "Hair Colour & Dye"
+      ]
+    }
+  ]
+}
