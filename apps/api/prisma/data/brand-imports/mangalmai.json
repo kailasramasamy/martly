@@ -1,0 +1,22 @@
+{
+  "brand": "Mangalmai",
+  "manufacturer": "Recon Oil Industries Pvt. Ltd.",
+  "feed": "mangalmai-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/mangalmai/logo-776d8c28.png",
+  "themeColor": "#EF7B1A",
+  "themeColorSecondary": "#7A1416",
+  "namePrefix": "Mangalmai ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Pooja\\ Oil$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    }
+  ]
+}

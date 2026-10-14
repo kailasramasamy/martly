@@ -1,0 +1,61 @@
+[
+ {
+  "title": "Pooja Oil",
+  "handle": "pooja-oil",
+  "vendor": "Mangalmai",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "450ml",
+    "price": "110",
+    "compare_at_price": "110",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807_6-mangalmai-pooja-oil.jpg"
+    },
+    "barcode": "8902089000105"
+   },
+   {
+    "title": "900ml",
+    "price": "210",
+    "compare_at_price": "210",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40080806_7-mangalmai-pooja-oil.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807_6-mangalmai-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807-2_6-mangalmai-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807-3_6-mangalmai-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807-4_6-mangalmai-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807-5_5-mangalmai-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807-6_2-mangalmai-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807-7_1-mangalmai-pooja-oil.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40080807-8_1-mangalmai-pooja-oil.jpg"
+   }
+  ],
+  "details": {
+   "description": "Crafted using the finest ingredients, this oil infuses a rich and warm scent, creating a long-lasting aromatic experience. Perfect for enhancing the joyous atmosphere of puja, this auspicious oil is ideal for daily offerings to the supreme power. Bring home this exquisite puja oil to elevate the sanctity and reverence of your rituals.",
+   "manufacturerName": "Recon Oil Industries Pvt. Ltd.",
+   "countryOfOrigin": "India"
+  }
+ }
+]
