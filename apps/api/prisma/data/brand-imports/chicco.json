@@ -1,0 +1,614 @@
+{
+  "brand": "Chicco",
+  "manufacturer": "Artsana India Pvt. Ltd.",
+  "feed": "chicco-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/chicco/logo-2aa96065.png",
+  "namePrefix": "Chicco ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Airy\\ Newborn\\ Diapers\\ \\(2\\-5\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Airy\\ Midi\\ Diapers\\ Size\\ 3\\ \\(4\\-9\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Airy\\ Maxi\\ Diapers\\ Size\\ 4\\ \\(7\\-18\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Airy\\ Junior\\ Diapers\\ \\(11\\-25\\ kg\\)$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Diapers"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Soft\\ Cleansing\\ Wipes$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Wipes"
+      ]
+    },
+    {
+      "match": "^Anti\\-Mosquito\\ Baby\\ Patches$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Anti\\-Mosquito\\ Baby\\ Fabric\\ Roll\\-On$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Anti\\-Mosquito\\ Gel$",
+      "path": [
+        "Personal Care",
+        "Health & Wellness",
+        "Mosquito Repellent (Odomos, Patches)"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Massage\\ Oil\\ \\-\\ Olive\\ \\&\\ Almond$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Oil"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Body\\ Lotion\\ \\-\\ Almond\\ Milk$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Lotion & Cream"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Rich\\ Cream\\ \\-\\ Shea\\ \\&\\ Jojoba$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Lotion & Cream"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Baby\\ Cream\\ \\-\\ Argan\\ Oil\\ \\&\\ Avocado$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Lotion & Cream"
+      ]
+    },
+    {
+      "match": "^Natural\\ Sensation\\ Body\\ Lotion$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Lotion & Cream"
+      ]
+    },
+    {
+      "match": "^Natural\\ Sensation\\ Face\\ Cream$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Lotion & Cream"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Diaper\\ Rash\\ Cream$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Diaper Rash Cream"
+      ]
+    },
+    {
+      "match": "^Natural\\ Sensation\\ 4\\ in\\ 1\\ Nappy\\ Cream$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Diaper Rash Cream"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Mild\\ Body\\ Wash\\ \\-\\ Protect$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Mild\\ Body\\ Wash\\ \\-\\ Refresh$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Mild\\ Body\\ Wash\\ \\-\\ Relax$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Gentle\\ Body\\ Wash\\ \\&\\ Shampoo\\ \\-\\ Oats\\ \\&\\ Apricot$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Soap\\ \\-\\ Almond\\ \\&\\ Olive\\ Oil$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Bath\\ Soap$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Soap & Body Wash"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Shampoo\\ \\-\\ Calendula\\ \\&\\ Hibiscus$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Shampoo"
+      ]
+    },
+    {
+      "match": "^Natural\\ Sensation\\ Shampoo$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Shampoo"
+      ]
+    },
+    {
+      "match": "^Natural\\ Sensation\\ No\\ Tears\\ Shampoo$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Shampoo"
+      ]
+    },
+    {
+      "match": "^Baby\\ Moments\\ Talcum\\ Powder$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Powder"
+      ]
+    },
+    {
+      "match": "^Baby\\ Sun\\ Cream\\ \\-\\ Very\\ High\\ Protection$",
+      "path": [
+        "Personal Care",
+        "Skin Care",
+        "Sunscreen"
+      ]
+    },
+    {
+      "match": "^Feeding\\ Bottle\\ Fast\\ Flow\\ 4m\\+\\ \\-\\ Blue$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Feeding\\ Bottle\\ Fast\\ Flow\\ 4m\\+\\ \\-\\ Green$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Feeding\\ Bottle\\ Fast\\ Flow\\ 4m\\+\\ \\-\\ Pink$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Feeling\\ Feeding\\ Bottle\\ 0m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Well\\-Being\\ Silicone\\ Feeding\\ Bottle\\ \\-\\ Blue$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Well\\-Being\\ Silicone\\ Feeding\\ Bottle\\ \\-\\ Green$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Well\\-Being\\ Silicone\\ Feeding\\ Bottle\\ \\-\\ Pink$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Feeling\\ Teat\\ 0m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Feeling\\ Teat\\ Medium\\ Flow\\ 2m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Feeling\\ Teat\\ Fast\\ Flow\\ 4m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natural\\ Feeling\\ Teat\\ Food\\ 6m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Teat\\ Fast\\ Flow\\ 6m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Teat\\ Food\\ 6m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Teat\\ Regular\\ Flow\\ 0m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Physio\\ Teat\\ Slow\\ Flow\\ 0m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Physio\\ Teat\\ Medium\\ Flow\\ 2m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Physio\\ Teat\\ Fast\\ Flow\\ 4m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Step\\ Up\\ Adjustable\\ Teat\\ 4m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Bottle\\ Cleaning\\ Brush\\ Set$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^3\\ in\\ 1\\ Bottle\\ Brush$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^2\\-in\\-1\\ Steriliser\\ for\\ 6\\ Bottles$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^3\\-in\\-1\\ Steriliser\\ for\\ 6\\ Bottles$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Classic\\ Manual\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Natural\\ Feeling\\ Step\\ Up\\ Manual\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Soft\\ Silicone\\ Soother\\ 0\\-6m\\ \\-\\ Blue$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Soft\\ Silicone\\ Soother\\ 0\\-6m\\ \\-\\ Neutral$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Soft\\ Silicone\\ Soother\\ 0\\-6m\\ \\-\\ Pink$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Soft\\ Silicone\\ Soother\\ 0\\-6m\\ \\-\\ Purple$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Physio\\ Soft\\ Silicone\\ Soother\\ 6\\-16m$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Soft\\ Relax\\ Teethers\\ 2m\\+$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Oral\\ Care\\ Gum\\ Gel\\ with\\ Fingerstall$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Sipper\\ Cup\\ 4m\\+\\ \\-\\ Light\\ Blue$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Sipper\\ Cup\\ 4m\\+\\ \\-\\ Pink$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Bubble\\ Gum\\ Kids\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Mild\\ Mint\\ Toothpaste\\ with\\ Fluoride$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Mix\\ Fruit\\ Toothpaste\\ \\-\\ No\\ Fluoride$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Strawberry\\ Baby\\ Toothpaste$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Apple\\ Banana\\ Toothpaste\\ \\-\\ No\\ Fluoride$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothpaste"
+      ]
+    },
+    {
+      "match": "^Baby\\ Toothbrush\\ 6\\-36m\\ \\-\\ Blue$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Toothbrush\\ 3\\-36\\ Months$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Toothbrush\\ 3\\-8\\ Years$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Toothbrush\\ 3\\-8\\ Years\\ \\-\\ Blue$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Kids\\ Toothbrush\\ 3\\-8\\ Years\\ \\-\\ Green$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Learn\\ Together\\ Oral\\ Care\\ Set$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Baby\\ Laundry\\ Detergent\\ \\-\\ Delicate\\ Flowers$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Baby\\ Laundry\\ Detergent\\ \\-\\ Fresh\\ Spring$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Fabric\\ Softener\\ \\-\\ Delicate\\ Flowers$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    },
+    {
+      "match": "^Sensitive\\ Fabric\\ Softener\\ \\-\\ Sweet\\ Talcum$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Fabric Softener"
+      ]
+    }
+  ],
+  "themeColor": "#233A7A",
+  "themeColorSecondary": "#E2231A"
+}
