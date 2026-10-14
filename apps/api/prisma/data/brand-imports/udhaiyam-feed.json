@@ -1,0 +1,398 @@
+[
+ {
+  "title": "Toor Dal",
+  "handle": "toor-dal",
+  "vendor": "Udhaiyam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "80",
+    "compare_at_price": "80",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000209_2-udhaiyam-dhall-toor.jpg"
+    },
+    "barcode": "8906002130016"
+   },
+   {
+    "title": "1kg",
+    "price": "203",
+    "compare_at_price": "203",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000208_1-udhaiyam-dhall-toor.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000209_2-udhaiyam-dhall-toor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000209-2_1-udhaiyam-dhall-toor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000209-3_1-udhaiyam-dhall-toor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000209-4_1-udhaiyam-dhall-toor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000209-5_1-udhaiyam-dhall-toor.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000208_1-udhaiyam-dhall-toor.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Tata Sampann brings to you pure Toor Dal.\nThese dals are unpolished and organic. They are best quality from select farms.\nIt is a staple in most of the Indian food. They are high protein and dietary fibre.\nToor dal has a slightly sweet, nutty flavour. It is easy to cook and helps in easy digestion.\nIt is used in preparation of sambar, dal tadka, the Maharashtrian varan and more.\nIt does not contain any added preservatives and colours.\nBenefits are: \nThese dals are unpolished and organic.\nIt does not contain any added preservatives and colours.\nIt is high in protein and dietary fibre.",
+   "ingredients": "Toor dal .",
+   "nutritionalInfo": {
+    "Nutrition per": "100g",
+    "Energy": "330 Kcal",
+    "Carbohydrate": "54.80 g",
+    "Protein": "24.90 g",
+    "Fat": "1.35 g",
+    "Fibre": "1.23 g",
+    "Minerals": "2.50 mg",
+    "Carotenes": "108.60 mcg",
+    "Vitamin B1": "0.28 mg",
+    "Vitamin B2": "0.12 mg",
+    "Vitamin B3": "1.92 mg",
+    "Folic Acid": "98.20 mcg"
+   },
+   "storageInstructions": "Store in a cool and dry place .\nTransfer content in airtight Container after opening.\nUses: \nToor dal is used in preparation of sambar, dal tadka, the Maharashtrian varan and more.",
+   "manufacturerName": "Sri Lakshmi Agro Foods PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Urad Dal Split",
+  "handle": "urad-dal-split",
+  "vendor": "Udhaiyam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "79",
+    "compare_at_price": "79",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000207_3-udhaiyam-dhall-orid.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "182",
+    "compare_at_price": "182",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000206_1-udhaiyam-dhall-orid.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000207_3-udhaiyam-dhall-orid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000207-2_2-udhaiyam-dhall-orid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000207-3_2-udhaiyam-dhall-orid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000207-4_2-udhaiyam-dhall-orid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000207-5_2-udhaiyam-dhall-orid.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000206_1-udhaiyam-dhall-orid.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Urad Dal Is The Most Esteemed Pulse In India Because Of It Rich Nutritional Value Urad Dal Is Popular Amongst Vegetarians As It Acts Like A Rich Protein Source It Is Extensively Utilized In Various Culinary Preparations Such As Dosa Papad And Vada Click here for unique and delicious recipes",
+   "nutritionalInfo": {
+    "Nutrition per": "100g Serving_Size: 500g Energy: 325 Kcal Carbohydrate: 56.10 g Protein: 22.40 g Fat: 1.26 g Fibre: 0.86 g Minerals: 3.01 mg Carotenes: 36.80 mcg Vitamin B1: 0.38 mg Vitamin B2: 0.12 mg Vitamin B3: 0.38 mg Folic Acid: 118.20 mcg"
+   },
+   "manufacturerName": "Sri Lakshmi Agro Foods PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Moong Dal",
+  "handle": "moong-dal",
+  "vendor": "Udhaiyam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "94",
+    "compare_at_price": "94",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000205_2-udhaiyam-dhall-moong.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "164",
+    "compare_at_price": "164",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000204_1-udhaiyam-dhall-moong.jpg"
+    }
+   },
+   {
+    "title": "5kg",
+    "price": "580",
+    "compare_at_price": "580",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40130382_1-udhaiyam-dhall-moong-horeca.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000205_2-udhaiyam-dhall-moong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000205-2_1-udhaiyam-dhall-moong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000205-3_1-udhaiyam-dhall-moong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000205-4_1-udhaiyam-dhall-moong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000204_1-udhaiyam-dhall-moong.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40130382_1-udhaiyam-dhall-moong-horeca.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Moong Beans Is A Popular Food Among Vegetarians Since It Contains A Lot Of Proteins And Fiber Click here for unique and delicious recipes",
+   "nutritionalInfo": {
+    "Nutrition per": "100g Serving_Size: 200g Energy: 305 Kcal Carbohydrate: 52.50 g Protein: 21.30 g Fat: 1.01 g Fibre: 0.67 g Minerals: 2.85 mg Carotenes: 45.10 mcg Vitamin B1: 0.12 mg Vitamin B2: 0.18 mg Vitamin B3: 0.98 mg Folic Acid: 115.20 mcg"
+   },
+   "manufacturerName": "Sri Lakshmi Agro Foods PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Chana Dal",
+  "handle": "chana-dal",
+  "vendor": "Udhaiyam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "500g",
+    "price": "70",
+    "compare_at_price": "70",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000200_1-udhaiyam-dhall-gram.jpg"
+    }
+   },
+   {
+    "title": "1kg",
+    "price": "120",
+    "compare_at_price": "120",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000199_1-udhaiyam-dhall-gram.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000200_1-udhaiyam-dhall-gram.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000199_1-udhaiyam-dhall-gram.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Indulge in the irresistible crunch of Udhaiyam Fried Grams, a premium quality snack that is a staple in Indian cuisine. These nutrient-packed fried grams are not only a delightful treat for the taste buds, but also provide a healthy energy boost thanks to their high protein and fibre content. Versatile and easy to use, Udhaiyam Fried Grams can be sprinkled on salads, used as a topping, or enjoyed as a standalone snack. Carefully selected and processed, these split chickpeas are perfect for authentic Indian dishes and quick-cooking, ensuring a fresh and flavourful experience with every bite. Discover the perfect balance of taste and nutrition with Udhaiyam Fried Grams, a true delight for the senses.",
+   "storageInstructions": "Storage as per packaging",
+   "manufacturerName": "Sri Lakshmi Agro Foods PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Idli Rice",
+  "handle": "idli-rice",
+  "vendor": "Udhaiyam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "78",
+    "compare_at_price": "78",
+    "available": true,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40240867_1-udhaiyam-idly-rice-for-soft-fluffy-batter.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240867_1-udhaiyam-idly-rice-for-soft-fluffy-batter.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40240867-2_1-udhaiyam-idly-rice-for-soft-fluffy-batter.jpg"
+   }
+  ],
+  "details": {
+   "description": "Discover the authentic taste of South Indian cuisine with Udhaiyam Idly Rice. Crafted from the finest paddy fields, this premium quality rice is specially processed to deliver the perfect texture and flavour for delectable idlis every time. Traditionally made with a blend of idli rice and urad dal, this versatile rice can also be used to create fluffy dosas and other beloved South Indian delicacies. With its soft, pillowy consistency and superior nutritional profile, Udhaiyam Idly Rice is the ideal choice for a wholesome and flavourful breakfast. Bring home the goodness of this authentic rice and enjoy the comforting taste of homemade idlis, infused with the rich heritage of South Indian culinary traditions.",
+   "nutritionalInfo": {
+    "Nutrition per gram/ml": "100g",
+    "Calories": "350 kcal",
+    "Protein": "7.5 g",
+    "Total Fat": "1 g",
+    "Saturated Fat": "0.2 g",
+    "Carbohydrates": "77 g",
+    "Dietary Fiber": "1.4 g",
+    "Sodium": "10 mg"
+   },
+   "storageInstructions": "Store in a cool and dry place",
+   "manufacturerName": "SHRI LAKSHMI AGRO FOODS PVT LTD",
+   "fssaiLicense": "12414002004954",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Iodised Table Salt",
+  "handle": "iodised-table-salt",
+  "vendor": "Udhaiyam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "17",
+    "compare_at_price": "17",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000198_1-udhaiyam-table-salt.jpg"
+    },
+    "barcode": "8906002130115"
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000198_1-udhaiyam-table-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000198-2_1-udhaiyam-table-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000198-3_1-udhaiyam-table-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000198-4_1-udhaiyam-table-salt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Udhaiyam Table Salt makes your food more flavourful!\nThis salt is extracted from spring water. It has gone through multiple stages of processing to remove impurities. With this 100% pure salt, you can season your meat, eggs, salads, snacks and many more. It is iodised to help prevent iodine deficiency in adults.\nExplore Udhaiyam wide range of products like Idly rice, moong dhall, toor dhall, and others only on Big Basket.",
+   "ingredients": "1. 100% Pure\n2. Comes in moisture-proof package",
+   "storageInstructions": "Ready to use.\nStore in a cool, dry place, Once opened transfer to a air tight container.",
+   "manufacturerName": "Sri Lakshmi Agro Foods PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Iodised Crystal Salt",
+  "handle": "iodised-crystal-salt",
+  "vendor": "Udhaiyam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "1kg",
+    "price": "16",
+    "compare_at_price": "16",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/60000197_1-udhaiyam-crystal-salt.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000197_1-udhaiyam-crystal-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000197-2_1-udhaiyam-crystal-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000197-3_1-udhaiyam-crystal-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000197-4_1-udhaiyam-crystal-salt.jpg"
+   },
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/60000197-5_1-udhaiyam-crystal-salt.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Udhaiyam Crystal Salt makes your food and drinks taste better!\nThis crystal salt has gone through multiple stages of processing to remove impurities. It is iodised to help prevent iodine deficiency diseases. The salt crystals are 100% pure and help with seasoning meats, salads, and many more. It also adds great flavour to your cooking.\nExplore Udhaiyam wide range of products like Idly rice, moong dhall, toor dhall, and others only on Big Basket.",
+   "ingredients": "1. 100% Pure\n2. Comes in moisture-proof package",
+   "storageInstructions": "Ready to use.\nStore in a cool, dry place, Once opened transfer to a air tight container.",
+   "manufacturerName": "Sri Lakshmi Agro Foods PVT LTD",
+   "countryOfOrigin": "India"
+  }
+ },
+ {
+  "title": "Asafoetida Powder",
+  "handle": "asafoetida-powder",
+  "vendor": "Udhaiyam",
+  "product_type": "",
+  "body_html": "",
+  "variants": [
+   {
+    "title": "50g",
+    "price": "65",
+    "compare_at_price": "65",
+    "available": false,
+    "featured_image": {
+     "src": "https://www.bbassets.com/media/uploads/p/xxl/40104726_1-udhaiyam-asafoetida.jpg"
+    }
+   }
+  ],
+  "images": [
+   {
+    "src": "https://www.bbassets.com/media/uploads/p/xxl/40104726_1-udhaiyam-asafoetida.jpg"
+   }
+  ],
+  "food_type": "VEG",
+  "details": {
+   "description": "Udhaiyam Asafoetida adds a distinct flavour to dishes.\nAsafoetida also know as hing is an essential spice in Indian.\nIt is very pungent but gives a nice strong flavour to the food.\nIt smells like garlic and onions. It has been used in traditional medicine.\nIt used to aid digestion and gas. It is especially in curries and dals.\nIt enhances the flavour and aroma of your food.\nBenefits\nIt is used to aid digestion and gas.\nHing is rich in fibre aids in digestion.\nIt enhances the taste and flavour of your food.",
+   "ingredients": "Edible Gum\nEdible Starches\nAsafoetida",
+   "nutritionalInfo": {
+    "Calories": "12",
+    "Carbs": "0g",
+    "Fat": "0g",
+    "Protein": "0g"
+   },
+   "storageInstructions": "Store in a cool and hygienic place .\nTransfer contents in to an airtight glass container.\nThis hing is perfect for a richer and stronger flavour in vegetable dishes.\nIdeal for tempering vegetables, curries, lentils etc. \nAdds a robust flavour and an intense aroma to dishes.",
+   "countryOfOrigin": "India"
+  }
+ }
+]

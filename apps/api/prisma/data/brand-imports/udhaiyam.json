@@ -1,0 +1,78 @@
+{
+  "brand": "Udhaiyam",
+  "manufacturer": "Udhaiyam Agro Foods Pvt. Ltd.",
+  "feed": "udhaiyam-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/udhaiyam/logo-fb42d66f.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#2E8B3A",
+  "namePrefix": "Udhaiyam ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Toor\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Toor Dal (Arhar)"
+      ]
+    },
+    {
+      "match": "^Urad\\ Dal\\ Split$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Urad Dal"
+      ]
+    },
+    {
+      "match": "^Moong\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Moong Dal"
+      ]
+    },
+    {
+      "match": "^Chana\\ Dal$",
+      "path": [
+        "Grocery & Staples",
+        "Dal & Pulses",
+        "Chana Dal"
+      ]
+    },
+    {
+      "match": "^Idli\\ Rice$",
+      "path": [
+        "Grocery & Staples",
+        "Rice",
+        "Idli & Dosa Rice"
+      ]
+    },
+    {
+      "match": "^Iodised\\ Table\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    },
+    {
+      "match": "^Iodised\\ Crystal\\ Salt$",
+      "path": [
+        "Grocery & Staples",
+        "Salt & Sugar",
+        "Iodised Salt"
+      ]
+    },
+    {
+      "match": "^Asafoetida\\ Powder$",
+      "path": [
+        "Grocery & Staples",
+        "Spices & Masala",
+        "Ground Spices"
+      ]
+    }
+  ]
+}
