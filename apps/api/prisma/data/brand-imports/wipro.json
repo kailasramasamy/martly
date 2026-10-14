@@ -1,0 +1,126 @@
+{
+  "brand": "Wipro",
+  "manufacturer": "Wipro Enterprises Pvt. Ltd.",
+  "feed": "wipro-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/wipro/logo-b112f4a3.png",
+  "themeColor": "#3D1A6E",
+  "themeColorSecondary": "#00A0DF",
+  "namePrefix": "Wipro ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^LED\\ Night\\ Bulb\\ 0\\.5W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Tejas\\ LED\\ Bulb\\ 7W\\ Cool\\ Day\\ White$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ LED\\ Bulb\\ 7W\\ Warm\\ White\\ E27$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ LED\\ Bulb\\ 9W\\ Warm\\ White\\ E27$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ LED\\ Bulb\\ 10W\\ Cool\\ Day\\ White$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ LED\\ Bulb\\ 18W\\ Cool\\ Day\\ White$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ LED\\ Bulb\\ 20W\\ Cool\\ Day\\ White$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ Emergency\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ Emergency\\ LED\\ Bulb\\ 15W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ Bluetooth\\ Smart\\ LED\\ Bulb\\ 9W\\ E27$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ WiFi\\ Smart\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Garnet\\ WiFi\\ Smart\\ LED\\ Bulb\\ 12\\.5W\\ with\\ Music\\ Sync$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Sweet\\ n\\ Healthy\\ Aspartame\\ Sweetener\\ Tablets$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Sugar-Free & Diet Foods"
+      ]
+    },
+    {
+      "match": "^Sweet\\ n\\ Healthy\\ Sucralose\\ Sweetener\\ Tablets$",
+      "path": [
+        "Gourmet & World Foods",
+        "Organic & Health Foods",
+        "Sugar-Free & Diet Foods"
+      ]
+    }
+  ]
+}
