@@ -1,0 +1,392 @@
+{
+  "brand": "Reynolds",
+  "manufacturer": "Reynolds Pens India Pvt. Ltd.",
+  "feed": "reynolds-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/reynolds/logo-a5b8fe60.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#1E4FA8",
+  "namePrefix": "Reynolds ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "Reynolds Trimax Ball Pen - Blue (Pack of 5)": "Trimax Roller Ball Pen Blue"
+  },
+  "rules": [
+    {
+      "match": "^045\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^045\\ Ball\\ Pen\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^045\\ Ball\\ Pen\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^045\\ Ball\\ Pen\\ Assorted$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Aeroslim\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Aeroslim\\ Ball\\ Pen\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Aeroslim\\ Ball\\ Pen\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Aeroslim\\ Ball\\ Pen\\ Assorted$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Brite\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Brite\\ Ball\\ Pen\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Brite\\ Ball\\ Pen\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Champ\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Champ\\ Ball\\ Pen\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Comfort\\+\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^D\\ Fine\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Dominar\\ Ball\\ Pen\\ Assorted$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Fastline\\ Ball\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Smoothmate\\ Ball\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jetter\\ Classic\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Vista\\ Retractable\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Superion\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Iconic\\ Metal\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Iconic\\ Metal\\ Ball\\ Pen\\ Silver$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Iconic\\ Elite\\ Metal\\ Ball\\ Pen\\ Gun\\ Metal$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jiffy\\ Gel\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jiffy\\ Gel\\ Pen\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Jiffy\\ Gel\\ Pen\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Lumino\\ Gel\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Mera\\ Gel\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Apex\\ Gel\\ Pen\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Racer\\ Gel\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Racer\\ Gel\\ Pen\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Racer\\ Gel\\ Pen\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Trimax\\ Roller\\ Ball\\ Pen\\ Blue$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Trimax\\ Roller\\ Ball\\ Pen\\ Black$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Trimax\\ Roller\\ Ball\\ Pen\\ Green$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Trimax\\ Roller\\ Ball\\ Pen\\ Red$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Trimax\\ Gold\\ Roller\\ Ball\\ Pen$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^R5\\ Roller\\ Ball\\ Pen\\ Blue\\ 0\\.5mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^R7\\ Roller\\ Ball\\ Pen\\ Blue\\ 0\\.7mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Rollerpoint\\ R5\\ Roller\\ Pen\\ Black\\ 0\\.5mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Rollerpoint\\ R7\\ Roller\\ Pen\\ Black\\ 0\\.7mm$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Selecto\\ Fluorescent\\ Highlighters$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^HD\\ Permanent\\ Marker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^HD\\ Whiteboard\\ Marker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Refillable\\ Whiteboard\\ Marker$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Pens & Pencils"
+      ]
+    },
+    {
+      "match": "^Glue\\ Stick$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Stationery",
+        "Glue & Tape"
+      ]
+    }
+  ]
+}
