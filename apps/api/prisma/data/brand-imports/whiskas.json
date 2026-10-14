@@ -1,0 +1,262 @@
+{
+  "brand": "Whiskas (Mars)",
+  "manufacturer": "Mars International India Pvt. Ltd.",
+  "feed": "whiskas-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/whiskas/logo-0660aa9c.png",
+  "themeColor": "#6B2C91",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Whiskas ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Tuna$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Mackerel$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Catla\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Rohu\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Healthy\\ Skin\\ \\&\\ Coat$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Dry\\ Cat\\ Food\\ \\-\\ Hairball\\ Control$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Junior\\ Kitten\\ Dry\\ Cat\\ Food\\ \\-\\ Mackerel$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Junior\\ Kitten\\ Dry\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Persian\\ Adult\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Persian\\ Kitten\\ Dry\\ Cat\\ Food$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Dry Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Ocean\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Salmon\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ in\\ Jelly$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ \\&\\ White\\ Fish$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ with\\ Salmon$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Mackerel\\ in\\ Jelly$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ \\&\\ Chicken$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Mix\\ Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ with\\ Salmon\\ \\&\\ Wakame$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Mix\\ Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ with\\ Tuna\\ \\&\\ Carrot$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Mix\\ Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Seafood\\ Cocktail$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Mix\\ Adult\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ with\\ Kanikama\\ \\&\\ Carrot$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ in\\ Gravy$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ with\\ Salmon\\ in\\ Jelly$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Mackerel$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Tuna\\ in\\ Jelly$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Salmon$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Mix\\ Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Seafood\\ Cocktail$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    },
+    {
+      "match": "^Tasty\\ Mix\\ Kitten\\ Wet\\ Cat\\ Food\\ \\-\\ Chicken\\ \\&\\ Tuna$",
+      "path": [
+        "Pet Care",
+        "Cat Food & Treats",
+        "Wet Cat Food"
+      ]
+    }
+  ]
+}
