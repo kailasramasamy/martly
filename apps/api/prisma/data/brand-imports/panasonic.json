@@ -1,0 +1,230 @@
+{
+  "brand": "Panasonic",
+  "manufacturer": "Panasonic Energy India Co. Ltd.",
+  "feed": "panasonic-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/panasonic/logo-163dcc73.png",
+  "themeColor": "#0041C0",
+  "themeColorSecondary": "#1A1A1A",
+  "namePrefix": "Panasonic ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Alkaline\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Alkaline\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Evolta\\ Alkaline\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Evolta\\ Alkaline\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Gold\\ Plus\\ Zinc\\ Carbon\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Gold\\ Plus\\ Zinc\\ Carbon\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Jumbo\\ Zinc\\ Carbon\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Metal\\ Zinc\\ Carbon\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^CR2032\\ Lithium\\ Coin\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^CR2016\\ Lithium\\ Coin\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^CR1620\\ Lithium\\ Coin\\ Battery$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "AA & AAA Batteries"
+      ]
+    },
+    {
+      "match": "^Eneloop\\ Pro\\ Rechargeable\\ AA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Eneloop\\ Rechargeable\\ AAA\\ Batteries$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^Eneloop\\ Smart\\ \\&\\ Quick\\ Battery\\ Charger$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "Rechargeable Batteries"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 9W\\ Cool\\ Day\\ Light$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Spherical\\ LED\\ Bulb\\ 7W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Spherical\\ LED\\ Bulb\\ 9\\.5W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Spherical\\ LED\\ Bulb\\ 12W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 15W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 18W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 23W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 40W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^LED\\ Bulb\\ 50W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^RGB\\ LED\\ Bulb\\ 7W\\ with\\ Remote$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Radar\\ Motion\\ Sensor\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Smart\\ WiFi\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    },
+    {
+      "match": "^Emergency\\ LED\\ Bulb\\ 9W$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Batteries & Electricals",
+        "LED Bulbs"
+      ]
+    }
+  ]
+}
