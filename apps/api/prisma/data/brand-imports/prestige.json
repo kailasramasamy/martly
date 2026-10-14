@@ -1,0 +1,110 @@
+{
+  "brand": "Prestige (TTK)",
+  "manufacturer": "TTK Prestige Ltd.",
+  "feed": "prestige-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/prestige/logo-4b722ed6.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#FFFFFF",
+  "namePrefix": "Prestige ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^PDWBC\\ 02\\ Stainless\\ Steel\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^PDWBC\\ 03\\ Stainless\\ Steel\\ Water\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^PSWBC\\ 17\\ Single\\ Wall\\ Steel\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^Tattva\\ Copper\\ Bottle$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Water Bottles"
+      ]
+    },
+    {
+      "match": "^PVC\\ 7\\.0\\ Veggie\\ Cutter$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^PVC\\ 8\\.0\\ Veggie\\ Cutter\\ \\-\\ Jumbo\\ Bowl$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Tru\\-Edge\\ Knife\\ Set$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Kitchen\\ Gas\\ Lighter\\ PGL\\-02$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Steel\\ Gas\\ Lighter\\ with\\ Knife\\ PGL\\-03$",
+      "path": [
+        "Stationery & General Merchandise",
+        "Kitchen Accessories",
+        "Kitchen Tools (Peeler, Grater)"
+      ]
+    },
+    {
+      "match": "^Clean\\ Home\\ Wiper$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Floor\\ Clean\\ Wiper\\ 3\\.6\\ ft$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    },
+    {
+      "match": "^Khrata\\ Broom\\ Stick$",
+      "path": [
+        "Home Care",
+        "Cleaning Tools & Supplies",
+        "Broom & Mop"
+      ]
+    }
+  ]
+}
