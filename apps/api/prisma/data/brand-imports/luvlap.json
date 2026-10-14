@@ -1,0 +1,496 @@
+{
+  "brand": "LuvLap",
+  "manufacturer": "Lilliput Kidswear Pvt. Ltd.",
+  "feed": "luvlap-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/luvlap/logo-d47c4a36.png",
+  "themeColor": "#E31E24",
+  "themeColorSecondary": "#F7A1A8",
+  "namePrefix": "LuvLap ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {
+    "LuvLap Hippo Straw Sipper Cup": "Hippo Spout Sipper"
+  },
+  "rules": [
+    {
+      "match": "^Baby\\ Diaper\\ Pants\\ \\-\\ S$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Baby\\ Diaper\\ Pants\\ \\-\\ M$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Baby\\ Diaper\\ Pants\\ \\-\\ L$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Baby\\ Diaper\\ Pants\\ \\-\\ XL$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Supreme\\ Baby\\ Diaper\\ Pants\\ \\-\\ S$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Diaper Pants"
+      ]
+    },
+    {
+      "match": "^Jojoba\\ Baby\\ Wipes\\ With\\ Lid$",
+      "path": [
+        "Baby Care",
+        "Diapers & Wipes",
+        "Baby Wipes"
+      ]
+    },
+    {
+      "match": "^Baby\\ Lotion$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Lotion & Cream"
+      ]
+    },
+    {
+      "match": "^Baby\\ Shampoo\\ with\\ Chamomile$",
+      "path": [
+        "Baby Care",
+        "Baby Bath & Skin",
+        "Baby Shampoo"
+      ]
+    },
+    {
+      "match": "^Baby\\ Laundry\\ Liquid\\ Detergent$",
+      "path": [
+        "Home Care",
+        "Detergent",
+        "Liquid Detergent"
+      ]
+    },
+    {
+      "match": "^Essential\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Plain\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Flower\\ Design\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Jungle\\ Tales\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natura\\ Flo\\ Wide\\ Neck\\ Feeding\\ Bottle\\ \\-\\ Plain$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natura\\ Flo\\ Wide\\ Neck\\ Feeding\\ Bottle\\ \\-\\ Floral$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natura\\ Flo\\ Glass\\ Feeding\\ Bottle\\ \\-\\ Stars$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Essential\\ Slim\\ Neck\\ Glass\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natura\\ Flo\\ Anti\\-Colic\\ Wide\\ Neck\\ Feeding\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Easy\\ Squeezy\\ Food\\ Feeder\\ Bottle$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Essential\\ Nipple\\ \\-\\ Slow\\ Flow$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Essential\\ Nipple\\ \\-\\ Medium\\ Flow$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natura\\ Flo\\ Nipple\\ \\-\\ Slow\\ Flow$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natura\\ Flo\\ Nipple\\ \\-\\ Medium\\ Flow$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natura\\ Flo\\ Nipple\\ \\-\\ Fast\\ Flow$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Natura\\ Flo\\ Nipple\\ \\-\\ Variable\\ Flow$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Feeding Bottles"
+      ]
+    },
+    {
+      "match": "^Hippo\\ Spout\\ Sipper$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Banana\\ Time\\ Soft\\ Spout\\ Sippy\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Naughty\\ Duck\\ Spout\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Wise\\ Owl\\ Spout\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Moby\\ Little\\ Spout\\ Sipper$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Tiny\\ Sippy\\ Cup\\ with\\ Silicone\\ Straw$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Weighted\\ Straw\\ Sipper\\ Cup$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Sippers & Cups"
+      ]
+    },
+    {
+      "match": "^Baby\\ Soother\\ Pacifier$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Silicone\\ 2\\ in\\ 1\\ Soother\\ \\&\\ Teether$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Silicone\\ 2\\ in\\ 1\\ Soother\\ \\&\\ Teether\\ \\-\\ Star$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Water\\ Filled\\ Silicone\\ Teether\\ \\-\\ Hut$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Water\\ Filled\\ Silicone\\ Teether\\ \\-\\ Star$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Teether\\ with\\ Bristles$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Teether\\ \\-\\ Milk\\ Time$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Teether\\ \\-\\ Pizza\\ Pie$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Teether\\ \\-\\ Yellow\\ Duck$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Teether\\ \\-\\ Yum\\ Scoops$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Bunny\\ Silicone\\ Food\\ Nibbler$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Joystar\\ Silicone\\ Food\\ Nibbler$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Pacifiers & Teethers"
+      ]
+    },
+    {
+      "match": "^Manual\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Adore\\ Electric\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Glory\\ Hands\\-Free\\ Electric\\ Breast\\ Pump$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Breast\\ Milk\\ Storage\\ Bags$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Disposable\\ Nursing\\ Breast\\ Pads$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Ultra\\ Thin\\ Honeycomb\\ Nursing\\ Breast\\ Pads$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Washable\\ Nursing\\ Breast\\ Pads$",
+      "path": [
+        "Baby Care",
+        "Baby Accessories",
+        "Breast Pump & Accessories"
+      ]
+    },
+    {
+      "match": "^Silicone\\ Finger\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Training\\ Toothbrush\\ with\\ Choking\\ Shield$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Training\\ Toothbrush\\ Set$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Bubbles\\ Kids\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Panda\\ Kids\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Tiny\\ Giffy\\ Kids\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Turtle\\ Baby\\ Toothbrush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Toothbrush"
+      ]
+    },
+    {
+      "match": "^Baby\\ Tongue\\ Cleaner\\ Brush$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Tongue Cleaner"
+      ]
+    },
+    {
+      "match": "^Kids\\ Tongue\\ Scraper$",
+      "path": [
+        "Personal Care",
+        "Oral Care",
+        "Tongue Cleaner"
+      ]
+    }
+  ]
+}
