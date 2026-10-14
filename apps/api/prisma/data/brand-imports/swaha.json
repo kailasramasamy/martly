@@ -1,0 +1,94 @@
+{
+  "brand": "Swaha",
+  "manufacturer": "Swaha",
+  "feed": "swaha-feed.json",
+  "logo": "https://martly-media.s3.ap-south-1.amazonaws.com/brands/swaha/logo-ffd2b66a.png",
+  "themeColor": "#8B1E2D",
+  "themeColorSecondary": "#F28C28",
+  "namePrefix": "Swaha ",
+  "foodType": "VEG",
+  "exclude": [],
+  "aliases": {},
+  "rules": [
+    {
+      "match": "^Akhand\\ Jyot\\ Puja\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Akhand\\ Jyot\\ Twisted\\ Cotton\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Floating\\ Wicks$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Pure\\ Cow\\ Ghee\\ Easy\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Vegan\\ Easy\\ Diya$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Diya & Wicks"
+      ]
+    },
+    {
+      "match": "^Edible\\ Camphor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Puja\\ Camphor$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Camphor (Kapur)"
+      ]
+    },
+    {
+      "match": "^Kumkum\\ \\-\\ Maroon$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Kumkum\\ \\-\\ Red$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Sindoor & Kumkum"
+      ]
+    },
+    {
+      "match": "^Maya\\ Agarbatti$",
+      "path": [
+        "Pooja & Festivals",
+        "Pooja Essentials",
+        "Agarbatti (Incense Sticks)"
+      ]
+    }
+  ]
+}
